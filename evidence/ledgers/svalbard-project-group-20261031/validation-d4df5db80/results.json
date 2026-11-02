@@ -1,0 +1,36 @@
+[
+  {
+    "check": "shape",
+    "exit_code": 0,
+    "tail": [
+      "  (g) tier_honest          pass",
+      "  (h) no_em_dash           pass",
+      "  (i) not_yet_confirmed    pass",
+      "  (j) reviewed_on          pass"
+    ]
+  },
+  {
+    "check": "examples",
+    "exit_code": 0,
+    "tail": [
+      "checked 9 files, 18 oa-check blocks, 0 failures, 0 missing"
+    ]
+  },
+  {
+    "check": "sync",
+    "exit_code": 0,
+    "tail": [
+      "Sync integrity checked 9 source guide(s): 0 error(s), 0 warning(s), 0 notice(s)."
+    ]
+  },
+  {
+    "check": "unit",
+    "exit_code": 0,
+    "tail": [
+      "----------------------------------------------------------------------",
+      "Ran 152 tests in 14.266s",
+      "",
+      "OK"
+    ]
+  }
+]

@@ -1,0 +1,173 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Reglas de cálculo
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 1.
+
+Capítulo 18. Cuota líquida, cuota resultante de la autoliquidación, cuota diferencial y resultado de la declaración
+
+Incremento de las cuotas líquidas, estatal y autonómica, por pérdida del derecho a deducciones de ejercicios anteriores
+
+Cálculo de los intereses de demora
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 1.
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Reglas de cálculo
+
+Los intereses se calcularán aplicando al importe de la deducción indebida el tipo de interés de demora vigente en cada uno de los ejercicios comprendidos entre la fecha de vencimiento del plazo de declaración del ejercicio en que se efectuó la deducción indebida (o, en su caso, desde el día siguiente a la fecha en que se obtuvo la devolución) y la fecha en que se presente la declaración correspondiente al ejercicio 2025.
+
+La suma de los intereses de demora correspondientes a cada uno de dichos ejercicios determinará el importe total de los intereses de demora correspondientes a la deducción indebida.
+
+En la determinación de los intereses de demora pueden distinguirse, a estos efectos, tres períodos:
+
+• Período inicial
+
+Comprenderá el número de días transcurrido desde el siguiente al que finalizó el plazo de declaración correspondiente al ejercicio en que se practicó la deducción que ahora se restituye (o, en su caso, desde el día siguiente a la fecha en que se obtuvo la devolución) y el día 31 de diciembre de dicho año.
+
+La determinación del importe de los intereses de demora correspondientes a este período puede realizarse utilizando la siguiente fórmula de cálculo:
+
+Intereses demora período inicial = Importe de la deducción x (tipo de interés ÷ 100) x (período (nº de días) ÷ 365 o 366)
+
+Como tipo de interés se tomará, expresado en tanto por 100, el tipo de interés de demora vigente en el ejercicio al que corresponda el período inicial.
+
+• Período intermedio
+
+Comprenderá cada uno de los años completos siguientes al período inicial, hasta el 31 de diciembre de 2025.
+
+La determinación de los intereses de demora correspondientes a cada uno de los años naturales comprendidos en este período puede realizarse mediante la siguiente fórmula:
+
+Intereses demora de cada año = Importe de la deducción x (tipo de interés ÷ 100)
+
+Como tipo de interés se tomará, expresado en tanto por 100, el tipo de interés de demora vigente en cada uno de los años integrantes de este período.
+
+No obstante, dado que en los ejercicios 1994, 1995 y 1996 estuvo vigente el mismo tipo de interés de demora (11 por 100), los intereses correspondientes a aquellos de dichos ejercicios que formen parte del período intermedio, podrán determinarse de forma global, multiplicando el mencionado tipo de interés de demora por el número de dichos años que integren el referido período. Esta misma regla podrá aplicarse en los ejercicios 1999 y 2000 para los que estuvo vigente el mismo tipo de interés de demora (5,5 por 100); para los ejercicios 2002 y 2003 en los que estuvo vigente el mismo tipo de interés de demora (5,5 por 100); para los ejercicios 2005 y 2006 en los que estuvo vigente el mismo tipo de interés de demora (5 por 100) y para los ejercicios 2008 y 2009 (hasta el 31 de marzo de 2009) en los que el tipo de interés de demora fue del 7 por 100. A partir del 1 de abril de 2009 hasta 31 de diciembre de 2014 el tipo de interés de demora es del 5 por 100. El interés de demora establecido para el año 2015 fue el 4,375 por 100; para 2016, 2017, 2018, 2019, 2020, 2021 y 2022 el 3,75 por 100, y para los años 2023, 2024 y 2025 el 4,0625 por 100. 
+
+• Período final 
+
+Es el comprendido entre el 1 de enero de 2026 y el día de presentación de la declaración del ejercicio 2025 (30 de junio de 2026).
+
+La determinación de los intereses correspondientes a este período puede realizarse mediante la siguiente fórmula:
+
+Intereses de demora período final = Importe de la deducción x (4,0625 ÷100) x (T24 ÷ 365)
+
+T24 representa el número de días del período de demora comprendido en el año 2026, es decir, los transcurridos entre el 1 de enero y la fecha de presentación de la declaración del ejercicio 2025.
+
+Nota: para 2026 se aplica el tipo de interés de demora del 4,0625 por 100 hasta que se apruebe y entre en vigor la Ley de Presupuestos Generales del Estado para 2026 que puede establecer un nuevo tipo de interés.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

@@ -1,0 +1,559 @@
+{
+  "ledger_rows_checked": 69,
+  "pdf_rows": 67,
+  "html_rows": 2,
+  "rows": [
+    {
+      "id": "CD-TRANSFER-PRICING-001",
+      "article": "23/053 art153",
+      "pdf_page": "44",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-002",
+      "article": "26/032 art49",
+      "pdf_page": "17",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-003",
+      "article": "23/053 art53(1)",
+      "pdf_page": "25",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-004",
+      "article": "23/053 art53(2)(1)",
+      "pdf_page": "25",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-005",
+      "article": "23/053 art53(2)(2)",
+      "pdf_page": "25",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-006",
+      "article": "23/053 art53(2)(3)",
+      "pdf_page": "25",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-007",
+      "article": "23/053 art53(2)(4)",
+      "pdf_page": "25",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-008",
+      "article": "23/053 art53(2)(5)",
+      "pdf_page": "25",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-009",
+      "article": "23/053 art53(3)",
+      "pdf_page": "25",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-010",
+      "article": "23/053 art53 final list1",
+      "pdf_page": "25",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-011",
+      "article": "23/053 art53 final list2\u20137",
+      "pdf_page": "26",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-012",
+      "article": "23/053 art53(4)",
+      "pdf_page": "25",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-013",
+      "article": "23/053 art46",
+      "pdf_page": "23",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-014",
+      "article": "23/053 art47",
+      "pdf_page": "23",
+      "checked": "FIX REQUIRED: F1",
+      "method": "Original scan visually read with French OCR",
+      "notes": "French excerpt is correct; Guide/ledger definition omits alternative non-taxable branch."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-015",
+      "article": "23/053 art48",
+      "pdf_page": "23",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-016",
+      "article": "25/060 art25 /004/2003 art24bis",
+      "pdf_page": "20",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-017",
+      "article": "25/060 art25 /art24bis",
+      "pdf_page": "20",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-018",
+      "article": "25/060 art25 /art24bis",
+      "pdf_page": "20",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-019",
+      "article": "25/060 art25 /art24bis",
+      "pdf_page": "20",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-020",
+      "article": "25/060 art25 /art24bis",
+      "pdf_page": "20",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-021",
+      "article": "25/060 art25 /art24bis",
+      "pdf_page": "21",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-022",
+      "article": "25/060 art26 /art24ter",
+      "pdf_page": "21",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-023",
+      "article": "25/060 art18 /art12",
+      "pdf_page": "17",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-024",
+      "article": "25/060 art26 /art24ter(1)",
+      "pdf_page": "21",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-025",
+      "article": "25/060 art26 /art24ter(2)",
+      "pdf_page": "22",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-026",
+      "article": "25/060 art27 /art24quinquies(1)",
+      "pdf_page": "22",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-027",
+      "article": "25/060 art27 /art24quinquies(1)",
+      "pdf_page": "22",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-028",
+      "article": "25/060 art27 /art24quinquies(2\u20133)",
+      "pdf_page": "23",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-029",
+      "article": "25/060 art27 /art24quinquies(4)",
+      "pdf_page": "24",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-030",
+      "article": "25/060 art28 /art29bis",
+      "pdf_page": "25",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-031",
+      "article": "25/060 art28 /art29bis",
+      "pdf_page": "26",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-032",
+      "article": "25/060 art33 /art92bis",
+      "pdf_page": "28",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-033",
+      "article": "25/060 art34 /art93bis",
+      "pdf_page": "29",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-034",
+      "article": "25/060 art34 /art93bis",
+      "pdf_page": "29",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-035",
+      "article": "25/060 art34 /art93bis",
+      "pdf_page": "29",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-036",
+      "article": "25/060 art34 /art93bis",
+      "pdf_page": "29",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-TRANSFER-PRICING-037",
+      "article": "DGI IS page services link",
+      "pdf_page": "HTML",
+      "checked": "PASS",
+      "method": "Official DGI HTML opened 2026-11-01; public services link only",
+      "notes": "D\u00e9clarer & Payer en ligne (t\u00e9l\u00e9d\u00e9claration) link targets https://i-impots.dgirdc.cd/. No authenticated form examined."
+    },
+    {
+      "id": "CD-CROSS-BORDER-001",
+      "article": "23/053 art142",
+      "pdf_page": "43",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-002",
+      "article": "25/060 arts40\u201341 /149bis",
+      "pdf_page": "31",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-003",
+      "article": "26/032 art51/signature",
+      "pdf_page": "17",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-004",
+      "article": "26/032 arts14\u201315 /149bis",
+      "pdf_page": "10",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-005",
+      "article": "23/053 art144",
+      "pdf_page": "43",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-006",
+      "article": "23/053 art143(1)",
+      "pdf_page": "43",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-007",
+      "article": "23/053 art143(2)",
+      "pdf_page": "43",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-008",
+      "article": "23/052 art1 /004/2003 art22bis",
+      "pdf_page": "5",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-009",
+      "article": "23/052 art1 /art22bis",
+      "pdf_page": "5",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-010",
+      "article": "25/060 art42 /149ter",
+      "pdf_page": "31",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-011",
+      "article": "25/060 art43 /149quater",
+      "pdf_page": "31",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-012",
+      "article": "26/032 art16 /149ter",
+      "pdf_page": "10",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-013",
+      "article": "26/032 art17 /149quater",
+      "pdf_page": "11",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-014",
+      "article": "25/060 art44 /149quinquies",
+      "pdf_page": "32",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-015",
+      "article": "25/060 art39 /004/2003 art22quarter",
+      "pdf_page": "30",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-016",
+      "article": "25/060 art23 /art22quater",
+      "pdf_page": "19",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-017",
+      "article": "23/053 art150",
+      "pdf_page": "44",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-018",
+      "article": "25/060 art35 /art96bis",
+      "pdf_page": "29",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-019",
+      "article": "23/053 art7",
+      "pdf_page": "13",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-020",
+      "article": "23/053 art8(1)(1)",
+      "pdf_page": "13",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-021",
+      "article": "23/053 art8(1)(2)",
+      "pdf_page": "13",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-022",
+      "article": "23/053 art8(1)(3)",
+      "pdf_page": "13",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-023",
+      "article": "23/053 art8(1)(4)",
+      "pdf_page": "13",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-024",
+      "article": "23/053 art8(2\u20134)",
+      "pdf_page": "14",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-025",
+      "article": "26/032 art18 /149sexies opening",
+      "pdf_page": "11",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-026",
+      "article": "26/032 art18 /149sexies list1\u20132",
+      "pdf_page": "11",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-027",
+      "article": "26/032 art18 /149sexies list3\u20134",
+      "pdf_page": "11",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-028",
+      "article": "26/032 art18 /149sexies list5",
+      "pdf_page": "11",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-029",
+      "article": "26/032 art18 /149sexies list6",
+      "pdf_page": "11",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-030",
+      "article": "23/053 art20 final",
+      "pdf_page": "17",
+      "checked": "PASS",
+      "method": "Complete relevant official PDF provision read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-031",
+      "article": "23/053 arts46\u201348/53",
+      "pdf_page": "23",
+      "checked": "PASS",
+      "method": "Original scan visually read with French OCR",
+      "notes": "Article, conditions, quote and page checked against complete cited provision. Short quote supports, but does not replace, the provision."
+    },
+    {
+      "id": "CD-CROSS-BORDER-032",
+      "article": "DGI IS page services link",
+      "pdf_page": "HTML",
+      "checked": "PASS",
+      "method": "Official DGI HTML opened 2026-11-01; public services link only",
+      "notes": "D\u00e9clarer & Payer en ligne (t\u00e9l\u00e9d\u00e9claration) link targets https://i-impots.dgirdc.cd/. No authenticated form examined."
+    }
+  ]
+}

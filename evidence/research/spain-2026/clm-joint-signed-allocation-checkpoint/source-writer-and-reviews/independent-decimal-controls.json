@@ -1,0 +1,299 @@
+{
+  "kind": "Independent Decimal arithmetic. All numerical assertions hold, but the direct aggregate model FAILS actual J2/J3 by one cent. No browser operations or live Guide mutation.",
+  "checks": [
+    {
+      "id": "J1-general-rendimientos",
+      "actual": "11000",
+      "expected": "11000",
+      "scope": "Current LIRPF48(a); wage and current professional loss integrate without a25%capital-loss limit",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-general-BI",
+      "actual": "12000",
+      "expected": "12000",
+      "scope": "Positive general non-transfer gain added under48(b), not savings",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-joint-reduction",
+      "actual": "3400",
+      "expected": "3400",
+      "scope": "LIRPF84(2).3 general first; no saving remainder here",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-general-BL",
+      "actual": "8600",
+      "expected": "8600",
+      "scope": "Both spouses joint; no other general-base reduction",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-one-joint-minimum",
+      "actual": "5550",
+      "expected": "5550",
+      "scope": "LIRPF84(2).2/57: under65 basic minimum once, not11100",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-gross-general-before-minimum",
+      "actual": "817.00",
+      "expected": "817.00",
+      "scope": "CLM13bis first band9.5%",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-minimum-tax",
+      "actual": "527.25",
+      "expected": "527.25",
+      "scope": "Minimum tax subtracted under LIRPF74(1).2",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-QGC",
+      "actual": "289.75",
+      "expected": "289.75",
+      "scope": "Current law scale/minimum calculation; independent of software",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-QSC",
+      "actual": "95.00",
+      "expected": "95.00",
+      "scope": "General BL exceeds5550, no minimum spillover; first savings band9.5%",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-regional-gross",
+      "actual": "384.75",
+      "expected": "384.75",
+      "scope": "General and savings quotas distinguished",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-total-BL",
+      "actual": "9600",
+      "expected": "9600",
+      "scope": "Separate initial joint BL eligibility ceiling31485 passes; not attribution denominator",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-eligible-member-N",
+      "actual": "20000",
+      "expected": "20000",
+      "scope": "CLM12quater(1)(c),LIRPF11; only declarant is entitled",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-raw-eligible-ratio",
+      "actual": "482.92",
+      "expected": "482.92",
+      "scope": "Diagnostic raw ratio before QGC cap, not an uncapped authorised deduction",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-QGC-cap-hypothesis",
+      "actual": "289.75",
+      "expected": "289.75",
+      "scope": "Current legal cap/eligible-member interpretation supported by root actual2025 J1 result; not my UI observation",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-competing-combined-N",
+      "actual": "11000",
+      "expected": "11000",
+      "scope": "Alternative combines non-entitled spouse activity into numerator; distinguish from eligible-member selection",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-competing-credit",
+      "actual": "265.60",
+      "expected": "265.60",
+      "scope": "Competing265.60 outcome, not the expected eligible-only method",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-distinguishing-difference",
+      "actual": "24.15",
+      "expected": "24.15",
+      "scope": "Observable difference between hypotheses",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J1-regional-liquid-if-cap",
+      "actual": "95.00",
+      "expected": "95.00",
+      "scope": "Does not absorb savings tax",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J2-nominal-both-entitled",
+      "actual": "1000",
+      "expected": "1000",
+      "scope": "CLM12quater(1)(c); AEAT actual2025 unique-return limit on total1000",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J2-selected-combined-N",
+      "actual": "11000",
+      "expected": "11000",
+      "scope": "Both spouses entitled: AEAT expressly aggregates both employment/activity results",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J2-predicted-ratio",
+      "actual": "265.60",
+      "expected": "265.60",
+      "scope": "Direct aggregate-ratio arithmetic diagnostic only; actual root J2/J3 results differ. This is NOT an established exact-credit method.",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J2-predicted-credit",
+      "actual": "265.60",
+      "expected": "265.60",
+      "scope": "Direct aggregate-ratio arithmetic diagnostic only; actual root J2/J3 results differ. This is NOT an established exact-credit method.",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J2-predicted-regional-liquid",
+      "actual": "119.15",
+      "expected": "119.15",
+      "scope": "Direct aggregate-ratio arithmetic diagnostic only; actual root J2/J3 results differ. This is NOT an established exact-credit method.",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J0-without-gain-G",
+      "actual": "11000",
+      "expected": "11000",
+      "scope": "Source classifications otherwise unchanged",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J0-without-gain-B",
+      "actual": "7600",
+      "expected": "7600",
+      "scope": "Joint3400 remains",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J0-QGC",
+      "actual": "194.75",
+      "expected": "194.75",
+      "scope": "Current law scale/minimum",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J0-one-eligible-cap",
+      "actual": "194.75",
+      "expected": "194.75",
+      "scope": "Prediction: capped eligible-member ratio",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "J0-combined-hypothesis",
+      "actual": "194.75",
+      "expected": "194.75",
+      "scope": "Same as QGC; not discriminating",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "D01-general-gain2000-QGC",
+      "actual": "384.75",
+      "expected": "384.75",
+      "scope": "Hypothetical extra positive non-transfer gain changes G/B/QGC but not selected employment/activity",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "D01-both-eligible-ratio",
+      "actual": "325.56",
+      "expected": "325.56",
+      "scope": "Direct aggregate-ratio arithmetic diagnostic only; actual root J2/J3 results differ. This is NOT an established exact-credit method.",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "D02-pension-after-joint-B",
+      "actual": "7600",
+      "expected": "7600",
+      "scope": "LIRPF84(2).3 applies joint before51 reduction; valid1000 contribution assumed",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "D02-pension-QGC",
+      "actual": "194.75",
+      "expected": "194.75",
+      "scope": "General BL reduction changes quota, not G",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "D02-both-eligible-ratio",
+      "actual": "178.52",
+      "expected": "178.52",
+      "scope": "Predicted diagnostic; no actualUI/2026 campaign claim",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "D03-minimum-equality-B",
+      "actual": "5550",
+      "expected": "5550",
+      "scope": "Joint3400 plus basicmin5550; all positive G",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "D03-minimum-equality-QGC",
+      "actual": "0.00",
+      "expected": "0.00",
+      "scope": "No general tax to attribute despite positive selected income; no savings absorption",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "D03-minimum-equality-QSC",
+      "actual": "95.00",
+      "expected": "95.00",
+      "scope": "Minimum wholly consumed in generalBL at equality",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "D04-minimum-spillover-B",
+      "actual": "3600",
+      "expected": "3600",
+      "scope": "Independent positive-G variant",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "D04-general-tax-zero",
+      "actual": "0.00",
+      "expected": "0.00",
+      "scope": "General minimum covers allgeneralBL",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "D04-savings-minimum-spillover",
+      "actual": "0.00",
+      "expected": "0.00",
+      "scope": "Remaining1950 minimum absorbs savings1000; do not infer a positive work attribution",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "U01-negative-only-eligible",
+      "actual": "UNRESOLVED",
+      "expected": "UNRESOLVED",
+      "scope": "Spouse-only entitlement withN\u22129000 not established by positive-selected J1/J2; no silentmax(0)",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "U02-nonpositive-G",
+      "actual": "UNRESOLVED",
+      "expected": "UNRESOLVED",
+      "scope": "No denominator-zero/negative general-base prescription from this bounded test",
+      "arithmetic": "PASS"
+    },
+    {
+      "id": "U03-nominal1000-not-tested-by-binding-cap",
+      "actual": "SOURCE ONLY",
+      "expected": "SOURCE ONLY",
+      "scope": "J2 cap265.60 is below500, so observedJ2 alone does not distinguish500nominal from1000; statutory/manual wording supplies1000",
+      "arithmetic": "PASS"
+    }
+  ]
+}

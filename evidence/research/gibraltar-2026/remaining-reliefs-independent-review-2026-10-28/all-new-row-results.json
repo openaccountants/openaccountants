@@ -1,0 +1,289 @@
+{
+  "pin": "933e6993fe5305609c849551765a27ba9a116e8b",
+  "rows": [
+    {
+      "id": "REL-01",
+      "rule": "Solar/wind: a person with an interest in Gibraltar property, qualifying installation expenditure and rule 6 Town Planner certification. Preserve the actual interest and certification tests.",
+      "checked_provisions": "Energy rules 3(1), 6",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download"
+      ],
+      "source_proof_ids": [
+        "REL-EN"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "Property interest, specified solar/wind installation expenditure and Town Planner certification are supported. The permit, compliance and evidence conditions are preserved.",
+      "recorded_guide_section": "The base",
+      "actual_location": "The base > Solar and wind installation deductions",
+      "location_mapping_result": "pass",
+      "finding_ids": []
+    },
+    {
+      "id": "REL-02",
+      "rule": "Installation-cost deduction: £6,000 aggregate across all claimants, claimed in equal amounts over two assessment years.",
+      "checked_provisions": "Energy rules 3(2)–(3)",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download"
+      ],
+      "source_proof_ids": [
+        "REL-EN"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "Actual installation cost, £6,000 aggregate across claimants and equal deduction amounts over two assessment years are supported.",
+      "recorded_guide_section": "The base",
+      "actual_location": "The base > Solar and wind installation deductions",
+      "location_mapping_result": "correction required",
+      "finding_ids": [
+        "GI-REL-01"
+      ]
+    },
+    {
+      "id": "REL-03",
+      "rule": "Energy: additional deduction; joint written allocation agreement or Commissioner determination considering relative expenditure; Town Planner permit/compliance/evidence; written claim within two years after assessment-year end, with the certification letter.",
+      "checked_provisions": "Energy rules 4–7",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download"
+      ],
+      "source_proof_ids": [
+        "REL-EN"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "Additional relief, written agreed allocation or Commissioner determination, Town Planner certification conditions, and two-year written claim with letter are supported.",
+      "recorded_guide_section": "The base",
+      "actual_location": "The base > Solar and wind installation deductions",
+      "location_mapping_result": "correction required",
+      "finding_ids": [
+        "GI-REL-01"
+      ]
+    },
+    {
+      "id": "REL-04",
+      "rule": "Energy performance: property interest, actual improvement of the rating, an EPC and Department of Environment certification. Include EPC cost in total expenditure.",
+      "checked_provisions": "Performance rules 3, 4, 7",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download"
+      ],
+      "source_proof_ids": [
+        "REL-EP"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "Interest in Gibraltar property, actual rating improvement, EPC, certification and inclusion of EPC cost are supported.",
+      "recorded_guide_section": "The base",
+      "actual_location": "The base > Property energy-performance deductions",
+      "location_mapping_result": "pass",
+      "finding_ids": []
+    },
+    {
+      "id": "REL-05",
+      "rule": "Achieved-rating deduction percentages: A+ 100%, A 85%, B 70%, C 50%, D 30%, E 25%, F 10%, G 0%. Apply the percentage for the rating obtained.",
+      "checked_provisions": "Performance rule 4(2), Schedule",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download"
+      ],
+      "source_proof_ids": [
+        "REL-EP"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "All eight achieved-rating percentages are correct. Applying the achieved-rating rate to evidenced expenditure, rather than a difference of rates, follows rule 4(2). Visually checked all eight pairs on p5.",
+      "recorded_guide_section": "The base",
+      "actual_location": "The base > Property energy-performance deductions",
+      "location_mapping_result": "correction required",
+      "finding_ids": [
+        "GI-REL-01"
+      ]
+    },
+    {
+      "id": "REL-06",
+      "rule": "Performance: additional relief subject to the same-expenditure tax-deductible-property-zone exclusion; joint written allocation or determination; Department of Environment evidence/certification; written claim within two years after assessment-year/accounting-period end.",
+      "checked_provisions": "Performance rules 5–8",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download"
+      ],
+      "source_proof_ids": [
+        "REL-EP"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "Same-expenditure property-zone exclusion, additional relief, joint written allocation or determination, Department evidence and certification, and two-year claim period are supported.",
+      "recorded_guide_section": "The base",
+      "actual_location": "The base > Property energy-performance deductions",
+      "location_mapping_result": "correction required",
+      "finding_ids": [
+        "GI-REL-01"
+      ]
+    },
+    {
+      "id": "REL-07",
+      "rule": "EV charger: legal title to a Gibraltar parking space or garage, actual installation cost and Commissioner certificate.",
+      "checked_provisions": "EV rules 3(1), 6",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download"
+      ],
+      "source_proof_ids": [
+        "REL-EV"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "Legal title to the Gibraltar parking space or garage, actual installation expense, and Commissioner certificate conditions are supported.",
+      "recorded_guide_section": "The base",
+      "actual_location": "The base > Electric-vehicle charging systems",
+      "location_mapping_result": "correction required",
+      "finding_ids": [
+        "GI-REL-01"
+      ]
+    },
+    {
+      "id": "REL-08",
+      "rule": "EV installation deduction: cost capped at £2,000 aggregate across claimants; additional deduction; joint written allocation agreement or Commissioner determination.",
+      "checked_provisions": "EV rules 3(2), 4, 5",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download"
+      ],
+      "source_proof_ids": [
+        "REL-EV"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "Actual cost limited to £2,000 aggregate, additional relief, written joint allocation or Commissioner determination considering facts and expenditure proportions are supported.",
+      "recorded_guide_section": "The base",
+      "actual_location": "The base > Electric-vehicle charging systems",
+      "location_mapping_result": "correction required",
+      "finding_ids": [
+        "GI-REL-01"
+      ]
+    },
+    {
+      "id": "REL-09",
+      "rule": "EV rule 7 requires a written claim to the Commissioner. The 2022 amendment deletes the 30 June 2021 date. This does not establish that all general tax claim limits are absent.",
+      "checked_provisions": "EV rule 7; LN 2022/170 rules 2–3",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download",
+        "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-amendment-rules-2022-6610/download"
+      ],
+      "source_proof_ids": [
+        "REL-EV",
+        "REL-EV22"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "Current rule 7 requires writing to the Commissioner. The entire amendment deletes the former 30 June 2021 cutoff, commencing on its Gazette publication date, 7 July 2022. The Guide does not import a two-year deadline or claim there is no general time limit.",
+      "recorded_guide_section": "The base",
+      "actual_location": "The base > Electric-vehicle charging systems",
+      "location_mapping_result": "correction required",
+      "finding_ids": [
+        "GI-REL-01"
+      ]
+    },
+    {
+      "id": "REL-10",
+      "rule": "Disabled access: company/business legal owner of Gibraltar property from which a trade, business, profession or vocation is carried on; actual qualifying access/inclusion work expenditure. Private-home eligibility is not established by ownership alone.",
+      "checked_provisions": "Disabled-access rule 3(1)(a)–(b)",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download"
+      ],
+      "source_proof_ids": [
+        "REL-DA"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "Company/business, legal title, Gibraltar business property and access/inclusion expenditure conditions are supported. Ownership alone does not establish private-home eligibility.",
+      "recorded_guide_section": "The base",
+      "actual_location": "The base > Disabled access to business property",
+      "location_mapping_result": "correction required",
+      "finding_ids": [
+        "GI-REL-01"
+      ]
+    },
+    {
+      "id": "REL-11",
+      "rule": "Access-cost deduction: £15,000 aggregate. Current rule 3(1)(d) deadline is 30 June 2030 after LN 2026/125 commenced on publication, 18 June 2026. The older 30 June 2024 search excerpt is superseded.",
+      "checked_provisions": "Disabled-access rule 3(1)(d), 3(2); LN 2026/125 rules 2–3",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download",
+        "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-amendment-rules-2026-8467/download"
+      ],
+      "source_proof_ids": [
+        "REL-DA",
+        "REL-DA26"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "£15,000 aggregate cap and 30 June 2030 work deadline are supported. The complete amendment replaces 2024 with 2030 and commences on Gazette publication, 18 June 2026. No retrospective gap-period conclusion is asserted.",
+      "recorded_guide_section": "The base",
+      "actual_location": "The base > Disabled access to business property",
+      "location_mapping_result": "correction required",
+      "finding_ids": [
+        "GI-REL-01"
+      ]
+    },
+    {
+      "id": "REL-12",
+      "rule": "Access certification: authority letter, planning permission/building approval where required and expenditure evidence; Town Planner where full permission is required, otherwise Building Control Officer. Written claim within two years after assessment-year/accounting-period end, with the rule 5 letter.",
+      "checked_provisions": "Disabled-access rules 4–6",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download"
+      ],
+      "source_proof_ids": [
+        "REL-DA"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "Additional relief, certification, relevant-authority split, conditional planning/building approvals and compliance, expenditure evidence, and written two-year claim with rule 5 letter are supported.",
+      "recorded_guide_section": "The base",
+      "actual_location": "The base > Disabled access to business property",
+      "location_mapping_result": "correction required",
+      "finding_ids": [
+        "GI-REL-01"
+      ]
+    },
+    {
+      "id": "REL-13",
+      "rule": "Printed access rule 3(1)(c) refers to a certificate under rule 6, although certification is in rule 5 and claims in rule 6. Preserve the reference and its unresolved application; do not silently renumber the law.",
+      "checked_provisions": "Disabled-access rules 3(1)(c), 5, 6",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download"
+      ],
+      "source_proof_ids": [
+        "REL-DA"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "Printed rule 3(1)(c) does refer to rule 6, while the certification provisions are in rule 5. Visual inspection confirms the mismatch. The Guide preserves this interpretation limit and assumes eligibility only for arithmetic.",
+      "recorded_guide_section": "The base",
+      "actual_location": "Disabled access to business property; Sources > Retained calculation controls",
+      "location_mapping_result": "pass",
+      "finding_ids": []
+    },
+    {
+      "id": "REL-14",
+      "rule": "These instruments do not alone resolve ABS/GIBS interaction, the appropriate claim year for actual facts, every other relief or actual certification/acceptance. Preserve the remaining partial reasons.",
+      "checked_provisions": "Four relief instruments, read in full",
+      "official_urls": [
+        "https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download",
+        "https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download",
+        "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download",
+        "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download"
+      ],
+      "source_proof_ids": [
+        "REL-EN",
+        "REL-EP",
+        "REL-EV",
+        "REL-DA"
+      ],
+      "read_on": "2026-10-28",
+      "law_and_context_result": "pass",
+      "reviewer_reason": "The instruments establish their own deduction conditions. They do not by themselves settle the wider ABS/GIBS interaction, actual claim year, all other reliefs or administrative acceptance. The Guide and README retain those limits and all seven partial domains.",
+      "recorded_guide_section": "Sources",
+      "actual_location": "Sources and The base scope limitations",
+      "location_mapping_result": "pass",
+      "finding_ids": []
+    }
+  ],
+  "substantive_source_passes": 14,
+  "location_mapping_corrections": 10
+}

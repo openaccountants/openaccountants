@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="BOE-A-2026-13573 Orden HAC/623/2026, de 12 de junio, por la que se modifican la Orden EHA/3316/2010, de 17 de diciembre, por la que se aprueban los modelos de autoliquidación 210, 211 y 213 del Impuesto sobre la Renta de No Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente y el gravamen especial sobre bienes inmuebles de entidades no residentes, y se establecen las condiciones generales y el procedimiento para su presentación y otras normas referentes a la tributación de no residentes; la Orden EHA/3290/2008, de 6 de noviembre, por la que se aprueban el modelo 216 «Impuesto sobre la Renta de No Residentes. Rentas obtenidas sin mediación de establecimiento permanente. Retenciones e ingresos a cuenta. Declaración-documento de ingreso» y el modelo 296 «Impuesto sobre la Renta de No Residentes. No residentes sin establecimiento permanente. Declaración anual de retenciones e ingresos a cuenta»; y la Orden EHA/1658/2009, de 12 de junio, por la que se establecen el procedimiento y las condiciones para la domiciliación del pago de determinadas deudas cuya gestión tiene atribuida la Agencia Estatal de Administración Tributaria." />
+    <title>BOE-A-2026-13573 Orden HAC/623/2026, de 12 de junio, por la que se modifican la Orden EHA/3316/2010, de 17 de diciembre, por la que se aprueban los modelos de autoliquidación 210, 211 y 213 del Impuesto sobre la Renta de No Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente y el gravamen especial sobre bienes inmuebles de entidades no residentes, y se establecen las condiciones generales y el procedimiento para su presentación y otras normas referentes a la tributación de no residentes; la Orden EHA/3290/2008, de 6 de noviembre, por la que se aprueban el modelo 216 «Impuesto sobre la Renta de No Residentes. Rentas obtenidas sin mediación de establecimiento permanente. Retenciones e ingresos a cuenta. Declaración-documento de ingreso» y el modelo 296 «Impuesto sobre la Renta de No Residentes. No residentes sin establecimiento permanente. Declaración anual de retenciones e ingresos a cuenta»; y la Orden EHA/1658/2009, de 12 de junio, por la que se establecen el procedimiento y las condiciones para la domiciliación del pago de determinadas deudas cuya gestión tiene atribuida la Agencia Estatal de Administración Tributaria.</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/diario-boe.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/texto.css" type="text/css">
+  
+    <link rel="canonical" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2026-13573"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2026-13573" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#date_document" content="2026-06-12" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#number" content="hac623" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/119"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/503"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1508"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3233"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5343"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2026-13573" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#date_document" content="2026-06-12" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#number" content="hac623" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/119"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/503"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1508"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3233"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5343"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5876"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2026/06/12/hac623"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden HAC/623/2026, de 12 de junio, por la que se modifican la Orden EHA/3316/2010, de 17 de diciembre, por la que se aprueban los modelos de autoliquidación 210, 211 y 213 del Impuesto sobre la Renta de No Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente y el gravamen especial sobre bienes inmuebles de entidades no residentes, y se establecen las condiciones generales y el procedimiento para su presentación y otras normas referentes a la tributación de no residentes; la Orden EHA/3290/2008, de 6 de noviembre, por la que se aprueban el modelo 216 «Impuesto sobre la Renta de No Residentes. Rentas obtenidas sin mediación de establecimiento permanente. Retenciones e ingresos a cuenta. Declaración-documento de ingreso» y el modelo 296 «Impuesto sobre la Renta de No Residentes. No residentes sin establecimiento permanente. Declaración anual de retenciones e ingresos a cuenta»; y la Orden EHA/1658/2009, de 12 de junio, por la que se establecen el procedimiento y las condiciones para la domiciliación del pago de determinadas deudas cuya gestión tiene atribuida la Agencia Estatal de Administración Tributaria." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa" property="http://data.europa.eu/eli/ontology#date_publication" content="2026-06-23" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/epub"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/xml"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/epub" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/epub" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/epub" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/xml" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/xml" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/xml"/>
+<meta  about="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa/xml" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2026/06/12/hac623/dof/spa"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor" tabindex="-1">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/" tabindex="-1">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" srcset="/imagenes/logoMPRmovil.svg" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" srcset="/imagenes/logoMPR.svg" alt="Ministerio de la Presidencia"></a></span>
+
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+        
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <span class="fuera">Idioma actual:</span>
+            <input id="activar-idiomas" type="checkbox" class="fuera">
+            <label class="idioma-actual" for="activar-idiomas" title="Idiomas: Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="fuera"> / </span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <ul id="lista-idiomas">
+              <li><a href="doc.php?lang=es&amp;id=BOE-A-2026-13573" lang="es" hreflang="es"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><span class="fuera"> / </span><em>Castellano</em></span></a></li>
+              <li><a href="doc.php?lang=ca&amp;id=BOE-A-2026-13573" lang="ca" hreflang="ca"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><span class="fuera"> / </span><em>Catal&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=gl&amp;id=BOE-A-2026-13573" lang="gl" hreflang="gl"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><span class="fuera"> / </span><em>Galego</em></span></a></li>
+              <li><a href="doc.php?lang=eu&amp;id=BOE-A-2026-13573" lang="eu" hreflang="eu"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><span class="fuera"> / </span><em>Euskara</em></span></a></li>
+              <li><a href="doc.php?lang=va&amp;id=BOE-A-2026-13573" lang="ca-valencia" hreflang="ca-valencia"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><span class="fuera"> / </span><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=en&amp;id=BOE-A-2026-13573" lang="en" hreflang="en"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><span class="fuera"> / </span><em>English</em></span></a></li>
+              <li><a href="doc.php?lang=fr&amp;id=BOE-A-2026-13573" lang="fr" hreflang="fr"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><span class="fuera"> / </span><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;" class="fuera">
+          <label class="click-desplegar resto" for="activar-menu" title="Men&uacute;: Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe">BOE</a></li>
+                  <li><a href="/diario_borme">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones</a></li>
+                  <li><a href="/edictos_judiciales">Edictos judiciales</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                  <li><a href="/datosabiertos/api/api.php">Datos abiertos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscar/">Buscar</a></li>        <li class="destino">Documento BOE-A-2026-13573</li>
+        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolBdatos">
+<h2 class="fuera">Documento BOE-A-2026-13573</h2>
+<div class="enlacesDoc" id="barraSep">
+  <h3 class="documento-tit">Orden HAC/623/2026, de 12 de junio, por la que se modifican la Orden EHA/3316/2010, de 17 de diciembre, por la que se aprueban los modelos de autoliquidación 210, 211 y 213 del Impuesto sobre la Renta de No Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente y el gravamen especial sobre bienes inmuebles de entidades no residentes, y se establecen las condiciones generales y el procedimiento para su presentación y otras normas referentes a la tributación de no residentes; la Orden EHA/3290/2008, de 6 de noviembre, por la que se aprueban el modelo 216 «Impuesto sobre la Renta de No Residentes. Rentas obtenidas sin mediación de establecimiento permanente. Retenciones e ingresos a cuenta. Declaración-documento de ingreso» y el modelo 296 «Impuesto sobre la Renta de No Residentes. No residentes sin establecimiento permanente. Declaración anual de retenciones e ingresos a cuenta»; y la Orden EHA/1658/2009, de 12 de junio, por la que se establecen el procedimiento y las condiciones para la domiciliación del pago de determinadas deudas cuya gestión tiene atribuida la Agencia Estatal de Administración Tributaria.</h3>
+  <div class="metadatosDoc">
+    <div class="metadatos">
+      <dl>
+        <dt>Publicado en:</dt>
+        <dd>«<abbr title="Boletín Oficial del Estado">BOE</abbr>» <abbr title="número">núm.</abbr> 152, de 23 de junio de 2026, páginas 86868 a 86881 (14 <abbr title="páginas">págs.</abbr>)</dd>
+        <dt>Sección:</dt>
+        <dd>I. Disposiciones generales</dd>
+        <dt>Departamento:</dt>
+        <dd>Ministerio de Hacienda</dd>
+        <dt>Referencia:</dt>
+        <dd>BOE-A-2026-13573</dd>
+        <dt>Permalink ELI:</dt>
+        <dd>
+          <a href="https://www.boe.es/eli/es/o/2026/06/12/hac623" title="Permalink ELI">https://www.boe.es/eli/es/o/2026/06/12/hac623</a>
+        </dd>
+      </dl>
+    </div>
+    <ul class="enlaces-doc">
+      <li class="tit-enlaces">Otros formatos:</li>
+      <li class="puntoPDF">
+        <a title="Documento PDF de la publicación original" href="/boe/dias/2026/06/23/pdfs/BOE-A-2026-13573.pdf">PDF</a>
+      </li>
+      <li class="puntoEpub">
+        <a title="Libro electrónico de BOE-A-2026-13573" href="/diario_boe/epub.php?id=BOE-A-2026-13573">EPUB</a>
+      </li>
+      <li class="puntoXML">
+        <a target="_blank" title="Texto y metadatos en formato XML" href="/diario_boe/xml.php?id=BOE-A-2026-13573">XML</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .metadatosDoc -->
+</div>
+<!-- .enlacesDoc -->
+<div class="pretexto">
+  <div class="tabs">
+    <input name="tabs" type="radio" id="tab-texto" class="input" checked="checked"/>
+    <label for="tab-texto" class="label">Texto</label>
+    <div id="DOdocText" class="panel">
+      <h4>TEXTO ORIGINAL</h4>
+      <div id="textoxslt">
+        <p class="parrafo">En línea con las modificaciones introducidas en las declaraciones informativas de retenciones sobre dividendos mediante Orden HAC/56/2024, de 25 de enero, por la que se modifican las órdenes ministeriales que aprueban los modelos de autoliquidación 123, 210, 216, y de declaración informativa 193 y 296 y la Orden EHA/1658/2009, de 12 de junio, por la que se establecen el procedimiento y las condiciones para la domiciliación del pago de determinadas deudas cuya gestión tiene atribuida la Agencia Estatal de Administración Tributaria, se procede a modificar el contenido del modelo 210 de autoliquidación del Impuesto sobre la Renta de no Residentes por las rentas obtenidas en España sin mediación de establecimiento permanente y los diseños de registro del modelo 296 «Impuesto sobre la Renta de no Residentes. No residentes sin establecimiento permanente. Declaración anual de retenciones e ingresos a cuenta» al objeto de obtener la información necesaria para poder realizar una comprobación y control adecuado en la tramitación de las solicitudes de devolución de retenciones sobre dividendos a cuenta del Impuesto sobre la Renta de no Residentes.</p>
+        <p class="parrafo">Por otra parte, también se introducen cambios en el modelo 210 con el objetivo de obtener la información necesaria para poder realizar una comprobación y control adecuado en la tramitación de las declaraciones de rentas inmobiliarias y mejorar la información y asistencia proporcionada por la Administración tributaria a los declarantes de estas rentas.</p>
+        <p class="parrafo">Con tal objeto, el artículo primero de la presente orden modifica la Orden EHA/3316/2010, de 17 de diciembre, por la que se aprueban los modelos de autoliquidación 210, 211 y 213 del Impuesto sobre la Renta de no Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente y el gravamen especial sobre bienes inmuebles de entidades no residentes, y se establecen las condiciones generales y el procedimiento para su presentación y otras normas referentes a la tributación de no residentes.</p>
+        <p class="parrafo">En el supuesto de rendimientos derivados de la participación de fondos propios de entidades (códigos de tipo de renta 04, 29 y 30), se crea un nuevo anexo al modelo 210 de desglose de dividendos y se crean las casillas «Clave de mercado», «Código LEI» y «Código ISIN».</p>
+        <p class="parrafo">Teniendo en cuenta que, con carácter general, las entidades suelen distribuir dividendos en distintas fechas a lo largo del ejercicio, cuando en una solicitud de devolución de retenciones practicadas sobre dividendos a cuenta del Impuesto sobre la Renta de no Residentes se opta por agrupar en el modelo 210 los dividendos percibidos de una misma entidad durante el año natural, el apartado 210 R relativo a los rendimientos no permite identificar qué parte del rendimiento declarado corresponde a cada uno de dichos dividendos.</p>
+        <p class="parrafo">Tratándose de valores negociables en mercados secundarios oficiales, el nuevo anexo de desglose de dividendos va a permitir diferenciar, en caso de agrupación, qué parte del rendimiento corresponde a cada uno de los dividendos de la misma entidad y ejercicio.</p>
+        <p class="parrafo">Los valores posibles de la nueva casilla «Clave de mercado» son: A (Mercado secundario oficial de valores español), B (Mercado secundario oficial de valores extranjero de la UE), C (Otros mercados oficiales extranjeros), D (Otros mercados no oficiales) y E (No negociados en mercados). Si se marcan los valores A, B o C es necesario cumplimentar la casilla «Código ISIN» y, en caso de agrupación, el anexo de «desglose de dividendos». Si se marcan los valores D o E se exige cumplimentar la casilla NIF emisor del campo «Pagador/Retenedor/Emisor/Adquirente del inmueble».</p>
+        <p class="parrafo">Por otra parte, en relación con las rentas inmobiliarias, se crea un nuevo anexo al modelo 210 de desglose de gastos deducibles de inmuebles arrendados o subarrendados y se incorporan algunas mejoras técnicas en la cumplimentación del modelo 210. En particular, en el apartado H del modelo 210 relativo a rentas derivadas de transmisiones de bienes inmuebles, cuando se trate de una autoliquidación única presentada por ambos cónyuges, se modifica la casilla C/O por C/I, que pasa a denominarse «conjunta con cónyuge» e «individual» y se añade una casilla en el apartado «mejora o segunda adquisición» para aclarar si se trata de una mejora o de una segunda adquisición. Por otra parte, se crean las casillas «N.º de días» y «Cuota participación» para indicar, tratándose de rentas imputadas de inmuebles urbanos destinados por personas físicas al uso propio o rendimientos de inmuebles arrendados o subarrendados, el número de días del inmueble a disposición del contribuyente o en que el inmueble ha estado arrendado, respectivamente, y el porcentaje de participación que le corresponde en la titularidad del inmueble. Por último, en el apartado «Situación del inmueble» del modelo 210 se crea la casilla «Clave de referencia catastral» con valores 1 «Inmueble con referencia catastral» y 2 «Inmueble sin referencia catastral».</p>
+        <p class="parrafo">Además, se incorporan otras mejoras y actualizaciones técnicas. En concreto, en el modelo 210 se elimina el campo «Fecha y firma» en los ejemplares de la autoliquidación y se modifica la denominación del campo «Dirección en el país de residencia» del apartado «Contribuyente» que pasa a denominarse «Dirección actual en el país de residencia».</p>
+        <p class="parrafo">Seguidamente, y a los efectos de mejorar la información y asistencia proporcionada por la Administración tributaria a los declarantes de rentas inmobiliarias, se modifican los plazos de presentación relativos a los modelos 210 del Impuesto sobre la Renta de No Residentes en los que se autoliquiden tanto rentas imputadas de los bienes inmuebles urbanos como rendimientos de inmuebles arrendados o subarrendados con resultado a ingresar.</p>
+        <p class="parrafo">A continuación, el artículo segundo de esta orden modifica la Orden EHA/3290/2008, de 6 de noviembre, por la que se aprueban el modelo 216 «Impuesto sobre la Renta de no Residentes. Rentas obtenidas sin mediación de establecimiento permanente. Retenciones e ingresos a cuenta. Declaración-documento de ingreso» y el modelo 296 «Impuesto sobre la Renta de no Residentes. No residentes sin establecimiento permanente. Declaración anual de retenciones e ingresos a cuenta».</p>
+        <p class="parrafo">En concreto, estas modificaciones consisten en la introducción de mejoras técnicas en la estructura y definición de determinados campos contenidos tanto en el registro de tipo 2 «Registro de perceptor» como en el anexo al registro de tipo 2 «Registro de perceptor», denominado «Valores negociables. Relación de certificados de pago».</p>
+        <p class="parrafo">En particular, se modifica la redacción de los siguientes campos del registro de tipo 2 «Registro de perceptor»: «Código», «Código emisor» y «Clave de mercado». Por lo que respecta al anexo al registro de tipo 2 «Registro de perceptor», denominado «Valores negociables. Relación de certificados de pago», se añade el campo «Clave de personalidad del titular registral».</p>
+        <p class="parrafo">El artículo tercero modifica el anexo II «Plazos generales de presentación telemática de autoliquidaciones con domiciliación de pago», en cuanto al modelo 210, de la Orden EHA/1658/2009, de 12 de junio, por la que se establecen el procedimiento y las condiciones para la domiciliación del pago de determinadas deudas cuya gestión tiene atribuida la Agencia Estatal de Administración Tributaria.</p>
+        <p class="parrafo">De acuerdo con lo dispuesto en la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la elaboración de esta orden se ha efectuado de acuerdo con los principios de necesidad, eficacia, proporcionalidad, seguridad jurídica, transparencia y eficiencia.</p>
+        <p class="parrafo">Se cumplen los principios de necesidad y eficacia por ser desarrollo de la norma reglamentaria y el instrumento adecuado para dicho desarrollo. Se cumple también el principio de proporcionalidad al contener la regulación necesaria para conseguir los objetivos que justifican su aprobación.</p>
+        <p class="parrafo">Respecto al principio de seguridad jurídica, se ha garantizado la coherencia del texto con el resto del ordenamiento jurídico nacional, generando un marco normativo estable, predecible, integrado, claro y de certidumbre que facilita su conocimiento y comprensión y, en consecuencia, la actuación y toma de decisiones de los diferentes sujetos afectados sin introducción de cargas administrativas innecesarias.</p>
+        <p class="parrafo">El principio de transparencia, sin perjuicio de su publicación oficial en el «Boletín Oficial del Estado», se ha garantizado mediante la publicación del proyecto de orden y su correspondiente memoria en el portal web del Ministerio de Hacienda a efectos de que pueda ser conocido dicho texto en el trámite de audiencia e información pública por todos los ciudadanos.</p>
+        <p class="parrafo">Por último, en relación con el principio de eficiencia, se ha procurado que la norma genere las menores cargas administrativas para los ciudadanos, así como los menores costes indirectos, fomentando el uso racional de los recursos públicos y el pleno respeto a los principios de estabilidad presupuestaria y sostenibilidad financiera.</p>
+        <p class="parrafo">Por todo lo anterior, en ejercicio de las habilitaciones otorgadas con carácter específico respecto a los modelos 210 y 296, por la disposición final segunda del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, aprobado mediante Real Decreto Legislativo 5/2004, de 5 de marzo, y por el artículo 15.2 y la disposición final única del Reglamento del Impuesto sobre la Renta de no Residentes, aprobado mediante Real Decreto 1776/2004, de 30 de julio, y en ejercicio de las habilitaciones establecidas con carácter general en el apartado 2 del artículo 30 y en el artículo 117 del Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por Real Decreto 1065/2007, de 27 de julio, y la disposición final única del Reglamento General de Recaudación, aprobado por el Real Decreto 939/2005, de 29 de julio, es necesario proceder a la aprobación de una nueva orden de modificación de los modelos 210 y 296 y del plazo de presentación con domiciliación del pago del modelo 210.</p>
+        <p class="parrafo">En su virtud, dispongo:</p>
+        <h5 class="articulo">Artículo primero. Modificación de la Orden EHA/3316/2010, de 17 de diciembre, por la que se aprueban los modelos de autoliquidación 210, 211 y 213 del Impuesto sobre la Renta de no Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente y el gravamen especial sobre bienes inmuebles de entidades no residentes, y se establecen las condiciones generales y el procedimiento para su presentación y otras normas referentes a la tributación de no residentes.</h5>
+        <p class="parrafo">Se introducen las siguientes modificaciones en la Orden EHA/3316/2010, de 17 de diciembre:</p>
+        <p class="parrafo_2">Uno. Se modifica el artículo 1, que quedará con la siguiente redacción:</p>
+        <blockquote class="sangrado">
+      <h5 class="articulo">«Artículo 1. Aprobación del modelo de autoliquidación del Impuesto sobre la Renta de no Residentes por las rentas obtenidas en España sin mediación de establecimiento permanente (modelo 210).</h5>
+      <p class="parrafo">1. Se aprueba el modelo 210 “Impuesto sobre la Renta de no Residentes. No residentes sin establecimiento permanente”, de autoliquidación para los contribuyentes por el Impuesto sobre la Renta de no Residentes que obtengan rentas en España sin mediación de establecimiento permanente y el documento de ingreso/devolución, que figuran en el anexo I.</p>
+      <p class="parrafo">Consta de dos ejemplares: “Ejemplar para el contribuyente/representante” y “Ejemplar para el responsable solidario/retenedor”. El correspondiente documento de ingreso/devolución consta, además, de un tercer ejemplar “para la Entidad colaboradora/Administración”. El modelo de autoliquidación consta asimismo de un anexo de “desglose de dividendos”, que se cumplimentará en el caso de que se opte por declarar de forma agrupada varios dividendos y demás rendimientos por la participación en fondos propios de entidades derivados de valores negociables en mercados secundarios oficiales obtenidos en un período determinado, de acuerdo con las reglas previstas en el artículo 2 de esta orden, y de un anexo de “desglose de gastos deducibles de inmuebles arrendados o subarrendados”.</p>
+      <p class="parrafo">El número de justificante que figurará en este documento será un número secuencial cuyos tres primeros dígitos serán 210 o 250.</p>
+      <p class="parrafo">2. Cuando para incluir la documentación que deba adjuntarse a la autoliquidación sea necesario utilizar un sobre, éste podrá ser un sobre ordinario, si bien siempre se hará constar en el mismo el concepto Impuesto sobre la Renta de no Residentes y el número de justificante del documento de ingreso o devolución que figure en la autoliquidación, de modo que pueda relacionarse el contenido del sobre con la autoliquidación a la que corresponda.</p>
+      <p class="parrafo">Asimismo, cuando la documentación se remita desde el extranjero, podrá utilizarse también un sobre ordinario en el que se hará constar igualmente el número de justificante del documento de ingreso o devolución.»</p>
+    </blockquote>
+        <p class="parrafo_2">Dos. Se modifica el artículo 5, que quedará con la siguiente redacción:</p>
+        <blockquote class="sangrado">
+      <h5 class="articulo">«Artículo 5. Plazo de presentación de las autoliquidaciones del Impuesto por las rentas obtenidas en España sin mediación de establecimiento permanente.</h5>
+      <p class="parrafo">El plazo de presentación y, en su caso, de ingreso, en función del tipo de renta declarada, será:</p>
+      <p class="parrafo_2">a) Rentas derivadas de transmisiones de bienes inmuebles: Conforme establece el artículo 14.4 del Reglamento del impuesto, las autoliquidaciones de rentas derivadas de transmisiones de bienes inmuebles se presentarán, con independencia del resultado de la autoliquidación, en el plazo de tres meses una vez transcurrido el plazo de un mes desde la fecha de la transmisión del bien inmueble.</p>
+      <p class="parrafo">b) Rentas imputadas de los bienes inmuebles situados en territorio español a que se refiere el artículo 24.5 del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, aprobado por el Real Decreto Legislativo 5/2004, de 5 de marzo: el plazo de presentación e ingreso será del 1 de abril al 31 de diciembre del año natural siguiente a la fecha de devengo.</p>
+      <p class="parrafo">c) Resto de rentas:</p>
+      <p class="parrafo_2">1.º Autoliquidaciones con resultado a ingresar: el plazo de presentación e ingreso será los veinte primeros días naturales de los meses de abril, julio, octubre y enero, en relación con las rentas cuya fecha de devengo esté comprendida en el trimestre natural anterior. No obstante, tratándose de autoliquidaciones con resultado a ingresar correspondientes a rendimientos de inmuebles arrendados o subarrendados, el plazo de presentación e ingreso será los veinte primeros días naturales del mes de abril del año siguiente al de devengo, tanto para declarar de forma separada como agrupada.</p>
+      <p class="parrafo">2.º Autoliquidaciones de cuota cero: el plazo de presentación será del 1 al 20 de enero del año siguiente al de devengo de las rentas declaradas.</p>
+      <p class="parrafo">3.º Autoliquidaciones con resultado a devolver: podrán presentarse a partir del 1 de febrero del año siguiente al de devengo de las rentas declaradas y dentro del plazo de cuatro años contados desde el término del período de declaración e ingreso de la retención. Este plazo resultará aplicable a todas las autoliquidaciones, con independencia de si la devolución deriva de la norma interna o de un convenio para evitar la doble imposición, incluso en aquellos supuestos en los que una orden de desarrollo del convenio fije un plazo inferior. Se entenderá concluido el plazo para la presentación de la autoliquidación en la fecha de su presentación.»</p>
+    </blockquote>
+        <p class="parrafo_2">Tres. Se modifica el apartado 1 del artículo 9 que queda con la siguiente redacción:</p>
+        <blockquote class="sangrado">
+      <p class="parrafo_2">«1. Se aprueba el modelo 213 “Gravamen Especial sobre Bienes Inmuebles de Entidades no Residentes”, que figura como anexo III de esta orden. El número de justificante que figurará en el modelo será un número secuencial cuyos tres primeros dígitos serán 213 o 253.</p>
+      <p class="parrafo">Cuando sea necesario utilizar un sobre, que podrá ser un sobre ordinario, para incluir la documentación que deba adjuntarse a la autoliquidación, se hará constar en el mismo el concepto Impuesto sobre la Renta de no Residentes y el número de justificante del documento de ingreso que figure en la autoliquidación, de modo que pueda relacionarse el contenido del sobre con la autoliquidación a la que corresponda.»</p>
+    </blockquote>
+        <p class="parrafo_2">Cuatro. Se modifica el apartado 6 del artículo 13 que queda con la siguiente redacción:</p>
+        <blockquote class="sangrado">
+      <p class="parrafo_2">«6. Podrá ser domiciliado el pago de la deuda tributaria resultante de las autoliquidaciones modelos 210 (salvo la correspondiente al tipo de renta 28, ganancias derivadas de la transmisión de bienes inmuebles) y 213, con los requisitos y procedimiento previstos en la Orden EHA/1658/2009, de 12 de junio, por la que se establecen el procedimiento y las condiciones para la domiciliación del pago de determinadas deudas cuya gestión tiene atribuida la Agencia Estatal de Administración Tributaria.</p>
+      <p class="parrafo">Los plazos de presentación telemática de estas autoliquidaciones con domiciliación del pago son los siguientes:</p>
+      <p class="parrafo_2">a) Modelo 210:</p>
+      <p class="parrafo_2">1.º En general: desde el día 1 al 15 de abril, julio, octubre o enero. Tratándose de rendimientos de inmuebles arrendados o subarrendados (tipos de renta 01 o 35), tanto para declarar de forma separada como agrupada, desde el 1 al 15 de abril del año natural siguiente al de devengo.</p>
+      <p class="parrafo">2.º En el caso de rentas imputadas de inmuebles urbanos, tipo de renta 02: desde el día 1 de abril hasta el 23 de diciembre del año natural siguiente a la fecha de devengo.</p>
+      <p class="parrafo_2">b) Modelo 213: Desde el día 1 hasta el 25 del mes de enero del año natural siguiente a la fecha de devengo.»</p>
+    </blockquote>
+        <p class="parrafo_2">Cinco. Se modifica el modelo 210 «Impuesto sobre la Renta de no Residentes. No residentes sin establecimiento permanente» de autoliquidación contenido en el anexo I de la Orden EHA/3316/2010, de 17 de diciembre, por el que figura en el anexo de la presente orden.</p>
+        <h5 class="articulo">Artículo segundo. Modificación de la Orden EHA/3290/2008, de 6 de noviembre, por la que se aprueban el modelo 216 «Impuesto sobre la Renta de no Residentes. Rentas obtenidas sin mediación de establecimiento permanente. Retenciones e ingresos a cuenta. Declaración-documento de ingreso» y el modelo 296 «Impuesto sobre la Renta de no Residentes. No residentes sin establecimiento permanente. Declaración anual de retenciones e ingresos a cuenta».</h5>
+        <p class="parrafo">Se introducen las siguientes modificaciones en la Orden EHA/3290/2008, de 6 de noviembre:</p>
+        <p class="parrafo_2">Uno. Se modifican los campos «CÓDIGO», «CÓDIGO EMISOR» Y «CLAVE DE MERCADO» del Registro de tipo 2 «Registro de perceptor», de los diseños de registro del modelo 296, contenidos en el anexo III de la Orden EHA/3290/2008, de 6 de noviembre, que tendrán la siguiente redacción:</p>
+        <blockquote class="sangrado">
+      <table class="tabla">
+        <colgroup>
+          <col width="18%"/>
+          <col width="18%"/>
+          <col width="64%"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>«Posiciones</th>
+            <th>Naturaleza</th>
+            <th>Descripción de los Campos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cuerpo_tabla_centro">13</td>
+            <td class="cuerpo_tabla_izq">Numérico</td>
+            <td class="cuerpo_tabla_izq">CÓDIGO</td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_centro"> </td>
+            <td class="cuerpo_tabla_izq"> </td>
+            <td class="cuerpo_tabla_izq">
+              <p class="cuerpo_tabla_izq">Sólo para claves de percepción “1” o “2” (posiciones 100-101 del tipo de registro 2).</p>
+              <p class="cuerpo_tabla_izq">Se consignará en este campo cualquiera de los números que a continuación se relacionan con el objetivo de identificar el contenido del campo “CÓDIGO EMISOR”:</p>
+              <p class="cuerpo_tabla_izq">1. El código emisor corresponde a un NIF.</p>
+              <p class="cuerpo_tabla_izq">2. El código emisor corresponde a un código ISIN.</p>
+              <p class="cuerpo_tabla_izq">3. El código emisor corresponde a valores extranjeros que no tienen asignado ISIN, cuyo emisor no dispone de NIF.</p>
+              <p class="cuerpo_tabla_izq">El número que debe consignarse será siempre el 2 cuando en el campo “CLAVE DE MERCADO” (posición 412 del tipo de registro 2) conste una A “Mercado secundario oficial de valores español”, B “Mercado secundario oficial de valores extranjero de la UE” o C “Otros mercados no oficiales”.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_centro">136-147</td>
+            <td class="cuerpo_tabla_izq">Alfanumérico</td>
+            <td class="cuerpo_tabla_izq">CÓDIGO EMISOR</td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_centro"> </td>
+            <td class="cuerpo_tabla_izq"> </td>
+            <td class="cuerpo_tabla_izq">
+              <p class="cuerpo_tabla_izq">Sólo para claves de percepción “1” o “2” (posiciones 100-101 del tipo de registro 2).</p>
+              <p class="cuerpo_tabla_izq">Se cumplimentará este campo para identificar al emisor.</p>
+              <p class="cuerpo_tabla_izq">En general, se consignará el Código ISIN, configurado de acuerdo con la Norma Técnica 1/2010, de 28 de julio, de la Comisión Nacional del Mercado de Valores. Será obligatorio consignar el ISIN cuando en el campo “CLAVE DE MERCADO” (posición 412 del tipo de registro 2) conste una A “Mercado secundario oficial de valores español”, B “Mercado secundario oficial de valores extranjero de la UE” o C “Otros mercados oficiales extranjeros”.</p>
+              <p class="cuerpo_tabla_izq">Si los valores no tienen asignado este Código:</p>
+              <p class="cuerpo_tabla_izq">– Cuando se haya indicado un 1 en el campo “CÓDIGO” (posición 135), se identificará al emisor mediante el Número de Identificación Fiscal, otorgado por la Agencia Estatal de Administración Tributaria.</p>
+              <p class="cuerpo_tabla_izq">– Si se ha consignado un 3 en el campo “CÓDIGO” (posición 135), se reflejará la clave “ZXX”, siendo “XX” el código del país emisor, de acuerdo con las claves de países que figuran en el anexo II de la Orden EHA/3496/2011, de 15 de diciembre (BOE de 26 de diciembre). Asimismo, en los supuestos de títulos emitidos por organismos supranacionales (Banco Mundial, etc.) que no tengan asignado ISIN se consignará ZNN, siendo NN las claves alfabéticas que figuran al final del citado anexo II.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_centro">412</td>
+            <td class="cuerpo_tabla_izq">Alfabético</td>
+            <td class="cuerpo_tabla_izq">CLAVE DE MERCADO</td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_centro"> </td>
+            <td class="cuerpo_tabla_izq"> </td>
+            <td class="cuerpo_tabla_izq">
+              <p class="cuerpo_tabla_izq">Sólo para claves de percepción “1” o “2” (posiciones 100-101 del tipo de registro 2).</p>
+              <p class="cuerpo_tabla_izq">Se cumplimentará este campo con alguno de los siguientes valores:</p>
+              <p class="cuerpo_tabla_izq">A. Mercado secundario oficial de valores español.</p>
+              <p class="cuerpo_tabla_izq">B. Mercado secundario oficial de valores extranjero de la UE.</p>
+              <p class="cuerpo_tabla_izq">C. Otros mercados oficiales extranjeros.</p>
+              <p class="cuerpo_tabla_izq">D. Otros mercados no oficiales.</p>
+              <p class="cuerpo_tabla_izq">E. No negociados en mercados.»</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </blockquote>
+        <p class="parrafo_2">Dos. Se crea un nuevo campo, «CLAVE DE PERSONALIDAD DEL TITULAR REGISTRAL», al anexo al registro de tipo 2, registro de perceptor, de los diseños de registro del modelo 296, contenidos en el anexo III de la Orden EHA/3290/2008, de 6 de noviembre, denominado «Valores negociables. Relación de certificados de pago» en la posición y con la redacción que se indica a continuación y se actualizan en consecuencia las posiciones correspondientes a «BLANCOS»:</p>
+        <blockquote class="sangrado">
+      <table class="tabla">
+        <colgroup>
+          <col width="18%"/>
+          <col width="18%"/>
+          <col width="64%"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>«Posiciones</th>
+            <th>Naturaleza</th>
+            <th>Descripción de los Campos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cuerpo_tabla_centro"> </td>
+            <td class="cuerpo_tabla_izq"> </td>
+            <td class="cuerpo_tabla_izq">CLAVE DE PERSONALIDAD DEL TITULAR REGISTRAL.</td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_centro">310</td>
+            <td class="cuerpo_tabla_izq">Alfabético</td>
+            <td class="cuerpo_tabla_izq">
+              <p class="cuerpo_tabla_izq">Valores:</p>
+              <p class="cuerpo_tabla_izq">F: persona física.</p>
+              <p class="cuerpo_tabla_izq">J: persona jurídica o entidad.</p>
+            </td>
+          </tr>
+          <tr>
+            <td class="cuerpo_tabla_centro">311-499</td>
+            <td class="cuerpo_tabla_izq">-------------</td>
+            <td class="cuerpo_tabla_izq">BLANCOS.»</td>
+          </tr>
+        </tbody>
+      </table>
+    </blockquote>
+        <h5 class="articulo">Artículo tercero. Modificación de la Orden EHA/1658/2009, de 12 de junio, por la que se establecen el procedimiento y las condiciones para la domiciliación del pago de determinadas deudas cuya gestión tiene atribuida la Agencia Estatal de Administración Tributaria.</h5>
+        <p class="parrafo">Se introduce la siguiente modificación en la Orden EHA/1658/2009, de 12 de junio:</p>
+        <p class="parrafo_2">Se modifica el anexo II «Plazos generales de presentación telemática de autoliquidaciones con domiciliación de pago», en cuanto al modelo 210, que quedará con la siguiente redacción:</p>
+        <blockquote class="sangrado">
+      <table class="tabla">
+        <colgroup>
+          <col width="15%"/>
+          <col width="85%"/>
+        </colgroup>
+        <thead>
+          <tr>
+            <th>«Modelo</th>
+            <th>Plazos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="cuerpo_tabla_centro">210</td>
+            <td class="cuerpo_tabla_izq">
+              <p class="cuerpo_tabla_izq">– En el caso de tipo de renta 02 (rentas imputadas de inmuebles urbanos): desde el día 1 de abril hasta el 23 de diciembre.</p>
+              <p class="cuerpo_tabla_izq">– Rentas derivadas del arrendamiento o subarrendamiento de inmuebles (tipos de renta 01 o 35) con agrupación anual o sin agrupar (período 0A) (*): desde el 1 al 15 de abril.</p>
+              <p class="cuerpo_tabla_izq">– Resto de tipo de rentas, excepto la 28 (ganancias derivadas de la transmisión de bienes inmuebles) (**): desde el día 1 hasta el día 15 de los meses de abril, julio, octubre y enero.</p>
+              <p class="cita_con_pleca">(*) Exclusivamente para el tratamiento por parte de las EECC se comunicará técnicamente como 1T.</p>
+              <p class="cita">(**) En caso de declaración de una renta separada, sin agrupación, exclusivamente para el tratamiento por parte de las EECC se comunicará técnicamente como NT, siendo N= 1, 2, 3 o 4).»</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </blockquote>
+        <h5 class="articulo">Disposición final única. Entrada en vigor.</h5>
+        <p class="parrafo">La presente orden entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado».</p>
+        <p class="parrafo">No obstante lo anterior, por lo que respecta a las autoliquidaciones y declaraciones modificadas en la orden, será aplicable por primera vez:</p>
+        <p class="parrafo_2">1. En cuanto a la declaración informativa modelo 296, será aplicable, por primera vez, a la correspondiente al ejercicio 2026, que se presentará en el ejercicio 2027.</p>
+        <p class="parrafo">2. En cuanto al modelo de autoliquidación 210, será aplicable, por primera vez:</p>
+        <p class="parrafo_2">a) Por lo que se refiere a las modificaciones introducidas en el modelo 210 en el apartado cinco del artículo primero de esta orden, a las autoliquidaciones que se presenten desde el 1 de enero de 2027, con independencia de la fecha de devengo.</p>
+        <p class="parrafo">b) Por lo que respecta a la modificación de los plazos de presentación relativos a los modelos 210 del Impuesto sobre la Renta de no Residentes en los que se autoliquiden tanto rentas imputadas de los bienes inmuebles urbanos como rendimientos de inmuebles arrendados o subarrendados con resultado a ingresar, prevista en el apartado dos del artículo primero de esta orden:</p>
+        <p class="parrafo_2">– En el caso de rentas imputadas de bienes inmuebles urbanos y de rendimientos derivados del arrendamiento o subarrendamiento de inmuebles y se opte por declarar los rendimientos devengados en el año natural de forma agrupada, respecto de los devengos correspondientes a 2026.</p>
+        <p class="parrafo">– Tratándose de rentas derivadas del arrendamiento o subarrendamiento de inmuebles y se opte por declarar los rendimientos de forma separada, respecto de los devengos cuya fecha esté comprendida en el último trimestre natural de 2026.</p>
+        <p class="parrafo_2">Madrid, 12 de junio de 2026.–El Ministro de Hacienda, Arcadi España García.</p>
+        <h5 class="anexo_num">ANEXO</h5>
+        <h5 class="anexo_tit">Autoliquidación-Modelo 210</h5>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2026/152/13573_17148183_1.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/152/13573_17148183_1.png" width="696"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2026/152/13573_17148183_2.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/152/13573_17148183_2.png" width="695"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2026/152/13573_17148183_3.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/152/13573_17148183_3.png" width="696"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2026/152/13573_17148183_4.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/152/13573_17148183_4.png" width="696"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2026/152/13573_17148183_5.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/152/13573_17148183_5.png" width="695"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2026/152/13573_17148183_6.png" class="frame" alt="Imagen: /datos/imagenes/disp/2026/152/13573_17148183_6.png" width="695"/>
+        </p>
+      </div>
+      <!-- #textoxslt -->
+    </div>
+    <!-- #DOdocText -->
+    <input name="tabs" type="radio" id="tab-analisis" class="input"/>
+    <label for="tab-analisis" class="label">Análisis</label>
+    <div class="panel" id="panelAnalisis">
+      <div id="analisis" class="analisisDoc">
+<h4>ANÁLISIS</h4>
+<ul class="bullet-boe">
+  <li>Rango: Orden</li>
+  <li>Fecha de disposición: 12/06/2026</li>
+  <li>Fecha de publicación: 23/06/2026</li>
+  <li>Fecha de entrada en vigor: 24/06/2026</li>
+  <li>Aplicable en la forma indicada en la disposición final única.</li>
+</ul>
+<h5 id="refpost">Referencias posteriores</h5>
+<div class="fuera">&#13;
+                              <ul>&#13;
+                              <li><a href="#ver-panel-contenido">Ordenado por contenido</a></li>&#13;
+                              <li><a href="#ver-panel-fecha">Ordenado por fecha</a></li>&#13;
+                              </ul>&#13;
+                              </div><div class="refpost-wrapper"><input type="radio" id="refpost-contenido" name="orden-refpost" checked="checked"/><input type="radio" id="refpost-fecha" name="orden-refpost"/><fieldset class="refpost-selector"><legend>Criterio de ordenación: </legend><label for="refpost-contenido" class="etiqueta-visual">&#13;
+                  por contenido&#13;
+           </label><label for="refpost-fecha" class="etiqueta-visual">&#13;
+                  por fecha&#13;
+           </label></fieldset>&#13;
+        <div class="refpost-contenedor">&#13;
+                              &#13;
+            <div id="ver-panel-contenido" class="refpost-panel refpost-panel-contenido">&#13;
+                <p class="fuera">Ordenado por contenido</p>&#13;
+                <ul class="bullet-boe">&#13;
+      <li>CORRECCIÓN de errores en BOE núm. 162, de 4 de julio de 2026 (Ref. <a href="/buscar/doc.php?id=BOE-A-2026-14499">BOE-A-2026-14499</a>).</li>
+&#13;
+                </ul>&#13;
+            </div>&#13;
+                              &#13;
+            <div id="ver-panel-fecha" class="refpost-panel refpost-panel-fecha">&#13;
+                 <p class="fuera">Ordenado por fecha</p>&#13;
+                <ul class="bullet-boe">&#13;
+      <li>CORRECCIÓN de errores en BOE núm. 162, de 4 de julio de 2026 (Ref. <a href="/buscar/doc.php?id=BOE-A-2026-14499">BOE-A-2026-14499</a>).</li>
+&#13;
+                </ul>&#13;
+            </div>&#13;
+                              &#13;
+        </div>&#13;
+ </div>&#13;
+                              &#13;
+    <h5>Referencias anteriores</h5>
+<ul class="bullet-boe">
+  <li>MODIFICA:
+    <ul class="bullet-boe">
+      <li>los arts. 1, 5, 9, 13 y el anexo I de la Orden EHA/3316/2010, de 17 de diciembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2010-19707">BOE-A-2010-19707</a>).</li>
+      <li>el anexo II de la Orden EHA/1658/2009, de 12 de junio (Ref. <a href="/buscar/doc.php?id=BOE-A-2009-10326">BOE-A-2009-10326</a>).</li>
+      <li>el anexo III de la Orden EHA/3290/2008, de 6 de noviembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2008-18497">BOE-A-2008-18497</a>).</li>
+    </ul>
+  </li>
+  <li>DE CONFORMIDAD con:
+    <ul class="bullet-boe">
+      <li>los arts. 30.2 y 117 del Reglamento aprobado por Real Decreto 1065/2007, de 27 de julio (Ref. <a href="/buscar/doc.php?id=BOE-A-2007-15984">BOE-A-2007-15984</a>).</li>
+      <li>el art. 15.2 y la disposición final única del Reglamento aprobado por Real Decreto 1776/2004, de 30 de julio (Ref. <a href="/buscar/doc.php?id=BOE-A-2004-14532">BOE-A-2004-14532</a>).</li>
+      <li>la disposición final 2 del texto refundido aprobado por Real Decreto Legislativo 5/2004, de 5 de marzo (Ref. <a href="/buscar/doc.php?id=BOE-A-2004-4527">BOE-A-2004-4527</a>).</li>
+    </ul>
+  </li>
+</ul>
+<h5>Materias</h5>
+<ul class="bullet-boe">
+  <li>Administración electrónica</li>
+  <li>Agencia Estatal de la Administración Tributaria</li>
+  <li>Bienes inmuebles</li>
+  <li>Entidades de crédito</li>
+  <li>Formularios administrativos</li>
+  <li>Impuesto sobre la Renta de los no Residentes</li>
+  <li>Notificaciones telemáticas</li>
+  <li>Pagos</li>
+  <li>Recaudación</li>
+</ul>
+</div>
+    </div>
+  </div>
+</div>
+<p class="linkSubir"><a href="#top">subir</a></p>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php">Sobre la sede electr&oacute;nica</a></div></li>
+            <li><div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div></li>
+            <li><div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div></li>
+            <li><div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php#proteccion-de-datos">Protecci&oacute;n de datos</a></div></li>
+            <li><div class="enlace"><a href="/informacion/sistema_interno_informacion.php">Sistema Interno de Informaci&oacute;n</a></div></li>
+            <li><div class="enlace"><a href="/informacion/tutoriales/">Tutoriales</a></div></li>
+            <li><div class="enlace"><a href="/transparencia/empleo/">Empleo en la AEBOE</a></div></li>
+            </ul>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace icono"><a href="/rss/" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=tw" lang="es" title="boegob, el BOE en X"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="X"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=fb" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=ln" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=yt" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div></li>
+            </ul>
+            </div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>

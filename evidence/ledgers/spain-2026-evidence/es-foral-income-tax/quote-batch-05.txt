@@ -1,0 +1,224 @@
+448 LF234 G NF3/2014 article 76 own2026table
+7.500,00 1.425,00 7.500,00 20,00
+
+449 LF235 G NF3/2014 article 76 own2026table
+15.000,00 2.925,00 15.000,00 22,00
+
+450 LF236 G NF3/2014 article 76 own2026table
+30.000,00 6.225,00 20.000,00 24,00
+
+451 LF237 G NF3/2014 article 76 own2026table
+50.000,00 11.025,00 40.000,00 25,50
+
+452 LF238 G NF3/2014 article 76 own2026table
+90.000,00 21.225,00 30.000,00 26,00
+
+453 LF239 G NF3/2014 article 76 own2026table
+120.000,00 29.025,00 120.000,00 26,50
+
+454 LF240 G NF3/2014 article 76 own2026table
+240.000,00 60.825,00 60.000,00 27,00
+
+456 LF218 Bizkaia NF13/2013 article 75
+83 Base liquidable Cuota íntegra Resto base liquidable hasta Tipo aplicable general hasta Euros Euros Euros % 0,00 18.080,00 23,00 18.080,00 4.158,40 18.080,00 28,00 36.160,00 9.220,80 18.080,00 35,00 54.240,00 15.548,80 23.210,00 40,00 77.450,00 24.832,80 29.810,00 45,00 107.260,00 38.247,30 35.700,00 46,00 142.960,00 54.669,30 65.430,00 47,00 208.390,00 85.421,40 En adelante
+
+457 LF218 Álava NF33/2013 article 75
+2. Se entenderá por tipo medio de gravamen general el resultado de multiplicar por cien el cociente obtenido de dividir la cuota resultante de la aplicación de lo dispuesto en el apartado anterior por la base liquidable general. El tipo medio de gravamen general se expresará con dos
+
+458 LF218 Gipuzkoa NF3/2014 article 75
+19 de diciembre, por la que se aprueban los Presupuestos Generales del Territorio Histórico de Gipuzkoa para el año 2026. La Norma Foral entra en vigor el día siguiente al de su publicación en el Boletín Oficial de Gipuzkoa (BOG 31/12/2025), con efectos a partir del 1 de enero de
+
+459 LF245 Bizkaia NF13/2013 article 75
+2. Se entenderá por tipo medio de gravamen general el resultado de multiplicar por cien el cociente obtenido de dividir la cuota resultante de la aplicación de lo dispuesto en el apartado anterior por la base liquidable general. El tipo medio de gravamen general se expresará con dos decimales.
+
+460 LF245 Bizkaia NF13/2013 article 75
+3. Cuando el tipo medio de gravamen general del contribuyente a que se refiere el apartado anterior resulte superior al tipo general del Impuesto sobre Sociedades, la cuota íntegra se reducirá en la cuantía resultante de aplicar la diferencia entre el citado tipo medio y el tipo general del Impuesto sobre Sociedades al importe de las ganancias patrimoniales que formen parte del rendimiento neto positivo de las actividades económicas.
+
+461 LF245 Álava NF33/2013 article 75
+2. Se entenderá por tipo medio de gravamen general el resultado de multiplicar por cien el cociente obtenido de dividir la cuota resultante de la aplicación de lo dispuesto en el apartado anterior por la base liquidable general. El tipo medio de gravamen general se expresará con dos decimales.
+
+462 LF245 Álava NF33/2013 article 75
+3. Cuando el tipo medio de gravamen general del contribuyente a que se refiere el apartado anterior resulte superior al tipo general del Impuesto sobre Sociedades, la cuota íntegra se reducirá en la cuantía resultante de aplicar la diferencia entre el citado tipo medio y el tipo general del Impuesto sobre Sociedades al importe de las ganancias patrimoniales que formen parte del rendimiento neto positivo de las actividades económicas.
+
+463 LF245 Gipuzkoa NF3/2014 article 75
+2. Se entenderá por tipo medio de gravamen general el resultado de multiplicar por cien el cociente obtenido de dividir la cuota resultante de la aplicación de lo dispuesto en el apartado anterior por la base liquidable general. El tipo medio de gravamen general se expresará con dos decimales.
+
+464 LF245 Gipuzkoa NF3/2014 article 75
+3195. Cuando el tipo medio de gravamen general del contribuyente a que se refiere el apartado anterior resulte superior al tipo general del impuesto sobre sociedades, la cuota íntegra se reducirá en la cuantía resultante de aplicar la diferencia entre el citado tipo medio y el tipo general del impuesto sobre sociedades al importe de las ganancias patrimoniales que formen parte del rendimiento neto positivo de las actividades económicas.
+
+465 LF247 Bizkaia NF13/2013 article 75
+A efectos de la aplicación de lo dispuesto en el párrafo anterior, del importe de las ganancias patrimoniales se deducirá, en su caso, el de las pérdidas patrimoniales que se hubiesen tenido en cuenta para la determinación del rendimiento neto de la actividad.
+
+466 LF247 Álava NF33/2013 article 75
+A efectos de la aplicación de lo dispuesto en el párrafo anterior, del importe de las ganancias patrimoniales se deducirá, en su caso, el de las pérdidas patrimoniales que
+
+467 LF247 Gipuzkoa NF3/2014 article 75
+A efectos de la aplicación de lo dispuesto en el párrafo anterior, del importe de las ganancias patrimoniales se deducirá, en su caso, el de las pérdidas patrimoniales que se hubiesen tenido en cuenta para la determinación del rendimiento neto de la actividad.
+
+468 LF247 Álava NF33/2013 article 75
+(29) Además, cuando de acuerdo con lo dispuesto en la normativa del Impuesto sobre Sociedades se compensen saldos negativos de actividades económicas de años anteriores, la diferencia entre el tipo medio de gravamen general y el tipo general del Impuesto sobre Sociedades referido en el primer párrafo de este apartado se aplicará al resultado de minorar el importe de las ganancias patrimoniales que formen parte del rendimiento neto positivo de las actividades económicas en el importe de la compensación aplicada.
+
+469 LF247 Gipuzkoa NF3/2014 article 75
+Además, cuando se compensen saldos negativos de actividades económicas de años anteriores, la diferencia entre el tipo medio de gravamen general y el tipo general del impuesto sobre sociedades referido en el primer párrafo de este apartado se aplicará al resultado de minorar el importe de las ganancias patrimoniales que formen parte del rendimiento neto positivo de las actividades económicas en el importe de la compensación aplicada.
+
+473 LF249 Bizkaia NF13/2013 article 78
+2. En ningún caso la cuota líquida podrá ser negativa.
+
+474 LF249 Álava NF33/2013 article 78
+2. En ningún caso la cuota líquida podrá ser negativa.
+
+475 LF249 Gipuzkoa NF3/2014 article 78
+2. En ningún caso la cuota líquida podrá ser negativa.
+
+476 LF249 Bizkaia NF13/2013 article 95
+a) Las retenciones, los ingresos a cuenta y los pagos fraccionados previstos en la normativa tributaria.
+
+477 LF249 Álava NF33/2013 article 95
+a) Las retenciones, los ingresos a cuenta y los pagos fraccionados previstos en la normativa tributaria.
+
+478 LF249 Gipuzkoa NF3/2014 article 94
+a) Las retenciones, los ingresos a cuenta y los pagos fraccionados previstos en la normativa tributaria.
+
+481 LF251 Bizkaia NF13/2013 article 92
+b) El resultado de aplicar a la renta obtenida en el extranjero el tipo medio de gravamen general o del ahorro, en función de la parte de la base liquidable, general o del ahorro en que se haya integrado dicha renta.
+
+483 LF251 Álava NF33/2013 article 92
+b) El resultado de aplicar a la renta obtenida en el extranjero el tipo medio de gravamen general o del ahorro, en función de la parte de la base liquidable, general o del ahorro en que se haya integrado dicha renta.
+
+485 LF251 Gipuzkoa NF3/2014 article 91
+b) El resultado de aplicar a la renta obtenida en el extranjero el tipo medio de gravamen general o del ahorro, en función de la parte de la base liquidable, general o del ahorro en que se haya integrado dicha renta.
+
+486 LF257 Bizkaia NF13/2013 article 79
+- 682 euros anuales por el primero.
+
+487 LF257 Bizkaia NF13/2013 article 79
+- 844 euros anuales por el segundo.
+
+488 LF257 Bizkaia NF13/2013 article 79
+- 1.421 euros anuales por el tercero.
+
+489 LF257 Bizkaia NF13/2013 article 79
+- 1.680 euros anuales por el cuarto.
+
+490 LF257 Bizkaia NF13/2013 article 79
+- 2.195 euros anuales por el quinto y por cada uno de los sucesivos descendientes.
+
+491 LF257 Álava NF33/2013 article 79
+a) 734,80 euros anuales por la primera o el primero.
+
+492 LF257 Álava NF33/2013 article 79
+b) 909,70 euros anuales por la segunda o el segundo.
+
+493 LF257 Álava NF33/2013 article 79
+c) 1.532,30 euros anuales por la tercera o el tercero.
+
+494 LF257 Álava NF33/2013 article 79
+d) 1.811,70 euros anuales por la cuarta o el cuarto.
+
+495 LF257 Álava NF33/2013 article 79
+e) 2.366,10 euros anuales por la quinta o el quinto y por cada una o uno de las sucesivas o sucesivos descendientes.
+
+496 LF257 Gipuzkoa NF3/2014 article 79
+— 682 euros anuales por el primero.
+
+497 LF257 Gipuzkoa NF3/2014 article 79
+— 844 euros anuales por el segundo.
+
+498 LF257 Gipuzkoa NF3/2014 article 79
+— 1.421 euros anuales por el tercero.
+
+499 LF257 Gipuzkoa NF3/2014 article 79
+— 1.680 euros anuales por el cuarto.
+
+500 LF257 Gipuzkoa NF3/2014 article 79
+— 2.195 euros anuales por el quinto y por cada uno de los sucesivos descendientes.
+
+501 LF258 Bizkaia NF13/2013 article 79
+2. Por cada descendiente menor de seis años que conviva con el o la contribuyente, además de la deducción que corresponda conforme al apartado anterior, se practicará una deducción complementaria de 394 euros anuales.
+
+502 LF258 Álava NF33/2013 article 79
+2. (9) (13) (24) (28) (29) (32) (34) Por cada descendiente menor de seis años que conviva con la o el contribuyente, además de la deducción que corresponda conforme al apartado anterior, se practicará una deducción complementaria de 424,60 euros anuales.
+
+503 LF258 Gipuzkoa NF3/2014 article 79
+2.199 Por cada descendiente menor de seis años que conviva con el contribuyente, además de la deducción que corresponda conforme al apartado anterior, se practicará una deducción complementaria de 394 euros anuales.».
+
+504 LF259 Álava NF33/2013 article 79
+102 Por cada descendiente mayor de seis años, incluyendo esta edad, y menor de dieciséis años que conviva con la o el contribuyente, además de la deducción que corresponda conforme al apartado anterior, se practicará una deducción complementaria de 68,20 euros anuales. Esta deducción será incompatible con la establecida en el párrafo anterior.
+
+506 LF260 Bizkaia NF13/2013 article 81
+1. Por cada ascendiente que conviva de forma continua y permanente durante todo el año natural con el o la contribuyente se podrá aplicar una deducción de 328 euros.
+
+507 LF260 Gipuzkoa NF3/2014 article 81
+1. Por cada ascendiente que conviva de forma continua y permanente durante todo el año natural con el contribuyente se podrá aplicar una deducción de 328 euros.203
+
+508 LF261 Bizkaia NF13/2013 article 82
+Grado de dependencia o discapacidad Deducción (euros) Igual o superior al 33% e inferior al 65% de discapacidad 906 Igual o superior al 65% de discapacidad. Dependencia moderada (Grado I) 1.294 Dependencia severa (Grado II) 1.552 Gran dependencia (Grado III) 1.935
+
+509 LF261 Gipuzkoa NF3/2014 article 82
+Igual o superior al 33% e inferior al 65% de discapacidad 906
+
+511 LF262 Gipuzkoa NF3/2014 article 82
+Igual o superior al 65% de discapacidad. Dependencia moderada 1.294 (Grado I)
+
+513 LF263 Gipuzkoa NF3/2014 article 82
+Dependencia severa (Grado II) 1.552
+
+515 LF264 Gipuzkoa NF3/2014 article 82
+Gran dependencia (Grado III) 2.040
+
+516 LF260 Álava NF33/2013 article 81
+1. (9) (16) (24) (28) (29) (32) (34) Por cada ascendiente que conviva de forma continua y permanente durante todo el año natural con la o el contribuyente se podrá aplicar una deducción de 423,72 euros.
+
+517 LF261 Álava NF33/2013 article 82
+Igual o superior al 33 por ciento e inferior al 65 por ciento de 1.025,64 discapacidad.
+
+518 LF262 Álava NF33/2013 article 82
+Igual o superior al 65 por ciento de discapacidad. 1.464,54 Dependencia moderada (Grado I).
+
+519 LF263 Álava NF33/2013 article 82
+Dependencia severa (Grado II). 1.756,75
+
+520 LF264 Álava NF33/2013 article 82
+Gran dependencia (Grado III). 2.191,03
+
+521 LF265 Bizkaia NF13/2013 article 83
+1. Por cada contribuyente de edad superior a 65 años se aplicará una deducción de 393 euros.
+
+522 LF265 Bizkaia NF13/2013 article 83
+En el caso de que el contribuyente tenga una edad superior a 75 años, la deducción a que se refiere el párrafo anterior será de 714 euros. La aplicación de lo dispuesto en este apartado requerirá que el o la contribuyente tenga una base imponible igual o inferior a 20.000 euros.
+
+524 LF265 Álava NF33/2013 article 83
+1. (24) (28) (29) (32) (37) Por cada contribuyente de edad superior a sesenta y cinco años se aplicará una deducción de 393,00 euros.
+
+525 LF265 Álava NF33/2013 article 83
+En el caso de que la o el contribuyente tenga una edad superior a setenta y cinco años, la deducción a que se refiere el párrafo anterior será de 714,00 euros.
+
+526 LF265 Álava NF33/2013 article 83
+La aplicación de lo dispuesto en este apartado 1 requerirá que la o el contribuyente tenga una base imponible igual o inferior a 20.000 euros..
+
+527 LF265 Gipuzkoa NF3/2014 article 83
+1. Por cada contribuyente de edad superior a 65 años cuya base imponible sea igual o inferior a 20.000 euros se aplicará una deducción de 393 euros.
+
+528 LF265 Gipuzkoa NF3/2014 article 83
+En el caso de que el contribuyente tenga una edad superior a 75 años, y siempre que su base imponible sea igual o inferior a 20.000 euros, la deducción a que se refiere el párrafo anterior será de 714 euros.
+
+530 LF266 Bizkaia NF13/2013 article 83quinquies
+1. Por cada contribuyente que sea viuda o viudo se aplicará una deducción de 200 euros.
+
+531 LF266 Bizkaia NF13/2013 article 83quinquies
+2. Los y las contribuyentes con una base imponible superior a 20.000 euros e inferior a 30.000 euros aplicarán una deducción de 200 euros menos el resultado de multiplicar por 0,0200 la cuantía resultante de minorar la base imponible en 20.000 euros.
+
+532 LF266 Bizkaia NF13/2013 article 83quinquies
+4. Esta deducción es incompatible con la deducción prevista en el artículo 83 de esta Norma Foral.
+
+533 LF266 Álava NF33/2013 article 82bis
+1. Las personas contribuyentes viudas tendrán derecho a aplicar una deducción de 200,00 euros.
+
+534 LF266 Álava NF33/2013 article 82bis
+2. Las personas contribuyentes viudas con una base imponible superior a 20.000,00 euros e inferior a 30.000,00 euros aplicarán una deducción de 200,00 euros menos el resultado de multiplicar por 0,0200 la cuantía resultante de minorar la base imponible en 20.000,00 euros.
+
+535 LF266 Álava NF33/2013 article 82bis
+5. Esta deducción es incompatible con la deducción por edad establecida en el artículo 83 de esta Norma Foral.
+
+536 LF266 Gipuzkoa NF3/2014 article 82bis
+1. Por cada persona contribuyente que sea viuda se aplicará una deducción de 200 euros.

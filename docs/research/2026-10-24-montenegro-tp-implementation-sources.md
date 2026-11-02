@@ -1,0 +1,30 @@
+# Montenegro TP financing and reporting implementation
+
+Read on 24 October 2026, issue #412, branch `codex/montenegro-country-completion`, shared base `7775cf6a`. Previous goal turn was progress at individual source `1b10dfd1` / audit `d1e29fbb` and issue #412: all seven core methods now have required controls, while every domain remains partial. This pass expands existing TP v0.2, no new Guide or PR. Previous draft preserved at `d1e29fbb`. Fresh fetch/status confirms clean branch before edits and no further shared advance.
+
+## Actual source retrieval and reading
+
+| Primary source | Evidence and limitation |
+| --- | --- |
+| [145/25 Gazette rule, actual PDF](https://www.sluzbenilist.me/propisi/388766/download), [record](https://www.sluzbenilist.me/propisi/388766) | Direct web PDF access failed; shell retrieval succeeded, actual one-page Articles 1–3 extracted and rendered/visually inspected. Article 2 is 4.97%, Article 3 application January 2026. This closes the earlier operative-rate retrieval gap. Record publication 11 December 2025, in force 19 December, application January 2026. Rendering logged fontconfig warnings but returned successfully and the complete text was visually readable; no access failure concealed. No general-method benchmark or live loan facts obtained. |
+| [CIT consolidation](https://wapi.gov.me/download/8826962a-3806-4619-afa4-0029b0a57afb?version=1.0) | Re-read actual Articles 38a–38c for positive income/expense adjustments, prescribed/general method choice and large/non-large delivery/possession distinction. Examples do not assume tax-base adjustment equals a contractual refund or automatic foreign corresponding relief. |
+| [Large-taxpayer criteria, Ministry April 2026 publication](https://www.gov.me/dokumenta/25b068f5-3b63-4397-9026-b0c270eaeb55), [actual PDF](https://wapi.gov.me/download/25b068f5-3b63-4397-9026-b0c270eaeb55?version=1.0) | Entire 31/17 Articles 1–8 retrieved/read. At least two criteria, preceding-two-year public tax obligations >600,000 and turnover >10 million, employee threshold >50. Separate related-entity designation and bank/insurer rules; authority written status/loss notice. No actual entity designation inferred from the arithmetic or an old public list. Current exceptional disputes and status application need facts/notice. |
+| [International-group reporting publication with MNP-CbCr form](https://www.gov.me/dokumenta/194f36b9-b629-4bfc-87f4-d0385517846f), [actual seven-page PDF](https://wapi.gov.me/download/194f36b9-b629-4bfc-87f4-d0385517846f?version=1.0) | Full operative points 1–30, actual attached Tables 1–3 and instructions 1–22 read, consolidation 69/22 and 43/25. Page 4 Table 1 rendered/visually inspected. Prior-year consolidated >=750m definition, constituent/PE populations, ultimate/surrogate/other roles, point 2b appropriate-use/confidentiality gate, foreign-parent/exchange/systemic-failure/surrogate conditions, notification/change rules and data definitions now developed. Current satisfaction of point 2b, activated exchange relationships, general report deadline/enabling statute and accepted portal/XML schema remain unverified. Point 7's parent-refusal notice period is not relabelled as a generic report deadline. No retroactive application of all amended provisions to 2024 is certified from the consolidation's closing sentence. |
+
+Secondary search results were not used to certify rates or reporting rules. In particular, neighbouring-country search results have different rates and were excluded. Official Gazette actual text is the basis for 4.97%.
+
+## Guide changes and new computations
+
+Retain the hypothetical 6% general-method loan example, explicitly separate from the prescribed 4.97% route. Add two full-year 300,000 prescribed-route cases: borrower expense 24,000 versus 14,910 gives 9,090 positive adjustment; lender income 6,000 versus 14,910 gives 8,910. No assumed day-count, principal changes, withholding clearance, other deduction limit or cross-netting.
+
+Add one published-CbCR Table 1 jurisdiction workpaper: exclude qualifying intragroup dividends from related revenue, keep current accrued tax separate from deferred and actual tax paid, include qualifying withholding without double counting and exclude cash/intangible/financial assets from tangible assets. Explicit established in-scope/jurisdiction facts and no PE/currency complications. Its current jurisdiction revenue is not a test of the preceding-year consolidated group threshold.
+
+New operational method: authority large-taxpayer status workpaper; group/constituent/reporting-role and notification decision; actual Table 1/2/3 field descriptions and source/period/PE allocation controls. Does not certify all group's foreign exchange/notification obligations or an actual accepted report. TP domestic documentation, CbCR notification and CbCR full report stay separate.
+
+## Remaining scope and validation
+
+All seven domains remain partial, ten Guides, zero professionally reviewed. Outstanding TP work includes real financing structures/day-count/benchmark facts; actual current designation; OECD status and activated exchange/notification/report deadline/schema; Article 44b 2026-income/2027 transition; full specialist methods and procedural/corresponding-relief/MAP implementation; independent full-country review and named accountant attestation. No new reviewer assignment, country push or publication.
+
+Country required-example check: 11 files, 42 blocks, zero failures/missing. Final strict metadata/contributor/whitespace checkpoint will follow the source commit. No unit suite, generated-index/package checks or remote CI claimed.
+
+Final source `0ef5cc25`, base `7775cf6a`: strict metadata seven source Guides, zero errors/warnings/notices; contributor validator 104 Guides from 117 changed paths passes with inherited Gibraltar 2024 freshness warning (two warning groups); whitespace and full-country arithmetic pass, 42 blocks with zero failures/missing. No unit suite, generated-index/package checks, remote CI, reviewer assignment or publication claimed.

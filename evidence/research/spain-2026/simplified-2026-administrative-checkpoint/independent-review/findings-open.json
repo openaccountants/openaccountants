@@ -1,0 +1,22 @@
+[
+  {
+    "id": "F1",
+    "issue": "Unintended license/source-label spacing mutations",
+    "status": "Root reports repaired; independently recheck final freeze"
+  },
+  {
+    "id": "F2",
+    "issue": "Implicit renunciation must distinguish first calendar quarter from genuine new activity first required quarter/return; retain three-year and coordination gates",
+    "status": "Sent to root; awaiting replacement"
+  },
+  {
+    "id": "F3",
+    "issue": "Unestablished judicial challenge wording; use legal reconciliation/correction boundary",
+    "status": "Sent to root; awaiting replacement"
+  },
+  {
+    "id": "F4",
+    "issue": "1 April submission-validity sentence belongs to IRPF paragraph3; IVA supported separately by eligibility page/RDL2/RIVA33",
+    "status": "Sent to root; awaiting replacement"
+  }
+]

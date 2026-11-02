@@ -1,0 +1,115 @@
+{
+  "base": "5cf68500",
+  "snapshot": "9de5b54dd762c472d06e02233600506d78b44e3d",
+  "new_urls": [
+    {
+      "url": "https://assets.ctfassets.net/8k0h54kbe6bj/2RRCQujMqAjymTTMW8B5rb/5c12a20c7dcaf5b905f629c6805dcc57/6588aab1-6369-4453-9990-35a7c22eab13.pdf",
+      "status": 200,
+      "final_url": "https://assets.ctfassets.net/8k0h54kbe6bj/2RRCQujMqAjymTTMW8B5rb/5c12a20c7dcaf5b905f629c6805dcc57/6588aab1-6369-4453-9990-35a7c22eab13.pdf",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/0223-2003/current",
+      "status": 200,
+      "final_url": "https://files.reglugerd.is/pdf/0223-2003/current",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/0515-1996/current",
+      "status": 200,
+      "final_url": "https://files.reglugerd.is/pdf/0515-1996/current",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/0576-1989/current",
+      "status": 200,
+      "final_url": "https://files.reglugerd.is/pdf/0576-1989/current",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/0577-1989/current",
+      "status": 200,
+      "final_url": "https://files.reglugerd.is/pdf/0577-1989/current",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://files.reglugerd.is/pdf/0758-2011/current",
+      "status": 200,
+      "final_url": "https://files.reglugerd.is/pdf/0758-2011/current",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://island.is/frett/opid-fyrir-nyjar-umsoknir-um-skattfradratt-vegna-rannsokna-og-throunarverkefna-a-arinu-2026",
+      "status": 200,
+      "final_url": "https://island.is/frett/opid-fyrir-nyjar-umsoknir-um-skattfradratt-vegna-rannsokna-og-throunarverkefna-a-arinu-2026",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://single-market-economy.ec.europa.eu/smes/sme-fundamentals/sme-definition_en",
+      "status": 200,
+      "final_url": "https://single-market-economy.ec.europa.eu/smes/sme-fundamentals/sme-definition_en",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.althingi.is/altext/stjt/2026.027.html",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "web_reader_access": "Opened expected legal text on 2026-10-23; direct HTTP 403 is an access restriction."
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/2009152.html",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "web_reader_access": "Opened expected legal text on 2026-10-23; direct HTTP 403 is an access restriction."
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/2010155.html",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "web_reader_access": "Opened expected legal text on 2026-10-23; direct HTTP 403 is an access restriction."
+    },
+    {
+      "url": "https://www.althingi.is/lagas/nuna/2011165.html",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "web_reader_access": "Opened expected legal text on 2026-10-23; direct HTTP 403 is an access restriction."
+    },
+    {
+      "url": "https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/atvinnurekstur/virdisaukaskattur/skraning-a-vsk-skra",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/verklagsreglur",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/fyrirtaekjaskra/stofnun-felaga/einkahlutafelog/verklagsreglur",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.skatturinn.is/media/baeklingar/rsk_0801_2026.is.pdf",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/media/baeklingar/rsk_0801_2026.is.pdf",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://www.skatturinn.is/media/rsk04/rsk_0421_2026.is.pdf",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/media/rsk04/rsk_0421_2026.is.pdf",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://www.skatturinn.is/media/rsk04/rsk_0422_2025.is.pdf",
+      "status": 200,
+      "final_url": "https://www.skatturinn.is/media/rsk04/rsk_0422_2025.is.pdf",
+      "content_type": "application/pdf"
+    }
+  ],
+  "scope": "New distinct URLs in changed Iceland domain Guides relative to the stated base; reachability is not legal correctness."
+}

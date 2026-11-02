@@ -3,8 +3,8 @@
 Detect cross-guide contradictions — places where two Guides state DIFFERENT
 values for the SAME tax concept in the SAME jurisdiction and tax year.
 
-v1 scope: US (skills/federal + packages/us-federal), UK (skills/international/uk),
-DE (skills/international/germany). Where the same basename exists in both
+v1 scope: US (skills/us/federal + packages/us-federal), UK (skills/uk),
+DE (skills/germany). Where the same basename exists in both
 skills/ and packages/, the skills/ copy is canonical and the packages/ copy is
 only compared against it for "copy drift" (packages/us-federal is hand-authored
 and always scanned directly).
@@ -65,10 +65,10 @@ parse_known_keys = _build_index.parse_known_keys
 # used only for the copy-drift check. packages/us-federal is hand-authored, so
 # for US both trees are scanned directly (no basenames overlap there anyway).
 JURISDICTION_TREES = {
-    "US": {"scan": ["skills/federal", "packages/us-federal"], "shadow": None},
-    "UK": {"scan": ["skills/international/uk"], "shadow": "packages/uk"},
-    "DE": {"scan": ["skills/international/germany"], "shadow": "packages/germany"},
-    "AU": {"scan": ["skills/international/australia"], "shadow": "packages/australia"},
+    "US": {"scan": ["skills/us/federal", "packages/us-federal"], "shadow": None},
+    "UK": {"scan": ["skills/uk"], "shadow": "packages/uk"},
+    "DE": {"scan": ["skills/germany"], "shadow": "packages/germany"},
+    "AU": {"scan": ["skills/australia"], "shadow": "packages/australia"},
 }
 
 US_FEDERAL_RATES_DIR = os.path.join(REPO_ROOT, "packages", "us-federal")

@@ -1,0 +1,207 @@
+{
+  "status": "WRITER CHECKS ONLY; NO INDEPENDENT PASS",
+  "guide_sha256": "83b50e55564932011270906e7148752e8a424586bf969c2ef633d3f8cc80a747",
+  "official_table_rows_exactly_compared": 32,
+  "arithmetic_controls": [
+    {
+      "name": "Employee total rate",
+      "actual": "0.04900",
+      "expected": "0.049",
+      "source": "AHV2026bulletin\u00a75",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Employer total rate",
+      "actual": "0.07385",
+      "expected": "0.07385",
+      "source": "AHV2026bulletin\u00a75",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Self-employed total",
+      "actual": "0.12285",
+      "expected": "0.12285",
+      "source": "AHV2026bulletin\u00a75,13,16",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "VK is5%ofAHV/IV/FAK,notwage",
+      "actual": "0.005850",
+      "expected": "0.00585",
+      "source": "AHV2026bulletin\u00a716",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Self-employed rounddown60199",
+      "actual": "60100",
+      "expected": "60100",
+      "source": "AHVG41(1)",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Self-employed raw contribution before invoice rounding",
+      "actual": "7383.28500",
+      "expected": "7383.285",
+      "source": "AHVG41;AHV2026bulletin\u00a75/13/16",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Self-employed exactly3000 ordinary threshold",
+      "actual": "368.55000",
+      "expected": "368.55",
+      "source": "AHVG41(2);institution self-employed method",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Non-employed ordinary wealth+pension basis",
+      "actual": "1200000",
+      "expected": "1200000",
+      "source": "institution non-employed method",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Non-employed1200000 usesprintedtotal",
+      "actual": "2269.40",
+      "expected": "2269.40",
+      "source": "official2026table",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Non-employed couplehalfcombinedbasis",
+      "actual": "1450000",
+      "expected": "1450000",
+      "source": "institution non-employed method",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Non-employed couple1450000table",
+      "actual": "3127.10",
+      "expected": "3127.10",
+      "source": "official2026table",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Survivors category550000wealthonly",
+      "actual": "607.55",
+      "expected": "607.55",
+      "source": "institution survivors paragraph;official2026table",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Non-employed199999 upperfirstrow",
+      "actual": "368.55",
+      "expected": "368.55",
+      "source": "official2026table",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Non-employed200000 firststep",
+      "actual": "464.55",
+      "expected": "464.55",
+      "source": "official2026table",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Non-employed3600000maximum",
+      "actual": "12285.00",
+      "expected": "12285.00",
+      "source": "official2026table",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Non-employed above3600000maximum",
+      "actual": "12285.00",
+      "expected": "12285.00",
+      "source": "official2026table",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Ordinary fullmeals contributionbase",
+      "actual": "3660",
+      "expected": "3660",
+      "source": "AHV2026bulletin\u00a710;assumedcash3000",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Seniorstaff wage-tax benefit20%uplift",
+      "actual": "792.00",
+      "expected": "792",
+      "source": "Wage2026bulletinI.2(a)",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Seniorstaff wage-tax base distinct from contributionbase",
+      "actual": "3792",
+      "expected": "3792",
+      "source": "Wage2026bulletinI.2(a);assumedcash3000",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Seniorstaff assumed single annualisedwage",
+      "actual": "45504",
+      "expected": "45504",
+      "source": "Wage2026bulletinII.1",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Seniorstaff assumed ordinary5%wagetax",
+      "actual": "189.60",
+      "expected": "189.60",
+      "source": "Wage2026bulletinII.1;establishedinstructionassumed",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Parttime adult healthcare employer50%",
+      "actual": "90.250",
+      "expected": "90.250",
+      "source": "Healthauthority2026;assumed50%employment",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Full-year ALV sideannualmax",
+      "actual": "630.000",
+      "expected": "630.000",
+      "source": "AHV2026bulletin\u00a76",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Part-year ALV sourceexamplecap",
+      "actual": "88900",
+      "expected": "88900",
+      "source": "AHV2026bulletin\u00a76",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Part-year ALV sourceexamplecombined",
+      "actual": "889.00",
+      "expected": "889.00",
+      "source": "AHV2026bulletin\u00a76",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Verified capital-interest reference4percent",
+      "actual": "4000.00",
+      "expected": "4000",
+      "source": "AHVV16(2);SteG16(2)(b)(2)/5;eligiblecapital100000assumed",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Pensionminimum8percent60000insuredwage",
+      "actual": "4800.00",
+      "expected": "4800",
+      "source": "BPVG7(2);insuredwageandcoverageassumed",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Pensionemployerhalfofminimumretirementcontribution",
+      "actual": "2400",
+      "expected": "2400",
+      "source": "BPVG7(4);ordinarymandatorycaseonly",
+      "status": "WRITER ARITHMETIC PASS; INDEPENDENT RECOMPUTATION PENDING"
+    }
+  ],
+  "all_four_original_blocks_byte_identical_in_evidence": true,
+  "current_executable_blocks": 2,
+  "protected_metadata_and_CTA_unchanged": true,
+  "remaining": "Fractional non-employed basis rounding/part-year/cross-status rules and actual eligible-capital reconciliation and mixed-status chain unconfirmed. These controls do not determine applicability."
+}

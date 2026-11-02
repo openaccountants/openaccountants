@@ -1,0 +1,20 @@
+--- before
++++ after
+@@ -1,7 +1,7 @@
+ ---
+ name: es-irpf-deductions
+ description: Calculate national and regional credits for ordinary Spanish resident IRPF in 2026. Covers startup subscriptions, donations, legacy home investment and rental transitions, business reinvestment, energy improvements, electric vehicles, renewable self-consumption, maternity, childcare and large-family or disability credits. Implements all fifteen common-territory regional credit catalogues, with income gates, eligible bases, sharing, tax limits, advance-payment reconciliation, holding conditions and authorised carry-forwards. Use for deducciones autonómicas, maternity deductions, family credits, alquiler, charitable gifts, home improvements, regional investment relief or unused deductions. Distinguishes state-only credits, shared national credits, regional credits and refundable differential credits. Two executable examples test property-credit interactions, exempt aid, maternity advances and a regional carry expiry. Separate territorial Guides supply ordinary foral and Ceuta/Melilla methods within their stated limits.
+-version: 2.3
++version: 2.4
+ jurisdiction: ES
+ tax_year: 2026
+ last_updated: 2026-10-28
+@@ -1258,7 +1258,7 @@
+ | School materials | **110 per qualifying child/ward**, F and unemployment/fostering-day proration | 2026 | [Art. 4.Uno.v](https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202#a4) |
+ | Residence in an at-risk municipality | **330**, plus **132/198/264** for one/two/three or more minimum-entitled descendants; no ordinary F income gate | 2026 | [Art. 4.Uno.aa/Seis](https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202#a4) |
+ 
+-Birth/adoption/foster relief requires descendant-minimum entitlement. For the second/third-and-later amount, the preceding children counted for ordering must have been held for **more than 183 days**. Exclude a child adopted during the year from the foster route; use the birth/adoption route where entitled. Share the applicable amount equally between entitled declaring taxpayers. The birth/adoption amount continues for two following years; the fostering amount follows actual qualifying days. Multiple adoption requires at least two adoptions on the same date. The event credits a/b/c are compatible with one another and d under the express statutory conditions ([art. 4.Uno.a–d](https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202#a4)).
++Birth/adoption/foster relief requires descendant-minimum entitlement. For the second/third-and-later fostering or delegated-guardianship amount, the preceding children counted for ordering must have been held for **more than 183 days**. Exclude a child adopted during the year from the foster route; use the birth/adoption route where entitled. Share the applicable amount equally between entitled declaring taxpayers. The birth/adoption amount continues for two following years; the fostering amount follows actual qualifying days. Multiple adoption requires at least two adoptions on the same date. The event credits a/b/c are compatible with one another and d under the express statutory conditions ([art. 4.Uno.a–d](https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202#a4)).
+ 
+ For c, disability is at least **65%**, or intellectual/mental disability at least **33%**. For accruals through **2 July 2026**, DL 14/2025 expressly requires permanent recognition of that intellectual/mental disability; Ley 3/2026's replacement c omits that adjective from **3 July**, although the separate permanent-recognition wording remains in h/i/l/n. Retain the competent disability certificate and apply the judicial/pension assimilations in DA 6 where they actually fit ([DL 14/2025 art. 65](https://www.boe.es/buscar/doc.php?id=DOGV-r-2025-90320); [Ley 3/2026 art. 82](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15683); [DA 6](https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202#dasexta)).
+ 

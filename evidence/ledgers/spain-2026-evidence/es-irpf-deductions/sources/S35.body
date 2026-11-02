@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Por adquisición o rehabilitación de la vivienda habitual en zonas rurales </title><meta name="ObjectId" content="992be6181b839910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='a888add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html'>Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='c0dae6181b839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Comunidad Autónoma de Castilla-La Mancha</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html" class="d-none">Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Por adquisición o rehabilitación de la vivienda habitual en zonas rurales </h1><p><strong>Normativa: <abbr title="Art&iacute;culo">Art.</abbr> 12 ter y disposici&oacute;n adicional segunda <strong>Ley 8/2013, de 21 de noviembre, de la Comunidad Aut&oacute;noma de Castilla-La Mancha, de Medidas Tributarias</strong></strong></p>
+<h2>Cuant&iacute;a de la deducci&oacute;n</h2>
+<p><strong>El 15 por 100</strong> de las cantidades que durante el per&iacute;odo impositivo se satisfagan por el contribuyente por la adquisici&oacute;n o rehabilitaci&oacute;n de la vivienda que constituya o vaya a constituir su residencia habitual</p>
+<h2>Requisitos para la aplicaci&oacute;n de la deducci&oacute;n</h2>
+<p>Para tener derecho a la deducci&oacute;n se han de cumplir, simult&aacute;neamente, los siguientes requisitos:</p>
+<ul>
+<li>
+<p>Que la vivienda est&eacute; situada en alguno de los municipios incluidos en<strong> las zonas escasamente pobladas a que se refiere el art&iacute;culo 12 </strong>de la Ley 2/2021, de 7 de mayo, de Medidas Econ&oacute;micas, Sociales y Tributarias frente a la Despoblaci&oacute;n y para el Desarrollo del Medio Rural en Castilla-La Mancha, y <strong>que la poblaci&oacute;n del mismo sea inferior a 5.000 habitantes</strong>.</p>
+<div class="letrita sangrado-izq">
+<p>Conforme al art&iacute;culo 12 de la Ley 2/2021 se clasificar&aacute;n como zonas escasamente pobladas "aquellas agrupaciones de municipios o n&uacute;cleos de poblaci&oacute;n integradas mayoritariamente por municipios de peque&ntilde;o tama&ntilde;o, con una densidad conjunta de poblaci&oacute;n de menos de 12,5 habitantes por km2, altas tasas de envejecimiento y p&eacute;rdidas intensas de poblaci&oacute;n, con un importante aislamiento geogr&aacute;fico con respecto a municipios de m&aacute;s de 30.000 habitantes, un alto porcentaje de suelo de uso forestal, y una elevada significaci&oacute;n de la actividad agraria.</p>
+<p>En consideraci&oacute;n al grado de despoblaci&oacute;n, se establecen las siguientes categor&iacute;as de zonas escasamente pobladas:</p>
+<p>a) Zonas de intensa despoblaci&oacute;n: Aquellas agrupaciones de municipios con densidad superior a 8 habitantes por km2.</p>
+<p>b) Zonas de extrema despoblaci&oacute;n: Aquellas agrupaciones de municipios con densidad de poblaci&oacute;n menor de 8 habitantes por km2".</p>
+</div>
+<p>Puede consultar las zonas que posibilitan la aplicaci&oacute;n de la deducci&oacute;n en el enlace indicado al t&eacute;rmino de la presente secci&oacute;n.</p>
+<div class="border border-primary rounded-sm border-size-1 mb-3 pt-3 px-3">
+<p><em><span class="verde"><strong>Atenci&oacute;n:</strong></span> para la aplicaci&oacute;n de esta deducci&oacute;n se tomar&aacute; como poblaci&oacute;n de los municipios la que, conforme a su respectivo padr&oacute;n municipal, tuvieran a 1 de enero de cada a&ntilde;o.</em></p>
+<p><em>A los efectos indicados en el p&aacute;rrafo anterior no se tomar&aacute;n en consideraci&oacute;n las variaciones de poblaci&oacute;n respecto al padr&oacute;n municipal de 2021 que supongan una minoraci&oacute;n o inaplicaci&oacute;n de las deducciones que conforme al mismo resultasen procedentes. En tales casos, dichas deducciones podr&aacute;n seguir aplic&aacute;ndose en las condiciones y cuant&iacute;as que resultasen procedentes conforme a la poblaci&oacute;n del expresado padr&oacute;n municipal.</em></p>
+</div>
+</li>
+<li>
+<p>Que la adquisici&oacute;n o rehabilitaci&oacute;n de la vivienda <strong>se haya producido a partir del 1 de enero de 2021</strong>.</p>
+</li>
+<li>
+<p>La aplicaci&oacute;n de esta deducci&oacute;n requerir&aacute; que el importe comprobado del patrimonio del contribuyente al finalizar el per&iacute;odo de la imposici&oacute;n exceda del valor que arrojase su comprobaci&oacute;n al comienzo del mismo al menos en la cuant&iacute;a de las inversiones realizadas, sin computar los intereses y dem&aacute;s gastos de financiaci&oacute;n.</p>
+<p>A estos efectos, no se computar&aacute;n los incrementos o disminuciones de valor experimentados durante el per&iacute;odo impositivo por los elementos patrimoniales que al final del mismo sigan formando parte del patrimonio del contribuyente.</p>
+</li>
+</ul>
+<h2>Base de la deducci&oacute;n y base m&aacute;xima de la deducci&oacute;n</h2>
+<ul>
+<li>
+<h3>Base de la deducci&oacute;n</h3>
+<p>Estar&aacute; constituida por las cantidades satisfechas para la adquisici&oacute;n o rehabilitaci&oacute;n de la vivienda, incluidos los gastos originados que hayan corrido a cargo del adquirente.</p>
+<p>Cuando la adquisici&oacute;n o rehabilitaci&oacute;n se realicen con financiaci&oacute;n ajena formar&aacute;n parte de la base de la deducci&oacute;n la amortizaci&oacute;n, los intereses, el coste de los instrumentos de cobertura del riesgo de tipo de inter&eacute;s variable de los pr&eacute;stamos hipotecarios regulados en el art&iacute;culo decimonoveno de la Ley 36/2003, de 11 de noviembre, de Medidas de Reforma Econ&oacute;mica, y dem&aacute;s gastos derivados de la misma. En caso de aplicaci&oacute;n de los citados instrumentos de cobertura, los intereses satisfechos por el contribuyente se minorar&aacute;n en las cantidades obtenidas por la aplicaci&oacute;n del citado instrumento.</p>
+</li>
+<li>
+<h3>Base m&aacute;xima total de la deducci&oacute;n</h3>
+<p><strong>a) Por todos los ejercicios en que se aplique la deducci&oacute;n</strong>:</p>
+<p>Ser&aacute; la menor de:</p>
+<ul>
+<li>
+<p><strong>180.000 euros</strong>, o</p>
+<p class="border border-primary rounded-sm border-size-1 p-3"><em><span class="verde"><strong>Atenci&oacute;n:</strong> </span>en el caso de viviendas adquiridas por varios contribuyentes la cuant&iacute;a de 180.000 euros, est&aacute; referida a la vivienda, por lo que dicho importe deber&aacute; ser distribuido entre los adquirentes en proporci&oacute;n al porcentaje de titularidad que tengan en la vivienda.</em></p>
+</li>
+<li>
+<p><strong>El importe de adquisici&oacute;n o rehabilitaci&oacute;n de la vivienda que da origen a la deducci&oacute;n, minorado por</strong> los importes recibidos de la Junta de Comunidades de Castilla-La Mancha en concepto de <strong>subvenciones por la adquisici&oacute;n o rehabilitaci&oacute;n de la vivienda.</strong></p>
+</li>
+</ul>
+<p><strong>b) En cada ejercicio</strong>:</p>
+<p>La base m&aacute;xima a aplicar en cada ejercicio ser&aacute; de <strong>12.000 euros</strong>.</p>
+<p class="letrita sangrado-izq">Esta base&nbsp;m&aacute;xima anual de la deducci&oacute;n ser&aacute; de 12.000 euros tanto en tributaci&oacute;n individual como en&nbsp;conjunta. Esto es, en tributaci&oacute;n conjunta&nbsp;la base&nbsp;m&aacute;xima anual (12.000 euros) se aplica&nbsp;con independencia del n&uacute;mero de miembros de la unidad familiar que satisfagan los importes que dan derecho a aplicar la deducci&oacute;n.</p>
+<p><strong>c) Otras condiciones</strong></p>
+<ul>
+<li>
+<p>Cuando se adquiera una vivienda habitual <strong>habiendo disfrutado ya de esta misma deducci&oacute;n</strong>, <strong>la base m&aacute;xima total de la deducci&oacute;n</strong> se minorar&aacute; en las cantidades invertidas en la adquisici&oacute;n de las viviendas anteriores, en tanto dichas cantidades hubieran sido objeto de deducci&oacute;n.</p>
+</li>
+<li>
+<p>Cuando con ocasi&oacute;n de la enajenaci&oacute;n de una vivienda habitual por la que se hubiera practicado esta deducci&oacute;n se genere una ganancia patrimonial exenta por reinversi&oacute;n, <strong>la base de deducci&oacute;n</strong> por la adquisici&oacute;n o rehabilitaci&oacute;n de la nueva vivienda se minorar&aacute; en el importe de la ganancia patrimonial a la que se aplique la exenci&oacute;n por reinversi&oacute;n. En este caso, no se podr&aacute; practicar deducci&oacute;n por la adquisici&oacute;n de la nueva mientras las cantidades invertidas en la misma no superen tanto el precio de la anterior, en la medida en que haya sido objeto de deducci&oacute;n, como la ganancia patrimonial exenta por reinversi&oacute;n.</p>
+</li>
+<li>
+<p>En los <strong>supuestos de nulidad matrimonial, divorcio o separaci&oacute;n judicial</strong>, el contribuyente podr&aacute; seguir practicando esta deducci&oacute;n, en los t&eacute;rminos previstos en la normativa estatal del Impuesto sobre la Renta de las Personas F&iacute;sicas, por las cantidades satisfechas en el per&iacute;odo impositivo para la adquisici&oacute;n de la que fue durante la vigencia del matrimonio su vivienda habitual, siempre que contin&uacute;e teniendo esta condici&oacute;n para los hijos comunes y el progenitor en cuya compa&ntilde;&iacute;a queden.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Conceptos que dan derecho a la deducci&oacute;n</h2>
+<p>Para la aplicaci&oacute;n de la deducci&oacute;n prevista en este art&iacute;culo se tendr&aacute;n en cuenta los siguientes conceptos:</p>
+<ul>
+<li>
+<h3>Vivienda habitual</h3>
+<p>Con car&aacute;cter general se considera vivienda habitual del contribuyente la edificaci&oacute;n que constituya su residencia durante un plazo continuado de, al menos, tres a&ntilde;os. No obstante, se entender&aacute; que la vivienda tuvo el car&aacute;cter de habitual cuando, a pesar de no haber transcurrido dicho plazo, se produzca el fallecimiento del contribuyente o concurran otras circunstancias que necesariamente exijan el cambio de domicilio, tales como celebraci&oacute;n de matrimonio, separaci&oacute;n matrimonial, traslado laboral, obtenci&oacute;n del primer empleo, o cambio de empleo, u otras an&aacute;logas justificadas. Para que la vivienda constituya la residencia habitual del contribuyente deber&aacute; ser habitada de manera efectiva y con car&aacute;cter permanente por este, en un plazo de doce meses, contados a partir de la fecha de adquisici&oacute;n o terminaci&oacute;n de las obras. No obstante, se entender&aacute; que la vivienda no pierde el car&aacute;cter de habitual cuando se produzca el fallecimiento del contribuyente o concurran otras circunstancias que necesariamente impidan la ocupaci&oacute;n de la vivienda, en los t&eacute;rminos previstos en el p&aacute;rrafo anterior. Cuando sean de aplicaci&oacute;n las excepciones previstas en los dos p&aacute;rrafos anteriores, la deducci&oacute;n por adquisici&oacute;n de vivienda se practicar&aacute; hasta el momento en que se den las circunstancias que necesariamente exijan el cambio de vivienda o impidan la ocupaci&oacute;n de la misma.</p>
+</li>
+<li>
+<h3>Adquisici&oacute;n de vivienda habitual</h3>
+<p>Se entender&aacute; por adquisici&oacute;n de vivienda habitual, la adquisici&oacute;n en sentido jur&iacute;dico del derecho de propiedad o pleno dominio de la misma, aunque este sea compartido, siendo indiferente el negocio jur&iacute;dico que la origine.</p>
+</li>
+<li>
+<h3>Construcci&oacute;n y ampliaci&oacute;n</h3>
+<p>Se asimilan a la adquisici&oacute;n de vivienda la construcci&oacute;n o ampliaci&oacute;n de la misma, en los siguientes t&eacute;rminos:</p>
+<p><strong>Ampliaci&oacute;n de vivienda:</strong> Cuando se produzca el aumento de su superficie habitable, mediante cerramiento de parte descubierta o por cualquier otro medio, de forma permanente y durante todas las &eacute;pocas del a&ntilde;o.</p>
+<p><strong>Construcci&oacute;n:</strong> Cuando el contribuyente satisfaga directamente los gastos derivados de la ejecuci&oacute;n de las obras, o entregue cantidades a cuenta al promotor de aquellas, siempre que el certificado final de obra se emita en un plazo no superior a cuatro a&ntilde;os desde el inicio de la inversi&oacute;n.</p>
+</li>
+<li>
+<h3>Obras de rehabilitaci&oacute;n de la vivienda habitual</h3>
+<p>Se considerar&aacute;n obras de rehabilitaci&oacute;n de la vivienda habitual aquellas que tengan por objeto principal la reconstrucci&oacute;n de la vivienda mediante la consolidaci&oacute;n y el tratamiento de las estructuras, fachadas o cubiertas y otras an&aacute;logas siempre que el coste global de las operaciones de rehabilitaci&oacute;n exceda del 25 por ciento del precio de adquisici&oacute;n si se hubiese efectuado esta durante los dos a&ntilde;os inmediatamente anteriores al inicio de las obras de rehabilitaci&oacute;n o, en otro caso, del valor de mercado que tuviera la vivienda en el momento de dicho inicio. A estos efectos, se descontar&aacute; del precio de adquisici&oacute;n o del valor de mercado de la vivienda la parte proporcional correspondiente al suelo.</p>
+</li>
+</ul><div class="my-2"><a  target="_blank" rel="noopener" href="/static_files/Sede/Biblioteca/Manual/Practicos/IRPF/IRPF-2025-Deducciones-autonomicas/CA_Castilla_La_Mancha/Municipios_despoblacion_extrema_e_intensa_1.pdf">Municipios despoblación extrema e intensa 1<span class="small ml-1">(405 KB - <abbr title="Archivo pdf">pdf</abbr>)</span><i class="aeat-ico fa-ico-pdf ico-size-1 ml-1" role="presentation"></i><i class="aeat-ico fa-ico-ventana-nueva-sm ico-size-1 ml-1" role="img" title="Saltar al contenido principal"></i></a></div><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-03-17">17/marzo/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

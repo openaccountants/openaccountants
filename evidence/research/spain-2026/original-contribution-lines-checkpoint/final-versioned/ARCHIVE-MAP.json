@@ -1,0 +1,173 @@
+{
+  "scope": "Final versioned restoration, exact independent review and actual successful final checks. Initial unversioned strictsync failure is preserved, not overwritten.",
+  "files": [
+    {
+      "original_path": "spain-original-contribution-lines-versioned-private/artifact-manifest.json",
+      "sha256": "e5b3375b14cad9b134841b8554ac0dd7b9ae536b6ad929a712e86476647f655a",
+      "bytes": 2259,
+      "stored": "blobs/e5/e5b3375b14cad9b134841b8554ac0dd7b9ae536b6ad929a712e86476647f655a.gz",
+      "stored_sha256": "d95d86877a9647ade0067b7a4817a1ec34ef0969d92db2b397f134370b560931"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-versioned-private/candidates/es-autonomous-worker.md",
+      "sha256": "f66e5c8fa560153a9d359138b172565b12974be378fab14212b243ee7fb8da36",
+      "bytes": 34420,
+      "stored": "blobs/f6/f66e5c8fa560153a9d359138b172565b12974be378fab14212b243ee7fb8da36.gz",
+      "stored_sha256": "8c584eba65062d1222951e19c1b121364f60cba00275f2715cd9f6d999cd8ea9"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-versioned-private/candidates/es-capital-gains.md",
+      "sha256": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+      "bytes": 35690,
+      "stored": "blobs/e7/e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38.gz",
+      "stored_sha256": "5eddc60597c66aadaaf455ce901962071ce05713b1bfa352378f01ed2581ba72"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-versioned-private/candidates/es-corporate-tax.md",
+      "sha256": "66f9dff1c027ddaf6f9ebe5e7502bbd135ef1c33b45ff7fb0efd73cfa851c6c4",
+      "bytes": 43212,
+      "stored": "blobs/66/66f9dff1c027ddaf6f9ebe5e7502bbd135ef1c33b45ff7fb0efd73cfa851c6c4.gz",
+      "stored_sha256": "3dd3545906ecfa18d540ce65338fe31e42c0de49175009b2e01d48e9b9f6787f"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-versioned-private/candidates/es-estimated-tax.md",
+      "sha256": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+      "bytes": 36751,
+      "stored": "blobs/62/6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb.gz",
+      "stored_sha256": "df26c4812339fe75420ea348bde6a89384a615dbed488b449ffab36eb38d5a88"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-versioned-private/candidates/es-rental-income.md",
+      "sha256": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+      "bytes": 38965,
+      "stored": "blobs/c5/c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a.gz",
+      "stored_sha256": "94e2c5e9082d6883e6510637d71ef487c77df6cce0a6e2b64b537c5471e87a7b"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-versioned-private/candidates/spain-payroll.md",
+      "sha256": "89de80b5558648018020a803fd139685ac92d4908d6f72b1007e84626598d77a",
+      "bytes": 52020,
+      "stored": "blobs/89/89de80b5558648018020a803fd139685ac92d4908d6f72b1007e84626598d77a.gz",
+      "stored_sha256": "858a8e45ce0c9312d5069a32182ca5d83c0ab80c00e549aa0246509b8b0bc4c9"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-versioned-private/report.md",
+      "sha256": "e53f12465adee807cbff426fe7643257f7ec04d6eb11d761f39ba08e019d6dd7",
+      "bytes": 772,
+      "stored": "blobs/e5/e53f12465adee807cbff426fe7643257f7ec04d6eb11d761f39ba08e019d6dd7.gz",
+      "stored_sha256": "0391537cbdbb795af75a4ae7e83bf0245e297ff936de1551cd905e15ece64d46"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-versioned-private/version-refinement-proof.json",
+      "sha256": "d89aab47bc98e61c5bb65f525762bfff3206b538fcd295c7f0fa59b3e1c0a0ea",
+      "bytes": 3532,
+      "stored": "blobs/d8/d89aab47bc98e61c5bb65f525762bfff3206b538fcd295c7f0fa59b3e1c0a0ea.gz",
+      "stored_sha256": "5d4e7052c35efaee812a9c5bb42bab74e7891405f9773063d7e280f20f2300e2"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/F-P1-versioned-restoration-review/checks.json",
+      "sha256": "778d14e174ebb885f6ca93ed1984467f9929a08aea74b2100f42e38a1060ba30",
+      "bytes": 3456,
+      "stored": "blobs/77/778d14e174ebb885f6ca93ed1984467f9929a08aea74b2100f42e38a1060ba30.gz",
+      "stored_sha256": "ef29057775df2115575f8253aaadfde3dd60878598b69c6a5089c022ae96b8b8"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/F-P1-versioned-restoration-review/manifest.json",
+      "sha256": "27ec79ccec910bf4a5e64186ec752f4159a915bb0a4aa071283f9798177f48e4",
+      "bytes": 870,
+      "stored": "blobs/27/27ec79ccec910bf4a5e64186ec752f4159a915bb0a4aa071283f9798177f48e4.gz",
+      "stored_sha256": "90b5e635f4a42db3a6851d5e98ca56b72c6709fc4da25ebf3c374bb61fcfbd19"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/F-P1-versioned-restoration-review/own-full-diff.patch",
+      "sha256": "21678691fe6b0f09da1ee779e607e419fc9a56662a64f2a11fce07357f671d25",
+      "bytes": 9117,
+      "stored": "blobs/21/21678691fe6b0f09da1ee779e607e419fc9a56662a64f2a11fce07357f671d25.gz",
+      "stored_sha256": "f187818d7aa0d2be0d91ecff53a545ae865a5bb23d90554e6667fcfe07889d5f"
+    },
+    {
+      "original_path": "spain-fresh-pack-review-bafc0f62/phase2/F-P1-versioned-restoration-review/report.md",
+      "sha256": "66fcb735585221e17ebfecf85b57016c087c5ef25584afda6f09d4477fa71b98",
+      "bytes": 2224,
+      "stored": "blobs/66/66fcb735585221e17ebfecf85b57016c087c5ef25584afda6f09d4477fa71b98.gz",
+      "stored_sha256": "72317618243a6988fb8d77214cdda01bfab32f365c5da48a0f0faeb1789f40f1"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-root-application/country-examples.txt",
+      "sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "bytes": 60,
+      "stored": "blobs/96/96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753.gz",
+      "stored_sha256": "ed2745f71822f14a9814cfc6b84b28e930ebd35034c4c0d09f7f4548fef5e852"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-root-application/final-versioned/branch-audit.txt",
+      "sha256": "d7d74508aecf7e91852accd239a769fecac74876d0089106616e9dc71c6986e9",
+      "bytes": 82,
+      "stored": "blobs/d7/d7d74508aecf7e91852accd239a769fecac74876d0089106616e9dc71c6986e9.gz",
+      "stored_sha256": "dc4fbeb068b727ac6ba4c1166eaa569aca846342aa23d393af0e7e0a4027a7af"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-root-application/final-versioned/country-examples.txt",
+      "sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "bytes": 60,
+      "stored": "blobs/96/96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753.gz",
+      "stored_sha256": "ed2745f71822f14a9814cfc6b84b28e930ebd35034c4c0d09f7f4548fef5e852"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-root-application/final-versioned/full-canonical-schema.txt",
+      "sha256": "fb3fa388627eb99205680760747bb77902521130ebba55a87a81bcae63e072e8",
+      "bytes": 373,
+      "stored": "blobs/fb/fb3fa388627eb99205680760747bb77902521130ebba55a87a81bcae63e072e8.gz",
+      "stored_sha256": "eb6d46f8124a65a18aef4e832a5b1096bf1d6bc6ad2692ef49f737e7b583bd23"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-root-application/final-versioned/full-coverage-report.txt",
+      "sha256": "ef3b3a5d1950ca4972889f791d5a6b1484fa2269058312b3fdf02179ebe37eb0",
+      "bytes": 111564,
+      "stored": "blobs/ef/ef3b3a5d1950ca4972889f791d5a6b1484fa2269058312b3fdf02179ebe37eb0.gz",
+      "stored_sha256": "31aaff846c7a7e1f6113a8bca18b3e23515746ca69949f0259759eeb6e93c65b"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-root-application/final-versioned/strict-local-sync.txt",
+      "sha256": "4e4a7a1d7347182c90ae1d8420d4401f1ecc1528162ab4aad934099b685ae97b",
+      "bytes": 81,
+      "stored": "blobs/4e/4e4a7a1d7347182c90ae1d8420d4401f1ecc1528162ab4aad934099b685ae97b.gz",
+      "stored_sha256": "dc700982b65f267fce8c145c6d798f2c9e799859b969a7b3d1a5f6c92ea48954"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-root-application/final-versioned/validation.json",
+      "sha256": "0f1f66e3403098f305c369b154932c0938816a0a5a7d634ed8d0f07ef31c9747",
+      "bytes": 8631,
+      "stored": "blobs/0f/0f1f66e3403098f305c369b154932c0938816a0a5a7d634ed8d0f07ef31c9747.gz",
+      "stored_sha256": "642f3855af156ca6033706beb7bf31d2c683b8eac0ac67e6c9c493dfb6da0b4a"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-root-application/final-versioned/worktree-whitespace.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "stored": "blobs/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-root-application/local-provenance.json",
+      "sha256": "cdb0260f67f328f65c5ca29f5c9885abfd1f2954643e43c996bbc9d3544b70ee",
+      "bytes": 934,
+      "stored": "blobs/cd/cdb0260f67f328f65c5ca29f5c9885abfd1f2954643e43c996bbc9d3544b70ee.gz",
+      "stored_sha256": "e63a1caa8bda6f0783202493873f80720ced7408efc9525f675b8caf6f1ce7f2"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-root-application/preflight.json",
+      "sha256": "239c7a25192f687740a18ee02f96f56cb655a52cc1236472db762c8d58642249",
+      "bytes": 3644,
+      "stored": "blobs/23/239c7a25192f687740a18ee02f96f56cb655a52cc1236472db762c8d58642249.gz",
+      "stored_sha256": "8b7fd2505639573b4cb195f4d4cc3c507e0d07a9ac657a9b349da902b2747ec0"
+    },
+    {
+      "original_path": "spain-original-contribution-lines-root-application/strict-local-sync.txt",
+      "sha256": "7043d32e388a31c9c6855aabbe14108dbdcdb0cf6eaecf65ff3ecc94df9e0300",
+      "bytes": 1090,
+      "stored": "blobs/70/7043d32e388a31c9c6855aabbe14108dbdcdb0cf6eaecf65ff3ecc94df9e0300.gz",
+      "stored_sha256": "7be5c44638348e3907fdd66d6205db07cc185f0db52ec2d1ac0440d27232c157"
+    }
+  ]
+}

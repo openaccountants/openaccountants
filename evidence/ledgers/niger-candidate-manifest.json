@@ -1,0 +1,20 @@
+{
+  "baseline": "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+  "review_status": "Pending independent source review; no accountant attestation",
+  "candidate_files": {
+    "skills/niger/ne-cash-payment-tax.md": "9b039279d80cbaa258998862b142d29a44f263b10fa16fbe453ec6d79c92f9f0",
+    "skills/niger/ne-money-transfer-tax-repeal.md": "7d984e8a55cbffcd3739ede5a243b90363b0ec033ef424834dcda6623f86161e",
+    "skills/niger/README.md": "e5f0e4c403c77b5e3433842ae612a1808a4dbb04769d274e1ffd35bccf51d8a1",
+    "evidence/ledgers/ne-cash-payment-tax.md": "a4971af227c3bb40744d5599100bc38816e89a5a2e5b92f359847f5f98719d67",
+    "evidence/ledgers/ne-money-transfer-tax-repeal.md": "74382f0d98de63ba723efe75f5dc0f9a0d66b7e4c4409cdc3e20d8f0e2b74f11",
+    "evidence/ledgers/niger-old-topics.md": "caf94922a930ec569bcef74dce52d88f37de5ab2424f1b74168fbec006eb5435",
+    "evidence/ledgers/niger-source-read-20261101.md": "9f0cb8bd4ec5251e54c02ee15eb290605ecd0b6a5bc3289e3e4408d741c6a691"
+  },
+  "unchanged_legacy_files": {
+    "skills/niger/ne-company-formation.md": "d4d77f44f26373c1fe5df5fcb8bb5c4cfb6a9f3a09a242a4a45fc1659627c3a8",
+    "skills/niger/ne-corporate-income-tax.md": "6dff9833a45e4c86d90c8a8d3478953b5e9512727008dd910fde3e75736b0f41",
+    "skills/niger/ne-payroll-social.md": "59923c83b62ff5babb4813cc6bf03ae78b3070d39917ecdb0ef9f031b2cd7282",
+    "skills/niger/ne-tax-overview.md": "d67e05d0864c9b51f366f42445e585e5612cae92923d47441ea1befd4aa73426",
+    "skills/niger/ne-vat-gst.md": "c5099936e9d614ceaca4d5d6301bff11f3a1b8c794c721cfcf269623da4a7f95"
+  }
+}

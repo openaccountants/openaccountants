@@ -1,0 +1,28 @@
+{
+  "read_date": "2026-10-31",
+  "workbook_url": "https://www.llv.li/servicekonto/steuerverwaltung/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx",
+  "authority_index_url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/steuern-natuerliche-personen/vermoegens--und-erwerbssteuer",
+  "ordinance_url": "https://www.gesetze.li/konso/pdf/2010437000",
+  "ordinance_consolidation": "2026-07-01",
+  "source_files": {
+    "unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx": {
+      "bytes": 25232,
+      "sha256": "1fe280b5fc8b88908cff0383973a686d6b83395813d47dec92c8e7b0a4f5dedc"
+    },
+    "stev-2010437000-20261031.txt": {
+      "bytes": 89584,
+      "sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6"
+    },
+    "stev-2010437000-20261031.pdf": {
+      "bytes": 756868,
+      "sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    }
+  },
+  "observations": [
+    "Initial direct workbook request403; browser automatic verification followed by public link download succeeded; originalbytes preserved.",
+    "Browser download call exceeded requested timeout by hours; no repeat or live download process.",
+    "Ordinance direct request200;56pages retained unchanged. Selected article7a and Annex1 text read; formula-bearing printed pages34\u201336 visually inspected. No complete ordinance amendment-chain audit claimed.",
+    "Workbook one sheet Bewertung 2026,241 nonempty value/formula cells extracted; three selected views rendered and inspected. No modifications/export of original workbook.",
+    "National municipal table is taxyear2025. Schaan/Balzers minutes distinguish 2026 budgets from2025 tax-year decisions; all2026 municipal rate gap retained."
+  ]
+}

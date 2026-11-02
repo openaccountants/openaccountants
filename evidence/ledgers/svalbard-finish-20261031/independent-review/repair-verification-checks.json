@@ -1,0 +1,230 @@
+{
+  "reviewed_commit": "d89d6877bea2fdf0dd9d8cbe11dd942bae425dc6",
+  "reviewed_utc": "2026-10-31T19:54:26.528929+00:00",
+  "guide_checks": [
+    {
+      "file": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md",
+      "sha256": "5557dc93766583516b1f7b86aef349a9e36d172dff2750f1d3a43b3730d2c8a6",
+      "description_words": 112,
+      "description_length_valid": true,
+      "ledger_hash_matches": true,
+      "legal_rows_unchanged": true,
+      "derived_controls_unchanged": true,
+      "oa_blocks_unchanged": true,
+      "nonblank_lines_fully_mapped": true,
+      "invalid_line_hashes": []
+    },
+    {
+      "file": "skills/svalbard/sj-svalbard-coal-export-duty.md",
+      "sha256": "abb4372e13d8d4ede15d4896efce5cfdefc5553f8ad6a3d6fbdac7da873f16e4",
+      "description_words": 116,
+      "description_length_valid": true,
+      "ledger_hash_matches": true,
+      "legal_rows_unchanged": true,
+      "derived_controls_unchanged": true,
+      "oa_blocks_unchanged": true,
+      "nonblank_lines_fully_mapped": true,
+      "invalid_line_hashes": []
+    }
+  ],
+  "preservation": [
+    {
+      "file": "skills/svalbard/README.md",
+      "unchanged_from_initial": true,
+      "sha256": "7475b5e789134764e57a86a2d3c8643119d008809a1d693acb1409a7edce048d"
+    },
+    {
+      "file": "skills/svalbard/sj-svalbard-company-income-tax.md",
+      "unchanged_from_initial": true,
+      "sha256": "3dde986717a5cde36f68be7bd6aad40a823b598f86dbfc8eccdbd541996bf27d"
+    },
+    {
+      "file": "skills/svalbard/sj-svalbard-income-tax.md",
+      "unchanged_from_initial": true,
+      "sha256": "ba393f34e4ec3ebcf945f77e6332d6977c7d30ca31708ecd9eb7be7867b36ef5"
+    },
+    {
+      "file": "skills/svalbard/sj-svalbard-payroll-tax.md",
+      "unchanged_from_initial": true,
+      "sha256": "184c3e06f3c4cef010cd2013b6d195dca3fcf2d45780116792d1678f54fbd9fe"
+    },
+    {
+      "file": "skills/svalbard/sj-svalbard-social-contributions.md",
+      "unchanged_from_initial": true,
+      "sha256": "1f5558c5b413594b222910db8414cc72aa3e42b91940242a9b5ac5dae7c4787e"
+    },
+    {
+      "file": "skills/svalbard/sj-svalbard-tax-residence.md",
+      "unchanged_from_initial": true,
+      "sha256": "1d64825274c647daed51cef5b51f74ff1812670081eea39eccabc0445fcf5c14"
+    },
+    {
+      "file": "skills/svalbard/sj-svalbard-transfer-pricing.md",
+      "unchanged_from_initial": true,
+      "sha256": "30d6fda025a1dd66360eb7de12b93b9d93d2182d70e27abc8c453c2365e28fd7"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/coal-2026.html",
+      "unchanged_from_initial": true,
+      "sha256": "92639bf7d496f21b0cab5c4275cb905144428e1dc07b74bd449724e50cc67f2a"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/coal-2026.txt",
+      "unchanged_from_initial": true,
+      "sha256": "bb0cd111850e6e8551e8c01640ef5ef0ec62e81b1d2f195f3df38db6460632fd"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/coal-law.html",
+      "unchanged_from_initial": true,
+      "sha256": "fcdd726f1b66e2110fc1daf64c4f5107e21fb05b968a805dbdd5c5c727901f1e"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/coal-law.txt",
+      "unchanged_from_initial": true,
+      "sha256": "44bec8921cefc7e39e2a09c09c08f2afe3bb716f3756bac61dfbdab1c55a086e"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/environment-fee.html",
+      "unchanged_from_initial": true,
+      "sha256": "970f234e454973763fe219f9f0af3f4566da4ff16f4018ad4c0ba3756e358107"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/environment-fee.txt",
+      "unchanged_from_initial": true,
+      "sha256": "36bcc2cc118a68c988ade66ba87dc30be6878f42b22b26540b186e2099e62143"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/environment-fund.html",
+      "unchanged_from_initial": true,
+      "sha256": "42ee8bb7ed2f8f6e54edd0b32893b2e2b1a37d278f6b5588c010111a86c74aa1"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/environment-fund.txt",
+      "unchanged_from_initial": true,
+      "sha256": "4cea6e5e2f7a3f375c3225b12fdc8259c977ea1994362a2467024d04e75a974d"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/environment-law.html",
+      "unchanged_from_initial": true,
+      "sha256": "041b5c36bd01aab65c5fa64babe47d7f82fb62841ddad41f2f6ca1e3ff2dbf84"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/environment-law.txt",
+      "unchanged_from_initial": true,
+      "sha256": "db673ea46cad1206681d28ecdbc37ede484efb84cd0cdadca7d15462169643a1"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/fund-refund.html",
+      "unchanged_from_initial": true,
+      "sha256": "51898d8fcf81c776e68928e39f9ac6c322798372403448671b2332e4cb1da146"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/fund-refund.txt",
+      "unchanged_from_initial": true,
+      "sha256": "b31ceef3208b9f10d3ca53b638e811b07388c3c0c090aaa80c2e29cc7642ef10"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/governor-travel.html",
+      "unchanged_from_initial": true,
+      "sha256": "37398123375d0af80b3f09b2f6357fddf465fdf4f55123b192042560da4d0e7e"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/sources/governor-travel.txt",
+      "unchanged_from_initial": true,
+      "sha256": "8703837bb57f024a07a05b7c50b883f7475dd02b30f91e459f8676f657380ed7"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/source-receipts.json",
+      "unchanged_from_initial": true,
+      "sha256": "e1a726dbb10b2b0acee2439c0166f594d9f3d7f3ffd28e6a0909a167874f57b8"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/refund-form-observation.txt",
+      "unchanged_from_initial": true,
+      "sha256": "b530931a3ad1a2f201f6541191dac1bdc112c6bcf75c6ff61ccce9ed2b300526"
+    },
+    {
+      "file": "evidence/ledgers/svalbard-finish-20261031/preservation.json",
+      "unchanged_from_initial": true,
+      "sha256": "8a5370ec865c6ec89c82adda20966be4946eb6c89b841dbb25c7d37ea1950cff"
+    },
+    {
+      "file": "docs/research/2026-10-24-svalbard-independent-review.md",
+      "unchanged_from_initial": true,
+      "sha256": "3b9dc3b60a4e90120b314d03da96696f92dd2845294773247dbc31e66f1f0417"
+    }
+  ],
+  "receipt_integrity": [],
+  "writer_manifest": {
+    "skills/svalbard/README.md": {
+      "sha256": "7475b5e789134764e57a86a2d3c8643119d008809a1d693acb1409a7edce048d",
+      "matches": true
+    },
+    "skills/svalbard/sj-svalbard-company-income-tax.md": {
+      "sha256": "3dde986717a5cde36f68be7bd6aad40a823b598f86dbfc8eccdbd541996bf27d",
+      "matches": true
+    },
+    "skills/svalbard/sj-svalbard-income-tax.md": {
+      "sha256": "ba393f34e4ec3ebcf945f77e6332d6977c7d30ca31708ecd9eb7be7867b36ef5",
+      "matches": true
+    },
+    "skills/svalbard/sj-svalbard-payroll-tax.md": {
+      "sha256": "184c3e06f3c4cef010cd2013b6d195dca3fcf2d45780116792d1678f54fbd9fe",
+      "matches": true
+    },
+    "skills/svalbard/sj-svalbard-social-contributions.md": {
+      "sha256": "1f5558c5b413594b222910db8414cc72aa3e42b91940242a9b5ac5dae7c4787e",
+      "matches": true
+    },
+    "skills/svalbard/sj-svalbard-tax-residence.md": {
+      "sha256": "1d64825274c647daed51cef5b51f74ff1812670081eea39eccabc0445fcf5c14",
+      "matches": true
+    },
+    "skills/svalbard/sj-svalbard-transfer-pricing.md": {
+      "sha256": "30d6fda025a1dd66360eb7de12b93b9d93d2182d70e27abc8c453c2365e28fd7",
+      "matches": true
+    },
+    "skills/svalbard/sj-svalbard-visitor-environmental-levy.md": {
+      "sha256": "5557dc93766583516b1f7b86aef349a9e36d172dff2750f1d3a43b3730d2c8a6",
+      "matches": true
+    },
+    "skills/svalbard/sj-svalbard-coal-export-duty.md": {
+      "sha256": "abb4372e13d8d4ede15d4896efce5cfdefc5553f8ad6a3d6fbdac7da873f16e4",
+      "matches": true
+    },
+    "evidence/ledgers/sj-svalbard-visitor-environmental-levy.md": {
+      "sha256": "e9773e463029d834b84ec08e16f04959900478138c47b1fc51fc9b7797c81635",
+      "matches": true
+    },
+    "evidence/ledgers/sj-svalbard-coal-export-duty.md": {
+      "sha256": "308bbab172c7b7d11a74c1747da8fd5c17888cba10d4f2f55a549602bfbc4464",
+      "matches": true
+    }
+  },
+  "initial_review_files": {
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/checks.json": "e8722c1c8a09aeeaa619b04333daced1131dc3458a139775f3645bfd63ef1318",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/direct-fetches.json": "feff9d6019e68ab45510263e387993c5aefdc2e582a7c1cef66ef5e91a571c3a",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/initial-candidate-manifest.json": "b7390cca790548cfa1ccf2e05150c01d063d15adf6a6f811d52c5b9ab137f713",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/initial-report.md": "4b314bd1984f839835a74d32fe82e6ab9de77e159ff70298f0d5177056fbb166",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/initial-verdict.json": "d4e17293f4b840496d41cf3fa085b242a7641b2ac397304fe2f120be1a155d32",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/preservation-checks.json": "c24223c068473f1ec8ca468cf4a7a9b60332959828290883ce5357a29c6bbf54",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/row-checks.json": "1de0bba7138707d6a00218882a85e77a67838147a354af4a8382451750039a5b",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/source-checks.json": "ac430877e148e1e208968c39dd3cb2e25b815fabc9a90250c65ad1b191f8009b",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/coal-2026-browser.txt": "0a090dae9d4a0c48590e16dc38f291ad313123c1eff4af8888132c254b8c9b36",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/coal-law-browser.txt": "c666ac0f01e42e151430590df62f50e263dbdffa614267b59e79bb5e9f2113e1",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/customs-law-browser.txt": "377c95f7afe9324013d5e88a6c179ea283b0225e696b990f82e00f767c80646e",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-fee-browser.txt": "397a2e030ddab025f47b4704cc54dd95144f3b87f3c2de6748b3516abc006bc5",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-fund-browser.txt": "df56d56add6977c8866bd31fe6f812d4d1af5f30c20b01b1ceffe997c37a4683",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/environment-law-browser.txt": "ac05e59f7681700628830ffa6aa56d0ac72722cfb6adee64bb132ba87b679e2d",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/fund-refund-browser.txt": "3463f73ef836d42a574afeecd76582cb3750d624f05401bdff209ddb40a38cb2",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/governor-travel-browser.txt": "0324877d145f67c87b71ea93d2e5f98b2a03da5742f676a25baa1eb2f48e6d99",
+    "evidence/ledgers/svalbard-finish-20261031/independent-review/sources/refund-form-browser.txt": "8ccf9d7076e73bd68ea582d4ce989aae3feb32d5cc8f33640c01feb7716ff9c5"
+  },
+  "writer_evidence_hashes": {
+    "evidence/ledgers/svalbard-finish-20261031/candidate-manifest.json": "160049a72f84712c052320e6661af0afd20d39eaf03b733c6ad6fb22decef943",
+    "evidence/ledgers/svalbard-finish-20261031/sj-svalbard-coal-export-duty.json": "2288c0bd2bfd4d96ec9a963afd40c49cb9c191ccad95c2e5f2a9c27d120ffed7",
+    "evidence/ledgers/svalbard-finish-20261031/sj-svalbard-visitor-environmental-levy.json": "49281d5353f3e86e3183c69817f41e38bb76c2949fd4c23d8c48dfe1f0ec5c31",
+    "evidence/ledgers/sj-svalbard-coal-export-duty.md": "308bbab172c7b7d11a74c1747da8fd5c17888cba10d4f2f55a549602bfbc4464",
+    "evidence/ledgers/sj-svalbard-visitor-environmental-levy.md": "e9773e463029d834b84ec08e16f04959900478138c47b1fc51fc9b7797c81635"
+  }
+}

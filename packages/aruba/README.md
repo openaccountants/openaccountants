@@ -1,6 +1,6 @@
-# Argentina — AI Accounting Assistant | OpenAccountants
+# Aruba — AI Accounting Assistant | OpenAccountants
 
-> Open-source accounting skills for Argentina. Upload to Claude, ChatGPT, or any AI assistant.
+> Open-source accounting skills for Aruba. Upload to Claude, ChatGPT, or any AI assistant.
 > Tax, bookkeeping, payroll, formation, financial statements, and more. Free and open source.
 
 ## What's in this folder
@@ -11,21 +11,15 @@
 4. `aw-social-contributions.md`
 5. `aw-turnover-taxes.md`
 
-## Also known as
-
-contador público, impuesto a las ganancias, IVA, monotributo, autónomo
-
-Tax authority: **AFIP (Administración Federal de Ingresos Públicos)**
-
 ## How to use
 
 1. Upload ALL files in this folder to your AI assistant (Claude, ChatGPT, Gemini, etc.)
 2. Attach your bank statement, invoices, or any financial documents (CSV or PDF)
 3. Tell the AI what you need:
-   - **"Help me with my 2025 Argentina taxes. Here's my bank statement."**
+   - **"Help me with my 2025 Aruba taxes. Here's my bank statement."**
    - **"Classify my transactions and prepare my books."**
    - **"Run payroll for my employee."**
-   - **"Help me set up a company in Argentina."**
+   - **"Help me set up a company in Aruba."**
    - **"Prepare my annual accounts."**
 
 The AI will:
@@ -44,12 +38,12 @@ The most up-to-date, verified version of these skills is maintained at [openacco
 
 ## Are you a qualified tax professional?
 
-These Argentina tax skills need your eye. Every rate, threshold, and form reference was AI-drafted and needs a human professional to verify it.
+These Aruba tax skills need your eye. Every rate, threshold, and form reference was AI-drafted and needs a human professional to verify it.
 
 **You don't need to use GitHub.** Just:
 
 1. Download the files in this folder
-2. Check the rates against AFIP (Administración Federal de Ingresos Públicos)'s website
+2. Check the rates against your national tax authority's website
 3. Email your corrections to **info@openaccountants.com** — Word doc, Excel, PDF, tracked changes, whatever works
 
 We'll update the skill and credit you publicly as the verified reviewer at [openaccountants.com](https://www.openaccountants.com).

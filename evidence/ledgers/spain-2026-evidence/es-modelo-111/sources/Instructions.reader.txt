@@ -1,0 +1,388 @@
+
+
+        
+	
+    
+	
+
+Agencia Tributaria: Instrucciones
+
+
+
+	
+[[ID:body]]
+
+		
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Todas las gestiones
+
+Impuestos, tasas y prestaciones patrimoniales
+
+Pagos a cuenta
+
+Modelo 111. Retenciones e ingresos a cuenta. Rendimientos del trabajo y de actividades económicas, premios y determinadas ganancias patrimoniales e imputaciones de Renta. Autoliquidación.
+
+
+
+			
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Instrucciones
+
+MODELO 111
+
+RETENCIONES E INGRESOS A CUENTA DEL IRPF. RENDIMIENTOS DEL TRABAJO Y DE ACTIVIDADES ECONÓMICAS, PREMIOS Y DETERMINADAS GANANCIAS PATRIMONIALES E IMPUTACIONES DE RENTA.
+
+Información general sobre las formas de presentación del modelo 111 y la cumplimentación del mismo.
+
+CUESTIONES GENERALES.
+
+Importante: todos los importes monetarios solicitados en el modelo deberán expresarse en euros, consignando la parte decimal, que constará de dos dígitos en todo caso, a la derecha de la línea vertical que divide cada una de las casillas. >
+
+Referencias normativas. Las menciones que en este documento se hacen a la Ley y al Reglamento del Impuesto deben entenderse hechas, respectivamente, a la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio (BOE del 29) y al Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de 30 de marzo.
+
+OBLIGADOS A PRESENTAR EL MODELO 111.
+
+Están obligados a presentar el modelo 111 todas las personas y entidades obligadas a retener o ingresar a cuenta conforme a lo establecido en el artículo 74 del Reglamento del Impuesto que satisfagan o abonen rentas, dinerarias o en especie, sujetas a retención o a ingreso a cuenta correspondientes a alguna de las siguientes clases:
+
+Rendimientos del trabajo.
+
+Rendimientos que sean contraprestación de las siguientes actividades económicas:
+
+Actividades profesionales.
+
+Actividades agrícolas y ganaderas.
+
+Actividades forestales.
+
+Las actividades empresariales en estimación objetiva previstas en el artículo 95.6.2.º del Reglamento del Impuesto.
+
+Rendimientos procedentes de la propiedad intelectual e industrial, de la prestación de asistencia técnica, del arrendamiento de bienes muebles, negocios o minas, del subarrendamiento sobre los bienes anteriores y de la cesión del derecho a la explotación del derecho de imagen, a los cuales se refiere el artículo 75.2.b) del Reglamento del Impuesto, cuando deriven de una actividad económica desarrollada por su perceptor.
+
+Premios por la participación en juegos, concursos, rifas o combinaciones aleatorias a que se refiere el artículo 75.2.c) del Reglamento del Impuesto.
+
+Ganancias patrimoniales consistentes en percepciones obtenidas por los vecinos como consecuencia de los aprovechamientos forestales en montes públicos.
+
+Contraprestaciones a que se refiere el artículo 92.8 de la Ley del Impuesto que sean consecuencia de cesiones de derechos de imagen a las que resulte de aplicación el régimen especial de imputación de rentas establecido en el citado artículo.
+
+PRESENTACIÓN DEL MODELO 111 COMO AUTOLIQUIDACIÓN NEGATIVA.
+
+Deberá presentarse el modelo 111 como autoliquidación negativa cuando, a pesar de haber satisfecho en el trimestre o en el mes anterior, según corresponda, rentas sometidas a retención o a ingreso a cuenta de las enumeradas anteriormente, no hubiera procedido, conforme a las normas aplicables para la determinación de su importe, la práctica efectiva de retención o ingreso a cuenta, de forma que no proceda ingresar en el Tesoro público cantidad alguna por este concepto.
+
+Sin embargo, no procederá la presentación del modelo 111 cuando no se hubiese satisfecho en el trimestre o en el mes anterior objeto de autoliquidación, según corresponda, ninguna renta sometida a retención e ingreso a cuenta de las anteriormente mencionadas. Es decir, no deben presentarse modelos de autoliquidación 111 con todas las casillas del apartado de liquidación sin cumplimentar.
+
+En este caso, deberá presentarse declaración censal (modelo 036/037), de modificación, comunicando la fecha en la que se produce la baja en la obligación de practicar retenciones del trabajo a cuenta del Impuesto sobre la Renta. Dicha declaración de modificación (en la que se comunique la baja de la obligación de retener) deberá presentarse en el plazo de un mes desde la finalización del período al que hubiera correspondido la autoliquidación.
+
+RECUERDE: En caso de volver a satisfacer rentas sujetas a retención a cuenta del IRPF, deberá presentarse además la correspondiente declaración censal (modelo 036/037), de modificación, comunicando el alta en la citada obligación.
+
+Importante: la autoliquidación de retenciones e ingresos a cuenta, modelo 111, será única para cada retenedor u obligado a ingresar a cuenta y comprenderá la totalidad de los datos que, debiendo incluirse en la misma, correspondan al período, trimestral o mensual, por el que se presenta la autoliquidación.
+
+PERIODICIDAD Y FORMAS DE PRESENTACIÓN DEL MODELO 111.
+
+La periodicidad y la forma de presentación de las autoliquidaciones de retenciones e ingresos a cuenta del IRPF en el modelo 111 vienen determinadas por el tipo o categoría en el que se encuentre encuadrado el obligado tributario de entre los que a continuación se relacionan:
+
+Grandes empresas. Tienen esta consideración las personas o entidades obligadas a retener o a ingresar a cuenta en quienes concurra alguna de las circunstancias a que se refieren los números 1.º y 2º del artículo 71.3 del Reglamento del Impuesto sobre el Valor Añadido, relativas al volumen de operaciones que determina que el período de liquidación de dicho impuesto coincida con el mes natural.
+
+Personas o entidades adscritas a la Delegación Central de Grandes Contribuyentes (DCGC) o a alguna de las Unidades de Gestión de Grandes Empresas dependientes del Departamento de Inspección Financiera y Tributaria de la AEAT.
+
+Administraciones públicas con presupuesto anual superior a 6 millones de euros. Comprende todas aquellas entidades que tengan la consideración de Administraciones públicas, incluida la Seguridad Social, cuyo último presupuesto anual aprobado con anterioridad al inicio de cada ejercicio supere la cantidad de 6 millones de euros.
+
+Entidades con forma jurídica de sociedad anónima o de sociedad de responsabilidad limitada.
+
+Restantes obligados tributarios, entre los cuales cabe señalar:
+
+Personas físicas que desarrollan actividades económicas, ya sean de naturaleza empresarial, incluidas las agrícolas, ganaderas, forestales o pesqueras, o profesional, incluidas las artísticas y deportivas.
+
+Administraciones públicas cuyo último presupuesto anual aprobado con anterioridad al inicio del ejercicio no supere la cantidad de 6 millones de euros.
+
+Personas jurídicas y demás entidades distintas de las sociedades anónimas y de las sociedades de responsabilidad limitada: cooperativas, fundaciones, asociaciones, comunidades de propietarios, comunidades de bienes, sociedades civiles, herencias yacentes, etc.
+
+Atendiendo al tipo de obligado tributario de que se trate, la periodicidad y forma de presentación del modelo 111 serán las que en cada caso corresponda de las que se señalan en el siguiente cuadro:
+
+Tipo de Obligado tributario
+
+Periodicidad
+
+Forma de presentación
+
+Grandes Empresas
+
+Administraciones Públicas con presupuesto superior a 6 millones de euros
+
+Mensual
+
+Obligatoriamente:
+
+Electrónica, a través de Internet con firma electrónica  avanzada o un sistema de identificación y autenticación mediante certificado electrónico.
+
+Sociedades anónimas y Sociedades de responsabilidad limitada (excepto que tengan la consideración de grandes empresas)
+
+Adscritos a la DCGC / UGGE (excepto que tengan la consideración de grandes empresas)
+
+Resto de Administraciones Públicas.
+
+Trimestral
+
+Personas Físicas (excepto si están adscritas a la DCGC)
+
+Trimestral
+
+Opcionalmente:
+
+Electrónica, a través de Internet con sistema de   firma con clave de acceso [Cl@ve Móvil (incluye Cl@ve)].
+
+Electrónica, a través de Internet con firma electrónica avanzada o un sistema de identificación y autenticación mediante certificado electrónico.
+
+Mediante papel impreso generado exclusivamente mediante la utilización del servicio de impresión desarrollado a estos efectos por la AEAT en su sede electrónica.
+
+Restantes obligados tributarios (excepto que tengan la consideración de grandes empresas)
+
+Trimestral
+
+Opcionalmente:
+
+Electrónica, a través de Internet con 
+firma electrónica avanzada o un sistema de identificación y autenticación mediante certificado electrónico.
+
+Mediante papel impreso generado exclusivamente mediante la utilización del servicio de impresión desarrollado a estos efectos por la AEAT en su sede electrónica.
+
+NORMAS PARA LA PRESENTACIÓN DEL MODELO 111 EN PAPEL IMPRESO GENERADO EXCLUSIVAMENTE MEDIANTE LA UTILIZACIÓN DEL SERVICIO DE IMPRESIÓN DESARROLLADO A ESTOS EFECTOS POR LA AGENCIA TRIBUTARIA EN SU SEDE ELECTRÓNICA.
+
+En este caso, el modelo 111 consta únicamente de dos ejemplares (para el declarante y para la Entidad colaboradora-AEAT).  Los dos ejemplares del modelo 111 obtenidos por este procedimiento incorporan los datos identificativos del declarante por medio de un código de barras,
+
+En consecuencia:
+
+si de la autoliquidación resulta una cantidad a ingresar, la presentación y el ingreso del modelo 111 se efectuará en cualquier Entidad colaboradora autorizada .
+
+Si la autoliquidación es negativa, el modelo 111 se presentará, bien directamente o mediante envío por correo certificado, en la Delegación de la Agencia Tributaria correspondiente al domicilio fiscal del declarante sin necesidad de aportar documentación adicional
+
+NORMAS PARA LA PRESENTACIÓN ELECTRÓNICA DEL MODELO 111.
+
+La presentación telemática por Internet del modelo 111, cualquiera que sea la periodicidad del mismo y con independencia de que dicha forma de presentación sea obligatoria u opcional para el obligado tributario, deberá ajustarse a las condiciones y al procedimiento establecidos al efecto en la Orden HAP/2194/2013, de 22 de noviembre, por la que se regulan los procedimientos y las condiciones generales para la presentación de determinadas autoliquidaciones y declaraciones informativas de naturaleza tributaria (BOE del 26).
+
+PLAZOS DE PRESENTACIÓN DEL MODELO 111.
+
+Autoliquidación trimestral: durante los veinte primeros días naturales de los meses de abril, julio, octubre y enero, por las retenciones e ingresos a cuenta que correspondan al trimestre natural inmediato anterior.
+
+Autoliquidación mensual (Grandes empresas y Administraciones públicas con presupuesto anual superior a 6 millones de euros): durante los veinte primeros días naturales del mes siguiente al período de autoliquidación mensual que corresponda.
+
+Los vencimientos de plazo que coincidan con un sábado o día inhábil se considerarán trasladados al primer día hábil siguiente.
+
+CUMPLIMENTACIÓN DEL MODELO 111
+
+Apartado “IDENTIFICACIÓN”
+
+Introduzca el NIF del declarante y los apellidos y nombre o bien la razón social de la persona o entidad.
+
+Apartado “DEVENGO”
+
+Ejercicio: consigne las cuatro cifras del año natural al que corresponde el período por el que se efectúa la autoliquidación.
+
+Período:
+
+Si se trata de autoliquidación trimestral, consigne:
+
+1T: 1.er Trimestre
+
+2T: 2.º Trimestre
+
+3T: 3.er Trimestre
+
+4T: 4.º Trimestre
+
+Si se trata de autoliquidación mensual (Grandes Empresas y Administraciones públicas con presupuesto anual superior a 6 millones de euros), consigne:
+
+01: enero
+
+02: febrero
+
+03: marzo
+
+04: abril
+
+05: mayo
+
+06: junio
+
+07: julio
+
+08: agosto
+
+09: septiembre
+
+10: octubre
+
+11: noviembre
+
+12: diciembre
+
+Apartado “LIQUIDACIÓN” 
+
+Recuerde: No deben presentarse modelos de autoliquidación 111 con todas las casillas del apartado de “liquidación” sin cumplimentar.
+
+I y II. Rendimientos del trabajo y rendimientos de actividades económicas. 
+
+Se harán constar en cada uno de estos epígrafes los datos referentes, respectivamente, a los rendimientos del trabajo y a los rendimientos de actividades económicas que, estando sujetos a retención o a ingreso a cuenta, hayan sido satisfechos o abonados por el declarante durante el período objeto de autoliquidación, consignando por separado los correspondientes a los rendimientos dinerarios y a los rendimientos satisfechos en especie.
+
+Rendimientos dinerarios. 
+
+Casillas 01 y 07 
+
+N.º perceptores.- Número total de personas físicas y, en su caso, Entidades en régi¬men de atribución de rentas, a las que el declarante haya satisfecho en el periodo objeto de autoliquidación retribuciones o contraprestaciones dinerarias sujetas a retención a cuenta del IRPF en concepto de rendimientos del trabajo (casilla 01) y de actividades económicas (casilla 07).
+
+Casillas 02 y 08 
+
+Importe de las percepciones.- Suma de las retribuciones o contraprestaciones dinerarias integras sujetas a retención satisfechas por el declarante en el periodo objeto de autoliquidación en concepto de rendimientos del trabajo (casilla 02) y de actividades económicas (casilla 08).
+
+Casillas 03 y 09 
+
+Importe de las retenciones.- Importe total de las retenciones correspondientes a las percepciones dinerarias satisfechas por el declarante en el periodo objeto de autoliquidación en concepto de rendimientos del trabajo (casilla 03) y de actividades económicas (casilla 09).
+
+Rendimientos en especie. 
+
+Casillas 04 y 10 
+
+N.º perceptores.- Número total de personas físicas y, en su caso, entidades en régimen de atribución de rentas, a las que el declarante haya satisfecho en el periodo objeto de autoliquidación retribuciones o contraprestaciones en especie sujetas a ingreso a cuenta del IRPF en concepto de rendimientos del trabajo (casilla 04) y de actividades económicas (casilla 10).
+
+Casillas 05 y 11 
+
+Valor percepciones en especie.- Suma de las retribuciones o contraprestaciones en especie satisfechas en el periodo objeto de liquidación, valoradas conforme a las reglas establecidas en el artículo 43 de la Ley del Impuesto, en concepto de rendimientos del trabajo (casilla 05) y de actividades económicas (casilla 11).
+
+Casillas 06 y 12 
+
+Importe de los ingresos a cuenta.- Importe total de los ingresos a cuenta que corresponda efectuar sobre las percepciones en especie satisfechas por el declarante en el periodo objeto de autoliquidación en concepto de rendimientos del trabajo (casilla 06) y de actividades económicas (casilla 12).
+
+III. Premios por la participación en juegos, concursos, rifas o combinaciones aleatorias. 
+
+Se incluirán en este epígrafe los datos correspondientes a los premios sujetos a retención o a ingreso a cuenta a que se refiere el artículo 75.2.c) del Reglamento del Impuesto, que hayan sido entregados por el declarante en el periodo de autoliquidación, salvo que constituyan rendimientos del capital mobiliario, en cuyo caso serán objeto de declaración e ingreso en el modelo que proceda de los correspondientes a dicha clase de rendimientos.
+
+En las casillas 13, 14 y 15 se reflejarán los datos referentes a los premios dinerarios y en las casillas 16, 17 y 18 los que correspondan a los premios en especie.
+
+IV. Ganancias patrimoniales derivadas de los aprovechamientos forestales de los vecinos en montes públicos.
+
+Se incluirán en este epígrafe los datos correspondientes a las percepciones satisfechas por la entidad declarante a los vecinos en el periodo objeto de autoliquidación como consecuencia de los aprovechamientos forestales en montes públicos y que constituyan para los perceptores ganancias patrimoniales de las previstas por este concepto en el artículo 75.1.d) del Reglamento del Impuesto.
+
+En las casillas 19, 20 y 21 se reflejarán los datos referentes a las percepciones dinerarias y en las casillas 22, 23 y 24 los que, en su caso, correspondan a percepciones en especie.
+
+V. Contraprestaciones por la cesión de derechos de imagen: ingresos a cuenta previstos en el artículo 92.8 de la Ley del Impuesto. 
+
+Se incluirán en este epígrafe los datos correspondientes a las contraprestaciones sujetas a la obligación de efectuar el ingreso a cuenta a que se refiere el artículo 92.8 de la Ley del Impuesto, que hayan sido satisfechas por el declarante en el periodo al que se refiere la autoliquidación.
+
+Casilla 25 
+
+N.º perceptores.- Número total de personas físicas sometidas al régimen especial de imputación de rentas por la cesión de derechos de imagen establecido en el artículo 92 de la Ley del Impuesto, respecto de las cuales se hayan satisfecho las contraprestaciones objeto de autoliquidación.
+
+Casilla 26 
+
+Contraprestaciones satisfechas.- Suma de contraprestaciones, dinerarias o en especie, satisfechas por el declarante durante el periodo objeto de autoliquidación a personas o entidades no residentes en territorio español, que estén sujetas a la obligación de efectuar el ingreso a cuenta previsto en el artículo 92.8 de la Ley del Impuesto.
+
+Casilla 27 
+
+Importe de los ingresos a cuenta.- Importe total de los ingresos a cuenta que corresponda efectuar por las contraprestaciones a que se refiere la casilla anterior.
+
+TOTAL LIQUIDACIÓN. 
+
+Casilla 28 
+
+Se consignará en esta casilla la suma de las retenciones e ingresos a cuenta que, por todos los conceptos, se hayan hecho constar en los epígrafes anteriores de este apartado.
+
+Casilla 29 
+
+Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y período.
+
+Casilla 30 
+
+Consigne en esta casilla el resultado de efectuar la operación indicada en el formulario de autoliquidación. En caso de autoliquidación complementaria, dicho resultado habrá de ser siempre una cantidad positiva.
+
+Apartado “INGRESO”
+
+Si el resultado consignado en la casilla 30 es una cantidad a ingresar, su importe se trasladará a la clave “I”, marcando además la casilla correspondiente a la forma de pago. Si se efectúa el ingreso mediante adeudo en cuenta o domiciliación bancaria, cumplimente los datos completos de la cuenta de adeudo (Código IBAN) de la Entidad colaboradora o bien, como novedad en el caso de domiciliación bancaria, a partir del 1 de febrero de 2024, los de una cuenta abierta en una entidad no colaboradora perteneciente a la Zona Única de Pagos en Euros (Zona SEPA); en este último caso, el pago habrá de realizarse recurriendo a la intermediación en el servicio de una entidad colaboradora en la gestión recaudatoria.
+
+El procedimiento para efectuar el ingreso de la cantidad resultante de la autoliquidación será el establecido en la Orden HAP/2194/2013, de 22 de noviembre (artículos 4 y 6 a 9), por la que se regulan los procedimientos y las condiciones generales para la presentación de determinadas autoliquidaciones y declaraciones informativas de naturaleza tributaria (BOE del 26). Si la domiciliación se realiza en una cuenta abierta en una entidad no colaboradora de la Zona SEPA, se ajustará a lo dispuesto en el artículo 5 bis de la Orden EHA/1658/2009, de 12 de junio.
+
+Apartado “AUTOLIQUIDACIÓN NEGATIVA”
+
+Se marcará la casilla indicada a estos efectos cuando, a pesar de haber satisfecho en el periodo a que se refiere la autoliquidación rentas sujetas a retención o a ingreso a cuenta que deban ser incluidas en el modelo 111, no hubiera procedido la práctica efectiva de retención o ingreso a cuenta en virtud de las normas aplicables para la determinación de su importe, de forma que no proceda ingresar cantidad alguna por este concepto en el Tesoro público.
+
+En este caso, si la presentación se efectúa mediante papel impreso generado exclusivamente mediante el servicio de impresión desarrollado por la Agencia Tributaria, deberá efectuarse, de acuerdo con lo dispuesto en el artículo 4.5 de la Orden HAP/2194/2013, de 22 de noviembre, ya citada, directamente o mediante envío por correo certificado, en la Delegación o Administración de la Agencia Estatal de Administración Tributaria correspondiente al domicilio fiscal del obligado tributario.
+
+En caso de presentación por vía electrónica a través de internet, el procedimiento será el establecido en el artículo 11 de la Orden HAP/2194/2013, de 22 de noviembre, por la que se regulan los procedimientos y las condiciones generales para la presentación de determinadas autoliquidaciones y declaraciones informativas de naturaleza tributaria.
+
+Apartado “COMPLEMENTARIA”
+
+Se marcará esta casilla cuando esta autoliquidación sea complementaria de otra u otras autoliquidaciones presentadas anteriormente por el mismo concepto y correspondientes al mismo ejercicio y período. En tal supuesto, se hará constar también en este apartado el número identificativo de 13 dígitos que figura preimpreso junto al código de barras de la autoliquidación anterior. De haberse presentado anteriormente más de una autoliquidación, se hará constar el número identificativo de la última de ellas.
+
+En la autoliquidación complementaria se harán constar por sus cuantías correctas todos los datos a que se refieren las casillas 01 a 27 del modelo 111, que sustituirán por completo a los reflejados en idénticas casillas de la autoliquidación anterior.
+
+Las autoliquidaciones complementarias deberán formularse en el modelo oficial que estuviese vigente en el ejercicio y periodo al que corresponda la autoliquidación anterior.
+
+Importante: Únicamente procederá la presentación de autoliquidación complementaria, de la que necesariamente habrá de resultar una cantidad a ingresar, cuando ésta tenga por objeto regularizar errores u omisiones de otra autoliquidación anterior que hubieran dado lugar a un resultado inferior al debido.
+
+La rectificación por cualquier otra causa de autoliquidaciones presentadas anteriormente no dará lugar a la presentación de autoliquidaciones complementarias, sin perjuicio del derecho del contribuyente a solicitar de la Administración tributaria la rectificación de las mismas cuando considere que han perjudicado de cualquier modo sus intereses legítimos o que su presentación ha dado lugar a la realización de ingresos indebidos, de conformidad con lo establecido en los artículos 120.3 y 221.4 de la Ley 58/2003, de 17 de diciembre, General Tributaria, siempre que no se haya practicado por la Administración tributaria liquidación definitiva o liquidación provisional por el mismo motivo ni haya transcurrido el plazo de cuatro años a que se refiere el artículo 66 de la citada Ley General Tributaria.
+
+
+
+					
+
+			 
+		
+		
+		
+		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 09/junio/2026
+
+
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

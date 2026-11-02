@@ -1,0 +1,6 @@
+changed-only mode: validating 3 changed guide file(s)
+checked 2 guides (0 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+WARN: skills/burkina-faso/bf-nonresident-services-withholding.md: BF PR also holds bf-payroll, with a different job
+
+validation passed (1 warning group(s))

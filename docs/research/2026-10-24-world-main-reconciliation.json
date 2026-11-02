@@ -1,0 +1,196 @@
+{
+  "published_workstream": "ee349c5d0814ee137f655d81ea2242fa64fc6798",
+  "main": "e3f71b3cb36440fed320a8826b9c4128f05c1886",
+  "method": "Preserve prior published research/body; import exact platform fields and contribution attribution from published main; append neutral existing CTA; increment source version and matching H1 version; retain maximum date. No new legal/source verification.",
+  "records": [
+    {
+      "path": "skills/international/faroe-islands/fo-individual-income-tax.md",
+      "prior_published_blob": "b6cadd4923d5182a7e8adcc28b93cacc80f4ff8b",
+      "main_blob": "0ee3bbf7fb1f07f14e4158434cae9573c284bad4",
+      "final_candidate_blob": "6dba38e40d47c30d1adbadc11b71c78d219c3a6c",
+      "prior_body_sha256": "3ccf8ada68d5c8319861e9f17c758434b2a803e9fdf78bc1682671a0341424dc",
+      "normalized_final_body_sha256": "3ccf8ada68d5c8319861e9f17c758434b2a803e9fdf78bc1682671a0341424dc",
+      "version_before": "0.2",
+      "version_after": "0.3",
+      "last_updated_before": "2026-10-23",
+      "last_updated_main": "2026-10-23",
+      "last_updated_after": "2026-10-23",
+      "platform_fields_from_main": {
+        "authored_by": "Ryan Duguid",
+        "review_status": "pending_review",
+        "trust_label": "Accountant-authored",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "oa_check_blocks_preserved": 2,
+      "substantive_tax_body_preserved": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-corporate-tax.md",
+      "prior_published_blob": "7fe267dfc0162632b0455a2d2b6e9f8ec660a812",
+      "main_blob": "849e406faaf2dfea8269b73b0aed69819f530b9d",
+      "final_candidate_blob": "61f428b3e0d51f51a49524f0911e6863577296e5",
+      "prior_body_sha256": "f83ce3b8f4cd6757bbb8a26daa46a6930f12a45760708e3f7bfccc27bc639bff",
+      "normalized_final_body_sha256": "f83ce3b8f4cd6757bbb8a26daa46a6930f12a45760708e3f7bfccc27bc639bff",
+      "version_before": "0.16",
+      "version_after": "0.17",
+      "last_updated_before": "2026-10-22",
+      "last_updated_main": "2026-10-23",
+      "last_updated_after": "2026-10-23",
+      "platform_fields_from_main": {
+        "authored_by": "Ryan Duguid",
+        "review_status": "pending_review",
+        "trust_label": "Accountant-authored",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "oa_check_blocks_preserved": 8,
+      "substantive_tax_body_preserved": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "prior_published_blob": "1b2a4998bc67200d1040a9c82d6232633173673a",
+      "main_blob": "550acaf64af334a7aa3772ac5b3dce5bba71cde8",
+      "final_candidate_blob": "e0245dac0379cc932fefd38f545da425955b6ec4",
+      "prior_body_sha256": "6eb63a71538470c6651a2a3c06c43d0e39fad23a4b8f86000de840d389d3ead6",
+      "normalized_final_body_sha256": "6eb63a71538470c6651a2a3c06c43d0e39fad23a4b8f86000de840d389d3ead6",
+      "version_before": "0.8",
+      "version_after": "0.9",
+      "last_updated_before": "2026-10-22",
+      "last_updated_main": "2026-10-23",
+      "last_updated_after": "2026-10-23",
+      "platform_fields_from_main": {
+        "authored_by": "Ryan Duguid",
+        "review_status": "pending_review",
+        "trust_label": "Accountant-authored",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "oa_check_blocks_preserved": 8,
+      "substantive_tax_body_preserved": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "prior_published_blob": "b5f23f47e2ac01e7b9e4337e8f784b87e0ea898a",
+      "main_blob": "29f2df2bc506e7af80987eac21470420fc59f9e0",
+      "final_candidate_blob": "741891a05599f3ca6ce674757bec640974f2c1c3",
+      "prior_body_sha256": "068fb845baf08468f4cde6ad0a4a9111a1da55be48ff359be531089c5ddf74e1",
+      "normalized_final_body_sha256": "068fb845baf08468f4cde6ad0a4a9111a1da55be48ff359be531089c5ddf74e1",
+      "version_before": "0.13",
+      "version_after": "0.14",
+      "last_updated_before": "2026-10-22",
+      "last_updated_main": "2026-10-23",
+      "last_updated_after": "2026-10-23",
+      "platform_fields_from_main": {
+        "authored_by": "Ryan Duguid",
+        "review_status": "pending_review",
+        "trust_label": "Accountant-authored",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "oa_check_blocks_preserved": 8,
+      "substantive_tax_body_preserved": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-property-stamp-duty.md",
+      "prior_published_blob": "57d88515fb4c3938ce8ec7e84fc82d280f02eb02",
+      "main_blob": "81169384c9ce34682c640a1ee1f280ea45f6f14f",
+      "final_candidate_blob": "463778a12d2f931552504a835f252e65bef5399a",
+      "prior_body_sha256": "25cbed90c3bd2c82484620c1c3c210db77d1740cac85c2770a6a80eb66d99c19",
+      "normalized_final_body_sha256": "25cbed90c3bd2c82484620c1c3c210db77d1740cac85c2770a6a80eb66d99c19",
+      "version_before": "0.3",
+      "version_after": "0.4",
+      "last_updated_before": "2026-10-22",
+      "last_updated_main": "2026-10-23",
+      "last_updated_after": "2026-10-23",
+      "platform_fields_from_main": {
+        "authored_by": "Ryan Duguid",
+        "review_status": "pending_review",
+        "trust_label": "Accountant-authored",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "oa_check_blocks_preserved": 3,
+      "substantive_tax_body_preserved": true
+    },
+    {
+      "path": "skills/international/gibraltar/gi-transaction-tax-transition.md",
+      "prior_published_blob": "0c11298b64e0a392663e9662a1a9ba8f8e5cb364",
+      "main_blob": "6a5c29be9884e49c8ba44158e552a6b9cc8e9290",
+      "final_candidate_blob": "c43945e1acf2785959e3201e6cb108e0d5357783",
+      "prior_body_sha256": "4876343d711e2e7e73b71f22128aaacf5cdd2889be3066bb4103f3167102e7d5",
+      "normalized_final_body_sha256": "4876343d711e2e7e73b71f22128aaacf5cdd2889be3066bb4103f3167102e7d5",
+      "version_before": "0.7",
+      "version_after": "0.8",
+      "last_updated_before": "2026-10-22",
+      "last_updated_main": "2026-10-23",
+      "last_updated_after": "2026-10-23",
+      "platform_fields_from_main": {
+        "authored_by": "Ryan Duguid",
+        "review_status": "pending_review",
+        "trust_label": "Accountant-authored",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "oa_check_blocks_preserved": 3,
+      "substantive_tax_body_preserved": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-corporate-tax-substance.md",
+      "prior_published_blob": "9971e9e198ffbed0f6b203ba1506e5a00a385243",
+      "main_blob": "1f275f413e79c265c292df2eeec1654640a40c2d",
+      "final_candidate_blob": "5a329f5c6df68c17ef8d726ff8802b070288864b",
+      "prior_body_sha256": "a4e61a841737758bcff521c569ded488cf078d86897a210807a24a0974f61521",
+      "normalized_final_body_sha256": "a4e61a841737758bcff521c569ded488cf078d86897a210807a24a0974f61521",
+      "version_before": "0.8",
+      "version_after": "0.9",
+      "last_updated_before": "2026-10-22",
+      "last_updated_main": "2026-10-23",
+      "last_updated_after": "2026-10-23",
+      "platform_fields_from_main": {
+        "authored_by": "Ryan Duguid",
+        "review_status": "pending_review",
+        "trust_label": "Accountant-authored",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "oa_check_blocks_preserved": 2,
+      "substantive_tax_body_preserved": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-individual-income-tax.md",
+      "prior_published_blob": "179856b326fa91135c254b47225542e0a07f9124",
+      "main_blob": "b46003b17bbff1c25375f47fcd19365b3bac1fb9",
+      "final_candidate_blob": "f470af5ac23b95ef263b16991852fe3a4be7941b",
+      "prior_body_sha256": "1953dea547a40c6cfb1fc2d6a2b16065b6a9e8af1fabd152676e5074f9c13562",
+      "normalized_final_body_sha256": "1953dea547a40c6cfb1fc2d6a2b16065b6a9e8af1fabd152676e5074f9c13562",
+      "version_before": "0.7",
+      "version_after": "0.8",
+      "last_updated_before": "2026-10-22",
+      "last_updated_main": "2026-10-23",
+      "last_updated_after": "2026-10-23",
+      "platform_fields_from_main": {
+        "authored_by": "Ryan Duguid",
+        "review_status": "pending_review",
+        "trust_label": "Accountant-authored",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "oa_check_blocks_preserved": 5,
+      "substantive_tax_body_preserved": true
+    },
+    {
+      "path": "skills/international/guernsey/gg-payroll-social-insurance.md",
+      "prior_published_blob": "fe949887b64700428112e614ac74e30c3c7666aa",
+      "main_blob": "b8435bebde31a58843492eb1706704f12ecf22fd",
+      "final_candidate_blob": "fa71323c9ab189e361e9f0001cfb9281f24142ee",
+      "prior_body_sha256": "79aee14cbbb0a732b4521979a37bc698963f0a3fa78d3d633cdf7bf2314a6e1e",
+      "normalized_final_body_sha256": "79aee14cbbb0a732b4521979a37bc698963f0a3fa78d3d633cdf7bf2314a6e1e",
+      "version_before": "0.6",
+      "version_after": "0.7",
+      "last_updated_before": "2026-10-22",
+      "last_updated_main": "2026-10-23",
+      "last_updated_after": "2026-10-23",
+      "platform_fields_from_main": {
+        "authored_by": "Ryan Duguid",
+        "review_status": "pending_review",
+        "trust_label": "Accountant-authored",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+      },
+      "oa_check_blocks_preserved": 8,
+      "substantive_tax_body_preserved": true
+    }
+  ]
+}

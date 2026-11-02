@@ -1,0 +1,433 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 61 frá 2. mai 2022 um fyrisiting av skatti, tolli og avgjaldi (Skattafyrisitingarlógin)
+2. mai 2022Nr. 61
+Løgtingslóg um fyrisiting av skatti, tolli og avgjaldi
+(Skattafyrisitingarlógin)
+Kapittul 1 Skattafyrisitingin
+Kapittul 2 Skattaálíkningin
+Kapittul 3 Freistir, ið viðvíkja skattaálíking, tolli, meirvirðisgjaldi o.a.
+Kapittul 4 Bindandi svar
+Kapittul 5 Føroya Kærustovnur
+Kapittul 6 Gildiskoma og skiftisreglur o.a.
+Samsvarandi samtykt Løgtingsins staðfestir og kunnger løgmaður hesa løgtingslóg:
+Kapittul 1
+Skattafyrisitingin
+§ 1. TAKS er fyrisitingarliga skipað undir landsstýrismanninum.
+Stk. 2. TAKS er líkningarvaldið og tekur sær av allari skattaálíkning. Somuleiðis er TAKS tollvaldið og avgjaldsvaldið.
+§ 2. TAKS ger á hvørjum ári eina virkisætlan fyri stovnin, ið verður latin landsstýrismanninum í seinasta lagi í november árið fyri.
+Stk. 2. TAKS ger vegleiðingar viðvíkjandi skattaálíkningini, tollfyrisitingini og avgjaldsfyrisitingini. Vegleiðingarnar eru tøkar alment.
+Kapittul 2
+Skattaálíkningin
+§ 3. Um sjálvuppgávan, ognaruppgerðin o.tíl. eru latin inn til ásetta tíð, skal skattaálíkningin verða gjørd í seinasta lagi 31. oktober árið eftir, at inntøkuárið er úti.
+Stk. 2. TAKS kann vegna kæru ella eftir nærri kanning av skattaálíkningini hjá einstøkum skattaborgarum taka hesa upp aftur eftir, at tíðarfreistin í stk. 1 er farin, og gera neyðugar broytingar í skattaálíkningini.
+§ 4. Hevur TAKS ikki góðtikið sjálvuppgávuna hjá skattgjaldara, sum hann hevur latið inn rættstundis, skal TAKS boða skattgjaldaranum at koma á fund við umboð fyri TAKS, ella geva honum møguleika til skrivliga at veita greiniligar upplýsingar og prógv. Í hesum føri, og eisini tá ið rættstundis sjálvuppgáva ikki er latin inn, skal TAKS skrivliga gera skattgjaldaran kunnugan við broytingina av inntøku hansara, orsøkina til broytingina og vegleiðing um kærumøguleika.
+§ 5. Verður skattaálíkningin vegna kæru ella eftir nærri kanning, sbr. § 3, stk. 2, tikin upp aftur til nærri viðgerðar av TAKS og møguliga broytt, skal verða givið skattgjaldara loyvi til skrivliga ella munnliga at veita greiniligar upplýsingar og prógv. Í hesum føri skal í fráboðanini til skattgjaldara verða givin grundgeving fyri broytingini og kæruvegleiðing.
+Stk. 2. Reglurnar í §§ 4 og 5 eru ikki galdandi í teimum førum, har ein broyting verður gjørd eftir áheitan frá skattgjaldaranum sjálvum, og har hann fær fult viðhald. Skattgjaldarin skal tó altíð hava skrivlig boð um broytingina.
+§ 6. TAKS sendir 2. yrkadag í november kommununum ein lista við skattskyldugu inntøkuni hjá hvørjum einstøkum skattgjaldara í kommununi.
+Stk. 2. Skattalistin, ið umrøddur er í stk. 1, verður dagin eftir móttøku lagdur fram í kommununi til alment eftirlit í 11 dagar á høgligum staði fyri íbúgvarnar, eftir at tað frammanundan er kunngjørt, soleiðis sum vanligt er í kommununi.
+Stk. 3. Skattalistin má ikki almannakunngerast á annan hátt, enn ásett er í stk. 2.
+§ 7. Í seinasta lagi 1. november sendir TAKS kommununum upplýsingar um allar inntøkur og frádráttir frá árinum frammanundan hjá hvørjum einstøkum skattgjaldara í kommununi. Kommunurnar gera sínar viðmerkingar til álíkningina hjá TAKS.
+Stk. 2. Tað áliggur TAKS at kanna viðmerkingarnar, sum kommunurnar gera, og boða kommununum frá úrslitinum.
+Stk. 3. Landsstýrismaðurin kann áseta neyvari reglur um, hvørjar inntøkuupplýsingar og frádráttarupplýsingar skulu latast eftir stk. 1, nýtsluna av hesum, og at partar av hesum upplýsingum kunnu latast í árinum fyri 1. november.
+Kapittul 3
+Freistir, ið viðvíkja skattaálíking, tolli, meirvirðisgjaldi o.a.
+Freistir at gera, broyta ella taka upp aftur skattaálíkningar
+§ 8. TAKS kann ikki gera, broyta ella taka upp aftur skattaálíkningar seinni enn 3 ár eftir, at sjálvuppgáva skal latast inn. Fyri mál fevnd av §§ 37 a, 37 b og 118 a í løgtingslóg um landsskatt og kommunuskatt er talan um 5 ár. Er freistin fyri at lata sjálvuppgávu inn longd, sbrt. § 105 í løgtingslóg um landsskatt og kommunuskatt, verður freistin tó roknað frá tí degi, freistin at lata inn er longd til.
+Stk. 2. Ynskir skattgjaldarin, at skattaálíkningin verður broytt, skal hesin seinast 3 ár eftir, at inntøkuárið er lokið, leggja fram nýggjar upplýsingar, sum kunnu grundgeva fyri broytingini. Fyri mál fevnd av §§ 37 a, 37 b og 118 a í løgtingslóg um landsskatt og kommunuskatt, skulu hesar nýggju upplýsingar verða lagdar fram seinast 5 ár eftir, at inntøkuárið er lokið.
+§ 9. Ásetingin í § 8 er ikki galdandi í niðanfyri nevndu førum:
+1) Um skattaálíkningin er ein avleiðing av, at grundarlagið fyri uppgerðini av tí skattskyldugu inntøkuni er broytt eftir, at inntøkuárið er úti.
+2) Um skattaálíkningin er ein avleiðing av einari skattaálíkning hjá tí skattskylduga fyri eitt annað inntøkuár.
+3) Um skattaálíkningin er ein avleiðing av einari skattaálíkning hjá hjúnafelaga, sum hin skattskyldugi var sambúgvandi við, tá inntøkuárið var úti, sbr. § 4 í løgtingslóg um landsskatt og kommunuskatt, viðvíkjandi tí sama ella øðrum inntøkuári.
+4) Um skattaálíkningin er ein avleiðing av, at higartil fylgd siðvenja er endaliga kolldømd av Føroya Kærustovni ella dómstólunum. Í slíkum føri kann skattaálíkningin takast uppaftur frá og við tí inntøkuári, sum varð roynt í tí fyrsta málinum, sum førdi til kolldømingina.
+5) Um ein útlendskur skattamyndugleiki hevur tikið eina avgerð, sum hevur skattligan týdning fyri skattskylduga. Hetta er tó bert galdandi, um TAKS viðurkennir avgerðina hjá útlendska skattamyndugleikanum.
+Stk. 2. Ásetingin í § 8, stk. 1 er ikki galdandi, um skattaálíkningin er ein avleiðing av, at hin skattskyldugi ella annar hansara vegna við vilja ella av stórum ósketni hevur verið atvold til, at skattamyndugleikin hevur gjørt eina skattaálíkning á einum skeivum ella ófullfíggjaðum grundarlagi.
+Stk. 3. Ein skattaálíkning kann einans gerast eftir stk. 1 og 2, um hon hevur við sær broytingar í álíknaðum skatti upp á kr. 5.000 ella meira.
+Stk. 4. Ein skattaálíkning kann einans gerast eftir stk. 1 og 2, um myndugleikin hevur fráboðað, ella skattgjaldarin hevur sett fram áheitan um uppafturtøku innan 6 mánaðir eftir, at myndugleikin ávikavist skattgjaldarin hevur fingið kunnleika til tey viðurskifti, sum grundgeva fyri fráboðanini ella áheitanina.
+Freistir, ið viðvíkja tolli, meirvirðisgjaldi, lønarhæddaravgjaldi o.a.
+§ 10. TAKS kann ikki gera, broyta ella taka upp aftur ásetan av gjaldi seinni enn 3 ár eftir, at sjálvuppgáva skal latast inn.
+Stk. 2. Gjald sbrt. stk. 1, er tollur, meirvirðisgjald og lønarhæddaravgjald, og avgjøld áløgd eftir løgtingslóg um avgjald á framleiðslu og innflutningi, løgtingslóg um umhvørvisgjald á smyrjiolju og løgtingslóg um serligt avgjald á brenniolju.
+Stk. 3. Ynskir tann, sum hevur skyldu at gjalda, at ásetingin verður broytt, skal hesin seinast 3 ár eftir, at inntøkuárið er lokið, leggja fram nýggjar upplýsingar, sum kunnu grundgeva fyri broytingini. Hjá tí, sum ynskir at fáa avgjald endurgoldið, er freistin 3 ár eftir at kravið av fyrstan tíð kundi verið gjørt galdandi.
+§ 11. Ásetingin í § 10 er ikki galdandi í niðanfyri nevndu førum:
+1) Um broytta ásetingin er ein beinleiðis avleiðing av einum ásettum avgjaldi ella endurgoldnum avgjaldi hjá tí, sum hevur skyldu at gjalda ella hevur rætt til at fáa avgjald endurgoldið.
+2) Um uppgerðin er ein avleiðing av, at higartil fylgd siðvenja er endaliga kolldømd av Føroya Kærustovni ella dómstólunum. Í slíkum føri kann uppgerðin takast uppaftur frá og við tí avgjaldsári, sum varð roynt í tí fyrsta málinum, sum førdi til kolldømingina.
+Stk. 2. Ásetingin í § 10, stk. 1 er ikki galdandi, um uppgerðin er ein avleiðing av, at hin skattskyldugi ella annar hansara vegna við vilja ella av stórum ósketni hevur verið atvold til, at skattamyndugleikin hevur gjørt eina uppgerð á einum skeivum ella ófullfíggjaðum grundarlagi.
+Stk. 3. Ein áseting kann einans gerast eftir stk. 1 og 2, um hon hevur við sær eina broyting í áseting av gjøldum upp á kr. 5.000 ella meira.
+Stk. 4. Ein uppgerð kann einans gerast eftir stk. 1 og 2, um TAKS hevur fráboðað, ella tann, sum hevur skyldu at gjalda ella ynskir at fáa avgjald endurgoldið, hevur sett fram áheitan um uppafturtøku innan 6 mánaðir eftir, at TAKS ávikavist tann, sum hevur skyldu at gjalda ella ynskir at fáa avgjald endurgoldið, hevur fingið kunnleika til tey viðurskifti, sum grundgeva fyri fráboðanini ella áheitanina.
+Kapittul 4
+Bindandi svar
+§ 12. Øll kunnu frá TAKS fáa bindandi svar upp á spurning um, hvørjar avleiðingarnar fyri spyrjaran eru av eini gerð, tá TAKS hevur heimild at taka avgerð í málinum, sbr. tó stk. 3. Spurningurin kann viðvíkja gerðum, sum spyrjarin hevur framt ella ætlar sær at fremja.
+Stk. 2. Øll kunnu frá TAKS fáa bindandi svar upp á spurning um skattligu avleiðingarnar fyri onnur enn spyrjaran av eini gerð, sum spyrjarin ætlar at fremja, tá TAKS hevur heimild at taka avgerð í málinum, sbr. tó stk. 3.
+Stk. 3. Bindandi svar verður ikki latið, um spurningurin viðvíkur avleiðingunum av tolllóggávuni. Bindandi svar verður heldur ikki latið, tá spurningurin viðvíkur loyvi ella undantaksloyvi viðvíkjandi ætlaðari gerð.
+§ 13. Í hesum førum kann bindandi svar um áseting av skatti einans verða givið, um fleiri biðja um svarið:
+1) Tá ið biðið verður um bindandi svar um áseting av skatti av gávu, skulu bæði gávugevari og gávumóttakari biðja um svarið.
+2) Tá ið biðið verður um bindandi svar um áseting av skatti, og viðurskiftini eru fevnd av § 37 a í løgtingslóg um landsskatt og kommunuskatt, ella um viðurskiftini millum høvuðspartaeigara og eitt felag, sum hesin hevur ræði á, skulu allir partar biðja um svarið. Tá ið avgjørt verður, um talan er um høvuðspartaeigara, verður lýsingin í § 13, stk. 3 í løgtingslóg um skatting av kapitalvinningi nýtt.
+§ 14. Samstundis, sum umbøn um bindandi svar verður latin TAKS, skal gjald rindast.
+Stk. 2. Gjaldið verður ásett soleiðis:
+1) Kr. 2.100 fyri umbøn um bindandi svar sbrt. § 12, stk. 1.
+2) Kr. 10.500 fyri umbøn um bindandi svar sbrt. § 12, stk. 2.
+3) Kr. 350 fyri hvønn byrjaðan arbeiðstíma oman fyri 40 tímar, sum ískoyti til gjaldið í nr. 1 og 2.
+Stk. 3. Gjaldið verður endurgoldið, um umbønin verður avvíst.
+§ 15. Ein umbøn um bindandi svar skal vera skrivlig og skal fevna um allar tær upplýsingar, sum eru av týdningi fyri svarið, og sum eru tøkar hjá spyrjaranum. Metir TAKS, at spurningurin ikki er nóg væl lýstur, kann spyrjarin verða biðin um fleiri upplýsingar ella skjalprógv. Eftirlíkar spyrjarin ikki hesari umbøn innan eina rímiliga freist, kann spurningurin verða avvístur, ella svarið avmarkað til tey viðurskifti, sum metast at vera nóg væl lýst.
+Stk. 2. TAKS kann nokta at veita bindandi svar, um spurningurin ikki kann verða svaraður við neyðugari vissu, ella onnur atlit tala ímóti bindandi svari.
+§ 16. Eitt bindandi svar sbrt. hesi løgtingslóg er bindandi fyri TAKS í 5 ár, roknað frá móttøku spyrjarans av svarinum. Svarið er bindandi fyri tey viðurskifti, sum spyrjarin lýsir í spurninginum. Viðvíkur svarið avgjøldum, verða tey 5 árini roknað frá byrjanini av tí avgjaldstíðarskeiði, tá spyrjarin fær svarið. Í svarinum kann tó verða nágreinað, at svarið er bindandi í styttri tíðarskeið. Avmarkingin av bindingartíðarskeiðinum er ikki galdandi, tá bindandi svarið tekur støðu til skattliga virknaðin av seinni umstøðum, sum eru endaliga ásettar í umbønini.
+Stk. 2. Eitt svar er ikki bindandi, um so er, at umstøðurnar, sum eru grundarlag undir svarinum, eru fyri broytingum.
+Stk. 3. Eitt svar, sum viðvíkur tulking av tvískattasáttmála, er ikki bindandi, um útlendskir skattamyndugleikar gera eina øðrvísi meting av spurninginum.
+Stk. 4. Ein avgerð, sum verður tikin sbrt. § 245 í bekendtgørelse af anordning om ikrafttræden for Færøerne af lov om finansiel virksomhed, er bindandi fyri TAKS í sambandi við viðgerðina av spurninginum.
+Kapittul 5
+Føroya Kærustovnur
+§ 17. Føroya Kærustovnur viðger tollkærur, skattakærur og avgjaldskærur og ger úrskurð um kærur um tær avgerðir, TAKS hevur tikið.
+§ 18. Øll tey, sum TAKS hevur sett í skatt, broytt skattaálíkningina hjá, álagt tollgjald og avgjald ella tikið avgerð um bindandi svar eftir §§ 12-16, kunnu kæra avgerðirnar til Føroya Kærustovn.
+Stk. 2. Kæran skal verða móttikin áðrenn 4 vikur eru farnar frá tí, skattgjaldari hevur fingið boð um avgerðina.
+Stk. 3. Er kæra ov seint inn latin, verður hon ikki viðgjørd. Tó kann Føroya Kærustovnur taka kæru til viðgerðar í teimum førum, tá mett verður at fullgóð forføll eru.
+§ 19. Úrskurður hjá Føroya Kærustovni kann av kærara og TAKS skjótast inn fyri Føroya Rætt.
+Stk. 2. Tá úrskurður sbrt. stk. 1 verður skotin inn fyri Føroya Rætt eru TAKS ávikavist skattgjaldarin ella tann avgjaldsskyldugi rætti saksøkti.
+§ 20. Starvsfólk hjá TAKS kunnu ikki taka lut í kæruviðgerð hjá Føroya Kærustovni og kunnu heldur ikki virka sum serkønir ráðgevar hjá Føroya Kærustovni. Sama er galdandi fyri serkønar ráðgevar, ið TAKS hevur nýtt í tí máli, sum er kært.
+Kapittul 6
+Gildiskoma og skiftisreglur o.a.
+§ 21. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd.
+Stk. 2. Samstundis sum løgtingslógin kemur í gildi, fer løgtingslóg nr. 169 frá 30. desember 1997 um Toll- og Skattafyrisiting úr gildi.
+Stk. 3. Kæra, latin kommunalari skattakærunevnd áðrenn gildiskomu løgtingslógarinnar, verður viðgjørd av kommunalu skattakærunevndini eftir higartil galdandi reglum.
+Stk. 4. Tann 1. januar 2025 verða tær kommunalu skattakærunevndirnar tiknar av.
+Stk. 5. Er kæra um skattaálíkningina latin kommunalari skattakærunevnd, innan henda løgtingslóg kemur í gildi, kann kæran verða latin Føroya Kærustovni, sjálvt um skattakærunevndin ikki hevur gjørt sín úrskurð.
+Í Tinganesi, 2. mai 2022
+Bárður á Steig Nielsen (sign.)
+løgmaður
+Lm. nr. 110/2021
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Fíggjarmálaráðið
+Útgávudagur: 02-05-2022
+Tilvísingar
+Avtøkur
+Løgtingsmál
+Løgtingsmál nr: 110/2021
+Kunngerðablaðið
+Kunngerðarblað 2022 A - Løgtingslóg 61 frá 2. mai 2022
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

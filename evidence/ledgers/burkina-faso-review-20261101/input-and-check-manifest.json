@@ -1,0 +1,351 @@
+{
+  "review_date": "2026-11-01",
+  "frozen_head": "dd6be766e414d399098b29ae15c0355c63cba286",
+  "baseline": "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+  "inputs": {
+    "CLAUDE.md": {
+      "sha256": "26bdad0beb0ce9bc183b8e53ea7ca59fd513157765be3f249e3778adc0b6dbe7",
+      "git_blob": "f60ba76f67f5d0be0a694f6da40ea70fb7237cc4"
+    },
+    "docs/skill-template.md": {
+      "sha256": "6098c740bb6113e8f073f66898e352c988c84591c08a94d298fcd2b4e6b66c7b",
+      "git_blob": "430061396017137a82e992f50c95e683a48b1e7a"
+    },
+    "docs/pack-readme-template.md": {
+      "sha256": "1947f13124ae0d5b3d4afbbd777533052f193fa383306272caf7abf431754c6b",
+      "git_blob": "f970068a3c6ad712cf3bf88e267c48a1c53c9acf"
+    },
+    "skills/burkina-faso/README.md": {
+      "sha256": "f5bcbb916fc2a5ee0a67b40a75f351bfd53d9491a7a03f6b02526890878311fa",
+      "git_blob": "cf8c198cd50569d94bad23b303c3a64677ea362c"
+    },
+    "skills/burkina-faso/bf-transfer-pricing.md": {
+      "sha256": "eba3161d6e338c00dc5b9cf44420d43d8da0a067ce556229b027960558dd7005",
+      "git_blob": "2e721391f340860f3f82ee9f01041dc8bb299c21"
+    },
+    "skills/burkina-faso/bf-nonresident-services-withholding.md": {
+      "sha256": "f49b9f7a407886321c2a1d8c7c68f534d42e930713444f143e276f932b10163d",
+      "git_blob": "5d139d302c9161ae8c87f26a6cdba5d5621abc33"
+    },
+    "evidence/ledgers/bf-transfer-pricing.md": {
+      "sha256": "7af612cc5d66800a86528504873ff97d633fd66c536665a42cc6128e43360ab0",
+      "git_blob": "337e4ebd0a2b4a9fd403d01b901a4e41e00846a7"
+    },
+    "evidence/ledgers/bf-nonresident-services-withholding.md": {
+      "sha256": "ed9471e8023f93483b27697b6a631200e3a34883630d394b8d8e6826e970e627",
+      "git_blob": "30bbc40f7d155aae21b18e556f33f6a8c9682116"
+    },
+    "evidence/ledgers/burkina-faso-old-topics.md": {
+      "sha256": "28bc5bfecea29f71a2e100b3406f9d877add9d7a3f5af31b7ae8cd7d3fe7b96c",
+      "git_blob": "e27af8457b09aacdf54c7f62e0afdb627ef2fe67"
+    }
+  },
+  "legacy_preservation": {
+    "skills/burkina-faso/bf-company-formation.md": {
+      "sha256": "92eb6e875f970b1220479332c1ca72e140a82320204c8e2c65844501dd06eb3c",
+      "byte_identical": true
+    },
+    "skills/burkina-faso/bf-corporate-tax.md": {
+      "sha256": "7599380d13178ed8b58a677da7136acc9473c55b4b8984558e5531a6f9f72f6a",
+      "byte_identical": true
+    },
+    "skills/burkina-faso/bf-income-tax.md": {
+      "sha256": "8bf95c085bf000911189622a11c6a0b165211a295f0a1ce21321aa19493a66f5",
+      "byte_identical": true
+    },
+    "skills/burkina-faso/bf-payroll.md": {
+      "sha256": "cb630f75a83fad1b3015b93b94ca84e81395026337f3569dee56c9772981b782",
+      "byte_identical": true
+    },
+    "skills/burkina-faso/bf-social-contributions.md": {
+      "sha256": "493295d81a9b41973bdc912ea794ef49721418559b11c0cce7a6922c73d15ab3",
+      "byte_identical": true
+    },
+    "skills/burkina-faso/bf-tax-optimization.md": {
+      "sha256": "2ac6150522e2c1ef57d60b2000aeb538c20015fe159558df53a43d7a791171de",
+      "byte_identical": true
+    },
+    "skills/burkina-faso/bf-tax-overview.md": {
+      "sha256": "5a752bb11b88759ffacb7a9013a72a61caa9afad26dac58091d24061621a7a1e",
+      "byte_identical": true
+    },
+    "skills/burkina-faso/bf-vat.md": {
+      "sha256": "f3c48fddfbef31b23daab6b26aa0a0f457a9689eb37cbf21d8a8490211e82656",
+      "byte_identical": true
+    }
+  },
+  "sources": {
+    "cgi-2026.pdf": {
+      "sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+      "bytes": 3933091
+    },
+    "cgi-2026.txt": {
+      "sha256": "5ff548291b0cc4c5ebeedea213037f657a9285a7ae1b23cfa1265668e5d79540",
+      "bytes": 2215081
+    },
+    "read-manifest.json": {
+      "sha256": "bb3cb1b8dc0db7e0df3169859575521a7379365af15fbc8f17e71bf3a603c3a3",
+      "bytes": 879
+    },
+    "tp-order-1.png": {
+      "sha256": "e2e628e5e598daf13a84856130d051a4a2c80e5401469b6a33566bf7bb03b826",
+      "bytes": 1544306
+    },
+    "tp-order-2.png": {
+      "sha256": "b77f7d9613563205445cee60ed9369187308486e73d9b37eb07baa012e0c8f6f",
+      "bytes": 1471206
+    },
+    "tp-order-2026.pdf": {
+      "sha256": "564208d953f8c50c8d5ec104b4ee266f9c06d7caa9ffe7a68fd83fa1f3d807d2",
+      "bytes": 1708816
+    },
+    "tp-order-3.png": {
+      "sha256": "ade9423b15524b87ae3c6b5545694fe4afb4ca8aa3ed45b7d67e5182ee1ed87c",
+      "bytes": 1514133
+    },
+    "tp-order-4.png": {
+      "sha256": "ea4f01759315ddbd68850bfbc20b64bfc5b294e0e6b3fb23dcce791459140e64",
+      "bytes": 1491285
+    },
+    "tp-order-5.png": {
+      "sha256": "0bbcb7539604724c75c485b6cb274a325fdb9e354582251ea242f2fadc3c8881",
+      "bytes": 1028218
+    }
+  },
+  "ledger_checks": {
+    "bf-transfer-pricing": [
+      {
+        "row": 1,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 2,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 3,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 4,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 5,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 6,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 7,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 8,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 9,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 10,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 11,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "needs R1 expansion"
+      },
+      {
+        "row": 12,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 13,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "needs R1 expansion"
+      },
+      {
+        "row": 14,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "needs R1 expansion"
+      },
+      {
+        "row": 15,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 16,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 17,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 18,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 19,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 20,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 21,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 22,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 23,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 24,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      }
+    ],
+    "bf-nonresident-services-withholding": [
+      {
+        "row": 1,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 2,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 3,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 4,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 5,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 6,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 7,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 8,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 9,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 10,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 11,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 12,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 13,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 14,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 15,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 16,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      },
+      {
+        "row": 17,
+        "rule_and_quote_match": true,
+        "preparation_completeness": "pass"
+      }
+    ]
+  },
+  "old_topic_spot_checks": "All eight files represented; formation beneficial owners, corporate distributions, income head-office deductions, payroll family reductions, social ceiling, optimisation election, overview retained identity and VAT e-commerce matched original retained files. No rule was removed because all eight source files are byte-identical.",
+  "independent_arithmetic": {
+    "TP_simple": [
+      10000000,
+      12000000,
+      2000000
+    ],
+    "TP_boundary": [
+      0,
+      500000,
+      10000000
+    ],
+    "WHT_travel": [
+      5500000,
+      1100000,
+      3900000,
+      5500000
+    ],
+    "WHT_road_mixed": [
+      1000000,
+      9000000,
+      2000000,
+      8000000
+    ]
+  }
+}

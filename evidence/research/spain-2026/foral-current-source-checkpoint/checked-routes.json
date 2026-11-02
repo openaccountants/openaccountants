@@ -1,0 +1,66 @@
+[
+  {
+    "route": "Six actual current B/A/G law/regulation PDFs",
+    "result": "All fresh HTTP200 full bodies match the previous retained hashes. Charging and complete B/G surcharge DA read, A final DA/regulatory index checked."
+  },
+  {
+    "route": "Álava official public hearing register",
+    "url": "https://irekia.araba.eus/es/participacion-en-actuaciones-del-gobierno-foral/tramite-de-audiencia-e-informacion-publica",
+    "result": "NEW actual linked expediente45/2026 draft26DF45.docx; hearing30July–13August2026. Proposed DA14, article1.Cuarto, complete paragraphs1–4 read. Draft not enacted authority."
+  },
+  {
+    "route": "Álava current corporate normative index",
+    "result": "Latest listed2026 item DF36/2026 of13October; no identified enactment of expediente45/2026. Absence from this inventory is bounded evidence, not proof no later instrument exists."
+  },
+  {
+    "route": "Álava actual consultative-opinion register",
+    "url": "https://irekia.araba.eus/es/-/dictamenes-de-la-comision-consultiva",
+    "result": "Actual2026 list checked; no identified opinion for expediente45/2026.18December2025 opinion corresponds to DF42/2025, not the July2026 draft."
+  },
+  {
+    "route": "Álava approved-regulation landing",
+    "result": "October2026 current landing covers proposed NF, DFNormativos and urgency decrees; not an exhaustive ordinary DF enactment register."
+  },
+  {
+    "route": "Álava actual public consultation form searches",
+    "result": "Read-only POST using real form controls and fresh public state: exact phrase tributación adicional=0;56.7=0;extraordinarios=80 historical displayed hits through2021. Database coverage does not prove absence of unpublished/new rulings."
+  },
+  {
+    "route": "Bizkaia consultation database official link",
+    "url": "https://apps.bizkaia.net/I5IT/I5ITSIndex",
+    "result": "HTTP200 but zero-byte body. Web open likewise blank. Normal-browser inventory attempted once, timed out after31.4seconds/kernel reset. No search/results/ruling claimed, no endpoint guessed."
+  },
+  {
+    "route": "Bizkaia actual public FAQ index",
+    "result": "2918 parsed linked titles; no surcharge-title match for extraordinarios/tributación adicional. Not a complete consultation-body search."
+  },
+  {
+    "route": "Bizkaia current corporate law/instruction index",
+    "result": "Actual full HTML read; current law/regulation plus filing/coefficient instruments and old patrimonial instructions, no identified surcharge computational instruction."
+  },
+  {
+    "route": "OCTE current Zergak link",
+    "result": "Landing label stale70/2025; actual linked PDF is71/1-2026,164pages. Actual contents and consultation section127–131 read; CCEN2026.1 concerns packaging tax, not surcharge. No extraordinary/surcharge phrase match in whole extracted body."
+  },
+  {
+    "route": "OCTE September2025 article/doctrine bulletin",
+    "result": "Actual official bibliography contains secondary ForumFiscal321July2025 Armentia article description and illustrative-case lead; not an official ruling or binding allocation instruction. Not used as primary computational authority."
+  },
+  {
+    "route": "Bizkaia enacted NF2/2025 actual BOB22April2025 pp59–60",
+    "result": "Art16 operative start1January2026–31December2030 confirmed; earlier parliamentary bill had different startyear and is not used."
+  },
+  {
+    "route": "Focused primary-domain searches",
+    "queries": [
+      "Álava modificación de diversos reglamentos tributarios2026",
+      "26DF45",
+      "Álava Decimocuarta Tributación adicional",
+      "Bizkaia tributación adicional proporcional",
+      "Gipuzkoa56.7 cuota íntegra2026",
+      "Bizkaia instrucciones Sociedades2026",
+      "Gipuzkoa aparteko mozkinen kalkulua"
+    ],
+    "result": "No additional enacted allocation or computational ruling retrieved; irrelevant and secondary results not promoted to authority."
+  }
+]

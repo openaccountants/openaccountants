@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-28",
+  "queries": [
+    "site.gibraltarlaws.gov.gi Gazette \"business entertainment\" \"guidelines\"",
+    "site.gibraltar.gov.gi \"CT4\" \"submit\""
+  ],
+  "observed_primary_results": [
+    "Outdated2015Act repeats Gazette-guideline condition,not a Gazette publication identity",
+    "Current ITO corporate FAQ repeats CT4 claim route and expired-period restriction"
+  ],
+  "outcome": "No new Gazette notification identified; no absence/zero-tax inference. CT4 published route established from the current FAQ and linked form; no repeated general search required."
+}

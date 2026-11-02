@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/repository/scripts/validate-guides.py", line 66, in <module>
+    from frontmatter_yaml import FrontmatterError, load_frontmatter
+  File "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/repository/scripts/frontmatter_yaml.py", line 14, in <module>
+    import yaml
+ModuleNotFoundError: No module named 'yaml'

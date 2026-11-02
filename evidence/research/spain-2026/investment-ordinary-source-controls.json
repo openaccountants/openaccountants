@@ -1,0 +1,130 @@
+[
+  {
+    "control": "107 expressly includes later first-use year and four following",
+    "passed": true
+  },
+  {
+    "control": "107 strict more-than10 gate",
+    "passed": true
+  },
+  {
+    "control": "109 five/ten divisor",
+    "passed": true
+  },
+  {
+    "control": "V0835 identity and binding clause",
+    "passed": true
+  },
+  {
+    "control": "V0835 full pre-use correction",
+    "passed": true
+  },
+  {
+    "control": "V0835 domestic implementation bridge99/114",
+    "passed": true
+  },
+  {
+    "control": "V0835 recognises self-supply alternative",
+    "passed": true
+  },
+  {
+    "control": "PGC initial irrecoverable VAT and unchanged later valuation",
+    "passed": true
+  },
+  {
+    "control": "delayed-use actual input inputEjercicio0",
+    "passed": true
+  },
+  {
+    "control": "delayed-use actual input inputPorcP0",
+    "passed": true
+  },
+  {
+    "control": "delayed-use actual input ejercicioB10",
+    "passed": true
+  },
+  {
+    "control": "delayed-use actual input inputJ0",
+    "passed": true
+  },
+  {
+    "control": "delayed-use actual input inputL0",
+    "passed": true
+  },
+  {
+    "control": "delayed-use route actually selected",
+    "passed": true
+  },
+  {
+    "control": "actual delayed-use result420",
+    "passed": true
+  },
+  {
+    "control": "actual delayed-use10point result0 explanation",
+    "passed": true
+  },
+  {
+    "control": "joint462 actual input inputEjercicio0",
+    "passed": true
+  },
+  {
+    "control": "joint462 actual input ejercicioA0",
+    "passed": true
+  },
+  {
+    "control": "joint462 actual input inputPorcP0",
+    "passed": true
+  },
+  {
+    "control": "joint462 actual input inputJ0",
+    "passed": true
+  },
+  {
+    "control": "joint462 actual input inputL0",
+    "passed": true
+  },
+  {
+    "control": "joint462 actual input Afectacion0",
+    "passed": true
+  },
+  {
+    "control": "joint462 actual use and mixed-business routes",
+    "passed": true
+  },
+  {
+    "control": "actual joint result462",
+    "passed": true
+  },
+  {
+    "control": "actual separate10point gate0 explanation",
+    "passed": true
+  },
+  {
+    "control": "finite420 amount and4,200 distinct correction in canonical",
+    "passed": true
+  },
+  {
+    "control": "distinct111\u2013113 global method preserved",
+    "passed": true
+  },
+  {
+    "control": "rawVAT joint formula and separate variable definition",
+    "passed": true
+  },
+  {
+    "control": "later-reference conflict expressly retained",
+    "passed": true
+  },
+  {
+    "control": "exact one-gate reservation in both entrypoints",
+    "passed": true
+  },
+  {
+    "control": "decisive VAT classification reservation retained",
+    "passed": true
+  },
+  {
+    "control": "no blanket VAT completion",
+    "passed": true
+  }
+]

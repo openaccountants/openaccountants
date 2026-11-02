@@ -1,0 +1,338 @@
+[
+  {
+    "code": "M",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOCM-m-2010-90068",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/1d118f951c7b3afbdb9b.body",
+    "raw_sha256": "615adc6d0f26e87272a3ae1e3945488990d8338e2c3a621a1fe04ac2c6d6acfe",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/1d118f951c7b3afbdb9b.reader.txt",
+    "reader_sha256": "980a06aa54c46d484f714f581070c50e59d4b7ec6b618e0cc960ca6ab66a9db6",
+    "verified_operative_LF_scopes": [
+      [
+        785,
+        902
+      ],
+      [
+        1064,
+        2231
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "CAT",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-6951",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/49c5c551b7069485a052.body",
+    "raw_sha256": "a513248b4b5e079ef59a934d44a717f60735fe99f51239168af318e41b7d046b",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/49c5c551b7069485a052.reader.txt",
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "verified_operative_LF_scopes": [
+      [
+        1045,
+        1441
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "AND",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/da9d3c8ddb59d59b6723.body",
+    "raw_sha256": "1fdf82e545e24d9960c45370c3c7bcbfa0105bf7383b701820439f35283dc4ac",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/da9d3c8ddb59d59b6723.reader.txt",
+    "reader_sha256": "2f1f4e129bed985c841486440bf1893a88933f8c64604002938d94075df47ba3",
+    "verified_operative_LF_scopes": [
+      [
+        758,
+        1398
+      ],
+      [
+        2739,
+        2768
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "ARA",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOA-d-2005-90006",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/83c4529a19b0c02b501c.body",
+    "raw_sha256": "c23acbc209a7bafcb4edae1d0e4ecaff6389946ee04aacab8eacda07b3165e5d",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/83c4529a19b0c02b501c.reader.txt",
+    "reader_sha256": "e5253a3be41e18b1c70619b808c50cc897d1426d899437496ce226af6277bf63",
+    "verified_operative_LF_scopes": [
+      [
+        869,
+        1828
+      ],
+      [
+        2190,
+        2206
+      ],
+      [
+        4500,
+        4620
+      ],
+      [
+        5102,
+        5122
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "CLM",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/bf3c16979de357d65930.body",
+    "raw_sha256": "bb4bc02a45976f851d496472816c4c82b6a755de527378276625e850fb03df7c",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/bf3c16979de357d65930.reader.txt",
+    "reader_sha256": "7ce93326592d0f51657fa4170248043ec158c092e807c67ffff563bce248bc0f",
+    "verified_operative_LF_scopes": [
+      [
+        593,
+        1422
+      ],
+      [
+        2213,
+        2228
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "AST",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-945",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e2207af9823503e7a15f.body",
+    "raw_sha256": "397f4b8d0e5a92f8e9a71787f3d4e406292dba30bf7a42d121e2d96c270184e5",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e2207af9823503e7a15f.reader.txt",
+    "reader_sha256": "8f135771c8bacbb6275b0f795a663e4438cf2e34bd9f1d74168d646318735a5d",
+    "verified_operative_LF_scopes": [
+      [
+        808,
+        920
+      ],
+      [
+        1022,
+        2176
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "BAL",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/929011ccb478909465dd.body",
+    "raw_sha256": "b397f9ba9aad1d92efe539be80b8987391f7735a5c4b4942d5715ddf74b3c6d4",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/929011ccb478909465dd.reader.txt",
+    "reader_sha256": "9f4a38022f53ff3e0301d743b0e9fe4c7342db1814a5a8e5c05f96ea40618057",
+    "verified_operative_LF_scopes": [
+      [
+        1030,
+        2423
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "CANB",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/382e28c63074b7a7be8a.body",
+    "raw_sha256": "e69c2214a94b7f64e6db3a2a4c477c2186203683120c16047939953e950a4950",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/382e28c63074b7a7be8a.reader.txt",
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "verified_operative_LF_scopes": [
+      [
+        569,
+        1130
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "CANA",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOC-j-2009-90008",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6b75830dea8d6ba6f38e.body",
+    "raw_sha256": "55560ad9d229bf4804626e3f1f584d1300e72a5f498e558284c336d6af1582e8",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6b75830dea8d6ba6f38e.reader.txt",
+    "reader_sha256": "7891ce8c2eeff404152b4e68f34615fc4d8ae123d0c55d8c974723fd9e25204a",
+    "verified_operative_LF_scopes": [
+      [
+        748,
+        2256
+      ],
+      [
+        3572,
+        3602
+      ],
+      [
+        4138,
+        4214
+      ],
+      [
+        4286,
+        4470
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "CYL",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOCL-h-2013-90254",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/7d01ca97766c16ddd51a.body",
+    "raw_sha256": "188afbf47dd2c3040b0037c2f131ad4f86c82114799b70d6781365eaaf02889d",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/7d01ca97766c16ddd51a.reader.txt",
+    "reader_sha256": "90f670d0b15438f6798f43946aa0c225a1ac8a083aba2c79fcd28776a6ef379b",
+    "verified_operative_LF_scopes": [
+      [
+        643,
+        665
+      ],
+      [
+        715,
+        792
+      ],
+      [
+        848,
+        1422
+      ],
+      [
+        3485,
+        3520
+      ],
+      [
+        3637,
+        3665
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "EXT",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-8159",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/46ce920684cc0a0389de.body",
+    "raw_sha256": "7b46eeca59f7f9e4eba673e5fce605d7033987bcde6aea29277bde5b6c678fce",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/46ce920684cc0a0389de.reader.txt",
+    "reader_sha256": "508e4289f12634c30cae09a615e1951c0ab7827ef549be07513c72824b3743bb",
+    "verified_operative_LF_scopes": [
+      [
+        809,
+        1960
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "RIO",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-13750",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/ed3d3fcc6d3bc18d9928.body",
+    "raw_sha256": "e5833d7475065a13a09f36a2720af4b6da756d8fec2eb5fce7e128387a14f336",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/ed3d3fcc6d3bc18d9928.reader.txt",
+    "reader_sha256": "d9388e74b53928b5bf8bfbb9509c35959952b0ace9b0d3ae9d6480d37366c9a8",
+    "verified_operative_LF_scopes": [
+      [
+        1398,
+        1910
+      ],
+      [
+        3085,
+        3143
+      ],
+      [
+        3743,
+        3798
+      ],
+      [
+        3847,
+        4040
+      ],
+      [
+        4051,
+        4627
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "MUR",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-10542",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/c1bf77a8ea75648083e3.body",
+    "raw_sha256": "d64b8474b4ad439bcb38c4a1f417d5157d37b4aaee064d0f6cf1c852be659b33",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/c1bf77a8ea75648083e3.reader.txt",
+    "reader_sha256": "5d654d3b846cd164eee104bda200f7a35a80cfd0896edbfdb647971be77f641d",
+    "verified_operative_LF_scopes": [
+      [
+        622,
+        1404
+      ],
+      [
+        3622,
+        3695
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "GAL",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-18161",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f7efa25d3edad151dc5f.body",
+    "raw_sha256": "13c30391dff092c41c97b8694e84d84eb6eddd9269eb7e86f39e9c21b6fe4a5d",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f7efa25d3edad151dc5f.reader.txt",
+    "reader_sha256": "67fbb25e769320c02d38db5f36590524568e0e3eb2dc4e468581493bec107ec3",
+    "verified_operative_LF_scopes": [
+      [
+        716,
+        919
+      ],
+      [
+        975,
+        1485
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  },
+  {
+    "code": "VAL",
+    "region": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202",
+    "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f935d8b5d40d402860a8.body",
+    "raw_sha256": "ca9e09d906d1fe3a699c842d4489f33c30d005128133c1e639484a3b2b77bd45",
+    "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f935d8b5d40d402860a8.reader.txt",
+    "reader_sha256": "c7d1cff4dfc9d527f54e945ff62d231ba0cde8f527f7a14996294c2f0ce0c1c0",
+    "verified_operative_LF_scopes": [
+      [
+        716,
+        970
+      ],
+      [
+        1104,
+        1904
+      ],
+      [
+        4084,
+        4110
+      ],
+      [
+        4414,
+        4464
+      ],
+      [
+        4588,
+        4720
+      ]
+    ],
+    "note": "Human actualread reconciliation; supporting date-specific primary and agency scopes are separately in actual-source-read-ledger. LF numbers from reader split on newline; not a claim to read unrelated taxes."
+  }
+]

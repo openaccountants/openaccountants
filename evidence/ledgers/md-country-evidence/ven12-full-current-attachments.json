@@ -1,0 +1,71 @@
+{
+  "status": "Full actual VEN12 form and instructions text-read/rendered/visually read; statutory boundaries and source defects explicit; not independent review or portal certification",
+  "records": [
+    {
+      "article": "VEN12-FULL-CURRENT-FORM-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/mo%20506-508%20ro/an_1_153md.doc",
+      "sha256": "0e1520122e5a46086e83f6693080c6364a5221cd9ba16f85f24e22896ebbcd8a",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T02:50:50.155093+00:00",
+      "format": "Original official DOC retained unchanged; full Word-text/table extraction and local rendering",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/ven12-full-current-form.doc",
+      "binary_sha256": "079f86e24c5a54e905af726bd150369004d417d02a40cca639c70138a725af17",
+      "binary_size_bytes": 263680,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/ven12-full-current-form-render/ven12-full-current-form.pdf",
+      "rendered_pdf_sha256": "5fd482ced81182fdfc8e98c588cd35362b8d206867f2d10c1fb12a41a73c64cd",
+      "rendered_pages": 7,
+      "visually_read_rendered_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=146095&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "31October2026 current Order153/2017; latestdisplayedOMF145/29November2024 effective5December2024. Both exact links reconfirmed in official register this turn.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_limits": "Historical2018splitperiod and S-election2023–2025 clauses do not override current Code. Inactive printed rows remain inactive; annex1.2D even prints20% despite unused instructions. Actual instruction labels expense TPpoint101^1 whereas enacted145 labels100^1; row03047 identity unchanged. Annex9Dcolumn9 printed subtraction omits operand; instruction135 explicitly gives5−8; column10 header gives6−7. Gray1602 not part of current160 formula. Incentive example eligibility/code/operative law not certified by printed illustration. Credit zero/loss allocation, country-code nomenclature, accepted portal rounding/validation and current S-election mechanics not tested.",
+      "conversion_derivative_relative_to_country_workspace": "primary-attachments/ven12-full-current-form.docx",
+      "conversion_derivative_sha256": "c2d75fd7bd6bc49e25780bc5aed518722e0cbbc58603b4cc85436251df48a329",
+      "conversion_note": "Original DOC retained unchanged. Installed LibreOffice converted to DOCX for reading/rendering, exit0 with fontcache warnings. All seven rendered pages visually read; source layout/wording not repaired."
+    },
+    {
+      "article": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2024/mo%20506-508%20ro/an_2_153md.docx",
+      "sha256": "9b45015d7bd9fe81058fe44723e4721ac8d0c04e6fc55c4b872be267f6c1de8c",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T02:50:50.251182+00:00",
+      "format": "Original official DOCX retained unchanged; full Word-text/table extraction and local rendering",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/ven12-full-current-instructions.docx",
+      "binary_sha256": "92fa5b4925cd98267b7078adeabcf332fadd9cd06caa364914863cdce174e63d",
+      "binary_size_bytes": 43561,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/ven12-full-current-instructions-render/ven12-full-current-instructions.pdf",
+      "rendered_pdf_sha256": "04e1bc6e5dad6a712cee2eb46a8c05a017fd683d75d91ae77e56ca6687416f05",
+      "rendered_pages": 12,
+      "visually_read_rendered_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=146095&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "31October2026 current Order153/2017; latestdisplayedOMF145/29November2024 effective5December2024. Both exact links reconfirmed in official register this turn.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_limits": "Historical2018splitperiod and S-election2023–2025 clauses do not override current Code. Inactive printed rows remain inactive; annex1.2D even prints20% despite unused instructions. Actual instruction labels expense TPpoint101^1 whereas enacted145 labels100^1; row03047 identity unchanged. Annex9Dcolumn9 printed subtraction omits operand; instruction135 explicitly gives5−8; column10 header gives6−7. Gray1602 not part of current160 formula. Incentive example eligibility/code/operative law not certified by printed illustration. Credit zero/loss allocation, country-code nomenclature, accepted portal rounding/validation and current S-election mechanics not tested."
+    }
+  ]
+}

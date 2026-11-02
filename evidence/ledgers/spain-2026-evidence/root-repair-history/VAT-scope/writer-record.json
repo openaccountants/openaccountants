@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-28T18:03:44.490143+00:00",
+  "before_sha256": "468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1",
+  "after_sha256": "fc5e40827c1db1e66d28abd42fbb8c6cc80377e1201290736e007836009c1638",
+  "options": {
+    "A": "Update the three stale scope statements in place to match the already supplied canonical methods. Selected.",
+    "B": "Replace the stale scope fragments with a single cross-reference to the final Published route supplied paragraph."
+  },
+  "scope": "Three descriptive scope clauses plus metadata version; no new tax formula/figure. Canonical current entitlement and acquisition-value methods remain labelled, DGT later-reference/calculator conflict remains explicit.",
+  "source_chain": "Current linked es-vat-return supplied methods and final own Published route supplied paragraph; source chain LIVA95/104/106/107/109, DGT/PGC acquisition-value chain already independently reviewed. Root fresh PGCrecoverability paragraph read in autonomous source115. Actual DGT V0835answer freshly acquired/read28Oct; no reliance on search shell."
+}

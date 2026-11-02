@@ -1,0 +1,17 @@
+{
+  "reviewed_on": "2026-10-31",
+  "verdict": "REJECT_CURRENT_NET_METHOD_FOR_ORDINARY_COMPLETION",
+  "A1_closed": false,
+  "open_findings": [
+    "F-A1-01"
+  ],
+  "candidate_guide_sha256": "3727c1fcc8a67afb0c88a1d1842397f7d2d0b4234a812eaa888fa0735d72b3a2",
+  "candidate_ledger_sha256": "6c6db1fbb41598f6eb568d56d6392d3beba293bb25424b28d7f7a80c594d05b9",
+  "files": {
+    "independent-checks.json": "558837d07944cf38006a234527103d26d68dbcf7e4c80fb1266f7ed9fe22b822",
+    "independent-controls.json": "b1197e08f5007617a90388e160edcc05b7c36e951e8be0794242bc70b4d68f62",
+    "report.md": "b0505f0b11023c67e9c326d4be002989ffb4eacd9c020f1bff8a82f8c42efe4a",
+    "source-read-checks.json": "4119dcc0b0c6e56b2bd1a2728ea5c179cd0a53c162f04d65e82d902177c50edc",
+    "verify.py": "ffdc85960aeeae282b0b912d391d5aea73123699500fef5f7fa73003376a660a"
+  }
+}

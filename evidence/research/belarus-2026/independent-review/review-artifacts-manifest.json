@@ -1,0 +1,34 @@
+{
+  "reviewed_commit": "d2ccb587628dfbee6f2e2817cef6ed5d05e5aceb",
+  "read_date": "2026-10-24",
+  "artifacts": [
+    {
+      "path": "work/independent-review/FINAL-REVIEW.md",
+      "sha256": "4d94aa846b97202209df5694743a5beb9108d458ff1f3be9e1ca19610b1a4b05"
+    },
+    {
+      "path": "work/independent-review/candidate-manifest.json",
+      "sha256": "4ada4716f6f65bbebe8a50e6de03badc46a8d58c52bc3b8c7f01d58a1d31932f"
+    },
+    {
+      "path": "work/independent-review/source-receipts-manifest.json",
+      "sha256": "219eccc8845de2116b65cfac22c41d5a6ff03dfed1844a5b493870a58220a6f7"
+    },
+    {
+      "path": "work/independent-review/arithmetic.json",
+      "sha256": "1cbfef30441b84940d6248f3c0b6dab122dbe174b0dec403718eb6af1be60129"
+    },
+    {
+      "path": "work/independent-review/preservation.json",
+      "sha256": "18bf1ec7ba69404df4628a196aaaad45fbb52d54752db7dda8ef8dcbebba060f"
+    },
+    {
+      "path": "work/independent-review/reviewed-assertions.json",
+      "sha256": "803e9151a8100ab1b1db355dd3f7a838ec37db476a57c4e3d9dbdf7d6b58179c"
+    },
+    {
+      "path": "work/independent-review/check_independent.py",
+      "sha256": "f74b22661395f642278f9930b93213ece3d1656fafc69c727d4cfb38a94b3bba"
+    }
+  ]
+}

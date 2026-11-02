@@ -1,0 +1,11 @@
+# Bounded PASS: Spain README domain mapping
+
+Exact reviewed README: 8,220 bytes, SHA-256 5a732c693317ea41b9b265a7ac3bf9960656faf2bffcbb8c41fe7e1565327c4a. No Guide or README edits were made by this independent reviewer.
+
+The actual coverage-report.py read_pack_readme/_domain_map and build_report functions were read and executed. A covered_by value is accepted only if it exactly matches an indexed Guide slug. The prose introduced into covered_by.IT-IND by commit 6d537fd4 was therefore ignored. The repaired es-income-tax value is correct: it matches the actual index and the first README commit f923fe28, preceding 700b7687 and 6d537fd4’s parent. The local origin/main reference has no Spain README at this path; no fictional original-main mapping is claimed.
+
+All 16 metadata/preservation assertions pass: valid YAML without duplicate keys; ES jurisdiction; seven known unique applicable codes; empty not_applicable; all seven covering slugs present in the actual index; six other mappings unchanged; old partial.IT-IND retained verbatim; the displaced positive-income and three-allocation-reservation segment retained verbatim in partial.IT-IND; every other partial value and frontmatter field unchanged; entire README body unchanged; actual regex parser agrees with YAML. The repeated initial ordinary-method sentence from the erroneous covered_by prose is already represented by the preserved old partial.IT-IND text, so it is not duplicated. No unique reservation was lost.
+
+The actual coverage report still has PR/TP present and IT-IND/IT-CORP/VAT/SC/XB missing, complete=false. The code subtracts all partial domains after considering slug coverage, so this repair cannot erase the IT-IND reservation. The report’s 30 ES indexed files include non-tax material/references and two orchestrators; that population differs from the README’s 22 tax Guides and is not another frontmatter defect. No other frontmatter defect was found.
+
+This verdict concerns exact metadata semantics and preservation only. It does not validate the legal truth of the reservation prose, attest a Guide, resolve the pending SC source work or pass the Spain country pack. Actual checks, history pins and surgical diff are retained alongside this report.

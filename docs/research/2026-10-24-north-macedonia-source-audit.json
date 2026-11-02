@@ -1,0 +1,234 @@
+{
+  "read_date": "2026-10-24",
+  "base": "b1f4afab6bc0f5bc1f2d1930e992179bbcae2013",
+  "issue": "https://github.com/openaccountants/openaccountants/issues/413",
+  "ownership": "https://github.com/openaccountants/openaccountants/pull/773",
+  "ownership_head": "6f570b3665f95d0f08e41dca3404a9dbf879146e",
+  "scope": "Five existing computational sources rewritten, TP/XB added, README maps all seven. Three supporting/second-milestone files preserved byte-for-byte. Tier 2 only. Four actual core-gap flags remain.",
+  "primary_source_receipts": [
+    {
+      "name": "cit",
+      "landing": "https://www.ujp.gov.mk/mk/regulativa/opis/295",
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf",
+      "sha256": "d79bd412e086d065ab521bab80cca3d709ce5608a0fed21c2c391ecf2e49455a",
+      "retrieved_utc": "2026-10-24T17:36:39.921847+00:00"
+    },
+    {
+      "name": "pit",
+      "landing": "https://www.ujp.gov.mk/mk/regulativa/opis/425",
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf",
+      "sha256": "307213603e61011bfd39f78ddcb6ac9ef6f535ec5ae789611d392f86d552b034",
+      "retrieved_utc": "2026-10-24T17:36:43.665310+00:00"
+    },
+    {
+      "name": "vat",
+      "landing": "https://www.ujp.gov.mk/mk/regulativa/opis/17",
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf",
+      "sha256": "946c4d21d1b24f46f731bd1c82833741bf7e000ae89a871624feb546e2e152ab",
+      "retrieved_utc": "2026-10-24T17:36:44.866375+00:00"
+    },
+    {
+      "name": "procedure",
+      "landing": "https://www.ujp.gov.mk/mk/regulativa/opis/97",
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf",
+      "sha256": "092845b9fad962f09706caed5d2697175a2022194a1b3797b7e23667d7cc13c9",
+      "retrieved_utc": "2026-10-24T17:36:46.009719+00:00"
+    },
+    {
+      "name": "social",
+      "landing": "https://www.ujp.gov.mk/mk/regulativa/opis/442",
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf",
+      "sha256": "b71840feddfc4865867e209c471f006135eb42095425334edde620caaa4d6fd4",
+      "retrieved_utc": "2026-10-24T17:36:47.156914+00:00"
+    },
+    {
+      "name": "tp",
+      "url": "https://www.ujp.gov.mk/mk/regulativa/opis/346",
+      "sha256": "cb574099ac52a1cc4d530153da867eaf540ef17efdc30ab8a6cdd993c9063ad4",
+      "retrieved_utc": "2026-10-24T17:38:24.522257+00:00"
+    },
+    {
+      "name": "tp",
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/1155/Plavilnik_za_transferni_ceni_59-2019.pdf",
+      "sha256": "914e8a6db854a406e0568ddf197abbe9294e1a95e59fe9c3e68a00644d162b7b",
+      "retrieved_utc": "2026-10-24T17:38:25.024451+00:00"
+    },
+    {
+      "name": "bases",
+      "url": "https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187",
+      "sha256": "b93d29e10f41df6d4af00763376e20960fb7f2f0c8c8253b347c82fb00c1812f",
+      "retrieved_utc": "2026-10-24T17:38:26.591592+00:00"
+    },
+    {
+      "name": "allowance",
+      "url": "https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje",
+      "sha256": "c41e549c3c9a4767add42d72f40b8102781ae4f513e7672ee377776d76f82df4",
+      "retrieved_utc": "2026-10-24T17:38:24.565401+00:00"
+    },
+    {
+      "name": "rates",
+      "url": "https://www.ujp.gov.mk/en/vodic/category/641?print=1",
+      "sha256": "dfcf4418c23531181d92d755d63a86315da033aeeba30db020716fc06f418356",
+      "retrieved_utc": "2026-10-24T17:38:24.476428+00:00"
+    },
+    {
+      "name": "cit-filing",
+      "url": "https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1204",
+      "sha256": "a69c7e992ffc4c23a0a55c6d868de8f5c4e1ecc3af436ac9ed867931c392bdc8",
+      "retrieved_utc": "2026-10-24T17:38:26.603776+00:00"
+    },
+    {
+      "name": "law-index",
+      "url": "https://www.ujp.gov.mk/mk/regulativa/pregled_filter",
+      "sha256": "d31bb6e3a90d9a40e199585fdfad36c34bdb8a5094f6664add8e550a2bf9ac16",
+      "retrieved_utc": "2026-10-24T17:38:26.770694+00:00"
+    },
+    {
+      "name": "depreciation",
+      "url": "https://www.ujp.gov.mk/mk/regulativa/opis/74",
+      "sha256": "cec8a9336ea9b922c871f5c8aa4135f9e8ba2900cf88410f639c7c38a863edaa",
+      "retrieved_utc": "2026-10-24T17:40:01.038709+00:00"
+    },
+    {
+      "name": "depreciation",
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/0157/Uredba_za_amortizacija__277-_219.pdf",
+      "sha256": "8c19133876d0709053a08404a4d514aab4cb06e0745e4b063044b7f7e64a7c3d",
+      "retrieved_utc": "2026-10-24T17:40:01.685796+00:00"
+    },
+    {
+      "name": "dld-db",
+      "url": "https://www.ujp.gov.mk/mk/regulativa/opis/369",
+      "sha256": "4684fd794736e569d6a092154b49266ee48277314c898256fee88c5e0e02daf9",
+      "retrieved_utc": "2026-10-24T17:40:00.979544+00:00"
+    },
+    {
+      "name": "dld-db",
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/1220/____________________________________________________271-19.pdf",
+      "sha256": "ab65cc5cbb35fbe9b78b7b6aa58973955a68053df5b7baff32ddbf8e488b4687",
+      "retrieved_utc": "2026-10-24T17:40:01.406039+00:00"
+    },
+    {
+      "name": "treaty-pit",
+      "url": "https://www.ujp.gov.mk/mk/regulativa/opis/368",
+      "sha256": "227a17388909023c74a5c630f2705df97c0ab305a83975a489d185179d4766b4",
+      "retrieved_utc": "2026-10-24T17:40:00.972087+00:00"
+    },
+    {
+      "name": "treaty-pit",
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/1219/_____________________________________________________________________________271-19.pdf",
+      "sha256": "6ace6aa5f4ad1ad5c6db59787a3ca18c0a3735cbbfac7d7dd7c048b4c3e18129",
+      "retrieved_utc": "2026-10-24T17:40:01.386441+00:00"
+    },
+    {
+      "name": "residence",
+      "url": "https://www.ujp.gov.mk/mk/regulativa/opis/348",
+      "sha256": "c6d6c6cb5de9c85f3d6014e27f34663431aca6dcee0de90c32c132e4e2bf5f9c",
+      "retrieved_utc": "2026-10-24T17:40:00.980134+00:00"
+    },
+    {
+      "name": "residence",
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/1165/_______________________________________________________________________________________________________________89-2019.pdf",
+      "sha256": "f61c49e4cb2d64dddd9edc85a4910bd134fbc94dcb6cf04661437f6747b7524d",
+      "retrieved_utc": "2026-10-24T17:40:01.394085+00:00"
+    },
+    {
+      "name": "contrib-rules",
+      "url": "https://www.ujp.gov.mk/mk/regulativa/opis/114",
+      "sha256": "c3d9abc4d2289d1f2e610d8fb95aae30c13ff95c0f76474719d0514a38956ef0",
+      "retrieved_utc": "2026-10-24T17:40:00.985880+00:00"
+    },
+    {
+      "name": "contrib-rules",
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/0198/Pravilnik_za_nacinot_na_presmetka_i_uplata_na_pridonesite_od_zadolzitelno_socijalno_osiguruvanje_od_09.12.2008_godina.pdf",
+      "sha256": "1d0a8a35943713240673d3377ad339b24d571804be86915c8ef095ee5c8d9936",
+      "retrieved_utc": "2026-10-24T17:40:01.616703+00:00"
+    },
+    {
+      "name": "profit-rules",
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/0990/______________________________________________________________________________________________________________________________________________.pdf",
+      "sha256": "975e0e98c986e69593e5f26887c70c836ff77216b3ccfc734a6a0f5fb8aa11ca",
+      "retrieved_utc": "2026-10-24T17:40:02.369544+00:00"
+    },
+    {
+      "name": "self-brochure",
+      "url": "https://ujp.gov.mk/files/attachment/0000/0730/08-2102-1-Odanocuvanje_na_prihodi_ostvareni_od_vrsenje_na_samostojna_dejnost_09.03.2026.pdf",
+      "sha256": "c41b1365f1ac36235280ce684de97cda1299373dbbe16f018df085ee2e3d6cbb",
+      "retrieved_utc": "2026-10-24T17:40:01.935250+00:00"
+    },
+    {
+      "name": "treaties",
+      "url": "https://www.ujp.gov.mk/mk/regulativa/pregled/tr/md",
+      "sha256": "3e5784d6d720c4ad475648bef59578141461ec6a9c55f5f42ae0a6589aafd24c",
+      "retrieved_utc": "2026-10-24T17:40:01.836783+00:00"
+    },
+    {
+      "name": "july",
+      "url": "https://ujp.gov.mk/en/javnost/soopstenija/pogledni/1266?print=1",
+      "sha256": "1843e9e2190daf7c7caa5d761008a1c8728e740ec09e9b2c23fb09b1e60357d1",
+      "retrieved_utc": "2026-10-24T17:40:01.911261+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/file/pravni_lica/category/643?print=1",
+      "sha256": "4f73db982f88314ed0e47bf26db183e67c7e0b6fe38892ea3581d4e038f33999",
+      "retrieved_utc": "2026-10-24T17:52:53.815334+00:00"
+    },
+    {
+      "name": "january-net-wage",
+      "url": "https://www.stat.mk/en/stat/population-and-living-conditions/labour-market/average-monthly-net-wage-paid-per-employee/average-monthly-net-wage-paid-per-employee-november-2025/",
+      "sha256": "ff6dcbb5dab146944bd56820e7cb393b3410049aac83656a44a762a24a034716",
+      "retrieved_utc": "2026-10-24T17:57:59.944916+00:00",
+      "read_date": "2026-10-24",
+      "publication_date": "2026-01-21",
+      "wage_period": "2025-11",
+      "average_net_wage": 45961
+    }
+  ],
+  "reading_method": "Downloaded actual official PDFs. pdftotext extraction; scanned PIT pages OCR in Macedonian with rendered page inspection for percentages. Statutory articles and read dates cited in each guide. Actual implementing PDFs read. Retrieval is not professional review.",
+  "preliminary_examples": {
+    "guides": 7,
+    "oa_check_blocks": 14,
+    "failures": 0
+  },
+  "preservation": [
+    {
+      "path": "skills/international/north-macedonia/mk-corporate-income-tax.md",
+      "platform_fields_equal": true,
+      "cta_tail_equal": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-income-tax.md",
+      "platform_fields_equal": true,
+      "cta_tail_equal": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-payroll.md",
+      "platform_fields_equal": true,
+      "cta_tail_equal": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-social-contributions.md",
+      "platform_fields_equal": true,
+      "cta_tail_equal": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-vat.md",
+      "platform_fields_equal": true,
+      "cta_tail_equal": true
+    }
+  ],
+  "unresolved": {
+    "IT-IND": "Business-loss carryforward/cross-category relief beyond confirmed negative DLD-DB reporting.",
+    "SC": "First-year professional minimum; ordinary part-time/partial-month bases beyond confirmed work/sickness formula; exact July lump-sum administration commencement/correction cutover.",
+    "PR": "Ordinary part-time/partial-month contribution bases beyond specific mixed work/sickness formula.",
+    "XB": "Standalone migration/deemed-disposal or exit tax and procedure."
+  },
+  "targeted_support_research": "Separate source discovery, not final whole-pack review. Current UJP hours guidance independently fetched/read by writer. Historical 2016 MPIN code 060 and 2009 notice do not resolve current statutory interaction. No obsolete figures imported.",
+  "not_claimed": [
+    "Complete country coverage",
+    "Named professional review",
+    "Platform ingestion or production publication",
+    "Tax exemption inferred from absent text"
+  ],
+  "current_main_recheck": "fa82c25c375f468017c2ba428d4808e948da3069",
+  "main_movement": "Fetched current main; DE naming and ingestion workflow changed, no North Macedonia source changes."
+}

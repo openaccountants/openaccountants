@@ -1,0 +1,18 @@
+$ python3 /Users/michaelcutajar/Documents/ChatGPT/OA/output/gibraltar-finish-2026-10-31/repository/evidence/research/gibraltar-2026/category-2-2026-10-31/verify.py
+PASS: 18 inherited Guides unchanged; seven partial values unchanged; 36 row bindings; 50 exact excerpt/source bindings; four controls; 98-word description; no new full captures in evidence
+
+$ python3 scripts/skill_checks.py skills/gibraltar/gi-category-2-income-tax.md
+skills/gibraltar/gi-category-2-income-tax.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+
+$ python3 scripts/check-examples.py --require skills/gibraltar/gi-category-2-income-tax.md
+checked 1 files, 4 oa-check blocks, 0 failures, 0 missing

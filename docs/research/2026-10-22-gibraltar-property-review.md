@@ -1,0 +1,5 @@
+# Gibraltar property stamp duty, v0.2
+
+Writer source check, 22 October 2026. Official current consolidation downloaded and hashed. Ordinary conveyance rates agree with Schedule 1. Added section 19A individual/Gibraltar residential purchase-history tests, all joint purchasers requirement and certificate; relief bands do not stop at 300000. Section 19B special seller duty distinguished from buyer conveyance duty and limited to named estates/ten-year period. Committee direction not assumed; 19C needs written Ministerial prescription and first underlease assignment. Mortgage rate selected for entire secured sum; partial 100-pound unit rounds up. Two oa-check blocks cover buyer-category comparison and mortgage threshold. Special 400000 x 0.075 = 30000 computed separately from buyer 4500.
+
+No live certificate or ministerial prescription verified, no portal submission performed. Other security categories, full lease/gift/indirect-interest treatment, filing deadlines, penalties and property income tax remain open. No independent review or professional attestation.

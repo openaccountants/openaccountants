@@ -1,0 +1,25 @@
+{
+  "frozen_commit": "9f05e8c9785a0573787887e403e07daf20a41e75",
+  "files": {
+    "skills/dr-congo/cd-income-tax.md": "6380ef9634c33334faf2052a62b78c3e2e48eb40ae3ed4873c573253adf06148",
+    "skills/dr-congo/cd-vat-gst.md": "c33ff5874fab5c404250820721c8693b98ad5326cd4352b32925dcdc778764aa",
+    "skills/dr-congo/cd-tax-overview.md": "b1041387a11e6f7f906d27c0c62ddb1611ab41be55cc2eef563f1e3aa59463f4",
+    "skills/dr-congo/cd-cross-border.md": "56f4aa2e49baef36617c51a8ed749d663a76ba1a68b9e5468b94d4afd75ac805",
+    "skills/dr-congo/README.md": "1b701b6f5b315f31a8b9fe1705522f41cfd5dfb37a6fb1a82b7985e56b27ac12",
+    "skills/dr-congo/cd-corporate-income-tax.md": "c167b192e579a985cd92190883ad94c4b48117a71d66182ed355f45c3860789b",
+    "skills/dr-congo/cd-payroll-social.md": "b2c8821ec921db890a2de6878aadc888a43ee874ade2e6cdebe3fd85e24d0909",
+    "skills/dr-congo/cd-transfer-pricing.md": "eaf229a8e5b8d73421245a15842c4b38b5ba9459d91980def7ea5154eccf144e",
+    "skills/dr-congo/cd-company-formation.md": "1a6382fcd656483dca0394761ad326d236bbd8bbc5477ecfdadf7d166d737a2a",
+    "evidence/ledgers/dr-congo-old-topics.md": "7ee17f03578d38cdc6214bab2c953fa83d203a09e51a1a5990d490e91a894de7",
+    "evidence/ledgers/cd-income-tax.md": "129b5b9a23480f61c52f3bf963f2fd012248a7ee85da3c3f77c9a1d3d72bd0c2",
+    "evidence/ledgers/cd-cross-border.md": "316036fe631be133b6406a2dd2694a8814d3aefa5ce30ef22bb8bc9b22a2f006",
+    "evidence/ledgers/cd-corporate-income-tax.md": "19dfb07355f65e3252d2ec49abdb8b39db04e9f3a899d5e442687981d8656566",
+    "evidence/ledgers/dr-congo-corporate-old-topics.md": "d16f7de9af7753407effe76d6e3f56d3c7582a351f74fc17f16ca2de8291e45f",
+    "evidence/ledgers/cd-transfer-pricing.md": "cba6f33709282bde196fbb623371aabf6d9fb4447d9b26b7bcddd90dd9c2f4b0",
+    "evidence/ledgers/dr-congo-income-old-topics.md": "5900aac01c305472c988861731e735709978a4b5f7e66e290a2e66c5d693e1fd",
+    "evidence/ledgers/dr-congo-corporate-writer-checks-20261101.json": "656e228096f15bab751c6755c64b45e458d8e3f2e5f9ad4fc22c08366264ecc6",
+    "evidence/ledgers/dr-congo-income-expansion-20261101.json": "dbeffb50b719d28c573dadc59d09ae65fde98d33e9f0d08dc17f306917d149d1",
+    "evidence/ledgers/dr-congo-corporate-currentness-20261101.json": "df5ca0c11d7a795daae08fbc8a03fea929a82a5d3008450b128efaf17663d5b0",
+    "evidence/ledgers/dr-congo-corporate-expansion-20261101.json": "3f10c1e21176dd0e7fd2fade6e69ba41da739bde533be96013bda251de8c06f2"
+  }
+}

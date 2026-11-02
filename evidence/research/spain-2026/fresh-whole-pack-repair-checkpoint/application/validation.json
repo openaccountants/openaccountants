@@ -1,0 +1,81 @@
+{
+  "as_of": "2026-10-28T03:02:56.525378+00:00",
+  "checks": [
+    {
+      "name": "country-examples",
+      "exit_code": 0,
+      "output_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "phase": "before one-space-only correction; actual completed command exit0 retained in tool execution and text output"
+    },
+    {
+      "name": "strict-local-sync",
+      "exit_code": 0,
+      "output_sha256": "62b7ad5e4759a64b1a93bd3cf70e8225226334cb573505d868349175a38c6a52",
+      "phase": "before one-space-only correction; actual completed command exit0 retained in tool execution and text output"
+    },
+    {
+      "name": "full-canonical-schema",
+      "exit_code": 0,
+      "output_sha256": "ea64894e5fe8c89c691aef3600e3ec3e5c8c1a220895b0fb8be4a6319dd5480c",
+      "phase": "before one-space-only correction; actual completed command exit0 retained in tool execution and text output"
+    },
+    {
+      "name": "full-coverage-report",
+      "exit_code": 0,
+      "output_sha256": "51c8980f2d9b582aefa92ac4ae15b9ec239ed1e17589d5980120c08fad9d7f89",
+      "phase": "before one-space-only correction; actual completed command exit0 retained in tool execution and text output"
+    },
+    {
+      "name": "branch-audit",
+      "exit_code": 0,
+      "output_sha256": "d7d74508aecf7e91852accd239a769fecac74876d0089106616e9dc71c6986e9",
+      "phase": "before one-space-only correction; actual completed command exit0 retained in tool execution and text output"
+    },
+    {
+      "name": "worktree-whitespace",
+      "exit_code": 2,
+      "output_sha256": "20ed05e03f36e684c2a3535a879585cc78c43aae3102bd7a0c0dacfd3c26878d",
+      "phase": "initial run, one trailing space identified and repaired"
+    },
+    {
+      "name": "final-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "phase": "final format-only candidate"
+    },
+    {
+      "name": "final-strict-local-sync",
+      "command": [
+        "/Library/Developer/CommandLineTools/usr/bin/python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "HEAD",
+        "--worktree",
+        "--mode",
+        "sync",
+        "--strict-metadata",
+        "--provenance",
+        "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-reviewed-root-application/local-provenance.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "62b7ad5e4759a64b1a93bd3cf70e8225226334cb573505d868349175a38c6a52",
+      "phase": "final format-only candidate"
+    }
+  ],
+  "full_schema_existing_warning_groups": [
+    "794 missingSources",
+    "5 stalefigures",
+    "5 agnosticjurisdiction"
+  ],
+  "all29_exact_hashes_match_after_checks": true,
+  "modified_country_files": 13,
+  "all_other16_country_files_unchanged": true,
+  "country_ready": false,
+  "pushed": false,
+  "note": "Full repository checks passed before the one-byte whitespace correction. Independent format-only review preserves all legal/calculation tokens. Initial whitespace failure is retained; final whitespace and strict sync pass."
+}

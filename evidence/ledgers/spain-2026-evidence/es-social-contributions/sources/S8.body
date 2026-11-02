@@ -1,0 +1,2843 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<meta name="description" content="HOME. Apartados y Secciones destacables del portal web.">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/vendor/jquery.min.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/jquery-1.12.4.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/jquery-ui.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/cookies.js"></script>
+
+
+
+
+
+
+
+
+
+<script>
+	var cargarCookiesPOIN = comportamientoAvisoCookiesPOIN(leerCookiePoin("Poin_Cookies"));
+	var dataLayer = [{"content":{"site_name":"portal","page_type":"informacion","page_name":"Herramientas Web","language":"es","site_section":"herramientas_web"}}];
+</script>
+
+<!-- Google Tag Manager head-->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T6FNSSW');
+</script>
+<!-- End Google Tag Manager -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- Script insuit -->
+	<script async type="text/javascript" src="https://paas-segsocial.insuit.net/i4tservice/insuit-app.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="icon" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/favicon.ico">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<title>Seguridad Social: Herramientas Web</title>
+
+
+
+<!-- Generics styles -->
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/typicons.min.css" type="text/css">
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/font-awesome.min.css" type="text/css">
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/slick.css" type="text/css">
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/slick-theme.css" type="text/css">
+<!-- Custom styles for this example -->
+
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!FN1rKIfT9stuNPuJnkdXlg/sp/mashup:ra:collection?soffset=0&amp;eoffset=6&amp;themeID=ZJ_OAM2H441L0LM10AN11KOFO0044&amp;locale=es&amp;mime-type=text%2Fcss&amp;lm=1781239586000&amp;entry=wp_toolbar_common__0.0%3Ahead_css&amp;entry=wp_theme_portal_edit_85__0.0%3Ahead_css&amp;entry=wp_theme_portal_85__0.0%3Ahead_css&amp;entry=wp_simple_contextmenu_css__0.0%3Ahead_css&amp;entry=wp_status_bar__0.0%3Ahead_css&amp;entry=wp_analytics_aggregator__0.0%3Ahead_css" type="text/css"/><script type="text/javascript">(function(){if (typeof(wpModules) == 'undefined') wpModules = {}; if (typeof(wpModules.state) == 'undefined') wpModules.state = {}; if (typeof(wpModules.state.page) == 'undefined') wpModules.state.page = {};wpModules.state.page._initial=[{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"selection","value":["Z6_21I4H401M8GAC0A7LQ2QT710E2"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"labelMappings","value":["Z6_21I4H401M00C50AR9GLSVS1083","Z6_21I4H401M8GAC0A7LQ2QT710E2","Z6_000000000000000000000000A0","Z6_21I4H401M8GAC0A7LQ2QT710E2"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"path-info","value":["9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24","44b5f09d-6c25-4dcd-8210-c21700c67096"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"expansions","value":["Z6_000000000000000000000000A0","Z6_21I4H401M00C50AR9GLSVS1083"]},{"nsuri":"http://www.ibm.com/xmlns/prod/websphere/portal/publicparams","name":"locale","value":["es"]}];wpModules.state.page.selectionPath=['Z6_000000000000000000000000A0','Z6_21I4H401M00C50AR9GLSVS1083','Z6_21I4H401M8GAC0A7LQ2QT710E2'];wpModules.state.page.supportsEditMode=true;wpModules.state.page.supportsToolbar=true;wpModules.state.page.path='/wps/portal/wss';wpModules.state.page.protectedPath='/wps/myportal/wss';wpModules.state.page.publicPath='/wps/portal/wss';})();</script><script type="text/javascript" src="/wps/contenthandler/wss/!ut/p/digest!FN1rKIfT9stuNPuJnkdXlg/mashup/ra:collection?themeID=ZJ_OAM2H441L0LM10AN11KOFO0044&amp;locale=es&amp;mime-type=text%2Fjavascript&amp;lm=1781239586000&amp;entry=wp_client_main__0.0%3Ahead_js&amp;entry=wp_client_ext__0.0%3Ahead_js&amp;entry=wp_client_logging__0.0%3Ahead_js&amp;entry=wp_client_tracing__0.0%3Ahead_js&amp;entry=wp_modules__0.0%3Ahead_js&amp;entry=wp_photon_dom__0.0%3Ahead_js&amp;entry=wp_toolbar_common__0.0%3Ahead_js&amp;entry=wp_state_page__0.0%3Ahead_js&amp;entry=wp_theme_portal_85__0.0%3Ahead_js&amp;entry=wp_theme_utils__0.0%3Ahead_js&amp;entry=wp_toolbar_viewframe_validator__0.0%3Ahead_js&amp;entry=chatbot_contribution__1.0.0%3Ahead_js&amp;entry=wp_analytics_aggregator__0.0%3Ahead_js"></script><link title="assigned" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/styles.css" rel="stylesheet" type="text/css" /><link id="x3BXD1P:hO6" rel="alternate" href="https://www.seg-social.es/wps/portal/wss/internet/HerramientasWeb/9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24/44b5f09d-6c25-4dcd-8210-c21700c67096/!ut/p/z1/jZDLbsIwEEW_pR9gzXiY2M7SihAPJQsaKKk3yIljCIKAKOqiX0_EDqmUzu5K50r3DDiowPX-u9v6a3fq_WHIn05tSM54yigLM7EZWp0vaLHUEscE60cAMUvQvqeTvPwoJZoRuP_08clZfNWfvwIGA7oUWbEFd_bXnej6eIIqDRQDRyl8jVEweSVMkCio1VyPtGlbYqiY6yRiGoRqKBEcmiAMDVRDUiM2SmOqBgP3uOGXH9yBPyTL9gvOx1X1k09xz_btBmW75JM!/"><script type="text/javascript">(function() {
+	var element = document.getElementById("x3BXD1P:hO6");
+	if (element) {
+		wpModules.theme.WindowUtils.baseURL.resolve(element.href);
+	}
+}());</script>
+<link rel="stylesheet" href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/poin/styles__POIN--grafito.css" type="text/css">
+
+
+<link id="com.ibm.lotus.NavStateUrl" rel="alternate" href="/wps/portal/wss/internet/HerramientasWeb/9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24/44b5f09d-6c25-4dcd-8210-c21700c67096/!ut/p/z1/jZDLbsIwEEW_pR9gzXiY2M7SihAPJQsaKKk3yIljCIKAKOqiX0_EDqmUzu5K50r3DDiowPX-u9v6a3fq_WHIn05tSM54yigLM7EZWp0vaLHUEscE60cAMUvQvqeTvPwoJZoRuP_08clZfNWfvwIGA7oUWbEFd_bXnej6eIIqDRQDRyl8jVEweSVMkCio1VyPtGlbYqiY6yRiGoRqKBEcmiAMDVRDUiM2SmOqBgP3uOGXH9yBPyTL9gvOx1X1k09xz_btBmW75JM!/dz/d5/L2dJQSEvUUt3QS80TmxFL1o2XzIxSTRINDAxTThHQUMwQTdMUTJRVDcxMEUy/" />
+
+
+<link href="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+<link rel="Sitemap" type="application/rss+xml" title="Seguridad Social RSS" href="http://www.seg-social.es/sitemap.xml" />
+<link rel="Sitemap" type="application/rss+xml" title="Seguridad Social RSS" href="https://www.seg-social.es/wps/wcm/connect/wss/poin_contenidos/internet/1139/?srv=cmpnt&source=library&cmpntid=601fa53b-f1d2-4180-a5e7-fe0b130e0296&WCM_Page.ResetAll=TRUE&CACHE=NONE&CONTENTCACHE=NONE&CONNECTORCACHE=NONE" />
+<link rel="Sitemap" type="application/rss+xml" title="Seguridad Social RSS" href="https://www.seg-social.es/wps/wcm/connect/wss/poin_contenidos/internet/39715/5300/7855/?srv=cmpnt&source=library&cmpntid=601fa53b-f1d2-4180-a5e7-fe0b130e0296&WCM_Page.ResetAll=TRUE&CACHE=NONE&CONTENTCACHE=NONE&CONNECTORCACHE=NONE" /> 
+<link rel="Sitemap" type="application/rss+xml" title="Seguridad Social RSS" href="https://www.seg-social.es/wps/wcm/connect/wss/poin_contenidos/internet/39715/5300/3827/?srv=cmpnt&source=library&cmpntid=601fa53b-f1d2-4180-a5e7-fe0b130e0296&WCM_Page.ResetAll=TRUE&CACHE=NONE&CONTENTCACHE=NONE&CONNECTORCACHE=NONE" /> 
+<link rel="Sitemap" type="application/rss+xml" title="Seguridad Social RSS" href="https://www.seg-social.es/wps/wcm/connect/wss/poin_contenidos/internet/34975/?srv=cmpnt&source=library&cmpntid=601fa53b-f1d2-4180-a5e7-fe0b130e0296&WCM_Page.ResetAll=TRUE&CACHE=NONE&CONTENTCACHE=NONE&CONNECTORCACHE=NONE" />
+
+<!-- rendering is delegated to the specified href for each locale --><!--START LOCALE LINKS-->
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch","rua.ceh":"false","rua.ueh":"false","rua.ieh.st":"0"}]);</script>
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="F7DFG-EGEHD-DSPWP-HHUW6-WXF3W",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"F7DFG-EGEHD-DSPWP-HHUW6-WXF3W";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="2vq5x23acbmjm2xbhusq-f-4a4384943-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1174360","ak.ai":parseInt("702459",10),"ak.ol":"0","ak.cr":19,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"241b43cd","ak.r":46318,"ak.a2":n,"ak.m":"dsca","ak.n":"essl","ak.cport":54471,"ak.gh":"96.16.87.22","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1793146149","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==OAGyvgrAZ8nDxjHrRYLThJmBEI74r3J2Rc0sVw3R0jDy87t8H9Av3s7TfDwgX8BmUJhvwLiGpdCOj50YhNvSxwB6UrlSVBLTZMAgA+qfT3MWYQr4ZgkEdkkRoBy0RUQrbqHGAInP3BiMs6mslQo5cZh4GcaK9Ck4wK4s8KHCJnxcvyohi73UwbpF21eReBVNW576N6KIzwUPhUWpCRDa5omabjRGduYfONsO38X5HDzxiO/MgsidSBF7TkB1RXGEy/dwv5Tbp3aA+ziDTlz8vyZptGJNYFNLf9G56A6sXmb+t/ZhUsDNlpx33a7WiU5uRTKaADpCQkXWIho9lBZz7UFDzbY7nh6Pijz2T4PbVzPpKnf//8Jrh0uQhIwqGEsanpErFr1KQii6beStwMUrWmVtBZzZBEj3bWblAHsuQOc=","ak.pv":"46","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+	
+ <body class="lotusui30dojo nav-by-keyboard locale_es">
+ 	
+
+
+
+
+
+
+<script>
+pintarIframeGAPOIN('GTM-T6FNSSW');
+</script><div id="segsocial">
+		<header class="row-header" id="top">
+			<!-- site toolbar -->
+			<!-- renders the top navigation -->		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+ 
+	
+        
+    
+    
+	
+	
+	
+	
+	    
+         
+    
+
+
+
+  
+	<script> 
+		    window.addEventListener("load",  
+		            $("body").addClass("poin")
+		    ); 
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="cookieContainer" class="hide">
+	
+
+
+<SECTION class="row-banner" >
+<div class="component-container wpthemePrimaryContainer ibmDndColumn" >
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+<div class="row">
+<div id="cookies" class="cookies">		
+<div class="cookies_inner">
+<div class="cookies_text poin-header__content">
+<p class="h4 title poin-header__title">Aviso Cookies</p>
+<p class="text-justify">Este sitio web utiliza cookies para que usted tenga una mejor experiencia de usuario. Las cookies no se utilizan para recoger información de carácter personal. Para más información consulte nuestra&nbsp;<a title="Política de Privacidad y Cookies" href="/wps/portal/wss/internet/PoliticaCookies" data-cke-saved-href="/wps/portal/wss/internet/PoliticaCookies">política de cookies</a>.</p>
+
+<button onclick="AceptarCookies('Ver_2307191408');" class="boton boton-default" tabindex="0">Aceptar todas</button>
+
+<button onclick="RechazarCookies('Ver_2307191408');" type="button" class="boton boton-default" tabindex="0"> Rechazar todas</button>
+
+<button onclick="CerrarCookies();" type="button" class="boton boton-default cookies_close cookies_close--graylight" tabindex="0">
+  <img alt="Cerrar" src="/POINThemeStatic/themes/Portal8.5/css/img/blank.gif">
+</button>
+              
+
+
+                                                                       </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</SECTION>
+</div>
+<script>
+$(document).ready(function(){
+	var wrap =$("#cookies");
+	var heightBarra=Math.round($(".wpToolbarActionBar").outerHeight());
+	$(".cookies").height(wrap.outerHeight());
+	$(window).scroll(function(event) {
+		if ($(this).scrollTop() > heightBarra) {
+			wrap.addClass("fix-cookies");
+		} else{	
+			wrap.removeClass("fix-cookies");
+		} 
+	});
+});
+		
+var valorCookie=leerCookiePoin("Poin_Cookies");
+				
+if(showCookiePoin(valorCookie,'Ver_2307191408')){
+	$("#cookieContainer").removeClass("hide");
+}		
+
+
+				
+</script>
+
+
+<script>
+	var paginaActualEstadistica = 'com.ss.internet.herramientasWeb';
+</script>
+
+<script src="/POINComponentesJSP/js/cookies.js"></script>
+
+
+	<script >
+		setCookieValueCategoria('');
+		setCookieValueCategoriaN2('');
+		setCookieValueCategoriaN3('');
+	</script>
+
+
+<div class="row-container">
+	<div class="row pl0">
+		<div class="header">
+		    <div class="sr-only">Portal de la Seguridad social</div>
+			<div class="hidden-lg hidden-md hidden-sm main-menu-mobile">
+				<div class="navbar-header">
+					 <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+						<i title="Navegación Móvil" class="fa fa-bars fa-lg" aria-hidden="true"></i>
+					 </button>	
+					 <div class="logo h1">
+						
+							<a title="Ir al Inicio de la página de la Seguridad Social" class="homeICO" href="/wps/portal/wss/internet/Inicio">
+								<img class="logSS" alt="Seguridad Social" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/logo.png">
+							</a>
+						
+					</div>
+					<button class="navbar-toggle pull-right mr0" type="button" data-toggle="collapse" data-target=".search-box-collapse"  onclick="foco();">
+						<i title="Navegación Móvil" class="fa fa-search fa-lg" aria-hidden="true"></i>
+					</button>		
+				</div>
+				<div class="col-xs-12 search-box search-box-collapse collapse" aria-expanded="false" aria-label="buscador móvil" role="search">
+				
+					<form id="search-mm" name="search-mm"  action="/wps/portal/wss/internet/BusquedaES" method="post" class="on">
+						<input type="text" class="query" name="search_query" id="query-mm" onclick="getKeyExternoMobile(event)" maxlength="160" aria-label="Criterio de búsqueda" title="Busqueda" />
+						
+						<input type="submit" class="ico-lens" title="Criterio de búsqueda" onclick="setCookieIcon('query-mm');" value="Buscar" tabindex="-1"/>
+					</form>
+				
+				</div>
+				<div class="navbar-collapse collapse" aria-expanded="false" role="navigation">
+					<ul class="nav navbar-nav first-menu">
+						
+							
+							
+								<li class="first">
+							
+						
+						
+							<a class="homeICO" href="/wps/portal/wss/internet/Inicio" title="Ir al Inicio de la página de la Seguridad Social">
+							<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt=""/> Inicio</a>
+						
+						</li>
+						
+							
+							
+								<li>
+							
+						
+							
+								<a class="conocenosICO" href="/wps/portal/wss/internet/Conocenos" title="Ir a la sección Conócenos">
+										<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="" />Conócenos
+								</a>
+							
+						</li>
+						
+								
+							
+								<li>
+							
+						
+							
+								<a  class="trabajadoresICO" href="/wps/portal/wss/internet/Trabajadores" title="Ir a la sección Trabajadores">
+								<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="" />Trabajadores</a>
+							
+						</li>		
+						
+							
+							
+								<li>
+							
+						
+							
+								<a class="pensionistasICO" href="/wps/portal/wss/internet/Pensionistas" title="Ir a la sección Pensionistas">
+								<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="" />Pensionistas</a>
+							
+						</li>
+						
+							
+							
+								<li>
+							
+						
+							
+								<a class="empresariosICO" href="/wps/portal/wss/internet/Empresarios" title="Ir a la sección Empresarios">
+								<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="" />Empresarios</a>
+							
+						</li>
+						
+							
+							
+								<li>
+							
+						
+							
+								<a class="clasespasivasICO" href="/wps/portal/wss/internet/clasespasivas" title="Ir a la sección Clases Pasivas">
+								<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="" />Clases Pasivas</a>
+							
+						</li>
+					    <li>
+							
+								<a href="/wps/portal/wss/internet/SugerenciasQuejas" title="Ir a&nbsp;página de Sugerencias y quejas de la Seguridad Social">Sugerencias y quejas</a>
+							
+						</li>
+						
+						<li>
+							
+								<a  href="/wps/portal/wss/internet/FAQ" title="Ir aBúzon de Consultas de la Seguridad Social">Consultas</a>
+							
+						</li>
+
+						<li class="last lang-selector lang-selector-dropdown"> 
+							<ul class="idiomas">
+								<li class="dropdown open">
+								<a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="true">Idiomas
+									<i title="Toggle dropdown menu" class="fa fa-caret-down" aria-hidden="true"></i> 
+									<span class="sr-only">Toggle dropdown menu</span>
+									<span class="toggle drop down"></span>
+								</a>
+								<ul class="dropdown-menu pull-right" itemscope itemtype="http://schema.org/ServiceChannel">
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=es' lang="es" hreflang="es"><span itemprop="name">Castellano</span></a></li>
+									<li class="divider"></li>
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=ca' lang="ca" hreflang="ca"><span itemprop="name">Català</span></a></li>
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=gl' lang="gl" hreflang="gl"><span itemprop="name">Galego</span></a></li>
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=eu' lang="eu" hreflang="eu"><span itemprop="name">Euskara</span></a></li>
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=va' lang="ca-valencia" hreflang="ca-valencia"><span itemprop="name">Valencià</span></a></li>
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=en' lang="en" hreflang="en"><span itemprop="name">English</span></a></li>
+									<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=fr' lang="fr" hreflang="fr"><span itemprop="name">Français</span></a></li>
+								</ul>
+								</li>
+							</ul>                                                                                                                         
+						</li>
+						
+						<li class="clear">
+						    
+		                    
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+        
+    
+    
+    
+    
+    
+    
+              
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+  
+                                                                                   
+
+
+
+
+<a class="logo" href="https://www.inclusion.gob.es/" target="_blank" rel="noopener noreferrer" title="Escudo de España junto al logo del Ministerio de Inclusión, Seguridad Social y Migraciones con enlace a su página web">
+	<img class="logSS" src="/wps/wcm/connect/wss/0279b2cf-fbf2-4326-89a5-327dfd4aa5d2/logo_institucional.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_2G50H38209D640QTQ57OVB2000-0279b2cf-fbf2-4326-89a5-327dfd4aa5d2-pxAPh9j" alt="Escudo de España junto al logo del Ministerio de Inclusión, Seguridad Social y Migraciones con enlace a su página web">
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+		                    
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- MAIN -->
+			<div class="col-sm-6 col-md-6 col-lg-6 only-lrg logo-u23 pr0">
+				<div class="logo h1">
+
+				    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+        
+    
+    
+    
+    
+    
+    
+              
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+  
+                                                                                   
+
+
+
+
+<a href="https://www.inclusion.gob.es/" target="_blank" rel="noopener noreferrer" title="Escudo de España junto al logo del Ministerio de Inclusión, Seguridad Social y Migraciones con enlace a su página web">
+	<img class="only-lrg" src="/wps/wcm/connect/wss/0279b2cf-fbf2-4326-89a5-327dfd4aa5d2/logo_institucional.svg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_2G50H38209D640QTQ57OVB2000-0279b2cf-fbf2-4326-89a5-327dfd4aa5d2-pxAPh9j" alt="Escudo de España junto al logo del Ministerio de Inclusión, Seguridad Social y Migraciones con enlace a su página web">
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+                    
+                                    
+
+					
+						<a  href="/wps/portal/wss/internet/Inicio"  title="Ir al Inicio de la página de la Seguridad Social">
+						<!-- <span>Internet de la Seguridad Social</span> -->
+						<img class="logInternet" alt="Seguridad Social" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/logo.png"/>
+					</a>
+					
+		
+				</div>
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6 only-lrg alpha omega pull-right">
+				<a href="#content" class="handy-link">Ir a&nbsp;contenido</a>
+				<a href="#search" class="mobile-search only-sml" title="Desplegar campo de búsqueda.">Desplegar campo de búsqueda</a>
+				
+				<div class="top-menu">
+					<!-- Fixed navbar -->
+					<nav class="" aria-label='Enlaces del menú superior' >
+						<ul class="clean first-menu">
+							<li class="first">
+								
+									<a href="/wps/portal/wss/internet/SugerenciasQuejas" title="Ir a&nbsp;página de Sugerencias y quejas de la Seguridad Social">Sugerencias y quejas</a>
+								
+							</li>
+							
+							<li>
+								
+									<a href="/wps/portal/wss/internet/FAQ" title="Ir a&nbsp;Búzon de Consultas de la Seguridad Social">Consultas</a>
+									
+							</li>
+								<li>
+								    <div class="search-box">
+										<button class="top-search" type="button" data-toggle="collapse" data-target=".top-search-collapse" onclick="field()" id="top-search-id" aria-controls="top-search-collapse-id">
+											<i title="tab navigation" class="fa fa-search fa-lg" aria-hidden="true"></i>
+											<span class="sr-only">Busqueda</span>
+										</button>
+									</div>
+								</li>
+								<li class="last lang-selector lang-selector-dropdown">
+									<ul class="">
+										<li class="dropdown">
+										  <a class="dropdown-toggle" href="#" title='Abrir selector de idioma' data-toggle="dropdown" aria-expanded="true">Castellano
+<span class="sr-only">Toggle dropdown menu</span><span class="toggle drop down"></span></a>
+				                          <ul class="dropdown-menu pull-right" id="lang-menu" itemscope itemtype="http://schema.org/ServiceChannel">
+												<li class="first"><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=es' title='Seleccionar idioma&nbsp;Castellano' lang="es" hreflang="es"><span itemprop="name">Castellano</span></a></li>
+												<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=ca' title='Seleccionar idioma&nbsp;Català' lang="ca" hreflang="ca"><span itemprop="name">Català</span></a></li>
+												<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=gl' title='Seleccionar idioma&nbsp;Galego' lang="gl" hreflang="gl"><span itemprop="name">Galego</span></a></li>
+												<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=eu' title='Seleccionar idioma&nbsp;Euskara' lang="eu" hreflang="eu"><span itemprop="name">Euskara</span></a></li>
+												<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=va' title='Seleccionar idioma&nbsp;Valencià' lang="ca-valencia" hreflang="ca-valencia"><span itemprop="name">Valencià</span></a></li>
+												<li><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=en' title='Seleccionar idioma&nbsp;English' lang="en" hreflang="en"><span itemprop="name">English</span></a></li>
+												<li class="last"><a itemprop="url SameAs availableLanguage availableChannel" href='?changeLanguage=fr' title='Seleccionar idioma&nbsp;Français' lang="fr" hreflang="fr"><span itemprop="name">Français</span></a></li>
+										  </ul>
+										</li>
+									</ul>                                                                                                                         
+								</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!-- Buscador relevante -->
+			<div class="col-xs-12 row-container only-lrg"> 
+			    <div class="row">
+						<div class="col-sm-12 col-md-12 col-lg-12 top-search-collapse blockSearch top-search-box collapse" id="top-search-collapse-id" role="region" aria-labelledby="top-search-id" aria-hidden="true" aria-expanded="false" style="height: 2px">             
+								
+								<form role="search" name="formularioBuscador" id="formularioBuscador_field" onsubmit="return formularioBuscador_field();" action="/wps/portal/wss/internet/BusquedaES" title="Introduzca su búsqueda"  class="frmSearch mr15">     
+									<div role="search">
+										<fieldset class="contentSearch">        
+											<legend class="sr-only">Introduzca su búsqueda</legend>       
+											<a class="sr-only" href="#busqueda" target="_self">Acceso directo al buscador</a>
+											<label for="busqueda_field" class="sr-only">Buscador</label>  
+											<input type="search" class="field-search " name="search_query" id="busqueda_field" onclick="getKeyExterno(event, 'formularioBuscador', 'busqueda_field')" maxlength="150"  accesskey="b" autocomplete="off" placeholder="Introduzca su búsqueda" title="Introducir parámetros de búsqueda">												
+		                                     									
+											<label for="btn-busqueda_field" class="sr-only">Click para buscar</label>        
+											<input type="submit" id="btn-busqueda_field" value="Buscar" class="btn-send" title="Buscar" onblur="deleteTooltip()" onfocus="deleteTooltip()" onmouseover="deleteTooltip()" onmouseout="deleteTooltip()" > 
+										</fieldset>
+									</div>   
+								</form>
+														
+							
+							    <a href="/wps/portal/wss/internet/BuscadorAvanzado" id="boton-advanceSearch" role="button" tabindex="0" class="advanceSearch" target="_blank" rel="noopener noreferrer">Buscador avanzado</a>
+							
+							<!-- modo aviso error -->
+							<div class="tooltip_error" data-tooltip="1">
+								El texto a buscar debe tener al menos 3 caracteres
+							</div>
+						</div>
+						</div>
+			</div>
+			
+			<!-- Menú principal -->
+                <div class="col-sm-12 col-md-12 col-lg-12 subheader">
+				<div class="main-menu only-lrg">
+					<nav aria-label="Enlaces del menú principal">
+						<ul class="clean first-menu">
+							
+								
+								
+									<li class="first">
+								
+							
+								
+									<a href="/wps/portal/wss/internet/Inicio" class="homeICO" title="Ir al Inicio de la página de la Seguridad Social">
+									<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt= "">Inicio</a>
+								
+							</li>
+							
+								
+								
+									<li class="has-submenu">
+								
+							
+								
+									<a href="/wps/portal/wss/internet/Conocenos" class="conocenosICO" title="Ir a la sección Conócenos">
+									<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="">Conócenos</a>
+								
+							</li>
+							
+								
+								
+									<li class="has-submenu">
+								
+							
+								
+									<a href="/wps/portal/wss/internet/Trabajadores" class="trabajadoresICO" title="Ir a la sección Trabajadores">
+									<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="">Trabajadores</a>
+								
+							</li>
+							
+								
+								
+									<li class="has-submenu">
+								
+							
+								
+									<a href="/wps/portal/wss/internet/Pensionistas" class="pensionistasICO" title="Ir a la sección Pensionistas">
+									<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="">Pensionistas</a>
+								
+							</li>
+							
+								
+								
+									<li class="has-submenu">
+								
+							
+								
+									<a href="/wps/portal/wss/internet/Empresarios" class="empresariosICO" title="Ir a la sección Empresarios">
+									<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="">Empresarios</a>
+								
+							</li>
+							
+								
+								
+									<li class="last has-submenu">
+								
+							
+								
+									<a href="/wps/portal/wss/internet/clasespasivas" class="clasespasivasICO" title="Ir a la sección Clases Pasivas">
+									<img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/blank.gif" alt="">Clases Pasivas</a>
+								
+							</li>
+						</ul>
+					</nav>								
+				</div>					
+			</div>
+			
+			<!--fin Menú Principal -->
+		</div>			
+	</div>
+
+
+</div><!-- end header -->
+		</header>
+		
+		<!--obtiene el ide de la página padre--><!--fin de obtener el ide de la página padre-->
+
+<div class="asa.page" id="asa.page" style="display:none;">
+	<span class="asa.page.id">Z6_21I4H401M8GAC0A7LQ2QT710E2</span>
+	<span class="asa.page.idpadre">Z6_21I4H401M00C50AR9GLSVS1083</span>
+	
+
+</div>
+
+<main id="content">
+		
+			<div class="wpthemeInner">
+	            <div class="lotusui30" id="wpthemeStatusBarContainer">
+	                <noscript><div class="lotusMessage2" role="alert">
+	                	 <img class="lotusIcon lotusIconMsgError"
+	                    src="icons/blank.gif" alt="" /> <span
+	                    class="lotusAltText">Error:</span> <div
+	                    class="lotusMessageBody"><p>En este navegador se ha inhabilitado
+	                    Javascript. Esta pÃ¡gina necesita Javascript. Modifique los
+	                    valores del navegador para permitir que se ejecute Javascript.
+	                    Consulte la documentaciÃ³n para obtener instrucciones
+	                    especÃ­ficas.</p></div> </div></noscript>
+	            </div>
+	        </div>
+	        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- tag role="button" to Open the Modal valuation survey -->
+<div class="btn-valuation btn-valuation-300" id="btn-valuation" data-toggle="modal" data-target="#Satisfaction_survey" data-keyboard="true" role="button" tabindex="0">
+    <img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/icons/icon_thumbs_up_down.svg" alt="Valore esta página">
+    <div class="box-valuation"><span>Valore este contenido</span></div>                            
+</div>
+
+<!-- The Modal -->
+<div class="modal modal_survey fade" id="Satisfaction_survey">
+    <div class="modal-dialog" style="z-index: 1050;">
+        <div class="modal-content">
+
+              <!-- Modal Header -->
+              <div class="modal-header">
+              <button type="button" class="close ss-u-is-vishidden " data-dismiss="modal">&times;</button>
+                <div class="modal-title">Encuesta de satisfacción</div>
+                
+              </div>
+            <form id="starsform">
+              <!-- Modal body -->
+                <div class="modal-body">
+                
+                    <p>Califique esta página o el trámite relacionado. *</p>
+                    <fieldset><legend class="ss-u-is-vishidden">Valoración con estrellas</legend>
+	                    <div class="clasificacion form-group ">
+	                        <input id="radio1" type="radio" name="estrellas" value="5">
+	                        <label for="radio1"> <!-- ★ ( &#9733; ) ★ -->
+	                            <img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/1x1-00000000.png" class="star-assessment" alt="">
+	                        </label>
+	                        <input id="radio2" type="radio" name="estrellas" value="4">
+	                        <label for="radio2"><img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/1x1-00000000.png" class="star-assessment" alt=""></label>
+	                        <input id="radio3" type="radio" name="estrellas" value="3">
+	                        <label for="radio3"><img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/1x1-00000000.png" class="star-assessment" alt=""></label>
+	                        <input id="radio4" type="radio" name="estrellas" value="2">
+	                        <label for="radio4"><img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/1x1-00000000.png" class="star-assessment" alt=""></label>
+	                        <input id="radio5" type="radio" name="estrellas" value="1">
+	                        <label for="radio5"><img src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/1x1-00000000.png" class="star-assessment" alt=""></label>
+	                    
+	                    </div>  
+                    </fieldset>                                   
+                    <p>¿Ha encontrado lo que buscaba o ha conseguido completar el trámite que deseaba realizar? *</p>
+                    <fieldset><legend class="ss-u-is-vishidden">Valoración grado satisfacción</legend>
+	                    <div class="form-group ">
+	                        <div class="radio">
+	                            <input name="opcion" type="radio" value="Sí" id="opcionSi">
+	                            <label id="op1" for="opcionSi">Sí</label>
+	                        </div>
+	                        <div class="radio">
+	                            <input name="opcion" type="radio" value="No" id="opcionNo">
+	                            <label id="op2" for="opcionNo">No</label>
+	                        </div>
+	                        <div class="radio">
+	                            <input name="opcion" type="radio" value="En parte" id="opcionEnparte">
+	                            <label id="op3" for="opcionEnparte" >En parte</label>
+	                        </div>
+	                    
+	                    </div>
+                    </fieldset>
+                    <div class="form-group ">
+                        
+                        <!--  <label for="ayudaramejorar">Si lo desea, ayúdenos a mejorar con su comentario.</label> -->
+                        <!--  <textarea id="ayudaramejorar" name="textoayudaramejorar"></textarea>  -->
+                        
+	                    <p class="texto14">Su valoración será tratada de forma anónima.</p>
+	                    <p class="texto14">* Campos obligatorios</p>
+                    </div>
+                    
+                </div>
+
+              <!-- Modal footer -->
+                <div class="modal-footer">
+                    <input type="button" class="boton boton-secundary" value="Cancelar" data-dismiss="modal">
+                    <input type="submit" class="boton boton-default" id="btnEnviarEncuesta" value="Enviar" disabled>
+                </div>
+              </form>
+              <!-- Esta capa es la que se muestra transparente y que contiene el cuadro de dialogo -->
+                <div id="gratitude-layer">
+                    <div>
+                        <div class="title">Gracias por su participación</div>
+                        <div class="text">Juntos podemos seguir mejorando este Portal</div>
+                        <div class="buttons">
+                        	<form >
+                        		<input type="button" class="boton boton-default" value="Cerrar" id="bye" data-dismiss="modal">
+                        	</form>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+	<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/poinEncuestaValoracion.js"></script>
+
+
+
+
+<!-- required - do not remove -->
+			<div style="display:none" id="portletState">{}</div><section class="aviso-page">
+		<div class='component-container id-Z7_68OJPE09OF72IIOEP3G4RQ0EG6' name='headline' ><div class='component-control id-Z7_21I4H401M8GAC0A7LQ2QT710U0' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+  
+</div>
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div></div></section>	
+<section class="row-page">
+	<div class="row-container ">
+		<div class="row">
+			<div class="col-sm-12 col-md-12 col-lg-12 margen">
+					<div class='component-container id-Z7_71IK62DLL3RMDSED9NICSBPMQ2' name='ibmMainContainer' ><div class='component-control id-Z7_1952HGO0M8O970AF3QGKCR1085' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            
+
+
+
+
+
+
+
+
+<div class="asa.wcm" id="asa.wcm" style="display:none;">
+	<span class="asa.wcm.idAS">9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24</span>
+</div>
+
+
+
+
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+	<div class="">
+		<ul class="breadcrumb pl10" aria-label="Migas de pan">
+			<li class="single">
+            	<a href="/wps/portal/wss/internet/Inicio">Inicio</a>
+      		</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+    
+
+
+
+
+
+	 
+	
+
+    
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+        	<li class= "last">
+				Sistema de cotización para autónomos
+			</li>
+
+
+
+		</ul>
+	</div>
+	
+    <script>
+        var contenidoPagina = "9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24";
+        var contenidoUrl = "9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24";
+        var contenidoUrl2 = "44b5f09d-6c25-4dcd-8210-c21700c67096";
+    </script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+        var updatedDataLayer = {"content":{"page_name":"Sistema de cotizaci\u00f3n para aut\u00f3nomos"}};
+      	dataLayer.push(updatedDataLayer);
+dataLayer.push({"content":{"id":"e5caed93-1b11-43c1-aa31-d2c79a0e211a"}});
+
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div><div class='component-control id-Z7_1952HGO0M8O970AF3QGKCR1087' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            
+<h1 class="col-md-12 mb15 h1 title">Sistema de cotización para autónomos</h1>
+
+
+
+
+
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div><div class='component-control id-Z7_1952HGO0M8O970AF3QGKCR10O4' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-xs-12 text-justify" id="contenido">
+
+<div class="mark_content">
+
+<p>
+  Con la entrada en vigor el <strong>1 de enero de 2023</strong> del <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2022-12482" target="_blank" >Real Decreto-ley 13/2022 de 26 de julio de 2022</a>, se establece un nuevo sistema de cotización para los trabajadores por cuenta propia o autónomos y se mejora la protección por cese de actividad.</p>
+<p>A continuación, se muestran los aspectos principales de este nuevo sistema de cotización.
+
+  <br />
+</p>
+
+</div>
+</div>
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div><div class='component-control id-Z7_1952HGO0M8O970AF3QGKCR10O6' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            
+
+
+<div id="estructura" class="">
+<div class="col-sm-12 col-xs-12 margen text-block">
+
+<ul class="col-md-12 listado-menu triangle bordeOut">
+
+
+
+
+
+
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+
+<a href="#12023CA">Comunicación de actividades</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+
+<a href="#22023CR">Cotización basada en los rendimientos obtenidos</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+
+<a href="#32023CB">Posibilidad de cambiar la base de cotización si varían los rendimientos</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+
+<a href="#512023TP">Tarifa plana para nuevos autónomos</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+
+<a href="#612023BA">Novedades en los beneficios aplicables a la cotización  para autónomos</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+<li class="onlyone col-xs-12 col-md-12">
+
+<a href="#Mas_Informacion">Más información: Guía de trabajo autónomo, folleto informativo y simulador de cuotas</a>
+</li>
+
+
+
+
+
+
+</ul>
+</div>
+</div>
+
+
+
+
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div><div class='component-control id-Z7_1952HGO0M8O970AF3QGKCR10O5' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            
+
+<script>
+var esPrimero = "";
+</script>
+
+
+<script>
+var esPrimero = "";
+</script>
+
+
+<script>
+var esPrimero = "";
+</script>
+
+
+
+<div class="panel-group mt10 col-xs-12 pl0 pr0">
+  <div class="panel panel-default">
+
+
+
+<div class="panel-heading font-hight" role="tab" id="12023CA">
+<h2 class=" panel-title">
+
+<script>
+var a=' <a name="12023CA" href="';
+var ancla='12023CA-plegable';
+ancla=ancla.replace(/[\(\)]/g, ""); 
+ancla=ancla.replace(new RegExp(' ','g'),'');
+var b="";
+if(esPrimero == "SI"){
+b='" class="" data-toggle="collapse" aria-expanded="true">';
+}else{
+   b='" class="collapsed" data-toggle="collapse" aria-expanded="false">';
+}
+document.write(a + '#' + ancla + b);
+</script>
+
+Comunicación de actividades<span class="pull-right"></span>
+</a>
+</h2>
+</div>
+<script>
+var c='<div id="';
+var d="";
+if(esPrimero == "SI"){
+  d='" class="panel-collapse collapse in">';
+}else{
+ d='" class="panel-collapse collapse">';
+
+}
+document.write(c + ancla + d);
+</script>
+
+
+
+
+   
+
+        
+   
+
+
+
+
+
+
+
+
+<div class="panel-body">
+<div class="text-block mark_content">
+<p style="text-align: justify;">Aquellas personas que inicien su actividad por cuenta propia y tramiten su alta, a partir del día 1 de enero de 2023, deberán comunicar todas las actividades que realicen como autónomo a la Tesorería General de la Seguridad Social. </p>
+<p style="text-align: justify;">Las personas que ya figurasen de alta a día 1 de enero de 2023 y realicen más de una actividad por cuenta propia, también tendrán que comunicar todas sus actividades a la Tesorería General de la Seguridad Social.</p>
+<p style="text-align: justify;">Tanto el alta en el Régimen Especial de Trabajadores Autónomos, como la comunicación de dichas actividades, se podrán realizar a través de <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas%2C+bajas+y+modificaciones/Altas+y+afiliacion+de+trabajadores/Alta_trabajo_autonomo" target="_blank" >Importass</a>,&nbsp;Portal de la Tesorería General de la Seguridad Social.</p>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<script>
+var esPrimero = "NO";
+</script>
+
+
+
+<div class="panel-group mt10 col-xs-12 pl0 pr0">
+  <div class="panel panel-default">
+
+
+
+<div class="panel-heading font-hight" role="tab" id="22023CR">
+<h2 class=" panel-title">
+
+<script>
+var a=' <a name="22023CR" href="';
+var ancla='22023CR-plegable';
+ancla=ancla.replace(/[\(\)]/g, ""); 
+ancla=ancla.replace(new RegExp(' ','g'),'');
+var b="";
+if(esPrimero == "SI"){
+b='" class="" data-toggle="collapse" aria-expanded="true">';
+}else{
+   b='" class="collapsed" data-toggle="collapse" aria-expanded="false">';
+}
+document.write(a + '#' + ancla + b);
+</script>
+
+Cotización basada en los rendimientos obtenidos<span class="pull-right"></span>
+</a>
+</h2>
+</div>
+<script>
+var c='<div id="';
+var d="";
+if(esPrimero == "SI"){
+  d='" class="panel-collapse collapse in">';
+}else{
+ d='" class="panel-collapse collapse">';
+
+}
+document.write(c + ancla + d);
+</script>
+
+
+
+
+   
+
+        
+   
+
+
+
+
+
+
+
+
+<div class="panel-body">
+<div class="text-block mark_content">
+<p><strong>Todas las personas que trabajen por cuenta propia cotizarán a la Seguridad Social en función de sus rendimientos netos anuales</strong>, obtenidos en el ejercicio de todas sus actividades económicas, empresariales o profesionales. </p>
+<p>No cotizarán por rendimientos las personas que formen parte de una institución religiosa perteneciente a la Iglesia Católica, así como, durante el año 2025, los socios/as de cooperativas incluidos/as en el Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos que dispongan de un sistema intercooperativo de prestaciones sociales complementario al sistema público.</p>
+<p>A efectos de determinar la base de cotización, se tendrán en cuenta la totalidad de los rendimientos netos obtenidos en el año natural, en el ejercicio de sus distintas actividades profesionales o económicas, con independencia de que las realicen de forma individual o como socios/as o integrantes de cualquier entidad, con o sin personalidad jurídica, siempre y cuando no deban figurar por ellas en alta como personas trabajadoras por cuenta ajena o asimiladas a estas. El rendimiento neto computable de cada una de las actividades ejercidas se calculará de acuerdo con lo previsto a las normas del IRPF y con algunas particularidades en función del colectivo al que pertenezcan. Para más información, consulta <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/trabajo+autonomo/guia#IDControlb4f0ae63-cf5f-4450-9942-77d1a215bad4" title="Enlace a Guía de trabajo autónomo en Importass. Portal de la Tesorería" target="_blank" >¿Cómo calculo mis rendimientos?</a>.
+
+</p>
+<p>Del importe resultante se deducirá un 7 por ciento en concepto de gastos generales, excepto en los casos en que la persona trabajadora autónoma reúna las siguientes características, donde el porcentaje será del 3 por ciento:</p>
+<ul>
+  <li>Administrador/a de sociedades mercantiles capitalistas cuya participación sea mayor o igual al 25 por ciento.</li>
+  <li>Socio/a en una sociedad mercantil capitalista con una participación mayor o igual al 33 por ciento.</li>
+</ul>
+<p>Para la aplicación del porcentaje indicado del 3 por ciento bastará con haber figurado noventa días en alta en este régimen especial, durante el periodo a regularizar, en cualquiera de los supuestos citados anteriormente.</p>
+<p>Partiendo del promedio mensual de estos rendimientos netos anuales, se seleccionará la base de cotización que determinará la cuota a pagar.</p>
+<p>Anualmente, <strong>la</strong> <strong>Ley de Presupuestos Generales del Estado establecerá una tabla general y una reducida de bases de cotización que se dividirán en tramos consecutivos de importes de rendimientos netos mensuales a los que se asignarán, por cada tramo, unas bases de cotización máxima y mínima mensual</strong>. En la siguiente tabla se puede consultar estos nuevos tramos de rendimientos y sus correspondientes bases de cotización para los próximos tres años:</p>
+
+<table class="irtabladatos" border="1" dir="ltr" style=" border-collapse: collapse;">
+  <caption><strong>Tabla de rendimientos y bases de cotización. <br />Tabla reducida</strong></caption>
+  <tbody>
+    <tr>
+      <th scope="col" colspan="2" style="text-align: center;">Tramos de rendimientos netos</th>
+      <th scope="col" style="text-align: center;">
+        2024
+
+        <br />Tramos base de cotización<br />Base mínima<span>—</span>Base máxima<br />Euros/mes
+      </th>
+      <th scope="col" style="text-align: center;">
+        2025
+
+        <br />Tramos base de cotización<br />Base mínima<span>—</span>Base máxima<br />Euros/mes
+      </th>
+      <th style="text-align: center;">
+        2026<br />Tramos base de cotización<br />Base mínima<span>—</span>Base máxima<br />Euros/mes
+      </th>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <th scope="row">&lt;= 670 €
+
+      </th>
+      <td style="text-align: center;">735,29 <span>—</span>&nbsp;816,98
+
+      </td>
+      <td style="text-align: center;">653,59 <span>—</span>&nbsp;718,94
+
+      </td>
+      <td style="text-align: center;">653,59 <span>—</span>&nbsp;718,94</td>
+    </tr>
+    <tr>
+      <th scope="row"><strong>2</strong></th>
+      <th scope="row">&gt; 670 y &lt;= 900 €
+
+      </th>
+      <td style="text-align: center;">816,99 <span>—</span> 900
+
+      </td>
+      <td style="text-align: center;">718.95 <span>—</span>&nbsp;900
+
+      </td>
+      <td style="text-align: center;">718.95 <span>—</span>&nbsp;900</td>
+    </tr>
+    <tr>
+      <th scope="row"><strong>3</strong></th>
+      <th scope="row">&gt; 900 y &lt;1.166,70 €
+
+      </th>
+      <td style="text-align: center;">872,55 <span>—</span>&nbsp;1.166,70
+
+      </td>
+      <td style="text-align: center;">849,67 —&nbsp;1.166,70
+
+      </td>
+      <td style="text-align: center;">849,67 —&nbsp;1.166,70
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br />
+
+
+<table class="irtabladatos" border="1" dir="ltr" style=" border-collapse: collapse;">
+  <caption><strong>Tabla de rendimientos y bases de cotización.<br /> Tabla general</strong></caption>
+  <tbody>
+    <tr>
+      <th scope="col" colspan="2" style="text-align: center;">Tramos de rendimientos netos</th>
+      <th scope="col" style="text-align: center;">
+        2024
+
+        <br />Tramos base de cotización<br />Base mínima<span>—</span>Base máxima<br />Euros/mes
+      </th>
+      <th scope="col" style="text-align: center;">
+        2025
+
+        <br />Tramos base de cotización<br />Base mínima<span>—</span>Base máxima<br />Euros/mes
+      </th>
+      <th scope="col" style="text-align: center;">
+        2026
+
+        <br />Tramos base de cotización<br />Base mínima<span>—</span>Base máxima<br />Euros/mes
+      </th>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <th scope="row">&gt;= 1.166,7 y &lt;= 1.300 €
+
+      </th>
+      <td style="text-align: center;">950,98 <span>—</span>&nbsp;1.300
+
+      </td>
+      <td style="text-align: center;">950,98 <span>—</span>&nbsp;1.300</td>
+      <td style="text-align: center;">950,98 <span>—</span>&nbsp;1.300</td>
+
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <th scope="row">&gt; 1.300 y &lt;= 1.500 €
+
+      </th>
+      <td style="text-align: center;">960,78 <span>—</span>&nbsp;1.500</td>
+      <td style="text-align: center;">960,78 <span>—</span>&nbsp;1.500 </td>
+      <td style="text-align: center;">960,78 <span>—</span>&nbsp;1.500 </td>
+
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <th scope="row">&gt; 1.500 y &lt;= 1.700 €
+
+      </th>
+      <td style="text-align: center;">960,78 <span>—</span>&nbsp;1.700</td>
+      <td style="text-align: center;">960,78 <span>—</span>&nbsp;1.700</td>
+      <td style="text-align: center;">960,78 <span>—</span>&nbsp;1.700</td>
+
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <th scope="row">&gt; 1.700 y &lt;= 1.850 €
+
+      </th>
+      <td style="text-align: center;">1.045,75 <span>—</span>&nbsp;1.850
+
+      </td>
+      <td style="text-align: center;">1.143,79 <span>—</span>&nbsp;1.850
+
+      </td>
+      <td style="text-align: center;">1.143,79 <span>—</span>&nbsp;1.850</td>
+
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <th scope="row">&gt; 1.850 y &lt;= 2.030 €
+
+      </th>
+      <td style="text-align: center;">1.062,09 <span>—</span>&nbsp;2.030
+
+      </td>
+      <td style="text-align: center;">1.209,15 <span>—</span>&nbsp;2.030
+
+      </td>
+      <td style="text-align: center;">1.209,15 <span>—</span>&nbsp;2.030</td>
+
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <th scope="row">&gt; 2.030 y &lt;= 2.330 €
+
+      </th>
+      <td style="text-align: center;">1.078,43 <span>—</span>&nbsp;2.330
+
+      </td>
+      <td style="text-align: center;">1.274,51 <span>—</span>&nbsp;2.330
+
+      </td>
+      <td style="text-align: center;">1.274,51 <span>—</span>&nbsp;2.330</td>
+
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <th scope="row">&gt; 2.330 y &lt;= 2.760 €
+
+      </th>
+      <td style="text-align: center;">1.111,11 <span>—</span>&nbsp;2.760
+
+      </td>
+      <td style="text-align: center;">1.356,21 —&nbsp;2.760
+
+      </td>
+      <td style="text-align: center;">1.356,21 —&nbsp;2.760
+
+      </td>
+
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <th scope="row">&gt; 2.760 y &lt;= 3.190 €
+
+      </th>
+      <td style="text-align: center;">1.176,47 <span>—</span>&nbsp;3.190
+
+      </td>
+      <td style="text-align: center;">1.437,91 <span>—</span>&nbsp;3.190
+
+      </td>
+      <td style="text-align: center;">1.437,91 <span>—</span>&nbsp;3.190</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <th scope="row">&gt; 3.190 y &lt;= 3.620 €
+
+      </th>
+      <td style="text-align: center;">1.241,83 <span>—</span>&nbsp;3.620
+
+      </td>
+      <td style="text-align: center;">1.519,61 <span>—</span>&nbsp;3.620
+
+      </td>
+      <td style="text-align: center;">1.519,61 <span>—</span>&nbsp;3.620</td>
+
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <th scope="row">&gt; 3.620 y &lt;= 4.050 €
+
+      </th>
+      <td style="text-align: center;">1.307,19&nbsp;<span>—</span>&nbsp;4.050
+
+      </td>
+      <td style="text-align: center;">1.601,31&nbsp;<span>—</span>&nbsp;4.050
+
+      </td>
+      <td style="text-align: center;">1.601,31&nbsp;<span>—</span>&nbsp;4.050</td>
+
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <th scope="row">&gt; 4.050 y &lt;= 6.000 €</th>
+      <td style="text-align: center;">1.454,25&nbsp;<span>—</span>&nbsp;4.720,50
+
+      </td>
+      <td style="text-align: center;">1.732,03&nbsp;<span>—</span>&nbsp;4.909,50
+
+      </td>
+      <td style="text-align: center;">1.732,03&nbsp;<span>—</span>&nbsp;5.101,20</td>
+
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <th scope="row">&gt; 6.000 €</th>
+      <td style="text-align: center;">1.732,03&nbsp;<span>—</span>&nbsp;4.720,50
+
+
+
+      </td>
+      <td style="text-align: center;">1.928,10&nbsp;<span>—</span>&nbsp;4.909,50
+
+
+
+      </td>
+      <td style="text-align: center;">1.928,10&nbsp;<span>—</span>&nbsp;5.101,20
+
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+
+<br />
+<p>A partir del 1 de enero de 2023 los trabajadores autónomos podrán declarar sus rendimientos previstos a través de los servicios que se encontrarán disponibles en <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass" target="_blank" >Importass</a>, el portal de la Tesorería General de la Seguridad Social para servicios y trámites online.</p>
+<p>Para las personas trabajadoras autónomas que se den de alta a partir de esta fecha, se solicitarán esa información en el proceso de alta que se realice a través de Importass. </p>
+<p>En el caso de que la persona trabajadora autónoma ya estuviera dada de alta, podrá modificar su base de cotización para ajustarla a la previsión sobre el promedio mensual de sus rendimientos netos anuales a través del servicio&nbsp;<a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Altas%2C+bajas+y+modificaciones/Bajas+y+modificaciones/BCRendimientos" target="_blank" >Base de cotización y rendimientos</a>.</p>
+<p>Las personas trabajadoras por cuenta propia que a 31/12/2022 vinieran cotizando por una base de cotización superior a la que les correspondería en razón de sus rendimientos estimados podrán mantener en 2026 dicha base de cotización, aunque sus rendimientos determinen la aplicación de una base de cotización inferior.</p>
+<p>Las personas trabajadoras por cuenta propia que a 31/12/2022 vinieran cotizando por una base de cotización superior a la que les correspondería en razón de sus rendimientos estimados podrán mantener en 2026 dicha base de cotización, aunque sus rendimientos determinen la aplicación de una base de cotización inferior.<br />La base de cotización de las personas trabajadoras incluidas en el Régimen Especial de los Trabajadores por Cuenta Propia o Autónomos y/o en el Régimen Especial de los Trabajadores del Mar que, a 1 de enero de 2026, viniesen cotizando por la base máxima del tramo 11 y 12 de la tabla general para el año 2025 equivalente a 4.909,50 euros, la posibilidad de elegir, con efectos 1 de enero 2026 , cualquier base de cotización que se encuentre comprendida entre la base por la que vienen cotizando (4.909,50 euros) y la base máxima del tramo 11 y 12 de la tabla general que, para el año 2026 , establece Real Decreto-ley 3/2026, de 3 de febrero, para la revalorización de las pensiones públicas y otras medidas urgentes en materia de Seguridad Social (5.101,20 euros).<br /></p>
+<p>En Importass se encuentra disponible un <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/simuladorRETAPublico" target="_blank" >simulador</a> para realizar el cálculo de la cuota en función de los rendimientos previstos.</p>
+<p>Las cantidades a ingresar a la Seguridad Social, llamadas cuotas, se calculan aplicando el tipo a la base de cotización.<br /></p>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<script>
+var esPrimero = "NO";
+</script>
+
+
+
+<div class="panel-group mt10 col-xs-12 pl0 pr0">
+  <div class="panel panel-default">
+
+
+
+<div class="panel-heading font-hight" role="tab" id="32023CB">
+<h2 class=" panel-title">
+
+<script>
+var a=' <a name="32023CB" href="';
+var ancla='32023CB-plegable';
+ancla=ancla.replace(/[\(\)]/g, ""); 
+ancla=ancla.replace(new RegExp(' ','g'),'');
+var b="";
+if(esPrimero == "SI"){
+b='" class="" data-toggle="collapse" aria-expanded="true">';
+}else{
+   b='" class="collapsed" data-toggle="collapse" aria-expanded="false">';
+}
+document.write(a + '#' + ancla + b);
+</script>
+
+Posibilidad de cambiar la base de cotización si varían los rendimientos<span class="pull-right"></span>
+</a>
+</h2>
+</div>
+<script>
+var c='<div id="';
+var d="";
+if(esPrimero == "SI"){
+  d='" class="panel-collapse collapse in">';
+}else{
+ d='" class="panel-collapse collapse">';
+
+}
+document.write(c + ancla + d);
+</script>
+
+
+
+
+   
+
+        
+   
+
+
+
+
+
+
+
+
+<div class="panel-body">
+<div class="text-block mark_content">
+Si a lo largo del año 2026 se prevé una variación de los rendimientos netos, será posible seleccionar cada dos meses una nueva base de cotización y, por tanto, una nueva cuota adaptada a los mismos con un <strong>máximo de seis cambios al año</strong>. Esta modificación será efectiva en las siguientes fechas:<br />
+<ul>
+  <li>1 de marzo de 2026, si la solicitud se formula entre el 1 de enero y el último día natural del mes de febrero.</li>
+  <li>1 de mayo de 2026, si la solicitud se formula entre el 1 de marzo y el 30 de abril.</li>
+  <li>1 de julio de 2026, si la solicitud se formula entre el 1 de mayo y el 30 de junio.</li>
+  <li>1 de septiembre de 2026, si la solicitud se formula entre el 1 de julio y el 31 de agosto.</li>
+  <li>1 de noviembre de 2026, si la solicitud se formula entre el 1 de septiembre y el 31 de octubre.</li>
+  <li>1 de enero del año 2027, si la solicitud se formula entre el 1 de noviembre y el 31 de diciembre.</li>
+</ul>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<script>
+var esPrimero = "NO";
+</script>
+
+
+
+<div class="panel-group mt10 col-xs-12 pl0 pr0">
+  <div class="panel panel-default">
+
+
+
+<div class="panel-heading font-hight" role="tab" id="512023TP">
+<h2 class=" panel-title">
+
+<script>
+var a=' <a name="512023TP" href="';
+var ancla='512023TP-plegable';
+ancla=ancla.replace(/[\(\)]/g, ""); 
+ancla=ancla.replace(new RegExp(' ','g'),'');
+var b="";
+if(esPrimero == "SI"){
+b='" class="" data-toggle="collapse" aria-expanded="true">';
+}else{
+   b='" class="collapsed" data-toggle="collapse" aria-expanded="false">';
+}
+document.write(a + '#' + ancla + b);
+</script>
+
+Tarifa plana para nuevos autónomos<span class="pull-right"></span>
+</a>
+</h2>
+</div>
+<script>
+var c='<div id="';
+var d="";
+if(esPrimero == "SI"){
+  d='" class="panel-collapse collapse in">';
+}else{
+ d='" class="panel-collapse collapse">';
+
+}
+document.write(c + ancla + d);
+</script>
+
+
+
+
+   
+
+        
+   
+
+
+
+
+
+
+
+
+<div class="panel-body">
+<div class="text-block mark_content">
+<p style="text-align: justify;">Durante el periodo 2023-2025, las personas que causen alta inicial en el Régimen de autónomos <strong>podrán solicitar la aplicación de una cuota reducida (tarifa plana) de 80 euros mensuales durante los primeros 12 meses de actividad. La solicitud se realizará en el momento de tramitar el alta.</strong></p>
+<p style="text-align: justify;">Podrán beneficiarse de estas condiciones las personas autónomas que no hayan estado dadas de alta en los dos años inmediatamente anteriores a la fecha de efecto de la nueva alta, o bien tres años, en caso de haber disfrutado previamente de esta deducción.</p>
+<p style="text-align: justify;">Transcurrido esos doce primeros meses, podrá también aplicarse una cuota reducida durante los siguientes doce meses, a aquellos trabajadores por cuenta propia que prevean que sus rendimientos económicos netos anuales, vayan a ser inferiores al salario mínimo interprofesional anual que corresponda a ese período y así lo soliciten en el servicio que se habilitará en Importass.</p>
+<p style="text-align: justify;">Además, las personas autónomas con una discapacidad igual o superior al 33 por ciento, víctima de violencia de género o víctima de terrorismo, podrán solicitar la aplicación, en el momento del alta, de una cuota reducida de 80 euros durante los primeros 24 meses.</p>
+<p style="text-align: justify;">Asimismo, finalizado este período, si su <strong>rendimiento neto previsto</strong> fuese <strong>inferior </strong>al Salario Mínimo Interprofesional, podrán solicitar, a través del servicio que se habilitará en Importass, la aplicación de esta cuota reducida durante los siguientes 36 meses, por importe de 160 euros.</p>
+<p style="text-align: justify;">Todas las solicitudes de ampliación deberán acompañarse de una declaración relativa a que los rendimientos netos que se prevén obtener van a ser inferiores al salario mínimo profesional vigente.</p>
+<p style="text-align: justify;">Las reducciones en la cotización previstas en los párrafos anteriores no resultarán aplicables a los familiares de trabajadores autónomos por consanguinidad o afinidad hasta el segundo grado inclusive y, en su caso, por adopción, que se incorporen al Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos.</p>
+<p style="text-align: justify;">Los trabajadores por cuenta propia que disfruten de estos beneficios podrán renunciar en cualquier momento expresamente a su aplicación con efectos a partir del día primero del mes siguiente al de la comunicación de la renuncia correspondiente. Esta solicitud también se podrá realizar a través del servicio que se habilitará en Importass.</p>
+<p style="text-align: justify;">Los trabajadores autónomos que a 31 de diciembre de 2022 fueran beneficiarios de la antigua tarifa plana, continuarán disfrutando de la misma, hasta que se agote el periodo máximo establecido, en las mismas condiciones.</p>
+<p style="text-align: justify;"><strong>Prórroga Tarifa Plana</strong></p>
+<p style="text-align: justify;">Para aquellas personas trabajadoras autónomas que, en el año objeto de regularización, hubieran solicitado la prórroga del segundo periodo de tarifa plana y se constate, según la información remitida por las Administraciones Tributarias, que han obtenido unos rendimientos económicos netos iguales o superiores al salario mínimo interprofesional, se les reclamarán las cuotas que durante dicho año no se ingresaron por aplicación del beneficio. Asimismo, el periodo de prórroga tendrá la consideración de periodo regularizable, procediendo, en su caso, el recálculo de la base de cotización provisional, así como de la cuota. La pérdida de la tarifa plana solo afecta al periodo del año objeto de regularización, de modo que, si el segundo periodo abarca parte del año siguiente, la comprobación del cumplimiento del requisito del salario mínimo interprofesional (SMI) se llevará a cabo en ese ejercicio posterior.<br /></p>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<script>
+var esPrimero = "NO";
+</script>
+
+
+
+<div class="panel-group mt10 col-xs-12 pl0 pr0">
+  <div class="panel panel-default">
+
+
+
+<div class="panel-heading font-hight" role="tab" id="612023BA">
+<h2 class=" panel-title">
+
+<script>
+var a=' <a name="612023BA" href="';
+var ancla='612023BA-plegable';
+ancla=ancla.replace(/[\(\)]/g, ""); 
+ancla=ancla.replace(new RegExp(' ','g'),'');
+var b="";
+if(esPrimero == "SI"){
+b='" class="" data-toggle="collapse" aria-expanded="true">';
+}else{
+   b='" class="collapsed" data-toggle="collapse" aria-expanded="false">';
+}
+document.write(a + '#' + ancla + b);
+</script>
+
+Novedades en los beneficios aplicables a la cotización  para autónomos<span class="pull-right"></span>
+</a>
+</h2>
+</div>
+<script>
+var c='<div id="';
+var d="";
+if(esPrimero == "SI"){
+  d='" class="panel-collapse collapse in">';
+}else{
+ d='" class="panel-collapse collapse">';
+
+}
+document.write(c + ancla + d);
+</script>
+
+
+
+
+   
+
+        
+   
+
+
+
+
+
+
+
+
+<div class="panel-body">
+<div class="text-block mark_content">
+<ul>
+  <li>
+    <h4>Bonificación en la cotización para autónomos por cuidado de menor afectado por una enfermedad grave</h4>
+  </li>
+</ul>
+<p>Las personas autónomas beneficiarias de la prestación para el cuidado de menores afectados cáncer u otra enfermedad grave tendrán derecho, durante el periodo en el que perciban dicha prestación, a una bonificación del 75 por ciento de la cuota por contingencias comunes, resultante de aplicar a la base media de los doce meses anteriores a la fecha en que se inicie esta bonificación, el tipo de cotización para contingencias comunes, excluido el correspondiente a IT derivada de contingencias comunes.</p>
+<p>Si el trabajador lleva menos de doce meses dado de alta continuada en el Régimen de autónomos, para el cálculo de la base media de cotización se tendrá en cuenta la última fecha de alta, cuyo resultado se obtiene dividiendo la suma de las bases de cotización entre el número de días en los que ha estado dado de alta de manera continuada, y la cuantía obtenida se multiplica por treinta.</p>
+<ul>
+  <li>
+    <h4>Bonificación a trabajadoras autónomas por reincorporación a su actividad</h4>
+  </li>
+</ul>
+<p>Las trabajadoras autónomas que cesen su actividad por nacimiento de hijo/a, adopción, guarda con fines de adopción, acogimiento y tutela y quieran volver a realizar una actividad por cuenta propia dentro de los dos años siguientes a la fecha del cese, tendrán derecho a una bonificación, durante los 24 meses inmediatamente siguientes a la fecha de su reincorporación al trabajo, del 80 por ciento de la cuota por contingencias comunes, resultante de aplicar a la base media de los doce meses anteriores a la fecha en que cesaron su actividad, el tipo de cotización para contingencias comunes, excluido el correspondiente a IT derivada de contingencias comunes.</p>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+<script>
+var esPrimero = "NO";
+</script>
+
+
+
+<div class="panel-group mt10 col-xs-12 pl0 pr0">
+  <div class="panel panel-default">
+
+
+
+<div class="panel-heading font-hight" role="tab" id="Mas_Informacion">
+<h2 class=" panel-title">
+
+<script>
+var a=' <a name="Mas_Informacion" href="';
+var ancla='Mas_Informacion-plegable';
+ancla=ancla.replace(/[\(\)]/g, ""); 
+ancla=ancla.replace(new RegExp(' ','g'),'');
+var b="";
+if(esPrimero == "SI"){
+b='" class="" data-toggle="collapse" aria-expanded="true">';
+}else{
+   b='" class="collapsed" data-toggle="collapse" aria-expanded="false">';
+}
+document.write(a + '#' + ancla + b);
+</script>
+
+Más información: Guía de trabajo autónomo, folleto informativo y simulador de cuotas<span class="pull-right"></span>
+</a>
+</h2>
+</div>
+<script>
+var c='<div id="';
+var d="";
+if(esPrimero == "SI"){
+  d='" class="panel-collapse collapse in">';
+}else{
+ d='" class="panel-collapse collapse">';
+
+}
+document.write(c + ancla + d);
+</script>
+
+
+
+
+   
+
+        
+   
+
+
+
+
+
+
+
+
+<div class="panel-body">
+<div class="text-block mark_content">
+<p><strong>Para obtener más información</strong> sobre el sistema de cotización consulte la <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/Trabajo+Autonomo/guia#post-2d560e82-68dc-4603-ab62-2834d3b61a80" target="_blank" >Guía práctica de trabajo autónomo</a>.</p>
+<p>Puede acceder a este <a href="https://portal.seg-social.gob.es/wps/portal/importass/importass/tramites/simuladorRETAPublico" target="_blank" >simulador para calcular la cuota correspondiente</a> en base a los rendimientos netos previstos. Se trata de un simulador disponible en el área pública, en el que se podrá simular la cuota que corresponde abonar con los rendimientos netos que la persona autónoma estime obtener a lo largo del año.</p>
+<p>En este <a href="https://www.seg-social.es/descarga/es/TripticoRETA2023" target="_blank" >folleto informativo</a>&nbsp;se recogen brevemente las principales claves del nuevo sistema de cotización para autónomos.<br /><br /></p>
+
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div><div class='component-control id-Z7_1952HGO0M8O970AF3QGKCR1044' >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+    
+    
+
+    
+    
+    
+
+
+
+
+
+    
+    
+        
+        
+            
+                
+                    
+                    
+                       
+                        
+                            
+<div class="panel-rel">
+    
+  <div class="panel-rel-footer">
+    <a href="https://sede.seg-social.gob.es/" title="Enlace a la sede electrónica"  class="center">
+      <img src="/POINThemeStatic/themes/Portal8.5/css/img/logo-ss-sedeElectronica.svg" alt="Enlace a la sede electrónica" class="col-xs-10 col-sm-6 col-md-4">
+    </a>
+  </div>
+
+</div>
+
+                        
+                    
+                
+                
+            
+        
+    
+
+    
+        
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    
+
+</div></div></div>
+		</div>
+	</div>
+</section>
+</main>
+		
+		<footer id="pie" class="row-footer">
+			
+<div class="control-subir" id="ontop" style="display: none;  z-index:1000; ">
+	<a href="#top" class="" title="Subir al inicio de la página">
+		<img class="" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/icons/icon-subir.svg" alt="Subir ">
+	</a>
+</div>
+
+<div class="row-container footer-big-bg">
+	<div class="row">
+	
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer-submenu bg-primary-alt">
+			<div class="footer-main-links">
+				<nav aria-label="Enlaces del pie de página">
+					<ul class="clean">
+					<li class="first">							
+								<a href="/wps/portal/wss/internet/HerramientasWeb/4c5c5105-04d1-4dfd-8af4-1e2d5c0c1ae3" title="Ir a&nbsp;Cómo identificarme">Cómo identificarme</a>							
+					</li>
+						<li>
+							
+								<a href="/wps/portal/wss/internet/MapaWeb" title="Ir a&nbsp;Mapa Web">Mapa Web</a>
+							
+						</li>
+						
+						<li>
+							
+								<a href="/wps/portal/wss/internet/Glosario" title="Ir a&nbsp;Glosario">Glosario</a>
+							
+						</li>
+						
+						<li>
+							
+								<a href="/wps/portal/wss/internet/Enlaces" title="Ir a&nbsp;Enlaces">Enlaces</a>
+							
+						</li>
+						
+						<li>
+							
+								<a href="/wps/portal/wss/internet/Ayuda" title="Ir a&nbsp;Ayuda">Ayuda</a>
+							
+						</li>
+						
+						<li>
+							
+								<a href="/wps/portal/wss/internet/Accesibilidad" title="Ir a&nbsp;Accesibilidad">Accesibilidad</a>
+							
+						</li>									
+						
+						<li>
+							
+								<a href="/wps/portal/wss/internet/InformacionLinguistica" title="Ir a&nbsp;Información Lingüística">Información Lingüística</a>
+							
+						</li>
+						
+						<li class="last">
+							
+								<a href="/wps/portal/wss/internet/RSS" title="Ir a&nbsp;RSS">RSS</a> <img alt="" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/icons/rss32.gif">
+							
+						</li>
+					</ul>
+				</nav>
+			</div>						
+		</div>
+	</div>
+</div>
+<div class="row-container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="footer-sub-links">
+				<div class="copyright">Copyright © Seguridad Social 2026. Todos los derechos reservados.
+				</div>
+				<div class="legal">
+					<ul class="clean">
+						<li>
+							
+								<a href="/wps/portal/wss/internet/AvisoLegal" title="Ir a&nbsp;Aviso Legal">Aviso Legal</a>
+							
+						</li>
+						<li class="last">
+							
+								<a href="/wps/portal/wss/internet/PoliticaCookies" title="Ir a&nbsp;Política de cookies">Política de cookies</a>	
+							
+						</li>
+					</ul>
+				</div>
+				<div class="validation">
+					
+						<a href="/wps/portal/wss/internet/Accesibilidad" target="_blank" rel="noopener noreferrer" aria-label="Abrir sección de conformidad con los estádares HTML 5.0 Enlace en nueva ventana.">
+						<img alt="Abrir sección de conformidad con los estándares HTML 5.0" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/icons/valid-html5.gif">
+						 </a>
+					
+					
+					<a target="_blank" rel="noopener noreferrer" href="https://www.w3.org/WAI/WCAG2AA-Conformance" aria-label="Abrir sección de conformidad con los estándares AA Enlace en nueva ventana.">
+						<img alt="Abrir sección de conformidad con los estádares AA" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/icons/wcag2AA.gif">
+					</a>
+					
+					
+					
+						<a href="/wps/portal/wss/internet/Accesibilidad" target="_blank" rel="noopener noreferrer" aria-label="Abrir sección de conformidad con los estándares CSS Enlace en nueva ventana.">
+						<img alt="Abrir sección de conformidad con los estándares CSS" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/css/img/icons/vcss.gif">
+						 </a>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/vendor/mmenu.min.js"></script>
+<script> 
+    window.addEventListener("load",  
+        e => document.querySelectorAll( 'a[href]:not([rel])') 
+            .forEach(a => a.setAttribute( 'rel', 'noopener noreferrer nofollow')) 
+    ); 
+</script>
+<div class="wpthemeClear"></div>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/vendor/jquery.min.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/jquery-1.12.4.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/jquery-ui.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/bootstrap.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/slick.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/funciones.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/buscador.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/main.min.js"></script>
+
+
+
+<script type="text/javascript">
+
+var imgURL = 'https://stss.seg-social.es/PoinEstadisticas/ServletEstadisticasPoin';
+var urlFija = 'https://stss.seg-social.es/PoinEstadisticas/ServletEstadisticasPoin';
+var urlChatBot ='https://issa.seg-social.es/';
+
+</script>
+
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poinAggregator.js"></script>
+<script src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5/js/poin/poinEstadisticas.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</footer><!-- page footer -->
+	</div><!-- end frame -->
+		
+    <!-- This is responsible for bootstrapping the configuration for the javascript framework. 
+        This is located here instead of the head section to improve client performance. -->
+	<div class="wpthemeComplementaryContent" id="wpthemeComplementaryContent" role="region" tabindex="-1" aria-labelledby="wpthemeComplementaryContentText">
+		<span class="wpthemeAltText" id="wpthemeComplementaryContentText" >Complementary Content</span>
+		<script type="text/javascript" src="/wps/contenthandler/wss/!ut/p/digest!J-l_Ix-N-y3ICBsVkJsSOg/mashup/ra:collection?themeID=ZJ_OAM2H441L0LM10AN11KOFO0044&amp;locale=es&amp;mime-type=text%2Fjavascript&amp;lm=1792980230346&amp;entry=wp_portal__0.0%3Aconfig_config_static"></script><script type="text/javascript">i$.merge({"ibmCfg":{"themeConfig":{"themeUniqueName":"ibm.portal.ss.internet.Theme","themeRootURI":"/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/war/POINThemeStatic/themes/Portal8.5","themeWebAppBaseURI":"/POINThemeDynamic/themes/html/dynamicSpots","themeWebDAVBaseURI":"war:POINThemeStatic/themes/Portal8.5/","modulesWebAppBaseURI":"/wps/themeModules","commonResourcesRootURI":"/wps/contenthandler/wss/!ut/p/digest!J-l_Ix-N-y3ICBsVkJsSOg/dav/fs-type1/common-resources","isRTL":false,"isPageRenderModeCSA":false,"portletOverridePageTitle":"Herramientas Web","currentContentNodeOID":"Z6_21I4H401M8GAC0A7LQ2QT710E2","loadingImage":"css/images/loading.gif","dndSourceDefinitions":[],"categorySources":["system/WebContentCategory.json,label:shelf_socialCategory"],"styleSources":[],"layoutSources":[]},"portalConfig":{"locale":"es","portalURI":"/wps/portal","contentHandlerURI":"/wps/contenthandler/wss/!ut/p/digest!EhSyRnUqyadgCn-9st-Ggg/?locale=es&locale=es-US&locale=ltr","pocURI":"/wps/portal/wss/!ut/p/z0/0wcA1NLTeQ!!/","isVirtualPortal":true,"canImpersonate":false,"themeRootURI":"/POINThemeDynamic/themes/html/dynamicSpots","parentPageID":"Z6_21I4H401M00C50AR9GLSVS1083","currentPageOID":"Z6_21I4H401M8GAC0A7LQ2QT710E2","canAnonymousUserViewCurrentPage":true,"bootstrapState":"&lt;?xml version=&#034;1.0&#034; encoding=&#034;UTF-8&#034;?&gt;&lt;root xmlns=&#034;http://www.ibm.com/xmlns/prod/websphere/portal/v6.1/portal-state&#034;&gt;&lt;state type=&#034;navigational&#034;&gt;&lt;selection selection-node=&#034;Z6_21I4H401M8GAC0A7LQ2QT710E2&#034;&gt;&lt;mapping src=&#034;Z6_21I4H401M00C50AR9GLSVS1083&#034; dst=&#034;Z6_21I4H401M8GAC0A7LQ2QT710E2&#034;/&gt;&lt;mapping src=&#034;Z6_000000000000000000000000A0&#034; dst=&#034;Z6_21I4H401M8GAC0A7LQ2QT710E2&#034;/&gt;&lt;/selection&gt;&lt;shared-parameters id=&#034;Z6_21I4H401M8GAC0A7LQ2QT710E2&#034;&gt;&lt;shared-parameter nsuri=&#034;http://www.ibm.com/xmlns/prod/websphere/portal/publicparams&#034; localpart=&#034;path-info&#034;&gt;&lt;value&gt;9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24&lt;/value&gt;&lt;value&gt;44b5f09d-6c25-4dcd-8210-c21700c67096&lt;/value&gt;&lt;/shared-parameter&gt;&lt;/shared-parameters&gt;&lt;expansions&gt;&lt;node id=&#034;Z6_21I4H401M00C50AR9GLSVS1083&#034;/&gt;&lt;node id=&#034;Z6_000000000000000000000000A0&#034;/&gt;&lt;/expansions&gt;&lt;locale&gt;es&lt;/locale&gt;&lt;/state&gt;&lt;/root&gt;","isUserLoggedIn":false,"currentUser":"anonymous portal user","currentUserOID":"","aggregatedStyle":"css/poin/styles.css","isCurrentPageEditable":true,"wcmPageMetadata":{"contentRoot":null,"sharingScope":null},"projectUUID":null},"userName":""},"com_ibm_theme_capabilities":{"simple-contextmenu":"1.1","wp_theme_menus":"0.0","chatbot_contribution":"1.0.0","wp_simple_contextmenu_js":"0.0","wp_toolbar_ghost":"0.0","wp_client_logging":"0.0","wp_state_page":"0.0","wp_toolbar_common":"0.0","wp_theme_portal_edit_85":"0.0","wp_theme_utils":"0.0","poinModule_dynamicContentSpots_85":"0.0","wp_simple_contextmenu_main":"0.0","wp_theme_skin_region":"0.0","wp_portal":"0.0","photon.dom":"1.0","wp_photon_dom":"0.0","wp_custom_page_style":"0.0","highContrast":"1.0","wp_searchbar":"0.0","wp_status_bar":"0.0","wp_client_ext":"0.0","wp_simple_contextmenu_css":"0.0","wp_client_tracing":"0.0","wp_modules":"0.0","modules":"0.1","wp_analytics_aggregator":"0.0","toolbar":"8.5","hasBaseURL":"true","analytics_aggregator":"8.0","wp_state_page_modes":"0.0","wp_theme_portal_85":"0.0","wp_client_main":"0.0","wp_simple_contextmenu_templates":"0.0","wp_high_contrast":"0.0","wp_toolbar_viewframe_validator":"0.0"},"com_ibm_device_class":[]});ibmCfg.portalConfig.bootstrapState=(ibmCfg.portalConfig.bootstrapState||"").replace(/&lt;/gm, '<').replace(/&gt;/gm, '>').replace(/&amp;/gm, '&').replace(/&#039;/gm, "'").replace(/&#034;/gm, '"');</script><script type="text/javascript" src="/wps/contenthandler/wss/!ut/p/digest!j5sG23iXJqrcYDqONTFL7w/mashup/ra:collection?themeID=ZJ_OAM2H441L0LM10AN11KOFO0044&amp;locale=es&amp;mime-type=text%2Fjavascript&amp;lm=1781239586000&amp;entry=wp_high_contrast__0.0%3Aconfig_js&amp;entry=wp_state_page_modes__0.0%3Aconfig_js&amp;entry=wp_simple_contextmenu_js__0.0%3Aconfig_js&amp;entry=wp_theme_skin_region__0.0%3Aconfig_js&amp;entry=wp_status_bar__0.0%3Aconfig_js"></script><div id="simpleMenuTemplate" class="wpthemeMenuLeft">
+    <div class="wpthemeMenuBorder">
+        <div class="wpthemeMenuNotchBorder"></div>
+        <!-- define the menu item template inside the "ul" element.  only "css-class", "description", and "title" are handled by the theme's sample javascript. -->
+        <ul class="wpthemeMenuDropDown wpthemeTemplateMenu" role="menu">
+            <li class="${css-class}" role="menuitem" tabindex="-1"><span class="wpthemeMenuText">${title}</span>${badge}</li>
+        </ul>
+    </div>
+    <!-- Template for loading -->
+    <div class="wpthemeMenuLoading wpthemeMenuLoadingText wpthemeTemplateLoading">${loading}</div>
+    <!-- Template for submenu -->
+    <div class="wpthemeAnchorSubmenu wpthemeTemplateSubmenu">
+        <div class="wpthemeMenuBorder wpthemeMenuSubmenu">
+            <ul id="${submenu-id}" class="wpthemeMenuDropDown" role="menu"><li role="menuitem" tabindex="-1"></li></ul>
+        </div>
+    </div>
+</div></div>
+</body>
+</html>

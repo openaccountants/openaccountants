@@ -1,0 +1,35 @@
+[
+  {
+    "name": "rrh-as",
+    "url": "https://www.brreg.no/reelle-rettighetshavere/reelle-rettighetshavere-i-aksjeselskap/",
+    "retrieved_utc": "2026-10-31T20:40:08.226743+00:00",
+    "exit_code": 0,
+    "response": "200 https://www.brreg.no/reelle-rettighetshavere/reelle-rettighetshavere-i-aksjeselskap/",
+    "error": "",
+    "raw_sha256": "15df127d837927a19337766129691a5b807afc92e9bcf2265b22286bc8e12cb0",
+    "bytes": 70298,
+    "reader_sha256": "2dbf0fddb66e6c751533fc2a4f7e8299b684523906626e4b5b753df14400f841"
+  },
+  {
+    "name": "rrh-altinn",
+    "url": "https://info.altinn.no/skjemaoversikt/bronnoysundregistrene/registrere-reelle-rettighetshavere/",
+    "retrieved_utc": "2026-10-31T20:40:09.903434+00:00",
+    "exit_code": 0,
+    "response": "200 https://info.altinn.no/skjemaoversikt/bronnoysundregistrene/registrere-reelle-rettighetshavere/",
+    "error": "",
+    "raw_sha256": "2b845dbf697e43117e6d18bb3b01d45ef755a937b7e9215e84902d47baf6a92e",
+    "bytes": 57933,
+    "reader_sha256": "fd3f5f7d5b21d31f78f95897968279427dccff7eadf461c8ce524197bbe76fc1"
+  },
+  {
+    "name": "rrh-overview",
+    "url": "https://www.brreg.no/reelle-rettighetshavere/",
+    "retrieved_utc": "2026-10-31T20:40:08.233973+00:00",
+    "exit_code": 0,
+    "response": "200 https://www.brreg.no/reelle-rettighetshavere/",
+    "error": "",
+    "raw_sha256": "6d7fc61443a1c091106fcca7fcc1966a2ccc0b636b279d84d589c2636d48dcb4",
+    "bytes": 75265,
+    "reader_sha256": "96e6f5bca6cdd0d7054feec3a3d6821c3c07ae951bc8c1888b52715d9dffc6ec"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-10-28T02:52:39.260541+00:00",
+  "schema_errors": [],
+  "schema_warnings": [],
+  "schema_output": "checked 28 guides (0 non-guide .md files skipped)\n",
+  "example_exit": 0,
+  "example_output": "checked 29 files, 44 oa-check blocks, 0 failures, 0 missing\n",
+  "all29_live_baseline_hashes_match": true,
+  "changed_files": 13,
+  "scope": "Private cumulative F01\u2013F31(excluding retractedF16)/FC01\u2013FC06/RG01\u2013RG05/RI01 and bounded B-A Q01. Final component and composition closures pending; ordinary source/method questions remain partial. No live changes."
+}

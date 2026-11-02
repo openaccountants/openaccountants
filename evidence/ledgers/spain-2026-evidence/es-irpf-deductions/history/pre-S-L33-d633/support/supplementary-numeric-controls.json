@@ -1,0 +1,536 @@
+[
+  {
+    "control": "Catalan ordinary rent",
+    "computed": "500.00",
+    "expected": "500.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan victim rent",
+    "computed": "1000.00",
+    "expected": "1000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan separate grants",
+    "computed": "1500.00",
+    "expected": "1500.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan current quota",
+    "computed": "2807.75",
+    "expected": "2807.75",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan quota after rent",
+    "computed": "1307.75",
+    "expected": "1307.75",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "legacy State9040",
+    "computed": "678.00",
+    "expected": "678.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan enhanced9040",
+    "computed": "813.60",
+    "expected": "813.60",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan total enhanced",
+    "computed": "1491.60",
+    "expected": "1491.60",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan mixed equal",
+    "computed": "768.00",
+    "expected": "768.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan proportional countercontrol",
+    "computed": "745.80",
+    "expected": "745.80",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan unequal",
+    "computed": "723.00",
+    "expected": "723.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan unequal proportion",
+    "computed": "711.90",
+    "expected": "711.90",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan firstdeclarant countercontrol",
+    "computed": "678.60",
+    "expected": "678.60",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan observed remaining quota",
+    "computed": "9822.25",
+    "expected": "9822.25",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan rural rehabilitation aid subtraction",
+    "computed": "400.00",
+    "expected": "400.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan thalidomide established rates",
+    "computed": "2750.00",
+    "expected": "2750.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Catalan forest tax cap",
+    "computed": "1000.00",
+    "expected": "1000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Andalucian ganancial vet each",
+    "computed": "90.00",
+    "expected": "90.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CLM ordinary rent amended500",
+    "computed": "500.00",
+    "expected": "500.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CLM rural annual cap",
+    "computed": "1800.00",
+    "expected": "1800.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Balearic child184days530cap",
+    "computed": "267.18",
+    "expected": "267.18",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Balearic child184days650cap",
+    "computed": "327.67",
+    "expected": "327.67",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Balearic ordinary payer2000 halfcap530",
+    "computed": "265.00",
+    "expected": "265.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Balearic ordinary payer1000 halfcap530",
+    "computed": "265.00",
+    "expected": "265.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Balearic enhanced payer1000 halfcap650",
+    "computed": "325.00",
+    "expected": "325.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary prior home/reinvest threshold",
+    "computed": "7000.00",
+    "expected": "7000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary threshold merely reached",
+    "computed": "0.00",
+    "expected": "0.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary regional6000 4pct",
+    "computed": "240.00",
+    "expected": "240.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary 15pct quota cap",
+    "computed": "150.00",
+    "expected": "150.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary combinedregional legacyplusown",
+    "computed": "828.00",
+    "expected": "828.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary quota1000 remaining",
+    "computed": "172.00",
+    "expected": "172.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary total home relief",
+    "computed": "1506.00",
+    "expected": "1506.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary quota700 availableown",
+    "computed": "22.00",
+    "expected": "22.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary ordinary health",
+    "computed": "500.00",
+    "expected": "500.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary OR increment once",
+    "computed": "600.00",
+    "expected": "600.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary higherincome cap",
+    "computed": "150.00",
+    "expected": "150.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary two worker contributions",
+    "computed": "1000.00",
+    "expected": "1000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary fixed plus two contributions",
+    "computed": "1600.00",
+    "expected": "1600.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Canary quota after combined credits",
+    "computed": "400.00",
+    "expected": "400.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CyL project30000 investor",
+    "computed": "6000.00",
+    "expected": "6000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CyL project20000 investor",
+    "computed": "4000.00",
+    "expected": "4000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CyL project60000 investor",
+    "computed": "10000.00",
+    "expected": "10000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CyL project40000 investor",
+    "computed": "8000.00",
+    "expected": "8000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CyL oldplusnew12000",
+    "computed": "2178.00",
+    "expected": "2178.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CyL oldplusnew6000",
+    "computed": "1350.00",
+    "expected": "1350.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CyL ruralplusnationallegacy",
+    "computed": "2856.00",
+    "expected": "2856.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Ext grant total net",
+    "computed": "16000.00",
+    "expected": "16000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Ext annual grant net",
+    "computed": "8000.00",
+    "expected": "8000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Ext rental cap-before-day",
+    "computed": "986.18",
+    "expected": "986.18",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Ext rental netgrant day",
+    "computed": "872.73",
+    "expected": "872.73",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Ext all275rented",
+    "computed": "1356.00",
+    "expected": "1356.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Ext Jan1after364",
+    "computed": "1117.58",
+    "expected": "1117.58",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Ext wrong365 countercontrol",
+    "computed": "657.53",
+    "expected": "657.53",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Ext fictional local offeredrent cap",
+    "computed": "9000.00",
+    "expected": "9000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Ext offer700 annual",
+    "computed": "8400.00",
+    "expected": "8400.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Rioja separate nursery300",
+    "computed": "300.00",
+    "expected": "300.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Rioja separate nursery200",
+    "computed": "200.00",
+    "expected": "200.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Rioja nursery combined",
+    "computed": "500.00",
+    "expected": "500.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Rioja nursery twoentitled each",
+    "computed": "250.00",
+    "expected": "250.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Rioja quota after nursery",
+    "computed": "224.30",
+    "expected": "224.30",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Rioja five months",
+    "computed": "500.00",
+    "expected": "500.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Rioja five months shared",
+    "computed": "250.00",
+    "expected": "250.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CLMattributionQ*N/G",
+    "computed": "79.07",
+    "expected": "79.07",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CantabriaattributionQ*N/G",
+    "computed": "70.49",
+    "expected": "70.49",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CanaryattributionQ*N/G",
+    "computed": "74.49",
+    "expected": "74.49",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Aragon attributedquota",
+    "computed": "77.62",
+    "expected": "77.62",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Aragon30pct afterTround",
+    "computed": "23.29",
+    "expected": "23.29",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "liquidable aid98571",
+    "computed": "985.71",
+    "expected": "985.71",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Ast aid ownrates",
+    "computed": "156.24",
+    "expected": "156.24",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Ext aid own2026rates",
+    "computed": "144.31",
+    "expected": "144.31",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Gal aid ownrates",
+    "computed": "152.69",
+    "expected": "152.69",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Gal aid roundedliquidable98635",
+    "computed": "986.35",
+    "expected": "986.35",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Gal aid centseparator",
+    "computed": "152.79",
+    "expected": "152.79",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Val directaid notBLfactor",
+    "computed": "74.20",
+    "expected": "74.20",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Bal aid BLbase",
+    "computed": "940.00",
+    "expected": "940.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Bal aid combinedgeneralrates",
+    "computed": "166.47",
+    "expected": "166.47",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Bal war activitynetbase",
+    "computed": "6000.00",
+    "expected": "6000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "Bal war credit",
+    "computed": "531.60",
+    "expected": "531.60",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CLM generalquota7000",
+    "computed": "137.75",
+    "expected": "137.75",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CLM generalquota8000",
+    "computed": "232.75",
+    "expected": "232.75",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CLM generalquota8600",
+    "computed": "289.75",
+    "expected": "289.75",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "CLM generalquota9600",
+    "computed": "384.75",
+    "expected": "384.75",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "jointG12000",
+    "computed": "12000.00",
+    "expected": "12000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "jointB8600",
+    "computed": "8600.00",
+    "expected": "8600.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "both-entitled counterratio26560",
+    "computed": "265.60",
+    "expected": "265.60",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "both-entitled counterratio32556",
+    "computed": "325.56",
+    "expected": "325.56",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "employee largeaid before19f",
+    "computed": "409500.00",
+    "expected": "409500.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "employee after19f",
+    "computed": "404000.00",
+    "expected": "404000.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  },
+  {
+    "control": "employee unionceiling",
+    "computed": "1800.00",
+    "expected": "1800.00",
+    "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+  }
+]

@@ -1,0 +1,67 @@
+{
+  "verdict": "CHANGES_REQUIRED_TWO_NARROW_PROCEDURAL_FINDINGS",
+  "head": "594f214eb17e0a5f81e5c9fec19f0faeaa5f37ae",
+  "content_commit": "09ba3df4c5368a5d7010ed3ace3f8ffff629bb3d",
+  "frozen_manifest_sha256": "6d5d5077553b7a9a02ecc5957dc26361020b64d0729416286bc05f18088d3644",
+  "review_input_manifest_sha256": "e4db699aecb100e21ce5c5c4d86ce1fbc9a2c72c86f6dc471d609c46ef160e86",
+  "guide_sha256": "a47e5eb7e726c24f806f9bcea58b469ed298041cdccb4af8d80489c51050efa2",
+  "findings": [
+    "PT-IR-01",
+    "PT-IR-02"
+  ],
+  "ledger_rows_reviewed": 43,
+  "statutory_bindings_verified": 54,
+  "agency_bindings_verified": 1,
+  "new_guide_skill_checks_pass": 10,
+  "all_faroe_example_blocks_pass": 24,
+  "predecessor_guides_byte_exact": 11,
+  "old_nonblank_units_preserved": 2490,
+  "old_topic_destinations_spotchecked": 11,
+  "prior_evidence_files_unchanged": 459,
+  "country_complete": false,
+  "property_job_complete": false,
+  "accountant_attestation": false,
+  "trust_tier_unchanged": 2,
+  "writer_tests_rerun": false,
+  "writer_tests_reported": 152,
+  "five_operational_gaps_remain_open": true,
+  "reviewed_inputs_unchanged_at_verdict": true,
+  "review_date": "2026-10-31",
+  "review_artifact_hashes": [
+    {
+      "path": "INITIAL-REVIEW.md",
+      "sha256": "96777ad0885f50a21259c0c4a6025e04f607a6e7400cbcad18d7d291bee78083",
+      "bytes": 11292
+    },
+    {
+      "path": "example-checks.txt",
+      "sha256": "6d794926bae9575f20edcf0ce8fd5220c7355199500035b3fd62eea175edf0e4",
+      "bytes": 60
+    },
+    {
+      "path": "findings.json",
+      "sha256": "7bdb8e8c79328ef17cd1e300483dec0739b28421e01743ec1821517e461bc844",
+      "bytes": 2432
+    },
+    {
+      "path": "hash-and-preservation-audit.json",
+      "sha256": "02033b64648a4d36ed83a53593274e55074b586d9a3359e1c70a994aee8051b4",
+      "bytes": 28847
+    },
+    {
+      "path": "review-input-manifest.json",
+      "sha256": "e4db699aecb100e21ce5c5c4d86ce1fbc9a2c72c86f6dc471d609c46ef160e86",
+      "bytes": 6640
+    },
+    {
+      "path": "skill-checks.txt",
+      "sha256": "f5e52371997b4b861252347ef50114e090e334085c86e3295abd8e484a8e1cb4",
+      "bytes": 391
+    },
+    {
+      "path": "source-access.json",
+      "sha256": "d564951f825128fcb8b855d417703d1d1094f2ff43131aa5e3826cfbc44458d3",
+      "bytes": 7833
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "original_candidate": "0a85c3bd65f4dc30edf9319cf52d04c395a1d305",
+  "before_sha256": {
+    "skills/chad/td-import-exemption-eligibility.md": "18685bed271937b94f6997105b638530091c992ab0c04bde2c0d21c67a38ba01",
+    "evidence/ledgers/td-import-exemption-eligibility.md": "473732a2a6fe17d17e2e3f6d825b4489b62513f58401660e6f466ffc5b0d93b5"
+  },
+  "after_sha256": {
+    "skills/chad/td-import-exemption-eligibility.md": "1fe234fcb9a25e443851de2c6e116756129d643a702c299560c7a7301c932428",
+    "evidence/ledgers/td-import-exemption-eligibility.md": "561388918639e48b904cdf8830e33a2be9663acc103beb497a69ef0f414aa66e"
+  },
+  "repair": "Exclude all wheat lines, require origin and interacting-instrument check. Add actual finance-law art65 scoped citation/read and ledger rows13\u201314; version0.2. No hierarchy resolution or final wheat liability asserted.",
+  "unchanged": "All6legacyfiles/CTAs/platformfields, originalcandidate/source-record, examples and old-topic map unchanged."
+}

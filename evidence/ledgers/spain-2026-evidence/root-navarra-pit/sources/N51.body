@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="BOE-A-2023-16401 Decreto Foral Legislativo 2/2023, de 24 de mayo, por el que se aprueba el texto refundido de las disposiciones del régimen tributario especial de las fundaciones y otras entidades sin fines lucrativos y de los incentivos fiscales al mecenazgo." />
+    <title>BOE-A-2023-16401 Decreto Foral Legislativo 2/2023, de 24 de mayo, por el que se aprueba el texto refundido de las disposiciones del régimen tributario especial de las fundaciones y otras entidades sin fines lucrativos y de los incentivos fiscales al mecenazgo.</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/diario-boe.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/consolidada.css" type="text/css">
+  
+    <link rel="canonical" href="https://www.boe.es/buscar/act.php?id=BOE-A-2023-16401"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es-nc"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/dflg"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2023-16401" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#date_document" content="2023-05-24" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#number" content="2" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3861"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4905"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5143"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5328"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es-nc"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/dflg"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2023-16401" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#date_document" content="2023-05-24" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#number" content="2" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3861"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4905"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5143"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5328"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/dof"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof" property="http://data.europa.eu/eli/ontology#consolidated_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa" property="http://data.europa.eu/eli/ontology#title" content="Decreto Foral Legislativo 2/2023, de 24 de mayo, por el que se aprueba el texto refundido de las disposiciones del régimen tributario especial de las fundaciones y otras entidades sin fines lucrativos y de los incentivos fiscales al mecenazgo." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa" property="http://data.europa.eu/eli/ontology#date_publication" content="2023-07-15" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/epub"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/html"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/pdf"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/xml"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/epub" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/epub" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/epub" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/xml" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/xml" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/xml"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa/xml" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es-nc"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/dflg"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2023-16401" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#date_document" content="2023-05-24" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#number" content="2" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3861"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4905"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5143"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5328"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#version_date" content="2024-12-31" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231/spa" property="http://data.europa.eu/eli/ontology#title" content="Decreto Foral Legislativo 2/2023, de 24 de mayo, por el que se aprueba el texto refundido de las disposiciones del régimen tributario especial de las fundaciones y otras entidades sin fines lucrativos y de los incentivos fiscales al mecenazgo." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231/spa/html"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20241231/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es-nc"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/dflg"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2023-16401" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#date_document" content="2023-05-24" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#number" content="2" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3861"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4905"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5143"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5328"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#version_date" content="2023-12-29" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229/spa" property="http://data.europa.eu/eli/ontology#title" content="Decreto Foral Legislativo 2/2023, de 24 de mayo, por el que se aprueba el texto refundido de las disposiciones del régimen tributario especial de las fundaciones y otras entidades sin fines lucrativos y de los incentivos fiscales al mecenazgo." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229/spa/html"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20231229/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es-nc"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/dflg"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2023-16401" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#date_document" content="2023-05-24" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#number" content="2" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3861"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4905"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5143"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/5328"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/con"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#version_date" content="2023-06-13" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613" property="http://data.europa.eu/eli/ontology#consolidates" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/dof"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613/spa" property="http://data.europa.eu/eli/ontology#title" content="Decreto Foral Legislativo 2/2023, de 24 de mayo, por el que se aprueba el texto refundido de las disposiciones del régimen tributario especial de las fundaciones y otras entidades sin fines lucrativos y de los incentivos fiscales al mecenazgo." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613/spa/html"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con/20230613/spa"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor" tabindex="-1">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/" tabindex="-1">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" srcset="/imagenes/logoMPRmovil.svg" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" srcset="/imagenes/logoMPR.svg" alt="Ministerio de la Presidencia"></a></span>
+
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+        
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <span class="fuera">Idioma actual:</span>
+            <input id="activar-idiomas" type="checkbox" class="fuera">
+            <label class="idioma-actual" for="activar-idiomas" title="Idiomas: Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="fuera"> / </span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <ul id="lista-idiomas">
+              <li><a href="act.php?lang=es&amp;id=BOE-A-2023-16401&amp;tn=1&amp;p=" lang="es" hreflang="es"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><span class="fuera"> / </span><em>Castellano</em></span></a></li>
+              <li><a href="act.php?lang=ca&amp;id=BOE-A-2023-16401&amp;tn=1&amp;p=" lang="ca" hreflang="ca"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><span class="fuera"> / </span><em>Catal&agrave;</em></span></a></li>
+              <li><a href="act.php?lang=gl&amp;id=BOE-A-2023-16401&amp;tn=1&amp;p=" lang="gl" hreflang="gl"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><span class="fuera"> / </span><em>Galego</em></span></a></li>
+              <li><a href="act.php?lang=eu&amp;id=BOE-A-2023-16401&amp;tn=1&amp;p=" lang="eu" hreflang="eu"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><span class="fuera"> / </span><em>Euskara</em></span></a></li>
+              <li><a href="act.php?lang=va&amp;id=BOE-A-2023-16401&amp;tn=1&amp;p=" lang="ca-valencia" hreflang="ca-valencia"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><span class="fuera"> / </span><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="act.php?lang=en&amp;id=BOE-A-2023-16401&amp;tn=1&amp;p=" lang="en" hreflang="en"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><span class="fuera"> / </span><em>English</em></span></a></li>
+              <li><a href="act.php?lang=fr&amp;id=BOE-A-2023-16401&amp;tn=1&amp;p=" lang="fr" hreflang="fr"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><span class="fuera"> / </span><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;" class="fuera">
+          <label class="click-desplegar resto" for="activar-menu" title="Men&uacute;: Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe">BOE</a></li>
+                  <li><a href="/diario_borme">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones</a></li>
+                  <li><a href="/edictos_judiciales">Edictos judiciales</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                  <li><a href="/datosabiertos/api/api.php">Datos abiertos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscar/">Buscar</a></li>
+        <li class="destino">Documento consolidado BOE-A-2023-16401</li>
+        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolBdatos">
+<div class="titulo-wrapper">
+  <h2>Legislación consolidada<img class="tooltipimg" src="/imagenes/msg_info.png" alt="(información)"/><span class="tooltiptext">Este texto consolidado es de carácter informativo y no tiene valor jurídico.<br/>La consolidación consiste en integrar en un solo texto, sin valor oficial, las modificaciones, correcciones y derogaciones de carácter expreso que una norma ha tenido desde su origen, con el objetivo de facilitar el acceso al Derecho vigente. Para fines jurídicos, debe consultarse la publicación oficial.</span></h2>
+  <div class="puntoAyuda">
+    <a href="/buscar/ayudas/legislacion_actualizada.php">
+      <span class="pc tablet">Ayuda</span>
+    </a>
+  </div>
+</div>
+<div id="barraSep" class="enlacesDoc">
+  <h3 class="documento-tit">Decreto Foral Legislativo 2/2023, de 24 de mayo, por el que se aprueba el texto refundido de las disposiciones del régimen tributario especial de las fundaciones y otras entidades sin fines lucrativos y de los incentivos fiscales al mecenazgo.</h3>
+  <div class="metadatosDoc">
+    <div class="metadatos">
+      <dl class="conso">
+        <dt>Publicado en:</dt>
+        <dd><abbr title="Boletín Oficial de Navarra">«BON»</abbr> <abbr title="número">núm.</abbr> 124, de 13/06/2023, <abbr title="Boletín Oficial del Estado">«BOE»</abbr> <abbr title="número">núm.</abbr> 168, de 15/07/2023.</dd>
+        <dt>Entrada en vigor:</dt>
+        <dd>14/06/2023</dd>
+        <dt>Departamento:</dt>
+        <dd>Comunidad Foral de Navarra</dd>
+        <dt>Referencia:</dt>
+        <dd>
+          <a href="/buscar/doc.php?id=BOE-A-2023-16401">BOE-A-2023-16401</a>
+        </dd>
+        <dt>Permalink ELI:</dt>
+        <dd>
+          <a href="https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con">https://www.boe.es/eli/es-nc/dflg/2023/05/24/2/con</a>
+        </dd>
+      </dl>
+    </div>
+    <div class="redaccion">
+      <label for="activar-versiones">
+        <span class="etiqDoc">Seleccionar redacción: </span>
+      </label>
+      <div class="dropdown">
+        <input id="activar-versiones" type="checkbox"/>
+        <label class="version-actual" for="activar-versiones" title="Haga clic o utilice barra espaciadora para abrir o cerrar opciones">
+          <span>Última actualización publicada el 31/12/2024</span>
+        </label>
+        <ul id="lista-versiones">
+          <li>
+            <a class="version-selected" href="?id=BOE-A-2023-16401&amp;tn=1&amp;p=20241231">Última actualización publicada el 31/12/2024</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2023-16401&amp;tn=1&amp;p=20231229">Modificación publicada el 29/12/2023</a>
+          </li>
+          <li>
+            <a href="?id=BOE-A-2023-16401&amp;tn=1&amp;p=20230613">Texto inicial publicado el 13/06/2023</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="enlaces-conso">
+      <li class="puntoPDF2">
+        <a target="_blank" title="Abre el PDF en una nueva ventana" href="/buscar/pdf/2023/BOE-A-2023-16401-consolidado.pdf">PDF</a>
+      </li>
+      <li class="puntoEpub">
+        <a target="_blank" href="/buscar/epub/2023/BOE-A-2023-16401-consolidado.epub">ePUB</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<script src="/js/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+<script src="/djrae/_js/jquery.djRAE.js?rnd=668"></script>
+<link   rel="stylesheet" type="text/css" href="/djrae/lib/jquery.djRAE.css" />
+
+<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="/djrae/lib/jquery.djRAE_ie8.css" />
+<![endif]-->
+	
+<div id="barra_dj">
+	<form name="frm_search_dj" action="/djrae/execute_service.php" target="_blank" method="GET">
+		<a class="logo-video" title="Ver v&iacute;deo sobre el Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico" href="https://youtu.be/7W_GfHGjVrw" target="_blank"><span class="fuera">Vídeo tutorial sobre Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico de la Real Academia Espa&ntilde;ola</span></a>
+		<a href="https://dpej.rae.es/" title="Ir a la web del Diccionario panhisp&aacute;nico del espa&ntilde;ol jur&iacute;dico (DPEJ)" target="_blank"><div class="icon_dj"><span class="fuera">Ir a la web del Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico (DPEJ)</span>&nbsp;</div></a>
+		<label class="azul_dj" for="caja-busqueda-djrae"><span class="fuera">Introducir t&eacute;rmino a buscar en el </span>
+		<span class="pc tablet">Diccionario Panhisp&aacute;nico del Espa&ntilde;ol <span class="rojo_dj">J</span>ur&iacute;dico</span>
+		</label>
+		<div id="container_dj">
+			<input type="text" name="w" id="caja-busqueda-djrae"/>
+			<div class="lupa_dj">
+				<span class="movil"><input for="caja-busqueda-djrae" type="image" src="/imagenes/home/lupa_16x16.png" title="Buscar en el Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico de la RAE" alt="Buscar en el Diccionario Panhisp&aacute;nico del Espa&ntilde;ol Jur&iacute;dico de la RAE"></span>
+			</div>
+		</div>
+	</form>
+</div>
+
+<script>
+	if(typeof jQuery !== "undefined"){
+
+		jQuery.noConflict();
+
+		var carga = true, djrae_t = "P";
+
+		if(!window.matchMedia){
+			//IE9
+			carga = true;
+		}else if(window.matchMedia("(max-width:669px)").matches){
+			carga = true;
+			djrae_t  = "M";
+		} else if(window.matchMedia("(min-width:670px) and (max-width:1050px)").matches) {
+			carga = true;
+			djrae_t  = "T";
+		}
+
+		if(carga){
+			jQuery("#container_dj").djraeWidget({modo: djrae_t});
+		}
+	}
+</script>
+<div class="pretexto" id="tabs">
+  <ul class="navlist">
+    <li><span class="pc tablet"><a href="#" class="current">Completo</a></span>
+    <span class="movil"><a href="#tabs" class="current">Completo</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2023-16401&amp;p=20241231&amp;tn=0">Solo Texto</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2023-16401&amp;p=20241231&amp;tn=0#tabs">Texto</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2023-16401&amp;p=20241231&amp;tn=2">&Iacute;ndice</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2023-16401&amp;p=20241231&amp;tn=2#tabs">&Iacute;ndice</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2023-16401&amp;p=20241231&amp;tn=6">An&aacute;lisis</a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2023-16401&amp;p=20241231&amp;tn=6#tabs">An&aacute;lisis</a></span></li>
+    <li><span class="pc tablet"><a href="/buscar/act.php?id=BOE-A-2023-16401&amp;p=20241231&amp;tn=3" class="guardar">Recibir alerta <img src="/imagenes/logoMiBOE_azul.png" srcset="/imagenes/logoMiBOE_azul.svg" alt="Mi BOE"/></a></span>
+    <span class="movil"><a href="/buscar/act.php?id=BOE-A-2023-16401&amp;p=20241231&amp;tn=3#tabs" class="guardar"><img src="/imagenes/logoMiBOE_azul.png" srcset="/imagenes/logoMiBOE_azul.svg" alt="Mi BOE"/></a></span></li>
+  </ul>
+</div>
+<div id="textoxslt">
+<h3>Texto consolidado<span class="subtitMostrado">: &laquo;&Uacute;ltima actualizaci&oacute;n, publicada el 31/12/2024&raquo;</span></h3>
+  <div class="marcadores">
+    <label for="activar-marcadores"><span class="etiqDoc">Ir a: </span></label>
+    <div id="selector-marcador"  class="dropdown">
+      <input id="activar-marcadores" type="checkbox">
+      <label class="marcador-actual" for="activar-marcadores" title="Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span>Seleccionar apartado</span></label>
+      <ul id="lista-marcadores">
+        <li><a href="#pr">[Pre&aacute;mbulo]</a></li>
+        <li><a href="#au">Artículo único</a></li>
+        <li><a href="#da">Disposición adicional única</a></li>
+        <li><a href="#dd">Disposición derogatoria única</a></li>
+        <li><a href="#df">Disposición final única</a></li>
+        <li><a href="#fi">[Firma]</a></li>
+        <li><a href="#te">TEXTO</a></li>
+        <li><a href="#ti">TÍTULO I</a></li>
+        <li><a href="#ci">CAPÍTULO I</a></li>
+        <li><a href="#a1">Artículo 1</a></li>
+        <li><a href="#a2">Artículo 2</a></li>
+        <li><a href="#a3">Artículo 3</a></li>
+        <li><a href="#a4">Artículo 4</a></li>
+        <li><a href="#ci-2">CAPÍTULO II</a></li>
+        <li><a href="#s1">Sección 1</a></li>
+        <li><a href="#a5">Artículo 5</a></li>
+        <li><a href="#a6">Artículo 6</a></li>
+        <li><a href="#a7">Artículo 7</a></li>
+        <li><a href="#a8">Artículo 8</a></li>
+        <li><a href="#a9">Artículo 9</a></li>
+        <li><a href="#a1-2">Artículo 10</a></li>
+        <li><a href="#s2">Sección 2</a></li>
+        <li><a href="#a1-3">Artículo 11</a></li>
+        <li><a href="#s3">Sección 3</a></li>
+        <li><a href="#a1-4">Artículo 12</a></li>
+        <li><a href="#a1-5">Artículo 13</a></li>
+        <li><a href="#a1-6">Artículo 14</a></li>
+        <li><a href="#ti-2">TÍTULO II</a></li>
+        <li><a href="#ci-3">CAPÍTULO I</a></li>
+        <li><a href="#a1-7">Artículo 15</a></li>
+        <li><a href="#s1-2">Sección 1</a></li>
+        <li><a href="#a1-8">Artículo 16</a></li>
+        <li><a href="#a1-9">Artículo 17</a></li>
+        <li><a href="#a1-10">Artículo 18</a></li>
+        <li><a href="#s2-2">Sección 2</a></li>
+        <li><a href="#a1-11">Artículo 19</a></li>
+        <li><a href="#a2-2">Artículo 20</a></li>
+        <li><a href="#a2-3">Artículo 21</a></li>
+        <li><a href="#s3-2">Sección 3</a></li>
+        <li><a href="#a2-4">Artículo 22</a></li>
+        <li><a href="#a2-5">Artículo 23</a></li>
+        <li><a href="#ci-4">CAPÍTULO II</a></li>
+        <li><a href="#s1-3">Sección 1</a></li>
+        <li><a href="#s1-4">Subsección 1</a></li>
+        <li><a href="#a2-6">Artículo 24</a></li>
+        <li><a href="#a2-7">Artículo 25</a></li>
+        <li><a href="#a2-8">Artículo 26</a></li>
+        <li><a href="#a2-9">Artículo 27</a></li>
+        <li><a href="#a2-10">Artículo 28</a></li>
+        <li><a href="#a2-11">Artículo 29</a></li>
+        <li><a href="#s2-3">Subsección 2</a></li>
+        <li><a href="#a3-2">Artículo 30</a></li>
+        <li><a href="#a3-3">Artículo 31</a></li>
+        <li><a href="#a3-4">Artículo 32</a></li>
+        <li><a href="#s2-4">Sección 2</a></li>
+        <li><a href="#a3-5">Artículo 33</a></li>
+        <li><a href="#a3-6">Artículo 34</a></li>
+        <li><a href="#a3-7">Artículo 35</a></li>
+        <li><a href="#s3-3">Sección 3</a></li>
+        <li><a href="#a3-8">Artículo 36</a></li>
+        <li><a href="#a3-9">Artículo 37</a></li>
+        <li><a href="#a3-10">Artículo 38</a></li>
+        <li><a href="#s4">Sección 4</a></li>
+        <li><a href="#a3-11">Artículo 39</a></li>
+        <li><a href="#a4-2">Artículo 40</a></li>
+        <li><a href="#a4-3">Artículo 41</a></li>
+        <li><a href="#a4-4">Artículo 42</a></li>
+        <li><a href="#s5">Sección 5</a></li>
+        <li><a href="#a4-5">Artículo 43</a></li>
+        <li><a href="#a4-6">Artículo 44</a></li>
+        <li><a href="#a4-7">Artículo 45</a></li>
+        <li><a href="#ci-5">CAPÍTULO III</a></li>
+        <li><a href="#a4-8">Artículo 46</a></li>
+        <li><a href="#a4-9">Artículo 47</a></li>
+        <li><a href="#ci-6">CAPÍTULO IV</a></li>
+        <li><a href="#a4-10">Artículo 48</a></li>
+        <li><a href="#a4-11">Artículo 49</a></li>
+        <li><a href="#a5-2">Artículo 50</a></li>
+        <li><a href="#da-2">Disposición adicional primera</a></li>
+        <li><a href="#da-3">Disposición adicional segunda</a></li>
+        <li><a href="#da-4">Disposición adicional tercera</a></li>
+        <li><a href="#da-5">Disposición adicional cuarta</a></li>
+        <li><a href="#da-6">Disposición adicional quinta</a></li>
+        <li><a href="#da-7">Disposición adicional sexta</a></li>
+        <li><a href="#da-8">Disposición adicional séptima</a></li>
+        <li><a href="#da-9">Disposición adicional octava</a></li>
+        <li><a href="#dt">Disposición transitoria primera</a></li>
+        <li><a href="#dt-2">Disposición transitoria segunda</a></li>
+        <li><a href="#df-2">Disposición final única</a></li>
+      </ul>
+    </div>
+  </div>
+          <hr class="bloque"/>
+          <div class="bloque" id="pr">
+            <p class="bloque">[Bloque 1: #pr]</p>
+
+<p class="centro_redonda">PREÁMBULO</p>
+<p class="parrafo_2">La <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2022-2067" target="_blank" title="Abre nueva ventana">Ley Foral 19/2021, de 29 de diciembre</a>, de modificación de diversos impuestos y otras medidas tributarias, en su disposición adicional cuarta, al amparo de lo dispuesto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1982-20824#aveintiuno" target="_blank" title="Abre nueva ventana">artículo 21 de la Ley Orgánica 13/1982, de 10 de agosto</a>, de Reintegración y Amejoramiento del Régimen Foral de Navarra, autoriza al Gobierno de Navarra para que, antes de 1 de junio de 2023, refunda las disposiciones vigentes relativas al régimen tributario de las fundaciones y actividades de patrocinio y a los incentivos fiscales al mecenazgo, regularizando, aclarando y armonizando, además, los textos legales a refundir.</p>
+<p class="parrafo">Como puede verse, el Parlamento de Navarra ha establecido el método y, al mismo tiempo, ha fijado los límites del encargo al Gobierno de Navarra. Con arreglo a ello, el texto refundido de las disposiciones vigentes relativas al régimen tributario de las fundaciones, así como de las actividades de patrocinio y de los incentivos fiscales al mecenazgo, debe ser el resultado de la regularización, la aclaración y la armonización de unas normas legales que, como las que son objeto de refundición, han nacido en momentos y situaciones diferentes y han sido creadas partiendo de ideas no siempre coincidentes.</p>
+<p class="parrafo">El verbo regularizar significa ajustar o poner en orden. El concepto aclarar puede equivaler en este contexto a hacer clara o más clara una cosa, o quitar lo que la oscurece. Y armonizar se identifica con conciliar, conformar, compaginar o coordinar dos o más partes de un todo. Por tanto, la autorización del Parlamento de Navarra no se circunscribe a la mera formulación de un texto consolidado, sino que incluye esa triple facultad: regularizar, aclarar y armonizar las normas. En definitiva, si se ha de ser fiel al mandato recibido, no es suficiente la mera yuxtaposición de artículos. La lealtad y la fidelidad al mandato parlamentario exige desarrollar una complicada y, a veces, difícil tarea con el objetivo de alcanzar ese triple objetivo que persigue la decisión legal.</p>
+<p class="parrafo">En otro orden de ideas y además de lo dicho, la amplitud del mandato parlamentario permite solucionar algunos de los problemas que plantea la actual normativa, eso sí, sin alterar el sistema legal vigente. Por ello, al redactar el texto refundido, se ha ordenado una normativa que las sucesivas reformas legales habían desordenado, se ha redactado de tal forma que sea más sencilla de comprender y de aplicar, y finalmente se ha intentado subsanar las contradicciones, dudas interpretativas o repeticiones que tenía la referida normativa. Se contribuye así a aumentar la seguridad jurídica de la administración tributaria y, especialmente, de los contribuyentes.</p>
+<p class="parrafo">En ejercicio de dicha autorización se ha elaborado el presente texto refundido, en el que se recogen todas las normas de rango legal, de carácter permanente y general, que actualmente regulan el régimen tributario foral de las fundaciones y actividades de patrocinio, así como los incentivos fiscales al mecenazgo.</p>
+<p class="parrafo">Así, se incorporan al texto refundido, quedando derogadas, la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1996-22233" target="_blank" title="Abre nueva ventana">Ley Foral 10/1996, de 2 de julio</a>, reguladora del régimen tributario de las fundaciones y de las actividades de patrocinio; el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2001-9283#a2-4" target="_blank" title="Abre nueva ventana">artículo 22 de Ley Foral 5/2001, de 9 de marzo</a>, de Cooperación al Desarrollo; y la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2014-5949" target="_blank" title="Abre nueva ventana">Ley Foral 8/2014, de 16 de mayo</a>, reguladora del mecenazgo cultural y de sus incentivos fiscales en la Comunidad Foral de Navarra.</p>
+<p class="parrafo">En cumplimiento de lo dispuesto en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2019-4299" target="_blank" title="Abre nueva ventana">Ley Foral 11/2019, de 11 de marzo</a>, de la Administración de la Comunidad Foral de Navarra y del Sector Público Institucional Foral, la elaboración de este decreto foral legislativo se ha desarrollado de acuerdo con los principios de necesidad, eficacia, proporcionalidad, seguridad jurídica, transparencia y eficiencia.</p>
+<p class="parrafo">La norma responde al cumplimento de la delegación legislativa del Parlamento de Navarra para refundir las disposiciones vigentes relativas al régimen tributario de las fundaciones y actividades de patrocinio y a los incentivos fiscales al mecenazgo, regularizando, aclarando y armonizando, además, los textos legales a refundir, siendo el decreto foral legislativo la única vía normativa posible para dicha finalidad.</p>
+<p class="parrafo">Se cumple también el principio de proporcionalidad, por cuanto se ha procurado alcanzar estrictamente los objetivos perseguidos.</p>
+<p class="parrafo">Respecto al principio de seguridad jurídica, se ha garantizado la coherencia del proyecto normativo con el resto del ordenamiento jurídico foral.</p>
+<p class="parrafo">En cuanto al principio de transparencia, sin perjuicio de su publicación en el Boletín Oficial de Navarra, se garantiza mediante la publicación del proyecto y de la memoria, en el Portal de Gobierno Abierto de Navarra, a efectos de que la ciudadanía pueda conocer esos textos en el trámite de audiencia e información pública.</p>
+<p class="parrafo">Finalmente, en relación con el principio de eficiencia se ha intentado que la norma genere las menores cargas administrativas y costes indirectos posibles, fomentando el uso racional de los recursos públicos. En este sentido, las exigencias de información y documentación que se requieren de los contribuyentes son las estrictamente imprescindibles para garantizar un mínimo control de su actividad por parte de la administración tributaria.</p>
+<p class="parrafo">El contenido de este decreto foral legislativo fue remitido al Consejo de Navarra para su preceptivo dictamen en cumplimiento de lo dispuesto en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2016-6347#a1-6" target="_blank" title="Abre nueva ventana">artículo 14.1.d) de la Ley Foral 8/2016, de 9 de junio</a>, sobre el Consejo de Navarra, y en virtud del Acuerdo del Gobierno de Navarra, de 23 de marzo de 2023.</p>
+<p class="parrafo">Tal dictamen fue emitido el 15 de mayo de 2023, considerando ajustado al ordenamiento jurídico el contenido de la norma.</p>
+<p class="parrafo">En su virtud, a propuesta de la Consejera de Economía y Hacienda, y de conformidad con la decisión adoptada por el Gobierno de Navarra en sesión celebrada el día veinticuatro de mayo de dos mil veintitrés, decreto:</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="au">
+            <p class="bloque">[Bloque 2: #au]</p>
+
+<h5 class="articulo">Artículo único. Aprobación del texto refundido.</h5>
+<p class="parrafo">1. Se aprueba el texto refundido de las disposiciones del régimen tributario especial de las fundaciones y otras entidades sin fines lucrativos y de los incentivos fiscales al mecenazgo.</p>
+<p class="parrafo">2. El presente decreto foral legislativo deberá ser comunicado al Parlamento de Navarra, a los efectos previstos en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2005-1576#a5-4" target="_blank" title="Abre nueva ventana">artículo 52.3 de la Ley Foral 14/2004, de 3 de diciembre</a>, del Gobierno de Navarra y de su Presidenta o Presidente.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="da">
+            <p class="bloque">[Bloque 3: #da]</p>
+
+<h5 class="articulo">Disposición adicional única. Remisiones normativas.</h5>
+<p class="parrafo">Las referencias efectuadas en otras normas a las disposiciones que han sido integradas en el texto refundido que se aprueba, se entenderán realizadas a los preceptos correspondientes del texto refundido.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dd">
+            <p class="bloque">[Bloque 4: #dd]</p>
+
+<h5 class="articulo">Disposición derogatoria única. Derogación normativa.</h5>
+<p class="parrafo">1. A la entrada en vigor de este decreto foral legislativo quedarán derogadas, con motivo de su incorporación al texto refundido que se aprueba, las siguientes normas:</p>
+<p class="parrafo_2">a) La <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1996-22233" target="_blank" title="Abre nueva ventana">Ley Foral 10/1996, de 2 de julio</a>, reguladora del Régimen tributario de las Fundaciones y de las actividades de patrocinio.</p>
+<p class="parrafo">b) El <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2001-9283#a2-4" target="_blank" title="Abre nueva ventana">artículo 22 de Ley Foral 5/2001, de 9 de marzo</a>, de Cooperación al Desarrollo.</p>
+<p class="parrafo">c) La <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2014-5949" target="_blank" title="Abre nueva ventana">Ley Foral 8/2014, de 16 de mayo</a>, reguladora del mecenazgo cultural y de sus incentivos fiscales en la Comunidad Foral de Navarra.</p>
+<p class="parrafo_2">2. Asimismo, quedan derogadas cuantas otras disposiciones de igual o inferior rango se opongan a lo establecido en este decreto foral legislativo.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="df">
+            <p class="bloque">[Bloque 5: #df]</p>
+
+<h5 class="articulo">Disposición final única. Entrada en vigor.</h5>
+<p class="parrafo">El presente decreto foral legislativo y el texto refundido que aprueba entrarán en vigor el día siguiente al de su publicación en el «Boletín Oficial de Navarra».</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="fi">
+            <p class="bloque">[Bloque 6: #fi]</p>
+
+<p class="parrafo_2">Pamplona, 24 de mayo de 2023.–La Presidenta de la Comunidad Foral de Navarra, María Chivite Navascués.–El Consejero de Economía y Hacienda, Juan Cruz Cigudosa García.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="te">
+            <p class="bloque">[Bloque 7: #te]</p>
+
+<h4 class="anexo">TEXTO REFUNDIDO DE LAS DISPOSICIONES DEL RÉGIMEN TRIBUTARIO ESPECIAL DE LAS FUNDACIONES Y OTRAS ENTIDADES SIN FINES LUCRATIVOS, Y DE LOS INCENTIVOS FISCALES AL MECENAZGO</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ti">
+            <p class="bloque">[Bloque 8: #ti]</p>
+
+<h4 class="titulo_num">TÍTULO I</h4>
+<h4 class="titulo_tit">Régimen tributario especial de las fundaciones y otras entidades sin fines lucrativos</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ci">
+            <p class="bloque">[Bloque 9: #ci]</p>
+
+<h4 class="capitulo_num">CAPÍTULO I</h4>
+<h4 class="capitulo_tit">Ámbito de aplicación, requisitos, adquisición y pérdida del régimen tributario especial</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1">
+            <p class="bloque">[Bloque 10: #a1]</p>
+
+<h5 class="articulo">Artículo 1. Entidades beneficiarias del régimen tributario especial.</h5>
+<p class="parrafo">1. El régimen tributario especial regulado en este título será de aplicación a las fundaciones constituidas al amparo de lo establecido en la Ley 42 de la Compilación de Derecho Civil Foral de Navarra y en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2021-12827" target="_blank" title="Abre nueva ventana">Ley Foral 13/2021, de 30 de junio</a>, de Fundaciones de Navarra.</p>
+<p class="parrafo">2. El régimen tributario especial regulado en este título también será aplicable:</p>
+<p class="parrafo_2">a) A las fundaciones que se hayan constituido conforme a la normativa estatal o a la de las Comunidades Autónomas con competencia en la materia.</p>
+<p class="parrafo">b) A las asociaciones declaradas de utilidad pública que cumplan los requisitos y condiciones de la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2002-5852" target="_blank" title="Abre nueva ventana">Ley Orgánica 1/2002, de 22 de marzo</a>, y de sus normas de desarrollo, o de las disposiciones de las Comunidades Autónomas sobre esta materia.</p>
+<p class="parrafo">c) A las organizaciones no gubernamentales de desarrollo inscritas en el Registro correspondiente del Ministerio competente en materia de cooperación internacional al desarrollo.</p>
+<p class="parrafo_2">3. Lo dispuesto en el capítulo II de este título será aplicable a las entidades señaladas en los apartados 1 y 2 que, de conformidad con lo establecido en el Convenio Económico, deban aplicar normativa foral navarra.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2">
+            <p class="bloque">[Bloque 11: #a2]</p>
+
+<h5 class="articulo">Artículo 2. Requisitos.</h5>
+<p class="parrafo">1. Las fundaciones a que se refiere el artículo 1.1 que deseen acogerse al régimen tributario especial deberán cumplir los requisitos y condiciones establecidos en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2021-12827" target="_blank" title="Abre nueva ventana">Ley Foral 13/2021</a> y en este texto refundido.</p>
+<p class="parrafo">Asimismo, con independencia del importe de la dotación inicial, la persona o personas fundadoras deberán justificar la adecuación y suficiencia de la dotación inicial a los fines fundacionales mediante la presentación del primer programa de actuación, que abarcará un periodo de un año, y que irá acompañado de un estudio económico que acreditará su viabilidad utilizando exclusivamente dichos recursos, y que comprenderá la financiación completa, pormenorizada e identificable de todas las actividades del programa.</p>
+<p class="parrafo">2. Las entidades enumeradas en el artículo 1.2 deberán cumplir todos los requisitos recogidos en la normativa que les resulte de aplicación y, además:</p>
+<p class="parrafo_2">a) Deberán cumplir las obligaciones contables previstas en las normas por las que se rigen o, en su defecto, en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627" target="_blank" title="Abre nueva ventana">Código de Comercio</a> y disposiciones complementarias; así como las obligaciones de rendición de cuentas que establezca su legislación específica.</p>
+<p class="parrafo">b) En lo que se refiere al destino de rentas e ingresos, así como a la liquidación y adjudicación del haber remanente, deberán cumplir lo establecido en los <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2021-12827#a4-9" target="_blank" title="Abre nueva ventana">artículos 47 y 20 de la Ley Foral 13/2021</a>, respectivamente.</p>
+<p class="parrafo">c) No podrán tener participación alguna en sociedades mercantiles en las que deban responder personalmente de las deudas sociales, conforme a lo establecido en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2021-12827#a4-10" target="_blank" title="Abre nueva ventana">artículo 48.3 de la Ley Foral 13/2021</a>.</p>
+<p class="parrafo">d) Deberán estar inscritas en el registro correspondiente.</p>
+<p class="parrafo_2">3. No podrán aplicar el régimen tributario especial las entidades que no estén al corriente en el cumplimiento de sus obligaciones relativas a la presentación de la autoliquidación del Impuesto sobre Sociedades.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3">
+            <p class="bloque">[Bloque 12: #a3]</p>
+
+<h5 class="articulo">Artículo 3. Opción por el régimen tributario especial.</h5>
+<p class="parrafo">1. Las entidades a que se refiere el artículo 1 que deseen aplicar el régimen tributario especial deberán comunicarlo, a través del Registro General Electrónico, al servicio de la Hacienda Foral de Navarra competente en materia de fundaciones y entidades sin fines lucrativos, quedando vinculadas al mismo en tanto cumplan los requisitos para su aplicación y no comuniquen en la misma forma la renuncia al régimen.</p>
+<p class="parrafo">2. La comunicación deberá realizarse:</p>
+<p class="parrafo_2">a) Tratándose de las entidades recogidas en el artículo 1.1, y 1.2.a) y c), una vez la entidad haya sido inscrita en el correspondiente registro, debiendo presentar el documento acreditativo de tal inscripción.</p>
+<p class="parrafo">En el caso de las entidades del artículo 1.1, podrán presentar la comunicación de la opción junto con la solicitud de inscripción en el Registro de Fundaciones de Navarra, en cuyo caso Hacienda Foral de Navarra examinará toda la documentación una vez reciba la resolución de la inscripción. En ese supuesto la comunicación de la opción se entenderá realizada en la fecha de inscripción en el citado registro.</p>
+<p class="parrafo">b) Tratándose de las entidades recogidas en el artículo 1.2.b), cuando la asociación haya sido declarada de utilidad pública, debiendo presentar la resolución correspondiente.</p>
+<p class="parrafo_2">3. El servicio de la Hacienda Foral de Navarra competente en materia de fundaciones y entidades sin fines lucrativos podrá recabar de los interesados las aclaraciones y datos complementarios precisos para conocer con exactitud el alcance de las cláusulas fundacionales y estatutarias, y para comprobar que la entidad reúne los requisitos para ser calificada como fundación, asociación declarada de utilidad pública u organización no gubernamental de desarrollo.</p>
+<p class="parrafo">Si en el plazo de 3 meses desde la comunicación la entidad no ha recibido notificación expresa de la denegación, se entenderá que puede aplicar el régimen tributario especial. En el supuesto a que se refiere el segundo párrafo de apartado 2.a), el plazo de tres meses computará desde la fecha de inscripción en el Registro de Fundaciones de Navarra.</p>
+<p class="parrafo">4. El régimen tributario especial se aplicará, salvo denegación expresa:</p>
+<p class="parrafo_2">a) Desde la fecha de inscripción en el Registro de Fundaciones de Navarra, en el caso de entidades a que se refiere el artículo 1.1. No obstante, cuando la fecha de presentación de la comunicación de la opción por el régimen se presente transcurrido más de un mes desde la fecha de inscripción en el mencionado registro, el servicio competente comunicará de forma expresa la fecha a partir de la cual se puede aplicar el régimen.</p>
+<p class="parrafo">b) Desde la fecha de comunicación de la opción por el régimen, cuando se trate de entidades a que se refiere el artículo 1.2.</p>
+<p class="parrafo_2">No obstante lo dispuesto en las letras a) y b), si desde la fecha de la comunicación de la opción se producen retrasos en el examen de la documentación por causa imputable a la entidad, el servicio de la Hacienda Foral de Navarra competente en materia de fundaciones y entidades sin fines lucrativos comunicará la fecha de aplicación del régimen tributario especial.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4">
+            <p class="bloque">[Bloque 13: #a4]</p>
+
+<h5 class="articulo">Artículo 4. Pérdida del régimen tributario especial.</h5>
+<p class="parrafo">1. El incumplimiento de cualquiera de los requisitos establecidos en este título, así como en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2021-12827" target="_blank" title="Abre nueva ventana">Ley Foral 13/2021</a>, determinará la pérdida del régimen tributario especial y, en consecuencia, la obligación para la entidad de ingresar la totalidad de las cuotas correspondientes al ejercicio en que se produzca el incumplimiento por el Impuesto sobre Sociedades, los Tributos Locales y el Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados, de conformidad con la normativa reguladora de estos tributos, junto con los intereses de demora y las sanciones que, en su caso, procedan.</p>
+<p class="parrafo">La obligación establecida en el párrafo anterior se referirá a las cuotas correspondientes al ejercicio en que se obtuvieron los resultados e ingresos no aplicados correctamente, cuando se trate del requisito establecido en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2021-12827#a4-9" target="_blank" title="Abre nueva ventana">artículo 47 de la Ley Foral 13/2021</a>, y a las cuotas correspondientes al ejercicio en que se produzca el incumplimiento y a los cuatro anteriores, cuando se trate de lo establecido en el artículo 21 de la misma, sin perjuicio de las sanciones que, en su caso, procedan.</p>
+<p class="parrafo">2. Asimismo, el incumplimiento de los requisitos establecidos en este texto refundido y en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2021-12827" target="_blank" title="Abre nueva ventana">Ley Foral 13/2021</a> determinará:</p>
+<p class="parrafo_2">a) La no aplicación por parte de las entidades sometidas a este título de las exenciones previstas en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1995-16401#a1-85" target="_blank" title="Abre nueva ventana">artículo 173.1.e) de la Ley Foral 2/1995, de 10 de marzo</a>, de Haciendas Locales de Navarra.</p>
+<p class="parrafo">b) La no aplicación por parte de las donantes o mecenas de los incentivos fiscales previstos en el título II en el ejercicio en que se produzca el citado incumplimiento.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ci-2">
+            <p class="bloque">[Bloque 14: #ci-2]</p>
+
+<h4 class="capitulo_num">CAPÍTULO II</h4>
+<h4 class="capitulo_tit">Régimen tributario especial</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s1">
+            <p class="bloque">[Bloque 15: #s1]</p>
+
+<h4 class="seccion">Sección 1.ª Impuesto sobre sociedades</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a5">
+            <p class="bloque">[Bloque 16: #a5]</p>
+
+<h5 class="articulo">Artículo 5. Ámbito de aplicación y normativa aplicable.</h5>
+<p class="parrafo">Las entidades beneficiarias del régimen tributario especial que, de acuerdo con lo previsto en el Convenio Económico, estén sometidas a normativa foral navarra en el Impuesto sobre Sociedades, aplicarán dicha normativa con las especialidades recogidas en esta sección.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a6">
+            <p class="bloque">[Bloque 17: #a6]</p>
+
+<h5 class="articulo">Artículo 6. Rentas exentas.</h5>
+<p class="parrafo">1. Las rentas obtenidas por las entidades beneficiarias del régimen tributario especial estarán exentas en los siguientes supuestos:</p>
+<p class="parrafo_2">a) Cuando procedan de las actividades ordinarias que constituyan su objeto social o su finalidad específica, sea a través del desarrollo de una explotación económica o al margen de ella.</p>
+<p class="parrafo">b) Cuando deriven de adquisiciones o de transmisiones, por cualquier título, de bienes o derechos, incluidas las obtenidas con ocasión de la disolución y liquidación de la entidad.</p>
+<p class="parrafo">c) Las procedentes de elementos patrimoniales cedidos a terceros, como son los dividendos y participaciones en beneficios de sociedades, intereses, cánones y alquileres.</p>
+<p class="parrafo_2">2. Los rendimientos ordinarios obtenidos en el ejercicio de una explotación económica distinta de la propia de su objeto social o finalidad específica resultarán gravados, si bien el departamento competente en materia tributaria podrá extender la exención mencionada anteriormente a estos rendimientos siempre y cuando las explotaciones económicas en que se hayan obtenido tengan un carácter meramente auxiliar o complementario de las explotaciones económicas exentas o de las actividades encaminadas a cumplir los fines estatutarios de la entidad.</p>
+<p class="parrafo">La efectividad de esta exención quedará condicionada a la previa comunicación del ejercicio de la explotación económica al departamento competente en materia tributaria, el cual podrá comprobar la concurrencia de las condiciones a que se refiere el párrafo anterior.</p>
+<p class="parrafo">3. No estarán sometidas a retención ni a ingreso a cuenta las rentas exentas señaladas en los apartados 1 y 2.</p>
+<p class="parrafo">A efectos de lo dispuesto en el párrafo anterior, la entidad deberá presentar ante la persona retenedora u obligada a efectuar ingresos a cuenta, acreditación de que la entidad está acogida al régimen tributario especial regulado en este título.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a7">
+            <p class="bloque">[Bloque 18: #a7]</p>
+
+<h5 class="articulo">Artículo 7. Gastos no deducibles.</h5>
+<p class="parrafo">No tendrán la consideración de gastos deducibles, además de los previstos en la normativa del Impuesto sobre Sociedades, los siguientes:</p>
+<p class="parrafo_2">a) Los imputables, directa o indirectamente, a las rentas exentas.</p>
+<p class="parrafo">b) Las cantidades destinadas a la amortización de elementos patrimoniales afectos a las actividades exentas.</p>
+<p class="parrafo">En el caso de afectación parcial no resultarán deducibles las cantidades destinadas a la amortización de la porción del elemento patrimonial afecto a la realización de dicha actividad.</p>
+<p class="parrafo">c) Las cantidades que constituyan aplicación de resultados y, en particular, los excedentes que, procedentes de operaciones económicas, se destinen al sostenimiento de actividades exentas.</p>
+<p class="parrafo">d) El exceso de valor atribuido a las prestaciones de trabajo recibidas sobre el importe declarado a efectos de retenciones en el Impuesto sobre la Renta de las Personas Físicas.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a8">
+            <p class="bloque">[Bloque 19: #a8]</p>
+
+<h5 class="articulo">Artículo 8. Tipo de gravamen.</h5>
+<p class="parrafo">La base liquidable será gravada al tipo del 10 por ciento.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a9">
+            <p class="bloque">[Bloque 20: #a9]</p>
+
+<h5 class="articulo">Artículo 9. Cuota líquida y cuota reducida.</h5>
+<p class="parrafo">1. Para la determinación de la cuota líquida no darán derecho a deducción los gastos e inversiones imputables a las actividades exentas.</p>
+<p class="parrafo">2. La cuota líquida reducida será el resultado de minorar la cuota líquida en la cantidad de 1.202 euros cuando el contribuyente de este impuesto sea una entidad comprendida dentro del ámbito de aplicación del presente título que realice exclusivamente prestaciones gratuitas, sin que, en ningún caso, la cantidad resultante como consecuencia de la aplicación de esta reducción pueda resultar negativa.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1-2">
+            <p class="bloque">[Bloque 21: #a1-2]</p>
+
+<h5 class="articulo">Artículo 10. Obligación de presentar autoliquidación.</h5>
+<p class="parrafo">Las entidades contempladas en el presente título incluirán en sus autoliquidaciones del Impuesto sobre Sociedades la totalidad de las rentas obtenidas en el ejercicio, incluyendo en su caso las exentas de gravamen.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s2">
+            <p class="bloque">[Bloque 22: #s2]</p>
+
+<h4 class="seccion">Sección 2.ª Impuesto Sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1-3">
+            <p class="bloque">[Bloque 23: #a1-3]</p>
+
+<h5 class="articulo">Artículo 11. Exenciones.</h5>
+<p class="parrafo">Gozarán de exención las adquisiciones de bienes y derechos efectuadas por las entidades beneficiarias del régimen tributario especial, siempre que se afecten con carácter permanente a las actividades que constituyan su objeto social o finalidad específica y no se vayan a utilizar principalmente en el desarrollo de explotaciones económicas distintas a éstas.</p>
+<p class="parrafo">También gozarán de exención los demás actos y contratos en los que, siendo contribuyentes del impuesto las entidades beneficiarias del régimen tributario especial, se cumplan los requisitos de afectación y utilización señalados en el párrafo anterior.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s3">
+            <p class="bloque">[Bloque 24: #s3]</p>
+
+<h4 class="seccion">Sección 3.ª Tributos locales</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1-4">
+            <p class="bloque">[Bloque 25: #a1-4]</p>
+
+<h5 class="articulo">Artículo 12. Contribución Territorial.</h5>
+<p class="parrafo">Gozarán de exención los bienes de que sean titulares las entidades beneficiarias del régimen tributario especial, en los términos previstos en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1995-16401#a1-49" target="_blank" title="Abre nueva ventana">artículo 137 de la Ley Foral 2/1995</a>, siempre que no se trate de bienes cedidos a terceros mediante contraprestación, estén afectos a las actividades que constituyan su objeto social o finalidad específica y no se utilicen principalmente en el desarrollo de explotaciones económicas distintas a éstas.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1-5">
+            <p class="bloque">[Bloque 26: #a1-5]</p>
+
+<h5 class="articulo">Artículo 13. Impuesto sobre Actividades Económicas.</h5>
+<p class="parrafo">Las entidades beneficiarias del régimen tributario especial cuyo importe neto de la cifra de negocios sea igual o superior a 1.000.000 de euros, estarán exentas del impuesto por las actividades que constituyan su objeto social o finalidad específica.</p>
+<p class="parrafo">El importe neto de la cifra de negocios se determinará conforme a lo establecido en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1995-16401#a1-62" target="_blank" title="Abre nueva ventana">artículo 150.1.g) de la Ley Foral 2/1995</a>.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1-6">
+            <p class="bloque">[Bloque 27: #a1-6]</p>
+
+<h5 class="articulo">Artículo 14. Procedimiento. Compensación.</h5>
+<p class="parrafo">1. Para el disfrute de los incentivos fiscales regulados en esta sección, las entidades beneficiarias del régimen tributario especial deberán solicitarlo a los ayuntamientos competentes aportando acreditación de que la entidad está acogida al régimen tributario regulado en este título.</p>
+<p class="parrafo">El departamento competente en materia tributaria pondrá en conocimiento de la entidad local correspondiente el resultado de la comprobación a que se refiere el artículo 3.3 en cuanto afecte a los tributos locales respectivos, así como cualquier circunstancia determinante de la aplicación de lo dispuesto en el citado artículo.</p>
+<p class="parrafo">2. A efectos de la compensación económica establecida en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1995-16401#a5-9" target="_blank" title="Abre nueva ventana">artículo 57.2 de la Ley Foral 2/1995</a>, las entidades locales comunicarán al departamento competente en materia tributaria los incentivos fiscales concedidos a las entidades beneficiarias del régimen tributario especial.</p>
+<p class="parrafo">El Gobierno de Navarra, a través del departamento competente en materia tributaria, compensará económicamente y en su integridad las cantidades dejadas de percibir por las entidades locales como consecuencia de la concesión de los incentivos fiscales a que se refiere esta sección.</p>
+<p class="parrafo">El procedimiento para hacer efectivas las compensaciones a que se refiere este apartado se establecerá reglamentariamente.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ti-2">
+            <p class="bloque">[Bloque 28: #ti-2]</p>
+
+<h4 class="titulo_num">TÍTULO II</h4>
+<h4 class="titulo_tit">Incentivos fiscales al mecenazgo</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ci-3">
+            <p class="bloque">[Bloque 29: #ci-3]</p>
+
+<h4 class="capitulo_num">CAPÍTULO I</h4>
+<h4 class="capitulo_tit">Donaciones efectuadas a las entidades que apliquen el régimen tributario especial previsto en el título I</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1-7">
+            <p class="bloque">[Bloque 30: #a1-7]</p>
+
+<h5 class="articulo">Artículo 15. Donaciones.</h5>
+<p class="parrafo">Darán derecho a los incentivos fiscales previstos en este capítulo, las donaciones <em>inter vivos,</em> irrevocables, puras y simples, así como las prestaciones gratuitas de servicios realizadas a favor de las entidades que apliquen el régimen tributario especial previsto en el Título I, que a continuación se indican, tanto si se efectúan en concepto de dotación o aportación inicial como si se realizan en un momento posterior:</p>
+<p class="parrafo_2">1. Cantidades donadas para la realización de las actividades que la entidad donataria efectúe en cumplimiento de sus fines.</p>
+<p class="parrafo">2. Donaciones de bienes declarados, expresa e individualizadamente, bienes de interés cultural al amparo de lo dispuesto en el Decreto Foral 217/1986, de 3 de octubre, de bienes inscritos en el Registro General de Bienes de Interés Cultural o de bienes incluidos en el Inventario General a que se refiere la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1985-12534" target="_blank" title="Abre nueva ventana">Ley 16/1985, de 25 de junio</a>, del Patrimonio Histórico Español.</p>
+<p class="parrafo">3. Donaciones de obras de arte de calidad garantizada en favor de entidades que persigan, entre sus fines, la realización de actividades museísticas y el fomento y difusión de los bienes a que se refiere el apartado 2, siempre que tales obras se destinen a la exposición pública.</p>
+<p class="parrafo">La calidad de la obra habrá de ser acreditada ante el departamento competente en materia tributaria, quien determinará la suficiencia de la misma. A tal efecto podrá solicitar el correspondiente informe del departamento competente por razón de la materia.</p>
+<p class="parrafo">4. Donaciones de bienes o de derechos que deban formar parte del activo de la entidad donataria y que contribuyan a la realización de las actividades que efectúen en cumplimiento de los fines de ésta.</p>
+<p class="parrafo">5. Cantidades donadas para la conservación, reparación o restauración de los bienes que, siendo de la titularidad de la entidad donataria, pertenezcan a alguna de las categorías a que se refiere el apartado 2.</p>
+<p class="parrafo">6. Prestaciones gratuitas de servicios.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s1-2">
+            <p class="bloque">[Bloque 31: #s1-2]</p>
+
+<h4 class="seccion">Sección 1.ª Donaciones efectuadas por contribuyentes del Impuesto sobre la Renta de las Personas Físicas</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1-8">
+            <p class="bloque">[Bloque 32: #a1-8]</p>
+
+<h5 class="articulo">Artículo 16. Deducciones por donaciones.</h5>
+<p class="parrafo">1. Los contribuyentes del Impuesto sobre la Renta de las Personas Físicas tendrán derecho a deducir de la cuota del impuesto el 25 por ciento de las donaciones y de las prestaciones gratuitas de servicios a que se refiere el artículo 15.</p>
+<p class="parrafo">2. La base de la deducción prevista en el apartado anterior será:</p>
+<p class="parrafo_2">a) En los supuestos previstos en el artículo 15.2 y 3, el valor que determine el departamento competente en materia tributaria. A tal efecto podrá recabar informe del departamento competente por razón de la materia.</p>
+<p class="parrafo">b) En el supuesto previsto en el artículo 15.4, el valor de adquisición del bien o derecho determinado conforme a la normativa del Impuesto sobre la Renta de las Personas Físicas. Si el bien donado hubiese sido elaborado o producido por el donante se atenderá al coste de producción debidamente acreditado, que no podrá ser superior al valor de mercado.</p>
+<p class="parrafo">c) En el supuesto previsto en el artículo 15.6, el coste de la prestación de los servicios, incluida en su caso la amortización de los bienes cedidos.</p>
+<p class="parrafo">d) En los supuestos previstos en el artículo 15.1 y 5, el importe de las cantidades donadas.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1-9">
+            <p class="bloque">[Bloque 33: #a1-9]</p>
+
+<h5 class="articulo">Artículo 17. Límite de las deducciones.</h5>
+<p class="parrafo">La base de las deducciones se computará a efectos del límite a que se refiere el artículo 64.1 del texto refundido de la Ley Foral de Impuesto sobre la Renta de las Personas Físicas, aprobado por <a href="https://www.boe.es/buscar/act.php?id=BON-n-2008-90013" target="_blank" title="Abre nueva ventana">Decreto Foral Legislativo 4/2008, de 2 de junio</a>.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1-10">
+            <p class="bloque">[Bloque 34: #a1-10]</p>
+
+<h5 class="articulo">Artículo 18. Incrementos y disminuciones patrimoniales.</h5>
+<p class="parrafo">No se considerarán a efectos del Impuesto sobre la Renta de las Personas Físicas los incrementos o disminuciones patrimoniales originados como consecuencia de las donaciones a que se refiere el artículo 15.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s2-2">
+            <p class="bloque">[Bloque 35: #s2-2]</p>
+
+<h4 class="seccion">Sección 2.ª Donaciones efectuadas por contribuyentes del Impuesto sobre Sociedades</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a1-11">
+            <p class="bloque">[Bloque 36: #a1-11]</p>
+
+<h5 class="articulo">Artículo 19. Deducciones por donaciones.</h5>
+<p class="parrafo">1. Para la determinación de la base imponible del Impuesto sobre Sociedades del contribuyente que realice donaciones y prestaciones gratuitas de servicios en los términos del artículo 15, tendrá la consideración de partida deducible el importe de las mismas.</p>
+<p class="parrafo">2. Además, las donaciones dinerarias efectuadas a las entidades sin fines lucrativos que realicen actividades similares a las de los organismos públicos de investigación o a las de los centros tecnológicos, darán derecho a practicar una deducción en la cuota íntegra del 40 por ciento del importe de las mismas.</p>
+<p class="parrafo">La deducción de la cuota se practicará con arreglo a lo dispuesto en la normativa del Impuesto sobre Sociedades, y computará a efectos del límite establecido en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356#ar-67" target="_blank" title="Abre nueva ventana">artículo 67.4 de la Ley Foral 26/2016</a> del Impuesto sobre Sociedades.</p>
+<p class="parrafo">3. El importe de la partida deducible y de la base de la deducción en cuota señalados en los apartados anteriores se determinará en los términos establecidos en el artículo 16.2.</p>
+<p class="parrafo">No obstante, en el supuesto previsto en el artículo 15.4 la valoración de los bienes y derechos se realizará de acuerdo con los siguientes criterios:</p>
+<p class="parrafo_2">a) Los bienes nuevos producidos por la entidad donante, por su coste de fabricación, que no podrá exceder del precio medio de mercado.</p>
+<p class="parrafo">b) Los bienes adquiridos de terceros y entregados nuevos, por su precio de adquisición, que no podrá exceder del precio medio de mercado.</p>
+<p class="parrafo">c) Los bienes usados por la entidad donante, por su valor neto contable, que no podrá resultar superior al derivado de aplicar las amortizaciones mínimas correspondientes.</p>
+<p class="parrafo">d) Los derechos, por su valor neto contable, que no podrá exceder del valor medio de mercado.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica el apartado 2, con efectos para los periodos impositivos que se inicien a partir del 1 de enero de 2025, por el art. 7.1 de la Ley Foral 20/2024, de 26 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2025-719" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2025-719</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a1-11">
+              <input type="hidden" name="id" value="BOE-A-2023-16401">
+              <input type="hidden" name="b"  value="36">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab3620241231" value="20241231" checked="checked"/>
+                  <label for="lab3620241231" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 31/12/2024, en vigor a partir del 01/01/2025.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab3620230613" value="20230613"/>
+                  <label for="lab3620230613" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 13/06/2023, en vigor a partir del 14/06/2023.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2-2">
+            <p class="bloque">[Bloque 37: #a2-2]</p>
+
+<h5 class="articulo">Artículo 20. Límites de las deducciones.</h5>
+<p class="parrafo">1. Cuando se trate de las donaciones recogidas en el artículo 15.2 y 3, el importe de las deducciones no podrá exceder, en la entidad donante, del mayor de los siguientes límites:</p>
+<p class="parrafo_2">a) El 30 por ciento de la base imponible conforme a lo establecido en el artículo 49.1.</p>
+<p class="parrafo">b) El 3 por mil del volumen de ingresos.</p>
+<p class="parrafo_2">2. En el resto de supuestos contemplados en el artículo 15, el importe de las deducciones no podrá exceder del mayor de los siguientes límites:</p>
+<p class="parrafo_2">a) El 10 por ciento de la base imponible conforme a lo establecido en el artículo 49.1.</p>
+<p class="parrafo">b) El 1 por mil del volumen de ingresos.</p>
+<p class="parrafo_2">3. De la aplicación de lo dispuesto en los apartados 1.b) y 2.b) no podrá resultar una base imponible negativa.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2-3">
+            <p class="bloque">[Bloque 38: #a2-3]</p>
+
+<h5 class="articulo">Artículo 21. Rentas positivas o negativas originadas por las donaciones.</h5>
+<p class="parrafo">No se considerarán a efectos del Impuesto sobre Sociedades las rentas positivas o negativas que se pongan de manifiesto como consecuencia de las donaciones a que se refiere el artículo 15.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s3-2">
+            <p class="bloque">[Bloque 39: #s3-2]</p>
+
+<h4 class="seccion">Sección 3.ª Actuaciones de colaboración empresarial en actividades de interés general por medio de un convenio de colaboración</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2-4">
+            <p class="bloque">[Bloque 40: #a2-4]</p>
+
+<h5 class="articulo">Artículo 22. Convenio de colaboración.</h5>
+<p class="parrafo">Se entenderá por convenio de colaboración en actividades de interés general aquel por el que las entidades a que se refiere el título I, a cambio de una ayuda económica para la realización de sus fines, se comprometen por escrito a difundir la participación de la persona colaboradora.</p>
+<p class="parrafo">En ningún caso dicho compromiso podrá consistir en la entrega de cantidades resultantes de participación en rentas o beneficios.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2-5">
+            <p class="bloque">[Bloque 41: #a2-5]</p>
+
+<h5 class="articulo">Artículo 23. Incentivos fiscales.</h5>
+<p class="parrafo">1. Para la determinación de la base imponible del Impuesto sobre Sociedades tendrá la consideración de partida deducible el importe satisfecho en virtud de un convenio de colaboración en actividades de interés general.</p>
+<p class="parrafo">El importe de esta deducción no podrá exceder del mayor de los siguientes límites:</p>
+<p class="parrafo_2">a) El 5 por ciento de la base imponible conforme a lo establecido en el artículo 49.1.</p>
+<p class="parrafo">b) El 0,5 por mil del volumen de ingresos de la entidad.</p>
+<p class="parrafo">De la aplicación de lo dispuesto en esta letra no podrá resultar una base imponible negativa.</p>
+<p class="parrafo_2">2. Tratándose de contribuyentes del Impuesto sobre la Renta de las Personas Físicas que ejerzan actividades empresariales o profesionales, les será aplicable lo dispuesto en el apartado 1, computándose el límite del 5 por ciento sobre la porción de base imponible correspondiente a los rendimientos netos derivados de tales actividades.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ci-4">
+            <p class="bloque">[Bloque 42: #ci-4]</p>
+
+<h4 class="capitulo_num">CAPÍTULO II</h4>
+<h4 class="capitulo_tit">Incentivos fiscales al mecenazgo cultural, social, medioambiental y deportivo</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s1-3">
+            <p class="bloque">[Bloque 43: #s1-3]</p>
+
+<h4 class="seccion">Sección 1.ª Mecenazgo cultural</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s1-4">
+            <p class="bloque">[Bloque 44: #s1-4]</p>
+
+<h4 class="subseccion">Subsección 1.ª Disposiciones generales</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2-6">
+            <p class="bloque">[Bloque 45: #a2-6]</p>
+
+<h5 class="articulo">Artículo 24. Concepto y modalidades de mecenazgo cultural.</h5>
+<p class="parrafo">1. Se entenderá por mecenazgo cultural la participación privada en la financiación de proyectos o actividades culturales declarados de interés social realizados por las entidades señaladas en el artículo 25.</p>
+<p class="parrafo">2. El mecenazgo cultural podrá realizarse mediante las siguientes modalidades:</p>
+<p class="parrafo_2">a) Donaciones <em>inter vivos</em>, irrevocables, puras y simples.</p>
+<p class="parrafo">b) Préstamos de uso o comodato de Bienes de Interés Cultural, de Bienes Inventariados, de Bienes de Relevancia Local o de obras de arte de calidad garantizada, así como de locales para la realización de proyectos o actividades declarados de interés social.</p>
+<p class="parrafo">c) Convenios de colaboración. Se entenderá por convenio de colaboración en proyectos o actividades culturales de interés social aquel por el que las personas o entidades a las que se refiere el artículo 25, a cambio de una ayuda económica o susceptible de valoración económica para la realización de un proyecto o actividad declarada de interés social, se compromete por escrito a difundir, por cualquier medio, la participación de la colaboradora en dichos proyectos o actividades.</p>
+<p class="parrafo">La difusión de la participación de la colaboradora en el marco de los convenios de colaboración definidos en este artículo no constituye una prestación de servicios.</p>
+<p class="parrafo">d) Aportaciones a determinados productos financieros indisponibles en apoyo del mecenazgo cultural. Las personas físicas y jurídicas podrán realizar aportaciones dinerarias, en apoyo del mecenazgo cultural, a determinados productos financieros gestionados por entidades de crédito, con arreglo al siguiente régimen:</p>
+<p class="parrafo_2">1.º Dichas aportaciones tendrán carácter temporal y serán indisponibles durante el tiempo en el que permanezcan incorporadas al correspondiente producto financiero.</p>
+<p class="parrafo">Las personas titulares de las aportaciones fijarán, de acuerdo con la entidad financiera, el tiempo de permanencia de las aportaciones en el producto financiero, que no podrá ser superior al tiempo de desarrollo del proyecto o actividad cultural que se trate de beneficiar.</p>
+<p class="parrafo">2.º Cada producto financiero estará asociado a una persona o entidad que desarrolle una actividad o proyecto de índole cultural que haya sido declarado de interés social de conformidad con lo dispuesto en el artículo 28.</p>
+<p class="parrafo">3.º La titular real de esas aportaciones seguirá siendo la aportante y, consecuentemente, los rendimientos financieros se imputarán a la mencionada titular real.</p>
+<p class="parrafo">Sin perjuicio de lo anterior, los rendimientos de cada producto financiero, que no estarán sujetos a la obligación de retener, se traspasarán obligatoriamente con periodicidad semestral y a título gratuito a cada una de las personas o entidades asociadas al producto financiero mencionadas en el ordinal 2.º</p>
+<p class="parrafo">4.º La entidad de crédito que gestione el producto financiero informará anualmente a las aportantes y a las personas o entidades beneficiarias del importe de los rendimientos obtenidos, correspondientes a cada titular, que han sido traspasados a dichas personas o entidades beneficiarias.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2-7">
+            <p class="bloque">[Bloque 46: #a2-7]</p>
+
+<h5 class="articulo">Artículo 25. Personas y entidades beneficiarias del mecenazgo cultural.</h5>
+<p class="parrafo">1. Podrán ser consideradas personas y entidades beneficiarias del mecenazgo cultural:</p>
+<p class="parrafo_2">a) Las entidades sin fines lucrativos domiciliadas fiscalmente en Navarra.</p>
+<p class="parrafo">b) La Administración de la Comunidad Foral de Navarra y las entidades locales de Navarra, así como los organismos autónomos y las fundaciones públicas de ellas dependientes.</p>
+<p class="parrafo">c) Las universidades establecidas en la Comunidad Foral de Navarra.</p>
+<p class="parrafo">d) Los hogares, centros y casas de Navarra con sede en otras comunidades autónomas y en el extranjero, así como las federaciones de esas entidades.</p>
+<p class="parrafo">e) La Iglesia católica y las iglesias, confesiones y comunidades religiosas que tengan suscritos acuerdos de cooperación con el Estado español.</p>
+<p class="parrafo">f) Las personas físicas, jurídicas y entidades sin personalidad jurídica, con domicilio fiscal en Navarra que de forma habitual desarrollen actividades artísticas y cuyo importe neto de la cifra de negocios no haya superado los 200.000 euros en el periodo impositivo inmediatamente anterior.</p>
+<p class="parrafo_2">En el caso de que la persona jurídica forme parte de un grupo de sociedades conforme a lo establecido en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1885-6627#art42" target="_blank" title="Abre nueva ventana">artículo 42 del Código de Comercio</a>, para el cálculo del importe neto de la cifra de negocios se tendrá en cuenta la cifra de todo el grupo.</p>
+<p class="parrafo">A estos efectos, se considerarán actividades artísticas, con arreglo a lo previsto en la <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-1996-22197" target="_blank" title="Abre nueva ventana">Ley Foral 7/1996, de 28 de mayo</a>, por la que se aprueban las tarifas e instrucción del Impuesto sobre Actividades Económicas, las siguientes:</p>
+<p class="parrafo_2">1.º Las incluidas en la sección segunda (actividades profesionales), agrupación 86, grupos 861, 862, 864 y 869, cuando se trate de personas físicas.</p>
+<p class="parrafo">2.º Las incluidas en la sección tercera (actividades artísticas), agrupaciones 01, 02 y 03, cuando se trate de personas físicas, jurídicas o entidades sin personalidad jurídica.</p>
+<p class="parrafo_2">2. No se considerarán personas o entidades beneficiarias del mecenazgo cultural:</p>
+<p class="parrafo_2">a) Las personas físicas que desarrollen actividades artísticas en relación con las modalidades de mecenazgo recibidas de su cónyuge, pareja estable, ascendientes, descendientes o colaterales hasta tercer grado, o de quienes formen parte junto con la citada persona física de una entidad en régimen de atribución de rentas.</p>
+<p class="parrafo">b) Las personas o entidades que desarrollen actividades artísticas, cuando la persona o entidad que desarrolle la actividad artística y la donante o aportante tengan la consideración de personas o entidades vinculadas conforme a la normativa del Impuesto sobre Sociedades.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2-8">
+            <p class="bloque">[Bloque 47: #a2-8]</p>
+
+<h5 class="articulo">Artículo 26. Concepto de proyecto o actividad cultural.</h5>
+<p class="parrafo">Se considerarán proyectos o actividades culturales los relacionados con:</p>
+<p class="parrafo_2">a) La cinematografía, las artes audiovisuales y las artes multimedia.</p>
+<p class="parrafo">b) Las artes escénicas, la música, la danza, el teatro y el circo.</p>
+<p class="parrafo">c) Las artes visuales: artes plásticas o bellas artes, la fotografía y el diseño.</p>
+<p class="parrafo">d) El libro y la lectura y las ediciones literarias, fonográficas y cinematográficas en cualquier formato o soporte.</p>
+<p class="parrafo">e) Los procesos y proyectos de investigación generados en la diversidad de productos culturales existentes en la actual sociedad del conocimiento.</p>
+<p class="parrafo">f) La investigación, documentación, conservación, restauración, recuperación, difusión y promoción del patrimonio cultural material e inmaterial de Navarra, atendiendo especialmente a la diversidad lingüística de Navarra.</p>
+<p class="parrafo">g) El folclore y las tradiciones populares de Navarra, particularmente la música popular, como la jota, las auroras y las canciones populares en lengua vasca, y las danzas tradicionales de numerosos municipios, como la jota, el baile de la era, el paloteado, los volantes, la mutildantza o la ezpatadantza.</p>
+<p class="parrafo">h) Cualesquiera otras actividades artísticas y/o culturales.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2-9">
+            <p class="bloque">[Bloque 48: #a2-9]</p>
+
+<h5 class="articulo">Artículo 27. Consideración de interés social.</h5>
+<p class="parrafo">1. Se considerarán de interés social, sin necesidad de declaración expresa, los siguientes proyectos o actividades culturales:</p>
+<p class="parrafo_2">a) Los organizados por el departamento competente en materia de cultura, así como por las fundaciones públicas dependientes de dicho departamento.</p>
+<p class="parrafo">b) Los que promueva o apoye el citado departamento por medio de convenios o subvenciones y sean realizados por alguna de las personas o entidades beneficiarias previstas en el artículo 25.</p>
+<p class="parrafo">c) Los organizados por las entidades locales de Navarra y por las universidades públicas establecidas en Navarra.</p>
+<p class="parrafo_2">Los proyectos o actividades culturales a los que se refiere esta letra deberán ser comunicados al departamento competente en materia de cultura, que podrá denegar motivadamente la consideración de interés social en el caso de que no se correspondan con los señalados en el artículo 26.</p>
+<p class="parrafo">Tanto la comunicación como la denegación habrán de realizarse con arreglo al procedimiento que se establezca por la persona titular del departamento competente en materia de cultura.</p>
+<p class="parrafo">2. Antes del final de cada año, el departamento competente en materia de cultura remitirá a la Administración tributaria la relación anual de los proyectos o actividades culturales que, con arreglo a lo establecido en este artículo, han de ser considerados de interés social sin necesidad de declaración expresa, así como la de las personas o entidades beneficiarias señaladas en el apartado 1.b).</p>
+<p class="parrafo">Sin perjuicio de ello, los entes organizadores, en el caso de las letras a) y c) del apartado 1, y las personas o entidades beneficiarias, en el caso del apartado 1.b), deberán cumplir los requisitos establecidos en el artículo 48 referidos a la emisión de las certificaciones y al envío de la correspondiente información a la Administración tributaria.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2-10">
+            <p class="bloque">[Bloque 49: #a2-10]</p>
+
+<h5 class="articulo">Artículo 28. Declaración de interés social a instancia de las personas o entidades beneficiarias.</h5>
+<p class="parrafo">1. Las personas y entidades beneficiarias podrán solicitar la declaración de interés social de sus proyectos o actividades culturales conforme al procedimiento que establezca la persona titular del departamento competente en materia de cultura.</p>
+<p class="parrafo">2. Corresponde al Consejo Navarro de la Cultura y las Artes evaluar las solicitudes de declaración de interés social de acuerdo con los siguientes criterios:</p>
+<p class="parrafo_2">a) Relevancia y repercusión social de las actividades culturales.</p>
+<p class="parrafo">b) Incidencia de las actividades en la investigación, conservación y difusión del patrimonio cultural, material e inmaterial de Navarra, atendiendo especialmente a su diversidad lingüística.</p>
+<p class="parrafo">c) Incidencia en el fomento de la creación artística y en el apoyo a los nuevos creadores.</p>
+<p class="parrafo">d) Valor e interés en relación con la formación artística y cultural.</p>
+<p class="parrafo">e) Valor e interés en el fomento de la participación de los ciudadanos y creación de públicos, con especial atención a las TIC.</p>
+<p class="parrafo">f) Valor e interés en relación con la promoción exterior de los valores artísticos y culturales de la Comunidad Foral de Navarra.</p>
+<p class="parrafo">g) Valor e interés en relación con la realización de inversiones culturales que contribuyan a la difusión de las artes y las ciencias.</p>
+<p class="parrafo">h) Actitud investigadora y exploración de lenguajes innovadores en el ámbito cultural.</p>
+<p class="parrafo">i) Cualesquiera otros criterios que guarden relación con la conservación, promoción y desarrollo cultural de la Comunidad Foral de Navarra.</p>
+<p class="parrafo">j) Como criterio básico, la relación entre el presupuesto del proyecto o actividad y el impacto generado de acuerdo con las letras anteriores.</p>
+<p class="parrafo_2">3. Efectuada la evaluación de la solicitud de declaración de interés social, el Consejo Navarro de la Cultura y las Artes elevará la correspondiente propuesta de concesión o denegación a la persona titular de la dirección general competente en materia de cultura, que resolverá de conformidad con dicha propuesta.</p>
+<p class="parrafo">4. En caso de resolución denegatoria, deberá ser motivada, en referencia a los criterios establecidos en el apartado 2. También podrá ser causa de resolución denegatoria el incumplimiento, por parte de la persona o entidad beneficiaria, de las obligaciones formales establecidas en este texto refundido referidas a proyectos o actividades de la misma persona o entidad beneficiaria que previamente hubieran sido declarados de interés social. A la vista de los argumentos esgrimidos, la persona o entidad beneficiaria podrá revisar su proyecto o actividad y volver a solicitar la declaración de interés social.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a2-11">
+            <p class="bloque">[Bloque 50: #a2-11]</p>
+
+<h5 class="articulo">Artículo 29. Declaración de interés social de programas-tipo de proyectos o actividades culturales.</h5>
+<p class="parrafo">Las entidades que ejecuten anualmente proyectos o actividades culturales cuya naturaleza y contenido se prevean similares o análogos para años sucesivos podrán instar la declaración de interés social de un programa-tipo de actividades culturales, que abarcará las actividades encuadrables en los conceptos previstos en él.</p>
+<p class="parrafo">Para la declaración de interés social se estará a lo dispuesto en el artículo 28.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s2-3">
+            <p class="bloque">[Bloque 51: #s2-3]</p>
+
+<h4 class="subseccion">Subsección 2.ª Incentivos fiscales</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3-2">
+            <p class="bloque">[Bloque 52: #a3-2]</p>
+
+<h5 class="articulo">Artículo 30. Impuesto sobre la Renta de las Personas Físicas.</h5>
+<p class="parrafo">1. Los contribuyentes del Impuesto sobre la Renta de las Personas Físicas tendrán derecho a deducir de la cuota del impuesto el 80 por ciento de los primeros 250 euros en que se valoren las modalidades de mecenazgo cultural a que se refiere el artículo 24. Los importes superiores a 250 euros tendrán derecho a una deducción del 40 por ciento. El límite de 250 euros operará por contribuyente y en cada periodo impositivo.</p>
+<p class="parrafo">2. La base de las deducciones por donaciones realizadas será:</p>
+<p class="parrafo_2">a) En las donaciones dinerarias, su importe.</p>
+<p class="parrafo">b) En las donaciones de bienes o derechos, el valor contable que tuviesen en el momento de la transmisión y, en su defecto, el valor determinado conforme a las normas del Impuesto sobre el Patrimonio.</p>
+<p class="parrafo">En las prestaciones de servicios a título gratuito, el coste de los gastos incurridos, sin tener en cuenta margen de beneficios.</p>
+<p class="parrafo">c) En la constitución de un derecho real de usufructo sobre bienes inmuebles, el importe anual que resulte de aplicar, en cada uno de los períodos impositivos de duración del usufructo, el 4 por ciento al valor catastral, determinándose proporcionalmente al número de días que corresponda en cada período impositivo.</p>
+<p class="parrafo">d) En la constitución de un derecho real de usufructo sobre valores, el importe anual de los dividendos o intereses percibidos por el usufructuario en cada uno de los períodos impositivos de duración del usufructo.</p>
+<p class="parrafo">e) En la constitución de un derecho real de usufructo sobre otros bienes y derechos, el importe anual resultante de aplicar el interés legal del dinero de cada ejercicio al valor del usufructo determinado en el momento de su constitución conforme a las normas del Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados.</p>
+<p class="parrafo">f) En las donaciones de Bienes de Interés Cultural, Bienes Inventariados, Bienes de Relevancia Local o de obras de arte de calidad garantizada, la valoración efectuada por la Junta de Valoración de Bienes del Patrimonio Cultural de Navarra. En el caso de los bienes culturales que no formen parte del Patrimonio Cultural de Navarra, la Junta valorará, asimismo, la suficiencia de la calidad de la obra.</p>
+<p class="parrafo_2">El valor determinado de acuerdo con lo dispuesto en este apartado tendrá como límite máximo el valor normal en el mercado del bien o derecho transmitido en el momento de su transmisión.</p>
+<p class="parrafo">3. La base de las deducciones por préstamos de uso o comodato será el importe anual que resulte de aplicar, en cada uno de los periodos impositivos de duración del préstamo, el 4 por ciento a la valoración del bien efectuada por la Junta de Valoración de Bienes del Patrimonio Cultural de Navarra, determinándose proporcionalmente al número de días que corresponda en cada periodo impositivo.</p>
+<p class="parrafo">En el caso de que se trate de locales para la realización de proyectos o actividades, la base será el valor catastral en la proporción que corresponda al número de días de cada periodo impositivo.</p>
+<p class="parrafo">4. La base de las deducciones por convenios de colaboración se calculará con arreglo a lo dispuesto en el apartado 2.</p>
+<p class="parrafo">5. La base de la deducción se computará a efectos del límite a que se refiere el artículo 64.1 del texto refundido de la Ley Foral de Impuesto sobre la Renta de las Personas Físicas.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica el apartado 1, con efectos a partir del 1 de enero de 2025, por el art. 7.2 de la Ley Foral 20/2024, de 26 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2025-719" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2025-719</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a3-2">
+              <input type="hidden" name="id" value="BOE-A-2023-16401">
+              <input type="hidden" name="b"  value="52">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab5220241231" value="20241231" checked="checked"/>
+                  <label for="lab5220241231" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 31/12/2024, en vigor a partir del 01/01/2025.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab5220230613" value="20230613"/>
+                  <label for="lab5220230613" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 13/06/2023, en vigor a partir del 14/06/2023.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3-3">
+            <p class="bloque">[Bloque 53: #a3-3]</p>
+
+<h5 class="articulo">Artículo 31. Impuesto sobre Sociedades.</h5>
+<p class="parrafo">1. Los contribuyentes del Impuesto sobre Sociedades gozarán de los siguientes incentivos fiscales:</p>
+<p class="parrafo_2">a) Para la determinación de la base imponible, los importes en que se valoren las modalidades de mecenazgo cultural a que se refiere el artículo 24, tendrán la consideración de partida deducible.</p>
+<p class="parrafo">El importe de la partida deducible en la base imponible no podrá exceder del mayor de los siguientes límites:</p>
+<p class="parrafo_2">1.º El 30 por ciento de la base imponible a que se refiere el artículo 49.1.</p>
+<p class="parrafo">2.º El 3 por mil del importe neto de la cifra de negocios.</p>
+<p class="parrafo">De la aplicación de lo dispuesto en este ordinal no podrá resultar una base imponible negativa.</p>
+<p class="parrafo_2">b) Además, tendrán derecho a practicar una deducción de la cuota líquida del impuesto del 30 por ciento de los primeros 300 euros en que se valoren las modalidades de mecenazgo cultural a que se refiere el artículo 24. Los importes superiores a 300 euros tendrán derecho a una deducción de la cuota líquida del 20 por ciento. El límite de 300 euros operará por contribuyente y en cada periodo impositivo.</p>
+<p class="parrafo">La deducción de la cuota se practicará con arreglo a lo dispuesto en la normativa del Impuesto sobre Sociedades y computará a efectos del límite establecido en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356#ar-67" target="_blank" title="Abre nueva ventana">artículo 67.4 de la Ley Foral 26/2016</a> del Impuesto sobre Sociedades.</p>
+<p class="parrafo_2">2. El importe de la partida deducible y la base de la deducción se determinará en los términos establecidos en el artículo 30.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3-4">
+            <p class="bloque">[Bloque 54: #a3-4]</p>
+
+<h5 class="articulo">Artículo 32. Otros incentivos fiscales.</h5>
+<p class="parrafo">1. No se considerarán a efectos del Impuesto sobre la Renta de las Personas Físicas y del Impuesto sobre Sociedades que grave la renta del donante o mecenas, los incrementos o disminuciones patrimoniales y las rentas positivas o negativos que se pongan de manifiesto con ocasión de la realización de las modalidades de mecenazgo a las que se refiere el artículo 24.</p>
+<p class="parrafo">2. Estarán exentas en el Impuesto sobre Sucesiones y Donaciones las adquisiciones a título gratuito por las personas físicas que tengan la consideración de beneficiarias conforme a lo dispuesto en el artículo 25.1.f).</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s2-4">
+            <p class="bloque">[Bloque 55: #s2-4]</p>
+
+<h4 class="seccion">Sección 2.ª Mecenazgo social</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3-5">
+            <p class="bloque">[Bloque 56: #a3-5]</p>
+
+<h5 class="articulo">Artículo 33. Concepto y modalidades de mecenazgo social.</h5>
+<p class="parrafo">1. Se entenderá por mecenazgo social la participación privada en la financiación de las entidades a que se refiere el artículo 34, que hayan obtenido por parte del departamento competente en materia de derechos sociales o del Instituto Navarro para la Igualdad el preceptivo reconocimiento del régimen de acuerdo con lo previsto en el artículo 35.</p>
+<p class="parrafo">2. El mecenazgo social podrá realizarse mediante las siguientes modalidades:</p>
+<p class="parrafo_2">a) Donaciones <em>inter vivos,</em> irrevocables, puras y simples.</p>
+<p class="parrafo">b) Convenios de colaboración. Se entenderá por convenio de colaboración aquel por el que las entidades a las que se refiere el artículo 34, a cambio de una ayuda económica o susceptible de valoración económica, se compromete por escrito a difundir, por cualquier medio, la participación de la persona colaboradora en su financiación.</p>
+<p class="parrafo_2">La difusión de la participación de la colaboradora en el marco de los convenios de colaboración definidos en esta letra no constituye una prestación de servicios.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3-6">
+            <p class="bloque">[Bloque 57: #a3-6]</p>
+
+<h5 class="articulo">Artículo 34. Entidades beneficiarias del mecenazgo social.</h5>
+<p class="parrafo">Podrán ser consideradas entidades beneficiarias del mecenazgo social, las que cumplan los siguientes requisitos:</p>
+<p class="parrafo_2">a) Ser entidades sin fines lucrativos. Se considerarán en todo caso como tales las fundaciones, las asociaciones declaradas de utilidad pública, las organizaciones no gubernamentales de desarrollo inscritas en el registro de organizaciones no gubernamentales del ministerio competente en materia de cooperación al desarrollo, las cooperativas de iniciativa social inscritas en el Registro de Cooperativas de Navarra, así como las federaciones y asociaciones de todas las entidades anteriores.</p>
+<p class="parrafo">b) Que sus fines sean sociales, del ámbito de los servicios sociales, la cooperación al desarrollo o la igualdad entre mujeres y hombres. Se considerará en todo caso que tienen dichos fines sociales aquellas cuyo objeto o ámbito de actuación se refiera a la discapacidad, la dependencia, la exclusión, la atención a menores en el ámbito de los servicios sociales, las personas reclusas y ex reclusas, las personas sin hogar, las personas inmigrantes, las minorías, la prevención y tratamiento de drogodependencias y otras adicciones, las personas mayores, la cooperación al desarrollo o la igualdad entre mujeres y hombres así como la investigación, prevención, sensibilización, detección y atención a mujeres víctimas de violencia contra las mujeres, y, por ello, estén inscritas en el registro de servicios sociales y de autorizaciones específicas en esta materia, en el registro de organizaciones no gubernamentales del ministerio competente en materia de cooperación al desarrollo o en el Censo de Asociaciones de Mujeres de la Comunidad Foral de Navarra.</p>
+<p class="parrafo">c) Haber realizado actividad en Navarra en los últimos 4 años anteriores a la solicitud a que se refiere el artículo 35, en alguno de los ámbitos mencionados en la letra b) anterior. Se considerará en todo caso que han realizado actividad en Navarra en los últimos 4 años las entidades que hayan recibido alguna subvención de las Administraciones públicas de Navarra en todos y cada uno de esos ejercicios, para desarrollar actividades enmarcadas en los ámbitos de la letra b) anterior.</p>
+<p class="parrafo">d) Destinar al menos el 70 por ciento de las rentas e ingresos percibidos, deducidos los gastos para su obtención, a fines de interés general, y el resto a incrementar la dotación patrimonial o reservas en el plazo máximo de 4 años desde su obtención.</p>
+<p class="parrafo">e) Cumplir las obligaciones de transparencia establecidas para las entidades beneficiarias de subvenciones públicas.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica el apartado b) por el art. 8.1 de la Ley Foral 22/2023, de 26 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2024-1694" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2024-1694</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a3-6">
+              <input type="hidden" name="id" value="BOE-A-2023-16401">
+              <input type="hidden" name="b"  value="57">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab5720231229" value="20231229" checked="checked"/>
+                  <label for="lab5720231229" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 29/12/2023, en vigor a partir del 30/12/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab5720230613" value="20230613"/>
+                  <label for="lab5720230613" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 13/06/2023, en vigor a partir del 14/06/2023.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3-7">
+            <p class="bloque">[Bloque 58: #a3-7]</p>
+
+<h5 class="articulo">Artículo 35. Solicitud y reconocimiento del régimen tributario aplicable al mecenazgo social.</h5>
+<p class="parrafo">1. Las entidades interesadas deberán solicitar al departamento competente en materia de derechos sociales o al Instituto Navarro para la Igualdad, conforme al modelo que aprueben las personas titulares de dichos departamento u organismo, el acceso a los incentivos fiscales previstos en la sección quinta, acompañando a la solicitud, en su caso, la documentación que acredite el cumplimiento de los requisitos señalados en el artículo 34.</p>
+<p class="parrafo">No será preciso aportar documentación para acreditar que se reúnen dichos requisitos cuando el cumplimiento de cualesquiera de ellos se deduzca de la inscripción en un registro dependiente de alguna Administración pública, de la recepción de subvenciones de las Administraciones públicas de Navarra o de la documentación ya aportada a alguna Administración pública en el marco de cualquier procedimiento o trámite, en cuyo caso será suficiente con indicar el procedimiento o registro correspondiente.</p>
+<p class="parrafo">2. Una vez que hayan accedido al régimen establecido en la sección quinta, las entidades beneficiarias del mecenazgo deberán solicitar al departamento competente en materia de derechos sociales, en los ocho primeros meses de cada año, el mantenimiento de dicho régimen conforme al modelo que apruebe la persona titular del departamento y/o del Instituto Navarro para la Igualdad. Además, en ese plazo, las personas que ostenten la representación de las entidades beneficiarias presentarán una declaración responsable de que siguen cumpliendo los requisitos establecidos en el artículo 34 acompañada de las cuentas de la entidad correspondientes al último periodo impositivo finalizado, salvo que éstas se hayan presentado en el departamento competente en materia tributaria en cumplimiento de la normativa tributaria.</p>
+<p class="parrafo">Al departamento competente en materia de derechos sociales y/o al Instituto Navarro para la Igualdad corresponderá comprobar el cumplimiento de los requisitos establecidos, según el ámbito en que actúen las entidades solicitantes.</p>
+<p class="parrafo">3. Resolverá las solicitudes referidas en los apartados 1 y 2:</p>
+<p class="parrafo_2">a) La persona titular de la Dirección General del Observatorio de la Realidad Social, de Planificación y de Evaluación de las Políticas Sociales del departamento competente en materia de derechos sociales, cuando el fin social de las entidades sea del ámbito de los servicios sociales o de la cooperación al desarrollo.</p>
+<p class="parrafo">b) La persona titular de la Dirección General del Instituto Navarro para la Igualdad, cuando el fin social de las entidades sea del ámbito de la igualdad entre mujeres y hombres, así como la investigación, prevención, sensibilización, detección y atención a mujeres víctimas de violencia contra las mujeres.</p>
+<p class="parrafo">A las mismas personas corresponderá resolver, en su caso, la revocación del acceso al régimen establecido en la sección quinta, cuando se compruebe que no se reúne alguno de los requisitos.</p>
+<p class="parrafo_2">4. El plazo máximo en que debe dictarse y notificarse la citada resolución es de tres meses. El vencimiento del plazo máximo sin haberse notificado resolución expresa, legitima a las entidades interesadas que hubieran presentado la solicitud para entenderla estimada por silencio administrativo.</p>
+<p class="parrafo">El plazo máximo en que debe resolverse y notificarse el procedimiento de revocación de la resolución de acceso es de tres meses. En caso de vencimiento del plazo máximo sin haberse notificado resolución expresa se producirá la caducidad.</p>
+<p class="parrafo">5. Antes del final de cada año, el departamento competente en materia de derechos sociales y el Instituto Navarro para la Igualdad remitirán a la Administración tributaria la relación de las entidades beneficiarias que cumplen los requisitos establecidos en esta sección.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica el primer párrafo del apartado 3.b) por el art. 8.2 de la Ley Foral 22/2023, de 26 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2024-1694" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2024-1694</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a3-7">
+              <input type="hidden" name="id" value="BOE-A-2023-16401">
+              <input type="hidden" name="b"  value="58">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab5820231229" value="20231229" checked="checked"/>
+                  <label for="lab5820231229" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 29/12/2023, en vigor a partir del 30/12/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab5820230613" value="20230613"/>
+                  <label for="lab5820230613" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 13/06/2023, en vigor a partir del 14/06/2023.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s3-3">
+            <p class="bloque">[Bloque 59: #s3-3]</p>
+
+<h4 class="seccion">Sección 3.ª Mecenazgo medioambiental</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3-8">
+            <p class="bloque">[Bloque 60: #a3-8]</p>
+
+<h5 class="articulo">Artículo 36. Concepto y modalidades de mecenazgo medioambiental.</h5>
+<p class="parrafo">1. Se entenderá por mecenazgo medioambiental la participación privada en la financiación de las entidades a que se refiere el artículo 37, que hayan obtenido por parte del departamento competente en materia de medio ambiente el preceptivo reconocimiento del régimen de acuerdo con lo previsto en el artículo 38.</p>
+<p class="parrafo">2. El mecenazgo medioambiental podrá realizarse mediante las siguientes modalidades:</p>
+<p class="parrafo_2">a) Donaciones <em>inter vivos</em> irrevocables, puras y simples.</p>
+<p class="parrafo">b) Convenios de colaboración. Se entenderá por convenio de colaboración aquel por el que las entidades a las que se refiere el artículo 37, a cambio de una ayuda económica o susceptible de valoración económica, se compromete por escrito a difundir, por cualquier medio, la participación de la persona colaboradora en su financiación.</p>
+<p class="parrafo_2">La difusión de la participación de la colaboradora en el marco de los convenios de colaboración definidos en esta letra no constituye una prestación de servicios.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3-9">
+            <p class="bloque">[Bloque 61: #a3-9]</p>
+
+<h5 class="articulo">Artículo 37. Entidades beneficiarias del mecenazgo medioambiental.</h5>
+<p class="parrafo">Podrán ser consideradas entidades beneficiarias del mecenazgo medioambiental, las que cumplan los siguientes requisitos:</p>
+<p class="parrafo_2">a) Ser entidades sin fines lucrativos. Se considerarán, en todo caso, como tales las fundaciones, las asociaciones declaradas de utilidad pública, las organizaciones no gubernamentales de medio ambiente inscritas en el registro de organizaciones no gubernamentales del ministerio competente en la materia, las cooperativas de consumo relacionadas con la energía inscritas en el Registro de Cooperativas de Navarra, así como las federaciones y asociaciones de todas las entidades anteriores.</p>
+<p class="parrafo">b) Que entre sus fines estén la conservación de la naturaleza y la protección del medio ambiente, la educación ambiental, el voluntariado ambiental, la lucha contra el cambio climático o la transición energética.</p>
+<p class="parrafo">c) Haber realizado actividad en Navarra en los últimos 4 años anteriores a la solicitud a que se refiere el artículo siguiente, en alguno de los ámbitos mencionados en la letra b). Se considerará en todo caso que han realizado actividad en Navarra en los últimos 4 años, las entidades que hayan recibido alguna subvención de las Administraciones públicas de Navarra en todos y cada uno de esos ejercicios, para desarrollar actividades enmarcadas en los ámbitos de la letra b).</p>
+<p class="parrafo">d) Destinar al menos el 70 por ciento de las rentas e ingresos percibidos, deducidos los gastos para su obtención, a fines de interés general, y el resto a incrementar la dotación patrimonial o reservas en el plazo máximo de 4 años desde su obtención.</p>
+<p class="parrafo">e) Cumplir las obligaciones de transparencia establecidas para las entidades beneficiarias de subvenciones públicas.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3-10">
+            <p class="bloque">[Bloque 62: #a3-10]</p>
+
+<h5 class="articulo">Artículo 38. Solicitud y reconocimiento del régimen tributario aplicable al mecenazgo medioambiental.</h5>
+<p class="parrafo">1. Las entidades interesadas deberán solicitar al departamento competente en materia de medio ambiente, conforme al modelo que apruebe la persona titular de dicho departamento, el acceso a los incentivos fiscales previstos en la sección quinta acompañando a la solicitud, en su caso, la documentación que acredite el cumplimiento de los requisitos señalados en el artículo 37.</p>
+<p class="parrafo">No será preciso aportar documentación para acreditar que se reúnen dichos requisitos cuando el cumplimiento de cualesquiera de ellos se deduzca de la inscripción en un registro dependiente de alguna Administración pública, de la recepción de subvenciones de las Administraciones públicas de Navarra o de la documentación ya aportada a alguna Administración pública en el marco de cualquier procedimiento o trámite, en cuyo caso será suficiente con indicar el procedimiento o registro correspondiente.</p>
+<p class="parrafo">2. Una vez que hayan accedido al régimen establecido en la sección quinta, las entidades beneficiarias del mecenazgo deberán solicitar al departamento competente en materia de medio ambiente, en los ocho primeros meses de cada año, el mantenimiento de dicho régimen conforme al modelo que aprobará la persona titular de dicho departamento. Además, en ese plazo, las personas que ostenten la representación de dichas entidades presentarán una declaración responsable de que siguen cumpliendo los requisitos establecidos en el artículo 37, acompañada de las cuentas de la entidad correspondientes al último periodo impositivo finalizado, salvo que estas se hayan presentado en el departamento competente en materia tributaria en cumplimiento de la normativa tributaria.</p>
+<p class="parrafo">Al departamento competente en materia de medio ambiente corresponderá comprobar el cumplimiento de los requisitos establecidos.</p>
+<p class="parrafo">3. La persona titular de la dirección general competente en materia de medio ambiente resolverá las solicitudes referidas en los apartados 1 y 2.</p>
+<p class="parrafo">A la misma persona corresponderá resolver, en su caso, la revocación del acceso al régimen establecido en la sección quinta, cuando se compruebe que no se reúne alguno de los requisitos.</p>
+<p class="parrafo">4. El plazo máximo en que debe dictarse y notificarse la citada resolución es de tres meses. El vencimiento del plazo máximo sin haberse notificado resolución expresa, legitima a las entidades interesadas que hubieran presentado la solicitud para entenderla estimada por silencio administrativo.</p>
+<p class="parrafo">El plazo máximo en que debe resolverse y notificarse el procedimiento de revocación de la resolución de acceso es de tres meses. En caso de vencimiento del plazo máximo sin haberse notificado resolución expresa se producirá la caducidad.</p>
+<p class="parrafo">5. Antes del final de cada año, el departamento competente en materia de medio ambiente remitirá a la Administración tributaria la relación de las entidades beneficiarias que cumplen los requisitos establecidos en esta sección.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s4">
+            <p class="bloque">[Bloque 63: #s4]</p>
+
+<h4 class="seccion">Sección 4.ª Mecenazgo deportivo</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a3-11">
+            <p class="bloque">[Bloque 64: #a3-11]</p>
+
+<h5 class="articulo">Artículo 39. Concepto y modalidades de mecenazgo deportivo.</h5>
+<p class="parrafo">1. Se entiende por mecenazgo deportivo la participación privada en la financiación de actividades deportivas de duración determinada que sean declaradas de interés social por la Administración Deportiva de la Comunidad Foral de Navarra.</p>
+<p class="parrafo">2. El mecenazgo deportivo podrá realizarse mediante las siguientes modalidades:</p>
+<p class="parrafo_2">a) Donaciones <em>inter vivos,</em> irrevocables, puras y simples</p>
+<p class="parrafo">b) Préstamos de uso o comodato.</p>
+<p class="parrafo">c) Convenios de colaboración. Se entenderá por convenio de colaboración en actividades deportivas de interés social aquel por el que las personas o entidades a las que se refiere el artículo 40, a cambio de una ayuda económica o susceptible de valoración económica para la realización de una actividad deportiva declarada de interés social, se compromete por escrito a difundir, por cualquier medio, la participación de la persona colaboradora en dichas actividades.</p>
+<p class="parrafo_2">La difusión de la participación de la colaboradora en el marco de los convenios de colaboración definidos en esta letra no constituye una prestación de servicios.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4-2">
+            <p class="bloque">[Bloque 65: #a4-2]</p>
+
+<h5 class="articulo">Artículo 40. Personas y entidades beneficiarias del mecenazgo deportivo.</h5>
+<p class="parrafo">Podrán ser consideradas personas y entidades beneficiarias del mecenazgo deportivo:</p>
+<p class="parrafo_2">a) Las entidades deportivas sin fines lucrativos inscritas en el Registro del Deporte de Navarra.</p>
+<p class="parrafo">b) Las fundaciones, domiciliadas en Navarra, entre cuyos fines figure la promoción y el desarrollo del deporte navarro.</p>
+<p class="parrafo">c) Las personas deportistas navarras afiliadas a una federación deportiva navarra y con domicilio fiscal en Navarra.</p>
+<p class="parrafo">d) La Administración de la Comunidad Foral de Navarra y las entidades locales de Navarra, así como los organismos autónomos y las fundaciones públicas de ellas dependientes.</p>
+<p class="parrafo">e) Las universidades establecidas en Navarra.</p>
+<p class="parrafo_2">A efectos de lo dispuesto en este artículo, no se considerarán beneficiarias las personas físicas que desarrollen actividades deportivas en relación con las modalidades de mecenazgo recibidas de su cónyuge, pareja estable, ascendientes, descendientes o colaterales hasta tercer grado, o de quienes formen parte junto con la citada persona física de una entidad en régimen de atribución de rentas.</p>
+<p class="parrafo">Del mismo modo, tampoco se considerarán beneficiarias las personas o entidades que desarrollen actividades deportivas en relación con las modalidades de mecenazgo recibidas, cuando la persona o entidad que desarrolle la actividad deportiva y la donante o aportante tengan la consideración de personas o entidades vinculadas conforme a la normativa del Impuesto sobre Sociedades.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4-3">
+            <p class="bloque">[Bloque 66: #a4-3]</p>
+
+<h5 class="articulo">Artículo 41. Concepto de actividad deportiva declarada de interés social.</h5>
+<p class="parrafo">1. Podrán declararse de interés social las siguientes actividades:</p>
+<p class="parrafo_2">a) Actividades deportivas, de formación, de promoción, de salud e investigación en el ámbito deportivo.</p>
+<p class="parrafo">b) Actividades deportivas orientadas a personas con necesidades especiales tales como personas mayores, personas con patologías derivadas del sedentarismo y estilo de vida, personas con discapacidad, inmigrantes y colectivos desfavorecidos.</p>
+<p class="parrafo">c) Actividades deportivas y programas orientados a promocionar el deporte de base y en edad escolar.</p>
+<p class="parrafo">d) Actividades de fomento deportivo, conservación y cuidado del medio natural, así como de recuperación y mejora de la Red de Senderos de la Comunidad Foral de Navarra.</p>
+<p class="parrafo">e) Actividades de recuperación y promoción de actividades deportivas autóctonas o tradicionales.</p>
+<p class="parrafo_2">2. Las actividades declaradas de interés social serán de duración determinada.</p>
+<p class="parrafo">3. En ningún caso podrán ser declaradas de interés social, a los efectos del mecenazgo deportivo, las actividades deportivas consistentes en la participación en competiciones federadas.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4-4">
+            <p class="bloque">[Bloque 67: #a4-4]</p>
+
+<h5 class="articulo">Artículo 42. Solicitud de declaración de interés social.</h5>
+<p class="parrafo">1. La solicitud de declaración de interés social de actividades deportivas podrá ser presentada por cualquiera de las personas y entidades beneficiarias del mecenazgo deportivo recogidas en el artículo 40.</p>
+<p class="parrafo">Se presentará una solicitud por cada una de las actividades deportivas de las que se pretenda su declaración de interés social.</p>
+<p class="parrafo">Mediante orden foral de la persona titular del departamento competente en materia de deporte se establecerá el procedimiento, lugar y plazos para realizar la solicitud.</p>
+<p class="parrafo">2. En el plazo máximo de treinta días hábiles desde que se presente la solicitud, el Consejo Navarro del Deporte elaborará de forma motivada la correspondiente propuesta de concesión o denegación.</p>
+<p class="parrafo">La propuesta motivada de denegación de la declaración de interés social habrá de fundamentarse en alguno de los siguientes motivos:</p>
+<p class="parrafo_2">a) Cuando se estime que la actividad no tiene carácter deportivo o cuando, aun revistiendo carácter deportivo en alguno de sus aspectos, por su contenido, naturaleza, objetivo y finalidad perseguida tenga principalmente carácter cultural, turístico, educativo o de otra naturaleza.</p>
+<p class="parrafo">b) Cuando se considere que la actividad no merece la declaración de interés social de acuerdo con los siguientes criterios de valoración:</p>
+<p class="parrafo_2">1.º Relevancia, impacto y repercusión social de la actividad a desarrollar, con especial atención a las orientadas a personas con necesidades especiales tales como personas mayores, personas con patologías derivadas del sedentarismo y estilo de vida, personas con discapacidad, inmigrantes y colectivos desfavorecidos.</p>
+<p class="parrafo">2.º Incidencia de la actividad a desarrollar en la investigación, formación y promoción en el ámbito deportivo de la Comunidad Foral de Navarra.</p>
+<p class="parrafo">3.º Incidencia en el fomento de la práctica deportiva de deporte base en edad escolar, teniendo en cuenta el nivel de participación y la duración de los mismos.</p>
+<p class="parrafo">4.º Carácter innovador de la actividad.</p>
+<p class="parrafo">5.º Valor e interés en relación con la realización de inversiones en actividades de fomento deportivo, conservación y cuidado del medio natural, así como de recuperación y mejora de la Red de Senderos de la Comunidad Foral de Navarra.</p>
+<p class="parrafo">6.º Relación entre el presupuesto de la actividad y el impacto generado de acuerdo con los criterios anteriores.</p>
+<p class="parrafo">7.º Contribución al fomento del deporte femenino, al fomento de la igualdad en el deporte y a la lucha contra los estereotipos de género en el ámbito deportivo.</p>
+<p class="parrafo">8.º Cualesquiera otros criterios que guarden relación con la promoción del deporte en la Comunidad Foral de Navarra.</p>
+<p class="parrafo_2">c) Incumplimiento por parte de la persona o entidad solicitante de las obligaciones referidas a otras actividades de la misma persona o entidad beneficiaria que previamente hubieran sido declaradas de interés social.</p>
+<p class="parrafo_2">3. La persona titular de la dirección gerencia de la Administración Deportiva de la Comunidad Foral de Navarra resolverá las solicitudes, previo informe preceptivo del Consejo Navarro del Deporte, así como, en su caso, la revocación de la declaración de beneficiaria del mecenazgo deportivo, cuando se compruebe que no se reúne alguno de los requisitos.</p>
+<p class="parrafo">El plazo máximo en que debe dictarse y notificarse la citada resolución es de tres meses. El vencimiento del plazo máximo sin haberse notificado resolución expresa, legitima a las personas o entidades interesadas que hubieran presentado la solicitud para entenderla estimada por silencio administrativo.</p>
+<p class="parrafo">El plazo máximo en que debe resolverse y notificarse el procedimiento de revocación de la declaración de beneficiaria del mecenazgo deportivo es de tres meses. En caso de vencimiento del plazo máximo sin haberse notificado resolución expresa se producirá la caducidad.</p>
+<p class="parrafo">Dicho plazo se suspenderá cuando se requiera a las interesadas la subsanación de la documentación o aclaraciones en relación con la actividad. Asimismo, se suspenderá por el tiempo que medie entre la petición de evaluación al Consejo Navarro del Deporte y la recepción de la propuesta de concesión o denegación formulada por dicho órgano.</p>
+<p class="parrafo">La declaración de interés social incluirá la identidad de la persona o entidad beneficiaria, la denominación de la actividad deportiva y el plazo durante el cual se va a desarrollar. La declaración tendrá validez exclusivamente para la actividad deportiva de que se trate, mientras dure su ejecución.</p>
+<p class="parrafo">4. Una vez declaradas beneficiarias del mecenazgo deportivo, si las personas o entidades desean continuar organizando en el siguiente ejercicio la misma actividad deportiva declarada de interés social deberán solicitar a la Administración Deportiva de la Comunidad Foral de Navarra, en los ocho primeros meses de ese año, el mantenimiento de dicha declaración conforme al modelo que aprobará la persona titular de la dirección gerencia de la Administración Deportiva de la Comunidad Foral de Navarra, que se acompañará de una declaración responsable de que siguen cumpliendo los requisitos y de las cuentas de la entidad, salvo que estas se hayan presentado en el departamento competente en materia tributaria en cumplimiento de la normativa tributaria.</p>
+<p class="parrafo">Corresponderá a la Administración Deportiva de la Comunidad Foral de Navarra comprobar el cumplimiento de los requisitos establecidos.</p>
+<p class="parrafo">5. Antes del final de cada año, la Administración Deportiva de la Comunidad Foral de Navarra remitirá a la Administración tributaria la relación de las personas o entidades beneficiarias y de las actividades deportivas de interés social de Navarra que cumplen los requisitos establecidos en esta sección.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="s5">
+            <p class="bloque">[Bloque 68: #s5]</p>
+
+<h4 class="seccion">Sección 5.ª Incentivos fiscales al mecenazgo social, medioambiental y deportivo</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4-5">
+            <p class="bloque">[Bloque 69: #a4-5]</p>
+
+<h5 class="articulo">Artículo 43. Impuesto sobre la Renta de las Personas Físicas.</h5>
+<p class="parrafo">1. Los contribuyentes del Impuesto sobre la Renta de las Personas Físicas tendrán derecho a deducir de la cuota del impuesto el 80 por ciento de los primeros 250 euros en que se valoren las modalidades de cada tipo de mecenazgo. Los importes superiores a 250 euros tendrán derecho a una deducción del 40 por ciento. El límite de 250 euros operará por contribuyente y en cada periodo impositivo.</p>
+<p class="parrafo">2. La base de la deducción será:</p>
+<p class="parrafo_2">a) Donaciones: La base de las deducciones se determinará de acuerdo con lo dispuesto en el artículo 30.2.</p>
+<p class="parrafo">b) Préstamos de uso o comodato: La base de la deducción será el importe anual que resulte de aplicar, en cada uno de los periodos impositivos de duración del préstamo, el 4 por ciento a la valoración del bien, determinándose proporcionalmente al número de días que corresponda en cada periodo impositivo. En el caso de que se trate de locales, terrenos o inmuebles para la realización de las actividades deportivas, se aplicará el 4 por ciento al valor catastral, proporcionalmente al número de días que corresponda de cada periodo impositivo.</p>
+<p class="parrafo">c) Convenios de colaboración: La base de las deducciones por convenios de colaboración se calculará con arreglo a lo dispuesto en el artículo 30.4.</p>
+<p class="parrafo_2">3. La base de la deducción se computará a efectos del límite a que se refiere el artículo 64.1 del texto refundido de la Ley Foral de Impuesto sobre la Renta de las Personas Físicas.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica el apartado 1, con efectos a partir del 1 de enero de 2025, por el art. 7.3 de la Ley Foral 20/2024, de 26 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2025-719" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2025-719</a></p>
+  <p class="nota_pie">Se modifica el apartado 1 por el art. 8.3 de la Ley Foral 22/2023, de 26 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2024-1694" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2024-1694</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a4-5">
+              <input type="hidden" name="id" value="BOE-A-2023-16401">
+              <input type="hidden" name="b"  value="69">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab6920241231" value="20241231" checked="checked"/>
+                  <label for="lab6920241231" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 31/12/2024, en vigor a partir del 01/01/2025.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab6920231229" value="20231229"/>
+                  <label for="lab6920231229" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Modificaci&oacute;n publicada el 29/12/2023, en vigor a partir del 30/12/2023.</label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab6920230613" value="20230613"/>
+                  <label for="lab6920230613" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 13/06/2023, en vigor a partir del 14/06/2023.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4-6">
+            <p class="bloque">[Bloque 70: #a4-6]</p>
+
+<h5 class="articulo">Artículo 44. Impuesto sobre Sociedades.</h5>
+<p class="parrafo">1. Los contribuyentes del Impuesto sobre Sociedades gozarán de los siguientes incentivos fiscales:</p>
+<p class="parrafo_2">a) Para la determinación de la base imponible, el importe en que se valoren las modalidades de cada tipo de mecenazgo tendrá la consideración de partida deducible. El importe de la partida deducible en la base imponible no podrá exceder del mayor de los siguientes límites:</p>
+<p class="parrafo_2">1.º El 30 por ciento de la base imponible conforme a lo establecido en el artículo 49.1.</p>
+<p class="parrafo">2.º El 3 por mil del importe neto de la cifra de negocios.</p>
+<p class="parrafo_2">De la aplicación de lo dispuesto en este ordinal no podrá resultar una base imponible negativa.</p>
+<p class="parrafo">b) Además, tendrán derecho a practicar una deducción de la cuota líquida del impuesto del 20 por ciento del importe en que se valoren las modalidades de cada tipo de mecenazgo.</p>
+<p class="parrafo">La deducción de la cuota se practicará con arreglo a lo dispuesto en la normativa del Impuesto sobre Sociedades y computará a efectos del límite establecido en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356#ar-67" target="_blank" title="Abre nueva ventana">artículo 67.4 de la Ley Foral 26/2016</a> del Impuesto sobre Sociedades.</p>
+<p class="parrafo_2">2. El importe de la partida deducible y la base de la deducción se determinará en los términos establecidos en el artículo 43.2.</p>
+<blockquote>
+  <p class="nota_pie">Se modifican los primeros párrafos de los apartados 1.a) y b) por el art. 8.4 de la Ley Foral 22/2023, de 26 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2024-1694" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2024-1694</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#a4-6">
+              <input type="hidden" name="id" value="BOE-A-2023-16401">
+              <input type="hidden" name="b"  value="70">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab7020231229" value="20231229" checked="checked"/>
+                  <label for="lab7020231229" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 29/12/2023, en vigor a partir del 30/12/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab7020230613" value="20230613"/>
+                  <label for="lab7020230613" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 13/06/2023, en vigor a partir del 14/06/2023.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4-7">
+            <p class="bloque">[Bloque 71: #a4-7]</p>
+
+<h5 class="articulo">Artículo 45. Otros incentivos fiscales.</h5>
+<p class="parrafo">1. No se considerarán a efectos del Impuesto sobre la Renta de las Personas Físicas y del Impuesto sobre Sociedades que grave la renta de la donante, los incrementos o disminuciones patrimoniales y las rentas positivas o negativas que se pongan de manifiesto con ocasión de la realización de las modalidades de mecenazgo.</p>
+<p class="parrafo">2. Estarán exentas en el Impuesto sobre Sucesiones y Donaciones las adquisiciones a título gratuito por las personas físicas que tengan la consideración de beneficiarias.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ci-5">
+            <p class="bloque">[Bloque 72: #ci-5]</p>
+
+<h4 class="capitulo_num">CAPÍTULO III.</h4>
+<h4 class="capitulo_tit">Otras actividades de colaboración empresarial</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4-8">
+            <p class="bloque">[Bloque 73: #a4-8]</p>
+
+<h5 class="articulo">Artículo 46. Adquisición de obras de arte.</h5>
+<p class="parrafo">1. Para la determinación de la base imponible del Impuesto sobre Sociedades, tendrá la consideración de partida deducible el valor de adquisición o de tasación de aquellas obras de arte que se adquieran para ser ofrecidas en donación a la Comunidad Foral, al Estado, a otras Administraciones Públicas, a las Universidades Públicas o a las entidades que reglamentariamente se determinen.</p>
+<p class="parrafo">2. Cuando el valor de adquisición sea superior al valor de tasación resultante de lo dispuesto en el apartado 5.b), para la práctica de la deducción se tomará este último. En tal caso la entidad podrá, si lo estima conveniente, retirar la oferta de donación realizada.</p>
+<p class="parrafo">3. La deducción se practicará en el periodo impositivo en el que la donación sea aceptada, sin que pueda resultar una base imponible negativa.</p>
+<p class="parrafo">4. Tratándose de contribuyentes del Impuesto sobre la Renta de las Personas Físicas que ejerzan actividades empresariales o profesionales, la deducción se practicará sobre la porción de base imponible correspondiente a los rendimientos netos derivados de tales actividades.</p>
+<p class="parrafo">5. La deducción estará condicionada al cumplimiento de los siguientes requisitos:</p>
+<p class="parrafo_2">a) La obra de arte habrá de ser transmitida a la entidad donataria en un plazo máximo de un año a contar desde la aceptación de la oferta.</p>
+<p class="parrafo">b) Con carácter previo a la aceptación de la donación se emitirá informe por el departamento competente en materia tributaria sobre la valoración del bien y su calificación como obra de arte. A tal efecto podrá solicitar la colaboración del departamento competente por razón de la materia.</p>
+<p class="parrafo">c) La oferta de donación deberá efectuarse en el plazo de un mes desde la fecha de adquisición del bien.</p>
+<p class="parrafo">d) La donante no podrá efectuar dotaciones por depreciación de la obra de arte durante el periodo que medie entre la fecha de oferta y la de transmisión.</p>
+<p class="parrafo_2">6. A efectos de lo dispuesto en este artículo se entenderá por obra de arte los objetos de arte, antigüedades y objetos de colección definidos como tales en la normativa reguladora del Impuesto sobre el Valor Añadido, que tengan valor histórico o artístico.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4-9">
+            <p class="bloque">[Bloque 74: #a4-9]</p>
+
+<h5 class="articulo">Artículo 47. Gastos en actividades de interés general y fomento de determinadas artes.</h5>
+<p class="parrafo">1. Para la determinación de la base imponible del Impuesto sobre Sociedades tendrán la consideración de partida deducible el importe de las cantidades empleadas en:</p>
+<p class="parrafo_2">a) La realización de actividades u organización de acontecimientos públicos, de tipo asistencial, educativo, cultural, científico, de investigación, deportivo, de promoción del voluntariado social o cualesquiera otro de interés general de naturaleza análoga, en las condiciones que se determinen reglamentariamente.</p>
+<p class="parrafo">b) La realización de actividades de fomento y desarrollo del cine, teatro, música y danza, la edición de libros, vídeos y fonogramas, en las condiciones que se determinen reglamentariamente.</p>
+<p class="parrafo_2">2. El importe de las deducciones no podrá exceder del mayor de los siguientes límites:</p>
+<p class="parrafo_2">a) El 5 por ciento de la base imponible conforme a lo establecido en el artículo 49.1.</p>
+<p class="parrafo">b) El 0,5 por mil del volumen de ingresos de la entidad.</p>
+<p class="parrafo_2">De la aplicación de lo dispuesto en esta letra no podrá resultar una base imponible negativa.</p>
+<p class="parrafo">3. Tratándose de contribuyentes del Impuesto sobre la Renta de las Personas Físicas que ejerzan actividades empresariales o profesionales, les será de aplicación la deducción establecida en este artículo, computándose el límite del 5 por ciento sobre la porción de base imponible correspondiente a los rendimientos netos derivados de tales actividades.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="ci-6">
+            <p class="bloque">[Bloque 75: #ci-6]</p>
+
+<h4 class="capitulo_num">CAPÍTULO IV</h4>
+<h4 class="capitulo_tit">Requisitos e incompatibilidades para la aplicación de los incentivos fiscales de este título</h4>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4-10">
+            <p class="bloque">[Bloque 76: #a4-10]</p>
+
+<h5 class="articulo">Artículo 48. Requisitos comunes para la aplicación de los incentivos fiscales.</h5>
+<p class="parrafo">1. La práctica de los incentivos fiscales establecidos en este título exigirá certificación expedida por la entidad beneficiaria en la que se acredite la efectividad de:</p>
+<p class="parrafo_2">a) Las donaciones.</p>
+<p class="parrafo">b) Los préstamos de uso y comodato.</p>
+<p class="parrafo">c) Los convenios de colaboración.</p>
+<p class="parrafo_2">2. En la certificación deberá constar:</p>
+<p class="parrafo_2">a) Nombre y apellidos o denominación social y Número de Identificación Fiscal, tanto de la donante o mecenas como de la beneficiaria.</p>
+<p class="parrafo">b) Mención expresa de que la persona o entidad beneficiaria y, en su caso, la actividad o proyecto se encuentran incluidas en las contempladas en este texto refundido.</p>
+<p class="parrafo">c) Fecha e importe del donativo cuando éste sea dinerario.</p>
+<p class="parrafo">En el resto de supuestos, el valor de la donación no dineraria o de la prestación de servicios, del préstamo de uso o comodato y, en su caso, el importe de la ayuda recibida en virtud del convenio de colaboración.</p>
+<p class="parrafo">d) Documento público u otro documento auténtico que acredite la entrega del bien donado o la constitución del derecho de usufructo cuando no se trate de donativos en dinero, valoración de la prestación gratuita de servicios, constitución del préstamo de uso o comodato, o celebración del convenio de colaboración.</p>
+<p class="parrafo">e) Tratándose de donaciones, mención expresa del carácter irrevocable e irreversible de la donación.</p>
+<p class="parrafo">f) Tratándose de préstamos de uso o comodato, fecha en la que se produjo la entrega del bien y plazo de duración del préstamo de uso o comodato.</p>
+<p class="parrafo">g) Destino que la entidad beneficiaria dará al objeto donado, préstamo de uso o ayuda recibida en virtud de un convenio de colaboración en el cumplimiento de su finalidad específica, proyecto o actividad.</p>
+<p class="parrafo_2">3. La aplicación de los incentivos fiscales previstos en este título estará condicionada a que las entidades beneficiarias informen a la Administración tributaria, en los modelos establecidos en la normativa tributaria, de las donaciones y aportaciones recibidas.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a4-11">
+            <p class="bloque">[Bloque 77: #a4-11]</p>
+
+<h5 class="articulo">Artículo 49. Límites de algunas deducciones.</h5>
+<p class="parrafo">1. El límite sobre la base imponible del Impuesto sobre Sociedades a que se refieren los artículos 20, 23.1, 31.1.a), 44.1.a) y 47.2 se calculará sobre la base imponible previa a todas las reducciones recogidas en esos artículos.</p>
+<p class="parrafo">2. Los límites de deducción contemplados en los artículos 20, 23.1, 31.1.a), 44.1.a) y 47.2 se determinarán de forma separada, sin que en ningún caso de la aplicación del conjunto de estas deducciones pueda resultar una base imponible negativa.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="a5-2">
+            <p class="bloque">[Bloque 78: #a5-2]</p>
+
+<h5 class="articulo">Artículo 50. Incompatibilidad de los incentivos fiscales.</h5>
+<p class="parrafo">1. Los incentivos fiscales regulados en este título para los contribuyentes del Impuesto sobre Sociedades no serán de aplicación, salvo disposición expresa, a los contribuyentes del Impuesto sobre la Renta de las Personas Físicas.</p>
+<p class="parrafo">2. Los incentivos fiscales establecidos en este título serán incompatibles entre sí.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="da-2">
+            <p class="bloque">[Bloque 79: #da-2]</p>
+
+<h5 class="articulo">Disposición adicional primera. Aplicación a otras entidades del régimen tributario especial regulado en el título I.</h5>
+<p class="parrafo">El régimen previsto en las secciones 1.ª y 3.ª del capítulo II del título I será de aplicación a:</p>
+<p class="parrafo_2">a) La Iglesia católica y las iglesias, confesiones y comunidades religiosas que tengan suscritos acuerdos de cooperación con el Estado español.</p>
+<p class="parrafo">b) Las asociaciones y entidades religiosas comprendidas en el artículo V del Acuerdo sobre Asuntos Económicos suscrito entre el Estado español y la Santa Sede, así como a las entidades contempladas en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-24853#a11" target="_blank" title="Abre nueva ventana">artículo 11.5 de la Ley 24/1992, de 10 de noviembre</a>, por la que se aprueba el Acuerdo de Cooperación del Estado con la Federación de Entidades Religiosas Evangélicas de España; en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-24854#a11" target="_blank" title="Abre nueva ventana">artículo 11.5 de la Ley 25/1992, de 10 de noviembre</a>, por la que se aprueba el Acuerdo de Cooperación del Estado con la Federación de Comunidades Judías de España, y en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-24855#a11" target="_blank" title="Abre nueva ventana">artículo 11.4 de la Ley 26/1992, de 10 de noviembre</a>, por la que se aprueba el Acuerdo de Cooperación del Estado con la Comisión Islámica de España, siempre que estas entidades cumplan los requisitos exigidos por este texto refundido a las entidades sin fines lucrativos para la aplicación de dicho régimen.</p>
+<p class="parrafo">c) La Cruz Roja Española y la Organización Nacional de Ciegos Españoles.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica el primer párrafo por el art. 8.5 de la Ley Foral 22/2023, de 26 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2024-1694" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2024-1694</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#da-2">
+              <input type="hidden" name="id" value="BOE-A-2023-16401">
+              <input type="hidden" name="b"  value="79">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab7920231229" value="20231229" checked="checked"/>
+                  <label for="lab7920231229" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 29/12/2023, en vigor a partir del 30/12/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab7920230613" value="20230613"/>
+                  <label for="lab7920230613" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 13/06/2023, en vigor a partir del 14/06/2023.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="da-3">
+            <p class="bloque">[Bloque 80: #da-3]</p>
+
+<h5 class="articulo">Disposición adicional segunda. Aplicación a otras entidades del régimen tributario de las donaciones y de los convenios de colaboración.</h5>
+<p class="parrafo">El régimen tributario previsto en el capítulo I del título II será aplicable a las donaciones efectuadas y a los convenios de colaboración celebrados con las siguientes entidades:</p>
+<p class="parrafo_2">a) La Comunidad Foral, el Estado, las Comunidades Autónomas, las Entidades Locales y las Universidades.</p>
+<p class="parrafo">b) La Iglesia católica y las iglesias, confesiones y comunidades religiosas que tengan suscritos acuerdos de cooperación con el Estado español.</p>
+<p class="parrafo">c) Las asociaciones y entidades religiosas comprendidas en el artículo V del Acuerdo sobre Asuntos Económicos suscrito entre el Estado español y la Santa Sede, así como a las entidades contempladas en <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-24853#a11" target="_blank" title="Abre nueva ventana">artículo 11.5 de la Ley 24/1992, de 10 de noviembre</a>, por la que se aprueba el Acuerdo de Cooperación del Estado con la Federación de Entidades Religiosas Evangélicas de España; en el del <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-24854#a11" target="_blank" title="Abre nueva ventana">artículo 11.5 de la Ley 25/1992, de 10 de noviembre</a>, por la que se aprueba el Acuerdo de Cooperación del Estado con la Federación de Comunidades Judías de España, y en el <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1992-24855#a11" target="_blank" title="Abre nueva ventana">artículo 11.4 de la Ley 26/1992, de 10 de noviembre</a>, por la que se aprueba el Acuerdo de Cooperación del Estado con la Comisión Islámica de España, siempre que estas entidades cumplan los requisitos exigidos por este texto refundido a las entidades sin fines lucrativos para la aplicación de dicho régimen.</p>
+<p class="parrafo">d) La Cruz Roja Española.</p>
+<p class="parrafo">e) La Organización Nacional de Ciegos Españoles.</p>
+<p class="parrafo">f) Entidades relacionadas en el artículo 1.2, que apliquen en otra Administración tributaria un régimen tributario equivalente al previsto en el título I.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica la letra f) por el art. 8.6 de la Ley Foral 22/2023, de 26 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2024-1694" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2024-1694</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#da-3">
+              <input type="hidden" name="id" value="BOE-A-2023-16401">
+              <input type="hidden" name="b"  value="80">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab8020231229" value="20231229" checked="checked"/>
+                  <label for="lab8020231229" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 29/12/2023, en vigor a partir del 30/12/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab8020230613" value="20230613"/>
+                  <label for="lab8020230613" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 13/06/2023, en vigor a partir del 14/06/2023.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="da-4">
+            <p class="bloque">[Bloque 81: #da-4]</p>
+
+<h5 class="articulo">Disposición adicional tercera. Donaciones realizadas por las personas físicas a los partidos políticos.</h5>
+<p class="parrafo">A las donaciones en dinero o en especie procedentes de personas físicas realizadas a los partidos políticos, dentro de los límites establecidos en la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-2007-13022" target="_blank" title="Abre nueva ventana">Ley Orgánica 8/2007, de 4 de julio</a>, sobre financiación de los partidos políticos, les será de aplicación las deducciones por donaciones previstas en el capítulo I del título II de este texto refundido, de acuerdo con los requisitos y condiciones en ella establecidos.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="da-5">
+            <p class="bloque">[Bloque 82: #da-5]</p>
+
+<h5 class="articulo">Disposición adicional cuarta. Actividades y proyectos prioritarios de mecenazgo cultural, social, medioambiental y deportivo.</h5>
+<p class="parrafo">1. Mediante ley foral se podrá establecer el carácter prioritario de determinadas actividades y proyectos de mecenazgo cultural, social, medioambiental y deportivo, así como de entidades beneficiarias de las actividades de mecenazgo social y medioambiental.</p>
+<p class="parrafo">2. En relación con dichas actividades y entidades beneficiarias, la ley foral podrá elevar en cinco puntos porcentuales, como máximo, los porcentajes y límites de las deducciones en la cuota establecidos en este texto refundido.</p>
+<blockquote>
+  <p class="nota_pie">Se modifica por el art. 8.7 de la Ley Foral 22/2023, de 26 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2024-1694" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2024-1694</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#da-5">
+              <input type="hidden" name="id" value="BOE-A-2023-16401">
+              <input type="hidden" name="b"  value="82">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab8220231229" value="20231229" checked="checked"/>
+                  <label for="lab8220231229" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 29/12/2023, en vigor a partir del 30/12/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab8220230613" value="20230613"/>
+                  <label for="lab8220230613" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 13/06/2023, en vigor a partir del 14/06/2023.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="da-6">
+            <p class="bloque">[Bloque 83: #da-6]</p>
+
+<h5 class="articulo">Disposición adicional quinta. Actividades prioritarias de mecenazgo social, medioambiental y deportivo.</h5>
+<p class="parrafo">
+  <strong>(Derogada)</strong>
+</p>
+<blockquote>
+  <p class="nota_pie">Se deroga por el art. 8.8 de la Ley Foral 22/2023, de 26 de diciembre. <a href="/buscar/doc.php?id=BOE-A-2024-1694" target="_blank" title="Abre nueva ventana">Ref. BOE-A-2024-1694</a></p>
+</blockquote>
+
+            <form class="lista formBOE" method="GET" action="/buscar/act.php#da-6">
+              <input type="hidden" name="id" value="BOE-A-2023-16401">
+              <input type="hidden" name="b"  value="83">
+              <input type="hidden" name="tn" value="1">
+              <fieldset class="gris redondeada">
+                <legend class="fuera">Seleccionar redacci&oacute;n:</legend>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab8320231229" value="20231229" checked="checked"/>
+                  <label for="lab8320231229" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n"><strong>&Uacute;ltima actualizaci&oacute;n, publicada el 29/12/2023, en vigor a partir del 30/12/2023.</strong></label>
+                </p>
+                <p>
+                  <input type="radio" name="p" onclick="this.form.submit()" id="lab8320230613" value="20230613"/>
+                  <label for="lab8320230613" title="Haga clic o utilice flechas del teclado para cambiar de versi&oacute;n">Texto original, publicado el 13/06/2023, en vigor a partir del 14/06/2023.</label>
+                </p>
+              </fieldset>
+            </form>
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="da-7">
+            <p class="bloque">[Bloque 84: #da-7]</p>
+
+<h5 class="articulo">Disposición adicional sexta. Reconocimiento público de la condición de mecenas.</h5>
+<p class="parrafo">El Gobierno de Navarra establecerá los instrumentos adecuados a fin de premiar la práctica del mecenazgo, ayudando a la revalorización social de estas acciones, prestigiando y dando visibilidad a estas iniciativas y reconociendo públicamente la labor filantrópica de las personas físicas o jurídicas que a través del mecenazgo favorezcan la cultura.</p>
+<p class="parrafo">El Gobierno de Navarra, en todo caso, garantizará el anonimato de aquellas personas o entidades que no deseen hacer pública su condición de mecenas.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="da-8">
+            <p class="bloque">[Bloque 85: #da-8]</p>
+
+<h5 class="articulo">Disposición adicional séptima. Valoración del cumplimiento de los fines del mecenazgo cultural e información al Parlamento de Navarra.</h5>
+<p class="parrafo">Será responsabilidad del departamento competente en materia de cultura comprobar anualmente el destino efectivo de las donaciones, los préstamos de uso o comodato y los convenios de colaboración a los proyectos o actividades culturales que sean declarados de interés social, así como valorar la consecución de los fines de fomento de la cultura que con ello se pretende.</p>
+<p class="parrafo">El Gobierno de Navarra informará anualmente al Parlamento de Navarra de los resultados del mecenazgo cultural, detallando los proyectos y actividades declarados de interés social, las personas y entidades beneficiarias, la valoración de las diferentes modalidades de mecenazgo utilizadas y los incentivos fiscales aplicados.</p>
+<p class="parrafo">La citada información se proporcionará, una vez finalizados los diferentes periodos de declaración tributaria de los contribuyentes, cuando los datos se encuentren disponibles y hayan sido analizados informáticamente.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="da-9">
+            <p class="bloque">[Bloque 86: #da-9]</p>
+
+<h5 class="articulo">Disposición adicional octava. Aplicación informática en apoyo del mecenazgo cultural.</h5>
+<p class="parrafo">El Gobierno de Navarra desarrollará una aplicación informática que facilite el mecenazgo cultural, de manera que, a través de un enlace desde la página web del Gobierno de Navarra, se puedan realizar de forma electrónica donaciones a las personas o entidades que desarrollen actividades y proyectos que hayan sido declarados de interés social con arreglo a este texto refundido.</p>
+<p class="parrafo">La persona titular del departamento competente en materia tributaria regulará mediante orden foral las características y funcionalidades de la mencionada aplicación informática.</p>
+<p class="parrafo">La aplicación habilitará un sistema que permita la obtención del correspondiente certificado acreditativo y con validez ante la Hacienda Foral de Navarra a efectos de obtener los beneficios previstos en este texto refundido.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dt">
+            <p class="bloque">[Bloque 87: #dt]</p>
+
+<h5 class="articulo">Disposición transitoria primera. Comunicación de la opción por la aplicación del régimen tributario especial.</h5>
+<p class="parrafo">Se entenderá que han comunicado la opción por la aplicación de régimen tributario especial establecido en este texto refundido y que pueden seguir aplicándolo, siempre que cumplan los requisitos en ella establecidos:</p>
+<p class="parrafo_2">1. Las fundaciones inscritas en el Registro de Fundaciones de Navarra con anterioridad al 1 de enero de 2023 y que dispongan de la correspondiente resolución declarativa de la aplicación del régimen tributario especial.</p>
+<p class="parrafo">2. Las entidades recogidas en el artículo 1.2 que hayan tributado en Navarra por cualquier impuesto en los 10 años anteriores a 1 de enero de 2023.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="dt-2">
+            <p class="bloque">[Bloque 88: #dt-2]</p>
+
+<h5 class="articulo">Disposición transitoria segunda. Valoración de bienes.</h5>
+<p class="parrafo">La Junta de Valoración de Bienes del Patrimonio Cultural de Navarra se constituirá en el plazo máximo de seis meses desde la aprobación de este texto refundido.</p>
+<p class="parrafo">Hasta que se constituya la Junta de Valoración de Bienes del Patrimonio Cultural de Navarra, las funciones que se le asignan por este texto refundido serán ejercidas por el departamento competente en materia de cultura.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+          <hr class="bloque"/>
+          <div class="bloque" id="df-2">
+            <p class="bloque">[Bloque 89: #df-2]</p>
+
+<h5 class="articulo">Disposición final única. Habilitación normativa.</h5>
+<p class="parrafo">Se habilita al Gobierno de Navarra a dictar cuantas disposiciones sean necesarias para el desarrollo y ejecución de lo dispuesto en este texto refundido.</p>
+
+          </div>
+          <p class="linkSubir"><a href="#top">Subir</a></p>
+        </div> <!-- #textoxslt -->
+        <div class="caja redondeada gris info" role="alert">
+          <p>Este documento es de car&aacute;cter informativo y no tiene valor jur&iacute;dico.</p>
+          <p>Ay&uacute;denos a mejorar: puede dirigir sus comentarios y sugerencias a nuestro <a href="/contactar/formulario_completo.php">Servicio de atenci&oacute;n al ciudadano</a></p>
+        </div>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php">Sobre la sede electr&oacute;nica</a></div></li>
+            <li><div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div></li>
+            <li><div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div></li>
+            <li><div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php#proteccion-de-datos">Protecci&oacute;n de datos</a></div></li>
+            <li><div class="enlace"><a href="/informacion/sistema_interno_informacion.php">Sistema Interno de Informaci&oacute;n</a></div></li>
+            <li><div class="enlace"><a href="/informacion/tutoriales/">Tutoriales</a></div></li>
+            <li><div class="enlace"><a href="/transparencia/empleo/">Empleo en la AEBOE</a></div></li>
+            </ul>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace icono"><a href="/rss/" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=tw" lang="es" title="boegob, el BOE en X"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="X"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=fb" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=ln" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=yt" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div></li>
+            </ul>
+            </div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>

@@ -1,0 +1,370 @@
+[
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-6951",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-6951",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "c4d17ffac84c3bdfc16d0a9ec0efae82a276261adfb0dd47116972a141077388",
+    "bytes": 479872,
+    "fetched_utc": "2026-10-27T16:05:37.708550+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028",
+    "status": 200,
+    "sha256": "7130889d27e35ce4385bd01745ce656b1eb1287a2b249c51ec9e3e79cd8c2775",
+    "bytes": 350447,
+    "fetched_utc": "2026-10-27T15:40:42.827724+00:00",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "ae7fa73852282023f98e8f6f005463f6fb68783ff0d776d19735eb7a28e710ff",
+    "bytes": 2028806,
+    "fetched_utc": "2026-10-27T15:59:03.017491+00:00"
+  },
+  {
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "185fc1ad18f48707d68b270635626d628826d4a3bafd92fd607f8deb680dfa1a",
+    "bytes": 13064,
+    "fetched_utc": "2026-10-27T16:05:38.015872+00:00"
+  },
+  {
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deduccion-inversion-vivienda-habitual-regimen-transitorio/modalidades-deduccion/adquisicion-construc-rehabilitacion-ampliacion-vivienda-habitual/cantidades-satisfechas-derecho-deduccion-base-deducible.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deduccion-inversion-vivienda-habitual-regimen-transitorio/modalidades-deduccion/adquisicion-construc-rehabilitacion-ampliacion-vivienda-habitual/cantidades-satisfechas-derecho-deduccion-base-deducible.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "df736331bce165dce813bce037cf8fa327290ebfb88eff739dc8b0489e3561c4",
+    "bytes": 22539,
+    "fetched_utc": "2026-10-27T16:05:38.068547+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20121031&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20121031&tn=1",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "0ecac487f6d43204415abf02dfcc3c79c5378ed90472b7e888e8b33cb7bb6e1c",
+    "bytes": 1588227,
+    "fetched_utc": "2026-10-27T16:05:38.017963+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820&p=20111220&tn=1",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820&p=20111220&tn=1",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "2705d81237dcb768bdfa60c561233d1e664642223de871785b6307d05310e410",
+    "bytes": 852494,
+    "fetched_utc": "2026-10-27T16:05:37.654296+00:00"
+  },
+  {
+    "url": "https://atc.gencat.cat/es/tributs/irpf/deduccions-tram-irpf/",
+    "sha256": "ea2fb5726acddcf7ffbf34cc8a5ef511bcee95d7c8a340af4927d65acf229d41",
+    "bytes": 199595,
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-13750",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-13750",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "4ebcfe74f6256bb85b6871760f358b60c258a1897ce32ad7c3089c7af22f0880",
+    "bytes": 497687,
+    "fetched_utc": "2026-10-27T15:45:26.152505+00:00"
+  },
+  {
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_14_la-rioja/10_14_9-hijo-0-3-anos-municipios.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_14_la-rioja/10_14_9-hijo-0-3-anos-municipios.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "7fa59e6f5ac4e2ab74af99e87c8e2240bea7a737d5c3357939e698f37409d9c1",
+    "bytes": 14872,
+    "fetched_utc": "2026-10-27T15:45:25.938762+00:00"
+  },
+  {
+    "url": "https://sede.agenciatributaria.gob.es/Sede/Ayuda/25Presentacion/100/10_14.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/Ayuda/25Presentacion/100/10_14.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "270d0dc3281086a0d94ee2f103f792dfd8c961376b59be3352db18e6b8cf5775",
+    "bytes": 19631,
+    "fetched_utc": "2026-10-27T15:45:25.938987+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "0f7fc565a8148492068be051dfe716fefdc8bbaaa3e6c009657f0fe0a955e423",
+    "bytes": 789701,
+    "fetched_utc": "2026-10-27T15:45:26.266466+00:00"
+  },
+  {
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/hijo-0-3-anos-residentes-municipios.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/hijo-0-3-anos-residentes-municipios.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "c9fd6d36470bf91ef8e73ca337cbe5eb78b9b4236ed969c68587ed8345e4a3f8",
+    "bytes": 11799,
+    "fetched_utc": "2026-10-27T15:45:25.920989+00:00"
+  },
+  {
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/conciliacion-trabajo-vida-familiar.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/conciliacion-trabajo-vida-familiar.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "9af5c89cc424c88ab85d0db390a8ffd986bd04d93ee69dd23509293598bd55a0",
+    "bytes": 27535,
+    "fetched_utc": "2026-10-27T15:45:26.094935+00:00"
+  },
+  {
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/contratar-manera-indefinida-personas-afiliadas.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/contratar-manera-indefinida-personas-afiliadas.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "f1d38bd08b0d4501c873f771c802913d637b52e2d269517cc50ed165d6bfa92a",
+    "bytes": 19982,
+    "fetched_utc": "2026-10-27T15:45:26.094619+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-11959",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-11959",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "8d9d4c5d68dfb80def26174929500df588985b0d6794b4046f35df5cddb24324",
+    "bytes": 1036469,
+    "fetched_utc": "2026-10-27T15:45:26.504335+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15683",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15683",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "6bd2807ac81595ec1bfb6dfb61e196fedfdd1e8e9541d794ca397758cc41bdfc",
+    "bytes": 1269930,
+    "fetched_utc": "2026-10-27T15:45:26.805748+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2025-90320",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2025-90320",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "8ae0e2ecc10282b1aa8d86e8c2c66274ce2433825474d862c66151b999e633f8",
+    "bytes": 1118368,
+    "fetched_utc": "2026-10-27T15:45:26.884562+00:00"
+  },
+  {
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_15-comunitat-valenciana/10_15_6-conciliacion-trabajo-vida-familiar.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_15-comunitat-valenciana/10_15_6-conciliacion-trabajo-vida-familiar.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "aaa411134dac20102c352e7cc30d4cf93a1fc7ff8329e6afaf299ace88334d6e",
+    "bytes": 16919,
+    "fetched_utc": "2026-10-27T15:45:26.299618+00:00"
+  },
+  {
+    "url": "https://hisenda.gva.es/documents/168162620/168262658/IRPF%2B2020%2BDeducciones%2Balquiler%2By%2Bconciliaci%C3%B3n.pdf/fca3f33a-9bb2-4683-b069-4790c042372e?t=1602581127234",
+    "final_url": "https://hisenda.gva.es/documents/168162620/168262658/IRPF+2020+Deducciones+alquiler+y+conciliaci%C3%B3n.pdf/fca3f33a-9bb2-4683-b069-4790c042372e",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "e6794a32ea0b19df4db90540e74d3663be21652dd60d1807a76a252a70af3a05",
+    "bytes": 189050,
+    "fetched_utc": "2026-10-27T15:45:26.653631+00:00"
+  },
+  {
+    "url": "https://larioja.org/larioja-client/cm/tributos/images?idMmedia=1691508",
+    "final_url": "https://larioja.org/larioja-client/cm/tributos/images?idMmedia=1691508",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "ab6290ed2efd4182b3f359394a4919b4b5db16d91be8e04435d8f7d7e7109e86",
+    "bytes": 308644,
+    "fetched_utc": "2026-10-27T15:45:26.963071+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-16833",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-16833",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "3a209be3b78e85ef2b522462d1e11d0f08ad5b29db5dd0e3613da4a807028a20",
+    "bytes": 221069,
+    "fetched_utc": "2026-10-27T16:05:37.366173+00:00"
+  },
+  {
+    "url": "https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=1021142",
+    "status": 200,
+    "sha256": "e4ff52fe4116461f39d8fcfde780367287a27325b887a4ff3d8e29df0317930e",
+    "bytes": 88266,
+    "fetched_utc": "2026-10-27T15:45:10.217082+00:00",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.artesadesegre.cat/la-ciutat/nuclis-agregats",
+    "status": 200,
+    "sha256": "8c0312d1fc1732d1ef6d0f56711236aadf5aba27e134c6ff9f6a342254414716",
+    "bytes": 88578,
+    "fetched_utc": "2026-10-27T15:45:10.892674+00:00",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1",
+    "status": 200,
+    "sha256": "07cde5fbf353b77122943c9aa854fa0a109b4eae785ce12fbd4db8b7a11c1545",
+    "bytes": 92935,
+    "fetched_utc": "2026-10-27T15:45:11.291734+00:00",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-16833&p=20250731&tn=6",
+    "status": 200,
+    "sha256": "a94fed9b9d8356c47e985e4bb61f6ed0ba11e0b030d2dce5cf31c3b0cb6aa4dd",
+    "bytes": 38346,
+    "fetched_utc": "2026-10-27T15:45:10.461949+00:00",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.boe.es/ccaa/dogc/2026/9706/f00001-00146.pdf",
+    "final_url": "https://www.boe.es/ccaa/dogc/2026/9706/f00001-00146.pdf",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "569eb43a1bc5478c761ddaaf5879f820eee6fd88aa3d15f84ad7713b0c1d5793",
+    "bytes": 4600310,
+    "fetched_utc": "2026-10-27T15:51:37.667160+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGC-f-2026-90237",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=DOGC-f-2026-90237",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "9a5d2f1c4909f4ea0ea50a798abb82cbc0106eeb4ed2da6cd080a028cecc8580",
+    "bytes": 26253,
+    "fetched_utc": "2026-10-27T15:51:36.048462+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGC-f-2026-90249",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=DOGC-f-2026-90249",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "12ae0ea106ac5fdded2068318c1a1b1b62f4ed9d423a8ca04e024491b2a60eae",
+    "bytes": 16902,
+    "fetched_utc": "2026-10-27T15:51:36.065969+00:00"
+  },
+  {
+    "url": "https://atc.gencat.cat/es/agencia/noticies/detall-noticia/20260227-llista-municipis-rurals",
+    "status": 200,
+    "sha256": "6f20418ff447607812ee177dc018dec5d2b0d3fa82d4eec6605e6ea9e6088083",
+    "bytes": 119878,
+    "fetched_utc": "2026-10-27T15:45:11.715539+00:00",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1037694",
+    "status": 200,
+    "sha256": "0ed1904e1822fb2ffa29c48cd0e355dfb6afd72c8a9aa273d91a581baff57791",
+    "bytes": 77588,
+    "fetched_utc": "2026-10-27T15:45:11.384159+00:00",
+    "read_on": "2026-10-27"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "268c63578253e82e6889678ccf304dca5e54a09f1649240c042a88ced1f88d1d",
+    "bytes": 2028806,
+    "fetched_utc": "2026-10-27T16:05:43.227904+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "9670eb69776f85422f17171439fbad70c56c1ba1c0e8e1937622d070d13f3ccf",
+    "bytes": 1000016,
+    "fetched_utc": "2026-10-27T16:05:37.789422+00:00"
+  },
+  {
+    "url": "https://atc.gencat.cat/es/tributs/irpf/deduccions-tram-irpf/",
+    "final_url": "https://atc.gencat.cat/es/tributs/irpf/deduccions-tram-irpf/",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "1982812193c45ab9abfddfa09a4110fc041e8bae0f421f4253568edb9eae45d8",
+    "bytes": 199595,
+    "fetched_utc": "2026-10-27T16:05:38.455865+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "972cd21301e89972195d66f945e9df07a95072f98fac35ad4af4e5579eb4d68a",
+    "bytes": 350447,
+    "fetched_utc": "2026-10-27T16:05:38.086787+00:00"
+  },
+  {
+    "url": "https://atc.gencat.cat/es/agencia/noticies/detall-noticia/20260227-llista-municipis-rurals",
+    "final_url": "https://atc.gencat.cat/es/agencia/noticies/detall-noticia/20260227-llista-municipis-rurals",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "ef4bc41f90cba8a2c7ce0413bddace6fd85a1f6f0f3ca425b1e9b70c4f4e67db",
+    "bytes": 119878,
+    "fetched_utc": "2026-10-27T16:05:38.279636+00:00"
+  },
+  {
+    "url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1037694",
+    "final_url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1037694",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "a67fc173e26edf30ef84ca93685be076ec4ebb5b16802c4a697379f896b43698",
+    "bytes": 77588,
+    "fetched_utc": "2026-10-27T16:05:38.464423+00:00"
+  },
+  {
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGC-f-2026-90190",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=DOGC-f-2026-90190",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "cf90c0f2a1815b6518a8a1dc675886933c10a6974e7efc2ac9d8422676fb88af",
+    "bytes": 37206,
+    "fetched_utc": "2026-10-27T15:51:36.107065+00:00"
+  },
+  {
+    "url": "https://sede.agenciatributaria.gob.es/Sede/irpf/novedades-impuesto/novedades-publicadas-informa-2024/novedades-publicadas-informa-mes-septiembre.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/irpf/novedades-impuesto/novedades-publicadas-informa-2024/novedades-publicadas-informa-mes-septiembre.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "5c18c4620a6f98965ce1f39cabc88e7fd166e2ecaf92905c9488d4b7c0cf7384",
+    "bytes": 20249,
+    "fetched_utc": "2026-10-27T15:51:37.217407+00:00"
+  },
+  {
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/especialidades-determinacion-cuota-integra-estatal-autonomica/supuestos-especiales-concurrencia-rentas.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/especialidades-determinacion-cuota-integra-estatal-autonomica/supuestos-especiales-concurrencia-rentas.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "7685393415fa9a31a875942a496a5148eb97e374b87076b6e28f0ef96b6ec474",
+    "bytes": 14464,
+    "fetched_utc": "2026-10-27T15:59:02.384910+00:00"
+  },
+  {
+    "url": "https://www.boe.es/boe/dias/2026/03/27/pdfs/BOE-A-2026-7041.pdf",
+    "final_url": "https://www.boe.es/boe/dias/2026/03/27/pdfs/BOE-A-2026-7041.pdf",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "8d7476f7f664139c3ae86c5ed97c188b8886e8634be0d867acb2585bfebb5e34",
+    "bytes": 2935337,
+    "fetched_utc": "2026-10-27T16:02:22.243220+00:00"
+  },
+  {
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/especialidades-determinacion-cuota-integra-estatal-autonomica/rentas-exentas-progresividad/tratamiento-liquidatorio-rentas-exentas-progresividad-big.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c15-calculo-impuesto-determinacion-cuotas-integras/especialidades-determinacion-cuota-integra-estatal-autonomica/rentas-exentas-progresividad/tratamiento-liquidatorio-rentas-exentas-progresividad-big.html",
+    "read_on": "2026-10-27",
+    "status": 200,
+    "sha256": "cd9eb8f3b0284909a2ba80b11e06e7bdc6e0f5a139a4ecffa0456726387555ab",
+    "bytes": 15170,
+    "fetched_utc": "2026-10-27T16:02:20.350337+00:00"
+  }
+]

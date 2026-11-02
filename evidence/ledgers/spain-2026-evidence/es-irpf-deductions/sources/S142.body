@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Por adquisición de vehículos nuevos pertenecientes a las categorías incluidas en la Orden 5/2020,...</title><meta name="ObjectId" content="0271e6181b839910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='a888add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html'>Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='d0b0e6181b839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Comunitat Valenciana</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html" class="d-none">Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Por adquisición de vehículos nuevos pertenecientes a las categorías incluidas en la Orden 5/2020, de 8 de junio </h1><p><strong>Normativa: <abbr title="Art&iacute;culo">Art.</abbr> 4.Uno.y), Cuatro y Cinco y disposici&oacute;n adicional decimosexta Ley 13/1997, de 23 de diciembre, por la que se regula el tramo auton&oacute;mico del Impuesto sobre la Renta de las Personas F&iacute;sicas y restantes tributos cedidos, de la Comunitat Valenciana</strong></p>
+<h2>Cuant&iacute;a de la deducci&oacute;n</h2>
+<p><strong>El 10 por 100 de las cantidades </strong><strong>destinadas por el contribuyente durante el periodo impositivo a la adquisici&oacute;n de veh&iacute;culos nuevos </strong>pertenecientes a las categor&iacute;as incluidas en la Orden 5/2020, de 8 de junio, de la Conseller&iacute;a de Pol&iacute;tica Territorial, Obras P&uacute;blicas y Movilidad, por la cual se aprueban las bases reguladoras para el otorgamiento de subvenciones para la adquisici&oacute;n o electrificaci&oacute;n de bicicletas urbanas y veh&iacute;culos el&eacute;ctricos de movilidad personal</p>
+<h2>Requisitos para la aplicaci&oacute;n de la deducci&oacute;n</h2>
+<ul>
+<li>
+<p>Ha de tratarse de veh&iacute;culos <strong>nuevos pertenecientes a alguna de las siguientes categor&iacute;as</strong> incluidas en la Orden 5/2020, de 8 de junio, de la Conseller&iacute;a de Pol&iacute;tica Territorial, Obras P&uacute;blicas y Movilidad, por la cual se aprueban las bases reguladoras para el otorgamiento de subvenciones para la adquisici&oacute;n o electrificaci&oacute;n de bicicletas urbanas y veh&iacute;culos el&eacute;ctricos de movilidad personal:</p>
+<ol>
+<li>
+<p>Bicicletas convencionales &ndash;no electrificadas. Las bicicletas objeto de ayuda habr&aacute;n de tener el car&aacute;cter de urbano.</p>
+</li>
+<li>
+<p>Bicicletas el&eacute;ctricas.</p>
+</li>
+<li>
+<p>Kits de electrificaci&oacute;n de bicicletas urbanas.</p>
+</li>
+<li>
+<p>Veh&iacute;culos de Movilidad Personal (VMP).</p>
+</li>
+</ol>
+</li>
+<li>
+<p>La deducci&oacute;n solo podr&aacute;n aplicarla los contribuyentes cuya <strong>suma de la base liquidable general y de la base liquidable del ahorro</strong>, casillas <strong><em>[0500]</em></strong> y <strong><em>[0510] </em></strong>de la declaraci&oacute;n, <strong>no supere </strong>las siguientes cantidades:</p>
+<ul class="lista-sin-icono">
+<li>
+<p><strong>- 30.000 euros </strong>en declaraci&oacute;n individual.</p>
+</li>
+<li>
+<p><strong>- 47.000 euros </strong>en declaraci&oacute;n conjunta.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2>Base de deducci&oacute;n</h2>
+<ul>
+<li>
+<p>La base de deducci&oacute;n son las cantidades destinadas a la adquisici&oacute;n del veh&iacute;culo.</p>
+</li>
+<li>
+<p>La aplicaci&oacute;n de la deducci&oacute;n queda condicionada a que la <strong>entrega de los importes dinerarios</strong> derivada del acto o negocio jur&iacute;dico que d&eacute; derecho a su aplicaci&oacute;n <strong>se realice mediante tarjeta de cr&eacute;dito o d&eacute;bito, transferencia bancaria, cheque nominativo o ingreso en cuentas en entidades de cr&eacute;dito</strong>.</p>
+</li>
+<li>
+<p>Por per&iacute;odo impositivo <strong>cada contribuyente podr&aacute; deducirse las cantidades destinadas a la adquisici&oacute;n de un &uacute;nico veh&iacute;culo</strong>.</p>
+</li>
+<li>
+<p>Solo podr&aacute;n aplicar la deducci&oacute;n <strong>los contribuyentes que figuren en la factura de compra del veh&iacute;culo</strong></p>
+</li>
+</ul>
+<h2>Base m&aacute;xima de deducci&oacute;n</h2>
+<ol type="1">
+<li>
+<p>La <strong>base m&aacute;xima de la deducci&oacute;n</strong> estar&aacute; constituida por el importe m&aacute;ximo subvencionable para cada tipo de veh&iacute;culo, de acuerdo con la mencionada Orden 5/2020, de 8 de junio, incrementado en un 10 por 100, del que se excluir&aacute; la parte de la adquisici&oacute;n financiada con subvenciones o ayudas p&uacute;blicas.</p>
+<div class="sangrado-izq">
+<p class="letrita">A efectos de determinar la cuant&iacute;a m&aacute;xima deducible, el importe de las ayudas p&uacute;blicas y subvenciones debe descontarse del importe total abonado por el contribuyente y el resultado de esta operaci&oacute;n no podr&aacute; superar importe m&aacute;ximo subvencionable para cada tipo de veh&iacute;culo, de acuerdo con la mencionada Orden 5/2020, de 8 de junio.</p>
+<p class="letrita">De acuerdo con la citada Orden la tipolog&iacute;a, requisitos y bases m&aacute;ximas de deducci&oacute;n ser&aacute;n las que se indican en el siguiente cuadro:</p>
+<table summary="base m&aacute;xima de deducci&oacute;n">
+<tbody>
+<tr>
+<th class="texto_cen"><span class="letrita">Tipolog&iacute;a</span></th>
+<th class="texto_cen"><span class="letrita">Requisitos</span></th>
+<th class="texto_cen "><span class="letrita">Base m&aacute;xima de deducci&oacute;n</span></th>
+</tr>
+<tr>
+<td class="letrita">Bicicletas convencionales</td>
+<td class="letrita">Con car&aacute;cter de urbano</td>
+<td class="letrita">550&euro; o 770&euro; en el caso de bicicletas familiares con elemento de carga para transporte infantil.</td>
+</tr>
+<tr>
+<td class="letrita">Bicicletas el&eacute;ctricas</td>
+<td>
+<ol class="letrita">
+<li>Bicicleta urbana, con asistencia al pedaleo, y equipamiento est&aacute;ndar.</li>
+<li>Potencia del motor el&eacute;ctrico inferior o igual a 250 W.</li>
+<li>Autonom&iacute;a aproximada 50 km.</li>
+<li>Bater&iacute;a de ion litio, de 36 V y capacidad m&iacute;nima de 9 A.h.</li>
+<li>La alimentaci&oacute;n debe cortarse cuando la bicicleta alcance 25 km/ hora, o bien cuando la persona deja de pedalear.</li>
+<li>Cumplimiento de la norma <abbr title="Una Norma Espa&ntilde;ola">UNE</abbr>-<abbr title="Normas Europeas">EN </abbr>15194:2018. Ciclos con Asistencia El&eacute;ctrica. Bicicletas <abbr title="Electronically Power Assisted Cycles">EPAC</abbr>.</li>
+</ol>
+</td>
+<td class="letrita texto_cen">1.540&euro;</td>
+</tr>
+<tr>
+<td class="letrita">Kits de electrificaci&oacute;n de bicicletas urbanas</td>
+<td class="letrita">Cumplir&aacute;n las limitaciones se&ntilde;aladas para las bicicletas el&eacute;ctricas.</td>
+<td class="letrita texto_cen">660&euro;</td>
+</tr>
+<tr>
+<td class="letrita">Veh&iacute;culos de Movilidad Personal (VMP)</td>
+<td>
+<ol class="letrita">
+<li>Velocidad m&aacute;xima 25 km/hora</li>
+<li>Autonom&iacute;a m&iacute;nima 30 km.</li>
+<li>Bater&iacute;a de ion litio, de capacidad m&iacute;nima de 7,8 A.h</li>
+</ol>
+</td>
+<td class="letrita texto_cen">495&euro;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p class="border border-primary rounded-sm border-size-1 p-3"><span class="verde"><strong><em>Atenci&oacute;n</em></strong></span><em><span class="verde">:</span> t&eacute;ngase en cuenta que la deducci&oacute;n ser&aacute; aplicable a veh&iacute;culos que se relacionan en la Orden 5/2020, de 8 de junio, aunque no hubieran tenido derecho a obtener ayudas por exceder su precio de compra de los importes m&aacute;ximos subvencionables previstos en la citada orden, si bien estos importes sirven de referencia para el l&iacute;mite m&aacute;ximo de base de la deducci&oacute;n.</em></p>
+</li>
+<li>
+<p>En el supuesto de que exista m&aacute;s de un contribuyente con derecho a aplicar la deducci&oacute;n sobre un mismo veh&iacute;culo, <strong>la&nbsp;base m&aacute;xima de la deducci&oacute;n deber&iacute;a prorratearse entre ellos</strong>.</p>
+</li>
+<li>
+<p>La <strong>base m&aacute;xima de la deducci&oacute;n a aplicar en la declaraci&oacute;n conjunta ser&aacute; id&eacute;ntica que en tributaci&oacute;n individual</strong>, sin que proceda su elevaci&oacute;n o multiplicaci&oacute;n en funci&oacute;n del n&uacute;mero de miembros de la unidad familiar. <strong>Esta base m&aacute;xima es por contribuyente</strong>.</p>
+<div class="border-left border-primary pl-2 border-size-5">
+<p><strong>Ejemplos</strong></p>
+<ol type="a">
+<li>
+<p>Matrimonio formado por don M.T y do&ntilde;a R.V, en el que durante el ejercicio cada c&oacute;nyuge adquiri&oacute; una bicicleta el&eacute;ctrica por un importe de 1.600 euros.</p>
+<p>De acuerdo con la Orden 5/2020, de 8 de junio, el precio de las bicicletas el&eacute;ctricas no podr&aacute; ser superior a 1.400 &euro;, IVA incluido, incrementado en un 10 por 100, esto es, 1.540 euros (importe m&aacute;ximo deducible).</p>
+<p>Por tanto, en la declaraci&oacute;n conjunta el importe de la deducci&oacute;n aplicable ser&aacute; 10 por 100 de los importes m&aacute;ximos deducibles. Esto es&nbsp;10%&nbsp;s/ (1.540 + 1.540) = 308 euros</p>
+<p class="letrita sangrado-izq"><strong>Nota:</strong> la &uacute;nica restricci&oacute;n que se establece es que en el mismo periodo impositivo cada contribuyente solo podr&aacute; deducirse las cantidades destinadas a la adquisici&oacute;n de un &uacute;nico veh&iacute;culo. Aqu&iacute; existen dos contribuyentes y la adquisici&oacute;n por cada uno de dos bicicletas el&eacute;ctricas por lo que corresponde el 10% del importe m&aacute;ximo deducible (1.540 euros) por cada una de las bicicletas adquiridas.</p>
+</li>
+<li>
+<p>El mismo matrimonio que en el ejemplo anterior: si don M.T adquiere una bicicleta el&eacute;ctrica por un importe de 1.600 euros y, do&ntilde;a R.V adquiere una bicicleta convencional por 700 euros. Don M.T recibe una ayuda p&uacute;blica para la adquisici&oacute;n de la bicicleta el&eacute;ctrica por un importe de 200 euros.</p>
+<p>De acuerdo con la Orden 5/2020, de 8 de junio, el precio de las bicicletas el&eacute;ctricas no podr&aacute; ser superior a 1400 euros, IVA incluido y el de las bicicletas convencionales (no el&eacute;ctricas no podr&aacute; ser superior a 500 euros, IVA incluido, o 700 euros en el caso de bicicletas familiares con elemento de carga para transporte infantil.</p>
+<p>La base m&aacute;xima ser&aacute; este importe m&aacute;ximo incrementado en un 10 por 100. Por tanto:</p>
+<p>Bicicletas el&eacute;ctricas: (1.400 + 10% s/1.400) = 1.540</p>
+<p>Bicicletas convencionales: (500 + 10% s/500 = 550</p>
+<p>Por tanto, en la declaraci&oacute;n conjunta el importe de la deducci&oacute;n aplicable ser&aacute; del 10 por 100 de&nbsp;las bases&nbsp;m&aacute;ximas.</p>
+<p>Esto es, 10% s/(1.540 - 200 ayuda) = 134 euros.</p>
+<p>10% s/550 = 55 euros.</p>
+<p>Total importe de la deducci&oacute;n: 134 + 55 = 189.</p>
+</li>
+<li>
+<p>El mismo matrimonio que en los ejemplos anteriores: si don M.T adquiere una bicicleta el&eacute;ctrica por un importe de 1.200 euros y, do&ntilde;a R.V adquiere una bicicleta convencional por un importe de&nbsp;350 euros.</p>
+<p>Como los importes satisfechos para la adquisici&oacute;n de las bicicletas son inferiores al precio m&aacute;ximo subvencionable que fija la Orden 5/2020, de 8 de junio (1.400 euros para las bicicletas el&eacute;ctricas y 500 euros para las bicicletas convencional) incrementado en un 10 por 100 (esto es, 1.540 euros para bicicletas el&eacute;ctricas y 550 euros para las bicicletas convencional) se tomar&aacute;n los importe satisfechos.</p>
+<p>Por tanto, en la declaraci&oacute;n conjunta podr&aacute; consignarse una deducci&oacute;n del 10 por 100 de los importes satisfechos para la adquisici&oacute;n de cada bicicleta. Esto es, 10% s/(1.200 + 350) = 155 euros</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+<h2>L&iacute;mite de la deducci&oacute;n seg&uacute;n base liquidable</h2>
+<ul>
+<li>
+<p>El importe m&aacute;ximo de la deducci&oacute;n que resulte conforme a lo indicado&nbsp;en los apartados anteriores&nbsp;solo ser&aacute; aplicable por los contribuyentes cuya <strong>suma de la base liquidable general y de la base liqui&shy;dable del ahorro sea inferior a 27.000 euros, </strong>en tributaci&oacute;n individual, <strong>o inferior a 44.000 euros, </strong>en tributaci&oacute;n conjunta.</p>
+</li>
+<li>
+<p>Cuando <strong>la suma de la base liquidable general y de la base liquidable del ahorro del contribuyente est&eacute; comprendida entre 27.000 y 30.000 euros</strong>, en tributaci&oacute;n individual, o <strong>entre 44.000 y 47.000 euros, </strong>en tributaci&oacute;n conjunta, los <strong>importes y l&iacute;mites de la deducci&oacute;n </strong>ser&aacute;n los siguientes:</p>
+<ol type="a">
+<li>
+<p><strong>En tributaci&oacute;n individual, </strong>el resultado de multiplicar el importe o l&iacute;mite m&aacute;ximo de la deducci&oacute;n por un porcentaje obtenido de la aplicaci&oacute;n de la siguiente f&oacute;rmula:</p>
+<p class="border border-primary rounded-sm border-size-1 p-3"><strong>100 &times; (1 &ndash; el coeficiente resultante de dividir por 3.000 la diferencia entre la suma de la base liquidable general y del ahorro del contribuyente y 27.000)</strong></p>
+</li>
+<li>
+<p><strong>En tributaci&oacute;n conjunta</strong>, el resultado de multiplicar el importe o l&iacute;mite m&aacute;ximo de la deducci&oacute;n por un porcentaje obtenido de la aplicaci&oacute;n de la siguiente f&oacute;rmula:</p>
+<p class="border border-primary rounded-sm border-size-1 p-3"><strong>100 &times; (1 &ndash; el coeficiente resultante de dividir por 3<strong>.000 </strong>la diferencia entre la suma de la base liquidable general y del ahorro del contribuyente y 44.000)</strong></p>
+</li>
+</ol>
+</li>
+</ul><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-08-18">18/agosto/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html xml:lang="es-ES" lang="es-ES">
+		<head>
+			<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="WT.z_idioma" content='es' />
+
+<!---->
+<title>Diari Oficial de la Generalitat de Catalunya. Diari Oficial de la Generalitat de Catalunya</title>
+<link rel='alternate' hreflang='ca' href='https://dogc.gencat.cat/ca/document-del-dogc/index.html?documentId=1037694' /><link rel='alternate' hreflang='es' href='https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1037694' /><link rel='alternate' hreflang='x-default' href='https://dogc.gencat.cat/' /><!--PORTAL DOGC WEB-->
+
+<link rel="shortcut icon" type="image/x-icon" href="/web/resources/fwkResponsives/common/img/favicon.ico" />
+
+
+<link href="/web/resources/fwkResponsives/common/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsives/common/css/styles.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsives/common/css/leaflet.min.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsives/common/css/master.responsive.css" rel="stylesheet" type="text/css"/>
+<!--[if IE 9]>
+	<link href="/web/resources/fwkResponsives/common/css/master.min.css" rel="stylesheet" type="text/css"/>
+	<link href="/web/resources/fwkResponsives/common/css/style_IE9.css" rel="stylesheet" type="text/css"/>
+<![endif]-->
+<script src="/web/resources/fwkResponsives/common/js/jquery.min.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsives/common/js/jquery-ui.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsives/common/js/master.min.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsives/common/js/entorn_config.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsives/common/js/generic_responsive.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsives/common/js/master.responsive.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+	<link href="/web/resources/fwkResponsives/common/css/style_IE8.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="/web/resources/fwkResponsives/common/js/respond.min.js"></script>
+	<script type="text/javascript" src="/web/resources/fwkResponsives/common/js/modernizr.js"></script>
+<![endif]-->
+
+<link href="/web/resources/fwkResponsive/fpca_peu_xarxesSocials/css/fpca_peu_xarxesSocials.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/fpca_peu_contacte/css/fpca_peu_contacte.css" rel="stylesheet" type="text/css"/>
+<link href="/web/system/modules/cat.gencat.wcmResponsive.formatters.httpFetch/resources/fpca_fitxa_dogc/css/fpca_fitxa_dogc.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/fpca_peu/css/fpca_peu.css" rel="stylesheet" type="text/css"/>
+<link href="/web/system/modules/cat.gencat.wcmResponsive.formatters.capcaleraEadop/resources/fpca_capcalera_eadop_resp/css/fpca_capcalera_eadop_resp.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/common/css/simplebar.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/fpca_subcapcalera/css/fpca_subcapcalera.css" rel="stylesheet" type="text/css"/>
+<script src="/web/resources/fwkResponsive/fpca_peu_xarxesSocials/js/fpca_peu_xarxesSocials.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/fpca_peu_contacte/js/fpca_peu_contacte.js" type="text/javascript"></script>
+<script src="/web/system/modules/cat.gencat.wcmResponsive.formatters.httpFetch/resources/common/js/constants.js" type="text/javascript"></script>
+<script src="/web/system/modules/cat.gencat.wcmResponsive.formatters.httpFetch/resources/common/js/functionsCommons.js" type="text/javascript"></script>
+<script src="/web/system/modules/cat.gencat.wcmResponsive.formatters.httpFetch/resources/common/js/jquery.mark.min.js" type="text/javascript"></script>
+<script src="/web/system/modules/cat.gencat.wcmResponsive.formatters.httpFetch/resources/fpca_fitxa_dogc/js/fpca_fitxa_dogc.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/fpca_peu/js/fpca_peu.js" type="text/javascript"></script>
+<script src="/web/system/modules/cat.gencat.wcmResponsive.formatters.capcaleraEadop/resources/fpca_capcalera_eadop_resp/js/fpca_capcalera_eadop_resp.js" type="text/javascript"></script>
+<script src="/web/system/modules/cat.gencat.wcmResponsive.formatters.capcaleraEadop/resources/fpca_capcalera_eadop_resp/js/logout.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/common/js/simplebar.min.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/common/js/autoComplete.min.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/common/js/algoliasearch.min.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/common/js/autoComplete.js" type="text/javascript"></script>
+<script src="/web/system/modules/cat.gencat.wcmResponsive.formatters.httpFetch/resources/common/js/constants.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/fpca_subcapcalera/js/fpca_subcapcalera.js" type="text/javascript"></script>
+<link href="/web/resources/fwkResponsives/common/css/print.css" rel="stylesheet" type="text/css"/>
+<meta property="og:title" content="Documento"/>
+			<meta property="og:url" content="http://dogc.gencat.cat/es/document-del-dogc/index.html"/>
+			<meta property="og:type" content=""/>
+			<meta property="og:site_name" content="Diari Oficial de la Generalitat de Catalunya"/>
+			<meta property="og:image" content="http://dogc.gencat.cat/web/resources/fwk/comuns/img/avatar.jpg" />
+					<meta property="og:image:secure_url" content="https://dogc.gencat.cat/web/resources/fwk/comuns/img/avatar.jpg" />
+				<meta property="og:image:width" content="640" />
+			<meta property="og:image:height" content="442" />
+			<meta name="twitter:title" content="Documento"/>
+			<meta name="twitter:card" content="summary"/>
+			<meta name="twitter:site" content="@gencat">
+			<meta name="twitter:image" content="http://dogc.gencat.cat/web/resources/fwk/comuns/img/avatar.jpg" />
+				<script type="text/javascript">
+(function(window, document, dataLayerName, id) {
+window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString();f="; SameSite=Strict"}document.cookie=a+"="+b+d+f+"; path=/"}
+var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+tags.async=!0,tags.src="https://gencat.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+!function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+})(window, document, 'dataLayer', 'eb50131d-1482-4c39-a0fa-835d5e4dacd6');
+</script>
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="CV3HF-NXPPP-GG9SW-UCTKQ-SQC6Y",function(){function e(){if(!r){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.appendChild(e),r=!0}}function t(e){r=!0;var n,t,a,i,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",i=(a.frameElement||a).style,i.width=0,i.height=0,i.border=0,i.display="none",o.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void 0;",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=14,window.BOOMR.url=n+"CV3HF-NXPPP-GG9SW-UCTKQ-SQC6Y";var i=document.currentScript||document.getElementsByTagName("script")[0],o=i.parentNode,r=!1,d=document.createElement("link");if(d.relList&&"function"==typeof d.relList.supports&&d.relList.supports("preload")&&"as"in d)window.BOOMR.snippetMethod="p",d.href=window.BOOMR.url,d.rel="preload",d.as="script",d.addEventListener("load",e),d.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!r)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.appendChild(d);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="2vq5x2yx3sn4k2xbht4a-f-c0efa2415-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"41","ak.cp":"725271","ak.ai":parseInt("471659",10),"ak.ol":"0","ak.cr":27,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"31be3ae9","ak.r":47673,"ak.a2":n,"ak.m":"dscb","ak.n":"essl","ak.cport":54972,"ak.gh":"2.16.64.94","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1793146104","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==unwlBXAjbbKEw1xqWa4S0kZq1nsO37Lu4W2y7QsWhKe1ZhOzjAieTp/eGGnxSnVehaLZ6pUdr20LqeFH+ePM1h8fdUKQV9OHFY/b4OCIWCciKK9H9zPOAoJ3A+EIW2y5WUnNoz0PGDRSOGb/pm5y8q9sfrAjeIsz48zfTtAJacqsNkho+YxqDFTq6h+/45Qny04503VQvFqohuYj18s8aST03HpIhmnYTj0V6CSV56OS8NIqMRqLjpWRc+BRSTvQmxAneqFdJGzvdAC1PsfulMxJvM4C1+3h0n9feXGw5fo2onvyRCELUyaHzzVMC23L7DW9qSApgzKKyBaEE+lTcId4ZIyPMY3XuJdN04ScCioBTUX8luSMlt1G2M0caiq6cvZrlir+HNyDXRA/UA78vE+yyKjVXVqIS44I5MW4BLg=","ak.pv":"110","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+		<body>
+			<div class="EVO-boto-fuga">
+        <link href="/web/resources/fwkResponsives/common/css/botoFuga.css" rel="stylesheet" type="text/css"/>
+        <script src="/web/resources/fwkResponsives/common/js/botoFuga.js" type="text/javascript"></script>
+        <!-- Botó -->
+        <button class="sortir-rapid hide">Salir rápido</button>
+        <!-- Modal -->
+        <div class="boto-fuga">
+            <div class="modal fade modalFugida" tabindex="-1" role="dialog" aria-labelledby="modalFugidaLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar ventana." title="Cerrar ventana.">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p id="botoFugaModalTitle" class="modal-title">Para poder garantizar tu privacidad en este web y no dejar rastro de tu actividad, ten en cuenta lo siguiente:</p>
+                            <div class="modal-body-content">
+                                <div class="modal-body-content-detail">
+                                <div class="sim-btn"><span>Salir rápido</span></div>
+                                    <p id="botoFuga1">1. Dispones del botón <strong>Salir rápido</strong> para salir inmediatamente.</p>
+                                </div>
+                                <div class="modal-body-content-detail">
+                                    <img src="/web/resources/fwkResponsive/fpca_capcalera/img/imatge-huida-r-pida-02.svg" alt="pdf">
+                                    <p id="botoFuga2">2. Cuando abras un PDF, <strong>simplemente visualízalo</strong>, sin guardarlo.</p>
+                                </div>
+                                <div class="modal-body-content-detail">
+                                    <img src="/web/resources/fwkResponsive/fpca_capcalera/img/imatge-huida-r-pida-03.svg" alt="esborrar-historial">
+                                    <p id="botoFuga3">3. Asegúrate de <strong>borrar tu historial de navegación</strong> antes de salir.</p>
+                                </div>
+                                <div class="modal-body-content-detail">
+                                    <img src="/web/resources/fwkResponsive/fpca_capcalera/img/imatge-huida-r-pida-04.svg" alt="mode-incognit">
+                                    <p id="botoFuga4">4. Utiliza la <strong>navegación privada o de incógnito</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">De acuerdo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Auditoria Accesibilidad - Enlace para saltar al contenido principal de la pagina sin pasar por la cabecera y subcabecera -->
+			<a class="hidden-xs skip-main" href="#main" tabindex="1" role="region">
+				Saltar al contenido principal
+</a>
+
+			<div class="contenidor unfixed">
+				<header class="NG-header">
+					<!--googleoff: index -->
+<!--googleoff: snippet-->
+
+	<!-- <div class="container">  -->
+		<div  id="hTContainer" >
+
+
+
+
+
+	<div class="fpca_flexible" data-src="/.content/appdynamics/appdynamics.html">
+	
+		
+		
+				
+			
+				
+					
+					
+						
+							
+							
+							
+							
+						
+					
+					
+					
+				
+			
+		
+	
+	</div>
+
+
+<div class="fpca_capcalera_new">
+		<input type="hidden" id="locale" name="locale" value="es">
+		<input type="hidden" id="rootPath" name="rootPath" value="/sites/dogcweb/index.html">
+		<input type="hidden" id="mySubscriptions" name="mySubscriptions" value="Área privada">
+		<div data-id="readySearch"></div>
+		<input type="hidden" id="localeCapcalera" name="localeCapcalera" value="es">
+			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+			<div class="NG-header__container">
+				<div class="NG-main">
+					<div class="NG-container">
+						<div class="NG-row-flex NG-row-flex--space-between">
+							<div class="NG-col NG--pd15 NG-row-flex--vertical-lg NG-row-flex-row-reverse">
+								<div class="NG-header__logo">
+									<a href="https://web.gencat.cat/" title="Vés a la pàgina inici">
+										<img class="NG-header__image"
+											 width="90" height="21"
+											 src="/web/system/modules/cat.gencat.wcmResponsive.formatters.capcaleraEadop/resources/fpca_capcalera_eadop_resp/img/gencat-nuevo-completo-w.svg"
+											 alt="Logotipo de la Generalitat"
+										/>
+										
+									</a>
+								</div>
+								<a class="NG-header__icon js-burguer-menu" role="button" tabindex="0">
+									<span class="sr-only">Menú</span>
+								</a>
+							</div>
+							<div data-id="readySearch"></div>
+							<div class="NG-col NG--pd15">
+								<div class="NG-navbar__menu-desktop--wrapper">
+									<ul class="NG-navbar__menu NG-navbar__menu--invert js-NG-navbar__menu show-lg">
+										<!-- AREA PRIVADA -->
+													<!-- Settings area privada -->
+														
+														<!-- Area privada exists -->
+															<li class="NG-navbar__list NG-navbar__list--border">
+																<a id="cabecera" class="NG-navbar__link NG-navbar__link--white NG-navbar__image--area-privada">
+																	<img class="NG-navbar__image"
+																		 src="/web/system/modules/cat.gencat.wcmResponsive.formatters.capcaleraEadop/resources/fpca_capcalera_eadop_resp/img/user.svg"
+																		 alt="Icon Área privada"
+																	/>
+																		Área privada</a>
+																<div id="modal-login" tabindex="-1" role="dialog" class="modal-login modal fade">
+																   <div role="document" class="modal-dialog">
+																	 <div class="modal-content">
+																	   <div class="modal-header">
+																		 <button type="button" data-dismiss="modal" aria-label="Cerrar" class="close">
+																			<span aria-hidden="true">
+																				<img src="/web/system/modules/cat.gencat.wcmResponsive.formatters.capcaleraEadop/resources/fpca_capcalera_eadop/img/NG_boto_tancar.png" 
+																					 alt="Cerrar"/>
+																			</span>
+																		 </button>
+																	   </div>
+																	   <div class="modal-body">
+																		 <div class="body-header">
+																		  <div id="flag" class="cabecera"></div>
+																		   <p class="modal-subtitle">Diario Oficial de la Generalitat de Cataluña - Portal Jurídico de Cataluña</p>
+																		 </div>
+																		 <div class="row">
+																		   <div class="col-xs-12 col-md-6 col-md-push-6">
+																			 <div class="form-wrapper">
+																				 <fieldset>
+																				   <legend>Iniciar la sesión</legend>
+																				   <div class="form-group">
+																					 <label for="loginEmail">Correo electrónico</label>
+																					 <input id="loginEmail" type="email" name="loginEmail"/>
+																				   </div>
+																				   <div class="form-group">
+																					 <label for="loginPassword">Contraseña</label>
+																					 <input id="loginPassword" type="password" name="loginPassword"/>
+																					 <div class="wrapper-link"><a role="button" id="forgetPassword"  tabindex="0">¿Olvidó la contraseña?</a></div>
+																				   </div>
+																				   <div id="error"><span class="errorCapcalera"></span></div>
+																				   <div class="form-group mrg-top">
+																					 <input id="notCloseSession" type="checkbox" name="notCloseSession"/>
+																					 <label for="notCloseSession">No cerrar la sesión</label>
+																				   </div>
+																				   <div class="form-group">
+																					 <button id="loginButton" type="submit" value="" class="btn bgRed white" disabled>Iniciar la sesión</button>
+																					 <div class="wrapper-no-register">
+																					   <p>¿No está registrado?<a role="button" id="openAccount" tabindex="0">Crear una cuenta</a></p>
+																					 </div>
+																				   </div>
+																				 </fieldset>
+																			 </div>
+																		   </div>
+																		   <div class="col-xs-12 col-md-6 col-md-pull-6">
+																			 <div class="services-wrapper">
+																			   <p>Aquí encontrará un espacio conjunto que da servicio a los dos portales:</p>
+																			   <dl>
+																				 <dt class="dt-alertes">Alertas DOGC</dt>
+																				 <dd>Elija la información que quiera recibir por correo electrónico de entre la que cada día publica el DOGC.</dd>
+																				 <dt class="dt-meus-documents">Mis documentos</dt>
+																				 <dd>Seleccione los documentos que sean de su interés para tenerlos agrupados en su espacio. Suscríbase a los documentos seleccionados para recibir un aviso de correo electrónico cuando se publique una afectación o una nueva versión consolidada.<br/><strong>Aviso</strong><br/>
+																				 Este servicio de suscripción no se activa cuando el Portal Jurídico de Catalunya solo ofrece un enlace de la norma a la base de datos original (BOE, EUR-Lex).</dd>
+																				 <dt class="dt-meves-cerques">Mis búsquedas</dt>
+																				 <dd>Guarde los parámetros o condiciones de una búsqueda, para que la pueda ejecutar cuando se vuelva a conectar. Si se subscribe a los resultados de una búsqueda, cuando se publique en el DOGC un documento que cumpla sus parámetros, recibirá un mensaje de aviso por correo electrónico.</dd>
+																				 <dt class="dt-meves-cerques">Suplemento de notificaciones</dt>
+																				 <dd>Si se acredita con un certificado digital válido podrá consultar las notificaciones publicadas desde el 1 de junio de 2021, donde aparezca su número de documento de identidad. A partir de ese momento quedará suscrito y recibirá un aviso de correo electrónico cada vez que se publique en el Suplemento algún documento que contenga su número de NIE/NIF. Este servicio se puede ver afectado por diferencias en la transcripción de dicho número ajenas al Suplemento.</dd>
+																			   </dl>
+																			 </div>
+																		   </div>
+																		 </div>
+																	   </div>
+																	  	<div class="modal-footer"></div>
+																	 </div>
+																   </div>
+																 </div>
+																												</li>
+														<!-- CONTACTE -->
+													<li class="NG-navbar__list">
+																<a class="NG-navbar__link NG-navbar__link"
+																   href="https://ovt.gencat.cat/gsitfc/AppJava/generic/conqxsGeneric.do?webFormId=391&amp;&amp;topicLevel1ByURL.id=500&amp;topicLevel2ByURL.id=657&amp;set-locale=es_ES"
+																   target="_self"
+																>
+																	<img class="NG-navbar__image"
+																		 src="/web/system/modules/cat.gencat.wcmResponsive.formatters.capcaleraEadop/resources/fpca_capcalera_eadop_resp/img/contacte-b.svg"
+																		 alt="Contacto"
+																	/>
+																	Contacto</a>
+															</li>
+														<!-- SELECTOR IDIOMES -->
+										<li class="NG-navbar__list NG-navbar__list--vertical-sm">
+													<a class="NG-navbar__link js-NG-menu-idioma" id="rotate_icon" role="button" aria-expanded="false"
+													   title="Seleccionar idioma" tabindex="0"
+													>
+														<img class="NG-navbar__image"
+															 src="/web/system/modules/cat.gencat.wcmResponsive.formatters.capcaleraEadop/resources/fpca_capcalera_eadop_resp/img/idioma-b.svg"
+															 alt="Icono de idioma"
+														/>
+														<span class="NG-idioma">
+															Idioma:</span>
+														<span class="NG-nom-idioma-letter">
+															<span class="js-NG-idioma-text notranslate">es</span>
+																<img class="NG-navbar__down"
+																	 src="/web/system/modules/cat.gencat.wcmResponsive.formatters.capcaleraEadop/resources/fpca_capcalera_eadop_resp/img/chevron-down-small-w.svg"
+																	 alt="Icono de idioma"
+																/>
+														</span>
+														<img class="NG-rotate-image NG-navbar__image NG-navbar__image--float-right"
+															 src="/web/system/modules/cat.gencat.wcmResponsive.formatters.capcaleraEadop/resources/fpca_capcalera_eadop_resp/img/chevron-down-thin-b.svg"
+															 alt="Icono de idioma"
+														/>
+													</a>
+
+													<!-- LLISTA IDIOMES -->
+													<ul class="NG-navbar__list-language idioma" aria-label="Idioma de la página.
+">
+														<li class='NG-block__content'><a title="Català" data-idioma="Català" lang="ca" role="button" tabindex="0" class="js-NG-idioma-item js-NG-idioma-tooltip NG-block__content_label notranslate enllacIdioma" href="/ca/document-del-dogc/index.html?documentId=1037694">Català</a></li></ul>
+
+												</li>
+											</ul>
+								</div>
+								<!-- ICONA CERCADOR -->
+								</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- CERCADOR -->
+				<!-- NOM PORTAL/DEPARTAMENT -->
+				<div class="display:none;">
+						</div>
+
+					<div class="NG-departament">
+							<div class="NG-departament__background-wrapper">
+								<div class="NG-container">
+									<div class="NG-row-flex NG-row-flex--align-center-md">
+										<div class="NG-col NG--pd15">
+											<h2 class="NG-departament__title">
+												<a href="/es/index.html?newLang=es_ES&language=es_ES"
+												   title="Diari Oficial de la Generalitat de Catalunya">
+													Diari Oficial de la Generalitat de Catalunya</a>
+											</h2>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- INICI MENU NAVEGACIO -->
+				<div class="NG-navbar">
+					<div class="NG-container">
+						<div class="NG-row-flex NG-row-flex--vertical-md">
+							<ul class="NG-navbar__menu js-navbar__menu">
+								<li class="NG-navbar__list NG-navbar__list--white"><a class="NG-navbar__link NG-navbar__link--noborder"
+										target="_self"
+										title="Menú&nbsp;Inicio"
+										href="/es/inici/">
+										Inicio</a>
+								</li>
+					<li class="NG-navbar__list NG-navbar__list--white js-has-megamenu"><button class="NG-navbar__link NG-navbar__link--noborder"
+										title="Menú&nbsp;Servicios" role="button" aria-expanded="false" tabindex="0">
+										Servicios</button>
+								<div class="NG-megamenu">
+									<div class="NG-megamenu__nav-self--wrapper-mobile">
+										<div class="NG-megamenu__nav-self--top">
+											<button
+												class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+												role="button" >
+												<span class="sr-only">Vuelve al nivel anterior</span> <span
+													class="NG-megamenu__nav-link-back-trapezium"></span>
+											</button>
+											<a class="NG-megamenu__nav-link-self"
+												href="/es/serveis/"
+												target="_self"
+												title="Menú&nbsp;Servicios"> <span>Accede a “</span> Servicios<span>”</span> <img
+												src="/web/resources/fwkResponsive/fpca_capcalera/img/arrow-right-r.svg"
+												alt=""> </a>
+										</div>
+									</div>
+
+									<div
+										class="NG-row-flex NG-row-flex--full-height js-NG-megamenu-wrapper">
+										<div class="NG-col">
+											<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+												data-level="1">
+
+												<ul class="NG-megamenu__nav">
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Consulta del DOGC" href="/es/serveis/Consulta-del-DOGC/">
+																			Consulta del DOGC</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Publicar un anuncio" href="/es/serveis/publicar-un-anunci/">
+																			Publicar un anuncio</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Alertas y suscripciones" href="/es/serveis/subscripcions/">
+																			Alertas y suscripciones</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Suplemento de anuncios de notificación" href="/es/serveis/Suplement_anuncis_notificacio/">
+																			Suplemento de anuncios de notificación</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_blank"
+																			title="El DOGC del día en X" href="https://twitter.com/dogcdeldia">
+																			El DOGC del día en X<span class="sr-only">. Abrir en una nueva ventana.</span></a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Verificación de documentos" href="/es/serveis/verificar-documents/">
+																			Verificación de documentos</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Datos abiertos" href="/es/serveis/Dades_obertes/">
+																			Datos abiertos</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Normas urbanísticas 1985-2002" href="/es/serveis/normes-urbanisti.-1985/">
+																			Normas urbanísticas 1985-2002</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_blank"
+																			title="DOGC de 1931-1939 y el exilio" href="/ca/serveis/dogc-republica-i-exili/">
+																			DOGC de 1931-1939 y el exilio<span class="sr-only">. Abrir en una nueva ventana.</span></a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_blank"
+																			title="Publicaciones de la Generalitat 1931-1939" href="https://dogc.gencat.cat/es/publicacions-de-la-generalitat-de-catalunya/Publicacions_1931-1939/">
+																			Publicaciones de la Generalitat 1931-1939<span class="sr-only">. Abrir en una nueva ventana.</span></a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Dietarios de la Generalitat de Cataluña 1411-1713" href="/es/serveis/dietaris/">
+																			Dietarios de la Generalitat de Cataluña 1411-1713</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Suplemento en lengua catalana del BOE" href="/es/serveis/suplement-boe-catala/">
+																			Suplemento en lengua catalana del BOE</a>
+																	</li>
+														<li>
+															<p class="NG-megamenu__nav-self">
+																<a class="NG-megamenu__nav-link-self"
+																	href="/es/serveis/"
+																	target="_self"
+																	title="Menú&nbsp;Servicios">
+																	<span>Accede a “</span>
+																	Servicios<span>”</span> <img
+																	src="/web/resources/fwkResponsive/fpca_capcalera/img/arrow-right-r.svg"
+																	alt="" /> </a>
+															</p>
+														</li>
+													</ul>
+												</div>
+										</div>
+
+
+										<div
+											class="NG-col NG-col--fullwidth NG-row-flex NG-show-lg js-NG-hide-description">
+
+											<div
+												class="NG-col NG-col--fullwidth NG-row-flex--vertical-lg">
+												<div class="NG-row-flex NG-row-flex--vertical-lg">
+
+													<div class="NG-row-flex">
+														<div class="NG-col NG-col--fullwidth">
+															<div class="NG-megamenu__description">
+																<div class="NG-megamenu__description-wrapper">
+																	<p class="NG-megamenu__description-title">
+																		Servicios</p>
+																	<div class="NG-megamenu__nav-self--wrapper-desktop">
+																		<p class="NG-megamenu__nav-self">
+																			<a class="NG-megamenu__nav-link-self"
+																				href="/es/serveis/"
+																				target="_self"
+																				title="Menú&nbsp;Servicios">
+																				<span>Accede a “</span>
+																				Servicios<span>”</span> <img
+																				src="/web/resources/fwkResponsive/fpca_capcalera/img/arrow-right-r.svg"
+																				alt="" /> </a>
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+							</li>
+					<li class="NG-navbar__list NG-navbar__list--white js-has-megamenu"><button class="NG-navbar__link NG-navbar__link--noborder"
+										title="Menú&nbsp;Sobre el DOGC" role="button" aria-expanded="false" tabindex="0">
+										Sobre el DOGC</button>
+								<div class="NG-megamenu">
+									<div class="NG-megamenu__nav-self--wrapper-mobile">
+										<div class="NG-megamenu__nav-self--top">
+											<button
+												class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+												role="button" >
+												<span class="sr-only">Vuelve al nivel anterior</span> <span
+													class="NG-megamenu__nav-link-back-trapezium"></span>
+											</button>
+											<a class="NG-megamenu__nav-link-self"
+												href="/es/sobre-el-dogc/"
+												target="_self"
+												title="Menú&nbsp;Sobre el DOGC"> <span>Accede a “</span> Sobre el DOGC<span>”</span> <img
+												src="/web/resources/fwkResponsive/fpca_capcalera/img/arrow-right-r.svg"
+												alt=""> </a>
+										</div>
+									</div>
+
+									<div
+										class="NG-row-flex NG-row-flex--full-height js-NG-megamenu-wrapper">
+										<div class="NG-col">
+											<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+												data-level="1">
+
+												<ul class="NG-megamenu__nav">
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="¿Qué es el DOGC?" href="/es/sobre-el-dogc/que-es-el-DOGC/">
+																			¿Qué es el DOGC?</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Historia del DOGC" href="/es/sobre-el-dogc/historia-del-dogc/">
+																			Historia del DOGC</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="90 años del ‘Diari Oficial de la Generalitat de Catalunya’ " href="/es/sobre-el-dogc/90_Anys_DOGC/">
+																			90 años del ‘Diari Oficial de la Generalitat de Catalunya’ </a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_blank"
+																			title="Normativa" href="/es/sobre-el-dogc/eadop/normativa/#DOGC">
+																			Normativa<span class="sr-only">. Abrir en una nueva ventana.</span></a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><button class="NG-megamenu__nav-submenu js-NG-megamenu__nav-submenu" role="button" aria-expanded="false" tabindex="0"
+																			title="Entidad Autónoma del Diario Oficial y de Publicaciones">
+																			Entidad Autónoma del Diario Oficial y de Publicaciones</button>
+																	<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+																		data-level="2">
+																		<div class="NG-megamenu__nav-self--top">
+																			<p class="NG-megamenu__nav-self-wrapper">
+																				<button
+																					class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+																					role="button" tabindex="0">
+																					<span class="sr-only">Vuelve al nivel anterior</span> <span
+																						class="NG-megamenu__nav-link-back-trapezium"></span>
+																				</button>
+																				<a class="NG-megamenu__nav-link-self"
+																					target="_self"
+																					title="Entidad Autónoma del Diario Oficial y de Publicaciones"
+																					href="/es/sobre-el-dogc/eadop/">
+																					<span>Accede a “</span>
+																					Entidad Autónoma del Diario Oficial y de Publicaciones<span>”</span>
+																				</a>
+																			</p>
+																		</div>
+
+																		<ul class="NG-megamenu__nav">
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Funciones y normativa" href="/es/sobre-el-dogc/eadop/normativa/">
+																								Funciones y normativa</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<button class="NG-megamenu__nav-submenu js-NG-megamenu__nav-submenu"
+																								role="button" aria-expanded="false" tabindex="0"
+																								title="Transparencia y buen gobierno">
+																								Transparencia y buen gobierno</button>
+																						<div
+																							class="NG-megamenu__nav-wrapper js-NG-simplebar js-NG-top-level"
+																							data-level="3">
+																							<div class="NG-megamenu__nav-self--top">
+																								<p class="NG-megamenu__nav-self-wrapper">
+																									<button
+																										class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+																										role="button" tabindex="0">
+																										<span class="sr-only">Vuelve al nivel anterior</span> <span
+																											class="NG-megamenu__nav-link-back-trapezium"></span>
+																									</button>
+																									<a class="NG-megamenu__nav-link-self"
+																										target="_self"
+																										title="Transparencia y buen gobierno"
+																										href="/es/sobre-el-dogc/eadop/transparencia/">
+																										<span>Accede a “</span>
+																										Transparencia y buen gobierno<span>”</span>
+																									</a>
+																								</p>
+																							</div>
+
+																							<ul class="NG-megamenu__nav">
+																								<li class="NG-megamenu__nav-item ">
+																										<a class=""
+																													target="_self"
+																													title="Carta de servicios"
+																													href="/es/sobre-el-dogc/eadop/transparencia/carta-de-serveis/">
+																													Carta de servicios</a>
+																											</li>
+																								<li class="NG-megamenu__nav-item ">
+																										<a class=""
+																													target="_blank"
+																													title="Perfil del contractant"
+																													href="https://contractaciopublica.gencat.cat/ecofin_pscp/AppJava/cap.do?keyword=&amp;reqCode=viewDetail&amp;idCap=203411&amp;department=11000&amp;">
+																													Perfil del contractant<span class="sr-only">. Abrir en una nueva ventana.</span></a>
+																											</li>
+																								<li class="NG-megamenu__nav-item ">
+																										<a class=""
+																													target="_self"
+																													title="Proyectos normativos"
+																													href="/es/sobre-el-dogc/eadop/transparencia/projectes-normatius/">
+																													Proyectos normativos</a>
+																											</li>
+																								<li class="NG-megamenu__nav-item ">
+																										<a class=""
+																													target="_self"
+																													title="Presupuesto vigente"
+																													href="/es/sobre-el-dogc/eadop/transparencia/gestio-economica/">
+																													Presupuesto vigente</a>
+																											</li>
+																								<li class="NG-megamenu__nav-item ">
+																										<a class=""
+																													target="_self"
+																													title="Organización"
+																													href="/es/sobre-el-dogc/eadop/transparencia/organitzacio/">
+																													Organización</a>
+																											</li>
+																								<li>
+																									<p class="NG-megamenu__nav-self">
+																										<a class="NG-megamenu__nav-link-self"
+																											href="/es/sobre-el-dogc/eadop/transparencia/"
+																											target="_self"
+																											title="Menú&nbsp;Transparencia y buen gobierno">
+																											<span>Accede a “</span>
+																											Transparencia y buen gobierno<span>”</span> <img
+																											src="/web/resources/fwkResponsive/fpca_capcalera/img/arrow-right-r.svg"
+																											alt="" /> </a>
+																									</p>
+																								</li>
+																							</ul>
+																						</div>
+																					</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Memorias" href="/es/sobre-el-dogc/eadop/memories/">
+																								Memorias</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Protección de datos" href="/es/sobre-el-dogc/eadop/proteccio-de-dades-personals/">
+																								Protección de datos</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Publicaciones" href="/es/sobre-el-dogc/eadop/publicacions/">
+																								Publicaciones</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Direcciones y contacto" href="/es/sobre-el-dogc/eadop/adreces-i-contacte/">
+																								Direcciones y contacto</a>
+																						</li>
+																			<li>
+																				<p class="NG-megamenu__nav-self">
+																					<a class="NG-megamenu__nav-link-self"
+																						target="_self"
+																						title="Entidad Autónoma del Diario Oficial y de Publicaciones"
+																						href="/es/sobre-el-dogc/eadop/">
+																						<span>Accede a “</span>
+																						Entidad Autónoma del Diario Oficial y de Publicaciones<span>”</span> <img
+																						src="/web/resources/fwkResponsive/fpca_capcalera/img/arrow-right-r.svg"
+																						alt=""> </a>
+																				</p>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Preguntas frecuentes" href="/es/sobre-el-dogc/preguntes-frequents/">
+																			Preguntas frecuentes</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Otros diarios oficiales" href="/es/sobre-el-dogc/altres-diaris-oficials/">
+																			Otros diarios oficiales</a>
+																	</li>
+														<li>
+															<p class="NG-megamenu__nav-self">
+																<a class="NG-megamenu__nav-link-self"
+																	href="/es/sobre-el-dogc/"
+																	target="_self"
+																	title="Menú&nbsp;Sobre el DOGC">
+																	<span>Accede a “</span>
+																	Sobre el DOGC<span>”</span> <img
+																	src="/web/resources/fwkResponsive/fpca_capcalera/img/arrow-right-r.svg"
+																	alt="" /> </a>
+															</p>
+														</li>
+													</ul>
+												</div>
+										</div>
+
+
+										<div
+											class="NG-col NG-col--fullwidth NG-row-flex NG-show-lg js-NG-hide-description">
+
+											<div
+												class="NG-col NG-col--fullwidth NG-row-flex--vertical-lg">
+												<div class="NG-row-flex NG-row-flex--vertical-lg">
+
+													<div class="NG-row-flex">
+														<div class="NG-col NG-col--fullwidth">
+															<div class="NG-megamenu__description">
+																<div class="NG-megamenu__description-wrapper">
+																	<p class="NG-megamenu__description-title">
+																		Sobre el DOGC</p>
+																	<div class="NG-megamenu__nav-self--wrapper-desktop">
+																		<p class="NG-megamenu__nav-self">
+																			<a class="NG-megamenu__nav-link-self"
+																				href="/es/sobre-el-dogc/"
+																				target="_self"
+																				title="Menú&nbsp;Sobre el DOGC">
+																				<span>Accede a “</span>
+																				Sobre el DOGC<span>”</span> <img
+																				src="/web/resources/fwkResponsive/fpca_capcalera/img/arrow-right-r.svg"
+																				alt="" /> </a>
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+							</li>
+					<li class="NG-navbar__list NG-navbar__list--white"><a class="NG-navbar__link NG-navbar__link--noborder"
+										target="_blank"
+										title="Menú&nbsp;Portal Jurídic"
+										href="https://portaljuridic.gencat.cat/ca/">
+										Portal Jurídic<span class="sr-only">. Abrir en una nueva ventana.</span></a>
+								</li>
+					<li class="NG-navbar__list NG-navbar__list--white"><a class="NG-navbar__link NG-navbar__link--noborder"
+										target="_blank"
+										title="Menú&nbsp;Librería"
+										href="https://llibreria.gencat.cat/">
+										Librería<span class="sr-only">. Abrir en una nueva ventana.</span></a>
+								</li>
+					</ul>
+							<div class="NG-navbar__menu-mobile--wrapper"></div>
+						</div>
+					</div>
+				</div>
+				<!-- FI MENU NAVEGACIO -->
+
+			</div>
+		</div>
+
+		<script>
+			var availableLocalesTranslate = "es,ca";
+			$(document).ready(function(){
+				$("ul li a.t-automatica").each(function(){
+					var tempDataContent =$(this).attr('data-content');
+					if(tempDataContent){
+						tempDataContent = tempDataContent.replace("Traducir", "Traducir");
+						tempDataContent = tempDataContent.replace("traducir", "Traducir");
+						$(this).attr('data-content', tempDataContent);
+					}
+				});
+			});
+		</script>
+		<script>
+			function hideTranslationWhenIframe(){
+				var isInIframe = (parent !== window),
+						parentUrl = null;
+
+				if (isInIframe) {
+					parentUrl = document.referrer;
+					//Ocultar cabecera
+					var cabecera = document.getElementsByClassName("idioma");
+					//cabecera[0].style.display = "none";
+					langButtons = $(cabecera[0]).find("a");
+					langButtons.each(function(index, e){
+						if(langButtons.length -1 != index){
+							var href = $(this).attr("href").substring($(this).attr("href").indexOf("&url=")+5);
+							var name = (href.indexOf("#googtrans") > -1)? href.substring(href.indexOf("#googtrans(ca|")+14, href.indexOf("#googtrans(ca|")+16) : "ca";
+							var css = (name != "ca") ? "t-automatica" : "";
+							if(href.startsWith("https://traductor.gencat.cat/trad_URL.jsp")){
+								tempURL = href.replace("https://traductor.gencat.cat/trad_URL.jsp", "");
+								href = tempURL.substring(tempURL.indexOf("https"));
+							}
+							$(cabecera[0]).find("li").append("<a href='"+href+"' alt='"+name+"' class='"+css+"'>"+name+"</a>");
+						}
+						$(this).remove();
+					});
+					//Ocultar barra Google duplicada
+					document.write ('<style type="text/css">body{ top: 0 !important;}.goog-te-banner-frame{display:none !important;}</style>');
+				}
+				return parentUrl;
+			}
+			hideTranslationWhenIframe();
+		</script>
+
+	</div><!-- </div> -->
+<!--googleon: snippet -->
+<!--googleon: index--></header>
+			</div>
+			<div class="border-start bgGrey">
+				<!--googleoff: index -->
+<!--googleoff: snippet-->
+	<div  id="impacteContainer" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+		
+		
+
+		<div class="fpca-subcapcalera ">
+				
+			
+				<div class="NG-menu ">
+				<div class="NG-container">
+				
+				
+					
+					
+					
+					
+					
+					
+					
+						
+
+						
+						
+							
+							
+					
+						
+
+						
+						
+							
+							
+					
+
+					
+						<ul class="NG__breadcrumb">
+							<li class="NG__breadcrumb_item">
+									
+										
+										
+											<a class="NG__breadcrumb__item_link" title="DOGC" href="/es/index.html?newLang=es_ES&amp;language=es_ES">
+												<span class="NG__breadcrumb__item_link_span NG__breadcrumb__item_link_span--overflow">DOGC</span>
+											</a>
+										
+									
+								</li>
+								<li class="NG__breadcrumb_item">
+									
+										
+											
+											Documento
+										
+										
+									
+								</li>
+						</ul>
+					
+				
+									
+					
+
+					
+					
+					
+					
+
+				<div class="NG-menu__wrapper">
+					<div class="NG-menu__wrapper_title" role="main">
+						
+						
+						
+						
+						   
+						
+							
+							
+								
+									<h1 class="NG-menu__title">
+										Diari Oficial de la Generalitat de Catalunya
+									</h1>
+								
+							
+						
+						
+					</div>
+					<div class="NG-menu__wrapper_title2">
+						
+
+						
+					
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	
+</div><!--googleon: snippet -->
+<!--googleon: index--></div>
+			<main id="main" class="portaldogcweb">
+				<div class="literalesAccesibilidad">
+					<input type="hidden" class="literalTipoArchivo" value="Tipo de fichero"/>
+					<input type="hidden" class="literalPesoArchivo" value="Peso del fichero"/>
+				<!--
+					<input type="hidden" class="literalEnlaceExtern" value="???publicacio.autor???"/>
+				-->	
+				</div>
+
+				<section class="padding-xs padding-sm padding-md colorSectionOdd">
+								<article class="container fullcontainer-xs">
+									<div class="row">
+										<div>
+													<div  id="center_1R" >
+
+
+
+
+
+
+
+
+
+	
+	
+		<div class="fpca_fitxa_dogc">
+			<input type="hidden" id="locale" name="locale" value="es">
+			<input type="hidden" id="protocolFitxa" name="protocol" value="https">
+			<input type="hidden" id="hostFitxa" name="host" value="preproduccio.portaldogc.gencat.cat">
+			<input type="hidden" id="portFitxa" name="port" value="443">
+			<input type="hidden" id="uriFitxa" name="uri" value="/eadop-rest/api/dogc/documentDOGC">
+			<input type="hidden" id="rootPathFitxa" name="rootPath" value="/sites/dogcweb/index.html">
+
+			<!-- Messages i18n for javascript -->
+			<input type="hidden" id="downloadText" name="downloadText" value="Descargar">
+			<input type="hidden" id="documentType" name="documentType" value="Tipo de documento">
+			<input type="hidden" id="numDocument" name="numDocument" value="Número de documento">
+			<input type="hidden" id="messageCopyUrl" name="messageCopyUrl" value="El enlace se ha copiado correctamente."> 
+			<input type="hidden" id="dateDocument" name="dateDocument" value="Fecha del documento">
+			<input type="hidden" id="numControl" name="numControl" value="Número de control">
+			<input type="hidden" id="issuingAuthority" name="issuingAuthority" value="Entidad emisora">
+			<input type="hidden" id="CVE" name="CVE" value="CVE">
+			<input type="hidden" id="numDOGC" name="numDOGC" value="Número del DOGC">
+			<input type="hidden" id="dateDOGC" name="dateDOGC" value="Fecha del DOGC">
+			<input type="hidden" id="sectionDOGC" name="sectionDOGC" value="Sección del DOGC">
+			<input type="hidden" id="affectations" name="affectations" value="Afectaciones">
+			<input type="hidden" id="consolidated" name="consolidated" value="Texto consolidado">
+			<input type="hidden" id="publicatCorregit" name="publicatCorregit" value="Texto publicado corregido">
+			<input type="hidden" id="catalana" name="catalana" value="catalana">
+			<input type="hidden" id="castellana" name="castellana" value="castellana">
+			<input type="hidden" id="textAltreIdioma" name="textAltreIdioma" value="Consúltelo aquí">
+            <input type="hidden" id="textAltreIdiomaText" name="textAltreIdiomaText" value="texto">
+            <input type="hidden" id="docDispUnicPdf" name="docDispUnicPdf" value="Este documento está disponible en formato">
+			<input type="hidden" id="docDispOtherVersion" name="docDispOtherVersion" value="Documento disponible en versión {IDIOMA} en formato">
+			<input type="hidden" id="textBugFix" name="textBugFix" value="En este texto se han introducido las correcciones de errores publicadas en el">
+			<input type="hidden" id="veureMes" name="veureMes" value="Ver más">
+			<input type="hidden" id="close" name="close" value="Cerrar">
+			<input type="hidden" id="textEli" name="textEli" value="Esta url redirige hacia el">
+			<input type="hidden" id="redirectEli" name="redirectEli" value="DOGC">
+			<input type="hidden" id="bodyDocumentEli" name="bodyDocumentEli" value="URI ELI:">
+			<input type="hidden" id="gotoAranes" name="gotoAranes" value="Versión en aranés">
+			<input type="hidden" id="gotoCatala" name="gotoCatala" value="Versión en  catalán">
+			<input type="hidden" id="gotoCastella" name="gotoCastella" value="Versión en castellano">
+			<input type="hidden" id="bustiaContacta" name="bustiaContacta" value="Buzón de contacto">
+			<input type="hidden" id="noValidity" name="noValidity" value="NO VIGENTE">
+			<input type="hidden" id="numSuplement" name="numSuplement" value="Número de Suplemento">
+			<input type="hidden" id="dateSuplement" name="dateSuplement" value="Fecha del Suplemento">
+			<input type="hidden" id="sectionSuplement" name="sectionSuplement" value="Suplemento">
+			<input type="hidden" id="tipusDiari" name="tipusDiari" value="Tipo de diario">
+			<input type="hidden" id="errorTimeout" name="errorTimeout" value="Consulta no disponible en estos momentos. Por favor, reformuladla o repetidla más tarde">
+			<input type="hidden" id="error404" name="error404" value="El recurso solicitado no se encuentra disponible en el servidor">
+			<input type="hidden" id="error500" name="error500" value="En estos momentos el servidor no se encuentra disponible">
+			<input type="hidden" id="errorParsererror" name="errorParsererror" value="El contenido de la respuesta no se ha podido procesar correctamente">
+			<input type="hidden" id="error0" name="error0" value="En estos momentos no es posible establecer conexión con el servidor">
+			<input type="hidden" id="errorAbort" name="errorAbort" value="El servidor no ha procesado la petición de solicitud de información">
+			<input type="hidden" id="errorResto" name="errorResto" value="Se ha dado un error en el servidor con la siguiente descripción:">
+			<input type="hidden" id="relatedSubjects" name="relatedSubjects" value="Descriptores relacionados"> 
+			<input type="hidden" id="thematicDescriptor" name="thematicDescriptor" value="Descriptores temáticos"> 
+			<input type="hidden" id="organizationDescriptor" name="organizationDescriptor" value="Descriptores de organismos"> 
+			<input type="hidden" id="geographicDescriptor" name="geographicDescriptor" value="Descriptores geográficos"> 
+
+
+			
+			
+
+			<input type="hidden" id="documentIdRequest" name="documentIdRequest" value="1037694">
+			<input type="hidden" id="languageRequest" name="languageRequest" value="">
+
+			<div data-id="readySearch"></div>
+			<div class="loading" id="modalLoading"> 
+  				<div class="contentLoading">
+					<img alt="Carga del contenido de la página" src="/web/system/modules/cat.gencat.wcmResponsive.formatters.capcaleraEadop/resources/fpca_capcalera_eadop/img/spinnerLoading.gif">
+   			   		<span>Cargando...</span>
+   				</div>
+			</div>
+			
+			<section class="padding-bot-xs padding-bot-sm rslt tab-pane cercador_tab active">
+				<div class="container">
+			  		<div class="row">
+						<div class="col-md-4 col-xs-12">
+				  			<div class="listadodesktop"> 
+								<div class="wrapper-sumari">
+					  				<div class="llistat_collap">
+										<div class="panel-group llistat_collapse_cont">
+						  					<div class="panel panel-default">
+					                          <div class="panel-heading">
+											  	<div class="panel-title"><a id="swapArrow" data-toggle="collapse" href="#disposicions" class="collapsed">Datos del documento</a></div>
+					                          </div>
+					                          <div id="disposicions" class="panel-collapse collapse">
+					                            <ul id="disposicions_cos_bloc" class="cos_bloc"></ul>
+					                          </div>
+						  					</div>
+						 					<div id="affectationsCosBloc" class="panel panel-default">
+												<div id="panel-heading-affectations" class="panel-heading">
+												</div>
+												<div id="personal" class="panel-collapse collapse">
+							  					<ul id="affectations_body_block" class="cos_bloc"></ul>
+												</div>
+						  					</div>
+						  					<div id="bugfixCosBloc" class="panel panel-default" style="display: none;">
+												<div class="panel-heading">
+							  					<div class="panel-title"><a data-toggle="collapse" href="#Anuncis" class="collapsed">Corrección de erratas</a></div>
+												</div>
+												<div id="Anuncis" class="panel-collapse collapse">
+							  					<ul id="corrections_body_block" class="cos_bloc"></ul>
+												</div>
+						  					</div>
+						  					<div id="descriptorsCosBloc" class="panel panel-default">
+												<div class="panel-heading">
+													<div class="panel-title">
+														<a data-toggle="collapse" href="#Anuncis2" class="collapsed">
+															Descriptores relacionados
+														</a>
+													</div>
+												</div>
+												<div id="Anuncis2" class="panel-collapse collapse">
+													<div id="related_body_blockCos" class="panel-title">
+														<ul id="related_body_block-organizationDescriptor" class="cos_bloc"></ul>
+														<ul id="related_body_block-geographicDescriptor" class="cos_bloc"></ul>
+														<ul id="related_body_block-thematicDescriptor" class="cos_bloc"></ul>
+													</div>
+												</div>
+						  					</div>
+						 					<div id="integritatCosBloc" class="panel panel-default">
+												<div class="panel-heading">
+							  						<div class="panel-title"><a data-toggle="collapse" href="#Anuncis3" class="collapsed">Autenticidad e integridad</a></div>
+												</div>
+												<div id="Anuncis3" class="panel-collapse collapse">
+								  					<ul id="integritat_cos_bloc" class="cos_bloc">
+								  					</ul>
+												</div>
+						 					</div>
+											<div id="pjurcatCosBloc" class="panel panel-default">
+												<div class="panel-heading">
+													<div class="panel-title">
+														<a data-toggle="collapse" href="#Anuncis4" class="">
+															Portal Jurídic de Catalunya
+														</a>
+													</div>
+												</div>
+												<div id="Anuncis4" class="panel-collapse collapse in">
+													<ul id="pjurcat_cos_bloc" class="cos_bloc"></ul>
+												</div>
+											</div>
+										</div>
+										<div id="versioAltreIdioma"></div>
+					  				</div>
+								</div>
+							</div>
+				  		</div>
+				  		<div class="col-md-8 col-xs-12">
+							<div class="llistat_destacat_text column">
+					  			<div class="menudesktop">
+									<div class="fpca_llista_fonsDestacat mes_consultats_plegat">
+						  				<div class="el_mes_consultat generalitat">
+											<div class="panel panel-default box">
+							  					<div class="panel-heading visible-xs"><a href="javascript:void(0)" title="Acciones">Acciones</a></div>
+							  						<div class="panel-body fons_gris">
+														<ul class="llistat_enllacos_filet_cont list-group">
+								  							<li class="list-group-item llista-col-1 download" id="download"></li>
+															<li class="list-group-item llista-col-1 desa">
+																<a href="javascript:void(0)" title="Guardar">Guardar</a>
+															</li>
+														</ul>
+							  						</div>
+												</div>
+						  					</div>
+										</div>
+									</div>
+									<div id="mostraMissatge"></div>
+									<div id="errorFitxa"><span class="errorFitxa"></span></div>
+									<div id="current"></div>
+									<div id="fullText" class="wrapper-document">
+									</div>
+					  			</div>
+							</div>
+				  		</div>
+															
+					</div>					
+
+					<!-- Modal passive affectations -->
+					<div id="modalAffectPassive" tabindex="-1" role="dialog" class="modal fade" aria-hidden="false">
+						<div role="document" class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" id="closeAffectPassive" data-dismiss="modal" aria-label="" class="close">
+										<span aria-hidden="true" class="tancar"></span>
+									</button>
+									<strong id="titleAffectPassive" class="modal-title"></strong>
+								</div>
+								<div class="modal-body">
+									<div class="body-header">
+
+									</div>
+									<div> <!-- class="modal-cerca"> -->
+										<div class="subTitol-modal">
+											<div id="modal_affectations_passive" class="inputCerca">
+												<ul id="modal_affectations_passive_ul" ></ul>
+											</div>
+										</div>
+									</div>
+									<div class="modal-wrapper"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Modal active affectations -->
+					<div id="modalAffectActive" tabindex="-1" role="dialog" class="modal fade" aria-hidden="false">
+						<div role="document" class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" id="closeAffectActive" data-dismiss="modal" aria-label="" class="close">
+										<span aria-hidden="true" class="tancar"></span>
+									</button>
+									<strong id="titleAffectActive" class="modal-title"></strong>
+								</div>
+								<div class="modal-body">
+									<div class="body-header">
+
+									</div>
+									<div> <!-- class="modal-cerca"> -->
+										<div class="subTitol-modal">
+											<div id="modal_affectations_active" class="inputCerca">
+												<ul id="modal_affectations_active_ul" ></ul>
+											</div>
+										</div>
+									</div>
+									<div class="modal-wrapper"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="alert-container" class="ancores js-alert">
+						<div class="container">
+							<div class="row">
+								<div role="alert" class="alert" aria-atomic="true">
+									<button type="button" aria-label="Close" class="close" id="alert"></button>
+								</div>
+							</div>
+							<div data-id="readySearch"></div>
+						</div>
+					</div>
+					<div class="ref-pointer"></div>
+			</section>
+		</div>
+	
+</div></div>
+											</div>
+								</article>
+							</section>
+						</main>
+			<div class="container visible-xs oculta_xarxes">
+				<div class="row padding-xs">
+					<div class="footer-xarxes">
+
+					</div>
+				</div>
+			</div>
+
+			<!--googleoff: index -->
+<!--googleoff: snippet-->
+
+	<div  id="fAvisLegal" ><div class="fpca_peu_new">
+					<footer class="in-faldo">
+						
+
+<div ></div>
+
+<div >
+
+
+
+
+
+
+    
+        <div class="fpca_peu_xarxesSocials">
+            
+                <div class="footer-social">
+                    <div class="NG-container">
+                        <div class="footer-social__wrapper">
+                            <div class="NG-row-flex NG-row-flex--vertical-md">
+                                <div class="NG-col">
+                                    <div class="footer-social__text">
+                                        
+                                        
+                                            
+                                        
+                                        <p class="footer-social__text-title">Sigue las redes sociales del DOGC</p>
+                                    </div>
+                                </div>
+                                <div class="NG-col">
+                                    <ul class="footer-social__list">
+
+                                        
+                                        
+                                            <li class="footer-social__list-item">
+                                                
+                                                    
+                                                
+                                                <a class="footer-social__list-link" href="https://twitter.com/DOGCdeldia" target="_blank">
+                                                    <img class="footer-social__list-link-image js-footer-hover-img"
+                                                         alt="Icono de Twitter"
+                                                         data-default="/web/resources/fwkResponsive/fpca_peu_xarxesSocials/img/twitter-c.svg"
+                                                         data-hover="/web/resources/fwkResponsive/fpca_peu_xarxesSocials/img/twitter-c-sobre.svg"
+                                                         src="/web/resources/fwkResponsive/fpca_peu_xarxesSocials/img/twitter-c.svg"
+                                                    >
+                                                </a>
+                                            </li>
+                                        
+
+                                        
+                                        
+
+                                        
+                                        
+
+										
+                                        
+
+										
+                                        
+
+                                        
+                                        
+                                        
+                                        
+
+                                        
+                                        
+                                        
+                                        
+                                        
+                                        
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-social_border">
+                            <span class="footer-social_border--line"></span>
+                        </div>
+                    </div>
+                </div>
+            
+            
+        </div>
+    
+</div>
+
+<div >
+
+
+
+
+
+
+    
+        <div class="fpca_peu_contacte">
+            
+                <div class="footer-contact">
+                    <div class="NG-container">
+                        <div class="footer-contact__wrapper">
+
+                            
+                            
+                            <h2 class="footer-contact__title">Cómo te atendemos</h2>
+
+                            <div class="NG-row-flex NG-row-flex--vertical-md">
+                                <div class="NG-col footer-contact__description-wrapper">
+                                    <div class="footer-contact__description">
+                                        <div class="footer-contact__text">
+                                            
+                                            
+                                            <p>Puedes contactar con nosotros mediante cualquiera de los siguientes canales de contacto</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="NG-col footer-contact__list-wrapper">
+
+                                    
+
+                                    
+                                        <ul class="footer-contact__list">
+                                            
+                                                
+                                                    
+                                                    
+
+                                                    
+                                                        
+                                                    
+
+                                                    
+                                                    
+
+                                                    <li class="footer-contact__list-item">
+                                                        <a class="footer-contact__list-link" target="_self"
+                                                           href="https://ovt.gencat.cat/gsitfc/AppJava/generic/conqxsGeneric.do?webFormId=391&amp;&amp;topicLevel1ByURL.id=500&amp;topicLevel2ByURL.id=657&amp;set-locale=es_ES">
+                                                            
+                                                            <img class="footer-contact__list-img"
+                                                                 alt="Buzón de contacto"
+                                                                 src="/web/shared/continguts_per_compartir/icones/peu_contacte/bustia.svg" >
+                                                            
+                                                            <span class="footer-contact__list-txt">
+                                                                Buzón de contacto
+                                                            </span>
+                                                            
+                                                        </a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    
+                                                    
+
+                                                    
+                                                        
+                                                    
+
+                                                    
+                                                    
+
+                                                    <li class="footer-contact__list-item">
+                                                        <a class="footer-contact__list-link" target="_self"
+                                                           href="/es/sobre-el-dogc/preguntes-frequents/">
+                                                            
+                                                            <img class="footer-contact__list-img"
+                                                                 alt="Preguntas frecuentes"
+                                                                 src="/web/shared/continguts_per_compartir/icones/peu_contacte/registre.svg" >
+                                                            
+                                                            <span class="footer-contact__list-txt">
+                                                                Preguntas frecuentes
+                                                            </span>
+                                                            
+                                                        </a>
+                                                    </li>
+                                                
+                                            
+                                                
+                                                    
+                                                    
+
+                                                    
+                                                        
+                                                    
+
+                                                    
+                                                    
+
+                                                    <li class="footer-contact__list-item">
+                                                        <a class="footer-contact__list-link" target="_self"
+                                                           href="/es/serveis/subscripcions/">
+                                                            
+                                                            <img class="footer-contact__list-img"
+                                                                 alt="Servicio de alertas"
+                                                                 src="/web/shared/continguts_per_compartir/icones/peu_contacte/informacio.svg" >
+                                                            
+                                                            <span class="footer-contact__list-txt">
+                                                                Servicio de alertas
+                                                            </span>
+                                                            
+                                                        </a>
+                                                    </li>
+                                                
+                                            
+                                        </ul>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+        </div>
+    
+</div>
+
+<script type="text/javascript" src="/system/modules/cat.vass.wcmResponsive.template.common/resources/common/js/accessibility.js"></script><div class="footer-bottom">
+							<div class="NG-container">
+								<div class="footer-bottom__wrapper">
+									<div class="NG-row-flex NG-row-flex--space-between NG-row-flex--vertical-reverse-xs">
+
+										<div class="NG-col">
+											<a class="footer-bottom__logo-link" target="_blank" title="gencat.cat" href="https://web.gencat.cat/es/inici/">
+														<img class="footer-bottom__logo" src="/web/resources/fwkResponsives/common/img/logo_generalitat_blanc.svg" alt="gencat.cat" srcset="">
+															</a>
+												</div>
+
+										<div class="NG-col NG--flex75">
+											<ul class="footer-bottom__list">
+												<li class="footer-bottom__list-item">
+															<a class="footer-bottom__list-link" title="Aviso legal" target="_blank"
+															   href="https://tramits.gencat.cat/es/ajuda/avis_legal/">
+																	Aviso legal</a>
+														</li>
+
+													<li class="footer-bottom__list-item">
+															<a class="footer-bottom__list-link" title="Política de cookies" target="_blank"
+															   href="https://tramits.gencat.cat/es/ajuda/politica-de-galetes/">
+																	Política de cookies</a>
+														</li>
+
+													<li class="footer-bottom__list-item">
+															<a class="footer-bottom__list-link" title="Mapa web" target="_self"
+															   href="/es/ajuda/mapaweb/">
+																	Mapa web</a>
+														</li>
+
+													<li class="footer-bottom__list-item">
+															<a class="footer-bottom__list-link" title="Declaración de accesibilidad" target="_self"
+															   href="/es/ajuda/Accessibilitat/index.html">
+																	Declaración de accesibilidad</a>
+														</li>
+
+													</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+					
+					<div class="NG-container">
+						<div class="NG-row-flex NG-goToTop__wrapper">
+							<button class="NG-goToTop js-NG-goToTop" style="display: block;">
+								<img class="NG-goToTop_image"
+									 alt="Volver arriba"
+									 src="/web/resources/fwkResponsive/fpca_peu/img/chevron-up-w.svg">
+							</button>
+						</div>
+					</div>
+				</div>
+				</div><!--googleon: snippet -->
+<!--googleon: index-->
+<!-- GKPSTX04-->
+<script type="text/javascript" src="/system/modules/cat.vass.wcmResponsive.template.common/resources/common/js/accessibility.js"></script></body>
+	</html>

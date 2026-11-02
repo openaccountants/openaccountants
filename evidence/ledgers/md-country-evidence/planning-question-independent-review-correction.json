@@ -1,0 +1,50 @@
+{
+  "finding": "MD-REVIEW-007",
+  "status": "Writer fix; independent delta recheck pending",
+  "base_commit": "b0af2cd30a9c94f8eecb78588a1d127488ce1a00",
+  "original_Guide_sha256": "4a5708d1fdcd076aa9c689a306b85be970fba8be846f5e520afe2bc7808b34fa",
+  "original_question_section": "## Ask the client first\n\nObtain legal form/registrations and regime dates; actual products/services and CAEM/CSPM restrictions; park status/contract, monthly and cumulative eligible/total sales, returns and counted-employee evidence; membership/verification costs; VAT status and prior-year supply mix; consultancy/ownership/SME tests and election policy; actual ordinary taxable income, accounting profit, contributions/reserves/losses and distributable cash; owners' residence/type and profit-origin years; paid work, mandates and independent-service counterparty/control facts; foreign work/management and associated transactions; accepted filings and outstanding debt. Model the legally available choices using those numbers before presenting a saving.\n",
+  "original_clauses": [
+    "legal form/registrations and regime dates",
+    "actual products/services and CAEM/CSPM restrictions",
+    "park status/contract, monthly and cumulative eligible/total sales, returns and counted-employee evidence",
+    "membership/verification costs",
+    "VAT status and prior-year supply mix",
+    "consultancy/ownership/SME tests and election policy",
+    "actual ordinary taxable income, accounting profit, contributions/reserves/losses and distributable cash",
+    "owners' residence/type and profit-origin years",
+    "paid work, mandates and independent-service counterparty/control facts",
+    "foreign work/management and associated transactions",
+    "accepted filings and outstanding debt"
+  ],
+  "new_groups": [
+    "legal form/registrations and regime dates; actual products/services and CAEM/CSPM restrictions",
+    "park status/contract, monthly and cumulative eligible/total sales, returns and counted-employee evidence; membership/verification costs",
+    "VAT status and prior-year supply mix; consultancy/ownership/SME tests and election policy",
+    "actual ordinary taxable income, accounting profit, contributions/reserves/losses and distributable cash; owners' residence/type and profit-origin years",
+    "paid work, mandates and independent-service counterparty/control facts; foreign work/management and associated transactions",
+    "accepted filings and outstanding debt"
+  ],
+  "all_original_clauses_verbatim_preserved": true,
+  "new_Guide_sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
+  "source_rows_changed": false,
+  "ledger_rows_sha256": "fb1ce4f9cf0a8059695972ad5d67d5891a173a3ddc4eed669d0c5d5332a59132",
+  "Guide_hash_bindings_refreshed": [
+    {
+      "file": "ledgers/md-country-evidence/itpark-current-form-controls.json",
+      "key": "Guide_hashes",
+      "path": "skills/international/moldova/moldova-tax-optimization.md",
+      "before": "4a5708d1fdcd076aa9c689a306b85be970fba8be846f5e520afe2bc7808b34fa",
+      "after": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968"
+    },
+    {
+      "file": "ledgers/md-country-evidence/public-supporting-predecessor-reconciliation.json",
+      "key": "current_Guide_sha256",
+      "before": "4a5708d1fdcd076aa9c689a306b85be970fba8be846f5e520afe2bc7808b34fa",
+      "after": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968"
+    }
+  ],
+  "new_tax_claims": 0,
+  "new_arithmetic_cases": 0,
+  "metadata_CTA_examples": "Unchanged except version increment and H1 version"
+}

@@ -1,0 +1,207 @@
+Browser tab: 1, Title: "Consultas de la D.G. Tributos: Buscador", URL: "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V1766-22".
+1 AXWebArea Consultas de la D.G. Tributos: Buscador, URL: petete.tributos.hacienda.gob.es/consultas/?num_consulta=V1766-22
+	2 container page
+		3 container header_content
+			4 image Description: Logo Ministerio de Hacienda y Funci�n P�blica, Help: Logo Ministerio de Hacienda y Función Pública
+			5 container
+				6 text SECRETARÍA DE ESTADO DE HACIENDA
+				7 text DIRECCIÓN GENERAL DE TRIBUTOS
+				8 text Doctrina Tributaria - Consultas Tributarias 1997-2026
+		9 heading BUSCADOR, Value: 1
+			10 text BUSCADOR
+		11 container knosys_form
+			12 heading Formulario de consulta, Value: 2
+				13 text Formulario de consulta
+			14 link Description: Ayuda general del buscador, Value: petete.tributos.hacienda.gob.es/consultas/ayuda/ayudaTributos.html
+			15 container search
+				16 container Mostrar
+					17 text Mostrar
+					18 container
+						19 checkbox (settable, integer) Description: Consultas generales, Value: 0, ID: generales
+						20 text (actualizada a 30/09/2026)
+					21 container
+						22 checkbox (settable, integer) Description: Consultas vinculantes, Value: 1, ID: vinculantes
+						23 text (actualizada a 30/09/2026)
+				24 container Filtro de búsqueda
+					25 text Filtro de búsqueda
+					26 container
+						27 link Description: Ayuda del buscador para número de consulta, Value: petete.tributos.hacienda.gob.es/consultas/ayuda/numConsulta.html
+						28 text  Nº de consulta *
+						29 text field (settable) Ayuda del buscador para número de consulta Nº de consulta *, Value: V1766-22, ID: VLCMP_1
+						30 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_1, Secondary Actions: Expand
+							31 menu
+								32 (selected) Y
+								33 O
+								34 NO
+					35 container
+						36 text Fecha salida desde
+						37 text field (settable) Fecha salida desde, ID: dateIni_2
+						38 button Description: Seleccionar fecha de inicio, ID: btnDateIni_2
+						39 text Hasta
+						40 text field (disabled) Hasta, ID: dateEnd_2
+						41 button (disabled) Description: Seleccionar fecha de fin, ID: btnDateEnd_2
+						42 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_2, Secondary Actions: Expand
+							43 menu
+								44 (selected) Y
+								45 O
+								46 NO
+					47 container
+						48 link Description: Ayuda del buscador para normativa, Help: Normativa, Value: petete.tributos.hacienda.gob.es/consultas/ayuda/normativa.html
+						49 text  Normativa
+						50 text field (settable) Ayuda del buscador para normativa Normativa, ID: VLCMP_3
+						51 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_3, Secondary Actions: Expand
+							52 menu
+								53 (selected) Y
+								54 O
+								55 NO
+					56 container
+						57 text Cuestión planteada
+						58 text field (settable) Cuestión planteada, ID: VLCMP_4
+						59 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_4, Secondary Actions: Expand
+							60 menu
+								61 (selected) Y
+								62 O
+								63 NO
+					64 container
+						65 text Descripción de hechos
+						66 text field (settable) Descripción de hechos, ID: VLCMP_5
+						67 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_5, Secondary Actions: Expand
+							68 menu
+								69 (selected) Y
+								70 O
+								71 NO
+					72 container
+						73 text Texto libre
+						74 text field (settable) Texto libre, ID: VLCMP_6
+						75 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_6, Secondary Actions: Expand
+							76 menu
+								77 (selected) Y
+								78 O
+								79 NO
+					80 container
+						81 text Criterio de interés
+						82 text (a partir de 01-01-2022)
+						83 checkbox (settable, integer) Description: Criterio de interés (a partir de 01-01-2022), Value: 0, ID: VLCMP_7
+				84 container Ordenación
+					85 text Ordenación
+					86 container
+						87 text Campo de ordenación
+						88 pop up button (collapsed, settable) Campo de ordenación, Value: Nº de consulta, ID: cmpOrder, Secondary Actions: Expand
+							89 menu
+								90 (selected) Nº de consulta
+								91 Órgano
+								92 Fecha salida
+						93 pop up button (collapsed, settable) Description: Operador, Value: Ascendente, ID: dirOrder, Secondary Actions: Expand
+							94 menu
+								95 (selected) Ascendente
+								96 Descendente
+				97 text *  0006-26 a 4999-26 Números de consulta sin contenido por cambio de procedimiento y numeración para consultas generales
+				98 text *  V1690-26 a V4999-26 Números de consulta sin contenido por cambio de procedimiento y numeración para consultas vinculantes
+				99 container
+					100 button Buscar
+					101 button Borrar
+		112 container tabs
+			113 heading Resultados, Value: 2
+				114 text Resultados
+			115 tab group
+				116 tab (selected, expanded, settable, boolean) Description: Consultas vinculantes (1 resultados), ID: tab-2, Secondary Actions: Collapse, Value: 1
+Consultas vinculantes
+(1 resultados)
+			117 container Description: Consultas vinculantes (1 resultados), ID: tabs-2
+				118 container results2
+					119 container
+						120 text  Página 
+						121 text field (settable) Description: Introduzca un número de página y pulse INTRO, Value: 1, ID: current_page
+						122 text  de 
+						123 text 1
+					124 heading Documentos encontrados, Value: 3
+						125 text Documentos encontrados
+					126 table
+						127 row
+							128 cell
+								129 text Nº de consulta, Descripción de hechos, Cuestión planteada
+						130 row
+							131 cell doc_68788
+								132 heading V1766-22, Value: 4
+									133 text V1766-22
+								134 text El consultante va a actuar como validador de operaciones en redes de cadenas de bloques de criptoactivos mediante el proceso conocido como "staking".
+								135 text Tributación de las recompensas obtenidas en criptoactivos a través del "staking".
+				136 container document2
+					137 container
+						138 text  Documento 1 de 1 
+						139 link Description: Copiar enlace al documento, Value: petete.tributos.hacienda.gob.es/consultas/docLink.vm
+						140 link Description: Imprimir documento, Value: javascript:void(0);
+					141 heading Documento seleccionado, Value: 3
+						142 text Documento seleccionado
+					143 table Documento seleccionado
+						144 row
+							145 cell
+								146 text Nº de consulta
+							147 cell
+								148 text V1766-22
+						149 row
+							150 cell
+								151 text Órgano
+							152 cell
+								153 text SG de Tributación de las Operaciones Financieras
+						154 row
+							155 cell
+								156 text Fecha salida
+							157 cell
+								158 text 26/07/2022
+						159 row
+							160 cell
+								161 text Normativa
+							162 cell
+								163 text Ley 35/2006 art. 25-2, 46, 49
+								164 text RD 439/2007 arts. 75, 76
+						165 row
+							166 cell
+								167 text Descripción de hechos
+							168 cell
+								169 text El consultante va a actuar como validador de operaciones en redes de cadenas de bloques de criptoactivos mediante el proceso conocido como "staking".
+						170 row
+							171 cell
+								172 text Cuestión planteada
+							173 cell
+								174 text Tributación de las recompensas obtenidas en criptoactivos a través del "staking".
+						175 row
+							176 cell
+								177 text Contestación completa
+							178 cell
+								179 text El consultante va a operar como validador de redes de cadenas de bloques o “blockchain”, para lo cual manifiesta que es necesario tener un software determinado y bloquear “fondos” durante un periodo de tiempo. Por dicha actividad será recompensado con criptomonedas Ethereum.
+								180 text La actividad a la que se refiere el consultante se corresponde con un tipo de mecanismo de consenso para validar y crear bloques alternativo a la minería que se utiliza en algunas redes de “blockchain” y que se conoce como “proof of stake” o prueba de participación, o, más comúnmente, como “staking”.
+								181 text La actividad de “staking” se caracteriza por el bloqueo de criptoactivos en un monedero electrónico durante un tiempo a través de un contrato inteligente. Cuanto mayor sea la cantidad de criptoactivos bloqueados, mayor será la probabilidad de ser escogido por el sistema para validar los bloques y de ser recompensado, generalmente, con el mismo tipo de criptoactivo.
+								182 text Comúnmente se habla de “staking” tanto para referirse a la actividad del propio validador que bloquea los criptoactivos y que mantiene el software para validar los bloques, como para referirse a una nueva opción de inversión que se ofrece en el mundo de los criptoactivos consistente en el bloqueo de criptoactivos para ponerlos al servicio de un determinado validador, de manera que éste tenga mayores posibilidades de ser elegido y recompensado, y que la recompensa obtenida acabe remunerando a quienes hayan mantenido bloqueados los criptoactivos.
+								183 text Las recompensas pueden depender de diferentes factores, entre ellos, la cantidad de criptoactivos bloqueados o el tiempo durante el que permanecen bloqueados.
+								184 text En el presente caso, el consultante parece que no se va a limitar a la actividad de “staking” como forma de inversión, sino que va participar en las propias redes como validador.
+								185 text En este sentido, en primer lugar, cabe plantearse si esa actividad constituye o no una actividad económica.
+								186 text A este respecto, el artículo 27.1 de la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio, BOE de 29 de noviembre de 2006 (en adelante, LIRPF), dispone lo siguiente:
+								187 text 1. Se considerarán rendimientos íntegros de actividades económicas aquellos que, procediendo del trabajo personal y del capital conjuntamente, o de uno solo de estos factores, supongan por parte del contribuyente la ordenación por cuenta propia de medios de producción y de recursos humanos o de uno de ambos, con la finalidad de intervenir en la producción o distribución de bienes o servicios.
+								188 text En particular, tienen esta consideración los rendimientos de las actividades extractivas, de fabricación, comercio o prestación de servicios, incluidas las de artesanía, agrícolas, forestales, ganaderas, pesqueras, de construcción, mineras, y el ejercicio de profesiones liberales, artísticas y deportivas.
+								189 text […]”
+								190 text Por tanto, a efectos del Impuesto sobre la Renta de las Personas Físicas, para considerar que una actividad es una actividad económica tiene que darse una ordenación por cuenta propia de medios de producción y de recursos humanos o de uno de ambos y que dicha ordenación se efectúe con la finalidad de intervenir en la producción o distribución de bienes o servicios.
+								191 text Este Centro Directivo viene interpretando que la consideración de una renta como rendimiento de actividades económicas en función de la mencionada ordenación habrá de determinarse en cada caso concreto, a la vista de las circunstancias concurrentes.
+								192 text En el presente caso, dado que el consultante se limitará a mantener bloqueados criptoactivos, que sólo participará en la validación de los bloques si es elegido aleatoriamente por el propio protocolo informático y que tal validación se efectuará automáticamente con unos recursos mínimos, no puede concluirse que esta actividad presente una organización mínima para considerar que existe una ordenación por cuenta propia de medios de producción y de recursos humanos o de uno de ambos, con la finalidad de intervenir en la producción o distribución de bienes o servicios.
+								193 text Descartada, por tanto, la consideración del “staking” como actividad económica, y no constituyendo tampoco un trabajo que derive de una relación laboral o estatutaria, los rendimientos que obtenga el consultante deberán calificarse como rendimientos íntegros del capital mobiliario obtenidos por la cesión a terceros de capitales propios satisfechos en especie.
+								194 text En este sentido, el artículo 25.2 de la LIRPF dispone:
+								195 text “2. Rendimientos obtenidos por la cesión a terceros de capitales propios.
+								196 text Tienen esta consideración las contraprestaciones de todo tipo, cualquiera que sea su denominación o naturaleza, dinerarias o en especie, como los intereses y cualquier otra forma de retribución pactada como remuneración por tal cesión, así como las derivadas de la transmisión, reembolso, amortización, canje o conversión de cualquier clase de activos representativos de la captación y utilización de capitales ajenos.
+								197 text […]”
+								198 text Dado que los criptoactivos a los que se refiere el consultante no tienen la consideración de valores negociables, no serán deducibles los gastos previstos en la letra a) del artículo 26.1 de la LIRPF.
+								199 text Los rendimientos en especie que obtenga el consultante se valorarán por su valor de mercado en euros el día de su percepción, de acuerdo con el artículo 43.1 de la LIRPF. Para efectuar la valoración en euros de los criptoactivos que se obtengan a lo largo de un mismo día, se podrá utilizar el cambio medio de dicho día. El resultado se integrará en la base imponible del ahorro del Impuesto sobre la Renta de las Personas Físicas de su perceptor, de acuerdo con los artículos 46 y 49 de la LIRPF.
+								200 text En relación con la obligación de practicar ingreso a cuenta, en principio se trata de una renta sujeta a retención o ingreso a cuenta de acuerdo con el artículo 75.1.b) del Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por Real Decreto 439/2007, de 30 de marzo, BOE de 31 de marzo de 2007 (en adelante, RIRPF). No obstante, en la medida en que los rendimientos se obtengan directamente del propio sistema, no cabe considerar que exista un obligado a retener o ingresar a cuenta en los términos del artículo 76 del RIRPF, de manera que no se efectuará ingreso a cuenta sobre los citados rendimientos.
+								201 text Finalmente, en relación con la pregunta del consultante sobre su posible obligación de integrarse en el régimen especial de la Seguridad Social de los trabajadores por cuenta propia o autónomos, debe señalarse que se trata de una cuestión que excede de las competencias de este Centro Directivo.
+								202 text Lo que comunico a Vd. con efectos vinculantes, conforme a lo dispuesto en el apartado 1 del artículo 89 de la Ley 58/2003, de 17 de diciembre, General Tributaria.
+		102 container footer_content
+			103 container
+				104 text Doctrina Tributaria - Consultas Tributarias
+				105 link Description: Accesibilidad, Value: petete.tributos.hacienda.gob.es/consultas/accesibilidad.vm
+				106 text  | 
+				107 link Description: Aviso Legal, Value: petete.tributos.hacienda.gob.es/consultas/avisoLegal.vm
+			108 container
+				109 link Description: HTML5 válido, Value: validator.w3.org/check?uri=referer
+				110 link Description: CSS válido, Value: jigsaw.w3.org/css-validator/check/referer
+				111 link Description: WCAG 2.1 (Level AA), Value: achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AA
+
+The focused UI element is 1 AXWebArea Consultas de la D.G. Tributos: Buscador, URL: petete.tributos.hacienda.gob.es/consultas/?num_consulta=V1766-22

@@ -1,0 +1,40 @@
+{
+  "read_at_utc": "2026-10-27T21:18:38.521984+00:00",
+  "reads": [
+    {
+      "source_url": "https://www.seg-social.es/wps/portal/wss/internet/HerramientasWeb/9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24/44b5f09d-6c25-4dcd-8210-c21700c67096?changeLanguage=es",
+      "retained_file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/sc-extension-equality-current/sources/TGSS-current-system.html",
+      "raw_sha256": "333ecf206a88278a285a18204eaa09b88b7158c14d9c90d1de9d654e11afa019",
+      "bytes": 87853,
+      "read_scope": "Full Pr\u00f3rroga Tarifa Plana paragraph and surrounding new-entrant conditions/campaign dates",
+      "fresh_live_check": "2026-10-27 via web open; three primary 200 full bodies returned; independent retained raw bytes used for close reading"
+    },
+    {
+      "source_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409",
+      "retained_file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/sc-extension-equality-current/sources/LETA-current.html",
+      "raw_sha256": "cb5515be4dfa46cb84ab6be4f546bb60155d06e6bd7d9e658c2acdea842d8e45",
+      "bytes": 500808,
+      "read_scope": "Full current article 38 ter (1\u201312), including 2/3/6 and dated amendment history",
+      "fresh_live_check": "2026-10-27 via web open; three primary 200 full bodies returned; independent retained raw bytes used for close reading"
+    },
+    {
+      "source_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579",
+      "retained_file": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-evidence/spain/review/sc-extension-equality-current/sources/RD2064-current.html",
+      "raw_sha256": "6269d3bd555814c601f9526cc250c782894f6f8330a840cc572d027f09c6356c",
+      "bytes": 988922,
+      "read_scope": "Full current articles 44 and 46, especially 44.3.f, 46.1\u20132",
+      "fresh_live_check": "2026-10-27 via web open; three primary 200 full bodies returned; independent retained raw bytes used for close reading"
+    }
+  ],
+  "failed_route_not_relied_on": {
+    "url": "https://www.seg-social.es/wps/wcm/connect/wss/3ac14a8e-a144-471c-8667-affaf8787453/Compendio%2BBNR%2B2025.pdf?MOD=AJPERES",
+    "read_at": "2026-10-27T21:10:59.716806+00:00",
+    "error": "HTTP Error 404: Not Found"
+  },
+  "live_open_refs": [
+    "turn1120view0",
+    "turn1120view1",
+    "turn1120view2"
+  ],
+  "note": "Fresh live primary opens corroborated actual retained full bodies. The refs are internal tool audit locators, not public citations; source_url provides the public locator."
+}

@@ -1,0 +1,782 @@
+[
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 1,
+    "sha256": "82f41b6f210332b8d9d0d6954a753522211bf0d290d537909e1b4092733744ef",
+    "disposition": "frontmatter version0.1\u21920.2 only; exact inverse proved"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 2,
+    "sha256": "d10c8dba1d659198acce93e8c0db0920582fb95902bad5722a308e5a7bf80c6a",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 3,
+    "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 4,
+    "sha256": "11371e0c361a6392b6031fa9da7ee7040be40667d9550720d1b2f56b9d934be3",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 5,
+    "sha256": "990b469301f81fc5c855c4a6051c925bd4bd2da6773d9277d95290ed589bc805",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 6,
+    "sha256": "93052e59c14ac8c80db2a8c39c8a8e98609b6f928ff2309d9b2049fb265b02de",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 7,
+    "sha256": "bbda9f28842bb5fdc60d04dc2aacd5a0ff06e2dc6c37889e8f63d501d462d7b1",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 8,
+    "sha256": "28cd9970188203f8131381df7ddc8094e8b3b1f30dac401247900ac5331ecb79",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 9,
+    "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 10,
+    "sha256": "6a83d213da667b0ce4ee42c501398c721613a357b7712639b742224505916e72",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 11,
+    "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 12,
+    "sha256": "48f0ffd9fb2f58a132f281253c67d295fdbd2c1ec7862d9b77c0351a29797473",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 13,
+    "sha256": "4d9da87fb456db13e21b0393a3c87f1cacc9862a021c673db47821cc2ffb6e1b",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 14,
+    "sha256": "b5967907ada8ac9f1a081908d6c5c9ff3acdbeb052f816fe7dda90a723246210",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 15,
+    "sha256": "0ff6906f241462ce2a3b28396f2b39342bad4f1e5a868b9c0397edaaa84d065e",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 16,
+    "sha256": "663255bc69a2abc014fa15f5a4ab0f2a46a88ccd157682382c03fd5ba3680668",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 17,
+    "sha256": "a1833a80ab7aba1f460161111f6e8dfdfdf6bc2ddcb1d03518f8d3de1f10e2d9",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 18,
+    "sha256": "601b04b7233b3c2e52a8017ea4f858385f5b51cc654f3f5b4027a485583dafde",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 19,
+    "sha256": "2f99393208353be14d865107be13df2c48f95aae785c4cc288772af4dcf12eae",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 20,
+    "sha256": "e973d6188934faf976982eb4cf86933106a089792671601ba5189d93b888a1d8",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 21,
+    "sha256": "733104d000c889fde26e17019703c605588b7291af5606fe240e25b8efff4ac0",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 22,
+    "sha256": "14a915cda5aba358ea09127a0747fd0fd1888c2f49f84e9827cfa55fc558b7a1",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 23,
+    "sha256": "c09414ecd21491407e15f76ca0efb9885a8e43b00e6d99dc604ea01cd2cdca85",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 24,
+    "sha256": "487c730c5ee5a20f50dae7fae6cf2c1d7448fc7d987f1cb829d78b0887d3f905",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 25,
+    "sha256": "478f34f445bebd875da37f0d09b2fe6540130e12582e5240e0acdfc36aab58e2",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 26,
+    "sha256": "a12804ebc5f6a8c3d6f0b52753371aa93206d5307559f8ed4cdb8a9be4ae6c11",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 27,
+    "sha256": "3cf73261a513b6986db7fe3f9fa1aafa255fde4b930b344f5d5ee2d943b99bdc",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 28,
+    "sha256": "a93ccc41ec95e13db784b4900120d7c80a81d92506b307885075e34ec021c285",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 29,
+    "sha256": "f9194f1ca2028046743540debf5e4fe6206ad026fe832a0dc3420ab831adf929",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 30,
+    "sha256": "80d234422bebac19909f7435021c91a73b5df6b928484650e3d71c5ec9d898e8",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 31,
+    "sha256": "3012d0af078d1d254cbf24c344d41e52f4d6f8531daa414a152b9e6b633e7307",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 32,
+    "sha256": "606032c08a9694c53841ebe88d3c35942216d6f638783f7edaa12e2fac5b72bd",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 33,
+    "sha256": "2a05857516ddda4aabb18215e1c6d14a54ff3ff373edadf6873c26cb6b595b85",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 34,
+    "sha256": "3c9e41a3891a094b31b77e225352080b5e2bbea311d2f864bf498884a14fc40f",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 35,
+    "sha256": "1593de107c9778b320a3f0873ea775798d3ac6b72853360fee13913adb41ba01",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 36,
+    "sha256": "d8afc80a9803ac0a3b2d53cf75b9a95ef7ba352cb2322ff6c95b4e82feb7d64a",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 37,
+    "sha256": "a2948a40c11350effc29476311b418349c5ff1ac7e6ab148de379acf0730e8a5",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 38,
+    "sha256": "f23c65ac8dcb26fbb3c3048f72064107ec4e594a4785590a7154ad5be294b2b2",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 39,
+    "sha256": "21c032c2353c0eec01e11b7918b55f6033e7fc11a86609b52e39ae514eb0ff5f",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 40,
+    "sha256": "266d3ed32f409b88c990e90f19f0e312e5abdb52a2d7316ec86142f098d92293",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 41,
+    "sha256": "d996b2c5cd5a4e26df1e79dfc6c83f367b412b5b82387b7eaa4539d987b1ce63",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 42,
+    "sha256": "63d7a5334ff1a817daf4017236cbdfbb281402f28f5de8042951e5741df097f9",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 43,
+    "sha256": "198ef7559e797667786f92d8b30e895c0b339e8824bc7a75a25ffd0b3c3194f0",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 44,
+    "sha256": "a94fc01fead9f13b3ac291bf779258ee7c80ef4296d8fe918f50f64f637b26a8",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 45,
+    "sha256": "e5a808a66d35629241d9a6afbd137437db3be6489b96822169f25d5524d095bc",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 46,
+    "sha256": "bde97b7aa8a687b0013e9dcfbf1a0dd2312d1d1549169c70316eda97aacf91e6",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 47,
+    "sha256": "74ec956fb34d90aeb3d615657385304221bf31c65c6ae537dc6d0b7d6b6b9413",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 48,
+    "sha256": "c6a4a1cde45241b1c9d01a2c77fd7bb453f07e102d7d069ec46055afe8d7bc9c",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 49,
+    "sha256": "9b27fb3c4f6267f3d75de4ef0f56b883015a9e28a28dc03091eb067833cd802c",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 50,
+    "sha256": "c4d67a3315713ca1de38ccd0696fd0358fb472c4427d4a01d6f88da4579a8b23",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 51,
+    "sha256": "51a2c635266a19b6cad6f8cca208e2d73bbe970a37083b5f04a92ed4d9c6aadc",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 52,
+    "sha256": "0bd66fa062eba16a229cd6888cef50cba781cec7a7b45b2eaa9a5c865e626a81",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 53,
+    "sha256": "9aeead23c0f1a900e2f778155e7d90d1b371c92af100fcffd445ab3ae15d6409",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 54,
+    "sha256": "f3ff2f7349469240d8a1eb1c70709e64d6e1d8dd04f7d8a1d7cea25a34eb76c0",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 55,
+    "sha256": "8bdb82872e71a9ee5b81ff87afde6fcb81d8c4ec871c45f9ee6e8c956b68d9ff",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 56,
+    "sha256": "9c5be732b90f11e2e95304a785ccc65236205e882780c73ed422e2f206a777c8",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 57,
+    "sha256": "b59743e83eeca64d69cd24968aefb4582d93aaacbfac24d032b8e12061dd16cc",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 58,
+    "sha256": "6dbf38140ebf3253ef1a14b6c3e4589672a7c58cd23dba3575e48476bfebba75",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 59,
+    "sha256": "77ac63b422c85876712ee6d0cd32b314c3a5ab580b7b59fd1257905707606062",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 60,
+    "sha256": "511c165eecc07c41b10778ffd5f050995a4fcd5b561b53be83695a697ec86d3d",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 61,
+    "sha256": "e661d16fe74bb6fece29011745a56fe0b8aad390b2e20bb154e79972fc12e32b",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 62,
+    "sha256": "ce24b3887c5397d5c801a7eab436ef3ad12b636d4a8dec6400978f044a41d535",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 63,
+    "sha256": "861802b719b86e40001a5af0333f73c7b631d0e79da46f4ccd621064d0f952ec",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 64,
+    "sha256": "fcb27772d7f64d4519c00342d7f2be8932bfdcff36c83cf29c7d1e53d0a3e714",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 65,
+    "sha256": "35b741e9cb394d92f525930758a607d631b9415ec0a488bd1735132a98db9ec2",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 66,
+    "sha256": "fa28674bf477d605e11318ece3c5554cb7d0136218e4bc27fee5ce5fa108c414",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 67,
+    "sha256": "8d8dad1ced5df6f18e4876e4a35f20b2aab4571e75b7c0f00959827c692cc257",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 68,
+    "sha256": "cd6e008d1c306bd76d015e2dec1d870c9d2f10ccd39dd275e51532c5fc916c6f",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 69,
+    "sha256": "365f5ff354f6affe72c7bb91e4f0c3e37b36372c56357ba728cdff5212fa42cd",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 70,
+    "sha256": "6acf802fea7858542a21daab9a4b58e36b7fa777163a26d3f272c81bb2aa5407",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 71,
+    "sha256": "a954f12b17cacee5cc8768a4eea3771c71a2013816775f27a866715c14de4d6c",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 72,
+    "sha256": "82c96528f3a60aa59e088f561d2810509f44ecd295d8bdf7555e3696457b6695",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 73,
+    "sha256": "f6f0570b881cdb882d9e994551dbae0065b8a10fa2f3e0df8c5513c2158aff27",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 74,
+    "sha256": "ade76fa1741569b80eaf936223d7efbdc1392ed64adf196237bb28dc8860b3a3",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 75,
+    "sha256": "7b50b5e2d4a0fa53b88a496cd22f3cc032c341e22e68376235e5b76de5f740ec",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 76,
+    "sha256": "28f7e8004f29a62444046bd3cd3911efcdacea0a5efe633cbaf6e81181156bb3",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 77,
+    "sha256": "8d86224d83244d86dfbdf986075f84291f4ab1d40783cbb5b0090cc0526ed3a9",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 78,
+    "sha256": "96014e19d64b013db67985d46e2fd9c61313b24e7642f00e14e2cf4e7b0dfe11",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 79,
+    "sha256": "804dd71fe937297029603063ad6f11ef18cdde9558df96189d9e6811ab90c97b",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 80,
+    "sha256": "afa389d061bde6afa8992379805a34c0250ec8dba59a45b8cc02cea6af88fb05",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 81,
+    "sha256": "8bee7fa733ee85bbdfbe5be67447df10852b0a4e350211ef11bec05353eac78e",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 82,
+    "sha256": "911aa2dab39f3deb70ed47a14272fa88a79cb04483f708e5a7ec31bb85a5c004",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 83,
+    "sha256": "a03202b82cf48382930d2ce3acbc4189139aac8653f693ad25c950147384d590",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 84,
+    "sha256": "062151c65a9b94b9103638b111d9684fde0d199792635a081d763fdd4c9cfe9b",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 85,
+    "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 86,
+    "sha256": "25a981f4eee86a9a735949b4a20511d10cec588242ad82aeffcd11247cc4e17d",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 87,
+    "sha256": "39644a1390e3e0d9743aa8505b6b1e572df7f17544305d79a0d6d84d3569afdb",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 88,
+    "sha256": "dec14184aea813d844ac9c9f826c7afe26863a125df483c68a8145764e4cf677",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 89,
+    "sha256": "916d6c4114dcc00ccebca1a933718bed89f8b27fa766001855b522818ef87ecd",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 90,
+    "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 91,
+    "sha256": "99c51363c7cab2c07a0d09ca9c58bfb1d11d5cf9e3272615b4ea6c1832fbdc97",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 92,
+    "sha256": "c9881df00670047ce1ca704d9eabd5e33ef57ed33109b77d252a782dff6c8a17",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 93,
+    "sha256": "fe8b9ccbcd0c93a3c6c5b0c3e16397c6faeed96ef5286b170c16bf9543f7f23d",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 94,
+    "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 95,
+    "sha256": "00bff0e41f13b7eb6f7aac97fd5af67996ae0202686bdd7d896c80decf8c0483",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 96,
+    "sha256": "ace855c028114ded2bbe449a482db41d98f21826555fec005fcaca7b985d8e85",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 97,
+    "sha256": "9fa16234ce4e1c40a1edc65ffd9535ad9b176d5153a2101fea19a31b6e12f003",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 98,
+    "sha256": "df1cc452509427506b5ae25e71c12819e5af74df9d4c71c30a448ce8259a2a56",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 99,
+    "sha256": "47d4f72d87bc7654f587c5dc358214cfa4b49b20a23cb595bdc1ed2f419d57c0",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 100,
+    "sha256": "9d2eba22878b18eeb3d0f13190f10ac4850338b450827b0378fd2c95fca40783",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 101,
+    "sha256": "16f368bd1f6660d6f84dcdb32257b507499becd52125965c7b7e3d96cd986478",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 102,
+    "sha256": "78d6ea2024e6959abe9c3944240bb954cba0ff7914b2b0a971846d2e987ba13a",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 103,
+    "sha256": "89b272830f344f051c112e778c07e138d77785d0211cbc1bb499ff226f7a669d",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 104,
+    "sha256": "900b3cd693e3379e0d7116e7e771a1ec4f593d07eb1e1c3f3d1a156737466ae8",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 105,
+    "sha256": "07e114d23f8a42397df188dfbc2d24bb861f149f73a50572328d6646dd4988e4",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 106,
+    "sha256": "aec4ae085d3bef45e5d55901b843304b2e159949a53898811cdd810bdc5fe75f",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 107,
+    "sha256": "6ce85098c4ac72180a477dceeead30bb8fb97a5165c91abf63ff543a863699e2",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 108,
+    "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 109,
+    "sha256": "a31d9496c9ee56ef90fb6872b08424a6e5baf11e88e07940219523fe8f0dab4a",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 110,
+    "sha256": "3bfde06b259259f72ec00bf67952e745523cf24a1fc2f392d954050c47cdc990",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 111,
+    "sha256": "859e45c714d9967ab5b7c41a895ed7803c9c1a5fdbf2acfa98cd3a82cf60f285",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 112,
+    "sha256": "25fa0542c9bc8316fa3915b97dc2eaf963bbb0a4f5d52e4f0f4bba7fcafb3e6f",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 113,
+    "sha256": "8b50e82235718f5b20638ca2fa90a174c4320b9157341acbfa1e05985ab29de5",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 114,
+    "sha256": "586419f59a1bf6c5c61095d510856b4a733d494d4fc2410488c8230d9f72cee4",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 115,
+    "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 116,
+    "sha256": "ba14752d92d1dcad18dc56d3cbdcb6d0e986d046aba9f66eca58c2d1e46c6234",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 117,
+    "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 118,
+    "sha256": "8158ba4c041d7a294b2fabbbe3507cca4ea35671c27e97ea93a9de10cc4e4444",
+    "disposition": "exact"
+  },
+  {
+    "file": "es-foral-corporate-tax.md",
+    "original_unit": 119,
+    "sha256": "de35add29d92bd754b7faef68e43e662fdce58c4e21c977e69f857f25ab88de0",
+    "disposition": "final reservation population correction only; exact inverse proved"
+  },
+  {
+    "file": "README.md",
+    "original_unit": 1,
+    "sha256": "69a27e078870c78aad01e5e782b84b040ece1264f4b1dd0d45219a2f25305699",
+    "disposition": "frontmatter partial.IT-IND description only; exact inverse proved"
+  },
+  {
+    "file": "README.md",
+    "original_unit": 2,
+    "sha256": "fa3dfe7033c2c15d09e40e9814cf83b4b549c2aace8f0b02c648b0e34ce2c92f",
+    "disposition": "exact"
+  },
+  {
+    "file": "README.md",
+    "original_unit": 3,
+    "sha256": "4230a7f44820e4598a0502a6edd7cb3ad7e564e2d5f74edce0e1dc64d1e8a5a1",
+    "disposition": "exact"
+  },
+  {
+    "file": "README.md",
+    "original_unit": 4,
+    "sha256": "443796223524b1094e05ed5eb793377f52d0313f1908aec81e5830bcad5aa135",
+    "disposition": "exact"
+  },
+  {
+    "file": "README.md",
+    "original_unit": 5,
+    "sha256": "352a4e854c7e481d33abde7050c76c703cec664c1bcfce7d127b8e2cbb33b2c2",
+    "disposition": "exact"
+  },
+  {
+    "file": "README.md",
+    "original_unit": 6,
+    "sha256": "56df85285d969d5742cb7e9d1d1300c09eeaf20bc5de3038178ffc07e92ff1cc",
+    "disposition": "exact"
+  },
+  {
+    "file": "README.md",
+    "original_unit": 7,
+    "sha256": "08f5ecf32cdba8d7a82516c15d284da0f5132315fe4e25d1a84ab3110344132b",
+    "disposition": "exact"
+  },
+  {
+    "file": "README.md",
+    "original_unit": 8,
+    "sha256": "da390b2f6acbb58375f529168182b869dec0ab25f6e7e6085542a73caf67dcfc",
+    "disposition": "exact"
+  },
+  {
+    "file": "README.md",
+    "original_unit": 9,
+    "sha256": "f85cacee183739d4322b7f0c22627a8a4e255d7f9021056486ea94c7008d0c6b",
+    "disposition": "exact"
+  },
+  {
+    "file": "README.md",
+    "original_unit": 10,
+    "sha256": "37606b87fb5ef4d86625a8fed3100cc1e9ce4fed92895b58600d9234656e9d40",
+    "disposition": "exact"
+  },
+  {
+    "file": "README.md",
+    "original_unit": 11,
+    "sha256": "eee7afe6db82f2165d2bd4970ff22ef8c1fed3cf71b71cfd3b9a87776d84a773",
+    "disposition": "exact"
+  }
+]

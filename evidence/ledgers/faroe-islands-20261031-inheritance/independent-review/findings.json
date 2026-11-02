@@ -1,0 +1,42 @@
+[
+  {
+    "id": "FO-EST-001",
+    "priority": 1,
+    "files": [
+      "skills/faroe-islands/fo-inheritance-duty.md:370",
+      "skills/faroe-islands/fo-estate-income-tax.md:341"
+    ],
+    "finding": "Repair court/opening/closing reference URLs and matching Sources table cells. Multiple concatenated URLs and spaces break the actual filing-form route. The ledger/build-ledgers URL dictionary contains clean targets; fresh official court/form retrieval confirms those targets.",
+    "required_fix": "Replace with the single correct publisher URL for court, D03 and closing form; verify Markdown reference resolution and align Sources table cells. Refresh manifest only for repaired inputs."
+  },
+  {
+    "id": "FO-EST-002",
+    "priority": 2,
+    "files": [
+      "skills/faroe-islands/fo-estate-income-tax.md:215"
+    ],
+    "finding": "The ordinary-return method requires accounts under Tax Act \u00a7103 but its sanctions section omits \u00a7103(3): absent required accounts invalidates the return; authority can impose DKK100 daily after its set deadline until receipt. This is separate from \u00a7104 ordinary late-return fine/increases and \u00a714 opening-statement sanctions.",
+    "source": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+    "required_fix": "Add the sourced \u00a7103(3) invalidity/deadline/daily-fine branch and corresponding ledger row with original-language operative paragraph. Do not merge it into the unfixed \u00a714 daily-fine amount."
+  },
+  {
+    "id": "FO-EST-003",
+    "priority": 2,
+    "files": [
+      "skills/faroe-islands/fo-inheritance-duty.md:20",
+      "skills/faroe-islands/fo-estate-income-tax.md:21"
+    ],
+    "finding": "New files add platform-owned trust_label. docs/skill-template.md Platform-written keys explicitly says not to add or edit these keys in a PR; preserving old attribution does not authorize adding it to a new file.",
+    "required_fix": "Remove the newly added trust_label keys; preserve all nine predecessor Guides exactly. Tier2 remains unchanged."
+  },
+  {
+    "id": "FO-EST-004",
+    "priority": 2,
+    "files": [
+      "skills/faroe-islands/fo-inheritance-duty.md:17",
+      "skills/faroe-islands/fo-estate-income-tax.md:17"
+    ],
+    "finding": "New categories inheritance and income-tax are outside docs/skill-template.md new-file category vocabulary. Mechanical shape checks do not catch this manual standard requirement.",
+    "required_fix": "Use international for these new country tax Guides, retaining the distinct job identity. Rebuild affected generated inventories only according to normal repo workflow."
+  }
+]

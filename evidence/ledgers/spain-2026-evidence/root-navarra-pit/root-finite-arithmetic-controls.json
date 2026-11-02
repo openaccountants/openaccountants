@@ -1,0 +1,157 @@
+{
+  "controls": [
+    {
+      "name": "foreign45days",
+      "actual": "6500",
+      "expected": "6500",
+      "pass": true
+    },
+    {
+      "name": "foreign46days",
+      "actual": "7600",
+      "expected": "7600",
+      "pass": true
+    },
+    {
+      "name": "foreign39days",
+      "actual": "3900",
+      "expected": "3900",
+      "pass": true
+    },
+    {
+      "name": "foreign36days",
+      "actual": "7200",
+      "expected": "7200",
+      "pass": true
+    },
+    {
+      "name": "home proportional gain",
+      "actual": "75000",
+      "expected": "75000",
+      "pass": true
+    },
+    {
+      "name": "annuity remaining140k",
+      "actual": "56000",
+      "expected": "56000",
+      "pass": true
+    },
+    {
+      "name": "dividend expense tax",
+      "actual": "1164.0",
+      "expected": "1164",
+      "pass": true
+    },
+    {
+      "name": "crypto sale",
+      "actual": "1148.0",
+      "expected": "1148",
+      "pass": true
+    },
+    {
+      "name": "crypto fee pool",
+      "actual": "4940",
+      "expected": "4940",
+      "pass": true
+    },
+    {
+      "name": "blockedloss released net",
+      "actual": "-3500",
+      "expected": "-3500",
+      "pass": true
+    },
+    {
+      "name": "home7000 rate.15",
+      "actual": "1050.00",
+      "expected": "1050",
+      "pass": true
+    },
+    {
+      "name": "home7000 rate.18",
+      "actual": "1260.00",
+      "expected": "1260",
+      "pass": true
+    },
+    {
+      "name": "home7000 rate.30",
+      "actual": "2100.00",
+      "expected": "2100",
+      "pass": true
+    },
+    {
+      "name": "disabled capital60 reduction",
+      "actual": "4000.0",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "disabled annuity3IPREM",
+      "actual": "25200",
+      "expected": "25200",
+      "pass": true
+    },
+    {
+      "name": "2025 SARA1.4",
+      "actual": "15287.594",
+      "expected": "15287.594",
+      "pass": true
+    },
+    {
+      "name": "2025 SARA1.7",
+      "actual": "18563.507",
+      "expected": "18563.507",
+      "pass": true
+    },
+    {
+      "name": "2026 SARA1.4",
+      "actual": "15682.016",
+      "expected": "15682.016",
+      "pass": true
+    },
+    {
+      "name": "2026 SARA1.7",
+      "actual": "19042.448",
+      "expected": "19042.448",
+      "pass": true
+    },
+    {
+      "name": "DAVID two member IFP",
+      "actual": "14100.0000",
+      "expected": "14100",
+      "pass": true
+    },
+    {
+      "name": "DAVID one member IFP",
+      "actual": "9400.00",
+      "expected": "9400",
+      "pass": true
+    },
+    {
+      "name": "DAVID band280 rent650",
+      "actual": "280",
+      "expected": "280",
+      "pass": true
+    },
+    {
+      "name": "DAVID band340 rent650",
+      "actual": "325.0",
+      "expected": "325",
+      "pass": true
+    },
+    {
+      "name": "Emanzipa each two holders",
+      "actual": "140",
+      "expected": "140",
+      "pass": true
+    }
+  ],
+  "count": 24,
+  "fragments": {
+    "mixed": "57036f9f27da03f548436df244e9e1957d4b3178811d58b5863459a2fab081b1",
+    "core": "c794f580fb413d9a9d7303b158cfa69282b734db4700cab0f677e60a6e659ff7",
+    "giving-landlord": "d8837beef0e7f0322bf11aed133d370e7518e991bfc7513bf8d169e60a43ff23",
+    "home-pension": "71253488b6be7ed282ee6d73bf8eb7ade4af9097718f8d0552d65a3e701bcb26",
+    "advance-residence": "ef44723a1cf476882249592ea656c507b48ab2922e6ac35e600bbde11f502bb3"
+  },
+  "scope": "Finite writer arithmetic derived from actually read clauses; no independent review claim; B owns complete Guide cases and ledger"
+}

@@ -1,0 +1,1080 @@
+[
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a0a2624420fe870ee93c.body",
+    "sha256": "4ec159da60a7f04cfed44803f7126c7f75ca2bed4cc22cf879a34873300088ad",
+    "expected": "4ec159da60a7f04cfed44803f7126c7f75ca2bed4cc22cf879a34873300088ad",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a0a2624420fe870ee93c.reader.txt",
+    "sha256": "3680f6d7ccb1b6d00bcdd893c8b54c23f6e7b3d99d6883045de4204264d50201",
+    "expected": "3680f6d7ccb1b6d00bcdd893c8b54c23f6e7b3d99d6883045de4204264d50201",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b26cbbf55000edb7f01a.body",
+    "sha256": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a",
+    "expected": "ada81743ffa79d9903d19722e32c4ea20a5262d70584971df1c08bc9e753c87a",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b26cbbf55000edb7f01a.pdf.reader.txt",
+    "sha256": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "expected": "c81622eccecfe25f6cb77f7c32717bcf8878228e6cb0bacfdaddbe47c12a3e2b",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/07a16a8bd5be15b57788.body",
+    "sha256": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+    "expected": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/07a16a8bd5be15b57788.pdf.reader.txt",
+    "sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "expected": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3862507b57a0d844fb13.body",
+    "sha256": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704",
+    "expected": "fa3824b4f0d7cc2a70ce48f45fd718475cf212fb83e89fc277698da824af7704",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3862507b57a0d844fb13.pdf.reader.txt",
+    "sha256": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "expected": "f015c87cc37a18081b6226c813c5c7ee9ce9ffd10e900f6697af5b0a3d818347",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foreign-work-exemption-private-method/sources/B-reg.pdf",
+    "sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "expected": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foreign-work-exemption-private-method/sources/B-reg.pdf.reader.txt",
+    "sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "expected": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.body",
+    "sha256": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+    "expected": "47afa4678ebd222215edf06e43d0295be9aa8f01d0ab8f38c7ad8c3df552f841",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/67e91d60390de699e45d.pdf.reader.txt",
+    "sha256": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+    "expected": "69577c441ecf8f8ec605c1332471b254780e38fe32bd3a7a0ce61ff927dc3cef",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.body",
+    "sha256": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+    "expected": "6497555b320ecfd58c44056fb26365c6b85f68a9b6d2da168b84d4d51d6519f2",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/cace46b9e8c983a501af.pdf.reader.txt",
+    "sha256": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+    "expected": "ad5e7b534db0daabe093a57797fb6b3bc3812dad36a6f03bf887d1b7d9d8e79d",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Alava-deemed-jobseeker-source-review/sources/A-family-deductions.html",
+    "sha256": "3c981df3fe503e2605b251f2e9c60e8e719f6007740776d6d85e2118146a148f",
+    "expected": "3c981df3fe503e2605b251f2e9c60e8e719f6007740776d6d85e2118146a148f",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Alava-deemed-jobseeker-source-review/sources/A-family-deductions.html.reader.txt",
+    "sha256": "5a5554ca2395cf705e62757a4746f2e8a196e61a67ab2a4d6ea395174be067bf",
+    "expected": "5a5554ca2395cf705e62757a4746f2e8a196e61a67ab2a4d6ea395174be067bf",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Alava-deemed-jobseeker-source-review/sources/Lanbide-certificates.html",
+    "sha256": "2a37e629888b300f38d6b81c2a8c114cc13130e55b91dbbbfa0a4c205c86bd71",
+    "expected": "2a37e629888b300f38d6b81c2a8c114cc13130e55b91dbbbfa0a4c205c86bd71",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Alava-deemed-jobseeker-source-review/sources/Lanbide-certificates.html.reader.txt",
+    "sha256": "eaca9732c1fb70ea8418a6fcc6eb3643d39641a3f5482b9343fc708af9a4d383",
+    "expected": "eaca9732c1fb70ea8418a6fcc6eb3643d39641a3f5482b9343fc708af9a4d383",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.body",
+    "sha256": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+    "expected": "8d559464ffa66002a76804ff2a6f325cfd703108c7d872cd598ced53d7aed1ed",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6df05548eba295214569.pdf.reader.txt",
+    "sha256": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "expected": "cd458b640c35bf9e261e92d466050d9226f784a2b413bb61542bf67b485cae89",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a7c99b3a159d15f09b51.body",
+    "sha256": "e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe",
+    "expected": "e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/a7c99b3a159d15f09b51.pdf.reader.txt",
+    "sha256": "91e5080d005596bc8c298c5d363ea97862c18ba4b0d9d666717b71c54cc2107b",
+    "expected": "91e5080d005596bc8c298c5d363ea97862c18ba4b0d9d666717b71c54cc2107b",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/c510a8b86fa0754d0c64.body",
+    "sha256": "21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6",
+    "expected": "21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/c510a8b86fa0754d0c64.pdf.reader.txt",
+    "sha256": "e61444ddd2684a608480d56fb00bb87fc676af155affdc75e4ec67abb4e03916",
+    "expected": "e61444ddd2684a608480d56fb00bb87fc676af155affdc75e4ec67abb4e03916",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/ebe984cc20350ca756ca.body",
+    "sha256": "a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44",
+    "expected": "a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/ebe984cc20350ca756ca.pdf.reader.txt",
+    "sha256": "9d5ce8241e91bd452b43b65cb2e102a7535730a466227627db6d2b1e2cbe12de",
+    "expected": "9d5ce8241e91bd452b43b65cb2e102a7535730a466227627db6d2b1e2cbe12de",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6f24754378a2cd5a3dc0.body",
+    "sha256": "6d2c597b60b372fd90be8b753982417bfd7f2595d225945aff8981e9eedd64ac",
+    "expected": "6d2c597b60b372fd90be8b753982417bfd7f2595d225945aff8981e9eedd64ac",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6f24754378a2cd5a3dc0.reader.txt",
+    "sha256": "9fd48c3ba1f5a659dafe330c71579b0d054a30872b979d3fc06456b965026b26",
+    "expected": "9fd48c3ba1f5a659dafe330c71579b0d054a30872b979d3fc06456b965026b26",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/1e6f40d9be116a25d219.body",
+    "sha256": "2b7ddd9176e39c84e802179caa5fb5660c714ffd3b05677a77cc334d051124fc",
+    "expected": "2b7ddd9176e39c84e802179caa5fb5660c714ffd3b05677a77cc334d051124fc",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/1e6f40d9be116a25d219.pdf.reader.txt",
+    "sha256": "a5ea0c1b3b60c59057a2f8d8816cca69188877ae3e2e231d97996469668bd0c9",
+    "expected": "a5ea0c1b3b60c59057a2f8d8816cca69188877ae3e2e231d97996469668bd0c9",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/60bfcc1e38359ebe7635.body",
+    "sha256": "ba457110d420029158a5b2941e0d289b86182dc383bbaaa7b4ce22be363ca81f",
+    "expected": "ba457110d420029158a5b2941e0d289b86182dc383bbaaa7b4ce22be363ca81f",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/60bfcc1e38359ebe7635.pdf.reader.txt",
+    "sha256": "7479ac2edb638347f361eb6dc6b01d9cd9d36d566a0c25be6164608cdad4ade2",
+    "expected": "7479ac2edb638347f361eb6dc6b01d9cd9d36d566a0c25be6164608cdad4ade2",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.body",
+    "sha256": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "expected": "44c59df9f56d745d3e2ccc19180986c8255edff1791a43909f3fe74b6273e565",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/236db31f235ec49bcd82.pdf.reader.txt",
+    "sha256": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "expected": "c1d7f9f0f1161b9e1f0baf6ef804fe8f465989b174d58f8bd831313c1ddc262d",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/60f79e539ef3aa9757e2.body",
+    "sha256": "ed47a1656ba20ca8180ec90cb65399d584e1ab06f03de0e2b11b4e8339fb1844",
+    "expected": "ed47a1656ba20ca8180ec90cb65399d584e1ab06f03de0e2b11b4e8339fb1844",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/60f79e539ef3aa9757e2.reader.txt",
+    "sha256": "30798ee6ad2f8a4956db40c8925dc793b0a64ec1905fe1dc262d5d9b03f96c2f",
+    "expected": "30798ee6ad2f8a4956db40c8925dc793b0a64ec1905fe1dc262d5d9b03f96c2f",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.body",
+    "sha256": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "expected": "fe64ed8dfc799d0d99a5574d3283037932027ed3a20b74db99e374e5b9bb5efa",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/6d006a755ce81bf35773.pdf.reader.txt",
+    "sha256": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "expected": "99434cef6d4eb73cb1bc22b754ee0f1102a7252cd1afca62f3a203ba754da0ed",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.body",
+    "sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "expected": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/864e88ce06dd2fd81609.pdf.reader.txt",
+    "sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "expected": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/9f5bada0544bb3655eef.body",
+    "sha256": "b0e4701bc44f41aece070018b4170746346dd07531908ac544a5a6dff96e27b4",
+    "expected": "b0e4701bc44f41aece070018b4170746346dd07531908ac544a5a6dff96e27b4",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/9f5bada0544bb3655eef.pdf.reader.txt",
+    "sha256": "86ca14e4f7dff1e5bae1d82b2df9b26b1cdc0c9981115e8087724af3f50f8074",
+    "expected": "86ca14e4f7dff1e5bae1d82b2df9b26b1cdc0c9981115e8087724af3f50f8074",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/02d909654955f6317233.body",
+    "sha256": "041f8ebcdd7470960a02fd6a4fab7ce5dc924ead6daf43512b4268f62807f5b5",
+    "expected": "041f8ebcdd7470960a02fd6a4fab7ce5dc924ead6daf43512b4268f62807f5b5",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/02d909654955f6317233.pdf.reader.txt",
+    "sha256": "d27ea50637d25b891fc88ff48866ef058eb7bba8a38007c6dcc45f6cc7f724a8",
+    "expected": "d27ea50637d25b891fc88ff48866ef058eb7bba8a38007c6dcc45f6cc7f724a8",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/010aac8739ad8fbf7f14.body",
+    "sha256": "4c4f6a46cff40d34d6f9437bff0aa80dd92d05c98bcbca4430206cc87564a13f",
+    "expected": "4c4f6a46cff40d34d6f9437bff0aa80dd92d05c98bcbca4430206cc87564a13f",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-foral-corporate-tax/G26-visual-selected.reader.txt",
+    "sha256": "c7911960087ee1ff07aec70228a74525ed2218ab4d5049759389bf6a76b6bbc2",
+    "expected": "c7911960087ee1ff07aec70228a74525ed2218ab4d5049759389bf6a76b6bbc2",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f63247739ff7df697f65.body",
+    "sha256": "49f0ced29200fcb20d08266619fb679fc5a1b9fcf9a1b429ddd6c937bee141cb",
+    "expected": "49f0ced29200fcb20d08266619fb679fc5a1b9fcf9a1b429ddd6c937bee141cb",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f63247739ff7df697f65.pdf.reader.txt",
+    "sha256": "55cdc058fa11a640a7e80ea492f916a1e55d39aa20eb6c93a89410506e8f9bb5",
+    "expected": "55cdc058fa11a640a7e80ea492f916a1e55d39aa20eb6c93a89410506e8f9bb5",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foreign-work-exemption-private-method/sources/A-instruction2024.pdf",
+    "sha256": "cd5eb34a5f71101b0f01750992408360050bfad008adcf0e47fe742de143cc1a",
+    "expected": "cd5eb34a5f71101b0f01750992408360050bfad008adcf0e47fe742de143cc1a",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foreign-work-exemption-private-method/sources/A-instruction2024.pdf.reader.txt",
+    "sha256": "eb6ab1bdaa6b9158720ab5c8f0757f9f35c0c1f6c68168f4588427abd56662ad",
+    "expected": "eb6ab1bdaa6b9158720ab5c8f0757f9f35c0c1f6c68168f4588427abd56662ad",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/B6-2025-original.pdf",
+    "sha256": "09ca87f35a43c2b603d49983626d045200fa28840cb2b85b3048df00dde2a3e4",
+    "expected": "09ca87f35a43c2b603d49983626d045200fa28840cb2b85b3048df00dde2a3e4",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/B6-2025-original.txt",
+    "sha256": "f9cf2de973b616b68a14b0ef7e6943cf3d551e149b5885e5f59a822a43c5ef48",
+    "expected": "f9cf2de973b616b68a14b0ef7e6943cf3d551e149b5885e5f59a822a43c5ef48",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Alava-extraordinary-profit-measurement-renewed/sources/NF21-2025.pdf",
+    "sha256": "2cf4a6a79b6afb87c9fbb5c5f81a4188d721c73a3c0d47d7e32e635e3e6fe6b4",
+    "expected": "2cf4a6a79b6afb87c9fbb5c5f81a4188d721c73a3c0d47d7e32e635e3e6fe6b4",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Alava-extraordinary-profit-measurement-renewed/sources/NF21-2025.reader.txt",
+    "sha256": "e2ee1c75023246f2f84e6332a135fbac8b71f954f7c9becb64d860b8cdf1d848",
+    "expected": "e2ee1c75023246f2f84e6332a135fbac8b71f954f7c9becb64d860b8cdf1d848",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/G2-2025-original.pdf",
+    "sha256": "879562b3c97c3ee33e2ab57927d522aae04d34a13ddab721e600da3614a289d8",
+    "expected": "879562b3c97c3ee33e2ab57927d522aae04d34a13ddab721e600da3614a289d8",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/G2-2025-original.txt",
+    "sha256": "b192bc0b907df2d5ea04ba0ca372aeb599cc119647ba20c7e6c39c2e26a31488",
+    "expected": "b192bc0b907df2d5ea04ba0ca372aeb599cc119647ba20c7e6c39c2e26a31488",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/df0c7c9e0fdf6d09e603.body",
+    "sha256": "cb84bdbe860c94111cce1a958eb09112c47fef71551239cc4b89cf96b46be19f",
+    "expected": "cb84bdbe860c94111cce1a958eb09112c47fef71551239cc4b89cf96b46be19f",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/df0c7c9e0fdf6d09e603.pdf.reader.txt",
+    "sha256": "db04bd25bebe7dc21f9b63b3dd39afe093f87f4c3a8dfddcce14019038085888",
+    "expected": "db04bd25bebe7dc21f9b63b3dd39afe093f87f4c3a8dfddcce14019038085888",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/253e18b8f306fa694eac.body",
+    "sha256": "01e9092201d32771eb72b97179ed24e2d68f3fa59f063d95803d8dbc9bf2c4bc",
+    "expected": "01e9092201d32771eb72b97179ed24e2d68f3fa59f063d95803d8dbc9bf2c4bc",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/253e18b8f306fa694eac.pdf.reader.txt",
+    "sha256": "bdd46b8682293e3d49aa281177b1d2d4bd27a2265660b157dbdc94852f69ad1a",
+    "expected": "bdd46b8682293e3d49aa281177b1d2d4bd27a2265660b157dbdc94852f69ad1a",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/76dc8971e565851c7798.body",
+    "sha256": "a7c2dbcc59d33d9b0fae17ee8ef29bfe0811c7e7f39a3383a932dc4e5add7012",
+    "expected": "a7c2dbcc59d33d9b0fae17ee8ef29bfe0811c7e7f39a3383a932dc4e5add7012",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/76dc8971e565851c7798.pdf.reader.txt",
+    "sha256": "0a77808b0582f38980bfa00bfde896b2e9a1228ad81e61a1c9bd6a063aae717a",
+    "expected": "0a77808b0582f38980bfa00bfde896b2e9a1228ad81e61a1c9bd6a063aae717a",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/7d417f596fa8bf651054.body",
+    "sha256": "66ae81b5fa19bf9be496d10f20160c61e7a7231b3d873b7daba55e817bf13a8b",
+    "expected": "66ae81b5fa19bf9be496d10f20160c61e7a7231b3d873b7daba55e817bf13a8b",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/7d417f596fa8bf651054.pdf.reader.txt",
+    "sha256": "b9cc529006e9e5cadee4bec80b4295ff661688de51851431ef3ef0a7424dfdcd",
+    "expected": "b9cc529006e9e5cadee4bec80b4295ff661688de51851431ef3ef0a7424dfdcd",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3b54b5af716a2a9decb2.body",
+    "sha256": "49a95d144147b777cfdcdba43f15ce54a50604e5a740ec5391f004869061253b",
+    "expected": "49a95d144147b777cfdcdba43f15ce54a50604e5a740ec5391f004869061253b",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/3b54b5af716a2a9decb2.pdf.reader.txt",
+    "sha256": "14bddce573223a052264ab37fca3322d136ffdc69214c3f1bbed179a1be62d41",
+    "expected": "14bddce573223a052264ab37fca3322d136ffdc69214c3f1bbed179a1be62d41",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/B205-2008-current.pdf",
+    "sha256": "7bc08f332677019b6d25a861beb30630f61e861d0faf0cde007d1b6040edc7f9",
+    "expected": "7bc08f332677019b6d25a861beb30630f61e861d0faf0cde007d1b6040edc7f9",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/B205-2008-current.txt",
+    "sha256": "29f3f7dfc1d2d224c1dd7416ecf7951b12d0b897941435bc6d7957bdee3d37e0",
+    "expected": "29f3f7dfc1d2d224c1dd7416ecf7951b12d0b897941435bc6d7957bdee3d37e0",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Alava-deemed-jobseeker-source-review/sources/A-DF36-2026-original.pdf",
+    "sha256": "dff415556ee1188a8091cedcc79fef4168fba2bbec74266fa3e6f1bace83e583",
+    "expected": "dff415556ee1188a8091cedcc79fef4168fba2bbec74266fa3e6f1bace83e583",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Alava-deemed-jobseeker-source-review/sources/A-DF36-2026-original.pdf.reader.txt",
+    "sha256": "96bf2c6baa4dba5de458bf06299656b3b9396b177c485b961e2fb5d8d87af14c",
+    "expected": "96bf2c6baa4dba5de458bf06299656b3b9396b177c485b961e2fb5d8d87af14c",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/G47-2013-information-reg.pdf",
+    "sha256": "18f5ea2739c582401df769a5bcb5d0cba819dd2fabc5210657cfdb1de3c92ac3",
+    "expected": "18f5ea2739c582401df769a5bcb5d0cba819dd2fabc5210657cfdb1de3c92ac3",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/G47-2013-information-reg.txt",
+    "sha256": "38903e63fabceb3e984446e88da8d2c91923057b5d60c0a929979f855d61c6a2",
+    "expected": "38903e63fabceb3e984446e88da8d2c91923057b5d60c0a929979f855d61c6a2",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/B721-order.pdf",
+    "sha256": "b1461cce7ab531d446acae8367a0fe5570d6cccf069639b7112bc84fb09ae79d",
+    "expected": "b1461cce7ab531d446acae8367a0fe5570d6cccf069639b7112bc84fb09ae79d",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/B721-order.txt",
+    "sha256": "be69b243334eb3a435ef5268972e9e41366f61171116ac6e7f16f684241da90b",
+    "expected": "be69b243334eb3a435ef5268972e9e41366f61171116ac6e7f16f684241da90b",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/A721-order.pdf",
+    "sha256": "5ab00f78c932d7d6a1bfe22e35d01192c2371c40d1eb740c2932c85a925cb154",
+    "expected": "5ab00f78c932d7d6a1bfe22e35d01192c2371c40d1eb740c2932c85a925cb154",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/A721-order.txt",
+    "sha256": "adb4fc51e36f32ad090138a1d2aaceb9a4a30b7210cbb99b7fa97881a6a89041",
+    "expected": "adb4fc51e36f32ad090138a1d2aaceb9a4a30b7210cbb99b7fa97881a6a89041",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/G721-order.pdf",
+    "sha256": "9da4922cef9c8cea53b104764ef045e963a4de8790f37344bc578fa1c50a7793",
+    "expected": "9da4922cef9c8cea53b104764ef045e963a4de8790f37344bc578fa1c50a7793",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/G721-order.txt",
+    "sha256": "101072e853bc6a3b771799bc12142124c0f484e2ed14c8d453e964985f74367c",
+    "expected": "101072e853bc6a3b771799bc12142124c0f484e2ed14c8d453e964985f74367c",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/G721-current.html",
+    "sha256": "e6c2b70bb0dd3a89cac7eb63f34d96149d87b4fa8c960ad2a1142d89fd375df1",
+    "expected": "e6c2b70bb0dd3a89cac7eb63f34d96149d87b4fa8c960ad2a1142d89fd375df1",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/G721-current.reader.txt",
+    "sha256": "b2eee15a7e888b8115e7f29ba57b4bca32214d4b96f3699c727b564a4a4f561f",
+    "expected": "b2eee15a7e888b8115e7f29ba57b4bca32214d4b96f3699c727b564a4a4f561f",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/B84-2026-reporting-amendment.pdf",
+    "sha256": "77ccff0f0aa3fbc2610fe9f7d823cc3a667ca195aca42c490ec0fb0507051028",
+    "expected": "77ccff0f0aa3fbc2610fe9f7d823cc3a667ca195aca42c490ec0fb0507051028",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/B84-2026-reporting-amendment.txt",
+    "sha256": "1dfbcafefac4c26b83ea12f9eb4a22165925007e03985578a17dae3ca821cc6d",
+    "expected": "1dfbcafefac4c26b83ea12f9eb4a22165925007e03985578a17dae3ca821cc6d",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foreign-work-G88-private-composition/sources/G-TicketBAI-FAQ.pdf",
+    "sha256": "8aea00396b0289807903148cc426f5de8fe89b9960920d255886b79fa47dc728",
+    "expected": "8aea00396b0289807903148cc426f5de8fe89b9960920d255886b79fa47dc728",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foreign-work-G88-private-composition/sources/G-TicketBAI-FAQ.pdf.reader.txt",
+    "sha256": "f85708a99cbf72110760b3e70b646383f5b6653df5fd593f6a5d2325d9e4ed2b",
+    "expected": "f85708a99cbf72110760b3e70b646383f5b6653df5fd593f6a5d2325d9e4ed2b",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-care-implementation-source-review/sources/G6-2023-current.pdf",
+    "sha256": "1b1d5a0d6614b8b43edb911edefe1065ad55ee7e132707e6ecf20bfe57d7680c",
+    "expected": "1b1d5a0d6614b8b43edb911edefe1065ad55ee7e132707e6ecf20bfe57d7680c",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-care-implementation-source-review/sources/G6-2023-current.txt",
+    "sha256": "ae30b9c6c954cae3e355afd1912bd420b2295bcbc3a9f0faac50436d436b1424",
+    "expected": "ae30b9c6c954cae3e355afd1912bd420b2295bcbc3a9f0faac50436d436b1424",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-care-implementation-source-review/sources/Employment-L3-2023-current.html",
+    "sha256": "7740b1a956c1a0b38cc47ef127728bff44b5fb779ca99c01e52c40ebc8ffb723",
+    "expected": "7740b1a956c1a0b38cc47ef127728bff44b5fb779ca99c01e52c40ebc8ffb723",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-care-implementation-source-review/sources/Employment-L3-2023-current.txt",
+    "sha256": "60f983ed3b4798b62f80a62ab57e6a4a0db1977efc29a35b521459b861772b60",
+    "expected": "60f983ed3b4798b62f80a62ab57e6a4a0db1977efc29a35b521459b861772b60",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-care-implementation-source-review/sources/Employment-RD438-2024-current.html",
+    "sha256": "e2c4de6ff13894e408023c3cd22af22f21234347e9a2a49a02120bf24b76f516",
+    "expected": "e2c4de6ff13894e408023c3cd22af22f21234347e9a2a49a02120bf24b76f516",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-care-implementation-source-review/sources/Employment-RD438-2024-current.txt",
+    "sha256": "00fd500e7d816ce6fafeb9185067f9251e92318ec2155981fbb00e9ccb0c043f",
+    "expected": "00fd500e7d816ce6fafeb9185067f9251e92318ec2155981fbb00e9ccb0c043f",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-care-implementation-source-review/sources/Employment-agreement-model-2024.pdf",
+    "sha256": "379ebd1f7c26a7a93f06f8a6b243d1ab75a13816df843a8fdeb2af16c615580f",
+    "expected": "379ebd1f7c26a7a93f06f8a6b243d1ab75a13816df843a8fdeb2af16c615580f",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-care-implementation-source-review/sources/Employment-agreement-model-2024.txt",
+    "sha256": "c4a3d5265f16189e1ea9cfe2af7c12ff65e2d25524308849721f10536781f326",
+    "expected": "c4a3d5265f16189e1ea9cfe2af7c12ff65e2d25524308849721f10536781f326",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-care-implementation-source-review/sources/Basque-L14-2022-current.html",
+    "sha256": "a488bf77e95ec23a8530af0dec6e8a951ad482588e6210e0cf7b3782d991b906",
+    "expected": "a488bf77e95ec23a8530af0dec6e8a951ad482588e6210e0cf7b3782d991b906",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-care-implementation-source-review/sources/Basque-L14-2022-current.txt",
+    "sha256": "a5fc639081e35ced2e3922932e036115b50a130bd896c66d78a217860f024b49",
+    "expected": "a5fc639081e35ced2e3922932e036115b50a130bd896c66d78a217860f024b49",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-crypto-owned-units-fee-ledger-private-method/sources/21-A2025manual.pdf",
+    "sha256": "ae58c61f10e514b8e4c993dc778f245bbb3fbd78385b9f8bf642c2b06b7a345d",
+    "expected": "ae58c61f10e514b8e4c993dc778f245bbb3fbd78385b9f8bf642c2b06b7a345d",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-crypto-owned-units-fee-ledger-private-method/sources/21-A2025manual.reader.txt",
+    "sha256": "26066a9bc1b4e74c979fe16c90fff7f3efb5c39276e539daa31704dd3d797935",
+    "expected": "26066a9bc1b4e74c979fe16c90fff7f3efb5c39276e539daa31704dd3d797935",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-crypto-owned-units-fee-ledger-independent-review/sources/22-G2025manual.pdf",
+    "sha256": "86e4c0de3bc3d4c7d59fdbc09ea70f8857616f2ace2a5bbd4a7e3e40247a9e17",
+    "expected": "86e4c0de3bc3d4c7d59fdbc09ea70f8857616f2ace2a5bbd4a7e3e40247a9e17",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/es-foral-income-tax/G2025manual-p52-right.reader.txt",
+    "sha256": "bc2adc3763e14a3c4c80ad26895a65f5ed0c29f0f2897dc5e4471c45affa9759",
+    "expected": "bc2adc3763e14a3c4c80ad26895a65f5ed0c29f0f2897dc5e4471c45affa9759",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N1.body",
+    "sha256": "094224bb82fbd13c1a19b3e89c2f68a8e0cd073a4dc78c9bd2c06cf9635eafa0",
+    "expected": "094224bb82fbd13c1a19b3e89c2f68a8e0cd073a4dc78c9bd2c06cf9635eafa0",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N1.reader.txt",
+    "sha256": "46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b",
+    "expected": "46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N4.body",
+    "sha256": "dd7865ff672792f67b55ef3abdbadd03a425a2c93dd1c6a90a9a0f1c1cebef7f",
+    "expected": "dd7865ff672792f67b55ef3abdbadd03a425a2c93dd1c6a90a9a0f1c1cebef7f",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N4.reader.txt",
+    "sha256": "23c8a175a00807c6c99b4513d15db20ee4237ef80acdbc50a9b42db9e94657c0",
+    "expected": "23c8a175a00807c6c99b4513d15db20ee4237ef80acdbc50a9b42db9e94657c0",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N3.body",
+    "sha256": "e5b3f5dfd692252c502359be269f35f28e8c11ad583953e99e2eb78cdb5be6ee",
+    "expected": "e5b3f5dfd692252c502359be269f35f28e8c11ad583953e99e2eb78cdb5be6ee",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/N3-current-selected.txt",
+    "sha256": "b078bd1b23f7bb535099973630b963331bc4aebbe67a78eaa9e7fa3e8a9e7e21",
+    "expected": "b078bd1b23f7bb535099973630b963331bc4aebbe67a78eaa9e7fa3e8a9e7e21",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N51.body",
+    "sha256": "2be9b50dd8e0811358c7d2167a36b1f343f86d931c3c086c3bb647e25a913023",
+    "expected": "2be9b50dd8e0811358c7d2167a36b1f343f86d931c3c086c3bb647e25a913023",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N51.reader.txt",
+    "sha256": "7ead40fcccfc1f7c0aab2c7095b62d2e3d460227fb16a31d83ef0d2d10119ae9",
+    "expected": "7ead40fcccfc1f7c0aab2c7095b62d2e3d460227fb16a31d83ef0d2d10119ae9",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/IPREM2026.body",
+    "sha256": "35fd566e96f38d7b73b99e67521d2066f1b0e56b6ea08afd0480c0d088440728",
+    "expected": "35fd566e96f38d7b73b99e67521d2066f1b0e56b6ea08afd0480c0d088440728",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/IPREM2026.reader.txt",
+    "sha256": "35281ebbb6f248ff7b2888476898a1559c06373108174810d79afdb1a535a4c2",
+    "expected": "35281ebbb6f248ff7b2888476898a1559c06373108174810d79afdb1a535a4c2",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/LPGE.body",
+    "sha256": "37f9d89b099b16a562cc2c718820bcb3fb3cfea2bd6d2b8749fe817a9b5e4289",
+    "expected": "37f9d89b099b16a562cc2c718820bcb3fb3cfea2bd6d2b8749fe817a9b5e4289",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/LPGE.reader.txt",
+    "sha256": "691c19ba840bd7df55720c296184767136b36517c70023f4e245150d442a19c7",
+    "expected": "691c19ba840bd7df55720c296184767136b36517c70023f4e245150d442a19c7",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N27.body",
+    "sha256": "e2a76870df5108fc398406bd059a37205b94adcd1a9f6885ce86120ffad789f3",
+    "expected": "e2a76870df5108fc398406bd059a37205b94adcd1a9f6885ce86120ffad789f3",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N27.reader.txt",
+    "sha256": "6b93122ff44514e2b3b44c188792a46a0e8427e22b2f324ee78976c558362b74",
+    "expected": "6b93122ff44514e2b3b44c188792a46a0e8427e22b2f324ee78976c558362b74",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N29.body",
+    "sha256": "adb9df53ddb235f36003b9fe9a2b6a7af6e67edfe1b04ab46725f028a43c9037",
+    "expected": "adb9df53ddb235f36003b9fe9a2b6a7af6e67edfe1b04ab46725f028a43c9037",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N29.reader.txt",
+    "sha256": "8afb871187283817fc93e23a30d7241690a63313ff4b0420a4182a19cea89d5c",
+    "expected": "8afb871187283817fc93e23a30d7241690a63313ff4b0420a4182a19cea89d5c",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N30.body",
+    "sha256": "e2854bcef643e538f5f20fae8adeb50e7797f8e3f029b2b91261ae6db2fc4332",
+    "expected": "e2854bcef643e538f5f20fae8adeb50e7797f8e3f029b2b91261ae6db2fc4332",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N30.reader.txt",
+    "sha256": "0e863593eb5720486533a0631f2ed927f809f47807bad68e41bea1e9935b5753",
+    "expected": "0e863593eb5720486533a0631f2ed927f809f47807bad68e41bea1e9935b5753",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N28.body",
+    "sha256": "e7151122a3db1d759f2cee5492704aab4b8026ac96d7abdae3ab4b81412bfe19",
+    "expected": "e7151122a3db1d759f2cee5492704aab4b8026ac96d7abdae3ab4b81412bfe19",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N28.reader.txt",
+    "sha256": "44307e2f75b5e8f97f1bf461a8800dd257ee10a3e74c69c99ccb2e653e4b2725",
+    "expected": "44307e2f75b5e8f97f1bf461a8800dd257ee10a3e74c69c99ccb2e653e4b2725",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N0.body",
+    "sha256": "ce6b48e278ba58046748bf1f6ac0d608007dd2b81e75ee4b0dfd7152eac467aa",
+    "expected": "ce6b48e278ba58046748bf1f6ac0d608007dd2b81e75ee4b0dfd7152eac467aa",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/N0.reader.txt",
+    "sha256": "39898c8ae5860f3678c70bcfacbb39f9559ffea6b23cd570eca97551417d5818",
+    "expected": "39898c8ae5860f3678c70bcfacbb39f9559ffea6b23cd570eca97551417d5818",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/HR.body",
+    "sha256": "8b3d7c4ac0957ee2d2d6f187a3edef2c09b7917c6e9ed430cace67105bfd1663",
+    "expected": "8b3d7c4ac0957ee2d2d6f187a3edef2c09b7917c6e9ed430cace67105bfd1663",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/HR.reader.txt",
+    "sha256": "ce23e36b30a8a76d4bf2866d4571717a4afd6a58c2f1917c557d8589e0defc19",
+    "expected": "ce23e36b30a8a76d4bf2866d4571717a4afd6a58c2f1917c557d8589e0defc19",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/HC.body",
+    "sha256": "7679b58714c3c4b52104a058962a4a4573cf85932fc809d0bac065997b6559c9",
+    "expected": "7679b58714c3c4b52104a058962a4a4573cf85932fc809d0bac065997b6559c9",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/HC.reader.txt",
+    "sha256": "dde91a76ad71482b525611b169c6872c619982d23dbc755d45ebcffc23ce4c33",
+    "expected": "dde91a76ad71482b525611b169c6872c619982d23dbc755d45ebcffc23ce4c33",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/S26.body",
+    "sha256": "0d4a785b7caffb70884e43dbe32693059b845946d79d582570716d49c909fdb1",
+    "expected": "0d4a785b7caffb70884e43dbe32693059b845946d79d582570716d49c909fdb1",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/S26.reader.txt",
+    "sha256": "4265ff9aaeb6f0f4856eca447935df1886fd841fe48eb926f5aa9aef0fc96e9b",
+    "expected": "4265ff9aaeb6f0f4856eca447935df1886fd841fe48eb926f5aa9aef0fc96e9b",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/E.body",
+    "sha256": "86b30e20f21c0e1bebee681905e94a64cd5033ae4bee9dc0e2efbcbea69a3598",
+    "expected": "86b30e20f21c0e1bebee681905e94a64cd5033ae4bee9dc0e2efbcbea69a3598",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/E.reader.txt",
+    "sha256": "15045f3b648fa02b620806f44c1eaaf48288cae7ef57527712c9822daea23e11",
+    "expected": "15045f3b648fa02b620806f44c1eaaf48288cae7ef57527712c9822daea23e11",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/HL.body",
+    "sha256": "df8d0ef1d23219114a45b9f135cee1229c7efb5d00d2b958f6134a2279feeaf7",
+    "expected": "df8d0ef1d23219114a45b9f135cee1229c7efb5d00d2b958f6134a2279feeaf7",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/HL.reader.txt",
+    "sha256": "6384db74eb90d6e60ef14d82d6a810178f6c6cf6d6fa0f19de9ae98b53ac4346",
+    "expected": "6384db74eb90d6e60ef14d82d6a810178f6c6cf6d6fa0f19de9ae98b53ac4346",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/DS.body",
+    "sha256": "2ce672a8917cc1325f0a1495efe5bfb509b12a89bafe92ac9855141a7ec20c6e",
+    "expected": "2ce672a8917cc1325f0a1495efe5bfb509b12a89bafe92ac9855141a7ec20c6e",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/root-navarra-pit/sources/DS.reader.txt",
+    "sha256": "a5f83dd8270e33cdbd6c8454a01146fbca3792cba162a192006e071ac2ad4c51",
+    "expected": "a5f83dd8270e33cdbd6c8454a01146fbca3792cba162a192006e071ac2ad4c51",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/5e033e9a0e183de4a2e9.body",
+    "sha256": "094224bb82fbd13c1a19b3e89c2f68a8e0cd073a4dc78c9bd2c06cf9635eafa0",
+    "expected": "094224bb82fbd13c1a19b3e89c2f68a8e0cd073a4dc78c9bd2c06cf9635eafa0",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/5e033e9a0e183de4a2e9.reader.txt",
+    "sha256": "46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b",
+    "expected": "46bcfeed76681ddcedfc95f981267a5d99f0c07ba2d98ddf83d76d94863d0e9b",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/5c13cb039e8290b41671.body",
+    "sha256": "a210d0c36a5a593eaf02e5a96be03b6c511a4461a83684027bccf48be734702c",
+    "expected": "a210d0c36a5a593eaf02e5a96be03b6c511a4461a83684027bccf48be734702c",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/5c13cb039e8290b41671.reader.txt",
+    "sha256": "00c733ee479c48f6f7072ce6a4705c50a93182849852d651249ecac92e86017f",
+    "expected": "00c733ee479c48f6f7072ce6a4705c50a93182849852d651249ecac92e86017f",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/navarra-OF40-actual-lex.body",
+    "sha256": "f67290c01aec54f827d9aef73843d75037ff814c9b249d86394f5901f70a3380",
+    "expected": "f67290c01aec54f827d9aef73843d75037ff814c9b249d86394f5901f70a3380",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/navarra-OF40-actual-lex.txt",
+    "sha256": "e7f1a5851b92be1f37f94bcb64dc31fcd5d8efffee7a195cdb526c958a8f2bbf",
+    "expected": "e7f1a5851b92be1f37f94bcb64dc31fcd5d8efffee7a195cdb526c958a8f2bbf",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/navarra-OF48-2011-actual-gazette.body",
+    "sha256": "0b15751144c69a6762bedfab9fcf1b05983e8b0b00f9cf0520864862df59f7a5",
+    "expected": "0b15751144c69a6762bedfab9fcf1b05983e8b0b00f9cf0520864862df59f7a5",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/navarra-OF48-2011-actual-gazette.txt",
+    "sha256": "a54345196736d02da3462e18a45bba249c46015e774c99feb205bf0b7265ac35",
+    "expected": "a54345196736d02da3462e18a45bba249c46015e774c99feb205bf0b7265ac35",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/navarra-OF23-2026.body",
+    "sha256": "f4e704b3342e082e79334a5cbff208891ec31a61fb87daf523d7cf930e64db44",
+    "expected": "f4e704b3342e082e79334a5cbff208891ec31a61fb87daf523d7cf930e64db44",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/navarra-OF23-2026.txt",
+    "sha256": "49d3035e39683f7d60812fec33cd446945fe6cc0c20e9171c2b79ea202a33d87",
+    "expected": "49d3035e39683f7d60812fec33cd446945fe6cc0c20e9171c2b79ea202a33d87",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/bizkaia-130-instructions.body",
+    "sha256": "b2a6abc30f68b27b1a22f4e2f2151bf48c0877fe5bf61a148d028b1d762c0069",
+    "expected": "b2a6abc30f68b27b1a22f4e2f2151bf48c0877fe5bf61a148d028b1d762c0069",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/bizkaia-130-instructions.txt",
+    "sha256": "838b6fe75183a3973ad43093e2e49ee3e0287f2eb1ed5254422706994e11d034",
+    "expected": "838b6fe75183a3973ad43093e2e49ee3e0287f2eb1ed5254422706994e11d034",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/bizkaia-130-actual-form.body",
+    "sha256": "bdcfd790df037b6b26b9fc2db9c164c5fd0e08b555e4cfef7d40d1daf8928e82",
+    "expected": "bdcfd790df037b6b26b9fc2db9c164c5fd0e08b555e4cfef7d40d1daf8928e82",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/bizkaia-130-actual-form.txt",
+    "sha256": "9add41f602195f4a44fcf9bb57a335d71e4c947384c3bfe77c53730d8cabe967",
+    "expected": "9add41f602195f4a44fcf9bb57a335d71e4c947384c3bfe77c53730d8cabe967",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/bizkaia-current-nonpositive.body",
+    "sha256": "ad1775701b0fdbd4282c3cc4589a76da30f9c97034fe746efd18b9faaf46f7b9",
+    "expected": "ad1775701b0fdbd4282c3cc4589a76da30f9c97034fe746efd18b9faaf46f7b9",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/bizkaia-current-nonpositive.txt",
+    "sha256": "40c199646f7bd204dc3f1b2d06f43d71eb4dcd3ff3cb0ad54c945381642e37a6",
+    "expected": "40c199646f7bd204dc3f1b2d06f43d71eb4dcd3ff3cb0ad54c945381642e37a6",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/bizkaia-current-primary.body",
+    "sha256": "4c96c53cdc4f0da56bb854463db5b71b98dfaaad46fa6682cf0c22425a0682d1",
+    "expected": "4c96c53cdc4f0da56bb854463db5b71b98dfaaad46fa6682cf0c22425a0682d1",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F04-foral-instalments/bizkaia-current-primary.txt",
+    "sha256": "1e51bd0b987f6361fdd204c0a6551471fbc326dd92602b0a052e21ba2c022d33",
+    "expected": "1e51bd0b987f6361fdd204c0a6551471fbc326dd92602b0a052e21ba2c022d33",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/N721-current.html",
+    "sha256": "c99fad187624124121fe44d08be0b2c862cf1f76d0cf9d5f3173100cc3855978",
+    "expected": "c99fad187624124121fe44d08be0b2c862cf1f76d0cf9d5f3173100cc3855978",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-foral-ordinary-crypto-source-review/sources/N721-current.reader.txt",
+    "sha256": "ee0290e755698634a257b12914bd4a474127040250bc638194250052753149cb",
+    "expected": "ee0290e755698634a257b12914bd4a474127040250bc638194250052753149cb",
+    "pass": true
+  },
+  {
+    "kind": "raw",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.body",
+    "sha256": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+    "expected": "195b97b2dd61300dd9e852d8d6ce74d8ff3486ad5a7543ea6d1e1b15ec6b656b",
+    "pass": true
+  },
+  {
+    "kind": "reader",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/0afeb58fb06a0e881aaf.reader.txt",
+    "sha256": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "expected": "acf6dbc703e183e6748c60e3418084a0ce577b3148682fa68fa595843e364bb5",
+    "pass": true
+  }
+]

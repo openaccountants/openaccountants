@@ -1,0 +1,337 @@
+[
+  {
+    "id": "tax",
+    "raw": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/tax.html",
+    "raw_sha256": "c89b4bd1c224eec5260575e26b000eb27e79420ecab708772e70a7baa3120c3c",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/tax.reader.txt",
+    "reader_sha256": "13ed8d751bd853cc7813713422f2e53b08f986b0a70d526c6496550c7baf945c",
+    "actual_quote_anchor_scopes": [
+      [
+        317,
+        336
+      ],
+      [
+        337,
+        352
+      ],
+      [
+        418,
+        421
+      ],
+      [
+        457,
+        457
+      ],
+      [
+        462,
+        502
+      ],
+      [
+        531,
+        541
+      ],
+      [
+        543,
+        574
+      ],
+      [
+        575,
+        577
+      ],
+      [
+        583,
+        586
+      ],
+      [
+        593,
+        601
+      ],
+      [
+        602,
+        624
+      ],
+      [
+        775,
+        777
+      ],
+      [
+        799,
+        804
+      ],
+      [
+        810,
+        812
+      ],
+      [
+        814,
+        816
+      ],
+      [
+        817,
+        819
+      ],
+      [
+        1057,
+        1058
+      ],
+      [
+        1063,
+        1064
+      ],
+      [
+        1071,
+        1071
+      ],
+      [
+        1088,
+        1090
+      ],
+      [
+        1108,
+        1109
+      ]
+    ],
+    "read_scope_note": "Generated exact quote anchors reviewed in ledger; complete listed source articles are locators, not an assertion of whole-law reading. New method full actual reads: tax35a LF583–586; group LF297–323; depreciation25–26 LF401–412; capital14–15 LF413–424; assessment5 LF322–325."
+  },
+  {
+    "id": "assessment",
+    "raw": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/assessment.html",
+    "raw_sha256": "274e5c894ae4a05b2373ee9858bf42c32ded6950faf5bf86bf2e7272eecc7d38",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/assessment.reader.txt",
+    "reader_sha256": "9dd3e1a5ad9388fb33b7a8533601fcc973faa5de69b7b173089295e3e20087f8",
+    "actual_quote_anchor_scopes": [
+      [
+        322,
+        326
+      ]
+    ],
+    "read_scope_note": "Generated exact quote anchors reviewed in ledger; complete listed source articles are locators, not an assertion of whole-law reading. New method full actual reads: tax35a LF583–586; group LF297–323; depreciation25–26 LF401–412; capital14–15 LF413–424; assessment5 LF322–325."
+  },
+  {
+    "id": "capital",
+    "raw": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/capital.html",
+    "raw_sha256": "e38f20d3725ef92a4d046be14a2e949502693d31b85c4fb75e7735fa573d1262",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/capital.reader.txt",
+    "reader_sha256": "285023242bd8432ab5ad3cd1fe1665ab5fd69f0a06a5cbb36c736180b528022c",
+    "actual_quote_anchor_scopes": [
+      [
+        309,
+        320
+      ],
+      [
+        346,
+        352
+      ],
+      [
+        353,
+        356
+      ],
+      [
+        357,
+        361
+      ],
+      [
+        362,
+        368
+      ],
+      [
+        369,
+        371
+      ],
+      [
+        372,
+        374
+      ],
+      [
+        375,
+        377
+      ],
+      [
+        378,
+        385
+      ],
+      [
+        413,
+        416
+      ],
+      [
+        417,
+        420
+      ],
+      [
+        421,
+        424
+      ],
+      [
+        430,
+        437
+      ],
+      [
+        438,
+        439
+      ]
+    ],
+    "read_scope_note": "Generated exact quote anchors reviewed in ledger; complete listed source articles are locators, not an assertion of whole-law reading. New method full actual reads: tax35a LF583–586; group LF297–323; depreciation25–26 LF401–412; capital14–15 LF413–424; assessment5 LF322–325."
+  },
+  {
+    "id": "depreciation",
+    "raw": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/depreciation.html",
+    "raw_sha256": "689e5c100bb0af72262b5b2f94d44adbacd1a130d0e157d6f409bc04d149ef6d",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/depreciation.reader.txt",
+    "reader_sha256": "2faa95d03cc9541d2989b66277d115d6f09112815d6223d94a20548944221599",
+    "actual_quote_anchor_scopes": [
+      [
+        304,
+        310
+      ],
+      [
+        311,
+        316
+      ],
+      [
+        317,
+        321
+      ],
+      [
+        322,
+        324
+      ],
+      [
+        325,
+        327
+      ],
+      [
+        328,
+        336
+      ],
+      [
+        340,
+        342
+      ],
+      [
+        343,
+        345
+      ],
+      [
+        352,
+        354
+      ],
+      [
+        355,
+        357
+      ],
+      [
+        358,
+        361
+      ],
+      [
+        362,
+        362
+      ],
+      [
+        363,
+        363
+      ],
+      [
+        364,
+        365
+      ],
+      [
+        381,
+        385
+      ],
+      [
+        389,
+        389
+      ],
+      [
+        391,
+        394
+      ],
+      [
+        395,
+        397
+      ],
+      [
+        398,
+        399
+      ],
+      [
+        401,
+        401
+      ],
+      [
+        402,
+        405
+      ],
+      [
+        406,
+        412
+      ],
+      [
+        413,
+        413
+      ],
+      [
+        424,
+        426
+      ]
+    ],
+    "read_scope_note": "Generated exact quote anchors reviewed in ledger; complete listed source articles are locators, not an assertion of whole-law reading. New method full actual reads: tax35a LF583–586; group LF297–323; depreciation25–26 LF401–412; capital14–15 LF413–424; assessment5 LF322–325."
+  },
+  {
+    "id": "group",
+    "raw": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/group.html",
+    "raw_sha256": "5805187f82228e0d7081e053913bef73cab44e965f589a239bc22fb8be7e746d",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/group.reader.txt",
+    "reader_sha256": "fc4012cdf76358c00a6d3c4ed519f5bba2912b7ef620c096776f28ebde106c0a",
+    "actual_quote_anchor_scopes": [
+      [
+        298,
+        299
+      ],
+      [
+        300,
+        300
+      ],
+      [
+        301,
+        302
+      ],
+      [
+        303,
+        306
+      ],
+      [
+        307,
+        308
+      ],
+      [
+        309,
+        318
+      ],
+      [
+        319,
+        319
+      ],
+      [
+        320,
+        320
+      ],
+      [
+        321,
+        321
+      ]
+    ],
+    "read_scope_note": "Generated exact quote anchors reviewed in ledger; complete listed source articles are locators, not an assertion of whole-law reading. New method full actual reads: tax35a LF583–586; group LF297–323; depreciation25–26 LF401–412; capital14–15 LF413–424; assessment5 LF322–325."
+  },
+  {
+    "id": "company",
+    "raw": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/company.html",
+    "raw_sha256": "cbe98e2377382138462fe6e24ee23d36e67f34a4218bae60f63bb9b59b868e8c",
+    "reader": "skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/ledgers/cit-evidence/company.reader.txt",
+    "reader_sha256": "d63b65071fe398af9cdc5408f2218413a72be8684470968b4b963759a0e6d74c",
+    "actual_quote_anchor_scopes": [],
+    "read_scope_note": "Generated exact quote anchors reviewed in ledger; complete listed source articles are locators, not an assertion of whole-law reading. New method full actual reads: tax35a LF583–586; group LF297–323; depreciation25–26 LF401–412; capital14–15 LF413–424; assessment5 LF322–325."
+  }
+]

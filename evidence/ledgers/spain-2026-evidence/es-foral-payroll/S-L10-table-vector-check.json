@@ -1,0 +1,21 @@
+{
+  "count": 158,
+  "exact_numeric_rows": 157,
+  "explicit_open_boundary_translation": [
+    {
+      "row": 160,
+      "guide": [
+        94750.0,
+        2.0,
+        5.0
+      ],
+      "quote": [
+        94750.01,
+        2.0,
+        5.0
+      ],
+      "disposition": "Guide says Above94750; statute prints94750.01 as next cent. Same open lower boundary on statedcent basis, not an incorrect amount."
+    }
+  ],
+  "unresolved": 0
+}

@@ -1,0 +1,1481 @@
+BOE.es - DOUE-L-2026-81651 Reglamento (UE) 2026/2359 del Parlamento Europeo y del Consejo, de 7 de octubre de 2026, por el que se modifican el Reglamento (CE) nº 883/2004, sobre la coordinación de los sistemas de seguridad social, y el Reglamento (CE) nº 987/2009, por el que se adoptan las normas de aplicación del Reglamento (CE) nº 883/2004. Agencia Estatal Boletín Oficial del Estado Ir a contenido Consultar el diario oficial BOE Idioma actual: Castellano / es
+Puede seleccionar otro idioma:
+es / Castellano ca / Català gl / Galego eu / Euskara va / Valencià en / English fr / Français Buscar Mi BOE Desconectado.Pulse para acceder al servicio 'Mi BOE' Menú Menú
+Diarios Oficiales
+BOE BORME Otros diarios oficiales
+Información Jurídica
+Todo el Derecho Biblioteca Jurídica Digital
+Otros servicios
+Notificaciones Edictos judiciales Portal de subastas Anunciantes Datos abiertos Está Vd. en Inicio Buscar Documento DOUE-L-2026-81651
+Documento DOUE-L-2026-81651
+Reglamento (UE) 2026/2359 del Parlamento Europeo y del Consejo, de 7 de octubre de 2026, por el que se modifican el Reglamento (CE) nº 883/2004, sobre la coordinación de los sistemas de seguridad social, y el Reglamento (CE) nº 987/2009, por el que se adoptan las normas de aplicación del Reglamento (CE) nº 883/2004.
+Publicado en: «DOUE» núm. 2359, de 27 de octubre de 2026, páginas 1 a 66 (66 págs.) Departamento: Unión Europea Referencia: DOUE-L-2026-81651 Otros formatos: PDF XML Texto
+TEXTO ORIGINAL
+EL PARLAMENTO EUROPEO Y EL CONSEJO DE LA UNIÓN EUROPEA,
+Visto el Tratado de Funcionamiento de la Unión Europea, y en particular su artículo 48,
+Vista la propuesta de la Comisión Europea,
+Previa transmisión del proyecto de acto legislativo a los Parlamentos nacionales,
+Visto el dictamen del Comité Económico y Social Europeo (1),
+Visto el dictamen del Comité de las Regiones (2),
+De conformidad con el procedimiento legislativo ordinario (3),
+Considerando lo siguiente:
+(1)
+El 1 de mayo de 2010 empezó a aplicarse un sistema modernizado de coordinación de la seguridad social sobre la base de los Reglamentos (CE) n.o 883/2004 (4) y (CE) n.o 987/2009 (5) del Parlamento Europeo y del Consejo.
+(2)
+Los Reglamentos (CE) n.o 883/2004 y (CE) n.o 987/2009 fueron modificados por el Reglamento (UE) n.o 465/2012 del Parlamento Europeo y del Consejo (6), en particular en el ámbito de la determinación de la legislación aplicable y de las prestaciones por desempleo, así como para efectuar adaptaciones técnicas en las referencias a la legislación nacional que figuran en los anexos del Reglamento (CE) n.o 883/2004.
+(3)
+Según se ha puesto de manifiesto en las evaluaciones y los debates en la Comisión Administrativa de Coordinación de los Sistemas de Seguridad Social, (en lo sucesivo, «Comisión Administrativa»), el proceso de modernización debe continuar en los ámbitos de las prestaciones por cuidados de larga duración, las prestaciones por desempleo y las prestaciones familiares, a fin de que las normas relativas a estas prestaciones se apliquen de forma más fácil, más clara y más justa mediante el intercambio de experiencias y de las mejores prácticas administrativas. Para facilitar estos intercambios debe fomentarse también el uso de las nuevas tecnologías.
+(4)
+Continúa siendo esencial que las normas de coordinación sigan el ritmo de la evolución del contexto social y jurídico en el que funcionan, y faciliten aún más el ejercicio de los derechos de los ciudadanos y garanticen la claridad jurídica, una distribución justa y equitativa de la carga financiera entre las instituciones de los Estados miembros implicados, así como la simplificación administrativa y medidas para garantizar el cumplimiento de las normas.
+(5)
+Las prestaciones por cuidados de larga duración hasta ahora no se han incluido explícitamente en el ámbito de aplicación material del Reglamento (CE) n.o 883/2004, sino que se han coordinado, en principio, con arreglo a las normas aplicables a las prestaciones de enfermedad, lo que genera inseguridad jurídica tanto para las instituciones como para las personas que solicitan prestaciones por cuidados de larga duración. Es necesario desarrollar en dicho Reglamento un marco jurídico estable que sea adecuado para las prestaciones por cuidados de larga duración, que siga coordinándolas como prestaciones de enfermedad por regla general e incluya una definición clara y una lista de tales prestaciones.
+(6)
+En el ámbito de las prestaciones por desempleo, todos los Estados miembros deben aplicar de manera uniforme las normas relativas a la totalización de los períodos de seguro.
+(7)
+A fin de garantizar un vínculo real entre la persona desempleada y el mercado laboral del Estado miembro que ofrece las prestaciones por desempleo, las normas sobre la totalización de períodos a los efectos de conceder el derecho a prestaciones por desempleo deben estar supeditadas, con la excepción de los trabajadores transfronterizos en situación de desempleo total a los que se hace referencia en el artículo 65, apartados 2, 3 y 5, del Reglamento (CE) n.o 883/2004, a la condición de que la persona asegurada haya cumplido en último lugar un período ininterrumpido de al menos un mes de seguro, actividad por cuenta ajena o actividad por cuenta propia en ese Estado miembro y, por tanto, haya contribuido a la financiación del régimen de prestaciones por desempleo de dicho Estado miembro durante un período predefinido. En caso de que no se haya cumplido ese período en el Estado miembro en que, en último lugar, haya estado asegurada o haya ejercido una actividad por cuenta ajena o una actividad por cuenta propia, el anterior Estado miembro en el que la persona haya cumplido un período de seguro, actividad por cuenta ajena o actividad por cuenta propia debe pasar a ser competente, siempre que la persona haya cumplido un período ininterrumpido de al menos un mes en dicho Estado miembro. La inscripción en los servicios de empleo del Estado miembro en el que haya estado asegurada en último lugar debe tener el mismo efecto que la inscripción en los servicios de empleo del Estado miembro en el que la persona desempleada había estado asegurada anteriormente. Cuando la persona no haya cumplido el período exigido en ninguno de esos Estados miembros, debe pasar a ser competente el Estado miembro en que, en último lugar, haya estado asegurada o haya ejercido una actividad por cuenta ajena o una actividad por cuenta propia.
+(8)
+A fin de dar más oportunidades a las personas desempleadas que se desplazan a otro Estado miembro en busca de trabajo y aumentar sus posibilidades de reintegrarse en el mercado laboral, así como para abordar los desajustes de las capacidades a cada lado de la frontera, los Estados miembros deben poder decidir hacer uso de la posibilidad de prolongar el período de exportación de prestaciones por desempleo hasta el final del derecho de la persona a las prestaciones.
+(9)
+Las personas desempleadas que durante su actividad más reciente hayan residido en un Estado miembro distinto del Estado miembro competente y sigan residiendo en ese otro Estado miembro o regresen a él deben recibir prestaciones con arreglo a la legislación del Estado miembro competente, a condición de que hayan cumplido en el Estado miembro de su actividad más reciente, períodos ininterrumpidos de seguro, actividad por cuenta ajena o actividad por cuenta propia de al menos veintidós semanas («período de afiliación»). A efectos del cálculo del período de afiliación, solo deben tenerse en cuenta los períodos ininterrumpidos de seguro, actividad por cuenta ajena o actividad por cuenta propia cumplidos con arreglo a la legislación del Estado miembro competente. A reserva del cumplimiento del período de afiliación, corresponde al Estado miembro competente valorar si la persona reúne las condiciones establecidas en su legislación nacional para tener derecho a las prestaciones por desempleo como si residiera en ese Estado miembro. La persona debe cumplir las obligaciones establecidas en la legislación aplicable del Estado miembro competente. Si la persona decide ponerse a disposición de los servicios de empleo de otro Estado miembro para buscar trabajo en él, debe cumplir las condiciones establecidas en la legislación de ese otro Estado miembro y someterse al procedimiento de control organizado en él. La institución del Estado miembro al que se haya trasladado la persona desempleada debe proporcionar mensualmente al Estado miembro competente la información pertinente sobre el seguimiento de la situación de esa persona, en particular, si aún se encuentra inscrita en los servicios de empleo y si cumple con los procedimientos de control organizados y los procedimientos de activación o de colocación.
+(10)
+En el marco de la aplicación de los Reglamentos (CE) n.o 883/2004 y (CE) n.o 987/2009, y de conformidad con el deber de información y cooperación mutuas, las instituciones de los Estados miembros deben, entre otras cosas, intercambiar los datos necesarios para detectar cambios en las circunstancias pertinentes para los derechos y obligaciones de los interesados en virtud del Reglamento (CE) n.o 883/2004. Los Estados miembros podrían decidir hacer un mayor uso de los medios electrónicos para mejorar el cumplimiento del deber de información y cooperación mutuas.
+(11)
+El mercado laboral de Luxemburgo se caracteriza por un conjunto de factores específicos. Los trabajadores fronterizos representan una parte muy importante del total de la población activa en Luxemburgo y superan con mucho el porcentaje de trabajadores fronterizos en la población activa de cualquier otro Estado miembro. Se espera que la introducción de nuevas normas relativas a los trabajadores fronterizos y transfronterizos suponga una gran carga administrativa para el servicio público de empleo de Luxemburgo, debido al considerable aumento del número de trabajadores fronterizos para los que dicho servicio se convertirá en la institución competente. Por lo tanto, se considera adecuado conceder a Luxemburgo un período transitorio adicional durante el que los artículos 65 y 86 del Reglamento (CE) n.o 883/2004 y los artículos 56 y 70 y el anexo 5 del Reglamento (CE) n.o 987/2009, en la versión en vigor antes del 1 de noviembre de 2026, seguirán aplicándose al objeto de permitir que disponga del tiempo requerido para adoptar todas las medidas preparatorias necesarias de modo que haya una transición armoniosa entre el marco reglamentario actual y las nuevas normas y para ajustar su sistema de seguridad social. Durante ese período transitorio, el artículo 56 bis del Reglamento (CE) n.o 987/2009, introducido por el presente Reglamento, no debe aplicarse a Luxemburgo.
+(12)
+A la luz de la sentencia del Tribunal de Justicia de la Unión Europea en el asunto C-347/12, Wiering (7), a efectos del cálculo del complemento diferencial, existen dos categorías de prestaciones familiares de la misma naturaleza, a saber, las prestaciones familiares en metálico destinadas principalmente a sustituir los ingresos no percibidos debido a los períodos de educación de los hijos, y todas las demás prestaciones familiares .
+(13)
+Las prestaciones familiares en metálico destinadas principalmente a sustituir parte o la totalidad de los ingresos no percibidos o que la persona no pueda percibir debido a los períodos de educación de los hijos están concebidas para satisfacer las necesidades individuales o personales del progenitor sujeto a la legislación del Estado miembro competente y, por lo tanto, se distinguen de otras prestaciones familiares en que están destinadas a compensar a un progenitor por la pérdida de ingresos o de retribuciones durante el tiempo dedicado a la educación de un hijo, y no meramente a cubrir gastos generales de la familia.
+(14)
+A fin de lograr una actualización oportuna de los Reglamentos (CE) n.o 883/2004 y (CE) n.o 987/2009 que incorpore la evolución a nivel nacional, deben delegarse en la Comisión los poderes para adoptar actos con arreglo al artículo 290 del Tratado de Funcionamiento de la Unión Europea por lo que respecta a la modificación de los anexos del Reglamento (CE) n.o 883/2004 y el Reglamento (CE) n.o 987/2009. Reviste especial importancia que la Comisión lleve a cabo las consultas oportunas durante la fase preparatoria, en particular con expertos, y que esas consultas se realicen de conformidad con los principios establecidos en el Acuerdo interinstitucional de 13 de abril de 2016 sobre la mejora de la legislación (8). En particular, a fin de garantizar una participación equitativa en la preparación de los actos delegados, el Parlamento Europeo y el Consejo reciben toda la documentación al mismo tiempo que los expertos de los Estados miembros, y sus expertos tienen acceso sistemáticamente a las reuniones de los grupos de expertos de la Comisión que se ocupen de la preparación de actos delegados.
+(15)
+Con el fin de apoyar a los Estados miembros en sus esfuerzos por combatir el fraude y los errores en la aplicación de las normas de coordinación, es necesario establecer una base jurídica adicional para el tratamiento de los datos personales de las personas a quienes se aplican los Reglamentos (CE) n.o 883/2004 y (CE) n.o 987/2009, de conformidad con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (9). Esto permitiría a un Estado miembro comparar los datos que obran en poder de sus instituciones competentes con los que obran en poder de otro Estado miembro, a fin de detectar errores o incoherencias que exijan seguir investigando.
+(16)
+A fin de agilizar el procedimiento de verificación y retirada de documentos en casos de fraude o error, es necesario reforzar la colaboración y el intercambio de información entre la institución emisora y la institución que solicita la retirada. En caso de duda sobre la validez del documento o sobre la exactitud de los justificantes , redunda en interés de los Estados miembros y de los interesados que las instituciones afectadas lleguen a un acuerdo en un plazo razonable.
+(17)
+Debe existir un procedimiento detallado de cooperación en caso de duda sobre la validez de los documentos relativos a la legislación de seguridad social aplicable al titular de esos documentos. También es necesario establecer normas adicionales sobre la retroactividad en caso de retirada o rectificación de un documento. Esto incluye las situaciones en las que los Estados miembros afectados deban considerar la celebración de un acuerdo sobre la base del artículo 16 del Reglamento (CE) n.o 883/2004 para parte o la totalidad de los períodos cubiertos por el documento.
+(18)
+Para garantizar una aplicación eficaz y eficiente de las normas de coordinación, es necesario aclarar las normas para determinar la legislación aplicable a los trabajadores que ejercen su actividad económica en dos o más Estados miembros, a fin de lograr una mayor asimilación con las condiciones aplicables a las personas enviadas para ejercer una actividad económica en un único Estado miembro.
+(19)
+El vínculo entre el sistema de seguridad social del Estado miembro de origen de los empleados enviados a otro Estado miembro debe reforzarse mediante el establecimiento de un período mínimo de afiliación previa.
+(20)
+A fin de garantizar condiciones uniformes de ejecución de los artículos 12 y 13 del Reglamento (CE) n.o 883/2004 y de las normas en materia de cobro previstas en el Reglamento (CE) n.o 987/2009, deben conferirse a la Comisión competencias de ejecución. Dichas competencias deben ejercerse de conformidad con el Reglamento (UE) n.o 182/2011 del Parlamento Europeo y del Consejo (10).
+(21)
+En caso de que un Estado miembro no pueda notificar el coste medio anual por persona en cada categoría de edad con respecto a un año de referencia dentro del plazo exigido, el Estado miembro debe poder presentar solicitudes con respecto a ese año sobre la base de los costes medios anuales correspondientes al año inmediatamente anterior que se hayan publicado en el Diario Oficial de la Unión Europea. El reembolso de los gastos de las prestaciones en especie sobre la base de importes a tanto alzado debe aproximarse lo más posible a los gastos reales. Toda excepción a la obligación de notificación debe estar sujeta a la autorización de la Comisión Administrativa y no deben concederse en dos años consecutivos.
+(22)
+El procedimiento de compensación que se aplica en las situaciones en las que la legislación de un Estado miembro se haya aplicado provisionalmente de conformidad con el artículo 6 del Reglamento (CE) n.o 987/2009 debe ampliarse a los casos en los que una institución no sea competente para conceder prestaciones o recibir cotizaciones. Además, en ese contexto, es necesario que en el Derecho nacional no se apliquen prescripciones divergentes, a fin de garantizar que la liquidación retroactiva entre las instituciones no se vea obstaculizada por ningún plazo establecido en la legislación nacional que sea incompatible con el plazo de prescripción uniforme de tres años, contado retrospectivamente a partir del inicio del procedimiento de diálogo al que se hace referencia en el artículo 5, apartados 3 y 4, y en el artículo 6, apartado 3, de dicho Reglamento, a fin de garantizar que no fracase el procedimiento de resolución de litigios.
+(23)
+El cobro efectivo es un medio para prevenir y combatir fraudes y abusos, así como para garantizar el buen funcionamiento de los regímenes de seguridad social. Los procedimientos de cobro establecidos en el título IV, capítulo III, del Reglamento (CE) n.o 987/2009 se basan en los procedimientos y normas establecidos en la Directiva 2008/55/CE del Consejo (11). Dicha Directiva fue sustituida por la Directiva 2010/24/UE del Consejo (12), que introdujo un instrumento uniforme que debe utilizarse para la aplicación de las medidas de ejecución, así como un modelo normalizado para la notificación de instrumentos y medidas en relación con los créditos. En una revisión por parte de la Comisión Administrativa, a la mayoría de los Estados miembros les resultó conveniente utilizar un instrumento uniforme de ejecución similar al previsto en la Directiva 2010/24/UE. Por tanto, es necesario que las normas en materia de asistencia mutua en el cobro de créditos de la seguridad social reflejen las nuevas medidas de la Directiva 2010/24/UE para garantizar un cobro más eficaz y un buen funcionamiento de las normas de coordinación.
+(24)
+Al objeto de tener en cuenta los cambios jurídicos introducidos en algunos Estados miembros y en el Reino Unido (13) y garantizar la seguridad jurídica de las partes interesadas, deben modificarse los anexos del Reglamento (CE) n.o 883/2004 y del Reglamento (CE) n.o 987/2009.
+(25)
+El Supervisor Europeo de Protección de Datos, al que se consultó de conformidad con el artículo 28, apartado 2, del Reglamento (CE) n.o 45/2001del Parlamento Europeo y del Consejo (14), emitió su dictamen el 8 de mayo de 2017.
+(26)
+Aunque algunas de las disposiciones del presente Reglamento pueden aplicarse de inmediato ya que no precisan ejecución, conviene fijar una fecha posterior de aplicación para determinadas disposiciones del presente Reglamento al objeto de proporcionar a los Estados miembros un tiempo suficiente para su ejecución.
+HAN ADOPTADO EL PRESENTE REGLAMENTO:
+Artículo 1
+El Reglamento (CE) n.o 883/2004 se modifica como sigue:
+1)
+Se inserta el considerando siguiente:
+«(2 bis)
+Los artículos 45 y 48 del Tratado de Funcionamiento de la Unión Europea (TFUE) garantizan la libre circulación de los trabajadores, que supone la abolición de toda discriminación por razón de la nacionalidad, y contemplan la adopción de las medidas necesarias en materia de seguridad social para garantizar dicha libertad. Además, de conformidad con el artículo 21 del TFUE, todo ciudadano de la Unión tiene derecho a circular y residir libremente en el territorio de los Estados miembros, con sujeción a las limitaciones y condiciones previstas en los Tratados y en las disposiciones adoptadas para su aplicación.».
+2)
+El considerando 5 se sustituye por el texto siguiente:
+«(5)
+En el marco de dicha coordinación, es preciso garantizar a los interesados la igualdad de trato dentro de la Unión conforme a las diversas legislaciones nacionales.
+(5 bis)
+En aplicación del principio de igualdad de trato establecido en el presente Reglamento, debe respetarse la jurisprudencia del Tribunal de Justicia. El Tribunal de Justicia ha interpretado dicho principio y la relación entre el presente Reglamento y, entre otros actos, la Directiva 2004/38/CE en sus sentencias en los asuntos C-140/12, Brey (*1), C-333/13, Dano (*2), C-67/14 Alimanovic (*3), C-299/14, García-Nieto (*4) y C-308/14, Comisión/Reino Unido (*5).
+(5 ter)
+Los Estados miembros deben garantizar que a los ciudadanos de la Unión que se desplazan y que no ejercen una actividad económica no se les impida cumplir la condición de disponer de un seguro de enfermedad que cubra todos los riesgos en el Estado miembro de acogida, conforme a lo dispuesto en la Directiva 2004/38/CE. Debe permitírseles a tales ciudadanos, de conformidad con el Derecho y las prácticas nacionales, contribuir de manera proporcionada a un régimen para la cobertura del seguro de enfermedad que cubra todos los riesgos en caso de que no puedan cumplir de otra forma los criterios pertinentes para acceder a una cobertura total de seguro de enfermedad en el Estado miembro donde residen habitualmente.
+(*1) Sentencia del Tribunal de Justicia de 19 de septiembre de 2013, Brey, C-140/12, ECLI:EU:C:2013:565."
+(*2) Sentencia del Tribunal de Justicia de 8 de noviembre de 2014, Dano, C-333/13, ECLI:EU:C:2014:2358."
+(*3) Sentencia del Tribunal de Justicia de 15 de septiembre de 2015, Alimanovic, C-67/14, ECLI:EU:C:2015:597."
+(*4) Sentencia del Tribunal de Justicia de 25 de febrero de 2016, García-Nieto, C-299/14, ECLI:EU:C:2016:114."
+(*5) Sentencia del Tribunal de Justicia de 14 de junio de 2016, Comisión/Reino Unido, C-308/14, ECLI:EU:C:2016:436.»."
+3)
+El considerando 18 ter se sustituye por el texto siguiente:
+«(18 ter)
+En el anexo III, subparte FTL, del Reglamento (UE) n.o 965/2012 (*6), el concepto de “base” para los miembros de la tripulación de vuelo o de cabina se define como el lugar asignado por el operador a cada miembro de la tripulación, en el cual habitualmente este comienza y termina un período de actividad o una serie de períodos de actividad y en el que, en condiciones normales, el operador no se responsabiliza de su alojamiento.
+(*6) Reglamento (UE) n.o 965/2012 de la Comisión, de 5 de octubre de 2012, por el que se establecen requisitos técnicos y procedimientos administrativos en relación con las operaciones aéreas en virtud del Reglamento (CE) n.o 216/2008 del Parlamento Europeo y del Consejo (DO L 296 de 25.10.2012, p. 1, ELI: http://data.europa.eu/eli/reg/2012/965/oj).»."
+4)
+El considerando 24 se sustituye por el texto siguiente:
+«(24)
+En consonancia con la jurisprudencia del Tribunal de Justicia, las prestaciones por cuidados de larga duración para las personas aseguradas y los miembros de sus familias deben seguir estando, en principio, coordinadas con arreglo a las normas aplicables a las prestaciones de enfermedad. No obstante, esas normas deben tener en cuenta el carácter específico de las prestaciones por cuidados de larga duración. También es necesario establecer disposiciones específicas en caso de acumulación de prestaciones por cuidados de larga duración en especie y en metálico.
+(24 bis)
+Las prestaciones por cuidados de larga duración se refieren únicamente a las prestaciones cuya finalidad principal es satisfacer las necesidades de cuidados de una persona que, por causa de una limitación debida, por ejemplo, a su edad avanzada, a una discapacidad o a una enfermedad, precisa asistencia considerable por parte de otros para poder realizar actividades esenciales de la vida cotidiana durante un período prolongado. Por otra parte, las prestaciones por cuidados de larga duración se refieren únicamente a aquellas que pueden considerarse prestaciones de seguridad social en el sentido del presente Reglamento. En consonancia con la jurisprudencia del Tribunal de Justicia, por ejemplo en el asunto C-433/13, Comisión/República Eslovaca (*7), las prestaciones de seguridad social son prestaciones concedidas al margen de toda apreciación individual o discrecional de las necesidades personales de sus beneficiarios, en función de una situación legalmente definida. Por tanto, las prestaciones por cuidados de larga duración deben interpretarse en consecuencia. En particular, las prestaciones por cuidados de larga duración no deben incluir la asistencia médica o social. Las prestaciones concedidas sobre una base discrecional, después de una apreciación individual de las necesidades personales del solicitante, no se consideran prestaciones por cuidados de larga duración a los efectos del presente Reglamento.
+(*7) Sentencia del Tribunal de Justicia de 16 de septiembre de 2015, Comisión/República Eslovaca, C-433/13, ECLI:EU:C:2015:602.»."
+5)
+Se insertan los considerandos siguientes:
+«(32 bis)
+Corresponde a los Estados miembros decidir si prorrogan el período de seis meses previsto en el artículo 64, apartado 1, letra c), del presente Reglamento, de conformidad con el Derecho de la Unión, en particular la sentencia del Tribunal de Justicia en el asunto C-551/16, Klein Schiphorst (*8).
+(32 ter)
+El artículo 45 del TFUE garantiza la libertad de circulación de los trabajadores dentro de la Unión y prohíbe toda discriminación por razón de la nacionalidad entre los trabajadores de los Estados miembros con respecto al empleo, entre otros aspectos. En virtud del Reglamento (UE) n.o 492/2011 del Parlamento Europeo y del Consejo (*9), los trabajadores, fronterizos, también se han de beneficiar indistintamente de esos derechos fundamentales, y el artículo 5 de dicho Reglamento establece que un nacional de un Estado miembro que busque un empleo en el territorio de otro Estado miembro ha de recibir allí la misma asistencia que sus oficinas de empleo concedan a sus propios nacionales que busquen empleo.
+(32 quater)
+La Decisión n.o 573/2014/UE del Parlamento Europeo y del Consejo (*10) crea una Red de la Unión de Servicios Públicos de Empleo (SPE) a con el objetivo de fomentar la cooperación entre los Estados miembros en materia de empleo, dentro de los ámbitos de responsabilidad de los SPE, lo que incluye respaldando una mayor movilidad voluntaria geográfica y profesional de manera equitativa para atender a las necesidades específicas del mercado de trabajo.
+(*8) Sentencia del Tribunal de Justicia de 21 de marzo de 2018, J. Klein Schiphorst, C-551/16, ECLI:EU:C:2018:200."
+(*9) Reglamento (UE) n.o 492/2011 del Parlamento Europeo y del Consejo, de 5 de abril de 2011, relativo a la libre circulación de los trabajadores dentro de la Unión (DO L 141 de 27.5.2011, p. 1, ELI: http://data.europa.eu/eli/reg/2011/492/oj)."
+(*10) Decisión n.o 573/2014/UE del Parlamento Europeo y del Consejo, de 15 de mayo de 2014, sobre una mayor cooperación entre los servicios públicos de empleo (SPE) (DO L 159 de 28.5.2014, p. 32, ELI: http://data.europa.eu/eli/dec/2014/573(2)/oj).»."
+6)
+Se insertan los considerandos siguientes:
+«(35 bis)
+A efectos del cálculo del complemento diferencial, el presente Reglamento tiene en cuenta la sentencia del Tribunal de Justicia en el asunto C-347/12, Wiering (*11), y establece al mismo tiempo las aclaraciones y simplificaciones necesarias. Teniendo en cuenta la naturaleza particular de las diferentes prestaciones familiares de los Estados miembros, deben distinguirse dos categorías de prestaciones familiares de acuerdo con su finalidad principal, sus objetivos y la base con arreglo a la cual se conceden.
+(35 ter)
+Las prestaciones familiares en metálico destinadas principalmente a sustituir a los ingresos no percibidos, en parte o en su totalidad, o a los ingresos que las personas no puedan percibir por dedicarse a la educación de los hijos pueden distinguirse de otras prestaciones familiares destinadas a hacer frente a los gastos familiares. Dado que estas prestaciones pueden considerarse como derechos individuales exclusivos del progenitor sujeto a la legislación del Estado miembro competente, debe ser posible reservarlas exclusivamente para el progenitor de que se trate. Dichas prestaciones individuales deben figurar en la lista del anexo XIII, parte I, del presente Reglamento. El Estado miembro con competencias secundarias debe poder decidir no aplicar las normas de prioridad en caso de acumulación de derechos a prestaciones familiares en virtud de la legislación del Estado miembro competente y de la legislación del Estado miembro de residencia de los miembros de la familia a tales prestaciones. En caso de que un Estado miembro no aplique las normas de prioridad, ha de hacerlo de manera coherente con respecto a todas las personas que tienen derecho en una situación análoga y ello debe constar en la lista del anexo XIII, parte II.
+(35 quater)
+El presente Reglamento tiene en cuenta, cuando proceda, el Reglamento (CE) n.o 4/2009 del Consejo (*12).
+(*11) Sentencia del Tribunal de Justicia de 13 de junio de 2014, Wiering, C-347/12, ECLI:EU:C:2014:300."
+(*12) Reglamento (CE) n.o 4/2009 del Consejo, de 18 de diciembre de 2008, relativo a la competencia, la ley aplicable, el reconocimiento y la ejecución de las resoluciones y la cooperación en materia de obligaciones de alimentos (DO L 7 de 10.1.2009, p. 1, ELI: http://data.europa.eu/eli/reg/2009/4(1)/oj).»."
+7)
+Se inserta el considerando siguiente:
+«(39 bis)
+El acervo pertinente de la Unión en materia de protección de datos, en particular el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (*13), se aplica al tratamiento de datos personales con arreglo al presente Reglamento.
+(*13) Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos) (DO L 119 de 4.5.2016, p. 1, ELI: http://data.europa.eu/eli/reg/2016/679/oj).»."
+8)
+Se insertan los considerandos siguientes:
+«(40 bis)
+De conformidad con los principios establecidos en el artículo 6 del Reglamento (UE) 2018/1724 del Parlamento Europeo y del Consejo (*14), los Estados miembros han de garantizar que los empleadores o los interesados, a reserva del establecimiento de los procedimientos correspondientes, puedan acceder a una solicitud de determinación de la legislación aplicable en materia de seguridad social, y completarla, íntegramente en línea. Un procedimiento íntegramente en línea incluye un acuse de recibo automático, a menos que el resultado del procedimiento se entregue inmediatamente. El procedimiento debe ser fácil de utilizar. El presente Reglamento exige que los Estados miembros mejoren progresivamente su uso de las nuevas tecnologías para el intercambio, el acceso y el tratamiento de los datos necesarios para aplicar las normas de coordinación de la seguridad social. Esas normas incluyen los procedimientos a que se refieren los artículos 15, 16 y 19 del Reglamento (CE) n.o 987/2009.
+(40 ter)
+A la luz del objetivo de la legislación de coordinación de la seguridad social en la Unión, si bien los Estados miembros tienen la responsabilidad de cumplir las obligaciones derivadas del Derecho de la Unión en los ámbitos regulados por el presente Reglamento y por el Reglamento (CE) n.o 987/2009, las posibles medidas contra el incumplimiento de dichas obligaciones no deben obstaculizar el ejercicio de la libre circulación dentro de la Unión. En particular, las medidas para hacer frente al incumplimiento de las obligaciones especificadas en el artículo 15, apartado 1, del Reglamento (CE) n.o 987/2009, que exigen la notificación a la institución competente del Estado miembro cuya legislación sea aplicable antes del inicio de una actividad en otro Estado miembro, y la solicitud del certificado a que se refiere el artículo 19, apartado 2, del Reglamento (CE) n.o 987/2009, no deben dar lugar a restricciones injustificadas y desproporcionadas del ejercicio de la libre circulación por parte de los interesados. La falta de cumplimiento de dichas obligaciones no debe dar lugar automáticamente a un cambio de la legislación nacional aplicable, que debe determinarse de conformidad con el título II del presente Reglamento. Además, esas obligaciones deben interpretarse y aplicarse de manera coherente con la jurisprudencia consolidada del Tribunal de Justicia relativa a la certificación de la legislación aplicable, que suele acreditarse mediante la expedición de un certificado denominado “documento portátil A1” (DP A1), y su predecesor, el certificado E-101.
+(40 quater)
+Para garantizar que las normas de coordinación de la seguridad social sigan siendo adecuadas para su finalidad, es importante tener en cuenta el progreso tecnológico y los beneficios de la digitalización, en particular a la hora de racionalizar y simplificar el intercambio de información entre las instituciones competentes. Los avances tecnológicos en la coordinación de la seguridad social, como un sistema europeo de intercambio electrónico de información sobre seguridad social plenamente implantado y operativo, pueden contribuir a simplificar el proceso y el cumplimiento del artículo 15 del Reglamento (CE) n.o 987/2009. La digitalización del proceso de solicitud y recepción de certificados de seguridad social, incluido el relativo a la legislación aplicable, será otro paso importante hacia una solución que permita la verificación en tiempo real de dichos certificados a través de las fronteras, lo que permitirá confirmar rápidamente su validez. La Comisión y los Estados miembros están colaborando de forma estrecha con miras a avanzar en la digitalización de estas interacciones entre las personas y los organismos públicos, por ejemplo, a través de la iniciativa de la tarjeta europea de seguridad social. Las carteras europeas de identidad digital establecidas por el Reglamento (UE) 2024/1183 del Parlamento Europeo y del Consejo (*15) pueden convertirse en un sistema digital que facilite una identificación y verificación seguras y fáciles de usar a través de las fronteras.
+(40 quinquies)
+Los Estados miembros deben seguir invirtiendo en la digitalización de sus sistemas de seguridad social, según proceda, entre otras cosas con vistas a garantizar una experiencia digital fluida para los ciudadanos y las empresas que se desplazan. A tal fin, podrían utilizar los instrumentos de financiación de la Unión disponibles. Cuando proceda, dicha financiación podría movilizarse para apoyar las reformas pertinentes a nivel nacional que resulten necesarias para promover la correcta aplicación del presente Reglamento y del Reglamento (CE) n.o 987/2009y para combatir el fraude y el error, también mediante la mejora de la recopilación de datos y la presentación de informes.
+(40 sexies)
+El objetivo de la Autoridad Laboral Europea (ALE) es, entre otros, ayudar a los Estados miembros y a la Comisión en la aplicación y cumplimiento efectivos del Derecho de la Unión en materia de movilidad laboral en toda la Unión y la coordinación de los sistemas de seguridad social dentro de la Unión, contribuyendo así, en el marco de su mandato, a garantizar una movilidad laboral equitativa en toda la Unión. De conformidad con el Reglamento (UE) 2019/1149 del Parlamento Europeo y del Consejo (*16), la ALE facilita y mejora la cooperación entre los Estados miembros, también facilitando las inspecciones concertadas y conjuntas, que también podrían abarcar el cumplimiento de la obligación de notificación y la detección de abusos en relación con las exenciones de dicha obligación, y facilitando la cooperación y la aceleración del intercambio de información entre los Estados miembros. La ALE promueve el posible uso de mecanismos de intercambio electrónicos y bases de datos entre los Estados miembros para facilitar el acceso a los datos en tiempo real y detectar el fraude, y puede sugerir posibles mejoras en el uso de dichos mecanismos y bases de datos.
+(*14) Reglamento (UE) 2018/1724 del Parlamento Europeo y del Consejo, de 2 de octubre de 2018, relativo a la creación de una pasarela digital única de acceso a información, procedimientos y servicios de asistencia y resolución de problemas y por el que se modifica el Reglamento (UE) n.o 1024/2012 (DO L 295 de 21.11.2018, p. 1), ELI: http://data.europa.eu/eli/reg/2018/1724/oj)."
+(*15) Reglamento (UE) 2024/1183 del Parlamento Europeo y del Consejo, de 11 de abril de 2024, por el que se modifica el Reglamento (UE) n.o 910/2014 en lo que respecta al establecimiento del marco europeo de identidad digital (DO L, 2024/1183, 30.4.2024, ELI: http://data.europa.eu/eli/reg/2024/1183/oj)."
+(*16) Reglamento (UE) 2019/1149 del Parlamento Europeo y del Consejo, de 20 de junio de 2019, por el que se crea la Autoridad Laboral Europea, se modifican los Reglamentos (CE) n.o 883/2004, (UE) n.o 492/2011 y (UE) 2016/589 y se deroga la Decisión (UE) 2016/344 (DO L 186 de 11.7.2019, p. 21, ELI: http://data.europa.eu/eli/reg/2019/1149/oj).»."
+9)
+Se inserta el considerando siguiente:
+«(46)
+El presente Reglamento respeta los derechos fundamentales y observa los principios reconocidos por la Carta de los Derechos Fundamentales de la Unión Europea y el Convenio Europeo de Derechos Humanos, y debe aplicarse con arreglo a dichos derechos y principios.».
+10)
+El artículo 1 se modifica como sigue:
+a)
+en la letra i), punto 1), el inciso ii) se sustituye por el texto siguiente:
+«ii)
+con respecto a las prestaciones en especie con arreglo al título III, capítulo 1, toda persona definida o admitida como miembro de la familia o designada como miembro del hogar por la legislación del Estado miembro en el que resida;»
+;
+b)
+en la letra v bis), el inciso i) se sustituye por el texto siguiente:
+«i)
+a efectos del título III, capítulo 1, con respecto a las prestaciones de enfermedad, de maternidad y de paternidad asimiladas, las prestaciones en especie establecidas en la legislación de un Estado miembro que estén destinadas a proveer, facilitar, abonar directamente o reembolsar los costes de la atención sanitaria y de los productos y servicios accesorios de dicha atención;
+i bis)
+a efectos del título III, capítulo 1, con respecto a las prestaciones por cuidados de larga duración, las prestaciones en especie establecidas en la legislación de un Estado miembro que estén destinadas a proveer, facilitar, abonar directamente o reembolsar los costes de los cuidados de larga duración a que hace referencia la letra v ter) del presente artículo;»
+;
+c)
+se inserta la letra siguiente:
+«v ter)
+“prestaciones por cuidados de larga duración”: las prestaciones en especie o en metálico cuya finalidad sea satisfacer las necesidades de cuidados de una persona que, por razón de una limitación, precisa una asistencia considerable de una o varias personas para realizar actividades esenciales de la vida cotidiana durante un período prolongado a fin de apoyar su autonomía personal, incluidas las prestaciones concedidas con la misma finalidad a la persona que presta tal asistencia;».
+11)
+En el artículo 3, apartado 1, la letra a) se sustituye por el texto siguiente:
+«a)
+las prestaciones de enfermedad y por cuidados de larga duración;».
+12)
+En el artículo 9, el apartado 1 se sustituye por el texto siguiente:
+«1. Los Estados miembros notificarán por escrito a la Comisión las declaraciones realizadas con arreglo al artículo 1, letra l), la legislación y los regímenes mencionados en el artículo 3, los convenios suscritos a los que se hace mención en el artículo 8, apartado 2, las prestaciones mínimas mencionadas en el artículo 58 así como toda modificación sustancial de ellos. En dichas notificaciones se indicará la fecha a partir de la cual el presente Reglamento será aplicable a los regímenes especificados por los Estados miembros;».
+13)
+El artículo 11 queda modificado como sigue:
+a)
+el apartado 2 se sustituye por el texto siguiente:
+«2. A efectos del presente título, se considerará que las personas que reciben una prestación en metálico por el hecho o como consecuencia de su actividad por cuenta ajena o propia serán consideradas como si ejercieran esa actividad. Esto no se aplicará a las pensiones de invalidez, de vejez o de supervivencia, a las rentas por accidentes de trabajo o enfermedades profesionales ni a las prestaciones por cuidados de larga duración en metálico concedidas a las personas que necesiten asistencia.»
+;
+b)
+el apartado 5 se sustituye por el texto siguiente:
+«5. La actividad de un miembro de tripulación de vuelo o de cabina en el marco de una prestación de servicios de transporte aéreo de pasajeros o mercancías se considerará una actividad realizada en el Estado miembro en el que se encuentre la “base” con arreglo a la definición que figura en el anexo III, subparte FTL, del Reglamento (UE) n.o 965/2012.».
+14)
+El artículo 12 se sustituye por el texto siguiente:
+«Artículo 12
+Normas particulares
+1. La persona que ejerza una actividad por cuenta ajena en un Estado miembro por cuenta de un empleador que realice normalmente en él sus actividades y a la que este empleador envíe a otro Estado miembro para efectuar un trabajo por cuenta de dicho empleador seguirá sujeta a la legislación del primer Estado miembro, a condición de que la duración previsible de ese trabajo no exceda de veinticuatro meses y de que dicha persona no sustituya a otra persona que ejerza una actividad por cuenta ajena enviada con arreglo al presente apartado o a una persona que ejerza su actividad por cuenta propia según se contempla en el apartado 2.
+2. La persona que ejerza normalmente una actividad por cuenta propia en un Estado miembro y que vaya a realizar una actividad similar en otro Estado miembro seguirá sujeta a la legislación del primer Estado miembro, a condición de que la duración previsible de esa actividad no exceda de veinticuatro meses y de que dicha persona no sustituya a otra persona que ejerza una actividad por cuenta ajena enviada con arreglo al apartado 1 o a otra persona que ejerza una actividad por cuenta propia según se contempla en el presente apartado.
+3. Cuando la persona que ejerza una actividad por cuenta ajena contemplada en el apartado 1 o la persona que ejerza una actividad por cuenta propia contemplada en el apartado 2 no haya concluido su trabajo o actividad en el otro Estado miembro y sea sustituida por otra, esta otra persona seguirá estando sujeta a la legislación del Estado miembro desde el que ha sido enviada o en el que normalmente ejerza una actividad por cuenta propia, a condición de que la duración total del trabajo o actividad de todos los interesados en el otro Estado miembro no exceda de veinticuatro meses y que se cumplan las demás condiciones establecidas en los apartados 1 y 2.».
+15)
+En el artículo 13, el apartado 5 se sustituye por el texto siguiente:
+«4 bis. La persona que ejerza una actividad por cuenta ajena o por cuenta propia en un Estado miembro y que, al mismo tiempo, reciba prestaciones de desempleo de otro Estado miembro estará sujeta a la legislación del Estado miembro que abona las prestaciones por desempleo.
+5. Las personas a que se refieren los apartados 1 a 4 bis serán tratadas, a efectos de la legislación determinada de conformidad con estas disposiciones, como si ejercieran la totalidad de sus actividades por cuenta ajena o propia y percibieran la totalidad de sus ingresos en el Estado miembro de que se trate.».
+16)
+En el título III, el título del capítulo 1 se sustituye por el texto siguiente:
+«Prestaciones de enfermedad, por cuidados de larga duración, de maternidad y de paternidad asimiladas».
+17)
+En el artículo 19, el apartado 1 se sustituye por el texto siguiente:
+«1. Salvo que en el apartado 2 se disponga lo contrario, la persona asegurada y los miembros de su familia que se hallen en un Estado miembro distinto del Estado miembro competente tendrán derecho a las prestaciones en especie necesarias, ya sea por razones médicas o debido a la necesidad de cuidados de larga duración durante su estancia, tomando en consideración la naturaleza de las prestaciones y la duración prevista de la estancia. La institución del Estado miembro de estancia concederá las prestaciones por cuenta de la institución competente, de conformidad con las disposiciones de la legislación de ese Estado miembro, como si el interesado estuviera asegurado con arreglo a de dicha legislación.».
+18)
+En el artículo 20, el apartado 1 se sustituye por el texto siguiente:
+«1. Salvo que en el presente Reglamento se disponga lo contrario, una persona asegurada que se desplace a otro Estado miembro para recibir, durante la estancia, las prestaciones en especie a que se refiere el artículo 1, letra v bis), inciso i), solicitará la autorización de la institución competente.».
+19)
+El artículo 30 se sustituye por el texto siguiente:
+«Artículo 30
+Cotizaciones de los titulares de pensiones
+1. La institución de un Estado miembro que sea responsable, con arreglo a la legislación que sea de aplicación, de las retenciones en concepto de cotizaciones por enfermedad, cuidados de larga duración, maternidad y paternidad asimiladas solo podrá solicitar y recuperar dichas retenciones, calculadas con arreglo a la legislación que sea de aplicación, en la medida en que el coste de las prestaciones a que se refieren los artículos 23 a 26 corra a cargo de una institución de dicho Estado miembro.
+2. Cuando, en los casos a que se refiere el artículo 25, la obtención de prestaciones de enfermedad, cuidados de larga duración, maternidad y paternidad asimiladas esté sujeta al pago de cotizaciones o a otro tipo de pagos similares con arreglo a la legislación de un Estado miembro en el que resida el titular de una pensión, dichas cotizaciones no serán exigibles en virtud de la residencia.».
+20)
+En el artículo 32, se añade el apartado siguiente:
+«3. Cuando un miembro de la familia tenga un derecho derivado a prestaciones en virtud de la legislación de más de un Estado miembro, serán de aplicación las normas de prioridad siguientes:
+a)
+en el caso de los derechos adquiridos sobre una base diferente, el orden de prioridad será el siguiente:
+i)
+derechos adquiridos con motivo de una actividad por cuenta ajena o propia de la persona asegurada;
+ii)
+derechos adquiridos con motivo del cobro de una pensión por la persona asegurada;
+iii)
+derechos adquiridos con motivo de la residencia de la persona asegurada;
+b)
+en el caso de derechos derivados adquiridos sobre la misma base, el orden de prioridad se establecerá atendiendo al lugar de residencia del miembro de la familia como criterio subsidiario;
+c)
+cuando sea imposible determinar el orden de prioridad sobre la base de las letras a) o b), el más largo de los períodos de seguro que la persona asegurada haya cumplido en un régimen de pensiones nacional.».
+21)
+Se inserta al artículo siguiente:
+«Artículo 33 bis
+Prestaciones por cuidados de larga duración
+1. La Comisión Administrativa, previa consulta a los interlocutores sociales, elaborará una lista detallada de las prestaciones por cuidados de larga duración que respondan a los criterios establecidos en el artículo 1, letra v ter), indicando, en cada caso, si se trata de prestaciones en especie o en metálico y si se conceden a la persona que recibe la asistencia o al cuidador.
+2. Cuando las prestaciones por cuidados de larga duración contempladas en el presente capítulo tengan, además, las características de las prestaciones coordinadas en otro capítulo del título III, como excepción a lo dispuesto en el apartado 1 del presente artículo, un Estado miembro podrá coordinar dichas prestaciones de conformidad con las normas de dicho capítulo, a condición de que el resultado de tal coordinación sea en conjunto al menos, igual de favorable para los beneficiarios que si las prestaciones se coordinaran como prestaciones por cuidados de larga duración con arreglo al presente capítulo y a condición de que se recojan en el anexo XII, especificando qué capítulo del título III es de aplicación.
+3. El artículo 34, apartados 1 y 2, del presente Reglamento se aplicará también a las prestaciones enumeradas en el anexo XII.».
+22)
+El artículo 34 se sustituye por el texto siguiente:
+«Artículo 34
+Acumulación de prestaciones por cuidados de larga duración
+1. Cuando una persona que disfrute de prestaciones en metálico por cuidados de larga duración del Estado miembro competente con arreglo a los artículos 21 o 29 tenga también derecho, con arreglo al presente capítulo, a solicitar prestaciones en especie destinadas a la misma finalidad a la institución del Estado miembro de residencia o estancia, y dichas prestaciones en especie estén sujetas al reembolso por parte de la institución del Estado miembro competente con arreglo al artículo 35, se aplicará el artículo 10. A este respecto, si el interesado recibe dichas prestaciones en especie, el importe de las prestaciones en metálico concedidas por el Estado miembro competente se reducirá en el valor de esas prestaciones en especie.
+2. Dos o más Estados miembros, o sus autoridades competentes, podrán convenir otras medidas o medidas complementarias que no sean menos favorables para los interesados que los principios expuestos en el apartado 1.
+3. Cuando se concedan prestaciones en metálico por cuidados de larga duración en virtud de la legislación de más de un Estado miembro durante el mismo período y para los mismos hijos, se aplicarán las normas de prioridad en caso de acumulación establecidas en el artículo 68, apartado 1.».
+23)
+En el artículo 50, el apartado 2 se sustituye por el texto siguiente:
+«2. Si en un momento determinado el interesado no reúne o deja de reunir las condiciones establecidas por todas las legislaciones de los Estados miembros a las que haya estado sujeto, las instituciones que apliquen una legislación cuyas condiciones reúna no tendrán en cuenta, en el cálculo efectuado con arreglo al artículo 52, apartado 1, letra b), los períodos cumplidos bajo las legislaciones cuyas condiciones no reúne o ha dejado de reunir, cuando este cómputo dé lugar a un importe de prestación menor.».
+24)
+Se inserta al artículo siguiente:
+«Artículo 60 bis
+Normas especiales sobre totalización de los períodos para las prestaciones por desempleo
+A efectos de la aplicación de lo dispuesto en el artículo 6 en el contexto del presente capítulo, el Estado miembro competente totalizará solamente los períodos que se tengan en cuenta en virtud de la legislación del Estado miembro en el que fueron cumplidos a efectos de adquirir y mantener el derecho a prestaciones por desempleo.».
+25)
+Los artículos 61, 62 y 63 se sustituyen por el texto siguiente:
+«Artículo 61
+Normas especiales sobre la totalización de períodos de seguro, de actividad por cuenta ajena o de actividad por cuenta propia y competencia para el pago de las prestaciones de desempleo
+1. Salvo en el caso de las personas en situación de desempleo total a que se refiere el artículo 65, apartados 2, 3 y 5, la aplicación de los artículos 6 y 60 bis por el Estado miembro del último período de seguro, de actividad por cuenta ajena o de actividad por cuenta propia estará supeditada a que el interesado haya cumplido en último lugar un período ininterrumpido de al menos un mes de seguro, actividad por cuenta ajena o actividad por cuenta propia con arreglo a la legislación del Estado miembro en virtud de cuya legislación se solicita la prestación.
+2. En el caso en que una persona desempleada no haya cumplido un período ininterrumpido de al menos un mes de seguro, actividad por cuenta ajena o actividad por cuenta propia conforme a la legislación dl Estado miembro contemplado en el apartado 1, dicha persona tendrá derecho a prestaciones por desempleo con arreglo a la legislación del anterior Estado miembro en el que haya cumplido un período de seguro, actividad por cuenta ajena o actividad por cuenta propia, siempre que dicho período fuera un período ininterrumpido de al menos un mes. El Estado miembro que pase a ser competente con arreglo al presente apartado concederá las prestaciones de desempleo, una vez aplicados los artículos 6 y 60 bis, en la medida necesaria y de conformidad con el artículo 64 bis.
+3. En caso de que una persona desempleada no haya cumplido un período ininterrumpido de al menos un mes de seguro, actividad por cuenta ajena o actividad por cuenta propia en uno de los Estados miembros mencionados en los apartados 1 y 2 del presente artículo, será competente el Estado miembro del último período de seguro, de actividad por cuenta ajena o de actividad por cuenta propia; dicho Estado miembro concederá las prestaciones por desempleo, con arreglo a su legislación, una vez aplicados los artículos 6 y 60 bis, en la medida necesaria.
+Artículo 62
+Cálculo de las prestaciones
+1. La institución competente de un Estado miembro cuya legislación disponga que el cálculo de las prestaciones se base en la cuantía de la retribución o de los ingresos profesionales anteriores tendrá en cuenta exclusivamente la retribución o los ingresos profesionales percibidos por el interesado con motivo de su última actividad como trabajador por cuenta ajena o propia con arreglo a esa legislación.
+2. El apartado 1 se aplicará igualmente en caso de que la legislación que aplique la institución competente prevea un período de referencia determinado para establecer la retribución o los ingresos profesionales que servirán de base al cálculo de las prestaciones, y de que el interesado haya estado sujeto durante la totalidad o una parte de ese período a la legislación de otro Estado miembro.
+3. Como excepción a lo dispuesto en los apartados 1 y 2 del presente artículo, por lo que respecta a las personas desempleadas a que se refiere el artículo 65, apartado 2, párrafos primero y segundo, la institución del Estado miembro de residencia tendrá en cuenta, con las condiciones y limitaciones de la legislación que sea de aplicación, la retribución o los ingresos profesionales que perciba el interesado en el Estado miembro a cuya legislación estuviera sujeta durante su última actividad por cuenta ajena o por cuenta propia, de conformidad con lo dispuesto en el Reglamento de aplicación.
+Artículo 63
+Disposiciones especiales para la supresión de las normas de residencia
+A los efectos del presente capítulo, el artículo 7 se aplicará solo en los casos previstos en los artículos 64, 64 bis y 65, y con las limitaciones que en ellos se establecen.».
+26)
+El artículo 64 se modifica como sigue:
+a)
+en el apartado 1, se sustituye la letra c) por el texto siguiente:
+«c)
+la persona desempleada conservará su derecho a las prestaciones durante un período de seis meses a partir de la fecha en que haya dejado de estar a disposición de los servicios de empleo del Estado miembro del que proceda, a condición de que la duración total del período durante el cual se conceden las prestaciones no supere la duración total del período de prestaciones a que tenía derecho con arreglo a la legislación de dicho Estado miembro; los servicios o instituciones competentes podrán prorrogar el período de seis meses hasta el final del período en que dicha persona tenga derecho a las prestaciones;»
+;
+b)
+el apartado 3 se sustituye por el texto siguiente:
+«3. Salvo que la legislación del Estado miembro competente sea más favorable, entre dos períodos de empleo, el período máximo total durante el cual una persona desempleada conservará su derecho a prestaciones en virtud del apartado 1 del presente artículo y el artículo 64 bis será de seis meses; los servicios o instituciones competentes podrán prorrogar dicho período hasta el final del período en que dicha persona tenga derecho a las prestaciones.».
+27)
+Se inserta el artículo siguiente:
+«Artículo 64 bis
+Normas especiales para las personas desempleadas que se trasladan a otro Estado miembro sin cumplir las condiciones establecidas en el artículo 61, apartado 1, y el artículo 64
+1. En la situación a que se refiere el artículo 61, apartado 2, el Estado miembro que pase a ser competente concederá las prestaciones por desempleo, con arreglo a su legislación, durante el período establecido en el artículo 64, apartado 1, letra c), si la persona desempleada se pone a disposición de los servicios de empleo del Estado miembro del último período de seguro, de actividad por cuenta ajena o de actividad por cuenta propia, y cumple las condiciones que establezca la legislación de dicho Estado miembro. La inscripción en los servicios de empleo del Estado miembro del último período de seguro, de actividad por cuenta ajena o de actividad por cuenta propia surtirá el mismo efecto que la inscripción en los servicios de empleo del Estado miembro competente. El artículo 64, apartados 2, 3 y 4, se aplicará mutatis mutandis.
+2. Si la persona desempleada a que se refiere el apartado 1 desea buscar trabajo en un Estado miembro distinto del Estado miembro competente para las prestaciones por desempleo o del Estado del último período de seguro, de actividad por cuenta ajena o de actividad por cuenta propia, se aplicará, mutatis mutandis, el artículo 64. A tal efecto, se considerará que el artículo 64, apartado 1, letra a), hace referencia a los servicios de empleo del Estado miembro del último período de seguro, de actividad por cuenta ajena o de actividad por cuenta propia.».
+28)
+El artículo 65 se sustituye por el texto siguiente:
+«Artículo 65
+Personas desempleadas que residen en un Estado miembro distinto del Estado miembro competente
+1. Una persona en situación de desempleo total, parcial o intermitente y que, durante su último período de actividad por cuenta ajena o propia, haya residido en un Estado miembro distinto del Estado miembro competente, se pondrá a disposición de los servicios de empleo del Estado miembro competente o, en el caso de las personas en situación de desempleo parcial o intermitente, cuando proceda, del empleador para el que siga disponible.
+Esa persona percibirá prestaciones con arreglo a la legislación del Estado miembro competente como si residiera en dicho Estado miembro y estará sujeta a los derechos y obligaciones establecidos en esa legislación. La institución del Estado miembro competente concederá esas prestaciones.
+2. Como excepción a lo dispuesto en el apartado 1, una persona en situación de desempleo total se pondrá a disposición de los servicios de empleo del Estado miembro de residencia siempre que:
+a)
+durante su último período de actividad por cuenta ajena o propia, residiera en un Estado miembro distinto del Estado miembro competente;
+b)
+siga residiendo en el Estado miembro de residencia o haya regresado a él, y
+c)
+no haya cubierto un período ininterrumpido de seguro, actividad por cuenta ajena o actividad por cuenta propia de veintidós semanas exclusivamente con arreglo a la legislación del Estado miembro competente.
+La persona en situación de desempleo total a que se refiere el párrafo primero recibirá prestaciones con arreglo a la legislación del Estado miembro de residencia como si hubiera cumplido todos los períodos de seguro, actividad por cuenta ajena o actividad por cuenta propia en virtud de la legislación de ese Estado miembro. La institución del Estado miembro de residencia concederá esas prestaciones.
+Una persona en situación de desempleo total a que se refiere el presente apartado, que tendría derecho a prestaciones de desempleo únicamente con arreglo a la legislación nacional del Estado miembro competente sin la aplicación del artículo 6 del presente Reglamento, podrá optar, como alternativa, por ponerse a disposición de los servicios de empleo de dicho Estado miembro y percibirá prestaciones con arreglo a la legislación de ese Estado miembro como si residiera en él.
+3. El apartado 2 del presente artículo no se aplicará a las personas en situación de desempleo total que, durante su actividad más reciente antes de quedarse sin empleo, hayan cumplido períodos de seguro como trabajadores por cuenta propia o períodos de actividad por cuenta propia reconocidos a efectos de la concesión de prestaciones por desempleo en un Estado miembro distinto de su Estado miembro de residencia, y cuyo Estado miembro de residencia haya realizado una notificación, en virtud del artículo 9, en la que se haga constar que ninguna categoría de trabajadores por cuenta propia puede acogerse a ningún régimen de prestaciones por desempleo de ese Estado miembro.
+4. En caso de que una persona en situación de desempleo total a que se refieren el apartado 1, el apartado 2, párrafo tercero, o el apartado 3 del presente artículo no desee estar o mantenerse disponible para los servicios de empleo del Estado miembro competente tras haberse inscrito en dichos servicios, y decida buscar trabajo en el Estado miembro de residencia se aplicará, mutatis mutandis, el artículo 64, excepto por lo que respecta al artículo 64, apartado 1, letra a).
+5. Cuando una persona en situación de desempleo total a que se refiere el apartado 4 decida buscar trabajo en el Estado miembro de residencia y haya cumplido previamente períodos de seguro, actividad por cuenta ajena o actividad por cuenta propia con arreglo a la legislación de ese Estado miembro, totalizados con períodos cumplidos en el Estado miembro de la última actividad y en otros Estados miembros de otras actividades anteriores, podrá, una vez finalizado el período durante el cual recibe prestaciones de desempleo de la institución del Estado miembro competente con arreglo al apartado 4, solicitar prestaciones de desempleo con arreglo a la legislación del Estado miembro de residencia como si hubiera cumplido todos los períodos en dicho Estado miembro. La institución competente del Estado miembro de residencia concederá las prestaciones de desempleo con arreglo a la legislación de ese Estado miembro. El período durante el cual la persona en situación de desempleo haya percibido prestaciones en virtud de la legislación del Estado miembro competente se deducirá del período correspondiente con derecho a prestaciones en virtud de la legislación del Estado miembro de residencia.
+6. Una persona en situación de desempleo total a la que se refiere el presente artículo podrá, además de ponerse a disposición de los servicios de empleo del Estado miembro que conceda las prestaciones en virtud de los apartados 1 o 2, ponerse a disposición de los servicios de empleo del Estado miembro competente o del Estado miembro de residencia.».
+29)
+Se suprime el artículo 65 bis.
+30)
+En el artículo 68, el apartado 2 se sustituye por el texto siguiente:
+«2. En caso de acumulación de derechos, se concederán las prestaciones familiares con arreglo a la legislación que se haya determinado como prioritaria con arreglo al apartado 1. Quedará suspendido el derecho a prestaciones familiares en virtud de legislación en conflicto hasta el importe previsto en la primera legislación para prestaciones de la misma naturaleza y, en caso necesario, se otorgará un complemento diferencial correspondiente a la cuantía que supere dicho importe. No obstante, no se exige que se otorgue este complemento diferencial en lo que respecta a los hijos que residan en otro Estado miembro cuando el derecho a la prestación de que se trate se base exclusivamente en la residencia.
+2 bis. A efectos del cálculo del complemento diferencial para las prestaciones familiares con arreglo a lo dispuesto en el apartado 2, habrá dos categorías de prestaciones de la misma naturaleza:
+a)
+prestaciones familiares destinadas principalmente a sustituir parte o la totalidad de los ingresos no obtenidos o los ingresos que las personas no pueden obtener por dedicarse a la educación de los hijos, y
+b)
+las prestaciones familiares distintas de las mencionadas en la letra a).».
+31)
+Se inserta al artículo siguiente:
+«Artículo 68 ter
+Disposición especial sobre las prestaciones familiares en metálico destinadas a sustituir los ingresos durante el período de educación de los hijos
+1. Las prestaciones familiares a que se refiere el artículo 68, apartado 2 bis, letra a), del presente Reglamento que figuran en la lista del anexo XIII, parte I, se concederán en virtud de la legislación del Estado miembro competente exclusivamente a la persona a la que se aplique esa legislación. No generarán ningún derecho derivado a tales prestaciones . El artículo 68 bis del presente Reglamento no se aplicará a tales prestaciones y la institución competente no está obligada a tomar en consideración una solicitud presentada por el otro progenitor, por un tutor o por una institución responsable de la custodia de los hijos con arreglo a lo dispuesto en el artículo 60, apartado 1, del Reglamento de aplicación.
+2. Como excepción a lo dispuesto en el artículo 68, apartado 2, en caso de acumulación de derechos en virtud de las legislaciones en conflicto, un Estado miembro podrá conceder en su totalidad a un beneficiario una de las prestaciones familiares a las que se refiere el apartado 1 del presente artículo, con independencia del importe previsto en la primera legislación. Los Estados miembros que apliquen esta excepción figurarán en la lista del anexo XIII, parte 2, con referencia a la prestación familiar a la que se aplica la excepción.».
+32)
+En el artículo 72, se inserta la letra siguiente:
+«e bis)
+emitir dictámenes, si lo solicita la Comisión, en las fases iniciales de preparación de los actos de ejecución a que se refieren el artículo 88 ter del presente Reglamento y el artículo 86 bis del Reglamento de aplicación y formular a la Comisión propuestas pertinentes para la revisión de esos actos de ejecución;».
+33)
+En el «Título V - DISPOSICIONES VARIAS», se inserta el artículo siguiente:
+«Artículo 75 bis
+Obligaciones de las autoridades competentes
+1. Las autoridades competentes, de acuerdo con su Derecho y prácticas nacionales, se asegurarán de que sus instituciones pertinentes estén informadas de todas las disposiciones, legislativas o no, incluidas las decisiones de la Comisión Administrativa, en el ámbito regulado y según lo dispuesto en el presente Reglamento y el Reglamento de aplicación.
+2. Para garantizar la correcta determinación de la legislación aplicable, las autoridades competentes fomentarán, en su caso, la cooperación entre sus instituciones y demás órganos pertinentes, como las inspecciones del trabajo, en sus Estados miembros.».
+34)
+Se elimina el artículo 86, sin perjuicio del artículo 91, párrafos cuarto y quinto.
+35)
+En el artículo 87 bis, se suprime el apartado 2.
+36)
+Se inserta al artículo siguiente:
+«Artículo 87 ter
+Disposición transitoria relativa a las disposiciones a que se refiere el artículo 91 del presente Reglamento y del artículo 97 del Reglamento de aplicación
+1. Las disposiciones a que se refiere el artículo 91, párrafo tercero, del presente Reglamento o el artículo 97, párrafo segundo, del Reglamento de aplicación no originarán ningún derecho previo a las fechas de aplicación pertinentes en ellos indicadas.
+2. Todo período de seguro y, en su caso, todo período de actividad por cuenta ajena, de actividad por cuenta propia o de residencia cubierto bajo la legislación de un Estado miembro antes de las fechas de aplicación pertinentes tal y como se establecen en el artículo 91, párrafos tercero, cuarto y quinto, del presente Reglamento y en el artículo 97, párrafos segundo, tercero y cuarto, del Reglamento de aplicación, será tomado en cuenta por el Estado miembro de que se trate para la determinación de los derechos originados conforme a dichas disposiciones.
+3. Con la salvedad de lo dispuesto en el apartado 1 del presente artículo, se originarán derechos en virtud de las disposiciones a que se refieren el artículo 91, párrafo tercero, del presente Reglamento y el artículo 97, párrafo segundo, del Reglamento de aplicación, aunque se refieran a una eventualidad anterior a las fechas de aplicación de dichas disposiciones en el Estado miembro interesado.
+4. Cuando, de conformidad con el título II del presente Reglamento, una persona esté sujeta a la legislación de un Estado miembro distinta de aquella a la que estaba sujeta antes del 2 de noviembre de 2028, la legislación aplicable antes de dicha fecha seguirá aplicándose durante un período transitorio que perdurará mientras la situación permanezca sin cambios. En todo caso, dicho período transitorio concluirá el 2 de noviembre de 2036.
+El interesado podrá solicitar que se le deje de aplicar el período transitorio. Dicha solicitud se presentará ante la institución designada por la autoridad competente del Estado miembro de residencia. Las solicitudes presentadas el 2 de enero de 2029, o antes de esa fecha, se considerarán presentadas el 2 de noviembre de 2028. Las solicitudes presentadas después del 2 de enero de 2029 se considerarán presentadas el primer día del mes siguiente a la fecha de su presentación.
+El presente apartado no se aplicará al artículo 12. El artículo 12, en su versión en vigor antes del 1 de noviembre de 2026, seguirá aplicándose a los trabajadores por cuenta ajena que son enviados a otro Estado miembro y a los trabajadores por cuenta propia que ejerzan una actividad similar en otro Estado miembro antes del 2 de noviembre de 2028.
+5. El título III, capítulo 1, en su versión en vigor antes del 1 de noviembre de 2026, seguirá siendo aplicable a las prestaciones por cuidados de larga duración respecto a las cuales se hayan presentado solicitudes antes del 2 de noviembre de 2028.
+6. El título III, capítulo 6, en su versión en vigor antes del 1 de noviembre de 2026, seguirá siendo aplicable a las prestaciones por cuidados de larga duración respecto a las cuales se hayan presentado solicitudes antes de la fecha de aplicación pertinente tal como se establece en el artículo 91, párrafos tercero y cuarto.
+7. El título III, capítulo 8, en su versión en vigor antes del 1 de noviembre de 2026, seguirá siendo aplicable a las prestaciones familiares por los hijos nacidos antes del 2 de noviembre de 2028.».
+37)
+El artículo 88 se sustituye por el texto siguiente:
+«Artículo 88
+Delegación del poder para modificar los anexos
+La Comisión estará facultada para adoptar actos delegados con arreglo al artículo 88 bis a fin de modificar periódicamente los anexos del presente Reglamento y del Reglamento de aplicación a raíz de una petición de la Comisión Administrativa.
+Artículo 88 bis
+Ejercicio de la delegación
+1. Se otorgan a la Comisión los poderes para adoptar actos delegados en las condiciones establecidas en el presente artículo.
+2. Los poderes para adoptar actos delegados mencionados en el artículo 88 se otorgan a la Comisión por un período de tiempo indefinido a partir del 1 de noviembre de 2026.
+3. La delegación de poderes mencionada en el artículo 88 podrá ser revocada en cualquier momento por el Parlamento Europeo o por el Consejo. La decisión de revocación pondrá término a la delegación de los poderes que en ella se especifiquen. La decisión surtirá efecto el día siguiente al de su publicación en el Diario Oficial de la Unión Europea o en una fecha posterior indicada en ella. No afectará a la validez de los actos delegados que ya estén en vigor.
+4. Antes de la adopción de un acto delegado, la Comisión consultará a los expertos designados por cada Estado miembro de conformidad con los principios establecidos en el Acuerdo interinstitucional de 13 de abril de 2016 sobre la mejora de la legislación.
+5. Tan pronto como la Comisión adopte un acto delegado lo notificará simultáneamente al Parlamento Europeo y al Consejo.
+6. Los actos delegados adoptados en virtud del artículo 88 entrarán en vigor únicamente si, en un plazo de dos meses a partir de su notificación al Parlamento Europeo y al Consejo, ninguna de estas instituciones formula objeciones o si, antes del vencimiento de dicho plazo, ambas informan a la Comisión de que no las formularán. El plazo se prorrogará dos meses a iniciativa del Parlamento Europeo o del Consejo.».
+38)
+Se insertan los artículos siguientes:
+«Artículo 88 ter
+Poderes para adoptar actos de ejecución
+1. La Comisión adoptará actos de ejecución al objeto de especificar el procedimiento que debe seguirse, incluidos, cuando proceda, los plazos, a fin de garantizar condiciones uniformes para la aplicación del título II del presente Reglamento y de los procedimientos correspondientes establecidos en el Reglamento de aplicación. Dichos actos de ejecución establecerán procedimientos normalizados para:
+a)
+la expedición, el formato y el contenido de certificados que acrediten la legislación en materia de seguridad social aplicable a sus titulares, así como el acuse de recibo automático de la solicitud de dichos certificados, cuyos acuses de recibo indicarán su fecha de expedición y la información contenida en la solicitud;
+b)
+los elementos que deben verificarse antes de que puedan expedirse, retirarse o rectificarse los certificados;
+c)
+la retirada o rectificación de los certificados por la institución emisora de conformidad con el procedimiento establecido en el Reglamento de aplicación.
+2. Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen a que se refiere el artículo 88 quater, apartado 2.
+Artículo 88 quater
+Procedimiento de comité
+1. La Comisión estará asistida por un comité. El comité será un comité en el sentido del Reglamento (UE) n.o 182/2011.
+2. En los casos en que se haga referencia al presente artículo, se aplicará el artículo 5 del Reglamento (UE) n.o 182/2011.».
+39)
+El artículo 91 se sustituye por el texto siguiente:
+«Artículo 91
+Entrada en vigor y aplicación
+El presente Reglamento entrará en vigor a los veinte días de su publicación en el Diario Oficial de la Unión Europea.
+Será aplicable a partir del 1 de mayo de 2010.
+No obstante lo dispuesto en el párrafo segundo, se aplicarán las siguientes fechas de aplicación:
+1)
+Las siguientes disposiciones, en su versión en vigor a partir del 1 de noviembre de 2026, serán aplicables a partir de dicha fecha:
+a)
+artículo 11, apartado 5;
+b)
+artículo 50, apartado 2;
+c)
+artículo 72, letra e bis);
+d)
+artículos 75 bis y 86;
+e)
+artículo 87 bis, apartado 2;
+f)
+artículos 87 ter, 88, 88 bis, 88 ter y 88 quater;
+g)
+anexos I, II, III, IV, VI, VIII, IX, X y XI.
+2)
+Las siguientes disposiciones, en su versión en vigor a partir del 1 de noviembre de 2026, serán aplicables a partir del 2 de noviembre de 2028:
+a)
+artículo 1, letra i), punto 1), inciso ii), letra v bis), incisos i) y i bis) y letra v ter);
+b)
+artículo 3, apartado 1, letra a);
+c)
+artículo 9, apartado 1;
+d)
+artículo 11, apartado 2;
+e)
+artículo 12;
+f)
+artículos 13, apartados 4 bis y 5;
+g)
+artículo 19, apartado 1;
+h)
+artículo 20, apartado 1;
+i)
+artículo 30;
+j)
+artículo 32, apartado 3;
+k)
+artículos 33 bis, 34, 60 bis, 61, 62 y 63;
+l)
+artículo 64, apartado 1, letra c), y apartado 3;
+m)
+artículos 64 bis, 65 y 65 bis;
+n)
+artículo 68, apartados 2 y 2 bis;
+o)
+artículo 68 ter;
+p)
+anexos XII y XIII.
+No obstante lo dispuesto en el párrafo tercero del presente artículo, con respecto a las personas para las que Luxemburgo era el Estado competente durante su última actividad por cuenta ajena o por cuenta propia, los artículos 65, 65 bis y 86, en su versión en vigor antes del 1 de noviembre de 2026, serán aplicables hasta el 2 de noviembre de 2031.
+Luxemburgo podrá notificar a la Comisión la necesidad de prorrogar el período indicado en el párrafo cuarto hasta el 2 de noviembre de 2033. Dicha notificación de prórroga se deberá hacer en un plazo razonable, antes de que finalice el período a que se refiere el párrafo cuarto. La notificación se publicará en el Diario Oficial de la Unión Europea.».
+40)
+Los anexos del Reglamento (CE) n.o 883/2004 se modifican de conformidad con el anexo I del presente Reglamento.
+Artículo 2
+El Reglamento (CE) n.o 987/2009 se modifica como sigue:
+1)
+Se inserta el considerando siguiente:
+«12 bis)
+A efectos de determinar el domicilio social o la sede de explotación de una empresa, cuando una persona ejerza una actividad en dos o más Estados miembros, deben tenerse en cuenta una serie de factores a fin de establecer dónde se adoptan las decisiones esenciales de la empresa y dónde se desempeñan las funciones de la administración central. El volumen de negocios, los lugares donde se celebran sus juntas generales y el carácter habitual de la actividad ejercida son ejemplos de estos factores. La lista de factores indicados a modo de ejemplo no es exhaustiva y existen otros que pueden ser pertinentes para determinar la ubicación del domicilio social o la sede de explotación de una empresa, en el marco de una evaluación global, ponderando los factores pertinentes en función de las circunstancias del caso.».
+2)
+Se insertan los considerandos siguientes:
+«(13 bis)
+Cuando un trabajador por cuenta ajena o por cuenta propia ejerza su actividad en un Estado miembro distinto del Estado miembro competente con arreglo al artículo 12 del Reglamento de base, debe informarse de ello previamente a la institución competente del Estado miembro cuya legislación sea aplicable y debe solicitarse el certificado a que se refiere el artículo 19, apartado 2, del presente Reglamento. El suministro de información antes del ejercicio de la actividad permite a las instituciones competentes evaluar con antelación la situación de los interesados y garantizar, desde el principio, la correcta determinación y aplicación de la legislación en materia de seguridad social aplicable en virtud del título II del Reglamento de base, facilitando así el ejercicio de la libre circulación de los trabajadores y de la libre prestación de servicios y aumentando la seguridad jurídica en lo que respecta a la cobertura de seguridad social del interesado. También permite una mejor coordinación entre las autoridades nacionales, incluida la planificación de controles. Cuando esté justificado por la naturaleza o la duración de la actividad, conviene disponer que la comunicación de dicha información previa y, en particular, la obligación de solicitar dicho certificado, no se apliquen a los viajes de negocios o actividades con una duración total no superior a tres días consecutivos de trabajo en un período de treinta días consecutivos.
+(13 ter)
+Las actividades del sector de la construcción presentan características específicas que las distinguen de las actividades de otros sectores económicos. El número elevado de trabajadores desplazados en el sector de la construcción representa una proporción significativa de los DP A1 emitidos con arreglo al artículo 12 del Reglamento de base, y los análisis disponibles indican que a menudo se detectan fraudes, irregularidades o prácticas abusivas en relación con esas actividades. Los datos disponibles también indican que tanto el número de accidentes de trabajo, incluidos los accidentes mortales, como la tasa de incidencia de accidentes de trabajo son especialmente elevados en el sector de la construcción. La combinación de estas características implica que eximir a las actividades del sector de la construcción de la obligación de informar a la institución competente y de solicitar el certificado relativo a la legislación aplicable, con carácter previo, en el caso de actividades de hasta tres días de duración, podría poner en peligro la consecución de los objetivos perseguidos por el Reglamento de base y por el presente Reglamento. Además, el mantenimiento de esta obligación para las actividades en el sector de la construcción contribuye a la labor de control del cumplimiento de las inspecciones nacionales de trabajo u otras autoridades competentes, que se beneficiarán de los datos generados con el fin de llevar a cabo evaluaciones de riesgos y detectar eficazmente prácticas fraudulentas o abusivas.
+(13 quater)
+A fin de asegurar la correcta aplicación del presente Reglamento, es de suma importancia garantizar el cumplimiento de la obligación de informar a la institución competente y de solicitar el certificado relativo a la legislación aplicable, con carácter previo, de conformidad al Derecho nacional. A tal fin, de conformidad con el Derecho nacional, los Estados miembros pueden recurrir a la adopción de medidas proporcionadas contra el empleador o, en el caso de las personas que no ejerzan una actividad por cuenta ajena, contra los interesados, por el incumplimiento de dichas obligaciones.
+(13 quinquies)
+Con el fin de ayudar a los solicitantes de empleo en su búsqueda de empleo, habida cuenta de la realidad de las regiones transfronterizas, los Estados miembros deben animar a los miembros y socios de la red europea de servicios de empleo (EURES) a participar en estructuras específicas de cooperación y de servicios y garantizar que los solicitantes de empleo que residan en un Estado miembro distinto del Estado miembro competente tengan acceso a los servicios de apoyo prestados en las regiones transfronterizas.
+(13 sexies)
+Cuando una persona desempleada que recibe prestaciones de desempleo decida desplazarse a otro Estado miembro para buscar trabajo allí, el Estado miembro que paga las prestaciones y el Estado miembro al que la persona se desplaza para buscar trabajo deben informar al interesado sobre los servicios de apoyo prestados por EURES, también mediante su portal, y sobre la posibilidad de inscribirse en EURES a fin de aumentar sus posibilidades de encontrar un empleo en el otro Estado miembro. El Estado miembro que pague las prestaciones puede considerar la posibilidad de proporcionar al interesado orientación para inscribirse en EURES.».
+3)
+Se inserta el considerando siguiente:
+«(18 bis)
+Se precisan determinadas normas y procedimientos específicos para el reembolso de los gastos en prestaciones efectuados por un Estado miembro de residencia, en caso de que los interesados estén asegurados en un Estado miembro diferente. Los Estados miembros que soliciten un reembolso de los gastos de las prestaciones en especie sobre la base de importes a tanto alzado deben notificar los costes medios anuales por persona en un plazo determinado que permita el reembolso en el plazo más breve posible.».
+4)
+El considerando 19 se sustituye por el texto siguiente:
+«(19)
+Los procedimientos entre instituciones en materia de asistencia mutua en el cobro de créditos de la seguridad social deben reforzarse para garantizar un cobro más eficaz y un buen funcionamiento de los regímenes de seguridad social. El cobro efectivo es también un medio para prevenir y combatir abusos y fraudes y garantizar la viabilidad de los regímenes de seguridad social. Esto implica la adopción de nuevos procedimientos que tomen como base algunas de las disposiciones vigentes de la Directiva 2010/24/UE del Consejo (*17), en particular mediante la adopción de un instrumento uniforme de ejecución y la adopción de procedimientos normalizados para las solicitudes de asistencia mutua y la notificación de instrumentos y medidas en relación con el cobro de un crédito de seguridad social.
+(*17) Directiva 2010/24/UE del Consejo, de 16 de marzo de 2010, sobre la asistencia mutua en materia de cobro de los créditos correspondientes a determinados impuestos, derechos y otras medidas (DO L 84 de 31.3.2010, p. 1, ELI: http://data.europa.eu/eli/dir/2010/24/oj).»."
+5)
+Se añaden los considerandos siguientes:
+«(25)
+Combatir el fraude y el error forma parte de la correcta aplicación del Reglamento (CE) n.o 883/2004 y del presente Reglamento. Por tanto, en aras de la seguridad jurídica, el presente Reglamento contiene una base jurídica clara que permite a las instituciones competentes intercambiar con las autoridades competentes de otros Estados miembros datos personales relativos a personas cuyos derechos y obligaciones en virtud del Reglamento (CE) n.o 883/2004 y del presente Reglamento ya han sido establecidos o a las que se aplican esos Reglamentos, a fin de prevenir o detectar el fraude y el error como parte de la correcta aplicación de dichos Reglamentos. También es necesario garantizar que estos intercambios se efectúan de conformidad con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (*18). Asimismo, en lo relativo a combatir el fraude y el error, y con el fin de prestar servicios precisos y eficientes para los ciudadanos que se desplazan, es necesario que el Reglamento (CE) n.o 883/2004 y el presente Reglamento proporcionen una base jurídica clara para que los Estados miembros intercambien información entre ellos, ya sea a nivel individual en relación con un caso concreto o a nivel general mediante la comparación de datos.
+(26)
+A fin de proteger los derechos de los interesados, los Estados miembros deben garantizar que todas las solicitudes de datos y todas las respuestas sean necesarias y proporcionadas para la correcta aplicación del Reglamento (CE) n.o 883/2004 y del presente Reglamento, .
+(*18) Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos) (DO L 119 de 4.5.2016, p. 1, ELI: http://data.europa.eu/eli/reg/2016/679/oj).»."
+6)
+En el artículo 1, apartado 2, se insertan las letras siguientes:
+«e bis)
+“fraude”: toda acción u omisión dolosa, con el fin de obtener prestaciones de seguridad social o de evitar pagar cotizaciones de seguridad social, que contravenga el Derecho del Estado miembro de que se trate, el Reglamento de base o el Reglamento de aplicación;
+e ter)
+“viaje de negocios”: una actividad temporal por cuenta ajena o propia, limitada en el tiempo y relacionada con los intereses empresariales del empleador o, en el caso de un trabajador por cuenta propia, del interesado, excluida la prestación de servicios o la entrega de bienes, pero incluida la asistencia a reuniones de negocios, actos culturales y científicos, conferencias y seminarios, como los relacionados con la investigación académica, y la recepción de formación;».
+7)
+El artículo 2 se modifica como sigue:
+a)
+se inserta el apartado siguiente:
+«2 bis. Las instituciones también intercambiarán los datos necesarios para detectar los cambios de las circunstancias que sean pertinentes para dichos derechos y obligaciones de las personas a las que se aplica el Reglamento de base, así como para detectar inexactitudes en los datos en los que se basan tales derechos. Esos datos podrán verificarse comparándolos con los de la institución del otro Estado miembro de que se trate mediante el uso de medios electrónicos de intercambio de datos o la concesión de acceso a la base de datos de la otra institución. Dicha verificación podrá referirse a casos individuales o utilizarse para comparar simultáneamente los datos relativos a varias personas. Toda solicitud de información y la respuesta a dicha solicitud será necesaria y proporcionada.»
+;
+b)
+se añaden los apartados siguientes:
+«5. La Comisión Administrativa elaborará una lista indicativa de los tipos de datos objeto de intercambio con arreglo al apartado 2 bis. La Comisión dará a dicha lista la publicidad necesaria.
+6. Los intercambios de datos en virtud del apartado 2 bis deberán cumplir el Reglamento (UE) 2016/679, con arreglo al artículo 77 del Reglamento de base. En caso necesario, la Comisión Administrativa determinará las entidades que tienen derecho a realizar dichos intercambios.
+Toda decisión adoptada a tenor de los datos procedentes de dichos intercambios de datos se basará en pruebas suficientes y estará sujeta a vías de recurso efectivas.».
+8)
+En el artículo 3, se suprime el apartado 3.
+9)
+En el artículo 5, los apartados 2, 3 y 4 se sustituyen por el texto siguiente:
+«2. Cuando no se haya proporcionado alguna información obligatoria, la institución del Estado miembro que reciba el documento lo notificará sin demora a la institución emisora. La institución emisora bien rectificará el documento lo antes posible, bien confirmará que no se han cumplido las condiciones para emitir el documento. Si la información obligatoria que falta no se proporciona en el plazo de treinta días hábiles, la institución del Estado miembro que reciba el documento podrá proceder como si el documento nunca se hubiera emitido. En tal caso, dicha institución informará de ello a la entidad emisora, en consecuencia.
+3. Sin perjuicio de lo dispuesto en el artículo 19 bis, en caso de duda sobre la validez del documento o la exactitud de los hechos en que se basa el documento, la institución del Estado miembro que lo reciba se dirigirá a la institución emisora para pedirle las aclaraciones necesarias y, si procede, la retirada o rectificación de dicho documento. La institución emisora reconsiderará los motivos de emisión del documento y en su caso lo retirará o rectificará.
+4. En caso de duda sobre la información proporcionada por los interesados, la validez de un documento o de los justificantes o sobre la exactitud de los hechos en que se basa el documento, toda institución afectada deberá verificar, en la medida de lo posible, a petición de la institución competente, la información o el documento.
+5. A falta de acuerdo entre las instituciones afectadas, podrá elevarse el asunto a la Comisión Administrativa, por conducto de las autoridades competentes, una vez transcurrido al menos un mes desde la fecha en que la institución que recibió el documento haya presentado su solicitud. La Comisión Administrativa tratará de conciliar las posturas de las instituciones en los seis meses siguientes a la fecha en que haya sido consultada.
+Al tratar de conciliar los diferentes puntos de vista, la Comisión Administrativa podrá, de conformidad con el artículo 72, letra a), del Reglamento de base, adoptar una decisión sobre la interpretación de las disposiciones pertinentes del Reglamento de base o del Reglamento de aplicación. Las autoridades e instituciones competentes de que se trate adoptarán las medidas necesarias para aplicar tal decisión, sin perjuicio del derecho de las autoridades, instituciones e interesados de recurrir a los procedimientos y órganos jurisdiccionales previstos en la legislación de los Estados miembros, con arreglo al Reglamento de aplicación o al Tratado de la Unión Europea y al Tratado de Funcionamiento de la Unión Europea.».
+10)
+El artículo 14 se modifica como sigue:
+a)
+el apartado 1 se sustituye por el texto siguiente:
+«1. A los efectos de la aplicación del artículo 12, apartado 1, del Reglamento de base, una “persona que ejerza una actividad por cuenta ajena en un Estado miembro por cuenta de un empleador que realiza normalmente en él sus actividades y a la que este empleador envíe para realizar un trabajo por su cuenta en otro Estado miembro” podrá ser una persona contratada con miras a ser desplazada o enviada a otro Estado miembro, siempre y cuando durante un período de al menos tres meses inmediatamente antes de ocupar su puesto de trabajo haya estado sujeta a la legislación del Estado miembro en el que el empleador esté establecido.»
+;
+b)
+se inserta el apartado siguiente:
+«1 bis. Una vez que una persona ha ejercido una actividad por cuenta ajena o por cuenta propia en otro Estado miembro de conformidad con el artículo 12, apartado 1 o 2, del Reglamento de base durante un total de veinticuatro meses, con interrupciones que no superen los dos meses, del artículo 12, apartado 1 o 2, del Reglamento de base no será aplicable a dicha persona en lo que respecta a dicho Estado miembro hasta que hayan transcurrido al menos dos meses desde el final del período de actividad anterior allí. Cuando concurran circunstancias específicas, podrá concederse una excepción con arreglo al artículo 16, apartado 1, del Reglamento de base.»
+;
+c)
+el apartado 3 se sustituye por el texto siguiente:
+«3. A los efectos de la aplicación del artículo 12, apartado 2, del Reglamento de base, la expresión “que ejerza normalmente una actividad por cuenta propia” se referirá a una persona que realiza habitualmente actividades sustanciales en el territorio del Estado miembro en el que está establecida. En particular, la persona debe haber ejercido su actividad durante un período de al menos tres meses antes de la fecha en que desee acogerse a las disposiciones de dicho artículo y, durante los períodos de actividad temporal en otro Estado miembro, debe seguir manteniendo en el Estado en el que esté establecida los requisitos necesarios para el ejercicio de su actividad de modo que pueda continuarla a su vuelta.»
+;
+d)
+el apartado 5 bis se sustituye por el texto siguiente:
+«5 bis. A los efectos de la aplicación del título II del Reglamento de base, se entenderá por “sede o domicilio” la sede o el domicilio en el que se adopten las decisiones fundamentales de la empresa y en el que se ejerzan las funciones de su administración central.
+La determinación del domicilio social o la sede de explotación pertinente para establecer la legislación aplicable se llevará a cabo en el marco de una evaluación global, basada en factores pertinentes para el caso, ponderando debidamente cada uno en función de las circunstancias concretas. La Comisión Administrativa dispondrá las reglas detalladas para dicha determinación.»
+;
+e)
+el apartado 10 se sustituye por el texto siguiente:
+«10. La determinación de la legislación aplicable con arreglo a lo dispuesto en el artículo 13 del Reglamento de base se aplicará durante un máximo de veinticuatro meses, teniendo en cuenta la situación prevista para los doce meses civiles siguientes.
+Transcurrido el período de veinticuatro meses, se evaluará de nuevo la legislación aplicable a la luz de la situación del interesado.»
+;
+f)
+se añade el apartado siguiente:
+«12. A los efectos de la aplicación del artículo 13 del Reglamento de base, en relación con una persona que resida fuera del territorio de la Unión y ejerza sus actividades por cuenta ajena o por cuenta propia en dos o más Estados miembros se aplicarán, mutatis mutandis, las disposiciones del Reglamento de base y del Reglamento de aplicación sobre la determinación de la legislación aplicable, a condición de que la residencia de dicha persona se considere que está situada en el Estado miembro en el que la persona realiza la mayor parte de sus actividades en términos de tiempo de trabajo dentro del territorio de la Unión.».
+11)
+El artículo 15 se sustituye por el texto siguiente:
+«Artículo 15
+Procedimientos de aplicación del artículo 11, apartado 3, letras b) y d), del artículo 11, apartado 4, y del artículo 12 del Reglamento de base (sobre la comunicación de información a las instituciones interesadas)
+1. Cuando, con arreglo al artículo 12 del Reglamento de base, una persona ejerza su actividad en un Estado miembro distinto del Estado miembro competente en virtud del título II del Reglamento de base, el empleador o, si la persona no ejerce una actividad por cuenta ajena, el propio interesado, informará a la institución competente del Estado miembro cuya legislación sea aplicable en consecuencia antes del inicio de la actividad y solicitará el certificado al que se refiere el artículo 19, apartado 2, del Reglamento de aplicación.
+1 bis. Una vez recibida la solicitud a que se refiere el apartado 1, la institución competente expedirá un certificado respecto a la legislación aplicable al interesado. Cuando la expedición de dicho certificado no sea inmediata, emitirá un acuse de recibo automático de la solicitud, que dará fe de que la institución competente ha sido informada de conformidad con el apartado 1. La institución competente pondrá a disposición de la institución designada por la autoridad competente del Estado miembro en el que se ejerza la actividad, sin demora, la información pertinente relativa a la legislación aplicable a esa persona o, cuando dicha información aún no esté disponible, la información relativa al acuse de recibo.
+1 ter. Los apartados 1 y 1 bis no se aplicarán a los viajes de negocios.
+Además, con excepción de las actividades en el sector de la construcción tal como se definen en el anexo 6, los apartados 1 y 1 bis, no se aplicarán a las actividades con una duración total no superior a tres días consecutivos de trabajo dentro de un período de treinta días consecutivos.
+1 quater. En las situaciones contempladas en el artículo 12 del Reglamento de base, cuando no se haya expedido el certificado a que se refiere el artículo 19, apartado 2, del Reglamento de aplicación, el empleador o, en el caso de los trabajadores por cuenta propia, el interesado, a petición de la institución competente del Estado miembro en el que se ejerza la actividad, proporcionará el acuse de recibo a que se refiere el apartado 1 bis del presente artículo o pruebas que demuestren que la actividad entra en el ámbito de aplicación de la exención a que se refiere el apartado 1 ter del presente artículo.
+Los empleadores seguirán siendo responsables de aportar las pruebas necesarias y de proporcionar a las personas que ejercen una actividad por cuenta ajena en otro Estado miembro los documentos justificativos pertinentes a tal efecto. Tales pruebas podrán aportarse en formato impreso o electrónico.
+1 quinquies. Cuando la institución competente del Estado miembro en el que se ejerza la actividad tenga dudas sobre la información proporcionada por el empleador o el interesado, la validez de un documento o de los justificantes o la exactitud de los hechos en los que se fundamenta el documento, podrá solicitar información adicional a la institución competente del Estado miembro cuya legislación sea aplicable. Se aplicarán el artículo 19 bis y el artículo 20, apartados 3 y 4.
+2. Cuando una persona a la que se aplique el artículo 11, apartado 3, letras b) o d), del Reglamento de base ejerza su actividad en un Estado miembro distinto del Estado miembro competente, el empleador o, si la persona no ejerce una actividad por cuenta ajena, el propio interesado informará de ello a la institución competente del Estado miembro cuya legislación sea aplicable en consecuencia, siempre que sea posible antes del inicio de la actividad. Dicha institución pondrá a disposición del interesado y de la institución designada por la autoridad competente del Estado miembro en el que se ejerza la actividad, sin demora, la información relativa a la legislación aplicable al interesado. El apartado 1 ter del presente artículo se aplicará mutatis mutandis.
+3. El empleador en el sentido del artículo 11, apartado 4, del Reglamento de base que tenga un empleado a bordo de un buque que enarbole pabellón de otro Estado miembro informará de ello, si es posible con antelación, a la institución competente del Estado miembro cuya legislación sea aplicable en consecuencia, con arreglo al artículo 11, apartado 4, frase segunda, del Reglamento de base. Dicha institución pondrá sin demora a disposición de la institución designada por la autoridad competente del Estado miembro cuyo pabellón enarbole el buque en el que el trabajador ejerza su actividad la información relativa a la legislación aplicable al interesado, con arreglo al artículo 11, apartado 4, del Reglamento de base.».
+12)
+El artículo 16 se modifica como sigue:
+a)
+los apartados 1, 2 y 3 se sustituyen por el texto siguiente:
+«1. La persona que ejerza actividades en dos o más Estados miembros informará a la institución designada por la autoridad competente del Estado miembro de residencia en consecuencia. El empleador también podrá aportar dicha información en nombre de esta persona.
+2. La institución designada del lugar de residencia determinará sin demora la legislación aplicable al interesado, teniendo en cuenta las disposiciones del artículo 13 del Reglamento de base y del artículo 14 del Reglamento de aplicación. Si dicha institución determina que es aplicable la legislación del Estado miembro de residencia, informará de su determinación de la legislación aplicable a la institución designada de cada uno de los Estados miembros en los que se ejerza una actividad o en los que se encuentre el empleador.
+3. En caso de que la institución designada del lugar de residencia determine que es aplicable la legislación de otro Estado miembro, la determinación será provisional y la institución informará, sin demora, de dicha determinación de la legislación aplicable a las instituciones designadas de cada uno de los Estados miembros en los que se ejerza una actividad o en los que se encuentre el empleador. La determinación provisional pasará a ser definitiva en un plazo de dos meses a partir de que las instituciones designadas por las autoridades competentes de los Estados miembros de que se trate hayan sido informadas al respecto, salvo si, a más tardar cuando finalice el plazo de dos meses, al menos una de dichas instituciones informa a la institución designada del lugar de residencia de que aún no puede aceptar la determinación provisional o de que tiene una opinión diferente.»
+;
+b)
+el apartado 5 se sustituye por el texto siguiente:
+«5. La institución competente del Estado miembro cuya legislación sea determinada aplicable, con carácter provisional o definitivo, informará sin demora de la determinación al interesado y a su empleador.».
+13)
+El artículo 19 se modifica como sigue:
+a)
+el apartado 2 se sustituye por el texto siguiente:
+«2. A petición del interesado o del empleador, la institución competente del Estado miembro cuya legislación sea aplicable en virtud de una disposición del título II del Reglamento de base proporcionará un certificado de que esa legislación es aplicable e indicará, si procede, hasta qué fecha y en qué condiciones. El certificado se emitirá en un formato normalizado.»
+;
+b)
+se añade el apartado siguiente:
+«3. Siempre que se pida a una institución que expida un certificado de conformidad con el apartado 2, esta deberá llevar a cabo una evaluación adecuada de los hechos pertinentes para la aplicación de las normas establecidas en el título II del Reglamento de base y confirmará que la información incluida en el certificado es correcta.».
+14)
+Se inserta el artículo siguiente:
+«Artículo 19 bis
+Cooperación en caso de duda sobre la validez de los documentos en relación con la legislación aplicable
+1. No obstante lo dispuesto en el artículo 5, en caso de duda sobre la validez del documento que indique la situación de una persona a efectos de la legislación aplicable o sobre la exactitud de los hechos en que se basa el documento, la institución del Estado miembro que lo reciba se dirigirá a la institución emisora para pedirle las aclaraciones necesarias y, si procede, la retirada o rectificación de dicho documento. La institución solicitante motivará su solicitud y aportará la documentación justificativa pertinente que haya originado la solicitud.
+2. Al recibir una solicitud de ese tipo, la institución emisora reconsiderará los motivos de emisión del documento y, en caso de detectar un error, lo retirará o rectificará en un plazo de treinta días hábiles a partir de la recepción de la solicitud. La retirada o rectificación tendrá efecto retroactivo. No obstante, cuando exista el riesgo de un resultado desproporcionado, y en particular, de pérdida de la condición de persona asegurada para la totalidad o parte del período correspondiente en todos los Estados miembros de que se trate, los Estados miembros se plantearán la posibilidad de aplicar el artículo 16 del Reglamento de base. Cuando la institución emisora considere que, con base en las pruebas de que dispone, no cabe duda de que el solicitante del documento ha cometido fraude, retirará o rectificará el documento sin demora, con efecto retroactivo.
+3. Si la institución emisora, tras considerar los motivos de emisión del documento, no ha sido capaz de detectar ningún error, transmitirá a la institución solicitante todas las pruebas de que disponga en un plazo de treinta días hábiles a partir de la recepción de la solicitud. En casos urgentes, cuando los motivos de la urgencia se hayan indicado y motivado claramente en la solicitud, las pruebas deberán remitirse en un plazo de diez días hábiles a partir de la recepción de la solicitud, también en el caso de que la institución emisora no hubiera terminado sus deliberaciones con arreglo a lo dispuesto en el apartado 2.
+4. En caso de que la institución solicitante, tras haber recibido las pruebas disponibles, siga albergando dudas acerca de la validez de un documento, la exactitud de los hechos en los que se fundamenta su contenido o la exactitud de la información conforme a la cual se expidió el documento, podrá presentar pruebas al respecto y formular una nueva solicitud de aclaración y, si procede, de retirada o rectificación de dicho documento por la institución emisora, con arreglo al procedimiento y los plazos indicados en el presente artículo.
+5. Si persisten las dudas de la institución receptora y no se logra un acuerdo entre las instituciones interesadas, se aplicará el artículo 5, apartado 5.».
+15)
+En el artículo 20, se añaden los apartados siguientes:
+«3. A efectos de la aplicación del título II del Reglamento de base, las instituciones de los Estados miembros, sin perjuicio de lo dispuesto en el artículo 19 bis del Reglamento de aplicación, responderán a las consultas recibidas de las instituciones de los demás Estados miembros en un plazo de 35 días hábiles a partir de la recepción de la solicitud.
+4. Cuando una persona ejerza una actividad por cuenta ajena o por cuenta propia en otro Estado miembro sin el certificado a que se refiere el artículo 19, apartado 2, del Reglamento de aplicación, a menos que, con arreglo al artículo 15 de dicho Reglamento, no se requiera certificado alguno, la institución competente de ese otro Estado miembro podrá solicitar información relativa a la legislación aplicable a dicha persona a la institución del Estado miembro cuya legislación sea aplicable prima facie.
+En caso de que la institución requerida no conteste en el plazo de 35 días hábiles a partir de la recepción de la solicitud, la institución solicitante podrá proceder como si el certificado nunca se hubiera emitido e informará de ello a la institución requerida. En caso de que, ulteriormente, la institución requerida emita dicho certificado, este tendrá, en su caso, efecto retroactivo.».
+16)
+En el título III, el título del capítulo 1 se sustituye por el texto siguiente:
+«Prestaciones de enfermedad, por cuidados de larga duración, de maternidad y de paternidad asimiladas».
+17)
+El artículo 25 se modifica como sigue:
+a)
+el apartado 1 se sustituye por el texto siguiente:
+«1. A efectos de la aplicación del artículo 19 del Reglamento de base, la persona asegurada presentará al proveedor de asistencia sanitaria o de cuidados de larga duración del Estado miembro de estancia un documento expedido por su institución competente que acredite sus derechos a prestaciones en especie. Si la persona asegurada no dispone de dicho documento, la institución del lugar de estancia se dirigirá, a petición del asegurado o si por otro motivo es necesario, a la institución competente para obtenerlo.»
+;
+b)
+el apartado 3 se sustituye por el texto siguiente:
+«3. Las prestaciones en especie a que se refiere el artículo 19, apartado 1, del Reglamento de base serán las prestaciones en especie que se dispensen en el Estado miembro de estancia, de conformidad con su legislación, y que sean necesarias, desde un punto de vista médico o debido a la necesidad de cuidados de larga duración, para evitar que una persona asegurada se vea obligada a regresar antes del final de la estancia prevista al Estado miembro competente con el fin de someterse al tratamiento necesario o recibir prestaciones por cuidados de larga duración.».
+18)
+En el artículo 26, el apartado 4 se sustituye por el texto siguiente:
+«4. Durante todo el procedimiento de autorización, la institución competente conservará la facultad de someter a la persona asegurada a un reconocimiento por un médico o una persona cualificada, con arreglo a la legislación o práctica nacionales, elegidos por ella en el Estado miembro de residencia o de estancia.».
+19)
+En el artículo 31, el apartado 2 se sustituye por el texto siguiente:
+«2. Además, la institución competente informará a la institución del lugar de residencia o estancia acerca del pago en metálico de prestaciones por cuidados de larga duración cuando la legislación que aplique esta última prevea prestaciones en especie por cuidados de larga duración incluidos en la lista a que se refiere el artículo 33 bis, apartado 1, del Reglamento de base.».
+20)
+En el artículo 32, el apartado 1 se sustituye por el texto siguiente:
+«1. Cuando una persona o un grupo de personas estén exentas, previa petición, del seguro médico o de cuidados de larga duración obligatorio y, por tanto, no estén cubiertas por ninguno de los regímenes de seguro de enfermedad o de cuidados de larga duración a los que se aplica el Reglamento de base, la institución de otro Estado miembro no será responsable, únicamente a causa de dicha exención, de sufragar los costes de las prestaciones en especie o en metálico concedidas a esas personas o a miembros de sus familias en cumplimiento del título III, capítulo I, del Reglamento de base.».
+21)
+En el artículo 43, el apartado 3 se sustituye por el texto siguiente:
+«3. La institución de cada Estado miembro calculará, con arreglo a su legislación aplicable, los importes adeudados que correspondan a los períodos de seguro voluntario o facultativo continuado que, en virtud de lo dispuesto en el artículo 53, apartado 3, letra c), del Reglamento de base, no estén sujetos a las cláusulas de supresión, de reducción o de suspensión de otro Estado miembro.».
+22)
+En el artículo 54, el apartado 1 se sustituye por el texto siguiente:
+«1. El artículo 12, apartado 1, del Reglamento de aplicación se aplicará mutatis mutandis al artículo 60 bis del Reglamento de base. Sin perjuicio de las obligaciones básicas de las instituciones afectadas, el interesado podrá presentar ante la institución competente un documento expedido por la institución del Estado miembro a cuya legislación estuviera sujeto en relación con su último período de actividad por cuenta ajena o por cuenta propia en el que se precisen los períodos cubiertos al amparo de dicha legislación.».
+23)
+Se inserta el artículo siguiente:
+«Artículo 54 bis
+Procedimiento para la aplicación del artículo 61, apartado 2, del Reglamento de base
+1. En el caso a que se refiere el artículo 61, apartado 2, del Reglamento de base, el desempleado se inscribirá como solicitante de empleo en los servicios de empleo del Estado miembro del último período de seguro, o de actividad por cuenta ajena o de actividad por cuenta propia, y presentará una solicitud de prestaciones a la institución de dicho Estado miembro. Si la solicitud se presenta a la institución del Estado miembro a que se refiere el artículo 61, apartado 2, del Reglamento de base, esta la remitirá inmediatamente a la institución del Estado miembro del último período de seguro, de actividad por cuenta ajena o de actividad por cuenta propia, para su investigación. La fecha en que se haya presentado la solicitud inicial se aplicará a todas las instituciones de que se trate.
+2. A raíz de la investigación de la solicitud por parte de la institución del Estado miembro del último período de seguro, de actividad por cuenta ajena o de actividad por cuenta propia, cuando se determine que el desempleado no cumple las condiciones para la totalización a que se refiere el artículo 61, apartado 1, del Reglamento de base, y de la información disponible se desprenda que el desempleado ha cumplido el período necesario que la acredita para percibir las prestaciones en virtud del artículo 61, apartado 2, del Reglamento de base, dicha institución transmitirá inmediatamente un documento a la institución del Estado miembro a que se refiere dicha disposición. Si no resulta evidente que el desempleado ha cumplido el período necesario para percibir las prestaciones con arreglo a lo dispuesto en el artículo 61, apartado 2, del Reglamento de base, antes de enviar el documento, la institución del Estado miembro del último período de seguro, de actividad por cuenta ajena o de actividad por cuenta propia, se pondrá en contacto con la institución del Estado miembro a que se refiere dicha disposición para determinar si en dicho Estado miembro se ha completado el plazo especificado en ella.
+3. El documento a que se refiere el apartado 2 incluirá la información necesaria sobre la situación del desempleado. La Comisión Administrativa establecerá el formato y el contenido del documento.».
+24)
+El artículo 55 se modifica como sigue:
+a)
+el apartado 1 se sustituye por el texto siguiente:
+«1. Para poder acogerse a lo dispuesto en el artículo 64, el artículo 64 bis, apartado 2, o el artículo 65, apartado 4, del Reglamento de base, el desempleado que vaya a desplazarse a otro Estado miembro informará a la institución competente antes de su partida y le solicitarán un documento que acredite que sigue teniendo derecho a las prestaciones en las condiciones establecidas en el artículo 64, apartado 1, letra b), del Reglamento de base.».
+b)
+los apartados 4 y 5 se sustituyen por el texto siguiente:
+«4. La institución del Estado miembro al que se haya desplazado el desempleado transmitirá inmediatamente a la institución competente un documento en el que conste la fecha de inscripción del desempleado en los servicios de empleo y su nuevo domicilio.
+En caso de que, durante el período en el que el desempleado siga teniendo derecho a percibir las prestaciones, se produjera cualquier circunstancia que pudiera afectar al derecho a recibir dichas prestaciones, la institución del Estado miembro al que se haya trasladado el desempleado transmitirá inmediatamente a la institución competente y al interesado un documento que recoja la información pertinente.
+La institución del Estado miembro al que se haya trasladado el desempleado proporcionará mensualmente la información pertinente sobre el seguimiento de la situación del desempleado, en particular, si aún se encuentra inscrito en los servicios de empleo y si cumple con los controles organizados y los procedimientos de activación o de colocación.
+5. La institución del Estado miembro al que se haya desplazado el desempleado realizará u organizará los controles como si el interesado fuese un desempleado beneficiario de prestaciones concedidas en virtud de la legislación aplicada por ella. En caso necesario, informará inmediatamente a la institución competente si se produce cualquier circunstancia que pueda afectar al derecho del desempleado a percibir las prestaciones, como la reanudación del trabajo.»
+;
+c)
+el apartado 7 se sustituye por el texto siguiente:
+«7. Los apartados 2 a 6 del presente artículo se aplicarán mutatis mutandis a las situaciones cubiertas por el artículo 64 bis, apartado 1, del Reglamento de base.».
+25)
+El artículo 56 se modifica como sigue:
+a)
+se inserta el apartado siguiente:
+«-1. La institución competente informará a las personas en situación de desempleo total a que se refieren el artículo 65, apartado 1, el artículo 65, apartado 2, párrafo tercero, y el artículo 65, apartado 3, del Reglamento de base de sus derechos y obligaciones y les proporcionará documentos que incluyan toda la información necesaria relativa a la percepción de prestaciones de desempleo con arreglo a la legislación pertinente. Las instituciones competentes se proporcionarán mutuamente la información necesaria para apoyar las actividades de búsqueda de empleo de los desempleados que residan en un Estado miembro distinto del Estado miembro competente y se informarán de los procedimientos y las condiciones de control aplicables, así como del servicio de empleo a cuya disposición deban ponerse dichos desempleados. La institución del Estado miembro de residencia, a petición de la institución competente, la informará inmediatamente de cualquier circunstancia que llegue a su conocimiento y que pudiera modificar el derecho a las prestaciones, en particular de si una persona en situación de desempleo total ha conseguido un empleo o ha pasado a ser trabajador por cuenta propia en el Estado miembro de residencia.»
+;
+b)
+el apartado 1 se sustituye por el texto siguiente:
+«1. Cuando, de conformidad con lo dispuesto en el artículo 65, apartado 6, del Reglamento de base, un desempleado decida ponerse a disposición de los servicios de empleo del Estado miembro que no concede las prestaciones además de a la del Estado miembro que concede las prestaciones, inscribiéndose como demandante de empleo, informará de ello a la institución y a los servicios de empleo del Estado miembro que concede las prestaciones.
+Cuando así lo soliciten los servicios de empleo del Estado miembro que no concede las prestaciones, los servicios de empleo del Estado miembro que concede las prestaciones transmitirán los datos pertinentes relativos a la inscripción y a la búsqueda de empleo por parte del desempleado.
+Los servicios de empleo del Estado miembro que no concede las prestaciones, a petición de la institución competente, informará inmediatamente asimismo a la institución competente de cualquier circunstancia que llegue a su conocimiento y que pudiera modificar el derecho a las prestaciones, en particular de si la persona en situación de desempleo total ha conseguido un empleo o ha pasado a ser trabajador por cuenta propia en el Estado miembro de residencia.»
+;
+c)
+se suprime el apartado 3.
+26)
+Se inserta el artículo siguiente:
+«Artículo 56 bis
+Medidas reforzadas de apoyo y cooperación para los desempleados que hayan residido en un Estado miembro distinto del Estado miembro competente
+1. Las autoridades competentes o las instituciones competentes de dos o más Estados miembros cooperarán y podrán acordar un conjunto de procedimientos y plazos específicos relativos al seguimiento de la situación de los desempleados, así como otras medidas para favorecer la búsqueda de empleo de los desempleados que residen en un Estado miembro distinto del Estado miembro competente.
+2. Los Estados miembros afectados garantizarán que los desempleados a que se refiere el artículo 65 del Reglamento de base tengan acceso en cada uno de sus territorios a la red europea de servicios de empleo (EURES) y a los servicios de apoyo en las regiones transfronterizas, cuando estén disponibles, de conformidad con el Reglamento (UE) 2016/589 del Parlamento Europeo y del Consejo (*19).
+(*19) Reglamento (UE) 2016/589 del Parlamento Europeo y del Consejo, de 13 de abril de 2016, relativo a una red europea de servicios de empleo (EURES), al acceso de los trabajadores a los servicios de movilidad y a la mayor integración de los mercados de trabajo y por el que se modifican los Reglamentos (UE) n.o 492/2011 y (UE) n.o 1296/2013 (DO L 107 de 22.4.2016, p. 1, ELI: http://data.europa.eu/eli/reg/2016/589/oj).»."
+27)
+En el artículo 57, el título se sustituye por el texto siguiente:
+«Disposiciones de aplicación de los artículos 60 bis, 61, 62, 64 y 65 del Reglamento de base relativas a personas aseguradas en un régimen especial para funcionarios».
+28)
+En el artículo 64, apartado 1, el primer guion se sustituye por el texto siguiente:
+«—
+el índice (i = 1, 2, 3 y 4) representa las cuatro categorías de edad consideradas para el cálculo del tanto alzado:
+—
+i = 1: personas menores de 65 años,
+—
+i = 2: personas de edades comprendidas entre 65 y 74 años,
+—
+i = 3: personas de edades comprendidas entre 75 y 84 años,
+—
+i = 4: personas de 85 años o más,».
+29)
+El artículo 65 se sustituye por el texto siguiente:
+«Artículo 65
+Notificación de los costes medios anuales
+1. El coste medio anual por persona de cada categoría de edad correspondiente a un año determinado se notificará a la Comisión de cuentas a más tardar al final del segundo año siguiente al año en cuestión.
+2. Los costes medios anuales notificados según lo dispuesto en el apartado 1 se publicarán en el Diario Oficial de la Unión Europea una vez que hayan sido aprobados por la Comisión Administrativa.
+3. En caso de que un Estado miembro no pueda comunicar los costes medios anuales correspondientes a un año determinado antes de que finalice el plazo contemplado en el apartado 1, deberá solicitar una autorización, dentro de ese mismo plazo, a la Comisión Administrativa y la Comisión de cuentas para utilizar los costes medios anuales correspondientes a dicho Estado miembro publicados en el Diario Oficial de la Unión Europea durante el año anterior al año concreto en que la notificación está pendiente. Cuando soliciten tal autorización, el Estado miembro explicará las razones por las que no puede notificar los costes medios anuales correspondientes al año en cuestión. Si la Comisión Administrativa, tras haber considerado el dictamen de la Comisión de cuentas, aprueba la solicitud del Estado miembro, los costes medios anuales correspondientes al año anterior al año cuya notificación esté pendiente se publicarán de nuevo en el Diario Oficial de la Unión Europea.
+4. La autorización en virtud del apartado 3 no se concederá para dos años consecutivos.».
+30)
+En el artículo 66, el apartado 2 se sustituye por el texto siguiente:
+«2. Los reembolsos entre instituciones de los Estados miembros previstos en los artículos 35 y 41 del Reglamento de base se efectuarán a través del organismo de enlace. Podrá haber un organismo de enlace separado para los reembolsos en virtud de los artículos 35 y 41 del Reglamento de base. Los créditos recíprocos podrán ser compensados entre los organismos de enlace.».
+31)
+El artículo 67 se modifica como sigue:
+a)
+el apartado 3 se sustituye por el texto siguiente:
+«3. Por lo que se refiere al artículo 6, apartado 5, párrafo segundo, y al artículo 73, apartado 2, del Reglamento de aplicación, el plazo establecido en los apartados 1 y 2 del presente artículo no empezará a contar hasta que se haya determinado cuál es la institución competente.»
+;
+b)
+el apartado 7 se sustituye por el texto siguiente:
+«7. La Comisión de cuentas facilitará el cierre final de las cuentas en los casos en que no pueda llegarse a una solución en el plazo a que se refiere el apartado 6 y, previa solicitud motivada de una de las partes, se pronunciará sobre las impugnaciones dentro de los nueve meses siguientes al mes en que se le remitió el asunto».
+32)
+En el artículo 68, el apartado 2 se sustituye por el texto siguiente:
+«2. Este interés se calculará sobre la base del tipo de referencia aplicado por el Banco Central Europeo a sus principales operaciones de refinanciación más dos puntos porcentuales. Se aplicará el tipo de referencia vigente el primer día natural del mes de vencimiento del pago.».
+33)
+Se suprime el artículo 70.
+34)
+En el artículo 72, el apartado 1 se sustituye por el texto siguiente:
+«1. Salvo disposición en contrario del artículo 73 del Reglamento de aplicación, si la institución de un Estado miembro ha abonado a una persona prestaciones indebidas, esta institución, en las condiciones y dentro de los límites fijados por la legislación que aplique, podrá pedir a la institución de cualquier otro Estado miembro responsable de abonar prestaciones a la persona en cuestión que retenga el importe indebido de los atrasos o de los pagos en curso debidos a dicha persona, independientemente de la rama de la seguridad social en cuyo concepto se abone la prestación. La institución del último Estado miembro practicará la retención en las condiciones y dentro de los límites fijados para tales compensaciones de acuerdo con la legislación que aplique, como si se tratase de una cantidad pagada en exceso por ella misma, y transferirá la cantidad retenida a la institución que haya abonado prestaciones indebidas.».
+35)
+El artículo 73 se sustituye por el texto siguiente:
+«Artículo 73
+Liquidación de las prestaciones en metálico y en especie indebidas y de las cotizaciones indebidas en caso de cambio retroactivo de la legislación aplicable o en otras situaciones en las que la institución no fuera competente
+1. En caso de cambio retroactivo de la legislación aplicable, incluidas las situaciones a que se refiere el artículo 6, apartados 4 y 5, del Reglamento de aplicación, así como en otros casos en que una institución que no sea competente haya abonado o concedido prestaciones o percibido cotizaciones indebidamente, dicha institución efectuará un cálculo del importe abonado o percibido y lo enviará a la institución señalada como competente a efectos del reembolso, en el plazo de seis meses a partir de la determinación del cambio en la legislación aplicable o de que se haya señalado la institución responsable del pago de las prestaciones o de percibir las cotizaciones.
+2. Las prestaciones en especie serán reembolsadas por la institución señalada como competente con arreglo a lo dispuesto en los artículos 66, 67 y 68 del Reglamento de aplicación.
+3. La institución señalada como competente para abonar las prestaciones en metálico deducirá, de los atrasos de las prestaciones correspondientes que deba al interesado, el importe que tiene que reembolsar a la institución que no era competente o que era solo provisionalmente competente, y transferirá sin demora el importe deducido a esta última institución.
+Si el importe de las prestaciones indebidamente abonadas es superior al importe de los atrasos pagaderos por la institución señalada como competente, o si estos no existen, la institución señalada como competente deducirá dicha cantidad de los pagos en curso en las condiciones y dentro de los límites fijados en la legislación que aplique y transferirá sin demora el importe deducido a la institución que había abonado indebidamente las prestaciones en metálico a efectos de su reembolso.
+4. La institución que haya percibido indebidamente cotizaciones de una persona física o jurídica no procederá a rembolsar los importes de que se trate a la persona que los haya pagado hasta que haya verificado tales importes con la institución señalada como competente.
+Previa solicitud de la institución señalada como competente, que deberá cursarse a más tardar tres meses después de que haya recibido el cálculo del importe debido o percibido, la institución que haya percibido indebidamente cotizaciones las transferirá a la institución señalada como competente para dicho período a efectos de resolver la situación relativa a las cotizaciones debidas por la persona física o jurídica. Se considerará que las cotizaciones transferidas han sido abonadas con carácter retroactivo a la institución señalada como competente.
+Si el importe de las cotizaciones percibidas indebidamente es superior al importe que la persona física o jurídica debe a la institución señalada como competente, la institución que haya percibido cotizaciones indebidamente reembolsará el importe excedente a la persona física o jurídica interesada, calculado de conformidad con la legislación nacional.
+5. La existencia de plazos en virtud de la legislación nacional no será un motivo válido para denegar la liquidación de créditos entre instituciones en virtud del presente artículo.
+6. Por lo que respecta a los procedimientos conforme al artículo 5, apartado 5, o al artículo 6, apartado 3, del Reglamento de aplicación, el presente artículo no será aplicable a los créditos cuya antigüedad sea superior a 36 meses en la fecha en que haya comenzado el procedimiento .
+7. Dos o más Estados miembros podrán convenir en disposiciones y procedimientos específicos que sean diferentes de los contemplados en los apartados 1 a 6 del presente artículo, y podrán aplicar respecto de las prestaciones en especie el artículo 35, apartado 3, del Reglamento de base, siempre que tales disposiciones y procedimientos no vayan en detrimento de los interesados.
+8. La Comisión Administrativa dispondrá las reglas detalladas para la aplicación del presente artículo.».
+36)
+El artículo 75 se modifica como sigue:
+a)
+en el apartado 1, se añade el guion siguiente:
+«—
+“fecha de vencimiento del crédito”, la fecha en la que debería haberse pagado la deuda con arreglo a la legislación del Estado miembro de la entidad requirente.»
+;
+b)
+se suprime el apartado 3;
+c)
+se añade el apartado siguiente:
+«4. En caso de que la devolución de las cotizaciones a la seguridad social se refiera a una persona que resida o se encuentre en otro Estado miembro, el Estado miembro desde el que deba efectuarse la devolución de conformidad con lo dispuesto en el artículo 2, apartado 2, del Reglamento de aplicación, podrá informar sobre la futura devolución al Estado miembro de residencia o de estancia sin haber recibido una solicitud previa al respecto.».
+37)
+El artículo 77 se sustituye por el texto siguiente:
+«Artículo 77
+Notificación
+1. La entidad requerida, a petición de la entidad requirente y de acuerdo con las normas jurídicas vigentes para la notificación de instrumentos o decisiones similares en su propio Estado miembro, procederá a notificar al destinatario todos los instrumentos y decisiones, comprendidos los judiciales, relativos a un crédito o a su cobro, que procedan del Estado miembro de la entidad requirente y se refieran a un crédito o al cobro de este.
+2. La solicitud de notificación irá acompañada de un modelo normalizado que contendrá al menos la información siguiente y el instrumento o decisión que se notifica:
+a)
+nombre, dirección o razón social y demás datos pertinentes para la identificación del destinatario;
+b)
+la finalidad de la notificación y el plazo dentro del cual debe efectuarse la notificación;
+c)
+una descripción del instrumento o decisión que se notifica y de la naturaleza y cantidad del crédito;
+d)
+el nombre, la dirección y otros datos de contacto de:
+i)
+la oficina responsable del instrumento o decisión que se notifica, y
+ii)
+cuando sea diferente de la oficina a que se refiere el inciso i), la oficina en la que puede obtenerse información adicional en relación con la notificación o con el procedimiento de impugnación de la obligación de pago.
+3. La entidad requerida informará sin demora a la entidad requirente del curso dado a su solicitud de notificación y, en particular, de la fecha en que la decisión o el instrumento se hayan transmitido al destinatario.
+4. La entidad requirente presentará una solicitud de notificación con arreglo a lo dispuesto en el presente artículo únicamente en caso de que sea incapaz de realizar la notificación con arreglo a la normativa en materia de notificación del documento de que se trate aplicable en su Estado miembro, o cuando la notificación conlleve dificultades desproporcionadas.
+5. La entidad requerida se asegurará de que la notificación en su Estado miembro se efectúe con arreglo a las disposiciones legales y reglamentarias y a las prácticas administrativas nacionales en vigor en dicho Estado miembro.
+6. Lo dispuesto en el apartado 5 se entenderá sin perjuicio de cualquier otra forma de notificación utilizada por una autoridad del Estado miembro de la entidad requirente de conformidad con la normativa vigente en dicho Estado miembro. Toda autoridad radicada en el Estado miembro de la entidad requirente podrá notificar cualquier documento directamente, por correo certificado o por vía electrónica, a una persona en el territorio de otro Estado miembro.».
+38)
+El artículo 78 se modifica como sigue:
+a)
+el apartado 1 se sustituye por el texto siguiente:
+«1. A petición de la entidad requirente, la entidad requerida procederá al cobro de los créditos que sean objeto de un instrumento que permita la ejecución en el Estado miembro de la entidad requirente. Toda petición de cobro irá acompañada de un instrumento uniforme que permita la adopción de medidas de ejecución por el Estado miembro de la entidad requerida.»
+;
+b)
+en el apartado 2, se suprime la letra a);
+(c)
+los apartados 3 y 4 se sustituyen por el texto siguiente
+«3. Antes de que la entidad requirente presente una petición de cobro, habrán de aplicarse los procedimientos de cobro adecuados disponibles en el Estado miembro de la entidad requirente, salvo en caso de que:
+a)
+sea evidente que no se dispone de bienes a efectos de cobro en el Estado miembro de la entidad requirente o que dichos procedimientos no darán lugar al pago íntegro del crédito, y la entidad requirente posea información específica que indique que el interesado dispone de bienes en el Estado miembro de la entidad requerida;
+b)
+el recurso a estos procedimientos en el Estado miembro de la entidad requirente dé lugar a dificultades desproporcionadas.
+Cuando una entidad requerida reciba una petición de cobro de una entidad requirente, la entidad requirente proporcionará, a petición de la entidad requerida, toda la información adicional que esta precise para el cobro del crédito. La entidad requirente no estará obligada a aportar la información indicada en el artículo 76, apartado 3, del Reglamento de aplicación.
+4. La petición de cobro contendrá asimismo una declaración de la entidad requirente que confirme que se cumplen las condiciones de los apartados 2 y 3.»
+;
+d)
+se añade el apartado siguiente:
+«6. La petición de cobro de un crédito podrá ir acompañada de otros documentos referentes al crédito y expedidos en el Estado miembro de la entidad requirente.».
+39)
+Los artículos 79 a 82 se sustituyen por el texto siguiente:
+«Artículo 79
+Instrumento que permite la ejecución del cobro
+1. El instrumento uniforme que permite la ejecución en el Estado miembro de la entidad requerida recogerá el contenido de fondo del instrumento inicial que permite la ejecución y constituirá la base exclusiva de las medidas de cobro y las medidas cautelares que se adopten en el Estado miembro de la entidad requerida. No estará sujeto a acto alguno de reconocimiento, adición o sustitución en ese Estado miembro.
+2. El instrumento uniforme que permite la ejecución incluirá:
+a)
+el nombre, la dirección y cualquier otra información pertinente para identificar a la persona física o jurídica interesada o al tercero que posea sus activos;
+b)
+el nombre, la dirección y cualquier otra información pertinente relativa a la oficina responsable de la liquidación del crédito y, si fuera diferente, la oficina de la que puede obtenerse información suplementaria sobre el crédito o las posibilidades de impugnar las obligaciones de pago;
+c)
+información pertinente para la identificación del instrumento que permita su ejecución, emitida en el Estado miembro de la entidad requirente;
+d)
+una descripción del crédito, incluida su naturaleza, el período cubierto por el crédito, su fecha de vencimiento y cualquier otra fecha pertinente en relación con el proceso de ejecución y la cuantía del crédito, incluidos el capital principal, los intereses, multas, sanciones administrativas y cualesquiera otras cargas y gastos debidos, expresados en las monedas de los Estados miembros de las entidades requirente y requerida;
+e)
+la fecha de notificación del instrumento al destinatario por la entidad requirente o la entidad requerida;
+f)
+la fecha a partir de la cual y el plazo durante el cual es posible la ejecución según las normas jurídicas vigentes en el Estado miembro de la entidad requirente;
+g)
+cualquier otra información pertinente.
+Artículo 80
+Modalidades y plazos de pago
+1. El cobro de los créditos se efectuará en la moneda del Estado miembro de la entidad requerida. A reserva de lo dispuesto en el artículo 85, apartado 1 bis, la entidad requerida transferirá a la entidad requirente la totalidad de la suma del crédito que cobre.
+Cuando la entidad requerida remita la suma del crédito a la entidad requirente, también aportará información pertinente en relación con la identificación de la persona física o jurídica interesada a que se refiere el artículo 79, apartado 2, del Reglamento de aplicación.
+2. La entidad requerida, si lo permiten las disposiciones legales, reglamentarias y administrativas vigentes en su Estado miembro, podrá conceder al deudor un plazo para el pago o autorizar un pago fraccionado. Los intereses percibidos por la autoridad requerida como consecuencia de este aplazamiento del pago se remitirán también a la entidad requirente. La autoridad requerida informará posteriormente a la entidad requirente de dicha decisión.
+A partir de la fecha en que reciba la petición de cobro, la entidad requerida aplicará intereses de demora, con arreglo a las disposiciones legales, reglamentarias y administrativas vigentes en el Estado miembro de la entidad requerida.
+Artículo 81
+Impugnación del crédito o del instrumento que permita la ejecución del cobro e impugnación de las medidas de ejecución
+1. Si, durante el procedimiento de cobro, un interesado impugna el crédito, el instrumento inicial que permita la ejecución en el Estado miembro de la entidad requirente, el instrumento uniforme que permita la ejecución en el Estado miembro de la entidad requerida o la validez de una notificación efectuada por una autoridad en los Estados miembros de la entidad requirente, dicho interesado entablará su acción ante las autoridades adecuadas del Estado miembro de la entidad requirente, con arreglo a las normas jurídicas vigentes en dicho Estado miembro. La entidad requirente notificará sin demora esta acción a la entidad requerida. El interesado también podrá informar de dicha acción a la entidad requerida.
+2. Tan pronto como la entidad requerida haya recibido la notificación o información mencionada en el apartado 1 por parte de la entidad requirente o del interesado, suspenderá el procedimiento de ejecución en espera de la decisión de la autoridad competente en la materia, a menos que la entidad requirente pida el cobro del crédito, de conformidad con el párrafo segundo del presente apartado. Sin perjuicio de lo dispuesto en el artículo 84 del Reglamento de aplicación, la entidad requerida podrá recurrir a medidas cautelares para garantizar el cobro del crédito, en la medida en que las disposiciones legales o reglamentarias vigentes en su Estado miembro lo permitan para créditos similares.
+No obstante lo dispuesto en el párrafo primero, la entidad requirente podrá, con arreglo a las disposiciones legales o reglamentarias y a las prácticas administrativas vigentes en su propio Estado miembro, presentar una solicitud motivada a la entidad requerida para que proceda al cobro de un crédito impugnado, en la medida en que las disposiciones legales o reglamentarias y las prácticas administrativas vigentes en el Estado miembro de la entidad requerida así lo prevean. Si el resultado de la impugnación resulta ulteriormente favorable al deudor, la entidad requirente deberá reembolsar cualquier importe cobrado, junto con las compensaciones debidas, con arreglo a la legislación vigente en el Estado miembro de la entidad requerida.
+3. Cuando la impugnación afecte a las medidas de ejecución adoptadas en el Estado miembro de la entidad requerida, o a la validez de la notificación efectuada por una autoridad de la entidad requerida, la acción se entablará ante la autoridad competente de este Estado miembro, con arreglo a sus disposiciones legales y reglamentarias.
+Artículo 81 bis
+Retiradas y modificaciones
+1. La entidad requirente informará inmediatamente a la entidad requerida de toda modificación ulterior o retirada de su petición de cobro, indicando los motivos de tal modificación o retirada.
+2. Si la modificación de la petición se basa en una decisión de la autoridad apropiada a que se refiere el artículo 81, apartado 1, la entidad requirente remitirá a la entidad requerida la decisión junto con un instrumento uniforme revisado que permita la ejecución en el Estado miembro de la entidad requerida. La entidad requerida proseguirá el procedimiento de cobro sobre la base del instrumento revisado.
+Las medidas de cobro o cautelares que se hubieran tomado ya sobre la base del instrumento uniforme original que permite la ejecución en el Estado miembro de la entidad requerida podrán continuar aplicándose sobre la base del instrumento revisado, a menos que la modificación de la petición se deba a la invalidez del instrumento inicial que permite la ejecución en el Estado miembro de la entidad requirente o del instrumento uniforme original que permite la ejecución en el Estado miembro de la entidad requerida.
+Los artículos 79 y 81 se aplicarán en relación con el instrumento revisado.
+3. Si la petición se modifica por otro motivo distinto de los mencionados en el apartado 2 y tal modificación incluye una reducción del importe del crédito, la entidad requerida mantendrá cualquier medida de cobro o cautelar ya adoptada, que se limitarán al importe del crédito que aún queda pendiente.
+Artículo 82
+Límites de la asistencia
+1. Sin perjuicio de la competencia para prestar la asistencia, la entidad requerida no estará obligada:
+a)
+a prestar la asistencia que establecen los artículos 78 a 81 del Reglamento de aplicación si, debido a la situación del deudor, el cobro del crédito causara graves dificultades económicas o sociales en el Estado miembro de la entidad requerida, en la medida en que las disposiciones legales o reglamentarias y las prácticas administrativas vigentes en el Estado miembro de la entidad requerida permitan esta medida para créditos nacionales similares;
+b)
+a prestar la asistencia que establecen los artículos 76 a 81 del Reglamento de aplicación, cuando la petición inicial con arreglo a los artículos 76, 77 o 78 del Reglamento de aplicación se refiera a créditos respecto de los cuales hayan transcurrido más de cinco años entre la fecha en que el crédito vence en el Estado miembro de la entidad requirente y la fecha de la petición inicial de asistencia.
+Con respecto a la letra b), si se impugna el crédito o el instrumento inicial que permita la ejecución del crédito en el Estado miembro de la entidad requirente, el plazo de cinco años comenzará a contar a partir de la fecha en que ya no sea posible impugnar el crédito o el instrumento que permita el cobro.
+Asimismo, cuando las autoridades del Estado miembro de la entidad requirente acepten un aplazamiento del plazo de pago o un plan de pago a plazos, el plazo de cinco años comenzará a contar a partir de la fecha del vencimiento del plazo completo de pago.
+Sin embargo, en tales casos la entidad requerida no estará obligada a conceder la asistencia respecto de los créditos de antigüedad superior a diez años, calculados a partir de la fecha en que vence el crédito en el Estado miembro de la entidad requirente.
+2. La entidad requerida informará a la entidad requirente de los motivos por los que se rechace una petición de asistencia.».
+40)
+El artículo 84 se sustituye por el texto siguiente:
+«Artículo 84
+Medidas cautelares
+1. Previa petición motivada de la entidad requirente, la entidad requerida adoptará medidas cautelares de conformidad con el Derecho nacional y prácticas administrativas vigentes en su Estado miembro, para garantizar el cobro cuando un crédito o el instrumento que permita la ejecución en el Estado miembro de la entidad requirente sea impugnado en el momento en que se realice la solicitud, o cuando el crédito no esté aún sujeto a un instrumento que permita la ejecución en el Estado miembro de la entidad requirente, siempre que, en una situación similar, sean asimismo posibles medidas cautelares, con arreglo l Derecho nacional y las prácticas administrativas del Estado miembro de la entidad requirente.
+El documento elaborado para permitir la adopción de medidas cautelares en el Estado miembro de la entidad requirente y que se refiere al crédito para cuyo cobro se solicite asistencia mutua, de existir, se adjuntará a la solicitud de medidas cautelares en el Estado miembro de la entidad requerida. Dicho documento no estará sujeto a acto alguno de reconocimiento, adición o sustitución en el Estado miembro de la entidad requerida.
+2. La petición de medidas cautelares podrá ir acompañada de otros documentos referentes al crédito y expedidos en el Estado miembro de la entidad requirente.
+3. Para la aplicación del apartado 1 del presente artículo se aplicarán, mutatis mutandis, las disposiciones y los procedimientos contemplados en los artículos 78, 79, 81 y 82 del Reglamento de aplicación.».
+41)
+En el artículo 85, el apartado 1 se sustituye por el texto siguiente:
+«1. La entidad requerida cobrará a la persona física o jurídica interesada y retendrá todo el gasto en que incurra en relación con el cobro, con arreglo a las disposiciones legales y reglamentarias aplicables a créditos similares en el Estado miembro de la entidad requerida.
+1 bis. En caso de que no puedan cobrarse del deudor los costes relacionados con el cobro además de la cuantía del crédito, dichos costes serán deducidos de cualquier cuantía que se haya cobrado o, cuando esto no sea posible, serán reembolsados por la entidad requirente. La entidad requirente y la entidad requerida podrán acordar normas de reembolso específicas para tal caso, o podrán acordar renunciar al reembolso de tales costes.».
+42)
+Se inserta al artículo siguiente:
+«Artículo 85 bis
+Presencia en las oficinas de la administración y participación en las investigaciones administrativas
+1. Por acuerdo entre la entidad requirente y la entidad requerida, y según las normas fijadas por la entidad requerida, los funcionarios autorizados por la entidad requirente, a fin de promover la asistencia mutua establecida en la presente sección, podrán:
+a)
+estar presentes en las oficinas en que desempeñen su cometido las autoridades administrativas del Estado miembro de la entidad requerida;
+b)
+estar presentes durante las investigaciones administrativas llevadas a cabo en el territorio del Estado miembro de la entidad requerida;
+c)
+asistir a los funcionarios competentes del Estado miembro de la entidad requerida en el transcurso de las actuaciones judiciales en dicho Estado miembro.
+2. Siempre que lo permita la legislación vigente en el Estado miembro de la entidad requerida, el acuerdo mencionado en el apartado 1 , podrá disponer que los funcionarios del Estado miembro de la entidad requirente entrevisten a personas y examinar registros.
+3. Cuando actúen de conformidad con los apartados 1 o 2, los funcionarios autorizados por la entidad requirente ostentarán un mandato escrito en el que conste su identidad y su condición oficial.».
+43)
+Se suprime el artículo 86.
+44)
+Se inserta el artículo siguiente:
+«Artículo 86 bis
+Poderes para adoptar actos de ejecución
+1. Mediante actos de ejecución, la Comisión especificará con mayor precisión el procedimiento de cobro. Tales actos de ejecución establecerán:
+a)
+modalidades prácticas necesarias para aplicar esta sección en lo que respecta al envío de información, documentos o decisiones por medios electrónicos al interesado de conformidad con el artículo 4;
+b)
+el formato del instrumento uniforme a que se refiere el artículo 79;
+c)
+la información que debe proporcionar la entidad requerida a la entidad requirente sobre la evolución o el resultado de la petición y el plazo aplicable a ese respecto;
+d)
+las medidas que deberán adoptar las instituciones afectadas en caso de modificación o retirada del crédito que es objeto de una petición de cobro;
+e)
+normas detalladas adicionales necesarias para la aplicación del artículo 75, apartado 2, los artículos 76, 77, 78, 79, 80 y 81, el artículo 82, apartado 1, el artículo 83, apartado 1, párrafo segundo, y los artículos 84, 85 y 85 bis, y
+f)
+el establecimiento de un umbral mínimo para los importes para los que puede formularse una petición de cobro.
+2. Dichos actos de ejecución se adoptarán de conformidad con el procedimiento de examen a que se refiere el artículo 88 quater, apartado 2, del Reglamento de base.».
+45)
+El artículo 87 se modifica como sigue:
+a)
+el apartado 4 se sustituye por el texto siguiente:
+«4. Los apartados 2 y 3 se aplicarán además para establecer o comprobar el estado de dependencia de un beneficiario o solicitante de prestaciones de cuidados de larga duración mencionadas en el artículo 1, letra v ter), del Reglamento de base.»
+;
+b)
+el apartado 6 se sustituye por el texto siguiente:
+«6. Como excepción al principio de cooperación administrativa recíproca y gratuita que figura en el artículo 76, apartado 2, del Reglamento de base, la cantidad efectiva de los gastos de las comprobaciones mencionados en los apartados 1 a 5 del presente artículo la abonará la institución deudora a la que se hubiera pedido hacerlas a la institución que las solicitara. No obstante, si la institución que ha sido requerida para llevar a cabo el control también utiliza las conclusiones para la concesión de las prestaciones por cuenta propia al interesado en virtud de la legislación que se aplique, no reclamará los gastos mencionados en la frase anterior.».
+46)
+Se inserta al artículo siguiente:
+«Artículo 87 bis
+Evaluación
+A más tardar el 2 de noviembre de 2031, la Comisión realizará una evaluación del cumplimiento de los plazos a que se refiere el título II del Reglamento de aplicación y de la aplicación de las normas establecidas en el artículo 14, apartado 5 bis, de dicho Reglamento.
+En su evaluación, la Comisión también valorará si procede ampliar el ámbito de aplicación de las prestaciones por cuidados de larga duración con arreglo al Reglamento de base para incluir las prestaciones relacionadas con el trabajo.
+La Comisión presentará un informe con los resultados de su evaluación al Parlamento Europeo, al Consejo y al Comité Económico y Social Europeo. Los Estados miembros suministrarán a la Comisión toda la información necesaria para la preparación de dicho informe.».
+47)
+En el artículo 89, se suprime el apartado 3.
+48)
+Se suprime el artículo 92.
+49)
+El artículo 93 se sustituye por el texto siguiente:
+«Artículo 93
+Disposiciones transitorias
+Los artículos 87, 87 bis y 87 ter del Reglamento de base serán aplicables a las situaciones reguladas por el Reglamento de aplicación.».
+50)
+Se inserta al artículo siguiente:
+«Artículo 94 bis
+Disposiciones transitorias relativas a las prestaciones por desempleo
+1. Los artículos 56 y 70 y el anexo 5, en su versión vigente antes del 1 de noviembre de 2026, seguirán aplicándose a las prestaciones por desempleo cuyas solicitudes se presenten antes de las fechas de aplicación pertinentes fijadas en el artículo 97, párrafo segundo, punto 2, y párrafos tercero y cuarto.
+2. El artículo 73, en su versión en vigor antes del 1 de noviembre de 2026, seguirá siendo aplicable a las liquidaciones de créditos iniciadas antes del 2 de noviembre de 2028.
+3. El título IV, capítulo III, sección 3, en su versión en vigor antes del 1 de noviembre de 2026, seguirá siendo aplicable a las solicitudes e impugnaciones presentadas antes del 2 de noviembre de 2028.».
+51)
+El artículo 96 se modifica como sigue:
+a)
+en el apartado 1, párrafo segundo, la parte introductoria se sustituye por el texto siguiente:
+«No obstante, a excepción del artículo 107, el Reglamento (CEE) n.o 574/72 seguirá en vigor y se mantendrán sus efectos jurídicos en lo relativo:».
+b)
+se inserta el apartado siguiente:
+«1 bis. A efectos de la legislación a que se refiere el apartado 1 del presente artículo, las normas sobre conversión de monedas se regirán por lo dispuesto en el artículo 90.».
+52)
+El artículo 97 se sustituye por el texto siguiente:
+«Artículo 97
+Entrada en vigor y aplicación
+El presente Reglamento se publicará en el Diario Oficial de la Unión Europea. Entrará en vigor el 1 de mayo de 2010.
+No obstante lo dispuesto en el párrafo primero, se aplicarán las siguientes fechas de aplicación:
+1)
+Las siguientes disposiciones, en su versión en vigor a partir del 1 de noviembre de 2026, serán aplicables a partir de dicha fecha:
+a)
+artículo 1, apartado 2;
+b)
+artículo 2, apartados 2 bis), 5 y 6;
+c)
+artículo 3, apartado 3;
+d)
+artículo 19, apartados 2 y 3;
+e)
+artículo 26, apartado 4;
+f)
+artículo 43, apartado 3;
+g)
+artículo 65;
+h)
+artículo 66, apartado 2;
+i)
+artículo 68, apartado 2;
+j)
+artículo 75, apartados 1, 3 y 4;
+k)
+artículos 85 bis, 86 and 86 bis;
+l)
+artículo 87, apartados 4 y 6;
+m)
+artículo 87 bis;
+n)
+artículo 89, apartado 3;
+o)
+artículos 92, 93 y 94 bis;
+p)
+artículo 96, apartado 1 y 1 bis;
+q)
+anexo 1.
+2)
+Las siguientes disposiciones, en su versión en vigor a partir del 1 de noviembre de 2026, serán aplicables a partir del 2 de noviembre de 2028:
+a)
+artículo 5, apartados 2 a 5;
+b)
+artículo 14, apartados 1, 1 bis, 3, 5 bis, 10 y 12;
+c)
+artículo 15;
+d)
+artículo 16, apartados 1, 2, 3 y 5;
+e)
+artículo 19 bis;
+f)
+artículo 20, apartados 3 y 4;
+g)
+artículo 25, apartados 1 y 3;
+h)
+artículo 31, apartado 2;
+i)
+artículo 32, apartado 1;
+j)
+artículo 54, apartado 1;
+k)
+artículo 54 bis;
+l)
+artículo 55, apartados 1, 4, 5 y 7;
+m)
+artículo 56, apartados -1, 1 y 3;
+n)
+artículo 56 bis;
+o)
+artículo 67, apartados 3 y 7;
+p)
+artículo 70;
+q)
+artículo 72, apartado 1;
+r)
+artículos 73 y 77;
+s)
+artículo 78, apartados 1 a 4 y 6;
+t)
+artículos 79 a 82 y 84;
+u)
+artículo 85, apartados 1 y 1 bis;
+v)
+anexos 5 and 6.
+3)
+El artículo 64, en su versión en vigor a partir del 1 de noviembre de 2026, será aplicable a partir del 1 de enero de 2027.
+No obstante lo dispuesto en el párrafo segundo, puntos 1) y 2), del presente artículo, con respecto a las personas para las que Luxemburgo era el Estado competente durante su última actividad por cuenta ajena o por cuenta propia, los artículos 56 y 70 y el anexo 5, en su versión en vigor antes del 1 de noviembre de 2026, serán aplicables hasta el 2 de noviembre de 2031. Durante este período, el artículo 56 bis no será aplicable a Luxemburgo.
+Luxemburgo podrá notificar a la Comisión la necesidad de prorrogar el plazo a que se refiere el párrafo tercero hasta el 2 de noviembre de 2033. Dicha notificación de prórroga se efectuará en un plazo razonable y antes de que finalice el plazo establecido en el párrafo tercero. La notificación se publicará en el Diario Oficial de la Unión Europea.».
+53)
+Los anexos del Reglamento (CE) n.o 987/2009 se modifican de conformidad con el anexo II del presente Reglamento.
+Artículo 3
+Entrada en vigor y fecha de aplicación
+El presente Reglamento entrará en vigor el primer día del mes siguiente al de su publicación en el Diario Oficial de la Unión Europea.
+El presente Reglamento será obligatorio en todos sus elementos y directamente aplicable en cada Estado miembro.
+Hecho en Estrasburgo, el 7 de octubre de 2026.
+Por el Parlamento Europeo
+La Presidenta
+R. METSOLA
+Por el Consejo
+El Presidente
+T. BYRNE
+(1) DO C 345 de 13.10.2017, p. 85.
+(2) DO C 342 de 12.10.2017, p. 65.
+(3) Posición del Parlamento Europeo de 7 de julio de 2026 (pendiente de publicación en el Diario Oficial) y Decisión del Consejo de 28 de septiembre de 2026.
+(4) Reglamento (CE) n.o 883/2004 del Parlamento Europeo y del Consejo, de 29 de abril de 2004, sobre la coordinación de los sistemas de seguridad social (DO L 166 de 30.4.2004, p. 1, ELI: http://data.europa.eu/eli/reg/2004/883/oj).
+(5) Reglamento (CE) n.o 987/2009 del Parlamento Europeo y del Consejo, de 16 de septiembre de 2009, por el que se adoptan las normas de aplicación del Reglamento (CE) n.o 883/2004, sobre la coordinación de los sistemas de seguridad social (DO L 284 de 30.10.2009, p. 1, ELI: http://data.europa.eu/eli/reg/2009/987/oj).
+(6) Reglamento (UE) n.o 465/2012 del Parlamento Europeo y del Consejo, de 22 de mayo de 2012, por el que se modifican el Reglamento (CE) n.o 883/2004, sobre la coordinación de los sistemas de seguridad social, y el Reglamento (CE) n.o 987/2009, por el que se adoptan las normas de aplicación del Reglamento (CE) n.o 883/2004 (DO L 149 de 8.6.2012, p. 4, ELI: http://data.europa.eu/eli/reg/2012/465/oj).
+(7) Sentencia del Tribunal de Justicia de 13 de junio de 2014, Wiering, C-347/12, ECLI:EU:C:2014:300.
+(8) DO L 123 de 12.5.2016, p. 1, ELI: http://data.europa.eu/eli/agree_interinstit/2016/512/oj.
+(9) Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales y a la libre circulación de estos datos y por el que se deroga la Directiva 95/46/CE (Reglamento general de protección de datos), (DO L 119 de 4.5.2016, p. 1, ELI: http://data.europa.eu/eli/reg/2016/679/oj).
+(10) Reglamento (UE) n.o 182/2011 del Parlamento Europeo y del Consejo, de 16 de febrero de 2011, por el que se establecen las normas y los principios generales relativos a las modalidades de control por parte de los Estados miembros del ejercicio de las competencias de ejecución por la Comisión (DO L 55 de 28.2.2011, p. 13, ELI: http://data.europa.eu/eli/reg/2011/182/oj).
+(11) Directiva 2008/55/CE del Consejo, de 26 de mayo de 2008, sobre la asistencia mutua en materia de cobro de los créditos correspondientes a determinadas exacciones, derechos, impuestos y otras medidas (DO L 150 de 10.6.2008, p. 28, ELI: http://data.europa.eu/eli/dir/2008/55/oj).
+(12) Directiva 2010/24/UE del Consejo, de 16 de marzo de 2010, sobre la asistencia mutua en materia de cobro de los créditos correspondientes a determinados impuestos, derechos y otras medidas (DO L 84 de 31.3.2010, p. 1, ELI: http://data.europa.eu/eli/dir/2010/24/oj).
+(13) El Reino Unido de Gran Bretaña e Irlanda del Norte dejó de ser un Estado miembro el 31 de enero de 2020. De conformidad con el Acuerdo sobre la retirada del Reino Unido de Gran Bretaña e Irlanda del Norte de la Unión Europea y de la Comunidad Europea de la Energía Atómica, los Reglamentos (CE) n.o 883/2004 y (CE) n.o 987/2009 siguen aplicándose al Reino Unido de Gran Bretaña e Irlanda del Norte en lo que respecta a las personas a que se refieren los artículos 30, 32 y 33 de dicho Acuerdo.
+(14) Reglamento (CE) n.o 45/2001 del Parlamento Europeo y del Consejo, de 18 de diciembre de 2000, relativo a la protección de las personas físicas en lo que respecta al tratamiento de datos personales por las instituciones y los organismos comunitarios y a la libre circulación de estos datos (DO L 8 de 12.1.2001, p. 1, ELI: http://data.europa.eu/eli/reg/2001/45/oj).
+ANEXO I
+Modificaciones de los anexos del Reglamento (CE) n.o 883/2004
+Los anexos del Reglamento (CE) n.o 883/2004 se modifican como sigue:
+1)
+El anexo I se modifica como sigue:
+a)
+la parte I se modifica como sigue:
+i)
+se inserta la sección siguiente detrás de la sección «BULGARIA»:
+«REPÚBLICA CHECA
+Anticipo de pensiones alimenticias de conformidad con la Ley sobre el anticipo de pensiones alimenticias (n.o 588/2020 Coll.)»;
+ii)
+la sección «ESTONIA» se sustituye por el texto siguiente:
+«ESTONIA
+Pensiones alimenticias de conformidad con la Ley de prestaciones familiares de 1 de enero de 2017»;
+iii)
+la sección «ESLOVAQUIA» se sustituye por el texto siguiente:
+«ESLOVAQUIA
+Prestación alimenticia sustitutoria establecida en la Ley n.o 201/2008 Coll. en su versión modificada»;
+iv)
+la sección «SUECIA» se sustituye por el texto siguiente:
+«SUECIA
+Pensiones alimenticias (capítulos 17 a 19 del Código de la Seguridad Social (2010:110))»;
+b)
+la parte II se modifica como sigue:
+i)
+la sección «LITUANIA» se sustituye por el texto siguiente:
+«LITUANIA
+Pensiones alimenticias para los menores con arreglo a la Ley sobre las pensiones alimenticias para los menores»;
+ii)
+se suprime la sección «HUNGRÍA»;
+iii)
+la sección «POLONIA» se sustituye por el texto siguiente:
+«POLONIA
+Subsidio único de natalidad (Ley sobre prestaciones familiares)
+Prestación única por el nacimiento de un bebé diagnosticado con una incapacidad grave e irreversible o con una enfermedad potencialmente mortal para la que no haya tratamiento, originadas en el período de desarrollo prenatal o durante el parto»;
+iv)
+se suprime la sección «RUMANÍA»;
+v)
+la sección «ESLOVAQUIA» se sustituye por el texto siguiente:
+«ESLOVAQUIA
+Subsidio de natalidad»;
+vi)
+la sección «FINLANDIA» se sustituye por el texto siguiente:
+«FINLANDIA
+Las prestaciones de maternidad, el subsidio uniforme de maternidad y la ayuda en forma de una cuantía a tanto alzado para hacer frente a los costes de una adopción internacional, con arreglo a la Ley de subsidios de maternidad (477/1993)»;
+vii)
+se añade la sección siguiente:
+«SUECIA
+Subsidio de adopción (capítulo 21 del Código de la Seguridad Social (2010:110))».
+2)
+El anexo II se modifica como sigue:
+a)
+se suprimen las secciones «DINAMARCA-FINLANDIA» y «DINAMARCA-SUECIA»;
+b)
+la sección «ALEMANIA-AUSTRIA» se sustituye por el texto siguiente:
+«ALEMANIA-AUSTRIA
+Artículo 14, apartado 2, letras g), h), i) y j), del Convenio de seguridad social de 4 de octubre de 1995 (determinación de competencias entre ambos países en lo que respecta a contingencias sobrevenidas en el pasado y períodos de seguro adquiridos); la aplicación de dicha disposición sigue limitada a los beneficiarios cubiertos por el mismo.»;
+c)
+se suprimen las secciones «ESPAÑA-PORTUGAL» y «FINLANDIA-SUECIA».
+3)
+En el anexo III, se suprimen las secciones «ESTONIA», «ESPAÑA», «CROACIA», «ITALIA», «LITUANIA», «HUNGRÍA», «PAÍSES BAJOS», «FINLANDIA» y «SUECIA».
+4)
+El anexo IV se modifica como sigue:
+a)
+se inserta la sección «ESTONIA» después de «ALEMANIA»;
+b)
+se inserta la sección «LETONIA» después de «CHIPRE»;
+c)
+se inserta la sección «LITUANIA» después de «LETONIA»;
+d)
+se inserta la sección «MALTA» después de «HUNGRÍA»;
+e)
+se inserta la sección «PORTUGAL» después de «POLONIA»;
+f)
+se inserta la sección «RUMANÍA» después de «PORTUGAL»;
+g)
+se inserta la sección «ESLOVAQUIA» después de «ESLOVENIA»;
+h)
+se inserta la sección «FINLANDIA» después de «ESLOVAQUIA»;
+i)
+se añade la sección «REINO UNIDO» después de «SUECIA».
+5)
+En el anexo VI, se suprime la sección «FINLANDIA».
+6)
+En el anexo VIII, la Parte I, se modifica como sigue:
+a)
+la sección «LITUANIA» se sustituye por el texto siguiente:
+«LITUANIA
+Todas las solicitudes de pensiones de viudedad de la seguridad social calculadas en función de la pensión base de viudedad (Ley de pensiones de la seguridad social).»;
+b)
+en la sección «AUSTRIA», la letra g) se sustituye por el texto siguiente:
+«g)
+Todas las solicitudes de prestaciones de conformidad con la Ley federal de 22 de diciembre de 2018 sobre las pensiones de los notarios austriacos (NVG 2020).
+h)
+Prima inicial anticipada en virtud de los artículos 262 bis y 286 bis de la Allgemeines Sozialversicherungsgesetz (ASVG) (Ley federal sobre Seguridad Social), de 9 de septiembre de 1955, el artículo 144 bis de la Gewerbliches Sozialversicherungsgesetz (GSVG) (Ley federal al relativa a la seguridad social para personas que trabajan en el comercio), de 11 de octubre de 1978, y el artículo 135 bis de la Bauern-Sozialversicherungsgesetz (BSVG) (Ley federal relativa a la seguridad social para los productores agrarios), de 11 de octubre de 1978.».
+7)
+El anexo IX se modifica como sigue:
+a)
+la parte I se modifica como sigue:
+i)
+se añade la sección siguiente después de la sección «DINAMARCA»:
+«ESTONIA
+Asignación de capacidad laboral concedida con arreglo a la Ley sobre la asignación de capacidad laboral»;
+ii)
+la sección «FINLANDIA» se sustituye por el texto siguiente:
+«FINLANDIA
+Pensiones para cónyuges determinadas según las normas transitorias y concedidas antes del 1 de enero de 1994 (Ley de aplicación de las pensiones nacionales, 569/2007)
+La cuantía adicional de la pensión destinada a menores cuando se calcula la prestación independiente de conformidad con la Ley nacional de pensiones (Ley nacional de pensiones, 568/2007)»;
+b)
+en la parte II la sección «LITUANIA» se sustituye por el texto siguiente:
+«LITUANIA
+a)
+Pensiones por incapacidad laboral de la seguridad social, abonadas en virtud de la Ley de pensiones de la seguridad social
+b)
+Pensiones de viudedad y orfandad de la seguridad social, calculadas sobre la base de la pensión por incapacidad laboral de la persona fallecida con arreglo a la Ley de pensiones de la seguridad social»;
+c)
+en la parte III, el párrafo tercero se sustituye por el texto siguiente:
+«Convenio nórdico de seguridad social de 12 de junio de 2012».
+8)
+El anexo X se modifica como sigue:
+a)
+se suprime la sección «REPÚBLICA CHECA»;
+b)
+en la sección «ALEMANIA», la letra b) se sustituye por el texto siguiente:
+«b)
+Bürgergeld, seguro básico para demandantes de empleo de conformidad con el volumen II del Código Social .»;
+c)
+la sección «ESTONIA» se modifica como sigue:
+i)
+se suprime la letra a);
+ii)
+se añade la letra siguiente:
+«c)
+Subsidio de subsistencia para pensionistas que viven solos (Ley de Seguridad Social de 6 de septiembre de 2016).»;
+d)
+la sección «LITUANIA» se sustituye por el texto siguiente:
+«LITUANIA
+a)
+Pensiones de asistencia social, invalidez y vejez (Ley de 2005 sobre las pensiones de asistencia social, artículos 5 y 6).
+b)
+Subsidio de compensación (Ley de 2005 sobre las pensiones de asistencia social, artículo 12).
+c)
+Compensación especial de transporte destinada a las personas con discapacidad con problemas de movilidad, concedida antes de 2019 de conformidad con la Ley de compensaciones de transporte.»;
+e)
+en la sección «HUNGRÍA», se suprime la letra c);
+f)
+la sección «AUSTRIA» se sustituye por el texto siguiente:
+«AUSTRIA
+a)
+Complemento compensatorio [Ley federal de 9 de septiembre de 1955 sobre Seguridad Social (ASGV), Ley federal de 11 de octubre de 1978 relativa a la seguridad social para personas que trabajan en el comercio (GSVG) y Ley federal de 11 de octubre de 1978 relativa a la seguridad social para los productores agrarios (BSVG)].
+b)
+Subsidio complementario [Ley federal de 18 de noviembre de 1965 sobre los derechos de pensión de los funcionarios federales, de sus supervivientes y de los miembros de sus familias [Pensionsgesetz 1965 (PG 1965)]; Ley federal sobre las prestaciones de pensión de los funcionarios de los ferrocarriles federales austriacos [Bundesbahn-Pensionsgesetz (BB-PG)]; Ley federal, de 9 de julio de 1958, sobre las prestaciones de jubilación y pensión de los empleados de los teatros federales [Bundestheaterpensionsgesetz (BThPG)].»;
+g)
+la sección «POLONIA» se sustituye por el texto siguiente:
+«POLONIA
+a)
+Pensión social (Ley de 27 de junio de 2003 sobre pensiones sociales).
+b)
+Prestación parental complementaria (Ley de 31 de enero de 2019 sobre la prestación parental complementaria).
+c)
+Prestación complementaria para las personas sin autonomía (Ley de 31 de julio de 2019 sobre la prestación complementaria para las personas sin autonomía).»;
+h)
+la sección «PORTUGAL» se modifica como sigue:
+i)
+la letra a) se sustituye por el texto siguiente:
+«a)
+Pensión estatal de vejez no contributiva (Decreto Ley n.o 464/80 de 13 de octubre de 1980).»;
+ii)
+se añade la letra siguiente:
+«d)
+El componente básico y el complemento de la prestación social para la inclusión (Decreto-Ley n.o 126-A/2017, de 6 de octubre de 2017, en su versión modificada).»;
+i)
+se inserta la siguiente sección después de la sección «PORTUGAL»:
+«RUMANÍA
+Subsidio social para pensionistas (Ordenanza gubernamental con carácter de urgencia n.o 6/2009, que fija la pensión social mínima garantizada, refrendada por la Ley n.o 196/2009).»;
+j)
+se suprime la sección «ESLOVENIA»;
+k)
+en la sección «FINLANDIA», se suprime la letra c);
+l)
+la sección «SUECIA» se sustituye por el texto siguiente:
+«SUECIA
+a)
+Complemento de vivienda para los titulares de una pensión (capítulos 99 a 103 del Código de Seguridad Social) (2010:110).
+b)
+Pensión alimenticia para personas de edad avanzada (capítulo 74 del Código de la Seguridad Social) (2010:110).».
+m)
+en la sección «REINO UNIDO», se añaden las letras siguientes:
+«f)
+Componente de movilidad del pago de independencia personal (en la legislación de Gran Bretaña, la parte 4 de la Ley de reforma del bienestar de 2012 y en la legislación de Irlanda del Norte, la parte 5 de la Orden de reforma del bienestar (Irlanda del Norte) 2015 (S.I. 2015/2006 (N.I. 1)).
+g)
+Pago de alimentos para un mejor comienzo [Welfare Foods (Best Start Foods) Regulations 2019 (SSI 2019/193) (Escocia)].
+h)
+Subsidios para un mejor comienzo (subsidio para embarazos y bebés, beca de aprendizaje temprano, beca de edad escolar) [The Early Years Assistance (Best Start Grants) Regulations 2018 (SSI 2018/370) (Escocia)].
+i)
+Subsidio para gastos funerarios [Funeral Expense Assistance Regulations 2019 (SSI 2019/292) (Escocia)].
+j)
+Prestación por hijos de Escocia [The Scottish Child Payment Regulations 2020 (SSI 2020/XX)].
+k)
+Prestación por discapacidad infantil, componente de movilidad [The Disability Assistance for Children and Young People Regulations 2021 (SSI 2021/174) (Escocia)].
+l)
+Prestación por discapacidad para adultos, componente de movilidad [The Social Security (Escocia) Act 2018 (“SS(S)A”) y The Disability Assistance for Working Age People (Escocia) Regulations 2022].
+m)
+Subsidio de calefacción de invierno para pensionistas [The Winter Heating Assistance (Pension Age) (Escocia) Amendment Regulations 2025].
+n)
+Pago de combustible para el invierno [The Social Fund Winter Fuel Payment Regulations 2025].».
+9)
+El anexo XI se modifica como sigue:
+a)
+la sección «REPÚBLICA CHECA» se sustituye por el texto siguiente:
+«REPÚBLICA CHECA
+1.
+A efectos de la definición de los miembros de la familia con arreglo al artículo 1, letra i), “cónyuge” incluye también a las parejas registradas según se definen en la ley checa n.o 115/2006 Coll., sobre parejas registradas.
+2.
+No obstante lo dispuesto en los artículos 5 y 6 del presente Reglamento, a efectos de la concesión de la prestación complementaria en relación con los períodos de seguro cumplidos con arreglo a la legislación de la antigua República Federal Checoslovaca, únicamente podrán tenerse en cuenta los períodos de seguro cumplidos con arreglo a la legislación checa para cumplir el requisito de un año, como mínimo, de seguro de pensión checa dentro del período establecido después de la fecha de la disolución de la Federación (artículo 106 bis, apartado 1, letra b), de la Ley n.o 155/1995 Coll., sobre el seguro de pensión).»;
+b)
+en la sección «ALEMANIA», el punto 3 se sustituye por el texto siguiente:
+«3.
+A efectos de la concesión de prestaciones en metálico en virtud del artículo 47.1 del volumen V, del artículo 47.1 del volumen VII y del artículo 24i del volumen V del Código Social a las personas aseguradas que viven en otro Estado miembro, los regímenes alemanes de seguro calculan el pago neto, que se utiliza para evaluar las prestaciones, como si la persona asegurada viviera en Alemania, a menos que esta solicite una evaluación sobre la base del pago neto que percibe efectivamente. A efectos de la concesión de las prestaciones de permiso parental en virtud de la Ley federal relativa al subsidio parental y al permiso parental (BEEG) a las personas que residen en otro Estado miembro, la institución competente alemana en materia de prestaciones de permiso parental calculará la media de los ingresos mensuales percibidos con arreglo a los artículos 2c a 2f de la Ley, que se utiliza para evaluar las prestaciones, como si la persona residiera en Alemania. De este modo, si se aplica el tramo impositivo IV en virtud de la segunda frase del artículo 2e(3) del BEEG porque la persona beneficiaria no ha estado clasificada en ningún otro tramo impositivo alemán durante el período de evaluación, esta podrá pedir que las prestaciones de permiso parental se evalúen sobre la base de sus ingresos netos reales gravados en el Estado miembro de residencia.»;
+c)
+la sección «ESTONIA» se sustituye por el texto siguiente:
+«ESTONIA
+1.
+Para calcular las prestaciones parentales, se considerará que los períodos de empleo cumplidos en un Estado miembro distinto de Estonia se basan en el mismo importe medio de las cotizaciones sociales pagadas durante los períodos de empleo en Estonia con las que se totalizan. Si durante el año de referencia el interesado solo ha trabajado en otros Estados miembros, el cálculo de la prestación se basará en el importe medio de las cotizaciones sociales pagadas en Estonia entre el año de referencia y el permiso de maternidad.
+2.
+A efectos del cálculo del prorrateo del subsidio por capacidad de trabajar, de conformidad con el artículo 52, apartado 1, letra b), del presente Reglamento, los períodos de residencia cumplidos en Estonia se tendrán en cuenta a partir de los 16 años de edad hasta el momento en que ocurrió la contingencia.»;
+d)
+la sección «CHIPRE» se sustituye por el texto siguiente:
+«CHIPRE
+A efectos de la aplicación de lo dispuesto en los artículos 6, 51 y 60 bis del presente Reglamento, para cualquier período iniciado a partir del 6 de octubre de 1980, se determinará una semana de seguro con arreglo a la legislación chipriota mediante la división de la retribución total sujeta a cotización correspondiente al período de que se trate entre el importe semanal de la retribución básica sujeta a cotización aplicable en el ejercicio fiscal pertinente, siempre y cuando el número de semanas así determinadas no exceda del número de semanas naturales del período correspondiente.»;
+e)
+en la sección «MALTA», la letra a) se sustituye por el texto siguiente:
+«a)
+Únicamente a efectos de la aplicación de los artículos 49 y 60 del presente Reglamento, las personas empleadas con arreglo a la Ley de las Fuerzas Armadas maltesas (capítulo 220 de la Legislación maltesa), a la Ley de Policía (capítulo 164 de la Legislación maltesa), a la Ley de Prisiones (capítulo 260 de la legislación maltesa) y a la Ley de Protección Civil (capítulo 411 de la Legislación maltesa) recibirán el trato de funcionarios.»;
+f)
+en la sección «PAÍSES BAJOS», el punto 1 se sustituye por el texto siguiente:
+«1. Seguro de asistencia sanitaria
+a)
+Por lo que se refiere al derecho a las prestaciones en especie en virtud de la legislación neerlandesa, tendrán derecho a las prestaciones en especie, a efectos de la aplicación de los capítulos 1 y 2 del título III del presente Reglamento:
+i)
+las personas que estén obligadas a darse de alta en un organismo de seguro de enfermedad, de conformidad con la Ley sobre el seguro de enfermedad (Zorgverzekeringswet), y
+ii)
+siempre que no estén incluidas en el inciso i), las personas residentes en otro Estado miembro y que, conforme al presente Reglamento, tengan derecho a asistencia sanitaria en su país de residencia, a cargo de los Países Bajos.
+b)
+Las personas contempladas en el punto 1, letra a), inciso i), deberán, de conformidad con lo dispuesto en la Ley sobre el seguro de enfermedad (Zorgverzekeringswet), darse de alta en un organismo de seguro de enfermedad; y las personas contempladas en el punto 1, letra a), inciso ii), deberán inscribirse en el CAK.
+c)
+Las disposiciones de la Ley del seguro de enfermedad (Zorgverzekeringswet) y de la Ley de cuidados de larga duración (Wet langdurige zorg) relativas a la obligación de pagar cotizaciones se aplicarán a las personas a que se refiere la letra a) y a los miembros de sus familias. Con respecto a los miembros de la familia, las cotizaciones se cobrarán a la persona de la que nace el derecho a la asistencia sanitaria.
+d)
+Las personas que tengan derecho a prestaciones en especie en virtud de la legislación de un Estado miembro distinto de los Países Bajos y que residan o permanezcan temporalmente en los Países Bajos tendrán derecho a recibir prestaciones en especie con arreglo a la póliza ofrecida por la institución del lugar de residencia o de estancia a las personas aseguradas en los Países Bajos, teniendo en cuenta el artículo 11, apartados 1, 2 y 3 de la Ley del seguro de enfermedad (Zorgverzekeringswet), así como las prestaciones en especie que se disponen en la Ley de cuidados de larga duración (Wet langdurige zorg).
+e)
+El punto 1, letra f), en su versión en vigor anterior al 1 de noviembre de 2026, seguirá siendo aplicable a las personas que, en esa fecha, percibieran una prestación contemplada en dicha disposición y se hubieran inscrito en el CAK.»;
+g)
+se inserta la siguiente sección después de la sección «AUSTRIA»:
+«ESLOVAQUIA
+No obstante lo dispuesto en los artículos 5 y 6 del presente Reglamento, a efectos de la concesión de la prestación complementaria en relación con los períodos de seguro cumplidos con arreglo a la legislación de la antigua República Federal Checoslovaca, únicamente podrán tenerse en cuenta los períodos de seguro cumplidos con arreglo a la legislación eslovaca para cumplir el requisito de un año, como mínimo, de seguro de pensión eslovaca dentro del período establecido después de la fecha de la disolución de la Federación (artículo 66 bis, apartado 1, letra b), de la Ley n.o 461/2003 Col., sobre Seguridad Social).»;
+h)
+en la sección «FINLANDIA», se suprime el punto 1;
+i)
+la sección «SUECIA» se modifica como sigue:
+i)
+se suprimen los puntos 1 y 2;
+ii)
+el punto 3 se sustituye por el texto siguiente:
+«3.
+Las disposiciones del presente Reglamento sobre totalización de períodos de seguro y períodos de residencia no se aplicarán a las disposiciones transitorias de la legislación sueca sobre el derecho a la pensión mínima garantizada para las personas nacidas en 1937 o antes que hayan residido en Suecia durante un período determinado antes de solicitar una pensión (capítulo 6 de la Ley 2010:111) sobre la aplicación del Código de la Seguridad Social en relación con los capítulos 53 a 74).»;
+iii)
+el punto 4 se modifica como sigue:
+—
+la parte introductoria se sustituye por el texto siguiente:
+«4.
+A los efectos del cálculo de los ingresos teóricos para la compensación por enfermedad en función de los ingresos y la compensación ocupacional en función de los ingresos de conformidad con el capítulo 34 del Código de la Seguridad Social (2010:110), se aplicarán las disposiciones siguientes:»;
+—
+la letra b) se sustituye por el texto siguiente:
+«b)
+cuando las prestaciones se calculen con arreglo al artículo 46 del presente Reglamento y la persona no esté asegurada en Suecia, el período de referencia se determinará con arreglo al capítulo 34, secciones 3, 10 y 11 de la Ley mencionada, como si el interesado estuviera asegurado en Suecia. Si durante dicho período el interesado no dispone de ingresos que den derecho a pensión en virtud del capítulo 59 del Código de la Seguridad Social (2010:110), se considerará que el período de referencia se inicia a partir del primer momento en que el asegurado percibió ingresos por una actividad remunerada en Suecia.»;
+iv)
+en el punto 5, la letra a) se sustituye por el texto siguiente:
+«5.
+a)
+Para calcular el capital de pensión teórico a fin de fijar la pensión de supervivencia basada en los ingresos (capítulo 82 del Código de la Seguridad Social) (2010:110), si no se cumple el requisito de la legislación sueca relativo a la adquisición de derechos de pensión durante al menos tres de los cinco años civiles inmediatamente anteriores al fallecimiento de la persona asegurada (período de referencia), se tendrán en cuenta también los períodos de seguro cumplidos en otros Estados miembros, como si se hubieran cumplido en Suecia. Se considerará que los períodos de seguro cumplidos en otros Estados miembros se basan en la base media de cotización sueca. Si el interesado solo ha percibido durante un año en Suecia ingresos computables para la base de cotización, se considerará que cada período de seguro en otro Estado miembro representa el mismo importe.»;
+j)
+en la sección «REINO UNIDO»:
+i)
+Los puntos 1 y 2 se sustituyen por el texto siguiente:
+«1.
+En los casos en los que, en virtud de la legislación del Reino Unido, una persona que haya cumplido la edad de jubilación antes del 6 de abril de 2016 pueda optar al beneficio de una pensión de jubilación cuando:
+a)
+las cotizaciones de su excónyuge o anterior pareja de hecho se computen como si fueran sus propias cotizaciones, o
+b)
+su cónyuge o pareja de hecho o su excónyuge o anterior pareja de hecho cumpla las condiciones de cotización
+aplicables entonces, siempre que, en cada caso, el cónyuge o la pareja de hecho o el excónyuge o la anterior pareja de hecho ejerza o haya ejercido una actividad por cuenta ajena o por cuenta propia y haya estado sujeto a la legislación de dos o más Estados miembros, se aplicarán las disposiciones del capítulo 5 del título III del presente Reglamento para determinar su derecho a la pensión en virtud de la legislación del Reino Unido. En este caso, las referencias en el capítulo 5 a “períodos de seguro” se entenderán como referencias a períodos de seguro cubiertos por:
+i)
+un cónyuge, una pareja de hecho, un excónyuge o una anterior pareja de hecho, si la solicitud proviene de:
+—
+una persona casada o una pareja de hecho, o
+—
+una persona cuyo matrimonio o unión civil haya terminado por cualquier motivo que no sea la defunción del cónyuge o de la pareja de hecho, o
+ii)
+un excónyuge o una anterior pareja de hecho, si la solicitud proviene de:
+—
+una viuda, un viudo o una pareja de hecho que inmediatamente antes de la edad de jubilación no tenía derecho a un subsidio de supervivencia con hijos a cargo, o
+—
+una viuda cuyo esposo falleció antes del 9 de abril de 2001, que inmediatamente antes de la edad de jubilación no tenía derecho a un subsidio de madre viuda, a una prestación de supervivencia con hijos a cargo ni a una pensión de viudedad, o que únicamente tenía derecho a una pensión de viudedad relacionada con su edad calculada de conformidad con el artículo 52, apartado 1, letra b), del presente Reglamento; a estos efectos, se entenderá por “pensión de viudedad relacionada con la edad” una pensión de viudedad de cuantía reducida, de conformidad con el artículo 39, apartado 4, de la Ley de 1992 sobre cotizaciones y prestaciones de la seguridad social (Social Security Contributions and Benefits Act 1992).
+El presente punto no se aplicará a las personas que hayan alcanzado la edad de jubilación el 6 de abril de 2016 o en una fecha posterior.
+2.
+Para la aplicación del artículo 6 del presente Reglamento a las disposiciones que regulan el derecho al subsidio de asistencia, al subsidio para cuidadores, al subsidio para personas con discapacidad y al pago de independencia personal, los períodos de actividad por cuenta ajena, de actividad por cuenta propia o de residencia cumplidos en el territorio de un Estado miembro distinto del Reino Unido se computarán siempre que sea necesario para cumplir los requisitos relativos a los períodos obligatorios de presencia en el Reino Unido antes de la fecha en que se origine el derecho al subsidio de que se trate.»;
+ii)
+en el punto 4, el párrafo primero se sustituye por el texto siguiente:
+«4.
+Cuando se aplique el artículo 46 del presente Reglamento, si el interesado sufre una incapacidad laboral conducente a la invalidez mientras está sujeta a la legislación de otro Estado miembro, el Reino Unido computará, a los efectos del artículo 30A, apartado 5, de la Ley de 1992 sobre cotizaciones y prestaciones de la seguridad social (Social Security Contributions and Benefits Act), la parte 1 de la Ley de reforma del bienestar de 2007 (Welfare Reform Act) o las disposiciones correspondientes de Irlanda del Norte, cualquier período durante el cual el interesado haya percibido, por la incapacidad laboral:
+a)
+prestaciones en metálico del seguro de enfermedad o, en lugar de estas, un salario, o
+b)
+prestaciones contempladas en los capítulos 4 y 5 del título III del presente Reglamento concedidas por la invalidez resultante de dicha incapacidad laboral, con arreglo a la legislación del otro Estado miembro, como si se tratase, según el caso, de períodos de prestaciones por incapacidad temporal abonadas con arreglo a las secciones 30A, apartados 1 a 4 de la Ley de 1992 sobre cotizaciones y prestaciones de la seguridad social o al subsidio de empleo y manutención (fase de evaluación) abonado de conformidad con la parte 1 de la Ley de reforma del bienestar de 2007 o a las disposiciones correspondientes de Irlanda del Norte.».
+10)
+Se añaden los anexos siguientes:
+«ANEXO XII
+PRESTACIONES POR CUIDADOS DE LARGA DURACIÓN CONCEDIDAS COMO EXCEPCIÓN AL ARTÍCULO 33 bis, APARTADO 2
+(Artículo 33 bis, apartado 2)
+AUSTRIA
+Las prestaciones por cuidados de larga duración en efectivo (Ley federal sobre prestaciones por cuidados de larga duración, BGBI. I n.o 110/1993, en su versión modificada) concedidas como resultado de accidentes de trabajo y enfermedades profesionales se coordinan con arreglo a lo dispuesto en el título III, capítulo 2 (Prestaciones por accidentes de trabajo y enfermedades profesionales).
+FRANCIA
+a)
+Las prestaciones por asistencia constante (Código de la Seguridad Social, artículo L.355-1) se coordinan con arreglo a lo dispuesto en el título III, capítulo 4 (Prestaciones por invalidez) o capítulo 5 (Prestaciones de vejez), según la prestación a la que esté destinado a complementar el complemento de asistencia.
+b)
+Las prestaciones complementarias por asistencia constante (Código de la Seguridad Social, artículo L.434-2) se coordinan con arreglo a lo dispuesto en el título III, capítulo 2 (Prestaciones por accidentes de trabajo y enfermedades profesionales).
+ALEMANIA
+Las prestaciones por cuidados de larga duración por accidentes de trabajo y enfermedades profesionales (Libro VII del Código Social alemán, apartado 44) se coordinan con arreglo a lo dispuesto en el título III, capítulo 2 (Prestaciones por accidentes de trabajo y enfermedades profesionales).
+POLONIA
+Los complementos por cuidados (Ley de 17 de diciembre de 1998 sobre prestaciones de vejez e invalidez con cargo al Fondo de la Seguridad Social) se coordinan con arreglo a lo dispuesto en el título III, capítulo 4 (Prestaciones por invalidez) o capítulo 5 (Prestaciones de vejez), según a qué prestación los cuidados están destinados a complementar.
+ANEXO XIII
+PRESTACIONES FAMILIARES EN METÁLICO DESTINADAS A SUSTITUIR A LOS INGRESOS DURANTE LOS PERÍODOS DE EDUCACIÓN DE LOS HIJOS
+(Artículo 68 ter)
+Parte I
+Prestaciones familiares en metálico destinadas a sustituir a los ingresos durante los períodos de educación de los hijos
+(Artículo 68 ter, apartado 1)
+AUSTRIA
+a)
+Subsidio a tanto alzado por cuidado de hijos (Ley sobre el subsidio por cuidado de hijos, 2001/103).
+b)
+Subsidio por cuidado de hijos en concepto de sustitución de las rentas del trabajo (Ley sobre el subsidio por cuidado de hijos, 2001/103).
+c)
+Bonificación a la pareja (Ley sobre el subsidio por cuidado de hijos, 2001/103).
+BÉLGICA
+Derecho a permiso parental en el marco de la interrupción de la actividad profesional (Real Decreto de 29/10/1997 relativo a la introducción de un permiso parental en el marco de la interrupción de la carrera profesional).
+BULGARIA
+a)
+Prestación por embarazo y maternidad (Código de la Seguridad Social, promulgado en el diario oficial n.o 110, de 17.12.1999, vigente desde el 1 de enero de 2000), a partir del sexto mes después del nacimiento.
+b)
+Prestación por la adopción de un niño de entre 2 y 5 años (Código de la Seguridad Social, promulgado en el diario oficial n.o 110, de 17.12.1999, vigente desde el 1 de enero de 2000).
+c)
+Prestación por la educación de un niño de corta edad (Código de la Seguridad Social, promulgado en el diario oficial n.o 110, de 17.12.1999, vigente desde el 1 de enero de 2000).
+REPÚBLICA CHECA
+Subsidio parental (Ley de Asistencia Social del Estado n.o 117/1995 Coll., modificada).
+DINAMARCA
+a)
+Reembolso del salario (Ley sobre el régimen de compensación de la maternidad en el sector privado) a partir de la decimoquinta semana después del nacimiento.
+b)
+Prestaciones en metálico de maternidad y paternidad (Ley de consolidación sobre el derecho de permiso y a la percepción de prestaciones en caso de nacimiento de un hijo) a partir de la decimoquinta semana después del nacimiento.
+ESTONIA
+Prestación parental (Ley de prestaciones familiares de 15 de junio de 2016).
+FINLANDIA
+Subsidio parental (Ley del seguro de enfermedad, 1224/2004).
+FRANCIA
+a)
+El complemento de libre elección de actividad aplicable (niños nacidos o adoptados antes del 1 de enero de 2015) (artículo 60-II de la Ley de financiación de la Seguridad Social para 2004).
+b)
+La prestación compartida por educación de los hijos (PREPARE) (niños nacidos el 1 de enero de 2015 o más tarde) (artículo 8-I, punto 7, de la Ley n.o 2014-873, de 4 de agosto de 2014, para la igualdad entre mujeres y hombres).
+ALEMANIA
+Subsidio parental (Ley de subsidio parental y permiso parental).
+HUNGRÍA
+Asignación por cuidado de los hijos (Ley LXXXIII de 1997 sobre los servicios del sistema obligatorio de seguro de enfermedad).
+ITALIA
+Subsidio por permiso parental (Decreto legislativo de 26 de marzo de 2001, n.o 151).
+LETONIA
+Prestación parental (Ley sobre el seguro de maternidad y enfermedad de 6/11/1995).
+LITUANIA
+Prestación por cuidado de los hijos (Ley de la República de Lituania de 21 de diciembre de 2000 sobre el seguro social de enfermedad y maternidad n.o IX-110, modificada).
+LUXEMBURGO
+Sustitución de los ingresos por permiso parental (Ley de 3 de noviembre de 2016 por la que se reforma el permiso parental).
+POLONIA
+a)
+Complemento al subsidio familiar por cuidado de los hijos durante el período de permiso parental (Ley de 28 de noviembre de 2003 sobre prestaciones familiares).
+b)
+Prestación parental (Ley de 28 de noviembre de 2003 sobre prestaciones familiares).
+PORTUGAL
+a)
+Prestación parental (Decretos Leyes n.o 89/2009, de 9 de abril de 2009, y n.o 91/2009, de 9 de abril de 2009), a partir de la séptima semana después del nacimiento.
+b)
+Prestación parental ampliada (Decretos Leyes n.o 89/2009, de 9 de abril de 2009, y n.o 91/2009, de 9 de abril de 2009).
+c)
+Prestación por adopción (Decretos Leyes n.o 89/2009, de 9 de abril de 2009, y n.o 91/2009, de 9 de abril de 2009).
+RUMANÍA
+Indemnización mensual por cuidado de los hijos (Ordenanza gubernamental con carácter de urgencia n.o 111 de 8 de diciembre de 2010, relativa al permiso parental y a la indemnización mensual por cuidado de los hijos, con las modificaciones y añadidos subsiguientes).
+ESLOVAQUIA
+Subsidio parental (Ley de subsidio parental n.o 571/2009, modificada).
+ESLOVENIA
+a)
+Compensación parental (Ley de protección parental y prestaciones familiares, Boletín Oficial n.o 26/14 y 15/90, ZSDP-1).
+b)
+Subsidio parental (Ley de protección parental y prestaciones familiares, Boletín Oficial n.o 26/14 y 15/90, ZSDP-1).
+SUECIA
+Prestación parental (capítulo 12 del Código de la Seguridad Social (2010:110)).
+Parte II
+Estados miembros que conceden las prestaciones familiares a las que se refiere el artículo 68 ter en su totalidad
+(Artículo 68 ter, apartado 2)
+ESTONIA
+FINLANDIA
+LITUANIA
+LUXEMBURGO
+SUECIA».
+ANEXO II
+Modificaciones de los anexos del Reglamento (CE) n.o 987/2009
+Los anexos del Reglamento (CE) n.o 987/2009 se modifican como sigue:
+1)
+El anexo 1 se modifica como sigue:
+a)
+se suprime la sección «BÉLGICA-ALEMANIA»;
+b)
+en la sección «BÉLGICA-FRANCIA», la letra f) se sustituye por el texto siguiente:
+«f)
+Canje de Notas de 21 de noviembre de 1994 y de 8 de febrero de 1995 sobre las modalidades de liquidación de créditos recíprocos con arreglo a los artículos 93, 94, 95 y 96 del Reglamento (CEE) n.o 574/72, en su versión modificada por el Canje de Notas de 2 de abril de 2021 y de 21 de noviembre de 2022.»;
+c)
+las secciones «DINAMARCA-FINLANDIA» y «DINAMARCA-SUECIA» se sustituyen, en cada caso, por el texto siguiente:
+«Acuerdo administrativo para la aplicación del Convenio nórdico de seguridad social de 12 de junio de 2012.»;
+d)
+se suprime la sección «ALEMANIA-FRANCIA»;
+e)
+en la sección «ALEMANIA-LUXEMBURGO», se suprimen las letras a) y b);
+f)
+la sección «FINLANDIA-SUECIA» se sustituye por el texto siguiente:
+«Acuerdo administrativo para la aplicación del Convenio nórdico de seguridad social de 12 de junio de 2012.».
+2)
+Se suprime el anexo 5.
+3)
+Se añade el anexo siguiente:
+«ANEXO 6
+(Artículo 15, apartado 1 ter)
+Sector de la construcción
+El sector de la construcción en el sentido del artículo 15 incluye todas las obras de construcción relacionadas con la construcción, la reparación, la conservación, la transformación o la demolición de edificios y, en particular, las obras siguientes:
+1.
+excavación;
+2.
+movimiento de tierras;
+3.
+construcción;
+4.
+montaje y desmontaje de elementos prefabricados;
+5.
+acondicionamiento o equipamiento;
+6.
+transformación;
+7.
+renovación;
+8.
+reparaciones;
+9.
+desmantelamiento;
+10.
+demolición;
+11.
+mantenimiento;
+12.
+conservación, obras de pintura y limpieza;
+13.
+mejoras».
+La Comisión ha hecho una declaración sobre control, activación y colocación laboral en relación con el presente Reglamento, que puede consultarse en DO C, C/2026/5549, 27.10.2026, ELI: http://data.europa.eu/eli/C/2026/5549/oj.
+La Comisión ha hecho una declaración sobre trabajadores temporeros en relación con el presente Reglamento, que puede consultarse en DO C, C/2026/5553, 27.10.2026, ELI: http://data.europa.eu/eli/C/2026/5553/oj.
+Análisis
+ANÁLISIS
+Rango: Reglamento Fecha de disposición: 07/10/2026 Fecha de publicación: 27/10/2026 Fecha de entrada en vigor: 01/11/2026 Permalink ELI EUR-Lex: https://data.europa.eu/eli/reg/2026/2359/spa
+Referencias anteriores
+MODIFICA: determinados preceptos del Reglamento 2009/987, de 16 de septiembre (Ref. DOUE-L-2009-82043). determinados preceptos del Reglamento 883/2004, de 29 de abril (Ref. DOUE-L-2004-81111).
+Materias
+Cooperación internacional Cotización a la Seguridad Social Desempleo Fraudes Información Jubilación Pensiones Presupuestos de la Seguridad Social Seguridad Social Trabajadores
+subir
+Contactar Sobre la sede electrónica Mapa Aviso legal Accesibilidad Protección de datos Sistema Interno de Información Tutoriales Empleo en la AEBOE
+Agencia Estatal Boletín Oficial del Estado
+Avda. de Manoteras, 54 - 28050 Madrid

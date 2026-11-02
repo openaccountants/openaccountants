@@ -1,0 +1,47 @@
+ERROR   skills/argentina/argentina-income-tax.md -> skills/argentina/ar-income-tax.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/bahrain/bh-cross-border-tax.md -> skills/international/bahrain/bh-cross-border-tax.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/bahrain/bh-transfer-pricing.md -> skills/international/bahrain/bh-transfer-pricing.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/colombia/colombia-income-tax.md -> skills/colombia/co-income-tax.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/germany/de-employee-income-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-29
+ERROR   skills/germany/de-employee-income-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (33f95e209593 -> c6b52335b090)
+ERROR   skills/germany/de-partners-and-part-year.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-29
+ERROR   skills/germany/de-partners-and-part-year.md: [unversioned-body-change] body changed without advancing last_updated or version (d6421021b790 -> bf78757e5eb8)
+ERROR   skills/germany/de-trade-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-29
+ERROR   skills/germany/de-trade-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (1c07c291319a -> c00c0b7cf791)
+ERROR   skills/germany/de-vat-annual-and-special-schemes.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-29
+ERROR   skills/germany/de-vat-annual-and-special-schemes.md: [unversioned-body-change] body changed without advancing last_updated or version (0dd6e1492ceb -> b7e57020b05f)
+ERROR   skills/germany/germany-income-tax.md -> skills/germany/de-income-tax.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/germany/germany-vat-return.md: [unversioned-body-change] body changed without advancing last_updated or version (885a77b81f39 -> 69a5711c2fde)
+ERROR   skills/germany/germany-vat-return.md: [version-regression] frontmatter version moved backwards: 2.6 -> 2.5
+ERROR   skills/morocco/ma-auto-entrepreneur-4.md: [unversioned-body-change] body changed without advancing last_updated or version (bd53dc5928ba -> f726eb99f9d3)
+ERROR   skills/morocco/ma-auto-entrepreneur-4.md: [version-regression] frontmatter version moved backwards: 0.3 -> 0.2
+ERROR   skills/morocco/ma-auto-entrepreneur.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-07-13
+ERROR   skills/morocco/ma-auto-entrepreneur.md: [unversioned-body-change] body changed without advancing last_updated or version (0605940d6abd -> d50004734144)
+ERROR   skills/morocco/ma-bookkeeping.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-07-13
+ERROR   skills/morocco/ma-bookkeeping.md: [unversioned-body-change] body changed without advancing last_updated or version (292d7fb10769 -> 6fe1d9b92fe7)
+ERROR   skills/morocco/ma-cpu.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-10-16
+ERROR   skills/morocco/ma-cpu.md: [unversioned-body-change] body changed without advancing last_updated or version (c5212fdf0efb -> de0deadd476b)
+ERROR   skills/morocco/ma-crypto-tax.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-07-13
+ERROR   skills/morocco/ma-crypto-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (8f20237a32f2 -> 34036f2e9280)
+ERROR   skills/morocco/ma-einvoice.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-07-13
+ERROR   skills/morocco/ma-einvoice.md: [unversioned-body-change] body changed without advancing last_updated or version (d0e575f76897 -> 1f0ed0834f87)
+ERROR   skills/morocco/ma-financial-statements.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-07-13
+ERROR   skills/morocco/ma-financial-statements.md: [unversioned-body-change] body changed without advancing last_updated or version (f33853474132 -> 84f5d42b3484)
+ERROR   skills/morocco/ma-formation.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-07-13
+ERROR   skills/morocco/ma-formation.md: [unversioned-body-change] body changed without advancing last_updated or version (00d9a38a95ed -> 44b8a29a5bc9)
+ERROR   skills/morocco/ma-payroll.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-07-13
+ERROR   skills/morocco/ma-payroll.md: [unversioned-body-change] body changed without advancing last_updated or version (8755eb48bf5b -> 4f83387f29a7)
+ERROR   skills/morocco/ma-social-contributions.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-07-13
+ERROR   skills/morocco/ma-social-contributions.md: [unversioned-body-change] body changed without advancing last_updated or version (9cbdcaf2d441 -> f4ac17b71567)
+ERROR   skills/morocco/ma-tax-optimization.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-07-13
+ERROR   skills/morocco/ma-tax-optimization.md: [unversioned-body-change] body changed without advancing last_updated or version (5175bb49985f -> 6de2cd166d77)
+ERROR   skills/morocco/morocco-payroll.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-07-13
+ERROR   skills/morocco/morocco-payroll.md: [unversioned-body-change] body changed without advancing last_updated or version (c711f5769206 -> 99eee92ee59a)
+ERROR   skills/morocco/morocco-professional-income-tax.md -> skills/morocco/ma-income-tax.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/orchestrator/de-return-assembly.md: [unversioned-body-change] body changed without advancing last_updated or version (c50577904056 -> 5f4e34da8d8f)
+ERROR   skills/orchestrator/de-return-assembly.md: [version-regression] frontmatter version moved backwards: 0.3 -> 0.2
+ERROR   skills/orchestrator/ma-freelance-intake.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-06-12
+ERROR   skills/orchestrator/ma-freelance-intake.md: [unversioned-body-change] body changed without advancing last_updated or version (9683b8df0101 -> cf6c5fb7e7b8)
+ERROR   skills/orchestrator/ma-return-assembly.md: [date-regression] last_updated moved backwards: 2026-10-31 -> 2026-06-12
+ERROR   skills/orchestrator/ma-return-assembly.md: [unversioned-body-change] body changed without advancing last_updated or version (bbf88ae577a7 -> d41c27a5c77f)
+Sync integrity checked 39 source guide(s): 46 error(s), 0 warning(s), 0 notice(s).

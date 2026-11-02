@@ -1,0 +1,24 @@
+{
+  "ledger_rows": 43,
+  "statutory_quote_bindings_verified_as_exact": 54,
+  "website_quote_words": 20,
+  "description_words": 113,
+  "reference_definitions": {
+    "duty": "https://logir.fo/Logtingslog/8-fra-28-02-2006-um-tinglysingaravgjald-sum-broytt-vid-logtingslog-nr-50-fra-2-juni",
+    "fee": "https://logir.fo/Logtingslog/76-fra-17-05-1994-um-tinglysingargjold-vm-sum-broytt-vid-logtingslog-nr-63-fra-10",
+    "registration": "https://logir.fo/Logtingslog/55-fra-16-08-1962-um-tinglysing-sum-seinast-broytt-vid-logtingslog-nr-75-fra-25",
+    "regulation": "https://logir.fo/Kunngerd/63-fra-11-12-1962-um-tinglysing-sum-seinast-broytt-vid-kunngerd-nr-46-fra-12",
+    "acquisition": "https://logir.fo/Logtingslog/158-fra-10-12-2021-um-at-keypa-fastogn-i-Foroyum",
+    "digital": "https://www.logir.fo/Logtingslog/128-fra-13-12-2024-um-broyting-i-logtingslog-um-tinglysing-lov-om-Gaeldsbreve-logtingslog-um",
+    "commence": "https://www.logir.fo/Kunngerd/60-fra-22-04-2025-um-at-seta-i-gildi-asetingar-fyri-akfarsbokina-i-logtingslog-um",
+    "registry": "https://www.us.fo/tinglysing/",
+    "forms": "https://www.us.fo/oydublod/",
+    "appeal-act": "https://logir.fo/Logtingslog/147-fra-25-11-2021-um-Foroya-Kaerustovn",
+    "appeal-reg": "https://logir.fo/Kunngerd/161-fra-14-12-2021-um-starvsskipan-fyri-Foroya-Kaerustovn"
+  },
+  "all_used_references_resolve": true,
+  "old_guides_byte_exact": 11,
+  "old_nonblank_units": 2490,
+  "new_raw_website_captures_committed": false,
+  "not_independent_review": true
+}

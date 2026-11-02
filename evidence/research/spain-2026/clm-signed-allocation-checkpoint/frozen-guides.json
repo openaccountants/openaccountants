@@ -1,0 +1,14 @@
+{
+  "README.md": {
+    "sha256": "5a732c693317ea41b9b265a7ac3bf9960656faf2bffcbb8c41fe7e1565327c4a",
+    "bytes": 8220
+  },
+  "es-income-tax.md": {
+    "sha256": "1d9320f9ed602e68fc30865b2b4cf1b1091564e6f765c40fd5fe5175907caab1",
+    "bytes": 84808
+  },
+  "es-irpf-deductions.md": {
+    "sha256": "a68b6eb27a849eb86105799f5744717d29c2296814d9f8bdb2c647fb56cdf8b1",
+    "bytes": 462410
+  }
+}

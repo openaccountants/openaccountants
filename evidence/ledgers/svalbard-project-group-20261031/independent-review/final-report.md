@@ -1,0 +1,33 @@
+# Independent Svalbard project-group and perimeter review
+
+Candidate: `79ded6f8c26b0507af47ce96d6e3a6b0a004441a` (same reviewed inputs as `d4df5db8011936d6677b7ac4e3fbcfcd615e6434`). Read 31 October 2026. Verdict: **accepted for this bounded addition, with its declared operational gaps retained**. This is independent AI checking of a tier-2 source-cited draft, not accountant attestation or full-country completion.
+
+## Pinned scope
+
+The 66-input combined manifest is SHA-256 `c406cf9cb0b25758b5cd013b47dc700ed605b022ee716368df39a59a13ba9345`; every input matches. The new Guide is SHA-256 `2e0854e642cd7dd89da03353da5fcbfc4099f3178478977ff5be87f1c137ef31`. Current README is SHA-256 `f69c0aeb7658ea25bb2b1de86c6413eafd9f7a250492622da8dbdf75f7fe5c49`. Original writer-manifest README pin is intentionally a predecessor; current perimeter delta is bound separately by the combined manifest, not silently substituted.
+
+Read actual AGENTS.md and docs/skill-template.md, new Guide, readable ledger, all 41 project rows and two perimeter rows, their operative original paragraphs and neighbouring provisions, old README destination maps and eight retained Guides' hashes. Earlier six-Guide and 47-row levy reviews remain intact and were not repeated.
+
+## Source and legal findings
+
+No blocking error found in this addition. The source rule and neighbouring provisions support each row:
+
+- SJ-PROJ-001–007 and 011/013: §4-2(a) delegates the special job; regulation §7 permits, rather than requires, consent for a foreign-employer project/research group outside Longyearbyen, maximum six months for the project as a whole, and bars consent where employees owe national-insurance contributions. Eight percent applies to aggregate salary in the settlement period. The Guide attaches all conditions and does not replace them with foreign nationality or a request receipt. The §6-3 historical arrangement expressly excludes §4-2(a). Shorter-than-30-day interaction is left unresolved, with taxable salary assumed in examples.
+- SJ-PROJ-008–010/039–041: membership retention and Norwegian-employer accession match §2-3, with coordination evidence required. Ordinary low-band 8% and middle-rate 7.6% comparator are supported by enacted 2026 decisions and the adult class assumptions. The Guide does not elect an unapproved insured/noninsured split.
+- SJ-PROJ-012/014–022: contact is authenticated written contact; public direct-report service restrictions, 17 November access change, NUF role, feedback and originating-channel correction limitations are supported. F513-2 names both the Svalbard income rule and withholding description. No authenticated screen, consent form, mandatory numbered application box or submission is claimed.
+- SJ-PROJ-023–031: §5-1 imports payment law; §§10-10(1)/10-11 support next-working-day salary-tax payment from 2026. Regulation §7 permits different reporting instructions, not an automatic payment extension. Ordinary monthly fifth-day reporting and weekend shift are preserved. The after-20th first-report exception requires §7-6 provider status; annual 15 January reporting additionally requires an actual §5-3 exemption. The Guide expressly notes Svalbard chapter-5 exclusion and does not infer these exceptions merely from foreign status. Actual cessation reporting is retained. Separate Svalbard account/KID instructions are identified.
+- SJ-PROJ-032–038: daily coercive fine and administrative fee are legally distinct, with no double fee for the same delay referred to the payroll owner; ordinary payment interest, employer underwithholding difference and separate foreign-company project liability match the operative text. No fabricated special project tariff.
+- SJ-PER-001: current F-10-1 expressly excludes Svalbard activity from both financial-tax components. This authority statement is not misrepresented as an express new statutory clause and does not exclude ordinary profit/payroll tax.
+- SJ-PER-002: current GIR paragraph expressly gives separate-jurisdiction calculation, no own Svalbard GIR duty, inclusion when Norway has taxing rights, and no Norwegian domestic top-up tax. README keeps the missing group calculation/allocation/reporting job open; no global minimum-tax absence claim is accepted.
+
+Fifteen cited URLs were independently fetched with HTTP 200. Nine Lovdata documents and both current perimeter authority captures matched raw bytes exactly. Four dynamic Skatteetaten pages changed HTML bytes; responsive quotations are unchanged. The direct-service notice uses inline markup spacing around “november”; its displayed date and full condition are unchanged. Five gzip captures decompress to the exact recorded raw hashes. `fresh-fetch-receipts.json` and `verification.json` retain the evidence. Text-extraction spacing misses in that JSON are mechanical markup segmentation, not contrary law; raw-equal documents and the actual operative reader paragraphs were checked.
+
+## Arithmetic, shape and preservation
+
+Recomputed 300,000 × 8% = 24,000; two 200,000 salaries × 8% = 32,000; insured salary 200,000 × 7.6% = 15,200; correct comparator total 47,200, omitted contribution 15,200. Reran all nine Guides' 90 shape checks and all 18 examples, zero failures. Writer's pinned strict-sync (nine source Guides, zero errors) and 152-unit-test evidence inspected; not rerun because this independent review changes only evidence records.
+
+New description is 106 words; full General reference notice, canonical nine sections, five intake questions, current year/date/version and tier 2 are present. No invented accountant review or platform CTA was added. All eight predecessor Guides are byte-exact, including metadata and any CTA; old README exact-retention checks and substantive destination maps inspected. Project-stage line 50 is superseded in the current README by the separately bound perimeter map (it is retained in that stage’s predecessor); the stale finance/minimum-tax unknown is replaced with the two sourced boundaries, while unfinished implementation stays explicit. Lost content restored: 0, because this is an additive job and source boundary update.
+
+## Remaining work and permitted status change
+
+Accept only this source check. A later narrow README change may replace pending-review wording with this review/date/link, retaining tier 2 and every partial/operational gap. Three ordinary partial domains, missing dedicated consent/post-login routes and interaction cases, separate Barentsburg job, remaining levies/sector applicability, minimum-tax implementation and Jan Mayen remain open. No claim that issue #424 or the country is complete is accepted. No contact, login submission, payment, commit or push was made.

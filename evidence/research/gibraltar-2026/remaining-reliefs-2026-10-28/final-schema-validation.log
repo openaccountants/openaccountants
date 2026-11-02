@@ -1,0 +1,7 @@
+changed-only mode: validating 168 changed guide file(s)
+checked 18 guides (47 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+WARN: 1 guides missing `fresh figures (last_updated within a year, tax_year current)`
+WARN: skills/international/gibraltar/gi-global-minimum-tax.md: tax_year 2024 is two or more years behind
+
+validation passed (2 warning group(s))

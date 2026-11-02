@@ -1,0 +1,503 @@
+{
+  "count": 83,
+  "checks": [
+    {
+      "name": "scale0",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "scale12450",
+      "actual": "4731/2",
+      "expected": "4731/2",
+      "pass": true
+    },
+    {
+      "name": "scale20200",
+      "actual": "8451/2",
+      "expected": "8451/2",
+      "pass": true
+    },
+    {
+      "name": "scale35200",
+      "actual": "17451/2",
+      "expected": "17451/2",
+      "pass": true
+    },
+    {
+      "name": "scale60000",
+      "actual": "35803/2",
+      "expected": "35803/2",
+      "pass": true
+    },
+    {
+      "name": "scale300000",
+      "actual": "251803/2",
+      "expected": "251803/2",
+      "pass": true
+    },
+    {
+      "name": "scale400000",
+      "actual": "345803/2",
+      "expected": "345803/2",
+      "pass": true
+    },
+    {
+      "name": "ordinarySSsum",
+      "actual": "13/200",
+      "expected": "13/200",
+      "pass": true
+    },
+    {
+      "name": "annualSS",
+      "actual": "1950",
+      "expected": "1950",
+      "pass": true
+    },
+    {
+      "name": "ordinaryR",
+      "actual": "28050",
+      "expected": "28050",
+      "pass": true
+    },
+    {
+      "name": "ordinaryRED",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "ordinaryB",
+      "actual": "26050",
+      "expected": "26050",
+      "pass": true
+    },
+    {
+      "name": "T26050",
+      "actual": "11961/2",
+      "expected": "11961/2",
+      "pass": true
+    },
+    {
+      "name": "min5550",
+      "actual": "2109/2",
+      "expected": "2109/2",
+      "pass": true
+    },
+    {
+      "name": "Q4926",
+      "actual": "4926",
+      "expected": "4926",
+      "pass": true
+    },
+    {
+      "name": "43capnotbinding",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "ordinaryrate",
+      "actual": "821/50",
+      "expected": "821/50",
+      "pass": true
+    },
+    {
+      "name": "monthlytax",
+      "actual": "821/2",
+      "expected": "821/2",
+      "pass": true
+    },
+    {
+      "name": "monthlySS",
+      "actual": "325/2",
+      "expected": "325/2",
+      "pass": true
+    },
+    {
+      "name": "netcash",
+      "actual": "1927",
+      "expected": "1927",
+      "pass": true
+    },
+    {
+      "name": "employerSS",
+      "actual": "3215/4",
+      "expected": "3215/4",
+      "pass": true
+    },
+    {
+      "name": "employercost",
+      "actual": "13215/4",
+      "expected": "13215/4",
+      "pass": true
+    },
+    {
+      "name": "revisedSS",
+      "actual": "2340",
+      "expected": "2340",
+      "pass": true
+    },
+    {
+      "name": "revisedB",
+      "actual": "31660",
+      "expected": "31660",
+      "pass": true
+    },
+    {
+      "name": "revisedquota",
+      "actual": "6609",
+      "expected": "6609",
+      "pass": true
+    },
+    {
+      "name": "remainingquota",
+      "actual": "4146",
+      "expected": "4146",
+      "pass": true
+    },
+    {
+      "name": "remainingpay",
+      "actual": "21000",
+      "expected": "21000",
+      "pass": true
+    },
+    {
+      "name": "regtruncated",
+      "actual": "987/50",
+      "expected": "987/50",
+      "pass": true
+    },
+    {
+      "name": "regmonthlytax",
+      "actual": "6909/10",
+      "expected": "6909/10",
+      "pass": true
+    },
+    {
+      "name": "regmonthlySS",
+      "actual": "455/2",
+      "expected": "455/2",
+      "pass": true
+    },
+    {
+      "name": "regmonthlynet",
+      "actual": "12908/5",
+      "expected": "12908/5",
+      "pass": true
+    },
+    {
+      "name": "regannual",
+      "actual": "33042/5",
+      "expected": "33042/5",
+      "pass": true
+    },
+    {
+      "name": "regdifference",
+      "actual": "3/5",
+      "expected": "3/5",
+      "pass": true
+    },
+    {
+      "name": "separatorR",
+      "actual": "940703/50",
+      "expected": "940703/50",
+      "pass": true
+    },
+    {
+      "name": "separatorrawRED",
+      "actual": "2660311/2500",
+      "expected": "2660311/2500",
+      "pass": true
+    },
+    {
+      "name": "separatorroundedRED",
+      "actual": "26603/25",
+      "expected": "26603/25",
+      "pass": true
+    },
+    {
+      "name": "separatorB",
+      "actual": "787497/50",
+      "expected": "787497/50",
+      "pass": true
+    },
+    {
+      "name": "separatorQ",
+      "actual": "1314366/625",
+      "expected": "1314366/625",
+      "pass": true
+    },
+    {
+      "name": "separator43cap",
+      "actual": "5517803/2500",
+      "expected": "5517803/2500",
+      "pass": true
+    },
+    {
+      "name": "separatorcorrectrate",
+      "actual": "1001/100",
+      "expected": "1001/100",
+      "pass": true
+    },
+    {
+      "name": "separatorwrongunrounded",
+      "actual": "10",
+      "expected": "10",
+      "pass": true
+    },
+    {
+      "name": "REDat14852",
+      "actual": "7302",
+      "expected": "7302",
+      "pass": true
+    },
+    {
+      "name": "REDat1767352",
+      "actual": "118217/50",
+      "expected": "118217/50",
+      "pass": true
+    },
+    {
+      "name": "REDat197475",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "REDonecentbelowend",
+      "actual": "0.01",
+      "expected": "0.01",
+      "pass": true
+    },
+    {
+      "name": "REDcappedatR",
+      "actual": "4000",
+      "expected": "4000",
+      "pass": true
+    },
+    {
+      "name": "halfcentup",
+      "actual": "1.01",
+      "expected": "1.01",
+      "pass": true
+    },
+    {
+      "name": "subtotalafterloop",
+      "actual": "766.67",
+      "expected": "766.67",
+      "pass": true
+    },
+    {
+      "name": "wrongperrelative",
+      "actual": "766.66",
+      "expected": "766.66",
+      "pass": true
+    },
+    {
+      "name": "pcttruncnotround",
+      "actual": "357/20",
+      "expected": "357/20",
+      "pass": true
+    },
+    {
+      "name": "shortcontractminimum",
+      "actual": "2",
+      "expected": "2",
+      "pass": true
+    },
+    {
+      "name": "Ceutafloor",
+      "actual": "4/5",
+      "expected": "4/5",
+      "pass": true
+    },
+    {
+      "name": "Ceutaspecialfloor",
+      "actual": "6",
+      "expected": "6",
+      "pass": true
+    },
+    {
+      "name": "mortgage2points",
+      "actual": "721/50",
+      "expected": "721/50",
+      "pass": true
+    },
+    {
+      "name": "mortgagecutoffstrict",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "quota35200inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "spouse1500inclusive",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "kindaccount",
+      "actual": "821/5",
+      "expected": "821/5",
+      "pass": true
+    },
+    {
+      "name": "kindcertificateborne",
+      "actual": "5821/5",
+      "expected": "5821/5",
+      "pass": true
+    },
+    {
+      "name": "kindcertificatecharged",
+      "actual": "1000",
+      "expected": "1000",
+      "pass": true
+    },
+    {
+      "name": "SMIyear",
+      "actual": "17094",
+      "expected": "17094",
+      "pass": true
+    },
+    {
+      "name": "SMI12instalments",
+      "actual": "2849/2",
+      "expected": "2849/2",
+      "pass": true
+    },
+    {
+      "name": "FOGASAreconstruction",
+      "actual": "94.78",
+      "expected": "94.78",
+      "pass": true
+    },
+    {
+      "name": "FOGASAwages",
+      "actual": "56868/5",
+      "expected": "56868/5",
+      "pass": true
+    },
+    {
+      "name": "FOGASAindemnity",
+      "actual": "345947/10",
+      "expected": "345947/10",
+      "pass": true
+    },
+    {
+      "name": "ordinaryITday4to20",
+      "actual": "1020",
+      "expected": "1020",
+      "pass": true
+    },
+    {
+      "name": "ordinaryITday21plus10days",
+      "actual": "750",
+      "expected": "750",
+      "pass": true
+    },
+    {
+      "name": "oldmenstruationday1to20",
+      "actual": "1200",
+      "expected": "1200",
+      "pass": true
+    },
+    {
+      "name": "newcertainprocessday2to20",
+      "actual": "1140",
+      "expected": "1140",
+      "pass": true
+    },
+    {
+      "name": "donation100",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "BRpreviousmonth",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "newcertainBRpriorprevious",
+      "actual": "90",
+      "expected": "90",
+      "pass": true
+    },
+    {
+      "name": "nursing8hourHalfHourExample",
+      "actual": "25/4",
+      "expected": "25/4",
+      "pass": true
+    },
+    {
+      "name": "birthparttime365",
+      "actual": "2400/73",
+      "expected": "2400/73",
+      "pass": true
+    },
+    {
+      "name": "birthshortactual",
+      "actual": "100/3",
+      "expected": "100/3",
+      "pass": true
+    },
+    {
+      "name": "objective5years",
+      "actual": "10000",
+      "expected": "10000",
+      "pass": true
+    },
+    {
+      "name": "unfair5years",
+      "actual": "16500",
+      "expected": "16500",
+      "pass": true
+    },
+    {
+      "name": "fixedtermhalfyear",
+      "actual": "600",
+      "expected": "600",
+      "pass": true
+    },
+    {
+      "name": "wageinterest10",
+      "actual": "100",
+      "expected": "100",
+      "pass": true
+    },
+    {
+      "name": "hospital7noextension",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "hospital8extension",
+      "actual": "8",
+      "expected": "8",
+      "pass": true
+    },
+    {
+      "name": "hospital100capped",
+      "actual": "91",
+      "expected": "91",
+      "pass": true
+    },
+    {
+      "name": "motherMandatory6weeks",
+      "actual": "42",
+      "expected": "42",
+      "pass": true
+    }
+  ]
+}

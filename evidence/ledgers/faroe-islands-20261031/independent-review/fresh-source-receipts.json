@@ -1,0 +1,22 @@
+[
+  {
+    "url": "https://logir.fo/Logtingslog/193-fra-10-12-1993-um-lonarhaeddaravgjald-sum-seinast-broytt-vid-logtingslog-nr-166-fra-22",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "fallback": "official page successfully opened by web tool during review"
+  },
+  {
+    "url": "https://www.taks.fo/gjaldsavtala-virkir",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "fallback": "official page successfully opened by web tool during review"
+  },
+  {
+    "url": "https://logir.fo/Logtingslog/73-fra-31-05-2011-fra-parta-og-smapartafelog",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "fallback": "official page successfully opened by web tool during review"
+  },
+  {
+    "url": "https://www.logir.fo/Logtingslog/203-fra-12-12-2025-um-arsroknskap-Arsroknskaparlogin",
+    "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>",
+    "fallback": "official page successfully opened by web tool during review"
+  }
+]

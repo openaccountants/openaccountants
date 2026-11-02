@@ -1,0 +1,632 @@
+Browser tab: 1623103268, Title: "Renta 2025", URL: "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB".
+0 AXWebArea Renta 2025, URL: www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB
+	1 container sRKP_
+		2 container Description: Cabecera de la página, ID: AEAT_header
+			3 link Description: Saltar al contenido principal, Value: www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB#acc-main
+			4 link Help: Página de inicio, Value: sede.agenciatributaria.gob.es/Sede/inicio.html, Description: Logotipo del Gobierno de España Logotipo de la Agencia Tributaria Logotipo de la Agencia Tributaria. Sede electrónica
+			5 container topDerecha
+				6 link Description: Icono Calendario, fecha y hora oficial 28/10/2026 12:30:55 Hora oficial, Value: sede.agenciatributaria.gob.es/Sede/Calendario_fecha_y_hora_oficial.html
+				7 link Description: ÁREA PERSONAL, Value: sede.agenciatributaria.gob.es/Sede/mi-area-personal.html
+				8 pop up button (collapsed) ES, ID: dropdownIdiomas, Secondary Actions: Expand
+		9 container acc-main
+			10 container Description: Contenido principal, ID: sRKPk
+				11 container sRKPl
+					12 heading Impuesto sobre la Renta de las Personas Físicas. - Modelo 100, Value: 1, ID: sRKPn
+						13 text Impuesto sobre la Renta de las Personas Físicas. - Modelo 100
+				14 container Description: Impuesto sobre la Renta de las Personas Físicas. - Modelo 100, ID: sRKPr
+					15 container sRKPt
+						272 container sRKP_50
+							273 container Impuesto sobre la Renta de las Personas Físicas. - Modelo 100 NIF: 12345678Z PRUEBA RIOJA Modalidad, ID: sRKP250-frame
+								274 container
+									275 container Impuesto sobre la Renta de las Personas Físicas. - Modelo 100 NIF: 12345678Z PRUEBA RIOJA, ID: sRKP350-chdex
+										276 container Impuesto sobre la Renta de las Personas Físicas. - Modelo 100 NIF: 12345678Z PRUEBA RIOJA, ID: sRKP350-frame
+											277 container
+												278 container Impuesto sobre la Renta de las Personas Físicas. -, ID: sRKP450-chdex
+													279 text Impuesto sobre la Renta de las Personas Físicas. -
+												280 container Modelo 100, ID: sRKP550-chdex
+													281 text Modelo 100
+												282 container NIF:, ID: sRKP750-chdex
+													283 text NIF:
+												284 container 12345678Z, ID: sRKP850-chdex
+													285 text 12345678Z
+												286 container PRUEBA RIOJA, ID: sRKPa50-chdex
+													287 text PRUEBA RIOJA
+									288 container Modalidad, ID: sRKPi50-chdex
+										289 container sRKPi50
+											290 text Modalidad
+											291 combo box (collapsed) ID: sRKPl50, Secondary Actions: Expand
+												292 text field Value: DECLARANTE, ID: sRKPl50-real
+							293 container sRKPt50
+								294 button  Apartados declaración, ID: sRKPu50
+								295 button  Resumen de declaraciones, ID: sRKPv50
+								296 button  Presentar declaración, ID: sRKPx50
+								297 button Description: Ver vídeos, ID: sRKP_60
+								298 button  Ayuda, ID: sRKP160
+								299 button  Mostrar opciones, ID: sRKP760
+							300 container sRKPek0
+								301 container sRKPgk0
+									302 container Deducciones autonómicas Anexo B, ID: sRKPjk0-frame
+										303 container
+											304 container Deducciones autonómicas, ID: sRKPkk0-chdex
+												305 container sRKPkk0
+													306 text Deducciones autonómicas
+											307 container Anexo B, ID: sRKPnk0-chdex
+												308 text Anexo B
+								309 container sRKPcl0
+									310 container sRKPdl0
+										311 container sRKPfl0
+											312 text Comunidad Autónoma de La Rioja
+									313 container sRKPcm0
+										314 container sRKPdm0
+											315 container sRKPfm0
+												316 text Por nacimiento y adopción de hijos
+											317 container sRKPlm0
+												318 text 1061
+												319 text field Por nacimiento y adopción de hijos:, ID: sRKPwm0
+												320 button sRKPtm0
+										321 container sRKPxm0
+											322 container sRKPzm0
+												323 text Por las cantidades invertidas en obras de rehabilitación de vivienda habitual
+											324 container sRKP4n0
+												325 text 1062
+												326 text field Por las cantidades invertidas en obras de rehabilitación de vivienda habitual:, ID: sRKPfn0
+												327 button sRKPcn0
+										328 container sRKPgn0
+											329 container sRKPin0
+												330 text Por cantidades invertidas en la adquisición o construcción de vivienda habitual para jóvenes
+											331 container sRKPon0
+												332 text 1063
+												333 text field Por cantidades invertidas en la adquisición o construcción de vivienda habitual para jóvenes:, ID: sRKPzn0
+												334 button sRKPwn0
+										335 text Por adquisición o rehabilitación de segunda vivienda en el medio rural
+										336 container sRKP2o0
+											337 container sRKP4o0
+												338 text Código del municipio:
+											339 container sRKPao0
+												340 text 1064
+												341 text field (disabled) Código del municipio:, ID: sRKPjo0
+											342 container sRKPko0
+												343 text Importe de la deducción
+											344 container sRKPqo0
+												345 text 1065
+												346 text field Importe de la deducción:, ID: sRKP0p0
+												347 button sRKPyo0
+										348 text (siempre que la adquisición o las cantidades para rehabilitación se hayan satisfecho antes de 1 de enero de 2013)
+										349 container sRKP4p0
+											350 container sRKP6p0
+												351 text Por cantidades invertidas en obras de adecuación de vivienda habitual para personas con discapacidad
+											352 container sRKPcp0
+												353 text 1066
+												354 text field ID: sRKPnp0, Por cantidades invertidas en obras de adecuación de vivienda habitual para personas con discapacidad:
+												355 button sRKPkp0
+										356 text Por adquisición, construcción o rehabilitación de vivienda habitual efectuada en pequeños municipios
+										357 container sRKPrp0
+											358 container sRKPtp0
+												359 text Código del municipio:
+											360 container sRKPzp0
+												361 text 1067
+												362 text field (disabled) Código del municipio:, ID: sRKP7q0
+											363 container sRKP9q0
+												364 text Importe de la deducción
+											365 container sRKPfq0
+												366 text 1068
+												367 text field Importe de la deducción:, ID: sRKPqq0
+												368 button sRKPnq0
+										369 container sRKPrq0
+											370 container sRKPtq0
+												371 text Por gastos en escuelas o centros de educación infantil o personal contratado para el cuidado de hijos de 0 a 3 años por contribuyentes residentes en pequeños municipios
+											372 container sRKPzq0
+												373 text 1069
+												374 text field ID: sRKP9r0, Por gastos en escuelas o centros de educación infantil o personal contratado para el cuidado de hijos de 0 a 3 años por contribuyentes residentes en pequeños municipios:
+												375 button sRKP6r0
+										376 container sRKPar0
+											377 container sRKPcr0
+												378 container sRKPdr0
+													379 text NIF de la persona empleada del
+													380 text hogar,Escuela, Centro o Guardería Infantil
+											381 container sRKPir0
+												382 text 1070
+												383 text field (disabled) NIF de la persona empleada del hogar,Escuela, Centro o Guardería Infantil:, ID: sRKPrr0
+											384 container sRKPtr0
+												385 text Código del municipio:
+											386 container sRKPzr0
+												387 text 1071
+												388 text field (disabled) Código del municipio:, ID: sRKP7s0
+										389 container sRKP8s0
+											390 container sRKPas0
+												391 text Por cada menor en régimen de acogimiento familiar de urgencia temporal o permanente o guarda con fines de adopción
+											392 container sRKPgs0
+												393 text 1072
+												394 text field ID: sRKPrs0, Por cada menor en régimen de acogimiento familiar de urgencia temporal o permanente o guarda con fines de adopción:
+												395 button sRKPos0
+										396 text Por cada hijo de 0 a 3 años de contribuyentes que tengan su residencia o trasladen la misma a pequeños municipios de la Rioja y la mantengan durante un plazo de al menos 3 años consecutivos
+										397 container sRKPws0
+											398 container sRKPys0
+												399 text Código del municipio:
+											400 container sRKP3t0
+												401 text 1162
+												402 text field (disabled) Código del municipio:, ID: sRKPct0
+											403 container sRKPet0
+												404 text Importe de la deducción
+											405 container sRKPkt0
+												406 text 1163
+												407 text field Importe de la deducción:, ID: sRKPvt0
+												408 button sRKPst0
+										409 container sRKPwt0
+											410 container sRKPyt0
+												411 text Por cada hijo de 0 a 3 años por gastos en escuelas infantiles o centros de educación infantil de cualquier municipio de la Rioja
+											412 container sRKP3u0
+												413 text 1075
+												414 text field ID: sRKPeu0, Por cada hijo de 0 a 3 años por gastos en escuelas infantiles o centros de educación infantil de cualquier municipio de la Rioja:
+												415 button sRKPbu0
+										416 container sRKPfu0
+											417 container sRKPhu0
+												418 container sRKPiu0
+													419 text NIF de la Escuela, Centro
+													420 text o Guardería Infantil
+											421 container sRKPnu0
+												422 text 1076
+												423 text field (disabled) NIF de la Escuela, Centro o Guardería Infantil:, ID: sRKPwu0
+										424 container sRKPzu0
+											425 container sRKP0v0
+												426 text Por adquisición de vehículos eléctricos nuevos
+											427 container sRKP5v0
+												428 text 0255
+												429 text field Por adquisición de vehículos eléctricos nuevos:, ID: sRKPgv0
+												430 button sRKPdv0
+										431 text Por acceso a internet para jóvenes emancipados
+										432 container sRKPkv0
+											433 container sRKPmv0
+												434 text Código del pequeño municipio:
+											435 container sRKPsv0
+												436 text 1204
+												437 text field (disabled) Código del pequeño municipio:, ID: sRKP0w0
+											438 container sRKP2w0
+												439 text Importe de la deducción
+											440 container sRKP8w0
+												441 text 1079
+												442 text field Por acceso a internet para jóvenes emancipados:, ID: sRKPjw0
+												443 button sRKPgw0
+										444 text Por suministro de luz y gas de uso doméstico para jóvenes emancipados
+										445 container sRKPnw0
+											446 container sRKPpw0
+												447 text Código del pequeño municipio:
+											448 container sRKPvw0
+												449 text 1205
+												450 text field (disabled) Código del pequeño municipio:, ID: sRKP3x0
+											451 container sRKP5x0
+												452 text Importe de la deducción
+											453 container sRKPbx0
+												454 text 1080
+												455 text field Por suministro de luz y gas de uso doméstico para jóvenes emancipados:, ID: sRKPmx0
+												456 button sRKPjx0
+										457 container sRKPnx0
+											458 container sRKPpx0
+												459 text Por inversión en vivienda habitual de jóvenes menores de 36 años
+											460 container sRKPvx0
+												461 text 1081
+												462 text field Por inversión en vivienda habitual de jóvenes menores de 36 años:, ID: sRKP5y0
+												463 button sRKP2y0
+										464 text Por arrendamiento en vivienda habitual para contribuyentes menores de 36 años (importe de la casilla [1130] del anexo B.11)
+										465 container sRKP9y0
+											466 container sRKPby0
+												467 text Código del pequeño municipio:
+											468 container sRKPhy0
+												469 text 1164
+												470 text field (disabled) Código del pequeño municipio:, ID: sRKPqy0
+											471 container sRKPsy0
+												472 text Importe de la deducción
+											473 container sRKPyy0
+												474 text 1165
+												475 text field ID: sRKP8z0, Por arrendamiento en vivienda habitual para contribuyentes menores de 36 años (importe de la casilla [1130] del anexo B.11):
+												476 button sRKP5z0
+										477 container sRKP9z0
+											478 container sRKPbz0
+												479 text Por adquisición de bicicletas de pedaleo no asistido
+											480 container sRKPhz0
+												481 text 1166
+												482 text field Por adquisición de bicicletas de pedaleo no asistido:, ID: sRKPsz0
+												483 button sRKPpz0
+										484 container sRKPtz0
+											485 container sRKPvz0
+												486 text Por donaciones para la promoción y estímulo de las actividades de fomento de mecenazgo
+											487 container sRKP__1
+												488 text 0250
+												489 text field Por donaciones para la promoción y estímulo de las actividades de fomento de mecenazgo:, ID: sRKPa_1
+												490 button sRKP7_1
+										491 container sRKPb_1
+											492 container sRKPd_1
+												493 text Por donaciones para la investigación, conservación, restauración, rehabilitación, consolidación, difusión, exposición y adquisición de bienes de interés cultural del Patrimonio Histórico de La Rioja
+											494 container sRKPi_1
+												495 text 0251
+												496 text field ID: sRKPt_1, Por donaciones para la investigación, conservación, restauración, rehabilitación, consolidación, difusión, exposición y adquisición de bienes de interés cultural del Patrimonio Histórico de La Rioja:
+												497 button sRKPq_1
+										498 container sRKPu_1
+											499 container sRKPw_1
+												500 text Por donaciones a empresas culturales
+											501 container sRKP001
+												502 text 0252
+												503 text field Por donaciones a empresas culturales:, ID: sRKPb01
+												504 button sRKP801
+										505 container sRKPc01
+											506 container sRKPe01
+												507 text Por donación de bienes culturales por sus autores o creadores y sus herederos
+											508 container sRKPj01
+												509 text 0253
+												510 text field Por donación de bienes culturales por sus autores o creadores y sus herederos:, ID: sRKPu01
+												511 button sRKPr01
+										512 container sRKPv01
+											513 container sRKPx01
+												514 text Por cantidades destinadas a investigación, conservación, restauración, rehabilitación o consolidación de bienes que formen parte del patrimonio histórico de La Rioja
+											515 container sRKP111
+												516 text 0254
+												517 text field ID: sRKPc11, Por cantidades destinadas a investigación, conservación, restauración, rehabilitación o consolidación de bienes que formen parte del patrimonio histórico de La Rioja:
+												518 button sRKP911
+										519 container sRKPd11
+											520 container sRKPf11
+												521 text Para fomentar el ejercicio físico y la práctica deportiva(importe de la casilla [2122] del anexo B.14)
+											522 container sRKPk11
+												523 text 1168
+												524 text field ID: sRKPv11, Para fomentar el ejercicio físico y la práctica deportiva(importe de la casilla [2122] del anexo B.14):
+												525 button sRKPs11
+										526 container sRKPw11
+											527 container sRKPy11
+												528 text Para paliar la subida de los intereses de los préstamos hipotecarios destinados a la adquisición de vivienda habitual
+											529 container sRKP221
+												530 text 1167
+												531 text field ID: sRKPd21, Para paliar la subida de los intereses de los préstamos hipotecarios destinados a la adquisición de vivienda habitual:
+												532 button sRKPa21
+										533 container sRKPe21
+											534 container sRKPg21
+												535 text Destinada a los enfermos de ELA
+											536 container sRKPl21
+												537 text 1785
+												538 text field Destinada a los enfermos de ELA:, ID: sRKPw21
+												539 button sRKPt21
+										540 container sRKPx21
+											541 container sRKPz21
+												542 text De cuotas satisfechas a organizaciones profesionales agrarias
+											543 container sRKP331
+												544 text 2056
+												545 text field De cuotas satisfechas a organizaciones profesionales agrarias:, ID: sRKPe31
+												546 button sRKPb31
+										547 text Por enfermedad celíaca diagnosticada
+										548 container sRKPi31
+											549 container sRKPk31
+												550 text Nº de colegiado / Código Numérico Personal del médico:
+											551 container sRKPq31
+												552 text 2247
+												553 text field (disabled) Nº de colegiado / Código Numérico Personal del médico:, ID: sRKPz31
+											554 container sRKP041
+												555 text Importe de la deducción
+											556 container sRKP641
+												557 text 2248
+												558 text field Por enfermedad celíaca diagnosticada:, ID: sRKPh41
+												559 button sRKPe41
+										560 container sRKPi41
+											561 container sRKPk41
+												562 text Para fomentar la fijación de población ocupada en el medio rural
+											563 container sRKPp41
+												564 text 2057
+												565 text field Para fomentar la fijación de población ocupada en el medio rural:, ID: sRKP_51
+												566 button sRKPx41
+										567 container sRKP051
+											568 container sRKP251
+												569 text Importe generado en 2025
+											570 container sRKP851
+												571 text 2058
+												572 text field (disabled) Importe generado en 2025:, ID: sRKPh51
+										573 container sRKPi61
+											574 container sRKPk61
+												575 container sRKPl61
+													576 text Total deducciones autonómicas
+													577 text (suma de las casillas [0250] a [0255] + [1061] a [1063] + [1065] + [1066] + [1068] + [1069] + [1072] + [1075] + [1079] a [1081] + [1163] + [1165] a [1166] + [1168] + [1167] + [1785] + [2056] + [2057] + [2048])
+											578 container sRKPt61
+												579 text 0564
+												580 text field (disabled) ID: sRKP171, (suma de las casillas [0250] a [0255] + [1061] a [1063] + [1065] + [1066] + [1068] + [1069] + [1072] + [1075] + [1079] a [1081] + [1163] + [1165] a [1166] + [1168] + [1167] + [1785] + [2056] + [2057] + [2048]):
+										581 text Importe de deducciones para fomentar la fijación de población ocupada en el medio rural (con derecho a aplicación en ejercicios siguientes):
+										582 container sRKP571
+											583 container sRKP671
+												584 text Importe generado en 2025 pendiente de aplicación
+											585 container sRKPc71
+												586 text 2059
+												587 text field (disabled) Importe generado en 2025 pendiente de aplicación:, ID: sRKPl71
+								588 container sRKPp71
+									589 container sRKPr71
+										590 container Información adicional Anexo B, ID: sRKPu71-frame
+											591 container
+												592 container Información adicional, ID: sRKPv71-chdex
+													593 container sRKPv71
+														594 text Información adicional
+												595 container Anexo B, ID: sRKPy71-chdex
+													596 text Anexo B
+									597 container sRKPn81
+										598 container sRKPo81
+											599 container sRKPq81
+												600 text Información adicional a la deducción autonómica por arrendamiento de Andalucía, Principado de Asturias, Illes Balears, Canarias, Cantabria, Castilla-La Mancha, Castilla y León, Cataluña, Extremadura, Galicia, Madrid, Región de Murcia, La Rioja, y Comunitat Valenciana
+										601 container sRKPn91
+											602 container sRKPo91
+												603 container sRKPp91
+													604 container sRKPq91
+														605 text NIF/NIE del
+														606 text arrendador 1
+												607 container sRKPu91
+													608 text 1122
+													609 text field (disabled) NIF/NIE del arrendador 1:, ID: sRKP2a1
+												610 container sRKP3a1
+													611 text Marque una 'X' si en la casilla [1122] ha consignado un NIF de otro país
+												612 container sRKP8a1
+													613 text 1123
+													614 container Help: Marque una 'X' si en la casilla [1122] ha consignado un NIF de otro país:, ID: sRKPha1
+														615 checkbox (disabled, settable, integer) Value: 0, ID: sRKPha1-real
+												616 container sRKPia1
+													617 text Cantidades satisfechas
+												618 container sRKPna1
+													619 text 1124
+													620 text field (disabled) Cantidades satisfechas:, ID: sRKPwa1
+											621 container sRKPxa1
+												622 container sRKPya1
+													623 container sRKPza1
+														624 text NIF/NIE del
+														625 text arrendador 2
+												626 container sRKP2b1
+													627 text 1125
+													628 text field (disabled) NIF/NIE del arrendador 2:, ID: sRKPbb1
+												629 container sRKPcb1
+													630 text Marque una 'X' si en la casilla [1125] ha consignado un NIF de otro país
+												631 container sRKPhb1
+													632 text 1126
+													633 container Help: Marque una 'X' si en la casilla [1125] ha consignado un NIF de otro país:, ID: sRKPqb1
+														634 checkbox (disabled, settable, integer) Value: 0, ID: sRKPqb1-real
+												635 container sRKPrb1
+													636 text Cantidades satisfechas
+												637 container sRKPwb1
+													638 text 1127
+													639 text field (disabled) Cantidades satisfechas:, ID: sRKP4c1
+											640 container sRKP5c1
+												641 container sRKP6c1
+													642 text Importe total satisfecho (suma de las casillas [1124] + [1127])
+												643 container sRKPbc1
+													644 text 1128
+													645 text field (disabled) Importe total satisfecho (suma de las casillas [1124] + [1127]):, ID: sRKPkc1
+											646 container sRKPlc1
+												647 container sRKPmc1
+													648 text Cantidades satisfechas con derecho a deducción
+												649 container sRKPrc1
+													650 text 1129
+													651 text field (disabled) Cantidades satisfechas con derecho a deducción:, ID: sRKP_d1
+											652 container sRKP0d1
+												653 container sRKP1d1
+													654 text Importe de la deducción autonómica por arrendamiento
+												655 container sRKP6d1
+													656 text 1130
+													657 text field (disabled) Importe de la deducción autonómica por arrendamiento:, ID: sRKPfd1
+								658 container sRKPjd1
+									659 container sRKPkd1
+										660 container sRKPmd1
+											661 text Información adicional a la deducción autonómica de Andalucía para fomentar el ejercicio físico y la práctica deportiva, la Región de Murcia por gastos asociados a la práctica del deporte y actividades saludables, La Rioja para fomentar el ejercicio físico y la práctica deportiva y de la Comunitat Valenciana por cantidades satisfechas en gastos asociados a la práctica del deporte y actividades saludables
+									662 container sRKPie1
+										663 container sRKPke1
+											664 container sRKP_f1
+												665 container sRKP0f1
+													666 text Contribuyente con derecho a deducción
+												667 container sRKP5f1
+													668 text 2104
+													669 text field (disabled) Contribuyente con derecho a deducción:, ID: sRKPef1
+											670 container sRKPff1
+												671 container sRKPgf1
+													672 text NIF prestador del servicio 1
+												673 container sRKPlf1
+													674 text 2105
+													675 text field (disabled) NIF prestador del servicio 1:, ID: sRKPuf1
+												676 container sRKPvf1
+													677 text Importe anual satisfecho
+												678 container sRKP_g1
+													679 text 2106
+													680 text field (disabled) Importe anual satisfecho:, ID: sRKP8g1
+											681 container sRKP9g1
+												682 container sRKPag1
+													683 text NIF prestador del servicio 2
+												684 container sRKPfg1
+													685 text 2107
+													686 text field (disabled) NIF prestador del servicio 2:, ID: sRKPog1
+												687 container sRKPpg1
+													688 text Importe anual satisfecho
+												689 container sRKPug1
+													690 text 2108
+													691 text field (disabled) Importe anual satisfecho:, ID: sRKP2h1
+											692 container sRKP3h1
+												693 container sRKP4h1
+													694 text NIF prestador del servicio 3
+												695 container sRKP9h1
+													696 text 2109
+													697 text field (disabled) NIF prestador del servicio 3:, ID: sRKPih1
+												698 container sRKPjh1
+													699 text Importe anual satisfecho
+												700 container sRKPoh1
+													701 text 2110
+													702 text field (disabled) Importe anual satisfecho:, ID: sRKPxh1
+											703 container sRKPyh1
+												704 container sRKPzh1
+													705 text NIF prestador del servicio 4
+												706 container sRKP3i1
+													707 text 2111
+													708 text field (disabled) NIF prestador del servicio 4:, ID: sRKPci1
+												709 container sRKPdi1
+													710 text Importe anual satisfecho
+												711 container sRKPii1
+													712 text 2112
+													713 text field (disabled) Importe anual satisfecho:, ID: sRKPri1
+											714 container sRKPsi1
+												715 container sRKPti1
+													716 text NIF prestador del servicio 5
+												717 container sRKPyi1
+													718 text 2113
+													719 text field (disabled) NIF prestador del servicio 5:, ID: sRKP6j1
+												720 container sRKP7j1
+													721 text Importe anual satisfecho
+												722 container sRKPcj1
+													723 text 2114
+													724 text field (disabled) Importe anual satisfecho:, ID: sRKPlj1
+											725 container sRKPmj1
+												726 container sRKPnj1
+													727 text NIF prestador del servicio 6
+												728 container sRKPsj1
+													729 text 2115
+													730 text field (disabled) NIF prestador del servicio 6:, ID: sRKP0k1
+												731 container sRKP1k1
+													732 text Importe anual satisfecho
+												733 container sRKP6k1
+													734 text 2116
+													735 text field (disabled) Importe anual satisfecho:, ID: sRKPfk1
+											736 container sRKPgk1
+												737 container sRKPhk1
+													738 text NIF prestador del servicio 7
+												739 container sRKPmk1
+													740 text 2117
+													741 text field (disabled) NIF prestador del servicio 7:, ID: sRKPvk1
+												742 container sRKPwk1
+													743 text Importe anual satisfecho
+												744 container sRKP0l1
+													745 text 2118
+													746 text field (disabled) Importe anual satisfecho:, ID: sRKP9l1
+											747 container sRKPal1
+												748 container sRKPbl1
+													749 text NIF prestador del servicio 8
+												750 container sRKPgl1
+													751 text 2119
+													752 text field (disabled) NIF prestador del servicio 8:, ID: sRKPpl1
+												753 container sRKPql1
+													754 text Importe anual satisfecho
+												755 container sRKPvl1
+													756 text 2120
+													757 text field (disabled) Importe anual satisfecho:, ID: sRKP3m1
+										758 container sRKP4m1
+											759 container sRKP5m1
+												760 text Importe total de las cantidades invertidas con derecho a deducción
+											761 container sRKPam1
+												762 text 2121
+												763 text field (disabled) Importe total de las cantidades invertidas con derecho a deducción:, ID: sRKPjm1
+										764 container sRKPkm1
+											765 container sRKPlm1
+												766 text Importe total de la deducción
+											767 container sRKPqm1
+												768 text 2122
+												769 text field (disabled) Importe total de la deducción:, ID: sRKPzm1
+		212 container js-pie-enlaces
+			213 container
+				214 heading Agencia Tributaria, Value: 2, ID: tgraeat-id-1793186860381-64374
+					215 text Agencia Tributaria
+				216 content list aeat-id-1793186860381-64374
+					217 link Description: Accesibilidad, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html
+					218 link Description: Aviso de seguridad, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/aviso-seguridad.html
+					219 link Description: Aviso legal, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/aviso-legal.html
+					220 link Description: Validación del certificado de sede, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/validacion-certificado-sede.html
+					221 link Description: Protección de datos, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/datos-personales.html
+					222 link Description: Política lingüística, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/politica-linguistica.html
+					223 link Description: Estructura y navegación en la sede electrónica, Value: sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/estructura-navegacion-sede-electronica.html
+					224 link Description: Códigos de identificación de la Agencia Tributaria (DIR3) Se abre en ventana nueva, Help: Códigos de identificación de la Agencia Tributaria (DIR3), Se abre en ventana nueva, Value: administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/fichaUnidadOrganica.htm?codigoUnidad=EA0028512
+			225 container
+				226 heading Contacta con nosotros, Value: 2, ID: tgraeat-id-1793186860381-64375
+					227 text Contacta con nosotros
+				228 content list aeat-id-1793186860381-64375
+					229 link Description: Asistencia y Cita, Value: sede.agenciatributaria.gob.es/Sede/procedimientoini/GC29.shtml
+					230 link Description: Teléfonos de interés, Value: sede.agenciatributaria.gob.es/Sede/contacta-nosotros/telefonos-interes.html
+					231 link Description: Buscador de oficinas, Value: sede.agenciatributaria.gob.es/Sede/buscador-oficinas.html
+					232 link Description: Buzones de sugerencias, Value: sede.agenciatributaria.gob.es/Sede/buzones-sugerencias.html
+					233 link Description: Encuesta de satisfacción de usuarios Se abre en ventana nueva, Help: Encuesta de satisfacción de usuarios, Se abre en ventana nueva, Value: forma.administracionelectronica.gob.es/form/open/corp/95fd4f0b-5c6e-4d91-a036-0717b277b7dd/RtHF/oauQDQlm
+					234 link Description: Denuncias, Value: sede.agenciatributaria.gob.es/Sede/colaborar-agencia-tributaria/denuncias.html
+					235 link Description: Suscripción newsletter, Value: sede.agenciatributaria.gob.es/Sede/informacion-institucional/suscripcion-rss-newsletter/newsletter.html
+					236 link Description: Suscripción RSS, Value: sede.agenciatributaria.gob.es/Sede/informacion-institucional/suscripcion-rss-newsletter/rss.html
+			237 container
+				238 heading Ayuda, Value: 2, ID: tgraeat-id-1793186860381-64376
+					239 text Ayuda
+				240 content list aeat-id-1793186860381-64376
+					241 link Description: Buscar, Value: sede.agenciatributaria.gob.es/Sede/search.html
+					242 link Description: Consultas informáticas, Value: sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas.html
+					243 link Description: Contenidos en lectura fácil, Value: sede.agenciatributaria.gob.es/Sede/ayuda/contenidos-lectura-facil.html
+					244 link Description: Diseños de registro, Value: sede.agenciatributaria.gob.es/Sede/ayuda/disenos-registro.html
+					245 link Description: Horario de interrupciones de sede, Value: sede.agenciatributaria.gob.es/Sede/ayuda/horario-interrupciones-sede-electronica.html
+					246 link Description: Manuales, vídeos y folletos, Value: sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos.html
+					247 link Description: Simuladores, Value: sede.agenciatributaria.gob.es/Sede/procedimientoini/ZZ08.shtml
+					248 link Description: Todas las ayudas, Value: sede.agenciatributaria.gob.es/Sede/ayuda.html
+			249 container
+				250 heading Enlaces de interés, Value: 2, ID: tgraeat-id-1793186860381-64377
+					251 text Enlaces de interés
+				252 content list aeat-id-1793186860381-64377
+					253 link Description: Ministerio de Hacienda, Value: hacienda.gob.es/
+					254 link Description: Fiscalidad autonómica y local Se abre en ventana nueva, Help: Fiscalidad autonómica y local, Se abre en ventana nueva, Value: agenciatributaria.es/AEAT.fisterritorial/InicioF.shtml
+					255 link Description: Tribunales Económico - Administrativos, Value: sede.tea.hacienda.gob.es/
+					256 link Description: Consejo para la Defensa del Contribuyente, Value: www2.agenciatributaria.gob.es/static_files/common/dep/planificacion/CDC/IFRD0001.html
+					257 link Description: Punto de Acceso General Se abre en ventana nueva, Help: Punto de Acceso General, Se abre en ventana nueva, Value: administracion.gob.es/
+					258 link Description: Portal de la transparencia Se abre en ventana nueva, Help: Portal de la transparencia, Se abre en ventana nueva, Value: transparencia.gob.es/
+					259 link Description: Otros enlaces de interés, Value: sede.agenciatributaria.gob.es/Sede/enlaces-interes.html
+	260 container ClickToCall
+		261 container
+			262 container ClickToCalld50284
+				263 text ¿Dudas?
+				264 text Clic aquí
+			265 text Información Tributaria Básica
+		266 link ¿Dudas? Clic aquí
+			267 image ¿Dudas? Clic aquí
+		268 button Ocultar ayuda de llamada a Información tributaria básica
+			269 image Ocultar ayuda de llamada a Información tributaria básica
+		270 button Cerrar ayuda de llamada a Información tributaria básica
+			271 image Cerrar ayuda de llamada a Información tributaria básica
+	770 container sRKP5n1
+		771 container sRKP6n1
+			772 container sRKP7n1
+				773 container sRKP8n1
+					774 container ID: sRKPmn1-frame, Por hijos 0 a 3 años de contribuyentes con residencia o traslado a pequeños municipios de la Rioja Modalidad Declarante
+						775 container
+							776 container Por hijos 0 a 3 años de contribuyentes con residencia o traslado a pequeños municipios de la Rioja, ID: sRKPnn1-chdex
+								777 text Por hijos 0 a 3 años de contribuyentes con residencia o traslado a pequeños municipios de la Rioja
+							778 container Modalidad Declarante, ID: sRKPpn1-chdex
+								779 container sRKPpn1
+									780 text Modalidad
+									781 text Declarante
+				782 container sRKP7o1
+					783 container sRKP8o1
+						784 container sRKPao1
+							785 text Código del municipio de residencia habitual
+						786 combo box (collapsed) Código del municipio de residencia habitual:, ID: sRKPmo1, Secondary Actions: Expand
+							787 text field sRKPmo1-real
+					788 container sRKPoo1
+						789 text Hijo 1
+						790 text Hijo 2
+						791 text Hijo 3
+						792 text Hijo 4
+						793 text Hijo 5
+					794 container sRKP4p1
+						795 container sRKP7p1
+							796 text 1) Nº de meses en los que el hijo da derecho a la deducción a ambos progenitores (1) y (2)
+						797 container sRKPcp1
+							798 text field (settable) Hijo 1: 1) Nº de meses en los que el hijo da derecho a la deducción a ambos progenitores (1) y (2):, ID: sRKPlp1
+						799 container sRKPop1
+							800 text field (settable) Hijo 2: 1) Nº de meses en los que el hijo da derecho a la deducción a ambos progenitores (1) y (2):, ID: sRKPxp1
+						801 container sRKP_q1
+							802 text field (settable) Hijo 3: 1) Nº de meses en los que el hijo da derecho a la deducción a ambos progenitores (1) y (2):, ID: sRKP8q1
+						803 container sRKPbq1
+							804 text field (settable) Hijo 4: 1) Nº de meses en los que el hijo da derecho a la deducción a ambos progenitores (1) y (2):, ID: sRKPkq1
+						805 container sRKPnq1
+							806 text field (settable) Hijo 5: 1) Nº de meses en los que el hijo da derecho a la deducción a ambos progenitores (1) y (2):, ID: sRKPwq1
+					807 container sRKPxq1
+						808 container sRKP_r1
+							809 text 2) Nº de meses en los que el hijo da derecho a la deducción sólo al titular (1)
+						810 container sRKP4r1
+							811 text field (settable) Hijo 1: 2) Nº de meses en los que el hijo da derecho a la deducción sólo al titular (1):, ID: sRKPdr1
+						812 container sRKPgr1
+							813 text field (settable) Hijo 2: 2) Nº de meses en los que el hijo da derecho a la deducción sólo al titular (1):, ID: sRKPpr1
+						814 container sRKPsr1
+							815 text field (settable) Hijo 3: 2) Nº de meses en los que el hijo da derecho a la deducción sólo al titular (1):, ID: sRKP0s1
+						816 container sRKP3s1
+							817 text field (settable) Hijo 4: 2) Nº de meses en los que el hijo da derecho a la deducción sólo al titular (1):, ID: sRKPcs1
+						818 container sRKPfs1
+							819 text field (settable) Hijo 5: 2) Nº de meses en los que el hijo da derecho a la deducción sólo al titular (1):, ID: sRKPos1
+					820 text (1) Solo deben computarse los meses en los que, residiendo en un pequeño municipio de La Rioja (vea la ayuda), el último día del mes el hijo sea menor de tres años y de derecho al mínimo por descendientes
+					821 text (2) Si se trata de contribuyentes casados, el dato también debe reflejarse en la declaración del otro cónyuge
+			822 container sRKPzs1-cave
+				823 button  Aceptar, ID: sRKP_t1
+				824 button  Cancelar, ID: sRKP0t1
+
+The focused UI element is 787 text field sRKPmo1-real

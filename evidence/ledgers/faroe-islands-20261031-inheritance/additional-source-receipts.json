@@ -1,0 +1,21 @@
+[
+  {
+    "name": "capital-correct",
+    "url": "https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173",
+    "final_url": "https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173",
+    "status": 200,
+    "sha256": "16dc4bf92fbcf1fcb0b5733ab0594a8330a7626bac3ec52318ace92f9797de88",
+    "reader_sha256": "285023242bd8432ab5ad3cd1fe1665ab5fd69f0a06a5cbb36c736180b528022c",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "court-publisher-mirror",
+    "url": "https://domstoldk.euwest01.umbraco.io/fo/faeroeerne/brug-retten/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "name": "court-forms-mirror",
+    "url": "https://domstoldk.euwest01.umbraco.io/fo/faeroeerne/blanketter-og-vejledninger/",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

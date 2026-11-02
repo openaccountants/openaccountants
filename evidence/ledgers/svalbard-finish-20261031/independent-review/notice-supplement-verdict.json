@@ -1,0 +1,23 @@
+{
+  "verdict": "changes_required",
+  "supersedes_scope_of": "repair-verdict.json",
+  "candidate_commit": "d89d6877bea2fdf0dd9d8cbe11dd942bae425dc6",
+  "time_utc": "2026-10-31T19:55:28.284314+00:00",
+  "finding": {
+    "id": "F3",
+    "priority": "P3",
+    "requirement": "docs/skill-template.md:302\u2013304 explicitly requires the full General reference only notice after the title",
+    "locations": {
+      "skills/svalbard/sj-svalbard-visitor-environmental-levy.md": 27,
+      "skills/svalbard/sj-svalbard-coal-export-duty.md": 28
+    },
+    "issue": "Current short Source-cited draft status sentence omits the required full general-reference notice. Mechanical checks did not detect this.",
+    "repair": "Insert full standard notice; use Guide instead of skill to follow founder public terminology. Preserve separate source-cited status and absence of attestation."
+  },
+  "files": {
+    "docs/skill-template.md": "6f9ad86f6be962808a7fb715c02152e85a8e00aceec0aa77ab6b8d717aaec019",
+    "skills/svalbard/sj-svalbard-visitor-environmental-levy.md": "5557dc93766583516b1f7b86aef349a9e36d172dff2750f1d3a43b3730d2c8a6",
+    "skills/svalbard/sj-svalbard-coal-export-duty.md": "abb4372e13d8d4ede15d4896efce5cfdefc5553f8ad6a3d6fbdac7da873f16e4"
+  },
+  "reviewer_note": "Reviewer missed this notice requirement in initial and first repair passes. F1 and F2 remain closed; this is a separate explicit standard requirement, no changed legal conclusion."
+}

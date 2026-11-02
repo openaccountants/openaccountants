@@ -1,0 +1,455 @@
+
+
+Seguridad Social: Prestaciones / Pensiones de Trabajadores
+
+[[ID:xO:KiebpBTB]]
+
+[[ID:com.ibm.lotus.NavStateUrl]]
+
+[[ID:segsocial]]
+
+[[ID:top]]
+
+[[ID:cookieContainer]]
+
+[[ID:cookies]]
+
+Aviso Cookies
+
+Este sitio web utiliza cookies para que usted tenga una mejor experiencia de usuario. Las cookies no se utilizan para recoger información de carácter personal. Para más información consulte nuestra política de cookies.
+
+Aceptar todas
+
+ Rechazar todas
+
+		    Portal de la Seguridad social
+
+[[ID:search-mm]]
+
+[[ID:query-mm]]
+
+							 Inicio
+
+										Conócenos
+
+								Trabajadores
+
+								Pensionistas
+
+								Empresarios
+
+								Clases Pasivas
+
+								Sugerencias y quejas
+
+								Consultas
+
+								Idiomas
+									 
+									Toggle dropdown menu
+
+Castellano
+
+Català
+
+Galego
+
+Euskara
+
+Valencià
+
+English
+
+Français
+
+				Ir a contenido
+				Desplegar campo de búsqueda
+
+									Sugerencias y quejas
+
+									Consultas
+
+[[ID:top-search-id]]
+
+											Busqueda
+
+										  Castellano
+Toggle dropdown menu
+				                          
+[[ID:lang-menu]]
+
+Castellano
+
+Català
+
+Galego
+
+Euskara
+
+Valencià
+
+English
+
+Français
+
+[[ID:top-search-collapse-id]]
+
+[[ID:formularioBuscador_field]]
+
+											Introduzca su búsqueda       
+											Acceso directo al buscador
+											Buscador  
+											
+[[ID:busqueda_field]]
+
+											Click para buscar        
+											
+[[ID:btn-busqueda_field]]
+
+[[ID:boton-advanceSearch]]
+Buscador avanzado
+
+								El texto a buscar debe tener al menos 3 caracteres
+
+									Inicio
+
+									Conócenos
+
+									Trabajadores
+
+									Pensionistas
+
+									Empresarios
+
+									Clases Pasivas
+
+[[ID:asa.page]]
+
+	Z6_21I4H401M8LJC0ARPRHM342O52
+	Z6_21I4H401M8LJC0ARPRHM342G72
+
+[[ID:content]]
+
+[[ID:wpthemeStatusBarContainer]]
+
+	                	  Error: 
+En este navegador se ha inhabilitado
+	                    Javascript. Esta pÃ¡gina necesita Javascript. Modifique los
+	                    valores del navegador para permitir que se ejecute Javascript.
+	                    Consulte la documentaciÃ³n para obtener instrucciones
+	                    especÃ­ficas.
+
+[[ID:btn-valuation]]
+
+    Valore este contenido                            
+
+[[ID:Satisfaction_survey]]
+
+              ×
+                Encuesta de satisfacción
+
+[[ID:starsform]]
+
+Califique esta página o el trámite relacionado. *
+
+                    Valoración con estrellas
+
+[[ID:radio1]]
+
+[[ID:radio2]]
+
+[[ID:radio3]]
+
+[[ID:radio4]]
+
+[[ID:radio5]]
+
+¿Ha encontrado lo que buscaba o ha conseguido completar el trámite que deseaba realizar? *
+
+                    Valoración grado satisfacción
+
+[[ID:opcionSi]]
+
+[[ID:op1]]
+Sí
+
+[[ID:opcionNo]]
+
+[[ID:op2]]
+No
+
+[[ID:opcionEnparte]]
+
+[[ID:op3]]
+En parte
+
+Su valoración será tratada de forma anónima.
+
+* Campos obligatorios
+
+[[ID:btnEnviarEncuesta]]
+
+[[ID:gratitude-layer]]
+
+                        Gracias por su participación
+                        Juntos podemos seguir mejorando este Portal
+
+[[ID:bye]]
+
+[[ID:portletState]]
+{}
+
+[[ID:asa.wcm]]
+
+	e19a836a-5888-4124-a31f-932569fbb2ae
+
+            	Inicio
+
+				Trabajadores
+
+				Prestaciones / Pensiones de Trabajadores
+
+				Gestión de la prestación de Incapacidad Temporal
+
+				Régimen General
+
+				Cuantía
+
+Cuantía
+
+[[ID:estructura]]
+
+Cuantía
+
+Base reguladora
+
+Porcentaje
+
+Incapacidad temporal/desempleo
+
+Desempleo/incapacidad temporal
+
+[[ID:Cuantia]]
+
+Cuantía
+
+La prestación consiste en un subsidio cuya cuantía está en función de la base reguladora (BR) y de los porcentajes aplicables a la misma.
+
+[[ID:30791]]
+
+Base reguladora
+
+Norma general:
+
+En los supuestos de contingencias comunes:
+
+Es el resultado de dividir el importe de la base de cotización por contingencias comunes de la persona trabajadora en el mes anterior al de la fecha de iniciación de la incapacidad por el número de días a que dicha cotización se refiere (este divisor será concretamente: 30, si la persona trabajadora tiene salario mensual; 28, 29, 30 o 31, si tiene salario diario). 
+
+No obstante, si la persona trabajadora ingresa en la empresa en el mismo mes en que se inicia la incapacidad, se tomará para la BR la base de cotización de dicho mes, dividida por los días efectivamente cotizados. También, se tomará como divisor los días efectivamente cotizados, cuando la persona trabajadora no ha permanecido en alta durante todo el mes natural anterior. 
+
+En los supuestos de accidente de trabajo o enfermedad profesional: 
+
+La BR se obtiene por adición de dos sumandos: 
+
+La base de cotización por contingencias profesionales del mes anterior, sin horas extraordinarias, dividida por el número de días a que corresponda dicha cotización. 
+
+La cotización por horas extraordinarias del año natural anterior, dividida entre 365 días, salvo que la antigüedad en la empresa sea inferior, en cuyo caso, se expresará el número de días de alta laboral en la empresa excluidos los del mes de la baja. 
+
+En el caso de pluriempleo:
+
+Se calcula computando todas las bases de cotización en las distintas empresas con aplicación del tope máximo vigente a efectos de cotización.
+
+En el caso de las personas trabajadoras contratadas a tiempo parcial, cualquiera que sea la duración de la prestación de servicios y la contingencia: La BR diaria será el resultado de dividir la suma de las bases de cotización a tiempo parcial acreditadas desde la última alta laboral, con un máximo de 3 meses inmediatamente anteriores al mes previo al del hecho causante, entre el número de días naturales comprendidos en el periodo.
+
+La prestación se abonará durante todos los días naturales en que la persona interesada se encuentre en la situación de incapacidad temporal.
+
+Lo anterior no afectará al cómputo del período máximo de duración de la situación de incapacidad temporal (IT), que, en todo caso, se realizará por referencia al número de días naturales de permanencia en la misma.
+
+En el caso de contratos de trabajo fijos discontinuos
+
+Para las personas con contrato fijo-discontinuo la base reguladora diaria de la prestación por incapacidad temporal será el resultado de dividir la suma de las bases de cotización acreditadas desde su alta en el correspondiente régimen a consecuencia del inicio de la prestación de servicios motivado por el último llamamiento, con un máximo de tres meses inmediatamente anteriores al mes previo al del hecho causante, entre el número de días naturales comprendidos en el período. 
+
+En el caso de contratos para la formación en alternancia y para la obtención de la práctica profesional, la BR será para todas las contingencias la base mínima de cotización del Régimen General, si se trata de la persona trabajadora con contrato formativo en alternancia y para la obtención de la práctica profesional, salvo que la base de cotización sea superior, en cuyo caso se aplicará ésta.
+
+En el caso de personas que realicen prácticas formativas o prácticas académicas externas incluidas en programas de formación:
+
+En el supuesto de las prácticas no remuneradas se excluye la protección por la prestación de incapacidad temporal derivada de contingencias comunes. 
+
+Las prestaciones que correspondan por la situación de incapacidad temporal derivada de contingencias comunes o profesionales se abonará en todo caso mediante pago delegado. 
+
+La base de cotización a efectos de prestaciones será:
+
+Prácticas remuneradas: Se tomará la base mínima de cotización del grupo de cotización 7, salvo en aquellos meses en los que el alta no se extienda al mes completo, en cuyo caso se tomará la prorrata. 
+
+Prácticas no remuneradas: Será el resultado de multiplicar la base mínima de cotización vigente en cada momento respecto del grupo de cotización 8, por el número de días de prácticas formativas realizadas en el mes natural con el límite, en todo caso, del importe de la base mínima de cotización mensual correspondiente al grupo de cotización 7. Además, a efectos de prestaciones, cada día de prácticas formativas no remuneradas será considerado como 1,61 días cotizados, sin que pueda sobrepasarse, en ningún caso, el número de días del mes correspondiente. Las fracciones de día que pudieran resultar del coeficiente anterior se computarán como un día completo.
+
+En caso de las personas trabajadoras de los sectores de artistas y profesionales taurinos, cualquiera que sea la contingencia de la que derive:
+
+En el caso de los artistas, la base reguladora es el promedio de las bases de cotización de los 12 meses anteriores al hecho causante; y, en el caso de los toreros, la que resulte de dividir por 365 la cotización anual total anterior al hecho causante o el promedio diario del período de cotización que se acredite, si éste es inferior al año. 
+
+En el caso de las personas trabajadoras incluidas en el Sistema especial para trabajadores por cuenta ajena agrarios:
+
+Si la persona trabajadora cotiza por jornadas reales y realiza menos de 22 de dichas jornadas al mes:
+
+Se equiparan a personas trabajadoras a tiempo parcial y fijos-discontinuos. La BR reguladora de IT de contingencias comunes y de profesionales es la misma.
+
+Para el cálculo de la BR se toma la base de cotización de jornadas reales de la empresa donde ha sucedido el hecho causante.
+
+Si la persona trabajadora realiza 22 o más jornadas al mes, supone la cotización por bases mensuales:
+
+IT contingencias profesionales:
+
+Base de cotización de contingencias profesionales del mes anterior al de la baja médica. 
+Se excluyen los conceptos retributivos que no tengan carácter periódico (horas extras) o cuya periodicidad sea superior a la mensual y se incluye el promedio de las bases de cotización correspondientes a dichos conceptos durante los doce meses naturales inmediatamente anteriores a la fecha de inicio de la prestación o, si es inferior, el periodo de alta en la empresa a la que pertenezca la persona trabajadora.
+
+IT contingencias comunes:
+
+Se aplican las normas establecidas con carácter general.
+
+En el caso de las personas trabajadoras incluidas en el Sistema especial para empleados de hogar:
+
+Base reguladora de IT derivada de contingencias comunes
+
+• Trabajadores a tiempo completo: la base reguladora estará constituida por la base de cotización del mes anterior a la baja médica, dividida por 30.
+• Trabajadores a tiempo parcial: la base reguladora estará constituida por el promedio de las bases de cotización de los 3 meses inmediatamente anteriores al mes previo a la baja médica.
+
+Base reguladora de IT derivada de contingencias profesionales
+
+• Trabajadores a tiempo completo: la base reguladora estará constituida por la base de cotización del mes anterior a la baja médica, dividida por 30.
+
+• Trabajadores a tiempo parcial: la base reguladora estará constituida por el promedio de las bases de cotización de los 3 meses inmediatamente anteriores al mes previo a la baja médica, sin que proceda efectuar el promedio de las horas extraordinarias. 
+
+Base de cotización por la realización de horas extraordinarias: el RD-Ley 3/2012, excluye expresamente la realización de horas extraordinarias en los contratos a tiempo parcial de los trabajadores del SEEH.
+
+Pluriempleo y tiempo parcial
+
+Cuando un empleado de hogar tenga varios contratos a tiempo parcial y la suma de sus bases de cotización sea equivalente a la de una persona trabajadora a tiempo completo, se asimilan a trabajadores a tiempo completo para computar los días trabajados y causar prestación, y a tiempo parcial a efectos del reconocimiento del derecho y cálculo de los subsidios.
+
+La BR se calcula computando las bases de cotización de las distintas empresas, siendo de aplicación el tope máximo de cotización.
+
+Pluriempleo con tiempo parcial y tiempo completo
+
+Si el empleado de hogar trabaja simultáneamente a tiempo completo para un empleador y a tiempo parcial para otro, la determinación de la porción de la BR diaria correspondiente se efectuará en cada empleo de acuerdo con su régimen, sin que la base pueda superar el tope máximo de cotización.
+
+[[ID:6390]]
+
+Porcentaje
+
+En caso de enfermedad común y accidente no laboral:
+
+60% desde el día 4 hasta el 20 inclusive.
+
+75% desde el día 21 en adelante.
+
+En caso de accidente de trabajo y enfermedad profesional:
+
+75% desde el día en que se produzca el nacimiento del derecho.
+
+Situaciones especiales de IT para mujeres trabajadoras:
+
+Menstruación incapacitante secundaria: 
+
+Del primer día al vigésimo: 60% base reguladora. A partir del vigésimo primero: 75% base reguladora.
+
+Interrupción del embarazo, voluntaria o no y día primero semana trigésima novena de gestación:
+
+Primer día: salario. 
+
+Del segundo al vigésimo día: 60% base reguladora. 
+
+A partir del vigésimo primer día: 75% base reguladora.
+
+Situación especial de IT por donación de órganos o tejidos para su transplante: 
+
+100% de la base reguladora desde el primer día de la baja. 
+
+[[ID:28349]]
+
+Incapacidad temporal/desempleo
+
+Cuando la persona trabajadora se encuentre en situación de incapacidad temporal (IT) derivada de contingencias comunes y durante la misma se extinga su contrato:
+
+Seguirá percibiendo la prestación por IT en cuantía igual a la prestación de desempleo que le corresponda hasta que se extinga dicha situación, pasando entonces a la situación legal de desempleo si el contrato se ha extinguido por alguna de las causas legales que dan lugar a dicha situación y a percibir, si reúne los requisitos necesarios, la prestación por desempleo contributivo que le corresponda, de haberse iniciado la percepción de la misma en la fecha de extinción del contrato de trabajo, o el subsidio por desempleo. En tal caso, se descontará del período de percepción de la prestación de desempleo como ya consumido, el tiempo que hubiere permanecido en la situación de IT a partir de la fecha de extinción del contrato de trabajo. 
+
+El SPEE  efectuará las cotizaciones a la Seguridad Social asumiendo la cotización que corresponda a la persona trabajadora en su totalidad por todo el período que se descuente como consumido, incluso cuando no se haya solicitado la prestación por desempleo y sin situación de continuidad se pase a la situación de incapacidad permanente o jubilación, o se produzca el fallecimiento de la persona trabajadora que dé derecho a prestaciones de muerte y supervivencia.  
+
+Cuando la persona trabajadora se encuentre en situación de IT derivada de contingencias profesionales y durante la misma se extinga su contrato de trabajo:
+
+Seguirá percibiendo la prestación por IT, en cuantía igual a la que tuviera reconocida, hasta que se extinga dicha situación, pasando entonces a la situación legal de desempleo y a percibir la correspondiente prestación por desempleo si reúne los requisitos necesarios. En este caso, no procede descontar del período de percepción de la misma el tiempo que hubiera permanecido en situación de IT tras la extinción del contrato o el subsidio por desempleo.
+
+[[ID:28391]]
+
+Desempleo/incapacidad temporal
+
+Cuando la persona trabajadora esté percibiendo la prestación por desempleo total y pase a la situación de incapacidad temporal (IT), hay que distinguir:
+
+En los casos en que la IT constituya recaída de un proceso anterior iniciado durante la vigencia de un contrato de trabajo:
+
+Percibirá la prestación por IT en cuantía igual a la prestación por desempleo. 
+
+En este caso y en el supuesto de que continuase en situación de IT una vez agotado el período de desempleo, seguirá percibiendo la prestación por IT en la cuantía de desempleo que venía percibiendo.
+
+En los casos en que la IT no constituya recaída de un proceso anterior iniciado durante la vigencia de un contrato de trabajo sino un nuevo proceso:
+
+Percibirá la prestación por esta contingencia en cuantía igual a la prestación por desempleo. 
+
+En este caso y en el supuesto de que continuase en situación de IT una vez finalizado el período de desempleo, seguirá percibiendo la prestación por IT en cuantía igual al 80% del IPREM mensual, excluida la parte proporcional de pagas extras.
+
+No se ampliará el período de percepción de desempleo.
+
+La Entidad gestora de las prestaciones por desempleo continuará satisfaciendo las cotizaciones a la Seguridad Social (la aportación de la empresa y el complemento del 35% en que se reduce la aportación de la persona trabajadora). 
+
+[[ID:poin-informacion-relacionada]]
+
+Información Relacionada
+
+Certificados electrónicos 
+
+Formularios y modelos 
+
+Internacional 
+
+Tarjeta Sanitaria Europea 
+
+Trámites y gestiones 
+
+[[ID:pie]]
+
+[[ID:ontop]]
+
+								Cómo identificarme							
+
+								Mapa Web
+
+								Glosario
+
+								Enlaces
+
+								Ayuda
+
+								Accesibilidad
+
+								Información Lingüística
+
+								RSS 
+
+				Copyright © Seguridad Social 2026. Todos los derechos reservados.
+
+								Aviso Legal
+
+								Política de cookies	
+
+[[ID:wpthemeComplementaryContent]]
+
+[[ID:wpthemeComplementaryContentText]]
+Complementary Content
+		
+[[ID:simpleMenuTemplate]]
+
+${title}${badge}
+
+    ${loading}
+
+[[ID:${submenu-id}]]
+
+

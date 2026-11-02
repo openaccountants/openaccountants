@@ -1,0 +1,49 @@
+[
+  {
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "status": 200,
+    "bytes": 1769466,
+    "sha256": "ddc2776b9e285496028f4d8ddc8050a8615c10f196faea31e31084eb3f3c3ef8",
+    "read_date": "2026-10-27",
+    "fetched_utc": "2026-10-27T16:44:03.277139+00:00",
+    "file": "sources/liva.html",
+    "verified_sha256": "ddc2776b9e285496028f4d8ddc8050a8615c10f196faea31e31084eb3f3c3ef8",
+    "actual_body_read": true
+  },
+  {
+    "key": "aeat2026-regularisation",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-05-deducciones-devoluciones/deducciones/regularizacion-deducciones-bienes-inversion.html",
+    "status": 200,
+    "bytes": 10303,
+    "sha256": "2fe754ba7bd66dac991b135d07dc5a46e149226691d15466e8e9b4c189647cc9",
+    "file": "sources/aeat2026-regularisation.html",
+    "fetched_utc": "2026-10-27T16:47:03.929504+00:00",
+    "read_date": "2026-10-27",
+    "verified_sha256": "2fe754ba7bd66dac991b135d07dc5a46e149226691d15466e8e9b4c189647cc9",
+    "actual_body_read": true
+  },
+  {
+    "key": "aeat2026-procedure",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-05-deducciones-devoluciones/deducciones/regularizacion-deducciones-bienes-inversion/procedimiento-regularizacion.html",
+    "status": 200,
+    "bytes": 12035,
+    "sha256": "58d296f4810045343a70778c59cc01cd1221439b50913d8a08b3c99539c553a8",
+    "file": "sources/aeat2026-procedure.html",
+    "fetched_utc": "2026-10-27T16:47:03.831817+00:00",
+    "read_date": "2026-10-27",
+    "verified_sha256": "58d296f4810045343a70778c59cc01cd1221439b50913d8a08b3c99539c553a8",
+    "actual_body_read": true
+  },
+  {
+    "key": "aeat2026-preactivity",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-05-deducciones-devoluciones/deducciones/deducc-cuotas-sop-satisf-antes-servic/regularizacion.html",
+    "status": 200,
+    "bytes": 11516,
+    "sha256": "62eafde8f93c32ce5e7c4095f7cfa5690c13145a70e1701e0cd4297ff4a058b6",
+    "file": "sources/aeat2026-preactivity.html",
+    "fetched_utc": "2026-10-27T16:47:03.831900+00:00",
+    "read_date": "2026-10-27",
+    "verified_sha256": "62eafde8f93c32ce5e7c4095f7cfa5690c13145a70e1701e0cd4297ff4a058b6",
+    "actual_body_read": true
+  }
+]

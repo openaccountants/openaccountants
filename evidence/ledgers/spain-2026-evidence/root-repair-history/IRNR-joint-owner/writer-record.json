@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-28T17:42:08.797081+00:00",
+  "guide": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+  "before_sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+  "after_sha256": "329094d55059fe79c3bfb5b6830d3664d5bfdaed7c61a67322662c74a0d8cc67",
+  "source_url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-renta-no-residentes/modelo-210-irnr______a-no-residentes-permanente_/instrucciones.html",
+  "read_scope": "Browser current instructions lines26-29,233-241,415-416,572-578. Freshly fetched 28Oct. Exact original source is public government instructions.",
+  "options": {
+    "A": "Restore existing old topic directly under filing using verified specific property-transfer/paper-signature scope. Selected.",
+    "B": "Keep an explicit preservation gap until later. Not selected; current official instructions resolve it."
+  },
+  "change": "One filing paragraph and Sources row; version/date bump; no executable case, CTA or attribution change."
+}

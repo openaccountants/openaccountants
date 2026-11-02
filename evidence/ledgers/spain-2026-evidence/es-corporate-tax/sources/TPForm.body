@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="BOE-A-2017-10042 Orden HFP/816/2017, de 28 de agosto, por la que se aprueba el modelo 232 de declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales." />
+    <title>BOE-A-2017-10042 Orden HFP/816/2017, de 28 de agosto, por la que se aprueba el modelo 232 de declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales.</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/diario-boe.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/texto.css" type="text/css">
+  
+    <link rel="canonical" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2017-10042"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2017-10042" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#date_document" content="2017-08-28" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#number" content="hfp816" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/60"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/119"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1508"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4113"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4169"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2017-10042" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#date_document" content="2017-08-28" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#number" content="hfp816" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/60"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/119"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/1508"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4108"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4113"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4169"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2017/08/28/hfp816"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden HFP/816/2017, de 28 de agosto, por la que se aprueba el modelo 232 de declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa" property="http://data.europa.eu/eli/ontology#date_publication" content="2017-08-30" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/epub"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/xml"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/epub" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/epub" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/epub" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/xml" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/xml" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/xml"/>
+<meta  about="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa/xml" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2017/08/28/hfp816/dof/spa"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor" tabindex="-1">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/" tabindex="-1">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" srcset="/imagenes/logoMPRmovil.svg" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" srcset="/imagenes/logoMPR.svg" alt="Ministerio de la Presidencia"></a></span>
+
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+        
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <span class="fuera">Idioma actual:</span>
+            <input id="activar-idiomas" type="checkbox" class="fuera">
+            <label class="idioma-actual" for="activar-idiomas" title="Idiomas: Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="fuera"> / </span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <ul id="lista-idiomas">
+              <li><a href="doc.php?lang=es&amp;id=BOE-A-2017-10042" lang="es" hreflang="es"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><span class="fuera"> / </span><em>Castellano</em></span></a></li>
+              <li><a href="doc.php?lang=ca&amp;id=BOE-A-2017-10042" lang="ca" hreflang="ca"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><span class="fuera"> / </span><em>Catal&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=gl&amp;id=BOE-A-2017-10042" lang="gl" hreflang="gl"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><span class="fuera"> / </span><em>Galego</em></span></a></li>
+              <li><a href="doc.php?lang=eu&amp;id=BOE-A-2017-10042" lang="eu" hreflang="eu"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><span class="fuera"> / </span><em>Euskara</em></span></a></li>
+              <li><a href="doc.php?lang=va&amp;id=BOE-A-2017-10042" lang="ca-valencia" hreflang="ca-valencia"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><span class="fuera"> / </span><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=en&amp;id=BOE-A-2017-10042" lang="en" hreflang="en"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><span class="fuera"> / </span><em>English</em></span></a></li>
+              <li><a href="doc.php?lang=fr&amp;id=BOE-A-2017-10042" lang="fr" hreflang="fr"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><span class="fuera"> / </span><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;" class="fuera">
+          <label class="click-desplegar resto" for="activar-menu" title="Men&uacute;: Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe">BOE</a></li>
+                  <li><a href="/diario_borme">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones</a></li>
+                  <li><a href="/edictos_judiciales">Edictos judiciales</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                  <li><a href="/datosabiertos/api/api.php">Datos abiertos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscar/">Buscar</a></li>        <li class="destino">Documento BOE-A-2017-10042</li>
+        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolBdatos">
+<h2 class="fuera">Documento BOE-A-2017-10042</h2>
+<div class="enlacesDoc" id="barraSep">
+  <h3 class="documento-tit">Orden HFP/816/2017, de 28 de agosto, por la que se aprueba el modelo 232 de declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales.</h3>
+  <div class="metadatosDoc">
+    <div class="metadatos">
+      <dl>
+        <dt>Publicado en:</dt>
+        <dd>«<abbr title="Boletín Oficial del Estado">BOE</abbr>» <abbr title="número">núm.</abbr> 208, de 30 de agosto de 2017, páginas 85966 a 85974 (9 <abbr title="páginas">págs.</abbr>)</dd>
+        <dt>Sección:</dt>
+        <dd>I. Disposiciones generales</dd>
+        <dt>Departamento:</dt>
+        <dd>Ministerio de Hacienda y Función Pública</dd>
+        <dt>Referencia:</dt>
+        <dd>BOE-A-2017-10042</dd>
+        <dt>Permalink ELI:</dt>
+        <dd>
+          <a href="https://www.boe.es/eli/es/o/2017/08/28/hfp816" title="Permalink ELI">https://www.boe.es/eli/es/o/2017/08/28/hfp816</a>
+        </dd>
+      </dl>
+    </div>
+    <ul class="enlaces-doc">
+      <li class="tit-enlaces">Otros formatos:</li>
+      <li class="puntoPDF">
+        <a title="Documento PDF de la publicación original" href="/boe/dias/2017/08/30/pdfs/BOE-A-2017-10042.pdf">PDF</a>
+      </li>
+      <li class="puntoEpub">
+        <a title="Libro electrónico de BOE-A-2017-10042" href="/diario_boe/epub.php?id=BOE-A-2017-10042">EPUB</a>
+      </li>
+      <li class="puntoXML">
+        <a target="_blank" title="Texto y metadatos en formato XML" href="/diario_boe/xml.php?id=BOE-A-2017-10042">XML</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .metadatosDoc -->
+</div>
+<!-- .enlacesDoc -->
+<div class="pretexto">
+  <div class="tabs">
+    <input name="tabs" type="radio" id="tab-texto" class="input" checked="checked"/>
+    <label for="tab-texto" class="label">Texto</label>
+    <div id="DOdocText" class="panel">
+      <h4>TEXTO ORIGINAL</h4>
+      <div id="textoxslt">
+        <p class="parrafo">Para los períodos impositivos que se iniciaron a partir del 1 de enero de 2015, tuvo lugar una reforma global y completa de la normativa del Impuesto sobre Sociedades. Esta reforma se concretó en la aprobación de la Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades y en el desarrollo que de la misma se realiza por el Reglamento del Impuesto sobre Sociedades, aprobado por el Real Decreto 634/2015, de 10 de julio.</p>
+        <p class="parrafo">En el ámbito de las operaciones vinculadas, la Ley del Impuesto sobre Sociedades presentó novedades en relación con la documentación específica a elaborar por las entidades afectadas, regulando un contenido simplificado para aquellas entidades o grupos de entidades cuyo importe neto de la cifra de negocios sea inferior a 45 millones de euros, y no siendo necesaria en relación con determinadas operaciones. Esta documentación específica fue objeto de desarrollo en el Reglamento del Impuesto sobre Sociedades. No obstante, hay que tener en cuenta que la obligación de documentación es una obligación distinta e independiente de la obligación de información, que es la obligación objeto de desarrollo de esta orden ministerial.</p>
+        <p class="parrafo">También fue novedosa la restricción del perímetro de vinculación en el ámbito de la relación socio-sociedad, que hasta ese momento, venía definido por un 5 por ciento de participación o un 1 por ciento de participación para el caso de valores que coticen en un mercado regulado. Con la nueva Ley del Impuesto sobre Sociedades quedó fijado en el 25 por ciento de participación.</p>
+        <p class="parrafo">En cuanto a las novedades introducidas por el Reglamento del Impuesto sobre Sociedades, ya mencionado anteriormente, hay que hacer referencia al Capítulo V denominado «Información y documentación sobre entidades y operaciones vinculadas» de su Título I. Aquí se introdujeron modificaciones sustanciales respecto a la situación anterior en relación con la información y documentación a aportar por las personas y entidades vinculadas, haciéndose eco de las conclusiones que se adoptaron en el denominado Plan de acción «BEPS», esto es, el Plan de acción contra la erosión de la base imponible y el traslado de beneficios, que se elabora en el ámbito de la OCDE, y en concreto en relación con la Acción 13 relativa a la documentación sobre precios de transferencia.</p>
+        <p class="parrafo">En este sentido, hay que hacer referencia a la obligación contemplada en el artículo 13.4 del Reglamento del Impuesto sobre Sociedades de incluir, en las declaraciones que así se prevea, la información relativa a las operaciones vinculadas. Tradicionalmente, esta obligación de información se ha llevado a cabo mediante la cumplimentación del cuadro de información con personas o entidades vinculadas contenido en el modelo 200 de declaración del Impuesto sobre Sociedades. A este cuadro se añadió uno nuevo específico, por primera vez para las declaraciones de los períodos impositivos iniciados en el ejercicio 2015, relativo a las operaciones con personas o entidades vinculadas en caso de aplicación de la reducción de rentas procedentes de determinados activos intangibles.</p>
+        <p class="parrafo">No obstante, para los períodos impositivos iniciados a partir del 1 de enero de 2016, se ha optado por trasladar los cuadros citados en el párrafo anterior desde el modelo de declaración del Impuesto sobre Sociedades a una nueva declaración informativa en la que se informe expresamente de las operaciones con personas o entidades vinculadas. La finalidad es doble, por una parte, se entiende más acertado el hecho de incluir estos dos cuadros, que recogen contenido meramente informativo, en una declaración informativa que únicamente tendrán que cumplimentar aquellas entidades que estén obligadas a informar de las operaciones realizadas con personas o entidades vinculadas y, por otra parte, se entiende que eliminando estos cuadros informativos, de contenido a veces complejo, de la declaración del Impuesto sobre Sociedades, se reducen las cargas fiscales indirectas asociadas a la presentación de esta declaración.</p>
+        <p class="parrafo">Por estas mismas razones, y sin que haya habido ninguna modificación legislativa al respecto, se ha optado por trasladar la información relativa a operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales, que tradicionalmente también se viene incluyendo en la declaración del Impuesto sobre Sociedades, a la nueva declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales.</p>
+        <p class="parrafo">Para conseguir que la reducción de cargas fiscales sea efectiva, el plazo de presentación de la declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales, modelo 232, se ha fijado en cuatro meses después de la fecha de presentación de las declaraciones del Impuesto sobre Sociedades.</p>
+        <p class="parrafo">El artículo 13.4 del Reglamento del Impuesto sobre Sociedades no establece ninguna restricción específica en cuanto a la obligación de informar siempre que se trate de información relativa a operaciones con personas o entidades vinculadas. La presente orden regula en qué casos y con qué limites se deberá informar sobre este tipo de operaciones, basándose en la necesidad de contar con una información que es esencial en la lucha contra el fraude fiscal pero sin que suponga una carga administrativa excesiva para los obligados tributarios concernidos por la obligación de presentar el modelo de declaración 232. En este sentido se solicita la información en los términos y cuantías que se indican en los párrafos siguientes.</p>
+        <p class="parrafo">En relación con el cuadro denominado «Información operaciones con personas o entidades vinculadas (art. 13.4 RIS)», se mantiene la obligación de informar acerca de las operaciones realizadas con la misma persona o entidad vinculada, siempre que el importe de la contraprestación del conjunto de operaciones en el período impositivo supere los 250.000 euros, de acuerdo con el valor de mercado.</p>
+        <p class="parrafo">En cuanto a la obligación de informar sobre determinadas operaciones específicas, la actual orden ministerial obliga a informar sobre este tipo de operaciones, siempre que el importe conjunto de cada tipo de operación en el período impositivo supere los 100.000 euros, independientemente del método de valoración utilizado, debiendo informarse en este supuesto de cada uno de los tipos de operaciones que superen el límite conjunto.</p>
+        <p class="parrafo">Asimismo, para los períodos impositivos iniciados en 2016, se ha incluido una regla especial para evitar que se produzca el fraccionamiento de las operaciones vinculadas, de tal forma que aun cuando no se superen los importes conjuntos anteriormente mencionados, existirá igualmente la obligación de informar respecto a aquellas operaciones del mismo tipo y método utilizado, cuando el importe del conjunto de las mismas en el período impositivo sea superior al 50% del importe neto de la cifra de negocios de la entidad.</p>
+        <p class="parrafo">Por otra parte, y en relación con el cuadro denominado «Operaciones con personas o entidades vinculadas en caso de aplicación de la reducción de las rentas procedentes de determinados activos intangibles (artículo 23 y DT 20ª LIS)» y el cuadro denominado «Operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales», se ha mantenido el contenido de los mismos en los términos que estaban en la declaración del Impuesto sobre Sociedades del ejercicio 2015, de tal forma que deberán incluirse estas operaciones independientemente del importe de las mismas.</p>
+        <p class="parrafo">La disposición final única del Reglamento del Impuesto sobre Sociedades habilita al Ministro de Hacienda y Administraciones Públicas para:</p>
+        <p class="parrafo_2">a) Aprobar el modelo de declaración por el Impuesto sobre Sociedades y determinar los lugares y forma de presentación del mismo.</p>
+        <p class="parrafo">b) Aprobar la utilización de modalidades simplificadas o especiales de declaración, incluyendo la declaración consolidada de los grupos de sociedades.</p>
+        <p class="parrafo">c) Establecer los documentos o justificantes que deban acompañar a la declaración.</p>
+        <p class="parrafo">d) Aprobar el modelo de pago fraccionado y determinar el lugar y forma de presentación del mismo.</p>
+        <p class="parrafo">e) Aprobar el modelo de información que deben rendir las agrupaciones de interés económico y las uniones temporales de empresas.</p>
+        <p class="parrafo">f) Ampliar, atendiendo a razones fundadas de carácter técnico, el plazo de presentación de las declaraciones tributarias establecidas en la Ley del Impuesto y en este Reglamento cuando esta presentación se efectúe por vía telemática.</p>
+        <p class="parrafo_2">El artículo 13.4 del Reglamento del Impuesto sobre Sociedades establece que el contribuyente deberá incluir en las declaraciones que así se prevea, la información relativa a sus operaciones vinculadas en los términos que se establezca por Orden del Ministro de Hacienda y Administraciones Públicas.</p>
+        <p class="parrafo">El artículo 21 del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes aprobado por Real Decreto Legislativo 5/2004, de 5 de marzo, habilita al Ministro de Hacienda y Administraciones Públicas para determinar la forma y el lugar en que los establecimientos permanentes deben presentar la correspondiente declaración, así como la documentación que deben acompañar a ésta. La disposición final segunda de este mismo texto refundido habilita al Ministro de Hacienda para aprobar los modelos de declaración de este Impuesto, para establecer la forma, lugar y plazos para su presentación, así como para establecer los supuestos y condiciones de presentación de los mismos por medios telemáticos.</p>
+        <p class="parrafo">La Ley 58/2003, de 17 de diciembre, General Tributaria, en el artículo 98.4 habilita al Ministro de Hacienda para que determine los supuestos y condiciones en los que los obligados tributarios deberán presentar por medios telemáticos sus declaraciones, autoliquidaciones, comunicaciones, solicitudes y cualquier otro documento con trascendencia tributaria.</p>
+        <p class="parrafo">Por otra parte, el artículo 92 de la Ley General Tributaria habilita a la Administración tributaria para señalar los requisitos y condiciones para que la colaboración social se realice mediante la utilización de técnicas y medios electrónicos, telemáticos e informáticos.</p>
+        <p class="parrafo">Las habilitaciones al Ministro de Hacienda y Administraciones Públicas o al Ministro de Hacienda deben entenderse realizadas al Ministro de Hacienda y Función Pública de acuerdo con la nueva estructura ministerial establecida por el Real Decreto 415/2016, de 3 de noviembre, por el que se reestructuran los departamentos ministeriales.</p>
+        <p class="parrafo">En su virtud, dispongo:</p>
+        <h5 class="articulo">Artículo 1. Aprobación del modelo 232 de Declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales.</h5>
+        <p class="parrafo">Se aprueba el modelo 232 de «Declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales» cuyo contenido figura en el anexo de la presente orden.</p>
+        <p class="parrafo">El citado modelo estará disponible exclusivamente en formato electrónico.</p>
+        <p class="parrafo">El número de justificante que habrá de figurar en el mismo será un número secuencial cuyos tres primeros dígitos se corresponderán con el código 232.</p>
+        <h5 class="articulo">Artículo 2. Obligados a presentar el modelo 232 de Declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales.</h5>
+        <p class="parrafo">1. Estarán obligados a presentar el modelo 232 y cumplimentar la «Información de operaciones con personas o entidades vinculadas (artículo 13.4 RIS)» los contribuyentes del Impuesto sobre Sociedades y del Impuesto sobre la renta de no residentes que actúen mediante establecimiento permanente, así como las entidades en régimen de atribución de rentas constituidas en el extranjero con presencia en territorio español, que realicen las siguientes operaciones con personas o entidades vinculadas en los términos previstos en el artículo 18.2 de la Ley del Impuesto sobre Sociedades:</p>
+        <p class="parrafo_2">a) Operaciones realizadas con la misma persona o entidad vinculada siempre que el importe de la contraprestación del conjunto de operaciones en el período impositivo supere los 250.000 euros, de acuerdo con el valor de mercado.</p>
+        <p class="parrafo">b) Operaciones específicas, siempre que el importe conjunto de cada una de este tipo de operaciones en el período impositivo supere los 100.000 euros. A estos efectos, tienen la consideración de operaciones específicas, aquellas operaciones excluidas del contenido simplificado de la documentación a que se refieren los artículos 18.3 de la Ley del Impuesto sobre Sociedades y 16.5 del Reglamento del Impuesto sobre Sociedades.</p>
+        <p class="parrafo_2">2. No obstante, no será obligatorio cumplimentar la «Información de operaciones con personas o entidades vinculadas (artículo 13.4 RIS)» del modelo 232, respecto de las siguientes operaciones:</p>
+        <p class="parrafo_2">a) Las operaciones realizadas entre entidades que se integren en un mismo grupo de consolidación fiscal, sin perjuicio de lo previsto en el artículo 65.2 de la Ley del Impuesto sobre Sociedades.</p>
+        <p class="parrafo">b) Las operaciones realizadas con sus miembros o con otras entidades integrantes del mismo grupo de consolidación fiscal por las agrupaciones de interés económico, de acuerdo con lo previsto en la Ley 12/1991, de 29 de abril, de Agrupaciones de Interés Económico, y las uniones temporales de empresas, reguladas en la Ley 18/1982, de 26 de mayo, sobre régimen fiscal de agrupaciones y uniones temporales de Empresas y de las Sociedades de desarrollo industrial regional, e inscritas en el registro especial del Ministerio de Hacienda y Función Pública. No obstante, sí que deberán presentar el modelo 232 en el caso de uniones temporales de empresas, o fórmulas de colaboración análogas a las uniones temporales, que se acojan al régimen establecido en el artículo 22 de la Ley del Impuesto sobre Sociedades.</p>
+        <p class="parrafo">c) Las operaciones realizadas en el ámbito de ofertas públicas de venta o de ofertas públicas de adquisición de valores.</p>
+        <p class="parrafo_2">3. Con independencia del importe de la contraprestación del conjunto de operaciones realizadas con la misma persona o entidad vinculada, existirá siempre la obligación de presentar el modelo 232 y cumplimentar la «Información de operaciones con personas o entidades vinculadas (artículo 13.4 RIS)» respecto de aquellas operaciones del mismo tipo que a su vez utilicen el mismo método de valoración, siempre que el importe del conjunto de dichas operaciones en el período impositivo sea superior al 50% de la cifra de negocios de la entidad.</p>
+        <p class="parrafo">4. Deberá presentarse el modelo 232 y cumplimentarse la» Información de operaciones con personas o entidades vinculadas en caso de aplicación de la reducción de las rentas procedentes de determinados activos intangibles» en aquellos casos en que el contribuyente aplique la citada reducción prevista en el artículo 23 de la Ley del Impuesto sobre Sociedades, porque obtiene rentas como consecuencia de la cesión de determinados intangibles a personas o entidades vinculadas.</p>
+        <p class="parrafo">5. Deberá presentarse el modelo 232 y cumplimentarse la información de «Operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales», en aquellos casos en que el contribuyente realice operaciones o tenga valores en países o territorios calificados como paraísos fiscales independientemente de su importe.</p>
+        <h5 class="articulo">Artículo 3. Contenido del modelo 232 de Declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales.</h5>
+        <p class="parrafo">1. La «Declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales», modelo 232, comprende un primer apartado donde deberá declararse la información de operaciones con personas o entidades vinculadas (artículo 13.4 RIS) y deberá cumplimentarse separando las operaciones de ingreso o de pago, sin que puedan efectuarse compensaciones entre ellas aunque correspondan al mismo concepto. Se deben declarar las operaciones por persona o entidad vinculada que agrupen un determinado tipo de operación, siempre que se haya utilizado el mismo método de valoración, y se tienen que incluir en registros distintos las operaciones del mismo tipo pero que utilicen métodos de valoración diferentes. Para cada operación de ingreso o pago se consignará la siguiente información:</p>
+        <p class="parrafo_2">a) El número de identificación fiscal de la persona o entidad vinculada.</p>
+        <p class="parrafo">b) Si la persona o entidad vinculada tiene la condición de persona física, jurídica u otra.</p>
+        <p class="parrafo">c) Los apellidos y nombre o la razón social de la persona o entidad vinculada.</p>
+        <p class="parrafo">d) El tipo de vinculación de acuerdo con el artículo 18 de la Ley del Impuesto sobre Sociedades.</p>
+        <p class="parrafo">e) El código provincia cuando la persona o entidad vinculada sea residente en territorio español y el país de residencia de la persona o entidad vinculada cuando no sea residente.</p>
+        <p class="parrafo">f) El tipo de operación. En este caso, se debe consignar el dígito identificativo del tipo de operación que corresponda de acuerdo con la relación siguiente. En ella todos los conceptos se refieren a operaciones de ingreso o pago indistintamente.</p>
+        <p class="parrafo_2">– Clave 1: Adquisición/Transmisión de bienes tangibles (existencias, inmovilizados materiales, etc.)</p>
+        <p class="parrafo">– Clave 2: Adquisición/Transmisión/Cesión de uso de intangibles: cánones y otros ingresos/pagos por utilización de tecnología, patentes, marcas, know-how, etc.</p>
+        <p class="parrafo">– Clave 3: Adquisición/Transmisión de activos financieros representativos de fondos propios.</p>
+        <p class="parrafo">– Clave 4: Adquisición/Transmisión de derechos de crédito y activos financieros representativos de deuda (excluidas operaciones tipo 5).</p>
+        <p class="parrafo">– Clave 5: Operaciones financieras de deuda: constitución/amortización de créditos o préstamos, emisión/amortización de obligaciones y bonos, etc. (excluidos intereses).</p>
+        <p class="parrafo">– Clave 6: Servicios entre personas o entidades vinculadas (artículo 18.5 LIS) (incluidos rendimientos de actividades profesionales, artísticas, deportivas, etc.).</p>
+        <p class="parrafo">– Clave 7: Acuerdos de reparto de costes de bienes o servicios (artículo 18.7 LIS).</p>
+        <p class="parrafo">– Clave 8: Alquileres y otros rendimientos por cesión de uso de inmuebles. No incluye rendimientos derivados de transmisiones/adquisiciones (plusvalías o minusvalías).</p>
+        <p class="parrafo">– Clave 9: Intereses de créditos, préstamos y demás activos financieros representativos de deuda (obligaciones, bonos, etc.). No incluye rendimientos derivados de transmisiones/adquisiciones de estos activos financieros (plusvalías o minusvalías).</p>
+        <p class="parrafo">– Clave 10: Rendimientos del trabajo, pensiones y aportaciones a fondos de pensiones y a otros sistemas de capitalización o retribución diferida, entrega de acciones u opciones sobre las mismas, etc.</p>
+        <p class="parrafo">– Clave 11: Otras operaciones.</p>
+        <p class="parrafo_2">g) Se deberá consignar Ingreso o Pago según el tipo de operación.</p>
+        <p class="parrafo">h) El método de valoración de los contemplados en el artículo 18.4 de la Ley del Impuesto sobre Sociedades.</p>
+        <p class="parrafo">i) El importe de la operación sin incluir el Impuesto sobre el Valor Añadido.</p>
+        <p class="parrafo_2">2. El apartado sobre la «Información de operaciones con personas o entidades vinculadas en caso de aplicación de la reducción de las rentas procedentes de determinados activos intangibles (artículo 23 y DT 20ª LIS)», deberá contener:</p>
+        <p class="parrafo_2">a) En primer lugar los datos identificativos de la entidad matriz (número de identificación fiscal y razón social).</p>
+        <p class="parrafo">Y posteriormente, de forma separada por persona o entidad vinculada, las rentas sobre las que se aplica la reducción con la siguiente información:</p>
+        <p class="parrafo_2">b) El número de identificación fiscal de la persona o entidad vinculada.</p>
+        <p class="parrafo">c) Si la persona o entidad vinculada tiene la condición de persona física, jurídica u otra.</p>
+        <p class="parrafo">d) Los apellidos y nombre o la razón social de la persona o entidad vinculada.</p>
+        <p class="parrafo">e) El código provincia, cuando la persona o entidad vinculada sea residente en territorio español, y el país de residencia de la persona o entidad vinculada cuando no sea residente en territorio español.</p>
+        <p class="parrafo">f) El tipo de vinculación de acuerdo con el artículo 18 de la Ley del Impuesto sobre Sociedades.</p>
+        <p class="parrafo">g) El importe de la operación antes de aplicar la reducción y sin incluir el Impuesto sobre el Valor Añadido.</p>
+        <p class="parrafo_2">3. El apartado de «Operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales» deberá contener:</p>
+        <p class="parrafo_2">a) En relación con el primer cuadro relativo a las operaciones relacionadas con países o territorios calificados como paraísos fiscales:</p>
+        <p class="parrafo_2">1.º La descripción de la operación efectuada con, o por, personas o entidades residentes en países o territorios calificados reglamentariamente como paraísos fiscales, así como de los gastos de servicios correspondientes a operaciones realizadas, directa o indirectamente, con personas o entidades residentes en los citados países o territorios y de aquellas inversiones o gastos realizados en los mismos.</p>
+        <p class="parrafo">2.º El nombre, la denominación o la razón social de la persona o entidad con, o por, la que se realizan las operaciones.</p>
+        <p class="parrafo">3.º Si la persona o entidad vinculada tiene la condición de persona física, jurídica u otra.</p>
+        <p class="parrafo">4.º La clave del país o territorio calificado reglamentariamente como paraíso fiscal.</p>
+        <p class="parrafo">5.º País o territorio calificado reglamentariamente como paraíso fiscal en el que se realice la inversión o el gasto, o en el cual tenga fijada su residencia la persona o entidad con o por la que se realizan, directa o indirectamente, las operaciones.</p>
+        <p class="parrafo">6.º Importe correspondiente a las operaciones o, gastos e inversiones, a que se refiere el apartado 1.º anterior, efectuados computándose por el valor por el que efectivamente se han realizado.</p>
+        <p class="parrafo_2">b) En relación con el segundo cuadro relativo a la tenencia de valores relacionados con países o territorios calificados como paraísos fiscales poseídos a la fecha de cierre del periodo declarado:</p>
+        <p class="parrafo_2">1.º Tipo posible de situaciones relacionadas con países o territorios calificados reglamentariamente como paraísos fiscales, indicando la letra A, B o C, según el siguiente detalle:</p>
+        <p class="parrafo_2">– Clave A: Tenencia de valores representativos de fondos propios de entidades residentes en países o territorios calificados reglamentariamente como paraísos fiscales.</p>
+        <p class="parrafo">– Clave B: Tenencia de valores de instituciones de inversión colectiva constituidas en los citados países o territorios.</p>
+        <p class="parrafo">– Clave C: Tenencia de valores de renta fija que estén admitidos a cotización en mercados secundarios en dichos países o territorios.</p>
+        <p class="parrafo_2">2.º Entidad participada o emisora de los valores. Se reflejará la denominación o la razón social de la entidad participada, cuando corresponda a los tipos A o B, o de la entidad emisora de los valores, cuando corresponda al tipo C, indicados en el apartado anterior.</p>
+        <p class="parrafo">3.º País o territorio calificado reglamentariamente como paraíso fiscal que corresponda, según se detalla a continuación:</p>
+        <p class="parrafo_2">– Clave A: En el que tenga su residencia la entidad participada, en el supuesto que se haya hecho constar el tipo A en la columna a que se refiere el apartado anterior.</p>
+        <p class="parrafo">– Clave B: En el que este constituida la entidad participada, cuando se haya hecho constar el tipo B en la columna a que se refiere el apartado anterior.</p>
+        <p class="parrafo">– Clave C: En el que estén admitidos a cotización en mercados secundarios los valores, cuando se haya hecho constar el tipo C en la columna a que se refiere el apartado anterior.</p>
+        <p class="parrafo_2">4.º Se consignará la clave correspondiente al país o territorio calificado reglamentariamente como paraíso fiscal.</p>
+        <p class="parrafo">5.º Valor de adquisición de los valores, computándose por el precio de adquisición, con independencia del periodo en el que hayan sido adquiridos.</p>
+        <p class="parrafo">6.º Porcentaje de participación de los valores poseídos siempre que se haya hecho constar el tipo A o B en la columna a que se refiere el apartado anterior.</p>
+        <p class="parrafo_2">4. La información establecida en este artículo se presentará en euros.</p>
+        <h5 class="articulo">Artículo 4. Plazo de presentación del Modelo 232.</h5>
+        <p class="parrafo">La presentación del modelo 232 de «Declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales» se deberá realizar en el mes siguiente a los diez meses posteriores a la conclusión del período impositivo al que se refiera la información a suministrar.</p>
+        <h5 class="articulo">Artículo 5. Formas, habilitación, condiciones generales y procedimiento para la presentación electrónica por Internet del modelo 232.</h5>
+        <p class="parrafo">1. La presentación del modelo 232, «Declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales» se efectuará de forma obligatoria por vía electrónica a través de Internet de acuerdo con lo dispuesto en la letra a) apartado 1.º del artículo 12 de la Orden HAP/2194/2013, de 22 de noviembre, por la que se regulan los procedimientos y las condiciones generales para la presentación de determinadas autoliquidaciones, declaraciones informativas, declaraciones censales, comunicaciones y solicitudes de devolución, de naturaleza tributaria.</p>
+        <p class="parrafo">2. La presentación del modelo 232 se efectuará con sujeción a la habilitación y condiciones del artículo 16 de la orden HAP/2194/2013, de 22 de noviembre, y de acuerdo con el procedimiento establecido en el artículo 17 de esa misma orden, con excepción de lo previsto en las letras f) y g) del apartado 1 del referido artículo 17.</p>
+        <h5 class="articulo">Disposición transitoria única. Plazo de presentación del modelo 232 de la «declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales» para los períodos impositivos iniciados que finalicen antes del 31 de diciembre de 2016.</h5>
+        <p class="parrafo">El plazo de presentación del modelo 232 de «Declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales», para los períodos impositivos iniciados en el 2016 y que finalicen antes del 31 de diciembre de 2016, será desde el día 1 al 30 de noviembre siguientes a la finalización del período impositivo al que se refiera la información a suministrar.</p>
+        <h5 class="articulo">Disposición final primera. Modificación de la Orden HAP/2194/2013, de 22 de noviembre, por la que se regulan los procedimientos y las condiciones generales para la presentación de determinadas autoliquidaciones, declaraciones informativas, declaraciones censales, comunicaciones y solicitudes de devolución de naturaleza tributaria.</h5>
+        <p class="parrafo">Se incluye el modelo 232 de «Declaración informativa de operaciones vinculadas y de operaciones y situaciones relacionadas con países o territorios calificados como paraísos fiscales» en la relación de declaraciones informativas a que se refiere el apartado 3 del artículo 1 de la Orden HAP/2194/2013, de 22 de noviembre, por la que se regulan los procedimientos y las condiciones generales para la presentación de determinadas autoliquidaciones, declaraciones informativas, declaraciones censales, comunicaciones y solicitudes de devolución, de naturaleza tributaria.</p>
+        <h5 class="articulo">Disposición final segunda. Entrada en vigor.</h5>
+        <p class="parrafo">La presente orden entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado» y será de aplicación para las declaraciones correspondientes a los períodos impositivos iniciados a partir del 1 de enero de 2016.</p>
+        <p class="parrafo_2">Madrid, 28 de agosto de 2017.–El Ministro de Hacienda y Función Pública, Cristóbal Montoro Romero.</p>
+        <h5 class="anexo_num">ANEXO</h5>
+        <h5 class="anexo_tit">Formato electrónico</h5>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2017/208/10042_5107.png" class="frame-1" alt="1" width="788"/>
+        </p>
+      </div>
+      <!-- #textoxslt -->
+    </div>
+    <!-- #DOdocText -->
+    <input name="tabs" type="radio" id="tab-analisis" class="input"/>
+    <label for="tab-analisis" class="label">Análisis</label>
+    <div class="panel" id="panelAnalisis">
+      <div id="analisis" class="analisisDoc">
+<h4>ANÁLISIS</h4>
+<ul class="bullet-boe">
+  <li>Rango: Orden</li>
+  <li>Fecha de disposición: 28/08/2017</li>
+  <li>Fecha de publicación: 30/08/2017</li>
+  <li>Fecha de entrada en vigor: 31/08/2017</li>
+  <li>Aplicable desde el 1 de enero de 2016.</li>
+</ul>
+<h5>Referencias anteriores</h5>
+<ul class="bullet-boe">
+  <li>MODIFICA el art. 1.3 de la Orden HAP/2194/2013, de 22 de noviembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2013-12385">BOE-A-2013-12385</a>).</li>
+  <li>DE CONFORMIDAD con:
+    <ul class="bullet-boe">
+      <li>el art. 13.4 y la disposición final única del Reglamento aprobado por Real Decreto 634/2015, de 10 de julio (Ref. <a href="/buscar/doc.php?id=BOE-A-2015-7771">BOE-A-2015-7771</a>).</li>
+      <li>el art. 21 de a Ley del Impuesto sobre la Renta de no Residentes, texto refundido aprobado por Real Decreto Legislativo 5/2004, de 5 de marzo, (Ref. <a href="/buscar/doc.php?id=BOE-A-2004-4527">BOE-A-2004-4527</a>).</li>
+      <li>los arts. 92 y 98.4 de la Ley 58/2003, de 17 de diciembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2003-23186">BOE-A-2003-23186</a>).</li>
+    </ul>
+  </li>
+</ul>
+<h5>Materias</h5>
+<ul class="bullet-boe">
+  <li>Activos financieros</li>
+  <li>Administración electrónica</li>
+  <li>Agencia Estatal de la Administración Tributaria</li>
+  <li>Formularios administrativos</li>
+  <li>Impuesto sobre la Renta de los no Residentes</li>
+  <li>Impuesto sobre Sociedades</li>
+  <li>Información tributaria</li>
+  <li>Sistema tributario</li>
+</ul>
+</div>
+    </div>
+  </div>
+</div>
+<p class="linkSubir"><a href="#top">subir</a></p>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php">Sobre la sede electr&oacute;nica</a></div></li>
+            <li><div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div></li>
+            <li><div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div></li>
+            <li><div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php#proteccion-de-datos">Protecci&oacute;n de datos</a></div></li>
+            <li><div class="enlace"><a href="/informacion/sistema_interno_informacion.php">Sistema Interno de Informaci&oacute;n</a></div></li>
+            <li><div class="enlace"><a href="/informacion/tutoriales/">Tutoriales</a></div></li>
+            <li><div class="enlace"><a href="/transparencia/empleo/">Empleo en la AEBOE</a></div></li>
+            </ul>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace icono"><a href="/rss/" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=tw" lang="es" title="boegob, el BOE en X"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="X"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=fb" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=ln" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=yt" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div></li>
+            </ul>
+            </div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>

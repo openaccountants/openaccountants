@@ -1,0 +1,2963 @@
+{
+  "note": "Literalchecksnotlegalverdict. Currentallrowwordingandquotescheckedagainsttarget/cachedprimaryonly;ledgeritselfexcludedfromsearchcorpus.",
+  "rows": [
+    {
+      "id": "CIT-001",
+      "guide_LF": 30,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 1. Fulla skattskyldu hevur:",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-002",
+      "guide_LF": 32,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "\u00a7 3. Vinningur ella tap samb\u00e6rt \u00a7 1, sum er li\u00f0ur \u00ed skattgjaldarans vinnuliga virksemi, ver\u00f0ur rokna\u00f0 upp",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "Fyri fel\u00f8g og grunnar v.m. ver\u00f0ur rentuinnt\u00f8kan og negativa rentan rokna\u00f0 upp \u00ed uppger\u00f0ina av skattskyldugu innt\u00f8kuni eftir",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 14. 1) Ein uppger\u00f0 ver\u00f0ur gj\u00f8rd, har vinningur og tap eftir \u00a7\u00a7 4, 6, 7, 8 ,9,",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-003",
+      "guide_LF": 34,
+      "wording_in_target": true,
+      "quote_count": 0,
+      "quotes": [],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-004",
+      "guide_LF": 36,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 1. Fulla skattskyldu hevur:",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-005",
+      "guide_LF": 42,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "18% av innt\u00f8kunum til landskassa og kommunur.",
+          "source_matches": [
+            "assessment.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-006",
+      "guide_LF": 43,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "50.000 kr. ella meira, umframt hj\u00e1 \u00edverksetarafel\u00f8gum, sbr. kapittul 19 a \u00ed vinnufelagal\u00f3gini, ver\u00f0ur skatturin \u00e1settur til 18%",
+          "source_matches": [
+            "assessment.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-007",
+      "guide_LF": 44,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "49% av innt\u00f8kunum til landskassa og kommunur. Skatturin ver\u00f0ur b\u00fdttur vi\u00f0 30% sum kommunuskattur og 70% sum landsskattur.",
+          "source_matches": [
+            "assessment.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-008",
+      "guide_LF": 45,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "27%. Skatturin fellur til landskassan.",
+          "source_matches": [
+            "assessment.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-009",
+      "guide_LF": 46,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "18%. V\u00edsir innt\u00f8kuuppger\u00f0in eftir skattal\u00f3gini hall, kunnu fel\u00f8g og grunnar o.o. taka vinning eftir hesi grein vi\u00f0 \u00ed",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-010",
+      "guide_LF": 47,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "35% aftur \u00ed skatti. T\u00e1 i\u00f0 \u00fatluta\u00f0 ver\u00f0ur til fel\u00f8g og grunnar v.m., sum ikki eru fevnd av",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-011",
+      "guide_LF": 48,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "18%. Skattur skal eisini haldast aftur \u00ed sambandi vi\u00f0, at felag keypir egin partabr\u00f8v o.a., fevnd av \u00a7",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-012",
+      "guide_LF": 49,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "30% av avskrivingarb\u00e6ra saldovir\u00f0inum. Er avskrivingarb\u00e6ra saldovir\u00f0i\u00f0 \u00e1\u00f0renn innt\u00f8ku\u00e1rsins avskriving 20.000 kr\u00f3nur ella l\u00e6gri, kann upph\u00e6ddin til fulnar",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-013",
+      "guide_LF": 50,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "20.000 kr\u00f3nur ella l\u00e6gri, kann upph\u00e6ddin til fulnar ver\u00f0a drigin fr\u00e1.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "20.000 kr\u00f3num ella minni kann til fulnar ver\u00f0a drigin fr\u00e1 skattskyldugu innt\u00f8kuni fyri ta\u00f0 innt\u00f8ku\u00e1r, sum n\u00fd\u00fatveganin fer",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-014",
+      "guide_LF": 51,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "150.000 kr.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-015",
+      "guide_LF": 52,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "150.000 kr., ver\u00f0ur tann upph\u00e6ddin, sum avskrivingin kann roknast av, l\u00e6kka\u00f0 vi\u00f0 t\u00ed upph\u00e6dd, sum \u00fatveganarpeningurin fer upp",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-016",
+      "guide_LF": 53,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "75% av g\u00f3lvv\u00edddini ver\u00f0a n\u00fdtt vinnuliga, her \u00edrokna\u00f0 ney\u00f0ug goymsluh\u00f8li.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-017",
+      "guide_LF": 54,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "2026 | 21,4589 | 21,4767 | 22,0056 | 22,0829",
+          "source_matches": [
+            "circular-web-response.json",
+            "indices-web-response.json"
+          ]
+        },
+        {
+          "quote": "1. januar | 1. apr\u00edl | 1. juli | 1. oktober",
+          "source_matches": [
+            "circular-web-response.json"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-018",
+      "guide_LF": 56,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "30% sum kommunuskattur og 70% sum landsskattur.",
+          "source_matches": [
+            "assessment.reader.txt"
+          ]
+        },
+        {
+          "quote": "18% av innt\u00f8kunum til landskassa og kommunur.",
+          "source_matches": [
+            "assessment.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-019",
+      "guide_LF": 60,
+      "wording_in_target": true,
+      "quote_count": 5,
+      "quotes": [
+        {
+          "quote": "\u00a7 31. T\u00e1 skattskyldug innt\u00f8ka ver\u00f0ur uppgj\u00f8rd, skal fr\u00e1 innt\u00f8kuni ver\u00f0a drigin rakstrarkostna\u00f0ur, t\u00f3 ikki rakstrarkostna\u00f0ur, i\u00f0 pers\u00f3nar",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 33. 4) 5) Annars skal, t\u00e1 innt\u00f8kan ver\u00f0ur uppgj\u00f8rd, dragast fr\u00e1,",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 37 b. Um eitt felag,",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 27. \u00c1g\u00f3\u00f0i av s\u00f8lu ella avhending av ognum hj\u00e1 hinum skattskyldugu ver\u00f0ur rokna\u00f0ur fyri skattskylduga innt\u00f8ku, t\u00e1",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 29. 2) Til skattskylduga innt\u00f8ku teljast ikki:",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-020",
+      "guide_LF": 62,
+      "wording_in_target": true,
+      "quote_count": 0,
+      "quotes": [],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-021",
+      "guide_LF": 64,
+      "wording_in_target": true,
+      "quote_count": 0,
+      "quotes": [],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-022",
+      "guide_LF": 73,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "\u00a7 1. 1) T\u00e6r reglur, sum \u00ed hesi l\u00f3g eru settar um skattligar avskrivingar v.m. ver\u00f0a n\u00fdttar vi\u00f0v\u00edkjandi",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 2. 2) Skattlig avskriving ver\u00f0ur gj\u00f8rd undir einum fyri allar innleggingar og innr\u00e6ttingar \u00ed bygningum, tiknir \u00ed",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 5 a. 2) 6) \u00datveganarpeningurin fyri pers\u00f3nbilar, sum bert ver\u00f0a n\u00fdttir vinnuliga, men sum eru skr\u00e1settir til",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-023",
+      "guide_LF": 75,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "30% av avskrivingarb\u00e6ra saldovir\u00f0inum. Er avskrivingarb\u00e6ra saldovir\u00f0i\u00f0 \u00e1\u00f0renn innt\u00f8ku\u00e1rsins avskriving 20.000 kr\u00f3nur ella l\u00e6gri, kann upph\u00e6ddin til fulnar",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "20.000 kr\u00f3nur ella l\u00e6gri, kann upph\u00e6ddin til fulnar ver\u00f0a drigin fr\u00e1.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-024",
+      "guide_LF": 77,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "20.000 kr\u00f3num ella minni kann til fulnar ver\u00f0a drigin fr\u00e1 skattskyldugu innt\u00f8kuni fyri ta\u00f0 innt\u00f8ku\u00e1r, sum n\u00fd\u00fatveganin fer",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "s\u00f8lupr\u00edsurin til fulnar ver\u00f0a rokna\u00f0ur upp \u00ed skattskyldugu innt\u00f8kuna fyri ta\u00f0 innt\u00f8ku\u00e1r, sum avhendingin fer fram \u00ed. Tryggingar-",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-025",
+      "guide_LF": 79,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 4. 3) Hevur tann skattskyldugi \u00ed innt\u00f8ku\u00e1rinum selt eitt av teimum rakstrarg\u00f8gnum, sum r\u00f8tt er um \u00ed",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-026",
+      "guide_LF": 81,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 5. 5) Er saldoin vor\u00f0in negativ av t\u00ed, at s\u00f8lupeningur v.m. skal dragast fr\u00e1 \u00ed avskrivingargrundarlagnum, og",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-027",
+      "guide_LF": 85,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 5 a. 2) 6) \u00datveganarpeningurin fyri pers\u00f3nbilar, sum bert ver\u00f0a n\u00fdttir vinnuliga, men sum eru skr\u00e1settir til",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-028",
+      "guide_LF": 87,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "150.000 kr.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "Avskriving kann ikki ver\u00f0a gj\u00f8rd ta\u00f0 innt\u00f8ku\u00e1r, i\u00f0 pers\u00f3nbilurin, sum er avskriva\u00f0ur samb\u00e6rt 3. stk. ver\u00f0ur latin av",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-029",
+      "guide_LF": 89,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "Er avhendingarpeningurin minni enn \u00fatveganarpeningurin h\u00e6kka\u00f0ur vi\u00f0 \u00fatrei\u00f0slum til \u00e1b\u00f8tur og vi\u00f0 fr\u00e1dr\u00e1tti av avskrivingum, kann halli\u00f0 ver\u00f0a",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-030",
+      "guide_LF": 93,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "30 prosentum av \u00fatveganarupph\u00e6ddini. Fyri hv\u00f8rt av fylgjandi innt\u00f8ku\u00e1rum kann avskriving ver\u00f0a rokna\u00f0 vi\u00f0 upp til 30 prosentum",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 8. Ver\u00f0ur eitt av teimum rakstrarg\u00f8gnum, sum eru umr\u00f8dd \u00ed hesum kapitli, selt, kann avskriving ikki ver\u00f0a",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-031",
+      "guide_LF": 95,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "\u00a7 31. 5) Flytur skattskyldugur ognarlutir av t\u00ed slagnum, sum r\u00f8tt er um \u00ed kapittul I-IV anna\u00f0hv\u00f8rt til",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "150.000 kr.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-032",
+      "guide_LF": 97,
+      "wording_in_target": true,
+      "quote_count": 6,
+      "quotes": [
+        {
+          "quote": "\u00a7 11. Skattlig avskriving ver\u00f0ur gj\u00f8rd undir einum fyri \u00f8ll f\u00f8r, sum hoyra til virki hins skattskylduga og",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 12. Vi\u00f0 undant\u00f8kunum her ni\u00f0anfyri ver\u00f0a reglurnar, sum settar eru \u00ed 1. kapitli um avskriving v.m. fyri",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "45 prosent av avr\u00e1dda byggikostna\u00f0inum. \u00cd t\u00ed\u00f0arskei\u00f0inum, sum nevnt er \u00ed 2. stk., kann hin skattskyldugi leggja forskotsavskrivingina",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 14. Ta\u00f0 innt\u00f8ku\u00e1r, t\u00e1 skip, sum forskotsavskriving hevur veri\u00f0 gj\u00f8rd fyri, ver\u00f0ur avhent, gongur \u00fatveganarpeningurin vi\u00f0 gj\u00f8rdum",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 15. Ver\u00f0ur s\u00e1ttm\u00e1li um bygging av skipi sagdur \u00far gildi, skal peningah\u00e6dd svarandi til gj\u00f8rdar forskotsavskrivingar fyri",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 16. Ver\u00f0a r\u00e6ttindi samb\u00e6rt s\u00e1ttm\u00e1la um bygging av skipi seld, skal vinningur ella hall av hesum teljast",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-033",
+      "guide_LF": 101,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 17. 2) 6) Skattlig avskriving eftir reglunum \u00ed \u00a7 20 kann ver\u00f0a gj\u00f8rd fyri ni\u00f0anfyri nevndu bygningar,",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-034",
+      "guide_LF": 105,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "7% av \u00fatveganarpeninginum. Hv\u00f8rt av fylgjandi innt\u00f8ku\u00e1rum kann skattlig avskriving ver\u00f0a gj\u00f8rd vi\u00f0 upp til 2% av \u00fatveganarpeninginum.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "2% av \u00fatveganarpeninginum. \u00datveganar\u00e1ri\u00f0 er ta\u00f0 innt\u00f8ku\u00e1r, i\u00f0 bygningurin ver\u00f0ur fingin \u00ed hendur ella fullgj\u00f8rdur og tikin \u00ed",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-035",
+      "guide_LF": 106,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "4% av \u00fatveganarpeninginum. Hv\u00f8rt av fylgjandi innt\u00f8ku\u00e1rum kann skattlig avskriving ver\u00f0a gj\u00f8rd vi\u00f0 upp til 1% av \u00fatveganarpeninginum.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "1% av \u00fatveganarpeninginum.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-036",
+      "guide_LF": 108,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00fatveganar\u00e1ri\u00f0 og 9 n\u00e6stkomandi innt\u00f8ku\u00e1r ver\u00f0a gj\u00f8rd skattlig avskriving vi\u00f0 upp til 7% av \u00fatveganarpeninginum. Hv\u00f8rt av fylgjandi",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-037",
+      "guide_LF": 110,
+      "wording_in_target": true,
+      "quote_count": 5,
+      "quotes": [
+        {
+          "quote": "\u00a7 27. 5) \u00datrei\u00f0slur til \u00fatvegan av byggigrund, byggib\u00faning av sj\u00e1lvari grundini og \u00f8kinum uttanum, kunnu ikki ver\u00f0a",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 18. Ver\u00f0ur bert partur av bygningi n\u00fdttur til endam\u00e1l, sum heimilar avskriving eftir \u00a7 17, kann skattlig",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 20. 5) Fyri bygningar nevndir \u00ed \u00a7 17, 1. stk. litra a) og b), kann \u00fatveganar\u00e1ri\u00f0 og",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "75% av g\u00f3lvv\u00edddini ver\u00f0a n\u00fdtt vinnuliga, her \u00edrokna\u00f0 ney\u00f0ug goymsluh\u00f8li.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 22. Skattlig avskriving skal ver\u00f0a gj\u00f8rd fyri hv\u00f8nn einstakan bygning s\u00e6r.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-038",
+      "guide_LF": 112,
+      "wording_in_target": true,
+      "quote_count": 5,
+      "quotes": [
+        {
+          "quote": "Avskriving kann ikki ver\u00f0a gj\u00f8rd ta\u00f0 innt\u00f8ku\u00e1r, i\u00f0 bygningurin ver\u00f0ur avhendur ella ni\u00f0urtikin.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "5 \u00e1r fyri ni\u00f0urt\u00f8kuna hevur \u00e1tt bygningin og \u00ed hesum t\u00ed\u00f0arskei\u00f0i hevur n\u00fdtt hann til endam\u00e1l, sum heimilar",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 25. 2) Selur ella avhendir hin skattskyldugi bygning ella byggigrund, har bygningur stendur ella hevur sta\u00f0i\u00f0, sum",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "100.000 kr. b\u00fdtt vi\u00f0 faldingartalinum",
+          "source_matches": [
+            "vls-N-Q-web-response.json",
+            "circular-web-response.json"
+          ]
+        },
+        {
+          "quote": "falda\u00f0 vi\u00f0 faldingartalinum",
+          "source_matches": [
+            "vls-N-Q-web-response.json",
+            "circular-web-response.json"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-039",
+      "guide_LF": 114,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "\u00a7 25. 2) Selur ella avhendir hin skattskyldugi bygning ella byggigrund, har bygningur stendur ella hevur sta\u00f0i\u00f0, sum",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "1950, skal vinningur ella tap ikki roknast vi\u00f0 \u00ed uppger\u00f0ini av skattskyldugu innt\u00f8kuni, me\u00f0an afturvunnar avskrivingar ver\u00f0a vi\u00f0gj\u00f8rdar",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "Tryggingar- ella endurgjaldspeningur f\u00e6r somu vi\u00f0ger\u00f0 sum upph\u00e6ddir, sum ver\u00f0a vunnar vi\u00f0 s\u00f8lu av avvar\u00f0andi ognarluti.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-040",
+      "guide_LF": 116,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "\u00a7 25. 2) Selur ella avhendir hin skattskyldugi bygning ella byggigrund, har bygningur stendur ella hevur sta\u00f0i\u00f0, sum",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "Her t\u00f3 h\u00e6gst gj\u00f8rdar avskrivingar vi\u00f0 \u00ed innt\u00f8kuna",
+          "source_matches": [
+            "vls-N-Q-web-response.json"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-041",
+      "guide_LF": 118,
+      "wording_in_target": true,
+      "quote_count": 4,
+      "quotes": [
+        {
+          "quote": "\u00a7 26. Ver\u00f0ur vinningur, sum er skattskyldugur eftir \u00a7 25, t\u00ed fingin er tryggingar- ella endurgjaldspeningur, kann hin",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "1 prosent m\u00e1na\u00f0arliga fyri hv\u00f8nn byrja\u00f0an m\u00e1na\u00f0 rokna\u00f0 fr\u00e1 teimum t\u00ed\u00f0arbilum, t\u00e1 skatturin hev\u00f0i veri\u00f0 fallin til gjaldingar,",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "freistin gongur \u00fat fyri innlating av sj\u00e1lvuppg\u00e1vu fyri vi\u00f0komandi innt\u00f8ku\u00e1r.",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "ikki allur ver\u00f0ur n\u00fdttur til endurbygging ella endur\u00fatvegan, ver\u00f0a omanfyristandandi reglur um eftirskattlegging n\u00fdttar \u00ed sambandi vi\u00f0 avlopspartin",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-042",
+      "guide_LF": 122,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "9 n\u00e6stkomandi \u00e1rini. Fevnir ein r\u00e6ttur o.t. um eitt \u00e1v\u00edst t\u00ed\u00f0arskei\u00f0, skal keypspeningurin t\u00f3 ver\u00f0a drigin fr\u00e1 vi\u00f0",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00e1v\u00edst t\u00ed\u00f0arskei\u00f0, skal keypspeningurin t\u00f3 ver\u00f0a drigin fr\u00e1 vi\u00f0 eins st\u00f3rum upph\u00e6ddum yvir alt t\u00ed\u00f0arskei\u00f0i\u00f0.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-043",
+      "guide_LF": 124,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "\u00a7 35 a. T\u00e1 skattskyldug innt\u00f8ka ver\u00f0ur gj\u00f8rd upp, ver\u00f0ur s\u00f8lupeningur fyri \u201cgoodwill",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "ikki er drigin fr\u00e1 \u00ed skattskyldugu innt\u00f8kuni, kann dragast fr\u00e1 \u00ed s\u00f8lupeninginum av somu ognum, ella dragast fr\u00e1",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "M\u00f3tt\u00f8ka og avhending av ognarlutum sum g\u00e1va ella arvaforskot ver\u00f0ur javnmett vi\u00f0 keyp og s\u00f8lu. Flytur skattgjaldari ognarlut",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-044",
+      "guide_LF": 128,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "\u00a7 33 a. V\u00edsir skattauppger\u00f0in hall, kann hetta ver\u00f0a drigi\u00f0 fr\u00e1 \u00ed skattskyldugu innt\u00f8kuni fylgjandi \u00e1rini. Hall kann",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "50 prosent av partapeninginum o.a. ella atkv\u00f8\u00f0uvir\u00f0inum \u00ed felag, fevnt av vinnufelagal\u00f3gini, eru \u00e1 somu hondum vi\u00f0 byrjan",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "vinnuligt virksemi av t\u00fddningi vi\u00f0 b\u00faskaparligum v\u00e1\u00f0a.",
+          "source_matches": [
+            "tax.reader.txt",
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-045",
+      "guide_LF": 130,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "skuld fellur burtur ella minkar, skal halli\u00f0 l\u00e6kkast samsvarandi. Ver\u00f0ur skuld uml\u00f8gd til partapening, ver\u00f0ur halli\u00f0 l\u00e6kka\u00f0 vi\u00f0",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-046",
+      "guide_LF": 134,
+      "wording_in_target": true,
+      "quote_count": 5,
+      "quotes": [
+        {
+          "quote": "\u00a7 3. Vinningur ella tap samb\u00e6rt \u00a7 1, sum er li\u00f0ur \u00ed skattgjaldarans vinnuliga virksemi, ver\u00f0ur rokna\u00f0 upp",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "FIFO- prinsippi\u00f0).",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "lagurprinsippi\u00f0).",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "Valutakursvinningur ella -tap av f\u00edggjarkr\u00f8vum og skuld, i\u00f0 hava samband vi\u00f0 skattgjaldarans vinnuvirki, ver\u00f0a tikin vi\u00f0 \u00ed skattskyldugu",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "Fyri fel\u00f8g og grunnar v.m. ver\u00f0ur rentuinnt\u00f8kan og negativa rentan rokna\u00f0 upp \u00ed uppger\u00f0ina av skattskyldugu innt\u00f8kuni eftir",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-047",
+      "guide_LF": 136,
+      "wording_in_target": true,
+      "quote_count": 6,
+      "quotes": [
+        {
+          "quote": "FIFO-prinsippi\u00f0).",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "tap vi\u00f0 avhending av teimum \u00ed \u00a7 1, nr. 1 nevndu vir\u00f0isbr\u00f8vum bert dragast fr\u00e1 \u00ed uppger\u00f0 av",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "0 kr., og ver\u00f0a rokna\u00f0 fyri \u00fatvega\u00f0 samstundis sum m\u00f3\u00f0urpartabr\u00e6vi\u00f0.",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "1.000 kr. samanlagt um \u00e1ri\u00f0. Tap kann bert dragast fr\u00e1 \u00ed uppger\u00f0ini av skattskyldugu innt\u00f8kuni eftir \u00a7 14",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 7.9) Vinningur ella tap vi\u00f0 eftirgeving, fyrning, samanrenning, fyrilokan av skuld og orsaka\u00f0 av endurskipan og sj\u00e1lvbodnari",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 8. Vinningur ella tap av keyps- og s\u00f8lur\u00e6ttindum, i\u00f0 eru fevnd av \u00a7 1, nr. 4 skulu",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-048",
+      "guide_LF": 138,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "\u00a7 9. 1) 5) Vinningsb\u00fdti ver\u00f0ur rokna\u00f0 vi\u00f0 \u00ed uppger\u00f0ina av skattskyldugu innt\u00f8kuni eftir \u00a7 14. Fel\u00f8g og",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 1. 1) 2) 3) 4) 5) Reglurnar \u00ed hesi l\u00f8gtingsl\u00f3g fevna um:",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 5. Ver\u00f0a tey \u00ed \u00a7 1, nr. 1 nevndu vir\u00f0isbr\u00f8v avhenda\u00f0 til ta\u00f0 felagi\u00f0 v.m., i\u00f0 hevur",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-049",
+      "guide_LF": 140,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "\u00a7 14. 1) Ein uppger\u00f0 ver\u00f0ur gj\u00f8rd, har vinningur og tap eftir \u00a7\u00a7 4, 6, 7, 8 ,9,",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "18%. V\u00edsir innt\u00f8kuuppger\u00f0in eftir skattal\u00f3gini hall, kunnu fel\u00f8g og grunnar o.o. taka vinning eftir hesi grein vi\u00f0 \u00ed",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "50% av partapeninginum o.a. ella atkv\u00f8\u00f0uvir\u00f0inum \u00ed felagi, fevnt av vinnufelagal\u00f3gini, eru \u00e1 somu hondum vi\u00f0 byrjan av",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-050",
+      "guide_LF": 142,
+      "wording_in_target": true,
+      "quote_count": 0,
+      "quotes": [],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-051",
+      "guide_LF": 146,
+      "wording_in_target": true,
+      "quote_count": 6,
+      "quotes": [
+        {
+          "quote": "\u00a7 1. Partafel\u00f8g, sm\u00e1partafel\u00f8g og lutafel\u00f8g, sum eru skr\u00e1sett \u00ed F\u00f8royum, kunnu ver\u00f0a samskatta\u00f0, um tey l\u00faka treytirnar",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 2. \u00d8ll fel\u00f8gini, sum eru umfata\u00f0 av samskattingini, skulu hava sama roknskapar\u00e1r.",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 3. Samskatting ver\u00f0ur bara loyvd millum m\u00f3\u00f0ur- og d\u00f3tturfel\u00f8g, og er treyta\u00f0 av, at m\u00f3\u00f0urfelagi\u00f0, antin einsamalt",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "1. juli \u00e1ri\u00f0 eftir, at fyrsta \u00e1ri\u00f0, sum samskattingin vi\u00f0v\u00edkur, endar. \u00c1\u00f0renn ums\u00f3knin ver\u00f0ur vi\u00f0gj\u00f8rd, skulu sj\u00e1lvuppg\u00e1vur og",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "Endurn\u00fdggjan av loyvi til samskatting aftan\u00e1, at fel\u00f8g eru farin \u00far samskattingini, ver\u00f0ur ikki loyvd.",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 5. Loyvi til samskatting ver\u00f0ur ikki givi\u00f0 fyri fel\u00f8g, sum eru undir avt\u00f8ku.",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-052",
+      "guide_LF": 148,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 6. Samskatta\u00f0u fel\u00f8gini skulu gera hv\u00f8r s\u00edna sj\u00e1lvst\u00f8\u00f0uga uppger\u00f0 av skattskyldugu innt\u00f8ku teirra.",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-053",
+      "guide_LF": 150,
+      "wording_in_target": true,
+      "quote_count": 11,
+      "quotes": [
+        {
+          "quote": "Stk. 3. \u00c1\u00f0renn samskattingarinnt\u00f8kan ver\u00f0ur uppgj\u00f8rd, ver\u00f0a \u00f3n\u00fdtt hall fr\u00e1 t\u00ed\u00f0arskei\u00f0um, \u00e1\u00f0renn fel\u00f8gini v\u00f3r\u00f0u samskatta\u00f0, m\u00f3trokna\u00f0 \u00ed egnum",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 4. Um fel\u00f8g eftir hetta hava \u00f3n\u00fdtt hall fr\u00e1 t\u00ed\u00f0arskei\u00f0um \u00e1\u00f0renn samskatting, kunnu hesi hall m\u00f3troknast \u00ed",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 5. Um fel\u00f8g eftir hetta framvegis hava \u00f3n\u00fdtt hall fr\u00e1 t\u00ed\u00f0arskei\u00f0um \u00e1\u00f0renn samskatting, kunnu hesi hall f\u00f8rast",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 6. Um fel\u00f8g eftir hetta framhaldandi hava egin hall fr\u00e1 t\u00ed\u00f0arskei\u00f0um undir samskatting, skulu hesi hall m\u00f3troknast",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 7. Um fel\u00f8g eftir hetta hava hall \u00ed \u00e1rinum, ella hava \u00f3n\u00fdtt hall fr\u00e1 t\u00ed\u00f0arskei\u00f0um undir samskatting,",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 8. Um ta\u00f0 eftir hetta eru fel\u00f8g \u00ed samskattingini, i\u00f0 hava avlop, og fel\u00f8g, i\u00f0 hava hall,",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 9. Um fel\u00f8g eftir hetta hava hall \u00ed \u00e1rinum ella hava \u00f3n\u00fdtt hall fr\u00e1 t\u00ed\u00f0arskei\u00f0um undir samskatting,",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 2. Skattskylduga innt\u00f8kan hj\u00e1 \u00f8llum fel\u00f8gunum \u00ed samskattingini, uppgj\u00f8rd eftir vanligu reglunum \u00ed skattal\u00f3gg\u00e1vuni, ver\u00f0ur tald saman",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 10. Um eitt samskatta\u00f0 felag \u00ed einum \u00e1ri f\u00e6r ney\u00f0skuldarsemju ella skuldareftirgeving ella avtala ver\u00f0ur gj\u00f8rd um",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 7. Um felag fer \u00far samskattingini, var\u00f0veitir ta\u00f0 egin \u00f3n\u00fdtt hall fr\u00e1 t\u00ed\u00f0arskei\u00f0um \u00e1\u00f0renn samskatting og egin",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 8. Skattakr\u00f8v og rentur ver\u00f0a kravd fr\u00e1 m\u00f3\u00f0urfelagnum og m\u00f8guligar afturgjaldingar ver\u00f0a goldnar m\u00f3\u00f0urfelagnum, h\u00f3ast kr\u00f8vini stava",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-054",
+      "guide_LF": 155,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "Stk. 8. Um ta\u00f0 eftir hetta eru fel\u00f8g \u00ed samskattingini, i\u00f0 hava avlop, og fel\u00f8g, i\u00f0 hava hall,",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "hall, kunnu fel\u00f8g og grunnar o.o. taka vinning eftir hesi grein vi\u00f0 \u00ed uppger\u00f0ina av skattskyldugu innt\u00f8kuni eftir",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "18% av innt\u00f8kunum til landskassa og kommunur.",
+          "source_matches": [
+            "assessment.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-055",
+      "guide_LF": 157,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "skattaprosenti\u00f0, samb\u00e6rt \u00a7 5 \u00ed \u00e1setingarl\u00f3gini, av n\u00fdttu hallunum. M\u00f3\u00f0urfelagi\u00f0 skal \u00e1taka s\u00e6r at gjalda upph\u00e6dd til d\u00f3tturfel\u00f8g,",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "1. oktober \u00ed \u00e1rinum eftir innt\u00f8ku\u00e1ri\u00f0. Gj\u00f8ld, sum eru nevnd \u00ed 1., 2. og 3. pkt., hava ongar",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        },
+        {
+          "quote": "ongar skattligar avlei\u00f0ingar fyri fel\u00f8gini \u00ed samskattingini.",
+          "source_matches": [
+            "group.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-056",
+      "guide_LF": 159,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "\u00a7 14 a. 7) 5) TAKS kann loyva, at partafel\u00f8g og/ella lutafel\u00f8g ver\u00f0a samskatta\u00f0i, t\u00f3 treyta\u00f0 av, at",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 2. Hall, sum er fr\u00e1 t\u00ed\u00f0ini \u00e1\u00f0renn fel\u00f8gini v\u00f3r\u00f0u samskatta\u00f0i, kann einans dragast fr\u00e1 \u00ed felagsins egna",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 3. Fyri samskatta\u00f0i fel\u00f8g \u00e1byrgist m\u00f3\u00f0urfelagi\u00f0 fyri t\u00ed samla\u00f0a innt\u00f8kuskattinum vi\u00f0v\u00edkjandi innt\u00f8ku\u00e1rinum. M\u00f3\u00f0urfelagi\u00f0 \u00e1byrgist eisini fyri h\u00e6kkingum",
+          "source_matches": [
+            "capital.reader.txt",
+            "assessment.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-057",
+      "guide_LF": 163,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "1. juli. Sj\u00e1lvuppg\u00e1van er rokna\u00f0 fyri at vera innlatin r\u00e6ttstundis, t\u00e1 i\u00f0 hon \u00ed seinasta lagi nevnda dag",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "15. august \u00ed \u00e1l\u00edkningar\u00e1rinum.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-058",
+      "guide_LF": 165,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 103. 1) \u00d8ll tey, i\u00f0 hava skyldu at f\u00f8ra b\u00f3khald, eins og dey\u00f0sb\u00fagv, fel\u00f8g, felagsskapir, stovnar v.m.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-059",
+      "guide_LF": 167,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 81. Skatturin hj\u00e1 partafel\u00f8gum v.m., dey\u00f0sb\u00fagvum, fel\u00f8gum o.l., smb. 1. \u00a7 nr. 7-16, fellur til gjaldingar \u00ed",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-060",
+      "guide_LF": 169,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "18 m\u00e1na\u00f0ir, kann ikki r\u00f8kka aftur um 1. januar \u00ed t\u00ed \u00e1lmanakka\u00e1ri, felagi\u00f0 er stovna\u00f0, og ikki fevna",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "4 vikur aftan \u00e1 avt\u00f8ku ella uppt\u00f8ku av skattfr\u00e6lsum virki geva l\u00edkningarvaldinum bo\u00f0 um hetta og leggja hj\u00e1",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 21. N\u00fdstovna\u00f0 fel\u00f8g ella a\u00f0rir stovnar, sum eiga heimsta\u00f0 her \u00e1 landi, vi\u00f0 roknskapar\u00e1ri, i\u00f0 endar \u00ed",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-061",
+      "guide_LF": 171,
+      "wording_in_target": true,
+      "quote_count": 4,
+      "quotes": [
+        {
+          "quote": "\u00a7 18. 1) 7) 5) Ta\u00f0 \u00e1liggur skattskylduga at geva upp skattskyldugu upph\u00e6ddina samb\u00e6rt \u00a7 14 um talgilda",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "500 kr. ella minni, ver\u00f0ur hann ikki kravdur inn. Er skatturin eftir \u00a7 14 l\u00e6gri enn fyribilsskattur, goldin",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "50 kr., ver\u00f0ur hann ikki \u00fatgoldin.",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "tann 1. \u00ed m\u00e1na\u00f0inum eftir, at uppger\u00f0 er skriva\u00f0 \u00fat vi\u00f0 gjaldsfreist til 20. \u00ed m\u00e1na\u00f0inum.",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-062",
+      "guide_LF": 173,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "14 dagar aftan\u00e1 avger\u00f0 um at \u00fatluta vinningsb\u00fdti skal felagi\u00f0, grunnurin o.o. rinda TAKS peningin og leggja vi\u00f0",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "35% aftur \u00ed skatti. T\u00e1 i\u00f0 \u00fatluta\u00f0 ver\u00f0ur til fel\u00f8g og grunnar v.m., sum ikki eru fevnd av",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "18%. Skattur skal eisini haldast aftur \u00ed sambandi vi\u00f0, at felag keypir egin partabr\u00f8v o.a., fevnd av \u00a7",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-063",
+      "guide_LF": 177,
+      "wording_in_target": true,
+      "quote_count": 4,
+      "quotes": [
+        {
+          "quote": "1.000 og \u00ed mesta lagi kr. 5.000. Ver\u00f0ur lati\u00f0 inn minni enn 7 dagar ov seint, ver\u00f0ur samanlagdi",
+          "source_matches": [
+            "tax.reader.txt",
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "2%. Ver\u00f0ur lati\u00f0 inn 7 dagar ella meira ov seint, ver\u00f0ur samanlagdi innt\u00f8kuskatturin h\u00e6kka\u00f0ur vi\u00f0 5%.",
+          "source_matches": [
+            "tax.reader.txt",
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "5%.",
+          "source_matches": [
+            "tax.reader.txt",
+            "capital.reader.txt",
+            "assessment.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 3. Avlei\u00f0ingum, i\u00f0 nevndar eru \u00ed hesi grein og \u00a7 119, og sum standast av t\u00ed, ikki",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-064",
+      "guide_LF": 179,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "0,7% fyri hv\u00f8nn byrja\u00f0an m\u00e1na\u00f0 fr\u00e1 gjalddegnum, sbr. t\u00f3 \u00e1setingina \u00ed 146. \u00a7, 1. stk.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "12% p.a. \u00ed rentu fr\u00e1 t\u00ed, at skatta\u00e1ri\u00f0, sum kravi\u00f0 er galdandi fyri, gekk \u00fat.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 2. 1) Somu skyldu til at gjalda aftan\u00e1 tann ov l\u00edti\u00f0 goldna skattin m\u00f8guliga vi\u00f0 rentu eins",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-065",
+      "guide_LF": 181,
+      "wording_in_target": true,
+      "quote_count": 5,
+      "quotes": [
+        {
+          "quote": "1.000 og \u00ed mesta lagi kr. 5.000. Ver\u00f0ur lati\u00f0 inn minni enn 7 dagar ov seint, ver\u00f0ur samanlagdi",
+          "source_matches": [
+            "tax.reader.txt",
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "2%. Ver\u00f0ur lati\u00f0 inn 7 dagar ella meira ov seint, ver\u00f0ur samanlagdi innt\u00f8kuskatturin h\u00e6kka\u00f0ur vi\u00f0 5%. TAKS kann",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "5%. TAKS kann fr\u00e1bo\u00f0a fr\u00edt\u00f8ku, linna um, ella heilt lata falla burtur \u00e1lagda sekt, t\u00e1 i\u00f0 ta\u00f0 av",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "0,7% roknast \u00ed rentu fyri hv\u00f8nn byrja\u00f0an m\u00e1na\u00f0 fr\u00e1 gjalddegnum at rokna. Sama er galdandi fyri skuldskriva\u00f0a rentu.",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "0,7% roknast \u00ed rentu fyri hv\u00f8nn byrja\u00f0an m\u00e1na\u00f0 fr\u00e1 gjaldsdegnum at rokna. Sama er galdandi fyri skuldskriva\u00f0a rentu.",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-066",
+      "guide_LF": 183,
+      "wording_in_target": true,
+      "quote_count": 4,
+      "quotes": [
+        {
+          "quote": "2 \u00e1r.",
+          "source_matches": [
+            "tax.reader.txt",
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "g\u00e1loysni er revsingin sekt ella, t\u00e1 i\u00f0 talan er um skerpandi umst\u00f8\u00f0ur, var\u00f0haldi.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 139 b. Tann sum, uttan at tilfeldi\u00f0 er fevnt av \u00e1setingunum \u00ed \u00a7 139 A, letur vera",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 140. \u00c1 sama h\u00e1tt sum tilskila\u00f0 \u00ed \u00a7 139 ver\u00f0ur tann pers\u00f3nur revsa\u00f0ur, sum vi\u00f0 vilja ella",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-067",
+      "guide_LF": 187,
+      "wording_in_target": true,
+      "quote_count": 7,
+      "quotes": [
+        {
+          "quote": "\u00a7 1. Fulla skattskyldu hevur:",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 2. Avmarka\u00f0a skattskyldu hevur hv\u00f8r pers\u00f3nur, og hv\u00f8rt felag v.m., sum ikki kemur undir fyrim\u00e6lini \u00ed 1.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 37 a. Skattskyldug, sum",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 37 b. Um eitt felag,",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 19. Skattur, sum er goldin \u00f8\u00f0rum landi av innt\u00f8ku ha\u00f0ani, har tv\u00edskattas\u00e1ttm\u00e1li ikki er gj\u00f8rdur, anna\u00f0hv\u00f8rt skatturin",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 154. Skattur, sum er goldin \u00f8\u00f0rum r\u00edki av innt\u00f8ku ha\u00f0an, har avtala ikki er gj\u00f8rd, anna\u00f0hv\u00f8rt skatturin",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 15. 10) 1) 5) Fel\u00f8g og grunnar o.o., sum \u00fatluta vinningsb\u00fdti til likamligar pers\u00f3nar og dey\u00f0sb\u00fagv, skulu",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-068",
+      "guide_LF": 193,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "18% av innt\u00f8kunum til landskassa og kommunur.",
+          "source_matches": [
+            "assessment.reader.txt"
+          ]
+        },
+        {
+          "quote": "30% av avskrivingarb\u00e6ra saldovir\u00f0inum. Er avskrivingarb\u00e6ra saldovir\u00f0i\u00f0 \u00e1\u00f0renn innt\u00f8ku\u00e1rsins avskriving 20.000 kr\u00f3nur ella l\u00e6gri, kann upph\u00e6ddin til fulnar",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "20.000 kr\u00f3num ella minni kann til fulnar ver\u00f0a drigin fr\u00e1 skattskyldugu innt\u00f8kuni fyri ta\u00f0 innt\u00f8ku\u00e1r, sum n\u00fd\u00fatveganin fer",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-069",
+      "guide_LF": 195,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "18% av innt\u00f8kunum til landskassa og kommunur.",
+          "source_matches": [
+            "assessment.reader.txt"
+          ]
+        },
+        {
+          "quote": "30% av avskrivingarb\u00e6ra saldovir\u00f0inum. Er avskrivingarb\u00e6ra saldovir\u00f0i\u00f0 \u00e1\u00f0renn innt\u00f8ku\u00e1rsins avskriving 20.000 kr\u00f3nur ella l\u00e6gri, kann upph\u00e6ddin til fulnar",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        },
+        {
+          "quote": "20.000 kr\u00f3num ella minni kann til fulnar ver\u00f0a drigin fr\u00e1 skattskyldugu innt\u00f8kuni fyri ta\u00f0 innt\u00f8ku\u00e1r, sum n\u00fd\u00fatveganin fer",
+          "source_matches": [
+            "depreciation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-070",
+      "guide_LF": 222,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "tap vi\u00f0 avhending av teimum \u00ed \u00a7 1, nr. 1 nevndu vir\u00f0isbr\u00f8vum bert dragast fr\u00e1 \u00ed uppger\u00f0 av",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "Fyri fel\u00f8g og grunnar v.m. ver\u00f0ur rentuinnt\u00f8kan og negativa rentan rokna\u00f0 upp \u00ed uppger\u00f0ina av skattskyldugu innt\u00f8kuni eftir",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "18%. V\u00edsir innt\u00f8kuuppger\u00f0in eftir skattal\u00f3gini hall, kunnu fel\u00f8g og grunnar o.o. taka vinning eftir hesi grein vi\u00f0 \u00ed",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-071",
+      "guide_LF": 224,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "tap vi\u00f0 avhending av teimum \u00ed \u00a7 1, nr. 1 nevndu vir\u00f0isbr\u00f8vum bert dragast fr\u00e1 \u00ed uppger\u00f0 av",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "Fyri fel\u00f8g og grunnar v.m. ver\u00f0ur rentuinnt\u00f8kan og negativa rentan rokna\u00f0 upp \u00ed uppger\u00f0ina av skattskyldugu innt\u00f8kuni eftir",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "18%. V\u00edsir innt\u00f8kuuppger\u00f0in eftir skattal\u00f3gini hall, kunnu fel\u00f8g og grunnar o.o. taka vinning eftir hesi grein vi\u00f0 \u00ed",
+          "source_matches": [
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "CIT-072",
+      "guide_LF": 259,
+      "wording_in_target": true,
+      "quote_count": 0,
+      "quotes": [],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-001",
+      "guide_LF": 30,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "\u00a7 37 a. Skattskyldug, sum",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 118 a. Skattskyldug,",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-002",
+      "guide_LF": 32,
+      "wording_in_target": true,
+      "quote_count": 0,
+      "quotes": [],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-003",
+      "guide_LF": 36,
+      "wording_in_target": true,
+      "quote_count": 0,
+      "quotes": [],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-004",
+      "guide_LF": 40,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "meira enn 50% av partapeninginum ella innskotspeninginum ella hava r\u00e6\u00f0i \u00e1 meira enn 50% av atkv\u00f8\u00f0unum \u00ed felagnum.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-005",
+      "guide_LF": 41,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "36 mi\u00f3. kr.,",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-006",
+      "guide_LF": 42,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "72 mi\u00f3. kr. og",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-007",
+      "guide_LF": 43,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "50 fullt\u00ed\u00f0arsett starvsf\u00f3lk \u00ed me\u00f0al \u00ed roknskapar\u00e1rinum, skulu hv\u00f8rki gera ella goyma sl\u00edk skjalpr\u00f3gv, sum \u00e1sett \u00ed stk.",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-008",
+      "guide_LF": 44,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "4:1,",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-009",
+      "guide_LF": 45,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "2 \u00e1r.",
+          "source_matches": [
+            "tax.reader.txt",
+            "capital.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-010",
+      "guide_LF": 47,
+      "wording_in_target": true,
+      "quote_count": 4,
+      "quotes": [
+        {
+          "quote": "tveimum fylgjandi roknskapar\u00e1rum, vi\u00f0 roknskaparenda ikki fara upp um tvinnar av hesum \u00e1setingum:",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "T\u00f3 kann TAKS \u00ed serligum f\u00f8rum \u00e1leggja hesum fel\u00f8gum at gera og goyma sl\u00edk skjalpr\u00f3gv.",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00ed tveimum fylgjandi roknskapar\u00e1rum",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "kemur \u00ed gildi 1. januar 2019",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "assessment.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-011",
+      "guide_LF": 51,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 37 a. Skattskyldug, sum",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-012",
+      "guide_LF": 53,
+      "wording_in_target": true,
+      "quote_count": 7,
+      "quotes": [
+        {
+          "quote": "transactions exceeding 500,000",
+          "source_matches": [
+            "tp-cb-web-source-response.json"
+          ]
+        },
+        {
+          "quote": "not to say that individuals and enterprises should not keep documentation",
+          "source_matches": [
+            "tp-cb-web-source-response.json"
+          ]
+        },
+        {
+          "quote": "CUP method",
+          "source_matches": [
+            "tp-cb-web-source-response.json"
+          ]
+        },
+        {
+          "quote": "Resale method",
+          "source_matches": [
+            "tp-cb-web-source-response.json"
+          ]
+        },
+        {
+          "quote": "Cost plus method",
+          "source_matches": [
+            "tp-cb-web-source-response.json"
+          ]
+        },
+        {
+          "quote": "Transactional net margin method",
+          "source_matches": [
+            "tp-cb-web-source-response.json"
+          ]
+        },
+        {
+          "quote": "Profit split method",
+          "source_matches": [
+            "tp-cb-web-source-response.json"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-013",
+      "guide_LF": 55,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "Stk. 4. Tey, sum eru undir skyldu at lata inn sj\u00e1lvuppg\u00e1vu, skulu f\u00e1a til vega og goyma skrivligt",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-014",
+      "guide_LF": 59,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "4:1,",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "L\u00e1n fr\u00e1 tri\u00f0jamanni, sum tann \u00ed \u00a7 118 a, stk. 1 nevndi eigaraskari ella fel\u00f8g \u00ed samtaki vi\u00f0",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "Fr\u00e1dr\u00e1ttaravmarkingin fellur burtur, um felagi\u00f0 sannar, at l\u00edknandi f\u00edgging kann f\u00e1ast til vega millum \u00f3heftar partar.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-015",
+      "guide_LF": 61,
+      "wording_in_target": true,
+      "quote_count": 4,
+      "quotes": [
+        {
+          "quote": "kursvir\u00f0i\u00f0 vi\u00f0 innt\u00f8ku\u00e1rsins enda.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "2 \u00e1r.",
+          "source_matches": [
+            "tax.reader.txt",
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "Kurstap kann t\u00f3 dragast fr\u00e1 \u00ed kursvinningi upp \u00e1 sama l\u00e1n tey eftirfylgjandi innt\u00f8ku\u00e1rini. L\u00e1n fr\u00e1 tri\u00f0jamanni, sum",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 118 a. Skattskyldug,",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-016",
+      "guide_LF": 63,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "Stk. 4. Eru fleiri fel\u00f8g \u00ed samtaki undir r\u00e6\u00f0i, sbr. stk. 5, ver\u00f0a reglurnar \u00ed stk. 1-3 samla\u00f0",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 5. Vi\u00f0 fel\u00f8g \u00ed samtaki ver\u00f0ur skilt:",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "Stk. 6. Stk. 1-4 eru samsvarandi galdandi fyri partafel\u00f8g og onnur fel\u00f8g, sum hava heimsta\u00f0 uttanlands, \u00ed tann",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-017",
+      "guide_LF": 67,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "slag og vav \u00e1 handilsligu ella f\u00edggjarligu vi\u00f0urskiftum s\u00ednum vi\u00f0 \u00e1\u00f0urnevndu likamligu og l\u00f8gfr\u00f8\u00f0iligu pers\u00f3nar og f\u00f8stu rakstrarsta\u00f0ir.",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "60 dagar eftir \u00e1heitanina. Tilfari\u00f0 skal vera solei\u00f0is h\u00e1tta\u00f0, at ta\u00f0 kann vera grundarlag fyri einari meting av,",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-018",
+      "guide_LF": 69,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "1. juli. Sj\u00e1lvuppg\u00e1van er rokna\u00f0 fyri at vera innlatin r\u00e6ttstundis, t\u00e1 i\u00f0 hon \u00ed seinasta lagi nevnda dag",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "rakstrarroknskap og f\u00edggjarst\u00f8\u00f0u \u00ed byrjan og enda rakstrar\u00e1rsins, sum n\u00e6rri \u00e1sett \u00ed \u00a7 103 a. Landsst\u00fdrisma\u00f0urin \u00ed skattam\u00e1lum",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "15. august \u00ed \u00e1l\u00edkningar\u00e1rinum.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-019",
+      "guide_LF": 71,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 118 a. Skattskyldug,",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-020",
+      "guide_LF": 75,
+      "wording_in_target": true,
+      "quote_count": 5,
+      "quotes": [
+        {
+          "quote": "Stk. 5. Um skattskyldugi ikki hevur fingi\u00f0 til vega skjalpr\u00f3gv, sum \u00e1sett \u00ed stk. 4, ver\u00f0ur \u00e1l\u00edkningin fyri",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "3) ikki veitir teir uppl\u00fdsingar, sum tilskila\u00f0ir eru \u00ed \u00a7\u00a7 118-124.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "2 \u00e1r.",
+          "source_matches": [
+            "tax.reader.txt",
+            "capital.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 139. Tann pers\u00f3nur, sum vi\u00f0 t\u00ed \u00ed hyggju at sleppa undan at gjalda skatt til ta\u00f0 almenna",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 140. \u00c1 sama h\u00e1tt sum tilskila\u00f0 \u00ed \u00a7 139 ver\u00f0ur tann pers\u00f3nur revsa\u00f0ur, sum vi\u00f0 vilja ella",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-021",
+      "guide_LF": 77,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "0,7% fyri hv\u00f8nn byrja\u00f0an m\u00e1na\u00f0 fr\u00e1 gjalddegnum, sbr. t\u00f3 \u00e1setingina \u00ed 146. \u00a7, 1. stk.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "12% p.a. \u00ed rentu fr\u00e1 t\u00ed, at skatta\u00e1ri\u00f0, sum kravi\u00f0 er galdandi fyri, gekk \u00fat.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-022",
+      "guide_LF": 81,
+      "wording_in_target": true,
+      "quote_count": 0,
+      "quotes": [],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-023",
+      "guide_LF": 83,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "Stk. 4. \u00cd sambandi vi\u00f0, at \u00e1l\u00edkningin av t\u00ed skattskyldugu innt\u00f8kuni ver\u00f0ur broytt, samb\u00e6rt stk. 1, kann skattskyldugi",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "5 \u00e1r. Er freistin fyri at lata sj\u00e1lvuppg\u00e1vu inn longd, sbrt. \u00a7 105 \u00ed l\u00f8gtingsl\u00f3g um landsskatt og",
+          "source_matches": [
+            "admin.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 9. \u00c1setingin \u00ed \u00a7 8 er ikki galdandi \u00ed ni\u00f0anfyri nevndu f\u00f8rum:",
+          "source_matches": [
+            "admin.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-024",
+      "guide_LF": 89,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 37 a. Skattskyldug, sum",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-025",
+      "guide_LF": 91,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 37 a. Skattskyldug, sum",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-026",
+      "guide_LF": 107,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "36 mi\u00f3. kr.,",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "72 mi\u00f3. kr. og",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "50 fullt\u00ed\u00f0arsett starvsf\u00f3lk \u00ed me\u00f0al \u00ed roknskapar\u00e1rinum, skulu hv\u00f8rki gera ella goyma sl\u00edk skjalpr\u00f3gv, sum \u00e1sett \u00ed stk.",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-027",
+      "guide_LF": 109,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "36 mi\u00f3. kr.,",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "72 mi\u00f3. kr. og",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "50 fullt\u00ed\u00f0arsett starvsf\u00f3lk \u00ed me\u00f0al \u00ed roknskapar\u00e1rinum, skulu hv\u00f8rki gera ella goyma sl\u00edk skjalpr\u00f3gv, sum \u00e1sett \u00ed stk.",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-028",
+      "guide_LF": 127,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "36 mi\u00f3. kr.,",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "72 mi\u00f3. kr. og",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "50 fullt\u00ed\u00f0arsett starvsf\u00f3lk \u00ed me\u00f0al \u00ed roknskapar\u00e1rinum, skulu hv\u00f8rki gera ella goyma sl\u00edk skjalpr\u00f3gv, sum \u00e1sett \u00ed stk.",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-transfer-pricing-029",
+      "guide_LF": 131,
+      "wording_in_target": true,
+      "quote_count": 0,
+      "quotes": [],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-001",
+      "guide_LF": 31,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "\u00a7 118 b. \u00cd hesi grein, umframt \u00ed \u00a7\u00a7 118 c-g, ver\u00f0a ni\u00f0anfyri standandi hugt\u00f8k br\u00fakt og skilt",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-002",
+      "guide_LF": 33,
+      "wording_in_target": true,
+      "quote_count": 0,
+      "quotes": [],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-003",
+      "guide_LF": 39,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "5,6 mia. kr. roknskapar\u00e1ri\u00f0 frammanundan innt\u00f8ku\u00e1rinum, sum ta\u00f0 skal fr\u00e1bo\u00f0ast um.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-004",
+      "guide_LF": 40,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "12 m\u00e1na\u00f0ir eftir s\u00ed\u00f0sta dag \u00ed t\u00ed innt\u00f8ku\u00e1ri, sum hon skal grei\u00f0a fr\u00e1.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-005",
+      "guide_LF": 41,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "\u00a7 118 f. Ta\u00f0 ultimativa m\u00f3\u00f0urfelagi\u00f0, sbrt. \u00a7 118 c, stk. 1, ella eitt f\u00f8royskt umbo\u00f0sm\u00f3\u00f0urfelag, sbrt. \u00a7118",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 2. Fr\u00e1bo\u00f0an eftir \u00a7\u00a7 1 og 3 kann latast talgilt samb\u00e6rt \u00e1v\u00edsing fr\u00e1 skattamyndugleikanum. Fr\u00e1bo\u00f0anin skal latast",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-006",
+      "guide_LF": 43,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "\u00a7 118 c. 1) Ultimativa m\u00f3\u00f0urfelagi\u00f0 \u00ed einum fleirtj\u00f3\u00f0a samtaki, sum er skattskyldugt \u00ed F\u00f8royum, skal handa TAKS",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "Marki\u00f0 \u00e1 5,6 milliardir kr\u00f3nur skal tulkast samb\u00e6rt veglei\u00f0ing hj\u00e1 OECD um gjaldoyrasveiggj.",
+          "source_matches": []
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-007",
+      "guide_LF": 47,
+      "wording_in_target": true,
+      "quote_count": 5,
+      "quotes": [
+        {
+          "quote": "\u00a7 118 b. \u00cd hesi grein, umframt \u00ed \u00a7\u00a7 118 c-g, ver\u00f0a ni\u00f0anfyri standandi hugt\u00f8k br\u00fakt og skilt",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 118 c. 1) Ultimativa m\u00f3\u00f0urfelagi\u00f0 \u00ed einum fleirtj\u00f3\u00f0a samtaki, sum er skattskyldugt \u00ed F\u00f8royum, skal handa TAKS",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 118 d. 1) Eitt samtaksfelag, sum ikki er ta\u00f0 ultimativa m\u00f3\u00f0urfelagi\u00f0, skal lata land fyri land fr\u00e1grei\u00f0ingina",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 118 e. Eitt samtaksfelag skal ikki handa skattamyndugleikunum eina land fyri land fr\u00e1grei\u00f0ing, um fr\u00e1grei\u00f0ingin, vegna fleirtj\u00f3\u00f0a",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 118 f. Ta\u00f0 ultimativa m\u00f3\u00f0urfelagi\u00f0, sbrt. \u00a7 118 c, stk. 1, ella eitt f\u00f8royskt umbo\u00f0sm\u00f3\u00f0urfelag, sbrt. \u00a7118",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-008",
+      "guide_LF": 54,
+      "wording_in_target": true,
+      "quote_count": 5,
+      "quotes": [
+        {
+          "quote": "\u00a7 118 c. 1) Ultimativa m\u00f3\u00f0urfelagi\u00f0 \u00ed einum fleirtj\u00f3\u00f0a samtaki, sum er skattskyldugt \u00ed F\u00f8royum, skal handa TAKS",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "Marki\u00f0 \u00e1 5,6 milliardir kr\u00f3nur skal tulkast samb\u00e6rt veglei\u00f0ing hj\u00e1 OECD um gjaldoyrasveiggj.",
+          "source_matches": []
+        },
+        {
+          "quote": "\u00a7 118 c. 1) Ultimativa m\u00f3\u00f0urfelagi\u00f0 \u00ed einum fleirtj\u00f3\u00f0a samtaki, sum er skattskyldugt \u00ed F\u00f8royum, skal handa TAKS",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 118 d. 1) Eitt samtaksfelag, sum ikki er ta\u00f0 ultimativa m\u00f3\u00f0urfelagi\u00f0, skal lata land fyri land fr\u00e1grei\u00f0ingina",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "minst 5,6 milliardir kr\u00f3nur",
+          "source_matches": []
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-009",
+      "guide_LF": 58,
+      "wording_in_target": true,
+      "quote_count": 4,
+      "quotes": [
+        {
+          "quote": "talvu 1-3, sbr. skjal 1.",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        },
+        {
+          "quote": "Umsetningurin fevnir ikki um gj\u00f8ld fr\u00e1 \u00f8\u00f0rum samtakseindum, sum ver\u00f0a rokna\u00f0 sum \u00fatlutanir \u00ed gjaldarans skattar\u00e6ttard\u00f8mi.",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        },
+        {
+          "quote": "Goldin skattur fevnir um kelduskatt, sum a\u00f0rar eindir hava goldi\u00f0, b\u00e6\u00f0i atkn\u00fdttar og sj\u00e1lvst\u00f8\u00f0ugar fyrit\u00f8kur, \u00ed sambandi vi\u00f0",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        },
+        {
+          "quote": "ikki um \u00fatsettan skatt ella burturleggingar til \u00f3vissar skattaskyldur.",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-010",
+      "guide_LF": 60,
+      "wording_in_target": true,
+      "quote_count": 4,
+      "quotes": [
+        {
+          "quote": "fullt\u00ed\u00f0arst\u00f8rv hj\u00e1 samtakseindum, sum skattliga eru heimahoyrandi \u00ed vi\u00f0komandi skattar\u00e6ttard\u00f8mi. Tali\u00f0 av starvsf\u00f3lkum kann antin ver\u00f0a grunda\u00f0 \u00e1",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        },
+        {
+          "quote": "t\u00f8kan pening ella f\u00edggjarognir.",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        },
+        {
+          "quote": "G\u00f3\u00f0tiki\u00f0 f\u00e6: Samla\u00f0a g\u00f3\u00f0tikna f\u00e6i\u00f0 fyri allar samtakseindir, sum eru skattliga heimahoyrandi \u00ed vi\u00f0komandi skattar\u00e6ttard\u00f8mi. Hvat f\u00f8stum rakstratst\u00f8\u00f0um",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        },
+        {
+          "quote": "Samanspardur vinningur: Samla\u00f0i samanspardi vinningurin vi\u00f0 \u00e1rsenda hj\u00e1 \u00f8llum samtakseindunum, sum skattliga eru heimahoyrandi \u00ed vi\u00f0komandi skattar\u00e6ttard\u00f8mi. Hvat",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-011",
+      "guide_LF": 62,
+      "wording_in_target": true,
+      "quote_count": 0,
+      "quotes": [],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-012",
+      "guide_LF": 66,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "12 m\u00e1na\u00f0ir eftir s\u00ed\u00f0sta dag \u00ed t\u00ed innt\u00f8ku\u00e1ri, sum hon skal grei\u00f0a fr\u00e1.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 118 f. Ta\u00f0 ultimativa m\u00f3\u00f0urfelagi\u00f0, sbrt. \u00a7 118 c, stk. 1, ella eitt f\u00f8royskt umbo\u00f0sm\u00f3\u00f0urfelag, sbrt. \u00a7118",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-013",
+      "guide_LF": 68,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "\u00a7 1. Fr\u00e1bo\u00f0an, sum skal latast samb\u00e6rt \u00a7 118 f \u00ed l\u00f8gtingsl\u00f3g um landsskatt og kommunuskatt, skal innihalda",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 2. Fr\u00e1bo\u00f0an eftir \u00a7\u00a7 1 og 3 kann latast talgilt samb\u00e6rt \u00e1v\u00edsing fr\u00e1 skattamyndugleikanum. Fr\u00e1bo\u00f0anin skal latast",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        },
+        {
+          "quote": "\u00a7 3. Fr\u00e1bo\u00f0an skal latast skattamyndugleikanum, um ta\u00f0 eru umst\u00f8\u00f0ur, sum bera \u00ed s\u00e6r, at skyldan at lata",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-014",
+      "guide_LF": 70,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "TAKS skal hava avrit av fulltr\u00fa, um tri\u00f0ipers\u00f3nur letur inn vegna samtaksfelagi\u00f0.",
+          "source_matches": []
+        },
+        {
+          "quote": "Send um \u00e1l\u00edtandi postskipan",
+          "source_matches": [
+            "tp-cb-web-source-response.json"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-015",
+      "guide_LF": 72,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "Stk. 5. Ein samtakseind, sum er skyldug at gera eina land fyri land fr\u00e1grei\u00f0ing eftir \u00a7 118 d",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-016",
+      "guide_LF": 76,
+      "wording_in_target": true,
+      "quote_count": 3,
+      "quotes": [
+        {
+          "quote": "Vi\u00f0 b\u00f3t ver\u00f0ur revsa\u00f0ur tann, sum tilvita\u00f0 ella av grovum \u00f3sketni:",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "1) Vi\u00f0 b\u00f3t ver\u00f0ur revsa\u00f0ur tann, sum tilvita\u00f0 ella av grovum \u00f3sketni:",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "2) Gevur skeivar ella villlei\u00f0andi uppl\u00fdsingar \u00ed land fyri land fr\u00e1grei\u00f0ingini.",
+          "source_matches": [
+            "tp-cb-web-source-response.json",
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-017",
+      "guide_LF": 80,
+      "wording_in_target": true,
+      "quote_count": 4,
+      "quotes": [
+        {
+          "quote": "\u00a7 118 c. 1) Ultimativa m\u00f3\u00f0urfelagi\u00f0 \u00ed einum fleirtj\u00f3\u00f0a samtaki, sum er skattskyldugt \u00ed F\u00f8royum, skal handa TAKS",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "Marki\u00f0 \u00e1 5,6 milliardir kr\u00f3nur skal tulkast samb\u00e6rt veglei\u00f0ing hj\u00e1 OECD um gjaldoyrasveiggj.",
+          "source_matches": []
+        },
+        {
+          "quote": "\u00a7 118 e. Eitt samtaksfelag skal ikki handa skattamyndugleikunum eina land fyri land fr\u00e1grei\u00f0ing, um fr\u00e1grei\u00f0ingin, vegna fleirtj\u00f3\u00f0a",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        },
+        {
+          "quote": "Virkja\u00f0ar avtalur um \u00fatveksling",
+          "source_matches": [
+            "tp-cb-web-source-response.json"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-018",
+      "guide_LF": 86,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "5,6 mia. kr. roknskapar\u00e1ri\u00f0 frammanundan innt\u00f8ku\u00e1rinum, sum ta\u00f0 skal fr\u00e1bo\u00f0ast um.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-019",
+      "guide_LF": 88,
+      "wording_in_target": true,
+      "quote_count": 1,
+      "quotes": [
+        {
+          "quote": "5,6 mia. kr. roknskapar\u00e1ri\u00f0 frammanundan innt\u00f8ku\u00e1rinum, sum ta\u00f0 skal fr\u00e1bo\u00f0ast um.",
+          "source_matches": [
+            "tax.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-020",
+      "guide_LF": 104,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "Goldin skattur fevnir um kelduskatt, sum a\u00f0rar eindir hava goldi\u00f0, b\u00e6\u00f0i atkn\u00fdttar og sj\u00e1lvst\u00f8\u00f0ugar fyrit\u00f8kur, \u00ed sambandi vi\u00f0",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        },
+        {
+          "quote": "ikki um \u00fatsettan skatt ella burturleggingar til \u00f3vissar skattaskyldur.",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-021",
+      "guide_LF": 106,
+      "wording_in_target": true,
+      "quote_count": 2,
+      "quotes": [
+        {
+          "quote": "Goldin skattur fevnir um kelduskatt, sum a\u00f0rar eindir hava goldi\u00f0, b\u00e6\u00f0i atkn\u00fdttar og sj\u00e1lvst\u00f8\u00f0ugar fyrit\u00f8kur, \u00ed sambandi vi\u00f0",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        },
+        {
+          "quote": "ikki um \u00fatsettan skatt ella burturleggingar til \u00f3vissar skattaskyldur.",
+          "source_matches": [
+            "regulation.reader.txt"
+          ]
+        }
+      ],
+      "semantic_status": "pending independent verification"
+    },
+    {
+      "id": "fo-country-by-country-reporting-022",
+      "guide_LF": 124,
+      "wording_in_target": true,
+      "quote_count": 0,
+      "quotes": [],
+      "semantic_status": "pending independent verification"
+    }
+  ],
+  "source_identities": [
+    {
+      "file": "tax.reader.txt",
+      "sha256": "13ed8d751bd853cc7813713422f2e53b08f986b0a70d526c6496550c7baf945c",
+      "previous_reader_same": true,
+      "previous_ranges_reused": [
+        [
+          575,
+          591
+        ],
+        [
+          601,
+          616
+        ],
+        [
+          645,
+          657
+        ],
+        [
+          868,
+          883
+        ],
+        [
+          531,
+          574
+        ],
+        [
+          1106,
+          1109
+        ],
+        [
+          884,
+          924
+        ],
+        [
+          427,
+          435
+        ],
+        [
+          462,
+          506
+        ],
+        [
+          685,
+          688
+        ],
+        [
+          337,
+          367
+        ]
+      ]
+    },
+    {
+      "file": "capital.reader.txt",
+      "sha256": "285023242bd8432ab5ad3cd1fe1665ab5fd69f0a06a5cbb36c736180b528022c",
+      "previous_reader_same": true,
+      "previous_ranges_reused": [
+        [
+          324,
+          336
+        ],
+        [
+          413,
+          419
+        ],
+        [
+          438,
+          438
+        ]
+      ]
+    },
+    {
+      "file": "assessment.reader.txt",
+      "sha256": "9dd3e1a5ad9388fb33b7a8533601fcc973faa5de69b7b173089295e3e20087f8",
+      "previous_reader_same": true,
+      "previous_ranges_reused": [
+        [
+          304,
+          316
+        ]
+      ]
+    },
+    {
+      "file": "admin.reader.txt",
+      "sha256": "70770eb2ceee7d7da82d1424967b1ad6dce5abfe8996c1d75341954908b46ffc",
+      "previous_reader_same": null,
+      "previous_ranges_reused": []
+    },
+    {
+      "file": "depreciation.reader.txt",
+      "sha256": "2faa95d03cc9541d2989b66277d115d6f09112815d6223d94a20548944221599",
+      "previous_reader_same": true,
+      "previous_ranges_reused": [
+        [
+          390,
+          427
+        ],
+        [
+          299,
+          389
+        ]
+      ]
+    },
+    {
+      "file": "company.reader.txt",
+      "sha256": "d63b65071fe398af9cdc5408f2218413a72be8684470968b4b963759a0e6d74c",
+      "previous_reader_same": true,
+      "previous_ranges_reused": [
+        [
+          337,
+          345
+        ],
+        [
+          488,
+          496
+        ],
+        [
+          523,
+          529
+        ],
+        [
+          600,
+          617
+        ]
+      ]
+    },
+    {
+      "file": "regulation.reader.txt",
+      "sha256": "738bfad66d22b7927b6a38fb09e091ee5768893943f9e8e0589d5851aaf5ddb4",
+      "previous_reader_same": true,
+      "previous_ranges_reused": [
+        [
+          299,
+          326
+        ]
+      ]
+    },
+    {
+      "file": "group.reader.txt",
+      "sha256": "fc4012cdf76358c00a6d3c4ed519f5bba2912b7ef620c096776f28ebde106c0a",
+      "previous_reader_same": true,
+      "previous_ranges_reused": [
+        [
+          1,
+          372
+        ]
+      ]
+    }
+  ]
+}

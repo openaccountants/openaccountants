@@ -1,0 +1,163 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Cuantía y límite de la deducción
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 1.
+
+Capítulo 18. Cuota líquida, cuota resultante de la autoliquidación, cuota diferencial y resultado de la declaración
+
+Resultado de la declaración
+
+Deducción por maternidad e incremento adicional por gastos de custodia
+
+Deducción por maternidad
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 1.
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Cuantía y límite de la deducción
+
+Cuantía de la deducción
+
+A. En general
+
+El importe de la deducción (que puede ser hasta 1.200 euros) se calculará de forma proporcional al número de meses del periodo impositivo posteriores al momento en el que se cumplen los requisitos antes señalados (tanto en relación a los beneficiarios como a los hijos que dan derecho a la deducción) siempre que, durante dichos meses, ninguno de los progenitores perciba, en relación al hijo que otorgue el derecho, el complemento de ayuda para la infancia, salvo que se hubiera tenido derecho al mismo antes del 1 de enero de 2023.
+
+Por tanto, 100 euros por cada mes.
+
+Importante: a partir de 1 de enero de 2023, NO se tendrá derecho a la deducción por maternidad, los meses en que alguno de los progenitores perciba el complemento de ayuda para la infancia previsto en la Ley 19/2021, de 20 de diciembre, por la que se establece el ingreso mínimo vital, en relación con el mismo descendiente.
+
+No obstante, cuando en el período impositivo 2022 se hubiera tenido derecho a la deducción por maternidad y se hubiera percibido el al complemento de ayuda para la infancia en dicho ejercicio en relación con el mismo descendiente, se podrá seguir practicando la deducción por maternidad en el ejercicio 2025, siempre que se cumplan el resto de los requisitos establecidos. Véase a este respecto el “régimen transitorio aplicable a situaciones anteriores a 1 de enero de 2023”, que se expone a continuación.
+
+Incremento adicional: cuando se tenga derecho a la deducción en relación con ese descendiente por haberse dado de alta en la Seguridad social o mutualidad con posterioridad al nacimiento del menor, la deducción correspondiente al mes en el que se cumpla el período de cotización de 30 días, se incrementará en 150 euros, de tal manera que el importe de la deducción correspondiente a dicho mes será 250 euros (100 euros por mes + incremento adicional de 150 euros solo en este caso).
+
+Precisiones:
+
+La determinación de los hijos se realizará de acuerdo con su situación el último día de cada mes. En consecuencia, en caso de hijos por naturaleza se computará por entero el mes de nacimiento, sin que se compute el mes en que el hijo cumpla los tres años de edad.
+
+A los efectos del cálculo de la deducción, se computará el mes correspondiente al momento del nacimiento o aquel en que con posterioridad se cumplan los requisitos para tener derecho a la deducción.
+
+B. Régimen transitorio aplicable a situaciones anteriores a 1 de enero de 2023
+
+Cuando en el período impositivo 2022 se hubiera tenido derecho a la deducción por maternidad y al complemento de ayuda para la infancia previsto en la Ley 19/2021 en relación con el mismo descendiente, se podrá seguir practicando la deducción por maternidad a partir de 1 de enero de 2023, aun cuando alguno de los progenitores tuviera derecho al citado complemento respecto de dicho descendiente, siempre que se cumplan el resto de los requisitos exigidos a partir de 1 de enero de 2023, a los que se hizo referencia con anterioridad.
+
+Límite de la deducción
+
+El importe de la deducción por maternidad por cada hijo que otorgue derecho a la misma no podrá superar 1.200 euros anuales, salvo en el supuesto en que resulte de aplicación el incremento de 150 euros, en cuyo caso, dicho límite se eleva en dicho ejercicio hasta 1.350 euros anuales.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

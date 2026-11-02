@@ -1,0 +1,45 @@
+{
+  "scope": "Eight independent arithmetic recomputations; all legal demonstration scopes checked, case08 expressly preserves unresolved source ambiguity and is not operative portal approval.",
+  "cases": [
+    {
+      "id": "itpark-current-form-controls:01",
+      "calculation": "200000*.07=14000;3*17400*.30=15660;max=15660;control15660",
+      "legal": "PASS under assumed eligible status/count; PLAN003-005,086,119-122"
+    },
+    {
+      "id": "itpark-current-form-controls:02",
+      "calculation": "0*.07=0;3*17400*.30=15660;max=15660",
+      "legal": "PASS under assumed status/count; no0/0eligibility conclusion"
+    },
+    {
+      "id": "itpark-current-form-controls:03",
+      "calculation": "140000/200000*100=70;650000/1000000*100=65",
+      "legal": "PASS; cumulative rule PLAN002/015/124, noautomaticstatusloss"
+    },
+    {
+      "id": "itpark-current-form-controls:04",
+      "calculation": "30000+20000=50000;months2+1=3;individualrecordsunchanged",
+      "legal": "PASS actual salary fields separately checked PR389–459; paid salary/months not statutory deemed insured income."
+    },
+    {
+      "id": "itpark-current-form-controls:05",
+      "calculation": "(1000000+100000)*.07=77000;77000-70000=7000;70000-65000=5000;7000+5000=12000",
+      "legal": "PASS for exactunambiguous14abranch withestablishedM; TP426-434; actualcashledgerexcluded"
+    },
+    {
+      "id": "itpark-current-form-controls:06",
+      "calculation": "60000-70000=-10000;65000-60000=5000;70000-65000=5000",
+      "legal": "PASS for exact14bbranch withestablishedM; TP435; nocashrefundentitlement"
+    },
+    {
+      "id": "itpark-current-form-controls:07",
+      "calculation": "1000000+80000+20000=1100000;*.07=77000;wrong1120000*.07=78400;2025combined012100000",
+      "legal": "PASS under assumed disjointbuckets; TP460-463 and429bridge"
+    },
+    {
+      "id": "itpark-current-form-controls:08",
+      "calculation": "12*5220=62640;62640/12=5220",
+      "legal": "PASS only literal published generic12month example comparison; minimum/partialyear algorithm remains explicitly unconfirmed."
+    }
+  ]
+}

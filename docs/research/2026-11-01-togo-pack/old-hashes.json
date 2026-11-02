@@ -1,0 +1,32 @@
+[
+  {
+    "path": "skills/togo/tg-company-formation.md",
+    "git_blob": "9e8b29256013653440d55b0bb045bbee88f5eede",
+    "sha256": "db5e2e981ff7901fdb4aba7bb8ce25870dbec990af1c98d90e89579f61e7c331"
+  },
+  {
+    "path": "skills/togo/tg-corporate-income-tax.md",
+    "git_blob": "69c38a88ca1b03a5645f52730e145a5efd4ffc11",
+    "sha256": "ffbc7706a8abf867ccc9fe40afc576dbd29386a9673f3e787640ffd37be0ed48"
+  },
+  {
+    "path": "skills/togo/tg-income-tax.md",
+    "git_blob": "c3b9367b1d6820a25c5991dbd06345e934c7e486",
+    "sha256": "3582f172926902cae7b4fb38080bb2a16d582051da4ebc7fece7feb1cbbc4324"
+  },
+  {
+    "path": "skills/togo/tg-payroll-social.md",
+    "git_blob": "4b5ee15d15fa155c2a6e7d41475c2f344f7cdae1",
+    "sha256": "25f7aad2c0e272c8083c067903407ece7f76af12161ce53d31bf56beeb2c72c5"
+  },
+  {
+    "path": "skills/togo/tg-tax-overview.md",
+    "git_blob": "68f723efdadc892032c2278c2222341bfc8901ef",
+    "sha256": "a12359316e6a55103d58b0e3dea99e530e09f129ad4b38b4c295f2679e846a16"
+  },
+  {
+    "path": "skills/togo/tg-vat-gst.md",
+    "git_blob": "92803c7be97be6d1e02edd9b902cb5e95aa0b610",
+    "sha256": "d5c0db4de10b49e1a5bc6a73962dfc7732e97ac85408519a9d8f19fafd940909"
+  }
+]

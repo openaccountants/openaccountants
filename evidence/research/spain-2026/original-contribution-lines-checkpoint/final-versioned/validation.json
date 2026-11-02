@@ -1,0 +1,256 @@
+{
+  "all_checks": [
+    {
+      "name": "country-examples",
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/international/spain/README.md",
+        "skills/international/spain/es-autonomous-worker.md",
+        "skills/international/spain/es-beckham.md",
+        "skills/international/spain/es-canary-islands-igic.md",
+        "skills/international/spain/es-capital-gains.md",
+        "skills/international/spain/es-ceuta-melilla-ipsi.md",
+        "skills/international/spain/es-corporate-tax.md",
+        "skills/international/spain/es-estimated-tax.md",
+        "skills/international/spain/es-foral-corporate-tax.md",
+        "skills/international/spain/es-foral-income-tax.md",
+        "skills/international/spain/es-foral-non-resident-tax.md",
+        "skills/international/spain/es-foral-payroll.md",
+        "skills/international/spain/es-income-tax.md",
+        "skills/international/spain/es-irpf-deductions.md",
+        "skills/international/spain/es-modelo-111.md",
+        "skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+        "skills/international/spain/es-rental-income.md",
+        "skills/international/spain/es-social-contributions.md",
+        "skills/international/spain/es-vat-return.md",
+        "skills/international/spain/references.md",
+        "skills/international/spain/spain-bookkeeping.md",
+        "skills/international/spain/spain-crypto-tax.md",
+        "skills/international/spain/spain-einvoice.md",
+        "skills/international/spain/spain-financial-statements.md",
+        "skills/international/spain/spain-formation.md",
+        "skills/international/spain/spain-payroll.md",
+        "skills/international/spain/spain-tax-optimization.md",
+        "skills/international/spain/spain-transfer-pricing.md",
+        "skills/international/spain/spain-vat-return.md"
+      ],
+      "exit_code": 0,
+      "output_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753"
+    },
+    {
+      "name": "strict-local-sync",
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "HEAD",
+        "--worktree",
+        "--mode",
+        "sync",
+        "--strict-metadata",
+        "--provenance",
+        "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-original-contribution-lines-root-application/local-provenance.json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "4e4a7a1d7347182c90ae1d8420d4401f1ecc1528162ab4aad934099b685ae97b"
+    },
+    {
+      "name": "full-canonical-schema",
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "output_sha256": "fb3fa388627eb99205680760747bb77902521130ebba55a87a81bcae63e072e8"
+    },
+    {
+      "name": "full-coverage-report",
+      "command": [
+        "python3",
+        "scripts/coverage-report.py",
+        "--json"
+      ],
+      "exit_code": 0,
+      "output_sha256": "ef3b3a5d1950ca4972889f791d5a6b1484fa2269058312b3fdf02179ebe37eb0"
+    },
+    {
+      "name": "branch-audit",
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "origin/main",
+        "--worktree",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "output_sha256": "d7d74508aecf7e91852accd239a769fecac74876d0089106616e9dc71c6986e9"
+    },
+    {
+      "name": "worktree-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "files29": [
+    {
+      "file": "README.md",
+      "sha256": "6093646998039397e0f8c64d50bb05142845ceabb62205247f4a5c3acf8b4d9a",
+      "bytes": 13131
+    },
+    {
+      "file": "es-autonomous-worker.md",
+      "sha256": "f66e5c8fa560153a9d359138b172565b12974be378fab14212b243ee7fb8da36",
+      "bytes": 34420
+    },
+    {
+      "file": "es-beckham.md",
+      "sha256": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+      "bytes": 23234
+    },
+    {
+      "file": "es-canary-islands-igic.md",
+      "sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+      "bytes": 33282
+    },
+    {
+      "file": "es-capital-gains.md",
+      "sha256": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+      "bytes": 35690
+    },
+    {
+      "file": "es-ceuta-melilla-ipsi.md",
+      "sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+      "bytes": 50091
+    },
+    {
+      "file": "es-corporate-tax.md",
+      "sha256": "66f9dff1c027ddaf6f9ebe5e7502bbd135ef1c33b45ff7fb0efd73cfa851c6c4",
+      "bytes": 43212
+    },
+    {
+      "file": "es-estimated-tax.md",
+      "sha256": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+      "bytes": 36751
+    },
+    {
+      "file": "es-foral-corporate-tax.md",
+      "sha256": "00f9f7cdeec6b1b2b41e3be43723205044882064d283ac0636b68754dbdf0d27",
+      "bytes": 112395
+    },
+    {
+      "file": "es-foral-income-tax.md",
+      "sha256": "d49fd461afab6672085a4762761a13ed63995b2b11ad0bb32557daf94b82fb19",
+      "bytes": 265659
+    },
+    {
+      "file": "es-foral-non-resident-tax.md",
+      "sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+      "bytes": 67660
+    },
+    {
+      "file": "es-foral-payroll.md",
+      "sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+      "bytes": 54518
+    },
+    {
+      "file": "es-income-tax.md",
+      "sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+      "bytes": 85291
+    },
+    {
+      "file": "es-irpf-deductions.md",
+      "sha256": "c79cbf65d57e66ccdd43dd51338ea37b173bae26d3cd0ea7877af302554446f7",
+      "bytes": 489578
+    },
+    {
+      "file": "es-modelo-111.md",
+      "sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+      "bytes": 25444
+    },
+    {
+      "file": "es-non-resident-income-tax-irnr-and.md",
+      "sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+      "bytes": 33442
+    },
+    {
+      "file": "es-rental-income.md",
+      "sha256": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+      "bytes": 38965
+    },
+    {
+      "file": "es-social-contributions.md",
+      "sha256": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+      "bytes": 68625
+    },
+    {
+      "file": "es-vat-return.md",
+      "sha256": "d1dd569467baaab0388724f9c11d4f4309404b501142d8ecb98cbe6e14f464d3",
+      "bytes": 86372
+    },
+    {
+      "file": "references.md",
+      "sha256": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+      "bytes": 3537
+    },
+    {
+      "file": "spain-bookkeeping.md",
+      "sha256": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+      "bytes": 73678
+    },
+    {
+      "file": "spain-crypto-tax.md",
+      "sha256": "f5af101ac738c559e001807cfbbf420b26342cc2081d8436ce1b1a5040aab65c",
+      "bytes": 31385
+    },
+    {
+      "file": "spain-einvoice.md",
+      "sha256": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+      "bytes": 53944
+    },
+    {
+      "file": "spain-financial-statements.md",
+      "sha256": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+      "bytes": 51863
+    },
+    {
+      "file": "spain-formation.md",
+      "sha256": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+      "bytes": 11892
+    },
+    {
+      "file": "spain-payroll.md",
+      "sha256": "89de80b5558648018020a803fd139685ac92d4908d6f72b1007e84626598d77a",
+      "bytes": 52020
+    },
+    {
+      "file": "spain-tax-optimization.md",
+      "sha256": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+      "bytes": 20281
+    },
+    {
+      "file": "spain-transfer-pricing.md",
+      "sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+      "bytes": 31683
+    },
+    {
+      "file": "spain-vat-return.md",
+      "sha256": "70225ea52379e66a49927e34ff1e1e38e5ea6d0e85ca76bddad7c7da494630f2",
+      "bytes": 26631
+    }
+  ],
+  "versioned_review_manifest_sha256": "27ec79ccec910bf4a5e64186ec752f4159a915bb0a4aa071283f9798177f48e4",
+  "initial_failed_strict_output_retained": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-original-contribution-lines-root-application/strict-local-sync.txt",
+  "country_ready": false,
+  "pushed": false
+}

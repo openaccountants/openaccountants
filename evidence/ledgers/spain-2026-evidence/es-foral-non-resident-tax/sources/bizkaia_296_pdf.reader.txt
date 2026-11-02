@@ -1,0 +1,514 @@
+296 eredua                                                                     Modelo 296
+Aurkeztu behar dutenak                                                         Obligación de presentar
+Ez-egoiliarren Errentaren gaineko Zerga ordaintzen dutenek                     La obligación de presentar este modelo será de quienes tengan la
+establezimendu iraunkorrik gabe lortutako errenten gain atxikipena edo         obligación de practicar retención e ingreso a cuenta sobre las rentas
+konturako sarrera egin behar duten subjektuek aurkeztuko dute eredu            obtenidas sin mediación de establecimiento permanente por
+hau, salbu eta Talde Inbertsioko Erakundeen akzioak edo haien kapitala         contribuyentes del Impuesto sobre la Renta de no Residentes (IRNR),
+edo ondarea ordezkatzen duten partaidetzak eskualdatzen edo itzultzen          salvo los obligados a practicar retención e ingreso a cuenta en las
+direnean atxikipena eta konturako sarrera egin behar dutenak.                  transmisiones o reembolsos de acciones o participaciones representativas
+                                                                               del capital o patrimonio de las instituciones de inversión colectiva.
+Subjektu horiek, 12/2013 FAren 31. artikuluan xedatutakoaren arabera,          De acuerdo con lo dispuesto en el artículo 31 de la NF 12/2013, los
+ondokoak dira:                                                                 obligados y las obligadas a presentar serán:
+a) Erakundeak, Espainiako lurraldean egoitza duten errenta-                   a)	Las entidades, incluidas las entidades en régimen de atribución de
+    eratxikipenaren araubideko erakundeak barne direla.                            rentas residentes en territorio español.
+b) Espainiako lurraldean egoitza izan eta ekonomi jarduerak egiten            b)	Las personas físicas residentes en territorio español que realicen
+    dituzten pertsona fisikoak, baldin eta euren jardueretan horrelako             actividades económicas cuando satisfagan o abonen dichas rentas en el
+    errentak ordaintzen badituzte.                                                 ejercicio de su actividad.
+c) Establezimendu iraunkorra dela bide EEEZ ordaindu behar duten              c)	Los y las contribuyentes del IRNR mediante establecimiento
+    zergadunak.                                                                    permanente.
+d) Establezimendu iraunkorrik izan gabe EEEZ ordaindu behar duten             d)	Los y las contribuyentes del IRNR sin establecimiento permanente
+    zergadunak, ordaintzen dituzten lanaren etekinei dagokienez, eta bai           respecto de los rendimientos de trabajo que satisfagan así como
+    atxikipenaren menpean dauden beste etekin batzuei dagokienez ere,              respecto de otros rendimientos sometidos a retención que constituyan
+    etekinok zerbitzugintza, laguntza tekniko, instalazio edo muntaketa            gasto deducible para la obtención de rentas derivadas de prestaciones
+    obra, ingeniaritza kontratu eta, oro har, jarduera edo ustiapen                de servicios, asistencia técnica, obras de instalación o montaje
+    ekonomikoetatik errentak lortzeko gastu kengarriak badira.                     derivadas de contratos de ingeniería y, en general, de actividades o
+                                                                                   explotaciones económicas.
+e) Finantza-aktiboekiko eragiketetan eta Estatuaren Zorraren baloreen         e)	En las operaciones sobre activos financieros y en las transmisiones de
+    eskualdaketetan PFEZri buruzko arautegiaren arabera atxikipena egin            valores de la Deuda del Estado, los obligados y las obligadas a retener
+    behar duten subjektuak.                                                        de acuerdo con la normativa del IRPF.
+f) Sariak ematen dituzten pertsonak eta erakundeak.                           f)	En el caso de premios, la persona o entidad que los satisfaga.
+Halaber aurkeztu behar dute 296 eredua Espainiako lurraldean egoiliarrak       Asimismo, se encuentran también obligadas a presentar el modelo 296 las
+diren edo Espainiako lurraldean ordezkaritza duten entitateek, baldin eta      entidades domiciliadas, residentes o representadas en España, que
+besteren kontura atxikipenaren edo konturako sarreraren peko errentak          paguen por cuenta ajena rentas sujetas a retención o ingreso a cuenta o
+ordaintzen badituzte edo atxikipena egin beharra edo konturako sarrera         que sean depositarias o gestionen el cobro de las rentas de valores que
+eragiten duten baloreen errenten kobrantza kudeatzen badute edo haien          originen la sujeción a retención o ingreso a cuenta.
+gordailuzainak badira.
+12/2013 Foru Arauaren 31. artikuluko 4. zenbakiarekin bat etorriz, ez da       De acuerdo con el apartado 4 del artículo 31 de la NF 12/2013, no se
+atxikipenik eskatuko honako hauek direla-eta:                                  exigirá la retención respecto de:
+1. 12/2013 Foru Arauaren 14. artikuluan ezarritakoaren arabera edo            1.	Las rentas que estén exentas en virtud de lo establecido en el artículo
+    zergapetze bikoitza saihesteko Hitzarmen aplikagarri baten arabera             14 de la NF 12/2013 o en un Convenio para evitar la doble imposición
+    salbuetsita dauden errentak. Hori gorabehera, atxikipena edo                   que resulte aplicable. No obstante lo anterior, sí existirá obligación de
+    konturako sarrera aplikatu beharko zaie 12/2013 Foru Arauaren 14.              practicar retención o ingreso a cuenta respecto de las rentas a las que
+    artikuluko 1. zenbakiko m) eta n) letretan aipatzen diren errentei.            se refieren las letras m) y n) del apartado 1 del artículo 14 de la NF
+                                                                                   12/2013.
+2. Zerga honen establezimendu iraunkorrik gabeko zergadunei                   2.	Las rentas satisfechas o abonadas a contribuyentes por este impuesto
+    ordaindutako errentak, baldin eta zerga ordaindu dela edo errenta              sin establecimiento permanente, cuando se acredite el pago del
+    salbuetsita dagoela egiaztatzen bada.                                          impuesto o la procedencia de la exención.
+3. Sozietateen gaineko Zergari buruzko Foru Arauaren hamalaugarren            3.	Las rentas a que se refiere la letra c) del apartado 4 de la disposición
+    xedapen gehigarriko 4. zenbakiko c) letran aipatzen diren errentak.            adicional decimocuarta de la NF 11/2013, del Impuesto sobre
+                                                                                   Sociedades.
+4. Ondare-irabaziak, hauek izan ezik:                                         4. Las ganancias patrimoniales con excepción de:
+   – Jokoetan, lehiaketetan, zozketetan edo ausazko konbinaketetan               – Los premios derivados de la participación en juegos, concursos, rifas o
+      parte hartzearen ondoriozko sariak. Berdin dio sariok ondasun,                 combinaciones aleatorias estén o no vinculados a la oferta,
+      produktu edo zerbitzu batzuk eskaini, sustatu edo saltzearekin lotuta          promoción o venta de determinados bienes, productos o servicios.
+      dauden.
+   – Bizkaiko ondasun higiezinen eskualdaketa.                                   – La transmisión de bienes inmuebles situados en Bizkaia.
+   – Talde inbertsioko erakundeen kapitalaren edo ondarearen                     – Las rentas derivadas de transmisiones o reembolsos de acciones o
+      adierazgarri diren akzioak edo partaidetzak eskualdatuta edo itzulita          participaciones representativas del capital o patrimonio de las
+      lortutako errentak, Talde Inbertsioko Erakundeei buruzko azaroaren             instituciones de inversión colectiva, excepto las procedentes de
+      4ko 35/2003 Legearen Araudiaren 79. artikuluan araututako funts                participaciones o acciones en los fondos y sociedades regulados por
+      eta sozietateetako partaidetzak edo akzioak itzulita edo eskualdatuta          el artículo 79 del Reglamento de la Ley 35/2003, de 4 de noviembre,
+      lortutako errentak izan ezik.                                                  de instituciones de inversión colectiva.
+5. Pertsona Fisikoen Errentaren gaineko Zergari buruzko Araudiaren 82.        5.	Las rentas recogidas en las letras b), salvo las obtenidas a través de
+    artikuluko b), c), f), g) eta i) letretan aipatutako errentak; b) letran       países o territorios calificados reglamentariamente como paraísos
+    aipatuetako batzuk aurrean esandakotik salbuetsita daude, hain zuzen           fiscales, c), f), g) e i) del artículo 82 del Reglamento del Impuesto sobre
+    ere arau bidez zerga-paradisu kalifikatutako herrialde edo lurraldeen          la Renta de las Personas Físicas.
+    bidez lortzen diren errentak.
+Aurrekoa gorabehera, atxikipena edo konturako sarrera egin beharko da          No obstante lo anterior, existirá obligación de retener o ingresar a cuenta
+kapital soziala murriztu eta ekarpenak itzultzen direnean eta akzio-           en los supuestos de reducción de capital social con devolución de
+jaulkipeneko prima banatzen denean, 439/2007 Errege Dekretuak                  aportaciones y distribución de la prima de emisión de acciones previstos
+                                                                                                                                                                 1
+onetsitako Pertsona Fisikoen Errentaren gaineko Zergari buruzko                en el segundo párrafo de la letra h) del apartado 3 del artículo 75 del
+Araudiaren 75. artikuluko 3. zenbakiko h) letrako bigarren paragrafoan         Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado
+aurreikusten den moduan.                                                       por el Real Decreto 439/2007.
+Aurrean aipatutako zergapeko horiek, gainera, 296 eredua erabiliko dute        El modelo 296 se utilizará por los obligados tributarios y las obligadas
+12/2013 Foru Arauaren 31. artikuluko 4. zenbakian xedatutakoaren               tributarias citados y citadas anteriormente en los casos en que de acuerdo
+arabera atxikipenik edo konturako sarrerarik egin ezin den kasuetan.           con lo dispuesto en el apartado 4 del artículo 31 de la NF 12/2013 no
+                                                                               proceda practicar retención o ingreso a cuenta.
+Hala ere, aurreko paragrafoan xedatutakoari dagokionez, ez dira kontuan        No obstante, no se tendrán en cuenta, a efectos de lo dispuesto en el
+hartuko errenta hauek:                                                         párrafo anterior, las siguientes rentas:
+1. Zergari buruzko Foru Arauaren 14.1.a) artikuluan aipatzen diren            1.	Las rentas a que se refiere el artículo 14.1.a) de la Norma Foral del
+    errentak.                                                                      Impuesto.
+2. Pertsona fisiko edo erakunde ez-egoiliarrek establezimendu                 2.	Las rentas derivadas de valores emitidos en España por personas
+    iraunkorrik gabe Espainian jaulkitako baloreetatik sortutako errentak,         físicas o entidades no residentes sin mediación de establecimiento
+    dena dela ordainketan agente gisa diharduten edo baloreen                      permanente, cualquiera que sea el lugar de residencia de las
+    jaulkipenean edo eskualdaketan bitartekari gisa aritzen diren                  instituciones financieras que actúen como agentes de pago o medien en
+    finantza-erakundeen egoitza dagoen tokia.                                      la emisión o transmisión de los valores.
+3. Ez-egoiliarren kontuen etekinak, Espainiako Bankuak edo                    3.	Los rendimientos de las cuentas de no residentes que se satisfagan a
+    atzerriarekiko transakzio ekonomikoei buruzko araudian aipatzen                contribuyentes por este Impuesto, sin establecimiento permanente
+    diren erakunde erregistratuek Espainiako lurraldean establezimendu             situado en territorio español, por el Banco de España o por las
+    iraunkorrik ez duten zerga honen zergadunei ordaintzen dizkietenak.            entidades registradas a que se refiere la normativa de transacciones
+                                                                                   económicas con el exterior.
+4. Estatuaren eta autonomia erkidegoen idazpenetako zorraren                  4.	Los intereses de la Deuda del Estado y de las Comunidades Autónomas
+    interesak, eurak ordaintzeko edo atxikipenak itzultzeko prozedura              en Anotaciones, sujetos a un procedimiento especial de pago de los
+    bereziari lotuak.                                                              mismos o de devolución de retenciones.
+5. Zergari buruzko Araudiaren 14. artikuluko 3. zenbakiko b) eta c)           5.	Las rentas exceptuadas de la obligación de retener y de ingresar a
+    letretan aipatzen diren errentak, atxikipena eta konturako sarrera egin        cuenta enumeradas en las letras b) y c) del apartado 3 del artículo 14
+    beharretik salbuetsita daudenak.                                               del Reglamento del Impuesto.
+6. Sozietateen gaineko Zergari buruzko Foru Arauaren hamalaugarren            6.	Las rentas a que se refiere la letra c) del apartado 4 de la disposición
+    xedapen gehigarriko 4. zenbakiko c) letran aipatzen diren errentak.            adicional decimocuarta de la Norma Foral del Impuesto sobre
+                                                                                   Sociedades.
+
+
+Aurkezteko moduak                                                              Formas de presentación
+Aitorpena inprimakian ala ordenagailu bidez zuzenean irakurtzeko               La presentación se realiza en impreso o en soporte directamente legible
+moduko euskarrian aurkezten den adieraziko da.                                 por ordenador.
+Zuzenean ordenagailu bidez irakurtzeko moduko euskarrian aurkeztu              Será obligatoria la presentación en soporte directamente legible por
+behar dira, nahitaez, 25 aitortu baino gehiago jasotzen dituzten               ordenador de aquellas declaraciones que contengan más de 25 declarados
+aitorpenak.                                                                    y declaradas.
+
+
+Aurkezteko epealdia                                                            Plazo de presentación
+Inprimakia urte bakoitzeko urtarrilaren 1etik 31ra bitartean aurkeztu          Del 1 al 31 de enero de cada año, en relación con las cantidades retenidas
+behar da, aurreko urtean atxikitako eta kontura sartutako kopuruei             y los ingresos a cuenta efectuados que correspondan al año natural
+dagokienez, bai inprimakian, bai ordenagailuz zuzenean irakurtzeko             inmediatamente anterior, tanto la presentación en impreso, como la
+moduko euskarrian.                                                             presentación en soporte directamente legible por ordenador.
+Inprimakia Bizkaiko Foru Aldundiko Ogasun eta Finantza Sailean edo             La presentación podrá realizarse en el Departamento de Hacienda y
+edozein erakunde laguntzaileren bitartez (bankua edo aurrezki kutxa)           Finanzas de la Diputación Foral de Bizkaia o a través de cualquier entidad
+aurkeztu ahal izango da, urteko azken epeari dagokion atxikipen eta            colaboradora (Banco o Caja de Ahorros), conjuntamente con la
+konturako sarreren aitorpen-agiriarekin batera (216 eredua), aipaturiko        declaración-documento de ingreso de retenciones e ingresos a cuenta
+aitorpen hori ordaintzeko ateratzen bada eta diru-sarrera aipaturiko           (modelo 216) correspondiente al último período del año, siempre que
+erakundean egiten bada.                                                        dicha declaración resulte a ingresar y el ingreso se efectúe en la
+                                                                               mencionada entidad.
+
+
+Agiriak                                                                        Documentación
+Zerga preskribatu bitartean, urteko laburpena aurkeztu behar dutenek           Los obligados y las obligadas a la presentación del resumen anual
+Bizkaiko Foru Aldundiko Ogasun eta Finantza Sailaren esku gordeko              conservarán a disposición del Departamento de Hacienda y Finanzas de la
+dituzte egindako atxikipenak frogatzeko agiriak.                               Diputación Foral de Bizkaia, durante el período de prescripción del
+                                                                               impuesto, la documentación que justifique las retenciones practicadas.
+Horri dagokionez, zergadunaren bizilekua dela eta, Espainiako barru-           A estos efectos, cuando no se practique la retención por aplicación de las
+arauetako salbuespenak aplikatzearen ondorioz atxikipenik egiten ez            exenciones de la normativa interna española, por razón de la residencia
+bada, egoitza-herrialdeko agintaritza fiskalak luzatutako egoitza-ziurtagiri   del o de la contribuyente, se justificará con un certificado de residencia,
+baten bidez frogatu beharko da inguruabar hori.                                expedido por las autoridades fiscales del país de residencia.
+Espainiak zergapetze bikoitza eragozteko sinatu duen Hitzarmen bateko          Cuando no se practique la retención por aplicación de las exenciones de un
+salbuespenak aplikatzearen ondorioz atxikipenik egiten ez bada, edo            Convenio para evitar la doble imposición suscrito por España o se
+Hitzarmenean zehaztutako ezarpen-mugekin egiten bada atxikipena,               practique con los límites de imposición fijados en el mismo, se justificará
+orduan egoitza fiskalaren ziurtagiria aurkeztu beharko da hori frogatzeko.     con un certificado de residencia fiscal expedido por la autoridad fiscal
+Agintaritza fiskal eskudunak luzatutakoa izango da ziurtagiri hori, eta        correspondiente, en el que deberá constar expresamente que el o la
+bertan beren beregi adieraziko da zergaduna egoiliarra dela Hitzarmenean       contribuyente es residente en el sentido definido en el Convenio. No
+zehaztutako zentzuan. Hala ere, atxikipena Hitzarmen batean finkatutako        obstante, cuando se practique la retención aplicando un límite de
+ezarpen-muga ezarriz egiten bada, eta Hitzarmena garatzen duen                 imposición fijado en un Convenio desarrollado mediante una Orden en la
+aginduan formulario jakin bat erabili beharra xedatzen bada, formularioa       que se establezca la utilización de un formulario específico, se justificará
+bera aurkeztuko da, ziurtagiriaren ordez, frogagiri gisa.                      con el mismo en lugar del certificado.
+                                                                                                                                                              2
+Aurreko lerroaldeetan aipatutako egoitza-ziurtagiriek urtebeterako            Los certificados de residencia a que se refieren los párrafos anteriores,
+balioko dute, luzatzen diren dataz geroztik.                                  tendrán un plazo de validez de un año a partir de la fecha de su expedición.
+Zerga aldez aurretik ordaindu delako, atxikipenik egiten ez bada,             Cuando no se practique retención por haberse efectuado el pago del
+zergadunak edo bere ordezkariak egindako aitorpena aurkeztuko da              impuesto, se acreditará mediante la declaración del impuesto
+frogagiri gisa, hots, errenta horren gaineko zergari dagokion aitorpena.      correspondiente a dicha renta presentada por el o la contribuyente o su
+                                                                              representante.
+
+
+Osaera                                                                        Composición
+296 ereduak osagai hauek ditu: laburpen-orri bat eta barruko orri batzuk      El modelo 296 se compone de una hoja-resumen y de hojas interiores de
+(azken hauetan hartzaileen xehetasunak jasotzen dira). Laburpen-orria         detalle de los perceptores o las perceptoras. La hoja-resumen deberá ser
+kasu guztietan bete eta aurkeztu behar da, barruko orriak aurkezteko          cumplimentada y presentada en todo caso, cualquiera que sea el tipo y la
+modua edozein delarik ere: paperean (inprimakia) edo zuzenean                 modalidad de presentación de las hojas interiores: en papel (modalidad
+ordenagailu bidez irakurtzeko moduko euskarrian.                              impresa) o en soporte directamente legible por ordenador.
+
+
+Laburpen-orria betetzeko jarraibideak                                         Cumplimentación Hoja resumen
+Ekitaldia                                                                     Ejercicio
+Aitorpenaren ekitaldiaren lau zifrak idatzi behar dira.                       Se consignarán las cuatro cifras del ejercicio al que corresponde la
+                                                                              declaración.
+
+Aitorpen osagarria                                                            Declaración complementaria
+Aitorpena osagarria denean, hau da, aitorpenaren xedea ekitaldi bereko        Se marcará una X en el supuesto de una declaración complementaria, es
+beste aitorpen batean, dagoeneko aurkeztuta dagoen batean, sartu behar        decir, cuando la declaración tenga por objeto incluir percepciones que,
+eta ahaztu diren hartukizun batzuk sartzea denean, X batez adieraziko da.     debiendo haber sido incluidas en otra declaración del mismo ejercicio
+Aitorpen osagarrian lehengo aitorpenean ahaztu diren hartukizunak soilik      presentada con anterioridad, hubieran sido omitidas en la misma. En la
+sartuko dira.                                                                 declaración complementaria solamente se incluirán las percepciones
+                                                                              omitidas que motivan su presentación.
+
+Ordezko aitorpena                                                             Declaración sustitutiva
+Aitorpena ordezkoa bada, hau da, aitorpenaren xedea aurreko beste bat         Se marcará una X en el supuesto de una declaración sustitutiva, es decir,
+deuseztu eta erabat ordeztea bada, hartan datu batzuk oker adierazi           cuando la declaración tenga por objeto anular y sustituir completamente a
+direlako, X batez adieraziko da.                                              otra declaración anterior en la cual se hubieran incluido datos inexactos o
+                                                                              erróneos.
+
+Aitortzailea                                                                  Declarante
+Identifikazio fiskalerako zenbakiaren (IFZ) agiriaren fotokopia aurkeztu      Se adjuntará con la declaración una fotocopia acreditativa del número de
+behar da aitorpenarekin batera, eta gainerako identifikazio datuak jarri      identificación fiscal (NIF) consignando, además, los datos identificativos
+behar dira atal honetako tarte egokietan.                                     en los espacios correspondientes de este apartado.
+Lege ordezkariaren IFZrako laukia. Lauki hau aitortzailea 14 urtetik          Casilla NIF Representante legal. Esta casilla se cumplimentará
+beherakoa denean beteko da soil-soilik. Horrelakoetan, legezko                exclusivamente cuando la o el declarante sea una o un menor de 14 años,
+ordezkariaren (aita, ama edo tutorea) IFZ idatzi behar da laukian.            debiendo consignarse en esta casilla el NIF de su representante legal
+                                                                              (padre, madre, tutor o tutora).
+
+Aitorpenean sartutako datuen laburpena                                        Resumen de los datos incluidos en la declaración
+Barruko orrietan (edo euskarrian) jarritako datuen laburpena jasoko da        En las diferentes casillas de este apartado se hará constar el resumen de
+atal honetako laukietan, honela banatuta:                                     los datos consignados en las hojas interiores (o en el soporte) con arreglo a
+                                                                              la siguiente distribución:
+ 01 laukia, Aitortuak guztira. Barruko orri guztietan (edo euskarrian)        Casilla 01 , Número total de declarados/as. Consigne el número total de
+aipatutako aitortuen kopuru osoa (erregistroak) jarri behar da. Aitortu       declarados y declaradas (registros) relacionados en todas las hojas interiores
+bera erregistro batean baino gehiagotan agertzen bada, zenbat aldiz           (o en el soporte). Si un mismo declarado o declarada figura en varios registros,
+agertzen den beste hainbatetan jarriko da.                                    se computará tantas veces como figure relacionado o relacionada.
+ 02 laukia, Atxikipenen eta konturako sarreren oinarria. Barruko orri         Casilla 02 , Base de retenciones e ingresos a cuenta. Consigne la suma total
+guztietan (edo euskarrian) Atxikipenen eta konturako sarreren oinarria        de las cantidades reflejadas en la casilla Base de retenciones e ingresos a
+laukian jasotako kopuruen batura osoa jarri behar da.                         cuenta de todas las hojas interiores (o del soporte).
+ 03 laukia, Atxikipenak eta konturako sarrerak. Barruko orri guztietan (edo   Casilla 03 , Retenciones e ingresos a cuenta. Consigne la suma total de las
+euskarrian) Atxikipenak eta konturako sarrerak laukian jasotako kopuruen      cantidades reflejadas en la casilla Retenciones e ingresos a cuenta de todas
+batura osoa jarri behar da.                                                   las hojas interiores (o del soporte).
+ 04 laukia, Sartutako atxikipenak eta konturako sarrerak. Barruko orri        Casilla 04 , Retenciones e ingresos a cuenta ingresados. Consigne la suma
+guztietan (edo euskarrian) Atxikipenak eta konturako sarrerak laukian         total de las cantidades reflejadas en la casilla Retenciones e ingresos a
+jasotako kopuruetatik, zenbaiten batura jarri behar da. Hona hemen batu       cuenta de todas las hojas interiores (o del soporte) que correspondan a
+beharrekoak: Gakoa laukian 3-tik 25-erako balore bat jarri zaien              perceptores o perceptoras (registros) en los que se haya consignado en la
+hartzaileei (erregistroak) dagozkienak, baita Gakoa laukian 1 edo 2 balore    casilla Clave los valores 3 a 25, así como también aquellos en los que se
+eta aldi berean Ordainketa laukian 1 jarri zaien hartzaileei (erregistroak)   haya consignado en la casilla Clave los valores 1 o 2 y, simultáneamente, en
+dagozkienak ere.                                                              la casilla Pago un 1.
+
+
+Barruko orriak betetzeko jarraibideak                                         Cumplimentación: Hojas interiores
+Aitortzailearen identifikazio-datuak                                          Datos identificativos del o de la declarante
+Aitortzailearen IFZ. Aitortzailearen identifikazio fiskaleko zenbakia(IFZ)    Casilla NIF declarante. Se hará constar el NIF del o de la declarante.
+jarri behar da.
+                                                                                                                                                             3
+Aitortzailearen deiturak eta izena, edo sozietatearen izena edo izendazioa.   Casilla Apellidos y nombre, denominación o razón social declarante. Se
+Aitortzailearen identifikazio-datuak jarri behar dira.                        consignarán los datos identificativos del o de la declarante.
+Ekitaldia. Aitorpena dagokion ekitaldiaren lau zifrak jarriko dira.           Casilla Ejercicio. Se anotarán las cuatro cifras del ejercicio al que
+                                                                              corresponda la declaración.
+Orri zk. Barruko orri bakoitzaren hurrenkera-zenbakia adieraziko da, bai      Casilla Hoja n.º. Se indicará el número de orden de cada una de las hojas
+eta aitorpeneko orri guztien kopurua ere. Adibidez: aitorpenak barruko 3      interiores y el número total de hojas que se incluyen en la declaración. Por
+orri baditu, honela adieraziko dira: 1/3, 2/3 eta 3/3.                        ejemplo: si la declaración consta de 3 hojas interiores, en cada una de ellas
+                                                                              se indicará: 1/3, 2/3 y 3/3.
+
+Aitortuen datuak                                                              Datos de los declarados y las declaradas
+Aitortuaren IFZrako laukia. Hartzaileak Espainiako IFZ bat baldin badu,       Casilla NIF declarado/a. Si la perceptora o el perceptor dispone de NIF
+aitortu bakoitzaren identifikazio fiskaleko zenbakia jarriko da, IFZ          asignado en España, se consignará el número de identificación fiscal de
+arautzen duten arauekin bat etorriz.                                          cada declarada o declarado, de acuerdo con las reglas previstas en la
+                                                                              normativa reguladora del NIF
+Ordezkariaren IFZrako laukia. Aitortua 14 urtetik beherakoa bada eta          Casilla NIF representante. Si el declarado o la declarada es menor de 14
+haren ordezkariak Espainiako IFZ bat baldin badu, IFZ arautzen duen           años y su representante dispone de NIF asignado en España, de acuerdo
+araudian jasotakoaren arabera, lauki honetan legezko ordezkariaren (aita,     con las reglas previstas en la normativa reguladora del NIF, se consignará
+ama edo tutorea) IFZ idatziko da.                                             en esta casilla el NIF de su representante legal (padre, madre, tutor o
+                                                                              tutora).
+F/J laukia. F idatziko da, aitortua pertsona fisikoa bada; eta J, pertsona    Casilla F/J. Se consignará una F si el declarado o la declarada es una
+juridikoa edo erakundea bada.                                                 persona física y una J si se trata de una persona jurídica o entidad.
+Hartzailearen deiturak eta izena, edo sozietatearen izena edo izendazioa:     Casilla Apellidos y nombre, denominación o razón social del perceptor/a.
+A) Pertsona fisikoen kasuan, lehenengo deitura, bigarren deitura eta izen    A)	En el caso de personas físicas, se consignarán, por este mismo orden, el
+    osoa jarriko dira, hurrenkera horretan, hain zuzen ere. Hartzailea            primer y segundo apellidos y el nombre completo. Si la perceptora o el
+    adingabekoa bada, haren deiturak eta izena jarriko dira lauki honetan.        perceptor es menor de edad, se consignarán en esta casilla los apellidos
+                                                                                  y nombre de la o del menor de edad.
+B) Pertsona juridikoak edo errenten eratxikipen araubideko erakundeak        B) En el caso de personas jurídicas y entidades en régimen de atribución
+    badira, erakundearen sozietate-izena edo izendazio osoa jarriko da,           de rentas, se consignará la razón social o la denominación completa de
+    anagramarik gabe.                                                             la entidad, sin anagramas.
+Sortzapenaren data. Errenta noiz sortu den jarriko da (eguna/hila/urtea).     Casilla Fecha de devengo. Se consignará la fecha en que se ha devengado la
+                                                                              renta (día/mes/año).
+Izatea. Lauki hau kasu guztietan bete behar da; hartzaile bakoitzari          Casilla Naturaleza. Esta casilla deberá ser cumplimentada en todo caso, y
+ordaindutako errenta edo etekin mota adierazi behar da hemen, ondoko          en ella se indicará la modalidad de renta o rendimiento satisfecho a cada
+hauetatik dagokion gakoa jarriz:                                              perceptor o a cada perceptora consignándose la clave que corresponda
+                                                                              según el siguiente detalle:
+D. Ordaindutako errenta edo etekina diruzkoa bada.                            D. Si la renta o rendimiento satisfecho es de tipo dinerario.
+E. Ordaindutako errenta edo etekina gauzazkoa bada.                           E. Si la renta o rendimiento satisfecho es en especie.
+Gakoa. Errenta motari dagokion gakoa jarriko da, ondoko zerrenda honen        Casilla Clave. Se consignará la clave que corresponda en función del tipo
+arabera:                                                                      de renta, según la relación de claves numéricas siguientes:
+ 1. Erakundeen fondo propioetan partaidetza izatearen ondoriozko              1. Dividendos y otras rentas derivadas de participación en fondos
+     dibidendu eta beste errenta batzuk.                                           propios de entidades.
+ 2. Kapital propioak gainerakoei lagatzearen ondoriozko korritu eta           2. Intereses y otras rentas derivadas de la cesión a terceros o terceras
+     beste errenta batzuk.                                                         de capitales propios.
+ 3. Patenteen, fabrika edo merkataritza marken, marrazkien edo                3. Cánones derivados de patentes, marcas de fábrica o de comercio,
+     ereduen, planoen, formulen edo prozedura sekretuen ondoriozko                 dibujos o modelos, planos, fórmulas o procedimientos secretos.
+     kanonak.
+ 4. Obra literarioen eta artelanen gaineko eskubideen ondoriozko              4. Cánones derivados de derechos sobre obras literarias y artísticas.
+     kanonak.
+ 5. Obra zientifikoen gaineko eskubideen ondoriozko kanonak.                  5. Cánones derivados de derechos sobre obras científicas.
+ 6. Film zinematografikoen eta grabatutako entzun zein ikusizko obren         6. Cánones derivados de derechos sobre películas cinematográficas y
+     gaineko eskubideen ondoriozko kanonak.                                        obras sonoras o visuales grabadas.
+ 7. Industriako, merkataritzako edo zientzien arloko esperientziei            7. Cánones derivados de informaciones relativas a experiencias
+     buruzko informazioaren ondoriozko kanonak (know-how).                         industriales, comerciales o científicas (know-how).
+ 8. Programa informatikoen gaineko eskubideen ondoriozko kanonak.             8. Cánones derivados de derechos sobre programas informáticos.
+ 9. Laga daitezkeen eskubide pertsonalen (irudi-eskubideak, esaterako)        9. Cánones derivados de derechos personales susceptibles de cesión,
+     ondoriozko kanonak.                                                           tales como los derechos de imagen.
+10. Ekipo industrialen, merkataritzakoen eta zientifikoen ondoriozko         10. Cánones derivados de equipos industriales, comerciales o científicos.
+     kanonak.
+11. Lehenago aipatu ez diren beste kanon batzuk.                             11. Otros cánones no relacionados anteriormente.
+12. Kapitalizazio eragiketetako higikorren kapitalaren etekinak edota        12. Rendimientos de capital mobiliario de operaciones de capitalización y
+     bizitza zein elbarritasuneko aseguru-kontratuenak.                            de contratos de seguros de vida o invalidez.
+13. Higigarrien kapitalaren beste etekin batzuk, aurrean aipatu ez           13. Otros rendimientos de capital mobiliario no citados anteriormente.
+     direnak.
+14. Ondasun higiezinen etekinak.                                             14. Rendimientos de bienes inmuebles.
+15. Enpresa jardueren errentak.                                              15. Rentas de actividades empresariales.
+16. Laguntza teknikoaren ondoriozko errentak.                                16. Rentas derivadas de prestaciones de asistencia técnica.
+17. Jarduera artistikoen errentak.                                           17. Rentas de actividades artísticas.
+18. Kirol-jardueren errentak.                                                18. Rentas de actividades deportivas.
+                                                                                                                                                           4
+19. Lanbide-jardueren errentak.                                              19. Rentas de actividades profesionales.
+20. Lanaren errentak.                                                        20. Rentas del trabajo.
+21. Pentsioak eta hartzeko pasiboak.                                         21. Pensiones y haberes pasivos.
+22. Administratzaileen eta administrazio kontseiluetako kideen               22. Retribuciones de administradores y miembros de consejos de
+     ordainsariak.                                                                  administración.
+23. Berraseguru-eragiketen etekinak.                                         23. Rendimientos derivados de operaciones de reaseguros.
+24. Itsas edo aire nabigazioko erakundeak.                                   24. Entidades de navegación marítima o aérea.
+25. Bestelako errentak.                                                      25. Otras rentas.
+Azpigakoa. Atxikipena edo konturako sarrera kalkulatzeko kontutan hartu       Casilla Subclave. Se consignará la que corresponda, en función de las
+diren inguruabarrei dagokiena jarriko da, zerrenda honen arabera:             circunstancias tenidas en cuenta para el cálculo de la retención o ingreso a
+                                                                              cuenta, según la relación siguiente:
+ 1. 12/2013 Foru Arauko 25. artikuluan ageri diren tributaziorako tasa        1. Retención practicada a los tipos generales o escalas de tributación del
+     orokor edo eskaletan egindako atxikipena.                                     art. 25 de la Norma Foral 12/2013.
+ 2. Hitzarmenetako zergapetze-mugak aplikatuz egindako atxikipena.            2. Retención practicada aplicando límites de imposición de Convenios.
+ 3. Barruko salbuespena (12/2013 FA, 14. art.).                               3. Exención interna (art. 14 de la Norma Foral 12/2013).
+ 4. Hitzarmen bat aplikatzearen ondoriozko salbuespena.                       4. Exención por aplicación de un Convenio.
+ 5. Atxikipenik ez, zergadunak edo beraren ordezkariak zerga aurrez           5. Sin retención por previo pago del impuesto por el o la contribuyente o
+     ordaindu dutelako.                                                            su representante.
+ 6. Aitorpeneko hartzailea jabetza intelektualaren gaineko eskubideen         6. El perceptor declarado es una entidad extranjera de gestión colectiva
+     kudeaketa kolektiborako atzerriko erakunde bat da; atxikipena egin            de derechos de la propiedad intelectual, habiéndose practicado
+     da —zergapetze-muga aplikatuta— edo, bestela, salbuespena                     retención aplicando el límite de imposición, o la exención, de un
+     —Hitzarmen bat aplikatuz—.                                                    Convenio.
+ 7. Hartzailea Pertsona Fisikoen Errentaren gaineko Zergaren zergaduna        7. El perceptor o la perceptora es contribuyente del Impuesto sobre la
+     da, PFEZari buruzko Foru Arauko 4.3. artikuluan aipatzen den                  Renta de las Personas Físicas del régimen especial de tributación del
+     Ez-egoiliarren Errentaren gaineko Zergaren tributaziorako araubide            Impuesto sobre la Renta de no Residentes, a que se refiere el artículo
+     berezian.                                                                     4.3 de la Norma Foral del IRPF.
+ 8. Aitorpeneko hartzailea Espainiako inbertsio kolektiboko erakundeen        8. La perceptora declarada es una entidad residente en el extranjero
+     akzioak edo partaidetzak merkaturatzen dituen atzerriko erakunde              comercializadora de acciones o participaciones de instituciones de
+     bat da; atxikipena egin da, eta horretarako aplikatu den Hitzarmeneko         inversión colectiva españolas, habiéndose practicado retención
+     zergapetze-muga txikiagoa da Ez-egoiliarren Errentaren gaineko                aplicando un límite de imposición fijado en el Convenio inferior al
+     Zergari buruzko Foru Arauko 25. artikuluan ezarritakoa baino,                 previsto en el artículo 25 de la Norma Foral del Impuesto sobre la
+     arautegian ezarritako prozedura bereziarekin bat etorriz.                     Renta de no Residentes, conforme al procedimiento especial previsto
+                                                                                   en la normativa.
+ 9. Aitorpeneko hartzailea Espainiako talde inbertsioko erakundeen            9. La perceptora declarada es una entidad residente en el extranjero
+     akzioak edo partaidetzak merkaturatzen dituen atzerriko erakunde              comercializadora de acciones o participaciones de instituciones de
+     bat da; atxikipena egin da, Ez-egoiliarren Errentaren gaineko Zergari         inversión colectiva españolas, habiéndose practicado retención
+     buruzko Foru Arauko 25. artikuluan zehaztutako karga-tasa                     aplicando el tipo de gravamen previsto en el artículo 25 de la Norma
+     aplikatuta, arautegian ezarritako prozedura bereziarekin bat etorriz.         Foral del Impuesto sobre la Renta de no Residentes, conforme al
+                                                                                   procedimiento especial previsto en la normativa.
+10. Ez-egoiliarren Errentaren gaineko Zergari buruzko Foru Arauko 36.2       10. Ingreso a cuenta a que se refiere el artículo 36.2 de la Norma Foral del
+     artikuluan aipatzen den konturako sarrera, errentak esleitzeko                Impuesto sobre la Renta de no Residentes, realizado por una entidad
+     araubidean dagoen erakunde batek ez-egoiliarra den kide bati                  en régimen de atribución de rentas en relación con la renta atribuida a
+     esleitutako errentari dagokionez egindakoa.                                   una o un miembro no residente.
+11. Aitortutako hartzailea da ordaintzaileari Ez-egoiliarren Errentaren      11. El perceptor declarado o perceptora declarada es un o una
+     gaineko Zergari buruzko foru arauaren 32. artikuluan ezarritako               contribuyente que ha acreditado al pagador o pagadora haber hecho
+     prozedura erabili duela egiaztatu dion zergaduna.                             uso del procedimiento previsto en el artículo 32 de la Norma Foral del
+                                                                                   Impuesto sobre la Renta de no Residentes.
+Aurreko zerrendako 6, 7, 8, 9, 10 eta 11 zenbakietan aipatzen diren           En los supuestos a que se refieren los números 6, 7, 8, 9, 10 y 11 de la
+kasuetan azpigako berezi hauek jarriko dira beti, gainerako azpigakoak        relación anterior, se consignarán siempre estas subclaves específicas sin
+aintzat hartu gabe.                                                           tener en consideración el resto de subclaves.
+Atxikipenen eta konturako sarreren oinarria. Zergari buruzko Araudiaren 17.   Casilla Base de retenciones e ingresos a cuenta. La base para el cálculo de la
+artikuluan aurreikusitakoa izango da atxiki edo sartu beharrekoa              obligación de retener o ingresar a cuenta será la prevista en el art. 17 del
+kalkulatzeko oinarria. Oinarri hori bat dator 12/2013 Foru Arauko 24.         Reglamento del Impuesto. Esta base coincide con la base imponible del
+artikuluan xedatutakoaren arabera zehaztutako zerga-oinarriarekin, arau       impuesto determinada conforme establece el art. 24 de la Norma Foral
+horren 24.2 eta 33.7 jasotako gastu kenkorrak kontutan hartu gabe.            12/2013, pero sin tener en consideración los gastos deducibles
+                                                                              contemplados en los artículos 24.2 y 33.7 de la citada norma.
+Atxikipen %. Kasu bakoitzean aplikaturiko atxikipenaren edo konturako         Casilla % retención. Se consignará el porcentaje de retención o de ingreso a
+sarreraren ehunekoa adieraziko da. 12/2013 Foru Arauko 25. artikuluan         cuenta aplicado en cada caso. El % de retención aplicable será el tipo de
+errenta-motaren arabera ezarritako zerga- tasa izango da aplikatu             gravamen establecido en el art. 25 de la Norma Foral 12/2013 en función
+beharreko atxikipenaren ehunekoa, edota, zergapetze bikoitza eragozteko       del tipo de renta o, si resulta aplicable un Convenio para evitar la doble
+Hitzarmen bat aplikatu behar bada, Hitzarmenean aurreikusitako ezarpen-       imposición, el límite de imposición previsto en el Convenio. Cuando no se
+muga. Atxikipenik edo konturako sarrerarik egin ez bada, edo salbuetsitako    haya practicado retención o ingreso a cuenta o se trate de rentas exentas,
+errentak badira, dela arautegi bidez dela Hitzarmen bidez, %0 jarriko da.     tanto por normativa interna como por Convenio, se indicará un 0%.
+Pentsioak direnean, halakoei 25.1.b) artikuluko karga eskala aplikatzen       Tratándose de pensiones, a las que resulta aplicable la escala de gravamen
+baitzaie, eskala hori pentsioaren urteko kopuruari aplikatzearen              del art. 25.1 b), se indicará el tipo medio resultante de aplicar dicha escala
+ondoriozko batez besteko tasa adieraziko da.                                  a la cuantía anual de la pensión.
+Atxikipenak eta konturako sarrerak. Atxikipenen eta konturako sarreren        Casilla Retenciones e ingresos a cuenta. Se consignará el resultado de aplicar
+oinarria laukian jarritako kopuruari Atxikipena (%) laukian adierazitako      a la cuantía consignada en la casilla Base de retenciones e ingresos a cuenta
+ehunekoa aplikatuta ateratako emaitza jarriko da.                             el porcentaje de retención o ingreso a cuenta consignado en la casilla
+                                                                              % retención.
+                                                                                                                                                               5
+Gakoa laukian 1 edo 2 jarri dituzten hartzaileen datu espezifikoak             Datos específicos de perceptores o perceptoras en los que se
+                                                                               hayan consignado los valores 1 o 2 en la casilla Clave
+Oharra: jarraian adieraziko diren laukietako datu espezifikoak ez dira jarri   Nota: los datos específicos de las casillas que a continuación se relacionan,
+behar, eta laukiok ez dira bete behar, baldin eta hartzaileari 3-etik          así como tales casillas, no deben ser objeto de cumplimentación, en ningún
+25-erako edozein balore jarri bazaie Gakoa laukian.                            caso, cuando se trate de perceptores o perceptoras en cuya casilla Clave se
+                                                                               hayan consignado los valores 3 a 25.
+Bitartekaria. Lauki honetan, X honako kasu hauetan jarriko da soil-soilik:     Casilla Mediador/a. Se consignará una X en esta casilla exclusivamente en
+aitorpena egin duen hartzailearen izaera Espainian helbidea, egoitza edo       aquellos supuestos en que la naturaleza de la perceptora declarada sea la
+ordezkaritza duen entitate batena bada, atxikipena dagokien errentak           de una entidad domiciliada, residente o representada en España, que
+inoren kontura ordaintzen baditu, edota dagokion etekina edo errenta           pague por cuenta ajena rentas sujetas a retención o que sea depositaria o
+sortzen duten balore errenten kobrantzaren gordailuzain edo kudeatzaile        gestione el cobro de las rentas de valores que originan el rendimiento o la
+bada. Aurrekoa ez beste kasu guztietan (hau da, aitortutako hartzailea         renta correspondiente. En los demás supuestos que no sean el
+Ez-egoiliarren Errentaren gaineko zergaduna bada eta eredu honetan             contemplado anteriormente, es decir, cuando la perceptora declarada o el
+jasotako atxikipen eta konturako sarrerak benetan egin bazaizkio), ez da       perceptor declarado sea contribuyente por el Impuesto sobre la Renta de
+beteko.                                                                        no Residentes que haya soportado efectivamente las retenciones o
+                                                                               ingresos a cuenta objeto de este modelo, no se cumplimentará.
+Kodea. Ondorengo zerrendan datozen zenbakietariko edozein jarriko da           Casilla Código. Se consignará en esta casilla cualquiera de los números que
+lauki honetan, Jaulkitzailearen kodea laukiaren edukia identifikatzeko         a continuación se relacionan con el objeto de identificar el contenido de la
+helburuarekin.                                                                 casilla Código emisor.
+1. Jaulkitzailearen kodea IFZ bati dagokio.                                    1. El código emisor corresponde a un NIF.
+2. Jaulkitzailearen kodea ISIN kode bati dagokio.                              2. El código emisor corresponde a un código ISIN.
+3. Jaulkitzailearen kodea ISINik ez duten atzerriko baloreei dagokie;         3.	El código emisor corresponde a valores extranjeros que no tienen
+    jaulkitzaileak ez du IFZrik                                                    asignado código ISIN, cuyo emisor o cuya emisora no dispone de NIF.
+Jaulkitzailearen kodea. Jaulkitzailea identifikatzeko beteko da lauki hau,     Casilla Código emisor. Se cumplimentará esta casilla para identificar al
+identifikazio hau aitortzailearenarekin bat ez badator. Kodea laukian 1        emisor o emisora en aquellos supuestos en que esta identificación no
+idatzi bada, jaulkitzailearen IFZ jarriko da. Kodea laukian 2 idatzi bada,     coincida con la del o de la declarante. En el caso de haber consignado en la
+ISIN kodea jarriko da. Kodea laukian 3 idatzi bada, ZXX kodea jarriko da,      casilla Código un 1 se hará constar el NIF del emisor o de la emisora. En el
+XX herrialde jaulkitzailearen kodea delarik (indarrean dagoen kodeen           caso de haber consignado en la casilla Código un 2 se hará constar el
+zerrenda); Nazioz gaindiko Erakundeek jaulkitako tituluen kasuan (Mundu        código ISIN. En el caso de haber consignado en la casilla Código un 3 se
+Bankua eta abar), ZNN jarriko da.                                              reflejará la clave ZXX, siendo XX el código del país emisor (ver relación de
+                                                                               códigos de países vigentes); en el caso de títulos emitidos por Organismos
+                                                                               Supranacionales (Banco Mundial, etc) se consignará ZNN.
+Ordainketa. Ondorengo zerrendan datozen zenbakietariko edozein                 Casilla Pago. Se consignará cualquiera de los números que a continuación
+idatziko da, aitortzaileak egin duen ordainketa hurrengo kontzeptu             se relacionan para indicar si el pago realizado por el o la declarante ha sido
+hauetariko bategatik izan den adierazteko:                                     por uno de los siguientes conceptos:
+1. Jaulkitzaile modura.                                                        1. Como emisor o emisora.
+2. Bitartekari modura.                                                         2. Como mediador o mediadora.
+Jaulkitzaile atzerritarren baloreen ordainketa kasuan, gako hau 1 izango       En el caso de pago de valores de emisores extranjeros o emisoras
+da (jaulkitzaile-atxikitzaile modura).                                         extranjeras, esta clave será 1 (como emisor/a-retenedor/a).
+Kode mota. Ondorengo zerrendan datozen letretariko edozein idatziko da         Casilla Tipo código. Se cumplimentará en esta casilla cualquiera de las
+lauki honetan, Balore kontuaren kodea laukiaren edukiaren deskripzioa          letras que a continuación se relacionan, para identificar la descripción del
+identifikatzeko:                                                               contenido de la casilla Código cuenta valores:
+C: Balore Kontuaren Kodearen (CCV) bidezko identifikapena.                     C: Identificación con el Código cuenta valores (CCV).
+O: Bestelako identifikazioa.                                                   O: Otra identificación.
+Balore kontuaren kodea. Finantza-erakunde jakin batek kobrantzaren             Casilla Código cuenta valores. Se consignará este dato únicamente en
+kudeaketa, hala nola higikorren kapitalari edo eredu honen barruko             aquellos supuestos en que una entidad financiera tenga encomendada la
+errentei dagozkien etekinen sorburu diren baloreen administrazioa eta          gestión del cobro, la administración y el depósito de los valores de los
+gordailutza bere gain dituen kasuetan jarriko da datu hau. Deskribaturiko      cuales proceden los correspondientes rendimientos del capital mobiliario
+kasua ez den beste ezeinetan ez da beteko lauki hau.                           o rentas objeto de este modelo. En ningún otro caso que no sea el descrito
+                                                                               anteriormente se cumplimentará esta casilla.
+Kode honen egitura honako hau da:                                              Su estructura se descompone de la siguiente manera:
+   Erakundearen kodea: lau digitu.                                                Código de entidad: cuatro dígitos.
+   Sukurtsalaren kodea: lau digitu.                                               Código de sucursal: cuatro dígitos.
+   Kontrol digituak: bi digitu.                                                   Dígitos de control: dos dígitos.
+   Kontu zenbakia: hamar digitu.                                                  Número de cuenta: diez dígitos.
+Sartu gabe. Lauki honetan X jarriko da ekitaldian zehar sorturiko              Casilla Pendiente. Se consignará una X en esta casilla en aquellos supuestos
+hartukizunen kasuan, aitortzaileak hartukizunon ordainketa ez badu egin        de percepciones devengadas en el ejercicio, cuyos pagos no se hayan
+titularrak ez direlako aurkeztu kobratzera. Lauki honetan X jartzen            efectuado en el mismo por la o el declarante al no presentarse los y las
+denean, hartzaile (erregistro) beraren gainerako laukiak hurrengo era          titulares a su cobro. Siempre que se consigne la X en esta casilla, el resto
+honetara beteko dira:                                                          de casillas de la misma perceptora o del mismo perceptor se
+                                                                               cumplimentará de la forma siguiente:
+– Aitortuaren IFZ: 999.999.999.                                               – NIF declarado/a: 999.999.999.
+– Ordezkariaren IFZ: 999.999.999.                                             – NIF representante: 999.999.999.
+– Deiturak eta izena, edo sozietatearen izena edo izendazioa: ordaintzeko     – Apellidos y nombre, denominación o razón social: valores pendientes de
+   dauden balioak.                                                                abono.
+– Sortzapenaren data: dagokiona.                                              – Fecha de devengo: la que corresponda
+– Izatea: dagokiona.                                                          – Naturaleza: la que corresponda.
+– Gakoa: dagokiona.                                                           – Clave: la que corresponda.
+– Azpigakoa: dagokiona.                                                       – Subclave: la que corresponda.
+– Atxikipenen eta konturako sarreren oinarria: dagokiona.                     – Base de retenciones e ingresos a cuenta: la que corresponda.
+                                                                                                                                                              6
+– Atxikipen %: dagokiona.                                                       – % retención: el que corresponda.
+– Atxikipenak eta konturako sarrerak: dagozkionak.                              – Retenciones e ingresos a cuenta: los que correspondan.
+– Bitartekaria: edukirik gabe.                                                  – Mediador/a: sin contenido.
+– Kodea: dagokiona.                                                             – Código: el que corresponda.
+– Jaulkitzailearen kodea: dagokiona.                                            – Código emisor: el que corresponda.
+– Ordainketa: dagokiona.                                                        – Pago: el que corresponda.
+– Kode mota: dagokiona.                                                         – Tipo código: el que corresponda.
+– Balore kontuaren kodea: dagokiona.                                            – Código cuenta valores: el que corresponda.
+– Sortzapenaren ekitaldia: edukirik gabe.                                       – Ejercicio de devengo: sin contenido.
+– Jasotzailaren helbidea: edukirik gabe.                                        – Dirección del perceptor/a: sin contenido.
+– Egoitza herrialdean duen IFZ: edukirik gabe.                                  – NIF en el país de residencia: sin contenido.
+– Jaiotze data: edukirik gabe.                                                  – Fecha de nacimiento: sin contenido.
+– Jaiotze lekua: edukirik gabe.                                                 – Lugar de nacimiento: sin contenido.
+– Egoitza fiskaleko herrialdea edo lurraldea: edukirik gabe.                    – País o territorio de residencia fiscal: sin contenido.
+Ordaintzeke dauden etekin edo errentak hartzaileari ordaintzen zaizkion          La presentación de la información de los datos relativos a la perceptora o
+ekitaldiaren aitorpenean aurkeztuko da hartzaileari buruzko datuen               al perceptor se realizará en la declaración correspondiente al ejercicio en
+informazioa. Kasu honetan, etekin edo errentak ordaintzeko ekitaldiaren          que los rendimientos o rentas pendientes de pago sean abonados a aquella
+aitorpenean, dagozkion etekin edo errentak sortu ziren ekitaldiko lau            o a aquél. En este supuesto deberá consignarse en la declaración
+zifrak adierazi beharko dira Sortzapenaren ekitaldia laukian, ordaindu ez        correspondiente al ejercicio de pago de los rendimientos o rentas, en la
+ziren arren, titularrak kobratzera aurkeztu ez zirelako.                         casilla Ejercicio de devengo, las cuatro cifras del ejercicio en que se
+                                                                                 devengaron los correspondientes rendimientos o rentas, aunque no se
+                                                                                 pagaron por no presentarse los y las titulares al cobro de los mismos.
+Sortzapenaren ekitaldia. Aitorpen honi dagokion ekitaldian ordainduriko          Casilla Ejercicio de devengo. Se consignarán las cuatro cifras del ejercicio de
+etekin edo errenten sortzapen ekitaldiko lau zifrak adieraziko dira,             devengo de aquellos rendimientos o rentas pagados en el ejercicio
+titularrak etekin edo errentak kobratzera aurkeztu direlako, haien               correspondiente a la presente declaración por haberse presentado los y
+sortzapena aurreko ekitaldiei dagokienean. Deskribaturiko kasua ez den           las titulares a su cobro, cuyo devengo corresponda a ejercicios anteriores.
+beste ezeinetan ez da beteko lauki hau.                                          En ningún otro caso que no sea el descrito anteriormente se
+                                                                                 cumplimentará esta casilla.
+Egoitza herrialdean duen helbidea. Egoitza herrialdean edo lurraldean            Dirección país de residencia. Se consignará la dirección de la perceptora o
+jasotzaileak duen helbidea idatziko da.                                          del perceptor en el país o territorio de residencia.
+Helbide laukia. Lauki honetan, egoitza herrialdearen bizitokiari dagokion        Casilla Domicilio. Se consignará en este campo la dirección
+helbidea idatziko da: mota (kalea, plaza, etorbidea, errepidea), bide            correspondiente al domicilio en el país de residencia: tipo de vía (calle,
+publikoaren izena, etxearen zenbakia edo kilometro-puntua eta abar.              plaza, avenida, carretera...), nombre de la vía pública, número de casa o, en
+                                                                                 su caso, punto kilométrico, etc.
+Herria/Hiria laukia. Egoitza dagoen herriaren edo hiriaren izena jasoko da.      Casilla Población/Ciudad. Se consignará el nombre de la población o ciudad
+                                                                                 en la que se encuentra situado el domicilio.
+Probintzia/Eskualdea/Estatua laukia. Egoitzaren helbidea zuzen                   Casilla Provincia/Región/Estado. Cuando sea necesario para una correcta
+identifikatzeko beharrezkoa denean, probintziaren, eskualdearen,                 identificación de la dirección del domicilio, se consignará el nombre de la
+estatuaren, departamentuaren edo beste edozein azpisailkapen politiko            provincia, región, estado, departamento o cualquier otra subdivisión
+edo administratiboren izena jaso, egoitza non dagoen kokatzeko.                  política o administrativa, donde se encuentre situado el domicilio.
+Posta Kodea (ZIP) laukia. Helbideari dagokion posta kodea idatziko da.           Casilla Código Postal (ZIP). Se consignará el código postal correspondiente
+                                                                                 al domicilio.
+Herrialdea kodea laukia. Helbideari dagokion herrialdearen edo                   Casilla Código País. Se cumplimentará el código del país o territorio
+lurraldearen kodea idatziko da, herrialde eta lurraldeetarako indarrean          correspondiente al domicilio, según la relación de códigos alfabéticos de
+dauden kode alfabetikoen arabera.                                                países y territorios vigente.
+Egoitza herrialdean duen IFZ laukia. Aitortzaileak identifikazio fiskaleko       Casilla NIF país de residencia. Si la declarada o el declarado dispone de un
+zenbaki bat baldin badu egoitza fiskala duen herrialdean edo lurraldean,         número de identificación fiscal asignado en su país o territorio de
+lauki honetan jasoko du.                                                         residencia fiscal se consignará en esta casilla.
+Jaiotze data laukia. F/J laukian F idazten denean, aitortzailearen jaiotze       Casilla Fecha de nacimiento. Cuando en la casilla F/J, se haga constar una F
+data adieraziko da.                                                              indicará la fecha de nacimiento de la declarada o del declarado.
+Jaiotze lekua laukia. F/J laukian F idazten denean, aitortzailearen jaiotze      Casilla Lugar de nacimiento. Cuando en la casilla F/J, se haga constar una F,
+lekua adieraziko da.                                                             se indicará lugar de nacimiento de la declarada o del declarado.
+Atal hau bitan banatzen da:                                                      Este apartado se subdivide en dos:
+Hiria laukia. Jaiotze lekuari dagokion udalerria, edo probintzia, eskualdea      Casilla Ciudad. Se consignará el municipio y, en su caso, la provincia o
+edo departamendua adieraziko da.                                                 región o departamento correspondiente al lugar de nacimiento.
+Herrialdearen kodea laukia. Jasotzailearen jaiotze lekuari dagokion              Casilla Código País. Se consignará el código de país o territorio
+herrialdearen edo lurraldearen kodea idatziko da, indarrean dauden               correspondiente al lugar de nacimiento de la perceptora o del perceptor,
+kodeekin ados.                                                                   según la relación de códigos vigente.
+Egoitza fiskala laukia: Herrialdearen kodea: Aitortzailearen egoitza fiskalari   Casilla Residencia fiscal: Código País. Se consignará el código del país o
+dagokion herrialdearen edo lurraldearen kodea idatziko da, indarrean             territorio correspondiente de residencia fiscal de la declarada o del
+dauden kodeekin ados.                                                            declarado, según la relación de códigos vigente.
+
+
+Eredu honen xede diren errentak sortzen dituen                                   Reglas aplicables al suministro informativo en el
+ondare-elementu, ondasun edo eskubide beraren                                    supuesto de que existan varios perceptores o varias
+titular diren hartzaile bat baino gehiago dagoenean                              perceptoras titulares del mismo elemento
+informazioa emateko arauak                                                       patrimonial, bien o derecho de que provengan las
+                                                                                 rentas o rendimientos objeto de este modelo
+Soilik eredu honen bidez eman beharreko informazioari dagokionez,                Exclusivamente a los efectos del suministro informativo de este modelo,
+eredu honen xede diren errentak edo etekinak sorrarazten dituen                  en aquellos supuestos en que existan varios o varias titulares del mismo
+                                                                                                                                                                 7
+ondare-elementu, ondasun edo eskubide beraren titular bat baino gehiago     elemento patrimonial, bien o derecho de que provengan las rentas o
+izanez gero, aitortzaileak, informazioa ematerakoan, ondare-elementu,       rendimientos objeto del mismo, la o el declarante deberá realizar el citado
+ondasun edo eskubide beraren titularkide bakoitzari dagozkion datu          suministro informativo individualizando los datos económicos
+ekonomikoak bakoiztu behar ditu. Datu-bakoizte hori ondare- elementu,       correspondientes a cada uno o una de los cotitulares del mismo elemento
+ondasun edo eskubide beraren titularkide bakoitzaren partaidetzaren         patrimonial, bien o derecho. Esta individualización se realizará de acuerdo
+proportzioan egin behar da, alegia, aitortzaileak modu frogagarrian         con la proporción de participación de cada uno o una de los cotitulares del
+ezagutzen duen partaidetzaren arabera. Partaidetza modu frogagarrian        mismo elemento patrimonial, bien o derecho que conste de manera
+ezagutzerik ez balu, hainbanaketa egingo da eta partaidetza bera egotziko   fehaciente al o a la declarante. En defecto de constancia fehaciente, la
+zaie titularkide guztiei, aurrean aipatutako informazio-ondoreetarako.      proporción de participación se deberá atribuir a cada uno o una de los
+                                                                            cotitulares, a los citados efectos informativos, por partes iguales.
+
+
+
+
+                                                                                                                                                      8
+

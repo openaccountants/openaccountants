@@ -1,0 +1,8 @@
+{
+  "canonical_rows_sha256": "204de05ff9b73d69e21076ca402453da66917bcb1a6ea2bab750ea3dd176c978",
+  "canonical_ledger_unchanged": "1000ad1a29fa2fa76d8a5bd96255c312f827b6f68a6c3b3d363be3134030d51f",
+  "unique_count": 663,
+  "old_scratch": "history-scratch-before-final-866",
+  "new_unique_sha256": "4a10d8298a4f04935d15988a71dd106846f30fa925900d611f1fb8e99f329f6e",
+  "scope": "Evidence locator repair only; canonical rows/scopes unchanged."
+}

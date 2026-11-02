@@ -1,0 +1,69 @@
+Agencia Tributaria: 17. Rendimientos del trabajo percibidos por trabajos efectivamente realizados en el extranjero, c...
+Saltar al contenido principal
+Logotipo del Gobierno de EspañaLogotipo Organismo
+Menú móvil
+Menu
+Inicio
+Ayuda
+Manuales, vídeos y folletos
+Manuales prácticos
+Manual práctico de Renta 2025. Parte 1.
+Capítulo 2. El Impuesto sobre la Renta de las Personas Físicas (IRPF): cuestiones generales
+Sujeción al IRPF: aspectos materiales
+Delimitación negativa del hecho imponible: rentas exentas y no sujetas
+Rentas exentas artículo 7 de la Ley de IRPF
+Índice
+Manual práctico de Renta 2025. Parte 1.
+17. Rendimientos del trabajo percibidos por trabajos efectivamente realizados en el extranjero, con el límite de 60.100 euros anuales
+Normativa: Arts. 7.p) Ley IRPF y 6 Reglamento IRPF
+Requisitos
+Están exentos los rendimientos de trabajo percibidos por trabajos efectivamente realizados en el extranjero cuando se den los siguientes requisitos:
+a) Que los trabajos se realicen para una empresa o entidad no residente en España o un establecimiento permanente radicado en el extranjero.
+En particular, cuando la entidad destinataria de los trabajos esté vinculada con la entidad empleadora del trabajador o con aquella en la que preste sus servicios, se entenderán que los trabajos se han realizado para la entidad no residente cuando de acuerdo con lo previsto en el artículo 18.5 de la LIS pueda considerarse que se ha prestado un servicio intragrupo a la entidad no residente porque el citado servicio produzca o pueda producir una ventaja o utilidad a la entidad destinataria.
+Nota: para la aplicación de esta exención a las rentas obtenidas en el extranjero por funcionarios destacados en organismos internacionales véase la sentencia del Tribunal Supremo núm. 428/2019, de 28 de marzo ( ROJ: STS 1056/2019).
+b) Que en el territorio en que se realicen los trabajos se aplique un impuesto de naturaleza idéntica o análoga a la del IRPF y no se trate de un país o territorio calificado reglamentariamente como paraíso fiscal (actualmente, jurisdicción no cooperativa).
+Se considera cumplido este requisito cuando el país o territorio en el que se realicen los trabajos tenga suscrito con España un convenio para evitar la doble imposición internacional que contenga cláusula de intercambio de información. Para el resto de países (con los que no exista Convenio), habrá que estar a la existencia de un impuesto idéntico o análogo.
+Puede acceder al listado de Convenios de doble imposición firmados por España en la web de la AEAT: https://sede.agenciatributaria.gob.es.
+Atención: si bien el artículo 7.p) de la Ley del IRPF se refiere expresamente a "paraísos fiscales" ha de tenerse en cuenta que, según la nueva disposición adicional décima de la Ley 36/2006, de 29 de noviembre, de medidas para la prevención del fraude fiscal, todas referencias efectuadas en la normativa del IRPF a paraísos fiscales, a países o territorios con los que no exista efectivo intercambio de información, o de nula o baja tributación se entenderán efectuadas a la definición de jurisdicción no cooperativa que establece la disposición adicional primera de la mencionada Ley 36/2006, en su redacción vigente a partir de 11 de julio de 2021, y que se comenta en al capítulo 10 de este manual.
+La disposición transitoria segunda de la Ley 36/2006, de 29 de noviembre, de medidas para la prevención del fraude fiscal establece que en tanto no se determinen por Orden Ministerial los países o territorios que tienen la consideración de jurisdicción no cooperativa, tendrán dicha consideración los países o territorios previstos en el Real Decreto 1080/1991.
+Pues bien, con entrada en vigor 11 de febrero de 2023, se publicó la Orden HFP/115/2023, de 9 de febrero, por la que se determinan los países y territorios, así como los regímenes fiscales perjudiciales, que tienen la consideración de jurisdicciones no cooperativas (BOE de 10 de febrero), que actualiza la lista de países y territorios que figuran en el Real Decreto 1080/1991, de 5 de julio, si bien en IRPF no ha sido de aplicación hasta el período impositivo 2024, siendo aplicable con carácter general desde entonces.
+Véase la relación de países y territorios calificados reglamentariamente como jurisdicción no cooperativa y las notas sobre la citada relación de países y territorios que figuran en el Capítulo 10 de este Manual.
+Cuantificación del importe exento
+La exención tendrá un límite máximo de 60.100 euros anuales.
+Para el cálculo de la retribución correspondiente a los trabajos realizados en el extranjero, deberán tomarse en consideración los días que efectivamente el trabajador ha estado desplazado en el extranjero, así como las retribuciones específicas correspondientes a los servicios prestados en el extranjero.
+A estos efectos, la Sentencia del Tribunal Supremo núm. 274/2021, de 25 de febrero de 2021, recaída en recurso de casación núm. 1990/2019 (ROJ : STS 607/2021), ha fijado como criterio interpretativo que deben entenderse comprendidos para el cómputo del importe de la exención los días de desplazamiento al país de destino o de regreso a España.
+Para el cálculo del importe de los rendimientos devengados cada día por los trabajos realizados en el extranjero, al margen de las retribuciones específicas correspondientes a los citados trabajos, se aplicará un criterio de reparto proporcional teniendo en cuenta el número total de días del año.
+Precisión: respecto al cálculo de la renta exenta correspondiente a retribuciones no específicas, el TEAC ha fijado los siguientes criterios:
+En los casos en que durante todo el período impositivo haya existido una única relación de dependencia (un solo pagador):
+Si durante todo el período impositivo ha existido una relación de ajenidad con el pagador de los citados rendimientos, a efectos de realizar el cálculo proporcional de los rendimientos devengados cada día por los trabajos realizados en el extranjero, al margen de las retribuciones específicas correspondientes a los citados trabajos, se tomará en el denominador el número total de días del año.
+En caso contrario (duración inferior al año), se deberá atender al tiempo de prestación del servicio con el citado pagador durante el período impositivo analizado.
+En el caso de que el contribuyente hubiera mantenido dos o más relaciones de dependencia o ajenidad en el período impositivo, el cálculo de la exención correspondiente a las retribuciones no específicas se realizará individualizadamente para cada uno de los pagadores en cuya relación de dependencia o ajenidad se haya producido desplazamiento al extranjero, atendiendo a las reglas señaladas en el punto anterior, esto es, teniendo en cuenta las retribuciones por él abonadas así como el tiempo de vigencia, en cada período impositivo, de cada relación de dependencia o ajenidad, sin perjuicio de la aplicación agregada del límite cuantitativo de 60.100 euros.
+Véase la Resolución del Tribunal Económico-administrativo (TEAC) de 19 de julio de 2024, Reclamación número 00/08685/2023, recaída en recurso de alzada para la unificación de criterio.
+Incompatibilidad con el régimen de excesos
+Finalmente, esta exención es incompatible, para los contribuyentes destinados en el extranjero, con el régimen de excesos excluidos de tributación por retribuciones percibidos por empleados de empresas y funcionarios destinados en el extranjero previstos en el artículo 9.A.3.b) del Reglamento del IRPF, cualquiera que sea su importe. El contribuyente podrá optar por la aplicación del régimen de excesos en sustitución de esta exención.
+A diferencia del régimen de excesos del artículo 9.A.3.b) del Reglamento del IRPF, son compatibles con la exención por trabajos realizados en el extranjero, las cantidades percibidas en concepto de desplazamiento y estancia a las que resulte de aplicación el régimen general de dietas exceptuadas de gravamen del artículo 9.A.3.a) del Reglamento del IRPF.
+Ejemplo:
+Don J.L.M. fue enviado por su empresa desde el día 1 de abril a 30 de junio de 2025 a una empresa situada en Canadá para participar en un proyecto consistente en la ingeniería, suministro, construcción y puesta en marcha de una nueva refinería de base para la producción de combustibles limpios. Una vez realizado dicho trabajo, don J.L.M. retornó a España, continuando en la empresa en su régimen normal de trabajo y salario.
+Como retribución especifica por los servicios prestados en el extranjero don J.L.M percibió la cantidad de 15.200 euros.
+Asimismo, para cubrir los gastos correspondientes a desplazamiento y manutención durante su estancia en Canadá la empresa compró y pagó los billetes de avión y le abonó 80 euros al día durante los tres meses que prestó sus servicios en la empresa canadiense para gastos de manutención.
+Determinar el importe exento de la retribución correspondiente a los trabajos realizados en el extranjero, sabiendo que el salario anual que percibe de su empresa asciende a 75.000 euros.
+Solución:
+Al cumplirse, según los datos del ejemplo, los requisitos establecidos por la normativa del IRPF, procede aplicar la exención cuya cuantificación se efectúa de la siguiente forma:
+a) Retribuciones devengadas durante los días de estancia en el extranjero:
+Correspondiente al salario: (75.000 ÷ 365) x 91 = 18.698,63
+Correspondiente a los servicios prestados en el extranjero (*) = 15.200
+Total (18.698,63 + 15.200) = 33.898,63
+(*) Los billetes de avión y los gastos de manutención diarios están exentos porque no superan el límite legal. Véase el apartado sobre dietas y asignaciones para gastos de viaje exentas en el Capítulo 3 de este Manual. (Volver)
+b) Importe de la exención: (18.698,63 + 15.200) = 33.898,63 (**)
+(**) Este importe entra dentro del límite máximo de exención anual que son 60.100 euros.
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+Seleccione la información que desee incluir en el PDF:
+Página actual
+Apartado actual y subapartados
+Todo el documento
+Puede cancelar la generación del PDF en cualquier momento.
+CancelarContinuar
+Accesibilidad
+Página actualizada: 17/marzo/2026

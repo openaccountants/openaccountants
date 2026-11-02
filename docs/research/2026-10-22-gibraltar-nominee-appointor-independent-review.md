@@ -1,0 +1,5 @@
+# Independent source/editorial review: nominees and appointors
+
+22October2026. Separate Codex agent review_gi_minimum checked the new v0.3 nominee and director-appointor sections against July2026 regulations6A/6B/8B/8C. No material defects found in definition, thresholds, duties, distinct correction triggers, deadlines, appointment mechanisms, additional appointors, reappointments, historical exception or five-director example. Reviewer suggested spelling out priority of constitutional/contractual limbs; writer split the table row to state(e) excludes(b)–(d), and(f) excludes(b)–(e).
+
+Post-clarification whole-file SHA256: afbb5cecb84c5058f62b600acc555699cf1e39894a6528e9a0ef7f2b0a61786d. Reviewer checked the pre-clarification addition; no subsequent full-file review is claimed. This is limited AI editorial/source review, not professional attestation, whole-Guide acceptance or required GitHub approval. Historical transitions, access/enforcement/discrepancy rules and portal execution remain open.

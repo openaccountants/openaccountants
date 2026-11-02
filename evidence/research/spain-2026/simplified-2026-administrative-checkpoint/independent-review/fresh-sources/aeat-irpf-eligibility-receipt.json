@@ -1,0 +1,11 @@
+{
+  "name": "aeat-irpf-eligibility",
+  "url": "https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html",
+  "utc": "2026-10-27T23:30:22.299514Z",
+  "status": 200,
+  "final_url": "https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html",
+  "content_type": "text/html",
+  "bytes": 28195,
+  "sha256": "11dc81661c100f19bb60488711d6f4b58865eec3e20879d525c5567ecee80f64",
+  "same_as_writer_body": true
+}

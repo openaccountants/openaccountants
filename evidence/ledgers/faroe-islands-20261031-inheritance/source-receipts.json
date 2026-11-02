@@ -1,0 +1,61 @@
+[
+  {
+    "name": "duty",
+    "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+    "final_url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+    "status": 200,
+    "sha256": "c35648605a3c3f14fb5aad34f390428773c4d4b5742763b0c929b1a1b34811b7",
+    "reader_sha256": "4ec1f95527b50f5db07862cb8015cd5f8290eb130c8e1367bd5fb834c4c1bc96",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "tax",
+    "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+    "final_url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+    "status": 200,
+    "sha256": "7d3eec18dd6d0c8de44b55e254f35026a12bb4131f053797f1129a7cd662aaad",
+    "reader_sha256": "13ed8d751bd853cc7813713422f2e53b08f986b0a70d526c6496550c7baf945c",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "rates",
+    "url": "https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170",
+    "final_url": "https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170",
+    "status": 200,
+    "sha256": "b51c6db2166ebe93f33d6ff31b0def50c2ec52cfed30de894f6a6a772b1eb214",
+    "reader_sha256": "9dd3e1a5ad9388fb33b7a8533601fcc973faa5de69b7b173089295e3e20087f8",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "capital",
+    "url": "https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi",
+    "final_url": "https://logir.fo/LawNotFound.aspx",
+    "status": 200,
+    "sha256": "b9698b8f43ba60975a185f37f8a22d01cb929c56414b8fb6a5a7c9e095676ba9",
+    "reader_sha256": "c2d391f2f4ea6a286710407673912f7dfa6f8f16d98140a7a3a9faaa1f47a466",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "inheritance",
+    "url": "https://www.taks.fo/fo/borgari/skattur/skattur-og-arvur",
+    "final_url": "https://www.taks.fo/fo/borgari/skattur/skattur-og-arvur",
+    "status": 200,
+    "sha256": "54662f08f125ab19a160de23266cea01287f44c801e402ee0dc94559ebe7d122",
+    "reader_sha256": "ee27942a8aa9617cf7fae0aed9e53ffc45dca68f1c65898daf059c511542bbd1",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "estate-guidance",
+    "url": "https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/g-deydsbugv",
+    "final_url": "https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/g-deydsbugv",
+    "status": 200,
+    "sha256": "2ae95d2fa9c9ab09733d8f740dc7b79a64b12d0f6e0c918875b639583f2908dd",
+    "reader_sha256": "20703f374441120487bceb30ce66d0e1d07fafd850c2e9d8a4644e80c43fb723",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "court",
+    "url": "https://www.domstol.dk/fo/faeroeerne/brug-retten/",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

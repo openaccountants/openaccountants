@@ -1,0 +1,71 @@
+{
+  "candidate_commit": "e154e1b7bf107d7e9efa01c7622a91e89850da8a",
+  "review_preservation_commit": "3ad7f3e980d4d5d864c6c9fc39540dfe16d01c44",
+  "Guides": [
+    {
+      "path": "skills/moldova/md-company-formation.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/md-company-formation.md",
+      "original_sha256": "a2446f47c1ed9277f8be6492b9eb2e9527a16d8db732f0b2c0a061d7786b87f4"
+    },
+    {
+      "path": "skills/moldova/md-corporate-income-tax.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/md-corporate-income-tax.md",
+      "original_sha256": "663695efc1ad18819a604ff6059d7c5326aa101efb3973d970382154f69af917"
+    },
+    {
+      "path": "skills/moldova/md-cross-border.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/md-cross-border.md",
+      "original_sha256": "8e38b9296a7e1780424e3c3256e3554ba8fc24d00a8781b772f3d9e44e4f4dae"
+    },
+    {
+      "path": "skills/moldova/md-property-tax.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/md-property-tax.md",
+      "original_sha256": "e40a6944f1ac495785530ff4038ef2dc941d75a775f4467998190c4862b6ddac"
+    },
+    {
+      "path": "skills/moldova/md-tax-overview.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/md-tax-overview.md",
+      "original_sha256": "6f9dd87d460ebbb52d26b7d11a13539c217720cd1dd8b88083a6da7aa0a84476"
+    },
+    {
+      "path": "skills/moldova/md-transfer-pricing.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/md-transfer-pricing.md",
+      "original_sha256": "f88ed95ace0a73175579a88c67dd6e142518fe55b541c6caec31682628930e28"
+    },
+    {
+      "path": "skills/moldova/md-vat-refund.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/md-vat-refund.md",
+      "original_sha256": "33cad03c0ed10d7046cef011d1b6f4faf2d62ad6ded725fdbd62685c8b13e5c1"
+    },
+    {
+      "path": "skills/moldova/md-wealth-tax.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/md-wealth-tax.md",
+      "original_sha256": "f697f718a4f2506ce29ed27bff1e0eeaeb39d6d2811985463b62e2de90044a46"
+    },
+    {
+      "path": "skills/moldova/moldova-income-tax.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/moldova-income-tax.md",
+      "original_sha256": "c6f49b7cc71ccc66540796f7f6779973fe3d7eeef83b277ce2eaeac9d29ea789"
+    },
+    {
+      "path": "skills/moldova/moldova-payroll.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/moldova-payroll.md",
+      "original_sha256": "054132cd7eca0990005713fe447045da8188e52a895feeb545711de94e4e0555"
+    },
+    {
+      "path": "skills/moldova/moldova-social-contributions.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/moldova-social-contributions.md",
+      "original_sha256": "e453dc373ce2b796cd6e7c1a187ac9b813a8f86bfd42f8e5c7b5130970cd2b3f"
+    },
+    {
+      "path": "skills/moldova/moldova-tax-optimization.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/moldova-tax-optimization.md",
+      "original_sha256": "a6b32149732b5a161bc3080e1cbe0d6ad7a99c3024c84657d6688d73d2b36751"
+    },
+    {
+      "path": "skills/moldova/moldova-vat.md",
+      "original_snapshot": "evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/original-guides/moldova-vat.md",
+      "original_sha256": "0ef637780aa7d2c2595c59403ceab27b04ce46be870aafaf16a453141fe8afe7"
+    }
+  ]
+}

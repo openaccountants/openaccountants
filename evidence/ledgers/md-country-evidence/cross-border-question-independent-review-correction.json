@@ -1,0 +1,67 @@
+{
+  "finding": "MD-REVIEW-008",
+  "status": "Writer fix; independent delta recheck pending",
+  "base_commit": "41cf90dba046a4759f17603d415c1ab406e86993",
+  "original_Guide_sha256": "3d7695c4d1359bf2705cf303da81cba5ef220b6af7aba12ba949bc306e9a0099",
+  "original_question_section": "## Ask the client first\n\n- Who legally earns each payment, what is their legal form/citizenship where relevant, and what is their domestic and treaty residence for the actual period? Obtain domicile, travel/day records, management-location facts and dated residence evidence.\n- What exactly is supplied: goods, management/consultancy, other services, IP rights, software operation/distribution/reproduction, financing, rent, gains, salary/director remuneration, pension, prizes or liquidation? Obtain the contract, rights, service location and payment terms.\n- Is the payer within art. 90, and is the payment connected to a Moldova PE? Obtain sites, offices, warehouses/sales, agents/stock, signing authority, related contracts, project start/stop/acceptance and subcontractor records.\n- For dividends/capital/liquidation, what profit years, historic capital increases, contributions, distributions and noncash values support the base and rate? For property/gains, obtain title, cost, improvements/valuation, disposal proceeds, main-home and loss evidence.\n- Which treaty and protocol apply, what substantive entitlement/beneficial-owner/anti-abuse facts support relief, when was the acceptable residence document received, and has residence changed? Is a refund, corrected return or tax-paid certificate already in progress?\n- For foreign income, is it taxable in Moldova for this population and period? Obtain the Moldova-category computation, foreign authority's tax-paid evidence, translation, currency/timing records, refund entitlement and any prior credit.\n- Has the individual arrived, ceased residence or changed permanent domicile? Obtain the exact dates, property inventory, arrival/departure market valuations, basis documents and departure filing history.\n- Obtain actual payroll/insurance/posting facts, VAT/customs and related-party records, prior filings/payment receipts, current form access and treasury details. Which unclosed ordinary procedure gap below is relevant to the planned filing?\n",
+  "original_questions": [
+    "Who legally earns each payment, what is their legal form/citizenship where relevant, and what is their domestic and treaty residence for the actual period? Obtain domicile, travel/day records, management-location facts and dated residence evidence.",
+    "What exactly is supplied: goods, management/consultancy, other services, IP rights, software operation/distribution/reproduction, financing, rent, gains, salary/director remuneration, pension, prizes or liquidation? Obtain the contract, rights, service location and payment terms.",
+    "Is the payer within art. 90, and is the payment connected to a Moldova PE? Obtain sites, offices, warehouses/sales, agents/stock, signing authority, related contracts, project start/stop/acceptance and subcontractor records.",
+    "For dividends/capital/liquidation, what profit years, historic capital increases, contributions, distributions and noncash values support the base and rate? For property/gains, obtain title, cost, improvements/valuation, disposal proceeds, main-home and loss evidence.",
+    "Which treaty and protocol apply, what substantive entitlement/beneficial-owner/anti-abuse facts support relief, when was the acceptable residence document received, and has residence changed? Is a refund, corrected return or tax-paid certificate already in progress?",
+    "For foreign income, is it taxable in Moldova for this population and period? Obtain the Moldova-category computation, foreign authority's tax-paid evidence, translation, currency/timing records, refund entitlement and any prior credit.",
+    "Has the individual arrived, ceased residence or changed permanent domicile? Obtain the exact dates, property inventory, arrival/departure market valuations, basis documents and departure filing history.",
+    "Obtain actual payroll/insurance/posting facts, VAT/customs and related-party records, prior filings/payment receipts, current form access and treasury details. Which unclosed ordinary procedure gap below is relevant to the planned filing?"
+  ],
+  "new_groups": [
+    "Who legally earns each payment, what is their legal form/citizenship where relevant, and what is their domestic and treaty residence for the actual period? Obtain domicile, travel/day records, management-location facts and dated residence evidence. Has the individual arrived, ceased residence or changed permanent domicile? Obtain the exact dates, property inventory, arrival/departure market valuations, basis documents and departure filing history.",
+    "What exactly is supplied: goods, management/consultancy, other services, IP rights, software operation/distribution/reproduction, financing, rent, gains, salary/director remuneration, pension, prizes or liquidation? Obtain the contract, rights, service location and payment terms.",
+    "Is the payer within art. 90, and is the payment connected to a Moldova PE? Obtain sites, offices, warehouses/sales, agents/stock, signing authority, related contracts, project start/stop/acceptance and subcontractor records.",
+    "For dividends/capital/liquidation, what profit years, historic capital increases, contributions, distributions and noncash values support the base and rate? For property/gains, obtain title, cost, improvements/valuation, disposal proceeds, main-home and loss evidence.",
+    "Which treaty and protocol apply, what substantive entitlement/beneficial-owner/anti-abuse facts support relief, when was the acceptable residence document received, and has residence changed? Is a refund, corrected return or tax-paid certificate already in progress? For foreign income, is it taxable in Moldova for this population and period? Obtain the Moldova-category computation, foreign authority's tax-paid evidence, translation, currency/timing records, refund entitlement and any prior credit.",
+    "Obtain actual payroll/insurance/posting facts, VAT/customs and related-party records, prior filings/payment receipts, current form access and treasury details. Which unclosed ordinary procedure gap below is relevant to the planned filing?"
+  ],
+  "all_original_questions_verbatim_preserved": true,
+  "new_Guide_sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+  "source_rows_changed": false,
+  "Guide_hash_bindings_refreshed": [
+    {
+      "file": "ledgers/md-country-evidence/unif25-later-controls.json",
+      "key": "Guide_hashes",
+      "before": "3d7695c4d1359bf2705cf303da81cba5ef220b6af7aba12ba949bc306e9a0099",
+      "after": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f"
+    },
+    {
+      "file": "ledgers/md-country-evidence/payroll-current-form-controls.json",
+      "key": "Guide_hashes",
+      "before": "3d7695c4d1359bf2705cf303da81cba5ef220b6af7aba12ba949bc306e9a0099",
+      "after": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f"
+    },
+    {
+      "file": "ledgers/md-country-evidence/inr14-form-controls.json",
+      "key": "Guide_hashes",
+      "before": "3d7695c4d1359bf2705cf303da81cba5ef220b6af7aba12ba949bc306e9a0099",
+      "after": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f"
+    },
+    {
+      "file": "ledgers/md-country-evidence/public-pr793-predecessor-reconciliation.json",
+      "key": "current_Guide_sha256",
+      "before": "3d7695c4d1359bf2705cf303da81cba5ef220b6af7aba12ba949bc306e9a0099",
+      "after": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f"
+    }
+  ],
+  "new_tax_claims": 0,
+  "new_arithmetic_cases": 0,
+  "additional_source_scope_correction": {
+    "finding": "MD-REVIEW-009",
+    "original_sentence": "For a contract concluded after the 25th, apply its stated first-payment rule by the 25th following the month of transfer into possession/use",
+    "corrected_sentence": "For a contract concluded after the 25th, the special first-payment sentence expressly concerns **immovable property**: payment by the 25th of the month following the month of transfer into possession/use. Its application to movable property or international-transport property under art. 71(k¹) is not confirmed here",
+    "source_row": "MD-XB-127",
+    "exact_original_language_quote": "lunii transmiterii în posesie și/sau în folosință a bunului imobil",
+    "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-74.json",
+    "source_read_date_preserved": "2026-10-30",
+    "source_rows_unchanged": true,
+    "independent_delta_recheck": "PENDING"
+  }
+}

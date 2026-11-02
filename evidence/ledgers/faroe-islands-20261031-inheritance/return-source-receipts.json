@@ -1,0 +1,38 @@
+[
+  {
+    "name": "estate-calendar",
+    "url": "https://www.taks.fo/fo/taks/taks-kalendarin/freist-at-lata-inn-sjalvuppgavu-2025-hja-feloegum",
+    "final_url": "https://www.taks.fo/fo/taks/taks-kalendarin/freist-at-lata-inn-sjalvuppgavu-2025-hja-feloegum",
+    "status": 200,
+    "sha256": "158a367e1d1ad8537307486bfc880707fdd0ced81acf2e4dbc48a4f6cbcc1eed",
+    "reader_sha256": "8f37dda8cdd23c6a0a7898ed2ccf24ae109bfab4a9eb35f20a5ebfa2a20a8336",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "estate-return",
+    "url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/sjalvuppgava",
+    "final_url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/sjalvuppgava",
+    "status": 200,
+    "sha256": "dd5f6f830877edd035477ec9e7e319fc47b786a4b494f3bd476e591c869b0b1b",
+    "reader_sha256": "ca2b0bdb9829a84f8541c9eca33d690acf9dfbb9176ae27534d3997904d12d50",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "estate-accounts",
+    "url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/roknskapur",
+    "final_url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/roknskapur",
+    "status": 200,
+    "sha256": "d02f037a7791f60d11c04ce9853348e1d8121994e32e1f9380f197d67ee9a68d",
+    "reader_sha256": "68edce702c28ec962635e2baf5a105c178ab39e632a2b01b230fa37633138f5c",
+    "read_date": "2026-10-31"
+  },
+  {
+    "name": "estate-filing",
+    "url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/freistir-og-treytir-fyri-innlating",
+    "final_url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/freistir-og-treytir-fyri-innlating",
+    "status": 200,
+    "sha256": "ca2cdf2f2076c5f057230ee5752cf6cf22cddd25b698d8226c406e5459526ff7",
+    "reader_sha256": "829e80b328f61472d5eb20c6f0e97a27c839dd84691088b2bdd49493e4c73c8c",
+    "read_date": "2026-10-31"
+  }
+]

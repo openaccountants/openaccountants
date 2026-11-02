@@ -1,0 +1,1761 @@
+{
+  "source": "Independent parser of actual current BOE HTML tables; manually read source minima; not writer parsed tables",
+  "assertions": 117,
+  "population_cases": 70,
+  "checks": [
+    {
+      "name": "clm21000/20700 move",
+      "actual": "79.07",
+      "expected": "79.07",
+      "pass": true
+    },
+    {
+      "name": "cantabria21000/20700 move",
+      "actual": "70.49",
+      "expected": "70.49",
+      "pass": true
+    },
+    {
+      "name": "canarias21000/20700 move",
+      "actual": "74.49",
+      "expected": "74.49",
+      "pass": true
+    },
+    {
+      "name": "Aragon attributed quota",
+      "actual": "77.62",
+      "expected": "77.62",
+      "pass": true
+    },
+    {
+      "name": "Aragon credit after intermediate rounding",
+      "actual": "23.29",
+      "expected": "23.29",
+      "pass": true
+    },
+    {
+      "name": "asturiasaid",
+      "actual": "156.24",
+      "expected": "156.24",
+      "pass": true
+    },
+    {
+      "name": "extremaduraaid",
+      "actual": "144.31",
+      "expected": "144.31",
+      "pass": true
+    },
+    {
+      "name": "galiciaaid",
+      "actual": "152.69",
+      "expected": "152.69",
+      "pass": true
+    },
+    {
+      "name": "Galicia cent-rounded BL discriminator",
+      "actual": "152.79",
+      "expected": "152.79",
+      "pass": true
+    },
+    {
+      "name": "Valencia direct rather than BL-based",
+      "actual": "74.20",
+      "expected": "74.20",
+      "pass": true
+    },
+    {
+      "name": "Balearic emergency mixed+pension",
+      "actual": "166.47",
+      "expected": "166.47",
+      "pass": true
+    },
+    {
+      "name": "Current2026 Balearic paragraph2 activity base",
+      "actual": "531.60",
+      "expected": "531.60",
+      "pass": true
+    },
+    {
+      "name": "Expressed rate truncation",
+      "actual": "8.86",
+      "expected": "8.86",
+      "pass": true
+    },
+    {
+      "name": "Extremadura2026rate changed",
+      "actual": "0.0775",
+      "expected": "0.0775",
+      "pass": true
+    },
+    {
+      "name": "Valencia2026rate changed",
+      "actual": "0.088",
+      "expected": "0.088",
+      "pass": true
+    },
+    {
+      "name": "aragonzerogeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "aragonzeroaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "aragonsavings onlygeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "aragonsavings onlyaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "aragonminimum spillgeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "aragonminimum spillaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "aragonsavings survives",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "aragonsavings absent from general allocation:T",
+      "actual": "77.62",
+      "expected": "77.62",
+      "pass": true
+    },
+    {
+      "name": "aragonsavings absent from general allocation:aid",
+      "actual": "156.63",
+      "expected": "156.63",
+      "pass": true
+    },
+    {
+      "name": "aragonsavings absent from general allocation:direct",
+      "actual": "78.70",
+      "expected": "78.70",
+      "pass": true
+    },
+    {
+      "name": "clmzerogeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "clmzeroaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "clmsavings onlygeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "clmsavings onlyaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "clmminimum spillgeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "clmminimum spillaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "clmsavings survives",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "clmsavings absent from general allocation:T",
+      "actual": "79.07",
+      "expected": "79.07",
+      "pass": true
+    },
+    {
+      "name": "clmsavings absent from general allocation:aid",
+      "actual": "158.11",
+      "expected": "158.11",
+      "pass": true
+    },
+    {
+      "name": "clmsavings absent from general allocation:direct",
+      "actual": "80.20",
+      "expected": "80.20",
+      "pass": true
+    },
+    {
+      "name": "asturiaszerogeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "asturiaszeroaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "asturiassavings onlygeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "asturiassavings onlyaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "asturiasminimum spillgeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "asturiasminimum spillaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "asturiassavings survives",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "asturiassavings absent from general allocation:T",
+      "actual": "77.19",
+      "expected": "77.19",
+      "pass": true
+    },
+    {
+      "name": "asturiassavings absent from general allocation:aid",
+      "actual": "156.24",
+      "expected": "156.24",
+      "pass": true
+    },
+    {
+      "name": "asturiassavings absent from general allocation:direct",
+      "actual": "78.30",
+      "expected": "78.30",
+      "pass": true
+    },
+    {
+      "name": "baleariczerogeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "baleariczeroaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "balearicsavings onlygeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "balearicsavings onlyaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "balearicminimum spillgeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "balearicminimum spillaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "balearicsavings survives",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "balearicsavings absent from general allocation:T",
+      "actual": "80.25",
+      "expected": "80.25",
+      "pass": true
+    },
+    {
+      "name": "balearicsavings absent from general allocation:aid",
+      "actual": "159.29",
+      "expected": "159.29",
+      "pass": true
+    },
+    {
+      "name": "balearicsavings absent from general allocation:direct",
+      "actual": "81.40",
+      "expected": "81.40",
+      "pass": true
+    },
+    {
+      "name": "cantabriazerogeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "cantabriazeroaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "cantabriasavings onlygeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "cantabriasavings onlyaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "cantabriaminimum spillgeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "cantabriaminimum spillaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "cantabriasavings survives",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "cantabriasavings absent from general allocation:T",
+      "actual": "70.49",
+      "expected": "70.49",
+      "pass": true
+    },
+    {
+      "name": "cantabriasavings absent from general allocation:aid",
+      "actual": "149.53",
+      "expected": "149.53",
+      "pass": true
+    },
+    {
+      "name": "cantabriasavings absent from general allocation:direct",
+      "actual": "71.50",
+      "expected": "71.50",
+      "pass": true
+    },
+    {
+      "name": "canariaszerogeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "canariaszeroaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "canariassavings onlygeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "canariassavings onlyaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "canariasminimum spillgeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "canariasminimum spillaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "canariassavings survives",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "canariassavings absent from general allocation:T",
+      "actual": "74.49",
+      "expected": "74.49",
+      "pass": true
+    },
+    {
+      "name": "canariassavings absent from general allocation:aid",
+      "actual": "153.48",
+      "expected": "153.48",
+      "pass": true
+    },
+    {
+      "name": "canariassavings absent from general allocation:direct",
+      "actual": "75.50",
+      "expected": "75.50",
+      "pass": true
+    },
+    {
+      "name": "extremadurazerogeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "extremadurazeroaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "extremadurasavings onlygeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "extremadurasavings onlyaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "extremaduraminimum spillgeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "extremaduraminimum spillaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "extremadurasavings survives",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "extremadurasavings absent from general allocation:T",
+      "actual": "65.26",
+      "expected": "65.26",
+      "pass": true
+    },
+    {
+      "name": "extremadurasavings absent from general allocation:aid",
+      "actual": "144.31",
+      "expected": "144.31",
+      "pass": true
+    },
+    {
+      "name": "extremadurasavings absent from general allocation:direct",
+      "actual": "66.20",
+      "expected": "66.20",
+      "pass": true
+    },
+    {
+      "name": "galiciazerogeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "galiciazeroaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "galiciasavings onlygeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "galiciasavings onlyaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "galiciaminimum spillgeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "galiciaminimum spillaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "galiciasavings survives",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "galiciasavings absent from general allocation:T",
+      "actual": "73.64",
+      "expected": "73.64",
+      "pass": true
+    },
+    {
+      "name": "galiciasavings absent from general allocation:aid",
+      "actual": "152.69",
+      "expected": "152.69",
+      "pass": true
+    },
+    {
+      "name": "galiciasavings absent from general allocation:direct",
+      "actual": "74.70",
+      "expected": "74.70",
+      "pass": true
+    },
+    {
+      "name": "valenciazerogeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "valenciazeroaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "valenciasavings onlygeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "valenciasavings onlyaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "valenciaminimum spillgeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "valenciaminimum spillaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "valenciasavings survives",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "valenciasavings absent from general allocation:T",
+      "actual": "73.17",
+      "expected": "73.17",
+      "pass": true
+    },
+    {
+      "name": "valenciasavings absent from general allocation:aid",
+      "actual": "152.19",
+      "expected": "152.19",
+      "pass": true
+    },
+    {
+      "name": "valenciasavings absent from general allocation:direct",
+      "actual": "74.20",
+      "expected": "74.20",
+      "pass": true
+    },
+    {
+      "name": "catalanzerogeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "catalanzeroaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "catalansavings onlygeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "catalansavings onlyaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "catalanminimum spillgeneral quota zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "catalanminimum spillaid zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "catalansavings survives",
+      "actual": true,
+      "expected": true,
+      "pass": true
+    },
+    {
+      "name": "catalansavings absent from general allocation:T",
+      "actual": "80.25",
+      "expected": "80.25",
+      "pass": true
+    },
+    {
+      "name": "catalansavings absent from general allocation:aid",
+      "actual": "159.29",
+      "expected": "159.29",
+      "pass": true
+    },
+    {
+      "name": "catalansavings absent from general allocation:direct",
+      "actual": "81.40",
+      "expected": "81.40",
+      "pass": true
+    },
+    {
+      "name": "different minima general state positive",
+      "actual": "14.25",
+      "expected": "14.25",
+      "pass": true
+    },
+    {
+      "name": "different minima regional general zero",
+      "actual": "0.00",
+      "expected": "0",
+      "pass": true
+    }
+  ],
+  "population": [
+    {
+      "region": "aragon",
+      "case": "zero",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "aragon",
+      "case": "savings only",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "462.75",
+      "QSC": "462.75",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "aragon",
+      "case": "minimum spill",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "795.25",
+      "QSC": "795.25",
+      "rE": "0.00",
+      "rC": "0.00",
+      "A": "700.00",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "aragon",
+      "case": "general only",
+      "QGE": "1660.50",
+      "QGC": "1629.94",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "8.02",
+      "rC": "7.87",
+      "A": "985.71",
+      "T": "77.62",
+      "rent": "23.29",
+      "aid": "156.63",
+      "direct": "78.70"
+    },
+    {
+      "region": "aragon",
+      "case": "mixed",
+      "QGE": "1660.50",
+      "QGC": "1629.94",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "8.02",
+      "rC": "7.87",
+      "A": "985.71",
+      "T": "77.62",
+      "rent": "23.29",
+      "aid": "156.63",
+      "direct": "78.70"
+    },
+    {
+      "region": "aragon",
+      "case": "different minima",
+      "QGE": "14.25",
+      "QGC": "14.25",
+      "QSE": "990.00",
+      "QSC": "990.00",
+      "rE": "0.25",
+      "rC": "0.25",
+      "A": "876.92",
+      "T": "2.19",
+      "rent": "0.66",
+      "aid": "4.38",
+      "direct": "2.50"
+    },
+    {
+      "region": "aragon",
+      "case": "joint reduction",
+      "QGE": "3070.50",
+      "QGC": "3024.64",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "10.20",
+      "rC": "10.04",
+      "A": "10320.00",
+      "T": "1037.02",
+      "rent": "311.11",
+      "aid": "2088.77",
+      "direct": "1204.80"
+    },
+    {
+      "region": "clm",
+      "case": "zero",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "clm",
+      "case": "savings only",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "462.75",
+      "QSC": "462.75",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "clm",
+      "case": "minimum spill",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "795.25",
+      "QSC": "795.25",
+      "rE": "0.00",
+      "rC": "0.00",
+      "A": "700.00",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "clm",
+      "case": "general only",
+      "QGE": "1660.50",
+      "QGC": "1660.50",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "8.02",
+      "rC": "8.02",
+      "A": "985.71",
+      "T": "79.07",
+      "rent": "23.72",
+      "aid": "158.11",
+      "direct": "80.20"
+    },
+    {
+      "region": "clm",
+      "case": "mixed",
+      "QGE": "1660.50",
+      "QGC": "1660.50",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "8.02",
+      "rC": "8.02",
+      "A": "985.71",
+      "T": "79.07",
+      "rent": "23.72",
+      "aid": "158.11",
+      "direct": "80.20"
+    },
+    {
+      "region": "clm",
+      "case": "different minima",
+      "QGE": "14.25",
+      "QGC": "14.25",
+      "QSE": "990.00",
+      "QSC": "990.00",
+      "rE": "0.25",
+      "rC": "0.25",
+      "A": "876.92",
+      "T": "2.19",
+      "rent": "0.66",
+      "aid": "4.38",
+      "direct": "2.50"
+    },
+    {
+      "region": "clm",
+      "case": "joint reduction",
+      "QGE": "3070.50",
+      "QGC": "3070.50",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "10.20",
+      "rC": "10.20",
+      "A": "10320.00",
+      "T": "1052.74",
+      "rent": "315.82",
+      "aid": "2105.28",
+      "direct": "1224.00"
+    },
+    {
+      "region": "asturias",
+      "case": "zero",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "asturias",
+      "case": "savings only",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "462.75",
+      "QSC": "408.97",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "asturias",
+      "case": "minimum spill",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "795.25",
+      "QSC": "742.52",
+      "rE": "0.00",
+      "rC": "0.00",
+      "A": "700.00",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "asturias",
+      "case": "general only",
+      "QGE": "1660.50",
+      "QGC": "1620.90",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "8.02",
+      "rC": "7.83",
+      "A": "985.71",
+      "T": "77.19",
+      "rent": "23.16",
+      "aid": "156.24",
+      "direct": "78.30"
+    },
+    {
+      "region": "asturias",
+      "case": "mixed",
+      "QGE": "1660.50",
+      "QGC": "1620.90",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "8.02",
+      "rC": "7.83",
+      "A": "985.71",
+      "T": "77.19",
+      "rent": "23.16",
+      "aid": "156.24",
+      "direct": "78.30"
+    },
+    {
+      "region": "asturias",
+      "case": "different minima",
+      "QGE": "14.25",
+      "QGC": "0.00",
+      "QSE": "990.00",
+      "QSC": "951.52",
+      "rE": "0.25",
+      "rC": "0.00",
+      "A": "876.92",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "2.19",
+      "direct": "0.00"
+    },
+    {
+      "region": "asturias",
+      "case": "joint reduction",
+      "QGE": "3070.50",
+      "QGC": "2936.90",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "10.20",
+      "rC": "9.75",
+      "A": "10320.00",
+      "T": "1006.94",
+      "rent": "302.08",
+      "aid": "2058.84",
+      "direct": "1170.00"
+    },
+    {
+      "region": "balearic",
+      "case": "zero",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "balearic",
+      "case": "savings only",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "462.75",
+      "QSC": "462.75",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "balearic",
+      "case": "minimum spill",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "795.25",
+      "QSC": "795.25",
+      "rE": "0.00",
+      "rC": "0.00",
+      "A": "700.00",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "balearic",
+      "case": "general only",
+      "QGE": "1660.50",
+      "QGC": "1685.25",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "8.02",
+      "rC": "8.14",
+      "A": "985.71",
+      "T": "80.25",
+      "rent": "24.08",
+      "aid": "159.29",
+      "direct": "81.40"
+    },
+    {
+      "region": "balearic",
+      "case": "mixed",
+      "QGE": "1660.50",
+      "QGC": "1685.25",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "8.02",
+      "rC": "8.14",
+      "A": "985.71",
+      "T": "80.25",
+      "rent": "24.08",
+      "aid": "159.29",
+      "direct": "81.40"
+    },
+    {
+      "region": "balearic",
+      "case": "different minima",
+      "QGE": "14.25",
+      "QGC": "13.50",
+      "QSE": "990.00",
+      "QSC": "990.00",
+      "rE": "0.25",
+      "rC": "0.23",
+      "A": "876.92",
+      "T": "2.08",
+      "rent": "0.62",
+      "aid": "4.21",
+      "direct": "2.30"
+    },
+    {
+      "region": "balearic",
+      "case": "joint reduction",
+      "QGE": "3070.50",
+      "QGC": "3028.00",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "10.20",
+      "rC": "10.05",
+      "A": "10320.00",
+      "T": "1038.17",
+      "rent": "311.45",
+      "aid": "2089.80",
+      "direct": "1206.00"
+    },
+    {
+      "region": "cantabria",
+      "case": "zero",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "cantabria",
+      "case": "savings only",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "462.75",
+      "QSC": "462.75",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "cantabria",
+      "case": "minimum spill",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "795.25",
+      "QSC": "795.25",
+      "rE": "0.00",
+      "rC": "0.00",
+      "A": "700.00",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "cantabria",
+      "case": "general only",
+      "QGE": "1660.50",
+      "QGC": "1480.25",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "8.02",
+      "rC": "7.15",
+      "A": "985.71",
+      "T": "70.49",
+      "rent": "21.15",
+      "aid": "149.53",
+      "direct": "71.50"
+    },
+    {
+      "region": "cantabria",
+      "case": "mixed",
+      "QGE": "1660.50",
+      "QGC": "1480.25",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "8.02",
+      "rC": "7.15",
+      "A": "985.71",
+      "T": "70.49",
+      "rent": "21.15",
+      "aid": "149.53",
+      "direct": "71.50"
+    },
+    {
+      "region": "cantabria",
+      "case": "different minima",
+      "QGE": "14.25",
+      "QGC": "12.75",
+      "QSE": "990.00",
+      "QSC": "990.00",
+      "rE": "0.25",
+      "rC": "0.22",
+      "A": "876.92",
+      "T": "1.96",
+      "rent": "0.59",
+      "aid": "4.12",
+      "direct": "2.20"
+    },
+    {
+      "region": "cantabria",
+      "case": "joint reduction",
+      "QGE": "3070.50",
+      "QGC": "2832.75",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "10.20",
+      "rC": "9.41",
+      "A": "10320.00",
+      "T": "971.23",
+      "rent": "291.37",
+      "aid": "2023.75",
+      "direct": "1129.20"
+    },
+    {
+      "region": "canarias",
+      "case": "zero",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "canarias",
+      "case": "savings only",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "462.75",
+      "QSC": "457.43",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "canarias",
+      "case": "minimum spill",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "795.25",
+      "QSC": "789.93",
+      "rE": "0.00",
+      "rC": "0.00",
+      "A": "700.00",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "canarias",
+      "case": "general only",
+      "QGE": "1660.50",
+      "QGC": "1564.21",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "8.02",
+      "rC": "7.55",
+      "A": "985.71",
+      "T": "74.49",
+      "rent": "22.35",
+      "aid": "153.48",
+      "direct": "75.50"
+    },
+    {
+      "region": "canarias",
+      "case": "mixed",
+      "QGE": "1660.50",
+      "QGC": "1564.21",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "8.02",
+      "rC": "7.55",
+      "A": "985.71",
+      "T": "74.49",
+      "rent": "22.35",
+      "aid": "153.48",
+      "direct": "75.50"
+    },
+    {
+      "region": "canarias",
+      "case": "different minima",
+      "QGE": "14.25",
+      "QGC": "8.46",
+      "QSE": "990.00",
+      "QSC": "990.00",
+      "rE": "0.25",
+      "rC": "0.14",
+      "A": "876.92",
+      "T": "1.30",
+      "rent": "0.39",
+      "aid": "3.42",
+      "direct": "1.40"
+    },
+    {
+      "region": "canarias",
+      "case": "joint reduction",
+      "QGE": "3070.50",
+      "QGC": "2880.21",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "10.20",
+      "rC": "9.56",
+      "A": "10320.00",
+      "T": "987.50",
+      "rent": "296.25",
+      "aid": "2039.23",
+      "direct": "1147.20"
+    },
+    {
+      "region": "extremadura",
+      "case": "zero",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "extremadura",
+      "case": "savings only",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "462.75",
+      "QSC": "462.75",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "extremadura",
+      "case": "minimum spill",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "795.25",
+      "QSC": "795.25",
+      "rE": "0.00",
+      "rC": "0.00",
+      "A": "700.00",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "extremadura",
+      "case": "general only",
+      "QGE": "1660.50",
+      "QGC": "1370.37",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "8.02",
+      "rC": "6.62",
+      "A": "985.71",
+      "T": "65.26",
+      "rent": "19.58",
+      "aid": "144.31",
+      "direct": "66.20"
+    },
+    {
+      "region": "extremadura",
+      "case": "mixed",
+      "QGE": "1660.50",
+      "QGC": "1370.37",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "8.02",
+      "rC": "6.62",
+      "A": "985.71",
+      "T": "65.26",
+      "rent": "19.58",
+      "aid": "144.31",
+      "direct": "66.20"
+    },
+    {
+      "region": "extremadura",
+      "case": "different minima",
+      "QGE": "14.25",
+      "QGC": "11.62",
+      "QSE": "990.00",
+      "QSC": "990.00",
+      "rE": "0.25",
+      "rC": "0.20",
+      "A": "876.92",
+      "T": "1.79",
+      "rent": "0.54",
+      "aid": "3.95",
+      "direct": "2.00"
+    },
+    {
+      "region": "extremadura",
+      "case": "joint reduction",
+      "QGE": "3070.50",
+      "QGC": "2962.87",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "10.20",
+      "rC": "9.84",
+      "A": "10320.00",
+      "T": "1015.84",
+      "rent": "304.75",
+      "aid": "2068.13",
+      "direct": "1180.80"
+    },
+    {
+      "region": "galicia",
+      "case": "zero",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "galicia",
+      "case": "savings only",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "462.75",
+      "QSC": "440.04",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "galicia",
+      "case": "minimum spill",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "795.25",
+      "QSC": "772.54",
+      "rE": "0.00",
+      "rC": "0.00",
+      "A": "700.00",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "galicia",
+      "case": "general only",
+      "QGE": "1660.50",
+      "QGC": "1546.43",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "8.02",
+      "rC": "7.47",
+      "A": "985.71",
+      "T": "73.64",
+      "rent": "22.09",
+      "aid": "152.69",
+      "direct": "74.70"
+    },
+    {
+      "region": "galicia",
+      "case": "mixed",
+      "QGE": "1660.50",
+      "QGC": "1546.43",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "8.02",
+      "rC": "7.47",
+      "A": "985.71",
+      "T": "73.64",
+      "rent": "22.09",
+      "aid": "152.69",
+      "direct": "74.70"
+    },
+    {
+      "region": "galicia",
+      "case": "different minima",
+      "QGE": "14.25",
+      "QGC": "0.00",
+      "QSE": "990.00",
+      "QSC": "981.54",
+      "rE": "0.25",
+      "rC": "0.00",
+      "A": "876.92",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "2.19",
+      "direct": "0.00"
+    },
+    {
+      "region": "galicia",
+      "case": "joint reduction",
+      "QGE": "3070.50",
+      "QGC": "2935.05",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "10.20",
+      "rC": "9.75",
+      "A": "10320.00",
+      "T": "1006.30",
+      "rent": "301.89",
+      "aid": "2058.84",
+      "direct": "1170.00"
+    },
+    {
+      "region": "valencia",
+      "case": "zero",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "valencia",
+      "case": "savings only",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "462.75",
+      "QSC": "408.97",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "valencia",
+      "case": "minimum spill",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "795.25",
+      "QSC": "742.52",
+      "rE": "0.00",
+      "rC": "0.00",
+      "A": "700.00",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "valencia",
+      "case": "general only",
+      "QGE": "1660.50",
+      "QGC": "1536.66",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "8.02",
+      "rC": "7.42",
+      "A": "985.71",
+      "T": "73.17",
+      "rent": "21.95",
+      "aid": "152.19",
+      "direct": "74.20"
+    },
+    {
+      "region": "valencia",
+      "case": "mixed",
+      "QGE": "1660.50",
+      "QGC": "1536.66",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "8.02",
+      "rC": "7.42",
+      "A": "985.71",
+      "T": "73.17",
+      "rent": "21.95",
+      "aid": "152.19",
+      "direct": "74.20"
+    },
+    {
+      "region": "valencia",
+      "case": "different minima",
+      "QGE": "14.25",
+      "QGC": "0.00",
+      "QSE": "990.00",
+      "QSC": "951.52",
+      "rE": "0.25",
+      "rC": "0.00",
+      "A": "876.92",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "2.19",
+      "direct": "0.00"
+    },
+    {
+      "region": "valencia",
+      "case": "joint reduction",
+      "QGE": "3070.50",
+      "QGC": "2871.36",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "10.20",
+      "rC": "9.53",
+      "A": "10320.00",
+      "T": "984.47",
+      "rent": "295.34",
+      "aid": "2036.14",
+      "direct": "1143.60"
+    },
+    {
+      "region": "catalan",
+      "case": "zero",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "catalan",
+      "case": "savings only",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "462.75",
+      "QSC": "462.75",
+      "rE": "0",
+      "rC": "0",
+      "A": "0",
+      "T": "0",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "catalan",
+      "case": "minimum spill",
+      "QGE": "0.00",
+      "QGC": "0.00",
+      "QSE": "795.25",
+      "QSC": "795.25",
+      "rE": "0.00",
+      "rC": "0.00",
+      "A": "700.00",
+      "T": "0.00",
+      "rent": "0.00",
+      "aid": "0.00",
+      "direct": "0.00"
+    },
+    {
+      "region": "catalan",
+      "case": "general only",
+      "QGE": "1660.50",
+      "QGC": "1685.25",
+      "QSE": "0.00",
+      "QSC": "0.00",
+      "rE": "8.02",
+      "rC": "8.14",
+      "A": "985.71",
+      "T": "80.25",
+      "rent": "24.08",
+      "aid": "159.29",
+      "direct": "81.40"
+    },
+    {
+      "region": "catalan",
+      "case": "mixed",
+      "QGE": "1660.50",
+      "QGC": "1685.25",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "8.02",
+      "rC": "8.14",
+      "A": "985.71",
+      "T": "80.25",
+      "rent": "24.08",
+      "aid": "159.29",
+      "direct": "81.40"
+    },
+    {
+      "region": "catalan",
+      "case": "different minima",
+      "QGE": "14.25",
+      "QGC": "14.25",
+      "QSE": "990.00",
+      "QSC": "990.00",
+      "rE": "0.25",
+      "rC": "0.25",
+      "A": "876.92",
+      "T": "2.19",
+      "rent": "0.66",
+      "aid": "4.38",
+      "direct": "2.50"
+    },
+    {
+      "region": "catalan",
+      "case": "joint reduction",
+      "QGE": "3070.50",
+      "QGC": "3143.75",
+      "QSE": "95.00",
+      "QSC": "95.00",
+      "rE": "10.20",
+      "rC": "10.44",
+      "A": "10320.00",
+      "T": "1077.86",
+      "rent": "323.36",
+      "aid": "2130.05",
+      "direct": "1252.80"
+    }
+  ]
+}

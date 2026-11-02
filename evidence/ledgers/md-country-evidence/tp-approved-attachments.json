@@ -1,0 +1,71 @@
+{
+  "status": "Actual current information/APAmodel annexes fully read; independent country review and remaining procedures pending",
+  "records": [
+    {
+      "article": "TP-INFORMATION-ANNEX2-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an_2_9md.docx",
+      "sha256": "e67d2ea9b399e29f07e47b15ad2de445a3656734e8802a99014f1c54653b36c3",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T01:10:16.103720+00:00",
+      "format": "Original official DOCX downloaded through normal exact visible link/download-event/path; full Word paragraph text/table cells retained and all rendered pages read/visually inspected",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/tp-information-annex2-2026.docx",
+      "binary_sha256": "a6b626d4ceeee2d63e19819ce78106e82e8f80c709b9112198e22ba2eae59955",
+      "binary_size_bytes": 74401,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/tp-information-annex2-2026-render/tp-information-annex2-2026.pdf",
+      "rendered_pdf_sha256": "eac0f2cd3d5b5f9e7c2b68c21264a8e6bbfdf548bf2cb3cdd8939272a491226d",
+      "rendered_pages": 20,
+      "visually_read_rendered_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=152738&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "2026-10-31; Order9currentOMF8/15January2026effective23January2026; Order8published23January2026",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_inconsistencies": "Linkedcurrent2026informationformcaptionincorrectlysaysOrder9February2023; actualparentisOrder9/26January2024,current23January2026amendmentandA5/B6/C8andB6columnschangedasOrder8. Preserveleadingzeroesanditsowncountrylabels;notagenericmodernISOsubstitution. Instruction25subpointsskip6andlabelcomments7whileactualcolumn6;fieldmappingcontrols."
+    },
+    {
+      "article": "TP-APA-MODEL-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2026/mo55-58ro/an3_9ro.docx",
+      "sha256": "e7198a2e12b93bd800cb156092ffb6e34d5f10619ea76bcb219f710b3eac7502",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T01:10:16.112185+00:00",
+      "format": "Original official DOCX downloaded through normal exact visible link/download-event/path; full Word paragraph text/table cells retained and all rendered pages read/visually inspected",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/tp-apa-application-model-2026.docx",
+      "binary_sha256": "a4c596703ea2880c2eabaab8c82c70c62c99cde03e5bd78f3953a134c67b5f92",
+      "binary_size_bytes": 37906,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/tp-apa-application-model-2026-render/tp-apa-application-model-2026.pdf",
+      "rendered_pdf_sha256": "d914dcbed156e8fdd8c886faa0b293db418ef9117195cd392267851c91f6388c",
+      "rendered_pages": 2,
+      "visually_read_rendered_pages": [
+        1,
+        2
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=152708&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "2026-10-31; Order9currentOMF8/15January2026effective23January2026; Order8published23January2026",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "read_scope": "Complete2pageapprovedmodelI-XIII,including10daynotificationundertakinginXI. Itdoesnotlabelthat10dayperiodworkingdays;noinferenceofactualfilingacceptance/payment/refundverification."
+    }
+  ]
+}

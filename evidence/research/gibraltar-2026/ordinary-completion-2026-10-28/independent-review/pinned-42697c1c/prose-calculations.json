@@ -1,0 +1,1313 @@
+{
+  "checks": [
+    {
+      "guide": "books",
+      "case": "bank reconciliation",
+      "expression": "12400-12000",
+      "expected": "400",
+      "actual": "400",
+      "passed": true
+    },
+    {
+      "guide": "accounts",
+      "case": "six-month audit threshold",
+      "expression": "1750000*6/12",
+      "expected": "875000",
+      "actual": "875000.0",
+      "passed": true
+    },
+    {
+      "guide": "accounts",
+      "case": "first late fee total",
+      "expression": "26+180.50",
+      "expected": "206.5",
+      "actual": "206.5",
+      "passed": true
+    },
+    {
+      "guide": "accounts",
+      "case": "second late fee total",
+      "expression": "26+309",
+      "expected": "335",
+      "actual": "335",
+      "passed": true
+    },
+    {
+      "guide": "accounts",
+      "case": "gross group turnover",
+      "expression": "8000000+4000000",
+      "expected": "12000000",
+      "actual": "12000000",
+      "passed": true
+    },
+    {
+      "guide": "accounts",
+      "case": "net group turnover",
+      "expression": "12000000-2000000",
+      "expected": "10000000",
+      "actual": "10000000",
+      "passed": true
+    },
+    {
+      "guide": "accounts",
+      "case": "net group assets",
+      "expression": "6000000-1000000",
+      "expected": "5000000",
+      "actual": "5000000",
+      "passed": true
+    },
+    {
+      "guide": "formation",
+      "case": "authorised capital",
+      "expression": "1000*1",
+      "expected": "1000",
+      "actual": "1000",
+      "passed": true
+    },
+    {
+      "guide": "formation",
+      "case": "subscribed capital",
+      "expression": "(100+100)*1",
+      "expected": "200",
+      "actual": "200",
+      "passed": true
+    },
+    {
+      "guide": "formation",
+      "case": "unissued shares",
+      "expression": "1000-200",
+      "expected": "800",
+      "actual": "800",
+      "passed": true
+    },
+    {
+      "guide": "formation",
+      "case": "incorporation fee and stamp",
+      "expression": "100+10",
+      "expected": "110",
+      "actual": "110",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "offshore counted days",
+      "expression": "28+12-10",
+      "expected": "30",
+      "actual": "30",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "offshore extra day",
+      "expression": "30+1",
+      "expected": "31",
+      "actual": "31",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "six-month allocation",
+      "expression": "180000/18*6",
+      "expected": "60000",
+      "actual": "60000.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "twelve-month allocation",
+      "expression": "180000/18*12",
+      "expected": "120000",
+      "actual": "120000.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "branded gifts boundary",
+      "expression": "60+40",
+      "expected": "100",
+      "actual": "100",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "branded gifts above boundary",
+      "expression": "100+1",
+      "expected": "101",
+      "actual": "101",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "tax bridge",
+      "expression": "100000+10000+2000-8000",
+      "expected": "104000",
+      "actual": "104000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "plant first-year plus pool",
+      "expression": "30000+(40000-30000)*0.15",
+      "expected": "31500",
+      "actual": "31500.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "plant closing pool",
+      "expression": "(40000-30000)*0.85",
+      "expected": "8500",
+      "actual": "8500.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "computer first-year plus pool",
+      "expression": "50000+(60000-50000)*0.15",
+      "expected": "51500",
+      "actual": "51500.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "computer closing pool",
+      "expression": "(60000-50000)*0.85",
+      "expected": "8500",
+      "actual": "8500.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "short-period pool allowance",
+      "expression": "10000*0.15*6/12",
+      "expected": "750",
+      "actual": "750.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "exact residual boundary normal allowance",
+      "expression": "1000*0.15",
+      "expected": "150",
+      "actual": "150.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "disposal pool allowance",
+      "expression": "(20000-5000)*0.15",
+      "expected": "2250",
+      "actual": "2250.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "building eligible cost",
+      "expression": "900000-250000",
+      "expected": "650000",
+      "actual": "650000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "building allowance",
+      "expression": "650000*0.04",
+      "expected": "26000",
+      "actual": "26000.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "qualifying stock consideration",
+      "expression": "25000+5000",
+      "expected": "30000",
+      "actual": "30000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "other stock market value",
+      "expression": "18000+12000",
+      "expected": "30000",
+      "actual": "30000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "stock value reconciliation",
+      "expression": "30000-20000",
+      "expected": "10000",
+      "actual": "10000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "ordinary unused losses",
+      "expression": "80000-50000",
+      "expected": "30000",
+      "actual": "30000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "designated cap",
+      "expression": "100000*0.50",
+      "expected": "50000",
+      "actual": "50000.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "mixed40 residual",
+      "expression": "100000-40000-50000",
+      "expected": "10000",
+      "actual": "10000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "mixed40 unused restricted",
+      "expression": "80000-50000",
+      "expected": "30000",
+      "actual": "30000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "mixed70 restricted use",
+      "expression": "min(80000,50000,100000-70000)",
+      "expected": "30000",
+      "actual": "30000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "mixed70 unused restricted",
+      "expression": "80000-30000",
+      "expected": "50000",
+      "actual": "50000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "transferred loss pool",
+      "expression": "100000*0.40",
+      "expected": "40000",
+      "actual": "40000.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "instalment",
+      "expression": "20000/2",
+      "expected": "10000",
+      "actual": "10000.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "balance",
+      "expression": "26000-20000",
+      "expected": "6000",
+      "actual": "6000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "overpayment",
+      "expression": "20000-18000",
+      "expected": "2000",
+      "actual": "2000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "annualised short-period instalment",
+      "expression": "6000*12/6/2",
+      "expected": "6000",
+      "actual": "6000.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "shared expense allocation",
+      "expression": "12000*0.75",
+      "expected": "9000",
+      "actual": "9000.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "branch expense ceiling",
+      "expression": "500000*0.05",
+      "expected": "25000",
+      "actual": "25000.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "branch expense restriction",
+      "expression": "40000-25000",
+      "expected": "15000",
+      "actual": "15000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "construction first period",
+      "expression": "1000000*0.30",
+      "expected": "300000",
+      "actual": "300000.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "construction total",
+      "expression": "300000+7*100000",
+      "expected": "1000000",
+      "actual": "1000000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "construction equal split",
+      "expression": "300000/2",
+      "expected": "150000",
+      "actual": "150000.0",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "late small-company return cumulative penalty",
+      "expression": "100+450+750",
+      "expected": "1300",
+      "actual": "1300",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "late medium-company return cumulative penalty",
+      "expression": "750+1250+2000",
+      "expected": "4000",
+      "actual": "4000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "late large-company return cumulative penalty",
+      "expression": "1500+3500+5000",
+      "expected": "10000",
+      "actual": "10000",
+      "passed": true
+    },
+    {
+      "guide": "corporate",
+      "case": "remaining balance surcharge",
+      "expression": "600*0.20",
+      "expected": "120",
+      "actual": "120.0",
+      "passed": true
+    },
+    {
+      "guide": "einvoice",
+      "case": "line1",
+      "expression": "10*80",
+      "expected": "800",
+      "actual": "800",
+      "passed": true
+    },
+    {
+      "guide": "einvoice",
+      "case": "line2",
+      "expression": "3*50",
+      "expected": "150",
+      "actual": "150",
+      "passed": true
+    },
+    {
+      "guide": "einvoice",
+      "case": "unadjusted",
+      "expression": "800+150",
+      "expected": "950",
+      "actual": "950",
+      "passed": true
+    },
+    {
+      "guide": "einvoice",
+      "case": "invoice total",
+      "expression": "950-50+20",
+      "expected": "920",
+      "actual": "920",
+      "passed": true
+    },
+    {
+      "guide": "einvoice",
+      "case": "payable",
+      "expression": "920-200",
+      "expected": "720",
+      "actual": "720",
+      "passed": true
+    },
+    {
+      "guide": "einvoice",
+      "case": "flagged duplicate allowance result",
+      "expression": "720-50",
+      "expected": "670",
+      "actual": "670",
+      "passed": true
+    },
+    {
+      "guide": "minimum-tax",
+      "case": "topup before FX",
+      "expression": "0.03*800000+2000",
+      "expected": "26000",
+      "actual": "26000.0",
+      "passed": true
+    },
+    {
+      "guide": "minimum-tax",
+      "case": "topup after assumed FX",
+      "expression": "26000*0.85",
+      "expected": "22100",
+      "actual": "22100.0",
+      "passed": true
+    },
+    {
+      "guide": "minimum-tax",
+      "case": "zero percentage retains additional tax",
+      "expression": "0*800000+2000",
+      "expected": "2000",
+      "actual": "2000",
+      "passed": true
+    },
+    {
+      "guide": "minimum-tax",
+      "case": "late first surcharge",
+      "expression": "10000*0.02",
+      "expected": "200",
+      "actual": "200.0",
+      "passed": true
+    },
+    {
+      "guide": "minimum-tax",
+      "case": "late second surcharge",
+      "expression": "10200*0.05",
+      "expected": "510",
+      "actual": "510.0",
+      "passed": true
+    },
+    {
+      "guide": "minimum-tax",
+      "case": "late total",
+      "expression": "10000+200+510",
+      "expected": "10710",
+      "actual": "10710",
+      "passed": true
+    },
+    {
+      "guide": "minimum-tax",
+      "case": "late second first surcharge paid",
+      "expression": "10000*0.05",
+      "expected": "500",
+      "actual": "500.0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "minimum deduction top-up",
+      "expression": "4343-3455",
+      "expected": "888",
+      "actual": "888",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "insurance part-year",
+      "expression": "2400*9/12",
+      "expected": "1800",
+      "actual": "1800.0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "GIBS insurance part-year",
+      "expression": "3000*9/12",
+      "expected": "2250",
+      "actual": "2250.0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "taper17601",
+      "expression": "64.40-0.2*100",
+      "expected": "44.4",
+      "actual": "44.400000000000006",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "taper17822",
+      "expression": "64.40-0.2*(17822-17501)",
+      "expected": "0.2",
+      "actual": "0.20000000000000284",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "high-income taper101000",
+      "expression": "1000-0.3*(101000-100000)",
+      "expected": "700",
+      "actual": "700.0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "GIBS40000",
+      "expression": "17000*0.16+8000*0.19+15000*0.25",
+      "expected": "7990",
+      "actual": "7990.0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "ABS20000",
+      "expression": "4000*0.14+12000*0.17+4000*0.39",
+      "expected": "4160",
+      "actual": "4160.0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "instalment",
+      "expression": "6000/2",
+      "expected": "3000",
+      "actual": "3000.0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "balance",
+      "expression": "7500-6000",
+      "expected": "1500",
+      "actual": "1500",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "overpayment",
+      "expression": "6000-5000",
+      "expected": "1000",
+      "actual": "1000",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "imported pension assumed component",
+      "expression": "20000*0.025",
+      "expected": "500",
+      "actual": "500.0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "death deduction reduction",
+      "expression": "6000*8/12",
+      "expected": "4000",
+      "actual": "4000.0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "death deduction remaining",
+      "expression": "6000-4000",
+      "expected": "2000",
+      "actual": "2000",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "compound statutory surcharge",
+      "expression": "1000*1.10*1.20",
+      "expected": "1320",
+      "actual": "1320.0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "nonresident relief floor",
+      "expression": "10000*20000/50000",
+      "expected": "4000",
+      "actual": "4000.0",
+      "passed": true
+    },
+    {
+      "guide": "individual",
+      "case": "restriction",
+      "expression": "4000-3000",
+      "expected": "1000",
+      "actual": "1000",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "PAYE reconciliation",
+      "expression": "4800-4500",
+      "expected": "300",
+      "actual": "300",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "SI reconciliation",
+      "expression": "2000+2800-4600",
+      "expected": "200",
+      "actual": "200",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "conditional monthly pay",
+      "expression": "1623.50-125.89-162.35",
+      "expected": "1335.26",
+      "actual": "1335.26",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "conditional monthly cost",
+      "expression": "1623.50+243.65",
+      "expected": "1867.15",
+      "actual": "1867.15",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "conditional PAYE compounding",
+      "expression": "1000*1.02*1.02",
+      "expected": "1040.4",
+      "actual": "1040.4",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "rounding warning annual",
+      "expression": "176.76*12",
+      "expected": "2121.12",
+      "actual": "2121.12",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "rounding warning difference",
+      "expression": "2121.21-2121.12",
+      "expected": "0.09",
+      "actual": "0.09000000000014552",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "small employer credit",
+      "expression": "7*100+60",
+      "expected": "760",
+      "actual": "760",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "first-year employer credit",
+      "expression": "15*100",
+      "expected": "1500",
+      "actual": "1500",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "correct source product1",
+      "expression": "100*0.20",
+      "expected": "20",
+      "actual": "20.0",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "correct source product2",
+      "expression": "120*0.20",
+      "expected": "24",
+      "actual": "24.0",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "self-employed reconciliation",
+      "expression": "2400-2250",
+      "expected": "150",
+      "actual": "150",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "record penalty below10",
+      "expression": "50+250",
+      "expected": "300",
+      "actual": "300",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "record penalty10",
+      "expression": "100+500",
+      "expected": "600",
+      "actual": "600",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "record penalty50",
+      "expression": "250+1250",
+      "expected": "1500",
+      "actual": "1500",
+      "passed": true
+    },
+    {
+      "guide": "payroll",
+      "case": "record penalty250",
+      "expression": "500+2500",
+      "expected": "3000",
+      "actual": "3000",
+      "passed": true
+    },
+    {
+      "guide": "appeals",
+      "case": "postponement disputed amount",
+      "expression": "20000-12000",
+      "expected": "8000",
+      "actual": "8000",
+      "passed": true
+    },
+    {
+      "guide": "appeals",
+      "case": "overpayment claim",
+      "expression": "18000-14500",
+      "expected": "3500",
+      "actual": "3500",
+      "passed": true
+    },
+    {
+      "guide": "property",
+      "case": "350k duty",
+      "expression": "250000*0.02+100000*0.055",
+      "expected": "10500",
+      "actual": "10500.0",
+      "passed": true
+    },
+    {
+      "guide": "property",
+      "case": "400k duty",
+      "expression": "10500+50000*0.035",
+      "expected": "12250",
+      "actual": "12250.0",
+      "passed": true
+    },
+    {
+      "guide": "property",
+      "case": "900k duty",
+      "expression": "10500+450000*0.035+100000*0.045",
+      "expected": "30750",
+      "actual": "30750.0",
+      "passed": true
+    },
+    {
+      "guide": "property",
+      "case": "buyer-status relief result",
+      "expression": "50000*0.055+50000*0.035",
+      "expected": "4500",
+      "actual": "4500.0",
+      "passed": true
+    },
+    {
+      "guide": "property",
+      "case": "special duty",
+      "expression": "400000*0.075",
+      "expected": "30000",
+      "actual": "30000.0",
+      "passed": true
+    },
+    {
+      "guide": "property",
+      "case": "separate duties reconciliation",
+      "expression": "30000+4500",
+      "expected": "34500",
+      "actual": "34500",
+      "passed": true
+    },
+    {
+      "guide": "property",
+      "case": "lower mortgage",
+      "expression": "2000*0.13",
+      "expected": "260",
+      "actual": "260.0",
+      "passed": true
+    },
+    {
+      "guide": "property",
+      "case": "higher mortgage",
+      "expression": "2001*0.20",
+      "expected": "400.2",
+      "actual": "400.20000000000005",
+      "passed": true
+    },
+    {
+      "guide": "disposals",
+      "case": "exclude residence",
+      "expression": "5-1",
+      "expected": "4",
+      "actual": "4",
+      "passed": true
+    },
+    {
+      "guide": "disposals",
+      "case": "historical distinct count",
+      "expression": "4+1",
+      "expected": "5",
+      "actual": "5",
+      "passed": true
+    },
+    {
+      "guide": "Spain",
+      "case": "adjusted nights",
+      "expression": "170+35",
+      "expected": "205",
+      "actual": "205",
+      "passed": true
+    },
+    {
+      "guide": "Spain",
+      "case": "turnover aggregation",
+      "expression": "5500000+1000000",
+      "expected": "6500000",
+      "actual": "6500000",
+      "passed": true
+    },
+    {
+      "guide": "Spain",
+      "case": "income below5",
+      "expression": "490000/10000000*100",
+      "expected": "4.9",
+      "actual": "4.9",
+      "passed": true
+    },
+    {
+      "guide": "Spain",
+      "case": "income exact5",
+      "expression": "500000/10000000*100",
+      "expected": "5",
+      "actual": "5.0",
+      "passed": true
+    },
+    {
+      "guide": "Spain",
+      "case": "Gibraltar income exact75",
+      "expression": "7500000/10000000*100",
+      "expected": "75",
+      "actual": "75.0",
+      "passed": true
+    },
+    {
+      "guide": "Spain",
+      "case": "Gibraltar income76",
+      "expression": "7600000/10000000*100",
+      "expected": "76",
+      "actual": "76.0",
+      "passed": true
+    },
+    {
+      "guide": "reliefs",
+      "case": "training enhanced addition",
+      "expression": "2000*0.50",
+      "expected": "1000",
+      "actual": "1000.0",
+      "passed": true
+    },
+    {
+      "guide": "reliefs",
+      "case": "training total deduction",
+      "expression": "2000+1000",
+      "expected": "3000",
+      "actual": "3000",
+      "passed": true
+    },
+    {
+      "guide": "reliefs",
+      "case": "planning total cap",
+      "expression": "min(6200,5000)",
+      "expected": "5000",
+      "actual": "5000",
+      "passed": true
+    },
+    {
+      "guide": "reliefs",
+      "case": "planning current tax cap",
+      "expression": "min(5000,3000)",
+      "expected": "3000",
+      "actual": "3000",
+      "passed": true
+    },
+    {
+      "guide": "transaction-tax",
+      "case": "import base",
+      "expression": "10000+1000+200",
+      "expected": "11200",
+      "actual": "11200",
+      "passed": true
+    },
+    {
+      "guide": "transaction-tax",
+      "case": "import liability",
+      "expression": "11200*0.15",
+      "expected": "1680",
+      "actual": "1680.0",
+      "passed": true
+    },
+    {
+      "guide": "transaction-tax",
+      "case": "duplicate freight overstatement",
+      "expression": "400*0.15",
+      "expected": "60",
+      "actual": "60.0",
+      "passed": true
+    },
+    {
+      "guide": "transaction-tax",
+      "case": "local production",
+      "expression": "8000*0.15",
+      "expected": "1200",
+      "actual": "1200.0",
+      "passed": true
+    },
+    {
+      "guide": "transaction-tax",
+      "case": "incorrect production cost method",
+      "expression": "6000*0.15",
+      "expected": "900",
+      "actual": "900.0",
+      "passed": true
+    },
+    {
+      "guide": "transaction-tax",
+      "case": "future rate illustration15",
+      "expression": "1000*0.15",
+      "expected": "150",
+      "actual": "150.0",
+      "passed": true
+    },
+    {
+      "guide": "transaction-tax",
+      "case": "future rate illustration16",
+      "expression": "1000*0.16",
+      "expected": "160",
+      "actual": "160.0",
+      "passed": true
+    },
+    {
+      "guide": "transaction-tax",
+      "case": "mixed weighted rate",
+      "expression": "0.60*0.10+0.40*0",
+      "expected": "0.06",
+      "actual": "0.06",
+      "passed": true
+    },
+    {
+      "guide": "transaction-tax",
+      "case": "counterfactual duty",
+      "expression": "100000*0.06",
+      "expected": "6000",
+      "actual": "6000.0",
+      "passed": true
+    },
+    {
+      "guide": "transaction-tax",
+      "case": "positive difference",
+      "expression": "15000-6000",
+      "expected": "9000",
+      "actual": "9000",
+      "passed": true
+    },
+    {
+      "guide": "transaction-tax",
+      "case": "deduction after cap",
+      "expression": "min(9000,12000*0.50)",
+      "expected": "6000",
+      "actual": "6000.0",
+      "passed": true
+    },
+    {
+      "guide": "transaction-tax",
+      "case": "income tax saved on assumed rate",
+      "expression": "6000*0.15",
+      "expected": "900",
+      "actual": "900.0",
+      "passed": true
+    },
+    {
+      "guide": "UK-employment",
+      "case": "cross-year days",
+      "expression": "100+83",
+      "expected": "183",
+      "actual": "183",
+      "passed": true
+    },
+    {
+      "guide": "UK-employment",
+      "case": "extra countable day",
+      "expression": "183+1",
+      "expected": "184",
+      "actual": "184",
+      "passed": true
+    },
+    {
+      "guide": "UK-employment",
+      "case": "same income pension residual",
+      "expression": "3000-min(3000,2000)",
+      "expected": "1000",
+      "actual": "1000",
+      "passed": true
+    },
+    {
+      "guide": "UK-employment",
+      "case": "higher foreign tax residual",
+      "expression": "3000-min(3000,4000)",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "guide": "UK-investment",
+      "case": "ownership249",
+      "expression": "249/1000*100",
+      "expected": "24.9",
+      "actual": "24.9",
+      "passed": true
+    },
+    {
+      "guide": "UK-investment",
+      "case": "ownership250",
+      "expression": "250/1000*100",
+      "expected": "25",
+      "actual": "25.0",
+      "passed": true
+    },
+    {
+      "guide": "UK-investment",
+      "case": "property-rich exact",
+      "expression": "5000000/10000000*100",
+      "expected": "50",
+      "actual": "50.0",
+      "passed": true
+    },
+    {
+      "guide": "UK-investment",
+      "case": "property-rich above",
+      "expression": "5100000/10000000*100",
+      "expected": "51",
+      "actual": "51.0",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "attributed votes",
+      "expression": "40+20",
+      "expected": "60",
+      "actual": "60",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "excess interest",
+      "expression": "12000-8000",
+      "expected": "4000",
+      "actual": "4000",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "thin-cap above",
+      "expression": "600000/100000",
+      "expected": "6",
+      "actual": "6.0",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "thin-cap equality",
+      "expression": "500000/100000",
+      "expected": "5",
+      "actual": "5.0",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "security equality",
+      "expression": "100000/200000*100",
+      "expected": "50",
+      "actual": "50.0",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "security below",
+      "expression": "99999/200000*100",
+      "expected": "49.9995",
+      "actual": "49.999500000000005",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "aggregate expense allowed",
+      "expression": "min(80000,1000000*0.05,(100000-40000)*0.75)",
+      "expected": "45000",
+      "actual": "45000.0",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "expense restriction",
+      "expression": "80000-45000",
+      "expected": "35000",
+      "actual": "35000",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "separate dividend component",
+      "expression": "40000-30000",
+      "expected": "10000",
+      "actual": "10000",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "ordinary EBITDA limb",
+      "expression": "6000000*0.30",
+      "expected": "1800000",
+      "actual": "1800000.0",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "ordinary net-cost deduction",
+      "expression": "min(4000000,max(1800000,3000000))",
+      "expected": "3000000",
+      "actual": "3000000",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "ordinary carryforward",
+      "expression": "4000000-3000000",
+      "expected": "1000000",
+      "actual": "1000000",
+      "passed": true
+    },
+    {
+      "guide": "connected-party",
+      "case": "equality no disallowance",
+      "expression": "3000000-min(3000000,max(10000000*0.30,3000000))",
+      "expected": "0",
+      "actual": "0",
+      "passed": true
+    },
+    {
+      "guide": "foreign-relief",
+      "case": "allocated tax",
+      "expression": "15000*40000/100000",
+      "expected": "6000",
+      "actual": "6000.0",
+      "passed": true
+    },
+    {
+      "guide": "foreign-relief",
+      "case": "higher foreign tax credit",
+      "expression": "min(6000,8000)",
+      "expected": "6000",
+      "actual": "6000",
+      "passed": true
+    },
+    {
+      "guide": "foreign-relief",
+      "case": "lower foreign tax credit",
+      "expression": "min(6000,4500)",
+      "expected": "4500",
+      "actual": "4500",
+      "passed": true
+    },
+    {
+      "guide": "foreign-relief",
+      "case": "foreign unilateral reduction",
+      "expression": "6000-2000",
+      "expected": "4000",
+      "actual": "4000",
+      "passed": true
+    },
+    {
+      "guide": "foreign-relief",
+      "case": "treaty lower foreign tax residual",
+      "expression": "6000-4500",
+      "expected": "1500",
+      "actual": "1500",
+      "passed": true
+    },
+    {
+      "guide": "foreign-relief",
+      "case": "corporate exit base",
+      "expression": "1000000-600000",
+      "expected": "400000",
+      "actual": "400000",
+      "passed": true
+    },
+    {
+      "guide": "foreign-relief",
+      "case": "retainedPE excluded difference",
+      "expression": "300000-150000",
+      "expected": "150000",
+      "actual": "150000",
+      "passed": true
+    }
+  ],
+  "date_checks": [
+    {
+      "case": "six-year claim/retention",
+      "start": "2025-12-31",
+      "result": "2031-12-31"
+    },
+    {
+      "case": "twenty-year assessment",
+      "start": "2025-12-31",
+      "result": "2045-12-31"
+    },
+    {
+      "case": "inclusive90daytransition",
+      "start": "2026-07-15",
+      "result": "2026-10-12"
+    },
+    {
+      "case": "2026relocationplusfour",
+      "result": "2030"
+    },
+    {
+      "case": "minimumtax18month",
+      "start": "2024-12-31",
+      "result": "2026-06-30"
+    },
+    {
+      "case": "minimumtax15month",
+      "start": "2024-12-31",
+      "result": "2026-03-31"
+    },
+    {
+      "case": "deaththirdfollowingassessmentyear",
+      "start": "2026-10-15",
+      "result": "2030-06-30"
+    }
+  ],
+  "failures": 0
+}

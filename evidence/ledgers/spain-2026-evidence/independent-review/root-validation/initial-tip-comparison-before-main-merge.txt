@@ -1,0 +1,57 @@
+ERROR   skills/international/andorra/ad-corporate-income-tax.md: [date-regression] last_updated moved backwards: 2026-10-27 -> 2026-07-13
+ERROR   skills/international/andorra/ad-corporate-income-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (67d6271fc058 -> db141209572d)
+ERROR   skills/international/andorra/ad-corporate-income-tax.md: [version-removed] frontmatter version was removed
+ERROR   skills/international/andorra/ad-income-tax.md: [date-regression] last_updated moved backwards: 2026-10-27 -> 2026-07-13
+ERROR   skills/international/andorra/ad-income-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (80f509c025e5 -> b175beef0085)
+ERROR   skills/international/andorra/ad-income-tax.md: [version-removed] frontmatter version was removed
+ERROR   skills/international/andorra/ad-non-resident-income-tax.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/international/andorra/ad-payroll-social.md: [date-regression] last_updated moved backwards: 2026-10-27 -> 2026-07-13
+ERROR   skills/international/andorra/ad-payroll-social.md: [unversioned-body-change] body changed without advancing last_updated or version (4f22e023d67e -> d7972f93bfd7)
+ERROR   skills/international/andorra/ad-payroll-social.md: [version-removed] frontmatter version was removed
+ERROR   skills/international/andorra/ad-tax-overview.md: [date-regression] last_updated moved backwards: 2026-10-23 -> 2026-07-13
+ERROR   skills/international/andorra/ad-tax-overview.md: [unversioned-body-change] body changed without advancing last_updated or version (ee632bb9c369 -> 01819123071a)
+ERROR   skills/international/andorra/ad-tax-overview.md: [version-removed] frontmatter version was removed
+ERROR   skills/international/andorra/ad-transfer-pricing.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/international/andorra/andorra-igi.md: [date-regression] last_updated moved backwards: 2026-10-27 -> 2026-07-13
+ERROR   skills/international/andorra/andorra-igi.md: [unversioned-body-change] body changed without advancing last_updated or version (a3c4602fd845 -> c957f57f09b0)
+ERROR   skills/international/andorra/andorra-igi.md: [version-regression] frontmatter version moved backwards: 2.1 -> 2.0
+ERROR   skills/international/guernsey/gg-company-accounts-and-reporting.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/international/guernsey/gg-company-formation.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/international/guernsey/gg-corporate-tax-substance.md: [date-regression] last_updated moved backwards: 2026-10-28 -> 2026-10-23
+ERROR   skills/international/guernsey/gg-corporate-tax-substance.md: [heading-version-regression] body heading version moved backwards: v1.1 -> v0.1
+ERROR   skills/international/guernsey/gg-corporate-tax-substance.md: [unversioned-body-change] body changed without advancing last_updated or version (20e14a5b6f47 -> 89b432d17b42)
+ERROR   skills/international/guernsey/gg-corporate-tax-substance.md: [version-regression] frontmatter version moved backwards: 1.1 -> 0.1
+ERROR   skills/international/guernsey/gg-gst-transition.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/international/guernsey/gg-individual-income-tax.md: [date-regression] last_updated moved backwards: 2026-10-28 -> 2026-10-23
+ERROR   skills/international/guernsey/gg-individual-income-tax.md: [heading-version-regression] body heading version moved backwards: v0.10 -> v0.1
+ERROR   skills/international/guernsey/gg-individual-income-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (c42ac0350b58 -> eaf22a76ef4d)
+ERROR   skills/international/guernsey/gg-individual-income-tax.md: [version-regression] frontmatter version moved backwards: 0.10 -> 0.1
+ERROR   skills/international/guernsey/gg-payroll-social-insurance.md: [date-regression] last_updated moved backwards: 2026-10-28 -> 2026-10-23
+ERROR   skills/international/guernsey/gg-payroll-social-insurance.md: [heading-version-regression] body heading version moved backwards: v0.10 -> v0.1
+ERROR   skills/international/guernsey/gg-payroll-social-insurance.md: [unversioned-body-change] body changed without advancing last_updated or version (55660341ec98 -> a2c1461e866b)
+ERROR   skills/international/guernsey/gg-payroll-social-insurance.md: [version-regression] frontmatter version moved backwards: 0.10 -> 0.1
+ERROR   skills/international/guernsey/gg-property-document-duty.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/international/guernsey/gg-secondary-pensions.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/international/guernsey/gg-transfer-pricing-and-connected-transactions.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/international/guernsey/gg-uk-treaty-employment-and-relief.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/international/qatar/qa-company-formation.md: [date-regression] last_updated moved backwards: 2026-10-24 -> 2026-07-13
+ERROR   skills/international/qatar/qa-company-formation.md: [unversioned-body-change] body changed without advancing last_updated or version (3dd505f4fb06 -> 93d3115945d2)
+ERROR   skills/international/qatar/qa-company-formation.md: [version-removed] frontmatter version was removed
+ERROR   skills/international/qatar/qa-corporate-income-tax.md: [date-regression] last_updated moved backwards: 2026-10-24 -> 2026-07-13
+ERROR   skills/international/qatar/qa-corporate-income-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (fe49454004c3 -> 96c27e51c583)
+ERROR   skills/international/qatar/qa-corporate-income-tax.md: [version-removed] frontmatter version was removed
+ERROR   skills/international/qatar/qa-cross-border-tax.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/international/qatar/qa-payroll-social.md: [date-regression] last_updated moved backwards: 2026-10-24 -> 2026-07-13
+ERROR   skills/international/qatar/qa-payroll-social.md: [unversioned-body-change] body changed without advancing last_updated or version (943c495b8afe -> 2ddcfcbae7c7)
+ERROR   skills/international/qatar/qa-payroll-social.md: [version-removed] frontmatter version was removed
+ERROR   skills/international/qatar/qa-tax-overview.md: [date-regression] last_updated moved backwards: 2026-10-24 -> 2026-07-13
+ERROR   skills/international/qatar/qa-tax-overview.md: [unversioned-body-change] body changed without advancing last_updated or version (968034ff3ee1 -> b0c6f404b567)
+ERROR   skills/international/qatar/qa-tax-overview.md: [version-removed] frontmatter version was removed
+ERROR   skills/international/qatar/qa-transfer-pricing.md: [source-removal-needs-review] source-guide deletion or rename requires an explicit human-reviewed migration
+ERROR   skills/international/qatar/qa-vat-gst.md: [date-regression] last_updated moved backwards: 2026-10-24 -> 2026-07-13
+ERROR   skills/international/qatar/qa-vat-gst.md: [unversioned-body-change] body changed without advancing last_updated or version (68a3d1bcc5c5 -> 8201670668eb)
+ERROR   skills/international/qatar/qa-vat-gst.md: [version-removed] frontmatter version was removed
+ERROR   skills/international/qatar/qatar-tax.md: [date-regression] last_updated moved backwards: 2026-10-24 -> 2026-07-13
+ERROR   skills/international/qatar/qatar-tax.md: [unversioned-body-change] body changed without advancing last_updated or version (f2d6950253fe -> fbe68947ed75)
+ERROR   skills/international/qatar/qatar-tax.md: [version-regression] frontmatter version moved backwards: 2.1 -> 2.0
+Sync integrity checked 47 source guide(s): 56 error(s), 0 warning(s), 0 notice(s).

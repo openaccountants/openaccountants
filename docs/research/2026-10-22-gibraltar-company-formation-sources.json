@@ -1,0 +1,45 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/companies-act-2014-3106",
+      "sha256": "fe7678233b057cd5292dee13290140f866b69f6b34c429b138ccfd0353efbd8b"
+    },
+    {
+      "url": "https://www.companieshouse.gi/publications/FINC01.pdf",
+      "sha256": "bda2f66043e7f497e011692baf4808d88da4df3cf283e4795cf9110790569165"
+    },
+    {
+      "url": "https://www.companieshouse.gi/publications/FINC02.pdf",
+      "sha256": "f51db5ec22e737602d37b4547f46b09f33c61e0e4cc47d812de0258893263a2e"
+    },
+    {
+      "url": "https://www.companieshouse.gi/publications/FINC23.pdf",
+      "sha256": "0eddf47bef050d7dcbf69d89b5d807978540e40676f12a3e2be61f50f39ccb84"
+    },
+    {
+      "url": "https://www.companieshouse.gi/publications/C0010.pdf",
+      "sha256": "7203d4b012aa75832d63f0840a3ecf90700d168c058cf333d36d475162bd334b"
+    },
+    {
+      "url": "https://www.companieshouse.gi/publications/C0002.pdf",
+      "sha256": "c1cf257712b8760e8ffe9525a01f7f3fccfb0fd5e0de1b66c29d2aa114fe7394"
+    },
+    {
+      "url": "https://gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2025=211.pdf",
+      "sha256": "d1b73e1924dce04d5deb60987e4146095dfe91fc560a89da0a91da269b0b4789"
+    },
+    {
+      "url": "https://www.companieshouse.gi/publications/C0019.pdf",
+      "sha256": "a709918c42d6a36483784a5353bce84aefbd920e530b68f19ac1757ab7e93196"
+    },
+    {
+      "url": "https://www.gibraltar.gov.gi/business/companies-house/companies",
+      "sha256": "8086b4525278a0cf4d529f266bb2b4e6a2855a8dcba3e95e7802bae32fbce617"
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf",
+      "sha256": "e4fa70d64c57709f7d243c5d82b72301b6e2e133929f0d6e91ac7d56c2f35c75"
+    }
+  ]
+}

@@ -1,0 +1,1925 @@
+{
+  "scope": "Writer integrity/quote/location/arithmetic controls, not independent legal review or country completion",
+  "controls": 479,
+  "checks": [
+    {
+      "name": "Full inverse: only restored sentence plus version/date metadata and H1",
+      "pass_": true
+    },
+    {
+      "name": "Original two executable cases byte-exact",
+      "pass_": true
+    },
+    {
+      "name": "Protected CTA byte-exact",
+      "pass_": true
+    },
+    {
+      "name": "Protected byline byte-exact",
+      "pass_": true
+    },
+    {
+      "name": "All frozen-PR URL spellings and sequence retained",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0001 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0002 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0003 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0004 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0005 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0006 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0007 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0008 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0009 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0010 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0011 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0012 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0013 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0014 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0015 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0016 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0017 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0018 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0019 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0020 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0021 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0022 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0023 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0024 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0025 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0026 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0027 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0028 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0029 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0030 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0031 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0032 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0033 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0034 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0035 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0036 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0037 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0038 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0039 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0040 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0041 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0042 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0043 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0044 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0045 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0046 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0047 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0048 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0049 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0050 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0051 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0052 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0053 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0054 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0055 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0056 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0057 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0058 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0059 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0060 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0061 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0062 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0063 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0064 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0065 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0066 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0067 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0068 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0069 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0070 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0071 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0072 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0073 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0074 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0075 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0076 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0077 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0078 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0079 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0080 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0081 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0082 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0083 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0084 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0085 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0086 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0087 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0088 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0089 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0090 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0091 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0092 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0093 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0094 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0095 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0096 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0097 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0098 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0099 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0100 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0101 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0102 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0103 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0104 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0105 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0106 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0107 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0108 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0109 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0110 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0111 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0112 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0113 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0114 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0115 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0116 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0117 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0118 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0119 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0120 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0121 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0122 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0123 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0124 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0125 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0126 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0127 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0128 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0129 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0130 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0131 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0132 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0133 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0134 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0135 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0136 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0137 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0138 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0139 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0140 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0141 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0142 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0143 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0144 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0145 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0146 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0147 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0148 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0149 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0150 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0151 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0152 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0153 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0154 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0155 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0156 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0157 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0158 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0159 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0160 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0161 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0162 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0163 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0164 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0165 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0166 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0167 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0168 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0169 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0170 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0171 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0172 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0173 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0174 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0175 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0176 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0177 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0178 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0179 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0180 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0181 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0182 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0183 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0184 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0185 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0186 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0187 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0188 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0189 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0190 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0191 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0192 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0193 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0194 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0195 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0196 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0197 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0198 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0199 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0200 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0201 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0202 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0203 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0204 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0205 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0206 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0207 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0208 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0209 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0210 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0211 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0212 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0213 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0214 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0215 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0216 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0217 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0218 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0219 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0220 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0221 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0222 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0223 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0224 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0225 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0226 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0227 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0228 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0229 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0230 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0231 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0232 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0233 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0234 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0235 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0236 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0237 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0238 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0239 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0240 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0241 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0242 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0243 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0244 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0245 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0246 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0247 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0248 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0249 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0250 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0251 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0252 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0253 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0254 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0255 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0256 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0257 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0258 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0259 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0260 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0261 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0262 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0263 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0264 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0265 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0266 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0267 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0268 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0269 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0270 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0271 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0272 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0273 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0274 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0275 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0276 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0277 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0278 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0279 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0280 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0281 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0282 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0283 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0284 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0285 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0286 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0287 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0288 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0289 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0290 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0291 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0292 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0293 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0294 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0295 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0296 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0297 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0298 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0299 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0300 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0301 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0302 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0303 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0304 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0305 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0306 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0307 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0308 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "es-corporate-tax-0309 exact current wording",
+      "pass_": true
+    },
+    {
+      "name": "20218 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "202Ceuta exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "202base exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "202compulsory exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "202election exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "202electronic exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "202fiveSevenths exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "202instructions exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "202levels exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "202minimum exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "202nil exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "202nineteenTwentieths exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "202trigger exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ERDaccelerated exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "RDI17 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "RDI25 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "RDI8 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "RDIcost exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "TP232 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "TP232date exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ZEC30 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ZEC4 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ZECcap exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ZECcoefficient exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ZECinvestmentClock exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ZECjobs exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ZECminimum exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ZECwho exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "accounting exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "accrual exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "annual exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "annualExempt exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "banks30 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "booking exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "build2 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "cap20 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "capBreach exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "capCap20 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "capCaps exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "capCarry exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "capFundsExclusions exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "capHeadcountHold exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "capOwnFunds exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "capTable exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ceuta60 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ceutaDF exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ceutaEntry exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ceutaNew120 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ceutaOld exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ceutaOldCap exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "charity10 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "collective1 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "cooperative exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "creditCap exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "creditCarry exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "creditDiscount exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "debt6 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "depAlternatives exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "depMethods exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "disabledCredit exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "donation40 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "donationCap exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "enforcement exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "erd101 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "exit exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "exitOneYear exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "film20 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "filmCredit exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "financeExceptions exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "foreignCredit exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "foreignDividendCredit exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "foreignPE exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "foreignPEcessation exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "free300 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "freeEmployment exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "freeEmployment24 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "fund1 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "furniture10 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "hardware25 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "impairment15k exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "industrial3 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "innovation12 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "innovationGrant exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "install10 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "intangibles exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "interest exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "interest26 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "late exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "late25 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "level10 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "level5breach exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "levelNoDouble exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "lorry20 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "loss70 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "lossDAs exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "lossHistory exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "lossNew exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "lossShort exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "lossTrafficking exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "machinery12 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "microNew exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "microRates exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "minimum exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "minimumOrdering exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "netFinance exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "netFinanceCarry exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "new15 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "nondeduct exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "ordinary25 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "other10 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "participation10tax exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "participation5 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "participation95 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "participationDisposal exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "participationPayer exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "participationSmall exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "patrimonial exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "patrimonialRest exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "penalty191 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "penalty191grave exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "penalty191very exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "penalty198 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "pension0 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "period exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "periodAccounting exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "periodPay exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "periodclose exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "prepayments exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "reductions188 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "related exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "residence exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "software33 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "taxNet exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "transition exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "transport16 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "who exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "withholding exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "withholdingDuties exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "withholdingExempt exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "works2 exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "worldwide exact native quoted LF interval",
+      "pass_": true
+    },
+    {
+      "name": "LIS raw identity",
+      "pass_": true
+    },
+    {
+      "name": "LIS reader identity",
+      "pass_": true
+    },
+    {
+      "name": "LISold raw identity",
+      "pass_": true
+    },
+    {
+      "name": "LISold reader identity",
+      "pass_": true
+    },
+    {
+      "name": "CeutaAct raw identity",
+      "pass_": true
+    },
+    {
+      "name": "CeutaAct reader identity",
+      "pass_": true
+    },
+    {
+      "name": "Form202 raw identity",
+      "pass_": true
+    },
+    {
+      "name": "Form202 reader identity",
+      "pass_": true
+    },
+    {
+      "name": "Donations raw identity",
+      "pass_": true
+    },
+    {
+      "name": "Donations reader identity",
+      "pass_": true
+    },
+    {
+      "name": "ZEC raw identity",
+      "pass_": true
+    },
+    {
+      "name": "ZEC reader identity",
+      "pass_": true
+    },
+    {
+      "name": "TPForm raw identity",
+      "pass_": true
+    },
+    {
+      "name": "TPForm reader identity",
+      "pass_": true
+    },
+    {
+      "name": "LGT raw identity",
+      "pass_": true
+    },
+    {
+      "name": "LGT reader identity",
+      "pass_": true
+    },
+    {
+      "name": "Interest raw identity",
+      "pass_": true
+    },
+    {
+      "name": "Interest reader identity",
+      "pass_": true
+    },
+    {
+      "name": "CapTable raw identity",
+      "pass_": true
+    },
+    {
+      "name": "CapTable reader identity",
+      "pass_": true
+    },
+    {
+      "name": "No guessed or unmapped old-topic destination",
+      "pass_": true
+    },
+    {
+      "name": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5 every original unit/order retained",
+      "pass_": true
+    },
+    {
+      "name": "0b5e62451de50220ac6d80c7813d547d08108641 every original unit/order retained",
+      "pass_": true
+    },
+    {
+      "name": "Two executable example computations",
+      "pass_": true
+    }
+  ],
+  "guide_sha256": "73e392759eea7cd61d4b5135348005c954bc1699af8c4b45cc21a26e09647d69",
+  "ledger_sha256": "2ef605ee2445b536d38f4fccccb788c526425ef6520395643d4caf6e53f7eb45",
+  "oa_output": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n"
+}

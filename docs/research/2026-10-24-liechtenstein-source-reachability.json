@@ -1,0 +1,191 @@
+{
+  "read_on": "2026-10-24",
+  "scope": "Transport of current non-CTA country URLs only; successful response is not legal verification. HTTP restrictions are distinct from missing source content where the web reader supplied the document. Not every entry point is a legally reviewed source.",
+  "source_checkpoint": "Corrected country source closed by independent source/editorial review at ede184f9d5b0ba4fdd35e8178d49e30df377d95d; URL check timestamps and transport outcomes are retained from their original checks.",
+  "country_source_sha256": {
+    "skills/international/liechtenstein/README.md": "e0cfae3ca936c69e7eb77d943cc258ee45aa9bd1654e0c6022ac0ee93dd5eb0e",
+    "skills/international/liechtenstein/li-company-formation.md": "e49bb1dceee91a3540c56300039a0a317efa7e25e07bed76aec08bec28a4c0da",
+    "skills/international/liechtenstein/li-corporate-income-tax.md": "72981e14840831bf1b1f36f48261ad83a50678ead66fc7df0a3c81ee35f6d4b6",
+    "skills/international/liechtenstein/li-cross-border.md": "0c1e6515b43e740a86f1494ff8689c58628b6ccae7ae1002359ebd0b1f417c01",
+    "skills/international/liechtenstein/li-income-tax.md": "a02a901fbcb0378ecef7961f9003c7c85fd892e4be94a21ad4a82c1e728fb0e2",
+    "skills/international/liechtenstein/li-payroll-social.md": "45a891f3ce5cc96b215e94ac67be228cab1bab379fd6db30dd1062336d096a3c",
+    "skills/international/liechtenstein/li-tax-overview.md": "46f0b8fd74d307ebd7460fafe700cd9adc6435eea7e45cf099f3c6d4f111a9ba",
+    "skills/international/liechtenstein/li-transfer-pricing.md": "f7755802012c5e899838daa4742613f848724ad48c1d0a4b5f09e3ae448fe8c4",
+    "skills/international/liechtenstein/liechtenstein-vat.md": "11a44408c8bace284b69f22bb4475cc9a5c29577be99cc6d41d53bfe23934db8"
+  },
+  "results": [
+    {
+      "url": "https://github.com/openaccountants/openaccountants/issues/406",
+      "checked_at_utc": "2026-10-24T11:04:49.976607+00:00",
+      "recorded_content_read": false,
+      "status": 200,
+      "final_url": "https://github.com/openaccountants/openaccountants/issues/406",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://github.com/openaccountants/openaccountants/pull/514",
+      "checked_at_utc": "2026-10-24T11:04:49.977332+00:00",
+      "recorded_content_read": false,
+      "status": 200,
+      "final_url": "https://github.com/openaccountants/openaccountants/pull/514",
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf",
+      "checked_at_utc": "2026-10-24T11:04:49.977480+00:00",
+      "recorded_content_read": true,
+      "status": 200,
+      "final_url": "https://www.ahv.li/fileadmin/user_upload/Dokumente/Online-Schalter/MB/AHV-IV-FAK-MB-1-01-2026--AHV-IV-FAK-ALV-Beitraege.pdf",
+      "content_type": "application/pdf"
+    },
+    {
+      "url": "https://www.gesetze.li",
+      "checked_at_utc": "2026-10-24T11:04:49.977577+00:00",
+      "recorded_content_read": false,
+      "status": 200,
+      "final_url": "https://www.gesetze.li/konso/suche",
+      "content_type": "text/html;charset=UTF-8"
+    },
+    {
+      "url": "https://www.gesetze.li/chrono/pdf/2024483000",
+      "checked_at_utc": "2026-10-24T11:04:49.977664+00:00",
+      "recorded_content_read": true,
+      "status": 200,
+      "final_url": "https://www.gesetze.li/chrono/pdf/2024483000",
+      "content_type": "application/pdf;charset=UTF-8"
+    },
+    {
+      "url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "checked_at_utc": "2026-10-24T11:04:50.302415+00:00",
+      "recorded_content_read": true,
+      "status": 200,
+      "final_url": "https://www.gesetze.li/konso/pdf/1926004000",
+      "content_type": "application/pdf;charset=UTF-8"
+    },
+    {
+      "url": "https://www.gesetze.li/konso/pdf/2009330000",
+      "checked_at_utc": "2026-10-24T11:04:50.328175+00:00",
+      "recorded_content_read": true,
+      "status": 200,
+      "final_url": "https://www.gesetze.li/konso/pdf/2009330000",
+      "content_type": "application/pdf;charset=UTF-8"
+    },
+    {
+      "url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "checked_at_utc": "2026-10-24T11:04:50.499239+00:00",
+      "recorded_content_read": true,
+      "status": 200,
+      "final_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "content_type": "application/pdf;charset=UTF-8"
+    },
+    {
+      "url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "checked_at_utc": "2026-10-24T11:04:50.524013+00:00",
+      "recorded_content_read": true,
+      "status": 200,
+      "final_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "content_type": "application/pdf;charset=UTF-8"
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung",
+      "checked_at_utc": "2026-10-24T11:04:50.700103+00:00",
+      "recorded_content_read": false,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "scope_note": "General authority/treaty source-register entry point opened with the web reader; no underlying complete source/treaty audit is claimed."
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/lohn-quellensteuer-personalvorsorge/lohn-quellensteuer",
+      "checked_at_utc": "2026-10-24T11:04:50.740744+00:00",
+      "recorded_content_read": true,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/aenderungen-ab-01012025",
+      "checked_at_utc": "2026-10-24T11:04:50.753460+00:00",
+      "recorded_content_read": true,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/e-mwst",
+      "checked_at_utc": "2026-10-24T11:04:50.761676+00:00",
+      "recorded_content_read": true,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/publikationen-zur-mehrwertsteuerpraxis",
+      "checked_at_utc": "2026-10-24T11:04:50.769587+00:00",
+      "recorded_content_read": true,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/mehrwertsteuer/wer-ist-mwst-steuerpflichtig",
+      "checked_at_utc": "2026-10-24T11:04:50.794144+00:00",
+      "recorded_content_read": true,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/steuerabkommen-dba",
+      "checked_at_utc": "2026-10-24T11:04:50.794587+00:00",
+      "recorded_content_read": false,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden",
+      "scope_note": "General authority/treaty source-register entry point opened with the web reader; no underlying complete source/treaty audit is claimed."
+    },
+    {
+      "url": "https://www.llv.li/de/landesverwaltung/steuerverwaltung/steuern-juristische-personen/ertragssteuer",
+      "checked_at_utc": "2026-10-24T11:04:50.804339+00:00",
+      "recorded_content_read": true,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.llv.li/de/privatpersonen/beruf-und-arbeitsplatz/handelsregister/eintragungen/gesellschaft-mit-beschraenkter-haftung",
+      "checked_at_utc": "2026-10-24T11:04:50.827642+00:00",
+      "recorded_content_read": true,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.llv.li/de/privatpersonen/gesundheit-vorsorge-und-pflege/krankenversicherung/praemien-beitraege",
+      "checked_at_utc": "2026-10-24T11:04:50.827799+00:00",
+      "recorded_content_read": true,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.llv.li/de/unternehmen/steuern-abgaben-versicherung/mehrwertsteuer/mwst-steuersaetze",
+      "checked_at_utc": "2026-10-24T11:04:50.833813+00:00",
+      "recorded_content_read": true,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.llv.li/servicekonto/steuerverwaltung/provisorischer-bezug-der-ertragssteuer-merkblatt.pdf",
+      "checked_at_utc": "2026-10-24T11:04:50.841359+00:00",
+      "recorded_content_read": true,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.llv.li/servicekonto/steuerverwaltung/quellensteuer-lohnsteuer-unselbstaendige-taetigkeit-und-ersatzeinkuenfte-merkblatt.pdf",
+      "checked_at_utc": "2026-10-24T11:04:50.862486+00:00",
+      "recorded_content_read": true,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://www.llv.li/serviceportal2/amtsstellen/amt-fuer-justiz/handelsregister/merkblaetter/007_merkblatt_zur_gmbh.pdf",
+      "checked_at_utc": "2026-10-24T11:04:50.862597+00:00",
+      "recorded_content_read": true,
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "country_source_checkpoint": "ede184f9d5b0ba4fdd35e8178d49e30df377d95d"
+}

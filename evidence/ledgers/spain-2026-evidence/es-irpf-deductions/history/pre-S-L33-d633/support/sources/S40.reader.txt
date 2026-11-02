@@ -1,0 +1,185 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Por gastos derivados del arrendamiento de viviendas
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+Comunidad Autónoma del Principado de Asturias
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Por gastos derivados del arrendamiento de viviendas
+
+Normativa: Art. 14 quindecies Texto Refundido de las disposiciones legales del Principado de Asturias en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 2/2014, de 22 de octubre
+
+Cuantía y límite máximo de la deducción
+
+El importe de las cantidades satisfechas en el ejercicio que correspondan a alguno de los siguientes conceptos:
+
+- Gastos de reparación y conservación.
+
+- Gastos de formalización de contratos de arrendamiento.
+
+- Primas de seguros por daños e impagos.
+
+- Gastos necesarios para la obbtención de certificados de eficiencia energética vinculados con tales arrendamientos.
+
+Importante: no es necesario que el inmueble se encuentre arrendado en la fecha en la que se satisfagan los gastos. Tales gastos se vinculan a la inversion que el contribuyente ha de realizar para arrendar la vivienda, no a que exista un contrato de arrendamiento en vigor.
+
+El límite máximo de la deducción es de 500 euros anuales.
+
+Precisiones:
+
+- Se trata de un límite de deducción global, independiente del número de inmuebles arrendados.
+
+- En el régimen de tributación conjunta la deducción resultará aplicable por cada miembro de la unidad familiar que realice la inversión con sus propios ingresos, siendo el límite para cada uno de ellos de 500 euros anuales.
+
+Requisitos para la aplicación de la deducción
+
+Que los contribuyentes obtengan rendimientos del capital inmobiliario por el arrendamiento de viviendas.
+
+La deducción resulta aplicable a los arrendamientos de vivienda previstos en el artículo 2 de la LAU.
+
+Que el destino de tales arrendamientos sea el de vivienda habitual del arrendatario.
+
+Que se trate de arrendamientos retribuidos a precios con sostenibilidad social.
+
+Se considerará que el arrendamiento de vivienda habitual se retribuye a precios con sostenibilidad en virtud de lo previsto en la normativa del Principado de Asturias a estos efectos, cuya aprobación aún no ha tenido lugar.
+
+En tanto en cuanto no existan unos precios de referencia autonómicos se aplicará supletoriamente la normativa estatal en materia de precios de referencia de alquiler de vivienda, recogida en el Real Decreto-Ley 7/2019, de 1 de marzo, de medidas urgentes en materia de vivienda  y alquiler, que establece la creación del sistema estatal de índices de referencia del precio del alquiler de vivienda y en la Ley 12/2023, de 24 de mayo, por el derecho a la vivienda.
+
+El sistema de índices ofrece un rango de valores de precios de alquiler de viviendas, como referencia para la fijación de la renta en los nuevos contratos de arrendamiento.
+
+Conforme a lo anterior, se entenderá cumplido el requisito de que los arrendamientos sean retribuidos a precios con sostenibilidad social siempre que la renta del alquiler (de la que formarán parte aquellos gastos cuyo abono corresponda al propietario y que a través del contrato se estén trasladando al arrendatario, como el pago de la comunidad de propietarios o el IBI) no exceda del valor superior del rango de valores de precios de alquiler de viviendas que ofrece el sistema estatal citado.
+
+En los supuestos de viviendas para las que el sistema estatal de índices de referencia ofrece un rango de valores de precios de alquiler la renta del alquiler estará constituida:
+
+En los contratos de arrendamiento vigentes al inicio del período impositivo: por la renta mensual del alquiler de la vivienda actualizada a fecha 1 de enero de dicho período.
+
+En los contratos de arrendamiento formalizados durante el período impositivo: por la renta mensual del alquiler de la vivienda que figure en el contrato.
+
+En ambos casos no se deben computar los gastos y tributos que según el contrato sean por cuenta del arrendatario (IBI, tasa de basuras, comunidad de propietarios, incluidas derramas, suministros, etc.), ni tampoco las actualizaciones de la renta del alquiler que eventualmente se puedan producir durante el período impositivo en el que resulta aplicable la deducción.
+
+En caso de que el arrendamiento tenga por objeto inmuebles excluidos del reseñado sistema estatal el precio a considerar será el acordado por las partes.
+
+Puede acceder al Sistema Estatal de Referencia de Precios de Alquiler de Vivienda en el siguiente enlace: SERPAVI.
+
+Importante: los contribuyentes podrán deducirse el importe de las cantidades satisfechas en el ejercicio por los conceptos de gasto indicados en el párrafo inicial vinculados a aquellos arrendamientos respecto de los que la renta mensual del alquiler no exceda del valor de referencia durante los meses del período impositivo en los que el contrato de arrendamiento permanezca vigente.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

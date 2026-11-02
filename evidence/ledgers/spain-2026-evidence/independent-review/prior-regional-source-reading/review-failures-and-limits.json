@@ -1,0 +1,31 @@
+[
+  {
+    "kind": "access_failure",
+    "url": "https://dogc.gencat.cat/eadop-rest/api/dogc/documentDOGC?documentId=1037694&language=es_ES",
+    "result": "systemPythonurllib URLError name resolution Errno8; no body saved; no TLS bypass",
+    "effect": "PRE415 actual annex municipality entries not independently verified. Official public DOGC shell contains no annex body; ATC references PRE415/PRE3375 but that is not annex verification."
+  },
+  {
+    "kind": "historical_reader_path_failure",
+    "result": "pending-source script used relative Path parent incorrectly; corrected with resolve",
+    "effect": "no source-read claim for failed command"
+  },
+  {
+    "kind": "display_truncation",
+    "result": "Some combined historical tool outputs truncated; human re-emitted affected operative gaps. Do not treat emission receipts alone as full actualread proof. The a292\u2026840\u2013900 historical interval had omitted display content and was superseded for relevant art3bis by exact764\u2013789 actualread; unrelated oldart4notrelied."
+  },
+  {
+    "kind": "not_executed",
+    "result": "No Renta2025 or2026 simulator UI reproduction in this review",
+    "effect": "Canarias exactage65 medical return interpretation not independently reproduced; remain explicitly qualified Guide method and source-method limit."
+  },
+  {
+    "kind": "not_established",
+    "result": "Current claim-year municipal inclusion/census and later designated-boundary decisions not fully enumerated for every rural claimant. CAT PRE415/PRE3375 actualannex, AST annual2026review, currentCYL/EXT population claimant facts require claim-specific source check.",
+    "effect": "Do not certify blanket municipality eligibility or silently replace with zero."
+  },
+  {
+    "kind": "scope",
+    "result": "Downloaded supporting bodies, source pending snapshot, mechanical checks and writer controls are not independent legal read proof. Ordinary signed-income/carry/in-kind/intersection and campaign2027 limitations in Guide1574 are retained."
+  }
+]

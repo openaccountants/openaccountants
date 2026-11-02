@@ -1,0 +1,348 @@
+{
+  "count": 57,
+  "scope": "Own arithmetic/threshold separators; actual claimant/classification/election conditions remain required. Last two calendar lists reflect sourcebefore1July criterion, not runtime controls.",
+  "checks": [
+    {
+      "name": "IRNR pension 12000",
+      "actual": "960",
+      "expected": "960",
+      "pass": true
+    },
+    {
+      "name": "IRNR pension 18700",
+      "actual": "2970",
+      "expected": "2970",
+      "pass": true
+    },
+    {
+      "name": "IRNR pension 20000",
+      "actual": "3490",
+      "expected": "3490",
+      "pass": true
+    },
+    {
+      "name": "IRNR general vs investment rate separate",
+      "actual": "500.00",
+      "expected": "500",
+      "pass": true
+    },
+    {
+      "name": "IRNR EU verified rent cost base",
+      "actual": "8500",
+      "expected": "8500",
+      "pass": true
+    },
+    {
+      "name": "IRNR EU rent tax",
+      "actual": "1615.00",
+      "expected": "1615",
+      "pass": true
+    },
+    {
+      "name": "IRNR2026 year365days",
+      "actual": "365",
+      "expected": "365",
+      "pass": true
+    },
+    {
+      "name": "IRNR ownuse partyear roundedtax",
+      "actual": "105.93",
+      "expected": "105.93",
+      "pass": true
+    },
+    {
+      "name": "IRNR distinct rent plus ownuse total",
+      "actual": "1720.93",
+      "expected": "1720.93",
+      "pass": true
+    },
+    {
+      "name": "IRNR halfowner ownuse halfbase",
+      "actual": "550.0000",
+      "expected": "550",
+      "pass": true
+    },
+    {
+      "name": "IRNR unnotified cadastral50percent greater-value",
+      "actual": "1100",
+      "expected": "1100",
+      "pass": true
+    },
+    {
+      "name": "IRNR timeshare exactly2weeks excluded",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "IRNR timeshare15days notexcluded",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "IRNR3percent retention on consideration",
+      "actual": "7500.00",
+      "expected": "7500",
+      "pass": true
+    },
+    {
+      "name": "IRNR3percent notgain",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "IRNR ordinary withholding gross can exceed netfinal",
+      "actual": "665.00",
+      "expected": "665",
+      "pass": true
+    },
+    {
+      "name": "IRNR exit exact4million fails aggregate",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "IRNR exit alternative exact25percent fails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "IRNR exit alternative exact1million fails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "IRNR exit positivegain notmarketvalue",
+      "actual": "2000000",
+      "expected": "2000000",
+      "pass": true
+    },
+    {
+      "name": "IRNR exit savings incremental",
+      "actual": "581880",
+      "expected": "581880",
+      "pass": true
+    },
+    {
+      "name": "IRNR unlisted capitalisation20percent",
+      "actual": "300000",
+      "expected": "300000",
+      "pass": true
+    },
+    {
+      "name": "IRNR PE19percent remittance conditional branch",
+      "actual": "19000.00",
+      "expected": "19000",
+      "pass": true
+    },
+    {
+      "name": "IGIC ordinary30000threshold equality",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "IGIC ordinary30000.01 fails2026ordinary",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "IGIC exceptional50000 equality eligibilitylimb",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "IGIC firsthalf50000 notautomatic ordinarythreshold",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "IGIC halfyear annualise",
+      "actual": "40000",
+      "expected": "40000",
+      "pass": true
+    },
+    {
+      "name": "IGIC electronics exactly10000 noamounttrigger",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "IGIC electronics10000.01 amounttrigger",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "IGIC baddebt nonbusiness exactly50 fails",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "IGIC baddebt50.01 succeeds amountlimb",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "IGIC specialprorrata exact110percent triggers",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "IGIC general roundedup ratio",
+      "actual": "61",
+      "expected": "61",
+      "pass": true
+    },
+    {
+      "name": "IGIC annual investment10point exactly nogate",
+      "actual": "False",
+      "expected": "False",
+      "pass": true
+    },
+    {
+      "name": "IGIC annual investment11point gate",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "IGIC ordinaryexample output",
+      "actual": "1540",
+      "expected": "1540",
+      "pass": true
+    },
+    {
+      "name": "IGIC retailer implicitburden",
+      "actual": "49",
+      "expected": "49",
+      "pass": true
+    },
+    {
+      "name": "IGIC vehicle supported50percent input",
+      "actual": "35",
+      "expected": "35",
+      "pass": true
+    },
+    {
+      "name": "IGIC ordinaryexample input",
+      "actual": "854",
+      "expected": "854",
+      "pass": true
+    },
+    {
+      "name": "IGIC ordinaryexample net",
+      "actual": "486",
+      "expected": "486",
+      "pass": true
+    },
+    {
+      "name": "IGIC generalrecovery",
+      "actual": "6000",
+      "expected": "6000",
+      "pass": true
+    },
+    {
+      "name": "IGIC specialrecovery",
+      "actual": "2800",
+      "expected": "2800",
+      "pass": true
+    },
+    {
+      "name": "IGIC compulsoryspecial",
+      "actual": "True",
+      "expected": "True",
+      "pass": true
+    },
+    {
+      "name": "IGIC annual provisional correction",
+      "actual": "-700",
+      "expected": "-700",
+      "pass": true
+    },
+    {
+      "name": "IGIC investment cashrepayment",
+      "actual": "280",
+      "expected": "280",
+      "pass": true
+    },
+    {
+      "name": "IGIC combined annual entitlement",
+      "actual": "2520",
+      "expected": "2520",
+      "pass": true
+    },
+    {
+      "name": "IGIC combined correction",
+      "actual": "-980",
+      "expected": "-980",
+      "pass": true
+    },
+    {
+      "name": "IGIC sectors exclusive plus shared",
+      "actual": "1600",
+      "expected": "1600",
+      "pass": true
+    },
+    {
+      "name": "IGIC sale remaining2026through2028",
+      "actual": "3",
+      "expected": "3",
+      "pass": true
+    },
+    {
+      "name": "IGIC taxable-sale uncappedextra",
+      "actual": "4200",
+      "expected": "4200",
+      "pass": true
+    },
+    {
+      "name": "IGIC taxable-sale actualoutputcap",
+      "actual": "350",
+      "expected": "350",
+      "pass": true
+    },
+    {
+      "name": "IGIC exempt nonentitling sale cashrepayment",
+      "actual": "4200",
+      "expected": "4200",
+      "pass": true
+    },
+    {
+      "name": "IGIC startup global300k500k",
+      "actual": "3/5",
+      "expected": "3/5",
+      "pass": true
+    },
+    {
+      "name": "IGIC startup adjustment cashrepayment",
+      "actual": "2000",
+      "expected": "2000",
+      "pass": true
+    },
+    {
+      "name": "IGIC1July2026 counts next4years",
+      "actual": "[2027, 2028, 2029, 2030]",
+      "expected": "[2027, 2028, 2029, 2030]",
+      "pass": true
+    },
+    {
+      "name": "IGIC30June2026 counts current4years",
+      "actual": "[2026, 2027, 2028, 2029]",
+      "expected": "[2026, 2027, 2028, 2029]",
+      "pass": true
+    }
+  ]
+}

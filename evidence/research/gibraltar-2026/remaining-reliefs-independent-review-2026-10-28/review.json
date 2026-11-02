@@ -1,0 +1,91 @@
+{
+  "review_type": "Independent new-material source, arithmetic and preservation review",
+  "read_on": "2026-10-28",
+  "reviewed_head": "933e6993fe5305609c849551765a27ba9a116e8b",
+  "guide_version": "0.11",
+  "guide_sha256": "a9b85de524d87989dfc10c57ae7646bc545182b3920e3e791a88a224981f39ff",
+  "accepted": false,
+  "substantive_law_and_arithmetic_accepted": true,
+  "decision": "One bounded ledger location correction required before unconditional acceptance of this new-material evidence package.",
+  "open_findings": [
+    {
+      "id": "GI-REL-01",
+      "priority": 3,
+      "category": "ledger location accuracy",
+      "status": "open",
+      "title": "Point the new ledger rows to the sections containing their text",
+      "affected_rows": [
+        "REL-02",
+        "REL-03",
+        "REL-05",
+        "REL-06",
+        "REL-07",
+        "REL-08",
+        "REL-09",
+        "REL-10",
+        "REL-11",
+        "REL-12"
+      ],
+      "files": [
+        "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/ledger.json",
+        "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md"
+      ],
+      "location": "ledger.json new rows REL-02 through REL-12, guide_section fields; Markdown ledger rows 68–78",
+      "evidence": "All four added relief subsections are inside The base in the pinned Guide (H2 line 113; new H3 lines 217, 223, 240, 246; next H2 Deadlines and filing line 303). Ten new ledger rows instead name Rates, bands and thresholds, Deadlines and filing, or Who this applies to as a location, alone or in a combined location. Those H2s contain no new relief text.",
+      "why_it_matters": "The required figure ledger must give the actual Guide section so a reviewer can locate each rule. The cited law and calculations pass; this is a provenance location correction.",
+      "bounded_fix": "Update only the ten new guide_section values and their Markdown row labels to The base, preferably naming the corresponding relief subsection. Do not change inherited rows/proofs, the Guide, source text, calculations or existing review evidence.",
+      "law_defect": false
+    }
+  ],
+  "counts": {
+    "new_rule_rows_checked": 14,
+    "new_source_proof_units": 6,
+    "exact_quote_snippets": 57,
+    "full_operative_documents": 4,
+    "targeted_amendments": 2,
+    "new_scenarios_independently_recomputed": 4,
+    "preserved_main_examples_independently_recomputed": 2,
+    "inherited_rows_data_exact": 60,
+    "inherited_proofs_data_exact": 87,
+    "prior_manifest_blobs_exact": 39,
+    "expected_changed_manifest_blobs": 2,
+    "old_topic_destinations": 90,
+    "old_paragraphs_exact": 88,
+    "explicit_gap_reconciliations": 2,
+    "canonical_H2_sections": 9,
+    "main_oa_checks": 2,
+    "schema_guides": 18,
+    "schema_errors": 0
+  },
+  "preservation": "Completed prior review evidence retained. All accepted 60 individual rows and 87 proof units remain data-exact. The 39 unaffected manifest blobs remain exact; the individual Guide and README are the two expected changes. All 90 old paragraphs map completely, with 88 exact and two supported, explicit narrowing of property/energy gaps. Protected metadata and CTA are unchanged.",
+  "qualification": "All seven domain partial entries remain. No accountant attestation, complete-country acceptance, actual client eligibility/certification, live filing, payment or general claim-time-limit conclusion is granted.",
+  "checks": {
+    "independent_arithmetic": "independent-arithmetic.json",
+    "source_proof_verification": "source-proof-results.json",
+    "row_results": "all-new-row-results.json",
+    "preservation": "preservation-results.json",
+    "schema": "schema-results.json",
+    "repo_arithmetic": "repository-examples.log",
+    "metadata": "metadata-integrity.log"
+  },
+  "schema_warning": "Existing unchanged gi-global-minimum-tax tax_year 2024 freshness warning; no new schema errors.",
+  "tool_limitations": "System Python lacked PyYAML for the first metadata invocation. Repeated successfully with the supplied YAML-enabled interpreter. The verification script first used an overly strict exact Markdown rendering comparison on inherited IND-59, whose new rendering inserts a space in LN 2026/054; the JSON data and prior accepted ledger remain exact. Narrowed that check to all row IDs and exact new-row text. No tax source check failed.",
+  "web_verification": "Official EV and disabled-access index pages were re-opened and confirmed last updates 7 July 2022 and 18 June 2026. Web fetch of the two energy index pages returned cache misses; their hash-verified cached official index pages and complete PDFs were read. No research beyond cited sources was needed.",
+  "reviewer_actions": {
+    "writer_file_edits": false,
+    "guide_edits": false,
+    "commits": false,
+    "pushes": false,
+    "external_messages": false,
+    "live_transactions": false,
+    "delegation": false
+  },
+  "bounded_closure": "Recheck only the new location labels and immutable preservation against the repair pin. Completed substantive review remains valid when those are the sole changes.",
+  "subsequent_closure": {
+    "path": "closure-6f53123a/closure.json",
+    "accepted_head": "6f53123a0306500efec732d97e42abc5ef764388",
+    "accepted": true,
+    "open_findings": [],
+    "initial_findings_retained": true
+  }
+}

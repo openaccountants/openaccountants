@@ -1,0 +1,730 @@
+
+
+
+
+    
+	
+	
+	
+    
+    
+	
+	Lexnavarra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[ID:estructura]]
+
+
+    (ir al contenido)
+
+
+    
+[[ID:cabecera]]
+
+
+        
+navarra.es
+
+ 
+
+Castellano  | Euskara   | Français  | English 
+
+ 
+
+
+[[ID:frmSearch]]
+
+
+
+buscador
+
+
+[[ID:cadena]]
+
+
+[[ID:c]]
+
+
+
+
+
+[[ID:primerNivel]]
+
+
+
+Navarra
+
+
+Trámites
+
+
+Temas
+
+
+Gobierno
+
+
+Actualidad
+
+
+
+
+
+
+[[ID:contenido_modificado]]
+
+
+
+
+
+
+
+[[ID:migas]]
+
+
+Navarra :
+
+
+
+Lexnavarra
+
+ : Legislación
+
+
+
+
+
+
+
+LEXNAVARRA
+
+
+
+
+
+Versión para imprimir
+Version en euskera
+
+
+
+
+ORDEN FORAL 88/2013, DE 5 MARZO, DE LA CONSEJERA DE ECONOMÍA, HACIENDA, INDUSTRIA Y EMPLEO, POR LA QUE SE APRUEBA UN NUEVO MODELO 216 PARA LA DECLARACIÓN E INGRESO DE LAS RETENCIONES E INGRESOS A CUENTA DEL IMPUESTO SOBRE LA RENTA DE NO RESIDENTES EN RELACIÓN CON LAS RENTAS OBTENIDAS SIN MEDIACIÓN DE ESTABLECIMIENTO PERMANENTE
+
+
+
+BON N.º 53 - 18/03/2013; corr. err., BON 2/04/2013
+
+
+
+Preámbulo
+
+Artículo 1. Aprobación del modelo 216 .
+
+Artículo 2. Obligados a presentar el modelo 216.
+
+Artículo 3. Formas de presentación del modelo 216 .
+
+Artículo 4. Forma de pago del modelo 216 .
+
+Artículo 5. Plazo de presentación e ingreso del modelo 216.
+
+Artículo 6. Condiciones generales para la presentación telemática por Internet de las declaraciones correspondientes al modelo 216.
+
+Artículo 7. Procedimiento para la presentación telemática por Internet de las declaraciones correspondientes al modelo 216.
+
+Disposición Derogatoria Única. Derogación normativa.
+
+Disposición Final Primera. Relación de modelos con domiciliación bancaria.
+
+Disposición Final Segunda. Entrada en vigor.
+
+  ANEXO I. Modelos tributarios comprendidos en el ámbito de la presente Orden Foral respecto de los cuales podrá utilizarse la domiciliación bancaria de pagos 
+ANEXO I
+
+  ANEXO II. DECLARACIÓN DOCUMENTO DE INGRESOMODELO 216 
+ANEXO II
+
+
+
+
+Preámbulo
+
+El Convenio Económico entre el Estado y la Comunidad Foral de Navarra establece en el artículo 28  que en la exacción del Impuesto sobre la Renta de no Residentes, la Comunidad Foral aplicará normas sustantivas y formales del mismo contenido que las establecidas en cada momento por el Estado, atribuyéndole competencia para la aprobación de modelos de declaración e ingreso del Impuesto que contengan al menos, los mismos datos que los del territorio común, así como para señalar plazos de ingreso que no difieran sustancialmente de los señalados por la Administración del Estado.
+
+El artículo 31  del Texto Refundido de la Ley del Impuesto sobre la Renta de no Residentes, aprobado mediante Real Decreto Legislativo 5/2004, de 5 de marzo, regula la obligación genérica de retener e ingresar a cuenta respecto de aquellas rentas sujetas a este Impuesto obtenidas por contribuyentes sin mediación de establecimiento permanente.
+
+La Orden Foral 82/1999, de 14 de mayo, del Consejero de Economía y Hacienda, aprobó el modelo 216 de declaración e ingreso de retenciones e ingresos a cuenta del Impuesto sobre la Renta de no Residentes en relación con rentas obtenidas sin mediación de establecimiento permanente, y la Orden Foral 102/2001, de 2 de mayo, aprobó el modelo 216 en euros. Ambas contienen referencias a normativa anterior al vigente Texto Refundido de la Ley del Impuesto sobre la Renta de no Residentes, aprobado mediante Real Decreto Legislativo 5/2004, de 5 de marzo, y al Reglamento que lo desarrolla aprobado por Real Decreto 1776/2004, de 30 de julio. Este motivo, unido a los que se exponen a continuación, justifican la necesidad de elaborar una nueva Orden Foral de aprobación del modelo 216.
+
+Dadas las ventajas que proporciona en la gestión de los tributos tanto a la Administración Tributaria como a sus contribuyentes, resulta conveniente incorporar la posibilidad de presentar este modelo de declaración e ingreso por vía telemática, que tendrá carácter obligatorio en los supuestos previstos en la Orden Foral 132/2009, de 3 de julio, del Consejero de Economía y Hacienda, por la que se regulan los supuestos en los que será obligatoria la presentación por vía telemática y en soporte legible por ordenador de las declaraciones-liquidaciones, autoliquidaciones, declaraciones resumen anual, declaraciones informativas, así como de las comunicaciones y de otros documentos previstos por la normativa tributaria. Asimismo, se establece la desaparición del papel preimpreso, por lo que el modelo 216 podrá presentarse en soporte papel obtenido exclusivamente mediante el servicio de generación de impresos desarrollado por Hacienda Tributaria de Navarra.
+
+Por otro lado, se introducen ligeras modificaciones en el plazo de presentación e ingreso, ampliándolo para las declaraciones del segundo y cuarto trimestre hasta el 5 de agosto y el 31 de enero respectivamente. Para aquellos retenedores u obligados que tengan la consideración de gran empresa, conforme a lo dispuesto en los apartados 1.º y 1.º bis del artículo 62.3  del Reglamento del Impuesto sobre el Valor Añadido, aprobado por Decreto Foral 86/1993, de 8 de marzo, se ampliará el plazo de presentación e ingreso de las declaraciones correspondientes a los meses de junio, julio y diciembre hasta los días 5 de agosto, 20 de septiembre y 31 de enero, respectivamente.
+
+Al igual que en el modelo anterior, se excluye de declaración la retención o ingreso a cuenta que deben efectuar los adquirentes de bienes inmuebles a no residentes sin establecimiento permanente, previsto en el artículo 25.2 del Texto Refundido de la Ley del Impuesto sobre la Renta de no Residentes y desarrollado en el artículo 14  del Reglamento del Impuesto. En consecuencia, dicha retención o ingreso a cuenta se realizará, como hasta ahora, mediante el modelo 211 “Impuesto sobre la Renta de no Residentes. Retenciones en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente”.
+
+Por último, en la Disposición Final Primera de esta Orden Foral, se modifica la Orden Foral 80/2008, de 23 de abril, del Consejero de Economía y Hacienda, que desarrolla parcialmente el Reglamento de Recaudación de la Comunidad Foral de Navarra en materia de domiciliación de pagos relativos a determinadas declaraciones-liquidaciones y autoliquidaciones tributarias, recogiendo todos aquellos modelos que a la entrada en vigor de esta norma admitan la domiciliación como forma de pago.
+
+La Disposición Adicional Séptima de la Ley Foral 13/2000, de 14 de diciembre, General Tributaria, autoriza al Consejero de Economía y Hacienda para regular mediante Orden Foral los supuestos y condiciones en los que los contribuyentes y las entidades podrán presentar por medios electrónicos, informáticos y telemáticos, declaraciones, comunicaciones, declaraciones-liquidaciones, autoliquidaciones o cualesquiera otros documentos exigidos por la normativa tributaria.
+
+En consecuencia, y de conformidad con la atribución contenida en el artículo 6  de la Ley Foral 13/2000, de 14 de diciembre, General Tributaria, ordeno:
+
+
+Artículo 1. Aprobación del modelo 216 .
+
+Se aprueba el modelo 216 ‘Impuesto sobre la Renta de no Residentes. Retenciones e ingresos a cuenta sobre rentas obtenidas sin mediación de establecimiento permanente.
+
+
+Artículo 2. Obligados a presentar el modelo 216.
+
+1. Este modelo deberá ser utilizado por los sujetos obligados a retener o a efectuar ingreso a cuenta sobre las rentas que se consideren obtenidas o producidas en territorio navarro sin mediación de establecimiento permanente por contribuyentes del Impuesto sobre la Renta de no Residentes, a los que se refiere el artículo 11  del Reglamento del Impuesto sobre la Renta de no Residentes, aprobado por Real Decreto 1776/2004, de 30 de julio, para realizar el ingreso en la Hacienda Pública de Navarra de las cantidades retenidas o de los ingresos a cuenta efectuados, salvo los sujetos obligados a retener o ingresar a cuenta en las transmisiones y reembolsos de acciones o participaciones representativas del capital o patrimonio de las instituciones de inversión colectiva, que lo harán en una declaración específica.
+
+2. El modelo 216 también se utilizará por los citados obligados en los casos en los que, de acuerdo con lo dispuesto en el artículo 31.4  del Texto Refundido de la Ley del Impuesto sobre la Renta de no Residentes, aprobado por el Real Decreto Legislativo 5/2004, de 5 de marzo, no proceda practicar retención o ingreso a cuenta.
+
+3. No se tendrán en cuenta, a efectos de lo dispuesto en el número 2 anterior, las siguientes rentas:
+
+a) Las rentas a que se refiere el artículo 14.1.a) del texto refundido de la Ley del Impuesto sobre la Renta de No Residentes, excepto los rendimientos del trabajo en especie mencionados del artículo 42.3 #de la Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio .
+
+b) Las rentas derivadas de valores emitidos en España por personas físicas o entidades no residentes sin mediación de establecimiento permanente, cualquiera que sea el lugar de residencia de las instituciones financieras que actúen como agentes de pago o medien en la emisión o transmisión de los valores.
+
+c) Los rendimientos de las cuentas de no residentes que se satisfagan a contribuyentes de este Impuesto, salvo que el pago se realice a un establecimiento permanente situado en territorio español, por el Banco de España o por las entidades registradas a que se refiere la normativa de transacciones económicas con el exterior.
+
+d) Los intereses de la Deuda de Navarra en Anotaciones, sujetos a un procedimiento especial de pago de los mismos o de devolución de retenciones.
+
+e) Las rentas exceptuadas de la obligación de retener y de ingresar a cuenta enumeradas en el artículo 10.3  del Reglamento del Impuesto sobre la Renta de no Residentes.
+
+f) Las rentas a que se refiere el artículo 118.1.c) del Texto Refundido de la Ley del Impuesto sobre Sociedades, aprobado por Real Decreto Legislativo 4/2004, de 5 de marzo, y el artículo 149.1.c) #de la Ley Foral 24/1996, de 30 de diciembre, del Impuesto sobre Sociedades.
+
+
+Artículo 3. Formas de presentación del modelo 216 .
+
+El modelo 216 se presentará por vía electrónica a través de Internet, de acuerdo con las condiciones generales y el procedimiento establecido en los artículos 6 y 7.
+
+
+Artículo 4. Forma de pago del modelo 216 .
+
+El ingreso se efectuará en cualquier entidad colaboradora de la Hacienda Foral de Navarra, utilizando el modelo ‘Carta de Pago 782', que figura en el Anexo. Asimismo, también se podrá efectuar el ingreso mediante la modalidad de pago telemático o domiciliación bancaria.
+
+
+Artículo 5. Plazo de presentación e ingreso del modelo 216.
+
+El plazo de presentación e ingreso de la declaración trimestral del modelo 216 será los veinte primeros días naturales siguientes a cada trimestre, salvo en el caso de las declaraciones correspondientes al segundo y cuarto trimestres, cuyos plazos finalizan los días 5 de agosto y 31 de enero, respectivamente.
+
+No obstante, cuando se trate de retenedores u obligados que tengan la consideración de gran empresa por concurrir alguna de las circunstancias a que se refieren los apartados 1.º y 1.º bis del artículo 62.3  del Reglamento del Impuesto sobre el Valor Añadido, aprobado por Decreto Foral 86/1993, de 8 de marzo, el plazo de presentación e ingreso será el de los primeros 20 días naturales del mes siguiente al correspondiente periodo de liquidación mensual, salvo en el caso de las declaraciones correspondientes al mes de junio, julio y diciembre, cuyos plazos finalizan los días 5 de agosto, 20 de septiembre y 31 de enero, respectivamente.
+
+
+Artículo 6. Condiciones generales para la presentación telemática por Internet de las declaraciones correspondientes al modelo 216.
+
+1. La presentación telemática de las declaraciones correspondientes al modelo 216 estará sujeta a las siguientes condiciones:
+
+a) El declarante deberá disponer de Número de Identificación Fiscal (NIF).
+
+b) El declarante deberá disponer de un certificado electrónico reconocido por la Hacienda Tributaria de Navarra, en los términos establecidos en el Decreto Foral 50/2006, de 17 de julio, por el que se regula el uso de medios electrónicos, informáticos y telemáticos (EIT) en el ámbito de la Hacienda Tributaria de Navarra.
+
+Los prestadores de servicios de certificación y los certificados electrónicos autorizados se encuentran relacionados en el apartado correspondiente, al que se accede a través de la dirección de Internet http://www.hacienda.navarra.es.
+
+c) Si el presentador es una persona o entidad autorizada para presentar declaraciones en representación de terceras personas, de conformidad con lo dispuesto en la Orden Foral 130/2009, de 29 de junio, del Consejero de Economía y Hacienda, por la que se aprueba el Acuerdo de colaboración externa para realizar en representación de terceras personas la presentación por vía telemática de declaraciones, comunicaciones y otros documentos tributarios y la tramitación telemática del pago de deudas tributarias, deberá disponer del certificado electrónico reconocido por la Hacienda Tributaria de Navarra, al que se refiere la letra b) anterior.
+
+d) Para efectuar la presentación telemática del modelo 216 el declarante o, en su caso, el presentador autorizado, deberán utilizar el formulario Web disponible en el portal de Navarra.
+
+e) Los declarantes deberán tener en cuenta las normas técnicas que se requieran para poder efectuar la citada presentación telemática y que se encuentran publicadas en la página Web de la Hacienda Tributaria de Navarra, en la dirección de Internet http://www.hacienda.navarra.es.
+
+2. En aquellos casos en que se detecten anomalías de tipo formal en la transmisión telemática de declaraciones, dicha circunstancia se pondrá en conocimiento del declarante por el propio sistema mediante los correspondientes mensajes de error, para que proceda a su subsanación.
+
+
+Artículo 7. Procedimiento para la presentación telemática por Internet de las declaraciones correspondientes al modelo 216.
+
+El procedimiento para la presentación telemática por Internet, desde el formulario Web, de las declaraciones será el siguiente:
+
+1.º Acceder al servicio de trámites con Hacienda, desde el Portal de Navarra.
+
+2.º Seleccionar el modelo de la declaración a realizar, cumplimentando todos los datos necesarios para poder presentar la declaración.
+
+3.º Una vez cumplimentada la declaración, utilizar la opción de enviar. El sistema validará la declaración cuando ésta sea correcta. Cuando se detecten errores se comunicarán a través del formulario y no se permitirá presentar la declaración hasta que sean corregidos. Una vez que la declaración sea correcta, el sistema comunicará el número asignado a la declaración presentada, y la posibilidad de imprimirla para obtener un justificante de la misma.
+
+
+Disposición Derogatoria Única. Derogación normativa.
+
+1. Quedan derogadas las disposiciones de igual o inferior rango en aquello que se opongan a lo dispuesto en esta Orden Foral.
+
+2. En particular, queda derogada la Orden Foral 82/1999, de 14 de mayo, del Consejero de Economía y Hacienda, por la que se aprueba el modelo 216 para la declaración e ingreso de las retenciones e ingresos a cuenta del Impuesto sobre la Renta de no Residentes en relación con rentas obtenidas sin mediación de establecimiento permanente  y la Orden Foral 102/2001, de 2 de mayo, por la que se aprueba el modelo 216 en euros para la declaración e ingreso de las retenciones e ingresos a cuenta del Impuesto sobre la Renta de no Residentes en relación con rentas obtenidas sin mediación de establecimiento permanente.
+
+
+Disposición Final Primera. Relación de modelos con domiciliación bancaria.
+
+El Anexo de la Orden Foral 80/2008, de 23 de abril, del Consejero de Economía y Hacienda, por la que se desarrolla parcialmente el Reglamento de Recaudación de la Comunidad Foral de Navarra en materia de domiciliación bancaria de pagos relativos a determinadas declaraciones-liquidaciones y autoliquidaciones tributarias, quedará con la siguiente redacción:
+
+“ANEXO
+
+
+
+Vínculo a objeto”
+
+
+
+
+Disposición Final Segunda. Entrada en vigor.
+
+Esta Orden Foral entrará en vigor el día siguiente al de su publicación en el Boletín Oficial de Navarra y será aplicable a las declaraciones que se presenten a partir de esa fecha.
+
+ANEXO I. Modelos tributarios comprendidos en el ámbito de la presente Orden Foral respecto de los cuales podrá utilizarse la domiciliación bancaria de pagos 
+
+
+ANEXO I
+
+Modelo 130. “Autoliquidación de pagos fraccionados a cuenta del Impuesto sobre la Renta de las Personas Físicas”.
+
+Modelo 715. “Impuesto sobre la Renta de las Personas Físicas. Retenciones e ingresos a cuenta sobre rendimientos del trabajo, de determinadas actividades empresariales y profesionales, premios y determinadas imputaciones de renta” (trimestral).
+
+Modelo 716. “Impuesto sobre la Renta de las Personas Físicas e Impuesto sobre Sociedades. Retenciones capital mobiliario” (trimestral).
+
+Modelo 745. “Impuesto sobre la Renta de las Personas Físicas. Retenciones e ingresos a cuenta sobre rendimientos del trabajo, de determinadas actividades empresariales y profesionales, premios y determinadas imputaciones de renta” (mensual).
+
+Modelo 746. “Impuesto sobre la Renta de las Personas Físicas e Impuesto sobre Sociedades. Retenciones capital mobiliario. Intereses de cuentas bancarias” (mensual).
+
+Modelo 747. “Impuesto sobre la Renta de las Personas Físicas e Impuesto sobre Sociedades. Retenciones capital mobiliario. Excepto intereses de cuentas bancarias y rendimientos implícitos” (mensual).
+
+Modelo 748. “Impuesto sobre la Renta de las Personas Físicas e Impuesto sobre Sociedades. Retenciones capital mobiliario. Rendimientos implícitos” (mensual).
+
+Modelo 759. “Impuesto sobre la Renta de las Personas Físicas e Impuesto sobre Sociedades. Retenciones por arrendamientos de inmuebles urbanos” (trimestral).
+
+Modelo 760. “Impuesto sobre la Renta de las Personas Físicas e Impuesto sobre Sociedades. Retenciones por arrendamientos de inmuebles urbanos” (mensual).
+
+Modelo 780. “Impuesto sobre la Renta de las Personas Físicas, Impuesto sobre Sociedades e Impuesto sobre la Renta de no Residentes. Retenciones e ingresos a cuenta. Incrementos patrimoniales” (mensual).
+
+Modelo 781. “Impuesto sobre la Renta de las Personas Físicas, Impuesto sobre Sociedades e Impuesto sobre la Renta de no Residentes. Retenciones e ingresos a cuenta. Incrementos patrimoniales” (trimestral).
+
+Modelo 785. “Impuesto sobre la Renta de las Personas Físicas, Impuesto sobre Sociedades e Impuesto sobre la Renta de no Residentes. Retenciones e ingresos a cuenta. Rentas o rendimientos de capital mobiliario por capitalización y seguros de vida o invalidez” (mensual).
+
+Modelo S-91. “Impuesto sobre Sociedades. Pago fraccionado”.
+
+Modelo S-90. “Impuesto sobre Sociedades e Impuesto sobre la Renta de no Residentes con establecimiento permanente” (anual). Relativo a periodos impositivos que coincidan con el año natural.
+
+Modelo 216. “Impuesto sobre la Renta de no Residentes. Retenciones e ingresos a cuenta. Rentas obtenidas sin mediación de establecimiento permanente”.
+
+Modelo 220. “Impuesto sobre Sociedades. Régimen de tributación de los grupos fiscales” (anual). Relativo a periodos impositivos que coincidan con el año natural.
+
+Modelo 610. “Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados. Actos Jurídicos Documentados. Pago en metálico del Impuesto que grava los recibos y pagarés negociados por entidades de crédito”.
+
+Modelo 640. “Impuesto sobre Transmisiones Patrimoniales y Actos Jurídicos Documentados. Actos Jurídicos Documentados. Efectos timbrados”.
+
+Modelo F66. “Impuesto sobre el Valor Añadido. Declaración-Liquidación mensual”.
+
+Modelo F69. “Impuesto sobre el Valor Añadido. Declaración-Liquidación trimestral. Régimen General y Simplificado”.
+
+Modelo 309. “Impuesto sobre el Valor Añadido. Declaración-liquidación no periódica”.
+
+Modelo 353. “Impuesto sobre el Valor Añadido. Grupo de entidades. Modelo agregado. Declaración-liquidación mensual”.
+
+Modelo 560. “Impuesto sobre la Electricidad. Declaración-liquidación”.
+
+Modelo 561. “Impuesto sobre la Cerveza. Declaración-liquidación”.
+
+Modelo 562. “Impuesto sobre Productos Intermedios. Declaración-liquidación”.
+
+Modelo 563. “Impuesto sobre el Alcohol y Bebidas Derivadas. Declaración-liquidación”.
+
+Modelo 564. “Impuesto sobre Hidrocarburos. Declaración-liquidación”.
+
+Modelo 566. “Impuesto sobre las Labores del Tabaco. Declaración-liquidación”.
+
+Modelo 569. “Impuesto sobre Ventas Minoristas de Determinados Hidrocarburos. Declaración-liquidación” (trimestral).
+
+Modelo 581. “Impuesto sobre Hidrocarburos. Declaración-liquidación” (mensual).
+
+Modelo 430. “Impuesto sobre Primas de Seguros. Declaración-liquidación mensual”.
+
+Modelo J-20. “Tasa Fiscal sobre el Juego. Salas de bingo. Declaración-liquidación” (trimestral).
+
+Modelo J-50. “Tasa Fiscal sobre Rifas, Tómbolas, Apuestas y Combinaciones Aleatorias. Apuestas. Declaración-liquidación” (trimestral).”
+
+
+
+Vínculo a objeto
+
+
+
+ANEXO II. DECLARACIÓN DOCUMENTO DE INGRESO-MODELO 216 
+
+
+ANEXO II
+
+  
+      DATOS GENÉRICOS
+
+  
+  
+      Tipo de declaración
+
+       
+
+  
+  
+      Idioma
+
+       
+
+  
+  
+      Año
+
+       
+
+  
+  
+      periodo
+
+       
+
+  
+  
+      Declaración negativa
+
+      14
+
+       
+
+  
+ 
+
+
+
+  
+      SUJETO PASIVO
+
+  
+  
+      NIF
+
+       
+
+  
+  
+      NOMBRE
+
+       
+
+  
+ 
+
+
+
+  
+      REPRESENTANTE
+
+  
+  
+      NIF
+
+       
+
+  
+  
+      NOMBRE
+
+       
+
+  
+ 
+
+
+
+  
+      DATOS DE CONTACTO
+
+  
+  
+      Email
+
+       
+
+  
+  
+      Teléfono
+
+       
+
+  
+ 
+
+
+
+  
+      LIQUIDACIÓN
+
+  
+  
+      Rentas sometidas a retención/ingreso   a cuenta
+
+  
+  
+      Número de rentas
+
+  
+  
+      Dividendos y otras rentas de   participación en fondos propios de entidades
+
+      21
+
+       
+
+  
+  
+      Resto de rentas
+
+      22
+
+       
+
+  
+  
+      Totales
+
+      23
+
+       
+
+  
+ 
+
+
+
+  
+      Base de retenciones e ingresos   a cuenta
+
+       
+
+       
+
+  
+  
+      Dividendos y otras rentas de participación   en fondos propios de entidades
+
+      24
+
+       
+
+  
+  
+      Resto de rentas
+
+      25
+
+       
+
+  
+  
+      Totales
+
+      26
+
+       
+
+  
+ 
+
+
+
+  
+      Retenciones e ingresos a   cuenta
+
+       
+
+       
+
+  
+  
+      Dividendos y otras rentas de   participación en fondos propios de entidades
+
+      27
+
+       
+
+  
+  
+      Resto de rentas
+
+      28
+
+       
+
+  
+  
+      Totales
+
+      29
+
+       
+
+  
+ 
+
+
+
+  
+      Rentas no sometidas a   retención/ingreso a cuenta
+
+  
+  
+      Número de rentas
+
+  
+  
+      Dividendos y otras rentas de   participación en fondos propios de entidades
+
+      30
+
+       
+
+  
+  
+      Resto de rentas
+
+      31
+
+       
+
+  
+  
+      Totales
+
+      32
+
+       
+
+  
+ 
+
+
+
+  
+      Importe o valor de las rentas
+
+       
+
+       
+
+  
+  
+      Dividendos y otras rentas de participación   en fondos propios de entidades
+
+      33
+
+       
+
+  
+  
+      Resto de rentas
+
+      34
+
+       
+
+  
+  
+      Totales
+
+      35
+
+       
+
+  
+ 
+
+
+
+  
+      Total importe a ingresar (29)
+
+      11
+
+       
+
+  
+  
+      Cifra relativa de Navarra
+
+      12
+
+      %
+
+  
+  
+      Importe a ingresar en la   Hacienda Foral de Navarra
+
+      13
+
+       
+
+  
+ 
+
+
+
+  
+      DATOS DEL PAGO
+
+      
+  
+      Domiciliación
+
+      Sí
+
+       
+
+      no
+
+       
+
+      
+  
+      Cuenta de domiciliación
+
+       
+
+  
+  
+                       
+ 
+
+
+
+
+
+
+
+[[ID:pie]]
+
+
+
+
+
+
+
+
+Contacte con nosotros |
+Accesibilidad |
+Aviso legal |
+
+
+
+
+
+
+

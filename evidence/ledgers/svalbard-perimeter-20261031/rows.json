@@ -1,0 +1,26 @@
+[
+  {
+    "id": "SJ-PER-001",
+    "README_section": "Additional tax jobs and territorial exclusions",
+    "rule": "Financial activity tax excludes Svalbard activity for both profits and payroll",
+    "act_article_or_official_procedure": "Skatte-ABC2025/2026 F-10-1, territorial exclusion",
+    "official_url": "https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/f-10-finansskatt/F-10.001/",
+    "read_on": "2026-10-31",
+    "reader_line": 6162,
+    "exact_original_language_quote": "Virksomhet utøvet på Svalbard omfattes ikke av reglene om finansskatt. Dette gjelder både finansskatt på skattepliktig resultat og finansskatt på arbeidsgiveravgiftsgrunnlaget.",
+    "raw_sha256": "55c7e2d42cb6f1337aafcfc86290a8cb5d762377b2c7cfa2cdd4ac4102c2177c",
+    "reader_sha256": "8cd26aadd531d7a0122ff44560503cc0fd1507f2283273658525068333e80ccd"
+  },
+  {
+    "id": "SJ-PER-002",
+    "README_section": "Additional tax jobs and territorial exclusions",
+    "rule": "Svalbard separate jurisdiction; no own GIR; inclusion when Norway has taxing rights; no Norwegian domestic top-up tax",
+    "act_article_or_official_procedure": "GIR introduction, Svalbard",
+    "official_url": "https://www.skatteetaten.no/nn/bedrift-og-organisasjon/rapportering-og-bransjar/suppleringsskatt/veiledning/introduksjon-til-gir/",
+    "read_on": "2026-10-31",
+    "reader_line": 28,
+    "exact_original_language_quote": "Under suppleringsskatteloven skal Svalbard behandles som en egen jurisdiksjon. For virksomheter på Svalbard må det derfor foretas en separat beregning, adskilt fra virksomheter i Norge (Fastlands-Norge). Virksomheter på Svalbard har ikke selv plikt til å levere melding for suppleringsskatt (GIR), men informasjon om slike virksomheter skal oppgis i meldingen når Norge har beskatningsrett. Reglene om nasjonal suppleringsskatt gjelder ikke på Svalbard.",
+    "raw_sha256": "168c0500e66357bdf269ad6d94c88f0f4acd9efa142b968ddb4584976207892a",
+    "reader_sha256": "cc7190a35242986dfb306c1d3ce5c08631f16ddf99be9a41525a841e1e86790c"
+  }
+]

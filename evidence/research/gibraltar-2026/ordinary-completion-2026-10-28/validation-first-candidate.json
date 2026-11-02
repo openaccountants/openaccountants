@@ -1,0 +1,176 @@
+{
+  "phase": "Local writer candidate, not ready for independent country review or publication",
+  "reconciled_main": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "merge_head": "707ecb8c059ed5d87e8018299283da0aeb88b04f",
+  "calculation_files": 19,
+  "calculation_blocks": 49,
+  "failures": 0,
+  "main_controls_preserved": 47,
+  "supplementary_new_controls": 2,
+  "schemas": 18,
+  "schema_errors": 0,
+  "schema_warning_groups": 2,
+  "warnings": "Both warninggroups concern inherited gi-global-minimum-tax tax_year2024; no tax_year was blindly advanced",
+  "strict_metadata_changed_guides": 1,
+  "strict_metadata_errors": 0,
+  "full_changed_guide_ledger": "pending:12newmethod rows source-matched, older claims still need quote rows",
+  "independent_country_review": "not requested before complete ledgers",
+  "published": false,
+  "country_complete": false,
+  "coverage": "sevenexplicitpartialdomains; report does not count partials as present; no completed-country claim",
+  "units": "not rerun for this content-only first candidate; final required checks remain",
+  "files": [
+    {
+      "path": "skills/international/gibraltar/README.md",
+      "sha256": "8ea4d5c45653285bfe20c80bb893ab5ae2cfc609d2dbf8179b926b2e82371cbd",
+      "original_sha256": "2fa4f6ea4ac814d75ea0fc4581f8f11c1e0e163348f9a8c9c59b46e83d855f67",
+      "entire_file_preserved": false,
+      "main_controls_byte_exact": true,
+      "main_controls": 0
+    },
+    {
+      "path": "skills/international/gibraltar/gi-bookkeeping-and-tax-records.md",
+      "sha256": "86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb",
+      "original_sha256": "86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 0
+    },
+    {
+      "path": "skills/international/gibraltar/gi-company-accounts-and-reporting.md",
+      "sha256": "2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe",
+      "original_sha256": "2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 1
+    },
+    {
+      "path": "skills/international/gibraltar/gi-company-formation.md",
+      "sha256": "f7fd8d81e8c4a4f4100d8847760df5bb4691194e5c26a91acbdca9b8bdf6b67c",
+      "original_sha256": "f7fd8d81e8c4a4f4100d8847760df5bb4691194e5c26a91acbdca9b8bdf6b67c",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 0
+    },
+    {
+      "path": "skills/international/gibraltar/gi-connected-party-pricing-and-interest.md",
+      "sha256": "8a3033bb33ea5f14e466c0b39c034b20ad00cac38eb3671af6c5b02d6058b25b",
+      "original_sha256": "e612e427e6ee9e8e5b93f69051603e208b5b11db2611e3310a16003c0893f5af",
+      "entire_file_preserved": false,
+      "main_controls_byte_exact": true,
+      "main_controls": 2
+    },
+    {
+      "path": "skills/international/gibraltar/gi-corporate-tax.md",
+      "sha256": "f12b1432b12eb61ab85d088316aab01d55aad4f114bfd4721f52509a7f12426e",
+      "original_sha256": "f12b1432b12eb61ab85d088316aab01d55aad4f114bfd4721f52509a7f12426e",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 8
+    },
+    {
+      "path": "skills/international/gibraltar/gi-einvoice.md",
+      "sha256": "239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f",
+      "original_sha256": "239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 0
+    },
+    {
+      "path": "skills/international/gibraltar/gi-foreign-tax-relief.md",
+      "sha256": "7170ee37c2519a98e7763378f563bbb11713d1240219759e2d312ccd6a45e850",
+      "original_sha256": "7170ee37c2519a98e7763378f563bbb11713d1240219759e2d312ccd6a45e850",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 1
+    },
+    {
+      "path": "skills/international/gibraltar/gi-global-minimum-tax.md",
+      "sha256": "94f1ad5688e836bfafa6d49fedb295acb4f2b41cf0697814dac64f77447531e9",
+      "original_sha256": "94f1ad5688e836bfafa6d49fedb295acb4f2b41cf0697814dac64f77447531e9",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 2
+    },
+    {
+      "path": "skills/international/gibraltar/gi-income-tax-assessment-appeals.md",
+      "sha256": "c858167680ae8e20f811ea2101b3be080155c36b35adb088ca29b092d5aef752",
+      "original_sha256": "c858167680ae8e20f811ea2101b3be080155c36b35adb088ca29b092d5aef752",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 1
+    },
+    {
+      "path": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "sha256": "8ee82e1123dab769a23b52dadbc797aa1b29f79ee04eccdf0866e9dcbd91eb3c",
+      "original_sha256": "8ee82e1123dab769a23b52dadbc797aa1b29f79ee04eccdf0866e9dcbd91eb3c",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 8
+    },
+    {
+      "path": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "sha256": "33d0ad3d38758033d9ba95af27d213d775120aebf8ccdf7cac39abb898368c59",
+      "original_sha256": "33d0ad3d38758033d9ba95af27d213d775120aebf8ccdf7cac39abb898368c59",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 8
+    },
+    {
+      "path": "skills/international/gibraltar/gi-property-stamp-duty.md",
+      "sha256": "70395529e19f7b82e5851987c12ab0782af4adabb6e664251d7338d22ba3c109",
+      "original_sha256": "70395529e19f7b82e5851987c12ab0782af4adabb6e664251d7338d22ba3c109",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 3
+    },
+    {
+      "path": "skills/international/gibraltar/gi-residential-property-disposals.md",
+      "sha256": "ab06632156d157dd7fceb5a3e70019bea60ad81a015cb6ccc6ece11157198913",
+      "original_sha256": "ab06632156d157dd7fceb5a3e70019bea60ad81a015cb6ccc6ece11157198913",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 2
+    },
+    {
+      "path": "skills/international/gibraltar/gi-spain-tax-residence.md",
+      "sha256": "3a27d1a7322407397913ac1756f96472898ec84eed35547a8c69e97512940ae7",
+      "original_sha256": "3a27d1a7322407397913ac1756f96472898ec84eed35547a8c69e97512940ae7",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 2
+    },
+    {
+      "path": "skills/international/gibraltar/gi-training-planning-and-startup-reliefs.md",
+      "sha256": "85fff1d7437c12080d3ca797a09f077cb09a3277761a707e06dc533457bd1961",
+      "original_sha256": "85fff1d7437c12080d3ca797a09f077cb09a3277761a707e06dc533457bd1961",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 0
+    },
+    {
+      "path": "skills/international/gibraltar/gi-transaction-tax-transition.md",
+      "sha256": "64ab5a419c586a68c6d53c17bb7e441988ea6669f1992d134eb6baf39b74eb2e",
+      "original_sha256": "64ab5a419c586a68c6d53c17bb7e441988ea6669f1992d134eb6baf39b74eb2e",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 3
+    },
+    {
+      "path": "skills/international/gibraltar/gi-uk-employment-pensions-treaty.md",
+      "sha256": "7de18de959fbaf18cd81d1ad745ff100b516e8b9d4053783e924ab125620e92f",
+      "original_sha256": "7de18de959fbaf18cd81d1ad745ff100b516e8b9d4053783e924ab125620e92f",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 2
+    },
+    {
+      "path": "skills/international/gibraltar/gi-uk-investment-income-treaty.md",
+      "sha256": "aa9401452cae4d4f0391cbdae96b3f5de9247195ee20b404817733afa9a523cb",
+      "original_sha256": "aa9401452cae4d4f0391cbdae96b3f5de9247195ee20b404817733afa9a523cb",
+      "entire_file_preserved": true,
+      "main_controls_byte_exact": true,
+      "main_controls": 4
+    }
+  ]
+}

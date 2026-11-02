@@ -1,0 +1,586 @@
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	
+	
+[[ID:favicon]]
+
+
+	
+	
+	
+	
+	SEPG:Prórroga del Presupuesto para 2026
+
+	
+
+
+	
+[[ID:CssLink-39ff9a409dc44f43b15600c8b06dd15f]]
+
+[[ID:CssLink-d0f13d4113da478493b7c143e02a6589]]
+
+[[ID:CssRegistration1]]
+
+
+
+
+
+
+	
+		
+		
+		
+	
+	
+
+	
+	
+	
+     
+	
+	
+    	
+
+
+
+	
+
+
+
+	
+
+
+
+
+	
+	
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+    
+
+	
+
+
+
+
+	Puede estar intentando tener acceso a este sitio desde un explorador protegido en el servidor. Habilite los scripts y vuelva a cargar la página.
+	
+   
+
+	
+[[ID:aspnetForm]]
+
+
+
+[[ID:_wpcmWpid]]
+
+
+[[ID:wpcmVal]]
+
+
+[[ID:MSOWebPartPage_PostbackSource]]
+
+
+[[ID:MSOTlPn_SelectedWpId]]
+
+
+[[ID:MSOTlPn_View]]
+
+
+[[ID:MSOTlPn_ShowSettings]]
+
+
+[[ID:MSOGallery_SelectedLibrary]]
+
+
+[[ID:MSOGallery_FilterString]]
+
+
+[[ID:MSOTlPn_Button]]
+
+
+[[ID:__EVENTTARGET]]
+
+
+[[ID:__EVENTARGUMENT]]
+
+
+[[ID:__REQUESTDIGEST]]
+
+
+[[ID:MSOSPWebPartManager_DisplayModeName]]
+
+
+[[ID:MSOSPWebPartManager_ExitingDesignMode]]
+
+
+[[ID:MSOWebPartPage_Shared]]
+
+
+[[ID:MSOLayout_LayoutChanges]]
+
+
+[[ID:MSOLayout_InDesignMode]]
+
+
+[[ID:_wpSelected]]
+
+
+[[ID:_wzSelected]]
+
+
+[[ID:MSOSPWebPartManager_OldDisplayModeName]]
+
+
+[[ID:MSOSPWebPartManager_StartWebPartEditingName]]
+
+
+[[ID:MSOSPWebPartManager_EndWebPartEditing]]
+
+
+[[ID:__VIEWSTATE]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+[[ID:__VIEWSTATEGENERATOR]]
+
+	
+[[ID:__EVENTVALIDATION]]
+
+
+	
+		
+		
+[[ID:DeltaSPWebPartManager]]
+
+			
+		
+		
+
+		
+[[ID:DeltaDelegateControls]]
+
+			
+			
+				
+
+
+
+
+	
+
+[[ID:s4-workspace]]
+								
+	
+[[ID:s4-bodyContainer]]
+
+
+
+
+
+Ir al contenido
+
+	
+		
+		
+	
+	
+
+	
+	
+		 
+[[ID:madPAP]]
+Administración Presupuestaria
+		 
+	         
+[[ID:madMultiidioma]]
+
+		            
+[[ID:idioma]]
+BienvenidoBenvingutOngi etorriBenvidoWelcome
+[[ID:ctl00_ctl63_madButtonIdiomas]]
+
+
+		     							
+			
+[[ID:searchInputBox]]
+								
+				
+[[ID:txtcajaBusqueda]]
+
+
+[[ID:ctl00_SmallSearchInputBox2_imgBuscar]]
+
+
+			
+		
+		
+	
+								
+
+	
+
+
+[[ID:nav1]]
+	
+	  		  
+		
+
+			Principal
+        
+		  
+
+			Inicio
+
+		  
+
+			Mapa
+
+		  
+
+			Contactos
+
+		  
+
+			Utilidades
+		
+		  
+
+			Enlaces
+					  
+		  
+[[ID:madImpresion]]
+
+					
+						
+	
+		
+[[ID:madUsers]]
+	
+		  
+
+			Identificarse
+
+		  
+
+			Registrarse
+			
+		
+
+
+
+
+[[ID:nav2]]
+	  	   	    
+
+		
+		
+
+[[ID:main-menu-rwd]]
+
+Presupuestos Generales del Estado
+Prórroga del Presupuesto para 2026
+
+Presupuestos ejercicios anteriores
+
+Informe Económico Financiero
+
+Informes de carácter transversal
+Informe de Impacto de Género PL PGE 2023
+Informe de Impacto de Género
+
+Principales resultados
+
+Para saber más
+
+Informe de Alineamiento ODS 2023
+Informes Alineamiento
+
+Principales resultados
+
+Saber más
+
+Informe de Alineamiento de los PGE con la transición ecológica 2023
+El informe
+
+Principales resultados
+
+Informe de impacto infancia, adolescencia y familia 2023
+Inicio
+
+Principales resultados 
+
+Otros presupuestos
+Presupuesto Unión Europea
+
+Presupuestos Comunidades Autónomas
+
+Presupuestos Entidades Locales
+
+Normativa Presupuestaria
+Principales normas presupuestarias
+
+Normativa de elaboración de los Presupuestos Generales del Estado
+
+Otra normativa presupuestaria
+
+Informe de Seguimiento de Spending Reviews
+
+Documentación y Estadísticas
+Documentación
+
+Estadísticas
+
+
+	 								 
+
+
+								
+	
+
+[[ID:madCenter]]
+
+	
+[[ID:madMain]]
+
+			
+[[ID:notificationArea]]
+
+	
+[[ID:DeltaPageStatusBar]]
+
+	
+		
+[[ID:pageStatusBar]]
+
+	
+		
+	
+[[ID:DeltaPlaceHolderMain]]
+
+	
+		
+[[ID:mainContent]]
+
+		
+
+[[ID:madPAP_Contenido_Secundaria]]
+
+	
+	
+[[ID:madBC]]
+
+		
+[[ID:madBreadcrumb]]
+
+[[ID:madBCFirst]]
+
+Inicio
+
+ > Presupuestos
+
+ > Presupuestos Generales del Estado
+
+ > Prórroga del Presupuesto para 2026
+
+	
+	
+	
+[[ID:madTitle]]
+
+		
+Prórroga del Presupuesto para 2026
+
+	
+
+	
+	
+[[ID:madFirstP]]
+
+			
+	    
+[[ID:madImagen]]
+
+			
+[[ID:ctl00_PlaceHolderMain_PageImage__ControlWrapper_RichImageField]]
+
+			
+			
+	    
+[[ID:madContenidoSecundaria]]
+
+			
+[[ID:ctl00_PlaceHolderMain_PageP__ControlWrapper_RichHtmlField]]
+
+De acuerdo con lo establecido en el artículo 134.4 de la Constitución Española, “Si la Ley de Presupuestos no se aprobara antes del primer día del ejercicio económico correspondiente, se considerarán automáticamente prorrogados los Presupuestos del ejercicio anterior hasta la aprobación de los nuevos”.
+
+En esta página se recogen los datos económicos que se refieren a los presupuestos del Sector Público Administrativo con presupuesto limitativo.
+
+El resto de la documentación se puede consultar en los Presupuestos Generales del Estado del año 2023.
+
+
+		
+	
+	
+	
+	
+		
+[[ID:ctl00_PlaceHolderMain_PageContent__ControlWrapper_RichHtmlField]]
+
+Presupuesto prorrogado para 2026
+
+Presupuesto prorrogado para 2026, en formato "tomos"
+
+ 
+
+Versión comprimida (.zip) del Presupuesto prorrogado para 2026 (190 MB, de 02/01/2026)
+
+Versión comprimida (.zip) del Presupuesto prorrogado para 2026, en formato "tomos" (37 MB, de 02/01/2026)
+
+ 
+
+Tratamiento de la información y verificación de la integridad de la documentación publicada y la distribuida en otros soportes digitales (pdf)
+	
+	
+
+
+[[ID:hidZone]]
+
+		
+[[ID:MSOMenu_Help]]
+
+
+		
+	
+	
+	
+			
+
+
+
+
+[[ID:madPie]]
+	  
+	  
+[[ID:madfechaActualizacion]]
+
+	  	
+[[ID:PiePagina1_Label1]]
+Última actualización de esta página: 2/1/2026
+
+  	  
+	  
+[[ID:madMenuPie]]
+
+	      
+	        
+
+			Presentación
+		
+	        
+
+			Guía técnica
+
+			
+
+			Guía de navegación
+
+	        
+
+			Accesibilidad
+
+			
+
+			Aviso legal
+
+			
+
+			Protección de datos
+
+		  
+	  	  
+		
+
+	
+						
+[[ID:DeltaFormDigest]]
+
+	
+							
+								
+							
+						
+
+						
+						
+						
+						
+						
+						
+						
+						
+                        
+						
+						
+						
+						
+						
+						
+						
+									
+
+
+	
+									
+
+
+						
+	
+
+
+
+
+	
+	
+[[ID:DeltaPlaceHolderUtilityContent]]
+
+		
+	
+	
+

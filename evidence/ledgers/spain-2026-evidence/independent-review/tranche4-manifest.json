@@ -1,0 +1,37 @@
+[
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche4-controls.json",
+    "sha256": "1776c10d99282f6420d2fb92c6fa54877bccf3a3262960575cf596013bdb7a64",
+    "bytes": 7153
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche4-controls.py",
+    "sha256": "f12dbe8ab5111b71256ba44dd2d0667d2b1b6fda49c6aca3689dfac764f3a2bb",
+    "bytes": 4131
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche4-protection.json",
+    "sha256": "ff91a26f556e03b277cb5ea2d71be7d1833ce1efefd30de8286444d18ff31046",
+    "bytes": 2259
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche4-read-ledger.json",
+    "sha256": "ee39a4e1289ba76cd9eec86f3ced44a0f573a0898c6aa6c3a96cab27c2a54866",
+    "bytes": 152026
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche4-report.md",
+    "sha256": "6392646ad4af0d15202079d735df7507efeed50439373da42362203828d2ace8",
+    "bytes": 2372
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche4-result.json",
+    "sha256": "583bbe1c8c34cc602d3b3671d8161547a0aef8568444840d21556bfed7a48dad",
+    "bytes": 515
+  },
+  {
+    "path": "output/europe-closeout-2026-10-27/spain-ledger-review/tranche4-source-check.json",
+    "sha256": "18e9540a14ff17ed1cb0dd5f74db749664acc78bcf124959047505b5a6aa8eee",
+    "bytes": 33201
+  }
+]

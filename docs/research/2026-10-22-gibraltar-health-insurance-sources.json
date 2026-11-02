@@ -1,0 +1,16 @@
+{
+  "retrieved": "2026-10-22",
+  "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+  "version": "23 March 2026 consolidation",
+  "retrieval": "Fresh web retrieval succeeded; compared with saved official PDF text.",
+  "locators": {
+    "rules 6A and 6B(1)-(3)": "pages 16\u201318: GIBS exclusions, spouse election restriction, historic and self-only policy exceptions",
+    "rules 20A and 20B": "pages 30\u201331: approved health cover, respective 5395/3000 ceilings, complete-month non-residence reduction",
+    "rule 29": "page 40: claim and evidence requirements"
+  },
+  "limits": [
+    "Not a complete deductions schedule.",
+    "No policy approval or live filing channel verified.",
+    "No professional attestation."
+  ]
+}

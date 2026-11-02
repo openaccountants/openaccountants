@@ -1,0 +1,29 @@
+{
+  "article": "UNIF25-ORDER300-CURRENT-20261030",
+  "text": "Română\nРусский\n2025\nFişa actului juridic\nPrint Pdf\nRepublica Moldova\nSERVICIUL FISCAL DE STAT\nORDIN Nr. 300\ndin 05-06-2025\ncu privire la aprobarea formularului UNIF25\nDeclarația unificată și a Modului de completare\na acesteia\nPublicat : 12-06-2025 în Monitorul Oficial Nr. 309-312 art. 442\n\nÎn vederea executării prevederilor art.83 alin.(11) din Codul fiscal nr.1163/1997 (republicat în Monitorul Oficial al Republicii Moldova din 8 februarie 2007, ediţie specială), precum și în temeiul modificărilor operate prin Legea nr. 214/2024 pentru modificarea unor acte normative (ce vizează politica bugetar-fiscală și vamală) (Monitorul Oficial al Republicii Moldova nr. 355-357 art. 545 din 15 august 2024),\n\nORDON:\n\n1. Se aprobă:\n\n1) Formularul - UNIF25 Declarația unificată, conform anexei nr.1;\n\n2) Modul de completare a Declarației unificate – formularul UNIF25, conform anexei nr.2.\n\n2. Ultima perioadă de raportare conform formularului UNIF21 – Dare de seamă fiscală unificată/(Declarația), aprobat prin Ordinul Serviciului Fiscal de Stat nr.370 din 24 iulie 2020, este perioada fiscală 2024.\n\n3. Prezentul ordin intră în vigoare la data publicării în Monitorul Oficial al Republicii Moldova, iar prima perioadă fiscală de raportare, conform formularului aprobat, este perioada fiscală 2025.\n\n4. Contribuabilii pentru care obligația de raportare survine până la aprobarea și publicarea prezentului ordin vor prezenta Declarația conform formularelor în vigoare la data prezentării.\n\n \n\nDIRECTOARE                                                             Olga GOLBAN\n\n \n\nNr. 300. Chişinău, 5 iunie 2025.\n\n \n\nanexa nr.1\n\n \n\nanexa nr.2\n\n \n12-06-2025\n© Ministerul Justiției, 2026 - Sugestiile și propunerile pot fi expediate la dblex@justice.gov.md",
+  "official_url": "https://www.legis.md/cautare/getResults?doc_id=148910&lang=ro",
+  "observed_utc": "2026-10-30T22:02:30.729Z",
+  "read_date": "2026-10-30",
+  "format": "Exact JSON returned by read-only browser DOM observation; actualcurrentenactedUNIF25/SIMM24/DAP24approval,replacement,commencementandearlyfilingexception;separateannexlinksidentifiednotretrieved",
+  "sha256": "3abe68094ab3edb5553b3328c0a3cb72fc05765661489275cd9488d457ae691e",
+  "approved_attachment_links": [
+    {
+      "kind": "form",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx",
+      "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+      "claimed_full_attachment_verification": false,
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/unif25-form.docx",
+      "binary_sha256": "015f061d7c02b690dd28ff0e18fe116a8e492b18511110c8110e2ffca98bc298",
+      "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-FORM-CORE-DOWNLOADED-20261030.json"
+    },
+    {
+      "kind": "instructions",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx",
+      "retrieval_status": "Previously directcurl403; normal browser download-event/path succeeded30October2026. Binary retained unchanged; exact substantive read scope in linked observation.",
+      "claimed_full_attachment_verification": false,
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/unif25-instructions.docx",
+      "binary_sha256": "acffef2241f3e1a1bba5460159569e06675b1c9bbdd9e4a98f5ea9de271b714b",
+      "attachment_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-INSTRUCTIONS-CORE-DOWNLOADED-20261030.json"
+    }
+  ]
+}

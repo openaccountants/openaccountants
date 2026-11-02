@@ -1,0 +1,92 @@
+## Cross-border points
+
+The ordinary formation checklist does not establish a foreign branch's
+registration, a foreign entity's licence eligibility or a cross-border
+reorganisation method. The scope and source reservations above remain in
+place. Do not substitute Danish or EU incorporation and audit rules for the
+Faroese provisions. [Companies Act §§1–4][company]
+
+## Two worked examples that recompute
+
+### 1. Cash Sp/F versus cash P/F funding
+
+Assume the ordinary cash-only facts and selected statutory reading stated
+above. An Sp/F with DKK 200,000 subscribed capital and DKK 100,000 premium
+pays DKK 50,000 capital and DKK 25,000 premium, total DKK 75,000. The 25%
+capital fraction equals the absolute minimum. For a P/F, use its separate
+minimum subscribed capital: with DKK 500,000 capital and the same fictional
+DKK 100,000 premium, capital payment is DKK 125,000 and the entire premium
+is paid, total DKK 225,000. The DKK 150,000 funding difference is one
+consequence of the legal-form decision, not a conclusion that an Sp/F is
+always preferable. Both figures exclude fees and other formation costs;
+noncash contributions use full payment and do not use these fractions.
+The Sp/F calculation retains the express §40/§33 wording issue and selected
+specific incorporation reading above. [Companies Act §§4, 33, 40][company]
+
+```oa-check
+name: Faroese cash SpF versus PF capital and premium funding
+inputs:
+  spf_capital: 200000
+  pf_capital: 500000
+  premium: 100000
+  fraction: 0.25
+  absolute_minimum: 50000
+steps:
+  spf_capital_paid: max(spf_capital * fraction, absolute_minimum)
+  spf_premium_paid: premium * spf_capital_paid / spf_capital
+  spf_total: spf_capital_paid + spf_premium_paid
+  pf_capital_paid: max(pf_capital * fraction, absolute_minimum)
+  pf_total: pf_capital_paid + premium
+  funding_difference: pf_total - spf_total
+expected:
+  spf_capital_paid: 50000
+  spf_premium_paid: 25000
+  spf_total: 75000
+  pf_capital_paid: 125000
+  pf_total: 225000
+  funding_difference: 150000
+```
+
+### 2. Cumulative late-accounts charge per manager
+
+Assume a new-law period, the demand's compliance period has expired,
+the Registrar imposes §178 charges, exactly three responsible managers,
+no relief or overlapping coercive-fine reduction, and the second commenced
+month measured from the original filing deadline. The cumulative charge
+is DKK 2,000 each, total DKK 6,000, rather than DKK 500 plus DKK 2,000 each.
+At the third commenced month the cumulative figure becomes DKK 3,000 each,
+total DKK 9,000. The three-month cap prevents adding another DKK 3,000
+merely because a fourth month begins. This is a conditional charge
+calculation, not an automatic dissolution or filing-extension entitlement.
+[Annual Accounts Act §§177–179][accounts]
+
+```oa-check
+name: Faroese late accounts cumulative manager charges
+inputs:
+  managers: 3
+  second_month_total_per_manager: 2000
+  third_month_total_per_manager: 3000
+steps:
+  second_month_total: managers * second_month_total_per_manager
+  third_month_total: managers * third_month_total_per_manager
+  incremental_third_month: third_month_total - second_month_total
+expected:
+  second_month_total: 6000
+  third_month_total: 9000
+  incremental_third_month: 3000
+```
+
+## Ask the client first
+
+- What legal form, cash or noncash contribution, subscribed capital, premium
+  and per-share paid amounts are actually proposed or documented?
+- What are the formation signature and effective dates, and who has signed,
+  taken pre-registration obligations or been appointed to management/audit?
+- Who are the legal owners and ultimate controllers, what rights or recent
+  changes exist, and what identification evidence has been obtained?
+- When does the financial year start/end, what are both years' size figures,
+  and do group, holding, foundation or disqualification conditions apply?
+- What audit election, Registrar/TAKS registrations, filing receipts and
+  actual late-filing demands or court referrals exist?
+- What accounting records and storage arrangements exist, and can they be
+  accessed and reproduced in the Faroes throughout their retention period?

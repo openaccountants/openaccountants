@@ -1,6 +1,6 @@
-# Liechtenstein — AI Accounting Assistant | OpenAccountants
+# Libya — AI Accounting Assistant | OpenAccountants
 
-> Open-source accounting skills for Liechtenstein. Upload to Claude, ChatGPT, or any AI assistant.
+> Open-source accounting skills for Libya. Upload to Claude, ChatGPT, or any AI assistant.
 > Tax, bookkeeping, payroll, formation, financial statements, and more. Free and open source.
 
 ## What's in this folder
@@ -21,10 +21,10 @@
 1. Upload ALL files in this folder to your AI assistant (Claude, ChatGPT, Gemini, etc.)
 2. Attach your bank statement, invoices, or any financial documents (CSV or PDF)
 3. Tell the AI what you need:
-   - **"Help me with my 2025 Liechtenstein taxes. Here's my bank statement."**
+   - **"Help me with my 2025 Libya taxes. Here's my bank statement."**
    - **"Classify my transactions and prepare my books."**
    - **"Run payroll for my employee."**
-   - **"Help me set up a company in Liechtenstein."**
+   - **"Help me set up a company in Libya."**
    - **"Prepare my annual accounts."**
 
 The AI will:
@@ -43,7 +43,7 @@ The most up-to-date, verified version of these skills is maintained at [openacco
 
 ## Are you a qualified tax professional?
 
-These Liechtenstein tax skills need your eye. Every rate, threshold, and form reference was AI-drafted and needs a human professional to verify it.
+These Libya tax skills need your eye. Every rate, threshold, and form reference was AI-drafted and needs a human professional to verify it.
 
 **You don't need to use GitHub.** Just:
 

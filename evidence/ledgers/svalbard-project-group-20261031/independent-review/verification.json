@@ -1,0 +1,446 @@
+{
+  "candidate": "79ded6f8c26b0507af47ce96d6e3a6b0a004441a",
+  "combined_manifest_sha256": "c406cf9cb0b25758b5cd013b47dc700ed605b022ee716368df39a59a13ba9345",
+  "manifest_inputs": 66,
+  "manifest_mismatches": [],
+  "rows": [
+    {
+      "id": "SJ-PROJ-001",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-002",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-003",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-004",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-005",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-006",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-007",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-008",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-009",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-010",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-011",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-012",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-013",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-014",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-015",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-016",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-017",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-018",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-019",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-020",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-021",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-022",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-023",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-024",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-025",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-026",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-027",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-028",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-029",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-030",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-031",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-032",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-033",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-034",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-035",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-036",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-037",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-038",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-039",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-040",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    },
+    {
+      "id": "SJ-PROJ-041",
+      "quote_present": true,
+      "reader_hash": true,
+      "raw_hash": true,
+      "verdict": "supported with stated case limits"
+    }
+  ],
+  "fresh_sources": [
+    {
+      "source": "svalbard-law",
+      "fresh_http": 200,
+      "raw_same": true,
+      "all_bound_quotes_in_fresh_html": false,
+      "missing": [
+        "a.forenklet felles skatteoppgj\u00f8r for prosjektgrupper mv. med kortere opphold p\u00e5 Svalbard,",
+        "Skatt av l\u00f8nn, pensjoner og annen ytelse som nevnt i skatteloven \u00a7 12-2 bokstavene a, b, c, j og k, beregnes med en prosentvis fastsatt del av ytelsens bruttoverdi, jf. \u00a7 5-2. Skatten beregnes med en lav sats for inntekt opp til 12 ganger folketrygdens grunnbel\u00f8p, og med en h\u00f8yere sats for overskytende inntekt. I det samlede inntektsgrunnlaget etter forrige punktum inng\u00e5r ogs\u00e5 inntekt som nevnt i \u00a7 3-2 fjerde ledd bokstav b. Det benyttes det grunnbel\u00f8p som sist ble fastsatt for inntekts\u00e5ret.",
+        "Arbeidsgiveren skal levere melding om foretatt l\u00f8nnstrekk og dato for utbetaling av ytelser det skal foretas trekk i, etter reglene i skatteforvaltningsloven \u00a7 8-8 f\u00f8rste ledd. Opplysninger om foretatt l\u00f8nnstrekk skal ogs\u00e5 leveres n\u00e5r arbeidsgiver opph\u00f8rer med virksomhet p\u00e5 Svalbard eller aktiviteten der p\u00e5 annen m\u00e5te opph\u00f8rer. Forh\u00e5ndsutfylte opplysninger om arbeidsgiveren etter denne bestemmelsen kan gj\u00f8res tilgjengelig for arbeidsgiveren ved elektronisk kommunikasjon. Departementet kan i forskrift gi regler som fraviker regelen i f\u00f8rste punktum."
+      ]
+    },
+    {
+      "source": "insurance-law",
+      "fresh_http": 200,
+      "raw_same": true,
+      "all_bound_quotes_in_fresh_html": false,
+      "missing": [
+        "c.personinntekt for personer under 17 \u00e5r eller over 69 \u00e5r.",
+        "a.l\u00f8nn og annen godtgj\u00f8relse som nevnt i skatteloven \u00a7 12-2 bokstav a,"
+      ]
+    },
+    {
+      "source": "svalbard-regulation",
+      "fresh_http": 200,
+      "raw_same": true,
+      "all_bound_quotes_in_fresh_html": true,
+      "missing": []
+    },
+    {
+      "source": "payment-law",
+      "fresh_http": 200,
+      "raw_same": true,
+      "all_bound_quotes_in_fresh_html": false,
+      "missing": [
+        "(1) Det skal beregnes rente av skatte- og avgiftskrav som ikke betales innen forfallstidspunktet etter kapittel 10. Renten beregnes p\u00e5 grunnlag av kravet tillagt eventuell rente etter \u00a7\u00a7 11-2 eller 11-5. Renten l\u00f8per fra forfallstidspunktet fram til betaling skjer. For krav etter \u00a7 10-52 l\u00f8per renten fra forfallstidspunktet for det skatte- eller avgiftskravet som ansvarskravet skal dekke, fram til betaling skjer."
+      ]
+    },
+    {
+      "source": "insurance-decision",
+      "fresh_http": 200,
+      "raw_same": true,
+      "all_bound_quotes_in_fresh_html": false,
+      "missing": [
+        "Av l\u00f8nnsinntekt og annen personinntekt som nevnt i folketrygdloven \u00a7 23-3 annet ledd nr. 2, beregnes trygdeavgift med 7,6 pst."
+      ]
+    },
+    {
+      "source": "svalbard-decision",
+      "fresh_http": 200,
+      "raw_same": true,
+      "all_bound_quotes_in_fresh_html": true,
+      "missing": []
+    },
+    {
+      "source": "project-amelding-direct",
+      "fresh_http": 200,
+      "raw_same": false,
+      "all_bound_quotes_in_fresh_html": false,
+      "missing": [
+        "Fra 17. november 2026 er det ikke lenger mulig \u00e5 levere a-melding med de gamle Altinn-rollene. Det er derfor viktig at du kontrollerer at du har riktig tilgangspakke for denne tjenesten, eller at du har f\u00e5tt delegert tilgang til en enkelttjeneste."
+      ]
+    },
+    {
+      "source": "project-amelding-svalbard",
+      "fresh_http": 200,
+      "raw_same": false,
+      "all_bound_quotes_in_fresh_html": true,
+      "missing": []
+    },
+    {
+      "source": "project-payment-guidance",
+      "fresh_http": 200,
+      "raw_same": false,
+      "all_bound_quotes_in_fresh_html": true,
+      "missing": []
+    },
+    {
+      "source": "project-contact",
+      "fresh_http": 200,
+      "raw_same": false,
+      "all_bound_quotes_in_fresh_html": true,
+      "missing": []
+    },
+    {
+      "source": "project-areport-law",
+      "fresh_http": 200,
+      "raw_same": true,
+      "all_bound_quotes_in_fresh_html": false,
+      "missing": [
+        "Skattekontoret kan ilegge den som ikke innrapporterer alle opplysninger innen fristen i \u00a7 4, en daglig l\u00f8pende tvangsmulkt frem til opplysningene er levert. Samlet tvangsmulkt kan ikke overstige 1 000 ganger rettsgebyret. Departementet kan i forskrift gi regler om hvordan den daglige tvangsmulkten skal fastsettes.",
+        "Skattekontoret kan ilegge den som ikke leverer alle opplysninger innen fristen i \u00a7 4, et overtredelsesgebyr. Gebyret kan ikke overstige 15 ganger rettsgebyret. Departementet kan i forskrift gi regler om hvordan gebyret skal fastsettes."
+      ]
+    },
+    {
+      "source": "project-areport-reg",
+      "fresh_http": 200,
+      "raw_same": true,
+      "all_bound_quotes_in_fresh_html": false,
+      "missing": [
+        "For opplysningspliktige etter skatteforvaltningsloven \u00a7 7-6, utskytes fristen for f\u00f8rste levering etter f\u00f8rste ledd til den 15. i den p\u00e5f\u00f8lgende kalenderm\u00e5neden, n\u00e5r arbeidet i et oppdrag p\u00e5begynnes etter den 20. i en kalenderm\u00e5ned. Opplysningene skal gis for hver kalenderm\u00e5ned opplysningene gjelder for.",
+        "N\u00e5r det er innvilget fritak fra \u00e5 foreta forskuddstrekk etter skattebetalingsloven \u00a7 5-3 for arbeidstakere hos opplysningspliktige etter skatteforvaltningsloven \u00a7 7-6, kan opplysninger leveres en gang per \u00e5r. Opplysningene skal gis for hver kalenderm\u00e5ned opplysningene gjelder for, og skal leveres senest den 15. januar i \u00e5ret etter inntekts\u00e5ret."
+      ]
+    },
+    {
+      "source": "project-insurance-membership",
+      "fresh_http": 200,
+      "raw_same": true,
+      "all_bound_quotes_in_fresh_html": true,
+      "missing": []
+    }
+  ],
+  "gzip_checks": [
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-finance-current.html.gz",
+      "raw_exact": true
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-gir.html.gz",
+      "raw_exact": true
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-law.html.gz",
+      "raw_exact": true
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-overview.html.gz",
+      "raw_exact": true
+    },
+    {
+      "path": "evidence/ledgers/svalbard-perimeter-20261031/sources/perimeter-minimum-reg.html.gz",
+      "raw_exact": true
+    }
+  ],
+  "checks": [
+    {
+      "check": "shape",
+      "exit_code": 0,
+      "tail": [
+        "  (i) not_yet_confirmed    pass",
+        "  (j) reviewed_on          pass"
+      ]
+    },
+    {
+      "check": "examples",
+      "exit_code": 0,
+      "tail": [
+        "checked 9 files, 18 oa-check blocks, 0 failures, 0 missing"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "status": "Remaining original approved UNIF25 annexes read; selected methods and source mismatches applied with current Code; country review pending",
+  "records": [
+    {
+      "article": "APPROVED-UNIF25-FORM-COMPLETE-READ-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx",
+      "sha256": "1a380a2153341c1698ce52923bb049d3b1f0027eca17c8de0c97b3b94bb7c3c0",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T00:05:54.292104+00:00",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/unif25-form.docx",
+      "binary_sha256": "015f061d7c02b690dd28ff0e18fe116a8e492b18511110c8110e2ffca98bc298",
+      "binary_size_bytes": 40058,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/unif25-form-render/unif25-form.pdf",
+      "rendered_pdf_sha256": "8aae798caa3e0aa1babcfb001828b9b993d316fc2e3c442bf3c50ef48d08273f",
+      "rendered_pages": 4,
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=148910&lang=ro",
+      "parent_header_and_exact_attachment_links_rechecked": "2026-10-31; SFSOrder300/5June2025, published12June2025; displayedversion2025 and bothsameapprovedannexlinks",
+      "read_scope": "Previous formpages1-2/instructions1-35 preserved in earlier observation. Remainder formpages3-4/instructions36-136 now text-read and visually inspected on renderedpages4-20; combined whole document read. This applies selected current-law methods, not every obsolete assertion or portal acceptance.",
+      "visually_read_rendered_pages_this_turn": [
+        2,
+        3,
+        4
+      ],
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "not_certified": "Noaccountantattestation,liveportalacceptance,allcurrentlocalrates,allrelief/classifiercodesorcomprehensivecountrycoverage",
+      "source_inconsistencies": [
+        "Instruction50doesnotdescribeactualfounderannexcolumn10;actualformnettaxcolumn10=6-7,withtaxableincomeandtaxreliefcolumnsseparate.",
+        "Instruction67saysannex5/rows0202-02017,whileactualincomeadjustmenttableisannex6withlisted02041/02042/0206...02017;useactualcodesandcurrentlaw,notanunprinted0202line.",
+        "Instruction79saysHG704/2018;currentactualassetregulationisHG704/2019,asalsoidentifiedininstruction54.",
+        "Instruction102prints12%generally;currentCode15(c)farm7%andactualformannex1reference15(a)/(c)controllegaltaxpayercategory;not12%forallfarmrelief.",
+        "Instruction120retainsday-workerpersonalexemptiontext;currentCode15(a1)expresslyexcludeschapter4exemptions;IALS21Order59/2026removedparalleloldsentencefromIALS21,notaproofofUNIFamendment.",
+        "Actualtable3retainsindividualsocialcolumn15,butinstruction119omitsit;ordinarycurrentlawdoesnotcreateold6%employeewithholdingmerelyfromthisheader.",
+        "Instructions121-136calltable7payablecolumn6;actualtable7printsfinalcolumn7andformula4-5. Mapbyfieldlabel,donotclaimportalcolumnnumber.",
+        "Actualformhas1,3,4,6,7tables,noseparate2/5;table7includesroadtaxrow13whichhasnoseparatecolumnintable6. Dontallegealltable7rowsmapone-to-onetotable6.",
+        "Actualtable4nonresidentpaymentlayoutretained;thecomplete136pointinstructionscontainnoseparatetable4completionsection. CountrynameinUNIFtable4isnotautomaticallythecurrentINR14citizenshipcodefield."
+      ],
+      "extraction_note": "pypdf layout extraction warned rotated text would be incomplete. Complete original Word XML paragraph text is appended to retain every vertical table6header, and actual rendered tables were visually inspected; no incomplete-extraction-as-full-body claim."
+    },
+    {
+      "article": "APPROVED-UNIF25-INSTRUCTIONS-COMPLETE-READ-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx",
+      "sha256": "8d1bbbc808c6d8e9d0b4938e9fb9d9f683c6c6a2013cfb275681fd2a05fa5150",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T00:05:55.572199+00:00",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/unif25-instructions.docx",
+      "binary_sha256": "acffef2241f3e1a1bba5460159569e06675b1c9bbdd9e4a98f5ea9de271b714b",
+      "binary_size_bytes": 102664,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/unif25-instructions-render/unif25-instructions.pdf",
+      "rendered_pdf_sha256": "cf033e113446afa444f89dc25cace40a4e30e131c7efe883e487b153ae3d33c7",
+      "rendered_pages": 20,
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=148910&lang=ro",
+      "parent_header_and_exact_attachment_links_rechecked": "2026-10-31; SFSOrder300/5June2025, published12June2025; displayedversion2025 and bothsameapprovedannexlinks",
+      "read_scope": "Previous formpages1-2/instructions1-35 preserved in earlier observation. Remainder formpages3-4/instructions36-136 now text-read and visually inspected on renderedpages4-20; combined whole document read. This applies selected current-law methods, not every obsolete assertion or portal acceptance.",
+      "visually_read_rendered_pages_this_turn": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "not_certified": "Noaccountantattestation,liveportalacceptance,allcurrentlocalrates,allrelief/classifiercodesorcomprehensivecountrycoverage",
+      "source_inconsistencies": [
+        "Instruction50doesnotdescribeactualfounderannexcolumn10;actualformnettaxcolumn10=6-7,withtaxableincomeandtaxreliefcolumnsseparate.",
+        "Instruction67saysannex5/rows0202-02017,whileactualincomeadjustmenttableisannex6withlisted02041/02042/0206...02017;useactualcodesandcurrentlaw,notanunprinted0202line.",
+        "Instruction79saysHG704/2018;currentactualassetregulationisHG704/2019,asalsoidentifiedininstruction54.",
+        "Instruction102prints12%generally;currentCode15(c)farm7%andactualformannex1reference15(a)/(c)controllegaltaxpayercategory;not12%forallfarmrelief.",
+        "Instruction120retainsday-workerpersonalexemptiontext;currentCode15(a1)expresslyexcludeschapter4exemptions;IALS21Order59/2026removedparalleloldsentencefromIALS21,notaproofofUNIFamendment.",
+        "Actualtable3retainsindividualsocialcolumn15,butinstruction119omitsit;ordinarycurrentlawdoesnotcreateold6%employeewithholdingmerelyfromthisheader.",
+        "Instructions121-136calltable7payablecolumn6;actualtable7printsfinalcolumn7andformula4-5. Mapbyfieldlabel,donotclaimportalcolumnnumber.",
+        "Actualformhas1,3,4,6,7tables,noseparate2/5;table7includesroadtaxrow13whichhasnoseparatecolumnintable6. Dontallegealltable7rowsmapone-to-onetotable6.",
+        "Actualtable4nonresidentpaymentlayoutretained;thecomplete136pointinstructionscontainnoseparatetable4completionsection. CountrynameinUNIFtable4isnotautomaticallythecurrentINR14citizenshipcodefield."
+      ]
+    }
+  ]
+}

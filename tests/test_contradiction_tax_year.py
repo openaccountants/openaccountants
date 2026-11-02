@@ -250,7 +250,7 @@ class RealPackagesTreeTests(unittest.TestCase):
 
         Once next year's rates file is populated the default year advances, but
         a guide whose prose is still this year's must not advance with it, or a
-        real drift against its twin in skills/federal silently stops being
+        real drift against its twin in skills/us/federal silently stops being
         reported.
         """
         compiled = scanner.compile_concepts()

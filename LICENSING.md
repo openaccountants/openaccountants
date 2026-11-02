@@ -57,6 +57,10 @@ notwithstanding the general mapping above. The Guide License applies to the rest
 of the Guides, which are Glimpse Ltd's own work, work-for-hire, or covered by an
 accepted [CLA](CLA.md).
 
+## Third-party MIT material
+
+`jp-etax-filing` and `jp-incorporation` adapt work by Kazuki Nagata (https://github.com/kazukinagata/shinkoku), MIT licensed, copyright 2025 Kazuki Nagata. The notice is in [LICENSES/MIT.txt](LICENSES/MIT.txt) and applies to the adapted material.
+
 ## Effective date and prior releases
 
 This structure is introduced on **2026-07-16**. Guide versions previously

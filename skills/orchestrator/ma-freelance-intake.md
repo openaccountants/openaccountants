@@ -1,11 +1,11 @@
 ---
 name: ma-freelance-intake
-description: ALWAYS USE THIS SKILL when a user asks for help with their Moroccan taxes AND mentions freelancing, self-employment, auto-entrepreneur, or sole proprietorship in Morocco. Trigger on "help with my Morocco taxes", "I'm an auto-entrepreneur", "I'm self-employed in Morocco", etc. REQUIRED entry point for the Morocco self-employed workflow; downstream skills (ma-auto-entrepreneur, ma-cpu, ma-income-tax, ma-social-contributions, morocco-vat, ma-return-assembly) depend on it. Morocco-resident sole proprietors only.
+description: ALWAYS USE THIS SKILL when a user asks for help with their Moroccan taxes AND mentions freelancing, self-employment, auto-entrepreneur, or sole proprietorship in Morocco. Trigger on "help with my Morocco taxes", "I'm an auto-entrepreneur", "I'm self-employed in Morocco", etc. REQUIRED entry point for the Morocco self-employed workflow; downstream skills (ma-auto-entrepreneur, ma-cpu, morocco-professional-income-tax, ma-social-contributions, morocco-vat, ma-return-assembly) depend on it. Morocco-resident sole proprietors only.
 version: 0.1
 jurisdiction: MA
 tax_year: 2026
 tier: 2
-last_updated: 2026-06-12
+last_updated: 2026-10-31
 category: orchestrator
 ---
 
@@ -15,7 +15,7 @@ category: orchestrator
 
 ## What this file is
 
-The intake orchestrator for a Morocco-resident self-employed person (travailleur indépendant / auto-entrepreneur). Every downstream Morocco content skill — `ma-auto-entrepreneur`, `ma-cpu`, `ma-income-tax`, `ma-social-contributions`, `morocco-vat` — and the assembly orchestrator `ma-return-assembly` depend on this skill running first to produce a structured intake package.
+The intake orchestrator for a Morocco-resident self-employed person (travailleur indépendant / auto-entrepreneur). Every downstream Morocco content skill — `ma-auto-entrepreneur`, `ma-cpu`, `morocco-professional-income-tax`, `ma-social-contributions`, `morocco-vat` — and the assembly orchestrator `ma-return-assembly` depend on this skill running first to produce a structured intake package.
 
 This skill **computes nothing**. Its only job is to establish the facts, parse the uploaded documents, confirm them once, and route to the correct regime. Morocco's self-employed landscape spans three income-tax (IR / impôt sur le revenu) paths plus social and VAT layers, and the routing decision drives everything downstream, so getting the routing right is the whole point of this file.
 
@@ -51,8 +51,8 @@ Establish, fast and in this order:
 
 3. **Annual turnover (chiffre d'affaires) vs the thresholds** — the central routing question:
    - **Auto-entrepreneur:** up to **500,000 MAD** commercial/industrial/artisanal, or **200,000 MAD** services. Simplest regime; flat tax on turnover (1% commercial, 2% services) paid via the national auto-entrepreneur platform. → routes to `ma-auto-entrepreneur`.
-   - **CPU (contribution professionnelle unique) / RNS:** above the auto-entrepreneur band and up to **2,000,000 MAD** commercial/industrial/artisanal, or **500,000 MAD** services. → routes to `ma-cpu` (CPU) or `ma-income-tax` (RNS net profit), depending on the elected option.
-   - **RNR (régime du résultat net réel):** above the CPU/RNS turnover ceilings, or where the taxpayer elects to be taxed on actual net profit. → routes to `ma-income-tax`.
+   - **CPU (contribution professionnelle unique) / RNS:** above the auto-entrepreneur band and up to **2,000,000 MAD** commercial/industrial/artisanal, or **500,000 MAD** services. → routes to `ma-cpu` (CPU) or `morocco-professional-income-tax` (RNS net profit), depending on the elected option.
+   - **RNR (régime du résultat net réel):** above the CPU/RNS turnover ceilings, or where the taxpayer elects to be taxed on actual net profit. → routes to `morocco-professional-income-tax`.
    - If the user does not know their regime, infer it: an auto-entrepreneur attestation ⇒ auto-entrepreneur; turnover inside the CPU band with no full books ⇒ CPU/RNS; turnover above the ceilings or full accounting records ⇒ RNR.
 
 4. **Moroccan tax resident for the year?** Resident if the habitual home (foyer permanent d'habitation), centre of economic interests, or 183+ days in Morocco in the 365-day period.
@@ -91,8 +91,8 @@ Ask the user to upload (whatever they have — partial is fine):
 Produce a structured intake package and route based on the confirmed regime:
 
 - **Auto-entrepreneur** (within 500k/200k band): `ma-auto-entrepreneur` (flat tax on turnover) **+** `ma-social-contributions` (CNSS/AMO) → `ma-return-assembly`. No TVA on the flat-tax turnover.
-- **CPU / RNS** (CPU band, up to 2,000,000/500,000): `ma-cpu` (CPU) or `ma-income-tax` (RNS net profit, per the elected option) **+** `ma-social-contributions` **+** `morocco-vat` if TVA-registered → `ma-return-assembly`.
-- **RNR** (above the ceilings or by election): `ma-income-tax` (RNR net profit, full books) **+** `ma-social-contributions` **+** `morocco-vat` (TVA by default for activities above the threshold) → `ma-return-assembly`.
+- **CPU / RNS** (CPU band, up to 2,000,000/500,000): `ma-cpu` (CPU) or `morocco-professional-income-tax` (RNS net profit, per the elected option) **+** `ma-social-contributions` **+** `morocco-vat` if TVA-registered → `ma-return-assembly`.
+- **RNR** (above the ceilings or by election): `morocco-professional-income-tax` (RNR net profit, full books) **+** `ma-social-contributions` **+** `morocco-vat` (TVA by default for activities above the threshold) → `ma-return-assembly`.
 - **Ceiling breach mid-year:** flag prominently; the taxpayer moves up a regime (auto-entrepreneur → CPU/RNS, or CPU/RNS → RNR) and the reviewer determines the effective date. Route accordingly.
 - **Société, non-resident, or other complexity (IS, multi-activity, foreign establishment):** stop and escalate to a qualified Moroccan expert-comptable.
 

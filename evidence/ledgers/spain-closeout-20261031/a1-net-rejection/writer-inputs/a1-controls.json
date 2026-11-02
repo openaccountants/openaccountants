@@ -1,0 +1,18 @@
+{
+  "literal": {
+    "gross": 20000,
+    "expenses": 1200,
+    "base": 18800,
+    "rate": 0.19,
+    "withholding": 3572,
+    "finaltax": 3572,
+    "refund": 0
+  },
+  "historical_concordance": {
+    "base": 20000,
+    "withholding": 3800,
+    "finaltax": 3572,
+    "refund": 228
+  },
+  "status": "WRITER arithmetic of two expressly distinct interpretations; not legal approval"
+}

@@ -1,0 +1,2011 @@
+[
+  {
+    "key": "S0",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw": "sources/S0.body",
+    "raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "reader": "sources/S0.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S1",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-25039",
+    "raw": "sources/S1.body",
+    "raw_sha256": "b3e548033e26a14b3171f087f61b2c347598ffc847ce2af65cfc95a9af743b00",
+    "reader": "sources/S1.reader.txt",
+    "reader_sha256": "6584403e01d6542eb7f398af6a906bacd908383c65f383c4152d25f092cadbd0",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20121031&tn=1",
+    "raw": "sources/S2.body",
+    "raw_sha256": "e3da74b41a23fe184e7de42ebbb18fa3e2b09c444fd67b94c94365ef20fefa0b",
+    "reader": "sources/S2.reader.txt",
+    "reader_sha256": "e8470cd7692239d3e47191fef29706a459a9a6dfbd4861454369c884887fe76a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S3",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "raw": "sources/S3.body",
+    "raw_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "reader": "sources/S3.reader.txt",
+    "reader_sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S4",
+    "url": "https://www.boe.es/buscar/act.php?id=BOCM-m-2010-90068",
+    "raw": "sources/S4.body",
+    "raw_sha256": "615adc6d0f26e87272a3ae1e3945488990d8338e2c3a621a1fe04ac2c6d6acfe",
+    "reader": "sources/S4.reader.txt",
+    "reader_sha256": "980a06aa54c46d484f714f581070c50e59d4b7ec6b618e0cc960ca6ab66a9db6",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S5",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-6951",
+    "raw": "sources/S5.body",
+    "raw_sha256": "a513248b4b5e079ef59a934d44a717f60735fe99f51239168af318e41b7d046b",
+    "reader": "sources/S5.reader.txt",
+    "reader_sha256": "5e29cc1c5f3329d95d3c8c9fb0196d0784f9b44c9a5bcbd370dd4bb43dc0080e",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S6",
+    "url": "https://www.boe.es/ccaa/dogc/2026/9706/f00001-00146.pdf",
+    "raw": "sources/S6.body",
+    "raw_sha256": "569eb43a1bc5478c761ddaaf5879f820eee6fd88aa3d15f84ad7713b0c1d5793",
+    "reader": "sources/S6.reader.txt",
+    "reader_sha256": "96406151c9fd120b250a2cf413dfa8c2317ce67f75bdc2b1728bbc40640f9080",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S8",
+    "url": "https://atc.gencat.cat/es/tributs/irpf/deduccions-tram-irpf/",
+    "raw": "sources/S8.body",
+    "raw_sha256": "1c49f2212697f7bb4459a2fd364caf1abad2304189987af046541c1c80be79cf",
+    "reader": "sources/S8.reader.txt",
+    "reader_sha256": "a11aac9fe0f83364c64c74743117807619919691ea1c3bf74c3dc99e8aa80d6c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S11",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deduccion-inversion-vivienda-habitual-regimen-transitorio/modalidades-deduccion/adquisicion-construc-rehabilitacion-ampliacion-vivienda-habitual/cantidades-satisfechas-derecho-deduccion-base-deducible.html",
+    "raw": "sources/S11.body",
+    "raw_sha256": "df736331bce165dce813bce037cf8fa327290ebfb88eff739dc8b0489e3561c4",
+    "reader": "sources/S11.reader.txt",
+    "reader_sha256": "de6f71bb851b54ed747e8aeb4d4d82f99ea420bdc906c07d6171d4849dafa112",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S12",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820&p=20111220&tn=1",
+    "raw": "sources/S12.body",
+    "raw_sha256": "e55530a4a36cafa30cffbcc374b6ad38c016b5fa9f44be1e9259c1d7cc3111c3",
+    "reader": "sources/S12.reader.txt",
+    "reader_sha256": "c82f7d5ecd50253681ca1b3e1027e1fe19892da59095602b1a91fe93c3938ccd",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S14",
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "raw": "sources/S14.body",
+    "raw_sha256": "bde9445d5c35128006ea8d4a188a7d1e437e1b25484e939baedd2204afa17a9c",
+    "reader": "sources/S14.reader.txt",
+    "reader_sha256": "3934a7e410541e91aa0c00df3f2231ef8034d82273db78e38deef647c62dfd49",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S15",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-16833",
+    "raw": "sources/S15.body",
+    "raw_sha256": "f90e736074209aae4abc2473e65ed61b50ae1afabb8e8919fe2b0fd31b745284",
+    "reader": "sources/S15.reader.txt",
+    "reader_sha256": "db998c5d21eb83abbca8d2c2033b89d33a21f0e21e7a56c5a95d921a54b4f86c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S16",
+    "url": "https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=1037694",
+    "raw": "sources/S16.body",
+    "raw_sha256": "ff15a75201876a165c1e96a71c8af9c02704a8247b7efe1be6d9c15633d0b115",
+    "reader": "sources/S16.reader.txt",
+    "reader_sha256": "9db16326c4a77c6052e0ab67c42b1ce3aba917ccf2a40abf051d6406183a04ea",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S17",
+    "url": "https://www.artesadesegre.cat/la-ciutat/nuclis-agregats",
+    "raw": "sources/S17.body",
+    "raw_sha256": "7e8ed3cd7e73a9f0079be6aa0cfa09cbe31c03ca23a129d610b7173398330417",
+    "reader": "sources/S17.reader.txt",
+    "reader_sha256": "ffdffae16fb943166fc17bf347db1d108d5bbde10f86a292afc29dc7814fbb59",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S18",
+    "url": "https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1",
+    "raw": "sources/S18.body",
+    "raw_sha256": "07cde5fbf353b77122943c9aa854fa0a109b4eae785ce12fbd4db8b7a11c1545",
+    "reader": "sources/S18.reader.txt",
+    "reader_sha256": "d4411b450a2a3fd90c015c2af20d2463ecec81f9c3f170ffe32773c8123927d7",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S22",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGC-f-2026-90237",
+    "raw": "sources/S22.body",
+    "raw_sha256": "9a5d2f1c4909f4ea0ea50a798abb82cbc0106eeb4ed2da6cd080a028cecc8580",
+    "reader": "sources/S22.reader.txt",
+    "reader_sha256": "a1a809671de88094c9376a22c9cc5367585f1d7753130aa0ba741b701c5483ae",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S23",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGC-f-2026-90249",
+    "raw": "sources/S23.body",
+    "raw_sha256": "12ae0ea106ac5fdded2068318c1a1b1b62f4ed9d423a8ca04e024491b2a60eae",
+    "reader": "sources/S23.reader.txt",
+    "reader_sha256": "f6c510f0536ed3ea0d86880fbceac2b0051cfcfdea16926129d91436be8cc8c4",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S24",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/irpf/novedades-impuesto/novedades-publicadas-informa-2024/novedades-publicadas-informa-mes-septiembre.html",
+    "raw": "sources/S24.body",
+    "raw_sha256": "5c18c4620a6f98965ce1f39cabc88e7fd166e2ecaf92905c9488d4b7c0cf7384",
+    "reader": "sources/S24.reader.txt",
+    "reader_sha256": "3b283b8e3386ba15d7675249027b4335f444d8fa3ee2786744168f85b398cf3d",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S25",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-17915",
+    "raw": "sources/S25.body",
+    "raw_sha256": "1fdf82e545e24d9960c45370c3c7bcbfa0105bf7383b701820439f35283dc4ac",
+    "reader": "sources/S25.reader.txt",
+    "reader_sha256": "2f1f4e129bed985c841486440bf1893a88933f8c64604002938d94075df47ba3",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S26",
+    "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/03/Medidas%20auton%C3%B3micas%20renta2025.pdf",
+    "raw": "sources/S26.body",
+    "raw_sha256": "091da9b2940e13a45758700f4b3bf3862547a2c0924f98d02c2b05f87c17fded",
+    "reader": "sources/S26.reader.txt",
+    "reader_sha256": "f896e4796a103e5ede9e97a029bd04bff6c8e9b9d6addf55b8a0c846ace47b27",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S27",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/asistencia-personas-discapacidad.html",
+    "raw": "sources/S27.body",
+    "raw_sha256": "0bc1a333ad67812fded0475b5158a5819b5bd32e789e2c9efe56351aa42eeeb4",
+    "reader": "sources/S27.reader.txt",
+    "reader_sha256": "7d383f6e5772ebae77777626227d9b69e9da73630492bdc165a7f15b68294ee9",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S28",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_1-andalucia/10_1_16-gastos-veterinarios-derivados-adquisicion-asistencia.html",
+    "raw": "sources/S28.body",
+    "raw_sha256": "e461781324586ac2f52b4c3733654b696f12ca02870b8128ee3f5f6174e07429",
+    "reader": "sources/S28.reader.txt",
+    "reader_sha256": "443e52fd5f88c799708195638818b8db744c4413c26737bedb90421b3170cc2f",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S29",
+    "url": "https://www.juntadeandalucia.es/sites/default/files/inline-files/2026/06/Consulta%2014-26%20web.pdf",
+    "raw": "sources/S29.body",
+    "raw_sha256": "9dc1e8813883d9c1b3e2010312d57139c95154df0d64d2e3790abe2091672c25",
+    "reader": "sources/S29.reader.txt",
+    "reader_sha256": "e32f9cc43806fd9e809b4c65cff3a4220df2d7bcf734d40cddde2df29f7b8fad",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S30",
+    "url": "https://www.boe.es/buscar/act.php?id=BOA-d-2005-90006",
+    "raw": "sources/S30.body",
+    "raw_sha256": "c23acbc209a7bafcb4edae1d0e4ecaff6389946ee04aacab8eacda07b3165e5d",
+    "reader": "sources/S30.reader.txt",
+    "reader_sha256": "e5253a3be41e18b1c70619b808c50cc897d1426d899437496ce226af6277bf63",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S31",
+    "url": "https://www3.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-aragon/adquisicion-libros-texto-material-escolar.html",
+    "raw": "sources/S31.body",
+    "raw_sha256": "4a15458bcd89559f6bacd1a78c7f7038fcf01a92fa787d8814e7f80cdcf4938c",
+    "reader": "sources/S31.reader.txt",
+    "reader_sha256": "b0fa1fb8bb0d5022837de03188be25f69dfec9dd6453707bd968dfd1461725ff",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S32",
+    "url": "https://docm.jccm.es/portaldocm/descargarArchivo.do?ruta=2026/03/30/pdf/2026_2465.pdf&tipo=rutaDocm",
+    "raw": "sources/S32.body",
+    "raw_sha256": "91b8c33af6b79496dfcd4bf61a0e1a7d530e9fc1e1200c55c4cce4da423e902b",
+    "reader": "sources/S32.reader.txt",
+    "reader_sha256": "9b106358909755722b6f047239b3b58b4097e6d2d2a86e33587c257694f19229",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S33",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+    "raw": "sources/S33.body",
+    "raw_sha256": "bb4bc02a45976f851d496472816c4c82b6a755de527378276625e850fb03df7c",
+    "reader": "sources/S33.reader.txt",
+    "reader_sha256": "7ce93326592d0f51657fa4170248043ec158c092e807c67ffff563bce248bc0f",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S34",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-11513",
+    "raw": "sources/S34.body",
+    "raw_sha256": "a099824cb4cdd2480e4b49724e56f8657f2b89622d2520ef6d54fd26c17a6ea9",
+    "reader": "sources/S34.reader.txt",
+    "reader_sha256": "c0b42dd159924059eea8f71ee1293f1a349a5445d990c257e0bd4b5b4c800b7a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S35",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-mancha/adquisicion-rehabilitacion-vivienda-habitual-zonas-rurales.html",
+    "raw": "sources/S35.body",
+    "raw_sha256": "7a24c25e8319b59ef6ed77115f24e7624758316705632a5407d8bea69fc9d137",
+    "reader": "sources/S35.reader.txt",
+    "reader_sha256": "4d88f689cd74724ff58a0f285c149c5812187787952872541d4bbe82672c11c7",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S36",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-2888",
+    "raw": "sources/S36.body",
+    "raw_sha256": "f88f88f1e31c0c24fee0b3956d7a6d3dedb420603c9802673c9906845642201f",
+    "reader": "sources/S36.reader.txt",
+    "reader_sha256": "a1cd458575a54af013ea42f64e50f301acaf12beb0f49df3da3d24e7f4c3b56e",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S37",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-945",
+    "raw": "sources/S37.body",
+    "raw_sha256": "397f4b8d0e5a92f8e9a71787f3d4e406292dba30bf7a42d121e2d96c270184e5",
+    "reader": "sources/S37.reader.txt",
+    "reader_sha256": "8f135771c8bacbb6275b0f795a663e4438cf2e34bd9f1d74168d646318735a5d",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S38",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/gastos-descendientes-centros-cero-tres-anos.html",
+    "raw": "sources/S38.body",
+    "raw_sha256": "d410e6ffc4afeeac6dfd01ad40a1ec49bb19256e9ed3977eb702b6322d5e774f",
+    "reader": "sources/S38.reader.txt",
+    "reader_sha256": "6c3fe958863b5701faf3b6fad22bde869e7a1d5a59a8641965228abfb714b930",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S39",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/inversion-vivienda-habitual-que-tenga-protegida.html",
+    "raw": "sources/S39.body",
+    "raw_sha256": "94fa1a7fc36ff1087c66bbb970f70da6cc9637a2829e6cb45b768e631c2ab67a",
+    "reader": "sources/S39.reader.txt",
+    "reader_sha256": "b9cf3d3001956ee7b0aa51f9d39bcbebd951ec4e50ef0107fd1c4f9c124c362e",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S40",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/gastos-derivados-arrendamiento-viviendas.html",
+    "raw": "sources/S40.body",
+    "raw_sha256": "c383f1bba95123a351216d59f9bf24451f08cc75525b4652af914cb27ab8e64c",
+    "reader": "sources/S40.reader.txt",
+    "reader_sha256": "bce9a9fa7cbe3b35ca47417d0a4c35ceb9881c77250c03f85ba635d5ca92d580",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S41",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/gastos-vitales-que-incurran-contribuyentes-anos.html",
+    "raw": "sources/S41.body",
+    "raw_sha256": "82b8373734227807977df4c38f847e99f879abd4a92129d56155189f6ce6dddc",
+    "reader": "sources/S41.reader.txt",
+    "reader_sha256": "7e52d6bf9968e00d88201eb645df18cd548477d88d7b17ff32a54b55dc45ae29",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S43",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2021-5869",
+    "raw": "sources/S43.body",
+    "raw_sha256": "0841ccd1fd887b311059dab0e30ef0639919e40427ff11f3203638a808acfa17",
+    "reader": "sources/S43.reader.txt",
+    "reader_sha256": "e723db40d9bf19495a7c24aab3085054021e26f6075f8b37a1893a291ed82ebf",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S44",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-principado-asturias/adquisicion-vehiculos-electricos.html",
+    "raw": "sources/S44.body",
+    "raw_sha256": "e4b1cb11beab93536f9ab7fee4a9120b23f22cb81fc8057c4a4e91754ecc4112",
+    "reader": "sources/S44.reader.txt",
+    "reader_sha256": "10b287f3b4857bb3d0b87459e1e067f013496563a8866d44fc2be0e62a7da935",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S45",
+    "url": "https://miprincipado.asturias.es/ast/bopa/disposiciones?_pa_sede_bopa_web_portlet_SedeBopaDispositionWeb_mvcRenderCommandName=%2Fdisposition%2Fdetail&p_p_id=pa_sede_bopa_web_portlet_SedeBopaDispositionWeb&p_p_lifecycle=0&p_r_p_dispositionDate=27%2F06%2F2025&p_r_p_dispositionReference=2025-05426&p_r_p_dispositionText=2025-05426",
+    "raw": "sources/S45.body",
+    "raw_sha256": "a86291431c8b53add5c9303dcfc29f4bf42b1222d33c2134d2a2f28038345a90",
+    "reader": "sources/S45.reader.txt",
+    "reader_sha256": "c29bee7e5f10297333c89dd115736d54900c8b4138475ae2ced083abdac5ca29",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S46",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-3808",
+    "raw": "sources/S46.body",
+    "raw_sha256": "7dfc7a18f6b92310c99e21832c5494ba6863c30dccd6678ec34c850a5d411881",
+    "reader": "sources/S46.reader.txt",
+    "reader_sha256": "e904dfb02d4225dffe6374dbfe63b4bb73ae8d7e9874c4735b404c04fccf0d47",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S47",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-9525",
+    "raw": "sources/S47.body",
+    "raw_sha256": "1a5416f86b2a75fa80d87ec44d88a9456e74af1f74f7a01f8bfd8874a0c1e170",
+    "reader": "sources/S47.reader.txt",
+    "reader_sha256": "6c719f5683f17e078aca9ca55176278728210ddcb32e2a874a7ce50c20895a79",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S48",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15579",
+    "raw": "sources/S48.body",
+    "raw_sha256": "33c695cf22d4df04bcde1abe588baddab5185b4564b33f8ce4e8a49600135a96",
+    "reader": "sources/S48.reader.txt",
+    "reader_sha256": "32c834f53571c4c410e8c08d237d8615f630c5145b9dd1392182e56fc811baec",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S49",
+    "url": "https://atib.es/General/Novedad.aspx?idTexto=16987&idTipoTexto=1&lang=es",
+    "raw": "sources/S49.body",
+    "raw_sha256": "2791f9963157e026ef11fa8501b52f7eedcf2c8a144e619ab327b7ebf969230a",
+    "reader": "sources/S49.reader.txt",
+    "reader_sha256": "e551ff5cfacea4cce9a8ababc5c30a5d940d0ef2ca48a99b58412df5be672a38",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S50",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925",
+    "raw": "sources/S50.body",
+    "raw_sha256": "b397f9ba9aad1d92efe539be80b8987391f7735a5c4b4942d5715ddf74b3c6d4",
+    "reader": "sources/S50.reader.txt",
+    "reader_sha256": "9f4a38022f53ff3e0301d743b0e9fe4c7342db1814a5a8e5c05f96ea40618057",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S51",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/arrendamiento-vivienda-habitual.html",
+    "raw": "sources/S51.body",
+    "raw_sha256": "a53e7a5cce5d7c8defa3ce09842e31b900147bb5f4d5b0619c47fd15aea55595",
+    "reader": "sources/S51.reader.txt",
+    "reader_sha256": "648cb14ff140defea7c41561f3569063a2364463fa77f2ed6d280607d2315199",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S52",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-13193",
+    "raw": "sources/S52.body",
+    "raw_sha256": "c081da18ef9318663cea5c3012ca9a860ebe5707c71bccd9590f25b96a9a905c",
+    "reader": "sources/S52.reader.txt",
+    "reader_sha256": "f6bb933a1fc7772b4dd522ba29cc45b00ff72cfd0a10fa5cbb09f23ab36d55a7",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S53",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_4-illes-balears/10_4_18-gastos-relativos-descendientes-acogidos-anos.html",
+    "raw": "sources/S53.body",
+    "raw_sha256": "e10ab4007d3c88cd085b177afd8231ad17e4ba115e494910ea7a6481a92b4d15",
+    "reader": "sources/S53.reader.txt",
+    "reader_sha256": "e39d6f879bd21416cfc7934629c591b02f57802b1d070cbdb38164d587535a5d",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S54",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/gastos-descendientes-acogidos-menores-seis-conciliacion.html",
+    "raw": "sources/S54.body",
+    "raw_sha256": "360bec41d7497bb8094018051a83d3c95519f19ff37d4db07ae32619819c8b24",
+    "reader": "sources/S54.reader.txt",
+    "reader_sha256": "daf199e33b9609920d91a1a744c9d4d4f183f52dbf58174cea8bbd8647a33474",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S55",
+    "url": "https://www.caib.es/seucaib/ca/arxiuServlet?id=6261230",
+    "raw": "sources/S55.body",
+    "raw_sha256": "1d3f5627694631e46ddc03e1b93de0b1b16a3c2220ff12835814aae9bcd63a71",
+    "reader": "sources/S55.reader.txt",
+    "reader_sha256": "f1eac6306a0a58821b1443bac10a2538bdb895a2c77a95e4349e725cd783154f",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S56",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-4331",
+    "raw": "sources/S56.body",
+    "raw_sha256": "34aae2e586d5bee7b03db94152ef7c0099ab12e2f57e94f96246b21186644c44",
+    "reader": "sources/S56.reader.txt",
+    "reader_sha256": "fcf394b66ecf6c36a2640ebaddf5300e2992ac891fde0ef1c669538d0ab96af9",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S57",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2015-4791",
+    "raw": "sources/S57.body",
+    "raw_sha256": "3f443c60dd87bb1338f4520029b6844a4d1e257239669f5198b13b05c7ee4981",
+    "reader": "sources/S57.reader.txt",
+    "reader_sha256": "8b2b9be2f3677d28bb222a3c1e2d1105a7f47c9fdca322c235bbdcd3f5c51b40",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S58",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears/inversion-adquisicion-acciones-nuevas-entidades-creacion.html",
+    "raw": "sources/S58.body",
+    "raw_sha256": "4c761497d43bc9ca69100439e7ef2a5bd1e8dc91105947d47685e135d7ebac65",
+    "reader": "sources/S58.reader.txt",
+    "reader_sha256": "a93734559262050599146d1067edf4204d3cd40409f1d4e4e9c14cf4562f3282",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S59",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-10431",
+    "raw": "sources/S59.body",
+    "raw_sha256": "5842f73d21d4da5e184de5291bf6f3d01f0ac5512f8217a93c6a7e4d7c0b728d",
+    "reader": "sources/S59.reader.txt",
+    "reader_sha256": "71902da71b34519dc63b59cbb08dd186ac2e2651fc6b719422739fb3b09bc185",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S60",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/gastos-enfermedad.html",
+    "raw": "sources/S60.body",
+    "raw_sha256": "44a61a0ae761d5b98f92e2760b97ecdb8092b1bde693bdfe0612e33dcebc5cea",
+    "reader": "sources/S60.reader.txt",
+    "reader_sha256": "92c453c81815bc78bf9147f665f69b4fbe10ed95f03963419b7fc1eeed1eb741",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S61",
+    "url": "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028",
+    "raw": "sources/S61.body",
+    "raw_sha256": "e69c2214a94b7f64e6db3a2a4c477c2186203683120c16047939953e950a4950",
+    "reader": "sources/S61.reader.txt",
+    "reader_sha256": "1ebdab2cadb77ae30224194a421730715056709f40a193204876f65ae8e417ad",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S62",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/arrendamiento-vivienda-habitual-jovenes-mayores-discapacidad.html",
+    "raw": "sources/S62.body",
+    "raw_sha256": "185fc1ad18f48707d68b270635626d628826d4a3bafd92fd607f8deb680dfa1a",
+    "reader": "sources/S62.reader.txt",
+    "reader_sha256": "52a59d99f211b193e207e99c854f851ffc5f5cf04f076e61ee4619077352a843",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S63",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/cuidado-familiares.html",
+    "raw": "sources/S63.body",
+    "raw_sha256": "5b8553ced788de1a7e4dc881e13e3a1e1ebc368b6f045b401c101c9672468de4",
+    "reader": "sources/S63.reader.txt",
+    "reader_sha256": "b0934e47e46d7356396cd085430101ee1d935170f85c613e492ee140e81799ae",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S64",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+    "raw": "sources/S64.body",
+    "raw_sha256": "37f9d89b099b16a562cc2c718820bcb3fb3cfea2bd6d2b8749fe817a9b5e4289",
+    "reader": "sources/S64.reader.txt",
+    "reader_sha256": "691c19ba840bd7df55720c296184767136b36517c70023f4e245150d442a19c7",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S65",
+    "url": "https://www.sepg.pap.hacienda.gob.es/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga/Paginas/PGE2025Prorroga.aspx",
+    "raw": "sources/S65.body",
+    "raw_sha256": "0629f49ed39a01a3f6f20175a258d37b44e48a76e824b2dca836c4b449ad66b5",
+    "reader": "sources/S65.reader.txt",
+    "reader_sha256": "f2b29d52773497de9f0dd5256328c561a49a4b11bba7fa88065de164c697d14a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S66",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_6-cantabria/10_6_2-arrendamiento-vivienda-habitual.html",
+    "raw": "sources/S66.body",
+    "raw_sha256": "4d2a0dfee35c7243ef13c9cd29a06127d5c8641b614820d51ee4cfc647b45009",
+    "reader": "sources/S66.reader.txt",
+    "reader_sha256": "f604dec47be6cb49ea04dbc0cb8008cbc9f498ed6c61ff3b5d296f84d5e486dd",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S67",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/tramitacion/ZZ08.shtml",
+    "raw": "sources/S67.body",
+    "raw_sha256": "1ee8484f225606a69367dbf13338b87fc7a32f5c6bc7cbd514990716fc4bb04e",
+    "reader": "sources/S67.reader.txt",
+    "reader_sha256": "3ec86636c2093cc433b4243885ce4a87fbb0efe21481cab424f63990a94e1936",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S68",
+    "url": "https://boc.cantabria.es/boces/verAnuncioAction.do?idAnuBlob=414590",
+    "raw": "sources/S68.body",
+    "raw_sha256": "1ccc88115fc284f0d8094f2078fc2ff4deaa257ace6bf6b2f4304967c99e9537",
+    "reader": "sources/S68.reader.txt",
+    "reader_sha256": "d37b324201dded37741a4b8b1288d414d47e2c3168ddbeeeb0984e4213cf0da9",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S69",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/gastos-traslado-residencia-municipio-afectado-despoblamiento.html",
+    "raw": "sources/S69.body",
+    "raw_sha256": "f2cc250213495496886b465d6b40a7bafce346e2ba381d825ba0f3d3d2392171",
+    "reader": "sources/S69.reader.txt",
+    "reader_sha256": "e69fcd0350707007e5b019776717075b4c5d43dfb33dd5d2db75954518bf06f0",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S70",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/compensar-gastos-desplazamiento-permanencia-nuevos-residentes.html",
+    "raw": "sources/S70.body",
+    "raw_sha256": "30eb95b50d21b90016a3c0f87e8b127e7b81a3017a6eb2279b89fdb3c1691cc4",
+    "reader": "sources/S70.reader.txt",
+    "reader_sha256": "e0ff1f2e6d18bc1397983c5c2426494dbf7caf6e66c103069f77ad860f39c9c1",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S71",
+    "url": "https://www.boe.es/buscar/act.php?id=BOC-j-2009-90008",
+    "raw": "sources/S71.body",
+    "raw_sha256": "55560ad9d229bf4804626e3f1f584d1300e72a5f498e558284c336d6af1582e8",
+    "reader": "sources/S71.reader.txt",
+    "reader_sha256": "7891ce8c2eeff404152b4e68f34615fc4d8ae123d0c55d8c974723fd9e25204a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S72",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-7560",
+    "raw": "sources/S72.body",
+    "raw_sha256": "b3363355fc9bca5b3c5712324f08b55dce90489ce674d0acb31c29472f5d9714",
+    "reader": "sources/S72.reader.txt",
+    "reader_sha256": "0a93ab5f1ad0eae5e65db57992152eb323a59f1a91b2be8b6f3fa33c9dd304a0",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S73",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/limites-comunes-obligaciones-formales-aplicar-deducciones.html",
+    "raw": "sources/S73.body",
+    "raw_sha256": "9085c85a015f2610ddc07a4bef6b8299899143ebd31a4d7d9b3b7cee0cbc8816",
+    "reader": "sources/S73.reader.txt",
+    "reader_sha256": "5fb737a34d7694e3b11003a572e6bafa8426e917b4decf49f7c2c1aa506e9c43",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S74",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20111231&tn=1",
+    "raw": "sources/S74.body",
+    "raw_sha256": "f80f92b7c738fae6b1774da5eb52dbd21ba3a57cc7f4c6332c13f67d1aaa403e",
+    "reader": "sources/S74.reader.txt",
+    "reader_sha256": "ebe1d9980c2dfa045fde65b10e344eb9a8b8ce01102bef8594484fb1906766b0",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S75",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/inversion-vivienda-habitual.html",
+    "raw": "sources/S75.body",
+    "raw_sha256": "8d03d09da63dfb9abf42b1c01f3a6669d59517923f9e8ca6bd8055da43814a72",
+    "reader": "sources/S75.reader.txt",
+    "reader_sha256": "5e2c70e828fd5f1473c5b7fe86fb4c1eb201dc3c785c076b039d7505d83d7c63",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S76",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/alquiler-vivienda-habitual.html",
+    "raw": "sources/S76.body",
+    "raw_sha256": "19f8c3a08c9278bc4b096ebdf092280259798ee720e4c6ba20ae2736284f47dd",
+    "reader": "sources/S76.reader.txt",
+    "reader_sha256": "bafd02ab9009808e87e72f8f48e5be32815179b16ced7530f82c669b1caa0703",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S77",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/gasto-enfermedad.html",
+    "raw": "sources/S77.body",
+    "raw_sha256": "a9ed0dbe289a8af434b14d133f272bd5f0c45995a9ea41ce1ab1a118ff3888e8",
+    "reader": "sources/S77.reader.txt",
+    "reader_sha256": "c2b486cc4c5b60034d17cef9710e7e77ad659d6cb6b5e2e53d41e2fffb17846e",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S78",
+    "url": "https://sede.gobiernodecanarias.org/boc/boc-a-2025-256-4414.pdf",
+    "raw": "sources/S78.body",
+    "raw_sha256": "3ea74a298695e89eacad2e809b5b08bd23af98db7df203db93493b9788d2e2ac",
+    "reader": "sources/S78.reader.txt",
+    "reader_sha256": "6437a19dbd3a5127e66f1f6c5663c64a5b9e84686f5be3d9d92baaddff5c947a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S79",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_5-canarias/10_5_20-gastos-enfermedad.html",
+    "raw": "sources/S79.body",
+    "raw_sha256": "a0218783817a5763962e25e871e1257e240b7dc677c5871ce7b15335bea1f073",
+    "reader": "sources/S79.reader.txt",
+    "reader_sha256": "43cf9b4b53c80ce62136e32d75da671bb2103ba5bc5dbdd5b266460cc2d06904",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S82",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/inversion-adquisicion-acciones-participaciones-sociales.html",
+    "raw": "sources/S82.body",
+    "raw_sha256": "79ae4bdc04e7e4ad00cbdb86fc2562ee6b560bdcfe101157b354a2ccf6c042c0",
+    "reader": "sources/S82.reader.txt",
+    "reader_sha256": "223d56e60e2799e707e68cc406e10c966d466873033e0a20ed28c1b8846f6b41",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S83",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-19374",
+    "raw": "sources/S83.body",
+    "raw_sha256": "9c9033b4d31023e50573d2878b91133246e4efd1b492a7c9e54c4e22e0fbf091",
+    "reader": "sources/S83.reader.txt",
+    "reader_sha256": "4f2e006a8f4dbfa62a787e7f3acac5b67c94fdebccbac1cb01af0173ce6ae14b",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S84",
+    "url": "https://www.boe.es/buscar/act.php?id=BOCL-h-2013-90254",
+    "raw": "sources/S84.body",
+    "raw_sha256": "188afbf47dd2c3040b0037c2f131ad4f86c82114799b70d6781365eaaf02889d",
+    "reader": "sources/S84.reader.txt",
+    "reader_sha256": "90f670d0b15438f6798f43946aa0c225a1ac8a083aba2c79fcd28776a6ef379b",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S85",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/partos-adopciones-multiples.html",
+    "raw": "sources/S85.body",
+    "raw_sha256": "d27be7b753ef112350a40ba6761ca7355349742d61deb030f5a78729c3282e26",
+    "reader": "sources/S85.reader.txt",
+    "reader_sha256": "1b0fc273e18562657fd95f0dd6d5baf701c4e7115776546566944423b15cabe6",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S86",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/cuidado-hijos-menores.html",
+    "raw": "sources/S86.body",
+    "raw_sha256": "41f928a52675992e9c9634307fc4e87336fd0c98c8d827a1ebd5ba33302340df",
+    "reader": "sources/S86.reader.txt",
+    "reader_sha256": "e0649292d96e49762a6078f5d51725eb2bde4bcadeaac689f33faf3d6072ba6b",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S87",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "raw": "sources/S87.body",
+    "raw_sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+    "reader": "sources/S87.reader.txt",
+    "reader_sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S88",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/rehabilitacion-viviendas-medio-rural-destinadas-alquiler.html",
+    "raw": "sources/S88.body",
+    "raw_sha256": "2ecd1df379ef473b38feb8f82f79c7859a1a58483d15bf06fc8c4978624ed455",
+    "reader": "sources/S88.reader.txt",
+    "reader_sha256": "a56f8e807214f4dc17a57f0d49820c50a109ef87b65b5ff7ac945341a461afc7",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S89",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/fomento-emprendimiento.html",
+    "raw": "sources/S89.body",
+    "raw_sha256": "fccbe69ec4e8237c66415fd33c0d8b498051e4331d42dff5e153d3838db9101f",
+    "reader": "sources/S89.reader.txt",
+    "reader_sha256": "96a81ed50f17e6370aeccdd1f1d41a9f1a627fdda4943769c6b2774cd56f610f",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S90",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_8-castilla-leon/10_8_10-deduccion-fomento-emprendimiento.html",
+    "raw": "sources/S90.body",
+    "raw_sha256": "56d9169f8ddd25524dd6892f88409665b5e1bbefc18e3ddc9d21c059d407f187",
+    "reader": "sources/S90.reader.txt",
+    "reader_sha256": "06a404e002fd56aae6d40491001adeb5c4aa0075c571bf51a9c2197791ccfa7e",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S91",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2012-4385",
+    "raw": "sources/S91.body",
+    "raw_sha256": "b7f5a9bfe4ce2c21957e061a7d1c9e73f42894d3cc99d192a9f83d37b2143a67",
+    "reader": "sources/S91.reader.txt",
+    "reader_sha256": "cd8abd9e474e92dc321fed03a120c7bceaa9d2aa74a427d33cb96e77132575ae",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S92",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/adquisicion-vivienda-nueva-construccion-residencia-habitual.html",
+    "raw": "sources/S92.body",
+    "raw_sha256": "92fbbb327a682ff035d197336668cb3a8ff2f659ae0220c0344d5bf8774eb716",
+    "reader": "sources/S92.reader.txt",
+    "reader_sha256": "6b0cc40d51832f3e781a75a85418eb68c0a45efef6903625d7808c8b9bf04cb2",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S93",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2023-6456",
+    "raw": "sources/S93.body",
+    "raw_sha256": "bee534f80e5db3aafee3d4083a5db6566a964959f4f014516349567f5e65b0d7",
+    "reader": "sources/S93.reader.txt",
+    "reader_sha256": "7cfe2fe4e039036151db056542987d39c6fab0da20e384e3d9ad9c9d21ee2446",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S94",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_8-castilla-leon/10_8_9-adquisicion-vivienda-nueva-construccion.html",
+    "raw": "sources/S94.body",
+    "raw_sha256": "e30f9a187f764f18b562ddfb57d659a98a9cd361dc60e06f30568ed4467e300c",
+    "reader": "sources/S94.reader.txt",
+    "reader_sha256": "84ad63adcdf4a07934f590e595c5a4f1b476d71b4ab75fd43b9285e4e10aed21",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S95",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-castilla-leon/orden-aplicacion-deducciones-sobre-cuota-autonomica.html",
+    "raw": "sources/S95.body",
+    "raw_sha256": "5e426e4b9a2e7de1fd68a634d9073457caa247e23b9d823bad9a8b4d035af75e",
+    "reader": "sources/S95.reader.txt",
+    "reader_sha256": "2f6bcc29275e695cb4bb64b803fbff794f866558b3f9910aa01aa97f30c1f74c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S96",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2018-8159",
+    "raw": "sources/S96.body",
+    "raw_sha256": "7b46eeca59f7f9e4eba673e5fce605d7033987bcde6aea29277bde5b6c678fce",
+    "reader": "sources/S96.reader.txt",
+    "reader_sha256": "508e4289f12634c30cae09a615e1951c0ab7827ef549be07513c72824b3743bb",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S97",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-17839",
+    "raw": "sources/S97.body",
+    "raw_sha256": "3ad92f111e0566eb8f03f6e9957fd79b33977a78f828da9e4ac334efd5a2435a",
+    "reader": "sources/S97.reader.txt",
+    "reader_sha256": "815a3d35f575381605f956cf3d1aa5d3cbefe4db1a0175845cb5c635cd66bc67",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S98",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/cuidado-familiares-discapacidad.html",
+    "raw": "sources/S98.body",
+    "raw_sha256": "686932d56b7b76ad62b9a96c2da74427f6289476157629e024120f9b3d86bd77",
+    "reader": "sources/S98.reader.txt",
+    "reader_sha256": "2e51b6e75a88343023edb8b5b2c9de9614f30cccdd3483e445d078742a5cb50e",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S99",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/inversiones-rehabilitacion-viviendas-zonas-rurales-alquiler.html",
+    "raw": "sources/S99.body",
+    "raw_sha256": "c42253f194a80e5798b9e8cdee6c445df6b9eb13d39714a90c9d8e10e6bb4ba4",
+    "reader": "sources/S99.reader.txt",
+    "reader_sha256": "b2f4f4b083dca971ef27b14a77b14a84d8cc82d5fb2252c7fdea1e885a02d49b",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S101",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2022-5853",
+    "raw": "sources/S101.body",
+    "raw_sha256": "c44438885e0bc56dbbca1bf7039ec9feaf61d9c4bdb313e27f2bd94ad1a4c9d5",
+    "reader": "sources/S101.reader.txt",
+    "reader_sha256": "66b8bd15757f6a23389eef38461c454eb10afc3fa28f4a2cd9e9c27ed5d0f33f",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S102",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-13750",
+    "raw": "sources/S102.body",
+    "raw_sha256": "e5833d7475065a13a09f36a2720af4b6da756d8fec2eb5fce7e128387a14f336",
+    "reader": "sources/S102.reader.txt",
+    "reader_sha256": "d9388e74b53928b5bf8bfbb9509c35959952b0ace9b0d3ae9d6480d37366c9a8",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S103",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/gastos-escuelas-infantiles-centros-infantiles-contratado.html",
+    "raw": "sources/S103.body",
+    "raw_sha256": "26befcdcdaab04d4392fd59b1c9fda6c0eb120c9ac294266254e856f199939b8",
+    "reader": "sources/S103.reader.txt",
+    "reader_sha256": "1ef510db6de4b2a9ab3e674436c26c7c01cf3e6232933da9a8cf560bee35f3a7",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S104",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/hijo-0-3-anos-escuelas-inf.html",
+    "raw": "sources/S104.body",
+    "raw_sha256": "32471b5b371c355a63c66ff47cbcc737271e67c77f3c3f83f75c422d5123aa65",
+    "reader": "sources/S104.reader.txt",
+    "reader_sha256": "696efd342daccf9116ed05923bfe082c6a65a7e2f03a07fff51ecfa92ac2f0aa",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S105",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/hijo-0-3-anos-residentes-municipios.html",
+    "raw": "sources/S105.body",
+    "raw_sha256": "c9fd6d36470bf91ef8e73ca337cbe5eb78b9b4236ed969c68587ed8345e4a3f8",
+    "reader": "sources/S105.reader.txt",
+    "reader_sha256": "87ee2ce9bcaa62ff1e55a3117528ccc1d054d8bdc7dd044294c2939d734cddd3",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S106",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-991",
+    "raw": "sources/S106.body",
+    "raw_sha256": "0cb4bb5cfa976b97d334207259ce97e86952e13a04c09d985fd314bf8bc0d3e7",
+    "reader": "sources/S106.reader.txt",
+    "reader_sha256": "11a664f6554fb27012c18d9fd2188ff69bc893ceda2ed2956fa1b5dcff166a52",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S107",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-rioja/cantidades-invertidas-adquisicion-construccion___.html",
+    "raw": "sources/S107.body",
+    "raw_sha256": "83260b835843af42bec699cbac85e272245821038a1b6cffeefbbe83d6fe15a6",
+    "reader": "sources/S107.reader.txt",
+    "reader_sha256": "7e1c19b474d29046298c1dcdecb068bfc4655ae32ff9986c43ede8946af3746a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S108",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-10542",
+    "raw": "sources/S108.body",
+    "raw_sha256": "d64b8474b4ad439bcb38c4a1f417d5157d37b4aaee064d0f6cf1c852be659b33",
+    "reader": "sources/S108.reader.txt",
+    "reader_sha256": "5d654d3b846cd164eee104bda200f7a35a80cfd0896edbfdb647971be77f641d",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S109",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/inversion-vivienda-habitual-jovenes-edad-anos.html",
+    "raw": "sources/S109.body",
+    "raw_sha256": "edb8a167143063b76a0ff2592117e9a81fec39fdb51a5f67a10817579525b5dd",
+    "reader": "sources/S109.reader.txt",
+    "reader_sha256": "78b61c77f48f4a2b97d99054488e7e8b3d458428ee5e23ae80e6c7b076dd0eca",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S110",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/regimen-transitorio-deduccion-inversion-vivienda-habitual.html",
+    "raw": "sources/S110.body",
+    "raw_sha256": "67fedf8b714fd061c294751262a8c2cd823f4fb7b1c7ed152935170eadbc2c06",
+    "reader": "sources/S110.reader.txt",
+    "reader_sha256": "ea2af0a6ba2e8de58e850129491300b4aa121edf44cc7053af3d39d0adc5013d",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S114",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/gastos-instalacion-infraestructuras-recarga-vehiculos-electricos.html",
+    "raw": "sources/S114.body",
+    "raw_sha256": "2a11edd636e199e2cd4b743a8e3c428495df6774ea1a64b83ba9223b490eaca1",
+    "reader": "sources/S114.reader.txt",
+    "reader_sha256": "9650c94c012e0898198028e56739bc087459aea52049f975e3bbb138894ec70b",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S115",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-region-murcia/gastos-adquisicion-vehiculos-electricos.html",
+    "raw": "sources/S115.body",
+    "raw_sha256": "1a107cce86b2d5c06b8e9362b69f4ee02fcbee8a4462db64a1b83ac1e2848a85",
+    "reader": "sources/S115.reader.txt",
+    "reader_sha256": "a2ffad4d375c1b900e89a5a9e0c0da933f50c1522d6064ef5e3eb9503a0ef106",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S116",
+    "url": "https://agenciatributaria.carm.es/renta",
+    "raw": "sources/S116.body",
+    "raw_sha256": "5e91d9f03848638b7442c8d0093bf6b099501265c01fc19939ebf177fd81887f",
+    "reader": "sources/S116.reader.txt",
+    "reader_sha256": "8ab10a1a9abdb5328e45fc23afeba4ce91379713a25ec672e5c8799c8c462147",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S117",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-18161",
+    "raw": "sources/S117.body",
+    "raw_sha256": "13c30391dff092c41c97b8694e84d84eb6eddd9269eb7e86f39e9c21b6fe4a5d",
+    "reader": "sources/S117.reader.txt",
+    "reader_sha256": "67fbb25e769320c02d38db5f36590524568e0e3eb2dc4e468581493bec107ec3",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S118",
+    "url": "https://www.conselleriadefacenda.gal/es/sala-prensa/notas-de-prensa/-/asset_publisher/WMAKK58kdtGt/content/hoxe-entran-en-vigor-os-orzamentos-de-galicia-para-este-ano-2024?inheritRedirect=false",
+    "raw": "sources/S118.body",
+    "raw_sha256": "7ccea737d8d633316eab03ecab1459dd6d9883cab1c8d63600337fb13fa5099a",
+    "reader": "sources/S118.reader.txt",
+    "reader_sha256": "42676be56329279eb99793faddc91cc69e2d2faecb60e779cb12bacab38ab4e8",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S119",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/nacimiento-adopcion-hijos.html",
+    "raw": "sources/S119.body",
+    "raw_sha256": "a78f3237e78ce78b09bc1280e53f0c03243c1893c6a955746505ae1f1d7630e9",
+    "reader": "sources/S119.reader.txt",
+    "reader_sha256": "f188e03c78b8e0a6dede4aaeb25210090d5e7fd7d18240864b0c591261891cef",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S120",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/familia-numerosa.html",
+    "raw": "sources/S120.body",
+    "raw_sha256": "9e62972d0ad3021350d66f7fbc68b0a5f8e6d2ef783bdf76e61f96fdd46eae2f",
+    "reader": "sources/S120.reader.txt",
+    "reader_sha256": "360580ba1164bfc076e9b99ab19a90a8aaa0b8ffe00db6f0bd34b912dcff0f08",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S121",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/adquisicion-libros-texto-material-escolar.html",
+    "raw": "sources/S121.body",
+    "raw_sha256": "c1606200164f92956041531bda2d7aab097832cae55747c4722de69244c43de1",
+    "reader": "sources/S121.reader.txt",
+    "reader_sha256": "fdc40dd7feca566b9332e6e101d68e6d52ddef0ece3b869103cfb9b3156a979d",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S122",
+    "url": "https://www.xunta.gal/dog/Publicados/2026/20260327/AnuncioG0597-260326-0002_gl.html",
+    "raw": "sources/S122.body",
+    "raw_sha256": "f7075a91a75e74d2d6134ba342a2a0e108c7c8075b96931079b3ad2c1b0d15e8",
+    "reader": "sources/S122.reader.txt",
+    "reader_sha256": "da1ef00b4d6dff1a038bdf0a44165dd6d0e8f676f05c44cbaa829f4cbb226f6c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S123",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-3385",
+    "raw": "sources/S123.body",
+    "raw_sha256": "a0ac527793a593d6070a7704a19d8479a1371141429bbe2f30ff7f912302e395",
+    "reader": "sources/S123.reader.txt",
+    "reader_sha256": "2652b131baebd6d47610f58e638ce7e52eb2d5d2f45a10071cf466352fa052a2",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S125",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_24-adquisicion-libros-texto-material-escolar.html",
+    "raw": "sources/S125.body",
+    "raw_sha256": "fc305b7d7d21f151aa312c73217f40e9c31be2bb9a8823b6035ccbe8de4cccb9",
+    "reader": "sources/S125.reader.txt",
+    "reader_sha256": "5e2bc1f4a9f3219c20bc148ae8bbeef8de4a372d94787749a9eea15d0ccfa4ab",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S126",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/gastos-derivados-adecuacion-inmueble-vacio-vivienda.html",
+    "raw": "sources/S126.body",
+    "raw_sha256": "f29a8641adbd60a926de93912e128ccd33b39e8f0f0394d1f2579d0042056e7e",
+    "reader": "sources/S126.reader.txt",
+    "reader_sha256": "e09574f407cebf4a087268d82bc762f7f1290546c975886c9ba7e8769f2be535",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S128",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_20-gastos-derivados-adecuacion-inmueble-vivienda.html",
+    "raw": "sources/S128.body",
+    "raw_sha256": "615d8a70afb6c4daf266c944eb486bfc651c08092333074472fc6ee76170f0d4",
+    "reader": "sources/S128.reader.txt",
+    "reader_sha256": "4c7d4152bf0a8f52641b83e42d744c522b3d343ea117b9e7a2f24af6ec364333",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S130",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/inversion-adquisicion-acciones-participaciones-sociales.html",
+    "raw": "sources/S130.body",
+    "raw_sha256": "1cb9d900163408bf6c581cc0a3ecdcec44a2f1e1e1fe70797fce1172542081d2",
+    "reader": "sources/S130.reader.txt",
+    "reader_sha256": "d548996c8da3b25d37bca37de8ec85d334a4841760f94b2453e7e230eb18f6d6",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S131",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/inversion-adquisicion-acciones-participaciones.html",
+    "raw": "sources/S131.body",
+    "raw_sha256": "be894d5282999e576bc637c5e0ee8886ae4eb8264636513c57d8dfe1da3064ef",
+    "reader": "sources/S131.reader.txt",
+    "reader_sha256": "2b22a08e48640541e5753deeadbbba20f0262f3d15722be338c31f857278e1e9",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S132",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202",
+    "raw": "sources/S132.body",
+    "raw_sha256": "ca9e09d906d1fe3a699c842d4489f33c30d005128133c1e639484a3b2b77bd45",
+    "reader": "sources/S132.reader.txt",
+    "reader_sha256": "c7d1cff4dfc9d527f54e945ff62d231ba0cde8f527f7a14996294c2f0ce0c1c0",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S133",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2025-90320",
+    "raw": "sources/S133.body",
+    "raw_sha256": "8ae0e2ecc10282b1aa8d86e8c2c66274ce2433825474d862c66151b999e633f8",
+    "reader": "sources/S133.reader.txt",
+    "reader_sha256": "da733d0c15b1c7cfecf5eec9ebaa7ff9f5403980244b6e4572defd62ecabb95b",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S134",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-15683",
+    "raw": "sources/S134.body",
+    "raw_sha256": "6bd2807ac81595ec1bfb6dfb61e196fedfdd1e8e9541d794ca397758cc41bdfc",
+    "reader": "sources/S134.reader.txt",
+    "reader_sha256": "02fbc916301c1507bf18811c4d9be694c13b54d36e05c0ca818d3f4680f56322",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S135",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90037",
+    "raw": "sources/S135.body",
+    "raw_sha256": "acd7a45322445b30f4c571c4f3b4dcf4b55de3fc4508cd9fb451cf0bd2483903",
+    "reader": "sources/S135.reader.txt",
+    "reader_sha256": "949fbeb19e3be0ea8dc00c34d618e72704a9f49b2fcbbb4674b4492e79c22c84",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S136",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90079",
+    "raw": "sources/S136.body",
+    "raw_sha256": "b6b99f0a8fcefe77f627451ae0fa0f7a7680c0835066d8444c5bf8f9327a162a",
+    "reader": "sources/S136.reader.txt",
+    "reader_sha256": "0e5547d1e0b58c3bbaf2ed15cef0a6aaa777638dda400e0c8c2357726c47979d",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S137",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90041",
+    "raw": "sources/S137.body",
+    "raw_sha256": "315371d88f67bcbfc1dc854a5052fa40ab24919b4dc045de2948c566813a4dda",
+    "reader": "sources/S137.reader.txt",
+    "reader_sha256": "c1a417442a5c8b78521f1c41b11847a6fdfea499faf1f9e936ea6533740158e1",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S138",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2026-90069",
+    "raw": "sources/S138.body",
+    "raw_sha256": "b772f1cedc45fa1dc09c47bc544d1ca6ca7e420f4bac91f4d5b456939fd04c18",
+    "reader": "sources/S138.reader.txt",
+    "reader_sha256": "4c604875f950e24e3a676f680806335a9343a88c4cd6535ebd13bcee923539ea",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S139",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_15-comunitat-valenciana/10_15_6-conciliacion-trabajo-vida-familiar.html",
+    "raw": "sources/S139.body",
+    "raw_sha256": "aaa411134dac20102c352e7cc30d4cf93a1fc7ff8329e6afaf299ace88334d6e",
+    "reader": "sources/S139.reader.txt",
+    "reader_sha256": "8de059339335c93c1eac691bb866689f96eac033ee7eaec6bb082c9ce8771f1c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S140",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/conciliacion-trabajo-vida-familiar.html",
+    "raw": "sources/S140.body",
+    "raw_sha256": "9af5c89cc424c88ab85d0db390a8ffd986bd04d93ee69dd23509293598bd55a0",
+    "reader": "sources/S140.reader.txt",
+    "reader_sha256": "e37cf4f66c0e8aeb674174af1871c6f040bd91e61a097234e6858ed1deba3d53",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S141",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/contratar-manera-indefinida-personas-afiliadas.html",
+    "raw": "sources/S141.body",
+    "raw_sha256": "f1d38bd08b0d4501c873f771c802913d637b52e2d269517cc50ed165d6bfa92a",
+    "reader": "sources/S141.reader.txt",
+    "reader_sha256": "38c86deab28b47bd97c054e93759c06dab2e8c6a23e7b156e24c1fc1eb341b0c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S142",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/adquisicion-vehiculos-nuevos-pertenecientes-categorias-2020.html",
+    "raw": "sources/S142.body",
+    "raw_sha256": "9727f0de01913bddc038802ee839c24b1c4bf19d757c9c984aa8a07c76fc8628",
+    "reader": "sources/S142.reader.txt",
+    "reader_sha256": "000f8c3bd2817c9ee796002b0c000a1a19475fd9175214e8ab76d8b991692b4a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S143",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202&b=10&tn=1&p=20021231",
+    "raw": "sources/S143.body",
+    "raw_sha256": "7a643f76550e5bae405ab7d814007074174fc60654a36b6555e7bcf086e17044",
+    "reader": "sources/S143.reader.txt",
+    "reader_sha256": "d40d1291eafd9141f8cec8a2da337d3108d548d21f05cc0a9710e172c318373f",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S144",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/obras-conservacion-mejora-calidad-2014-2015.html",
+    "raw": "sources/S144.body",
+    "raw_sha256": "c5c40e1172758b5ddb4ee3482612198d8a9c06ce0e184be82b4c8b0a6309241a",
+    "reader": "sources/S144.reader.txt",
+    "reader_sha256": "6886f98acc6065bb10ab9ad08b620d9d7f967519d2affc2840fce348f4b39ad5",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S145",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/requisito-conjunto-determinadas-deducciones-autonomicas-donativos.html",
+    "raw": "sources/S145.body",
+    "raw_sha256": "7040d981dec7a436fde29ee552a557fa3ea5480712bb035b0761481097842de4",
+    "reader": "sources/S145.reader.txt",
+    "reader_sha256": "9b24d1981ca964a0797155dc6eae72e3cbdc5907a48f1a0123269febf92df204",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S146",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOGV-r-2024-90200",
+    "raw": "sources/S146.body",
+    "raw_sha256": "06d852876b9224783e71c2b05de9dd4dec7ba5953c43bcb3e3dbaa2683e45f8a",
+    "reader": "sources/S146.reader.txt",
+    "reader_sha256": "ffbd8a4ab486c522818c7da3bf266ce7e0086f2e877abd4f74309e037e09ad0a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S147",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/dirigidas-personas-afectadas-dana/destinar-cantidades-paliar-danos-materiales-habitual.html",
+    "raw": "sources/S147.body",
+    "raw_sha256": "e8e4273c72965e335ec3ebb2e74563ce24109e79934baa2d87c1a3e8ed10acc6",
+    "reader": "sources/S147.reader.txt",
+    "reader_sha256": "2d9e8e023494710dadce95f18a83a89b25c16fbedd8dc966867b21980bfd386e",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S148",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunitat-valenciana/dirigidas-personas-afectadas-dana/aportaciones-fondos-propios-entidades-que-economicas.html",
+    "raw": "sources/S148.body",
+    "raw_sha256": "bad89aa49c6f2f6596ef8653df2798389cca4e3bc11be42a51122a209a25ff5d",
+    "reader": "sources/S148.reader.txt",
+    "reader_sha256": "2aca803c98077e89ed1efa8906b1c748002ee3f32db010eba87dd733988f9f6b",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S149",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_4-illes-balears/10_4_19-determinadas-subvenciones-declaracion-zona-afectada.html",
+    "raw": "sources/S149.body",
+    "raw_sha256": "126f59ea0ce20685ffcaa3070fe031ff90d9bb894c26bc1b86835c1458a8bc14",
+    "reader": "sources/S149.reader.txt",
+    "reader_sha256": "8acf71c7f72c87f6dfed1b4f69d100b21dfcaee50dc3dd2d3328fd2231a52ee0",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S150",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_22-subvenciones-incendios.html",
+    "raw": "sources/S150.body",
+    "raw_sha256": "7ffe5a0723bef4acdf4f636380ead0cf900a360cb4e52df6914febefc53d143d",
+    "reader": "sources/S150.reader.txt",
+    "reader_sha256": "dd5aa3eb2bd66fa4301dc613b109716d5c56bf806408dd4cfaef54b1b610fd62",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S151",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_2-aragon/10_2_12-arrendamiento-vivienda-social.html",
+    "raw": "sources/S151.body",
+    "raw_sha256": "3c2913b6ad8fd5fec882bc068c426793c2aeacb617397061040e782823accef8",
+    "reader": "sources/S151.reader.txt",
+    "reader_sha256": "f1327fa7731a15af9727d0623a5ee5f95b42329a9e3773f0d78b5528c28f4414",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S152",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_7-castilla-mancha/10_7_16-traslado-vivienda-habitual.html",
+    "raw": "sources/S152.body",
+    "raw_sha256": "747cc03018b58a9450eb63f386160f31eab1f47a11b8d717594d129ebfba4bee",
+    "reader": "sources/S152.reader.txt",
+    "reader_sha256": "986bf4f138b6ff67e82149ce87b4fcbab261b018bead6862b611dd610186d337",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S153",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/trasladar-residencia-habitual-otra-isla-ae.html",
+    "raw": "sources/S153.body",
+    "raw_sha256": "95e3bea3912bf0082bc47bd6fadf951460bf2914d33de233d8972cfa699e28af",
+    "reader": "sources/S153.reader.txt",
+    "reader_sha256": "741f650183923d894c4e5eb0a3df9f24b8ae76865bf1976814964114bf64afb8",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S154",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_15-comunitat-valenciana/10_15_27-ayudas-decreto-ley-32020.html",
+    "raw": "sources/S154.body",
+    "raw_sha256": "c04e6b071dde65e486521a2260f25d8fcf65e52298c142269b652017fbc7d267",
+    "reader": "sources/S154.reader.txt",
+    "reader_sha256": "7fdd4741dcab452e2702a90bb1ffef7e149f03d4c1f42334195f09dcf83139f8",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S155",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-11513",
+    "raw": "sources/S155.body",
+    "raw_sha256": "ce1ad532d70d003648ce386392ee97617eb0e6dabe6fdc283e202542a9c460d1",
+    "reader": "sources/S155.reader.txt",
+    "reader_sha256": "499334647c7fcc48f0d3f373d170e4f10a3a1f053555aaf432c060f594658e5a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S156",
+    "url": "https://docm.jccm.es/portaldocm/verArchivoHtml.do?ruta=2026%2F03%2F30%2Fhtml%2F2026_2465.html&tipo=rutaDocm",
+    "raw": "sources/S156.body",
+    "raw_sha256": "bb8446891b9e1d78c56bebcd81ca37099804917a320cd14a2343f00c6e0ea7b5",
+    "reader": "sources/S156.reader.txt",
+    "reader_sha256": "c572f05bf89bfe543a7bd7951ac66d7e6ea59b9155965626207450f0c33787a9",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S157",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_7-castilla-mancha/10_7_16-traslado-vivienda-habitual.html",
+    "raw": "sources/S157.body",
+    "raw_sha256": "26ce6211b5540c92659ffb6afd5b056c323fbc85490e9e9d0dd67a9c65c512a7",
+    "reader": "sources/S157.reader.txt",
+    "reader_sha256": "986bf4f138b6ff67e82149ce87b4fcbab261b018bead6862b611dd610186d337",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S158",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c03-rendimientos-trabajo/rendimiento-neto-trabajo-integrar-base-imponible/fase-2-determinacion-rendimiento-neto/particular-analisis-gastos-articulo-19_2_f-lirpf.html",
+    "raw": "sources/S158.body",
+    "raw_sha256": "7c6a40a40036dfc728dd6bf1ab58bd7e7f4b1350233bf58f2c908fdb0d64b58a",
+    "reader": "sources/S158.reader.txt",
+    "reader_sha256": "8e7d854d15fe7ecd86e3e4344fefb94dc295ef7e8f64bb7ecb4ce622abcef73d",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S159",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOIB-i-2026-90195",
+    "raw": "sources/S159.body",
+    "raw_sha256": "195c871add1302d762cef31c54adfa7397b39f8a55ab2a0f7d6f21df29a5ea22",
+    "reader": "sources/S159.reader.txt",
+    "reader_sha256": "48fcf39183f6ace51328847968f5937344a737967240998ee3273fac7adf01c0",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S160",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_25-ayudas-recibidas-personas-afectadas-1985.html",
+    "raw": "sources/S160.body",
+    "raw_sha256": "230c6f33f3a2f7c02a13b9b2e5fda177734d3e1635de76b248297476c1697da0",
+    "reader": "sources/S160.reader.txt",
+    "reader_sha256": "f1809ac4023aa2284e252e0bbe030cdcc91eee977410e1c57fc9a01c79a36622",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S161",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+    "raw": "sources/S161.body",
+    "raw_sha256": "a2876b9b97295cc74704d39ffc0e8d3cf474d37b975e7a09558de4a7956d8f11",
+    "reader": "sources/S161.reader.txt",
+    "reader_sha256": "768227c932ce5399c6841302d6b0564388055516de4126e89368e524f7731e18",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S163",
+    "url": "https://serviciostelematicosext.hacienda.gob.es/TEAC/DYCTEA/criterio.aspx?id=00%2F00765%2F2023%2F00%2F0%2F1",
+    "raw": "sources/S163.body",
+    "raw_sha256": "11d3eb89ba6f05f22b053e14033e3abb3112512cc44d27022d5dac3fb803f2f2",
+    "reader": "sources/S163.reader.txt",
+    "reader_sha256": "370901d0a7ad4f92b342cb22f04c856133c67e1dd8bdc4f7a59e402f71295057",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S164",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deduccion-inversion-vivienda-habitual-regimen-transitorio/modalidades-deduccion/adquisicion-construc-rehabilitacion-ampliacion-vivienda-habitual/quienes-tienen-derecho-deduccion.html",
+    "raw": "sources/S164.body",
+    "raw_sha256": "b4b1ddf767a6da2989b808d3c8a2a843c27b1b5bfc56e09925e04a0248d1b97f",
+    "reader": "sources/S164.reader.txt",
+    "reader_sha256": "8a284825ee5f1094af55f7492798e449fd84f84ed46a4c18deb793863c0cbd52",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S165",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deduccion-maternidad-incremento-adicional-gastos-custodia/deduccion-maternidad/cuantia-limite-deduccion.html",
+    "raw": "sources/S165.body",
+    "raw_sha256": "d0e961ab9cb19b675dd7a64864f795b87d023e45464e97cb7cbf37e9f15b5cf3",
+    "reader": "sources/S165.reader.txt",
+    "reader_sha256": "c316cd1994bb92df6efc37e46ad5dd92fa6a9f296662e2323532d76ae040d0a4",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S166",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/resultado-declaracion/deduccion-maternidad-incremento-adicional-gastos-custodia/incremento-adicional-gastos-custodia-guarderias/requisitos-condiciones-aplicar-incremento-adicional.html",
+    "raw": "sources/S166.body",
+    "raw_sha256": "a68e9acbf4650e46c902333b0339070673f51585c854b3c71e318bd837f44b3c",
+    "reader": "sources/S166.reader.txt",
+    "reader_sha256": "4a0d32da7505e5b0acb4d7384c81b5b1adde1f7325bb4566a99ee18dd939745c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S167",
+    "url": "https://serviciostelematicosext.hacienda.gob.es/teac/dyctea/criterio.aspx?id=00%2F05409%2F2025%2F00%2F0%2F1",
+    "raw": "sources/S167.body",
+    "raw_sha256": "2b950777faaf9d0a36840581ce2525253033f4f21f757f337766529817338f50",
+    "reader": "sources/S167.reader.txt",
+    "reader_sha256": "f3386af9526c7b57f1e2a23fc7e63a59d66a7fac4c795044f0c26dd8e41b7fce",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S168",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/procedimientoini/GZ25.shtml",
+    "raw": "sources/S168.body",
+    "raw_sha256": "a0f008e0b0101936d40987a0fa3ef4434ac22e4fd9d888afc5150218c7aa6ff4",
+    "reader": "sources/S168.reader.txt",
+    "reader_sha256": "168311906d50a8d3bc485fd5eaf57ef496111a79359d19aa9301f989649e505f",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S169",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ciudadanos-familias-personas-discapacidad/deducciones-relacionadas-hijos-descendientes/deduccion-familia-numerosa/modelo-143-abono-anticipado-deduccion-numerosa.html",
+    "raw": "sources/S169.body",
+    "raw_sha256": "68da6748f5547b7da6d227985d3f09b8056f41c931efa59b586af46d86eb9533",
+    "reader": "sources/S169.reader.txt",
+    "reader_sha256": "de1b874f006b05e49ace54872a2fe7459834ddf6b1aa11fe9f46bc2119f13660",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S170",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "raw": "sources/S170.body",
+    "raw_sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "reader": "sources/S170.reader.txt",
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S171",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html",
+    "raw": "sources/S171.body",
+    "raw_sha256": "82e6361eaa2ff19ce4fb5defb77f7cf7bd16fe327aaff702931bfc733d265dbe",
+    "reader": "sources/S171.reader.txt",
+    "reader_sha256": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S172",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/obras-adecuacion-vivienda-habitual-personas-discapacidad.html",
+    "raw": "sources/S172.body",
+    "raw_sha256": "fbdae8bf2f41a08708f6eb6177af5a23cd40ad02df9de8464a6c62e7368a9b48",
+    "reader": "sources/S172.reader.txt",
+    "reader_sha256": "21d11b6bf67ed17829b65e09deb09bb1bcf97f98edcd6da18ffdc08497abaf70",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S173",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-14546",
+    "raw": "sources/S173.body",
+    "raw_sha256": "0fcbc91df54fc646d46cd11b321e48efd1678145bbbc90a53d1aeb4bbcf92d1e",
+    "reader": "sources/S173.reader.txt",
+    "reader_sha256": "191e06f187212895aae9f24635158ac5c031eeb8ef5e2864190a1f1c79fb97e0",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S174",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-7444",
+    "raw": "sources/S174.body",
+    "raw_sha256": "994b759cd0376a4d79896c68ce3f3b12c010947edf5dd0f2fc6fc71d5bd89300",
+    "reader": "sources/S174.reader.txt",
+    "reader_sha256": "30105e8370fe460bd8d32c645007e08d290165b8f0ea061803b1e5984294af5c",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S175",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-extremadura/obtencion-ayudas-subvenciones-personas-enfermedad-amiotrofica.html",
+    "raw": "sources/S175.body",
+    "raw_sha256": "32afb31aa3cc42614b7b97f40efc4ea97023539e77206b9077ad7315c82e2462",
+    "reader": "sources/S175.reader.txt",
+    "reader_sha256": "ddb82818d4a59c24dd6936028152bb6de32c8d3cce2d122aa6ca12f2b8dc209e",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S176",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-16147",
+    "raw": "sources/S176.body",
+    "raw_sha256": "28cc4a98ce73debfa6cca88cff2d988f3ef365a0f40c2965d891582f1ba89548",
+    "reader": "sources/S176.reader.txt",
+    "reader_sha256": "c058b4ac4aea6fa91530fb96d885d88ae5ff4c81d6ae971f2f1901b5317f7522",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S177",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-2045",
+    "raw": "sources/S177.body",
+    "raw_sha256": "26c6d3a96a3e0e31b9748d15a6822560945b448ff87d0aeede20bf4c908757e4",
+    "reader": "sources/S177.reader.txt",
+    "reader_sha256": "6b9dc3cb6271d444e18205fe980186a336f3d9848ce784076788d447ab86f4b3",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S178",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-6544",
+    "raw": "sources/S178.body",
+    "raw_sha256": "f7253b7d9042a06235c9b64f2fb69fe94246534969404525f6fa3f4665f92ffb",
+    "reader": "sources/S178.reader.txt",
+    "reader_sha256": "5e93ac366a620867de822c0f8f6e5ff5c9a1c3f0cbadbfd4fb91c655d6b64392",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S179",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/irpf/novedades-impuesto/novedades-normativa-2026/principales-novedades-tributarias-introducidas-real-marzo.html",
+    "raw": "sources/S179.body",
+    "raw_sha256": "7328f81cec4ae4a51ee432d88ac32efa4bf0eff6a1d7bf4eecd2553310f2d8e5",
+    "reader": "sources/S179.reader.txt",
+    "reader_sha256": "ed407b7ac086d9996cbcfd3d7d6473bdc06ee3d9bbd44f9592e52417368433f0",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S180",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_14_la-rioja/10_14_9-hijo-0-3-anos-municipios.html",
+    "raw": "sources/S180.body",
+    "raw_sha256": "7fa59e6f5ac4e2ab74af99e87c8e2240bea7a737d5c3357939e698f37409d9c1",
+    "reader": "sources/S180.reader.txt",
+    "reader_sha256": "66a2f1c7feb6816a992ee75d69021a03d663a473563ff15805165590588cead9",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S181",
+    "url": "https://larioja.org/larioja-client/cm/tributos/images?idMmedia=1691508",
+    "raw": "sources/S181.body",
+    "raw_sha256": "ab6290ed2efd4182b3f359394a4919b4b5db16d91be8e04435d8f7d7e7109e86",
+    "reader": "sources/S181.reader.txt",
+    "reader_sha256": "296f2f23220fe450691fa7ace6af38608ed8c9dc9d06a6188d254bfac4635b54",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S182",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_6-cantabria/10_6_14-gastos-ocasionados-trasladar-residencia.html",
+    "raw": "sources/S182.body",
+    "raw_sha256": "b5bab45c2f86c0c54cbecb3d735e03e8ffe847196fce86c71d5c2c62ed4835f6",
+    "reader": "sources/S182.reader.txt",
+    "reader_sha256": "c2a81e6be2fb0c75d8eebe86c234026eb0c352fb60b92f9de87a968b5f82f0a2",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S183",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_5-canarias/10_5_5-trasladar-residencia-habitual.html",
+    "raw": "sources/S183.body",
+    "raw_sha256": "b56daa1c3dc4f2a5680d695018507ae80b4f6b47814cc8774916f14024351658",
+    "reader": "sources/S183.reader.txt",
+    "reader_sha256": "422b30f6cd03ac242d3644af7d0df6bd48c989947d99316411111ba039043366",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S184",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_3-principado-asturias/10_3_21-obtencion-ayudas-subvenciones-otorgadas-enfermos.html",
+    "raw": "sources/S184.body",
+    "raw_sha256": "7bd5f3a05f6fe7e71555c021d8e984955277075f7279d1cba1f014b3ed45d186",
+    "reader": "sources/S184.reader.txt",
+    "reader_sha256": "366745bfb9a8d839544df108fe4d6712461c2528f5c498f9f8cbf984b2a4b762",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S185",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_10-extremadura/10_10_18-obtencion-ayudas-subvenciones-otorgadas-ela.html",
+    "raw": "sources/S185.body",
+    "raw_sha256": "40c16a924cb17fb88269a02bbc445d6d0bf06a7ce667db3e638deb11b3f9c9c1",
+    "reader": "sources/S185.reader.txt",
+    "reader_sha256": "1a22b9772690c43f13cb10f488c536c6469d29376944d08d828e349c37b0ad64",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S186",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_17_por-ayudas-subvenciones-recibidas-deportistas.html",
+    "raw": "sources/S186.body",
+    "raw_sha256": "3058f72090e5e3d5ee363eede1d731ba80b8fcd3bafd3f6ef0ad1528e792d2de",
+    "reader": "sources/S186.reader.txt",
+    "reader_sha256": "2931cb0555adde36d37b9780d35859fcec203d6f8c4cccdb7b77736c4a5e76bb",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S187",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_23-ayudas-subvenciones-recibidas-personas-fenotipos.html",
+    "raw": "sources/S187.body",
+    "raw_sha256": "1b08a412cb2956fac75a7a41dc2e74cc9d377ec4dd4ffb0a7dbcbe27579b8d31",
+    "reader": "sources/S187.reader.txt",
+    "reader_sha256": "9b903ef643c2910741fe6716099b31fee2f7d77ea3bf6cfb762521f514a3f1e5",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S7",
+    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-10270",
+    "raw": "sources/S7.body",
+    "raw_sha256": "378da95b8dce3fd90ad16734ef70e85748ddd5b6a11c84819ae87ad46099fde0",
+    "reader": "sources/S7.reader.txt",
+    "reader_sha256": "0225bbc004d1b853e0756dff864571d8d551d8992cedf4ac2cd4b79a4dfc0fa8",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S9",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+    "raw": "sources/S9.body",
+    "raw_sha256": "7336ae953dab60ec38da0e62e1332fa3e23b6cd62427bcb10fef24e265f761f9",
+    "reader": "sources/S9.reader.txt",
+    "reader_sha256": "bef8b7db92263a12ad225dabc5a5f8c824fa1354f949ed0ae6f23c66bcbe0f7b",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S10",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual-victimas-violencia-machista.html",
+    "raw": "sources/S10.body",
+    "raw_sha256": "fdc4bdb8ef13298683190ab49f583bcd6507133393bb6703dd265db497e809c9",
+    "reader": "sources/S10.reader.txt",
+    "reader_sha256": "5a23779fe82b889c678d56f571cbb774e3784449505e888be18c56a3a9003890",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S13",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/tramo-autonomico-deduccion-inversion-vivienda-habitual.html",
+    "raw": "sources/S13.body",
+    "raw_sha256": "dea30341a531f4318c0c613f52ce6df641f16993a1dca587c0b70852eacbfa75",
+    "reader": "sources/S13.reader.txt",
+    "reader_sha256": "7304a9ed57630ccf943f65e8119f5d59cf66001c8a944e4758841a1b47dc4231",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S19",
+    "url": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9611/2136736.pdf",
+    "raw": "sources/S19.body",
+    "raw_sha256": "417aed03c939d56ae1aa5ac4c10a472b50769347efda4e09dd1a363ea7b3bace",
+    "reader": "sources/S19.reader.txt",
+    "reader_sha256": "4c687672842c9992701e45b75caa99c1b5181146de1cd25b7d641118b9fdb286",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S20",
+    "url": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9760/2172440.pdf",
+    "raw": "sources/S20.body",
+    "raw_sha256": "263495540c60ec31d94fd28ed13ab0ef41662ef98a25e625ca5beb20918ccd90",
+    "reader": "sources/S20.reader.txt",
+    "reader_sha256": "90c2fc7cfcde94280567076d81af7c1e24a6df15423f7a85992987a2e181bdce",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S42",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_3-principado-asturias/10_3_22-gastos-derivados-arrendamiento-viviendas.html",
+    "raw": "sources/S42.body",
+    "raw_sha256": "aa5c10c55c8cc6d648b4d226b54799d45bec4e6535c1ba44950e5d5a15339c44",
+    "reader": "sources/S42.reader.txt",
+    "reader_sha256": "3454df541f395748533c1bba0fd80cc3842f53a6c9543beb403e94e67f4a4ec1",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S80",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/familiares-dependientes-discapacidad.html",
+    "raw": "sources/S80.body",
+    "raw_sha256": "5c2f0d79661675ba0fb06a7ea7607b5a38d08cdd97c333682e0cfa66349eabf6",
+    "reader": "sources/S80.reader.txt",
+    "reader_sha256": "8bb6559f86ddc4675d15c13c2fb4214eee2afd98d6e99b5b29b7dd27238f919f",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S81",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/cuotas-satisfechas-seguridad-social-contratacion-hogar.html",
+    "raw": "sources/S81.body",
+    "raw_sha256": "0f3101daa0b394219f70b86c3ff950d0d836df39ae7a327cac99ed8816719d45",
+    "reader": "sources/S81.reader.txt",
+    "reader_sha256": "bffd25c13238e7747d8fef3ee8a48f66645ddf64e631bdf238887fba78f89e07",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S100",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_10-extremadura/10_10_15-inversiones-rehabilitacion-zonas-rurales.html",
+    "raw": "sources/S100.body",
+    "raw_sha256": "d5fe002c953d38e9ccb8b0da8397c5f9e0cb6525477362db9d5f25c599e399b7",
+    "reader": "sources/S100.reader.txt",
+    "reader_sha256": "0247ca5ecbcf7f8affd5e2fb480f1ca921551aca40b3f2945bab3e9f67f61396",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S111",
+    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2000-6844",
+    "raw": "sources/S111.body",
+    "raw_sha256": "2f693a27f38740811bbefd8c7bf99f042dc1ec87f5c60f5805df12f6e1b81684",
+    "reader": "sources/S111.reader.txt",
+    "reader_sha256": "dcab98ba298157f3f85b2f505667fb4059898d528c115f4f57b95ee94841bad2",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S112",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-1998-82362",
+    "raw": "sources/S112.body",
+    "raw_sha256": "95d6b1a240e4846f107433157382d6e2b093dbc2b817bb188b298f2e4294f6e0",
+    "reader": "sources/S112.reader.txt",
+    "reader_sha256": "fc4154aa19fe87be40252b84a7a171934887f8a83a750cf8f196e19b205623f3",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S113",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-29216",
+    "raw": "sources/S113.body",
+    "raw_sha256": "dec6a904631f8163353c7a2b01a59cc3941651a848685bcc49ec839d64fba2e3",
+    "reader": "sources/S113.reader.txt",
+    "reader_sha256": "a937a3ad510540ddac0cbd692574f219e9511137c28d41607dedd29a5e788a70",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S124",
+    "url": "https://www.knosys.es/ccgalicia/knpag?lang=GAL&x=index",
+    "raw": "sources/S124.body",
+    "raw_sha256": "048df42e9467e57c45df68add6fad087e4323e99ce5307d10d3875c025c7ad01",
+    "reader": "sources/S124.reader.txt",
+    "reader_sha256": "048df42e9467e57c45df68add6fad087e4323e99ce5307d10d3875c025c7ad01",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S127",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/arrendamiento-viviendas-vacias.html",
+    "raw": "sources/S127.body",
+    "raw_sha256": "4e02b22d442530a15d3b91478e44c141e863090131451cc96aafcb6461da5101",
+    "reader": "sources/S127.reader.txt",
+    "reader_sha256": "866d1efb58bf75cd8f7c7ff840329b4b5b9de78d43f499cc7be0ffba080886c5",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S129",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-2145",
+    "raw": "sources/S129.body",
+    "raw_sha256": "e3a25c4862b821ed369128f1c4cec966d1a3ea4ad5e3e5e22e4b83389290d487",
+    "reader": "sources/S129.reader.txt",
+    "reader_sha256": "82fea104b649b97756e433b6928eb8fa6f7b469ba5a117c48d7f24f96edd13e1",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S21",
+    "url": "https://atc.gencat.cat/ca/tributs/itpajd/tpo/tarifes-tipus/",
+    "raw": "sources/S21.body",
+    "raw_sha256": "65aaf6eb55ae26d239cee20ab891b4df3b6b9cc96971d7e5ff3b37194a98a576",
+    "reader": "sources/S21.reader.txt",
+    "reader_sha256": "e4f1f0aa71e41acce82de027093f055de28d7bb4b8b7ee24dd6705ab2d19c936",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S162",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deduccion-inversion-empresas-nueva-reciente-creacion/limite-deduccion-comprobacion-situacion-patrimonial.html",
+    "raw": "sources/S162.body",
+    "raw_sha256": "25b9b1e7335cff15cd61e419a5ec96a4b98db79d0ca37f5373080354e35686fe",
+    "reader": "sources/S162.reader.txt",
+    "reader_sha256": "4abdd3eac94d72f3a384c0f27e550fcecf4d6140d5a3fef8392fe4c62f132066",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "LIS",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+    "raw": "sources/LIS.body",
+    "raw_sha256": "fbb1ac8cfc81eedcb6ecdf492ba84d42654d06ff8cdf112ec3e9c196fe0fc295",
+    "reader": "sources/LIS.reader.txt",
+    "reader_sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "AndVetManual",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/gastos-veterinarios-derivados-adquisicion-animales-compania.html",
+    "raw": "sources/AndVetManual.body",
+    "reader": "sources/AndVetManual.reader.txt",
+    "raw_sha256": "a176aa86a77fdf8894663b7fca61aed90b9b62b809692b4d61e14f5f79eab78c",
+    "reader_sha256": "0cdc1f42156436b989938cbecb2edf78885262671b131e46d7c45c62d6e352b8",
+    "acquired": "2026-10-28",
+    "read_scope": "Only recorded selected native-LF paragraphs actually read; targeted supplementary official page for existing payment-attribution rule, not whole acquisition read."
+  },
+  {
+    "key": "RiojaUIAge",
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "raw": "sources/RiojaUIAge.reader.txt",
+    "raw_sha256": "067f2380e23101cc747336c7a5c1e415992c1c54e92881161341c1f8e4f12db0",
+    "reader": "sources/RiojaUIAge.reader.txt",
+    "reader_sha256": "067f2380e23101cc747336c7a5c1e415992c1c54e92881161341c1f8e4f12db0",
+    "acquired": "2026-10-28",
+    "read_scope": "Prior different-writer actual public2025AX capture; selected nativeLF personally inspected now, not new UI replay, no HTTP-body claim.",
+    "provenance": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-LaRioja-childcare-private-method/runtime/monthly-footnote-AX.txt"
+  },
+  {
+    "key": "RiojaUIFinal",
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "raw": "sources/RiojaUIFinal.reader.txt",
+    "raw_sha256": "9b6dccb98cb1b35c75a1502a9ad0d36087dd3b1e95a72ee9f0f59dffc3a58a25",
+    "reader": "sources/RiojaUIFinal.reader.txt",
+    "reader_sha256": "9b6dccb98cb1b35c75a1502a9ad0d36087dd3b1e95a72ee9f0f59dffc3a58a25",
+    "acquired": "2026-10-28",
+    "read_scope": "Prior different-writer actual public2025AX capture; selected nativeLF personally inspected now, not new UI replay, no HTTP-body claim.",
+    "provenance": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-LaRioja-childcare-private-method/runtime/same-expense-final-AX.txt"
+  },
+  {
+    "key": "RiojaUISummary",
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "raw": "sources/RiojaUISummary.reader.txt",
+    "raw_sha256": "c18395632d0d2360ef26580f8e85072d134fccb9bf9ce8afad49c0b448ad6a9d",
+    "reader": "sources/RiojaUISummary.reader.txt",
+    "reader_sha256": "c18395632d0d2360ef26580f8e85072d134fccb9bf9ce8afad49c0b448ad6a9d",
+    "acquired": "2026-10-28",
+    "read_scope": "Prior different-writer actual public2025AX capture; selected nativeLF personally inspected now, not new UI replay, no HTTP-body claim.",
+    "provenance": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-LaRioja-childcare-private-method/runtime/same-expense-summary-AX.txt"
+  },
+  {
+    "key": "AttributionUI",
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "raw": "sources/AttributionUI.reader.json",
+    "reader": "sources/AttributionUI.reader.json",
+    "raw_sha256": "5073d5a368211535a0811a7dd045a43a3b49e1f5f61b8fa56b34abef4518e8de",
+    "reader_sha256": "5073d5a368211535a0811a7dd045a43a3b49e1f5f61b8fa56b34abef4518e8de",
+    "acquired": "2026-10-28",
+    "read_scope": "Retained prior actual2025publicUI observation receipt, not rawHTTP or new replay; actual selected content inspected; original provenance inside.",
+    "provenance": "skills/research/spain-2026/regional-attribution-writer-browser-observations.json"
+  },
+  {
+    "key": "CLMSignedUI",
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "raw": "sources/CLMSignedUI.reader.json",
+    "reader": "sources/CLMSignedUI.reader.json",
+    "raw_sha256": "c4f1f31bb5a925ac67e1c2489c2200076cf3a404c1d6bd8292083f048601051f",
+    "reader_sha256": "c4f1f31bb5a925ac67e1c2489c2200076cf3a404c1d6bd8292083f048601051f",
+    "acquired": "2026-10-28",
+    "read_scope": "Retained prior actual2025publicUI observation receipt, not rawHTTP or new replay; actual selected content inspected; original provenance inside.",
+    "provenance": "skills/research/spain-2026/clm-signed-allocation-checkpoint/browser-observations.json"
+  },
+  {
+    "key": "CLMJointUI",
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "raw": "sources/CLMJointUI.reader.json",
+    "reader": "sources/CLMJointUI.reader.json",
+    "raw_sha256": "a14b482925bccc8a33b1f29faa3559aa2ac791154cb3e706272a37a5f44cab25",
+    "reader_sha256": "a14b482925bccc8a33b1f29faa3559aa2ac791154cb3e706272a37a5f44cab25",
+    "acquired": "2026-10-28",
+    "read_scope": "Retained prior actual2025publicUI observation receipt, not rawHTTP or new replay; actual selected content inspected; original provenance inside.",
+    "provenance": "skills/research/spain-2026/clm-joint-signed-allocation-checkpoint/actual-root-ui/ROOT-UI-OBSERVATIONS.json"
+  },
+  {
+    "key": "CantPositiveUI",
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "raw": "sources/CantPositiveUI.reader.json",
+    "reader": "sources/CantPositiveUI.reader.json",
+    "raw_sha256": "5623da471fdda3bf8182c0294560b23d6015082b3d8363634193daa189d78f50",
+    "reader_sha256": "5623da471fdda3bf8182c0294560b23d6015082b3d8363634193daa189d78f50",
+    "acquired": "2026-10-28",
+    "read_scope": "Retained prior actual2025publicUI observation receipt, not rawHTTP or new replay; actual selected content inspected; original provenance inside.",
+    "provenance": "skills/research/spain-2026/cantabria-rent-independent-simulator-receipt.json"
+  },
+  {
+    "key": "CantJointUI",
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "raw": "sources/CantJointUI.reader.json",
+    "reader": "sources/CantJointUI.reader.json",
+    "raw_sha256": "b93cbb5851f26b1067bb94ba9aeabcebf802c72bf65051f4e2838d4377d69744",
+    "reader_sha256": "b93cbb5851f26b1067bb94ba9aeabcebf802c72bf65051f4e2838d4377d69744",
+    "acquired": "2026-10-28",
+    "read_scope": "Retained prior actual2025publicUI observation receipt, not rawHTTP or new replay; actual selected content inspected; original provenance inside.",
+    "provenance": "skills/research/spain-2026/cantabria-joint-actual-ui-observations.json"
+  },
+  {
+    "key": "ModelsIndex",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ciudadanos-familias-personas-discapacidad/deducciones-relacionadas-hijos-descendientes/deduccion-familia-numerosa/modelo-143-abono-anticipado-deduccion-numerosa.html",
+    "raw": "sources/ModelsIndex.body",
+    "reader": "sources/ModelsIndex.reader.txt",
+    "raw_sha256": "68da6748f5547b7da6d227985d3f09b8056f41c931efa59b586af46d86eb9533",
+    "reader_sha256": "de1b874f006b05e49ace54872a2fe7459834ddf6b1aa11fe9f46bc2119f13660",
+    "acquired": "2026-10-28",
+    "read_scope": "Exact earlier cached official index with121/122/143; personally read native68–76. Current paginated body also retained; no invented form label."
+  },
+  {
+    "key": "CanMedicalUI",
+    "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+    "raw": "sources/CanMedicalUI.reader.json",
+    "reader": "sources/CanMedicalUI.reader.json",
+    "raw_sha256": "bb2253b7280f227ae11342fa67c5ba8f7f32296136a0ffa79867701678d09961",
+    "reader_sha256": "bb2253b7280f227ae11342fa67c5ba8f7f32296136a0ffa79867701678d09961",
+    "acquired": "2026-10-28",
+    "read_scope": "Actual prior different reviewer own2025UI observation receipt read fully now; no new replay, no HTTPbody, no2026campaign proof.",
+    "provenance": "skills/research/spain-2026/regional-medical-independent-ui-receipt.json"
+  }
+]

@@ -1,0 +1,1265 @@
+{
+  "status": "WRITER LEDGER; NO NEW INDEPENDENT COUNTRY REVIEW YET",
+  "guide": "skills/international/liechtenstein/li-cross-border.md",
+  "guide_sha256": "6014f5d17ef19ea938aa1dc198735e66716d9415ac3394449273f6b3420af447",
+  "rules": [
+    {
+      "id": "LI-XB-001",
+      "rule_or_figure": "Domicile stay withintention ofpermanentremaining",
+      "Guide_section": "Who this applies to",
+      "act_article_or_official_section": "SteG2(1)(b)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Verbleibens aufhält;",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-002",
+      "rule_or_figure": "Habitualabode connectedstayover6monthsfromstart;shortinterruptionsignored",
+      "Guide_section": "Who this applies to",
+      "act_article_or_official_section": "SteG2(1)(c)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "mehr als sechs Monaten Dauer anzusehen; kurzfristige Unterbrechungen bleiben unberücksichtigt.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-003",
+      "rule_or_figure": "School/institutionandupto12monthcure/holidayexceptions",
+      "Guide_section": "Who this applies to",
+      "act_article_or_official_section": "SteG2(1)(c)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "bis zu zwölf Monaten begründen keinen gewöhnlichen Aufenthalt und",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-004",
+      "rule_or_figure": "PEfixedplace;construction/installationexceed6months",
+      "Guide_section": "Who this applies to",
+      "act_article_or_official_section": "SteG2(1)(a)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "eine Bauausführung oder Montage, deren Dauer sechs Monate über",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-005",
+      "rule_or_figure": "Dependentagent/insurerPEgate",
+      "Guide_section": "Who this applies to",
+      "act_article_or_official_section": "SteG2(1)(a)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Ein abhängiger Vertreter begründet auch ohne feste Geschäftseinrich",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-006",
+      "rule_or_figure": "EntityseatORactualmanagementresidence",
+      "Guide_section": "Who this applies to",
+      "act_article_or_official_section": "SteG44(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "steuerpflichtig, wenn sich ihr Sitz oder der Ort ihrer tatsächlichen Verwal",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-007",
+      "rule_or_figure": "Individualresidentunlimited/nonresidentdomesticwealthincome",
+      "Guide_section": "Who this applies to / The base",
+      "act_article_or_official_section": "SteG6",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Natürliche Personen, die weder Wohnsitz noch gewöhnlichen Auf",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-008",
+      "rule_or_figure": "Nonresidentdomesticproperty/PEwealth",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG6(4)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Als inländisches Vermögen nach Abs. 2 gelten im Inland gelegene",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-009",
+      "rule_or_figure": "AgricultureandPEbusinesssourcecategories(a)/(b)",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG6(5)(a)-(b)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "b) der Erwerb aus im Inland gelegenen Betriebsstätten;",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-010",
+      "rule_or_figure": "Employmentsourceincludesstatedtreaty-assignedforeign/transportwork",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG6(5)(c)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "rungsrecht zuweist; oder",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-011",
+      "rule_or_figure": "Board,pension,freedompolicy/sperraccountandwealthyieldsourcecategories",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG6(5)(d)-(g)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "g) der Sollertrag im Sinne von Art. 5 des inländischen, steuerpflichtigen Ver",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-012",
+      "rule_or_figure": "Liabilitystart/endactualstatutoryevents",
+      "Guide_section": "Who this applies to",
+      "act_article_or_official_section": "SteG7/46",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Die Steuerpflicht beginnt mit dem Tag, an dem der Steuerpflichtige:",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-013",
+      "rule_or_figure": "Simplified4percentstatepluspropermunicipalitysurcharge;linkedexpensesonly",
+      "Guide_section": "Rates, bands and thresholds / The base",
+      "act_article_or_official_section": "SteG23(1)(a)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "von 4 % zuzüglich des jeweiligen Gemeindezuschlages nach Abs. 5",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-014",
+      "rule_or_figure": "Specifiedc–fwithholdingfinalsubjectordinaryroutes",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG23(1)(b)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "abgegolten; vorbehalten bleibt die ordentliche Veranlagung nach Abs. 2.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-015",
+      "rule_or_figure": "Agriculture/PEbusinessmandatoryordinary>=211400afterstateddeductions",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG23(2)(a)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Ziff. 1 und 2 211 400 Franken oder mehr beträgt;51",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-016",
+      "rule_or_figure": "c–fmandatoryordinary>=211400gross;statedcapitalannualequivalent",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG23(2)(abis)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "erwerb 211 400 Franken oder mehr beträgt; bei Kapitalleistungen nach",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-017",
+      "rule_or_figure": "Employmentexclusivetreatyrightordinaryregardlessamount",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG23(2)(b)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "rungsrecht zukommt, unabhängig von der Höhe des steuerpflichtigen",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-018",
+      "rule_or_figure": "Optionalordinaryupto211400grosssubjectmandatoryroutes",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG23(2)(c)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "werbs von 211 400 Franken auf Antrag; vorbehalten bleibt Bst. b.53",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-019",
+      "rule_or_figure": "Optionalordinaryrequest31Decembertaxyear",
+      "Guide_section": "The base / Deadlines and filing",
+      "act_article_or_official_section": "SteV19",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "Dezember des entsprechenden Steuerjahres zu erfolgen.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-020",
+      "rule_or_figure": "Ordinarylinkedexpensesfull;otherdeductionsdomestic/worldwideratio",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG23(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "inländischen Erwerbs zum gesamten Erwerb des Steuerpflichtigen abzugs",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-021",
+      "rule_or_figure": "Ordinaryratecorrespondstoworldwidewealthincomeafterdeductions",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG23(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "wenden, der dem gesamten Vermögen und dem gesamten Erwerb unter",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-022",
+      "rule_or_figure": "Ordinaryusesarticle19;property/PE/wealthyieldactualmunicipalitysurcharge",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG23(5)(a)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Gemeinde, in dem das Grundstück bzw. die Betriebsstätte gelegen ist;",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-023",
+      "rule_or_figure": "Otherordinarynonresidentcases150percentSTATEtaxsurcharge2026",
+      "Guide_section": "Rates, bands and thresholds / The base",
+      "act_article_or_official_section": "FinanceAct2026art2;SteG23(5)(b)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2025556000",
+      "exact_original_language_quote": "Steuerjahr 2026 mit 150 % festgelegt.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-cross-border-evidence/sources/34-finance-act-2026.txt",
+      "source_text_sha256": "12a44b2b73a572642a156162483808534441126756298cb19374fd280988f27e",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-024",
+      "rule_or_figure": "Residentwagesalsowithheld;notfinalassessmentrate",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteG24(1)/29",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "1) Dem Steuerabzug an der Quelle unterliegen bei unbeschränkt Steuer",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-025",
+      "rule_or_figure": "Specifiedindividualboard/pension12percent",
+      "Guide_section": "Rates, bands and thresholds / Cross-border points",
+      "act_article_or_official_section": "SteG25(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Sinne des Art. 24 Abs. 1 Bst. b und Abs. 2 Bst. b bis d 12 % des Erwerbs.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-026",
+      "rule_or_figure": "SpecifiednonresidentCORPORATEboardfunction12percentandordinaryapplication",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteG63a",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "12 % des Erwerbs.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-027",
+      "rule_or_figure": "Treatyexclusiveforeignrightrequiresauthorityexemptionconfirmationapplication",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteG26(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "bestätigt die Steuerverwaltung auf Antrag dem Vergütungsgläubiger die Steu",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-028",
+      "rule_or_figure": "Treatycapauthorityreducedrateconfirmation",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteG26(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "zulässigen Quellensteuerhöchstsatz.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-029",
+      "rule_or_figure": "Excesstreatywithholdingrefund2yearssourcetaxmaturity",
+      "Guide_section": "Deadlines and filing / Cross-border points",
+      "act_article_or_official_section": "SteG26(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Die Frist für die Antragsstellung beträgt zwei Jahre seit Fälligkeit der Steuerabzugsbeträge.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-030",
+      "rule_or_figure": "Payerliability/certificationindependent",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteG27",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Der Vergütungsschuldner haftet für die Entrichtung der Steuerab",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-031",
+      "rule_or_figure": "Ordinaryassessmentcreditscertifiedwithholdingstateandmunicipalitytax",
+      "Guide_section": "The base / Nonresident category",
+      "act_article_or_official_section": "SteG29(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "dete Landes- und Gemeindesteuer angerechnet.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-032",
+      "rule_or_figure": "ExemptionbyDTA/reciprocityandprogressionreservation",
+      "Guide_section": "The base / Individual foreign relief",
+      "act_article_or_official_section": "SteG22(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "21 Abs. 1 bleibt unberührt.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-033",
+      "rule_or_figure": "Credittostateandmunicipalitytaxattributabletosamewealth/income",
+      "Guide_section": "The base / Individual foreign relief",
+      "act_article_or_official_section": "SteG22(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "anzurechnen, die auf dieses Vermögen und diesen Erwerb entfällt.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-034",
+      "rule_or_figure": "NonbusinesscreditDTAcreditclauseorreciprocity",
+      "Guide_section": "The base / Individual foreign relief",
+      "act_article_or_official_section": "SteV18a(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "ein Doppelbesteuerungsabkommen abgeschlossen wurde, das eine solche",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-035",
+      "rule_or_figure": "Nonbusinessdomesticwealth/incometaxpaidgate",
+      "Guide_section": "The base / Individual foreign relief",
+      "act_article_or_official_section": "SteV18a(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "wenn im Inland die Vermögens- und Erwerbssteuer entrichtet wurde:",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-036",
+      "rule_or_figure": "Expendituretaxexcluded",
+      "Guide_section": "The base / Individual foreign relief",
+      "act_article_or_official_section": "SteV18a(3)(a)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "liegen; oder",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-037",
+      "rule_or_figure": "Foreigncredittotalannualtaxes<=50nocredit",
+      "Guide_section": "Rates, bands and thresholds / The base",
+      "act_article_or_official_section": "SteV18a(3)(b)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "erjahr den Betrag von 50 Franken nicht übersteigt.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-038",
+      "rule_or_figure": "Self-employmentrefersto36a–c;domesticmappingactualcase",
+      "Guide_section": "The base / Business credit",
+      "act_article_or_official_section": "SteV18a(4)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "richtet sich nach Art. 36a bis 36c.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-039",
+      "rule_or_figure": "Nonbusinesscreditlowerofeligibleforeigntax/domesticlimit;exhaustforeignreductions",
+      "Guide_section": "The base / Individual foreign relief",
+      "act_article_or_official_section": "SteV18b(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "lichkeiten auszuschöpfen, um die ausländischen Steuern auf diese Einkünfte",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-040",
+      "rule_or_figure": "Wealthcreditassetsatstartyear/startliability",
+      "Guide_section": "The base / Individual foreign relief",
+      "act_article_or_official_section": "SteV18b(2)(a)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "Vermögenswerte zu Beginn des Steuerjahres bzw. zu Beginn der Steuer",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-041",
+      "rule_or_figure": "WealthcreditallocateddebtthenSollertrag",
+      "Guide_section": "The base / Individual foreign relief",
+      "act_article_or_official_section": "SteV18b(2)(b)-(c)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "c) Von den um die Schulden gekürzten Vermögenswerten ist der Sollertrag",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-042",
+      "rule_or_figure": "2026statutoryyield4percent",
+      "Guide_section": "Rates, bands and thresholds / The base",
+      "act_article_or_official_section": "SteG5",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "gensertrages (Sollertrag) beträgt 4 %.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-043",
+      "rule_or_figure": "Wealthcreditproportionatedeductionsthendomesticactualaveragerate",
+      "Guide_section": "The base / Individual foreign relief",
+      "act_article_or_official_section": "SteV18b(2)(d)-(e)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "Durchschnittsteuersatz angewendet.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-044",
+      "rule_or_figure": "Othernonbusinessincomeendyear/endliability;linked/proportionatedeductions;actualaverage",
+      "Guide_section": "The base / Individual foreign relief",
+      "act_article_or_official_section": "SteV18b(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "Einkünfte zu Ende des Steuerjahres bzw. zu Ende der Steuerpflicht.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-045",
+      "rule_or_figure": "Nonbusinesscreditapplicationonly;earliestafteryearend",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "SteV18c(1)-(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "Die Steueranrechnung wird nur auf Antrag gewährt.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-046",
+      "rule_or_figure": "Nonbusinesscredit3yearclaimexpiryafteryearend;attributedtorelevantincomeyear",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "SteV18c(3)-(4)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "innert drei Jahren nach Ablauf des Steuerjahres, in dem die Einkünfte fällig",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-047",
+      "rule_or_figure": "BusinesscreditDTAorreciprocityanddomestictaxpaidgate",
+      "Guide_section": "The base / Business credit",
+      "act_article_or_official_section": "SteV36a(1)-(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "sofern auf diese Erträge im Inland die Ertragssteuer entrichtet wurde.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-048",
+      "rule_or_figure": "Businesscredittotalannualforeign<=50excluded",
+      "Guide_section": "The base / Business credit",
+      "act_article_or_official_section": "SteV36a(3)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "von 50 Franken nicht übersteigt.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-049",
+      "rule_or_figure": "Businesscreditforeignreductionexhaustedanddomesticceiling",
+      "Guide_section": "The base / Business credit",
+      "act_article_or_official_section": "SteV36b(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "ländischen Staat sind sämtliche Möglichkeiten auszuschöpfen, um die aus",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-050",
+      "rule_or_figure": "Businessaveragerateexcludingexemptincome",
+      "Guide_section": "The base / Business credit",
+      "act_article_or_official_section": "SteV36b(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "des tatsächlichen inländischen Durchschnittssteuersatzes (ermittelt ohne",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-051",
+      "rule_or_figure": "Businessforeignincomeconnectedexpensesnettedbeforeceiling",
+      "Guide_section": "The base / Business credit",
+      "act_article_or_official_section": "SteV36b(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "Diese Erträge sind um die in einem wirtschaftlichen Zusammenhang ste",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-052",
+      "rule_or_figure": "Businessapplication3yearsafterincomeyearend;creditedforthatincomeyear",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "SteV36c",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "innert drei Jahren nach Ablauf des Steuerjahres, in dem die Erträge fällig",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-053",
+      "rule_or_figure": "Corporateexitarm-lengthdeemeddisposal/usewhentaxingrightexcluded/restricted",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteG51(1)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Vermögensgegenstand als zum Fremdvergleichspreis veräussert oder über",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-054",
+      "rule_or_figure": "SpecifiedforeignPE/departure/seatmoveinterestfreeexitdeferraluntilrealisationifsecured",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteG51(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "zur tatsächlichen Realisierung zu stunden, soweit die Durchsetzung des",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-055",
+      "rule_or_figure": "Exitdeferralannualproof;laterfalllimitedupliftandnoforeignduplication",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteG51(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "dass eine Verlustberücksichtigung im Ausland nicht erfolgt.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-056",
+      "rule_or_figure": "Ordinarycorporaterate12.5percentinretainedexitcase",
+      "Guide_section": "Rates, bands and thresholds / retained workpaper",
+      "act_article_or_official_section": "SteG61",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Die Ertragssteuer beträgt 12,5 % des steuerpflichtigen Reinertrags.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-057",
+      "rule_or_figure": "Treaty/reciprocityandspecifiedcorrespondingadjustments",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteG63",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Vermeidung einer Doppelbesteuerung",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-058",
+      "rule_or_figure": "Qualifyingforeignfinalassessmentreopening90daysforeignfinality/10yearsaftertaxyear",
+      "Guide_section": "Cross-border points",
+      "act_article_or_official_section": "SteG124a",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "90 Tage nach Rechtskraft der ausländischen Veranlagung, spätestens zehn",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-059",
+      "rule_or_figure": "Truthfulfilingdespiteabsencepersonalform/notice",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "SteG94",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "unabhängig von einer persönlichen Mitteilung oder der Zustellung eines",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-060",
+      "rule_or_figure": "Maturitynoticeandspecialevents;appealnotautomaticallypostpones",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "SteG113",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Die Steuer wird vorbehaltlich der nachfolgenden Bestimmungen mit",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-061",
+      "rule_or_figure": "Ordinarypayment30daysmaturity;departurebydepartureday",
+      "Guide_section": "Deadlines and filing",
+      "act_article_or_official_section": "SteG114(1)-(2)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "Bei Wegzug des Steuerpflichtigen ist die Steuer spätestens am Tag des",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-062",
+      "rule_or_figure": "Actualunfaulteddelayednoticeinterest30daysafterdelivery",
+      "Guide_section": "Penalties and interest",
+      "act_article_or_official_section": "SteG114(4)",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "so beginnt die Zinspflicht 30 Tage nach deren",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-063",
+      "rule_or_figure": "Ordinarylateinterest4percentnotexitdeferral",
+      "Guide_section": "Penalties and interest",
+      "act_article_or_official_section": "SteV45;SteG114/51",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010437000",
+      "exact_original_language_quote": "Der Verzugszins beträgt 4 %.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-transfer-pricing-evidence/sources/06.txt",
+      "source_text_sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-064",
+      "rule_or_figure": "Proceduralfine1000/seriousrepeat10000maxafterreminder,intent/negligence",
+      "Guide_section": "Penalties and interest",
+      "act_article_or_official_section": "SteG135",
+      "official_url": "https://www.gesetze.li/konso/pdf/2010340000",
+      "exact_original_language_quote": "in schweren Fällen oder im Wiederholungsfall bis zu 10 000 Franken.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/li-payroll-social-evidence/sources/05.txt",
+      "source_text_sha256": "1995ccadf99323bef02d738e79a2f8834ab5a71cae7c8a6aead4e0b27e61e447",
+      "quote_matches_source_after_layout_normalization": true,
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "LI-XB-W01",
+      "rule_or_figure": "Domesticlawbeforeactualtreaty;registration/passportnotconclusion",
+      "classification": "AUTHOR WORKFLOW OR EXPRESS LIMIT, not a new statutory rule",
+      "Guide_section": "Who this applies to / Ask the client first / Sources",
+      "independent_review": "PENDING WORKFLOW/SCOPE CHECK"
+    },
+    {
+      "id": "LI-XB-W02",
+      "rule_or_figure": "Retainactualsignedtreaty,protocols,applicationdates,person/tax/income/workdayfacts",
+      "classification": "AUTHOR WORKFLOW OR EXPRESS LIMIT, not a new statutory rule",
+      "Guide_section": "Who this applies to / Ask the client first / Sources",
+      "independent_review": "PENDING WORKFLOW/SCOPE CHECK"
+    },
+    {
+      "id": "LI-XB-W03",
+      "rule_or_figure": "Separatecalendarforeachclaim/demand/payment/deferralproof;nooneextensioncoversall",
+      "classification": "AUTHOR WORKFLOW OR EXPRESS LIMIT, not a new statutory rule",
+      "Guide_section": "Who this applies to / Ask the client first / Sources",
+      "independent_review": "PENDING WORKFLOW/SCOPE CHECK"
+    },
+    {
+      "id": "LI-XB-W04",
+      "rule_or_figure": "Average-rate,allocation,sourceclassificationandallnewcaseinputsareassumednotstatutoryrates",
+      "classification": "AUTHOR WORKFLOW OR EXPRESS LIMIT, not a new statutory rule",
+      "Guide_section": "Who this applies to / Ask the client first / Sources",
+      "independent_review": "PENDING WORKFLOW/SCOPE CHECK"
+    },
+    {
+      "id": "LI-XB-W05",
+      "rule_or_figure": "Specifictreaty/telework,mixedrounding/valuation,foreignsecurity/finalityandliveexecutionremainexplicitgaps",
+      "classification": "AUTHOR WORKFLOW OR EXPRESS LIMIT, not a new statutory rule",
+      "Guide_section": "Who this applies to / Ask the client first / Sources",
+      "independent_review": "PENDING WORKFLOW/SCOPE CHECK"
+    },
+    {
+      "id": "LI-XB-C01",
+      "rule_or_figure": "Liechtenstein assumed individual wealth income foreign credit base",
+      "classification": "ASSUMED CASE INPUTS/DERIVED ARITHMETIC; actual statutory formulas above",
+      "Guide_section": "Two worked examples that recompute",
+      "case_block_sha256": "1bd0fbdae67ee7fa696452d222bdd6d2bc3d1c746689432b8ee3be5105ae5591",
+      "independent_review": "PENDING INDEPENDENT RECOMPUTATION"
+    },
+    {
+      "id": "LI-XB-C02",
+      "rule_or_figure": "Liechtenstein assumed business foreign credit net base",
+      "classification": "ASSUMED CASE INPUTS/DERIVED ARITHMETIC; actual statutory formulas above",
+      "Guide_section": "Two worked examples that recompute",
+      "case_block_sha256": "cc8f7aede2317edfd8a4f579d9b41d22e51559f6304ffff9051c9eeda86c8d6d",
+      "independent_review": "PENDING INDEPENDENT RECOMPUTATION"
+    }
+  ],
+  "old_topic_destinations": [
+    {
+      "id": "OLD-001",
+      "old_text": "---\nname: li-cross-border\ndescription: >\n  Prepare 2026 Liechtenstein cross-border tax workpapers for individuals and\n  ordinary legal entities. Use for domicile, habitual abode, nonresident income,\n  actual management, permanent establishments, source withholding, treaty relief,\n  foreign-credit ceilings and corporate asset/departure tax. Establish domestic\n  liability first, then the actual treaty and procedure; neither a passport nor a\n  foreign address establishes exemption. The method distinguishes employee,\n  board, pension, business and corporate cases and preserves annual evidence.\n  It does not decide a particular treaty, telework insurance, all foreign relief,\n  GloBE, special entities or filing outcomes. A source-cited draft and passing\n  calculations are not named local accountant approval.\njurisdiction: LI\ncategory: cross-border\ntax_year: 2026\ntier: 2\nlast_updated: 2026-10-24\nversion: 0.3\n---",
+      "old_sha256": "4eb1a37bdbe77af35b8c0fb8029adf6bbe4e2ab0d6fa56c1486cee7424070557",
+      "exact_retained": false,
+      "destination": "Frontmatter retained; version0.3 to0.5 and last_updated to2026-10-30 only; protected identity/CTA checks pass."
+    },
+    {
+      "id": "OLD-002",
+      "old_text": "# Liechtenstein cross-border tax preparation v0.3",
+      "old_sha256": "81cbd4a1fdca37697ad8e019e635b8497e2258d9c0cf312ed35906d784140b86",
+      "exact_retained": false,
+      "destination": "Heading version advanced to v0.4 in step with frontmatter."
+    },
+    {
+      "id": "OLD-003",
+      "old_text": "Independent source/editorial review evidence and correction status are in the [dated whole-pack review record](../../../docs/research/2026-10-24-liechtenstein-pack-review.md). Apply its exact revision and scope limits. Named Liechtenstein accountant review remains open.",
+      "old_sha256": "8e7c827e86c5cc5b9c1043e1196153b994c25a6491ecc03df91b3f07ed5970df",
+      "exact_retained": false,
+      "destination": "Current introduction preserves the pinned24October source/editorial review and links the separate30October review/repair register; named local accountant review remains open."
+    },
+    {
+      "id": "OLD-004",
+      "old_text": "## Scope and order of work",
+      "old_sha256": "019e10ed984e44bfec3767050c17533c5f8754409af6b9eb0a9c996f1bc52243",
+      "exact_retained": false,
+      "destination": "Who this applies to; original scope and sequence retained."
+    },
+    {
+      "id": "OLD-005",
+      "old_text": "This 2026 source-cited draft prepares the domestic-law and relief workpaper. Determine person/entity, residence and source, the relevant income/asset, domestic tax, treaty allocation and then the actual filing/claim route. Do not start with a presumed zero withholding rate, 183-day exemption or EEA entitlement. The [Tax Act][law] and [Tax Ordinance][ordinance] sources below were read in their current 1 July 2026 consolidations; individual treaty/protocol and complete within-year amendment review remain open.",
+      "old_sha256": "88c4577424583322cd97a66d7f1b6534857b1371f99b35bd7a6ba254d8b7b56a",
+      "exact_retained": true,
+      "destination": "Current Guide line28"
+    },
+    {
+      "id": "OLD-006",
+      "old_text": "## Residence and PE screens",
+      "old_sha256": "632149801c0e8ed8bd54c6d05cba7dc6797fac1d6081d213131f3761e426280b",
+      "exact_retained": true,
+      "destination": "Current Guide line30"
+    },
+    {
+      "id": "OLD-007",
+      "old_text": "| Question | Domestic rule to investigate | Evidence |",
+      "old_sha256": "16f1f9163afaeb3a78883dce553f81d6aaaabd8942ed4432bbc9414feea28d70",
+      "exact_retained": true,
+      "destination": "Current Guide line32"
+    },
+    {
+      "id": "OLD-008",
+      "old_text": "|---|---|---|",
+      "old_sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+      "exact_retained": true,
+      "destination": "Current Guide line33"
+    },
+    {
+      "id": "OLD-009",
+      "old_text": "| Individual domicile | Article 2(1)(b): place of stay with intention of permanent remaining | Homes, occupancy, intention/conduct, family/work records; registration alone is insufficient |",
+      "old_sha256": "55d343b5fe5fc726f444b31a5a91fcf40cb4d2e00dc454ab2ec79a16c622fc9d",
+      "exact_retained": true,
+      "destination": "Current Guide line34"
+    },
+    {
+      "id": "OLD-010",
+      "old_text": "| Habitual abode | Article 2(1)(c): nontemporary stay; a connected stay **over six months** counts from its beginning, ignoring short interruptions | Complete stay chronology and purpose; the statute has separate school/institution and up-to-twelve-month cure/holiday exceptions |",
+      "old_sha256": "06cba7358d85fce18bd3cb8a78ccf12635d625cf764ab99380bf1689f67f93ed",
+      "exact_retained": true,
+      "destination": "Current Guide line35"
+    },
+    {
+      "id": "OLD-011",
+      "old_text": "| Individual liability dates | Articles 6–7: domicile/habitual-abode resident gate, domestic wealth/income for nonresidents, and actual start/end events | Arrival/departure, assets, source-income dates, and any dual-residence/treaty analysis |",
+      "old_sha256": "0c75116f9eb42e3f4712e20f06d3e8146d2c20390686305b825b7612f04c69b8",
+      "exact_retained": true,
+      "destination": "Current Guide line36"
+    },
+    {
+      "id": "OLD-012",
+      "old_text": "| Legal-entity residence | Article 44: domestic seat **or** actual management; article 2 defines management centre | Governing documents, substantive decision-making, people and management records |",
+      "old_sha256": "384088f2a2bf96008ae1d366c6d9851c3d0e3ea1e85781e1bdd1052dc1c258f6",
+      "exact_retained": true,
+      "destination": "Current Guide line37"
+    },
+    {
+      "id": "OLD-013",
+      "old_text": "| Domestic PE | Article 2(1)(a): fixed place and listed examples; construction/installation **exceeding six months**, plus dependent-agent and insurer provisions | Actual activity/site/project duration, authority, premises, staff, contracts and insurance premium facts |",
+      "old_sha256": "714a16e66efa6a478fc6c75313321955501d2b549420b9501f7f460779753032",
+      "exact_retained": true,
+      "destination": "Current Guide line38"
+    },
+    {
+      "id": "OLD-014",
+      "old_text": "These are domestic screens, not a treaty residence tie-breaker or treaty PE conclusion. A treaty can alter the taxing right. Do not turn “over six months” into a generic 183-day domestic test or make a PE solely from a tax/VAT registration. Preserve all potentially applicable states, treaty dates and actual activity facts. [SteG, articles 2, 6–7 and 44–46][law]",
+      "old_sha256": "0d00bda82a3744a2848c2c3a47aefd669575c1a0f71f6eeee83da9f37ebc751e",
+      "exact_retained": true,
+      "destination": "Current Guide line40"
+    },
+    {
+      "id": "OLD-015",
+      "old_text": "## Nonresident category before rate",
+      "old_sha256": "acddc48085270c36c2d8a3aa295fe446f1fea521479bba8796055a4aea709380",
+      "exact_retained": false,
+      "destination": "The base / Nonresident category before rate; original categories retained, ordinary methods added."
+    },
+    {
+      "id": "OLD-016",
+      "old_text": "Article 6(4)–(5) identifies domestic property/PE wealth and income categories, employment/replacement income, specified board functions, pension/freedom-of-movement benefits and deemed yield. Its employment-source provision also addresses certain treaty-assigned remote/international transport work. Do not assume all work physically abroad is automatically outside Liechtenstein source taxation. Treaty and actual workday facts must be resolved. [SteG, article 6][law]",
+      "old_sha256": "d257dda6adceedadbe5b611391284a928cefd49b616b38cf0fb4ff13d862e8e0",
+      "exact_retained": true,
+      "destination": "Current Guide line60"
+    },
+    {
+      "id": "OLD-017",
+      "old_text": "Article 23 separates:",
+      "old_sha256": "1770f70892498a8f7f386ebca735304860f51367a13876071f4502cb17b667c5",
+      "exact_retained": true,
+      "destination": "Current Guide line62"
+    },
+    {
+      "id": "OLD-018",
+      "old_text": "- Certain property/business/deemed-yield categories: simplified assessment at the statutory 4% plus the specified municipality surcharge, subject to the ordinary-assessment routes and linked deductions.\n- Specified wages/board/pension categories: source tax can discharge liability, subject to ordinary assessment.\n- Ordinary assessment triggers/applications: category-specific CHF 211,400 tests, the exclusive-treaty-taxing-right employment rule and the application route below the stated limit. Do not apply one gross threshold to all categories. Ordinary assessment also has global-rate/expense-allocation rules and different surcharge sources.",
+      "old_sha256": "1ce5807a9368c91fb7bbcdbe60b42919fc6f7b34b66391d59625a3b9d229987b",
+      "exact_retained": true,
+      "destination": "Current Guide line64"
+    },
+    {
+      "id": "OLD-019",
+      "old_text": "This Guide does not compute those specialised nonresident assessments or the annual Finance Act surcharge in article 23(5)(b). Refer the exact category to the current return/notice and treaty before calculating. [SteG, article 23][law]",
+      "old_sha256": "9389be19eed26a647f8a8046035e015cffda682c841a935200d3a4e6677d225c",
+      "exact_retained": false,
+      "destination": "The base now supplies the ordinary assessments and2026 article23(5)(b)150% surcharge from the enacted Finance Act. Actual municipality, specialised/mixed assessments and treaty facts remain unresolved."
+    },
+    {
+      "id": "OLD-020",
+      "old_text": "## Source withholding and treaty relief",
+      "old_sha256": "a3f3b7817b96365d70e53577ca8fe59365430072d36ca9dc557fe65e524c318f",
+      "exact_retained": true,
+      "destination": "Current Guide line128"
+    },
+    {
+      "id": "OLD-021",
+      "old_text": "Residents' wages also have withholding. Use [payroll](li-payroll-social.md) for the current ordinary wage schedule, not a final individual-tax rate. SteG article 25 separately provides 12% for its specified board/pension categories. Article 63a provides 12% on the specified nonresident **corporate** board-function income, with its own ordinary-assessment application. A blanket “no withholding” statement about investment distributions does not resolve a board, pension or employment payment. [SteG, articles 24–25 and 63a][law]",
+      "old_sha256": "8439b86c27b8f765ddc85d315eba0e952b4092a7fbe75d9fdedb28c42b0cd913",
+      "exact_retained": true,
+      "destination": "Current Guide line130"
+    },
+    {
+      "id": "OLD-022",
+      "old_text": "For an individual article-24 payment, article 26 provides authority confirmation on application where the treaty gives exclusive taxing rights abroad or caps the domestic rate. Excess treaty withholding has an application/refund route, with its **two-year period from the due date of the source-withholding amounts**. Collect the authority confirmation and use it within its actual conditions; do not substitute a private residence assertion. Payer liability/certification under article 27 remains separate. The [February 2026 wage-tax bulletin and January treaty annex][wage] are an administrative screen, not proof that a named employee meets commuter, workday, employer, cost-bearing or public-service conditions.",
+      "old_sha256": "3a9db7d9005eea5ab1eb419995fc88597878422b86565d63a5c4c8771a76b57d",
+      "exact_retained": true,
+      "destination": "Current Guide line132"
+    },
+    {
+      "id": "OLD-023",
+      "old_text": "For a concrete treaty, retain its signed text, protocols, entry into force/application dates, covered person/tax/income articles, residence, permanent establishment/employment conditions and the actual claim evidence. The [authority treaty collection][treaties] is the starting register; this draft has not independently applied every treaty or established a rate for an unnamed country.",
+      "old_sha256": "de4076c581584055055ba021cca16e1e88636c27ee1b8bc3df1e657b49716b49",
+      "exact_retained": true,
+      "destination": "Current Guide line134"
+    },
+    {
+      "id": "OLD-024",
+      "old_text": "## Foreign relief: exemption is different from a credit",
+      "old_sha256": "81f5d1ae713099ac1b44a4198ec854ab8a16e81f4f9b91ff09c7492948972fcc",
+      "exact_retained": false,
+      "destination": "The base / Foreign relief; individual and business credit methods kept distinct."
+    },
+    {
+      "id": "OLD-025",
+      "old_text": "SteG article 22 distinguishes treaty/reciprocity exemption (with the stated progression cross-reference) from credit relief against the domestic state/municipality tax attributable to the relevant wealth/income. It does not grant an unrestricted deduction of every foreign payment. [SteG, article 22][law]",
+      "old_sha256": "329d0a2a0d9c691eed402106957115923d4935e00ad0f6112d127d2a1c04cd47",
+      "exact_retained": true,
+      "destination": "Current Guide line77"
+    },
+    {
+      "id": "OLD-026",
+      "old_text": "For the nonbusiness individual credit route, SteV articles 18a–18c require the treaty/reciprocity and domestic-tax gates. They exclude expenditure-tax cases and cases where the total foreign taxes do not exceed CHF 50; self-employment uses separate articles 36a–36c. Article 18b requires exhausting source-state tax reduction opportunities and limits credit to domestic tax on the relevant income. For wealth income, build the limit from the affected assets, allocated debt, Sollertrag, allocated deductions and actual domestic average rate. Other income uses its net/allocated-deduction base and actual average rate. Do not use gross foreign cash receipts as the credit ceiling.",
+      "old_sha256": "108598bcd233b2a6f2fa565e1050c6683217fbc8dd48fccb043388c6f84eb87c",
+      "exact_retained": true,
+      "destination": "Current Guide line79"
+    },
+    {
+      "id": "OLD-027",
+      "old_text": "Credit is application-only, no earlier than the end of the relevant income year, with a three-year claim expiry after that year; it is applied to that income year. The worked excess below is an uncredited amount, not an established carryforward/refund right. Corporate relief and business-income credit need separate provisions. [SteV, articles 18a–18c][ordinance]",
+      "old_sha256": "65177316718df9005e6566133deaa7eeaa29267f491f0370160584ba058c713f",
+      "exact_retained": true,
+      "destination": "Current Guide line114"
+    },
+    {
+      "id": "OLD-028",
+      "old_text": "## Corporate exit and corresponding adjustments",
+      "old_sha256": "f2e338d6f39ca87c7a5aefad82bb83a329e9381af0d130f57d649a1f1034410e",
+      "exact_retained": true,
+      "destination": "Current Guide line136"
+    },
+    {
+      "id": "OLD-029",
+      "old_text": "SteG article 51 treats exclusion/restriction of domestic taxing rights over asset disposal/use as an arm's-length disposal/use event. The stated foreign-PE transfer/departure/seat-transfer deferral runs interest-free until actual realisation only with secured enforcement and annual proof. Subsequent value reductions have their own cap and no-foreign-duplication evidence. This is not an automatic tax-free move or a universal EU instalment election. Reconcile market/book values, deduction/loss interactions, retained domestic rights and the actual security/evidence before assessing tax or deferral. [SteG, article 51][law]",
+      "old_sha256": "0721454ccd265a9309a86b12b3c2a998079664ae7fe03a14b9b2524721b911cb",
+      "exact_retained": true,
+      "destination": "Current Guide line138"
+    },
+    {
+      "id": "OLD-030",
+      "old_text": "SteG article 63 separately addresses treaty/reciprocity relief and specified corresponding TP adjustments. For final assessments, article 124a's qualifying foreign-adjustment route has a 90-day period after foreign finality and an outer ten-year period after the relevant tax year. Establish the exact qualifying rule and dates; this is not a general reopening right for any foreign notice. Refer treaty disputes/MAP, valuations and contested claims. [SteG, articles 63 and 124a][law]",
+      "old_sha256": "65f5ffbfbaffe6450b3a367c3c5ff7b5c75128bc427ef9797cc1d23cde80338b",
+      "exact_retained": true,
+      "destination": "Current Guide line140"
+    },
+    {
+      "id": "OLD-031",
+      "old_text": "## Filing, payments and sanctions",
+      "old_sha256": "77d772c52c222990c8cf1b36077728519249f441ab85028dbb4cb42718327e88",
+      "exact_retained": false,
+      "destination": "Deadlines and filing plus Penalties and interest split the former combined heading."
+    },
+    {
+      "id": "OLD-032",
+      "old_text": "Maintain a separate calendar for the domestic return, source remittance, foreign-credit application, treaty-refund application, foreign finality and annual deferral evidence. The different periods above cannot be substituted for each other. SteG article 94 requires filing notwithstanding absence of a personal form; articles 113–114 govern maturity/payment and special departure events. A deferral must be established under its own rule, rather than inferred from a return extension. Article 135's procedural fine concerns its post-reminder intentional/negligent breach; do not estimate a penalty from its maximum. Current individual/foreign filing dates, treaty forms, complete sanctions and live execution remain open. [SteG, cited articles][law]",
+      "old_sha256": "fafce7bbb47a729b48ce382b4491c3e6dea7713c40d8884b8efbed8b045383f1",
+      "exact_retained": false,
+      "destination": "Deadlines and filing retains all separate calendars, no-personal-form duty and deferral distinctions; Penalties and interest retains article135 post-reminder scope and adds statutory interest. Actual treaty forms/current calendars/live execution remain open."
+    },
+    {
+      "id": "OLD-033",
+      "old_text": "## Worked controls",
+      "old_sha256": "c32b68aca8a7149fab23993db5a7401d48b7a0c840f767aad26caf0eb7b5b61c",
+      "exact_retained": false,
+      "destination": "Original3cases retained as narrative and exact executable annex;2new credit examples compute actual ceilings rather than assuming one."
+    },
+    {
+      "id": "OLD-034",
+      "old_text": "### Assumed eligible nonbusiness foreign-credit ceiling",
+      "old_sha256": "d4cb429509a13a4e98bc28905c0203b3f4939eadd3bd81c2439c5e90d6dec2fb",
+      "exact_retained": true,
+      "destination": "Current Guide line92"
+    },
+    {
+      "id": "OLD-035",
+      "old_text": "Assume a resident individual with all article 18a eligibility gates, no excluded/special category, exhausted source relief, CHF 1,600 qualifying foreign tax and a separately established CHF 1,200 domestic limit under article 18b. Credit is CHF 1,200. The CHF 400 excess is not treated as an automatic carryforward or refund.",
+      "old_sha256": "1208eb0f2686756a3e78e69e767a1ee11914a0ef585687fd67b4995efbf27128",
+      "exact_retained": true,
+      "destination": "Current Guide line94"
+    },
+    {
+      "id": "OLD-036",
+      "old_text": "```oa-check\nname: Liechtenstein assumed eligible foreign tax credit ceiling\ninputs:\n  established_qualifying_foreign_tax: 1600\n  established_domestic_credit_limit: 1200\nsteps:\n  available_credit: min(established_qualifying_foreign_tax, established_domestic_credit_limit)\n  uncredited_foreign_tax: established_qualifying_foreign_tax - available_credit\nexpected:\n  available_credit: 1200\n  uncredited_foreign_tax: 400\n```",
+      "old_sha256": "6884bf05455958f6c467c808a8e595f3591c4b2b35c276e4c5c65f535cdabcac",
+      "exact_retained": true,
+      "destination": "retained-original-controls.md exact; full substantive case remains under The base / Retained predecessor workpapers"
+    },
+    {
+      "id": "OLD-037",
+      "old_text": "### Specified nonresident individual board payment",
+      "old_sha256": "da59b5f7f151ef42eac2be80f04a32afbcc9fa4a6862828311b11b16e97f8bd7",
+      "exact_retained": true,
+      "destination": "Current Guide line98"
+    },
+    {
+      "id": "OLD-038",
+      "old_text": "Assume a CHF 10,000 gross payment within article 24(2)(b), no treaty reduction/authority exemption and no other issue. Article 25(3)'s 12% gives CHF 1,200 withheld and CHF 8,800 paid before any separately applicable deductions. An ordinary employment wage does not inherit this rate.",
+      "old_sha256": "2c48b59baa157cf1712be45c3bb2fb483394fa797f087c4e5deb0d48bfca7efa",
+      "exact_retained": true,
+      "destination": "Current Guide line100"
+    },
+    {
+      "id": "OLD-039",
+      "old_text": "```oa-check\nname: Liechtenstein assumed specified nonresident board withholding\ninputs:\n  established_gross_board_payment: 10000\n  established_statutory_rate: 0.12\nsteps:\n  source_tax: established_gross_board_payment * established_statutory_rate\n  cash_after_source_tax_only: established_gross_board_payment - source_tax\nexpected:\n  source_tax: 1200\n  cash_after_source_tax_only: 8800\n```",
+      "old_sha256": "1d100562a31a3b9a01f60a4390b3f01249e74201f7ef7bb08349da4f68b9d34a",
+      "exact_retained": true,
+      "destination": "retained-original-controls.md exact; full substantive case remains under The base / Retained predecessor workpapers"
+    },
+    {
+      "id": "OLD-040",
+      "old_text": "### Corporate asset exit workpaper",
+      "old_sha256": "6d6d9825c20c672b5e9a240fa3763ecfcc5f7c3277a48f0ad04ad88b7ecd95b4",
+      "exact_retained": true,
+      "destination": "Current Guide line104"
+    },
+    {
+      "id": "OLD-041",
+      "old_text": "Assume article 51 applies to one asset with CHF 100,000 established arm's-length value and CHF 60,000 tax carrying value. The assumed taxable uplift is CHF 40,000; at 12.5%, the isolated tax effect is CHF 5,000 before equity/loss/other interactions. Whether/when it is paid or deferred must be decided separately from the valuation arithmetic.",
+      "old_sha256": "818f7520a2328f593f02746390eb918f35cc60f6c886e7a369779c0e1ee64a46",
+      "exact_retained": true,
+      "destination": "Current Guide line106"
+    },
+    {
+      "id": "OLD-042",
+      "old_text": "```oa-check\nname: Liechtenstein assumed corporate asset exit uplift\ninputs:\n  established_arm_length_value: 100000\n  established_tax_carrying_value: 60000\n  ordinary_corporate_rate: 0.125\nsteps:\n  assumed_taxable_uplift: established_arm_length_value - established_tax_carrying_value\n  isolated_tax_before_other_rules: assumed_taxable_uplift * ordinary_corporate_rate\nexpected:\n  assumed_taxable_uplift: 40000\n  isolated_tax_before_other_rules: 5000\n```",
+      "old_sha256": "dab6c2162b12986ea5f554ba40c99b1f374e9e6d82f7badbdc934555d62eadb6",
+      "exact_retained": true,
+      "destination": "retained-original-controls.md exact; full substantive case remains under The base / Retained predecessor workpapers"
+    },
+    {
+      "id": "OLD-043",
+      "old_text": "## Ask and refer",
+      "old_sha256": "4722f4a1a85c1adec1399c9b3f1dc5d9d74e60d0c831f77bd4d2398381ad7e51",
+      "exact_retained": false,
+      "destination": "Ask the client first replaces heading only."
+    },
+    {
+      "id": "OLD-044",
+      "old_text": "Collect dated homes/stays, treaty residence, all workdays and employment/public-service facts, entity seat/management, project/PE records, source/asset and income categories, tax certificates, foreign reduction efforts and final notices. Obtain a separate legal conclusion for each treaty, remote-work/insurance coordination, unusual source category, business/wealth valuation, PVS/trust, exit deferral and corresponding-adjustment claim. Full cross-border coverage, treaty application, complete legal chain and named accountant review remain open.",
+      "old_sha256": "ae94ae56d760959ee88275889f1c4d829efe877dde84fb5b5d0efde99d76fec7",
+      "exact_retained": true,
+      "destination": "Current Guide line202"
+    },
+    {
+      "id": "OLD-045",
+      "old_text": "## Sources and scope",
+      "old_sha256": "e3f30faa2a74092d34112fb3d2002fb8b28294af9cdb91119247af4815a630c3",
+      "exact_retained": false,
+      "destination": "Sources replaces heading only."
+    },
+    {
+      "id": "OLD-046",
+      "old_text": "Read 24 October 2026:",
+      "old_sha256": "6d513a347d5ed72aae61494cee684de5b7ddc10fce3d7e6b3b097a3480dc5021",
+      "exact_retained": false,
+      "destination": "Sources distinguishes original24October reads from current30October statutory reads."
+    },
+    {
+      "id": "OLD-047",
+      "old_text": "- [SteG, 1 July 2026 consolidation][law], selected articles 2, 6–7, 22–29, 44–46, 51, 61, 63, 63a, 94, 113–114, 124a and 135.\n- [SteV, 1 July 2026 consolidation][ordinance], articles 18a–18c. Business credit articles 36a–36c are expressly not completed by this reading.\n- [Wage-tax bulletin, February 2026 and January treaty annex][wage], administrative screening only; no country-specific entitlement is inferred.\n- [Authority treaty collection][treaties], source register for case-specific follow-up, not an assertion that every linked treaty was read.",
+      "old_sha256": "9c8a3952f99327a925206a7a77844fe83d32e1783110260384dd3ad20d63eb1b",
+      "exact_retained": false,
+      "destination": "Sources retains all original URLs/read scope. SteV36a–36c were subsequently read30October and the precise individual-business domestic-tax mapping remains open; FinanceAct2026 source added."
+    },
+    {
+      "id": "OLD-048",
+      "old_text": "[law]: https://www.gesetze.li/konso/pdf/2010340000\n[ordinance]: https://www.gesetze.li/konso/pdf/2010437000\n[wage]: https://www.llv.li/servicekonto/steuerverwaltung/quellensteuer-lohnsteuer-unselbstaendige-taetigkeit-und-ersatzeinkuenfte-merkblatt.pdf\n[treaties]: https://www.llv.li/de/landesverwaltung/steuerverwaltung/steuerabkommen-dba",
+      "old_sha256": "258f46adc197b7b33a0c8d038fca0c7f290d0f7187dd92625687e40a94c14711",
+      "exact_retained": true,
+      "destination": "Current Guide line219"
+    },
+    {
+      "id": "OLD-049",
+      "old_text": "<!-- openaccountants-cta-block -->",
+      "old_sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "exact_retained": true,
+      "destination": "Current Guide line224"
+    },
+    {
+      "id": "OLD-050",
+      "old_text": "---",
+      "old_sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "exact_retained": true,
+      "destination": "Current Guide line1"
+    },
+    {
+      "id": "OLD-051",
+      "old_text": "## Talk to an accountant",
+      "old_sha256": "2c053967fa7ab3e0318ae212a61d5f13965c474e336848bbc77f5976214e2dd9",
+      "exact_retained": true,
+      "destination": "Current Guide line228"
+    },
+    {
+      "id": "OLD-052",
+      "old_text": "Find the current Guide and professional-review status at [OpenAccountants](https://www.openaccountants.com).",
+      "old_sha256": "24f7c27dd7f52c15f0a5a162ce9ed615250f525c513ffb87020f75112cb00ae0",
+      "exact_retained": true,
+      "destination": "Current Guide line230"
+    }
+  ],
+  "explicit_successor_map": {
+    "Nonresident category before rate": "The base retains every domestic category and adds actual simplified/mandatory/optional thresholds,worldwideallocation,31Decemberrequestand2026FinanceAct150%method;actualmunicipal/mixed/roundingcasesexplicit.",
+    "Foreign relief: exemption is different from a credit": "The base retains18a–18bmethod;18cclaimparagraph movedtoDeadlines and filing;new36a–36crouteaddedwithself-employmentdomesticmappinggapexplicit.",
+    "Worked controls": "All3predecessorblocks exactannex+currentprose;2newexecutablecases buildactualwealth/businesscreditlimits ratherthanassumeaceiling.",
+    "Filing, payments and sanctions": "Deadlines and filing preservescalendarduties/94/113–114;Penalties and interest preserves135,addsstatutory4%andexplicitinterestfreedeferral distinction.",
+    "Sources and scope": "Historical24Octoberwage/indexdatepreserved;currentstatutoryreads30October;newenactedFinanceAct2 source added,not2027proposal."
+  },
+  "quote_binding_failures": [],
+  "remaining": "Actual treaties,individualself-employment36adomesticmapping,special/mixed/rounding,liveforms/calendars,security/foreignlossandfinalityfacts;othercountryledgersandfreshindependentwholepackreview."
+}

@@ -1,0 +1,85 @@
+{
+  "findings": [
+    "MD-REVIEW-011",
+    "MD-REVIEW-012"
+  ],
+  "status": "Writer correction; independent delta recheck pending",
+  "base_commit": "448de95c7f2425d7d8a36e6bc4e61924a6ca1669",
+  "original_Guide_sha256": "4dbf8ce2f87391e789f7dd6d0a2978601d1838a6202b57dac9779886cd325a52",
+  "new_Guide_sha256": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
+  "new_source_rows": [
+    {
+      "id": "MD-CORP-556",
+      "rule_or_figure": "Nonmonetary VEN12row02010 valuation: preceding-month comparable average; where no such prior-month supplies, current-month cost is the statutory floor",
+      "Guide_section": "Deadlines and filing: Complete the actual VEN12 annexes; The base",
+      "act_article_or_official_section": "Fiscal Code art. 21(1)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "venitul obţinut sub formă nemonetară nu poate fi mai mic decât preţul de cost al mărfurilor livrate şi/sau al serviciilor prestate în luna curentă.",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-21.json",
+      "source_text_sha256": "5ecbca58b0a5e4becb4d9453092c121658cfa30ed3ae2da44586db776b410334",
+      "source_context": "(1) Venitul obţinut sub formă nemonetară se evaluează de către fiecare subiect al impunerii şi constituie valoarea medie a preţului de livrare a mărfurilor şi/sau de prestare a serviciilor analoage pe luna precedentă lunii în care a fost obţinut venit sub formă nemonetară. În cazul în care, pe luna precedentă lunii în care a fost obţinut venit sub formă nemonetară, nu au fost efectuate livrări de mărfuri şi/sau prestări de servicii, venitul obţinut sub formă nemonetară nu poate fi mai mic decât preţul de cost al mărfurilor livrate şi/sau al serviciilor prestate în luna curentă.",
+      "quote_matches_source_after_layout_normalization": true,
+      "writer_retained_context_recheck_date": "2026-10-31",
+      "source_date_note": "Original primary-source observation/read date retained; already-captured full paragraph re-read for this repair on31October. No newfetch or retroactive source-read claim.",
+      "independent_review": "PENDING focused011/012recheck and whole-country review"
+    },
+    {
+      "id": "MD-CORP-557",
+      "rule_or_figure": "VEN12row03031 waste/shrinkage: annual management norms subject to ministry limits for specified tobacco, ethyl-alcohol and petroleum products",
+      "Guide_section": "Deadlines and filing: Complete the actual VEN12 annexes; The base",
+      "act_article_or_official_section": "Fiscal Code art. 24(13)",
+      "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+      "exact_original_language_quote": "dar fără a depăși limitele stabilite de către Ministerul Sănătății pentru produsele din tutun",
+      "read_date": "2026-10-30",
+      "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-24.json",
+      "source_text_sha256": "9e3e5e60098ec37f768fbc2489f471d54bc559ad177a216986676f86be21df64",
+      "source_context": "(13) Deducerea reziduurilor, deșeurilor și perisabilității naturale se permite în limitele aprobate anual de către conducătorii întreprinderilor, dar fără a depăși limitele stabilite de către Ministerul Sănătății pentru produsele din tutun de la pozițiile tarifare 240210000, 240220, 240290000, 2403, 2404 și limitele stabilite de Ministerul Agriculturii și Industriei Alimentare pentru produsele din alcool etilic de la pozițiile tarifare 2207 și 2208, precum și limitele stabilite de Ministerul Infrastructurii și Dezvoltării Regionale pentru produsele petroliere.",
+      "quote_matches_source_after_layout_normalization": true,
+      "writer_retained_context_recheck_date": "2026-10-31",
+      "source_date_note": "Original primary-source observation/read date retained; already-captured full paragraph re-read for this repair on31October. No newfetch or retroactive source-read claim.",
+      "independent_review": "PENDING focused011/012recheck and whole-country review"
+    }
+  ],
+  "new_source_rows_count": 2,
+  "all_previous555corporate_rows_unchanged": true,
+  "Guide_changes": {
+    "original_03031_sentence": "For 03031 tax column 3 follows the annually approved management norms under article 24(13).",
+    "qualified_03031_sentence": "For 03031 tax column 3 follows the annually approved management norms under article 24(13). For tobacco headings 240210000, 240220, 240290000, 2403 and 2404, ethyl alcohol headings 2207 and 2208, and petroleum products, those norms cannot exceed the limits set by the Ministry of Health, Ministry of Agriculture and Food Industry, and Ministry of Infrastructure and Regional Development, respectively. The actual sector limits remain unconfirmed here; do not calculate a sector deduction from the management norm alone.",
+    "unchanged_correct_02010": "Existing no-prior-month cost-floor prose retained exactly; explicit corporate Code21(1)ledger evidence appended",
+    "explicit_gap_added": "Actual relevant ministry sector limits not supplied or claimed verified"
+  },
+  "source_files_unchanged_sha256": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-21.json": "339d16713f5087fe9ae1bf1c5d564176764470967c0f8a31816483bc1d392269",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-24.json": "0e8479ae923e65a4138142465880c8c45dd249b56fbcac1e33d432879f9448c0"
+  },
+  "source_observation_dates_preserved": true,
+  "no_fresh_fetch_claim": true,
+  "hash_bindings_refreshed": [
+    {
+      "path": "ledgers/md-country-evidence/ven12-full-controls.json",
+      "field": "Guide_hashes",
+      "before": "4dbf8ce2f87391e789f7dd6d0a2978601d1838a6202b57dac9779886cd325a52",
+      "after": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643"
+    },
+    {
+      "path": "ledgers/md-country-evidence/numeric-annex-controls.json",
+      "field": "Guide_hashes",
+      "before": "4dbf8ce2f87391e789f7dd6d0a2978601d1838a6202b57dac9779886cd325a52",
+      "after": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643"
+    },
+    {
+      "path": "ledgers/md-country-evidence/downloaded-return-controls.json",
+      "field": "Guide_hashes",
+      "before": "4dbf8ce2f87391e789f7dd6d0a2978601d1838a6202b57dac9779886cd325a52",
+      "after": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643"
+    },
+    {
+      "path": "ledgers/md-country-evidence/public-pr1008-predecessor-reconciliation.json",
+      "field": "current_Guide_sha256",
+      "before": "4dbf8ce2f87391e789f7dd6d0a2978601d1838a6202b57dac9779886cd325a52",
+      "after": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643"
+    }
+  ],
+  "examples": "No example changes; sector-loss arithmetic is not represented as supplied"
+}

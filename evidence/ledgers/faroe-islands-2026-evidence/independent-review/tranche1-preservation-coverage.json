@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "fo-corporate-income-tax",
+    "sha256": "40854c34389a05ec61ef362ff2a6558dd98690b7c04fac2aa0cdb7b18d8e6ac0",
+    "claim_rows": 72,
+    "old_oa_exact": 2,
+    "whole_inverse": true,
+    "uncovered_numeric_or_mandatory_units": [],
+    "old_mapping_blankunit_literal_misses": [],
+    "mapping_note": "Priorblankunitmissesweretableblocksegmentation;eachoriginaltablerowindependentlymatched,zerolosttopics."
+  },
+  {
+    "slug": "fo-transfer-pricing",
+    "sha256": "6484b8867bd960e480f7b73cb0dcb48933de87d708247269ed1d01967bfafcae",
+    "claim_rows": 29,
+    "old_oa_exact": 2,
+    "whole_inverse": true,
+    "uncovered_numeric_or_mandatory_units": [],
+    "old_mapping_blankunit_literal_misses": [],
+    "mapping_note": "Priorblankunitmissesweretableblocksegmentation;eachoriginaltablerowindependentlymatched,zerolosttopics."
+  },
+  {
+    "slug": "fo-country-by-country-reporting",
+    "sha256": "8681ec6ab52a515735ba82b222953afc5343f551a90c4f3f5bb612bdc25c7b8c",
+    "claim_rows": 22,
+    "old_oa_exact": 2,
+    "whole_inverse": true,
+    "uncovered_numeric_or_mandatory_units": [],
+    "old_mapping_blankunit_literal_misses": [],
+    "mapping_note": "Priorblankunitmissesweretableblocksegmentation;eachoriginaltablerowindependentlymatched,zerolosttopics."
+  }
+]

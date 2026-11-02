@@ -1,0 +1,4516 @@
+<!DOCTYPE html>
+<html  xml:lang="es-ES" lang="es-ES">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="WT.z_idioma" content='es' />
+
+<!-- CHATBOT ATC -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="theme-color" content="#000000">
+
+<!---->
+<title>Deducciones del tramo autonómico del IRPF. Agencia Tributaria de Cataluña</title>
+
+<meta name="theme-color" content="#000000" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/web/resources/fwkResponsive/seuelectronica/commonNou/img/favicon.ico" />
+<link href="/web/resources/fwkResponsive/seuelectronica/commonNou/css/lib/font-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/seuelectronica/commonNou/css/gencat.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/seuelectronica/commonNou/css/main.css" rel="stylesheet" type="text/css"/>
+
+<script src="/web/resources/fwkResponsive/seuelectronica/commonNou/js/lib/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/seuelectronica/commonNou/js/lib/fontawesome-markers.min.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/seuelectronica/commonNou/js/functions.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/seuelectronica/commonNou/js/moment.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsives/common/js/master.min.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsives/common/js/entorn_config.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsives/common/js/generic_responsive.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsives/common/js/master.responsive.js" type="text/javascript"></script>
+
+
+<link href="/web/resources/fwkResponsive/seuelectronica/fpca_peu_xarxesSocials_seu/css/fpca_peu_xarxesSocials_seu.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/seuelectronica/fpca_peu_promocional_seu/css/fpca_peu_promocional_seu.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/seuelectronica/fpca_peu_contacte_seu/css/fpca_peu_contacte_seu.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/seuelectronica/fpca_peu_ambFinancamentDe_seu/css/fpca_peu_ambFinancamentDe_seu.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/seuelectronica/fpca_article_nou/css/fpca_atc_article_nou.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/seuelectronica/fpca_peu_seuNou/css/fpca_peu_seuNou.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/fpca_capcalera_seuNou/css/fpca_capcalera_seuNou.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/seuelectronica/capcaleraNou/common/css/simplebar.css" rel="stylesheet" type="text/css"/>
+<link href="/web/resources/fwkResponsive/fpca_subcapcalera/css/fpca_subcapcalera.css" rel="stylesheet" type="text/css"/>
+<script src="/web/resources/fwkResponsive/seuelectronica/fpca_peu_xarxesSocials_seu/js/fpca_peu_xarxesSocials_seu.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/seuelectronica/fpca_peu_promocional_seu/js/fpca_peu_promocional_seu.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/seuelectronica/fpca_peu_contacte_seu/js/fpca_peu_contacte_seu.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/seuelectronica/fpca_peu_ambFinancamentDe_seu/js/fpca_peu_ambFinancamentDe_seu.js" type="text/javascript"></script>
+<script src="/web/resources/seuelectronica/fpca_article_nou/js/fpca_atc_article_nou.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/seuelectronica/fpca_peu_seuNou/js/fpca_peu_seuNou.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/js/fpca_capcalera.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/seuelectronica/capcaleraNou/common/js/simplebar.min.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/seuelectronica/capcaleraNou/common/js/autoComplete.min.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/seuelectronica/capcaleraNou/common/js/algoliasearch.min.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/seuelectronica/capcaleraNou/common/js/autoComplete.js" type="text/javascript"></script>
+<script src="/web/resources/fwkResponsive/fpca_subcapcalera/js/fpca_subcapcalera.js" type="text/javascript"></script>
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+<link href="/web/resources/fwkResponsives/common/css/print.css" rel="stylesheet" type="text/css"/><script type="text/javascript">
+(function(window, document, dataLayerName, id) {
+window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString();f="; SameSite=Strict"}document.cookie=a+"="+b+d+f+"; path=/"}
+var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+tags.async=!0,tags.src="https://gencat.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+!function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+})(window, document, 'dataLayer', 'eb50131d-1482-4c39-a0fa-835d5e4dacd6');
+</script>
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="BM5WD-23TA6-4USBP-SRKUP-9PUHQ",function(){function e(){if(!r){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.appendChild(e),r=!0}}function t(e){r=!0;var n,t,a,i,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",i=(a.frameElement||a).style,i.width=0,i.height=0,i.border=0,i.display="none",o.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void 0;",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=14,window.BOOMR.url=n+"BM5WD-23TA6-4USBP-SRKUP-9PUHQ";var i=document.currentScript||document.getElementsByTagName("script")[0],o=i.parentNode,r=!1,d=document.createElement("link");if(d.relList&&"function"==typeof d.relList.supports&&d.relList.supports("preload")&&"as"in d)window.BOOMR.snippetMethod="p",d.href=window.BOOMR.url,d.rel="preload",d.as="script",d.addEventListener("load",e),d.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!r)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.appendChild(d);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="2vq5x2yx3sn4k2xbht3q-f-aaa1c6324-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"41","ak.cp":"537041","ak.ai":parseInt("349618",10),"ak.ol":"0","ak.cr":14,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"31be392c","ak.r":47673,"ak.a2":n,"ak.m":"b","ak.n":"essl","ak.cport":15144,"ak.gh":"2.16.64.94","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1793146103","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==KSL65E5q9DDJvAJQ4U90dnpB0dIh4dDxcsldXqaNKJx6ujmL465BlUEs818kNHR5Y7i/iC/cDkljVdgZmmUny/no/zT4Zq1uSJ31hpfbPJ+5z1QEq5vwllBqyZx8hZpWTy4tS/MiI/Q1elnRDOa2nmw1UQP5qv0rJKl2YpchHGgDDYGRMVUKBU/iiI1ToV52YSbrBGfaIiugyRY6J61KiZKXkMFbYAY8Tmxh8d7aWxJDHxrNKrt8Be4+xCyMhWUi+wFh/FdzKVYf5JSFjnEKFTq/mTlo0ITHj3xuHNlfKqSmZ8Ft+zam0Pkzd7HHvva8QyGpsBYUMympTPqr9y/Y8twX2DI1W6wmdSrE/4Q7KxspfrT0hTjdxErQmQDwJQdAUKLPbksi0VqfGMqkul5JnEsZzD26RGmcvOB95yw8ckg=","ak.pv":"36","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+<body>
+
+	<script type="text/javascript">
+
+        
+        getBrowserName();
+        function getBrowserName() {
+            var name = "Unknown";
+            if(navigator.userAgent.indexOf("Android")!=-1){
+                name = "Android";
+            }
+            else if(navigator.userAgent.indexOf("Safari")!=-1){
+                name = "Safari";
+            }
+            return name;   
+        }
+        if( getBrowserName() == "Safari"&& navigator.userAgent.indexOf("5.1")!=-1 ){
+            var element = document.getElementsByTagName("body")[0];
+            element.classList.add("safari");
+            
+        }
+        if( getBrowserName() == "Android"&& navigator.userAgent.indexOf("4.0")!=-1 ){
+            var element = document.getElementsByTagName("body")[0];
+            element.classList.add("safari");
+            
+        }
+        
+    </script>
+	<header class="NG-header">
+			<!--googleoff: index -->
+<!--googleoff: snippet-->
+
+	<div  id="hTContainer" ><div class="fpca_capcalera_new">
+			<div class="NG-header__container NG-header__container--relative" >
+				<div class="NG-main">
+					<div class="NG-container">
+						<div class="NG-row-flex NG-row-flex--space-between">
+							<div class="NG-col NG--pd15 NG-row-flex--vertical-lg NG-row-flex-row-reverse">
+								<div class="NG-header__logo">
+									<a href="https://web.gencat.cat/"
+									   target="_blank"
+									>
+										<span class="sr-only">. Abrir en una nueva ventana.</span><img class="NG-header__image"
+											src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/gencat-nuevo-completo-w.svg"
+											alt="gencat.cat"
+										/>
+									</a>
+								</div>
+								<a class="NG-header__icon js-burguer-menu" role="button" tabindex="0">
+									<span class="sr-only">Menu</span>
+								</a>
+							</div>
+							<div class="NG-col NG--pd15">
+								<div class="NG-navbar__menu-desktop--wrapper hide-mobile">
+									<ul class="NG-navbar__menu NG-navbar__menu--invert js-NG-navbar__menu show-lg">
+										<li class="NG-navbar__list">
+																<a class="NG-navbar__link NG-navbar__link"
+																   href="/ca/atencio/contacte/"
+																   target="_self"
+																>
+																	<img class="NG-navbar__image"
+																		 src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/contacte-b.svg"
+																		 alt=""
+																	/>
+																	Contacto</a>
+															</li>
+														<li class="NG-navbar__list NG-navbar__list--vertical-sm">
+                                                            <a class="NG-navbar__link js-NG-menu-idioma" id="rotate_icon" role="button" aria-expanded="false"
+                                                               title="Selecciona idioma" tabindex="0"
+                                                            >
+                                                                <img class="NG-navbar__image"
+                                                                     src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/idioma-b.svg"
+                                                                     alt=""
+                                                                />
+                                                                <span class="NG-idioma">
+                                                                    Idioma:</span>
+                                                                <span class="NG-nom-idioma-letter">
+                                                                    <span class="js-NG-idioma-text notranslate">es</span>
+                                                                        <img class="NG-navbar__down"
+                                                                             src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/chevron-down-small-w.svg"
+                                                                             alt=""
+                                                                        />
+                                                                </span>
+                                                                <img class="NG-rotate-image NG-navbar__image NG-navbar__image--float-right"
+                                                                     src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/chevron-down-thin-b.svg"
+                                                                     alt=""
+                                                                />
+                                                            </a>
+
+                                                                <ul class="NG-navbar__list-language idioma" aria-label="Idioma de la página.
+">
+                                                                <li class='NG-block__content'><a title="Català" data-idioma="Català" lang="ca" role="button" tabindex="0" class="js-NG-idioma-item js-NG-idioma-tooltip NG-block__content_label notranslate enllacIdioma" href="/ca/tributs/irpf/deduccions-tram-irpf/index.html">Català</a></li></ul>
+
+                                                        </li>
+                                                    </ul>
+								</div>
+
+								<a class="NG-header__icon2 js-search-menu" aria-controls="NG-search"
+									   role="button" aria-expanded="false" tabindex="0"
+									>
+										<span class="sr-only">Buscador</span>
+									</a>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="NG-header-logo">
+                    <div class="NG-container">
+                       <div class="NG-header-logo-wrapper">
+                           <span class="NG-header-logo-wrapper-image"><a href="https://atc.gencat.cat/"><img src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/atc-color.svg" alt="Icono de Agència Tributària de Catalunya"></a><h1>Sede electrónica</h1></span>
+                       </div>
+                   </div>
+               </div>
+				<div class="NG-header__wrapper">
+					<div class="NG-search" id="NG-search">
+							<div class="NG-search__wrapper">
+								<input type="hidden" id="searchPage" name="searchPage" value="/es/cercador/index.html">
+								<input type="hidden" id="localeSearch" name="localeSearch" value="es">
+								<input type="hidden" id="asSiteSearch" name="asSiteSearch" value="atc.gencat.cat">
+
+								<h2 class="NG-search__title">Qué buscas?</h2>
+								<form id="fpca_capcalera_cercador"
+									  action="/es/cercador/index.html" method="get">
+									<div class="NG-inputSearch NG-inputSearch--wrapper">
+										<input class="NG-inputSearch__input" id="autoCompleteCapcalera" type="text" name="q"
+											   title="Buscar" autocomplete="off"
+											   placeholder="Puedes buscar impuestos, tributos, gestiones..." />
+										<input type="hidden" name="lr" value="lang_es"/>
+										<button class="NG-inputSearch__button" type="submit">
+											<img class="NG-inputSearch__button-image"
+												 src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/search-w.svg"
+												 alt="Buscar"
+												 width="24px" height="24px"
+											/>
+										</button>
+
+										<input type="hidden" value="atc.gencat.cat" name="as_sitesearch">
+											<input type="hidden" value="col.lecció" name="site">
+											<input type="hidden" value="htm" name="as_filetype">
+											</div>
+								</form>
+
+								<div class="NG-buttons--wrapper">
+									<div class="NG-buttonsSearch">
+												<a class="NG-buttonsSearch__Title" role="button"
+												   target="_self"
+												   title="Nuestros tributos"
+												   href="/es/tributs/nostres-tributs/"
+												>
+													Nuestros tributos</a>
+											</div>
+										<div class="NG-buttonsSearch">
+												<a class="NG-buttonsSearch__Title" role="button"
+												   target="_self"
+												   title=" Catálogo de gestiones"
+												   href="/es/gestions/cataleg-gestions/"
+												>
+													 Catálogo de gestiones</a>
+											</div>
+										<div class="NG-buttonsSearch">
+												<a class="NG-buttonsSearch__Title" role="button"
+												   target="_self"
+												   title=" Pago de deudas"
+												   href="/es/gestions/pagament-liquidacions/"
+												>
+													 Pago de deudas</a>
+											</div>
+										<div class="NG-buttonsSearch">
+												<a class="NG-buttonsSearch__Title" role="button"
+												   target="_self"
+												   title=" Impuesto sobre las emisiones de CO2 de los vehículos de tracción mecánica"
+												   href="/es/tributs/impost-emissions-vehicles/"
+												>
+													 Impuesto sobre las emisiones de CO2 de los vehículos de tracción mecánica</a>
+											</div>
+										<div class="NG-buttonsSearch">
+												<a class="NG-buttonsSearch__Title" role="button"
+												   target="_blank"
+												   title="Encuesta de satisfacción de la sede electrónica de la Agencia Tributaria de Cataluña ¡Participa! "
+												   href="https://likeik.eu/SV5W3"
+												>
+													Encuesta de satisfacción de la sede electrónica de la Agencia Tributaria de Cataluña ¡Participa! <span class="sr-only">. Abrir en una nueva ventana.</span></a>
+											</div>
+										</div>
+							</div>
+						</div>
+					<nav class="NG-navbar">
+						<div class="NG-container">
+							<div class="NG-row-flex NG-row-flex--vertical-md">
+								<ul class="NG-navbar__menu js-navbar__menu">
+									<li class="NG-navbar__list NG-navbar__list--white"><a class="NG-navbar__link NG-navbar__link--noborder"
+										target="_self"
+										title="Menú&nbsp;Inicio"
+										href="/es/inici/">
+										Inicio</a>
+								</li>
+					<li class="NG-navbar__list NG-navbar__list--white js-has-megamenu"><button class="NG-navbar__link NG-navbar__link--noborder"
+										title="Menú&nbsp;La Agencia" role="button" aria-expanded="false" tabindex="0">
+										La Agencia</button>
+								<div class="NG-megamenu">
+									<div class="NG-megamenu__nav-self--wrapper-mobile">
+										<div class="NG-megamenu__nav-self--top">
+											<button
+												class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+												role="button" >
+												<span class="sr-only">Vuelve al nivel anterior</span> <span
+													class="NG-megamenu__nav-link-back-trapezium"></span>
+											</button>
+											<a class="NG-megamenu__nav-link-self"
+												href="/es/agencia/"
+												target="_self"
+												title="Menú&nbsp;La Agencia"> <span>Accede a “</span>La Agencia<span>”</span> <img
+												src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+												alt=""> </a>
+										</div>
+									</div>
+
+									<div
+										class="NG-row-flex NG-row-flex--full-height js-NG-megamenu-wrapper">
+										<div class="NG-col">
+											<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+												data-level="1">
+
+												<ul class="NG-megamenu__nav">
+														<li class="NG-megamenu__nav-item "><button class="NG-megamenu__nav-submenu js-NG-megamenu__nav-submenu" role="button" aria-expanded="false" tabindex="0"
+																			title="Quiénes somos y qué hacemos">
+																			Quiénes somos y qué hacemos</button>
+																	<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+																		data-level="2">
+																		<div class="NG-megamenu__nav-self--top">
+																			<p class="NG-megamenu__nav-self-wrapper">
+																				<button
+																					class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+																					role="button" tabindex="0">
+																					<span class="sr-only">Vuelve al nivel anterior</span> <span
+																						class="NG-megamenu__nav-link-back-trapezium"></span>
+																				</button>
+																				<a class="NG-megamenu__nav-link-self"
+																					target="_self"
+																					title="Quiénes somos y qué hacemos"
+																					href="/es/agencia/qui-som/">
+																					<span>Accede a “</span>Quiénes somos y qué hacemos<span>”</span>
+																				</a>
+																			</p>
+																		</div>
+
+																		<ul class="NG-megamenu__nav">
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Organigrama" href="/es/agencia/qui-som/organigrama/">
+																								Organigrama</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Procedimientos tributarios" href="/es/agencia/qui-som/procediments/">
+																								Procedimientos tributarios</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="La ATC en cifras" href="/es/agencia/qui-som/atc-en-xifres/">
+																								La ATC en cifras</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Memorias de actividad" href="/es/agencia/qui-som/memories/">
+																								Memorias de actividad</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Carta de servicios" href="/es/atencio/carta-serveis/">
+																								Carta de servicios<span class="sr-only">. Abrir en una nueva ventana.</span></a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Encuestas" href="/es/agencia/qui-som/enquestes/">
+																								Encuestas</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Tributs de Catalunya" href="/es/agencia/qui-som/tdc/">
+																								Tributs de Catalunya</a>
+																						</li>
+																			<li>
+																				<p class="NG-megamenu__nav-self">
+																					<a class="NG-megamenu__nav-link-self"
+																						target="_self"
+																						title="Quiénes somos y qué hacemos"
+																						href="/es/agencia/qui-som/">
+																						<span>Accede a “</span>Quiénes somos y qué hacemos<span>”</span> <img
+																						src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																						alt=""> </a>
+																				</p>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+														<li class="NG-megamenu__nav-item "><button class="NG-megamenu__nav-submenu js-NG-megamenu__nav-submenu" role="button" aria-expanded="false" tabindex="0"
+																			title="Normativa y criterios">
+																			Normativa y criterios</button>
+																	<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+																		data-level="2">
+																		<div class="NG-megamenu__nav-self--top">
+																			<p class="NG-megamenu__nav-self-wrapper">
+																				<button
+																					class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+																					role="button" tabindex="0">
+																					<span class="sr-only">Vuelve al nivel anterior</span> <span
+																						class="NG-megamenu__nav-link-back-trapezium"></span>
+																				</button>
+																				<a class="NG-megamenu__nav-link-self"
+																					target="_self"
+																					title="Normativa y criterios"
+																					href="/es/agencia/normativa-i-criteris/">
+																					<span>Accede a “</span>Normativa y criterios<span>”</span>
+																				</a>
+																			</p>
+																		</div>
+
+																		<ul class="NG-megamenu__nav">
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Normativa tributaria y criterios (DG de Tributos y Juego)" href="/es/agencia/normativa-i-criteris/normativa-dgtributs/">
+																								Normativa tributaria y criterios (DG de Tributos y Juego)</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Valoraciones inmobiliarias" href="/es/agencia/normativa-i-criteris/valoracions-immobiliaries/">
+																								Valoraciones inmobiliarias</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Valores para la transmisión de vehículos" href="/es/agencia/normativa-i-criteris/valoracions-vehicles/">
+																								Valores para la transmisión de vehículos</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Resoluciones, instrucciones y criterios de la Agencia" href="/es/agencia/normativa-i-criteris/resolucions-instruccions-atc/">
+																								Resoluciones, instrucciones y criterios de la Agencia</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Normativa institucional" href="/es/agencia/normativa-i-criteris/normativa-institucional/">
+																								Normativa institucional</a>
+																						</li>
+																			<li>
+																				<p class="NG-megamenu__nav-self">
+																					<a class="NG-megamenu__nav-link-self"
+																						target="_self"
+																						title="Normativa y criterios"
+																						href="/es/agencia/normativa-i-criteris/">
+																						<span>Accede a “</span>Normativa y criterios<span>”</span> <img
+																						src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																						alt=""> </a>
+																				</p>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+														<li class="NG-megamenu__nav-item "><button class="NG-megamenu__nav-submenu js-NG-megamenu__nav-submenu" role="button" aria-expanded="false" tabindex="0"
+																			title="Convenios y acuerdos de colaboración">
+																			Convenios y acuerdos de colaboración</button>
+																	<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+																		data-level="2">
+																		<div class="NG-megamenu__nav-self--top">
+																			<p class="NG-megamenu__nav-self-wrapper">
+																				<button
+																					class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+																					role="button" tabindex="0">
+																					<span class="sr-only">Vuelve al nivel anterior</span> <span
+																						class="NG-megamenu__nav-link-back-trapezium"></span>
+																				</button>
+																				<a class="NG-megamenu__nav-link-self"
+																					target="_self"
+																					title="Convenios y acuerdos de colaboración"
+																					href="/es/agencia/convenis/">
+																					<span>Accede a “</span>Convenios y acuerdos de colaboración<span>”</span>
+																				</a>
+																			</p>
+																		</div>
+
+																		<ul class="NG-megamenu__nav">
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Acuerdos de colaboración social para la actuación en nombre de terceras personas" href="/es/agencia/convenis/acords-actuacio/">
+																								Acuerdos de colaboración social para la actuación en nombre de terceras personas</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Convenios con organismos y departamentos de la Generalitat de Catalunya" href="/es/agencia/convenis/convenis-gc/">
+																								Convenios con organismos y departamentos de la Generalitat de Catalunya</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Convenios con ayuntamientos, consejos comarcales y diputaciones" href="/es/agencia/convenis/admlocal/">
+																								Convenios con ayuntamientos, consejos comarcales y diputaciones</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Convenios con la Administración estatal" href="/es/agencia/convenis/convenis-ae/">
+																								Convenios con la Administración estatal</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Convenios con consorcios" href="/es/agencia/convenis/convenis-consorcis/">
+																								Convenios con consorcios</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Otros convenios y colaboraciones" href="/es/agencia/convenis/convenis-altres/">
+																								Otros convenios y colaboraciones</a>
+																						</li>
+																			<li>
+																				<p class="NG-megamenu__nav-self">
+																					<a class="NG-megamenu__nav-link-self"
+																						target="_self"
+																						title="Convenios y acuerdos de colaboración"
+																						href="/es/agencia/convenis/">
+																						<span>Accede a “</span>Convenios y acuerdos de colaboración<span>”</span> <img
+																						src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																						alt=""> </a>
+																				</p>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+														<li class="NG-megamenu__nav-item "><button class="NG-megamenu__nav-submenu js-NG-megamenu__nav-submenu" role="button" aria-expanded="false" tabindex="0"
+																			title="Transparencia">
+																			Transparencia</button>
+																	<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+																		data-level="2">
+																		<div class="NG-megamenu__nav-self--top">
+																			<p class="NG-megamenu__nav-self-wrapper">
+																				<button
+																					class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+																					role="button" tabindex="0">
+																					<span class="sr-only">Vuelve al nivel anterior</span> <span
+																						class="NG-megamenu__nav-link-back-trapezium"></span>
+																				</button>
+																				<a class="NG-megamenu__nav-link-self"
+																					target="_self"
+																					title="Transparencia"
+																					href="/es/agencia/transparencia/">
+																					<span>Accede a “</span>Transparencia<span>”</span>
+																				</a>
+																			</p>
+																		</div>
+
+																		<ul class="NG-megamenu__nav">
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Transparencia y buen gobierno" href="/es/agencia/transparencia/transparencia-bon-govern/">
+																								Transparencia y buen gobierno</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Perfil de contratante" href="/es/agencia/transparencia/contractacio/">
+																								Perfil de contratante</a>
+																						</li>
+																			<li>
+																				<p class="NG-megamenu__nav-self">
+																					<a class="NG-megamenu__nav-link-self"
+																						target="_self"
+																						title="Transparencia"
+																						href="/es/agencia/transparencia/">
+																						<span>Accede a “</span>Transparencia<span>”</span> <img
+																						src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																						alt=""> </a>
+																				</p>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+														<li class="NG-megamenu__nav-item "><button class="NG-megamenu__nav-submenu js-NG-megamenu__nav-submenu" role="button" aria-expanded="false" tabindex="0"
+																			title="Protección de datos">
+																			Protección de datos</button>
+																	<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+																		data-level="2">
+																		<div class="NG-megamenu__nav-self--top">
+																			<p class="NG-megamenu__nav-self-wrapper">
+																				<button
+																					class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+																					role="button" tabindex="0">
+																					<span class="sr-only">Vuelve al nivel anterior</span> <span
+																						class="NG-megamenu__nav-link-back-trapezium"></span>
+																				</button>
+																				<a class="NG-megamenu__nav-link-self"
+																					target="_self"
+																					title="Protección de datos"
+																					href="/es/agencia/proteccio-dades/">
+																					<span>Accede a “</span>Protección de datos<span>”</span>
+																				</a>
+																			</p>
+																		</div>
+
+																		<ul class="NG-megamenu__nav">
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Actividad de tratamiento de datos con finalidades tributarias" href="/es/agencia/proteccio-dades/finalitats-tributaries/">
+																								Actividad de tratamiento de datos con finalidades tributarias</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Actividad de tratamiento de datos de recursos humanos" href="/es/agencia/proteccio-dades/recursos-humans/">
+																								Actividad de tratamiento de datos de recursos humanos</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Actividad de tratamiento de datos de colaboradores externos " href="/es/agencia/proteccio-dades/externs/">
+																								Actividad de tratamiento de datos de colaboradores externos </a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Actividad de tratamiento de datos de videovigilancia" href="/es/agencia/proteccio-dades/videovigilancia/">
+																								Actividad de tratamiento de datos de videovigilancia</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Actividad de tratamiento de datos del registro de entrada/salida" href="/es/agencia/proteccio-dades/registre/">
+																								Actividad de tratamiento de datos del registro de entrada/salida</a>
+																						</li>
+																			<li>
+																				<p class="NG-megamenu__nav-self">
+																					<a class="NG-megamenu__nav-link-self"
+																						target="_self"
+																						title="Protección de datos"
+																						href="/es/agencia/proteccio-dades/">
+																						<span>Accede a “</span>Protección de datos<span>”</span> <img
+																						src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																						alt=""> </a>
+																				</p>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+														<li class="NG-megamenu__nav-item "><button class="NG-megamenu__nav-submenu js-NG-megamenu__nav-submenu" role="button" aria-expanded="false" tabindex="0"
+																			title="Trabaja con nosotros">
+																			Trabaja con nosotros</button>
+																	<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+																		data-level="2">
+																		<div class="NG-megamenu__nav-self--top">
+																			<p class="NG-megamenu__nav-self-wrapper">
+																				<button
+																					class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+																					role="button" tabindex="0">
+																					<span class="sr-only">Vuelve al nivel anterior</span> <span
+																						class="NG-megamenu__nav-link-back-trapezium"></span>
+																				</button>
+																				<a class="NG-megamenu__nav-link-self"
+																					target="_self"
+																					title="Trabaja con nosotros"
+																					href="/es/agencia/convoc/">
+																					<span>Accede a “</span>Trabaja con nosotros<span>”</span>
+																				</a>
+																			</p>
+																		</div>
+
+																		<ul class="NG-megamenu__nav">
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Procesos selectivos de cuerpos tributarios" href="/es/agencia/convoc/cossostributaris/">
+																								Procesos selectivos de cuerpos tributarios</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Proceso selectivo de personal laboral fijo (convocatoria ATC07)" href="/es/agencia/convoc/clab/">
+																								Proceso selectivo de personal laboral fijo (convocatoria ATC07)</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Concursos generales de méritos y capacidades" href="/es/agencia/convoc/concurs-general/">
+																								Concursos generales de méritos y capacidades</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Ofertas de trabajo temporal" href="/es/agencia/convoc/ofertes/">
+																								Ofertas de trabajo temporal</a>
+																						</li>
+																			<li>
+																				<p class="NG-megamenu__nav-self">
+																					<a class="NG-megamenu__nav-link-self"
+																						target="_self"
+																						title="Trabaja con nosotros"
+																						href="/es/agencia/convoc/">
+																						<span>Accede a “</span>Trabaja con nosotros<span>”</span> <img
+																						src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																						alt=""> </a>
+																				</p>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+														<li class="NG-megamenu__nav-item "><button class="NG-megamenu__nav-submenu js-NG-megamenu__nav-submenu" role="button" aria-expanded="false" tabindex="0"
+																			title="Comunicaciones informativas para intermediarios tributarios">
+																			Comunicaciones informativas para intermediarios tributarios</button>
+																	<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+																		data-level="2">
+																		<div class="NG-megamenu__nav-self--top">
+																			<p class="NG-megamenu__nav-self-wrapper">
+																				<button
+																					class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+																					role="button" tabindex="0">
+																					<span class="sr-only">Vuelve al nivel anterior</span> <span
+																						class="NG-megamenu__nav-link-back-trapezium"></span>
+																				</button>
+																				<a class="NG-megamenu__nav-link-self"
+																					target="_self"
+																					title="Comunicaciones informativas para intermediarios tributarios"
+																					href="/es/agencia/intermediacio/">
+																					<span>Accede a “</span>Comunicaciones informativas para intermediarios tributarios<span>”</span>
+																				</a>
+																			</p>
+																		</div>
+
+																		<ul class="NG-megamenu__nav">
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_blank"
+																								title="Subscripción a comunicaciones informativas para intermediarios tributarios" href="https://seu.atc.gencat.cat/es/OficinaVirtual/Paginas/Newsletter.aspx">
+																								Subscripción a comunicaciones informativas para intermediarios tributarios<span class="sr-only">. Abrir en una nueva ventana.</span></a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Boletín ATC Connect@" href="/es/agencia/intermediacio/butlleti/">
+																								Boletín ATC Connect@</a>
+																						</li>
+																			<li>
+																				<p class="NG-megamenu__nav-self">
+																					<a class="NG-megamenu__nav-link-self"
+																						target="_self"
+																						title="Comunicaciones informativas para intermediarios tributarios"
+																						href="/es/agencia/intermediacio/">
+																						<span>Accede a “</span>Comunicaciones informativas para intermediarios tributarios<span>”</span> <img
+																						src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																						alt=""> </a>
+																				</p>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+														<li class="NG-megamenu__nav-item "><button class="NG-megamenu__nav-submenu js-NG-megamenu__nav-submenu" role="button" aria-expanded="false" tabindex="0"
+																			title="Noticias">
+																			Noticias</button>
+																	<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+																		data-level="2">
+																		<div class="NG-megamenu__nav-self--top">
+																			<p class="NG-megamenu__nav-self-wrapper">
+																				<button
+																					class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+																					role="button" tabindex="0">
+																					<span class="sr-only">Vuelve al nivel anterior</span> <span
+																						class="NG-megamenu__nav-link-back-trapezium"></span>
+																				</button>
+																				<a class="NG-megamenu__nav-link-self"
+																					target="_self"
+																					title="Noticias"
+																					href="/es/agencia/noticies/">
+																					<span>Accede a “</span>Noticias<span>”</span>
+																				</a>
+																			</p>
+																		</div>
+
+																		<ul class="NG-megamenu__nav">
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Actualidad" href="/es/agencia/noticies/actualitat-recent/">
+																								Actualidad</a>
+																						</li>
+																			<li>
+																				<p class="NG-megamenu__nav-self">
+																					<a class="NG-megamenu__nav-link-self"
+																						target="_self"
+																						title="Noticias"
+																						href="/es/agencia/noticies/">
+																						<span>Accede a “</span>Noticias<span>”</span> <img
+																						src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																						alt=""> </a>
+																				</p>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+														<li class="NG-megamenu__nav-item "><button class="NG-megamenu__nav-submenu js-NG-megamenu__nav-submenu" role="button" aria-expanded="false" tabindex="0"
+																			title="Prevención y reducción del fraude fiscal">
+																			Prevención y reducción del fraude fiscal</button>
+																	<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+																		data-level="2">
+																		<div class="NG-megamenu__nav-self--top">
+																			<p class="NG-megamenu__nav-self-wrapper">
+																				<button
+																					class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+																					role="button" tabindex="0">
+																					<span class="sr-only">Vuelve al nivel anterior</span> <span
+																						class="NG-megamenu__nav-link-back-trapezium"></span>
+																				</button>
+																				<a class="NG-megamenu__nav-link-self"
+																					target="_self"
+																					title="Prevención y reducción del fraude fiscal"
+																					href="/es/agencia/frau-fiscal/">
+																					<span>Accede a “</span>Prevención y reducción del fraude fiscal<span>”</span>
+																				</a>
+																			</p>
+																		</div>
+
+																		<ul class="NG-megamenu__nav">
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Plan de prevención y reducción del fraude fiscal y de fomento de las buenas prácticas tributarias" href="/es/agencia/frau-fiscal/pla-prevencio-frau-fiscal/">
+																								Plan de prevención y reducción del fraude fiscal y de fomento de las buenas prácticas tributarias</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Buzón de sugerencias en materia de fraude fiscal" href="/es/agencia/frau-fiscal/bustia-suggeriments-frau/">
+																								Buzón de sugerencias en materia de fraude fiscal</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Lista de deudores tributarios" href="/es/agencia/frau-fiscal/llista-deutors/">
+																								Lista de deudores tributarios</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Repositorio de conductas abusivas" href="/es/agencia/frau-fiscal/repositori-abusives/">
+																								Repositorio de conductas abusivas</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Buzón de denuncias tributarias" href="/es/agencia/frau-fiscal/denuncies-tributaries/">
+																								Buzón de denuncias tributarias</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Pedagogía tributaria" href="/es/agencia/frau-fiscal/pedagogia-tributaria/">
+																								Pedagogía tributaria</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Premio de Innovación y Fomento de Buenas Prácticas Tributarias" href="/es/agencia/frau-fiscal/premis/">
+																								Premio de Innovación y Fomento de Buenas Prácticas Tributarias</a>
+																						</li>
+																			<li class="NG-megamenu__nav-item ">
+																					<a class=""
+																								target="_self"
+																								title="Estudio de la brecha fiscal (&#034;tax gap&#034;)" href="/es/agencia/frau-fiscal/estudi-bretxa-fiscal/">
+																								Estudio de la brecha fiscal (&#034;tax gap&#034;)</a>
+																						</li>
+																			<li>
+																				<p class="NG-megamenu__nav-self">
+																					<a class="NG-megamenu__nav-link-self"
+																						target="_self"
+																						title="Prevención y reducción del fraude fiscal"
+																						href="/es/agencia/frau-fiscal/">
+																						<span>Accede a “</span>Prevención y reducción del fraude fiscal<span>”</span> <img
+																						src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																						alt=""> </a>
+																				</p>
+																			</li>
+																		</ul>
+																	</div>
+																</li>
+														<li>
+															<p class="NG-megamenu__nav-self">
+																<a class="NG-megamenu__nav-link-self"
+																	href="/es/agencia/"
+																	target="_self"
+																	title="Menú&nbsp;La Agencia">
+																	<span>Accede a “</span>La Agencia<span>”</span> <img
+																	src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																	alt="" /> </a>
+															</p>
+														</li>
+													</ul>
+												</div>
+										</div>
+
+
+										<div
+											class="NG-col NG-col--fullwidth NG-row-flex NG-show-lg js-NG-hide-description">
+
+											<div class="NG-col NG--flex45">
+													<div class="NG-megamenu__img-wrapper">
+														<img class="NG-megamenu__img-centered"
+															src="/.content/imatges/nav/V-ATC-ed-frontal-235x470.jpg"
+															alt="Imatge 1: Quiénes somos y qué hacemos" />
+													</div>
+												</div>
+											<div
+												class="NG-col NG-col--fullwidth NG-row-flex--vertical-lg">
+												<div class="NG-row-flex NG-row-flex--vertical-lg">
+
+													<div class="NG-row-flex">
+														<div class="NG-col NG-col--fullwidth">
+															<div class="NG-megamenu__description">
+																<div class="NG-megamenu__description-wrapper">
+																	<h2 class="NG-megamenu__description-title">
+																		La Agencia</h2>
+																	<p>Si quieres saber más, te explicamos las funciones de la Agencia y las actuaciones que realiza. También encontrarás toda la información sobre el Plan de prevención y reducción del fraude fiscal, protección de datos, etc.</p>
+																	<div class="NG-megamenu__nav-self--wrapper-desktop">
+																		<p class="NG-megamenu__nav-self">
+																			<a class="NG-megamenu__nav-link-self"
+																				href="/es/agencia/"
+																				target="_self"
+																				title="Menú&nbsp;La Agencia">
+																				<span>Accede a “</span>La Agencia<span>”</span> <img
+																				src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																				alt="" /> </a>
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+							</li>
+					<li class="NG-navbar__list NG-navbar__list--white js-has-megamenu NG-navbar__list--active NG-navbar__list--selected"><button class="NG-navbar__link NG-navbar__link--noborder"
+										title="Menú&nbsp;Tributos" role="button" aria-expanded="false" tabindex="0">
+										Tributos</button>
+								<div class="NG-megamenu">
+									<div class="NG-megamenu__nav-self--wrapper-mobile">
+										<div class="NG-megamenu__nav-self--top">
+											<button
+												class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+												role="button" >
+												<span class="sr-only">Vuelve al nivel anterior</span> <span
+													class="NG-megamenu__nav-link-back-trapezium"></span>
+											</button>
+											<a class="NG-megamenu__nav-link-self"
+												href="/es/tributs/"
+												target="_self"
+												title="Menú&nbsp;Tributos"> <span>Accede a “</span>Tributos<span>”</span> <img
+												src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+												alt=""> </a>
+										</div>
+									</div>
+
+									<div
+										class="NG-row-flex NG-row-flex--full-height js-NG-megamenu-wrapper">
+										<div class="NG-col">
+											<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+												data-level="1">
+
+												<ul class="NG-megamenu__nav">
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Nuestros tributos" href="/es/tributs/nostres-tributs/">
+																			Nuestros tributos</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Impuesto sobre transmisiones patrimoniales y actos jurídicos documentados" href="/es/tributs/itpajd/">
+																			Impuesto sobre transmisiones patrimoniales y actos jurídicos documentados</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Impuesto sobre sucesiones y donaciones" href="/es/tributs/isd/">
+																			Impuesto sobre sucesiones y donaciones</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Impuesto sobre las emisiones de dióxido de carbono de los vehículos de tracción mecánica" href="/es/tributs/impost-emissions-vehicles/">
+																			Impuesto sobre las emisiones de dióxido de carbono de los vehículos de tracción mecánica</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Impuesto sobre las estancias en establecimientos turísticos" href="/es/tributs/ieet/">
+																			Impuesto sobre las estancias en establecimientos turísticos</a>
+																	</li>
+														<li class="NG-megamenu__nav-item NG-navbar__list--selected"><a class=""
+																			target="_self"
+																			title="Impuesto sobre la renta de las personas físicas" href="/es/tributs/irpf/">
+																			Impuesto sobre la renta de las personas físicas</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Impuesto sobre el patrimonio" href="/es/tributs/impost-patrimoni/">
+																			Impuesto sobre el patrimonio</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Tributación sobre el juego" href="/es/tributs/joc/">
+																			Tributación sobre el juego</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Impuesto sobre bebidas azucaradas envasadas" href="/es/tributs/ibee/">
+																			Impuesto sobre bebidas azucaradas envasadas</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Impuesto sobre los activos no productivos de las personas jurídicas" href="/es/tributs/impost-actius-no-productius/">
+																			Impuesto sobre los activos no productivos de las personas jurídicas</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Impuesto sobre las viviendas vacías" href="/es/tributs/impost-habitatges-buits/">
+																			Impuesto sobre las viviendas vacías</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Impuesto sobre grandes establecimientos comerciales" href="/es/tributs/igec/">
+																			Impuesto sobre grandes establecimientos comerciales</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Gravamen de protección civil" href="/es/tributs/gravamen-proteccio-civil/">
+																			Gravamen de protección civil</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Impuesto sobre la emisión de gases y partículas a la atmósfera producida por la industria" href="/es/tributs/impost-emissions-industria/">
+																			Impuesto sobre la emisión de gases y partículas a la atmósfera producida por la industria</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Impuesto sobre la emisión de óxidos de nitrógeno a la atmósfera producida por la aviación comercial" href="/es/tributs/impost-emissions-aviacio/">
+																			Impuesto sobre la emisión de óxidos de nitrógeno a la atmósfera producida por la aviación comercial</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Impuesto sobre las instalaciones que inciden en el medio ambiente" href="/es/tributs/iima/">
+																			Impuesto sobre las instalaciones que inciden en el medio ambiente</a>
+																	</li>
+														<li>
+															<p class="NG-megamenu__nav-self">
+																<a class="NG-megamenu__nav-link-self"
+																	href="/es/tributs/"
+																	target="_self"
+																	title="Menú&nbsp;Tributos">
+																	<span>Accede a “</span>Tributos<span>”</span> <img
+																	src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																	alt="" /> </a>
+															</p>
+														</li>
+													</ul>
+												</div>
+										</div>
+
+
+										<div
+											class="NG-col NG-col--fullwidth NG-row-flex NG-show-lg js-NG-hide-description">
+
+											<div class="NG-col NG--flex45">
+													<div class="NG-megamenu__img-wrapper">
+														<img class="NG-megamenu__img-centered"
+															src="/.content/imatges/nav/V-ed-lateral-bus-palmera-235x470.jpg"
+															alt="Imatge 1: Impuesto sobre transmisiones patrimoniales y actos jurídicos documentados" />
+													</div>
+												</div>
+											<div
+												class="NG-col NG-col--fullwidth NG-row-flex--vertical-lg">
+												<div class="NG-row-flex NG-row-flex--vertical-lg">
+
+													<div class="NG-row-flex">
+														<div class="NG-col NG-col--fullwidth">
+															<div class="NG-megamenu__description">
+																<div class="NG-megamenu__description-wrapper">
+																	<h2 class="NG-megamenu__description-title">
+																		Tributos</h2>
+																	<p>Toda la información sobre los tributos que gestiona la Agencia Tributaria de Catalunya. Haz clic en “Tributos” o utiliza la barra de desplazamiento para acceder a la información sobre cada tributo y en el enlace para tramitarlo.</p>
+																	<div class="NG-megamenu__nav-self--wrapper-desktop">
+																		<p class="NG-megamenu__nav-self">
+																			<a class="NG-megamenu__nav-link-self"
+																				href="/es/tributs/"
+																				target="_self"
+																				title="Menú&nbsp;Tributos">
+																				<span>Accede a “</span>Tributos<span>”</span> <img
+																				src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																				alt="" /> </a>
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+							</li>
+					<li class="NG-navbar__list NG-navbar__list--white js-has-megamenu"><button class="NG-navbar__link NG-navbar__link--noborder"
+										title="Menú&nbsp;Gestiones" role="button" aria-expanded="false" tabindex="0">
+										Gestiones</button>
+								<div class="NG-megamenu">
+									<div class="NG-megamenu__nav-self--wrapper-mobile">
+										<div class="NG-megamenu__nav-self--top">
+											<button
+												class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+												role="button" >
+												<span class="sr-only">Vuelve al nivel anterior</span> <span
+													class="NG-megamenu__nav-link-back-trapezium"></span>
+											</button>
+											<a class="NG-megamenu__nav-link-self"
+												href="/es/gestions/"
+												target="_self"
+												title="Menú&nbsp;Gestiones"> <span>Accede a “</span>Gestiones<span>”</span> <img
+												src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+												alt=""> </a>
+										</div>
+									</div>
+
+									<div
+										class="NG-row-flex NG-row-flex--full-height js-NG-megamenu-wrapper">
+										<div class="NG-col">
+											<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+												data-level="1">
+
+												<ul class="NG-megamenu__nav">
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Catálogo de gestiones" href="/es/gestions/cataleg-gestions/">
+																			Catálogo de gestiones</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Pago de deudas y liquidaciones" href="/es/gestions/pagament-liquidacions/">
+																			Pago de deudas y liquidaciones</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Certificados" href="/es/gestions/certificats/">
+																			Certificados</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Aplazamientos y fraccionamientos" href="/es/gestions/ajornaments/">
+																			Aplazamientos y fraccionamientos</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Recaudación ejecutiva" href="/es/gestions/executiva/">
+																			Recaudación ejecutiva</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Representación" href="/es/gestions/representacio/">
+																			Representación</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Alegaciones" href="/es/gestions/allegacions/">
+																			Alegaciones</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Recursos y reclamaciones" href="/es/gestions/impugnacions/">
+																			Recursos y reclamaciones</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Requerimientos y aportación de datos bancarios" href="/es/gestions/contestar-requeriments/">
+																			Requerimientos y aportación de datos bancarios</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Notificaciones electrónicas" href="/es/gestions/notificacions/">
+																			Notificaciones electrónicas</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Registro electrónico" href="/es/gestions/registre-electronic/">
+																			Registro electrónico</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Declaraciones informativas" href="/es/gestions/declaracions-informatives/">
+																			Declaraciones informativas</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Devolución de ingresos indebidos / Rectificación de autoliquidación" href="/es/gestions/devolucio-ingressos/">
+																			Devolución de ingresos indebidos / Rectificación de autoliquidación</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Garantías (depósitos y avales)" href="/es/gestions/garanties/">
+																			Garantías (depósitos y avales)</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Compensación de deudas tributarias" href="/es/gestions/compensacio-deutes/">
+																			Compensación de deudas tributarias</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Informe y acuerdo previo de valoración y tasación pericial contradictoria" href="/es/gestions/informacio-taxacio-immobles/">
+																			Informe y acuerdo previo de valoración y tasación pericial contradictoria</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Actuaciones de inspección" href="/es/gestions/actuacions-inspeccio/">
+																			Actuaciones de inspección</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Servicios a otras administraciones" href="/es/gestions/serveis-administracions/">
+																			Servicios a otras administraciones</a>
+																	</li>
+														<li>
+															<p class="NG-megamenu__nav-self">
+																<a class="NG-megamenu__nav-link-self"
+																	href="/es/gestions/"
+																	target="_self"
+																	title="Menú&nbsp;Gestiones">
+																	<span>Accede a “</span>Gestiones<span>”</span> <img
+																	src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																	alt="" /> </a>
+															</p>
+														</li>
+													</ul>
+												</div>
+										</div>
+
+
+										<div
+											class="NG-col NG-col--fullwidth NG-row-flex NG-show-lg js-NG-hide-description">
+
+											<div class="NG-col NG--flex45">
+													<div class="NG-megamenu__img-wrapper">
+														<img class="NG-megamenu__img-centered"
+															src="/.content/imatges/nav/V-ATC-int-passadis-235x470.jpg"
+															alt="Imatge 1: Pago de deudas y liquidaciones" />
+													</div>
+												</div>
+											<div
+												class="NG-col NG-col--fullwidth NG-row-flex--vertical-lg">
+												<div class="NG-row-flex NG-row-flex--vertical-lg">
+
+													<div class="NG-row-flex">
+														<div class="NG-col NG-col--fullwidth">
+															<div class="NG-megamenu__description">
+																<div class="NG-megamenu__description-wrapper">
+																	<h2 class="NG-megamenu__description-title">
+																		Gestiones</h2>
+																	<p>Gestiones relacionadas con las declaraciones que has presentado y con las deudas que tengas pendientes en período voluntario o en período ejecutivo (apartado Recaudación ejecutiva). Haz clic en “Gestiones” o utiliza la barra de desplazamiento.</p>
+																	<div class="NG-megamenu__nav-self--wrapper-desktop">
+																		<p class="NG-megamenu__nav-self">
+																			<a class="NG-megamenu__nav-link-self"
+																				href="/es/gestions/"
+																				target="_self"
+																				title="Menú&nbsp;Gestiones">
+																				<span>Accede a “</span>Gestiones<span>”</span> <img
+																				src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																				alt="" /> </a>
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+							</li>
+					<li class="NG-navbar__list NG-navbar__list--white js-has-megamenu"><button class="NG-navbar__link NG-navbar__link--noborder"
+										title="Menú&nbsp;Qué hacer si" role="button" aria-expanded="false" tabindex="0">
+										Qué hacer si</button>
+								<div class="NG-megamenu">
+									<div class="NG-megamenu__nav-self--wrapper-mobile">
+										<div class="NG-megamenu__nav-self--top">
+											<button
+												class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+												role="button" >
+												<span class="sr-only">Vuelve al nivel anterior</span> <span
+													class="NG-megamenu__nav-link-back-trapezium"></span>
+											</button>
+											<a class="NG-megamenu__nav-link-self"
+												href="/es/que-cal-fer/"
+												target="_self"
+												title="Menú&nbsp;Qué hacer si"> <span>Accede a “</span>Qué hacer si<span>”</span> <img
+												src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+												alt=""> </a>
+										</div>
+									</div>
+
+									<div
+										class="NG-row-flex NG-row-flex--full-height js-NG-megamenu-wrapper">
+										<div class="NG-col">
+											<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+												data-level="1">
+
+												<ul class="NG-megamenu__nav">
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Quiero presentar un recurso contra una multa de tráfico que no pagué" href="/es/que-cal-fer/com-recurs-multa/">
+																			Quiero presentar un recurso contra una multa de tráfico que no pagué</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="He recibido una carta de la ATC reclamándome una deuda" href="/es/gestions/executiva/constrenyiment/">
+																			He recibido una carta de la ATC reclamándome una deuda<span class="sr-only">. Abrir en una nueva ventana.</span></a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Tengo que declarar el alquiler de una vivienda" href="/es/que-cal-fer/com-lloguer-habitatge/">
+																			Tengo que declarar el alquiler de una vivienda</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Tengo que declarar una herencia" href="/es/que-cal-fer/com-declarar-herencia/">
+																			Tengo que declarar una herencia</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Quiero hacer una donación" href="/es/que-cal-fer/com-donacio/">
+																			Quiero hacer una donación</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Quiero hacer un préstamo a un familiar " href="/es/que-cal-fer/prestec-particulars/">
+																			Quiero hacer un préstamo a un familiar </a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="He comprado un vehículo usado" href="/es/que-cal-fer/com-compra-vehicle-usat/">
+																			He comprado un vehículo usado</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Quiero declarar una adquisición por seguro de vida" href="/es/que-cal-fer/com-declarar-adquisicio-asseguranca/">
+																			Quiero declarar una adquisición por seguro de vida</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Quiero poner una denuncia tributaria" href="/es/agencia/frau-fiscal/denuncies-tributaries/">
+																			Quiero poner una denuncia tributaria<span class="sr-only">. Abrir en una nueva ventana.</span></a>
+																	</li>
+														<li>
+															<p class="NG-megamenu__nav-self">
+																<a class="NG-megamenu__nav-link-self"
+																	href="/es/que-cal-fer/"
+																	target="_self"
+																	title="Menú&nbsp;Qué hacer si">
+																	<span>Accede a “</span>Qué hacer si<span>”</span> <img
+																	src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																	alt="" /> </a>
+															</p>
+														</li>
+													</ul>
+												</div>
+										</div>
+
+
+										<div
+											class="NG-col NG-col--fullwidth NG-row-flex NG-show-lg js-NG-hide-description">
+
+											<div class="NG-col NG--flex45">
+													<div class="NG-megamenu__img-wrapper">
+														<img class="NG-megamenu__img-centered"
+															src="/.content/imatges/nav/V-flor-lila-470x235.jpg"
+															alt="Imatge 1: Tengo que declarar una herencia" />
+													</div>
+												</div>
+											<div
+												class="NG-col NG-col--fullwidth NG-row-flex--vertical-lg">
+												<div class="NG-row-flex NG-row-flex--vertical-lg">
+
+													<div class="NG-row-flex">
+														<div class="NG-col NG-col--fullwidth">
+															<div class="NG-megamenu__description">
+																<div class="NG-megamenu__description-wrapper">
+																	<h2 class="NG-megamenu__description-title">
+																		Qué hacer si</h2>
+																	<p></p>
+																	<div class="NG-megamenu__nav-self--wrapper-desktop">
+																		<p class="NG-megamenu__nav-self">
+																			<a class="NG-megamenu__nav-link-self"
+																				href="/es/que-cal-fer/"
+																				target="_self"
+																				title="Menú&nbsp;Qué hacer si">
+																				<span>Accede a “</span>Qué hacer si<span>”</span> <img
+																				src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																				alt="" /> </a>
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+							</li>
+					<li class="NG-navbar__list NG-navbar__list--white js-has-megamenu"><button class="NG-navbar__link NG-navbar__link--noborder"
+										title="Menú&nbsp;Información de apoyo" role="button" aria-expanded="false" tabindex="0">
+										Información de apoyo</button>
+								<div class="NG-megamenu">
+									<div class="NG-megamenu__nav-self--wrapper-mobile">
+										<div class="NG-megamenu__nav-self--top">
+											<button
+												class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+												role="button" >
+												<span class="sr-only">Vuelve al nivel anterior</span> <span
+													class="NG-megamenu__nav-link-back-trapezium"></span>
+											</button>
+											<a class="NG-megamenu__nav-link-self"
+												href="/es/utilitats/"
+												target="_self"
+												title="Menú&nbsp;Información de apoyo"> <span>Accede a “</span>Información de apoyo<span>”</span> <img
+												src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+												alt=""> </a>
+										</div>
+									</div>
+
+									<div
+										class="NG-row-flex NG-row-flex--full-height js-NG-megamenu-wrapper">
+										<div class="NG-col">
+											<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+												data-level="1">
+
+												<ul class="NG-megamenu__nav">
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Apoyo a la tramitación" href="/es/utilitats/suport/">
+																			Apoyo a la tramitación</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Identificación digital" href="/es/utilitats/identificacio-digital/">
+																			Identificación digital</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Entidades colaboradoras" href="/es/utilitats/entitats-col/">
+																			Entidades colaboradoras</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Personas y colectivos obligados a la tramitación telemática" href="/es/utilitats/obligacio-telematic/">
+																			Personas y colectivos obligados a la tramitación telemática</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Preguntas frecuentes" href="/es/utilitats/preguntes-frequents/">
+																			Preguntas frecuentes</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Simuladores" href="/es/utilitats/simuladors/">
+																			Simuladores</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Programas de ayuda de sucesiones y donaciones (modelos 650, 651, 652 y 653)" href="/es/utilitats/programes-ajuda/">
+																			Programas de ayuda de sucesiones y donaciones (modelos 650, 651, 652 y 653)</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Consulta de deuda" href="/es/utilitats/consulta-deute/">
+																			Consulta de deuda</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Obtención de cartas de pago" href="/es/utilitats/obtencio-cartes-pagament/">
+																			Obtención de cartas de pago</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Consulta de declaración notarial" href="/es/utilitats/consulta-notarial/">
+																			Consulta de declaración notarial</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Consulta de documentos con CSV (código seguro de verificación) " href="/es/utilitats/consulta-referencia-document/">
+																			Consulta de documentos con CSV (código seguro de verificación) </a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Calendario tributario" href="/es/utilitats/calendari-tributari/">
+																			Calendario tributario</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Formularios" href="/es/utilitats/formularis/">
+																			Formularios</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Guías de información tributaria" href="/es/utilitats/guies/">
+																			Guías de información tributaria</a>
+																	</li>
+														<li>
+															<p class="NG-megamenu__nav-self">
+																<a class="NG-megamenu__nav-link-self"
+																	href="/es/utilitats/"
+																	target="_self"
+																	title="Menú&nbsp;Información de apoyo">
+																	<span>Accede a “</span>Información de apoyo<span>”</span> <img
+																	src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																	alt="" /> </a>
+															</p>
+														</li>
+													</ul>
+												</div>
+										</div>
+
+
+										<div
+											class="NG-col NG-col--fullwidth NG-row-flex NG-show-lg js-NG-hide-description">
+
+											<div class="NG-col NG--flex45">
+													<div class="NG-megamenu__img-wrapper">
+														<img class="NG-megamenu__img-centered"
+															src="/.content/imatges/nav/V-ut-ascensor-235x470.jpg"
+															alt="Imatge 1: Consulta de documentos con CSV (código seguro de verificación) " />
+													</div>
+												</div>
+											<div
+												class="NG-col NG-col--fullwidth NG-row-flex--vertical-lg">
+												<div class="NG-row-flex NG-row-flex--vertical-lg">
+
+													<div class="NG-row-flex">
+														<div class="NG-col NG-col--fullwidth">
+															<div class="NG-megamenu__description">
+																<div class="NG-megamenu__description-wrapper">
+																	<h2 class="NG-megamenu__description-title">
+																		Información de apoyo</h2>
+																	<p>Herramientas que pueden serte útiles para la tramitación telemática, como son los simuladores, los programas de ayuda, la consulta del CSV o la consulta del motivo de tus deudas.</p>
+																	<div class="NG-megamenu__nav-self--wrapper-desktop">
+																		<p class="NG-megamenu__nav-self">
+																			<a class="NG-megamenu__nav-link-self"
+																				href="/es/utilitats/"
+																				target="_self"
+																				title="Menú&nbsp;Información de apoyo">
+																				<span>Accede a “</span>Información de apoyo<span>”</span> <img
+																				src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																				alt="" /> </a>
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+							</li>
+					<li class="NG-navbar__list NG-navbar__list--white js-has-megamenu"><button class="NG-navbar__link NG-navbar__link--noborder"
+										title="Menú&nbsp;Canales de atención" role="button" aria-expanded="false" tabindex="0">
+										Canales de atención</button>
+								<div class="NG-megamenu">
+									<div class="NG-megamenu__nav-self--wrapper-mobile">
+										<div class="NG-megamenu__nav-self--top">
+											<button
+												class="NG-megamenu__nav-link-back js-NG-megamenu__nav-link-back"
+												role="button" >
+												<span class="sr-only">Vuelve al nivel anterior</span> <span
+													class="NG-megamenu__nav-link-back-trapezium"></span>
+											</button>
+											<a class="NG-megamenu__nav-link-self"
+												href="/es/atencio/"
+												target="_self"
+												title="Menú&nbsp;Canales de atención"> <span>Accede a “</span>Canales de atención<span>”</span> <img
+												src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+												alt=""> </a>
+										</div>
+									</div>
+
+									<div
+										class="NG-row-flex NG-row-flex--full-height js-NG-megamenu-wrapper">
+										<div class="NG-col">
+											<div class="NG-megamenu__nav-wrapper js-NG-simplebar"
+												data-level="1">
+
+												<ul class="NG-megamenu__nav">
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Contacto" href="/es/atencio/contacte/">
+																			Contacto</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Cita  y tramitación atendida" href="/es/atencio/cita-previa/">
+																			Cita  y tramitación atendida</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Carta de servicios de la ATC" href="/es/atencio/carta-serveis/">
+																			Carta de servicios de la ATC</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Denuncias tributarias y sugerencias en materia de fraude fiscal" href="/es/agencia/frau-fiscal/">
+																			Denuncias tributarias y sugerencias en materia de fraude fiscal<span class="sr-only">. Abrir en una nueva ventana.</span></a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="Sistema interno de alertas" href="/es/atencio/sistema-intern-alertes/">
+																			Sistema interno de alertas</a>
+																	</li>
+														<li class="NG-megamenu__nav-item "><a class=""
+																			target="_self"
+																			title="La app de la ATC" href="/es/atencio/app/">
+																			La app de la ATC</a>
+																	</li>
+														<li>
+															<p class="NG-megamenu__nav-self">
+																<a class="NG-megamenu__nav-link-self"
+																	href="/es/atencio/"
+																	target="_self"
+																	title="Menú&nbsp;Canales de atención">
+																	<span>Accede a “</span>Canales de atención<span>”</span> <img
+																	src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																	alt="" /> </a>
+															</p>
+														</li>
+													</ul>
+												</div>
+										</div>
+
+
+										<div
+											class="NG-col NG-col--fullwidth NG-row-flex NG-show-lg js-NG-hide-description">
+
+											<div class="NG-col NG--flex45">
+													<div class="NG-megamenu__img-wrapper">
+														<img class="NG-megamenu__img-centered"
+															src="/.content/imatges/nav/V-atencio-frag1-235x470.jpg"
+															alt="Imatge 1: Contacto" />
+													</div>
+												</div>
+											<div
+												class="NG-col NG-col--fullwidth NG-row-flex--vertical-lg">
+												<div class="NG-row-flex NG-row-flex--vertical-lg">
+
+													<div class="NG-row-flex">
+														<div class="NG-col NG-col--fullwidth">
+															<div class="NG-megamenu__description">
+																<div class="NG-megamenu__description-wrapper">
+																	<h2 class="NG-megamenu__description-title">
+																		Canales de atención</h2>
+																	<p>¿Cómo puedes contactar con la Agencia? Aquí encontrarás todos los canales de contacto y cómo acceder a ellos. Información sobre cita previa, soporte a la tramitación telemática, identificación digital, etc.</p>
+																	<div class="NG-megamenu__nav-self--wrapper-desktop">
+																		<p class="NG-megamenu__nav-self">
+																			<a class="NG-megamenu__nav-link-self"
+																				href="/es/atencio/"
+																				target="_self"
+																				title="Menú&nbsp;Canales de atención">
+																				<span>Accede a “</span>Canales de atención<span>”</span> <img
+																				src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/arrow-right-r.svg"
+																				alt="" /> </a>
+																		</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									</div>
+							</li>
+					<li class="NG-navbar__list NG-navbar__list--white"><a class="NG-navbar__link NG-navbar__link--noborder"
+										target="_self"
+										title="Menú&nbsp;Mi espacio"
+										href="/es/el-meu-espai-atc/">
+										Mi espacio</a>
+								</li>
+					</ul>
+								<div class="NG-navbar__menu-mobile--wrapper"></div>
+							</div>
+						</div>
+					</nav>
+					</div>
+			</div>
+
+			<div class="secondary-header">
+				<div class="NG-submain">
+					<div class="NG-container">
+						<div class="NG-row-flex">
+							<div class="NG-col NG--pd15 NG-row-flex--vertical-lg NG-row-flex-row-reverse">
+								<div class="NG-header__logo">
+									<a href="https://web.gencat.cat/" target="_blank" >
+											<span class="sr-only">. Abrir en una nueva ventana.</span><img class="NG-header__image"
+											 src="/web/resources/fwkResponsive/fpca_capcalera_seuNou/img/gencat-nuevo-completo-w.svg"
+											 alt="gencat.cat"
+										/>
+									</a>
+								</div>
+							</div>
+							<div class="NG-col">
+								<p class="NG-header__section_title">
+									</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		</div><!--googleon: snippet -->
+<!--googleon: index--></header>
+	<div class="wrapper">
+		
+		<section class="breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<!--googleoff: index -->
+<!--googleoff: snippet-->
+	<div  id="subcapcalera_1" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+		
+		
+
+		<div class="fpca-subcapcalera ">
+				
+			
+				<div class="NG-menu ">
+				<div class="NG-container">
+				
+				
+					
+					
+					
+					
+					
+					
+					
+						
+
+						
+						
+							
+							
+					
+						
+
+						
+						
+							
+							
+					
+						
+
+						
+						
+							
+							
+					
+						
+
+						
+						
+							
+							
+					
+
+					
+						<ul class="NG__breadcrumb">
+							<li class="NG__breadcrumb_item">
+									
+										
+										
+											<a class="NG__breadcrumb__item_link" title="Inicio" href="/es/">
+												<span class="NG__breadcrumb__item_link_span NG__breadcrumb__item_link_span--overflow">Inicio</span>
+											</a>
+										
+									
+								</li>
+								<li class="NG__breadcrumb_item">
+									
+										
+										
+											<a class="NG__breadcrumb__item_link" title="Tributos" href="/es/tributs/">
+												<span class="NG__breadcrumb__item_link_span NG__breadcrumb__item_link_span--overflow">Tributos</span>
+											</a>
+										
+									
+								</li>
+								<li class="NG__breadcrumb_item">
+									
+										
+										
+											<a class="NG__breadcrumb__item_link" title="Impuesto sobre la renta de las personas físicas" href="/es/tributs/irpf/">
+												<span class="NG__breadcrumb__item_link_span NG__breadcrumb__item_link_span--overflow">Impuesto sobre la renta de las personas físicas</span>
+											</a>
+										
+									
+								</li>
+								<li class="NG__breadcrumb_item">
+									
+										
+											
+											Deducciones del tramo autonómico del IRPF
+										
+										
+									
+								</li>
+						</ul>
+					
+				
+									
+					
+
+					
+					
+					
+					
+
+				<div class="NG-menu__wrapper">
+					<div class="NG-menu__wrapper_title" role="main">
+						
+						
+						
+						
+						   
+						
+							
+							
+								
+									<h1 class="NG-menu__title">
+										Deducciones del tramo autonómico del IRPF
+									</h1>
+								
+							
+						
+						
+					</div>
+					<div class="NG-menu__wrapper_title2">
+						
+
+						
+					
+					</div>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	
+</div><!--googleon: snippet -->
+<!--googleon: index--></div>
+			</div>
+		</section>
+		<main id="main">
+			<section>
+							<div class="container">
+								<div class="row">
+									<div  id="center_1R" >
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+	
+		<div class="fpca_article_nou atc" id="77bfc94e-c71d-11ed-b801-005056924a59">
+			
+
+			<div>
+				<div class="entradeta__wrapper">
+					<div class="row">
+						
+						<!-- Comprobamos si esta activado el modo carrusel para las imagenes (por defecto esta a false) -->
+						
+						
+							
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			<div class="basic_text col-xs-12 pd-30 off-margin-bottom pd-15">
+				
+				
+			</div>
+			<div class="basic_text_peq col-xs-12">
+				
+				
+				
+				
+				
+				
+
+						 
+						 
+				
+				
+				
+				
+					<div class="pd-15x link-dotted"><p>Deducciones del tramo autonómico para el <strong>ejercicio 2025</strong>.</p>
+<p>&nbsp;</p></div>
+				
+			</div>
+		
+	
+
+					</div>
+				</div>
+			</div>
+			
+				
+				
+				    
+                        <div class="llista-blocs-contingut">
+                            <div class="llista-blocs-enllacos">
+                                <div class="llista-blocs-enllacos__wrapper">
+                                    <div class="row">
+                                         
+                                        <div class="tri_combo_destacat_llistat pag-final ancores2">
+                                            <div
+                                                class="llistat_enllacos_filet especial col-md-12 col-xs-12 column">
+                                                
+                                                    <ul
+                                                        class="llistat_enllacos_filet_cont list-group box llista-subhome">
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#1--por-nacimiento-o-adopcion-de-un-hijo-o-de-una-hija-o-por-acogimiento" class="scroll">1. Por nacimiento o adopción de un hijo o de una hija o por acogimiento</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#2--para-los-contribuyentes-que-queden-viudos" class="scroll">2. Para los contribuyentes que queden viudos</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#3--por-alquiler-de-la-vivienda-habitual" class="scroll">3. Por alquiler de la vivienda habitual</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#4--por-rehabilitacion-de-la-vivienda-habitual" class="scroll">4. Por rehabilitación de la vivienda habitual</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#5--por-pago-de-intereses-de-prestamos-para-estudios-de-master-y-de-doctorado" class="scroll">5. Por pago de intereses de préstamos para estudios de máster y de doctorado</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#6--por-donaciones-a-entidades-que-fomenten-el-uso-de-la-lengua-catalana-o-la-occitana" class="scroll">6. Por donaciones a entidades que fomenten el uso de la lengua catalana o la occitana</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#7--por-donaciones-a-entidades-que-fomenten-la-investigacion-cientifica-y-el-desarrollo-y-la-innovacion-tecnologicos" class="scroll">7. Por donaciones a entidades que fomenten la investigación científica y el desarrollo y la innovación tecnológicos</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#8--por-donaciones-a-determinadas-entidades-en-beneficio-del-medio-ambiente--la-conservacion-del-patrimonio-natural-y-la-custodia-del-territorio" class="scroll">8. Por donaciones a determinadas entidades en beneficio del medio ambiente, la conservación del patrimonio natural y la custodia del territorio</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#9--en-concepto-de-inversion-por-un-angel-inversor-por-la-adquisicion-de-acciones-o-participaciones-sociales-de-entidades-nuevas-o-de-creacion-reciente" class="scroll">9. En concepto de inversión por un ángel inversor por la adquisición de acciones o participaciones sociales de entidades nuevas o de creación reciente</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#10--por-obligacion-de-presentar-la-declaracion-del-irpf-por-razon-de-tener-mas-de-un-pagador" class="scroll">10. Por obligación de presentar la declaración del IRPF por razón de tener más de un pagador</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#11--por-alquiler-de-la-vivienda-habitual-por-parte-de-victimas-de-violencia-machista" class="scroll">11. Por alquiler de la vivienda habitual por parte de víctimas de violencia machista</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#12--por-inversion-en-sociedades-cooperativas-agrarias-y-de-vivienda" class="scroll">12. Por inversión en sociedades cooperativas agrarias y de vivienda</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#13--tramo-autonomico-de-la-deduccion-por-inversion-en-vivienda-habitual-adquirida-antes-del-01-01-2013" class="scroll">13. Tramo autonómico de la deducción por inversión en vivienda habitual adquirida antes del 01.01.2013</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#deducciones-previstas-para-el-ejercicio-2026--a-declarar-en-2027" class="scroll">Deducciones previstas para el ejercicio 2026 (a declarar en 2027)</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                            
+                                                                
+	                                                            <li class="list-group-item col-sm-6"><a
+	                                                                href="#deducciones-de-ejercicios-anteriores" class="scroll">Deducciones de ejercicios anteriores</a>
+	                                                            </li>
+	                                                        
+                                                        
+                                                    </ul>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="1--por-nacimiento-o-adopcion-de-un-hijo-o-de-una-hija-o-por-acogimiento"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">1. Por nacimiento o adopción de un hijo o de una hija o por acogimiento</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p>En caso de nacimiento o adopción durante el periodo impositivo, los importes a deducir son:</p>
+<ul>
+<li>150 euros en la declaración individual de cada uno de los progenitores.</li>
+<li>300 euros en caso de declaración conjunta.</li>
+<li>300 euros en caso de declaración del progenitor o progenitora de una familia monoparental.</li>
+</ul>
+<p>La misma deducción es aplicable en caso de acogimiento familiar de personas menores de edad. El acogimiento debe haberse acordado de conformidad con lo que establece la Ley 14/2010, de 27 de mayo, de los derechos y las oportunidades en la infancia y la adolescencia.</p>
+<p>La deducción por adopción es incompatible con la deducción por acogimiento.</p>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="2--para-los-contribuyentes-que-queden-viudos"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">2. Para los contribuyentes que queden viudos</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p>Las personas que queden viudas durante el ejercicio se pueden aplicar una deducción de 150 euros. Esta deducción es aplicable en la declaración correspondiente al ejercicio en que la persona quede viuda, y en los dos ejercicios inmediatamente posteriores.</p>
+<p>Si esta persona tiene a su cargo uno o más descendientes que computen a los efectos de aplicar el mínimo por descendientes, se puede aplicar una deducción de 300 euros en la declaración correspondiente al ejercicio en que la persona contribuyente quede viuda, y a los dos ejercicios inmediatamente posteriores, siempre que los descendientes mantengan los requisitos para computar a los efectos de aplicar el mínimo mencionado.</p>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="3--por-alquiler-de-la-vivienda-habitual"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">3. Por alquiler de la vivienda habitual</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p><strong>3.1 Régimen general</strong></p>
+<p>En caso de alquiler de la vivienda habitual las personas contribuyentes pueden deducir el 10 %, hasta un máximo de 500 euros anuales (1.000 euros en caso de declaración conjunta), de las cantidades satisfechas en el periodo impositivo, siempre que cumplan los siguientes requisitos:</p>
+<p>a. Que se encuentren en alguna de las situaciones siguientes:</p>
+<ul>
+<li>Tener 35 años o menos en la fecha de devengo del impuesto.</li>
+<li>Haber estado en paro 183 días o más durante el ejercicio.</li>
+<li>Tener un grado de discapacidad igual o superior al 65 %.</li>
+<li>Ser viudo o viuda y tener 65 años o más.</li>
+</ul>
+<p>b. Que su base imponible total, menos el mínimo personal y familiar no sea superior a 30.000 euros anuales (45.000 euros anuales en caso de declaración conjunta).</p>
+<p>Esta deducción solo se puede aplicar una vez, aunque para un mismo sujeto pasivo y ejercicio concurra más de una de las circunstancias de la letra a.</p>
+<p>Una misma vivienda no puede dar lugar a la aplicación de un importe de deducción superior a 1.000 euros. Si en relación con una misma vivienda resulta que más de un contribuyente tiene derecho a esta deducción, cada uno podrá aplicarse en su declaración una deducción por este concepto, pero el importe que se obtenga de dividir la cantidad resultante de la aplicación del 10 % del gasto total o el límite máximo de 1.000 euros, si procede, por el número de declarantes con derecho a la deducción.</p>
+<p>Hay que consignar el NIF de la persona arrendadora y, si no se dispone del NIF, hay que consignar el número de identificación fiscal en el país de residencia.</p>
+<p><strong>3.2 Familias numerosas y familias monoparentales</strong></p>
+<p>En el caso de familias numerosas y familias monoparentales, las personas contribuyentes pueden deducir el 10 %, hasta un máximo de 1.000 euros anuales, de las cantidades satisfechas en el periodo impositivo, siempre que en la fecha de devengo su base imponible total, menos el mínimo personal y familiar no sea superior a 30.000 euros anuales.</p>
+<p>Son familias numerosas las que define la Ley 40/2003, de 18 de noviembre, de protección a las familias numerosas. Más información:&nbsp;<a href="https://dretssocials.gencat.cat/es/ambits_tematics/families/nombroses/" target="_blank" rel="noopener">Familias numerosas</a>.</p>
+<p>Esta deducción queda condicionada a la justificación documental adecuada y suficiente, mediante el título oficial correspondiente o por cualquier otro medio de prueba admisible en derecho, de los presupuestos de hecho y de los requisitos que determinan su aplicabilidad.</p>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="4--por-rehabilitacion-de-la-vivienda-habitual"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">4. Por rehabilitación de la vivienda habitual</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p>En el caso de pago de cantidades durante el ejercicio en concepto de rehabilitación de la vivienda que constituya o vaya a constituir la vivienda habitual, el porcentaje de deducción es del 1,5 % de las cantidades satisfechas, las cuales no pueden superar 9.040 euros.</p>
+<p>Se considera rehabilitación de la vivienda habitual, las obras realizadas que cumplan cualquiera de los requisitos siguientes:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>
+<p><strong>Que las obras hayan sido calificadas o declaradas como actuación protegida en materia de rehabilitación de viviendas</strong>, en los términos previstos en el Real Decreto 1186/1998, de 12 de junio, sobre medidas de financiación de actuaciones protegidas en materia de vivienda y suelo del Plan 1998-2001 (<abbr title="Boletín Oficial del Estado">BOE</abbr>&nbsp;de 26 de junio), en el Real Decreto 1/2002, de 11 de enero, sobre medidas de financiación de actuaciones protegidas en materia de vivienda y suelo del Plan 2001-2005 (<abbr title="Boletín Oficial del Estado">BOE</abbr>&nbsp;de 12 de enero), en el Real Decreto 801/2005, de 1 de julio, por el que se aprueba el Plan Estatal 2005-2008 para favorecer el acceso de los ciudadanos a la vivienda (<abbr title="Boletín Oficial del Estado">BOE</abbr>&nbsp;&nbsp;de 13 de julio), en el Real Decreto 2066/2008, de 12 de diciembre, por el que se regula el Plan Estatal de Vivienda y Rehabilitación 2009-2012 (<abbr title="Boletín Oficial del Estado">BOE</abbr>&nbsp;de 24 de diciembre) y en el Real Decreto 106/2018, de 9 de marzo, por el que se regula el Plan Estatal de Vivienda 2018-2021 (<abbr title="Boletín Oficial del Estado">BOE</abbr>&nbsp;de 10 de marzo).</p>
+</li>
+<li>
+<p><strong>Que las obras tengan por objeto principal la reconstrucción de la vivienda mediante la consolidación y el tratamiento de las estructuras, fachadas o cubiertas y otras análogas</strong>, siempre que el coste global de las operaciones de rehabilitación exceda del 25 % del precio de adquisición si se hubiese efectuado la adquisición durante los dos años inmediatamente anteriores al inicio de las obras de rehabilitación o, en otro caso, del valor de mercado que tuviera la vivienda en el momento de dicho inicio. A estos efectos, se descontará del precio de adquisición o del valor de mercado de la vivienda la parte proporcional correspondiente al suelo.</p>
+</li>
+</ol>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="5--por-pago-de-intereses-de-prestamos-para-estudios-de-master-y-de-doctorado"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">5. Por pago de intereses de préstamos para estudios de máster y de doctorado</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p>Las personas contribuyentes pueden deducir el importe de los intereses pagados en el periodo impositivo correspondientes a préstamos concedidos mediante la Agencia de Gestión de Ayudas Universitarias y de Investigación para la financiación de estudios de máster y de doctorado.</p>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="6--por-donaciones-a-entidades-que-fomenten-el-uso-de-la-lengua-catalana-o-la-occitana"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">6. Por donaciones a entidades que fomenten el uso de la lengua catalana o la occitana</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p>Las personas contribuyentes se pueden aplicar, junto con la reducción porcentual que corresponda sobre el importe total de las deducciones de la cuota establecidas por la ley del Estado reguladora del impuesto, una deducción del 15 %, con el límite máximo del 10 % de la cuota íntegra autonómica, por los donativos a favor del Institut d'Estudis Catalans, del Institut d’Estudis Aranesos – Acadèmia Aranesa de la Llengua Occitana, de entidades privadas sin finalidad lucrativa, de organizaciones sindicales y empresariales o de colegios profesionales u otras corporaciones de derecho público que fomenten la lengua catalana u occitana, circunstancia que queda acreditada mediante su inclusión en el censo de estas entidades que elabora el departamento competente en materia de política lingüística.</p>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="7--por-donaciones-a-entidades-que-fomenten-la-investigacion-cientifica-y-el-desarrollo-y-la-innovacion-tecnologicos"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">7. Por donaciones a entidades que fomenten la investigación científica y el desarrollo y la innovación tecnológicos</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p>Las personas contribuyentes pueden aplicar una deducción por donativos a favor de las universidades catalanas, de los institutos universitarios y otros centros de investigación integrados o adscritos a universidades catalanas y los promovidos o participados por la Generalitat, que tengan por objeto el fomento de la investigación científica y el desarrollo y la innovación tecnológicos, por importe del 30% de las cantidades dadas, con el límite máximo del 10% de la cuota íntegra autonómica. La suma de esta deducción junto con la deducción por donativos a favor de entidades sin ánimo de lucro establecida por la normativa del Estado no podrá superar en ningún caso el porcentaje de deducción del 100%.</p>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="8--por-donaciones-a-determinadas-entidades-en-beneficio-del-medio-ambiente--la-conservacion-del-patrimonio-natural-y-la-custodia-del-territorio"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">8. Por donaciones a determinadas entidades en beneficio del medio ambiente, la conservación del patrimonio natural y la custodia del territorio</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p>Las personas contribuyentes pueden aplicar una deducción por donativos a favor de fundaciones o asociaciones que figuren en el censo de entidades ambientales vinculadas a la ecología y a la protección y mejora del medio ambiente del departamento competente en esta materia, por importe del 15 % de las cantidades donadas, con el límite máximo del 5 % de la cuota íntegra autonómica.</p>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="9--en-concepto-de-inversion-por-un-angel-inversor-por-la-adquisicion-de-acciones-o-participaciones-sociales-de-entidades-nuevas-o-de-creacion-reciente"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">9. En concepto de inversión por un ángel inversor por la adquisición de acciones o participaciones sociales de entidades nuevas o de creación reciente</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p class="parrafo">Los contribuyentes se pueden aplicar una deducción del&nbsp;40 % de las cantidades invertidas durante el ejercicio en la adquisición de acciones o participaciones sociales como consecuencia de acuerdos de constitución de sociedades o de ampliación de capital en las sociedades mercantiles a que se refiere el apartado&nbsp;2. El importe máximo de esta deducción es de&nbsp;12.000 euros. En caso de declaración conjunta estos límites se aplican a cada una de las personas contribuyentes.</p>
+<p class="parrafo">Para poder aplicar la deducción establecida por el apartado&nbsp;1 deben cumplirse los siguientes requisitos y condiciones:</p>
+<p class="parrafo_2">a. La participación conseguida por el contribuyente, computada junto con las del cónyuge o personas unidas por razón de parentesco, en línea directa o colateral, por consanguinidad o afinidad hasta el tercer grado incluido, no puede ser superior al&nbsp;35 % del capital social de la sociedad objeto de la inversión o de sus derechos de voto.</p>
+<p class="parrafo">b. La entidad en la que debe materializarse la inversión debe cumplir los siguientes requisitos:</p>
+<p class="parrafo_2">Primero. Debe tener naturaleza de sociedad anónima, sociedad limitada, sociedad anónima laboral o sociedad limitada laboral.</p>
+<p class="parrafo">Segundo. Debe tener el domicilio social y fiscal en Cataluña.</p>
+<p class="parrafo">Tercero. Debe desempeñar una actividad económica. A tal efecto, no debe tener por actividad principal la gestión de un patrimonio mobiliario o inmobiliario, de acuerdo con lo dispuesto por el artículo&nbsp;4.8.dos.a) de la Ley&nbsp;19/1991, de&nbsp;6 de junio, del impuesto sobre el patrimonio.</p>
+<p class="parrafo">Cuarto. Debe contar, como mínimo, con una persona ocupada con contrato laboral, a jornada completa y dada de alta en el régimen general de la Seguridad Social.</p>
+<p class="parrafo">Quinto. Si la inversión se ha hecho mediante una ampliación de capital, la sociedad mercantil se debe haber constituido en los tres años anteriores a la fecha de esta ampliación, y no puede cotizar en el mercado nacional de valores ni en el mercado alternativo bursátil.</p>
+<p class="parrafo">Sexto. El volumen de facturación anual no debe superar un millón de euros.</p>
+<p class="parrafo_2">c. El contribuyente puede formar parte del consejo de administración de la sociedad en la que ha materializado la inversión, pero en ningún caso puede llevar a cabo funciones ejecutivas o de dirección. Tampoco puede mantener una relación laboral con la entidad objeto de la inversión.</p>
+<p class="parrafo">d. Las operaciones en las que sea aplicable la deducción deben formalizarse en escritura pública, en la que debe especificarse la identidad de los inversores y el importe de la respectiva inversión.</p>
+<p class="parrafo">e. Las participaciones adquiridas deben mantenerse en el patrimonio del contribuyente durante un período mínimo de tres años.</p>
+<p class="parrafo">f. Los requisitos establecidos por los apartados segundo, tercero y cuarto del apartado&nbsp;2.b) y el límite máximo de participación regulado por el apartado&nbsp;2.a deben cumplirse durante un período mínimo de tres años, a partir de la fecha de efectividad del acuerdo de ampliación de capital o constitución que origine el derecho a la deducción.</p>
+<p class="parrafo_2">El incumplimiento de los requisitos y las condiciones establecidos por los apartados&nbsp;2.a), e) y f) comporta la pérdida del beneficio fiscal y el contribuyente debe incluir en la declaración del impuesto correspondiente al ejercicio en el que se ha producido el incumplimiento la parte del impuesto que se ha dejado de pagar como consecuencia de la deducción practicada, junto con los intereses de demora devengados.</p>
+<p class="parrafo">La deducción referida en los apartados anteriores es del&nbsp;50 %, con un límite de&nbsp;12.000 euros, en el caso de sociedades creadas o participadas por universidades o centros de investigación.</p>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="10--por-obligacion-de-presentar-la-declaracion-del-irpf-por-razon-de-tener-mas-de-un-pagador"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">10. Por obligación de presentar la declaración del IRPF por razón de tener más de un pagador</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p>El importe de la deducción es el resultado de restar, de la cuota íntegra autonómica, la cuota integra estatal, siempre que la diferencia sea positiva.</p>
+<p>Esta deducción solo se la pueden aplicar las personas contribuyentes que estén obligadas a presentar la declaración porque obtienen rendimientos íntegros del trabajo, de más de un pagador, por una cuantía comprendida entre 15.876 y 22.000 euros.</p>
+<p>Las personas contribuyentes que perciban prestaciones pasivas (pensionistas) y que se hayan acogido al procedimiento especial de retenciones que regula el artículo 89 A) del Reglamento del IRPF no pueden aplicarse esta deducción.</p>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="11--por-alquiler-de-la-vivienda-habitual-por-parte-de-victimas-de-violencia-machista"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">11. Por alquiler de la vivienda habitual por parte de víctimas de violencia machista</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p>La contribuyente que acredite tener la condición de víctima de violencia machista de acuerdo con la Ley 5/2008, de 24 de abril, del derecho de las mujeres a erradicar la violencia machista, se puede deducir el 20 %, hasta un máximo de 1.000 euros anuales, de las cantidades satisfechas en el periodo impositivo en concepto de alquiler de la vivienda habitual, siempre que su base imponible total, menos el mínimo personal y familiar no sea superior a 30.000 euros anuales.</p>
+<p>El porcentaje y el importe máximo de deducción se elevan hasta el 25 % y los 1.200 euros, si, además, la persona contribuyente tiene una discapacidad igual o superior al 65 % o si tiene algún hijo o hija menor de edad a cargo.</p>
+<p>Esta deducción se puede disfrutar como máximo durante tres ejercicios consecutivos.</p>
+<p>Medios de prueba para acreditar las situaciones de violencia machista:</p>
+<p>De acuerdo con la Ley 5/2008, de 24 de abril, del derecho de las mujeres a erradicar la violencia machista, los medios de prueba son los siguientes:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>La sentencia de cualquier orden jurisdiccional, aunque no haya adquirido firmeza, que declare que la mujer ha sufrido alguna de las formas de esta violencia.</li>
+<li>La orden de protección vigente.</li>
+<li>El informe de la Inspección de Trabajo y Seguridad Social.</li>
+</ol>
+<p>En ausencia de los anteriores medios de prueba, son medios específicos de identificación de las situaciones de violencia machista, siempre que expresen la existencia de indicios de que una mujer la ha sufrido o está en riesgo verosímil de sufrirla:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>Cualquier medida cautelar judicial de protección, seguridad o aseguramiento vigente.</li>
+<li>El atestado elaborado por las fuerzas y cuerpos de seguridad que han presenciado directamente alguna manifestación de violencia machista.</li>
+<li>El informe del Ministerio Fiscal.</li>
+<li>El informe médico o psicológico elaborado por una persona profesional colegiada, en el que conste que la mujer ha sido atendida en algún centro sanitario por causa de maltrato o agresión machista.</li>
+<li>El informe de los servicios públicos con capacidad de identificación de las situaciones de violencia machista. Se reconoce esta capacidad a los servicios sociales de atención primaria, a los servicios de acogida y recuperación, a los servicios de intervención especializada y a las unidades especializadas dentro de las fuerzas y cuerpos de seguridad.</li>
+<li>El informe del Institut Català de les Dones.</li>
+<li>Cualquier otro medio establecido por disposición legal.</li>
+</ol>
+<p>Los organismos y servicios que tienen la potestad, en el territorio de Cataluña, de otorgar acreditaciones administrativas a las mujeres que han sufrido una situación de violencia machista, sin perjuicio de lo establecido en los apartados anteriores, son:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>Las oficinas del Institut Català de les Dones, los servicios sociales y los servicios de la Dirección General para la Erradicación de las Violencias Machistas.</li>
+<li>Los servicios de intervención especializada.</li>
+<li>Los servicios de información y atención a las mujeres.</li>
+<li>La Oficina de Atención a la Víctima del Delito.</li>
+<li>Los recursos públicos de acogida y las entidades subvencionadas por una administración pública concreta para la atención a mujeres víctimas de violencia machista.</li>
+<li>La Policía de la Generalitat – Mossos d'Esquadra.</li>
+<li>Los agentes del Servicio Catalán de la Salud.</li>
+</ol>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="12--por-inversion-en-sociedades-cooperativas-agrarias-y-de-vivienda"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">12. Por inversión en sociedades cooperativas agrarias y de vivienda</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p>La persona contribuyente se puede deducir el 20 % de las aportaciones de capital, tanto obligatorias como voluntarias, invertidas y efectivamente desembolsadas en sociedades cooperativas de nueva creación o existentes de las categorías del apartado siguiente, con el límite de 3.000 euros por ejercicio y susceptibles de aplicación en ejercicios futuros en caso de insuficiencia de cuota.</p>
+<p>La aplicación de esta deducción está condicionada al cumplimiento de los requisitos y condiciones siguientes:</p>
+<ol>
+<li>El contribuyente tiene que ser socio de cualquier tipo de los previstos en la Ley 12/2015, de 9 de julio, de cooperativas, excluido el socio temporal, y su total de voto no puede superar, en ningún caso, el 25 % del total de los votos sociales.</li>
+<li>La cooperativa tiene que estar debidamente inscrita en el Registro de cooperativas de la Generalitat de Cataluña como cooperativa agraria o cooperativa de vivienda y cumplir las prescripciones de la Ley 12/2015, del 9 de julio, de cooperativas. Esta deducción no se puede aplicar si la aportación se hace a una cooperativa de vivienda para uso turístico o de corta duración.</li>
+<li>Hay que disponer de la certificación emitida por la cooperativa que acredite que se cumplan los requisitos previstos mencionados.</li>
+<li>Las aportaciones tienen que mantenerse durante un periodo mínimo de cinco años a contar desde la fecha de la aportación, plazo en el cual también tienen que cumplirse los requisitos de las letras a y b.</li>
+</ol>
+<p>El incumplimiento de los requisitos y condiciones anteriores, dentro del plazo de los cinco años, comporta la pérdida del beneficio fiscal; en este caso, el contribuyente tendrá que incluir en la declaración del impuesto correspondiente al ejercicio en que se haya producido el incumplimiento, la parte del impuesto dejada de pagar a consecuencia de la deducción practicada, más los intereses de demora que correspondan.<br /><br />La pérdida del beneficio fiscal no se produce si la persona contribuyente causa baja en la cooperativa y reinvierte la aportación en otra sociedad cooperativa que cumpla los requisitos previstos ni si, de acuerdo con los estatutos de la cooperativa, el contribuyente transmite la aportación al capital social.</p>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="13--tramo-autonomico-de-la-deduccion-por-inversion-en-vivienda-habitual-adquirida-antes-del-01-01-2013"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">13. Tramo autonómico de la deducción por inversión en vivienda habitual adquirida antes del 01.01.2013</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p>Pueden aplicar la deducción por inversión en vivienda habitual, de acuerdo con lo que establece la disposición transitoria decimoctava de la Ley del IRPF, en los términos que establecen el artículo 1.2 de la Ley 31/2002, de 30 de diciembre, de medidas fiscales y administrativas, en la redacción vigente el 31 de diciembre de 2012, y la disposición transitoria sexta de la Ley 7/2011, de 27 de julio, de medidas fiscales y financieras, de acuerdo con el artículo 119 de la Ley 2/2014, de 27 de enero, de medidas fiscales, administrativas, financieras y del sector público de la comunidad autónoma de Cataluña:</p>
+<ol>
+<li>Las personas contribuyentes que hayan adquirido la vivienda habitual antes del 1 de enero de 2013 o que antes de esta fecha hayan satisfecho cantidades para la construcción de la vivienda habitual.</li>
+<li>Las personas contribuyentes que antes del 1 de enero de 2013 hayan satisfecho cantidades para obras de rehabilitación o ampliación de la vivienda habitual, siempre que dichas obras hubiesen finalizado antes del 1 de enero de 2017.</li>
+<li>Las personas contribuyentes que antes del 1 de enero de 2013 hayan satisfecho cantidades para realizar obras e instalaciones de adecuación de la vivienda habitual de personas con discapacidad, siempre que dichas obras o instalaciones hubiesen finalizado antes del 1 de enero de 2017.</li>
+</ol>
+<p>En cualquier caso, las personas contribuyentes deben haber practicado la deducción por inversión en vivienda habitual en relación a las cantidades satisfechas para la adquisición o construcción de la vivienda en un período impositivo devengado antes del 1 de enero de 2013, salvo que sea aplicable lo que dispone el artículo 68.1.2º de la Ley del Estado 35/2006, de 28 de noviembre, del impuesto sobre la renta de las personas físicas y de modificación parcial de las leyes de los impuestos sobre sociedades, sobre la renta de no residentes y sobre el patrimonio, en la redacción vigente el 31 de diciembre de 2012.</p>
+<p>Los porcentajes de deducción en el tramo autonómico son:</p>
+<ul>
+<li>7,5 % con carácter general.</li>
+<li>15 % si se trata de obras de adecuación de la vivienda habitual de personas con discapacidad.</li>
+</ul>
+<p>Asimismo, se mantiene la aplicación de un porcentaje incrementado del 9 % para las personas contribuyentes que adquirieron su vivienda habitual antes del 30 de julio de 2011 o que satisficieron cantidades para la construcción de la vivienda habitual antes de dicha fecha (no se incluye la rehabilitación ni la ampliación de la vivienda habitual) cuando se hallen en alguna de las situaciones siguientes:</p>
+<ol>
+<li>Tener 32 años o menos en la fecha de devengo del impuesto.</li>
+<li>Haber estado en paro 183 días o más del período impositivo.</li>
+<li>Tener un grado de discapacidad igual o superior al 65 %.</li>
+<li>Formar parte de una unidad familiar que incluya el menos un hijo o hija en la fecha en que se devenga el impuesto.</li>
+</ol>
+<p>Para poder disfrutar del porcentaje de deducción del 9 %, es necesario que la base imponible total, menos el mínimo personal y familiar no exceda de 30.000 euros.</p>
+<p>En caso de tributación conjunta, este límite se computa de manera individual para cada una de las personas contribuyentes con derecho a la deducción.</p>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="deducciones-previstas-para-el-ejercicio-2026--a-declarar-en-2027"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">Deducciones previstas para el ejercicio 2026 (a declarar en 2027)</h2>
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-xs-12 columna_esquerra">
+		
+		
+			<div class="cos_bloc basic_text_peq pd-15 link-dotted">
+				<p>Para el ejercicio 2026, la <a href="https://portaljuridic.gencat.cat/ca/document-del-pjur/?documentId=1021142" target="_blank" rel="noopener">Ley 8/2025, de 30 de julio, del Estatuto de municipios rurales</a> aprueba las deducciones siguientes:</p>
+<p><strong>Deducción por traslado de la residencia habitual a un municipio rural</strong></p>
+<p class="parrafo">La persona contribuyente puede aplicar en la cuota autonómica del impuesto, en el periodo impositivo en que se produzca el traslado, una deducción de 750 euros si se traslada a un municipio rural (si es miembro de una familia monoparental el importe es de 1.500 euros) y de 1.500 euros si se traslada a un municipio rural de atención especial (si es miembro de una familia monoparental el importe es de 2.000 euros), siempre que se cumplan los siguientes requisitos:</p>
+<ol style="list-style-type: lower-alpha;">
+<li class="parrafo_2">Que traslade su residencia habitual a un municipio rural.</li>
+<li class="parrafo">Que tenga entre 18 y 35 años, o bien que tenga a su cargo hijos menores de hasta 16 años que se escolaricen en la escuela de la zona educativa o en el centro adscrito a la escuela primaria de referencia. Este requisito de escolarización no es exigible en el caso de los hijos de hasta 3 años.</li>
+<li class="parrafo">Que la suma de la base imponible general y la del ahorro, menos el mínimo personal y familiar, en su declaración del impuesto correspondiente al ejercicio en el que se aplica la deducción no exceda de 30.000 euros (en caso de tributación conjunta, el límite de ese importe es de 45.000 euros).</li>
+</ol>
+<p class="parrafo">La deducción por traslado de la residencia habitual a un municipio rural solo es de aplicación para el primer traslado que la persona contribuyente realice a un municipio rural o a un municipio rural de atención especial</p>
+<p>La<strong>&nbsp;lista de&nbsp;municipios</strong>&nbsp;que tienen la consideración de rural o rural de especial atención, de acuerdo con los criterios definidos en la Ley 8/2025, se puede consultar en el documento:&nbsp;<a href="https://govern.cat/govern/docs/2025/07/16/14/35/f8ef139f-1113-42b3-b3e8-440671147eb4.pdf" target="_blank" rel="noopener">El Estatuto de municipios rurales</a>. Hay que tener en cuenta que en el caso de <strong>Artesa de Segre</strong>&nbsp;y&nbsp;<strong>Tremp</strong>, que constan en la lista con la categoría “Rural Asimilado”, <strong>el inmueble que se adquiere no puede estar situado en la capital del municipio&nbsp;</strong>(Artesa de Segre y Tremp)<strong>&nbsp;sino en uno de sus núcleos agregados</strong>:&nbsp;</p>
+<ul>
+<li><a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats" target="_blank" rel="noopener">Núcleos agregados de Artesa de Segre</a></li>
+<li><a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1" target="_blank" rel="noopener">Núcleos agregados de Tremp</a></li>
+</ul>
+<p><strong><br />Deducción por la adquisición de la vivienda habitual en un municipio rural</strong></p>
+<p>La persona contribuyente puede deducirse del impuesto el 15 % de los importes pagados durante el periodo impositivo por la adquisición de una vivienda situada en un municipio rural, o el 20 % si la vivienda es en un municipio rural de atención especial, siempre que, en ambos casos, se cumplan los requisitos siguientes:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>Que la vivienda adquirida sea o deba ser su residencia habitual.</li>
+<li>Que la persona contribuyente tenga a su cargo hijos menores de hasta 16 años escolarizados o que se escolarizen en la escuela de la zona educativa o en el centro adscrito a la escuela primaria de referencia. Este requisito de escolarización no es exigible en el caso de hijos de hasta 3 años.</li>
+<li>Que la suma de la base imponible general y la del ahorro, menos el mínimo personal y familiar, en la declaración del impuesto correspondiente al ejercicio en que se aplica no exceda de 36.000 euros (en el caso de tributación conjunta, este límite se computa individualmente para cada una de las personas contribuyentes que tenga derecho a la deducción).</li>
+</ol>
+<p>La base máxima de la deducción por la adquisición de la vivienda habitual en un municipio rural es de 6.000 euros anuales.</p>
+<p>La persona contribuyente no puede aplicar la deducción por la adquisición de la vivienda habitual en un municipio rural en el caso de que, cuando entre en vigor, se esté aplicando la deducción estatal por inversión en vivienda habitual de acuerdo con el régimen transitorio que establece la disposición transitoria decimoctava de la Ley del Estado 35/2006, de 28 de noviembre, del impuesto sobre la renta de las personas físicas y de modificación parcial de las leyes de los impuestos sobre sociedades, sobre la renta de no residentes y sobre el patrimonio.</p>
+<p>La<strong>&nbsp;lista de&nbsp;municipios</strong>&nbsp;que tienen la consideración de rural o rural de especial atención, de acuerdo con los criterios definidos en la Ley 8/2025, se puede consultar en el documento:&nbsp;<a href="https://govern.cat/govern/docs/2025/07/16/14/35/f8ef139f-1113-42b3-b3e8-440671147eb4.pdf" target="_blank" rel="noopener">El Estatuto de municipios rurales</a>. Hay que tener en cuenta que en el caso de <strong>Artesa de Segre</strong>&nbsp;y&nbsp;<strong>Tremp</strong>, que constan en la lista con la categoría “Rural Asimilado”, <strong>el inmueble que se adquiere no puede estar situado en la capital del municipio&nbsp;</strong>(Artesa de Segre y Tremp)<strong>&nbsp;sino en uno de sus núcleos agregados</strong>:&nbsp;</p>
+<ul>
+<li><a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats" target="_blank" rel="noopener">Núcleos agregados de Artesa de Segre</a></li>
+<li><a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1" target="_blank" rel="noopener">Núcleos agregados de Tremp</a></li>
+</ul>
+<p><strong><br />Deducción por la rehabilitación de la vivienda habitual en un municipio rural</strong></p>
+<p>La persona contribuyente puede deducirse el 15 % de los importes pagados en el periodo de que se trate por la rehabilitación de una vivienda situada en un municipio rural que haya sido o deba ser su residencia habitual. El porcentaje es del 20 % si la vivienda es en un municipio rural de atención especial.</p>
+<p>Esta deducción también se aplica, si procede, a los gastos de adquisición del inmueble pagados a partir del ejercicio en que se inicie la rehabilitación. Las obras se consideran iniciadas en el ejercicio en que se haya obtenido la licencia de obras correspondiente.</p>
+<p>Para disfrutar de la deducción deben cumplirse las condiciones siguientes:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>La suma de la base imponible general y la del ahorro, menos el mínimo personal y familiar, en la declaración del impuesto correspondiente al ejercicio en que se aplica no debe exceder de 36.000 euros. En el caso de tributación conjunta, este límite se computa individualmente para cada una de las personas contribuyentes que tenga derecho a la deducción por haber realizado inversiones en la vivienda habitual durante el ejercicio.</li>
+<li>La vivienda debe haber sido construida antes del 1 de enero de 1970.</li>
+</ol>
+<p>La base máxima de la deducción es de 6.000 euros anuales.</p>
+<p>La deducción debe minorarse en el importe correspondiente a las ayudas o subvenciones percibidas por la persona contribuyente, en el periodo impositivo de que se trate, de la Administración de la Generalitat o de cualquier otra administración pública que cubran la totalidad o una parte de los gastos por rehabilitación.</p>
+<p>A efectos de esta deducción se consideran obras de rehabilitación de la vivienda habitual las que tengan por objeto principal la reconstrucción de la vivienda mediante la consolidación y el tratamiento de las estructuras, fachadas, cubiertas u otras partes análogas, siempre que el coste global de las operaciones de rehabilitación exceda del 25 % del precio de adquisición si esta se hubiese efectuado durante los 2 años inmediatamente anteriores al inicio de las obras de rehabilitación o, en caso contrario, del valor de mercado que tuviese la vivienda en el momento de iniciarse las obras. A estos efectos, debe descontarse del precio de adquisició o del valor de mercado de la vivienda la parte proporcional correspondiente al terreno.</p>
+<p>Esta deducción es incompatible con la deducción por rehabilitación que regula el artículo 612-4 del Código tributario de Cataluña.</p>
+<p>La<strong>&nbsp;lista de&nbsp;municipios</strong>&nbsp;que tienen la consideración de rural o rural de especial atención, de acuerdo con los criterios definidos en la Ley 8/2025, se puede consultar en el documento:&nbsp;<a href="https://govern.cat/govern/docs/2025/07/16/14/35/f8ef139f-1113-42b3-b3e8-440671147eb4.pdf" target="_blank" rel="noopener">El Estatuto de municipios rurales</a>. Hay que tener en cuenta que en el caso de <strong>Artesa de Segre</strong>&nbsp;y&nbsp;<strong>Tremp</strong>, que constan en la lista con la categoría “Rural Asimilado”, <strong>el inmueble que se adquiere no puede estar situado en la capital del municipio&nbsp;</strong>(Artesa de Segre y Tremp)<strong>&nbsp;sino en uno de sus núcleos agregados</strong>:&nbsp;</p>
+<ul>
+<li><a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats" target="_blank" rel="noopener">Núcleos agregados de Artesa de Segre</a></li>
+<li><a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1" target="_blank" rel="noopener">Núcleos agregados de Tremp</a></li>
+</ul>
+<p><strong><br /></strong><strong>Reglas comunes de las deducciones por adquisición y rehabilitación de la vivienda habitual en un municipio rural</strong></p>
+<p>Las deducciones por adquisición y rehabilitación de la vivienda habitual en un municipio rural se pueden aplicar en el ejercicio en que se efectúe la adquisición o se inicie la rehabilitación y en los 14 ejercicios siguientes, siempre que se produzcan los gastos correspondientes y se cumplan los requisitos establecidos.</p>
+<p>La base máxima de las respectivas deducciones está constituida por los importes invertidos durante el ejercicio en la adquisición o rehabilitación de la vivienda, incluidos los gastos originados que hayan estado a cargo del adquirente y, en el caso de financiación ajena, la amortización, los intereses, el coste de los instrumentos de cobertura del riesgo de tipos de interés variable de los préstamos hipotecarios que regula el artículo 19 de la Ley del Estado 36/2003, de 11 de noviembre, de medidas de reforma económica, y otros gastos derivados de la adquisición o rehabilitación. En caso de aplicación de los mencionados instrumentos de cobertura, los intereses pagados por la persona contribuyente deben minorarse en los importes obtenidos por aplicación del instrumento correspondiente.</p>
+<p>A efectos de estas deducciones, se considera vivienda habitual el inmueble, un trastero y hasta dos plazas de aparcamiento que hayan sido adquiridas simultáneamente en unidad de acto o estén situados en el mismo edificio o complejo urbanístico, que se habite de manera efectiva y permanente por la persona contribuyente en los siguientes plazos:<br />a. En el caso de adquisición de la vivienda, en el plazo de 12 meses a coontar de la fecha de adquisición.<br />b. En el caso de realización de obras de rehabilitación y, si procede, de adquisición previa de la vivienda, en el plazo de 24 meses a contar de la fecha de obtención de la licencia de obras.</p>
+<p>No obstante lo que establece el párrafo anterior, se entiende que la vivienda no pierde su carácter de habitual,&nbsp; aunque no se produzca la ocupación en los plazos señalados, en los supuestos siguientes:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>Si se produce la muerte de la persona contribuyente o se presenta alguna otra de las circunstancias a que se refiere el párrafo siguiente que impida la ocupación de la vivienda.</li>
+<li>Si la vivienda resulta inadecuada por razón de la discapacidad sufrida por el contribuyente, por su cónyuge o por parientes, en línea directa o colateral, consanguínea o por afinidad, hasta el tercer grado, incluido, que convivan con él.</li>
+<li>Si la persona contribuyente disfruta de vivienda habitual por razón de cargo u ocupación y la vivienda adquirida no se utiliza. En este supuesto, el plazo de 12 meses se empieza a contar desde la fecha del cese en el correspondiente cargo u ocupación.</li>
+</ol>
+<p>Sin perjuicio de lo que establecen los dos párrafos anteriores, es necesario que la vivienda sea la residencia de la persona contribuyente durante un periodo continuado de 3 años. Se entiende que la vivienda ha tenido este carácter si, a pesar de no haber transcurrido el periodo de 3 años, se producen circunstancias que hacen necesario el cambio de vivienda, como la celebración de matrimonio, separación matrimonial, constitución de pareja de hecho, extinción de pareja de hecho, traslado laboral, obtención de primer empleo u ocupación más ventajosa, u otras análogas.</p>
+<p>Si se adquiere una vivienda habitual en un municipio rural habiendo disfrutado ya de las deducciones por adquisición o rehabilitación de la vivienda habitual, no se puede aplicar la deducción por la adquisición o rehabilitación de la nueva vivienda hasta que los importes invertidos en esta superen a los invertidos en las anteriores, en la medida en que hayan sido objeto de deducción.</p>
+<p>Si por la enajenación de una vivienda habitual, respecto de la cual se ha practicado cualquiera de las deducciones por adquisición y rehabilitación de la vivienda habitual en un municipio rural, se genera una ganancia patrimonial exenta por reinversión, la base de deducción para la adquisición o rehabilitación de la nueva vivienda debe minorarse en el importe de la ganancia patrimonial a la cual se aplica la exención por reinversión. En este caso, no puede practicarse deducción alguna para la adquisición de la nueva vivienda mientras los importes invertidos en la misma no superen tanto el precio de la anterior, en la medida en que haya sido objeto de deducción, como la ganancia patrimonial exenta por reinversión.</p>
+<p>La persona contribuyente, en los supuestos de nulidad matrimonial, divorcio o separación judicial, o extinción de la pareja estable, constituida de acuerdo con la Ley 25/2010, de 29 de julio, del libro segundo del Código civil de Cataluña, relativo a la persona y la familia, puede continuar practicando estas deducciones, por los importes pagados en el período impositivo para la adquisición de lo que fue durante la vigencia del matrimonio o de la pareja de hecho su vivienda habitual, siempre que siga teniendo esta condición para los hijos comunes y el progenitor en cuya compañía queden.</p>
+<p>El disfrute efectivo de las deducciones por adquisición y rehabilitación de la vivienda habitual en un municipio rural requiere que el importe comprobado del patrimonio de la persona contribuyente al finalizar el período impositivo exceda del valor obtenido de su comprobación al inicio, al menos en el importe de las inversiones llevadas a cabo, sin computar los intereses y demás gastos de financiación. A tal efecto, no deben computarse los incrementos o disminuciones de valor experimentados durante el período impositivo por los elementos patrimoniales que al final de dicho período sigan formando parte del patrimonio de la persona contribuyente.<br /><br /></p>
+<p><strong>Deducción por alquiler de la vivienda habitual en un municipio rural</strong></p>
+<p>La persona contribuyente puede deducirse el 15 %, hasta un máximo de 600 euros anuales, de los importes pagados en el período impositivo en concepto de alquiler de la vivienda habitual situada en un municipio rural, porcentaje que es del 20 % si la vivienda habitual es en un municipio rural de atenció especial.</p>
+<p>Para poder disfrutar de esta deducción, la persona contribuyente debe cumplir los requisitos siguientes:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>Que tenga 35 años o menos en la fecha de devengo del impuesto, o bien que sea miembro de una unidad familiar con hijos de hasta 16 años escolarizados en la escuela de la zona educativa o en el centro adscrito a la escuela primaria de referencia. Este requisito de escolarización no es exigible en el caso de hijos de hasta 3 años.</li>
+<li>Que la suma de su base imponible general y la del ahorro, menos el mínimo personal y familiar, en la declaración del impuesto, no sea superior a 30.000 euros anuales.</li>
+</ol>
+<p>En el caso de tributación conjunta, si alguno de los declarantes se encuentra en alguna de las circunstancias establecidas por la letra a, el importe máximo de la deducción es de 1.200 euros, y el límite máximo de la suma de la base imponible general y la del ahorro, menos el mínimo personal y familiar, de la unidad familiar es de 45.000 euros.</p>
+<p>Esta deducción solo se puede aplicar una vez, con independencia del hecho de que en un mismo sujeto pasivo puedan concurrir más de una de las circunstancias establecidas por la letra a, y es incompatible con la deducción por alquiler que establece el artículo 612-3 del Código tributario de Cataluña.</p>
+<p>Si, en relación con una misma vivienda, resulta que más de una persona contribuyente tiene derecho a la deducción, cada una de ellas puede aplicar en su declaración una deducción por el importe que se obtenga de dividir, entre el número de declarantes, el importe resultante de la aplicación del porcentaje de deducción o del límite máximo de deducción, que es de 1.200 euros.</p>
+<p>Las personas contribuyentes deben identificar al arrendador de la vivienda haciendo constar el NIF en la declaración-liquidación correspondiente.</p>
+<p>La<strong>&nbsp;lista de&nbsp;municipios</strong>&nbsp;que tienen la consideración de rural o rural de especial atención, de acuerdo con los criterios definidos en la Ley 8/2025, se puede consultar en el documento:&nbsp;<a href="https://govern.cat/govern/docs/2025/07/16/14/35/f8ef139f-1113-42b3-b3e8-440671147eb4.pdf" target="_blank" rel="noopener">El Estatuto de municipios rurales</a>. Hay que tener en cuenta que en el caso de <strong>Artesa de Segre</strong>&nbsp;y&nbsp;<strong>Tremp</strong>, que constan en la lista con la categoría “Rural Asimilado”, <strong>el inmueble que se adquiere no puede estar situado en la capital del municipio&nbsp;</strong>(Artesa de Segre y Tremp)<strong>&nbsp;sino en uno de sus núcleos agregados</strong>:&nbsp;</p>
+<ul>
+<li><a href="https://www.artesadesegre.cat/la-ciutat/nuclis-agregats" target="_blank" rel="noopener">Núcleos agregados de Artesa de Segre</a></li>
+<li><a href="https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1" target="_blank" rel="noopener">Núcleos agregados de Tremp</a></li>
+</ul>
+			</div>
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+                        <div class="blocs blocs-ancores">
+                            
+                            <span class="linkedAnchor" id="deducciones-de-ejercicios-anteriores"></span>
+                            <div class="row">
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<h2 class="basic_title col-sm-12 pd-10">Deducciones de ejercicios anteriores</h2>
+	
+
+	
+	
+	
+		
+	
+
+	
+	
+	
+
+	
+	
+	<div class="col-sm-8 columna_esquerra">
+		
+		
+		
+                    
+                
+	</div>
+
+	
+	
+	
+	
+		
+	
+	
+        <div class="col-sm-12 col-xs-12 columna_destacats">
+            
+            
+            
+
+            
+                
+                
+
+                <div class="inform_relacionada">
+                    
+                    <div >
+                        
+                        <ul class="list-group" role="list">
+                               
+                                
+                                    
+                                        
+                                            
+                                                
+                                                
+                                                    
+                                                    
+                                                        
+                                                            <li class="list-group-item" role="listitem">
+                                                                <img src="/web/resources/seuelectronica/fpca_article_nou/img/icona-24-vermell-bullet-atc.svg" alt="">
+                                                                <div class="list-group__contentwrapper">
+                                                                    <p class="paragraph_wrapper">
+                                                                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Se crea atributo miLloreFwkArticle para sacar imagen pdf gris en article mejora-->
+
+
+
+
+    
+
+
+
+    
+
+
+
+    
+        
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        
+                        
+                            
+                                
+                            
+                            
+                        
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+   
+        
+   
+   
+   
+
+
+
+
+
+
+
+
+
+    <a class=""
+        title="Este enlace se abre en una nueva pestaña: Deducciones de la cuota IRPF, ejercicio 2024"
+         
+        target="_blank" href="/web/.content/atc_tributs/irpf/Deduccions-IRPF-2024-ES.pdf">
+        <span class="list-group-item-wrapper-content">Deducciones de la cuota IRPF, ejercicio 2024</span>
+
+	    
+		    <span data-file="/web/.content/atc_tributs/irpf/Deduccions-IRPF-2024-ES.pdf" class="size-document"></span>
+	    
+
+        
+            <span class="sr-only">(Abrir en una nueva ventana.)</span>
+        
+
+    </a>
+    
+
+
+
+    <div
+    class="descEnllac" 
+     >
+         
+    </div>
+
+
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        
+                                                        
+                                                    
+                                                
+                                        
+                                    
+                                
+                            
+                                    
+                                        
+                                            
+                                                
+                                                
+                                                    
+                                                    
+                                                        
+                                                            <li class="list-group-item" role="listitem">
+                                                                <img src="/web/resources/seuelectronica/fpca_article_nou/img/icona-24-vermell-bullet-atc.svg" alt="">
+                                                                <div class="list-group__contentwrapper">
+                                                                    <p class="paragraph_wrapper">
+                                                                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Se crea atributo miLloreFwkArticle para sacar imagen pdf gris en article mejora-->
+
+
+
+
+    
+
+
+
+    
+
+
+
+    
+        
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        
+                        
+                            
+                                
+                            
+                            
+                        
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+   
+        
+   
+   
+   
+
+
+
+
+
+
+
+
+
+    <a class=""
+        title="Este enlace se abre en una nueva pestaña: Deducciones de la cuota IRPF, ejercicio 2023"
+         
+        target="_blank" href="/web/.content/atc_tributs/irpf/Deduccions-IRPF-2023-ES.pdf">
+        <span class="list-group-item-wrapper-content">Deducciones de la cuota IRPF, ejercicio 2023</span>
+
+	    
+		    <span data-file="/web/.content/atc_tributs/irpf/Deduccions-IRPF-2023-ES.pdf" class="size-document"></span>
+	    
+
+        
+            <span class="sr-only">(Abrir en una nueva ventana.)</span>
+        
+
+    </a>
+    
+
+
+
+    <div
+    class="descEnllac" 
+     >
+         
+    </div>
+
+
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        
+                                                        
+                                                    
+                                                
+                                        
+                                    
+                                
+                            
+                                    
+                                        
+                                            
+                                                
+                                                
+                                                    
+                                                    
+                                                        
+                                                            <li class="list-group-item" role="listitem">
+                                                                <img src="/web/resources/seuelectronica/fpca_article_nou/img/icona-24-vermell-bullet-atc.svg" alt="">
+                                                                <div class="list-group__contentwrapper">
+                                                                    <p class="paragraph_wrapper">
+                                                                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Se crea atributo miLloreFwkArticle para sacar imagen pdf gris en article mejora-->
+
+
+
+
+    
+
+
+
+    
+
+
+
+    
+        
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        
+                        
+                            
+                                
+                            
+                            
+                        
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+   
+        
+   
+   
+   
+
+
+
+
+
+
+
+
+
+    <a class=""
+        title="Este enlace se abre en una nueva pestaña: Deducciones de la cuota IRPF, ejercicio 2022"
+         
+        target="_blank" href="/web/.content/atc_tributs/irpf/Deduccions-IRPF-2022-es.pdf">
+        <span class="list-group-item-wrapper-content">Deducciones de la cuota IRPF, ejercicio 2022</span>
+
+	    
+		    <span data-file="/web/.content/atc_tributs/irpf/Deduccions-IRPF-2022-es.pdf" class="size-document"></span>
+	    
+
+        
+            <span class="sr-only">(Abrir en una nueva ventana.)</span>
+        
+
+    </a>
+    
+
+
+
+    <div
+    class="descEnllac" 
+     >
+         
+    </div>
+
+
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        
+                                                        
+                                                    
+                                                
+                                        
+                                    
+                                
+                            
+                                    
+                                        
+                                            
+                                                
+                                                
+                                                    
+                                                    
+                                                        
+                                                            <li class="list-group-item" role="listitem">
+                                                                <img src="/web/resources/seuelectronica/fpca_article_nou/img/icona-24-vermell-bullet-atc.svg" alt="">
+                                                                <div class="list-group__contentwrapper">
+                                                                    <p class="paragraph_wrapper">
+                                                                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Se crea atributo miLloreFwkArticle para sacar imagen pdf gris en article mejora-->
+
+
+
+
+    
+
+
+
+    
+
+
+
+    
+        
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        
+                        
+                            
+                                
+                            
+                            
+                        
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+   
+        
+   
+   
+   
+
+
+
+
+
+
+
+
+
+    <a class=""
+        title="Este enlace se abre en una nueva pestaña: Deducciones de la cuota IRPF, ejercicios 2020 y 2021"
+         
+        target="_blank" href="/web/.content/atc_tributs/irpf/Deduccions_IRPF_2021_es.pdf">
+        <span class="list-group-item-wrapper-content">Deducciones de la cuota IRPF, ejercicios 2020 y 2021</span>
+
+	    
+		    <span data-file="/web/.content/atc_tributs/irpf/Deduccions_IRPF_2021_es.pdf" class="size-document"></span>
+	    
+
+        
+            <span class="sr-only">(Abrir en una nueva ventana.)</span>
+        
+
+    </a>
+    
+
+
+
+    <div
+    class="descEnllac" 
+     >
+         
+    </div>
+
+
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        
+                                                        
+                                                    
+                                                
+                                        
+                                    
+                                
+                            
+                                    
+                                        
+                                            
+                                                
+                                                
+                                                    
+                                                    
+                                                        
+                                                            <li class="list-group-item" role="listitem">
+                                                                <img src="/web/resources/seuelectronica/fpca_article_nou/img/icona-24-vermell-bullet-atc.svg" alt="">
+                                                                <div class="list-group__contentwrapper">
+                                                                    <p class="paragraph_wrapper">
+                                                                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Se crea atributo miLloreFwkArticle para sacar imagen pdf gris en article mejora-->
+
+
+
+
+    
+
+
+
+    
+
+
+
+    
+        
+            
+                
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                        
+                        
+                            
+                                
+                            
+                            
+                        
+                    
+                    
+                    
+
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+            
+        
+        
+        
+        
+        
+    
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+   
+   
+   
+        
+   
+
+
+
+
+
+
+
+
+
+    <a class=""
+        title="Deducciones de la cuota IRPF, ejercicio 2019"
+         
+         href="/web/.content/atc_tributs/irpf/Deduccions_IRPF_2019_es.pdf">
+        <span class="list-group-item-wrapper-content">Deducciones de la cuota IRPF, ejercicio 2019</span>
+
+	    
+		    <span data-file="/web/.content/atc_tributs/irpf/Deduccions_IRPF_2019_es.pdf" class="size-document"></span>
+	    
+
+        
+
+    </a>
+    
+
+
+
+    <div
+    class="descEnllac" 
+     >
+         
+    </div>
+
+
+                                                                    </p>
+                                                                </div>
+                                                            </li>
+                                                        
+                                                        
+                                                    
+                                                
+                                        
+                                    
+                                
+                            
+                        </ul>
+                    </div>
+                </div>
+            
+        </div> <!--  cerramos div columna destacados / div 100% de enlaces -->
+	
+	
+
+
+                            </div>
+                        </div>
+                    
+				
+				
+				
+			
+			
+			
+			
+		</div>
+	
+</div></div>
+							</div>
+						</section>
+					</main>
+		</div>
+	<!--googleoff: index -->
+<!--googleoff: snippet-->
+
+	<div  id="fAvisLegal" ><div class="fpca_peu_new">
+					<footer class="in-faldo">
+						
+
+<div >
+
+
+
+
+
+
+
+    
+        <div class="fpca_peu_promocional">
+            
+
+                <div class="footer-cta">
+                    <div class="NG-container">
+                        <div class="footer-cta__wrapper">
+                            <div class="NG-row-flex NG-row-flex--vertical">
+                                <div class="NG-col">
+                                    <div class="footer-cta__description">
+                                        <script type="text/javascript">
+                                            $(document).ready(function() {
+                                                setInterval(function() {
+                                                    var date = moment(); //Get the current date
+                                                    $("#footerHour span").html(date.format("DD/MM/YYYY HH:mm:ss"));
+                                                }, 1000);
+                                            });
+                                        </script>
+                                        
+                                        <p class="paragraph_date" id="footerHour">Fecha y hora oficial:&nbsp;
+                                            <span class="date"> </span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+            
+        </div>
+    
+</div>
+
+<div >
+
+
+
+
+
+
+    
+        <div class="fpca_peu_xarxesSocials">
+            
+                <div class="footer-social">
+                    <div class="NG-container">
+                        <span class="footer-social_border--line" aria-label="border-stlye"></span>
+                        <div class="footer-social__wrapper">
+                            <div class="NG-row-flex NG-row-flex--vertical-md">
+                                <div class="NG-col">
+                                    <div class="footer-social__text">
+                                        
+                                        
+                                            
+                                        
+                                        <p class="footer-social__text-title">Sigue las redes sociales de la Agencia Tributaria de Cataluña:</p>
+                                    </div>
+                                </div>
+                                <div class="NG-col">
+                                    <ul class="footer-social__list">
+                                        
+                                        
+                                            <li class="footer-social__list-item">
+                                                
+                                                    
+                                                
+                                                <a class="footer-social__list-link" href="https://twitter.com/tributscat">
+                                                    <img class="footer-social__list-link-image js-footer-hover-img"
+                                                         alt="Icono de Twitter"
+                                                         data-default="/web/resources/fwkResponsive/fpca_peu_xarxesSocials/img/twitter-c.svg"
+                                                         data-hover="/web/resources/fwkResponsive/fpca_peu_xarxesSocials/img/twitter-c-sobre.svg"
+                                                         src="/web/resources/fwkResponsive/fpca_peu_xarxesSocials/img/twitter-c.svg"
+                                                    >
+                                                </a>
+                                            </li>
+                                        
+
+                                        
+                                        
+
+                                        
+                                        
+
+										
+                                        
+
+										
+                                        
+
+                                        
+                                        
+                                            <li class="footer-social__list-item">
+                                                
+                                                    
+                                                
+                                                <a class="footer-social__list-link" href="https://www.youtube.com/tributscat">
+                                                    <img class="footer-social__list-link-image js-footer-hover-img"
+                                                         alt="Icono de Youtube"
+                                                         data-default="/web/resources/fwkResponsive/fpca_peu_xarxesSocials/img/youtube-c.svg"
+                                                         data-hover="/web/resources/fwkResponsive/fpca_peu_xarxesSocials/img/youtube-c-sobre.svg"
+                                                         src="/web/resources/fwkResponsive/fpca_peu_xarxesSocials/img/youtube-c.svg"
+                                                    >
+                                                </a>
+                                            </li>
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-social_border">
+                            <span class="footer-social_border--line" aria-label="border-stlye"></span>
+                        </div>
+                    </div>
+                </div>
+            
+            
+        </div>
+    
+</div>
+
+<div >
+
+
+
+
+
+
+    
+        <div class="fpca_peu_contacte">
+            
+                <div class="footer-contact">
+                    <div class="NG-container">
+                        <div class="footer-contact__wrapper">
+
+                            <h2 class="footer-contact__title">
+                                Cómo te atendemos
+                            </h2>
+
+                            <div class="NG-row-flex NG-row-flex--vertical-md">
+                                <div class="NG-col footer-contact__description-wrapper">
+                                    <div class="footer-contact__description">
+                                        <div class="footer-contact__text">
+                                            <p>Puedes contactar con nosotros mediante cualquiera de los siguientes canales de contacto</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="NG-col footer-contact__list-wrapper">
+
+                                    
+
+                                    <ul class="footer-contact__list">
+                                        <li class="footer-contact__list-item">
+                                            <a class="footer-contact__list-link" target="_blank"
+                                               href="https://atc.gencat.cat/es/atencio/contacte/bustia">
+                                                <img class="footer-contact__list-img"
+                                                     alt=""
+                                                     src="/web/resources/fwkResponsive/seuelectronica/fpca_peu_contacte_seu/img/icona-atencio-bustia.svg" >
+                                                <span class="footer-contact__list-txt">
+                                                    Buzón de contacto
+                                                </span>
+                                                <span class="sr-only">. Abrir en una nueva ventana.</span>
+                                            </a>
+                                        </li>
+                                        <li class="footer-contact__list-item">
+                                            <a class="footer-contact__list-link" target="_blank"
+                                               href="http://web.gencat.cat/es/contacte/012/index.html">
+                                                <img class="footer-contact__list-img"
+                                                     alt=""
+                                                     src="/web/resources/fwkResponsive/seuelectronica/fpca_peu_contacte_seu/img/icona-atencio-012.svg" >
+                                                <span class="footer-contact__list-txt">
+                                                    Teléfono 012
+                                                </span>
+                                                <span class="sr-only">. Abrir en una nueva ventana.</span>
+                                            </a>
+                                        </li>
+                                        <li class="footer-contact__list-item">
+                                            <a class="footer-contact__list-link" target="_blank"
+                                               href="https://atc.gencat.cat/ca/atencio/cita-previa/cita-telefonica/">
+                                                <img class="footer-contact__list-img"
+                                                     alt=""
+                                                     src="/web/resources/fwkResponsive/seuelectronica/fpca_peu_contacte_seu/img/icona-atencio-atc-us-truca.svg" >
+                                                <span class="footer-contact__list-txt">
+                                                    L’ATC us truca
+                                                </span>
+                                                <span class="sr-only">. Abrir en una nueva ventana.</span>
+                                            </a>
+                                        </li>
+                                        <li class="footer-contact__list-item">
+                                            <a class="footer-contact__list-link" target="_blank"
+                                               href="https://atc.gencat.cat/oficines" >
+                                                <img class="footer-contact__list-img"
+                                                     alt=""
+                                                     src="/web/resources/fwkResponsive/seuelectronica/fpca_peu_contacte_seu/img/icona-atencio-oficines-tributaries.svg" >
+                                                <span class="footer-contact__list-txt">
+                                                    Oficinas de la ATC
+                                                </span>
+                                                <span class="sr-only">. Abrir en una nueva ventana.</span>
+                                            </a>
+                                        </li>
+                                        <li class="footer-contact__list-item">
+                                            <a class="footer-contact__list-link" target="_blank"
+                                               href="https://atc.gencat.cat/ca/atencio/cita-previa/" >
+                                                <img class="footer-contact__list-img"
+                                                     alt=""
+                                                     src="/web/resources/fwkResponsive/seuelectronica/fpca_peu_contacte_seu/img/icona-atencio-cita-previa.svg" >
+                                                <span class="footer-contact__list-txt">
+                                                    Pide cita
+                                                </span>
+                                                <span class="sr-only">. Abrir en una nueva ventana.</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            
+        </div>
+    
+
+
+
+
+
+
+
+    
+        <div class="fpca_peu_ambFinancamentDe">
+            
+                <div class="footer-logos">
+                    <div class="NG-container">
+                        <div class="footer-logos__wrapper">
+                            <div class="NG-row-flex NG-row-flex--vertical-xs NG-border">
+                                <div class="NG-col NG-col--fullwidth-xs">
+                                    <div class="footer-logos__description">
+                                        <span>Con la financiación de</span>
+                                    </div>
+                                </div>
+                                <div class="NG-col NG-col--fullwidth-xs">
+
+                                    
+                                        <ul class="footer-logos__list">
+                                            
+                                                
+                                                    
+                                                        
+                                                        
+                                                    
+
+                                                    <li class="footer-logos__list-item">
+                                                        <a class="footer-logos__list-link"
+                                                           target="_self"
+                                                           href="/es/">
+                                                            <img alt="Con la financiación de"
+                                                                 
+                                                                 height="56px" 
+                                                                 src="/web/.content/faldo/ambFinancament/imatges/UE-COFI-FEDER-60.png"
+                                                            >
+                                                            
+                                                        </a>
+                                                    </li>
+
+                                                
+                                            
+                                        </ul>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+            
+        </div>
+    
+</div><div class="footer-bottom">
+							<div class="NG-container">
+								<div class="footer-bottom__wrapper">
+									<div class="NG-row-flex NG-row-flex--space-between NG-row-flex--vertical-reverse-xs">
+
+										<div class="NG-col">
+											<a class="footer-bottom__logo-link" target="_blank" title="www.gencat.cat" href="https://web.gencat.cat/es/">
+														<img class="footer-bottom__logo" src="/web/resources/fwkResponsives/common/img/logo_generalitat_blanc.svg" alt="www.gencat.cat" srcset="">
+															</a>
+												</div>
+
+										<div class="NG-col NG--flex75">
+											<ul class="footer-bottom__list">
+												<li class="footer-bottom__list-item">
+															<a class="footer-bottom__list-link" title="Sobre la seu" target="_blank"
+															   href="https://dogc.gencat.cat/es/document-del-dogc/index.html?documentId=777630">
+																	Sobre la sede</a>
+														</li>
+
+													<li class="footer-bottom__list-item">
+															<a class="footer-bottom__list-link" title="Protección de datos" target="_self"
+															   href="/es/agencia/proteccio-dades/">
+																	Protección de datos</a>
+														</li>
+
+													<li class="footer-bottom__list-item">
+															<a class="footer-bottom__list-link" title="Política de galetes" target="_blank"
+															   href="https://tramits.gencat.cat/es/ajuda/politica-de-galetes/">
+																	 Política de cookies</a>
+														</li>
+
+													<li class="footer-bottom__list-item">
+															<a class="footer-bottom__list-link" title="Accessibilitat" target="_self"
+															   href="/es/ajuda/accessibilitat/index.html">
+																	Accesibilidad</a>
+														</li>
+
+													<li class="footer-bottom__list-item">
+															<a class="footer-bottom__list-link" title="Mapa web" target="_self"
+															   href="/es/ajuda/mapa-web/">
+																	Mapa web</a>
+														</li>
+
+													</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+					
+					<div class="NG-container">
+						<div class="NG-row-flex NG-goToTop__wrapper">
+							<button class="NG-goToTop js-NG-goToTop" style="display: block;">
+								<img class="NG-goToTop_image"
+									 alt="Volver arriba"
+									 src="/web/resources/fwkResponsive/seuelectronica/fpca_peu_seuNou/img/chevron-up-w.svg">
+							</button>
+						</div>
+					</div>
+				</div>
+				</div><!--googleon: snippet -->
+<!--googleon: index-->
+<!-- GKPSTX01-->
+</body>
+	</html>

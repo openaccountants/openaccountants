@@ -1,0 +1,140 @@
+{
+  "reviewed_initial_head": "933e6993fe5305609c849551765a27ba9a116e8b",
+  "repair_head": "6f53123a0306500efec732d97e42abc5ef764388",
+  "changed_files": [
+    "skills/international/gibraltar/README.md",
+    "skills/international/gibraltar/gi-individual-income-tax.md",
+    "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/ledger.json",
+    "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md",
+    "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/relief-controls.md",
+    "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/review-provenance-repair.json",
+    "skills/research/gibraltar-2026/remaining-reliefs-2026-10-28/writer-section-repair.json"
+  ],
+  "all_other_tracked_files_byte_exact": true,
+  "corrected_locations": [
+    {
+      "id": "REL-01",
+      "canonical_H2": "The base",
+      "anchor": "Solar and wind installation deductions",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-02",
+      "canonical_H2": "The base",
+      "anchor": "Solar and wind installation deductions",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-03",
+      "canonical_H2": "The base",
+      "anchor": "Solar and wind installation deductions",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-04",
+      "canonical_H2": "The base",
+      "anchor": "Property energy-performance deductions",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-05",
+      "canonical_H2": "The base",
+      "anchor": "Property energy-performance deductions",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-06",
+      "canonical_H2": "The base",
+      "anchor": "Property energy-performance deductions",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-07",
+      "canonical_H2": "The base",
+      "anchor": "Electric-vehicle charging systems",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-08",
+      "canonical_H2": "The base",
+      "anchor": "Electric-vehicle charging systems",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-09",
+      "canonical_H2": "The base",
+      "anchor": "Electric-vehicle charging systems",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-10",
+      "canonical_H2": "The base",
+      "anchor": "Disabled access to business property",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-11",
+      "canonical_H2": "The base",
+      "anchor": "Disabled access to business property",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-12",
+      "canonical_H2": "The base",
+      "anchor": "Disabled access to business property",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-13",
+      "canonical_H2": "The base",
+      "anchor": "Disabled access to business property",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    },
+    {
+      "id": "REL-14",
+      "canonical_H2": "Sources",
+      "anchor": "Not yet confirmed:",
+      "verified_in_own_section": true,
+      "rule_and_source_fields_exact": true
+    }
+  ],
+  "all_74_rule_fields_unchanged": true,
+  "all_93_proof_units_data_exact": true,
+  "inherited_60_rows_data_exact": true,
+  "old_90_paragraph_map_data_exact": true,
+  "all_90_destinations_still_resolve": true,
+  "markdown_only_14_location_prefixes_changed": true,
+  "guide_only_single_provenance_paragraph_changed": true,
+  "guide_sha256": "793d59fe22b71567a70ff4cc3f6114d1d1724b83b16ebf2482a53ac0c0268c8c",
+  "guide_protected_metadata_CTA_tax_content_arithmetic_exact": true,
+  "control_only_title_changed": true,
+  "readme_only_two_provenance_paragraphs_changed": true,
+  "readme_frontmatter_including_all_partial_reasons_exact": true,
+  "readme_changes": [
+    {
+      "old": "The reviewed continuation is published at `f7d59d7c`, with all five CI checks passing. Its [bounded closure](../../research/gibraltar-2026/final-country-review-2026-10-28/closure-4d2640c6/closure.md) records acceptance of the repaired content. The individual v0.11 property/energy addition remains local and unreviewed: its [full 74-row ledger and complete topic map](../../research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md) preserve the 60 accepted rows and add 14 rows covering four relief schemes. Four additional conditional calculation controls accompany it. This addition does not reopen the completed review or establish complete-country coverage.",
+      "new": "The reviewed continuation is published at `f7d59d7c`, with all five CI checks passing. Its [bounded closure](../../research/gibraltar-2026/final-country-review-2026-10-28/closure-4d2640c6/closure.md) records acceptance of the repaired content. The individual v0.11 property/energy addition has a [separate independent review record](../../research/gibraltar-2026/remaining-reliefs-independent-review-2026-10-28/review.md): its [full 74-row ledger and complete topic map](../../research/gibraltar-2026/remaining-reliefs-2026-10-28/ledgers/gi-individual-income-tax.md) preserve the 60 accepted rows and add 14 rows covering four relief schemes. Four additional conditional calculation controls accompany it. This addition does not reopen the completed review or establish complete-country coverage."
+    },
+    {
+      "old": "1. The ordinary corporate, individual, payroll and transaction-tax continuation is reviewed and published at `f7d59d7c`. The separate individual v0.11 property/energy addition requires independent review before a later country batch publication. The finite final domestic documentation/foreign-credit checks are [recorded here](../../research/gibraltar-2026/final-ordinary-checks-2026-10-28/research-record.md); genuine source/operational limits remain named partials. The completed review and five passing checks retain their exact published scope; review only genuinely new material before its publication. Invoicing/accounting and specialist gaps remain in their stated scopes.\n2. Close material source/interpretation questions recorded in each Guide and the dated Gibraltar files in [research](../../../docs/research/). The company accounts audit cross-reference remains unresolved. The corporate mixed-loss calculation now has an independently reviewed statutory reading; administrative acceptance has not been verified.\n3. All eighteen Gibraltar Guides now have `sources:` frontmatter, including the corporate, individual and property baseline Guides. Verify that every operative claim is covered by the listed source versions. Body citations alone do not satisfy issue #398's metadata requirement. Recheck resolved sources and recompute examples on the exact reviewed revision.\n4. Obtain independent source review and the named accountant review required by GOAL.md. Record identity, date, exact revision and findings; do not promote tiers from automated checks.\n5. Run Guide and sync checks plus the owner coverage report. The report reads the source tree in memory and classifies slugs/categories. Explicit mappings now connect the consumption, connected-party and cross-border drafts to the current tax domain names. Zero mechanically missing domains would still not establish legal completeness; the gaps above remain open.\n6. Merge only after required checks and reviews, then verify platform ingestion and served content. Keep issue #398 open until the whole acceptance scope is proved.",
+      "new": "1. The ordinary corporate, individual, payroll and transaction-tax continuation is reviewed and published at `f7d59d7c`. The separate individual v0.11 property/energy addition has its own independent review record; publish it only after its findings are closed. The finite final domestic documentation/foreign-credit checks are [recorded here](../../research/gibraltar-2026/final-ordinary-checks-2026-10-28/research-record.md); genuine source/operational limits remain named partials. The completed review and five passing checks retain their exact published scope; review only genuinely new material before its publication. Invoicing/accounting and specialist gaps remain in their stated scopes.\n2. Close material source/interpretation questions recorded in each Guide and the dated Gibraltar files in [research](../../../docs/research/). The company accounts audit cross-reference remains unresolved. The corporate mixed-loss calculation now has an independently reviewed statutory reading; administrative acceptance has not been verified.\n3. All eighteen Gibraltar Guides now have `sources:` frontmatter, including the corporate, individual and property baseline Guides. Verify that every operative claim is covered by the listed source versions. Body citations alone do not satisfy issue #398's metadata requirement. Recheck resolved sources and recompute examples on the exact reviewed revision.\n4. Obtain independent source review and the named accountant review required by GOAL.md. Record identity, date, exact revision and findings; do not promote tiers from automated checks.\n5. Run Guide and sync checks plus the owner coverage report. The report reads the source tree in memory and classifies slugs/categories. Explicit mappings now connect the consumption, connected-party and cross-border drafts to the current tax domain names. Zero mechanically missing domains would still not establish legal completeness; the gaps above remain open.\n6. Merge only after required checks and reviews, then verify platform ingestion and served content. Keep issue #398 open until the whole acceptance scope is proved."
+    }
+  ],
+  "other_39_accepted_manifest_blobs_exact": true,
+  "prior_independent_review_archived_evidence_exact": true,
+  "main_H2s": 9,
+  "main_oa_checks": 2
+}

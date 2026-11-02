@@ -1,0 +1,704 @@
+[
+  {
+    "line": 23,
+    "section": "Who this applies to",
+    "text": "Spanish IVA applies to the peninsula and Balearic Islands. The Canary Islands, Ceuta and Melilla are outside its territory; IGIC/IPSI are separate taxes. Establish the taxable person's business activity, establishment, transactions and filing administration before preparing the return ([LIVA arts. 3–5](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a3)). This Guide covers ordinary-regime sole traders and companies, including ordinary mixed taxable/exempt activities. VAT groups, modules, retailer surcharge, agriculture, cash-accounting taxpayers, OSS/IOSS, travel agents, used goods, investment gold, fuel-depot payments and other special regimes need their own computation. A customer receiving a cash-scheme invoice still needs its special deduction timing. The ordinary foral result-allocation method is supplied below. Use the separate [Canary Islands IGIC](es-canary-islands-igic.md) and [Ceuta/Melilla IPSI](es-ceuta-melilla-ipsi.md) Guides for their supplied ordinary methods and stated limits. The precise remaining territorial and other VAT reservations do not imply zero liabilities.",
+    "references": {}
+  },
+  {
+    "line": 25,
+    "section": "Who this applies to",
+    "text": "Use actual invoices/registers, customs documents, prior returns and elections. Bank statements help reconcile payments; they do not replace the art. 97 deduction document or determine the place of supply. Unknown country, customer status, business use or rate stays an unresolved transaction rather than becoming a domestic 21% sale or an automatically deductible reverse charge ([LIVA arts. 69–70, 84, 97](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a97)).",
+    "references": {}
+  },
+  {
+    "line": 29,
+    "section": "Rates, bands and thresholds",
+    "text": "EUR unless stated. Apply the rate at **devengo**, not the bank-payment date or today's consolidated wording ([art. 90.2](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90)).",
+    "references": {}
+  },
+  {
+    "line": 31,
+    "section": "Rates, bands and thresholds",
+    "text": "| Item | Rate/threshold | Period | Official source |",
+    "references": {}
+  },
+  {
+    "line": 33,
+    "section": "Rates, bands and thresholds",
+    "text": "| Ordinary general rate | **21%** | 2026, subject to the dated exceptions below | [LIVA art. 90](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90) |",
+    "references": {}
+  },
+  {
+    "line": 34,
+    "section": "Rates, bands and thresholds",
+    "text": "| Enumerated reduced supplies | **10%**: qualifying food, water, passenger transport, hospitality, housing and the other statutory categories | 2026 | [Art. 91.Uno](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a91) |",
+    "references": {}
+  },
+  {
+    "line": 35,
+    "section": "Rates, bands and thresholds",
+    "text": "| Enumerated super-reduced supplies | **4%**: listed basic foods including olive oil, qualifying books/periodicals, human medicines, specified disability/protected-home supplies and other listed categories | 2026 | [Art. 91.Dos](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a91) |",
+    "references": {}
+  },
+  {
+    "line": 36,
+    "section": "Rates, bands and thresholds",
+    "text": "| Certain qualifying donated goods | **0%** under the specific public-interest recipient/use conditions; distinguish from exemption/outside-scope supplies | 2026 | [Art. 91.Cuatro](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a91) |",
+    "references": {}
+  },
+  {
+    "line": 37,
+    "section": "Rates, bands and thresholds",
+    "text": "| Qualifying electricity/gas/biomass products | Temporary **10%**; electricity uses contracted fixed power **≤10 kW** under the published AEAT route, including equality from 22 March, or the specified severe-vulnerability social-bonus route; original wording and April clarification are explained below | **22 March–31 May 2026**, with the April wording/May discontinuance conditions below | [RDL 7/2026 art. 42](https://www.boe.es/buscar/act.php?id=BOE-A-2026-6544#a4-4); [AEAT actual June discontinuance](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-01-novedades-destacar-2026/tipos-impositivos.html) |",
+    "references": {}
+  },
+  {
+    "line": 38,
+    "section": "Rates, bands and thresholds",
+    "text": "| Listed fuels, including the specified non-motor LPG/kerosene categories | Temporary **10%** for the art. 42.c excise headings | **22 March–30 June 2026**; ordinary **21% from 1 July**, subject to later product-specific enactment | [RDL 7/2026 art. 42.c](https://www.boe.es/buscar/act.php?id=BOE-A-2026-6544#a4-4); [AEAT 2026 rate account](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-01-novedades-destacar-2026/tipos-impositivos.html) |",
+    "references": {}
+  },
+  {
+    "line": 39,
+    "section": "Rates, bands and thresholds",
+    "text": "| Later electricity/gas conditional relief | **10%** only if the named product's official comparison index exceeds the prior-year corresponding index by **more than 15%**; otherwise 21% | August uses June CPI; September uses July CPI; November uses September CPI; December uses October CPI | [RDL 18/2026 arts. 10–11](https://www.boe.es/buscar/act.php?id=BOE-A-2026-14112#a1-2); [RDL 25/2026 arts. 18–19](https://www.boe.es/buscar/act.php?id=BOE-A-2026-20265#a1-10) |",
+    "references": {}
+  },
+  {
+    "line": 40,
+    "section": "Rates, bands and thresholds",
+    "text": "| Retailer equivalence surcharge | General **5.2%**; art. 91.Uno goods **1.4%**; art. 91.Dos goods **0.5%**; excise tobacco **1.75%** | 2026 ordinary statutory rates; separately check dated product measures | [LIVA art. 161](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a161) |",
+    "references": {}
+  },
+  {
+    "line": 41,
+    "section": "Rates, bands and thresholds",
+    "text": "| Agriculture-regime compensation | **12%** agriculture/forestry and accessory services; **10.5%** livestock/fishing and accessory services | 2026 | [Art. 130.5](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a130) |",
+    "references": {}
+  },
+  {
+    "line": 42,
+    "section": "Rates, bands and thresholds",
+    "text": "| Free advertising objects | Same-recipient annual cost **200** boundary, with redistribution exception | 2026 | [Art. 7.4](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a7) |",
+    "references": {}
+  },
+  {
+    "line": 43,
+    "section": "Rates, bands and thresholds",
+    "text": "| EU distance/TBE location gateway | Combined **10,000**, previous and current calendar year, under the establishment/dispatch conditions below | 2026 | [Arts. 68/70/73](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a73) |",
+    "references": {}
+  },
+  {
+    "line": 44,
+    "section": "Rates, bands and thresholds",
+    "text": "| Specified intra-EU acquirers | Distinct **10,000** annual acquisition non-subjection gateway | 2026 | [Art. 14](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a14) |",
+    "references": {}
+  },
+  {
+    "line": 45,
+    "section": "Rates, bands and thresholds",
+    "text": "| Cash-scheme entry/exclusion | Previous-year turnover **≤2m**, annualised for a prior-year starter; cash receipts **>100,000** from one recipient exclude for following year | 2026 | [Art. 163 decies](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a163decies), [RIVA art. 61 nonies](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a61nonies) |",
+    "references": {}
+  },
+  {
+    "line": 46,
+    "section": "Rates, bands and thresholds",
+    "text": "| General prorrata | `P = ceil(100 × deduction-entitling turnover / included total turnover)` | Annual 2026 percentage | [LIVA art. 104](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a104) |",
+    "references": {}
+  },
+  {
+    "line": 47,
+    "section": "Rates, bands and thresholds",
+    "text": "| Compulsory special prorrata | General-method deduction exceeds special-method deduction by **10% or more** | Annual 2026 comparison | [Art. 103.Dos.2](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a103) |",
+    "references": {}
+  },
+  {
+    "line": 48,
+    "section": "Rates, bands and thresholds",
+    "text": "| Ordinary passenger-car business-use presumption | **50%** after establishing business allocation; six listed vehicle uses presumed **100%** | 2026 | [Art. 95.Tres/Cuatro](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a95) |",
+    "references": {}
+  },
+  {
+    "line": 49,
+    "section": "Rates, bands and thresholds",
+    "text": "| Investment-good definition | Tangible working asset normally used **more than one year**; excludes value **below 3,005.06** and the other statutory exclusions | 2026 | [Art. 108](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a108); [AEAT 2026 euro expression](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-05-deducciones-devoluciones/deducciones/regularizacion-deducciones-bienes-inversion/concepto-bienes-inversion.html) |",
+    "references": {}
+  },
+  {
+    "line": 50,
+    "section": "Rates, bands and thresholds",
+    "text": "| Investment-good annual adjustment | Difference **strictly over 10 percentage points**; divide original-versus-current deduction difference by **5**, or **10** for land/buildings | Acquisition/use year plus statutory four/nine following-year window | [Arts. 107–109](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a107) |",
+    "references": {}
+  },
+  {
+    "line": 51,
+    "section": "Rates, bands and thresholds",
+    "text": "| Exercise of input deduction; unused return credit | Separate **four-year** clocks: deduction from entitlement arising; return credit from filing the return generating it | 2026 | [Arts. 99–100](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a99) |",
+    "references": {}
+  },
+  {
+    "line": 52,
+    "section": "Rates, bands and thresholds",
+    "text": "| Monthly filing by prior-year turnover | Turnover **over 6,010,121.04**, plus the other monthly categories | 2026 | [RIVA art. 71.3](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a71) |",
+    "references": {}
+  },
+  {
+    "line": 53,
+    "section": "Rates, bands and thresholds",
+    "text": "| Simplified invoice issue limits | **400** generally; **3,000** in enumerated sectors, including VAT; deduction still requires extra recipient/VAT detail | 2026 | [RD 1619/2012 arts. 4/7.2](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696#a4) |",
+    "references": {}
+  },
+  {
+    "line": 55,
+    "section": "Rates, bands and thresholds",
+    "text": "**Energy dates require their own source ledger.** The initial electricity provision used **less than 10 kW**; **RDL 10/2026 DF 2.2**, in force **30 April 2026**, substituted **less than or equal to 10 kW**. The formal April commencement and the original operative/explanatory wording must be kept distinct from AEAT’s published 22 March application, supplied below. June electricity/gas relief ceased under the CPI condition, while the listed fuel relief continued through June. Later August/September/November/December provisions are separate conditional authorisations, not an uninterrupted extension. Record the exact product/subclass, comparison months, official index evidence, tax point and result. The original equality-wording reconciliation is recorded below; the not-yet-published October index for December must not be invented ([RDL 7/2026 art. 42 amendment history](https://www.boe.es/buscar/act.php?id=BOE-A-2026-6544#a4-4); [RDL 10/2026 DF 2.2/4](https://www.boe.es/buscar/act.php?id=BOE-A-2026-9286); [RDL 18/2026 arts. 10–11](https://www.boe.es/buscar/act.php?id=BOE-A-2026-14112#a1-3); [RDL 25/2026 arts. 18–19](https://www.boe.es/buscar/act.php?id=BOE-A-2026-20265#a1-11)).",
+    "references": {}
+  },
+  {
+    "line": 57,
+    "section": "Rates, bands and thresholds",
+    "text": "**Exactly 10 kW: the published AEAT calculation route.** For an otherwise qualifying electricity delivery, import or intra-Community acquisition with established contracted fixed power **exactly 10 kW**, [AEAT’s 2026 account](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-01-novedades-destacar-2026/tipos-impositivos.html) expressly applies **10% from 22 March through 31 May 2026**, including 22 March–29 April. Record the source reconciliation: [original RDL 7/2026](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-6544) already described power not exceeding 10 kW in its preamble, while operative article 42(a) literally said below 10 kW. [RDL 10/2026 preamble II/DF 2.2](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-9286) describes its inclusive wording as clarification of the original interpretation without changing content; its formal DF 4 commencement remains **30 April**. The ordinary computation here follows the expressly published AEAT application and this same-provision context. That does not turn the original operative wording into an inclusive quotation or supply a separately enacted express retroactivity clause.",
+    "references": {}
+  },
+  {
+    "line": 59,
+    "section": "Rates, bands and thresholds",
+    "text": "Under this published route, an ordinary VAT base of EUR 1,000 at a stipulated 15 April 2026 tax point gives VAT EUR 100 at 9.999 kW or exactly 10 kW. At 10.001 kW, without the separate severe-vulnerability/social-bonus entitlement or another relief, the ordinary 21% rate gives EUR 210. Exact 10 kW gives EUR 100 on 22 March, 29 April, 30 April and 31 May; the same ordinary transaction gives EUR 210 on 1 June, following AEAT’s actual electricity discontinuance. Establish the legal tax point and separate entitlement facts; no result is inferred solely from the invoice date ([LIVA arts. 75/90](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a75)). Later conditional electricity measures keep their own dates and CPI tests.",
+    "references": {}
+  },
+  {
+    "line": 61,
+    "section": "Rates, bands and thresholds",
+    "text": "**Nonmotor LPG and kerosene, including the early interval.** For ordinary taxable deliveries, imports and intra-Community acquisitions of nonmotor LPG under excise heading **1.8** or nonmotor kerosene under **1.12**, apply **10% at tax points from 22 March through 30 June 2026**, including 22 March–29 April. Original [RDL 7/2026 art. 42(c)/DF 21](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-6544) already listed both headings, although its introductory product description referred to motor fuels; [Ley 38/1992 art. 50.1](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28741&p=20260321&tn=1#a50) identifies the two nonmotor categories. [RDL 10/2026 preamble II and DF 2.2](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-9286) expressly explain the change as clarifying the original interpretation without changing its content; the amendment removes that restrictive introduction and keeps the product list. Its formal DF 4 commencement is 30 April. This source chain and [AEAT's explicit 22 March–30 June application](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-01-novedades-destacar-2026/tipos-impositivos.html) supply the ordinary early-interval result; no separate express retroactivity clause or 21% early gap is asserted. AEAT confirms the fuel-CPI condition kept the relief through June and the return to 21% from 1 July.",
+    "references": {}
+  },
+  {
+    "line": 63,
+    "section": "Rates, bands and thresholds",
+    "text": "On a stipulated ordinary taxable base of EUR 1,000, with the correct product classification and no other exemption or special rule, VAT is EUR 100 at tax points on 22 March, 29 April, 30 April, 1 June and 30 June; it is EUR 210 on 1 July under the ordinary rate. Apply separately enacted later product/CPI measures to their own periods. Use the legal tax point, which is not automatically the invoice date ([LIVA arts. 75/90](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a75)). This source conclusion does not decide a historic invoice-correction or final-assessment procedure.",
+    "references": {}
+  },
+  {
+    "line": 65,
+    "section": "Rates, bands and thresholds",
+    "text": "**Housing cutover on 1 December 2026.** Before that date, ordinary residential rent is exempt unless an existing exclusion, such as hotel-type services, applies. From that date, furnished apartment/home letting to the same tenant for **at most 30 nights** also falls outside the exemption, except the stated landlord-habitual-home case; the amended 10% hospitality provision includes the specified letting. Qualifying renovation still requires the **two-year** age and **materials ≤40% of base** tests. From December, its scope additionally includes homes destined for habitual letting regardless of landlord type and requires the specified non-cash payment. The protected-home 4% extension adds permanently/indefinitely classified housing from that date. Use the prior text for earlier devengos; do not apply the future consolidated text across the whole year ([RDL 29/2026 art. 7](https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823#a7); [prior LIVA art. 91](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740&b=124&tn=1&p=20241221#a91)).",
+    "references": {}
+  },
+  {
+    "line": 69,
+    "section": "Rates, bands and thresholds / Energy conditions resolved from the official indices",
+    "text": "The following are **annual**, product-specific changes from INE's base 2025 national-subclass table, not the headline IPC or the monthly change. Each 2026 index is compared with the **same month of 2025**; each is below115% of that earlier index. Therefore the statutory **more-than 15%** trigger fails for both products in each listed tax month:",
+    "references": {}
+  },
+  {
+    "line": 71,
+    "section": "Rates, bands and thresholds / Energy conditions resolved from the official indices",
+    "text": "| VAT month 2026 | Reference month | Electricity index 2026 / 2025; annual change | Natural-gas index 2026 / 2025; annual change | Result under the conditional provision | Official sources |",
+    "references": {}
+  },
+  {
+    "line": 73,
+    "section": "Rates, bands and thresholds / Energy conditions resolved from the official indices",
+    "text": "| August | June |105.293 /99.307;6.0% |98.858 /98.095;0.8% |21%;10% reduction not activated |[INE table 76128](https://www.ine.es/jaxiT3/Tabla.htm?t=76128&L=0),[RDL 18/2026 art.10](https://www.boe.es/buscar/act.php?id=BOE-A-2026-14112#a1-2) |",
+    "references": {}
+  },
+  {
+    "line": 74,
+    "section": "Rates, bands and thresholds / Energy conditions resolved from the official indices",
+    "text": "| September | July |108.894 /100.501;8.4% |100.892 /96.918;4.1% |21%;10% reduction not activated |[INE table 76128](https://www.ine.es/jaxiT3/Tabla.htm?t=76128&L=0),[RDL 18/2026 art.11](https://www.boe.es/buscar/act.php?id=BOE-A-2026-14112#a1-3) |",
+    "references": {}
+  },
+  {
+    "line": 75,
+    "section": "Rates, bands and thresholds / Energy conditions resolved from the official indices",
+    "text": "| November | September |111.667 /100.275;11.4% |101.347 /97.146;4.3% |21%;10% reduction not activated |[INE table 76128](https://www.ine.es/jaxiT3/Tabla.htm?t=76128&L=0),[RDL 25/2026 art.18](https://www.boe.es/buscar/act.php?id=BOE-A-2026-20265#a1-10) |",
+    "references": {}
+  },
+  {
+    "line": 77,
+    "section": "Rates, bands and thresholds / Energy conditions resolved from the official indices",
+    "text": "The gas-natural trigger also governs the listed biomass briquettes/pellets and firewood in these articles; do not substitute a heating-oil index. RDL 18 writes the electricity subclass as 04.5.10; INE's present table labels the same electricity product 04.5.1.0, also used by RDL 25. June's **16.1% monthly** electricity increase is not its **6.0% annual** increase and does not activate August relief. The October indices required for **December** were not published at the 27 October read date; retain the conditional rule without predicting its result. The November determination is already possible from September's published values.",
+    "references": {}
+  },
+  {
+    "line": 83,
+    "section": "The base / Establish the transaction before calculating VAT",
+    "text": "Use the full consideration under arts. 78–79, including taxable ancillary charges and price-linked subsidies; identify discounts, genuine damages and disbursements separately. For a VAT-inclusive gross amount at a confirmed rate r, base is `gross/(1+r)` and VAT is the difference. Income-tax retention reduces the customer's settlement, not the invoice's VAT base; processor/platform fees and withholding are separately reconciled. A bank receipt alone does not support grossing up by an assumed retention rate ([LIVA arts. 75, 78–80](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a78)).",
+    "references": {}
+  },
+  {
+    "line": 85,
+    "section": "The base / Establish the transaction before calculating VAT",
+    "text": "Goods ordinarily accrue on making them available, services when performed, continuous supplies when the relevant consideration becomes due, and advance payments on receipt under the statutory exceptions. A late invoice or payment does not automatically move a completed ordinary-regime supply into the later quarter. Reconcile credit notes/base changes under art. 80 and input corrections under art. 114; bad debts, insolvency and property transfers need their particular statutory conditions, not simply a reversed bank payment ([arts. 75, 80, 114](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a75)).",
+    "references": {}
+  },
+  {
+    "line": 87,
+    "section": "The base / Establish the transaction before calculating VAT",
+    "text": "Exempt medical, education, insurance, financial or residential transactions require the exact art. 20 category and conditions. Their treatment differs from exports and qualifying intra-EU goods supplies retaining input rights, from a non-Spanish B2B service and from a statutory zero-rate supply. Loan principal, owner transfers and payroll are not sales merely because they pass through the business bank; document what the payment settles ([arts. 4, 7, 20–25, 94](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a94)).",
+    "references": {}
+  },
+  {
+    "line": 91,
+    "section": "The base / First remove non-business and blocked input VAT",
+    "text": "Require the taxpayer's compliant invoice or relevant customs/reverse-charge document, invoice receipt and the relevant tax point. A simplified invoice must carry the recipient NIF/address and separately stated quota to support deduction. Use the actual VAT amount and rate; never reconstruct every purchase at 21% ([LIVA arts. 97–99](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a97); [invoice regulation arts. 6/7](https://www.boe.es/buscar/act.php?id=BOE-A-2012-14696#a7)).",
+    "references": {}
+  },
+  {
+    "line": 93,
+    "section": "The base / First remove non-business and blocked input VAT",
+    "text": "Art. 95 generally requires direct/exclusive business use for ordinary goods/services. Partly business-used investment goods instead use a supported business-use fraction; passenger vehicles have the 50% presumption once at least partial business allocation is proved, with the specified 100% uses. Related accessories, fuel, parking/tolls and repair use art. 95.Cuatro. Records must establish business ownership/registration and use; an accounting entry or the return alone is insufficient. Correct a proven different use fraction through the statutory mechanism ([art. 95](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a95)).",
+    "references": {}
+  },
+  {
+    "line": 95,
+    "section": "The base / First remove non-business and blocked input VAT",
+    "text": "For a property forming part of the business assets and used partly privately, utilities can be deducted in the proved business-use proportion under **TEAC RG 00/06654/2022, 19 July 2023**, interpreting art. 95.4 consistently with the VAT Directive. Keep floor-area/use evidence and the invoice. This does not automatically make a mixed private mobile phone recoverable or import IRPF's separate utility-expense percentage into VAT ([TEAC binding criterion](https://serviciostelematicosext.hacienda.gob.es/TEAC/DYCTEA/criterio.aspx?id=00%2F06654%2F2022%2F00%2F0%2F1); [AEAT 2026 application](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-05-deducciones-devoluciones/deducciones/requisitos-deduccion/iva-soportado-adq-bienes-servic-profes.html)).",
+    "references": {}
+  },
+  {
+    "line": 97,
+    "section": "The base / First remove non-business and blocked input VAT",
+    "text": "Apply art. 96 separately: the listed jewellery, food/drink/tobacco, recreation and hospitality to clients/employees/third parties are blocked subject to the statutory exceptions for the relevant business goods/resale/services. Travel/hotel/restaurant VAT requires the income/corporate-tax deductibility condition in 96.Uno.6 and the other VAT conditions; it does not override a separately applicable client-hospitality block. A restaurant merchant name proves neither an allowed meal nor a blocked personal meal ([art. 96](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a96)).",
+    "references": {}
+  },
+  {
+    "line": 101,
+    "section": "The base / Then calculate partial exemption, distinct from private use",
+    "text": "1. Classify activities before pooling their input VAT. Ordinary activities are different when assigned different CNAE groups. Identify the principal activity by the greatest preceding-year turnover. Distinct activities whose art. 104 deduction percentages differ from the principal activity’s by **more than 50 percentage points** form a separate sector; exactly 50 points does not satisfy that test. Keep the principal activity, its ancillary activities and distinct activities within the50-point difference in the principal sector. An activity is ancillary only if it contributes to the parent activity and its preceding-year turnover does not exceed **15%** of that parent’s; use reasonable current-year forecasts for a new ancillary activity and reconcile the actual outcome. Apply each sector’s deduction regime separately. For inputs used jointly across ordinary sectors, apply art. 104’s rounded aggregate percentage using the relevant sectors’ included operations; do not give the whole invoice to the taxable sector. Do not pool the sectors’ other inputs without the required AEAT common-regime authorisation. Special-regime sectors retain their own rules. ([LIVA arts. 9.1.c/101/104](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a9)). The example below assumes one sector.",
+    "references": {}
+  },
+  {
+    "line": 102,
+    "section": "The base / Then calculate partial exemption, distinct from private use",
+    "text": "2. Construct the annual art. 104 turnover numerator/denominator using the statutory consideration and timing. The numerator includes transactions generating input rights under art. 94, not just sales carrying Spanish output VAT. Exclude, from both terms, foreign-establishment transactions, VAT itself, disposals/exports of business investment goods, non-habitual real-estate/financial transactions, art. 7 non-subject transactions and the specified self-supplies. **Letting is treated as habitual**; it is not removed merely because it is a small share. Use the special financial/foreign-work rules where relevant.",
+    "references": {}
+  },
+  {
+    "line": 103,
+    "section": "The base / Then calculate partial exemption, distinct from private use",
+    "text": "3. If the denominator is positive, round the percentage **up to the next whole percentage point**. An exact integer stays that integer. A zero denominator is not automatically 100%: apply the start/interruption rules and record the support.",
+    "references": {}
+  },
+  {
+    "line": 104,
+    "section": "The base / Then calculate partial exemption, distinct from private use",
+    "text": "4. **General method:** apply P to the eligible business input-VAT pool after arts. 95/96 exclusions. General prorrata does not use the special method's full deduction for a cost solely linked to taxable sales.",
+    "references": {}
+  },
+  {
+    "line": 105,
+    "section": "The base / Then calculate partial exemption, distinct from private use",
+    "text": "5. **Special method:** fully deduct eligible input exclusively linked to deduction-entitling transactions; deduct zero on exclusively non-entitling transactions; apply P to eligible shared business input. Allocate private use first; do not deduct that amount again via the shared pool.",
+    "references": {}
+  },
+  {
+    "line": 106,
+    "section": "The base / Then calculate partial exemption, distinct from private use",
+    "text": "6. Compute both annual totals G and S. Special prorrata is compulsory when **G > 0 and G ≥ 1.10 × S**; if S is zero and G positive, it is compulsory. Two zero deductions do not create a compulsory-switch amount. An existing valid special election also controls. The election ordinarily operates through the final annual return and lasts at least **three calendar years**, with the specific startup timing and revocation rules.",
+    "references": {}
+  },
+  {
+    "line": 107,
+    "section": "The base / Then calculate partial exemption, distinct from private use",
+    "text": "7. Use the previous year's definitive percentage provisionally, unless an authorised substitute/startup rule applies. At the final return, compute definitive P and the required method, calculate the year's true entitlement, and post **true entitlement minus provisional deductions** as the signed annual adjustment. A negative adjustment reduces input recovery in box 44; it is not a new output sale. Retain the turnover, allocation and comparison schedules ([LIVA arts. 101–106](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a101); [RIVA art. 28](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a28)).",
+    "references": {}
+  },
+  {
+    "line": 110,
+    "section": "The base / Then calculate partial exemption, distinct from private use",
+    "text": "**Mixed private use and prorrata.** For an eligible mixed-use investment good with input VAT `T` and supported business fraction `U`, first calculate `B=T×U`. General prorrata recovers `B×P`; special prorrata recovers `B`, zero or `B×P` according to exclusive entitling, exclusive non-entitling or shared business use. Here P is the rounded percentage expressed as a fraction. For `T=2,100`, `U=50%` and shared-business `P=60%`, recovery is 630. Keep private use out of the input pool; do not add50% and60%, choose one limit, or apply the private reduction twice. With U fixed and provisional P 50% becoming definitive P 60%, the ordinary correction is 105, bringing 525 provisional recovery to 630. ([LIVA arts. 95/104/106](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a95)).",
+    "references": {}
+  },
+  {
+    "line": 112,
+    "section": "The base / Then calculate partial exemption, distinct from private use",
+    "text": "**Startup, provisional and interrupted activity.** Before habitual supplies begin, input VAT used for an objectively evidenced intended business can be recovered subject to the ordinary document, use and blocking rules. Apply the percentage proposed under art. 111.2 unless AEAT determines another. Under RIVA 28, the proposal normally accompanies the initial census declaration; the specified exclusively deduction-entitling activities do not need that request. The startup percentage also applies provisionally in the year habitual supplies start. If none was set, determine it by the same procedure and submit any required request by the end of the following month. For that year’s ordinary inputs, calculate definitive annual prorrata and the existing signed annual correction.",
+    "references": {}
+  },
+  {
+    "line": 114,
+    "section": "The base / Then calculate partial exemption, distinct from private use",
+    "text": " Separately reconcile pre-activity deductions under arts. 111–112 using the rounded percentage from **aggregate included operations over the first four counted calendar years**, not an average of four annual percentages. The first counted year is the habitual-start year only if supplies begin **before 1 July**; otherwise it is the following year. Under general prorrata, definitive pre-activity entitlement is the eligible pre-activity input pool times that global percentage. Preserve the art. 106 exclusive/shared allocation where special prorrata applies. **Provisional deductions minus definitive entitlement** is the repayment; its negative is the signed additional-deduction adjustment. Retain art. 113’s remaining investment-good adjustment using the global definitive deduction as its baseline. Do not duplicate this correction in the ordinary annual-prorrata box.",
+    "references": {}
+  },
+  {
+    "line": 116,
+    "section": "The base / Then calculate partial exemption, distinct from private use",
+    "text": " In an established activity, use the prior definitive percentage provisionally unless a permitted alternative is authorised. Request an alternative in January, or by the end of the month following a material change, and respect its authorised effective date. For a whole calendar year with interrupted activity, use the global percentage for the **last three calendar years in which operations occurred**, not zero or an automatic 100%. Keep each sector separate throughout. ([LIVA arts. 105/111–113](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a111); [RIVA art. 28](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a28)). Keep pre-activity correction in its specified box43 route and ordinary annual prorrata in44 under the current instructions; never duplicate a correction.",
+    "references": {}
+  },
+  {
+    "line": 120,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "For art108, exclude an item whose acquisition value is **below3,005.06**; equality is not excluded by that monetary limb. Apply this to the individual qualifying asset, not a yearly basket. For an ordinary acquisition with recoverable VAT, use acquisition value **excluding that recoverable VAT**, including directly attributable costs required to bring the asset into working condition. Thus3,000+630 recoverable VAT remains below the threshold despite a3,630 invoice total. A qualifying machine costing2,900 plus150 directly attributable installation has acquisition value3,050 and crosses the monetary limb; unrelated repairs/replacement parts do not become investment goods merely because expensive. Check the tangible/work-instrument/>one-year definition and the other exclusions separately. ([LIVA art.108](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a108); [officialKA-01732](https://dfb.microsoftcrmportals.com/es-ES/Articulo/?Code=KA-01732); [DGT V0055-19](https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0055-19); [PGCNRV2](https://www.boe.es/buscar/act.php?id=BOE-A-2007-19884)). PGC NRV 2/12 includes legally irrecoverable input VAT in **initial book acquisition cost**; later definitive-prorrata and investment-good adjustments do not change that initial valuation. **Source-derived irrecoverable-VAT method:** binding V0055-19 invokes PGC acquisition value when applying article108; PGC NRV2.1/12 expressly defines its irrecoverable-tax component. For an ordinary purchased tangible asset governed by that acquisition-price valuation, calculate `initial acquisition value = complete qualifying initial acquisition cost excluding VAT + associated legally irrecoverable VAT`. Include all applicable NRV2 cost components, not only the invoice price. This application of the defined tax component is a combined-source interpretation; V0055-19 itself decides commissioning expenses and does not expressly adjudicate a decisive irrecoverable-VAT fact pattern. Establish recovery rights independently: legally recoverable VAT stays excluded even if not yet claimed or refunded. Do not assume a mixed-private-use recovery fraction from the investment-good status whose threshold is being tested. The monetary result is already fixed where known acquisition costs before any VAT reach3,005.06, or where even those costs plus **all** related VAT remain below3,005.06. Thus 3,100 before VAT passes that limb; 2,400 + 504 VAT = 2,904 fails it under either treatment. These bounds do not themselves establish recoverable VAT or override the asset definition and exclusions. For an otherwise qualifying fully business-used purchased asset costing3,000 plus630 VAT, full legal recovery gives value3,000; no recovery gives3,630;90% recovery gives567 deductible and63 irrecoverable VAT, hence value3,063. At99% recovery, irrecoverable6.30 gives3,006.30. Settled irrecoverable amounts5.05/5.06/5.07 give values3,005.05/3,005.06/3,005.07: only the first fails the monetary limb. These supplied legal entitlements are inputs, not a new prorrata or rounding method. Zero recovery still means no initial deduction. The actual KA01732 invoice shows supported and deductible VAT both630, so its VAT-excluded3,000 example concerns full recovery. Later lawful prorrata/investment-good corrections do not recost the initial valuation under NRV12; an original error, price change or disputed initial entitlement needs its separate correction route. Accounting capitalisation alone never overrides article108's definition/exclusions, and passing the threshold never creates a deduction. ([LIVA 108](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a108); [DGT V0055-19,section 2](https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0055-19); [PGC NRV 2/12](https://www.boe.es/buscar/act.php?id=BOE-A-2007-19884).)",
+    "references": {}
+  },
+  {
+    "line": 122,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "Keep invoice/acquisition value, acquisition and first-use year, original input quota/deduction, annual business-use and deduction percentages, remaining adjustment years and disposal. Art. 108's exclusions include replacement parts, repairs, packaging and work clothing, so an accounting capitalisation alone does not establish VAT investment-good treatment. If the annual percentage differs by **more than ten points**, the repayment amount under art. 109 is `(applicable reference deduction − deduction at current percentage)/5`, or `/10` for land/buildings; its **negative** is the signed additional-deduction amount entered in box 43. Apply the statutory postponed-first-use window and disposal adjustment for all remaining years, including the output-tax cap where relevant. Do not post the same current-year prorrata correction in both boxes 43 and 44 ([arts. 107–110](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a109)).",
+    "references": {}
+  },
+  {
+    "line": 124,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "**Delayed first use changes the later reference.** Record acquisition and actual effective-use/commissioning years separately. For an asset in an established activity whose use begins later,[DGT V0386-24 section6](https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0386-24) uses the first-use year's definitive prorrata and deduction after that first-use adjustment as the references for subsequent investment-good regularisation. Preserve acquisition-year figures as well;do not silently reuse them as the later reference. Establish actual productive integration after installation/testing,including independently usable components or building parts;marketing evidence in[V3307-17 section3](https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V3307-17) concerns its actual property facts,not every unfinished building. Ordinary supported acquisition deductions are not universally postponed until commissioning.",
+    "references": {}
+  },
+  {
+    "line": 126,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "**Later reference: identified DGT-ledger interpretation.** For fixed business allocation in an established activity with unchanged intended destination and only an annual P movement, first compute the annual first-use adjustment under107/109, retaining its strict10-point gate and5/10divisor. Set `Pr=first-use definitive P` and `Dr=actual original deduction + signed first-use annual adjustment`. For later years, the literal DGT-ledger reading uses `abs(Py−Pr)>10 percentage points` and, when that gate opens, signed additional deduction `(T×Py−Dr)/N`, with eligible business input poolTand divisorNof5or10. Keep this reference distinct from cumulative cash deductions. For the ordinary annual-P-only first-use case below, record three distinct amounts: original deduction8,400, first-use cash addition420 and actual adjusted deduction8,820. Applying [V0386-24 section6](https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0386-24) literally to that annual adjustment supplies this source-derived subsequent-year method: fix the reference percentage at first-use60% and the article109.2 reference deduction at the actual post-adjustment8,820. For each later year in the original window, test `abs(Py−60%)>10 percentage points`; if it opens, signed additional deduction is `(21,000×Py−8,820)/10`. Thus later75% gives693 additional deduction;45% gives63 additional deduction, even thoughP fell, because9,450 still exceeds8,820. Later40% gives42 repayment. At50%or70% the difference is exactly10points, so no annual adjustment arises. These are calculations from the identified reading, not amounts expressly printed in the ruling or verified calculator outputs. Do not replace8,820 with the hypothetical first-use entitlement12,600, post a further3,780, or infer a4,200cash reset. Keep the first-use8,820reference fixed for later annuals; later annual adjustments change the cumulative cash-deduction ledger, not that reference. For example, after a75%year the cumulative deduction is9,513, while the subsequent reference remains8,820; a following75%year again gives693, not623.70.",
+    "references": {}
+  },
+  {
+    "line": 128,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "**Precisely retained authority conflict.** Current [articles107/109](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a107) and [AEAT's calculator instructions](https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata) expressly compare with the acquisition-year percentage/deduction, including delayed-use years in the calculator. That competing40%/8,400schedule gives735 at later75%, while the above literal DGT post-adjustment schedule gives693. The ruling expressly substitutes the first-use percentage and post-regularisation deductions, but does not print this annual-P-only numerical bridge or explain its reconciliation with the acquisition-reference wording. Retain both schedules, the actual420first-use adjustment and the adopted authority/interpretation; do not mix the DGT60%gate with an unproved12,600reference or describe either source as silently corrected. Resolving which reference instruction governs contrary administrative treatment requires an authoritative clarification of that exact gate-and-deduction substitution, not an invented accounting reset. The following60%/12,600examples remain conditional on a separate lawful route actually establishing that reference, such as the proved initial-destination correction described below. They do not describe the420annual-only fixture.",
+    "references": {}
+  },
+  {
+    "line": 130,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "The[art107](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a107)window is four following years for same-year acquisition/use,nine for land/buildings. Delayed use includes the first-use year **and** four/nine following years:a building acquired2023and first used2026has window2026–2035,and later-year checks2027–2035. For those **later** years with fixed business allocation and established general-prorrata reference `Pr,Dr`,no annual107adjustment arises at a difference at most10percentagepoints;above10,the signed additional deduction is `(T×Py−Dr)/N`,whereTis the eligible business input pool,Pythe current definitive fraction,andNis5or10. The repayment has the opposite sign. Special-prorrata exclusive/shared allocation and the original window still apply. AtT21,000,establishedPr60%/Dr12,600and laterPy75%,additional deduction is315for a building;Py45%gives315repayment. Py70%or50%is exactly10points and gives no annualadjustment;Py71%or49%gives231in the relevant direction. These controls assume the post-first-use reference was lawfully established;they do not establish its initial adjustment amount. Do not start a new5/10-year window each year ([arts107–109](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a109);[currentAEATannualprocedure](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/manual-iva-2026/capitulo-05-deducciones-devoluciones/deducciones/regularizacion-deducciones-bienes-inversion/procedimiento-regularizacion.html)).",
+    "references": {}
+  },
+  {
+    "line": 132,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "**Classify the initial correction before calculating it.** In an established activity, delayed first use is included in the article 107 adjustment window. For an ordinary annual prorrata change with the intended destination unchanged and fixed business allocation, articles 107/109 retain the strictly more than 10 percentage point test and the 5/10 divisor. A building with 21,000 input VAT, 100% business use, acquisition definitive P40% and later first-use definitive P60% gives `(21,000×60%−21,000×40%)/10=420` additional deduction in the first-use year's final return; 40%→50% gives no article 107 adjustment. These results are also produced by AEAT's actual later-use calculator. They do not establish a full 4,200 reset merely because commissioning is delayed. ([LIVA 107/109](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a107); [AEAT calculator, annual investment-good option](https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata), read 27 October 2026.) Equal acquisition and first-use percentages, with no other entitlement change, produce no percentage-driven initial difference.",
+    "references": {}
+  },
+  {
+    "line": 134,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "A proved change of the intended destination **before** the asset enters use has a separate route. Binding DGT V0835-25 section 4 applies articles 99.Dos/114 to correct that initial deduction **once**, when the change becomes known, if no relevant article 9.1(c)/(d) self-supply applies; a change after use begins follows the staged investment-good procedure. If the independently established entitlement before first use changes from 8,400 to 12,600 under that initial-correction route, the increase is 4,200 without dividing by 10. An annual turnover-based P movement alone does not prove that destination-change fact. Genuine pre-activity or a new differentiated sector retains the separately supplied 111–113 method: the whole article 112 correction to the aggregate four-year percentage, then article 113 adjustment for only remaining capital-good years. ([DGT V0835-25,section 4](https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0835-25); [LIVA 99/114](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a99); [111–113](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a111).)",
+    "references": {}
+  },
+  {
+    "line": 136,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "Keep evidence of the original use allocation, original definitive deduction, subsequent actual business-use fraction and the sector's current definitive deduction percentage separately. Determine whether new evidence corrects the original entitlement or proves a genuine later change; V1330-17's initial-error recovery must not be automatically divided by5. Apply the existing fixed-use prorrata adjustment to the affected input pool and the statutory use-change procedure to genuine later use changes. Do not add two complete original-to-current adjustments for the same input or introduce a universal10point test on the productU×P. ([LIVA arts.95/107–110](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a95); [DGT V1330-17](https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V1330-17)).",
+    "references": {}
+  },
+  {
+    "line": 138,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "**Both later changes cross their own gates.** For a genuine later change within the original adjustment window, first establish the lawful reference U0/P0/deduction and the current supported annual Uy/Py. Test the change in U and the change in P separately. For a same-year-acquisition/use reference, general prorrata or the shared-business limb of special prorrata, and changes **each strictly greater than 10 percentage points**, compare the two complete entitlements once: signed additional deduction=`(V×Uy×Py−D0)/N`, where `D0=V×U0×P0`, `N=5` or 10 for land/buildings, and `V` is the original VAT **before either fraction**. V is distinct from the already business-restricted input pool used in the fixed-use formula above. For building VAT 21,000, original U50%/P40% gives D0=4,200; current U70%/P60% gives 8,820, so the annual additional deduction is 462. AEAT's actual calculator returns 462 for those inputs. Do not add another complete U correction and P correction to that result. ([LIVA 95/104/106/107/109](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a95); [AEAT annual investment-good calculator](https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata), read 27 October 2026.)",
+    "references": {}
+  },
+  {
+    "line": 140,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "A 10-point change does not pass either separate gate. With original U80%/P80% and current U90%/P90%, neither gate passes, despite the product rising 64%→81%; the tested calculator returns zero. **Either separate gate: combined-source annual method.** For the same ordinary same-year-acquisition/use reference and shared-business input described above, test `abs(Uy−U0)>10 percentage points` and `abs(Py−P0)>10 percentage points` separately. If neither opens, the annual adjustment is zero. If either opens, apply the source-derived combined reading of95/104/106/107/109: calculate the single hypothetical current-year entitlement `V×Uy×Py`, then signed additional deduction `(V×Uy×Py−D0)/N`. Article109.1 requires the deduction that would apply if VAT were incurred in the current year;95/104/106 preserve both current restrictions. The text does not instruct freezing the factor whose gate did not open. This is the identified combined-primary-text interpretation, not an express DGT one-gate formula or a verified official-software output. Use the original VAT before both restrictions, the legally settled original deduction and the same original window; do not add two complete original-to-current corrections.",
+    "references": {}
+  },
+  {
+    "line": 142,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "For property VAT21,000, U0=50%/P0=40%, D0=4,200 and N=10: U75%/P40% gives210 additional deduction; U50%/P65% gives262.50; U75%/P45% gives288.75; U55%/P65% gives330.75. In the last two cases the other factor moves by only5points but remains part of the hypothetical current-year entitlement. U75%/P30%, with P exactly10points lower, gives52.50; U55%/P15% gives246.75 repayment. A negative result reduces deduction. The hypothetical current-year amount does not itself reset the reference or start a new window.",
+    "references": {}
+  },
+  {
+    "line": 144,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "**Calculator discrepancy retained.** The earlier actual calculator use-only output525 on a stated gross-VAT21,000, U50%→75%, P40%-unchanged property fixture does not match the above210 source-derived amount;525 equals the raw-use difference before the40%prorrata restriction. It is not used as proof that prorrata ceases to apply. Retain the exact entered gross-versus-restricted input semantics and result receipt, rather than silently correcting the historical output or asserting a general software defect. Preserve each fraction and the original deduction; do not substitute a gate on U×P. Exclusive-entitling/exclusive-exempt allocation under special prorrata, initial-entitlement corrections, disposals and the separately disputed delayed-use reference require their existing route. ([LIVA 95/104/106/107](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a95); [actual calculator and instructions](https://www2.agenciatributaria.gob.es/wlpl/AVAC-CALC/CalculadoraProrrata).)",
+    "references": {}
+  },
+  {
+    "line": 146,
+    "section": "The base / Investment goods and credit ledger",
+    "text": "Track unexercised input entitlement separately from credit already generated on a filed return. For ordinary common-territory taxpayers, current net VAT is output minus deductible input and adjustments; apply only the verified prior credit actually used this period, retaining the unused balance. A refund request removes the corresponding balance from subsequent compensation. A negative ordinary result is carried, or requested as a year-end refund where eligible; REDEME permits qualifying monthly refund requests. Do not treat every monthly filer as REDEME or all prior credit as automatically applied ([arts. 99/115](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a115); [RIVA art. 30](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a30)).",
+    "references": {}
+  },
+  {
+    "line": 150,
+    "section": "The base / Retained special-regime and small-transaction gateways",
+    "text": "For free advertising objects, art. 7.4 requires **no intrinsic commercial value** and an indelible advertising mention. Deliveries become taxable when total cost to the same recipient in the calendar year **exceeds 200**, except delivery to another taxpayer for free redistribution. Do not treat every business gift costing less than 200 as outside VAT.",
+    "references": {}
+  },
+  {
+    "line": 152,
+    "section": "The base / Retained special-regime and small-transaction gateways",
+    "text": "Under the retailer surcharge regime, charge the applicable surcharge alongside VAT on the qualifying supplier transaction; do not deduct it as ordinary recoverable input VAT or put the retailer automatically into ordinary 303 filing. For the agriculture/livestock/fishing regime, ordinary input recovery for regime activity is replaced by compensation on the eligible natural-product/accessory-service transactions in art. 130.3. Apply 12% or 10.5% to the sale price excluding indirect taxes and separately charged ancillary costs; non-cash consideration uses market value. Sales to another same-regime business for regime use and the specified wholly exempt buyers are excluded. A flat 12% fishing compensation is incorrect ([LIVA arts. 130/154–161](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a130)).",
+    "references": {}
+  },
+  {
+    "line": 154,
+    "section": "The base / Retained special-regime and small-transaction gateways",
+    "text": "The **two 10,000 tests are different**. Art. 73 combines qualifying intra-EU distance goods and cross-border B2C telecommunications/broadcasting/electronic services. Its small-supplier origin rule requires the statutory single-Member-State establishment conditions and the relevant dispatch origin; it is unavailable when distance goods are dispatched wholly or partly from another Member State. Check both the preceding and current calendar year, change to destination treatment from the transaction exceeding the limit, and do not split a transaction. A destination election binds for at least two calendar years. By contrast, art. 14 concerns acquisitions by agriculture-regime operators, exclusively non-deducting taxpayers and non-business legal persons: the preceding-year amount must **not have reached 10,000**, and current-year non-subjection lasts only until that amount is reached. Count the entire acquisition without splitting. New means of transport and excise goods are excluded from that exemption and from its limit; voluntary acquisition taxation binds for at least two years ([LIVA arts. 14/68/70/73](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a14)).",
+    "references": {}
+  },
+  {
+    "line": 156,
+    "section": "The base / Retained special-regime and small-transaction gateways",
+    "text": "For a valid cash-scheme election, output arises on actual full/partial collection, proportionately, and input entitlement on actual full/partial payment, with the statutory **31 December of the following year** backstop. The recipient of a cash-scheme invoice also follows that payment/backstop deduction timing even if not elected into the scheme. Retain dated collection/payment and invoice-allocation evidence; excluded transactions in art. 163 duodecies keep their own timing. A current-year starter can elect under the prescribed procedure; do not infer an election from turnover alone ([LIVA arts. 163 decies–quinquiesdecies](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a163decies); [RIVA arts. 61 septies–nonies](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a61septies)).",
+    "references": {}
+  },
+  {
+    "line": 158,
+    "section": "The base / Retained special-regime and small-transaction gateways",
+    "text": "**2026 simplified-regime entry: published AEAT route.** The current art. 122 ordinary non-agricultural receipts and purchases limbs are **150,000**, while the agricultural/forestry/livestock receipts limb is **250,000**; the displayed LIVA DT 13 extension ends in 2024. Both later extending decrees were not convalidated. Nevertheless, AEAT's **1 April 2026 effects note expressly addresses both repeals and maintains the higher limits for 2026**. Apply its published administrative route: preceding-year ordinary receipts **no more than 250,000**, purchases/services/imports excluding fixed assets and VAT **no more than 250,000**, and the linked IRPF required-invoice B2B receipts subset **no more than 125,000**. The last is an IRPF exclusion carried into simplified IVA, not a second stand-alone IVA turnover definition. Keep the ordinary statutory text and the post-repeal authority explanation in the file; neither repealed decree is described as currently in force. ([LIVA 122/DT 13](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a122); [AEAT post-repeal note](https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html); [current IVA eligibility](https://sede.agenciatributaria.gob.es/Sede/iva/regimenes-tributacion-iva/regimen-simplificado/quien-se-aplica-regimen-simplificado.html).)",
+    "references": {}
+  },
+  {
+    "line": 160,
+    "section": "The base / Retained special-regime and small-transaction gateways",
+    "text": "Thresholds alone do not establish entry. Verify an eligible individual or qualifying income-attribution entity with natural-person members, the annual-order activity and specific magnitudes, actual renunciation/exclusion history and incompatible activities. Annualise the relevant prior-year startup amounts; count subcontracted services in purchases. Exclude the specified subsidies, compensation, indemnities and indirect taxes from the appropriate receipts measure; apply the linked IRPF family/common-management aggregation only with its statutory facts. For a full prior year, an otherwise eligible trader with 200,000 ordinary receipts,100,000 required-invoice B2B receipts and 220,000 relevant purchases passes those three 2026 numerical tests under the published route, despite exceeding the three lower ordinary-text amounts. Equality at 250,000/125,000/250,000 passes; exceeding any applicable limb by0.01 fails that limb. These are hypothetical eligibility controls, not a simplified VAT quota computation. ([AEAT eligibility](https://sede.agenciatributaria.gob.es/Sede/iva/regimenes-tributacion-iva/regimen-simplificado/quien-se-aplica-regimen-simplificado.html); [linked IRPF limits](https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html); [2026 order art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272#a3).)",
+    "references": {}
+  },
+  {
+    "line": 162,
+    "section": "The base / Retained special-regime and small-transaction gateways",
+    "text": "Record the actual **2026 renunciation or revocation** and filing route. The current AEAT IVA eligibility page continues to describe the exceptional deadline of **16 February 2026**. RDL 2/2026 art. 11 provided **5–16 February** and recognised December 2025 submissions, plus January 2026 submissions made while RDL 16/2025 operated. A 30 January filing is not preserved by that latter limb alone. The April note's express submission-validity statement is in its IRPF section; the IVA date workflow here rests on the IVA page, enacted art. 11 and RIVA 33. For an established activity, a **timely first-quarter ordinary-regime 303** also constitutes implicit renunciation. For a genuine start, it is the **first required return after commencement**, filed on time under the ordinary regime. Renunciation normally binds for at least **three years**, then extends unless revoked within the applicable window; if the preceding year already exceeds the applicable eligibility limit, the renunciation is treated as not made. When an existing simplified/agricultural-regime activity is joined by a new eligible activity during the year, renouncing for the new activity does not extend to the old activity for that same year. A 15 February request meets the exceptional date test; 17 February does not and needs an independently available route. Keep the actual filing proof; continued limits do not reopen the window or establish a particular return correction. ([RDL 2/2026 art. 11](https://www.boe.es/buscar/act.php?id=BOE-A-2026-2547#a1-3); [AEAT post-repeal note](https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html); [AEAT IVA election explanation](https://sede.agenciatributaria.gob.es/Sede/iva/regimenes-tributacion-iva/regimen-simplificado/quien-se-aplica-regimen-simplificado.html); [RIVA33/36](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a33).)",
+    "references": {}
+  },
+  {
+    "line": 167,
+    "section": "The base / Foral VAT: select collectors and allocate one result",
+    "text": "The Basque [Economic Agreement arts.26–29](https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969#a26) and Navarra [Economic Agreement arts.32–34](https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117#a3-19) retain State substantive IVA rules while allowing their competent authorities' forms, filing periods and specified formal/procedural adaptations. For2026, preceding-calendar-year total operations **no more than12million** means ordinary collection by fiscal domicile, irrespective of where operations occur. Above12million, exclusive operations go to that territory and mixed operations split collection by current-calendar-year operations. Turnover is consideration excluding IVA/equivalence surcharge; annualise an initial short activity year and retain reasonable provisional first-year forecasts. Do not apply the old10million limit.",
+    "references": {}
+  },
+  {
+    "line": 169,
+    "section": "The base / Foral VAT: select collectors and allocate one result",
+    "text": "Locate ordinary movable-goods operations by where disposal occurs or dispatch starts; for the supplier's manufactured/transformed goods use the last manufacturing/transformation process. Property follows its location. Industrial installations have the statutory preparation/manufacture and installation-cost-**no-more-than15%** exception. Ordinary services follow where supplied from, while property services follow the property. The agreements prescribe separate rules for agricultural products, electricity, transport/transport hire, insurance, particular intra-EU acquisitions/new vehicles and OSS. Use those actual points of connection rather than the customer's billing address or the supplier's input-tax collector ([Basque art.28](https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969#a28); [Navarra art.33](https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117#a3-20)).",
+    "references": {}
+  },
+  {
+    "line": 171,
+    "section": "The base / Foral VAT: select collectors and allocate one result",
+    "text": "Compute the overall payable/refundable IVA result once. Allocate that **result**, using tax-exclusive consideration from taxable and exempt-with-deduction operations in each territory. Use prior-year operation ratios provisionally, or the first-year forecast, and actual current-year ratios at the final annual return. Navarra expressly rounds its territorial percentage to **two decimals**. A qualifying activity change of **at least15percentage points** permits a different provisional ratio only with the prescribed prior communication; mergers and the other listed reorganisations have their own gateway. Reconcile each treasury's prior payments/credits and final adjustment. File with every competent collecting administration and retain its local return/payment receipts; a single AEAT submission does not discharge the other collectors. Refunds are apportioned to the respective administrations ([Basque art.29](https://www.boe.es/buscar/act.php?id=BOE-A-2002-9969#a29); [Navarra art.34](https://www.boe.es/buscar/act.php?id=BOE-A-1990-31117#a3-21)).",
+    "references": {}
+  },
+  {
+    "line": 173,
+    "section": "The base / Foral VAT: select collectors and allocate one result",
+    "text": "For example, prior operations13million and current ordinary allocation60%foral/40%common, overall output30,000−recoverable input12,000=18,000, gives10,800/7,200 before treasury-specific prior payments. At prior operations11million and Bizkaia fiscal domicile, ordinary collection is100%Bizkaia despite that60/40 operational mix. Special groups and startup pre-operation refund reallocations have their separate agreement procedure; do not confuse those inter-administration adjustments with a new taxpayer input deduction.",
+    "references": {}
+  },
+  {
+    "line": 177,
+    "section": "Deadlines and filing",
+    "text": "| Obligation | Period/deadline | Year | Official source |",
+    "references": {}
+  },
+  {
+    "line": 179,
+    "section": "Deadlines and filing",
+    "text": "| Ordinary quarterly 303 | First **20 calendar days** of April/July/October; final quarter first **30 calendar days of January** | 2026 periods | [RIVA art. 71.4](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a71) |",
+    "references": {}
+  },
+  {
+    "line": 180,
+    "section": "Deadlines and filing",
+    "text": "| Monthly 303 | First **30 calendar days** of following month; January until last day of February | 2026 periods | [Same article](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a71) |",
+    "references": {}
+  },
+  {
+    "line": 181,
+    "section": "Deadlines and filing",
+    "text": "| Annual 390 unless exempt | First **30 calendar days of January** following return year | 2026 summary | [Orden EHA/3111/2009 art. 8](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18472#a8) |",
+    "references": {}
+  },
+  {
+    "line": 182,
+    "section": "Deadlines and filing",
+    "text": "| 349 general/quarterly alternative | Generally monthly, first **20 days** next month; quarterly if relevant supplied goods/services never exceed **50,000** in reference quarter or any preceding four quarters; last period first **30 January** days, July extension under article | 2026 | [RIVA art. 81](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a81) |",
+    "references": {}
+  },
+  {
+    "line": 183,
+    "section": "Deadlines and filing",
+    "text": "| SII issued/received records | Normally **four days** from issue/accounting, **eight** for customer/third-party-issued invoices; exclude Saturdays/Sundays/national holidays and respect the separate before-16th backstop | 2026 | [RIVA art. 69 bis](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a69bis) |",
+    "references": {}
+  },
+  {
+    "line": 185,
+    "section": "Deadlines and filing",
+    "text": "Monthly categories include the turnover threshold, qualifying business acquisition, REDEME, VAT groups and the specified fuel operators; groups use their own forms. Monthly filers covered by art. 62.6 keep electronic registers through SII; voluntary SII does not by itself prove monthly refund status. SII filers and the specified quarterly exclusively-common-territory simplified/urban-letting group are exempt from 390 under the current conditions and must complete the relevant final-303 annual information; no duty to file the last return can remove that exemption. File even a no-activity ordinary return where required. Electronic presentation, direct-debit cutoffs, holiday adjustments and a successful submission/payment receipt must be established for the actual period ([RIVA arts. 62/71](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a62); [AEAT 2026 instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026/instrucciones-02-12-2t-4t-2026.html)).",
+    "references": {}
+  },
+  {
+    "line": 189,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "Use the AEAT instruction version for the period: **January/1T** and **February–December/2T–4T** have separate pages. The following ordinary rows agree; specialised fuel/correction differences require their own form check.",
+    "references": {}
+  },
+  {
+    "line": 191,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Transaction/result | 2026 boxes | Official source |",
+    "references": {}
+  },
+  {
+    "line": 193,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Domestic output 4% / 10% / 21% | **01–03 / 04–06 / 07–09**, each base/rate/quota; zero-rate row **150–152** | [AEAT 2026 instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026.html) |",
+    "references": {}
+  },
+  {
+    "line": 194,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Intra-EU goods/services received | Output base/quota **10/11** | [Same instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026.html) |",
+    "references": {}
+  },
+  {
+    "line": 195,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Other recipient reverse charge | Output **12/13** | [Same instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026.html) |",
+    "references": {}
+  },
+  {
+    "line": 196,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Domestic ordinary / investment input | **28/29**, **30/31** | [Later-period instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026/instrucciones-02-12-2t-4t-2026.html) |",
+    "references": {}
+  },
+  {
+    "line": 197,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Customs import ordinary / investment input | **32/33**, **34/35** | [Same instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026/instrucciones-02-12-2t-4t-2026.html) |",
+    "references": {}
+  },
+  {
+    "line": 198,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Intra-EU ordinary / investment input | **36/37**, **38/39** | [Same instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026/instrucciones-02-12-2t-4t-2026.html) |",
+    "references": {}
+  },
+  {
+    "line": 199,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Input correction / investment adjustment / definitive prorrata | **40/41**, **43**, **44**; negative when reducing recovery | [Same instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026/instrucciones-02-12-2t-4t-2026.html) |",
+    "references": {}
+  },
+  {
+    "line": 200,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Cash-scheme information, on ordinary art. 75 timing | Sales base/quota **62/63**; affected purchases base/input quota **74/75**, even for a non-elected recipient | [AEAT 2026 instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026.html) |",
+    "references": {}
+  },
+  {
+    "line": 201,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Total output / total deductions / ordinary net | **27 / 45 / 46**, with **46 = 27 − 45** | [2026 approved form](https://www.boe.es/buscar/doc.php?id=BOE-A-2026-1761) |",
+    "references": {}
+  },
+  {
+    "line": 202,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Intra-EU supplied goods/services / exports | **59 / 60** | [AEAT instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026.html) |",
+    "references": {}
+  },
+  {
+    "line": 203,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Other outside-place / supplier reverse-charge / OSS information | **120 / 122 / 123–124**, according to actual category | [Same instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026.html) |",
+    "references": {}
+  },
+  {
+    "line": 204,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "| Prior credit brought / used / still pending | **110 / 78 / 87**, with **87 = 110 − 78**, excluding newly generated current-period credit | [Later instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026/instrucciones-02-12-2t-4t-2026.html) |",
+    "references": {}
+  },
+  {
+    "line": 206,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "For a common-territory ordinary taxpayer with no special adjustment, **65 = 100%, 66 = 64 = 46, 69 = 66 − 78**, and **71 = 69** on the original return. Deferred customs VAT uses **77** only with the proper election; foral **68**, criterion-dispute **108**, previous-result **70**, agreed-refund **109** and fuel **112** are not ordinary balancing plugs. Rectificative returns use the original period, identifying receipt and legally appropriate correction route; earlier 67-credit or 17/18-EU-service maps from the old sibling Guide must not be used.",
+    "references": {}
+  },
+  {
+    "line": 208,
+    "section": "Deadlines and filing / Current ordinary 303 mapping",
+    "text": "For a general-rule B2B service received in the Spanish VAT territory from a supplier established outside the EU, declare its full taxable base and output VAT in12/13. If the input is an ordinary service or current good, put its unprorated base in28 and its legally deductible VAT in29; an actual art108 tangible investment good uses30/31. These are domestic-located acquisitions for this classification, not customs imports merely because the supplier is overseas. Customs import input remains32–35, and qualifying intra-EU input36–39. Apply private-use, blocked-input and prorrata limits to the input quota; do not reduce output13 by the prorrata. A US service of1,000 at21%, shared within a60% deduction-entitling business, gives12=1,000,13=210,28=1,000,29=126 and84 net VAT before other transactions/credits. A service recorded as an accounting intangible does not become an art108 tangible investment good solely through capitalisation. ([LIVA arts.69/84/92/108](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a69); [AEAT2026 instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026/instrucciones-02-12-2t-4t-2026.html)). The row selection applies the statutory place of supply to the official current-versus-investment form categories; the US example is a hypothetical application, not an agency-published worked example.",
+    "references": {}
+  },
+  {
+    "line": 212,
+    "section": "Deadlines and filing / Correcting an earlier ordinary303",
+    "text": "For a2026 Modelo303, correct the same period using an autoliquidación rectificativa, retaining all unchanged data as well as corrected/new data and identifying the earlier return. This covers an increased amount payable and a reduced amount payable/refund/credit, subject to prescription and the rules for already assessed elements. An earlier-return rectification concerning VAT improperly charged to another taxpayer uses the RGAT129 request procedure, outside the ordinary rectificativa route; the supplier can alternatively regularise under [LIVA89.Cinco(b)](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a89), subject to its one-year limit and reimbursement obligation. OSS-regime corrections follow their own regime. If the sole ground is a reasoned claim that the applied rule breaches a superior legal, constitutional, EU or treaty norm, choose the art120.3 rectification-request procedure or a rectificativa; when other grounds also exist, those other grounds require a rectificativa. A disagreement with an administrative interpretation is a separate form reason: box108 is exceptional and can be used only with that reason where the adjustment cannot be entered in the normal boxes. Do not confuse correcting an earlier return with a later art80 transaction/base change whose own adjustment period is prescribed by law.",
+    "references": {}
+  },
+  {
+    "line": 214,
+    "section": "Deadlines and filing / Correcting an earlier ordinary303",
+    "text": "For ordinary303 result reconciliation use the period's approved formula, including70 for the earlier amount payable and109 for refunds already agreed. For the ordinary case without the specialised fuel adjustment, `71=69−70+109`. Recalculating an original1,000 payable as800 gives−200 when70=1,000 and109=0. If a300 refund was already agreed and the corrected entitlement is500,69=−500,70=0,109=300 gives71=−200, avoiding a second500 refund. This arithmetic does not override the legal refund route or proof of an amount already agreed. ([RIVA art.74bis](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a7-2); [RGAT art.129](https://www.boe.es/buscar/act.php?id=BOE-A-2007-15984#a129); [AEAT2026 instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/iva/modelo-303-iva-autoliquidacion_/instrucciones-2026/instrucciones-02-12-2t-4t-2026.html)).",
+    "references": {}
+  },
+  {
+    "line": 218,
+    "section": "Penalties and interest",
+    "text": "Voluntary late tax-due filing without prior request attracts **1% plus 1% for each complete month late** through twelve months, then **15% plus the applicable interest after twelve months**, under art. 27. The conditional prompt-payment reduction is **25%** of that surcharge. Underpayment offences require classification: **50%**, **50–100%** or **100–150%** under art. 191, with art. 188 reductions only if their conditions hold. Executive-collection surcharges are **5/10/20%** by stage, not additional automatic filing penalties. A no-economic-loss late ordinary return has the art. 198 **200** starting amount, halved where its no-request conditions apply. Use the interest rate for each actual delay segment; [the core IRPF Guide](es-income-tax.md#penalties-and-interest) records the sourced 2026 rate and conditions. VAT-specific and SII infringements must be separately classified rather than assigned the underpayment rate ([LGT arts. 26–28, 188, 191, 198](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27); [LIVA art. 170](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a170)).",
+    "references": {}
+  },
+  {
+    "line": 222,
+    "section": "Cross-border points",
+    "text": "For Canary operations use [ordinary IGIC](es-canary-islands-igic.md); for Ceuta/Melilla use [ordinary IPSI](es-ceuta-melilla-ipsi.md). The actual territory and transaction select the tax.",
+    "references": {}
+  },
+  {
+    "line": 224,
+    "section": "Cross-border points",
+    "text": "For general B2B services, identify the customer establishment receiving the service under art. 69 and check art. 70 exceptions before omitting Spanish VAT. General B2B services received in Spain from non-established suppliers normally create recipient reverse charge under art. 84, including non-EU suppliers. Intra-EU goods acquisitions and qualifying EU services use 10/11 output; non-EU services use 12/13. Recover the corresponding input only to the extent permitted: reverse charge is **not automatically tax-neutral** for an exempt/mixed business. Incorrect foreign VAT is not Spanish input VAT; resolve the supplier correction or applicable refund route ([LIVA arts. 13, 69–70, 84, 92–94](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a84)).",
+    "references": {}
+  },
+  {
+    "line": 226,
+    "section": "Cross-border points",
+    "text": "Exports and qualifying art. 25 intra-EU goods supplies require the statutory customer/status, movement and reporting evidence; a foreign IBAN is not evidence of export. Imported goods use customs valuation/assessment and the import input rows; the optional deferred payment belongs to an elected qualifying filer, not every importer. Cross-border consumer sales, electronic services, property services, Northern Ireland goods and OSS/IOSS require the relevant place/regime treatment. Keep the country/VAT-territory distinction for Canary/Ceuta/Melilla trade and determine the competent state/foral administration separately ([arts. 3, 21, 25, 69–70](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a69); [RIVA art. 74](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a74)).",
+    "references": {}
+  },
+  {
+    "line": 232,
+    "section": "Two worked examples that recompute / Ordinary quarter: reverse charge, vehicle use and prior credit",
+    "text": "Assume a single fully deduction-entitling common-territory business, adequate invoices, no special regime, domestic sales base **10,000**, non-EU general B2B service base **2,000**, ordinary eligible local input VAT **630**, and a passenger-car lease with input VAT **210** and an established 50% business-use presumption. Both output categories are 21%. Output is **2,520**; recoverable input is **630 + 420 + 105 = 1,155**, not 1,260. Net ordinary VAT is **1,365**. Applying **500** verified prior credit produces **865** payable and no remaining prior credit. The full reverse-charge output remains due despite partial vehicle recovery.",
+    "references": {}
+  },
+  {
+    "line": 261,
+    "section": "Two worked examples that recompute / Year end: general method would over-deduct, so special is compulsory",
+    "text": "One sector has **60,000** deduction-entitling and **40,000** non-entitling turnover, with no art. 104 exclusions. Eligible business input VAT is **1,000** solely taxable, **6,000** solely exempt and **3,000** shared; no private-use/blocked amount remains. Definitive P is **60%**. General recovery would be **6,000**; special recovery is **1,000 + 3,000 × 60% = 2,800**. Since **6,000 ≥ 1.10 × 2,800 = 3,080**, special is compulsory. If all **7,000** provisional deductions, including the final period's provisional amount, have first been entered, the separate annual adjustment is **−4,200** in box 44. This is an annual entitlement adjustment, not the final quarter's total tax payable.",
+    "references": {}
+  },
+  {
+    "line": 288,
+    "section": "Ask the client first",
+    "text": "1. Which VAT territory/administration, census registrations, regimes/elections and return period apply, including REDEME/SII and any cash-scheme supplier?",
+    "references": {}
+  },
+  {
+    "line": 289,
+    "section": "Ask the client first",
+    "text": "2. What was actually supplied, where did goods move or services occur, and which customer/supplier establishment and tax point does each invoice support?",
+    "references": {}
+  },
+  {
+    "line": 290,
+    "section": "Ask the client first",
+    "text": "3. Which costs are private, blocked, solely deduction-entitling, solely exempt or shared, and what evidence establishes the use/sector allocation?",
+    "references": {}
+  },
+  {
+    "line": 291,
+    "section": "Ask the client first",
+    "text": "4. What are the previous definitive percentage, special-prorrata election, annual included turnovers and investment-good adjustment records?",
+    "references": {}
+  },
+  {
+    "line": 292,
+    "section": "Ask the client first",
+    "text": "5. What filed-return credit remains unused, what refunds/corrections were already requested/agreed, and do the registers/SII/customs records reconcile?",
+    "references": {}
+  },
+  {
+    "line": 293,
+    "section": "Ask the client first",
+    "text": "6. For dated energy/housing transactions, what product, contract classification, official CPI evidence, payment method and date establish the applicable period rule?",
+    "references": {}
+  }
+]

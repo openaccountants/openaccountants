@@ -1,0 +1,65 @@
+{
+  "initial_candidate": "95f2800a07ece2d1d2c6e7260b474b18e8dce68b",
+  "status": "Writer repaired F1\u2013F4; independent closure pending",
+  "repair_scope": {
+    "F1": "Explicit CDI06.01.12 on butane rates row; existing source ledger already correct",
+    "F2": "Three-year credit plus mixed-activity year-end permitted expensing and withdrawn-status nonrefundable credit mandatory expensing; two exact-quote ledger rows added",
+    "F3": "Five-year loss period replaces five exercises; ledger wording made explicit",
+    "F4": "5%transaction sanction after specified unsuccessful request/notice triggers; cumulation and ex-officio adjustment reserved; source table and three ledger rows added"
+  },
+  "interpretation_precision": "CDI06.01.23 mixed-activity clause says peut; withdrawn-status clause says doit. Initial review retained unchanged and this exact distinction implemented.",
+  "versions": "Three changed Guides advanced1.0to1.1 and headings now showv1.1",
+  "checks": {
+    "scoped_validator": "PASS8guides0warninggroups",
+    "strict_metadata_sync_vs_initial": "PASS3guides0errors0warnings0notices",
+    "executable_examples": "PASS16blocks0failures0missing",
+    "added_ledger_quote_locations": "PASS5newexactfragments",
+    "initial_review_integrity": "PASS7filesunchanged",
+    "CTA_preservation": "PASS6suffixes",
+    "diff_check": "PASS"
+  },
+  "changed_source_and_ledger_hashes": [
+    {
+      "path": "skills/madagascar/mg-vat-gst.md",
+      "before_sha256": "648bec6983fc588b9fc99eb6da7ae8374ad57b3904c6eff3566922b61b01bb05",
+      "after_sha256": "f4e8ed02d38af4e4cbfd58b42c69ca72780b50a9590ae2675781affabfff3ec6",
+      "before_blob": "41f87613ffd1e66f046e1c1d7e26879d46e30561",
+      "after_blob": "699291f375448652badea090b7819b47bc2391d6"
+    },
+    {
+      "path": "skills/madagascar/mg-corporate-income-tax.md",
+      "before_sha256": "8a4e0519316e788ea3927787ff8addfaef74762bcfe3e446c4fa1ad3f5dc4978",
+      "after_sha256": "dde9e716e7df2123670f915f7ce5032859ca09973db737482cfa32defc508d66",
+      "before_blob": "45deaacef5f2479539e6ab5aa49441344502c491",
+      "after_blob": "44028c1a20f1d9967907f9007e49658ada062d1d"
+    },
+    {
+      "path": "skills/madagascar/mg-transfer-pricing.md",
+      "before_sha256": "1c68060267db5f12a9255f7e2a8e018172866877eae2f0a5c3b22ab88b51ecc4",
+      "after_sha256": "036ea4951556876ea5aaff3b391ad13d9c55e35641b6bdd5b5ba130d39c13d27",
+      "before_blob": "b77870d94841e8f4368f310da5372e3a85de65d2",
+      "after_blob": "70c1da5c4df6c4f3a6acb539808274d584a7735d"
+    },
+    {
+      "path": "evidence/ledgers/mg-vat-gst.md",
+      "before_sha256": "2c081f8f94d07dd7d3a88f994916c8f2daca5e00044e848c7abf7e4cc78eb4f2",
+      "after_sha256": "f899597b1881f496ce991c476efb98240062f24ffc89c6cbffd0a26f9818dc26",
+      "before_blob": "26dd769d55db9f134af94cf546c96edf7bd1eec4",
+      "after_blob": "2651941ecdfea7f5053c001abe85e8f88f2483d4"
+    },
+    {
+      "path": "evidence/ledgers/mg-corporate-income-tax.md",
+      "before_sha256": "fdf184a681c5daf53305ece1657e1c26e7c31eb1aafeed77297cf46c3ec9e6f0",
+      "after_sha256": "9dc1441e2a1aa0e9611537b76b5d177bdc5b745b6abd08dc480707f1cf8359ae",
+      "before_blob": "4119507eb4f33ef63e2d7c486d0fdcb95abe9783",
+      "after_blob": "d1b20573e6ab96f41deeceb85f893886439c3aa2"
+    },
+    {
+      "path": "evidence/ledgers/mg-transfer-pricing.md",
+      "before_sha256": "94913cfe756c3123154579277486ad7c86260f718fbf2e26a35b5809b9ffdb5b",
+      "after_sha256": "aba45a767d60ef2c0a50c944a36cb3ab368b53a1b102011b199178c9f626754c",
+      "before_blob": "3808cf7f24724f5cff74e3cdfcef2f6f8388f657",
+      "after_blob": "be6a1180f2c93e527c1b8e398b2c55d73bf1bdd7"
+    }
+  ]
+}

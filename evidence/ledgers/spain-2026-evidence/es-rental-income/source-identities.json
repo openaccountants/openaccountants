@@ -1,0 +1,172 @@
+[
+  {
+    "key": "S0",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw": "sources/S0.body",
+    "raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "reader": "sources/S0.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "acquired": "2026-10-28T00:08:44.705891+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S1",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/rendimientos-capital-inmobiliario/concepto-rendimientos-capital-inmobiliario.html",
+    "raw": "sources/S1.body",
+    "raw_sha256": "bd92602a24c0261c7dd134f3b8ef5c533508a221694f5dcab4a8354d1ade656f",
+    "reader": "sources/S1.reader.txt",
+    "reader_sha256": "f765fc5e932e4b41cfa467081ade4f99a14bbb259a576ab03452177a70abfb09",
+    "acquired": "2026-10-28T00:08:29.066143+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "raw": "sources/S2.body",
+    "raw_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "reader": "sources/S2.reader.txt",
+    "reader_sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "acquired": "2026-10-28T00:08:45.360812+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S3",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/gastos-deducibles/cantidades-destinadas-amortizacion.html",
+    "raw": "sources/S3.body",
+    "raw_sha256": "2dfc4002aae17438f7e7a37e6ea627dfdc2acc5f354188f038790a05310f58bd",
+    "reader": "sources/S3.reader.txt",
+    "reader_sha256": "12321a29183ecfa15c0a0dff606630bdcbb537234d6275c7430814feb358a8c2",
+    "acquired": "2026-10-28T00:08:29.030450+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S4",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764&p=20261002&tn=1",
+    "raw": "sources/S4.body",
+    "raw_sha256": "7d4665be9e7406f39630f684b76461bc38bb70b354a82d2c11591c1c5c8678be",
+    "reader": "sources/S4.reader.txt",
+    "reader_sha256": "22fdeb4fb5a16a54ae734bbaefbf16e633a5bb43f147b677c842551ca56f71cc",
+    "acquired": "2026-10-28T00:08:45.026033+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S5",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+    "raw": "sources/S5.body",
+    "raw_sha256": "a2876b9b97295cc74704d39ffc0e8d3cf474d37b975e7a09558de4a7956d8f11",
+    "reader": "sources/S5.reader.txt",
+    "reader_sha256": "768227c932ce5399c6841302d6b0564388055516de4126e89368e524f7731e18",
+    "acquired": "2026-10-28T00:08:50.762847+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S6",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203",
+    "raw": "sources/S6.body",
+    "raw_sha256": "9216033bf3e0b20cdce1a00f392e11065d63bd3646e73b54975081f379c55259",
+    "reader": "sources/S6.reader.txt",
+    "reader_sha256": "df2792f770ee35bf00ec9628c6cc5f0d1f4853783907e54f679f4e32d5242d3d",
+    "acquired": "2026-10-28T00:08:49.233008+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S7",
+    "url": "https://serviciostelematicosext.hacienda.gob.es/TEAC/DYCTEA/criterio.aspx?id=00%2F05138%2F2013%2F00%2F0%2F1",
+    "raw": "sources/S7.body",
+    "raw_sha256": "66d4e692cf48aab7aa07d96613cc3e8fa270d3d46abbced6de4c362a43c69fee",
+    "reader": "sources/S7.reader.txt",
+    "reader_sha256": "f03927573cb4501d50e65b7c511ad160903cf28cfe4ba6cc44ed284ea18985ba",
+    "acquired": "2026-10-28T00:08:31.048255+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S8",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/reducciones-rendimiento-neto/arrendamiento-inmuebles-destinados-vivienda.html",
+    "raw": "sources/S8.body",
+    "raw_sha256": "4a32b2b2dd3830b1a7a8bc6353a58dfea8d8d33d3f3039912c5b0b0ba2487928",
+    "reader": "sources/S8.reader.txt",
+    "reader_sha256": "3709d626cbd31551a0e751cd426af4ad9734b34d89d86fbd74520b0eec14ee71",
+    "acquired": "2026-10-28T00:08:29.066098+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S9",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/reducciones-rendimiento-neto/rendimientos-periodo-generacion-superior-dos-anos.html",
+    "raw": "sources/S9.body",
+    "raw_sha256": "f3916846bcd6f50aa7bc590f9fc13a0a5c361b02e4963e41ccd540a5439a8d93",
+    "reader": "sources/S9.reader.txt",
+    "reader_sha256": "037731da61ab9b900b96e7cd10756b9763147f9f4d3b988ce8bde206d9ccf373",
+    "acquired": "2026-10-28T00:08:29.068265+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S10",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-19707",
+    "raw": "sources/S10.body",
+    "raw_sha256": "e26a562b30a58e5550c604b08515e46da225c759cacca3c9cdb23fea4ed1280c",
+    "reader": "sources/S10.reader.txt",
+    "reader_sha256": "af2f6ad4ec9d5c31d903db640acb80464ec7f92de4f678a9c6cc9465858fdf2f",
+    "acquired": "2026-10-28T00:08:45.839165+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S11",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-13573",
+    "raw": "sources/S11.body",
+    "raw_sha256": "033df559dc795e15d5a9125b814cebc923c8bd176994a840b1894130605ae9ec",
+    "reader": "sources/S11.reader.txt",
+    "reader_sha256": "121d5e556741302eb7c0d2aff1d0b7cf6edc87e955b78665f3d7ab2c8da38e4c",
+    "acquired": "2026-10-28T00:08:54.531336+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S12",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/folleto-actividades-economicas/7-otras-obligaciones-fiscales-retenciones/7_3-retenciones-arrendamiento-bienes-inmuebles-180.html",
+    "raw": "sources/S12.body",
+    "raw_sha256": "2e5fd7a83743f84bb88bc6924e2ccd3754b9ffee9eb3e316cb4856f86833321f",
+    "reader": "sources/S12.reader.txt",
+    "reader_sha256": "13c52e7c8e2d46c11f9f06d22106035e3f154e47862a1a74637213009deac3a9",
+    "acquired": "2026-10-28T00:08:27.673791+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S13",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/declaraciones-informativas/modelo-179-decla_____la-cesion-uso-turisticos/preguntas-frecuentes.html",
+    "raw": "sources/S13.body",
+    "raw_sha256": "535eca97b204bdef183b260630c17125587122d31b65420ea9018368474e1976",
+    "reader": "sources/S13.reader.txt",
+    "reader_sha256": "002a12135550bd314abde7ef27412f9ffb05e413d35111a79d588c8ce7de3e34",
+    "acquired": "2026-10-28T00:08:30.461906+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S14",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2024-2092",
+    "raw": "sources/S14.body",
+    "raw_sha256": "1e25161257ebd6485c2a4353bcf56e8d20ef4a4dbfbfb5d152dff9b724044d58",
+    "reader": "sources/S14.reader.txt",
+    "reader_sha256": "8e305116460d38f9734bbb55188ea4b951c55434e9313dc6afc7eb6662556f07",
+    "acquired": "2026-10-28T00:08:53.761499+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S15",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "raw": "sources/S15.body",
+    "raw_sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "reader": "sources/S15.reader.txt",
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "acquired": "2026-10-28T00:08:43.654027+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "S16",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "sources/S16.body",
+    "raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "reader": "sources/S16.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "acquired": "2026-10-28T00:08:43.784086+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  }
+]

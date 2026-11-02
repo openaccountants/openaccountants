@@ -1,0 +1,38 @@
+{
+  "decision": "ACCEPT for stated partial scope",
+  "reviewed_head": "ddde60a16e113f9056297e6d6ae09d0294bec075",
+  "manifest_sha256": "0e4d8c0495edf354764dcf4b927a240ff9e892cd17a32efbe2c06e085df4cfd9",
+  "manifest_files_match": true,
+  "files": {
+    "skills/dr-congo/cd-transfer-pricing.md": "eaf229a8e5b8d73421245a15842c4b38b5ba9459d91980def7ea5154eccf144e",
+    "skills/dr-congo/cd-cross-border.md": "56f4aa2e49baef36617c51a8ed749d663a76ba1a68b9e5468b94d4afd75ac805",
+    "evidence/ledgers/cd-transfer-pricing.md": "cba6f33709282bde196fbb623371aabf6d9fb4447d9b26b7bcddd90dd9c2f4b0",
+    "evidence/ledgers/cd-cross-border.md": "316036fe631be133b6406a2dd2694a8814d3aefa5ce30ef22bb8bc9b22a2f006",
+    "evidence/ledgers/dr-congo-draft-20261101/source-record-repair-1.json": "684ac141b7d7b2d58f6a47f3d31ec1aa15c5cf56c189ebb380ae3b8868907b75"
+  },
+  "preserved_originals": {
+    "skills/dr-congo/README.md": "2fdcc7726514405c8d1c005206777bd7c4ba0e67b1b3c792e8194b310ade51ce",
+    "evidence/ledgers/dr-congo-draft-20261101/source-record.json": "315598ab9c30303104c19bf6dfae9c6bc9d43a1cbbdd15d2d1f57028b9c489ed",
+    "evidence/ledgers/dr-congo-draft-20261101/candidate-manifest.json": "c0bff8bd16852ded19d25f021e736d7ff099338639cbd91fa82bd25bdd88a286"
+  },
+  "initial_review_sha256": "572dba48310ccf69b622cb86c79e7888e8502ca6b20c7120d076fefccbeeda09",
+  "ledger_rows": {
+    "cd-transfer-pricing": 39,
+    "cd-cross-border": 34
+  },
+  "total_rows": 73,
+  "changed_or_added_rows": [
+    "CD-TRANSFER-PRICING-014",
+    "CD-TRANSFER-PRICING-038",
+    "CD-TRANSFER-PRICING-039",
+    "CD-CROSS-BORDER-033",
+    "CD-CROSS-BORDER-034"
+  ],
+  "all_other_original_rows_unchanged": true,
+  "four_examples_and_prose_byte_unchanged": [
+    "skills/dr-congo/cd-transfer-pricing.md",
+    "skills/dr-congo/cd-cross-border.md"
+  ],
+  "six_legacy_hashes_match": true,
+  "professional_attestation": false
+}

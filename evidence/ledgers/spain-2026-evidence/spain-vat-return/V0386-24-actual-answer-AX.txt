@@ -1,0 +1,303 @@
+Browser tab: 1623103219, Title: "Consultas de la D.G. Tributos: Buscador", URL: "https://petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0386-24".
+0 AXWebArea Consultas de la D.G. Tributos: Buscador, URL: petete.tributos.hacienda.gob.es/consultas/?num_consulta=V0386-24
+	1 container page
+		2 container header_content
+			3 image Description: Logo Ministerio de Hacienda y Funci�n P�blica, Help: Logo Ministerio de Hacienda y Función Pública
+			4 container
+				5 text SECRETARÍA DE ESTADO DE HACIENDA
+				6 text DIRECCIÓN GENERAL DE TRIBUTOS
+				7 text Doctrina Tributaria - Consultas Tributarias 1997-2026
+		8 heading BUSCADOR, Value: 1
+			9 text BUSCADOR
+		10 container knosys_form
+			11 heading Formulario de consulta, Value: 2
+				12 text Formulario de consulta
+			13 link Description: Ayuda general del buscador, Value: petete.tributos.hacienda.gob.es/consultas/ayuda/ayudaTributos.html
+			14 container search
+				15 container Mostrar
+					16 text Mostrar
+					17 container
+						18 checkbox (settable, integer) Description: Consultas generales, Value: 0, ID: generales
+						19 text (actualizada a 30/09/2026)
+					20 container
+						21 checkbox (settable, integer) Description: Consultas vinculantes, Value: 1, ID: vinculantes
+						22 text (actualizada a 30/09/2026)
+				23 container Filtro de búsqueda
+					24 text Filtro de búsqueda
+					25 container
+						26 link Description: Ayuda del buscador para número de consulta, Value: petete.tributos.hacienda.gob.es/consultas/ayuda/numConsulta.html
+						27 text  Nº de consulta *
+						28 text field (settable) Ayuda del buscador para número de consulta Nº de consulta *, Value: V0386-24, ID: VLCMP_1
+						29 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_1, Secondary Actions: Expand
+							30 menu
+								31 (selected) Y
+								32 O
+								33 NO
+					34 container
+						35 text Fecha salida desde
+						36 text field (settable) Fecha salida desde, ID: dateIni_2
+						37 button Description: Seleccionar fecha de inicio, ID: btnDateIni_2
+						38 text Hasta
+						39 text field (disabled) Hasta, ID: dateEnd_2
+						40 button (disabled) Description: Seleccionar fecha de fin, ID: btnDateEnd_2
+						41 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_2, Secondary Actions: Expand
+							42 menu
+								43 (selected) Y
+								44 O
+								45 NO
+					46 container
+						47 link Description: Ayuda del buscador para normativa, Help: Normativa, Value: petete.tributos.hacienda.gob.es/consultas/ayuda/normativa.html
+						48 text  Normativa
+						49 text field (settable) Ayuda del buscador para normativa Normativa, ID: VLCMP_3
+						50 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_3, Secondary Actions: Expand
+							51 menu
+								52 (selected) Y
+								53 O
+								54 NO
+					55 container
+						56 text Cuestión planteada
+						57 text field (settable) Cuestión planteada, ID: VLCMP_4
+						58 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_4, Secondary Actions: Expand
+							59 menu
+								60 (selected) Y
+								61 O
+								62 NO
+					63 container
+						64 text Descripción de hechos
+						65 text field (settable) Descripción de hechos, ID: VLCMP_5
+						66 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_5, Secondary Actions: Expand
+							67 menu
+								68 (selected) Y
+								69 O
+								70 NO
+					71 container
+						72 text Texto libre
+						73 text field (settable) Texto libre, ID: VLCMP_6
+						74 pop up button (collapsed, settable) Description: Operador, Value: Y, ID: OPCMP_6, Secondary Actions: Expand
+							75 menu
+								76 (selected) Y
+								77 O
+								78 NO
+					79 container
+						80 text Criterio de interés
+						81 text (a partir de 01-01-2022)
+						82 checkbox (settable, integer) Description: Criterio de interés (a partir de 01-01-2022), Value: 0, ID: VLCMP_7
+				83 container Ordenación
+					84 text Ordenación
+					85 container
+						86 text Campo de ordenación
+						87 pop up button (collapsed, settable) Campo de ordenación, Value: Nº de consulta, ID: cmpOrder, Secondary Actions: Expand
+							88 menu
+								89 (selected) Nº de consulta
+								90 Órgano
+								91 Fecha salida
+						92 pop up button (collapsed, settable) Description: Operador, Value: Ascendente, ID: dirOrder, Secondary Actions: Expand
+							93 menu
+								94 (selected) Ascendente
+								95 Descendente
+				96 text *  0006-26 a 4999-26 Números de consulta sin contenido por cambio de procedimiento y numeración para consultas generales
+				97 text *  V1690-26 a V4999-26 Números de consulta sin contenido por cambio de procedimiento y numeración para consultas vinculantes
+				98 container
+					99 button Buscar
+					100 button Borrar
+		111 container tabs
+			112 heading Resultados, Value: 2
+				113 text Resultados
+			114 tab group
+				115 tab (selected, expanded, settable, boolean) Description: Consultas vinculantes (1 resultados), ID: tab-2, Secondary Actions: Collapse, Value: 1
+Consultas vinculantes
+(1 resultados)
+			116 container Description: Consultas vinculantes (1 resultados), ID: tabs-2
+				117 container results2
+					118 container
+						119 text  Página 
+						120 text field (settable) Description: Introduzca un número de página y pulse INTRO, Value: 1, ID: current_page
+						121 text  de 
+						122 text 1
+					123 heading Documentos encontrados, Value: 3
+						124 text Documentos encontrados
+					125 table
+						126 row
+							127 cell
+								128 text Nº de consulta, Descripción de hechos, Cuestión planteada
+						129 row
+							130 cell doc_26115
+								131 heading V0386-24, Value: 4
+									132 text V0386-24
+								133 text El consultante es una persona física que va a comprar un terreno sobre la que construirá una edificación y, una vez construida, destinar parte a una clínica.
+								134 text Si se puede deducir el Impuesto sobre el Valor Añadido soportado en la adquisición del terreno, arquitecto y estudio geotécnico y, en tal caso, si sería aplicable la prorrata del año en que soporte ese IVA o el de la puesta en funcionamiento de la clínica y cuándo se haría la regularización del impuesto soportado en la adquisición de bienes de inversión.
+				135 container document2
+					136 container
+						137 text  Documento 1 de 1 
+						138 link Description: Copiar enlace al documento, Value: petete.tributos.hacienda.gob.es/consultas/docLink.vm
+						139 link Description: Imprimir documento, Value: javascript:void(0);
+					140 heading Documento seleccionado, Value: 3
+						141 text Documento seleccionado
+					142 table Documento seleccionado
+						143 row
+							144 cell
+								145 text Nº de consulta
+							146 cell
+								147 text V0386-24
+						148 row
+							149 cell
+								150 text Órgano
+							151 cell
+								152 text SG de Impuestos sobre el Consumo
+						153 row
+							154 cell
+								155 text Fecha salida
+							156 cell
+								157 text 12/03/2024
+						158 row
+							159 cell
+								160 text Normativa
+							161 cell
+								162 text Ley 37/1992 arts. 4, 5, 92
+						163 row
+							164 cell
+								165 text Descripción de hechos
+							166 cell
+								167 text El consultante es una persona física que va a comprar un terreno sobre la que construirá una edificación y, una vez construida, destinar parte a una clínica.
+						168 row
+							169 cell
+								170 text Cuestión planteada
+							171 cell
+								172 text Si se puede deducir el Impuesto sobre el Valor Añadido soportado en la adquisición del terreno, arquitecto y estudio geotécnico y, en tal caso, si sería aplicable la prorrata del año en que soporte ese IVA o el de la puesta en funcionamiento de la clínica y cuándo se haría la regularización del impuesto soportado en la adquisición de bienes de inversión.
+						173 row
+							174 cell
+								175 text Contestación completa
+							176 cell
+								177 text 1.- El artículo 4, apartado uno de la Ley 37/1992, de 28 de diciembre, del Impuesto sobre el Valor Añadido (BOE de 29 de diciembre), establece que “estarán sujetas al impuesto las entregas de bienes y prestaciones de servicios realizadas en el ámbito espacial del impuesto por empresarios o profesionales a título oneroso, con carácter habitual u ocasional, en el desarrollo de su actividad empresarial o profesional, incluso si se efectúan en favor de los propios socios, asociados, miembros o partícipes de las entidades que las realicen.”.
+								178 text El apartado dos, letras a) y b), del mismo precepto señala que “se entenderán realizadas en el desarrollo de una actividad empresarial o profesional:
+								179 text a) Las entregas de bienes y prestaciones de servicios efectuadas por las sociedades mercantiles, cuando tengan la condición de empresario o profesional.
+								180 text b) Las transmisiones o cesiones de uso a terceros de la totalidad o parte de cualesquiera de los bienes o derechos que integren el patrimonio empresarial o profesional de los sujetos pasivos, incluso las efectuadas con ocasión del cese en el ejercicio de las actividades económicas que determinan la sujeción al Impuesto.”.
+								181 text Por otra parte, de acuerdo con lo establecido en el artículo 5.uno de la citada Ley 37/1992, se reputarán empresarios o profesionales, a efectos del Impuesto sobre el Valor Añadido:
+								182 text “a) Las personas o entidades que realicen las actividades empresariales o profesionales definidas en el apartado siguiente de este artículo.
+								183 text No obstante, no tendrán la consideración de empresarios o profesionales quienes realicen exclusivamente entregas de bienes o prestaciones de servicios a título gratuito, sin perjuicio de lo establecido en la letra siguiente.
+								184 text b) Las sociedades mercantiles, salvo prueba en contrario.
+								185 text (…).”.
+								186 text En este sentido, el apartado dos, de este artículo 5, establece que “son actividades empresariales o profesionales las que impliquen la ordenación por cuenta propia de factores de producción materiales y humanos o de uno de ellos, con la finalidad de intervenir en la producción o distribución de bienes o servicios.
+								187 text En particular, tienen esta consideración las actividades extractivas, de fabricación, comercio y prestación de servicios, incluidas las de artesanía, agrícolas, forestales, ganaderas, pesqueras, de construcción, mineras y el ejercicio de profesiones liberales y artísticas.
+								188 text (…).”.
+								189 text En consecuencia, el consultante tiene la condición de empresario o profesional y estarán sujetas al Impuesto sobre el Valor Añadido las entregas de bienes y prestaciones de servicios que en el ejercicio de su actividad empresarial o profesional realice en el territorio de aplicación del Impuesto.
+								190 text 2.- Por otra parte, en relación con la deducción de las cuotas soportadas del Impuesto sobre el Valor Añadido, debe señalarse que de la información aportada en el escrito de consulta no puede conocerse si el consultante ya ha iniciado la realización habitual de entregas de bienes o prestaciones de servicios en el ejercicio de esa actividad empresarial o profesional o si, por el contrario, aún no ha iniciado la realización habitual de las mismas.
+								191 text De este modo, para el caso de que el consultante ya haya iniciado la realización habitual de entregas de bienes o prestaciones de servicios en el ejercicio de esa actividad empresarial o profesional, debe informarse de que el ejercicio del derecho a la deducción del Impuesto soportado solamente resulta procedente de acuerdo con las limitaciones y requisitos establecidos en el Capítulo I del Título VIII de la Ley 37/1992.
+								192 text En particular, el artículo 93 de la Ley 37/1992 determina como requisitos subjetivos de la deducción los siguientes:
+								193 text “Uno. Podrán hacer uso del derecho a deducir los sujetos pasivos del Impuesto que tengan la condición de empresarios o profesionales de conformidad con lo dispuesto en el artículo 5 de esta Ley y hayan iniciado la realización habitual de entregas de bienes o prestaciones de servicios correspondientes a sus actividades empresariales o profesionales.
+								194 text (…)
+								195 text Cuatro. No podrán ser objeto de deducción, en ninguna medida ni cuantía, las cuotas soportadas o satisfechas por las adquisiciones o importaciones de bienes o servicios efectuadas sin la intención de utilizarlos en la realización de actividades empresariales o profesionales, aunque ulteriormente dichos bienes o servicios se afecten total o parcialmente a las citadas actividades.”.
+								196 text Por su parte, el artículo 95 establece las limitaciones del derecho a deducir:
+								197 text “Uno. Los empresarios o profesionales no podrán deducir las cuotas soportadas o satisfechas por las adquisiciones o importaciones de bienes o servicios que no se afecten, directa y exclusivamente, a su actividad empresarial o profesional.
+								198 text Dos. No se entenderán afectos directa y exclusivamente a la actividad empresarial o profesional, entre otros:
+								199 text 1.º Los bienes que se destinen habitualmente a dicha actividad y a otras de naturaleza no empresarial ni profesional por períodos de tiempo alternativos.
+								200 text 2.º Los bienes o servicios que se utilicen simultáneamente para actividades empresariales o profesionales y para necesidades privadas.
+								201 text 3.º Los bienes o derechos que no figuren en la contabilidad o registros oficiales de la actividad empresarial o profesional del sujeto pasivo.
+								202 text 4.º Los bienes y derechos adquiridos por el sujeto pasivo que no se integren en su patrimonio empresarial o profesional.
+								203 text 5.º Los bienes destinados a ser utilizados en la satisfacción de necesidades personales o particulares de los empresarios o profesionales, de sus familiares o del personal dependiente de los mismos, con excepción de los destinados al alojamiento gratuito en los locales o instalaciones de la empresa del personal encargado de la vigilancia y seguridad de los mismos, y a los servicios económicos y socio-culturales del personal al servicio de la actividad.
+								204 text Tres. No obstante lo dispuesto en los apartados anteriores, las cuotas soportadas por la adquisición, importación, arrendamiento o cesión de uso por otro título de los bienes de inversión que se empleen en todo o en parte en el desarrollo de la actividad empresarial o profesional podrán deducirse de acuerdo con las siguientes reglas:
+								205 text 1.ª Cuando se trate de bienes de inversión distintos de los comprendidos en la regla siguiente, en la medida en que dichos bienes vayan a utilizarse previsiblemente, de acuerdo con criterios fundados, en el desarrollo de la actividad empresarial o profesional.
+								206 text 2.ª Cuando se trate de vehículos automóviles de turismo y sus remolques, ciclomotores y motocicletas, se presumirán afectados al desarrollo de la actividad empresarial o profesional en la proporción del 50 por 100.
+								207 text (…).”.
+								208 text Asimismo, el artículo 108 de la Ley 37/1992 establece que “a los efectos de este impuesto, se considerarán de inversión los bienes corporales, muebles, semovientes o inmuebles que, por su naturaleza y función, estén normalmente destinados a ser utilizados por un período de tiempo superior a un año como instrumentos de trabajo o medios de explotación.”.
+								209 text Y añade, en su apartado dos, para delimitar el concepto de bienes de inversión que “no tendrán la consideración de bienes de inversión:
+								210 text 1º. Los accesorios y piezas de recambio adquiridos para la reparación de los bienes de inversión utilizados por el sujeto pasivo.
+								211 text (…)
+								212 text 5º. Cualquier otro bien cuyo valor de adquisición sea inferior a quinientas mil pesetas (3.005,06 euros).”.
+								213 text 3.- Por tanto, conforme al apartado anterior, sólo serán deducibles las cuotas soportadas por la adquisición de bienes o servicios, que se afecten, directa y exclusivamente, a la actividad empresarial o profesional del sujeto pasivo, excepto en el supuesto de que se trate de bienes de inversión cuya afectación parcial permitirá la deducción parcial de las cuotas soportadas conforme a las reglas establecidas en el artículo 95, apartado Tres, de la Ley 37/1992, así como, cuando se trate de cuotas soportadas en gastos relacionados con inmuebles afectos parcialmente a la actividad empresarial o profesional, que podrán ser objeto de deducción de forma proporcional a su utilización en la actividad empresarial o profesional.
+								214 text En este sentido, tanto el terreno como los gastos incurridos para efectuar la construcción de la edificación tendrían la condición de bien de inversión por estar normalmente destinados a ser utilizados por un período de tiempo superior a un año como instrumentos de trabajo o medios de explotación, siempre que no incurran en alguna de las causas de exclusión del apartado dos del citado artículo 108.
+								215 text Además, debe recordarse que, conforme a lo establecido en el artículo 93, apartado Cuatro, de la Ley 37/1992, la intención de utilizar tal terreno en la actividad empresarial o profesional debe existir en el momento de soportar las cuotas. Por el contrario, de no existir tal intención inicial, no habría derecho a la deducción, aunque posteriormente se produjera la afectación total o parcial de las citadas actividades.
+								216 text 4.- Por otra parte, debe destacarse que la afectación parcial de un bien de inversión a la actividad profesional del consultante y la intencionalidad inicial de afectarlo a la misma son unas cuestiones de hecho respecto de la que este Centro directivo no puede pronunciarse y será el propio interesado quien habrá de presentar, en su caso, los medios de prueba que, conforme a derecho, sirvan para justificar la misma, los cuales serán valorados por la Agencia Estatal de Administración Tributaria.
+								217 text Dicha prueba debe poder aportarse en el momento en que se pretenda ejercitar el derecho a la deducción de las correspondientes cuotas soportadas, correspondiendo a la Administración tributaria efectuar la valoración conjunta y razonada de todas las pruebas que se aporten.
+								218 text Respecto de los medios de prueba, el artículo 106 de la Ley 58/2003, de 17 de diciembre, General Tributaria (BOE del 18 de diciembre), establece que en los procedimientos tributarios serán de aplicación las normas que sobre medios y valoración de pruebas se contienen en el Código Civil y en la Ley de Enjuiciamiento Civil, salvo que la Ley establezca otra cosa.
+								219 text En relación con los medios y valoración de pruebas hay que citar, también, el artículo 105.1 del mismo texto legal, que en relación con la carga de la prueba establece que “en los procedimientos de aplicación de los tributos quien haga valer su derecho deberá probar los hechos constitutivos del mismo”.
+								220 text A estos efectos, debe tenerse en cuenta lo establecido en relación con la prueba en el capítulo V del título I del libro IV del Código Civil, así como lo dispuesto en los capítulos V y VI del título I del libro II de la Ley de Enjuiciamiento Civil. Concretamente, el artículo 299 de la Ley 1/2000 enumera los medios de prueba.
+								221 text Por lo que se refiere a la valoración de las pruebas, hay que señalar que en el ordenamiento jurídico español rige el principio general de valoración libre y conjunta de todas las pruebas aportadas, quedando descartado como principio general el sistema de prueba legal o tasada.
+								222 text 5.- En cuanto al momento de la deducción, debe recordarse que según el artículo 98.Uno de la Ley 37/1992:
+								223 text “Uno. El derecho a la deducción nace en el momento en que se devengan las cuotas deducibles, salvo en los casos previstos en los apartados siguientes.”.
+								224 text Por su parte, según el artículo 99 de dicho texto legal:
+								225 text “Tres. El derecho a la deducción solo podrá ejercitarse en la declaración-liquidación relativa al periodo de liquidación en que su titular haya soportado las cuotas deducibles o en las de los sucesivos, siempre que no hubiera transcurrido el plazo de cuatro años, contados a partir del nacimiento del mencionado derecho.
+								226 text (…)
+								227 text Cuatro. Se entenderán soportadas las cuotas deducibles en el momento en que el empresario o profesional que las soportó reciba la correspondiente factura o demás documentos justificativos del derecho a la deducción.
+								228 text Si el devengo del Impuesto se produjese en un momento posterior al de la recepción de la factura, dichas cuotas se entenderán soportadas cuando se devenguen.
+								229 text (…).”.
+								230 text Por tanto, el derecho a la deducción nace en el momento en que se devengan las cuotas deducibles, salvo en las excepciones de ese artículo 98. Dicho ejercicio se podrá ejercitar una vez se hayan soportado las cuotas, esto es, cuando se haya recibido la factura o el resto de documentos justificativos del derecho la deducción, salvo excepciones.
+								231 text 6.- En cuanto a la regularización de las deducciones por los bienes de inversión, el artículo 107 de la Ley 37/1992 dispone lo siguiente:
+								232 text “Uno. Las cuotas deducibles por la adquisición o importación de bienes de inversión deberán regularizarse durante los cuatro años naturales siguientes a aquel en que los sujetos pasivos realicen las citadas operaciones.
+								233 text No obstante, cuando la utilización efectiva o entrada en funcionamiento de los bienes se inicien con posterioridad a su adquisición o importación, la regularización se efectuará el año en que se produzcan dichas circunstancias y los cuatro siguientes.
+								234 text Las regularizaciones indicadas en este apartado sólo se practicarán cuando, entre el porcentaje de deducción definitivo correspondiente a cada uno de dichos años y el que prevaleció en el año en que se soportó la repercusión, exista una diferencia superior a diez puntos.
+								235 text (…)
+								236 text Tres. Tratándose de terrenos o edificaciones, las cuotas deducibles por su adquisición deberán regularizarse durante los nueve años naturales siguientes a la correspondiente adquisición.
+								237 text Sin embargo, si su utilización efectiva o entrada en funcionamiento se inician con posterioridad a su adquisición la regularización se efectuará el año en que se produzcan dichas circunstancias y los nueve años naturales siguientes.”.
+								238 text Por su parte, el artículo 109 regula el procedimiento para practicar la regularización de deducciones por bienes de inversión:
+								239 text “La regularización de las deducciones a que se re refiere el artículo 107 de esta Ley se realizará del siguiente modo:
+								240 text 1º. Conocido el porcentaje de deducción definitivamente aplicable en cada uno de los años en que deba tener lugar la regularización, se determinará el importe de la deducción que procedería si la repercusión de las cuotas se hubiese soportado en el año que se considere.
+								241 text 2º. Dicho importe se restará del de la deducción efectuada en el año en que tuvo lugar la repercusión.
+								242 text 3º. La diferencia positiva o negativa se dividirá por cinco o, tratándose de terrenos o edificaciones, por diez, y el cociente resultante será la cuantía del ingreso o de la deducción complementarios a efectuar.”.
+								243 text En consecuencia, al tratarse de terrenos y edificaciones, el periodo de regularización será de los 9 años naturales siguientes al de la adquisición.
+								244 text Sin embargo, si la utilización efectiva o entrada en funcionamiento se produce con posterioridad al año de adquisición, se deberán regularizar las deducciones practicadas conforme al porcentaje de prorrata del año de inicio la utilización efectiva o entrada en funcionamiento. En efecto, dicho porcentaje será el porcentaje que deba tenerse en cuenta a efectos de la regularización de bienes de inversión que deberá, en su caso, realizar el consultante en los años siguientes al que se produce su utilización efectiva o entrada en funcionamiento.
+								245 text A estos efectos, conforme al criterio de esta Dirección General en la contestación vinculante de 22 de diciembre de 2011, número V3000-11, se entiende como momento de entrada en funcionamiento de un elemento, aquél en que se produce su integración al proceso productivo de la empresa en condiciones normales de funcionamiento, una vez concluido el período de instalación y prueba.
+								246 text Posteriormente, se practicará la regularización durante los 9 años naturales siguientes al de la entrada en funcionamiento. No obstante, esta regularización sólo procederá cuando el porcentaje de deducción definitivo aplicable en cada uno de esos años a la actividad a la que se encuentra afecto el bien de inversión correspondiente, ya sea en virtud de la aplicación de la regla de prorrata general o prorrata especial, exceda en más de 10 puntos porcentuales del porcentaje de deducción aplicado en el año de la utilización efectiva o entrada en funcionamiento.
+								247 text Asimismo, en el procedimiento regulado por el artículo 109 el importe previsto en el número 2º de dicho artículo es el importe de las deducciones practicadas, una vez regularizadas conforme al porcentaje de prorrata del año de la utilización efectiva o entrada en funcionamiento.
+								248 text En cuanto al momento de inicio de la utilización efectiva o entrada en funcionamiento del bien de inversión, a efectos del cómputo del plazo de regularización, se trata en todo caso de una cuestión de hecho que no puede determinarse por esta Dirección General, sino que deberá ser acreditada por el consultante por cualquier medio de prueba admitido en Derecho.
+								249 text Este es el criterio que se ha reiterado por este Centro directivo, por todas, en la contestación vinculante de 28 de diciembre de 2017, número V3307-17.
+								250 text 7.- No obstante lo anterior, en el supuesto de que el consultante no haya iniciado la realización habitual de entregas de bienes o prestaciones de servicios en el ejercicio de esa actividad empresarial o profesional, se informa que la primera condición necesaria para que nazca el derecho a la deducción de las cuotas soportadas por este Impuesto es que quien realice la adquisición de bienes o servicios sea sujeto pasivo de dicho tributo, pero ésta no es suficiente porque es preciso, además, que en el momento en que se realicen tales adquisiciones o se reciban estos servicios, exista el propósito de destinarlos a una determinada actividad empresarial o profesional que origine el derecho a la deducción.
+								251 text Así se establece en el artículo 93, apartados uno y cuatro, de la Ley 37/1992:
+								252 text “Uno. Podrán hacer uso del derecho a deducir los sujetos pasivos del Impuesto que tengan la condición de empresarios o profesionales de conformidad con lo dispuesto en el artículo 5 de esta Ley y hayan iniciado la realización habitual de entregas de bienes o prestaciones de servicios correspondientes a sus actividades empresariales o profesionales.
+								253 text No obstante lo dispuesto en el párrafo anterior, las cuotas soportadas o satisfechas con anterioridad al inicio de la realización habitual de entregas de bienes o prestaciones de servicios correspondientes a sus actividades empresariales o profesionales podrán deducirse con arreglo a lo dispuesto en los artículos 111, 112 y 113 de esta Ley.
+								254 text (…).
+								255 text Cuatro. No podrán ser objeto de deducción, en ninguna medida ni cuantía, las cuotas soportadas o satisfechas por las adquisiciones o importaciones de bienes o servicios efectuadas sin la intención de utilizarlos en la realización de actividades empresariales o profesionales, aunque ulteriormente dichos bienes o servicios se afecten total o parcialmente a las citadas actividades.”.
+								256 text Con respecto a la deducción de las cuotas del Impuesto soportadas con anterioridad al inicio de la actividad, habrá que tener en consideración lo dispuesto por el artículo 111 de la Ley 37/1992, a cuyo tenor:
+								257 text “Uno. Quienes no viniesen desarrollando con anterioridad actividades empresariales o profesionales y adquieran la condición de empresario o profesional por efectuar adquisiciones o importaciones de bienes o servicios con la intención, confirmada por elementos objetivos, de destinarlos a la realización de actividades de tal naturaleza, podrán deducir las cuotas que, con ocasión de dichas operaciones, soporten o satisfagan antes del momento en que inicien la realización habitual de las entregas de bienes o prestaciones de servicios correspondientes a dichas actividades, de acuerdo con lo dispuesto en este artículo y en los artículos 112 y 113 siguientes.
+								258 text Lo dispuesto en el párrafo anterior será igualmente aplicable a quienes, teniendo ya la condición de empresario o profesional por venir realizando actividades de tal naturaleza, inicien una nueva actividad empresarial o profesional que constituya un sector diferenciado respecto de las actividades que venían desarrollando con anterioridad.
+								259 text (…)
+								260 text Seis. A efectos de lo dispuesto en este artículo y en los artículos 112 y 113 de esta Ley, se considerará primer año de realización de entregas de bienes o prestaciones de servicios en el desarrollo de actividades empresariales o profesionales, aquél durante el cual el empresario o profesional comience el ejercicio habitual de dichas operaciones, siempre que el inicio de las mismas tenga lugar antes del día 1 de julio y, en otro caso, el año siguiente.”.
+								261 text El Tribunal de Justicia de la Unión Europea (en lo sucesivo, el TJUE) se ha pronunciado en numerosas ocasiones en relación con el derecho a la deducción de las cuotas soportadas con carácter previo al inicio de la realización de entregas de bienes o prestaciones de servicios que constituyan la actividad económica del sujeto pasivo.
+								262 text Así, la primera sentencia que se refiere concretamente a esta cuestión es la dictada por el Tribunal con fecha 14 de febrero de 1985 en el Asunto C-268/83, Rompelman, que dispone en su apartado 23 que el principio de neutralidad del IVA respecto de la carga fiscal de la empresa exige que los primeros gastos de inversión efectuados para las necesidades de creación de una empresa se consideren como actividades económicas y sería contrario a dicho principio el hecho de que las referidas actividades económicas sólo empezaran cuando se produzca el ingreso sujeto al Impuesto. Cualquier otra interpretación del artículo 4 de la Directiva supondría gravar al operador económico con el coste del Impuesto sobre el Valor Añadido en el marco de su actividad económica sin darle la posibilidad de deducirlo, conforme al artículo 17, y haría una distinción arbitraria entre los gastos de inversión efectuados antes y durante la realización efectiva de actividades económicas.
+								263 text Siguiendo la jurisprudencia comunitaria, en el mismo sentido se ha pronunciado el TJUE recientemente en su sentencia de 17 de octubre de 2018, asunto C-249/17, señalando lo siguiente:
+								264 text “(…)
+								265 text 24 El principio de neutralidad del IVA respecto de la carga fiscal de la empresa exige que los primeros gastos de inversión efectuados para las necesidades de creación de una empresa se consideren como actividades económicas, y sería contrario a dicho principio el que las referidas actividades económicas solo empezaran en el momento en que nace el ingreso imponible. Cualquier otra interpretación supondría gravar al operador económico con el coste del IVA en el marco de su actividad económica sin darle la posibilidad de deducirlo y haría una distinción arbitraria entre los gastos de inversión efectuados por necesidades de la empresa en función de que estos se efectuaran antes de iniciar la explotación efectiva de la empresa o de que se efectuaran durante la explotación de esta (sentencia de 21 de marzo de 2000, G. y otros, C-110/98 a C-147/98, EU:C:2000:145, apartado 45 y jurisprudencia citada).
+								266 text (…).”.
+								267 text Por tanto, las cuotas que se hayan soportado por adquisiciones de bienes y servicios que el consultante haya afectado a la realización de una actividad empresarial o profesional sujeta al Impuesto sobre el Valor Añadido serán deducibles en los términos previstos en la Ley. El criterio para proceder a deducir el Impuesto sobre el Valor Añadido soportado antes del inicio de las operaciones gravadas se fija en la intención de destinar los bienes o servicios adquiridos a una actividad empresarial, por lo que, nacido el derecho sigue existiendo, aunque la actividad no diera lugar a operaciones sujetas al Impuesto sobre el Valor Añadido.
+								268 text 8.- A los efectos de valorar dicha intencionalidad, el artículo 27, apartado 2, del Reglamento del Impuesto, aprobado por el artículo 1 del Real Decreto 1624/1992, de 29 de diciembre (BOE de 31 de diciembre), relaciona en una lista ejemplificativa una serie de circunstancias que permitan acreditar a los sujetos pasivos la intencionalidad a que se refiere el citado artículo 5, apartado dos, de la Ley del Impuesto:
+								269 text “1. Quienes no viniesen desarrollando con anterioridad actividades empresariales o profesionales, y efectúen adquisiciones o importaciones de bienes o servicios con la intención de destinarlos a la realización de tales actividades, deberán poder acreditar los elementos objetivos que confirmen que en el momento en que efectuaron dichas adquisiciones o importaciones tenían esa intención, pudiendo serles exigida tal acreditación por la Administración tributaria.
+								270 text 2. La acreditación a la que se refiere el apartado anterior podrá ser efectuada por cualquiera de los medios de prueba admitidos en derecho.
+								271 text A tal fin, podrán tenerse en cuenta, entre otras, las siguientes circunstancias:
+								272 text a) La naturaleza de los bienes y servicios adquiridos o importados, que habrá de estar en consonancia con la índole de la actividad que se tiene intención de desarrollar.
+								273 text b) El período transcurrido entre la adquisición o importación de dichos bienes y servicios y la utilización efectiva de los mismos para la realización de las entregas de bienes o prestaciones de servicios que constituyan el objeto de la actividad empresarial o profesional.
+								274 text c) El cumplimiento de las obligaciones formales, registrales y contables exigidas por la normativa reguladora del Impuesto, por el Código de Comercio o por cualquier otra norma que resulte de aplicación a quienes tienen la condición de empresarios o profesionales.
+								275 text (…).”.
+								276 text Si bien dicho precepto se refiere al momento en que ha de entenderse iniciada una actividad empresarial o profesional a los efectos de ejercitar el derecho a la deducción del Impuesto, su contenido resulta plenamente válido a los efectos de valorar si el consultante, tal y como manifiesta, va a afectar el inmueble al que se refiere la consulta al desarrollo de una actividad empresarial sujeta y no exenta, con independencia de que no se haya iniciado todavía.
+								277 text En tal caso, las cuotas del impuesto soportadas en la adquisición del terreno y la construcción de la edificación serían deducibles, de conformidad al artículo 92 de la Ley 37/1992, siempre que se cumplan el resto de requisitos que se contienen en dicha Ley y, en concreto, las limitaciones de los artículos 93.Cuatro y 95, ya mencionados anteriormente.
+								278 text Tal y como se ha señalado en relación a la valoración de las pruebas, en nuestro ordenamiento jurídico rige el principio general de valoración libre y conjunta de todas las pruebas aportadas, quedando descartado como principio general el sistema de prueba legal o tasada. Dicha intencionalidad, por tanto, es una cuestión de hecho respecto de la que este Centro directivo no puede pronunciarse y será el interesado quien, en su caso, podrá acreditarlo por cualquier medio de prueba admisible en derecho.
+								279 text 9.- Una vez determinado, en su caso, el derecho a la deducción de las cuotas soportadas con anterioridad a la realización habitual de las entregas de bienes o prestaciones de servicios correspondientes a dichas actividades, se le informa sobre el periodo y procedimiento para practicar tales deducciones.
+								280 text En cuanto al periodo, resultan igualmente aplicables los artículos 98 y 99 de la Ley 37/1992, ya citados.
+								281 text En relación con el procedimiento, según el artículo 111.Dos de la Ley 37/1992:
+								282 text “Dos. Las deducciones a las que se refiere el apartado anterior se practicarán aplicando el porcentaje que proponga el empresario o profesional a la Administración, salvo en el caso de que esta última fije uno diferente en atención a las características de las correspondientes actividades empresariales o profesionales.
+								283 text Tales deducciones se considerarán provisionales y estarán sometidas a las regularizaciones previstas en los artículos 112 y 113 de esta Ley.”.
+								284 text Por su parte, según el artículo 112 de la Ley 37/1992:
+								285 text “Uno. Las deducciones provisionales a que se refiere el artículo 111 de esta Ley se regularizarán aplicando el porcentaje definitivo que globalmente corresponda al período de los cuatro primeros años naturales de realización de entregas de bienes o prestaciones de servicios efectuadas en el ejercicio de actividades empresariales o profesionales.
+								286 text Dos. El porcentaje definitivo a que se refiere el apartado anterior se determinará según lo dispuesto en el artículo 104 de esta Ley, computando al efecto el conjunto de las operaciones realizadas durante el período a que se refiere el citado apartado.
+								287 text Tres. La regularización de las deducciones a que se refiere este artículo se realizará del siguiente modo:
+								288 text 1.º Conocido el porcentaje de deducción definitivamente aplicable a las cuotas soportadas o satisfechas con anterioridad al inicio de la realización de las entregas de bienes o prestaciones de servicios correspondientes a la actividad empresarial o profesional, se determinará el importe de la deducción que procedería en aplicación del mencionado porcentaje.
+								289 text 2.º Dicho importe se restará de la suma total de las deducciones provisionales practicadas conforme a lo dispuesto por el artículo 111 de esta Ley.
+								290 text 3.º La diferencia, positiva o negativa, será la cuantía del ingreso o de la deducción complementaria a efectuar.”.
+								291 text Adicionalmente, según el artículo 113 de ese mismo texto legal:
+								292 text “Uno. Las deducciones provisionales a que se refiere el artículo 111 de esta Ley correspondientes a cuotas soportadas o satisfechas por la adquisición o importación de bienes de inversión, una vez regularizadas con arreglo a lo dispuesto en el artículo anterior, deberán ser objeto de la regularización prevista en el artículo 107 de esta misma Ley durante los años del período de regularización que queden por transcurrir.
+								293 text Dos. Para la práctica de las regularizaciones previstas en este artículo, se considerará deducción efectuada el año en que tuvo lugar la repercusión a efectos de lo dispuesto en el artículo 109, número 2.º de esta Ley, la que resulte del porcentaje de deducción definitivamente aplicable en virtud de lo establecido en el apartado uno del artículo 112 de esta misma Ley.”.
+								294 text En consecuencia, la deducción se podrá practicar en los periodos en los que se soporten las cuotas deducibles, aplicando el porcentaje de deducción provisional determinado conforme al artículo 111.Dos de la Ley 37/1992.
+								295 text Posteriormente, las deducciones provisionales practicadas conforme a dicho porcentaje provisional habrán de ser regularizadas aplicando el porcentaje definitivo que globalmente corresponda al período de los cuatro primeros años naturales de realización de la actividad.
+								296 text Finalmente, esa deducción conforme al porcentaje global se habrá de regularizar conforme al artículo 107 de la Ley 37/1992, ya citado, durante los años del periodo de regularización que queden por transcurrir y considerando como porcentaje definitivo de deducción el porcentaje que globalmente corresponda al período de los cuatro primeros años naturales de realización de la actividad.
+								297 text 10.- Lo que comunico a Vd. con efectos vinculantes, conforme a lo dispuesto en el apartado 1 del artículo 89 de la Ley 58/2003, de 17 de diciembre, General Tributaria.
+		101 container footer_content
+			102 container
+				103 text Doctrina Tributaria - Consultas Tributarias
+				104 link Description: Accesibilidad, Value: petete.tributos.hacienda.gob.es/consultas/accesibilidad.vm
+				105 text  | 
+				106 link Description: Aviso Legal, Value: petete.tributos.hacienda.gob.es/consultas/avisoLegal.vm
+			107 container
+				108 link Description: HTML5 válido, Value: validator.w3.org/check?uri=referer
+				109 link Description: CSS válido, Value: jigsaw.w3.org/css-validator/check/referer
+				110 link Description: WCAG 2.1 (Level AA), Value: achecker.ca/checker/index.php?uri=referer&gid=WCAG2-AA
+
+The focused UI element is 130 cell doc_26115

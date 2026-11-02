@@ -1,0 +1,110 @@
+{
+  "method": "Native LF uses split(\\n), not splitlines; exact quotes with disclosed PDF-formfeed or literal display escape distinguished. Coordinate-only audit; no legal reread.",
+  "results": [
+    {
+      "slug": "es-beckham",
+      "anchors": 67,
+      "native_range_unmatched": [],
+      "within_span_display_normalization": [],
+      "ledger_sha256": "977e773de5fa24cc7b4feb88c05bbe05137a7c5cc1132ed5c94802dcb465e925"
+    },
+    {
+      "slug": "es-modelo-111",
+      "anchors": 101,
+      "native_range_unmatched": [],
+      "within_span_display_normalization": [],
+      "ledger_sha256": "323f795bfb6d1a2b865ff5cc419b39d872d6f63df02f7e4d3843227e64b3f5c6"
+    },
+    {
+      "slug": "es-estimated-tax",
+      "anchors": 139,
+      "native_range_unmatched": [
+        {
+          "quote": 56,
+          "reader": "sources/Annex.reader.txt",
+          "LF": [
+            354,
+            354
+          ],
+          "quote_head": "De los trimestres anteriores: suma de los importes positivos de la casilla 07 me"
+        },
+        {
+          "quote": 57,
+          "reader": "sources/Annex.reader.txt",
+          "LF": [
+            383,
+            383
+          ],
+          "quote_head": "660,14 euros por trimestre) o el 2 por 100 de 08 (máximo: 660,14 euros anuales) "
+        },
+        {
+          "quote": 58,
+          "reader": "sources/Annex.reader.txt",
+          "LF": [
+            384,
+            384
+          ],
+          "quote_head": "Total ( 14 – 15 – 16 ). Si se obtiene una cantidad negativa, consígnela con sign"
+        },
+        {
+          "quote": 59,
+          "reader": "sources/Annex.reader.txt",
+          "LF": [
+            387,
+            387
+          ],
+          "quote_head": "Resultado de la autoliquidación ( 17 – 18 ) ...................................."
+        }
+      ],
+      "within_span_display_normalization": [],
+      "ledger_sha256": "8c3f32ab844c98129f295317534e711b5f21c9914049f50a0b2519fa13b1c8c9"
+    },
+    {
+      "slug": "es-autonomous-worker",
+      "anchors": 115,
+      "native_range_unmatched": [],
+      "within_span_display_normalization": [],
+      "ledger_sha256": "d3e3ea646a7b3eab90d772ea5301c939929e14047a1057353586347db29c4555"
+    },
+    {
+      "slug": "es-capital-gains",
+      "anchors": 157,
+      "native_range_unmatched": [],
+      "within_span_display_normalization": [],
+      "ledger_sha256": "3b52bac6c6b55116bc53a0339c740aa962101dabe52af68f0ed167d43b8c6e9c"
+    },
+    {
+      "slug": "es-rental-income",
+      "anchors": 128,
+      "native_range_unmatched": [],
+      "within_span_display_normalization": [],
+      "ledger_sha256": "d306f92e524564f6d412fdf2ee901d3fa38eebd28476e1099a11369dcf55adb0"
+    },
+    {
+      "slug": "es-corporate-tax",
+      "anchors": 141,
+      "native_range_unmatched": [],
+      "within_span_display_normalization": [],
+      "ledger_sha256": "2ef605ee2445b536d38f4fccccb788c526425ef6520395643d4caf6e53f7eb45"
+    },
+    {
+      "slug": "spain-crypto-tax",
+      "anchors": 139,
+      "native_range_unmatched": [],
+      "within_span_display_normalization": [
+        {
+          "quote": 132,
+          "type": "PDF-formfeed-to-newline"
+        }
+      ],
+      "ledger_sha256": "7c4f1c0ce0aa36b631ad3799efa6fdf19e55114d236cd0bdec05f3c554f9ee1e"
+    },
+    {
+      "slug": "es-social-contributions",
+      "anchors": 197,
+      "native_range_unmatched": [],
+      "within_span_display_normalization": [],
+      "ledger_sha256": "b97e69d8101a113a8e10fc1ef960d6e30b5e6ccc3ad1f12a378c2142b7298791"
+    }
+  ]
+}

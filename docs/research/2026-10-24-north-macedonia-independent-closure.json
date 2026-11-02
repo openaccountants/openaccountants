@@ -1,0 +1,583 @@
+{
+  "reviewer": "Independent reviewer agent /root/mk_independent_review; AI legal-source/arithmetic review only, no professional signoff",
+  "read_date": "2026-10-24",
+  "reviewed_commit": "62006ea5a4a642a77bda9650a9568eccff23ebd5",
+  "initial_reviewed_commit": "39ab9ebefcb5fb54b924372568a70c83faca613a",
+  "status": "ready_for_draft_pr_with_explicit_core_gaps",
+  "tier": 2,
+  "findings_closed": [
+    {
+      "id": "MK-R1",
+      "status": "closed",
+      "paths": [
+        {
+          "path": "skills/international/north-macedonia/north-macedonia-income-tax.md",
+          "line": 62
+        },
+        {
+          "path": "skills/international/north-macedonia/north-macedonia-cross-border.md",
+          "line": 47
+        }
+      ],
+      "verification": "PIT base, intake and XB routing now state the 1 January 2023 taxpayer/predecessor acquisition boundary and chronological FIFO. Independently re-read Gazette274/2022 transitional arts.21-22, PDF pp.38-39; identical fresh PDF hash confirms source bytes. Property-gift transitional art.24 is also explicitly preserved."
+    },
+    {
+      "id": "MK-R2",
+      "status": "closed",
+      "paths": [
+        {
+          "path": "skills/international/north-macedonia/north-macedonia-income-tax.md",
+          "line": 74
+        }
+      ],
+      "verification": "Domestic intermediary reporting by15 January, UJP assessment by15 February and payment15 days after service now have their own route, separate from foreign receipts and general monthly reporting. Re-read PIT85-a,91-a,93(4),87-88."
+    },
+    {
+      "id": "MK-R3",
+      "status": "closed",
+      "paths": [
+        {
+          "path": "skills/international/north-macedonia/north-macedonia-income-tax.md",
+          "line": 52
+        },
+        {
+          "path": "skills/international/north-macedonia/mk-corporate-income-tax.md",
+          "line": 49
+        },
+        {
+          "path": "skills/international/north-macedonia/north-macedonia-transfer-pricing.md",
+          "line": 54
+        }
+      ],
+      "verification": "PIT27(7) matching-maturity EURIBOR(FX)/SKIBOR(MKD)+one percentage point deductible-interest fallback is explicit. Corporate/TP independently cites Profit Rulebook art.4 for the borrowing ceiling AND lending-income floor rather than importing PIT. Fresh official rulebook matches hash975e0e98c986e69593e5f26887c70c836ff77216b3ccfc734a6a0f5fb8aa11ca; re-read art.4 pp.2-3."
+    },
+    {
+      "id": "MK-R4",
+      "status": "closed_with_explicit_unconfirmed_operational_boundary",
+      "paths": [
+        {
+          "path": "skills/international/north-macedonia/north-macedonia-social-contributions.md",
+          "line": 23
+        },
+        {
+          "path": "skills/international/north-macedonia/README.md",
+          "line": 15
+        }
+      ],
+      "verification": "The administrator change is tied to the July amendment and UJP13 July notice, earlier self-calculation periods/corrections are kept distinct, and exact commencement/correction transition is explicitly unconfirmed in SC Sources and README. The original unsupported whole-year assignment is removed. This closes the drafting defect; it does not certify the still-unverified operational cutover."
+    },
+    {
+      "id": "MK-R5",
+      "status": "closed",
+      "paths": [
+        {
+          "path": "skills/international/north-macedonia/north-macedonia-income-tax.md",
+          "line": 60
+        }
+      ],
+      "verification": "PIT43-46 own-product category now includes80% costs, the separate1,000,000 income tests, activity registration by15 January, other taxable/nontaxable-income qualifications and exceptions, confirmed annual return/ministry verification and end-of-following-year refund. Re-read law pp.15-16. No general exemption-at-source is inferred."
+    },
+    {
+      "id": "MK-R6",
+      "status": "closed",
+      "paths": [
+        {
+          "path": "skills/international/north-macedonia/north-macedonia-income-tax.md",
+          "line": 33
+        },
+        {
+          "path": "skills/international/north-macedonia/north-macedonia-income-tax.md",
+          "line": 72
+        }
+      ],
+      "verification": "Official net-wage release23.3.2025.1/11 published21 January2026 gives45,961 for November2025. PIT94(2) explicitly uses50% of the January-published net wage. Independent Decimal calculation gives22,980.50 base and2,298.05 at10%; payment-rounding qualification and distinction from gross contribution reference retained."
+    }
+  ],
+  "new_findings": [],
+  "material_unaddressed_initial_findings": [],
+  "added_rule_verification": {
+    "rule": "Foreign-currency salary contribution-base conversion",
+    "path": "skills/international/north-macedonia/north-macedonia-social-contributions.md",
+    "line": 60,
+    "source_url": "https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf",
+    "source_sha256": "b71840feddfc4865867e209c471f006135eb42095425334edde620caaa4d6fd4",
+    "provision": "Contributions Law art.14(3), PDF p.10",
+    "verified": true,
+    "verification": "Statute expressly applies the National Bank official middle exchange rate valid on the last day of the month for which contributions are calculated/paid to salary received in foreign currency. The new paragraph accurately distinguishes PIT93(2) receipt-date foreign-income conversion. It does not apply the salary conversion rule indiscriminately to every contribution category."
+  },
+  "added_parameter_control": {
+    "net_wage": "45961",
+    "base": "22980.5",
+    "advance": "2298.050"
+  },
+  "source_checks": [
+    {
+      "url": "https://ujp.gov.mk/en/javnost/soopstenija/pogledni/1266?print=1",
+      "final_url": "https://ujp.gov.mk/en/javnost/soopstenija/pogledni/1266?print=1",
+      "status": 200,
+      "sha256": "1843e9e2190daf7c7caa5d761008a1c8728e740ec09e9b2c23fb09b1e60357d1",
+      "bytes": 7896,
+      "file": "local-evidence/c0c0af374a6fdc.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:08.999933+00:00"
+    },
+    {
+      "url": "https://ujp.gov.mk/files/attachment/0000/0730/08-2102-1-Odanocuvanje_na_prihodi_ostvareni_od_vrsenje_na_samostojna_dejnost_09.03.2026.pdf",
+      "final_url": "https://ujp.gov.mk/files/attachment/0000/0730/08-2102-1-Odanocuvanje_na_prihodi_ostvareni_od_vrsenje_na_samostojna_dejnost_09.03.2026.pdf",
+      "status": 200,
+      "sha256": "c41b1365f1ac36235280ce684de97cda1299373dbbe16f018df085ee2e3d6cbb",
+      "bytes": 259877,
+      "file": "local-evidence/f9b8ce767305ff.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:09.277614+00:00"
+    },
+    {
+      "url": "https://www.stat.mk/en/stat/population-and-living-conditions/labour-market/average-monthly-net-wage-paid-per-employee/average-monthly-net-wage-paid-per-employee-november-2025/",
+      "final_url": "https://www.stat.mk/en/stat/population-and-living-conditions/labour-market/average-monthly-net-wage-paid-per-employee/average-monthly-net-wage-paid-per-employee-november-2025/",
+      "status": 200,
+      "sha256": "ff6dcbb5dab146944bd56820e7cb393b3410049aac83656a44a762a24a034716",
+      "bytes": 23609,
+      "file": "local-evidence/0acfaf8b5ae4a1.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:09.021314+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje",
+      "final_url": "https://www.ujp.gov.mk/e/plakjanje/licno_osloboduvanje",
+      "status": 200,
+      "sha256": "ff4a0aa19d951bfb184e255da8a11b1051d0c44e7bc0ba6f77d92488ec38ec12",
+      "bytes": 27275,
+      "file": "local-evidence/88a83c71b80afe.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:09.122284+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/en/vodic/category/641?print=1",
+      "final_url": "https://www.ujp.gov.mk/en/vodic/category/641?print=1",
+      "status": 200,
+      "sha256": "dfcf4418c23531181d92d755d63a86315da033aeeba30db020716fc06f418356",
+      "bytes": 13785,
+      "file": "local-evidence/ef99608d25f5ec.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:09.083829+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/file/pravni_lica/category/643?print=1",
+      "final_url": "https://www.ujp.gov.mk/file/pravni_lica/category/643?print=1",
+      "status": 200,
+      "sha256": "4f73db982f88314ed0e47bf26db183e67c7e0b6fe38892ea3581d4e038f33999",
+      "bytes": 6604,
+      "file": "local-evidence/a6065ba39694e7.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:08.998010+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/0157/Uredba_za_amortizacija__277-_219.pdf",
+      "final_url": "https://www.ujp.gov.mk/files/attachment/0000/0157/Uredba_za_amortizacija__277-_219.pdf",
+      "status": 200,
+      "sha256": "8c19133876d0709053a08404a4d514aab4cb06e0745e4b063044b7f7e64a7c3d",
+      "bytes": 426995,
+      "file": "local-evidence/3b94ef72c303b6.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:09.671702+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/0198/Pravilnik_za_nacinot_na_presmetka_i_uplata_na_pridonesite_od_zadolzitelno_socijalno_osiguruvanje_od_09.12.2008_godina.pdf",
+      "final_url": "https://www.ujp.gov.mk/files/attachment/0000/0198/Pravilnik_za_nacinot_na_presmetka_i_uplata_na_pridonesite_od_zadolzitelno_socijalno_osiguruvanje_od_09.12.2008_godina.pdf",
+      "status": 200,
+      "sha256": "1d0a8a35943713240673d3377ad339b24d571804be86915c8ef095ee5c8d9936",
+      "bytes": 466052,
+      "file": "local-evidence/dfef3f250b5a74.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:09.892125+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf",
+      "final_url": "https://www.ujp.gov.mk/files/attachment/0000/0900/_________________________.pdf",
+      "status": 200,
+      "sha256": "092845b9fad962f09706caed5d2697175a2022194a1b3797b7e23667d7cc13c9",
+      "bytes": 660440,
+      "file": "local-evidence/bcef6d3d558658.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:10.283966+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf",
+      "final_url": "https://www.ujp.gov.mk/files/attachment/0000/0965/Zakon_za_danok_na_dobivka_199_2023.pdf",
+      "status": 200,
+      "sha256": "d79bd412e086d065ab521bab80cca3d709ce5608a0fed21c2c391ecf2e49455a",
+      "bytes": 647059,
+      "file": "local-evidence/ea6bfcc277a541.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:10.173357+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf",
+      "final_url": "https://www.ujp.gov.mk/files/attachment/0000/0986/______________________________________.____________267____30.12.2025.pdf",
+      "status": 200,
+      "sha256": "946c4d21d1b24f46f731bd1c82833741bf7e000ae89a871624feb546e2e152ab",
+      "bytes": 810950,
+      "file": "local-evidence/c20b9f831726e7.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:10.620023+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/0990/______________________________________________________________________________________________________________________________________________.pdf",
+      "final_url": "https://www.ujp.gov.mk/files/attachment/0000/0990/______________________________________________________________________________________________________________________________________________.pdf",
+      "status": 200,
+      "sha256": "975e0e98c986e69593e5f26887c70c836ff77216b3ccfc734a6a0f5fb8aa11ca",
+      "bytes": 1070637,
+      "file": "local-evidence/52de3fa4a7c33c.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:10.390728+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/1155/Plavilnik_za_transferni_ceni_59-2019.pdf",
+      "final_url": "https://www.ujp.gov.mk/files/attachment/0000/1155/Plavilnik_za_transferni_ceni_59-2019.pdf",
+      "status": 200,
+      "sha256": "914e8a6db854a406e0568ddf197abbe9294e1a95e59fe9c3e68a00644d162b7b",
+      "bytes": 68181,
+      "file": "local-evidence/d1b9d9bf81c5c7.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:10.162994+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/1165/_______________________________________________________________________________________________________________89-2019.pdf",
+      "final_url": "https://www.ujp.gov.mk/files/attachment/0000/1165/_______________________________________________________________________________________________________________89-2019.pdf",
+      "status": 200,
+      "sha256": "f61c49e4cb2d64dddd9edc85a4910bd134fbc94dcb6cf04661437f6747b7524d",
+      "bytes": 25980,
+      "file": "local-evidence/6fcbdf5752401b.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:10.301443+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/1219/_____________________________________________________________________________271-19.pdf",
+      "final_url": "https://www.ujp.gov.mk/files/attachment/0000/1219/_____________________________________________________________________________271-19.pdf",
+      "status": 200,
+      "sha256": "6ace6aa5f4ad1ad5c6db59787a3ca18c0a3735cbbfac7d7dd7c048b4c3e18129",
+      "bytes": 37101,
+      "file": "local-evidence/e6e46ac3ac65ac.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:10.626808+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/1220/____________________________________________________271-19.pdf",
+      "final_url": "https://www.ujp.gov.mk/files/attachment/0000/1220/____________________________________________________271-19.pdf",
+      "status": 200,
+      "sha256": "ab65cc5cbb35fbe9b78b7b6aa58973955a68053df5b7baff32ddbf8e488b4687",
+      "bytes": 36920,
+      "file": "local-evidence/3ffb83a7c71387.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:10.621484+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf",
+      "final_url": "https://www.ujp.gov.mk/files/attachment/0000/1466/ZAKON_ZA_DANOKOT_NA_LICEN_DOHOD_-_Azuriran_so_Sl.vesnik____274___od_20.12.2022.pdf",
+      "status": 200,
+      "sha256": "307213603e61011bfd39f78ddcb6ac9ef6f535ec5ae789611d392f86d552b034",
+      "bytes": 9307801,
+      "file": "local-evidence/78d6d2f286392d.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:14.821998+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf",
+      "final_url": "https://www.ujp.gov.mk/files/attachment/0000/1616/Precisten_tekst_na_ZPZSO_07_2026______________.pdf",
+      "status": 200,
+      "sha256": "b71840feddfc4865867e209c471f006135eb42095425334edde620caaa4d6fd4",
+      "bytes": 774318,
+      "file": "local-evidence/7aadaccd6d1e16.pdf",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:11.618525+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187",
+      "final_url": "https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1187",
+      "status": 200,
+      "sha256": "b93d29e10f41df6d4af00763376e20960fb7f2f0c8c8253b347c82fb00c1812f",
+      "bytes": 27317,
+      "file": "local-evidence/cd72b340a3a1a8.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:10.750874+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1204",
+      "final_url": "https://www.ujp.gov.mk/mk/javnost/soopstenija/pogledni/1204",
+      "status": 200,
+      "sha256": "a69c7e992ffc4c23a0a55c6d868de8f5c4e1ecc3af436ac9ed867931c392bdc8",
+      "bytes": 27511,
+      "file": "local-evidence/3a2fffa6d16712.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:11.186595+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/mk/regulativa/opis/17",
+      "final_url": "https://www.ujp.gov.mk/mk/regulativa/opis/17",
+      "status": 200,
+      "sha256": "a0c65033cb3b8ce3aa46620bf3c1a46c7e0096657916768c036ac00c2f7273aa",
+      "bytes": 23232,
+      "file": "local-evidence/59bf6e95d6b0fe.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:11.168630+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/mk/regulativa/opis/295",
+      "final_url": "https://www.ujp.gov.mk/mk/regulativa/opis/295",
+      "status": 200,
+      "sha256": "aa3668879c2faad6463be6f506f6d8c2c0f82b2ea22139cb3531b7f07a51347a",
+      "bytes": 22525,
+      "file": "local-evidence/1d6b5a41bd7c31.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:11.166908+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/mk/regulativa/opis/346",
+      "final_url": "https://www.ujp.gov.mk/mk/regulativa/opis/346",
+      "status": 200,
+      "sha256": "cb574099ac52a1cc4d530153da867eaf540ef17efdc30ab8a6cdd993c9063ad4",
+      "bytes": 22765,
+      "file": "local-evidence/58bc9fd1ac7e1d.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:11.203371+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/mk/regulativa/opis/425",
+      "final_url": "https://www.ujp.gov.mk/mk/regulativa/opis/425",
+      "status": 200,
+      "sha256": "e97b00c8271b6fe1320a5339438fc4f3a9ec3f3707939bf44d62c71bfc6759eb",
+      "bytes": 22571,
+      "file": "local-evidence/ba90cbf34a52d2.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:11.575187+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/mk/regulativa/opis/442",
+      "final_url": "https://www.ujp.gov.mk/mk/regulativa/opis/442",
+      "status": 200,
+      "sha256": "c725ddade973f4f14e2b6dd9cd9f53c36f0efeec716d5ac60f3a9eb9103abdc2",
+      "bytes": 22697,
+      "file": "local-evidence/97e1367625321a.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:11.585758+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/mk/regulativa/opis/97",
+      "final_url": "https://www.ujp.gov.mk/mk/regulativa/opis/97",
+      "status": 200,
+      "sha256": "ef7056ae376253cf8f6a593f3e807bf3af3f44f37a685661e183bc5e530a7aca",
+      "bytes": 22414,
+      "file": "local-evidence/3b5125e5865f90.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:11.598696+00:00"
+    },
+    {
+      "url": "https://www.ujp.gov.mk/mk/regulativa/pregled/tr/md",
+      "final_url": "https://www.ujp.gov.mk/mk/regulativa/pregled/tr/md",
+      "status": 200,
+      "sha256": "3e5784d6d720c4ad475648bef59578141461ec6a9c55f5f42ae0a6589aafd24c",
+      "bytes": 70404,
+      "file": "local-evidence/44ba13114470be.html",
+      "read_date": "2026-10-24",
+      "retrieved_utc": "2026-10-24T18:07:11.842035+00:00"
+    }
+  ],
+  "source_result": "All27 final cited official URLs independently fetched again to separate closure evidence,HTTP200. All13 PDF hashes match independently fetched initial-law copies. Receipt file hashes independently recomputed. Existing PIT OCR/render readings remain tied to the same byte-identical statutory PDF; changed provisions re-read during closure.",
+  "schema_result": "Seven changed computational Guides,zero warning groups,pass.",
+  "numerical_result": {
+    "original_oa_check_blocks_unchanged": true,
+    "blocks": 14,
+    "expected_values": 61,
+    "exact_matches": 61,
+    "failures": 0,
+    "method": "Separately hand-written Decimal calculation rerun after correction; all original blocks byte-identical to initial snapshot."
+  },
+  "protected_metadata_and_cta": [
+    {
+      "path": "skills/international/north-macedonia/README.md",
+      "new_file": true,
+      "no_platform_fields": true,
+      "no_hand_stamped_cta": true
+    },
+    {
+      "path": "skills/international/north-macedonia/mk-company-formation.md",
+      "protected_fields_equal": true,
+      "cta_tail_equal": true,
+      "whole_file_equal": true
+    },
+    {
+      "path": "skills/international/north-macedonia/mk-corporate-income-tax.md",
+      "protected_fields_equal": true,
+      "cta_tail_equal": true,
+      "whole_file_equal": false
+    },
+    {
+      "path": "skills/international/north-macedonia/mk-tax-overview.md",
+      "protected_fields_equal": true,
+      "cta_tail_equal": true,
+      "whole_file_equal": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-cross-border.md",
+      "new_file": true,
+      "no_platform_fields": true,
+      "no_hand_stamped_cta": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-income-tax.md",
+      "protected_fields_equal": true,
+      "cta_tail_equal": true,
+      "whole_file_equal": false
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-payroll.md",
+      "protected_fields_equal": true,
+      "cta_tail_equal": true,
+      "whole_file_equal": false
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-social-contributions.md",
+      "protected_fields_equal": true,
+      "cta_tail_equal": true,
+      "whole_file_equal": false
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-tax-optimization.md",
+      "protected_fields_equal": true,
+      "cta_tail_equal": true,
+      "whole_file_equal": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-transfer-pricing.md",
+      "new_file": true,
+      "no_platform_fields": true,
+      "no_hand_stamped_cta": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-vat.md",
+      "protected_fields_equal": true,
+      "cta_tail_equal": true,
+      "whole_file_equal": false
+    }
+  ],
+  "remaining_partial_domains": {
+    "IT-IND": "Business-loss carryforward and cross-category business-loss relief beyond confirmed negative DLD-DB reporting remain unconfirmed.",
+    "SC": "First-calendar-year professional minimum, part-time/partial-month bases beyond the confirmed mixed work/sickness formula, and exact July lump-sum administration cutover remain unconfirmed.",
+    "PR": "Part-time/partial-month contribution bases beyond UJP's confirmed mixed work/sickness formula remain unconfirmed.",
+    "XB": "Standalone migration/deemed-disposal or exit-tax rules and their filing/payment procedure remain unconfirmed."
+  },
+  "remaining_unconfirmed": [
+    {
+      "domain": "IT-IND",
+      "item": "Business-loss carryforward/cross-category relief beyond negative DLD-DB reporting",
+      "attempt": "Read PIT business base/assessment provisions and2026 self-employment brochure/form field22. Negative reporting is confirmed; no verified affirmative broader relief basis. Do not infer no relief or copy CIT."
+    },
+    {
+      "domain": "SC",
+      "item": "First-calendar-year professional minimum interaction",
+      "attempt": "Read Contributions Law14(1)(14) half-reference starting base and15(2) professional floor, plus UJP current base/rate/calculation pages. Current text supplies both rules; an explicit current authoritative resolution of the interaction was not established."
+    },
+    {
+      "domain": "SC/PR",
+      "item": "Ordinary part-time/partial-month contribution floors/ceilings outside the specific mixed work/sickness guidance",
+      "attempt": "Read arts.14-16 and current UJP steps2-4. Hours-based gross/allowance and mixed work/sickness top-up confirmed. Search surfaced2016 MPIN brochure with hour-sensitive wording, but that does not prove2026 operational formula. No arbitrary calendar-day factor inferred."
+    },
+    {
+      "domain": "XB",
+      "item": "Standalone migration/deemed-disposal/exit charge and procedure",
+      "attempt": "Read PIT residence/realisation, CIT PE/status-change/liquidation, procedural tax scope, and official-source searches. None establishes a universal nil departure charge; no exclusion from absence of text was inferred."
+    },
+    {
+      "domain": "SC",
+      "item": "Exact commencement/correction transition for July2026 lump-sum calculation-administration change",
+      "attempt": "Official notice verifies amended art.13 and current allocation of calculation/payment responsibility but does not itself establish complete operational cutover/correction rules. Current Guide and README expressly retain this gap."
+    }
+  ],
+  "source_country_tree": "a9ce11ab40b25254f13d573d90a17b03cf2b70cb",
+  "source_country_blobs": [
+    {
+      "path": "skills/international/north-macedonia/README.md",
+      "git_blob": "2cddd9ac894c8a1732b4be74063e2c27aaae7c43",
+      "sha256": "0c8ba46da263297db351efb58fc371f9e63a804883f0525fc1359b4a30a55e30",
+      "bytes": 5543,
+      "working_tree_matches_commit": true
+    },
+    {
+      "path": "skills/international/north-macedonia/mk-company-formation.md",
+      "git_blob": "df4fdda393a42becc18a5ad91ee509752ec476d5",
+      "sha256": "b84dcae352dee6fc195be86e493be5d199fc0dca91f89c56b15474f0e692f5b0",
+      "bytes": 3709,
+      "working_tree_matches_commit": true
+    },
+    {
+      "path": "skills/international/north-macedonia/mk-corporate-income-tax.md",
+      "git_blob": "4f5404e848202fa5f1a3aee76e7b7a113d476359",
+      "sha256": "7af3ea2f66c5e95977c1f1ecb85008c65c10d91dfb44c5b558f365fac34b19b6",
+      "bytes": 15501,
+      "working_tree_matches_commit": true
+    },
+    {
+      "path": "skills/international/north-macedonia/mk-tax-overview.md",
+      "git_blob": "11f4cb142907e8c2608cb58d4a369dae2faefc7a",
+      "sha256": "f297103201610d7c82b7b49597966cf3797498a400b125456552343551e00a04",
+      "bytes": 3009,
+      "working_tree_matches_commit": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-cross-border.md",
+      "git_blob": "a9d9ca0c90ea9a82c1e65690a4eae891c68405c8",
+      "sha256": "9c2dbb44ec6e4a5c54e36821d5137b22220c7f9580d1d2a9d261b0dc09f98c2e",
+      "bytes": 17618,
+      "working_tree_matches_commit": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-income-tax.md",
+      "git_blob": "58d7672758d33f354fbb5ee98a56f851c57eeac7",
+      "sha256": "709aa624a1abea2b26e38f606cb29c8c3a85f4d68047b3b076db68d0d0dd24ad",
+      "bytes": 20386,
+      "working_tree_matches_commit": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-payroll.md",
+      "git_blob": "8f1b295476fb49716c131f0ec718094b6d19c9ca",
+      "sha256": "c78f179f98037916b03532b821f86b68a29e311eac0c3a5c7c34d5a8f25e971d",
+      "bytes": 15526,
+      "working_tree_matches_commit": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-social-contributions.md",
+      "git_blob": "befe8f01bafa5427ef63c04e0217fed7e55f886a",
+      "sha256": "05d638bb39622f28f35b9f572d1b6b9a44c042a2cb2898bc728ea53dcf1d11ec",
+      "bytes": 17703,
+      "working_tree_matches_commit": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-tax-optimization.md",
+      "git_blob": "851c724f285041eecf34ed54348e8478c5adfc5a",
+      "sha256": "51d8f9a53a119bbaf85079d2e5a8c92ae03747fded46cfd41d52879a1008c96d",
+      "bytes": 5740,
+      "working_tree_matches_commit": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-transfer-pricing.md",
+      "git_blob": "7727eea1dd8fc62fd03b80ff492932de296b7785",
+      "sha256": "656e39be6b7702ab9d64d2b157373ee042ced289f52eed3528dff2f380894f83",
+      "bytes": 14297,
+      "working_tree_matches_commit": true
+    },
+    {
+      "path": "skills/international/north-macedonia/north-macedonia-vat.md",
+      "git_blob": "e4cf169e67307c73640b0d3ec5eac43383e587aa",
+      "sha256": "9f2f379d218b316b558fa114bf3d03e7e1c723c74d72a4b7846462fe326640f9",
+      "bytes": 14024,
+      "working_tree_matches_commit": true
+    }
+  ],
+  "main_comparison": {
+    "local_main": "b1f4afab6bc0f5bc1f2d1930e992179bbcae2013",
+    "origin_main": "fa82c25c375f468017c2ba428d4808e948da3069",
+    "country_differences_between_mains": false
+  },
+  "repository_mutation": "No Guide or other tracked source edited; no commit created by reviewer.",
+  "conclusion": "Ready to open a draft PR as a tier2 source-cited partial pack. All six initial drafting findings are addressed at this exact country tree, including transparent disclosure of the remaining July operational boundary. Retain IT-IND,SC,PR,XB partial entries, do not claim complete country coverage or accountant signoff, and do not close issue413 as complete. Professional review and unresolved core rules remain outstanding."
+}

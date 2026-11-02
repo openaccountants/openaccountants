@@ -1,0 +1,22 @@
+{
+  "skills/international/spain/es-foral-income-tax.md": {
+    "expected_repo_blob": "7188bb813e80db6ba7b80b8adcb2c3905c26c2f5",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-foral-payroll.md": {
+    "expected_repo_blob": "e0c7d675740f6b105798857b73b5f18190ed68ba",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-modelo-111.md": {
+    "expected_repo_blob": "bbe440becd80de82c30bef6fe7486b68af946899",
+    "content_revision": 0
+  },
+  "skills/international/spain/es-vat-return.md": {
+    "expected_repo_blob": "50fc2916caaac9b2f16f62ea7ba3ebd762ba189e",
+    "content_revision": 0
+  },
+  "skills/international/spain/spain-crypto-tax.md": {
+    "expected_repo_blob": "accceef69fd3a6a4c4d258bc3fdd6a7127c23df1",
+    "content_revision": 0
+  }
+}

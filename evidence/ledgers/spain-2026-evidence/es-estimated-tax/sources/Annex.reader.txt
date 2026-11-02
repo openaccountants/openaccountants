@@ -1,0 +1,699 @@
+                    BOLETÍN OFICIAL DEL ESTADO
+Núm. 43                                Jueves 19 de febrero de 2015                              Sec. I. Pág. 13617
+
+
+
+                             I. DISPOSICIONES GENERALES
+
+             MINISTERIO DE HACIENDA Y ADMINISTRACIONES PÚBLICAS
+          1656       Orden HAP/258/2015, de 17 de febrero, por la que se modifica la Orden
+                     EHA/672/2007, de 19 de marzo, por la que se aprueban los modelos 130 y
+                     131 para la autoliquidación de los pagos fraccionados a cuenta del Impuesto
+                     sobre la Renta de las Personas Físicas correspondientes, respectivamente, a
+                     actividades económicas en estimación directa y a actividades económicas en
+                     estimación objetiva, el modelo 310 de declaración ordinaria para la
+                     autoliquidación del régimen simplificado del Impuesto sobre el Valor Añadido,
+                     se determinan el lugar y forma de presentación de los mismos y se modifica
+                     en materia de domiciliación bancaria la Orden EHA/3398/2006, de 26 de
+                     octubre.
+
+               La Ley 26/2014, de 27 de noviembre, por la que se modifica la Ley 35/2006, de 28 de
+          noviembre, del Impuesto sobre la Renta de las Personas Físicas, el Texto Refundido de la
+          Ley del Impuesto sobre la Renta de no Residentes, aprobado por el Real Decreto
+          Legislativo 5/2004, de 5 de marzo, y otras normas tributarias ha suprimido, con efectos
+          desde el 1 de enero de 2015, el beneficio fiscal contemplado en el artículo 80 bis de la
+          Ley 35/2006, consistente en una deducción de la cuota líquida del impuesto de hasta 400
+          euros anuales aplicable a los contribuyentes que obtengan rendimientos del trabajo o de
+          actividades económicas.
+               En consecuencia, el Real Decreto 1003/2014, de 5 de diciembre, por el que se
+          modifica el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado
+          por el Real Decreto 439/2007, de 30 de marzo, en materia de pagos a cuenta y
+          deducciones por familia numerosa o personas con discapacidad a cargo, ha modificado el
+          artículo 110 del Reglamento del Impuesto sobre la Renta de las Personas Físicas,
+          eliminando la posibilidad de deducir la cuantía de la deducción prevista en el artículo 80
+          bis de la Ley del Impuesto del pago fraccionado que deben realizar trimestralmente los
+          contribuyentes del Impuesto sobre la Renta de las Personas Físicas que obtengan
+          rendimientos derivados del ejercicio de actividades económicas.
+               Asimismo, y también con efectos desde el 1 de enero de 2015, el Real Decreto 1003/2014,
+          de 5 de diciembre, introduce en el artículo 110.3.c) del Reglamento del Impuesto, una nueva
+          deducción del rendimiento neto a efectos del cálculo del pago fraccionado trimestral para
+          aquellos obligados tributarios que desarrollen actividades económicas, cuando la cuantía de
+          los rendimientos netos de dichas actividades económicas en el ejercicio anterior haya sido
+          igual o inferior a 12.000 euros.
+               Como consecuencia de la nueva regulación de la determinación del importe de los
+          pagos fraccionados, debe procederse a la modificación de los modelos 130 y 131 para la
+          autoliquidación de los pagos fraccionados a cuenta del Impuesto sobre la Renta de las
+          Personas Físicas correspondientes, respectivamente, a actividades económicas en
+          estimación directa y a actividades económicas en estimación objetiva, con objeto de
+          sustituir en los mismos la antigua deducción y dar entrada a la nueva deducción regulada
+          en la letra c) del artículo 110.3 del Reglamento.
+               A tales efectos, la presente orden aprueba nuevos modelos 130 y 131 que sustituyen a
+          los aprobados en los anexos I y II de la Orden EHA/672/2007, de 19 de marzo, por la que
+          se aprueban los modelos 130 y 131 para la autoliquidación de los pagos fraccionados a
+
+
+
+
+                                                                                                                  cve: BOE-A-2015-1656
+          cuenta del Impuesto sobre la Renta de las Personas Físicas correspondientes,
+          respectivamente, a actividades económicas en estimación directa y a actividades
+          económicas en estimación objetiva, el modelo 310 de declaración ordinaria para la
+          autoliquidación del régimen simplificado del Impuesto sobre el Valor Añadido, se determinan
+          el lugar y forma de presentación de los mismos y se modifica en materia de domiciliación
+                    BOLETÍN OFICIAL DEL ESTADO
+Núm. 43                                Jueves 19 de febrero de 2015                             Sec. I. Pág. 13618
+
+
+          bancaria la Orden EHA/3398/2006, de 26 de octubre, manteniéndose la plena vigencia del
+          resto de su contenido. Tales anexos I y II de la Orden EHA/672/2007, de 19 de marzo,
+          fueron objeto de una última modificación por la Orden EHA/580/2009, de 5 de marzo.
+               Por último, se regula el número de justificante de los modelos 115, 130 y 131 cuando
+          éstos se presenten utilizando el formulario generado exclusivamente mediante la
+          utilización del servicio de impresión desarrollado por la Agencia Estatal de Administración
+          Tributaria, circunstancia que será posible desde el 1 de enero de 2015, respecto de las
+          autoliquidaciones trimestrales de dicho ejercicio y posteriores, de acuerdo con lo
+          dispuesto en el apartado 3 de la Disposición Transitoria única de la Orden HAP/2194/2013,
+          de 22 de noviembre, por la que se regulan los procedimientos y las condiciones generales
+          para la presentación de determinadas autoliquidaciones y declaraciones informativas de
+          naturaleza tributaria. En el mismo sentido, se establecen nuevos números de justificante
+          para los modelos 650, 651 y 655 cuando se realice su presentación en impreso, así como,
+          cuando éstos se presenten utilizando el formulario obtenido mediante la utilización del
+          servicio de impresión desarrollado por la Agencia Estatal de Administración Tributaria.
+               Todo ello, de conformidad con lo previsto en el artículo 117 del Reglamento General
+          de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo
+          de las normas comunes de los procedimientos de aplicación de los tributos, aprobado
+          mediante Real Decreto 1065/2007, de 27 de julio, que habilita, en el ámbito del Estado, al
+          Ministro de Economía y Hacienda para aprobar los modelos de declaración,
+          autoliquidación y comunicación de datos, así como establecer la forma, lugar y plazos de
+          su presentación, y en el artículo 111.3 del Reglamento del Impuesto sobre la Renta de las
+          Personas Físicas, que establece que la declaración de los pagos fraccionados se ajustará
+          a las condiciones y requisitos y el ingreso se efectuará en la forma y lugar que determine
+          el Ministro de Economía y Hacienda. La habilitación al Ministro de Economía y Hacienda
+          anteriormente citada debe entenderse conferida en la actualidad al Ministro de Hacienda
+          y Administraciones Públicas, de acuerdo con lo dispuesto en el artículo 5 y en la
+          Disposición Final segunda del Real Decreto 1823/2011, de 21 de diciembre, por el que se
+          reestructuran los departamentos ministeriales.
+               En su virtud, dispongo:
+
+          Artículo único. Modificación de la Orden EHA/672/2007, de 19 de marzo, por la que se
+              aprueban los modelos 130 y 131 para la autoliquidación de los pagos fraccionados a
+              cuenta del Impuesto sobre la Renta de las Personas Físicas correspondientes,
+              respectivamente, a actividades económicas en estimación directa y a actividades
+              económicas en estimación objetiva, el modelo 310 de declaración ordinaria para la
+              autoliquidación del régimen simplificado del Impuesto sobre el Valor Añadido, se
+              determinan el lugar y forma de presentación de los mismos y se modifica en materia
+              de domiciliación bancaria la Orden EHA/3398/2006, de 26 de octubre.
+
+              Se introducen las siguientes modificaciones en la Orden EHA/672/2007, de 19 de
+          marzo, por la que se aprueban los modelos 130 y 131 para la autoliquidación de los pagos
+          fraccionados a cuenta del Impuesto sobre la Renta de las Personas Físicas
+          correspondientes, respectivamente, a actividades económicas en estimación directa y a
+          actividades económicas en estimación objetiva, el modelo 310 de declaración ordinaria
+          para la autoliquidación del régimen simplificado del Impuesto sobre el Valor Añadido, se
+          determinan el lugar y forma de presentación de los mismos y se modifica en materia de
+          domiciliación bancaria la Orden EHA/3398/2006, de 26 de octubre.
+
+             Uno. Se modifica el artículo 1, que queda redactado de la siguiente forma:
+
+
+
+
+                                                                                                                 cve: BOE-A-2015-1656
+                «Artículo 1.   Aprobación del modelo 130.
+
+                    Se aprueba el modelo 130. Impuesto sobre la Renta de las Personas Físicas.
+                Actividades económicas en estimación directa. Pago fraccionado. Autoliquidación.
+                    BOLETÍN OFICIAL DEL ESTADO
+Núm. 43                                Jueves 19 de febrero de 2015                            Sec. I. Pág. 13619
+
+
+                   Dicho modelo, que figura como anexo I de la presente orden, consta de los dos
+                ejemplares siguientes:
+
+                    Ejemplar para el declarante.
+                    Ejemplar para la Entidad colaboradora-AEAT.
+
+                    El número de justificante que habrá de figurar en este modelo será un número
+                secuencial cuyos tres primeros dígitos se corresponderán con el código 130. No
+                obstante, en el supuesto a que se refiere el artículo 4 de la Orden HAP/2194/2013,
+                de 22 de noviembre, por la que se regulan los procedimientos y las condiciones
+                generales para la presentación de determinadas autoliquidaciones y declaraciones
+                informativas de naturaleza tributaria, el número de justificante comenzará con el
+                código 134.»
+
+             Dos.   Se modifica el artículo 3, que queda redactado de la siguiente forma:
+
+                «Artículo 3.   Aprobación del modelo 131.
+
+                    Se aprueba el modelo 131. Impuesto sobre la Renta de las Personas Físicas.
+                Actividades económicas en estimación objetiva. Pago fraccionado. Autoliquidación.
+                    Dicho modelo, que figura como anexo II de la presente orden, consta de los
+                dos ejemplares siguientes:
+
+                    Ejemplar para el declarante.
+                    Ejemplar para la Entidad colaboradora-AEAT.
+
+                    El número de justificante que habrá de figurar en este modelo será un número
+                secuencial cuyos tres primeros dígitos se corresponderán con el código 131. No
+                obstante, en el supuesto a que se refiere el artículo 4 de la Orden HAP/2194/2013,
+                de 22 de noviembre, por la que se regulan los procedimientos y las condiciones
+                generales para la presentación de determinadas autoliquidaciones y declaraciones
+                informativas de naturaleza tributaria, el número de justificante comenzará con el
+                código 135.»
+
+              Tres. Se sustituye el anexo I relativo al modelo 130 «Impuesto sobre la Renta de las
+          Personas Físicas. Actividades económicas en estimación directa. Pago fraccionado.
+          Declaración» y el anexo II relativo al modelo 131 «Impuesto sobre la Renta de las Personas
+          Físicas. Actividades económicas en estimación objetiva. Pago fraccionado. Declaración»,
+          por los que figuran como anexos I y II, respectivamente, de la presente orden.
+
+          Disposición final primera. Modificación de la Orden del Ministerio de Hacienda, de 20
+             de noviembre de 2000, por la que se aprueban los modelos 115, en pesetas y en
+             euros, de declaración-documento de ingreso, los modelos 180, en pesetas y en euros,
+             del resumen anual de retenciones e ingresos a cuenta sobre determinadas rentas o
+             rendimientos procedentes del arrendamiento o subarrendamiento de inmuebles
+             urbanos del Impuesto sobre la Renta de las Personas Físicas, del Impuesto sobre
+             Sociedades y del Impuesto sobre la Renta de no Residentes, correspondiente a
+             establecimientos permanentes, así como los diseños físicos y lógicos para la
+             sustitución de las hojas interiores del citado modelo 180 por soportes directamente
+             legibles por ordenador y se establecen las condiciones generales y el procedimiento
+             para su presentación telemática.
+
+              Se modifica la Orden del Ministerio de Hacienda, de 20 de noviembre de 2000, por la
+
+
+
+                                                                                                                cve: BOE-A-2015-1656
+          que se aprueban los modelos 115, en pesetas y en euros, de declaración-documento de
+          ingreso, los modelos 180, en pesetas y en euros, del resumen anual de retenciones e
+          ingresos a cuenta sobre determinadas rentas o rendimientos procedentes del
+          arrendamiento o subarrendamiento de inmuebles urbanos del Impuesto sobre la Renta de
+          las Personas Físicas, del Impuesto sobre Sociedades y del Impuesto sobre la Renta de
+                    BOLETÍN OFICIAL DEL ESTADO
+Núm. 43                                Jueves 19 de febrero de 2015                            Sec. I. Pág. 13620
+
+
+          no Residentes, correspondiente a establecimientos permanentes, así como los diseños
+          físicos y lógicos para la sustitución de las hojas interiores del citado modelo 180 por
+          soportes directamente legibles por ordenador y se establecen las condiciones generales y
+          el procedimiento para su presentación telemática, como sigue:
+
+              Se añade un número Cuatro al apartado Primero, que queda redactado de la siguiente
+          forma:
+
+                    «Cuatro. El número de justificante que habrá de figurar en este modelo será
+                un número secuencial cuyos tres primeros dígitos se corresponderán con el
+                código 115. No obstante, en el supuesto a que se refiere el artículo 4 de la Orden
+                HAP/2194/2013, de 22 de noviembre, por la que se regulan los procedimientos y
+                las condiciones generales para la presentación de determinadas autoliquidaciones
+                y declaraciones informativas de naturaleza tributaria, el número de justificante
+                comenzará con el código 116.»
+
+          Disposición final segunda. Modificación de la Orden HAP/2488/2014, de 29 de
+             diciembre, por la que se aprueban los modelos 650, 651 y 655 de autoliquidación del
+             Impuesto sobre Sucesiones y Donaciones, y se determina el lugar, forma y plazo para
+             su presentación.
+
+             Se modifica el artículo 1 de la Orden HAP/2488/2014, de 29 de diciembre, por la que
+          se aprueban los modelos 650, 651 y 655 de autoliquidación del Impuesto sobre
+          Sucesiones y Donaciones, y se determina el lugar, forma y plazo para su presentación,
+          que queda redactado del siguiente modo:
+
+                «Artículo 1.   Aprobación de los modelos 650, 651 y 655.
+
+                   1. Se aprueba el modelo 650 «Impuesto sobre Sucesiones y Donaciones.
+                Adquisiciones “mortis causaˮ», que figura como anexo I de esta orden. El modelo
+                se compone de la relación de bienes que integran el caudal hereditario, de la
+                autoliquidación correspondiente a cada sujeto pasivo, así como de una hoja
+                declarativa que relaciona a todos los interesados en la sucesión.
+                   Este modelo consta de los tres ejemplares siguientes:
+
+                    Ejemplar para el interesado.
+                    Ejemplar para la Entidad colaboradora-AEAT.
+                    Ejemplar para la Administración.
+
+                     El número de justificante que habrá de figurar en el modelo 650 de
+                autoliquidación será un número secuencial cuyos tres primeros dígitos se
+                corresponderán con el código 653. No obstante, en el supuesto a que se refiere el
+                artículo 4 de esta Orden, el número de justificante comenzará con el código 656.
+                     Este modelo se utilizará para la autoliquidación de las adquisiciones “mortis
+                causaˮ, incluidas las de beneficiarios de contratos de seguros sobre la vida, cuando
+                el contratante sea persona distinta del beneficiario, salvo los supuestos
+                expresamente regulados en el artículo 17.2.a) de la Ley 35/2006, de 28 de
+                noviembre, del Impuesto sobre la Renta de las Personas Físicas y de modificación
+                parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no
+                Residentes y sobre el Patrimonio, así como para las autoliquidaciones parciales a
+                que se refiere el artículo 89 del Reglamento del Impuesto sobre Sucesiones y
+                Donaciones, aprobado mediante Real Decreto 1629/1991, de 8 de noviembre.
+
+
+
+
+                                                                                                                cve: BOE-A-2015-1656
+                     2. Se aprueba el Modelo 651 «Impuesto sobre Sucesiones y Donaciones.
+                Adquisiciones “ínter vivosˮ. Autoliquidación», que figura como anexo II de esta
+                orden.
+                    BOLETÍN OFICIAL DEL ESTADO
+Núm. 43                                Jueves 19 de febrero de 2015                             Sec. I. Pág. 13621
+
+
+                    Este modelo consta de los tres ejemplares siguientes:
+
+                    Ejemplar para el interesado.
+                    Ejemplar para la Entidad colaboradora-AEAT.
+                    Ejemplar para la Administración.
+
+                     El número de justificante que habrá de figurar en el modelo 651 de
+                autoliquidación será un número secuencial cuyos tres primeros dígitos se
+                corresponderán con el código 654. No obstante, en el supuesto a que se refiere el
+                artículo 4 de esta Orden, el número de justificante comenzará con el código 657.
+                     Este modelo se utilizará para la autoliquidación de las adquisiciones de bienes
+                y derechos por donación o cualquier otro negocio jurídico “ínter vivosˮ a título
+                gratuito.
+                     3. Se aprueba el Modelo 655 «Impuesto sobre Sucesiones y Donaciones.
+                Consolidación del dominio por extinción del usufructo. Autoliquidación», que figura
+                como anexo III de esta orden.
+                     Este modelo consta de los tres ejemplares siguientes:
+
+                    Ejemplar para el interesado.
+                    Ejemplar para la Entidad colaboradora-AEAT.
+                    Ejemplar para la Administración.
+
+                     El número de justificante que habrá de figurar en el modelo 655 de
+                autoliquidación será un número secuencial cuyos tres primeros dígitos se
+                corresponderán con el código 659. No obstante, en el supuesto a que se refiere el
+                artículo 4 de esta Orden, el número de justificante comenzará con el código 658.
+                     Este modelo de autoliquidación será utilizado por aquellos sujetos pasivos que
+                siendo nudos propietarios de un bien o derecho, consoliden el pleno dominio por
+                extinción del usufructo cuando dicho usufructo se hubiese constituido como
+                consecuencia de una transmisión a título lucrativo, por una sucesión, una donación
+                u otro negocio jurídico “ínter vivosˮ.»
+
+          Disposición final tercera. Entrada en vigor.
+
+              La presente orden entrará en vigor el día siguiente al de su publicación en el «Boletín
+          Oficial del Estado» y surtirá efectos respecto de la presentación de las declaraciones
+          formuladas en los modelos 115, 130 y 131, respectivamente, que correspondan a la
+          primera autoliquidación trimestral del ejercicio 2015 y siguientes.
+
+              Madrid, 17 de febrero de 2015.–El Ministro de Hacienda y Administraciones Públicas,
+          Cristóbal Montoro Romero.
+
+
+
+
+                                                                                                                 cve: BOE-A-2015-1656
+                                                        BOLETÍN OFICIAL DEL ESTADO
+Núm. 43                                                                                             Jueves 19 de febrero de 2015                                                                                                      Sec. I. Pág. 13622
+
+
+                                                                                                                              ANEXO I
+
+
+                                                                                                         Impuesto sobre la Renta de las Personas Físicas                                                                                       Modelo
+                                                          Agencia Tributaria                                         Actividades económicas en estimación directa
+                  MINISTERIO DE HACIENDA
+                    Y ADMINISTRACIONES
+                         PÚBLICAS
+                                                           Teléfono: 901 33 55 33
+                                                           www.agenciatributaria.es
+                                                                                                         Pago fraccionado                                                                  Autoliquidación                               130
+                                                                                                                                                                      Devengo
+                              NIF
+
+                                                                                                                                                                                  Ejercicio ...                             Período ...
+                                                                                                                                                                        (2)
+
+
+
+           Declarante (1)
+                              Nombre
+
+
+
+
+                              Apellidos
+                                                                                                                                                                                   Espacio reservado para la numeración por código de barras
+
+
+
+
+                             I. Actividades económicas en estimación directa, modalidad normal o simpliﬁcada, distintas de las agrícolas, ganaderas, forestales y
+                             pesqueras. (Datos acumulados del período comprendido entre el primer día del año y el último día del trimestre).
+
+                             Ingresos computables correspondientes al conjunto de las actividades ejercidas ..................................................................................... 01
+                             Gastos ﬁscalmente deducibles correspondientes al conjunto de las actividades ejercidas ......................................................................... 02
+                             Rendimiento neto ( 01 – 02 ). Si se obtiene una cantidad negativa, consígnela con signo menos (–) ...................................................... 03
+                             20 por 100 del importe de la casilla 03 , si dicho importe es positivo. (Si la casilla 03 fuese negativa, consigne el número cero) .............. 04
+                             A deducir:
+                                     De los trimestres anteriores: suma de los importes positivos de la casilla 07 menos la suma de los importes de la casilla 16 ........ 05
+
+                                     Retenciones e ingresos a cuenta soportados por las actividades incluidas en este apartado y correspondientes
+                                     al período comprendido entre el primer día del año y el último día del trimestre .............................................................................. 06
+
+
+                             Pago fraccionado previo del trimestre ( 04 – 05 – 06 ). Si se obtiene una cantidad negativa, consígnela con signo menos (–) ......... 07
+
+
+                             II. Actividades agrícolas, ganaderas, forestales y pesqueras en estimación directa, modalidad normal o simpliﬁcada.
+
+
+
+
+           Liquidación (3)
+                             Volumen de ingresos del trimestre (excluidas las subvenciones de capital y las indemnizaciones) ............................................................. 08
+                             2 por 100 del importe de la casilla 08 ................................................................................................................................................ 09
+                             A deducir: Retenciones e ingresos a cuenta soportados por las actividades incluidas en este apartado y correspondientes al trimestre .... 10
+                             Pago fraccionado previo del trimestre ( 09 – 10 ). Si se obtiene una cantidad negativa, consígnela con signo menos (–) .................. 11
+
+
+                             III. Total liquidación.
+                             Suma de pagos fraccionados previos del trimestre ( 07 + 11 ). Si se obtiene una cantidad negativa, consigne el número cero (0) ... 12
+                             A deducir: Minoración por aplicación de la deducción a que se reﬁere el artículo 110.3 c) del Reglamento del Impuesto........................... 13
+                             Diferencia ( 12 – 13 ). Si se obtiene una cantidad negativa, consígnela con signo menos (–) ................................................................ 14
+                             A deducir (si la diferencia anterior es positiva y con el máximo de su importe):
+                                            Resultados negativos de trimestres anteriores .................................................................................................................... 15
+
+                                            Por destinar cantidades al pago para la adquisición o rehabilitación de la vivienda habitual:
+                                            El 2 por 100 de 03 (máximo: 660,14 euros por trimestre) o el 2 por 100 de 08 (máximo: 660,14 euros anuales) .............. 16
+                             Total ( 14 – 15 – 16 ). Si se obtiene una cantidad negativa, consígnela con signo menos (–) ................................................................ 17
+                             A deducir (exclusivamente en caso de autoliquidación complementaria):
+                                     Resultado a ingresar de las anteriores autoliquidaciones presentadas por el mismo concepto, ejercicio y período ............................ 18
+                             Resultado de la autoliquidación ( 17 – 18 ) .................................................................................................................................. 19
+
+
+
+                             Ingreso efectuado a favor del Tesoro público. Cuenta restringida de colaboración en
+                                                                                                                                              A deducir                         Autoliquidación con resultado a deducir en los siguien-
+                             la recaudación de la AEAT de autoliquidaciones.
+                                                                                                                                                                                tes pagos fraccionados del mismo ejercicio
+                             Importe del ingreso (casilla 19 ) ..........               I                                                        (5)
+
+
+           Ingreso (4)
+                                    Forma de pago:                                                                                                                   Si esta autoliquidación es complementaria de otra autoliquidación anterior co-
+
+
+
+
+                                                                                                                                                Complementaria (7)
+                                                                                                                                                                     rrespondiente al mismo concepto, ejercicio y período, consigne una "X" en esta
+                                    Código IBAN                                                                                                                      casilla.
+
+                                                                                                                                                                                Autoliquidación complementaria
+                                                                                                                                                                     En este caso, consigne a continuación el número de justiﬁcante identiﬁcativo
+                                                                                                                                                                     de la autoliquidación anterior.
+          Negativa
+                                                      Autoliquidación negativa                                                                                       Nº de justiﬁcante:
+            (6)
+
+
+
+
+                                                                                                                                                                                                                                                        cve: BOE-A-2015-1656
+           Firma (8)
+                              __________________________ , a _____de _______________________de _________                                                               Firma:
+
+
+
+
+           Este documento no será válido sin la certiﬁcación mecánica o, en su defecto, ﬁrma autorizada                                                                                                           Ejemplar para el declarante
+                                                       BOLETÍN OFICIAL DEL ESTADO
+Núm. 43                                                                                          Jueves 19 de febrero de 2015                                                                                                 Sec. I. Pág. 13623
+
+
+
+
+                                                                                                     Impuesto sobre la Renta de las Personas Físicas                                                                                     Modelo
+                                                        Agencia Tributaria                                      Actividades económicas en estimación directa
+                 MINISTERIO DE HACIENDA
+                   Y ADMINISTRACIONES
+                        PÚBLICAS
+                                                        Teléfono: 901 33 55 33
+                                                        www.agenciatributaria.es
+                                                                                                     Pago fraccionado                                                                Autoliquidación                               130
+                                                                                                                                                                Devengo
+                             NIF
+
+                                                                                                                                                                            Ejercicio ...                             Período ...
+                                                                                                                                                                  (2)
+
+
+
+          Declarante (1)
+                             Nombre
+
+
+
+
+                             Apellidos
+                                                                                                                                                                             Espacio reservado para la numeración por código de barras
+
+
+
+
+          Liquidación (3)
+
+
+
+
+                            Resultado de la autoliquidación ( 17 – 18 ) .................................................................................................................................. 19
+
+
+
+                            Ingreso efectuado a favor del Tesoro público. Cuenta restringida de colaboración en
+                                                                                                                                        A deducir                         Autoliquidación con resultado a deducir en los siguien-
+                            la recaudación de la AEAT de autoliquidaciones.
+                                                                                                                                                                          tes pagos fraccionados del mismo ejercicio
+                            Importe del ingreso (casilla 19 ) ..........            I                                                      (5)
+
+
+          Ingreso (4)
+                                   Forma de pago:                                                                                                              Si esta autoliquidación es complementaria de otra autoliquidación anterior co-
+
+
+
+
+                                                                                                                                          Complementaria (7)
+                                                                                                                                                               rrespondiente al mismo concepto, ejercicio y período, consigne una "X" en esta
+                                   Código IBAN                                                                                                                 casilla.
+
+                                                                                                                                                                          Autoliquidación complementaria
+                                                                                                                                                               En este caso, consigne a continuación el número de justiﬁcante identiﬁcativo
+                                                                                                                                                               de la autoliquidación anterior.
+      Negativa
+                                                   Autoliquidación negativa                                                                                    Nº de justiﬁcante:
+        (6)
+
+
+
+
+                                                                                                                                                                                                                                                  cve: BOE-A-2015-1656
+          Firma (8)
+                             __________________________ , a _____de _______________________de _________                                                          Firma:
+
+
+
+
+          Este documento no será válido sin la certiﬁcación mecánica o, en su defecto, ﬁrma autorizada                                                                             Ejemplar para la entidad colaboradora - AEAT
+                                                         BOLETÍN OFICIAL DEL ESTADO
+Núm. 43                                                                                             Jueves 19 de febrero de 2015                                                                                                                 Sec. I. Pág. 13624
+
+
+                                                                                                                            ANEXO II
+
+                                                                                                         Impuesto sobre la Renta de las Personas Físicas                                                                                              Modelo
+                                                             Agencia Tributaria                                    Actividades económicas en estimación objetiva
+                  MINISTERIO DE HACIENDA
+                    Y ADMINISTRACIONES
+                         PÚBLICAS
+                                                              Teléfono: 901 33 55 33
+                                                              www.agenciatributaria.es
+                                                                                                         Pago fraccionado                                                                    Autoliquidación                                       131
+                                                                                                                                                                         Devengo
+                              NIF
+
+                                                                                                                                                                                    Ejercicio ...                                    Período ...
+                                                                                                                                                                           (2)
+
+
+
+           Declarante (1)
+                              Nombre
+
+
+
+
+                              Apellidos
+                                                                                                                                                                                     Espacio reservado para la numeración por código de barras
+
+
+
+
+                             I. Actividades económicas en estimación objetiva distintas de las agrícolas, ganaderas, forestales y pesqueras.
+                                      Actividad                              Rendimiento neto de la actividad       Porcentaje                                                                                                  Resultado de aplicar el porcentaje
+                                    (epígrafe IAE)                           a efectos del pago fraccionado          aplicable                                                                                                  correspondiente a cada actividad
+                                                     .....................                                                        ...........................................................................................
+                                                     .....................                                                        ...........................................................................................
+                                                     .....................                                                        ...........................................................................................
+                                                     .....................                                                        ...........................................................................................
+                             Suma de rendimientos netos ... 01
+                             Pago fraccionado previo del trimestre: suma de resultados ............................................................................................................ 02
+
+                             II. Actividades económicas en estimación objetiva distintas de las agrícolas, ganaderas, forestales y pesqueras, sin posibilidad de deter-
+                             minar ninguno de los datos-base a efectos del pago fraccionado.
+
+                             Volumen de ventas o ingresos del trimestre (excluidas las subvenciones de capital y las indemnizaciones) ................................................ 03
+                             Pago fraccionado previo del trimestre: el 2 por 100 del importe de la casilla 03 ............................................................................. 04
+
+
+
+
+           Liquidación (3)
+                             III. Actividades agrícolas, ganaderas, forestales y pesqueras en estimación objetiva.
+                             Volumen de ingresos del trimestre (excluidas las subvenciones de capital y las indemnizaciones) ............................................................. 05
+                             Pago fraccionado previo del trimestre: el 2 por 100 del importe de la casilla 05 ............................................................................. 06
+
+                             IV. Total liquidación.
+                             Suma de pagos fraccionados previos del trimestre ( 02 + 04 + 06 ) ......................................................................................... 07
+                             A deducir: Retenciones e ingresos a cuenta soportados correspondientes al trimestre ........................................................................... 08
+                                             Minoración por aplicación de la deducción a que se reﬁere el artículo 110.3 c) del Reglamento del Impuesto........................... 09
+                             Diferencia ( 07 – 08 – 09 ). Si se obtiene una cantidad negativa, consígnela con signo menos (–) ...................................................... 10
+                             A deducir (si la diferencia anterior es positiva y con el máximo de su importe):
+                                             Resultados negativos de trimestres anteriores ..................................................................................................................... 11
+                                             Por destinar cantidades al pago de préstamos para la adquisición o rehabilitación de la vivienda habitual:
+                                             La suma del 0,5 por 100 de 01 y del 2 por 100 de 03 , o el 2 por 100 de 05 (máximo: 660,14 euros anuales) .................. 12
+                             Total ( 10 – 11 – 12 ). Si se obtiene una cantidad negativa, consígnela con signo menos (–) ............................................................... 13
+                             A deducir (exclusivamente en caso de autoliquidación complementaria):
+                                             Resultado a ingresar de las anteriores autoliquidaciones presentadas por el mismo concepto, ejercicio y período ................... 14
+                             Resultado de la autoliquidación ( 13 – 14 ). Si se obtiene una cantidad negativa, consígnela con signo menos (–) ............................. 15
+
+
+
+
+                                                                                                                                               A deducir
+                             Ingreso efectuado a favor del Tesoro público. Cuenta restringida de colaboración en
+                                                                                                                                                                                   Autoliquidación con resultado a deducir en los si-
+                             la recaudación de la AEAT de autoliquidaciones.                                                                              (5)
+                                                                                                                                                                                   guientes pagos fraccionados del mismo ejercicio
+                                    Importe del ingreso ......................           I
+
+           Ingreso (4)
+                                    (casilla 15 )
+                                                                                                                                                                        Si esta autoliquidación es complementaria de otra autoliquidación anterior
+                                    Forma de pago:                                                                                                                      correspondiente al mismo concepto, ejercicio y período, indíquelo marcando
+
+
+
+
+                                                                                                                                                   Complementaria (7)
+                                                                                                                                                                        con una "X" esta casilla.
+                                    Código IBAN
+                                                                                                                                                                                                 Autoliquidación complementaria
+
+                                                                                                                                                                        En este caso, consigne a continuación el número de justiﬁcante identiﬁcativo
+
+          Negativa
+                                                                                                                                                                        de la autoliquidación anterior.
+                                                                   Autoliquidación negativa
+            (6)                                                                                                                                                         Nº de justiﬁcante:
+
+
+
+
+                                                                                                                                                                                                                                                                     cve: BOE-A-2015-1656
+           Firma (8)
+                              __________________________ , a _____de _______________________de _________                                                                  Firma:
+
+
+
+
+           Este documento no será válido sin la certiﬁcación mecánica o, en su defecto, ﬁrma autorizada                                                                                                                   Ejemplar para el declarante
+                                                       BOLETÍN OFICIAL DEL ESTADO
+Núm. 43                                                                              Jueves 19 de febrero de 2015                                                                                             Sec. I. Pág. 13625
+
+
+
+
+                                                                                         Impuesto sobre la Renta de las Personas Físicas                                                                                Modelo
+                                                        Agencia Tributaria                       Actividades económicas en estimación objetiva
+                  MINISTERIO DE HACIENDA
+                    Y ADMINISTRACIONES
+                         PÚBLICAS
+                                                         Teléfono: 901 33 55 33
+                                                         www.agenciatributaria.es
+                                                                                         Pago fraccionado                                                           Autoliquidación                               131
+                                                                                                                                                Devengo
+                              NIF
+
+                                                                                                                                                           Ejercicio ...                             Período ...
+                                                                                                                                                  (2)
+
+
+
+           Declarante (1)
+                              Nombre
+
+
+
+
+                              Apellidos
+                                                                                                                                                            Espacio reservado para la numeración por código de barras
+
+
+
+
+           Liquidación (3)
+
+
+
+
+                             Resultado de la autoliquidación ( 13 – 14 ). Si se obtiene una cantidad negativa, consígnela con signo menos (–) ............................. 15
+
+
+
+
+                                                                                                                      A deducir
+                             Ingreso efectuado a favor del Tesoro público. Cuenta restringida de colaboración en
+                                                                                                                                                          Autoliquidación con resultado a deducir en los si-
+                             la recaudación de la AEAT de autoliquidaciones.                                                     (5)
+                                                                                                                                                          guientes pagos fraccionados del mismo ejercicio
+                                    Importe del ingreso ......................   I
+
+           Ingreso (4)
+                                    (casilla 15 )
+                                                                                                                                               Si esta autoliquidación es complementaria de otra autoliquidación anterior
+                                    Forma de pago:                                                                                             correspondiente al mismo concepto, ejercicio y período, indíquelo marcando
+
+
+
+
+                                                                                                                          Complementaria (7)
+                                                                                                                                               con una "X" esta casilla.
+                                    Código IBAN
+                                                                                                                                                                        Autoliquidación complementaria
+
+                                                                                                                                               En este caso, consigne a continuación el número de justiﬁcante identiﬁcativo
+
+          Negativa
+                                                                                                                                               de la autoliquidación anterior.
+                                                             Autoliquidación negativa
+            (6)                                                                                                                                Nº de justiﬁcante:
+
+
+
+
+                                                                                                                                                                                                                                 cve: BOE-A-2015-1656
+           Firma (8)
+                              __________________________ , a _____de _______________________de _________                                         Firma:
+
+
+
+
+           Este documento no será válido sin la certiﬁcación mecánica o, en su defecto, ﬁrma autorizada                                                           Ejemplar para la entidad colaboradora - AEAT
+
+
+
+
+  http://www.boe.es                                                         BOLETÍN OFICIAL DEL ESTADO                                                                                 D. L.: M-1/1958 - ISSN: 0212-033X
+

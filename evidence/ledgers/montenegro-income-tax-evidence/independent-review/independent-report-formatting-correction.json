@@ -1,0 +1,8 @@
+{
+  "report": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/montenegro-pack-2026-10-31/review/independent-report-8a3ac55c8.md",
+  "correction": "Formatting only: exact hashes, labels, statutory identifiers and spacing restored. Findings/conclusion unchanged. No worktree review.",
+  "before_sha256": "fae642ead448069c15590949eb989f81f19115529a3454473fa70df778a45343",
+  "after_sha256": "d2f91b06f8c82a82b4088e9b024dea1c853b358a1d3f5357f513553551813cd9",
+  "candidate": "8a3ac55c83def25a74fc39f3d184afb87c543603",
+  "base": "6d3d2d5c64103b37d4859c1b1a597a55f063f4f8"
+}

@@ -1,0 +1,40 @@
+{
+  "read_on": "2026-10-28",
+  "reason": "Public portal listing did not establish current service availability; current ITO notice and linked form supply a bounded interim route",
+  "new_row": "IND-60",
+  "new_paragraph": "As read on 28 October 2026, the ITO main page and current return guidance say Tax eService is temporarily unavailable and direct taxpayers to the editable PDF return by email; the public service listing above does not establish availability. The current IT1 covers income and outgoings for 1 July 2025\u201330 June 2026, with a separate election/allowance part for the year commencing 1 July 2026 and a stated receipt deadline of 30 November 2026. Its first-page routing table gives PAYE returns to **paye.returns@gibraltar.gov.gi**, Other returns to **taxopi@gibraltar.gov.gi**, and HEPSS returns to **taxqi@gibraltar.gov.gi**. It requires photo ID, says no taxpayer signature is needed, and rejects a return without ID. A representative supplies authority and name/capacity. The guidance recommends PDF, JPEG or PNG attachments and says paper/lobby-mailbox returns are not accepted. These are the published 2026 filing arrangements, not verified delivery receipts or an assertion that the future year-ending-June-2027 return is released. Follow the actual form year/type and retain submission and assessment evidence. [ITO notice](https://www.gibraltar.gov.gi/income-tax-office); [IT1 first page](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/Tax_ReturnForm2026.pdf); [return guidance, opening notice and pages 3, 10\u201312](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Tax%20Returns/Tax%20Return%20Guidance%202026_.pdf).",
+  "visual_check": "Full IT1 physical page1: taxpayer types, category-email table, mixed year labels, deadline, photo ID and authority",
+  "source_receipts": [
+    {
+      "name": "ito-current.html",
+      "url": "https://www.gibraltar.gov.gi/income-tax-office",
+      "ok": true,
+      "sha256": "0748cd530b86660048ce698db530ae8708f2fb4a670a83b2baf8e8d925a3c813"
+    },
+    {
+      "name": "ct100.pdf",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income Tax Office/Corporate/Guidance notes CT100 - How to complete Form CT1 - 12-2024.pdf",
+      "ok": true,
+      "sha256": "ae38dd9e2a2b4e3e0f21387af2ea46dd0fc13a04c8186bdcabb7953d5a23b027"
+    },
+    {
+      "name": "ct1.xlsx",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income Tax Office/Corporate/Form CT1 2018 (post 30-06-24).xlsx",
+      "ok": true,
+      "sha256": "39b488284e0289b403517fd2ea792d7f5a68dcc66da1178c80b71f0710e26687"
+    },
+    {
+      "name": "individual-return2026.pdf",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income Tax Office/Employers/Tax_ReturnForm2026.pdf",
+      "ok": true,
+      "sha256": "0424f1e3bc81a6ea7040cba4892561bd88abcbcbaedd1a38a2977fce72b4efc6"
+    },
+    {
+      "name": "individual-return-guidance2026.pdf",
+      "url": "https://www.gibraltar.gov.gi/uploads/Income Tax Office/Tax Returns/Tax Return Guidance 2026_.pdf",
+      "ok": true,
+      "sha256": "6c45649e3663452a5c2657144c6299b832dc6282b8f920546a1630943e99d059"
+    }
+  ],
+  "independent_acceptance": false
+}

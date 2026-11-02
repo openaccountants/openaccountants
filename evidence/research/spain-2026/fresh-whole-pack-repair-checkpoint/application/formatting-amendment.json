@@ -1,0 +1,10 @@
+{
+  "as_of": "2026-10-28T03:02:55.910352+00:00",
+  "input_capital_sha256": "280b6647efd86651602f4ae99624befc4fd5d5c090d4ee6e575ba50218cd4e6f",
+  "final_capital_sha256": "77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b",
+  "one_ascii_space_removed": true,
+  "formatting_report_sha256": "7d9ff6cc4690ce8a8ade7d90cf0d9ea9bcfd293119ff64ccf7f4b6a0635171a0",
+  "formatting_manifest_sha256": "b2e84872345c92b3026dc806ed8c18e4777a117b48c11a09fe044859cfb9a0f4",
+  "formatting_manifest_members_verified": 8,
+  "all29_final_hashes_match": true
+}

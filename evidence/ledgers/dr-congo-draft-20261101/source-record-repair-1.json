@@ -1,0 +1,177 @@
+{
+  "candidate_status": "Local drafts, independent review pending",
+  "sources": [
+    {
+      "official_url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "sha256": "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+      "bytes": 2931692,
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/loi-is-et-irpp-23-053.pdf",
+      "read_on": "2026-11-01",
+      "actual_relevant_pdf_pages_read": [
+        5,
+        7,
+        8,
+        12,
+        13,
+        14,
+        17,
+        23,
+        25,
+        26,
+        43,
+        44
+      ],
+      "ocr_note": "OCR supports reading; imperfect recognition checked against page image for flagged passages. No claim that all extracted pages were read.",
+      "publication": "Full capture and OCR/page images remain private, not added to Git."
+    },
+    {
+      "official_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+      "bytes": 13819458,
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/lf-2026-recettes.pdf",
+      "read_on": "2026-11-01",
+      "actual_relevant_pdf_pages_read": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        53
+      ],
+      "ocr_note": "OCR supports reading; imperfect recognition checked against page image for flagged passages. No claim that all extracted pages were read.",
+      "publication": "Full capture and OCR/page images remain private, not added to Git."
+    },
+    {
+      "official_url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+      "sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+      "bytes": 72688605,
+      "private_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/lfr-2026-recettes.pdf",
+      "read_on": "2026-11-01",
+      "actual_relevant_pdf_pages_read": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "ocr_note": "OCR supports reading; imperfect recognition checked against page image for flagged passages. No claim that all extracted pages were read.",
+      "publication": "Full capture and OCR/page images remain private, not added to Git."
+    }
+  ],
+  "public_html_source": "https://dgi.gouv.cd/impot-sur-les-societes/",
+  "html_scope": "Public IS page and i-Impots entry link only; no authenticated form read",
+  "ledger_ocr_check": {
+    "checked": 67,
+    "unmatched": [
+      {
+        "id": "CD-TRANSFER-PRICING-001",
+        "quote": "« après vingt-quatre mois à compter du 31 décembre »",
+        "page": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/loi-23-053-ocr/page-45.txt",
+        "rule": "IS/IRPP reform commencement"
+      },
+      {
+        "id": "CD-TRANSFER-PRICING-010",
+        "quote": "« la majoration ou la diminution des prix d’achat ou de vente »",
+        "page": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/loi-23-053-ocr/page-25.txt",
+        "rule": "Profit transfer includes sale-price changes"
+      },
+      {
+        "id": "CD-TRANSFER-PRICING-015",
+        "quote": "« La liste de ces États est fixée par Arrêté »",
+        "page": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/loi-23-053-ocr/page-23.txt",
+        "rule": "Non-cooperative payment deduction denial and ministerial list"
+      },
+      {
+        "id": "CD-TRANSFER-PRICING-019",
+        "quote": "« à la date de la première intervention de la vérification sur place »",
+        "page": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/lf-2026-recettes-ocr/page-020.txt",
+        "rule": "Master/local files ready at first on-site intervention"
+      },
+      {
+        "id": "CD-CROSS-BORDER-001",
+        "quote": "« prestations de toute nature fournies à des personnes physiques ou morales »",
+        "page": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/loi-23-053-ocr/page-43.txt",
+        "rule": "Nonestablished service provider/established recipient scope"
+      },
+      {
+        "id": "CD-CROSS-BORDER-005",
+        "quote": "« Il est appliqué sur le montant brut des factures »",
+        "page": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/loi-23-053-ocr/page-43.txt",
+        "rule": "Service14% gross invoice and recipient withholding"
+      },
+      {
+        "id": "CD-CROSS-BORDER-012",
+        "quote": "« montant brut des sommes payées »",
+        "page": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/lfr-2026-recettes-ocr/page-010.txt",
+        "rule": "Expanded passive gross base"
+      },
+      {
+        "id": "CD-CROSS-BORDER-017",
+        "quote": "« supérieure ou égale à 50 Francs congolais »",
+        "page": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/loi-23-053-ocr/page-44.txt",
+        "rule": "Rounding fractionalfranc halfupthennearest100with50up"
+      },
+      {
+        "id": "CD-CROSS-BORDER-018",
+        "quote": "« personnellement redevable du montant de la retenue non effectuée »",
+        "page": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/lf-2026-recettes-ocr/page-029.txt",
+        "rule": "Withholdingagent personallyliableomission/shortfallpluspenalties"
+      },
+      {
+        "id": "CD-CROSS-BORDER-020",
+        "quote": "« toute autre installation fixe ou permanente quelconque de caractère productif »",
+        "page": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/loi-23-053-ocr/page-13.txt",
+        "rule": "FixedproductiveinstallationPE"
+      },
+      {
+        "id": "CD-CROSS-BORDER-021",
+        "quote": "« pendant une période au moins égale à trois (3) mois »",
+        "page": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/loi-23-053-ocr/page-13.txt",
+        "rule": "Ownnameprofessionalactivityatleast3months"
+      },
+      {
+        "id": "CD-CROSS-BORDER-031",
+        "quote": "« à la triple condition »",
+        "page": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/dr-congo-pack-2026-11-01/sources/loi-23-053-ocr/page-23.txt",
+        "rule": "Related/privileged/noncooperative andpricingseparatetests"
+      }
+    ],
+    "correction": "Historical OCR check found recognition/column artifacts and one wrong PDF locator. TP commencement locator was corrected to44 before initial freeze. All remaining passages including TP015/XB031 were visually checked; there are no pending checks in this repaired source record.",
+    "visual_resolution": "All remaining flagged passages checked against scans; TP commencement locator corrected44. Quotes retain original French rather than OCR misrecognitions; decimal spacing normalised."
+  },
+  "additional_visual_checks": [
+    "loi23/053 PDF13 PE duration and fixed establishment",
+    "loi23/053 PDF23 arts46–48",
+    "loi23/053 PDF25 art53",
+    "loi23/053 PDF43 service gross levy",
+    "loi23/053 PDF44 rounding and commencement",
+    "LF25/060 PDF20 documentation threshold",
+    "LF25/060 PDF22 USD850m CbC threshold",
+    "LF25/060 PDF29 penalties and payer liability",
+    "LFR26/032 PDF10 passive gross base",
+    "LFR26/032 PDF11 expanded passive definition",
+    "LFR26/032 PDF17 continuation and commencement",
+    "LF25/060 PDF53 art88 commencement during repair"
+  ],
+  "preserved_original_source_record_sha256": "315598ab9c30303104c19bf6dfae9c6bc9d43a1cbbdd15d2d1f57028b9c489ed",
+  "record_status": "Repair1 current source record; original source-record.json preserved unchanged as historical writer evidence",
+  "repair_read_scope_note": "After initial independent review, writer directly reread Law23/052 art6 PDF8 and read/visually checked FinanceAct25/060 art88 PDF53. Their omission from initial ledger/scope is repaired here, not retroactively attributed to the frozen initial candidate."
+}

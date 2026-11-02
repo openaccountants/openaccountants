@@ -1,0 +1,60 @@
+{
+  "files": [
+    {
+      "original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-reviewed-root-application/country-examples.txt",
+      "original_sha256": "96a6c21070ea658c066d45cff98b8d08eacc48b417c7dc0a10d245f173325753",
+      "stored": "application/country-examples.txt.gz",
+      "stored_sha256": "ed2745f71822f14a9814cfc6b84b28e930ebd35034c4c0d09f7f4548fef5e852",
+      "compression": "lossless gzip"
+    },
+    {
+      "original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-reviewed-root-application/full-canonical-schema.txt",
+      "original_sha256": "ea64894e5fe8c89c691aef3600e3ec3e5c8c1a220895b0fb8be4a6319dd5480c",
+      "stored": "application/full-canonical-schema.txt.gz",
+      "stored_sha256": "aa86ab5e43e075be3cc07d80b74831f1e1caaf2e4e598ad4d211f3762492f387",
+      "compression": "lossless gzip"
+    },
+    {
+      "original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-reviewed-root-application/final-strict-local-sync.txt",
+      "original_sha256": "62b7ad5e4759a64b1a93bd3cf70e8225226334cb573505d868349175a38c6a52",
+      "stored": "application/final-strict-local-sync.txt.gz",
+      "stored_sha256": "30674d535c58766be4cfcf9e815b5d4f7d8ed9ff0300aa6890701d96b0b977ed",
+      "compression": "lossless gzip"
+    },
+    {
+      "original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-reviewed-root-application/final-whitespace.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stored": "application/final-whitespace.txt.gz",
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "compression": "lossless gzip"
+    },
+    {
+      "original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-reviewed-root-application/branch-audit.txt",
+      "original_sha256": "d7d74508aecf7e91852accd239a769fecac74876d0089106616e9dc71c6986e9",
+      "stored": "application/branch-audit.txt.gz",
+      "stored_sha256": "dc4fbeb068b727ac6ba4c1166eaa569aca846342aa23d393af0e7e0a4027a7af",
+      "compression": "lossless gzip"
+    },
+    {
+      "original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-reviewed-root-application/full-coverage-report.txt",
+      "original_sha256": "51c8980f2d9b582aefa92ac4ae15b9ec239ed1e17589d5980120c08fad9d7f89",
+      "stored": "application/full-coverage-report.txt.gz",
+      "stored_sha256": "e2f38d16f10dc4eea199bcf539d503824d53d37235dc1cad0e9ce296b72b3edd",
+      "compression": "lossless gzip"
+    },
+    {
+      "original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-reviewed-root-application/strict-local-sync.txt",
+      "original_sha256": "62b7ad5e4759a64b1a93bd3cf70e8225226334cb573505d868349175a38c6a52",
+      "stored": "application/strict-local-sync.txt.gz",
+      "stored_sha256": "30674d535c58766be4cfcf9e815b5d4f7d8ed9ff0300aa6890701d96b0b977ed",
+      "compression": "lossless gzip"
+    },
+    {
+      "original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-reviewed-root-application/worktree-whitespace.txt",
+      "original_sha256": "20ed05e03f36e684c2a3535a879585cc78c43aae3102bd7a0c0dacfd3c26878d",
+      "stored": "application/worktree-whitespace.txt.gz",
+      "stored_sha256": "08c09432dca20c73e2bddf1672fea389aad6cea4dba467c8fe07e6b374ad7429",
+      "compression": "lossless gzip"
+    }
+  ]
+}

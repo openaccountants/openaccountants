@@ -1,0 +1,56 @@
+[
+  {
+    "name": "mns-2026-transition",
+    "url": "https://nalog.gov.by/clarifications/clarifications/33616/",
+    "status": 200,
+    "final_url": "https://nalog.gov.by/clarifications/clarifications/33616/",
+    "bytes": 87924,
+    "sha256": "110a5e9073b873b7e826775c06746a21fd76dc8842224d30190f29d13677735c",
+    "fetched_at": "2026-10-24T18:38:34.794601+00:00"
+  },
+  {
+    "name": "mns-single-tax-current",
+    "url": "https://nalog.gov.by/entrepreneurs/taxes/tax_systems/single_tax/",
+    "status": 200,
+    "final_url": "https://nalog.gov.by/entrepreneurs/taxes/tax_systems/single_tax/",
+    "bytes": 92940,
+    "sha256": "860d21572d5e4cc5ba2e073bfa5647107988b64f5a28d661fad218d4441ff6e3",
+    "fetched_at": "2026-10-24T18:38:35.602188+00:00"
+  },
+  {
+    "name": "mns-january-february-rates",
+    "url": "https://nalog.gov.by/individuals/taxation_not_require_registration_as_entrepreneur/self-employed/9920/",
+    "status": 200,
+    "final_url": "https://nalog.gov.by/individuals/taxation_not_require_registration_as_entrepreneur/self-employed/9920/",
+    "bytes": 159164,
+    "sha256": "e48999423e478b6e8066c48539c661fcb861b9a95b679e6a0be97a7739b07af3",
+    "fetched_at": "2026-10-24T18:38:36.419887+00:00"
+  },
+  {
+    "name": "mns-2026-rates-change",
+    "url": "https://nalog.gov.by/news/33788/",
+    "status": 200,
+    "final_url": "https://nalog.gov.by/news/33788/",
+    "bytes": 78290,
+    "sha256": "6e5666ae092b81b3d80678b46fceaaf11180692d58f8a44c5d53f8e3614c1cd0",
+    "fetched_at": "2026-10-24T18:38:37.157119+00:00"
+  },
+  {
+    "name": "law-2024-47Z",
+    "url": "https://pravo.by/upload/docs/op/H12400047_1734642000.pdf",
+    "status": 200,
+    "final_url": "https://pravo.by/upload/docs/op/H12400047_1734642000.pdf",
+    "bytes": 621814,
+    "sha256": "49b8caa492d6a97a647eba50b23575aa6140363afc564bf4c511fa17dd0c8854",
+    "fetched_at": "2026-10-24T18:41:04.140634+00:00"
+  },
+  {
+    "name": "law-2025-127Z",
+    "url": "https://pravo.by/upload/docs/op/H12500127_1767214800.pdf",
+    "status": 200,
+    "final_url": "https://pravo.by/upload/docs/op/H12500127_1767214800.pdf",
+    "bytes": 511356,
+    "sha256": "4b9e978edd31b3d20e52eb51a1bdd3ddf6c9821241fe42f15f61e7a1de68d928",
+    "fetched_at": "2026-10-24T18:41:04.813284+00:00"
+  }
+]

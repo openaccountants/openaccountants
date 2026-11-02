@@ -1,0 +1,6 @@
+checked 4 guides (0 non-guide .md files skipped)
+{
+  "errors": [],
+  "warnings": [],
+  "scope": "Actual repository check_guides on four byte-identical private candidate copies; no index/generated-tree/whole-pack validation claimed"
+}

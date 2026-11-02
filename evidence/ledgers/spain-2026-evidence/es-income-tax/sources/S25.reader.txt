@@ -1,0 +1,229 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Supuestos especiales de concurrencia de rentas: Anualidades por alimentos en favor de los hijos y...
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 1.
+
+Capítulo 15. Cálculo del impuesto: determinación de las cuotas íntegras
+
+Especialidades en la determinación de la cuota íntegra estatal y autonómica
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 1.
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Supuestos especiales de concurrencia de rentas: Anualidades por alimentos en favor de los hijos y rentas exentas con progresividad
+
+El procedimiento aplicable en el supuesto de que existan simultáneamente anualidades por alimentos en favor de los hijos y rentas exentas con progresividad incorpora las especialidades liquidatorias de cada una de dichas rentas tal y como se comenta en el ejemplo siguiente.
+
+Ejemplo:
+
+Don J.R.F., residente en la Comunidad de Madrid, ha obtenido en el ejercicio 2025 una base liquidable general de 23.900 euros. También ha obtenido rentas exentas con progresividad que ascienden 2.950 euros.
+
+Durante el ejercicio ha satisfecho anualidades por alimentos a sus hijos por importe de 2.800 euros, según lo previsto en el convenio regulador del divorcio aprobado judicialmente.
+
+Determinar las cuotas íntegras correspondientes al ejercicio 2025, sabiendo que el importe del mínimo personal y familiar asciende a 5.550 euros.
+
+Solución:
+
+1. Determinación de las bases para la aplicación de las escalas de gravamen
+
+Al haber satisfecho en el ejercicio anualidades a sus hijos por decisión judicial y resultar su cuantía inferior al importe de su base liquidable general, la escala general y la autonómica del IRPF deben aplicarse separadamente al importe de las anualidades (2.800) y al importe del resto de la base liquidable general.
+
+Este último importe se determina incrementando la base liquidable general (23.900 euros) en la cuantía de las rentas exentas con progresividad (2.950) y disminuyendo el resultado en el importe de las anualidades por alimentos satisfechas en el ejercicio (2.800). En definitiva:
+
+Base "A" = 2.800
+
+Base "B" = (23.900 + 2.950) − 2.800 = 24.050
+
+2. Aplicación de las escalas del IRPF al importe de las anualidades, base "A" (2.800 euros)
+
+Escala general del IRPF 
+
+2.800 x 9,50% = 266
+
+Cuota 1 = 266
+
+Escala autonómica del IRPF
+
+2.800 x 8,50% = 238
+
+Cuota 2 = 238
+
+3. Aplicación de las escalas de gravamen al resto de base liquidable general, base "B" (24.050 euros)
+
+Escala general del IRPF
+
+Hasta 20.200 = 2.112,75
+
+Resto: 3.850 al 15% = 577,50
+
+Cuota 3 = 2.690,25
+
+Escala autonómica del IRPF
+
+Hasta: 19.004,63 = 1.739,53
+
+Resto: 5.045,37 al 12,80% = 645,80
+
+Cuota 4 = 2.385,33
+
+4. Aplicación de las escalas de gravamen a la base liquidable general correspondiente al mínimo personal y familiar incrementado en 1.980 euros
+
+Dado que el importe de la base liquidable general (23.900) es superior al del mínimo personal y familiar incrementado en 1.980 euros (5.550 + 1.980 = 7.530), este forma parte en su integridad de la base liquidable general.
+
+Escala general del IRPF
+
+Dado que el importe de la base liquidable general (23.900) es superior al del mínimo personal y familiar incrementado en 1.980 euros (5.550 + 1.980 = 7.730), este forma parte en su integridad de la base liquidable general.
+
+7.530 al 9,50% = 715,35
+
+Cuota 5 =715,35
+
+Escala autonómica del IRPF
+
+En este caso, la cuantía autonómica del mínimo del contribuyente (fijada en 5.777,55 euros) incrementada en 1.980 euros  (5.777,55 + 1.980) determina un importe de 7.757,55 euros, inferior a la base liquidable general (23.900), por lo que dicho importe forma parte en su integridad de la base liquidable general.
+
+7.757,55 al 8,50% = 659,39
+
+Cuota 6 = 659,39
+
+5. Cálculo de las cuotas a efectos de determinar los tipos medios de gravamen
+
+Para determinar los tipos medios de gravamen, estatal y autonómico, es preciso calcular previamente las respectivas cuotas estatal y autonómica. Dichas cuotas se calculan de la siguiente forma:
+
+Cuota estatal = (cuota 1 + cuota 3 - cuota 5):
+
+266 + 2.690,25 – 715,35 = 2.240,90
+
+Cuota autonómica = (cuota 2 + cuota 4 - cuota 6):
+
+238 + 2.385,33 – 659,39= 1.963,94‬
+
+6. Determinación de los tipos medios de gravamen
+
+Tipo medio de gravamen estatal TME: 2.240,90 ÷ 26.850 x 100 = 8,34%
+
+Tipo medio de gravamen autonómico =TMA = 1.963,94 ÷ 26.850 x 100 = 7,31%
+
+7. Determinación de la cuota íntegra general estatal y autonómica
+
+Cuota íntegra general estatal (base liquidable general x TME) 23.900 x 8,34% = 1.993,26
+
+Cuota íntegra general autonómica: (base liquidable general x TMA) 23.900 x 7,31% = 1.747,09‬
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

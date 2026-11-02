@@ -1,0 +1,7 @@
+{
+  "current_ledger_sha256": "977e773de5fa24cc7b4feb88c05bbe05137a7c5cc1132ed5c94802dcb465e925",
+  "prior_S_L01_ledger_reconstructed_exact_sha256": "a050a4420ddb05bca7ef25b068ceb76152836b42aebae45fb0378c1478779353",
+  "old_fuzzy_mapping_history_retained": true,
+  "new_map": "All140units routed by explicit semantic section/rule or exact unit; headings presentation; no guessed fuzzy pointers; S-L01/S-L02 source corrections explicit.",
+  "guide_unchanged": "edbac3851deb99dc27ba7115600060bfc2554578c88c03238ff4c8d44d722b02"
+}

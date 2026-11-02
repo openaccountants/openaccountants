@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-28",
+  "fix": "Formation12 actual owner-wage LF38, formation7 actual §38 exception anchor and full scope; no Guide changes",
+  "owner_quote": "In limited companies or private limited companies, wages to the owners are paid as A-income via the automatic tax withholding system. Wages to the owners of sole proprietorships or partnerships are paid as B-income.",
+  "exception_LF": [
+    511,
+    520
+  ],
+  "exception_anchor": "§ 38. 1) Kravið um gerð av metingarfrágreiðing eftir § 36, stk. 1 er ikki galdandi, um talan er um innskot av:"
+}

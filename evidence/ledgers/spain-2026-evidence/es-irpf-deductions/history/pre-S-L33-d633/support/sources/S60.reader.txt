@@ -1,0 +1,161 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Por gastos de enfermedad
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+Comunidad Autónoma de Cantabria
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Por gastos de enfermedad
+
+Normativa: Art. 2.7 Texto Refundido de la Ley de Medidas Fiscales en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 62/2008, de 19 de junio, por la Comunidad Autónoma de Cantabria
+
+Cuantía y límites máximos de la deducción
+
+El 10 por 100 de los gastos y honorarios profesionales, tanto propios como de las personas que se incluyan en el mínimo familiar, abonados durante el año por la prestación de servicios sanitarios por motivo de enfermedad, salud dental, embarazo y nacimiento de hijos, accidentes e invalidez, siempre y cuando estos honorarios no estén cubiertos por la Seguridad Social o en su caso por la Mutua o entidad aseguradora correspondiente del contribuyente.
+
+Esta deducción tendrá un límite anual de:
+
+- 500 euros en tributación individual.
+
+- 700 euros en tributación conjunta.
+
+Estos límites se incrementarán en:
+
+- 100 euros en tributación individual cuando el contribuyente sea una persona con discapacidad y acredite un grado de discapacidad igual o superior al 65 por 100.
+
+- 100 euros por cada contribuyente con dicha discapacidad en el caso de tributación conjunta.
+
+Requisito para la aplicación de la deducción
+
+Que la suma de la base liquidable general y la base liquidable del ahorro, suma de las casillas [0500] y [0510] de la declaración, minorada en el mínimo personal y familiar, casilla [0520], sea inferior a:
+
+- 22.946 euros en tributación individual.
+
+- 31.485 euros en tributación conjunta.
+
+Base conjunta de la deducción
+
+La base conjunta de esta deducción estará constituida por las cantidades justificadas con factura y satisfechas, mediante tarjeta de crédito o débito, transferencia bancaria, cheque nominativo o ingreso en cuentas en entidades de crédito, a las personas o entidades que presten los servicios.
+
+Importante: en ningún caso darán derecho a practicar esta deducción las cantidades satisfechas mediante entregas de dinero en efectivo.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 29/septiembre/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

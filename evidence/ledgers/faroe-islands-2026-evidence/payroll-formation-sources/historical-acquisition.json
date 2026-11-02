@@ -1,0 +1,16 @@
+[
+  {
+    "id": "pension-original",
+    "url": "https://logir.fo/GetFile/getpdf.aspx?objType=File&objId=12289",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension-original.pdf",
+    "sha256": "a2d5be75110094fe5e41c63e2b38e9a4fbd7ea8488eea6276e263412cca9c056",
+    "bytes": 428621
+  },
+  {
+    "id": "foreign-index",
+    "url": "https://logir.fo/Grid.aspx?GridAction=GoToPage&Pager.CurrentPage=23&Pager.PageSize=50&SearchForm.LawSearchFormTab=TabSearch&Sorter.SortDirection=Desc&Sorter.SortField=lst.ValidityStatus",
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreign-index.html",
+    "sha256": "01e970de450fee7f983b0068aca7cdbcc01a533b037f7975f4a8c26415720357",
+    "bytes": 112108
+  }
+]

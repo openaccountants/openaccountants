@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Renta 2025</title>
+<script type="text/javascript">
+window.zkShowCrashMessage = function (code) {var h2 = '<h2 style="background: rgb(1,133,174); text-align: center; '	+ 'color: white; width: 700px; margin: 0 auto;">';var msg = 'Ooooops!! ErrorCode: ' + code;	h2 = h2 + msg + '</h2>';document.body.style.background = 'rgb(1,133,174)';	document.body.innerHTML = h2;}
+</script>
+<script type="text/javascript" src="/wlpl/PARE-RW25/rwda/zkau/web/cd5888dd/js/zk.wpd" charset="UTF-8"></script>
+<script type="text/javascript" src="/wlpl/PARE-RW25/rwda/zkau/web/cd5888dd/js/zul.lang.wpd" charset="UTF-8"></script>
+<script type="text/javascript" src="/wlpl/PARE-RW25/rwda/zkau/web/cd5888dd/js/zkbind.wpd" charset="UTF-8"></script>
+<script type="text/javascript" src="/wlpl/PARE-RW25/rwda/zkau/web/cd5888dd/js/za11y.wpd" charset="UTF-8"></script><script class="z-runonce" type="text/javascript">
+zkopt({to:1860});
+</script>
+<link rel="stylesheet" type="text/css" href="/wlpl/PARE-RW25/rwda/zkau/web/cd5888dd/_zkiju-breeze/zul/css/zk.wcs"/>
+<link rel="stylesheet" type="text/css" href="/static_files/common/css/xzhtcs06.css"/>
+<link rel="stylesheet" type="text/css" href="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/infrazk8/css/estilos3.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/infrazk8/css/100css/modeloBOE.css"/>
+</head>
+<body>
+<div id="bFdBnp" class="z-temp"><div id="zk_proc" class="z-loading"><div class="z-loading-indicator"><span class="z-loading-icon"></span>Procesando...</div></div><div id="bFdBb" style="display:none">
+			
+			<style>
+				#modal-content {
+				    background-color: white;
+				    border-radius: 10px;
+				    -webkit-border-radius: 10px;
+				    -moz-border-radius: 10px;
+				    box-shadow: 0 0 20px 0 #222;
+				    -webkit-box-shadow: 0 0 20px 0 #222;
+				    -moz-box-shadow: 0 0 20px 0 #222;
+				    display: none;
+				    margin: -120px 0 0 -160px;
+				    padding: 10px;
+				    position: fixed;				    
+				    height: auto;
+				    width: auto;
+				    z-index: 1000;
+				}				
+			</style>
+		
+			<div id="modal-content">
+				<div id="titulo"></div>
+				<div id="tooltip01"></div>
+				<div id="tooltip02" style="background-color:#EEEBEB"></div>
+				<div id="tooltip03"></div>
+				<div id="tooltip04" style="background-color:#EEEBEB"></div>
+				<div id="tooltip05"></div>
+				<div id="tooltip06" style="background-color:#EEEBEB"></div>
+				<div id="tooltip07"></div>
+				<div id="tooltip08" style="background-color:#EEEBEB"></div>
+				<div id="tooltip09"></div>
+			</div>
+						
+		</div>
+<div id="bFdBi" style="display:none">
+			 
+			<div id="tiempoSesion">			 
+			</div> 
+			<div id="centrodeloteo">			 
+			</div>
+						
+		</div>
+<div id="bFdBh2" style="display:none"><head></head><body><!-- <idtitulo>PARERW25</idtitulo><nif></nif><expediente>2020100000000000</expediente><usuario>F00999xx</usuario> --></body></div>
+<script type="text/javascript">if(zk.clientinfo === undefined)zk.clientinfo = true;</script></div>
+<script id="bFdB3" type="text/javascript" src="https://www2.agenciatributaria.gob.es/static_files/common/dep/aplicaciones/dasc/script/dascdatj.js">
+</script>
+
+<script id="bFdB4" type="text/javascript" src="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/script/mod_js/fingerprint.js">
+</script>
+
+<script id="bFdB5" type="text/javascript" src="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/script/mod_js/imask.js">
+</script>
+
+<script id="bFdB8" type="text/javascript" src="https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/script/mod_js/formateador.2.00.min.js">
+</script>
+
+<script class="z-runonce" type="text/javascript">
+zk.appName='Renta 2025';zk.themeName='breeze';zkmx(
+[0,'bFdBnp',{id:'main',dt:'z_Sq1LEN7kk7zAu12GDGD7Mg',cu:'\x2Fwlpl\x2FPARE\x2DRW25',uu:'\x2Fwlpl\x2FPARE\x2DRW25\x2Frwda\x2Fzkau',rsu:'\x2Fwlpl\x2FPARE\x2DRW25\x2Frwda\x2Fzkau',ru:'\x2FOPEN\x2Findex.zul',style:'width\x3A100\x25\x3Bheight\x3A93.7\x25'},{},[
+['zul.wgt.Div','bFdB_',{$ZKAUS$:true,$ZKBINDER$:true},{},[
+['zul.utl.Script','bFdB0',{},{},[]],
+['zul.utl.Style','bFdB1',{visible:false,content:'\n        span.z-upload {\n    \t\tdisplay: none !important;    \n\t\t}\n    '},{},[]],
+['zhtml.Widget','bFdB2',{prolog:'<meta id=\"bFdB2\" name=\"site\" content=\"Sede\"/>'},{},[]],
+['zul.utl.Script','bFdB3',{},{},[]],
+['zul.utl.Script','bFdB4',{},{},[]],
+['zul.utl.Script','bFdB5',{},{},[]],
+['zul.utl.Script','bFdB6',{},{},[]],
+['zul.utl.Script','bFdB7',{content:function(){
+ filtrarAjax=true;
+}},{},[]],
+['zul.utl.Script','bFdB8',{},{},[]],
+['zul.utl.Script','bFdB9',{content:function(){
+
+ 		jq(window).ready(function(){
+			scrollIdentificador("AEAT_header");
+		});	 		 	
+	 	
+	
+}},{},[]],
+['zul.utl.Script','bFdBa',{},{},[]],
+['zul.wgt.Html','bFdBb',{prolog:' ',content:zk('bFdBb').detachChildren()},{},[]],
+['zhtml.Widget','AEAT_header',{id:'AEAT_header',prolog:'<div id=\"AEAT_header\">',epilog:'<\/div>'},{},[
+['zhtml.Text','bFdBd',{value:'\n\t\t',idRequired:true},{},[]],
+['zhtml.Widget','bFdBe',{prolog:'<div id=\"bFdBe\">',epilog:'<\/div>'},{},[]],
+['zhtml.Text','bFdBf',{value:'\n\t',idRequired:true},{},[]]]],
+['zhtml.Widget','acc-main',{id:'acc-main',prolog:'<main id=\"acc-main\" class=\"js-container \">',epilog:'<\/main>'},{},[
+['zhtml.Text','bFdBh',{value:'\n\t\t',idRequired:true},{},[]],
+['zul.wgt.Html','bFdBi',{content:zk('bFdBi').detachChildren()},{},[]],
+['zhtml.Text','bFdBj',{value:'\n\t\n\t\t',idRequired:true},{},[]],
+['zul.wgt.Div','bFdBk',{id:'ventanaPrincipal',domExtraAttrs:{'role':'main'
+,'aria-label':'Contenido principal'
+},$ZKAUS$:true,sclass:'plClprincipal enDeclaracion',$ZKBINDER$:true},{},[
+['zul.wgt.Div','bFdBl',{id:'plCabecera',sclass:'plantClS ',prolog:' '},{},[
+['zhtml.Widget','bFdBm',{prolog:'<hr id=\"bFdBm\"/>'},{},[]],
+['zhtml.Widget','bFdBn',{domExtraAttrs:{'role':'heading'
+,'aria-level':'1'
+},prolog:'<h1 id=\"bFdBn\" class=\"cabeceratitulo text-center\" vflex=\"min\">',epilog:'<\/h1>'},{},[
+['zhtml.Text','bFdBo',{value:'\n\t\t\t\t\t',idRequired:true},{},[]],
+['zul.wgt.Label','bFdBp',{id:'textoCabecera',sclass:'colorAzulCorp negrita',value:'Impuesto sobre la Renta de las Personas F\xEDsicas. - Modelo 100'},{},[]],
+['zhtml.Text','bFdBq',{value:'\t\t\t\t\t\n\t\t\t\t',idRequired:true},{},[]]]]]],
+['zul.wgt.Div','bFdBr',{domExtraAttrs:{'role':'form'
+,'aria-label':'Impuesto sobre la Renta de las Personas F\xEDsicas. - Modelo 100'
+},prolog:' '},{},[
+['zul.wgt.Include','bFdBs',{id:'antesDeclaracion',prolog:' ',enclosingTag:'div'},{},[]],
+['zul.wgt.Div','bFdBt',{id:'inclDeclaracion',sclass:'bloqueModelo bloqueRenta',prolog:' '},{},[
+['zul.wgt.Div','bFdBu',{id:'divDeclaracion',height:'100%',sclass:'bloqueDeclaracion',prolog:' '},{},[
+['zul.wgt.Include','bFdBv',{id:'includeDeclaracion',prolog:' ',enclosingTag:'div'},{},[
+['zul.wgt.Div','bFdBa2',{id:'ventanaDeclaracion',$ZKAUS$:true,sclass:'ventanaPrincipal bloqueRenta'},{},[
+['zul.wgt.Div','bFdBb2',{id:'contenedorPanel',sclass:'contenedorPanel',style:'overflow: visible!important;',prolog:' '},{},[
+['zul.wgt.Include','bFdBc2',{id:'incPrincipal',prolog:' ',enclosingTag:'div'},{},[
+['zul.utl.Style','bFdBd2',{visible:false,content:'\n\t\thtml { height: 99.7%; }\n\n\t\tbody { height: 99.7%; }\n\t'},{},[]],
+['zul.wgt.Div','bFdBe2',{id:'principalResumenDf',$ZKAUS$:true,width:'100%',height:'100%',style:'margin: 0 auto;'},{},[
+['zul.wgt.Include','bFdBf2',{id:'inclResDf',width:'100%',prolog:' ',enclosingTag:'div'},{},[
+['zul.wgt.Div','bFdBg2',{id:'winPanelSitFamiliar',$ZKAUS$:true,hflex:'true'},{},[
+['zul.wgt.Html','bFdBh2',{id:'datosusuario',prolog:' ',content:zk('bFdBh2').detachChildren()},{},[]],
+['zk.Macro','bFdBi2',{id:'tituloPanel',prolog:' '},{},[
+['zul.wgt.Div','bFdBj2',{},{},[
+['zul.wgt.Div','bFdBk2',{id:'h1',prolog:' '},{},[
+['zul.wgt.Div','bFdBl2',{id:'h1noaccesible',sclass:'tituloPanel',prolog:' '},{},[
+['zul.box.Box','bFdBm2',{width:'99%',prolog:' ',cssflex:false,_sizes:['86%','14%']},{},[
+['zul.box.Hlayout','bFdBn2',{},{},[
+['zul.wgt.Label','bFdBo2',{id:'tituloPanelLetra',sclass:'tituloPanelTit'},{},[]],
+['zul.wgt.Label','bFdBp2',{id:'tituloPanelTit',hflex:'1',sclass:'tituloPanelTit',value:'Datos Identificativos'},{},[]]]],
+['zul.wgt.Label','bFdBq2',{id:'tituloPanelPag',hflex:'1',sclass:'tituloPanelPag',value:'1.19'},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdBr2',{id:'h1accesible',visible:false,prolog:' '},{},[
+['zul.wgt.Html','bFdBs2',{id:'htmlh1accesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdBt2',{id:'h1dlg',visible:false,zclass:'captiondlg',prolog:' '},{},[
+['zul.wgt.Div','bFdBu2',{id:'h1dlgnoaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.box.Box','bFdBv2',{width:'99%',prolog:' ',cssflex:false,_sizes:['85%','5%','10%']},{},[
+['zul.wgt.Label','bFdBw2',{id:'tituloPanelTitDlg',sclass:'vTitDialogo',multiline:true,value:'T\xEDtulo de la ventana por defecto para determinar anchura de ventana'},{},[]],
+['zul.wgt.Separator','bFdBx2',{orient:'horizontal'},{},[]],
+['zul.wgt.Label','bFdBy2',{id:'tituloPanelMod',sclass:'vModDialogo',multiline:true},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdBz2',{id:'h1dlgaccesible',prolog:' '},{},[
+['zul.wgt.Html','bFdB_3',{id:'htmlh1dlgaccesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdB03',{id:'h2',visible:false,prolog:' '},{},[
+['zul.wgt.Div','bFdB13',{id:'h2noaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.wgt.Div','bFdB23',{prolog:' '},{},[
+['zul.box.Hlayout','bFdB33',{style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdB43',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Div','bFdB53',{width:'90%',prolog:' '},{},[
+['zul.wgt.Label','bFdB63',{id:'subtitulo1',sclass:'vTitDialogo',prolog:' '},{},[]]]]]]]],
+['zul.box.Hlayout','bFdB73',{id:'hl2',visible:false,style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdB83',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdB93',{id:'subtitulo2',visible:false,sclass:'vTitDialogo',prolog:' '},{},[]]]]]],
+['zul.box.Hlayout','bFdBa3',{id:'hl3',visible:false,style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdBb3',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdBc3',{id:'subtitulo3',visible:false,sclass:'vTitDialogo',prolog:' '},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdBd3',{id:'h2accesible',prolog:' '},{},[
+['zul.wgt.Html','bFdBe3',{id:'htmlh2accesible',prolog:' '},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdBf3',{id:'divcuerpositfamiliar',sclass:'panel',style:'overflow: hidden!important;',prolog:' '},{},[
+['zul.wgt.Radiogroup','bFdBg3',{id:'rgd',$$onCheck:false,$$1onCheck:true,prolog:' ',name:'_pgp6gbns'},{},[]],
+['zul.wgt.Radiogroup','bFdBh3',{id:'rgc',$$1onCheck:true,prolog:' ',name:'_pgh33jkh'},{},[]],
+['zul.wgt.Radiogroup','bFdBi3',{id:'rgidioma',$$1onCheck:true,prolog:' ',name:'_pg0bsi36'},{},[]],
+['zul.wgt.Div','bFdBj3',{id:'divIdioma',style:'text-align:center',prolog:' '},{},[
+['zul.wnd.Panel','bFdBk3',{id:'panelIdiomna',$$onMinimize:false,$$0onMinimize:true,$$onZIndex:false,$$0onZIndex:true,$$onMove:false,$$0onMove:true,$onClose:true,$$onOpen:false,$$onMaximize:false,$$0onMaximize:true,$$onSize:false,$$0onSize:true,prolog:' ',border:'normal',_nativebar:true},{},[
+['zul.wgt.Caption','bFdBl3',{sclass:'textoCabeceraPanel'},{},[
+['zk.Macro','bFdBm3',{prolog:' '},{},[
+['zul.wgt.Div','bFdBn3',{},{},[
+['zul.wgt.Div','bFdBo3',{id:'h1',visible:false,prolog:' '},{},[
+['zul.wgt.Div','bFdBp3',{id:'h1noaccesible',sclass:'tituloPanel',prolog:' '},{},[
+['zul.box.Box','bFdBq3',{width:'99%',prolog:' ',cssflex:false,_sizes:['86%','14%']},{},[
+['zul.box.Hlayout','bFdBr3',{},{},[
+['zul.wgt.Label','bFdBs3',{id:'tituloPanelLetra',sclass:'tituloPanelTit'},{},[]],
+['zul.wgt.Label','bFdBt3',{id:'tituloPanelTit',hflex:'1',sclass:'tituloPanelTit'},{},[]]]],
+['zul.wgt.Label','bFdBu3',{id:'tituloPanelPag',hflex:'1',sclass:'tituloPanelPag'},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdBv3',{id:'h1accesible',prolog:' '},{},[
+['zul.wgt.Html','bFdBw3',{id:'htmlh1accesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdBx3',{id:'h1dlg',visible:false,zclass:'captiondlg',prolog:' '},{},[
+['zul.wgt.Div','bFdBy3',{id:'h1dlgnoaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.box.Box','bFdBz3',{width:'99%',prolog:' ',cssflex:false,_sizes:['85%','5%','10%']},{},[
+['zul.wgt.Label','bFdB_4',{id:'tituloPanelTitDlg',sclass:'vTitDialogo',multiline:true,value:'T\xEDtulo de la ventana por defecto para determinar anchura de ventana'},{},[]],
+['zul.wgt.Separator','bFdB04',{orient:'horizontal'},{},[]],
+['zul.wgt.Label','bFdB14',{id:'tituloPanelMod',sclass:'vModDialogo',multiline:true},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdB24',{id:'h1dlgaccesible',prolog:' '},{},[
+['zul.wgt.Html','bFdB34',{id:'htmlh1dlgaccesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdB44',{id:'h2',prolog:' '},{},[
+['zul.wgt.Div','bFdB54',{id:'h2noaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.wgt.Div','bFdB64',{prolog:' '},{},[
+['zul.box.Hlayout','bFdB74',{style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdB84',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Div','bFdB94',{width:'90%',prolog:' '},{},[
+['zul.wgt.Label','bFdBa4',{id:'subtitulo1',sclass:'vTitDialogo',prolog:' ',value:'Idioma'},{},[]]]]]]]],
+['zul.box.Hlayout','bFdBb4',{id:'hl2',visible:false,style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdBc4',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdBd4',{id:'subtitulo2',visible:false,sclass:'vTitDialogo',prolog:' '},{},[]]]]]],
+['zul.box.Hlayout','bFdBe4',{id:'hl3',visible:false,style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdBf4',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdBg4',{id:'subtitulo3',visible:false,sclass:'vTitDialogo',prolog:' '},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdBh4',{id:'h2accesible',visible:false,prolog:' '},{},[
+['zul.wgt.Html','bFdBi4',{id:'htmlh2accesible',prolog:' '},{},[]]]]]]]]]]]],
+['zul.wnd.Panelchildren','bFdBj4',{},{},[
+['zul.wgt.Div','bFdBk4',{sclass:'panel960',prolog:' '},{},[
+['zul.box.Hlayout','bFdBl4',{style:'margin-left:auto; margin-right:auto;',prolog:' '},{},[
+['zul.wgt.Div','bFdBm4',{style:'display:inline;'},{},[
+['zul.wgt.Radio','bFdBn4',{id:'casrw_esp',$$onCheck:false,$onCheck:true,$$1onCheck:true,tooltiptext:'Castellano',prolog:' ',label:'Castellano',checked:true,radiogroup:{$u:'bFdBi3'}},{},[]],
+['zul.wgt.Radio','bFdBo4',{id:'casrw_cat',$onCheck:true,$$1onCheck:true,tooltiptext:'Catal\xE1n',prolog:' ',label:'Catal\xE1n',radiogroup:{$u:'bFdBi3'}},{},[]],
+['zul.wgt.Radio','bFdBp4',{id:'casrw_gal',$onCheck:true,$$1onCheck:true,tooltiptext:'Gallego',prolog:' ',label:'Gallego',radiogroup:{$u:'bFdBi3'}},{},[]],
+['zul.wgt.Radio','bFdBq4',{id:'casrw_val',$onCheck:true,$$1onCheck:true,tooltiptext:'Valenciano',prolog:' ',label:'Valenciano',radiogroup:{$u:'bFdBi3'}},{},[]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBr4',{id:'divpanel1',prolog:' '},{},[
+['zul.wnd.Panel','bFdBs4',{id:'panelIDDec',$$0onMinimize:true,$$0onZIndex:true,$$0onMove:true,$onClose:true,$$0onMaximize:true,$$0onSize:true,prolog:' ',border:'normal',_nativebar:true},{},[
+['zul.wgt.Caption','bFdBt4',{id:'caption2',sclass:'textoCabeceraPanel'},{},[
+['zk.Macro','bFdBu4',{prolog:' '},{},[
+['zul.wgt.Div','bFdBv4',{},{},[
+['zul.wgt.Div','bFdBw4',{id:'h1',visible:false,prolog:' '},{},[
+['zul.wgt.Div','bFdBx4',{id:'h1noaccesible',sclass:'tituloPanel',prolog:' '},{},[
+['zul.box.Box','bFdBy4',{width:'99%',prolog:' ',cssflex:false,_sizes:['86%','14%']},{},[
+['zul.box.Hlayout','bFdBz4',{},{},[
+['zul.wgt.Label','bFdB_5',{id:'tituloPanelLetra',sclass:'tituloPanelTit'},{},[]],
+['zul.wgt.Label','bFdB05',{id:'tituloPanelTit',hflex:'1',sclass:'tituloPanelTit'},{},[]]]],
+['zul.wgt.Label','bFdB15',{id:'tituloPanelPag',hflex:'1',sclass:'tituloPanelPag'},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdB25',{id:'h1accesible',prolog:' '},{},[
+['zul.wgt.Html','bFdB35',{id:'htmlh1accesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdB45',{id:'h1dlg',visible:false,zclass:'captiondlg',prolog:' '},{},[
+['zul.wgt.Div','bFdB55',{id:'h1dlgnoaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.box.Box','bFdB65',{width:'99%',prolog:' ',cssflex:false,_sizes:['85%','5%','10%']},{},[
+['zul.wgt.Label','bFdB75',{id:'tituloPanelTitDlg',sclass:'vTitDialogo',multiline:true,value:'T\xEDtulo de la ventana por defecto para determinar anchura de ventana'},{},[]],
+['zul.wgt.Separator','bFdB85',{orient:'horizontal'},{},[]],
+['zul.wgt.Label','bFdB95',{id:'tituloPanelMod',sclass:'vModDialogo',multiline:true},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdBa5',{id:'h1dlgaccesible',prolog:' '},{},[
+['zul.wgt.Html','bFdBb5',{id:'htmlh1dlgaccesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdBc5',{id:'h2',prolog:' '},{},[
+['zul.wgt.Div','bFdBd5',{id:'h2noaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.wgt.Div','bFdBe5',{prolog:' '},{},[
+['zul.box.Hlayout','bFdBf5',{style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdBg5',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Div','bFdBh5',{width:'90%',prolog:' '},{},[
+['zul.wgt.Label','bFdBi5',{id:'subtitulo1',sclass:'vTitDialogo',prolog:' ',value:'Declarante (*)'},{},[]]]]]]]],
+['zul.box.Hlayout','bFdBj5',{id:'hl2',visible:false,style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdBk5',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdBl5',{id:'subtitulo2',visible:false,sclass:'vTitDialogo',prolog:' '},{},[]]]]]],
+['zul.box.Hlayout','bFdBm5',{id:'hl3',visible:false,style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdBn5',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdBo5',{id:'subtitulo3',visible:false,sclass:'vTitDialogo',prolog:' '},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdBp5',{id:'h2accesible',visible:false,prolog:' '},{},[
+['zul.wgt.Html','bFdBq5',{id:'htmlh2accesible',prolog:' '},{},[]]]]]]]]]]]],
+['zul.wnd.Panelchildren','bFdBr5',{},{},[
+['zul.wgt.Div','bFdBs5',{sclass:'panel960',prolog:' '},{},[
+['zul.wgt.Div','bFdBt5',{id:'tlindividual',prolog:' '},{},[
+['zul.box.Hlayout','bFdBu5',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdBv5',{hflex:'1',style:'vertical-align:bottom; height:3em;'},{},[
+['zul.wgt.Div','bFdBw5',{prolog:' '},{},[
+['zul.wgt.Label','bFdBx5',{id:'lmarcaindv',sclass:'vtextodlg texto_negrita',prolog:' ',value:'Si desea que el programa solamente calcule la declaraci\xF3n individual del declarante, marque aqu\xED'},{},[]],
+['zul.wgt.Div','bFdBy5',{sclass:'divpuntosdlg',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdBz5',{style:'vertical-align:bottom'},{},[
+['zul.wgt.Div','bFdB_6',{prolog:' '},{},[
+['zul.wgt.Checkbox','bFdB06',{id:'indv',$$onCheck:false,$onCheck:true,$$1onCheck:true,$onBlur:true,$$0onBlur:true,tooltiptext:'Si desea que el programa solamente calcule la declaraci\xF3n individual del declarante, marque aqu\xED',prolog:' '},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdB16',{id:'declarante1',prolog:' '},{},[
+['zul.box.Hlayout','bFdB26',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdB36',{sclass:'divAncho8'},{},[
+['zul.wgt.Label','bFdB46',{id:'NIF_d',sclass:'vtexto',prolog:' ',value:'NIF'},{},[]]]],
+['zul.wgt.Div','bFdB56',{sclass:'divAncho32'},{},[
+['zul.wgt.Label','bFdB66',{id:'NOM_d',sclass:'vtexto',prolog:' ',value:'Apellidos y nombre'},{},[]]]],
+['zul.wgt.Div','bFdB76',{sclass:'divAncho20'},{},[
+['zul.wgt.Label','bFdB86',{id:'EC_d',sclass:'vtexto',prolog:' ',multiline:true,value:'Estado Civil (a 31/12/2025)'},{},[]]]]]],
+['zul.box.Hlayout','bFdB96',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdBa6',{},{},[
+['zk.Macro','bFdBb6',{id:'casdf_nif_d',style:'margin-left:0!important;',prolog:' '},{},[
+['zul.box.Hlayout','bFdBc6',{},{},[
+['zul.wgt.Div','bFdBd6',{},{},[
+['zul.wgt.Label','bFdBe6',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBf6',{},{},[
+['zul.wgt.Label','bFdBg6',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBh6',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBi6',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBj6',{},{},[
+['zul.wgt.Div','bFdBk6',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBl6',{id:'DF_NIF_D',$$onError:false,$$0onError:true,$$onChange:false,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'estiloAlfanumerico',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'NIF:',prolog:' ',maxlength:9,cols:9},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBm6',{},{},[
+['zk.Macro','bFdBn6',{id:'casdp_apenom_d',prolog:' '},{},[
+['zul.box.Hlayout','bFdBo6',{},{},[
+['zul.wgt.Div','bFdBp6',{},{},[
+['zul.wgt.Label','bFdBq6',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBr6',{},{},[
+['zul.wgt.Label','bFdBs6',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBt6',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBu6',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBv6',{},{},[
+['zul.wgt.Div','bFdBw6',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBx6',{id:'DP_APENOM_D',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},width:'35em',sclass:'estiloAlfabetico',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;width:35em;',tooltiptext:'Apellidos y nombre:',prolog:' ',maxlength:80,cols:45},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBy6',{},{},[
+['zul.inp.Combobox','bFdBz6',{id:'ecivil',$$onError:false,$$0onError:true,$$onChange:false,$onChange:true,$$1onChange:true,$$onSelect:false,$$0onSelect:true,$$onOpen:false,$$0onOpen:true,$onChanging:true,$$0onChanging:true,listeners:{onOpen:function(event){
+jq(this).attr('aria-expanded',event.open);jq(this).attr('aria-owns',event.open?this.getPopupNode_().id:'');
+}},domExtraAttrs:{'role':'combobox'
+},sclass:'comboCabecera',style:'float:left!important',tooltiptext:'Estado Civil (a 31/12/2025)',prolog:' ',tooltip:'Borrar',_value:' ',readonly:true,cols:26,selectedItemUuid_:'bFdBvn'},{},[
+['zul.inp.Comboitem','bFdBvn',{label:' ',description:'Borrar'},{},[]],
+['zul.inp.Comboitem','bFdBwn',{label:'SOLTERO/A'},{},[]],
+['zul.inp.Comboitem','bFdBxn',{label:'CASADO/A'},{},[]],
+['zul.inp.Comboitem','bFdByn',{label:'VIUDO/A'},{},[]],
+['zul.inp.Comboitem','bFdBzn',{label:'SEPARADO/A O DIVORCIADO/A'},{},[]]]]]]]],
+['zul.box.Hlayout','bFdB_7',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdB07',{sclass:'divAncho10',style:'vertical-align:bottom'},{},[
+['zul.wgt.Label','bFdB17',{id:'FNAC_d',sclass:'vtexto',style:'margin:0em 0em 0em 0em;',prolog:' ',multiline:true,value:'Fecha de nacimiento'},{},[]]]],
+['zul.wgt.Div','bFdB27',{sclass:'divCasilla3',style:'vertical-align:bottom'},{},[
+['zul.wgt.Label','bFdB37',{id:'SEXO_d',sclass:'vtexto',style:'vertical-align:bottom; margin:0em 0em 0em 2.5em;',prolog:' ',value:'Sexo'},{},[]]]],
+['zul.wgt.Div','bFdB47',{sclass:'divAncho7',style:'vertical-align:bottom'},{},[
+['zul.wgt.Label','bFdB57',{id:'DISC_d',sclass:'vtexto',style:'margin:0em 0.75em 0em 0.83em;',prolog:' ',multiline:true,value:'Clave de discapacidad'},{},[]]]],
+['zul.wgt.Div','bFdB67',{style:'vertical-align:bottom'},{},[
+['zul.wgt.Label','bFdB77',{id:'CA_d',sclass:'vtexto',style:'vertical-align:bottom; margin:0em 1em 0em 0em; width:14em',prolog:' ',value:'Comunidad Aut\xF3noma'},{},[]]]],
+['zul.wgt.Div','bFdB87',{sclass:'divCasilla',style:'vertical-align:bottom'},{},[
+['zul.wgt.Label','bFdB97',{id:'FALL_d',sclass:'vtexto',style:'margin:0em 0em 0em 0em;',prolog:' ',multiline:true,value:'Fecha de fallecimiento'},{},[]]]]]],
+['zul.box.Hlayout','bFdBa7',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdBb7',{},{},[
+['zk.Macro','bFdBc7',{id:'casdpfnac_d',style:'margin:0.08em 0em 0em 0em;',tooltiptext:'Fecha de nacimiento:',prolog:' '},{},[
+['zul.wgt.Div','bFdBd7',{},{},[
+['zul.wgt.Div','bFdBe7',{id:'datos2',sclass:'datos',prolog:' '},{},[
+['zk.Macro','bFdBf7',{id:'datebext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBg7',{},{},[
+['zul.wgt.Div','bFdBh7',{id:'divPrincipalCasillaEx'},{},[
+['zul.db.Datebox','bFdBi7',{format:'dd/MM/yyyy',id:'DPFNAC_D',$$onError:false,$onError:true,$$0onError:true,$$onChange:false,$onChange:true,$$1onChange:true,$$onTimeZoneChange:false,$$0onTimeZoneChange:true,listeners:{onMouseOver:function(event){
+showTooltip(event)
+},onMouseOut:function(event){
+hideTooltip()
+}},domExtraAttrs:{'aria-labelledby':''
+},tooltiptext:'Fecha de nacimiento:',prolog:' ',cols:11,constraint:'[c',timeZone:'Europe/Madrid',lenient:false,position:'after_start',localizedFormat:'dd/MM/yyyy',todayLinkLabel:'Hoy'},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBj7',{sclass:'divCH'},{},[
+['zul.wgt.Div','bFdBk7',{style:'margin-left:1em;width:10em;',prolog:' '},{},[
+['zul.box.Box','bFdBl7',{prolog:' ',cssflex:false},{},[
+['zul.wgt.Div','bFdBm7',{style:'padding:0.42px 0px 0px 0px display:inline;'},{},[
+['zul.wgt.Radio','bFdBn7',{id:'cashombre_d',$onCheck:true,$$1onCheck:true,tooltiptext:'Hombre',prolog:' ',label:'Hombre',radiogroup:{$u:'bFdBg3'}},{},[]],
+['zul.wgt.Radio','bFdBo7',{id:'casmujer_d',$onCheck:true,$$1onCheck:true,tooltiptext:'Mujer',prolog:' ',label:'Mujer',radiogroup:{$u:'bFdBg3'}},{},[]]]]],'vertical']]]]],
+['zul.wgt.Div','bFdBp7',{},{},[
+['zul.inp.Combobox','bFdBq7',{id:'dpgmin_d',$$0onError:true,$onChange:true,$$1onChange:true,$$0onSelect:true,$$0onOpen:true,$onChanging:true,$$0onChanging:true,listeners:{onOpen:function(event){
+jq(this).attr('aria-expanded',event.open);jq(this).attr('aria-owns',event.open?this.getPopupNode_().id:'');
+}},domExtraAttrs:{'role':'combobox'
+},width:'3.33em',style:'margin:0em 1.5em 0em 0.83em;',tooltiptext:'Clave de discapacidad',prolog:' ',tooltip:'Borrar',_value:' ',readonly:true,selectedItemUuid_:'bFdB_o',popupWidth:'30em'},{},[
+['zul.inp.Comboitem','bFdB_o',{label:' ',description:'Borrar'},{},[]],
+['zul.inp.Comboitem','bFdB0o',{label:'1',description:'Discapacidad igual o superior al 33% e inferior al 65%, sin estar en el caso siguiente'},{},[]],
+['zul.inp.Comboitem','bFdB1o',{label:'2',description:'Discapacidad igual o superior al 33% e inferior al 65%, si se acredita necesitar ayuda de terceras personas o movilidad reducida'},{},[]],
+['zul.inp.Comboitem','bFdB2o',{label:'3',description:'Discapacidad en grado igual o superior al 65% (distinta de la indicada en el punto 4)'},{},[]],
+['zul.inp.Comboitem','bFdB3o',{label:'4',description:'Curatela representativa o incapacitaci\xF3n judicial por sentencia de la jurisdicci\xF3n civil'},{},[]]]]]],
+['zul.wgt.Div','bFdBr7',{},{},[
+['zul.inp.Combobox','bFdBs7',{id:'cad_d',$$0onError:true,$onChange:true,$$1onChange:true,$$0onSelect:true,$$0onOpen:true,$onChanging:true,$$0onChanging:true,listeners:{onOpen:function(event){
+jq(this).attr('aria-expanded',event.open);jq(this).attr('aria-owns',event.open?this.getPopupNode_().id:'');
+}},domExtraAttrs:{'role':'combobox'
+},sclass:'comboCabecera',style:'margin:0em 1em 0em 0em;float:left!important;width:15em',tooltiptext:'Comunidad Aut\xF3noma',prolog:' ',tooltip:'Borrar',_value:' ',readonly:true,selectedItemUuid_:'bFdB4o'},{},[
+['zul.inp.Comboitem','bFdB4o',{label:' ',description:'Borrar'},{},[]],
+['zul.inp.Comboitem','bFdB5o',{label:'ANDALUCIA'},{},[]],
+['zul.inp.Comboitem','bFdB6o',{label:'ARAGON'},{},[]],
+['zul.inp.Comboitem','bFdB7o',{label:'PRINCIPADO DE ASTURIAS'},{},[]],
+['zul.inp.Comboitem','bFdB8o',{label:'ILLES BALEARS'},{},[]],
+['zul.inp.Comboitem','bFdB9o',{label:'CANARIAS'},{},[]],
+['zul.inp.Comboitem','bFdBao',{label:'CANTABRIA'},{},[]],
+['zul.inp.Comboitem','bFdBbo',{label:'CASTILLA-LA MANCHA'},{},[]],
+['zul.inp.Comboitem','bFdBco',{label:'CASTILLA Y LEON'},{},[]],
+['zul.inp.Comboitem','bFdBdo',{label:'CATALU\xD1A'},{},[]],
+['zul.inp.Comboitem','bFdBeo',{label:'EXTREMADURA'},{},[]],
+['zul.inp.Comboitem','bFdBfo',{label:'GALICIA'},{},[]],
+['zul.inp.Comboitem','bFdBgo',{label:'MADRID'},{},[]],
+['zul.inp.Comboitem','bFdBho',{label:'REGION DE MURCIA'},{},[]],
+['zul.inp.Comboitem','bFdBio',{label:'LA RIOJA'},{},[]],
+['zul.inp.Comboitem','bFdBjo',{label:'COMUNITAT VALENCIANA'},{},[]],
+['zul.inp.Comboitem','bFdBko',{label:'CIUDAD DE CEUTA'},{},[]],
+['zul.inp.Comboitem','bFdBlo',{label:'CIUDAD DE MELILLA'},{},[]],
+['zul.inp.Comboitem','bFdBmo',{label:'CONTRIBUYENTES NO RESIDENTES'},{},[]]]]]],
+['zul.wgt.Div','bFdBt7',{},{},[
+['zk.Macro','bFdBu7',{id:'casdecfal',style:'vertical-align:bottom; margin:0em 0em 0em 0.83em;',tooltiptext:'Fecha de fallecimiento:',prolog:' '},{},[
+['zul.wgt.Div','bFdBv7',{},{},[
+['zul.wgt.Div','bFdBw7',{id:'datos2',sclass:'datos',prolog:' '},{},[
+['zk.Macro','bFdBx7',{id:'datebext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBy7',{},{},[
+['zul.wgt.Div','bFdBz7',{id:'divPrincipalCasillaEx'},{},[
+['zul.db.Datebox','bFdB_8',{format:'dd/MM/yyyy',id:'DECFAL',$onError:true,$$0onError:true,$onChange:true,$$1onChange:true,$$0onTimeZoneChange:true,listeners:{onMouseOver:function(event){
+showTooltip(event)
+},onMouseOut:function(event){
+hideTooltip()
+}},domExtraAttrs:{'aria-labelledby':''
+},tooltiptext:'Fecha de fallecimiento:',prolog:' ',cols:11,constraint:'[c',timeZone:'Europe/Madrid',lenient:false,position:'after_start',localizedFormat:'dd/MM/yyyy',todayLinkLabel:'Hoy'},{},[]]]]]]]]]]]]]]]]]],
+['zul.box.Hlayout','bFdB08',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdB18',{},{},[
+['zul.wgt.Label','bFdB28',{id:'nota_d',sclass:'vtexto',prolog:' ',value:'*En caso de matrimonio, si uno de los c\xF3nyuges ha fallecido durante el per\xEDodo impositivo, este habr\xE1 de figurar como declarante'},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdB38',{id:'divpanel2',visible:false,prolog:' '},{},[
+['zul.wnd.Panel','bFdB48',{id:'panelIDCon',$$0onMinimize:true,$$0onZIndex:true,$$0onMove:true,$onClose:true,$$0onMaximize:true,$$0onSize:true,prolog:' ',border:'normal',_nativebar:true},{},[
+['zul.wgt.Caption','bFdB58',{id:'caption3',sclass:'textoCabeceraPanel'},{},[
+['zk.Macro','bFdB68',{prolog:' '},{},[
+['zul.wgt.Div','bFdB78',{},{},[
+['zul.wgt.Div','bFdB88',{id:'h1',visible:false,prolog:' '},{},[
+['zul.wgt.Div','bFdB98',{id:'h1noaccesible',sclass:'tituloPanel',prolog:' '},{},[
+['zul.box.Box','bFdBa8',{width:'99%',prolog:' ',cssflex:false,_sizes:['86%','14%']},{},[
+['zul.box.Hlayout','bFdBb8',{},{},[
+['zul.wgt.Label','bFdBc8',{id:'tituloPanelLetra',sclass:'tituloPanelTit'},{},[]],
+['zul.wgt.Label','bFdBd8',{id:'tituloPanelTit',hflex:'1',sclass:'tituloPanelTit'},{},[]]]],
+['zul.wgt.Label','bFdBe8',{id:'tituloPanelPag',hflex:'1',sclass:'tituloPanelPag'},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdBf8',{id:'h1accesible',prolog:' '},{},[
+['zul.wgt.Html','bFdBg8',{id:'htmlh1accesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdBh8',{id:'h1dlg',visible:false,zclass:'captiondlg',prolog:' '},{},[
+['zul.wgt.Div','bFdBi8',{id:'h1dlgnoaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.box.Box','bFdBj8',{width:'99%',prolog:' ',cssflex:false,_sizes:['85%','5%','10%']},{},[
+['zul.wgt.Label','bFdBk8',{id:'tituloPanelTitDlg',sclass:'vTitDialogo',multiline:true,value:'T\xEDtulo de la ventana por defecto para determinar anchura de ventana'},{},[]],
+['zul.wgt.Separator','bFdBl8',{orient:'horizontal'},{},[]],
+['zul.wgt.Label','bFdBm8',{id:'tituloPanelMod',sclass:'vModDialogo',multiline:true},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdBn8',{id:'h1dlgaccesible',prolog:' '},{},[
+['zul.wgt.Html','bFdBo8',{id:'htmlh1dlgaccesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdBp8',{id:'h2',prolog:' '},{},[
+['zul.wgt.Div','bFdBq8',{id:'h2noaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.wgt.Div','bFdBr8',{prolog:' '},{},[
+['zul.box.Hlayout','bFdBs8',{style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdBt8',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Div','bFdBu8',{width:'90%',prolog:' '},{},[
+['zul.wgt.Label','bFdBv8',{id:'subtitulo1',sclass:'vTitDialogo',prolog:' ',value:'C\xF3nyuge'},{},[]]]]]]]],
+['zul.box.Hlayout','bFdBw8',{id:'hl2',visible:false,style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdBx8',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdBy8',{id:'subtitulo2',visible:false,sclass:'vTitDialogo',prolog:' '},{},[]]]]]],
+['zul.box.Hlayout','bFdBz8',{id:'hl3',visible:false,style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdB_9',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdB09',{id:'subtitulo3',visible:false,sclass:'vTitDialogo',prolog:' '},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdB19',{id:'h2accesible',visible:false,prolog:' '},{},[
+['zul.wgt.Html','bFdB29',{id:'htmlh2accesible',prolog:' '},{},[]]]]]]]]]]]],
+['zul.wnd.Panelchildren','bFdB39',{},{},[
+['zul.wgt.Div','bFdB49',{sclass:'panel960',prolog:' '},{},[
+['zul.wgt.Div','bFdB59',{id:'conyuge1',width:'960px',prolog:' '},{},[
+['zul.box.Hlayout','bFdB69',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdB79',{sclass:'divAncho8',style:'vertical-align:bottom'},{},[
+['zul.wgt.Label','bFdB89',{id:'NIF_c',sclass:'vtexto',prolog:' ',value:'NIF'},{},[]]]],
+['zul.wgt.Div','bFdB99',{sclass:'divAncho30',style:'vertical-align:bottom'},{},[
+['zul.wgt.Label','bFdBa9',{id:'NOM_c',sclass:'vtexto',prolog:' ',value:'Apellidos y nombre'},{},[]]]],
+['zul.wgt.Div','bFdBb9',{style:'vertical-align:bottom; margin-top:1em!important;'},{},[
+['zul.wgt.Label','bFdBc9',{id:'BORR_C',sclass:'vtexto',style:'margin:0em 0em 0em 0.83em; vertical-align:bottom;',prolog:' ',value:'Borrar c\xF3nyuge'},{},[]]]]]],
+['zul.box.Hlayout','bFdBd9',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdBe9',{},{},[
+['zk.Macro','bFdBf9',{id:'casdpnif_c',prolog:' '},{},[
+['zul.box.Hlayout','bFdBg9',{},{},[
+['zul.wgt.Div','bFdBh9',{},{},[
+['zul.wgt.Label','bFdBi9',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBj9',{},{},[
+['zul.wgt.Label','bFdBk9',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBl9',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBm9',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBn9',{},{},[
+['zul.wgt.Div','bFdBo9',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBp9',{id:'DPNIF_C',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'estiloAlfanumerico',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'NIF:',prolog:' ',maxlength:9,cols:9},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBq9',{},{},[
+['zk.Macro','bFdBr9',{id:'casdp_apenom_c',prolog:' '},{},[
+['zul.box.Hlayout','bFdBs9',{},{},[
+['zul.wgt.Div','bFdBt9',{},{},[
+['zul.wgt.Label','bFdBu9',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBv9',{},{},[
+['zul.wgt.Label','bFdBw9',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBx9',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBy9',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBz9',{},{},[
+['zul.wgt.Div','bFdB_a',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdB0a',{id:'DP_APENOM_C',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},width:'35em',sclass:'estiloAlfabetico',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;width:35em;',tooltiptext:'Apellidos y nombre:',prolog:' ',maxlength:80,cols:45},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdB1a',{},{},[
+['zul.wgt.Button','bFdB2a',{id:'btnBorrarCy',$onClick:true,style:'margin:0em 0em 0em 3.33em;',tooltiptext:'Borrar datos del c\xF3nyuge',prolog:' ',image:'https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/img//cancel.png',autodisable:'self'},{},[],'trendy']]]]],
+['zul.box.Hlayout','bFdB3a',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdB4a',{style:'vertical-align:bottom'},{},[
+['zul.box.Vlayout','bFdB5a',{prolog:' '},{},[
+['zul.wgt.Label','bFdB6a',{id:'FNAC_C',sclass:'vtexto',style:'margin:0em 0em 0em 0em;',multiline:true,value:'Fecha de nacimiento'},{},[]],
+['zk.Macro','bFdB7a',{id:'casdpfnac_c',style:'margin:0.08em 0em 0em 0em;',tooltiptext:'Fecha de nacimiento:'},{},[
+['zul.wgt.Div','bFdB8a',{},{},[
+['zul.wgt.Div','bFdB9a',{id:'datos2',sclass:'datos',prolog:' '},{},[
+['zk.Macro','bFdBaa',{id:'datebext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBba',{},{},[
+['zul.wgt.Div','bFdBca',{id:'divPrincipalCasillaEx'},{},[
+['zul.db.Datebox','bFdBda',{format:'dd/MM/yyyy',id:'DPFNAC_C',$onError:true,$$0onError:true,$onChange:true,$$1onChange:true,$$0onTimeZoneChange:true,listeners:{onMouseOver:function(event){
+showTooltip(event)
+},onMouseOut:function(event){
+hideTooltip()
+}},domExtraAttrs:{'aria-labelledby':''
+},tooltiptext:'Fecha de nacimiento:',prolog:' ',cols:11,constraint:'[c',timeZone:'Europe/Madrid',lenient:false,position:'after_start',localizedFormat:'dd/MM/yyyy',todayLinkLabel:'Hoy'},{},[]]]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBea',{sclass:'divCasilla3',style:'vertical-align:bottom'},{},[
+['zul.box.Vlayout','bFdBfa',{style:'margin-left:0.5em',prolog:' '},{},[
+['zul.wgt.Label','bFdBga',{id:'SEXO_C',sclass:'vtexto',style:'vertical-align:bottom; margin:0em 0em 0em 2.5em;',value:'Sexo'},{},[]],
+['zul.wgt.Div','bFdBha',{style:'padding:0.42px 0px 0px 0px; display:inline;'},{},[
+['zul.wgt.Radio','bFdBia',{id:'cashombre_c',$onCheck:true,$$1onCheck:true,tooltiptext:'Hombre',prolog:' ',label:'Hombre',radiogroup:{$u:'bFdBh3'}},{},[]],
+['zul.wgt.Radio','bFdBja',{id:'casmujer_c',$onCheck:true,$$1onCheck:true,tooltiptext:'Mujer',prolog:' ',label:'Mujer',radiogroup:{$u:'bFdBh3'}},{},[]]]]]]]],
+['zul.wgt.Div','bFdBka',{style:'vertical-align:bottom; margin-top:1em!important;'},{},[
+['zul.box.Vlayout','bFdBla',{prolog:' '},{},[
+['zul.wgt.Label','bFdBma',{id:'DISC_C',sclass:'vtexto',style:'margin:0em 0.75em 0em 0.83em;',multiline:true,value:'Clave de discapacidad'},{},[]],
+['zul.inp.Combobox','bFdBna',{id:'dpgmin_c',$$0onError:true,$onChange:true,$$1onChange:true,$$0onSelect:true,$$0onOpen:true,$onChanging:true,$$0onChanging:true,listeners:{onOpen:function(event){
+jq(this).attr('aria-expanded',event.open);jq(this).attr('aria-owns',event.open?this.getPopupNode_().id:'');
+}},domExtraAttrs:{'role':'combobox'
+},width:'3.33em',style:'margin:0em 1.5em 0em 3.83em;',tooltiptext:'Clave de discapacidad',tooltip:'Borrar',_value:' ',readonly:true,selectedItemUuid_:'bFdBno',popupWidth:'30em'},{},[
+['zul.inp.Comboitem','bFdBno',{label:' ',description:'Borrar'},{},[]],
+['zul.inp.Comboitem','bFdBoo',{label:'1',description:'Discapacidad igual o superior al 33% e inferior al 65%, sin estar en el caso siguiente'},{},[]],
+['zul.inp.Comboitem','bFdBpo',{label:'2',description:'Discapacidad igual o superior al 33% e inferior al 65%, si se acredita necesitar ayuda de terceras personas o movilidad reducida'},{},[]],
+['zul.inp.Comboitem','bFdBqo',{label:'3',description:'Discapacidad en grado igual o superior al 65% (distinta de la indicada en el punto 4)'},{},[]],
+['zul.inp.Comboitem','bFdBro',{label:'4',description:'Curatela representativa o incapacitaci\xF3n judicial por sentencia de la jurisdicci\xF3n civil'},{},[]]]]]]]],
+['zul.wgt.Div','bFdBoa',{style:'vertical-align:bottom; margin-top:1em!important;'},{},[
+['zul.box.Vlayout','bFdBpa',{prolog:' '},{},[
+['zul.wgt.Label','bFdBqa',{id:'CA_C',sclass:'vtexto',style:'vertical-align:bottom; margin:0em 0em 0em 2em;',value:'Comunidad Aut\xF3noma'},{},[]],
+['zul.inp.Combobox','bFdBra',{id:'cad_c',$$0onError:true,$onChange:true,$$1onChange:true,$$0onSelect:true,$$0onOpen:true,$onChanging:true,$$0onChanging:true,listeners:{onOpen:function(event){
+jq(this).attr('aria-expanded',event.open);jq(this).attr('aria-owns',event.open?this.getPopupNode_().id:'');
+}},domExtraAttrs:{'role':'combobox'
+},sclass:'campoCerradoMtr comboCabecera',style:'margin:0em 0em 0em 0em;important;width:15em',tooltiptext:'Comunidad Aut\xF3noma',tooltip:'Borrar',_value:' ',readonly:true,disabled:true,selectedItemUuid_:'bFdBso'},{},[
+['zul.inp.Comboitem','bFdBso',{label:' ',description:'Borrar'},{},[]],
+['zul.inp.Comboitem','bFdBto',{label:'ANDALUCIA'},{},[]],
+['zul.inp.Comboitem','bFdBuo',{label:'ARAGON'},{},[]],
+['zul.inp.Comboitem','bFdBvo',{label:'PRINCIPADO DE ASTURIAS'},{},[]],
+['zul.inp.Comboitem','bFdBwo',{label:'ILLES BALEARS'},{},[]],
+['zul.inp.Comboitem','bFdBxo',{label:'CANARIAS'},{},[]],
+['zul.inp.Comboitem','bFdByo',{label:'CANTABRIA'},{},[]],
+['zul.inp.Comboitem','bFdBzo',{label:'CASTILLA-LA MANCHA'},{},[]],
+['zul.inp.Comboitem','bFdB_p',{label:'CASTILLA Y LEON'},{},[]],
+['zul.inp.Comboitem','bFdB0p',{label:'CATALU\xD1A'},{},[]],
+['zul.inp.Comboitem','bFdB1p',{label:'EXTREMADURA'},{},[]],
+['zul.inp.Comboitem','bFdB2p',{label:'GALICIA'},{},[]],
+['zul.inp.Comboitem','bFdB3p',{label:'MADRID'},{},[]],
+['zul.inp.Comboitem','bFdB4p',{label:'REGION DE MURCIA'},{},[]],
+['zul.inp.Comboitem','bFdB5p',{label:'LA RIOJA'},{},[]],
+['zul.inp.Comboitem','bFdB6p',{label:'COMUNITAT VALENCIANA'},{},[]],
+['zul.inp.Comboitem','bFdB7p',{label:'CIUDAD DE CEUTA'},{},[]],
+['zul.inp.Comboitem','bFdB8p',{label:'CIUDAD DE MELILLA'},{},[]],
+['zul.inp.Comboitem','bFdB9p',{label:'CONTRIBUYENTES NO RESIDENTES'},{},[]]]]]]]],
+['zul.wgt.Div','bFdBsa',{style:'vertical-align:bottom; margin-top:1em!important; width:5em!important;'},{},[]],
+['zul.wgt.Div','bFdBta',{id:'cajaAuto',visible:false,sclass:'divCasilla',style:'border:none'},{},[
+['zul.box.Vlayout','bFdBua',{prolog:' '},{},[
+['zul.box.Hlayout','bFdBva',{},{},[
+['zul.wgt.Div','bFdBwa',{id:'labelAuto',visible:false},{},[
+['zul.wgt.Label','bFdBxa',{id:'AUTO_C',sclass:'vtexto',style:'vertical-align:bottom; ',prolog:' ',multiline:true,value:'Autorizado \n (Si / No)'},{},[]]]],
+['zul.wgt.Div','bFdBya',{id:'labelRef',visible:false},{},[
+['zul.wgt.Label','bFdBza',{id:'REF_C',sclass:'vtexto',style:'font-weight:bold;color:black;vertical-align:bottom; margin-left:2em; ',prolog:' ',multiline:true,value:'Autorizaci\xF3n c\xF3nyuge'},{},[]]]],
+['zul.wgt.Div','bFdB_b',{id:'labelBotDF',visible:false},{},[
+['zul.wgt.Label','bFdB0b',{id:'BOTDF_C',sclass:'vtexto',style:'vertical-align:bottom; margin:0em 0em 0em 0em;',prolog:' ',multiline:true,value:'Fichero DF'},{},[]]]]]],
+['zul.box.Hlayout','bFdB1b',{},{},[
+['zul.wgt.Div','bFdB2b',{id:'autorizado',visible:false},{},[
+['zk.Macro','bFdB3b',{id:'macro_isautorizconyu',tooltiptext:'Autorizado \n (Si / No)',prolog:' '},{},[
+['zul.wgt.Div','bFdB4b',{sclass:'divSiNo',style:'display:inline;'},{},[
+['zul.inp.Combobox','bFdB5b',{id:'isautorizconyu',$$0onError:true,$onChange:true,$$1onChange:true,$$0onSelect:true,$$0onOpen:true,$onChanging:true,$$0onChanging:true,listeners:{onOpen:function(event){
+jq(this).attr('aria-expanded',event.open);jq(this).attr('aria-owns',event.open?this.getPopupNode_().id:'');
+}},overrides:{doKeyDown_:
+
+			 
+			    //Sobreescribo un metodo privado en la versión 6.5.1 .
+				function (evt) {
+					var keyCode = evt.keyCode;
+					if (this._readonly && (keyCode == 8 || (keyCode==46 )) && evt.target == this) {
+						this.getInputNode().value='';
+						this._hilite();
+						evt.stop(); //evitamos que detenga el evento
+					}
+					this.$super("doKeyDown_",evt);				
+				}
+			
+			
+,setValue:
+ function (a,b) {this.$setValue(a,b); /*call the original method*/try{if(arguments.length>1 && arguments[1]==true ){jq(this).data('old-value',quitarPuntos(arguments[0]));}}catch(e){console.error(e);}}
+},domExtraAttrs:{'role':'combobox'
+},sclass:'estiloSiNo',prolog:' ',readonly:true,cols:3,buttonVisible:false,selectedItemUuid_:'bFdBbp'},{},[
+['zul.inp.Comboitem','bFdBap',{label:'SI'},{},[]],
+['zul.inp.Comboitem','bFdBbp',{},{},[]],
+['zul.inp.Comboitem','bFdBcp',{label:'NO'},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdB6b',{id:'numRef',visible:false,style:'margin-left:1em; '},{},[]],
+['zul.wgt.Div','bFdB7b',{id:'botonDF',visible:false,$ZKAUS$:true,$ZKBINDER$:true},{},[
+['zul.wgt.Button','bFdB8b',{id:'btUploadcy',prolog:' ',label:'...',autodisable:'self',upload:'true,maxsize=5000'},{},[],'trendy'],
+['zul.wgt.Label','bFdB9b',{id:'datosfis',visible:false,prolog:' '},{},[]],
+['zul.wgt.Label','bFdBab',{id:'niffichero',style:'color:#00ff00',prolog:' '},{},[]]]]]]]]]]]],
+['zul.box.Hlayout','bFdBbb',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdBcb',{},{},[]],
+['zul.wgt.Div','bFdBdb',{sclass:'divCH',style:'width:12em;'},{},[
+['zul.wgt.Div','bFdBeb',{style:'padding:0.0em 0.01em 0.0em 1.33em ',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBfb',{},{},[]],
+['zul.wgt.Div','bFdBgb',{},{},[]],
+['zul.wgt.Div','bFdBhb',{},{},[]],
+['zul.wgt.Div','bFdBib',{},{},[]]]],
+['zul.wgt.Div','bFdBjb',{id:'autorizadoCONT',visible:false,prolog:' '},{},[
+['zul.wgt.Groupbox','bFdBkb',{$$onOpen:false,style:'margin-top:16px;width:900px;border: 1px  solid blue;',prolog:' ',closable:false,_nativebar:true},{},[
+['zul.wgt.Caption','bFdBlb',{sclass:'textoCabeceraGB'},{},[
+['zul.wgt.Label','bFdBmb',{id:'gbAutorizacionCY',sclass:'vtextodlg',style:'font-weight:bold',prolog:' ',multiline:true,value:'Autorizaci\xF3n c\xF3nyuge'},{},[]]]],
+['zul.box.Hlayout','bFdBnb',{sclass:'contenedor960'},{},[
+['zul.wgt.Div','bFdBob',{sclass:'divAncho40'},{},[
+['zul.wgt.Label','bFdBpb',{id:'labelRefAst',sclass:'vtexto',prolog:' ',value:'Si desea comparar el resultado de su declaraci\xF3n en las distintas opciones de tributaci\xF3n, individual o conjunta , necesitar\xE1 el n\xFAmero de referencia/pin de su c\xF3nyuge o ser apoderado'},{},[]]]],
+['zul.wgt.Div','bFdBqb',{id:'numRef2'},{},[
+['zul.wgt.Div','bFdBrb',{sclass:'divAncho25',prolog:' '},{},[
+['zk.Macro','bFdBsb',{id:'idacon',prolog:' '},{},[
+['zul.wgt.Div','bFdBtb',{id:'divIdAdicionales',$ZKAUS$:true,sclass:'cajaFlexible',$ZKBINDER$:true},{},[
+['zul.wgt.Div','bFdBub',{id:'winbotonidadicionales',prolog:' '},{},[
+['zul.wgt.Div','bFdBvb',{sclass:'boton',prolog:' '},{},[
+['zul.wgt.Button','bFdBwb',{id:'btidadic',$onClick:true,sclass:'botonLanzaVentana',style:'color:blue;width:100%',tooltiptext:'Referencia/Cl@ve M\xF3vil',prolog:' ',label:'Referencia/Cl@ve M\xF3vil',autodisable:'self'},{},[],'trendy']]]]]]]]]]]]]]]],'3d']]],
+['zul.box.Hlayout','bFdBxb',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdByb',{hflex:'1',style:'vertical-align:bottom;'},{},[
+['zul.wgt.Div','bFdBzb',{prolog:' '},{},[
+['zul.wgt.Label','bFdB_c',{id:'notaCy',sclass:'vtextodlg',prolog:' ',value:'Si el c\xF3nyuge es no residente y no contribuyente del I.R.P.F. marque la casilla'},{},[]],
+['zul.wgt.Div','bFdB0c',{sclass:'divpuntosdlg',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdB1c',{sclass:'divLanza2'},{},[
+['zul.wgt.Checkbox','bFdB2c',{id:'caslvnoresidente',$onCheck:true,$$1onCheck:true,$onClick:true,style:'margin:0em 0em 0em 0.87em; vertical-align:bottom',tooltiptext:'No Residente (*)',prolog:' ',disabled:true},{},[]]]]]],
+['zul.box.Hlayout','bFdB3c',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdB4c',{hflex:'1',style:'vertical-align:bottom;'},{},[
+['zul.wgt.Div','bFdB5c',{prolog:' '},{},[
+['zul.wgt.Label','bFdB6c',{id:'notaCy2',sclass:'vtextodlg',prolog:' ',value:'Si ha marcado la casilla anterior y el c\xF3nyuge reside en un pa\xEDs de la Uni\xF3n Europea o del Espacio Econ\xF3mico Europeo, distinto de Espa\xF1a, con el que exista un efectivo intercambio de informaci\xF3n tributaria, marque la casilla si el declarante (y/o alg\xFAn otro miembro de la unidad familiar que sea contribuyente del IRPF) va a aplicar la deducci\xF3n de la disposici\xF3n adicional cuadrag\xE9sima octava de la Ley de IRPF'},{},[]]]]]],
+['zul.wgt.Div','bFdB7c',{sclass:'divLanza2'},{},[
+['zul.wgt.Checkbox','bFdB8c',{id:'casresidenteue',$onCheck:true,$$1onCheck:true,style:'margin:0em 0em 0em 0em; vertical-align:bottom',tooltiptext:'Si ha marcado la casilla anterior y el c\xF3nyuge reside en un pa\xEDs de la Uni\xF3n Europea o del Espacio Econ\xF3mico Europeo, distinto de Espa\xF1a, con el que exista un efectivo intercambio de informaci\xF3n tributaria, marque la casilla si el declarante (y/o alg\xFAn otro miembro de la unidad familiar que sea contribuyente del IRPF) va a aplicar la deducci\xF3n de la disposici\xF3n adicional cuadrag\xE9sima octava de la Ley de IRPF',prolog:' ',disabled:true},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdB9c',{id:'divpanel3',prolog:' '},{},[
+['zul.wnd.Panel','bFdBac',{id:'panelhijosmenor18',$$0onMinimize:true,$$0onZIndex:true,$$0onMove:true,$onClose:true,$$0onMaximize:true,$$0onSize:true,prolog:' ',border:'normal',_nativebar:true},{},[
+['zul.wgt.Caption','bFdBbc',{id:'caption4',sclass:'textoCabeceraPanel'},{},[
+['zk.Macro','bFdBcc',{prolog:' '},{},[
+['zul.wgt.Div','bFdBdc',{},{},[
+['zul.wgt.Div','bFdBec',{id:'h1',visible:false,prolog:' '},{},[
+['zul.wgt.Div','bFdBfc',{id:'h1noaccesible',sclass:'tituloPanel',prolog:' '},{},[
+['zul.box.Box','bFdBgc',{width:'99%',prolog:' ',cssflex:false,_sizes:['86%','14%']},{},[
+['zul.box.Hlayout','bFdBhc',{},{},[
+['zul.wgt.Label','bFdBic',{id:'tituloPanelLetra',sclass:'tituloPanelTit'},{},[]],
+['zul.wgt.Label','bFdBjc',{id:'tituloPanelTit',hflex:'1',sclass:'tituloPanelTit'},{},[]]]],
+['zul.wgt.Label','bFdBkc',{id:'tituloPanelPag',hflex:'1',sclass:'tituloPanelPag'},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdBlc',{id:'h1accesible',prolog:' '},{},[
+['zul.wgt.Html','bFdBmc',{id:'htmlh1accesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdBnc',{id:'h1dlg',visible:false,zclass:'captiondlg',prolog:' '},{},[
+['zul.wgt.Div','bFdBoc',{id:'h1dlgnoaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.box.Box','bFdBpc',{width:'99%',prolog:' ',cssflex:false,_sizes:['85%','5%','10%']},{},[
+['zul.wgt.Label','bFdBqc',{id:'tituloPanelTitDlg',sclass:'vTitDialogo',multiline:true,value:'T\xEDtulo de la ventana por defecto para determinar anchura de ventana'},{},[]],
+['zul.wgt.Separator','bFdBrc',{orient:'horizontal'},{},[]],
+['zul.wgt.Label','bFdBsc',{id:'tituloPanelMod',sclass:'vModDialogo',multiline:true},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdBtc',{id:'h1dlgaccesible',prolog:' '},{},[
+['zul.wgt.Html','bFdBuc',{id:'htmlh1dlgaccesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdBvc',{id:'h2',prolog:' '},{},[
+['zul.wgt.Div','bFdBwc',{id:'h2noaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.wgt.Div','bFdBxc',{prolog:' '},{},[
+['zul.box.Hlayout','bFdByc',{style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdBzc',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Div','bFdB_d',{width:'90%',prolog:' '},{},[
+['zul.wgt.Label','bFdB0d',{id:'subtitulo1',sclass:'vTitDialogo',prolog:' ',value:'Hijos menores de 18 a\xF1os'},{},[]]]]]]]],
+['zul.box.Hlayout','bFdB1d',{id:'hl2',style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdB2d',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdB3d',{id:'subtitulo2',sclass:'vTitDialogo',prolog:' ',value:'(Tambi\xE9n hijos mayores de edad sobre los que se ha constituido curatela representativa o sometidos a patria potestad prorrogada o rehabilitada)'},{},[]]]]]],
+['zul.box.Hlayout','bFdB4d',{id:'hl3',visible:false,style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdB5d',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdB6d',{id:'subtitulo3',visible:false,sclass:'vTitDialogo',prolog:' '},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdB7d',{id:'h2accesible',visible:false,prolog:' '},{},[
+['zul.wgt.Html','bFdB8d',{id:'htmlh2accesible',prolog:' '},{},[]]]]]]]]]]]],
+['zul.wnd.Panelchildren','bFdB9d',{},{},[
+['zul.wgt.Div','bFdBad',{sclass:'panel992',prolog:' '},{},[
+['zul.wgt.Div','bFdBbd',{prolog:' '},{},[
+['zul.wgt.Div','bFdBcd',{style:'vertical-align:bottom',prolog:' '},{},[
+['zul.wgt.Div','bFdBdd',{id:'divmenores',$ZKAUS$:true,prolog:' ',$ZKBINDER$:true},{},[
+['zk.Macro','bFdBuf',{id:'hijomenor1801',width:'90%'},{},[
+['zul.wgt.Div','bFdBvf',{},{},[
+['zul.box.Hlayout','bFdBwf',{id:'hbtitulos',sclass:'contenedor992',style:'height:6em;',prolog:' '},{},[
+['zul.wgt.Div','bFdBxf',{sclass:'divtxt',style:'width: 12.4em!important;'},{},[
+['zul.wgt.Label','bFdByf',{id:'HR_NOM',sclass:'vtextodlg',style:'font-size: 15px !important; padding-left:1.5em',prolog:' ',value:'Nombre'},{},[]]]],
+['zul.wgt.Div','bFdBzf',{sclass:'divAncho7 divtxt'},{},[
+['zul.wgt.Label','bFdB_g',{id:'HR_NIF',sclass:'vtextodlg',style:'font-size: 15px !important; padding-left:0.5em',prolog:' ',value:'NIF'},{},[]]]],
+['zul.wgt.Div','bFdB0g',{sclass:'divAncho7 divtxt'},{},[
+['zul.wgt.Label','bFdB1g',{id:'HR_FNAC',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Fecha de \n nacimiento'},{},[]]]],
+['zul.wgt.Div','bFdB2g',{sclass:'divAncho5 divtxt'},{},[
+['zul.wgt.Label','bFdB3g',{id:'HR_MINUS',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Clave de \ndiscapacidad'},{},[]]]],
+['zul.wgt.Div','bFdB4g',{sclass:'divAncho5 divtxt'},{},[
+['zul.wgt.Label','bFdB5g',{id:'HR_FALL',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Fallecido\nen 2025'},{},[]]]],
+['zul.wgt.Div','bFdB6g',{sclass:'divAncho5 divtxt'},{},[
+['zul.wgt.Label','bFdB7g',{id:'HR_UF',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Forma parte \n de la unidad \n familiar'},{},[]]]],
+['zul.wgt.Div','bFdB8g',{sclass:'divAncho4 divtxt'},{},[
+['zul.wgt.Label','bFdB9g',{id:'HR_RENTAS',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Obtiene rentas\n(cualquier\nimporte)'},{},[]]]],
+['zul.wgt.Div','bFdBag',{sclass:'divAncho4 divtxt'},{},[
+['zul.wgt.Label','bFdBbg',{id:'HR_AUTORIZ',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Autorizado \n (Si / No)'},{},[]]]],
+['zul.wgt.Div','bFdBcg',{id:'divhrrefer',visible:false,sclass:'divAncho7  divtxt'},{},[
+['zul.wgt.Label','bFdBdg',{id:'HR_REFER',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Ref/Cl@ve Pin'},{},[]]]],
+['zul.wgt.Div','bFdBeg',{id:'divhrfichero',visible:false,sclass:'divAncho4 divtxt'},{},[
+['zul.wgt.Label','bFdBfg',{id:'HR_FICHERO',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',value:'Fichero DF'},{},[]]]],
+['zul.wgt.Div','bFdBgg',{sclass:'divAncho3 divtxt'},{},[
+['zul.wgt.Label','bFdBhg',{id:'HR_BORRAR',sclass:'vtextodlg',style:'font-size: 14px !important; padding-left:1.2em',prolog:' ',value:'Borrar'},{},[]]]]]],
+['zul.box.Hlayout','bFdBig',{id:'hbDatos',sclass:'contenedor992',prolog:' '},{},[
+['zul.wgt.Div','bFdBjg',{style:'width: 12.4em!important;'},{},[
+['zk.Macro','bFdBkg',{id:'vennomhmen',prolog:' '},{},[
+['zul.box.Hlayout','bFdBlg',{},{},[
+['zul.wgt.Div','bFdBmg',{},{},[
+['zul.wgt.Label','bFdBng',{id:'idcasilla',visible:false,$onClick:true,sclass:'casilla',style:'cursor: pointer;',prolog:' ',value:' 1'},{},[]]]],
+['zul.wgt.Div','bFdBog',{},{},[
+['zul.wgt.Label','bFdBpg',{id:'idcasillapeque',zclass:'casillapeque',prolog:' ',value:' 1'},{},[]]]],
+['zul.wgt.Div','bFdBqg',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBrg',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBsg',{},{},[
+['zul.wgt.Div','bFdBtg',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBug',{id:'NOMHMEN',$$0onError:true,$onChange:true,$$1onChange:true,$onDoubleClick:true,listeners:{onKeyDown:function(event){
+var kc=event.keyCode;if((kc>=46 && kc<=90) || (kc>=96 && kc<=105) || kc==13 || kc==8 ){ var tb=zk.Widget.$(this);tb.setDisabled(true);zAu.send(new zk.Event(tb,'onUser'));setTimeout(function() {tb.setDisabled(false);},250);}
+}},domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'estiloAlfabetico',style:'cursor: default; ',tooltiptext:'Nombre del hijo',prolog:' ',readonly:true,maxlength:15,cols:15},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdBvg',{sclass:'boton',style:'margin:-0.32em 0em 0em 0em;'},{},[
+['zul.wgt.Button','bFdBwg',{id:'botonlv',$onClick:true,sclass:'botonLanzaVentana z-velo',prolog:' ',image:'https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/img/epi1.png',autodisable:'self'},{},[],'trendy']]]]]]]]],
+['zul.wgt.Div','bFdBxg',{sclass:'divAncho7'},{},[
+['zk.Macro','bFdByg',{id:'casnifhmen',sclass:'estiloAlfanumerico',prolog:' '},{},[
+['zul.box.Hlayout','bFdBzg',{},{},[
+['zul.wgt.Div','bFdB_h',{},{},[
+['zul.wgt.Label','bFdB0h',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdB1h',{},{},[
+['zul.wgt.Label','bFdB2h',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdB3h',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdB4h',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdB5h',{},{},[
+['zul.wgt.Div','bFdB6h',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdB7h',{id:'NIFHMEN',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr estiloAlfanumerico',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'NIF:',prolog:' ',disabled:true,maxlength:9,cols:7},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdB8h',{sclass:'divAncho7'},{},[
+['zk.Macro','bFdB9h',{id:'casfnachmen',style:'width:8.0em!important',prolog:' '},{},[
+['zul.box.Hlayout','bFdBah',{},{},[
+['zul.wgt.Div','bFdBbh',{},{},[
+['zul.wgt.Label','bFdBch',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBdh',{},{},[
+['zul.wgt.Label','bFdBeh',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBfh',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBgh',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBhh',{},{},[
+['zul.wgt.Div','bFdBih',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBjh',{id:'FNACHMEN',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr ',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'Fecha de   nacimiento:',prolog:' ',disabled:true,maxlength:10,cols:7},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBkh',{sclass:'divAncho5'},{},[
+['zk.Macro','bFdBlh',{id:'casminushmen',prolog:' '},{},[
+['zul.box.Hlayout','bFdBmh',{},{},[
+['zul.wgt.Div','bFdBnh',{},{},[
+['zul.wgt.Label','bFdBoh',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBph',{},{},[
+['zul.wgt.Label','bFdBqh',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBrh',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBsh',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBth',{},{},[
+['zul.wgt.Div','bFdBuh',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBvh',{id:'MINUSHMEN',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr estiloAlfanumerico',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'Clave de  discapacidad:',prolog:' ',disabled:true,maxlength:1,cols:2},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBwh',{sclass:'divAncho5',style:'margin-left:1em'},{},[
+['zul.wgt.Checkbox','bFdBxh',{id:'bfalhmen',$onCheck:true,$$1onCheck:true,tooltiptext:'Fallecido\nen 2025',prolog:' ',disabled:true},{},[]]]],
+['zul.wgt.Div','bFdByh',{sclass:'divAncho5'},{},[
+['zk.Macro','bFdBzh',{id:'macro_ufhmen',tooltiptext:'Forma parte \n de la unidad \n familiar',prolog:' '},{},[
+['zul.wgt.Div','bFdB_i',{sclass:'divSiNo',style:'display:inline;'},{},[
+['zul.inp.Combobox','bFdB0i',{id:'ufhmen',$$0onError:true,$onChange:true,$$1onChange:true,$$0onSelect:true,$$0onOpen:true,$onChanging:true,$$0onChanging:true,listeners:{onOpen:function(event){
+jq(this).attr('aria-expanded',event.open);jq(this).attr('aria-owns',event.open?this.getPopupNode_().id:'');
+}},overrides:{doKeyDown_:
+
+			 
+			    //Sobreescribo un metodo privado en la versión 6.5.1 .
+				function (evt) {
+					var keyCode = evt.keyCode;
+					if (this._readonly && (keyCode == 8 || (keyCode==46 )) && evt.target == this) {
+						this.getInputNode().value='';
+						this._hilite();
+						evt.stop(); //evitamos que detenga el evento
+					}
+					this.$super("doKeyDown_",evt);				
+				}
+			
+			
+,setValue:
+ function (a,b) {this.$setValue(a,b); /*call the original method*/try{if(arguments.length>1 && arguments[1]==true ){jq(this).data('old-value',quitarPuntos(arguments[0]));}}catch(e){console.error(e);}}
+},domExtraAttrs:{'role':'combobox'
+},sclass:'campoCerradoMtr estiloSiNo',prolog:' ',readonly:true,disabled:true,cols:3,buttonVisible:false,selectedItemUuid_:'bFdBep'},{},[
+['zul.inp.Comboitem','bFdBdp',{label:'SI'},{},[]],
+['zul.inp.Comboitem','bFdBep',{},{},[]],
+['zul.inp.Comboitem','bFdBfp',{label:'NO'},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdB1i',{sclass:'divAncho4'},{},[
+['zk.Macro','bFdB2i',{id:'macro_rentashmen',tooltiptext:'Obtiene rentas\n(cualquier\nimporte)',prolog:' '},{},[
+['zul.wgt.Div','bFdB3i',{sclass:'divSiNo',style:'display:inline;'},{},[
+['zul.inp.Combobox','bFdB4i',{id:'rentashmen',$$0onError:true,$onChange:true,$$1onChange:true,$$0onSelect:true,$$0onOpen:true,$onChanging:true,$$0onChanging:true,listeners:{onOpen:function(event){
+jq(this).attr('aria-expanded',event.open);jq(this).attr('aria-owns',event.open?this.getPopupNode_().id:'');
+}},overrides:{doKeyDown_:
+
+			 
+			    //Sobreescribo un metodo privado en la versión 6.5.1 .
+				function (evt) {
+					var keyCode = evt.keyCode;
+					if (this._readonly && (keyCode == 8 || (keyCode==46 )) && evt.target == this) {
+						this.getInputNode().value='';
+						this._hilite();
+						evt.stop(); //evitamos que detenga el evento
+					}
+					this.$super("doKeyDown_",evt);				
+				}
+			
+			
+,setValue:
+ function (a,b) {this.$setValue(a,b); /*call the original method*/try{if(arguments.length>1 && arguments[1]==true ){jq(this).data('old-value',quitarPuntos(arguments[0]));}}catch(e){console.error(e);}}
+},domExtraAttrs:{'role':'combobox'
+},sclass:'campoCerradoMtr estiloSiNo',prolog:' ',readonly:true,disabled:true,cols:3,buttonVisible:false,selectedItemUuid_:'bFdBhp'},{},[
+['zul.inp.Comboitem','bFdBgp',{label:'SI'},{},[]],
+['zul.inp.Comboitem','bFdBhp',{},{},[]],
+['zul.inp.Comboitem','bFdBip',{label:'NO'},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdB5i',{id:'divisautorizado',sclass:'divAncho4'},{},[
+['zul.wgt.Div','bFdB6i',{id:'divsino',visible:false,prolog:' '},{},[
+['zk.Macro','bFdB7i',{id:'macro_isautorizhmen',tooltiptext:'Autorizado \n (Si / No)',prolog:' '},{},[
+['zul.wgt.Div','bFdB8i',{sclass:'divSiNo',style:'display:inline;'},{},[
+['zul.inp.Combobox','bFdB9i',{id:'isautorizhmen',$$0onError:true,$onChange:true,$$1onChange:true,$$0onSelect:true,$$0onOpen:true,$onChanging:true,$$0onChanging:true,listeners:{onOpen:function(event){
+jq(this).attr('aria-expanded',event.open);jq(this).attr('aria-owns',event.open?this.getPopupNode_().id:'');
+}},overrides:{doKeyDown_:
+
+			 
+			    //Sobreescribo un metodo privado en la versión 6.5.1 .
+				function (evt) {
+					var keyCode = evt.keyCode;
+					if (this._readonly && (keyCode == 8 || (keyCode==46 )) && evt.target == this) {
+						this.getInputNode().value='';
+						this._hilite();
+						evt.stop(); //evitamos que detenga el evento
+					}
+					this.$super("doKeyDown_",evt);				
+				}
+			
+			
+,setValue:
+ function (a,b) {this.$setValue(a,b); /*call the original method*/try{if(arguments.length>1 && arguments[1]==true ){jq(this).data('old-value',quitarPuntos(arguments[0]));}}catch(e){console.error(e);}}
+},domExtraAttrs:{'role':'combobox'
+},sclass:'campoCerradoMtr estiloSiNo',prolog:' ',readonly:true,disabled:true,cols:3,buttonVisible:false,selectedItemUuid_:'bFdBkp'},{},[
+['zul.inp.Comboitem','bFdBjp',{label:'SI'},{},[]],
+['zul.inp.Comboitem','bFdBkp',{},{},[]],
+['zul.inp.Comboitem','bFdBlp',{label:'NO'},{},[]]]]]]]]]]]],
+['zul.wgt.Div','bFdBai',{id:'pedirreferencia',visible:false,sclass:'divAncho7'},{},[
+['zul.wgt.Label','bFdBbi',{id:'labelRefHijos',style:'display:none;',prolog:' ',value:'******'},{},[]],
+['zk.Macro','bFdBci',{id:'idadhr',prolog:' '},{},[
+['zul.wgt.Div','bFdBdi',{id:'divIdAdicionales',$ZKAUS$:true,sclass:'cajaFlexible',$ZKBINDER$:true},{},[
+['zul.wgt.Div','bFdBei',{id:'winbotonidadicionales',prolog:' '},{},[
+['zul.wgt.Div','bFdBfi',{sclass:'boton',prolog:' '},{},[
+['zul.wgt.Button','bFdBgi',{id:'btidadic',$onClick:true,sclass:'botonLanzaVentana',style:'color:blue;width:100%',tooltiptext:'Referencia/Cl@ve M\xF3vil',prolog:' ',label:'Ref/Cl@ve M\xF3vil',autodisable:'self'},{},[],'trendy']]]]]]]]]]],
+['zul.wgt.Div','bFdBhi',{id:'botonDF',visible:false,sclass:'divAncho5'},{},[
+['zul.box.Hlayout','bFdBii',{prolog:' '},{},[
+['zul.wgt.Button','bFdBji',{id:'btUpload',label:'...1',autodisable:'self',upload:'true,maxsize=5000'},{},[],'trendy'],
+['zul.inp.Textbox','bFdBki',{id:'datosfis',visible:false,$$0onError:true,$onChange:true,$$1onChange:true},{},[]],
+['zul.inp.Textbox','bFdBli',{id:'niffichero',$$0onError:true,$onChange:true,$$1onChange:true,sclass:'campoCerradoMtr ',style:'color:#00ff00; width:4.3em; float:left; display:block;',zclass:'nifFichero',disabled:true},{},[]]]]]],
+['zul.wgt.Div','bFdBmi',{sclass:'divAncho3',style:'text-align:right;'},{},[
+['zul.wgt.Button','bFdBni',{id:'btnBorrarHMen',$onClick:true,tooltiptext:'Borrar',prolog:' ',image:'https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/img//cancel.png',autodisable:'self'},{},[],'trendy']]]]]]]]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBed',{id:'divpanel4',prolog:' '},{},[
+['zul.wnd.Panel','bFdBfd',{id:'panelhijosmayor18',$$0onMinimize:true,$$0onZIndex:true,$$0onMove:true,$onClose:true,$$0onMaximize:true,$$0onSize:true,prolog:' ',border:'normal',_nativebar:true},{},[
+['zul.wgt.Caption','bFdBgd',{id:'caption5',sclass:'textoCabeceraPanel'},{},[
+['zk.Macro','bFdBhd',{prolog:' '},{},[
+['zul.wgt.Div','bFdBid',{},{},[
+['zul.wgt.Div','bFdBjd',{id:'h1',visible:false,prolog:' '},{},[
+['zul.wgt.Div','bFdBkd',{id:'h1noaccesible',sclass:'tituloPanel',prolog:' '},{},[
+['zul.box.Box','bFdBld',{width:'99%',prolog:' ',cssflex:false,_sizes:['86%','14%']},{},[
+['zul.box.Hlayout','bFdBmd',{},{},[
+['zul.wgt.Label','bFdBnd',{id:'tituloPanelLetra',sclass:'tituloPanelTit'},{},[]],
+['zul.wgt.Label','bFdBod',{id:'tituloPanelTit',hflex:'1',sclass:'tituloPanelTit'},{},[]]]],
+['zul.wgt.Label','bFdBpd',{id:'tituloPanelPag',hflex:'1',sclass:'tituloPanelPag'},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdBqd',{id:'h1accesible',prolog:' '},{},[
+['zul.wgt.Html','bFdBrd',{id:'htmlh1accesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdBsd',{id:'h1dlg',visible:false,zclass:'captiondlg',prolog:' '},{},[
+['zul.wgt.Div','bFdBtd',{id:'h1dlgnoaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.box.Box','bFdBud',{width:'99%',prolog:' ',cssflex:false,_sizes:['85%','5%','10%']},{},[
+['zul.wgt.Label','bFdBvd',{id:'tituloPanelTitDlg',sclass:'vTitDialogo',multiline:true,value:'T\xEDtulo de la ventana por defecto para determinar anchura de ventana'},{},[]],
+['zul.wgt.Separator','bFdBwd',{orient:'horizontal'},{},[]],
+['zul.wgt.Label','bFdBxd',{id:'tituloPanelMod',sclass:'vModDialogo',multiline:true},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdByd',{id:'h1dlgaccesible',prolog:' '},{},[
+['zul.wgt.Html','bFdBzd',{id:'htmlh1dlgaccesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdB_e',{id:'h2',prolog:' '},{},[
+['zul.wgt.Div','bFdB0e',{id:'h2noaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.wgt.Div','bFdB1e',{prolog:' '},{},[
+['zul.box.Hlayout','bFdB2e',{style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdB3e',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Div','bFdB4e',{width:'90%',prolog:' '},{},[
+['zul.wgt.Label','bFdB5e',{id:'subtitulo1',sclass:'vTitDialogo',prolog:' ',value:'Hijos con edades comprendidas entre 18 y 24 a\xF1os y sobre los que no se ha constituido curatela representativa ni est\xE1n sujetos a patria potestad prorrogada o rehabilitada'},{},[]]]]]]]],
+['zul.box.Hlayout','bFdB6e',{id:'hl2',style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdB7e',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdB8e',{id:'subtitulo2',sclass:'vTitDialogo',prolog:' ',value:'Hijos de 25 a\xF1os o m\xE1s con discapacidad y sobre los que no se ha constituido curatela representativa ni est\xE1n sujetos a patria potestad prorrogada o rehabilitada'},{},[]]]]]],
+['zul.box.Hlayout','bFdB9e',{id:'hl3',style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdBae',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdBbe',{id:'subtitulo3',sclass:'vTitDialogo',prolog:' ',value:'Descendientes distintos de los hijos y personas en acogimiento o tutela (o de las que se tenga la guarda y custodia por resoluci\xF3n judicial) menores de 25 a\xF1os o mayores de esa edad con discapacidad'},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdBce',{id:'h2accesible',visible:false,prolog:' '},{},[
+['zul.wgt.Html','bFdBde',{id:'htmlh2accesible',prolog:' '},{},[]]]]]]]]]]]],
+['zul.wnd.Panelchildren','bFdBee',{},{},[
+['zul.wgt.Div','bFdBfe',{sclass:'panel960',prolog:' '},{},[
+['zul.wgt.Div','bFdBge',{prolog:' '},{},[
+['zul.wgt.Div','bFdBhe',{style:'vertical-align:bottom',prolog:' '},{},[
+['zul.wgt.Div','bFdBie',{id:'divmayores',prolog:' '},{},[
+['zk.Macro','bFdBoi',{id:'hijomayor1801',width:'90%'},{},[
+['zul.wgt.Div','bFdBpi',{},{},[
+['zul.box.Hlayout','bFdBqi',{id:'hbtitulos',sclass:'contenedor960',style:'height:3.5em;',prolog:' '},{},[
+['zul.wgt.Div','bFdBri',{sclass:' divtxt',style:'width:13em;'},{},[
+['zul.wgt.Label','bFdBsi',{id:'H_NOM',sclass:'vtextodlg',style:'font-size: 15px !important; margin:0em 0em 0em 1.5em;',prolog:' ',value:'Nombre'},{},[]]]],
+['zul.wgt.Div','bFdBti',{sclass:'divAncho9 divtxt'},{},[
+['zul.wgt.Label','bFdBui',{id:'H_NIF',sclass:'vtextodlg',style:'font-size: 15px !important',prolog:' ',value:'NIF'},{},[]]]],
+['zul.wgt.Div','bFdBvi',{sclass:'divAncho9 divtxt'},{},[
+['zul.wgt.Label','bFdBwi',{id:'H_FNAC',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Fecha de \n nacimiento'},{},[]]]],
+['zul.wgt.Div','bFdBxi',{sclass:'divAncho6 divtxt'},{},[
+['zul.wgt.Label','bFdByi',{id:'H_MINUS',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Clave de \ndiscapacidad'},{},[]]]],
+['zul.wgt.Div','bFdBzi',{sclass:'divAncho4 divtxt'},{},[
+['zul.wgt.Label','bFdB_j',{id:'H_FALL',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Fallecido\nen 2025'},{},[]]]],
+['zul.wgt.Div','bFdB0j',{sclass:'divAncho12 divtxt'},{},[
+['zul.wgt.Label','bFdB1j',{id:'H_VOLREN',sclass:'vtextodlg',style:'font-size: 14px !important; margin-left:1em',prolog:' ',multiline:true,value:'Volumen de rentas'},{},[]]]],
+['zul.wgt.Div','bFdB2j',{sclass:'divAncho4 divtxt'},{},[
+['zul.wgt.Label','bFdB3j',{id:'H_BORRAR',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',value:'Borrar'},{},[]]]]]],
+['zul.box.Hlayout','bFdB4j',{id:'hbdatos',width:'960px',prolog:' '},{},[
+['zul.wgt.Div','bFdB5j',{style:' width:12.4em;'},{},[
+['zk.Macro','bFdB6j',{id:'vennomhmay',style:'margin:0em 0.42em 0em 0em;',prolog:' '},{},[
+['zul.box.Hlayout','bFdB7j',{},{},[
+['zul.wgt.Div','bFdB8j',{},{},[
+['zul.wgt.Label','bFdB9j',{id:'idcasilla',visible:false,$onClick:true,sclass:'casilla',style:'cursor: pointer;',prolog:' ',value:' 1'},{},[]]]],
+['zul.wgt.Div','bFdBaj',{},{},[
+['zul.wgt.Label','bFdBbj',{id:'idcasillapeque',zclass:'casillapeque',prolog:' ',value:' 1'},{},[]]]],
+['zul.wgt.Div','bFdBcj',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBdj',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBej',{},{},[
+['zul.wgt.Div','bFdBfj',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBgj',{id:'NOMHMAY',$$0onError:true,$onChange:true,$$1onChange:true,$onDoubleClick:true,listeners:{onKeyDown:function(event){
+var kc=event.keyCode;if((kc>=46 && kc<=90) || (kc>=96 && kc<=105) || kc==13 || kc==8 ){ var tb=zk.Widget.$(this);tb.setDisabled(true);zAu.send(new zk.Event(tb,'onUser'));setTimeout(function() {tb.setDisabled(false);},250);}
+}},domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'estiloAlfabetico',style:'cursor: default; ',tooltiptext:'Nombre del descendiente',prolog:' ',readonly:true,maxlength:15,cols:15},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdBhj',{sclass:'boton',style:'margin:-0.32em 0em 0em 0em;'},{},[
+['zul.wgt.Button','bFdBij',{id:'botonlv',$onClick:true,sclass:'botonLanzaVentana z-velo',prolog:' ',image:'https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/img/epi1.png',autodisable:'self'},{},[],'trendy']]]]]]]]],
+['zul.wgt.Div','bFdBjj',{sclass:'divAncho9'},{},[
+['zk.Macro','bFdBkj',{id:'casnifhmay',sclass:'estiloAlfanumerico',style:'margin:0em 0.42em 0em 0em;',prolog:' '},{},[
+['zul.box.Hlayout','bFdBlj',{},{},[
+['zul.wgt.Div','bFdBmj',{},{},[
+['zul.wgt.Label','bFdBnj',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBoj',{},{},[
+['zul.wgt.Label','bFdBpj',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBqj',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBrj',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBsj',{},{},[
+['zul.wgt.Div','bFdBtj',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBuj',{id:'NIFHMAY',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr estiloAlfanumerico',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'NIF:',prolog:' ',disabled:true,maxlength:9,cols:9},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBvj',{sclass:'divAncho9'},{},[
+['zk.Macro','bFdBwj',{id:'casfnachmay',style:'margin:0em 0m 0em 0em;',prolog:' '},{},[
+['zul.box.Hlayout','bFdBxj',{},{},[
+['zul.wgt.Div','bFdByj',{},{},[
+['zul.wgt.Label','bFdBzj',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdB_k',{},{},[
+['zul.wgt.Label','bFdB0k',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdB1k',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdB2k',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdB3k',{},{},[
+['zul.wgt.Div','bFdB4k',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdB5k',{id:'FNACHMAY',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr ',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'Fecha de   nacimiento:',prolog:' ',disabled:true,maxlength:10,cols:10},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdB6k',{sclass:'divAncho6'},{},[
+['zk.Macro','bFdB7k',{id:'casminushmay',style:'margin:0em 0em 0em 0em;',prolog:' '},{},[
+['zul.box.Hlayout','bFdB8k',{},{},[
+['zul.wgt.Div','bFdB9k',{},{},[
+['zul.wgt.Label','bFdBak',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBbk',{},{},[
+['zul.wgt.Label','bFdBck',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBdk',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBek',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBfk',{},{},[
+['zul.wgt.Div','bFdBgk',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBhk',{id:'MINUSHMAY',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr estiloAlfanumerico',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'Clave de  discapacidad:',prolog:' ',disabled:true,maxlength:1,cols:2},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBik',{sclass:'divAncho4'},{},[
+['zul.wgt.Checkbox','bFdBjk',{id:'bfalhmay',$onCheck:true,$$1onCheck:true,style:'margin:0em 0em 0em 1em;',tooltiptext:'Fallecido\nen 2025',prolog:' ',disabled:true},{},[]]]],
+['zul.wgt.Div','bFdBkk',{sclass:'divAncho12'},{},[
+['zk.Macro','bFdBlk',{id:'casvolrenhmay',sclass:'estiloAlfanumerico',style:'margin:0em 0em 0em 0em ',prolog:' '},{},[
+['zul.box.Hlayout','bFdBmk',{},{},[
+['zul.wgt.Div','bFdBnk',{},{},[
+['zul.wgt.Label','bFdBok',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBpk',{},{},[
+['zul.wgt.Label','bFdBqk',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBrk',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBsk',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBtk',{},{},[
+['zul.wgt.Div','bFdBuk',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBvk',{id:'VOLRENHMAY',$$0onError:true,$onChange:true,$$1onChange:true,overrides:{setValue:
+ function (a,b) {this.$setValue(a,b); /*call the original method*/try{if(arguments.length>1 && arguments[1]==true ){jq(this).data('old-value',quitarPuntos(arguments[0]));}}catch(e){console.error(e);}}
+},domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr estiloAlfanumerico',tooltiptext:'Volumen de rentas:',prolog:' ',disabled:true,cols:14},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBwk',{sclass:'divAncho4'},{},[
+['zul.wgt.Button','bFdBxk',{id:'btnBorrarHMay',$onClick:true,style:'margin:0em 0em 0em 0em;',tooltiptext:'Borrar',prolog:' ',image:'https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/img//cancel.png',autodisable:'self'},{},[],'trendy']]]]]]]]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBje',{id:'divpanel5',prolog:' '},{},[
+['zul.wnd.Panel','bFdBke',{id:'panelAscendientes',$$0onMinimize:true,$$0onZIndex:true,$$0onMove:true,$onClose:true,$$0onMaximize:true,$$0onSize:true,prolog:' ',border:'normal',_nativebar:true},{},[
+['zul.wgt.Caption','bFdBle',{id:'caption6',sclass:'textoCabeceraPanel'},{},[
+['zk.Macro','bFdBme',{prolog:' '},{},[
+['zul.wgt.Div','bFdBne',{},{},[
+['zul.wgt.Div','bFdBoe',{id:'h1',visible:false,prolog:' '},{},[
+['zul.wgt.Div','bFdBpe',{id:'h1noaccesible',sclass:'tituloPanel',prolog:' '},{},[
+['zul.box.Box','bFdBqe',{width:'99%',prolog:' ',cssflex:false,_sizes:['86%','14%']},{},[
+['zul.box.Hlayout','bFdBre',{},{},[
+['zul.wgt.Label','bFdBse',{id:'tituloPanelLetra',sclass:'tituloPanelTit'},{},[]],
+['zul.wgt.Label','bFdBte',{id:'tituloPanelTit',hflex:'1',sclass:'tituloPanelTit'},{},[]]]],
+['zul.wgt.Label','bFdBue',{id:'tituloPanelPag',hflex:'1',sclass:'tituloPanelPag'},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdBve',{id:'h1accesible',prolog:' '},{},[
+['zul.wgt.Html','bFdBwe',{id:'htmlh1accesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdBxe',{id:'h1dlg',visible:false,zclass:'captiondlg',prolog:' '},{},[
+['zul.wgt.Div','bFdBye',{id:'h1dlgnoaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.box.Box','bFdBze',{width:'99%',prolog:' ',cssflex:false,_sizes:['85%','5%','10%']},{},[
+['zul.wgt.Label','bFdB_f',{id:'tituloPanelTitDlg',sclass:'vTitDialogo',multiline:true,value:'T\xEDtulo de la ventana por defecto para determinar anchura de ventana'},{},[]],
+['zul.wgt.Separator','bFdB0f',{orient:'horizontal'},{},[]],
+['zul.wgt.Label','bFdB1f',{id:'tituloPanelMod',sclass:'vModDialogo',multiline:true},{},[]]],'horizontal']]],
+['zul.wgt.Div','bFdB2f',{id:'h1dlgaccesible',prolog:' '},{},[
+['zul.wgt.Html','bFdB3f',{id:'htmlh1dlgaccesible',prolog:' '},{},[]]]]]],
+['zul.wgt.Div','bFdB4f',{id:'h2',prolog:' '},{},[
+['zul.wgt.Div','bFdB5f',{id:'h2noaccesible',sclass:'textoCabeceraPanel',prolog:' '},{},[
+['zul.wgt.Div','bFdB6f',{prolog:' '},{},[
+['zul.box.Hlayout','bFdB7f',{style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdB8f',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Div','bFdB9f',{width:'90%',prolog:' '},{},[
+['zul.wgt.Label','bFdBaf',{id:'subtitulo1',sclass:'vTitDialogo',prolog:' ',value:'Ascendientes mayores de 65 a\xF1os o con discapacidad'},{},[]]]]]]]],
+['zul.box.Hlayout','bFdBbf',{id:'hl2',visible:false,style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdBcf',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdBdf',{id:'subtitulo2',visible:false,sclass:'vTitDialogo',prolog:' '},{},[]]]]]],
+['zul.box.Hlayout','bFdBef',{id:'hl3',visible:false,style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Div','bFdBff',{hflex:'1',sclass:'divtexto'},{},[
+['zul.wgt.Label','bFdBgf',{id:'subtitulo3',visible:false,sclass:'vTitDialogo',prolog:' '},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdBhf',{id:'h2accesible',visible:false,prolog:' '},{},[
+['zul.wgt.Html','bFdBif',{id:'htmlh2accesible',prolog:' '},{},[]]]]]]]]]]]],
+['zul.wnd.Panelchildren','bFdBjf',{},{},[
+['zul.wgt.Div','bFdBkf',{sclass:'panel992',prolog:' '},{},[
+['zul.wgt.Div','bFdBlf',{style:'vertical-align:bottom',prolog:' '},{},[
+['zul.box.Hlayout','bFdBmf',{sclass:'contenedor960',prolog:' '},{},[
+['zul.wgt.Div','bFdBnf',{hflex:'1'},{},[
+['zul.wgt.Label','bFdBof',{id:'mayores65a',sclass:'vtexto',prolog:' ',value:'Ascendientes mayores de 65 a\xF1os o con discapacidad que conviven con el/los contribuyente/s al menos la mitad del per\xEDodo impositivo'},{},[]]]]]],
+['zul.wgt.Div','bFdBpf',{id:'divascendientes',prolog:' '},{},[
+['zk.Macro','bFdByk',{id:'ascendiente01',width:'90%'},{},[
+['zul.wgt.Div','bFdBzk',{},{},[
+['zul.box.Hlayout','bFdB_l',{id:'hbtitulos',sclass:'contenedor992',style:'margin-left:auto!important;margin-right:auto!important;',prolog:' '},{},[
+['zul.wgt.Div','bFdB0l',{id:'lb_dnias',sclass:'divAncho9',style:'width: 9.3em !important'},{},[
+['zul.wgt.Label','bFdB1l',{id:'ASC_NIF',sclass:'vtextodlg',style:'font-size: 14px !important; margin:1.5em 0em 0em 1.2em;',prolog:' ',multiline:true,value:'NIF'},{},[]]]],
+['zul.wgt.Div','bFdB2l',{sclass:'divAncho18 divtxt'},{},[
+['zul.wgt.Label','bFdB3l',{id:'ASC_NOM',sclass:'vtextodlg',style:'font-size: 14px !important;',prolog:' ',multiline:true,value:'Apellidos y nombre:'},{},[]]]],
+['zul.wgt.Div','bFdB4l',{sclass:'divAncho7 divtxt',style:'margin:0em 0em 0em 0em;'},{},[
+['zul.wgt.Label','bFdB5l',{id:'ASC_FNAC',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Fecha de \n nacimiento'},{},[]]]],
+['zul.wgt.Div','bFdB6l',{sclass:'divAncho7 divtxt',style:'margin:0em 0.42em 0em 0em;'},{},[
+['zul.wgt.Label','bFdB7l',{id:'ASC_FALL',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Fallecido\nen 2025'},{},[]]]],
+['zul.wgt.Div','bFdB8l',{sclass:'divAncho5 divtxt'},{},[
+['zul.wgt.Label','bFdB9l',{id:'ASC_VINAS',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Vinculaci\xF3n'},{},[]]]],
+['zul.wgt.Div','bFdBal',{sclass:'divAncho5 divtxt'},{},[
+['zul.wgt.Label','bFdBbl',{id:'ASC_MINUS',sclass:'vtextodlg',style:'font-size: 14px !important; margin:1.5em 0em 0em 0em;',prolog:' ',multiline:true,value:'Clave de \ndiscapacidad'},{},[]]]],
+['zul.wgt.Div','bFdBcl',{sclass:'divAncho5 divtxt'},{},[
+['zul.wgt.Label','bFdBdl',{id:'ASC_CONVAS',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Convivencia'},{},[]]]],
+['zul.wgt.Div','bFdBel',{sclass:'divAncho4 divtxt'},{},[
+['zul.wgt.Label','bFdBfl',{id:'ASC_BORRAR',sclass:'vtextodlg',style:'font-size: 14px !important',prolog:' ',multiline:true,value:'Borrar'},{},[]]]]]],
+['zul.box.Hlayout','bFdBgl',{id:'hbdatos',sclass:'contenedor992',style:'margin-left:auto!important;margin-right:auto!important;',prolog:' '},{},[
+['zul.wgt.Div','bFdBhl',{id:'divdnias',sclass:'divAncho9',style:'width: 9.3em !important'},{},[
+['zk.Macro','bFdBil',{id:'vendnias',sclass:'divAncho9',prolog:' '},{},[
+['zul.box.Hlayout','bFdBjl',{},{},[
+['zul.wgt.Div','bFdBkl',{},{},[
+['zul.wgt.Label','bFdBll',{id:'idcasilla',visible:false,$onClick:true,sclass:'casilla',style:'cursor: pointer;',prolog:' ',value:' 1'},{},[]]]],
+['zul.wgt.Div','bFdBml',{},{},[
+['zul.wgt.Label','bFdBnl',{id:'idcasillapeque',zclass:'casillapeque',prolog:' ',value:' 1'},{},[]]]],
+['zul.wgt.Div','bFdBol',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBpl',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBql',{},{},[
+['zul.wgt.Div','bFdBrl',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBsl',{id:'DNIAS',$$0onError:true,$onChange:true,$$1onChange:true,$onDoubleClick:true,listeners:{onKeyDown:function(event){
+var kc=event.keyCode;if((kc>=46 && kc<=90) || (kc>=96 && kc<=105) || kc==13 || kc==8 ){ var tb=zk.Widget.$(this);tb.setDisabled(true);zAu.send(new zk.Event(tb,'onUser'));setTimeout(function() {tb.setDisabled(false);},250);}
+}},domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'estiloAlfanumerico',style:'cursor: default; ',tooltiptext:'NIF:',prolog:' ',readonly:true,maxlength:9,cols:8},{},[]]]]]]]]]],
+['zul.wgt.Div','bFdBtl',{sclass:'boton',style:'margin:-0.32em 0em 0em 0em;'},{},[
+['zul.wgt.Button','bFdBul',{id:'botonlv',$onClick:true,sclass:'botonLanzaVentana z-velo',prolog:' ',image:'https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/img/epi1.png',autodisable:'self'},{},[],'trendy']]]]]]]]],
+['zul.wgt.Div','bFdBvl',{sclass:'divAncho18'},{},[
+['zk.Macro','bFdBwl',{id:'casapenom_asc',sclass:'estiloAlfanumerico',prolog:' '},{},[
+['zul.box.Hlayout','bFdBxl',{},{},[
+['zul.wgt.Div','bFdByl',{},{},[
+['zul.wgt.Label','bFdBzl',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdB_m',{},{},[
+['zul.wgt.Label','bFdB0m',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdB1m',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdB2m',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdB3m',{},{},[
+['zul.wgt.Div','bFdB4m',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdB5m',{id:'APENOM_ASC',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr estiloAlfabetico',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'Apellidos y nombre:',prolog:' ',disabled:true,maxlength:60,cols:28},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdB6m',{sclass:'divAncho7'},{},[
+['zk.Macro','bFdB7m',{id:'casanoas',prolog:' '},{},[
+['zul.box.Hlayout','bFdB8m',{},{},[
+['zul.wgt.Div','bFdB9m',{},{},[
+['zul.wgt.Label','bFdBam',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBbm',{},{},[
+['zul.wgt.Label','bFdBcm',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBdm',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBem',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBfm',{},{},[
+['zul.wgt.Div','bFdBgm',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBhm',{id:'ANOAS',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr estiloAlfanumerico',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'Fecha de   nacimiento:',prolog:' ',disabled:true,maxlength:10,cols:6},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBim',{sclass:'divAncho7'},{},[
+['zk.Macro','bFdBjm',{id:'casfallas',prolog:' '},{},[
+['zul.box.Hlayout','bFdBkm',{},{},[
+['zul.wgt.Div','bFdBlm',{},{},[
+['zul.wgt.Label','bFdBmm',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBnm',{},{},[
+['zul.wgt.Label','bFdBom',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBpm',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBqm',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBrm',{},{},[
+['zul.wgt.Div','bFdBsm',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBtm',{id:'FALLAS',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr ',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'Fallecido en 2025:',prolog:' ',disabled:true,maxlength:10,cols:6},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBum',{sclass:'divAncho5'},{},[
+['zk.Macro','bFdBvm',{id:'casvinas',prolog:' '},{},[
+['zul.box.Hlayout','bFdBwm',{},{},[
+['zul.wgt.Div','bFdBxm',{},{},[
+['zul.wgt.Label','bFdBym',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBzm',{},{},[
+['zul.wgt.Label','bFdB_n',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdB0n',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdB1n',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdB2n',{},{},[
+['zul.wgt.Div','bFdB3n',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdB4n',{id:'VINAS',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr estiloAlfanumerico',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'Vinculaci\xF3n:',prolog:' ',disabled:true,maxlength:1,cols:2},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdB5n',{sclass:'divAncho5'},{},[
+['zk.Macro','bFdB6n',{id:'caspctminas',prolog:' '},{},[
+['zul.box.Hlayout','bFdB7n',{},{},[
+['zul.wgt.Div','bFdB8n',{},{},[
+['zul.wgt.Label','bFdB9n',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBan',{},{},[
+['zul.wgt.Label','bFdBbn',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBcn',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBdn',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBen',{},{},[
+['zul.wgt.Div','bFdBfn',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBgn',{id:'PCTMINAS',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr estiloAlfanumerico',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'Clave de  discapacidad:',prolog:' ',disabled:true,maxlength:1,cols:2},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBhn',{sclass:'divAncho5'},{},[
+['zk.Macro','bFdBin',{id:'casconvas',prolog:' '},{},[
+['zul.box.Hlayout','bFdBjn',{},{},[
+['zul.wgt.Div','bFdBkn',{},{},[
+['zul.wgt.Label','bFdBln',{id:'idcasilla',visible:false,sclass:'casilla',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBmn',{},{},[
+['zul.wgt.Label','bFdBnn',{id:'idcasillapeque',visible:false,zclass:'casillapeque',prolog:' '},{},[]]]],
+['zul.wgt.Div','bFdBon',{id:'datos2',sclass:'datos'},{},[
+['zk.Macro','bFdBpn',{id:'casillaext',prolog:' '},{},[
+['zul.box.Hlayout','bFdBqn',{},{},[
+['zul.wgt.Div','bFdBrn',{id:'divPrincipalCasillaEx'},{},[
+['zul.inp.Textbox','bFdBsn',{id:'CONVAS',$$0onError:true,$onChange:true,$$1onChange:true,domExtraAttrs:{'autocomplete':'off'
+,'onMouseOver':'showTooltip(event)'
+,'onMouseOut':'hideTooltip()'
+,'aria-labelledby':''
+},sclass:'campoCerradoMtr estiloCadnum2',style:'font-size:14px !important; font-family:Arial,Sans-serif!important;',tooltiptext:'Convivencia:',prolog:' ',disabled:true,maxlength:1,cols:2},{},[]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBtn',{sclass:'divAncho4'},{},[
+['zul.wgt.Button','bFdBun',{id:'btnBorrarAS',$onClick:true,tooltiptext:'Borrar',prolog:' ',image:'https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/img//cancel.png',autodisable:'self'},{},[],'trendy']]]]]]]]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdBqf',{id:'layoutPrincipalSur',sclass:'barraAcciones',prolog:' ',align:'center'},{},[
+['zul.wgt.Button','bFdBrf',{id:'botonAceptar',$onClick:true,width:'12.08em',height:'2.67em',sclass:'boton32x145',tooltiptext:'Aceptar',prolog:' ',label:'Aceptar',image:'https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/img//apply.png',autodisable:'self'},{},[],'trendy'],
+['zul.wgt.Div','bFdBsf',{id:'divVideos',visible:false,style:'display:inline-block;',prolog:' '},{},[
+['zul.wgt.Button','bFdBtf',{id:'btnVideos',style:'display:inline-block; height: 31px!important;',tooltiptext:'Ver v\xEDdeos',prolog:' ',image:'https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/img//videos_16.png',autodisable:'self'},{},[],'trendy']]]]]]]]]]]]]]]]]]],
+['zul.utl.Script','bFdBmp',{},{},[]]]]]],
+['zul.wgt.Div','bFdBw',{id:'divPresentacion',height:'100%',sclass:'bloquePresentacion',prolog:' '},{},[
+['zul.wgt.Include','bFdBx',{id:'includePresentacion',visible:false,prolog:' ',enclosingTag:'div'},{},[]]]]]],
+['zul.wgt.Include','bFdBy',{id:'despuesDeclaracion',prolog:' ',enclosingTag:'div'},{},[]]]]]],
+['zhtml.Text','bFdB42',{value:'\n\t',idRequired:true},{},[]]]],
+['zhtml.Widget','AEAT_pie',{id:'AEAT_pie',prolog:'<div id=\"AEAT_pie\">',epilog:'<\/div>'},{},[
+['zhtml.Text','bFdB62',{value:'\n\t\t',idRequired:true},{},[]],
+['zhtml.Widget','bFdB72',{prolog:'<div id=\"bFdB72\">',epilog:'<\/div>'},{},[]],
+['zhtml.Text','bFdB82',{value:'\n\t',idRequired:true},{},[]]]],
+['zul.utl.Script','bFdB92',{content:function(){
+
+		 
+			zAu.send(new zk.Event(zk.Widget.$(jq('$ventanaPrincipal')[0]),'onCheckBackEdge',""));
+			
+	
+}},{},[]]]],
+['zul.wnd.Window','bFdBop',{id:'winFicheroDF',$$onMinimize:false,$$0onMinimize:true,$$onZIndex:false,$$0onZIndex:true,$$onMove:false,$$0onMove:true,$onClose:true,$$onOpen:false,$$onMaximize:false,$$0onMaximize:true,$$onSize:false,$$0onSize:true,$ZKAUS$:true,hflex:'min',sclass:'vmodal',style:'max-width:99%!important;max-height:99%!important;',prolog:' ',title:' ',border:'normal',mode:'modal',_nativebar:true},{},[
+['zul.utl.Style','bFdBpp',{visible:false,content:'\n\t\t\t \n\t\t\t          .z-icon-code { \n\t\t\t        \t  color: #06c; \n\t\t\t          } \n\t\t\t\n\t\t'},{},[]],
+['zul.wgt.Div','bFdBqp',{id:'divppaldialogos',$ZKAUS$:true,width:'100%',height:'100%',sclass:'vboxDialogo',$ZKBINDER$:true},{},[
+['zul.wnd.Panel','bFdBrp',{id:'panelID',$$0onMinimize:true,$$0onZIndex:true,$$0onMove:true,$onClose:true,$$0onMaximize:true,$$0onSize:true,width:'30em',sclass:'paneldlg',prolog:' ',_nativebar:true},{},[
+['zul.wgt.Caption','bFdBsp',{id:'ctitulo',sclass:'textoCabeceraPanel'},{},[
+['zul.wgt.Div','bFdBtp',{sclass:'vTitDialogo',style:'vertical-align:bottom;',prolog:' '},{},[
+['zul.wgt.Label','bFdBup',{id:'lbtitulo',sclass:'vTitDialogo',prolog:' ',value:'Renta Web 2025 (Versi\xF3n OPEN).'},{},[]]]]]],
+['zul.wnd.Panelchildren','bFdBvp',{sclass:'paneldlg',style:'padding:0.42em;'},{},[
+['zul.wgt.Div','bFdBwp',{id:'divcuerpo',sclass:'modalpanel',prolog:' '},{},[
+['zul.box.Hlayout','bFdBxp',{sclass:'contenedordlg',prolog:' '},{},[
+['zul.wgt.Div','bFdByp',{},{},[
+['zul.wgt.Div','bFdBzp',{style:'padding:0em 0em 0em 0em',prolog:' '},{},[
+['zul.wgt.Label','bFdB_q',{id:'txtVersiona',sclass:'vtextodlg',prolog:' '},{},[]],
+['zul.wgt.Label','bFdB0q',{id:'txtVersion',sclass:'vtextodlg',prolog:' ',value:' - Versi\xF3n: 1.19  (OPEN)'},{},[]]]]]]]]]]]]]],
+['zul.wgt.Div','bFdB1q',{id:'contenedorErroresImportacionXML',prolog:' '},{},[
+['zk.Macro','bFdB2q',{id:'panelErrores100ImportacionXML',visible:false,prolog:' '},{},[
+['zul.utl.Script','bFdB3q',{},{},[]],
+['zul.wgt.Div','bFdB4q',{domExtraAttrs:{'role':'log'
+,'aria-live':'assertive'
+,'aria-atomic':'true'
+,'aria-relevant':'additions'
+}},{},[
+['zul.wgt.Div','bFdB5q',{prolog:' '},{},[
+['zul.wnd.Panel','bFdB6q',{id:'panelErrores',$$0onMinimize:true,$$0onZIndex:true,$$0onMove:true,$onClose:true,$$0onMaximize:true,$$0onSize:true,zclass:'tablaErroresPanel',prolog:' ',border:'rounded+',_nativebar:true},{},[
+['zul.wgt.Caption','bFdB7q',{label:'Errores y avisos'},{},[]],
+['zul.wnd.Panelchildren','bFdB8q',{},{},[
+['zul.wgt.Div','bFdB9q',{id:'divXLS',visible:false,style:'overflow: hidden; margin-bottom: 10px;',prolog:' '},{},[
+['zul.wgt.Button','bFdBaq',{id:'btnListadoErrXLS',$onClick:true,style:'float: right !important;',prolog:' ',label:'Descargar listado de errores',autodisable:'self'},{},[],'trendy']]],
+['zul.grid.Grid','bFdBbq',{id:'tablaErrores',$$onDataLoading:true,$onDataLoading:true,$$0onDataLoading:true,$onTopPad:false,$$0onTopPad:true,$$onInnerWidth:false,$$0onInnerWidth:true,$$onRender:true,$$0onRender:true,$$onScrollPos:false,$$0onScrollPos:true,$$onPageSize:true,$$0onPageSize:true,zclass:'tablaErrores',prolog:' ',_nativebar:true,_topPad:0,emptyMessage:null,_totalSize:0,_offset:0},{},[
+['zul.grid.Columns','bFdBcq',{$$onColSize:false,sizable:true},{},[
+['zul.grid.Column','bFdBsq',{$onSort:true,$$0onSort:true,width:'10%',sclass:'cabeceraTablaErrores',tooltiptext:'Tipo',label:'Tipo',align:'center'},{},[]],
+['zul.grid.Column','bFdBtq',{$onSort:true,$$0onSort:true,width:'10%',sclass:'cabeceraTablaErrores',tooltiptext:'N\xFAmero l\xEDnea',label:'N\xFAmero l\xEDnea',align:'center'},{},[]],
+['zul.grid.Column','bFdBuq',{$onSort:true,$$0onSort:true,width:'10%',sclass:'cabeceraTablaErrores',tooltiptext:'C\xF3digo',label:'C\xF3digo',align:'center'},{},[]],
+['zul.grid.Column','bFdBvq',{$onSort:true,$$0onSort:true,width:'50%',sclass:'cabeceraTablaErrores',tooltiptext:'Descripci\xF3n',label:'Descripci\xF3n',align:'left'},{},[]],
+['zul.grid.Column','bFdBwq',{$onSort:true,$$0onSort:true,width:'10%',sclass:'cabeceraTablaErrores',tooltiptext:'Ir al detalle',label:'Ir al detalle',align:'center'},{},[]],
+['zul.grid.Column','bFdBxq',{$onSort:true,$$0onSort:true,width:'10%',sclass:'cabeceraTablaErrores',tooltiptext:'Le\xEDdo / Ocultar',label:'Le\xEDdo / Ocultar',align:'center'},{},[]]]]]],
+['zul.wgt.Div','bFdBdq',{prolog:' '},{},[
+['zul.wgt.Button','bFdBeq',{id:'btnListadoErr',visible:false,$onClick:true,prolog:' ',label:'Descargar listado de errores',autodisable:'self'},{},[],'trendy'],
+['zul.wgt.Label','bFdBfq',{id:'msgAdvertencia',visible:false,zclass:'tablaErrores',prolog:' ',value:'(*)Las Advertencias informan de un posible error u omisi\xF3n advirtiendo de que podr\xEDa requerirse su subsanaci\xF3n mediante requerimiento por parte de la Administraci\xF3n Tributaria.'},{},[]]]],
+['zul.wgt.Div','bFdBgq',{id:'ocultaWarmInfodiv',sclass:'ocultaWarmInfodiv',prolog:' '},{},[
+['zul.wgt.Label','bFdBhq',{id:'lbContadorOcultos',prolog:' '},{},[]],
+['zul.wgt.Button','bFdBiq',{id:'btnResetOculto',$onClick:true,prolog:' ',label:'Ver avisos ocultos',autodisable:'self'},{},[],'trendy']]]]]]]]]]]]]]],
+['zul.wgt.Groupbox','bFdBjq',{width:'100%',sclass:'vBotonesDialogo',prolog:' ',contentStyle:'border: 0em; height:100%;',closable:false,_nativebar:true},{},[
+['zul.box.Hlayout','bFdBkq',{},{},[
+['zul.wgt.Button','bFdBlq',{id:'btDecVacia',$onClick:true,label:'Nueva declaraci\xF3n',autodisable:'self'},{},[],'trendy'],
+['zul.wgt.Button','bFdBmq',{id:'btSelFich',visible:false,label:'Seleccionar fichero DFP',autodisable:'self',upload:'true,maxsize=5000'},{},[],'trendy'],
+['zul.wgt.Div','bFdBnq',{id:'divcargarxml'},{},[
+['zk.Macro','bFdBoq',{id:'compCargaDecXML2',$onClick:true,style:'display: inline;',prolog:' '},{},[
+['zul.wgt.Button','bFdBpq',{id:'boton',$onClick:true,$onOK:true,sclass:'cmd__cargaDeclaracion',tooltiptext:'Cargar datos de trabajo (.ses)',label:'Cargar',image:'https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/img/report_project2.gif',autodisable:'self'},{},[],'trendy']]]]],
+['zk.Macro','bFdBqq',{id:'importacionXML',$onClick:true},{},[
+['zul.wgt.Button','bFdBrq',{id:'boton',visible:false,$onClick:true,$onOK:true,sclass:'cmd__importacionXML',tooltiptext:'Importar fichero XML Renta',label:'Importar XML',image:'https://www2.agenciatributaria.gob.es/static_files/common/internet/dep/aplicaciones/img/importar_new.png',autodisable:'self'},{},[],'trendy']]]]]]]]]]]]],9,
+['script','["cambiaUrlsIdioma();"]',
+'script','["function initComboTradV2(id){try{var botonCombo = document.getElementById(id + \'-btn\');if (botonCombo){\\tbotonCombo.click();}var elto = document.getElementById(id + \'-real\');var eltoPP = document.getElementById(id + \'-pp\');if (elto){   if (elto.getAttribute(\'inicializado\') != \'true\'){       elto.setAttribute(\'inicializado\',\'true\');       if (eltoPP){             zAu.send(new zk.Event(zk.$(id),\'onComboAAInit\',{\'datos\': elto.outerHTML , \'combo\' : eltoPP.outerHTML}));       }else{             zAu.send(new zk.Event(zk.$(id),\'onComboAAInit\',{\'datos\': elto.outerHTML}));       }   }}var listaCombo = document.getElementById(id + \'-pp\');if (listaCombo){\\tlistaCombo.style.display = \'none\';}} catch (e) {\\tconsole.log(\\"initComboTradV2: \\",e);}} jq(\\"html\\").attr(\\"lang\\",\\"es\\"); jq.fn.setAdmiteConjuntoCaracteresExtendido(true); llamadaservirITB(); "]',
+'script','["reemplazarContenidoNav(jq(\'#bFdBo0 .tablaErrores-paging-top nav\'), \'div\');"]',
+'script','["jq(\'#bFdBo0 .tablaErrores-body\').prepend(\\"<span id=\'descripTablaErroresAvisos\' class=\'oculto z-label\'>En cada fila de la siguiente tabla encontrará los errores o avisos encontrados en la declaración<\\/span>\\");"]',
+'script','["jq(\'#bFdBo0 .tablaErrores-body table\').attr(\'aria-describedby\', \'descripTablaErroresAvisos\');"]',
+'script','["jq(\'#bFdBo0 table\').attr(\'role\', \'presentation\');"]',
+'script','["jq(\'#bFdBo0 .tablaErrores-body table\').attr(\'tabindex\', \'0\');"]',
+'script','["jq(\'#bFdBo0 .tablaErrores-body table td\').attr(\'tabindex\', \'0\');"]',
+'script','["jq(\'#bFdBo0 .tablaErrores-body table\').prepend(\\"<caption class=\'oculto\'>Tabla de errores y avisos<\\/caption>\\");"]',
+'script','["try{jq(\'th.z-columns-bar\').remove();}catch(e){console.group(\'=== ERROR EN BORRADO COLUMNA VACIA ===\');console.error(\'Nombre del error:\', e.name);console.error(\'Mensaje:\', e.message);console.error(\'Stack trace:\', e.stack);console.groupEnd();}"]',
+'script','["try{document.getElementById(\'bFdBy1\').setAttribute(\'accesskey\',\'h\');}catch(e){\\/*ignorar*\\/};"]',
+'script','["try{document.getElementById(\'bFdBz1\').setAttribute(\'accesskey\',\'j\');}catch(e){\\/*ignorar*\\/};"]',
+'script','["try{document.getElementById(\'bFdB22\').setAttribute(\'accesskey\',\'k\');}catch(e){\\/*ignorar*\\/};"]',
+'script','["try{document.getElementById(\'bFdB32\').setAttribute(\'accesskey\',\'l\');}catch(e){\\/*ignorar*\\/};"]',
+'script','["jq(window).ready(function(){sustituirContenidoElemento(\\"AEAT_header\\", VARIABLE_CABACERA);});"]',
+'script','["jq(window).ready(function(){sustituirContenidoElemento(\\"AEAT_pie\\", VARIABLE_PIE)});"]',
+'script','["jq(\'body\').addClass(\'rentabody\')"]',
+'script','["cargaDinamicaLibreria(\'\\/static_files\\/common\\/internet\\/script\\/sede06.js\');"]',
+'script','["cargaDinamicaLibreria(\'\\/static_files\\/common\\/dep\\/dit\\/idAdicional\\/idAdicional.js\');"]',
+'clientInfo','["z_Sq1LEN7kk7zAu12GDGD7Mg"]',
+'script','["ponFormateos();"]',
+'script','["ponFormateos();"]',
+'script','["ponFormateos();"]',
+'script','["try{\\tif (jq(\'#bFdBug\')[0] != undefined){\\t\\tjq(\'#bFdBug\')[0].setAttribute(\'readonly\',true);\\t\\tjq(\'#bFdBug\')[0].classList.add(\'z-textbox-readonly\');\\t}}catch (err){ \\tconsole.log(\'Error al poner negro el texto multicapa (bFdBug) : \' + err.message);}"]',
+'script','["try{\\tif (jq(\'#bFdBgj\')[0] != undefined){\\t\\tjq(\'#bFdBgj\')[0].setAttribute(\'readonly\',true);\\t\\tjq(\'#bFdBgj\')[0].classList.add(\'z-textbox-readonly\');\\t}}catch (err){ \\tconsole.log(\'Error al poner negro el texto multicapa (bFdBgj) : \' + err.message);}"]',
+'script','["try{\\tif (jq(\'#bFdBsl\')[0] != undefined){\\t\\tjq(\'#bFdBsl\')[0].setAttribute(\'readonly\',true);\\t\\tjq(\'#bFdBsl\')[0].classList.add(\'z-textbox-readonly\');\\t}}catch (err){ \\tconsole.log(\'Error al poner negro el texto multicapa (bFdBsl) : \' + err.message);}"]',
+'cfmClose','["Los datos que haya introducido podrían no guardarse."]',
+'script','["reemplazarContenidoNav(jq(\'#bFdBbq .tablaErrores-paging-top nav\'), \'div\');"]',
+'script','["jq(\'#bFdBbq .tablaErrores-body\').prepend(\\"<span id=\'descripTablaErroresAvisos\' class=\'oculto z-label\'>En cada fila de la siguiente tabla encontrará los errores o avisos encontrados en la declaración<\\/span>\\");"]',
+'script','["jq(\'#bFdBbq .tablaErrores-body table\').attr(\'aria-describedby\', \'descripTablaErroresAvisos\');"]',
+'script','["jq(\'#bFdBbq table\').attr(\'role\', \'presentation\');"]',
+'script','["jq(\'#bFdBbq .tablaErrores-body table\').attr(\'tabindex\', \'0\');"]',
+'script','["jq(\'#bFdBbq .tablaErrores-body table td\').attr(\'tabindex\', \'0\');"]',
+'script','["jq(\'#bFdBbq .tablaErrores-body table\').prepend(\\"<caption class=\'oculto\'>Tabla de errores y avisos<\\/caption>\\");"]',
+'script','["try{jq(\'th.z-columns-bar\').remove();}catch(e){console.group(\'=== ERROR EN BORRADO COLUMNA VACIA ===\');console.error(\'Nombre del error:\', e.name);console.error(\'Mensaje:\', e.message);console.error(\'Stack trace:\', e.stack);console.groupEnd();}"]',
+'script','["try{\\tif (jq(\'#bFdBug\')[0] != undefined){\\t\\tjq(\'#bFdBug\')[0].setAttribute(\'readonly\',true);\\t\\tjq(\'#bFdBug\')[0].classList.add(\'z-textbox-readonly\');\\t}}catch (err){ \\tconsole.log(\'Error al poner negro el texto multicapa (bFdBug) : \' + err.message);}"]',
+'script','["try{\\tif (jq(\'#bFdBgj\')[0] != undefined){\\t\\tjq(\'#bFdBgj\')[0].setAttribute(\'readonly\',true);\\t\\tjq(\'#bFdBgj\')[0].classList.add(\'z-textbox-readonly\');\\t}}catch (err){ \\tconsole.log(\'Error al poner negro el texto multicapa (bFdBgj) : \' + err.message);}"]',
+'script','["try{\\tif (jq(\'#bFdBsl\')[0] != undefined){\\t\\tjq(\'#bFdBsl\')[0].setAttribute(\'readonly\',true);\\t\\tjq(\'#bFdBsl\')[0].classList.add(\'z-textbox-readonly\');\\t}}catch (err){ \\tconsole.log(\'Error al poner negro el texto multicapa (bFdBsl) : \' + err.message);}"]',
+'script','["try{\\tif (jq(\'#bFdBug\')[0] != undefined){\\t\\tjq(\'#bFdBug\')[0].setAttribute(\'readonly\',true);\\t\\tjq(\'#bFdBug\')[0].classList.add(\'z-textbox-readonly\');\\t}}catch (err){ \\tconsole.log(\'Error al poner negro el texto multicapa (bFdBug) : \' + err.message);}"]',
+'script','["try{\\tif (jq(\'#bFdBgj\')[0] != undefined){\\t\\tjq(\'#bFdBgj\')[0].setAttribute(\'readonly\',true);\\t\\tjq(\'#bFdBgj\')[0].classList.add(\'z-textbox-readonly\');\\t}}catch (err){ \\tconsole.log(\'Error al poner negro el texto multicapa (bFdBgj) : \' + err.message);}"]',
+'script','["try{\\tif (jq(\'#bFdBsl\')[0] != undefined){\\t\\tjq(\'#bFdBsl\')[0].setAttribute(\'readonly\',true);\\t\\tjq(\'#bFdBsl\')[0].classList.add(\'z-textbox-readonly\');\\t}}catch (err){ \\tconsole.log(\'Error al poner negro el texto multicapa (bFdBsl) : \' + err.message);}"]',
+'resizeWgt','[{$u:\'bFdBe2\'}]',
+'resizeWgt','[{$u:\'bFdBg2\'}]',
+'script','["ponFormateos();"]',
+'script','["ponFormateos();"]']);
+
+        
+		//Esto quita de los checkbox de zk un label vacío. Importante no usar checkbox con un label aparte, usar siempre el atributo label del checkbox Ej : <checkbox id="otrosfines" mold="switch" value="@{motor(value='FINESSOCIALES')}" label="SI"/>
+		(function() {
+		    // Variable para evitar ejecuciones duplicadas
+		    let processing = false;
+		    		    
+		    // Observador para cambios en el DOM
+		    const observer = new MutationObserver(function(mutations) {
+		    	try{
+			        let shouldProcess = false;
+			        
+			        mutations.forEach(function(mutation) {
+			            if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+			                // Verificar si hay nuevos nodos que contengan checkboxes
+			                mutation.addedNodes.forEach(function(node) {
+			                    if (node.nodeType === 1) { // Element node
+			                        // Verificar si el nodo es un checkbox o contiene checkboxes
+			                        if (node.classList && node.classList.contains('z-checkbox')) {
+			                            shouldProcess = true;
+			                        } else {
+			                            // Verificar descendientes
+			                            const childCheckboxes = node.querySelectorAll('.z-checkbox');
+			                            if (childCheckboxes.length > 0) {
+			                                shouldProcess = true;
+			                            }
+			                        }
+			                    }
+			                });
+			            }
+			        });			        			        
+		    	 } catch (error) {
+			        console.error('Error al procesar observer:', error);
+			     }
+		    });
+		    
+		    // Comenzar a observar
+		    observer.observe(document.body, {
+		        childList: true,
+		        subtree: true
+		    });
+		    //JUAN : lo deshabilito pq tiene efectos secundarios (no se puede hacer click en el check, solo el label) y los check sin label siguen creando una label vacía)
+		    //zk.afterLoad('zul.wgt', fixCheckboxZk);
+		})();
+                 
+        function fixCheckboxZk() {
+        	console.log('Arreglo accesibilidad checkboxes de zk...');
+        	var xCheckbox = {};
+            zk.override(zul.wgt.Checkbox.prototype, xCheckbox, {
+                redraw: function (out) {
+                    var uuid = this.uuid;
+                    out.push('<span' + this.domAttrs_({tabindex: 1}) + '>');
+                    out.push('<input type="checkbox" id="' + uuid + '-real"' + this.contentAttrs_() + '></input>');
+                    out.push('<span id="' + uuid + '-mold" class="' + this.$s('mold') + '" ' + zUtl.encodeXML(this._moldA11yAttrs()) + '></span>');
+                    out.push('<label for="' + uuid + '-real" id="' + uuid + '-cnt"' + this.domTextStyleAttr_() + 
+                        ' class="' + this.$s('content') + '">');
+                    out.push(this.domContent_() + '</label></span>');
+                }
+            });
+        }
+        //zk.afterLoad('zul.wgt', fixCheckboxZk);
+        
+    
+
+		var modeloBootStrap=false;
+		var stopClickToCall = true;
+		zk.msgTrtemav8={IBAN_PAIS:"País",IBAN_DC:"Dígito de control",IBAN_BLOQUE:"Bloque",};
+		
+		var VARIABLE_PIE = _t(`<footer class="bg-primary d-print-none d-app-none pie-reducido d-inline-block w-100" ><div id="js-pie-enlaces" class="container py-3"><div class="row"><div class="col-12 col-sm-6 col-lg-3"><h2 class="h4 mb-3 text-white js-aeat-collapse">Agencia Tributaria</h2><ul class="list-unstyled"><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html" class="d-block text-white">Accesibilidad</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/aviso-seguridad.html" class="d-block text-white">Aviso de seguridad</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/aviso-legal.html" class="d-block text-white">Aviso legal</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/validacion-certificado-sede.html" class="d-block text-white">Validación del certificado de sede</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/datos-personales.html" class="d-block text-white">Protección de datos</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/politica-linguistica.html" class="d-block text-white">Política lingüística</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/estructura-navegacion-sede-electronica.html" class="d-block text-white">Estructura y navegación en la sede electrónica</a></li><li class="position-relative"><a target="_blank" title="Códigos de identificación de la Agencia Tributaria (DIR3), Se abre en ventana nueva" rel="noopener" href="https://administracion.gob.es/pagFront/espanaAdmon/directorioOrganigrama/fichaUnidadOrganica.htm?codigoUnidad=EA0028512" class="d-block text-white">Códigos de identificación de la Agencia Tributaria (DIR3)<i class="aeat-ico fa-ico-ventana-nueva-sm ico-size-1 ml-1" role="img" title="Se abre en ventana nueva"></i></a></li></ul></div><div class="col-12 col-sm-6 col-lg-3"><h2 class="h4 mb-3 text-white js-aeat-collapse">Contacta con nosotros</h2><ul class="list-unstyled"><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/procedimientoini/GC29.shtml" class="d-block text-white">Asistencia y Cita</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/contacta-nosotros/telefonos-interes.html" class="d-block text-white">Teléfonos de interés</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/buscador-oficinas.html" class="d-block text-white">Buscador de oficinas</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/buzones-sugerencias.html" class="d-block text-white">Buzones de sugerencias</a></li><li class="position-relative mb-2"><a target="_blank" title="Encuesta de satisfacción de usuarios, Se abre en ventana nueva" rel="noopener" href="https://forma.administracionelectronica.gob.es/form/open/corp/95fd4f0b-5c6e-4d91-a036-0717b277b7dd/RtHF/oauQDQlm" class="d-block text-white">Encuesta de satisfacción de usuarios<i class="aeat-ico fa-ico-ventana-nueva-sm ico-size-1 ml-1" role="img" title="Se abre en ventana nueva"></i></a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/colaborar-agencia-tributaria/denuncias.html" class="d-block text-white">Denuncias</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/informacion-institucional/suscripcion-rss-newsletter/newsletter.html" class="d-block text-white">Suscripción newsletter</a></li><li class="position-relative"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/informacion-institucional/suscripcion-rss-newsletter/rss.html" class="d-block text-white">Suscripción RSS</a></li></ul></div><div class="col-12 col-sm-6 col-lg-3"><h2 class="h4 mb-3 text-white js-aeat-collapse">Ayuda</h2><ul class="list-unstyled"><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/search.html" class="d-block text-white">Buscar</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/ayuda/consultas-informaticas.html" class="d-block text-white">Consultas informáticas</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/ayuda/contenidos-lectura-facil.html" class="d-block text-white">Contenidos en lectura fácil</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/ayuda/disenos-registro.html" class="d-block text-white">Diseños de registro</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/ayuda/horario-interrupciones-sede-electronica.html" class="d-block text-white">Horario de interrupciones de sede</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos.html" class="d-block text-white">Manuales, vídeos y folletos</a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/procedimientoini/ZZ08.shtml" class="d-block text-white">Simuladores</a></li><li class="position-relative"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/ayuda.html" class="d-block text-white">Todas las ayudas</a></li></ul></div><div class="col-12 col-sm-6 col-lg-3"><h2 class="h4 mb-3 text-white js-aeat-collapse">Enlaces de interés</h2><ul class="list-unstyled"><li class="position-relative mb-2"><a target="_self" href="https://www.hacienda.gob.es/" class="d-block text-white">Ministerio de Hacienda</a></li><li class="position-relative mb-2"><a target="_blank" title="Fiscalidad autonómica y local, Se abre en ventana nueva" rel="noopener" href="https://www.agenciatributaria.es/AEAT.fisterritorial/InicioF.shtml" class="d-block text-white">Fiscalidad autonómica y local<i class="aeat-ico fa-ico-ventana-nueva-sm ico-size-1 ml-1" role="img" title="Se abre en ventana nueva"></i></a></li><li class="position-relative mb-2"><a target="_self" href="https://sede.tea.hacienda.gob.es/" class="d-block text-white">Tribunales Económico - Administrativos</a></li><li class="position-relative mb-2"><a target="_self" href="https://www2.agenciatributaria.gob.es/static_files/common/dep/planificacion/CDC/IFRD0001.html" class="d-block text-white">Consejo para la Defensa del Contribuyente</a></li><li class="position-relative mb-2"><a target="_blank" title="Punto de Acceso General, Se abre en ventana nueva" rel="noopener" href="https://administracion.gob.es/" class="d-block text-white">Punto de Acceso General<i class="aeat-ico fa-ico-ventana-nueva-sm ico-size-1 ml-1" role="img" title="Se abre en ventana nueva"></i></a></li><li class="position-relative mb-2"><a target="_blank" title="Portal de la transparencia, Se abre en ventana nueva" rel="noopener" href="https://transparencia.gob.es" class="d-block text-white">Portal de la transparencia<i class="aeat-ico fa-ico-ventana-nueva-sm ico-size-1 ml-1" role="img" title="Se abre en ventana nueva"></i></a></li><li class="position-relative"><a target="_self" href="https://sede.agenciatributaria.gob.es/Sede/enlaces-interes.html" class="d-block text-white">Otros enlaces de interés</a></li></ul></div></div></div></footer> <div class="d-none">   <span class="js-responsive d-xs-block"></span>   <span class="js-responsive d-sm-block"></span>   <span class="js-responsive d-md-block"></span>   <span class="js-responsive d-lg-block"></span>   <span class="js-responsive d-xl-block"></span>   <span class="js-responsive d-xxl-block"></span>   <span class="js-responsive d-xxxl-block"></span> </div>`);
+		var VARIABLE_CABACERA = `<header role="banner" aria-label="Cabecera de la página"  id="AEAT_header" class="header_aeat d-print-none d-app-none">    <!-- CABECERA -->    <!--googleoff: index-->    <a class="focus-only" href="#acc-main">Saltar al contenido principal</a>    <div class="header-sup_aeat w-100 ">        <div class="container">            <div class="row">                <!-- CABECERA IZQUIERDA-->                <div id="topIzquierda" class="col pl-0 overflow-hidden">                    <nav class="header-contLogos_aeat">                        <a href="https://sede.agenciatributaria.gob.es/Sede/inicio.html" title="P&aacute;gina de inicio"                            class="header-logosPrincipales_aeat">                            <span class="logoGobierno Sede">Logotipo del Gobierno de España</span>                            <span class="logoAEAT logoSite logoSede mx-1">Logotipo de la Agencia Tributaria</span>                        </a>                    </nav>                </div>                <!-- CABECERA IZQUIERDA FIN -->                <!-- CABECERA DERECHA-->                <div id="topDerecha" class="d-flex align-items-center justify-content-end pr-2 pl-1">                    <a href="https://sede.agenciatributaria.gob.es/Sede/Calendario_fecha_y_hora_oficial.html"                        class="mr-2 mr-sm-4 text-secondary small">                        <span class="js-reloj-movil d-xs-none" data-toggle="tooltip" data-placement="bottom" title=""                            data-original-title="">                            <i class="aeat-ico fa-ico-reloj-sm ico-size-2 pointer-events-none"                                title="Icono Calendario, fecha y hora oficial" aria-hidden="true"                                role="presentation"></i>                        </span>                        <span class="js-reloj d-none d-xs-inline" data-toggle="tooltip" data-placement="bottom"></span>                        <span class="sr-only">Hora oficial</span>                    </a>                    <div id="link-personal" class="aeat--user ">                        <a class="cursor-pointer btn btn-primary mr-1 mr-sm-2 px-3 shadow-sm d-flex align-items-center"                            data-original-title="ÁREA PERSONAL" href="https://sede.agenciatributaria.gob.es/Sede/mi-area-personal.html">                            <i class="aeat-ico fa-ico-usuario-sm ico-size-1 mr-2" aria-hidden="true"                                role="presentation"></i>                            <span class="aeat--username d-none d-lg-inline small font-weight-bold pr-2 py-1">ÁREA PERSONAL</span>                        </a>                    </div>                    <div id="aeat-jdit-user" class="dropdown aeat--user d-none">                        <button                            class="cursor-pointer btn btn-primary mr-1 mr-sm-2 px-3 shadow-sm d-flex align-items-center"                            type="button" id="dropdownUsuario" data-toggle="dropdown" aria-haspopup="true"                            aria-expanded="false">                            <i class="aeat-ico fa-ico-usuario-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>                            <span id="user-name"                                class="aeat--username d-none d-lg-inline small font-weight-bold pr-2 py-1 notraducir">ÁREA PERSONAL</span>                            <span id="alert-notification" class="badge bg-light-blue text-primary mx-2 p-1 d-none"                                data-toggle="tooltip" title="">                                <i class="aeat-ico fa-ico-bell-sm ico-size-mini d-none d-xs-block " aria-hidden="true"                                    role="presentation"></i>                            </span>                            <i class="aeat-ico fa-ico-chevron-down ico-size-mini" aria-hidden="true"                                role="presentation"></i>                        </button>                        <div class="dropdown-menu dropdown-menu-right" aria-label="Área personal de usuario">                            <div class="px-4 py-2 d-none">                                <small class="d-none text-secondary">Representante</small>                                <span                                    class="aeat--username d-block small pointer-events-none mw-100 text-primary notraducir"                                    title="NOTIFICACIONES TITULARES EXENTOS DE NIF" data-original-title="NOTIFICACIONES TITULARES EXENTOS DE NIF">NOTIFICACIONES TITULARES EXENTOS DE NIF</span>                                <small class="d-block text-secondary">89890005W</small>                            </div>                            <div class="px-4 py-2 align-items-center d-none">                                <div>                                    <small class="d-block font-weight-bold text-secondary">En nombre propio</small>                                    <span                                        class="aeat--username-representado d-block small pointer-events-none font-weight-bold text-primary notraducir"                                        title="" data-original-title=""></span>                                    <small class="d-block text-secondary"></small>                                </div>                                <a class="btn btn-sm btn-secondary py-2 small cursor-pointer ml-2" href="">Cambiar                                    <span class="sr-only">usuario representado</span></a>                            </div>                            <span                                class="aeat--username dropdown-item d-none small font-weight-bold pointer-events-none"></span>                            <div class="dropdown-divider d-none"></div>                            <ul class="list-unstyled mb-0">                                <li>                                    <a target="_self" class="dropdown-item" href="https://sede.agenciatributaria.gob.es/Sede/mi-area-personal.html"                                        data-href="https://sede.agenciatributaria.gob.es/Sede/mi-area-personal.html" title="Área personal"                                        data-toggle="tooltip">                                        <i class="aeat-ico fa-ico-usuario-sm ico-size-1 mr-2" aria-hidden="true"                                            role="presentation"></i>                                        Área personal                                    </a>                                </li>                                <li>                                    <a target="_self" class="dropdown-item d-none" id="alert-link"                                        data-href="/wlpl/IIIC-ALER/SvObtAlertas" href="/wlpl/IIIC-ALER/SvObtAlertas"                                        title="" data-toggle="tooltip" data-original-title="Mis alertas">                                        <i class="aeat-ico fa-ico-bell-sm ico-size-1 mr-2" aria-hidden="true"                                            role="presentation"></i>                                        Mis alertas                                        <span class="badge bg-light-blue text-primary ml-1" data-toggle="tooltip"                                            title="" data-original-title=""></span>                                    </a>                                </li>                                                            </ul>                            <div class="dropdown-divider d-none"></div>                            <a id="btn-desconectar" class="dropdown-item d-none" href="https://sede.agenciatributaria.gob.es/Sede/Desconectar.html">                                <i class="aeat-ico fa-ico-desconectar-sm text-danger mr-2 ico-size-1" aria-hidden="true"                                    role="presentation"></i>Desconectarse                            </a>                        </div>                    </div>                    <div id="idioma" class="dropdown js-dropdown-lang-app">                        <button class="btn btn-link text-secondary d-flex align-items-center cursor-pointer"                            type="button" role="button" id="dropdownIdiomas" data-toggle="dropdown" aria-haspopup="true"                            aria-expanded="false">                            <span class="js-idioma-actual" data-toggle="tooltip" title="Idioma actual">ES</span>                            <i class="aeat-ico fa-ico-chevron-down ico-size-mini ml-2" aria-hidden="true"                                role="presentation"></i>                        </button>                        <ul id="dropdown-idioma" class="dropdown-menu dropdown-menu-right" role="combobox"                            aria-labelledby="dropdownIdiomas">                            <!--AEATP1NOTRAD-->                            <li>                                <a class="dropdown-item notraducir" title="Català" data-lang="CA" lang="ca"                                    hreflang="ca" aria-disabled="false" tabindex="0" aria-selected="false"                                    href="https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB">                                    Català                                </a>                            </li>                            <li>                                <a class="dropdown-item notraducir" title="Galego" data-lang="GL" lang="gl"                                    hreflang="gl" aria-disabled="false" tabindex="0" aria-selected="false"                                    href="https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB">                                    Galego                                </a>                            </li>                            <li>                                <a class="dropdown-item notraducir" title="Valencià" data-lang="VA" lang="ca-valencia"                                    hreflang="ca-valencia" aria-disabled="false" tabindex="0" aria-selected="false"                                    href="https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB">                                    Valencià                                </a>                            </li>                            <li>                                <a class="dropdown-item notraducir" title="English" data-lang="EN" lang="en"                                    hreflang="en" aria-disabled="false" tabindex="0" aria-selected="false"                                    href="https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB">                                    English                                </a>                            </li>                            <li>                                <a class="dropdown-item notraducir active" title="Castellano" data-lang="ES" lang="es"                                    hreflang="es" aria-disabled="false" tabindex="0" aria-selected="false"                                    href="https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB">                                    Castellano                                </a>                            </li>                            <!--/AEATP1NOTRAD-->                        </ul>                    </div>                </div>                <!-- CABECERA DERECHA-->            </div>        </div>    </div>    <!--googleon: index-->    <!-- CABECERA FIN -->    <!-- MENU -->    <div class="w-100 bg-primary p-1"></div>    <!-- MENU FIN --></header>`; 
+		const VARIABLE_SEDE= `sede-espania`;
+		jQuery("body").addClass(VARIABLE_SEDE);		
+	
+
+	 
+	var mapToolTips = new Map();
+	
+	function addTooltip(clave,cual,valor) {
+		mapToolTips.set(clave+cual,valor);
+	}
+	
+	function removeTooltip(clave) {
+		for (i = 1;i < 10;i++){
+			mapToolTips.delete(clave+i);
+		}		
+	}
+	         
+	function showTooltip(event){
+		var clave = event.target.uuid;
+		if (clave == undefined){
+			clave = event.target.id;
+		}
+		var numAvisos = 0;		
+		var mostrar = false;
+		for (i = 1;i < 10;i++){
+			if (mapToolTips.has(clave+i)){
+				jq("#tooltip0" + i).html(mapToolTips.get(clave+i));
+				mostrar = true;
+				numAvisos = numAvisos + 1;
+			}else{
+				jq("#tooltip0" + i).html("");
+			}
+		}
+		
+		if (mostrar){
+			var id = "#" + clave;
+			var t = parseInt(jq(id).offset().top);
+			var l = parseInt(jq(id).offset().left);
+			
+			var body = document.body;
+			var html = document.documentElement;
+			var height = Math.max(body.scrollHeight,body.offsetHeight,html.clientHeight,html.scrollHeight,html.offsetHeight);
+			
+			//Estimar donde poner el tooltip
+			//top, si estoy a media pantalla debajo sino arriba
+			if (t > height/2){
+				//Ponerlo encima
+				t = t - parseInt(jq(id).height()*2)*numAvisos;
+			}else{
+				//Ponerlo debajo
+				t = parseInt(t) + parseInt(jq(id).height()*2);				
+			}
+			
+			jq("#modal-content").show();
+			jq("#modal-content").css({
+				position : "absolute",
+				marginLeft : 0,
+				marginTop : 0,
+				top : t,
+				left : l
+			}
+			);
+		}else{
+			jq("#modal-content").hide();
+		}
+	}
+	
+	function hideTooltip(){
+		jq("#modal-content").hide();
+	}
+	
+	
+	
+
+		
+		var usarVelo = "";
+		
+		function setUsarVelo(valor){
+			usarVelo = valor;
+		}
+		
+		function ponFormateos(){
+		 
+			try{ 
+				if (usarVelo == ""){
+					//No ha sido establecida la configuracion del velo
+					zAu.send(new zk.Event(zk.Widget.$(jq('$ventanaPrincipal')[0]),'onCheckVelo',"MODELO-100,DEMANDA"));
+					console.log('Inicializar Velo...');
+				}else if (usarVelo == "1"){
+					activaControlClickDemanda();	
+				}else if (usarVelo == "2"){
+					activaControlClick();	
+				}
+			}catch(e){
+				console.error(e);
+			}
+			
+			try{	 
+				jq(".estiloNumerico062").format({type:'decimal',precision: {parteEntera:6,parteDecimal:2},autofix:false}); 
+				jq(".estiloNumerico052").format({type:'decimal',precision: {parteEntera:5,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico042").format({type:'decimal',precision: {parteEntera:4,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico032").format({type:'decimal',precision: {parteEntera:3,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico022").format({type:'decimal',precision: {parteEntera:2,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico012").format({type:'decimal',precision: {parteEntera:1,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico020").format({type:'decimal',precision: {parteEntera:2,parteDecimal:0},autofix:false});
+				jq(".estiloNumerico030").format({type:'decimal',precision: {parteEntera:4,parteDecimal:0},autofix:false});
+				jq(".estiloNumerico040").format({type:'decimal',precision: {parteEntera:4,parteDecimal:0},autofix:false});
+				jq(".estiloNumerico70").format({type:'decimal',precision: {parteEntera:7,parteDecimal:0},autofix:false});
+				jq(".estiloNumerico92").format({type:'decimal',precision: {parteEntera:9,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico92Neg").format({type:'decimal',permiteNegativos:true,precision:{parteEntera:9,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico82").format({type:'decimal',precision: {parteEntera:8,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico82Cero").format({type:'decimal',precision: {parteEntera:8,parteDecimal:2},verCero:true,autofix:false});
+				jq(".estiloNumerico85").format({type:'decimal',precision: {parteEntera:8,parteDecimal:5},autofix:false});
+				jq(".estiloNumerico72").format({type:'decimal',precision: {parteEntera:7,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico102").format({type:'decimal',precision: {parteEntera:10,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico102Cero").format({type:'decimal',precision: {parteEntera:10,parteDecimal:2},verCero:true,autofix:false});
+				jq(".estiloNumerico102Neg").format({type:'decimal',permiteNegativos:true,precision:{parteEntera:10,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico102NegCero").format({type:'decimal',permiteNegativos:true,precision:{parteEntera:10,parteDecimal:2},verCero:true,autofix:false});
+				jq(".estiloNumerico112").format({type:'decimal',precision: {parteEntera:11,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico112Neg").format({type:'decimal',permiteNegativos:true,precision:{parteEntera:11,parteDecimal:2},autofix:false});				
+				jq(".estiloNumerico152").format({type:'decimal',precision: {parteEntera:15,parteDecimal:2},autofix:false});
+				jq(".estiloNumerico152Neg").format({type:'decimal',permiteNegativos:true,precision:{parteEntera:15,parteDecimal:2},autofix:false});				
+				jq(".estiloEntero1").format({type:'decimal',precision: {parteEntera:1,parteDecimal:0},autofix:false});
+				jq(".estiloEntero1Cero").format({type:'decimal',precision: {parteEntera:1,parteDecimal:0},verCero:true,autofix:false}); 
+				jq(".estiloEntero2Cero").format({type:'decimal',precision: {parteEntera:2,parteDecimal:0},verCero:true,autofix:false}); 
+				jq(".estiloEntero3Cero").format({type:'decimal',precision: {parteEntera:3,parteDecimal:0},verCero:true,autofix:false}); 
+				jq(".estiloEntero2").format({type:'decimal',precision: {parteEntera:2,parteDecimal:0},autofix:false});
+				jq(".estiloEntero3").format({type:'decimal',precision: {parteEntera:3,parteDecimal:0},autofix:false});				
+				jq(".estiloEntero4").format({type:'decimal',precision: {parteEntera:4,parteDecimal:0},autofix:false});
+				jq(".estiloEntero7").format({type:'decimal',precision: {parteEntera:7,parteDecimal:0},autofix:false});
+				jq(".estiloAlfabetico").format({type:'alfabetico'});	
+				jq(".estiloAlfanumerico").format({type:'alfanumerico'});	
+				jq(".estiloNIF").format({type:'tipoNif'});
+				jq(".estiloCadnum").format({type:'cadnum'});		
+				jq(".estiloCadnum2").format({type:'cadnum'});
+				jq(".estiloEmail").format({type:'email'});
+			}catch(e){
+		 		console.error(e);
+			}
+		}
+	
+			/* Esta función es llamada desde la página de la pasarela al NRR */
+			function setNRR(NRR_devuelto){
+				zk.Widget.$(jq('$T1_NRR')[0]).setText(NRR_devuelto);
+				zAu.send(new zk.Event(zk.Widget.$(jq('$T1_NRR')[0]),'onChange',{'value':NRR_devuelto,'position':0}));
+			}
+			
+			/* Cambio estetico de los botones para cuando se vea en movil */
+			/*
+ 			var heightPantalla = parseInt(window.screen.height); 
+ 			var widthPantalla = parseInt(window.screen.width);
+ 			document.write('<style>'); 
+ 			if (1152 > widthPantalla) { 
+ 				document.write('	.cssbtMostrarDatosID, .cssbtMostrarDF {'); 
+ 				document.write('		margin-left: 0.2em !important;'); 
+				document.write('		letter-spacing: -16.67em !important;'); 
+ 				document.write('		overflow: hidden !important;'); 
+ 				document.write('	}'); 
+ 			}	 
+ 			document.write('</style>');
+ 			*/
+		
+   
+
+		
+			//llamar a accesibilidad js
+			
+	
+
+</script>
+<noscript>
+<div class="noscript"><p>Sorry, JavaScript must be enabled.<br/>Change your browser options, then <a href="">try again</a>.</p></div>
+</noscript>
+
+</body>
+</html>

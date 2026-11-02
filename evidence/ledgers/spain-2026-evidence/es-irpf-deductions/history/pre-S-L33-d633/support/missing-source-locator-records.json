@@ -1,0 +1,1173 @@
+[
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-independent-review/own-source-map.json",
+    {
+      "name": "law-9-1999-original",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2000-6844",
+      "original_writer_read_ranges": [
+        [
+          83,
+          96
+        ]
+      ],
+      "reviewer_scope": "raw/reader copied hash-exact; reviewer actualread separately",
+      "raw_path": "sources/law-9-1999-original.html",
+      "raw_sha256": "2f693a27f38740811bbefd8c7bf99f042dc1ec87f5c60f5805df12f6e1b81684",
+      "reader_path": "sources/law-9-1999-original.reader.txt",
+      "reader_sha256": "dcab98ba298157f3f85b2f505667fb4059898d528c115f4f57b95ee94841bad2"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-independent-review/own-source-map.json",
+    {
+      "name": "euro-conversion-reg",
+      "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-1998-82362",
+      "original_writer_read_ranges": [
+        [
+          59,
+          77
+        ]
+      ],
+      "reviewer_scope": "raw/reader copied hash-exact; reviewer actualread separately",
+      "raw_path": "sources/euro-conversion-reg.html",
+      "raw_sha256": "95d6b1a240e4846f107433157382d6e2b093dbc2b817bb188b298f2e4294f6e0",
+      "reader_path": "sources/euro-conversion-reg.reader.txt",
+      "reader_sha256": "fc4154aa19fe87be40252b84a7a171934887f8a83a750cf8f196e19b205623f3"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-independent-review/own-source-map.json",
+    {
+      "name": "euro-law-current",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-29216",
+      "original_writer_read_ranges": [
+        [
+          277,
+          283
+        ],
+        [
+          426,
+          428
+        ]
+      ],
+      "reviewer_scope": "raw/reader copied hash-exact; reviewer actualread separately",
+      "raw_path": "sources/euro-law-current.html",
+      "raw_sha256": "dec6a904631f8163353c7a2b01a59cc3941651a848685bcc49ec839d64fba2e3",
+      "reader_path": "sources/euro-law-current.reader.txt",
+      "reader_sha256": "a937a3ad510540ddac0cbd692574f219e9511137c28d41607dedd29a5e788a70"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-council-85-correction-r2/source-read-ledger.json",
+    {
+      "id": "Council085-2026",
+      "url": "https://www.knosys.es/ccgalicia/knpag?lang=GAL&x=index",
+      "official_referral": "https://ccgalicia.es/",
+      "search": {
+        "year": "2026",
+        "text": "material escolar",
+        "selected_opinion": "085/2026",
+        "date": "25/03/2026"
+      },
+      "retained_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-council-85-correction/opinion-085-2026-full-browser-AX.txt",
+      "sha256": "048df42e9467e57c45df68add6fad087e4323e99ce5307d10d3875c025c7ad01",
+      "evidence_type": "Actual full rendered browser AX snapshot including results and opinion, no raw HTTP source or PDF claim",
+      "actual_read_scope": "Entire opinion text AX287–453 read by root before compaction, and considerations4/5/conclusion reread from retained file. Native LF446 carries AX449 per-descendant sentence; native LF450 carries AX453 conclusion. Search result preceding opinion not treated as substantive evidence.",
+      "whole_opinion_read": true,
+      "whole_browser_search_result_audit": false,
+      "advisory_on_draft": true,
+      "binding_ruling_or_annulment": false
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Asturias-landlord-reference-independent-review/own-source-read-ledger.json",
+    {
+      "id": "AEAT-completion",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_3-principado-asturias/10_3_22-gastos-derivados-arrendamiento-viviendas.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Asturias-landlord-reference-private-method/sources/AEAT-completion.html",
+      "raw_sha256": "aa5c10c55c8cc6d648b4d226b54799d45bec4e6535c1ba44950e5d5a15339c44",
+      "raw_bytes": 10963,
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Asturias-landlord-reference-private-method/sources/AEAT-completion.reader.txt",
+      "reader_sha256": "3454df541f395748533c1bba0fd80cc3842f53a6c9543beb403e94e67f4a4ec1",
+      "reader_lines": 45,
+      "scope": "Root personally read these exact operative ranges/full small readers; no fresh acquisition, full large-law read or actual software observation claimed.",
+      "root_actual_native_LF_ranges_read": [
+        [
+          1,
+          45
+        ]
+      ]
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-independent-review/own-source-read-ledger.json",
+    {
+      "id": "AEAT-assistance",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/familiares-dependientes-discapacidad.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/sources/AEAT-assistance.html",
+      "raw_sha256": "5c2f0d79661675ba0fb06a7ea7607b5a38d08cdd97c333682e0cfa66349eabf6",
+      "raw_bytes": 12339,
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/sources/AEAT-assistance.reader.txt",
+      "reader_sha256": "8bb6559f86ddc4675d15c13c2fb4214eee2afd98d6e99b5b29b7dd27238f919f",
+      "reader_lines": 105,
+      "scope": "Root personally read these exact operative ranges/full small readers; no fresh acquisition, full large-law read or actual software observation claimed.",
+      "root_actual_native_LF_ranges_read": [
+        [
+          1,
+          105
+        ]
+      ]
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-independent-review/own-source-read-ledger.json",
+    {
+      "id": "AEAT-household",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/cuotas-satisfechas-seguridad-social-contratacion-hogar.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/sources/AEAT-household.html",
+      "raw_sha256": "0f3101daa0b394219f70b86c3ff950d0d836df39ae7a327cac99ed8816719d45",
+      "raw_bytes": 12213,
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/sources/AEAT-household.reader.txt",
+      "reader_sha256": "bffd25c13238e7747d8fef3ee8a48f66645ddf64e631bdf238887fba78f89e07",
+      "reader_lines": 86,
+      "scope": "Root personally read these exact operative ranges/full small readers; no fresh acquisition, full large-law read or actual software observation claimed.",
+      "root_actual_native_LF_ranges_read": [
+        [
+          1,
+          86
+        ]
+      ]
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-independent-review/source-read-ledger.json",
+    {
+      "name": "law-2024-enactment",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-2145",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/sources/law-2024-enactment.html",
+      "raw_sha256": "e3a25c4862b821ed369128f1c4cec966d1a3ea4ad5e3e5e22e4b83389290d487",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/sources/law-2024-enactment.reader.txt",
+      "reader_sha256": "82fea104b649b97756e433b6928eb8fa6f7b469ba5a117c48d7f24f96edd13e1",
+      "acquired": "2026-10-28T12:00:44.877369+00:00",
+      "reviewer_actual_native_LF_ranges": [
+        [
+          210,
+          242
+        ],
+        [
+          2595,
+          2600
+        ]
+      ],
+      "scope": "Retained official body/reader actually read at listed selected ranges; rehashed, not freshly reacquired or full-law reviewed. Enactment/amendment initial combined emission truncated, then both bounded separate repeats fully read."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-independent-review/source-read-ledger.json",
+    {
+      "name": "AEAT-fixed-manual",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/arrendamiento-viviendas-vacias.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/sources/AEAT-fixed-manual.html",
+      "raw_sha256": "4e02b22d442530a15d3b91478e44c141e863090131451cc96aafcb6461da5101",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/sources/AEAT-fixed-manual.reader.txt",
+      "reader_sha256": "866d1efb58bf75cd8f7c7ff840329b4b5b9de78d43f499cc7be0ffba080886c5",
+      "acquired": "2026-10-28T12:00:45.123848+00:00",
+      "reviewer_actual_native_LF_ranges": [
+        [
+          1,
+          110
+        ]
+      ],
+      "scope": "Retained official body/reader actually read at listed selected ranges; rehashed, not freshly reacquired or full-law reviewed. Enactment/amendment initial combined emission truncated, then both bounded separate repeats fully read."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/source-map.json",
+    {
+      "name": "2025-enactment",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-10270",
+      "raw": "sources/2025-enactment.html",
+      "raw_sha256": "378da95b8dce3fd90ad16734ef70e85748ddd5b6a11c84819ae87ad46099fde0",
+      "reader": "sources/2025-enactment.reader.txt",
+      "reader_sha256": "0225bbc004d1b853e0756dff864571d8d551d8992cedf4ac2cd4b79a4dfc0fa8",
+      "actual_read_scopes": [
+        [
+          330,
+          354
+        ]
+      ],
+      "scope_note": "Native LF, split on newline; entire raw acquired, only listed reader ranges claimed read."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/source-map.json",
+    {
+      "name": "AEAT-legacy-regional",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/tramo-autonomico-deduccion-inversion-vivienda-habitual.html",
+      "raw": "sources/AEAT-legacy-regional.html",
+      "raw_sha256": "dea30341a531f4318c0c613f52ce6df641f16993a1dca587c0b70852eacbfa75",
+      "reader": "sources/AEAT-legacy-regional.reader.txt",
+      "reader_sha256": "7304a9ed57630ccf943f65e8119f5d59cf66001c8a944e4758841a1b47dc4231",
+      "actual_read_scopes": [
+        [
+          1,
+          66
+        ]
+      ],
+      "scope_note": "Native LF, split on newline; entire raw acquired, only listed reader ranges claimed read."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/source-map.json",
+    {
+      "name": "AEAT-rent-ordinary",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+      "raw": "sources/AEAT-rent-ordinary.html",
+      "raw_sha256": "7336ae953dab60ec38da0e62e1332fa3e23b6cd62427bcb10fef24e265f761f9",
+      "reader": "sources/AEAT-rent-ordinary.reader.txt",
+      "reader_sha256": "bef8b7db92263a12ad225dabc5a5f8c824fa1354f949ed0ae6f23c66bcbe0f7b",
+      "actual_read_scopes": [
+        [
+          1,
+          110
+        ]
+      ],
+      "scope_note": "Native LF, split on newline; entire raw acquired, only listed reader ranges claimed read."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/source-map.json",
+    {
+      "name": "AEAT-rent-victim",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual-victimas-violencia-machista.html",
+      "raw": "sources/AEAT-rent-victim.html",
+      "raw_sha256": "fdc4bdb8ef13298683190ab49f583bcd6507133393bb6703dd265db497e809c9",
+      "reader": "sources/AEAT-rent-victim.reader.txt",
+      "reader_sha256": "5a23779fe82b889c678d56f571cbb774e3784449505e888be18c56a3a9003890",
+      "actual_read_scopes": [
+        [
+          1,
+          89
+        ]
+      ],
+      "scope_note": "Native LF, split on newline; entire raw acquired, only listed reader ranges claimed read."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/source-map.json",
+    {
+      "name": "law-2024-enactment",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-2145",
+      "raw_path": "sources/law-2024-enactment.html",
+      "raw_sha256": "e3a25c4862b821ed369128f1c4cec966d1a3ea4ad5e3e5e22e4b83389290d487",
+      "reader_path": "sources/law-2024-enactment.reader.txt",
+      "reader_sha256": "82fea104b649b97756e433b6928eb8fa6f7b469ba5a117c48d7f24f96edd13e1",
+      "acquired": "2026-10-28T12:00:44.877369+00:00"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/source-map.json",
+    {
+      "name": "AEAT-fixed-manual",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/arrendamiento-viviendas-vacias.html",
+      "raw_path": "sources/AEAT-fixed-manual.html",
+      "raw_sha256": "4e02b22d442530a15d3b91478e44c141e863090131451cc96aafcb6461da5101",
+      "reader_path": "sources/AEAT-fixed-manual.reader.txt",
+      "reader_sha256": "866d1efb58bf75cd8f7c7ff840329b4b5b9de78d43f499cc7be0ffba080886c5",
+      "acquired": "2026-10-28T12:00:45.123848+00:00"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/acquisition-sandbox-DNS-failure.json",
+    {
+      "name": "law-2024-enactment",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-2145",
+      "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/source-read-ledger.json",
+    {
+      "id": "AEAT-assistance",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/familiares-dependientes-discapacidad.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/sources/AEAT-assistance.html",
+      "raw_sha256": "5c2f0d79661675ba0fb06a7ea7607b5a38d08cdd97c333682e0cfa66349eabf6",
+      "raw_bytes": 12339,
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/sources/AEAT-assistance.reader.txt",
+      "reader_sha256": "8bb6559f86ddc4675d15c13c2fb4214eee2afd98d6e99b5b29b7dd27238f919f",
+      "reader_lines": 105,
+      "actual_read_native_LF_ranges": [
+        [
+          1,
+          105
+        ]
+      ],
+      "scope": "Fresh public official TLS-verified curl acquisition and full105-line reader read. Separates fixed600and contribution20%/500, express compatibility ONLY between its own two components; no cross16quinquies ruling. Page updated29Sep2026."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/source-read-ledger.json",
+    {
+      "id": "AEAT-household",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/cuotas-satisfechas-seguridad-social-contratacion-hogar.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/sources/AEAT-household.html",
+      "raw_sha256": "0f3101daa0b394219f70b86c3ff950d0d836df39ae7a327cac99ed8816719d45",
+      "raw_bytes": 12213,
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Canarias-overlapping-contributions-private-method/sources/AEAT-household.reader.txt",
+      "reader_sha256": "bffd25c13238e7747d8fef3ee8a48f66645ddf64e631bdf238887fba78f89e07",
+      "reader_lines": 86,
+      "actual_read_native_LF_ranges": [
+        [
+          1,
+          86
+        ]
+      ],
+      "scope": "Fresh public official TLS-verified curl acquisition and full86-line reader read. Independent20%/500, entitlement/employer/ganancial attribution, workerID, exempt matching aid. Page updated29Sep2026. No actual simulator behaviour checked."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/acquisition.json",
+    {
+      "name": "law-2024-enactment",
+      "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-2145",
+      "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2025-2145",
+      "status": 200,
+      "headers": {
+        "Date": "Wed, 28 Oct 2026 12:00:47 GMT",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Content-Security-Policy": "default-src afirma://* ; script-src 'unsafe-inline' 'unsafe-eval' 'self' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ ; frame-src 'self' https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/  afirma://* ; connect-src https://www.google.com/recaptcha/ 'self' ; img-src 'self' eur-lex.europa.eu data: ; style-src 'unsafe-inline' 'self' *.boe.es ; font-src 'self' ; child-src 'self'  www.youtube.com afirma://* ; object-src 'self'; media-src 'self' ; frame-ancestors 'self' always",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Age": "0",
+        "Accept-Ranges": "bytes",
+        "Transfer-Encoding": "chunked",
+        "Strict-Transport-Security": "max-age=31536000",
+        "Connection": "close"
+      },
+      "bytes": 769922,
+      "sha256": "e3a25c4862b821ed369128f1c4cec966d1a3ea4ad5e3e5e22e4b83389290d487",
+      "retrieved_utc": "2026-10-28T12:00:44.877369+00:00"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-carry-vintages-private-method/acquisition.json",
+    {
+      "name": "AEAT-fixed-manual",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/arrendamiento-viviendas-vacias.html",
+      "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-galicia/arrendamiento-viviendas-vacias.html",
+      "status": 200,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 12:00:45 GMT",
+        "server": "Apache",
+        "x-frame-options": "SAMEORIGIN",
+        "last-modified": "Thu, 23 Apr 2026 06:55:42 GMT",
+        "accept-ranges": "bytes",
+        "content-length": "15423",
+        "content-security-policy": "frame-ancestors 'self' *.agenciatributaria.gob.es",
+        "x-site": "Sede",
+        "content-type": "text/html",
+        "x-xss-protection": "1; mode=block",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "Connection": "close"
+      },
+      "bytes": 15423,
+      "sha256": "4e02b22d442530a15d3b91478e44c141e863090131451cc96aafcb6461da5101",
+      "retrieved_utc": "2026-10-28T12:00:45.123848+00:00"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/actual-read-scopes.json",
+    {
+      "source": "2025-enactment",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-10270",
+      "raw_sha256": "378da95b8dce3fd90ad16734ef70e85748ddd5b6a11c84819ae87ad46099fde0",
+      "reader_sha256": "0225bbc004d1b853e0756dff864571d8d551d8992cedf4ac2cd4b79a4dfc0fa8",
+      "LF": [
+        330,
+        354
+      ],
+      "lines": [
+        "330: 3. Con efectos del 1 de enero del 2025, se modifica el artículo 612-3 del libro sexto del Código tributario de Cataluña, relativo a los tributos cedidos, que queda redactado del siguiente modo:",
+        "331: «Artículo 612-3. Deducción por alquiler de la vivienda habitual.",
+        "332: 1. Los contribuyentes pueden deducir el 10 %, hasta un máximo de 500 euros anuales, de las cantidades satisfechas en el periodo impositivo en concepto de alquiler de la vivienda habitual, siempre que cumplan los requisitos siguientes:",
+        "333: a) Que se encuentren en alguna de las situaciones siguientes:",
+        "334: – Tener 35 años o menos en la fecha de devengo del impuesto.",
+        "335: – Haber estado en el paro 183 días o más durante el ejercicio.",
+        "336: – Tener un grado de discapacidad igual o superior al 65 %.",
+        "337: – Ser viudo o viuda y tener 65 años o más.",
+        "338: b) Que la suma de su base imponible general y del ahorro, menos el mínimo personal y familiar no sea superior a 30.000 euros anuales.",
+        "339: 2. Los contribuyentes pueden deducir el 10 %, hasta un máximo de 1.000 euros anuales, de las cantidades satisfechas en el periodo impositivo en concepto del alquiler de la vivienda habitual, siempre que en la fecha de devengo pertenezcan a una familia numerosa o monoparental y cumplan el requisito establecido por la letra b) del apartado 1.",
+        "340: 3. En el caso de tributación conjunta, si alguno de los declarantes está en alguna de las circunstancias especificadas en la letra a del apartado 1 y en el apartado 2, el importe máximo de la deducción es de 1.000 euros, y el de la suma de la base imponible general y del ahorro, menos el mínimo personal y familiar de la unidad familiar, es de 45.000 euros.",
+        "341: 4. Esta deducción solo puede aplicarse una vez, con independencia del hecho de que en un mismo sujeto pasivo puedan concurrir más de una de las circunstancias establecidas por la letra a del apartado 1.",
+        "342: 5. Una misma vivienda no puede dar lugar a la aplicación de un importe de deducción superior a 1.000 euros. Según eso, si en relación con una misma vivienda resulta que más de un contribuyente tiene derecho a la deducción de conformidad con este precepto, cada uno podrá aplicar en su declaración una deducción por este concepto por el importe que se obtenga de dividir la cantidad resultante de la aplicación del 10 % del gasto total o el límite máximo de 1.000 euros, si procede, por el número de declarantes con derecho a la deducción.",
+        "343: 6. Al efecto de la aplicación de esta deducción, son familias numerosas las que define la Ley 40/2003, de 18 de noviembre, de protección a las familias numerosas.",
+        "344: 7. Los contribuyentes tienen que identificar el arrendador o arrendadora de la vivienda haciendo constar el NIF en la declaración-liquidación correspondiente.",
+        "345: 8. Al efecto de la aplicación de esta deducción, y de conformidad con el artículo 94 de la Ley general tributaria, las entidades gestoras de la Seguridad Social deben facilitar la información relativa a las personas que han estado en el paro más de ciento ochenta y tres días durante el ejercicio.",
+        "346: 9. Esta deducción queda condicionada a la justificación documental adecuada y suficiente de los presupuestos de hecho y de los requisitos que determinan la aplicabilidad.»",
+        "347: 4. Con efectos del 1 de enero del 2025, se añade el artículo 612-11 al libro sexto del Código tributario de Cataluña, relativo a los tributos cedidos, con el siguiente texto:",
+        "348: «Artículo 612-11. Deducción por alquiler de la vivienda habitual de víctimas de violencia machista.",
+        "349: 1. La contribuyente que acredite tener la condición de víctima de violencia machista de acuerdo con la Ley 5/2008, de 24 de abril, del derecho de las mujeres a erradicar la violencia machista, puede deducir el 20 %, hasta un máximo de 1.000 euros anuales, de las cantidades satisfechas en el periodo impositivo en concepto de alquiler de la vivienda habitual, siempre que su base imponible total, menos el mínimo personal y familiar no sea superior a 30.000 euros anuales.",
+        "350: El porcentaje y el importe máximo de deducción se elevan hasta el 25 % y los 1.200 euros, si, además, la persona contribuyente tiene una discapacidad igual o superior al 65 % o si tiene algún hijo o hija menor de edad a cargo.",
+        "351: Esta deducción se puede disfrutar como máximo durante tres ejercicios consecutivos.",
+        "352: 2. La condición de víctima de violencia machista se acredita por alguno de los medios de prueba establecidos a la Ley 5/2008, de 24 de abril, del derecho de las mujeres a erradicar la violencia machista.»",
+        "353: 5. Con efectos del 1 de enero del 2025, se añade el artículo 612-12 al libro sexto del Código tributario de Cataluña, relativo a los tributos cedidos, con el siguiente texto:",
+        "354: «Artículo 612-12. Deducción por inversión en sociedades cooperativas agrarias y de vivienda."
+      ]
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/actual-read-scopes.json",
+    {
+      "source": "AEAT-legacy-regional",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/tramo-autonomico-deduccion-inversion-vivienda-habitual.html",
+      "raw_sha256": "dea30341a531f4318c0c613f52ce6df641f16993a1dca587c0b70852eacbfa75",
+      "reader_sha256": "7304a9ed57630ccf943f65e8119f5d59cf66001c8a944e4758841a1b47dc4231",
+      "LF": [
+        1,
+        66
+      ],
+      "lines": [
+        "1: Agencia Tributaria: Tramo autonómico de la deducción por inversión en vivienda habitual",
+        "2: Saltar al contenido principal",
+        "3: Logotipo del Gobierno de España",
+        "4: Logotipo Organismo",
+        "5: Menú móvil",
+        "6: Menu",
+        "7: Inicio",
+        "8: Ayuda",
+        "9: Manuales, vídeos y folletos",
+        "10: Manuales prácticos",
+        "11: Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas",
+        "12: Comunidad Autónoma de Cataluña",
+        "13: Índice",
+        "14: Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas",
+        "15: Tramo autonómico de la deducción por inversión en vivienda habitual",
+        "16: Normativa:",
+        "17: Art.",
+        "18: 613-1 Decreto Legislativo 1/2024, de 12 de marzo, por el que se aprueba el libro sexto del Código tributario de Catalunya, que integra el texto refundido de los preceptos legales vigentes en Catalunya en materia de tributos cedidos",
+        "19: Para los contribuyentes a los que sea aplicable el régimen transitorio de la deducción por inversión en vivienda habitual que regula la disposición transitoria decimoctava de la Ley del",
+        "20: IRPF",
+        "21: , los porcentajes de deducción por inversión en vivienda habitual en el tramo autonómico son los siguientes:",
+        "22: El 7,5 por 100",
+        "23: , con carácter general.",
+        "24: El 15 por 100",
+        "25: , si se trata de las obras de adecuación de la vivienda habitual de personas con discapacidad a las que se refiere el número 4 del artículo 68.1 de la Ley del",
+        "26: IRPF",
+        "27: en la redacción vigente a 31 de diciembre de 2012.",
+        "28: Para los contribuyentes que han adquirido su vivienda habitual antes del 30 de julio de 2011 o han satisfecho antes de esta fecha cantidades para la construcción de la vivienda habitual (no incluye la rehabilitación ni la ampliación de la vivienda habitual) y tengan derecho a la deducción por inversión en vivienda se aplica un",
+        "29: porcentaje incrementado del 9 por 100",
+        "30: cuando se encuentren en alguna de las situaciones siguientes:",
+        "31: Tener",
+        "32: 32 años o menos",
+        "33: a la fecha de devengo del impuesto (normalmente, el 31 de diciembre).",
+        "34: Haber estado",
+        "35: en el paro durante 183 días o más",
+        "36: durante el ejercicio.",
+        "37: Tener un grado de",
+        "38: discapacidad igual o superior al 65 por 100",
+        "39: .",
+        "40: Formar parte de una",
+        "41: unidad familiar que incluya por lo menos un hijo",
+        "42: en la fecha de devengo del impuesto.",
+        "43: Para poder disfrutar del porcentaje del",
+        "44: 9 por 100",
+        "45: de deducción, es necesario que la",
+        "46: suma de la base imponible general y del ahorro menos el mínimo personal y familiar,",
+        "47: en la declaración del",
+        "48: IRPF",
+        "49: del contribuyente correspondiente al ejercicio en el que se aplica la deducción, no exceda de",
+        "50: 30.000 euros",
+        "51: .",
+        "52: En el caso de tributación conjunta, este límite se computa de modo individual",
+        "53: para cada uno de los contribuyentes que tenga derecho a la deducción por haber realizado inversiones en la vivienda habitual durante el ejercicio.",
+        "54: Generar PDF",
+        "55: Cerrar",
+        "56: La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.",
+        "57: Seleccione la información que desee incluir en el PDF:",
+        "58: Página actual",
+        "59: Apartado actual y subapartados",
+        "60: Todo el documento",
+        "61: Puede cancelar la generación del PDF en cualquier momento.",
+        "62: Cancelar",
+        "63: Continuar",
+        "64: Accesibilidad",
+        "65: Página actualizada:",
+        "66: 17/marzo/2026"
+      ]
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/actual-read-scopes.json",
+    {
+      "source": "AEAT-rent-ordinary",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+      "raw_sha256": "7336ae953dab60ec38da0e62e1332fa3e23b6cd62427bcb10fef24e265f761f9",
+      "reader_sha256": "bef8b7db92263a12ad225dabc5a5f8c824fa1354f949ed0ae6f23c66bcbe0f7b",
+      "LF": [
+        1,
+        110
+      ],
+      "lines": [
+        "1: Agencia Tributaria: Por alquiler de la vivienda habitual",
+        "2: Saltar al contenido principal",
+        "3: Logotipo del Gobierno de España",
+        "4: Logotipo Organismo",
+        "5: Menú móvil",
+        "6: Menu",
+        "7: Inicio",
+        "8: Ayuda",
+        "9: Manuales, vídeos y folletos",
+        "10: Manuales prácticos",
+        "11: Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas",
+        "12: Comunidad Autónoma de Cataluña",
+        "13: Índice",
+        "14: Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas",
+        "15: Por alquiler de la vivienda habitual",
+        "16: Normativa:",
+        "17: Art.",
+        "18: 612-3 Decreto Legislativo 1/2024, de 12 de marzo, por el que se aprueba el libro sexto del Código tributario de Catalunya, que integra el texto refundido de los preceptos legales vigentes en Catalunya en materia de tributos cedidos",
+        "19: Cuantía y límite máximo de la deducción",
+        "20: A. En general",
+        "21: El 10 por 100",
+        "22: de las cantidades satisfechas en el período impositivo en concepto de alquiler de la vivienda habitual,",
+        "23: simpre que el contribuyente se encuentre en alguna de las situaciones siguientes",
+        "24: :",
+        "25: Tener",
+        "26: 35 años o menos",
+        "27: a la fecha de devengo del impuesto (normalmente, el 31 de diciembre).",
+        "28: Haber estado",
+        "29: en paro durante 183 días o más",
+        "30: durante el ejercicio.",
+        "31: A efectos de la aplicación de esta deducción, y de conformidad con el artículo 94 de la",
+        "32: LGT",
+        "33: , las entidades gestoras de la Seguridad Social deben facilitar la información relativa a las personas que han estado en paro más de 183 días durante el ejercicio.",
+        "34: Tener un",
+        "35: grado de discapacidad igual o superior al 65 por 100",
+        "36: .",
+        "37: Ser",
+        "38: viudo o viuda",
+        "39: y tener",
+        "40: 65 años o más",
+        "41: .",
+        "42: En el caso de matrimonios en régimen económico de gananciales, y en el supuesto de que el arrendamiento de la vivienda habitual solo esté a nombre de uno de los consortes, solo el consorte que figure en el contrato de arrendamiento tiene derecho a la deducción por alquiler de la vivienda habitual cuando cumpla los requisitos exigidos.",
+        "43: El límite máximo será de 500 euros anuales",
+        "44: , siempre que se cumplan los requisitos que se indican en el apartado \"Requisitos para la aplicación de la deducción\".",
+        "45: En el caso de",
+        "46: tributación conjunta",
+        "47: , si alguno de los declarantes se encuentra en alguna de las situaciones anteriores, el",
+        "48: límite máximo",
+        "49: de la deducción será de",
+        "50: 1.000 euros anuales",
+        "51: .",
+        "52: B. Para familias numerosas y monoparentales",
+        "53: El 10 por 100",
+        "54: de las cantidades satisfechas en el período impositivo en concepto de alquiler de la vivienda habitual, siempre que en la fecha de devengo del impuesto (normalmente, el 31 de diciembre) el contribuyente pertenezca a una",
+        "55: familia numerosa o monoparental",
+        "56: El límite máximo será de 1.000 euros anuales",
+        "57: , siempre que se cumplan los requisitos que se indican en el apartado \"Requisitos para la aplicación de la deducción\"",
+        "58: Respecto al concepto de",
+        "59: familia numerosa",
+        "60: véase la Ley 40/2003, de 18 de noviembre, de protección a las familias numerosas (",
+        "61: BOE",
+        "62: del 19).",
+        "63: Respecto al concepto de",
+        "64: familia monoparental",
+        "65: véase el artículo 2 de la Ley 18/2003, de 4 de julio, de apoyo a las familias y el artículo 4 del Decreto 151/2009, de 29 de septiembre, de desarrollo parcial de la citada Ley. Véase asimismo el comentario sobre familia monoparental que figura en la deducción “Por el nacimiento o adopción de un hijo”.",
+        "66: Requisito para la aplicación de la deducción",
+        "67: Que la suma de las bases imponibles general y del ahorro del contribuyente menos el mínimo personal y familiar",
+        "68: , suma de las casillas",
+        "69: [0435]",
+        "70: y",
+        "71: [0460]",
+        "72: menos el importe de la casilla",
+        "73: [0520]",
+        "74: de la declaración,",
+        "75: no supere las siguientes cuantías",
+        "76: :",
+        "77: 30.000 euros,",
+        "78: en tributación individual.",
+        "79: 45.000 euros,",
+        "80: en tributación conjunta.",
+        "81: Otras condiciones para la aplicación de la deducción",
+        "82: Esta deducción solo puede aplicarse una vez",
+        "83: , con independencia de que en un mismo contribuyente puedan concurrir más de una circunstancia de las establecidas en primer punto de la letra A (\"En general\") del apartado “Cuantías y límites máximos de la deducción\".",
+        "84: Una misma vivienda no puede dar lugar a la aplicación de una deducción superior a 1.000 euros",
+        "85: . De acuerdo con esto, si por una misma vivienda tiene derecho a la deducción más de un contribuyente, cada uno de ellos podrá aplicar en su declaración el importe que se obtenga de dividir la cantidad resultante de la aplicación del",
+        "86: 10 por 100 del gasto total",
+        "87: o el",
+        "88: límite máximo de 1.000 euros",
+        "89: , si procede, por el número de declarantes con derecho a la deducción.",
+        "90: Los contribuyentes deben identificar al arrendador o arrendadora de la vivienda haciendo constar su",
+        "91: NIF",
+        "92: en la declaración-liquidación correspondiente.",
+        "93: La aplicación de esta deducción queda condicionada a la",
+        "94: justificación documental",
+        "95: adecuada y suficiente de los presupuestos de hecho y de los requisitos que determinan su aplicabilidad.",
+        "96: Importante:",
+        "97: una vez introducida por los contribuyentes con derecho a la deducción la información necesaria para su cálculo, será automáticamente trasladada al apartado \"Información adicional a la deducción autonómica por arrendamiento de Andalucía, Principado de Asturias, Illes Balears, Canarias, Cantabria, Castilla-La Mancha, Castilla y León, Cataluña, Extremadura, Galicia, Madrid, Región de Murcia, La Rioja y Comunitat Valenciana\" del Anexo B.11 de la declaración.",
+        "98: Generar PDF",
+        "99: Cerrar",
+        "100: La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.",
+        "101: Seleccione la información que desee incluir en el PDF:",
+        "102: Página actual",
+        "103: Apartado actual y subapartados",
+        "104: Todo el documento",
+        "105: Puede cancelar la generación del PDF en cualquier momento.",
+        "106: Cancelar",
+        "107: Continuar",
+        "108: Accesibilidad",
+        "109: Página actualizada:",
+        "110: 17/marzo/2026"
+      ]
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-private-method/actual-read-scopes.json",
+    {
+      "source": "AEAT-rent-victim",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual-victimas-violencia-machista.html",
+      "raw_sha256": "fdc4bdb8ef13298683190ab49f583bcd6507133393bb6703dd265db497e809c9",
+      "reader_sha256": "5a23779fe82b889c678d56f571cbb774e3784449505e888be18c56a3a9003890",
+      "LF": [
+        1,
+        89
+      ],
+      "lines": [
+        "1: Agencia Tributaria: Por alquiler de la vivienda habitual de víctimas de violencia machista",
+        "2: Saltar al contenido principal",
+        "3: Logotipo del Gobierno de España",
+        "4: Logotipo Organismo",
+        "5: Menú móvil",
+        "6: Menu",
+        "7: Inicio",
+        "8: Ayuda",
+        "9: Manuales, vídeos y folletos",
+        "10: Manuales prácticos",
+        "11: Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas",
+        "12: Comunidad Autónoma de Cataluña",
+        "13: Índice",
+        "14: Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas",
+        "15: Por alquiler de la vivienda habitual de víctimas de violencia machista",
+        "16: Normativa:",
+        "17: Art.",
+        "18: 612-11 Decreto Legislativo 1/2024, de 12 de marzo, por el que se aprueba el libro sexto del Código tributario de Catalunya, que integra el texto refundido de los preceptos legales vigentes en Catalunya en materia de tributos cedidos",
+        "19: Cuantías y límites máximos de la deducción",
+        "20: En general",
+        "21: :",
+        "22: El",
+        "23: 20 por 100 de las cantidades satisfechas",
+        "24: en el período impositivo en concepto de",
+        "25: alquiler de la vivienda habitual",
+        "26: .",
+        "27: Se establece un",
+        "28: límite máximo",
+        "29: de",
+        "30: 1.000 euros anuales",
+        "31: .",
+        "32: Si la contribuyente tiene una",
+        "33: discapacidad igual o superior al 65 por 100",
+        "34: o",
+        "35: algún hijo o hija menor de edad a cargo",
+        "36: :",
+        "37: El",
+        "38: hijo o hija menor de edad a cargo",
+        "39: deberá generar al contribuyente el derecho a la aplicación del mínimo por descendientes.",
+        "40: El",
+        "41: 25 por 100 de las cantidades satisfechas",
+        "42: en el período impositivo en concepto de",
+        "43: alquiler de la vivienda habitual",
+        "44: .",
+        "45: Se establece un",
+        "46: límite máximo",
+        "47: de",
+        "48: 1.200 euros anuales",
+        "49: .",
+        "50: Requisitos para la aplicación de la deducción",
+        "51: Que la contribuyente",
+        "52: acredite",
+        "53: tener la condición de",
+        "54: víctima de violencia machista",
+        "55: de acuerdo con la Ley 5/2008, de 24 de abril, del derecho de las mujeres a erradicar la violencia machista, por alguno de los medios de prueba en ella establecidos.",
+        "56: Que la contribuyente figure como",
+        "57: titular",
+        "58: del contrato de alquiler.",
+        "59: Que la suma de las bases imponibles general y del ahorro del contribuyente menos el mínimo personal y familiar",
+        "60: , suma de las casillas",
+        "61: [0435]",
+        "62: y",
+        "63: [0460]",
+        "64: menos el importe de la casilla",
+        "65: [0520]",
+        "66: de la declaración,",
+        "67: no sea superior a 30.000 euros anuales",
+        "68: .",
+        "69: Otras condiciones para la aplicación de la deducción",
+        "70: Una misma vivienda no puede dar lugar a la aplicación de una deducción superior a 1.000 euros (1.200 euros en caso de discapacidad de la contribuyente o con hijo menor a cargo).",
+        "71: Ámbito temporal de aplicación de la deducción",
+        "72: La deducción resultará aplicable como máximo durante",
+        "73: tres ejercicios consecutivos",
+        "74: .",
+        "75: Importante:",
+        "76: una vez introducida por los contribuyentes con derecho a la deducción la información necesaria para su cálculo, será automáticamente trasladada al apartado \"Información adicional a la deducción autonómica de Cataluña por alquiler de la vivienda habitual de víctimas de violencia machista\" del Anexo B.15 de la declaración.",
+        "77: Generar PDF",
+        "78: Cerrar",
+        "79: La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.",
+        "80: Seleccione la información que desee incluir en el PDF:",
+        "81: Página actual",
+        "82: Apartado actual y subapartados",
+        "83: Todo el documento",
+        "84: Puede cancelar la generación del PDF en cualquier momento.",
+        "85: Cancelar",
+        "86: Continuar",
+        "87: Accesibilidad",
+        "88: Página actualizada:",
+        "89: 17/marzo/2026"
+      ]
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/source-read-ledger.json",
+    {
+      "name": "law-9-1999-original",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2000-6844",
+      "acquired": "2026-10-28T11:30:39.610138+00:00",
+      "http_status": 200,
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/sources/law-9-1999-original.html",
+      "raw_sha256": "2f693a27f38740811bbefd8c7bf99f042dc1ec87f5c60f5805df12f6e1b81684",
+      "raw_bytes": 149586,
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/sources/law-9-1999-original.reader.txt",
+      "reader_sha256": "dcab98ba298157f3f85b2f505667fb4059898d528c115f4f57b95ee94841bad2",
+      "actual_read_ranges": [
+        [
+          83,
+          96
+        ]
+      ],
+      "read_note": "Selected native LF operative text actually emitted/read. Requested historicalp20121231withouttn returned current body and is rejected, not used as old law. Full large-law reading not claimed."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/source-read-ledger.json",
+    {
+      "name": "euro-conversion-reg",
+      "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-1998-82362",
+      "acquired": "2026-10-28T11:34:06.194363+00:00",
+      "http_status": 200,
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/sources/euro-conversion-reg.html",
+      "raw_sha256": "95d6b1a240e4846f107433157382d6e2b093dbc2b817bb188b298f2e4294f6e0",
+      "raw_bytes": 24531,
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/sources/euro-conversion-reg.reader.txt",
+      "reader_sha256": "fc4154aa19fe87be40252b84a7a171934887f8a83a750cf8f196e19b205623f3",
+      "actual_read_ranges": [
+        [
+          59,
+          77
+        ]
+      ],
+      "read_note": "Selected native LF operative text actually emitted/read. Requested historicalp20121231withouttn returned current body and is rejected, not used as old law. Full large-law reading not claimed."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/source-read-ledger.json",
+    {
+      "name": "euro-law-current",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-29216",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/sources/euro-law-current.html",
+      "raw_sha256": "dec6a904631f8163353c7a2b01a59cc3941651a848685bcc49ec839d64fba2e3",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/sources/euro-law-current.reader.txt",
+      "reader_sha256": "a937a3ad510540ddac0cbd692574f219e9511137c28d41607dedd29a5e788a70",
+      "note": "Successful retained body from partially failed acquisition; ECB guessed URL404. Acquisition time is filesystem mtime, not invented exactHTTPtimestamp.",
+      "file_mtime_utc": "2026-10-28T11:32:19.874586+00:00",
+      "status": "retained substantive law; actual reading pending",
+      "actual_read_ranges": [
+        [
+          277,
+          283
+        ],
+        [
+          426,
+          428
+        ]
+      ],
+      "read_note": "Selected native LF operative text actually emitted/read. Requested historicalp20121231withouttn returned current body and is rejected, not used as old law. Full large-law reading not claimed."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/acquisition-extra-success.json",
+    {
+      "name": "euro-conversion-reg",
+      "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-1998-82362",
+      "acquired": "2026-10-28T11:34:06.194363+00:00",
+      "http_status": 200,
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/sources/euro-conversion-reg.html",
+      "raw_sha256": "95d6b1a240e4846f107433157382d6e2b093dbc2b817bb188b298f2e4294f6e0",
+      "raw_bytes": 24531,
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/sources/euro-conversion-reg.reader.txt",
+      "reader_sha256": "fc4154aa19fe87be40252b84a7a171934887f8a83a750cf8f196e19b205623f3",
+      "actual_read_ranges": []
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/acquisition.json",
+    {
+      "name": "law-9-1999-original",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2000-6844",
+      "acquired": "2026-10-28T11:30:39.610138+00:00",
+      "http_status": 200,
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/sources/law-9-1999-original.html",
+      "raw_sha256": "2f693a27f38740811bbefd8c7bf99f042dc1ec87f5c60f5805df12f6e1b81684",
+      "raw_bytes": 149586,
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/sources/law-9-1999-original.reader.txt",
+      "reader_sha256": "dcab98ba298157f3f85b2f505667fb4059898d528c115f4f57b95ee94841bad2",
+      "actual_read_ranges": []
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/acquisition-partial-correction.json",
+    {
+      "name": "euro-law-current",
+      "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-29216",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/sources/euro-law-current.html",
+      "raw_sha256": "dec6a904631f8163353c7a2b01a59cc3941651a848685bcc49ec839d64fba2e3",
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Murcia-preserved-home-private-method/sources/euro-law-current.reader.txt",
+      "reader_sha256": "a937a3ad510540ddac0cbd692574f219e9511137c28d41607dedd29a5e788a70",
+      "note": "Successful retained body from partially failed acquisition; ECB guessed URL404. Acquisition time is filesystem mtime, not invented exactHTTPtimestamp.",
+      "file_mtime_utc": "2026-10-28T11:32:19.874586+00:00",
+      "status": "retained substantive law; actual reading pending"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Extremadura-rental-rehab-independent-review/own-source-map.json",
+    {
+      "name": "AEAT-completion",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_10-extremadura/10_10_15-inversiones-rehabilitacion-zonas-rurales.html",
+      "scope": "lossless retained raw/reader copied and verified; reviewer own actualreading separately recorded",
+      "raw_path": "sources/AEAT-completion.html",
+      "raw_sha256": "d5fe002c953d38e9ccb8b0da8397c5f9e0cb6525477362db9d5f25c599e399b7",
+      "reader_path": "sources/AEAT-completion.reader.txt",
+      "reader_sha256": "0247ca5ecbcf7f8affd5e2fb480f1ca921551aca40b3f2945bab3e9f67f61396"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-source/pdf-fetch-receipts.json",
+    {
+      "name": "initial",
+      "url": "https://portaldogc.gencat.cat/utilsEADOP/AppJava/PdfProviderServlet?versionId=2136736&type=01",
+      "status": 200,
+      "final_url": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9611/2136736.pdf",
+      "bytes": 1195097,
+      "sha256": "417aed03c939d56ae1aa5ac4c10a472b50769347efda4e09dd1a363ea7b3bace"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-source/pdf-fetch-receipts.json",
+    {
+      "name": "additional",
+      "url": "https://portaldogc.gencat.cat/utilsEADOP/AppJava/PdfProviderServlet?versionId=2172440&type=01",
+      "status": 200,
+      "final_url": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9760/2172440.pdf",
+      "bytes": 709333,
+      "sha256": "263495540c60ec31d94fd28ed13ab0ef41662ef98a25e625ca5beb20918ccd90"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-source/fetch-receipts.json",
+    {
+      "name": "atc",
+      "url": "https://atc.gencat.cat/ca/tributs/itpajd/tpo/tarifes-tipus/",
+      "final_url": "https://atc.gencat.cat/ca/tributs/itpajd/tpo/tarifes-tipus/",
+      "status": 200,
+      "bytes": 225737,
+      "sha256": "65aaf6eb55ae26d239cee20ab891b4df3b6b9cc96971d7e5ff3b37194a98a576"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-council-85-correction/source-read-ledger.json",
+    {
+      "id": "Council085-2026",
+      "url": "https://www.knosys.es/ccgalicia/knpag?lang=GAL&x=index",
+      "official_referral": "https://ccgalicia.es/",
+      "search": {
+        "year": "2026",
+        "text": "material escolar",
+        "selected_opinion": "085/2026",
+        "date": "25/03/2026"
+      },
+      "retained_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-council-85-correction/opinion-085-2026-full-browser-AX.txt",
+      "sha256": "048df42e9467e57c45df68add6fad087e4323e99ce5307d10d3875c025c7ad01",
+      "evidence_type": "Actual full rendered browser AX snapshot including results and opinion, no raw HTTP source or PDF claim",
+      "actual_read_scope": "Entire opinion text AX287–453 read by root before compaction, and considerations4/5/conclusion reread from retained file. Native LF446 carries AX449 per-descendant sentence; native LF450 carries AX453 conclusion. Search result preceding opinion not treated as substantive evidence.",
+      "whole_opinion_read": true,
+      "whole_browser_search_result_audit": false,
+      "advisory_on_draft": true,
+      "binding_ruling_or_annulment": false
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/F03-source-receipt.json",
+    {
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deduccion-inversion-empresas-nueva-reciente-creacion/limite-deduccion-comprobacion-situacion-patrimonial.html",
+      "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deduccion-inversion-empresas-nueva-reciente-creacion/limite-deduccion-comprobacion-situacion-patrimonial.html",
+      "status": 200,
+      "headers": {
+        "date": "Wed, 28 Oct 2026 00:21:01 GMT",
+        "server": "Apache",
+        "x-frame-options": "SAMEORIGIN",
+        "last-modified": "Tue, 17 Mar 2026 19:23:18 GMT",
+        "accept-ranges": "bytes",
+        "content-length": "10121",
+        "content-security-policy": "frame-ancestors 'self' *.agenciatributaria.gob.es",
+        "x-site": "Sede",
+        "content-type": "text/html",
+        "x-xss-protection": "1; mode=block",
+        "strict-transport-security": "max-age=31536000; includeSubDomains",
+        "Connection": "close"
+      },
+      "bytes": 10121,
+      "sha256": "25b9b1e7335cff15cd61e419a5ec96a4b98db79d0ca37f5373080354e35686fe",
+      "path": "sources/d411d01c2509b14beedb.body",
+      "fetched_utc": "2026-10-28T00:21:01.020719Z",
+      "read_scope": [
+        "Complete substantive startup wealth-test explanation, read in web result and raw body"
+      ]
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Asturias-landlord-reference-private-method/source-read-ledger.json",
+    {
+      "id": "AEAT-completion",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_3-principado-asturias/10_3_22-gastos-derivados-arrendamiento-viviendas.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Asturias-landlord-reference-private-method/sources/AEAT-completion.html",
+      "raw_sha256": "aa5c10c55c8cc6d648b4d226b54799d45bec4e6535c1ba44950e5d5a15339c44",
+      "raw_bytes": 10963,
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Asturias-landlord-reference-private-method/sources/AEAT-completion.reader.txt",
+      "reader_sha256": "3454df541f395748533c1bba0fd80cc3842f53a6c9543beb403e94e67f4a4ec1",
+      "reader_lines": 45,
+      "actual_read_native_LF_ranges": [
+        [
+          1,
+          45
+        ]
+      ],
+      "scope": "Fresh scoped read-only curl/TLS verified acquisition; full45-line reader read. Inclusion29; does not repeat contrary exclusion. No actual software behaviour inferred."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-independent-review/own-source-read-ledger.json",
+    {
+      "name": "2025-enactment",
+      "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2025-10270",
+      "raw": "sources/2025-enactment.html",
+      "raw_sha256": "378da95b8dce3fd90ad16734ef70e85748ddd5b6a11c84819ae87ad46099fde0",
+      "reader": "sources/2025-enactment.reader.txt",
+      "reader_sha256": "0225bbc004d1b853e0756dff864571d8d551d8992cedf4ac2cd4b79a4dfc0fa8",
+      "actual_read_scopes": [
+        [
+          330,
+          354
+        ]
+      ],
+      "scope_note": "Native LF, split on newline; entire raw acquired, only listed reader ranges claimed read.",
+      "root_personally_read_native_LF_scopes": [
+        [
+          330,
+          354
+        ]
+      ],
+      "root_scope": "Exact supplied primary reader scopes personally read; source reuse, no own new fetch/full large-law read. New fresh current law reader exactly matches retained current law reader. Saved runtime is selected author AX transcription, no root software replay/PNG inspection."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-independent-review/own-source-read-ledger.json",
+    {
+      "name": "AEAT-legacy-regional",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/tramo-autonomico-deduccion-inversion-vivienda-habitual.html",
+      "raw": "sources/AEAT-legacy-regional.html",
+      "raw_sha256": "dea30341a531f4318c0c613f52ce6df641f16993a1dca587c0b70852eacbfa75",
+      "reader": "sources/AEAT-legacy-regional.reader.txt",
+      "reader_sha256": "7304a9ed57630ccf943f65e8119f5d59cf66001c8a944e4758841a1b47dc4231",
+      "actual_read_scopes": [
+        [
+          1,
+          66
+        ]
+      ],
+      "scope_note": "Native LF, split on newline; entire raw acquired, only listed reader ranges claimed read.",
+      "root_personally_read_native_LF_scopes": [
+        [
+          1,
+          66
+        ]
+      ],
+      "root_scope": "Exact supplied primary reader scopes personally read; source reuse, no own new fetch/full large-law read. New fresh current law reader exactly matches retained current law reader. Saved runtime is selected author AX transcription, no root software replay/PNG inspection."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-independent-review/own-source-read-ledger.json",
+    {
+      "name": "AEAT-rent-ordinary",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual.html",
+      "raw": "sources/AEAT-rent-ordinary.html",
+      "raw_sha256": "7336ae953dab60ec38da0e62e1332fa3e23b6cd62427bcb10fef24e265f761f9",
+      "reader": "sources/AEAT-rent-ordinary.reader.txt",
+      "reader_sha256": "bef8b7db92263a12ad225dabc5a5f8c824fa1354f949ed0ae6f23c66bcbe0f7b",
+      "actual_read_scopes": [
+        [
+          1,
+          110
+        ]
+      ],
+      "scope_note": "Native LF, split on newline; entire raw acquired, only listed reader ranges claimed read.",
+      "root_personally_read_native_LF_scopes": [
+        [
+          1,
+          110
+        ]
+      ],
+      "root_scope": "Exact supplied primary reader scopes personally read; source reuse, no own new fetch/full large-law read. New fresh current law reader exactly matches retained current law reader. Saved runtime is selected author AX transcription, no root software replay/PNG inspection."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-rent-legacy-joint-independent-review/own-source-read-ledger.json",
+    {
+      "name": "AEAT-rent-victim",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cataluna/alquiler-vivienda-habitual-victimas-violencia-machista.html",
+      "raw": "sources/AEAT-rent-victim.html",
+      "raw_sha256": "fdc4bdb8ef13298683190ab49f583bcd6507133393bb6703dd265db497e809c9",
+      "reader": "sources/AEAT-rent-victim.reader.txt",
+      "reader_sha256": "5a23779fe82b889c678d56f571cbb774e3784449505e888be18c56a3a9003890",
+      "actual_read_scopes": [
+        [
+          1,
+          89
+        ]
+      ],
+      "scope_note": "Native LF, split on newline; entire raw acquired, only listed reader ranges claimed read.",
+      "root_personally_read_native_LF_scopes": [
+        [
+          1,
+          89
+        ]
+      ],
+      "root_scope": "Exact supplied primary reader scopes personally read; source reuse, no own new fetch/full large-law read. New fresh current law reader exactly matches retained current law reader. Saved runtime is selected author AX transcription, no root software replay/PNG inspection."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-independent-review/own-actual-primary-read-ledger.json",
+    {
+      "source": "initial.pdf",
+      "url": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9611/2136736.pdf",
+      "raw": {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-independent-review/sources/initial.pdf",
+        "bytes": 1195097,
+        "sha256": "417aed03c939d56ae1aa5ac4c10a472b50769347efda4e09dd1a363ea7b3bace"
+      },
+      "actual_text_pages": [
+        1,
+        7,
+        9,
+        21,
+        22
+      ],
+      "actual_visual_pages": [
+        1,
+        7,
+        9,
+        22
+      ],
+      "scope": "Selectedoperativepageandrowsread;fullSep2pagesread,notallinitialmunicipalityrowsindividuallyread"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-independent-review/own-actual-primary-read-ledger.json",
+    {
+      "source": "additional.pdf",
+      "url": "https://portaldogc.gencat.cat/utilsEADOP/PDF/9760/2172440.pdf",
+      "raw": {
+        "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Catalan-municipal-annex-independent-review/sources/additional.pdf",
+        "bytes": 709333,
+        "sha256": "263495540c60ec31d94fd28ed13ab0ef41662ef98a25e625ca5beb20918ccd90"
+      },
+      "actual_text_pages": [
+        1,
+        2
+      ],
+      "actual_visual_pages": [
+        1,
+        2
+      ],
+      "scope": "Selectedoperativepageandrowsread;fullSep2pagesread,notallinitialmunicipalityrowsindividuallyread"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Extremadura-rental-rehab-day-grant-private-method/source-read-ledger.json",
+    {
+      "id": "AEAT-completion",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_10-extremadura/10_10_15-inversiones-rehabilitacion-zonas-rurales.html",
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Extremadura-rental-rehab-day-grant-private-method/sources/AEAT-completion.html",
+      "raw_sha256": "d5fe002c953d38e9ccb8b0da8397c5f9e0cb6525477362db9d5f25c599e399b7",
+      "raw_bytes": 15770,
+      "reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Extremadura-rental-rehab-day-grant-private-method/sources/AEAT-completion.reader.txt",
+      "reader_sha256": "0247ca5ecbcf7f8affd5e2fb480f1ca921551aca40b3f2945bab3e9f67f61396",
+      "reader_lines": 73,
+      "actual_read_native_LF_ranges": [
+        [
+          1,
+          73
+        ]
+      ],
+      "scope": "Fresh scoped TLS-verifiedcurl public acquisition; full73-line reader read. Requests finish and distinct rented/offered days aftercompletion. Updated16Mar2026. Separate from observing program calculations."
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F03-startup-wealth-gate/source-receipts.json",
+    {
+      "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deduccion-inversion-empresas-nueva-reciente-creacion/limite-deduccion-comprobacion-situacion-patrimonial.html",
+      "status": 200,
+      "bytes": 10121,
+      "sha256": "25b9b1e7335cff15cd61e419a5ec96a4b98db79d0ca37f5373080354e35686fe",
+      "scope": "Entire short startup wealth-check instruction; explicitly2025manual under unchangedcurrent70"
+    }
+  ],
+  [
+    "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-council-85-independent-review/source-read-ledger.json",
+    {
+      "id": "CC85",
+      "url": "https://www.knosys.es/ccgalicia/knpag?lang=GAL&x=index",
+      "document": "Consello Consultivo085/2026 issued25March2026; database doc_20057, material escolar; official ccgalicia.es linked public database as observed by root",
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-Galicia-council-85-correction/opinion-085-2026-full-browser-AX.txt",
+      "sha256": "048df42e9467e57c45df68add6fad087e4323e99ce5307d10d3875c025c7ad01",
+      "actual_read_native_LF_ranges": [
+        [
+          1,
+          160
+        ],
+        [
+          161,
+          305
+        ],
+        [
+          306,
+          400
+        ],
+        [
+          401,
+          453
+        ]
+      ],
+      "critical_native_lines": {
+        "date": 248,
+        "Cuarta": 398,
+        "draft_article4": 403,
+        "700_vs300": 407,
+        "legality_objection": [
+          408,
+          411
+        ],
+        "Quinta": 413,
+        "per_descendant_sentence": 446,
+        "conclusion": 450
+      },
+      "scope": "Root acquired full actual browser AX retained in this file. I read every actual nativeLF1–453; no independent direct browser visit, HTML acquisition, metadata-only inference or enacted amendment claimed."
+    }
+  ]
+]

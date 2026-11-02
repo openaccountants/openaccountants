@@ -1,0 +1,1632 @@
+[
+  {
+    "lf": 17,
+    "section": "Metadata",
+    "wording": "Compute the payer's 2026 IRPF withholding remittance from payments made, then reconcile Modelo 111 with recipient records, Modelo 190 and certificates.",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0001"
+  },
+  {
+    "lf": 17,
+    "section": "Metadata",
+    "wording": "This revision is sourced from the law",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0002"
+  },
+  {
+    "lf": 17,
+    "section": "Metadata",
+    "wording": "independent whole-pack review is pending and no accountant has signed it off.",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0003"
+  },
+  {
+    "lf": 21,
+    "section": "## Who this applies to",
+    "wording": "[RIRPF art. 76](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a76) makes legal persons/entities, business individuals paying in their activity and the specified non-resident payers withholding agents when they pay subject income.",
+    "authority": "RIRPF art.76",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a76",
+    "quote": "sources/RIRPF.reader.txt LF4372–4372: “Las personas jurídicas y demás entidades, incluidas las comunidades de propietarios y las entidades en régimen de atribución de rentas.”; sources/RIRPF.reader.txt LF4374–4374: “cuando satisfagan rentas en el ejercicio de sus actividades.”; sources/RIRPF.reader.txt LF4378–4378: “sin mediación de establecimiento permanente, en cuanto a los rendimientos del trabajo que satisfagan, así como respecto de otros rendimientos sometidos a retención o ingreso a cuenta que constituyan gasto deducible para”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0004"
+  },
+  {
+    "lf": 21,
+    "section": "## Who this applies to",
+    "wording": "A private consumer paying outside an economic activity is not brought into the ordinary business-payer rule merely by receiving a professional invoice.",
+    "authority": "RIRPF art.76",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a76",
+    "quote": "sources/RIRPF.reader.txt LF4372–4372: “Las personas jurídicas y demás entidades, incluidas las comunidades de propietarios y las entidades en régimen de atribución de rentas.”; sources/RIRPF.reader.txt LF4374–4374: “cuando satisfagan rentas en el ejercicio de sus actividades.”; sources/RIRPF.reader.txt LF4378–4378: “sin mediación de establecimiento permanente, en cuanto a los rendimientos del trabajo que satisfagan, así como respecto de otros rendimientos sometidos a retención o ingreso a cuenta que constituyan gasto deducible para”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0005"
+  },
+  {
+    "lf": 21,
+    "section": "## Who this applies to",
+    "wording": "A foreign employer without a Spanish permanent establishment can still have employment-withholding duties under art. 76.1.d",
+    "authority": "RIRPF art.76",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a76",
+    "quote": "sources/RIRPF.reader.txt LF4372–4372: “Las personas jurídicas y demás entidades, incluidas las comunidades de propietarios y las entidades en régimen de atribución de rentas.”; sources/RIRPF.reader.txt LF4374–4374: “cuando satisfagan rentas en el ejercicio de sus actividades.”; sources/RIRPF.reader.txt LF4378–4378: “sin mediación de establecimiento permanente, en cuanto a los rendimientos del trabajo que satisfagan, así como respecto de otros rendimientos sometidos a retención o ingreso a cuenta que constituyan gasto deducible para”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0006"
+  },
+  {
+    "lf": 21,
+    "section": "## Who this applies to",
+    "wording": "do not assume that absence of a PE removes every withholding duty.",
+    "authority": "RIRPF art.76",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a76",
+    "quote": "sources/RIRPF.reader.txt LF4372–4372: “Las personas jurídicas y demás entidades, incluidas las comunidades de propietarios y las entidades en régimen de atribución de rentas.”; sources/RIRPF.reader.txt LF4374–4374: “cuando satisfagan rentas en el ejercicio de sus actividades.”; sources/RIRPF.reader.txt LF4378–4378: “sin mediación de establecimiento permanente, en cuanto a los rendimientos del trabajo que satisfagan, así como respecto de otros rendimientos sometidos a retención o ingreso a cuenta que constituyan gasto deducible para”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0007"
+  },
+  {
+    "lf": 23,
+    "section": "## Who this applies to",
+    "wording": "[Orden EHA/586/2011 art. 2](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2) puts the following in Modelo 111: employment",
+    "authority": "Order111 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2",
+    "quote": "sources/Order111.reader.txt LF436–436: “Rendimientos del trabajo.”; sources/Order111.reader.txt LF448–448: “explotación del derecho de imagen, a los que se refiere el artículo 75.2.b) del Reglamento del Impuesto, cuando provengan de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0008"
+  },
+  {
+    "lf": 23,
+    "section": "## Who this applies to",
+    "wording": "the listed professional, agricultural/livestock, forestry and specified modules income",
+    "authority": "Order111 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2",
+    "quote": "sources/Order111.reader.txt LF436–436: “Rendimientos del trabajo.”; sources/Order111.reader.txt LF448–448: “explotación del derecho de imagen, a los que se refiere el artículo 75.2.b) del Reglamento del Impuesto, cuando provengan de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0009"
+  },
+  {
+    "lf": 23,
+    "section": "## Who this applies to",
+    "wording": "the listed rights/assistance/leasing income **when from economic activities**",
+    "authority": "Order111 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2",
+    "quote": "sources/Order111.reader.txt LF436–436: “Rendimientos del trabajo.”; sources/Order111.reader.txt LF448–448: “explotación del derecho de imagen, a los que se refiere el artículo 75.2.b) del Reglamento del Impuesto, cuando provengan de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0010"
+  },
+  {
+    "lf": 23,
+    "section": "## Who this applies to",
+    "wording": "subject prizes",
+    "authority": "Order111 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2",
+    "quote": "sources/Order111.reader.txt LF436–436: “Rendimientos del trabajo.”; sources/Order111.reader.txt LF448–448: “explotación del derecho de imagen, a los que se refiere el artículo 75.2.b) del Reglamento del Impuesto, cuando provengan de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0011"
+  },
+  {
+    "lf": 23,
+    "section": "## Who this applies to",
+    "wording": "public-forest exploitation gains",
+    "authority": "Order111 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2",
+    "quote": "sources/Order111.reader.txt LF436–436: “Rendimientos del trabajo.”; sources/Order111.reader.txt LF448–448: “explotación del derecho de imagen, a los que se refiere el artículo 75.2.b) del Reglamento del Impuesto, cuando provengan de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0012"
+  },
+  {
+    "lf": 23,
+    "section": "## Who this applies to",
+    "wording": "and the specific art. 92.8 image-right payment on account.",
+    "authority": "Order111 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2",
+    "quote": "sources/Order111.reader.txt LF436–436: “Rendimientos del trabajo.”; sources/Order111.reader.txt LF448–448: “explotación del derecho de imagen, a los que se refiere el artículo 75.2.b) del Reglamento del Impuesto, cuando provengan de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0013"
+  },
+  {
+    "lf": 23,
+    "section": "## Who this applies to",
+    "wording": "Other withholding belongs in the form for its actual income category.",
+    "authority": "Order111 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2",
+    "quote": "sources/Order111.reader.txt LF436–436: “Rendimientos del trabajo.”; sources/Order111.reader.txt LF448–448: “explotación del derecho de imagen, a los que se refiere el artículo 75.2.b) del Reglamento del Impuesto, cuando provengan de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0014"
+  },
+  {
+    "lf": 23,
+    "section": "## Who this applies to",
+    "wording": "This is not a return for every payment bearing the word retención.",
+    "authority": "Order111 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2",
+    "quote": "sources/Order111.reader.txt LF436–436: “Rendimientos del trabajo.”; sources/Order111.reader.txt LF448–448: “explotación del derecho de imagen, a los que se refiere el artículo 75.2.b) del Reglamento del Impuesto, cuando provengan de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0015"
+  },
+  {
+    "lf": 25,
+    "section": "## Who this applies to",
+    "wording": "An ordinary service invoice from an SL/SA taxed under corporate tax is not an individual's professional IRPF income merely because the company is an SLP or its work is professional.",
+    "authority": "LIRPF art.8; LIS art.7; LIRPF art.27",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a8; https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a7; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a27",
+    "quote": "sources/LIRPF.reader.txt LF1686–1686: “Las personas físicas que tengan su residencia habitual en territorio español.”; sources/LIS.reader.txt LF1287–1287: “Las personas jurídicas, excluidas las sociedades civiles que no tengan objeto mercantil.”; sources/LIRPF.reader.txt LF2794–2794: “Rendimientos íntegros de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0016"
+  },
+  {
+    "lf": 25,
+    "section": "## Who this applies to",
+    "wording": "Determine the recipient's legal/tax status, including any income-attribution entity, before selecting IRPF ([LIRPF arts. 8/27](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a8); [LIS arts. 4/7](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a7)).",
+    "authority": "LIRPF art.8; LIS art.7; LIRPF art.27",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a8; https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a7; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a27",
+    "quote": "sources/LIRPF.reader.txt LF1686–1686: “Las personas físicas que tengan su residencia habitual en territorio español.”; sources/LIS.reader.txt LF1287–1287: “Las personas jurídicas, excluidas las sociedades civiles que no tengan objeto mercantil.”; sources/LIRPF.reader.txt LF2794–2794: “Rendimientos íntegros de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0017"
+  },
+  {
+    "lf": 25,
+    "section": "## Who this applies to",
+    "wording": "Corporate, capital-income, property-rental and ordinary non-resident withholding have separate applicable routes.",
+    "authority": "LIRPF art.8; LIS art.7; LIRPF art.27",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a8; https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a7; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a27",
+    "quote": "sources/LIRPF.reader.txt LF1686–1686: “Las personas físicas que tengan su residencia habitual en territorio español.”; sources/LIS.reader.txt LF1287–1287: “Las personas jurídicas, excluidas las sociedades civiles que no tengan objeto mercantil.”; sources/LIRPF.reader.txt LF2794–2794: “Rendimientos íntegros de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0018"
+  },
+  {
+    "lf": 25,
+    "section": "## Who this applies to",
+    "wording": "Use [spain-payroll](spain-payroll.md) for employee rate computation and [es-estimated-tax](es-estimated-tax.md) for the professional's own instalments.",
+    "authority": "LIRPF art.8; LIS art.7; LIRPF art.27",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a8; https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a7; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a27",
+    "quote": "sources/LIRPF.reader.txt LF1686–1686: “Las personas físicas que tengan su residencia habitual en territorio español.”; sources/LIS.reader.txt LF1287–1287: “Las personas jurídicas, excluidas las sociedades civiles que no tengan objeto mercantil.”; sources/LIRPF.reader.txt LF2794–2794: “Rendimientos íntegros de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0019"
+  },
+  {
+    "lf": 29,
+    "section": "## Rates, bands and thresholds",
+    "wording": "All figures below apply to the relevant **2026 payments**, subject to the stated eligibility and territorial rules.",
+    "authority": "Express rule / sourced administrative form coordinate / working-paper application",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0020"
+  },
+  {
+    "lf": 33,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Ordinary professional activity | 15% of gross subject income paid | [RIRPF art. 95.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |",
+    "authority": "RIRPF art.95",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95",
+    "quote": "sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0021"
+  },
+  {
+    "lf": 34,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Starting professional activity | 7% in start tax period and following two, if no professional activity in the year before the start date and signed communication retained | [Art. 95.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |",
+    "authority": "RIRPF art.95",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95",
+    "quote": "sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0022"
+  },
+  {
+    "lf": 35,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Specified artistic professional activities | 7% if preceding-year qualifying gross income <15,000 and >75% of total gross work/economic income, with signed communication; other listed 7% cases also apply | [Art. 95.1.a–d](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |",
+    "authority": "RIRPF art.95",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95",
+    "quote": "sources/RIRPF.reader.txt LF5652–5652: “inferior a 15.000 euros y represente más del 75 por ciento de la suma de los rendimientos íntegros de actividades económicas y del trabajo obtenidos por el contribuyente en dicho ejercicio. Para la aplicación de este tipo de retención, los contribuyentes deberán”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0023"
+  },
+  {
+    "lf": 36,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Agriculture/livestock | 2%; pig-fattening/poultry 1%; exclude statutory subsidies/indemnities | [Art. 95.4](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |",
+    "authority": "RIRPF art.95",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95",
+    "quote": "sources/RIRPF.reader.txt LF5674–5674: “engorde de porcino y avicultura: 1 por ciento.”; sources/RIRPF.reader.txt LF5676–5676: “Restantes casos: 2 por ciento.”; sources/RIRPF.reader.txt LF5678–5678: “con excepción de las subvenciones corrientes y de capital y de las indemnizaciones.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0024"
+  },
+  {
+    "lf": 37,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Forestry activity | 2%, excluding statutory subsidies/indemnities | [Art. 95.5](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |",
+    "authority": "RIRPF art.95",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95",
+    "quote": "sources/RIRPF.reader.txt LF5692–5692: “actividad forestal, se aplicará el tipo de retención del 2 por ciento sobre los ingresos íntegros satisfechos, con excepción de las subvenciones corrientes y de capital y de las indemnizaciones.”; sources/RIRPF.reader.txt LF5692–5692: “2 por ciento sobre los ingresos íntegros satisfechos, con excepción de las subvenciones corrientes y de capital y de las indemnizaciones.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0025"
+  },
+  {
+    "lf": 38,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Listed business activities in objective assessment | 1%, subject to exact IAE list and communicated direct-assessment exclusion | [Art. 95.6](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |",
+    "authority": "RIRPF art.95",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95",
+    "quote": "sources/RIRPF.reader.txt LF5694–5694: “1 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5770–5770: “método de estimación directa, en cualquiera de sus modalidades.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0026"
+  },
+  {
+    "lf": 39,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Ordinary employment | Personalised annual/recalculated rate, not professional 15% | [Arts. 80–87](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a80) |",
+    "authority": "RIRPF art.80",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a80",
+    "quote": "sources/RIRPF.reader.txt LF4568–4568: “Con carácter general, el tipo de retención que resulte según el artículo 86 de este Reglamento.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0027"
+  },
+  {
+    "lf": 40,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Director/board office | 35%; 19% where last completed payer tax-period turnover <100,000, annualised if short | [Art. 80.1.3](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a80) |",
+    "authority": "RIRPF art.80",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a80",
+    "quote": "sources/RIRPF.reader.txt LF4572–4572: “35 por ciento para las retribuciones que se perciban por la condición de administradores y miembros de los Consejos de Administración, de las Juntas que hagan sus veces y demás miembros de”; sources/RIRPF.reader.txt LF4574–4574: “19 por ciento. Si dicho período impositivo hubiere tenido una duración inferior al año, el importe neto de la cifra de negocios se elevará al año.”; sources/RIRPF.reader.txt LF4574–4574: “100.000 euros, el porcentaje de retención e ingreso a cuenta será del 19 por ciento. Si dicho período impositivo hubiere tenido una duración inferior al año, el importe neto de la cifra”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0028"
+  },
+  {
+    "lf": 41,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Courses/conferences classified as employment | 15% | [Art. 80.1.4](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a80) |",
+    "authority": "RIRPF art.80",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a80",
+    "quote": "sources/RIRPF.reader.txt LF4576–4576: “15 por ciento para los rendimientos derivados de impartir cursos, conferencias, coloquios, seminarios y similares, o derivados de la elaboración de obras literarias, artísticas o científicas, siempre que se ceda el derecho”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0029"
+  },
+  {
+    "lf": 42,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Other listed rights/assistance/leasing income | 19%; intellectual property has 15% and specified 7% exceptions; direct image exploitation 24% | [Art. 101](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a101) |",
+    "authority": "RIRPF art.101",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a101",
+    "quote": "sources/RIRPF.reader.txt LF5986–5986: “24 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5988–5988: “19 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5990–5990: “15 por ciento¸ salvo cuando resulte de aplicación el tipo del 7 por ciento previsto en el número 4.º del apartado 1 del artículo 80 o en la letra d) del apartado”; sources/RIRPF.reader.txt LF5990–5990: “7 por ciento previsto en el número 4.º del apartado 1 del artículo 80 o en la letra d) del apartado 1 del artículo 95 de este reglamento. Igualmente, dicho porcentaje será”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0030"
+  },
+  {
+    "lf": 43,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Special image-right attribution payment on account | 19%, distinct from the direct exploitation rate | [Art. 107; LIRPF art. 92.8](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a107) |",
+    "authority": "RIRPF art.107",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a107",
+    "quote": "sources/RIRPF.reader.txt LF6102–6102: “19 por ciento.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0031"
+  },
+  {
+    "lf": 45,
+    "section": "## Rates, bands and thresholds",
+    "wording": "The start concession concerns **professional activity**, not every preceding economic activity, and runs for tax periods, not thirty-six rolling months.",
+    "authority": "RIRPF art.95; LIRPF art.None",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/RIRPF.reader.txt LF5654–5654: “reducirán en un 60 por ciento cuando los rendimientos tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto.”; sources/LIRPF.reader.txt LF10904–10904: “En los períodos impositivos 2022, 2023, 2024, 2025 y 2026, la deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta ley será aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla de La Palma, debiendo entenderse, a estos efectos, que las”; sources/LIRPF.reader.txt LF10906–10906: “en 2026, a partir de la entrada en vigor del Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0032"
+  },
+  {
+    "lf": 45,
+    "section": "## Rates, bands and thresholds",
+    "wording": "Keep the signed eligibility communication",
+    "authority": "RIRPF art.95; LIRPF art.None",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/RIRPF.reader.txt LF5654–5654: “reducirán en un 60 por ciento cuando los rendimientos tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto.”; sources/LIRPF.reader.txt LF10904–10904: “En los períodos impositivos 2022, 2023, 2024, 2025 y 2026, la deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta ley será aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla de La Palma, debiendo entenderse, a estos efectos, que las”; sources/LIRPF.reader.txt LF10906–10906: “en 2026, a partir de la entrada en vigor del Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0033"
+  },
+  {
+    "lf": 45,
+    "section": "## Rates, bands and thresholds",
+    "wording": "without it, do not apply the startup 7%.",
+    "authority": "RIRPF art.95; LIRPF art.None",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/RIRPF.reader.txt LF5654–5654: “reducirán en un 60 por ciento cuando los rendimientos tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto.”; sources/LIRPF.reader.txt LF10904–10904: “En los períodos impositivos 2022, 2023, 2024, 2025 y 2026, la deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta ley será aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla de La Palma, debiendo entenderse, a estos efectos, que las”; sources/LIRPF.reader.txt LF10906–10906: “en 2026, a partir de la entrada en vigor del Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0034"
+  },
+  {
+    "lf": 45,
+    "section": "## Rates, bands and thresholds",
+    "wording": "The art. 95.1 territorial reduction is 60% where the income actually qualifies under LIRPF art. 68.4.",
+    "authority": "RIRPF art.95; LIRPF art.None",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/RIRPF.reader.txt LF5654–5654: “reducirán en un 60 por ciento cuando los rendimientos tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto.”; sources/LIRPF.reader.txt LF10904–10904: “En los períodos impositivos 2022, 2023, 2024, 2025 y 2026, la deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta ley será aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla de La Palma, debiendo entenderse, a estos efectos, que las”; sources/LIRPF.reader.txt LF10906–10906: “en 2026, a partir de la entrada en vigor del Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0035"
+  },
+  {
+    "lf": 45,
+    "section": "## Rates, bands and thresholds",
+    "wording": "La Palma's 2026 extension has its dated withholding start under [DA 57](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#da-8)",
+    "authority": "RIRPF art.95; LIRPF art.None",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/RIRPF.reader.txt LF5654–5654: “reducirán en un 60 por ciento cuando los rendimientos tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto.”; sources/LIRPF.reader.txt LF10904–10904: “En los períodos impositivos 2022, 2023, 2024, 2025 y 2026, la deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta ley será aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla de La Palma, debiendo entenderse, a estos efectos, que las”; sources/LIRPF.reader.txt LF10906–10906: “en 2026, a partir de la entrada en vigor del Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0036"
+  },
+  {
+    "lf": 45,
+    "section": "## Rates, bands and thresholds",
+    "wording": "do not infer territorial relief from the invoice address alone.",
+    "authority": "RIRPF art.95; LIRPF art.None",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/RIRPF.reader.txt LF5654–5654: “reducirán en un 60 por ciento cuando los rendimientos tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto.”; sources/LIRPF.reader.txt LF10904–10904: “En los períodos impositivos 2022, 2023, 2024, 2025 y 2026, la deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta ley será aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla de La Palma, debiendo entenderse, a estos efectos, que las”; sources/LIRPF.reader.txt LF10906–10906: “en 2026, a partir de la entrada en vigor del Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0037"
+  },
+  {
+    "lf": 51,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "[RIRPF art. 78](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78) generally triggers withholding when income is **paid or credited**, not merely when the invoice is dated.",
+    "authority": "RIRPF art.78",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0038"
+  },
+  {
+    "lf": 51,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "For every payment keep payer/recipient NIF and legal status, subject category, gross income, VAT separately, payment date, rate evidence, cash withholding or payment on account, and the return period.",
+    "authority": "RIRPF art.78",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0039"
+  },
+  {
+    "lf": 51,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "Reconcile the subject income and remittance with the liability ledger and bank settlement.",
+    "authority": "RIRPF art.78",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0040"
+  },
+  {
+    "lf": 51,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "An unpaid invoice is not automatically included in that period's 111.",
+    "authority": "RIRPF art.78",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0041"
+  },
+  {
+    "lf": 53,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "For an ordinary professional invoice, apply the rate to gross professional income, excluding separately charged VAT.",
+    "authority": "RIRPF art.95; LIRPF art.28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a28",
+    "quote": "sources/RIRPF.reader.txt LF5638–5638: “ingresos íntegros satisfechos.”; sources/LIRPF.reader.txt LF2827–2827: “normas del Impuesto sobre Sociedades, sin perjuicio de las reglas especiales contenidas en este artículo, en el artículo 30 de esta Ley para la estimación directa, y en el artículo 31 de”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0042"
+  },
+  {
+    "lf": 53,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "Do not reduce the subject professional fee by the recipient's own expenses, employee Social Security or tax instalments.",
+    "authority": "RIRPF art.95; LIRPF art.28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a28",
+    "quote": "sources/RIRPF.reader.txt LF5638–5638: “ingresos íntegros satisfechos.”; sources/LIRPF.reader.txt LF2827–2827: “normas del Impuesto sobre Sociedades, sin perjuicio de las reglas especiales contenidas en este artículo, en el artículo 30 de esta Ley para la estimación directa, y en el artículo 31 de”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0043"
+  },
+  {
+    "lf": 53,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "Do not exclude an amount merely because a professional invoice labels it materials, travel or goods: classify the actual service, accessory supply and genuine third-party disbursement before deciding its income treatment ([RIRPF art. 95.1–2](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95); [LIRPF arts. 27/28](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a28)).",
+    "authority": "RIRPF art.95; LIRPF art.28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a28",
+    "quote": "sources/RIRPF.reader.txt LF5638–5638: “ingresos íntegros satisfechos.”; sources/LIRPF.reader.txt LF2827–2827: “normas del Impuesto sobre Sociedades, sin perjuicio de las reglas especiales contenidas en este artículo, en el artículo 30 de esta Ley para la estimación directa, y en el artículo 31 de”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0044"
+  },
+  {
+    "lf": 55,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "For a cash fee F with VAT V and withholding H, `supplier_cash = F +V −H`",
+    "authority": "RIRPF art.95; LIRPF art.28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a28",
+    "quote": "sources/RIRPF.reader.txt LF5638–5638: “ingresos íntegros satisfechos.”; sources/LIRPF.reader.txt LF2827–2827: “normas del Impuesto sobre Sociedades, sin perjuicio de las reglas especiales contenidas en este artículo, en el artículo 30 de esta Ley para la estimación directa, y en el artículo 31 de”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0045"
+  },
+  {
+    "lf": 55,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "credit F as gross income/expense in the relevant records and H as the payer's withholding liability, not a fee discount.",
+    "authority": "RIRPF art.95; LIRPF art.28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a28",
+    "quote": "sources/RIRPF.reader.txt LF5638–5638: “ingresos íntegros satisfechos.”; sources/LIRPF.reader.txt LF2827–2827: “normas del Impuesto sobre Sociedades, sin perjuicio de las reglas especiales contenidas en este artículo, en el artículo 30 de esta Ley para la estimación directa, y en el artículo 31 de”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0046"
+  },
+  {
+    "lf": 55,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "A partial payment needs its actual gross-fee and VAT allocation",
+    "authority": "RIRPF art.95; LIRPF art.28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a28",
+    "quote": "sources/RIRPF.reader.txt LF5638–5638: “ingresos íntegros satisfechos.”; sources/LIRPF.reader.txt LF2827–2827: “normas del Impuesto sobre Sociedades, sin perjuicio de las reglas especiales contenidas en este artículo, en el artículo 30 de esta Ley para la estimación directa, y en el artículo 31 de”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0047"
+  },
+  {
+    "lf": 55,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "do not apply the rate to the net bank transfer as though it were gross professional income.",
+    "authority": "RIRPF art.95; LIRPF art.28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a28",
+    "quote": "sources/RIRPF.reader.txt LF5638–5638: “ingresos íntegros satisfechos.”; sources/LIRPF.reader.txt LF2827–2827: “normas del Impuesto sobre Sociedades, sin perjuicio de las reglas especiales contenidas en este artículo, en el artículo 30 de esta Ley para la estimación directa, y en el artículo 31 de”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0048"
+  },
+  {
+    "lf": 57,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "For in-kind employment use [RIRPF art. 102](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a102), and for in-kind economic activity apply its rate to market value under [art. 104](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a104).",
+    "authority": "RIRPF art.102; RIRPF art.104; LIRPF art.43",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a102; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a104; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a43",
+    "quote": "sources/RIRPF.reader.txt LF6028–6028: “aplicando a su valor, determinado conforme a las reglas del artículo 43.1 de la Ley del Impuesto, y mediante la aplicación, en su caso, del procedimiento previsto en la disposición adicional segunda”; sources/RIRPF.reader.txt LF6070–6070: “valor de mercado el porcentaje que resulte de lo dispuesto en la sección 3.ª del capítulo II anterior.”; sources/LIRPF.reader.txt LF3712–3712: “se adicionará el ingreso a cuenta, salvo que su importe hubiera sido repercutido al perceptor de la renta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0049"
+  },
+  {
+    "lf": 57,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "Keep the valued benefit and the payment on account separate.",
+    "authority": "RIRPF art.102; RIRPF art.104; LIRPF art.43",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a102; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a104; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a43",
+    "quote": "sources/RIRPF.reader.txt LF6028–6028: “aplicando a su valor, determinado conforme a las reglas del artículo 43.1 de la Ley del Impuesto, y mediante la aplicación, en su caso, del procedimiento previsto en la disposición adicional segunda”; sources/RIRPF.reader.txt LF6070–6070: “valor de mercado el porcentaje que resulte de lo dispuesto en la sección 3.ª del capítulo II anterior.”; sources/LIRPF.reader.txt LF3712–3712: “se adicionará el ingreso a cuenta, salvo que su importe hubiera sido repercutido al perceptor de la renta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0050"
+  },
+  {
+    "lf": 57,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "The tax-certificate treatment of employer/payer-borne payment on account under [LIRPF art. 43.2](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a43) must not cause the same amount to be added twice to a 111 value box.",
+    "authority": "RIRPF art.102; RIRPF art.104; LIRPF art.43",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a102; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a104; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a43",
+    "quote": "sources/RIRPF.reader.txt LF6028–6028: “aplicando a su valor, determinado conforme a las reglas del artículo 43.1 de la Ley del Impuesto, y mediante la aplicación, en su caso, del procedimiento previsto en la disposición adicional segunda”; sources/RIRPF.reader.txt LF6070–6070: “valor de mercado el porcentaje que resulte de lo dispuesto en la sección 3.ª del capítulo II anterior.”; sources/LIRPF.reader.txt LF3712–3712: “se adicionará el ingreso a cuenta, salvo que su importe hubiera sido repercutido al perceptor de la renta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0051"
+  },
+  {
+    "lf": 61,
+    "section": "## The base / ### Map and total the return",
+    "wording": "Use the statutory form in [Orden EHA/586/2011 annex I](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948) and the [current AEAT instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html).",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF266–266: “Número total de personas físicas y, en su caso, Entidades en régi¬men de atribución de rentas, a las que el declarante haya satisfecho en el periodo objeto de autoliquidación retribuciones o contraprestaciones”; sources/Instructions.reader.txt LF266–266: “casilla 01) y de actividades económicas (casilla 07).”; sources/Instructions.reader.txt LF266–266: “casilla 07).”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0052"
+  },
+  {
+    "lf": 61,
+    "section": "## The base / ### Map and total the return",
+    "wording": "Count **distinct recipients within each cash/in-kind category**, not invoices or payroll months.",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF266–266: “Número total de personas físicas y, en su caso, Entidades en régi¬men de atribución de rentas, a las que el declarante haya satisfecho en el periodo objeto de autoliquidación retribuciones o contraprestaciones”; sources/Instructions.reader.txt LF266–266: “casilla 01) y de actividades económicas (casilla 07).”; sources/Instructions.reader.txt LF266–266: “casilla 07).”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0053"
+  },
+  {
+    "lf": 61,
+    "section": "## The base / ### Map and total the return",
+    "wording": "A recipient can appear in both relevant cash and in-kind counts",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF266–266: “Número total de personas físicas y, en su caso, Entidades en régi¬men de atribución de rentas, a las que el declarante haya satisfecho en el periodo objeto de autoliquidación retribuciones o contraprestaciones”; sources/Instructions.reader.txt LF266–266: “casilla 01) y de actividades económicas (casilla 07).”; sources/Instructions.reader.txt LF266–266: “casilla 07).”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0054"
+  },
+  {
+    "lf": 61,
+    "section": "## The base / ### Map and total the return",
+    "wording": "deduplicate inside each count.",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF266–266: “Número total de personas físicas y, en su caso, Entidades en régi¬men de atribución de rentas, a las que el declarante haya satisfecho en el periodo objeto de autoliquidación retribuciones o contraprestaciones”; sources/Instructions.reader.txt LF266–266: “casilla 01) y de actividades económicas (casilla 07).”; sources/Instructions.reader.txt LF266–266: “casilla 07).”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0055"
+  },
+  {
+    "lf": 65,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Employment, cash | 01 | 02 | 03 |",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0056"
+  },
+  {
+    "lf": 66,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Employment, in kind | 04 | 05 | 06 |",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF278–278: “Casillas 04 y 10”; sources/Instructions.reader.txt LF282–282: “Casillas 05 y 11”; sources/Instructions.reader.txt LF286–286: “Casillas 06 y 12”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0057"
+  },
+  {
+    "lf": 67,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Economic activities, cash | 07 | 08 | 09 |",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0058"
+  },
+  {
+    "lf": 68,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Economic activities, in kind | 10 | 11 | 12 |",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF278–278: “Casillas 04 y 10”; sources/Instructions.reader.txt LF282–282: “Casillas 05 y 11”; sources/Instructions.reader.txt LF286–286: “Casillas 06 y 12”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0059"
+  },
+  {
+    "lf": 69,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Subject prizes, cash | 13 | 14 | 15 |",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF294–294: “En las casillas 13, 14 y 15 se reflejarán los datos referentes a los premios dinerarios y en las casillas 16, 17 y 18 los que correspondan a los premios en especie.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0060"
+  },
+  {
+    "lf": 70,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Subject prizes, in kind | 16 | 17 | 18 |",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF294–294: “En las casillas 13, 14 y 15 se reflejarán los datos referentes a los premios dinerarios y en las casillas 16, 17 y 18 los que correspondan a los premios en especie.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0061"
+  },
+  {
+    "lf": 71,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Public-forest exploitation gains, cash | 19 | 20 | 21 |",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF300–300: “En las casillas 19, 20 y 21 se reflejarán los datos referentes a las percepciones dinerarias y en las casillas 22, 23 y 24 los que, en su caso, correspondan a percepciones”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0062"
+  },
+  {
+    "lf": 72,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Same gains, in kind | 22 | 23 | 24 |",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF300–300: “En las casillas 19, 20 y 21 se reflejarán los datos referentes a las percepciones dinerarias y en las casillas 22, 23 y 24 los que, en su caso, correspondan a percepciones”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0063"
+  },
+  {
+    "lf": 73,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Special art. 92.8 image-right payments | 25 | 26 | 27 |",
+    "authority": "Instructions art.None",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html",
+    "quote": "sources/Instructions.reader.txt LF306–306: “Casilla 25”; sources/Instructions.reader.txt LF310–310: “Casilla 26”; sources/Instructions.reader.txt LF314–314: “Casilla 27”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0064"
+  },
+  {
+    "lf": 75,
+    "section": "## The base / ### Map and total the return",
+    "wording": "`box28 = box03 +box06 +box09 +box12 +box15 +box18 +box21 +box24 +box27`.",
+    "authority": "Instructions art.None; Order111 art.9",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9",
+    "quote": "sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0065"
+  },
+  {
+    "lf": 75,
+    "section": "## The base / ### Map and total the return",
+    "wording": "Box 29 is used **only for a complementary return**, for the earlier return result(s) for the same taxpayer/year/period. `box30 = box28 −box29`.",
+    "authority": "Instructions art.None; Order111 art.9",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9",
+    "quote": "sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0066"
+  },
+  {
+    "lf": 75,
+    "section": "## The base / ### Map and total the return",
+    "wording": "A complementary return restates the **whole corrected period**, identifies the earlier receipt and pays the incremental result",
+    "authority": "Instructions art.None; Order111 art.9",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9",
+    "quote": "sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0067"
+  },
+  {
+    "lf": 75,
+    "section": "## The base / ### Map and total the return",
+    "wording": "it does not contain only the newly found invoice ([order art. 9](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9)).",
+    "authority": "Instructions art.None; Order111 art.9",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9",
+    "quote": "sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0068"
+  },
+  {
+    "lf": 75,
+    "section": "## The base / ### Map and total the return",
+    "wording": "Do not net an overpayment in another period or use a negative supplementary return as a refund request.",
+    "authority": "Instructions art.None; Order111 art.9",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9",
+    "quote": "sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0069"
+  },
+  {
+    "lf": 77,
+    "section": "## The base / ### Map and total the return",
+    "wording": "If subject income was paid but the law correctly produced zero withholding, file a **negative 111 with the relevant recipients and income populated**.",
+    "authority": "RIRPF art.108",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108",
+    "quote": "sources/RIRPF.reader.txt LF6142–6142: “presentará declaración negativa cuando, a pesar de haber satisfecho rentas sometidas a retención o ingreso a cuenta, no hubiera procedido, por razón de su cuantía, la práctica de retención o ingreso a”; sources/RIRPF.reader.txt LF6142–6142: “No procederá presentación de declaración negativa cuando no se hubieran satisfecho, en el período de declaración, rentas sometidas a retención e ingreso a cuenta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0070"
+  },
+  {
+    "lf": 77,
+    "section": "## The base / ### Map and total the return",
+    "wording": "If no subject income was paid, do **not** file an empty all-zero 111 merely because the payer was registered.",
+    "authority": "RIRPF art.108",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108",
+    "quote": "sources/RIRPF.reader.txt LF6142–6142: “presentará declaración negativa cuando, a pesar de haber satisfecho rentas sometidas a retención o ingreso a cuenta, no hubiera procedido, por razón de su cuantía, la práctica de retención o ingreso a”; sources/RIRPF.reader.txt LF6142–6142: “No procederá presentación de declaración negativa cuando no se hubieran satisfecho, en el período de declaración, rentas sometidas a retención e ingreso a cuenta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0071"
+  },
+  {
+    "lf": 77,
+    "section": "## The base / ### Map and total the return",
+    "wording": "Reconcile census cessation/restart obligations using the current census route.",
+    "authority": "RIRPF art.108",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108",
+    "quote": "sources/RIRPF.reader.txt LF6142–6142: “presentará declaración negativa cuando, a pesar de haber satisfecho rentas sometidas a retención o ingreso a cuenta, no hubiera procedido, por razón de su cuantía, la práctica de retención o ingreso a”; sources/RIRPF.reader.txt LF6142–6142: “No procederá presentación de declaración negativa cuando no se hubieran satisfecho, en el período de declaración, rentas sometidas a retención e ingreso a cuenta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0072"
+  },
+  {
+    "lf": 77,
+    "section": "## The base / ### Map and total the return",
+    "wording": "The instruction page's historical reference to Modelo 037 does not establish that it remains an available 2026 form ([RIRPF art. 108.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108); [order art. 3.3](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a3)).",
+    "authority": "RIRPF art.108",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108",
+    "quote": "sources/RIRPF.reader.txt LF6142–6142: “presentará declaración negativa cuando, a pesar de haber satisfecho rentas sometidas a retención o ingreso a cuenta, no hubiera procedido, por razón de su cuantía, la práctica de retención o ingreso a”; sources/RIRPF.reader.txt LF6142–6142: “No procederá presentación de declaración negativa cuando no se hubieran satisfecho, en el período de declaración, rentas sometidas a retención e ingreso a cuenta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0073"
+  },
+  {
+    "lf": 81,
+    "section": "## The base / ### Annual reconciliation and recipient's tax",
+    "wording": "Reconcile the year's 111 withholding/payment-on-account totals to recipient-level **Modelo 190**, using the correct current category/subcategory and any required exempt-income records.",
+    "authority": "RIRPF art.108; Order190 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108; https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567#a2",
+    "quote": "sources/RIRPF.reader.txt LF6146–6146: “relación nominativa de los perceptores con los siguientes datos:”; sources/RIRPF.reader.txt LF6152–6152: “las rentas exentas.”; sources/Order190.reader.txt LF480–480: “Obligados a presentar el modelo 190.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0074"
+  },
+  {
+    "lf": 81,
+    "section": "## The base / ### Annual reconciliation and recipient's tax",
+    "wording": "Its information population is broader than just positive withholdings.",
+    "authority": "RIRPF art.108; Order190 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108; https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567#a2",
+    "quote": "sources/RIRPF.reader.txt LF6146–6146: “relación nominativa de los perceptores con los siguientes datos:”; sources/RIRPF.reader.txt LF6152–6152: “las rentas exentas.”; sources/Order190.reader.txt LF480–480: “Obligados a presentar el modelo 190.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0075"
+  },
+  {
+    "lf": 81,
+    "section": "## The base / ### Annual reconciliation and recipient's tax",
+    "wording": "Check recipient identity, cash/in-kind amounts, withheld amounts, applicable reductions and employment circumstances",
+    "authority": "RIRPF art.108; Order190 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108; https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567#a2",
+    "quote": "sources/RIRPF.reader.txt LF6146–6146: “relación nominativa de los perceptores con los siguientes datos:”; sources/RIRPF.reader.txt LF6152–6152: “las rentas exentas.”; sources/Order190.reader.txt LF480–480: “Obligados a presentar el modelo 190.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0076"
+  },
+  {
+    "lf": 81,
+    "section": "## The base / ### Annual reconciliation and recipient's tax",
+    "wording": "do not use invoice count as recipient count ([RIRPF art. 108.2–3](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108); [190 order arts. 2/4 and annex II](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567)).",
+    "authority": "RIRPF art.108; Order190 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108; https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567#a2",
+    "quote": "sources/RIRPF.reader.txt LF6146–6146: “relación nominativa de los perceptores con los siguientes datos:”; sources/RIRPF.reader.txt LF6152–6152: “las rentas exentas.”; sources/Order190.reader.txt LF480–480: “Obligados a presentar el modelo 190.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0077"
+  },
+  {
+    "lf": 83,
+    "section": "## The base / ### Annual reconciliation and recipient's tax",
+    "wording": "The payer's 111 is separate from the recipient's annual IRPF and Modelo 130.",
+    "authority": "LIRPF art.99; RIRPF art.109",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a99; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a109",
+    "quote": "sources/LIRPF.reader.txt LF7507–7507: “causa imputable exclusivamente al retenedor u obligado a ingresar a cuenta, el perceptor deducirá de la cuota la cantidad que debió ser retenida.”; sources/RIRPF.reader.txt LF6234–6234: “70 por ciento de los ingresos de la actividad fueron objeto de retención o ingreso a cuenta.”; sources/RIRPF.reader.txt LF6240–6240: “inicio de la actividad se tendrá en cuenta el porcentaje de ingresos que hayan sido objeto de retención o ingreso a cuenta durante el período a que se refiere el pago fraccionado.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0078"
+  },
+  {
+    "lf": 83,
+    "section": "## The base / ### Annual reconciliation and recipient's tax",
+    "wording": "The recipient reports gross income and their applicable tax credits",
+    "authority": "LIRPF art.99; RIRPF art.109",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a99; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a109",
+    "quote": "sources/LIRPF.reader.txt LF7507–7507: “causa imputable exclusivamente al retenedor u obligado a ingresar a cuenta, el perceptor deducirá de la cuota la cantidad que debió ser retenida.”; sources/RIRPF.reader.txt LF6234–6234: “70 por ciento de los ingresos de la actividad fueron objeto de retención o ingreso a cuenta.”; sources/RIRPF.reader.txt LF6240–6240: “inicio de la actividad se tendrá en cuenta el porcentaje de ingresos que hayan sido objeto de retención o ingreso a cuenta durante el período a que se refiere el pago fraccionado.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0079"
+  },
+  {
+    "lf": 83,
+    "section": "## The base / ### Annual reconciliation and recipient's tax",
+    "wording": "the payer's failure to remit does not turn the net bank transfer into gross income.",
+    "authority": "LIRPF art.99; RIRPF art.109",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a99; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a109",
+    "quote": "sources/LIRPF.reader.txt LF7507–7507: “causa imputable exclusivamente al retenedor u obligado a ingresar a cuenta, el perceptor deducirá de la cuota la cantidad que debió ser retenida.”; sources/RIRPF.reader.txt LF6234–6234: “70 por ciento de los ingresos de la actividad fueron objeto de retención o ingreso a cuenta.”; sources/RIRPF.reader.txt LF6240–6240: “inicio de la actividad se tendrá en cuenta el porcentaje de ingresos que hayan sido objeto de retención o ingreso a cuenta durante el período a que se refiere el pago fraccionado.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0080"
+  },
+  {
+    "lf": 83,
+    "section": "## The base / ### Annual reconciliation and recipient's tax",
+    "wording": "Check [LIRPF art. 99](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a99) for a disputed withholding credit rather than inventing a deposit prerequisite. [es-estimated-tax](es-estimated-tax.md) gives the direct-assessment instalment computation and the professional **70% prior-year subject-income test**, including the startup-period rule; 111 registration is not an exemption from the recipient's tax.",
+    "authority": "LIRPF art.99; RIRPF art.109",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a99; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a109",
+    "quote": "sources/LIRPF.reader.txt LF7507–7507: “causa imputable exclusivamente al retenedor u obligado a ingresar a cuenta, el perceptor deducirá de la cuota la cantidad que debió ser retenida.”; sources/RIRPF.reader.txt LF6234–6234: “70 por ciento de los ingresos de la actividad fueron objeto de retención o ingreso a cuenta.”; sources/RIRPF.reader.txt LF6240–6240: “inicio de la actividad se tendrá en cuenta el porcentaje de ingresos que hayan sido objeto de retención o ingreso a cuenta durante el período a que se refiere el pago fraccionado.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0081"
+  },
+  {
+    "lf": 89,
+    "section": "## Deadlines and filing",
+    "wording": "| Quarterly 111 | First twenty calendar days of April/July/October/January for preceding quarter; Q4 2026 is filed in January 2027 | [RIRPF art. 108.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108), [111 order art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a3) |",
+    "authority": "RIRPF art.108",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108",
+    "quote": "sources/RIRPF.reader.txt LF6134–6134: “primeros veinte días naturales de los meses de abril, julio, octubre y enero, declaración de las cantidades retenidas y de los ingresos a cuenta que correspondan por el trimestre natural inmediato anterior,”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0082"
+  },
+  {
+    "lf": 90,
+    "section": "## Deadlines and filing",
+    "wording": "| Monthly 111 | First twenty calendar days of next month under the applicable large-company/public-administration tests; not headcount | [RIRPF art. 108.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) |",
+    "authority": "RIRPF art.108",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108",
+    "quote": "sources/RIRPF.reader.txt LF6136–6136: “veinte primeros días naturales de cada mes, en relación con las cantidades retenidas y los ingresos a cuenta que correspondan por el mes inmediato anterior, cuando se trate de retenedores u obligados”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0083"
+  },
+  {
+    "lf": 91,
+    "section": "## Deadlines and filing",
+    "wording": "| Ordinary turnover trigger | RIVA art. 71.3.1 prior-year operations >6,010,121.04; also check art. 71.3.2 and art. 108 public-budget >6 million cases | [RIVA art. 71](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a71), [RIRPF art. 108](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) |",
+    "authority": "RIVA art.71; RIRPF art.108",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a71; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108",
+    "quote": "sources/RIVA.reader.txt LF6528–6528: “6.010.121,04 euros.”; sources/RIRPF.reader.txt LF6138–6138: “6 millones de euros, en relación con las cantidades retenidas y los ingresos a cuenta correspondientes a las rentas a que se refieren los párrafos a) y c) del apartado 1 y”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0084"
+  },
+  {
+    "lf": 92,
+    "section": "## Deadlines and filing",
+    "wording": "| Non-working final day | Next working day | [111 order art. 3.1](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a3) |",
+    "authority": "Order111 art.3",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a3",
+    "quote": "sources/Order111.reader.txt LF476–476: “primer día hábil inmediato siguiente.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0085"
+  },
+  {
+    "lf": 93,
+    "section": "## Deadlines and filing",
+    "wording": "| Direct debit in 2026 | Quarterly general cut-off 15 January/April/July/October; monthly dates vary with the official calendar | [AEAT 2026 payment calendar](https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html) |",
+    "authority": "RIRPF art.108; Calendar art.None",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "quote": "sources/RIRPF.reader.txt LF6134–6134: “primeros veinte días naturales de los meses de abril, julio, octubre y enero, declaración de las cantidades retenidas y de los ingresos a cuenta que correspondan por el trimestre natural inmediato anterior,”; sources/Calendar.reader.txt LF33–33: “Con carácter general: domiciliación del 1 al 15 de enero, abril, julio y octubre”; sources/Calendar.reader.txt LF54–54: “7M 26: 1 al 17 de agosto”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0086"
+  },
+  {
+    "lf": 94,
+    "section": "## Deadlines and filing",
+    "wording": "| Electronic Modelo 190 | 1–31 January of following year, subject to non-working-day/calendar rules | [190 order art. 5](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567#a5) |",
+    "authority": "Order190 art.5",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567#a5",
+    "quote": "sources/Order190.reader.txt LF566–566: “31 de enero del año siguiente al que corresponde el resumen anual cuando la declaración se presente de alguna de las siguientes formas:”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0087"
+  },
+  {
+    "lf": 95,
+    "section": "## Deadlines and filing",
+    "wording": "| Recipient certificate | Available before the recipient's IRPF return period opens, not a universal 1 February deadline | [RIRPF art. 108.3](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) |",
+    "authority": "RIRPF art.108",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108",
+    "quote": "sources/RIRPF.reader.txt LF6174–6174: “con anterioridad a la apertura del plazo de declaración por este Impuesto.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0088"
+  },
+  {
+    "lf": 97,
+    "section": "## Deadlines and filing",
+    "wording": "The current [2026 calendar](https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html) expressly gives July 2026 monthly 111 **20 August**, with direct debit through **17 August**.",
+    "authority": "RD960 art.None; August art.None; Calendar art.None",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/calendario-anual/agosto/hasta-20-agosto.html; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "quote": "sources/RD960.reader.txt LF373–373: “Con efectos desde 1 de enero de 2014, se introducen las siguientes modificaciones en el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de”; sources/RD960.reader.txt LF398–398: “en relación con las cantidades retenidas y los ingresos a cuenta que correspondan por el mes inmediato anterior, cuando se trate de retenedores u obligados en los que concurran las circunstancias a que se refieren los números 1.º y 2.º del apartado 3 del artículo 71 del Reglamento del Impuesto sobre el Valor Añadido, aprobado”; sources/August.reader.txt LF1–1: “Hasta el 20 de agosto”; sources/August.reader.txt LF18–18: “Julio 2026. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216, 230”; sources/Calendar.reader.txt LF54–54: “7M 26: 1 al 17 de agosto”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0089"
+  },
+  {
+    "lf": 97,
+    "section": "## Deadlines and filing",
+    "wording": "Do not carry forward the older form-order July/September exception or assume every debit cut-off is the 15th.",
+    "authority": "RD960 art.None; August art.None; Calendar art.None",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/calendario-anual/agosto/hasta-20-agosto.html; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "quote": "sources/RD960.reader.txt LF373–373: “Con efectos desde 1 de enero de 2014, se introducen las siguientes modificaciones en el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de”; sources/RD960.reader.txt LF398–398: “en relación con las cantidades retenidas y los ingresos a cuenta que correspondan por el mes inmediato anterior, cuando se trate de retenedores u obligados en los que concurran las circunstancias a que se refieren los números 1.º y 2.º del apartado 3 del artículo 71 del Reglamento del Impuesto sobre el Valor Añadido, aprobado”; sources/August.reader.txt LF1–1: “Hasta el 20 de agosto”; sources/August.reader.txt LF18–18: “Julio 2026. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216, 230”; sources/Calendar.reader.txt LF54–54: “7M 26: 1 al 17 de agosto”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0090"
+  },
+  {
+    "lf": 97,
+    "section": "## Deadlines and filing",
+    "wording": "Verify the 2027 calendar for Q4/annual filings when published",
+    "authority": "RD960 art.None; August art.None; Calendar art.None",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/calendario-anual/agosto/hasta-20-agosto.html; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "quote": "sources/RD960.reader.txt LF373–373: “Con efectos desde 1 de enero de 2014, se introducen las siguientes modificaciones en el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de”; sources/RD960.reader.txt LF398–398: “en relación con las cantidades retenidas y los ingresos a cuenta que correspondan por el mes inmediato anterior, cuando se trate de retenedores u obligados en los que concurran las circunstancias a que se refieren los números 1.º y 2.º del apartado 3 del artículo 71 del Reglamento del Impuesto sobre el Valor Añadido, aprobado”; sources/August.reader.txt LF1–1: “Hasta el 20 de agosto”; sources/August.reader.txt LF18–18: “Julio 2026. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216, 230”; sources/Calendar.reader.txt LF54–54: “7M 26: 1 al 17 de agosto”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0091"
+  },
+  {
+    "lf": 97,
+    "section": "## Deadlines and filing",
+    "wording": "the 2026 calendar does not establish next year's operational cut-offs.",
+    "authority": "RD960 art.None; August art.None; Calendar art.None",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/calendario-anual/agosto/hasta-20-agosto.html; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "quote": "sources/RD960.reader.txt LF373–373: “Con efectos desde 1 de enero de 2014, se introducen las siguientes modificaciones en el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de”; sources/RD960.reader.txt LF398–398: “en relación con las cantidades retenidas y los ingresos a cuenta que correspondan por el mes inmediato anterior, cuando se trate de retenedores u obligados en los que concurran las circunstancias a que se refieren los números 1.º y 2.º del apartado 3 del artículo 71 del Reglamento del Impuesto sobre el Valor Añadido, aprobado”; sources/August.reader.txt LF1–1: “Hasta el 20 de agosto”; sources/August.reader.txt LF18–18: “Julio 2026. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216, 230”; sources/Calendar.reader.txt LF54–54: “7M 26: 1 al 17 de agosto”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0092"
+  },
+  {
+    "lf": 99,
+    "section": "## Deadlines and filing",
+    "wording": "**Legislative bridge for the July return.** [RD 960/2013 article Segundo.Tercero.Ocho](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771) replaced RIRPF article 108.1 **with effects from 1 January 2014**, under the express heading of article Segundo.Tercero.",
+    "authority": "RD960 art.None; August art.None; Calendar art.None",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/calendario-anual/agosto/hasta-20-agosto.html; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "quote": "sources/RD960.reader.txt LF373–373: “Con efectos desde 1 de enero de 2014, se introducen las siguientes modificaciones en el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de”; sources/RD960.reader.txt LF398–398: “en relación con las cantidades retenidas y los ingresos a cuenta que correspondan por el mes inmediato anterior, cuando se trate de retenedores u obligados en los que concurran las circunstancias a que se refieren los números 1.º y 2.º del apartado 3 del artículo 71 del Reglamento del Impuesto sobre el Valor Añadido, aprobado”; sources/August.reader.txt LF1–1: “Hasta el 20 de agosto”; sources/August.reader.txt LF18–18: “Julio 2026. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216, 230”; sources/Calendar.reader.txt LF54–54: “7M 26: 1 al 17 de agosto”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0093"
+  },
+  {
+    "lf": 99,
+    "section": "## Deadlines and filing",
+    "wording": "The replacement requires monthly declaration and payment in the first twenty calendar days of the following month and contains no separate July exception",
+    "authority": "RD960 art.None; August art.None; Calendar art.None",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/calendario-anual/agosto/hasta-20-agosto.html; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "quote": "sources/RD960.reader.txt LF373–373: “Con efectos desde 1 de enero de 2014, se introducen las siguientes modificaciones en el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de”; sources/RD960.reader.txt LF398–398: “en relación con las cantidades retenidas y los ingresos a cuenta que correspondan por el mes inmediato anterior, cuando se trate de retenedores u obligados en los que concurran las circunstancias a que se refieren los números 1.º y 2.º del apartado 3 del artículo 71 del Reglamento del Impuesto sobre el Valor Añadido, aprobado”; sources/August.reader.txt LF1–1: “Hasta el 20 de agosto”; sources/August.reader.txt LF18–18: “Julio 2026. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216, 230”; sources/Calendar.reader.txt LF54–54: “7M 26: 1 al 17 de agosto”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0094"
+  },
+  {
+    "lf": 99,
+    "section": "## Deadlines and filing",
+    "wording": "its IRPF preamble also expressly explains the removal of that exception.",
+    "authority": "RD960 art.None; August art.None; Calendar art.None",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/calendario-anual/agosto/hasta-20-agosto.html; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "quote": "sources/RD960.reader.txt LF373–373: “Con efectos desde 1 de enero de 2014, se introducen las siguientes modificaciones en el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de”; sources/RD960.reader.txt LF398–398: “en relación con las cantidades retenidas y los ingresos a cuenta que correspondan por el mes inmediato anterior, cuando se trate de retenedores u obligados en los que concurran las circunstancias a que se refieren los números 1.º y 2.º del apartado 3 del artículo 71 del Reglamento del Impuesto sobre el Valor Añadido, aprobado”; sources/August.reader.txt LF1–1: “Hasta el 20 de agosto”; sources/August.reader.txt LF18–18: “Julio 2026. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216, 230”; sources/Calendar.reader.txt LF54–54: “7M 26: 1 al 17 de agosto”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0095"
+  },
+  {
+    "lf": 99,
+    "section": "## Deadlines and filing",
+    "wording": "That later regulatory schedule, [current article 108](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) and the actual 2026 calendar support July 2026 filing by 20 August.",
+    "authority": "RD960 art.None; August art.None; Calendar art.None",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/calendario-anual/agosto/hasta-20-agosto.html; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "quote": "sources/RD960.reader.txt LF373–373: “Con efectos desde 1 de enero de 2014, se introducen las siguientes modificaciones en el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de”; sources/RD960.reader.txt LF398–398: “en relación con las cantidades retenidas y los ingresos a cuenta que correspondan por el mes inmediato anterior, cuando se trate de retenedores u obligados en los que concurran las circunstancias a que se refieren los números 1.º y 2.º del apartado 3 del artículo 71 del Reglamento del Impuesto sobre el Valor Añadido, aprobado”; sources/August.reader.txt LF1–1: “Hasta el 20 de agosto”; sources/August.reader.txt LF18–18: “Julio 2026. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216, 230”; sources/Calendar.reader.txt LF54–54: “7M 26: 1 al 17 de agosto”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0096"
+  },
+  {
+    "lf": 99,
+    "section": "## Deadlines and filing",
+    "wording": "Original [EHA/586/2011 article 3](https://www.boe.es/buscar/doc.php?id=BOE-A-2011-4948) still prints the older July/August–September wording: it is preserved as historical text, not represented as expressly rewritten by RD 960/2013.",
+    "authority": "RD960 art.None; August art.None; Calendar art.None",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/calendario-anual/agosto/hasta-20-agosto.html; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "quote": "sources/RD960.reader.txt LF373–373: “Con efectos desde 1 de enero de 2014, se introducen las siguientes modificaciones en el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de”; sources/RD960.reader.txt LF398–398: “en relación con las cantidades retenidas y los ingresos a cuenta que correspondan por el mes inmediato anterior, cuando se trate de retenedores u obligados en los que concurran las circunstancias a que se refieren los números 1.º y 2.º del apartado 3 del artículo 71 del Reglamento del Impuesto sobre el Valor Añadido, aprobado”; sources/August.reader.txt LF1–1: “Hasta el 20 de agosto”; sources/August.reader.txt LF18–18: “Julio 2026. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216, 230”; sources/Calendar.reader.txt LF54–54: “7M 26: 1 al 17 de agosto”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0097"
+  },
+  {
+    "lf": 99,
+    "section": "## Deadlines and filing",
+    "wording": "The current August result is therefore supported by the identified replacement, rather than a missing legislative source or a presumed continuation of the older form-order exception.",
+    "authority": "RD960 art.None; August art.None; Calendar art.None",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/calendario-anual/agosto/hasta-20-agosto.html; https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html",
+    "quote": "sources/RD960.reader.txt LF373–373: “Con efectos desde 1 de enero de 2014, se introducen las siguientes modificaciones en el Reglamento del Impuesto sobre la Renta de las Personas Físicas, aprobado por el Real Decreto 439/2007, de”; sources/RD960.reader.txt LF398–398: “en relación con las cantidades retenidas y los ingresos a cuenta que correspondan por el mes inmediato anterior, cuando se trate de retenedores u obligados en los que concurran las circunstancias a que se refieren los números 1.º y 2.º del apartado 3 del artículo 71 del Reglamento del Impuesto sobre el Valor Añadido, aprobado”; sources/August.reader.txt LF1–1: “Hasta el 20 de agosto”; sources/August.reader.txt LF18–18: “Julio 2026. Grandes empresas: 111, 115, 117, 123, 124, 126, 128, 216, 230”; sources/Calendar.reader.txt LF54–54: “7M 26: 1 al 17 de agosto”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0098"
+  },
+  {
+    "lf": 101,
+    "section": "## Deadlines and filing",
+    "wording": "Select electronic filing under current [Orden HAP/2194/2013](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385) rules",
+    "authority": "Electronic art.3; LGT art.65",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385#a3; https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a65",
+    "quote": "sources/Electronic.reader.txt LF1270–1270: “sociedad anónima o sociedad de responsabilidad limitada.”; sources/LGT.reader.txt LF3532–3532: “obligaciones tributarias que deban cumplir el retenedor o el obligado a realizar ingresos a cuenta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0099"
+  },
+  {
+    "lf": 101,
+    "section": "## Deadlines and filing",
+    "wording": "an SL/SA's quarterly frequency does not make paper filing available.",
+    "authority": "Electronic art.3; LGT art.65",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385#a3; https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a65",
+    "quote": "sources/Electronic.reader.txt LF1270–1270: “sociedad anónima o sociedad de responsabilidad limitada.”; sources/LGT.reader.txt LF3532–3532: “obligaciones tributarias que deban cumplir el retenedor o el obligado a realizar ingresos a cuenta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0100"
+  },
+  {
+    "lf": 101,
+    "section": "## Deadlines and filing",
+    "wording": "Save the accepted declaration, receipt/CSV and separate successful payment evidence.",
+    "authority": "Electronic art.3; LGT art.65",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385#a3; https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a65",
+    "quote": "sources/Electronic.reader.txt LF1270–1270: “sociedad anónima o sociedad de responsabilidad limitada.”; sources/LGT.reader.txt LF3532–3532: “obligaciones tributarias que deban cumplir el retenedor o el obligado a realizar ingresos a cuenta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0101"
+  },
+  {
+    "lf": 101,
+    "section": "## Deadlines and filing",
+    "wording": "An NRC proves payment, not by itself a filed return",
+    "authority": "Electronic art.3; LGT art.65",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385#a3; https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a65",
+    "quote": "sources/Electronic.reader.txt LF1270–1270: “sociedad anónima o sociedad de responsabilidad limitada.”; sources/LGT.reader.txt LF3532–3532: “obligaciones tributarias que deban cumplir el retenedor o el obligado a realizar ingresos a cuenta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0102"
+  },
+  {
+    "lf": 101,
+    "section": "## Deadlines and filing",
+    "wording": "an accepted direct-debit instruction is not proof a later bank debit succeeded.",
+    "authority": "Electronic art.3; LGT art.65",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385#a3; https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a65",
+    "quote": "sources/Electronic.reader.txt LF1270–1270: “sociedad anónima o sociedad de responsabilidad limitada.”; sources/LGT.reader.txt LF3532–3532: “obligaciones tributarias que deban cumplir el retenedor o el obligado a realizar ingresos a cuenta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0103"
+  },
+  {
+    "lf": 101,
+    "section": "## Deadlines and filing",
+    "wording": "Withholding debts are excluded from ordinary deferral/instalment under [LGT art. 65.2.b](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a65).",
+    "authority": "Electronic art.3; LGT art.65",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385#a3; https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a65",
+    "quote": "sources/Electronic.reader.txt LF1270–1270: “sociedad anónima o sociedad de responsabilidad limitada.”; sources/LGT.reader.txt LF3532–3532: “obligaciones tributarias que deban cumplir el retenedor o el obligado a realizar ingresos a cuenta.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0104"
+  },
+  {
+    "lf": 107,
+    "section": "## Penalties and interest",
+    "wording": "| Unprompted late return with amount due, up to twelve months | 1% plus 1% for each complete month late, subject to statutory conditions | [LGT art. 27.2](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27) |",
+    "authority": "LGT art.27",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27",
+    "quote": "sources/LGT.reader.txt LF2209–2209: “1 por ciento más otro 1 por ciento adicional por cada mes completo de retraso con que se presente la autoliquidación o declaración respecto al término del plazo establecido para la presentación”; sources/LGT.reader.txt LF2213–2213: “12 meses desde el término del plazo establecido para la presentación, el recargo será del 15 por ciento y excluirá las sanciones que hubieran podido exigirse. En estos casos, se exigirán los intereses de demora por el período transcurrido desde el día siguiente al término de los 12 meses posteriores”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0105"
+  },
+  {
+    "lf": 108,
+    "section": "## Penalties and interest",
+    "wording": "| More than twelve months | 15%, plus the specified interest from after twelve months until filing; test art. 27.5 reduction separately | [Art. 27](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27) |",
+    "authority": "LGT art.27",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27",
+    "quote": "sources/LGT.reader.txt LF2209–2209: “1 por ciento más otro 1 por ciento adicional por cada mes completo de retraso con que se presente la autoliquidación o declaración respecto al término del plazo establecido para la presentación”; sources/LGT.reader.txt LF2213–2213: “12 meses desde el término del plazo establecido para la presentación, el recargo será del 15 por ciento y excluirá las sanciones que hubieran podido exigirse. En estos casos, se exigirán los intereses de demora por el período transcurrido desde el día siguiente al término de los 12 meses posteriores”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0106"
+  },
+  {
+    "lf": 109,
+    "section": "## Penalties and interest",
+    "wording": "| Under-remitted tax outside that voluntary route | Classify art. 191 conduct, amount and withholding-specific seriousness; no automatic universal 150% | [Art. 191](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a191) |",
+    "authority": "LGT art.191",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a191",
+    "quote": "sources/LGT.reader.txt LF8191–8191: “Constituye infracción tributaria dejar de ingresar dentro del plazo establecido en la normativa de cada tributo la totalidad o parte de la deuda tributaria que debiera resultar de la correcta autoliquidación del”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0107"
+  },
+  {
+    "lf": 110,
+    "section": "## Penalties and interest",
+    "wording": "| Required nil return late without economic loss | Baseline 200; half if filed without prior demand, before other applicable reductions | [Art. 198.1–2](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a198) |",
+    "authority": "LGT art.198",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a198",
+    "quote": "sources/LGT.reader.txt LF8412–8412: “fija de 200 euros o, si se trata de declaraciones censales o la relativa a la comunicación de la designación del representante de personas o entidades cuando así lo establezca la normativa,”; sources/LGT.reader.txt LF8416–8416: “serán la mitad de los previstos en el apartado anterior.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0108"
+  },
+  {
+    "lf": 111,
+    "section": "## Penalties and interest",
+    "wording": "| Annual information return late | Baseline 20 per relevant person/data set, minimum 300 and maximum 20,000; amounts and limits halved without prior demand | [Art. 198.1–2](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a198) |",
+    "authority": "LGT art.198",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a198",
+    "quote": "sources/LGT.reader.txt LF8414–8414: “20 euros por cada dato o conjunto de datos referidos a una misma persona o entidad que hubiera debido incluirse en la declaración con un mínimo de 300 euros y un máximo de 20.000 euros.”; sources/LGT.reader.txt LF8416–8416: “serán la mitad de los previstos en el apartado anterior.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0109"
+  },
+  {
+    "lf": 113,
+    "section": "## Penalties and interest",
+    "wording": "Collection surcharges and interest have their own triggers under [LGT arts. 26/28](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28).",
+    "authority": "LGT art.26; LGT art.28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a26; https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28",
+    "quote": "sources/LGT.reader.txt LF2138–2138: “interés de demora es una prestación accesoria que se exigirá a los obligados tributarios y a los sujetos infractores como consecuencia de la realización de un pago fuera de plazo o de”; sources/LGT.reader.txt LF2268–2268: “Recargos del período ejecutivo.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0110"
+  },
+  {
+    "lf": 113,
+    "section": "## Penalties and interest",
+    "wording": "A prior AEAT demand does not create a simple delay-based 5%/10%/15%/20% penalty ladder.",
+    "authority": "LGT art.26; LGT art.28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a26; https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28",
+    "quote": "sources/LGT.reader.txt LF2138–2138: “interés de demora es una prestación accesoria que se exigirá a los obligados tributarios y a los sujetos infractores como consecuencia de la realización de un pago fuera de plazo o de”; sources/LGT.reader.txt LF2268–2268: “Recargos del período ejecutivo.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0111"
+  },
+  {
+    "lf": 113,
+    "section": "## Penalties and interest",
+    "wording": "Establish notification, filing/payment dates, loss and the relevant conduct before calculating.",
+    "authority": "LGT art.26; LGT art.28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a26; https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28",
+    "quote": "sources/LGT.reader.txt LF2138–2138: “interés de demora es una prestación accesoria que se exigirá a los obligados tributarios y a los sujetos infractores como consecuencia de la realización de un pago fuera de plazo o de”; sources/LGT.reader.txt LF2268–2268: “Recargos del período ejecutivo.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0112"
+  },
+  {
+    "lf": 113,
+    "section": "## Penalties and interest",
+    "wording": "A period with no obligation is not a late required nil return.",
+    "authority": "LGT art.26; LGT art.28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a26; https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28",
+    "quote": "sources/LGT.reader.txt LF2138–2138: “interés de demora es una prestación accesoria que se exigirá a los obligados tributarios y a los sujetos infractores como consecuencia de la realización de un pago fuera de plazo o de”; sources/LGT.reader.txt LF2268–2268: “Recargos del período ejecutivo.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0113"
+  },
+  {
+    "lf": 117,
+    "section": "## Cross-border points",
+    "wording": "Classify the recipient as resident IRPF, non-resident IRNR, or another tax subject and identify the payer's withholding duty.",
+    "authority": "Order111 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2",
+    "quote": "sources/Order111.reader.txt LF436–436: “Rendimientos del trabajo.”; sources/Order111.reader.txt LF448–448: “explotación del derecho de imagen, a los que se refiere el artículo 75.2.b) del Reglamento del Impuesto, cuando provengan de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0114"
+  },
+  {
+    "lf": 117,
+    "section": "## Cross-border points",
+    "wording": "Ordinary non-resident professional payments use the applicable IRNR/treaty computation and return, rather than automatically Modelo 111 or a blanket 24%.",
+    "authority": "Order111 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2",
+    "quote": "sources/Order111.reader.txt LF436–436: “Rendimientos del trabajo.”; sources/Order111.reader.txt LF448–448: “explotación del derecho de imagen, a los que se refiere el artículo 75.2.b) del Reglamento del Impuesto, cuando provengan de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0115"
+  },
+  {
+    "lf": 117,
+    "section": "## Cross-border points",
+    "wording": "The **special image-right art. 92.8** route is an express 111 exception involving payments to non-residents, so do not apply an absolute “no foreign payment in 111” rule ([111 order art. 2.f](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2)).",
+    "authority": "Order111 art.2",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2",
+    "quote": "sources/Order111.reader.txt LF436–436: “Rendimientos del trabajo.”; sources/Order111.reader.txt LF448–448: “explotación del derecho de imagen, a los que se refiere el artículo 75.2.b) del Reglamento del Impuesto, cuando provengan de actividades económicas.”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0116"
+  },
+  {
+    "lf": 119,
+    "section": "## Cross-border points",
+    "wording": "Ceuta/Melilla and the dated La Palma treatment require actual income entitlement and timing, not nationality.",
+    "authority": "RIRPF art.95; LIRPF art.None",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "sources/RIRPF.reader.txt LF5654–5654: “reducirán en un 60 por ciento cuando los rendimientos tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto.”; sources/LIRPF.reader.txt LF10904–10904: “En los períodos impositivos 2022, 2023, 2024, 2025 y 2026, la deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta ley será aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla de La Palma, debiendo entenderse, a estos efectos, que las”; sources/LIRPF.reader.txt LF10906–10906: “en 2026, a partir de la entrada en vigor del Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0117"
+  },
+  {
+    "lf": 119,
+    "section": "## Cross-border points",
+    "wording": "Foral administration selection must be established under the relevant territorial rules",
+    "authority": "RIRPF art.95; LIRPF art.None",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "sources/RIRPF.reader.txt LF5654–5654: “reducirán en un 60 por ciento cuando los rendimientos tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto.”; sources/LIRPF.reader.txt LF10904–10904: “En los períodos impositivos 2022, 2023, 2024, 2025 y 2026, la deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta ley será aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla de La Palma, debiendo entenderse, a estos efectos, que las”; sources/LIRPF.reader.txt LF10906–10906: “en 2026, a partir de la entrada en vigor del Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0118"
+  },
+  {
+    "lf": 119,
+    "section": "## Cross-border points",
+    "wording": "these common-territory boxes do not prove the state is entitled to every remittance.",
+    "authority": "RIRPF art.95; LIRPF art.None",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "sources/RIRPF.reader.txt LF5654–5654: “reducirán en un 60 por ciento cuando los rendimientos tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto.”; sources/LIRPF.reader.txt LF10904–10904: “En los períodos impositivos 2022, 2023, 2024, 2025 y 2026, la deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta ley será aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla de La Palma, debiendo entenderse, a estos efectos, que las”; sources/LIRPF.reader.txt LF10906–10906: “en 2026, a partir de la entrada en vigor del Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0119"
+  },
+  {
+    "lf": 119,
+    "section": "## Cross-border points",
+    "wording": "Keep those unresolved territorial cases separate from a supported ordinary resident-payment computation.",
+    "authority": "RIRPF art.95; LIRPF art.None",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "sources/RIRPF.reader.txt LF5654–5654: “reducirán en un 60 por ciento cuando los rendimientos tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto.”; sources/LIRPF.reader.txt LF10904–10904: “En los períodos impositivos 2022, 2023, 2024, 2025 y 2026, la deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta ley será aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla de La Palma, debiendo entenderse, a estos efectos, que las”; sources/LIRPF.reader.txt LF10906–10906: “en 2026, a partir de la entrada en vigor del Real Decreto-ley 23/2026, de 8 de septiembre, por el que se adoptan medidas fiscales y financieras urgentes que contribuyan a la reconstrucción económica y social de la isla de La Palma, así como medidas tendentes a promover la ejecución de inversiones por parte de las”",
+    "status": "Express rule / sourced administrative form coordinate / working-paper application",
+    "id": "es-modelo-111-0120"
+  },
+  {
+    "lf": 125,
+    "section": "## Two worked examples that recompute / ### 1. Professional cash invoice",
+    "wording": "A resident individual professional is paid a hypothetical **1,000 fee** for an ordinary service subject to general 21% VAT, with 15% IRPF and no reduced/territorial treatment. VAT is 210",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0121"
+  },
+  {
+    "lf": 125,
+    "section": "## Two worked examples that recompute / ### 1. Professional cash invoice",
+    "wording": "withholding is 150",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0122"
+  },
+  {
+    "lf": 125,
+    "section": "## Two worked examples that recompute / ### 1. Professional cash invoice",
+    "wording": "supplier cash is **1,060**.",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0123"
+  },
+  {
+    "lf": 125,
+    "section": "## Two worked examples that recompute / ### 1. Professional cash invoice",
+    "wording": "This payment contributes one recipient, 1,000 gross income and 150 withholding to boxes **07/08/09**.",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0124"
+  },
+  {
+    "lf": 125,
+    "section": "## Two worked examples that recompute / ### 1. Professional cash invoice",
+    "wording": "The payer remits the 150 through 111, separately from VAT ([RIRPF art. 95.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95); [LIVA art. 90](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90); [111 statutory form](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948)).",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0125"
+  },
+  {
+    "lf": 127,
+    "section": "## Two worked examples that recompute / ### 1. Professional cash invoice",
+    "wording": "```oa-check\nname: Spain 2026 paid professional invoice and withholding remittance\ninputs:\n  fee: 1000\nsteps:\n  vat: fee * 0.21\n  withholding: fee * 0.15\n  invoice_total_before_withholding: fee + vat\n  supplier_cash: invoice_total_before_withholding - withholding\n  payer_cash_total: supplier_cash + withholding\nexpected:\n  vat: 210\n  withholding: 150\n  supplier_cash: 1060\n  payer_cash_total: 1210\n```",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0126"
+  },
+  {
+    "lf": 146,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "For a hypothetical quarter, one ordinary employee receives three 2,500 payments and has 410.50 withheld each time, using the 30,000 annual example in [spain-payroll](spain-payroll.md).",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0127"
+  },
+  {
+    "lf": 146,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "Professional A, eligible for startup 7% with signed evidence, receives fee payments 1,000 and 500.",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0128"
+  },
+  {
+    "lf": 146,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "Professional B receives 2,000 at 15%.",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0129"
+  },
+  {
+    "lf": 146,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "Another 900 professional invoice remains unpaid and is excluded from this period.",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0130"
+  },
+  {
+    "lf": 146,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "There are **two**, not three, professional cash recipients.",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0131"
+  },
+  {
+    "lf": 148,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "Boxes 01/02/03 are 1 /7,500 /1,231.50.",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0132"
+  },
+  {
+    "lf": 148,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "Boxes 07/08/09 are 2 /3,500 /405.",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0133"
+  },
+  {
+    "lf": 148,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "All other withholding/payment-on-account boxes are zero",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0134"
+  },
+  {
+    "lf": 148,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "box 28 is **1,636.50**.",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0135"
+  },
+  {
+    "lf": 148,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "If an earlier 111 for the same period had result 1,500 and that was paid, the corrected complementary return restates those totals, puts 1,500 in box 29, identifies the earlier receipt and has box 30 **136.50**.",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0136"
+  },
+  {
+    "lf": 148,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "Any lateness is assessed separately",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0137"
+  },
+  {
+    "lf": 148,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "do not add an invented penalty to box 30 ([RIRPF arts. 78/95](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78); [111 order art. 9](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9)).",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0138"
+  },
+  {
+    "lf": 150,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "```oa-check\nname: Spain 2026 payment register to complementary Modelo 111\ninputs:\n  monthly_salary: 2500\n  monthly_salary_withholding: 410.50\n  professional_a_first_fee_paid: 1000\n  professional_a_second_fee_paid: 500\n  professional_b_fee_paid: 2000\n  unpaid_fee: 900\n  earlier_return_result: 1500\nsteps:\n  box02: monthly_salary * 3\n  box03: monthly_salary_withholding * 3\n  professional_a_paid: professional_a_first_fee_paid + professional_a_second_fee_paid\n  box08: professional_a_paid + professional_b_fee_paid\n  excluded_unpaid_amount: unpaid_fee\n  box09: professional_a_paid * 0.07 + professional_b_fee_paid * 0.15\n  box28: box03 + box09\n  box29: earlier_return_result\n  box30: box28 - box29\nexpected:\n  box02: 7500\n  box03: 1231.50\n  box08: 3500\n  excluded_unpaid_amount: 900\n  box09: 405\n  box28: 1636.50\n  box29: 1500\n  box30: 136.50\n```",
+    "authority": "RIRPF art.78; RIRPF art.95; Instructions art.None; Order111 art.9; LIVA art.90",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78; https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95; https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html; https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9; https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90",
+    "quote": "sources/RIRPF.reader.txt LF4510–4510: “momento en que se satisfagan o abonen las rentas correspondientes.”; sources/RIRPF.reader.txt LF5638–5638: “15 por ciento sobre los ingresos íntegros satisfechos.”; sources/RIRPF.reader.txt LF5640–5640: “7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades”; sources/RIRPF.reader.txt LF5642–5642: “comunicación debidamente firmada.”; sources/Instructions.reader.txt LF264–264: “Casillas 01 y 07”; sources/Instructions.reader.txt LF268–268: “Casillas 02 y 08”; sources/Instructions.reader.txt LF272–272: “Casillas 03 y 09”; sources/Instructions.reader.txt LF320–320: “Casilla 28”; sources/Instructions.reader.txt LF326–326: “Exclusivamente en el supuesto de autoliquidación complementaria, se hará constar en esta casilla el resultado de la autoliquidación o autoliquidaciones anteriormente presentadas por este mismo concepto y correspondientes al mismo ejercicio y”; sources/Instructions.reader.txt LF330–330: “resultado habrá de ser siempre una cantidad positiva.”; sources/Order111.reader.txt LF656–656: “autoliquidación complementaria según lo previsto en el artículo 122 de la citada Ley y en el artículo 119 del texto reglamentario mencionado anteriormente. A estos efectos el modelo 111 de autoliquidación o,”; sources/LIVA.reader.txt LF6990–6990: “21 por ciento, salvo lo dispuesto en el artículo siguiente.”",
+    "status": "Hypothetical case inputs and arithmetic derived from quoted legal rates and form coordinates; payroll410.50 is a stipulated sibling-example input",
+    "id": "es-modelo-111-0139"
+  },
+  {
+    "lf": 183,
+    "section": "## Ask the client first",
+    "wording": "1.",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0140"
+  },
+  {
+    "lf": 183,
+    "section": "## Ask the client first",
+    "wording": "Which payer, tax administration and monthly/quarterly withholding obligation apply?",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0141"
+  },
+  {
+    "lf": 184,
+    "section": "## Ask the client first",
+    "wording": "2.",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0142"
+  },
+  {
+    "lf": 184,
+    "section": "## Ask the client first",
+    "wording": "Which recipients were actually paid or credited, on what dates, and what are their legal/tax status and gross subject amounts?",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0143"
+  },
+  {
+    "lf": 185,
+    "section": "## Ask the client first",
+    "wording": "3.",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0144"
+  },
+  {
+    "lf": 185,
+    "section": "## Ask the client first",
+    "wording": "What signed startup/artistic/territorial evidence supports a reduced rate, and what professional activity existed before the start date?",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0145"
+  },
+  {
+    "lf": 186,
+    "section": "## Ask the client first",
+    "wording": "4.",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0146"
+  },
+  {
+    "lf": 186,
+    "section": "## Ask the client first",
+    "wording": "Which cash, VAT, in-kind value and payment-on-account records reconcile the invoices/payroll with the bank and liability ledger?",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0147"
+  },
+  {
+    "lf": 187,
+    "section": "## Ask the client first",
+    "wording": "5.",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0148"
+  },
+  {
+    "lf": 187,
+    "section": "## Ask the client first",
+    "wording": "What accepted earlier returns, results, receipts, payments and AEAT notices affect correction and lateness?",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0149"
+  },
+  {
+    "lf": 188,
+    "section": "## Ask the client first",
+    "wording": "6.",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0150"
+  },
+  {
+    "lf": 188,
+    "section": "## Ask the client first",
+    "wording": "What recipient records and current 190 keys support the annual summary and certificates?",
+    "authority": "Operational intake/status, no new entitlement",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Operational intake/status, no new entitlement",
+    "id": "es-modelo-111-0151"
+  },
+  {
+    "lf": 192,
+    "section": "## Sources",
+    "wording": "| Official source | Scope read | Read on |",
+    "authority": "Source bibliography or expressly retained source/factual boundary",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Source bibliography or expressly retained source/factual boundary",
+    "id": "es-modelo-111-0152"
+  },
+  {
+    "lf": 194,
+    "section": "## Sources",
+    "wording": "| [RIRPF, RD 439/2007](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820) | Arts. 74–80, 95/101/102/104/107/108: payer, income, payment trigger, rates, in-kind and reporting | 2026-10-26 |",
+    "authority": "Source bibliography or expressly retained source/factual boundary",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Source bibliography or expressly retained source/factual boundary",
+    "id": "es-modelo-111-0153"
+  },
+  {
+    "lf": 195,
+    "section": "## Sources",
+    "wording": "| [LIRPF, Ley 35/2006](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764), [LIS](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328), [LIVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740), [RIVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925) | Taxpayer/income status, credit, in-kind valuation, general VAT example and filing-frequency cross-reference | 2026-10-26 |",
+    "authority": "Source bibliography or expressly retained source/factual boundary",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Source bibliography or expressly retained source/factual boundary",
+    "id": "es-modelo-111-0154"
+  },
+  {
+    "lf": 196,
+    "section": "## Sources",
+    "wording": "| [Orden EHA/586/2011](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948), [AEAT 111 instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html) | Scope, statutory form, counts, correction, nil-payment distinction; old 037/July references not carried forward | 2026-10-26 |",
+    "authority": "Source bibliography or expressly retained source/factual boundary",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Source bibliography or expressly retained source/factual boundary",
+    "id": "es-modelo-111-0155"
+  },
+  {
+    "lf": 197,
+    "section": "## Sources",
+    "wording": "| [AEAT 2026 payment calendar](https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html), [Orden HAP/2194/2013](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385) | Current filing/payment dates, including July, and electronic channels | 2026-10-26 |",
+    "authority": "Source bibliography or expressly retained source/factual boundary",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Source bibliography or expressly retained source/factual boundary",
+    "id": "es-modelo-111-0156"
+  },
+  {
+    "lf": 198,
+    "section": "## Sources",
+    "wording": "| [Orden EHA/3127/2009](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567) | Modelo 190 population/design and electronic January filing window | 2026-10-26 |",
+    "authority": "Source bibliography or expressly retained source/factual boundary",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Source bibliography or expressly retained source/factual boundary",
+    "id": "es-modelo-111-0157"
+  },
+  {
+    "lf": 199,
+    "section": "## Sources",
+    "wording": "| [LGT, Ley 58/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Voluntary late correction, collection, withholding debt deferral exclusion and conduct-based penalties | 2026-10-26 |",
+    "authority": "Source bibliography or expressly retained source/factual boundary",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Source bibliography or expressly retained source/factual boundary",
+    "id": "es-modelo-111-0158"
+  },
+  {
+    "lf": 200,
+    "section": "## Sources",
+    "wording": "| [Original RD960/2013 IRPF preamble/article Segundo.Tercero.Ocho](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771), [current RIRPF108](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) | Full108.1 replacement with effects1January2014; monthlyJuly exception removed in later regulation, distinguished from unchanged oldformorder wording and current2026calendar | 2026-10-28 |",
+    "authority": "Source bibliography or expressly retained source/factual boundary",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Source bibliography or expressly retained source/factual boundary",
+    "id": "es-modelo-111-0159"
+  },
+  {
+    "lf": 202,
+    "section": "## Sources",
+    "wording": "**Not yet confirmed:** 2027 operational/direct-debit dates",
+    "authority": "Source bibliography or expressly retained source/factual boundary",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Source bibliography or expressly retained source/factual boundary",
+    "id": "es-modelo-111-0160"
+  },
+  {
+    "lf": 202,
+    "section": "## Sources",
+    "wording": "case-specific foral allocation, non-resident treaty relief and disputed withholding-credit evidence.",
+    "authority": "Source bibliography or expressly retained source/factual boundary",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Source bibliography or expressly retained source/factual boundary",
+    "id": "es-modelo-111-0161"
+  },
+  {
+    "lf": 202,
+    "section": "## Sources",
+    "wording": "Special prize, public-forest and image-right transactions require their full underlying eligibility/base computation before using the mapped boxes.",
+    "authority": "Source bibliography or expressly retained source/factual boundary",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Source bibliography or expressly retained source/factual boundary",
+    "id": "es-modelo-111-0162"
+  },
+  {
+    "lf": 202,
+    "section": "## Sources",
+    "wording": "Independent whole-pack review remains outstanding.",
+    "authority": "Source bibliography or expressly retained source/factual boundary",
+    "url": "Current cited Sources; no separate legal amount",
+    "quote": "Operational/bibliographic/precisely reserved wording. No fabricated statutory quote.",
+    "status": "Source bibliography or expressly retained source/factual boundary",
+    "id": "es-modelo-111-0163"
+  }
+]

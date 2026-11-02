@@ -1,0 +1,7 @@
+> Writer construction snapshot. The final Guide and full ledger control; this snapshot has no independent acceptance.
+
+### Gym/personal-training and private-school tax credits
+
+Schedule 3 paragraph 19A permits a credit capped at the lower of 10% of the individual's qualifying Gibraltar gym/fitness membership or contracted Gibraltar personal-trainer cost and that individual's tax liability. A personal trainer must be registered with ITO and compliant to the Commissioner's satisfaction. The claim needs evidence for the entire cost. Unused credit becomes zero and cannot be transferred or carried forward. [Income Tax Act, Schedule 3 paragraph 19A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
+
+Paragraph 19B applies the same 10%-of-cost and tax-liability ceilings to a parent's private primary/secondary school tuition fees paid in Gibraltar for the defined child. Nursery is excluded from this school definition; its separate allowance has different conditions. The entire tuition cost needs supporting evidence. Unused credit becomes zero and cannot be transferred or carried forward. In separate assumed cases, £900 of qualifying gym cost with £50 liability permits £50 credit; £8,000 tuition with £900 liability permits £800. These are independent illustrations, not permission to apply several credits repeatedly against the same liability or an asserted statutory ordering between them. [Schedule 3 paragraph 19B](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).

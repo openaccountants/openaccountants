@@ -1,0 +1,71 @@
+{
+  "recorded_utc": "2026-11-01T10:30:50.216437+00:00",
+  "pinned_base": "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+  "head": "9f05e8c9785a0573787887e403e07daf20a41e75",
+  "origin_main_merge_base_verified": "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+  "generated_index_exclusion": "--no-index-check; contributor cannot edit generated artifacts",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/dr-congo/cd-corporate-income-tax.md",
+        "skills/dr-congo/cd-income-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/dr-congo/cd-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/dr-congo/cd-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/dr-congo/cd-corporate-income-tax.md",
+        "skills/dr-congo/cd-income-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 5 changed guide file(s)\nchecked 4 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+        "--head",
+        "9f05e8c9785a0573787887e403e07daf20a41e75",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 4 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+        "9f05e8c9785a0573787887e403e07daf20a41e75"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}
