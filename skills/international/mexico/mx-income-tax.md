@@ -415,7 +415,7 @@ Total gross: MXN 700,000
 Deducciones: MXN 95,000
 Taxable: MXN 605,000
 
-ISR: MXN 110,842.74 + (MXN 605,000 − MXN 590,796) × 30% = MXN 110,842.74 + MXN 4,261.20 = **MXN 115,103.94**
+ISR (2025 annual tariff, RMF 2025 Anexo 8, for the 2025 return filed in April 2026; the 2026 tariff row for this income is 424,353.98-668,840.14 at 23.52%): MXN 110,842.74 + (MXN 605,000 − MXN 590,796) × 30% = MXN 110,842.74 + MXN 4,261.20 = **MXN 115,103.94**
 
 Foreign tax credit: If US withholding tax was paid, may credit against Mexican ISR (Art. 5 LISR). Flag for treaty review.
 
@@ -432,7 +432,7 @@ Deductions: consulting room rent MXN 36,000, medical equipment depreciation MXN 
 
 Taxable: MXN 480,000 − MXN 86,400 = MXN 393,600
 
-ISR: MXN 60,049.40 + (MXN 393,600 − MXN 374,837.89) × 23.52%
+ISR (2025 annual tariff, RMF 2025 Anexo 8, for the 2025 return filed in April 2026): MXN 60,049.40 + (MXN 393,600 − MXN 374,837.89) × 23.52%
 = MXN 60,049.40 + MXN 18,762.11 × 23.52% = MXN 60,049.40 + MXN 4,412.85 = **MXN 64,462.25**
 
 Deducciones personales: gastos médicos propios MXN 12,000 + colegiaturas hijo MXN 8,900 = MXN 20,900 (at the 23.52% marginal rate this reduces ISR by MXN 20,900 x 23.52% = MXN 4,915.68, subject to the Art. 151 overall cap).
@@ -447,7 +447,7 @@ Nu México narrations:
 - `SPEI recibido de EMPRESA X SA DE CV`: PJ client
 
 PF income (no retention): MXN 90,000, pagos provisionales required monthly
-PJ income (10% retention): MXN 60,000; retention = MXN 6,000
+PJ income (10% retention under Régimen General, Art. 106 LISR): MXN 60,000; retention = MXN 6,000. If she opts into RESICO, the PJ client instead withholds 1.25% (Art. 113-J LISR): MXN 750
 
 Total gross: MXN 150,000
 RESICO check: MXN 150,000 < MXN 3,500,000 → RESICO available
@@ -571,7 +571,7 @@ SECTION G: REVIEWER FLAGS
 1. **Which regime is the client in: RESICO or Régimen General?** It decides the whole computation.
 2. **Do income figures include IVA?** Strip 16% IVA before computing ISR.
 3. **Is there a CFDI for every expense to be deducted?** No CFDI, no deduction.
-4. **Which clients withheld 10% ISR, and are the retention certificates on file?**
+4. **Which clients withheld 10% ISR (Art. 106; 1.25% if the client is in RESICO, Art. 113-J), and are the retention certificates on file?**
 5. **Any foreign-client income, and were pagos provisionales paid on it?**
 6. **Were pagos provisionales paid by the 17th each month?**
 
@@ -581,7 +581,7 @@ Before computing Mexican ISR, collect:
 
 1. **Total gross income** (ingresos cobrados), all amounts received, ex-IVA, for the fiscal year
 2. **CFDI de honorarios emitidos**: all CFDIs issued to clients (SAT portal or accounting system)
-3. **Retenciones comprobantes**: withholding certificates from PJ clients (10% ISR)
+3. **Retenciones comprobantes**: withholding certificates from PJ clients (10% ISR under Art. 106; 1.25% under Art. 113-J for RESICO payees)
 4. **Pagos provisionales made**: monthly ISR payments (línea de captura / recibos from SAT)
 5. **Deducciones autorizadas**: documented expenses with CFDI de proveedores
 6. **Deducciones personales**: medical, dental, hospital, education, mortgage, IMSS voluntary (with CFDI/facturas)
