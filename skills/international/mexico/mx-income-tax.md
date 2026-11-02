@@ -639,7 +639,7 @@ Before computing Mexican ISR, collect:
 
 | Source | URL | Read on |
 |---|---|---|
-| SAT, Resolución Miscelánea Fiscal 2026, Anexo 8 (DOF 28-12-2025): annual tariffs for 2025 (C.I) and 2026 (C.II), monthly Art. 96 tariff for 2026 (A.V); sat.gob.mx timed out, read from the Internet Archive copy | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf | 2026-10-29 |
+| SAT, Resolución Miscelánea Fiscal 2026, Anexo 8 (DOF 28-12-2025): annual tariffs for 2025 (C.I) and 2026 (C.II), monthly Art. 96 tariff for 2026 (B.V); sat.gob.mx timed out, read from the Internet Archive copy | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf | 2026-10-29 |
 | SAT, Resolución Miscelánea Fiscal 2025, Anexo 8 (ISR tariffs for 2025, incl. the annual tariff for LISR Art. 152) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo8_RMF2025-30122024.pdf | 2026-10-28 |
 | Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 5, 27, 28, 34, 36, 94, 106, 113-E, 113-F, 113-J, 150, 151 (still last reformed DOF 01-04-2024 in the October 2026 copy) | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-29 |
 | Ley del Impuesto al Valor Agregado, consolidated (Cámara de Diputados), 16% general rate | https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf | 2026-10-28 |

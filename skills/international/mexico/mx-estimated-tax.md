@@ -38,6 +38,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 **RESICO monthly rate table**
 
+The statute (LISR Art. 113-E, TABLA 1) states each band as "Hasta" (up to) the upper limit: Hasta 25,000.00 at 1.00%, Hasta 50,000.00 at 1.10%, Hasta 83,333.33 at 1.50%, Hasta 208,333.33 at 2.00%, Hasta 3,500,000.00 at 2.50%. The lower bounds below are the complement of the previous row.
+
 | Monthly income (MXN) | Rate |
 | --- | --- |
 | Up to 25,000 | 1.00% |
@@ -159,7 +161,7 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 
 ### 5.2 Progressive rate table (Art. 96 LISR, cumulative)
 
-- **Progressive rate table range** — Ranges from 1.92% to 35%. Confirm against Annex 8 of the 2025 Resolucion Miscelanea Fiscal.  _(Art. 96 LISR; Annex 8 of the 2025 Resolucion Miscelanea Fiscal)_
+- **Progressive rate table range** — Ranges from 1.92% to 35% (annual tariff, RMF 2026 Anexo 8 C.II; the monthly Art. 96 provisional tariff for 2026 is in Anexo 8 B.V).  _(Art. 96 LISR; Anexo 8 RMF 2026, DOF 28-12-2025)_
 
 ### 5.3 RESICO -- simplified
 
@@ -182,8 +184,8 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 
 | Element | Rule |
 | --- | --- |
-| Actualizacion | Tax adjusted by INPC ratio (due month to payment month) |
-| Recargos | Approx. 1.47%/month on updated amount |
+| Actualizacion | Tax adjusted by INPC ratio (due month to payment month), CFF Art. 17-A |
+| Recargos | CFF Art. 21: surcharge on unpaid contributions from the due date; Art. 22 sets the rate as an annual variable rate fixed with reference to ordinary interest rates, applied to the updated amount. No fixed monthly percentage appears in the archived CFF |
 
 ### 6.2 Computation
 
@@ -195,8 +197,8 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 
 | Violation | Fine range |
 | --- | --- |
-| Failure to file | MXN 1,810 -- MXN 22,400 per return |
-| Filing errors | MXN 460 -- MXN 6,730 |
+| Failure to file a return (CFF Art. 81 fr. I a, updated amounts in RMF Anexo 5) | MXN 1,810 -- MXN 22,400 per obligation not declared |
+| Errors in a return (CFF Art. 80 fr. III a, updated amounts in RMF Anexo 5) | 2% of the contributions declared, never below MXN 3,810 nor above MXN 9,530 |
 
 ## Section 7 -- SAT filing procedure
 
@@ -286,6 +288,17 @@ Before delivering output, verify:
 - NEVER deduct expenses without valid CFDI
 - NEVER present amounts as definitive -- advise confirmation with contador publico
 
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 14, 96, 106-108, 113-E to 113-J | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-28 |
+| Código Fiscal de la Federación, consolidated (Cámara de Diputados, last reform DOF 09-04-2026), Arts. 17-A, 21, 22, 80, 81 | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
+| SAT, Resolución Miscelánea Fiscal 2026, Anexo 8 (DOF 28-12-2025): annual tariffs 2025 (C.I) and 2026 (C.II), monthly Art. 96 provisional tariff 2026 (B.V) | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf | 2026-10-29 |
+| SAT, Resolución Miscelánea Fiscal 2025, Anexo 5 (updated fine amounts for CFF infractions) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo5_RMF2025-30122024.pdf | 2026-11-02 |
+
+Not yet confirmed: the exact recargo rate currently published under CFF Art. 22 (the archived CFF sets an annual variable rate mechanism, not a fixed monthly percentage; the 1.47% figure in Test 5 is a hypothetical input); the SAT portal screens and pre-filled behaviour (procedure, not statute); whether a RESICO taxpayer may combine RESICO with Régimen General in the same year; the coefficient-of-utility reduction request mechanics for personas morales (LISR Art. 108 mechanics read, SAT procedure not read).
+
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a contador publico or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
@@ -298,7 +311,7 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network -- accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
