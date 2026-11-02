@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # MX Estimated Tax
 
-## Section 1 -- Quick reference
+## Who this applies to
 
 **Quick reference fields**
 
@@ -35,6 +35,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Contributor | Open Accountants Community |
 | Validated by | Pending -- requires sign-off by Mexican contador publico |
 | Validation date | Pending |
+
+## Rates, bands and thresholds
 
 **RESICO monthly rate table**
 
@@ -58,7 +60,101 @@ The statute (LISR Art. 113-E, TABLA 1) states each band as "Hasta" (up to) the u
 | RESICO threshold exceeded | Switch to general regime immediately |
 | CFDI status of expenses | Only deduct with valid CFDI |
 
-## Section 2 -- Required inputs and refusal catalogue
+## The taxable base
+
+### 5.1 General regime -- cumulative method
+
+- **Cumulative method formula** -- cumulative_income = total_income_YTD (with valid CFDI) cumulative_deductions = total_deductible_expenses_YTD cumulative_PTU = profit sharing paid cumulative_losses = loss carryforwards applied taxable_base = income - deductions - PTU - losses provisional_ISR = apply_progressive_table(taxable_base) payment = provisional_ISR - retenciones_YTD - prior_payments_YTD if payment < 0: payment = 0
+
+### 5.2 Progressive rate table (Art. 96 LISR, cumulative)
+
+- **Progressive rate table range** -- Ranges from 1.92% to 35% (annual tariff, RMF 2026 Anexo 8 C.II; the monthly Art. 96 provisional tariff for 2026 is in Anexo 8 B.V).  _(Art. 96 LISR; Anexo 8 RMF 2026, DOF 28-12-2025)_
+
+### 5.3 RESICO -- simplified
+
+- **RESICO simplified rule** -- Applied to gross monthly income. No deductions. Fixed rates 1%-2.5%. Income limit MXN 3,500,000/year.
+
+### 5.4 Persona moral -- coefficient of utility
+
+- **Coefficient of utility formula** -- coefficient = prior_year_fiscal_profit / prior_year_nominal_income taxable_base = cumulative_income x coefficient provisional_ISR = taxable_base x 30% payment = provisional_ISR - retenciones - prior_payments
+- **Flag requirement** -- Flag for contador publico.
+
+### 5.5 Filing deadline
+
+- **Filing deadline** -- The 17th of the month following the income month. Weekend/holiday: next business day.
+
+## Deadlines and filing
+
+1. Log into SAT portal with e.firma or contrasena
+2. Select Declaraciones > Presenta tu declaracion provisional o definitiva
+3. Select tax period and ISR provisional obligation
+4. Enter income, deductions, prior payments
+5. System calculates -- review and confirm
+6. Generate linea de captura for payment
+7. Pay via bank portal using linea de captura
+8. Download and retain acuse de recibo
+
+## Penalties and interest
+
+### 6.1 Recargos and actualizacion
+
+**Recargos and actualizacion**
+
+| Element | Rule |
+| --- | --- |
+| Actualizacion | Tax adjusted by INPC ratio (due month to payment month), CFF Art. 17-A |
+| Recargos | CFF Art. 21: surcharge on unpaid contributions from the due date; Art. 22 sets the rate as an annual variable rate fixed with reference to ordinary interest rates, applied to the updated amount. No fixed monthly percentage appears in the archived CFF |
+
+### 6.2 Computation
+
+- **Penalty computation formula** -- updated_tax = unpaid_tax x (INPC_payment_month / INPC_due_month) recargos = updated_tax x recargo_rate x months_late total = updated_tax + recargos
+
+### 6.3 Multas (fines)
+
+**Multas (fines)**
+
+| Violation | Fine range |
+| --- | --- |
+| Failure to file a return (CFF Art. 81 fr. I a, updated amounts in RMF Anexo 5) | MXN 1,810 -- MXN 22,400 per obligation not declared |
+| Errors in a return (CFF Art. 80 fr. III a, updated amounts in RMF Anexo 5) | 2% of the contributions declared, never below MXN 3,810 nor above MXN 9,530 |
+
+## Cross-border points
+
+- Payments received with ISR withheld by a persona moral (LISR Art. 106, 10% on professional fees; 1.25% under RESICO, LISR Art. 113-J) are credited against these provisional payments.
+- Permanent establishment and treaty-credit questions are outside this skill (see the refusal catalogue and mx-cross-border).
+
+## Worked examples
+
+### Example 1 -- General regime cumulative (Q2 month)
+
+**Input:** Cumulative income (Jan-May) = MXN 250,000. Cumulative deductions = MXN 80,000. Retenciones YTD = MXN 5,000. Prior payments (Jan-Apr) = MXN 15,000.
+
+**Computation:**
+- Taxable base = MXN 250,000 - MXN 80,000 = MXN 170,000
+- Apply cumulative progressive table: find bracket, compute ISR
+- Subtract retenciones MXN 5,000
+- Subtract prior payments MXN 15,000
+- May payment = result
+
+### Example 2 -- RESICO monthly
+
+**Input:** Monthly income = MXN 40,000.
+
+**Computation:** Rate for MXN 25,000.01-50,000 = 1.10%. Payment = MXN 40,000 x 1.10% = MXN 440.
+
+### Example 3 -- Negative cumulative result
+
+**Input:** Cumulative deductions exceed income YTD.
+
+**Output:** No provisional payment due. Loss carries forward in cumulative computation.
+
+### Example 4 -- Bank statement classification
+
+**Input line:** `17.02.2025 ; SAT PAGO PROVISIONAL ISR ENE 2025 ; CARGO ; -3,500.00 ; MXN`
+
+**Classification:** ISR provisional payment for January 2025. Tax payment -- not a deductible business expense.
+
+## Ask the client first
 
 ### Required inputs
 
@@ -121,95 +217,6 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 | --- | --- | --- |
 | Linea de captura + period reference | ISR provisional for that period | Standard SAT format |
 | RFC + ISR + month/year | ISR provisional | Self-identified |
-
-## Section 4 -- Worked examples
-
-### Example 1 -- General regime cumulative (Q2 month)
-
-**Input:** Cumulative income (Jan-May) = MXN 250,000. Cumulative deductions = MXN 80,000. Retenciones YTD = MXN 5,000. Prior payments (Jan-Apr) = MXN 15,000.
-
-**Computation:**
-- Taxable base = MXN 250,000 - MXN 80,000 = MXN 170,000
-- Apply cumulative progressive table: find bracket, compute ISR
-- Subtract retenciones MXN 5,000
-- Subtract prior payments MXN 15,000
-- May payment = result
-
-### Example 2 -- RESICO monthly
-
-**Input:** Monthly income = MXN 40,000.
-
-**Computation:** Rate for MXN 25,000.01-50,000 = 1.10%. Payment = MXN 40,000 x 1.10% = MXN 440.
-
-### Example 3 -- Negative cumulative result
-
-**Input:** Cumulative deductions exceed income YTD.
-
-**Output:** No provisional payment due. Loss carries forward in cumulative computation.
-
-### Example 4 -- Bank statement classification
-
-**Input line:** `17.02.2025 ; SAT PAGO PROVISIONAL ISR ENE 2025 ; CARGO ; -3,500.00 ; MXN`
-
-**Classification:** ISR provisional payment for January 2025. Tax payment -- not a deductible business expense.
-
-## Section 5 -- Computation rules
-
-### 5.1 General regime -- cumulative method
-
-- **Cumulative method formula** -- cumulative_income = total_income_YTD (with valid CFDI) cumulative_deductions = total_deductible_expenses_YTD cumulative_PTU = profit sharing paid cumulative_losses = loss carryforwards applied taxable_base = income - deductions - PTU - losses provisional_ISR = apply_progressive_table(taxable_base) payment = provisional_ISR - retenciones_YTD - prior_payments_YTD if payment < 0: payment = 0
-
-### 5.2 Progressive rate table (Art. 96 LISR, cumulative)
-
-- **Progressive rate table range** -- Ranges from 1.92% to 35% (annual tariff, RMF 2026 Anexo 8 C.II; the monthly Art. 96 provisional tariff for 2026 is in Anexo 8 B.V).  _(Art. 96 LISR; Anexo 8 RMF 2026, DOF 28-12-2025)_
-
-### 5.3 RESICO -- simplified
-
-- **RESICO simplified rule** -- Applied to gross monthly income. No deductions. Fixed rates 1%-2.5%. Income limit MXN 3,500,000/year.
-
-### 5.4 Persona moral -- coefficient of utility
-
-- **Coefficient of utility formula** -- coefficient = prior_year_fiscal_profit / prior_year_nominal_income taxable_base = cumulative_income x coefficient provisional_ISR = taxable_base x 30% payment = provisional_ISR - retenciones - prior_payments
-- **Flag requirement** -- Flag for contador publico.
-
-### 5.5 Filing deadline
-
-- **Filing deadline** -- The 17th of the month following the income month. Weekend/holiday: next business day.
-
-## Section 6 -- Penalties and interest
-
-### 6.1 Recargos and actualizacion
-
-**Recargos and actualizacion**
-
-| Element | Rule |
-| --- | --- |
-| Actualizacion | Tax adjusted by INPC ratio (due month to payment month), CFF Art. 17-A |
-| Recargos | CFF Art. 21: surcharge on unpaid contributions from the due date; Art. 22 sets the rate as an annual variable rate fixed with reference to ordinary interest rates, applied to the updated amount. No fixed monthly percentage appears in the archived CFF |
-
-### 6.2 Computation
-
-- **Penalty computation formula** -- updated_tax = unpaid_tax x (INPC_payment_month / INPC_due_month) recargos = updated_tax x recargo_rate x months_late total = updated_tax + recargos
-
-### 6.3 Multas (fines)
-
-**Multas (fines)**
-
-| Violation | Fine range |
-| --- | --- |
-| Failure to file a return (CFF Art. 81 fr. I a, updated amounts in RMF Anexo 5) | MXN 1,810 -- MXN 22,400 per obligation not declared |
-| Errors in a return (CFF Art. 80 fr. III a, updated amounts in RMF Anexo 5) | 2% of the contributions declared, never below MXN 3,810 nor above MXN 9,530 |
-
-## Section 7 -- SAT filing procedure
-
-1. Log into SAT portal with e.firma or contrasena
-2. Select Declaraciones > Presenta tu declaracion provisional o definitiva
-3. Select tax period and ISR provisional obligation
-4. Enter income, deductions, prior payments
-5. System calculates -- review and confirm
-6. Generate linea de captura for payment
-7. Pay via bank portal using linea de captura
-8. Download and retain acuse de recibo
 
 ## Section 8 -- Edge cases
 
@@ -303,7 +310,7 @@ Not yet confirmed: the exact recargo rate currently published under CFF Art. 22 
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a contador publico or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date, verified version of this skill is maintained by the OpenAccountants network. Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
 
 <!-- openaccountants-cta-block -->
 

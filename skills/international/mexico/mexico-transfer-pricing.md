@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Mexico Transfer Pricing
 
-## Section 1 -- Quick Reference
+## Who this applies to
 
 **Section 1 -- Quick Reference**
 
@@ -31,6 +31,125 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Documentation language | Spanish (Local File); Master File in Spanish or English |
 | TP documentation types | Four types: TP Report, Local File, Master File, CbCR |
 | Skill version | 1.0 |
+
+## Rates, bands and thresholds
+
+| Threshold | Amount | Source |
+| --- | --- | --- |
+| CbCR: prior-year consolidated accounting revenues | Equal to or above MXN 12,000,000,000 (fixed; LIF modification possible only by Congress) | LISR Art. 76-A fr. III item 6 |
+| Master/local informative returns: large-taxpayer classes | Art. 32-H fr. I class: accumulated income equal to or above MXN 1,103,204,520.00 (updated through DOF 28-12-2025) | CFF Art. 32-H; LISR Art. 76-A first paragraph |
+| TP documentation exemption (business) | Prior-year income up to MXN 13,000,000.00 | LISR Art. 76 fr. IX final paragraph |
+| TP documentation exemption (professional services) | Prior-year service income up to MXN 3,000,000.00 | LISR Art. 76 fr. IX final paragraph |
+| Maquiladora safe harbour | Greater of 6.9% of total assets or 6.5% of total costs and expenses | LISR Art. 182 |
+
+## The taxable base
+
+### 3.1 Definition
+
+- **Arm's length principle** -- Transactions between related parties must be valued as if they were carried out between independent parties in comparable operations. The arm's length principle applies.  _(Article 179 LISR)_
+
+### 3.2 Accepted Methods (Article 180 LISR)
+
+**3.2 Accepted Methods (Article 180 LISR)**  _(Article 180 LISR)_
+
+| Method | Accepted |
+| --- | --- |
+| Comparable Uncontrolled Price (CUP) | Yes |
+| Resale Price Method (RPM) | Yes |
+| Cost Plus Method (CPM) | Yes |
+| Transactional Net Margin Method (TNMM) | Yes |
+| Profit Split Method (PSM) | Yes |
+| Residual Profit Split | Yes |
+
+### 3.3 Preferred Method
+
+- **Preferred method** -- CUP is preferred by SAT where applicable. Discounted cash flow method accepted for transactions involving intangibles under certain conditions.
+
+### 3.4 Range
+
+- **Range application** -- Interquartile range applied; adjustment to median if result outside range.
+
+## Deadlines and filing
+
+**Section 4 -- Filing Obligations**
+
+| Obligation | Detail |
+| --- | --- |
+| TP Report | Maintain; available on SAT audit request |
+| Local File | Annual electronic filing (May 15) |
+| Master File | Annual electronic filing (December 31) |
+| CbCR | Annual electronic filing (December 31) |
+| Annual tax return (Declaración Anual) | Includes informative obligations on related-party transactions |
+| Informative multiple return | Related-party transaction information in annual return |
+
+### Deadline table
+
+| Item | Deadline |
+| --- | --- |
+| Local File | May 15 of the following fiscal year |
+| Master File | December 31 of the following fiscal year |
+| CbCR | December 31 of the following fiscal year |
+| TP Report preparation | By time of annual tax return filing (March 31 for legal entities) |
+| Annual tax return | March 31 of the following fiscal year |
+| Maquiladora informative return | June of the following fiscal year |
+
+## Penalties and interest
+
+**Section 6 -- Penalties**
+
+| Offence | Penalty |
+| --- | --- |
+| Late/incomplete Art. 76-A informative returns (CFF Art. 81 fr. XL, updated amounts in RMF Anexo 5 item XXXVII) | MXN 199,630 -- MXN 284,220 |
+| Failure to file Local File / Master File | Same CFF Art. 81 fr. XL range (Art. 76-A returns) |
+| SAT TP adjustment -- tax omission | 55-75% of the omitted contributions (CFF Art. 76; Art. 64 repealed) |
+| Late payment surcharge (recargos) | Annual variable rate under CFF Art. 22, applied to the updated amount |
+| Inflation adjustment | Contributions updated under CFF Art. 65 |
+| Non-compliance with maquiladora safe harbor | Deemed permanent establishment of foreign principal |
+
+## Cross-border points
+
+- The master file and CbCR exist only because the counterparty group is multinational (LISR Art. 76-A); purely domestic related-party flows carry the Art. 76 fr. IX documentation and the Art. 76 fr. X informative return (15 May).
+- CbCR data feeds SAT risk-based audit selection; exchange with the foreign parent's authority depends on the competent-authority framework (CRMA) -- procedure not read in an archived source.
+- TP disputes on cross-border flows can go to the Mutual Agreement Procedure under Mexico's treaties (treaty texts not archived).
+
+## Worked examples
+
+### Worked example 1: CbCR threshold test
+
+A Mexican multinational group reports consolidated accounting revenues of MXN 12,500,000,000 for FY2025. The statutory trigger is revenues equal to or above MXN 12,000,000,000, so the CbCR is due by 31 December 2026.
+
+```oa-check
+name: cbcr threshold test
+inputs:
+  ingresos_consolidados: 12500000000
+  umbral: 12000000000
+steps:
+  - excedente: ingresos_consolidados - umbral
+expected:
+  excedente: 500000000
+```
+
+### Worked example 2: TP documentation exemption test
+
+A professional-services individual earned MXN 2,800,000 of service income in the prior year. The Art. 76 fr. IX exemption ceiling for service income is MXN 3,000,000, so the full TP study is not required (the Art. 179 exceptions still must be checked).
+
+```oa-check
+name: tp documentation exemption headroom
+inputs:
+  techo_servicios: 3000000
+  ingresos_servicios: 2800000
+steps:
+  - margen: techo_servicios - ingresos_servicios
+expected:
+  margen: 200000
+```
+
+## Ask the client first
+
+1. Which entities sit in Mexico and which related parties are abroad (residence drives Art. 76-A applicability)?
+2. Prior-year consolidated accounting revenues (CbCR trigger) and each entity's accumulated income (Art. 32-H classes and the Art. 76 fr. IX exemption).
+3. What related-party flows exist by type (goods, services, intangibles, financing) and are comparables already on file?
+4. Is the entity a maquiladora under Art. 181 (safe-harbour election and the June informative return)?
 
 ## Section 2 -- Documentation Requirements
 
@@ -83,73 +202,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### 2.5 Important Distinction
 
-- **Distinction between TP Report and Local File** — Mexico distinguishes between: 1. TP Report (all entities with related-party transactions) -- general support file. 2. Local File (large entities over threshold) -- OECD BEPS Action 13 format, filed with SAT. Both must be prepared; the Local File is more detailed and includes some Master File content.
-
-## Section 3 -- Arm's Length Standard
-
-### 3.1 Definition
-
-- **Arm's length principle** — Transactions between related parties must be valued as if they were carried out between independent parties in comparable operations. The arm's length principle applies.  _(Article 179 LISR)_
-
-### 3.2 Accepted Methods (Article 180 LISR)
-
-**3.2 Accepted Methods (Article 180 LISR)**  _(Article 180 LISR)_
-
-| Method | Accepted |
-| --- | --- |
-| Comparable Uncontrolled Price (CUP) | Yes |
-| Resale Price Method (RPM) | Yes |
-| Cost Plus Method (CPM) | Yes |
-| Transactional Net Margin Method (TNMM) | Yes |
-| Profit Split Method (PSM) | Yes |
-| Residual Profit Split | Yes |
-
-### 3.3 Preferred Method
-
-- **Preferred method** — CUP is preferred by SAT where applicable. Discounted cash flow method accepted for transactions involving intangibles under certain conditions.
-
-### 3.4 Range
-
-- **Range application** — Interquartile range applied; adjustment to median if result outside range.
-
-## Section 4 -- Filing Obligations
-
-**Section 4 -- Filing Obligations**
-
-| Obligation | Detail |
-| --- | --- |
-| TP Report | Maintain; available on SAT audit request |
-| Local File | Annual electronic filing (May 15) |
-| Master File | Annual electronic filing (December 31) |
-| CbCR | Annual electronic filing (December 31) |
-| Annual tax return (Declaración Anual) | Includes informative obligations on related-party transactions |
-| Informative multiple return | Related-party transaction information in annual return |
-
-## Section 5 -- Deadlines
-
-**Section 5 -- Deadlines**
-
-| Item | Deadline |
-| --- | --- |
-| Local File | May 15 of the following fiscal year |
-| Master File | December 31 of the following fiscal year |
-| CbCR | December 31 of the following fiscal year |
-| TP Report preparation | By time of annual tax return filing (March 31 for legal entities) |
-| Annual tax return | March 31 of the following fiscal year |
-| Maquiladora informative return | June of the following fiscal year |
-
-## Section 6 -- Penalties
-
-**Section 6 -- Penalties**
-
-| Offence | Penalty |
-| --- | --- |
-| Late/incomplete Art. 76-A informative returns (CFF Art. 81 fr. XL, updated amounts in RMF Anexo 5 item XXXVII) | MXN 199,630 -- MXN 284,220 |
-| Failure to file Local File / Master File | Same CFF Art. 81 fr. XL range (Art. 76-A returns) |
-| SAT TP adjustment -- tax omission | 55-75% of the omitted contributions (CFF Art. 76; Art. 64 repealed) |
-| Late payment surcharge (recargos) | Annual variable rate under CFF Art. 22, applied to the updated amount |
-| Inflation adjustment | Contributions updated under CFF Art. 65 |
-| Non-compliance with maquiladora safe harbor | Deemed permanent establishment of foreign principal |
+- **Distinction between TP Report and Local File** -- Mexico distinguishes between: 1. TP Report (all entities with related-party transactions) -- general support file. 2. Local File (large entities over threshold) -- OECD BEPS Action 13 format, filed with SAT. Both must be prepared; the Local File is more detailed and includes some Master File content.
 
 ## Section 7 -- Advance Pricing Agreements (APA)
 
@@ -168,7 +221,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### Important: Maquiladora APA Elimination
 
-- **Maquiladora APA elimination** — From 2025, maquiladoras can NO longer request APAs. The sole mechanism available is the safe harbour (Article 182 LISR).  _(Article 182 LISR)_
+- **Maquiladora APA elimination** -- From 2025, maquiladoras can NO longer request APAs. The sole mechanism available is the safe harbour (Article 182 LISR).  _(Article 182 LISR)_
 
 ## Section 8 -- Safe Harbours
 
@@ -186,7 +239,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ### 8.2 General Transactions
 
-- **No safe harbour for general transactions** — No safe harbour for non-maquiladora related-party transactions. All must be at arm's length with supporting documentation.
+- **No safe harbour for general transactions** -- No safe harbour for non-maquiladora related-party transactions. All must be at arm's length with supporting documentation.
 
 ## Section 9 -- Recent Developments
 
