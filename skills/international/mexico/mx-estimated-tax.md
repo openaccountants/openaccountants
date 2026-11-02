@@ -115,8 +115,8 @@ The statute (LISR Art. 113-E, TABLA 1) states each band as "Hasta" (up to) the u
 
 | Violation | Fine range |
 | --- | --- |
-| Failure to file a return (CFF Art. 81 fr. I a, updated amounts in RMF Anexo 5) | MXN 1,810 -- MXN 22,400 per obligation not declared |
-| Errors in a return (CFF Art. 80 fr. III a, updated amounts in RMF Anexo 5) | 2% of the contributions declared, never below MXN 3,810 nor above MXN 9,530 |
+| Failure to file a return (infraction: CFF Art. 81 fr. I; fine: CFF Art. 82 fr. I a), amounts updated by RMF and compiled in the consolidated CFF text, actualizada DOF 28-12-2025) | MXN 2,050.00 -- MXN 25,360.00 per obligation not declared (2026) |
+| Errors in a return (fine: CFF Art. 80 fr. III a, for the RFC infraction in CFF Art. 79 fr. IV; amounts compiled in the consolidated CFF text, actualizada DOF 28-12-2025) | between 2% of the contributions declared and MXN 10,790.00, never below MXN 4,310.00 nor above MXN 10,790.00 (2026) |
 
 ## Cross-border points
 
@@ -300,7 +300,7 @@ Before delivering output, verify:
 | Source | URL | Read on |
 |---|---|---|
 | Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 14, 96, 106-108, 113-E to 113-J | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-28 |
-| Código Fiscal de la Federación, consolidated (Cámara de Diputados, last reform DOF 09-04-2026), Arts. 17-A, 21, 22, 80, 81 | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
+| Código Fiscal de la Federación, consolidated (Cámara de Diputados, last reform DOF 09-04-2026), Arts. 17-A, 21, 22, 79 fr. IV, 80 fr. III a, 81 fr. I, 82 fr. I a (multas actualizadas DOF 28-12-2025) | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
 | SAT, Resolución Miscelánea Fiscal 2026, Anexo 8 (DOF 28-12-2025): annual tariffs 2025 (C.I) and 2026 (C.II), monthly Art. 96 provisional tariff 2026 (B.V) | https://www.sat.gob.mx/minisitio/NormatividadRMFyRGCE/documentos2026/rmf/anexos/Anexo-8-RMF-2026_DOF-28122025.pdf | 2026-10-29 |
 | SAT, Resolución Miscelánea Fiscal 2025, Anexo 5 (updated fine amounts for CFF infractions) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo5_RMF2025-30122024.pdf | 2026-11-02 |
 
