@@ -673,30 +673,12 @@ Also referenced without full archival: CFF Arts. 29, 29-A, 32, 69-B (CFDI and EF
 
 Not yet confirmed: extension of the border-zone 8% IVA decrees into 2026 (the archived SAT guide documents the 2018 northern-border decree only); no-cap treatment of cargo and taxi vehicles under LISR Art. 36 Fr. II (not present in the archived texto vigente); official SAT Declaraciones y Pagos field names for the IVA return (the A/B/C/D codes in this skill are internal worksheet labels).
 
-### Self-check (v2.0)
-
-1. Quick reference at top with return lines and conservative defaults: yes (Section 1).
-2. CFDI 4.0 requirements prominently stated: yes (Section 1).
-3. Supplier library as literal lookup tables with Mexican vendors: yes (Section 3, 12 sub-tables).
-4. Worked examples from hypothetical consultant: yes (Section 4, 6 examples).
-5. Tier 1 rules compressed: yes (Section 5, 12 rules).
-6. Tier 2 catalogue compressed with inference rules: yes (Section 6, 10 items).
-7. Excel template specification: yes (Section 7).
-8. Mexican bank statement reading guide (estado de cuenta): yes (Section 8).
-9. Onboarding as fallback with inference rules: yes (Section 9, 10 items).
-10. Cash basis rule explicitly stated: yes (Section 1, Section 5.11).
-11. IVA withholding rules explicit: yes (Section 5.6, Example 2).
-12. Entertainment block explicit: yes (Section 5.9, Example 4).
-13. Vehicle cap rules explicit: yes (Section 5.10, Example 6).
-14. Export zero-rating and place-of-enjoyment test explicit: yes (Section 5.3, Example 5).
-15. Refusal catalogue present: yes (Section 2, R-MX-1 through R-MX-6).
-
 
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+The most up-to-date, verified version of this skill is maintained in the OpenAccountants skills registry.
 
 <!-- openaccountants-cta-block -->
 
