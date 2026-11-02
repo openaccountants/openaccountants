@@ -62,16 +62,16 @@ The statute (LISR Art. 113-E, TABLA 1) states each band as "Hasta" (up to) the u
 
 ### Required inputs
 
-- **Minimum viable inputs** — tax regime, monthly/cumulative income and deductible expenses (with CFDI), prior payments made, retenciones received. (Minimum viable)
-- **Recommended inputs** — prior year annual return (for coefficient of utility for personas morales), loss carryforwards, PTU paid. (Recommended)
-- **Ideal inputs** — complete monthly accounting with CFDI, prior year Declaracion Anual, SAT portal access for pre-filled data. (Ideal)
-- **Refusal policy if minimum is missing** — SOFT WARN. Without income and expense figures, the cumulative computation cannot proceed.
+- **Minimum viable inputs** -- tax regime, monthly/cumulative income and deductible expenses (with CFDI), prior payments made, retenciones received. (Minimum viable)
+- **Recommended inputs** -- prior year annual return (for coefficient of utility for personas morales), loss carryforwards, PTU paid. (Recommended)
+- **Ideal inputs** -- complete monthly accounting with CFDI, prior year Declaracion Anual, SAT portal access for pre-filled data. (Ideal)
+- **Refusal policy if minimum is missing** -- SOFT WARN. Without income and expense figures, the cumulative computation cannot proceed.
 
 ### Refusal catalogue
 
-- **R-MX-ET-1 -- Corporate estimated tax (personas morales general)** — Trigger: client is a persona moral using coefficient of utility. Message: "Persona moral provisional payments use the coefficient of utility method, which is a Tier 2 computation requiring the prior year annual return. Flag for contador publico."
-- **R-MX-ET-2 -- Cross-border PE issues** — Trigger: client has establecimiento permanente questions. Message: "Permanent establishment issues are outside this skill."
-- **R-MX-ET-3 -- Treaty credit timing** — Trigger: cross-border income with treaty interactions. Message: "Treaty credit allocation in provisional payments is outside this skill."
+- **R-MX-ET-1 -- Corporate estimated tax (personas morales general)** -- Trigger: client is a persona moral using coefficient of utility. Message: "Persona moral provisional payments use the coefficient of utility method, which is a Tier 2 computation requiring the prior year annual return. Flag for contador publico."
+- **R-MX-ET-2 -- Cross-border PE issues** -- Trigger: client has establecimiento permanente questions. Message: "Permanent establishment issues are outside this skill."
+- **R-MX-ET-3 -- Treaty credit timing** -- Trigger: cross-border income with treaty interactions. Message: "Treaty credit allocation in provisional payments is outside this skill."
 
 ## Section 3 -- Payment pattern library
 
@@ -157,24 +157,24 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 
 ### 5.1 General regime -- cumulative method
 
-- **Cumulative method formula** — cumulative_income = total_income_YTD (with valid CFDI) cumulative_deductions = total_deductible_expenses_YTD cumulative_PTU = profit sharing paid cumulative_losses = loss carryforwards applied taxable_base = income - deductions - PTU - losses provisional_ISR = apply_progressive_table(taxable_base) payment = provisional_ISR - retenciones_YTD - prior_payments_YTD if payment < 0: payment = 0
+- **Cumulative method formula** -- cumulative_income = total_income_YTD (with valid CFDI) cumulative_deductions = total_deductible_expenses_YTD cumulative_PTU = profit sharing paid cumulative_losses = loss carryforwards applied taxable_base = income - deductions - PTU - losses provisional_ISR = apply_progressive_table(taxable_base) payment = provisional_ISR - retenciones_YTD - prior_payments_YTD if payment < 0: payment = 0
 
 ### 5.2 Progressive rate table (Art. 96 LISR, cumulative)
 
-- **Progressive rate table range** — Ranges from 1.92% to 35% (annual tariff, RMF 2026 Anexo 8 C.II; the monthly Art. 96 provisional tariff for 2026 is in Anexo 8 B.V).  _(Art. 96 LISR; Anexo 8 RMF 2026, DOF 28-12-2025)_
+- **Progressive rate table range** -- Ranges from 1.92% to 35% (annual tariff, RMF 2026 Anexo 8 C.II; the monthly Art. 96 provisional tariff for 2026 is in Anexo 8 B.V).  _(Art. 96 LISR; Anexo 8 RMF 2026, DOF 28-12-2025)_
 
 ### 5.3 RESICO -- simplified
 
-- **RESICO simplified rule** — Applied to gross monthly income. No deductions. Fixed rates 1%-2.5%. Income limit MXN 3,500,000/year.
+- **RESICO simplified rule** -- Applied to gross monthly income. No deductions. Fixed rates 1%-2.5%. Income limit MXN 3,500,000/year.
 
 ### 5.4 Persona moral -- coefficient of utility
 
-- **Coefficient of utility formula** — coefficient = prior_year_fiscal_profit / prior_year_nominal_income taxable_base = cumulative_income x coefficient provisional_ISR = taxable_base x 30% payment = provisional_ISR - retenciones - prior_payments
-- **Flag requirement** — Flag for contador publico.
+- **Coefficient of utility formula** -- coefficient = prior_year_fiscal_profit / prior_year_nominal_income taxable_base = cumulative_income x coefficient provisional_ISR = taxable_base x 30% payment = provisional_ISR - retenciones - prior_payments
+- **Flag requirement** -- Flag for contador publico.
 
 ### 5.5 Filing deadline
 
-- **Filing deadline** — The 17th of the month following the income month. Weekend/holiday: next business day.
+- **Filing deadline** -- The 17th of the month following the income month. Weekend/holiday: next business day.
 
 ## Section 6 -- Penalties and interest
 
@@ -189,7 +189,7 @@ This is the deterministic pre-classifier for bank statement transactions. When a
 
 ### 6.2 Computation
 
-- **Penalty computation formula** — updated_tax = unpaid_tax x (INPC_payment_month / INPC_due_month) recargos = updated_tax x recargo_rate x months_late total = updated_tax + recargos
+- **Penalty computation formula** -- updated_tax = unpaid_tax x (INPC_payment_month / INPC_due_month) recargos = updated_tax x recargo_rate x months_late total = updated_tax + recargos
 
 ### 6.3 Multas (fines)
 
