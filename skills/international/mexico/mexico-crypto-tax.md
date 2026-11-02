@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Mexico Crypto Tax
 
-## Section 1 -- Quick Reference
+## Who this applies to
 
 **Quick Reference**
 
@@ -56,49 +56,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | CFDI required? | If in doubt, issue CFDI for business crypto transactions |
 | RESICO eligibility unclear | Verify income does not exceed $3,500,000 MXN annually |
 
-## Section 2 -- Classification Rules
-
-### 2.1 Legal Classification
-
-**Legal Classification**
-
-| Term | Definition | Authority |
-| --- | --- | --- |
-| Activos virtuales | Digital representations of value that can be electronically transferred and used as means of payment, NOT legal tender | Ley Fintech Art. 30 |
-| Bienes intangibles muebles | Intangible movable property - the SAT's fiscal classification for crypto | SAT criteria (oficios 2019–2025) |
-| Enajenación de bienes | Disposal/alienation of property - the chapter under which crypto sales are taxed | LISR Art. 126 |
-
-### 2.2 Taxable Events
-
-**Taxable Events**
-
-| Event | Tax Treatment | LISR Chapter |
-| --- | --- | --- |
-| Sale of crypto for MXN/fiat | Taxable - enajenación de bienes | Art. 126 (occasional) or Art. 100 (business) |
-| Crypto-to-crypto exchange (swap) | Taxable - enajenación (disposal at FMV) | Art. 126 / Art. 100 |
-| Payment for goods/services with crypto | Taxable - disposal at FMV in MXN on date of transaction | Art. 126 / Art. 100 |
-| Mining rewards received | Taxable - income at FMV when received (Art. 142 does not name mining; classification is practice-based) | Art. 142 (otros ingresos) or Art. 100 (business) |
-| Staking rewards received | Taxable - income at FMV when received | Art. 142 (otros ingresos) |
-| Crypto received as salary/payment | Taxable - employment or professional income at FMV | Art. 94 (salarios) or Art. 100 |
-| Holding crypto (HODL) | NOT taxable - no enajenación has occurred | - |
-| Transfer between own wallets | NOT taxable - no change in ownership | - |
-| Receiving crypto as gift | Taxable to recipient if exceeds annual gift exemption | Art. 93(XXIII) LISR |
-
-### 2.3 Occasional vs Business Activity
-
-The SAT distinguishes between occasional disposals and habitual business activity:
-
-**Occasional vs Business Activity**
-
-| Factor | Occasional (Enajenación de bienes) | Business (Actividad empresarial) |
-| --- | --- | --- |
-| Frequency | Infrequent, sporadic sales | Regular, systematic trading |
-| Intent | Not primary economic activity | Profit-seeking as primary activity |
-| Tax treatment | Annual declaration; 3x UMA annualized exemption may apply (LISR Art. 93 fr. XIX b)) | Monthly provisional payments; full ISR + 16% IVA potential |
-| Reporting | In Declaración Anual under "enajenación" | Monthly declarations + annual |
-| Cost basis adjustment | INPC inflation adjustment allowed | Full deductions per business rules |
-
-## Section 3 -- Rate Tables
+## Rates, bands and thresholds
 
 ### 3.1 ISR Progressive Rates - Personas Físicas (2025)
 
@@ -157,6 +115,116 @@ If the taxpayer qualifies for RESICO (total annual income ≤ $3,500,000 MXN):
 | Enajenacion de bienes muebles (LISR Art. 93 fr. XIX b)) | 3x the general minimum wage of the contributor's geographic area, annualized; read as 3x UMA annualized since the 2016 de-indexation: $123,820.56 for 2025, $128,383.92 for 2026 | Measured on the annual difference between total proceeds and documented acquisition cost (net gain, not gross). If the difference exceeds the threshold, tax is paid on the excess: "Por la utilidad que exceda se pagara el impuesto" |
 
 The statute text reads "tres veces el salario minimo general del area geografica del contribuyente elevado al ano" (LISR Art. 93 fr. XIX b)). Since the 2016 constitutional de-indexation, minimum-wage references in federal law are read as UMA. UMA annual values (INEGI): $41,273.52 (2025), $42,794.64 (2026). Whether this exemption extends to intangible movable property such as virtual assets is SAT-practice judgment - flag for professional review.
+
+## The taxable base
+
+### 2.1 Legal Classification
+
+**Legal Classification**
+
+| Term | Definition | Authority |
+| --- | --- | --- |
+| Activos virtuales | Digital representations of value that can be electronically transferred and used as means of payment, NOT legal tender | Ley Fintech Art. 30 |
+| Bienes intangibles muebles | Intangible movable property - the SAT's fiscal classification for crypto | SAT criteria (oficios 2019–2025) |
+| Enajenación de bienes | Disposal/alienation of property - the chapter under which crypto sales are taxed | LISR Art. 126 |
+
+### 2.2 Taxable Events
+
+**Taxable Events**
+
+| Event | Tax Treatment | LISR Chapter |
+| --- | --- | --- |
+| Sale of crypto for MXN/fiat | Taxable - enajenación de bienes | Art. 126 (occasional) or Art. 100 (business) |
+| Crypto-to-crypto exchange (swap) | Taxable - enajenación (disposal at FMV) | Art. 126 / Art. 100 |
+| Payment for goods/services with crypto | Taxable - disposal at FMV in MXN on date of transaction | Art. 126 / Art. 100 |
+| Mining rewards received | Taxable - income at FMV when received (Art. 142 does not name mining; classification is practice-based) | Art. 142 (otros ingresos) or Art. 100 (business) |
+| Staking rewards received | Taxable - income at FMV when received | Art. 142 (otros ingresos) |
+| Crypto received as salary/payment | Taxable - employment or professional income at FMV | Art. 94 (salarios) or Art. 100 |
+| Holding crypto (HODL) | NOT taxable - no enajenación has occurred | - |
+| Transfer between own wallets | NOT taxable - no change in ownership | - |
+| Receiving crypto as gift | Taxable to recipient if exceeds annual gift exemption | Art. 93(XXIII) LISR |
+
+### 2.3 Occasional vs Business Activity
+
+The SAT distinguishes between occasional disposals and habitual business activity:
+
+**Occasional vs Business Activity**
+
+| Factor | Occasional (Enajenación de bienes) | Business (Actividad empresarial) |
+| --- | --- | --- |
+| Frequency | Infrequent, sporadic sales | Regular, systematic trading |
+| Intent | Not primary economic activity | Profit-seeking as primary activity |
+| Tax treatment | Annual declaration; 3x UMA annualized exemption may apply (LISR Art. 93 fr. XIX b)) | Monthly provisional payments; full ISR + 16% IVA potential |
+| Reporting | In Declaración Anual under "enajenación" | Monthly declarations + annual |
+| Cost basis adjustment | INPC inflation adjustment allowed | Full deductions per business rules |
+
+## Deadlines and filing
+
+### 7.1 Individual Filing
+
+**Individual Filing**
+
+| Requirement | Detail |
+| --- | --- |
+| Return type | Declaración Anual de Personas Físicas |
+| Filing deadline | 30 April of the following year |
+| Filing portal | Portal SAT (sat.gob.mx) |
+| Crypto section | No dedicated crypto form - report under "Enajenación de bienes" (occasional) or "Actividad empresarial" (business) |
+| Payment deadline | 30 April (or installments if arranged) |
+
+### 7.2 Monthly Provisional Payments
+
+**Monthly Provisional Payments**
+
+| Who | Obligation |
+| --- | --- |
+| Habitual traders (actividad empresarial) | Must make monthly ISR provisional payments (pagos provisionales) by the 17th of the following month |
+| Occasional sellers (enajenación) | No monthly obligation - annual declaration only |
+
+### 7.3 CFDI Requirements
+
+**CFDI Requirements**
+
+| Scenario | CFDI Required? |
+| --- | --- |
+| Business-to-business crypto transactions | Yes - must issue CFDI |
+| Business receiving crypto as payment | Yes - CFDI for the underlying supply |
+| Individual occasional sale | No CFDI required for personal transactions |
+| Mining as business | Yes - self-billed CFDI for mining income |
+
+### 7.4 CARF and Exchange Reporting
+
+**CARF and Exchange Reporting**
+
+| Requirement | Detail |
+| --- | --- |
+| CARF adoption | Mexico implemented CARF effective 1 April 2026 |
+| Exchange obligations | Crypto intermediaries (exchanges, brokers, platforms) report user transaction data directly to SAT |
+| What is reported | User identification, transaction amounts, gains/losses |
+| Impact | SAT can cross-reference declared income against exchange reports |
+
+### 7.5 Record-Keeping
+
+**Record-Keeping**
+
+| Requirement | Detail |
+| --- | --- |
+| Retention period | 5 years from filing deadline (CFF Art. 30) |
+| Records to maintain | Full transaction logs, exchange CSVs, cost basis records, CFDI documentation, INPC adjustment workpapers |
+| Format | Digital records acceptable; XML for CFDI |
+| Burden of proof | On the taxpayer - SAT can audit and request all documentation |
+
+## Penalties and interest
+
+- Failure to file the annual declaration or to issue required CFDIs exposes the taxpayer to CFF infractions (CFF Arts. 81-84). Archived 2025 fine range for the CFF Art. 84 fr. IV a) infraction (RMF 2025 Anexo 5): $19,700.00 to $112,650.00; amounts are updated annually.
+- Unpaid balances accrue updates and interest under CFF Arts. 22 and 146; rates are published monthly.
+- RESICO taxpayers who omit three or more monthly payments in a calendar year lose the regime (LISR Art. 113-I).
+
+## Cross-border points
+
+- Sales through foreign exchanges remain fully taxable Mexican income for residents; compute each disposal in MXN at the exchange rate in effect on the transaction date.
+- CARF: Mexico has adopted the OECD Crypto-Asset Reporting Framework (adoption date flagged in Not yet confirmed); reporting flows from exchanges to the SAT.
+- Non-resident holders: apply Mexican-source rules before using this guide; flag for professional review.
 
 ## Section 4 -- Cost Basis Methods
 
@@ -259,62 +327,6 @@ This can meaningfully reduce the taxable gain for long-held assets in a high-inf
 | IVA on NFT sales | If business activity: 16% IVA applies to NFT sales (digital service) |
 | CFDI for NFT sales | Required for business transactions |
 
-## Section 7 -- Reporting Requirements
-
-### 7.1 Individual Filing
-
-**Individual Filing**
-
-| Requirement | Detail |
-| --- | --- |
-| Return type | Declaración Anual de Personas Físicas |
-| Filing deadline | 30 April of the following year |
-| Filing portal | Portal SAT (sat.gob.mx) |
-| Crypto section | No dedicated crypto form - report under "Enajenación de bienes" (occasional) or "Actividad empresarial" (business) |
-| Payment deadline | 30 April (or installments if arranged) |
-
-### 7.2 Monthly Provisional Payments
-
-**Monthly Provisional Payments**
-
-| Who | Obligation |
-| --- | --- |
-| Habitual traders (actividad empresarial) | Must make monthly ISR provisional payments (pagos provisionales) by the 17th of the following month |
-| Occasional sellers (enajenación) | No monthly obligation - annual declaration only |
-
-### 7.3 CFDI Requirements
-
-**CFDI Requirements**
-
-| Scenario | CFDI Required? |
-| --- | --- |
-| Business-to-business crypto transactions | Yes - must issue CFDI |
-| Business receiving crypto as payment | Yes - CFDI for the underlying supply |
-| Individual occasional sale | No CFDI required for personal transactions |
-| Mining as business | Yes - self-billed CFDI for mining income |
-
-### 7.4 CARF and Exchange Reporting
-
-**CARF and Exchange Reporting**
-
-| Requirement | Detail |
-| --- | --- |
-| CARF adoption | Mexico implemented CARF effective 1 April 2026 |
-| Exchange obligations | Crypto intermediaries (exchanges, brokers, platforms) report user transaction data directly to SAT |
-| What is reported | User identification, transaction amounts, gains/losses |
-| Impact | SAT can cross-reference declared income against exchange reports |
-
-### 7.5 Record-Keeping
-
-**Record-Keeping**
-
-| Requirement | Detail |
-| --- | --- |
-| Retention period | 5 years from filing deadline (CFF Art. 30) |
-| Records to maintain | Full transaction logs, exchange CSVs, cost basis records, CFDI documentation, INPC adjustment workpapers |
-| Format | Digital records acceptable; XML for CFDI |
-| Burden of proof | On the taxpayer - SAT can audit and request all documentation |
-
 ## Section 8 -- Loss Offset and Carry-Forward
 
 ### 8.1 Loss Offset Rules
@@ -376,7 +388,7 @@ Occasional sellers (enajenación de bienes) have significantly more limited loss
 
 - **Crypto as payment for invoiced services obligations** - If crypto is used to pay for services that should be invoiced, both parties have obligations: the service provider must issue a CFDI in MXN at the transaction-date exchange rate, and the payer must recognize a disposal of the crypto at FMV.
 
-## Section 10 -- Worked Examples
+## Worked examples
 
 ### Worked example 1: Occasional sale, INPC adjustment
 
@@ -498,6 +510,13 @@ If classified as actividad empresarial:
 
 Conservative: declare as otros ingresos unless professional confirms business classification. Note: Art. 142 LISR lists "otros ingresos" non-exhaustively and never names mining - the mining classification is practice, not statute.
 
+## Ask the client first
+
+- Are they a Mexican tax resident? Which exchanges and wallets were used, and can they export full trade history with acquisition costs?
+- Occasional investor or habitual trader (frequency, intent, habitudad)?
+- Any mining (own scale vs pool), staking or DeFi income?
+- Is RESICO eligibility confirmed by a tax professional?
+
 ## Self-Checks
 
 Before finalising any Mexico crypto tax computation, verify:
@@ -513,7 +532,7 @@ Before finalising any Mexico crypto tax computation, verify:
 - [ ] CFDI requirements: are business transactions properly invoiced?
 - [ ] Have loss offset rules been applied correctly (same category only)?
 - [ ] CARF: does the taxpayer know exchanges now report to SAT?
-- [ ] Exemption threshold taken from the UMA annual table for the correct year (2025: $123,820.56; 2026: $128,383.92)
+- [ ] Exemption threshold taken from the UMA annual table for the correct year (UMA annual $41,273.52 for 2025, $42,794.64 for 2026; threshold is 3x that)
 
 ## PROHIBITIONS
 

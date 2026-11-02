@@ -16,7 +16,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Mexico Einvoice
 
-## Section 1 -- Quick Reference
+## Who this applies to
 
 **Quick Reference**
 
@@ -47,7 +47,41 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | CFDI 4.0 sole valid version | 1 January 2023 |
 | Platform real-time access mandate | 1 April 2026 (Art. 30-B CFF, added DOF 07-11-2025; transitorio: "entrará en vigor el 1 de abril de 2026") |
 
-## Section 2 -- Mandate Scope
+## Rates, bands and thresholds
+
+### IVA (Value Added Tax)
+
+**IVA (Value Added Tax)**
+
+| Rate | Application |
+| --- | --- |
+| 16% | General rate (most goods and services) |
+| 0% | Basic foodstuffs, medicines, exports |
+| Exempt | Education, residential rent, medical services |
+
+### IEPS (Special Production and Services Tax)
+
+- **IEPS applicability** - Applied on specific goods: alcohol, tobacco, fuel, sugary drinks, pesticides. Rates vary by product category.
+
+### Tax Retention
+
+**Tax Retention**
+
+| Tax | Rate | When |
+| --- | --- | --- |
+| ISR retention | 10% (general regime payees; LISR Art. 106, penultimate paragraph, in force) | Professional services paid by personas morales to personas físicas |
+| ISR retention - RESICO | 1.25% (LISR Art. 113-J) | Business/professional services or rent from RESICO personas físicas to personas morales |
+| IVA retention | Full IVA transferred (16%) retained by the persona moral (LIVA Art. 1o.-A fr. II a) and c)) | Independent personal services and leases from personas físicas; autotransporte services |
+
+### Calculation Rules
+
+- **Calculation Rules** - Tax base per line = Cantidad × ValorUnitario (before tax); Tax per line = Base × TasaOCuota; Round to 2 decimal places at line level (6 decimal places for TasaOCuota); Document SubTotal = sum of all line Importe values; Document Total = SubTotal + TotalImpuestosTrasladados - TotalImpuestosRetenidos; For PPD (deferred payment): taxes recorded in Complemento de Pago at time of actual payment
+
+### Multi-Currency
+
+- **Multi-Currency rules** - If Moneda ≠ MXN, must include TipoCambio (exchange rate). All amounts in the CFDI are in the stated Moneda. SAT computes MXN equivalent using the stated TipoCambio.
+
+## The taxable base
 
 ### Who Must Comply
 
@@ -81,6 +115,41 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ### B2C Treatment
 
 - **B2C rules** - B2C sales use RFC genérico: XAXX010101000 (domestic) or XEXX010101000 (foreign). Still requires full CFDI generation and PAC certification. Simplified "factura global" available for aggregating small B2C transactions (daily/weekly/monthly).
+
+## Deadlines and filing
+
+### PAC Certification (Mandatory)
+
+**PAC Certification (Mandatory)**
+
+| Aspect | Detail |
+| --- | --- |
+| Role | PACs validate, stamp, and transmit CFDIs to SAT |
+| Number of Active PACs | ~70+ authorized by SAT |
+| Connection | SOAP or REST web services (varies by PAC) |
+| Validation Steps | Structure, catalogs, RFC validation, tax math, CSD validity |
+| Stamping Time | Usually < 3 seconds |
+| Fallback | SAT free portal (portal.sat.gob.mx) for manual low-volume issuance |
+
+### Communication Flow
+
+- **Communication Flow** - 1. Taxpayer system generates CFDI XML (signed with CSD) 2. Submit to PAC via web service 3. PAC validates structure + data against SAT catalogs 4. PAC validates receiver RFC/name/postal code against SAT database 5. PAC generates UUID (folio fiscal) 6. PAC applies TimbreFiscalDigital complement (SAT stamp) 7. PAC returns stamped CFDI to taxpayer 8. PAC transmits a copy to SAT 9. Taxpayer delivers stamped CFDI to receiver
+
+### SAT Free Issuance Portal
+
+- **SAT Free Issuance Portal** - Available at portalcfdi.facturaelectronica.sat.gob.mx. Limited to low-volume issuance. Requires e.firma (FIEL) login. Not suitable for automated/high-volume scenarios.
+
+### Cancellation
+
+**Cancellation**
+
+| Rule | Detail |
+| --- | --- |
+| Method | Submit cancellation request via PAC |
+| Receiver acceptance | Required for invoices > MXN 1,000; receiver must respond within 3 days of the request (RMF 2025 rule 2.7.1.34: "a más tardar dentro de los tres días siguientes") |
+| Motivo (reason) | 01=CFDI with errors (related doc exists), 02=CFDI with errors (no replacement), 03=Transaction did not occur, 04=Related to global invoice |
+| Time limit | Same fiscal year or month following issuance |
+| FolioSustitucion | UUID of replacement CFDI (if motivo=01) |
 
 ## Section 3 -- Technical Format
 
@@ -213,41 +282,6 @@ PAC transmits copy to SAT
 | NoCertificadoSAT | SAT certificate number used by PAC |
 | SelloSAT | PAC/SAT digital seal |
 
-## Section 5 -- Transmission Method
-
-### PAC Certification (Mandatory)
-
-**PAC Certification (Mandatory)**
-
-| Aspect | Detail |
-| --- | --- |
-| Role | PACs validate, stamp, and transmit CFDIs to SAT |
-| Number of Active PACs | ~70+ authorized by SAT |
-| Connection | SOAP or REST web services (varies by PAC) |
-| Validation Steps | Structure, catalogs, RFC validation, tax math, CSD validity |
-| Stamping Time | Usually < 3 seconds |
-| Fallback | SAT free portal (portal.sat.gob.mx) for manual low-volume issuance |
-
-### Communication Flow
-
-- **Communication Flow** - 1. Taxpayer system generates CFDI XML (signed with CSD) 2. Submit to PAC via web service 3. PAC validates structure + data against SAT catalogs 4. PAC validates receiver RFC/name/postal code against SAT database 5. PAC generates UUID (folio fiscal) 6. PAC applies TimbreFiscalDigital complement (SAT stamp) 7. PAC returns stamped CFDI to taxpayer 8. PAC transmits a copy to SAT 9. Taxpayer delivers stamped CFDI to receiver
-
-### SAT Free Issuance Portal
-
-- **SAT Free Issuance Portal** - Available at portalcfdi.facturaelectronica.sat.gob.mx. Limited to low-volume issuance. Requires e.firma (FIEL) login. Not suitable for automated/high-volume scenarios.
-
-### Cancellation
-
-**Cancellation**
-
-| Rule | Detail |
-| --- | --- |
-| Method | Submit cancellation request via PAC |
-| Receiver acceptance | Required for invoices > MXN 1,000; receiver must respond within 3 days of the request (RMF 2025 rule 2.7.1.34: "a más tardar dentro de los tres días siguientes") |
-| Motivo (reason) | 01=CFDI with errors (related doc exists), 02=CFDI with errors (no replacement), 03=Transaction did not occur, 04=Related to global invoice |
-| Time limit | Same fiscal year or month following issuance |
-| FolioSustitucion | UUID of replacement CFDI (if motivo=01) |
-
 ## Section 6 -- Validation Rules
 
 ### PAC Validation Sequence
@@ -268,40 +302,6 @@ PAC transmits copy to SAT
 | 307 | Receiver postal code mismatch | Use fiscal domicile postal code |
 | 402 | Invalid ClaveProdServ | Look up correct 8-digit code in SAT catalog |
 
-## Section 7 -- Tax Computation Rules
-
-### IVA (Value Added Tax)
-
-**IVA (Value Added Tax)**
-
-| Rate | Application |
-| --- | --- |
-| 16% | General rate (most goods and services) |
-| 0% | Basic foodstuffs, medicines, exports |
-| Exempt | Education, residential rent, medical services |
-
-### IEPS (Special Production and Services Tax)
-
-- **IEPS applicability** - Applied on specific goods: alcohol, tobacco, fuel, sugary drinks, pesticides. Rates vary by product category.
-
-### Tax Retention
-
-**Tax Retention**
-
-| Tax | Rate | When |
-| --- | --- | --- |
-| ISR retention | 10% (general regime payees; LISR Art. 106, penultimate paragraph, in force) | Professional services paid by personas morales to personas físicas |
-| ISR retention - RESICO | 1.25% (LISR Art. 113-J) | Business/professional services or rent from RESICO personas físicas to personas morales |
-| IVA retention | Full IVA transferred (16%) retained by the persona moral (LIVA Art. 1o.-A fr. II a) and c)) | Independent personal services and leases from personas físicas; autotransporte services |
-
-### Calculation Rules
-
-- **Calculation Rules** - Tax base per line = Cantidad × ValorUnitario (before tax); Tax per line = Base × TasaOCuota; Round to 2 decimal places at line level (6 decimal places for TasaOCuota); Document SubTotal = sum of all line Importe values; Document Total = SubTotal + TotalImpuestosTrasladados - TotalImpuestosRetenidos; For PPD (deferred payment): taxes recorded in Complemento de Pago at time of actual payment
-
-### Multi-Currency
-
-- **Multi-Currency rules** - If Moneda ≠ MXN, must include TipoCambio (exchange rate). All amounts in the CFDI are in the stated Moneda. SAT computes MXN equivalent using the stated TipoCambio.
-
 ## Section 8 -- Archiving Requirements
 
 **Archiving Requirements**
@@ -317,7 +317,7 @@ PAC transmits copy to SAT
 | Cancellation Records | Retain cancelled CFDIs with cancellation acknowledgment |
 | Platform Data (from 1 April 2026) | Platforms must provide SAT permanent online access; data archived 5+ years |
 
-## Section 9 -- Penalties for Non-Compliance
+## Penalties and interest
 
 **Penalties for Non-Compliance**
 
@@ -335,7 +335,7 @@ PAC transmits copy to SAT
 
 - **Receiver Consequences** - Receiver who deducts/credits a CFDI that does not meet requirements risks deduction disallowance. ISR deductions and IVA credits require a valid CFDI with correct receiver data.
 
-## Section 10 -- Interaction with Tax Skills
+## Cross-border points
 
 ### Monthly VAT Return (Declaración Mensual IVA)
 
@@ -356,6 +356,44 @@ PAC transmits copy to SAT
 ### SAT Audit Crossmatching
 
 - **SAT Audit Crossmatching** - SAT automatically cross-references buyer-seller CFDI pairs. Discrepancies flagged in taxpayer's "Buzón Tributario" (tax mailbox). Invitation letters ("carta invitación") issued for unexplained income vs. CFDI mismatches.
+
+## Worked examples
+
+### Worked example 1: Services CFDI with ISR retention
+
+**Input:** Professional services CFDI under the general regime: subtotal $10,000.00; IVA transferred at 16%; the payer retains ISR at 10% (LISR Art. 106).
+
+**Computation:**
+```
+Subtotal:             $10,000.00
+IVA trasladado 16%:    $1,600.00
+Total:                $11,600.00
+ISR retenido 10%:      $1,000.00
+Net cash to issuer:   $11,600.00 - $1,000.00 = $10,600.00
+```
+
+```oa-check
+name: Services CFDI with 10 percent ISR retention (Art. 106)
+inputs:
+  subtotal: 10000
+steps:
+  - iva: round(subtotal * 0.16, 2)
+  - total: subtotal + iva
+  - isr: round(subtotal * 0.10, 2)
+  - net: total - isr
+expected:
+  iva: 1600.00
+  total: 11600.00
+  isr: 1000.00
+  net: 10600.00
+```
+
+## Ask the client first
+
+- Which CFDI types and monthly volumes; which PAC do they use?
+- Do they issue CFDIs to digital platforms or receive platform CFDIs (CFF Art. 30-B, platform access from 1 April 2026)?
+- General regime (10% ISR retention, LISR Art. 106) or RESICO (1.25%, LISR Art. 113-J)?
+- Who monitors acceptance and rejection of cancellation requests in the SAT portal?
 
 ## Sources
 

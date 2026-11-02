@@ -50,21 +50,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 - **[T2] Tier 2 -- Reviewer Judgement Required.** Claude flags and presents options. Qualified professional must confirm.
 - **[T3] Tier 3 -- Out of Scope / Escalate.** Do not guess. Escalate and document.
 
-## Step 0: Client Onboarding Questions
-
-Before advising on any CFDI matter, you MUST know:
-
-1. **RFC (Registro Federal de Contribuyentes)** [T1] -- tax ID
-2. **Tax regime (regimen fiscal)** [T1] -- determines regime code on CFDI
-3. **e.firma (FIEL) and CSD (Certificado de Sello Digital)** [T1] -- required for issuing CFDIs
-4. **PAC provider** [T1] -- which authorized certification provider is used
-5. **Type of transaction** [T1] -- sale, service, payment receipt, credit note
-6. **Client's RFC and tax regime** [T1] -- required on CFDI 4.0 for the recipient
-7. **Uso de CFDI** [T1] -- the purpose code the recipient needs
-
-**If the client does not have a CSD, STOP. They cannot issue CFDIs without it. Must apply at SAT first.**
-
-## Step 1: CFDI 4.0 Overview [T1]
+## Who this applies to
 
 - **CFDI 4.0 mandatory since April 2023** - CFDI 4.0 has been mandatory since April 1, 2023. All previous versions are obsolete.  _(CFF Art. 29, 29-A; Anexo 20 v4.0)_
 
@@ -80,7 +66,16 @@ Before advising on any CFDI matter, you MUST know:
 | Recipient postal code | Now mandatory (fiscal domicile of recipient) |
 | Export field | New mandatory field (even if "01" = no export) |
 
-## Step 2: CFDI 4.0 Mandatory Fields [T1]
+## Rates, bands and thresholds
+
+| Item | Figure | Source |
+| --- | --- | --- |
+| CFDI version | 4.0 is the only valid version from 1 April 2023 (coexisted with 3.3 from 1 January 2022 to 31 March 2023) | SAT Anexo 20 vigencia page |
+| Cancellation without recipient acceptance | Totals up to MXN 1,000.00 | RMF 2025 Regla 2.7.1.35 fr. I |
+| Recipient acceptance window | Three days from the cancellation request; silence counts as acceptance | RMF 2025 Regla 2.7.1.34 |
+| Complemento de pago deadline | Fifth natural day of the month immediately following payment receipt | RMF 2025 Regla 2.7.1.32 |
+
+## The taxable base
 
 **CFDI 4.0 Mandatory Fields**  _(Anexo 20, Seccion II)_
 
@@ -93,8 +88,8 @@ Before advising on any CFDI matter, you MUST know:
 | FormaPago | Payment method code (catalogo c_FormaPago) | 03 (transfer), 01 (cash), 99 (por definir) |
 | SubTotal | Amount before tax | 10000.00 |
 | Moneda | Currency code (ISO 4217) | MXN, USD |
-| TipoCambio | Exchange rate (required if not MXN) | 17.50 |
-| Total | Total including tax | 11600.00 |
+| TipoCambio | Exchange rate (required if not MXN) | Banxico rate for the fecha |
+| Total | Total including tax | SubTotal + IVA trasladado |
 | TipoDeComprobante | I (ingreso), E (egreso), T (traslado), P (pago), N (nomina) | I |
 | Exportacion | Export code: 01 (no), 02 (definitive), 03 (temporary) | 01 |
 | MetodoPago | PUE (una sola exhibicion) or PPD (parcialidades/diferido) | PUE |
@@ -109,6 +104,38 @@ Before advising on any CFDI matter, you MUST know:
 | DomicilioFiscalReceptor | Recipient postal code | 01000 |
 | RegimenFiscalReceptor | Recipient regime code | 601 |
 | UsoCFDI | Purpose of CFDI for recipient (catalogo c_UsoCFDI) | G03 (gastos en general) |
+
+## Deadlines and filing
+
+- **Complemento de Pago legislation** - Complemento de pago governed under RMF 2025, Regla 2.7.1.32  _(RMF 2025, Regla 2.7.1.32)_
+
+### When Required [T1]
+
+**When Required**
+
+| Scenario | Required? |
+| --- | --- |
+| Full payment at time of invoice (PUE) | No -- full CFDI with FormaPago is sufficient |
+| Partial payments or deferred payment (PPD) | Yes -- must issue complemento de pago for each payment received |
+
+### Complemento de Pago Structure [T1]
+
+**Complemento de Pago Structure**
+
+| Field | Detail |
+| --- | --- |
+| TipoDeComprobante | "P" (pago) |
+| Subtotal/Total | 0 (payment complements have zero amounts in the main body) |
+| Complemento contains | Payment date, payment method, amount, currency, related CFDI UUID(s), amount applied per CFDI |
+
+### Timing Rules [T1]
+
+**Timing Rules**
+
+| Rule | Deadline |
+| --- | --- |
+| Issue complemento de pago | By the fifth natural day of the month immediately following the month the payment(s) were received (RMF 2025, Regla 2.7.1.32) |
+| Late issuance | May trigger SAT queries or penalties |
 
 ## Step 3: Common Uso de CFDI Codes [T1]
 
@@ -163,38 +190,6 @@ Before advising on any CFDI matter, you MUST know:
 4. PAC stamps (timbra) the CFDI, adding Timbre Fiscal Digital
 5. Returns the stamped XML and optional PDF representation
 6. SAT receives a copy from the PAC
-
-## Step 6: Complemento de Pago (Payment Complement) [T1]
-
-- **Complemento de Pago legislation** - Complemento de pago governed under RMF 2025, Regla 2.7.1.32  _(RMF 2025, Regla 2.7.1.32)_
-
-### When Required [T1]
-
-**When Required**
-
-| Scenario | Required? |
-| --- | --- |
-| Full payment at time of invoice (PUE) | No -- full CFDI with FormaPago is sufficient |
-| Partial payments or deferred payment (PPD) | Yes -- must issue complemento de pago for each payment received |
-
-### Complemento de Pago Structure [T1]
-
-**Complemento de Pago Structure**
-
-| Field | Detail |
-| --- | --- |
-| TipoDeComprobante | "P" (pago) |
-| Subtotal/Total | 0 (payment complements have zero amounts in the main body) |
-| Complemento contains | Payment date, payment method, amount, currency, related CFDI UUID(s), amount applied per CFDI |
-
-### Timing Rules [T1]
-
-**Timing Rules**
-
-| Rule | Deadline |
-| --- | --- |
-| Issue complemento de pago | By the fifth natural day of the month immediately following the month the payment(s) were received (RMF 2025, Regla 2.7.1.32) |
-| Late issuance | May trigger SAT queries or penalties |
 
 ## Step 7: Cancellation Rules [T1]
 
@@ -257,9 +252,21 @@ No acceptance generally needed when (RMF 2025, Regla 2.7.1.35):
 **Situation:** Freelancer invoices a US company.
 **Resolution:** Use recipient RFC generico for foreign residents: XEXX010101000. Recipient name as the foreign entity's legal name. RegimenFiscalReceptor: 616. UsoCFDI: S01. Exportacion field: 02 (definitive export of services) or 01 if service consumed in Mexico.
 
-## Step 9: Test Suite
+## Penalties and interest
 
-### Test 1 -- Standard services CFDI (PUE)
+- Failure to issue CFDIs when required is an infraction under CFF Art. 83 fr. VII; fine amounts are set under CFF Art. 84 and updated annually via RMF Anexo 5. Archived 2025 range (CFF Art. 84 fr. IV a), RMF 2025 Anexo 5): $19,700.00 to $112,650.00.
+- Failure to keep or provide CFDIs to the SAT on request: CFF Arts. 38 and 39; fines updated annually.
+- Unpaid amounts accrue updates and interest under CFF Arts. 22 and 146.
+
+## Cross-border points
+
+- CFDIs to foreign residents: RFC generico XEXX010101000, RegimenFiscalReceptor 616, UsoCFDI S01; Exportacion 02 for definitive exports (see Worked example 3).
+- Foreign-currency CFDIs: ISO 4217 Moneda plus TipoCambio for the date; tax amounts convert to MXN (see Worked example 3).
+- CFDIs issued to foreign residents can be cancelled without recipient acceptance (RMF 2025 Regla 2.7.1.35 fr. VIII, Regla 2.7.1.23).
+
+## Worked examples
+
+### Worked example 1: Standard services CFDI (PUE)
 
 **Input:** Freelancer (RFC: GOPE850101AB1, Regime 612) invoicing Mexican company for MXN 10,000 consulting. Full payment at time of service. Recipient in regime 601.
 **Expected output:**
@@ -271,7 +278,7 @@ No acceptance generally needed when (RMF 2025, Regla 2.7.1.35):
 - FormaPago: 03 (transferencia)
 - Exportacion: 01
 
-### Test 2 -- CFDI with partial payments (PPD)
+### Worked example 2: CFDI with partial payments (PPD)
 
 **Input:** Invoice for MXN 50,000. Client will pay in 2 instalments.
 **Expected output:**
@@ -279,7 +286,7 @@ No acceptance generally needed when (RMF 2025, Regla 2.7.1.35):
 - After 1st payment of MXN 29,000: issue complemento de pago (Tipo P) referencing original UUID, amount applied 29,000
 - After 2nd payment: second complemento de pago for remaining 29,000
 
-### Test 3 -- CFDI to foreign client
+### Worked example 3: CFDI to foreign client
 
 **Input:** US company, services MXN 20,000 equivalent (billed in USD 1,142.86 at rate 17.50).
 **Expected output:**
@@ -290,13 +297,27 @@ No acceptance generally needed when (RMF 2025, Regla 2.7.1.35):
 - IVA: 0% if export of services (verify applicable exemption) OR 16% if consumed in Mexico
 - Exportacion: 02 (if definitive export)
 
-### Test 4 -- Cancellation with replacement
+### Worked example 4: Cancellation with replacement
 
 **Input:** CFDI with error in amount. Must cancel and reissue.
 **Expected output:**
 - Issue new (correct) CFDI first
 - Cancel original with Motivo 01 (con relacion) referencing the new CFDI's UUID
 - If no Regla 2.7.1.35 exception applies: wait for recipient acceptance (three days per RMF 2025, Regla 2.7.1.34)
+
+## Ask the client first
+
+Before advising on any CFDI matter, you MUST know:
+
+1. **RFC (Registro Federal de Contribuyentes)** [T1] -- tax ID
+2. **Tax regime (regimen fiscal)** [T1] -- determines regime code on CFDI
+3. **e.firma (FIEL) and CSD (Certificado de Sello Digital)** [T1] -- required for issuing CFDIs
+4. **PAC provider** [T1] -- which authorized certification provider is used
+5. **Type of transaction** [T1] -- sale, service, payment receipt, credit note
+6. **Client's RFC and tax regime** [T1] -- required on CFDI 4.0 for the recipient
+7. **Uso de CFDI** [T1] -- the purpose code the recipient needs
+
+**If the client does not have a CSD, STOP. They cannot issue CFDIs without it. Must apply at SAT first.**
 
 ## PROHIBITIONS
 
