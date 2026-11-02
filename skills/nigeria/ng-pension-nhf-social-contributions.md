@@ -5,7 +5,7 @@ version: 0.1
 jurisdiction: NG
 tax_year: 2026
 last_updated: 2026-11-02
-category: payroll
+category: international
 tier: 2
 ---
 

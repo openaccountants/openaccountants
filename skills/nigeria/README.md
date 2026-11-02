@@ -11,7 +11,7 @@ partial:
   IT-IND: "ng-personal-income-tax and ng-income-tax carry tax_year 2025 and cite the Personal Income Tax Act, repealed by the Nigeria Tax Act 2025 from 1 January 2026"
   IT-CORP: "ng-cit carries tax_year 2025 and cites the Companies Income Tax Act, repealed by the Nigeria Tax Act 2025 from 1 January 2026"
   VAT: "ng-vat, ng-vat-return and nigeria-vat carry tax_year 2025 and cite the VAT Act, now replaced by the Nigeria Tax Act 2025"
-  PR: "ng-payroll carries tax_year 2025 and uses the repealed PITA bands; ng-pension-nhf-social-contributions gives the 2026 bands for its example only and does not cover PAYE administration"
+  PR: "ng-payroll carries tax_year 2025 and uses the repealed PITA bands"
   SC: "the private-sector pension threshold conflicts (Pension Reform Act s2(2) says 15 employees, PenCom guidance says 3); the ITF liability threshold, ITF and NSITF due dates and NSITF and ITF penalties are not confirmed"
   XB: "deduction-at-source rates on payments to non-residents are set by regulations not yet read; ng-wht carries tax_year 2025"
 ---
@@ -28,7 +28,7 @@ Tax years: not stated (1 skill), 2026 (2 skills), 2025 (13 skills).
 | Company tax | [CIT](ng-cit.md) | 2025 | Partly covered: ng-cit carries tax_year 2025 and cites the Companies Income Tax Act, repealed by the Nigeria Tax Act 2025 from 1 January 2026 |
 | VAT or sales tax | [VAT return](ng-vat-return.md), [VAT](ng-vat.md), [VAT](nigeria-vat.md) | 2025 | Partly covered: ng-vat, ng-vat-return and nigeria-vat carry tax_year 2025 and cite the VAT Act, now replaced by the Nigeria Tax Act 2025 |
 | Social contributions | [Pension nhf social contributions](ng-pension-nhf-social-contributions.md) | 2026 | Partly covered: the private-sector pension threshold conflicts (Pension Reform Act s2(2) says 15 employees, PenCom guidance says 3); the ITF liability threshold, ITF and NSITF due dates and NSITF and ITF penalties are not confirmed |
-| Payroll | [Payroll](ng-payroll.md), [Pension nhf social contributions](ng-pension-nhf-social-contributions.md) | 2026, 2025 | Partly covered: ng-payroll carries tax_year 2025 and uses the repealed PITA bands; ng-pension-nhf-social-contributions gives the 2026 bands for its example only and does not cover PAYE administration |
+| Payroll | [Payroll](ng-payroll.md) | 2025 | Partly covered: ng-payroll carries tax_year 2025 and uses the repealed PITA bands |
 | Transfer pricing | | | Missing |
 | Cross-border | [Non resident cross border](ng-non-resident-cross-border.md) | 2026 | Partly covered: deduction-at-source rates on payments to non-residents are set by regulations not yet read; ng-wht carries tax_year 2025 |
 
@@ -40,7 +40,7 @@ Ready means the skill is on the current tax year. It does not mean an accountant
 - Company tax: finish what is left out (ng-cit carries tax_year 2025 and cites the Companies Income Tax Act, repealed by the Nigeria Tax Act 2025 from 1 January 2026).
 - VAT or sales tax: finish what is left out (ng-vat, ng-vat-return and nigeria-vat carry tax_year 2025 and cite the VAT Act, now replaced by the Nigeria Tax Act 2025).
 - Social contributions: finish what is left out (the private-sector pension threshold conflicts (Pension Reform Act s2(2) says 15 employees, PenCom guidance says 3); the ITF liability threshold, ITF and NSITF due dates and NSITF and ITF penalties are not confirmed).
-- Payroll: finish what is left out (ng-payroll carries tax_year 2025 and uses the repealed PITA bands; ng-pension-nhf-social-contributions gives the 2026 bands for its example only and does not cover PAYE administration).
+- Payroll: finish what is left out (ng-payroll carries tax_year 2025 and uses the repealed PITA bands).
 - Write the transfer pricing skill.
 - Cross-border: finish what is left out (deduction-at-source rates on payments to non-residents are set by regulations not yet read; ng-wht carries tax_year 2025).
 
