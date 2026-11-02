@@ -48,7 +48,7 @@ Title V flat categories are on gross with no deductions ("sin deducción alguna"
 
 ## Penalties and interest
 
-No penalty or interest figure in this domain is confirmed yet; see the "Not yet confirmed" line under Sources.
+Underpaid contributions discovered by the authorities draw a fine of 55% to 75% of the omitted contributions (CFF Art. 76); CFF Art. 64 (the old 45%-85% fine) is repealed in the consolidated text read 2026-10-31. Omitted amounts plus accessories are due within 30 days of the assessment notice, with inflation updating under CFF Art. 65; recargos run at the annual variable rate of CFF Art. 22.
 
 ## Cross-border points
 
@@ -104,9 +104,12 @@ expected:
 
 | Source | URL | Read on |
 |---|---|---|
-| Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 2, 10, 76-A, 153, 156, 158, 160, 161, 163, 164 (still last reformed DOF 01-04-2024 in the October 2026 copy) | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-29 |
+| Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 2, 10, 76-A, 153, 156, 158, 160, 161, 163, 164, 166, 167, 174 (still last reformed DOF 01-04-2024 in the October 2026 copy) | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-29 |
+| Código Fiscal de la Federación, consolidated (Cámara de Diputados, last reform DOF 09-04-2026), Arts. 22, 64, 65, 76 | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
 
-Not yet confirmed: interest rates of 4.9% / 10% / 25% by payer type (earlier drafts cited Arts. 166-168; the 4.9% case is in Art. 166, the others were not checked); a 35% royalty rate (earlier drafts cited Art. 174, which in the text read concerns the non-resident's representative; royalty source rules are in Art. 167); the remittance date for tax withheld from non-residents (earlier drafts said with the monthly return by the 17th of the following month); a targeted exemption for foreign pension funds on Mexican real-property gains (earlier drafts cited "the Art. 155 area"; Art. 155 in the text read covers pensions and retirement income); the domestic PE rules earlier drafts cited as Arts. 8-8A, including business carried on through a Mexican related party; Código Fiscal de la Federación penalties (Arts. 64, 65), updating and interest (Art. 20) and the payer's joint liability for tax not withheld (no archived copy of the CFF); treaty-by-treaty rates and PE thresholds (DOF/SAT); the SAT residence-certificate procedure.
+Confirmed from the consolidated LISR read: interest rates sit in Art. 166 (4.9% for the cases in fr. II, including qualifying securities and financial-system credits; the rate becomes 10% when those requirements are not met; 15% for reinsurance companies, fr. III; 21% for the cases in fr. IV; other interest is taxed at the top marginal rate of the Art. 97 tariff, fr. V); royalty, technical assistance and advertising source rules and rates are in Art. 167 (rates by category, including 5% for railway cars and containers, 25% for technical assistance, 1% for some goods; no 35% royalty rate appears in the text read); Art. 174 governs the non-resident's representative; Art. 165 covers Title III non-profit conduit income; Art. 155 covers pensions and retirement income; the 10% dividend withholding for non-residents is Art. 164 fr. I.
+
+Not yet confirmed: the remittance date for tax withheld from non-residents (earlier drafts said with the monthly return by the 17th of the following month); a targeted exemption for foreign pension funds on Mexican real-property gains (earlier drafts cited "the Art. 155 area"; Art. 155 in the text read covers pensions and retirement income); the domestic PE rules earlier drafts cited as Arts. 8-8A, including business carried on through a Mexican related party; the payer's joint liability for tax not withheld (no such clause found in the LISR or CFF copies read); treaty-by-treaty rates and PE thresholds (DOF/SAT); the SAT residence-certificate procedure.
 
 <!-- openaccountants-cta-block -->
 
@@ -114,7 +117,7 @@ Not yet confirmed: interest rates of 4.9% / 10% / 25% by payer type (earlier dra
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network -- accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
