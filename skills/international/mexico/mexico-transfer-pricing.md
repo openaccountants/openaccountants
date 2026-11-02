@@ -99,8 +99,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 | Offence | Penalty |
 | --- | --- |
-| Late/incomplete Art. 76-A informative returns (CFF Art. 81 fr. XL, updated amounts in RMF Anexo 5 item XXXVII) | MXN 199,630 -- MXN 284,220 |
-| Failure to file Local File / Master File | Same CFF Art. 81 fr. XL range (Art. 76-A returns) |
+| Late/incomplete Art. 76-A informative returns (infraction: CFF Art. 81 fr. XL; fine: CFF Art. 82 fr. XXXVII, amounts updated by RMF and compiled in the consolidated CFF text, actualizada DOF 28-12-2025) | MXN 226,000.00 -- MXN 321,770.00 (2026) |
+| Failure to file Local File / Master File | Same CFF Art. 81 fr. XL infraction / Art. 82 fr. XXXVII fine range (Art. 76-A returns) |
 | SAT TP adjustment -- tax omission | 55-75% of the omitted contributions (CFF Art. 76; Art. 64 repealed) |
 | Late payment surcharge (recargos) | Annual variable rate under CFF Art. 22, applied to the updated amount |
 | Inflation adjustment | Contributions updated under CFF Art. 65 |
@@ -274,8 +274,8 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 76 frs. IX and X, 76-A, 179, 180, 181, 182 | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-29 |
-| Código Fiscal de la Federación, consolidated (Cámara de Diputados, last reform DOF 09-04-2026), Arts. 22, 32-H, 34-A, 65, 76, 81 | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
-| SAT, Resolución Miscelánea Fiscal 2025, Anexo 5 (updated fine amounts for CFF infractions; item XXXVII: MXN 199,630.00 to MXN 284,220.00 for CFF Art. 81 fr. XL) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo5_RMF2025-30122024.pdf | 2026-11-02 |
+| Código Fiscal de la Federación, consolidated (Cámara de Diputados, last reform DOF 09-04-2026), Arts. 22, 32-H, 34-A, 65, 76, 81 fr. XL, 82 fr. XXXVII (multa $226,000.00 a $321,770.00, actualizada DOF 28-12-2025) | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
+| SAT, Resolución Miscelánea Fiscal 2025, Anexo 5 (2025 fine amounts for CFF infractions; item XXXVII: MXN 199,630.00 to MXN 284,220.00 for CFF Art. 81 fr. XL -- superseded for 2026 by the amounts compiled in the consolidated CFF text) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo5_RMF2025-30122024.pdf | 2026-11-02 |
 
 Not yet confirmed: the June deadline for the maquiladora informative return (LISR Art. 32-A second paragraph not read in full); APA duration and scope details (CFF Art. 34-A read only at the heading level); interquartile-range and median-adjustment mechanics (not stated in the LISR text read; OECD practice); the "May 2026 first Local File deadline" and other Section 9 developments (news items, no archived primary source); Pillar Two status in Mexico.
 
