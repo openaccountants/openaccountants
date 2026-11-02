@@ -14,18 +14,18 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 ## Skill Metadata
 
-- **Jurisdiction** — Mexico
-- **Jurisdiction Code** — MX
-- **Primary Legislation** — Codigo Fiscal de la Federacion (CFF), Art. 29, 29-A
-- **Supporting Legislation** — Resolucion Miscelanea Fiscal (RMF) 2025; Anexo 20 (CFDI technical standard)
-- **Tax Authority** — Servicio de Administracion Tributaria (SAT)
-- **Portal** — Portal SAT (sat.gob.mx)
-- **Contributor** — Open Accountants Community
-- **Validated By** — Pending -- requires sign-off by a Mexican contador publico
-- **Validation Date** — Pending
-- **Skill Version** — 1.0
-- **Tax Year** — 2025
-- **Confidence Coverage** — Tier 1: CFDI 4.0 mandatory fields, PAC timbrado, uso de CFDI codes, cancellation rules. Tier 2: complemento de pago timing, foreign currency CFDIs, regime-specific codes. Tier 3: CFDI for payroll (nomina), foreign trade complement, audits.
+- **Jurisdiction** - Mexico
+- **Jurisdiction Code** - MX
+- **Primary Legislation** - Codigo Fiscal de la Federacion (CFF), Art. 29, 29-A
+- **Supporting Legislation** - Resolucion Miscelanea Fiscal (RMF) 2025; Anexo 20 (CFDI technical standard)
+- **Tax Authority** - Servicio de Administracion Tributaria (SAT)
+- **Portal** - Portal SAT (sat.gob.mx)
+- **Contributor** - Open Accountants Community
+- **Validated By** - Pending -- requires sign-off by a Mexican contador publico
+- **Validation Date** - Pending
+- **Skill Version** - 1.0
+- **Tax Year** - 2025
+- **Confidence Coverage** - Tier 1: CFDI 4.0 mandatory fields, PAC timbrado, uso de CFDI codes, cancellation rules. Tier 2: complemento de pago timing, foreign currency CFDIs, regime-specific codes. Tier 3: CFDI for payroll (nomina), foreign trade complement, audits.
 
 **Skill Metadata**
 
@@ -66,7 +66,7 @@ Before advising on any CFDI matter, you MUST know:
 
 ## Step 1: CFDI 4.0 Overview [T1]
 
-- **CFDI 4.0 mandatory since April 2023** — CFDI 4.0 has been mandatory since April 1, 2023. All previous versions are obsolete.  _(CFF Art. 29, 29-A; Anexo 20 v4.0)_
+- **CFDI 4.0 mandatory since April 2023** - CFDI 4.0 has been mandatory since April 1, 2023. All previous versions are obsolete.  _(CFF Art. 29, 29-A; Anexo 20 v4.0)_
 
 ### Key Changes from CFDI 3.3 to 4.0 [T1]
 
@@ -151,7 +151,7 @@ Before advising on any CFDI matter, you MUST know:
 | --- | --- |
 | Purpose | PACs validate and digitally stamp (timbrar) CFDIs |
 | Requirement | Every CFDI must be certified by an authorized PAC |
-| Timing | Within 72 hours of the transaction (or at time of issuance) |
+| Timing | Stamped at issuance of the transaction; the archived CFF and RMF 2025 texts contain no 72-hour grace period |
 | UUID | The PAC assigns a unique identifier (UUID / folio fiscal) |
 | Cost | PACs charge per CFDI stamped (some free tiers for low volume) |
 
@@ -166,7 +166,7 @@ Before advising on any CFDI matter, you MUST know:
 
 ## Step 6: Complemento de Pago (Payment Complement) [T1]
 
-- **Complemento de Pago legislation** — Complemento de pago governed under RMF 2025, Regla 2.7.1.32  _(RMF 2025, Regla 2.7.1.32)_
+- **Complemento de Pago legislation** - Complemento de pago governed under RMF 2025, Regla 2.7.1.32  _(RMF 2025, Regla 2.7.1.32)_
 
 ### When Required [T1]
 
@@ -193,12 +193,12 @@ Before advising on any CFDI matter, you MUST know:
 
 | Rule | Deadline |
 | --- | --- |
-| Issue complemento de pago | By the 5th day of the month following the month payment was received |
+| Issue complemento de pago | By the fifth natural day of the month immediately following the month the payment(s) were received (RMF 2025, Regla 2.7.1.32) |
 | Late issuance | May trigger SAT queries or penalties |
 
 ## Step 7: Cancellation Rules [T1]
 
-- **Cancellation Rules legislation** — Cancellation rules governed under CFF Art. 29-A, penultimo parrafo; RMF 2026  _(CFF Art. 29-A, penultimo parrafo; RMF 2026)_
+- **Cancellation Rules legislation** - Cancellation rules governed under CFF Art. 29-A, fourth, fifth and sixth paragraphs; RMF 2025 Reglas 2.7.1.34 and 2.7.1.35  _(CFF Art. 29-A, cuarto, quinto y sexto parrafos; RMF 2025, Reglas 2.7.1.34, 2.7.1.35)_
 
 ### Cancellation Process [T1]
 
@@ -211,17 +211,19 @@ Before advising on any CFDI matter, you MUST know:
 | Reason 02 | Comprobante emitido con errores sin relacion (no replacement) |
 | Reason 03 | No se llevo a cabo la operacion (transaction did not occur) |
 | Reason 04 | Operacion nominativa relacionada en la factura global |
-| Recipient acceptance | Required for CFDIs with total > MXN 1,000; in 2026, CFDI with Complemento para Recepción de Pagos (REP/CRP) require acceptance regardless of amount |
+| Recipient acceptance | Required unless an RMF 2025 Regla 2.7.1.35 exception applies (e.g. totals up to MXN 1,000, payroll, egresos, traslado, public in general, foreign residents, cancellation by the next business day). The recipient must accept or deny via the SAT Portal within three days of the cancellation request; silence after the deadline counts as acceptance (RMF 2025, Regla 2.7.1.34) |
 | Cancellation deadline | Must cancel within the same fiscal year of issuance, or by the deadline for the annual return |
 
 ### Cancellation Without Recipient Acceptance [T1]
 
-No acceptance generally needed when:
-- CFDI total <= MXN 1,000, except REP/payment-complement CFDI and other RMF 2026 exceptions
-- CFDI is to general public (RFC generico XAXX010101000)
+No acceptance generally needed when (RMF 2025, Regla 2.7.1.35):
+- CFDI total up to MXN 1,000
 - Payroll CFDIs (nomina)
-- Export CFDIs
-- Traspasos between own accounts
+- Egresos (credit notes) and traslado CFDIs
+- CFDI to general public (RFC generico XAXX010101000)
+- CFDI issued to foreign residents (Regla 2.7.1.23)
+- Cancellation performed by the next business day after issuance
+- CFDI issued by financial system institutions, public agencies, and certain real-agricultural/PCECFDI cases
 
 ## Step 8: Edge Case Registry
 
@@ -243,7 +245,7 @@ No acceptance generally needed when:
 ### EC4 -- Client wants to cancel a CFDI from 6 months ago [T1]
 
 **Situation:** CFDI issued in January, client wants to cancel in July.
-**Resolution:** Cancellation is allowed within the same fiscal year (or before annual return deadline). If total > MXN 1,000, recipient must accept cancellation within 72 hours. If recipient rejects, cancellation fails.
+**Resolution:** Cancellation is allowed within the same fiscal year (or before annual return deadline). If no Regla 2.7.1.35 exception applies, the recipient must accept or deny the cancellation via the SAT Portal within three days of the request; silence counts as acceptance (RMF 2025, Regla 2.7.1.34). If recipient rejects, cancellation fails.
 
 ### EC5 -- RESICO freelancer issuing CFDI [T1]
 
@@ -294,7 +296,7 @@ No acceptance generally needed when:
 **Expected output:**
 - Issue new (correct) CFDI first
 - Cancel original with Motivo 01 (con relacion) referencing the new CFDI's UUID
-- If original total > MXN 1,000: wait for recipient acceptance (72 hours max)
+- If no Regla 2.7.1.35 exception applies: wait for recipient acceptance (three days per RMF 2025, Regla 2.7.1.34)
 
 ## PROHIBITIONS
 
@@ -303,16 +305,24 @@ No acceptance generally needed when:
 - NEVER omit the recipient's RFC, name, regime, or postal code -- all are mandatory in 4.0
 - NEVER issue a PPD CFDI without following up with complemento de pago when payment is received
 - NEVER cancel a CFDI without specifying a valid motivo de cancelacion code
-- NEVER assume cancellation is automatic -- CFDIs over MXN 1,000 require recipient acceptance
+- NEVER assume cancellation is automatic -- CFDIs above MXN 1,000 generally require recipient acceptance unless an RMF 2025 Regla 2.7.1.35 exception applies
 - NEVER use FormaPago 99 with MetodoPago PUE -- 99 is only for PPD
 - NEVER ignore the complemento de pago deadline (5th of the following month)
 - NEVER present guidance as definitive -- always label as estimated and direct client to a Mexican contador publico
 
+## Sources
+
+| Source | URL | Read on |
+| --- | --- | --- |
+| Codigo Fiscal de la Federacion, texto vigente (Arts. 29, 29-A; ultima reforma DOF 09-04-2026) | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
+| Resolucion Miscelanea Fiscal 2025 (Reglas 2.7.1.32, 2.7.1.34, 2.7.1.35) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/rmf/RMF_2025-30122024.pdf | 2026-11-02 |
+| SAT "Formato de Factura (Anexo 20)" - CFDI 4.0 vigencia (unica version valida desde 1 abril 2023) | https://wwwmatnp.sat.gob.mx/consultas/35025/formato-de-factura-electronica-(anexo-20) | 2026-11-02 |
+
+Not yet confirmed: Anexo 20 catalog values (uso CFDI, motivo de cancelacion, regimen fiscal codes) - technical standard not archived; RMF 2026 rules (REP/CRP acceptance exceptions) - RMF 2026 text not archived.
+
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a contador publico or equivalent licensed practitioner in Mexico) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
 
 <!-- openaccountants-cta-block -->
 
@@ -320,7 +330,7 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network - accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
