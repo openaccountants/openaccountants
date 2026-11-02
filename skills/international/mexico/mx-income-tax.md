@@ -81,6 +81,8 @@ RESICO eligibility and the annual table: LISR Arts. 113-E and 113-F. Client with
 | 1,000,001 – 2,500,000 | 2.00% |
 | 2,500,001 – 3,500,000 | 2.50% |
 
+The statute (LISR Art. 113-F, TABLA ANUAL) states each band as "Hasta" (up to) the upper limit shown: Hasta 300,000.00 at 1.00%, Hasta 600,000.00 at 1.10%, Hasta 1,000,000.00 at 1.50%, Hasta 2,500,000.00 at 2.00%, Hasta 3,500,000.00 at 2.50%. The lower bounds in the table above are the complement of the previous row, not separate statutory figures.
+
 - **RESICO eligibility**: individuals with only business, professional or leasing income whose income from those activities in the **prior year** did not exceed MXN 3,500,000 may opt in (new starters on an estimate). If income passes MXN 3,500,000 at any time in the year, RESICO stops applying from the following month (LISR Art. 113-E).
 - **Monthly payments** use the Art. 113-E monthly table (1.00% up to MXN 25,000 a month; 1.10% to 50,000; 1.50% to 83,333.33; 2.00% to 208,333.33; 2.50% above), due by the 17th of the following month.
 - **Withholding by companies:** a persona moral paying a RESICO taxpayer withholds **1.25%** of the payment excluding IVA (LISR Art. 113-J), not the 10% of Art. 106. Both the monthly payments and the 1.25% withheld are credited in the annual return (Art. 113-F).
@@ -96,7 +98,7 @@ Cannot combine RESICO with Régimen General in same year for same activity
 
 | Client Type | Withholding on Honorarios CFDI |
 | --- | --- |
-| Moral (corporation), payee in Régimen General | 10% ISR (LISR Art. 106) + 2/3 of applicable IVA (10.667% of invoice amount; IVA part not yet confirmed) |
+| Moral (corporation), payee in Régimen General | 10% ISR (LISR Art. 106: "la tasa del 10% sobre el monto de los pagos que les efectúen") + 2/3 of the IVA transferred (RLIVA Art. 3 fr. I: "las dos terceras partes del impuesto que se les traslade"; 2/3 x 16% = 10.667% of the invoice amount) |
 | Moral (corporation), payee in RESICO | 1.25% ISR on the payment excluding IVA (LISR Art. 113-J) |
 | Física (individual) with business activity | Same obligations as Moral |
 | Persona Física consumer | No withholding obligation |
@@ -164,7 +166,7 @@ Retenciones are credited against the annual ISR balance.
 | DP-03 | Gastos funerarios | Up to the annual general minimum salary of the taxpayer's geographic area (Art. 151 fr. II) |
 | DP-04 | Donativos (donations to authorized entities) | Up to 7% of prior-year income |
 | DP-05 | Crédito hipotecario interest | Up to 750,000 UDIs of total credit (Art. 151 fr. IV) |
-| DP-06 | Colegiaturas (education) | Capped by education level (peso caps not confirmed; see Not yet confirmed) |
+| DP-06 | Colegiaturas (education) | Annual cap by level (SAT limits table): preescolar MXN 14,200; primaria MXN 12,900; secundaria MXN 19,900; profesional técnico MXN 17,100; bachillerato o equivalente MXN 24,500. If the child changed levels mid-year, the higher level's cap applies |
 | DP-07 | Aportaciones complementarias / voluntarias de retiro (AFORE, planes personales) | Up to 10% of the year's ingresos acumulables, max five annual general minimum wages (Art. 151 fr. V); outside the overall cap |
 
 - **Total deducciones personales cap**: the lower of 15% of total income (including exempt income) or five times the annual value of the UMA (LISR Art. 151, final paragraph). Only fr. V retirement contributions are outside this cap; donations count inside it.
@@ -256,7 +258,7 @@ No penalty, recargo or interest figure is confirmed in this skill yet; see the "
 | No CFDI emitted for services | SAT audit risk: CFDI de honorarios required for every PJ client |
 | No pagos provisionales | Multa and recargos, verify monthly obligations met |
 | Cash income without CFDI | Non-deductible for client; high SAT scrutiny for taxpayer |
-| One client paid more than 50% of prior-year professional income and the work is done at that client's premises | Fees are treated as wages (asimilados) under LISR Art. 94 fr. V; check before invoicing the year |
+| One client paid more than 50% of prior-year professional income and the work is done at that client's premises | Fees are treated as wages (asimilados) under LISR Art. 94 fr. IV ("más del 50% del total de los ingresos"); check before invoicing the year |
 
 ## Cross-border points
 
@@ -433,7 +435,7 @@ Taxable: MXN 480,000 − MXN 86,400 = MXN 393,600
 ISR: MXN 60,049.40 + (MXN 393,600 − MXN 374,837.89) × 23.52%
 = MXN 60,049.40 + MXN 18,762.11 × 23.52% = MXN 60,049.40 + MXN 4,412.85 = **MXN 64,462.25**
 
-Deducciones personales: gastos médicos propios MXN 12,000 + colegiaturas hijo MXN 8,900 = MXN 20,900 (reduces ISR ~ MXN 4,000 at marginal rate).
+Deducciones personales: gastos médicos propios MXN 12,000 + colegiaturas hijo MXN 8,900 = MXN 20,900 (at the 23.52% marginal rate this reduces ISR by MXN 20,900 x 23.52% = MXN 4,915.68, subject to the Art. 151 overall cap).
 
 #### Worked example 6: Nu México / Hey Banco (CDMX, Freelance Designer)
 
@@ -641,8 +643,10 @@ Before computing Mexican ISR, collect:
 | SAT, Resolución Miscelánea Fiscal 2025, Anexo 8 (ISR tariffs for 2025, incl. the annual tariff for LISR Art. 152) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo8_RMF2025-30122024.pdf | 2026-10-28 |
 | Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 5, 27, 28, 34, 36, 94, 106, 113-E, 113-F, 113-J, 150, 151 (still last reformed DOF 01-04-2024 in the October 2026 copy) | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-29 |
 | Ley del Impuesto al Valor Agregado, consolidated (Cámara de Diputados), 16% general rate | https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf | 2026-10-28 |
+| Reglamento de la Ley del Impuesto al Valor Agregado, Art. 3 fr. I (2/3 IVA retention by personas morales on fees from personas físicas) | https://www.diputados.gob.mx/LeyesBiblio/regley/Reg_LIVA_250914.pdf | 2026-11-02 |
+| SAT, "¡Deduce la colegiatura de tus hijos!" (annual colegiaturas deduction caps by education level) | https://www.gob.mx/sat/articulos/deduce-la-colegiatura-de-tus-hijos?idiom=es | 2026-11-02 |
 
-Not yet confirmed: whether a RESICO taxpayer may combine RESICO with Régimen General in the same year; the 2/3 IVA retention (10.667% of the invoice) by corporate clients and the same obligation for individual clients with business activity; the colegiaturas caps by education level (v2.2 carried "preparatoria MXN 14,200" and said the LIF sets them; the caps come from a presidential decree of fiscal incentives, not read here) and the peso value of the 5-UMA overall cap; deductibility of voluntary IMSS contributions as deducciones personales and the IMSS position of self-employed persons; the SAT pre-filled proposal timing; multas and recargos for missed pagos provisionales; the ~MXN 17.50 exchange rate in Example 4 (a hypothetical client fact); the bank export formats and narrations (not statutory); the reference to "IRPF" in R-MX-3 (a Spanish term; Mexico's employer withholding is ISR).
+Not yet confirmed: whether a RESICO taxpayer may combine RESICO with Régimen General in the same year; whether individual clients with business activity (not just personas morales) carry the same 2/3 IVA retention obligation (LIVA Art. 1o.-A fr. II lists personas morales for services personales independientes); the peso value of the 5-UMA overall cap; deductibility of voluntary IMSS contributions as deducciones personales and the IMSS position of self-employed persons; the SAT pre-filled proposal timing; multas and recargos for missed pagos provisionales; the ~MXN 17.50 exchange rate in Example 4 (a hypothetical client fact); the bank export formats and narrations (not statutory); the reference to "IRPF" in R-MX-3 (a Spanish term; Mexico's employer withholding is ISR).
 
 <!-- openaccountants-cta-block -->
 
@@ -650,7 +654,7 @@ Not yet confirmed: whether a RESICO taxpayer may combine RESICO with Régimen Ge
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network -- accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
