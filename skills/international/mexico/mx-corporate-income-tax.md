@@ -20,7 +20,7 @@ See also: `mx-cross-border` (Title V non-resident income), `mx-social-contributi
 
 ## Who this applies to
 
-Resident Mexican corporations (personas morales) are taxed on worldwide income (LISR Arts. 8-9). A Mexican-source rule and a permanent-establishment concept bring non-resident corporations in under Title V: see `mx-cross-border`. Mexican branches of foreign companies are taxed as resident corporations; a foreign corporation without a PE pays the Title V flat rates instead.
+Resident Mexican corporations (personas morales) are taxed on all their income regardless of where the source of wealth is located (LISR Art. 1 fr. I: "Las residentes en México, respecto de todos sus ingresos, cualquiera que sea la ubicación de la fuente de riqueza de donde procedan"); Art. 8 imposes the Title III obligation on those residents and Art. 9 sets the 30% rate. A Mexican-source rule and a permanent-establishment concept bring non-resident corporations in under Title V: see `mx-cross-border`. Mexican branches of foreign companies are taxed as resident corporations; a foreign corporation without a PE pays the Title V flat rates instead.
 
 ## Rates, bands and thresholds
 
@@ -38,7 +38,7 @@ No general reduced corporate rate exists in the consolidated LISR text read on 2
 
 **Fiscal result** (LISR Art. 9): accumulate all Title II income, subtract authorised deductions (Arts. 25-37) and PTU actually paid in the year (Art. 9 fr. I), then subtract updated prior-year loss carryforwards.
 
-**Losses** carry forward 10 years ("los diez ejercicios siguientes", LISR Art. 57), inflation-updated, with same-line-of-business limits on mergers and control changes (Art. 57).
+**Losses** carry forward 10 years ("los diez ejercicios siguientes", LISR Art. 57), inflation-updated. Same-line-of-business limits apply on mergers (fusión) and on a change of controlling shareholders (Art. 58); Art. 57 itself limits losses in spin-offs (escisión).
 
 **Timing.** Accrual basis; inflation adjustment applies to certain items (Arts. 44-46). Deductions require CFDI invoice compliance (Art. 27).
 
@@ -55,7 +55,7 @@ No general reduced corporate rate exists in the consolidated LISR text read on 2
 
 ## Penalties and interest
 
-No penalty or interest figure in this domain is confirmed yet; the Código Fiscal de la Federación figures earlier drafts carried are on the "Not yet confirmed" line under Sources. IMSS contribution penalties are covered in `mx-social-contributions`.
+CFF Art. 64 (the old 45%-85% fine for underpaid amounts) is repealed ("Artículo 64.- (Se deroga).") in the consolidated CFF read 2026-10-31. Underpaid contributions discovered by the tax authorities now draw a fine of 55% to 75% of the omitted contributions (CFF Art. 76); declaring a fiscal loss larger than the real one draws 30% to 40% of the difference (Art. 76, later paragraphs). Omitted contributions plus accessories are due within 30 days of the assessment notice (Art. 65), which also governs inflation updating. Recargos (CFF Art. 22) are an annual variable-rate charge on fiscal credits, not a fixed 1.41% monthly figure. IMSS contribution penalties are covered in `mx-social-contributions`.
 
 ## Cross-border points
 
@@ -89,7 +89,7 @@ expected:
 
 ### Worked example 2: dividend not paid out of CUFIN
 
-The same company distributes a MXN 700,000 dividend out of post-2014 profits. The Art. 10 tax is 700,000 × 1.4286 × 30% = MXN 300,006. The 10% additional tax on the resident individual (Art. 140, second paragraph: "una tasa adicional del 10% sobre los dividendos o utilidades distribuidos", retained by the company and definitive) applies to the dividend distributed, not to the dividend plus the Art. 10 tax: 700,000 × 10% = MXN 70,000.
+The same company distributes a MXN 700,000 dividend out of post-2014 profits. The Art. 10 tax is 700,000 × 1.4286 × 30% = MXN 300,006 (the statute itself prescribes the gross-up: "éstos se deberán multiplicar por el factor de 1.4286 y al resultado se le aplicará la tasa del artículo 9 de esta Ley"). The 10% additional tax on the resident individual (Art. 140, second paragraph: "una tasa adicional del 10% sobre los dividendos o utilidades distribuidos", retained by the company and definitive) applies to the dividend distributed, not to the dividend plus the Art. 10 tax: 700,000 × 10% = MXN 70,000.
 
 ```oa-check
 name: dividend gross-up and 10 percent additional tax
@@ -109,7 +109,7 @@ expected:
 ## Ask the client first
 
 1. **Is the CUFIN balance enough for planned distributions?** A dividend outside CUFIN bears the Art. 10 tax.
-2. **Any control change or merger** that limits the loss carryforward (Art. 57)?
+2. **Any control change or merger** that limits the loss carryforward (Art. 58)?
 3. **Is every deduction backed by a CFDI** (Art. 27)?
 4. **Was PTU paid in the year?** Only PTU paid reduces the base.
 5. **Any payments to non-residents** that need Title V withholding before the payment date?
@@ -120,8 +120,9 @@ expected:
 |---|---|---|
 | Ley del Impuesto Sobre la Renta, consolidated (Cámara de Diputados, last reform DOF 01-04-2024), Arts. 8-10, 14, 25-37, 44-46, 57, 76, 76-A, 78, 140, 156, 158, 160, 164, 179-182 (still last reformed DOF 01-04-2024 in the October 2026 copy) | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-29 |
 | SAT, personas morales régimen general: declaraciones mensuales | http://omawww.sat.gob.mx/informacion_fiscal/obligaciones_fiscales/personas_morales/regimen_general/Paginas/declaraciones_mensuales.aspx | 2026-10-28 |
+| Código Fiscal de la Federación, consolidated (Cámara de Diputados, last reform DOF 09-04-2026), Arts. 22, 64, 65, 75, 76 | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
 
-Not yet confirmed: whether CUFIN is limited to profits taxed before 2014 as earlier drafts said, and the CUFIN-non-resident account; the 35% Title V rate earlier drafts listed for some non-resident income; whether a 2025-2026 reform changed the Art. 9 rate after the DOF 01-04-2024 consolidation (the 2025-2026 rate-increase debate had not changed the text read); the annual return as a calendar date (the LISR text gives three months after year end; earlier drafts said 30 July for calendar-year taxpayers); the PTU payment deadline of 60 days after the annual return (Ley Federal del Trabajo; not read); Código Fiscal de la Federación penalties of 45%-85% for underpaid amounts (Art. 64) and 50%-150% for false returns (Art. 65), inflation updating and interest (Art. 20) and the 1.41% monthly rate (no archived copy of the CFF); treaty-by-treaty withholding rates; the 2026 UMA and minimum wage; current SAT tariff tables.
+Not yet confirmed: how the 10% additional dividend tax (Art. 140, second paragraph) applies to non-resident shareholders; whether CUFIN is limited to profits taxed before 2014 as earlier drafts said, and the CUFIN-non-resident account; whether a 2025-2026 reform changed the Art. 9 rate after the DOF 01-04-2024 consolidation (the 2025-2026 rate-increase debate had not changed the text read; the consolidated copy read on 2026-10-29 still shows 30%); the annual return as a calendar date (the LISR text gives three months after year end; earlier drafts said 30 July for calendar-year taxpayers); the PTU payment deadline of 60 days after the annual return (Ley Federal del Trabajo; not read); treaty-by-treaty withholding rates; the 2026 minimum wage; current SAT tariff tables. The consolidated LISR read contains no 35% rate anywhere in Title V (the 25% rates in Arts. 156, 158, 160 and the interest tiers in Art. 166 are the flat rates), so the "35% Title V rate" earlier drafts listed is not carried.
 
 <!-- openaccountants-cta-block -->
 
@@ -129,7 +130,7 @@ Not yet confirmed: whether CUFIN is limited to profits taxed before 2014 as earl
 
 ## Talk to a verified accountant
 
-This guide is maintained by the OpenAccountants network — accountants who put
+This guide is maintained by the OpenAccountants network -- accountants who put
 their name behind the tax answers AI gives people. The live, always-current
 version (and the professional behind it) is at
 [openaccountants.com](https://www.openaccountants.com).
