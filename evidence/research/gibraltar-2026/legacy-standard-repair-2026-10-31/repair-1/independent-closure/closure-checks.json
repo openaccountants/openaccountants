@@ -1,0 +1,25 @@
+{
+  "reviewed_commit": "6e75f698f89321470fa55245b8993d28f2bafb0b",
+  "original_review_commit_preserved": "721fda0ac7d98ce5e2eedbea23020968e5fb174b",
+  "original_inputs": 87,
+  "unchanged_original_inputs": 86,
+  "sole_changed_original_input": "skills/gibraltar/gi-property-stamp-duty.md",
+  "all_initial_independent_review_artifacts_match_commit": true,
+  "ledger_rows": 29,
+  "excerpts_unchanged": 46,
+  "only_ledger_change": [
+    "LEG-17",
+    5,
+    "article",
+    "Article 25(1) purpose test",
+    "Article 28(1) purpose test"
+  ],
+  "stamp_only_changes": "version0.5 to0.6; H1 v0.6; one penalty pointer paragraph",
+  "original_content_lines": 552,
+  "original_topics": 77,
+  "original_controls": 14,
+  "new_controls_preserved": 5,
+  "CTA_and_metadata": "preserved except disclosed version/H1/paragraph",
+  "source_context_bindings": "both repair excerpts exact",
+  "bounded_metadata_audit": "1 source Guide;0 errors, warnings or notices; audit mode with strict metadata, not private CAS sync/export"
+}

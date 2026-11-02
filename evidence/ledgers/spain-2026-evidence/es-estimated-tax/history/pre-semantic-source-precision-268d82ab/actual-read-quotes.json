@@ -1,0 +1,872 @@
+[
+  {
+    "source": "RIRPF",
+    "article": "109",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a109",
+    "quote": "obligados a autoliquidar e ingresar en el Tesoro, en concepto de pago a cuenta del Impuesto sobre la Renta de las Personas Físicas, la cantidad que resulte de lo establecido en los artículos siguientes, sin perjuicio de las excepciones previstas en los apartados siguientes.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6232,
+    "LF_end": 6232,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "109",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a109",
+    "quote": "70 por ciento de los ingresos de la actividad fueron objeto de retención o ingreso a cuenta.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6234,
+    "LF_end": 6234,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "109",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a109",
+    "quote": "inicio de la actividad se tendrá en cuenta el porcentaje de ingresos que hayan sido objeto de retención o ingreso a cuenta durante el período a que se refiere el pago fraccionado.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6240,
+    "LF_end": 6240,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "112",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a112",
+    "quote": "proporción a su participación en el beneficio de la entidad.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6414,
+    "LF_end": 6414,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "20 por ciento del rendimiento neto correspondiente al período de tiempo transcurrido desde el primer día del año hasta el último día del trimestre a que se refiere el pago fraccionado.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6252,
+    "LF_end": 6252,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "trimestres anteriores del mismo año si no se hubiera aplicado lo dispuesto en la letra c) del apartado 3 de este artículo.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6254,
+    "LF_end": 6254,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "4 por ciento de los rendimientos netos resultantes de la aplicación de dicho método en función de los datos-base del primer día del año a que se refiere el pago fraccionado o, en caso de inicio de actividades, del día en que éstas hubiesen comenzado.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6256,
+    "LF_end": 6256,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "3 por ciento, y en el supuesto de que no disponga de personal asalariado dicho porcentaje será el 2 por ciento.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6258,
+    "LF_end": 6258,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "2 por ciento del volumen de ventas o ingresos del trimestre.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6260,
+    "LF_end": 6260,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "forestales o pesqueras, cualquiera que fuese el método de determinación del rendimiento neto, el 2 por ciento del volumen de ingresos del trimestre, excluidas las subvenciones de capital y las indemnizaciones.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6262,
+    "LF_end": 6262,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "subvenciones de capital y las indemnizaciones.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6262,
+    "LF_end": 6262,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "reducirán en un 60 por ciento para las actividades económicas que tengan derecho a la deducción en la cuota prevista en el artículo 68.4 de la Ley del Impuesto.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6264,
+    "LF_end": 6264,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "En los períodos impositivos 2022, 2023, 2024, 2025 y 2026, la deducción prevista en el número 1.º del apartado 4 del artículo 68 de esta ley será aplicable, en los mismos términos y condiciones, a los contribuyentes con residencia habitual y efectiva en la isla",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 10904,
+    "LF_end": 10904,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "o en dichos ejercicios, para determinar el tipo del pago fraccionado correspondiente a las actividades económicas que tengan derecho a la misma cuyo plazo de presentación no se hubiera iniciado en el momento de la entrada en vigor del Real Decreto-ley 4/2024, de 26 de",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 10906,
+    "LF_end": 10906,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "Order",
+    "article": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272",
+    "quote": "5 por ciento sobre el rendimiento neto de módulos aplicable a todos los contribuyentes que determinen el rendimiento neto de su actividad económica con arreglo al método de estimación objetiva.",
+    "reader": "sources/Order.reader.txt",
+    "LF_start": 376,
+    "LF_end": 376,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "33.007,2 euros, se podrá deducir el 2 por ciento del rendimiento neto correspondiente al período de tiempo transcurrido desde el primer día del año hasta el último día del trimestre a que se refiere el pago fraccionado.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6316,
+    "LF_end": 6316,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "660,14 euros en cada trimestre.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6320,
+    "LF_end": 6320,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "0,5 por ciento de los citados rendimientos netos. No obstante, cuando no pudiera determinarse ningún dato base se aplicará la deducción prevista en el número 3.º de esta letra sobre el volumen de ventas o ingresos del trimestre.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6322,
+    "LF_end": 6322,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "importe acumulado en el período impositivo superior a 660,14 euros.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6328,
+    "LF_end": 6328,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "construcción o ampliación de la vivienda.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6330,
+    "LF_end": 6330,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "porcentajes superiores a los indicados.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6332,
+    "LF_end": 6332,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "95",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95",
+    "quote": "7 por ciento en el período impositivo de inicio de actividades y en los dos siguientes, siempre y cuando no hubieran ejercido actividad profesional alguna en el año anterior a la fecha de inicio de las actividades",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 5640,
+    "LF_end": 5640,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "95",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95",
+    "quote": "15 por ciento sobre los ingresos íntegros satisfechos.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 5638,
+    "LF_end": 5638,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "95",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95",
+    "quote": "comunicación debidamente firmada.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 5642,
+    "LF_end": 5642,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "igual o inferior a 12.000 euros, el importe que resulte del siguiente cuadro:",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6282,
+    "LF_end": 6282,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "Igual o inferior a 9.000",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6296,
+    "LF_end": 6296,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "Entre 9.000,01 y 10.000",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6300,
+    "LF_end": 6300,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "Entre 10.000,01 y 11.000",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6304,
+    "LF_end": 6304,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "Entre 11.000,01 y 12.000",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6308,
+    "LF_end": 6308,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "diferencia podrá deducirse en cualquiera de los siguientes pagos fraccionados correspondientes al mismo período impositivo cuyo importe positivo lo permita y hasta el límite máximo de dicho importe.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6312,
+    "LF_end": 6312,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "previos a la aplicación, en su caso de la reducción por obtención de rendimientos irregulares y resto de reducciones aplicables, en su caso, sobre el rendimiento neto reducido de la actividad (suma de las casillas correspondientes a los rendimientos netos: a) de actividades económicas en",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 183,
+    "LF_end": 183,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "Casilla 13. Cuando la cuantía de los rendimientos NETOS (*) de actividades económicas del obligado tributario, obtenidos en el ejercicio anterior al que corresponde el trimestre por el que se efectúa la autoliquidación, haya sido igual o inferior a 12.000 euros, se consignará en esta",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 161,
+    "LF_end": 161,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "Para los ejercicios 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023 y 2024, las magnitudes de 150.000 y 75.000 euros a que se refiere el apartado a’) de la letra b) de la norma 3.ª del apartado 1 del artículo 31 de esta ley, quedan",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 12189,
+    "LF_end": 12189,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": "31",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a31",
+    "quote": "150.000 euros anuales.",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 2952,
+    "LF_end": 2952,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": "31",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a31",
+    "quote": "75.000 euros anuales.",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 2956,
+    "LF_end": 2956,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": "31",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a31",
+    "quote": "250.000 euros anuales.",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 2958,
+    "LF_end": 2958,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": "31",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a31",
+    "quote": "150.000 euros anuales.",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 2952,
+    "LF_end": 2952,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": "31",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a31",
+    "quote": "cónyuge, descendientes y ascendientes, así como por entidades en régimen de atribución de rentas en las que participen cualquiera de los anteriores, en las que concurran las siguientes circunstancias:",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 2962,
+    "LF_end": 2962,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": "31",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a31",
+    "quote": "se elevará al año.",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 2968,
+    "LF_end": 2968,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "Order",
+    "article": "3",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272#a3",
+    "quote": "Magnitudes excluyentes.",
+    "reader": "sources/Order.reader.txt",
+    "LF_start": 716,
+    "LF_end": 716,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "Entry",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html",
+    "quote": "Desde 2016 hasta 2026 inclusive los límites de 150.000 € y 75.000 € pasan a ser 250.000 € y 125.000 € respectivamente. No se incluyen en el volumen de ingresos: las subvenciones corrientes, las de capital, las indemnizaciones, el IVA, ni, en su caso, el",
+    "reader": "sources/Entry.reader.txt",
+    "LF_start": 104,
+    "LF_end": 104,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "Entry",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html",
+    "quote": "Desde 2016 hasta 2026 inclusive el volumen de compras en bienes y servicios en el año inmediato anterior no puede superar los 250.000 €. No se incluyen las adquisiciones de inmovilizado.",
+    "reader": "sources/Entry.reader.txt",
+    "LF_start": 108,
+    "LF_end": 108,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "Note",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html",
+    "quote": "ambos no convalidados, son los siguientes:",
+    "reader": "sources/Note.reader.txt",
+    "LF_start": 62,
+    "LF_end": 62,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "Note",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html",
+    "quote": "Respecto al ejercicio 2026 se mantienen los límites para la aplicación del método de estimación objetiva vigentes en los ejercicios 2016 a 2024 (disposición transitoria trigésima segunda de la LIRPF, modificada por el artículo 14. Cuatro del Real Decreto-Ley 16/2025).",
+    "reader": "sources/Note.reader.txt",
+    "LF_start": 84,
+    "LF_end": 84,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": "28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a28",
+    "quote": "normas del Impuesto sobre Sociedades, sin perjuicio de las reglas especiales contenidas en este artículo, en el artículo 30 de esta Ley para la estimación directa, y en el artículo 31 de esta Ley para la estimación objetiva.",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 2827,
+    "LF_end": 2827,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "Casilla 05. Aquí debe reflejarse la suma de las cantidades positivas consignadas en la casilla 07 de las autoliquidaciones, modelo 130, correspondientes a los trimestres anteriores del mismo ejercicio, minorada en el importe de la suma de las cantidades consignadas en la casilla 16 de",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 131,
+    "LF_end": 131,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "casilla 15 (Resultados negativos de los trimestres anteriores),  y solamente si en la casilla 14 anterior se hubiera obtenido una cantidad positiva, debemos hacer constar el importe (sin signo) de los resultados negativos que, en su caso, se hubieran obtenido en la casilla 19 de",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 191,
+    "LF_end": 191,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "casilla 16 de las citadas autoliquidaciones. No se computarán las cantidades negativas consignadas en la casilla 07 de las autoliquidaciones correspondientes a los trimestres anteriores.",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 131,
+    "LF_end": 131,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "casilla 19 de cualquiera de las autoliquidaciones anteriores, modelo 130, del mismo ejercicio y que no hubieran sido deducidos anteriormente, teniendo en cuenta que en ningún caso podrá figurar en la casilla 15 un importe superior a la cantidad positiva consignada en la casilla 14.",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 191,
+    "LF_end": 191,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "a deducir” en trimestres siguientes), consignaremos el número cero (0) en la casilla 18.",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 221,
+    "LF_end": 221,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "negativa, consígnela con signo menos (–). No obstante, los rendimientos netos en los que concurra alguna de las circunstancias contempladas en el artículo 32.1 de la Ley del Impuesto, se computarán a efectos del pago fraccionado previa aplicación de la reducción establecida en el citado",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 121,
+    "LF_end": 121,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "Disposición transitoria decimoctava. Deducción por inversión en vivienda habitual.",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 11824,
+    "LF_end": 11824,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "Los contribuyentes que hubieran adquirido su vivienda habitual con anterioridad a 1 de enero de 2013 o satisfecho cantidades con anterioridad a dicha fecha para la construcción de la misma.",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 11828,
+    "LF_end": 11828,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "Annex",
+    "article": null,
+    "url": "https://www.boe.es/boe/dias/2015/02/19/pdfs/BOE-A-2015-1656.pdf",
+    "quote": "660,14 euros por trimestre) o el 2 por 100 de 08 (máximo: 660,14 euros anuales) .............. 16",
+    "reader": "sources/Annex.reader.txt",
+    "LF_start": 383,
+    "LF_end": 383,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "Annex",
+    "article": null,
+    "url": "https://www.boe.es/boe/dias/2015/02/19/pdfs/BOE-A-2015-1656.pdf",
+    "quote": "Total ( 14 – 15 – 16 ). Si se obtiene una cantidad negativa, consígnela con signo menos (–) ................................................................ 17",
+    "reader": "sources/Annex.reader.txt",
+    "LF_start": 384,
+    "LF_end": 384,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "Annex",
+    "article": null,
+    "url": "https://www.boe.es/boe/dias/2015/02/19/pdfs/BOE-A-2015-1656.pdf",
+    "quote": "Resultado de la autoliquidación ( 17 – 18 ) .................................................................................................................................. 19",
+    "reader": "sources/Annex.reader.txt",
+    "LF_start": 387,
+    "LF_end": 387,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I131",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-131-irpf______sionales-estimacion-objetiva-fraccionado_/instrucciones.html",
+    "quote": "dos cifras decimales.",
+    "reader": "sources/I131.reader.txt",
+    "LF_start": 113,
+    "LF_end": 113,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I131",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-131-irpf______sionales-estimacion-objetiva-fraccionado_/instrucciones.html",
+    "quote": "25 por 100.",
+    "reader": "sources/I131.reader.txt",
+    "LF_start": 175,
+    "LF_end": 175,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I131",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-131-irpf______sionales-estimacion-objetiva-fraccionado_/instrucciones.html",
+    "quote": "Casilla 07. En esta casilla se reflejará el resultado de sumar los importes consignados en las casillas 02, 04 y 06.",
+    "reader": "sources/I131.reader.txt",
+    "LF_start": 185,
+    "LF_end": 185,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I131",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-131-irpf______sionales-estimacion-objetiva-fraccionado_/instrucciones.html",
+    "quote": "casilla 15 de cualquiera de las autoliquidaciones anteriores, modelo 131, del mismo ejercicio y que no hubieran sido deducidos anteriormente, teniendo en cuenta que en ningún caso podrá figurar en la casilla 11 un importe superior a la cantidad positiva consignada en la casilla 10.",
+    "reader": "sources/I131.reader.txt",
+    "LF_start": 219,
+    "LF_end": 219,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "111",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a111",
+    "quote": "entre el día 1 y el 20 de los meses de abril, julio y octubre.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6394,
+    "LF_end": 6394,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "111",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a111",
+    "quote": "entre el día 1 y el 30 del mes de enero.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6396,
+    "LF_end": 6396,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "111",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a111",
+    "quote": "declaración negativa.",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6398,
+    "LF_end": 6398,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "Forms",
+    "article": "1",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6032#a1",
+    "quote": "modelo 130. Impuesto sobre la Renta de las Personas Físicas. Actividades económicas en estimación directa. Pago fraccionado. Autoliquidación.",
+    "reader": "sources/Forms.reader.txt",
+    "LF_start": 428,
+    "LF_end": 428,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": "79",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a79",
+    "quote": "los pagos fraccionados previstos en esta Ley y en sus normas reglamentarias de desarrollo.",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 5909,
+    "LF_end": 5909,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "IBAN) de la Entidad colaboradora o bien, los de una cuenta abierta en una entidad no colaboradora perteneciente a la Zona Única de Pagos en Euros (Zona SEPA); en este último caso, el pago habrá de realizarse recurriendo a la intermediación en el servicio de",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 233,
+    "LF_end": 233,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "bizum.",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 239,
+    "LF_end": 239,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "2025. Formulario para su presentación (predeclaración)”, esto es, mediante papel impreso generado exclusivamente mediante la utilización del servicio de impresión desarrollado a estos efectos por la Agencia tributaria en su sede electrónica, y acudiendo a una oficina bancaria autorizada a efectuar el pago.",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 231,
+    "LF_end": 231,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "SEPA); en este último caso, el pago habrá de realizarse recurriendo a la intermediación en el servicio de una entidad colaboradora en la gestión recaudatoria.",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 233,
+    "LF_end": 233,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "I130",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/impuestos-tasas/impuesto-sobre-renta-personas-fisicas/modelo-130-irpf______esionales-estimacion-directa-fraccionado_/instrucciones.html",
+    "quote": "reconocimiento de deuda con solicitud de aplazamiento o compensación, el pago por transferencia, o anotación en cuenta corriente tributaria; que también pueden seleccionarse al elegir la forma de pago.",
+    "reader": "sources/I130.reader.txt",
+    "LF_start": 243,
+    "LF_end": 243,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "Disposición adicional sexagésima cuarta. Reducción en 2026 para el cálculo del rendimiento neto de las actividades económicas desarrolladas en Ceuta.",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 11214,
+    "LF_end": 11214,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "se inicie transcurrido un mes desde la entrada en vigor de Real Decreto-ley 22/2026, de 1 de septiembre, por el que se aprueban medidas urgentes de carácter social y económico de apoyo a la ciudad de Ceuta.",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 11220,
+    "LF_end": 11220,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LIRPF",
+    "article": null,
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "quote": "será, durante el período impositivo 2026, del 10 por ciento.",
+    "reader": "sources/LIRPF.reader.txt",
+    "LF_start": 11216,
+    "LF_end": 11216,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LGT",
+    "article": "27",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27",
+    "quote": "1 por ciento más otro 1 por ciento adicional por cada mes completo de retraso con que se presente la autoliquidación o declaración respecto al término del plazo establecido para la presentación e ingreso.",
+    "reader": "sources/LGT.reader.txt",
+    "LF_start": 2209,
+    "LF_end": 2209,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LGT",
+    "article": "27",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27",
+    "quote": "recargo será del 15 por ciento y excluirá las sanciones que hubieran podido exigirse. En estos casos, se exigirán los intereses de demora por el período transcurrido desde el día siguiente al término de los 12 meses posteriores a la finalización del plazo establecido para",
+    "reader": "sources/LGT.reader.txt",
+    "LF_start": 2213,
+    "LF_end": 2213,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LGT",
+    "article": "27",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27",
+    "quote": "se reducirá en el 25 por ciento siempre que se realice el ingreso total del importe restante del recargo en el plazo del apartado 2 del artículo 62 de esta Ley abierto con la notificación de la liquidación de dicho recargo y siempre que se",
+    "reader": "sources/LGT.reader.txt",
+    "LF_start": 2235,
+    "LF_end": 2235,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LGT",
+    "article": "28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28",
+    "quote": "cinco por ciento y se aplicará cuando se satisfaga la totalidad de la deuda no ingresada en periodo voluntario antes de la notificación de la providencia de apremio.",
+    "reader": "sources/LGT.reader.txt",
+    "LF_start": 2276,
+    "LF_end": 2276,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LGT",
+    "article": "28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28",
+    "quote": "10 por ciento y se aplicará cuando se satisfaga la totalidad de la deuda no ingresada en periodo voluntario y el propio recargo antes de la finalización del plazo previsto en el apartado 5 del artículo 62 de esta ley para las deudas apremiadas.",
+    "reader": "sources/LGT.reader.txt",
+    "LF_start": 2278,
+    "LF_end": 2278,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LGT",
+    "article": "28",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28",
+    "quote": "20 por ciento y será aplicable cuando no concurran las circunstancias a las que se refieren los apartados 2 y 3 de este artículo.",
+    "reader": "sources/LGT.reader.txt",
+    "LF_start": 2280,
+    "LF_end": 2280,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LGT",
+    "article": "191",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a191",
+    "quote": "50 por ciento.",
+    "reader": "sources/LGT.reader.txt",
+    "LF_start": 8209,
+    "LF_end": 8209,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LGT",
+    "article": "191",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a191",
+    "quote": "50 al 100 por ciento y se graduará incrementando el porcentaje mínimo conforme a los criterios de comisión repetida de infracciones tributarias y de perjuicio económico para la Hacienda Pública, con los incrementos porcentuales previstos para cada caso en los párrafos a) y b) del",
+    "reader": "sources/LGT.reader.txt",
+    "LF_start": 8223,
+    "LF_end": 8223,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LGT",
+    "article": "191",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a191",
+    "quote": "100 al 150 por ciento y se graduará incrementando el porcentaje mínimo conforme a los criterios de comisión repetida de infracciones tributarias y de perjuicio económico para la Hacienda Pública, con los incrementos porcentuales previstos para cada caso en los párrafos a) y b) del",
+    "reader": "sources/LGT.reader.txt",
+    "LF_start": 8229,
+    "LF_end": 8229,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LGT",
+    "article": "198",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a198",
+    "quote": "fija de 200 euros o, si se trata de declaraciones censales o la relativa a la comunicación de la designación del representante de personas o entidades cuando así lo establezca la normativa, de 400 euros.",
+    "reader": "sources/LGT.reader.txt",
+    "LF_start": 8412,
+    "LF_end": 8412,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LGT",
+    "article": "198",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a198",
+    "quote": "serán la mitad de los previstos en el apartado anterior.",
+    "reader": "sources/LGT.reader.txt",
+    "LF_start": 8416,
+    "LF_end": 8416,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "Interest",
+    "article": null,
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c18-cuota-liquida-resultante-autoliquidacion/incremento-cuotas-liquidas-estatal-autonomica/calculo-intereses-demora/reglas-calculo.html",
+    "quote": "4,0625 por 100.",
+    "reader": "sources/Interest.reader.txt",
+    "LF_start": 110,
+    "LF_end": 110,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "LGT",
+    "article": "26",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a26",
+    "quote": "Interés de demora.",
+    "reader": "sources/LGT.reader.txt",
+    "LF_start": 2136,
+    "LF_end": 2136,
+    "read_on": "2026-10-28"
+  },
+  {
+    "source": "RIRPF",
+    "article": "110.3.c table",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a110",
+    "quote": "Igual o inferior a 9.000\n\n100\n\nEntre 9.000,01 y 10.000\n\n75\n\nEntre 10.000,01 y 11.000\n\n50\n\nEntre 11.000,01 y 12.000\n\n25",
+    "reader": "sources/RIRPF.reader.txt",
+    "LF_start": 6296,
+    "LF_end": 6310,
+    "read_on": "2026-10-28"
+  }
+]

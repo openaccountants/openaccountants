@@ -1,0 +1,938 @@
+{
+  "scope": "Bounded fourGuideandREADME source/calculation/preservation review. Actual13writer+13independentofficialfetches,45independentcontrols/826oldunits/591oldlinks/8unchangedexamples and71rootchecks. Allfivefindingsfixedbeforeapplication. Earlierrejectedcandidatecopiesremainprivate;fullcanonicalGuidesnapshotsomittedfrompublicresearch. Originalprivate/artifactmanifestskeepwiderscope. Rawbyteslosslesslypreservedwithstored/originalhashes;nofullSpainpass,attestation,indexorpackagewrite.",
+  "files": {
+    "es-vat-return.md": {
+      "before_sha256": "074290ea1009163b5480d3ff9ba61ef521ff4487bc1673a852d003b069b4397f",
+      "candidate_sha256": "8f52db66f61f71bea82bc9ffced1c93d3007cb2cafbbf87ac35cfbf39eedde96",
+      "candidate_bytes": 76767
+    },
+    "spain-vat-return.md": {
+      "before_sha256": "8a459ee282c66569cca124ef4b589f486ffcf55069ab5d2dff9994740c684f08",
+      "candidate_sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+      "candidate_bytes": 26446
+    },
+    "es-estimated-tax.md": {
+      "before_sha256": "087e86703a885ddaf0c931261085b42a3b82f86e6bad903d46f40cc60ba83f94",
+      "candidate_sha256": "c92992451eb7ec391e9f5763e5871ba7baffb2c99bd749052f582550ba83bf31",
+      "candidate_bytes": 34585
+    },
+    "es-income-tax.md": {
+      "before_sha256": "1d9320f9ed602e68fc30865b2b4cf1b1091564e6f765c40fd5fe5175907caab1",
+      "candidate_sha256": "5ce82b0e54ba2e1ecc3b13216958e2e763c991028cc6908c9f18f4bb7fd78475",
+      "candidate_bytes": 85291
+    },
+    "README.md": {
+      "before_sha256": "18f77758ef5a3beee9a72e8cedc96379e720cdd04e883f1fc3f9718d166f8fa6",
+      "candidate_sha256": "7cb9e544b2776cb5d284afa905cf84f3bfb6f5c2986422e7f85b159d29fae4cb",
+      "candidate_bytes": 8688
+    }
+  },
+  "omitted_private_snapshots": [
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/before/README.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/before/es-estimated-tax.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/before/es-income-tax.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/before/es-vat-return.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/before/spain-vat-return.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/before-legal-review-fixes/README.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/before-legal-review-fixes/es-estimated-tax.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/before-legal-review-fixes/es-income-tax.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/before-legal-review-fixes/es-vat-return.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/before-legal-review-fixes/spain-vat-return.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/candidates/README.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/candidates/es-estimated-tax.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/candidates/es-income-tax.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/candidates/es-vat-return.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/candidates/spain-vat-return.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/reviewed-candidates/README.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/reviewed-candidates/es-estimated-tax.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/reviewed-candidates/es-income-tax.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/reviewed-candidates/es-vat-return.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/reviewed-candidates/spain-vat-return.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/validation-snapshot/skills/international/spain/es-estimated-tax.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/validation-snapshot/skills/international/spain/es-income-tax.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/validation-snapshot/skills/international/spain/es-vat-return.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/validation-snapshot/skills/international/spain/spain-vat-return.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rejected-spacing-candidates/README.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rejected-spacing-candidates/es-estimated-tax.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rejected-spacing-candidates/es-income-tax.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rejected-spacing-candidates/es-vat-return.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rejected-spacing-candidates/spain-vat-return.md",
+    ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/heading-version-fix/es-income-tax.md"
+  ],
+  "artifacts": [
+    {
+      "path": "ROOT-APPLIED-FREEZE.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/ROOT-APPLIED-FREEZE.json",
+      "bytes": 2027,
+      "sha256": "5bf3903bd2c4b5260b7f6fe72eb6c379f4925117f944080075fb66bc29d71f93",
+      "original_bytes": 2027,
+      "original_sha256": "5bf3903bd2c4b5260b7f6fe72eb6c379f4925117f944080075fb66bc29d71f93",
+      "compression": "none"
+    },
+    {
+      "path": "aeat-april-1-effects.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/aeat-april-1-effects.html",
+      "bytes": 3161,
+      "sha256": "73aa282479f4d0a082b1928cda0aef19e97558549ddf2eeae5b98663be1cc699",
+      "original_bytes": 8944,
+      "original_sha256": "b1a9c75ef2093827d41b6a42805bff4927c7a10897df11d259dc735df5b87aac",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "aeat-april-1-effects.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/aeat-april-1-effects.txt",
+      "bytes": 1365,
+      "sha256": "d06ad66f0cf56eafa11ec00947c2eed88b6d8740187d44aa5faec19ff04dc1f5",
+      "original_bytes": 3724,
+      "original_sha256": "4e120ebdbedc3c97fe416aebab47f5be8b183384e12b54b7e588dec14abe7590",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "aeat-april-9-sii-redeme.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/aeat-april-9-sii-redeme.html",
+      "bytes": 2615,
+      "sha256": "e7fdaba98487508521a592de76be238feb3d21c7d9d52465a7cd1d8ed088ddbd",
+      "original_bytes": 6654,
+      "original_sha256": "195cedcf641c7a4d6a970a77df4cc4b99af35dbface273d8b7486bcb7e17e0a3",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "aeat-april-9-sii-redeme.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/aeat-april-9-sii-redeme.txt",
+      "bytes": 690,
+      "sha256": "21ecbfa56978d5eaabf45714e8ca8e9a8c6841265ea2ff7d25623cdd442de956",
+      "original_bytes": 1360,
+      "original_sha256": "9b1093964947315f9725f4be122cea82f56735627bcf8a8d4a3323a809f69718",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "aeat-irpf-eligibility.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/aeat-irpf-eligibility.html",
+      "bytes": 6156,
+      "sha256": "45fafad6d3e85c6cab070e648b447dd5c951845595fa733cd371b518890dc40d",
+      "original_bytes": 28195,
+      "original_sha256": "11dc81661c100f19bb60488711d6f4b58865eec3e20879d525c5567ecee80f64",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "aeat-irpf-eligibility.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/aeat-irpf-eligibility.txt",
+      "bytes": 2173,
+      "sha256": "d6a21c904f0742815d49d5cc8da2c0ff4c335ee7ded8df14ebdbb7a1c65ad3dd",
+      "original_bytes": 7536,
+      "original_sha256": "b65117cd09d9c357a85bf2d3f9cb1619d2bbe7f1b7184cf72e6590ca5295a1d7",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "aeat-simplified-eligibility.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/aeat-simplified-eligibility.html",
+      "bytes": 5800,
+      "sha256": "d470ee792b14cd63273a07bb07a1bcd1196282bbbf2ea5ab667993b555c20d43",
+      "original_bytes": 26493,
+      "original_sha256": "720a9213071f941bf11ccd7172772dff99a5dda0319d21e62b9a781adc9e1db8",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "aeat-simplified-eligibility.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/aeat-simplified-eligibility.txt",
+      "bytes": 2448,
+      "sha256": "1fd39107fcfb564e0dbaac3473171a2b2001e47c5f095edcfaab115e674a18a6",
+      "original_bytes": 7247,
+      "original_sha256": "caf9f10c98dd15590e6c1b2ffa9bf2e7ed4dba0014fbc06997d6ff4b697fb61c",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "candidate-manifest.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/candidate-manifest.json",
+      "bytes": 1196,
+      "sha256": "17c4b951b404356f9dc3d485e40ecf2c6e340cc41e28a847891d27d18f9425cf",
+      "original_bytes": 1196,
+      "original_sha256": "17c4b951b404356f9dc3d485e40ecf2c6e340cc41e28a847891d27d18f9425cf",
+      "compression": "none"
+    },
+    {
+      "path": "draft-options.md",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/draft-options.md",
+      "bytes": 2171,
+      "sha256": "9f4d921e6dfda0a772c4edf9edbb0989adcc4ed43302cef6fa5b7e834ca7ab70",
+      "original_bytes": 2171,
+      "original_sha256": "9f4d921e6dfda0a772c4edf9edbb0989adcc4ed43302cef6fa5b7e834ca7ab70",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/README.md.diff.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/README.md.diff",
+      "bytes": 953,
+      "sha256": "b553d62f199ade92392451305abed1672a0f46bcde37da059d3a363a4a730228",
+      "original_bytes": 2389,
+      "original_sha256": "26d4b955a34e40131a39a010a11867baf63bf2ba9adc6365e2bf9e7768da36c5",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/all-url-occurrence-ledger.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/all-url-occurrence-ledger.json",
+      "bytes": 46354,
+      "sha256": "0c20c2e6123883c73e47d3746d123a5f3947a0565441563aa522ab98309e6432",
+      "original_bytes": 46354,
+      "original_sha256": "0c20c2e6123883c73e47d3746d123a5f3947a0565441563aa522ab98309e6432",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/controls.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/controls.json",
+      "bytes": 8200,
+      "sha256": "e35e358bfb12a3ee1df33ceb6222c3692ee8bbb5031fee64403958c789c2f807",
+      "original_bytes": 8200,
+      "original_sha256": "e35e358bfb12a3ee1df33ceb6222c3692ee8bbb5031fee64403958c789c2f807",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/es-estimated-tax.md.diff.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/es-estimated-tax.md.diff",
+      "bytes": 4050,
+      "sha256": "277ef88de85e39c40f992acb3ba8a9a78061494f6cd586fbfcbf949d2bfc742c",
+      "original_bytes": 12243,
+      "original_sha256": "5275a80573d4c5f0f4e2de1f49c35e71fc6dc359f93acf5df11153f60f575faf",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/es-income-tax.md.diff.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/es-income-tax.md.diff",
+      "bytes": 2119,
+      "sha256": "a867a531325d001425e33a4de947caf8790e0a1607333eedd1401c81f76f2e85",
+      "original_bytes": 5467,
+      "original_sha256": "f65b74b2327f2e328b4344a88f8c2979b5f67c555d267522bd5d9615b4293fb8",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/es-vat-return.md.diff.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/es-vat-return.md.diff",
+      "bytes": 4185,
+      "sha256": "b47c18383a15b6c00d0cb80c25cb3c4c6313b389a31f9af980475b0cfe562995",
+      "original_bytes": 11518,
+      "original_sha256": "007d31f23cee6fabe460226470c172cd6198c2dfeb89291f8b36df1eae1a4445",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/findings-open.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/findings-open.json",
+      "bytes": 812,
+      "sha256": "a90b6149b5e4d6faf5df31f634a61e5a99531440e843e4268b15e07e0e749ed1",
+      "original_bytes": 812,
+      "original_sha256": "a90b6149b5e4d6faf5df31f634a61e5a99531440e843e4268b15e07e0e749ed1",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/findings.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/findings.json",
+      "bytes": 1148,
+      "sha256": "ffddd5c310002be06422743931f29c73711e788ed676009c680ce703b5a0e835",
+      "original_bytes": 1148,
+      "original_sha256": "ffddd5c310002be06422743931f29c73711e788ed676009c680ce703b5a0e835",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/aeat-april-1-effects-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/aeat-april-1-effects-receipt.json",
+      "bytes": 524,
+      "sha256": "6bbde911a44212f02dd3acaa699cd63d95b851dbe1d049a370e75311fe577245",
+      "original_bytes": 524,
+      "original_sha256": "6bbde911a44212f02dd3acaa699cd63d95b851dbe1d049a370e75311fe577245",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/aeat-april-1-effects.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/aeat-april-1-effects.html",
+      "bytes": 3161,
+      "sha256": "73aa282479f4d0a082b1928cda0aef19e97558549ddf2eeae5b98663be1cc699",
+      "original_bytes": 8944,
+      "original_sha256": "b1a9c75ef2093827d41b6a42805bff4927c7a10897df11d259dc735df5b87aac",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/fresh-sources/aeat-april-9-sii-redeme-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/aeat-april-9-sii-redeme-receipt.json",
+      "bytes": 525,
+      "sha256": "8fbae02e3c5b830cd722ee50833fb4843d44fa54e18d5ea4d31cd7381aab0afc",
+      "original_bytes": 525,
+      "original_sha256": "8fbae02e3c5b830cd722ee50833fb4843d44fa54e18d5ea4d31cd7381aab0afc",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/aeat-april-9-sii-redeme.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/aeat-april-9-sii-redeme.html",
+      "bytes": 2615,
+      "sha256": "e7fdaba98487508521a592de76be238feb3d21c7d9d52465a7cd1d8ed088ddbd",
+      "original_bytes": 6654,
+      "original_sha256": "195cedcf641c7a4d6a970a77df4cc4b99af35dbface273d8b7486bcb7e17e0a3",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/fresh-sources/aeat-irpf-eligibility-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/aeat-irpf-eligibility-receipt.json",
+      "bytes": 546,
+      "sha256": "655940cd3b061f3035ebd5c351c0aa08c7b4795a7d0829cd0ef1af9f3184d5e8",
+      "original_bytes": 546,
+      "original_sha256": "655940cd3b061f3035ebd5c351c0aa08c7b4795a7d0829cd0ef1af9f3184d5e8",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/aeat-irpf-eligibility.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/aeat-irpf-eligibility.html",
+      "bytes": 6156,
+      "sha256": "45fafad6d3e85c6cab070e648b447dd5c951845595fa733cd371b518890dc40d",
+      "original_bytes": 28195,
+      "original_sha256": "11dc81661c100f19bb60488711d6f4b58865eec3e20879d525c5567ecee80f64",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/fresh-sources/aeat-simplified-eligibility-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/aeat-simplified-eligibility-receipt.json",
+      "bytes": 562,
+      "sha256": "a29a75de45b8fceee7cd3b8cf8c2597a075b2c688bdfd1fb9321226c6028cc54",
+      "original_bytes": 562,
+      "original_sha256": "a29a75de45b8fceee7cd3b8cf8c2597a075b2c688bdfd1fb9321226c6028cc54",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/aeat-simplified-eligibility.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/aeat-simplified-eligibility.html",
+      "bytes": 5800,
+      "sha256": "d470ee792b14cd63273a07bb07a1bcd1196282bbbf2ea5ab667993b555c20d43",
+      "original_bytes": 26493,
+      "original_sha256": "720a9213071f941bf11ccd7172772dff99a5dda0319d21e62b9a781adc9e1db8",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/fresh-sources/leta-rirpf-current-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/leta-rirpf-current-receipt.json",
+      "bytes": 404,
+      "sha256": "a8c619d071b44b425dd59e39ac15ca753c4d11ac608f0ecc818c8791bdd8e2b4",
+      "original_bytes": 404,
+      "original_sha256": "a8c619d071b44b425dd59e39ac15ca753c4d11ac608f0ecc818c8791bdd8e2b4",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/leta-rirpf-current.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/leta-rirpf-current.html",
+      "bytes": 137311,
+      "sha256": "20e95bbca83110eeb2ccc894414b96aea27111d11799074a1fedc7eb55384daf",
+      "original_bytes": 1000017,
+      "original_sha256": "02c057946e8a48912089d42621b65d0944c2ec366a060b6e70620a99a4d4b63f",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/fresh-sources/lirpf-current-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/lirpf-current-receipt.json",
+      "bytes": 401,
+      "sha256": "e9f074154699766892c53b8748b52dcfdbc2e9503b195ad95f38e1d1d8cdbb62",
+      "original_bytes": 401,
+      "original_sha256": "e9f074154699766892c53b8748b52dcfdbc2e9503b195ad95f38e1d1d8cdbb62",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/lirpf-current.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/lirpf-current.html",
+      "bytes": 249841,
+      "sha256": "4c0577bbc17fccbd738a6675d0e0d99415de9c3938c2390cd85528289bbc6090",
+      "original_bytes": 2028806,
+      "original_sha256": "83c676e483981c4968dd1f0743631a822713ef146780db89f65593df232a385f",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/fresh-sources/liva-current-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/liva-current-receipt.json",
+      "bytes": 400,
+      "sha256": "ac1e3b8fa0f39521d39b6f6316ed59869e2484d6654fc7496935436fa1a274c9",
+      "original_bytes": 400,
+      "original_sha256": "ac1e3b8fa0f39521d39b6f6316ed59869e2484d6654fc7496935436fa1a274c9",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/liva-current.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/liva-current.html",
+      "bytes": 219148,
+      "sha256": "c83c30b25746dbbc43524aeb139a8a39353496c5b1ebcc6a72bc351ec1ecc821",
+      "original_bytes": 1769465,
+      "original_sha256": "d2eeb32b44d5ea21d551c8580da10dce6d0fdd602e1fb6b69aa7ae0d5a6c7996",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/fresh-sources/module-order-2026-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/module-order-2026-receipt.json",
+      "bytes": 404,
+      "sha256": "19281ec94ebb01729cc0f824ed348c9330790444e6f6cfc6573db3c174af59d7",
+      "original_bytes": 404,
+      "original_sha256": "19281ec94ebb01729cc0f824ed348c9330790444e6f6cfc6573db3c174af59d7",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/module-order-2026.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/module-order-2026.html",
+      "bytes": 51389,
+      "sha256": "c1d9b0157028fc49a017ca79cb3486e12e2793c2a9296e7929ad47f30c794fe9",
+      "original_bytes": 442076,
+      "original_sha256": "23a4fce0cac41f91d7065dcf1e097109a132077f5af4da4e4f87fb2ea9e3b625",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/fresh-sources/rdl-16-2025-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/rdl-16-2025-receipt.json",
+      "bytes": 398,
+      "sha256": "365d940d210913df905b3956ac3b34e62cef050c1e96ae49a0c9c982f46d29df",
+      "original_bytes": 398,
+      "original_sha256": "365d940d210913df905b3956ac3b34e62cef050c1e96ae49a0c9c982f46d29df",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/rdl-16-2025-repeal-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/rdl-16-2025-repeal-receipt.json",
+      "bytes": 410,
+      "sha256": "b34b05871e6009ee9e3faa41b41eeac9ff7f600056f81d59638361c4842e229f",
+      "original_bytes": 410,
+      "original_sha256": "b34b05871e6009ee9e3faa41b41eeac9ff7f600056f81d59638361c4842e229f",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/rdl-16-2025-repeal.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/rdl-16-2025-repeal.html",
+      "bytes": 6370,
+      "sha256": "3626bfffc0f2b8bf40b620049f86704f9e188cbffcde25e24ab09524ed764b31",
+      "original_bytes": 41707,
+      "original_sha256": "f85190bfe1c236424a23458d0b1701d691a22fceccb0b3a4be3887eba5d75538",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/fresh-sources/rdl-16-2025.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/rdl-16-2025.html",
+      "bytes": 73157,
+      "sha256": "be9e05dab2b5024e302f24852cd5f85510a19dd576d78011c46f9983966732a3",
+      "original_bytes": 416716,
+      "original_sha256": "e08a312afdac7d10c582d181868f022e76cc64ac90c1a7a411a6b5f3394feace",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/fresh-sources/rdl-2-2026-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/rdl-2-2026-receipt.json",
+      "bytes": 396,
+      "sha256": "f3db979b0236c3b9a965ccf3afccff01845b3824026772fb4d9ed34987691e84",
+      "original_bytes": 396,
+      "original_sha256": "f3db979b0236c3b9a965ccf3afccff01845b3824026772fb4d9ed34987691e84",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/rdl-2-2026-repeal-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/rdl-2-2026-repeal-receipt.json",
+      "bytes": 409,
+      "sha256": "cb8902379e31e7dc597eb37ace3b49e6ea6a8b670372c9e23282294b4d6ddead",
+      "original_bytes": 409,
+      "original_sha256": "cb8902379e31e7dc597eb37ace3b49e6ea6a8b670372c9e23282294b4d6ddead",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/rdl-2-2026-repeal.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/rdl-2-2026-repeal.html",
+      "bytes": 5804,
+      "sha256": "b2347b0024d36992e145d72d616cb6b381b5f29a718d3564809febe816710b58",
+      "original_bytes": 37233,
+      "original_sha256": "2df30e4cb7fa07b2baf1e324a9a9e3aa8a6a8afa6a9f0dfcbc3f8dd6c176e761",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/fresh-sources/rdl-2-2026.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/rdl-2-2026.html",
+      "bytes": 50522,
+      "sha256": "e9d9b336ec9f912d6e383b2c7e231a9aa3b08f38ba0d1c6fe5980621d289535b",
+      "original_bytes": 260662,
+      "original_sha256": "3305d6098ae1986112a3849791d1bd9fce6c0e9662130d971f287cab53bf3e43",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/fresh-sources/receipts.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/receipts.json",
+      "bytes": 6093,
+      "sha256": "8212a34c50e3b0eb447600f4a9f9d9b4f1f80dc983606482351c16491095d9bc",
+      "original_bytes": 6093,
+      "original_sha256": "8212a34c50e3b0eb447600f4a9f9d9b4f1f80dc983606482351c16491095d9bc",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/riva-current-receipt.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/riva-current-receipt.json",
+      "bytes": 400,
+      "sha256": "d5db78778a72fe69d89420359c1b64b91e471ac14168472fb3ef67553bdd0eac",
+      "original_bytes": 400,
+      "original_sha256": "d5db78778a72fe69d89420359c1b64b91e471ac14168472fb3ef67553bdd0eac",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/fresh-sources/riva-current.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/fresh-sources/riva-current.html",
+      "bytes": 125316,
+      "sha256": "dd8eeb14f762a02e20619b9aeac3f5ac0ec9717cb86075937f2f128862e131e5",
+      "original_bytes": 1052204,
+      "original_sha256": "ffdb577dd0dc7f7d9cbc769d29acf84b36b2caa73b9863aad9d9932e4ea53ccd",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/frozen-manifest.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/frozen-manifest.json",
+      "bytes": 11994,
+      "sha256": "9e1c20fc72569540091975a53fa737c81ba77cd103395e0ea1428b99376f393a",
+      "original_bytes": 11994,
+      "original_sha256": "9e1c20fc72569540091975a53fa737c81ba77cd103395e0ea1428b99376f393a",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/leta-rirpf-current-coordination.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/leta-rirpf-current-coordination.txt",
+      "bytes": 2195,
+      "sha256": "61b3eb3740a91dfb0a7c46876f1da23fda5b099bc04c64d87ed99fcc565b1596",
+      "original_bytes": 7265,
+      "original_sha256": "732322fd09cf2936371ffd0288fac2fabeae889328d43b6a93a9027cf87ddd85",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/leta-rirpf-current-operative.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/leta-rirpf-current-operative.txt",
+      "bytes": 1761,
+      "sha256": "849dc37c1e5aebb5c57ec926858726a7f6ddb66c0110097bc771b740a02232ed",
+      "original_bytes": 7181,
+      "original_sha256": "ca5c77e573731f67b0be078cdb784f86ad92a6f9be95472c45d152f5a7d58f3e",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/lirpf-current-operative.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/lirpf-current-operative.txt",
+      "bytes": 3091,
+      "sha256": "fb9e793953073c796b67d26e212dabfa846d6758c86a7b668366ba06a593f1dd",
+      "original_bytes": 12405,
+      "original_sha256": "cac4876ab68722c7ebae726d5057122b073235945d5f1b3d3f6a99155a9a1986",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/liva-current-operative.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/liva-current-operative.txt",
+      "bytes": 2225,
+      "sha256": "b69fcde3a0ca75975e23a8ad35688f93ed0af8a281cfe8954f2abf18776662f0",
+      "original_bytes": 9198,
+      "original_sha256": "efff3652cb9e37844816b5c1a04011df123ee4ce66ca4c42e0b817672efbdc77",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/live-read-only-check.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/live-read-only-check.json",
+      "bytes": 801,
+      "sha256": "f63cb7c31e91123feeb3e621e3ee88850da7b1a34451616cc6e68b7796410687",
+      "original_bytes": 801,
+      "original_sha256": "f63cb7c31e91123feeb3e621e3ee88850da7b1a34451616cc6e68b7796410687",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/module-order-2026-operative.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/module-order-2026-operative.txt",
+      "bytes": 6013,
+      "sha256": "9de476ffd82963d31e0df4a802dc6b6cb6c7a3fb22fca348bd4f5386f6f218f1",
+      "original_bytes": 27720,
+      "original_sha256": "d6909d3427437a7e8829d2d1e22f162c6a5e0345d8e688fca30e739fa4c16271",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/oa-run.log",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/oa-run.log",
+      "bytes": 58,
+      "sha256": "4a1a9e5e70a7e517eb701e76c2e765fa6458a068970247f5402d60c68d3bb00a",
+      "original_bytes": 58,
+      "original_sha256": "4a1a9e5e70a7e517eb701e76c2e765fa6458a068970247f5402d60c68d3bb00a",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/preservation-controls.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/preservation-controls.json",
+      "bytes": 1696,
+      "sha256": "a9a75d4de2b51d555472bdcc334f356ffddc38185990878ec5b65da54ec42f85",
+      "original_bytes": 1696,
+      "original_sha256": "a9a75d4de2b51d555472bdcc334f356ffddc38185990878ec5b65da54ec42f85",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/rdl-16-2025-operative.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/rdl-16-2025-operative.txt",
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "original_bytes": 0,
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/rdl-2-2026-operative.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/rdl-2-2026-operative.txt",
+      "bytes": 1684,
+      "sha256": "86ba889c72ab3d78c242a8aceaa1cecffe662f1908c5ff4b248588f295527fe2",
+      "original_bytes": 4172,
+      "original_sha256": "828d737e453f2f23108079133e719bcd7c4ed0eb01efe7c17d3b3e61de2bded0",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/report.md",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/report.md",
+      "bytes": 6750,
+      "sha256": "1e3a8e7ed8ffc021a70c29634e7632324b5e90174cc1b353703d692d0ac47063",
+      "original_bytes": 6750,
+      "original_sha256": "1e3a8e7ed8ffc021a70c29634e7632324b5e90174cc1b353703d692d0ac47063",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/review-controls.py",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/review-controls.py",
+      "bytes": 8362,
+      "sha256": "65c8ed93e0f643e47d0d1fe61592154a55f3ccca5ed28d13820fa85f5f60e489",
+      "original_bytes": 8362,
+      "original_sha256": "65c8ed93e0f643e47d0d1fe61592154a55f3ccca5ed28d13820fa85f5f60e489",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/riva-current-coordination.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/riva-current-coordination.txt",
+      "bytes": 754,
+      "sha256": "b6a34d9f5966791798bc93859f8fb1e258b024b466a13ac799ecd580b72c9e26",
+      "original_bytes": 1590,
+      "original_sha256": "6d9c58c9b3508cdd95d379d40a98f153c00b5a6768b6f200e78f11f974702422",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/riva-current-operative.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/riva-current-operative.txt",
+      "bytes": 3649,
+      "sha256": "11a913c49e43d3138f158e864868f0f60ed4c94b0bdaec7e0eb9e0546e3d6b0e",
+      "original_bytes": 16235,
+      "original_sha256": "8f2b437833d289bff7d39cb044711d2f7a5db500f6827f0f56c7ce92627f906d",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/source-read-receipts.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/source-read-receipts.json",
+      "bytes": 1518,
+      "sha256": "bd2ed85168183f6f662f68158bbe42882433f9df7935876882434448413e7b24",
+      "original_bytes": 1518,
+      "original_sha256": "bd2ed85168183f6f662f68158bbe42882433f9df7935876882434448413e7b24",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/source-scope-assessment.md",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/source-scope-assessment.md",
+      "bytes": 3055,
+      "sha256": "fb3bbf0a7d7d24281b9e3bc9cf691dec2fc42fdba844d5481f9cff7eff8426a1",
+      "original_bytes": 3055,
+      "original_sha256": "fb3bbf0a7d7d24281b9e3bc9cf691dec2fc42fdba844d5481f9cff7eff8426a1",
+      "compression": "none"
+    },
+    {
+      "path": "independent-review/spain-vat-return.md.diff.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/spain-vat-return.md.diff",
+      "bytes": 2616,
+      "sha256": "bcf12417f73b1b73f1251c71bdf274f0930fa70f8c6ecc24083bf3c4caa2b048",
+      "original_bytes": 6324,
+      "original_sha256": "c97ed6d9b5932928c7f8a4d06e98d0e094cac3157549f93abcb587f10eb179ef",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/unit-preservation-ledger.json.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/unit-preservation-ledger.json",
+      "bytes": 71868,
+      "sha256": "13e45db3508f52bbe729a50273e5ae2e87f12a2589eeb4ff788fea279285df36",
+      "original_bytes": 280412,
+      "original_sha256": "5b914d0264ef22f7f89d1003e5beceb50304c62830f21baa7e59beb0ab427a4b",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "independent-review/validation.log",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/independent-review/validation.log",
+      "bytes": 233,
+      "sha256": "fe163278ff1eb2763eea2f187294de83541bfb6821e6bd1ee41d391817d48537",
+      "original_bytes": 233,
+      "original_sha256": "fe163278ff1eb2763eea2f187294de83541bfb6821e6bd1ee41d391817d48537",
+      "compression": "none"
+    },
+    {
+      "path": "leta-rirpf-current.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/leta-rirpf-current.html",
+      "bytes": 137311,
+      "sha256": "20e95bbca83110eeb2ccc894414b96aea27111d11799074a1fedc7eb55384daf",
+      "original_bytes": 1000017,
+      "original_sha256": "02c057946e8a48912089d42621b65d0944c2ec366a060b6e70620a99a4d4b63f",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "leta-rirpf-current.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/leta-rirpf-current.txt",
+      "bytes": 106552,
+      "sha256": "04d456399ebc76702257630724ba041169a65f0f39ff37b53d64ae3d7cf75714",
+      "original_bytes": 499773,
+      "original_sha256": "1c3de6d9cc86a79934d9345034c81b96953f585620f5c7fb92001ef4584c5450",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "lirpf-current.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/lirpf-current.html",
+      "bytes": 249841,
+      "sha256": "4c0577bbc17fccbd738a6675d0e0d99415de9c3938c2390cd85528289bbc6090",
+      "original_bytes": 2028806,
+      "original_sha256": "83c676e483981c4968dd1f0743631a822713ef146780db89f65593df232a385f",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "lirpf-current.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/lirpf-current.txt",
+      "bytes": 188239,
+      "sha256": "476ab65c19b875808273a897ae5be6a4b9fed8170a4799c898b8034d8a915675",
+      "original_bytes": 900903,
+      "original_sha256": "c234f137daa0ea8053dd201d7c0eed3242853d7f23b207b7279b128b1663af6d",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "liva-current.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/liva-current.html",
+      "bytes": 219148,
+      "sha256": "c83c30b25746dbbc43524aeb139a8a39353496c5b1ebcc6a72bc351ec1ecc821",
+      "original_bytes": 1769465,
+      "original_sha256": "d2eeb32b44d5ea21d551c8580da10dce6d0fdd602e1fb6b69aa7ae0d5a6c7996",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "liva-current.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/liva-current.txt",
+      "bytes": 162539,
+      "sha256": "933fd7472070479b847bac23cb7354e4523511c9ad56c8e94d20f628e95ce39c",
+      "original_bytes": 766220,
+      "original_sha256": "e153ae71b8b80d36324f33434d8923dfcf206b6ba32fb780facd13c3e59ed404",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "module-order-2026.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/module-order-2026.html",
+      "bytes": 51389,
+      "sha256": "c1d9b0157028fc49a017ca79cb3486e12e2793c2a9296e7929ad47f30c794fe9",
+      "original_bytes": 442076,
+      "original_sha256": "23a4fce0cac41f91d7065dcf1e097109a132077f5af4da4e4f87fb2ea9e3b625",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "module-order-2026.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/module-order-2026.txt",
+      "bytes": 38291,
+      "sha256": "db2871a28d169736f50970aa21b5fc529f8313c6accb5df9801ebf044b51026d",
+      "original_bytes": 205363,
+      "original_sha256": "b7ddd52271cd5faff9cc064c8d5fd6d9a39e7eb45e1e544a56ab633a350a16ab",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "rdl-16-2025-repeal.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rdl-16-2025-repeal.html",
+      "bytes": 6370,
+      "sha256": "3626bfffc0f2b8bf40b620049f86704f9e188cbffcde25e24ab09524ed764b31",
+      "original_bytes": 41707,
+      "original_sha256": "f85190bfe1c236424a23458d0b1701d691a22fceccb0b3a4be3887eba5d75538",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "rdl-16-2025-repeal.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rdl-16-2025-repeal.txt",
+      "bytes": 2442,
+      "sha256": "1cb7442111cec4d4a3999e359cba91a0698e77384f4b2f1937e43f8241d5464b",
+      "original_bytes": 6857,
+      "original_sha256": "969fa38e7bceb74fc681f8f0badf95fb9d69ad177c35ea7e0d4c9ac2571580a8",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "rdl-16-2025.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rdl-16-2025.html",
+      "bytes": 73157,
+      "sha256": "be9e05dab2b5024e302f24852cd5f85510a19dd576d78011c46f9983966732a3",
+      "original_bytes": 416716,
+      "original_sha256": "e08a312afdac7d10c582d181868f022e76cc64ac90c1a7a411a6b5f3394feace",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "rdl-16-2025.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rdl-16-2025.txt",
+      "bytes": 59456,
+      "sha256": "b872cc69632dcfd952ba13ce81296d8ea51749c3286aa384b8d28e54575ae60c",
+      "original_bytes": 226421,
+      "original_sha256": "46b837d4d0b6243abbc115c598ee20a76bfad23c750b430eebc4418a3dc0c9f0",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "rdl-2-2026-repeal.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rdl-2-2026-repeal.html",
+      "bytes": 5804,
+      "sha256": "b2347b0024d36992e145d72d616cb6b381b5f29a718d3564809febe816710b58",
+      "original_bytes": 37233,
+      "original_sha256": "2df30e4cb7fa07b2baf1e324a9a9e3aa8a6a8afa6a9f0dfcbc3f8dd6c176e761",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "rdl-2-2026-repeal.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rdl-2-2026-repeal.txt",
+      "bytes": 1985,
+      "sha256": "a3464abd7594af3e6225046d0841219e16deba3021cd0b8a5f2ba697d7978ce8",
+      "original_bytes": 5148,
+      "original_sha256": "1944e1e577c555d0533d3b5974499185a330789217f6d90910da66b24086ed16",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "rdl-2-2026.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rdl-2-2026.html",
+      "bytes": 50519,
+      "sha256": "80aabdbb2ccf835edf1211cea0a25b2b978e22d3091bf8e499fc3273adddad7f",
+      "original_bytes": 260661,
+      "original_sha256": "ba535742558e3a399ef96e41a0bb44c1eb1748005e746327505fa698cd500b55",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "rdl-2-2026.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/rdl-2-2026.txt",
+      "bytes": 40966,
+      "sha256": "3c2b7ae3b9c2dd1065c793643adc509df9954aeb3f84c54d6e475e9bb9faf7e6",
+      "original_bytes": 158877,
+      "original_sha256": "8c8714efc3701f4c659856a6e6d32695f328668517af89c3a942bb9c80a59eaf",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "riva-current.html.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/riva-current.html",
+      "bytes": 125316,
+      "sha256": "dd8eeb14f762a02e20619b9aeac3f5ac0ec9717cb86075937f2f128862e131e5",
+      "original_bytes": 1052204,
+      "original_sha256": "ffdb577dd0dc7f7d9cbc769d29acf84b36b2caa73b9863aad9d9932e4ea53ccd",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "riva-current.txt.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/riva-current.txt",
+      "bytes": 91575,
+      "sha256": "5b08f747f86a93f319e6160132953dc2c917a35e657b4eb9de76d11861764c8e",
+      "original_bytes": 454459,
+      "original_sha256": "1d187f1b10ede9343c017ee61362ba2a5ee7c6455ae8ad4ea5856b569c263e10",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "root-final-controls.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/root-final-controls.json",
+      "bytes": 5524,
+      "sha256": "90db6db73e8e4fa94aa5bd8af3dba93a2790d3049d58afb72e02cebe5b6a320b",
+      "original_bytes": 5524,
+      "original_sha256": "90db6db73e8e4fa94aa5bd8af3dba93a2790d3049d58afb72e02cebe5b6a320b",
+      "compression": "none"
+    },
+    {
+      "path": "source-receipts.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/source-receipts.json",
+      "bytes": 6413,
+      "sha256": "edb7fa7dabd145949f6de9fbde76f4a38ab28a033b164f634464077537529380",
+      "original_bytes": 6413,
+      "original_sha256": "edb7fa7dabd145949f6de9fbde76f4a38ab28a033b164f634464077537529380",
+      "compression": "none"
+    },
+    {
+      "path": "writer-controls.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/writer-controls.json",
+      "bytes": 1943,
+      "sha256": "bfa64462663e06fb5d5fabc2e5e697ec154ea63c42832e9294f48c7765e8c506",
+      "original_bytes": 1943,
+      "original_sha256": "bfa64462663e06fb5d5fabc2e5e697ec154ea63c42832e9294f48c7765e8c506",
+      "compression": "none"
+    },
+    {
+      "path": "heading-version-fix/independent-controls.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/heading-version-fix/independent-controls.json",
+      "bytes": 596,
+      "sha256": "8e9516ea7311e34955a20e9e12b37e00fb4faf99e98b326e7467e19b29dde7bc",
+      "original_bytes": 596,
+      "original_sha256": "8e9516ea7311e34955a20e9e12b37e00fb4faf99e98b326e7467e19b29dde7bc",
+      "compression": "none"
+    },
+    {
+      "path": "heading-version-fix/independent-frozen-manifest.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/heading-version-fix/independent-frozen-manifest.json",
+      "bytes": 1164,
+      "sha256": "00b0a2b8dae20069a669f2ff192588bab771c65fd5bd054aa3bb503ed9d4455b",
+      "original_bytes": 1164,
+      "original_sha256": "00b0a2b8dae20069a669f2ff192588bab771c65fd5bd054aa3bb503ed9d4455b",
+      "compression": "none"
+    },
+    {
+      "path": "heading-version-fix/independent-heading.diff.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/heading-version-fix/independent-heading.diff",
+      "bytes": 349,
+      "sha256": "6d6fe0ff970bac82e11865e3dabe75868bf59a2fbdd6c2d8b21babcf8bfc426b",
+      "original_bytes": 565,
+      "original_sha256": "5340cdbafe9c7b91e04bbb3488bde767ed526a3dbeeb5caeda37f86959707b76",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "heading-version-fix/independent-oa.log.gz",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/heading-version-fix/independent-oa.log",
+      "bytes": 71,
+      "sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256",
+      "original_bytes": 58,
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "compression": "lossless gzip"
+    },
+    {
+      "path": "heading-version-fix/independent-report.md",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/heading-version-fix/independent-report.md",
+      "bytes": 1346,
+      "sha256": "248bb3e5aa2a04e7a10f75647417c5431a86786ebb2ee0747c7316f280b1ad47",
+      "original_bytes": 1346,
+      "original_sha256": "248bb3e5aa2a04e7a10f75647417c5431a86786ebb2ee0747c7316f280b1ad47",
+      "compression": "none"
+    },
+    {
+      "path": "heading-version-fix/options.md",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/heading-version-fix/options.md",
+      "bytes": 532,
+      "sha256": "7ac6f618cf62491312ee0c71e19078e83e366eb9e2ca8b94b3f1d7c400f22a1f",
+      "original_bytes": 532,
+      "original_sha256": "7ac6f618cf62491312ee0c71e19078e83e366eb9e2ca8b94b3f1d7c400f22a1f",
+      "compression": "none"
+    },
+    {
+      "path": "heading-version-fix/proposed-hash.json",
+      "source_private_path": ".claude/worktrees/europe-evidence/spain/review/simplified-2026-administrative-bridge/heading-version-fix/proposed-hash.json",
+      "bytes": 280,
+      "sha256": "667eb1bfac3ceb4a3b048393ca5aff5a9eeb211bea896340418ad46c55745cf3",
+      "original_bytes": 280,
+      "original_sha256": "667eb1bfac3ceb4a3b048393ca5aff5a9eeb211bea896340418ad46c55745cf3",
+      "compression": "none"
+    }
+  ],
+  "final_files": {
+    "es-vat-return.md": {
+      "before_sha256": "074290ea1009163b5480d3ff9ba61ef521ff4487bc1673a852d003b069b4397f",
+      "candidate_sha256": "8f52db66f61f71bea82bc9ffced1c93d3007cb2cafbbf87ac35cfbf39eedde96",
+      "candidate_bytes": 76767
+    },
+    "spain-vat-return.md": {
+      "before_sha256": "8a459ee282c66569cca124ef4b589f486ffcf55069ab5d2dff9994740c684f08",
+      "candidate_sha256": "f8db2286fa5309185afe86e3a988a698eac2d5508afe66dd1e771e89440d9977",
+      "candidate_bytes": 26446
+    },
+    "es-estimated-tax.md": {
+      "before_sha256": "087e86703a885ddaf0c931261085b42a3b82f86e6bad903d46f40cc60ba83f94",
+      "candidate_sha256": "c92992451eb7ec391e9f5763e5871ba7baffb2c99bd749052f582550ba83bf31",
+      "candidate_bytes": 34585
+    },
+    "es-income-tax.md": {
+      "before_sha256": "1d9320f9ed602e68fc30865b2b4cf1b1091564e6f765c40fd5fe5175907caab1",
+      "candidate_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+      "candidate_bytes": 85291
+    },
+    "README.md": {
+      "before_sha256": "18f77758ef5a3beee9a72e8cedc96379e720cdd04e883f1fc3f9718d166f8fa6",
+      "candidate_sha256": "7cb9e544b2776cb5d284afa905cf84f3bfb6f5c2986422e7f85b159d29fae4cb",
+      "candidate_bytes": 8688
+    }
+  },
+  "final_heading_closure": "heading-version-fix/independent-report.md; first bounded review missed H1v2.1/frontmatter2.2; rootstrictcheckfailed, then separately reviewed H1-only correction passed. Originalreview/candidateartifactsretainoldhistoricalscope."
+}

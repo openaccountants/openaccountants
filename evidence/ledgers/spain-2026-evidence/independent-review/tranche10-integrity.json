@@ -1,0 +1,315 @@
+{
+  "identities": [
+    {
+      "path": "sources/LIS.body",
+      "sha256": "fbb1ac8cfc81eedcb6ecdf492ba84d42654d06ff8cdf112ec3e9c196fe0fc295",
+      "pass": true
+    },
+    {
+      "path": "sources/LIS.reader.txt",
+      "sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+      "pass": true
+    },
+    {
+      "path": "sources/LISold.body",
+      "sha256": "da6fd204a575185a7c104e90bf84801b26848799ec6d2628f7f4d3dfd6130196",
+      "pass": true
+    },
+    {
+      "path": "sources/LISold.reader.txt",
+      "sha256": "a212aa88bd9f572010da55ba003ad0e9b11a5adcb7850ec0349b9613455afa20",
+      "pass": true
+    },
+    {
+      "path": "sources/CeutaAct.body",
+      "sha256": "b08a83d6fefe82e96b226517de62d112ac88cd7f2ae36f079c50f053c57c9a7d",
+      "pass": true
+    },
+    {
+      "path": "sources/CeutaAct.reader.txt",
+      "sha256": "df275d5b9fbb2616ff2bcecda4c2f78db31225c6c189c25a6ac54325b9465596",
+      "pass": true
+    },
+    {
+      "path": "sources/Form202.body",
+      "sha256": "871dadcd4bec80ba651709c85397ff78252ae353ea635d67870779fe6a27849e",
+      "pass": true
+    },
+    {
+      "path": "sources/Form202.reader.txt",
+      "sha256": "885a95dce4f8495286573ec9c4ce723acfd6c812646b09b1faebd83b1cac3035",
+      "pass": true
+    },
+    {
+      "path": "sources/Donations.body",
+      "sha256": "b3e548033e26a14b3171f087f61b2c347598ffc847ce2af65cfc95a9af743b00",
+      "pass": true
+    },
+    {
+      "path": "sources/Donations.reader.txt",
+      "sha256": "6584403e01d6542eb7f398af6a906bacd908383c65f383c4152d25f092cadbd0",
+      "pass": true
+    },
+    {
+      "path": "sources/ZEC.body",
+      "sha256": "6fbd19ab8c395480feec524478e4cb966cca07ea2a2fda85e4688aba531da15b",
+      "pass": true
+    },
+    {
+      "path": "sources/ZEC.reader.txt",
+      "sha256": "97a8749bf046173302b111e1c6e8bffa39334ce0b20f4e317315f92b5e4ada37",
+      "pass": true
+    },
+    {
+      "path": "sources/TPForm.body",
+      "sha256": "257dea7721386a8b262da99b2667aa3c63e1dd9635737d7c29c0817aa5d5d18f",
+      "pass": true
+    },
+    {
+      "path": "sources/TPForm.reader.txt",
+      "sha256": "88e333858bddba9320a03710dfa12dd8f69073d815a556dc284f0cb36f1f07b0",
+      "pass": true
+    },
+    {
+      "path": "sources/LGT.body",
+      "sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+      "pass": true
+    },
+    {
+      "path": "sources/LGT.reader.txt",
+      "sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "pass": true
+    },
+    {
+      "path": "sources/Interest.body",
+      "sha256": "82e6361eaa2ff19ce4fb5defb77f7cf7bd16fe327aaff702931bfc733d265dbe",
+      "pass": true
+    },
+    {
+      "path": "sources/Interest.reader.txt",
+      "sha256": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201",
+      "pass": true
+    },
+    {
+      "path": "sources/CapTable.body",
+      "sha256": "a1f1cd55c5db9a96e524c0aa1d1ff4f3acc0764a96badd2c4056c512ddcc7ecf",
+      "pass": true
+    },
+    {
+      "path": "sources/CapTable.reader.txt",
+      "sha256": "65de79d44350bb4adac40f801b98241039a806ddfce161fe57d09c679d09f827",
+      "pass": true
+    }
+  ],
+  "quote_checks": 141,
+  "errors": [],
+  "guide_sha256": "73e392759eea7cd61d4b5135348005c954bc1699af8c4b45cc21a26e09647d69",
+  "ledger_sha256": "2ef605ee2445b536d38f4fccccb788c526425ef6520395643d4caf6e53f7eb45",
+  "after_exact": true,
+  "uncovered_nonempty": [
+    [
+      2,
+      "name: es-corporate-tax"
+    ],
+    [
+      3,
+      "description: Use this Guide to compute Spanish common-territory corporate income tax for a period beginning in 2026. It covers residence, accounting-to-tax adjustments, microcompany and small-company rates, depreciation, finance costs, participation income, capitalisation and levelling reserves, carried-forward losses, credits, the domestic minimum tax, annual Modelo 200 and Modelo 202 instalments. Trigger phrases include Impuesto sobre Sociedades, IS, SL taxes, empresa de reducida dimensi\u00f3n, bases imponibles negativas, reserva de capitalizaci\u00f3n, reserva de nivelaci\u00f3n, pagos fraccionados and corporate exit tax. Obtain the exact period, territory, entity status, aggregated turnover and accounts before computing. The September 2026 Ceuta and Melilla amendments have specific effective-date tests. Foral taxes, consolidation, reorganisations and specialist incentive claims require their own verified analysis."
+    ],
+    [
+      4,
+      "version: 1.3"
+    ],
+    [
+      5,
+      "jurisdiction: ES"
+    ],
+    [
+      6,
+      "tax_year: 2026"
+    ],
+    [
+      7,
+      "last_updated: 2026-10-28"
+    ],
+    [
+      8,
+      "review_status: pending_review"
+    ],
+    [
+      9,
+      "trust_label: Built by Michael Cutajar and the OpenAccountants team"
+    ],
+    [
+      10,
+      "drafted_by: OpenAccountants"
+    ],
+    [
+      11,
+      "approved_by: pending"
+    ],
+    [
+      12,
+      "depends_on:"
+    ],
+    [
+      13,
+      "  - income-tax-workflow-base"
+    ],
+    [
+      14,
+      "category: international"
+    ],
+    [
+      15,
+      "tier: 2"
+    ],
+    [
+      16,
+      "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+    ],
+    [
+      17,
+      "---"
+    ],
+    [
+      191,
+      "name: Ordinary Spanish ERD company for a 2026-start period"
+    ],
+    [
+      192,
+      "inputs:"
+    ],
+    [
+      193,
+      "  taxable_base: 100000"
+    ],
+    [
+      194,
+      "  applicable_rate: 0.23"
+    ],
+    [
+      195,
+      "  eligible_withholding: 1000"
+    ],
+    [
+      196,
+      "  instalments_paid: 7000"
+    ],
+    [
+      197,
+      "steps:"
+    ],
+    [
+      198,
+      "  gross_tax: taxable_base * applicable_rate"
+    ],
+    [
+      199,
+      "  balance_payable: gross_tax - eligible_withholding - instalments_paid"
+    ],
+    [
+      200,
+      "expected:"
+    ],
+    [
+      201,
+      "  gross_tax: 23000"
+    ],
+    [
+      202,
+      "  balance_payable: 15000"
+    ],
+    [
+      203,
+      "```"
+    ],
+    [
+      210,
+      "name: Spanish microcompany with a 181 day 2026-start period"
+    ],
+    [
+      211,
+      "inputs:"
+    ],
+    [
+      212,
+      "  taxable_base: 120000"
+    ],
+    [
+      213,
+      "  full_year_band: 50000"
+    ],
+    [
+      214,
+      "  period_days: 181"
+    ],
+    [
+      215,
+      "  statutory_denominator: 365"
+    ],
+    [
+      216,
+      "  lower_rate: 0.19"
+    ],
+    [
+      217,
+      "  upper_rate: 0.21"
+    ],
+    [
+      218,
+      "steps:"
+    ],
+    [
+      219,
+      "  short_period_band: min(taxable_base, full_year_band * period_days / statutory_denominator)"
+    ],
+    [
+      220,
+      "  upper_band_base: max(0, taxable_base - short_period_band)"
+    ],
+    [
+      221,
+      "  tax: round(short_period_band * lower_rate + upper_band_base * upper_rate, 2)"
+    ],
+    [
+      222,
+      "expected:"
+    ],
+    [
+      223,
+      "  short_period_band: 24794.5205479452"
+    ],
+    [
+      224,
+      "  upper_band_base: 95205.4794520548"
+    ],
+    [
+      225,
+      "  tax: 24704.11"
+    ],
+    [
+      226,
+      "```"
+    ],
+    [
+      264,
+      "their name behind the tax answers AI gives people. The live, always-current"
+    ],
+    [
+      265,
+      "version (and the professional behind it) is at"
+    ],
+    [
+      266,
+      "[openaccountants.com](https://www.openaccountants.com)."
+    ],
+    [
+      272,
+      "> financial advice. Verify figures against the cited primary sources or with a"
+    ],
+    [
+      273,
+      "> licensed professional before relying on them."
+    ]
+  ]
+}

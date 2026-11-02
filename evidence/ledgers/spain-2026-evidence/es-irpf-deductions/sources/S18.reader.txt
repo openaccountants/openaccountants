@@ -1,0 +1,622 @@
+
+
+    Nuclis Agregats — Ajuntament de Tremp
+
+[[ID:visual-portal-wrapper]]
+
+[[ID:skip-to-content]]
+ al contingut
+      
+[[ID:skip-to-navigation]]
+ a la navegació
+      
+[[ID:skip-to-contact-info]]
+Informació de contacte
+
+[[ID:mobile-navigation]]
+
+[[ID:mobile-menu]]
+
+      Menú
+
+[[ID:mobileAccordion]]
+
+                  Tràmits 
+
+[[ID:tramits]]
+
+Tràmits i gestions
+
+Canal Empresa - FUE
+
+Carpeta Ciutadana
+
+Validació documents electrònics
+
+Notificació Electrònica
+
+Licitacions
+
+Tauler d'edictes
+
+Facturació electrònica
+
+Informació econòmica
+
+Punt d'Informació Cadastral
+
+Informació Urbanística
+
+Subvencions i ajuts
+
+Oferta d'ocupació pública
+
+Unitat mòbil DNI i Passaport
+
+Borsa Local d'Habitatge
+
+                  Ajuntament 
+
+[[ID:ajuntament]]
+
+L'alcaldessa
+
+Relacions institucionals
+
+El consistori
+
+Equip de Govern
+
+Òrgans de govern
+
+Comissions informatives
+
+Junta de portaveus
+
+Ordenances i reglaments
+
+Plans d'acció
+
+Comunicació
+
+Atenció ciutadana
+
+                  Transparència 
+
+[[ID:seueitramits]]
+
+Portal de Transparència
+
+Dades de transparència
+
+Codi de conducta dels alts càrrrecs
+
+Canals de denúncies
+
+Sol·licitud d'accés a la informació pública
+
+Suggeriments, queixes i propostes
+
+                  Actualitat 
+
+[[ID:actualitat]]
+
+Agenda
+
+Notícies
+
+Avisos / Pregons
+
+Aplicació eAgora
+
+                  Municipi 
+
+[[ID:el-municipi]]
+
+Comerç i Serveis
+
+Polígons i empreses
+
+Parcs i Jardins
+
+Equipaments municipals
+
+Entitats
+
+EMD Vilamitjana
+
+Nuclis Agregats
+
+Adreces i telèfons
+
+En xifres
+
+                  Visita Tremp 
+
+[[ID:visita-tremp]]
+
+Mapa interactiu
+
+Història
+
+Turisme Cultural
+
+Turisme Natural
+
+Fires i Mercats
+
+Festes i tradicions
+
+BTT
+
+[[ID:portal-searchbox-mobile]]
+
+[[ID:searchGadget_form_mobile]]
+
+            Cerca        
+            
+[[ID:searchGadgetMobile]]
+
+                Cerca
+
+[[ID:content-header]]
+
+[[ID:portal-top]]
+
+[[ID:headerRow]]
+
+[[ID:portal-logo]]
+
+	Ajuntament de Tremp
+
+[[ID:social-icons]]
+
+[[ID:socialicon-facebook]]
+
+            https://www.facebook.com/AjTremp
+
+[[ID:socialicon-twitter]]
+
+            https://twitter.com/AjTremp
+
+[[ID:socialicon-instagram]]
+
+            https://www.instagram.com/ajtremp
+
+[[ID:portalLanguageGoogle]]
+
+        Choose language
+        
+[[ID:googTransID]]
+
+            Sense opcions
+
+[[ID:google_translate_element]]
+
+[[ID:main-navigation]]
+
+              Tràmits 
+
+Tràmits i gestions
+
+Canal Empresa - FUE
+
+Carpeta Ciutadana
+
+Validació documents electrònics
+
+Notificació Electrònica
+
+Licitacions
+
+Tauler d'edictes
+
+Facturació electrònica
+
+Informació econòmica
+
+Punt d'Informació Cadastral
+
+Informació Urbanística
+
+Subvencions i ajuts
+
+Oferta d'ocupació pública
+
+Unitat mòbil DNI i Passaport
+
+Borsa Local d'Habitatge
+
+              Ajuntament 
+
+L'alcaldessa
+
+Relacions institucionals
+
+El consistori
+
+Equip de Govern
+
+Òrgans de govern
+
+Comissions informatives
+
+Junta de portaveus
+
+Ordenances i reglaments
+
+Plans d'acció
+
+Comunicació
+
+Atenció ciutadana
+
+              Transparència 
+
+Portal de Transparència
+
+Dades de transparència
+
+Codi de conducta dels alts càrrrecs
+
+Canals de denúncies
+
+Sol·licitud d'accés a la informació pública
+
+Suggeriments, queixes i propostes
+
+              Actualitat 
+
+Agenda
+
+Notícies
+
+Avisos / Pregons
+
+Aplicació eAgora
+
+              Municipi 
+
+Comerç i Serveis
+
+Polígons i empreses
+
+Parcs i Jardins
+
+Equipaments municipals
+
+Entitats
+
+EMD Vilamitjana
+
+Nuclis Agregats
+
+Adreces i telèfons
+
+En xifres
+
+              Visita Tremp 
+
+Mapa interactiu
+
+Història
+
+Turisme Cultural
+
+Turisme Natural
+
+Fires i Mercats
+
+Festes i tradicions
+
+BTT
+
+Cercador
+
+[[ID:portal-searchbox]]
+
+        Cerca
+
+[[ID:page-header]]
+
+[[ID:interior-slider]]
+
+							Municipi
+
+[[ID:above-content-wrapper]]
+
+[[ID:viewlet-above-content]]
+
+[[ID:portal-breadcrumbs]]
+
+[[ID:breadcrumbs-you-are-here]]
+
+Sou a:
+
+[[ID:breadcrumbs-home]]
+
+        Inici
+
+[[ID:breadcrumbs-1]]
+
+          Municipi
+
+[[ID:breadcrumbs-2]]
+
+[[ID:breadcrumbs-current]]
+Nuclis Agregats
+
+[[ID:statusBar]]
+
+[[ID:global_statusmessage]]
+
+[[ID:full-container]]
+
+[[ID:inside-full-container]]
+
+[[ID:main-container]]
+
+[[ID:content]]
+
+[[ID:viewlet-above-content-title]]
+
+[[ID:social-tags-body]]
+
+  Nuclis Agregats
+  El municipi de Tremp està format per 29 nuclis de població, en una superfície  de 302,5 km², sent la ciutat de Tremp un d'ells.
+  https://www.ajuntamentdetremp.cat/el-municipi/nuclis-agregats-1
+  https://www.ajuntamentdetremp.cat/@@site-logo/logosol.jpg
+
+Nuclis Agregats
+
+[[ID:viewlet-below-content-title]]
+
+El municipi de Tremp està format per 29 nuclis de població, en una superfície  de 302,5 km², sent la ciutat de Tremp un d'ells.
+
+[[ID:viewlet-above-content-body]]
+
+[[ID:content-core]]
+
+                                Aulàs
+
+                                Casterner de les Olles
+
+                                Castissent
+
+                                Claramunt
+
+                                Claret
+
+                                El Castellet
+
+                                Els Masos de Tamúrcia
+
+                                Eroles
+
+                                Escarlà
+
+                                Espills
+
+                                Espluga Serra
+
+                                Espluga Freda
+
+                                Figols
+
+                                Gurp
+
+                                La Torre de Tamúrcia
+
+                                Llastarri
+
+                                El Pont d'Orrit
+
+                                Palau de Noguera
+
+                                Puigcercós
+
+                                Puigverd
+
+        1
+
+        2
+
+          7 elements següents
+
+[[ID:viewlet-below-content-body]]
+
+[[ID:viewlet-below-content]]
+
+[[ID:sidebar]]
+
+[[ID:portal-column-one]]
+
+[[ID:portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f66732d616a756e74616d656e742d64652d7472656d702f616a756e74616d656e742d64652d7472656d700a6e617669676174696f6e]]
+
+        Navegació
+
+            Comerç i Serveis
+
+            Polígons i empreses
+
+            Parcs i Jardins
+
+            Equipaments municipals
+
+            Entitats
+
+            EMD Vilamitjana
+
+            Nuclis Agregats
+
+            Aulàs
+
+            Casterner de les Olles
+
+            Castissent
+
+            Claramunt
+
+            Claret
+
+            El Castellet
+
+            Els Masos de Tamúrcia
+
+            Eroles
+
+            Escarlà
+
+            Espills
+
+            Espluga Serra
+
+            Espluga Freda
+
+            Figols
+
+            Gurp
+
+            La Torre de Tamúrcia
+
+            Llastarri
+
+            El Pont d'Orrit
+
+            Palau de Noguera
+
+            Puigcercós
+
+            Puigverd
+
+            Sant Adrià
+
+            Santa Engràcia
+
+            Sapeira
+
+            Suterranya
+
+            Tercui
+
+            Tendrui
+
+            Torogó
+
+            Adreces i telèfons
+
+            En xifres
+
+[[ID:column2-container]]
+
+[[ID:document-actions]]
+
+[[ID:heading_document_actions]]
+
+Document Actions
+
+[[ID:document-action-print]]
+
+                                Imprimeix-ho
+
+[[ID:document-action-send]]
+
+                                Enviar per email
+
+Compartir
+
+                            facebook
+
+                            twitter
+
+                            linkedin
+
+                            Whatsapp 
+
+[[ID:portal-footer-wrapper]]
+
+[[ID:portal-footer]]
+
+[[ID:custom-footer]]
+
+[[ID:logoFooter]]
+
+          Ajuntament de Tremp
+
+[[ID:portal-info]]
+
+Ajuntament de Tremp
+
+            Plaça de la Creu, 1, Tremp
+             | 25620
+             | Tel: 973650005
+
+            administracio@tremp.cat
+             | P2529500G
+
+[[ID:portal-site-actions]]
+
+[[ID:siteaction-index_html]]
+
+Inici
+
+[[ID:siteaction-legal_advice]]
+
+Avís Legal
+
+[[ID:siteaction-privacity]]
+
+Política de privacitat
+
+[[ID:siteaction-cookies]]
+
+Política de cookies
+
+[[ID:siteaction-rat]]
+
+RAT
+
+[[ID:siteaction-accessibility]]
+
+Accessibilitat
+
+[[ID:siteaction-sitemap]]
+
+Mapa del lloc
+
+[[ID:siteaction-contact]]
+
+Contacte
+
+[[ID:siteaction-credits]]
+
+                  Crèdits
+
+[[ID:portal-socialicons]]
+
+[[ID:footerSocialicon-facebook]]
+
+                  https://www.facebook.com/AjTremp
+
+[[ID:footerSocialicon-twitter]]
+
+                  https://twitter.com/AjTremp
+
+[[ID:footerSocialicon-instagram]]
+
+                  https://www.instagram.com/ajtremp
+
+Projecte desenvolupat per Diputació de Lleida
+
+[[ID:portal-seachBoxDialog]]
+
+[[ID:modalSearchBox]]
+
+                    Tancar
+
+[[ID:searchGadget_form]]
+
+                    Cerca
+
+[[ID:searchGadget]]
+

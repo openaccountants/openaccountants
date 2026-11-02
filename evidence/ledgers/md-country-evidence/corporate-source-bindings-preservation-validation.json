@@ -1,0 +1,94 @@
+{
+  "status": "PASS writer delta/source/preservation/arithmetic checks; independent correction recheck and whole-country review remain ongoing",
+  "checked_on": "2026-10-31",
+  "base": "64887a6a34d255fba08470f14254eb5c521a776f",
+  "checks": [
+    {
+      "slug": "md-company-formation.writer",
+      "rows": 209,
+      "appended": 0,
+      "original_rows_retained_with_audited_corrections": true,
+      "examples": 2
+    },
+    {
+      "slug": "md-corporate-income-tax.writer",
+      "rows": 555,
+      "appended": 0,
+      "original_rows_retained_with_audited_corrections": true,
+      "examples": 2
+    },
+    {
+      "slug": "md-cross-border.writer",
+      "rows": 337,
+      "appended": 0,
+      "original_rows_retained_with_audited_corrections": true,
+      "examples": 2
+    },
+    {
+      "slug": "md-tax-overview.writer",
+      "rows": 55,
+      "appended": 0,
+      "original_rows_retained_with_audited_corrections": true,
+      "examples": 2
+    },
+    {
+      "slug": "md-transfer-pricing.writer",
+      "rows": 487,
+      "appended": 0,
+      "original_rows_retained_with_audited_corrections": true,
+      "examples": 2
+    },
+    {
+      "slug": "moldova-income-tax.writer",
+      "rows": 650,
+      "appended": 14,
+      "original_rows_retained_with_audited_corrections": true,
+      "examples": 2
+    },
+    {
+      "slug": "moldova-payroll.writer",
+      "rows": 615,
+      "appended": 0,
+      "original_rows_retained_with_audited_corrections": true,
+      "examples": 2
+    },
+    {
+      "slug": "moldova-social-contributions.writer",
+      "rows": 497,
+      "appended": 0,
+      "original_rows_retained_with_audited_corrections": true,
+      "examples": 2
+    },
+    {
+      "slug": "moldova-tax-optimization.writer",
+      "rows": 137,
+      "appended": 0,
+      "original_rows_retained_with_audited_corrections": true,
+      "examples": 2
+    },
+    {
+      "slug": "moldova-vat.writer",
+      "rows": 368,
+      "appended": 14,
+      "original_rows_retained_with_audited_corrections": true,
+      "examples": 2
+    }
+  ],
+  "total_source_rows": 3910,
+  "new_source_rows": 28,
+  "audited_original_row_corrections": 40,
+  "all_original_row_fields_archived": true,
+  "total_predecessor_units_preserved": 1564,
+  "disputed_destination_records_preserved_and_corrected": 5,
+  "all_original_questions_preserved": "8 original VAT texts retained in6 groups",
+  "existing_oa_check_blocks_preserved": 50,
+  "existing_standalone_cases_preserved": 58,
+  "existing_social_writer_cases_preserved": 14,
+  "new_arithmetic_cases": 0,
+  "primary_articles_fully_read": [
+    264,
+    265,
+    266
+  ],
+  "publication": "No new push/PR/comment/remote merge; no whole-pack or professional approval claimed"
+}

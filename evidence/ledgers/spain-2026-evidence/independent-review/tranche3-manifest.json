@@ -1,0 +1,34 @@
+{
+  "tranche3-report.md": {
+    "sha256": "b3256a7fd11b11076b89ac9e4c217016d7f3e32419bf016e7542c899f77ed1bf",
+    "bytes": 2948
+  },
+  "tranche3-result.json": {
+    "sha256": "fae3a8c693e1c3a2666b9d96674f5d74d7eb01052779f2e283dbd846fabc7264",
+    "bytes": 1033
+  },
+  "tranche3-read-ledger.json": {
+    "sha256": "2e005152439e795e4d7216c364b7b1bbc89e8bf648585bd0a3cd753d7c387c49",
+    "bytes": 2691
+  },
+  "tranche3-source-check.json": {
+    "sha256": "cc8676788a50e1b8de57aa0e362c5476d5f4f6931b10487a4f7fce21d3426755",
+    "bytes": 64841
+  },
+  "tranche3-controls.py": {
+    "sha256": "a53be0d58d39989ef51161e0d4f1dfb1cc6962427341b094d83034509edc8796",
+    "bytes": 3399
+  },
+  "tranche3-controls.json": {
+    "sha256": "60e793117d3656bf050fb30622f6f33f082afa0569845fc0a3585c79edbd6100",
+    "bytes": 6075
+  },
+  "tranche3-protection.json": {
+    "sha256": "3172114fb4e8600d9f07c7de5fb2bc9bdabbfe31c4393556cd47636cf9bbc02a",
+    "bytes": 681
+  },
+  "tranche3-coverage-remainder.json": {
+    "sha256": "1474f0ce206850dddc03a5d3eed0f202469078cb29193e04fc527bc6c5f32e06",
+    "bytes": 9311
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "scope": "All20currentGuideexamples independently manually recomputed with read source assumptions; machine50blocks separate.",
+  "cases": [
+    {
+      "Guide": "md-tax-overview",
+      "example": 1,
+      "calculation": "100000 * .12 = 12000",
+      "result": "PASS under stated established taxable-base assumption"
+    },
+    {
+      "Guide": "md-tax-overview",
+      "example": 2,
+      "calculation": "100000 * .20 - 8000 = 12000",
+      "result": "PASS under established input entitlement assumption"
+    },
+    {
+      "Guide": "md-company-formation",
+      "example": 1,
+      "calculation": "1149 * 4 = 4596; 4596 - 1149 = 3447",
+      "result": "PASS; ASP tariffs and statutory urgent multiplier read"
+    },
+    {
+      "Guide": "md-company-formation",
+      "example": 2,
+      "calculation": "40000 + 35000 = 75000; 100000 - 75000 = 25000; 600000 - 20000 = 580000",
+      "result": "PASS; SRL subscribed balance distinct from SA capital screen"
+    },
+    {
+      "Guide": "moldova-vat",
+      "example": 1,
+      "calculation": "output20000+4000+400=24400; purchases/import input6000+3000+400 plus opening1000=10400;24400-10400=14000; customs3000 separately already paid",
+      "result": "PASS under documented registration, supply and deduction assumptions"
+    },
+    {
+      "Guide": "moldova-vat",
+      "example": 2,
+      "calculation": ".80 * 5000 = 4000; input10000+4000=14000; blocked2000+500+1000=3500; monthly16000-14000-2000=0; definitive .75*5000=3750;3750-4000=-250",
+      "result": "PASS; exact ratios avoid unresolved nonexact representation question"
+    },
+    {
+      "Guide": "md-transfer-pricing",
+      "example": 1,
+      "calculation": "12000000+7500000+500000=20000000;4000000+2000000+10000000+300000+200000+3900000=20400000;total40400000",
+      "result": "PASS; statutory eligible scope and exclusions read; reaches threshold, file remains request-based"
+    },
+    {
+      "Guide": "md-transfer-pricing",
+      "example": 2,
+      "calculation": "(80+100)/2=90;10000*60=600000;10000*90=900000;300000*.12=36000",
+      "result": "PASS; Order9point25 at-most-two comparator method and point47 median adjustment read, stipulated comparability"
+    },
+    {
+      "Guide": "moldova-tax-optimization",
+      "example": 1,
+      "calculation": "490000/700000=.70;17400*.30=5220;2*5220=10440;100000*.07=7000;max10440",
+      "result": "PASS under stated status/activity/count conditions read in367-372"
+    },
+    {
+      "Guide": "moldova-tax-optimization",
+      "example": 2,
+      "calculation": "100000*.12=12000;88000*.06=5280;88000-5280=82720;1000000*.04=40000;60000*.06=3600;60000-3600=56400",
+      "result": "PASS under explicitly assumed legallyavailablebases/distribution; SRL39-40 andtaxprovisionsread"
+    },
+    {
+      "Guide": "md-cross-border",
+      "example": 1,
+      "calculation": "100000*.12+50000*.12+200000*.06+20000*.15=33000;gross490000;net457000",
+      "result": "PASS under stipulatednoPE/treaty andactualsourceclassification assumptions verified71/73/91; goods/offshoreexceptionsdistinct"
+    },
+    {
+      "Guide": "md-cross-border",
+      "example": 2,
+      "calculation": "(300000+200000)*.12=60000;200000*.12=24000;min30000,24000=24000;60000-24000=36000;excess6000",
+      "result": "PASS under assumed sameperiodordinarycompany/evidencedforeignincometax;82read"
+    },
+    {
+      "Guide": "md-corporate-income-tax",
+      "example": 1,
+      "calculation": "215000*.12=25800;min(9000,50000*.12)=6000;25800-6000=19800;19800-18000=1800",
+      "result": "PASS under explicitly stipulated same-period foreign taxable amount after adjustments/losses and evidenced eligible foreign tax; Code82 and actual VEN12 credit instructions119-128 read."
+    },
+    {
+      "Guide": "md-corporate-income-tax",
+      "example": 2,
+      "calculation": "920000*.04=36800;36800-30000=6800",
+      "result": "PASS under stipulated chapter7.1 eligibility/base and legally excluded receipts; actual SIMM24 and Code541-544 read."
+    },
+    {
+      "Guide": "moldova-payroll",
+      "example": 1,
+      "calculation": "17400*.09=1566;29700/12=2475;17400-1566-2475=13359;*.12=1603.08;17400-1566-1603.08=14230.92;17400*.24=4176;cost21576",
+      "result": "PASS under stipulated continuingemployee validpriorapplication/fullmonth/ordinary24%category/nootherbenefit; currentmedicalbudget/Code andregulation alreadyread."
+    },
+    {
+      "Guide": "moldova-payroll",
+      "example": 2,
+      "calculation": "February(10000-900)*.12=1092;Marchfirst(14000-1260-2475)*.12=1231.8,less1092=139.8;second(20000-1800-2475)*.12=1887,less1231.8=655.2;March795medical900net8305",
+      "result": "PASS; applicationFebruary firsteligibleMarch, oneexemptionpermonth despite2payments, cumulativepriorPIT preserved;regulation18/38/40/43read."
+    },
+    {
+      "Guide": "moldova-income-tax",
+      "example": 1,
+      "calculation": "300000-50000-22878-2527=224595;224595-29700=194895;194895*.12=23387.40;23387.40-20000=3387.40",
+      "result": "PASS under documented deductible costs/contributions and available ordinary allowance assumptions; no double deduction"
+    },
+    {
+      "Guide": "moldova-income-tax",
+      "example": 2,
+      "calculation": "200000-140000-10000=50000;*.5=25000;450000+25000=475000;*.12=57000;foreignlimit450000*.12=54000;min60000,54000=54000;57000-54000=3000",
+      "result": "PASS under documented capital basis/gain and same-income foreign-credit assumptions; credit capped to Moldova tax on foreign income"
+    },
+    {
+      "Guide": "moldova-social-contributions",
+      "example": 1,
+      "calculation": "12000*.24=2880;12000*.09=1080;12000+2880=14880;12000-1080=10920",
+      "result": "PASS ordinary private employer, entire assumed remuneration base, before PIT"
+    },
+    {
+      "Guide": "moldova-social-contributions",
+      "example": 2,
+      "calculation": "6300*.1=630;630*.24=151.20;6300*.24*.25=378;max151.20,378=378;630*.09=56.70;630+378=1008;630-56.70=573.30",
+      "result": "PASS under stated part-time floor assumptions; medical uses actual remuneration, not social floor"
+    }
+  ]
+}

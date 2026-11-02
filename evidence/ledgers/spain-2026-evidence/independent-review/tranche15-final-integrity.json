@@ -1,0 +1,24 @@
+{
+  "guide": "3a0cff999160125d566a79080763c9318d7667847eb82d20a18e9cbd17a798c2",
+  "ledger": "6785241879f7d5e321e5909429887f939b8ddf52cacf7ee2e2e08d096a62a29a",
+  "rows": 533,
+  "530native_quote_spans_pass": true,
+  "only_five_quote_keys_changed_from_initial": [
+    "AP_rent70",
+    "A_PEworldwide",
+    "BP_reference70",
+    "B_PEworldwide",
+    "G_PEworldwide"
+  ],
+  "S-L22_S-L23": "Own15 worldwide and two full rental-gateway passages independently read/bound.",
+  "changed_Guide_native_LF": [
+    22,
+    97,
+    245,
+    435
+  ],
+  "full_inverse": true,
+  "two_oa_original_bytes_exact": true,
+  "other_Guide_metadata_H2_intake_byline_CTA_URLs": "All unchanged bytes outside four exact lines; original Guide has no invented new attribution.",
+  "S-L24": "Incorrect settled G withholding inference removed; actual final-expense method preserved; prospective G expense withholding remains a material ordinary limitation."
+}

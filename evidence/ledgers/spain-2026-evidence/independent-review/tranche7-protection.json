@@ -1,0 +1,15 @@
+{
+  "guide_sha256": "fc5e40827c1db1e66d28abd42fbb8c6cc80377e1201290736e007836009c1638",
+  "guide_bytes": 27254,
+  "full_forward_inverse_four_operations": true,
+  "metadata_changes": {
+    "version": [
+      "2.5",
+      "2.6"
+    ]
+  },
+  "old_oa_exact": true,
+  "all_old_URLs_order_exact": true,
+  "CTA_exact": true,
+  "scope": "Three stale scope clauses now match already supplied labelled methods; no new formula/source/calculator-resolution claim."
+}

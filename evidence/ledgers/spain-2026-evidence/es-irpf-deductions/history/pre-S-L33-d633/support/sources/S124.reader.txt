@@ -1,0 +1,454 @@
+Browser tab: 12, Title: "Consello Consultivo de Galicia", URL: "https://www.knosys.es/ccgalicia/knpag?lang=GAL&x=index".
+0 AXWebArea Consello Consultivo de Galicia, URL: knosys.es/ccgalicia/knpag?lang=GAL&x=index
+	1 container page
+		2 container knosys_form
+			3 container inicio
+				4 link Description: inicio, Value: ccgalicia.es/
+			5 container GALEGO|CASTELLANO Ditames e Informes 1996-2026 (emitidos ata o mes de setembro de 2026)
+				6 container text_header
+					7 container idioma
+						8 link Description: GALEGO, Help: Consultar Ditames en galego, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#
+						9 text |
+						10 link Description: CASTELLANO, Help: Consultar Dictámenes en castellano, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#
+					11 heading Ditames e Informes 1996-2026 (emitidos ata o mes de setembro de 2026), Value: 1
+						12 text Ditames e Informes 1996-2026 (emitidos ata o mes de setembro de 2026)
+			15 container ID: find, Dobrar o formulario de consulta N DITAME E ANO 2026 Termos admitiu E DATA EMISIÓN E LETRADO Termos admitiu E RELATOR Termos admitiu E ORGANISMO PROCEDENCIA Termos admitiu E ASUNTO E TIPO DITAME Termos admitiu E PROPOSTA Termos admitiu E CONCLUSIÓN DO DITAME Termos admitiu E TEXTO DO DITAME material escolar E
+				16 container
+					17 container Dobrar o formulario de consulta
+						18 link Description: Dobrar o formulario de consulta, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#
+					19 container N DITAME E ANO 2026 Termos admitiu E DATA EMISIÓN E LETRADO Termos admitiu E RELATOR Termos admitiu E ORGANISMO PROCEDENCIA Termos admitiu E ASUNTO E TIPO DITAME Termos admitiu E PROPOSTA Termos admitiu E CONCLUSIÓN DO DITAME Termos admitiu E TEXTO DO DITAME material escolar E Texto libre
+						20 container
+							21 container N DITAME
+								22 text N DITAME
+							23 text field (settable) CMPN_DITAME
+							24 container E
+								25 pop up button (collapsed, settable) Value: E, ID: CMPOPN_DITAME, Secondary Actions: Expand
+									26 menu
+										27 (selected) E
+										28 OU
+										29 NON
+							30 container ANO
+								31 text ANO
+							32 container 2026 Termos admitiu
+								33 text field (settable) Value: 2026, ID: CMPANO
+								34 link Description: Termos admitiu, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#adminList
+							35 container E
+								36 pop up button (collapsed, settable) Value: E, ID: CMPOPANO, Secondary Actions: Expand
+									37 menu
+										38 (selected) E
+										39 OU
+										40 NON
+							41 container DATA EMISIÓN
+								42 text DATA EMISIÓN
+							43 text field (settable) CMPDATA_EMISION
+							44 container E
+								45 pop up button (collapsed, settable) Value: E, ID: CMPOPDATA_EMISION, Secondary Actions: Expand
+									46 menu
+										47 (selected) E
+										48 OU
+										49 NON
+							50 container LETRADO
+								51 text LETRADO
+							52 container Termos admitiu
+								53 text field (settable) CMPLETRADO
+								54 link Description: Termos admitiu, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#adminList
+							55 container E
+								56 pop up button (collapsed, settable) Value: E, ID: CMPOPLETRADO, Secondary Actions: Expand
+									57 menu
+										58 (selected) E
+										59 OU
+										60 NON
+							61 container RELATOR
+								62 text RELATOR
+							63 container Termos admitiu
+								64 text field (settable) CMPRELATOR
+								65 link Description: Termos admitiu, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#adminList
+							66 container E
+								67 pop up button (collapsed, settable) Value: E, ID: CMPOPRELATOR, Secondary Actions: Expand
+									68 menu
+										69 (selected) E
+										70 OU
+										71 NON
+							72 container ORGANISMO PROCEDENCIA
+								73 text ORGANISMO PROCEDENCIA
+							74 container Termos admitiu
+								75 text field (settable) CMPORG_PROCEDENCIA
+								76 link Description: Termos admitiu, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#adminList
+							77 container E
+								78 pop up button (collapsed, settable) Value: E, ID: CMPOPORG_PROCEDENCIA, Secondary Actions: Expand
+									79 menu
+										80 (selected) E
+										81 OU
+										82 NON
+							83 container ASUNTO
+								84 text ASUNTO
+							85 text field (settable) CMPASUNTO
+							86 container E
+								87 pop up button (collapsed, settable) Value: E, ID: CMPOPASUNTO, Secondary Actions: Expand
+									88 menu
+										89 (selected) E
+										90 OU
+										91 NON
+							92 container TIPO DITAME
+								93 text TIPO DITAME
+							94 container Termos admitiu
+								95 text field (settable) CMPTIPO_DITAME
+								96 link Description: Termos admitiu, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#adminList
+							97 container E
+								98 pop up button (collapsed, settable) Value: E, ID: CMPOPTIPO_DITAME, Secondary Actions: Expand
+									99 menu
+										100 (selected) E
+										101 OU
+										102 NON
+							103 container PROPOSTA
+								104 text PROPOSTA
+							105 container Termos admitiu
+								106 text field (settable) CMPPROPOSTA
+								107 link Description: Termos admitiu, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#adminList
+							108 container E
+								109 pop up button (collapsed, settable) Value: E, ID: CMPOPPROPOSTA, Secondary Actions: Expand
+									110 menu
+										111 (selected) E
+										112 OU
+										113 NON
+							114 container CONCLUSIÓN DO DITAME
+								115 text CONCLUSIÓN DO DITAME
+							116 container Termos admitiu
+								117 text field (settable) CMPCONCLUSION
+								118 link Description: Termos admitiu, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#adminList
+							119 container E
+								120 pop up button (collapsed, settable) Value: E, ID: CMPOPCONCLUSION, Secondary Actions: Expand
+									121 menu
+										122 (selected) E
+										123 OU
+										124 NON
+							125 container TEXTO DO DITAME
+								126 text TEXTO DO DITAME
+							142 container material escolar
+								143 text field (settable) Value: material escolar, ID: CMPTEXTO_DO_DITAME
+							128 container E
+								129 pop up button (collapsed, settable) Value: E, ID: CMPOPTEXTO_DO_DITAME, Secondary Actions: Expand
+									130 menu
+										131 (selected) E
+										132 OU
+										133 NON
+							134 container Texto libre
+								135 text Texto libre
+							136 text field (settable) CMPGlobal
+							137 container BUSCAR Borrar todo
+								138 button BUSCAR, Help: Localizar información
+								139 link Description:  Borrar todo, Help: Borrar formulario, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#
+		144 container
+			145 container Primeira páxina Páxina anterior Páxina seguinte Última páxina   1  de  1 5 documentos, ID: results
+				146 container tb_result
+					147 container
+						148 container Primeira páxina Páxina anterior Páxina seguinte Última páxina   1  de  1 5 documentos
+							149 container
+								150 container Primeira páxina
+									151 image Primeira páxina
+								152 container Páxina anterior
+									153 image Páxina anterior
+								154 container Páxina seguinte
+									155 image Páxina seguinte
+								156 container Última páxina
+									157 image Última páxina
+								158 container 1  de  1, Help: Páxina 
+									159 text field (settable) Description: Escriba o número da páxina e prema ENTER, Value: 1
+									160 text   de  1
+								161 container 5 documentos
+									162 text 5 documentos
+							163 table
+								164 row Proxecto de decreto polo que se establece a ordenación xeral da formación profesional do sistema educativo de Galicia.
+									165 cell doc_19985
+										166 table
+											167 row
+												168 cell
+													169 text 1
+												170 cell
+													171 text 017
+													172 text 2026
+													173 text Proxecto de decreto polo que se establece a ordenación xeral da formación profesional do sistema educativo de Galicia.
+								174 row Proxecto de orde pola que se regulan as categorías e os elementos de material escolar adquiridos, e os límites aplicables para os efectos da dedución fiscal no imposto sobre a renda das persoas físicas no ámbito da Comunidade Autónoma de Galicia.
+									175 cell doc_20057
+										176 table
+											177 row
+												178 cell
+													179 text 2
+												180 cell
+													181 text 085
+													182 text 2026
+													183 text Proxecto de orde pola que se regulan as categorías e os elementos de material escolar adquiridos, e os límites aplicables para os efectos da dedución fiscal no imposto sobre a renda das persoas físicas no ámbito da Comunidade Autónoma de Galicia.
+								184 row Reclamación de responsabilidade patrimonial interposta por P., alumna do Grao en Dereito da Universidade de Santiago de Compostela, por mor dos danos e perdas sufridos como consecuencia de desestimarlle unha solicitude de modificación de data dos exames de recuperación de dúas materias no curso 2024/2025.
+									185 cell doc_20132
+										186 table
+											187 row
+												188 cell
+													189 text 3
+												190 cell
+													191 text 099
+													192 text 2026
+													193 text Reclamación de responsabilidade patrimonial interposta por P., alumna do Grao en Dereito da Universidade de Santiago de Compostela, por mor dos danos e perdas sufridos como consecuencia de desestimarlle unha solicitude de modificación de data dos exames de recuperación de dúas materias no curso 2024/2025.
+								194 row Resolución do contrato de obras de reforma do patio do CEIP Carlos Casares adxudicado á mercantil C., S. L. polo Concello de Nigrán.
+									195 cell doc_20227
+										196 table
+											197 row
+												198 cell
+													199 text 4
+												200 cell
+													201 text 238
+													202 text 2026
+													203 text Resolución do contrato de obras de reforma do patio do CEIP Carlos Casares adxudicado á mercantil C., S. L. polo Concello de Nigrán.
+								204 row Reclamación de responsabilidade patrimonial interposta por G. e G., en representación da súa filla menor de idade, O., polos danos sufridos como consecuencia do seu cambio de centro escolar, que foi motivado segundo alegan polo acoso escolar padecido no CEP Plurilingüe de Ventín (Ames) e a ineficacia e insuficiencia das medidas adoptadas polo dito centro.
+									205 cell doc_20263
+										206 table
+											207 row
+												208 cell
+													209 text 5
+												210 cell
+													211 text 273
+													212 text 2026
+													213 text Reclamación de responsabilidade patrimonial interposta por G. e G., en representación da súa filla menor de idade, O., polos danos sufridos como consecuencia do seu cambio de centro escolar, que foi motivado segundo alegan polo acoso escolar padecido no CEP Plurilingüe de Ventín (Ames) e a ineficacia e insuficiencia das medidas adoptadas polo dito centro.
+			214 container ID: document, Imprimir document Imprimir documento Primeiro documento Documento anterior Documento seguinte Último documento   Documento  2  de  5
+				215 container tb_document
+					216 container
+						217 container Imprimir document Imprimir documento Primeiro documento Documento anterior Documento seguinte Último documento   Documento  2  de  5
+							218 container
+								219 container Imprimir document
+									220 link Description: Imprimir document, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#
+								221 container Imprimir documento
+									222 link Description: Imprimir documento, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#
+							223 container
+								224 container Primeiro documento
+									225 link Description: Primeiro documento, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#
+								226 container Documento anterior
+									227 link Description: Documento anterior, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#
+								228 container Documento seguinte
+									229 link Description: Documento seguinte, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#
+								230 container Último documento
+									231 link Description: Último documento, Value: knosys.es/ccgalicia/knpag?lang=GAL&x=index#
+								232 container Documento  2  de  5
+									233 text Documento  2  de  5
+							234 container
+								235 table
+									236 row
+										237 cell
+											238 text N DITAME:
+										239 cell
+											240 text 085
+									241 row
+										242 cell
+											243 text ANO:
+										244 cell
+											245 text 2026
+									246 row
+										247 cell
+											248 text DATA EMISIÓN:
+										249 cell
+											250 container
+												251 text 25/03/ 2026
+									252 row
+										253 cell
+											254 text LETRADO:
+										255 cell
+											256 text Blanco Serrano
+									257 row
+										258 cell
+											259 text RELATOR:
+										260 cell
+											261 text Souto Souto
+									262 row
+										263 cell
+											264 text ORGANISMO PROCEDENCIA:
+										265 cell
+											266 text Consellería de Facenda e Administración Pública (Xunta de Galicia)
+									267 row
+										268 cell
+											269 text ASUNTO:
+										270 cell
+											271 container
+												272 text Proxecto de orde pola que se regulan as categorías e os elementos de  material escolar  adquiridos, e os límites aplicables para os efectos da dedución fiscal no imposto sobre a renda das persoas físicas no ámbito da Comunidade Autónoma de Galicia.
+									273 row
+										274 cell
+											275 text TIPO DITAME:
+										276 cell
+											277 text Proxecto de orde
+									278 row
+										279 cell
+											280 text CONCLUSIÓN DO DITAME:
+										281 cell
+											282 text Desfavorable
+									283 row
+										284 cell
+											285 text TEXTO DO DITAME:
+										286 cell
+											287 text ANTECEDENTES
+											288 container
+												289 text 1.-  Con data 9.3. 2026  tivo entrada neste organismo un escrito do señor conselleiro de Facenda e Administración Pública solicitando a emisión do preceptivo ditame sobre o proxecto de orde ao abeiro do artigo 24.1 da Lei 3/2014, do 24 de abril, do Consello Consultivo de Galicia.
+											290 container
+												291 text 2.-  No expediente administrativo consta:
+											292 content list
+												293 container
+													294 AXListMarker • 
+													295 text Resolución de inicio do expediente (23.1. 2026 ).
+												296 container
+													297 AXListMarker • 
+													298 text Memoria xustificativa (27.1. 2026 ).
+												299 container
+													300 AXListMarker • 
+													301 text Memoria económica (26.1. 2026 ).
+												302 container
+													303 AXListMarker • 
+													304 text Táboa de vixencias (27.1. 2026 ).
+												305 container
+													306 AXListMarker • 
+													307 text Texto do anteproxecto da orde.
+												308 container
+													309 AXListMarker • 
+													310 text Informe do Servizo Técnico-Xurídico (28.1. 2026 ).
+												311 container
+													312 AXListMarker • 
+													313 text Resolución de aprobación inicial (29.1. 2026 ).
+												314 container
+													315 AXListMarker • 
+													316 text Solicitude da Axencia Tributaria de Galicia sobre a análise impacto de xénero (30.1. 2026 ).
+												317 container
+													318 AXListMarker • 
+													319 text Informe da Dirección Xeral da Promoción de Igualdade sobre impacto por razón de xénero (2.2. 2026 )
+												320 container
+													321 AXListMarker • 
+													322 text Informe da Dirección Xeral de Planificación e Orzamentos (6.2. 2026 ).
+												323 container
+													324 AXListMarker • 
+													325 text Certificado exposición pública directora da Área de Administración Dixital (16.2. 2026 ).
+												326 container
+													327 AXListMarker • 
+													328 text Alegacións das consellerías.
+												329 container
+													330 AXListMarker • 
+													331 text Alegacións no trámite de audiencia: ANPAS GALEGAS.
+												332 container
+													333 AXListMarker • 
+													334 text Alegacións trámite de información pública.
+												335 container
+													336 AXListMarker • 
+													337 text Memoria cos cambios tras a fase intermedia (19.2. 2026 ).
+												338 container
+													339 AXListMarker • 
+													340 text Texto do proxecto de orde tras a fase intermedia para informe da Asesoría Xurídica.
+												341 container
+													342 AXListMarker • 
+													343 text Informe da Asesoría Xurídica (5.3. 2026 ).
+												344 container
+													345 AXListMarker • 
+													346 text Texto do proxecto de orde após de recomendacións visado pola Asesoría Xurídica Xeral (5.3. 2026 ).
+												347 container
+													348 AXListMarker • 
+													349 text Memoria tras o informe da Asesoría Xurídica (6.3. 2026 ).
+												350 container
+													351 AXListMarker • 
+													352 text Informe de legalidade do secretario xeral técnico e do Tesouro (6.3. 2026 ).
+												353 container
+													354 AXListMarker • 
+													355 text Texto do proxecto de orde tras informe da Asesoría Xurídica e para ditame do Consello Consultivo de Galicia.
+											356 container
+												357 text 3.-  Os demais antecedentes dedúcense do contido do ditame.
+											358 text CONSIDERACIÓNS
+											359 container
+												360 text Primeira.- Competencia para a emisión do ditame.
+											361 text O artigo 1 da Lei 3/2014, do 24 de abril, do Consello Consultivo de Galicia, configura a este órgano como o supremo órgano consultivo da Xunta de Galicia e das administracións públicas da comunidade autónoma.
+											362 text A competencia deste Consello Consultivo de Galicia para a emisión do ditame deriva da previsión contida no artigo 12.c) da Lei 3/2014, do 24 de abril, do Consello Consultivo de Galicia, e 15 do Decreto 91/2015, do 18 de xuño, polo que se aproba o Regulamento de organización e funcionamento do Consello Consultivo de Galicia, cando establece que este deberá ser consultado preceptivamente nos supostos de proxectos de regulamento de execución de leis autonómicas e de desenvolvemento de normas básicas do Estado e, de ser o caso, de normas da Unión Europea, así como as súas modificacións.
+											363 text No presente suposto, o presente proxecto de orde configúrase como unha norma regulamentaria de desenvolvemento do Decreto lexislativo 1/2011, do 28 de xullo, polo que se aproba o Texto refundido das disposición legais da Comunidade Autónoma de Galicia en materia de tributos cedidos polo Estado, en concreto do seu artigo 5, apartado 25, na redacción dada pola Lei 5/2025, do 23 de decembro, de medidas fiscais e tributarias.
+											364 container
+												365 text Segunda.-  Procedemento de elaboración da norma.
+											366 text Un aspecto fundamental da análise de legalidade que sobre o proxecto remitido debe realizar este Consello é o da verificación do seu procedemento de tramitación, operando a súa corrección como condicionante esencial, non só do axuste do regulamento ao principio de legalidade, senón tamén da habilitación do seu acerto e oportunidade.
+											367 text Como se ten sinalado reiteradamente por este Consello Consultivo, na elaboración de disposicións de carácter xeral deben observarse tanto as normas substantivas como as de carácter adxectivo que regulan a canle a través da cal se debe producir a actividade normativa da Administración, xa que forman parte do ordenamento xurídico ao que se atopan sometidos os poderes públicos na súa actuación (artigos 9.1 e 103.1 da Constitución española). Por conseguinte, a observancia do procedemento legalmente establecido elévase ao rango de medio de garantía das disposicións administrativas, polo que a súa esixencia é tanto maior cando se trata de emanar normas que se van inserir no ordenamento xurídico cunha vocación de permanencia e xeneralidade.
+											368 text A este procedemento de elaboración normativa resúltanlle aplicables, en primeiro termo, as prescricións contidas no título VI, artigos 129 e 133, da Lei 39/2015, do 1 de outubro, do procedemento administrativo común das administracións públicas (en diante, LPAC); e as disposicións ditadas ao abeiro das competencias estatais previstas no artigo 149.1.18ª da Constitución española, segundo precisa a disposición derradeira primeira da devandita lei.
+											369 container
+												370 text Cómpre referir que os citados artigos teñen un novo alcance constitucional após da Sentenza 55/2018, do 24 de maio, do Tribunal Constitucional (rec. de inconstitucionalidade 3628/2016) ( Boletín Oficial do Estado  do 22.6.2018) que no seu fundamento xurídico 7.c) sinala:
+											371 container
+												372 text “[…]  Los artículos 129 y 130.2 de la Ley 39/2015 no regulan las fases del procedimiento administrativo de elaboración de normas ni siquiera establecen la estructura general del íter procedimental. Se limitan a recoger directrices a las que deben responder las políticas, cualquiera que sea su signo, de los diferentes niveles de gobierno. Tales directrices proceden, con pocos cambios, de los derogados artículos 4 («Principios de buena regulación aplicables a las iniciativas de las administraciones Públicas») y 5 («Instrumentos de las administraciones Públicas para la mejora de la regulación») y 7 («Transparencia y seguimiento de la mejora regulatoria») de la Ley 2/2011. En particular, la obligación de justificar en el preámbulo la adecuación de la iniciativa reglamentaria a los principios de buena regulación (art. 129, apartados 1, segundo inciso, y 5) proviene del artículo 4.1, segundo inciso, de la Ley 2/2011 («En la iniciativa normativa quedará suficientemente justificada la adecuación a dichos principios»).  […]”.
+											373 container
+												374 text As anteditas directrices non impiden o seu desenvolvemento autonómico  “… ni la posibilidad de establecer otros diferentes …” , apunta o Tribunal Constitucional na citada sentenza, o que ocorre nas directrices semellantes que aparecen recollidas no título III (relativo á racionalización, simplificación e mellora da calidade normativa), da Lei 14/2013, do 26 de decembro, de racionalización do sector público autonómico, e, en particular, do requirido no seu artigo 37.a), no que se dispón que:
+											375 text “Para contribuír ao obxectivo de cumprir o principio de calidade normativa:
+											376 content list
+												377 container
+													378 AXListMarker a. 
+													379 text En todasas iniciativas normativas xustificarase a súa adecuación aos principios de seguridade xurídica, transparencia, accesibilidade, simplicidade e eficacia.
+											380 text [...]”.
+											381 container
+												382 text Así mesmo, para o obxectivo de cumprir o principio de calidade normativa, o artigo 37.b) da Lei 14/2013, do 26 de decembro, encomendou ao Consello da Xunta a aprobación dunhas “ directrices de técnica normativa que, carecendo do valor das normas xurídicas, proporcionen criterios técnicos ou pautas de redacción na elaboración de anteproxectos de lei, proxectos de decreto lexislativo e proxectos de disposicións administrativas de carácter xeral” .
+											383 container
+												384 text Para dar resposta a este mandato, o Consello da Xunta de Galicia aprobou, con data 5.11.2014, as correspondentes directrices de técnica normativa (en diante, DTN) (Resolución do 5.11.2014, da Dirección Xeral da Asesoría Xurídica Xeral, pola que se ordena a publicación do Acordo do Consello da Xunta de Galicia, do 30.10.2014, polo que se aproban as Directrices de técnica normativa ( Diario Oficial de Galicia  núm. 219, do 14.11.2014).
+											385 text Do mesmo xeito, resulta de aplicación o disposto no título II, capítulo II (artigos 40 e seguintes) da Lei 16/2010, do 17 de decembro, de organización e funcionamento da Administración xeral e do sector público autonómico de Galicia, que regula o procedemento de elaboración das disposicións administrativas de carácter xeral.
+											386 text Continuando coa análise da normativa aplicable ao procedemento de elaboración de disposicións de carácter xeral, procede citar o artigo 12 da Lei 15/2010, do 28 de decembro, de medidas fiscais e administrativas, que ordena elaborar unha memoria económica financeira e solicitar un informe da dirección xeral competente en materia de orzamentos. No seu desenvolvemento ditouse a Orde do 3.3.2011, pola que se establece o contido mínimo da memoria económico-financeira nos casos de iniciativas lexislativas ou de aprobación de normas con rango regulamentario, plans ou programas de actuación.
+											387 text Ademais, a Lei 1/2016, do 18 de xaneiro, de transparencia e bo goberno (artigo 9) esixe a publicación na sede electrónica ou páxina web, da relación circunstanciada e motivada dos procedementos de elaboración de anteproxectos de lei e de disposicións administrativas de carácter xeral que estean en tramitación, a partir do intre no que se produza a aprobación do anteproxecto.
+											388 text Pois ben, unha vez contrastada a documentación remitida, cabe deducir do actuado que o proceso de elaboración do proxecto adecuouse, no substancial, ás esixencias que, con relación á elaboración de disposicións de carácter xeral, se conteñen na citada normativa.
+											389 container
+												390 text Terceira.-  Marco normativo de referencia .
+											391 text A habilitación legal para ditar esta orde vén recollida no artigo 5 (deducións na cota íntegra autonómica do imposto sobre a renda das persoas físicas), apartado 25, do Decreto lexislativo 1/2011, do 28 de xullo, polo que se aproba o Texto refundido das disposición legais da Comunidade Autónoma de Galicia en materia de tributos cedidos polo Estado, que regula as deducións na cota íntegra autonómica do imposto sobre a renda das persoas físicas.
+											392 container
+												393 text A Lei 5/2025, do 23 de decembro de medidas fiscais e administrativas de Galicia, modificou no seu artigo 2 , Deducións na cota íntegra autonómica do imposto sobre a renda das persoas físicas , ese apartado 25 do precitado artigo 5.
+											394 text O precepto indicado establece que:
+											395 container
+												396 text “ Mediante unha orde da persoa titular da consellaría competente na materia de facenda concretaranse as categorías ou os elementos de  material escolar  e os límites aplicables que poderán incluírse na dedución ”
+											397 text .
+											398 container
+												399 text O proxecto de orde sometido a ditame vén a cumprimentar este mandato legal establecendo a regulación desta dedución co fin de dotar de seguridade xurídica tanto ás persoas contribuíntes como á propia administración tributaria, delimitando que bens se consideran  material escolar  para os efectos de dedución fiscal e cales son os límites aplicables a cada categoría.
+											400 container
+												401 text Cuarta.- Observacións de legalidade.
+											402 container
+												403 text Artigo 4. Límite do gasto
+											404 text O artigo 4 do proxecto de orde sinala:
+											405 container
+												406 text “O límite máximo do gasto total en  material escolar  por período impositivo será de 300 euros. Para o caso da categoría de  material escolar  deportivo ese límite será de 150 euros”.
+											407 text Esta previsión resulta claramente distinta do indicado na Lei, que dispón:
+											408 container
+												409 text “Os contribuíntes poderán deducir da cota íntegra autonómica o 15 % das cantidades satisfeitas no período impositivo para a adquisición de libros de texto editados para educación primaria e educación secundaria obrigatoria e educación especial, así como do  material escolar  para eses niveis educativos, para os seus descendentes matriculados en centros docentes sostidos con fondos públicos. A dedución terá como límite 105 euros por descendente matriculado”.
+											410 text De acordo co indicado neste precepto legal, se a dedución é do 15 % das contías satisfeitas, e ten coma tope 105 € por descendente matriculado, o límite de gasto será de 700 €. Porén, aplicando o teito previsto no proxecto de orde, 300 €, a dedución quedaría limitada a un máximo de 45 €.
+											411 text Diante desta discrepancia, resulta clara a desviación do proxecto a respecto da previsión legal ao limitar a contía da dedución prevista sen habilitación expresa para iso.
+											412 container
+												413 text É certo que a Lei ao establecer o contido da orde fala de “ límites aplicables ”, pero faino referido ás categorías e elementos, polo que debe entenderse que a Lei permite que a orde estableza límites parciais para cada categoría e/ou elemento, coma por exemplo fai o proxecto de orde a respecto do  material  deportivo. Así e todo, non pode alterar, directa ou indirectamente, o límite máximo da dedución establecido na Lei. Neste sentido, o beneficio fiscal outorgado pola Lei, o dereito a obter unha dedución na cota íntegra autonómica do 15 % ata un máximo de 105 €, está a reducirse sen que haxa unha habilitación legal para acometer dita minoración pola vía do desenvolvemento regulamentario.
+											414 text Ademais, debe terse en conta a reserva de lei que establece o artigo 8 da Lei 58/2003, do 17 de decembro, xeral tributaria, que sinala que se regularán por lei, entre outras, as deducións fiscais.
+											415 container
+												416 text Quinta.- Observacións de mellora.
+											417 container
+												418 text Artigo 2 .  Definición de  material escolar
+											419 container
+												420 text A Lei 5/2025, do 23 de decembro, de medidas fiscais e administrativas, ao regular a dedución pola adquisición de libros de texto e  material escolar  conten unha definición do que se debe entender por  material escolar  para os efectos desta dedución, indicando:
+											421 container
+												422 text “Entenderase por  material escolar  o conxunto de medios e recursos funxibles que facilitan a ensinanza e a aprendizaxe  escolar , tales como cadernos, lapis ou bolígrafos, así como a roupa e o calzado deportivo para a materia de educación física, destinados a seren utilizados polo alumnado para o desenvolvemento e a aplicación dos contidos determinados polo currículo das ensinanzas de réxime xeral establecidas pola normativa académica vixente. Mediante unha orde da persoa titular da consellaría competente na materia de facenda concretaranse as categorías ou os elementos de  material escolar  e os límites aplicables que poderán incluírse na dedución.”
+											423 container
+												424 text Pois ben, o artigo 2 do proxecto de orde sometido a ditame fai unha definición de  material escolar  indicando:
+											425 container
+												426 text “1. Enténdese por  material escolar  o conxunto de bens funxibles, instrumentos e recursos didácticos necesarios para o seguimento das ensinanzas nos niveis de educación primaria, secundaria obrigatoria e educación especial impartidos en centros docentes sostidos con fondos públicos.
+											427 text [...]”.
+											428 text Como pode observarse do cotexo de ambas as dúas definicións resulta a existencia de diversas diferencias, que aínda non tendo especial relevancia, poden dar lugar a discrepancias interpretativas contrarias á seguridade xurídica, que é precisamente o obxecto da orde de acordo coa súa parte expositiva, e así, se ben por razóns dunha mellor comprensión da norma é posible reproducir o establecido na Lei na disposición administrativa que a desenvolve, non cabe esquecer que un risco inherente a esta técnica é a posible confusión sobre a procedencia das normas contidas no texto regulamentario.
+											429 text Daquela, consonte coa DTN núm. 5, as recomendacións de técnica normativa esixen nestes casos a reprodución literal dos preceptos legais que se están a reproducir. Así, indica:
+											430 text “5. Reprodución de preceptos legais en normas regulamentarias.
+											431 text A reprodución de preceptos legais en normas regulamentarias só é admisible cando resulte indispensable para a adecuada comprensión e estruturación da norma. Nestes casos, exíxese a reprodución literal do precepto legal. O regulamento debe evitar a utilización de fórmulas alternativas á dicción legal, pois iso pode introducir dúbidas ou inseguridade na interpretación e na aplicación da norma.
+											432 text Xunto ao anterior, un risco inherente á técnica de reprodución de preceptos legais en normas regulamentarias radica na posible confusión sobre a procedencia das normas contidas no texto regulamentario, de aí que, cando se faga uso desa técnica, deberá incluírse unha referencia expresa aos preceptos legais que son obxecto de reprodución, precedida da expresión «de acordo con» ou «de conformidade con»”.
+											433 text Neste caso entende este Consello Consultivo que a citada discrepancia entre a norma legal e a norma regulamentaria, dada a súa dicción distinta nalgúns aspectos podería introducir un elemento de confusión contrario á seguridade xurídica.
+											434 container
+												435 text Artigo 3 . Exclusións
+											436 text O informe da Asesoría Xurídica da consellería sinala:
+											437 text “[...]
+											438 text SEGUNDA. Resulta conveniente a efectos e evitar dudas interpretativas e garantizar a seguridade xurídica que se clarexase se o concepto de ‘chándal uniformado’ debe figurar na categoría de inclusións ou exclusións.
+											439 text [...]”.
+											440 container
+												441 text Efectivamente, na medida en que o artigo 3 do proxecto de orde exclúe da consideración de  material escolar  os uniformes, poden suscitarse dúbidas sobre a consideración que deba darse ao que a letrada identifica coma “ chándal uniformado ”.
+											442 container
+												443 text Dado que a Lei fala de “ roupa e calzada deportivo ”, semella que en tal categoría deba incluírse o chándal, ou outra roupa deportiva, con independencia de que o centro  escolar  teña establecido o uso duns modelos estándares deste  material ; e, así, se ben a exclusión dos uniformes ten todo o sentido á vista da regulación legal que non fai referencia á roupa en xeral, se non exclusivamente á roupa deportiva, a exclusión desta roupa deportiva de uniformidade resultaría discriminatoria.
+											444 text Así as cousas, e para o axeitado cumprimento da finalidade do proxecto de orde de dotar de seguridade xurídica á aplicación desta dedución, semella conveniente sinalar en este apartado de exclusión:
+											445 container
+												446 text “- Uniformes, agás os referidos á roupa deportiva para a materia de Educación Física ”, ou outra semellante.
+											447 container
+												448 text Artigo 4. Límite de gasto
+											449 text Para unha mellor comprensión do límite de gasto debería clarexarse que este se aplica por cada descendente matriculado, de acordo co establecido no artigo 5.25.1 do Texto refundido das disposicións legais da Comunidade Autónoma de Galicia en materia de tributos cedidos polo Estado.
+											450 text CONCLUSIÓN
+											451 text Por todo o anteriormente exposto, o Pleno do Consello Consultivo de Galicia, por unanimidade dos seus membros, ditamina:
+											452 container
+												453 text “Que o proxecto de orde pola que se regulan as categorías e os elementos de  material escolar  adquiridos, e os límites aplicables para os efectos da dedución fiscal no imposto sobre a renda das persoas físicas no ámbito da Comunidade Autónoma de Galicia, resulta consonte ao ordenamento xurídico, tirante nos extremos que son obxecto de tacha de legalidade indicados na consideración cuarta deste ditame”.
+		13 container ccgalicia.es/
+			14 link ccgalicia.es/
+
+The focused UI element is 0 AXWebArea Consello Consultivo de Galicia, URL: knosys.es/ccgalicia/knpag?lang=GAL&x=index

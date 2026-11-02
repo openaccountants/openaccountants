@@ -1,0 +1,11 @@
+{
+  "name": "lirpf-current",
+  "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+  "utc": "2026-10-27T23:30:22.299139Z",
+  "status": 200,
+  "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+  "content_type": "text/html; charset=UTF-8",
+  "bytes": 2028806,
+  "sha256": "83c676e483981c4968dd1f0743631a822713ef146780db89f65593df232a385f",
+  "same_as_writer_body": true
+}

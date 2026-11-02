@@ -1,0 +1,2466 @@
+[
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 1,
+    "section": "Metadata",
+    "wording": "---\nname: es-modelo-111\ndescription: Use this skill whenever asked about Spanish Modelo 111 (quarterly withholdings on professional services). Trigger on phrases like \"Modelo 111\", \"retenciones profesionales\", \"retención 15%\", \"retención 7%\", \"quarterly withholdings Spain\", \"IRPF withholding professionals\", \"Modelo 190\", \"certificado de retenciones\", \"pago fraccionado\", \"retenedor\", or any question about withholding tax on payments to professionals in Spain. This skill covers Modelo 111 rates, filing deadlines, who must withhold, the relationship to Modelo 190 annual summary, interaction with Modelo 130, and compliance requirements. ALWAYS read this skill before touching any Spanish withholding tax work.\nversion: \"1.0\"\njurisdiction: ES\ntax_year: 2025\nlast_updated: 2026-07-13\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ncategory: international\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+    "destination": "Current supplied metadata/H1v1.2/scope; oldversion/year/publication wording retained as history."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 15,
+    "section": "Metadata",
+    "wording": "# ES Modelo 111",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current supplied metadata/H1v1.2/scope; oldversion/year/publication wording retained as history."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 17,
+    "section": "## Spain Modelo 111 -- Quarterly IRPF Withholdings Skill v1.0",
+    "wording": "## Spain Modelo 111 -- Quarterly IRPF Withholdings Skill v1.0",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current H1 and Who paragraph; title is presentation, not a separatetaxfigure."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 19,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "## Section 1 -- Quick Reference",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 21,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "**Quick Reference**",
+    "destination": "Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 23,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "| Field | Value |",
+    "destination": "Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 24,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 25,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "| Country | Spain (Reino de España) |",
+    "destination": "Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 26,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "| Tax | IRPF Withholdings (Retenciones e ingresos a cuenta) |",
+    "destination": "Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 27,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "| Form | Modelo 111 (quarterly) |",
+    "destination": "Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 28,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "| Currency | EUR only |",
+    "destination": "Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 29,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "| Tax year | 1 January -- 31 December 2025 |",
+    "destination": "Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 30,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "| Primary legislation | Ley 35/2006 del IRPF, Art. 99-101; Real Decreto 439/2007, Art. 74-95 |",
+    "destination": "Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 31,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "| Tax authority | Agencia Estatal de Administración Tributaria (AEAT) |",
+    "destination": "Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 32,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "| Filing portal | Sede electrónica AEAT (sede.agenciatributaria.gob.es) |",
+    "destination": "Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 33,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "| Annual summary | Modelo 190 (filed January of following year) |",
+    "destination": "Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 34,
+    "section": "## Section 1 -- Quick Reference",
+    "wording": "| Skill version | 1.0 |",
+    "destination": "Current Who/Rates/Deadlines quickreference information with actual2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 36,
+    "section": "## Section 1 -- Quick Reference / ### Core Principle",
+    "wording": "### Core Principle",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base: actualpaid/credited gross subject amounts, withholding liability and filing/payment reconciliation."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 38,
+    "section": "## Section 1 -- Quick Reference / ### Core Principle",
+    "wording": "Modelo 111 is the quarterly declaration used by businesses, professionals, and entities that WITHHOLD IRPF (retenciones) from payments made to:\n- Employed workers (rendimientos del trabajo)\n- Professionals / freelancers (rendimientos de actividades profesionales)\n- Prize winners (premios)\n- Certain other categories",
+    "destination": "Current The base: actualpaid/credited gross subject amounts, withholding liability and filing/payment reconciliation."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 44,
+    "section": "## Section 1 -- Quick Reference / ### Core Principle",
+    "wording": "This skill focuses on **retenciones on professional services** (pagos a profesionales), which is the most common scenario for small businesses and autónomos paying other autónomos.",
+    "destination": "Current The base: actualpaid/credited gross subject amounts, withholding liability and filing/payment reconciliation."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 46,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "### Standard Withholding Rates (2025)",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 48,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "**Standard Withholding Rates (2025)**",
+    "destination": "Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 50,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "| Category | Rate | Notes |",
+    "destination": "Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 51,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "| --- | --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 52,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "| Professional services (standard) | 15% | General rate for payments to autónomos/professionals |",
+    "destination": "Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 53,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "| New professionals (first 3 years) | 7% | First 3 fiscal years of activity (must communicate to payer) |",
+    "destination": "Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 54,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "| Training courses / conferences | 15% | Payments to speakers, trainers |",
+    "destination": "Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 55,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "| Intellectual property (author, non-habitual) | 15% | Rights exploitation |",
+    "destination": "Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 56,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "| Industrial property | 15% | Patent/trademark licensing |",
+    "destination": "Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 57,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "| Agricultural/livestock (general) | 2% | Módulos estimación objetiva |",
+    "destination": "Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 58,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "| Agricultural/livestock (engorde) | 1% | Fattening activities |",
+    "destination": "Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 59,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "| Directors / board members (administradores) | 35% | Standard for board fees |",
+    "destination": "Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 60,
+    "section": "## Section 1 -- Quick Reference / ### Standard Withholding Rates (2025)",
+    "wording": "| Directors (entity < €100K turnover) | 19% | Reduced for small entities |",
+    "destination": "Current Rates table: professional15%/eligible7%, agricultural2%/specified1%, modules1%, director35%/19%, employment personalised and special rights categories, with current2026 scope."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 62,
+    "section": "## Section 1 -- Quick Reference / ### Filing Calendar (2025)",
+    "wording": "### Filing Calendar (2025)",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Deadlines and filing: quarterly/monthly20day windows, actualdebit calendar and laterRD960Julybridge; no obsoleteJulydeferral."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 64,
+    "section": "## Section 1 -- Quick Reference / ### Filing Calendar (2025)",
+    "wording": "**Filing Calendar (2025)**",
+    "destination": "Current Deadlines and filing: quarterly/monthly20day windows, actualdebit calendar and laterRD960Julybridge; no obsoleteJulydeferral."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 66,
+    "section": "## Section 1 -- Quick Reference / ### Filing Calendar (2025)",
+    "wording": "| Quarter | Period | Due Date |",
+    "destination": "Current Deadlines and filing: quarterly/monthly20day windows, actualdebit calendar and laterRD960Julybridge; no obsoleteJulydeferral."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 67,
+    "section": "## Section 1 -- Quick Reference / ### Filing Calendar (2025)",
+    "wording": "| --- | --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Deadlines and filing: quarterly/monthly20day windows, actualdebit calendar and laterRD960Julybridge; no obsoleteJulydeferral."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 68,
+    "section": "## Section 1 -- Quick Reference / ### Filing Calendar (2025)",
+    "wording": "| Q1 (1T) | January -- March | 1 -- 20 April |",
+    "destination": "Current Deadlines and filing: quarterly/monthly20day windows, actualdebit calendar and laterRD960Julybridge; no obsoleteJulydeferral."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 69,
+    "section": "## Section 1 -- Quick Reference / ### Filing Calendar (2025)",
+    "wording": "| Q2 (2T) | April -- June | 1 -- 20 July |",
+    "destination": "Current Deadlines and filing: quarterly/monthly20day windows, actualdebit calendar and laterRD960Julybridge; no obsoleteJulydeferral."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 70,
+    "section": "## Section 1 -- Quick Reference / ### Filing Calendar (2025)",
+    "wording": "| Q3 (3T) | July -- September | 1 -- 20 October |",
+    "destination": "Current legislative bridge identifies RD960 replacement/current108/2026calendar; original form-order July exception retained historically, not controlling the current monthly route."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 71,
+    "section": "## Section 1 -- Quick Reference / ### Filing Calendar (2025)",
+    "wording": "| Q4 (4T) | October -- December | 1 -- 20 January (2026) |",
+    "destination": "Current Deadlines and filing: quarterly/monthly20day windows, actualdebit calendar and laterRD960Julybridge; no obsoleteJulydeferral."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 73,
+    "section": "## Section 1 -- Quick Reference / ### Filing Calendar (2025)",
+    "wording": "- **Large companies (gran empresa) filing frequency** — Monthly filing by the 20th of the following month.",
+    "destination": "Current Deadlines and filing: quarterly/monthly20day windows, actualdebit calendar and laterRD960Julybridge; no obsoleteJulydeferral."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 75,
+    "section": "## Section 1 -- Quick Reference / ### Related Forms",
+    "wording": "### Related Forms",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base / annual190reconciliation, Deadlines190electronicJanuary/certificates and distinct130/payee-credit paragraph."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 77,
+    "section": "## Section 1 -- Quick Reference / ### Related Forms",
+    "wording": "**Related Forms**",
+    "destination": "Current The base / annual190reconciliation, Deadlines190electronicJanuary/certificates and distinct130/payee-credit paragraph."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 79,
+    "section": "## Section 1 -- Quick Reference / ### Related Forms",
+    "wording": "| Form | Purpose | Deadline |",
+    "destination": "Current The base / annual190reconciliation, Deadlines190electronicJanuary/certificates and distinct130/payee-credit paragraph."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 80,
+    "section": "## Section 1 -- Quick Reference / ### Related Forms",
+    "wording": "| --- | --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base / annual190reconciliation, Deadlines190electronicJanuary/certificates and distinct130/payee-credit paragraph."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 81,
+    "section": "## Section 1 -- Quick Reference / ### Related Forms",
+    "wording": "| Modelo 111 | Quarterly declaration of withholdings | Quarterly (see above) |",
+    "destination": "Current The base / annual190reconciliation, Deadlines190electronicJanuary/certificates and distinct130/payee-credit paragraph."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 82,
+    "section": "## Section 1 -- Quick Reference / ### Related Forms",
+    "wording": "| Modelo 190 | Annual summary (all recipients) | January 1-31 of following year |",
+    "destination": "Current The base / annual190reconciliation, Deadlines190electronicJanuary/certificates and distinct130/payee-credit paragraph."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 83,
+    "section": "## Section 1 -- Quick Reference / ### Related Forms",
+    "wording": "| Certificado de retenciones | Certificate issued to each professional | Before February 1 of following year |",
+    "destination": "Current Deadlines and filing / recipient certificate: certificate before recipient IRPF window; no universal1February requirement."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 84,
+    "section": "## Section 1 -- Quick Reference / ### Related Forms",
+    "wording": "| Modelo 130 | Quarterly estimated payment by professional (pago fraccionado) | Same quarterly dates |",
+    "destination": "Current The base / annual190reconciliation, Deadlines190electronicJanuary/certificates and distinct130/payee-credit paragraph."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 86,
+    "section": "## Section 1 -- Quick Reference / ### Conservative Defaults",
+    "wording": "### Conservative Defaults",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Who/Rates and sixintakequestions:actualpayer/recipientstatus/eligibility/paymentfacts, not invented universalwithholding or rates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 88,
+    "section": "## Section 1 -- Quick Reference / ### Conservative Defaults",
+    "wording": "**Conservative Defaults**",
+    "destination": "Current Who/Rates and sixintakequestions:actualpayer/recipientstatus/eligibility/paymentfacts, not invented universalwithholding or rates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 90,
+    "section": "## Section 1 -- Quick Reference / ### Conservative Defaults",
+    "wording": "| Ambiguity | Default |",
+    "destination": "Current Who/Rates and sixintakequestions:actualpayer/recipientstatus/eligibility/paymentfacts, not invented universalwithholding or rates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 91,
+    "section": "## Section 1 -- Quick Reference / ### Conservative Defaults",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Who/Rates and sixintakequestions:actualpayer/recipientstatus/eligibility/paymentfacts, not invented universalwithholding or rates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 92,
+    "section": "## Section 1 -- Quick Reference / ### Conservative Defaults",
+    "wording": "| Unknown whether professional qualifies for 7% | Apply 15% (standard rate) |",
+    "destination": "Current Who/Rates and sixintakequestions:actualpayer/recipientstatus/eligibility/paymentfacts, not invented universalwithholding or rates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 93,
+    "section": "## Section 1 -- Quick Reference / ### Conservative Defaults",
+    "wording": "| Unknown whether payer must withhold | If payer is a business/professional making payment to another professional for services -- must withhold |",
+    "destination": "Current Who/Rates and sixintakequestions:actualpayer/recipientstatus/eligibility/paymentfacts, not invented universalwithholding or rates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 94,
+    "section": "## Section 1 -- Quick Reference / ### Conservative Defaults",
+    "wording": "| Unknown whether to file negative Modelo 111 | File with zero amount (declaración negativa) if registered but no payments in quarter |",
+    "destination": "Current Who/Rates and sixintakequestions:actualpayer/recipientstatus/eligibility/paymentfacts, not invented universalwithholding or rates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 96,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener)",
+    "wording": "## Section 2 -- Who Must Withhold (Obligados a Retener)",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Who this applies and Rates, then actualpaidbase in The base."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 98,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.1 Entities That Must Withhold",
+    "wording": "### 2.1 Entities That Must Withhold",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Who this applies: RIRPF76legalpersons/businessindividuals and foreign-noPEemployment payer distinction; privateconsumers outsidebusiness excluded."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 100,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.1 Entities That Must Withhold",
+    "wording": "**2.1 Entities That Must Withhold**",
+    "destination": "Current Who this applies: RIRPF76legalpersons/businessindividuals and foreign-noPEemployment payer distinction; privateconsumers outsidebusiness excluded."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 102,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.1 Entities That Must Withhold",
+    "wording": "| Payer Type | Must Withhold? |",
+    "destination": "Current Who this applies: RIRPF76legalpersons/businessindividuals and foreign-noPEemployment payer distinction; privateconsumers outsidebusiness excluded."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 103,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.1 Entities That Must Withhold",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Who this applies: RIRPF76legalpersons/businessindividuals and foreign-noPEemployment payer distinction; privateconsumers outsidebusiness excluded."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 104,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.1 Entities That Must Withhold",
+    "wording": "| Sociedades (SL, SA) | Yes -- always |",
+    "destination": "Current Who this applies: RIRPF76legalpersons/businessindividuals and foreign-noPEemployment payer distinction; privateconsumers outsidebusiness excluded."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 105,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.1 Entities That Must Withhold",
+    "wording": "| Autónomos / professionals (individual) | Yes -- when paying other professionals for services |",
+    "destination": "Current Who this applies: RIRPF76legalpersons/businessindividuals and foreign-noPEemployment payer distinction; privateconsumers outsidebusiness excluded."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 106,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.1 Entities That Must Withhold",
+    "wording": "| Public administration | Yes |",
+    "destination": "Current Who this applies: RIRPF76legalpersons/businessindividuals and foreign-noPEemployment payer distinction; privateconsumers outsidebusiness excluded."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 107,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.1 Entities That Must Withhold",
+    "wording": "| Comunidades de propietarios (if paying professionals) | Yes |",
+    "destination": "Current Who this applies: RIRPF76legalpersons/businessindividuals and foreign-noPEemployment payer distinction; privateconsumers outsidebusiness excluded."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 108,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.1 Entities That Must Withhold",
+    "wording": "| Individuals (not in economic activity) paying professionals | NO -- private individuals do not withhold |",
+    "destination": "Current Who this applies: RIRPF76legalpersons/businessindividuals and foreign-noPEemployment payer distinction; privateconsumers outsidebusiness excluded."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 109,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.1 Entities That Must Withhold",
+    "wording": "| Foreign entities without permanent establishment in Spain | Generally NO (unless PE exists) |",
+    "destination": "Current Who this applies: RIRPF76legalpersons/businessindividuals and foreign-noPEemployment payer distinction; privateconsumers outsidebusiness excluded."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 111,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.2 Payments Subject to Withholding",
+    "wording": "### 2.2 Payments Subject to Withholding",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Who and Rates: Order111art2incomeclasses; professionalindividualversusordinarySL/SArecipient distinction."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 113,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.2 Payments Subject to Withholding",
+    "wording": "**2.2 Payments Subject to Withholding**",
+    "destination": "Current Who and Rates: Order111art2incomeclasses; professionalindividualversusordinarySL/SArecipient distinction."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 115,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.2 Payments Subject to Withholding",
+    "wording": "| Payment Type | Withholding? | Rate |",
+    "destination": "Current Who and Rates: Order111art2incomeclasses; professionalindividualversusordinarySL/SArecipient distinction."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 116,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.2 Payments Subject to Withholding",
+    "wording": "| --- | --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Who and Rates: Order111art2incomeclasses; professionalindividualversusordinarySL/SArecipient distinction."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 117,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.2 Payments Subject to Withholding",
+    "wording": "| Invoice from professional autónomo (abogado, consultor, diseñador, etc.) | Yes | 15% (or 7% if new) |",
+    "destination": "Current Who and Rates: Order111art2incomeclasses; professionalindividualversusordinarySL/SArecipient distinction."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 118,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.2 Payments Subject to Withholding",
+    "wording": "| Invoice from SL/SA (company) | NO -- companies do not have retenciones on services (they pay Impuesto de Sociedades) |  |",
+    "destination": "Current Who and Rates: Order111art2incomeclasses; professionalindividualversusordinarySL/SArecipient distinction."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 119,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.2 Payments Subject to Withholding",
+    "wording": "| Invoice for goods (not services) | NO |  |",
+    "destination": "Current Who and Rates: Order111art2incomeclasses; professionalindividualversusordinarySL/SArecipient distinction."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 120,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.2 Payments Subject to Withholding",
+    "wording": "| Invoice from agricultural module regime | Yes | 2% (or 1%) |",
+    "destination": "Current Who and Rates: Order111art2incomeclasses; professionalindividualversusordinarySL/SArecipient distinction."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 121,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.2 Payments Subject to Withholding",
+    "wording": "| Board member fees (administrador) | Yes | 35% (or 19%) |",
+    "destination": "Current Who and Rates: Order111art2incomeclasses; professionalindividualversusordinarySL/SArecipient distinction."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 122,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.2 Payments Subject to Withholding",
+    "wording": "| Salary to employees | Yes | Variable IRPF rate per employee (calculated per tables) |",
+    "destination": "Current Who and Rates: Order111art2incomeclasses; professionalindividualversusordinarySL/SArecipient distinction."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 124,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.3 How Withholding Works on a Professional Invoice",
+    "wording": "### 2.3 How Withholding Works on a Professional Invoice",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base cashF+VAT−H/paymentliability workingpaper and workedexample1:fee1000/VAT210/withholding150/cash1060."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 126,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.3 How Withholding Works on a Professional Invoice",
+    "wording": "A professional's invoice includes:",
+    "destination": "Current The base cashF+VAT−H/paymentliability workingpaper and workedexample1:fee1000/VAT210/withholding150/cash1060."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 128,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.3 How Withholding Works on a Professional Invoice",
+    "wording": "```\nBase imponible (fee):              €1,000.00\nIVA (21%):                         +€210.00\nRetención IRPF (15%):             -€150.00\n───────────────────────────────────────────\nTotal a pagar:                     €1,060.00\n```",
+    "destination": "Current The base cashF+VAT−H/paymentliability workingpaper and workedexample1:fee1000/VAT210/withholding150/cash1060."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 136,
+    "section": "## Section 2 -- Who Must Withhold (Obligados a Retener) / ### 2.3 How Withholding Works on a Professional Invoice",
+    "wording": "The payer:\n1. Pays the professional €1,060.00\n2. Retains €150.00 (which they must deposit to AEAT via Modelo 111)\n3. The professional declares the full €1,000 as income and credits the €150 retained against their annual IRPF",
+    "destination": "Current The base cashF+VAT−H/paymentliability workingpaper and workedexample1:fee1000/VAT210/withholding150/cash1060."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 141,
+    "section": "## Section 3 -- The 7% Reduced Rate (New Professionals)",
+    "wording": "## Section 3 -- The 7% Reduced Rate (New Professionals)",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Rates startup7%/15% and signednotice/no-prioractivity conditions; actualtaxperiodsnot36months."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 143,
+    "section": "## Section 3 -- The 7% Reduced Rate (New Professionals) / ### 3.1 Conditions for 7% Rate",
+    "wording": "### 3.1 Conditions for 7% Rate",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Rates / Starting professional row and followingparagraph:7%starttaxperiod+nexttwo, no professionalactivityprecedingyear, actualsignedcommunication."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 145,
+    "section": "## Section 3 -- The 7% Reduced Rate (New Professionals) / ### 3.1 Conditions for 7% Rate",
+    "wording": "**3.1 Conditions for 7% Rate**",
+    "destination": "Current Rates / Starting professional row and followingparagraph:7%starttaxperiod+nexttwo, no professionalactivityprecedingyear, actualsignedcommunication."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 147,
+    "section": "## Section 3 -- The 7% Reduced Rate (New Professionals) / ### 3.1 Conditions for 7% Rate",
+    "wording": "| Condition | Requirement |",
+    "destination": "Current Rates / Starting professional row and followingparagraph:7%starttaxperiod+nexttwo, no professionalactivityprecedingyear, actualsignedcommunication."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 148,
+    "section": "## Section 3 -- The 7% Reduced Rate (New Professionals) / ### 3.1 Conditions for 7% Rate",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Rates / Starting professional row and followingparagraph:7%starttaxperiod+nexttwo, no professionalactivityprecedingyear, actualsignedcommunication."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 149,
+    "section": "## Section 3 -- The 7% Reduced Rate (New Professionals) / ### 3.1 Conditions for 7% Rate",
+    "wording": "| First activity | Professional has not been in an economic activity in the prior year |",
+    "destination": "Current Rates / Starting professional row and followingparagraph:7%starttaxperiod+nexttwo, no professionalactivityprecedingyear, actualsignedcommunication."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 150,
+    "section": "## Section 3 -- The 7% Reduced Rate (New Professionals) / ### 3.1 Conditions for 7% Rate",
+    "wording": "| Time limit | Applies during the tax year of commencement + following 2 tax years (3 years total) |",
+    "destination": "Current Rates / Starting professional row and followingparagraph:7%starttaxperiod+nexttwo, no professionalactivityprecedingyear, actualsignedcommunication."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 151,
+    "section": "## Section 3 -- The 7% Reduced Rate (New Professionals) / ### 3.1 Conditions for 7% Rate",
+    "wording": "| Communication | Professional must communicate in writing to the payer that they qualify for 7% |",
+    "destination": "Current Rates / Starting professional row and followingparagraph:7%starttaxperiod+nexttwo, no professionalactivityprecedingyear, actualsignedcommunication."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 152,
+    "section": "## Section 3 -- The 7% Reduced Rate (New Professionals) / ### 3.1 Conditions for 7% Rate",
+    "wording": "| Verification | Payer is entitled to rely on the professional's written communication |",
+    "destination": "Current Rates / Starting professional row and followingparagraph:7%starttaxperiod+nexttwo, no professionalactivityprecedingyear, actualsignedcommunication."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 154,
+    "section": "## Section 3 -- The 7% Reduced Rate (New Professionals) / ### 3.2 Communication Requirements",
+    "wording": "### 3.2 Communication Requirements",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Rates startup conditions and Ask question3: signedpayernotice/evidence, RIRPF95; not a pointer to boxmapping."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 156,
+    "section": "## Section 3 -- The 7% Reduced Rate (New Professionals) / ### 3.2 Communication Requirements",
+    "wording": "The professional must provide a signed document (comunicación) stating:\n- Full name and NIF/NIE\n- Statement that they are in the first 3 fiscal years of activity (alta in IAE)\n- Date of alta (start of activity)\n- Declaration that 7% retention applies",
+    "destination": "Current Rates startup conditions and Ask question3: signedpayernotice/evidence, RIRPF95; not a pointer to boxmapping."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 162,
+    "section": "## Section 3 -- The 7% Reduced Rate (New Professionals) / ### 3.2 Communication Requirements",
+    "wording": "If no communication is received, the payer must apply 15%.",
+    "destination": "Current Rates startup conditions and Ask question3: signedpayernotice/evidence, RIRPF95; not a pointer to boxmapping."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 164,
+    "section": "## Section 4 -- Modelo 111 Filing",
+    "wording": "## Section 4 -- Modelo 111 Filing",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base boxmap/correction and Deadlines filing/payment evidence."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 166,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.1 Form Structure",
+    "wording": "### 4.1 Form Structure",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base statutorybox01–30map; income/cash/kind/recipient counts plus fullsum and sameperiod complementarylogic."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 168,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.1 Form Structure",
+    "wording": "**4.1 Form Structure**",
+    "destination": "Current The base statutorybox01–30map; income/cash/kind/recipient counts plus fullsum and sameperiod complementarylogic."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 170,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.1 Form Structure",
+    "wording": "| Section | Content |",
+    "destination": "Current The base statutorybox01–30map; income/cash/kind/recipient counts plus fullsum and sameperiod complementarylogic."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 171,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.1 Form Structure",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base statutorybox01–30map; income/cash/kind/recipient counts plus fullsum and sameperiod complementarylogic."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 172,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.1 Form Structure",
+    "wording": "| Sección A | Identification (NIF, name, period) |",
+    "destination": "Current The base statutorybox01–30map; income/cash/kind/recipient counts plus fullsum and sameperiod complementarylogic."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 173,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.1 Form Structure",
+    "wording": "| Sección B | Rendimientos del trabajo (employee salaries) |",
+    "destination": "Current The base statutorybox01–30map; income/cash/kind/recipient counts plus fullsum and sameperiod complementarylogic."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 174,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.1 Form Structure",
+    "wording": "| Sección C | Rendimientos de actividades profesionales |",
+    "destination": "Current The base statutorybox01–30map; income/cash/kind/recipient counts plus fullsum and sameperiod complementarylogic."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 175,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.1 Form Structure",
+    "wording": "| Sección D | Premios (prizes) |",
+    "destination": "Current The base statutorybox01–30map; income/cash/kind/recipient counts plus fullsum and sameperiod complementarylogic."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 176,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.1 Form Structure",
+    "wording": "| Sección E | Ganancias patrimoniales (forest exploitation) |",
+    "destination": "Current The base statutorybox01–30map; income/cash/kind/recipient counts plus fullsum and sameperiod complementarylogic."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 177,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.1 Form Structure",
+    "wording": "| Sección F | Imputaciones de renta (certain income attributions) |",
+    "destination": "Current The base statutorybox01–30map; income/cash/kind/recipient counts plus fullsum and sameperiod complementarylogic."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 178,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.1 Form Structure",
+    "wording": "| Total | Sum of all retenciones to deposit |",
+    "destination": "Current The base statutorybox01–30map; income/cash/kind/recipient counts plus fullsum and sameperiod complementarylogic."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 180,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.2 Section C Detail (Professional Services)",
+    "wording": "### 4.2 Section C Detail (Professional Services)",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base / Economicactivitiescash07/08/09 andkind10/11/12, distinctpaidrecipients rather than invoicecount; original informalSectionC replaced by actualformcoordinates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 182,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.2 Section C Detail (Professional Services)",
+    "wording": "**4.2 Section C Detail (Professional Services)**",
+    "destination": "Current The base / Economicactivitiescash07/08/09 andkind10/11/12, distinctpaidrecipients rather than invoicecount; original informalSectionC replaced by actualformcoordinates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 184,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.2 Section C Detail (Professional Services)",
+    "wording": "| Field | Content |",
+    "destination": "Current The base / Economicactivitiescash07/08/09 andkind10/11/12, distinctpaidrecipients rather than invoicecount; original informalSectionC replaced by actualformcoordinates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 185,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.2 Section C Detail (Professional Services)",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base / Economicactivitiescash07/08/09 andkind10/11/12, distinctpaidrecipients rather than invoicecount; original informalSectionC replaced by actualformcoordinates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 186,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.2 Section C Detail (Professional Services)",
+    "wording": "| Number of recipients (perceptores) | Count of distinct professionals paid in the quarter |",
+    "destination": "Current The base / Economicactivitiescash07/08/09 andkind10/11/12, distinctpaidrecipients rather than invoicecount; original informalSectionC replaced by actualformcoordinates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 187,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.2 Section C Detail (Professional Services)",
+    "wording": "| Base of withholdings (base de retenciones) | Total value of professional invoices (base imponible, not including IVA) |",
+    "destination": "Current The base / Economicactivitiescash07/08/09 andkind10/11/12, distinctpaidrecipients rather than invoicecount; original informalSectionC replaced by actualformcoordinates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 188,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.2 Section C Detail (Professional Services)",
+    "wording": "| Retenciones (amounts withheld) | Total retenciones withheld (base × rate) |",
+    "destination": "Current The base / Economicactivitiescash07/08/09 andkind10/11/12, distinctpaidrecipients rather than invoicecount; original informalSectionC replaced by actualformcoordinates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 189,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.2 Section C Detail (Professional Services)",
+    "wording": "| Ingresos a cuenta | Amounts paid on behalf where retención not possible (less common) |",
+    "destination": "Current The base / Economicactivitiescash07/08/09 andkind10/11/12, distinctpaidrecipients rather than invoicecount; original informalSectionC replaced by actualformcoordinates."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 191,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.3 Filing Method",
+    "wording": "### 4.3 Filing Method",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Deadlines / electronicfiling and receipt/payment distinction underHAP2194; SL/SAmandatory regardlessquarterlyfrequency."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 193,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.3 Filing Method",
+    "wording": "**4.3 Filing Method**",
+    "destination": "Current Deadlines / electronicfiling and receipt/payment distinction underHAP2194; SL/SAmandatory regardlessquarterlyfrequency."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 195,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.3 Filing Method",
+    "wording": "| Method | Detail |",
+    "destination": "Current Deadlines / electronicfiling and receipt/payment distinction underHAP2194; SL/SAmandatory regardlessquarterlyfrequency."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 196,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.3 Filing Method",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Deadlines / electronicfiling and receipt/payment distinction underHAP2194; SL/SAmandatory regardlessquarterlyfrequency."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 197,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.3 Filing Method",
+    "wording": "| Electronic (certificado digital) | Most common; mandatory for SLs and larger entities |",
+    "destination": "Current Deadlines / electronicfiling and receipt/payment distinction underHAP2194; SL/SAmandatory regardlessquarterlyfrequency."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 198,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.3 Filing Method",
+    "wording": "| Electronic (Cl@ve PIN) | Available for autónomos and individuals |",
+    "destination": "Current Deadlines / electronicfiling and receipt/payment distinction underHAP2194; SL/SAmandatory regardlessquarterlyfrequency."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 199,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.3 Filing Method",
+    "wording": "| Paper | Only for specific cases (pre-printed forms) |",
+    "destination": "Current Deadlines / electronicfiling and receipt/payment distinction underHAP2194; SL/SAmandatory regardlessquarterlyfrequency."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 200,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.3 Filing Method",
+    "wording": "| Negative declaration | Must file even if no payments made (declaración negativa) if registered as retenedor |",
+    "destination": "Current Deadlines / electronicfiling and receipt/payment distinction underHAP2194; SL/SAmandatory regardlessquarterlyfrequency."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 202,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.4 Payment",
+    "wording": "### 4.4 Payment",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Deadlines / filing/payment/debit evidence and LGT65.2.bwithholdingdebtdeferral exclusion; actualcalendarcutoffs."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 204,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.4 Payment",
+    "wording": "**4.4 Payment**",
+    "destination": "Current Deadlines / filing/payment/debit evidence and LGT65.2.bwithholdingdebtdeferral exclusion; actualcalendarcutoffs."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 206,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.4 Payment",
+    "wording": "| Method | Detail |",
+    "destination": "Current Deadlines / filing/payment/debit evidence and LGT65.2.bwithholdingdebtdeferral exclusion; actualcalendarcutoffs."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 207,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.4 Payment",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Deadlines / filing/payment/debit evidence and LGT65.2.bwithholdingdebtdeferral exclusion; actualcalendarcutoffs."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 208,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.4 Payment",
+    "wording": "| Direct debit (domiciliación) | Must file by 15th of month (5 days before deadline) |",
+    "destination": "Current Deadlines / filing/payment/debit evidence and LGT65.2.bwithholdingdebtdeferral exclusion; actualcalendarcutoffs."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 209,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.4 Payment",
+    "wording": "| NRC (electronic bank payment) | Available up to last day |",
+    "destination": "Current Deadlines / filing/payment/debit evidence and LGT65.2.bwithholdingdebtdeferral exclusion; actualcalendarcutoffs."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 210,
+    "section": "## Section 4 -- Modelo 111 Filing / ### 4.4 Payment",
+    "wording": "| Bank in person | With payment letter from AEAT |",
+    "destination": "Current Deadlines / filing/payment/debit evidence and LGT65.2.bwithholdingdebtdeferral exclusion; actualcalendarcutoffs."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 212,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary)",
+    "wording": "## Section 5 -- Modelo 190 (Annual Summary)",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base annual190reconciliation and Deadlines Januaryelectronicwindow."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 214,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.1 Purpose",
+    "wording": "### 5.1 Purpose",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base / year190reconciliation, including requirednonwithheld/exemptpopulation, not merelypositive111payments."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 216,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.1 Purpose",
+    "wording": "Modelo 190 is the annual informative declaration summarizing ALL withholdings declared via Modelo 111 during the year. It provides recipient-by-recipient detail.",
+    "destination": "Current The base / year190reconciliation, including requirednonwithheld/exemptpopulation, not merelypositive111payments."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 218,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.2 Content per Recipient",
+    "wording": "### 5.2 Content per Recipient",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base annualrecipientrecords/certificates and RIRPF108 nominative190data."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 220,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.2 Content per Recipient",
+    "wording": "**5.2 Content per Recipient**",
+    "destination": "Current The base annualrecipientrecords/certificates and RIRPF108 nominative190data."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 222,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.2 Content per Recipient",
+    "wording": "| Field | Detail |",
+    "destination": "Current The base annualrecipientrecords/certificates and RIRPF108 nominative190data."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 223,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.2 Content per Recipient",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base annualrecipientrecords/certificates and RIRPF108 nominative190data."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 224,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.2 Content per Recipient",
+    "wording": "| NIF of recipient | Professional's tax ID |",
+    "destination": "Current The base annualrecipientrecords/certificates and RIRPF108 nominative190data."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 225,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.2 Content per Recipient",
+    "wording": "| Name | Full name or company name |",
+    "destination": "Current The base annualrecipientrecords/certificates and RIRPF108 nominative190data."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 226,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.2 Content per Recipient",
+    "wording": "| Province code | Province of recipient |",
+    "destination": "Current The base annualrecipientrecords/certificates and RIRPF108 nominative190data."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 227,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.2 Content per Recipient",
+    "wording": "| Clave (type code) | G = professional activities; A = employment; etc. |",
+    "destination": "Current The base annualrecipientrecords/certificates and RIRPF108 nominative190data."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 228,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.2 Content per Recipient",
+    "wording": "| Total payments (percepciones) | Total base of invoices in the year |",
+    "destination": "Current The base annualrecipientrecords/certificates and RIRPF108 nominative190data."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 229,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.2 Content per Recipient",
+    "wording": "| Total retenciones | Total withholding for the year |",
+    "destination": "Current The base annualrecipientrecords/certificates and RIRPF108 nominative190data."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 231,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.3 Filing",
+    "wording": "### 5.3 Filing",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Deadlines / ElectronicModelo190January1–31 row, not a universalrecipientcertificate1Februarydeadline."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 233,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.3 Filing",
+    "wording": "**5.3 Filing**",
+    "destination": "Current Deadlines / ElectronicModelo190January1–31 row, not a universalrecipientcertificate1Februarydeadline."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 235,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.3 Filing",
+    "wording": "| Item | Detail |",
+    "destination": "Current Deadlines / ElectronicModelo190January1–31 row, not a universalrecipientcertificate1Februarydeadline."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 236,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.3 Filing",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Deadlines / ElectronicModelo190January1–31 row, not a universalrecipientcertificate1Februarydeadline."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 237,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.3 Filing",
+    "wording": "| Deadline | 1 -- 31 January of the following year |",
+    "destination": "Current Deadlines / ElectronicModelo190January1–31 row, not a universalrecipientcertificate1Februarydeadline."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 238,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.3 Filing",
+    "wording": "| Method | Electronic (mandatory for >15 recipients or SL/SA) |",
+    "destination": "Current Deadlines / ElectronicModelo190January1–31 row, not a universalrecipientcertificate1Februarydeadline."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 239,
+    "section": "## Section 5 -- Modelo 190 (Annual Summary) / ### 5.3 Filing",
+    "wording": "| Penalty for late filing | €20 per recipient record (minimum €300, maximum €20,000) |",
+    "destination": "Current Deadlines / ElectronicModelo190January1–31 row, not a universalrecipientcertificate1Februarydeadline."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 241,
+    "section": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado)",
+    "wording": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado)",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base separatespayer111/payee130/annualIRPF; activity-specific70%test and credits."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 243,
+    "section": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado) / ### 6.1 What is Modelo 130?",
+    "wording": "### 6.1 What is Modelo 130?",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base / payer111versuspayeeannualIRPF/130 paragraph and linked es-estimated-tax.md; distinctpayer/payee obligations."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 245,
+    "section": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado) / ### 6.1 What is Modelo 130?",
+    "wording": "Modelo 130 is the professional's own quarterly estimated tax payment. The professional reports:\n- Gross income from activities (accumulated in the year)\n- Deductible expenses (accumulated)\n- Net income × 20% = tax due\n- Less: retenciones already withheld by clients (from Modelo 111)\n- Less: prior quarters' Modelo 130 payments\n- = Amount to pay (or zero)",
+    "destination": "Current The base / payer111versuspayeeannualIRPF/130 paragraph and linked es-estimated-tax.md; distinctpayer/payee obligations."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 253,
+    "section": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado) / ### 6.2 Exemption from Modelo 130",
+    "wording": "### 6.2 Exemption from Modelo 130",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base / actualprofessional70% preceding-year receipts bearingwithholding, with actualstart-periodtest; RIRPF109, not annual190deadline."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 255,
+    "section": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado) / ### 6.2 Exemption from Modelo 130",
+    "wording": "- **Exemption from Modelo 130 filing** — A professional is EXEMPT from filing Modelo 130 if at least 70% of their income from the prior year was subject to withholding (retención). This is common for professionals who invoice mainly to companies.",
+    "destination": "Current The base / actualprofessional70% preceding-year receipts bearingwithholding, with actualstart-periodtest; RIRPF109, not annual190deadline."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 257,
+    "section": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado) / ### 6.3 Credit Mechanism",
+    "wording": "### 6.3 Credit Mechanism",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base / payeeannualcrediting and payerliability distinction; LIRPF99 evidence and linked es-estimated-tax.md."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 259,
+    "section": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado) / ### 6.3 Credit Mechanism",
+    "wording": "**6.3 Credit Mechanism**",
+    "destination": "Current The base / payeeannualcrediting and payerliability distinction; LIRPF99 evidence and linked es-estimated-tax.md."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 261,
+    "section": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado) / ### 6.3 Credit Mechanism",
+    "wording": "| Step | Detail |",
+    "destination": "Current The base / payeeannualcrediting and payerliability distinction; LIRPF99 evidence and linked es-estimated-tax.md."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 262,
+    "section": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado) / ### 6.3 Credit Mechanism",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base / payeeannualcrediting and payerliability distinction; LIRPF99 evidence and linked es-estimated-tax.md."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 263,
+    "section": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado) / ### 6.3 Credit Mechanism",
+    "wording": "| 1 | Payer withholds 15% and deposits via Modelo 111 |",
+    "destination": "Current The base / payeeannualcrediting and payerliability distinction; LIRPF99 evidence and linked es-estimated-tax.md."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 264,
+    "section": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado) / ### 6.3 Credit Mechanism",
+    "wording": "| 2 | Professional claims withheld amounts as credit in annual IRPF return (Modelo 100) |",
+    "destination": "Current The base / payeeannualcrediting and payerliability distinction; LIRPF99 evidence and linked es-estimated-tax.md."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 265,
+    "section": "## Section 6 -- Interaction with Modelo 130 (Pago Fraccionado) / ### 6.3 Credit Mechanism",
+    "wording": "| 3 | If quarterly Modelo 130 payments + retenciones withheld > final IRPF liability → refund |",
+    "destination": "Current The base / payeeannualcrediting and payerliability distinction; LIRPF99 evidence and linked es-estimated-tax.md."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 267,
+    "section": "## Section 7 -- Certificado de Retenciones",
+    "wording": "## Section 7 -- Certificado de Retenciones",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current annual190/certificate/payeecredit route and campaign-based certificate deadline."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 269,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.1 Obligation",
+    "wording": "### 7.1 Obligation",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Deadlines / Recipientcertificate row:beforeIRPFcampaignopens; historicaluniversal1February wording source-corrected."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 271,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.1 Obligation",
+    "wording": "**7.1 Obligation**",
+    "destination": "Current Deadlines / Recipientcertificate row:beforeIRPFcampaignopens; historicaluniversal1February wording source-corrected."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 273,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.1 Obligation",
+    "wording": "| Field | Content |",
+    "destination": "Current Deadlines / Recipientcertificate row:beforeIRPFcampaignopens; historicaluniversal1February wording source-corrected."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 274,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.1 Obligation",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Deadlines / Recipientcertificate row:beforeIRPFcampaignopens; historicaluniversal1February wording source-corrected."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 275,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.1 Obligation",
+    "wording": "| Payer details | Name, NIF, address |",
+    "destination": "Current Deadlines / Recipientcertificate row:beforeIRPFcampaignopens; historicaluniversal1February wording source-corrected."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 276,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.1 Obligation",
+    "wording": "| Recipient details | Name, NIF |",
+    "destination": "Current Deadlines / Recipientcertificate row:beforeIRPFcampaignopens; historicaluniversal1February wording source-corrected."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 277,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.1 Obligation",
+    "wording": "| Tax year | Year covered |",
+    "destination": "Current Deadlines / Recipientcertificate row:beforeIRPFcampaignopens; historicaluniversal1February wording source-corrected."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 278,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.1 Obligation",
+    "wording": "| Total payments | Sum of base amounts paid |",
+    "destination": "Current Deadlines / Recipientcertificate row:beforeIRPFcampaignopens; historicaluniversal1February wording source-corrected."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 279,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.1 Obligation",
+    "wording": "| Total retenciones | Sum of amounts withheld |",
+    "destination": "Current Deadlines / Recipientcertificate row:beforeIRPFcampaignopens; historicaluniversal1February wording source-corrected."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 280,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.1 Obligation",
+    "wording": "| Breakdown | By type if applicable |",
+    "destination": "Current Deadlines / Recipientcertificate row:beforeIRPFcampaignopens; historicaluniversal1February wording source-corrected."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 282,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.1 Obligation",
+    "wording": "- **Deadline to issue certificado de retenciones** — Every payer (retenedor) must issue a certificado de retenciones to each professional before February 1 of the following year.",
+    "destination": "Current Deadlines and filing / recipient certificate: certificate before recipient IRPF window; no universal1February requirement."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 284,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.2 Use by Professional",
+    "wording": "### 7.2 Use by Professional",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base year190/certificate/recipientannualIRPF reconciliation and credit evidence."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 286,
+    "section": "## Section 7 -- Certificado de Retenciones / ### 7.2 Use by Professional",
+    "wording": "The professional uses the certificado to:\n- Verify amounts withheld match their records\n- Include in annual Modelo 100 (IRPF return) as tax credits\n- Support any discrepancy claims with AEAT",
+    "destination": "Current The base year190/certificate/recipientannualIRPF reconciliation and credit evidence."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 291,
+    "section": "## Section 8 -- Edge Cases",
+    "wording": "## Section 8 -- Edge Cases",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current statedmixed-invoice/legalperson/nonresident/nil/latecase distinctions."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 293,
+    "section": "## Section 8 -- Edge Cases / ### 8.1 Mixed Invoice (Goods + Services)",
+    "wording": "### 8.1 Mixed Invoice (Goods + Services)",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base grossprofessionalfee/eligibleVAT/disbursementclassification; componentfacts established ratherthan automaticgoods exclusion."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 295,
+    "section": "## Section 8 -- Edge Cases / ### 8.1 Mixed Invoice (Goods + Services)",
+    "wording": "- **Mixed Invoice (Goods + Services)** — If a single invoice includes both goods (no retención) and professional services (retención), withholding applies ONLY to the services portion. Must be clearly separated on the invoice.",
+    "destination": "Current The base grossprofessionalfee/eligibleVAT/disbursementclassification; componentfacts established ratherthan automaticgoods exclusion."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 297,
+    "section": "## Section 8 -- Edge Cases / ### 8.2 Professional SL (Sociedad Profesional)",
+    "wording": "### 8.2 Professional SL (Sociedad Profesional)",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Who this applies: ordinarySL/SAservice recipient notindividualprofessional solelybecauseSLP; legalperson/LIRPF8/27/LIS7 distinction."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 299,
+    "section": "## Section 8 -- Edge Cases / ### 8.2 Professional SL (Sociedad Profesional)",
+    "wording": "- **Professional SL (Sociedad Profesional)** — When a Sociedad Limitada Profesional (SLP) renders professional services, retención may apply if the activity is listed in Section 2/3 of the IAE (actividades profesionales). Regular SLs providing services are generally NOT subject to retención.",
+    "destination": "Current Who this applies: ordinarySL/SAservice recipient notindividualprofessional solelybecauseSLP; legalperson/LIRPF8/27/LIS7 distinction."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 301,
+    "section": "## Section 8 -- Edge Cases / ### 8.3 Non-Resident Professional",
+    "wording": "### 8.3 Non-Resident Professional",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Cross-border points:IRNRclassification/treatywithholding route, and explicitLIRPF92.8imageexception still111; no universal24%rule."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 303,
+    "section": "## Section 8 -- Edge Cases / ### 8.3 Non-Resident Professional",
+    "wording": "- **Non-Resident Professional withholding** — Payments to non-resident professionals: withhold at 24% (or treaty rate) under IRNR. File on Modelo 216 (not 111). Treaty may reduce/eliminate.",
+    "destination": "Current Cross-border points:IRNRclassification/treatywithholding route, and explicitLIRPF92.8imageexception still111; no universal24%rule."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 305,
+    "section": "## Section 8 -- Edge Cases / ### 8.4 No Activity in Quarter",
+    "wording": "### 8.4 No Activity in Quarter",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current The base paidzero-withholdingversusnopayment distinction: prescribednegative111versusnoemptyreturn; currentcensus036, obsolete037notavailable."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 307,
+    "section": "## Section 8 -- Edge Cases / ### 8.4 No Activity in Quarter",
+    "wording": "- **No Activity in Quarter** — If registered as retenedor but made no payments subject to withholding in a quarter: file declaración negativa (Modelo 111 with all zeros). Failure to file may trigger penalty.",
+    "destination": "Current The base paidzero-withholdingversusnopayment distinction: prescribednegative111versusnoemptyreturn; currentcensus036, obsolete037notavailable."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 309,
+    "section": "## Section 8 -- Edge Cases / ### 8.5 Late Filing Penalties",
+    "wording": "### 8.5 Late Filing Penalties",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Penalties and interest:LGT27conditional1%+month/15%,191conductclassification,198nil/inforeturn penalties and separate26/28collection; no automaticladder."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 311,
+    "section": "## Section 8 -- Edge Cases / ### 8.5 Late Filing Penalties",
+    "wording": "**8.5 Late Filing Penalties**",
+    "destination": "Current Penalties and interest:LGT27conditional1%+month/15%,191conductclassification,198nil/inforeturn penalties and separate26/28collection; no automaticladder."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 313,
+    "section": "## Section 8 -- Edge Cases / ### 8.5 Late Filing Penalties",
+    "wording": "| Situation | Penalty |",
+    "destination": "Current Penalties and interest:LGT27conditional1%+month/15%,191conductclassification,198nil/inforeturn penalties and separate26/28collection; no automaticladder."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 314,
+    "section": "## Section 8 -- Edge Cases / ### 8.5 Late Filing Penalties",
+    "wording": "| --- | --- |",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current Penalties and interest:LGT27conditional1%+month/15%,191conductclassification,198nil/inforeturn penalties and separate26/28collection; no automaticladder."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 315,
+    "section": "## Section 8 -- Edge Cases / ### 8.5 Late Filing Penalties",
+    "wording": "| Filed late, no AEAT notification | 1% surcharge + 1% per month (up to 12 months); 15%+ after 12 months |",
+    "destination": "Current Penalties and interest:LGT27conditional1%+month/15%,191conductclassification,198nil/inforeturn penalties and separate26/28collection; no automaticladder."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 316,
+    "section": "## Section 8 -- Edge Cases / ### 8.5 Late Filing Penalties",
+    "wording": "| Filed after AEAT notification (requerimiento) | 5%/10%/15%/20% depending on delay |",
+    "destination": "Current Penalties and interest:LGT27conditional1%+month/15%,191conductclassification,198nil/inforeturn penalties and separate26/28collection; no automaticladder."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 317,
+    "section": "## Section 8 -- Edge Cases / ### 8.5 Late Filing Penalties",
+    "wording": "| Omission of withholding | 150% of amount not withheld (sanción grave) |",
+    "destination": "Current Penalties: conduct-based LGT191 classification; no automatic universal150%."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 319,
+    "section": "## Section 9 -- Prohibitions",
+    "wording": "## Section 9 -- Prohibitions",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current no-impliedeligibility/no-universalrates/noinvoicecounts/noemptyreturns/noautomaticpenalty instructions in operative sections."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 321,
+    "section": "## Section 9 -- Prohibitions",
+    "wording": "- **Prohibitions list** — - NEVER apply 7% rate without written communication from the professional confirming eligibility - NEVER withhold on invoices from Sociedades Limitadas (SL) for regular services -- only professional partnerships or specific cases - NEVER apply retención to the IVA portion of an invoice -- only to the base imponible - NEVER miss a quarterly filing deadline -- file negative if no activity - NEVER issue a certificado de retenciones with amounts that don't match the Modelo 190 filing - NEVER confuse Modelo 111 (payer's obligation) with Modelo 130 (professional's own estimated tax) - NEVER present tax calculations as definitive -- always label as estimated",
+    "destination": "Current no-impliedeligibility/no-universalrates/noinvoicecounts/noemptyreturns/noautomaticpenalty instructions in operative sections."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 323,
+    "section": "## Disclaimer",
+    "wording": "## Disclaimer",
+    "destination": "Presentation heading/table separator, not a separate substantive tax rule. Current protected CTA/disclaimer; no accountantattestation."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 325,
+    "section": "## Disclaimer",
+    "wording": "This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an asesor fiscal, gestor administrativo, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.",
+    "destination": "Current protected CTA/disclaimer; no accountantattestation."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 327,
+    "section": "## Disclaimer",
+    "wording": "The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.",
+    "destination": "Current protected CTA/disclaimer; no accountantattestation."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 329,
+    "section": "## Disclaimer",
+    "wording": "<!-- openaccountants-cta-block -->",
+    "destination": "Current LF204, exact original unit"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 331,
+    "section": "## Disclaimer",
+    "wording": "---",
+    "destination": "Current LF1, exact original unit"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 333,
+    "section": "## Talk to a verified accountant",
+    "wording": "## Talk to a verified accountant",
+    "destination": "Current LF208, exact original unit"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 335,
+    "section": "## Talk to a verified accountant",
+    "wording": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+    "destination": "Current LF210, exact original unit"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 340,
+    "section": "## Talk to a verified accountant",
+    "wording": "- Use it in your AI: https://www.openaccountants.com/connect",
+    "destination": "Current LF215, exact original unit"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 341,
+    "section": "## Talk to a verified accountant",
+    "wording": "- Meet the accountants: https://www.openaccountants.com/network",
+    "destination": "Current LF216, exact original unit"
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published main comparator (origin/main at start)",
+    "old_lf": 343,
+    "section": "## Talk to a verified accountant",
+    "wording": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.",
+    "destination": "Current LF218, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 1,
+    "section": "Metadata",
+    "wording": "---\nname: es-modelo-111\ndescription: Use this Guide to compute and reconcile Spanish common-territory Modelo 111 withholding remittances for payments made in 2026. It covers payer and recipient classification, professional standard and startup rates, employee withholding inputs, in-kind payments, distinct recipient counts, the numbered form boxes, complementary returns, filing frequency, payment dates, negative returns, annual Modelo 190 reconciliation and certificates. Trigger phrases include Modelo 111, retenciones profesionales, retención siete por ciento, retención quince por ciento, certificado de retenciones, perceptor, ingreso a cuenta, declaración negativa and autoliquidación complementaria. Obtain the paid-income register, recipient tax status, signed reduced-rate evidence, payroll calculations and accepted earlier filings. Corporate service invoices, property rents, capital income and ordinary non-resident payments require their own correctly classified route.\nversion: \"1.2\"\njurisdiction: ES\ntax_year: 2026\nlast_updated: 2026-10-28\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ncategory: international\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+    "destination": "Current LF1, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 15,
+    "section": "Metadata",
+    "wording": "# Spain: Modelo 111 and recipient reconciliation v1.2",
+    "destination": "Current LF15, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 17,
+    "section": "Metadata",
+    "wording": "Compute the payer's 2026 IRPF withholding remittance from payments made, then reconcile Modelo 111 with recipient records, Modelo 190 and certificates. This revision is sourced from the law; independent whole-pack review is pending and no accountant has signed it off.",
+    "destination": "Current LF17, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 19,
+    "section": "## Who this applies to",
+    "wording": "## Who this applies to",
+    "destination": "Current LF19, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 21,
+    "section": "## Who this applies to",
+    "wording": "[RIRPF art. 76](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a76) makes legal persons/entities, business individuals paying in their activity and the specified non-resident payers withholding agents when they pay subject income. A private consumer paying outside an economic activity is not brought into the ordinary business-payer rule merely by receiving a professional invoice. A foreign employer without a Spanish permanent establishment can still have employment-withholding duties under art. 76.1.d; do not assume that absence of a PE removes every withholding duty.",
+    "destination": "Current LF21, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 23,
+    "section": "## Who this applies to",
+    "wording": "[Orden EHA/586/2011 art. 2](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2) puts the following in Modelo 111: employment; the listed professional, agricultural/livestock, forestry and specified modules income; the listed rights/assistance/leasing income **when from economic activities**; subject prizes; public-forest exploitation gains; and the specific art. 92.8 image-right payment on account. Other withholding belongs in the form for its actual income category. This is not a return for every payment bearing the word retención.",
+    "destination": "Current LF23, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 25,
+    "section": "## Who this applies to",
+    "wording": "An ordinary service invoice from an SL/SA taxed under corporate tax is not an individual's professional IRPF income merely because the company is an SLP or its work is professional. Determine the recipient's legal/tax status, including any income-attribution entity, before selecting IRPF ([LIRPF arts. 8/27](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a8); [LIS arts. 4/7](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328#a7)). Corporate, capital-income, property-rental and ordinary non-resident withholding have separate applicable routes. Use [spain-payroll](spain-payroll.md) for employee rate computation and [es-estimated-tax](es-estimated-tax.md) for the professional's own instalments.",
+    "destination": "Current LF25, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 27,
+    "section": "## Rates, bands and thresholds",
+    "wording": "## Rates, bands and thresholds",
+    "destination": "Current LF27, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 29,
+    "section": "## Rates, bands and thresholds",
+    "wording": "All figures below apply to the relevant **2026 payments**, subject to the stated eligibility and territorial rules.",
+    "destination": "Current LF29, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 31,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Income/classification | Rate or test | Official source |",
+    "destination": "Current LF31, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 32,
+    "section": "## Rates, bands and thresholds",
+    "wording": "|---|---|---|",
+    "destination": "Current LF32, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 33,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Ordinary professional activity | 15% of gross subject income paid | [RIRPF art. 95.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |",
+    "destination": "Current LF33, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 34,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Starting professional activity | 7% in start tax period and following two, if no professional activity in the year before the start date and signed communication retained | [Art. 95.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |",
+    "destination": "Current LF34, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 35,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Specified artistic professional activities | 7% if preceding-year qualifying gross income <15,000 and >75% of total gross work/economic income, with signed communication; other listed 7% cases also apply | [Art. 95.1.a–d](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |",
+    "destination": "Current LF35, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 36,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Agriculture/livestock | 2%; pig-fattening/poultry 1%; exclude statutory subsidies/indemnities | [Art. 95.4](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |",
+    "destination": "Current LF36, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 37,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Forestry activity | 2%, excluding statutory subsidies/indemnities | [Art. 95.5](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |",
+    "destination": "Current LF37, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 38,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Listed business activities in objective assessment | 1%, subject to exact IAE list and communicated direct-assessment exclusion | [Art. 95.6](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95) |",
+    "destination": "Current LF38, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 39,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Ordinary employment | Personalised annual/recalculated rate, not professional 15% | [Arts. 80–87](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a80) |",
+    "destination": "Current LF39, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 40,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Director/board office | 35%; 19% where last completed payer tax-period turnover <100,000, annualised if short | [Art. 80.1.3](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a80) |",
+    "destination": "Current LF40, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 41,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Courses/conferences classified as employment | 15% | [Art. 80.1.4](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a80) |",
+    "destination": "Current LF41, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 42,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Other listed rights/assistance/leasing income | 19%; intellectual property has 15% and specified 7% exceptions; direct image exploitation 24% | [Art. 101](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a101) |",
+    "destination": "Current LF42, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 43,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Special image-right attribution payment on account | 19%, distinct from the direct exploitation rate | [Art. 107; LIRPF art. 92.8](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a107) |",
+    "destination": "Current LF43, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 45,
+    "section": "## Rates, bands and thresholds",
+    "wording": "The start concession concerns **professional activity**, not every preceding economic activity, and runs for tax periods, not thirty-six rolling months. Keep the signed eligibility communication; without it, do not apply the startup 7%. The art. 95.1 territorial reduction is 60% where the income actually qualifies under LIRPF art. 68.4. La Palma's 2026 extension has its dated withholding start under [DA 57](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#da-8); do not infer territorial relief from the invoice address alone.",
+    "destination": "Current LF45, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 47,
+    "section": "## The base",
+    "wording": "## The base",
+    "destination": "Current LF47, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 49,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "### Payment register and subject amount",
+    "destination": "Current LF49, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 51,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "[RIRPF art. 78](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78) generally triggers withholding when income is **paid or credited**, not merely when the invoice is dated. For every payment keep payer/recipient NIF and legal status, subject category, gross income, VAT separately, payment date, rate evidence, cash withholding or payment on account, and the return period. Reconcile the subject income and remittance with the liability ledger and bank settlement. An unpaid invoice is not automatically included in that period's 111.",
+    "destination": "Current LF51, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 53,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "For an ordinary professional invoice, apply the rate to gross professional income, excluding separately charged VAT. Do not reduce the subject professional fee by the recipient's own expenses, employee Social Security or tax instalments. Do not exclude an amount merely because a professional invoice labels it materials, travel or goods: classify the actual service, accessory supply and genuine third-party disbursement before deciding its income treatment ([RIRPF art. 95.1–2](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95); [LIRPF arts. 27/28](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a28)).",
+    "destination": "Current LF53, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 55,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "For a cash fee F with VAT V and withholding H, `supplier_cash = F +V −H`; credit F as gross income/expense in the relevant records and H as the payer's withholding liability, not a fee discount. A partial payment needs its actual gross-fee and VAT allocation; do not apply the rate to the net bank transfer as though it were gross professional income.",
+    "destination": "Current LF55, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 57,
+    "section": "## The base / ### Payment register and subject amount",
+    "wording": "For in-kind employment use [RIRPF art. 102](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a102), and for in-kind economic activity apply its rate to market value under [art. 104](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a104). Keep the valued benefit and the payment on account separate. The tax-certificate treatment of employer/payer-borne payment on account under [LIRPF art. 43.2](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a43) must not cause the same amount to be added twice to a 111 value box.",
+    "destination": "Current LF57, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 59,
+    "section": "## The base / ### Map and total the return",
+    "wording": "### Map and total the return",
+    "destination": "Current LF59, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 61,
+    "section": "## The base / ### Map and total the return",
+    "wording": "Use the statutory form in [Orden EHA/586/2011 annex I](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948) and the [current AEAT instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html). Count **distinct recipients within each cash/in-kind category**, not invoices or payroll months. A recipient can appear in both relevant cash and in-kind counts; deduplicate inside each count.",
+    "destination": "Current LF61, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 63,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Category | Recipient count | Gross cash/value | Withholding/payment on account |",
+    "destination": "Current LF63, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 64,
+    "section": "## The base / ### Map and total the return",
+    "wording": "|---|---:|---:|---:|",
+    "destination": "Current LF64, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 65,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Employment, cash | 01 | 02 | 03 |",
+    "destination": "Current LF65, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 66,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Employment, in kind | 04 | 05 | 06 |",
+    "destination": "Current LF66, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 67,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Economic activities, cash | 07 | 08 | 09 |",
+    "destination": "Current LF67, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 68,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Economic activities, in kind | 10 | 11 | 12 |",
+    "destination": "Current LF68, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 69,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Subject prizes, cash | 13 | 14 | 15 |",
+    "destination": "Current LF69, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 70,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Subject prizes, in kind | 16 | 17 | 18 |",
+    "destination": "Current LF70, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 71,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Public-forest exploitation gains, cash | 19 | 20 | 21 |",
+    "destination": "Current LF71, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 72,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Same gains, in kind | 22 | 23 | 24 |",
+    "destination": "Current LF72, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 73,
+    "section": "## The base / ### Map and total the return",
+    "wording": "| Special art. 92.8 image-right payments | 25 | 26 | 27 |",
+    "destination": "Current LF73, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 75,
+    "section": "## The base / ### Map and total the return",
+    "wording": "`box28 = box03 +box06 +box09 +box12 +box15 +box18 +box21 +box24 +box27`. Box 29 is used **only for a complementary return**, for the earlier return result(s) for the same taxpayer/year/period. `box30 = box28 −box29`. A complementary return restates the **whole corrected period**, identifies the earlier receipt and pays the incremental result; it does not contain only the newly found invoice ([order art. 9](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9)). Do not net an overpayment in another period or use a negative supplementary return as a refund request.",
+    "destination": "Current LF75, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 77,
+    "section": "## The base / ### Map and total the return",
+    "wording": "If subject income was paid but the law correctly produced zero withholding, file a **negative 111 with the relevant recipients and income populated**. If no subject income was paid, do **not** file an empty all-zero 111 merely because the payer was registered. Reconcile census cessation/restart obligations using the current census route. The instruction page's historical reference to Modelo 037 does not establish that it remains an available 2026 form ([RIRPF art. 108.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108); [order art. 3.3](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a3)).",
+    "destination": "Current LF77, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 79,
+    "section": "## The base / ### Annual reconciliation and recipient's tax",
+    "wording": "### Annual reconciliation and recipient's tax",
+    "destination": "Current LF79, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 81,
+    "section": "## The base / ### Annual reconciliation and recipient's tax",
+    "wording": "Reconcile the year's 111 withholding/payment-on-account totals to recipient-level **Modelo 190**, using the correct current category/subcategory and any required exempt-income records. Its information population is broader than just positive withholdings. Check recipient identity, cash/in-kind amounts, withheld amounts, applicable reductions and employment circumstances; do not use invoice count as recipient count ([RIRPF art. 108.2–3](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108); [190 order arts. 2/4 and annex II](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567)).",
+    "destination": "Current LF81, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 83,
+    "section": "## The base / ### Annual reconciliation and recipient's tax",
+    "wording": "The payer's 111 is separate from the recipient's annual IRPF and Modelo 130. The recipient reports gross income and their applicable tax credits; the payer's failure to remit does not turn the net bank transfer into gross income. Check [LIRPF art. 99](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a99) for a disputed withholding credit rather than inventing a deposit prerequisite. [es-estimated-tax](es-estimated-tax.md) gives the direct-assessment instalment computation and the professional **70% prior-year subject-income test**, including the startup-period rule; 111 registration is not an exemption from the recipient's tax.",
+    "destination": "Current LF83, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 85,
+    "section": "## Deadlines and filing",
+    "wording": "## Deadlines and filing",
+    "destination": "Current LF85, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 87,
+    "section": "## Deadlines and filing",
+    "wording": "| Obligation | Timing/rule | Official source |",
+    "destination": "Current LF87, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 88,
+    "section": "## Deadlines and filing",
+    "wording": "|---|---|---|",
+    "destination": "Current LF32, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 89,
+    "section": "## Deadlines and filing",
+    "wording": "| Quarterly 111 | First twenty calendar days of April/July/October/January for preceding quarter; Q4 2026 is filed in January 2027 | [RIRPF art. 108.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108), [111 order art. 3](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a3) |",
+    "destination": "Current LF89, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 90,
+    "section": "## Deadlines and filing",
+    "wording": "| Monthly 111 | First twenty calendar days of next month under the applicable large-company/public-administration tests; not headcount | [RIRPF art. 108.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) |",
+    "destination": "Current LF90, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 91,
+    "section": "## Deadlines and filing",
+    "wording": "| Ordinary turnover trigger | RIVA art. 71.3.1 prior-year operations >6,010,121.04; also check art. 71.3.2 and art. 108 public-budget >6 million cases | [RIVA art. 71](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925#a71), [RIRPF art. 108](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) |",
+    "destination": "Current LF91, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 92,
+    "section": "## Deadlines and filing",
+    "wording": "| Non-working final day | Next working day | [111 order art. 3.1](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a3) |",
+    "destination": "Current LF92, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 93,
+    "section": "## Deadlines and filing",
+    "wording": "| Direct debit in 2026 | Quarterly general cut-off 15 January/April/July/October; monthly dates vary with the official calendar | [AEAT 2026 payment calendar](https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html) |",
+    "destination": "Current LF93, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 94,
+    "section": "## Deadlines and filing",
+    "wording": "| Electronic Modelo 190 | 1–31 January of following year, subject to non-working-day/calendar rules | [190 order art. 5](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567#a5) |",
+    "destination": "Current LF94, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 95,
+    "section": "## Deadlines and filing",
+    "wording": "| Recipient certificate | Available before the recipient's IRPF return period opens, not a universal 1 February deadline | [RIRPF art. 108.3](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) |",
+    "destination": "Current LF95, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 97,
+    "section": "## Deadlines and filing",
+    "wording": "The current [2026 calendar](https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html) expressly gives July 2026 monthly 111 **20 August**, with direct debit through **17 August**. Do not carry forward the older form-order July/September exception or assume every debit cut-off is the 15th. Verify the 2027 calendar for Q4/annual filings when published; the 2026 calendar does not establish next year's operational cut-offs.",
+    "destination": "Current LF97, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 99,
+    "section": "## Deadlines and filing",
+    "wording": "**Legislative bridge for the July return.** [RD 960/2013 article Segundo.Tercero.Ocho](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771) replaced RIRPF article 108.1 **with effects from 1 January 2014**, under the express heading of article Segundo.Tercero. The replacement requires monthly declaration and payment in the first twenty calendar days of the following month and contains no separate July exception; its IRPF preamble also expressly explains the removal of that exception. That later regulatory schedule, [current article 108](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) and the actual 2026 calendar support July 2026 filing by 20 August. Original [EHA/586/2011 article 3](https://www.boe.es/buscar/doc.php?id=BOE-A-2011-4948) still prints the older July/August–September wording: it is preserved as historical text, not represented as expressly rewritten by RD 960/2013. The current August result is therefore supported by the identified replacement, rather than a missing legislative source or a presumed continuation of the older form-order exception.",
+    "destination": "Current LF99, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 101,
+    "section": "## Deadlines and filing",
+    "wording": "Select electronic filing under current [Orden HAP/2194/2013](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385) rules; an SL/SA's quarterly frequency does not make paper filing available. Save the accepted declaration, receipt/CSV and separate successful payment evidence. An NRC proves payment, not by itself a filed return; an accepted direct-debit instruction is not proof a later bank debit succeeded. Withholding debts are excluded from ordinary deferral/instalment under [LGT art. 65.2.b](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a65).",
+    "destination": "Current LF101, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 103,
+    "section": "## Penalties and interest",
+    "wording": "## Penalties and interest",
+    "destination": "Current LF103, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 105,
+    "section": "## Penalties and interest",
+    "wording": "| Situation | Statutory treatment | Official source |",
+    "destination": "Current LF105, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 106,
+    "section": "## Penalties and interest",
+    "wording": "|---|---|---|",
+    "destination": "Current LF32, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 107,
+    "section": "## Penalties and interest",
+    "wording": "| Unprompted late return with amount due, up to twelve months | 1% plus 1% for each complete month late, subject to statutory conditions | [LGT art. 27.2](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27) |",
+    "destination": "Current LF107, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 108,
+    "section": "## Penalties and interest",
+    "wording": "| More than twelve months | 15%, plus the specified interest from after twelve months until filing; test art. 27.5 reduction separately | [Art. 27](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a27) |",
+    "destination": "Current LF108, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 109,
+    "section": "## Penalties and interest",
+    "wording": "| Under-remitted tax outside that voluntary route | Classify art. 191 conduct, amount and withholding-specific seriousness; no automatic universal 150% | [Art. 191](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a191) |",
+    "destination": "Current LF109, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 110,
+    "section": "## Penalties and interest",
+    "wording": "| Required nil return late without economic loss | Baseline 200; half if filed without prior demand, before other applicable reductions | [Art. 198.1–2](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a198) |",
+    "destination": "Current LF110, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 111,
+    "section": "## Penalties and interest",
+    "wording": "| Annual information return late | Baseline 20 per relevant person/data set, minimum 300 and maximum 20,000; amounts and limits halved without prior demand | [Art. 198.1–2](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a198) |",
+    "destination": "Current LF111, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 113,
+    "section": "## Penalties and interest",
+    "wording": "Collection surcharges and interest have their own triggers under [LGT arts. 26/28](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186#a28). A prior AEAT demand does not create a simple delay-based 5%/10%/15%/20% penalty ladder. Establish notification, filing/payment dates, loss and the relevant conduct before calculating. A period with no obligation is not a late required nil return.",
+    "destination": "Current LF113, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 115,
+    "section": "## Cross-border points",
+    "wording": "## Cross-border points",
+    "destination": "Current LF115, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 117,
+    "section": "## Cross-border points",
+    "wording": "Classify the recipient as resident IRPF, non-resident IRNR, or another tax subject and identify the payer's withholding duty. Ordinary non-resident professional payments use the applicable IRNR/treaty computation and return, rather than automatically Modelo 111 or a blanket 24%. The **special image-right art. 92.8** route is an express 111 exception involving payments to non-residents, so do not apply an absolute “no foreign payment in 111” rule ([111 order art. 2.f](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a2)).",
+    "destination": "Current LF117, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 119,
+    "section": "## Cross-border points",
+    "wording": "Ceuta/Melilla and the dated La Palma treatment require actual income entitlement and timing, not nationality. Foral administration selection must be established under the relevant territorial rules; these common-territory boxes do not prove the state is entitled to every remittance. Keep those unresolved territorial cases separate from a supported ordinary resident-payment computation.",
+    "destination": "Current LF119, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 121,
+    "section": "## Two worked examples that recompute",
+    "wording": "## Two worked examples that recompute",
+    "destination": "Current LF121, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 123,
+    "section": "## Two worked examples that recompute / ### 1. Professional cash invoice",
+    "wording": "### 1. Professional cash invoice",
+    "destination": "Current LF123, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 125,
+    "section": "## Two worked examples that recompute / ### 1. Professional cash invoice",
+    "wording": "A resident individual professional is paid a hypothetical **1,000 fee** for an ordinary service subject to general 21% VAT, with 15% IRPF and no reduced/territorial treatment. VAT is 210; withholding is 150; supplier cash is **1,060**. This payment contributes one recipient, 1,000 gross income and 150 withholding to boxes **07/08/09**. The payer remits the 150 through 111, separately from VAT ([RIRPF art. 95.1](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a95); [LIVA art. 90](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740#a90); [111 statutory form](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948)).",
+    "destination": "Current LF125, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 127,
+    "section": "## Two worked examples that recompute / ### 1. Professional cash invoice",
+    "wording": "```oa-check\nname: Spain 2026 paid professional invoice and withholding remittance\ninputs:\n  fee: 1000\nsteps:\n  vat: fee * 0.21\n  withholding: fee * 0.15\n  invoice_total_before_withholding: fee + vat\n  supplier_cash: invoice_total_before_withholding - withholding\n  payer_cash_total: supplier_cash + withholding\nexpected:\n  vat: 210\n  withholding: 150\n  supplier_cash: 1060\n  payer_cash_total: 1210\n```",
+    "destination": "Current LF127, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 144,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "destination": "Current LF144, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 146,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "For a hypothetical quarter, one ordinary employee receives three 2,500 payments and has 410.50 withheld each time, using the 30,000 annual example in [spain-payroll](spain-payroll.md). Professional A, eligible for startup 7% with signed evidence, receives fee payments 1,000 and 500. Professional B receives 2,000 at 15%. Another 900 professional invoice remains unpaid and is excluded from this period. There are **two**, not three, professional cash recipients.",
+    "destination": "Current LF146, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 148,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "Boxes 01/02/03 are 1 /7,500 /1,231.50. Boxes 07/08/09 are 2 /3,500 /405. All other withholding/payment-on-account boxes are zero; box 28 is **1,636.50**. If an earlier 111 for the same period had result 1,500 and that was paid, the corrected complementary return restates those totals, puts 1,500 in box 29, identifies the earlier receipt and has box 30 **136.50**. Any lateness is assessed separately; do not add an invented penalty to box 30 ([RIRPF arts. 78/95](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a78); [111 order art. 9](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948#a9)).",
+    "destination": "Current LF148, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 150,
+    "section": "## Two worked examples that recompute / ### 2. Mixed payroll/professionals, repeated recipient and complementary return",
+    "wording": "```oa-check\nname: Spain 2026 payment register to complementary Modelo 111\ninputs:\n  monthly_salary: 2500\n  monthly_salary_withholding: 410.50\n  professional_a_first_fee_paid: 1000\n  professional_a_second_fee_paid: 500\n  professional_b_fee_paid: 2000\n  unpaid_fee: 900\n  earlier_return_result: 1500\nsteps:\n  box02: monthly_salary * 3\n  box03: monthly_salary_withholding * 3\n  professional_a_paid: professional_a_first_fee_paid + professional_a_second_fee_paid\n  box08: professional_a_paid + professional_b_fee_paid\n  excluded_unpaid_amount: unpaid_fee\n  box09: professional_a_paid * 0.07 + professional_b_fee_paid * 0.15\n  box28: box03 + box09\n  box29: earlier_return_result\n  box30: box28 - box29\nexpected:\n  box02: 7500\n  box03: 1231.50\n  box08: 3500\n  excluded_unpaid_amount: 900\n  box09: 405\n  box28: 1636.50\n  box29: 1500\n  box30: 136.50\n```",
+    "destination": "Current LF150, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 181,
+    "section": "## Ask the client first",
+    "wording": "## Ask the client first",
+    "destination": "Current LF181, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 183,
+    "section": "## Ask the client first",
+    "wording": "1. Which payer, tax administration and monthly/quarterly withholding obligation apply?",
+    "destination": "Current LF183, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 184,
+    "section": "## Ask the client first",
+    "wording": "2. Which recipients were actually paid or credited, on what dates, and what are their legal/tax status and gross subject amounts?",
+    "destination": "Current LF184, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 185,
+    "section": "## Ask the client first",
+    "wording": "3. What signed startup/artistic/territorial evidence supports a reduced rate, and what professional activity existed before the start date?",
+    "destination": "Current LF185, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 186,
+    "section": "## Ask the client first",
+    "wording": "4. Which cash, VAT, in-kind value and payment-on-account records reconcile the invoices/payroll with the bank and liability ledger?",
+    "destination": "Current LF186, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 187,
+    "section": "## Ask the client first",
+    "wording": "5. What accepted earlier returns, results, receipts, payments and AEAT notices affect correction and lateness?",
+    "destination": "Current LF187, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 188,
+    "section": "## Ask the client first",
+    "wording": "6. What recipient records and current 190 keys support the annual summary and certificates?",
+    "destination": "Current LF188, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 190,
+    "section": "## Sources",
+    "wording": "## Sources",
+    "destination": "Current LF190, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 192,
+    "section": "## Sources",
+    "wording": "| Official source | Scope read | Read on |",
+    "destination": "Current LF192, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 193,
+    "section": "## Sources",
+    "wording": "|---|---|---|",
+    "destination": "Current LF32, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 194,
+    "section": "## Sources",
+    "wording": "| [RIRPF, RD 439/2007](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820) | Arts. 74–80, 95/101/102/104/107/108: payer, income, payment trigger, rates, in-kind and reporting | 2026-10-26 |",
+    "destination": "Current LF194, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 195,
+    "section": "## Sources",
+    "wording": "| [LIRPF, Ley 35/2006](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764), [LIS](https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328), [LIVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740), [RIVA](https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925) | Taxpayer/income status, credit, in-kind valuation, general VAT example and filing-frequency cross-reference | 2026-10-26 |",
+    "destination": "Current LF195, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 196,
+    "section": "## Sources",
+    "wording": "| [Orden EHA/586/2011](https://www.boe.es/buscar/act.php?id=BOE-A-2011-4948), [AEAT 111 instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/pagos-cuenta/modelo-111-reten_____moniales-imputaciones-renta-autoliquidacion_/instrucciones.html) | Scope, statutory form, counts, correction, nil-payment distinction; old 037/July references not carried forward | 2026-10-26 |",
+    "destination": "Current LF196, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 197,
+    "section": "## Sources",
+    "wording": "| [AEAT 2026 payment calendar](https://sede.agenciatributaria.gob.es/Sede/ayuda/calendario-contribuyente/calendario-contribuyente-2026/plazos-presentacion-autoliquidaciones-domiciliacion-bancaria.html), [Orden HAP/2194/2013](https://www.boe.es/buscar/act.php?id=BOE-A-2013-12385) | Current filing/payment dates, including July, and electronic channels | 2026-10-26 |",
+    "destination": "Current LF197, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 198,
+    "section": "## Sources",
+    "wording": "| [Orden EHA/3127/2009](https://www.boe.es/buscar/act.php?id=BOE-A-2009-18567) | Modelo 190 population/design and electronic January filing window | 2026-10-26 |",
+    "destination": "Current LF198, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 199,
+    "section": "## Sources",
+    "wording": "| [LGT, Ley 58/2003](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) | Voluntary late correction, collection, withholding debt deferral exclusion and conduct-based penalties | 2026-10-26 |",
+    "destination": "Current LF199, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 200,
+    "section": "## Sources",
+    "wording": "| [Original RD960/2013 IRPF preamble/article Segundo.Tercero.Ocho](https://www.boe.es/buscar/doc.php?id=BOE-A-2013-12771), [current RIRPF108](https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820#a108) | Full108.1 replacement with effects1January2014; monthlyJuly exception removed in later regulation, distinguished from unchanged oldformorder wording and current2026calendar | 2026-10-28 |",
+    "destination": "Current LF200, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 202,
+    "section": "## Sources",
+    "wording": "**Not yet confirmed:** 2027 operational/direct-debit dates; case-specific foral allocation, non-resident treaty relief and disputed withholding-credit evidence. Special prize, public-forest and image-right transactions require their full underlying eligibility/base computation before using the mapped boxes. Independent whole-pack review remains outstanding.",
+    "destination": "Current LF202, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 204,
+    "section": "## Sources",
+    "wording": "<!-- openaccountants-cta-block -->",
+    "destination": "Current LF204, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 206,
+    "section": "## Sources",
+    "wording": "---",
+    "destination": "Current LF1, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 208,
+    "section": "## Talk to a verified accountant",
+    "wording": "## Talk to a verified accountant",
+    "destination": "Current LF208, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 210,
+    "section": "## Talk to a verified accountant",
+    "wording": "This guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).",
+    "destination": "Current LF210, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 215,
+    "section": "## Talk to a verified accountant",
+    "wording": "- Use it in your AI: https://www.openaccountants.com/connect",
+    "destination": "Current LF215, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 216,
+    "section": "## Talk to a verified accountant",
+    "wording": "- Meet the accountants: https://www.openaccountants.com/network",
+    "destination": "Current LF216, exact original unit"
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch body",
+    "old_lf": 218,
+    "section": "## Talk to a verified accountant",
+    "wording": "> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.",
+    "destination": "Current LF218, exact original unit"
+  }
+]

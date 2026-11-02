@@ -1,0 +1,77 @@
+{
+  "review_date": "2026-11-01",
+  "reviewer": "Independent Codex source reviewer; no accountant attestation",
+  "scope": "Enacted 2025 CSS source baseline only. No current 2026 approval, filing instructions approval, publication approval or country completion.",
+  "head": "d360fed18e2526f13183b488aec10205d4b50a97",
+  "base": "db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6",
+  "candidate_files": {
+    "evidence/ledgers/mali-old-topics.md": {
+      "sha256": "90bc114d7cbe73083da7fafeb7f4a17dff8513799ab06bdf3c05b14d709181b2",
+      "matches_writer_receipt": true
+    },
+    "evidence/ledgers/ml-solidarity-contribution.md": {
+      "sha256": "df67e8b576dd54273506a1e86144ea227978e1e2e33b314442fddc28e26c790e",
+      "matches_writer_receipt": true
+    },
+    "skills/mali/README.md": {
+      "sha256": "25168cc70419bc791f229c51e8b1efc4bac97eab3af195eb11eb7580aea1672f",
+      "matches_writer_receipt": true
+    },
+    "skills/mali/ml-solidarity-contribution.md": {
+      "sha256": "52163cff9c44b138d27e8f4662c532b7039715648ce5c135e6e349354247e387",
+      "matches_writer_receipt": true
+    }
+  },
+  "legacy_files": {
+    "skills/mali/ml-company-formation.md": {
+      "sha256": "9f850abd99960318abececef78881c14eb5cad20345deba50bfd6ab9e425a9b0",
+      "matches_writer_receipt": true,
+      "byte_identical_to_base": true
+    },
+    "skills/mali/ml-corporate-income-tax.md": {
+      "sha256": "e3af70680520ad6a4963847f2967640925e33a81764324167242f71533ed6785",
+      "matches_writer_receipt": true,
+      "byte_identical_to_base": true
+    },
+    "skills/mali/ml-income-tax.md": {
+      "sha256": "467727f507ecaae21dcca06c8c353cc600068d0773d98d12f2932c9c9c3b52f1",
+      "matches_writer_receipt": true,
+      "byte_identical_to_base": true
+    },
+    "skills/mali/ml-payroll-social.md": {
+      "sha256": "903600f0ab6a3a7afda5f2c32ebda1fe4d4e0069a72daa3144033dc20ffeb178",
+      "matches_writer_receipt": true,
+      "byte_identical_to_base": true
+    },
+    "skills/mali/ml-tax-overview.md": {
+      "sha256": "ea01b81439917a302c2034c0651362422d6f739a048ee8d8fd7cf4bda30137bf",
+      "matches_writer_receipt": true,
+      "byte_identical_to_base": true
+    },
+    "skills/mali/ml-vat-gst.md": {
+      "sha256": "28fcdc2b00fd02fb54daf18cd6555a46d48ef769ee35ddb3a728650ae35dcef4",
+      "matches_writer_receipt": true,
+      "byte_identical_to_base": true
+    }
+  },
+  "official_source_files": {
+    "jo-2025-03.pdf": {
+      "url": "https://sgg-mali.ml/JO/2025/mali-jo-2025-03.pdf",
+      "sha256": "8895adaabaf9a142fc1305ddc137e97d1fbea61d92d5fddd9f09d214759ba3b3",
+      "matches_writer_manifest": true
+    },
+    "jo-2025-18.pdf": {
+      "url": "https://sgg-mali.ml/JO/2025/mali-jo-2025-18.pdf",
+      "sha256": "fbd68fc86f7faada18e9b8ac9be7932747ef556fa070de04afe7381cc915e3aa",
+      "matches_writer_manifest": true
+    },
+    "jo-2025-33-5.pdf": {
+      "url": "https://sgg-mali.ml/JO/2025/mali-jo-2025-33-5.pdf",
+      "sha256": "1a12e5a0f5e9dca3b1d2bdb553baee12f1cbdd1a0976711b8f468a706901d928",
+      "matches_writer_manifest": true
+    }
+  },
+  "writer_receipt_sha256": "3f6d21cc29ad2bd9555cc04f90323dd531de0a6b84b0caf308904888d3a39908",
+  "writer_read_manifest_sha256": "0419663fd22a34e525475df03889ffebb0ab9c58eb9f1ee4eab7cf760d8c4ded",
+  "disposition": "REJECTED_PENDING_SOURCE_PAGE_CITATION_FIX"
+}

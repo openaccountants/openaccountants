@@ -1,0 +1,145 @@
+[
+  {
+    "name": "aeat-april-1-effects",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html",
+    "utc": "2026-10-27T23:30:20.956835Z",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/1/nota-sobre-efectos-ambito-tributario-febrero.html",
+    "content_type": "text/html",
+    "bytes": 8944,
+    "sha256": "b1a9c75ef2093827d41b6a42805bff4927c7a10897df11d259dc735df5b87aac",
+    "same_as_writer_body": true
+  },
+  {
+    "name": "aeat-simplified-eligibility",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/iva/regimenes-tributacion-iva/regimen-simplificado/quien-se-aplica-regimen-simplificado.html",
+    "utc": "2026-10-27T23:30:20.957194Z",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/iva/regimenes-tributacion-iva/regimen-simplificado/quien-se-aplica-regimen-simplificado.html",
+    "content_type": "text/html",
+    "bytes": 26493,
+    "sha256": "720a9213071f941bf11ccd7172772dff99a5dda0319d21e62b9a781adc9e1db8",
+    "same_as_writer_body": true
+  },
+  {
+    "name": "aeat-april-9-sii-redeme",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/9/ampliacion-nota-sobre-efectos-ambito-redeme.html",
+    "utc": "2026-10-27T23:30:20.957406Z",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/todas-noticias/2026/abril/9/ampliacion-nota-sobre-efectos-ambito-redeme.html",
+    "content_type": "text/html",
+    "bytes": 6654,
+    "sha256": "195cedcf641c7a4d6a970a77df4cc4b99af35dbface273d8b7486bcb7e17e0a3",
+    "same_as_writer_body": true
+  },
+  {
+    "name": "liva-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "utc": "2026-10-27T23:30:20.957558Z",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 1769465,
+    "sha256": "d2eeb32b44d5ea21d551c8580da10dce6d0fdd602e1fb6b69aa7ae0d5a6c7996",
+    "same_as_writer_body": true
+  },
+  {
+    "name": "riva-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925",
+    "utc": "2026-10-27T23:30:21.245105Z",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28925",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 1052204,
+    "sha256": "ffdb577dd0dc7f7d9cbc769d29acf84b36b2caa73b9863aad9d9932e4ea53ccd",
+    "same_as_writer_body": true
+  },
+  {
+    "name": "leta-rirpf-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "utc": "2026-10-27T23:30:21.308974Z",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 1000017,
+    "sha256": "02c057946e8a48912089d42621b65d0944c2ec366a060b6e70620a99a4d4b63f",
+    "same_as_writer_body": true
+  },
+  {
+    "name": "rdl-2-2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-2547",
+    "utc": "2026-10-27T23:30:21.509503Z",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-2547",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 260662,
+    "sha256": "3305d6098ae1986112a3849791d1bd9fce6c0e9662130d971f287cab53bf3e43",
+    "same_as_writer_body": false
+  },
+  {
+    "name": "rdl-16-2025",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-26458",
+    "utc": "2026-10-27T23:30:22.067613Z",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-26458",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 416716,
+    "sha256": "e08a312afdac7d10c582d181868f022e76cc64ac90c1a7a411a6b5f3394feace",
+    "same_as_writer_body": true
+  },
+  {
+    "name": "rdl-2-2026-repeal",
+    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-4667",
+    "utc": "2026-10-27T23:30:22.096445Z",
+    "status": 200,
+    "final_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-4667",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 37233,
+    "sha256": "2df30e4cb7fa07b2baf1e324a9a9e3aa8a6a8afa6a9f0dfcbc3f8dd6c176e761",
+    "same_as_writer_body": true
+  },
+  {
+    "name": "rdl-16-2025-repeal",
+    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2024",
+    "utc": "2026-10-27T23:30:22.108417Z",
+    "status": 200,
+    "final_url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2024",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 41707,
+    "sha256": "f85190bfe1c236424a23458d0b1701d691a22fceccb0b3a4be3887eba5d75538",
+    "same_as_writer_body": true
+  },
+  {
+    "name": "lirpf-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "utc": "2026-10-27T23:30:22.299139Z",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 2028806,
+    "sha256": "83c676e483981c4968dd1f0743631a822713ef146780db89f65593df232a385f",
+    "same_as_writer_body": true
+  },
+  {
+    "name": "aeat-irpf-eligibility",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html",
+    "utc": "2026-10-27T23:30:22.299514Z",
+    "status": 200,
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/empresarios-individuales-profesionales/contribuyentes-modulos/quien-se-aplica/irpf.html",
+    "content_type": "text/html",
+    "bytes": 28195,
+    "sha256": "11dc81661c100f19bb60488711d6f4b58865eec3e20879d525c5567ecee80f64",
+    "same_as_writer_body": true
+  },
+  {
+    "name": "module-order-2026",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272",
+    "utc": "2026-10-27T23:30:22.511269Z",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2025-25272",
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 442076,
+    "sha256": "23a4fce0cac41f91d7065dcf1e097109a132077f5af4da4e4f87fb2ea9e3b625",
+    "same_as_writer_body": true
+  }
+]

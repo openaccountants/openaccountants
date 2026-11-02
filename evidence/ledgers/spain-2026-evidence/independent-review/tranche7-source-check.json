@@ -1,0 +1,1372 @@
+{
+  "source_checks": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/8c7a2dd83d635fa40cc4.body",
+      "sha256": "f7253b7d9042a06235c9b64f2fb69fe94246534969404525f6fa3f4665f92ffb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/8c7a2dd83d635fa40cc4.reader.txt",
+      "sha256": "5e93ac366a620867de822c0f8f6e5ff5c9a1c3f0cbadbfd4fb91c655d6b64392",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f00ff3cd9f435fceecd7.body",
+      "sha256": "8960ea22b295401cd39719273b512361b40de0e0d55b3a2689cc4be7664d1595",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f00ff3cd9f435fceecd7.reader.txt",
+      "sha256": "fe49ba1c3d3b5fa35c8a620aa269f63507a367df1721509b278d8ae4393509b3",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f4eb2e35ede1a1a3c215.body",
+      "sha256": "a58f5e57c21ce575e3b2c873976ae8ee7fd3ee7f6c5e866536f4cd342739ea91",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f4eb2e35ede1a1a3c215.reader.txt",
+      "sha256": "22d57b9b9c4f4f892b94e9411fc2746b022d8bdc3c4907fbcc541e63b8687314",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/9a0cee5a821cd372a144.body",
+      "sha256": "a2876b9b97295cc74704d39ffc0e8d3cf474d37b975e7a09558de4a7956d8f11",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/9a0cee5a821cd372a144.reader.txt",
+      "sha256": "768227c932ce5399c6841302d6b0564388055516de4126e89368e524f7731e18",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/1db064b2a855fc3451e3.body",
+      "sha256": "e88fbecaf1699fa5f23e7b3c0af00b219fab4a0aadcb845387b4872f923405fd",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/1db064b2a855fc3451e3.reader.txt",
+      "sha256": "e88fbecaf1699fa5f23e7b3c0af00b219fab4a0aadcb845387b4872f923405fd",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d92424e8f184d727232f.body",
+      "sha256": "4b7a4807cb617d5d2d4daf5c990cd76a8479a205c245cceff0b5aa95f34d08f1",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d92424e8f184d727232f.reader.txt",
+      "sha256": "8606e425b8b789a099dacc502de451cc96c1b785526bbf5b9b0e7c212b76c777",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.body",
+      "sha256": "a012b63a91b1d8ac492d46c458cd32398b23b240f9f7dcf727087fbaf71cf7eb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "sha256": "ceaaa946225316f072342c7ee498a87d9310dc0afa45c8099c1840781f86c2ca",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/5d5f1753b61f55def054.body",
+      "sha256": "720a9213071f941bf11ccd7172772dff99a5dda0319d21e62b9a781adc9e1db8",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/5d5f1753b61f55def054.reader.txt",
+      "sha256": "e4d32280d3163cb11fbade08e7850e1958d96e84b88315bac271707f7e8c29b6",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/7985a0f618a33fb30598.body",
+      "sha256": "11dc81661c100f19bb60488711d6f4b58865eec3e20879d525c5567ecee80f64",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/7985a0f618a33fb30598.reader.txt",
+      "sha256": "9ed84a580eeeeca13a823be283d5e2f37610d88f02d42530262fe4d28ee59c0a",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/BOE-A-2026-1761-approved-form.pdf",
+      "sha256": "0552f1b8b0e30b22a63e0cc4be29f5ba8ab050609dcb04ed16549b8eb5030694",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "sha256": "4bf7bd374a54e80dd945bdf3ce19886fea01b08517eb6c0cf0df4083799555f7",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e5ba64b357d585dc19a6.body",
+      "sha256": "a4ebfde7f6d4bae0045789e90480a8190ace8ae9ccdf5bdd2833a5efb54ebd47",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e5ba64b357d585dc19a6.reader.txt",
+      "sha256": "c6478a291c08b264d4614dedcb95341ad7d1fc7265f227c46e7b48aed671ef1b",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.body",
+      "sha256": "a012b63a91b1d8ac492d46c458cd32398b23b240f9f7dcf727087fbaf71cf7eb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "sha256": "ceaaa946225316f072342c7ee498a87d9310dc0afa45c8099c1840781f86c2ca",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.body",
+      "sha256": "a012b63a91b1d8ac492d46c458cd32398b23b240f9f7dcf727087fbaf71cf7eb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "sha256": "ceaaa946225316f072342c7ee498a87d9310dc0afa45c8099c1840781f86c2ca",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/327328adb33c820765d2.body",
+      "sha256": "f8a0027314b563484faa96ff8e7fc1425b8ca61ebada1daa7e919922bb47cddf",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/327328adb33c820765d2.reader.txt",
+      "sha256": "af7a80be2e3a4793babbb41e3edfd8cbcaeac94e05eb69d512309d836ad0197d",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.body",
+      "sha256": "a012b63a91b1d8ac492d46c458cd32398b23b240f9f7dcf727087fbaf71cf7eb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "sha256": "ceaaa946225316f072342c7ee498a87d9310dc0afa45c8099c1840781f86c2ca",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.body",
+      "sha256": "a012b63a91b1d8ac492d46c458cd32398b23b240f9f7dcf727087fbaf71cf7eb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "sha256": "ceaaa946225316f072342c7ee498a87d9310dc0afa45c8099c1840781f86c2ca",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d6a2c49c95869664933d.body",
+      "sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d6a2c49c95869664933d.reader.txt",
+      "sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.body",
+      "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/V0835-25-actual-answer-AX.txt",
+      "sha256": "111655450eb4d1d305552b71e12fe1ccba5148996d8a8b190f128fd952e41808",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/V0835-25-answer-text.reader.txt",
+      "sha256": "e06fad65892b92a86ce73c1884bcccf34b2ec3ea2bc130758a1147b96505ce37",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/V0386-24-actual-answer-AX.txt",
+      "sha256": "06bd1c276551766b124a82d0cb09fa25224811618161631bd692c782c53dd3fc",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/V0386-24-answer-text.reader.txt",
+      "sha256": "2e087399c0398e8434109ba2ffba1614e625a1dba55ec76e6859820c425db387",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/07d59d611abf7cf5a354.body",
+      "sha256": "7c3789a009a3b268970f6877835fee5de0d866843a74f48e85bade21667e216c",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/07d59d611abf7cf5a354.reader.txt",
+      "sha256": "a43439c6876a48c57e5ea672f943ffdd5989fc7b017797eef10e7bcf98f0dea9",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/ca77604b5a90798af10f.body",
+      "sha256": "b1a9c75ef2093827d41b6a42805bff4927c7a10897df11d259dc735df5b87aac",
+      "matches": true
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/ca77604b5a90798af10f.reader.txt",
+      "sha256": "11f29a9f8e1e5983e9c02aa1c6340f8bfd8277f0c45dae8cc9d2bc868618430a",
+      "matches": true
+    }
+  ],
+  "unique_files": 36,
+  "quotes": [
+    {
+      "row": 1,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 2,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 3,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 4,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 5,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 6,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 7,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/8c7a2dd83d635fa40cc4.reader.txt",
+      "present": true
+    },
+    {
+      "row": 8,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f00ff3cd9f435fceecd7.reader.txt",
+      "present": true
+    },
+    {
+      "row": 9,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/f4eb2e35ede1a1a3c215.reader.txt",
+      "present": true
+    },
+    {
+      "row": 10,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/9a0cee5a821cd372a144.reader.txt",
+      "present": true
+    },
+    {
+      "row": 11,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 12,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 13,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 14,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 15,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 16,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 17,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 18,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 19,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/1db064b2a855fc3451e3.reader.txt",
+      "present": true
+    },
+    {
+      "row": 20,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/1db064b2a855fc3451e3.reader.txt",
+      "present": true
+    },
+    {
+      "row": 21,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/1db064b2a855fc3451e3.reader.txt",
+      "present": true
+    },
+    {
+      "row": 22,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/1db064b2a855fc3451e3.reader.txt",
+      "present": true
+    },
+    {
+      "row": 23,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/1db064b2a855fc3451e3.reader.txt",
+      "present": true
+    },
+    {
+      "row": 24,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/1db064b2a855fc3451e3.reader.txt",
+      "present": true
+    },
+    {
+      "row": 25,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 26,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 27,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 28,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d92424e8f184d727232f.reader.txt",
+      "present": true
+    },
+    {
+      "row": 29,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 30,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 31,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 32,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 33,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 34,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 35,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 36,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 37,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 38,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 39,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 40,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 41,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 42,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 43,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 44,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 45,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 46,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "present": true
+    },
+    {
+      "row": 47,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 48,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/5d5f1753b61f55def054.reader.txt",
+      "present": true
+    },
+    {
+      "row": 49,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/7985a0f618a33fb30598.reader.txt",
+      "present": true
+    },
+    {
+      "row": 50,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 51,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 52,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 53,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/e5ba64b357d585dc19a6.reader.txt",
+      "present": true
+    },
+    {
+      "row": 54,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 55,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 56,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 57,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "present": true
+    },
+    {
+      "row": 58,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 59,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 60,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 61,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 62,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 63,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 64,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 65,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 66,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 67,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 68,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 69,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 70,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 71,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 72,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 73,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 74,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 75,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 76,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 77,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 78,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "present": true
+    },
+    {
+      "row": 79,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "present": true
+    },
+    {
+      "row": 80,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "present": true
+    },
+    {
+      "row": 81,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/327328adb33c820765d2.reader.txt",
+      "present": true
+    },
+    {
+      "row": 82,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "present": true
+    },
+    {
+      "row": 83,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "present": true
+    },
+    {
+      "row": 84,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/303-selected-pages12-and14.reader.txt",
+      "present": true
+    },
+    {
+      "row": 85,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d6a2c49c95869664933d.reader.txt",
+      "present": true
+    },
+    {
+      "row": 86,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/d6a2c49c95869664933d.reader.txt",
+      "present": true
+    },
+    {
+      "row": 87,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 88,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 89,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 90,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/467566a29714e1943210.reader.txt",
+      "present": true
+    },
+    {
+      "row": 91,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/V0835-25-answer-text.reader.txt",
+      "present": true
+    },
+    {
+      "row": 92,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/ledgers/spain-2026-evidence/spain-vat-return/V0386-24-answer-text.reader.txt",
+      "present": true
+    },
+    {
+      "row": 93,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/07d59d611abf7cf5a354.reader.txt",
+      "present": true
+    },
+    {
+      "row": 94,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/07d59d611abf7cf5a354.reader.txt",
+      "present": true
+    },
+    {
+      "row": 95,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/07d59d611abf7cf5a354.reader.txt",
+      "present": true
+    },
+    {
+      "row": 96,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/b964616c2e975e42f992.reader.txt",
+      "present": true
+    },
+    {
+      "row": 97,
+      "reader": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/sources/ca77604b5a90798af10f.reader.txt",
+      "present": true
+    }
+  ],
+  "successor_quote_checks": [
+    {
+      "row": 1,
+      "present": true
+    },
+    {
+      "row": 2,
+      "present": true
+    },
+    {
+      "row": 3,
+      "present": true
+    },
+    {
+      "row": 4,
+      "present": true
+    },
+    {
+      "row": 5,
+      "present": true
+    },
+    {
+      "row": 6,
+      "present": true
+    },
+    {
+      "row": 7,
+      "present": true
+    },
+    {
+      "row": 8,
+      "present": true
+    },
+    {
+      "row": 9,
+      "present": true
+    },
+    {
+      "row": 10,
+      "present": true
+    },
+    {
+      "row": 11,
+      "present": true
+    },
+    {
+      "row": 12,
+      "present": true
+    },
+    {
+      "row": 13,
+      "present": true
+    },
+    {
+      "row": 14,
+      "present": true
+    },
+    {
+      "row": 15,
+      "present": true
+    },
+    {
+      "row": 16,
+      "present": true
+    },
+    {
+      "row": 17,
+      "present": true
+    },
+    {
+      "row": 18,
+      "present": true
+    },
+    {
+      "row": 19,
+      "present": true
+    },
+    {
+      "row": 20,
+      "present": true
+    },
+    {
+      "row": 21,
+      "present": true
+    },
+    {
+      "row": 22,
+      "present": true
+    },
+    {
+      "row": 23,
+      "present": true
+    },
+    {
+      "row": 24,
+      "present": true
+    },
+    {
+      "row": 25,
+      "present": true
+    },
+    {
+      "row": 26,
+      "present": true
+    },
+    {
+      "row": 27,
+      "present": true
+    },
+    {
+      "row": 28,
+      "present": true
+    },
+    {
+      "row": 29,
+      "present": true
+    },
+    {
+      "row": 30,
+      "present": true
+    },
+    {
+      "row": 31,
+      "present": true
+    },
+    {
+      "row": 32,
+      "present": true
+    },
+    {
+      "row": 33,
+      "present": true
+    },
+    {
+      "row": 34,
+      "present": true
+    },
+    {
+      "row": 35,
+      "present": true
+    },
+    {
+      "row": 36,
+      "present": true
+    },
+    {
+      "row": 37,
+      "present": true
+    },
+    {
+      "row": 38,
+      "present": true
+    },
+    {
+      "row": 39,
+      "present": true
+    },
+    {
+      "row": 40,
+      "present": true
+    },
+    {
+      "row": 41,
+      "present": true
+    },
+    {
+      "row": 42,
+      "present": true
+    },
+    {
+      "row": 43,
+      "present": true
+    },
+    {
+      "row": 44,
+      "present": true
+    },
+    {
+      "row": 45,
+      "present": true
+    },
+    {
+      "row": 46,
+      "present": true
+    },
+    {
+      "row": 47,
+      "present": true
+    },
+    {
+      "row": 48,
+      "present": true
+    },
+    {
+      "row": 49,
+      "present": true
+    },
+    {
+      "row": 50,
+      "present": true
+    },
+    {
+      "row": 51,
+      "present": true
+    },
+    {
+      "row": 52,
+      "present": true
+    },
+    {
+      "row": 53,
+      "present": true
+    },
+    {
+      "row": 54,
+      "present": true
+    },
+    {
+      "row": 55,
+      "present": true
+    },
+    {
+      "row": 56,
+      "present": true
+    },
+    {
+      "row": 57,
+      "present": true
+    },
+    {
+      "row": 58,
+      "present": true
+    },
+    {
+      "row": 59,
+      "present": true
+    },
+    {
+      "row": 60,
+      "present": true
+    },
+    {
+      "row": 61,
+      "present": true
+    },
+    {
+      "row": 62,
+      "present": true
+    },
+    {
+      "row": 63,
+      "present": true
+    },
+    {
+      "row": 64,
+      "present": true
+    },
+    {
+      "row": 65,
+      "present": true
+    },
+    {
+      "row": 66,
+      "present": true
+    },
+    {
+      "row": 67,
+      "present": true
+    },
+    {
+      "row": 68,
+      "present": true
+    },
+    {
+      "row": 69,
+      "present": true
+    },
+    {
+      "row": 70,
+      "present": true
+    },
+    {
+      "row": 71,
+      "present": true
+    },
+    {
+      "row": 72,
+      "present": true
+    },
+    {
+      "row": 73,
+      "present": true
+    },
+    {
+      "row": 74,
+      "present": true
+    },
+    {
+      "row": 75,
+      "present": true
+    },
+    {
+      "row": 76,
+      "present": true
+    },
+    {
+      "row": 77,
+      "present": true
+    },
+    {
+      "row": 78,
+      "present": true
+    },
+    {
+      "row": 79,
+      "present": true
+    },
+    {
+      "row": 80,
+      "present": true
+    },
+    {
+      "row": 81,
+      "present": true
+    },
+    {
+      "row": 82,
+      "present": true
+    },
+    {
+      "row": 83,
+      "present": true
+    },
+    {
+      "row": 84,
+      "present": true
+    },
+    {
+      "row": 85,
+      "present": true
+    },
+    {
+      "row": 86,
+      "present": true
+    },
+    {
+      "row": 87,
+      "present": true
+    },
+    {
+      "row": 88,
+      "present": true
+    },
+    {
+      "row": 89,
+      "present": true
+    },
+    {
+      "row": 90,
+      "present": true
+    },
+    {
+      "row": 91,
+      "present": true
+    },
+    {
+      "row": 92,
+      "present": true
+    },
+    {
+      "row": 93,
+      "present": true
+    },
+    {
+      "row": 94,
+      "present": true
+    },
+    {
+      "row": 95,
+      "present": true
+    },
+    {
+      "row": 96,
+      "present": true
+    },
+    {
+      "row": 97,
+      "present": true
+    }
+  ]
+}

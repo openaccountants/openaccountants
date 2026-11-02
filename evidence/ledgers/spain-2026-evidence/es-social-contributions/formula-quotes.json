@@ -1,0 +1,41 @@
+{
+  "formula0": [
+    {
+      "source": "formula0",
+      "article": "2026 art14.4",
+      "url": "https://www.boe.es/datos/imagenes/disp/2026/79/7296_16826804_1.png",
+      "quote": "% reducción mes o jornada año 2026 = % reducción año 2021 a la base mes o jornada de 2026 + [(8,10% − % reducción año 2021 a la base mes o jornada de 2026)/10] × 5",
+      "reader": "sources/formula0.visual-transcription.txt",
+      "LF_start": 1,
+      "LF_end": 1,
+      "read_on": "2026-10-28",
+      "capture_kind": "Exact formula visually read; transcription uses typographic multiplication/minus; original PNG retained unmodified."
+    }
+  ],
+  "formula1": [
+    {
+      "source": "formula1",
+      "article": "2021 art13.4.b",
+      "url": "https://www.boe.es/datos/imagenes/disp/2021/290/20075_10704846_1.png",
+      "quote": "% reducción mes = 7,36% × (1 + (Base mes − 986,70)/Base mes × 2,52 × 6,15%/7,36%)",
+      "reader": "sources/formula1.visual-transcription.txt",
+      "LF_start": 1,
+      "LF_end": 1,
+      "read_on": "2026-10-28",
+      "capture_kind": "Exact formula visually read; transcription uses typographic multiplication/minus; original PNG retained unmodified."
+    }
+  ],
+  "formula2": [
+    {
+      "source": "formula2",
+      "article": "2021 art13.4.b",
+      "url": "https://www.boe.es/datos/imagenes/disp/2021/290/20075_10704847_1.png",
+      "quote": "% reducción jornada = 7,36% × (1 + (Base jornada − 42,90)/Base jornada × 2,52 × 6,15%/7,36%)",
+      "reader": "sources/formula2.visual-transcription.txt",
+      "LF_start": 1,
+      "LF_end": 1,
+      "read_on": "2026-10-28",
+      "capture_kind": "Exact formula visually read; transcription uses typographic multiplication/minus; original PNG retained unmodified."
+    }
+  ]
+}

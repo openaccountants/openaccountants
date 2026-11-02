@@ -1,0 +1,570 @@
+
+
+    Nuclis agregats — Ajuntament d'Artesa de Segre
+
+[[ID:visual-portal-wrapper]]
+
+[[ID:skip-to-content]]
+Saltar al contingut
+        
+[[ID:skip-to-navigation]]
+Saltar a la navegació
+        
+[[ID:skip-to-contact-info]]
+Informació de contacte
+    
+[[ID:mobile-navigation]]
+
+[[ID:mobile-menu]]
+
+        Menu
+
+[[ID:mobileAccordion]]
+
+                    L'Ajuntament 
+
+[[ID:ajuntament]]
+
+Salutació de l'alcalde
+
+Grups municipals
+
+Òrgans de govern
+
+Ordenances i Reglaments
+
+Plens
+
+Anuncis
+
+Informació Administrativa
+
+Regidories
+
+Àrees i departaments
+
+Informació Urbanística
+
+Serveis
+
+Tràmits
+
+Atenció ciutadana
+
+Mapa de capacitat acústica
+
+Cita prèvia i reserva d'espais
+
+Oferta pública d'ocupació
+
+Codi d'accessibilitat de Catalunya (Fitxa de condicions d'accessibilitat)
+
+Codi de conducta dels alts càrrecs de l'Ajuntament d'Artesa de Segre
+
+Pla igualtat i Protocol Prevenció
+
+DOCUMENT ÚNIC DE PROTECCIÓ CIVIL Municipi d’Artesa de Segre
+
+PLA DIRECTOR D’ABASTAMENT D’AIGUA POTABLE D’ARTESA DE SEGRE
+
+PLA DE MESURES ANTIFRAU
+
+PLA GESTIÓ ÈTICA COLÒNIES FELINES
+
+                    Actualitat 
+
+[[ID:actualitat]]
+
+Agenda
+
+Notícies
+
+Programacions
+
+Destacats
+
+                    La Ciutat 
+
+[[ID:la-ciutat]]
+
+Participació ciutadana
+
+Situació geogràfica
+
+Història
+
+Guia
+
+Nuclis agregats
+
+Ens municipals
+
+Entitats i associacions
+
+Plànol urbà
+
+Transports
+
+Telèfons d'interès
+
+                    Som patrimoni 
+
+[[ID:som-patrimoni]]
+
+Festes i tradicions
+
+Catàleg de béns a protegir
+
+Béns culturals
+
+Béns culturals d'interès local
+
+Béns culturals d'interès nacional
+
+Fira de Sant Bartomeu
+
+Arxiu històric virtual
+
+                    Comerç i Serveis 
+
+[[ID:comerc-i-serveis]]
+
+Inscripció al Directori
+
+Campanya “Jo compro Artesa de Segre”
+
+Directori comercial i de serveis
+
+                    Pla Educatiu d'Entorn 
+
+[[ID:pla-educatiu-dentorn-artesa-de-segre]]
+
+Actualitat
+
+PEE ARTESA DE SEGRE
+
+RECURSOS EDUCATIUS
+
+[[ID:portal-searchbox-mobile]]
+
+[[ID:searchGadgetMobile_form]]
+
+            Cerca        
+            
+[[ID:searchGadgetMobile]]
+
+                Cerca
+
+[[ID:content-header]]
+
+[[ID:portal-top]]
+
+[[ID:page-header]]
+
+[[ID:interior-slider]]
+
+							La Ciutat
+
+[[ID:portal-weather]]
+
+[[ID:home-weather]]
+
+                          24° / 8°
+
+[[ID:portal-social-icons]]
+
+[[ID:social-icons]]
+
+[[ID:socialicon-facebook]]
+
+Facebook
+
+[[ID:socialicon-instagram]]
+
+Instagram
+
+[[ID:portal-logo]]
+
+    Ajuntament d'Artesa de Segre
+
+[[ID:portal-languageselector]]
+
+[[ID:portalLanguageGoogle]]
+
+        Choose language
+        
+[[ID:google_translate_element]]
+
+[[ID:portal-searchbox]]
+
+        Cerca
+
+[[ID:main-navigation1]]
+
+              L'Ajuntament 
+
+Salutació de l'alcalde
+
+Grups municipals
+
+Òrgans de govern
+
+Ordenances i Reglaments
+
+Plens
+
+Anuncis
+
+Informació Administrativa
+
+Regidories
+
+Àrees i departaments
+
+Informació Urbanística
+
+Serveis
+
+Tràmits
+
+Atenció ciutadana
+
+Mapa de capacitat acústica
+
+Cita prèvia i reserva d'espais
+
+Oferta pública d'ocupació
+
+Codi d'accessibilitat de Catalunya (Fitxa de condicions d'accessibilitat)
+
+Codi de conducta dels alts càrrecs de l'Ajuntament d'Artesa de Segre
+
+Pla igualtat i Protocol Prevenció
+
+DOCUMENT ÚNIC DE PROTECCIÓ CIVIL Municipi d’Artesa de Segre
+
+PLA DIRECTOR D’ABASTAMENT D’AIGUA POTABLE D’ARTESA DE SEGRE
+
+PLA DE MESURES ANTIFRAU
+
+PLA GESTIÓ ÈTICA COLÒNIES FELINES
+
+              Actualitat 
+
+Agenda
+
+Notícies
+
+Programacions
+
+Destacats
+
+              La Ciutat 
+
+Participació ciutadana
+
+Situació geogràfica
+
+Història
+
+Guia
+
+Nuclis agregats
+
+Ens municipals
+
+Entitats i associacions
+
+Plànol urbà
+
+Transports
+
+Telèfons d'interès
+
+              Som patrimoni 
+
+Festes i tradicions
+
+Catàleg de béns a protegir
+
+Béns culturals
+
+Béns culturals d'interès local
+
+Béns culturals d'interès nacional
+
+Fira de Sant Bartomeu
+
+Arxiu històric virtual
+
+              Comerç i Serveis 
+
+Inscripció al Directori
+
+Campanya “Jo compro Artesa de Segre”
+
+Directori comercial i de serveis
+
+              Pla Educatiu d'Entorn 
+
+Actualitat
+
+PEE ARTESA DE SEGRE
+
+RECURSOS EDUCATIUS
+
+[[ID:page-header-minisite]]
+
+[[ID:above-content-wrapper]]
+
+[[ID:portal-breadcrumbs]]
+
+[[ID:breadcrumbs-you-are-here]]
+Sou a:
+
+[[ID:breadcrumbs-home]]
+
+        Inici
+
+[[ID:breadcrumbs-1]]
+
+          La Ciutat
+
+[[ID:breadcrumbs-2]]
+
+[[ID:breadcrumbs-current]]
+Nuclis agregats
+
+[[ID:global_statusmessage]]
+
+[[ID:full-container]]
+
+[[ID:inside-full-container]]
+
+[[ID:main-container]]
+
+[[ID:content]]
+
+[[ID:viewlet-above-content-title]]
+
+[[ID:social-tags-body]]
+
+  Nuclis agregats
+  
+  https://www.artesadesegre.cat/la-ciutat/nuclis-agregats
+  https://www.artesadesegre.cat/@@site-logo/logo.png
+
+Nuclis agregats
+
+[[ID:viewlet-below-content-title]]
+
+[[ID:viewlet-above-content-body]]
+
+[[ID:content-core]]
+
+Alentorn
+
+Anya
+
+Baldomar
+
+Clua
+
+Colldelrat
+
+Collfred
+
+Comiols
+
+El Pont d'Alentorn
+
+Folquer
+
+La Colònia de la Fàbrica
+
+La Vall d'Ariet
+
+La Vedrenya
+
+Montargull
+
+Montmagastre
+
+Seró
+
+Tudela de Segre
+
+Vall-llebrera
+
+Vall-llebrerola
+
+Vernet
+
+Vilves
+
+[[ID:viewlet-below-content-body]]
+
+[[ID:viewlet-below-content]]
+
+[[ID:sidebar]]
+
+[[ID:portal-column-one]]
+
+[[ID:portletwrapper-706c6f6e652e6c656674636f6c756d6e0a636f6e746578740a2f66732d616a756e74616d656e742d646172746573612d64652d73656772652f616a756e74616d656e742d646172746573612d64652d73656772650a6e617669676174696f6e]]
+
+        Navegació
+
+            Participació ciutadana
+
+            Situació geogràfica
+
+            Història
+
+            Guia
+
+            Nuclis agregats
+
+            Alentorn
+
+            Anya
+
+            Baldomar
+
+            Clua
+
+            Colldelrat
+
+            Collfred
+
+            Comiols
+
+            El Pont d'Alentorn
+
+            Folquer
+
+            La Colònia de la Fàbrica
+
+            La Vall d'Ariet
+
+            La Vedrenya
+
+            Montargull
+
+            Montmagastre
+
+            Seró
+
+            Tudela de Segre
+
+            Vall-llebrera
+
+            Vall-llebrerola
+
+            Vernet
+
+            Vilves
+
+            Ens municipals
+
+            Entitats i associacions
+
+            Plànol urbà
+
+            Transports
+
+            Telèfons d'interès
+
+[[ID:column2-container]]
+
+[[ID:document-actions]]
+
+[[ID:heading_document_actions]]
+
+Document Actions
+
+[[ID:document-action-print]]
+
+                                Imprimeix-ho
+
+[[ID:document-action-send]]
+
+                                Enviar per email
+
+Compartir
+
+                            facebook
+
+                            twitter
+
+                            linkedin
+
+                            Whatsapp 
+
+[[ID:portal-footer-wrapper]]
+
+[[ID:portal-footer]]
+
+[[ID:custom-footer]]
+
+            Ajuntament d'Artesa de Segre
+
+[[ID:portal-info]]
+
+Plaça de l'Ajuntament, 1, Artesa de Segre
+
+ 973400013
+
+ajuntament@artesadesegre.cat
+
+[[ID:portal-site-actions]]
+
+[[ID:siteaction-index_html]]
+
+Inici
+
+[[ID:siteaction-legal_advice]]
+
+Avís Legal
+
+[[ID:siteaction-privacity]]
+
+Política de privacitat
+
+[[ID:siteaction-cookies]]
+
+Política de cookies
+
+[[ID:siteaction-rat]]
+
+RAT
+
+[[ID:siteaction-accessibility]]
+
+Accessibilitat
+
+[[ID:siteaction-sitemap]]
+
+Mapa del lloc
+
+[[ID:siteaction-contact]]
+
+Contacte
+
+[[ID:siteaction-credits]]
+
+                  Crèdits
+
+Projecte desenvolupat per Diputació de Lleida
+
+[[ID:portal-seachBoxDialog]]
+
+[[ID:modalSearchBox]]
+
+                    Tancar
+
+[[ID:searchGadget_form]]
+
+                    Cerca
+
+[[ID:searchGadget]]
+

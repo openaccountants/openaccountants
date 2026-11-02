@@ -1,0 +1,10 @@
+{
+  "row": "MD-IND-383",
+  "reviewer_actual_read_date": "2026-10-31",
+  "official_url": "https://www.legis.md/UserFiles/images/RO/2020/mo165-176md/formula_543.png",
+  "actual_image_title": "formula_543.png (294×137)",
+  "method": "Own background IABtab1 exactURL loaded, direct screenshot visually read; no CAPTCHA interaction or security bypass.",
+  "transcription": "F = S × (Nzl / 365) × ((Rd − Rdc) / 100)",
+  "result": "PASS; matches original writer transcription. Positive-only claim derives from separate Code19(d) checked primary text.",
+  "retention": "Actual image screenshot in reviewer tool record; no downloaded original PNG claim."
+}

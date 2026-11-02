@@ -1,6 +1,6 @@
 # Pack README template
 
-Every jurisdiction pack (`skills/international/<country>/`, `skills/us-states/<xx>/`, `packages/ca-<xx>/`) has a `README.md` that says which tax domains apply there. `scripts/coverage-report.py` reads it, so a domain a jurisdiction does not have stops showing as missing, and a skill whose name does not reveal its domain is still counted. `scripts/build-index.py` skips README files, so this never changes the skill counts.
+Every jurisdiction pack (`skills/<country>/`, `skills/us/states/<xx>/`, `packages/ca-<xx>/`) has a `README.md` that says which tax domains apply there. `scripts/coverage-report.py` reads it, so a domain a jurisdiction does not have stops showing as missing, and a skill whose name does not reveal its domain is still counted. `scripts/build-index.py` skips README files, so this never changes the skill counts.
 
 Copy this, fill the frontmatter, delete these instructions.
 

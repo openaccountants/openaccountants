@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "exactly_two_blocks": true,
+    "first_block_byte_identical": true,
+    "block_1_name_preserved": true,
+    "block_1_inputs_all_original_fields_preserved": true,
+    "block_1_steps_all_original_fields_preserved": true,
+    "block_1_expected_all_original_fields_preserved": true,
+    "block_2_name_preserved": true,
+    "block_2_inputs_all_original_fields_preserved": true,
+    "block_2_steps_all_original_fields_preserved": true,
+    "block_2_expected_all_original_fields_preserved": true,
+    "all_original_example_narrative_byte_identical": true,
+    "full_CTA_byte_identical": true,
+    "all_other_metadata_preserved": true,
+    "version_and_date_monotonic": true,
+    "all_original_URL_occurrences_preserved": true,
+    "all_original_source_rows_in_original_order": true,
+    "only_six_surgical_replacements_no_unapproved_changes": true
+  },
+  "before_bytes": 27971,
+  "final_bytes": 31683,
+  "before_sha256": "c3d09ddbacadeb67e7ac394d7d0fcf58bcb71504576b3ce88aaf1b379b971f40",
+  "final_sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+  "old_url_occurrences": 48,
+  "new_url_occurrences": 54,
+  "missing_URLs": {}
+}

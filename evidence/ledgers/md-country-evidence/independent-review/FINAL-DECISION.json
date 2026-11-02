@@ -1,0 +1,66 @@
+{
+  "decision": "PASS_FOR_BOUNDED_SOURCE_CITED_DRAFT",
+  "tax_method_commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+  "original_review_commit": "8b9c5551be5a00884b472567e01ce8063918cbfc",
+  "current_ledger_total": 3913,
+  "substantively_checked_at_stated_scope": 3913,
+  "substantively_unread": 0,
+  "open_findings": 0,
+  "fixed_findings": 15,
+  "Guide_counts": {
+    "md-company-formation": 209,
+    "md-corporate-income-tax": 557,
+    "md-cross-border": 337,
+    "md-tax-overview": 55,
+    "md-transfer-pricing": 487,
+    "moldova-income-tax": 651,
+    "moldova-payroll": 615,
+    "moldova-social-contributions": 497,
+    "moldova-tax-optimization": 137,
+    "moldova-vat": 368
+  },
+  "current_Guide_hashes": {
+    "skills/international/moldova/md-company-formation.md": "b480df071af4ec1092fc0afa394e78803bdb7738d14ca38f4e387a4a3caac0d3",
+    "skills/international/moldova/md-corporate-income-tax.md": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643",
+    "skills/international/moldova/md-cross-border.md": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f",
+    "skills/international/moldova/md-tax-overview.md": "47aa6fc8ab43f3e7817eda1ecc2b5275e7d83bfa1eb013b862c9824fd6e2a9fe",
+    "skills/international/moldova/md-transfer-pricing.md": "df3d940231510433946d7c71db887c498ed811f5638635045e3aead2cd3657c6",
+    "skills/international/moldova/moldova-income-tax.md": "4246895075dc055df25c1b51741e25ba7b41b31a8a32e97e7eb34842dc874609",
+    "skills/international/moldova/moldova-payroll.md": "0c3b85dd8283b36a8d4316b731e5fdcdf8e4c1fd49a7b4378923fd7b0d392e26",
+    "skills/international/moldova/moldova-social-contributions.md": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2",
+    "skills/international/moldova/moldova-tax-optimization.md": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968",
+    "skills/international/moldova/moldova-vat.md": "da12edadab1f25eb3f97901f3e00bcbc8c4568c6f393120d6ee76ad036005adf"
+  },
+  "examples": {
+    "Guide_manual": 20,
+    "evidence_oa_manual": 30,
+    "total_retained_oa_blocks": 50,
+    "standalone_cases_manual": 58,
+    "social14": "Includedamong30evidenceoablocks,notadditional58standalonecases"
+  },
+  "topics": {
+    "original_parent_units_mechanically_preserved": 1564,
+    "additional_children": 818,
+    "semantic_unique_samples": 80,
+    "Guides_sampled": 10,
+    "new370_public_units_sampled": 28,
+    "semantic_samples_not_exhaustive": true
+  },
+  "current_machine_provenance": "3913/3913sourcehash/exactquote/contextchecksPASS; separatefromsubstantivereview",
+  "temporal_scope": "Selected operative headers/commencement/January–current comparisons reviewed as stated perGuide;0Guidescertifiedfull2026amendmentchain",
+  "trust": "Source-citeddraftonly;notcredentialedhumanattestation",
+  "coverage": "All7applicabledomainspartial;noadditiontocomprehensivecountrycount",
+  "publication_conditions": [
+    "NarrowactiveREADME/Guidestatusupdate linkscompletedreviewwithordinarygapsstillpartial",
+    "AllrequiredCI/repository/publicationchecksandownershipcoordinationmustpass;reviewdoesnotmergethePR",
+    "NootherGuide/ledgerchangeswithoutdeltaindependentrecheck"
+  ],
+  "final_metadata_hash_recheck": "Pendingparentstatus-onlycommit",
+  "limitations": [
+    "Everyrowreviewisatitsstatedclaim/sourcecontextscope,notverificationofeveryclauseofeverylaw",
+    "Hypotheticalcaseinputsarenotactualclientfindings",
+    "Topicsemanticreviewisspotchecking,notexhaustiveall2382comparison",
+    "Machinehash/quotesuccessdoesnotprovelegalcorrectness;individualfindings/deltasevidenceprovidelegalcheckrecord",
+    "Explicitunconfirmedordinaryandproceduralgapsinfinal-gap-classificationremainunresolved"
+  ]
+}

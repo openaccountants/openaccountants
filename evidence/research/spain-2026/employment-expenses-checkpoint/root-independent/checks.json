@@ -1,0 +1,278 @@
+{
+  "reviewer": "Root independent of candidate writer; bounded delta review, not whole-pack or accountant attestation",
+  "candidate_sha256": "1c863905ca1a508d5513725a6984a82e210805da57f62067ac0c9a3067a0a290",
+  "baseline_sha256": "40b24c16565a99479623b8fda382d00467a31e19e91780f1e74dbe58c73f746e",
+  "writer_manifest_verified_entries": 54,
+  "checks": [
+    {
+      "name": "Exact inverse restores entire original Guide",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "Independent byte comparison"
+    },
+    {
+      "name": "Live Guide still equals reviewed baseline",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "Live file bytes"
+    },
+    {
+      "name": "Only frontmatter version changes",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "Protected metadata comparison"
+    },
+    {
+      "name": "All ten H2 sections and order retained",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "Deep-tax shape and protected CTA"
+    },
+    {
+      "name": "Method H2 count plus CTA",
+      "actual": "10",
+      "expected": "10",
+      "pass_": true,
+      "authority": "Repository format"
+    },
+    {
+      "name": "Two original complete executable examples retained",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "Whole fenced-block comparison"
+    },
+    {
+      "name": "Exactly two executable examples",
+      "actual": "2",
+      "expected": "2",
+      "pass_": true,
+      "authority": "Repository format"
+    },
+    {
+      "name": "Entire protected CTA retained",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "Protected CTA bytes"
+    },
+    {
+      "name": "All original URL multiplicities retained",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "URL occurrence comparison"
+    },
+    {
+      "name": "No invented joint inactive-member allowance",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "AEAT section c, current LIRPF84(2)"
+    },
+    {
+      "name": "AEAT overlap example year honestly labelled",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "Actual AEAT page title/content/date"
+    },
+    {
+      "name": "Overlap claimant disability and active jobs explicit",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "Actual AEAT example"
+    },
+    {
+      "name": "Unemployment benefit not active job income",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "RIRPF11(2), AEAT example"
+    },
+    {
+      "name": "Eligible ceiling inputs are already net",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "AEAT expense ceiling"
+    },
+    {
+      "name": "Shared expense allocation remains unselected",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "No direct allocation authority supplied"
+    },
+    {
+      "name": "Balearic rate question remains unselected",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "Actual3sexties/ATIBnotice"
+    },
+    {
+      "name": "Main pre-f net earnings",
+      "actual": "409500",
+      "expected": "409500",
+      "pass_": true,
+      "authority": "LIRPF19(1)/(2)(a)"
+    },
+    {
+      "name": "Main post-f category net",
+      "actual": "404000",
+      "expected": "404000",
+      "pass_": true,
+      "authority": "LIRPF19(2)(f)"
+    },
+    {
+      "name": "Main article20 earnings gate",
+      "actual": "False",
+      "expected": "False",
+      "pass_": true,
+      "authority": "Current LIRPF20"
+    },
+    {
+      "name": "Even all common ordinary costs leave sufficient eligible wage ceiling",
+      "actual": "True",
+      "expected": "True",
+      "pass_": true,
+      "authority": "Exclusive wage enhancement underRIRPF11(2), no allocation assumed"
+    },
+    {
+      "name": "Overlap union income",
+      "actual": "1800",
+      "expected": "1800",
+      "pass_": true,
+      "authority": "AEAT sections c/d actual example"
+    },
+    {
+      "name": "Overlap deduction ceiling",
+      "actual": "1800",
+      "expected": "1800",
+      "pass_": true,
+      "authority": "AEAT section d"
+    },
+    {
+      "name": "Permitted all-disability overlap route",
+      "actual": "1800",
+      "expected": "1800",
+      "pass_": true,
+      "authority": "Actual AEAT example note2"
+    },
+    {
+      "name": "Permitted split overlap route",
+      "actual": "1800",
+      "expected": "1800",
+      "pass_": true,
+      "authority": "Actual AEAT example note2"
+    },
+    {
+      "name": "Second-year zero qualifying income",
+      "actual": "0",
+      "expected": "0",
+      "pass_": true,
+      "authority": "Actual AEAT mobility instructions"
+    },
+    {
+      "name": "Short eligible period ceiling does not prorate fixed allowance",
+      "actual": "1000",
+      "expected": "1000",
+      "pass_": true,
+      "authority": "AEAT citedTEAC22April2025 RG00-01351-2024"
+    },
+    {
+      "name": "Joint active34/inactive80 discrimination",
+      "actual": "3500",
+      "expected": "3500",
+      "pass_": true,
+      "authority": "AEAT joint disability paragraph"
+    },
+    {
+      "name": "Joint two mobility claims do not double nominal amount",
+      "actual": "2000",
+      "expected": "2000",
+      "pass_": true,
+      "authority": "AEAT joint mobility paragraph/LIRPF84(2)"
+    },
+    {
+      "name": "Article20 lower band",
+      "actual": "7302",
+      "expected": "7302",
+      "pass_": true,
+      "authority": "Current LIRPF20(a)"
+    },
+    {
+      "name": "Article20 middle band",
+      "actual": "5293.00",
+      "expected": "5293",
+      "pass_": true,
+      "authority": "Current LIRPF20(b)"
+    },
+    {
+      "name": "Article20 upper band",
+      "actual": "1992.1528",
+      "expected": "1992.1528",
+      "pass_": true,
+      "authority": "Current LIRPF20(c); no rounding rule inferred"
+    },
+    {
+      "name": "Article20 pre-f test prevents using post-f18000",
+      "actual": "0",
+      "expected": "0",
+      "pass_": true,
+      "authority": "Current LIRPF20 pre-f definition"
+    },
+    {
+      "name": "Article20 other income over6500",
+      "actual": "0",
+      "expected": "0",
+      "pass_": true,
+      "authority": "Current LIRPF20 nonexempt other-income condition"
+    },
+    {
+      "name": "Article20 cannot turn net income negative",
+      "actual": "0",
+      "expected": "0",
+      "pass_": true,
+      "authority": "Current LIRPF20 final paragraph"
+    },
+    {
+      "name": "Balearic enactment date",
+      "actual": "2026-06-14",
+      "expected": "2026-06-14",
+      "pass_": true,
+      "authority": "Law4/2026DF72/BOIBoriginalpublication"
+    },
+    {
+      "name": "Competing regional-only diagnostic, not legal answer",
+      "actual": "1500.00",
+      "expected": "1500",
+      "pass_": true,
+      "authority": "Hypothetical discriminator only"
+    },
+    {
+      "name": "Competing combined diagnostic, not legal answer",
+      "actual": "2750.000",
+      "expected": "2750",
+      "pass_": true,
+      "authority": "Hypothetical discriminator only"
+    }
+  ],
+  "count": 37,
+  "all_pass": true,
+  "original_URL_occurrences": 1096,
+  "read_scopes": {
+    "LIRPF": "Current operative19,20,84 plus their amendment notes; not whole statute",
+    "RIRPF": "Current11 and its amendment notes",
+    "AEAT": "Entire employment-expense instruction page, including actual overlap example and17March2026date; explicitly2025manual",
+    "Balearic_Law": "DF67(2),DF72 and BOIBpublication reference",
+    "Corrigendum": "Entire operative correction, DF2only",
+    "ATIB": "Entire1.2thalidomide paragraph and commencement header"
+  }
+}

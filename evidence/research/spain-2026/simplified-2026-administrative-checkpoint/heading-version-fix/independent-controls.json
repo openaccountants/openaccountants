@@ -1,0 +1,14 @@
+{
+  "verdict": "BOUNDED PASS: heading-only correction",
+  "candidate_sha256": "07d401c76f117c0e894aa8c727976d59bc761f28580db2b22e6bc8035c3b5564",
+  "bytes": 85291,
+  "only_exact_h1_replacement": true,
+  "frontmatter_byte_exact_vs_reviewed": true,
+  "frontmatter_version": "2.2",
+  "h1_version": "2.2",
+  "body_except_h1_byte_exact": true,
+  "all_urls_sources_byline_cta_and_two_oa_byte_exact": true,
+  "actual_repository_parse_and_new_guide_checks": "PASS",
+  "strict_existing_compare_against_original_before": [],
+  "example_runner": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing"
+}

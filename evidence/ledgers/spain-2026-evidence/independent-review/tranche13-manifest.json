@@ -1,0 +1,39 @@
+{
+  "artifacts": [
+    {
+      "path": "tranche13-report.md",
+      "sha256": "67831a28f498d2a0f2fd2b4e78386cfa8765108b4da0d015721aa2ff45031a56",
+      "bytes": 1600
+    },
+    {
+      "path": "tranche13-integrity.json",
+      "sha256": "b323365adb8bead8a2777e3ad0b95abd0d48eb8e550a2481c0658fd10ef51b9b",
+      "bytes": 23377
+    },
+    {
+      "path": "tranche13-read-ledger.json",
+      "sha256": "556198f10a4096730942e0a019cf40bd82cb1d38fc65842311103d6fc535921a",
+      "bytes": 1809
+    },
+    {
+      "path": "tranche13-controls.json",
+      "sha256": "15aa167265eae979e458cce357031ce745546f35e2ecf5378eb04a82640cb4d7",
+      "bytes": 9682
+    },
+    {
+      "path": "tranche13-controls.py",
+      "sha256": "c95867b8f4bd25ad670bba3eab2c558cded5271d52cdf0ee4fd60da3e85541a4",
+      "bytes": 4698
+    },
+    {
+      "path": "tranche13-examples.txt",
+      "sha256": "8462a54404640b88268f6ea6a6c28da25fbe9de52a9947c6bb3a0fed138ebe4d",
+      "bytes": 251
+    },
+    {
+      "path": "tranche13-native-LF-finding.json",
+      "sha256": "be0f435621c60a0596bd8cd43e66b25563ce9eae64360c08f5a1289496a0df0e",
+      "bytes": 2087
+    }
+  ]
+}

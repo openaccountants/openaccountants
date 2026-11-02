@@ -1,0 +1,62 @@
+{
+  "read_by": "writer",
+  "date": "2026-10-28 Europe/Madrid",
+  "no_independent_attestation": true,
+  "actual_sources": [
+    {
+      "file": "lirpf-fresh.html",
+      "scope": "actual extracted current articles19,20,84 in full including amendments; no whole-LIRPF read claim",
+      "extracts": [
+        "lirpf-fresh.html-a19.txt",
+        "lirpf-fresh.html-a20.txt",
+        "lirpf-fresh.html-a84.txt"
+      ]
+    },
+    {
+      "file": "rirpf-fresh.html",
+      "scope": "actual current article11 in full including amendment applicability; no whole-RIRPF read claim",
+      "extracts": [
+        "rirpf-fresh.html-a11.txt"
+      ]
+    },
+    {
+      "file": "aeat-employment-expenses-fresh.html",
+      "scope": "actual complete employment-expense article main content, sectionsa-d and worked example; 2025manual current page updated17March2026, not 2026campaign",
+      "vintage_bridge": "current19f unchanged since2015,11 unchanged operative since2015; current20 separate2024 amendment read"
+    },
+    {
+      "file": "balearic-enactment-fresh.html",
+      "scope": "actual DF67 entire and DF72 entire; broader law not read in full",
+      "extracts": [
+        "balearic-DF67.txt",
+        "balearic-DF72.txt"
+      ]
+    },
+    {
+      "file": "balearic-corrigendum.html",
+      "scope": "entire operative correction: DF2.2 waste/circular-law citation only, both languages"
+    },
+    {
+      "file": "atib-enactment.html",
+      "scope": "actual enactment notice including thalidomide item1.2 and effective date; singular rate repeats statute, no combined/regional identification"
+    },
+    {
+      "file": "rd574-original.html",
+      "scope": "actual arts1-3 plus analysis references to SupremeCourt; no fullgrantapplicationprocedure read claim"
+    },
+    {
+      "file": "rd574-annulment.html",
+      "scope": "actual published dispositive in full; regional-recognition wording corrected by later order"
+    },
+    {
+      "file": "rd574-correcting-order.html",
+      "scope": "actual operative correcteddispositive in full: previous regular recognition by ANY administration; not only regional"
+    }
+  ],
+  "prior_retained_source_read": [
+    {
+      "path": "../regional-attributable-tax-remaining-allocation/sources/informa147637-question-answer-extract.txt",
+      "scope": "complete actual INFORMA147637question/answer: classification, no30%reduction, resolution-yearimputation, ordinarywithholding"
+    }
+  ]
+}

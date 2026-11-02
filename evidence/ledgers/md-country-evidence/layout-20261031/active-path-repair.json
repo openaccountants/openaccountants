@@ -1,0 +1,66 @@
+{
+  "readme_prior_sha256": "895a51664aacf4196bfb8c9bd615f52be0ed0a59dc47aaa8b0b67cc0dbcb52a6",
+  "Guide_path_only_changes": [
+    {
+      "path": "skills/moldova/moldova-income-tax.md",
+      "before": "386b104ad58df0234011135e9811ad3576266ecdbb5f5a5f0b98d437dca058d7",
+      "after": "8cbd61116365766a7d08734ed9b0383d30cc7a52c3bcb2d81a87e8385cacfbbe",
+      "only_change": "relative evidence/documentation paths after upstream country-first move"
+    },
+    {
+      "path": "skills/moldova/md-corporate-income-tax.md",
+      "before": "9785c0ae32c7be0da7c0b02776c07e07b963b8325ee30f16726237826e7ab5c4",
+      "after": "890e08ad94812374f101928b4cce95d0084cba8a91bcaca4f5fbb1e34e904528",
+      "only_change": "relative evidence/documentation paths after upstream country-first move"
+    },
+    {
+      "path": "skills/moldova/moldova-payroll.md",
+      "before": "a9dcaa66169eb7674b8917fa31eef3f73f46e630d5851e4693fad8078331dbce",
+      "after": "4d214d65a2a4d86544d85c8d62c7ed5bab010903545fd9225cb0b5131fad6375",
+      "only_change": "relative evidence/documentation paths after upstream country-first move"
+    },
+    {
+      "path": "skills/moldova/moldova-tax-optimization.md",
+      "before": "3c8538deddd2095f2bd349266cf78af585ec2f9d2b18bbfb17a5e25cee0ed2a1",
+      "after": "304b470c834c2374ee7b3ffa57808c89e17c9eb75bac8b299b1e7510181c2b15",
+      "only_change": "relative evidence/documentation paths after upstream country-first move"
+    },
+    {
+      "path": "skills/moldova/moldova-social-contributions.md",
+      "before": "bfdcf9a4c95d036ac5537a56e7a3bb6f551b617fefa95bb2960264086669b6dd",
+      "after": "9cbef09d508b68182f567fefe4d1a1c8c312f52a869422a27d6c49ffbe232db6",
+      "only_change": "relative evidence/documentation paths after upstream country-first move"
+    },
+    {
+      "path": "skills/moldova/md-company-formation.md",
+      "before": "5decae5cd3408f726eedc777d48016acb06d1511e4cd66749aedaf8a9ed0d658",
+      "after": "5f39278b56c1eba06ae7094369e7f41d9ba5f7781226dd9e752b4c64046a8d9e",
+      "only_change": "relative evidence/documentation paths after upstream country-first move"
+    },
+    {
+      "path": "skills/moldova/md-cross-border.md",
+      "before": "c50f40dcdcf8745e7f9d38b7991e94084b3e89aa5039b72815d017699df2db91",
+      "after": "7abe905e131422103bdba0575a2bfdfde66a7f0330e79999d5a3b98b7c0a8452",
+      "only_change": "relative evidence/documentation paths after upstream country-first move"
+    },
+    {
+      "path": "skills/moldova/md-tax-overview.md",
+      "before": "86867a415e18b19e4416a6f9c7f24db91e7848ecbce74efbf8e8dd58c20eafd0",
+      "after": "fe699105d357c24cde45f3526b9ad34bcedcd70a5806a09174ef4ab6c644aae9",
+      "only_change": "relative evidence/documentation paths after upstream country-first move"
+    },
+    {
+      "path": "skills/moldova/md-transfer-pricing.md",
+      "before": "370c9d4e59b8831180f5734b60d0bd34b9ed0e8f2593171df6ce2dd7bbb4618c",
+      "after": "b841cc00b8c5801eba4a6583e464f171dc8ba559fe90c867dd30cb54ed70f27c",
+      "only_change": "relative evidence/documentation paths after upstream country-first move"
+    },
+    {
+      "path": "skills/moldova/moldova-vat.md",
+      "before": "46b35e10934f7a593f2da07588db7b9e8c5d9ea5c12a9ab14d47ee9ff4e7f7e2",
+      "after": "43907ee16bf950bd7819407a95505b5ec446c8af01da0cc4ec8475282e736dbb",
+      "only_change": "relative evidence/documentation paths after upstream country-first move"
+    }
+  ],
+  "historical_evidence": "All 669 relocated files retain exact original bytes; internal historical paths and sealed manifests intentionally remain historical."
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "route": "Actual current B/A/G corporate law",
+    "outcome": "Fetched full official current PDFs; four marginal charging clauses; no explicit whole-base/quota rate."
+  },
+  {
+    "route": "Actual current B/G corporate regulations",
+    "outcome": "Complete surcharge additional dispositions read; R definition and exclusions, no general R-to-base conversion."
+  },
+  {
+    "route": "Actual current A regulation",
+    "outcome": "Fresh79page consolidation; no equivalent surcharge disposition."
+  },
+  {
+    "route": "A current normative inventory",
+    "outcome": "Checked current list through13October2026 and subject matter of2026 entries; no later surcharge implementation identified."
+  },
+  {
+    "route": "A original42/2025 plus2026correction",
+    "outcome": "Original corporate article2 and complete correction read; correction adds no surcharge method."
+  },
+  {
+    "route": "A official2026regulatory programme",
+    "outcome": "Planned amendment listed; not treated as enacted law."
+  },
+  {
+    "route": "A current news/FAQ/campaign",
+    "outcome": "No positive method; campaign2025 not confused with2026taxperiod."
+  },
+  {
+    "route": "B current campaign→individual help→actual60pagePDF",
+    "outcome": "Public2025application/quota screen checked; no2026surcharge computation; authenticated private app not entered."
+  },
+  {
+    "route": "G treasury→corporate→model200→OF259/2026",
+    "outcome": "Live model explicitly2025; official order first page confirms2025 periods; not a2026surcharge authority."
+  },
+  {
+    "route": "G public help-program route",
+    "outcome": "Navigation inspected; no program installed/executed."
+  },
+  {
+    "route": "B official commission transcript16October2025",
+    "outcome": "Relevant debates read; not a binding numerical example or missing allocation instruction."
+  },
+  {
+    "route": "Fresh three provincial IRNR statutes",
+    "outcome": "Articles3/5/18/19 checked; PE incorporation remains separate unresolved question."
+  },
+  {
+    "route": "Exact-phrase and primary-domain web searches",
+    "queries": [
+      "site:araba.eus tributación adicional beneficios",
+      "site:irekia.araba.eus beneficios extraordinarios",
+      "site:araba.eus 2026 modifica el Reglamento del Impuesto sobre Sociedades",
+      "tributación adicional sobre beneficios extraordinarios cálculo",
+      "tributación adicional resultado contable ejemplo",
+      "beneficios extraordinarios 57 bis consulta",
+      "beneficios extraordinarios 56.7 consulta",
+      "site:bizkaia.eus beneficios extraordinarios ejemplo 2026",
+      "site:araba.eus beneficios extraordinarios ejemplo 2026"
+    ],
+    "outcome": "Statute/regulation and pre-enactment leads; secondary commentary not authority; no actual government numerical bridge found. Search robots restrictions did not prevent direct official PDF retrieval; earlier unrelated blocked232 lead was not retried."
+  }
+]

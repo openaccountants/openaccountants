@@ -1,0 +1,28 @@
+{
+  "id": "S-L24",
+  "priority": "Material ordinary source/interpretation precision",
+  "Guide": "es-foral-non-resident-tax",
+  "current_guide_sha256": "5c0d3b2b279a8a1cd11080c4d025a4bad14303c764c2245797ec9b8d84effed9",
+  "actual_premises": [
+    {
+      "reader": "sources/gipuzkoa_irnr_0_pdf.reader.txt",
+      "native_LF": [
+        1988,
+        2067
+      ],
+      "read": "24.1gross;2activitycost;3reinsurance;4gains;5EUexpenses; article25 follows, no24.6."
+    },
+    {
+      "reader": "sources/gipuzkoa_irnr_0_pdf.reader.txt",
+      "native_LF": [
+        2309,
+        2318
+      ],
+      "read": "31.2 excludes24.2and6,26,33.7; generalholdingusesdebtcalculation."
+    }
+  ],
+  "conflict": "Guide supplies unqualified withholding excluding EUexpenses for allBasque provinces. OwnGcrossreference now points to nonexistent24.6 while actualEUparagraph5 is not named. B/Aactualparagraph6 support ordinarygrossmethod, G requires its own interpretation disclosure or controlling source.",
+  "what_not_inferred": "No automatic netwithholding, no universalgross settledrule, no denial of finalEUexpenses, no sourceabsenceequatedwithzero.",
+  "finite_repair": "Explicit own-source reading/renumbering interpretation with literalcountertext and precise remainingauthority question, or sourced controlling amendment/admininstruction; retain positive B/Amethod.",
+  "research_scope": "Targeted retained ownGregulation24.5/24.6 search no relevant bridge; acquiredsources notrereadwhole. No broadnewsourceinventory."
+}

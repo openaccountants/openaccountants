@@ -1,0 +1,1080 @@
+{
+  "baseline_head": "b506f9ed135ed9e86e41eaf3ac24dbe88554e211",
+  "verified_reviews": [
+    {
+      "role": "Catalan-exact",
+      "report": "spain-Catalan-rent-legacy-joint-independent-review/report.md",
+      "report_sha256": "21d1ca08c43a7a48f343184f5d09b3f9663039e305bb2393e4ed5a595f8cab33",
+      "manifest": "spain-Catalan-rent-legacy-joint-independent-review/manifest.json",
+      "manifest_sha256": "854bac0f49759e9a10d72d911cc648974a1aa01b6a918358a91b8e0334e9db5d",
+      "members_verified": 6
+    },
+    {
+      "role": "Galicia-question-exact",
+      "report": "spain-Galicia-child-cap-material-allocation-independent-review/report.md",
+      "report_sha256": "ac783a3c18d2192b326fa39bd3503bb9439a98b3c40c5ba3dca0566a85686413",
+      "manifest": "spain-Galicia-child-cap-material-allocation-independent-review/artifact-manifest.json",
+      "manifest_sha256": "91f0bfcae75f15ff1474dab4419a85f7ec64503df24067dc62a6e549c8ada95e",
+      "members_verified": 10
+    },
+    {
+      "role": "mechanical-composition-exact",
+      "report": "spain-Catalan-Galicia-final-composition-independent-review/report.md",
+      "report_sha256": "80821e0e84bb29f6fadbb6f0107d924a6c335c0b146cbbe759afae4ccc0777e6",
+      "manifest": "spain-Catalan-Galicia-final-composition-independent-review/artifact-manifest.json",
+      "manifest_sha256": "1f0fef4b87daf0461c77585d58b722a5a622851e81508ef68fcd425d11adc67a",
+      "members_verified": 11
+    },
+    {
+      "role": "finite-material-disposition",
+      "report": "spain-final-material-disposition-addendum-proposed370c/report.md",
+      "report_sha256": "ff0103551d51217218081b6e6444f233f64d00b92686b56bbc04b8390d622ab2",
+      "manifest": "spain-final-material-disposition-addendum-proposed370c/artifact-manifest.json",
+      "manifest_sha256": "22e70064db2c7ae2ff75d97807b4d38f87c3987666880b68f342afde323ca655",
+      "members_verified": 2
+    }
+  ],
+  "scope": "Two independently reviewed finite proposals and exact remaining-material disposition; exact interpretations and unresolved questions, original findings and successors retained. Independent mechanical combined-file binding. No whole-country readiness or attestation.",
+  "files": [
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/README.md.diff",
+      "original_sha256": "386b40575f26031ec1d11feb03499e7e2dc7caa3148e613a3fe38e8a625a4755",
+      "original_bytes": 20224,
+      "stored_path": "archive/38/386b40575f26031ec1d11feb03499e7e2dc7caa3148e613a3fe38e8a625a4755.gz",
+      "stored_bytes": 4715,
+      "stored_sha256": "df32740c2d417c6a545b411106125ff368aa5c10c659eb341ec13715826481ca"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/actual-read-scopes.json",
+      "original_sha256": "f038f1d0441b4d73417f30cd353a8d9857e03f22ff4dc08a893c516d347afecb",
+      "original_bytes": 104354,
+      "stored_path": "archive/f0/f038f1d0441b4d73417f30cd353a8d9857e03f22ff4dc08a893c516d347afecb.gz",
+      "stored_bytes": 21329,
+      "stored_sha256": "eb184371c536a0e053e04100e7372a2f7693f7e5b29895485320dfa88f6ef9f9"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/artifact-manifest.json",
+      "original_sha256": "3e970382eb5f7b86b273a52c2d7add8a0ad60301c77c6e611e08c59cb90a9680",
+      "original_bytes": 14489,
+      "stored_path": "archive/3e/3e970382eb5f7b86b273a52c2d7add8a0ad60301c77c6e611e08c59cb90a9680.gz",
+      "stored_bytes": 2738,
+      "stored_sha256": "e0f51aa3a5cb10b1ca48afd26ba95ac9eb0558c4520ac50ede649774ba3c4b28"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/baseline/README.md",
+      "original_sha256": "fae3188171420bc8bff807da430fd602450be4db76c932d32bc0f20526e070b7",
+      "original_bytes": 19306,
+      "stored_path": "archive/fa/fae3188171420bc8bff807da430fd602450be4db76c932d32bc0f20526e070b7.gz",
+      "stored_bytes": 7296,
+      "stored_sha256": "5788965747cef80b7b1aa6d749c2dff40aa0146eaab7a21d0db56c57a74056f1"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/baseline/es-irpf-deductions.md",
+      "original_sha256": "d536cd399a5adcdfcd73ab7e2b6b25946d2258c146bcd6b4e500ae54f4f86c17",
+      "original_bytes": 544691,
+      "stored_path": "archive/d5/d536cd399a5adcdfcd73ab7e2b6b25946d2258c146bcd6b4e500ae54f4f86c17.gz",
+      "stored_bytes": 155339,
+      "stored_sha256": "7c9de85f3df8e73ee5f09f7baffa0236f674b21ae8bbe9fc94a716029777720b"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/candidate-README.md",
+      "original_sha256": "1d65a85b8666ff8d4c7023dab4af3615eca984adc84ac6c764ed6919e7e1be69",
+      "original_bytes": 19886,
+      "stored_path": "archive/1d/1d65a85b8666ff8d4c7023dab4af3615eca984adc84ac6c764ed6919e7e1be69.gz",
+      "stored_bytes": 7454,
+      "stored_sha256": "febe277d34ead579d6dbf013da148367de7ecd3e25d12a4655a7a88075317f2d"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "6d69dc93c7f10e986f91d1119a7f748eb5c69af0bf712016cf99dfaf778b0809",
+      "original_bytes": 552973,
+      "stored_path": "archive/6d/6d69dc93c7f10e986f91d1119a7f748eb5c69af0bf712016cf99dfaf778b0809.gz",
+      "stored_bytes": 157855,
+      "stored_sha256": "19bb92b6b8c1de03d96c07b7082c8c21d02d8d6c524d34002f0af3a98f7ae6d7"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/candidate-line-map.json",
+      "original_sha256": "f6128397247a1bccfb2aec1e269e23eb31ea39224eb90f96be85b93487ff8fd3",
+      "original_bytes": 182,
+      "stored_path": "archive/f6/f6128397247a1bccfb2aec1e269e23eb31ea39224eb90f96be85b93487ff8fd3.gz",
+      "stored_bytes": 150,
+      "stored_sha256": "1f609dbdb3e44ac20ab8a3d8e10c330b0ee80d9e7bdb8b106d9ab9d16a3025e4"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/check.py",
+      "original_sha256": "bacb7f457a241aae2692e9c808b96bca5ab1b05f3a9dd6165476cef819d11d96",
+      "original_bytes": 7193,
+      "stored_path": "archive/ba/bacb7f457a241aae2692e9c808b96bca5ab1b05f3a9dd6165476cef819d11d96.gz",
+      "stored_bytes": 3070,
+      "stored_sha256": "4dfbb95cc1c0e2a2cbbd1da45125e686f4ac0d6a95e38295e3f00646e3e0d98a"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/derive-readers.py",
+      "original_sha256": "d8a8261bec464ff9e15b355c2fd3bbace62c16785ca985b5109327433ec0ffc1",
+      "original_bytes": 2398,
+      "stored_path": "archive/d8/d8a8261bec464ff9e15b355c2fd3bbace62c16785ca985b5109327433ec0ffc1.gz",
+      "stored_bytes": 1105,
+      "stored_sha256": "12db1c3fc5559ea158e4d44477222e85e22b5f7ffeecd00e88d96d852984a54b"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/es-irpf-deductions.md.diff",
+      "original_sha256": "23bfef24c4e79bea5c01c9e94f5dd2769bab9638a1cbab90172b1c35ae87382d",
+      "original_bytes": 31289,
+      "stored_path": "archive/23/23bfef24c4e79bea5c01c9e94f5dd2769bab9638a1cbab90172b1c35ae87382d.gz",
+      "stored_bytes": 8846,
+      "stored_sha256": "ebd57dd4c9eee51e66bc83325b46c30252bca208874fdb93c541da494430e9a8"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/exact-replacements.json",
+      "original_sha256": "c09c6215148456b9362bceccff574d2915461b82bb42ba06b118ed220c2a18cd",
+      "original_bytes": 13536,
+      "stored_path": "archive/c0/c09c6215148456b9362bceccff574d2915461b82bb42ba06b118ed220c2a18cd.gz",
+      "stored_bytes": 4398,
+      "stored_sha256": "7120385952565a0e77fd2300a70724d4a18deed0b8ccb56237625903ea5c40ee"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/freeze.json",
+      "original_sha256": "70ad1ada45de66d7c3867fd70ec599d29d535fd3296ac765e1c0f4e9d7247916",
+      "original_bytes": 1408,
+      "stored_path": "archive/70/70ad1ada45de66d7c3867fd70ec599d29d535fd3296ac765e1c0f4e9d7247916.gz",
+      "stored_bytes": 646,
+      "stored_sha256": "4454ec3af2ca481d1ac79ad78433f94694644177296528d04dc5e8127704d2b6"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/fresh-confirmation.json",
+      "original_sha256": "cf708909005c708d6cfa74461a30b2e786959d1d50dc2d5c5e95a269afec0fc5",
+      "original_bytes": 210,
+      "stored_path": "archive/cf/cf708909005c708d6cfa74461a30b2e786959d1d50dc2d5c5e95a269afec0fc5.gz",
+      "stored_bytes": 170,
+      "stored_sha256": "4aba466b683546e35bd9c1e3be3e2b26d0c68c19d32be59e908287829cc6a7c6"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/oa.actual-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/options.md",
+      "original_sha256": "6bce7bbef34c402eeb8ae70c7ba079d5393289e30b8190e7722aabea9574c679",
+      "original_bytes": 2785,
+      "stored_path": "archive/6b/6bce7bbef34c402eeb8ae70c7ba079d5393289e30b8190e7722aabea9574c679.gz",
+      "stored_bytes": 1441,
+      "stored_sha256": "504451e315d2b1514867785e31ebb92124e44486642535b0cc68d314463f9e14"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/prepare.py",
+      "original_sha256": "689b20be74f02b4b9ba0577a317fa791a24c4ff70993273b56b22ec5f1e54e64",
+      "original_bytes": 13266,
+      "stored_path": "archive/68/689b20be74f02b4b9ba0577a317fa791a24c4ff70993273b56b22ec5f1e54e64.gz",
+      "stored_bytes": 4968,
+      "stored_sha256": "22f5a0cb23ac6ee6a78759f3a2f6e9603e87e8cf565f8823deca2cc87393038f"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/preservation-proof.json",
+      "original_sha256": "939a22526358b5027dc541ecd7d0c5fade45b549863a2961bee3b487a2318e0f",
+      "original_bytes": 1006,
+      "stored_path": "archive/93/939a22526358b5027dc541ecd7d0c5fade45b549863a2961bee3b487a2318e0f.gz",
+      "stored_bytes": 450,
+      "stored_sha256": "f248a8a0ee27a52b4637bed437bf890e74cb90efe492136d7c52087fe2063efe"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/report.md",
+      "original_sha256": "40e6dcce64a25dd4722270b926e5808350a1b514a63d646bbc79a35355cb1b3e",
+      "original_bytes": 4889,
+      "stored_path": "archive/40/40e6dcce64a25dd4722270b926e5808350a1b514a63d646bbc79a35355cb1b3e.gz",
+      "stored_bytes": 2596,
+      "stored_sha256": "e148681c937422c4deb94ad0e3fa9cc2489b38cefaa08cfb4e335be7f438867e"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/runtime-observations.json",
+      "original_sha256": "3100b78ac973bc9c6e133d45cdb34f092cd0249da794792b717c61fab999fc15",
+      "original_bytes": 4661,
+      "stored_path": "archive/31/3100b78ac973bc9c6e133d45cdb34f092cd0249da794792b717c61fab999fc15.gz",
+      "stored_bytes": 1872,
+      "stored_sha256": "057cd36715f2c5829c644a41e114f1d0bfa64966663c44d36be54d159f78afe3"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/schema.actual-output.txt",
+      "original_sha256": "82bfe3a48ef32acd9b00b7e309de8af518423ad3154b26ff939162002be36336",
+      "original_bytes": 71,
+      "stored_path": "archive/82/82bfe3a48ef32acd9b00b7e309de8af518423ad3154b26ff939162002be36336.gz",
+      "stored_bytes": 83,
+      "stored_sha256": "c016a9e59b50782a8f68af830eecd2cf2139cf6137864ea03a467948f879e248"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "6d69dc93c7f10e986f91d1119a7f748eb5c69af0bf712016cf99dfaf778b0809",
+      "original_bytes": 552973,
+      "stored_path": "archive/6d/6d69dc93c7f10e986f91d1119a7f748eb5c69af0bf712016cf99dfaf778b0809.gz",
+      "stored_bytes": 157855,
+      "stored_sha256": "19bb92b6b8c1de03d96c07b7082c8c21d02d8d6c524d34002f0af3a98f7ae6d7"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/source-identity-verification.json",
+      "original_sha256": "fecaacaded0a8c2155ae742ae6b879bc2513cd39e5af9545499db87138d9d6cb",
+      "original_bytes": 3431,
+      "stored_path": "archive/fe/fecaacaded0a8c2155ae742ae6b879bc2513cd39e5af9545499db87138d9d6cb.gz",
+      "stored_bytes": 1070,
+      "stored_sha256": "42bb25c905b28a8e33566c380cbd01a43805e93a7c7ed793cb203896a8ee5004"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/source-map.json",
+      "original_sha256": "605b98c1f6c4478945b14306ab889f25b957cb1d8216dd813c1592062f5a8b4b",
+      "original_bytes": 7391,
+      "stored_path": "archive/60/605b98c1f6c4478945b14306ab889f25b957cb1d8216dd813c1592062f5a8b4b.gz",
+      "stored_bytes": 1862,
+      "stored_sha256": "5d510526b25c02bc762bad48e36c82ffb52138c37f21e671234d303925d4efd1"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/2025-enactment.html",
+      "original_sha256": "378da95b8dce3fd90ad16734ef70e85748ddd5b6a11c84819ae87ad46099fde0",
+      "original_bytes": 164065,
+      "stored_path": "archive/37/378da95b8dce3fd90ad16734ef70e85748ddd5b6a11c84819ae87ad46099fde0.gz",
+      "stored_bytes": 34971,
+      "stored_sha256": "7931566002064da5a17afe57bc24d49473b1dd921eb64dfa40bd4ed9de56b50a"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/2025-enactment.reader.txt",
+      "original_sha256": "0225bbc004d1b853e0756dff864571d8d551d8992cedf4ac2cd4b79a4dfc0fa8",
+      "original_bytes": 112192,
+      "stored_path": "archive/02/0225bbc004d1b853e0756dff864571d8d551d8992cedf4ac2cd4b79a4dfc0fa8.gz",
+      "stored_bytes": 29205,
+      "stored_sha256": "f6836097b1fed47e05870675fdd53ef95cef687c5cfd780f7a141f4c1fc9703f"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-legacy-base.html",
+      "original_sha256": "df736331bce165dce813bce037cf8fa327290ebfb88eff739dc8b0489e3561c4",
+      "original_bytes": 22539,
+      "stored_path": "archive/df/df736331bce165dce813bce037cf8fa327290ebfb88eff739dc8b0489e3561c4.gz",
+      "stored_bytes": 6898,
+      "stored_sha256": "b990547e5130061df6040aa5439761d5b7e33ef67e371de99d57010dfa25e717"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-legacy-base.reader.txt",
+      "original_sha256": "31aa8f60e7e41bc28c7f60fb1cc4055fa0b81327929c25f733082bef9933ce83",
+      "original_bytes": 11098,
+      "stored_path": "archive/31/31aa8f60e7e41bc28c7f60fb1cc4055fa0b81327929c25f733082bef9933ce83.gz",
+      "stored_bytes": 3994,
+      "stored_sha256": "b4fc4049a26e98924ba9152af7c0fadb29b3e974fb545aaab433029010f7d8e0"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-legacy-regional.html",
+      "original_sha256": "dea30341a531f4318c0c613f52ce6df641f16993a1dca587c0b70852eacbfa75",
+      "original_bytes": 11008,
+      "stored_path": "archive/de/dea30341a531f4318c0c613f52ce6df641f16993a1dca587c0b70852eacbfa75.gz",
+      "stored_bytes": 3801,
+      "stored_sha256": "b82deed0d1bbef469af23e3af475b24cd0cddf3c8fad081de475c67f4df893ca"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-legacy-regional.reader.txt",
+      "original_sha256": "7304a9ed57630ccf943f65e8119f5d59cf66001c8a944e4758841a1b47dc4231",
+      "original_bytes": 2992,
+      "stored_path": "archive/73/7304a9ed57630ccf943f65e8119f5d59cf66001c8a944e4758841a1b47dc4231.gz",
+      "stored_bytes": 1324,
+      "stored_sha256": "e4f0e2f91004d21e5e98f8ee89798318081e1917917565f01ee6b1b40c204d2c"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-rent-ordinary.html",
+      "original_sha256": "7336ae953dab60ec38da0e62e1332fa3e23b6cd62427bcb10fef24e265f761f9",
+      "original_bytes": 14639,
+      "stored_path": "archive/73/7336ae953dab60ec38da0e62e1332fa3e23b6cd62427bcb10fef24e265f761f9.gz",
+      "stored_bytes": 4883,
+      "stored_sha256": "a69dd026a96f6cc5715f5c9e01e3a9973f00139a7ba5adfce86ea9e4e1173ed1"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-rent-ordinary.reader.txt",
+      "original_sha256": "bef8b7db92263a12ad225dabc5a5f8c824fa1354f949ed0ae6f23c66bcbe0f7b",
+      "original_bytes": 5500,
+      "stored_path": "archive/be/bef8b7db92263a12ad225dabc5a5f8c824fa1354f949ed0ae6f23c66bcbe0f7b.gz",
+      "stored_bytes": 2229,
+      "stored_sha256": "42fc6dd5fda354d077e3cc2ddf07a44522a68c9ec225e4c1f51e284848b0db32"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-rent-victim.html",
+      "original_sha256": "fdc4bdb8ef13298683190ab49f583bcd6507133393bb6703dd265db497e809c9",
+      "original_bytes": 11444,
+      "stored_path": "archive/fd/fdc4bdb8ef13298683190ab49f583bcd6507133393bb6703dd265db497e809c9.gz",
+      "stored_bytes": 3891,
+      "stored_sha256": "00140ad9feea8a19afb287a50b1d49ae96a9cae1dcec1090756634ffdc284d30"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/AEAT-rent-victim.reader.txt",
+      "original_sha256": "5a23779fe82b889c678d56f571cbb774e3784449505e888be18c56a3a9003890",
+      "original_bytes": 3104,
+      "stored_path": "archive/5a/5a23779fe82b889c678d56f571cbb774e3784449505e888be18c56a3a9003890.gz",
+      "stored_bytes": 1309,
+      "stored_sha256": "62e8485d864a05f6c6de352c547111e815829fba5624ca38473029c78d808936"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/ATC-current.html",
+      "original_sha256": "8f1c2c871b77060b0b3f67ed9f3393390529ce0847614897f6f5422147848313",
+      "original_bytes": 199595,
+      "stored_path": "archive/8f/8f1c2c871b77060b0b3f67ed9f3393390529ce0847614897f6f5422147848313.gz",
+      "stored_bytes": 27485,
+      "stored_sha256": "92bb959e7f65cc4e58d4ec91576534cfc733c83a2960308ceebf045a0c5b95b5"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/ATC-current.reader.txt",
+      "original_sha256": "b7968564931e3c6f7873d6000cac82a38d2b00c50e7d3d8cc528f2962f003416",
+      "original_bytes": 48680,
+      "stored_path": "archive/b7/b7968564931e3c6f7873d6000cac82a38d2b00c50e7d3d8cc528f2962f003416.gz",
+      "stored_bytes": 12397,
+      "stored_sha256": "25ce397c39d3ee538d58dac92c93aca9c2cc57d1413122c27c1d591e30da0c84"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/ATC-retained.html",
+      "original_sha256": "1c49f2212697f7bb4459a2fd364caf1abad2304189987af046541c1c80be79cf",
+      "original_bytes": 199595,
+      "stored_path": "archive/1c/1c49f2212697f7bb4459a2fd364caf1abad2304189987af046541c1c80be79cf.gz",
+      "stored_bytes": 27491,
+      "stored_sha256": "0adff452cabe80c1647d5bf2c5786ce99d068ffc9b5b1a50fb7d7d5b5fae1b62"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/ATC-retained.reader.txt",
+      "original_sha256": "b7968564931e3c6f7873d6000cac82a38d2b00c50e7d3d8cc528f2962f003416",
+      "original_bytes": 48680,
+      "stored_path": "archive/b7/b7968564931e3c6f7873d6000cac82a38d2b00c50e7d3d8cc528f2962f003416.gz",
+      "stored_bytes": 12397,
+      "stored_sha256": "25ce397c39d3ee538d58dac92c93aca9c2cc57d1413122c27c1d591e30da0c84"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/LIRPF-2012.html",
+      "original_sha256": "e3da74b41a23fe184e7de42ebbb18fa3e2b09c444fd67b94c94365ef20fefa0b",
+      "original_bytes": 1588227,
+      "stored_path": "archive/e3/e3da74b41a23fe184e7de42ebbb18fa3e2b09c444fd67b94c94365ef20fefa0b.gz",
+      "stored_bytes": 182518,
+      "stored_sha256": "c7cf5771e5be2c60a46b72982e5d40b6bb4bf70725d37819ea81f940adc410d4"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/LIRPF-2012.reader.txt",
+      "original_sha256": "f60037838859b9018ef5505aa228cb5e5b4225afd42a740e0cb0b9ea9aaa4b76",
+      "original_bytes": 618032,
+      "stored_path": "archive/f6/f60037838859b9018ef5505aa228cb5e5b4225afd42a740e0cb0b9ea9aaa4b76.gz",
+      "stored_bytes": 131987,
+      "stored_sha256": "f99d19c2a3921b0ac55ae8e425c9fb7eec4375ffb6f426d99f04e9cc0630e8c0"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/LIRPF-current.html",
+      "original_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+      "original_bytes": 2028806,
+      "stored_path": "archive/78/780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f.gz",
+      "stored_bytes": 249841,
+      "stored_sha256": "1c6b02f3d86dffbba797defbb393a563eddddb30be0de5581b52349c70a25492"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/LIRPF-current.reader.txt",
+      "original_sha256": "513fd01d6cbec8efaf3d8ff48ccc1861585ef279e54e5be1ada34654584d5967",
+      "original_bytes": 900904,
+      "stored_path": "archive/51/513fd01d6cbec8efaf3d8ff48ccc1861585ef279e54e5be1ada34654584d5967.gz",
+      "stored_bytes": 188240,
+      "stored_sha256": "11a44c33c37d843eb63edaf7129de3ee36225ea918cccf9435635e825e596d9a"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/law-current.html",
+      "original_sha256": "a513248b4b5e079ef59a934d44a717f60735fe99f51239168af318e41b7d046b",
+      "original_bytes": 479872,
+      "stored_path": "archive/a5/a513248b4b5e079ef59a934d44a717f60735fe99f51239168af318e41b7d046b.gz",
+      "stored_bytes": 71547,
+      "stored_sha256": "22fcbd853fe6d5ea5db2d36e53c8ba63bc45664a9f1f3948301386ef6158815e"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/law-current.reader.txt",
+      "original_sha256": "c039c7d3a88201d46a799489f8f50111ee3237977043e083440812ad1769fbfa",
+      "original_bytes": 253854,
+      "stored_path": "archive/c0/c039c7d3a88201d46a799489f8f50111ee3237977043e083440812ad1769fbfa.gz",
+      "stored_bytes": 53263,
+      "stored_sha256": "483efc2944bdb9f38d9212142b357e8a973d92595e721d8ff785d63c3839af5c"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/law-fresh-confirmation.html",
+      "original_sha256": "8e78461c246f963c6b782b8fb9eafb1bce8955c783427c0fcabb00b5b6363dd0",
+      "original_bytes": 479872,
+      "stored_path": "archive/8e/8e78461c246f963c6b782b8fb9eafb1bce8955c783427c0fcabb00b5b6363dd0.gz",
+      "stored_bytes": 71547,
+      "stored_sha256": "5847f1a7f5effd2225413da5efbe22716feb79e8fef750a9b93cf9557097efad"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/sources/law-fresh-confirmation.reader.txt",
+      "original_sha256": "c039c7d3a88201d46a799489f8f50111ee3237977043e083440812ad1769fbfa",
+      "original_bytes": 253854,
+      "stored_path": "archive/c0/c039c7d3a88201d46a799489f8f50111ee3237977043e083440812ad1769fbfa.gz",
+      "stored_bytes": 53263,
+      "stored_sha256": "483efc2944bdb9f38d9212142b357e8a973d92595e721d8ff785d63c3839af5c"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-private-method/writer-controls.json",
+      "original_sha256": "c94b2dce66ea0dd95d341e9d9bbcfb7feac078d53bad538a669dfee88040573e",
+      "original_bytes": 5631,
+      "stored_path": "archive/c9/c94b2dce66ea0dd95d341e9d9bbcfb7feac078d53bad538a669dfee88040573e.gz",
+      "stored_bytes": 1015,
+      "stored_sha256": "07e342427daf328e1eabcd5d5ec0147c7fd685c5062b8700e9f50ed50f6a193a"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-independent-review/independent-controls.json",
+      "original_sha256": "c7865fea7ba3ab61abe46e6e6d81bdd8168b7e1473d71cd206db65cf93f5953f",
+      "original_bytes": 3199,
+      "stored_path": "archive/c7/c7865fea7ba3ab61abe46e6e6d81bdd8168b7e1473d71cd206db65cf93f5953f.gz",
+      "stored_bytes": 590,
+      "stored_sha256": "c00fac68d4fdc308f96a54837772e88486ea66014842727cafd9f26bafb62b42"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-independent-review/manifest.json",
+      "original_sha256": "854bac0f49759e9a10d72d911cc648974a1aa01b6a918358a91b8e0334e9db5d",
+      "original_bytes": 945,
+      "stored_path": "archive/85/854bac0f49759e9a10d72d911cc648974a1aa01b6a918358a91b8e0334e9db5d.gz",
+      "stored_bytes": 452,
+      "stored_sha256": "3e171805c70c3282c59efdb68623e7821ee3680096b7b225d739020bd0cdb654"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-independent-review/own-examples.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-independent-review/own-source-read-ledger.json",
+      "original_sha256": "506a69ec99da834af74613bb09bc545d12c35b6dd0b67bb30387f248bbd80bac",
+      "original_bytes": 11167,
+      "stored_path": "archive/50/506a69ec99da834af74613bb09bc545d12c35b6dd0b67bb30387f248bbd80bac.gz",
+      "stored_bytes": 2060,
+      "stored_sha256": "747335d024b5aa7ffd7bd1670a57034d0b8d2872bba328e1e30eb30311a51775"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-independent-review/preservation-proof.json",
+      "original_sha256": "3fae311f4463e4c27ba3a75a7b280e8d3012d743c169e19cb7f31f8ad73079cb",
+      "original_bytes": 352,
+      "stored_path": "archive/3f/3fae311f4463e4c27ba3a75a7b280e8d3012d743c169e19cb7f31f8ad73079cb.gz",
+      "stored_bytes": 228,
+      "stored_sha256": "ac160f9aa3abb84ae15b22d47bdd0e5cea0af41fe3081910fee54ee989d54231"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-independent-review/report.md",
+      "original_sha256": "21d1ca08c43a7a48f343184f5d09b3f9663039e305bb2393e4ed5a595f8cab33",
+      "original_bytes": 3679,
+      "stored_path": "archive/21/21d1ca08c43a7a48f343184f5d09b3f9663039e305bb2393e4ed5a595f8cab33.gz",
+      "stored_bytes": 1985,
+      "stored_sha256": "572fb654bc6ff7617729d6f919b995c72d5c20651bd5b852a641c09f46a66af2"
+    },
+    {
+      "original_path": "spain-Catalan-rent-legacy-joint-independent-review/review-status.json",
+      "original_sha256": "4ace30af13e7f35f641cd8870a46808de084b12e9774275c6295222892e84ec7",
+      "original_bytes": 184,
+      "stored_path": "archive/4a/4ace30af13e7f35f641cd8870a46808de084b12e9774275c6295222892e84ec7.gz",
+      "stored_bytes": 162,
+      "stored_sha256": "a5f8604123f5fa0a4e1a755bff435c2d84ec26d1a15e4d975f89468ab46f2c18"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/artifact-manifest.json",
+      "original_sha256": "061effb6a59b6466de2f94b3874e83d2989e589554f30daafaf9def4cbc35400",
+      "original_bytes": 7540,
+      "stored_path": "archive/06/061effb6a59b6466de2f94b3874e83d2989e589554f30daafaf9def4cbc35400.gz",
+      "stored_bytes": 1649,
+      "stored_sha256": "605b769fa88acd325eb7955f0b7698ff2e8bc62a836496a7d402ea07e60da12e"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/baseline-README.md",
+      "original_sha256": "fae3188171420bc8bff807da430fd602450be4db76c932d32bc0f20526e070b7",
+      "original_bytes": 19306,
+      "stored_path": "archive/fa/fae3188171420bc8bff807da430fd602450be4db76c932d32bc0f20526e070b7.gz",
+      "stored_bytes": 7296,
+      "stored_sha256": "5788965747cef80b7b1aa6d749c2dff40aa0146eaab7a21d0db56c57a74056f1"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/baseline-es-irpf-deductions.md",
+      "original_sha256": "d536cd399a5adcdfcd73ab7e2b6b25946d2258c146bcd6b4e500ae54f4f86c17",
+      "original_bytes": 544691,
+      "stored_path": "archive/d5/d536cd399a5adcdfcd73ab7e2b6b25946d2258c146bcd6b4e500ae54f4f86c17.gz",
+      "stored_bytes": 155339,
+      "stored_sha256": "7c9de85f3df8e73ee5f09f7baffa0236f674b21ae8bbe9fc94a716029777720b"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/baseline.json",
+      "original_sha256": "f6d4ec6957597d2a028a42f9309a4ed8a83725c04085fb406878b6ee513e5ae5",
+      "original_bytes": 516,
+      "stored_path": "archive/f6/f6d4ec6957597d2a028a42f9309a4ed8a83725c04085fb406878b6ee513e5ae5.gz",
+      "stored_bytes": 374,
+      "stored_sha256": "fcc54dd5b7226ebfc58c5840172efbcc3bd16769289e6f834d13d6dfd4538f81"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/browser-attempts.json",
+      "original_sha256": "a6f5acaf3e789bc814452e58d092118ab0d50c9bdd3746f751b320c19e153821",
+      "original_bytes": 730,
+      "stored_path": "archive/a6/a6f5acaf3e789bc814452e58d092118ab0d50c9bdd3746f751b320c19e153821.gz",
+      "stored_bytes": 348,
+      "stored_sha256": "057b6ba5b1c3740809bc4d92fbf2b634a2c829c3b34f99d323efcabd1ec95328"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/candidate-README.md",
+      "original_sha256": "2f2a47c01b516c99775bfe144c6179804272740c7b9aa4be453b742b159cc437",
+      "original_bytes": 19584,
+      "stored_path": "archive/2f/2f2a47c01b516c99775bfe144c6179804272740c7b9aa4be453b742b159cc437.gz",
+      "stored_bytes": 7409,
+      "stored_sha256": "fcc147906b73eff8104353a9bc929764f0228ddb11bf58a20696ab40d3b59618"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "f326c512471d43e852cb78a073ba80b6b96ba8b4e188efe9dd08967c391c973a",
+      "original_bytes": 547874,
+      "stored_path": "archive/f3/f326c512471d43e852cb78a073ba80b6b96ba8b4e188efe9dd08967c391c973a.gz",
+      "stored_bytes": 156232,
+      "stored_sha256": "fa448741c26e42728a2ea80be3175e60af8ecf8abf410c3c195f1f9d3ad0e48b"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/compose-and-check.py",
+      "original_sha256": "899a71eca9c4a0e70ef5eef8ae6f4505e0c6e6b5b0209071c904ec87025c95ff",
+      "original_bytes": 5627,
+      "stored_path": "archive/89/899a71eca9c4a0e70ef5eef8ae6f4505e0c6e6b5b0209071c904ec87025c95ff.gz",
+      "stored_bytes": 2596,
+      "stored_sha256": "802266b946c2eb7a7176c08feb4ad69e05e09d8d7cd55199229b07bd6accc75d"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/draft-options.md",
+      "original_sha256": "f92b091af51dae9fdd6c9a8d733c459f77cca7deb899c26492469b6f6a4ec3d7",
+      "original_bytes": 2745,
+      "stored_path": "archive/f9/f92b091af51dae9fdd6c9a8d733c459f77cca7deb899c26492469b6f6a4ec3d7.gz",
+      "stored_bytes": 1424,
+      "stored_sha256": "acae185e9d121f67af7f57a779906caafc4afcefcf87dd3cc217fc9d8a3f87c2"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/exact-replacements.json",
+      "original_sha256": "c76c0664b43f90d2791455810e2b4906eb02e2e1b2738e30ab4668cba606688b",
+      "original_bytes": 4345,
+      "stored_path": "archive/c7/c76c0664b43f90d2791455810e2b4906eb02e2e1b2738e30ab4668cba606688b.gz",
+      "stored_bytes": 1851,
+      "stored_sha256": "0cb6ff8367a69225dac6ea83f89b795cb068004659171305e8eb7c1b1b6cf172"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/external-evidence-hash-check.json",
+      "original_sha256": "b36076b49bc4309e7fcf44b68bf22cd36bb0c7408e4af06e673747a61ae4c4de",
+      "original_bytes": 5255,
+      "stored_path": "archive/b3/b36076b49bc4309e7fcf44b68bf22cd36bb0c7408e4af06e673747a61ae4c4de.gz",
+      "stored_bytes": 1253,
+      "stored_sha256": "923f3c3f71b54543eae7135cc9fb6f890d6cc836079de242bc2c923f31044699"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/freeze.json",
+      "original_sha256": "95d37f31ab0505575cdff387386f695895ee862d11515a36e9831cacf0053f1a",
+      "original_bytes": 1540,
+      "stored_path": "archive/95/95d37f31ab0505575cdff387386f695895ee862d11515a36e9831cacf0053f1a.gz",
+      "stored_bytes": 751,
+      "stored_sha256": "e4f52feae7dd239ad08f2835355c236593801d9172cc99dccd2327b4aa9390b2"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/own-controls.json",
+      "original_sha256": "d5d718529bffff8b7c62c4bd5fbe383542684ea70d5b6d526048df4407c6a053",
+      "original_bytes": 2419,
+      "stored_path": "archive/d5/d5d718529bffff8b7c62c4bd5fbe383542684ea70d5b6d526048df4407c6a053.gz",
+      "stored_bytes": 566,
+      "stored_sha256": "f210015481f501fc3b38bb9adc21fb1c55010c8977a06d0e9f96d07423924fe4"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/own-controls.py",
+      "original_sha256": "109034b9e3800ea01baada69bf224184a573a3adb982f9037c47e8b26b425808",
+      "original_bytes": 1648,
+      "stored_path": "archive/10/109034b9e3800ea01baada69bf224184a573a3adb982f9037c47e8b26b425808.gz",
+      "stored_bytes": 805,
+      "stored_sha256": "2b2fa12fcfd0ff2320ea30301ac7ca3921050dbfe6287b81476bd22936d647e8"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/own-examples.txt",
+      "original_sha256": "6fbe9c9c50bab41e0620596a60076164a3e633d71e0e8954f93b566b6057859e",
+      "original_bytes": 361,
+      "stored_path": "archive/6f/6fbe9c9c50bab41e0620596a60076164a3e633d71e0e8954f93b566b6057859e.gz",
+      "stored_bytes": 272,
+      "stored_sha256": "cca1d4b3ec3688dfb89b4b01389ed9397617ffa1fcd40e92f52cb0eedf8e2bc1"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/preservation-proof.json",
+      "original_sha256": "04af2555eda7efdc4db5ca88788fa175258f391edfc1b864f42c8a8950715756",
+      "original_bytes": 688,
+      "stored_path": "archive/04/04af2555eda7efdc4db5ca88788fa175258f391edfc1b864f42c8a8950715756.gz",
+      "stored_bytes": 315,
+      "stored_sha256": "dabc923f164989e7a19e683e69c50cc7afebacb382366382786303483cc4c6d4"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/questions.md",
+      "original_sha256": "5770bbe912af0810b946b6daf74fd4d5f6f8e7563682fa6b13092857b6c26386",
+      "original_bytes": 2729,
+      "stored_path": "archive/57/5770bbe912af0810b946b6daf74fd4d5f6f8e7563682fa6b13092857b6c26386.gz",
+      "stored_bytes": 1416,
+      "stored_sha256": "9feac743258e47f2384deaea3e5c21bd236af0352896772f1d0a69685bb71ad0"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/runtime-receipt-read-ledger.json",
+      "original_sha256": "566469aec586969707cc85a10c7c46ddf1f7770ccd672deea6c478fafe9531d3",
+      "original_bytes": 1639,
+      "stored_path": "archive/56/566469aec586969707cc85a10c7c46ddf1f7770ccd672deea6c478fafe9531d3.gz",
+      "stored_bytes": 729,
+      "stored_sha256": "62e4876ab50e6d6e4d498fcac25356ce937460d56c3009653f6d8db6e4103187"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/source-read-ledger.json",
+      "original_sha256": "7ec8a7c12c94a75d01365bb0c9fad982e9e9136a940f2ea6ab7b18fa5b7284b4",
+      "original_bytes": 5975,
+      "stored_path": "archive/7e/7ec8a7c12c94a75d01365bb0c9fad982e9e9136a940f2ea6ab7b18fa5b7284b4.gz",
+      "stored_bytes": 1753,
+      "stored_sha256": "e1489faf01a8891d2def39ed36c2d3d041b928bf079fbdd50388f8f8f9276f93"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/sources/ATRIGA-benefits-school-pages35-36.reader.txt",
+      "original_sha256": "15a1b2f2c6c4ccc8fed7753e6441ba373584a444d9360b88eb8229012e87ec03",
+      "original_bytes": 4908,
+      "stored_path": "archive/15/15a1b2f2c6c4ccc8fed7753e6441ba373584a444d9360b88eb8229012e87ec03.gz",
+      "stored_bytes": 2007,
+      "stored_sha256": "d8b412232de16b6f0a6a3580183a35fbbbf093e303b284ddd9955ecde7326376"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/sources/ATRIGA-benefits.pdf",
+      "original_sha256": "a29281c8db48fdfabde3a2d8ecab4bc2b5d2147a33b69742fcff96046504fa34",
+      "original_bytes": 518516,
+      "stored_path": "archive/a2/a29281c8db48fdfabde3a2d8ecab4bc2b5d2147a33b69742fcff96046504fa34.gz",
+      "stored_bytes": 447928,
+      "stored_sha256": "361634d38f0327f7a55362f654238ae28fde782612cecf547cc15d1260fd3659"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/sources/ATRIGA-deductions.html",
+      "original_sha256": "6f3c9b1e4802dc846101079d36739cd655a944605ffb45f450893dfa253f773d",
+      "original_bytes": 82968,
+      "stored_path": "archive/6f/6f3c9b1e4802dc846101079d36739cd655a944605ffb45f450893dfa253f773d.gz",
+      "stored_bytes": 11515,
+      "stored_sha256": "386b77913af2678105e0a9391f466b135b600768fb16bb931cdb04aa8ee5c2b8"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/sources/ATRIGA-deductions.reader.txt",
+      "original_sha256": "2fa5968a4684d7e4ef00ae4b55662e5ce33e056cd5b57f36d9ba81dc3c266862",
+      "original_bytes": 11229,
+      "stored_path": "archive/2f/2fa5968a4684d7e4ef00ae4b55662e5ce33e056cd5b57f36d9ba81dc3c266862.gz",
+      "stored_bytes": 2939,
+      "stored_sha256": "f3e67d12666415b64341ecd9b38fe8d41ac1344641e8fb5a6832c0e30862328a"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-private-method/writer-report.md",
+      "original_sha256": "0c97949e32e2b5c2d450932ffd447b2dd4394878ffc0f8de97ad2efe38182414",
+      "original_bytes": 4850,
+      "stored_path": "archive/0c/0c97949e32e2b5c2d450932ffd447b2dd4394878ffc0f8de97ad2efe38182414.gz",
+      "stored_bytes": 2412,
+      "stored_sha256": "df6a96bb32bbb6483b6a83807f71905f7d0585070688c53399fc9f87de5151e5"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-independent-review/artifact-manifest.json",
+      "original_sha256": "91f0bfcae75f15ff1474dab4419a85f7ec64503df24067dc62a6e549c8ada95e",
+      "original_bytes": 1475,
+      "stored_path": "archive/91/91f0bfcae75f15ff1474dab4419a85f7ec64503df24067dc62a6e549c8ada95e.gz",
+      "stored_bytes": 679,
+      "stored_sha256": "6251d7149cb320e6bfd2195ccdee9cd9e1778c153ff59e76ffc0d8abb30684b5"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-independent-review/exact-preservation-verification.json",
+      "original_sha256": "fa29831a93c752b7156b33013982603b037752f31d39a1ff1768664a40efd8cd",
+      "original_bytes": 1010,
+      "stored_path": "archive/fa/fa29831a93c752b7156b33013982603b037752f31d39a1ff1768664a40efd8cd.gz",
+      "stored_bytes": 439,
+      "stored_sha256": "7b6c58ac4e10c14d0d64f51629adaa548f383eaab66845cee103dc80f98187fb"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-independent-review/freeze.json",
+      "original_sha256": "d79217d0f3166b8d15222a18ed9ecfbfafcd33021efbb49936018352fb2c5edb",
+      "original_bytes": 846,
+      "stored_path": "archive/d7/d79217d0f3166b8d15222a18ed9ecfbfafcd33021efbb49936018352fb2c5edb.gz",
+      "stored_bytes": 469,
+      "stored_sha256": "1dcfaccbf46c1ba1313ad51359ad68c309b3f50206caf588db96366e2fd243fc"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-independent-review/own-actual-read-excerpts.txt",
+      "original_sha256": "5ad3f2a8d695186a8af228c15f11e909e8991df04136574fad854972322f2000",
+      "original_bytes": 21950,
+      "stored_path": "archive/5a/5ad3f2a8d695186a8af228c15f11e909e8991df04136574fad854972322f2000.gz",
+      "stored_bytes": 5080,
+      "stored_sha256": "ae6b5a60055fa065fe99f8cad7eb7b3e9c656782019d6cc0b51af00907aa31fd"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-independent-review/own-example-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-independent-review/own-primary-read-ledger.json",
+      "original_sha256": "45f91bce24e37f69cf2eaf7abc0e8be9a192502e1ef402a7a8de20c5f84c35e1",
+      "original_bytes": 7542,
+      "stored_path": "archive/45/45f91bce24e37f69cf2eaf7abc0e8be9a192502e1ef402a7a8de20c5f84c35e1.gz",
+      "stored_bytes": 1855,
+      "stored_sha256": "3d5ab5c8ce576738ac03332b0aede10701b6d765abc32cae74cd38bc906058f3"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-independent-review/own-separating-controls.json",
+      "original_sha256": "ba2a175a1e9a863241bd0f9aa9a0c14ae009422e8cbef1dd14ff1164923ffcab",
+      "original_bytes": 2325,
+      "stored_path": "archive/ba/ba2a175a1e9a863241bd0f9aa9a0c14ae009422e8cbef1dd14ff1164923ffcab.gz",
+      "stored_bytes": 546,
+      "stored_sha256": "7abc6bc0973865aee47ce5baf90db516210c296b466eedb7b20f25cd414f25b5"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-independent-review/prepare.py",
+      "original_sha256": "a5f94310d4f1ca23421cc11ecd89f2147ca5f697a1bdc7ee1654d361c7ed66d4",
+      "original_bytes": 3309,
+      "stored_path": "archive/a5/a5f94310d4f1ca23421cc11ecd89f2147ca5f697a1bdc7ee1654d361c7ed66d4.gz",
+      "stored_bytes": 1530,
+      "stored_sha256": "ebf068a4ebdaedef8bafea2d90d122498704c0e68ceb4709294ba3991d40caa5"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-independent-review/report.md",
+      "original_sha256": "ac783a3c18d2192b326fa39bd3503bb9439a98b3c40c5ba3dca0566a85686413",
+      "original_bytes": 4127,
+      "stored_path": "archive/ac/ac783a3c18d2192b326fa39bd3503bb9439a98b3c40c5ba3dca0566a85686413.gz",
+      "stored_bytes": 2171,
+      "stored_sha256": "08f85eb5ee01dd488899d4e6fdfa8ad6647731691a53529d03552d92b9a115a2"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-independent-review/runtime-attributed-evidence.json",
+      "original_sha256": "a3feb7b77974cc21565dba4926d24de0ade18aebfbd67241687c3a384778581d",
+      "original_bytes": 1136,
+      "stored_path": "archive/a3/a3feb7b77974cc21565dba4926d24de0ade18aebfbd67241687c3a384778581d.gz",
+      "stored_bytes": 520,
+      "stored_sha256": "389c5f2c61d2409724bee5b8179013e827eb4cc52f9cc098ef4cf53dda7d8380"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-independent-review/validation.json",
+      "original_sha256": "54a8518ffd0a2364dc64e231a618ae732206fd2ea9d20f4027a2b2b497f33b81",
+      "original_bytes": 7481,
+      "stored_path": "archive/54/54a8518ffd0a2364dc64e231a618ae732206fd2ea9d20f4027a2b2b497f33b81.gz",
+      "stored_bytes": 1760,
+      "stored_sha256": "7298a1d8f572c714f8ac85c709931e08d7070fb92db0306550bfa182c6686540"
+    },
+    {
+      "original_path": "spain-Galicia-child-cap-material-allocation-independent-review/verify-exact.py",
+      "original_sha256": "3b3662ee790a604d32cad7adbb361df59abf1badd214b5e7a29e0305b61c2279",
+      "original_bytes": 2399,
+      "stored_path": "archive/3b/3b3662ee790a604d32cad7adbb361df59abf1badd214b5e7a29e0305b61c2279.gz",
+      "stored_bytes": 1265,
+      "stored_sha256": "74220a14032d64e3f817a5d656d42a376d01947ff9260932d15af83bfe09df22"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition/README.md",
+      "original_sha256": "50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22",
+      "original_bytes": 20164,
+      "stored_path": "archive/50/50490136f1f595691618426c9666fddec905ea236de340f97383e228d0f4ad22.gz",
+      "stored_bytes": 7570,
+      "stored_sha256": "663daf69b14df3d95f5d626455a0123b856b8d418d638792f16a57bb301ee16b"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition/composition-manifest.json",
+      "original_sha256": "e038bc2bab5aad8930416508be3a88acd1cdd1ec55055df23da99a409ce6efc0",
+      "original_bytes": 32408,
+      "stored_path": "archive/e0/e038bc2bab5aad8930416508be3a88acd1cdd1ec55055df23da99a409ce6efc0.gz",
+      "stored_bytes": 8469,
+      "stored_sha256": "68e158d52b2a6cf7f5365f6ac302a00e755067f5b379796768843f49477ebe0b"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition/es-irpf-deductions.md",
+      "original_sha256": "370c0b34f113fb5d45f031c3e355d20d1a80dbece845c287456071edf99e03cb",
+      "original_bytes": 556156,
+      "stored_path": "archive/37/370c0b34f113fb5d45f031c3e355d20d1a80dbece845c287456071edf99e03cb.gz",
+      "stored_bytes": 158736,
+      "stored_sha256": "178a8880cbb714860d1e8508a2e60c05514137f651dcce9952e666b59171003e"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition/exact-replacements.json",
+      "original_sha256": "1617bb569d4661d619a553654fd9f3509f4a6b908b2f33f84c9fa19289350fc7",
+      "original_bytes": 17427,
+      "stored_path": "archive/16/1617bb569d4661d619a553654fd9f3509f4a6b908b2f33f84c9fa19289350fc7.gz",
+      "stored_bytes": 5607,
+      "stored_sha256": "af5abe17d622f5366488c66ff7e4ae6e5c7a2b22b6b78688ec2475bc9b1b1def"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition/report.md",
+      "original_sha256": "318c0ef96d2ab310e20dad27e3ff596df4e42d180957b5b2f9f0ce554c33dc07",
+      "original_bytes": 590,
+      "stored_path": "archive/31/318c0ef96d2ab310e20dad27e3ff596df4e42d180957b5b2f9f0ce554c33dc07.gz",
+      "stored_bytes": 383,
+      "stored_sha256": "aa5a8ded8981b319d7b519075b6819944a8019a9438b4f4da5ecd2e998cfffaa"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/29-file-inverse-proof.json",
+      "original_sha256": "cdafaa03f676769fc6c1918b673da1c894541ffa867c84b01d912362457c0698",
+      "original_bytes": 10635,
+      "stored_path": "archive/cd/cdafaa03f676769fc6c1918b673da1c894541ffa867c84b01d912362457c0698.gz",
+      "stored_bytes": 2050,
+      "stored_sha256": "d07d118afc671df52e40955c24dad9105d36eec08d9f561bc84cfa12fdf5ffac"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/artifact-manifest.json",
+      "original_sha256": "1f0fef4b87daf0461c77585d58b722a5a622851e81508ef68fcd425d11adc67a",
+      "original_bytes": 3583,
+      "stored_path": "archive/1f/1f0fef4b87daf0461c77585d58b722a5a622851e81508ef68fcd425d11adc67a.gz",
+      "stored_bytes": 864,
+      "stored_sha256": "976ef384bd8d888e19e412dbc227b7e52676662e772e65f34d267034bf3edfb8"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/check.py",
+      "original_sha256": "d3c83c7f619ee46c401505a20a5e14f2b80328172b47060f77b677c68afab8fe",
+      "original_bytes": 6023,
+      "stored_path": "archive/d3/d3c83c7f619ee46c401505a20a5e14f2b80328172b47060f77b677c68afab8fe.gz",
+      "stored_bytes": 2531,
+      "stored_sha256": "434fd64a50f1111b9436ea9f949b476422ce0de9fff8429408c778ef48a9b429"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/derived-operations.json",
+      "original_sha256": "1617bb569d4661d619a553654fd9f3509f4a6b908b2f33f84c9fa19289350fc7",
+      "original_bytes": 17427,
+      "stored_path": "archive/16/1617bb569d4661d619a553654fd9f3509f4a6b908b2f33f84c9fa19289350fc7.gz",
+      "stored_bytes": 5607,
+      "stored_sha256": "af5abe17d622f5366488c66ff7e4ae6e5c7a2b22b6b78688ec2475bc9b1b1def"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/external-identity-check.json",
+      "original_sha256": "b485584f63e6b27a22aa955d84eb89b43320b28a4075e0fe4120a95b65a419a3",
+      "original_bytes": 1521,
+      "stored_path": "archive/b4/b485584f63e6b27a22aa955d84eb89b43320b28a4075e0fe4120a95b65a419a3.gz",
+      "stored_bytes": 534,
+      "stored_sha256": "9b00889bc5986053135f21b16026c984570d252c21fd7eb290961fcee88e19c5"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/freeze.json",
+      "original_sha256": "29d3b3221e7b3762c61a5c727c0ff7c2a6493bf5021dd60e98056ebd7a3a39dc",
+      "original_bytes": 675,
+      "stored_path": "archive/29/29d3b3221e7b3762c61a5c727c0ff7c2a6493bf5021dd60e98056ebd7a3a39dc.gz",
+      "stored_bytes": 442,
+      "stored_sha256": "8184ffc23dd3499adc510f7c7b7baf3128030e46da42c6734b6754dc4958db48"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/input-composition-manifest.json",
+      "original_sha256": "e038bc2bab5aad8930416508be3a88acd1cdd1ec55055df23da99a409ce6efc0",
+      "original_bytes": 32408,
+      "stored_path": "archive/e0/e038bc2bab5aad8930416508be3a88acd1cdd1ec55055df23da99a409ce6efc0.gz",
+      "stored_bytes": 8469,
+      "stored_sha256": "68e158d52b2a6cf7f5365f6ac302a00e755067f5b379796768843f49477ebe0b"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/input-exact-replacements.json",
+      "original_sha256": "1617bb569d4661d619a553654fd9f3509f4a6b908b2f33f84c9fa19289350fc7",
+      "original_bytes": 17427,
+      "stored_path": "archive/16/1617bb569d4661d619a553654fd9f3509f4a6b908b2f33f84c9fa19289350fc7.gz",
+      "stored_bytes": 5607,
+      "stored_sha256": "af5abe17d622f5366488c66ff7e4ae6e5c7a2b22b6b78688ec2475bc9b1b1def"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/isolated-reproductions.json",
+      "original_sha256": "fc52c5267c4febcb52dbc38d98d64811c2c8d47d35eea9a8917029f6cbea2c27",
+      "original_bytes": 1013,
+      "stored_path": "archive/fc/fc52c5267c4febcb52dbc38d98d64811c2c8d47d35eea9a8917029f6cbea2c27.gz",
+      "stored_bytes": 403,
+      "stored_sha256": "36fe186c812bb375067ed2f5319ad5faf418e2520f51c09fa9305be7a1377775"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/mechanical-result.json",
+      "original_sha256": "ec7e7f098d11ec3a866b46cef0fcacca2fc4788e306e1a4695400b9708bd4602",
+      "original_bytes": 756,
+      "stored_path": "archive/ec/ec7e7f098d11ec3a866b46cef0fcacca2fc4788e306e1a4695400b9708bd4602.gz",
+      "stored_bytes": 418,
+      "stored_sha256": "6a2db488d45e7ddae04211bf67968bfc756125d41006c495c1782460ba2ca6a6"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/metadata-routing-proof.json",
+      "original_sha256": "af59979fca6bc00049944614ef424da6b06f8aa8acf959cf86155d72605b142a",
+      "original_bytes": 382,
+      "stored_path": "archive/af/af59979fca6bc00049944614ef424da6b06f8aa8acf959cf86155d72605b142a.gz",
+      "stored_bytes": 220,
+      "stored_sha256": "2c5c66d0fc84781f488829f94f26a8a7981fd55c2a9b4e2f09faa5414a0f9fda"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/report.md",
+      "original_sha256": "80821e0e84bb29f6fadbb6f0107d924a6c335c0b146cbbe759afae4ccc0777e6",
+      "original_bytes": 3193,
+      "stored_path": "archive/80/80821e0e84bb29f6fadbb6f0107d924a6c335c0b146cbbe759afae4ccc0777e6.gz",
+      "stored_bytes": 1586,
+      "stored_sha256": "6ed2c0dbb8fc84ad80005401701d99b5f1e7d9d6318548ff9eab82ab62523c65"
+    },
+    {
+      "original_path": "spain-Catalan-Galicia-final-composition-independent-review/setup-note.txt",
+      "original_sha256": "b4f02c9cbdd61e9c73dd452a29820543fae8dd3d9454a7130dd1f2fac5b7f384",
+      "original_bytes": 403,
+      "stored_path": "archive/b4/b4f02c9cbdd61e9c73dd452a29820543fae8dd3d9454a7130dd1f2fac5b7f384.gz",
+      "stored_bytes": 275,
+      "stored_sha256": "4464c15e6981ec1469c3fc1a3fd41619a1d04fffed29aab9f0b56e1be8cb8bc0"
+    },
+    {
+      "original_path": "spain-Galicia-school-runtime-field-observation/artifact-manifest.json",
+      "original_sha256": "7dfcdad59f4849714825089e0e72a9568216bf1e10910611b0661195542ee278",
+      "original_bytes": 601,
+      "stored_path": "archive/7d/7dfcdad59f4849714825089e0e72a9568216bf1e10910611b0661195542ee278.gz",
+      "stored_bytes": 319,
+      "stored_sha256": "991dac410ddaaa77cf49dff9808591f921e429117f6466875043d26ed668b7c9"
+    },
+    {
+      "original_path": "spain-Galicia-school-runtime-field-observation/report.md",
+      "original_sha256": "48ad62417463000326db0f13b2d871be01a9c837a50408fd56fa1f6d20b26c8c",
+      "original_bytes": 2313,
+      "stored_path": "archive/48/48ad62417463000326db0f13b2d871be01a9c837a50408fd56fa1f6d20b26c8c.gz",
+      "stored_bytes": 1287,
+      "stored_sha256": "08bcb45a5271fe63038aafefc4eeed3e5a3a4fe032889e8f4bb1bd075cfc220d"
+    },
+    {
+      "original_path": "spain-Galicia-school-runtime-field-observation/selected-exact-AX.txt",
+      "original_sha256": "e3e84c548242aa544f4ee162abeee632159c85978f8d41a0581269e0cc10d061",
+      "original_bytes": 3156,
+      "stored_path": "archive/e3/e3e84c548242aa544f4ee162abeee632159c85978f8d41a0581269e0cc10d061.gz",
+      "stored_bytes": 1210,
+      "stored_sha256": "0e18a9a0c81356026335a95bdb676118bd76ce20e710f71c840b7f70f3f344e0"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/actual-read-scope.json",
+      "original_sha256": "3417e26d30d89e929e532b16252b1a07f5d67edf106faf49e5b72c862513004f",
+      "original_bytes": 1865,
+      "stored_path": "archive/34/3417e26d30d89e929e532b16252b1a07f5d67edf106faf49e5b72c862513004f.gz",
+      "stored_bytes": 1035,
+      "stored_sha256": "f5d06b68189ecbf01fee2e99291429d2d7a54d299b44f61e5c10e514f209ce4f"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/alava56.7-actual-read-excerpt.txt",
+      "original_sha256": "1f7fc71588ff7e9fe9d6818a180c9103bdf2c41ff280ba81c33ddad222ba58cc",
+      "original_bytes": 2649,
+      "stored_path": "archive/1f/1f7fc71588ff7e9fe9d6818a180c9103bdf2c41ff280ba81c33ddad222ba58cc.gz",
+      "stored_bytes": 831,
+      "stored_sha256": "232270f0907596f8cab1b99b2faedeb1adda8fd7155050a64a89d1424bac90ad"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/artifact-manifest.json",
+      "original_sha256": "ca60f2044a1a0fc725bbb3fe2824ad652e2b70662cb168b8bd0893d57833ab6c",
+      "original_bytes": 1915,
+      "stored_path": "archive/ca/ca60f2044a1a0fc725bbb3fe2824ad652e2b70662cb168b8bd0893d57833ab6c.gz",
+      "stored_bytes": 860,
+      "stored_sha256": "4c268b736b24f556dae5cace20424d4e0d8c2c5739cf39a1b23875e25aaba453"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/build.py",
+      "original_sha256": "ccd639fed63bb55211f5da69bf50416eca3b138f9535710f081d80bd25a1e9df",
+      "original_bytes": 15063,
+      "stored_path": "archive/cc/ccd639fed63bb55211f5da69bf50416eca3b138f9535710f081d80bd25a1e9df.gz",
+      "stored_bytes": 6154,
+      "stored_sha256": "3dc7335ffc44c526b651a8305e2041eca362920958fc640d8d8c089723b28f93"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/checkpoint.json",
+      "original_sha256": "05de53bf4206cc8f441498e38b92a8477faca51f1ab14abd38ca1fe6d958c58c",
+      "original_bytes": 958,
+      "stored_path": "archive/05/05de53bf4206cc8f441498e38b92a8477faca51f1ab14abd38ca1fe6d958c58c.gz",
+      "stored_bytes": 602,
+      "stored_sha256": "7227d7f620196118d645a4805fbf4335ea5781a390ea1ab145fc322e7d65588a"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/collect.py",
+      "original_sha256": "f70e4eb1c55c5f895bd5b6a37da8ea269800d5e064b2585674066d4c90aabcf2",
+      "original_bytes": 3239,
+      "stored_path": "archive/f7/f70e4eb1c55c5f895bd5b6a37da8ea269800d5e064b2585674066d4c90aabcf2.gz",
+      "stored_bytes": 1503,
+      "stored_sha256": "435b99f4cd784c782ac93a8f0a8711c3aaf34250f288dbf86615d4525911b6b5"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/disposition-matrix.json",
+      "original_sha256": "77a78874c171252f0fffebd4c996937ca8be118918fb2dac466a93e11ecbf044",
+      "original_bytes": 15778,
+      "stored_path": "archive/77/77a78874c171252f0fffebd4c996937ca8be118918fb2dac466a93e11ecbf044.gz",
+      "stored_bytes": 4789,
+      "stored_sha256": "c638f60495e161951dec08bbb3adbfa567675d3c53c1d788bb27b0169c4f2a11"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/existing-review-identities.json",
+      "original_sha256": "4a9db519cd1ce7649810378a56f3441131dc9558ae5c591c234d7a7680623d4d",
+      "original_bytes": 19790,
+      "stored_path": "archive/4a/4a9db519cd1ce7649810378a56f3441131dc9558ae5c591c234d7a7680623d4d.gz",
+      "stored_bytes": 3374,
+      "stored_sha256": "4779dfd386b7fd0198e7677a2254a92571dcbcbbbabf97ee25eb10d14b8292ed"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/freeze.json",
+      "original_sha256": "26c1368372628e06aecddcc7f154371bd7a6018e4168ce6053e580ababd72c06",
+      "original_bytes": 698,
+      "stored_path": "archive/26/26c1368372628e06aecddcc7f154371bd7a6018e4168ce6053e580ababd72c06.gz",
+      "stored_bytes": 402,
+      "stored_sha256": "36b49db2f523d60a16e373136471693cf5d85a336046aec390d7ce5389b0b0b0"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/report.md",
+      "original_sha256": "1001ce559b79f1679a5183935fb00acede0d7038563aa52bc8374d145e6da354",
+      "original_bytes": 8540,
+      "stored_path": "archive/10/1001ce559b79f1679a5183935fb00acede0d7038563aa52bc8374d145e6da354.gz",
+      "stored_bytes": 4084,
+      "stored_sha256": "cac2eb23526f7c24bf1c816342ce869cb75b173c7e09cbfdcbf4ec0a1d228644"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/separating-controls.json",
+      "original_sha256": "f8f12ce3d9b78a69ba39f17f4853269f6f33185671d5b2f48ce3447802bf2071",
+      "original_bytes": 1537,
+      "stored_path": "archive/f8/f8f12ce3d9b78a69ba39f17f4853269f6f33185671d5b2f48ce3447802bf2071.gz",
+      "stored_bytes": 436,
+      "stored_sha256": "d66d646b7fa7bf2349c82f4890b6ad6c55c3d93a6af22ce508bec95830a0c862"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/snapshots/README.md",
+      "original_sha256": "fae3188171420bc8bff807da430fd602450be4db76c932d32bc0f20526e070b7",
+      "original_bytes": 19306,
+      "stored_path": "archive/fa/fae3188171420bc8bff807da430fd602450be4db76c932d32bc0f20526e070b7.gz",
+      "stored_bytes": 7296,
+      "stored_sha256": "5788965747cef80b7b1aa6d749c2dff40aa0146eaab7a21d0db56c57a74056f1"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/snapshots/es-irpf-deductions.md",
+      "original_sha256": "d536cd399a5adcdfcd73ab7e2b6b25946d2258c146bcd6b4e500ae54f4f86c17",
+      "original_bytes": 544691,
+      "stored_path": "archive/d5/d536cd399a5adcdfcd73ab7e2b6b25946d2258c146bcd6b4e500ae54f4f86c17.gz",
+      "stored_bytes": 155339,
+      "stored_sha256": "7c9de85f3df8e73ee5f09f7baffa0236f674b21ae8bbe9fc94a716029777720b"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/snapshots/frozen-reservation-assessment.md",
+      "original_sha256": "6626ef4774d2f6884c558ce5a7e15bb12e547e810fb421647a87ab302f70a61b",
+      "original_bytes": 24734,
+      "stored_path": "archive/66/6626ef4774d2f6884c558ce5a7e15bb12e547e810fb421647a87ab302f70a61b.gz",
+      "stored_bytes": 9840,
+      "stored_sha256": "ce60a1a86ae979d49719f0fe3d9fbb7ebc194505bd3f1fc2f9682780fa6ab2c8"
+    },
+    {
+      "original_path": "spain-remaining-material-disposition-b506/validation.json",
+      "original_sha256": "9fbfd6aa002b9ee8ef44da6bf49a7ec3c628fdf235fffc2317098ef0d7965610",
+      "original_bytes": 299,
+      "stored_path": "archive/9f/9fbfd6aa002b9ee8ef44da6bf49a7ec3c628fdf235fffc2317098ef0d7965610.gz",
+      "stored_bytes": 223,
+      "stored_sha256": "9fb5c373322e5f5b0ffade2d83ec68f75dd24dde1b228dd30f597170a0ba1cf8"
+    },
+    {
+      "original_path": "spain-final-material-disposition-addendum-proposed370c/artifact-manifest.json",
+      "original_sha256": "22e70064db2c7ae2ff75d97807b4d38f87c3987666880b68f342afde323ca655",
+      "original_bytes": 282,
+      "stored_path": "archive/22/22e70064db2c7ae2ff75d97807b4d38f87c3987666880b68f342afde323ca655.gz",
+      "stored_bytes": 203,
+      "stored_sha256": "917ec876d403c3e12825e0bbc53bb74d2ecf9808963b4dc2c8e4c45a627aeecc"
+    },
+    {
+      "original_path": "spain-final-material-disposition-addendum-proposed370c/freeze.json",
+      "original_sha256": "3213099e0d0006853098f72d21f458c6c01e79e18612e850099594a2a878e862",
+      "original_bytes": 876,
+      "stored_path": "archive/32/3213099e0d0006853098f72d21f458c6c01e79e18612e850099594a2a878e862.gz",
+      "stored_bytes": 501,
+      "stored_sha256": "c7d8fc8a8ccfb2b107bc1b274a92a0841b00627739b8358ab8e73285aa10adb9"
+    },
+    {
+      "original_path": "spain-final-material-disposition-addendum-proposed370c/identity-checks.json",
+      "original_sha256": "8e2b6a3657ec16154ac46679400fbc800b49e0a8c6530791dfa8f8e3cf54662e",
+      "original_bytes": 8332,
+      "stored_path": "archive/8e/8e2b6a3657ec16154ac46679400fbc800b49e0a8c6530791dfa8f8e3cf54662e.gz",
+      "stored_bytes": 1913,
+      "stored_sha256": "5b39cfe599ccd7f363d13d5d5903cddc716e6dca70b8a4f3441c4f0627105f06"
+    },
+    {
+      "original_path": "spain-final-material-disposition-addendum-proposed370c/report.md",
+      "original_sha256": "ff0103551d51217218081b6e6444f233f64d00b92686b56bbc04b8390d622ab2",
+      "original_bytes": 4437,
+      "stored_path": "archive/ff/ff0103551d51217218081b6e6444f233f64d00b92686b56bbc04b8390d622ab2.gz",
+      "stored_bytes": 2281,
+      "stored_sha256": "e9555475064be3838284490b4c3b5fbcfd35e87a651fdfe2ec585fb63aeb192b"
+    }
+  ]
+}

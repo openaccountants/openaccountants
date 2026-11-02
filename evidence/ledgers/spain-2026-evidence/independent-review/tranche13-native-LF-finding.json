@@ -1,0 +1,114 @@
+[
+  {
+    "quote": 40,
+    "key": "algoAS65",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1256,
+    "LF_end": 1262
+  },
+  {
+    "quote": 41,
+    "key": "algoAS75",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1281,
+    "LF_end": 1287
+  },
+  {
+    "quote": 42,
+    "key": "algoASISAS",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1417,
+    "LF_end": 1423
+  },
+  {
+    "quote": 43,
+    "key": "algoASISDES",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1393,
+    "LF_end": 1399
+  },
+  {
+    "quote": 44,
+    "key": "algoAnnual",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1710,
+    "LF_end": 1717
+  },
+  {
+    "quote": 45,
+    "key": "algoDISAS",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1363,
+    "LF_end": 1369
+  },
+  {
+    "quote": 46,
+    "key": "algoDISDES",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1338,
+    "LF_end": 1344
+  },
+  {
+    "quote": 47,
+    "key": "algoDate",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 174,
+    "LF_end": 180
+  },
+  {
+    "quote": 49,
+    "key": "algoDesc",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1198,
+    "LF_end": 1204
+  },
+  {
+    "quote": 50,
+    "key": "algoDesc3",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1227,
+    "LF_end": 1233
+  },
+  {
+    "quote": 51,
+    "key": "algoGuard",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1913,
+    "LF_end": 1928
+  },
+  {
+    "quote": 52,
+    "key": "algoNormal",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1658,
+    "LF_end": 1685
+  },
+  {
+    "quote": 53,
+    "key": "algoPrecision",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 427,
+    "LF_end": 434
+  },
+  {
+    "quote": 54,
+    "key": "algoRED20",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1096,
+    "LF_end": 1118
+  },
+  {
+    "quote": 55,
+    "key": "algoReg",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1821,
+    "LF_end": 1835
+  },
+  {
+    "quote": 56,
+    "key": "algoRegAnnual",
+    "reader": "sources/S5.reader.txt",
+    "LF_start": 1873,
+    "LF_end": 1879
+  }
+]

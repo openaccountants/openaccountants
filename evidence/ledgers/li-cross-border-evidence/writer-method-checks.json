@@ -1,0 +1,129 @@
+{
+  "status": "WRITER CHECKS ONLY; FULL INDEPENDENT PACK REVIEW PENDING",
+  "guide_sha256": "6014f5d17ef19ea938aa1dc198735e66716d9415ac3394449273f6b3420af447",
+  "controls": [
+    {
+      "name": "Individual allocatednetassets",
+      "actual": "150000",
+      "expected": "150000",
+      "source": "SteV18b(2);assumedassets/debts",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Individual statutorywealthyield",
+      "actual": "6000.00",
+      "expected": "6000",
+      "source": "SteV18b(2);SteG5",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Individual proportionatedeductions",
+      "actual": "5000.00",
+      "expected": "5000",
+      "source": "SteV18b(2);assumeddeduction1000",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Individual actualaveragerate12percentCASElimit",
+      "actual": "600.0000",
+      "expected": "600",
+      "source": "SteV18b(2);actualaverage12percentassumed",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Individual creditlowerforeign/domestic",
+      "actual": "600.0000",
+      "expected": "600",
+      "source": "SteV18b(1)",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Individual uncreditedamountnotautomaticcarryforward",
+      "actual": "300.0000",
+      "expected": "300",
+      "source": "Casearithmetic;nocarryforwardassertion",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Business connectedcostsnetincome",
+      "actual": "15000",
+      "expected": "15000",
+      "source": "SteV36b(2);assumedrevenue/expense",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Business actualaverage10percentCASElimit",
+      "actual": "1500.00",
+      "expected": "1500",
+      "source": "SteV36b(2);actualaverage10percentassumed",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Business allowedcredit",
+      "actual": "1500.00",
+      "expected": "1500",
+      "source": "SteV36b(1)",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Business uncreditedamount",
+      "actual": "500.00",
+      "expected": "500",
+      "source": "Casearithmetic;nocarryforwardassertion",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Annualforeign50exactexcluded",
+      "actual": "False",
+      "expected": "False",
+      "source": "SteV18a(3)(b)/36a(3)",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Annualforeign50.01passesonlyamountscreen",
+      "actual": "True",
+      "expected": "True",
+      "source": "SteV18a/36a;allothergatesassumed",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Nonresidentmandatorythreshold211400exact",
+      "actual": "True",
+      "expected": "True",
+      "source": "SteG23(2);correctcategory/netgrossbaseassumed",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Nonresident211399belowthatthreshold",
+      "actual": "False",
+      "expected": "False",
+      "source": "SteG23(2);exclusiveDTA/othermandatorygatesseparate",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Otherordinarynonresidentsurcharge150percentofstate2000",
+      "actual": "3000.0",
+      "expected": "3000",
+      "source": "FinanceAct2026art2;state2000assumed",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Otherordinarynonresidentcombinedstateandsurcharge",
+      "actual": "5000",
+      "expected": "5000",
+      "source": "SteG23(5)(b);FinanceAct2026art2",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    },
+    {
+      "name": "Simplifiedstate4percent10000eligiblebase",
+      "actual": "400.00",
+      "expected": "400",
+      "source": "SteG23(1)(a);actualmunicipalityseparate",
+      "status": "WRITER CONTROL, INDEPENDENT RECOMPUTATION PENDING"
+    }
+  ],
+  "all_three_original_blocks_preserved_exact": true,
+  "nine_sections_two_current_examples": true,
+  "metadata_CTA_unchanged": true,
+  "remaining": "Assumed positive eligible bases/actual average rates do not decide residency,treaties,allocation,individualbusinessmapping,rounding or realfiling."
+}

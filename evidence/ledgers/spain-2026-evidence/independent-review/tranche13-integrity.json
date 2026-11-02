@@ -1,0 +1,425 @@
+{
+  "Guide_sha256": "4ed6344830ba5b23cfb07bd126a559ee53bc66ad9e94113b3552534819d9302c",
+  "ledger_sha256": "5f014d016726afe6b3abe97d116fdb0ff297328ac75fb6fde7035946ddd691b0",
+  "rows": 360,
+  "anchors": 158,
+  "source_identities": [
+    {
+      "source": "S0",
+      "kind": "raw",
+      "sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+      "expected": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+      "pass": true
+    },
+    {
+      "source": "S0",
+      "kind": "reader",
+      "sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "expected": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "pass": true
+    },
+    {
+      "source": "S1",
+      "kind": "raw",
+      "sha256": "55986df8beea61cfafd9537944305802ab9c80f2bf3e395a9110db0a2aa96d63",
+      "expected": "55986df8beea61cfafd9537944305802ab9c80f2bf3e395a9110db0a2aa96d63",
+      "pass": true
+    },
+    {
+      "source": "S1",
+      "kind": "reader",
+      "sha256": "f91ba3359f81d1db24bc78e9ab9d787336b1f0e785c2d9b75f72df17597d566a",
+      "expected": "f91ba3359f81d1db24bc78e9ab9d787336b1f0e785c2d9b75f72df17597d566a",
+      "pass": true
+    },
+    {
+      "source": "S2",
+      "kind": "raw",
+      "sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+      "expected": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+      "pass": true
+    },
+    {
+      "source": "S2",
+      "kind": "reader",
+      "sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "expected": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "pass": true
+    },
+    {
+      "source": "S3",
+      "kind": "raw",
+      "sha256": "b2ec22b4eb690f68199db144af66e7b24faf20df4b3ceb32b061bd73e41b659a",
+      "expected": "b2ec22b4eb690f68199db144af66e7b24faf20df4b3ceb32b061bd73e41b659a",
+      "pass": true
+    },
+    {
+      "source": "S3",
+      "kind": "reader",
+      "sha256": "66b76dcf43a9f4d648e1e221ab4f56a565afb46c0bb02b13001ae4075c4935fd",
+      "expected": "66b76dcf43a9f4d648e1e221ab4f56a565afb46c0bb02b13001ae4075c4935fd",
+      "pass": true
+    },
+    {
+      "source": "S4",
+      "kind": "raw",
+      "sha256": "a9f19b8abb0f9c040560add3ef051eb4572a60c3d4d0d73376fa3fbabe188922",
+      "expected": "a9f19b8abb0f9c040560add3ef051eb4572a60c3d4d0d73376fa3fbabe188922",
+      "pass": true
+    },
+    {
+      "source": "S4",
+      "kind": "reader",
+      "sha256": "75948258f479f6cc20ab64385638fbbd6c70f6a58b2e5c1ae3edc5e570faeb3e",
+      "expected": "75948258f479f6cc20ab64385638fbbd6c70f6a58b2e5c1ae3edc5e570faeb3e",
+      "pass": true
+    },
+    {
+      "source": "S5",
+      "kind": "raw",
+      "sha256": "b1a120d93bf541deb35ccbfd55f08f771eecc01a762148491e5c9e2cf0be27d3",
+      "expected": "b1a120d93bf541deb35ccbfd55f08f771eecc01a762148491e5c9e2cf0be27d3",
+      "pass": true
+    },
+    {
+      "source": "S5",
+      "kind": "reader",
+      "sha256": "010ad348e608cf99bd1b301d3393d99ef627b7ea7c50a9a27339c4dea35e258a",
+      "expected": "010ad348e608cf99bd1b301d3393d99ef627b7ea7c50a9a27339c4dea35e258a",
+      "pass": true
+    },
+    {
+      "source": "S6",
+      "kind": "raw",
+      "sha256": "b176ce1d661d50006165169d3a89b2d749708336dcca3342c0d2026b159ebcf6",
+      "expected": "b176ce1d661d50006165169d3a89b2d749708336dcca3342c0d2026b159ebcf6",
+      "pass": true
+    },
+    {
+      "source": "S6",
+      "kind": "reader",
+      "sha256": "3f825893305ca218b48c738874b9051cee9a81baf8fe968db907f553ad8fdfcb",
+      "expected": "3f825893305ca218b48c738874b9051cee9a81baf8fe968db907f553ad8fdfcb",
+      "pass": true
+    },
+    {
+      "source": "S7",
+      "kind": "raw",
+      "sha256": "a7761001d8d12dd8d5ae35f5e1e0f0996052a8542c33ab5e13a6ee408cf190f8",
+      "expected": "a7761001d8d12dd8d5ae35f5e1e0f0996052a8542c33ab5e13a6ee408cf190f8",
+      "pass": true
+    },
+    {
+      "source": "S7",
+      "kind": "reader",
+      "sha256": "29a288f3e09e6d65049d81466c2e864baecddc40af40d118534220f0ea07bb65",
+      "expected": "29a288f3e09e6d65049d81466c2e864baecddc40af40d118534220f0ea07bb65",
+      "pass": true
+    },
+    {
+      "source": "S8",
+      "kind": "raw",
+      "sha256": "23b6450f031ce22487562b4afb1641c8cfd980f98bd889f6588665c4f0ae4a3c",
+      "expected": "23b6450f031ce22487562b4afb1641c8cfd980f98bd889f6588665c4f0ae4a3c",
+      "pass": true
+    },
+    {
+      "source": "S8",
+      "kind": "reader",
+      "sha256": "d1a02358076a4c50bc1f67cc5d49ea3e0c86648a59224459a69c4a9226ca8db8",
+      "expected": "d1a02358076a4c50bc1f67cc5d49ea3e0c86648a59224459a69c4a9226ca8db8",
+      "pass": true
+    },
+    {
+      "source": "S9",
+      "kind": "raw",
+      "sha256": "0776a96693f8726c29d598d7ce2d217dfd37c42ac9b3ec85ceb9018589bd1cc8",
+      "expected": "0776a96693f8726c29d598d7ce2d217dfd37c42ac9b3ec85ceb9018589bd1cc8",
+      "pass": true
+    },
+    {
+      "source": "S9",
+      "kind": "reader",
+      "sha256": "48430b2658f88d84d4e3e85d7d5210617f76763a9dd2dce593f0c4b54facf6bb",
+      "expected": "48430b2658f88d84d4e3e85d7d5210617f76763a9dd2dce593f0c4b54facf6bb",
+      "pass": true
+    },
+    {
+      "source": "S10",
+      "kind": "raw",
+      "sha256": "46d6b73e83820d0ed7b8a6886bd2d19c85f48d8524937f159c08186e8cbb7bfb",
+      "expected": "46d6b73e83820d0ed7b8a6886bd2d19c85f48d8524937f159c08186e8cbb7bfb",
+      "pass": true
+    },
+    {
+      "source": "S10",
+      "kind": "reader",
+      "sha256": "aeba21eb40e1e92a5e0a1d07a4d988e0a86d53e82c0ac9e9e6f83531bbffc558",
+      "expected": "aeba21eb40e1e92a5e0a1d07a4d988e0a86d53e82c0ac9e9e6f83531bbffc558",
+      "pass": true
+    },
+    {
+      "source": "S11",
+      "kind": "raw",
+      "sha256": "468154736edec869fdc02b8f455b490f7d211d053688d4828899e9b2c04f0b9d",
+      "expected": "468154736edec869fdc02b8f455b490f7d211d053688d4828899e9b2c04f0b9d",
+      "pass": true
+    },
+    {
+      "source": "S11",
+      "kind": "reader",
+      "sha256": "eb885080cf90a70f5887884263c2510ce02c1b9f73b9c5dacef5a564acf790fb",
+      "expected": "eb885080cf90a70f5887884263c2510ce02c1b9f73b9c5dacef5a564acf790fb",
+      "pass": true
+    },
+    {
+      "source": "S12",
+      "kind": "raw",
+      "sha256": "807fa277f7925f360d9c11d946f8489cabd106b4e845c98394c90c34c55d2f80",
+      "expected": "807fa277f7925f360d9c11d946f8489cabd106b4e845c98394c90c34c55d2f80",
+      "pass": true
+    },
+    {
+      "source": "S12",
+      "kind": "reader",
+      "sha256": "a1ff264c0a194330a9f77f7053bb0dbf87ef83799427263473d3a57d0711e63c",
+      "expected": "a1ff264c0a194330a9f77f7053bb0dbf87ef83799427263473d3a57d0711e63c",
+      "pass": true
+    },
+    {
+      "source": "S13",
+      "kind": "raw",
+      "sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+      "expected": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+      "pass": true
+    },
+    {
+      "source": "S13",
+      "kind": "reader",
+      "sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "expected": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "pass": true
+    },
+    {
+      "source": "S14",
+      "kind": "raw",
+      "sha256": "55ed2331c535c47cd555a29a603fe5753e62f541bc8b23f1e78ad70e4e16da69",
+      "expected": "55ed2331c535c47cd555a29a603fe5753e62f541bc8b23f1e78ad70e4e16da69",
+      "pass": true
+    },
+    {
+      "source": "S14",
+      "kind": "reader",
+      "sha256": "1ce99078ee689f98004fd6b3ed4cc8c7e65d0a48d83ededd52b270bb931ace40",
+      "expected": "1ce99078ee689f98004fd6b3ed4cc8c7e65d0a48d83ededd52b270bb931ace40",
+      "pass": true
+    },
+    {
+      "source": "S15",
+      "kind": "raw",
+      "sha256": "a15b7fee871d1a4387d4ad0be3cd21930cd357a5ecd3372dc4fbed3f3181bca9",
+      "expected": "a15b7fee871d1a4387d4ad0be3cd21930cd357a5ecd3372dc4fbed3f3181bca9",
+      "pass": true
+    },
+    {
+      "source": "S15",
+      "kind": "reader",
+      "sha256": "0afc2d9a08d1d8d219cd2af9c84cd86183c0c68de35bed44c6683461842b6c9c",
+      "expected": "0afc2d9a08d1d8d219cd2af9c84cd86183c0c68de35bed44c6683461842b6c9c",
+      "pass": true
+    },
+    {
+      "source": "SC_S0",
+      "kind": "raw",
+      "sha256": "55986df8beea61cfafd9537944305802ab9c80f2bf3e395a9110db0a2aa96d63",
+      "expected": "55986df8beea61cfafd9537944305802ab9c80f2bf3e395a9110db0a2aa96d63",
+      "pass": true
+    },
+    {
+      "source": "SC_S0",
+      "kind": "reader",
+      "sha256": "f91ba3359f81d1db24bc78e9ab9d787336b1f0e785c2d9b75f72df17597d566a",
+      "expected": "f91ba3359f81d1db24bc78e9ab9d787336b1f0e785c2d9b75f72df17597d566a",
+      "pass": true
+    },
+    {
+      "source": "SC_S1",
+      "kind": "raw",
+      "sha256": "a9f19b8abb0f9c040560add3ef051eb4572a60c3d4d0d73376fa3fbabe188922",
+      "expected": "a9f19b8abb0f9c040560add3ef051eb4572a60c3d4d0d73376fa3fbabe188922",
+      "pass": true
+    },
+    {
+      "source": "SC_S1",
+      "kind": "reader",
+      "sha256": "75948258f479f6cc20ab64385638fbbd6c70f6a58b2e5c1ae3edc5e570faeb3e",
+      "expected": "75948258f479f6cc20ab64385638fbbd6c70f6a58b2e5c1ae3edc5e570faeb3e",
+      "pass": true
+    },
+    {
+      "source": "SC_S14",
+      "kind": "raw",
+      "sha256": "b2ec22b4eb690f68199db144af66e7b24faf20df4b3ceb32b061bd73e41b659a",
+      "expected": "b2ec22b4eb690f68199db144af66e7b24faf20df4b3ceb32b061bd73e41b659a",
+      "pass": true
+    },
+    {
+      "source": "SC_S14",
+      "kind": "reader",
+      "sha256": "66b76dcf43a9f4d648e1e221ab4f56a565afb46c0bb02b13001ae4075c4935fd",
+      "expected": "66b76dcf43a9f4d648e1e221ab4f56a565afb46c0bb02b13001ae4075c4935fd",
+      "pass": true
+    },
+    {
+      "source": "SC_S25",
+      "kind": "raw",
+      "sha256": "807fa277f7925f360d9c11d946f8489cabd106b4e845c98394c90c34c55d2f80",
+      "expected": "807fa277f7925f360d9c11d946f8489cabd106b4e845c98394c90c34c55d2f80",
+      "pass": true
+    },
+    {
+      "source": "SC_S25",
+      "kind": "reader",
+      "sha256": "a1ff264c0a194330a9f77f7053bb0dbf87ef83799427263473d3a57d0711e63c",
+      "expected": "a1ff264c0a194330a9f77f7053bb0dbf87ef83799427263473d3a57d0711e63c",
+      "pass": true
+    },
+    {
+      "source": "SC_A_EU_BOE",
+      "kind": "raw",
+      "sha256": "601e64cc08d8510bb2c7d9552d69837cd2c346e0e7cb1e9c8ba5de95678713b8",
+      "expected": "601e64cc08d8510bb2c7d9552d69837cd2c346e0e7cb1e9c8ba5de95678713b8",
+      "pass": true
+    },
+    {
+      "source": "SC_A_EU_BOE",
+      "kind": "reader",
+      "sha256": "ed8e745e000db1a1cffff9809fd0da477f47a22339d1cf2752f5f2b1d04313c6",
+      "expected": "ed8e745e000db1a1cffff9809fd0da477f47a22339d1cf2752f5f2b1d04313c6",
+      "pass": true
+    }
+  ],
+  "native_LF_unmatched": 0,
+  "guide_operations": [
+    {
+      "before_LF": [
+        4,
+        4
+      ],
+      "after_LF": [
+        4,
+        4
+      ],
+      "old": [
+        "version: 1.3"
+      ],
+      "new": [
+        "version: 1.5"
+      ]
+    },
+    {
+      "before_LF": [
+        19,
+        19
+      ],
+      "after_LF": [
+        19,
+        19
+      ],
+      "old": [
+        "# Spain: employee payroll and withholding v1.3"
+      ],
+      "new": [
+        "# Spain: employee payroll and withholding v1.5"
+      ]
+    },
+    {
+      "before_LF": [
+        100,
+        100
+      ],
+      "after_LF": [
+        100,
+        100
+      ],
+      "old": [
+        "These SMI amounts apply from 1 January through 31 December 2026 and are prorated for shorter working time. Collective-agreement wages can be higher. The annual figure paid in twelve equal instalments gives a **derived** 1,424.50/month; it is not the published 1,424.40 contribution floor. Do not substitute one for the other. Receiving the SMI does not by itself establish zero withholding: test the actual art. 81 limits and full algorithm, keeping any annual-return credit separate."
+      ],
+      "new": [
+        "These SMI amounts apply from 1 January through 31 December 2026 and are prorated for shorter working time. Collective-agreement wages can be higher. The annual figure paid in twelve equal instalments gives a **derived** 1,424.50/month; the published group4–7 CC minimum is separately 1,424.40. Use the actual contribution line: the occupational floor follows SMI plus one-sixth, as set out in the contribution Guide. Receiving the SMI does not by itself establish zero withholding: test the actual art. 81 limits and full algorithm, keeping any annual-return credit separate."
+      ]
+    },
+    {
+      "before_LF": [
+        161,
+        161
+      ],
+      "after_LF": [
+        161,
+        161
+      ],
+      "old": [
+        "- **Leave and benefits.** [ET art. 38](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430#a38) requires at least 30 calendar days' paid annual leave. Current [art. 48.4–5](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430#a48) gives 19 weeks' birth/adoption-related suspension, 32 for the specified sole-parent situation, with its compulsory/deferred portions and special extensions. Obtain the event/award dates and transition rule for a historical event; do not make all weeks employer-paid wages."
+      ],
+      "new": [
+        "- **Leave and benefits.** [ET art. 38](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430#a38) requires at least 30 calendar days' paid annual leave. Current [art. 48.4–5](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430#a48) gives 19 weeks' birth/adoption-related suspension, 32 for the specified sole-parent situation, with its compulsory/deferred portions. For premature birth with low weight or another clinical condition requiring neonatal hospitalisation for **more than seven days** immediately after birth, extend suspension by the hospitalisation days, capped at **thirteen additional weeks**. In the stated premature-birth/post-birth hospitalisation cases, the biological mother or other parent can request commencement from discharge; this excludes the biological mother's **six compulsory post-birth weeks**. Obtain the event/award dates and transition rule for a historical event; do not make all weeks employer-paid wages."
+      ]
+    },
+    {
+      "before_LF": [
+        172,
+        174
+      ],
+      "after_LF": [
+        172,
+        174
+      ],
+      "old": [
+        "| Secondary incapacitating menstruation, process beginning before 1 December 2026 | **60% BR days 1–20**, **75% thereafter**, entity/mutua bears from day 1 | [Operative arts. 171/173](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1#a173), [Social Security](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es) |",
+        "| Pregnancy interruption or 39th-week leave, process beginning before 1 December 2026 | Employer salary on day 1; entity/mutua benefit **60% BR days 2–20**, **75% thereafter**; pregnancy route ends at childbirth unless the existing risk-benefit rule applies | [Operative art. 173](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1#a173), [Social Security](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es) |",
+        "| Organ/tissue donation, process beginning before 1 December 2026 | **100% common-contingency BR**, entity/mutua bears from day 1 | [Operative arts. 171/173](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1#a171) |"
+      ],
+      "new": [
+        "| Secondary incapacitating menstruation, benefit days before 1 December 2026 | **60% BR days 1–20**, **75% thereafter**, entity/mutua bears from day 1 | [Operative arts. 171/173](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1#a173), [Social Security](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es) |",
+        "| Pregnancy interruption or 39th-week leave, benefit days before 1 December 2026 | Employer salary on day 1; entity/mutua benefit **60% BR days 2–20**, **75% thereafter**; pregnancy route ends at childbirth unless the existing risk-benefit rule applies | [Operative art. 173](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1#a173), [Social Security](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es) |",
+        "| Organ/tissue donation, benefit days before 1 December 2026 | **100% common-contingency BR**, entity/mutua bears from day 1 | [Operative arts. 171/173](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1#a171) |"
+      ]
+    },
+    {
+      "before_LF": [
+        183,
+        183
+      ],
+      "after_LF": [
+        183,
+        183
+      ],
+      "old": [
+        "**Processes beginning from 1 December 2026.** RDL 31/2026 arts. 1.4/1.6, DT 1 and DF 4 amend LGSS arts. 171/173. For ordinary full-time common IT use the CC base of the month **immediately before the month preceding the event**, divided by its contribution days (30 for a complete monthly-paid month). Occupational BR uses that same reference month's occupational base without overtime plus overtime in the year before the month preceding the event divided by 365. If entry was in the preceding month use that month's base/days; if in the event month use base from entry through the day before medical leave divided by those days. For special common-IT processes beginning from 1 December 2026, the employer pays full salary on the leave day and the common-IT entity/mutua bears the subsidy from the next day. The listed situations are secondary incapacitating menstruation, pregnancy interruption, gestation from the first day of week39, organ/tissue donation, the specified coded secondary menopausal disorder, and the specified injuries from gender violence with the statutory medical/documentary proof. Donation pays100% BR from day2. For the other listed special situations, apply the common-IT-equivalent amount:60% BR for days2–20 and75% from day21. No prior contribution minimum applies to art169.1.a situations1/3/4/5; the39th-week route uses the age-specific art178 contribution test. Apply the still-operative childbirth/risk-benefit termination rule in art173.2. DT1 confines these changes to processes beginning from entry into force; do not reset an earlier continuing special process. The 60%/75% day mapping applies the common-IT amount expressly incorporated by amended art.171 to amended art.173’s special payment start; it is a statutory application, not a separately published new percentage table. ([RDL31/2026 art.1.3–1.6/DT1/DF4](https://www.boe.es/buscar/act.php?id=BOE-A-2026-21872); [Social Security amount schedule](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es))."
+      ],
+      "new": [
+        "**Changes with effects from 1 December 2026.** RDL 31/2026 arts. 1.4/1.6, DT 1 and DF 4 amend LGSS arts. 171/173. For ordinary full-time common IT use the CC base of the month **immediately before the month preceding the event**, divided by its contribution days (30 for a complete monthly-paid month). Occupational BR uses that same reference month's occupational base without overtime plus overtime in the year before the month preceding the event divided by 365. If entry was in the preceding month use that month's base/days; if in the event month use base from entry through the day before medical leave divided by those days. For special common-IT processes beginning from 1 December 2026, the employer pays full salary on the leave day and the common-IT entity/mutua bears the subsidy from the next day. The listed situations are secondary incapacitating menstruation, pregnancy interruption, gestation from the first day of week39, organ/tissue donation, the specified coded secondary menopausal disorder, and the specified injuries from gender violence with the statutory medical/documentary proof. Donation pays100% BR from day2. For the other listed special situations, apply the common-IT-equivalent amount:60% BR for days2–20 and75% from day21. No prior contribution minimum applies to art169.1.a situations1/3/4/5; the39th-week route uses the age-specific art178 contribution test. Apply the still-operative childbirth/risk-benefit termination rule in art173.2. DT1 uses the decree's **21 October 2026 entry date** as the special-process start gate; DF4.2 separately gives these amendments effects from **1 December 2026**. Do not replace the DT1 gate with 1 December or exclude every earlier continuing process. For a special process begun **21 October–30 November** and continuing into December, the selected texts do not expressly settle the operational recalculation of an existing award across that effects date. Retain the award, start date and daily payments and obtain the INSS/mutua application before changing that award; this Guide supplies neither an automatic retroactive payment nor a blanket exclusion for that cohort. A special process begun before 21 October falls outside DT1's stated cohort. The 60%/75% day mapping applies the common-IT amount expressly incorporated by amended art.171 to amended art.173’s special payment start; it is a statutory application, not a separately published new percentage table. ([RDL31/2026 art.1.3–1.6/DT1/DF4](https://www.boe.es/buscar/act.php?id=BOE-A-2026-21872); [Social Security amount schedule](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es))."
+      ]
+    },
+    {
+      "before_LF": [
+        321,
+        321
+      ],
+      "after_LF": [
+        321,
+        321
+      ],
+      "old": [
+        "| [LGSS operative pre-December arts. 171/173](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1#a171), [current arts. 179/248](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a179), [RDL 31/2026 art. 1/DT 1/DF 4](https://www.boe.es/buscar/act.php?id=BOE-A-2026-21872), [Social Security BR/rates](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es) | Restored employee IT/birth methods, benefit payer, bases, partial-time method and December process-start transition; art.169/172 eligibility and incorporated special-IT day/rate method | 2026-10-27 |"
+      ],
+      "new": [
+        "| [LGSS operative pre-December arts. 171/173](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724&p=20241221&tn=1#a171), [current arts. 179/248](https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724#a179), [RDL 31/2026 art. 1/DT 1/DF 4](https://www.boe.es/buscar/act.php?id=BOE-A-2026-21872), [Social Security BR/rates](https://www.seg-social.es/wps/portal/wss/internet/Trabajadores/PrestacionesPensionesTrabajadores/10952/28362/28365/30791?changeLanguage=es) | Restored employee IT/birth methods, benefit payer, bases, partial-time method, separate October process-start/December effects dates and the stated continuing-award boundary; art.169/172 eligibility and incorporated special-IT day/rate method | 2026-10-27 |"
+      ]
+    }
+  ],
+  "full_forward_inverse": true,
+  "two_original_oa_byte_exact": true,
+  "old_URL_order_preserved": true,
+  "other_frontmatter_exact": true
+}

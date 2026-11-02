@@ -1,0 +1,47 @@
+[
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/S-L33-report.md",
+    "sha256": "8d9a8c3e2bb0ed45df0e2315dfc85c64a5e75f3bd33341ecde34a9ccf6c2ce2a",
+    "bytes": 1606
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/S-L33-operations.json",
+    "sha256": "31d11af57a8a9c34b1c91ed712efc796e360e1940959dc7505b8e87c5bb7aa89",
+    "bytes": 1000
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/S-L33-inverse-proof.json",
+    "sha256": "7fa2d46d97d8e0dd310e07a5318a79e9afc4a68a1429ebc783025bb678e056bc",
+    "bytes": 1827
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/check-ledger.py",
+    "sha256": "58a78be5d7fa967f1339fa25e66880cb5c2e4be876b90e57dfc6b27342e0a5d5",
+    "bytes": 9019
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/supplementary-numeric-controls.json",
+    "sha256": "2982dfb7cc5cfb61abdb442dd68779c3d63d5afd00997997acaf895eb61c0830",
+    "bytes": 19322
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/ledger-check-results.json",
+    "sha256": "5a535292bc65dfce1fd6adfc6297feb72720f8c5163a9ff90375707b9a7057e7",
+    "bytes": 929554
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/writer-status.md",
+    "sha256": "ac50d81f8323982954e7ab83fe93e590ad6175c59cd2eb6b7a512fede81fa0dc",
+    "bytes": 3867
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/handover-identities.json",
+    "sha256": "35d23013e88e9dcf2215bf8d717e9800a7fdc86f9587c1d28026f4e212f53d67",
+    "bytes": 2405
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-irpf-deductions/history/pre-S-L33-d633/preservation-inventory.json",
+    "sha256": "d3627a1c73d54b2fb6ee4a8535da1f6c8c7279c1be1e0bd2c143edbd3eab4bf5",
+    "bytes": 90336
+  }
+]

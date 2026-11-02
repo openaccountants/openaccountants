@@ -1,0 +1,135 @@
+{
+  "observed_at": "2026-10-24T18:37:16.151571+00:00",
+  "baseline_commit": "73d40eb7cf70181e54e3d10aabab016d5186cbcf",
+  "scope": "Original Belarus source paths and platform/CTA preservation baseline only. No current-law or completeness claim.",
+  "files": [
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "blob": "7687b81126f57def36e92b69ff2b11eb953a94ec",
+      "sha256": "d1e011e09f8cc42b225793cc5d73dda0d328d8cdd0cd34cc0445f2440abcf50d",
+      "bytes": 39655,
+      "platform_fields": {
+        "review_status": "pending_review",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team"
+      },
+      "version": 0.1,
+      "last_updated": "2026-07-13",
+      "tax_year": 2025,
+      "cta_bytes": 667,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "blob": "1fee3a4d5ef06cc2034ab442c9eeadf32dd9ddcc",
+      "sha256": "e756447b61e5a05583e3b3e7ea4971a74c5ceda3c74c5439d07a993a9f273bc6",
+      "bytes": 49655,
+      "platform_fields": {
+        "review_status": "pending_review",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team"
+      },
+      "version": 0.1,
+      "last_updated": "2026-07-13",
+      "tax_year": 2025,
+      "cta_bytes": 667,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "blob": "e2550ee10a0c30a4af18ca76a2019631dca33fec",
+      "sha256": "a67228534127eb44e9190b2a7a1120f882d35508e59dac6a4c5fcbffe52f9e11",
+      "bytes": 40099,
+      "platform_fields": {
+        "review_status": "pending_review",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team"
+      },
+      "version": 0.1,
+      "last_updated": "2026-07-13",
+      "tax_year": 2025,
+      "cta_bytes": 667,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/international/belarus/belarus-tax-optimization.md",
+      "blob": "0f6c55fc44088dce27277cbd96b67241cc2652a8",
+      "sha256": "d129405cf1b040918a8ce753b56118b3b6fffb1234e52c22d3a9de21a61e2316",
+      "bytes": 6720,
+      "platform_fields": {
+        "review_status": "pending_review",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team"
+      },
+      "version": 0.1,
+      "last_updated": "2026-07-13",
+      "tax_year": 2025,
+      "cta_bytes": 667,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "blob": "7cbce751ee8b0ea992ba7786ec18c97697936193",
+      "sha256": "e19037d4bd2d26ebcb81e429f2891dae17c05cd72ce52c7b899f49c6f255fe10",
+      "bytes": 17481,
+      "platform_fields": {
+        "review_status": "pending_review",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team"
+      },
+      "version": 2.0,
+      "last_updated": "2026-07-13",
+      "tax_year": 2025,
+      "cta_bytes": 667,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/international/belarus/by-company-formation.md",
+      "blob": "eb8ba4cfac4da7086ca48528acf655ae95757ab5",
+      "sha256": "8927e0b19ec0ac58dff7e7eccd527e8b089f8a8ebdd40b9c8219be3bd1fcb78f",
+      "bytes": 3944,
+      "platform_fields": {
+        "review_status": "pending_review",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team"
+      },
+      "version": null,
+      "last_updated": "2026-07-13",
+      "tax_year": 2025,
+      "cta_bytes": 667,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "blob": "8bcd09350292c4e81355ecdc1f26e04f86a52bf0",
+      "sha256": "c8674fa37a49ba7fc85865688e4fac492784e107cff22c9d6a50c669eb85d85e",
+      "bytes": 3487,
+      "platform_fields": {
+        "review_status": "pending_review",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team"
+      },
+      "version": null,
+      "last_updated": "2026-07-13",
+      "tax_year": 2025,
+      "cta_bytes": 667,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    },
+    {
+      "path": "skills/international/belarus/by-tax-overview.md",
+      "blob": "888a4bb84f90cb63b64015f6d37fc5274cf9ca4f",
+      "sha256": "8cd908a980888f8339926245595148447fb5079208f62ceb0b291065afbeb532",
+      "bytes": 3108,
+      "platform_fields": {
+        "review_status": "pending_review",
+        "license": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+        "trust_label": "Built by Michael Cutajar and the OpenAccountants team"
+      },
+      "version": null,
+      "last_updated": "2026-07-13",
+      "tax_year": 2025,
+      "cta_bytes": 667,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+    }
+  ]
+}

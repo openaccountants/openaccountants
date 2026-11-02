@@ -1,0 +1,137 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: 10.15.27. Por ayudas públicas concedidas por la Generalitat en virtud del Decreto Ley 3/2020
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales de ayuda a la presentación
+
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+10. Cumplimentación IRPF. Deducciones autonómicas
+
+10.15. Comunitat Valenciana
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+10.15.27. Por ayudas públicas concedidas por la Generalitat en virtud del Decreto Ley 3/2020
+
+Los contribuyentes que hayan reducido la jornada laboral por conciliación familiar con motivo de la declaración del estado de alarma por la crisis sanitaria provocada por la Covid-19 y hayan percibido ayudas públicas de la Generalitat en virtud del Decreto ley 3/2020, de 10 de abril, de adopción de medidas urgentes para establecer ayudas económicas en los trabajadores y las trabajadoras afectados por un ERTE podrán deducirse la cantidad que resulte de aplicar el tipo medio de gravamen general autonómico sobre la cuantía de las cantidades procedentes de las dichas ayudas.
+
+Cumplimentación
+
+Indicará el importe de la ayuda recibida.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 16/abril/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

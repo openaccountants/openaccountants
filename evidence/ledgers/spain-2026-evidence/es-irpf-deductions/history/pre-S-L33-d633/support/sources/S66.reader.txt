@@ -1,0 +1,167 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: 10.6.2. Por arrendamiento de vivienda habitual por jóvenes, mayores y con discapacidad 
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales de ayuda a la presentación
+
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+10. Cumplimentación IRPF. Deducciones autonómicas
+
+10.6. Cantabria
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+10.6.2. Por arrendamiento de vivienda habitual por jóvenes, mayores y con discapacidad 
+
+Cuantía
+
+El contribuyente podrá deducir el 10%, hasta un límite de 300 euros anuales de las cantidades satisfechas en el periodo impositivo por el arrendamiento de su vivienda habitual.
+
+Requisitos
+
+Tener menos de 36 años cumplidos, o tener 65 o más años. El contribuyente con discapacidad física, psíquica o sensorial que tenga la consideración legal de persona con discapacidad con un grado igual o superior al 65 % está exonerado del cumplimiento de este requisito para tener derecho a esta deducción.
+
+Las cantidades satisfechas en concepto de alquiler deben exceder del 10% de la renta del contribuyente.
+
+La deducción sólo podrá aplicarse por el o los titulares de los contratos de arrendamiento.
+
+Tributación conjunta
+
+En el caso de tributación conjunta cuando al menos uno de los declarantes reuna los requisitos enunciados anteriormente tendrá derecho a gozar de la deducción. El importe máximo de la deducción será de 600 euros.
+
+Base de la deducción
+
+La base de esta deducción estará constituida por las cantidades justificadas con factura o recibo satisfechas, mediante tarjeta de crédito o débito, transferencia ban­caria, cheque nominativo o ingreso en cuentas en enti­dades de crédito, a los arrendadores. No darán de­recho a practicar esta deducción las cantidades satisfe­chas mediante entregas de dinero en efectivo.
+
+Incompatibilidad
+
+Esta deducción es incompatible para la misma vivienda con la deducción "Por arrendamiento de viviendas situadas en municipios afectados por riesgo de despoblamiento en Cantabria que constituyan o vayan a constituir la vivienda habitual del arrendatario (deducción para el arrendatario)"
+
+Cumplimentación
+
+En la ventana se reflejarán los siguientes datos:
+
+Importe satisfecho por la persona que consta como titular en el contrato de arrendamiento.
+
+En el caso de matrimonio, cualquiera que sea su régimen económico matrimonial, si en el contrato figura sólo uno de los cónyuges será éste el que pueda aplicar la deducción. Si la renta se satisface con fondos gananciales el cónyuge titular del contrato podrá aplicar la deducción por el 50% del importe del alquiler; las cantidades satisfechas por el otro cónyuge no dan derecho a la deducción al no tener la condición de arrendatario.
+
+El NIF del arrendador. Si el arrendador no tiene NIF deberá consignar el Número de Identificación en el país de residencia.
+
+El programa trasladará los datos incluidos al anexo B.11 de la declaración.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 16/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

@@ -1,0 +1,45 @@
+{
+  "verdict": "ACCEPTED_BOUNDED_REPAIR",
+  "reviewed_commit": "6e75f698f89321470fa55245b8993d28f2bafb0b",
+  "closed_findings": [
+    {
+      "id": "LSR-1",
+      "status": "closed",
+      "reason": "Article28(1) purpose-test locator corrected in revised ledger/Markdown/build/read-scope metadata; all quote bytes unchanged"
+    },
+    {
+      "id": "LSR-2",
+      "status": "closed",
+      "reason": "Stamp penalty section now accurately points to existing s16 method and base-penalty controls, preserving exclusions/interest/day-count limits"
+    }
+  ],
+  "remaining_bounded_findings": [],
+  "ledger_rows_preserved": 29,
+  "quote_units_preserved": 46,
+  "content_preservation": "552 original lines/77 topics/14 old controls/5 added controls",
+  "stamp_guide_sha256": "0dedd5f962df8896a647cc8f5d41cdbf49843aef915ee3741723198a65ca7860",
+  "repair_ledger_sha256": "32b7d70b000a3fc580f65380f707163662d2c66ee38a9f16e46f9eecc20a02a8",
+  "repair_checkpoint_sha256": "cc1924e8ce9eae7c511bf4fadf2e47b557a15365dc44620db18739a7563f135a",
+  "current_input_manifest_sha256": "2f358bf965480af7d8c3a134fac977977931c765e4be093a05cfda787a9a12a9",
+  "new_independent_checks": [
+    "stamp skill checks10/10 pass",
+    "strict-metadata audit against b0c501e5:1 Guide,0 errors/warnings/notices"
+  ],
+  "preserved_validation_results": {
+    "tax_checks": "150/150",
+    "country_examples": "19 files/34 blocks/0 failures",
+    "changed_PR": "0 errors/31 warning groups",
+    "general_guides_shape_failures": 15,
+    "general_guides_count": 3
+  },
+  "broader_main_comparison": "recorded57 errors on20 non-Gibraltar paths against3de6616a827b5f4b3ea9707ede381a6735e5299a; normal main merge and rerun required before push",
+  "country_complete": false,
+  "partials_retained": 7,
+  "remote_checks_green_claim": false,
+  "professional_attestation": false,
+  "publication_reuse_clearance": "pending parent check",
+  "private_CAS_or_export_verified": false,
+  "narrow_README_pointer_allowance": "A narrow dated README link/status pointer may record this exact bounded closure and its limits. It must not clear partial entries, assert country completion, green remote checks, professional attestation, publication reuse clearance or untested export/CAS. No new Guide/tax copy is covered by that allowance.",
+  "reviewer": "independent Codex reviewer, not writer",
+  "guide_edits_commits_pushes_authority_contacts": false
+}

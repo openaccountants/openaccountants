@@ -1,0 +1,1082 @@
+{
+  "status": "WRITER RECONCILIATION ONLY; not independent approval or comprehensive coverage",
+  "read_on": "2026-10-30",
+  "incoming_PR": 1008,
+  "incoming_PR_url": "https://github.com/openaccountants/openaccountants/pull/1008",
+  "merged_main_commit": "6e9a13f47d6224bf2fb118a63fe604ef56802a8f",
+  "original_path": "skills/international/moldova/md-corporate-income-tax.md",
+  "incoming_file_sha256": "c3fda9d840032adae1dc311f53d5948142498c0a7cc49cc0293843efabcd8b79",
+  "incoming_file_text": "---\nname: md-corporate-income-tax\ndescription: \"Corporate income tax (impozitul pe venit for legal entities) in the Republic of Moldova for tax year 2026, under Title II of the Fiscal Code (Codul fiscal nr. 1163/1997). Covers who pays and company residence; the 12% standard rate, 7% for farms and 15% on estimated income; the 4% regime for small companies not registered for VAT; the IT park 7% single tax in outline; the tax base, the 50% capital gain inclusion, non-deductible fines, the 5% donation cap and loss carry-forward over five years; the 25 March return and the quarterly instalments; the option to pay 2023 to 2026 tax only when dividends are paid; the 12% advance on interim dividends; withholding on dividends (6%) and on payments to non-residents (12%); penalties and late-payment interest. Trigger phrases: Moldova corporate tax, impozit pe venit persoane juridice, SRL profit tax Moldova, 12% Moldova, Moldova dividend tax deferral, art. 87 alin. (11), Moldova withholding tax non-resident. Out of scope: personal income tax (moldova-income-tax), VAT (moldova-vat), payroll (moldova-payroll), contributions (moldova-social-contributions), tax planning (moldova-tax-optimization).\"\nversion: 0.1\njurisdiction: MD\ncategory: international\ntax_year: 2026\nlast_updated: 2026-10-30\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---\n\n# Moldova corporate income tax (2026)\n\nCompanies in Moldova pay income tax (impozitul pe venit) under Title II of the Fiscal Code, Codul fiscal nr. 1163/1997. The same title covers individuals, so the rules below are the ones that apply to legal entities. The tax authority is the State Tax Service (Serviciul Fiscal de Stat, SFS). Amounts are in Moldovan lei (MDL). The text used here is the consolidated Fiscal Code on legis.md as last amended by Law LP235 of 2 October 2026 (in force 30 October 2026).\n\nThe tax period is the calendar year. For a new company it runs from registration to 31 December (Fiscal Code art. 12^1(1), (2)).\n\n## Who this applies to\n\n- **Resident companies** are taxed on income from sources in Moldova and abroad (art. 13(1)(a), art. 14(1)(a)). A legal entity is resident if its activity is organised or managed in Moldova, or if Moldova is its main place of business (art. 5 pct. 5 lit. b)).\n- **Non-resident companies** are taxed on Moldovan-source income listed in art. 71, mostly by withholding (art. 91). A permanent establishment in Moldova files its own return (art. 83(2)(e)). See Cross-border points.\n- **Small companies not registered for VAT** may pay 4% on accounting income instead of 12% on profit (Fiscal Code chapter 7^1, arts. 54^1 to 54^4). Excluded: farms, individual entrepreneurs, and companies where more than 60% of last year's sales came from business and management consultancy (CAEM 70.22) (art. 54^1(1)). A company that registers for VAT moves to the standard regime from the date of VAT registration (art. 54^1(4)).\n- **IT park residents** pay a single 7% tax on monthly sales revenue instead of income tax, employer contributions and several other taxes (Fiscal Code Title X, chapter 1, arts. 368 to 373). See [moldova-tax-optimization](moldova-tax-optimization.md).\n- **Individual entrepreneurs (II) and farms** fall under the same Title II rates (art. 15(a), (c)); their personal rules are in [moldova-income-tax](moldova-income-tax.md).\n\n## Rates, bands and thresholds\n\n| Item | Rate or amount | Year | Source URL |\n|---|---|---|---|\n| Standard rate, legal entities (art. 15(b)) | 12% of taxable income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Individual entrepreneurs (art. 15(a)) | 12% of annual taxable income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Peasant (farmer) households (art. 15(c)) | 7% of taxable income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Income estimated by the SFS under arts. 225 and 225^1 (art. 15(d)) | 15% of the excess of estimated income over booked gross income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Small-company regime, not VAT-registered (art. 54^3) | 4% of accounting income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Small-company regime: ceiling on VAT-exempt supplies without deduction right (art. 54^1(3), (3^1)) | MDL 1.7 million (text in force 30 October 2026) | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| VAT registration threshold, any 12 consecutive months (art. 112(1)) | over MDL 1.7 million from 1 March 2026; over MDL 1.5 million before that date (Law LP12/2026) | 2026 | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro |\n| IT park single tax (art. 370(1), (2)) | 7% of sales revenue; minimum 30% of the forecast average monthly wage per employee per month | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Forecast average monthly wage for 2026 (Government Decision 773/2025), so IT park minimum per employee | MDL 17,400; minimum MDL 5,220 a month (30% x 17,400) | 2026 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro |\n| Capital gain included in income (art. 40(7)) | 50% of net capital gain | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Donations cap (art. 36(1)) | 5% of taxable income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Loss carry-forward (art. 32(1)) | spread over the next 5 tax periods | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Advance on interim dividends (art. 80^1(1)) | 12% of current-year profit from which dividends are paid | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Tax deferred to dividend date, profits of 2023 to 2026 (art. 87(1^1)) | up to 249 staff and turnover or total assets up to MDL 100 million | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Dividends to resident individuals, withheld (art. 90^1(3^1)) | 6% (15% on 2008 to 2011 profits) | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Dividends between resident companies (art. 20 lit. z19)) | not taxable (except 2008 to 2011 profits) | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Non-resident withholding, general (art. 91(1)) | 12% | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Non-resident withholding, dividends (art. 91(1)) | 6% (15% on 2008 to 2011 profits) | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Under-declaration fine (art. 261(4)) | 20% to 30% of the tax understated | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Evasion fine (art. 261(5)) | 80% to 100% of the tax not declared | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |\n| Late-payment interest (art. 228(3)): NBM base rate of November 2025 (6.00%, kept on 6 November 2025) + 5 points | 11% a year, charged per day (11% / 365) | 2026 | https://www.bnm.md/ro/content/raportul-asupra-inflatiei-nr-4-2025 |\n\n## The taxable base\n\n**Start point.** Gross income from all sources (art. 18), less allowed deductions and exemptions (art. 14(1)(a)). Ordinary and necessary expenses paid or incurred during the year, strictly for the business, are deductible (art. 24(1)).\n\n**Common adjustments.**\n- **Fines and penalties.** Income tax itself, fines and penalties on any tax, and fines for breaking the law are not deductible (art. 30(1)).\n- **Interest.** Interest on loans from persons other than financial-sector entities is deductible only up to the weighted average bank lending rate to companies published by the National Bank of Moldova, by term and currency (art. 25(2)).\n- **Donations.** Charitable or sponsorship donations to public bodies, non-commercial organisations, trade unions, employers' organisations and family-type children's homes are deductible up to 5% of taxable income (art. 36(1), (2)).\n- **Capital gains.** Only 50% of the net capital gain for the year (gains on capital assets minus capital losses) is taxable income (art. 18 lit. e), art. 40(7)). The gain is the amount received less the asset's cost base (art. 40(1)).\n- **Dividends received** from another Moldovan company are not taxable, except dividends from profits of 2008 to 2011 (art. 20 lit. z19)).\n- **Foreign tax** paid on income also taxed in Moldova is credited, capped at the Moldovan tax on that income, with a certificate from the foreign authority (art. 82(1), (2)).\n\n**Losses.** A tax loss is carried forward and spread over the next five tax periods; older losses are used first (art. 32(1), (3)). There is no carry-back.\n\n**Small-company regime (4%).** The base is accounting income for the year, not profit. Income listed in art. 20 and exchange-rate and amount differences are left out; returns and discounts reduce the base in the year they occur (art. 54^2). The choice is recorded in the accounting policy by 25 April, or by the 25th of the month after the quarter of registration for a new company (art. 54^1(3)). If a shareholder holds more than 25% in more than three small companies, they must pick the ones that move to the standard regime (art. 54^1(3^2)).\n\n## Deadlines and filing\n\n| What | Deadline | Source |\n|---|---|---|\n| Annual income tax return, legal entities | 25th day of the third month after year end: 25 March 2027 for 2026 | art. 83(4)(a) |\n| Balance of annual tax | same day as the return | art. 87(1) |\n| Quarterly instalments | 25 March, 25 June, 25 September, 25 December 2026; each 1/4 of this year's estimated tax or of last year's tax | art. 84(1) |\n| Farms and agricultural companies (option) | 1/4 by 25 September, 3/4 by 25 December | art. 84(2) |\n| Advance on interim dividends (12%) | 25th of the month after the dividend is paid | art. 80^1(1^1) |\n| Deferred tax under art. 87(1^1) | 25th of the month after the dividend is paid | art. 87(1^1) |\n| Tax withheld at source (dividends, non-residents) | 25th of the month after payment | art. 92(1) |\n| Annual withholding report | 25th of the month after year end: 25 January 2027 | art. 92(3) |\n| 4% regime: tax payments | quarterly, by the 25th of the month after the quarter | art. 54^4(2) |\n| 4% regime: annual report | 25 March of the following year | art. 54^4(3) |\n| IT park single tax: return and payment | monthly, by the 25th of the following month | art. 373(1), (2) |\n\nEvery resident legal entity files a return, whether or not tax is due (art. 83(2)(c)).\n\n**Deferral of tax to the dividend date (2023 to 2026 profits).** A company with at most 249 staff on the last day of the year and either turnover or total assets up to MDL 100 million may pay the tax on 2023 to 2026 profits only when it pays dividends from them (art. 87(1^1)). On each dividend payment, the tax due is the year's tax times a ratio: dividends paid (before withholding) over pre-tax accounting profit for that year, rounded to two decimals. The option is made by filing the return on time. It is not open to individual entrepreneurs, farms, free economic zone, Giurgiulești port and Mărculești airport residents, IT park residents, the 4% regime, financial and insurance companies (CAEM section K), and trade companies (section G) with more than 49 staff and turnover or assets over MDL 50 million. Companies using it do not pay quarterly instalments for 2023 to 2026 (art. 84(6)).\n\n## Penalties and interest\n\n- **Late payment interest** accrues for each day of delay (art. 228(2)). The yearly rate is the National Bank of Moldova base rate set in November of the previous year, rounded up to the next whole percent, plus 5 points, divided by the days in the year (art. 228(3)). On 6 November 2025 the National Bank kept its base rate at 6.00% a year, so for 2026 the rate is 6% + 5 points = 11% a year, or 11% / 365 for each day of delay (NBM, Inflation Report no. 4, 2025).\n- **Instalments.** Unpaid or short instalments are fined by applying the art. 228(3) rate from the instalment date to the filing date. The shortfall is measured against the smaller of last year's tax and 80% of this year's final tax, less credits (art. 261(6)).\n- **Wrong or late return.** MDL 500 to 1,000 per return for companies, capped at MDL 10,000 for all returns (art. 260(1), contributors under art. 232 lit. a) and c)).\n- **Under-declaration.** Understating tax in a return with untrue data: 20% to 30% of the amount understated. No fine if the company files a corrected return itself under art. 188 (art. 261(4), (4^1)).\n- **Evasion.** Avoiding calculation and payment: 80% to 100% of the tax not declared (art. 261(5)).\n- **Deferral regime.** Understating taxable income while using the art. 87(1^1) deferral: MDL 1,000 to 10,000 (art. 260(6)).\n\n## Cross-border points\n\n- **Withholding on payments to non-residents.** 12% on Moldovan-source income in art. 71: management and consultancy services bought by a resident wherever performed, other services in Moldova, interest, royalties, rent, insurance premiums, transport, commissions and more. Sales of goods are excluded (art. 91(1), art. 71(1)). Dividends: 6% (art. 91(1), art. 71(1) lit. e)). Income of a non-resident's permanent establishment is not withheld; the PE files a return (art. 91(2)(a), art. 83(2)(e)).\n- **Treaties.** A double tax treaty overrides the Fiscal Code, and the more favourable rate applies (art. 79^3(1)). Check the treaty and its documentation rules before paying at a reduced rate.\n- **Foreign tax credit.** Capped at the Moldovan tax on the same income (art. 82(2)).\n- **Transfer pricing and permanent establishment rules** are covered in md-transfer-pricing and md-cross-border, which are in review (PR #793).\n\n## Worked examples\n\n### Example 1: SRL on the standard regime, 2026\n\nA Chișinău SRL, VAT-registered, has accounting profit of MDL 900,000 for 2026. The profit includes a MDL 15,000 tax fine and an MDL 80,000 gain on selling shares it held in another company. It has no capital losses. Its 2025 tax was MDL 96,000, and it paid four instalments of MDL 24,000 in 2026 (1/4 of last year's tax, art. 84(1)(b)).\n\nThe fine is added back (art. 30(1)). Only 50% of the capital gain is taxable (art. 40(7)), so MDL 40,000 comes off. Taxable income is 900,000 + 15,000 - 40,000 = MDL 875,000. Tax at 12% (art. 15(b)) is MDL 105,000. Instalments paid were MDL 96,000, so MDL 9,000 is due with the return by 25 March 2027 (arts. 83(4)(a), 87(1)). There is no instalment fine: the company had to pay the smaller of last year's tax (MDL 96,000) and 80% of this year's tax (MDL 84,000), so MDL 84,000, and it paid MDL 96,000 (art. 261(6)).\n\n```oa-check\nname: Moldovan SRL 2026, fine add-back and 50% capital gain\ninputs:\n  accounting_profit: 900000\n  fine: 15000\n  capital_gain: 80000\n  tax_2025: 96000\nsteps:\n  - gain_excluded: capital_gain * 0.50\n  - taxable_income: accounting_profit + fine - gain_excluded\n  - tax: taxable_income * 0.12\n  - instalment: tax_2025 / 4\n  - instalments_paid: instalment * 4\n  - balance_due: tax - instalments_paid\n  - instalments_required: min(tax_2025, tax * 0.80)\n  - instalment_shortfall: max(0, instalments_required - instalments_paid)\nexpected:\n  taxable_income: 875000.00\n  tax: 105000.00\n  instalment: 24000.00\n  balance_due: 9000.00\n  instalments_required: 84000.00\n  instalment_shortfall: 0.00\n```\n\n### Example 2: tax deferred until dividends (art. 87(1^1))\n\nAn SRL with 20 staff and MDL 30 million turnover opts for the deferral by filing its 2026 return on time. Its 2026 taxable income is MDL 500,000, so the 2026 tax is MDL 60,000. Pre-tax accounting profit for 2026 is MDL 540,000. It paid no quarterly instalments (art. 84(6)). In June 2027 it pays a dividend of MDL 200,000 from 2026 profit to its sole shareholder, a resident individual.\n\nThe ratio is 200,000 / 540,000 = 0.370..., rounded to 0.37. Tax due on this payment is 60,000 x 0.37 = MDL 22,200, payable by 25 July 2027 (art. 87(1^1)). The company also withholds 6% from the dividend, MDL 12,000, payable by the same date (arts. 90^1(3^1), 92(1)). MDL 37,800 of the 2026 tax stays deferred until later dividends.\n\n```oa-check\nname: Moldovan SRL, 2026 tax deferred to a 2027 dividend\ninputs:\n  tax_2026: 60000\n  pretax_profit_2026: 540000\n  dividend_gross: 200000\nsteps:\n  - ratio: round(dividend_gross / pretax_profit_2026, 2)\n  - cit_due_now: tax_2026 * ratio\n  - dividend_wht: dividend_gross * 0.06\n  - cit_still_deferred: tax_2026 - cit_due_now\nexpected:\n  ratio: 0.37\n  cit_due_now: 22200.00\n  dividend_wht: 12000.00\n  cit_still_deferred: 37800.00\n```\n\n## Ask the client first\n\n1. Is the company registered for VAT, an IT park resident, or on the 4% regime? Each one changes the tax entirely.\n2. On 31 December 2026, how many staff, what turnover and what total assets? This decides whether the art. 87(1^1) deferral is open.\n3. Will it pay dividends, interim or final, and to whom (resident individuals, Moldovan companies, non-residents)?\n4. What was last year's tax, and what instalments have been paid?\n5. Does it pay non-residents for services, interest, royalties or rent, and does a treaty apply?\n6. Does it have tax losses from 2021 to 2025, or capital gains or losses this year?\n\n## Sources\n\n| Source | URL | Read on |\n|---|---|---|\n| Codul fiscal nr. 1163/1997, consolidated to LP235/2026 (in force 30.10.2026): arts. 5 pct. 5, 12^1, 13, 14, 15, 18, 20 lit. z19), 24, 25, 30, 32, 36, 40, 54^1 to 54^4, 71, 79^3, 80^1, 82, 83, 84, 87, 90^1, 91, 92, 112, 228, 260, 261, 368 to 373 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |\n| Codul fiscal nr. 1163/1997, 2025 version (to LP227/2025, in force 30.12.2025): art. 112(1) and art. 54^1 read MDL 1.2 million | https://www.legis.md/cautare/getResults?doc_id=152857&lang=ro | 2026-10-30 |\n| Law LP12 of 19 February 2026 amending art. 112 (MDL 1.5 million to MDL 1.7 million, in force 1 March 2026) | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro | 2026-10-30 |\n| Government Decision 773 of 17 December 2025: forecast average monthly wage for 2026, MDL 17,400 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro | 2026-10-30 |\n| National Bank of Moldova, Inflation Report no. 4, 2025 (base rate kept at 6.00% on 6 November 2025) | https://www.bnm.md/ro/content/raportul-asupra-inflatiei-nr-4-2025 | 2026-10-30 |\n\nNot yet confirmed: the date from which the MDL 1.7 million figure in art. 54^1(3), (3^1) applies (the text in force on 30 December 2025 said MDL 1.2 million; the amending act was not found); whether the five-year loss spread caps each year at one fifth (art. 32 says \"eşalonat\", spread out, and art. 32(2) is unclear); treaty withholding rates (the old version gave 0% to 5% on dividends and 0% to 10% on interest and royalties from a secondary source; no treaty text was read) and the treaty documentation rules in art. 79^3(2); depreciation rules (art. 26^1, not read); any changes in force from 2027 shown on legis.md.\n\n<!-- openaccountants-cta-block -->\n\n---\n\n## Talk to a verified accountant\n\nThis guide is maintained by the OpenAccountants network — accountants who put\ntheir name behind the tax answers AI gives people. The live, always-current\nversion (and the professional behind it) is at\n[openaccountants.com](https://www.openaccountants.com).\n\n- Use it in your AI: https://www.openaccountants.com/connect\n- Meet the accountants: https://www.openaccountants.com/network\n\n> **General reference only.** This document does not constitute tax, legal, or\n> financial advice. Verify figures against the cited primary sources or with a\n> licensed professional before relying on them.\n",
+  "current_Guide_sha256": "2c774e296d4796eaa223775b232237bad68cb7c06088ffa73f55c82c9709bdcd",
+  "incoming_pre_CTA_units": 95,
+  "old_topic_destinations": [
+    {
+      "id": "MD-PUBLIC1008-001",
+      "incoming_section": "Front matter",
+      "original_text": "---\n\nname: md-corporate-income-tax\ndescription: \"Corporate income tax (impozitul pe venit for legal entities) in the Republic of Moldova for tax year 2026, under Title II of the Fiscal Code (Codul fiscal nr. 1163/1997). Covers who pays and company residence; the 12% standard rate, 7% for farms and 15% on estimated income; the 4% regime for small companies not registered for VAT; the IT park 7% single tax in outline; the tax base, the 50% capital gain inclusion, non-deductible fines, the 5% donation cap and loss carry-forward over five years; the 25 March return and the quarterly instalments; the option to pay 2023 to 2026 tax only when dividends are paid; the 12% advance on interim dividends; withholding on dividends (6%) and on payments to non-residents (12%); penalties and late-payment interest. Trigger phrases: Moldova corporate tax, impozit pe venit persoane juridice, SRL profit tax Moldova, 12% Moldova, Moldova dividend tax deferral, art. 87 alin. (11), Moldova withholding tax non-resident. Out of scope: personal income tax (moldova-income-tax), VAT (moldova-vat), payroll (moldova-payroll), contributions (moldova-social-contributions), tax planning (moldova-tax-optimization).\"\nversion: 0.1\njurisdiction: MD\ncategory: international\ntax_year: 2026\nlast_updated: 2026-10-30\nreview_status: pending_review\ntrust_label: Built by Michael Cutajar and the OpenAccountants team\ntier: 2\nlicense: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)\n---",
+      "unit_sha256": "a1ac879b4fa7b20dbb8480b2d6e63803a3562f65a309be44e028bb443864103c",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base: Company disposals and the individual capital-gain boundary"
+      ],
+      "writer_disposition": "CORRECTED: art37 restricts art40(7)to nonbusinessindividuals; residentSRLdoesnotexclude50%ofgain. Art18reference readwith37; nonresidentlegalentityart71(1)(d)references40(1)-(4),not7.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-002",
+      "incoming_section": "Front matter",
+      "original_text": "# Moldova corporate income tax (2026)",
+      "unit_sha256": "11f71470654e9eb6533bc1c466be0fb4f4b6ad4e87fbd8ab28c86f58edf211a2",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Front matter"
+      ],
+      "writer_disposition": "Metadata remains a source-cited 2026 writer draft; version0.6 supersedes incoming0.1; protected trust/license/category fields and exact CTA preserved. Description does not repeat incorrect company50%scope.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-003",
+      "incoming_section": "Front matter",
+      "original_text": "Companies in Moldova pay income tax (impozitul pe venit) under Title II of the Fiscal Code, Codul fiscal nr. 1163/1997. The same title covers individuals, so the rules below are the ones that apply to legal entities. The tax authority is the State Tax Service (Serviciul Fiscal de Stat, SFS). Amounts are in Moldovan lei (MDL). The text used here is the consolidated Fiscal Code on legis.md as last amended by Law LP235 of 2 October 2026 (in force 30 October 2026).",
+      "unit_sha256": "8d0676b165c3d9f855dee8bb5c6e923e775bb442b749236f2666c8ffefe8a765",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Front matter"
+      ],
+      "writer_disposition": "Metadata remains a source-cited 2026 writer draft; version0.6 supersedes incoming0.1; protected trust/license/category fields and exact CTA preserved. Description does not repeat incorrect company50%scope.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-004",
+      "incoming_section": "Front matter",
+      "original_text": "The tax period is the calendar year. For a new company it runs from registration to 31 December (Fiscal Code art. 12^1(1), (2)).",
+      "unit_sha256": "4eb8384d8fa571c016359ba69275534ca22efa1a7a9402bcb7566a18f38114a6",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Front matter"
+      ],
+      "writer_disposition": "Metadata remains a source-cited 2026 writer draft; version0.6 supersedes incoming0.1; protected trust/license/category fields and exact CTA preserved. Description does not repeat incorrect company50%scope.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-005",
+      "incoming_section": "Who this applies to",
+      "original_text": "## Who this applies to",
+      "unit_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Who this applies to"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-006",
+      "incoming_section": "Who this applies to",
+      "original_text": "- **Resident companies** are taxed on income from sources in Moldova and abroad (art. 13(1)(a), art. 14(1)(a)). A legal entity is resident if its activity is organised or managed in Moldova, or if Moldova is its main place of business (art. 5 pct. 5 lit. b)).",
+      "unit_sha256": "7881ffb54b2c02631cd899bc2da011ade70f7be186a0aad8a4d52abc89e0200b",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Who this applies to"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-007",
+      "incoming_section": "Who this applies to",
+      "original_text": "- **Non-resident companies** are taxed on Moldovan-source income listed in art. 71, mostly by withholding (art. 91). A permanent establishment in Moldova files its own return (art. 83(2)(e)). See Cross-border points.",
+      "unit_sha256": "76a77727c8ae8d987138551996db7ed102f201908f19ba71f533773d2674be1f",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Who this applies to"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-008",
+      "incoming_section": "Who this applies to",
+      "original_text": "- **Small companies not registered for VAT** may pay 4% on accounting income instead of 12% on profit (Fiscal Code chapter 7^1, arts. 54^1 to 54^4). Excluded: farms, individual entrepreneurs, and companies where more than 60% of last year's sales came from business and management consultancy (CAEM 70.22) (art. 54^1(1)). A company that registers for VAT moves to the standard regime from the date of VAT registration (art. 54^1(4)).",
+      "unit_sha256": "cdf77662fb31b7828ac4581d967cdc8ee23453c9b34b7f967a44b49283ccb855",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Who this applies to"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-009",
+      "incoming_section": "Who this applies to",
+      "original_text": "- **IT park residents** pay a single 7% tax on monthly sales revenue instead of income tax, employer contributions and several other taxes (Fiscal Code Title X, chapter 1, arts. 368 to 373). See [moldova-tax-optimization](moldova-tax-optimization.md).",
+      "unit_sha256": "ab6d065c2e7668277c2457ad30e0b0265ae3f4cd0b3c26946307969221d9763f",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Who this applies to",
+        "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+        "skills/international/moldova/moldova-tax-optimization.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending. Full ITpark7%/5220minimum/17400forecast/filing method retained in country planning Guide; eligibility and included/excluded taxes are conditional.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-010",
+      "incoming_section": "Who this applies to",
+      "original_text": "- **Individual entrepreneurs (II) and farms** fall under the same Title II rates (art. 15(a), (c)); their personal rules are in [moldova-income-tax](moldova-income-tax.md).",
+      "unit_sha256": "ceaf95e055893998593081fe72fe4e25c38d540aa8bd90c9542140ba885ae9b8",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Who this applies to"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-011",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "## Rates, bands and thresholds",
+      "unit_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-012",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Item | Rate or amount | Year | Source URL |",
+      "unit_sha256": "a30a414c6210bef866fd025d9e03990ac8982a471ae8272aa5926159337090bd",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-013",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Standard rate, legal entities (art. 15(b)) | 12% of taxable income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "2192192a383932436afed4a07aa13abf84941684cc9d5793bd8c85799aeb5b84",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-014",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Individual entrepreneurs (art. 15(a)) | 12% of annual taxable income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "41be42e658cbfe303839d429563321f617d9d3537d5258a82ef0fa5bbb441bab",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-015",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Peasant (farmer) households (art. 15(c)) | 7% of taxable income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "94dc4a8a5875bb1656480d738034268d862c406c3770d48633b254b48b8edd8b",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-016",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Income estimated by the SFS under arts. 225 and 225^1 (art. 15(d)) | 15% of the excess of estimated income over booked gross income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "be8739fef8163085228640035665ce702616f269d03f06b021f0d76ad6efaaa8",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-017",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Small-company regime, not VAT-registered (art. 54^3) | 4% of accounting income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "a72ae98f588fc0fa5649e453ba3e0ae7985b8a8d363788fa44b40682325f097d",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-018",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Small-company regime: ceiling on VAT-exempt supplies without deduction right (art. 54^1(3), (3^1)) | MDL 1.7 million (text in force 30 October 2026) | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "1a068acdaad0b2a2c6afd75e3a1f7977f2b8291925a6e124160328529fa31a8b",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-019",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| VAT registration threshold, any 12 consecutive months (art. 112(1)) | over MDL 1.7 million from 1 March 2026; over MDL 1.5 million before that date (Law LP12/2026) | 2026 | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro |",
+      "unit_sha256": "11a985c82d4b8991467fc4c60731a787692557bad2846bb832f3102719b6c900",
+      "destination": [
+        "skills/international/moldova/moldova-vat.md#Who this applies to",
+        "skills/international/moldova/moldova-vat.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "VAT January1.5m/March1.7m retained in VATGuide; distinct SME54^1threshold starts27MarchunderLaw41,now explicitly sourced rather than unresolved.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-020",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| IT park single tax (art. 370(1), (2)) | 7% of sales revenue; minimum 30% of the forecast average monthly wage per employee per month | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "accf6a50d1adfcb7ecf5b036ec4cf1a738aa5acf5ae0a4d35ec570f18ea8a499",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds",
+        "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+        "skills/international/moldova/moldova-tax-optimization.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending. Full ITpark7%/5220minimum/17400forecast/filing method retained in country planning Guide; eligibility and included/excluded taxes are conditional.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-021",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Forecast average monthly wage for 2026 (Government Decision 773/2025), so IT park minimum per employee | MDL 17,400; minimum MDL 5,220 a month (30% x 17,400) | 2026 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro |",
+      "unit_sha256": "5fd52ab8a2200e9432a1a90d4d093a6c5c6af58f4f618441246f825d41390720",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds",
+        "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+        "skills/international/moldova/moldova-tax-optimization.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending. Full ITpark7%/5220minimum/17400forecast/filing method retained in country planning Guide; eligibility and included/excluded taxes are conditional.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-022",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Capital gain included in income (art. 40(7)) | 50% of net capital gain | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "7c177e7ab07024087c1276d2910b187c52371c3dff3f03bcb230184eaf63a30b",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base: Company disposals and the individual capital-gain boundary"
+      ],
+      "writer_disposition": "CORRECTED: art37 restricts art40(7)to nonbusinessindividuals; residentSRLdoesnotexclude50%ofgain. Art18reference readwith37; nonresidentlegalentityart71(1)(d)references40(1)-(4),not7.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-023",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Donations cap (art. 36(1)) | 5% of taxable income | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "2e37f7f1b35c408498717c7a1aae61e695d89e53045f64fbd68788870f885763",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-024",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Loss carry-forward (art. 32(1)) | spread over the next 5 tax periods | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "f321828e6e28b86856a364dc30d6e440d372a34bcf0764b5b67efe55d9f4c684",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-025",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Advance on interim dividends (art. 80^1(1)) | 12% of current-year profit from which dividends are paid | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "ec7cdbf961c80ef3dceb2e5397ed7d5a887b1cbddb56c0f9e828b05cdc26a98a",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-026",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Tax deferred to dividend date, profits of 2023 to 2026 (art. 87(1^1)) | up to 249 staff and turnover or total assets up to MDL 100 million | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "ff1f30cdfea507b6577f7652883b7049364abf6e3570e8a0d3e23a4fdfb8aef4",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-027",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Dividends to resident individuals, withheld (art. 90^1(3^1)) | 6% (15% on 2008 to 2011 profits) | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "e1adb7ce990d17dbd4f392f8c4c6ca5a919171e7f502f6a44891536e4c300088",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-028",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Dividends between resident companies (art. 20 lit. z19)) | not taxable (except 2008 to 2011 profits) | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "06d6a49f5691cef08cc17540459a657d9f9fe03a4cff820249e9cde701527d00",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-029",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Non-resident withholding, general (art. 91(1)) | 12% | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "8c82afece7c589ee41deeb31b2f211eaa10413fb6deb4c5260f8dae82b3d7466",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-030",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Non-resident withholding, dividends (art. 91(1)) | 6% (15% on 2008 to 2011 profits) | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "41e46ba392fd145f42c4bcbc85a50d6e55c64cfecedaf58eaa54c52684cbd416",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-031",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Under-declaration fine (art. 261(4)) | 20% to 30% of the tax understated | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "35c8797de1327bf4ba36a7a445f829633f999299d7308c1192b448330423fcc1",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-032",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Evasion fine (art. 261(5)) | 80% to 100% of the tax not declared | 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro |",
+      "unit_sha256": "b0c4f7ac924a65305acd9ac784fbecaf3c8905a2dc26876184b06e53f259a5eb",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-033",
+      "incoming_section": "Rates, bands and thresholds",
+      "original_text": "| Late-payment interest (art. 228(3)): NBM base rate of November 2025 (6.00%, kept on 6 November 2025) + 5 points | 11% a year, charged per day (11% / 365) | 2026 | https://www.bnm.md/ro/content/raportul-asupra-inflatiei-nr-4-2025 |",
+      "unit_sha256": "2fb53798a029eef58426de6d9727295c38a866e78a6ce6f34d33435ffde16759",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Rates, bands and thresholds"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-034",
+      "incoming_section": "The taxable base",
+      "original_text": "## The taxable base",
+      "unit_sha256": "1922c5897a17fa48bb320a158b52f374f76325b7c4d357ef1fa639f050317119",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-035",
+      "incoming_section": "The taxable base",
+      "original_text": "**Start point.** Gross income from all sources (art. 18), less allowed deductions and exemptions (art. 14(1)(a)). Ordinary and necessary expenses paid or incurred during the year, strictly for the business, are deductible (art. 24(1)).",
+      "unit_sha256": "5de79f769aac39229093060170c3d15aa71df1bcfc74ec120ca6b90fbb655176",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-036",
+      "incoming_section": "The taxable base",
+      "original_text": "**Common adjustments.**",
+      "unit_sha256": "b2d22b8dc80e7c63c6751497891ed0a875ab1ab75ad845a55284de64bc62f72c",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-037",
+      "incoming_section": "The taxable base",
+      "original_text": "- **Fines and penalties.** Income tax itself, fines and penalties on any tax, and fines for breaking the law are not deductible (art. 30(1)).",
+      "unit_sha256": "da0395fe3278b53075f5c09fc608fed05740ae26aa6fc9aba853a5495fc1289d",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-038",
+      "incoming_section": "The taxable base",
+      "original_text": "- **Interest.** Interest on loans from persons other than financial-sector entities is deductible only up to the weighted average bank lending rate to companies published by the National Bank of Moldova, by term and currency (art. 25(2)).",
+      "unit_sha256": "a1fb8a0e03d7976ff72b599425d564929ed6e6fd7d0cd07b8b37a2d0e7617335",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-039",
+      "incoming_section": "The taxable base",
+      "original_text": "- **Donations.** Charitable or sponsorship donations to public bodies, non-commercial organisations, trade unions, employers' organisations and family-type children's homes are deductible up to 5% of taxable income (art. 36(1), (2)).",
+      "unit_sha256": "c9615e8ba25f067f384f558cb29df88e093bbfdcb66d534026a506abd5e130ad",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-040",
+      "incoming_section": "The taxable base",
+      "original_text": "- **Capital gains.** Only 50% of the net capital gain for the year (gains on capital assets minus capital losses) is taxable income (art. 18 lit. e), art. 40(7)). The gain is the amount received less the asset's cost base (art. 40(1)).",
+      "unit_sha256": "982781cb4675eb92fa763e164ebd766ee4745aefced4bfb96d958582d062789f",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base: Company disposals and the individual capital-gain boundary"
+      ],
+      "writer_disposition": "CORRECTED: art37 restricts art40(7)to nonbusinessindividuals; residentSRLdoesnotexclude50%ofgain. Art18reference readwith37; nonresidentlegalentityart71(1)(d)references40(1)-(4),not7.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-041",
+      "incoming_section": "The taxable base",
+      "original_text": "- **Dividends received** from another Moldovan company are not taxable, except dividends from profits of 2008 to 2011 (art. 20 lit. z19)).",
+      "unit_sha256": "47d0299f73e3f409438cb70e9d041381850a93294f509a3e6bb5b30eb31f5db2",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-042",
+      "incoming_section": "The taxable base",
+      "original_text": "- **Foreign tax** paid on income also taxed in Moldova is credited, capped at the Moldovan tax on that income, with a certificate from the foreign authority (art. 82(1), (2)).",
+      "unit_sha256": "29073f893e938f23cfa34b6fb329a2486d3aea669cd83fec445e761b6cb919ea",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-043",
+      "incoming_section": "The taxable base",
+      "original_text": "**Losses.** A tax loss is carried forward and spread over the next five tax periods; older losses are used first (art. 32(1), (3)). There is no carry-back.",
+      "unit_sha256": "5de42fec11f05945283298a3e6754adf48fd62630a571a6934d494fd714e06cc",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-044",
+      "incoming_section": "The taxable base",
+      "original_text": "**Small-company regime (4%).** The base is accounting income for the year, not profit. Income listed in art. 20 and exchange-rate and amount differences are left out; returns and discounts reduce the base in the year they occur (art. 54^2). The choice is recorded in the accounting policy by 25 April, or by the 25th of the month after the quarter of registration for a new company (art. 54^1(3)). If a shareholder holds more than 25% in more than three small companies, they must pick the ones that move to the standard regime (art. 54^1(3^2)).",
+      "unit_sha256": "7b16a4704b3bc6f6a7b8014d45a5dcc901dc4790920ff25fab255dc397091a24",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-045",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "## Deadlines and filing",
+      "unit_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-046",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "| What | Deadline | Source |",
+      "unit_sha256": "b79f95448fcd7bfded46570692dd768f064f7222f977137770febab375a301a8",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-047",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "| Annual income tax return, legal entities | 25th day of the third month after year end: 25 March 2027 for 2026 | art. 83(4)(a) |",
+      "unit_sha256": "10ab482df3208f00983efdd43e634a7dbc7a633432203851ba71eb573911ad35",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-048",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "| Balance of annual tax | same day as the return | art. 87(1) |",
+      "unit_sha256": "3997e9391478bf2a999363071c4b82df788aa7e47a7bfb5f66deb43e945c71ed",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-049",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "| Quarterly instalments | 25 March, 25 June, 25 September, 25 December 2026; each 1/4 of this year's estimated tax or of last year's tax | art. 84(1) |",
+      "unit_sha256": "67321e398a50744bad5b50c07b8de6e63269354503fa0a419e6708b0bd356235",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-050",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "| Farms and agricultural companies (option) | 1/4 by 25 September, 3/4 by 25 December | art. 84(2) |",
+      "unit_sha256": "2abdefa7fd18c677db874dbf5763749651584243e0c79fed0c13370fc8a0ce36",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-051",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "| Advance on interim dividends (12%) | 25th of the month after the dividend is paid | art. 80^1(1^1) |",
+      "unit_sha256": "cbdb942f1b8e0d28a20d4d1703ae330a63e1b9859b8176111b49c0bb5ad27ce6",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-052",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "| Deferred tax under art. 87(1^1) | 25th of the month after the dividend is paid | art. 87(1^1) |",
+      "unit_sha256": "4a825fb8db12778a18fad168e97bf4fde740522112950155baeae025472bf110",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-053",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "| Tax withheld at source (dividends, non-residents) | 25th of the month after payment | art. 92(1) |",
+      "unit_sha256": "8ace8c82b920a225b920137288553b2534963e55aadaa6d9d919ac2e95eba27b",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-054",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "| Annual withholding report | 25th of the month after year end: 25 January 2027 | art. 92(3) |",
+      "unit_sha256": "340ef79dec7671f051471e5ae032f8d49d95fdc64278042499326e4df1763607",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-055",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "| 4% regime: tax payments | quarterly, by the 25th of the month after the quarter | art. 54^4(2) |",
+      "unit_sha256": "d0b554fdbc1a7e8aecb9d966a20056617bd0494085b3ee118bfa34c50c4db070",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-056",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "| 4% regime: annual report | 25 March of the following year | art. 54^4(3) |",
+      "unit_sha256": "0f4b86c8d2b149a0f2c2cb8f2cb8277f66f8cac02c5466ee8a4f5ee74bac41b5",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-057",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "| IT park single tax: return and payment | monthly, by the 25th of the following month | art. 373(1), (2) |",
+      "unit_sha256": "004f6ca8a8dd335ed8124d4a57c478c4c217be96e73f889b77841566ff4f7080",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing",
+        "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+        "skills/international/moldova/moldova-tax-optimization.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending. Full ITpark7%/5220minimum/17400forecast/filing method retained in country planning Guide; eligibility and included/excluded taxes are conditional.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-058",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "Every resident legal entity files a return, whether or not tax is due (art. 83(2)(c)).",
+      "unit_sha256": "fc342e5bc05aa4a8b72141549f4188ebb5a25699ae6a36c2deb9a2b488648fc5",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-059",
+      "incoming_section": "Deadlines and filing",
+      "original_text": "**Deferral of tax to the dividend date (2023 to 2026 profits).** A company with at most 249 staff on the last day of the year and either turnover or total assets up to MDL 100 million may pay the tax on 2023 to 2026 profits only when it pays dividends from them (art. 87(1^1)). On each dividend payment, the tax due is the year's tax times a ratio: dividends paid (before withholding) over pre-tax accounting profit for that year, rounded to two decimals. The option is made by filing the return on time. It is not open to individual entrepreneurs, farms, free economic zone, Giurgiulești port and Mărculești airport residents, IT park residents, the 4% regime, financial and insurance companies (CAEM section K), and trade companies (section G) with more than 49 staff and turnover or assets over MDL 50 million. Companies using it do not pay quarterly instalments for 2023 to 2026 (art. 84(6)).",
+      "unit_sha256": "f389fb2c43895478382b2e0f7177a633b62dd351ba856c6fe3004147aca7bbb8",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Deadlines and filing",
+        "skills/international/moldova/moldova-tax-optimization.md#Rates, bands and thresholds",
+        "skills/international/moldova/moldova-tax-optimization.md#The base"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending. Full ITpark7%/5220minimum/17400forecast/filing method retained in country planning Guide; eligibility and included/excluded taxes are conditional.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-060",
+      "incoming_section": "Penalties and interest",
+      "original_text": "## Penalties and interest",
+      "unit_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Penalties and interest"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-061",
+      "incoming_section": "Penalties and interest",
+      "original_text": "- **Late payment interest** accrues for each day of delay (art. 228(2)). The yearly rate is the National Bank of Moldova base rate set in November of the previous year, rounded up to the next whole percent, plus 5 points, divided by the days in the year (art. 228(3)). On 6 November 2025 the National Bank kept its base rate at 6.00% a year, so for 2026 the rate is 6% + 5 points = 11% a year, or 11% / 365 for each day of delay (NBM, Inflation Report no. 4, 2025).",
+      "unit_sha256": "3e94f5552d03b25be9a6f95c46342bd3bca2bb9da2a1d3debacc29273a86f439",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Penalties and interest"
+      ],
+      "writer_disposition": "Dailyamountcorrectedandexpanded:Code228requiresdaily-percentage4decimalrounding,giving0.0301%in2026. DirectBNM6November2025decisionread;existingroundedratecontrolspreserved.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-062",
+      "incoming_section": "Penalties and interest",
+      "original_text": "- **Instalments.** Unpaid or short instalments are fined by applying the art. 228(3) rate from the instalment date to the filing date. The shortfall is measured against the smaller of last year's tax and 80% of this year's final tax, less credits (art. 261(6)).",
+      "unit_sha256": "f0fda0e50d46e66907683795860964fed91ff9e31907fe540f1272ba3312b06f",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Penalties and interest"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-063",
+      "incoming_section": "Penalties and interest",
+      "original_text": "- **Wrong or late return.** MDL 500 to 1,000 per return for companies, capped at MDL 10,000 for all returns (art. 260(1), contributors under art. 232 lit. a) and c)).",
+      "unit_sha256": "c27f157ea412181fb37f31aa7e25fcd82235020f2ce0eb6f85f08536df0ff3b4",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Penalties and interest"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-064",
+      "incoming_section": "Penalties and interest",
+      "original_text": "- **Under-declaration.** Understating tax in a return with untrue data: 20% to 30% of the amount understated. No fine if the company files a corrected return itself under art. 188 (art. 261(4), (4^1)).",
+      "unit_sha256": "d4dd75944738f06fa6e8125cadfa029c9568e093b068163849b8d8d55973b152",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Penalties and interest"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-065",
+      "incoming_section": "Penalties and interest",
+      "original_text": "- **Evasion.** Avoiding calculation and payment: 80% to 100% of the tax not declared (art. 261(5)).",
+      "unit_sha256": "1f1824b12c078868284507da3e7006c66adabf417717ae6d25d1802142d1f3d2",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Penalties and interest"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-066",
+      "incoming_section": "Penalties and interest",
+      "original_text": "- **Deferral regime.** Understating taxable income while using the art. 87(1^1) deferral: MDL 1,000 to 10,000 (art. 260(6)).",
+      "unit_sha256": "2e974a26c963ddc1c5e7a8c72afdd787ae48aa1b189f428ce8786d6baeca475a",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Penalties and interest"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-067",
+      "incoming_section": "Cross-border points",
+      "original_text": "## Cross-border points",
+      "unit_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Cross-border points"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-068",
+      "incoming_section": "Cross-border points",
+      "original_text": "- **Withholding on payments to non-residents.** 12% on Moldovan-source income in art. 71: management and consultancy services bought by a resident wherever performed, other services in Moldova, interest, royalties, rent, insurance premiums, transport, commissions and more. Sales of goods are excluded (art. 91(1), art. 71(1)). Dividends: 6% (art. 91(1), art. 71(1) lit. e)). Income of a non-resident's permanent establishment is not withheld; the PE files a return (art. 91(2)(a), art. 83(2)(e)).",
+      "unit_sha256": "772e250abbe4d95125558892db50591216e727d0b6c8713a1dc9ad9e1e67da47",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Cross-border points"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-069",
+      "incoming_section": "Cross-border points",
+      "original_text": "- **Treaties.** A double tax treaty overrides the Fiscal Code, and the more favourable rate applies (art. 79^3(1)). Check the treaty and its documentation rules before paying at a reduced rate.",
+      "unit_sha256": "126aac69ebb57d4962b8566f613d314d0fb105de5f2b7fc20c9e5bafadc2a67d",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Cross-border points"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-070",
+      "incoming_section": "Cross-border points",
+      "original_text": "- **Foreign tax credit.** Capped at the Moldovan tax on the same income (art. 82(2)).",
+      "unit_sha256": "b5cde7891b982b5f1180c6c0ee731111631ff3ef47e44f9ffd3a2efcc1d3a407",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Cross-border points"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-071",
+      "incoming_section": "Cross-border points",
+      "original_text": "- **Transfer pricing and permanent establishment rules** are covered in md-transfer-pricing and md-cross-border, which are in review (PR #793).",
+      "unit_sha256": "0d8338f760bf074d9de91e906735e6c6439d05b44c28cd5b4bead3b97b58587c",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Cross-border points"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-072",
+      "incoming_section": "Worked examples",
+      "original_text": "## Worked examples",
+      "unit_sha256": "24306288984cfa636de0ac24a9833561c7e6c3cb47df7023c1903f57c3720a9b",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Two worked examples that recompute",
+        "ledgers/md-country-evidence/corporate-expense-procedure-controls.md#Resident company disposal: repair the subsequently merged example's scope"
+      ],
+      "writer_disposition": "Exact incoming example retained below as predecessor evidence. Example1company50%exclusion corrected in separate source control:915000base/109800tax/13800balance/4800understatement. ExistingtwoGuidecases preserved. Example2deferral retained only as incoming arithmetic, not certified: origin-year denominator/rounding/form implementation remain an explicit gap.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-073",
+      "incoming_section": "Worked examples",
+      "original_text": "### Example 1: SRL on the standard regime, 2026",
+      "unit_sha256": "ada3ae12053a4efe21e8ec04eef477ee139060933886f3c32dbcfc5b5f2abe17",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Two worked examples that recompute",
+        "ledgers/md-country-evidence/corporate-expense-procedure-controls.md#Resident company disposal: repair the subsequently merged example's scope"
+      ],
+      "writer_disposition": "Exact incoming example retained below as predecessor evidence. Example1company50%exclusion corrected in separate source control:915000base/109800tax/13800balance/4800understatement. ExistingtwoGuidecases preserved. Example2deferral retained only as incoming arithmetic, not certified: origin-year denominator/rounding/form implementation remain an explicit gap.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-074",
+      "incoming_section": "Worked examples",
+      "original_text": "A Chișinău SRL, VAT-registered, has accounting profit of MDL 900,000 for 2026. The profit includes a MDL 15,000 tax fine and an MDL 80,000 gain on selling shares it held in another company. It has no capital losses. Its 2025 tax was MDL 96,000, and it paid four instalments of MDL 24,000 in 2026 (1/4 of last year's tax, art. 84(1)(b)).",
+      "unit_sha256": "231646ff976ae9951ce41ced1843057b73be9c468b102c80adb73fbb9172c16d",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Two worked examples that recompute",
+        "ledgers/md-country-evidence/corporate-expense-procedure-controls.md#Resident company disposal: repair the subsequently merged example's scope"
+      ],
+      "writer_disposition": "Exact incoming example retained below as predecessor evidence. Example1company50%exclusion corrected in separate source control:915000base/109800tax/13800balance/4800understatement. ExistingtwoGuidecases preserved. Example2deferral retained only as incoming arithmetic, not certified: origin-year denominator/rounding/form implementation remain an explicit gap.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-075",
+      "incoming_section": "Worked examples",
+      "original_text": "The fine is added back (art. 30(1)). Only 50% of the capital gain is taxable (art. 40(7)), so MDL 40,000 comes off. Taxable income is 900,000 + 15,000 - 40,000 = MDL 875,000. Tax at 12% (art. 15(b)) is MDL 105,000. Instalments paid were MDL 96,000, so MDL 9,000 is due with the return by 25 March 2027 (arts. 83(4)(a), 87(1)). There is no instalment fine: the company had to pay the smaller of last year's tax (MDL 96,000) and 80% of this year's tax (MDL 84,000), so MDL 84,000, and it paid MDL 96,000 (art. 261(6)).",
+      "unit_sha256": "e1ca94297450213e6ef6ad92a0b248029a858cd565c32d2537ecd5365348f6f6",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Two worked examples that recompute",
+        "ledgers/md-country-evidence/corporate-expense-procedure-controls.md#Resident company disposal: repair the subsequently merged example's scope"
+      ],
+      "writer_disposition": "Exact incoming example retained below as predecessor evidence. Example1company50%exclusion corrected in separate source control:915000base/109800tax/13800balance/4800understatement. ExistingtwoGuidecases preserved. Example2deferral retained only as incoming arithmetic, not certified: origin-year denominator/rounding/form implementation remain an explicit gap.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-076",
+      "incoming_section": "Worked examples",
+      "original_text": "```oa-check\nname: Moldovan SRL 2026, fine add-back and 50% capital gain\ninputs:\n  accounting_profit: 900000\n  fine: 15000\n  capital_gain: 80000\n  tax_2025: 96000\nsteps:\n  - gain_excluded: capital_gain * 0.50\n  - taxable_income: accounting_profit + fine - gain_excluded\n  - tax: taxable_income * 0.12\n  - instalment: tax_2025 / 4\n  - instalments_paid: instalment * 4\n  - balance_due: tax - instalments_paid\n  - instalments_required: min(tax_2025, tax * 0.80)\n  - instalment_shortfall: max(0, instalments_required - instalments_paid)\nexpected:\n  taxable_income: 875000.00\n  tax: 105000.00\n  instalment: 24000.00\n  balance_due: 9000.00\n  instalments_required: 84000.00\n  instalment_shortfall: 0.00\n```",
+      "unit_sha256": "c300fc9e5f903de143268ec4388a839106a2d135ab446efd0a29dd47794de050",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Two worked examples that recompute",
+        "ledgers/md-country-evidence/corporate-expense-procedure-controls.md#Resident company disposal: repair the subsequently merged example's scope"
+      ],
+      "writer_disposition": "Exact incoming example retained below as predecessor evidence. Example1company50%exclusion corrected in separate source control:915000base/109800tax/13800balance/4800understatement. ExistingtwoGuidecases preserved. Example2deferral retained only as incoming arithmetic, not certified: origin-year denominator/rounding/form implementation remain an explicit gap.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-077",
+      "incoming_section": "Worked examples",
+      "original_text": "### Example 2: tax deferred until dividends (art. 87(1^1))",
+      "unit_sha256": "ea9d5fd9bb528b2aaf55d693d9a1a5223f1409395b476d571224a09586b964c8",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Two worked examples that recompute",
+        "ledgers/md-country-evidence/corporate-expense-procedure-controls.md#Resident company disposal: repair the subsequently merged example's scope"
+      ],
+      "writer_disposition": "Exact incoming example retained below as predecessor evidence. Example1company50%exclusion corrected in separate source control:915000base/109800tax/13800balance/4800understatement. ExistingtwoGuidecases preserved. Example2deferral retained only as incoming arithmetic, not certified: origin-year denominator/rounding/form implementation remain an explicit gap.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-078",
+      "incoming_section": "Worked examples",
+      "original_text": "An SRL with 20 staff and MDL 30 million turnover opts for the deferral by filing its 2026 return on time. Its 2026 taxable income is MDL 500,000, so the 2026 tax is MDL 60,000. Pre-tax accounting profit for 2026 is MDL 540,000. It paid no quarterly instalments (art. 84(6)). In June 2027 it pays a dividend of MDL 200,000 from 2026 profit to its sole shareholder, a resident individual.",
+      "unit_sha256": "06c0d7d2772a25a4ff51d685eac5637c1853e523098603dc85bfefc2ad8217c0",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Two worked examples that recompute",
+        "ledgers/md-country-evidence/corporate-expense-procedure-controls.md#Resident company disposal: repair the subsequently merged example's scope"
+      ],
+      "writer_disposition": "Exact incoming example retained below as predecessor evidence. Example1company50%exclusion corrected in separate source control:915000base/109800tax/13800balance/4800understatement. ExistingtwoGuidecases preserved. Example2deferral retained only as incoming arithmetic, not certified: origin-year denominator/rounding/form implementation remain an explicit gap.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-079",
+      "incoming_section": "Worked examples",
+      "original_text": "The ratio is 200,000 / 540,000 = 0.370..., rounded to 0.37. Tax due on this payment is 60,000 x 0.37 = MDL 22,200, payable by 25 July 2027 (art. 87(1^1)). The company also withholds 6% from the dividend, MDL 12,000, payable by the same date (arts. 90^1(3^1), 92(1)). MDL 37,800 of the 2026 tax stays deferred until later dividends.",
+      "unit_sha256": "fdd093e07edbcfbf0ce02d93e05bb7027eda70f0e35bf16641b8fe31ff722278",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Two worked examples that recompute",
+        "ledgers/md-country-evidence/corporate-expense-procedure-controls.md#Resident company disposal: repair the subsequently merged example's scope"
+      ],
+      "writer_disposition": "Exact incoming example retained below as predecessor evidence. Example1company50%exclusion corrected in separate source control:915000base/109800tax/13800balance/4800understatement. ExistingtwoGuidecases preserved. Example2deferral retained only as incoming arithmetic, not certified: origin-year denominator/rounding/form implementation remain an explicit gap.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-080",
+      "incoming_section": "Worked examples",
+      "original_text": "```oa-check\nname: Moldovan SRL, 2026 tax deferred to a 2027 dividend\ninputs:\n  tax_2026: 60000\n  pretax_profit_2026: 540000\n  dividend_gross: 200000\nsteps:\n  - ratio: round(dividend_gross / pretax_profit_2026, 2)\n  - cit_due_now: tax_2026 * ratio\n  - dividend_wht: dividend_gross * 0.06\n  - cit_still_deferred: tax_2026 - cit_due_now\nexpected:\n  ratio: 0.37\n  cit_due_now: 22200.00\n  dividend_wht: 12000.00\n  cit_still_deferred: 37800.00\n```",
+      "unit_sha256": "a29165612b3327f0cff3fec58877de8f4b479f2f45127d67c5156c30ceaeb5e8",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Two worked examples that recompute",
+        "ledgers/md-country-evidence/corporate-expense-procedure-controls.md#Resident company disposal: repair the subsequently merged example's scope"
+      ],
+      "writer_disposition": "Exact incoming example retained below as predecessor evidence. Example1company50%exclusion corrected in separate source control:915000base/109800tax/13800balance/4800understatement. ExistingtwoGuidecases preserved. Example2deferral retained only as incoming arithmetic, not certified: origin-year denominator/rounding/form implementation remain an explicit gap.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-081",
+      "incoming_section": "Ask the client first",
+      "original_text": "## Ask the client first",
+      "unit_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Ask the client first"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-082",
+      "incoming_section": "Ask the client first",
+      "original_text": "1. Is the company registered for VAT, an IT park resident, or on the 4% regime? Each one changes the tax entirely.",
+      "unit_sha256": "7a5c71f88fd09f04735466106e182f1a8a245c34846aa850f3b40566d236e04f",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Ask the client first"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-083",
+      "incoming_section": "Ask the client first",
+      "original_text": "2. On 31 December 2026, how many staff, what turnover and what total assets? This decides whether the art. 87(1^1) deferral is open.",
+      "unit_sha256": "fb72c4844b3c1aad08ae9110c3217f3c8d781882f08de3866dbddea9234332a2",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Ask the client first"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-084",
+      "incoming_section": "Ask the client first",
+      "original_text": "3. Will it pay dividends, interim or final, and to whom (resident individuals, Moldovan companies, non-residents)?",
+      "unit_sha256": "5b77e56fd96214a60e8a51e9ff56bf2536837b61623884a5355fc239f1887581",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Ask the client first"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-085",
+      "incoming_section": "Ask the client first",
+      "original_text": "4. What was last year's tax, and what instalments have been paid?",
+      "unit_sha256": "6a2092622cb2fe35ec635d5f100922f11d8dcd8ba2c635f646b15386b6d09084",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Ask the client first"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-086",
+      "incoming_section": "Ask the client first",
+      "original_text": "5. Does it pay non-residents for services, interest, royalties or rent, and does a treaty apply?",
+      "unit_sha256": "cd1d09cb78366cde40ee9bc60be77dd8da27d949f1efa27a40f2035a57cbaa86",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Ask the client first"
+      ],
+      "writer_disposition": "Subject retained or expanded in the deeper country draft; writer destination mapping, independent legal/preservation review pending.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-087",
+      "incoming_section": "Ask the client first",
+      "original_text": "6. Does it have tax losses from 2021 to 2025, or capital gains or losses this year?",
+      "unit_sha256": "d7a320fc14bc386c0b60ebcf2b567f8c1894f919b84f040f704c077626111f19",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#The base: Company disposals and the individual capital-gain boundary"
+      ],
+      "writer_disposition": "CORRECTED: art37 restricts art40(7)to nonbusinessindividuals; residentSRLdoesnotexclude50%ofgain. Art18reference readwith37; nonresidentlegalentityart71(1)(d)references40(1)-(4),not7.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-088",
+      "incoming_section": "Sources",
+      "original_text": "## Sources",
+      "unit_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Sources"
+      ],
+      "writer_disposition": "Source subject retained/corrected or explicitly unconfirmed. Actual2026January/27Marchthresholdsources supersede2025comparison; Code37correctsscope;2026loss-origin/deferral/currentreturn/specialproceduresremainexplicit rather than claimingcompleteverification.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-089",
+      "incoming_section": "Sources",
+      "original_text": "| Source | URL | Read on |",
+      "unit_sha256": "d7d74ba5bb2b13de1122ab9d020895c5fb3b4e1873a2381d26d7626ebba0e9d4",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Sources"
+      ],
+      "writer_disposition": "Source subject retained/corrected or explicitly unconfirmed. Actual2026January/27Marchthresholdsources supersede2025comparison; Code37correctsscope;2026loss-origin/deferral/currentreturn/specialproceduresremainexplicit rather than claimingcompleteverification.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-090",
+      "incoming_section": "Sources",
+      "original_text": "| Codul fiscal nr. 1163/1997, consolidated to LP235/2026 (in force 30.10.2026): arts. 5 pct. 5, 12^1, 13, 14, 15, 18, 20 lit. z19), 24, 25, 30, 32, 36, 40, 54^1 to 54^4, 71, 79^3, 80^1, 82, 83, 84, 87, 90^1, 91, 92, 112, 228, 260, 261, 368 to 373 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |",
+      "unit_sha256": "79a1c277e0dadba560dcce76dce5090687073e61353949d4fe40508d6b435322",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Sources"
+      ],
+      "writer_disposition": "Source subject retained/corrected or explicitly unconfirmed. Actual2026January/27Marchthresholdsources supersede2025comparison; Code37correctsscope;2026loss-origin/deferral/currentreturn/specialproceduresremainexplicit rather than claimingcompleteverification.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-091",
+      "incoming_section": "Sources",
+      "original_text": "| Codul fiscal nr. 1163/1997, 2025 version (to LP227/2025, in force 30.12.2025): art. 112(1) and art. 54^1 read MDL 1.2 million | https://www.legis.md/cautare/getResults?doc_id=152857&lang=ro | 2026-10-30 |",
+      "unit_sha256": "0a07b9b620298b1f5eddde62886e00af662e6259dc4f3f3484d1ddece1697cc7",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Sources"
+      ],
+      "writer_disposition": "Source subject retained/corrected or explicitly unconfirmed. Actual2026January/27Marchthresholdsources supersede2025comparison; Code37correctsscope;2026loss-origin/deferral/currentreturn/specialproceduresremainexplicit rather than claimingcompleteverification.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-092",
+      "incoming_section": "Sources",
+      "original_text": "| Law LP12 of 19 February 2026 amending art. 112 (MDL 1.5 million to MDL 1.7 million, in force 1 March 2026) | https://www.legis.md/cautare/getResults?doc_id=153159&lang=ro | 2026-10-30 |",
+      "unit_sha256": "e65a90d7312eb6a45c9e2efac89bf4fc19d2398637b7dc91a53788c051686abf",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Sources"
+      ],
+      "writer_disposition": "Source subject retained/corrected or explicitly unconfirmed. Actual2026January/27Marchthresholdsources supersede2025comparison; Code37correctsscope;2026loss-origin/deferral/currentreturn/specialproceduresremainexplicit rather than claimingcompleteverification.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-093",
+      "incoming_section": "Sources",
+      "original_text": "| Government Decision 773 of 17 December 2025: forecast average monthly wage for 2026, MDL 17,400 | https://www.legis.md/cautare/getResults?doc_id=152066&lang=ro | 2026-10-30 |",
+      "unit_sha256": "5f53f78d4d3912c86550365af7e63d4da31f4809665643d0feb3cfe2e88907b5",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Sources"
+      ],
+      "writer_disposition": "Source subject retained/corrected or explicitly unconfirmed. Actual2026January/27Marchthresholdsources supersede2025comparison; Code37correctsscope;2026loss-origin/deferral/currentreturn/specialproceduresremainexplicit rather than claimingcompleteverification.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-094",
+      "incoming_section": "Sources",
+      "original_text": "| National Bank of Moldova, Inflation Report no. 4, 2025 (base rate kept at 6.00% on 6 November 2025) | https://www.bnm.md/ro/content/raportul-asupra-inflatiei-nr-4-2025 | 2026-10-30 |",
+      "unit_sha256": "288264df86805032858d533eb0ebfe550c4b4ab5d7ec846fa5f3fd1816be1443",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Sources"
+      ],
+      "writer_disposition": "Source subject retained/corrected or explicitly unconfirmed. Actual2026January/27Marchthresholdsources supersede2025comparison; Code37correctsscope;2026loss-origin/deferral/currentreturn/specialproceduresremainexplicit rather than claimingcompleteverification.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    },
+    {
+      "id": "MD-PUBLIC1008-095",
+      "incoming_section": "Sources",
+      "original_text": "Not yet confirmed: the date from which the MDL 1.7 million figure in art. 54^1(3), (3^1) applies (the text in force on 30 December 2025 said MDL 1.2 million; the amending act was not found); whether the five-year loss spread caps each year at one fifth (art. 32 says \"eşalonat\", spread out, and art. 32(2) is unclear); treaty withholding rates (the old version gave 0% to 5% on dividends and 0% to 10% on interest and royalties from a secondary source; no treaty text was read) and the treaty documentation rules in art. 79^3(2); depreciation rules (art. 26^1, not read); any changes in force from 2027 shown on legis.md.",
+      "unit_sha256": "44fd8553bd7bf9a777b97a551fdf73d4e6c72e79e9b313ec848e5de90d8a9506",
+      "destination": [
+        "skills/international/moldova/md-corporate-income-tax.md#Sources"
+      ],
+      "writer_disposition": "Source subject retained/corrected or explicitly unconfirmed. Actual2026January/27Marchthresholdsources supersede2025comparison; Code37correctsscope;2026loss-origin/deferral/currentreturn/specialproceduresremainexplicit rather than claimingcompleteverification.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW"
+    }
+  ],
+  "CTA_exact_match": true,
+  "scope_finding_source": "ledgers/md-country-evidence/sources/fiscal-code-article-CORP-CAPITAL-SCOPE-20261030.json",
+  "unresolved": "FullVEN12attachments/ordinarygaps/fullcountryreview remain; incomingdeferralexampleisnotadoptedasverifiedprocedure; threeotherMDsupportingPRsstillopen whenobserved."
+}

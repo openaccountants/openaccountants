@@ -1,0 +1,27 @@
+[
+  {
+    "path": "ledgers/es-ceuta-melilla-ipsi.md",
+    "sha256": "41fd5a36bb182967cdbc50f2cf919363785ba65848bdb5c086a2f4c347980899",
+    "bytes": 215087
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-ceuta-melilla-ipsi/rows.json",
+    "sha256": "88d346bed296ac7150491f11060b7b48497a5fc5a5cea4e05ea3b7b6f03df342",
+    "bytes": 230806
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-ceuta-melilla-ipsi/source-read-receipts.json",
+    "sha256": "7ad1a8ffe538d6ee98fc4756bf5606ea19f83f30233f0ac3753565209254ca04",
+    "bytes": 63160
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-ceuta-melilla-ipsi/writer-status.md",
+    "sha256": "7f2cd202a69f0c58e01d8b299f89073adde3c902723cea009fe0a58a243764ff",
+    "bytes": 1459
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-ceuta-melilla-ipsi/example-check.txt",
+    "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+    "bytes": 58
+  }
+]

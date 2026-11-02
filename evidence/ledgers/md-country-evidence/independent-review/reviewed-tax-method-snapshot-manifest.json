@@ -1,0 +1,111 @@
+{
+  "commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+  "purpose": "Exact pre-status Guide/ledger writer snapshot checked by independent reviewer; historical pending fields preserved. All source observations remain at their original repository paths.",
+  "files": [
+    {
+      "original_path": "skills/international/moldova/md-company-formation.md",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/md-company-formation.md",
+      "sha256": "b480df071af4ec1092fc0afa394e78803bdb7738d14ca38f4e387a4a3caac0d3"
+    },
+    {
+      "original_path": "skills/international/moldova/md-corporate-income-tax.md",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/md-corporate-income-tax.md",
+      "sha256": "00d8a5e341470efba0bff713f1d7eedb101745d71f89c6a381956bbf3e096643"
+    },
+    {
+      "original_path": "skills/international/moldova/md-cross-border.md",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/md-cross-border.md",
+      "sha256": "24ae8a60c0110dfff42e5a2a8c9593c4fccd9ed62c4f1f8f53eb2abce16fdd3f"
+    },
+    {
+      "original_path": "skills/international/moldova/md-tax-overview.md",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/md-tax-overview.md",
+      "sha256": "47aa6fc8ab43f3e7817eda1ecc2b5275e7d83bfa1eb013b862c9824fd6e2a9fe"
+    },
+    {
+      "original_path": "skills/international/moldova/md-transfer-pricing.md",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/md-transfer-pricing.md",
+      "sha256": "df3d940231510433946d7c71db887c498ed811f5638635045e3aead2cd3657c6"
+    },
+    {
+      "original_path": "skills/international/moldova/moldova-income-tax.md",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/moldova-income-tax.md",
+      "sha256": "4246895075dc055df25c1b51741e25ba7b41b31a8a32e97e7eb34842dc874609"
+    },
+    {
+      "original_path": "skills/international/moldova/moldova-payroll.md",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/moldova-payroll.md",
+      "sha256": "0c3b85dd8283b36a8d4316b731e5fdcdf8e4c1fd49a7b4378923fd7b0d392e26"
+    },
+    {
+      "original_path": "skills/international/moldova/moldova-social-contributions.md",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/moldova-social-contributions.md",
+      "sha256": "0d506e9b4a949fe60e6dfcac36d28c231e5a17c2d7f47ccb7446a172bce114a2"
+    },
+    {
+      "original_path": "skills/international/moldova/moldova-tax-optimization.md",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/moldova-tax-optimization.md",
+      "sha256": "42cd44ba4d7515528c4de3e5c58f0700948df7586cea58bb189d23f72b655968"
+    },
+    {
+      "original_path": "skills/international/moldova/moldova-vat.md",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/moldova-vat.md",
+      "sha256": "da12edadab1f25eb3f97901f3e00bcbc8c4568c6f393120d6ee76ad036005adf"
+    },
+    {
+      "original_path": "skills/international/moldova/README.md",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/skills/international/moldova/README.md",
+      "sha256": "0fc3921bdf0ebf3d7ff134729d269a8a06da23a36ea3c72242e7340b6a0931fc"
+    },
+    {
+      "original_path": "ledgers/md-transfer-pricing.writer.json",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/md-transfer-pricing.writer.json",
+      "sha256": "36874370f71a6a55be80186371b961d4cb7dc16cb6c01613fb8c4371bf33f94a"
+    },
+    {
+      "original_path": "ledgers/moldova-income-tax.writer.json",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/moldova-income-tax.writer.json",
+      "sha256": "6564c1700bb6480d3067901ba8cbe5e162431503d45dc8942003c8a7cc94b1b0"
+    },
+    {
+      "original_path": "ledgers/moldova-social-contributions.writer.json",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/moldova-social-contributions.writer.json",
+      "sha256": "a8070664bafadbe6131217f89f44650b407b1deef37997e2eba79e59f29b8f30"
+    },
+    {
+      "original_path": "ledgers/moldova-payroll.writer.json",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/moldova-payroll.writer.json",
+      "sha256": "a2227db4e9f4bb59ee0337ea7ab4bf3a486dc5a8e691987a8700845e876f9319"
+    },
+    {
+      "original_path": "ledgers/moldova-vat.writer.json",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/moldova-vat.writer.json",
+      "sha256": "beb02bafeb7f031a237a1fcf43641af2f2563c21aeb301a0273ce3ea5c352b5c"
+    },
+    {
+      "original_path": "ledgers/md-cross-border.writer.json",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/md-cross-border.writer.json",
+      "sha256": "07dc78bfc2e3dd45a07fa02e0c5537c07041933169d9a2a1305cfa1f4f02cf2b"
+    },
+    {
+      "original_path": "ledgers/md-company-formation.writer.json",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/md-company-formation.writer.json",
+      "sha256": "c0e6c19b5c369a9df067cc04c608271f2aa30b221d323f1bc017882ee376b818"
+    },
+    {
+      "original_path": "ledgers/moldova-tax-optimization.writer.json",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/moldova-tax-optimization.writer.json",
+      "sha256": "5661f1d1a49d705c43a553001aa0b4e54766683fbb7b7a04a6678e82c37989cb"
+    },
+    {
+      "original_path": "ledgers/md-corporate-income-tax.writer.json",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/md-corporate-income-tax.writer.json",
+      "sha256": "ae2c8e62c62473ae78eeb9f65b767d3580b714389e04b18bee898a1cd22a94fd"
+    },
+    {
+      "original_path": "ledgers/md-tax-overview.writer.json",
+      "snapshot_path": "ledgers/md-country-evidence/independent-review/reviewed-tax-method-snapshot/ledgers/md-tax-overview.writer.json",
+      "sha256": "aa26cb108b53bb62b2c02cfe832f342dddb833cc9ce28cab8a0885eac1127c36"
+    }
+  ]
+}

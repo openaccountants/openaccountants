@@ -1,0 +1,195 @@
+{
+  "head": "b99513e9c5915e45ebbb3d263739fd1510326e14",
+  "repair_manifest": {
+    "path": "evidence/ledgers/faroe-islands-20261031-property/repair-1/repair-manifest.json",
+    "sha256": "e8b0fa4b7668ab24a1da622a15db16baa514279d68e9932c24c576c549d19e2a"
+  },
+  "inputs": [
+    {
+      "path": "skills/faroe-islands/fo-property-transfer-registration.md",
+      "sha256": "e4e9fb45678690c822d246d8722f931a9008aed8664a16dc29274c0bc768d0c1"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/candidate-manifest.json",
+      "sha256": "44d019f098ebe419b5b855cb4dff9b444fc74ced8aa444b6d03303d19d9f53c4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/checkpoint.json",
+      "sha256": "97f033e2317580fb47eb507f3cb942c6800b4cac7b369d87863589f792da73f1"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/claim-destinations.json",
+      "sha256": "e2bc9f4767c5f862a86ebd36e8c70a1e4c2b2995ba4ccf34622d04fea382193c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/claims.json",
+      "sha256": "31b2084ce424edfbd279b74a0b1882877c5d4f6a59885a88a14b74ad0f15703d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/frozen-manifest.json",
+      "sha256": "6d5d5077553b7a9a02ecc5957dc26361020b64d0729416286bc05f18088d3644"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/INITIAL-REVIEW.md",
+      "sha256": "96777ad0885f50a21259c0c4a6025e04f607a6e7400cbcad18d7d291bee78083"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/INITIAL-VERDICT.json",
+      "sha256": "67667ed8ff0f15deec1f7beb552d3495efcc55c9e09c0256d3502eafab316ef5"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/example-checks.txt",
+      "sha256": "6d794926bae9575f20edcf0ce8fd5220c7355199500035b3fd62eea175edf0e4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/findings.json",
+      "sha256": "7bdb8e8c79328ef17cd1e300483dec0739b28421e01743ec1821517e461bc844"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/hash-and-preservation-audit.json",
+      "sha256": "02033b64648a4d36ed83a53593274e55074b586d9a3359e1c70a994aee8051b4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/review-input-manifest.json",
+      "sha256": "e4db699aecb100e21ce5c5c4d86ce1fbc9a2c72c86f6dc471d609c46ef160e86"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/skill-checks.txt",
+      "sha256": "f5e52371997b4b861252347ef50114e090e334085c86e3295abd8e484a8e1cb4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/independent-review/source-access.json",
+      "sha256": "d564951f825128fcb8b855d417703d1d1094f2ff43131aa5e3826cfbc44458d3"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/ledgers/fo-property-transfer-registration.md",
+      "sha256": "f1b2473f180c4059ab2038d90b361091114f357da7489014afe58d6787554966"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/old-topic-destinations.md",
+      "sha256": "9b75c5bc7ba0fcfa73645119ce659da76715b881205ed6f1ddc168624d10aacd"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/old-topic-units.json",
+      "sha256": "fe935b8d305da831f58bdbb9074a232b8833d6fc1c7fd07a78c725fd5f73b126"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/preservation.json",
+      "sha256": "63600ef238e37e052aad8dacf9ebb879b21544ad4c791d414f3bffe589f74299"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/remaining-evidence.md",
+      "sha256": "ab4cfe0cd243522d1402313ab149eb685fcab149f19bb74b1148e10317423722"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/repair-1/agency-placement-receipt.json",
+      "sha256": "39dba87077a9e6899bd944849018faeaf913247205021ab6e78961d881f0ba11"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/repair-1/repair-record.json",
+      "sha256": "c54c9282f21aeb6ebe66c6a4b8127983120c0cd5447c4c38b913236b8ead5c2b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/review-request.md",
+      "sha256": "13953962e89d4f8b82db6d628d0f79a70d52fdbe99fbfb4e4d79a0450273dc68"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/source-discrepancies.md",
+      "sha256": "41c69ed8c572f23defc69f07778774cdd0430a5eb520f8678354e2ae3ffb3d8f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/source-receipts.json",
+      "sha256": "9cffbe7cd47dd72bf37da8e322abe13c4e3b9e086810e3d39d411fe5901247e2"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/validation/changed-guides-final.txt",
+      "sha256": "328eb57680d9b056bf85ef3b4d6c495805c665aba2f03a1ad52c8e574d833d43"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/validation/sync-before-main-advance.txt",
+      "sha256": "8737e6acdd95a7c363df5b415fc2fb320d72a63e16da8e2035f674607642fad0"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/validation/sync-final.txt",
+      "sha256": "62b7ad5e4759a64b1a93bd3cf70e8225226334cb573505d868349175a38c6a52"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/validation/unit-tests.txt",
+      "sha256": "0a950d224033892bcdfaa63d99c112dfb02dcc35821f913d6a7d68d05d17365f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/validation/whole-country-examples.txt",
+      "sha256": "6d794926bae9575f20edcf0ce8fd5220c7355199500035b3fd62eea175edf0e4"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/validation/whole-country-shape.txt",
+      "sha256": "4f8a14933ccc9fa4f77e3e274bd2a89989e3f8116a8c788b69bf1f84312d3100"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-property/writer-integrity.json",
+      "sha256": "34cbecf1db39d061a7d6426ee36dbe5a168a294440210a803616f4e2cb5f4cf5"
+    }
+  ],
+  "predecessor_guides": [
+    {
+      "path": "skills/faroe-islands/fo-company-registration-reporting.md",
+      "sha256": "44ea09cb6e595851a53b15eff1e669a23dcecbdc197172ee4766a6dc69d0aa4c",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-corporate-income-tax.md",
+      "sha256": "1880cd5c921ee277138affa032ed515dd2ab716dd79ac548bc69d517244fe7b6",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-country-by-country-reporting.md",
+      "sha256": "ea919bf9bb1dd028a9038f36ccc8cdedacb6defc74cec09f71584c81956c5781",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-cross-border-payments.md",
+      "sha256": "de99a886c6acd6bdc5b7baaf593525a7a479e65604b912891fa8db1205a67034",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-estate-income-tax.md",
+      "sha256": "f0b446fa1f4d5a8df3add50fbcb82b2e05f2139a0cfffe1161c4f963b8dcd7ba",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-individual-income-tax.md",
+      "sha256": "be9621c6eb725831ec00485f35558e4844bc5f73d5136c2545c5f63f8ef3ddcc",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-inheritance-duty.md",
+      "sha256": "115a0cd9c7ed682e0577037cb236e89b45fcde562c26545b3407f7ece1058b47",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-contributions.md",
+      "sha256": "5dda39a3f9387b5ad4c917aa7642afbf0ed6120fab6f34605fc19f11dbff53bd",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-payroll-levy.md",
+      "sha256": "afebe512c71fc26d9be8c3d098528176a1c18bf04aa10184b522eba065af57ad",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-transfer-pricing.md",
+      "sha256": "891489655c55042b3013b9a79f7824abd50f30b2d885042321727cef593d790f",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-vat.md",
+      "sha256": "6ee5c6b1a04d647b83c19d970bbed242d71526fad01851e37211f6f8c3fe850b",
+      "byte_exact": true
+    }
+  ],
+  "readme": {
+    "path": "skills/faroe-islands/README.md",
+    "sha256": "3851fb36519349c20dfa9eac0c2fe2a3ceb077b84a71ed12de218b4d38c0d01b",
+    "bytes": 18855
+  }
+}

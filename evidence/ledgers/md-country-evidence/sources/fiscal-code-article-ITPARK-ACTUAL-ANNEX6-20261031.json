@@ -1,0 +1,37 @@
+{
+  "article": "ITPARK-ACTUAL-ANNEX6-20261031",
+  "official_url": "https://www.legis.md/UserFiles/Image/RO/2022/mo129-133md/an_6_135md.docx",
+  "text": "Anexa nr.6 \nla Ordinul Ministerului Finanțelor nr.135 din 06 noiembrie 2017\n\n\n\n\nMODUL DE COMPLETARE\na Informației privind plățile salariale efectuate de către rezidentul \nparcului pentru tehnologia informației în folosul angajatului\n\nÎn Nota de informare se indică:\n denumirea rezidentului parcului pentru tehnologia informației și codul fiscal al acestuia;\nnumele, prenumele și codul fiscal al angajatului în folosul căruia au fost efectuate plățile pe parcursul anului fiscal.\nÎn col.1 se indică suma totală a venitului din plățile efectuate angajatului sau în folosul acestuia, în perioada fiscală, în baza legislaţiei muncii şi actelor normative ce conţin norme ale dreptului muncii.\nÎn col.2 se indică numărul de luni în care angajatul a activat în parcul pentru tehnologia informației.\n\n",
+  "sha256": "9a5abb34ca57d6a9ed2a7ab2fd3c2b3d08ca7d917bbc3af0b185317c37ea272b",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-31T03:43:27.607544+00:00",
+  "format": "Original official DOCX retained unchanged; complete XML paragraph/table text read and locally rendered",
+  "binary_path": "ledgers/md-country-evidence/sources/attachments/itpark-current-annex6.docx",
+  "binary_sha256": "56a2da54d1db2aeefab4650be37056bf29306374f128f84a8fee7efc2dd14436",
+  "binary_size_bytes": 13288,
+  "full_binary_retained": true,
+  "source_points": {
+    "body_paragraph_000": "Anexa nr.6 ",
+    "body_paragraph_001": "la Ordinul Ministerului Finanțelor nr.135 din 06 noiembrie 2017",
+    "body_paragraph_006": "MODUL DE COMPLETARE",
+    "body_paragraph_007": "a Informației privind plățile salariale efectuate de către rezidentul ",
+    "body_paragraph_008": "parcului pentru tehnologia informației în folosul angajatului",
+    "body_paragraph_010": "În Nota de informare se indică:",
+    "body_paragraph_011": " denumirea rezidentului parcului pentru tehnologia informației și codul fiscal al acestuia;",
+    "body_paragraph_012": "numele, prenumele și codul fiscal al angajatului în folosul căruia au fost efectuate plățile pe parcursul anului fiscal.",
+    "body_paragraph_013": "În col.1 se indică suma totală a venitului din plățile efectuate angajatului sau în folosul acestuia, în perioada fiscală, în baza legislaţiei muncii şi actelor normative ce conţin norme ale dreptului muncii.",
+    "body_paragraph_014": "În col.2 se indică numărul de luni în care angajatul a activat în parcul pentru tehnologia informației."
+  },
+  "table_cells": [],
+  "rendered_pdf_relative_to_country_workspace": "validation/itpark-current-annex6-render/itpark-current-annex6.pdf",
+  "rendered_pdf_sha256": "c93e6f0e942ded60f0f916c67ef0a9d73c751b507f687f8257c1d017a33ec798",
+  "rendered_pages": 1,
+  "visually_read_rendered_pages": [
+    1
+  ],
+  "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=154298&lang=ro",
+  "parent_header_and_attachment_link_rechecked": "31October2026 currentOrder135 latestdisplayedOrder59effective8May2026. Nine actualannexlinks observed/downloaded through bounded normal browser event/path. Annex2instructions renderedinline and read in browser.",
+  "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+  "portal_test": false,
+  "source_limits": "Source spelling/Latin-Cyrillic glyph defects retained. IU17monthly/eligibilitycumulative bases differ. ISAPTI17actualpaidincome/active-month fields and employee delivery evidence separate from IPC21insuredincome. IUPT25annualadjustment different from2024specificIUPT24; Order106points1/3/4/5effective1January2026, others28October2025. IUPTminimum wording/12monthdenominator retained; partial-year cases, equalitybranches and14(d)/15(d) signed floor/refund interpretation remain unverified; amountpaid row040 has no express subtraction in published050/060formula. No inferred cashrefund or portal certification."
+}

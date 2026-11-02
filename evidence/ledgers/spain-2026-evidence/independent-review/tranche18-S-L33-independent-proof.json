@@ -1,0 +1,15 @@
+{
+  "manifest_sha256": "3daef7d0231693a80143109cfb8f42f010778b10c65370db68f5a0c665053b7c",
+  "five_exact_checker_operations": 5,
+  "full_inverse": true,
+  "changed_numeric_records_zero_based": [
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "unchanged_numeric_records": 84,
+  "Guide_ledger_sources_claims_oldmap_unchanged": true,
+  "own_recomputation": "separate tranche18-controls.json"
+}

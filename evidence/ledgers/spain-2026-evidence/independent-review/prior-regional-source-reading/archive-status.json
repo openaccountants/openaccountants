@@ -1,0 +1,41 @@
+{
+  "scope": "Preserved prior bounded independent regional source-reading evidence. Old Guide frozen0f104150 had findings; this archive is not a current Guide PASS. Current acceptedledger review separately bindsnewGuide/quotes. Old Humanactualread label describes earlier agent reading, not Michael or credentialedattestation. Emissionreceiptsalone are not actualreading proof; normalizedcore scopes/report/errata/limits govern permittedreuse.",
+  "artifacts": [
+    {
+      "path": "core-primary-read-scopes.json",
+      "sha256": "7ecf6e6366a1a38777886ba0e6208b11d4645de7e6bb6f92fef40e6aee6dbc6b"
+    },
+    {
+      "path": "report.md",
+      "sha256": "e083a76e53a9e4253f1cee560300ba30f04da5c445a89bf0ef4e60ab1c771388"
+    },
+    {
+      "path": "report-errata-and-post-report-evidence.md",
+      "sha256": "784d3bbdfc6db2a5c470f1357e40c9914c30afdba820790d8ad9f30d28790abd"
+    },
+    {
+      "path": "review-failures-and-limits.json",
+      "sha256": "c895f128d2ae189b11e0841cdca2a09b3d7b00dae949a73bd38422f374ba46a3"
+    },
+    {
+      "path": "actual-source-read-ledger.json",
+      "sha256": "aa880d7f0f57554b4a0e4dd1bd0138680d90c951e52c89c7e2e302935a16152d"
+    },
+    {
+      "path": "external-read-source-manifest.json",
+      "sha256": "ab6dfb332ceb5bcec0515601af2813f6a476a4e0e495643070815d7fe70ee07b"
+    },
+    {
+      "path": "post-report-additional-source-reads.json",
+      "sha256": "160c223de01c91a2f140e3fb97314d38eb53999043e2847da6fea581ba6dc00f"
+    },
+    {
+      "path": "artifact-manifest.json",
+      "sha256": "e4743432e50c42e8351b7a4cd208d635ac915b344eb92f0a3242cc83f2429d2e"
+    },
+    {
+      "path": "post-report-artifact-manifest.json",
+      "sha256": "e53e7ea8d4d799b78c09db9217af3bad39a3c6e03d13a89a65636700558f971f"
+    }
+  ]
+}

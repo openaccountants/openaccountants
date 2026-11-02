@@ -1,0 +1,12 @@
+{
+  "Guide_originals_unchanged": true,
+  "original_files": 11,
+  "original_topic_units": 745,
+  "CNAS_ledger_groups": 67,
+  "CNAS_quotes_match_retained_source": true,
+  "new_writer_controls": 14,
+  "writer_controls": "PASS,0failures/0missing",
+  "independent_review": "NOT REQUESTED; allGuide ledgers and old-topic destinations must be complete first",
+  "coverage_complete": false,
+  "new_publication": false
+}

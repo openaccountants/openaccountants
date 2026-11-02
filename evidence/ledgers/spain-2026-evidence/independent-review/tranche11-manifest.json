@@ -1,0 +1,32 @@
+[
+  {
+    "path": "tranche11-controls.json",
+    "bytes": 8120,
+    "sha256": "81d58c09f2b4440a03e8e2138cc5d3a4163d38c324515b359a07fcdc6e19bedc"
+  },
+  {
+    "path": "tranche11-examples.txt",
+    "bytes": 58,
+    "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8"
+  },
+  {
+    "path": "tranche11-independent-controls.py",
+    "bytes": 3414,
+    "sha256": "aa623827c41051c69e47fc788299724ad8d3eb943ce734adfbc59d41e6aa28a2"
+  },
+  {
+    "path": "tranche11-initial-integrity.json",
+    "bytes": 5616,
+    "sha256": "efe58ca04447b520f42a30c553bb868499ab504ef1cf39660650cfadb23f3f29"
+  },
+  {
+    "path": "tranche11-read-ledger.json",
+    "bytes": 126118,
+    "sha256": "b466f5eed9c9a35978298da0d877b7641152915fd4e65d8cfc6382f6c46c7d3b"
+  },
+  {
+    "path": "tranche11-report.md",
+    "bytes": 2580,
+    "sha256": "301b0d8bc9e5e7b960edc8105e19fdaf9e37a6fb7598bd0072ce2a79b6c128a5"
+  }
+]

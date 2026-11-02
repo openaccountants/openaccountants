@@ -1,0 +1,47 @@
+{
+  "candidate": "25650a27c5c0dd2a73b4c2de6dc6786fae026957",
+  "verdict": "accepted_bounded_tier2_addition",
+  "closed_finding": "FO-EST-005",
+  "manifest_sha256": "283b25a2e34c602829e3757adc6ce49d9cf18e71148b6adee91142c985661306",
+  "input_count": 87,
+  "input_hash_failures": [],
+  "original_manifest_sha256": "4051b7cb6a083afe736ec383743f5a63a566713e844bd7c3eac1f6778200f023",
+  "original_manifest_hash_matches": true,
+  "overridden_inputs": [
+    "skills/faroe-islands/fo-estate-income-tax.md",
+    "skills/faroe-islands/fo-inheritance-duty.md"
+  ],
+  "added_inputs": [
+    "evidence/ledgers/faroe-islands-20261031-inheritance/repair-02/heading-repair.json",
+    "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/independent-closure/examples.txt",
+    "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/independent-closure/final-report.md",
+    "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/independent-closure/residual-findings.json",
+    "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/independent-closure/shape.txt",
+    "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/independent-closure/verification.json"
+  ],
+  "heading_checks": [
+    {
+      "path": "skills/faroe-islands/fo-inheritance-duty.md",
+      "only_expected_H1_changed": true,
+      "old_hash_matches": true,
+      "new_hash_matches": true,
+      "frontmatter_and_H1_agree": true
+    },
+    {
+      "path": "skills/faroe-islands/fo-estate-income-tax.md",
+      "only_expected_H1_changed": true,
+      "old_hash_matches": true,
+      "new_hash_matches": true,
+      "frontmatter_and_H1_agree": true
+    }
+  ],
+  "initial_review_or_prior_closure_changed_files": [],
+  "country_guide_changed_files": [
+    "skills/faroe-islands/fo-estate-income-tax.md",
+    "skills/faroe-islands/fo-inheritance-duty.md"
+  ],
+  "legal_claims_reopened": 0,
+  "full_country_complete": false,
+  "attestation": false,
+  "publication_rights_clearance": false
+}

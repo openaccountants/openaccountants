@@ -1,0 +1,27 @@
+{
+  "code": "CN",
+  "name": "China",
+  "region": "apac",
+  "owner": "ryan",
+  "dir": "skills/international/china",
+  "skills": 16,
+  "reviewed": 0,
+  "stale": 0,
+  "present": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "missing": [
+    "SC"
+  ],
+  "not_applicable": {},
+  "partial": {
+    "SC": "National participation framework and dated Shanghai payroll calculations; current contribution schedules for other localities and worker categories remain unconfirmed."
+  },
+  "has_readme": true,
+  "complete": false
+}

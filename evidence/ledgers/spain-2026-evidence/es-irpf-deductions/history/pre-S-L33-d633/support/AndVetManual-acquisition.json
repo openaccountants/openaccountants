@@ -1,0 +1,10 @@
+{
+  "key": "AndVetManual",
+  "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-andalucia/gastos-veterinarios-derivados-adquisicion-animales-compania.html",
+  "raw": "sources/AndVetManual.body",
+  "reader": "sources/AndVetManual.reader.txt",
+  "raw_sha256": "a176aa86a77fdf8894663b7fca61aed90b9b62b809692b4d61e14f5f79eab78c",
+  "reader_sha256": "0cdc1f42156436b989938cbecb2edf78885262671b131e46d7c45c62d6e352b8",
+  "acquired": "2026-10-28",
+  "read_scope": "Only recorded selected native-LF paragraphs actually read; targeted supplementary official page for existing payment-attribution rule, not whole acquisition read."
+}

@@ -1,0 +1,10 @@
+{
+  "finding": "S-L04",
+  "change": "provision label12\u219211 only in row60 and builder; quote/URL/reader unchanged; Guide101 alreadycorrect",
+  "predecessor_ledger_sha256": "2bdb91af0466b88d04708ccd4d9d75a67f7055ea161a2aa9f044ca7d276a715e",
+  "successor": {
+    "path": "ledgers/es-ceuta-melilla-ipsi.md",
+    "sha256": "41fd5a36bb182967cdbc50f2cf919363785ba65848bdb5c086a2f4c347980899",
+    "bytes": 215087
+  }
+}

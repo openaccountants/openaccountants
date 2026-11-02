@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<head>
+  <meta charset="utf-8" />
+<script>var _paq = _paq || [];(function(){var u=(("https:" == document.location.protocol) ? "https://matomoportales.jccm.es/" : "http://matomoportales.jccm.es/");_paq.push(["setSiteId", "33"]);_paq.push(["setTrackerUrl", u+"matomo.php"]);_paq.push(["setDoNotTrack", 1]);if (!window.matomo_search_results_active) {_paq.push(["trackPageView"]);}_paq.push(["setIgnoreClasses", ["no-tracking","colorbox"]]);_paq.push(["enableLinkTracking"]);var d=document,g=d.createElement("script"),s=d.getElementsByTagName("script")[0];g.type="text/javascript";g.defer=true;g.async=true;g.src=u+"matomo.js";s.parentNode.insertBefore(g,s);})();</script>
+<link rel="canonical" href="https://vivienda.castillalamancha.es/iprem" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<link rel="icon" href="/themes/custom/vivienda/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <title>IPREM | Vivienda</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_dWM8FUA0UY1TwAa9ok6GQrqWgz2D1MDlX8PGA291yuA.css?delta=0&amp;language=es&amp;theme=vivienda&amp;include=eJyNjkEOwjAMBD-UkidFtuO2ASdGdlKpv-fSFgEXbtbMrtao2r0bPBOCWdGIxpDJRsWA325Wq7-0aeZAahxJ61Mbt-6379Q0VW7jz1gilVGbh_VOVCMIWz9uFKVHSgheKKXMMwy53PX62VxEEWTyvktpywGdwWgNAruOnnJx0o1tj9qYVILv3rlGBOewla1wyxAJhIZAVgOfTvrWnzsvNIeFRQ" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_jDQr9CqyNLxoqZDRe0L8rLsDE99IhbsWEViQZSIOLhg.css?delta=1&amp;language=es&amp;theme=vivienda&amp;include=eJyNjkEOwjAMBD-UkidFtuO2ASdGdlKpv-fSFgEXbtbMrtao2r0bPBOCWdGIxpDJRsWA325Wq7-0aeZAahxJ61Mbt-6379Q0VW7jz1gilVGbh_VOVCMIWz9uFKVHSgheKKXMMwy53PX62VxEEWTyvktpywGdwWgNAruOnnJx0o1tj9qYVILv3rlGBOewla1wyxAJhIZAVgOfTvrWnzsvNIeFRQ" />
+
+      <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" defer crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v6.1.0/js/v4-shims.js" defer crossorigin="anonymous"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload"
+              href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+              as="style">
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet">
+        </head>
+<body class="layout-no-sidebars has-featured-top page-node-278 hjccm-scheme-default hjccm-style-1 path-node node--type-landing">
+<a href="#main-content" class="visually-hidden focusable skip-link">
+  Pasar al contenido principal
+</a>
+
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="page-wrapper">
+  <div id="page">
+    <header id="header" class="header" role="banner" aria-label="Cabecera de sitio">
+                      <div class="header__middle">
+          <div class="container header__middle-container">
+                          <button class="navbar-toggler navbar-light navbar-toggler-right collapsed" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar"
+                      aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburguer navbar-toggler-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </button>
+                        <div class="header__logos">
+              <div class="jccm__logo">
+                <a style="color:transparent;" href="https://www.castillalamancha.es" title="Ir a la página de inicio del Gobierno de Castilla-La Mancha"
+                   target="_blank">
+                    <span style="font-size:0;">Ir a la página de inicio del Gobierno de Castilla-La Mancha</span>
+                  <img src="https://www.castillalamancha.es/sites/default/files/logo-corporativo-JCCM-web.png" alt="Logotipo del Gobierno de Castilla-La Mancha" class="dark">
+                  <img src="/themes/contrib/hjccm/logo-jccm-white.svg" alt="Logotipo del Gobierno de Castilla-La Mancha" class="light">
+                </a>
+              </div>
+                                      <a href="/" title="Inicio" rel="home" class="navbar-brand">
+              <img src="/themes/custom/vivienda/logo.svg" alt="Inicio" class="img-fluid d-inline-block align-top" />
+            
+    </a>
+    
+
+                          </div>
+                          <div class="search__button--mobile">
+                <button class="lens" title="Buscar">
+                  <svg class="search" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.75 23.75C19.2728 23.75 23.75 19.2728 23.75 13.75C23.75 8.22715 19.2728 3.75 13.75 3.75C8.22715 3.75 3.75 8.22715 3.75 13.75C3.75 19.2728 8.22715 23.75 13.75 23.75Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.25 26.25L20.8125 20.8125" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="close" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 1L1 21" stroke="#002855" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M1 1L21 21" stroke="#002855" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+
+                </button>
+              </div>
+                      </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container header__bottom-container">
+            <div class="bottom__menu">
+              <nav class="navbar navbar-expand-xl" id="navbar-main">
+                <div class="collapse navbar-collapse justify-content-end" id="CollapsingNavbar">
+                  <div class="responsive-menu">
+                                            <nav role="navigation" aria-labelledby="block-vivienda-main-menu-menu" id="block-vivienda-main-menu" class="block block-menu navigation menu--main">
+            
+  <h2 class="visually-hidden" id="block-vivienda-main-menu-menu">Navegación principal</h2>
+  
+
+        
+              <ul class="clearfix nav navbar-nav">
+                    <li class="nav-item">
+                          <a href="/" class="nav-link nav-link--" data-drupal-link-system-path="&lt;front&gt;">Inicio</a>
+              </li>
+                <li class="nav-item menu-item--expanded dropdown">
+                          <span class="nav-link dropdown-toggle nav-link-" tabindex="0" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Vivienda protegida</span>
+                        <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                          <a href="/vivienda-protegida-informacion-general" class="nav-link--vivienda-protegida-informacion-general" data-drupal-link-system-path="node/261">Vivienda protegida | Información general </a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/formas%20de%20acceso-vivienda-protegida" class="nav-link--formas20de20acceso-vivienda-protegida" data-drupal-link-system-path="node/260">Formas de acceso y precios</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/promocion-calificacion" class="nav-link--promocion-calificacion" data-drupal-link-system-path="node/89">Promoción / Calificación</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/parque-publico" class="nav-link--parque-publico" data-drupal-link-system-path="node/189">Parque público</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/Comisiones%20de%20vivienda" class="nav-link--comisiones20de20vivienda" data-drupal-link-system-path="node/340">Comisiones de vivienda</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/promociones-en-alquiler-asequible" class="nav-link--promociones-en-alquiler-asequible" data-drupal-link-system-path="node/306">Programa vivienda asequible</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/Estrategia-de-Cooperativas" class="nav-link--estrategia-de-cooperativas" data-drupal-link-system-path="node/299">Estrategia de Cooperativas de CLM</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="nav-item menu-item--expanded dropdown">
+                          <span class="nav-link dropdown-toggle nav-link-" tabindex="0" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Ayudas</span>
+                        <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                          <a href="/ayudas-y-subvenciones" class="nav-link--ayudas-y-subvenciones" data-drupal-link-system-path="node/7">Todas las ayudas y subvenciones</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/ayudas-y-subvenciones/ayudas-al-alquiler" class="nav-link--ayudas-y-subvenciones-ayudas-al-alquiler" data-drupal-link-system-path="node/57">Ayudas al alquiler de vivienda</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/ayudas-y-subvenciones/ayudas-a-la-rehabilitacion-y-accesibilidad" class="nav-link--ayudas-y-subvenciones-ayudas-a-la-rehabilitacion-y-accesibilidad" data-drupal-link-system-path="node/85">Ayudas a la rehabilitación y accesibilidad</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/ayudas-y-subvenciones/ayudas-para-la-compra" class="nav-link--ayudas-y-subvenciones-ayudas-para-la-compra" data-drupal-link-system-path="node/86">Ayudas para la compra de vivienda</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="nav-item menu-item--expanded dropdown">
+                          <span class="nav-link dropdown-toggle nav-link-" tabindex="0" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Fianzas</span>
+                        <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                          <a href="/deposito-de-fianzas" class="nav-link--deposito-de-fianzas" data-drupal-link-system-path="node/203">Depósito de fianzas | Información general</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/regimen-general" class="nav-link--regimen-general" data-drupal-link-system-path="node/91">Régimen general</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/regimen-especial-de-concierto" class="nav-link--regimen-especial-de-concierto" data-drupal-link-system-path="node/92">Régimen especial de concierto</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="nav-item menu-item--expanded dropdown">
+                          <span class="nav-link dropdown-toggle nav-link-" tabindex="0" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Edificación y calidad</span>
+                        <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                          <a href="/informe-de-evaluacion-del-edificio" class="nav-link--informe-de-evaluacion-del-edificio" data-drupal-link-system-path="node/73">Informe de Evaluación del Edificio</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/libro-del-edificio" class="nav-link--libro-del-edificio" data-drupal-link-system-path="node/247">Libro del edificio</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/control-calidad-edificacion" class="nav-link--control-calidad-edificacion" data-drupal-link-system-path="node/222">Control de calidad de la edificación</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="nav-item menu-item--expanded dropdown">
+                          <span class="nav-link dropdown-toggle nav-link-" tabindex="0" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Registros</span>
+                        <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                          <a href="/agentes-gestores-de-la-rehabilitacion" class="nav-link--agentes-gestores-de-la-rehabilitacion" data-drupal-link-system-path="node/245">Agentes Gestores de la Rehabilitación</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/registro-iee-castilla-la-mancha" class="nav-link--registro-iee-castilla-la-mancha" data-drupal-link-system-path="node/248">Registro IEE Castilla-La Mancha</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/registro-de-demandantes-de-vivienda" class="nav-link--registro-de-demandantes-de-vivienda" data-drupal-link-system-path="node/249">Registro de Demandantes de Vivienda</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="nav-item menu-item--expanded dropdown">
+                          <span class="nav-link dropdown-toggle nav-link-" tabindex="0" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">Servicios</span>
+                        <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                          <a href="/cita-previa" class="nav-link--cita-previa" data-drupal-link-system-path="node/246">Cita previa</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/financiacion-ayudas-rehabilitacion" class="nav-link--financiacion-ayudas-rehabilitacion" data-drupal-link-system-path="node/216">Financiación ayudas rehabilitación</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/simre-visor-rehabilitacion" class="nav-link--simre-visor-rehabilitacion" data-drupal-link-system-path="node/292">SIMRE: visor para la rehabilitación energética</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="/oficinas-intermediacion-hipotecaria" class="nav-link--oficinas-intermediacion-hipotecaria" data-drupal-link-system-path="node/218">Oficinas de intermediación hipotecaria</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+
+                                                          </div>
+                </div>
+
+              </nav>
+            </div>
+                          <div class="search__button">
+                <button class="lens" title="Buscar">
+                  <svg class="search" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.75 23.75C19.2728 23.75 23.75 19.2728 23.75 13.75C23.75 8.22715 19.2728 3.75 13.75 3.75C8.22715 3.75 3.75 8.22715 3.75 13.75C3.75 19.2728 8.22715 23.75 13.75 23.75Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M26.25 26.25L20.8125 20.8125" stroke="white" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                  <svg class="close" width="22" height="22" viewBox="0 0 22 22" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 1L1 21" stroke="#002855" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                    <path d="M1 1L21 21" stroke="#002855" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
+                      </div>
+        </div>
+        <div class="header__search">
+                      <div class="bottom__search">
+              <div class="container">
+                  <section class="row region region-search">
+    
+<div
+  data-quickedit-entity-id="block_content/"  class="views-exposed-form block block-views block-views-exposed-filter-blockglobal-search-search-page" data-drupal-selector="views-exposed-form-global-search-search-page" id="block-formularioexpuestoglobal-searchsearch-page">
+  
+    
+      <div class="content">
+      
+<form action="/buscar" method="get" id="views-exposed-form-global-search-search-page" accept-charset="UTF-8" role="search">
+  <div class="form-row">
+  
+
+
+
+  <fieldset class="js-form-item js-form-type-textfield form-type-textfield js-form-item-keyword form-item-keyword form-no-label mb-3">
+    <legend style="font-size:0;position: absolute;">Esto es la legend de keyword</legend>
+                    <input placeholder="Buscar..." data-drupal-selector="edit-keyword" type="text" id="edit-keyword" name="keyword" value="" size="30" maxlength="128" class="form-control" />
+
+                      </fieldset>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper mb-3" id="edit-actions"><input data-drupal-selector="edit-submit-global-search" type="submit" id="edit-submit-global-search" value="Aplicar" class="button js-form-submit form-submit btn btn-primary form-control" />
+</div>
+
+</div>
+
+</form>
+
+    </div>
+  </div>
+
+  </section>
+
+              </div>
+            </div>
+                  </div>
+          </header>
+                      <div class="featured-top">
+          <aside class="featured-top__inner section container clearfix" role="complementary">
+            
+          </aside>
+        </div>
+              <div id="main-wrapper" class="layout-main-wrapper clearfix">
+              <div id="main">
+            
+<div
+  data-quickedit-entity-id="block_content/"  id="block-vivienda-breadcrumbs" class="block block-system block-system-breadcrumb-block">
+  
+    
+      <div class="content">
+      
+
+  <div class="container">
+  <nav role="navigation" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+          <a href="/">Inicio</a>
+        </li>
+                        <li class="breadcrumb-item active">
+          IPREM
+        </li>
+              </ol>
+  </nav>
+  </div>
+
+    </div>
+  </div>
+
+
+          <div class="row row-offcanvas row-offcanvas-left clearfix">
+            <main class="main-content col order-last" id="content" role="main">
+                              <div class="sidebar__first">
+                  
+                </div>
+                <section class="section">
+                  <a id="main-content" tabindex="-1"></a>
+                    <div data-drupal-messages-fallback class="hidden"></div>
+
+<div
+  data-quickedit-entity-id="block_content/"  id="block-vivienda-content" class="block block-system block-system-main-block">
+  
+    
+      <div class="content">
+      <div data-history-node-id="278" class="layout-settings-wrapper">
+  <div class="container">
+    <h1 class="anchors__title-page"><span class="field field--name-title field--type-string field--label-hidden">IPREM</span>
+</h1>
+    <div class="anchors__content">
+      <div class="anchor__menu"><div class="item-list"><ol class="list-group"><li class="list-group-item"><a href="/iprem#b0e8801c-af01-4633-aea9-b1fbaca363ea"><p>¿Qué es el IPREM y para qué sirve?</p></a></li><li class="list-group-item"><a href="/iprem#3e9398f5-ecc4-429a-9949-18fafc16d752"><p>Cuantías</p></a></li></ol></div></div>
+      <div class="anchors__items">
+
+<article data-history-node-id="278" about="/iprem" class="node id-278 node--type-landing node--promoted node--view-mode-full clearfix">
+                                          <div class="node__content clearfix">
+    <div class="container layout-settings-wrapper" id="b0e8801c-af01-4633-aea9-b1fbaca363ea">  <div class="container layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+<div
+  data-quickedit-entity-id="block_content/2359"  class="block block-layout-builder block-inline-blockbasic block__basic block--view-mode-default">
+  
+    
+      <div class="content">
+      <div class="layout-settings-wrapper">  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+  <div class="block block-layout-builder block-field-blockblock-contentbasicfield-title block-field block-field__">
+    
+        
+          <div class="content">
+        
+            <div class="field field--name-field-title field--type-string field--label-hidden field__item"><h2 class="basic__title">¿Qué es el IPREM y para qué sirve?</h2>
+</div>
+      
+      </div>
+      </div>
+
+  <div class="block block-layout-builder block-field-blockblock-contentbasicbody block-field block-field__">
+    
+        
+          <div class="content">
+        
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>El IPREM es el Indicador Público de Renta de Efectos Múltiples, que es el <strong>índice de referencia en España para calcular el umbral de ingresos</strong>.</p>
+
+<p>Sirve para <strong>medir el nivel de renta</strong> para determinar la cuantía de determinadas prestaciones o para acceder a determinados beneficios, prestaciones o servicios públicos.</p></div>
+      
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+<div class="container layout-settings-wrapper" id="3e9398f5-ecc4-429a-9949-18fafc16d752">  <div class="container layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+<div
+  data-quickedit-entity-id="block_content/2361"  class="block block-layout-builder block-inline-blockbasic block__basic block--view-mode-default">
+  
+    
+      <div class="content">
+      <div class="layout-settings-wrapper">  <div class="layout layout--onecol">
+    <div  class="layout__region layout__region--content">
+      
+  <div class="block block-layout-builder block-field-blockblock-contentbasicfield-title block-field block-field__">
+    
+        
+          <div class="content">
+        
+            <div class="field field--name-field-title field--type-string field--label-hidden field__item"><h2 class="basic__title">Cuantías</h2>
+</div>
+      
+      </div>
+      </div>
+
+  <div class="block block-layout-builder block-field-blockblock-contentbasicbody block-field block-field__">
+    
+        
+          <div class="content">
+        
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><table border="1" cellpadding="1" cellspacing="1" style="width: 546px;">
+	<tbody>
+		<tr>
+			<td class="text-align-center">
+			<p><strong>Año</strong></p>
+			</td>
+			<td class="text-align-center">
+			<p><strong>IPREM Mensual</strong></p>
+			</td>
+			<td class="text-align-center" style="width: 152px;">
+			<p><strong>IPREM Mensual </strong></p>
+
+			<p><strong>(12 pagas)</strong></p>
+			</td>
+			<td class="text-align-center" style="width: 137px;">
+			<p><strong>IPREM Anual </strong></p>
+
+			<p><strong>(14 pagas)</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td class="text-align-center">2026</td>
+			<td class="text-align-center">600,00 €</td>
+			<td class="text-align-center" style="width: 152px;">7.200,00 €</td>
+			<td class="text-align-center" style="width: 137px;">8.400,00 €</td>
+		</tr>
+		<tr>
+			<td class="text-align-center">2025</td>
+			<td class="text-align-center">600,00 €</td>
+			<td class="text-align-center" style="width: 152px;">7.200,00 €</td>
+			<td class="text-align-center" style="width: 137px;">8.400,00 €</td>
+		</tr>
+		<tr>
+			<td class="text-align-center">2024</td>
+			<td class="text-align-center">600,00 €</td>
+			<td class="text-align-center" style="width: 152px;">7.200,00 €</td>
+			<td class="text-align-center" style="width: 137px;">8.400,00 €</td>
+		</tr>
+		<tr>
+			<td class="text-align-center">2023</td>
+			<td class="text-align-center">600,00 €</td>
+			<td class="text-align-center" style="width: 152px;">7.200,00 €</td>
+			<td class="text-align-center" style="width: 137px;">8.400,00 €</td>
+		</tr>
+		<tr>
+			<td class="text-align-center">2022</td>
+			<td class="text-align-center">579,02 €</td>
+			<td class="text-align-center" style="width: 152px;">6.948,24 €</td>
+			<td class="text-align-center" style="width: 137px;">8.106,28 €</td>
+		</tr>
+		<tr>
+			<td class="text-align-center">2021</td>
+			<td class="text-align-center">564,90 €</td>
+			<td class="text-align-center" style="width: 152px;">6.778,80 €</td>
+			<td class="text-align-center" style="width: 137px;">7.908,60 €</td>
+		</tr>
+		<tr>
+			<td class="text-align-center">2020</td>
+			<td class="text-align-center">537,84 €</td>
+			<td class="text-align-center" style="width: 152px;">6.454,03 €</td>
+			<td class="text-align-center" style="width: 137px;">7.519,59 €</td>
+		</tr>
+		<tr>
+			<td class="text-align-center">2019</td>
+			<td class="text-align-center">537,84 €</td>
+			<td class="text-align-center" style="width: 152px;">6.454,03 €</td>
+			<td class="text-align-center" style="width: 137px;">7.519,59 €</td>
+		</tr>
+		<tr>
+			<td class="text-align-center">2018</td>
+			<td class="text-align-center">537,84 €</td>
+			<td class="text-align-center" style="width: 152px;">6.454,03 €</td>
+			<td class="text-align-center" style="width: 137px;">7.519,59 €</td>
+		</tr>
+		<tr>
+			<td class="text-align-center">2017</td>
+			<td class="text-align-center">537,84 €</td>
+			<td class="text-align-center" style="width: 152px;">6.454,03 €</td>
+			<td class="text-align-center" style="width: 137px;">7.519,59 €</td>
+		</tr>
+		<tr>
+			<td class="text-align-center">2016</td>
+			<td class="text-align-center">532,51 €</td>
+			<td class="text-align-center" style="width: 152px;">6.390,13 €</td>
+			<td class="text-align-center" style="width: 137px;">7.455,14 €</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+</div>
+      
+      </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+</article>
+</div>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+
+                </section>
+                            </main>
+          </div>
+        </div>
+          </div>
+    <footer class="site-footer">
+                                <div class="site-footer__top clearfix">
+            <div class="container top-container">
+              
+            </div>
+          </div>
+                          <div class="site-footer__second clearfix">
+            <div class="container second-container">
+              
+            </div>
+          </div>
+                          <div class="site-footer__third clearfix">
+            <div class="container third-container">
+                <section class="row region region-footer-third">
+    <nav role="navigation" aria-labelledby="block-vivienda-footer-menu" id="block-vivienda-footer" class="block block-menu navigation menu--footer">
+            
+  <h2 class="visually-hidden" id="block-vivienda-footer-menu">Menú del pie</h2>
+  
+
+        
+              <ul class="clearfix nav flex-row" data-component-id="bootstrap_barrio:menu_columns">
+                    <li class="nav-item">
+                <a href="/directorio" class="nav-link nav-link--directorio" title="address" data-drupal-link-system-path="node/204">Directorio</a>
+              </li>
+                <li class="nav-item">
+                <a href="/planes-normativa" class="nav-link nav-link--planes-normativa" data-drupal-link-system-path="node/182">Normativa</a>
+              </li>
+                <li class="nav-item">
+                <a href="/preguntas-frecuentes" class="nav-link nav-link--preguntas-frecuentes" data-drupal-link-system-path="node/94">Preguntas frecuentes</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+
+  </section>
+
+            </div>
+          </div>
+                          <div class="site-footer__fourth clearfix">
+            <div class="container fourth-container">
+                <section class="row region region-footer-fourth-left">
+            <div class="d-inline-block align-top site-name-slogan">
+      Consejería de Fomento. Dirección General de Vivienda
+    </div>
+  <nav role="navigation" aria-labelledby="block-vivienda-informaciondelainstitucion-menu" id="block-vivienda-informaciondelainstitucion" class="block block-menu navigation menu--institution-information">
+            
+  <h2 class="visually-hidden" id="block-vivienda-informaciondelainstitucion-menu">Información de la institución</h2>
+  
+
+        
+        <ul class="clearfix nav">
+                  <li class="nav-item address">
+                <span class="address nav-link nav-link-">Paseo Cristo de la Vega, s/n - 45071 Toledo</span>
+              </li>
+                <li class="nav-item mail">
+                <a href="mailto:dgvivienda.fomento@jccm.es" class="mail nav-link nav-link-mailtodgviviendafomentojccmes">dgvivienda.fomento@jccm.es</a>
+              </li>
+                <li class="nav-item telephone">
+                <span class="telephone nav-link nav-link-">925286872</span>
+              </li>
+      </ul>
+    
+
+
+  </nav>
+
+  </section>
+
+                              <section class="row region region-footer-fourth-right">
+  <div class="logos">
+  
+  <a style="color:transparent;" href="https://www.castillalamancha.es" title="Ir a la página de inicio del Gobierno de Castilla-La Mancha"
+     target="_blank">
+    <span style="font-size: 0;">Ir a la página de inicio del Gobierno de Castilla-La Mancha</span>
+          <svg width="126" height="80" viewBox="0 0 126 80" fill="none" role="img" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_506_1135)">
+          <path
+            d="M76.1624 21.0913H50.3181C49.612 21.0834 48.9315 21.3555 48.4256 21.8481C47.9197 22.3407 47.6295 23.0136 47.6185 23.7197V49.1309C47.6185 52.4 49.3984 55.0105 52.6972 56.6718C55.3552 57.9949 58.9981 58.7009 63.2402 58.7009C67.4824 58.7009 71.1431 57.9949 73.8011 56.6718C77.1176 55.0105 78.8679 52.4 78.8679 49.1309V23.7078C78.8554 23.0012 78.5639 22.3283 78.057 21.8359C77.5501 21.3434 76.8691 21.0715 76.1624 21.0795V21.0913ZM60.4339 43.2097C60.433 43.3908 60.3643 43.565 60.2413 43.6979C60.1183 43.8308 59.9499 43.9128 59.7694 43.9276H56.8859V41.3408C56.8859 40.9836 56.7441 40.6411 56.4915 40.3885C56.2389 40.1359 55.8963 39.994 55.5391 39.994C55.182 39.994 54.8394 40.1359 54.5868 40.3885C54.3342 40.6411 54.1924 40.9836 54.1924 41.3408V41.3764V43.9276H51.3089C51.1284 43.9128 50.96 43.8308 50.837 43.6979C50.714 43.565 50.6453 43.3908 50.6444 43.2097V43.0733L51.3089 35.9536V33.8652H53.3677V35.9002H54.5246V31.7708H56.5834V35.8528H57.7284V33.8177H59.7813V35.9239L60.4458 43.097L60.4339 43.2097ZM76.8803 48.2232C76.8803 56.4641 64.8125 56.6659 64.7947 56.6481C63.4835 56.6955 63.5547 55.1945 63.5547 55.1945V24.5444C63.5303 24.1732 63.6539 23.8075 63.8985 23.5272C64.1432 23.247 64.4889 23.0751 64.86 23.0492H75.5394C75.877 23.0691 76.1954 23.2126 76.4339 23.4522C76.6725 23.6919 76.8145 24.0109 76.8329 24.3486V25.6005L76.8803 48.2232Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M65.1626 2.59807H63.887V1.31655C63.8716 1.15648 63.7972 1.00788 63.6782 0.899746C63.5591 0.791616 63.4041 0.73172 63.2433 0.73172C63.0825 0.73172 62.9274 0.791616 62.8084 0.899746C62.6894 1.00788 62.6149 1.15648 62.5995 1.31655V2.59807H61.318C61.1481 2.59807 60.9851 2.66559 60.8649 2.78576C60.7447 2.90593 60.6772 3.06891 60.6772 3.23885C60.6772 3.40879 60.7447 3.57177 60.8649 3.69194C60.9851 3.81211 61.1481 3.87961 61.318 3.87961H62.5995V5.15523C62.6149 5.3153 62.6894 5.46389 62.8084 5.57202C62.9274 5.68015 63.0825 5.74004 63.2433 5.74004C63.4041 5.74004 63.5591 5.68015 63.6782 5.57202C63.7972 5.46389 63.8716 5.3153 63.887 5.15523V3.88555H65.1626C65.3326 3.88555 65.4956 3.81805 65.6157 3.69788C65.7359 3.57771 65.8034 3.41473 65.8034 3.24479C65.8034 3.07485 65.7359 2.91185 65.6157 2.79168C65.4956 2.67151 65.3326 2.60401 65.1626 2.60401"
+            fill="#0E2E4F"/>
+          <path
+            d="M72.9705 7.09535C71.9209 7.09771 70.9075 7.47906 70.1168 8.16923C69.6895 7.72085 69.1746 7.36516 68.604 7.12428C68.0335 6.8834 67.4195 6.76247 66.8002 6.76902C66.1208 6.76497 65.449 6.91191 64.8334 7.19921C64.2178 7.48651 63.6736 7.907 63.2404 8.43028C62.803 7.9117 62.2581 7.4945 61.6434 7.20763C61.0287 6.92076 60.3589 6.77109 59.6805 6.76902C59.0616 6.76457 58.4482 6.88646 57.8779 7.12722C57.3076 7.36797 56.7925 7.72254 56.364 8.16923C55.5737 7.43662 54.5354 7.03025 53.4578 7.03178C52.3802 7.03331 51.3431 7.44262 50.5549 8.17747C49.7667 8.91232 49.2858 9.91824 49.2089 10.9931C49.132 12.068 49.4647 13.1321 50.1402 13.9717C50.2532 14.1574 50.4092 14.3131 50.5951 14.4257C50.781 14.5382 50.9913 14.6044 51.2082 14.6184C51.3872 14.6258 51.5652 14.5877 51.7256 14.5077C51.886 14.4277 52.0235 14.3084 52.1254 14.1609C52.2272 14.0135 52.2901 13.8426 52.3082 13.6643C52.3262 13.486 52.2989 13.306 52.2286 13.1411C51.823 12.6451 51.5806 12.0359 51.5345 11.3968C51.5313 10.8664 51.7377 10.3562 52.1088 9.97733C52.48 9.59842 52.9858 9.38145 53.5161 9.37364C53.8581 9.37656 54.1944 9.46226 54.4961 9.62345C54.7978 9.78463 55.056 10.0165 55.2486 10.2992C55.1576 10.658 55.1117 11.0267 55.1121 11.3968C55.1118 11.9885 55.2184 12.5754 55.4265 13.1292C55.5033 13.4069 55.6679 13.6523 55.8957 13.8288C56.1234 14.0052 56.4022 14.1033 56.6903 14.1082C56.8616 14.1106 57.0316 14.0786 57.1903 14.0142C57.3491 13.9497 57.4932 13.8541 57.6144 13.733C57.7355 13.6118 57.8311 13.4677 57.8956 13.3089C57.96 13.1502 57.992 12.9802 57.9896 12.8089C57.9553 12.5692 57.8936 12.3343 57.8057 12.1088C57.6869 11.8047 57.6441 11.4763 57.6811 11.1519C57.7181 10.8276 57.8336 10.5172 58.0178 10.2476C58.202 9.97811 58.4492 9.75762 58.7379 9.6053C59.0266 9.45299 59.3482 9.37347 59.6746 9.37364C60.2086 9.37206 60.7214 9.58226 61.1006 9.95818C61.4799 10.3341 61.6946 10.845 61.6978 11.379V12.9572C61.7008 13.3649 61.8633 13.7552 62.1505 14.0446C62.4377 14.334 62.8268 14.4995 63.2344 14.5057C63.6436 14.501 64.0344 14.3352 64.3221 14.0442C64.6098 13.7532 64.7711 13.3605 64.7711 12.9513V11.379C64.7691 11.0823 64.8328 10.7887 64.9576 10.5195C65.0825 10.2503 65.2653 10.012 65.4931 9.8218C65.7209 9.63158 65.9879 9.49412 66.2751 9.41928C66.5623 9.34444 66.8624 9.33407 67.1541 9.38892C67.4457 9.44377 67.7216 9.56248 67.962 9.73654C68.2023 9.91059 68.4012 10.1357 68.5443 10.3956C68.6874 10.6556 68.7712 10.944 68.7897 11.2402C68.8082 11.5364 68.7609 11.833 68.6513 12.1088C68.5641 12.3338 68.5063 12.5691 68.4792 12.8089C68.4743 12.9814 68.5047 13.153 68.5686 13.3133C68.6325 13.4736 68.7286 13.6191 68.8509 13.7408C68.9732 13.8625 69.1191 13.9579 69.2797 14.0211C69.4402 14.0843 69.612 14.114 69.7845 14.1082C70.0703 14.0998 70.3459 14.0003 70.5711 13.8242C70.7963 13.6481 70.9593 13.4046 71.0364 13.1292C71.2453 12.5733 71.3538 11.9847 71.3568 11.3909C71.3544 11.0205 71.3065 10.6519 71.2144 10.2932C71.4083 10.0124 71.6669 9.7822 71.9684 9.62216C72.2699 9.46212 72.6055 9.37689 72.9468 9.37364C73.4777 9.38144 73.9841 9.59823 74.3562 9.97697C74.7282 10.3557 74.936 10.8659 74.9344 11.3968C74.8789 12.0327 74.6398 12.6387 74.2461 13.1411C74.1732 13.3044 74.1433 13.4836 74.159 13.6617C74.1748 13.8399 74.2357 14.011 74.3362 14.159C74.4366 14.3069 74.5731 14.4268 74.7328 14.5072C74.8926 14.5876 75.0702 14.6259 75.2488 14.6184C75.4712 14.6107 75.6881 14.5474 75.8798 14.4345C76.0714 14.3215 76.2319 14.1625 76.3464 13.9717C76.929 13.2325 77.2485 12.3202 77.2542 11.379C77.2542 10.8165 77.1434 10.2594 76.9281 9.73972C76.7128 9.22001 76.3973 8.74778 75.9995 8.35C75.6018 7.95223 75.1295 7.6367 74.6098 7.42142C74.0901 7.20615 73.5331 7.09535 72.9705 7.09535Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M67.5239 17.6918C67.5228 17.9736 67.6053 18.2495 67.761 18.4845C67.9168 18.7194 68.1387 18.9028 68.3988 19.0115C68.6589 19.1202 68.9454 19.1493 69.222 19.095C69.4986 19.0407 69.7529 18.9056 69.9526 18.7067C70.1523 18.5078 70.2886 18.254 70.344 17.9777C70.3994 17.7013 70.3716 17.4147 70.264 17.1542C70.1564 16.8936 69.9739 16.6709 69.7396 16.5142C69.5053 16.3574 69.2297 16.2738 68.9479 16.2738C68.7609 16.2722 68.5756 16.3077 68.4025 16.3784C68.2294 16.449 68.072 16.5533 67.9396 16.6852C67.8071 16.8171 67.7022 16.974 67.6308 17.1468C67.5595 17.3196 67.5231 17.5048 67.5239 17.6918Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M56.1621 17.6918C56.1609 17.9736 56.2435 18.2495 56.3992 18.4845C56.555 18.7194 56.7769 18.9028 57.037 19.0115C57.2971 19.1202 57.5836 19.1493 57.8602 19.095C58.1368 19.0407 58.3911 18.9056 58.5908 18.7067C58.7906 18.5078 58.9268 18.254 58.9822 17.9777C59.0376 17.7013 59.0098 17.4147 58.9022 17.1542C58.7946 16.8936 58.6121 16.6709 58.3778 16.5142C58.1435 16.3574 57.8679 16.2738 57.5861 16.2738C57.3991 16.2722 57.2138 16.3077 57.0407 16.3784C56.8676 16.449 56.7102 16.5533 56.5778 16.6852C56.4453 16.8171 56.3404 16.974 56.269 17.1468C56.1977 17.3196 56.1613 17.5048 56.1621 17.6918Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M73.1899 17.6917C73.1899 17.9722 73.2731 18.2463 73.4289 18.4795C73.5847 18.7127 73.8062 18.8945 74.0653 19.0018C74.3244 19.1091 74.6095 19.1372 74.8846 19.0825C75.1596 19.0278 75.4123 18.8927 75.6106 18.6944C75.8089 18.4961 75.944 18.2434 75.9987 17.9684C76.0534 17.6933 76.0253 17.4082 75.918 17.1491C75.8107 16.89 75.6289 16.6685 75.3957 16.5127C75.1625 16.3569 74.8884 16.2737 74.6079 16.2737C74.2319 16.2737 73.8712 16.4231 73.6053 16.6891C73.3393 16.955 73.1899 17.3157 73.1899 17.6917Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M61.8283 17.6917C61.8283 17.9722 61.9114 18.2464 62.0672 18.4795C62.223 18.7127 62.4445 18.8945 62.7036 19.0018C62.9627 19.1091 63.2478 19.1372 63.5229 19.0825C63.798 19.0278 64.0506 18.8927 64.2489 18.6944C64.4472 18.4961 64.5823 18.2435 64.637 17.9684C64.6917 17.6933 64.6636 17.4082 64.5563 17.1491C64.449 16.89 64.2672 16.6685 64.034 16.5127C63.8009 16.3569 63.5267 16.2738 63.2462 16.2738C63.0598 16.273 62.8751 16.3091 62.7027 16.3801C62.5303 16.4511 62.3737 16.5555 62.2418 16.6873C62.11 16.8191 62.0056 16.9758 61.9346 17.1482C61.8636 17.3206 61.8275 17.5053 61.8283 17.6917Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M50.4546 17.6917C50.4546 17.9724 50.5379 18.2468 50.694 18.4802C50.8501 18.7135 51.0719 18.8952 51.3313 19.0024C51.5908 19.1095 51.8762 19.1372 52.1514 19.082C52.4266 19.0269 52.6793 18.8912 52.8774 18.6923C53.0754 18.4934 53.21 18.2402 53.2641 17.9647C53.3181 17.6893 53.2892 17.404 53.1809 17.145C53.0727 16.886 52.89 16.6649 52.6561 16.5098C52.4221 16.3547 52.1474 16.2726 51.8667 16.2738C51.4916 16.2753 51.1325 16.4254 50.8678 16.6912C50.6032 16.9569 50.4546 17.3167 50.4546 17.6917Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M72.1339 72.3588V78.7546C72.1282 78.8356 72.093 78.9116 72.0351 78.9685C71.9772 79.0253 71.9005 79.059 71.8194 79.0631L70.5023 79.1402C70.4311 79.1402 69.9505 79.1877 69.909 78.5469C69.909 78.4698 69.5055 79.336 67.6425 79.2767C66.9246 79.2767 65.4414 78.6834 65.2693 76.1915C65.2314 75.6041 65.348 75.0171 65.6075 74.4887C65.8158 74.0465 66.1449 73.6722 66.5568 73.4089C67.0235 73.1175 67.5407 72.9162 68.0816 72.8156C68.5859 72.7266 69.108 72.6614 69.642 72.602C69.7285 72.593 69.8083 72.551 69.8646 72.4847C69.921 72.4184 69.9496 72.3329 69.9446 72.2461C69.9418 72.0782 69.8996 71.9134 69.8212 71.765C69.7429 71.6165 69.6307 71.4887 69.4936 71.3917C69.0753 71.1611 68.6 71.0541 68.1231 71.0832C67.7122 71.0905 67.3077 71.1856 66.9365 71.362C66.6873 71.4748 66.4856 71.5637 66.3432 71.6468L66.2068 71.6765C66.1191 71.675 66.0355 71.6395 65.9735 71.5775C65.9115 71.5155 65.876 71.4319 65.8745 71.3442V69.6711C65.8735 69.5931 65.9004 69.5172 65.9505 69.4574C66.0006 69.3975 66.0704 69.3576 66.1474 69.3448C66.3669 69.2795 66.6577 69.2024 67.0196 69.1193C67.5353 69.0013 68.0627 68.9416 68.5918 68.9413C72.1517 68.9413 72.1517 71.184 72.1517 72.3588H72.1339ZM69.9624 74.8091C69.9629 74.7635 69.9535 74.7183 69.9348 74.6767C69.9161 74.6351 69.8886 74.5981 69.8542 74.5682C69.8197 74.5382 69.7792 74.5162 69.7354 74.5035C69.6916 74.4908 69.6455 74.4878 69.6005 74.4947C69.1272 74.5514 68.6604 74.6527 68.2062 74.7973C67.9919 74.877 67.8131 75.0306 67.7019 75.2304C67.5211 75.6216 67.4731 76.0612 67.5654 76.4822C67.6311 76.7204 67.7844 76.9249 67.9946 77.0547C68.2048 77.1846 68.4563 77.2302 68.6986 77.1824C68.9332 77.1685 69.162 77.1037 69.3691 76.9925C69.5495 76.8862 69.7151 76.7566 69.8615 76.6068C69.8937 76.5751 69.9193 76.5372 69.9366 76.4954C69.9539 76.4537 69.9627 76.4088 69.9624 76.3636V74.8091Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M93.4928 72.3588V78.7546C93.4871 78.8356 93.452 78.9116 93.3941 78.9685C93.3361 79.0253 93.2594 79.059 93.1784 79.0631L91.8553 79.1402C91.7841 79.1402 91.3095 79.1877 91.262 78.5469C91.262 78.4698 90.8586 79.336 88.9956 79.2767C88.2777 79.2767 86.7944 78.6834 86.6224 76.1915C86.5893 75.6038 86.7078 75.0175 86.9665 74.4887C87.1769 74.0461 87.508 73.6718 87.9217 73.4089C88.3862 73.1174 88.9015 72.9161 89.4406 72.8156C89.9449 72.7266 90.467 72.6614 91.0009 72.602C91.0875 72.593 91.1672 72.551 91.2236 72.4847C91.2799 72.4184 91.3086 72.3329 91.3035 72.2461C91.3005 72.0789 91.2588 71.9148 91.1816 71.7665C91.1044 71.6183 90.9938 71.4899 90.8586 71.3917C90.4377 71.1618 89.9608 71.0549 89.4821 71.0832C89.0712 71.0905 88.6666 71.1856 88.2955 71.362C88.0463 71.4748 87.8446 71.5637 87.7022 71.6468L87.5657 71.6765C87.4776 71.6765 87.3931 71.6415 87.3308 71.5792C87.2685 71.5169 87.2335 71.4324 87.2335 71.3442V69.6711C87.231 69.5936 87.2566 69.5178 87.3057 69.4578C87.3548 69.3978 87.424 69.3577 87.5005 69.3448C87.7259 69.2795 88.0107 69.2024 88.3726 69.1193C88.8904 69.0013 89.4197 68.9416 89.9508 68.9413C93.5106 68.9413 93.5106 71.184 93.5106 72.3588H93.4928ZM91.3213 74.8091C91.3219 74.7635 91.3125 74.7183 91.2938 74.6767C91.2751 74.6351 91.2476 74.5981 91.2131 74.5682C91.1787 74.5382 91.1382 74.5162 91.0944 74.5035C91.0506 74.4908 91.0045 74.4878 90.9594 74.4947C90.4863 74.552 90.0195 74.6533 89.5652 74.7973C89.3509 74.877 89.1721 75.0306 89.0608 75.2304C88.8829 75.6224 88.8351 76.0611 88.9244 76.4822C88.9901 76.7204 89.1434 76.9249 89.3536 77.0547C89.5637 77.1846 89.8152 77.2302 90.0576 77.1824C90.2922 77.1685 90.521 77.1037 90.728 76.9925C90.9073 76.8845 91.0726 76.755 91.2205 76.6068C91.2535 76.5754 91.2799 76.5377 91.2983 76.4959C91.3166 76.4542 91.3265 76.4092 91.3273 76.3636L91.3213 74.8091Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M126 72.3529V78.7428C125.996 78.8242 125.961 78.901 125.903 78.9581C125.844 79.0152 125.767 79.0484 125.686 79.0513L124.368 79.1284C124.297 79.1284 123.823 79.1818 123.775 78.5648C123.775 78.4876 123.372 79.3539 121.509 79.2945C120.791 79.2945 119.302 78.7012 119.135 76.2153C119.095 75.6022 119.213 74.989 119.48 74.4354C119.69 73.9942 120.021 73.6218 120.435 73.3615C120.898 73.0739 121.415 72.8841 121.954 72.8038C122.458 72.7089 122.98 72.6436 123.514 72.5843C123.601 72.5738 123.681 72.5306 123.737 72.4633C123.793 72.3961 123.822 72.3099 123.817 72.2223C123.813 72.0564 123.77 71.8936 123.692 71.7472C123.614 71.6008 123.502 71.475 123.366 71.3799C122.949 71.1438 122.472 71.0364 121.995 71.0713C121.585 71.0764 121.18 71.1695 120.809 71.3443C120.559 71.4511 120.358 71.546 120.215 71.629C120.17 71.6357 120.124 71.6357 120.079 71.629C120.035 71.6298 119.992 71.622 119.952 71.6059C119.912 71.5899 119.875 71.566 119.844 71.5356C119.813 71.5052 119.789 71.469 119.772 71.429C119.755 71.389 119.747 71.3461 119.747 71.3027V69.6296C119.749 69.5518 119.777 69.4768 119.826 69.4166C119.875 69.3565 119.943 69.3145 120.019 69.2974C120.239 69.238 120.53 69.1609 120.892 69.0778C121.407 68.9603 121.935 68.9006 122.464 68.8998C126.024 68.8998 126.024 71.1425 126.024 72.3232L126 72.3529ZM123.84 74.7617C123.841 74.7161 123.831 74.6709 123.813 74.6293C123.794 74.5877 123.767 74.5506 123.732 74.5207C123.698 74.4908 123.657 74.4687 123.613 74.456C123.57 74.4434 123.524 74.4404 123.478 74.4472C123.005 74.5048 122.538 74.6082 122.084 74.7558C121.868 74.8317 121.688 74.9863 121.58 75.1889C121.402 75.5767 121.354 76.0116 121.443 76.4289C121.508 76.6681 121.661 76.874 121.871 77.0051C122.081 77.1361 122.333 77.1825 122.577 77.1349C122.812 77.1188 123.04 77.052 123.247 76.9391C123.43 76.8391 123.596 76.711 123.739 76.5594C123.773 76.528 123.799 76.4903 123.817 76.4485C123.836 76.4067 123.845 76.3617 123.846 76.3161L123.84 74.7617Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M49.173 72.3529V78.7427C49.1675 78.8243 49.1326 78.9011 49.0748 78.9589C49.017 79.0167 48.9401 79.0517 48.8586 79.0572L47.5414 79.1343C47.4702 79.1343 46.9956 79.1818 46.9481 78.541C46.9481 78.4639 46.5447 79.3301 44.6817 79.2708C43.9638 79.2708 42.4806 78.6775 42.3085 76.1915C42.2573 75.5785 42.3742 74.9631 42.6467 74.4116C42.8566 73.9686 43.1878 73.5942 43.6019 73.3318C44.0677 73.0502 44.5834 72.8608 45.1208 72.7741C45.6251 72.6792 46.1472 72.6139 46.6812 72.5546C46.7677 72.5456 46.8474 72.5035 46.9038 72.4372C46.9602 72.3709 46.9888 72.2855 46.9837 72.1986C46.9808 72.0323 46.939 71.869 46.8617 71.7217C46.7845 71.5744 46.6739 71.4472 46.5388 71.3502C46.119 71.1175 45.6412 71.0105 45.1623 71.0417C44.7522 71.0496 44.3481 71.1425 43.9757 71.3146L43.3824 71.5994H43.24C43.1519 71.5994 43.0674 71.5644 43.0051 71.502C42.9428 71.4397 42.9078 71.3552 42.9078 71.2671V69.594C42.9076 69.5171 42.9342 69.4426 42.9829 69.3831C43.0315 69.3236 43.0994 69.2828 43.1747 69.2677C43.3943 69.2024 43.685 69.1253 44.0469 69.0422C44.5651 68.9268 45.0942 68.8671 45.6251 68.8642C49.1849 68.8642 49.1849 71.1129 49.1849 72.2876L49.173 72.3529ZM47.0016 74.732C46.9931 74.6908 46.9765 74.6517 46.9528 74.6171C46.929 74.5824 46.8985 74.5528 46.8631 74.5302C46.8277 74.5075 46.7881 74.4921 46.7467 74.485C46.7052 74.4779 46.6628 74.4792 46.6218 74.4888C46.1493 74.5523 45.6829 74.6555 45.2276 74.7973C45.011 74.8732 44.831 75.0278 44.7233 75.2304C44.545 75.6202 44.4972 76.0571 44.5868 76.4763C44.6525 76.7148 44.8055 76.9199 45.0155 77.0507C45.2255 77.1815 45.477 77.2285 45.72 77.1824C45.9545 77.1635 46.1826 77.0968 46.3904 76.9866C46.5733 76.8839 46.7394 76.7539 46.8829 76.6009C46.9157 76.5696 46.9416 76.5318 46.9589 76.4899C46.9763 76.448 46.9847 76.403 46.9837 76.3577L47.0016 74.732Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M16.1082 72.3588V78.7428C16.1039 78.8248 16.0694 78.9023 16.0113 78.9603C15.9533 79.0184 15.8757 79.0529 15.7937 79.0572L14.4707 79.1343C14.3995 79.1343 13.9248 79.1818 13.8774 78.5707C13.8774 78.4876 13.4799 79.3538 11.6169 79.3004C10.899 79.3004 9.40979 78.6775 9.24366 76.2153C9.19538 75.6024 9.31216 74.9878 9.58185 74.4354C9.79547 73.9948 10.1259 73.6213 10.5371 73.3555C11.0029 73.0739 11.5186 72.8846 12.0559 72.7978C12.5602 72.7029 13.0823 72.6377 13.6223 72.5783C13.7077 72.5667 13.7858 72.5239 13.8416 72.4582C13.8975 72.3925 13.9271 72.3085 13.9248 72.2223C13.9207 72.0556 13.8778 71.8922 13.7996 71.7449C13.7213 71.5976 13.6098 71.4706 13.4739 71.3739C13.0542 71.1413 12.5764 71.0342 12.0975 71.0654C11.6873 71.0734 11.2833 71.1663 10.9108 71.3383L10.3175 71.6231H10.1811C10.0934 71.6232 10.0091 71.5892 9.94605 71.5283C9.88296 71.4674 9.84597 71.3844 9.8429 71.2968V69.6237C9.84138 69.5458 9.86729 69.4698 9.91609 69.4091C9.96489 69.3484 10.0335 69.3067 10.1099 69.2914C10.3353 69.2261 10.6261 69.149 10.982 69.066C11.5004 68.9511 12.0294 68.8915 12.5602 68.888C16.1201 68.888 16.1201 71.1366 16.1201 72.3173L16.1082 72.3588ZM13.9308 74.7558C13.9304 74.7099 13.9202 74.6646 13.9009 74.623C13.8815 74.5814 13.8534 74.5444 13.8186 74.5146C13.7837 74.4848 13.7428 74.4628 13.6987 74.4502C13.6546 74.4375 13.6083 74.4345 13.5629 74.4413C13.0923 74.5052 12.6279 74.6084 12.1746 74.7498C11.9569 74.8236 11.7761 74.9788 11.6703 75.1829C11.4875 75.5714 11.4375 76.0092 11.5279 76.4289C11.5948 76.6678 11.749 76.873 11.96 77.0037C12.1709 77.1344 12.4232 77.1812 12.667 77.1349C12.9 77.1179 13.1266 77.0512 13.3315 76.9391C13.5155 76.838 13.6818 76.7078 13.824 76.5535C13.8571 76.5233 13.8837 76.4867 13.9021 76.4459C13.9204 76.4051 13.9302 76.3609 13.9308 76.3161V74.7558Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M109.512 69.5762C108.875 69.0613 108.062 68.8145 107.246 68.888C105.982 68.888 103.199 69.6118 103.199 74.1447C103.199 78.9979 106.439 79.3123 107.311 79.3123C108.087 79.3178 108.846 79.0882 109.488 78.6537C109.546 78.6135 109.593 78.5592 109.624 78.4959C109.655 78.4325 109.67 78.3623 109.666 78.2918V76.4467C109.67 76.41 109.666 76.3731 109.655 76.338C109.643 76.3029 109.626 76.2704 109.602 76.2423C109.578 76.2141 109.549 76.191 109.516 76.1741C109.484 76.1573 109.448 76.1471 109.411 76.1441C109.342 76.1259 109.269 76.1312 109.204 76.1591C109.138 76.1871 109.084 76.236 109.049 76.2983C108.943 76.417 108.824 77.0518 107.376 77.0518C107.1 77.0599 106.827 76.9957 106.583 76.8657C106.34 76.7356 106.135 76.5441 105.988 76.3102C105.622 75.6499 105.453 74.8982 105.501 74.1447C105.465 73.3859 105.629 72.6311 105.976 71.9554C106.106 71.7074 106.303 71.5005 106.544 71.358C106.785 71.2154 107.061 71.1429 107.341 71.1485C107.687 71.1598 108.026 71.2483 108.334 71.4074C108.642 71.5664 108.911 71.7922 109.121 72.0681C109.163 72.1152 109.218 72.1488 109.279 72.1647C109.34 72.1805 109.405 72.1779 109.465 72.1571C109.497 72.1557 109.53 72.1475 109.559 72.1331C109.589 72.1186 109.615 72.0982 109.636 72.0731C109.657 72.048 109.673 72.0188 109.682 71.9873C109.692 71.9558 109.694 71.9227 109.69 71.8901V69.95C109.684 69.814 109.632 69.6841 109.542 69.5821"
+            fill="#0E2E4F"/>
+          <path
+            d="M33.7649 65.9333V67.4878C33.7605 67.5739 33.7239 67.6552 33.6624 67.7157C33.6008 67.7761 33.5189 67.8112 33.4327 67.8141H31.7299C31.6428 67.8125 31.5598 67.7769 31.4988 67.7147C31.4377 67.6526 31.4036 67.5689 31.4036 67.4818V66.1232C31.4066 66.0356 31.4436 65.9526 31.5067 65.8917C31.5698 65.8308 31.6541 65.7968 31.7417 65.7969L33.4149 65.6011C33.5046 65.6011 33.5906 65.6367 33.654 65.7001C33.7174 65.7636 33.753 65.8496 33.753 65.9393"
+            fill="#0E2E4F"/>
+          <path
+            d="M37.04 65.5477H37.0044L35.8534 65.6841L35.4855 65.7197C35.3953 65.7213 35.3093 65.7582 35.246 65.8226C35.1828 65.887 35.1473 65.9736 35.1473 66.0638V78.9504C35.1473 79.0391 35.1821 79.1242 35.2443 79.1875C35.3064 79.2507 35.3909 79.287 35.4796 79.2886H37.0578C37.1414 79.2859 37.2211 79.2522 37.2814 79.1941C37.3417 79.136 37.3783 79.0577 37.3841 78.9742V65.8918C37.3849 65.8469 37.3767 65.8023 37.3601 65.7605C37.3434 65.7188 37.3187 65.6808 37.2872 65.6488C37.2557 65.6168 37.2181 65.5913 37.1767 65.574C37.1353 65.5566 37.0908 65.5477 37.0459 65.5477"
+            fill="#0E2E4F"/>
+          <path
+            d="M115.528 68.8642C115.062 68.8299 114.596 68.9221 114.178 69.131C113.761 69.3398 113.407 69.6576 113.155 70.0508V65.957C113.152 65.87 113.115 65.7876 113.051 65.7277C112.988 65.6677 112.904 65.635 112.817 65.6367L111.63 65.7613L111.262 65.8028C111.218 65.8012 111.174 65.8084 111.133 65.8241C111.092 65.8397 111.054 65.8634 111.022 65.8937C110.99 65.9241 110.964 65.9606 110.946 66.001C110.929 66.0414 110.919 66.085 110.918 66.1291V78.9979C110.919 79.0407 110.928 79.083 110.945 79.1223C110.962 79.1616 110.987 79.1971 111.018 79.2269C111.049 79.2566 111.085 79.28 111.125 79.2957C111.165 79.3114 111.208 79.319 111.25 79.3183H112.829C112.911 79.32 112.99 79.2902 113.051 79.235C113.112 79.1798 113.149 79.1034 113.155 79.0216V72.8512C113.138 72.6894 113.157 72.5258 113.21 72.372C113.263 72.2182 113.349 72.0778 113.462 71.9608C113.575 71.8438 113.713 71.7529 113.865 71.6946C114.016 71.6362 114.179 71.6118 114.342 71.6231C115.777 71.6231 115.665 73.3615 115.665 73.5217V78.9741C115.663 79.0167 115.67 79.0592 115.685 79.099C115.7 79.1389 115.723 79.1753 115.752 79.2063C115.781 79.2372 115.817 79.262 115.856 79.2792C115.894 79.2964 115.937 79.3056 115.979 79.3064H117.551C117.723 79.3064 117.919 79.2233 117.919 78.9979V73.3022C117.919 72.1155 117.854 68.8702 115.546 68.8642"
+            fill="#0E2E4F"/>
+          <path
+            d="M7.98592 66.8707C7.98722 66.8088 7.97054 66.7478 7.9379 66.6952C7.90526 66.6425 7.85805 66.6005 7.80199 66.5741L7.39261 66.3071C7.15186 66.1625 6.89988 66.0375 6.63911 65.9333C6.35764 65.8268 6.06793 65.7435 5.77289 65.6841C5.42635 65.622 5.0748 65.5922 4.72274 65.5951C4.04474 65.5895 3.37599 65.7526 2.77671 66.0698C2.17943 66.3979 1.66893 66.8637 1.28751 67.4284C0.839015 68.0971 0.513526 68.8405 0.32636 69.6237C0.10128 70.554 -0.00831977 71.5085 4.05615e-05 72.4656C-0.0147701 73.4652 0.100913 74.4624 0.344158 75.4321C0.534184 76.1998 0.86403 76.9258 1.31718 77.574C1.7002 78.1227 2.2141 78.5673 2.81231 78.8673C3.40368 79.1611 4.05657 79.3095 4.71681 79.3005C5.08321 79.3134 5.44983 79.2816 5.80849 79.2055C6.09779 79.1312 6.38133 79.036 6.65691 78.9207C6.8875 78.8292 7.10981 78.718 7.32141 78.5885L7.81979 78.274C7.86563 78.2449 7.90329 78.2045 7.92924 78.1568C7.95518 78.109 7.96857 78.0555 7.96812 78.0011V75.6754C7.96656 75.5867 7.93024 75.5022 7.86699 75.4401C7.80373 75.3779 7.7186 75.3431 7.62993 75.3431C7.54233 75.3469 7.45863 75.3804 7.39261 75.4381L7.29768 75.5508C7.11042 75.742 6.91233 75.9222 6.70438 76.0907C6.4703 76.2974 6.20624 76.4674 5.92121 76.595C5.65048 76.7158 5.3574 76.7785 5.06092 76.7789C4.71409 76.7799 4.37197 76.6987 4.06258 76.5419C3.7532 76.3852 3.48536 76.1573 3.28101 75.8771C3.00495 75.482 2.80384 75.0396 2.68771 74.5718C2.50658 73.897 2.42267 73.1997 2.43852 72.5012C2.42647 71.8199 2.50225 71.1399 2.66398 70.478C2.78295 70.002 2.9837 69.5503 3.25728 69.1431C3.47406 68.8299 3.76302 68.5735 4.09977 68.3955C4.39614 68.2466 4.72333 68.1694 5.05499 68.1701C5.34925 68.1679 5.63989 68.2349 5.90341 68.3659C6.16841 68.4944 6.41733 68.6537 6.64504 68.8405C6.85618 69.0244 7.05442 69.2227 7.23835 69.4338L7.36295 69.5703C7.39464 69.6046 7.43322 69.6318 7.47616 69.6502C7.51909 69.6686 7.56542 69.6778 7.61213 69.6771C7.65626 69.6779 7.70011 69.6698 7.7411 69.6535C7.7821 69.6372 7.81943 69.6128 7.85092 69.5819C7.8824 69.5509 7.90741 69.514 7.92447 69.4733C7.94154 69.4326 7.95033 69.3889 7.95032 69.3448V66.9716"
+            fill="#0E2E4F"/>
+          <path
+            d="M20.8428 72.7089C20.4215 72.608 19.6562 72.5071 19.6562 71.7892C19.6562 71.0713 20.5936 70.9171 20.9318 70.9171C21.6972 70.9324 22.4334 71.2135 23.0143 71.7121C23.0641 71.7485 23.1231 71.7703 23.1847 71.775C23.2462 71.7797 23.3078 71.7672 23.3627 71.7389C23.4175 71.7105 23.4633 71.6675 23.4951 71.6145C23.5268 71.5616 23.5432 71.5009 23.5423 71.4392V69.6949C23.5419 69.6264 23.5215 69.5596 23.4835 69.5027C23.4456 69.4457 23.3918 69.4012 23.3287 69.3745C22.5844 68.9935 21.7619 68.7904 20.9258 68.7812C19.8282 68.7812 17.4313 69.2202 17.366 72.0206C17.3304 73.5276 18.0365 74.6608 19.3892 74.9515C19.6206 75.0049 19.8994 75.0821 20.4927 75.2185C21.086 75.355 21.6793 75.6042 21.5607 76.3458C21.4895 76.9391 20.7953 77.2298 20.0122 77.0756C19.2265 76.9948 18.4909 76.6521 17.9237 76.1026C17.8928 76.0669 17.8545 76.0383 17.8115 76.0188C17.7685 75.9994 17.7218 75.9895 17.6745 75.9898C17.6299 75.989 17.5856 75.9972 17.5442 76.0139C17.5028 76.0306 17.4652 76.0555 17.4336 76.0871C17.4021 76.1187 17.3772 76.1563 17.3605 76.1976C17.3438 76.239 17.3356 76.2834 17.3364 76.328V78.28C17.3364 78.3394 17.3524 78.3977 17.3827 78.4488C17.4129 78.5 17.4564 78.5421 17.5084 78.5707C18.3391 79.0442 19.2816 79.286 20.2376 79.2708C23.3881 79.1877 23.8568 77.4316 23.8568 76.506C23.8568 75.4262 24.0763 73.4801 20.8309 72.6851"
+            fill="#0E2E4F"/>
+          <path
+            d="M30.0093 69.3211V69.2914C30.0093 69.2017 29.9737 69.1157 29.9102 69.0523C29.8468 68.9889 29.7608 68.9532 29.6711 68.9532H27.8912V65.9274V65.8859C27.8897 65.7966 27.8535 65.7115 27.7904 65.6484C27.7274 65.5853 27.6422 65.5492 27.553 65.5477H27.4699L25.9451 65.7257C25.8644 65.7317 25.7888 65.7681 25.7338 65.8275C25.6788 65.8869 25.6483 65.965 25.6485 66.046V68.9354H25.0552C24.9681 68.937 24.8851 68.9727 24.8241 69.0348C24.7631 69.097 24.7289 69.1806 24.7289 69.2677V70.7569C24.7289 70.8456 24.7637 70.9307 24.8258 70.9939C24.888 71.0572 24.9725 71.0935 25.0611 71.0951H25.6544V76.2865C25.6544 79.0157 27.3631 79.2827 28.2353 79.2827C28.7384 79.2568 29.2385 79.1893 29.7304 79.0809C29.8009 79.0624 29.8632 79.0208 29.9073 78.9627C29.9514 78.9046 29.9748 78.8335 29.9737 78.7606V77.2951C29.971 77.2439 29.9569 77.1938 29.9325 77.1488C29.908 77.1037 29.8737 77.0646 29.8322 77.0345C29.7907 77.0043 29.7429 76.9838 29.6925 76.9745C29.642 76.9652 29.5901 76.9673 29.5406 76.9807C29.1551 77.1066 28.7395 77.1066 28.354 76.9807C27.9387 76.8264 27.9031 76.2746 27.8971 76.0136C27.8912 75.7525 27.8971 71.1247 27.8971 71.1247H29.677C29.7617 71.1234 29.8429 71.0904 29.9044 71.0322C29.9659 70.974 30.0033 70.8948 30.0093 70.8103V69.3448"
+            fill="#0E2E4F"/>
+          <path
+            d="M33.6997 69.2914C33.6997 69.2037 33.6657 69.1195 33.6049 69.0564C33.544 68.9933 33.461 68.9563 33.3734 68.9532H31.7892C31.7016 68.9532 31.6173 68.9872 31.5542 69.0481C31.4911 69.1089 31.4541 69.1919 31.451 69.2796V78.9623C31.451 79.052 31.4867 79.138 31.5501 79.2014C31.6135 79.2648 31.6995 79.3005 31.7892 79.3005H33.3496C33.4373 79.2989 33.5209 79.2634 33.5829 79.2015C33.6449 79.1395 33.6804 79.0558 33.6819 78.9682V69.2974"
+            fill="#0E2E4F"/>
+          <path
+            d="M63.8929 76.7611H60.3331C60.3331 76.7611 60.0068 76.7611 60.0068 76.4407V65.9452C59.9997 65.8571 59.963 65.7739 59.9027 65.7093C59.8424 65.6446 59.762 65.6023 59.6745 65.5892L58.4167 65.7375L58.0251 65.785C57.9779 65.7842 57.931 65.7928 57.8871 65.8104C57.8432 65.8279 57.8033 65.854 57.7696 65.8871C57.7359 65.9203 57.7091 65.9598 57.6909 66.0034C57.6726 66.0469 57.6632 66.0937 57.6632 66.141V78.9919C57.6632 79.0816 57.6988 79.1676 57.7623 79.2311C57.8257 79.2945 57.9117 79.3301 58.0014 79.3301H63.9344C64.0352 79.3286 64.1316 79.2883 64.2034 79.2176C64.2753 79.1469 64.317 79.0512 64.3201 78.9504V77.1705C64.3201 76.9213 64.2192 76.7967 63.9285 76.7967"
+            fill="#0E2E4F"/>
+          <path
+            d="M85.3942 72.4241V65.9986C85.3884 65.9135 85.3512 65.8336 85.2898 65.7744C85.2284 65.7152 85.1472 65.6809 85.062 65.6782H82.8727C82.8006 65.6768 82.73 65.6993 82.672 65.7422C82.6141 65.7852 82.572 65.8461 82.5523 65.9155L80.719 72.1452C80.7107 72.1844 80.689 72.2195 80.6576 72.2445C80.6261 72.2694 80.587 72.2825 80.5469 72.2817C80.5071 72.2814 80.4685 72.2679 80.4374 72.2431C80.4062 72.2184 80.3842 72.1839 80.3749 72.1452L78.5475 65.9155C78.5253 65.8476 78.4826 65.7883 78.4252 65.7457C78.3678 65.7032 78.2985 65.6796 78.2271 65.6782H76.0319C75.9477 65.6824 75.868 65.7173 75.8078 65.7763C75.7477 65.8354 75.7113 65.9145 75.7056 65.9986V78.9504C75.7055 79.0402 75.7399 79.1267 75.8017 79.1919C75.8636 79.257 75.9481 79.2959 76.0378 79.3005H77.5508C77.6034 79.3077 77.657 79.3031 77.7076 79.2869C77.7582 79.2707 77.8045 79.2434 77.8432 79.207C77.8819 79.1706 77.912 79.126 77.9312 79.0765C77.9504 79.0269 77.9582 78.9737 77.9542 78.9207V70.4424L79.5976 75.978C79.6128 76.0375 79.6485 76.0898 79.6984 76.1256C79.7484 76.1614 79.8093 76.1784 79.8706 76.1737H81.1936C81.2597 76.1813 81.3264 76.166 81.3825 76.1304C81.4386 76.0948 81.4809 76.041 81.5022 75.978L83.1456 70.4424V78.9801C83.1501 79.0641 83.1863 79.1432 83.2468 79.2016C83.3074 79.2599 83.3878 79.2932 83.4719 79.2945H85.062C85.1501 79.2945 85.2346 79.2595 85.2969 79.1972C85.3592 79.1349 85.3942 79.0504 85.3942 78.9623V72.4359"
+            fill="#0E2E4F"/>
+          <path
+            d="M55.1833 73.5336C55.1818 73.4443 55.1456 73.3592 55.0825 73.2961C55.0194 73.233 54.9343 73.1969 54.8451 73.1954H52.0862C51.9965 73.1954 51.9105 73.231 51.8471 73.2944C51.7837 73.3578 51.748 73.4439 51.748 73.5336V75.4321C51.7536 75.5137 51.7885 75.5905 51.8463 75.6483C51.9041 75.7061 51.9809 75.741 52.0625 75.7466H54.851C54.9391 75.7466 55.0237 75.7116 55.086 75.6493C55.1483 75.587 55.1833 75.5024 55.1833 75.4143V73.5336Z"
+            fill="#0E2E4F"/>
+          <path
+            d="M40.7184 65.5477H40.6888L39.5022 65.6841L39.1343 65.7197C39.0441 65.7213 38.9581 65.7582 38.8948 65.8226C38.8316 65.887 38.7961 65.9736 38.7961 66.0638V78.9504C38.7961 79.0391 38.8309 79.1242 38.8931 79.1875C38.9552 79.2507 39.0397 79.287 39.1284 79.2886H40.7006C40.7853 79.2873 40.8665 79.2543 40.928 79.1961C40.9895 79.1379 41.027 79.0587 41.0329 78.9742V65.8918C41.0337 65.8469 41.0255 65.8023 41.0089 65.7605C40.9922 65.7188 40.9674 65.6808 40.936 65.6488C40.9045 65.6168 40.8669 65.5913 40.8255 65.574C40.7841 65.5566 40.7396 65.5477 40.6947 65.5477"
+            fill="#0E2E4F"/>
+          <path
+            d="M99.5683 68.8642C99.1028 68.8319 98.6371 68.9249 98.2197 69.1335C97.8023 69.3422 97.4485 69.659 97.1951 70.0508V69.149C97.192 69.0619 97.1548 68.9796 97.0916 68.9196C97.0283 68.8597 96.9441 68.827 96.857 68.8286H96.8213L95.6644 68.9532L95.2966 68.9948C95.2089 68.9947 95.1246 69.0287 95.0615 69.0896C94.9984 69.1505 94.9615 69.2335 94.9584 69.3211V78.9979C94.9591 79.0407 94.9683 79.083 94.9855 79.1223C95.0026 79.1616 95.0273 79.1971 95.0581 79.2269C95.089 79.2566 95.1254 79.28 95.1653 79.2957C95.2052 79.3114 95.2478 79.3191 95.2906 79.3183H96.8629C96.9455 79.3201 97.0258 79.2905 97.0875 79.2354C97.1492 79.1804 97.1876 79.104 97.1951 79.0216V72.8512C97.1804 72.6898 97.2006 72.5271 97.2544 72.3742C97.3082 72.2213 97.3944 72.0819 97.507 71.9653C97.6196 71.8487 97.7561 71.7578 97.907 71.6988C98.058 71.6397 98.2199 71.6139 98.3817 71.6231C99.8175 71.6231 99.7048 73.3615 99.7048 73.5217V78.9742C99.7032 79.0167 99.7101 79.0592 99.7252 79.099C99.7402 79.1389 99.763 79.1754 99.7923 79.2063C99.8216 79.2372 99.8567 79.262 99.8957 79.2792C99.9347 79.2964 99.9767 79.3056 100.019 79.3064H101.592C101.769 79.3064 101.965 79.2233 101.965 78.9979V73.3022C101.965 72.1156 101.9 68.8702 99.5921 68.8642"
+            fill="#0E2E4F"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_506_1135">
+            <rect width="126" height="78.6484" fill="white" transform="translate(0 0.675781)"/>
+          </clipPath>
+        </defs>
+      </svg>
+      </a>
+</div>
+    <nav role="navigation"
+     aria-labelledby="block-vivienda-redessocialesjccm-menu" id="block-vivienda-redessocialesjccm" class="block block-menu navigation menu--social-jccm">
+            
+  <h2 class="visually-hidden" id="block-vivienda-redessocialesjccm-menu">Redes sociales JCCM</h2>
+  
+
+        
+                  <ul class="clearfix nav" data-component-id="bootstrap_barrio:menu">
+                    <li class="nav-item">
+                <a href="http://es-es.facebook.com/pages/Junta-de-Comunidades-de-Castilla-La-Mancha/169469269817126" class="facebook nav-link nav-link-http--es-esfacebookcom-pages-junta-de-comunidades-de-castilla-la-mancha-169469269817126">Facebook</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://twitter.com/@gobjccm" class="twitter nav-link nav-link-https--twittercom-gobjccm">Twitter</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+
+  </section>
+
+                          </div>
+          </div>
+                          <div class="site-footer__bottom">
+            <div class="container bottom-container">
+                <section class="row region region-footer-fifth">
+    <nav role="navigation" aria-labelledby="block-vivienda-menulegal-menu" id="block-vivienda-menulegal" class="block block-menu navigation menu--legal">
+            
+  <h2 class="visually-hidden" id="block-vivienda-menulegal-menu">Menú legal</h2>
+  
+
+        
+                  <ul class="clearfix nav" data-component-id="bootstrap_barrio:menu">
+                    <li class="nav-item">
+                <a href="https://www.castillalamancha.es/protecciondedatos" target="_blank" class="nav-link nav-link-https--wwwcastillalamanchaes-protecciondedatos">Protección de datos</a>
+              </li>
+                <li class="nav-item">
+                <a href="https://www.castillalamancha.es/avisolegal" target="_blank" class="nav-link nav-link-https--wwwcastillalamanchaes-avisolegal">Aviso legal</a>
+              </li>
+                <li class="nav-item">
+                <a href="/sitemap" class="nav-link nav-link--sitemap" data-drupal-link-system-path="sitemap">Mapa del sitio</a>
+              </li>
+                <li class="nav-item">
+                <a href="/declaracion-de-accesibilidad" class="nav-link nav-link--declaracion-de-accesibilidad" data-drupal-link-system-path="node/1">Accesiblidad</a>
+              </li>
+        </ul>
+  
+
+
+
+  </nav>
+
+  </section>
+
+              <div class="certifications-footer">
+                <a href="https://www.castillalamancha.es/gobierno/certificaciones" title="Ir a la página de certificados" id="enlace_aenor">
+                  <img src="/themes/contrib/hjccm/images/footer/certificaciones.png" alt="Imagen certificaciones">
+                </a>
+              </div>
+          </div>
+                  </footer>
+  </div>
+</div>
+
+  </div>
+
+<script async="async" type="text/javascript" src="https://vivienda--castillalamancha--es.insuit.net/i4tservice/insuit-app.js"></script>
+
+<script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/278","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"es"},"pluralDelimiter":"\u0003","behaviorHandler":{"sort":[]},"suppressDeprecationErrors":true,"matomo":{"disableCookies":false,"trackColorbox":false,"trackMailto":true},"ajaxTrustedUrl":{"\/buscar":true},"user":{"uid":0,"permissionsHash":"1e3378e2b9801a86971b8432755a25e273a4e2b9d67250a43cc36314a3444ab8"}}</script>
+<script src="/sites/default/files/js/js_-bdkUZPa55ahKd8hNcI3vfqNMzkJxxBme6pmuMdSX8w.js?scope=footer&amp;delta=0&amp;language=es&amp;theme=vivienda&amp;include=eJx9iUEOgCAMBD-E8iRSawUMbQ1FDb_3oDGePO3MLGolr4LkFpUGJ5ky-Q-PdsS_b7SU2aUVkX0sOkEZrPWSJT7RCCqmV1pgkj3M2bYC3TE0ZfX3XErUNxc"></script>
+<script src="/sites/default/files/js/js_V667-XZWEry7X2gvbCm9wTuGhcuV1de8WXj-HIP2ewk.js?scope=footer&amp;delta=1&amp;language=es&amp;theme=vivienda&amp;include=eJx9iUEOgCAMBD-E8iRSawUMbQ1FDb_3oDGePO3MLGolr4LkFpUGJ5ky-Q-PdsS_b7SU2aUVkX0sOkEZrPWSJT7RCCqmV1pgkj3M2bYC3TE0ZfX3XErUNxc"></script>
+
+</body>
+</html>

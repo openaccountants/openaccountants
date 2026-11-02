@@ -1,0 +1,16 @@
+{
+  "before_sha256": "db144091ffd7f9b5b414f47733f7bfa51b864e82bb583f765cf5ab4972203be3",
+  "before_bytes": 465133,
+  "proposed_sha256": "40b24c16565a99479623b8fda382d00467a31e19e91780f1e74dbe58c73f746e",
+  "proposed_bytes": 470201,
+  "whole_original_oa_blocks_exact": true,
+  "oa_blocks": 2,
+  "whole_individual_CLM_paragraph_byte_exact": true,
+  "old_URL_occurrences": 1084,
+  "all_old_URL_multiplicities_retained": true,
+  "protected_metadata_except_version_exact": true,
+  "H1_exact_no_old_body_version": true,
+  "H2_sequence_exact": true,
+  "byline_and_full_CTA_byte_exact": true,
+  "live_Guide_baseline_unchanged": true
+}

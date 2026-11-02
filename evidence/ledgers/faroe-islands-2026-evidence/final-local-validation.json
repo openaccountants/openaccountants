@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-28T17:27:23.238674+00:00",
+  "main_examples": "checked7files14oa-checkblocks0failures0missing",
+  "combined_examples": "checked11files30oa-checkblocks0failures0missing",
+  "canonical_schema": "checked2275guides,74non-guideMarkdownskipped,6137generatedfrontmatters,0errors;3inheritedwarninggroups:786missingSources,5stale,5agnosticjurisdiction",
+  "public_base_integrity": "origin/main worktree audit:8sourceGuides,0errors0warnings0notices",
+  "whitespace": "git diff --check exit0",
+  "independent_review": "453rows/132independentcontrols,F-L01\u201308closed,finalpath-onlysuccessorPASS,partiallycompletecountry"
+}

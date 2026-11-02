@@ -1,0 +1,236 @@
+[
+  {
+    "name": "goodwill yearly 100000/10",
+    "actual": "10000",
+    "expected": "10000",
+    "result": "pass"
+  },
+  {
+    "name": "fixed five-year right annual",
+    "actual": "20000",
+    "expected": "20000",
+    "result": "pass"
+  },
+  {
+    "name": "ten-year total acquisition deduction",
+    "actual": "100000",
+    "expected": "100000",
+    "result": "pass"
+  },
+  {
+    "name": "purchase year plus next nine last year",
+    "actual": "2035",
+    "expected": "2035",
+    "result": "pass"
+  },
+  {
+    "name": "five-year final year",
+    "actual": "2030",
+    "expected": "2030",
+    "result": "pass"
+  },
+  {
+    "name": "sale unrelieved basis after four deductions",
+    "actual": "60000",
+    "expected": "60000",
+    "result": "pass"
+  },
+  {
+    "name": "hypothetical sale proceeds80000 less unrelieved60000",
+    "actual": "20000",
+    "expected": "20000",
+    "result": "pass"
+  },
+  {
+    "name": "A pre-group+own group loss before shared loss",
+    "actual": "130000",
+    "expected": "130000",
+    "result": "pass"
+  },
+  {
+    "name": "B own capital net after prior capital loss",
+    "actual": "20000",
+    "expected": "20000",
+    "result": "pass"
+  },
+  {
+    "name": "B current loss after capital offset",
+    "actual": "80000",
+    "expected": "80000",
+    "result": "pass"
+  },
+  {
+    "name": "A proportional loss",
+    "actual": "52000",
+    "expected": "52000",
+    "result": "pass"
+  },
+  {
+    "name": "C proportional loss",
+    "actual": "28000",
+    "expected": "28000",
+    "result": "pass"
+  },
+  {
+    "name": "loss allocated once",
+    "actual": "80000",
+    "expected": "80000",
+    "result": "pass"
+  },
+  {
+    "name": "A final ordinary base",
+    "actual": "78000",
+    "expected": "78000",
+    "result": "pass"
+  },
+  {
+    "name": "C final ordinary base",
+    "actual": "42000",
+    "expected": "42000",
+    "result": "pass"
+  },
+  {
+    "name": "combined ordinary base",
+    "actual": "120000",
+    "expected": "120000",
+    "result": "pass"
+  },
+  {
+    "name": "combined tax",
+    "actual": "21600",
+    "expected": "21600",
+    "result": "pass"
+  },
+  {
+    "name": "B loss compensation",
+    "actual": "14400",
+    "expected": "14400",
+    "result": "pass"
+  },
+  {
+    "name": "A to parent loss compensation",
+    "actual": "9360",
+    "expected": "9360",
+    "result": "pass"
+  },
+  {
+    "name": "A to parent tax",
+    "actual": "14040",
+    "expected": "14040",
+    "result": "pass"
+  },
+  {
+    "name": "C own saving",
+    "actual": "5040",
+    "expected": "5040",
+    "result": "pass"
+  },
+  {
+    "name": "C own final tax",
+    "actual": "7560",
+    "expected": "7560",
+    "result": "pass"
+  },
+  {
+    "name": "C parent net cash",
+    "actual": "12600",
+    "expected": "12600",
+    "result": "pass"
+  },
+  {
+    "name": "loss capped at aggregate surplus",
+    "actual": "200000",
+    "expected": "200000",
+    "result": "pass"
+  },
+  {
+    "name": "loss cap preserves unused balance",
+    "actual": "100000",
+    "expected": "100000",
+    "result": "pass"
+  },
+  {
+    "name": "indexed-loss separating case",
+    "actual": "(200000, 0)",
+    "expected": "(200000, 0)",
+    "result": "pass"
+  },
+  {
+    "name": "proceeds equal unindexed book value",
+    "actual": "(0, 0)",
+    "expected": "(0, 0)",
+    "result": "pass"
+  },
+  {
+    "name": "full depreciation cap plus indexed gain",
+    "actual": "(300000, 100000)",
+    "expected": "(300000, 100000)",
+    "result": "pass"
+  },
+  {
+    "name": "disposal loss not negative taxable gain",
+    "actual": "(0, 0)",
+    "expected": "(0, 0)",
+    "result": "pass"
+  },
+  {
+    "name": "exactly2 main blocks",
+    "actual": "2",
+    "expected": "2",
+    "result": "pass"
+  },
+  {
+    "name": "two old blocks byte-exact",
+    "actual": "['```oa-check\\nname: Faroese company ordinary profit and equipment deductions\\ninputs:\\n  profit: 600000\\n  accounting_depreciation: 80000\\n  opening_pool: 200000\\n  additions: 100000\\n  separate_small_item: 20000\\n  depreciation_rate: 0.30\\n  tax_rate: 0.18\\nsteps:\\n  pool: opening_pool + additions\\n  pool_depreciation: pool * depreciation_rate\\n  closing_pool: pool - pool_depreciation\\n  tax_deductions: pool_depreciation + separate_small_item\\n  taxable: profit + accounting_depreciation - tax_deductions\\n  tax: taxable * tax_rate\\nexpected:\\n  pool_depreciation: 90000\\n  closing_pool: 210000\\n  tax_deductions: 110000\\n  taxable: 570000\\n  tax: 102600\\n```', '```oa-check\\nname: Faroese separate capital result and one-way ordinary loss relief\\ninputs:\\n  trading_loss: 150000\\n  company_interest: 30000\\n  share_gains: 240000\\n  security_loss: 100000\\n  exempt_dividends_on_security: 60000\\n  carried_capital_loss: 50000\\n  rate: 0.18\\nsteps:\\n  ordinary_loss: max(0, trading_loss - company_interest)\\n  allowed_security_loss: max(0, security_loss - exempt_dividends_on_security)\\n  current_capital_gain: share_gains - allowed_security_loss\\n  capital_loss_used: min(current_capital_gain, carried_capital_loss)\\n  capital_after_own_losses: current_capital_gain - capital_loss_used\\n  ordinary_loss_used: min(capital_after_own_losses, ordinary_loss)\\n  taxable_capital: capital_after_own_losses - ordinary_loss_used\\n  capital_tax: taxable_capital * rate\\n  capital_loss_remaining: carried_capital_loss - capital_loss_used\\n  ordinary_loss_remaining: ordinary_loss - ordinary_loss_used\\nexpected:\\n  ordinary_loss: 120000\\n  allowed_security_loss: 40000\\n  current_capital_gain: 200000\\n  capital_after_own_losses: 150000\\n  ordinary_loss_used: 120000\\n  taxable_capital: 30000\\n  capital_tax: 5400\\n  capital_loss_remaining: 0\\n  ordinary_loss_remaining: 0\\n```']",
+    "expected": "['```oa-check\\nname: Faroese company ordinary profit and equipment deductions\\ninputs:\\n  profit: 600000\\n  accounting_depreciation: 80000\\n  opening_pool: 200000\\n  additions: 100000\\n  separate_small_item: 20000\\n  depreciation_rate: 0.30\\n  tax_rate: 0.18\\nsteps:\\n  pool: opening_pool + additions\\n  pool_depreciation: pool * depreciation_rate\\n  closing_pool: pool - pool_depreciation\\n  tax_deductions: pool_depreciation + separate_small_item\\n  taxable: profit + accounting_depreciation - tax_deductions\\n  tax: taxable * tax_rate\\nexpected:\\n  pool_depreciation: 90000\\n  closing_pool: 210000\\n  tax_deductions: 110000\\n  taxable: 570000\\n  tax: 102600\\n```', '```oa-check\\nname: Faroese separate capital result and one-way ordinary loss relief\\ninputs:\\n  trading_loss: 150000\\n  company_interest: 30000\\n  share_gains: 240000\\n  security_loss: 100000\\n  exempt_dividends_on_security: 60000\\n  carried_capital_loss: 50000\\n  rate: 0.18\\nsteps:\\n  ordinary_loss: max(0, trading_loss - company_interest)\\n  allowed_security_loss: max(0, security_loss - exempt_dividends_on_security)\\n  current_capital_gain: share_gains - allowed_security_loss\\n  capital_loss_used: min(current_capital_gain, carried_capital_loss)\\n  capital_after_own_losses: current_capital_gain - capital_loss_used\\n  ordinary_loss_used: min(capital_after_own_losses, ordinary_loss)\\n  taxable_capital: capital_after_own_losses - ordinary_loss_used\\n  capital_tax: taxable_capital * rate\\n  capital_loss_remaining: carried_capital_loss - capital_loss_used\\n  ordinary_loss_remaining: ordinary_loss - ordinary_loss_used\\nexpected:\\n  ordinary_loss: 120000\\n  allowed_security_loss: 40000\\n  current_capital_gain: 200000\\n  capital_after_own_losses: 150000\\n  ordinary_loss_used: 120000\\n  taxable_capital: 30000\\n  capital_tax: 5400\\n  capital_loss_remaining: 0\\n  ordinary_loss_remaining: 0\\n```']",
+    "result": "pass"
+  },
+  {
+    "name": "protected metadata",
+    "actual": "{'name': 'fo-corporate-income-tax', 'description': 'Prepare 2026 Faroese company tax working papers for P/F and Sp/F companies, separating ordinary income from capital gains. Check residence and the 18% rate conditions, reconcile profit, calculate equipment and building depreciation, and distinguish company interest from separately taxed investments. Track ordinary and capital losses, exempt dividends, ownership changes, distributions, group permissions, returns and payments. Use for Faroese corporation tax, investment gains, business assets, company losses, dividend withholding and incorporation or closure questions. Petroleum, fishing and aquaculture charges, tonnage tax, reorganisations, international minimum tax and treaty-specific outcomes need separate work. This Guide has been checked against the law and accepted for partial publication after independent AI review; professional attestation remains pending.\\n', 'jurisdiction': 'FO', 'category': 'international', 'tax_year': 2026, 'tier': 2, 'verified_by': 'pending', 'review_status': 'pending_review'}",
+    "expected": "{'name': 'fo-corporate-income-tax', 'description': 'Prepare 2026 Faroese company tax working papers for P/F and Sp/F companies, separating ordinary income from capital gains. Check residence and the 18% rate conditions, reconcile profit, calculate equipment and building depreciation, and distinguish company interest from separately taxed investments. Track ordinary and capital losses, exempt dividends, ownership changes, distributions, group permissions, returns and payments. Use for Faroese corporation tax, investment gains, business assets, company losses, dividend withholding and incorporation or closure questions. Petroleum, fishing and aquaculture charges, tonnage tax, reorganisations, international minimum tax and treaty-specific outcomes need separate work. This Guide has been checked against the law and accepted for partial publication after independent AI review; professional attestation remains pending.\\n', 'jurisdiction': 'FO', 'category': 'international', 'tax_year': 2026, 'tier': 2, 'verified_by': 'pending', 'review_status': 'pending_review'}",
+    "result": "pass"
+  },
+  {
+    "name": "version06",
+    "actual": "0.6",
+    "expected": "0.6",
+    "result": "pass"
+  },
+  {
+    "name": "aligned H1",
+    "actual": "True",
+    "expected": "True",
+    "result": "pass"
+  },
+  {
+    "name": "original H2 order",
+    "actual": "['## Who this applies to', '## Rates, bands and thresholds', '## The base', '## Deadlines and filing', '## Penalties and interest', '## Cross-border points', '## Two worked examples that recompute', '## Ask the client first', '## Sources']",
+    "expected": "['## Who this applies to', '## Rates, bands and thresholds', '## The base', '## Deadlines and filing', '## Penalties and interest', '## Cross-border points', '## Two worked examples that recompute', '## Ask the client first', '## Sources']",
+    "result": "pass"
+  },
+  {
+    "name": "questions preserved",
+    "actual": "\n\n- What are the legal form, relevant capital, registration and actual management location?\n- What are the financial year and incorporation/closure dates?\n- Which items involve capital income, special industries or foreign operations?\n- What are the loss-year balances, ownership histories and debt restructurings?\n- Is group taxation approved, and were all ownership and period conditions met?\n- What returns, assessments, extension decisions and payment notices have been received?\n\n",
+    "expected": "\n\n- What are the legal form, relevant capital, registration and actual management location?\n- What are the financial year and incorporation/closure dates?\n- Which items involve capital income, special industries or foreign operations?\n- What are the loss-year balances, ownership histories and debt restructurings?\n- Is group taxation approved, and were all ownership and period conditions met?\n- What returns, assessments, extension decisions and payment notices have been received?\n\n",
+    "result": "pass"
+  },
+  {
+    "name": "old URL definitions and order",
+    "actual": "['https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt', 'https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170', 'https://www.taks.fo/fo/vinna/skattur/partafelagsskattur', 'https://logir.fo/Kunngerd/148-fra-18-12-2015-um-samskatting-av-felogum', 'https://www.taks.fo/en/individuals/tax/tax-return', 'https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174', 'https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173', 'https://www.taks.fo/fo/log/rundskriv/pristalsvidgerd-av-bygningum', 'https://www.taks.fo/fo/borgari/gjoeld-og-agodar/pristoel-a-bygningum-og-byggigrundum']",
+    "expected": "['https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt', 'https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170', 'https://www.taks.fo/fo/vinna/skattur/partafelagsskattur', 'https://logir.fo/Kunngerd/148-fra-18-12-2015-um-samskatting-av-felogum', 'https://www.taks.fo/en/individuals/tax/tax-return', 'https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174', 'https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173', 'https://www.taks.fo/fo/log/rundskriv/pristalsvidgerd-av-bygningum', 'https://www.taks.fo/fo/borgari/gjoeld-og-agodar/pristoel-a-bygningum-og-byggigrundum']",
+    "result": "pass"
+  },
+  {
+    "name": "full exact reverse reconstruction",
+    "actual": "2d8e450d64432ea15bff7fa3ce683601f8c16eec898b50fd01ba64514b5ebab2",
+    "expected": "2d8e450d64432ea15bff7fa3ce683601f8c16eec898b50fd01ba64514b5ebab2",
+    "result": "pass"
+  },
+  {
+    "name": "source rows have3columns",
+    "actual": "True",
+    "expected": "True",
+    "result": "pass"
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "key": "L",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "raw": "sources/L.body",
+    "raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "reader": "sources/L.reader.txt",
+    "reader_sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "acquired": "2026-10-28T00:08:44.705891+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "R",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+    "raw": "sources/R.body",
+    "raw_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "reader": "sources/R.reader.txt",
+    "reader_sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "acquired": "2026-10-28T00:08:45.360812+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "N",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527",
+    "raw": "sources/N.body",
+    "raw_sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb",
+    "reader": "sources/N.reader.txt",
+    "reader_sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2",
+    "acquired": "2026-10-28T00:08:43.784086+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "NR",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2004-14532",
+    "raw": "sources/NR.body",
+    "raw_sha256": "fbfc05eb5bff593cf846c16aa5f4c282277201dc3fa4fdf5930817d11cae6aeb",
+    "reader": "sources/NR.reader.txt",
+    "reader_sha256": "61ae2b2294c8299fb1a13b4e9431c06d1f9cd861fcdd3ab08392d72bf2a2853f",
+    "acquired": "2026-10-28T00:08:43.704029+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "O210",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2010-19707",
+    "raw": "sources/O210.body",
+    "raw_sha256": "e26a562b30a58e5550c604b08515e46da225c759cacca3c9cdb23fea4ed1280c",
+    "reader": "sources/O210.reader.txt",
+    "reader_sha256": "af2f6ad4ec9d5c31d903db640acb80464ec7f92de4f678a9c6cc9465858fdf2f",
+    "acquired": "2026-10-28T00:08:45.839165+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "LGT",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+    "raw": "sources/LGT.body",
+    "raw_sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "reader": "sources/LGT.reader.txt",
+    "reader_sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "acquired": "2026-10-28T00:08:43.654027+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Nold",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/no-residentes/irnr-sin-establecimiento-permanente/determinacion-bi-irnr-sin-establecimiento-permanente/ganancias-patrimon-proced-bienes-adquiridos-1994.html",
+    "raw": "sources/Nold.body",
+    "raw_sha256": "123e34d968fb7fc978bae47790602376b4455bb96d87ed91581c424a701d4417",
+    "reader": "sources/Nold.reader.txt",
+    "reader_sha256": "08f2f2bc70ce7e88fe606cf526c988787cc680c060ee0881dd7535abc21029e8",
+    "acquired": "2026-10-28T00:08:30.258232+00:00",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Ownership",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/vivienda-otros-inmuebles/que-ocurre-cuando-vendo-inmueble/transmision-vivienda-habitual-mayores-65-anos.html",
+    "raw": "sources/Ownership.body",
+    "raw_sha256": "fa8a17d2254d7e85396d627daf389fdcc1f9e38ac9cb4041fa1e9f682ffb2348",
+    "reader": "sources/Ownership.reader.txt",
+    "reader_sha256": "28f8d51d13dca76b296611c054c43610e945c7e644450d005479cbf961fe5fe7",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "D29",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20823",
+    "raw": "sources/D29.body",
+    "raw_sha256": "6e3590efdf1ef621987422b34f5b13f00d9ef321cf3cbdf9cc9271d6cc2161fe",
+    "reader": "sources/D29.reader.txt",
+    "reader_sha256": "b665054d26b266518028f419e4cf72618d526e762becee90155f8f12e584be82",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "D26",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20266",
+    "raw": "sources/D26.body",
+    "raw_sha256": "c2ba5f5c1ddb46bd29ff8fb9e6b329f830d1ed11a7606bd2a49d59a6126dc5b5",
+    "reader": "sources/D26.reader.txt",
+    "reader_sha256": "28352fbd44ceaa7b0e50288de10ce59da7990a370b553104004ae91e3b41ba0a",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "Repeal",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2026-20526",
+    "raw": "sources/Repeal.body",
+    "raw_sha256": "3b7d30b2eff92db1cdb47d25e21376e1ee7c5f420860e3dcb48ee1893b418783",
+    "reader": "sources/Repeal.reader.txt",
+    "reader_sha256": "2c48717f0b45ccf2aea876eda44320a33fff177b825cf58519bcacee1989c066",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  },
+  {
+    "key": "RDL18",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2012-6280",
+    "raw": "sources/RDL18.body",
+    "raw_sha256": "1dea7ab99aa3a6c7fed2a5ed163fd9f11fabdb0c97a963bdf3a38aaa0b40d98c",
+    "reader": "sources/RDL18.reader.txt",
+    "reader_sha256": "d6361740dcb5219d7509d7284394c6efad01e05dabd4f9b0f7207027668168a4",
+    "acquired": "2026-10-28",
+    "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+  }
+]

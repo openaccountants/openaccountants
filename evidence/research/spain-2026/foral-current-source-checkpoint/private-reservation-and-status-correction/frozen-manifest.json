@@ -1,0 +1,89 @@
+{
+  "frozen_utc": "2026-10-28T00:03:35.726442+00:00",
+  "scope": "Two private copy candidates, pending root independent review",
+  "candidates": [
+    {
+      "file": "es-foral-corporate-tax.md",
+      "bytes": 98029,
+      "sha256": "989b067cc6d2784068544a79e8c161646a510ee220895e185d013b4c94ccb3ff"
+    },
+    {
+      "file": "README.md",
+      "bytes": 8914,
+      "sha256": "c58217abf30a3d1254e4b64564d0287df175e5947bcced7264acfbbcfec906e5"
+    }
+  ],
+  "artifacts": [
+    {
+      "file": "README.md",
+      "bytes": 8914,
+      "sha256": "c58217abf30a3d1254e4b64564d0287df175e5947bcced7264acfbbcfec906e5"
+    },
+    {
+      "file": "README.md.diff",
+      "bytes": 3874,
+      "sha256": "1d70b5f4ae6b1587220c941c99ab0c9c22c76b8788bcf80dad3bfe87fe888aa2"
+    },
+    {
+      "file": "before-README.md",
+      "bytes": 8688,
+      "sha256": "7cb9e544b2776cb5d284afa905cf84f3bfb6f5c2986422e7f85b159d29fae4cb"
+    },
+    {
+      "file": "before-es-foral-corporate-tax.md",
+      "bytes": 97950,
+      "sha256": "dcbfeb3202511f58c5d5ca416e8e09bf55379d4d8dfc1c413abc1f0cc99c6e5f"
+    },
+    {
+      "file": "controls-before-absent-CTA-guard-correction.json",
+      "bytes": 2969,
+      "sha256": "fdb4f3f1c02f5455a10b525c26f63a52a5ac7a7facfe33910127149c9ae9626f"
+    },
+    {
+      "file": "controls.json",
+      "bytes": 3259,
+      "sha256": "bec151a411dd93bb6a3d615c2940419cf84e50647e2eb8e1c8e6d6202dbe42e3"
+    },
+    {
+      "file": "draft-options.md",
+      "bytes": 1779,
+      "sha256": "7757178998742d4585622224b39c31a85bf4fabcefd8ca8fd295ae754c58e645"
+    },
+    {
+      "file": "es-foral-corporate-tax.md",
+      "bytes": 98029,
+      "sha256": "989b067cc6d2784068544a79e8c161646a510ee220895e185d013b4c94ccb3ff"
+    },
+    {
+      "file": "es-foral-corporate-tax.md.diff",
+      "bytes": 1981,
+      "sha256": "4de2c54137820e5007b87e02e79d188fddd8b82b48595f870ad29a3ef841a12a"
+    },
+    {
+      "file": "oa-check-output.txt",
+      "bytes": 247,
+      "sha256": "5e0dc3805b98a78cfd951d7becd2b5d1deebfd04055eb34a50399ae1034cfab5"
+    },
+    {
+      "file": "original-unit-dispositions.json",
+      "bytes": 23922,
+      "sha256": "19f54a5964f194b17c47fecdaa40289b165893d718b978618396c2ee7b9f4fd0"
+    },
+    {
+      "file": "report.md",
+      "bytes": 5073,
+      "sha256": "10670946b03d7125208c211abd2d50de4518fc4374eb987dcd7d37b5d88a1329"
+    },
+    {
+      "file": "reproduce-controls.py",
+      "bytes": 7852,
+      "sha256": "671d62743465713183aa92713ffe8141a74210c970605ebda711550387e61087"
+    },
+    {
+      "file": "source-read-receipts.json",
+      "bytes": 3759,
+      "sha256": "940b9f2557c14fe3a44e3965c4f8d3d5932a3fc014c3c029d780491615a26186"
+    }
+  ],
+  "live_mutations": false
+}

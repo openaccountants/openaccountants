@@ -1,0 +1,2474 @@
+{
+  "commit": "d2ccb587628dfbee6f2e2817cef6ed5d05e5aceb",
+  "read_date": "2026-10-24",
+  "scope": "Location index for the primary-source pass described in FINAL-REVIEW.md; inherited paragraph/table citations apply; this is not independent legal proof. Examples separately recomputed.",
+  "lines": [
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 21,
+      "section": "Who this applies to",
+      "assertion": "Calendar-year 2026, BYN. Individuals resident under General Code art. 17 are taxed on Belarus and foreign-source income; nonresidents on Belarus-source income (Special Code arts. 195-198). Residence means more than 183 days in Belarus, with the statutory temporary-absence rules, prior-year provisional status and treaty tie-breaker. Count from the day after arrival through departure. Citizenship or a residence permit alone does not replace that test; art. 17(5) supplies a fallback where no applicable treaty resolves residence. [General Code art. 17](https://pravo.by/document/?guid=3871&p0=hk0200166); [Special Code arts. 195-198](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 23,
+      "section": "Who this applies to",
+      "assertion": "Before calculating business tax, classify the activity and legal status. From 2026 continuing entrepreneurs must be on the permitted activity list under Council Resolution 457 of 28 June 2024. Professional income is a separate regime for permitted independent professional activities, using the app, rather than an entrepreneur turnover election. Employment income and civil-contract work/service receipts from a current employer, or a former employer that employed the person less than three years ago, are outside that regime (art. 379). The single tax is available only within arts. 335-337; short-stay accommodation by entrepreneurs must use it under art. 336(5). [MNS activity transition](https://nalog.gov.by/news/33527/); [Code arts. 335-337, 378-380](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://nalog.gov.by/news/33527/",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 27,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Item | Amount | Period | Official act/article |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 29,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary individual PIT | 13% | 2026 | [Code art. 214(1.1)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 30,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Specified Belarus-source high incomes | 25% on excess over BYN 350,000 through 600,000; 30% on excess over 600,000 | 2026 | [Arts. 199(8-2), 214(1.2)-(1.3)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 31,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Belarus-source dividends, separate base | Ordinary 13%; 25% on excess over BYN 350,000; no 30% dividend band | 2026 | [Arts. 199(8-3), 214(1.2)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 32,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Qualifying retained-profit dividends to resident individuals | 0% after five consecutive preceding calendar years without distribution to Belarus-resident participants | 2026 | [Art. 214(6)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 33,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Entrepreneur general system | 20%; 30% for the whole year once business income exceeds BYN 500,000, including specified later receipts for that year | 2026 | [Art. 214(3)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 34,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Deemed entrepreneur expenses, instead of actual expenses | 30% for exclusively permitted retail and/or transport; 20% for other entrepreneurs | 2026 | [Art. 205(10)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 35,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Standard personal deduction | BYN 216/month if taxable monthly income is no more than 1,308; entrepreneur quarterly income after art. 205 expenses no more than 3,930 | 2026 | [Art. 209(1.1),(2)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 36,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Child/dependant deduction | BYN 63/month; BYN 120 for each child for qualifying multiple-child/disabled-child parents and qualifying sole-parent/guardian cases | 2026 | [Art. 209(1.2)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 37,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Protected-category / qualifying young-specialist deduction | BYN 306 / 860 per month, respectively, subject to status and duration conditions | 2026 | [Art. 209(1.3)-(1.4)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 38,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Professional-income tax | 10%; 20% only on Belarus-registered business customers' aggregate annual receipts above BYN 60,000 | 2026 | [Art. 381-2(1)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 39,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Professional-income minimum | No art. 381-6(2) minimum before July; BYN 45/month from July, pension recipient BYN 18 | Jan-Jun / Jul-Dec 2026 | [Arts. 381-3, 381-6; MNS commencement](https://nalog.gov.by/actual/npd_45/) |",
+      "source_links": [
+        "https://nalog.gov.by/actual/npd_45/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 40,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Private domestic gifts exemption | BYN 6,000 aggregate for nonbusiness gifts from individuals in Belarus; foreign transfers have a separate conditional BYN 6,000 exemption | 2026 | [Art. 208(22),(22-2)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 41,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Taxable property disposal alternative deduction | 20% of taxable proceeds, instead of evidenced acquisition/disposal costs | 2026 | [Art. 211(1.2)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 42,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Entrepreneur single-tax turnover surcharge | 6% of revenue exceeding 40 times the unrelieved single tax for the reporting period | 2026 | [Art. 342(14)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 44,
+      "section": "Rates, bands and thresholds",
+      "assertion": "Private nonbusiness rent to individuals uses art. 214(2), not a general percentage election. The following monthly BYN rates are per rented room, garden house/dacha, garage or parking space as applicable. The city lists in Annex 2 control classification. [Annex 2, art. 221(1.2)](https://pravo.by/document/?guid=3871&p0=hk0900071); [MNS January and February-December schedules](https://nalog.gov.by/individuals/income_taxation/payment_incom_tax_of_residential_and_non-residential_premises/).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://nalog.gov.by/individuals/income_taxation/payment_incom_tax_of_residential_and_non-residential_premises/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 46,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Location | January: room / metal or wood garage or parking / brick or reinforced-concrete garage | February-December: room / garage / parking |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 48,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Minsk | 50 / 16 / 21 | 53 / 22 / 17 |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 49,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Regional capitals and Minsk district | 46 / 13 / 18 | 49 / 19 / 14 |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 50,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| The 27 named towns in Annex 2 | 31 / 8 / 12 | 33 / 13 / 9 |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 51,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Other towns and urban settlements | 22 / 6 / 8 | 20 / 8 / 7 |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 52,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Other settlements/territories | 16 / 5 / 6 | 20 / 8 / 7 |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 56,
+      "section": "The base",
+      "assertion": "**Ordinary individuals.** Classify each receipt under arts. 196-203; value in-kind benefits under art. 200. Exclude only a verified art. 208 exemption. Common nonbusiness disposals are exempt under art. 208(44): one of each listed real-estate type in five years and one eligible vehicle per calendar year, with the citizenship/nonresident extension and business-asset exclusions in that paragraph. For an eligible taxable disposal under art. 211(1.2), deduct qualifying evidenced acquisition/disposal costs or the 20% alternative, never both. BYN costs are converted to USD at the National Bank rate on the cost date and back to BYN at the income-receipt-date rate; do not make that conversion if the cost-date BYN/USD rate is higher than the receipt-date rate (retain nominal BYN costs in that case). Costs originally paid in foreign currency are converted at the relevant income-receipt-date rate. Allocate co-owned costs by ownership share and acquisition costs proportionately to instalment proceeds. In nonresident cases assessed under art. 218, paragraph 5 expressly grants the art. 211(1.2) deduction for immovable-property income; do not automatically extend that route to movable-property receipts without checking their own source/agent/classification rules. Securities, company interests and intellectual property need their own classification; do not extend the ordinary personal-property exemption to them. [Arts. 196-203, 208(44), 211(1.2)](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 58,
+      "section": "The base",
+      "assertion": "Apply art. 209 standard deductions at the main employment/study place. Without one, obtain the written election and supporting documents; only one agent or the tax authority supplies the relevant standard deductions. Entrepreneurs without a main job apply them only for the qualifying months and test the statutory quarterly income limit. Do not multiply the monthly income limit to invent that quarterly figure. Unused standard deductions do not create a negative tax base (art. 199(3)). [Arts. 199(3), 209(2)](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 60,
+      "section": "The base",
+      "assertion": "Art. 210 allows evidenced qualifying Belarus first higher, secondary-specialist or vocational education costs and qualifying Belarus voluntary insurance, including eligible family expenditure. Qualifying life/additional-pension insurance requires a term of at least three years. Art. 211(1.1) allows evidenced qualifying Belarus home construction/acquisition and related loan repayments for persons registered as needing better housing. Keep the eligibility and payment documents listed in arts. 210-211; carry unused qualifying social/housing deductions forward under those articles, without also deducting a reimbursement. The young-specialist deduction requires the specified placement/service documents and employment continuity conditions in art. 209(1.4); age alone is insufficient. [Arts. 209-211](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 62,
+      "section": "The base",
+      "assertion": "**High income.** Aggregate only the Belarus-source items listed in art. 199(8-2), including employment, taxable employer compensation, civil-contract work/services/IP, loan interest to agents, rent and board fees; exclude the paragraph's stated items. Dividends form the separate art. 199(8-3) base. Apply ordinary taxation below the thresholds, then assess the excess at the higher rates and credit tax already imposed on that excess under art. 219(1.9). Do not assess the higher tax again on the first band or pool dividends with wages. Deductions/exemptions in arts. 208-212 cannot reduce the excess above the high-income threshold. Foreign income is not automatically part of this specified Belarus-source pool. [Arts. 199(8-2)-(8-3), 214, 219(1.9)](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 64,
+      "section": "The base",
+      "assertion": "**Entrepreneurs.** Assemble business revenue and other business income under art. 205 and receipt dates under art. 213, including statutory treatment of advances, barter, third-party payments and discontinued-business receipts. Choose evidenced business costs or the deemed-cost election, documented in writing for the year. Do not combine the two. Actual expenses follow art. 205: match stock, depreciate qualifying capital assets, exclude private costs, capital acquisition costs already recovered by depreciation, tax penalties and costs of exempt/special-regime income. Expenses cannot generally exceed period income; art. 205(11) specifically carries qualifying registration, bank-opening, rent/utilities and licensing excess costs until used. Do not apply corporate loss rules. Calculate the cumulative base, allowable personal deductions, the whole-year rate and subtract earlier instalments. [Arts. 199, 205, 213-214, 217](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 66,
+      "section": "The base",
+      "assertion": "**Professional income.** First test the art. 379 object: Belarus citizens can include Belarus-source and foreign-source professional income; other eligible taxpayers can include Belarus-source professional income and the specified Belarus-located property income, with foreign-source professional receipts outside this object. A foreign customer alone does not settle income source. Exclude current-employer and less-than-three-years former-employer civil-contract work/service receipts. Art. 379 also excludes separately charged tenant utility/service reimbursements where the contract requires reimbursement outside rent, and buyer delivery reimbursements outside the goods price. Then tax eligible receipts without business-expense deductions, tracking Belarus business-customer income separately from individuals and foreign customers. Form app receipts for each settlement; refund/correction rules are in art. 381-1. The pension exemption removes the social-insurance component, leaving 4%/8% effective rates, rather than an across-the-board 8%. From July compare the monthly result with the applicable minimum even in a zero-receipt month while registered. The former first-user BYN 2,000 deduction ended on 1 January 2026. [Arts. 381-1 through 381-7](https://pravo.by/document/?guid=3871&p0=hk0900071); [FSZN Law art. 16-1](https://pravo.by/document/?guid=3871&p0=H12100118); [MNS 2026 changes](https://nalog.gov.by/clarifications/comments/33519/).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://pravo.by/document/?guid=3871&p0=H12100118",
+        "https://nalog.gov.by/clarifications/comments/33519/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 68,
+      "section": "The base",
+      "assertion": "**Single-tax route.** Check the closed activity/customer list in arts. 335-337: no general B2B or commission/distance-goods election. The monthly entrepreneur schedule below uses location columns A Minsk; B Brest/Vitebsk/Gomel/Grodno/Mogilev and Minsk district; C the 16 Annex 24 towns; D other settlements. Product exclusions in art. 336 still apply. C comprises Baranovichi, Bobruisk, Borisov, Zhlobin, Zhodino, Lida, Mozyr, Molodechno, Novopolotsk, Orsha, Pinsk, Polotsk, Rechitsa, Svetlogorsk, Slutsk and Soligorsk. [Arts. 335-339 and Annex 24](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 70,
+      "section": "The base",
+      "assertion": "| Entrepreneur activity | January A/B/C/D, BYN | February-December A/B/C/D, BYN | Enacted source |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 72,
+      "section": "The base",
+      "assertion": "| Each short-stay property | 703 / 655 / 344 / 305 | 750 / 699 / 367 / 325 | [47-Z art. 1(191), pp. 98-99](https://pravo.by/upload/docs/op/H12400047_1734642000.pdf); [127-Z art. 2(183), p. 79 and art. 4(5), pp. 87-88](https://pravo.by/upload/docs/op/H12500127_1767214800.pdf) |",
+      "source_links": [
+        "https://pravo.by/upload/docs/op/H12400047_1734642000.pdf",
+        "https://pravo.by/upload/docs/op/H12500127_1767214800.pdf"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 73,
+      "section": "The base",
+      "assertion": "| Bread/bakery and milk/dairy retail | 798 / 487 / 319 / 266 | 851 / 520 / 340 / 284 | [47-Z art. 1(191)](https://pravo.by/upload/docs/op/H12400047_1734642000.pdf); [127-Z arts. 2(183), 4(5)](https://pravo.by/upload/docs/op/H12500127_1767214800.pdf) |",
+      "source_links": [
+        "https://pravo.by/upload/docs/op/H12400047_1734642000.pdf",
+        "https://pravo.by/upload/docs/op/H12500127_1767214800.pdf"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 74,
+      "section": "The base",
+      "assertion": "| Vegetable/fruit/berry/melon/grape retail | 802 / 603 / 422 / 311 | 856 / 643 / 450 / 332 | [47-Z art. 1(191)](https://pravo.by/upload/docs/op/H12400047_1734642000.pdf); [127-Z arts. 2(183), 4(5)](https://pravo.by/upload/docs/op/H12500127_1767214800.pdf) |",
+      "source_links": [
+        "https://pravo.by/upload/docs/op/H12400047_1734642000.pdf",
+        "https://pravo.by/upload/docs/op/H12500127_1767214800.pdf"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 75,
+      "section": "The base",
+      "assertion": "| Other qualifying food retail | 1242 / 764 / 530 / 496 | 1325 / 815 / 566 / 529 | [47-Z art. 1(191)](https://pravo.by/upload/docs/op/H12400047_1734642000.pdf); [127-Z arts. 2(183), 4(5)](https://pravo.by/upload/docs/op/H12500127_1767214800.pdf) |",
+      "source_links": [
+        "https://pravo.by/upload/docs/op/H12400047_1734642000.pdf",
+        "https://pravo.by/upload/docs/op/H12500127_1767214800.pdf"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 76,
+      "section": "The base",
+      "assertion": "| Qualifying nonfood retail | 1645 / 1020 / 724 / 656 | 1755 / 1088 / 773 / 700 | [47-Z art. 1(191)](https://pravo.by/upload/docs/op/H12400047_1734642000.pdf); [127-Z arts. 2(183), 4(5)](https://pravo.by/upload/docs/op/H12500127_1767214800.pdf) |",
+      "source_links": [
+        "https://pravo.by/upload/docs/op/H12400047_1734642000.pdf",
+        "https://pravo.by/upload/docs/op/H12500127_1767214800.pdf"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 77,
+      "section": "The base",
+      "assertion": "| Construction | 800 / 700 / 550 / 550 | 800 / 700 / 550 / 550 | [127-Z arts. 2(183), 4(5)](https://pravo.by/upload/docs/op/H12500127_1767214800.pdf) |",
+      "source_links": [
+        "https://pravo.by/upload/docs/op/H12500127_1767214800.pdf"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 78,
+      "section": "The base",
+      "assertion": "| Taxi | 400 / 350 / 300 / 300 | 400 / 350 / 300 / 300 | [127-Z arts. 2(183), 4(5)](https://pravo.by/upload/docs/op/H12500127_1767214800.pdf) |",
+      "source_links": [
+        "https://pravo.by/upload/docs/op/H12500127_1767214800.pdf"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 80,
+      "section": "The base",
+      "assertion": "The new schedule applies where the statutory payment deadline falls after 30 January; January continuing activities retain the former schedule, while newly eligible construction/taxi use the new one. January-only eligible retail for fewer than 15 days at a trading place, exhibition/sale, fair or itinerant/peddling trade uses coefficient 0.5. It does not continue from February. Initial construction/taxi elections from January require the Q1 return by 31 January and January payment by 1 February, subject to General Code art. 4 nonworking-day adjustment. [127-Z art. 4(5)](https://pravo.by/upload/docs/op/H12500127_1767214800.pdf); [MNS transition](https://nalog.gov.by/clarifications/clarifications/33616/).",
+      "source_links": [
+        "https://pravo.by/upload/docs/op/H12500127_1767214800.pdf",
+        "https://nalog.gov.by/clarifications/clarifications/33616/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 82,
+      "section": "The base",
+      "assertion": "For each month, charge each trading object/place separately, subject to art. 342(5)'s precise no-other-persons trading-place/itinerant exception. Use the highest product rate for mixed retail. Several other services use the highest service rate, but add a separate charge for each short-stay property. Taxi uses tax-registration location; other activities use activity location. Keep shipment/performance revenue and other income under art. 342(15)-(25); unassigned mixed-regime other income follows the revenue-share allocation. [Art. 342(1)-(25)](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 84,
+      "section": "The base",
+      "assertion": "Art. 340 reduces tax 25% for the first three months beginning with first business activity; 20% for qualifying pension, disability, three-or-more minor children or disabled-child grounds; multiple simultaneous grounds within (1.1)-(1.5) give a total 45% reduction. The specified group I/II disabled-parent and spouse conditions in (1.6) give 100%. Obtain the exact status documents and apply the statutory month boundaries. Entrepreneurs choose one object/place/activity for relief, not every unit. Ordinary individuals' relief rules differ and exclude their short-stay activity. Sum the fixed charges after eligible relief; surcharge is `6% × max(0, quarter revenue − 40 × quarter fixed tax BEFORE relief)`. Supported art. 344 absence grounds require application/evidence for proration, `monthly charge × active days / calendar days`; there is no unrestricted part-month election. [Arts. 340, 342(14),(30), 344](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 86,
+      "section": "The base",
+      "assertion": "**Rent.** Multiply the monthly rate by taxable units and prorate first/last partial months by days under art. 221(2). Under art. 221(3), a 10% supplementary assessment applies to stated rental income exceeding ten times fixed PIT paid for the relevant period when that income is given in the specified income/expenditure-check explanations. It is not an automatic annual rent surtax. Renting to a business is outside the private fixed-rent rule. [Arts. 214(2), 221](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 90,
+      "section": "Deadlines and filing",
+      "assertion": "| Obligation | Rule | Official source |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 92,
+      "section": "Deadlines and filing",
+      "assertion": "| Resident annual individual declaration | By 31 March 2027 for 2026 art. 219 income, including foreign-source and high-income cases; attach deduction/credit evidence | [Arts. 219, 222](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 93,
+      "section": "Deadlines and filing",
+      "assertion": "| Assessed annual PIT | Authority notice by 30 April; payment by 1 June of following year | [Art. 219(2)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 94,
+      "section": "Deadlines and filing",
+      "assertion": "| Entrepreneur return/payment | Cumulative quarter, half-year, nine months, year; return by 20th and payment by 22nd of following month, including January for the final quarter | [Arts. 207, 217](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 95,
+      "section": "Deadlines and filing",
+      "assertion": "| Professional-income app | Install and notify before using regime; authority notification by 10th, payment by 22nd of following month; no conventional annual return for this regime | [Arts. 381, 381-4, 381-7](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 96,
+      "section": "Deadlines and filing",
+      "assertion": "| Fixed private rent | Register the written rental agreement before occupation; first/new extension payment by next working day after contractual provision, then by first day of paid month | [Art. 221; MNS procedure](https://nalog.gov.by/individuals/income_taxation/payment_incom_tax_of_residential_and_non-residential_premises/) |",
+      "source_links": [
+        "https://nalog.gov.by/individuals/income_taxation/payment_incom_tax_of_residential_and_non-residential_premises/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 97,
+      "section": "Deadlines and filing",
+      "assertion": "| Entrepreneur single tax | Return by first day of quarter; payment by first day of each month; first annual start by working day before activity; amend changed conditions before change | [Arts. 341-343](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 98,
+      "section": "Deadlines and filing",
+      "assertion": "| Single-tax surcharge, both return and payment | Q1/Q2/Q3/Q4: 1 July / 1 October / 1 January / 1 April, including after exit | [Arts. 342(27), 343(3)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 100,
+      "section": "Deadlines and filing",
+      "assertion": "Use the tax inspectorate or MNS personal cabinet for individual declarations; entrepreneur electronic filing follows General Code art. 40. Apply General Code art. 4 to nonworking-day tax deadlines, rather than assuming contribution payment dates follow the same convention. [General Code arts. 4, 28, 40](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 104,
+      "section": "Penalties and interest",
+      "assertion": "Late-payment interest under General Tax Code art. 55 is computed separately for each period of constant unpaid tax and National Bank refinancing rate: `unpaid tax × overdue calendar days × annual rate / 360 / 100`. Count from the day after the due date through payment; interest reflected in the audit decision on audit-assessed tax is capped at that assessed tax amount; apply art. 55(3) exclusions and art. 55(4)'s four-decimal interest-rate precision. Use the rate actually in force in each period, not a single assumed 2026 rate. [General Code art. 55](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 106,
+      "section": "Penalties and interest",
+      "assertion": "For an ordinary individual with tax payable and a return more than 30 working days late, Administrative Code art. 14.2(3) sets 0.5 basic unit plus 0.5 per complete month, capped at 10. Negligent ordinary-individual underpayment above one basic unit carries 15%, minimum 0.5 basic unit under art. 14.4(6); intentional cases use art. 14.4(8), 40%, minimum 10 basic units. Apply the statutory exclusions and correction rules before estimating a fine. For a business/agent return, Administrative Code art. 14.2(1)-(2) sets up to 1 basic unit for no more than 3 working days late; otherwise 2 basic units plus 0.5 per complete month, capped at 10. Repetition within a year invokes art. 14.2(4), 3 per complete or incomplete month, capped at 20. Under art. 14.4(1), business tax underpayment carries 40% of unpaid tax, minimum 2 basic units for an entrepreneur or 10 for a company, subject to the statutory notes, including timely voluntary correction/payment. Do not apply these amounts automatically to an ordinary individual or to a withholding default. [Administrative Code arts. 14.2 and 14.4](https://pravo.by/document/?guid=3871&p0=hk2100091).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk2100091"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 108,
+      "section": "Penalties and interest",
+      "assertion": "Unregistered prohibited business income and the other specified art. 214(7) cases use 26%, distinct from an administrative fine. Unreceipted/late-receipted professional income uses 20% without the pension relief (art. 381-2(2)); from July repeated nonpayment three times triggers authority deregistration and the art. 381(4) re-entry rule. [Arts. 214(7), 381, 381-2](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 112,
+      "section": "Cross-border points",
+      "assertion": "Convert foreign receipts at the National Bank rate on actual receipt, with the specific monthly employment and entrepreneur-advance rules in art. 199(11). Resident foreign-tax credits are calculated income by income, limited to Belarus tax on that income, with the art. 224 evidence and offshore exception; entrepreneur credits use art. 224(3). Read `belarus-cross-border-tax` before applying a treaty. [Arts. 199(11), 224](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-income-tax.md",
+      "line": 114,
+      "section": "Cross-border points",
+      "assertion": "Nonresident art. 218 cases require a declaration of expected Belarus income before the activity/disposal/rental starts and advance payment, with real-estate tax payable within five working days after notice; actual-income reconciliation and additional payment also have five-working-day rules. Belarus citizens departing permanently must file and pay the art. 222(5) departure assessment, within 15 calendar days of notice and no later than departure. Agent withholding alone does not remove the annual high-income declaration obligation. [Arts. 214(1.2)-(1.3), 218, 222(5)](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 19,
+      "section": "Who this applies to",
+      "assertion": "Calendar-year 2026 ordinary Belarus organisations, separately liable branches under General Code art. 14 and foreign organisations operating through a Belarus PE. Identify the taxpayer and separate regime before consolidating any figures; the increased-rate test is applied separately to the organisation excluding branches, each branch and each foreign PE (art. 184(1)). Resident organisations' gross profit includes foreign activity; foreign PEs compute attributable Belarus profit under art. 180. [General Code arts. 14-16](https://pravo.by/document/?guid=3871&p0=hk0200166); [Special Code arts. 166-167, 180, 184](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 21,
+      "section": "Who this applies to",
+      "assertion": "Screen the simplified system before ordinary profit tax: only eligible organisations under arts. 324-327 qualify. Entrepreneurs cannot use this company regime. Do not apply ordinary profit tax to receipts replaced by the simplified tax, or treat the replacement as removing dividend, withholding or import/reverse-charge VAT obligations. [Arts. 324-326](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 25,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Item | Amount | Period | Official act/article |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 27,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary profit tax | 20% | 2026 | [Code art. 184(1)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 28,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Increased whole-base rate | 25% once cumulative tax base exceeds BYN 25,000,000, not only on excess | 2026 | [Art. 184(1)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 29,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Banks, insurers, insurance brokers; specified forex profit | 25% | 2026 | [Art. 184(4),(9)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 30,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Specified microfinance profit; cellular/universal telecom operators | 30% | 2026 | [Art. 184(5),(11)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 31,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Dividends to Belarus organisations | 12%; qualifying five-year nondistribution relief 0%; former 6% clause repealed | 2026 | [Art. 184(6)-(8); MNS 2026 commencement](https://nalog.gov.by/clarifications/comments/33570/) |",
+      "source_links": [
+        "https://nalog.gov.by/clarifications/comments/33570/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 32,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Loss life | Pre-2022 losses: 10 following years; 2022 onward: 5 following years | Loss vintage controls | [Art. 183(5)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 33,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary controlled-debt trigger | Debt at least 3 times statutory equity; specified excisable producers: greater than 1 time | Year end | [Art. 172(1)-(2)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 34,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Investment deduction maximum | 20% qualifying production buildings/structures/transmission assets; 40% qualifying machinery/equipment/vehicles | 2026 rules for qualifying new depreciation/reconstruction | [Art. 170(2.2); MNS commencement](https://nalog.gov.by/clarifications/comments/33570/) |",
+      "source_links": [
+        "https://nalog.gov.by/clarifications/comments/33570/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 35,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Simplified-system tax and in-year limits | 6% gross revenue; 50 employees and BYN 3,735,000 cumulative gross revenue | 2026 | [Arts. 327(6), 329](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 36,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Transition into simplified system | BYN 2,625,000 first-nine-months 2025 revenue for entry in 2026; BYN 2,800,000 first-nine-months 2026 for entry in 2027; average staff no more than 50 | Entry year distinguished | [Art. 327(2); MNS transition](https://nalog.gov.by/clarifications/comments/33838/) |",
+      "source_links": [
+        "https://nalog.gov.by/clarifications/comments/33838/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 40,
+      "section": "The base",
+      "assertion": "1. Start with revenue from sales less taxes from revenue and allowable production/selling costs, plus taxable non-operating income less allowable non-operating expenses. Reconcile separately disposed depreciable assets, investment property and intangible assets using proceeds less residual value and sale costs under art. 168. Do not treat all accounting income/expenses as taxable/deductible. [Arts. 167-175](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 41,
+      "section": "The base",
+      "assertion": "2. Recognise revenue and costs at the statutory dates, document business purpose and matching, and depreciate qualifying capital expenditure. Add back art. 173 nondeductible costs, including tax sanctions and private expenditure. Apply art. 171(1)'s separate limits to travel, fuel, management and the other listed controlled costs. Pool the art. 171(2) other costs, including listed employee retirement/health payments, representation, board fees, official events, non-travelling staff's private-car compensation, association fees, late-loan interest, promotional gifts and employee transport. Their combined deduction is at most 1% of revenue from goods/work/services/IP and other assets, INCLUDING VAT, under art. 171(3); test the exact listed inclusions/exceptions before pooling. [Arts. 168-175](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 42,
+      "section": "The base",
+      "assertion": "3. Apply the investment deduction only to qualifying assets and reconstruction, within the statutory ceiling and two-year claim window beginning with the reporting period containing the qualifying depreciation or reconstruction-capitalisation month. Ordinary passenger cars are excluded unless within the specified special-purpose, taxi or carsharing categories. Test the other excluded assets and recapture on disqualifying disposal/use changes under art. 170(2.2). For the 2026 reform, depreciation must start from 1 January 2026 or reconstruction must increase original cost after that date; do not retroactively apply the expanded timing to older assets. An investment deduction not claimed before an appointed inspection is unavailable for the inspected period. [Art. 170(2.2)](https://pravo.by/document/?guid=3871&p0=hk0900071); [MNS reform commentary](https://nalog.gov.by/clarifications/comments/33570/).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://nalog.gov.by/clarifications/comments/33570/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 43,
+      "section": "The base",
+      "assertion": "4. Calculate controlled indebtedness at year end across the counterparties in art. 172(2.1), including qualifying related-party borrowings and specified service/IP/penalty obligations. Equity excludes the statutory tax, contribution and budget-loan liabilities. For an ordinary company with positive equity, `capitalisation coefficient = controlled debt / equity / 3`; if the trigger applies, divide the affected otherwise deductible costs and interest by that coefficient. With nonpositive equity, none of those affected costs is deductible. Excisable producers use the alternative coefficient; banking, insurance and qualifying majority-rental businesses have art. 172(4) exclusions. This is a cost cap, separate from arm's-length TP. [Art. 172](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 44,
+      "section": "The base",
+      "assertion": "5. Separate exempt profit, dividends and special-rate bases. Apply TP adjustments under General Code arts. 87-97. Compute the cumulative ordinary rate from the statutory tax base, not revenue, accounting profit or only the excess above the increased-rate threshold. [Arts. 182, 184, 186](https://pravo.by/document/?guid=3871&p0=hk0900071); [General Code ch. 11](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 45,
+      "section": "The base",
+      "assertion": "6. Claim carried losses only in the final annual/fourth-quarter computation under art. 186(1). Maintain losses by vintage, expiry, taxpayer and statutory basket. Securities/financial-instrument losses and fixed/investment-asset disposal losses are generally usable against their corresponding basket; residual losses follow art. 183(3.2). Use oldest eligible losses first, within current qualifying profit. Exclude foreign separately registered activity, exempt/regime-period losses and undocumented losses as art. 183 requires. A loss not claimed before an appointed non-desk inspection cannot be introduced during that inspection. Do not carry a subsidiary's loss to another company or assume all reorganisations transfer it. [Art. 183](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 46,
+      "section": "The base",
+      "assertion": "7. Multiply each remaining rate-specific base by its rate; subtract allowable art. 187 foreign-tax credit and earlier cumulative tax payments. Corporate foreign credit is capped at Belarus tax on the corresponding qualifying foreign income. Preserve foreign authority/payment evidence and the timing/translation rules of art. 187, rather than subtracting all overseas cash tax. [Arts. 186-187](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 48,
+      "section": "The base",
+      "assertion": "**Simplified route.** Screen all art. 324 exclusions, including regulated activities, prohibited property use/subletting, and ownership/entity categories. Test employee and revenue limits separately. For existing 2025 users, revenue above BYN 3,500,000 in 2025 blocks continuation in 2026 despite the higher 2026 limit. An eligible newly registered company with no more than 50 employees can notify within 20 working days; ordinary next-year entry notification is 1 October-31 December. Exit is from the month after the reporting period of an employee/revenue excess, or from the relevant disqualifying month under art. 327(6.1). Compute 6% of gross revenue determined under art. 328 on its prescribed receipt basis, including taxable non-operating receipts, rather than profit after expenses; keep returns, adjustments and transitional uncollected revenue under arts. 328-333. [Arts. 324-333](https://pravo.by/document/?guid=3871&p0=hk0900071); [MNS transition rule](https://nalog.gov.by/clarifications/comments/33838/).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://nalog.gov.by/clarifications/comments/33838/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 52,
+      "section": "Deadlines and filing",
+      "assertion": "| Obligation | Deadline/rule | Official source |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 54,
+      "section": "Deadlines and filing",
+      "assertion": "| Ordinary quarters 1-3 | Cumulative return by 20th; payment by 22nd of following month | [Arts. 185-186](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 55,
+      "section": "Deadlines and filing",
+      "assertion": "| Fourth-quarter advance | By 22 December, two thirds of tax for the third quarter, followed by final reconciliation | [Art. 186(9.1)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 56,
+      "section": "Deadlines and filing",
+      "assertion": "| Annual/fourth-quarter return and balance | Return by 20 March, balance by 22 March following year | [Art. 186(7),(9.3)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 57,
+      "section": "Deadlines and filing",
+      "assertion": "| Resident corporate dividend tax | Return by 20th, remittance by 22nd of month after accrual | [Art. 186(6),(9.2)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 58,
+      "section": "Deadlines and filing",
+      "assertion": "| Simplified-system return/payment | Quarterly return by 20th and payment by 22nd following quarter | [Arts. 330, 332](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 59,
+      "section": "Deadlines and filing",
+      "assertion": "| New company tax registration | Registrar information supplies registration under the one-window rules; verify assigned UNP and inspectorate | [General Code arts. 69-70](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 61,
+      "section": "Deadlines and filing",
+      "assertion": "File the MNS profit-tax declaration for Belarus organisations or the foreign-organisation form, as appropriate, electronically where General Code art. 40 requires. Zero-object/no-relevant-amount relief is subject to art. 40 and the specific art. 186 exceptions; do not discontinue filings solely because cash tax is zero. Liquidation, reorganisation and PE cessation require actual-profit final computations (art. 186(2), General Code art. 44). Apply General Code art. 4 to nonworking-day tax deadlines. [General Code arts. 4, 40, 44](https://pravo.by/document/?guid=3871&p0=hk0200166); [MNS 2026 filing changes](https://nalog.gov.by/clarifications/comments/33570/).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://nalog.gov.by/clarifications/comments/33570/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 65,
+      "section": "Penalties and interest",
+      "assertion": "Late-payment interest under General Tax Code art. 55 is computed separately for each period of constant unpaid tax and National Bank refinancing rate: `unpaid tax × overdue calendar days × annual rate / 360 / 100`. Count from the day after the due date through payment; interest reflected in the audit decision on audit-assessed tax is capped at that assessed tax amount; apply art. 55(3) exclusions and art. 55(4)'s four-decimal interest-rate precision. Use the rate actually in force in each period, not a single assumed 2026 rate. [General Code art. 55](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 67,
+      "section": "Penalties and interest",
+      "assertion": "For a business/agent return, Administrative Code art. 14.2(1)-(2) sets up to 1 basic unit for no more than 3 working days late; otherwise 2 basic units plus 0.5 per complete month, capped at 10. Repetition within a year invokes art. 14.2(4), 3 per complete or incomplete month, capped at 20. Under art. 14.4(1), business tax underpayment carries 40% of unpaid tax, minimum 2 basic units for an entrepreneur or 10 for a company, subject to the statutory notes, including timely voluntary correction/payment. Do not apply these amounts automatically to an ordinary individual or to a withholding default. [Administrative Code arts. 14.2 and 14.4](https://pravo.by/document/?guid=3871&p0=hk2100091).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk2100091"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 69,
+      "section": "Penalties and interest",
+      "assertion": "The rate and minimum for withholding defaults come from Administrative Code art. 14.5 instead. A TP adjustment is additional profit tax; it is not an automatic separate percentage fine. Determine voluntary-correction and audit status before assessing sanctions. [Administrative Code arts. 14.4-14.5](https://pravo.by/document/?guid=3871&p0=hk2100091).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk2100091"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/by-corporate-income-tax.md",
+      "line": 73,
+      "section": "Cross-border points",
+      "assertion": "A foreign branch/office registration is not the complete PE test. Art. 180 also covers dependent-agent activity, work/services exceeding 180 days in any twelve-month period and construction lasting more than 180 days, retrospectively from commencement. Apply an actually operative treaty after checking suspensions. Attribute income and documented allowable expenses under art. 180; use the separate non-PE withholding system in arts. 188-194 where relevant. Read `belarus-cross-border-tax` for credits, withholding and cessation; `belarus-transfer-pricing` for related-party transactions. [Arts. 180, 187-194](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 19,
+      "section": "Who this applies to",
+      "assertion": "2026 ordinary domestic VAT on supplies by organisations and relevant foreign businesses, plus import and purchaser tax-agent obligations. Art. 112 generally excludes Belarus individual entrepreneurs from VAT on their domestic sales, apart from the specified art. 129(7) case. It does not remove import or foreign-supplier purchaser obligations. Simplified organisations generally replace domestic-sales VAT under art. 326(1.2), while import/purchaser VAT remains. Do not invent a universal small-business turnover-registration threshold for ordinary organisations. [Code arts. 112, 114, 129(7), 326(1.2)](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 21,
+      "section": "Who this applies to",
+      "assertion": "General registration is under General Code arts. 69-70. A payer's domestic obligation follows legal status/regime and taxable operations; low turnover alone is not deregistration. On liquidation or a valid regime change, determine the effective cessation and final obligations under General Code art. 44 and Special Code arts. 127-137. Foreign digital-consumer and distance-selling registration under arts. 141-141-1 is a separate route, outside the computations here. [General Code arts. 44, 69-70](https://pravo.by/document/?guid=3871&p0=hk0200166); [Special Code arts. 127-141-1](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 25,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Item | Amount | Tax year | Official act/article |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 27,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Standard domestic supplies and imports, including electronic services | 20% | 2026 | [Code art. 122(3)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 28,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Eligible listed food/children's goods, qualifying agricultural and medical products | 10%, only within statutory goods/registration conditions | 2026 | [Art. 122(2), Annex 26](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 29,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Telecommunications services | 25% | 2026 | [Art. 122(4)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 30,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Documented export goods and qualifying related services | 0% | 2026 | [Arts. 122(1), 123-126](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 31,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary reporting period | Month by default; eligible quarterly election; telecom monthly | 2026 | [Art. 127](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 32,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Input allocation ratio precision | At least 4 decimal places in percentage share | 2026 | [Art. 134(3)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 33,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary electronic invoice issue deadline | 10th of following month, subject to specific exceptions | 2026 | [Art. 131(5)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 37,
+      "section": "The base",
+      "assertion": "1. **Classify the supply and place.** Domestic taxable turnover and imports are within art. 115, subject to exclusions. Goods use art. 116, including where located or dispatched. For services, art. 117 takes priority by category: immovable-property location, physical movable-property work, specified actually performed services, customer location for listed consultancy/accounting/legal/advertising/IP and similar services, then the residual supplier-location rule. Do not apply a single B2B customer-location rule to every service. EAEU transactions require the applicable treaty/indirect-tax protocol as well. [Arts. 115-117](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 38,
+      "section": "The base",
+      "assertion": "2. **Separate taxable, exempt and zero-rated turnover.** Art. 118 exemptions, including qualifying health, education and financial services, have their own conditions. Zero rating requires the evidence and deadlines in arts. 123-126; a foreign customer is not proof of zero rating. Keep export goods, transport and other services distinct. [Arts. 118, 122-126](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 39,
+      "section": "The base",
+      "assertion": "3. **Set the base and tax point.** Ordinarily base equals consideration including excise but excluding VAT (art. 120). Include statutory price supplements, contractual sanctions and relevant noncash/free transfers under arts. 115/120. Use shipment/performance and the specific timing rules of art. 121, not an assumed receipt rule for all domestic supplies. For tax-exclusive value, output VAT is base times rate; for tax-inclusive value, VAT is gross times rate divided by one plus rate. Track returns, cancellations, price changes and currency conversion under arts. 120-121/129-130 and issue corrected/additional invoices under art. 131. [Arts. 120-121, 128-131](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 40,
+      "section": "The base",
+      "assertion": "4. **Purchaser tax-agent VAT.** Where a foreign supplier is not registered and the supply is located in Belarus, the Belarus purchaser fulfils the obligation under art. 114 even when not an ordinary domestic VAT payer. Determine the base/rate and tax point under the applicable statutory provisions and create the purchaser electronic invoice. Claim purchaser input VAT only when the art. 132-133 payment, accounting and document conditions are met; no automatic immediate offset. [Arts. 114, 120-122, 129, 131-133](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 41,
+      "section": "The base",
+      "assertion": "5. **Establish credits.** Domestic input tax requires a seller invoice received and signed with the purchaser's electronic signature, accounted acquisition and, if elected, entry in the purchase book. Import tax requires payment and the customs or EAEU return/payment documents plus the portal invoice. Purchaser-agent tax requires the return and portal invoice and statutory payment conditions. An ordinary unpaid domestic supplier invoice is not disallowed solely because unpaid, subject to exceptions. Do not claim undocumented or exempt-use input tax. [Art. 132(1),(3)-(5)](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 42,
+      "section": "The base",
+      "assertion": "6. **Allocate mixed credits.** Use the accounting-policy separate-accounting or turnover-share method consistently through the calendar year; turnover share is default if no policy specifies the method. Under art. 134(3), the denominator and relevant turnover are VAT-inclusive, including statutory base adjustments. Allocate exempt-use ordinary input tax to costs under art. 133(3), distinguish capital/intangible credits, and apply art. 135's ordering and output-tax limits. Retain unutilised limited credits. Special eligible zero/reduced-rate credits are deductible beyond output tax under arts. 133(27)/135(2); do not call every excess a refundable cash balance. [Arts. 133-135](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 43,
+      "section": "The base",
+      "assertion": "7. **Net and reconcile.** Compute cumulative output VAT less allowable credits, adjusting for earlier period calculations/payments. Follow art. 137 for eligible excess-credit set-off/refund: apply to the inspectorate, reconcile arrears and retain the supporting documents. Under art. 137(2), with the VAT return on file, the decision is due within two working days of the written application, electronic acceptance confirmation or completion of the applicable check, and is sent within five working days. An ordinary verification inspection under art. 137(3) is appointed within two working days and the verification period is no more than fifteen working days from the refund application; liquidation and exported-oil-product cases have distinct timing. The ordinary set-off period is thirty calendar days after the decision; the remaining eligible balance is refunded within five working days after that period, subject to budget/tax debts. Art. 137(5-1) delays payment for an evidence notice or later inspection: apply its ten-working-day period after accepted evidence/desk-audit act, or five working days after the later inspection act, and never earlier than the ordinary refund deadline. Keep the return, application acceptance, decision, notices, offsets and payment trace. [Arts. 128, 135, 137](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 45,
+      "section": "The base",
+      "assertion": "**Non-EAEU customs imports.** For ordinary release for domestic consumption, Special Code art. 138(2),(5) gives `import VAT base = customs value + payable import duty + payable excise`, and `VAT = base × applicable Belarus VAT rate`. Establish customs value/classification and verify art. 119 exemptions and any procedure-specific relief before calculation. The declarant's obligation arises when customs registers the goods declaration; pay before release for domestic consumption unless a different lawful deadline/deferment applies. Use the customs declaration/payment/release process, retaining valuation, tariff, excise, payment and release records for the paid-import VAT credit under art. 132. The domestic-return 22nd-day deadline is not the customs-import payment deadline. Special procedures, conditional exemptions and release before declaration require their separate customs provisions. [Special Code arts. 119, 122, 132, 138](https://pravo.by/document/?guid=3871&p0=hk0900071); [EAEU Customs Code arts. 135, 136(1),(9), official treaty publication](https://docs.eaeunion.org/documents/236/2895/).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://docs.eaeunion.org/documents/236/2895/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 47,
+      "section": "The base",
+      "assertion": "**25 July-31 December 2026 deferral.** Council Resolution 369 of 23 July 2026 permits legal entities an interest-free import-VAT deferral of no more than three months, counted from the day after release for domestic consumption, provided payment is secured. The goods declaration containing the required deferral information is the application. The act was published 24 July, takes effect after publication and runs through 30 June 2027. Before its 25 July commencement use the ordinary customs rules or another separately established relief. Record the granted due date and security; deferred VAT is not paid VAT for input-credit purposes until its payment conditions are met. [Resolution 369 paras. 1-2, official one-page PDF](https://pravo.by/document/?guid=12551&p0=C22600369); [Special Code art. 132](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=C22600369",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 49,
+      "section": "The base",
+      "assertion": "**EAEU imports.** The owner importing goods from another EAEU member accounts for indirect tax even if it uses a special regime. Under EAEU Treaty Annex 18 paras. 13-20, take the contract purchase price plus excise where applicable at accounting acceptance, converting foreign currency at the National Bank rate on that date. Apply Belarus's relevant 20%/10% rate, then file the import indirect-tax return and pay by the 20th of the following month. This is monthly and separate from the domestic quarterly election. Submit the import-and-indirect-tax statement (four paper copies plus electronic version, or the prescribed signed electronic format), payment bank extract unless the authority confirms payment, transport/shipping evidence, invoices and contracts, plus the conditional intermediary/information documents in para. 20. Retain the authority's statement confirmation for the exporter's zero-rate evidence and the paid-import-VAT credit; do not claim ordinary domestic credit solely from the foreign seller's invoice. Non-EAEU customs imports instead use art. 138. [Special Code arts. 132, 138-139](https://pravo.by/document/?guid=3871&p0=hk0900071); [MNS official EAEU Treaty and Annex 18 publication](https://nalog.gov.by/eec/).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://nalog.gov.by/eec/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 53,
+      "section": "Deadlines and filing",
+      "assertion": "| Obligation | Rule | Official source |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 55,
+      "section": "Deadlines and filing",
+      "assertion": "| Ordinary return/payment | Return by 20th, payment by 22nd of month after reporting period | [Art. 136(1)-(2)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 56,
+      "section": "Deadlines and filing",
+      "assertion": "| Quarterly election | Mark previous-year return by 20 January; one correction by 20 February; new entities notify by 20th following registration month; specific first-object/transition cases follow art. 127 | [Art. 127(3)-(5)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 57,
+      "section": "Deadlines and filing",
+      "assertion": "| Ordinary seller electronic invoice | Not before shipment/performance and by 10th following month; specific unconfirmed-document and transaction exceptions apply | [Art. 131(5)-(8)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 58,
+      "section": "Deadlines and filing",
+      "assertion": "| Legal-entity import-VAT deferral from 25 July 2026 | Up to three months from day after release; interest-free with security; declaration is application; act runs through 30 June 2027 | [Resolution 369 paras. 1-2](https://pravo.by/document/?guid=12551&p0=C22600369) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=C22600369"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 59,
+      "section": "Deadlines and filing",
+      "assertion": "| Customs import VAT, ordinary domestic-consumption release | Pay before release unless a different lawful customs deadline applies; goods declaration/customs release process | [EAEU Customs Code art. 136(1),(9)](https://docs.eaeunion.org/documents/236/2895/) |",
+      "source_links": [
+        "https://docs.eaeunion.org/documents/236/2895/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 60,
+      "section": "Deadlines and filing",
+      "assertion": "| EAEU import VAT | Return and payment by 20th of month after accounting acceptance; import statement and evidence accompany it | [Art. 139](https://pravo.by/document/?guid=3871&p0=hk0900071); [EAEU Treaty Annex 18 paras. 19-20](https://nalog.gov.by/eec/) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://nalog.gov.by/eec/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 61,
+      "section": "Deadlines and filing",
+      "assertion": "| Liquidation/reorganisation | Final returns under General Code art. 44; seller invoices by the specific cessation/reorganisation dates in art. 131(7) | [General Code art. 44](https://pravo.by/document/?guid=3871&p0=hk0200166); [art. 131(7)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 63,
+      "section": "Deadlines and filing",
+      "assertion": "Use MNS electronic returns and the electronic-invoice portal. Retain sales, purchases, signed invoices, customs/import records, export proof and policy allocations. Correct the return for the legally affected period; an invoice correction alone does not automatically amend a filed return. Tax nonworking-day extensions follow General Code art. 4. [General Code arts. 4, 40](https://pravo.by/document/?guid=3871&p0=hk0200166); [Special Code arts. 131-137](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 67,
+      "section": "Penalties and interest",
+      "assertion": "Late-payment interest under General Tax Code art. 55 is computed separately for each period of constant unpaid tax and National Bank refinancing rate: `unpaid tax × overdue calendar days × annual rate / 360 / 100`. Count from the day after the due date through payment; interest reflected in the audit decision on audit-assessed tax is capped at that assessed tax amount; apply art. 55(3) exclusions and art. 55(4)'s four-decimal interest-rate precision. Use the rate actually in force in each period, not a single assumed 2026 rate. [General Code art. 55](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 69,
+      "section": "Penalties and interest",
+      "assertion": "For a business/agent return, Administrative Code art. 14.2(1)-(2) sets up to 1 basic unit for no more than 3 working days late; otherwise 2 basic units plus 0.5 per complete month, capped at 10. Repetition within a year invokes art. 14.2(4), 3 per complete or incomplete month, capped at 20. Under art. 14.4(1), business tax underpayment carries 40% of unpaid tax, minimum 2 basic units for an entrepreneur or 10 for a company, subject to the statutory notes, including timely voluntary correction/payment. Do not apply these amounts automatically to an ordinary individual or to a withholding default. [Administrative Code arts. 14.2 and 14.4](https://pravo.by/document/?guid=3871&p0=hk2100091).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk2100091"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 71,
+      "section": "Penalties and interest",
+      "assertion": "Foreign purchaser-agent defaults require Administrative Code art. 14.5 analysis. Apply the specific electronic-service foreign-payer grace provisions only to the taxpayers described in the notes to arts. 14.2/14.4; they are not a domestic VAT grace period. [Administrative Code arts. 14.2, 14.4-14.5](https://pravo.by/document/?guid=3871&p0=hk2100091).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk2100091"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-vat.md",
+      "line": 75,
+      "section": "Cross-border points",
+      "assertion": "Non-EAEU imports involve customs VAT under art. 138; EAEU imports involve art. 139 and the indirect-tax treaty procedure. Export zero rating requires the respective customs or EAEU evidence under arts. 123-124. Foreign service purchases require the place/purchaser analysis above. Foreign digital-consumer and distance-selling cases must be routed to arts. 141-141-1 before assuming no Belarus registration or tax. Direct-tax treaty business-profit relief does not settle VAT. [Arts. 114, 117, 123-124, 138-141-1](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 21,
+      "section": "Who this applies to",
+      "assertion": "2026 FSZN obligations of employers, working individuals, independent payers and professional-income taxpayers under Law 118-Z of 15 July 2021. Working individuals include Belarus citizens, foreign citizens and stateless persons employed or engaged under covered civil contracts; founders performing management functions are also included. Classify employment, civil services/IP, a founder-manager, an entrepreneur and professional income separately. Foreign nationality alone is not an exemption. [Law arts. 1-3](https://pravo.by/document/?guid=3871&p0=H12100118).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 23,
+      "section": "Who this applies to",
+      "assertion": "Occupational-accident insurance is paid separately to Belgosstrakh for the persons listed in Decree 108's approved Regulation para. 193, including employees, covered civil contractors working at places supplied by the policyholder, and specified managers. Do not apply the FSZN monthly ceiling to this separate base. [Decree 108, paras. 192-194](https://pravo.by/document/?guid=3871&p0=P32500108); [Council Resolution 1462, contribution-payment Regulation para. 2](https://pravo.by/document/?guid=3871&p0=C20601462).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=P32500108",
+        "https://pravo.by/document/?guid=3871&p0=C20601462"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 27,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Item | Amount | Period | Official act/article |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 29,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary employer pension/social | 28% + 6% = 34% | 2026 | [Law 118-Z art. 5](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 30,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Employee pension | 1% | 2026 | [Art. 5(1)](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 31,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Eligible agricultural employers/farms pension | 24%, with 6% social where applicable | 2026 | [Art. 5(1)-(2)](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 32,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Listed consumer/property/garden cooperatives and qualifying disability organisations pension | 5%, with 6% social where applicable | 2026 | [Art. 5(1)-(2)](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 33,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Independent entrepreneur/notary/advocate | 29% pension + 6% social = 35% | 2026 | [Art. 5](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 34,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary monthly FSZN maximum base | 5 times national average wage for preceding month | 2026 | [Art. 4(1)](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 35,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary employee minimum base | Monthly statutory/indexed minimum wage, prorated for part-time/partial month; stated exceptions apply | 2026 | [Art. 9(1)-(2)](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 36,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Entrepreneur low-income threshold | 12 times December minimum wage; if income does not exceed it, minimum contributions are based on actual statutory income | 2026 | [Art. 9(3)](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 37,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Independent annual maximum | Contributions on 60 times national average wage for December of preceding year | 2026 | [Art. 4(1)](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 38,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Professional-income social component | 60% of paid professional-income tax; pension recipient relieved of this component | 2026 | [Art. 16-1](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 39,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Professional occupational pension | Statutory groups 9%, 6% or 4%; base capped at 3 times preceding month's national average wage | 2026 | [Arts. 4(2), 6](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 40,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Accident insurance baseline | Budget organisations 0.1%; other policyholders 0.6%, adjusted for notified discount/surcharge/relief | 2026 | [Decree 108 Regulation para. 194 and Annex 16](https://pravo.by/document/?guid=3871&p0=P32500108) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=P32500108"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 41,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Covered director accident minimum base | National average wage for corresponding month; exact proration not established here | From 1 March 2026 | [Resolution 1462 payment Regulation para. 2; amendment 660](https://pravo.by/document/?guid=12551&p0=C22500660) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=C22500660"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 43,
+      "section": "Rates, bands and thresholds",
+      "assertion": "The wage amounts required by these formulae are period-specific statutory/statistical inputs. Obtain the actual indexed minimum, preceding month's official national average and December figures; do not substitute a forecast for months not yet published. [Law arts. 4, 9](https://pravo.by/document/?guid=3871&p0=H12100118).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 47,
+      "section": "The base",
+      "assertion": "**Employees and employer classes.** Start with covered monetary/in-kind remuneration for each person/month, excluding only items in the Council's statutory exclusion list. Determine the correct employer pension class, add social insurance, and separately withhold employee pension. Apply the FSZN maximum to the relevant monthly remuneration; compute the minimum contribution comparison using actual work time and the exceptions for covered civil contracts, specified public/religious bodies and employee-fault production shortfalls in art. 9(2). An exempt PIT benefit is not automatically FSZN-exempt. Employers are relieved of the employer pension element for group I/II disabled workers from the month following establishment of disability under art. 12(1); do not remove social insurance or the employee element without their own legal basis. [Arts. 4-5, 9, 12](https://pravo.by/document/?guid=3871&p0=H12100118).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 49,
+      "section": "The base",
+      "assertion": "**Independent entrepreneurs.** Determine art. 9(3) income as PIT business base after art. 205 expenses and/or the statutory minimum-wage basis for single-tax periods. If income is no more than twelve December minimum wages, calculate the minimum from that actual income. If greater, minimum contributions use the sum of statutory/indexed monthly minimum wages for the contribution months. Apply 35% to the selected lawful income, subject to the annual maximum. Keep activity-period and exemption evidence; concurrent employment alone is not listed as a voluntary category in the current art. 13. Pension receipt, entitlement to childcare benefit and full-time education are among the specified voluntary cases. Do not give every entrepreneur the same full-year fixed bill or treat low income as automatic zero contributions. [Arts. 4-5, 8-9, 11, 13](https://pravo.by/document/?guid=3871&p0=H12100118).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 51,
+      "section": "The base",
+      "assertion": "**Other independent payers.** Notaries/advocates generally use 35% and the art. 9 monthly minimum, with art. 13 voluntary categories for pension/childcare-benefit cases. Independent professional/craft/agro-tourism payers outside the professional-income tax use the pension coverage rules in arts. 3-5/13; their pension element is 29%, and social insurance is charged only to the categories enumerated in art. 5(2). Do not impose the entrepreneur social element on every self-employed activity. [Arts. 3-5, 9, 13](https://pravo.by/document/?guid=3871&p0=H12100118).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 53,
+      "section": "The base",
+      "assertion": "**Professional income.** For a nonpensioner the app tax includes social insurance; allocate 60% of paid tax to FSZN instead of charging 35% again on the same receipts. Pensioners' tax is reduced by that component, giving effective 4%/8% where ordinary app rates are 10%/20%. The July monthly minimum is likewise 45 normally and 18 for a pension recipient. Notify pension status in the app. Additional voluntary pension contributions and the annual-limit relief require arts. 4-1/9(4)/16-1 calculations, not an assumed universal top-up. [Law arts. 4-1, 9(4), 16-1](https://pravo.by/document/?guid=3871&p0=H12100118); [Tax Code arts. 381-3, 381-6](https://pravo.by/document/?guid=3871&p0=hk0900071); [MNS July minimum](https://nalog.gov.by/actual/npd_45/).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://nalog.gov.by/actual/npd_45/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 55,
+      "section": "The base",
+      "assertion": "**Accident insurance.** Use the covered remuneration under the payment Regulation, without the FSZN ceiling, and the insurer's actual annual tariff notice. For the specified directors/managers from March, test the national-average-wage minimum even if remuneration is low/absent; obtain time-worked evidence and the applicable monthly official wage figure. The base and time-allocation details for January-February directors have not been independently retrieved and are not inferred from the March reform. [Resolution 1462 payment Regulation para. 2](https://pravo.by/document/?guid=3871&p0=C20601462); [Decree 108 Regulation paras. 193-194](https://pravo.by/document/?guid=3871&p0=P32500108).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=C20601462",
+        "https://pravo.by/document/?guid=3871&p0=P32500108"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 57,
+      "section": "The base",
+      "assertion": "**Professional occupational pension.** For covered hazardous/other statutory jobs identify the art. 6 group and full-day qualifying exposure before applying its additional 9%/6%/4% employer rate to the separate three-average-wage-limited base. Statutory pension-age/compensation-election exemptions are in art. 12(3). This additional charge is not the Belgosstrakh premium. [Arts. 4(2), 6, 12(3)](https://pravo.by/document/?guid=3871&p0=H12100118).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 61,
+      "section": "Deadlines and filing",
+      "assertion": "| Obligation | Deadline/rule | Official source |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 63,
+      "section": "Deadlines and filing",
+      "assertion": "| Ordinary employer FSZN payment | Actual pay day for preceding month's wages, no later than contractual pay day and in all cases by 20th following month | [Law art. 8(1)](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 64,
+      "section": "Deadlines and filing",
+      "assertion": "| Eligible commercial employers with preceding-year average staff no more than 100 | Quarterly payment option, no later than qualifying pay day/20th after quarter; late payment triggers monthly treatment for remainder of year | [Art. 8(1)](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 65,
+      "section": "Deadlines and filing",
+      "assertion": "| Independent annual payment | By 31 March following year | [Art. 8(2)](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 66,
+      "section": "Deadlines and filing",
+      "assertion": "| Employer 4-Fund | Electronic quarterly return by 20th after reporting period | [Ministry Resolution 143, approved Form 4-Fund](https://pravo.by/document/?guid=12551&p0=W22544374p) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=W22544374p"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 67,
+      "section": "Deadlines and filing",
+      "assertion": "| Employer PU-3 | Quarterly within following month; covered civil-contract first report within 5 calendar days of contract, 15 for newly registered payer, then quarterly on remuneration | [Resolution 742 Rules para. 17](https://pravo.by/document/?guid=12551&p0=C22500742) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=C22500742"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 68,
+      "section": "Deadlines and filing",
+      "assertion": "| Independent PU-3 | Fund worker files entrepreneur and other specified cases by 15 April; the separately listed self-filers in para. 10 file by 31 March | [Resolution 742 Rules paras. 10, 17](https://pravo.by/document/?guid=12551&p0=C22500742) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=C22500742"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 69,
+      "section": "Deadlines and filing",
+      "assertion": "| PU-2 hiring/dismissal | Hire within 5 calendar days, newly created employer within 15 days of registration; dismissal by following day, subject to stated exceptional order dates | [Resolution 742 Rules para. 16](https://pravo.by/document/?guid=12551&p0=C22500742) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=C22500742"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 70,
+      "section": "Deadlines and filing",
+      "assertion": "| Accident premium | By 25th of month after quarter | [Resolution 1462 payment Regulation para. 4](https://pravo.by/document/?guid=3871&p0=C20601462) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=C20601462"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 71,
+      "section": "Deadlines and filing",
+      "assertion": "| Belgosstrakh annual report | Registered policyholders file calendar-year report by 25 January following year; nonworking deadline moves to next working day | [Resolution 1462 reporting Regulation paras. 2-3, 33-35](https://pravo.by/document/?guid=3871&p0=C20601462) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=C20601462"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 73,
+      "section": "Deadlines and filing",
+      "assertion": "FSZN payment dates falling on nonworking days are brought forward to the preceding working day, except for independent payers, under Law art. 8(5). Accident-premium dates likewise move to the preceding working day (payment Regulation para. 5). Do not apply the tax-return next-working-day convention to these payments. Reconcile employee accounts to contributions actually paid and submit corrections under the current PU rules. Employer/Fund registration and cessation follow Law art. 7 and Resolution 742's registration Regulation; confirm UNPF as well as tax UNP. [Law arts. 7-8](https://pravo.by/document/?guid=3871&p0=H12100118); [Resolution 742](https://pravo.by/document/?guid=12551&p0=C22500742); [Resolution 1462](https://pravo.by/document/?guid=3871&p0=C20601462).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118",
+        "https://pravo.by/document/?guid=12551&p0=C22500742",
+        "https://pravo.by/document/?guid=3871&p0=C20601462"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 75,
+      "section": "Deadlines and filing",
+      "assertion": "From 8 January, Resolution 742 Rules 15-17 also require: PU-1 registration within two calendar days of hiring a person without a social-insurance certificate, except a person whose identity document contains an identification number; PU-1 personal-data change within five working days after the supporting document is presented (identification-number holders use population-register data); PU-2 section 2 job/occupation-only changes quarterly by the 10th after the quarter. For sickness/maternity entitlement, submit the preceding quarter's PU-3 within three working days after the certificate is presented or the Fund's portal notice is received. PU-2 is also due within three working days after the sickness certificate if the post-1-July-2019 concurrent-job code was not supplied. The pension-assignment PU-3 is due within five working days after the person's pension/recalculation application. These event-driven filings do not wait for the ordinary quarter-end batch. [Resolution 742 Rules 15-17, official PDF pp. 32-33](https://pravo.by/document/?guid=12551&p0=C22500742).",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=C22500742"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 77,
+      "section": "Deadlines and filing",
+      "assertion": "From 8 January, covered professional-occupational-pension policyholders also file PU-6 after PU-3 within the month following each quarter. Pension assignment/recalculation for the listed special-work/service/professional pensions triggers PU-6 within five working days after the relevant application; ordinary pension-age attainment or qualifying dismissal triggers it by the following month. Continued employment after a pension-event PU-6 still requires the ordinary quarterly PU-6. On Fund deregistration for liquidation/cessation, PU-2/PU-3/PU-6 are due within thirty working days after the liquidation-start documents are filed; payers outside state registration use the decision/deregistration trigger. PU-2/PU-3/PU-6 reporting deadlines falling on a nonworking day move to the next working day. [Resolution 742 Rules 19-21, official PDF pp. 34-35](https://pravo.by/document/?guid=12551&p0=C22500742).",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=C22500742"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 79,
+      "section": "Deadlines and filing",
+      "assertion": "The 2026 Belgosstrakh annual report is due 25 January 2027. Use the insurer's prescribed electronic-document/electronic software delivery and keep its receipt; the reporting deadline moves to the following working day, while quarterly premium payment moves to the preceding working day. Reorganisation/liquidation reports use the separate 15-working-day triggers in reporting Regulation para. 33 and can be filed on paper under para. 35. [Resolution 1462 reporting Regulation paras. 33-38](https://pravo.by/document/?guid=3871&p0=C20601462); [Resolution 660 commencement para. 3](https://pravo.by/document/?guid=12551&p0=C22500660).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=C20601462",
+        "https://pravo.by/document/?guid=12551&p0=C22500660"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 83,
+      "section": "Penalties and interest",
+      "assertion": "FSZN arrears incur daily interest including payment day, at 1/360 of the National Bank refinancing rate **on the date of payment**, under Law art. 10(2). This differs from General Tax Code art. 55's period-by-period tax-interest rule. Reconcile arrears, benefit offsets and special exceptions before charging interest. Administrative Code art. 12.15 imposes 2-20 basic units on the described responsible persons for unpaid contributions for individuals exceeding 20 basic units, with the note's pay-day exception. [Law art. 10](https://pravo.by/document/?guid=3871&p0=H12100118); [Administrative Code art. 12.15](https://pravo.by/document/?guid=3871&p0=hk2100091).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118",
+        "https://pravo.by/document/?guid=3871&p0=hk2100091"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 85,
+      "section": "Penalties and interest",
+      "assertion": "Accident insurance late-registration fine is 2 basic units; late/inaccurate reporting attracts the separate 2/10-basic-unit rules, including repeated late filing within the stated five-year period. Late premium interest is 1/360 of the refinancing rate for each overdue day including payment. [Decree 108 Regulation paras. 196-197](https://pravo.by/document/?guid=3871&p0=P32500108). Concealed wages have the additional 35%/minimum-base assessment under Law art. 5-1, rather than the ordinary ceiling calculation. [Law arts. 4(1-1), 5-1](https://pravo.by/document/?guid=3871&p0=H12100118).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=P32500108",
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-social-contributions.md",
+      "line": 89,
+      "section": "Cross-border points",
+      "assertion": "Law art. 2 gives applicable international agreements priority. Obtain coverage certificates and check the actual bilateral/EAEU social-security agreement before excluding foreign staff or outbound workers. Foreign branch/representation payment timing has a specific quarterly rule in art. 8(1). Income-tax treaties do not themselves remove FSZN or accident insurance. [Law arts. 1-3, 8](https://pravo.by/document/?guid=3871&p0=H12100118).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 21,
+      "section": "Who this applies to",
+      "assertion": "Ordinary 2026 payroll for Belarus tax agents under Special Code art. 216, including Belarus organisations/entrepreneurs and covered foreign PEs. Determine employee versus covered civil contractor, main employment place, residence and any special regime before calculating. The individual taxpayer's annual high-income declaration is separate from the employer's quarterly tax-agent declaration. [Code arts. 195-199, 207, 214-216-1](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 23,
+      "section": "Who this applies to",
+      "assertion": "FSZN covers employees, covered civil contractors and founder-managers under Law 118-Z; Belgosstrakh civil-contract coverage depends on the specified workplace conditions. HTP, special presidential concessions, severance/benefit schemes and cross-border coverage exemptions require their own verified treatment. [Law arts. 1-5](https://pravo.by/document/?guid=3871&p0=H12100118); [Decree 108 Regulation para. 193](https://pravo.by/document/?guid=3871&p0=P32500108).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118",
+        "https://pravo.by/document/?guid=3871&p0=P32500108"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 27,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Item | Amount | Tax year | Official act/article |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 29,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary income-tax withholding | 13% | 2026 | [Code art. 214(1.1)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 30,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Specified nonpermanently resident foreign citizens/stateless recipients | Tax-agent higher-rate calculation on specified income above BYN 350,000 and 600,000, at 25%/30%; dividends separate | 2026 | [Art. 214(1.2)-(1.3)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 31,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Basic monthly deduction | BYN 216 if taxable income no more than BYN 1,308 | 2026 | [Art. 209(1.1)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 32,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Child/dependant monthly deduction | BYN 63; qualifying enhanced cases BYN 120 each | 2026 | [Art. 209(1.2)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 33,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Protected category / qualifying young specialist | BYN 306 / 860 monthly, subject to documented statutory conditions | 2026 | [Art. 209(1.3)-(1.4)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 34,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary employee pension | 1% of covered FSZN base | 2026 | [Law 118-Z art. 5(1)](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 35,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary employer FSZN | 28% pension plus 6% social = 34% | 2026 | [Law art. 5](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 36,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary FSZN maximum base | 5 times preceding month's national average wage | Monthly, 2026 | [Law art. 4(1)](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 37,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Accident insurance baseline | 0.6% nonbudget employer, before insurer adjustments | 2026 | [Decree 108 Regulation para. 194](https://pravo.by/document/?guid=3871&p0=P32500108) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=P32500108"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 38,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Main-job non-work gifts/material assistance exemption | BYN 3,910 per source/year; other-source qualifying gifts BYN 259 | 2026 | [Code art. 208(23)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 39,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Qualifying main-job insurance benefits exemption | BYN 6,695 per source/year | 2026 | [Art. 208(24)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 43,
+      "section": "The base",
+      "assertion": "1. Assemble each worker's month: salary, bonuses, leave pay, taxable in-kind benefits, civil-contract remuneration and qualifying exemptions. Date and value receipts under arts. 200, 213/216. Maintain monthly and annual source-level totals and all exemption certificates. A gift connected with work is not automatically covered by the non-work gift exemption. [Arts. 196, 200, 208, 213, 216](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 44,
+      "section": "The base",
+      "assertion": "2. Determine the main job and deduction documents. Apply the basic deduction only when monthly taxable income is within its limit, plus proved child/dependant or protected-category deductions and qualifying young-specialist relief. For the latter, use the placement/service, duration and continued-employment conditions in art. 209(1.4), not age alone. Apply qualifying social/housing deductions under arts. 210-211 using payment and entitlement records, reconcile any other agent's usage, and floor the ordinary PIT base at zero. [Arts. 199(3), 209-211](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 45,
+      "section": "The base",
+      "assertion": "3. Compute ordinary PIT from taxable remuneration less lawful PIT deductions. The employee's 1% pension contribution is separately withheld from net pay; it is not automatically subtracted from the PIT base. For ordinary employees outside art. 214's special foreign-person rule, withhold at 13% during the year and supply the information needed for annual high-income assessment. Do not mechanically make every employer aggregate all employers' annual wage income at progressive rates. [Arts. 199, 214-216](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 46,
+      "section": "The base",
+      "assertion": "4. For an agent accruing specified high income to foreign citizens/stateless persons not permanently residing in Belarus, implement art. 214(1.2)-(1.3): apply the higher rates to the statutory annual excess as it arises, withhold on actual payment, and keep dividends in their separate base. This wording is not identical to all nonresident individuals; a Belarus citizen who is tax-nonresident is not automatically in this special foreign-person category. The annual declaration remains mandatory for high-income cases. [Arts. 199(8-2)-(8-3), 214, 219(1.9)](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 47,
+      "section": "The base",
+      "assertion": "5. Compute FSZN from covered remuneration and the actual monthly minimum/maximum, separately from the PIT base. Use the appropriate employer class and exemptions; withhold the employee pension component once. Calculate Belgosstrakh on its separate covered base and actual notified tariff, without importing the FSZN ceiling. From March, covered directors require the national-average-wage minimum test. Route the unresolved January-February director base and exact floor proration to the named gap. [Law arts. 4-5, 9, 12](https://pravo.by/document/?guid=3871&p0=H12100118); [Resolution 1462 payment Regulation para. 2](https://pravo.by/document/?guid=3871&p0=C20601462).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118",
+        "https://pravo.by/document/?guid=3871&p0=C20601462"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 48,
+      "section": "The base",
+      "assertion": "6. `Net pay = gross cash entitlement - employee PIT - employee pension - other lawful employee deductions`. `Employer cost = gross entitlement + employer FSZN + accident premium + any applicable professional occupational pension`. Employer charges are not employee deductions. Reconcile the payroll register, bank payment, tax ledger and individual social accounts. [Code art. 216](https://pravo.by/document/?guid=3871&p0=hk0900071); [Law arts. 4-6, 11](https://pravo.by/document/?guid=3871&p0=H12100118).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 52,
+      "section": "Deadlines and filing",
+      "assertion": "| Obligation | Deadline/rule | Official source |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 54,
+      "section": "Deadlines and filing",
+      "assertion": "| PIT withheld on bank-paid cash income | Remit no later than bank cash withdrawal or transfer of income to recipient/third party | [Code art. 216(6)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 55,
+      "section": "Deadlines and filing",
+      "assertion": "| PIT on cash paid from agent's till / in-kind income | No later than day after cash payment / actual withholding, respectively | [Art. 216(6)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 56,
+      "section": "Deadlines and filing",
+      "assertion": "| Quarterly agent PIT declaration | By 20th of month after quarter, subject to object and statutory annual-final-return rules | [Arts. 207, 216-1](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 57,
+      "section": "Deadlines and filing",
+      "assertion": "| Individual income information, distinct from agent return | Cumulative first six months by 20 July 2026; twelve months by 20 January 2027; use respective old/new forms | [General Code art. 85(6); MNS 2026 instructions](https://nalog.gov.by/individuals_income_2024/) |",
+      "source_links": [
+        "https://nalog.gov.by/individuals_income_2024/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 58,
+      "section": "Deadlines and filing",
+      "assertion": "| Ordinary FSZN payment | Actual/contractual payday for previous month, capped at 20th following month; eligible quarterly exception in Law art. 8 | [Law art. 8](https://pravo.by/document/?guid=3871&p0=H12100118) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 59,
+      "section": "Deadlines and filing",
+      "assertion": "| 4-Fund | Electronic quarterly, by 20th after period | [Ministry Resolution 143, Form 4-Fund](https://pravo.by/document/?guid=12551&p0=W22544374p) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=W22544374p"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 60,
+      "section": "Deadlines and filing",
+      "assertion": "| PU-2 | Hire within 5 calendar days; new employer within 15 days of state registration; dismissal generally by next day | [Resolution 742 Rules para. 16](https://pravo.by/document/?guid=12551&p0=C22500742) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=C22500742"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 61,
+      "section": "Deadlines and filing",
+      "assertion": "| PU-3 | Quarterly within following month; initial covered civil-contract submission within 5 calendar days, 15 for new payer | [Rules para. 17](https://pravo.by/document/?guid=12551&p0=C22500742) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=C22500742"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 62,
+      "section": "Deadlines and filing",
+      "assertion": "| Belgosstrakh premium | By 25th following quarter | [Resolution 1462 payment Regulation para. 4](https://pravo.by/document/?guid=3871&p0=C20601462) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=C20601462"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 63,
+      "section": "Deadlines and filing",
+      "assertion": "| Belgosstrakh annual report | Registered policyholders file calendar-year report by 25 January following year; nonworking deadline moves to next working day | [Resolution 1462 reporting Regulation paras. 2-3, 33-35](https://pravo.by/document/?guid=3871&p0=C20601462) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=C20601462"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 65,
+      "section": "Deadlines and filing",
+      "assertion": "Use the MNS portal/inspectorate for the agent declaration and income information. Do not replace the two 2026 individual-income information submissions with a single March report. Under Law art. 8(5), employer FSZN payments due on nonworking days move to the preceding working day; tax deadlines use General Code art. 4. The ordinary PU/report process above follows Resolution 742 effective 8 January 2026; do not retroactively apply its new engagement-notification rules to 1-7 January without checking the predecessor rules. [General Code arts. 4, 40, 85](https://pravo.by/document/?guid=3871&p0=hk0200166); [Law art. 8](https://pravo.by/document/?guid=3871&p0=H12100118); [Resolution 742 para. 5](https://pravo.by/document/?guid=12551&p0=C22500742).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=H12100118",
+        "https://pravo.by/document/?guid=12551&p0=C22500742"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 67,
+      "section": "Deadlines and filing",
+      "assertion": "From 8 January, Resolution 742 Rules 15-17 also require: PU-1 registration within two calendar days of hiring a person without a social-insurance certificate, except a person whose identity document contains an identification number; PU-1 personal-data change within five working days after the supporting document is presented (identification-number holders use population-register data); PU-2 section 2 job/occupation-only changes quarterly by the 10th after the quarter. For sickness/maternity entitlement, submit the preceding quarter's PU-3 within three working days after the certificate is presented or the Fund's portal notice is received. PU-2 is also due within three working days after the sickness certificate if the post-1-July-2019 concurrent-job code was not supplied. The pension-assignment PU-3 is due within five working days after the person's pension/recalculation application. These event-driven filings do not wait for the ordinary quarter-end batch. [Resolution 742 Rules 15-17, official PDF pp. 32-33](https://pravo.by/document/?guid=12551&p0=C22500742).",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=C22500742"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 69,
+      "section": "Deadlines and filing",
+      "assertion": "From 8 January, covered professional-occupational-pension policyholders also file PU-6 after PU-3 within the month following each quarter. Pension assignment/recalculation for the listed special-work/service/professional pensions triggers PU-6 within five working days after the relevant application; ordinary pension-age attainment or qualifying dismissal triggers it by the following month. Continued employment after a pension-event PU-6 still requires the ordinary quarterly PU-6. On Fund deregistration for liquidation/cessation, PU-2/PU-3/PU-6 are due within thirty working days after the liquidation-start documents are filed; payers outside state registration use the decision/deregistration trigger. PU-2/PU-3/PU-6 reporting deadlines falling on a nonworking day move to the next working day. [Resolution 742 Rules 19-21, official PDF pp. 34-35](https://pravo.by/document/?guid=12551&p0=C22500742).",
+      "source_links": [
+        "https://pravo.by/document/?guid=12551&p0=C22500742"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 71,
+      "section": "Deadlines and filing",
+      "assertion": "The 2026 Belgosstrakh annual report is due 25 January 2027. Use the insurer's prescribed electronic-document/electronic software delivery and keep its receipt; the reporting deadline moves to the following working day, while quarterly premium payment moves to the preceding working day. Reorganisation/liquidation reports use the separate 15-working-day triggers in reporting Regulation para. 33 and can be filed on paper under para. 35. [Resolution 1462 reporting Regulation paras. 33-38](https://pravo.by/document/?guid=3871&p0=C20601462); [Resolution 660 commencement para. 3](https://pravo.by/document/?guid=12551&p0=C22500660).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=C20601462",
+        "https://pravo.by/document/?guid=12551&p0=C22500660"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 75,
+      "section": "Penalties and interest",
+      "assertion": "Agent PIT interest follows General Code art. 55, including the special start at the first day of the following month for ordinary agent PIT remittance delay and the stated audit/transaction exceptions. The generic day-after-due-date rule must not be applied indiscriminately to this withholding liability. [General Code art. 55(2),(4)](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 77,
+      "section": "Penalties and interest",
+      "assertion": "Administrative Code art. 14.5 sets a lower fixed-range fine where both the amount and relative-size tests are satisfied (no more than 4 basic units for an entrepreneur or 10 for a company, and no more than 5% of withheld/remitted tax). Exceeding either invokes 40% of the amount due, minimum 2 basic units for an entrepreneur or 10 for a company. Apply the article's correction and nonpayment exclusions; intentional/responsible-person cases have separate rules. Late agent returns use art. 14.2. [Administrative Code arts. 14.2, 14.5](https://pravo.by/document/?guid=3871&p0=hk2100091).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk2100091"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 79,
+      "section": "Penalties and interest",
+      "assertion": "FSZN interest uses 1/360 of the refinancing rate at payment under Law art. 10; accident penalties use Decree 108 paras. 196-197. An official finding of unlawful PIT non-withholding/non-remittance triggers the separate 26% PIT treatment in art. 214(7.2), as well as the applicable procedural/penalty analysis. [Law art. 10](https://pravo.by/document/?guid=3871&p0=H12100118); [Decree 108](https://pravo.by/document/?guid=3871&p0=P32500108); [Tax Code art. 214(7.2)](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=H12100118",
+        "https://pravo.by/document/?guid=3871&p0=P32500108",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-payroll.md",
+      "line": 83,
+      "section": "Cross-border points",
+      "assertion": "Determine Belarus-source employment income and actual work location under art. 197 before withholding. Treaty employment relief requires the actual operative treaty, sufficient residence evidence under art. 224 and confirmation that relevant provisions are not suspended. Nonresident status alone does not imply exemption. A foreign PE's retrospective payroll-agent duties and specific initial remittance deadline are in art. 216(6). Foreign social coverage requires a separate agreement/certificate analysis, not a PIT treaty conclusion. [Arts. 197, 216(6), 224](https://pravo.by/document/?guid=3871&p0=hk0900071); [Law art. 2](https://pravo.by/document/?guid=3871&p0=H12100118).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://pravo.by/document/?guid=3871&p0=H12100118"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 16,
+      "section": "Who this applies to",
+      "assertion": "2026 profit-tax payers undertaking transactions in General Code art. 88. Identify related persons under art. 20, including specified direct/indirect participation, common control/ownership, management, employment and family relationships. A court can recognise other influential relationships. Multiply participation along each chain and sum the relevant chains under art. 20(2); ownership percentage is not the only test. Interposed parties without substantial functions/assets/risks and offshore residents are treated as related under art. 88(2). [General Code arts. 20, 87-88](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 18,
+      "section": "Who this applies to",
+      "assertion": "Chapter 11 adjusts profit tax/loss where nonmarket conditions reduce Belarus profit tax or inflate loss. Do not compute an automatic TP charge on transaction value or use it to lower Belarus tax. Test the transaction class before its threshold and exclusions. [Arts. 87(4)-(5), 88](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 22,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Item | Amount/test | Period | Official act/article |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 24,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Specified related participation | At least 20%; specified common management composition more than 50% | 2026 | [General Code art. 20(1)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 25,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Related foreign trade / qualifying domestic exempt-related transactions | More than BYN 400,000 per counterparty/year; more than 2,000,000 for listed large taxpayers, with offshore exception | 2026 | [Art. 88(1.1)-(1.2),(3.1)-(3.2)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 26,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Strategic-goods foreign trade | More than BYN 2,000,000 per counterparty/year | 2026 | [Art. 88(1.4),(3.3)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 27,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Offshore / covered shares and loans | More than BYN 400,000 per counterparty/year | 2026 | [Art. 88(2.2),(3.4)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 28,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Covered real estate/housing bonds under art. 88(1.3) | No monetary threshold in art. 88(3) for these categories | 2026 | [Art. 88(1.3),(3)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 29,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Specified home acquired by individual after permanent occupation | Five-year occupation exclusion, subject to wording | 2026 | [Art. 88(1.3)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 30,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Formal-documentation small nonhomogeneous transaction exclusion | No more than 10% of relevant art. 88(3.1) threshold; not a control/disclosure exemption | 2026 | [Art. 97(2)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 31,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Earliest ordinary request for formal documentation | 1 August following transaction year | 2026 transactions: 2027 | [Art. 97(3)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 32,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary profit-tax rate for example adjustments | 20%; increased 25% whole-base rule must be checked separately | 2026 | [Special Code art. 184(1)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 36,
+      "section": "The base",
+      "assertion": "**Control screen.** Classify related foreign trade; domestic transactions with a related Belarus legal entity entitled to profit-tax nonpayment/exemption; the specific property/share/loan category; and strategic-goods foreign trade. The 2026 art. 88(1.3) category expressly includes the listed zone/preferential-regime counterparties and foreign related transactions. Do not send its real estate through the ordinary large-taxpayer threshold. Check art. 88(5) exclusions, including treaty-set prices, specified organised-market securities, qualifying short interbank loans and the other enumerated transactions. [Art. 88](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 38,
+      "section": "The base",
+      "assertion": "Aggregate sales and purchases separately per counterparty for the calendar year, excluding VAT/excise. For loans, transaction price for threshold purposes is principal; include annual new advances/tranches plus the opening outstanding balance where the year's loan transaction occurs. This is not the interest-income base, and an unchanged historical loan is not automatically a new annual advance. [Art. 88(4)](https://pravo.by/document/?guid=3871&p0=hk0200166); [MNS loan clarification](https://nalog.gov.by/organizations/transfer_pricing/questions/).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://nalog.gov.by/organizations/transfer_pricing/questions/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 40,
+      "section": "The base",
+      "assertion": "**Comparability.** Record contract and actual conduct, product/service/IP features, functions, assets, risks, market/economic conditions and business strategy under art. 89. Adjust material differences with evidence. Use official/public market sources or documented third-party data under art. 90, not a made-up markup. For loans examine currency, term/tranche, security, credit quality, interest type and repayment. [Arts. 89-90, 92](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 42,
+      "section": "The base",
+      "assertion": "**Methods and calculation.** Art. 91 prefers the comparable uncontrolled price (CUP) method where it and another method can be used. Otherwise select the most reliable supported resale-price, cost-plus, comparable-profitability or profit-split method; combining methods is permitted. A less complex tested party with fewer risks and no valuable influencing intangibles is the preferred profitability tested party under art. 91(5). [Arts. 91-96](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 44,
+      "section": "The base",
+      "assertion": "- CUP compares adjusted comparable prices with the controlled price. A single comparable can set both bounds only if conditions are comparable/adjustable and the comparable seller is not dominant (art. 92(6)).",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 45,
+      "section": "The base",
+      "assertion": "- Resale price compares gross margin on resale to an independent buyer; cost-plus compares gross profit/cost. Use the art. 91 financial definitions consistently, without mixing gross and operating margins (arts. 93-94).",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 46,
+      "section": "The base",
+      "assertion": "- Comparable profitability uses the supported operating profit/sales, costs, assets or other permitted indicator under arts. 91(8), 95. For an out-of-range result use the relevant closest range boundary under the statute, subject to the upward-tax rule.",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 47,
+      "section": "The base",
+      "assertion": "- Profit split allocates the combined actual profit/loss according to the parties' evidenced functional/asset/risk contributions or other statutory comparable basis; it is not an automatic equal split (art. 96).",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 49,
+      "section": "The base",
+      "assertion": "For ordinary price and profitability ranges, sort comparable values ascending, keep duplicates and exclude the controlled transaction. For `n` observations, lower rank is `n/4` and upper rank `0.75*n`: at an integer rank average that observation and the next; otherwise take the next integer rank. Index observations starting at one. Profitability uses the transaction year or permitted three preceding years, with weighted averages and working-capital adjustments where required. Special exchange/price-agency and loan rules in art. 92(4)-(4-2) override the ordinary range. Prices inside the range are accepted; below/above use the respective boundary. [Arts. 91(10)-(12), 92(4)-(6)](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 51,
+      "section": "The base",
+      "assertion": "For qualifying open-ended/demand loans or missing term/currency comparables, art. 92(4-2) uses the specified currency benchmark with a 20% decrease/increase; BYN lending minimum is refinancing rate less 50%, BYN borrowing maximum is refinancing rate plus 20%. Fixed rates use the contract-date benchmark; variable cases use the income/cost-recognition date; repayment requires the statutory actual-term comparison. These are relative multipliers, not percentage-point shifts. Retrieve the actual dated benchmark, rather than quoting a fixed annual rate. [Art. 92(4-2)](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 53,
+      "section": "The base",
+      "assertion": "**Adjustment.** Calculate the revenue shortfall or excess deductible expense against the lawful boundary; adjust taxable profit/loss only if it does not reduce profit tax. Recalculate cumulative rate and tax under the corporate skill, credit tax already paid, and preserve transaction-level bridge/evidence. A contractual price amendment alone does not discharge a tax adjustment. [Art. 87(4)-(5)](https://pravo.by/document/?guid=3871&p0=hk0200166); [Special Code arts. 184, 186](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 57,
+      "section": "Deadlines and filing",
+      "assertion": "| Obligation | Rule | Official source |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 59,
+      "section": "Deadlines and filing",
+      "assertion": "| Electronic-invoice transaction information | Disclose art. 88(1)-(2) transactions irrespective of value or price deviation; art. 88(5) excluded transactions excepted | [General Code art. 97(1)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 60,
+      "section": "Deadlines and filing",
+      "assertion": "| Formal price documentation | Required for listed large taxpayers' related foreign trade and strategic-goods foreign trade, subject to explicit art. 97(2) exclusions | [Art. 97(2)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 61,
+      "section": "Deadlines and filing",
+      "assertion": "| Documentation requested during audit | Not before 1 August following transaction year; non-desk audit limited to inspected periods | [Art. 97(3)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 62,
+      "section": "Deadlines and filing",
+      "assertion": "| Other controlled transactions | Economic justification in prescribed form on authority notice/request, following arts. 73(8)/79(2) | [Art. 97(5)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 63,
+      "section": "Deadlines and filing",
+      "assertion": "| CUP correction | No later than profit-tax period after transaction/control-trigger period; Q4 corrected in that tax year | [Art. 92(7)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 64,
+      "section": "Deadlines and filing",
+      "assertion": "| Other-method adjustment | For corresponding tax year; disclose transaction and amount in profit-tax return | [Art. 87(5)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 66,
+      "section": "Deadlines and filing",
+      "assertion": "Documentation/economic justification must include payer and counterparty identity, ownership links, contracts, transaction quantities/prices, payment and delivery terms, functions/assets/risks, financial results, method/data sources, comparability adjustments and tax adjustment as prescribed by art. 97(4)-(5). Prepare records contemporaneously; the August restriction on requesting formal documentation does not postpone quarterly CUP correction or invoice disclosure. Corporate returns and payments follow Special Code art. 186. [General Code art. 97](https://pravo.by/document/?guid=3871&p0=hk0200166); [MNS documentation](https://nalog.gov.by/organizations/transfer_pricing/documentation/); [economic justification](https://nalog.gov.by/organizations/transfer_pricing/justification/).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://nalog.gov.by/organizations/transfer_pricing/documentation/",
+        "https://nalog.gov.by/organizations/transfer_pricing/justification/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 70,
+      "section": "Penalties and interest",
+      "assertion": "Late-payment interest under General Tax Code art. 55 is computed separately for each period of constant unpaid tax and National Bank refinancing rate: `unpaid tax × overdue calendar days × annual rate / 360 / 100`. Count from the day after the due date through payment; interest reflected in the audit decision on audit-assessed tax is capped at that assessed tax amount; apply art. 55(3) exclusions and art. 55(4)'s four-decimal interest-rate precision. Use the rate actually in force in each period, not a single assumed 2026 rate. [General Code art. 55](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 72,
+      "section": "Penalties and interest",
+      "assertion": "For a business/agent return, Administrative Code art. 14.2(1)-(2) sets up to 1 basic unit for no more than 3 working days late; otherwise 2 basic units plus 0.5 per complete month, capped at 10. Repetition within a year invokes art. 14.2(4), 3 per complete or incomplete month, capped at 20. Under art. 14.4(1), business tax underpayment carries 40% of unpaid tax, minimum 2 basic units for an entrepreneur or 10 for a company, subject to the statutory notes, including timely voluntary correction/payment. Do not apply these amounts automatically to an ordinary individual or to a withholding default. [Administrative Code arts. 14.2 and 14.4](https://pravo.by/document/?guid=3871&p0=hk2100091).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk2100091"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 74,
+      "section": "Penalties and interest",
+      "assertion": "No standalone TP percentage penalty is inferred here. Inaccurate tax returns, withholding and failure to supply requested information require classification under the applicable Administrative Code provision; formal-documentation timing does not create immunity from additional tax or interest. [General Code arts. 55, 79, 97](https://pravo.by/document/?guid=3871&p0=hk0200166); [Administrative Code ch. 14](https://pravo.by/document/?guid=3871&p0=hk2100091).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=hk2100091"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-transfer-pricing.md",
+      "line": 78,
+      "section": "Cross-border points",
+      "assertion": "Domestic TP, profit-tax controlled-debt limits and foreign withholding are separate tests. Apply each relevant rule and avoid deducting more interest merely because the price is arm's length. A treaty corresponding adjustment/MAP requires the specific operative treaty and suspension analysis; unilateral Belarus upward correction does not itself establish foreign relief. See `belarus-cross-border-tax`. [General Code arts. 87-97](https://pravo.by/document/?guid=3871&p0=hk0200166); [Special Code arts. 172, 187-194](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 16,
+      "section": "Who this applies to",
+      "assertion": "Calendar-year 2026, BYN. This covers ordinary inbound/outbound individuals and business payments, foreign-company permanent establishments (PEs) and cessation. Identify the legal recipient, tax residence, income source, actual beneficial owner, activity and payment date before selecting the tax. A foreign individual is subject to PIT, not the foreign-company chapter. Belarus-resident individuals and organisations include qualifying foreign-source income; nonresident individuals and non-PE foreign companies are taxed on the respective Belarus-source objects. [General Code arts. 14-17](https://pravo.by/document/?guid=3871&p0=hk0200166); [Special Code arts. 166-169, 188-198](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 20,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Item | Domestic rule for 2026 | Official act/article |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 22,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Individual residence | More than 183 days in Belarus in calendar year; statutory absence/counting and treaty rules | [General Code art. 17](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 23,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary individual PIT | 13%; specified Belarus-source high incomes 25% above 350,000 through 600,000 and 30% above 600,000; separate dividend base | [Special Code arts. 199(8-2)-(8-3), 214](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 24,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Non-PE foreign-company international transport/forwarding | 6% | [Art. 192(1.2), income class 189(1.1)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 25,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Non-PE foreign-company debt interest | 10%, except specifically qualified zero/reduced cases | [Art. 192(1.3), exceptions (1.1)-(1.2)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 26,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Non-PE foreign-company dividends | 25% | [Art. 192(1.4), class 189(1.4)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 27,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Other listed non-PE foreign-company income | 15%, including ordinary royalties and listed consultancy/other services | [Art. 192(1.5), art. 189](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 28,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Ordinary PE profit tax | 20%; whole statutory base 25% when cumulative threshold exceeds BYN 25 million; separate PE testing | [Art. 184(1)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 29,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Domestic service/construction PE duration | More than 180 days in any relevant 12-month period; retrospective from start; fixed-place/agent tests separately apply | [Art. 180(1)-(5)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 30,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Offshore levy | 15% of statutory transfer/contract base, where art. 263 applies | [Arts. 262-267](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 31,
+      "section": "Rates, bands and thresholds",
+      "assertion": "| Foreign digital/distance-selling registration | Turnover exceeding EUR 10,000 equivalent in current year; register by quarter end | [General Code art. 70(1.7)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 33,
+      "section": "Rates, bands and thresholds",
+      "assertion": "These are domestic rates, not treaty rates. A certificate alone does not establish an available treaty article or beneficial ownership. Specific government-debt and other art. 192 relief requires its own facts; there is no universal zero rate for foreign-company interest.",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 37,
+      "section": "The base",
+      "assertion": "**Residence and individuals.** Under General Code art. 17, count from the day after arrival through departure. Statutory temporary treatment/business absences count; holiday absences count only within the stated aggregate 60-day condition. Prior-year status is provisional for current withholding. Resolve dual residence using the actual operative treaty. Without a resolving treaty, the citizenship/permanent-residence fallback in art. 17(5) applies. Residence permits and nationality alone do not replace this procedure. Residents include foreign receipts under arts. 195-203; the income-tax guide supplies exemptions and deductions. Convert foreign-currency individual receipts at the National Bank rate on actual receipt, with the separate employment and entrepreneur dates in art. 199(11). [General Code art. 17](https://pravo.by/document/?guid=3871&p0=hk0200166); [Special Code arts. 195-214](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 39,
+      "section": "The base",
+      "assertion": "**Foreign-company withholding.** Test the closed Belarus-source income classes in art. 189. Ordinary foreign business turnover is not automatically subject to 15%, and performance abroad does not automatically remove listed consultancy/royalty income. Art. 190(1.3) uses gross income for the residual classes. The specific documented deductions in art. 190(1.1) cover qualifying leasing reimbursement/insurance/financing, specified merchandise operations, real-estate/security/share disposal costs and other listed classes. The agent must possess the documents. For property and company-interest disposals apply the specified historical USD conversions and reconversion at the liability date; do not deduct an unsupported accounting carrying value. Dividends use art. 182(6)'s base via art. 190(1.2). [Arts. 189-190](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 41,
+      "section": "The base",
+      "assertion": "Art. 191 generally recognises the earlier of accounting recognition/completion of the obligation and payment, including noncash settlement. For specified debt interest and contractual sanctions, use the permitted accrual/payment election consistently for the year and mark the return. Convert currency on the applicable liability date under that article. If a contract promises a net amount and requires the payer to bear withholding, gross up the taxable amount before applying the rate, rather than multiplying only the promised net by the rate. [Arts. 190-191](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 43,
+      "section": "The base",
+      "assertion": "**PE profit.** Art. 180 covers a fixed place/branch, a dependent contracting agent, aggregated places performing functions toward a common result, and the service/construction duration tests. Independent ordinary-course agents and exclusively preparatory/auxiliary activities qualify for the stated exceptions only on their actual conduct. Aggregate service days across sites; construction unrelated sites have the separate rule. A PE is recognised from commencement once the duration condition is met. Calculate attributable revenue less evidenced allowable costs and losses using the corporate guide; head-office costs require art. 180(9)-(13)'s allocation, currency and evidence rules, including the prescribed foreign auditor/tax-consultant conclusion unless the local-record exception applies. If profit cannot be evidenced, art. 180(7) provides an agreed allocation or analogous-business assessment, not zero profit. [Arts. 180, 183-186](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 45,
+      "section": "The base",
+      "assertion": "**Foreign-tax credits.** For a Belarus company, art. 187 covers qualifying foreign income tax actually paid/withheld, within Belarus tax on that same income, the tax paid for its income calendar year and the operative treaty amount. Translate at payment date, with art. 187(3)'s certificate-date alternatives. File foreign-authority evidence; art. 187(5) permits specified alternative documents and supplemental contracts/primary records for missing details. Credit normally belongs to the period evidence is filed; evidence filed before the prior annual return deadline can support that annual return or the current period. No unrestricted credit for foreign tax on unrelated income. [Art. 187](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 47,
+      "section": "The base",
+      "assertion": "Resident individual credit under art. 224 is similarly limited to Belarus tax on the qualifying foreign income, subject to the statutory offshore exclusion and any operative treaty. Obtain foreign-authority proof or the permitted declaration/payment evidence. Temporary payer evidence requires the final evidence within the statutory one-year follow-up, otherwise reassessment and interest follow. Entrepreneurs have the separate evidence-filing period, exchange-rate and treaty-cap rules in art. 224(3). [Art. 224(1)-(3)](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 49,
+      "section": "The base",
+      "assertion": "**Offshore levy.** Belarus organisations/entrepreneurs separately test art. 263: payments to offshore-registered recipients or offshore accounts, obligations to those persons, and the specified noncash/assignment transactions. Screen the recipient registration and account jurisdiction against the actual current list in Presidential Decree 353 of 25 May 2006, including subnational entries such as Delaware and Wyoming, rather than treating every US payment identically. [Decree 353](https://pravo.by/document/?guid=3871&p0=P30600353). Apply the exact art. 264 exemptions, including qualifying returned loan principal/interest and specified maritime freight/forwarding conditions, before using the 15% art. 265 transfer/contract base. A withholding-treaty reduction does not by itself remove this separate levy. [Arts. 262-267](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=P30600353",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 53,
+      "section": "Deadlines and filing",
+      "assertion": "| Duty | Procedure/deadline | Official act/article |",
+      "source_links": []
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 55,
+      "section": "Deadlines and filing",
+      "assertion": "| Foreign-company withholding | Agent's quarterly return by 20th, payment by 22nd after quarter | [Art. 193](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 56,
+      "section": "Deadlines and filing",
+      "assertion": "| Treaty relief before withholding | Provide competent foreign-authority residence certificate and required beneficial-owner evidence by statutory time; verify actual operative treaty/article | [Art. 194](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 57,
+      "section": "Deadlines and filing",
+      "assertion": "| Treaty refund after withholding | Submit certificate, application and required contract/payment records through agent's tax office under art. 194; no assumed automatic refund | [Art. 194(4)-(6)](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 58,
+      "section": "Deadlines and filing",
+      "assertion": "| Representative office/branch registration | Apply at local tax office within 10 working days of opening; dependent-agent activity before commencement | [General Code art. 70(1.1),(1.5)-(1.6)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 59,
+      "section": "Deadlines and filing",
+      "assertion": "| Property registration | Foreign owner registers for tax before state registration of relevant property right | [General Code art. 70(1.2)](https://pravo.by/document/?guid=3871&p0=hk0200166) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 60,
+      "section": "Deadlines and filing",
+      "assertion": "| Resident individual foreign/high income | Return by 31 March following year; authority notice by 30 April; pay by 1 June | [Special Code art. 219](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 61,
+      "section": "Deadlines and filing",
+      "assertion": "| Nonresident individual expected taxable activity/disposal | Declare/pay before activity, with real-estate payment within 5 working days after notice; cessation reconciliation and extra payment have separate 5-working-day rules | [Art. 218](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 62,
+      "section": "Deadlines and filing",
+      "assertion": "| Belarus citizen permanently departing | Declare current-year receipts through declaration date, pay within 15 calendar days after notice and before departure; later receipts need additional declaration | [Art. 222](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 63,
+      "section": "Deadlines and filing",
+      "assertion": "| Offshore levy | Monthly return by 20th after month; cash transfer tax before transfer, noncash generally next day; specified card/LC/direct-debit cases by 22nd after month | [Art. 267](https://pravo.by/document/?guid=3871&p0=hk0900071) |",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 65,
+      "section": "Deadlines and filing",
+      "assertion": "For a PE, use the quarterly/annual corporate return and payment calendar in the corporate guide. Register/notify the actual activity and preserve local records rather than waiting until day 181. A foreign office/branch registration does not itself prove that every payment is PE-attributable. The agent obtains the Belarus tax office's PE confirmation for the art. 193 exemption by the applicable deadline; otherwise the existence of another PE does not justify withholding nothing. [Arts. 180, 186, 193(4)](https://pravo.by/document/?guid=3871&p0=hk0900071); [General Code arts. 69-70](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071",
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 67,
+      "section": "Deadlines and filing",
+      "assertion": "On foreign-company/PE cessation, file the final return at least five working days before cessation and settle tax/interest no later than one working day after filing (General Code art. 44(4)). Special Code art. 186(2) uses actual gross profit through cessation. For Belarus-entity liquidation, art. 44(1) requires an initial return within five working days after the liquidation application, tax/interest by the 22nd of the following month, and a final return at least ten working days before the liquidation balance if taxable objects arise during liquidation; the latter settlement is within five working days after that return. Ordinary intervening returns continue unless the paragraph's no-further-object condition applies. The liquidator settles the company's liabilities under art. 44(2). A liquidated branch's return is due by the 20th following the liquidation month and payment by the 22nd of the filing month (art. 44(3)). Use the corporate guide's actual-profit base/rate and separately classify shareholder distributions under arts. 189-190; settlement procedure is not a deemed-disposal exemption. Foreign-entity deregistration under General Code art. 70(4) requires the specified twelve-month interval, clearance of liabilities/penalties and completion of pending audit conditions, followed by the ten-working-day action period; it is not automatic on closing a bank account. This pack does not establish every corporate migration, deemed-disposal or liquidation charge. Do not infer an exemption or zero exit tax from that limit. [General Code arts. 44, 70(4)](https://pravo.by/document/?guid=3871&p0=hk0200166); [Special Code art. 186(2)](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166",
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 71,
+      "section": "Penalties and interest",
+      "assertion": "Late-payment interest under General Tax Code art. 55 is computed separately for each period of constant unpaid tax and National Bank refinancing rate: `unpaid tax × overdue calendar days × annual rate / 360 / 100`. Count from the day after the due date through payment; interest reflected in the audit decision on audit-assessed tax is capped at that assessed tax amount; apply art. 55(3) exclusions and art. 55(4)'s four-decimal interest-rate precision. Use the rate actually in force in each period, not a single assumed 2026 rate. [General Code art. 55](https://pravo.by/document/?guid=3871&p0=hk0200166).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0200166"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 73,
+      "section": "Penalties and interest",
+      "assertion": "Late agent returns use Administrative Code art. 14.2. Under art. 14.5, the lower withholding-default bracket requires both the amount ceiling (4 basic units for an entrepreneur, 10 for a company) and no more than 5% of the period amount. Fines are 0.4-4 basic units / 2-20 basic units respectively; exceeding either condition invokes 40% of the unpaid amount, minimum 2 / 10 basic units. Responsible-person and intentional-default sanctions are separate. Preserve voluntary-correction/payment facts and assess statutory exceptions before imposing a fine. [Administrative Code arts. 14.2, 14.5](https://pravo.by/document/?guid=3871&p0=hk2100091).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk2100091"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 77,
+      "section": "Cross-border points",
+      "assertion": "For each payment, document the recipient country, legal and beneficial owner, income class, treaty's entry/termination status and exact article's suspension status at the relevant date. Council Resolution 164 of 7 March 2024 suspends specified dividend, interest and capital-gain provisions with listed countries for 1 June 2024-31 December 2026; the exact country/article conditions and subsequent changes require checking, not a claim that every treaty with those countries is wholly suspended. The Lithuania treaty terminated from 1 January 2026. Use domestic law where the relevant treaty relief is unavailable. [Resolution 164, para. 2 and annex](https://pravo.by/document/?guid=3871&p0=C22400164); [MNS commencement notice](https://nalog.gov.by/news/23386/); [MNS Lithuania termination](https://nalog.gov.by/news/29303/); [MNS current treaty directory](https://nalog.gov.by/international/double_taxation/).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=C22400164",
+        "https://nalog.gov.by/news/23386/",
+        "https://nalog.gov.by/news/29303/",
+        "https://nalog.gov.by/international/double_taxation/"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 79,
+      "section": "Cross-border points",
+      "assertion": "Art. 194 requires the residence confirmation for the relevant period, with its specified annual/timing exceptions. Beneficial-owner documentation is a separate requirement; the BYN 40,000 aggregate unclaimed-tax documentation exception does not create substantive treaty entitlement. If evidence arrives late, withhold domestically then use the documented refund route. Individuals' residence certificates and refunds use art. 224(4). For outbound corporate claims, obtain a Belarus residence certificate under art. 187(7), naming the foreign country and available income details. Individuals use the prescribed Belarus residence certificate under art. 224(5); foreign residence evidence and treaty refunds remain under art. 224(4). [Arts. 187, 194, 224](https://pravo.by/document/?guid=3871&p0=hk0900071).",
+      "source_links": [
+        "https://pravo.by/document/?guid=3871&p0=hk0900071"
+      ]
+    },
+    {
+      "path": "skills/international/belarus/belarus-cross-border-tax.md",
+      "line": 81,
+      "section": "Cross-border points",
+      "assertion": "VAT place/reverse charge/imports, transfer pricing, controlled debt and social-security coverage are separate tests. A direct-tax business-profit exemption does not settle any of them. This guide supplies the verification procedure, not a comprehensive country-by-country treaty-rate matrix or treaty-specific MAP/APA analysis.",
+      "source_links": []
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Concepto de rendimientos del capital inmobiliario</title><meta name="ObjectId" content="6750c89071839910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='3c18add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100.html'>Manual práctico de Renta 2025. Parte 1.</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='c840c89071839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario.html'>Capítulo 4. Rendimientos del capital inmobiliario</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='fd40c89071839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c04-rendimientos-capital-inmobiliario/rendimientos-capital-inmobiliario.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Rendimientos del capital inmobiliario</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100.html" class="d-none">Manual práctico de Renta 2025. Parte 1.</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Concepto de rendimientos del capital inmobiliario</h1><p><strong>Normativa: Art. 22.1 Ley <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> </strong></p>
+<p>Tienen la consideraci&oacute;n de rendimientos &iacute;ntegros de capital inmobiliario los que deriven del <strong>arrendamiento o de la constituci&oacute;n o cesi&oacute;n de derechos o facultades de uso o disfrute sobre bienes inmuebles r&uacute;sticos y urbanos o de derechos reales que recaigan sobre ellos</strong>, cuya <strong>titularidad</strong> corresponda al contribuyente y <strong>no se hallen afectos</strong> a actividades econ&oacute;micas realizadas por el mismo.</p>
+<p class="letrita sangrado-izq">Son derechos reales de uso o disfrute sobre el inmueble, entre otros, el usufructo, el derecho de uso y el de habitaci&oacute;n, el derecho real de aprovechamiento por turno de bienes inmuebles, el derecho de superficie, servidumbres, censos y censo enfit&eacute;utico.</p>
+<p>La titularidad, plena o compartida, del derecho de propiedad o de derechos reales de disfrute sobre bienes inmuebles que no est&eacute;n arrendados ni cedidos a terceros, ni tampoco est&eacute;n afectos a actividades econ&oacute;micas, no genera rendimientos del capital inmobiliario, sino que da lugar a la aplicaci&oacute;n del r&eacute;gimen especial de imputaci&oacute;n de rentas inmobiliarias, con excepci&oacute;n de la vivienda habitual, los solares no edificados y los inmuebles de naturaleza r&uacute;stica.</p>
+<p class="letrita sangrado-izq">V&eacute;anse al respecto, dentro del Cap&iacute;tulo 10, el ep&iacute;grafe "<a href="/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c10-regimenes-especiales-imputacion-atribucion-rentas/regimen-imputacion-rentas-inmobiliarias.html">R&eacute;gimen de Imputaci&oacute;n de rentas inmobiliarias</a>", y los art&iacute;culos 6.2.e) y 85 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>.</p>
+<h2>Otras precisiones en relaci&oacute;n con el concepto de rendimientos del capital inmobiliario</h2>
+<p><strong>1. Arrendamiento de inmueble como rendimiento del capital inmobiliario</strong></p>
+<p><strong>Normativa: Art. 27.2 Ley <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr></strong></p>
+<p>Los rendimientos derivados del <strong>arrendamiento de bienes inmuebles</strong> tienen la consideraci&oacute;n de rendimientos del capital inmobiliario, salvo que el <strong>arrendamiento se realice como actividad econ&oacute;mica.</strong></p>
+<p>A estos efectos, se entiende que el arrendamiento de bienes inmuebles se realiza como actividad econ&oacute;mica &uacute;nicamente cuando para la ordenaci&oacute;n de esta se utilice, al menos, una persona empleada con contrato laboral y a jornada completa.</p>
+<p>Para que los rendimientos derivados del arrendamiento se califiquen como rendimientos de capital inmobiliario, el alquiler se tiene que limitar a la mera puesta a disposici&oacute;n de un inmueble durante periodos de tiempo sin que se presten servicios propios de la industria hotelera (tales como restaurante, limpieza, lavado de ropa y otros an&aacute;logos), ni se cumplan los requisitos previstos en el art&iacute;culo 27.2 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>.</p>
+<p>En consecuencia, tendr&aacute; la consideraci&oacute;n de rendimiento de actividades econ&oacute;micas si se da cualquiera de las siguientes circunstancias:</p>
+<ul>
+<li>
+<p>Si el arrendador utiliza, al menos, una persona empleada con contrato laboral y a jornada completa en la gesti&oacute;n de la actividad.</p>
+<p class="letrita">Este requisito s&oacute;lo se entender&aacute; cumplido si dicho contrato es calificado como laboral por la normativa laboral vigente y es a jornada completa. No obstante, en cualquier caso, dicho requisito implica que el arrendador utilice, al menos, una persona empleada con contrato laboral y a jornada completa en la gesti&oacute;n de la actividad, sin que pueda entenderse cumplido por las tareas de gesti&oacute;n realizadas por &eacute;l mismo.</p>
+</li>
+<li>
+<p>Si el arrendamiento no se limita a la mera puesta a disposici&oacute;n del inmueble durante periodos de tiempo, sino que se complementa con la prestaci&oacute;n de servicios propios de la industria hotelera.</p>
+</li>
+</ul>
+<p><strong>2. Subarrendamiento</strong></p>
+<p><strong>Normativa: Art. 25.4.c) Ley <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr></strong></p>
+<p>En el supuesto de subarrendamientos, las cantidades percibidas por el <strong>subarrendador</strong> se consideran <strong>rendimientos del capital mobiliario</strong>.</p>
+<p>Sin embargo, la participaci&oacute;n del <strong>propietario o usufructuario</strong> del inmueble en el precio del subarriendo tiene la consideraci&oacute;n de <strong>rendimientos del capital inmobiliario</strong>, sin que proceda aplicar sobre el rendimiento neto la reducci&oacute;n por arrendamiento de bienes inmuebles destinados a vivienda, establecida en el art&iacute;culo 23.2 de la Ley del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr>, que m&aacute;s adelante se comenta.</p>
+<p><strong>3. Arrendamiento de negocios o minas</strong></p>
+<p><strong>Normativa: Art. 25.4.c) Ley <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr></strong></p>
+<p>Las cantidades percibidas por arrendamientos de negocios o minas tienen la consideraci&oacute;n fiscal de <strong>rendimientos del capital mobiliario</strong>.</p>
+<p>Sin embargo, si el arrendamiento &uacute;nicamente es de un <strong>local de negocio</strong>, los rendimientos obtenidos deben calificarse como del<strong> capital inmobiliario</strong> y cuantificarse aplicando las reglas que se comentan en este Cap&iacute;tulo.</p>
+<p class="letrita sangrado-izq">Debe distinguirse entre arrendamiento de un local de negocio y el arrendamiento de negocio: si el objeto del contrato de arrendamiento no son solo los bienes muebles e inmuebles, sino tambi&eacute;n una unidad econ&oacute;mica con entidad propia susceptible de ser inmediatamente explotada, o pendiente para serlo de meras formalidades administrativas, el rendimiento percibido se computar&aacute; entre los procedentes del capital mobiliario; si el objeto del arrendamiento es &uacute;nicamente el local de negocio, el rendimiento se considerar&aacute; procedente del capital inmobiliario.</p>
+<p><strong>4. Indemnizaci&oacute;n por resoluci&oacute;n anticipada del contrato de arrendamiento</strong></p>
+<p>La indemnizaci&oacute;n satisfecha como consecuencia de la resoluci&oacute;n anticipada del contrato de arrendamiento tiene para el <strong>propietario-arrendador la consideraci&oacute;n de mejora</strong> y no la de gasto deducible para la determinaci&oacute;n del rendimiento neto del capital inmobiliario. Para el <strong>arrendatario que la percibe constituye una ganancia patrimonial</strong> cuyo per&iacute;odo de generaci&oacute;n ser&aacute; el que corresponda en funci&oacute;n de la antig&uuml;edad del contrato de arrendamiento.</p>
+<div>
+<table>
+<thead>
+<tr>
+<th><span class="letrita">Rescisi&oacute;n anticipada de contrato</span></th>
+<th class="texto_cen"><span class="letrita"><strong>Arrendador</strong></span></th>
+<th class="texto_cen"><span class="letrita"><strong>Arrendatario</strong></span></th>
+</tr>
+</thead>
+<caption><span class="letrita"><strong>Cuadro resumen: tratamiento de la indemnizaci&oacute;n por resoluci&oacute;n anticipada del contrato</strong></span></caption>
+<tbody>
+<tr>
+<th><span class="letrita">Voluntad del&nbsp;arrendador</span></th>
+<td class="letrita">Indemnizaci&oacute;n satisfecha: Mejora</td>
+<td class="letrita">Indemnizaci&oacute;n percibida: Ganancia patrimonial</td>
+</tr>
+<tr>
+<th><span class="letrita">Voluntad del arrendatario</span></th>
+<td class="letrita">Indemnizaci&oacute;n percibida: Rendimiento&nbsp;de&nbsp;capital inmobiliario</td>
+<td class="letrita">Indemnizaci&oacute;n satisfecha: P&eacute;rdida patrimonial</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>5. Inmueble con uso o destino simult&aacute;neo en el mismo per&iacute;odo (arrendado y a disposici&oacute;n de sus titulares)</strong></p>
+<p>Cuando un inmueble sea objeto en el mismo per&iacute;odo impositivo de utilizaciones sucesivas o simult&aacute;neas diferentes, es decir, arrendado durante parte del a&ntilde;o y a disposici&oacute;n de su titular el resto, la renta derivada del arrendamiento constituye rendimiento del capital inmobiliario y la correspondiente al per&iacute;odo no arrendado o a la parte no arrendada tiene la consideraci&oacute;n de renta imputada por la titularidad del inmueble , siempre que este no se convierta en la vivienda habitual del contribuyente.</p>
+<p class="letrita sangrado-izq">La <a href="/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c10-regimenes-especiales-imputacion-atribucion-rentas/regimen-imputacion-rentas-inmobiliarias.html">imputaci&oacute;n de rentas por los inmuebles</a>&nbsp;que hayan estado durante el ejercicio, total o parcialmente, a disposici&oacute;n de sus propietarios o usufructuarios se comenta en el Cap&iacute;tulo 10.</p>
+<p>El importe de los rendimientos y de la renta imputada se determinar&aacute; en proporci&oacute;n al n&uacute;mero de d&iacute;as que se hayan encontrado arrendados o sin arrendar, respectivamente, los inmuebles dentro del ejercicio.</p>
+<p class="letrita sangrado-izq">Las rentas procedentes de bienes inmuebles, que no se encuentran arrendados ni subarrendados, pero que est&aacute;n destinados a serlo (inmuebles en expectativa de alquiler), tributan como rentas imputadas y no cabe deducir gastos correspondientes a ese periodo, en la medida en que durante &eacute;l no se obtienen rendimientos de capital inmobiliario. Criterio interpretativo fijado por el Tribunal Supremo en su Sentencia <abbr title="n&uacute;mero">n&uacute;m.</abbr> 270/2021, de 25 de febrero (<abbr title="Repertorio Oficial de Jurisprudencia">ROJ</abbr>: STS 910/2021).</p>
+<p><strong>6. El arrendamiento de elementos comunes de un edificio</strong></p>
+<p>El arrendamiento de elementos comunes de un edificio como, por ejemplo, parte de la fachada o de la cubierta, por la comunidad de propietarios da lugar a rendimientos del capital inmobiliario que se atribuir&aacute;n a los copropietarios seg&uacute;n su participaci&oacute;n en la comunidad.</p>
+<p class="letrita sangrado-izq">El <a href="/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c10-regimenes-especiales-imputacion-atribucion-rentas/regimen-atribucion-rentas.html">r&eacute;gimen de atribuci&oacute;n de rentas</a>&nbsp;obtenidas por determinadas entidades, incluidas las comunidades de propietarios, se comenta&nbsp;en el Cap&iacute;tulo 10.</p><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-03-17">17/marzo/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

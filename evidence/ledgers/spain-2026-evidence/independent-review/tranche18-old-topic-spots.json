@@ -1,0 +1,186 @@
+[
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 39,
+    "section": "## Section 2 -- How Regional Deductions Work / ### The Dual Structure of Spanish IRPF",
+    "wording": "- **Dual structure of IRPF** — Spanish IRPF is split 50/50 between the State (cuota estatal) and the Autonomous Community (cuota autonómica). The state portion is fixed nationwide; the regional portion is where each CCAA can: 1. Modify the regional tax brackets (escala autonómica) 2. Create regional deductions (deducciones autonómicas) that reduce the cuota autonómica. Regional deductions apply AFTER computing the cuota íntegra autonómica. They reduce the tax owed to the regional government. They do NOT reduce the state portion.",
+    "destination": "CORRECTED dual structure: current LF23 and1345–1348 calculate separate own scales/minima and allocations; the two actual tax liabilities are not automatically equal50/50. Regional credits reduce their own gross quota."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 62,
+    "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.1 Andalucía (15 deductions)",
+    "wording": "| General | Deducción aplicable con carácter general | Income below threshold |",
+    "destination": "Not yet confirmed: historical generic standalone Andalucía low-income credit is not established by the actual current arts2–22quater catalogue read for LF214–258; no generic amount is fabricated. Original assertion preserved here as an unsupported historical topic, not silently presented as a current credit."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 225,
+    "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.12 Galicia (21 deductions)",
+    "wording": "| Vivienda | Inversión vivienda habitual | Home purchase |",
+    "destination": "Current LF1160: Designated historic-centre rehabilitation; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Generichomepurchase description narrowed to actual designated/historical/model-village provisions1160–1162; no general purchase allowance claimed."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 227,
+    "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.12 Galicia (21 deductions)",
+    "wording": "| Educación | Gastos universitarios | University expenses |",
+    "destination": "Not yet confirmed: historical generic Galicia university-expense credit is not established by the actual current art5 catalogue read for LF1114–1230. No general university expense allowance is invented; original wording preserved here as an unsupported historical topic."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 250,
+    "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.14 Comunidad de Madrid (26 deductions)",
+    "wording": "| Familia | Nacimiento o adopción | EUR 600/child (EUR 600 additional if multiple) |",
+    "destination": "Current LF66: Birth/adoption; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Old headline rates/amounts are historical; in particular no standalone15%environmental-gift route is inferred from the old label."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 251,
+    "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.14 Comunidad de Madrid (26 deductions)",
+    "wording": "| Familia | Adopción internacional | EUR 600/child |",
+    "destination": "Current LF67: International adoption; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Old headline rates/amounts are historical; in particular no standalone15%environmental-gift route is inferred from the old label."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 252,
+    "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.14 Comunidad de Madrid (26 deductions)",
+    "wording": "| Familia | Acogimiento familiar menores | EUR 600-900/minor |",
+    "destination": "Current LF68: Foster children; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Old headline rates/amounts are historical; in particular no standalone15%environmental-gift route is inferred from the old label."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 253,
+    "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.14 Comunidad de Madrid (26 deductions)",
+    "wording": "| Familia | Acogimiento no remunerado mayores 65/discapacitados | EUR 900/person |",
+    "destination": "Current LF69: Unpaid fostering of older/disabled persons; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Old headline rates/amounts are historical; in particular no standalone15%environmental-gift route is inferred from the old label."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 254,
+    "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.14 Comunidad de Madrid (26 deductions)",
+    "wording": "| Vivienda | Arrendamiento vivienda habitual | 30% rent, max EUR 1,000 (under 35) |",
+    "destination": "Current LF88: Tenant's habitual-home rent; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Old headline rates/amounts are historical; in particular no standalone15%environmental-gift route is inferred from the old label."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 255,
+    "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.14 Comunidad de Madrid (26 deductions)",
+    "wording": "| Actividad Económica | Fomento autoempleo jóvenes <35 | EUR 1,000 for new self-employed under 35 |",
+    "destination": "Current LF98: First self-employment census registration; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Old headline rates/amounts are historical; in particular no standalone15%environmental-gift route is inferred from the old label."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 257,
+    "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.14 Comunidad de Madrid (26 deductions)",
+    "wording": "| Donaciones | Donativos fundaciones culturales | 15% of donations |",
+    "destination": "Current LF91: Qualifying foundation/sports-club gifts; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Old headline rates/amounts are historical; in particular no standalone15%environmental-gift route is inferred from the old label."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 258,
+    "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.14 Comunidad de Madrid (26 deductions)",
+    "wording": "| Donaciones | Donativos medioambientales | 15% of donations |",
+    "destination": "Current LF91: Qualifying foundation/sports-club gifts; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Old headline rates/amounts are historical; in particular no standalone15%environmental-gift route is inferred from the old label."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 259,
+    "section": "## Section 3 -- Deductions by Territory: Common Territory (Territorio Común) / ### 3.14 Comunidad de Madrid (26 deductions)",
+    "wording": "| Educación | Gastos educativos (escolaridad, idiomas, vestuario) | EUR 400-900/child depending on stage |",
+    "destination": "Current LF71: Schooling/languages/uniform; expanded operative conditions in the same named regional subsection. Historical amount/age/BI shorthand is superseded by this exact2026row, not silently carried forward. Old headline rates/amounts are historical; in particular no standalone15%environmental-gift route is inferred from the old label."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 291,
+    "section": "## Section 4 -- Foral Territories / ### 4.3 Ceuta and Melilla",
+    "wording": "- **Ceuta and Melilla benefits** — Ceuta and Melilla are NOT autonomous communities but autonomous cities. They use the common territory IRPF scale but benefit from: 60% deduction on cuota íntegra (Art. 68.4 LIRPF) for income generated there; 50% bonificación on cuota autónomos for specific sectors (Agriculture, Industry, Commerce, Tourism). This effectively means total IRPF rates are ~40% of what common territory taxpayers pay.  _(Art. 68.4 LIRPF)_",
+    "destination": "CORRECTED current LF1509 and es-income-tax art68.4 method:60%applies only qualifying attributable tax under actual residence/source/asset conditions, not every Spanish liability×40%; SocialSecurity is separate. Historical50%sector concession not imported as a current IRPF credit."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 317,
+    "section": "## Section 6 -- How to Apply Regional Deductions (Computation) / ### Step-by-Step Process",
+    "wording": "- **Step-by-step computation process** — 1. Identify the taxpayer's Comunidad Autónoma of fiscal residence (where they lived on 31 December of the tax year) 2. Compute the cuota íntegra autonómica using that CCAA's regional brackets 3. Apply mínimo personal y familiar at the regional rate to get cuota líquida autonómica 4. Sum all applicable regional deductions for which the taxpayer qualifies 5. Cap: Total deductions cannot exceed the cuota líquida autonómica (floor = 0) 6. Result: Cuota diferencial autonómica = cuota líquida autonómica - deducciones autonómicas",
+    "destination": "CORRECTED current LF25/1342–1348/1354–1358:community is not31Decemberaddress; minima reduce tax through separate scales before credits; result is regional liquid tax, not separate regional differential. Claims need actual entitlement and available quota."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 321,
+    "section": "## Section 6 -- How to Apply Regional Deductions (Computation) / ### Common Eligibility Requirements",
+    "wording": "- **Common eligibility requirements** — Most deductions require: Income limit: Base imponible general + base imponible del ahorro below a threshold (varies by CCAA, typically EUR 25,000-30,000 individual, EUR 36,000-50,000 joint); Residency: Fiscal residence in the CCAA during the full tax year; Documentation: Supporting invoices, certificates, or official documents; Non-duplication: Cannot apply overlapping state and regional deductions for the same expense.",
+    "destination": "CORRECTED current LF31/1342–1348/1489–1491:use each own BI/BL/gross income and residence test, actual documentation, express incompatibilities only. No universal full-year residence, generic income bands or automatic prohibition on state/regional coexistence."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 330,
+    "section": "## Section 7 -- Conservative Defaults",
+    "wording": "| Income limit unknown | Assume limit is exceeded (conservative = no deduction) |",
+    "destination": "CORRECTED current LF1342/1601:unknownincome is unresolved evidence, not assumed above every limit."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 332,
+    "section": "## Section 7 -- Conservative Defaults",
+    "wording": "| Joint vs individual filing unknown | Assume individual (lower deduction limits) |",
+    "destination": "CORRECTED current LF1342/1601:obtain actual family-unit/election facts; no unsupported automatic individual-filing default."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 349,
+    "section": "## Section 9 -- Casilla Reference (AEAT Modelo 100)",
+    "wording": "Regional deductions are declared in casillas 0850-1200+ of the AEAT Modelo 100 form. Each CCAA has assigned casilla ranges. Key ranges:",
+    "destination": "CORRECTED current LF1485/1491 expressly reserves approved2027form/boxinstructions; approximate0850–1200ranges are not reliable current filing data."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 390,
+    "section": "## Disclaimer",
+    "wording": "This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as an asesor fiscal or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.",
+    "destination": "Current protected CTA/disclaimer LF1727–1743 and source-cited-draft scopeLF19; historical trust/mandatory-review marketing words are not newly asserted as an actual attestation."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 392,
+    "section": "## Disclaimer",
+    "wording": "The deduction catalogue changes annually. CCAA legislatures modify amounts, add new deductions, and remove others each fiscal year. Always verify against the current year's published BOE/BOJA/DOGC/DOGV/etc.",
+    "destination": "Current protected CTA/disclaimer LF1727–1743 and source-cited-draft scopeLF19; historical trust/mandatory-review marketing words are not newly asserted as an actual attestation."
+  },
+  {
+    "ref": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+    "title": "actual published-main comparator",
+    "old_lf": 394,
+    "section": "## Disclaimer",
+    "wording": "The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.",
+    "destination": "Current protected CTA/disclaimer LF1727–1743 and source-cited-draft scopeLF19; historical trust/mandatory-review marketing words are not newly asserted as an actual attestation."
+  },
+  {
+    "ref": "0b5e62451de50220ac6d80c7813d547d08108641",
+    "title": "frozen GitHub-public PR branch",
+    "old_lf": 1261,
+    "section": "## Rates, bands and thresholds / ### Comunitat Valenciana: applicable text, income tests and family credits",
+    "wording": "Birth/adoption/foster relief requires descendant-minimum entitlement. For the second/third-and-later amount, the preceding children counted for ordering must have been held for **more than 183 days**. Exclude a child adopted during the year from the foster route; use the birth/adoption route where entitled. Share the applicable amount equally between entitled declaring taxpayers. The birth/adoption amount continues for two following years; the fostering amount follows actual qualifying days. Multiple adoption requires at least two adoptions on the same date. The event credits a/b/c are compatible with one another and d under the express statutory conditions ([art. 4.Uno.a–d](https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202#a4)).",
+    "destination": "CORRECTED current LF1261: >183-day preceding-child ordering condition belongs specifically to fostering/delegated guardianship under4.Uno.a.2; not all birth/adoption. RootS-L25 exact two-line inverse retained."
+  }
+]

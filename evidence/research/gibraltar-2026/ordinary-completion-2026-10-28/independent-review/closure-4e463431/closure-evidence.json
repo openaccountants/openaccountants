@@ -1,0 +1,85 @@
+{
+  "reviewed_head": "4e4634311af031904af4659d73b51d554fa127ac",
+  "pinned_legal_review": "42697c1cfdd04d72a47abe6bd702dd7cccb84c69",
+  "scope": "Bounded GI-R1/GI-R2 repair closure only; completed legal/prose review reused.",
+  "details": {
+    "gi-connected-party-pricing-and-interest": {
+      "sha256": "4ff2917da47d9a8cd1eb324a32516ea09f3d1aceba9680950bb2f08306de690b",
+      "ledger_json_sha256": "68732992f0577c2a9e17bb2b70b3ecc0721dd2cbdbfba28f07091b975f2ceb03",
+      "ledger_md_sha256": "f910a671844294744d15ce5b3894c9754aa65887b912352efa8a760b8b101104",
+      "canonical_sections": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources"
+      ],
+      "intake_facts": 6,
+      "main_blocks_exact": 2,
+      "quote_rows": 59,
+      "quotes_exact_to_pinned": 123,
+      "old_map_rows": 45,
+      "old_paragraphs_exact": 44,
+      "pinned_paragraphs_changed_or_replaced": [
+        {
+          "anchor": "Apply the resulting adjustment once in the tax computation and reconcile it to the [corporate-tax Guide](gi-corporate-tax.md). Preserve supporting evidence unde",
+          "sha256": "969e2dc90e59bcd937a233415ff6f308b4446b6d82fbe7bd76a0bd4693a98efc"
+        },
+        {
+          "anchor": "The complete v0.7 writer rule ledger and old-topics map are prepared for the independent country review in the [country research ledger](../../research/gibralta",
+          "sha256": "d47a92d50d62ca836aaa4e14f2a250e8804c33fb4cb31a0b43c2a8d4ab68982c"
+        }
+      ]
+    },
+    "gi-foreign-tax-relief": {
+      "sha256": "687efe3dfe1089ee670de5f815fa0c2df7ce586b367f131b4f3dc632acb889d0",
+      "ledger_json_sha256": "29803dedc23144fa01dcbc212ee1179b9963d28783d0ff67d22eab441eabd3c5",
+      "ledger_md_sha256": "535d93498b3d2b2322fd8d697bb95bff4692fbe18bca3330431ca1db41c0d6a1",
+      "canonical_sections": [
+        "Who this applies to",
+        "Rates, bands and thresholds",
+        "The base",
+        "Deadlines and filing",
+        "Penalties and interest",
+        "Cross-border points",
+        "Two worked examples that recompute",
+        "Ask the client first",
+        "Sources"
+      ],
+      "intake_facts": 6,
+      "main_blocks_exact": 2,
+      "quote_rows": 33,
+      "quotes_exact_to_pinned": 73,
+      "old_map_rows": 25,
+      "old_paragraphs_exact": 24,
+      "pinned_paragraphs_changed_or_replaced": [
+        {
+          "anchor": "**Remaining asset-transfer textual limit:** paragraphs 18A(1)(a)–(b) describe loss of Gibraltar's taxing right on head-office/PE asset transfers, while paragrap",
+          "sha256": "2d8e04e944d5a6db92d1c9260b4de6af3052b42c872538a2b27bc796faed6264"
+        },
+        {
+          "anchor": "Independent review and professional attestation are pending. Claim forms, foreign-currency conversion, disputed sourcing, assessed-but-unpaid tax and the applic",
+          "sha256": "d96e5df1eb60bac5681c403f0c355769231d63c8ed7066dbc850483034168166"
+        },
+        {
+          "anchor": "The [complete writer rule ledger and old-topics map](../../research/gibraltar-2026/ordinary-completion-2026-10-28/ledgers/gi-foreign-tax-relief.md) are ready fo",
+          "sha256": "5b240754bd56b51ce49426b445f988f1eeadaf737f7026bcc050c73c7216968a"
+        }
+      ]
+    }
+  },
+  "checks": {
+    "untouched_guides_exact": 16,
+    "historical_records_exact": 121,
+    "original_controls_preserved": 47,
+    "pinned_artifacts_archived_byte_exact": 7,
+    "all_seven_domains_partial": true,
+    "readme_sha256": "0039cdae38d1b04fa67b8ec5cc21a9169c202d5e0d750ed443055a5dce9503c3",
+    "calculation_output": "checked 20 files, 51 oa-check blocks, 0 failures, 0 missing\n"
+  },
+  "errors": []
+}

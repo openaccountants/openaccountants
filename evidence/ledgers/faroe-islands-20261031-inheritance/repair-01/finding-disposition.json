@@ -1,0 +1,22 @@
+[
+  {
+    "id": "FO-EST-001",
+    "writer_status": "fixed; bounded independent closure pending",
+    "change": "Whole court/opening/closing reference-definition lines and corresponding Sources cells replaced with the single actual publisher URL, reopened through official web retrieval; mechanical reference/cell equality checks in link-resolution.json."
+  },
+  {
+    "id": "FO-EST-002",
+    "writer_status": "fixed; bounded independent closure pending",
+    "change": "Added the conditionally invalid return, assessment/appeal consequences, authority-set deadline and discretionary DKK100/day until receipt under Tax Act103(1),(3). Added ET-029 separately; all64 original rows remain byte-exact."
+  },
+  {
+    "id": "FO-EST-003",
+    "writer_status": "fixed; bounded independent closure pending",
+    "change": "Removed only the two newly added trust_label fields. No predecessor attribution metadata changed."
+  },
+  {
+    "id": "FO-EST-004",
+    "writer_status": "fixed; bounded independent closure pending",
+    "change": "Both new category values now international; distinct slugs/job identity retained. Versions/headings advanced0.1to0.2."
+  }
+]

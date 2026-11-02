@@ -1,0 +1,163 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: 10.8.9.	Por adquisición de vivienda de nueva construcción para residencia habitual 
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales de ayuda a la presentación
+
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+10. Cumplimentación IRPF. Deducciones autonómicas
+
+10.8. Castilla y León
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Modelo 100. Declaración del Impuesto sobre la Renta de las Personas Físicas 2025
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+10.8.9.	Por adquisición de vivienda de nueva construcción para residencia habitual 
+
+Cuantía y requisitos 
+
+El contribuyente podrá deducirse durante cinco años, el 7,5% de las cantidades satisfechas durante el ejercicio por la adquisición de la vivienda que vaya a constituir su residencia habitual siempre que cumpla simultáneamente los siguientes requisitos:
+
+Que el contribuyente tenga su residencia habitual en Castilla y León.
+
+Que se trate de su primera vivienda.
+
+Que la vivienda se encuentre situada en Castilla y León.
+
+Que se trate de vivienda de nueva construcción. Tendrá la consideración de vivienda de nueva construcción aquellas situadas en edificaciones para las cuales el visado del proyecto de ejecución de nueva construcción se haya obtenido entre el día 1 de septiembre de 2011 y el día 31 de diciembre de 2012.
+
+Base de la deducción
+
+La base de la deducción estará constituida por las cantidades satisfechas para la adquisición, incluidos los gastos a cargo del adquiriente, y en el caso de financiación ajena, la amortización, los intereses, el coste de los instrumentos de cobertura de riesgo de tipo de interés variable de los préstamos hipotecarios y demás gastos derivados de la misma.
+
+En caso de aplicación de los citados instrumentos de cobertura, los intereses satisfechos por el contribuyente si minorarán en las cantidades obtenidas por la aplicación del citado instrumento.
+
+La base máxima de la deducción será de 9.040 euros anuales.
+
+Cuando se adquiera una vivienda habitual habiendo disfrutado de la deducción por adquisición de otras viviendas habituales anteriores, no se podrá practicar deducción por la adquisición de la nueva en tanto las cantidades invertidas en la misma no superen las invertidas en las anteriores, en la medida en que hubiesen sido objeto de deducción.
+
+Cuando la enajenación de una vivienda habitual hubiera generado una ganancia patrimonial exenta por reinversión, la base de deducción por la adquisición de la nueva se minorará en el importe de la ganancia patrimonial a la que se aplique la exención por reinversión. En este caso, no se podrá practicar deducción por la adquisición de la nueva mientras las cantidades invertidas en la misma no superen tanto el precio de la anterior, en la medida en que haya sido objeto de deducción, como la ganancia patrimonial exenta por reinversión.
+
+La deducción se podrá aplicar en el ejercicio tributario en que se satisfaga la primera cantidad para la adquisición de la vivienda y en los cuatro ejercicios tributarios siguientes.
+
+Cuando en periodos impositivos posteriores al de su aplicación se pierda el derecho, en todo o en parte, a las deducciones practicadas, el contribuyente estará obligado a sumar a la cuota líquida autonómica devengada en el ejercicio en que se hayan incumplido los requisitos de la deducción las cantidades indebidamente deducidas, más los intereses de demora.
+
+Cumplimentación
+
+Deberá consignar el importe total satisfecho con derecho a deducción, la fecha del visado del proyecto de ejecución de obra nueva de la vivienda y, a efectos del cómputo de deducción del período establecido de 5 años, reflejará el ejercicio en el que ha satisfecho la primera cantidad para la adquisición.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 16/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

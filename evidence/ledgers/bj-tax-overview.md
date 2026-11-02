@@ -1,0 +1,20 @@
+# bj-tax-overview: figure and rule ledger
+
+Writer read on 2026-11-01. Scoped sources actually opened; complete PDF/HTML/text/OCR captures remain private in ../sources outside Git. This ledger is for the local draft and awaits independent pack review. Quotes are short excerpts, with line breaks/typography normalised; hypothetical example inputs are not statutory figures. Workflow holds are labelled as preparation instructions, not invented legal duties.
+
+| ID | Rule / conditions | Guide section | Act / article | Official URL | Short original French excerpt | Read on |
+|---|---|---|---|---|---|---|
+| 1 | Chapterclassification map and statutory law basis | Scope; Rates | CGI 2026, art. 1 | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=6 | « L’assiette, la liquidation, le contrôle » | 2026-11-01 |
+| 2 | Corporate and salary territory different tests | The base | CGI 2026, art. 5 | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=9 | « Sont réputées exploitées en République du Bénin » | 2026-11-01 |
+| 3 | Separate salary domicile test | The base | CGI 2026, art. 121 | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=60 | « leur domicile fiscal en République du Bénin » | 2026-11-01 |
+| 4 | Ordinary IScalendar close and exceptions | Deadlines | CGI 2026, art. 8 | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=13 | « sauf en cas de cession ou de cessation » | 2026-11-01 |
+| 5 | Incomeperiod LFRnot assumed from signature | Scope | LFR2026art1 | https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=1 | « s’appliquent aux revenus de l’exercice clos au 31 décembre 2025 » | 2026-11-01 |
+| 6 | Latefiling20/40conditions, interest integration | Penalties | CGI 2026, art. 485 | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=216 | « réputée intégrer les intérêts de retard » | 2026-11-01 |
+| 7 | Latepayment / instalment10percent | Penalties | CGI 2026, art. 487 | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=217 | « une pénalité de 10% » | 2026-11-01 |
+| 8 | Interest0.25month/fraction from following month / capped at principal | Penalties | CGI 2026, art. 488 | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=217 | « 0,25% par mois ou fraction de mois » | 2026-11-01 |
+| 9 | 2026first-declaration relief prior period / full payment / no ongoing control | Penalties | LF2026art3 | https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf#page=2 | « l’absence d’une procédure de contrôle fiscal ou d’une enquête fiscale » | 2026-11-01 |
+| 10 | Supported VATcredit / withholding reconciliation | The base; Examples | CGI 2026, art. 252 | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=120 | « imputable sur la taxe exigible pour la période suivante » | 2026-11-01 |
+| 11 | VATwithholding recorded in deductions | Examples | CGI 2026, art. 263 | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=124 | « mentionnée dans la rubrique des déductions » | 2026-11-01 |
+| 12 | Hypotheticalcash1204500 and VAT350000; unknown amount is not a credit | Examples | CGI 2026, art. 263 | https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=124 | « La taxe sur la valeur ajoutée retenue à la source » | 2026-11-01 |
+
+Complete legacy-topic destinations and removal reasons: [benin-old-topics.md](benin-old-topics.md). No legacy CTA or platform-owned frontmatter field was removed or changed. No accountant review is claimed.

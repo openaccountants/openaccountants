@@ -1,0 +1,55 @@
+{
+  "scope": "S-L33 five supplementary numeric fixtures only; no Guide or substantive ledger/source changes",
+  "ledger_sha256": "d633dd1d7044ab3ec29efd14fbe5aed88286bbe77ed25678b18eb905417e037e",
+  "guide_sha256": "02b2f58679014052448ff45b1623f105d910701443908d4c24a797528feaa92b",
+  "checker_exact_reverse_reconstruction": true,
+  "changed_numeric_record_indices": [
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "unchanged_numeric_records": 84,
+  "corrected_exact_fraction_values": [
+    "24288/73",
+    "33120/73",
+    "330",
+    "330",
+    "450"
+  ],
+  "corrected_controls": [
+    {
+      "control": "Balearic child184days660cap",
+      "computed": "332.71",
+      "expected": "332.71",
+      "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+    },
+    {
+      "control": "Balearic child184days900cap",
+      "computed": "453.70",
+      "expected": "453.70",
+      "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+    },
+    {
+      "control": "Balearic ordinary payer2000 halfcap660",
+      "computed": "330.00",
+      "expected": "330.00",
+      "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+    },
+    {
+      "control": "Balearic ordinary payer1000 halfcap660",
+      "computed": "330.00",
+      "expected": "330.00",
+      "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+    },
+    {
+      "control": "Balearic enhanced payer1000 halfcap900",
+      "computed": "450.00",
+      "expected": "450.00",
+      "status": "computed from sourced constants plus stated fictional inputs; not official worked-example quote"
+    }
+  ],
+  "source_fetches": 0,
+  "builder_unchanged": true
+}

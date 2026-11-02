@@ -1,0 +1,14 @@
+{
+  "Guide": "11e11aeccc77080f5c60a444ce01397b77e6ebebfa7e304a884777b8d4e0191f",
+  "ledger": "99d3d3675aae17adcd0f04bad21a2d22b5e7dcc8b64f5d98af60caea2a700448",
+  "current_rows": 695,
+  "all_wordings_at_named_native_Guide_LF": true,
+  "native_source_quote_spans": 436,
+  "unmatched": 0,
+  "source_pair_identities": 62,
+  "source_identity_mismatch": 0,
+  "writer_unmapped_current": [],
+  "whole_frozen_Guide_byte_exact": true,
+  "protection": "Whole-body equality preserves metadata, bylines, CTA, intake, headings, old URL sequence and original two oa blocks; no new Guide edits in this tranche.",
+  "old_topics": 664
+}

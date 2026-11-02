@@ -1,0 +1,197 @@
+{
+  "status": "PASS seven new UNIF25 arithmetic controls; independent legal review pending",
+  "cases": [
+    {
+      "name": "Signed expense adjustments feed040 with the correct sign",
+      "assumed_inputs": {
+        "accounting_profit": 100000,
+        "income_adjustment": 2000,
+        "legally_established_book_tax_pairs": [
+          [
+            1000,
+            0
+          ],
+          [
+            9000,
+            8000
+          ],
+          [
+            20000,
+            24000
+          ],
+          [
+            22000,
+            15000
+          ]
+        ]
+      },
+      "actual": {
+        "row030": "-5000",
+        "row040": "107000"
+      },
+      "expected": {
+        "row030": -5000,
+        "row040": 107000
+      },
+      "scope": "Allallowableamountsalreadyestablished;notproofactualinvoicesqualify;beforedonations/relief/loss",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Annex7.1representation percentage units",
+      "assumed_inputs": {
+        "financial_income": 1000000,
+        "income_adjustments": 20000,
+        "actual_representation": 12000
+      },
+      "actual": {
+        "gross": "1020000",
+        "cap": "7650.0000",
+        "allowed": "7650.0000",
+        "signed_expense": "-4350.0000"
+      },
+      "expected": {
+        "gross": 1020000,
+        "cap": 7650,
+        "allowed": 7650,
+        "signed_expense": -4350
+      },
+      "scope": "Ordinaryqualifiedrepresentation;0.75%notnumeric0.75multiplier;noduplicateexpense",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Gagauzia subdivision liquidatedQ3 under employee route",
+      "assumed_inputs": {
+        "main170": 12000,
+        "prior_year_employee_share": ".25",
+        "full_active_quarters": 2,
+        "liquidation_quarter": 3,
+        "instalments_already_paid": 10000
+      },
+      "actual": {
+        "subdivision": "1500.00",
+        "headquarters": "10500.00",
+        "allocation_total": "12000",
+        "after_instalments_cash_due": "2000"
+      },
+      "expected": {
+        "subdivision": 1500,
+        "headquarters": 10500,
+        "allocation_total": 12000,
+        "after_instalments_cash_due": 2000
+      },
+      "scope": "ActualeligibleGagauziaannex4/employee-countallocationassumed;liquidationquarterexcluded;allocationbase170notcashbalance190",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Peasant-farm founder allocation uses the actual7percent category",
+      "assumed_inputs": {
+        "main090": 150000,
+        "participation_A": ".6",
+        "participation_B": ".4",
+        "main130_relief": 0
+      },
+      "actual": {
+        "tax120": "10500.00",
+        "founder_A_income": "90000.0",
+        "founder_B_income": "60000.0",
+        "founder_A_tax": "6300.000",
+        "founder_B_tax": "4200.000",
+        "founder_A_net_tax": "6300.000",
+        "founder_B_net_tax": "4200.000"
+      },
+      "expected": {
+        "tax120": 10500,
+        "founder_A_income": 90000,
+        "founder_B_income": 60000,
+        "founder_A_tax": 6300,
+        "founder_B_tax": 4200,
+        "founder_A_net_tax": 6300,
+        "founder_B_net_tax": 4200
+      },
+      "scope": "Actualqualifyingfarm/legalsharesassumed;noinventedrelief;actualformannex5column10=6-7;notinstruction102universal12%",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Annex10foreigncreditpositiveinputs",
+      "assumed_inputs": {
+        "net_foreign_income": 50000,
+        "total_taxable_income": 200000,
+        "main150": 24000,
+        "eligible_foreign_tax_paid": 8000
+      },
+      "actual": {
+        "ratio_percent": "25.00",
+        "ceiling": "6000.00",
+        "allowed_credit": "6000.00"
+      },
+      "expected": {
+        "ratio_percent": 25,
+        "ceiling": 6000,
+        "allowed_credit": 6000
+      },
+      "scope": "Qualifyingtaxableforeignincome/evidence/currentperiodassumed;notzero/loss/FXcase",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Table6excludeshectares and has no road-tax column",
+      "assumed_inputs": {
+        "already_established_local_property_money": {
+          "3": "1000",
+          "7": "300",
+          "16": "200",
+          "18": "400",
+          "20": "100",
+          "21": "700"
+        },
+        "land_hectares": {
+          "15": "2.5",
+          "17": "0.8",
+          "19": "1"
+        },
+        "separately_established_table7_road_tax": 1500
+      },
+      "actual": {
+        "table6column23": "2700",
+        "table7_nonroad_payable": "2700",
+        "table7_road_payable": "1500",
+        "table7_total": "4200"
+      },
+      "expected": {
+        "table6column23": 2700,
+        "table7_nonroad_payable": 2700,
+        "table7_road_payable": 1500,
+        "table7_total": 4200
+      },
+      "scope": "Assumedalready-legally-computedamounts;notinventedlocalratesoraforcedall-rowone-to-onecorrespondence;actualtable7payablefieldprinted7/instructions6mismatchretained",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Day-worker currentCode excludes the stale personal exemption",
+      "assumed_inputs": {
+        "already_established_taxable_income": 10000,
+        "chapter4_exemption": 0
+      },
+      "actual": {
+        "PIT": "1200.00"
+      },
+      "expected": {
+        "PIT": 1200
+      },
+      "scope": "CurrentCode15(a1)PITonly;notgross-to-net/social/medicaldeductiondetermination;oldUNIF120personalreliefsentenceexcluded",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-FORM-COMPLETE-READ-20261031.json": "c50c353b6b9e8c6b03ab1742912d668fe1134ef78d5ba4cafed76e054592a4fa",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-APPROVED-UNIF25-INSTRUCTIONS-COMPLETE-READ-20261031.json": "49bf8b681c9cead62373cfd2fa60ace779b65bb8c22847c72657893558e3f01c",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CODE-UNIF-INTERFACES-20261031.json": "80eeabfee8d4245037c5ea46e127fb62b6dc27b933a239398f842f67754f5aa9"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/moldova-income-tax.md": "fc6132e0cb54db456395ac28183395639697dade634111fbfa10de6925021f9e",
+    "skills/international/moldova/moldova-payroll.md": "c6537ba21906a12e99ac50293cb4dfdd0b64970a9e38db750d6f2412135d1df2",
+    "skills/international/moldova/md-cross-border.md": "6c3878625755d8b9bbc8af6c10689f302874cc6840690f7e001bee178622d0ae",
+    "skills/international/moldova/md-tax-overview.md": "6e6f32be0fe446df9e4ffc1ed730b13c65bbfb85ef0f74fdbc86e20180a846b2"
+  },
+  "read_date": "2026-10-31",
+  "not_certified": "Liveportalacceptance,omittedclassifiercodes,actualcurrentlocalrates/allreliefentitlements,zero/losscreditratios,sourceinconsistencyresolutionbeyondstatedcurrent-lawcontrols,comprehensivecountrycoverage"
+}

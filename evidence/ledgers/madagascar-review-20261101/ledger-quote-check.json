@@ -1,0 +1,1148 @@
+[
+  {
+    "guide": "mg-company-formation",
+    "ledger_line": 7,
+    "id": "1",
+    "claim": "Entity options SARL/SARLU SA/SAU EI and SDET; actual documentation per form",
+    "provision": "EDBM documents by legal form",
+    "quote_matches": [
+      "edbm-documents.txt"
+    ]
+  },
+  {
+    "guide": "mg-company-formation",
+    "ledger_line": 8,
+    "id": "2",
+    "claim": "SARL capital freely set, contributions and limited liability; gérant governance",
+    "provision": "EDBM Créer une SARL opening and Etape1",
+    "quote_matches": [
+      "edbm-sarl.txt"
+    ]
+  },
+  {
+    "guide": "mg-company-formation",
+    "ledger_line": 9,
+    "id": "3",
+    "claim": "Dossier: commercial lease property proof, location, resident director and regulated authorization",
+    "provision": "EDBM Créer une SARL Etape2",
+    "quote_matches": [
+      "edbm-sarl.txt"
+    ]
+  },
+  {
+    "guide": "mg-company-formation",
+    "ledger_line": 10,
+    "id": "4",
+    "claim": "Workflow: Analamanga online personal space, after acceptable dossier appointment payment and physical archives",
+    "provision": "EDBM Créer une SARL Etape4",
+    "quote_matches": [
+      "edbm-sarl.txt"
+    ]
+  },
+  {
+    "guide": "mg-company-formation",
+    "ledger_line": 11,
+    "id": "5",
+    "claim": "Capital ownership arithmetic; tax routing at commencement and ongoing calendars owned elsewhere",
+    "provision": "EDBM Etape1; CDI01.01.02,19",
+    "quote_matches": [
+      "edbm-sarl.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 7,
+    "id": "1",
+    "claim": "Who this applies to: IR mandatory at MGA 400m; election from MGA 200m, real regime links VAT",
+    "provision": "CDI 01.01.02",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfr-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 8,
+    "id": "2",
+    "claim": "Who this applies to / Cross-border points: resident companies worldwide; seat or effective management; non-residents source only",
+    "provision": "CDI 01.01.04–05",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 9,
+    "id": "3",
+    "claim": "The base: accounting year; taxable net profit; new first period maximum 18 months absent permission",
+    "provision": "CDI 01.01.09–10",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 10,
+    "id": "4",
+    "claim": "Rates: 20%; round profit down to MGA 1,000; existing-at-1-January minimum",
+    "provision": "CDI 01.01.14 I-A",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 11,
+    "id": "5",
+    "claim": "Rates: general minimum MGA 1m plus 1% turnover; named sectors MGA 500k plus 1%; petroleum 0.7%; retail fuel 0.1%; transport regulatory",
+    "provision": "CDI 01.01.14 I-A",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 12,
+    "id": "6",
+    "claim": "Rates / The base: IS ordinary 5%, not 70% base; round down MGA 10k; 3% new-joiner conditions; reductions and floor",
+    "provision": "CDI 01.02.02,04,05,05 bis",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 13,
+    "id": "7",
+    "claim": "Deadlines: 15 May, 15 November, fourth-month day 15; bimonthly provisional payments; receipt",
+    "provision": "CPF I-11; CDI 01.01.15",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 14,
+    "id": "8",
+    "claim": "Deadlines: regular books, PCG2005 financial statements and online deposit",
+    "provision": "CDI 01.01.19",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 15,
+    "id": "9",
+    "claim": "Penalties: missing return MGA 200k at >=400m, first month 3%, later 1%, started month and MGA 10k floor; understatement 40% minimum MGA 100k",
+    "provision": "CDI 20.01.52–54",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 16,
+    "id": "10",
+    "claim": "The base: deductions limited to necessary duly justified charges; carryforward loss 5 years",
+    "provision": "CDI 01.01.10 1°,11°",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 18,
+    "id": "LFR",
+    "claim": "Cooperative IR regardless turnover; authorized merger-loss transfer; financial statement annex schedules",
+    "provision": "Loi 2026-004, amendments 01.01.11 III,13 VII,19; art22",
+    "quote_matches": [
+      "lfr-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 20,
+    "id": "Detail-1",
+    "claim": "IR optional entry MGA200m",
+    "provision": "01.01.02",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 21,
+    "id": "Detail-2",
+    "claim": "Round IR profit down1000",
+    "provision": "01.01.14",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 22,
+    "id": "Detail-3",
+    "claim": "Agriculture/artisan/industry/mining/hotel/tourism minimum fixed500k plus1%",
+    "provision": "01.01.14",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 23,
+    "id": "Detail-4",
+    "claim": "Petroleum minimum fixed1m plus0.7%",
+    "provision": "01.01.14",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 24,
+    "id": "Detail-5",
+    "claim": "Retail fuel minimum0.1%",
+    "provision": "01.01.14",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 25,
+    "id": "Detail-6",
+    "claim": "New approved-centre/qualifying online registrant3%",
+    "provision": "01.02.05",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 26,
+    "id": "Detail-7",
+    "claim": "Round IS base down10k",
+    "provision": "01.02.05",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 27,
+    "id": "Detail-8",
+    "claim": "Approved-centre base allowance50%, cap10m excludes qualifying new adherents",
+    "provision": "01.02.04",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 28,
+    "id": "Detail-9",
+    "claim": "IS supported-cost relief2% and3%turnover floor",
+    "provision": "01.02.05 bis",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 29,
+    "id": "Detail-10",
+    "claim": "IS relief floor3%turnover",
+    "provision": "01.02.05 bis",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 30,
+    "id": "Detail-11",
+    "claim": "IR June close15November",
+    "provision": "CPF I-11",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 31,
+    "id": "Detail-12",
+    "claim": "IR other close day15 fourth month",
+    "provision": "CPF I-11",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 32,
+    "id": "Detail-13",
+    "claim": "IR provisional every2months by15lastmonth",
+    "provision": "CPF I-11",
+    "quote_matches": [
+      "cpf-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 33,
+    "id": "Detail-14",
+    "claim": "Late payment subsequent month1% floor10k started month counted",
+    "provision": "20.01.53",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 34,
+    "id": "Detail-15",
+    "claim": "Late payment floor10k",
+    "provision": "20.01.53",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-corporate-income-tax",
+    "ledger_line": 35,
+    "id": "Detail-16",
+    "claim": "Understatement40% floor100k",
+    "provision": "20.01.54",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-cross-border",
+    "ledger_line": 7,
+    "id": "1",
+    "claim": "Residence/scope/PE: corporate seat/effective management; individual 183d or principal activity/economic centre; source and worldwide",
+    "provision": "CDI 01.01.02,04–05",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-cross-border",
+    "ledger_line": 8,
+    "id": "2",
+    "claim": "Nonresident service withholding 10% gross, no PE; physically supplied or effectively used Madagascar, representative/recipient",
+    "provision": "CDI 01.01.14 II-A",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-cross-border",
+    "ledger_line": 9,
+    "id": "3",
+    "claim": "Services remittance before15 following withholding month; royalty rate10 and payer deadline15; markets exception",
+    "provision": "CDI 01.01.14 II-A,C",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-cross-border",
+    "ledger_line": 10,
+    "id": "4",
+    "claim": "PE service threshold >90d one-year project aggregation, construction >120d; preparatory auxiliary exclusions",
+    "provision": "CDI 01.01.02",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-cross-border",
+    "ledger_line": 11,
+    "id": "5",
+    "claim": "Nonresident service 10% failure sanctions conditional own IR/minimum/exemption; tax collected not remitted40% floor100k",
+    "provision": "CDI 20.01.54.1",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-cross-border",
+    "ledger_line": 13,
+    "id": "LFR",
+    "claim": "II-B dividend repeal; bank-interest II-D10% with express exception; capital-income scope change; entry condition",
+    "provision": "Loi 2026-004, amendments 01.01.14 II-B,D; 01.04.02 6°; art22",
+    "quote_matches": [
+      "lfr-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-cross-border",
+    "ledger_line": 15,
+    "id": "Detail-1",
+    "claim": "Foreignservice taxbefore15nextmonth",
+    "provision": "01.01.14 IIA",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-cross-border",
+    "ledger_line": 16,
+    "id": "Detail-2",
+    "claim": "Royaltypaymentby15nextmonth",
+    "provision": "01.01.14 IIC",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfr-2026.txt",
+      "cpf-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-cross-border",
+    "ledger_line": 17,
+    "id": "Detail-3",
+    "claim": "Failureintermittentwithhold10%floor20k conditional",
+    "provision": "20.01.54.1",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-cross-border",
+    "ledger_line": 18,
+    "id": "Detail-4",
+    "claim": "Collectedintermittentnotpaid40%floor100k",
+    "provision": "20.01.54.1",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 7,
+    "id": "1",
+    "claim": "Scope and cross-border: salary categories, exemptions, worldwide resident and source non-resident",
+    "provision": "CDI 01.03.01–06, 01.01.05",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 8,
+    "id": "2",
+    "claim": "Rates: monthly bands 0/5/10/15/20/25%; thresholds 350k/400k/500k/600k/4m; floor 3k; floor base to 100",
+    "provision": "CDI 01.03.16 A",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 9,
+    "id": "3",
+    "claim": "Rates: dependent relief 2k if base >350k, minimum preserved, eligible family and allocation recipient",
+    "provision": "CDI 01.03.19",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 10,
+    "id": "4",
+    "claim": "Base: cash/benefits and employer-paid tax; car/phone 15%, housing 50% capped 25% fixed cash; contributions cap 10% pension/2% health",
+    "provision": "CDI 01.03.07–09",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 11,
+    "id": "5",
+    "claim": "Filing: employer withholding; foreign-employer self-payment; first 15 days; nominative list; multiple payer declaration",
+    "provision": "CPF I-20–25; CDI 01.03.13",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 12,
+    "id": "6",
+    "claim": "Corrections: excess credit within 6 months; otherwise certificate refund",
+    "provision": "CDI 01.03.15",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 13,
+    "id": "7",
+    "claim": "Special rates excluded pending eligible-pay list; prior-year legal maintenance deduction application before 1 May",
+    "provision": "CDI 01.03.09,16 B",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 14,
+    "id": "8",
+    "claim": "Salary withholding omission penalty employer 40%; collected salary tax not paid over 80%",
+    "provision": "CDI 20.01.54.1",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 16,
+    "id": "LFR",
+    "claim": "Tax-amending provisions inspected; no IRSA rate amendment in LFR; entry provision",
+    "provision": "Loi 2026-004, CDI/CPF amendments; art22",
+    "quote_matches": [
+      "lfr-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 18,
+    "id": "Detail-1",
+    "claim": "Residence183 cumulative days12months alternative principal activity/economic centre",
+    "provision": "01.01.05",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 19,
+    "id": "Detail-2",
+    "claim": "Zero marginal up350k",
+    "provision": "01.03.16 A",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 20,
+    "id": "Detail-3",
+    "claim": "Marginal5%350001to400k",
+    "provision": "01.03.16 A",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 21,
+    "id": "Detail-4",
+    "claim": "Marginal10%400001to500k",
+    "provision": "01.03.16 A",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 22,
+    "id": "Detail-5",
+    "claim": "Marginal15%500001to600k",
+    "provision": "01.03.16 A",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 23,
+    "id": "Detail-6",
+    "claim": "Marginal20%600001to4m",
+    "provision": "01.03.16 A",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 24,
+    "id": "Detail-7",
+    "claim": "Minimum3k",
+    "provision": "01.03.16",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 25,
+    "id": "Detail-8",
+    "claim": "Round base down100",
+    "provision": "01.03.16",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 26,
+    "id": "Detail-9",
+    "claim": "Housing50%rent capped25%fixed cash",
+    "provision": "01.03.08",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 27,
+    "id": "Detail-10",
+    "claim": "Housing cap25%fixed cash",
+    "provision": "01.03.08",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 28,
+    "id": "Detail-11",
+    "claim": "Mixed car actual costs15%",
+    "provision": "01.03.08",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 29,
+    "id": "Detail-12",
+    "claim": "Phone actual cost15%",
+    "provision": "01.03.08",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 30,
+    "id": "Detail-13",
+    "claim": "Pension withholding10%limit conditional systems",
+    "provision": "01.03.09",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 31,
+    "id": "Detail-14",
+    "claim": "Retirement indemnity1year exemption limit",
+    "provision": "01.03.03",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 32,
+    "id": "Detail-15",
+    "claim": "Overtime20hours conditional exemption",
+    "provision": "01.03.03",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 33,
+    "id": "Detail-16",
+    "claim": "Dependants under21 or disabled or studentsunder25; no distinct income",
+    "provision": "01.03.19",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-income-tax",
+    "ledger_line": 34,
+    "id": "Detail-17",
+    "claim": "Multiple employers disclose before15January; change15days",
+    "provision": "CPF I-24",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-payroll-social",
+    "ledger_line": 7,
+    "id": "1",
+    "claim": "Employer withholding at payment and nominative declaration first 15 days",
+    "provision": "CPF I-20–23",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-payroll-social",
+    "ledger_line": 8,
+    "id": "2",
+    "claim": "Frequency exceptions: IS bimonthly; identified other entities <=50k/month can aggregate semester; authorization to change",
+    "provision": "CPF I-21",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-payroll-social",
+    "ledger_line": 9,
+    "id": "3",
+    "claim": "Salary facts and rounding/relief owned by sibling; foreign employer self-remits",
+    "provision": "CDI 01.03.11–19; CPF I-22,25",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-payroll-social",
+    "ledger_line": 10,
+    "id": "4",
+    "claim": "Social registration and E-CNaPS channel; source contradicts old quarterly blanket",
+    "provision": "CNaPS FAQ: employer registration and worker affiliation",
+    "quote_matches": [
+      "cnaps-home.txt"
+    ]
+  },
+  {
+    "guide": "mg-payroll-social",
+    "ledger_line": 11,
+    "id": "5",
+    "claim": "Penalties failure to withhold 40%; collected not remitted 80%",
+    "provision": "CDI 20.01.54.1",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-payroll-social",
+    "ledger_line": 13,
+    "id": "LFR",
+    "claim": "Tax-amending provisions inspected; salary withholding rules unamended; entry provision",
+    "provision": "Loi 2026-004, CDI/CPF amendments; art22",
+    "quote_matches": [
+      "lfr-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-payroll-social",
+    "ledger_line": 15,
+    "id": "Detail-1",
+    "claim": "Specialbodymonthlycap50k forsemesteraggregation",
+    "provision": "CPF I-21",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-payroll-social",
+    "ledger_line": 16,
+    "id": "Detail-2",
+    "claim": "Specialbodysemesterpayfirst15daysnextmonth",
+    "provision": "CPF I-21",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-payroll-social",
+    "ledger_line": 17,
+    "id": "Detail-3",
+    "claim": "ISemployerbimonthlyaggregation",
+    "provision": "CPF I-21",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-tax-overview",
+    "ledger_line": 7,
+    "id": "1",
+    "claim": "Route taxes by income type and status; worldwide resident and source nonresident",
+    "provision": "CDI 01.01.01–05; 01.03.01–05; 06.01.01–04",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-tax-overview",
+    "ledger_line": 8,
+    "id": "2",
+    "claim": "Accounting periods calendar/JulyJune/other twelve months; first up to18 absent permission",
+    "provision": "CDI 01.01.09",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-tax-overview",
+    "ledger_line": 9,
+    "id": "3",
+    "claim": "Return dates router to owning Guide; receipt requirement",
+    "provision": "CPF I-11,I-20–25,I-104",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-tax-overview",
+    "ledger_line": 10,
+    "id": "4",
+    "claim": "Current DGI authority and codes 2026",
+    "provision": "DGI codes directory",
+    "quote_matches": [
+      "codes.html"
+    ]
+  },
+  {
+    "guide": "mg-tax-overview",
+    "ledger_line": 12,
+    "id": "LFR",
+    "claim": "LFI codes read with July amended cooperatives/capital income/TVA/disclosure deadlines; uncertain exact entry event",
+    "provision": "Loi 2026-004, tax amendments; art22",
+    "quote_matches": [
+      "lfr-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 7,
+    "id": "1",
+    "claim": "Scope: associated foreign/local parties and PE; privileged-tax counterparties; dependency control",
+    "provision": "CDI 01.01.13 IV 1°–9°",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 8,
+    "id": "2",
+    "claim": "Rates: transaction value >=450m plus own turnover/assets >=40bn or parent/sub group >=240bn",
+    "provision": "CPF IV-08",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 9,
+    "id": "3",
+    "claim": "Declaration: prior civil year before June30 regardless close; capital organization and controlled categories; electronic validation",
+    "provision": "CPF IV-09–10",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 10,
+    "id": "4",
+    "claim": "Full documentation: 90 days after declaration deadline; French or Malagasy",
+    "provision": "CPF IV-08; CDI 01.01.13 IV 5°",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 11,
+    "id": "5",
+    "claim": "Base: contemporaneous arm length and voluntary upward correction proof",
+    "provision": "CDI 01.01.13 IV 1°,4°",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 12,
+    "id": "6",
+    "claim": "Filing: full annexes, extra docs one month extendable total two months; insufficient-response notice 15 days",
+    "provision": "CPF V-24–28",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 13,
+    "id": "7",
+    "claim": "Penalty: MGA10m missing/late elements preventing evaluation",
+    "provision": "CDI 20.01.52",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 15,
+    "id": "LFR",
+    "claim": "Disclosure becomes by June30; same MGA10m TP sanction retained and restated; entry condition",
+    "provision": "Loi 2026-004, amendments CPF IV-10; CDI20.01.52; art22",
+    "quote_matches": [
+      "lfr-2026.txt",
+      "cpf-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 17,
+    "id": "Detail-1",
+    "claim": "Own enterprise40bn turnover/assets documentary test",
+    "provision": "CPF IV-08",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 18,
+    "id": "Detail-2",
+    "claim": "Group chain240bn turnover/assets criterion",
+    "provision": "CPF IV-08",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 19,
+    "id": "Detail-3",
+    "claim": "French/Malagasy only TPdocumentation",
+    "provision": "01.01.13 IV",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 20,
+    "id": "Detail-4",
+    "claim": "Privileged tax atmosthalf ordinary equivalent",
+    "provision": "01.01.13 IV8°",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 21,
+    "id": "Detail-5",
+    "claim": "Documentation extra requests1month extendable2total",
+    "provision": "CPF V-25",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-transfer-pricing",
+    "ledger_line": 22,
+    "id": "Detail-6",
+    "claim": "Insufficientresponse completionnotice15days",
+    "provision": "CPF V-28",
+    "quote_matches": [
+      "cpf-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 7,
+    "id": "1",
+    "claim": "Scope: business supplies; mandatory >=400m and real election, intermittent foreign provider regardless turnover",
+    "provision": "CDI 06.01.02–05",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 8,
+    "id": "2",
+    "claim": "Rates: 20%, exports 0%, butane and container tariff codes 10%",
+    "provision": "CDI 06.01.12",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 9,
+    "id": "3",
+    "claim": "Base: sales delivery, service receipts; taxable consideration other taxes included and VAT excluded; discounts/damages/disbursements",
+    "provision": "CDI 06.01.10–11",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 10,
+    "id": "4",
+    "claim": "Exemptions: tuition, health, medicine and listed agricultural products; distinguish product list",
+    "provision": "CDI 06.01.06",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 11,
+    "id": "5",
+    "claim": "Input: compliant invoice, taxable use, bank/mobile payment, exclusions and exigibility",
+    "provision": "CDI 06.01.17–18,21",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 12,
+    "id": "6",
+    "claim": "Filing: monthly including nil, deadline 15 next month; existence within 10 days",
+    "provision": "CDI 06.01.16; CPF I-104–105",
+    "quote_matches": [
+      "cpf-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 13,
+    "id": "7",
+    "claim": "Credit: 3-year carryforward; specified exporter/free zone/lessor/investment refund classes, filing with monthly return and 3-month deadline",
+    "provision": "CDI 06.01.23–24",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 14,
+    "id": "8",
+    "claim": "Nonresident service: place of consumption/use, representative or recipient, distinct intermittent return, 15 next month",
+    "provision": "CDI 06.01.09–09 bis",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 15,
+    "id": "9",
+    "claim": "Penalty: late credit return 40% after unsuccessful reminder; general defaults depend turnover",
+    "provision": "CDI 20.01.52–54",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 17,
+    "id": "LFR",
+    "claim": "New 5% luxury-rice VAT, exemption changes and 80% nonpayment sanction; LFR entry condition",
+    "provision": "Loi 2026-004, amendments 06.01.06,12,17; 20.01.54.2 C; art22",
+    "quote_matches": [
+      "lfr-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 19,
+    "id": "Detail-1",
+    "claim": "Export0%",
+    "provision": "06.01.12",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 20,
+    "id": "Detail-2",
+    "claim": "Butane/container10% and tariff codes",
+    "provision": "06.01.12",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 21,
+    "id": "Detail-3",
+    "claim": "Butane10%",
+    "provision": "06.01.12",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 22,
+    "id": "Detail-4",
+    "claim": "Monthly pay/fileby15 including nil",
+    "provision": "06.01.16",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 23,
+    "id": "Detail-5",
+    "claim": "Refund request3month window",
+    "provision": "06.01.24",
+    "quote_matches": [
+      "cdi-2026.txt"
+    ]
+  },
+  {
+    "guide": "mg-vat-gst",
+    "ledger_line": 24,
+    "id": "Detail-6",
+    "claim": "Credit return late40%afterunsuccessfulreminder",
+    "provision": "20.01.52.3",
+    "quote_matches": [
+      "cdi-2026.txt",
+      "lfi-2026.txt"
+    ]
+  }
+]

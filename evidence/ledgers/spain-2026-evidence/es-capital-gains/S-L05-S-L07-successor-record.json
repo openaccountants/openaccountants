@@ -1,0 +1,15 @@
+{
+  "slug": "es-capital-gains",
+  "guide_sha256": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+  "ledger_sha256": "3b52bac6c6b55116bc53a0339c740aa962101dabe52af68f0ed167d43b8c6e9c",
+  "rows": 245,
+  "old_units": 276,
+  "findings": [
+    "S-L07"
+  ],
+  "Guide_edited": false,
+  "read_date": "2026-10-28",
+  "source_note": "Only exact saved native reader scopes were re-read; no source acquisition or broad research was required.",
+  "history": "ledgers/spain-2026-evidence/es-capital-gains/history/pre-S-L05-S-L07-45f1c53c",
+  "assertions": 210
+}

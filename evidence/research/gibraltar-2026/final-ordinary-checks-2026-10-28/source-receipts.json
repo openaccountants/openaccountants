@@ -1,0 +1,32 @@
+[
+  {
+    "name": "ito-current.html",
+    "url": "https://www.gibraltar.gov.gi/income-tax-office",
+    "ok": true,
+    "sha256": "0748cd530b86660048ce698db530ae8708f2fb4a670a83b2baf8e8d925a3c813"
+  },
+  {
+    "name": "ct100.pdf",
+    "url": "https://www.gibraltar.gov.gi/uploads/Income Tax Office/Corporate/Guidance notes CT100 - How to complete Form CT1 - 12-2024.pdf",
+    "ok": true,
+    "sha256": "ae38dd9e2a2b4e3e0f21387af2ea46dd0fc13a04c8186bdcabb7953d5a23b027"
+  },
+  {
+    "name": "ct1.xlsx",
+    "url": "https://www.gibraltar.gov.gi/uploads/Income Tax Office/Corporate/Form CT1 2018 (post 30-06-24).xlsx",
+    "ok": true,
+    "sha256": "39b488284e0289b403517fd2ea792d7f5a68dcc66da1178c80b71f0710e26687"
+  },
+  {
+    "name": "individual-return2026.pdf",
+    "url": "https://www.gibraltar.gov.gi/uploads/Income Tax Office/Employers/Tax_ReturnForm2026.pdf",
+    "ok": true,
+    "sha256": "0424f1e3bc81a6ea7040cba4892561bd88abcbcbaedd1a38a2977fce72b4efc6"
+  },
+  {
+    "name": "individual-return-guidance2026.pdf",
+    "url": "https://www.gibraltar.gov.gi/uploads/Income Tax Office/Tax Returns/Tax Return Guidance 2026_.pdf",
+    "ok": true,
+    "sha256": "6c45649e3663452a5c2657144c6299b832dc6282b8f920546a1630943e99d059"
+  }
+]

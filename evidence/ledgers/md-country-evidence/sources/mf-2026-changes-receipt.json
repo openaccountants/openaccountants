@@ -1,0 +1,11 @@
+{
+  "key": "mf-2026-changes",
+  "requested_url": "https://mf.gov.md/ro/content/modific%C4%83rile-efectuate-%C3%AEn-codul-fiscal-pentru-anul-2026-privind-impozitul-pe-venit-tva",
+  "retrieved_utc": "2026-10-30T12:28:23.638589+00:00",
+  "status": 200,
+  "final_url": "https://mf.gov.md/ro/content/modific%C4%83rile-efectuate-%C3%AEn-codul-fiscal-pentru-anul-2026-privind-impozitul-pe-venit-tva",
+  "content_type": "text/html; charset=utf-8",
+  "sha256": "e364f25d5dd44d846ac519fff3136537c8cb1205faacb25dfd5534f9465dccb2",
+  "bytes": 98686,
+  "body_reviewed": false
+}

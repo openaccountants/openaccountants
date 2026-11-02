@@ -1,0 +1,15 @@
+{
+  "at": "2026-10-27T22:35:18.552481+00:00",
+  "verdict": "PASS bounded individualCLM legal/source/proposal review; no whole-country pass",
+  "guide": {
+    "sha256": "db144091ffd7f9b5b414f47733f7bfa51b864e82bb583f765cf5ab4972203be3",
+    "bytes": 465133,
+    "version": "1.3"
+  },
+  "README": {
+    "sha256": "66ae1eb7cf60b1b871a670306d7ee444d449cc1cfcc5959201e8c9a4a63657a9",
+    "bytes": 8348
+  },
+  "controls": 24,
+  "scope": "Root independently read actual operative law, actualfull delta, saved UIAX/visual evidence and actualofficial2026PDF relevant pages. No claim root reran liveUI or tested2026programme."
+}

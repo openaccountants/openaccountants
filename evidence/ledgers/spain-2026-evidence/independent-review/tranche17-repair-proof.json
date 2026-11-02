@@ -1,0 +1,86 @@
+{
+  "steps": [
+    {
+      "finding": "S-L26",
+      "before_sha256": "f80fe1e23ff0d241fa7f23fec697200c6791d17237d7bc6d9eaf54304643a23c",
+      "after_sha256": "7f3efdcc4ad9cd13615d06643e89e66b18503682a9faef2245628c61e7cc02b3",
+      "unique_exact_forward_and_inverse": true
+    },
+    {
+      "finding": "S-L27",
+      "before_sha256": "7f3efdcc4ad9cd13615d06643e89e66b18503682a9faef2245628c61e7cc02b3",
+      "after_sha256": "8d7e9452beb304e35de92515ace56c640c401f21ff4bffb1d5cace75a48ec406",
+      "unique_exact_forward_and_inverse": true
+    },
+    {
+      "finding": "S-L28",
+      "before_sha256": "8d7e9452beb304e35de92515ace56c640c401f21ff4bffb1d5cace75a48ec406",
+      "after_sha256": "3b32d1e7e4165647dc623c28029e831a7903ab3bdc9e85d30df8a53912713447",
+      "unique_exact_forward_and_inverse": true
+    },
+    {
+      "finding": "S-L29",
+      "before_sha256": "3b32d1e7e4165647dc623c28029e831a7903ab3bdc9e85d30df8a53912713447",
+      "after_sha256": "965a7e29d62dd472cde4072c75dc67ad67ecc5fcc81ce6c45a93cf7039ac2cbb",
+      "unique_exact_forward_and_inverse": true
+    },
+    {
+      "finding": "S-L30",
+      "before_sha256": "965a7e29d62dd472cde4072c75dc67ad67ecc5fcc81ce6c45a93cf7039ac2cbb",
+      "after_sha256": "05f230a5b10d846c043ffd8b7e7fe8b6f0c823dcad33a6ca0b9e5708e3bb52dc",
+      "unique_exact_forward_and_inverse": true
+    },
+    {
+      "finding": "S-L31",
+      "before_sha256": "05f230a5b10d846c043ffd8b7e7fe8b6f0c823dcad33a6ca0b9e5708e3bb52dc",
+      "after_sha256": "74df19856a5cf41afc1da883e856bbf3e0423da0c9a9ab1ed169caa1fcc2fffb",
+      "unique_exact_forward_and_inverse": true
+    },
+    {
+      "finding": "S-L32",
+      "before_sha256": "74df19856a5cf41afc1da883e856bbf3e0423da0c9a9ab1ed169caa1fcc2fffb",
+      "after_sha256": "75f77f9a374ee3730b7d061e2b30cc7228294dcaca5f8135e33e534c71de2aca",
+      "unique_exact_forward_and_inverse": true
+    }
+  ],
+  "guide_prior_sha256": "1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40",
+  "guide_current_sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+  "guide_only_changed_LF": [
+    18,
+    497
+  ],
+  "two_oa_blocks_byte_exact": true,
+  "URL_sequence_exact": true,
+  "old_topic_spots_read": [
+    59,
+    71,
+    148,
+    149,
+    150,
+    153,
+    154,
+    156,
+    157,
+    161,
+    162,
+    163,
+    165,
+    245,
+    248,
+    256,
+    254,
+    255,
+    257,
+    258,
+    259,
+    267,
+    269,
+    277,
+    278,
+    279,
+    280,
+    292,
+    327
+  ],
+  "current_body_pin_unchanged_since_frozen_review": true
+}

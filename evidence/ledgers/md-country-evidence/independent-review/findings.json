@@ -1,0 +1,226 @@
+[
+  {
+    "id": "MD-REVIEW-001",
+    "severity": "P2",
+    "kind": "citation",
+    "Guide": "moldova-vat",
+    "ledger_ids": [
+      "MD-VAT-349",
+      "MD-VAT-350",
+      "MD-VAT-351",
+      "MD-VAT-352"
+    ],
+    "location": "ledgers/moldova-vat.writer.json / act_article_or_official_section",
+    "finding": "Annex2 point1/2 is the wrong hierarchy for invoice-critical-error subpoints. The snippets are nested in point8, table item7 (received invoices) and item8 (issued invoices).",
+    "primary_source": "https://www.legis.md/cautare/getResults?doc_id=151641&lang=ro",
+    "source_passage": "8. Prezentarea declarației TVA ...; table7 Eroare la completarea Anexei nr.1 ...; table8 Eroare la completarea Anexei nr.2 ...",
+    "proposed_correction": "Use Order1164/2012 annex2 point8, critical-error table item7 subpoints1/2 for349/350; item8 subpoints1/2 for351/352. Update Markdown ledger references consistently.",
+    "blocks": "Ledger citation standard; no wrong tax amount identified."
+  },
+  {
+    "id": "MD-REVIEW-002",
+    "severity": "P3",
+    "kind": "template",
+    "Guide": "moldova-vat",
+    "finding": "Ask the client first has eight questions; docs/skill-template.md specifies three to six.",
+    "proposed_correction": "Group questions into six without losing classification, input evidence, reconciliation, special-regime or source facts.",
+    "blocks": "Template conformity, not a legal-rate failure."
+  },
+  {
+    "id": "MD-REVIEW-003",
+    "severity": "P1",
+    "kind": "lost_predecessor_content",
+    "Guide": "moldova-vat",
+    "topic_ids": [
+      "MD-PUBLIC1028-034",
+      "MD-PUBLIC1028-052",
+      "MD-PUBLIC1028-053"
+    ],
+    "ledger_ids": [
+      "MD-VAT-209",
+      "MD-VAT-210",
+      "MD-VAT-286"
+    ],
+    "finding": "Reconciliation declares incoming content preserved at broad headings, but VAT Guide omits deregistration deemed stock/fixed-asset supply and valuation, no-return cancellation, excess-refund interest start/end, and precise art264 assessment-limitation topic. Archive/source presence does not preserve these operational rules in the Guide.",
+    "primary_source": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+    "source_passages": {
+      "113(2)(b)": "subiectul impunerii nu a prezentat declaraţie privind T.V.A. pentru fiecare perioadă fiscală",
+      "113(3)": "livrare impozabilă a stocurilor sale ... valoarea cea mai mare dintre valoarea contabilă şi valoarea de piaţă",
+      "228(10)": "perioada care începe cu data restituirii efective ... până la data recuperării acestora"
+    },
+    "proposed_correction": "Restore source-supported113(2)(b)/113(3)/228(10) methods in Guide and correct destination dispositions. Fetch264 and verify its conditions before restoring figures; otherwise put the precise topic on Not yet confirmed.",
+    "blocks": "Rule11 preservation, therefore publication of this rewrite before repair."
+  },
+  {
+    "id": "MD-REVIEW-004",
+    "severity": "P1",
+    "kind": "lost_predecessor_content",
+    "Guide": "moldova-income-tax",
+    "topic_ids": [
+      "MD-PUBLIC1024-079"
+    ],
+    "finding": "Incoming art264 assessment-limitation topic is mapped to current Guide as preserved, but neither a limitation method nor a precise Not yet confirmed assessment-limitation topic appears in the Guide.",
+    "proposed_correction": "Verify current art264 then restore its precise conditions; otherwise explicitly retain the assessment-limitation topic as unconfirmed without adopting incoming4/6-year figures.",
+    "blocks": "Rule11 preservation before publication."
+  },
+  {
+    "id": "MD-REVIEW-005",
+    "severity": "P1",
+    "kind": "lost_predecessor_content",
+    "Guide": "moldova-vat",
+    "topic_ids": [
+      "MD-PUBLIC1028-027"
+    ],
+    "ledger_ids": [
+      "MD-VAT-110",
+      "MD-VAT-120",
+      "MD-VAT-121",
+      "MD-VAT-122",
+      "MD-VAT-131",
+      "MD-VAT-132"
+    ],
+    "finding": "The predecessor main-exemptions list names privatised state property, gambling/lotteries, funeral-related supplies, hostel accommodation/listed residential communal services, hail rockets and specified small hydro equipment. Current Guide drops those actual topics under generic other-enumerated-supplies wording, with no precise unconfirmed item. Source ledger retention alone does not preserve the rules in the Guide.",
+    "primary_source": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+    "source_passages": [
+      "103(1)(3) proprietatea de stat, răscumpărată în procesul privatizării",
+      "103(1)(14) serviciile legate de jocurile de noroc ...; loteriile",
+      "103(1)(15) serviciile de înhumare şi incinerare ...",
+      "103(1)(16) cazarea în cămine; serviciile comunale ...",
+      "103(1)(27^2) rachetele contra grindinei ...3604",
+      "103(1)(27^3) turbinele hidraulice ...maximum1000kW ..."
+    ],
+    "proposed_correction": "Restore bounded sourced exemptions with their statutory conditions, separating103(1)(16) without-credit hostel/communal services from104(b) with-credit residential utilities.",
+    "blocks": "Rule11 preservation before publication."
+  },
+  {
+    "id": "MD-REVIEW-006",
+    "severity": "P2",
+    "kind": "source_interpretation",
+    "Guide": "md-company-formation",
+    "ledger_ids": [
+      "MD-FORM-123"
+    ],
+    "finding": "Guide asserts BE-1 internal subtitle says p.j.; the retained source says p.f. and the independently inspected page1 render visibly confirms p.f. No published subtitle inconsistency is established.",
+    "primary_source": "https://www.asp.gov.md/sites/default/files/servicii/formulare-tip/7/7-5.pdf",
+    "retained_render": "primary-attachments/company-be1-1.png",
+    "source_passage": "ai persoanei juridice (constituire de către p.f.)",
+    "proposed_correction": "Remove invented p.j. mismatch sentence and any corresponding ledger/disposition claim; retain correct BE-1 individual-founder versus BE-2 legal-entity-founder choice.",
+    "blocks": "Unsupported factual assertion in a source-cited Guide."
+  },
+  {
+    "id": "MD-REVIEW-007",
+    "severity": "P3",
+    "Guide": "skills/international/moldova/moldova-tax-optimization.md",
+    "section": "Ask the client first",
+    "issue": "One dense paragraph contains about ten fact groups instead of three to six decision-changing facts required by docs/skill-template.md line258.",
+    "source_passage": "Ask the client first. The three to six facts that change the answer.",
+    "correction": "Regroup existing clauses into six explicit decision groups without deleting facts.",
+    "scope": "Template correction; no new tax-law defect."
+  },
+  {
+    "id": "MD-REVIEW-008",
+    "severity": "P3",
+    "Guide": "skills/international/moldova/md-cross-border.md",
+    "section": "Ask the client first",
+    "issue": "Eight bullets exceed template three-to-six facts.",
+    "source": "docs/skill-template.md line258",
+    "correction": "Combine residence/mobility and treaty/foreign-credit groups, retaining all clauses."
+  },
+  {
+    "id": "MD-REVIEW-009",
+    "severity": "P2",
+    "Guide": "skills/international/moldova/md-cross-border.md",
+    "ledger_id": "MD-XB-127",
+    "section": "Deadlines and filing table art74(1¹)",
+    "issue": "After25th first-payment sentence described across k/k¹ rental/use population but source second paragraph expressly names immovable property.",
+    "exact_source_passage": "termenul de plată în această lună va fi data de 25 a lunii următoare lunii transmiterii în posesie și/sau în folosință a bunului imobil.",
+    "correction": "State immovable-property limit and explicit unresolved movable/international-transport k¹ application."
+  },
+  {
+    "id": "MD-REVIEW-010",
+    "severity": "P2",
+    "issue": "Corporate and copiedindividual ledger excerpts use cross-reference occurrences instead of substantive paragraphs; multi-paragraph claims truncate contexts at firstparagraph.",
+    "failed_examples": [
+      "MD-CORP-010",
+      "MD-CORP-045",
+      "MD-CORP-046",
+      "MD-IND-245",
+      "MD-IND-246"
+    ],
+    "exact_examples": {
+      "MD-CORP-010": "Starts at inline(32)crossreference inside(3)election, notownershipparagraph",
+      "MD-CORP-045": "(7).",
+      "MD-CORP-046": "(11)."
+    },
+    "correction": "Preserve originals; anchoredparagraph bodies for everycitedrange; substantive shortquote; propagate exactcopiedIND230-253affectedranges.",
+    "legal_check": "Full retained26¹,44,32,36,31,30,84andLaw41X read separately. Guide rules checked so far supported; insufficient ledgerexcerpts stillrequire repair.",
+    "status": "Writerfixpendingindependentdelta;INDGuidebodyunread"
+  },
+  {
+    "id": "MD-REVIEW-011",
+    "severity": "P2",
+    "Guide": "skills/international/moldova/md-corporate-income-tax.md",
+    "section": "VEN12 02010, line282 immutable snapshot",
+    "ledger_id": "MD-CORP-441",
+    "issue": "Guide correctly asserts Code21(1) current-month cost floor when no prior-month supplies exist, but corporate ledger contains only form instruction42 average-price wording, no actual Code21(1) rule/context.",
+    "source": "ledgers/md-country-evidence/sources/fiscal-code-article-21.json",
+    "source_passage": "În cazul în care, pe luna precedentă lunii în care a fost obţinut venit sub formă nemonetară, nu au fost efectuate livrări de mărfuri şi/sau prestări de servicii, venitul obţinut sub formă nemonetară nu poate fi mai mic decât preţul de cost al mărfurilor livrate şi/sau al serviciilor prestate în luna curentă.",
+    "correction": "Add explicit Code21(1) corporate ledger row with actual primary paragraph; correct Guide prose unchanged. IND155 already cites provision.",
+    "status": "Reported to parent; fix pending"
+  },
+  {
+    "id": "MD-REVIEW-012",
+    "severity": "P2",
+    "Guide": "skills/international/moldova/md-corporate-income-tax.md",
+    "section": "VEN12 03027-03031, line297 immutable snapshot",
+    "ledger_id": "MD-CORP-486",
+    "issue": "Annual management norms described without actual Code24(13) ministry ceilings for listed tobacco, ethyl alcohol and petroleum products; ledger quotes only generic form instruction85.",
+    "source": "ledgers/md-country-evidence/sources/fiscal-code-article-24.json",
+    "source_passage": "Deducerea reziduurilor, deșeurilor și perisabilității naturale se permite în limitele aprobate anual de către conducătorii întreprinderilor, dar fără a depăși limitele stabilite de către Ministerul Sănătății pentru produsele din tutun de la pozițiile tarifare 240210000, 240220, 240290000, 2403, 2404 și limitele stabilite de Ministerul Agriculturii și Industriei Alimentare pentru produsele din alcool etilic de la pozițiile tarifare 2207 și 2208, precum și limitele stabilite de Ministerul Infrastructurii și Dezvoltării Regionale pentru produsele petroliere.",
+    "correction": "Qualify management norms with statutory ministry ceilings, add actual Code24(13) ledger evidence. Numeric ministry schedules may remain explicitly unverified/outside stated scope.",
+    "status": "Reported to parent; fix pending"
+  },
+  {
+    "id": "MD-REVIEW-013",
+    "severity": "P2",
+    "Guide": "skills/international/moldova/moldova-income-tax.md",
+    "section": "DAP24 Expense and relief schedules",
+    "ledger_ids": [
+      "MD-IND-484",
+      "MD-IND-434",
+      "MD-IND-435"
+    ],
+    "issue": "Guide certifies0301-03010 expense codes but actual form prints residual Altecheltuieli0310; instruction38/39 says03010.",
+    "source_passages": {
+      "actual_form": "Alte cheltuieli 0310",
+      "instruction38": "În rândul 03010 se reflectă alte cheltuieli",
+      "instruction39": "suma rândurilor 0301 – 03010"
+    },
+    "correction": "State form0310 vsinstructions03010 conflict and unresolved accepted machinecode; retain exact originals.",
+    "status": "Reported; pending writer correction"
+  },
+  {
+    "id": "MD-REVIEW-014",
+    "severity": "P2",
+    "Guide": "skills/international/moldova/moldova-income-tax.md",
+    "section": "Independent retail and deadlines",
+    "issue": "Guide asserts69¹² quarterly750minimum/QIVreconciliation/notice/payment and shortyear rules; no dedicated ledgerrow cites69¹².",
+    "source": "ledgers/md-country-evidence/sources/fiscal-code-article-69s6-13.json",
+    "source_passage": "Pentru trimestrele I–III se achită 1% din vânzările efectuate pentru fiecare trimestru, dar nu mai puțin de 750 de lei.",
+    "correction": "Add actual primary69¹² binding covering claimed rules; complete retainedarticle independently read, Guide supported unchanged.",
+    "status": "Reported; pending writer correction"
+  },
+  {
+    "id": "MD-REVIEW-015",
+    "severity": "P2",
+    "Guide": "moldova-social-contributions",
+    "ledger_ids": [
+      "MD-SC-026"
+    ],
+    "finding": "Original Guide extended missing-policy corrected declaration permission to ordinary at-least70% ratio although CNAS point13.3 expressly says above70%. Ledger source and claim correctly preserve strict boundary.",
+    "source_passage": "a înregistrat o mărime a acestui indicator mai mare decât 70%",
+    "proposed_correction": "Expressly require above70% in missing-policy branch; retain ordinary at-least70 eligibility and flag exact70/missingpolicy unresolved.",
+    "current_correction_commit": "e3c93d44e487d0bedf83365582a1c4ab754704c3",
+    "current_focused_disposition": "PASS: independently read actual Guide diff and retained CNAS13.3 context; strict threshold and bounded exact70 uncertainty now explicit."
+  }
+]

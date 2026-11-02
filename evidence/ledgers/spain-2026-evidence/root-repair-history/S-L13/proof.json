@@ -1,0 +1,12 @@
+{
+  "before_sha256": "e2b50cdaa21b622d0012956ebfe811430ca3e7be44e868117968d2a145432fe7",
+  "after_sha256": "b731e75c8c2dce0e947a2ae7d3cc9a688c02e7880ef738585c323047192e9c85",
+  "changed_guide_lines": [
+    4,
+    20,
+    86
+  ],
+  "formula": "1221*7/6=1424.50",
+  "read_on": "2026-10-28",
+  "scope": "Only occupational monthly floor plus version/H1; CC minima and original oa examples unchanged"
+}

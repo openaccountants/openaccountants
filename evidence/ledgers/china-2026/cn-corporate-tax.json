@@ -1,0 +1,1245 @@
+{
+  "slug": "cn-corporate-tax",
+  "candidate_sha256": "4f2836de59a0d3d1402829326db836dae0f2ea55c49951980310ba2d53b80b26",
+  "rows": [
+    {
+      "id": "CN-CNCORPORATETAX-01",
+      "claim": "## Scope and who this is for ([CIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))\n\nThis skill covers mainland China Enterprise Income Tax (CIT, 企业所得税) for tax year 2026, which is the calendar year 1 January to 31 December 2026. It is for companies and other enterprises, and for their advisers, who prepare or review quarterly prepayments, the annual settlement (汇算清缴) or withholding on payments to non-residents.\n\nThe legal base is the **Enterprise Income Tax Law (中华人民共和国企业所得税法)**, as last amended on 29 December 2018, and its **Implementation Regulations (企业所得税法实施条例, State Council Decree No. 512)**. Most of the reliefs that matter in practice sit in announcements from the Ministry of Finance (MOF) and the State Taxation Administration (STA). Several of them expire on 31 December 2027, so check the end date of every relief you apply.\n\nWho pays:\n- **Resident enterprises** are enterprises set up under Chinese law, or foreign-law enterprises whose place of effective management is in China. They pay tax on their worldwide income (Law Art. 2-3).\n- **Non-resident enterprises with an establishment in China** pay tax on income connected with that establishment (Law Art. 3).\n- **Non-resident enterprises without an establishment**, or whose income is not connected with one, pay on China-source income by withholding at source (Law Art. 3, 37).\n- Sole proprietorships and partnerships are **not** CIT taxpayers (Law Art. 1). A partnership treats each partner as the taxpayer: natural-person partners pay IIT; legal-person and other-organisation partners pay CIT ([Caishui 2008 No. 159 §2](https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203416/content.html)). Determine the actual partner type before selecting the tax route.\n\nCurrency: tax is computed in renminbi. Income in foreign currency is converted to renminbi (Law Art. 56).\n\nOut of scope: Hong Kong, Macao and Taiwan; individual income tax; VAT and surcharges; banks, insurers, securities firms, oil, gas and mining; cross-region consolidated filing by head offices and branches; special tax treatment of reorganisations; tax audits and disputes; and Pillar Two. See \"When to refuse or refer\".",
+      "section": "Who this applies to / Scope and who this is for",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]; corrections checked against operative units specified by the initial review and repair log.",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            1,
+            208
+          ],
+          "quote": "第一条　在中华人民共和国境内，企业和其他取得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            1,
+            387
+          ],
+          "quote": "第一条　根据《中华人民共和国企业所得税法》（以下简称企业所得税法）的规定，制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a"
+        },
+        {
+          "source_id": "CIT-partner159",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203416/content.html",
+          "source_file": "CIT-partner159.txt",
+          "source_sha256": "d9e672bde31a32e5d8ec1cefbc13fa4117ec0e7914de2bd006d42eaf31506bd8",
+          "source_lines": [
+            1,
+            142
+          ],
+          "quote": "合伙人是法人和其他组织的，缴纳企业所得税",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d9e672bde31a32e5d8ec1cefbc13fa4117ec0e7914de2bd006d42eaf31506bd8"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-02",
+      "claim": "## What is new or confirmed for 2026 ([MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [MOF/STA announcement 2025 No. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html); [STA announcement 2025 No. 17](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html); [Hainan Tax Bureau 2025 No. 2](https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html))\n\n| Topic | Position for 2026 | Source |\n| --- | --- | --- |\n| Standard rate | 25%, unchanged | [Law Art. 4](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) |\n| Small low-profit enterprise | Taxable income reduced to 25% and taxed at 20%. The announcement extends this to 2027-12-31 | [MOF/STA announcement 2023 No. 12 Art. 3](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html) |\n| R&D super-deduction | Extra 100% of actual R&D cost, or 200% amortisation where an intangible asset is created, from 2023-01-01 with no end date | [MOF/STA announcement 2023 No. 7](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html) |\n| IC and machine-tool enterprises | Extra 120%, or 220% amortisation, from 2023-01-01 to 2027-12-31 | [MOF/STA announcement 2023 No. 44](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html) |\n| Western region | 15% for encouraged-industry enterprises from 2021-01-01 to 2030-12-31 | [MOF/STA/NDRC 2020 No. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html) |\n| Hainan Free Trade Port | 15% for encouraged-industry enterprises with substantive operations. The current extension runs from 2025-01-01 to 2027-12-31 | [Hainan Tax Bureau 2025 No. 2](https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html) |\n| Advertising cap | New announcement from 2026-01-01 to 2027-12-31: 30% cap for cosmetics manufacturing or sales, pharmaceutical manufacturing and beverage manufacturing (excluding alcohol); related enterprises with a cost-sharing agreement may shift deductible amounts between them; tobacco advertising is never deductible | [MOF/STA announcement 2025 No. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html) |\n| Prepayment return | Revised A-type monthly or quarterly prepayment return, used from 2025-10-01 | [STA announcement 2025 No. 17; Shanghai Tax Bureau Q&A](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html) |",
+      "section": "Who this applies to / What is new or confirmed for 2026",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]; corrections checked against operative units specified by the initial review and repair log.",
+      "sources": [
+        {
+          "source_id": "42a296a61ff344a1",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html",
+          "source_file": "42a296a61ff344a1.txt",
+          "source_sha256": "e63f6465f682760516a8f7ddb41b65d89f590a50c158ce9657af77452ab66dd4",
+          "source_lines": [
+            1,
+            75
+          ],
+          "quote": "一、自2023年1月1日至2027年12月31日，对个体工商户年应纳税所得额不超过200万元的部分，减半征收个",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "e63f6465f682760516a8f7ddb41b65d89f590a50c158ce9657af77452ab66dd4"
+        },
+        {
+          "source_id": "fcb8ee9c6523275c",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html",
+          "source_file": "fcb8ee9c6523275c.txt",
+          "source_sha256": "bd7fcd9f942accaab03d40a8bfda24abbec72df9294fbdaaf4835582b38369c2",
+          "source_lines": [
+            1,
+            67
+          ],
+          "quote": "一、对化妆品制造或销售、医药制造和饮料制造（不含酒类制造）企业发生的广告费和业务宣传费支出，不超过当年销售（营",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "bd7fcd9f942accaab03d40a8bfda24abbec72df9294fbdaaf4835582b38369c2"
+        },
+        {
+          "source_id": "fb3b85c6f89fc5a2",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html",
+          "source_file": "fb3b85c6f89fc5a2.txt",
+          "source_sha256": "b7d297ea3340321a58d515091e753da92d4b6a08b90babe263ed36c1c04a92e8",
+          "source_lines": [
+            1,
+            73
+          ],
+          "quote": "一、企业适用节能节水、环境保护、安全生产专用设备抵免所得税政策的，可结合自身情况自主选择在预缴申报时享受抵免所",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "b7d297ea3340321a58d515091e753da92d4b6a08b90babe263ed36c1c04a92e8"
+        },
+        {
+          "source_id": "5eed9778d22ee4e1",
+          "official_url": "https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html",
+          "source_file": "5eed9778d22ee4e1.txt",
+          "source_sha256": "0ebe8a8632cef09a2cee0c86acfc578def9c635375a59aed5b6b4833095922b2",
+          "source_lines": [
+            1,
+            107
+          ],
+          "quote": "一、鼓励类产业企业减按15%税率征收企业所得税问题",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0ebe8a8632cef09a2cee0c86acfc578def9c635375a59aed5b6b4833095922b2"
+        },
+        {
+          "source_id": "2836bf1f3f4ae9fd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html",
+          "source_file": "2836bf1f3f4ae9fd.txt",
+          "source_sha256": "cae97f8c9c9aa965dc36bc5de9e5249950c2274e8053e48ef0fd4345d4679e09",
+          "source_lines": [
+            1,
+            75
+          ],
+          "quote": "不采取清单管理的",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "cae97f8c9c9aa965dc36bc5de9e5249950c2274e8053e48ef0fd4345d4679e09"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-03",
+      "claim": "## Ask the client first\n\n- **Residence and structure.** Is the entity a resident enterprise? Is it a legal person, or a branch? Branches without legal personality are combined with head office for every test in this skill ([STA announcement 2023 No. 6 Art. 1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html)).\n- **Industry.** Is the business in a restricted or prohibited industry (small low-profit test)? Is it in an R&D negative-list industry, such as tobacco, hotels and catering, wholesale and retail, real estate, leasing and business services, or entertainment ([Caishui 2015 No. 119](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201511/t419949.html))?\n- **Size, measured as quarterly averages for the year.** What are the headcount (employees plus labour-dispatch workers) and total assets? What is the expected taxable income for 2026?\n- **Certificates and lists.** Does it hold an HNTE certificate, and what is the issue date on it? Is it a registered technology-based SME? Which IC or machine-tool category does it claim, and what qualification or required list evidence supports it?\n- **Location.** Is it registered and substantively operating in a western-region province or in the Hainan Free Trade Port? What share of revenue does its encouraged-industry main business provide?\n- **R&D records.** Are R&D costs kept in a separate ledger for each project? Were any R&D projects commissioned from overseas?\n- **Losses.** What losses from each of 2021 to 2025 remain unused, and was the company an HNTE or technology-based SME in any of those years?\n- **Cross-border payments.** Does it pay dividends, interest, royalties, rent or other China-source income to non-residents? Does the recipient claim a tax treaty?\n- **Prepayments.** Is it on monthly or quarterly prepayment, how much has been prepaid for 2026, and which method does it use (actual profit or another approved method)?\n- **Open matters.** Is there any audit, notice from the tax bureau, reorganisation, group consolidation or Pillar Two exposure? If yes, see \"When to refuse or refer\".",
+      "section": "Ask the client first / Ask the client first",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "adeda93b9941ef02",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html",
+          "source_file": "adeda93b9941ef02.txt",
+          "source_sha256": "06d9066b71591d6774228d7b52321a63377d6bd1bab16ed9a760e5061b31cab1",
+          "source_lines": [
+            1,
+            74
+          ],
+          "quote": "一、符合财政部、税务总局规定的小型微利企业条件的企业（以下简称小型微利企业），按照相关政策规定享受小型微利企业",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "06d9066b71591d6774228d7b52321a63377d6bd1bab16ed9a760e5061b31cab1"
+        },
+        {
+          "source_id": "df04f1e7f68c9872",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201511/t419949.html",
+          "source_file": "df04f1e7f68c9872.txt",
+          "source_sha256": "5bfb68f7cecea54efbc90932127ac41ba0c7d5b5d66e992d4c15d71936d3426c",
+          "source_lines": [
+            1,
+            119
+          ],
+          "quote": "一、研发活动及研发费用归集范围。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "5bfb68f7cecea54efbc90932127ac41ba0c7d5b5d66e992d4c15d71936d3426c"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-04",
+      "claim": "## The method, step by step\n\n1. **Confirm the taxpayer type.** A resident enterprise is taxed on worldwide income at 25%. A non-resident without an establishment is taxed by withholding (step 9) ([CIT Law Art. 3-4](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html)).\n2. **Start from accounting profit and build taxable income.** Taxable income = total income − non-taxable income − exempt income − deductions − losses allowed to be carried forward ([CIT Law Art. 5](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html)). Income is recognised on an accrual basis ([Implementation Regulations Art. 9](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html)).\n3. **Remove non-taxable and exempt income.** Non-taxable income is fiscal appropriations, administrative fees and government funds, and other income the State Council designates (Law Art. 7). Exempt income includes treasury bond interest and qualifying dividends between resident enterprises (Law Art. 26). The dividend exemption does not cover shares of a listed resident company held continuously for less than 12 months, and it does not apply to distributions from partnerships or foreign enterprises ([Shanghai Tax Bureau Q&A, 2026](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t479958.html)).\n4. **Apply the capped deductions.** See \"Capped deductions and other income rules\": business entertainment, advertising, donations and staff education.\n5. **Add the R&D super-deduction** if the conditions are met (see \"R&D super-deduction\").\n6. **Offset losses** from the previous 5 years (10 for HNTEs and technology-based SMEs, under the conditions below).\n7. **Choose the rate.** Use 25% unless the entity has documented eligibility for one preference: small low-profit enterprise, HNTE 15%, western region 15% or Hainan 15%. Apply the preference that gives the lowest tax, and do not stack them on the same income.\n8. **Deduct credits and reliefs**, such as foreign tax credits and equipment credits, then compare with the prepayments.\n9. **Withholding on non-residents.** Establish the actual recipient, income category, Chinese source and establishment/effective-connection facts. For income within CIT Law Art. 3(3), apply the relevant base, domestic reduced rate, exemption or substantiated treaty relief. Pay over applicable withholding within seven days. If the nature or source is unresolved, stop the computation and obtain the facts; do not impose 10% merely because a payment crosses the border ([CIT Law Arts. 3,19,27,37–40](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Arts. 7,91](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html); `cn-withholding`).\n10. **File and pay.** Prepay within fifteen days of each quarter end. Settle the year by 31 May 2027 for tax year 2026 (see \"Filing and payment\").",
+      "section": "The base / The method, step by step",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]; corrections checked against operative units specified by the initial review and repair log.",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            1,
+            208
+          ],
+          "quote": "第一条　在中华人民共和国境内，企业和其他取得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            1,
+            387
+          ],
+          "quote": "第一条　根据《中华人民共和国企业所得税法》（以下简称企业所得税法）的规定，制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a"
+        },
+        {
+          "source_id": "cf513cb8046dbfb6",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t479958.html",
+          "source_file": "cf513cb8046dbfb6.txt",
+          "source_sha256": "64b8b3fddf52eb3483900c392f41ee649b790ffc93440cb0949612ebc0d54186",
+          "source_lines": [
+            1,
+            67
+          ],
+          "quote": "企业所得税汇算清缴热点问答",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "64b8b3fddf52eb3483900c392f41ee649b790ffc93440cb0949612ebc0d54186"
+        },
+        {
+          "source_id": "WHT37",
+          "official_url": "https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html",
+          "source_file": "WHT37.txt",
+          "source_sha256": "9ab8a54565419aa08d7439d86f809b82c10b429c0eae8ec052ee021f84581f49",
+          "source_lines": [
+            1,
+            158
+          ],
+          "quote": "实际支付之日",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ab8a54565419aa08d7439d86f809b82c10b429c0eae8ec052ee021f84581f49"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-05",
+      "claim": "## Rates for tax year 2026 ([CIT Law Art. 4, 28](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Art. 91](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))\n\n| Who | Rate | Condition | Source |\n| --- | --- | --- | --- |\n| Resident enterprise (standard) | 25% | Default rate | [Law Art. 4 (\"企业所得税的税率为25％\")](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) |\n| Non-resident establishment, connected income | 25% | Income effectively connected with the establishment | [Law Art. 3-4](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) |\n| Non-resident without an establishment, China-source passive income | Statutory 20%, **reduced to 10%** | Dividends, interest, rent, royalties, property gains and similar income. A treaty may lower it further | [Law Art. 4, 27(5); Regulations Art. 91 (\"减按10%的税率征收企业所得税\")](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Law Art. 4, 27(5); Regulations Art. 91 (\"减按10%的税率征收企业所得税\")](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html) |\n| Small low-profit enterprise | Effectively 5% on all its taxable income | All three size tests met, and not in a restricted or prohibited industry | [MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html) |\n| High and new technology enterprise (HNTE) | 15% | Valid certificate for the year | [Law Art. 28 (\"减按15％的税率征收企业所得税\")](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) |\n| Western region encouraged industry | 15% | 2021-2030; main business on the catalogue provides 60% or more of revenue | [MOF/STA/NDRC 2020 No. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html) |\n| Hainan Free Trade Port encouraged industry | 15% | 2025-2027 extension; substantive operation in Hainan | [Hainan Tax Bureau 2025 No. 2](https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html) |\n\nRate formula: tax payable = taxable income × applicable rate − reliefs − credits (Law Art. 22).",
+      "section": "Rates, bands and thresholds / Rates for tax year 2026",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]; corrections checked against operative units specified by the initial review and repair log.",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            1,
+            208
+          ],
+          "quote": "第一条　在中华人民共和国境内，企业和其他取得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            1,
+            387
+          ],
+          "quote": "第一条　根据《中华人民共和国企业所得税法》（以下简称企业所得税法）的规定，制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-06",
+      "claim": "## Small low-profit enterprises (小型微利企业) ([MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [STA announcement 2023 No. 6](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html))\n\n**The relief.** Taxable income is reduced to 25% of its amount and taxed at 20%. The effective rate is 25% × 20% = 5%. Announcement 2023 No. 12 Art. 3 continues this to 31 December 2027, so it covers tax years 2026 and 2027.\n\n**Who qualifies.** The company must be in an industry that is not restricted or prohibited, **and** meet all three tests at the same time (Art. 5):\n- annual taxable income **not over** 300万元 (three million yuan);\n- headcount **not over** 300 people;\n- total assets **not over** 5000万元 (fifty million yuan).\n\n**It is all-or-nothing.** If taxable income is more than three million yuan, or either size test fails, the company is not a small low-profit enterprise. It then pays the normal rate on its **whole** income. There is no 5% band on the first three million yuan for a larger company.\n\n**How the tests are measured.**\n- Headcount includes employees under a labour contract **and** labour-dispatch workers the company uses.\n- Headcount and total assets are the average of the four quarters. Each quarter's value = (value at the start of the quarter + value at the end) ÷ 2. The year's value = sum of the quarterly values ÷ 4.\n- A company that starts or stops business during the year uses its actual period of operation as the year.\n- The final test is the annual settlement. For CIT prepayments, a newly established company must also test cumulative taxable income together with headcount and assets under STA announcement 2023 No. 6 Art. 4. The last-month headcount/assets shortcut for a newly registered VAT general taxpayer in 2023 No. 12 Art. 5 applies to that announcement's Art. 2 six-taxes/two-fees relief, not its Art. 3 CIT relief.\n- A company without legal-person branches adds up the head office and all branches for all three tests. A branch cannot claim the relief on its own ([STA announcement 2023 No. 6 Art. 1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html); [Shanghai Tax Bureau Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202601/t478977.html)).\n\n**How it is claimed.** The company claims by completing the prepayment and annual returns. No prior application is needed. This relief applies whether tax is assessed on the books or on a deemed basis (STA announcement 2023 No. 6 Art. 2-3). The R&D super-deduction is different: it is only for companies assessed on actual profit (see \"R&D super-deduction\").\n\n**At prepayment.** Test the figures cumulatively to the end of the period. If a company qualifies part way through the year, it computes the relief cumulatively and sets any earlier overpayment against later prepayments. If it claimed the relief at prepayment but fails at the annual settlement, it pays the difference (Art. 4-6). Small low-profit enterprises prepay **quarterly**. A monthly filer that qualifies at the April, July or October filing moves to quarterly from the next period and stays quarterly for the rest of the year (Art. 7).",
+      "section": "The base / Small low-profit enterprises",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]; corrections checked against operative units specified by the initial review and repair log.",
+      "sources": [
+        {
+          "source_id": "42a296a61ff344a1",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html",
+          "source_file": "42a296a61ff344a1.txt",
+          "source_sha256": "e63f6465f682760516a8f7ddb41b65d89f590a50c158ce9657af77452ab66dd4",
+          "source_lines": [
+            1,
+            75
+          ],
+          "quote": "一、自2023年1月1日至2027年12月31日，对个体工商户年应纳税所得额不超过200万元的部分，减半征收个",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "e63f6465f682760516a8f7ddb41b65d89f590a50c158ce9657af77452ab66dd4"
+        },
+        {
+          "source_id": "adeda93b9941ef02",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html",
+          "source_file": "adeda93b9941ef02.txt",
+          "source_sha256": "06d9066b71591d6774228d7b52321a63377d6bd1bab16ed9a760e5061b31cab1",
+          "source_lines": [
+            1,
+            74
+          ],
+          "quote": "一、符合财政部、税务总局规定的小型微利企业条件的企业（以下简称小型微利企业），按照相关政策规定享受小型微利企业",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "06d9066b71591d6774228d7b52321a63377d6bd1bab16ed9a760e5061b31cab1"
+        },
+        {
+          "source_id": "5c9554232981e789",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202601/t478977.html",
+          "source_file": "5c9554232981e789.txt",
+          "source_sha256": "6f2d2d2ce1641a40b08777d60a54e7ccea7add051bd71a1ea0e6b3e68d61fb9c",
+          "source_lines": [
+            1,
+            77
+          ],
+          "quote": "一、企业所得税",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "6f2d2d2ce1641a40b08777d60a54e7ccea7add051bd71a1ea0e6b3e68d61fb9c"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-07",
+      "claim": "## High and new technology enterprises (HNTE, 高新技术企业) at 15% ([CIT Law Art. 28](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [HNTE Administrative Measures, Guokefahuo 2016 No. 32](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201603/t422248.html); [Shanghai Tax Bureau HNTE Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202505/t476449.html))\n\nAn HNTE pays 15% instead of 25%. The status comes from a certificate that the provincial science, finance and tax authorities issue jointly. It is not self-assessed.\n\n**Conditions for recognition (Measures Art. 11). All must be met:**\n- registered for **at least one year** when it applies;\n- owns intellectual property that gives core technical support to its main products or services;\n- that technology falls within the State's key supported high-tech fields;\n- science and technology staff are **not less than 10%** of total staff for the year;\n- R&D spending over the last three accounting years, as a share of sales revenue, is not less than:\n  - 5% where sales in the latest year are 5,000万元 (fifty million yuan) or less;\n  - 4% where sales are over 5,000万元 and up to 2亿元 (two hundred million yuan);\n  - 3% where sales are over 2亿元;\n  - and R&D spent in China is not less than 60% of total R&D;\n- revenue from high-tech products and services in the latest year is not less than 60% of total revenue;\n- the innovation capability assessment meets the required standard;\n- no major safety or quality incident and no serious environmental violation in the year before applying.\n\n**Timing.** The certificate is valid for three years from its issue date, and the company then has to be recognised again. The 15% rate applies from the year in which the certificate is issued (Measures Art. 9-10).\n\n**Every year.** The company must still meet the conditions in each year it claims the rate. If it stops meeting them, it cannot use 15% for that year. Keep the evidence (staff ratios, R&D ratios and high-tech revenue) on file.\n\n**HNTE and the small low-profit relief.** Both reduce the rate on the same income, so apply whichever gives the lower tax. For a company that meets the small low-profit tests, the effective 5% beats 15%.",
+      "section": "The base / High and new technology enterprises",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            1,
+            208
+          ],
+          "quote": "第一条　在中华人民共和国境内，企业和其他取得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf"
+        },
+        {
+          "source_id": "6d3a7271d0a3d9b9",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201603/t422248.html",
+          "source_file": "6d3a7271d0a3d9b9.txt",
+          "source_sha256": "3c9c94e12098446b62582ba0b16a233ab2c981aaa909c19bb4a005eb44110641",
+          "source_lines": [
+            1,
+            135
+          ],
+          "quote": "第一条 为扶持和鼓励高新技术企业发展，根据《中华人民共和国企业所得税法》（以下称《企业所得税法》）、《中华人民",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "3c9c94e12098446b62582ba0b16a233ab2c981aaa909c19bb4a005eb44110641"
+        },
+        {
+          "source_id": "a9978e1d3d986426",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202505/t476449.html",
+          "source_file": "a9978e1d3d986426.txt",
+          "source_sha256": "46a6b4f7c040d07841df9d43856182f976f81af9cb7a828485e7c71d44ef415a",
+          "source_lines": [
+            1,
+            80
+          ],
+          "quote": "第七条　收入总额中的下列收入为不征税收入：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "46a6b4f7c040d07841df9d43856182f976f81af9cb7a828485e7c71d44ef415a"
+        },
+        {
+          "source_id": "HNTE2017No24-reviewed-reader",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194742/content.html",
+          "source_file": "HNTE2017No24-reviewed-reader.txt",
+          "source_sha256": "7ea8ade49601d520a607c50a2b0e0537c8d5970c7a2b57b66db346403adf8a6d",
+          "source_lines": [
+            1,
+            207
+          ],
+          "quote": "在年底前仍未取得高新技术企业资格的，应按规定补缴相应期间的税款。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "3f8dd7cf8194a2e8506b49714e87e8e3b340779f4129bd5af9b6dd082f0f6db1"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-08",
+      "claim": "## Regional 15% rates ([MOF/STA/NDRC 2020 No. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html); [Hainan Tax Bureau 2025 No. 2](https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html); [Caishui 2020 No. 31](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202009/t455145.html))\n\n**Western region (西部大开发).** From 1 January 2021 to 31 December 2030, an encouraged-industry enterprise located in the western region pays 15%. An encouraged-industry enterprise is one whose main business is a project in the *Catalogue of Encouraged Industries in the Western Region*, and whose main-business revenue is **60% or more** of total revenue. The western region is Inner Mongolia, Guangxi, Chongqing, Sichuan, Guizhou, Yunnan, Tibet, Shaanxi, Gansu, Qinghai, Ningxia, Xinjiang and the Xinjiang Production and Construction Corps. Xiangxi (Hunan), Enshi (Hubei), Yanbian (Jilin) and Ganzhou (Jiangxi) apply the same policy. When the catalogue is revised, the new version applies from its effective date.\n\n**Hainan Free Trade Port (海南自由贸易港).** An encouraged-industry enterprise that is registered in the Hainan Free Trade Port and has substantive operations there pays 15%. The current extension runs from 1 January 2025 to 31 December 2027. The original notice (Caishui 2020 No. 31) set these conditions:\n- main-business revenue from the Hainan encouraged-industry catalogue is 60% or more of total revenue;\n- the place of effective management is in Hainan, with substantive, comprehensive control of production, staff, accounts and assets there.\n\nIf the head office is in Hainan, only the income of the Hainan head office and Hainan branches gets 15%. If the head office is outside Hainan, only a qualifying Hainan branch's income gets 15%. New outbound direct investment made from 2020-01-01 to 2027-12-31 by Hainan tourism, modern services and high-tech enterprises can be exempt, subject to conditions that include a holding of **20% or more** in a foreign subsidiary. Refer these cases.\n\n**Other zones.** Hengqin (Guangdong-Macao), Qianhai (Shenzhen-Hong Kong) and the Lingang New Area (Shanghai) have their own 15% regimes, each with its own catalogue and end date. This skill does not apply them: refer.\n\n**Conservative default.** Until location, substantive operations and the 60% revenue test are documented, use 25%.",
+      "section": "The base / Regional 15% rates",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "2fd1d7f8ba48d7d4",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html",
+          "source_file": "2fd1d7f8ba48d7d4.txt",
+          "source_sha256": "f7a18f5f21100779b5c0df90dc901d23fed3c2c874724af94753126424e761c0",
+          "source_lines": [
+            1,
+            68
+          ],
+          "quote": "一、自2021年1月1日至2030年12月31日，对设在西部地区的鼓励类产业企业减按15%的税率征收企业所得税",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "f7a18f5f21100779b5c0df90dc901d23fed3c2c874724af94753126424e761c0"
+        },
+        {
+          "source_id": "5eed9778d22ee4e1",
+          "official_url": "https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html",
+          "source_file": "5eed9778d22ee4e1.txt",
+          "source_sha256": "0ebe8a8632cef09a2cee0c86acfc578def9c635375a59aed5b6b4833095922b2",
+          "source_lines": [
+            1,
+            107
+          ],
+          "quote": "一、鼓励类产业企业减按15%税率征收企业所得税问题",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0ebe8a8632cef09a2cee0c86acfc578def9c635375a59aed5b6b4833095922b2"
+        },
+        {
+          "source_id": "3b7a9a5f25744590",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202009/t455145.html",
+          "source_file": "3b7a9a5f25744590.txt",
+          "source_sha256": "a5bc529e7b29da1fbc19a2ccd186019f6864a3f29fc5b73c7306c30ede8111b4",
+          "source_lines": [
+            1,
+            75
+          ],
+          "quote": "一、对注册在海南自由贸易港并实质性运营的鼓励类产业企业，减按15%的税率征收企业所得税。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "a5bc529e7b29da1fbc19a2ccd186019f6864a3f29fc5b73c7306c30ede8111b4"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-09",
+      "claim": "## R&D super-deduction (研发费用加计扣除) ([MOF/STA announcement 2023 No. 7](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html); [MOF/STA announcement 2023 No. 44](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html); [Caishui 2015 No. 119](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201511/t419949.html); [Caishui 2018 No. 64](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html); [Shanghai Tax Bureau R&D Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202111/t461170.html))\n\n| Enterprise | R&D expensed in the year | R&D that creates an intangible asset | Period | Official provision |\n| --- | --- | --- | --- | --- |\n| All eligible enterprises | Actual cost deducted, **plus** an extra 100% of the actual cost | Amortised on 200% of the asset's cost | From 2023-01-01, no end date | [2023 No. 7 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html) |\n| Qualifying IC and machine-tool enterprises under the applicable category conditions | Actual cost deducted, plus an extra 120% | Amortised on 220% of cost | 2023-01-01 to 2027-12-31 | [2023 No. 44 §§1–5](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html) |\n\n**Who may claim.** Only resident enterprises that keep sound accounts, are assessed on actual profit (查账征收, not on a deemed basis) and can collect R&D costs accurately may claim. Caishui 2015 No. 119 Part 5(1) says: \"本通知适用于会计核算健全、实行查账征收并能够准确归集研发费用的居民企业\". A company on deemed (核定) assessment cannot claim.\n\n**Who cannot claim.** Industries on the negative list cannot claim: tobacco manufacturing; accommodation and catering; wholesale and retail; real estate; leasing and business services; entertainment; and any others MOF and STA designate (Caishui 2015 No. 119 Part 4).\n\n**What is not R&D.** Routine upgrades of products or services, direct application of published research results, after-sales technical support, and similar routine work do not qualify (No. 119 Part 1(2)).\n\n**Record-keeping.** Costs must be recorded separately for each project. Costs that cannot be separated from production costs do not qualify for the super-deduction (No. 119 Part 3).\n\n**\"Other related costs\" cap.** Other related costs (literature, IP fees, travel, meetings and similar) may not exceed 10% of the total eligible R&D cost. Since 2021 the cap has been computed across all projects together: cap = (sum of the five main cost categories) × 10% ÷ (1 − 10%) ([Shanghai Tax Bureau Q&A on STA announcement 2021 No. 28](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202111/t461170.html)).\n\n**R&D commissioned overseas.** Under [Caishui 2018 No. 64 §§1–3,6](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html), 80% of the actual cost counts as the commissioning company's overseas R&D cost, eligible only up to two-thirds of eligible domestic R&D cost. R&D commissioned to overseas individuals is excluded. Apply the written contract, science-and-technology department registration and retained expenditure/project evidence requirements before claiming.\n\n**IC and machine-tool enterprises.** The 120% extra deduction / 220% amortisation requires the applicable category conditions in [2023 No. 44 Arts. 2–3](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html). Specified IC production/design and industrial-machine-tool enterprises use list management. IC equipment, materials, packaging and testing enterprises instead satisfy Art. 2(3)'s referenced qualification conditions; Art. 5 provides a verification mechanism for categories not managed by lists. Check the actual category, current qualification rules and, where applicable, the year's list.\n\n**Conservative default.** If costs are not tracked by project, the industry is on the negative list, or tax is assessed on a deemed basis, do not claim.",
+      "section": "The base / R&D super-deduction",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]; corrections checked against operative units specified by the initial review and repair log.",
+      "sources": [
+        {
+          "source_id": "bce2fe676b84ed80",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html",
+          "source_file": "bce2fe676b84ed80.txt",
+          "source_sha256": "c9686da235c66c89b91bcd0b386c55a12154deda5f72b827fa6299e6b1148a08",
+          "source_lines": [
+            1,
+            66
+          ],
+          "quote": "一、企业开展研发活动中实际发生的研发费用，未形成无形资产计入当期损益的，在按规定据实扣除的基础上，自2023年",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "c9686da235c66c89b91bcd0b386c55a12154deda5f72b827fa6299e6b1148a08"
+        },
+        {
+          "source_id": "2836bf1f3f4ae9fd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html",
+          "source_file": "2836bf1f3f4ae9fd.txt",
+          "source_sha256": "cae97f8c9c9aa965dc36bc5de9e5249950c2274e8053e48ef0fd4345d4679e09",
+          "source_lines": [
+            1,
+            75
+          ],
+          "quote": "一、集成电路企业和工业母机企业开展研发活动中实际发生的研发费用，未形成无形资产计入当期损益的，在按规定据实扣除",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "cae97f8c9c9aa965dc36bc5de9e5249950c2274e8053e48ef0fd4345d4679e09"
+        },
+        {
+          "source_id": "df04f1e7f68c9872",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201511/t419949.html",
+          "source_file": "df04f1e7f68c9872.txt",
+          "source_sha256": "5bfb68f7cecea54efbc90932127ac41ba0c7d5b5d66e992d4c15d71936d3426c",
+          "source_lines": [
+            1,
+            119
+          ],
+          "quote": "一、研发活动及研发费用归集范围。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "5bfb68f7cecea54efbc90932127ac41ba0c7d5b5d66e992d4c15d71936d3426c"
+        },
+        {
+          "source_id": "1013b79c285b7d8b",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html",
+          "source_file": "1013b79c285b7d8b.txt",
+          "source_sha256": "471f0204d9f17cd4439d29d1d9cef93b3bda18615134667162aff77664444b68",
+          "source_lines": [
+            1,
+            78
+          ],
+          "quote": "一、委托境外进行研发活动所发生的费用，按照费用实际发生额的80%计入委托方的委托境外研发费用。委托境外研发费用",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "471f0204d9f17cd4439d29d1d9cef93b3bda18615134667162aff77664444b68"
+        },
+        {
+          "source_id": "7c7b7cbbbf8b4f11",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202111/t461170.html",
+          "source_file": "7c7b7cbbbf8b4f11.txt",
+          "source_sha256": "8f721439aa104a124fa17b836e99696cc39d6aa0bb024f398cbad06d70ac3aa7",
+          "source_lines": [
+            1,
+            69
+          ],
+          "quote": "企业研发费用加计扣除热点问答",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "8f721439aa104a124fa17b836e99696cc39d6aa0bb024f398cbad06d70ac3aa7"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-10",
+      "claim": "## Losses carried forward ([CIT Law Art. 18](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Caishui 2018 No. 76](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440878.html))\n\n- **General rule.** A tax loss can be carried forward and set against later profits for up to 5 years. The Law says the carry-forward period \"may not exceed five years\" (Art. 18). A loss is taxable income below zero, computed under the Law (Regulations Art. 10). There is no carry-back.\n- **HNTEs and technology-based SMEs.** From 2018, a company that holds HNTE or technology-based SME status **in a given year** may carry forward unused losses from the 5 years before that year for up to 10 years instead of 5. A technology-based SME must hold a registration number under the technology-based SME evaluation rules (Caishui 2018 No. 76).\n- Use losses oldest first, and keep a schedule of each year's loss and use.",
+      "section": "The base / Losses carried forward",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            1,
+            208
+          ],
+          "quote": "第一条　在中华人民共和国境内，企业和其他取得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf"
+        },
+        {
+          "source_id": "128be5c1084f71fe",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440878.html",
+          "source_file": "128be5c1084f71fe.txt",
+          "source_sha256": "7e17d8a9e23edc6ad0825597f33466719c48bf203a884032e4f98096cef13693",
+          "source_lines": [
+            1,
+            66
+          ],
+          "quote": "一、自2018年1月1日起，当年具备高新技术企业或科技型中小企业资格（以下统称资格）的企业，其具备资格年度之前",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "7e17d8a9e23edc6ad0825597f33466719c48bf203a884032e4f98096cef13693"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-11",
+      "claim": "## Capped deductions and other income rules ([Implementation Regulations Art. 43-44](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html); [MOF/STA announcement 2025 No. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html); [Caishui 2018 No. 15](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201803/t436949.html); [Caishui 2018 No. 51](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201805/t439366.html); [MOF/STA announcement 2023 No. 37](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468599.html))\n\n| Item | Rule | Source |\n| --- | --- | --- |\n| Business entertainment | 60% of the amount spent, capped at 5‰ of sales (operating) revenue. No carry-forward | [Regulations Art. 43](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html) |\n| Advertising and promotion (general) | Up to 15% of sales (operating) revenue. The excess carries forward to later years | [Regulations Art. 44](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html) |\n| Advertising: cosmetics manufacturing or sales, pharmaceutical manufacturing, beverages (not alcohol) | Up to 30% of sales revenue, excess carried forward, for 2026-01-01 to 2027-12-31 | [MOF/STA announcement 2025 No. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html) |\n| Tobacco advertising | Never deductible | [MOF/STA announcement 2025 No. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html) |\n| Advertising: related enterprises with a cost-sharing agreement | One party may deduct its own advertising within its cap, or move part or all of it to the other party under the agreement. The other party leaves the amount received out of its own cap calculation | [MOF/STA announcement 2025 No. 16 Art. 2](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html) |\n| Wages paid to disabled employees | Actual wages deducted, plus an extra 100% of those wages | [Regulations Art. 96](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html) |\n| Venture capital enterprise investing in an unlisted small or medium HNTE for 2 years or more | 70% of the investment may be set against the venture capital enterprise's taxable income in the year the holding reaches 2 years. Any unused amount carries forward | [Regulations Art. 97](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html) |\n| Environmental protection, energy and water saving, or work safety equipment on the official catalogues | 10% of the investment is credited against tax payable. Any unused credit carries forward for 5 years. The credit is clawed back if the equipment is transferred or leased out within 5 years | [Regulations Art. 100](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html) |\n| Charitable donations through qualifying bodies | Up to 12% of annual accounting profit. The excess carries forward three years | [Law Art. 9; Caishui 2018 No. 15](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Law Art. 9; Caishui 2018 No. 15](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201803/t436949.html) |\n| Staff education | Up to 8% of total wages. The excess carries forward | [Caishui 2018 No. 51](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201805/t439366.html) |\n| Equipment bought 2024-01-01 to 2027-12-31 | Unit value up to 500万元 (five million yuan) may be deducted in full in the year instead of depreciated | [MOF/STA announcement 2023 No. 37](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468599.html) |\n| Fines, penalties and late-payment surcharges | Not deductible | [Law Art. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) |\n| Supporting documents | If an invoice is missing, it must be obtained before the end of the annual settlement period. An expense of an earlier year that was never deducted can be carried back to the year it arose, for up to five years back, once proper documents are obtained | [Shanghai Tax Bureau Q&A, April 2026](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t480124.html) |",
+      "section": "The base / Capped deductions and other income rules",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            1,
+            387
+          ],
+          "quote": "第一条　根据《中华人民共和国企业所得税法》（以下简称企业所得税法）的规定，制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a"
+        },
+        {
+          "source_id": "fcb8ee9c6523275c",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html",
+          "source_file": "fcb8ee9c6523275c.txt",
+          "source_sha256": "bd7fcd9f942accaab03d40a8bfda24abbec72df9294fbdaaf4835582b38369c2",
+          "source_lines": [
+            1,
+            67
+          ],
+          "quote": "一、对化妆品制造或销售、医药制造和饮料制造（不含酒类制造）企业发生的广告费和业务宣传费支出，不超过当年销售（营",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "bd7fcd9f942accaab03d40a8bfda24abbec72df9294fbdaaf4835582b38369c2"
+        },
+        {
+          "source_id": "99ad0af8cf8f9ecd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201803/t436949.html",
+          "source_file": "99ad0af8cf8f9ecd.txt",
+          "source_sha256": "43a7e1db1f8bfdc7f242921c8fa332e444035e5733f3f45b7aae255991847719",
+          "source_lines": [
+            1,
+            70
+          ],
+          "quote": "一、企业通过公益性社会组织或者县级（含县级）以上人民政府及其组成部门和直属机构，用于慈善活动、公益事业的捐赠支",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "43a7e1db1f8bfdc7f242921c8fa332e444035e5733f3f45b7aae255991847719"
+        },
+        {
+          "source_id": "c295c6b6c226651b",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201805/t439366.html",
+          "source_file": "c295c6b6c226651b.txt",
+          "source_sha256": "4a58a24d14afcedd10fefe00fc5b51876b6ae7851c3589c2b711b32b4140a82b",
+          "source_lines": [
+            1,
+            65
+          ],
+          "quote": "一、企业发生的职工教育经费支出，不超过工资薪金总额8%的部分，准予在计算企业所得税应纳税所得额时扣除；超过部分",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4a58a24d14afcedd10fefe00fc5b51876b6ae7851c3589c2b711b32b4140a82b"
+        },
+        {
+          "source_id": "54833301790f94b8",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468599.html",
+          "source_file": "54833301790f94b8.txt",
+          "source_sha256": "8d9e48e6bab4f63f77108033705e95cd6cf8555992699e1cfc91af7237ad0b11",
+          "source_lines": [
+            1,
+            64
+          ],
+          "quote": "一、企业在2024年1月1日至2027年12月31日期间新购进的设备、器具，单位价值不超过500万元的，允许一",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "8d9e48e6bab4f63f77108033705e95cd6cf8555992699e1cfc91af7237ad0b11"
+        },
+        {
+          "source_id": "ff6d8937e26514f0",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t480124.html",
+          "source_file": "ff6d8937e26514f0.txt",
+          "source_sha256": "700238becf488fc700fd3137eae1f57771541a8cf24b3af1a182239c21702284",
+          "source_lines": [
+            1,
+            68
+          ],
+          "quote": "企业所得税相关热点问答",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "700238becf488fc700fd3137eae1f57771541a8cf24b3af1a182239c21702284"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-12",
+      "claim": "## Withholding on non-residents (源泉扣缴) ([CIT Law Art. 3, 19, 27, 37-40](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Art. 91](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))\n\n- **Who.** A non-resident enterprise without an establishment in China, or whose China-source income is not effectively connected with its establishment.\n- **Rate.** The statutory rate is 20% (Law Art. 4), and Regulations Art. 91 reduces it to **10%**. A tax treaty may reduce it further. Confirm the treaty, the beneficial owner and the documents before applying a lower rate, and refer treaty claims.\n- **Base.** For dividends, interest, rent and royalties the base is the gross amount. For property transfers it is the proceeds less the net value of the property (Law Art. 19).\n- **Exempt.** Interest on loans from foreign governments to the Chinese government, interest on concessional loans from international financial organisations to the Chinese government and resident enterprises, and other income the State Council approves (Regulations Art. 91).\n- **Mechanics.** For applicable non-resident EIT withholding, the payer withholds on actual payment or when the payment obligation arises, except dividends/distributions: the withholding obligation arises on actual payment under [STA 2017 No. 37 §7](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html). Pay over and report within seven days. If the payer does not withhold, the non-resident follows its statutory payment duty (Law Arts. 37,39–40).\n- **Unresolved payment.** Obtain the contract, transaction/source facts and recipient establishment information before computing. Refer the unresolved classification; no automatic 10% applies merely because its nature is unclear (Law Arts. 3,19,37; Regulations Art. 7).",
+      "section": "Cross-border points / Withholding on non-residents",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]; corrections checked against operative units specified by the initial review and repair log.",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            1,
+            208
+          ],
+          "quote": "第一条　在中华人民共和国境内，企业和其他取得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            1,
+            387
+          ],
+          "quote": "第一条　根据《中华人民共和国企业所得税法》（以下简称企业所得税法）的规定，制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a"
+        },
+        {
+          "source_id": "WHT37",
+          "official_url": "https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html",
+          "source_file": "WHT37.txt",
+          "source_sha256": "9ab8a54565419aa08d7439d86f809b82c10b429c0eae8ec052ee021f84581f49",
+          "source_lines": [
+            1,
+            158
+          ],
+          "quote": "实际支付之日",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ab8a54565419aa08d7439d86f809b82c10b429c0eae8ec052ee021f84581f49"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-13",
+      "claim": "## Anti-avoidance in brief ([CIT Law Ch. 6](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Art. 118](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))\n\n- **Transfer pricing.** Related-party transactions must be at arm's length, or the tax bureau may adjust them (Art. 41). An annual related-party transaction report is filed with the annual return (Art. 43). Contemporaneous documentation duties depend on transaction thresholds: refer.\n- **Controlled foreign companies.** Profits that a company controlled by resident enterprises (or by them together with Chinese residents) keeps in a country whose effective tax is clearly below the 25% rate, without a genuine business reason, can be taxed on the resident. \"Clearly below\" means below 50% of the 25% rate (Law Art. 45; Regulations Art. 118).\n- **Thin capitalisation.** Interest on related-party debt above the prescribed debt-to-equity ratio is not deductible (Art. 46).\n- **General anti-avoidance.** Arrangements without a reasonable commercial purpose can be adjusted (Art. 47). An adjustment carries interest (Art. 48).",
+      "section": "The base / Anti-avoidance in brief",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            1,
+            208
+          ],
+          "quote": "第一条　在中华人民共和国境内，企业和其他取得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            1,
+            387
+          ],
+          "quote": "第一条　根据《中华人民共和国企业所得税法》（以下简称企业所得税法）的规定，制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-14",
+      "claim": "## Boundary and exception table\n\n| Situation | Treatment | Source |\n| --- | --- | --- |\n| Taxable income exactly 300万元, 300 staff, assets 5000万元 | Qualifies: each test is \"not over\" | [MOF/STA announcement 2023 No. 12 Art. 5](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html) |\n| Taxable income above 300万元 | Not a small low-profit enterprise. Whole income at 25% (or another preference) | [MOF/STA announcement 2023 No. 12 Art. 5](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html) |\n| Company in a restricted or prohibited industry | No small low-profit relief, whatever its size | [MOF/STA announcement 2023 No. 12 Art. 5](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html) |\n| Branch without legal personality | Cannot claim the small low-profit relief alone. Combine with head office | [STA announcement 2023 No. 6 Art. 1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html) |\n| Claimed small low-profit at prepayment, fails at year end | Pay the difference at the annual settlement | [STA announcement 2023 No. 6 Art. 6](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html) |\n| HNTE certificate issued part way through 2026 | 15% from tax year 2026, the year of issue | [HNTE Measures Art. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201603/t422248.html) |\n| HNTE certificate expired and not renewed | 25% from the year it lapses, unless another preference applies | HNTE Measures Art. 9 |\n| Western-region company, encouraged business below 60% of revenue | No 15%. Use 25% | [MOF/STA/NDRC 2020 No. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html) |\n| Retailer runs an R&D project | No super-deduction (negative-list industry). The actual cost is still deductible | [Caishui 2015 No. 119](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201511/t419949.html) |\n| Overseas R&D above two-thirds of domestic R&D | The excess gets no super-deduction | [Caishui 2018 No. 64](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html) |\n| Loss from 2020 still unused in 2026, ordinary company | Expired after 2025 (5 years) | [CIT Law Art. 18](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) |\n| Company is an HNTE in 2026, with an unused 2021 loss | May use it for up to 10 years from 2021 | [Caishui 2018 No. 76](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440878.html) |\n| Dividend from a listed resident company held less than 12 months | Taxable, not exempt | [Shanghai Tax Bureau Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t479958.html) |\n| Dividend from a partnership or foreign company | Not exempt resident-to-resident dividend income | Shanghai Tax Bureau Q&A |\n| Royalty paid to a non-resident with no treaty claim | Withhold 10% on the gross amount | [Implementation Regulations Art. 91](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html) |",
+      "section": "The base / Boundary and exception table",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]; corrections checked against operative units specified by the initial review and repair log.",
+      "sources": [
+        {
+          "source_id": "42a296a61ff344a1",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html",
+          "source_file": "42a296a61ff344a1.txt",
+          "source_sha256": "e63f6465f682760516a8f7ddb41b65d89f590a50c158ce9657af77452ab66dd4",
+          "source_lines": [
+            1,
+            75
+          ],
+          "quote": "一、自2023年1月1日至2027年12月31日，对个体工商户年应纳税所得额不超过200万元的部分，减半征收个",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "e63f6465f682760516a8f7ddb41b65d89f590a50c158ce9657af77452ab66dd4"
+        },
+        {
+          "source_id": "adeda93b9941ef02",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html",
+          "source_file": "adeda93b9941ef02.txt",
+          "source_sha256": "06d9066b71591d6774228d7b52321a63377d6bd1bab16ed9a760e5061b31cab1",
+          "source_lines": [
+            1,
+            74
+          ],
+          "quote": "一、符合财政部、税务总局规定的小型微利企业条件的企业（以下简称小型微利企业），按照相关政策规定享受小型微利企业",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "06d9066b71591d6774228d7b52321a63377d6bd1bab16ed9a760e5061b31cab1"
+        },
+        {
+          "source_id": "6d3a7271d0a3d9b9",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201603/t422248.html",
+          "source_file": "6d3a7271d0a3d9b9.txt",
+          "source_sha256": "3c9c94e12098446b62582ba0b16a233ab2c981aaa909c19bb4a005eb44110641",
+          "source_lines": [
+            1,
+            135
+          ],
+          "quote": "第一条 为扶持和鼓励高新技术企业发展，根据《中华人民共和国企业所得税法》（以下称《企业所得税法》）、《中华人民",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "3c9c94e12098446b62582ba0b16a233ab2c981aaa909c19bb4a005eb44110641"
+        },
+        {
+          "source_id": "2fd1d7f8ba48d7d4",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html",
+          "source_file": "2fd1d7f8ba48d7d4.txt",
+          "source_sha256": "f7a18f5f21100779b5c0df90dc901d23fed3c2c874724af94753126424e761c0",
+          "source_lines": [
+            1,
+            68
+          ],
+          "quote": "一、自2021年1月1日至2030年12月31日，对设在西部地区的鼓励类产业企业减按15%的税率征收企业所得税",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "f7a18f5f21100779b5c0df90dc901d23fed3c2c874724af94753126424e761c0"
+        },
+        {
+          "source_id": "df04f1e7f68c9872",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201511/t419949.html",
+          "source_file": "df04f1e7f68c9872.txt",
+          "source_sha256": "5bfb68f7cecea54efbc90932127ac41ba0c7d5b5d66e992d4c15d71936d3426c",
+          "source_lines": [
+            1,
+            119
+          ],
+          "quote": "一、研发活动及研发费用归集范围。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "5bfb68f7cecea54efbc90932127ac41ba0c7d5b5d66e992d4c15d71936d3426c"
+        },
+        {
+          "source_id": "1013b79c285b7d8b",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html",
+          "source_file": "1013b79c285b7d8b.txt",
+          "source_sha256": "471f0204d9f17cd4439d29d1d9cef93b3bda18615134667162aff77664444b68",
+          "source_lines": [
+            1,
+            78
+          ],
+          "quote": "一、委托境外进行研发活动所发生的费用，按照费用实际发生额的80%计入委托方的委托境外研发费用。委托境外研发费用",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "471f0204d9f17cd4439d29d1d9cef93b3bda18615134667162aff77664444b68"
+        },
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            1,
+            208
+          ],
+          "quote": "第一条　在中华人民共和国境内，企业和其他取得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf"
+        },
+        {
+          "source_id": "128be5c1084f71fe",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440878.html",
+          "source_file": "128be5c1084f71fe.txt",
+          "source_sha256": "7e17d8a9e23edc6ad0825597f33466719c48bf203a884032e4f98096cef13693",
+          "source_lines": [
+            1,
+            66
+          ],
+          "quote": "一、自2018年1月1日起，当年具备高新技术企业或科技型中小企业资格（以下统称资格）的企业，其具备资格年度之前",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "7e17d8a9e23edc6ad0825597f33466719c48bf203a884032e4f98096cef13693"
+        },
+        {
+          "source_id": "cf513cb8046dbfb6",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t479958.html",
+          "source_file": "cf513cb8046dbfb6.txt",
+          "source_sha256": "64b8b3fddf52eb3483900c392f41ee649b790ffc93440cb0949612ebc0d54186",
+          "source_lines": [
+            1,
+            67
+          ],
+          "quote": "企业所得税汇算清缴热点问答",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "64b8b3fddf52eb3483900c392f41ee649b790ffc93440cb0949612ebc0d54186"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            1,
+            387
+          ],
+          "quote": "第一条　根据《中华人民共和国企业所得税法》（以下简称企业所得税法）的规定，制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-15",
+      "claim": "## Worked cases ([MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [CIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [MOF/STA announcement 2023 No. 7](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))\n\nAll amounts are in yuan and relate to tax year 2026.\n\n**Case 1: small low-profit enterprise.** A resident technology services company that is not in a restricted industry. Its quarterly-average headcount is 48 and its quarterly-average total assets are 12,000,000 yuan. Accounting profit is 2,600,000. Adjustments: entertainment over the cap +50,000; a non-qualifying donation +30,000; treasury bond interest (exempt) −20,000. Taxable income = 2,600,000 + 50,000 + 30,000 − 20,000 = 2,660,000. All three tests are met (not over three million yuan, 300 staff and fifty million yuan). Tax = 2,660,000 × 25% × 20% = 133,000, an effective 5%. Prepaid 60,000, so 73,000 is due with the annual settlement by 31 May 2027.\n\n**Case 2: just over the income test.** Same company, but taxable income is 3,100,000. It is **not** a small low-profit enterprise. Tax = 3,100,000 × 25% = 775,000. No part of its income is taxed at 5%. If it has an HNTE certificate for 2026, tax = 3,100,000 × 15% = 465,000.\n\n**Case 3: HNTE.** A company whose HNTE certificate was issued in October 2024 (valid until October 2027) has adjusted taxable income of 48,000,000. It still meets the staff, R&D and high-tech revenue ratios for 2026. Tax = 48,000,000 × 15% = 7,200,000. Prepaid 5,000,000, so 2,200,000 is due by 31 May 2027. The certificate is valid for three years from issue, so it lapses in October 2027. The company keeps 15% for tax year 2027 only if it is recognised again, so plan for that during 2027.\n\n**Case 4: R&D super-deduction.** A manufacturing company (not on the negative list, not an HNTE) has accounting profit of 15,000,000, after expensing R&D of 8,000,000 tracked by project. No intangible asset was created. Extra deduction = 8,000,000 × 100% = 8,000,000. Taxable income = 15,000,000 − 8,000,000 = 7,000,000. Tax = 7,000,000 × 25% = 1,750,000. Without the super-deduction, tax would be 15,000,000 × 25% = 3,750,000, so the saving is 2,000,000.\n\n**Case 5: royalty to a non-resident.** A Shanghai company pays a royalty of 1,000,000 to a foreign company that has no establishment in China and makes no treaty claim. Withholding = 1,000,000 × 10% = 100,000. The company pays it to the treasury within seven days of withholding and files the withholding report.\n\n**Case 6: losses.** An ordinary company (never an HNTE or technology-based SME) has 2026 profit of 1,000,000 before losses. It has an unused 2020 loss of 300,000 and an unused 2022 loss of 400,000. The 2020 loss expired after 2025. The 2022 loss is used: taxable income = 1,000,000 − 400,000 = 600,000. If it meets the small low-profit tests, tax = 600,000 × 25% × 20% = 30,000.",
+      "section": "Two worked examples that recompute / Worked cases",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "42a296a61ff344a1",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html",
+          "source_file": "42a296a61ff344a1.txt",
+          "source_sha256": "e63f6465f682760516a8f7ddb41b65d89f590a50c158ce9657af77452ab66dd4",
+          "source_lines": [
+            1,
+            75
+          ],
+          "quote": "一、自2023年1月1日至2027年12月31日，对个体工商户年应纳税所得额不超过200万元的部分，减半征收个",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "e63f6465f682760516a8f7ddb41b65d89f590a50c158ce9657af77452ab66dd4"
+        },
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            1,
+            208
+          ],
+          "quote": "第一条　在中华人民共和国境内，企业和其他取得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf"
+        },
+        {
+          "source_id": "bce2fe676b84ed80",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html",
+          "source_file": "bce2fe676b84ed80.txt",
+          "source_sha256": "c9686da235c66c89b91bcd0b386c55a12154deda5f72b827fa6299e6b1148a08",
+          "source_lines": [
+            1,
+            66
+          ],
+          "quote": "一、企业开展研发活动中实际发生的研发费用，未形成无形资产计入当期损益的，在按规定据实扣除的基础上，自2023年",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "c9686da235c66c89b91bcd0b386c55a12154deda5f72b827fa6299e6b1148a08"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            1,
+            387
+          ],
+          "quote": "第一条　根据《中华人民共和国企业所得税法》（以下简称企业所得税法）的规定，制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-16",
+      "claim": "## When to refuse or refer\n\nRefer to a Chinese certified tax agent or CPA, and do not finalise, when:\n- the entity is a bank, insurer, securities firm, trust, oil or gas producer, or mining company, or is otherwise subject to industry-specific rules;\n- head office and branches are in different provinces (cross-region consolidated filing), or the matter is group consolidation;\n- the matter is a merger, division, share or asset acquisition claiming special tax treatment, or a reorganisation under [STA announcement 2026 No. 13](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202607/t480970.html);\n- there is a tax audit, assessment, notice from the tax bureau, reconsideration or litigation;\n- the matter is a permanent establishment, profit attribution, treaty relief or indirect transfer of Chinese property by a non-resident;\n- the matter is transfer pricing documentation, an advance pricing arrangement, a CFC, thin capitalisation or a general anti-avoidance adjustment;\n- a Hengqin, Qianhai, Lingang, TASE, software or IC tax holiday, or Hainan outbound-investment exemption is claimed;\n- **Pillar Two / global minimum tax.** No MOF or STA rule implementing the income inclusion rule, the undertaxed profits rule or a domestic minimum top-up tax could be found on the official hosts at retrieval. If a multinational group within the OECD rules asks, say so and refer. Check the STA policy library for any later announcement;\n- the company cannot show its financial statements, prior-year return or loss schedule;\n- eligibility for a preference cannot be documented. In that case compute at 25% and flag the preference as pending.",
+      "section": "The base / When to refuse or refer",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "ed07f922189a811a",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202607/t480970.html",
+          "source_file": "ed07f922189a811a.txt",
+          "source_sha256": "bfb014555cff8bcd1b958e20c6d49abb5a93bed0f59f002b7ec6f4167a58108a",
+          "source_lines": [
+            1,
+            69
+          ],
+          "quote": "一、对于企业合并、分立业务，合计持股比例超过50%的被合并（被分立）企业的居民企业股东与被合并（被分立）企业、",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "bfb014555cff8bcd1b958e20c6d49abb5a93bed0f59f002b7ec6f4167a58108a"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-17",
+      "claim": "## Filing and payment ([CIT Law Art. 54-55](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Art. 128-129](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html); [STA announcement 2025 No. 17](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html); [Shanghai Tax Bureau settlement Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202405/t471967.html); [Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html))\n\n**Prepayment (预缴).**\n- CIT is prepaid monthly or quarterly, as the tax bureau decides. Small low-profit enterprises always prepay quarterly ([STA announcement 2023 No. 6 Art. 7](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html)).\n- The prepayment return is filed, and the tax paid, **within fifteen days** after the end of each month or quarter (Law Art. 54). For quarterly filers in 2026 that means by mid-April, mid-July and mid-October 2026, and mid-January 2027, subject to the published calendar, which may extend a deadline for public holidays.\n- Prepay on actual profit to date. If that is difficult, the company may use one-twelfth or one-quarter of the previous year's taxable income, or another method the tax bureau approves. Once chosen, the method may not be changed at will within the year (Regulations Art. 128).\n- Resident enterprises taxed on their books use the revised A-type monthly (quarterly) prepayment return, in use from 1 October 2025 (STA announcement 2025 No. 17; [Shanghai Tax Bureau Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202511/t478219.html)).\n- The R&D super-deduction and the small low-profit relief can both be claimed at prepayment, and are confirmed at the annual settlement.\n\n**Annual settlement (年度汇算清缴).**\n- Within five months after the year end, file the annual return and settle the balance, whether the company made a profit or a loss and whether or not it is in a tax holiday (Law Art. 54; Regulations Art. 129). For tax year 2026 the deadline is **31 May 2027**. The Shanghai bureau's Q&A shows the same pattern for an earlier year: settlement \"在2024年5月31日前\" for tax year 2023.\n- File the financial statements with the return. File the related-party transaction report where required (Law Art. 43).\n- Preferences are self-assessed and claimed on the return. Supporting documents are kept for inspection, not filed in advance ([Shanghai Tax Bureau Q&A, April 2026](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t480124.html)).\n- An overpayment identified at annual settlement is refunded. Under STA announcement 2021 No. 34 Art. 2, it is not carried over to offset next year's CIT; this is separate from the in-year prepayment adjustment described above.\n- A company that stops business during the year settles within 60 days of stopping (Law Art. 55; Shanghai settlement Q&A).\n\n**Late payment and penalties** ([Tax Collection Administration Law Art. 32, 62, 63](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html)).\n- Late payment: a surcharge of five ten-thousandths (万分之五) of the unpaid tax for each day, from the day the tax became overdue.\n- Late filing: the bureau orders correction and may fine up to two thousand yuan. In serious cases the fine is two thousand to ten thousand yuan.\n- Tax evasion (false returns, hidden income and the like): the tax and surcharge are recovered, plus a fine of half to five times the unpaid tax. Criminal liability applies where the conduct is a crime.\n- Records: keep books, vouchers, returns and other tax records for ten years unless a law says otherwise ([Detailed Rules for the Tax Collection Administration Law, Art. 29](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html)).",
+      "section": "Deadlines and filing / Filing and payment",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]; corrections checked against operative units specified by the initial review and repair log.",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            1,
+            208
+          ],
+          "quote": "第一条　在中华人民共和国境内，企业和其他取得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            1,
+            387
+          ],
+          "quote": "第一条　根据《中华人民共和国企业所得税法》（以下简称企业所得税法）的规定，制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a"
+        },
+        {
+          "source_id": "fb3b85c6f89fc5a2",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html",
+          "source_file": "fb3b85c6f89fc5a2.txt",
+          "source_sha256": "b7d297ea3340321a58d515091e753da92d4b6a08b90babe263ed36c1c04a92e8",
+          "source_lines": [
+            1,
+            73
+          ],
+          "quote": "一、企业适用节能节水、环境保护、安全生产专用设备抵免所得税政策的，可结合自身情况自主选择在预缴申报时享受抵免所",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "b7d297ea3340321a58d515091e753da92d4b6a08b90babe263ed36c1c04a92e8"
+        },
+        {
+          "source_id": "416fd843c0126af7",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202405/t471967.html",
+          "source_file": "416fd843c0126af7.txt",
+          "source_sha256": "1850d973392de47ee9d0f7f22a211ee746e2bb90aaad103258a88acd018b504d",
+          "source_lines": [
+            1,
+            68
+          ],
+          "quote": "企业所得税汇算清缴热点问答",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "1850d973392de47ee9d0f7f22a211ee746e2bb90aaad103258a88acd018b504d"
+        },
+        {
+          "source_id": "23c844ac37cfb86f",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html",
+          "source_file": "23c844ac37cfb86f.txt",
+          "source_sha256": "0cc6d8d873fc95c8f0a41b162b8960cf1e652968d143176e0330543ed600d0a8",
+          "source_lines": [
+            1,
+            244
+          ],
+          "quote": "第一条　为了加强税收征收管理，规范税收征收和缴纳行为，保障国家税收收入，保护纳税人的合法权益，促进经济和社会发",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0cc6d8d873fc95c8f0a41b162b8960cf1e652968d143176e0330543ed600d0a8"
+        },
+        {
+          "source_id": "adeda93b9941ef02",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html",
+          "source_file": "adeda93b9941ef02.txt",
+          "source_sha256": "06d9066b71591d6774228d7b52321a63377d6bd1bab16ed9a760e5061b31cab1",
+          "source_lines": [
+            1,
+            74
+          ],
+          "quote": "一、符合财政部、税务总局规定的小型微利企业条件的企业（以下简称小型微利企业），按照相关政策规定享受小型微利企业",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "06d9066b71591d6774228d7b52321a63377d6bd1bab16ed9a760e5061b31cab1"
+        },
+        {
+          "source_id": "a804a9c258a97b80",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202511/t478219.html",
+          "source_file": "a804a9c258a97b80.txt",
+          "source_sha256": "6afee02124d45c6a71f47c549e2140878bad1ec6dfcd8bc9f500171a82a42d30",
+          "source_lines": [
+            1,
+            63
+          ],
+          "quote": "企业所得税预缴申报表热点问答",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "6afee02124d45c6a71f47c549e2140878bad1ec6dfcd8bc9f500171a82a42d30"
+        },
+        {
+          "source_id": "ff6d8937e26514f0",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t480124.html",
+          "source_file": "ff6d8937e26514f0.txt",
+          "source_sha256": "700238becf488fc700fd3137eae1f57771541a8cf24b3af1a182239c21702284",
+          "source_lines": [
+            1,
+            68
+          ],
+          "quote": "企业所得税相关热点问答",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "700238becf488fc700fd3137eae1f57771541a8cf24b3af1a182239c21702284"
+        },
+        {
+          "source_id": "f4fd2737d35dbad1",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html",
+          "source_file": "f4fd2737d35dbad1.txt",
+          "source_sha256": "3eaec5a2958ada33f5f9c7f58a993016c03b7ad2df91841839b7e3105751ce56",
+          "source_lines": [
+            1,
+            291
+          ],
+          "quote": "第一条　根据《中华人民共和国税收征收管理法》（以下简称税收征管法）的规定，制定本细则。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "3eaec5a2958ada33f5f9c7f58a993016c03b7ad2df91841839b7e3105751ce56"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-18",
+      "claim": "## Returns for tax year 2025 being filed or corrected now ([Shanghai Tax Bureau 2025 settlement Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t479958.html); [CIT Law Art. 54](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html))\n\nThe annual settlement for tax year 2025 was due by 31 May 2026. Every resident enterprise that operated in 2025 had to settle, including those that made a loss or were in a tax holiday. On 25 September 2026 that deadline has passed, so any 2025 work is either a correction of a filed return or a late filing:\n- a missing 2025 settlement is late, so file at once and expect the daily surcharge and a possible penalty;\n- if a 2025 return is wrong, file a correction. Underpaid tax carries the daily surcharge;\n- the 2025 rules are the same as those in this skill for the small low-profit relief, the R&D super-deduction, the western and Hainan 15% rates, HNTE and losses. The advertising rule is different: for 2025 the earlier announcement (MOF/STA announcement 2020 No. 43) applied, and MOF/STA announcement 2025 No. 16 replaced it only from 1 January 2026.",
+      "section": "Deadlines and filing / Returns for tax year 2025 being filed or corrected now",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]",
+      "sources": [
+        {
+          "source_id": "cf513cb8046dbfb6",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t479958.html",
+          "source_file": "cf513cb8046dbfb6.txt",
+          "source_sha256": "64b8b3fddf52eb3483900c392f41ee649b790ffc93440cb0949612ebc0d54186",
+          "source_lines": [
+            1,
+            67
+          ],
+          "quote": "企业所得税汇算清缴热点问答",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "64b8b3fddf52eb3483900c392f41ee649b790ffc93440cb0949612ebc0d54186"
+        },
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            1,
+            208
+          ],
+          "quote": "第一条　在中华人民共和国境内，企业和其他取得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    },
+    {
+      "id": "CN-CNCORPORATETAX-19",
+      "claim": "## Completion checklist ([CIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [MOF/STA announcement 2023 No. 7](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))\n\n- [ ] Resident or non-resident status confirmed. Legal person or branch identified.\n- [ ] Taxable income reconciled from accounting profit, with non-taxable and exempt income removed and caps applied.\n- [ ] Small low-profit tests run on quarterly averages (headcount including dispatched workers), with the industry test and the all-or-nothing rule applied.\n- [ ] HNTE certificate issue date and validity checked, and the 2026 ratios evidenced.\n- [ ] Regional 15%: location, substantive operation and the 60% main-business test documented, with the period (western region to 2030, Hainan to 2027) checked.\n- [ ] R&D: not a negative-list industry, costs tracked by project, other-costs cap and overseas limits applied, 100% (or 120% if the applicable category qualification/list conditions are met) used.\n- [ ] Loss schedule by year. Expired losses removed. HNTE or technology-based SME ten-year rule checked year by year.\n- [ ] Only one rate preference applied to the same income.\n- [ ] Non-resident payments: category, Chinese source and establishment connection established; applicable base/rate or evidenced exemption/treaty claim recorded; actual withholding and seven-day payment checked.\n- [ ] Prepayments reconciled: fifteen-day deadlines met; small low-profit enterprises on quarterly filing.\n- [ ] Annual settlement for 2026 diarised for 31 May 2027. Any 2025 corrections filed.\n- [ ] Referral items (Pillar Two, reorganisations, transfer pricing, special zones, audits) flagged and not finalised.",
+      "section": "The base / Completion checklist",
+      "act_article": "Internal workflow / case grouping; rule-specific act and article references are in the full claim and linked primary readers below. [Full section claim must be checked against every applicable provision; index quote alone is insufficient.]; corrections checked against operative units specified by the initial review and repair log.",
+      "sources": [
+        {
+          "source_id": "e9317ed0e9090f97",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "source_file": "e9317ed0e9090f97.txt",
+          "source_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "source_lines": [
+            1,
+            208
+          ],
+          "quote": "第一条　在中华人民共和国境内，企业和其他取得收入的组织（以下统称企业）为企业所得税的纳税人，依照本法的规定缴纳",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf"
+        },
+        {
+          "source_id": "42a296a61ff344a1",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html",
+          "source_file": "42a296a61ff344a1.txt",
+          "source_sha256": "e63f6465f682760516a8f7ddb41b65d89f590a50c158ce9657af77452ab66dd4",
+          "source_lines": [
+            1,
+            75
+          ],
+          "quote": "一、自2023年1月1日至2027年12月31日，对个体工商户年应纳税所得额不超过200万元的部分，减半征收个",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "e63f6465f682760516a8f7ddb41b65d89f590a50c158ce9657af77452ab66dd4"
+        },
+        {
+          "source_id": "bce2fe676b84ed80",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html",
+          "source_file": "bce2fe676b84ed80.txt",
+          "source_sha256": "c9686da235c66c89b91bcd0b386c55a12154deda5f72b827fa6299e6b1148a08",
+          "source_lines": [
+            1,
+            66
+          ],
+          "quote": "一、企业开展研发活动中实际发生的研发费用，未形成无形资产计入当期损益的，在按规定据实扣除的基础上，自2023年",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "c9686da235c66c89b91bcd0b386c55a12154deda5f72b827fa6299e6b1148a08"
+        },
+        {
+          "source_id": "43cd7c8e22186be0",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "source_file": "43cd7c8e22186be0.txt",
+          "source_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "source_lines": [
+            1,
+            387
+          ],
+          "quote": "第一条　根据《中华人民共和国企业所得税法》（以下简称企业所得税法）的规定，制定本条例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a"
+        },
+        {
+          "source_id": "WHT37",
+          "official_url": "https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html",
+          "source_file": "WHT37.txt",
+          "source_sha256": "9ab8a54565419aa08d7439d86f809b82c10b429c0eae8ec052ee021f84581f49",
+          "source_lines": [
+            1,
+            158
+          ],
+          "quote": "实际支付之日",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9ab8a54565419aa08d7439d86f809b82c10b429c0eae8ec052ee021f84581f49"
+        },
+        {
+          "source_id": "2836bf1f3f4ae9fd",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html",
+          "source_file": "2836bf1f3f4ae9fd.txt",
+          "source_sha256": "cae97f8c9c9aa965dc36bc5de9e5249950c2274e8053e48ef0fd4345d4679e09",
+          "source_lines": [
+            1,
+            75
+          ],
+          "quote": "不采取清单管理的",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "cae97f8c9c9aa965dc36bc5de9e5249950c2274e8053e48ef0fd4345d4679e09"
+        }
+      ],
+      "evidence_scope": "Full primary readers; first-operative-line index quote is not stand-alone proof of all rules in section."
+    }
+  ],
+  "original_topics": [
+    [
+      "Scope and who this is for ([CIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))",
+      "Who this applies to; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "What is new or confirmed for 2026 ([MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [MOF/STA announcement 2025 No. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html); [STA announcement 2025 No. 17](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html); [Hainan Tax Bureau 2025 No. 2](https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html))",
+      "Who this applies to; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Ask the client first",
+      "Ask the client first; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "The method, step by step",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Rates for tax year 2026 ([CIT Law Art. 4, 28](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Art. 91](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))",
+      "Rates, bands and thresholds; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Small low-profit enterprises (小型微利企业) ([MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [STA announcement 2023 No. 6](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "High and new technology enterprises (HNTE, 高新技术企业) at 15% ([CIT Law Art. 28](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [HNTE Administrative Measures, Guokefahuo 2016 No. 32](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201603/t422248.html); [Shanghai Tax Bureau HNTE Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202505/t476449.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Regional 15% rates ([MOF/STA/NDRC 2020 No. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html); [Hainan Tax Bureau 2025 No. 2](https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html); [Caishui 2020 No. 31](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202009/t455145.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "R&D super-deduction (研发费用加计扣除) ([MOF/STA announcement 2023 No. 7](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html); [MOF/STA announcement 2023 No. 44](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html); [Caishui 2015 No. 119](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201511/t419949.html); [Caishui 2018 No. 64](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html); [Shanghai Tax Bureau R&D Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202111/t461170.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Losses carried forward ([CIT Law Art. 18](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Caishui 2018 No. 76](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440878.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Capped deductions and other income rules ([Implementation Regulations Art. 43-44](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html); [MOF/STA announcement 2025 No. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html); [Caishui 2018 No. 15](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201803/t436949.html); [Caishui 2018 No. 51](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201805/t439366.html); [MOF/STA announcement 2023 No. 37](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468599.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Withholding on non-residents (源泉扣缴) ([CIT Law Art. 3, 19, 27, 37-40](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Art. 91](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))",
+      "Cross-border points; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Anti-avoidance in brief ([CIT Law Ch. 6](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Art. 118](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Boundary and exception table",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Worked cases ([MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [CIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [MOF/STA announcement 2023 No. 7](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))",
+      "Two worked examples that recompute; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "When to refuse or refer",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Filing and payment ([CIT Law Art. 54-55](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Art. 128-129](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html); [STA announcement 2025 No. 17](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html); [Shanghai Tax Bureau settlement Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202405/t471967.html); [Tax Collection Administration Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html))",
+      "Deadlines and filing; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Returns for tax year 2025 being filed or corrected now ([Shanghai Tax Bureau 2025 settlement Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t479958.html); [CIT Law Art. 54](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html))",
+      "Deadlines and filing; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ],
+    [
+      "Completion checklist ([CIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [MOF/STA announcement 2023 No. 7](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))",
+      "The base; original topic and worked cases retained; targeted legal/citation corrections are recorded in the country repair log."
+    ]
+  ],
+  "line_convention": "Python str.splitlines(); complete context and hashes, not only quotation membership.",
+  "evidence_note": "Complete official source readers and full captured contexts are retained in the private country evidence. Public ledger retains operative citations, exact excerpts, source/reader hashes and captured line spans. Read the official linked unit; quote membership alone does not prove the rule."
+}

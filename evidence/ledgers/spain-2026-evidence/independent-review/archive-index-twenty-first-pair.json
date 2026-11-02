@@ -1,0 +1,66 @@
+{
+  "scope": "ForalPITboundedindependentPASS;exact15membermanifest/Guide67f9038d/ledger75f77f9a;notwholecountrycompletion.",
+  "manifest_sha256": "daca61f2e9d33cc21077dff6fa4f0d305ca55cdd13fd47d9ebf8fe843eef9e97",
+  "artifacts": [
+    {
+      "path": "tranche17-report.md",
+      "sha256": "fbeaaf3a927f5a71b260d6878e86cda4637d712170faf0e32df6319ea62101db"
+    },
+    {
+      "path": "tranche17-final-read-ledger.json",
+      "sha256": "38bce2536a34e45b350dae82540b9efeca216c4be265fe35bba8a7b92e157021"
+    },
+    {
+      "path": "tranche17-final-integrity.json",
+      "sha256": "d10a9fadd9600142c0f87a18baa8e5f2483be05fa27dba7c9cd97b6fb7ac261e"
+    },
+    {
+      "path": "tranche17-final-integrity.py",
+      "sha256": "2256af2598e285448fc16c7c75c3fddfb2897d818e9c85b35c8ad1fbb18b3669"
+    },
+    {
+      "path": "tranche17-repair-proof.json",
+      "sha256": "9aa1cd68e6e0fb99938dd8536edded088eda97e657a68d98a5a8a16d435f9b88"
+    },
+    {
+      "path": "tranche17-repair-proof.py",
+      "sha256": "6b77aa9e8fbf76e6926b1e4826cd90122bb916215cfe3ed8287acd668a149d42"
+    },
+    {
+      "path": "tranche17-own-controls.json",
+      "sha256": "4b0bcaf51fdbe67d528a306330dcdcd1083ea5257911965dd54394aefff0fde7"
+    },
+    {
+      "path": "tranche17-controls.py",
+      "sha256": "2db052c531a7b201c41e6e5ae16869c23848b25729e932c12eeed07527167dc0"
+    },
+    {
+      "path": "tranche17-evidence-erratum.md",
+      "sha256": "6e9992d3da7e0f2df35076ee218e478640b7917e037e6b747c33692075134b51"
+    },
+    {
+      "path": "tranche17-example-check.txt",
+      "sha256": "a4d78ce334d9e6d1ef8b4e527e7cd2fe0e9d5be21dacc9f76185b80f32e3bacc"
+    },
+    {
+      "path": "tranche17-source-identities.json",
+      "sha256": "ac31063905bbd22fa13cf4f16ec985f5a61e1f56341fa6c183e11b84f3caef7b"
+    },
+    {
+      "path": "tranche17-source-read-batches.json",
+      "sha256": "0e3c72db83913463ada10fea84992a9187082d33723c787254fdb5710dbe5fb7"
+    },
+    {
+      "path": "tranche17-quote-reuse-map.json",
+      "sha256": "baa780ef563515474464cb02483127a8480a7fe5f03a5598d155ff7220a8a253"
+    },
+    {
+      "path": "tranche17-contained-quote-map.json",
+      "sha256": "f7b20804c24702104201db4c9556bd969ff6eb900d56e173f102fc6e2d64c89d"
+    },
+    {
+      "path": "tranche17-current-wordings.json",
+      "sha256": "967a4b3d7fd7900f344526512669413746e8a4f06aea23644acae855c17c1ed8"
+    }
+  ]
+}

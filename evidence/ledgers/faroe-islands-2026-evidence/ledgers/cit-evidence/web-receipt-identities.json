@@ -1,0 +1,22 @@
+[
+  {
+    "file": "circular-web-response.json",
+    "sha256": "08e4c0d1baf16bacbb10df8ad7dc1ab42e075d23834681d857e47cbd9d1cd9b6",
+    "kind": "exact serialized web tool extraction; not original HTML/PDF body"
+  },
+  {
+    "file": "indices-web-response.json",
+    "sha256": "201b07425692b305190db379a87e7e987df9df20104a2401d21a65ff1eb35b06",
+    "kind": "exact serialized web tool extraction; not original HTML/PDF body"
+  },
+  {
+    "file": "tp-cb-web-source-response.json",
+    "sha256": "4fcb3c3c6e399b061a6d50b6197f63c1002cefe4f528f4604fd41fdd3dfbee3d",
+    "kind": "exact serialized web tool extraction; not original HTML/PDF body"
+  },
+  {
+    "file": "vls-N-Q-web-response.json",
+    "sha256": "5ffad5d4999b4570fb03fba8f17754acbe430e3b3fcf005a4c54f9cde4f3a1a5",
+    "kind": "exact serialized web tool extraction; not original HTML/PDF body"
+  }
+]

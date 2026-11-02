@@ -71,8 +71,13 @@ This package contains **federal** tax skills (which apply to all US states) plus
 61. `us-tax-return-review-supporting-documents-findings.md`
 62. `us-federal-return-assembly.md`
 63. `global-router.md`
-64. `ks-income-tax.md`
-65. `ks-sales-tax.md`
+64. `ks-corporate-income-tax.md`
+65. `ks-cross-border.md`
+66. `ks-income-tax.md`
+67. `ks-payroll.md`
+68. `ks-sales-tax.md`
+69. `ks-social-contributions.md`
+70. `ks-transfer-pricing.md`
 
 ## How to use
 

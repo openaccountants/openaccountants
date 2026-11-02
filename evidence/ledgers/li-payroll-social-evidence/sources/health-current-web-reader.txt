@@ -1,0 +1,538 @@
+Prämien & Beiträge - Liechtensteinische Landesverwaltung (https://www.llv.li/de/privatpersonen/gesundheit-vorsorge-und-pflege/krankenversicherung/praemien-beitraege)
+citeturn2892view0 [wordlim: 200] Crawled: yesterday; Content type: text/html; Source: open({"ref_id":"turn2887view1","lineno":4381}); Total lines: 4470
+L3929:       * 【516†Steuerbefreiung】
+L3930:     * 【517†Frequenzen und Anlagen】
+L3931:       * 【518†Funkdienste】
+L3932:         * 【519†Amateurfunk】
+L3933:     * 【521†Führerschein】
+L3934:       * 【522†Mein Weg zum Führerausweis】
+L3935:       * 【523†e-Führerschein】
+L3936:       * 【524†Chauffeurzulassungsverordnung (CZV)】
+L3942:       * 【530†Lebensrettende Sofortmassnahmen (Nothelferausweis)】
+L3943:       * 【531†Lernmittel zur Theorieprüfung】
+L3944:       * 【532†Medizinische Kontrolluntersuchung】
+L3945:       * 【533†Internationaler Führerausweis】
+L3946:       * 【534†Lernfahrausweis】
+L3947:       * 【535†Praktischen Führerprüfung】
+L3948:       * 【536†Theorieprüfung】
+L3949:       * 【537†Umschreibung ausländischer Führerschein】
+L3950:       * 【538†Verlust Führerschein】
+L3951:       * 【539†Formulare】
+L3952:     * 【540†Grenzübertritt und Warenverkehr】
+L3953:     * 【541†Tourismus (Kurtaxen/ Meldewesen)】
+L3954:   * 【542†Gesundheit, Vorsorge & Pflege】
+L3955:     * 【543†Elektronisches Gesundheitsdossier】
+L3956:       * 【544†NEU: eGD-App】
+L3957:       * 【545†Rechtliche Grundlagen】
+L3958:       * 【546†Datenschutzhinweis】
+L3959:       * 【547†Widerspruch】
+L3960:       * 【548†Anlaufstelle】
+L3961:       * 【549†Formulare】
+L3962:       * 【550†Personen unter 14 Jahren】
+L3963:       * 【551†Anleitungen】
+L3964:       * 【552†eHealth Strategie】
+L3965:       * 【553†Nutzungsbedingungen eGD-App】
+L3966:       * 【554†FAQ】
+L3967:     * 【555†Behandlung und Pflege】
+L3968:       * 【556†Heilmittel】
+L3969:       * 【557†Arzneimittel】
+L3970:         * 【558†Zugelassene Arzneimittel】
+L3971:         * 【559†Entsorgung】
+L3972:       * 【560†Betäubungsmittel】
+L3973:         * 【561†Entsorgung】
+L3974:       * 【562†Medizinprodukte / In Vitro Diagnostika】
+L3975:         * 【563†Sicherheitsinformationen / Rückrufe】
+L3976:       * 【564†Vertragsspitäler und Bewilligungsinhaber】
+L3977:       * 【565†Patientenmobilität im EU-/EWR-Raum】
+L3978:         * 【566†Behandlung im EU-/EWR-Ausland】
+L3979:         * 【567†Behandlung im EU-/EWR-Ausland】
+L3980:         * 【568†Weiterführende Informationen】
+L3981:       * 【569†Hospizkosten】
+L3982:     * 【570†Gesundheitförderung und Prävention】
+L3983:       * 【571†Betriebliche Gesundheitsförderung (BGF/BGM)】
+L3984:       * 【572†Gesundheitsbericht】
+L3985:       * 【573†Vorsorgeuntersuchung】
+L3986:         * 【574†Erwachsene】
+L3987:         * 【575†Koloskopie】
+L3988:         * 【576†Mammografie】
+L3989:         * 【577†Kinder】
+L3990:         * 【578†Fragen und Antworten】
+L3991:         * 【579†Dokumente & Informationen】
+L3992:       * 【580†Kinder- und Jugendzahnpflege】
+L3993:       * 【581†Impfung】
+L3994:         * 【582†FSME】
+L3995:         * 【583†Masern】
+L3996:         * 【584†Reiseimpfungen】
+L3997:       * 【585†Reisemedizin】
+L3998:       * 【586†Sexuelle Gesundheit】
+L3999:       * 【587†Hitze und Gesundheit】
+L4000:       * 【588†Bewegung】
+L4001:         * 【589†bewegt.li】
+L4002:         * 【590†Bewegungsempfehlungen】
+L4003:         * 【591†Bewegungsverhalten von Schulkindern】
+L4004:       * 【592†Ernährung】
+L4005:         * 【593†Alles Wurscht?】
+L4006:         * 【594†Schweizer Ernährungsstrategie】
+L4007:       * 【595†Gesundheitsförderung in Gemeinden】
+L4008:         * 【596†Handbuch】
+L4009:         * 【597†Argumentarium «Gesundheit fördern und Krankheiten vorbeugen»】
+L4010:       * 【598†Projekte - gefördert vom Amt für Gesundheit】
+L4011:       * 【599†Internationale Bodenseekonferenz IBK】
+L4012:       * 【600†Sucht】
+L4013:         * 【601†Betäubungsmittelgestützte Behandlung】
+L4014:       * 【602†Suchtprävention】
+L4015:       * 【603†Psychische Gesundheit】
+L4016:         * 【604†find help】
+L4017:         * 【605†ensa Kurs】
+L4018:       * 【606†Endometriose】
+L4019:       * 【607†Krisenvorsorge und -bewältigung】
+L4020:     * 【608†Krankheiten und Risiken】
+L4021:       * 【609†Infektionskrankheiten】
+L4022:         * 【610†Infektionskrankheiten: Schutz】
+L4023:         * 【611†Infektionskrankheiten: Merkblätter】
+L4024:         * 【612†Infektionskrankheiten: Weitere Informationen】
+L4025:         * 【613†Infektionskrankheiten bei Schutzsuchenden】
+L4026:       * 【614†Coronavirus】
+L4027:         * 【615†COVID-19-Impfungen】
+L4028:         * 【616†Situationsbericht COVID-19】
+L4029:         * 【617†Verhaltens- und Hygieneregeln】
+L4030:         * 【618†COVID-Zertifikat】
+L4031:         * 【619†Einreise】
+L4032:         * 【620†Informationen zu Reisen】
+L4033:       * 【621†Post-COVID-19】
+L4034:         * 【622†Post-COVID-19: Weitere Informationen】
+L4035:         * 【623†Post-COVID-19: FAQs】
+L4036:       * 【624†Grippe (Influenza)】
+L4037:       * 【625†Respiratorisches Synzytial-Virus (RSV)】
+L4038:       * 【626†Mpox (Affenpocken)】
+L4039:         * 【627†Mpox : Übertragung der Krankheit】
+L4040:         * 【628†Mpox: Krankheitssymptome und Krankheitsverlauf】
+L4041:         * 【629†Mpox: Vorgehen bei Verdacht und Erkrankung】
+L4042:         * 【630†Mpox: Vorbeugung und Behandlung】
+L4043:         * 【631†Mpox: Anmeldung zur Impfung】
+L4044:         * 【632†Mpox: Weitere Informationen】
+L4045:       * 【633†Krebsregister】
+L4046:         * 【634†Jahresbericht Krebsregister】
+L4047:       * 【635†Kaliumiodid Tabletten】
+L4048:       * 【636†Links】
+L4049:       * 【637†Sucht】
+L4050:     * 【638†Krankenversicherung】
+L4051:       * 【639†Prämien & Beiträge】
+L4052:       * 【640†Kostenbeteiligung & Selbstbehalt】
+L4053:       * 【641†Wahlmöglichkeiten in der Krankenversicherung】
+L4054:       * 【642†Leistungen der Krankenversicherung】
+L4055:       * 【643†Behandlung & Versorgung】
+L4056:       * 【644†Leistungskataloge & Vergütungslisten】
+L4057:       * 【645†Tarife, Aufsicht und rechtliche Grundlagen der Krankenversicherung】
+L4058:       * 【646†Versicherungspflicht】
+L4059:       * 【647†Internationale Sachverhalte Sachverhalte】
+L4060:       * 【648†Krankenversicherungspflicht für Personen mit Wohnsitz in Liechtenstein】
+L4061:       * 【649†Krankenversicherungspflicht für Personen mit Erwerbstätigkeit in Liechtenstein】
+L4062:     * 【650†Unfallversicherung】
+L4063:       * 【651†Versicherte Personen】
+L4064:       * 【652†Unfallmeldungen】
+L4065:       * 【653†Arbeitgeber】
+L4066:       * 【654†Prämien】
+L4067:       * 【655†Leistungen】
+L4068:       * 【656†Unfallversicherer】
+L4069:     * 【657†Prämienverbilligung in der Krankenversicherung】
+L4070:   * 【658†Identität & Recht】
+L4071:     * 【659†Identitätsausweis】
+L4072:       * 【660†Digitale Identität - eID.li】
+L4073:       * 【661†Diebstahl / Verlust eines Reisedokuments】
+L4074:         * 【662†Ausweisdokument ging verloren】
+L4075:         * 【663†Ausweisdokument wurde gestohlen】
+L4076:       * 【664†Reisepass】
+L4077:         * 【665†Preis und Gültigkeit】
+L4078:         * 【666†Kinder, Minderjährige und Bevormundete】
+L4079:         * 【667†Daten im Reisepass】
+L4080:         * 【668†Datenschutz und Sicherheitsmassnahmen】
+L4081:         * 【669†Ausstellungsprozess】
+L4082:         * 【670†Antragsstellung im Ausland】
+L4083:       * 【674†Identitätskarte】
+L4084:         * 【675†Ausstellungsprozess】
+L4085:         * 【676†Preis und Gültigkeit】
+L4086:         * 【677†Kinder, Minderjährige und Bevormundete】
+L4087:         * 【678†Antragsstellung im Ausland】
+L4088:       * 【682†Schweizer Identitätskarte】
+L4089:     * 【683†Konsumentenschutz】
+L4090:       * 【684†Schlichtungsstelle für Konsumentenangelegenheiten】
+L4091:         * 【685†Verfahrensregeln】
+L4092:       * 【686†Anlaufstelle für Konsumentenfragen】
+L4093:     * 【687†Pauschalreise】
+L4094:     * 【688†Namensführung】
+L4095:     * 【689†Geschlechtswechsel】
+L4096:   * 【690†Migration und Integration】
+L4097:     * 【691†Aufenthaltsbewilligung】
+L4098:       * 【692†Wohnsitz in Liechtenstein ohne Erwerbstätigkeit】
+L4099:       * 【693†Wohnsitz in Liechtenstein zur Erwerbstätigkeit】
+L4100:       * 【694†Familiennachzug】
+L4101:         * 【695†Für Angehörige eines EWR- und CH Staatsangehörigen - Familiennachzug】
+L4102:         * 【696†Für Angehörige eines Drittstaats - Familiennachzug】
+L4103:         * 【697†Aufenthaltsbewilligung für Lebenspartner】
+L4104:         * 【698†Bewiligungsverfahren】
+L4105:       * 【699†Verlängerung des Aufenthalts】
+L4106:       * 【700†Beibehalt der Bewilligung】
+L4107:       * 【701†Daueraufenthalt und Niederlassung】
+L4108:         * 【702†Wiedererteilung Daueraufenthalts- und Niederlassungsbewilligung】
+L4109:       * 【703†Aufenthaltsausweise】
+L4110:     * 【704†Einbürgerung】
+L4111:     * 【705†Einwanderung】
+L4112:       * 【706†Wohnsitz in Liechtenstein zur Erwerbstätigkeit】
+L4113:       * 【707†Wohnsitz in Liechtenstein ohne Erwerbstätigkeit】
+L4114:       * 【708†Familiennachzug】
+L4115:         * 【709†Für Angehörige eines EWR- und CH Staatsangehörigen - Familiennachzug】
+L4116:         * 【710†Für Angehörige eines Drittstaats - Familiennachzug】
+L4117:         * 【711†Aufenthaltsbewilligung für Lebenspartner】
+L4118:         * 【712†Bewiligungsverfahren】
+L4119:       * 【713†Visum】
+L4120:       * 【714†Touristen / Dienstleistungsempfänger (L)】
+L4121:       * 【715†Kurzaufenthaltsbewilligung zum Studium / Ausbildung (L)】
+L4122:       * 【716†Asyl】
+L4123:         * 【717†Flüchtlingsbegriff und Asylrecht】
+L4124:         * 【718†Zuständigkeiten im Asylbereich】
+L4125:         * 【719†Asylverfahren】
+L4126:         * 【720†Dublin-Verfahren】
+L4127:         * 【721†Unterbringung und Betreuung】
+L4128:         * 【722†Leistungen nach dem Asylgesetz】
+L4129:         * 【723†Statistiken】
+L4130:         * 【724†FAQ – Häufig gestellte Fragen】
+L4131:         * 【725†Links】
+L4132:       * 【726†Integration】
+L4133:     * 【727†Chancengleichheit】
+L4134:       * 【728†Migration und Integration】
+L4135:         * 【729†Integrationsstrategie 2021】
+L4136:   * 【730†Engagement & Kultur】
+L4137:     * 【731†Vereine und Veranstaltungen】
+L4138:       * 【732†Seniorenbund】
+L4139:       * 【733†Veranstaltungsbewilligung】
+L4140:     * 【734†Politik】
+L4141:       * 【735†Wahlen und Abstimmungen】
+L4142:         * 【736†Abstimmungsergebnisse】
+L4143:         * 【737†Briefwahl】
+L4144:         * 【738†Das "Doppelte Ja"】
+L4145:         * 【739†Das Referendum】
+L4146:         * 【740†Die Volksinitiative】
+L4147:         * 【744†Wahlergebnisse】
+L4148:         * 【748†Wahl- und Abstimmungstermine】
+L4149:         * 【749†Statistiken】
+L4150:     * 【750†Kinder- und Jugendarbeit】
+L4151:       * 【751†Wie wird Kinder- und Jugendarbeit gefördert?】
+L4152:       * 【752†Jugendleiterurlaub】
+L4153:       * 【753†Was bietet die Jugendarbeit?】
+L4154:       * 【754†Lust auf Europa?】
+L4155:     * 【755†Chancengleichheit】
+L4156:       * 【756†Veranstaltungen und Projekte Chancengleichheit】
+L4157:         * 【757†Chancengleichheitspreis】
+L4158:       * 【758†Anlauf- und Beratungsstellen】
+L4159:       * 【759†Barrierefreier Webzugang】
+L4160:       * 【760†Publikationen Chancengleichheit】
+L4161:       * 【761†Sprachliche Gleichstellung】
+L4162:     * 【762†Natur】
+L4163:       * 【763†Naturkundliche Ausstellungen im Landesmuseum】
+L4164:       * 【764†Naturkundliche Sammlung】
+L4165:   * 【765†Freizeit, Umwelt & Tierhaltung】
+L4166:     * 【766†Abfallentsorgung】
+L4167:       * 【767†Littering】
+L4168:       * 【768†Siedlungsabfälle】
+L4169:       * 【769†Liechtensteiner Abfallplanung 2070】
+L4170:     * 【770†Biologische Sicherheit】
+L4171:     * 【771†Chemikalien】
+L4172:     * 【772†Energienutzung】
+L4173:     * 【773†Jagd und Wildtiere】
+L4174:       * 【774†Jagdkarten】
+L4175:       * 【775†Jagdplanung und Wildtierschutz】
+L4176:       * 【776†Jagdausbildung, Jägerin/Jäger werden】
+L4177:       * 【777†Jagdwaffen】
+L4178:       * 【778†Erhebung Wildbestand】
+L4179:       * 【779†Bär】
+L4180:       * 【780†Biber】
+L4181:       * 【781†Luchs】
+L4182:       * 【782†Wolf】
+L4183:       * 【783†Fischotter】
+L4184:       * 【784†Wildkatze】
+L4185:       * 【785†Rehkitzrettung】
+L4186:       * 【786†Unterlagen Vernehmlassung Wald und Wild】
+L4187:       * 【787†Videoüberwachung von Wildtieren】
+L4188:     * 【788†Landwirtschaft】
+L4189:       * 【789†Alpen】
+L4190:       * 【790†Betriebskontrollen】
+L4191:       * 【791†Biodiversität in der Landwirtschaft】
+L4192:       * 【792†Bodenschutz】
+L4193:       * 【793†Förderungen】
+L4194:       * 【794†Landwirtschaftlicher Umweltschutz】
+L4195:       * 【795†Landwirtschaftliche Organisationen】
+L4196:       * 【796†Paralandwirtschaft / landwirtschaftsnahe Tätigkeiten】
+L4197:       * 【797†Pflanzenschutz】
+L4198:       * 【798†Herdenschutz】
+L4199:     * 【799†Landesforstbetrieb】
+L4200:     * 【800†Lärm, Schall, Laser, Strahlung】
+L4201:       * 【801†Lärm】
+L4202:       * 【802†Schall und Laser】
+L4203:       * 【803†Strahlung】
+L4204:         * 【804†Elektrosmog】
+L4205:         * 【805†Radon】
+L4206:     * 【806†Wald, Natur, Landschaft, Klima】
+L4207:       * 【807†Berggebietssanierung (BGS)】
+L4208:       * 【808†Bewilligungen】
+L4209:       * 【809†Klimaschutz】
+L4210:       * 【810†Naturkundliche Ausstellungen im Landesmuseum】
+L4211:       * 【811†Naturkundliche Sammlung】
+L4212:       * 【812†Neobiota】
+L4213:       * 【813†Schutzgebiete und -Objekte】
+L4214:       * 【814†Wanderwege】
+L4215:       * 【815†Wald und Holz】
+L4216:         * 【816†Bewilligungen und Erlasse】
+L4217:         * 【817†Holz als Baustoff und Energieträger】
+L4218:         * 【818†Naturschutz im Wald】
+L4219:         * 【819†Waldberufe】
+L4220:       * 【820†Waldstrategie】
+L4221:       * 【821†Projekt Blumenwiese】
+L4222:     * 【822†Wasser / Gewässerökologie】
+L4223:       * 【823†Abwasser】
+L4224:       * 【824†Baustellenabwasser】
+L4225:       * 【825†Fliessgewässer】
+L4226:       * 【826†Fischerei】
+L4227:       * 【827†Gewässer als Lebensraum】
+L4228:       * 【828†Grundwasser】
+L4229:       * 【829†Tankanlagen】
+L4230:       * 【830†Trinkwassergewinnung】
+L4231:     * 【831†Heimtiere und Wildtiere】
+L4232:       * 【832†Vogelgrippe/Aviäre Influenza】
+L4233:       * 【833†Heimtiere und Wildtiere】
+L4234:       * 【834†Nutztiere und Pferde】
+L4235:       * 【835†Registrierung von Tieren und Tierhaltungen】
+L4236:       * 【836†Bewilligungspflichtige Haltung von Tieren】
+L4237:       * 【837†Korrekter Umgang mit Tieren, Tierschutz】
+L4238:       * 【838†Tierschutzmeldung an das ALKVW】
+L4239:       * 【839†Reisen mit Heimtieren】
+L4240:       * 【840†Tiertransporte】
+L4241:       * 【841†Import und Export von Tieren】
+L4242:       * 【842†Entsorgung Tierkörper】
+L4243:       * 【843†Tierschutzbeauftragter】
+L4244:     * 【844†Lebensmittel, Verbraucher(schutz), Konsumenten(schutz)】
+L4245:       * 【845†Pilze sammeln, Pilzkontrolle, Pilzschutzgebiete】
+L4246:       * 【846†Lebensmittel】
+L4247:       * 【847†Gebrauchsgegenstände】
+L4248:       * 【848†Kennzeichnung und Information】
+L4249:       * 【849†Lebensmittelsicherheit】
+L4250:     * 【850†Sport】
+L4251:       * 【851†Jugend und Sport】
+L4252:       * 【852†Sportangebot】
+L4253:         * 【853†Sportimpuls 30+】
+L4254:         * 【854†Halle für Alle】
+L4255:         * 【855†Weitere Sportmöglichkeiten】
+L4256:         * 【856†Special Olympic】
+L4257:         * 【857†Kondition für ALLE - Winter】
+L4258:       * 【858†1418 Coach】
+L4259:         * 【859†Dokumente für ausgebildete 1418 Coach】
+L4260:       * 【860†Leihmaterial】
+L4261:       * 【861†Schulsport】
+L4262:       * 【862†Sportanlagen und Landesturnhalle】
+L4263:       * 【863†Jugendleiterurlaub】
+L4264:       * 【864†Jugendsportlager】
+L4265:       * 【865†Sportveranstaltungen】
+L4266:       * 【866†Koordinationsbeitrag für Lehrbetriebe und Leistungssport】
+L4267:       * 【867†Lokales Sport- und Bewegungsnetz】
+L4268:       * 【868†Prämien und Auszeichnungen】
+L4269:       * 【869†Berichte und Konzepte】
+L4270:     * 【870†Umweltbelastung】
+L4271:       * 【871†Altlasten】
+L4272:       * 【872†Lichtverschmutzung】
+L4273:       * 【873†Luftreinhaltung】
+L4274:         * 【874†Baustellen】
+L4275:         * 【875†Gaststätten】
+L4276:         * 【876†Feuerungskontrolle】
+L4277:         * 【877†Massnahmenplan】
+L4278:         * 【878†Luftqualität】
+L4279:   * 【879†Notfall & Katastrophenfall】
+L4280:     * 【880†Soziale und finanzielle Hilfe】
+L4281:       * 【881†Liechtensteinisches Soziallexikon】
+L4282:       * 【882†Schulbildung Stipendien / Darlehen】
+L4283:       * 【883†Sozialberatung】
+L4284:       * 【884†Wirtschaftliche Sozialhilfe】
+L4285:       * 【885†Psychiatrisch-Psychologische Hilfe】
+L4286:       * 【886†Suchtberatung】
+L4287:     * 【887†Katastrophen und Notfall】
+L4288:       * 【888†Warnung und Alamierung】
+L4289:       * 【889†Feuerwehr】
+L4290:         * 【890†Feuerwehren】
+L4291:       * 【891†Rettungsorganisationen】
+L4292:       * 【892†Führungsstäbe】
+L4293:       * 【893†Wirtschaftliche Landesversorgung】
+L4294:       * 【894†Naturgefahren】
+L4295:         * 【895†Gefahrenkarte】
+L4296:         * 【896†Schutzbauten】
+L4297:         * 【897†Notfallplan】
+L4298:     * 【900†Unterstützung für Betroffene von Straftaten (Opferhilfe)】
+L4299:       * 【901†Warum Opferhilfe?】
+L4300:       * 【902†Wer hat Anspruch?】
+L4301:       * 【903†Angebot】
+L4302:       * 【904†Formen der Opferhilfe】
+L4303:       * 【905†Finanzielle Leistungen】
+L4304:       * 【906†Schadenersatz】
+L4305:       * 【907†Hilfe bei Straftaten im Ausland】
+L4306:       * 【908†Häusliche Gewalt】
+L4307:       * 【909†Sexuelle Belästigung】
+L4308:       * 【910†Stalking】
+L4309:     * 【911†Selbsthilfe】
+L4310:       * 【912†Kontaktstelle für Selbsthilfegruppen】
+L4311:       * 【913†Selbsthilfegruppen Liechtenstein】
+L4312:         * 【914†Adipositas】
+L4313:         * 【915†Alkohol (Angehörige)】
+L4314:         * 【916†Demenz】
+L4315:         * 【917†Depression】
+L4316:         * 【918†Eltern mit AD(H)S-Kindern】
+L4317:         * 【919†Familien von Kindern mit Behinderung】
+L4318:         * 【920†Internetbetrug】
+L4319:         * 【921†ME/CFS】
+L4320:         * 【922†Krebs】
+L4321:         * 【923†Parkinson】
+L4322:         * 【924†Trauer nach Suizid】
+L4323:         * 【925†Trialog】
+L4324:       * 【926†Selbsthilfegruppen im Rheintal】
+L4325:         * 【927†ADHS / Neurodivergenz】
+L4326:         * 【928†Anonyme Alkoholiker】
+L4327:         * 【929†Anonyme Spieler】
+L4328:         * 【930†Angst】
+L4329:         * 【931†Autismus】
+L4330:         * 【932†Diabetes】
+L4331:         * 【933†Endometriose】
+L4332:         * 【934†Hirnverletzungen】
+L4333:         * 【935†Multiple Sklerose】
+L4334:         * 【936†Nierenerkrankung】
+L4335:         * 【937†Pflegeeltern】
+L4336:         * 【938†Psychische Gewalt】
+L4337:         * 【939†Rheuma】
+L4338:         * 【940†Trauer】
+L4339:       * 【941†Selbsthilfegruppen im Aufbau】
+L4340:         * 【942†Nach Schwangerschaftsabbruch】
+L4341:     * 【943†Notfall im Ausland】
+L4342:       * 【944†EDA-Helpline】
+L4343:       * 【945†Registrierung von Auslandsreisen】
+L4344:       * 【946†Konsularische Dienstleistungen】
+L4345:   * 【947†Sterbefall & Nachlass】
+L4346:     * 【948†Erbvorbezug】
+L4347:       * 【949†Erwerb im Rahmen einer Verlassenschaft】
+L4348:     * 【950†Sterbefall】
+L4349:       * 【951†Beerdigung】
+L4350:       * 【952†Dokumente für Beerdigung im Ausland】
+L4351:       * 【953†Dokumente für die Überführung eines Leichnams von Feldkirch (A) nach Liechtenstein】
+L4352:       * 【954†Erhältliche Dokumente】
+L4353:       * 【955†Todesfall im Ausland】
+L4354:       * 【956†Todesfall im Fürstentum Liechtenstein】
+L4355: # Prämien und Beiträge
+L4356: 
+L4357: Die Krankenversicherung wird durch Prämien der Versicherten, Beiträge der Arbeitgeber sowie durch staatliche Mittel und die Kostenbeteiligung der Versicherten finanziert.
+L4358: Auf dieser Seite finden Sie die geltenden Prämien und Beiträge zur obligatorischen Krankenversicherung.
+L4359: 
+L4360: * * *
+L4361: 
+L4362: ## Prämien der obligatorischen Krankenpflegeversicherung
+L4363: 
+L4364: Die Prämien der obligatorischen Krankenpflegeversicherunh richten sich nach dem Alter der versicherten Person.
+L4365: ## Kinder
+L4366: 
+L4367: Kinder sind in der obligatorischen Krankenpflegeversicherung von der Prämienpflicht befreit.
+L4368: 
+L4369: ## Jugendliche
+L4370: 
+L4371: Für Jugendliche vom vollendeten 16. bis zum vollendeten 20. Altersjahr legen die Krankenkassen separate Prämien fest. Diese dürfen höchstens 50 % der Prämien für Erwachsene betragen. Diese Einstufung in die nächste Altersgruppe erfolgt jeweils am 1. Januar des darauffolgenden Kalenderjahres.
+L4372: ## Erwachsene
+L4373: 
+L4374: Erwachsene Versicherte bezahlen eine moantliche Prämie (Kopfprämie). Die Höhe der Prämien wird unter Einhaltung der gesetzten Vorgaben von den einzelnen Krankenkassen festgelegt.
+L4375: 
+L4376: Zur Orientierung über die Prämien der einzelnen Krankenkassen stehen folgende Übersichten zur Verfügung:
+L4377: 
+L4378:   * 【3351†Prämienübersicht 2027 Externer Link】
+L4379:   * 【3352†Prämienübersicht 2026 Externer Link】
+L4380:   * 【3353†Prämienübersicht 2025 Externer Link】
+L4381: ## Arbeitgeberbeitrag der Krankenpflegeversicherung
+L4382: 
+L4383: Arbeitgeber leisten für ihre Arbeitnehmer einen monatlichen Arbeitgeberbeitrag zur Krankenpflegeversicherung.
+L4384: 
+L4385: Der Arbeitgeberbeitrag:
+L4386: 
+L4387:   * wird vom Amt für Gesundheit festgelegt,
+L4388:   * richtet sich nach dem Landesdurchschnitt der Prämien in der obligatorischen Krankenpflegeversicherung,
+L4389:   * gilt einheitlich für alle anerkannten Krankenkassen.
+L4390: #### Höhe des Arbeitgeberbeitrags (ab 1. Januar 2026)
+L4391: 
+L4392:   * CHF 180.50 für Erwachsene
+L4393:   * CHF 90.25 für Jugendliche (vollendetes 16. bis vollendetes 20. Altersjahr)
+L4394: 
+L4395: Bei Teilzeitbeschäftigten reduziert sich der Arbeitgeberbeitrag entsprechend dem Beschäftigungsgrad.
+L4396: Die Einstufung in eine neue Altersgruppe erfolgt jeweils am 1. Januar des folgenden Kalenderjahres.
+L4397: ## Höhe des Arbeitgeberbeitrags (ab 1. Januar 2027)
+L4398: 
+L4399:   * CHF 184.00 für Erwachsene
+L4400:   * CHF 92.00 für Jugendliche (vollendetes 16. bis vollendetes 20. Altersjahr)
+L4401: 
+L4402: #### Amtliche Kundmachung zum Arbeitgeberbeitrag
+L4403: 
+L4404: Die Höhe des Arbeitgeberbeitrags wird jährlich amtlich kundgemacht und im eAmtsblatt veröffentlicht.
+L4405: 
+L4406:   * 【3354†Kundmachung Arbeitgeberbeitrag 2026†apps.llv.li】
+L4407:   * 【3355†Kundmachung Arbeitgeberbeitrag 2025†apps.llv.li】
+L4408: 
+L4409: Diese Kundmachungen sind verbindlich und gelten für alle Arbeitgeber.
+L4410: ## Weitere Prämien und Übersichten
+L4411: ## Prämien der obligatorischen Krankengeldversicherung
+L4412: 
+L4413: Für Arbeitnehmer besteht zusätzlich eine obligatorische Krankengeldversicherung.
+L4414: 
+L4415: Die Prämien gelten für Arbeitnehmer über 15 Jahre, die in Liechtenstein für einen Arbeitgeber mit Sitz oder Niederlassung in Liechtenstein tätig sind.
+L4416: Die Beiträge werden je zur Hälfte vom Arbeitgeber und vom Arbeitnehmer getragen.
+L4417: 
+L4418: Link Website: https://www.llv.li/de/privatpersonen/gesundheit-vorsorge-und-pflege/krankenversicherung/praemien-beitraege
+L4419: # Suche
+L4420: 
+L4421: Suchfenster geöffnet. Drücken Sie die ESC Taste um Fenster zu schliessen.
+L4422: 
+L4423: Suchfenster geöffnet. Drücken Sie die ESC Taste um Fenster zu schliessen.
+L4424: 
+L4425: Suchfenster geöffnet. Drücken Sie die ESC Taste um Fenster zu schliessen.
+L4426: 
+L4427: Suchfeld [Input] Suche starten.
+L4428: 
+L4429: Filter
+L4430: 
+L4431:   *   * ## Filtermöglichkeiten
+L4432: 
+L4433: Filter zurücksetzen
+L4434: 
+L4435:   * Inhaltstyp
+L4436: 
+L4437: Inhalte () Dokumente () Personen () News () Medienmitteilungen () Events () Publikationen () Zahl-Tag () Opendata ()
+L4438: 
+L4439: 【3356†Zu den Suchresultaten springen】
+L4440: [Button: Filter anwenden ]
+L4441: 
+L4442:   *   *   *   *   * ### Für Ihre Suchanfrage konnten keine Ergebnisse gefunden werden.
+L4443: 
+L4444: Im Folgenden finden Sie ähnliche oder themenverwandte Inhalte, die für Sie von Interesse sein könnten.Wenn Sie nicht fündig werden, nutzen Sie bitte die Navigation.
+L4445: 
+L4446: Suchfeld [Input] Suche starten.
+L4447: 
+L4448: Privatperson / Juristische Person [Select]
+L4449: 
+L4450: Zuständiges Amt [Select]
+L4451: 
+L4452: Thema wählen [Select]
+L4453: 
+L4454: Inhaltstyp wählen [Select]
+L4455: 
+L4456: Filter zurücksetzen
+L4457: 
+L4458: 0 Ergebnisse
+L4459: 
+L4460: Anwendungen
+L4461: 
+L4462: Mehr laden
+L4463: 
+L4464: Formulare
+L4465: Mehr laden
+L4466: 
+L4467: Dateien
+L4468: 
+L4469: Mehr laden

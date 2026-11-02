@@ -1,0 +1,108 @@
+[
+  {
+    "id": "es-vat-return.md-prior-url-order",
+    "pass": true,
+    "old_occurrences": 168
+  },
+  {
+    "id": "es-vat-return.md-h2-preserved",
+    "pass": true
+  },
+  {
+    "id": "es-vat-return.md-oa-blocks-preserved",
+    "pass": true
+  },
+  {
+    "id": "es-vat-return.md-cta-preserved",
+    "pass": true
+  },
+  {
+    "id": "spain-vat-return.md-prior-url-order",
+    "pass": true,
+    "old_occurrences": 66
+  },
+  {
+    "id": "spain-vat-return.md-h2-preserved",
+    "pass": true
+  },
+  {
+    "id": "spain-vat-return.md-oa-blocks-preserved",
+    "pass": true
+  },
+  {
+    "id": "spain-vat-return.md-cta-preserved",
+    "pass": true
+  },
+  {
+    "id": "es-estimated-tax.md-prior-url-order",
+    "pass": true,
+    "old_occurrences": 77
+  },
+  {
+    "id": "es-estimated-tax.md-h2-preserved",
+    "pass": true
+  },
+  {
+    "id": "es-estimated-tax.md-oa-blocks-preserved",
+    "pass": true
+  },
+  {
+    "id": "es-estimated-tax.md-cta-preserved",
+    "pass": true
+  },
+  {
+    "id": "es-income-tax.md-prior-url-order",
+    "pass": true,
+    "old_occurrences": 237
+  },
+  {
+    "id": "es-income-tax.md-h2-preserved",
+    "pass": true
+  },
+  {
+    "id": "es-income-tax.md-oa-blocks-preserved",
+    "pass": true
+  },
+  {
+    "id": "es-income-tax.md-cta-preserved",
+    "pass": true
+  },
+  {
+    "id": "README.md-prior-url-order",
+    "pass": true,
+    "old_occurrences": 35
+  },
+  {
+    "id": "limits-200000,100000,220000",
+    "pass": true,
+    "actual": true
+  },
+  {
+    "id": "limits-250000,125000,250000",
+    "pass": true,
+    "actual": true
+  },
+  {
+    "id": "limits-250000.01,100000,220000",
+    "pass": true,
+    "actual": false
+  },
+  {
+    "id": "limits-200000,125000.01,220000",
+    "pass": true,
+    "actual": false
+  },
+  {
+    "id": "limits-200000,100000,250000.01",
+    "pass": true,
+    "actual": false
+  },
+  {
+    "id": "annualisation",
+    "pass": true
+  },
+  {
+    "id": "family-receipt-aggregation",
+    "pass": true
+  }
+]

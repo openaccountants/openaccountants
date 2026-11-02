@@ -1,0 +1,22 @@
+{
+  "original_candidate": "ea0fe54f95ca0059c989faabc9195a12a2497208",
+  "before_sha256": {
+    "skills/guinea/gn-property-tax.md": "15e9a24eca2a9be669989264340f0be6b4224b7cddf513056de9d99c8a101204",
+    "skills/guinea/gn-vat-invoice-control.md": "62923d2a2ff3b68e4e9f7f6dbb0c009002211f62e2f85fc08eb994f57ba31eb1",
+    "evidence/ledgers/gn-property-tax.md": "a5991d06c9a5438ef111636232bdfd21ff4160cff33940d6390aa6b44da59fd4",
+    "evidence/ledgers/gn-vat-invoice-control.md": "c12da39ca214a6c4e126b066d608e085bc48708d242f8ed25f18a90162189cb4"
+  },
+  "after_sha256": {
+    "skills/guinea/gn-property-tax.md": "38945a4cc0390f40310f63d2c737dfd6c09c0876b5476fa1f4bf742b4f9a67c4",
+    "skills/guinea/gn-vat-invoice-control.md": "4d3008a143a2053770005d08becf7f26f838733462058c99ff7e73c3171437c2",
+    "evidence/ledgers/gn-property-tax.md": "5d802f827c99990f666cf96410f7ce8bbd1ede90ace862c3e9c1ae7f4165e93e",
+    "evidence/ledgers/gn-vat-invoice-control.md": "c2cdbad33438bf9a786176df9e8cd9815394d38e401483ad77b89e92bc4b23e0"
+  },
+  "repairs": [
+    "Explicit governing-version prerequisite in both scopes and first operational step, repeated in intake",
+    "VAT example governing-version assumption",
+    "Descriptions brought into80\u2013150wordstandard;versions1.1",
+    "Removed newly added platform-owned trust_label from new Guides as required by template"
+  ],
+  "unchanged": "All25legalledgerrows,4oa blocks,6legacyGuidebytesandplatformCTA,initialsource/candidate/privatechecks/oldmap/initialreviewevidence."
+}

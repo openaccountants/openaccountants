@@ -1,0 +1,61 @@
+{
+  "source_checkpoint": "59af84aaae0dab054ffc6555a139213d234ecffa",
+  "scope": "New foral IRNR whole-Guide review and narrow residentPIT/CIT gain-method deltas; historical whole-pack review remains at its own checkpoint. Uncommitted regional intersection changes are excluded.",
+  "independent_accountant_attestation": false,
+  "reports": {
+    "foral-irnr-independent-review.md": {
+      "original_sha256": "21606306a0953c9fb1966b4593893caec4869f30811454b0415b981c1c510c2f",
+      "public_sha256": "21606306a0953c9fb1966b4593893caec4869f30811454b0415b981c1c510c2f",
+      "transformation": "absolute local paths redacted only"
+    },
+    "foral-gain-sibling-independent-review.md": {
+      "original_sha256": "3fb22b3fbd74437f2440601b03ac38c74436ae197a369700763c085fa32e18d1",
+      "public_sha256": "3fb22b3fbd74437f2440601b03ac38c74436ae197a369700763c085fa32e18d1",
+      "transformation": "absolute local paths redacted only"
+    }
+  },
+  "source_hashes": {
+    "README.md": "7d4aced0a361fd3e07e4b0097ff0cc211ab130e0ab45d5a3a859de6d23bb86bb",
+    "es-autonomous-worker.md": "c25c3364f8167e7bd230d284084e553bc0c7ad28b0d5ead4961d959f142b9d53",
+    "es-beckham.md": "b028e02fff942c0a20c5e649642ab1092bdb8d1b64c552c95eac3a92366d4e2e",
+    "es-canary-islands-igic.md": "1c3bac3828a49766b539a5384d1b0ce0dee0069042eb4211b091597c55fb139a",
+    "es-capital-gains.md": "e4c52276b1edbcb2074e7104f0847dc8137cfabb12cfd7964731593c1e0a3821",
+    "es-ceuta-melilla-ipsi.md": "ce90782df8ee8db68cfe46bbedbb67b03ad65204a770ed6c69a674beb6e123e9",
+    "es-corporate-tax.md": "d85dec4a9ceaafc05f41bbc320159bcb9a284ef9fbbaf669eeddbd915c25ddce",
+    "es-estimated-tax.md": "087e86703a885ddaf0c931261085b42a3b82f86e6bad903d46f40cc60ba83f94",
+    "es-foral-corporate-tax.md": "dcbfeb3202511f58c5d5ca416e8e09bf55379d4d8dfc1c413abc1f0cc99c6e5f",
+    "es-foral-income-tax.md": "e018cb60cfd56edf69e547e7e254b6b08c5bdd182cbcad3a442a5aa5f8dd6d19",
+    "es-foral-non-resident-tax.md": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+    "es-foral-payroll.md": "9868c61bb5c8eeb52912fff9a5b044db697c23a0d43abb6e462896a68844c086",
+    "es-income-tax.md": "1d9320f9ed602e68fc30865b2b4cf1b1091564e6f765c40fd5fe5175907caab1",
+    "es-irpf-deductions.md": "3c27368f02bf904ae0c7439668ab328a235053319b2a4264634d031b1344657a",
+    "es-modelo-111.md": "a4785209c71ab650b1575554e31046217ee7d6aeba5a4758040b76316c3bc66d",
+    "es-non-resident-income-tax-irnr-and.md": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+    "es-rental-income.md": "756a0620a1e550a613d3c91301c7f4ad1252f9064ebf1484b0b690984f9fac0b",
+    "es-social-contributions.md": "fade74809d49c4a0a33f401b4d234a91c308f9edcc3f022bdece8fabb72070f6",
+    "es-vat-return.md": "3d90335b36ddd0e532441174618bd48d415ae0141cbccf2fc24498ed2c5ce4b2",
+    "references.md": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+    "spain-bookkeeping.md": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+    "spain-crypto-tax.md": "9533a3e6d989df94227b38aa3d5d0c9878f9ed3896645962ff8bff78991b0368",
+    "spain-einvoice.md": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+    "spain-financial-statements.md": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+    "spain-formation.md": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+    "spain-payroll.md": "7691a3bbb3064e661dbc23842f2538efe0f20e5819807714de6f14acf79968d8",
+    "spain-tax-optimization.md": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+    "spain-transfer-pricing.md": "c3d09ddbacadeb67e7ac394d7d0fcf58bcb71504576b3ce88aaf1b379b971f40",
+    "spain-vat-return.md": "4cc5aa1ff66679a9f74e1d611e5eac528c416c94619c1205775879186fdb915c"
+  },
+  "receipt_file": "foral-irnr-source-receipts.json",
+  "receipt_sha256": "c69999e25764286760b73809c0a69b80795fa566a5a6407e411a409bf0228ff8",
+  "successful_body_identities": 52,
+  "checks": {
+    "new_guide_independent_core_controls": 57,
+    "new_guide_independent_addendum_controls": 263,
+    "sibling_independent_delta_controls": 39,
+    "country_examples": 44,
+    "expected_outputs": 296,
+    "full_source_validation": "2267source/6122generated PASS,3preexistingwarninggroups",
+    "strict_sync": "22sourceGuides PASS,zeroerrors/warnings",
+    "preservation": "22originalpaths,protectedmetadata/fullCTAtails/referencespreserved"
+  }
+}

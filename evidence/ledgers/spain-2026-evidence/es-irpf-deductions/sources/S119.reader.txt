@@ -1,0 +1,200 @@
+
+
+
+	
+    
+	
+
+Agencia Tributaria: Por nacimiento o adopción de hijos
+ 
+
+
+	
+[[ID:body]]
+
+		
+[[ID:AEAT_header]]
+
+    
+   	
+	Saltar al contenido principal
+	
+	  	  		
+		
+		
+	   	
+[[ID:topIzquierda]]
+Logotipo del Gobierno de EspañaLogotipo Organismo
+
+	  	
+	
+	
+	
+    
+   	
+[[ID:menuPrincipal]]
+Menú móvil
+[[ID:aeat_menuPrincipal]]
+
+Menu
+
+
+
+	           
+
+Inicio
+
+Ayuda
+
+Manuales, vídeos y folletos
+
+Manuales prácticos
+
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+Comunidad Autónoma de Galicia
+
+
+
+			
+
+				
+					
+		        	Índice
+		      	
+
+[[ID:manual-initial-page]]
+Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas
+
+[[ID:indice-modal]]
+
+
+
+[[ID:acc-main]]
+
+					
+[[ID:js-nombre-canal]]
+
+Por nacimiento o adopción de hijos
+
+Normativa: Art. 5. Dos Texto Refundido de las disposiciones legales de la Comunidad Autónoma de Galicia en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 1/2011, de 28 de julio
+
+Cuantías y requisitos para la aplicación de la deducción
+
+Por cada hijo nacido o adoptado en el período impositivo que conviva con el contribuyente a la fecha de devengo del impuesto (normalmente, el 31 de diciembre), este podrá deducir de la cuota íntegra autonómica la siguiente cuantía, en función de la base imponible total menos el mínimo personal y familiar del contribuyente:
+
+(Base imponible general + Base imponible del ahorro) 
+ - (Mínimo personal y familiar)
+Importe de la deducción
+
+Menor o igual a 22.000 euros
+360 euros el 1er hijo
+
+1.200 euros el 2do hijo
+
+2.400 euros el 3er hijo y ss.
+
+Mayor o igual a 22.000,01 euros
+300 euros por hijo
+
+360 euros por hijo en caso de parto múltiple
+
+Nota al cuadro: la base imponible total menos el mínimo personal y familiar se determina sumando los importes de la base imponible general, casilla [0435] de la declaración, y de la base imponible del ahorro, casilla [0460] de la declaración, y minorando dicho resultado en la cuantía del mínimo personal y familiar, casilla [0520] de la declaración.
+
+Para determinar el número de orden de los hijos, tanto en declaración conjunta como individual se tendrán en cuenta los mismos criterios que para la aplicación del mínimo por descendientes.
+
+Incremento de la deducción: Las cuantías anteriores se incrementarán en un 20 por 100 para los contribuyentes residentes en municipios de menos de 5.000 habitantes y en los resultantes de procedimientos de fusión o incorporación.
+
+Aplicación de la deducción en los dos períodos impositivos siguientes al de nacimiento o adopción.
+
+La deducción se extenderá a los dos períodos impositivos siguientes al de nacimiento o adopción, siempre que el hijo nacido o adoptado conviva con el contribuyente a la fecha de devengo del impuesto que corresponda a cada uno de ellos, con arreglo a las siguientes cuantías y límites de renta:
+
+(Base imponible general + Base imponible del ahorro)
+− (Mínimo personal y familiar)
+Importe de la deducción
+
+Igual o menor a 22.000 euros
+360 euros el 1er hijo
+
+1.200 euros el 2do hijo
+
+2.400 euros el 3er hijo y ss.
+
+Entre 22.000,01 y 31.000 euros
+300 euros por hijo
+
+Más de 31.000 euros
+0 euros
+
+Para determinar el número de orden de los hijos, tanto en declaración conjunta como individual se tendrán en cuenta los mismos criterios que para la aplicación del mínimo por descendientes.
+
+Las cuantías fijadas para esta deducción en los puntos anteriores se duplicarán en caso de que el nacido o adoptado tenga reconocido un grado de discapacidad igual o superior al 33 por 100.
+
+El grado de discapacidad deberá estar referido a la fecha de devengo del impuesto (normalmente, el 31 de diciembre) y reconocido mediante resolución expedida por el órgano competente en materia de servicios sociales.
+
+También se considerará acreditado el grado y la condición de persona con discapacidad en los supuestos que establece el artículo 3.Tres del Texto Refundido de las disposiciones legales de la Comunidad Autónoma de Galicia en materia de tributos cedidos por el Estado:
+
+-En particular, se considerará acreditado un grado de discapacidad igual o superior al 33 por 100 en el caso de los pensionistas de la Seguridad Social que tengan reconocida una pensión de incapacidad permanente total, absoluta o gran invalidez y en el caso de los pensionistas de clases pasivas que tengan reconocida una pensión de jubilación o retiro por incapacidad permanente para el servicio o inutilidad.
+
+-Igualmente, se considerará acreditado un grado de discapacidad igual o superior al 65 por 100 cuando se trate de personas cuya incapacidad sea declarada judicialmente, aunque no alcance dicho grado, así como en los casos de dependencia severa y gran dependencia, siempre que estas últimas situaciones fuesen reconocidas por el órgano competente, de acuerdo con lo establecido en el artículo 28 de la Ley 39/2006, de 14 de diciembre, de promoción de la autonomía personal y atención a las personas en situación de dependencia.
+
+Téngase en cuenta que, a partir de la entrada en vigor de la Ley 8/2021 de reforma del Código Civil, las referencias realizadas a la incapacitación judicial, se extienden a las resoluciones judiciales en las que se establece la curatela representativa de las personas con discapacidad.
+
+Cuando, en el período impositivo del nacimiento o adopción o en los dos siguientes, los hijos nacidos o adoptados convivan con ambos progenitores, la deducción que corresponda se practicará por mitad en la declaración de cada uno de ellos.
+
+Aplicación en 2025 de la deducción por hijos nacidos en 2023 o 2024
+
+Los contribuyentes que tuvieron derecho a la deducción por nacimiento o adopción de hijos en los ejercicios 2023 o 2024 pueden practicar esta deducción en el ejercicio 2025 siempre que el hijo o hijos que originaron el derecho a la deducción en aquellos ejercicios convivan con el contribuyente a la fecha de devengo del impuesto (normalmente, el 31 de diciembre).
+
+El importe, requisitos y límites de renta para la aplicación de la deducción por los hijos nacidos o adoptados en los ejercicios 2023 o 2024 son los anteriormente comentados.
+
+[[ID:htmlToPdfModal]]
+
+[[ID:htmlToPdfModalTitle]]
+
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+
+Seleccione la información que desee incluir en el PDF:
+
+[[ID:type-pdf-selector]]
+
+[[ID:pdf-Apartado]]
+Página actual
+
+[[ID:pdf-SubApartados]]
+Apartado actual y subapartados
+
+[[ID:pdf-Todo]]
+Todo el documento
+
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+[[ID:btn-continue-to-pdf]]
+Continuar
+
+   		 
+  		
+  		
+Accesibilidad
+[[ID:js-pie-fecha-social]]
+
+[[ID:last-update]]
+
+Página actualizada: 17/marzo/2026
+ 
+	
+	
+   
+   
+   
+   
+   
+   
+   
+ 
+
+
+
+

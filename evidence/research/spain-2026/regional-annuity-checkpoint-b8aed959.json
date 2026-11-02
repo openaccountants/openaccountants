@@ -1,0 +1,39 @@
+{
+  "source_checkpoint": "b8aed959",
+  "scope": "Exact two-Guide reviewed delta; all other historical reviews remain pinned to their own versions. New foral IRNR Guide is outside this checkpoint.",
+  "independent_accountant_attestation": false,
+  "source_hashes": {
+    "es-income-tax.md": "1d9320f9ed602e68fc30865b2b4cf1b1091564e6f765c40fd5fe5175907caab1",
+    "es-irpf-deductions.md": "3c27368f02bf904ae0c7439668ab328a235053319b2a4264634d031b1344657a"
+  },
+  "reports": {
+    "regional-catalan-rural-independent-review.md": {
+      "original_sha256": "ed428baa0ca7abcf017c94c0d4b2ceebd43e0d14657bf5b4153f526a85e3fbe9",
+      "public_sha256": "ed428baa0ca7abcf017c94c0d4b2ceebd43e0d14657bf5b4153f526a85e3fbe9",
+      "transformation": "local absolute path redaction only"
+    },
+    "regional-july-credits-independent-review.md": {
+      "original_sha256": "83556d17de2c654ad6024c983fe6bd642dcea43449ffff8d813afd67c50a5928",
+      "public_sha256": "83556d17de2c654ad6024c983fe6bd642dcea43449ffff8d813afd67c50a5928",
+      "transformation": "local absolute path redaction only"
+    },
+    "regional-valencia-independent-review.md": {
+      "original_sha256": "f8d7b8f4309ed1a4bebd15b803acb8b034a4d1be99a8870209f2af3f74488d7f",
+      "public_sha256": "f8d7b8f4309ed1a4bebd15b803acb8b034a4d1be99a8870209f2af3f74488d7f",
+      "transformation": "local absolute path redaction only"
+    },
+    "annuity-progression-independent-review.md": {
+      "original_sha256": "dfe35bf2c8403f09e3dc5980cc65efa3a465e21c3f826625a1137a41c30b30be",
+      "public_sha256": "dfe35bf2c8403f09e3dc5980cc65efa3a465e21c3f826625a1137a41c30b30be",
+      "transformation": "local absolute path redaction only"
+    },
+    "annuity-lower-base-unresolved-analysis.md": {
+      "original_sha256": "389c67f9c0f2ba0d8b5211bbec15a4950282dc462644044fd80c160a2ac726d7",
+      "public_sha256": "389c67f9c0f2ba0d8b5211bbec15a4950282dc462644044fd80c160a2ac726d7",
+      "transformation": "local absolute path redaction only"
+    }
+  },
+  "receipt_file": "regional-annuity-source-receipts.json",
+  "successful_body_identities": 42,
+  "receipt_sha256": "4ef754cc53741e6dde54604c674c62aaa9da7be2e82ea4c3b57a92c64cc302ba"
+}

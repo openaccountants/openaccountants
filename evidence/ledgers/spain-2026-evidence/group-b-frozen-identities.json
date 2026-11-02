@@ -1,0 +1,216 @@
+[
+  {
+    "slug": "es-corporate-tax",
+    "path": "skills/international/spain/es-corporate-tax.md",
+    "bytes": 43212,
+    "sha256": "66f9dff1c027ddaf6f9ebe5e7502bbd135ef1c33b45ff7fb0efd73cfa851c6c4",
+    "prior_main_exists": true,
+    "prior_main_sha256": "7dfdf2ef12154f4950d22ec78bf63629d81f30eb16f512afc4ce31a63ed0bbfb",
+    "H2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources",
+      "## Talk to a verified accountant"
+    ]
+  },
+  {
+    "slug": "es-foral-corporate-tax",
+    "path": "skills/international/spain/es-foral-corporate-tax.md",
+    "bytes": 131468,
+    "sha256": "226cfd82b2881c87b8989eceec3f0398fe4757967692f96f75dca01658d19929",
+    "prior_main_exists": false,
+    "prior_main_sha256": null,
+    "H2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ]
+  },
+  {
+    "slug": "es-foral-income-tax",
+    "path": "skills/international/spain/es-foral-income-tax.md",
+    "bytes": 323879,
+    "sha256": "1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40",
+    "prior_main_exists": false,
+    "prior_main_sha256": null,
+    "H2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ]
+  },
+  {
+    "slug": "es-foral-non-resident-tax",
+    "path": "skills/international/spain/es-foral-non-resident-tax.md",
+    "bytes": 69256,
+    "sha256": "5c0d3b2b279a8a1cd11080c4d025a4bad14303c764c2245797ec9b8d84effed9",
+    "prior_main_exists": false,
+    "prior_main_sha256": null,
+    "H2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ]
+  },
+  {
+    "slug": "es-foral-payroll",
+    "path": "skills/international/spain/es-foral-payroll.md",
+    "bytes": 54518,
+    "sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+    "prior_main_exists": false,
+    "prior_main_sha256": null,
+    "H2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ]
+  },
+  {
+    "slug": "es-non-resident-income-tax-irnr-and",
+    "path": "skills/international/spain/es-non-resident-income-tax-irnr-and.md",
+    "bytes": 33442,
+    "sha256": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+    "prior_main_exists": true,
+    "prior_main_sha256": "9018dbc63c09eaa0ffecc641273c7741a1ca5f5ba34e630e554d4f14874877ab",
+    "H2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources",
+      "## Talk to a verified accountant"
+    ]
+  },
+  {
+    "slug": "es-vat-return",
+    "path": "skills/international/spain/es-vat-return.md",
+    "bytes": 89529,
+    "sha256": "677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e",
+    "prior_main_exists": true,
+    "prior_main_sha256": "3177f1cdb489c9dd1c24129f2bc5aea1f968d5f9c5197af3341a104b37b4042b",
+    "H2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources",
+      "## Talk to a verified accountant"
+    ]
+  },
+  {
+    "slug": "spain-vat-return",
+    "path": "skills/international/spain/spain-vat-return.md",
+    "bytes": 27072,
+    "sha256": "468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1",
+    "prior_main_exists": true,
+    "prior_main_sha256": "44556c993974a48c3c16197339f1b6db0cfcaa6e271fb1b98a0d841c039bdc70",
+    "H2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources",
+      "## Talk to a verified accountant"
+    ]
+  },
+  {
+    "slug": "es-canary-islands-igic",
+    "path": "skills/international/spain/es-canary-islands-igic.md",
+    "bytes": 33282,
+    "sha256": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+    "prior_main_exists": false,
+    "prior_main_sha256": null,
+    "H2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ]
+  },
+  {
+    "slug": "es-ceuta-melilla-ipsi",
+    "path": "skills/international/spain/es-ceuta-melilla-ipsi.md",
+    "bytes": 50091,
+    "sha256": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+    "prior_main_exists": false,
+    "prior_main_sha256": null,
+    "H2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ]
+  },
+  {
+    "slug": "spain-transfer-pricing",
+    "path": "skills/international/spain/spain-transfer-pricing.md",
+    "bytes": 31683,
+    "sha256": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+    "prior_main_exists": true,
+    "prior_main_sha256": "3596c52d4df2aa40d90666fcadaf5a5a659aa82bc6f12f6e15913463e3e94430",
+    "H2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources",
+      "## Talk to a verified accountant"
+    ]
+  }
+]

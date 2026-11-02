@@ -1,0 +1,77 @@
+skills/gibraltar/gi-global-minimum-tax.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+skills/gibraltar/gi-corporate-tax.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+skills/gibraltar/gi-connected-party-pricing-and-interest.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+skills/gibraltar/gi-individual-income-tax.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+skills/gibraltar/gi-payroll-social-insurance.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+skills/gibraltar/gi-transaction-tax-transition.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+skills/gibraltar/gi-foreign-tax-relief.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass

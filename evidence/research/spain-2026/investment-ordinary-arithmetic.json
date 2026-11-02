@@ -1,0 +1,294 @@
+{
+  "controls": [
+    {
+      "name": "Example 1 output",
+      "actual": "2520.00",
+      "expected": "2520",
+      "pass": true
+    },
+    {
+      "name": "Example 1 input",
+      "actual": "1155.00",
+      "expected": "1155",
+      "pass": true
+    },
+    {
+      "name": "Example 1 net",
+      "actual": "1365.00",
+      "expected": "1365",
+      "pass": true
+    },
+    {
+      "name": "Example 1 payable",
+      "actual": "865.00",
+      "expected": "865",
+      "pass": true
+    },
+    {
+      "name": "Example 1 remaining credit",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Example 2 P",
+      "actual": "60",
+      "expected": "60",
+      "pass": true
+    },
+    {
+      "name": "Example 2 general",
+      "actual": "6000",
+      "expected": "6000",
+      "pass": true
+    },
+    {
+      "name": "Example 2 special",
+      "actual": "2800",
+      "expected": "2800",
+      "pass": true
+    },
+    {
+      "name": "Example 2 mandatory trigger",
+      "actual": "3080.00",
+      "expected": "3080",
+      "pass": true
+    },
+    {
+      "name": "Example 2 correction",
+      "actual": "-4200",
+      "expected": "-4200",
+      "pass": true
+    },
+    {
+      "name": "Example 3 bank receipt",
+      "actual": "1060",
+      "expected": "1060",
+      "pass": true
+    },
+    {
+      "name": "Example 3 net VAT",
+      "actual": "130",
+      "expected": "130",
+      "pass": true
+    },
+    {
+      "name": "Example 3 prior credit used",
+      "actual": "130",
+      "expected": "130",
+      "pass": true
+    },
+    {
+      "name": "Example 3 prior credit remaining",
+      "actual": "70",
+      "expected": "70",
+      "pass": true
+    },
+    {
+      "name": "Example 3 return",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Example 4 points",
+      "actual": "20",
+      "expected": "20",
+      "pass": true
+    },
+    {
+      "name": "Example 4 original",
+      "actual": "1008.0",
+      "expected": "1008",
+      "pass": true
+    },
+    {
+      "name": "Example 4 current",
+      "actual": "756.0",
+      "expected": "756",
+      "pass": true
+    },
+    {
+      "name": "Example 4 repayment",
+      "actual": "50.4",
+      "expected": "50.40",
+      "pass": true
+    },
+    {
+      "name": "Example 4 box43",
+      "actual": "-50.4",
+      "expected": "-50.40",
+      "pass": true
+    },
+    {
+      "name": "Example 4 input",
+      "actual": "449.6",
+      "expected": "449.60",
+      "pass": true
+    },
+    {
+      "name": "Example 4 payable",
+      "actual": "550.4",
+      "expected": "550.40",
+      "pass": true
+    },
+    {
+      "name": "Delayed annual 40 to 60",
+      "actual": "420.0",
+      "expected": "420",
+      "pass": true
+    },
+    {
+      "name": "Whole initial correction, independent 8400 to12600",
+      "actual": "4200",
+      "expected": "4200",
+      "pass": true
+    },
+    {
+      "name": "Startup whole correction 40 to60",
+      "actual": "4200.0",
+      "expected": "4200",
+      "pass": true
+    },
+    {
+      "name": "Annual does not establish12600 reference",
+      "actual": "8820",
+      "expected": "8820",
+      "pass": true
+    },
+    {
+      "name": "Joint both increase",
+      "actual": "462.00",
+      "expected": "462",
+      "pass": true
+    },
+    {
+      "name": "Joint both decrease",
+      "actual": "-462.00",
+      "expected": "-462",
+      "pass": true
+    },
+    {
+      "name": "Joint opposite directions",
+      "actual": "42.00",
+      "expected": "42",
+      "pass": true
+    },
+    {
+      "name": "Joint each11points",
+      "actual": "233.3100",
+      "expected": "233.31",
+      "pass": true
+    },
+    {
+      "name": "Joint25and20",
+      "actual": "525.000",
+      "expected": "525",
+      "pass": true
+    },
+    {
+      "name": "Machine divisor5",
+      "actual": "924.00",
+      "expected": "924",
+      "pass": true
+    },
+    {
+      "name": "Conditional later P50 exact10point gate",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Conditional later P70 exact10point gate",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Delayed first-use 40 to50 exact10 gate",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Separate U80 to90 gate",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Separate P80 to90 gate",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Product change is17points",
+      "actual": "17.00",
+      "expected": "17",
+      "pass": true
+    },
+    {
+      "name": "Conditional later reference P75",
+      "actual": "315.00",
+      "expected": "315",
+      "pass": true
+    },
+    {
+      "name": "Conditional later reference P45",
+      "actual": "-315.00",
+      "expected": "-315",
+      "pass": true
+    },
+    {
+      "name": "Conditional later reference P71",
+      "actual": "231.00",
+      "expected": "231",
+      "pass": true
+    },
+    {
+      "name": "Conditional later reference P49",
+      "actual": "-231.00",
+      "expected": "-231",
+      "pass": true
+    },
+    {
+      "name": "Recoverable VAT excluded illustration",
+      "actual": "3000",
+      "expected": "3000",
+      "pass": true
+    },
+    {
+      "name": "Threshold equality is not below",
+      "actual": "0",
+      "expected": "0",
+      "pass": true
+    },
+    {
+      "name": "Setup-inclusive value",
+      "actual": "3050",
+      "expected": "3050",
+      "pass": true
+    },
+    {
+      "name": "Low upper bound",
+      "actual": "2904",
+      "expected": "2904",
+      "pass": true
+    },
+    {
+      "name": "Known cost high bound",
+      "actual": "1",
+      "expected": "1",
+      "pass": true
+    },
+    {
+      "name": "Decisive partly unrecoverable book cost",
+      "actual": "3143.6",
+      "expected": "3143.60",
+      "pass": true
+    }
+  ],
+  "count": 48,
+  "failures": 0
+}

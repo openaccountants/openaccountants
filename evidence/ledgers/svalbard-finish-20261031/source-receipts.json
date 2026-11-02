@@ -1,0 +1,79 @@
+[
+  {
+    "name": "environment-fee",
+    "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+    "retrieved_utc": "2026-10-31T19:34:49.828838+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+    "error": "",
+    "raw_sha256": "970f234e454973763fe219f9f0af3f4566da4ff16f4018ad4c0ba3756e358107",
+    "bytes": 40357,
+    "reader_sha256": "36bcc2cc118a68c988ade66ba87dc30be6878f42b22b26540b186e2099e62143"
+  },
+  {
+    "name": "environment-law",
+    "url": "https://lovdata.no/dokument/NL/lov/2001-06-15-79/KAPITTEL_7",
+    "retrieved_utc": "2026-10-31T19:34:50.025755+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/NL/lov/2001-06-15-79/KAPITTEL_7",
+    "error": "",
+    "raw_sha256": "041b5c36bd01aab65c5fa64babe47d7f82fb62841ddad41f2f6ca1e3ff2dbf84",
+    "bytes": 281199,
+    "reader_sha256": "db673ea46cad1206681d28ecdbc37ede484efb84cd0cdadca7d15462169643a1"
+  },
+  {
+    "name": "environment-fund",
+    "url": "https://www.sysselmesteren.no/svalbards-miljovernfond/",
+    "retrieved_utc": "2026-10-31T19:34:49.992620+00:00",
+    "exit_code": 0,
+    "response": "200 https://www.sysselmesteren.no/svalbards-miljovernfond/",
+    "error": "",
+    "raw_sha256": "42ee8bb7ed2f8f6e54edd0b32893b2e2b1a37d278f6b5588c010111a86c74aa1",
+    "bytes": 25687,
+    "reader_sha256": "4cea6e5e2f7a3f375c3225b12fdc8259c977ea1994362a2467024d04e75a974d"
+  },
+  {
+    "name": "governor-travel",
+    "url": "https://www.sysselmesteren.no/ferdsel-pa-svalbard/",
+    "retrieved_utc": "2026-10-31T19:34:50.089664+00:00",
+    "exit_code": 0,
+    "response": "200 https://www.sysselmesteren.no/ferdsel-pa-svalbard/",
+    "error": "",
+    "raw_sha256": "37398123375d0af80b3f09b2f6357fddf465fdf4f55123b192042560da4d0e7e",
+    "bytes": 44572,
+    "reader_sha256": "8703837bb57f024a07a05b7c50b883f7475dd02b30f91e459f8676f657380ed7"
+  },
+  {
+    "name": "fund-refund",
+    "url": "https://www.miljovernfondet.no/refusjon-av-avgift/",
+    "retrieved_utc": "2026-10-31T19:36:50.075810+00:00",
+    "exit_code": 0,
+    "response": "200 https://www.miljovernfondet.no/refusjon-av-avgift/",
+    "error": "",
+    "raw_sha256": "51898d8fcf81c776e68928e39f9ac6c322798372403448671b2332e4cb1da146",
+    "bytes": 31948,
+    "reader_sha256": "b31ceef3208b9f10d3ca53b638e811b07388c3c0c090aaa80c2e29cc7642ef10"
+  },
+  {
+    "name": "coal-law",
+    "url": "https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+    "retrieved_utc": "2026-10-31T19:36:49.522771+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/NL/lov/1925-07-17-2",
+    "error": "",
+    "raw_sha256": "fcdd726f1b66e2110fc1daf64c4f5107e21fb05b968a805dbdd5c5c727901f1e",
+    "bytes": 47069,
+    "reader_sha256": "44bec8921cefc7e39e2a09c09c08f2afe3bb716f3756bac61dfbdab1c55a086e"
+  },
+  {
+    "name": "coal-2026",
+    "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+    "retrieved_utc": "2026-10-31T19:34:50.162301+00:00",
+    "exit_code": 0,
+    "response": "200 https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781",
+    "error": "",
+    "raw_sha256": "92639bf7d496f21b0cab5c4275cb905144428e1dc07b74bd449724e50cc67f2a",
+    "bytes": 29214,
+    "reader_sha256": "bb0cd111850e6e8551e8c01640ef5ef0ec62e81b1d2f195f3df38db6460632fd"
+  }
+]

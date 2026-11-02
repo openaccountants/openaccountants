@@ -1,0 +1,428 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 148 frá 30. desember 1996 um stuðul til rentuútreiðslur av lánum, sum seinast broytt við løgtingslóg nr. 173 frá 21. desember 2021
+30. desember 1996Nr. 148
+Løgtingslóg um stuðul til rentuútreiðslur av lánum, sum seinast broytt við løgtingslóg nr. 173 frá 21. desember 2021
+§ 1. 1) Rætt til rentustuðul eftir hesi lóg hevur ein og hvør persónur, sum
+1) er fult skattskyldugur í Føroyum, og
+2) hevur rentur av lánum, sum nevnd eru í § 2 í hesi lóg.
+Stk. 2. 2) 3) Rætt til rentustuðul eftir hesi lóg hava eisini lutaíbúðafeløg, ið eru stovnsett sambært løgtingslóg um lutaíbúðafeløg.
+Stk. 3. 4) 5) Rentuútreiðslur, fevndar av § 2, verða lækkaðar við negativari rentu á lánum, fevnd av § 2.
+§ 2. 2) Rentustuðul verður veittur fyri rentur
+1) av lánum, sum eru avtalað áðrenn 18. januar 1991, og
+2) av lánum, sum eru avtalað 18. januar 1991 ella seinni, og sum eru tikin til:
+a) keyp ella bygging, umvæling ella umbygging av egnum bústaði,
+b) keyp ella bygging, umvæling ella umbygging av bústaðaeindum í lutaíbúðafeløgum,
+c) útbúgving,
+d) gjalding av ábyrgd sambært § 33, nr. 2 í løgtingslóg nr. 86 frá 1. september 1983 um landsskatt og kommunuskatt við seinni broytingum, um so er, at ábyrgdin er avtalað áðrenn 3. desember 1994.
+Stk. 2. 2) 3) Rentustuðul eftir § 3 í hesi lóg verður fyri lutaíbúðafeløg sambært løgtingslóg um lutaíbúðafeløg veittur fyri hvønn lutin.
+Stk. 3. 6) Stuðul fyri tey lán, sum eru nevnd í stk. 1, nr. 2, litra a og b, verður bert veittur fyri matrikulnummarið ávikavist bústaðaeindina, har viðkomandi verður hildin at búgva, t.e. tann bústaður, sum viðkomandi persónliga og fíggjarliga er mest knýttur at (miðdepilin í lívsáhugamálunum).
+Stk. 4. 7) Persónur, sum av arbeiðsávum hevur bústaðarskyldu, lýkur treytina í stk. 3, um egni bústaðurin ikki verður leigaður út.
+Stk. 5. 6) 7) Rentustuðul verður ikki veittur fyri provisjónir og líknandi gjøld.
+Stk. 6. 8) 7) Til bygging av bústaði ella bústaðaeind sambært stk. 1, nr. 2, litra a og b kann stuðul verða veittur fyri rentuútreiðslur í byggitíðini, tó í mesta lagi fyri tey síðstu 2 árini innan innflyting, og útgjald av hesum kann ikki fara fram innan innflyting. Stuðul kann tó ikki veitast til meira enn ein bústað fyri sama tíðarskeið, og er hetta eisini galdandi fyri sambúgvandi persónar uttan mun til, um ein ella báðir eiga bústaðin.
+§ 2 a.1) 9) 2) Verða eini hús v.m. nýtt til bæði bústað og vinnuligt endamál, verða samlaðu rentuútreiðslurnar viðgjørdar eftir hesi lóg og ikki eftir skattalógini.
+Stk. 2. Tað er ein treyt fyri at fáa stuðul eftir hesi lóg, at lánið sum heild er stuðulsloyvt. Lán, sum lutvíst eru farin til eitt ella fleiri av teimum í § 2 nevndu endamálum, lutvíst til onnur endamál, skulu fyri at koma undir hesa lóg fyrst uppbýtast.
+Stk. 3. (Strikað).
+§ 3. 9) Fyri tey lán, sum nevnd eru í § 2, nr. 1, verður rentustuðul í mesta lagi veittur við tí í § 5 nevndu prosentupphædd av samlaðu rentuútreiðslunum.
+Stk. 2.1) 6) 8) 3) Fyri tey lán, sum eru nevnd í § 2, stk. 1, nr. 2, litra a, verður árligi rentustuðulin í mesta lagi tann í § 5 nevnda prosentupphædd av tí í stk. 3 ásettu hámarksupphædd pr. matrikkulnummar uttan mun til, um ein ella fleiri persónar eiga bústaðin. Eigaraíbúð er í hesum sambandi at javnmeta við matrikulnummar.
+Stk. 3. 3) 10) Tann árliga hámarksupphæddin í 2014 er 120.000 kr., hereftir lækkar upphæddin soleiðis:
+1) Í 2015 er upphæddin 115.000 kr.
+2) Í 2016 er upphæddin 110.000 kr.
+3) Í 2017 er upphæddin 105.000 kr.
+4) Í 2018 og seinni er upphæddin 100.000 kr.
+Stk. 4. 3) Eigaraíbúðir, sum ikki eru býttar í sjálvstøðugt matrikulnummar, og sum hava fingið rentustuðul fram til 30. september 2009, hava framhaldandi rætt til rentustuðul, hóast íbúðin ikki hevur eitt sjálvstøðugt matrikulnummar.
+Stk. 5. 9) 6) 3) Fyri tey lán, sum eru nevnd í § 2, nr. 2, litra a, verður rentustuðul bert veittur til tær rentur, sum sambært vanligum lániavtalum verða tilskrivaðar leypandi fyri hvørt álmanakkaár.
+§ 4. Rentustuðul verður veittur fyri rentuútreiðslur sambært uppgerð frá viðkomandi peningastovni.
+Stk. 2. Tá talan er um lestrarlán, verður veittur rentustuðul fyri rentu, ið samansavnað er í tíðini, áðrenn afturgjalding byrjar, og fyri rentu, ið tilskrivað verður í afturgjaldstíðini.
+§ 5. 6) Tann árliga prosentupphæddin er 40% í 2009, hereftir lækkar rentustuðulin soleiðis:
+1) Í 2010 er rentustuðulin 39%.
+2) Í 2011 er rentustuðulin 38%.
+3) Í 2012 er rentustuðulin 37%.
+4) Í 2013 er rentustuðulin 36%.
+5) Í 2014 og seinni er rentustuðulin 35%.
+§ 6. Landið rindar rentustuðulin.
+Stk. 2. Rentustuðulin verður útgoldin primo í hvørjum mánaði, fyrstu ferð í februar 1997.
+Stk. 3. 6) 3) 11) 12) Rentustuðulin sambært § 5 verður býttur millum land og kommunu, sum niðanfyri tilskilað:
+Ár
+Landið
+Kommunan
+2009
+27%
+13%
+2010
+26%
+13%
+2011
+25%
+13%
+2012
+24%
+13%
+2013
+20,5%
+15,5%
+2014 og seinni
+19,5%
+15,5%
+Stk. 4.1) 2) Útreiðslurnar av rentustuðlinum hevur tann kommuna, har viðkomandi er tilmeldaður, tá rentustuðul verður útgoldin. Um persónur v.m., sum hevur rætt til rentustuðul, ikki er meldaður til eina kommunu, ber tann kommunan, har viðkomandi seinast var tilmeldaður, útreiðslurnar.
+Stk. 5. Kommununar partur av rentustuðlinum verður mótroknaður í teirri skattaupphædd, sum útgoldin verður kommununi hvønn mánaða. Mótrokningin verður gjørd í útgjaldinum í tí mánaði, sum kemur beint aftaná mánaðan, tá rentustuðulin er útgoldin.
+§ 7. Rentustuðul verður bert veittur eftir umsókn.
+Stk. 2. Serligt umsóknarblað skal nýtast, tá søkt verður um rentustuðul.
+Stk. 3. 2) Landsstýrið ásetur nærri reglur um krøv til skjalprógv, sum neyðug eru fyri at støða kann takast til, um ein persónur v.m. hevur rætt til rentustuðul.
+§ 8. 2) Fær ein persónur v.m. endurgjald á annan hátt fyri rentuútreiðslur, hevur hesin persónur v.m. samstundis ikki rætt til rentustuðul eftir hesi lóg.
+Stk. 2. Landsstýrið ásetur nærri reglur um, hvør ið ikki hevur rætt til rentustuðul eftir hesi lóg.
+§ 8 a.1) 8) 13) Avgerðir tiknar sambært hesi løgtingslóg kunnu kærast til Føroya Kærustovn innan 4 vikur eftir, at kærarin hevur fingið fráboðan um avgerðina.
+Stk. 2. 8) 13) (Strikað).
+§ 9. Viðvíkjandi upplýsingarskyldu í samband við lán verður kapittul 12, um skyldu at geva upplýsingar um lønir o.a. í løgtingslóg nr. 86 frá 1. september 1983 um landsskatt og kommunuskatt við seinni broytingum, tilsvarandi galdandi.
+§ 10. Rentustuðul kann ikki vera fyri rættarsókn, fyrr enn hann er útgoldin. Avtala um transport er útgjaldaranum óviðkomandi.
+§ 10 a.1) 8) TAKS kann við panting innheinta ov nógv útgoldnan rentustuðul.
+§ 11. Henda lóg kemur í gildi 1. januar 1997.
+1) Broytt við løgtingslóg nr. 24 frá 21. apríl 1999, har § 2 ljóðar soleiðis: “Henda lóg kemur í gildi 1. juli 1999, tó kemur § 1, nr. 3 í gildi 1. januar 2000.”
+2) Broytt við løgtingslóg nr. 80 frá 25. mai 2009, sum hevur virknað frá 1. juli 2009.
+3) Broytt við løgtingslóg nr. 172 frá 23. desember 2011, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2012.”
+4) Broytt við løgtingslóg nr. 55 frá 4. mai 2021.
+5) Broytt við løgtingslóg nr. 173 frá 21. desember 2021.
+6) Broytt við løgingslóg nr. 171 frá 22. desember 2009, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, men hevur virknað frá framløgudegnum.”
+7) Broytt við løgtingslóg nr. 154 frá 13. desember 2017, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað frá 1. januar 2018.”
+8) Broytt við løgtingslóg nr. 49 frá 26. mai 2010.
+9) Broytt við løgtingslóg nr. 45 frá 30. mars 2001, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað frá framløgudegnum.”
+10) Broytt við løgtingslóg nr. 155 frá 20. desember 2013, har § ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2014.”
+11) Broytt við løgtingslóg nr. 33 frá 27. apríl 2012.
+12) Broytt við løgtingslóg nr. 145 frá 20. desember 2012, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2013.”
+13) Broytt við løgtingslóg nr. 159 frá 10. desember 2021, har § 43 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2022. Samstundis fer løgtingslóg nr. 47 frá 23. mars 1993 um kærunevnd í almanna-, familju- og heilsumálum úr gildi.”
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Fíggjarmálaráðið
+Útgávudagur: 31-12-1996
+Tilvísingar
+Heimildir
+Broytingar
+Kunngerðablaðið
+Kunngerðarblað 1996 A - Hefti 25 A frá 31. desember 1996
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

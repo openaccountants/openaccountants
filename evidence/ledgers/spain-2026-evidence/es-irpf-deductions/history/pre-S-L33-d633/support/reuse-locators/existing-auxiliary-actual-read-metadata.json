@@ -1,0 +1,291 @@
+{
+  "kind": "Existing auxiliary read-metadata locator only; no new legal review, source fetch, independent PASS or ledger mutation",
+  "prepared_on": "2026-10-28",
+  "finding": "No general normalized auxiliary verified_operative_LF_scopes file beyond the fifteen core entries was located in this bounded folder inspection.",
+  "not_normalized": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/external-read-source-manifest.json",
+      "sha256": "ab6dfb332ceb5bcec0515601af2813f6a476a4e0e495643070815d7fe70ee07b",
+      "reason": "128 entries contain emission_receipts only, not separate actual-read/truncation reconciliation."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/post-report-additional-source-reads.json",
+      "sha256": "160c223de01c91a2f140e3fb97314d38eb53999043e2847da6fea581ba6dc00f",
+      "reason": "Single CLM849–918 emission still carries explicit truncation caveat; not promoted wholesale."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/candidate-closure/closure-primary-read-scopes.json",
+      "sha256": "4aa8617b21b76fee3012309bc87252be147d6000bc51bc5dae24439cd35bdf8b",
+      "reason": "actualrelevantreads mostly repeats emission caveat; AEAT entry is separately explicit whole-short-page actual read."
+    }
+  ],
+  "explicit_actual_article_read_declarations": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-whole-pack-review-0f104150/law-reading-ledger.json",
+    "sha256": "aa42a7bb3a6c9b15f67e09de38d6f96fa511d983f0c7f06a39092391aa2f1b56",
+    "matching_records": [
+      {
+        "record_index": 0,
+        "prior_declared_actual_read_record": {
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+          "raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+          "read_scope": [
+            "articles19,20,30,31,32 in full including effective-date notes",
+            "articles22,23,33,34,35,37,38;48–61;63–70;74–77;79–81bis;84;93;96–97: operative provisions plus amendment notes, historical version selectors omitted from derivative",
+            "DA61 in full",
+            "Additional full operative reads:9,72,82,95bis,DA50,DA58,DA62,DT18, including amendment chronology"
+          ],
+          "status": "read",
+          "checks": "Expense/reduction ordering, active disability and mobility, simplified600k/cap, ordinary module statutory baseline vs published transition, single-client and low-income and new-activity gates; rental tier hierarchy and chronology, FIFO/swap and anti-repurchase, savings offset limits, general reductions, family minima, full tax positions, startupwealthgateF03, foreigntaxbasketseparation, Beckhamfamilystrictgate, annualfiling;2026grosswagecredit bands and attribution/order"
+        },
+        "current_matching_source_keys": [
+          "S0"
+        ],
+        "scope_kind": "Explicit actual article/provision read declaration, not normalized numericLF ranges; do not extend to other provisions merely because raw hashes match."
+      },
+      {
+        "record_index": 1,
+        "prior_declared_actual_read_record": {
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+          "raw_sha256": "fbb1ac8cfc81eedcb6ecdf492ba84d42654d06ff8cdf112ec3e9c196fe0fc295",
+          "read_scope": [
+            "LIS12,13,15,16,25,26,29,30bis,35,38,39,40,101–103,105,124–125;DT44;DA15; operative wording and amendment notes",
+            "Additional full operative read:18 (all subsections)"
+          ],
+          "status": "read",
+          "checks": "2026micro/ERDdatebands,baseadjustments,reserves/lossordering,minimumexceptions,credits/carry,instalments/filing"
+        },
+        "current_matching_source_keys": [
+          "LIS"
+        ],
+        "scope_kind": "Explicit actual article/provision read declaration, not normalized numericLF ranges; do not extend to other provisions merely because raw hashes match."
+      },
+      {
+        "record_index": 6,
+        "prior_declared_actual_read_record": {
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+          "raw_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+          "read_scope": [
+            "RIRPF42 in full",
+            "Additional full operative reads:81–88, including regularisation counterfactual mortgage treatment, minimum-rate exceptions, timing and declarations",
+            "Full113–123, plusfull89bothA/B;Beckhameligibility/credit/election/exit/communicationsanddepartureprocedures."
+          ],
+          "status": "read",
+          "checks": "F06annuity gate/deadline preservation"
+        },
+        "current_matching_source_keys": [
+          "S3"
+        ],
+        "scope_kind": "Explicit actual article/provision read declaration, not normalized numericLF ranges; do not extend to other provisions merely because raw hashes match."
+      },
+      {
+        "record_index": 7,
+        "prior_declared_actual_read_record": {
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+          "raw_sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+          "read_scope": [
+            "LIVA95,102–113 in full operative wording and amendmentnotes",
+            "Additional full operative69,70,73,75,80,84,89 including amendmentnotes",
+            "90/91fulloperative;recovered7131–7217middleaftertruncation;2026datedamendmentnotesread",
+            "Full operative97–100,114–116,163quinquiesdecies/terdecies/sexiesdecies,96,14; ordinary recovery/evidence/cash accounting/exclusions"
+          ],
+          "status": "read",
+          "checks": "privateuse vs prorrata, strictgates,5/10yearadjustments,disposal,specialprorrata,beforeactivity; Place/taxpoint/10kB2Cthreshold/reversechargegates/baddebt andcorrections"
+        },
+        "current_matching_source_keys": [
+          "S87"
+        ],
+        "scope_kind": "Explicit actual article/provision read declaration, not normalized numericLF ranges; do not extend to other provisions merely because raw hashes match."
+      },
+      {
+        "record_index": 8,
+        "prior_declared_actual_read_record": {
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186",
+          "raw_sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+          "read_scope": [
+            "LGT26–28,188,191,198 in full"
+          ],
+          "status": "read",
+          "checks": "interest/surcharges/classification/conditional compounded reductions;withheldtaxnotminor"
+        },
+        "current_matching_source_keys": [
+          "S170"
+        ],
+        "scope_kind": "Explicit actual article/provision read declaration, not normalized numericLF ranges; do not extend to other provisions merely because raw hashes match."
+      },
+      {
+        "record_index": 24,
+        "prior_declared_actual_read_record": {
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-22128",
+          "raw_sha256": "37f9d89b099b16a562cc2c718820bcb3fb3cfea2bd6d2b8749fe817a9b5e4289",
+          "read_scope": [
+            "LPGE31/2022DA90 full"
+          ],
+          "status": "read",
+          "checks": "DirectannualIPREM7200 vs substitutedSMI8400 distinction"
+        },
+        "current_matching_source_keys": [
+          "S64"
+        ],
+        "scope_kind": "Explicit actual article/provision read declaration, not normalized numericLF ranges; do not extend to other provisions merely because raw hashes match."
+      },
+      {
+        "record_index": 46,
+        "prior_declared_actual_read_record": {
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823",
+          "raw_sha256": "a2876b9b97295cc74704d39ffc0e8d3cf474d37b975e7a09558de4a7956d8f11",
+          "read_scope": [
+            "Fullart7 operativeDecember2026housingcutover"
+          ],
+          "status": "read",
+          "checks": "ordinarymethod source verification"
+        },
+        "current_matching_source_keys": [
+          "S161"
+        ],
+        "scope_kind": "Explicit actual article/provision read declaration, not normalized numericLF ranges; do not extend to other provisions merely because raw hashes match."
+      },
+      {
+        "record_index": 50,
+        "prior_declared_actual_read_record": {
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2026-6544",
+          "raw_sha256": "f7253b7d9042a06235c9b64f2fb69fe94246534969404525f6fa3f4665f92ffb",
+          "read_scope": [
+            "Currentart42 full a4-4;art41fulla4-3 incidentally"
+          ],
+          "status": "read",
+          "checks": "ordinarymethod source verification"
+        },
+        "current_matching_source_keys": [
+          "S178"
+        ],
+        "scope_kind": "Explicit actual article/provision read declaration, not normalized numericLF ranges; do not extend to other provisions merely because raw hashes match."
+      },
+      {
+        "record_index": 92,
+        "prior_declared_actual_read_record": {
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+          "raw_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+          "read_scope": [
+            "Additional full current13/14 rental expenses, strictly-more-than-sixmonth debt gate, asset/durable-goods/use-right depreciation; historic2020–21 three-month exception distinguished."
+          ],
+          "status": "read specified scopes only",
+          "checks": "independent operative comparison; see controls/findings/table parity"
+        },
+        "current_matching_source_keys": [
+          "S3"
+        ],
+        "scope_kind": "Explicit actual article/provision read declaration, not normalized numericLF ranges; do not extend to other provisions merely because raw hashes match."
+      },
+      {
+        "record_index": 116,
+        "prior_declared_actual_read_record": {
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+          "raw_sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e",
+          "read_scope": [
+            "Full operative20.1–3 LF2656–2996 and date notes2998–3004; currentDecember2026wording distinguished; full68/85/86 goodsplace/AIC/importer."
+          ],
+          "status": "read specified scopes only",
+          "checks": "final finite operative pass"
+        },
+        "current_matching_source_keys": [
+          "S87"
+        ],
+        "scope_kind": "Explicit actual article/provision read declaration, not normalized numericLF ranges; do not extend to other provisions merely because raw hashes match."
+      },
+      {
+        "record_index": 117,
+        "prior_declared_actual_read_record": {
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-6820",
+          "raw_sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+          "read_scope": [
+            "Additional full75/76/95/108/109/110/111; initial combined truncation recovered in separate fullarticle calls. CurrentCAIFE paragraphs read as statute text; no complete special-account calculation certification."
+          ],
+          "status": "read specified scopes only",
+          "checks": "final finite operative pass"
+        },
+        "current_matching_source_keys": [
+          "S3"
+        ],
+        "scope_kind": "Explicit actual article/provision read declaration, not normalized numericLF ranges; do not extend to other provisions merely because raw hashes match."
+      },
+      {
+        "record_index": 127,
+        "prior_declared_actual_read_record": {
+          "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+          "raw_sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+          "read_scope": [
+            "Additional fullDT9 andDA20 progression LF8709–8729; current37 fully reread confirms tax-accrual reference. No fullspecialCAIFE account certification."
+          ],
+          "status": "read specified scopes only",
+          "checks": "completed finite ordinary source pass; fulltext/capture boundaries explicit"
+        },
+        "current_matching_source_keys": [
+          "S0"
+        ],
+        "scope_kind": "Explicit actual article/provision read declaration, not normalized numericLF ranges; do not extend to other provisions merely because raw hashes match."
+      }
+    ]
+  },
+  "explicit_short_page_actual_read": {
+    "prior_record": {
+      "raw_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-fresh-review-repairs/F03-startup-wealth-gate/AEAT-startup-wealth.html",
+      "raw_sha256": "25b9b1e7335cff15cd61e419a5ec96a4b98db79d0ca37f5373080354e35686fe",
+      "actual_read": "Entire short operative page; own reader new-sources/AEAT-startup-wealth.reader.txt"
+    },
+    "current_matches": [
+      {
+        "key": "S162",
+        "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025/c16-deducciones-generales-cuota/deduccion-inversion-empresas-nueva-reciente-creacion/limite-deduccion-comprobacion-situacion-patrimonial.html",
+        "raw": "sources/S162.body",
+        "raw_sha256": "25b9b1e7335cff15cd61e419a5ec96a4b98db79d0ca37f5373080354e35686fe",
+        "reader": "sources/S162.reader.txt",
+        "reader_sha256": "4abdd3eac94d72f3a384c0f27e550fcecf4d6140d5a3fef8392fe4c62f132066",
+        "acquired": "2026-10-28",
+        "read_scope": "Selected exact quote intervals recorded separately; acquisition is not whole-source reading."
+      }
+    ],
+    "scope": "Entire short operative page expressly actually read in candidate-closure receipt and report erratum; no new read/replay. Prior reader is independently generated; its LF cannot automatically be transplanted to current reader if hashes differ.",
+    "prior_reader_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/new-sources/AEAT-startup-wealth.reader.txt",
+    "prior_reader_sha256": "fbd2939b9129d98712eb68387639034aeb70d46a91075f2138a9677bde35a316",
+    "direct_reader_identity_matches": []
+  },
+  "report_level_actual_scope_statements": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/report.md",
+      "sha256": "e083a76e53a9e4253f1cee560300ba30f04da5c445a89bf0ef4e60ab1c771388",
+      "literalLF": [
+        23,
+        23
+      ],
+      "scope": "CLM dated law actual operative899–1013 and1409–1418 are expressly stated here, narrower than emission899–1040; root handles this branch."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/report.md",
+      "sha256": "e083a76e53a9e4253f1cee560300ba30f04da5c445a89bf0ef4e60ab1c771388",
+      "literalLF": [
+        47,
+        49
+      ],
+      "scope": "Narrative expressly identifies dated/implementing actual reads by article; no new numericLF normalization manufactured."
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/report-errata-and-post-report-evidence.md",
+      "sha256": "784d3bbdfc6db2a5c470f1357e40c9914c30afdba820790d8ad9f30d28790abd",
+      "literalLF": [
+        3,
+        5
+      ],
+      "scope": "Balearic narrative-title correction and explicit complete AEAT startup-page read."
+    }
+  ],
+  "excluded_or_limited": {
+    "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/europe-closeout-2026-10-27/spain-common-regions-section-review-0f104150/review-failures-and-limits.json",
+    "sha256": "c895f128d2ae189b11e0841cdca2a09b3d7b00dae949a73bd38422f374ba46a3",
+    "limits": [
+      "Historical a292840–900 truncation: relevant3bis superseded by exact764–789; unrelated old4 not relied on.",
+      "No actual Catalan annex acquisition/UI test in that old bounded review; later evidence must stand separately.",
+      "Whole acquisition, writer tests and bare emission are never promoted to all-body actual reading."
+    ]
+  },
+  "ledger_unchanged_sha256": "d633dd1d7044ab3ec29efd14fbe5aed88286bbe77ed25678b18eb905417e037e"
+}

@@ -1,0 +1,64 @@
+{
+  "generated_on": "2026-11-01",
+  "guides": 7,
+  "jurisdictions": 266,
+  "pseudo_codes": {},
+  "complete": 0,
+  "states": {
+    "needs_writing": 266,
+    "needs_updating": 0,
+    "needs_signature": 0,
+    "complete": 0
+  },
+  "with_readme": 1,
+  "reviewed_skills": 0,
+  "rows": [
+    {
+      "code": "ML",
+      "name": "Mali",
+      "region": "africa",
+      "owner": "ryan",
+      "dir": "skills/mali",
+      "skills": 7,
+      "reviewed": 0,
+      "stale": 0,
+      "present": [],
+      "missing": [
+        "IT-IND",
+        "IT-CORP",
+        "VAT",
+        "SC",
+        "PR",
+        "TP",
+        "XB"
+      ],
+      "not_applicable": {},
+      "partial": {
+        "IT-IND": "Legacy 2025 Guide retained unchanged; current law, scope and procedure need rebuilding.",
+        "IT-CORP": "Legacy 2025 Guide retained unchanged; CSS is a separate levy and its 2026 treatment is unverified.",
+        "VAT": "Legacy 2025 Guide retained unchanged; current law, scope and procedure need rebuilding.",
+        "SC": "Legacy 2025 joint payroll/social Guide retained unchanged; contributions need primary-source rebuilding.",
+        "PR": "Legacy 2025 joint payroll/social Guide retained unchanged; withholding and employer procedure need rebuilding.",
+        "TP": "Missing; older online code and later amendments were not reconciled into a 2026 Guide.",
+        "XB": "Missing; no residence, treaty, non-resident, PE or exit Guide drafted."
+      },
+      "has_readme": true,
+      "outdated": [
+        "ml-corporate-income-tax",
+        "ml-income-tax",
+        "ml-payroll-social",
+        "ml-vat-gst"
+      ],
+      "unsigned": [
+        "ml-corporate-income-tax",
+        "ml-income-tax",
+        "ml-payroll-social",
+        "ml-vat-gst"
+      ],
+      "complete": false,
+      "state": "needs_writing"
+    }
+  ],
+  "exit_code": 0,
+  "scope_note": "Sparse Mali-only worktree: global missing-country totals do not describe the complete repository."
+}

@@ -1,0 +1,1117 @@
+{
+  "status": "writer-complete; not independent review",
+  "guide_version": "0.8",
+  "legal_rows": 59,
+  "quotes": 123,
+  "all_quotes_present": true,
+  "source": "income-tax-act-20260323.pdf",
+  "rows": [
+    {
+      "section": "Who this applies to",
+      "rule": "Schedule 4/section 40 apply alongside general anti-avoidance; OECD principles expressly relevant.",
+      "provision": "s40(3)\u2013(4)",
+      "page": 103,
+      "quotes": [
+        "internationally accepted principles for the determination of profit",
+        "documents published by the Organisation for Economic Co-operation and Development",
+        "The provisions of this Part and Schedule 4 shall apply in addition to subsection (1)."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Connected status uses paragraph 9; control under paragraph 10; separate associated-enterprise definition for later Parts.",
+      "provision": "Sch4,8,8A,9(1)",
+      "page": 187,
+      "quotes": [
+        "\u201cconnected person\u201d has the meaning given in paragraph 9;",
+        "For the purposes of Part V to Part VII unless the context otherwise requires"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Direct/indirect control and rights to acquire, beyond registered shares.",
+      "provision": "Sch4,10(1)",
+      "page": 192,
+      "quotes": [
+        "if he exercises, or is able to exercise or is entitled to acquire, direct or indirect control over the company's affairs"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Greater-part share capital/votes limb.",
+      "provision": "Sch4,10(1)(a)",
+      "page": 192,
+      "quotes": [
+        "the greater part of the share capital or issued share capital of the company or of the voting power in the company;"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Distribution-income and winding-up asset rights are separate control limbs.",
+      "provision": "Sch4,10(1)(b)\u2013(c)",
+      "page": 193,
+      "quotes": [
+        "entitle him to receive the greater part of the amount so distributed;",
+        "entitle him to receive the greater part of the assets of the company"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Two or more persons can satisfy control together.",
+      "provision": "Sch4,10(2)",
+      "page": 193,
+      "quotes": [
+        "Where two or more persons together satisfy any of the conditions of subparagraph (1) above, they shall be taken to have control of the company."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Future entitlements count.",
+      "provision": "Sch4,10(3)",
+      "page": 193,
+      "quotes": [
+        "anything which he is entitled to acquire at a future date, or will at a future date be entitled to acquire."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Nominee/directed rights attributed.",
+      "provision": "Sch4,10(4)",
+      "page": 193,
+      "quotes": [
+        "any rights or powers which another person possesses on his behalf or may be required to exercise on his direction or behalf."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Associate/company attribution limits and five-or-fewer participators.",
+      "provision": "Sch4,10(5)",
+      "page": 193,
+      "quotes": [
+        "but not those attributed to an associate under this subparagraph;",
+        "under the control of five or fewer participators if it can be so treated."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Specified family/settlement/foundation connections; not one ownership percentage.",
+      "provision": "Sch4,9(2)\u2013(3A)",
+      "page": 190,
+      "quotes": [
+        "the individual's wife or husband living with him or her, or is a relative",
+        "A person, in his capacity as trustee of a settlement, is connected with-",
+        "A foundation is connected with-"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Partnership connection has commercial asset-acquisition/disposal exception.",
+      "provision": "Sch4,9(4)",
+      "page": 191,
+      "quotes": [
+        "Except in relation to acquisitions or disposals of partnership assets pursuant to bona fide commercial arrangements,"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Common control connects companies; company connected with controlling person.",
+      "provision": "Sch4,9(5)\u2013(6)",
+      "page": 191,
+      "quotes": [
+        "if the same person has control of both,",
+        "A company is connected with another person if that person has control of it"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Persons acting together to secure/exercise control or reciprocal arrangements.",
+      "provision": "Sch4,9(7)\u2013(8)",
+      "page": 191,
+      "quotes": [
+        "Any two or more persons acting together to secure or exercise control of a company",
+        "Any two or more persons acting together in a reciprocal arrangement"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Participators include capital/income interests, acquisition/voting rights, specified loan creditors, distributions and rights to secure benefits.",
+      "provision": "Sch4,11(1)\u2013(3)",
+      "page": 193,
+      "quotes": [
+        "a person having a share or interest in the capital or income of the company,",
+        "any loan creditor of the company;",
+        "any person who is entitled to secure that income or assets"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Loan creditors include relevant beneficial interests; ordinary-course banking-business lending is excluded.",
+      "provision": "Sch4,11(6)\u2013(8)",
+      "page": 194,
+      "quotes": [
+        "but nevertheless has a beneficial interest therein shall, to the extent of that interest, be treated",
+        "A person carrying on a business of banking shall not be deemed to be a loan creditor",
+        "money lent by him to the company in the ordinary course of that business."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Who this applies to",
+      "rule": "Associate attribution includes specified relatives, partners, trustees and estate representatives; the literal relative cross-reference remains unresolved.",
+      "provision": "Sch4,11(4)\u2013(5),9(9)",
+      "page": 194,
+      "quotes": [
+        "any relative or partner of the participator;",
+        "the personal representatives of the deceased;",
+        "In subparagraph (3) above \u201crelative\u201d means husband or wife, parent or remoter forebear, child or remoter issue, or brother or sister."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Business-profit adjustment and excess interest",
+      "rule": "Connected business arranged to depress profits or increase losses is assessed by reference to expected profits.",
+      "provision": "Sch4,4(1)",
+      "page": 184,
+      "quotes": [
+        "either no profits, less than the ordinary profits, losses or increases the loss",
+        "shall be assessable and chargeable to tax in respect of the profits which might be expected to arise"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Business-profit adjustment and excess interest",
+      "rule": "Connected interest above the supported arm\u2019s-length amount is deemed a dividend and denied deduction.",
+      "provision": "Sch4,4(2)",
+      "page": 184,
+      "quotes": [
+        "exceeds the amount of interest which would have been paid to an arm\u2019s length party",
+        "deemed to be a dividend paid by the person",
+        "shall not be deductible in ascertaining the profits or gains"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Conditional thin capitalisation",
+      "rule": "Thin-capitalisation ratio is greater than 5:1 at any time; the specified regulated credit-institution/deposit-taker company exclusion remains.",
+      "provision": "Sch4,2(1)",
+      "page": 183,
+      "quotes": [
+        "Where at any time in an accounting period, the loan capital to equity ratio of a company,",
+        "other than a credit institution or deposit taker regulated under the Financial Services (Banking) Act, is greater than 5 to 1,"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Conditional thin capitalisation",
+      "rule": "The connected non-company lender limb requires non-arm\u2019s-length rate or terms.",
+      "provision": "Sch4,2(1)(a)",
+      "page": 183,
+      "quotes": [
+        "to a connected person which is not a company",
+        "not considered to be at arm\u2019s length by reference to either the rate of interest or the terms and conditions of that loan;"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Conditional thin capitalisation",
+      "rule": "The independent lender limb requires specified connected non-company security wholly or above 50% and a non-arm\u2019s-length loan.",
+      "provision": "Sch4,2(1)(b)",
+      "page": 183,
+      "quotes": [
+        "secured wholly or on more than 50% of the assets belonging to a connected person which is not a company",
+        "the loan is not considered to be at arm\u2019s length"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Conditional thin capitalisation",
+      "rule": "Where paragraph 2 applies, qualifying interest is treated as a dividend and disallowed.",
+      "provision": "Sch4,2(1)",
+      "page": 183,
+      "quotes": [
+        "will be deemed to be a dividend paid by the company",
+        "the interest shall not be deductible in computing the profits or gains of the company for that accounting period."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Conditional thin capitalisation",
+      "rule": "Use statutory loan-capital and equity definitions, including preference shares and the qualified revaluation reserve.",
+      "provision": "Sch4,2(1)(c)",
+      "page": 183,
+      "quotes": [
+        "\u201cloan capital\u201d means the total interest-bearing debt of a company in an accounting period.",
+        "\u201cequity\u201d means preference shares, whether redeemable or irredeemable and regardless of their accounting treatment,",
+        "any revaluation reserve only where the Commissioner is satisfied as to the substance of such a revaluation."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Arm's-length loans secured by untaxed deposits or investments",
+      "rule": "Independent-lender interest restriction requires the specified borrower/connected deposit or investment security and non-assessable income condition.",
+      "provision": "Sch4,5(a)\u2013(b)",
+      "page": 185,
+      "quotes": [
+        "pays interest on a loan made by a lender being an arm\u2019s length person",
+        "by a cash deposit made with the lender or any connected person of the lender",
+        "the income or gains arising or derived from the cash deposit or investment",
+        "is not assessable in accordance with this Act,"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Arm's-length loans secured by untaxed deposits or investments",
+      "rule": "Substantial part means 50% or more; the qualifying interest is disallowed, not a fraction matching security.",
+      "provision": "Sch4,8 and5",
+      "page": 187,
+      "quotes": [
+        "\u201csubstantial part\u201d means 50% or more.",
+        "that interest will not be deductible in computing the profits or gains of the person for the year."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Arm's-length loans secured by untaxed deposits or investments",
+      "rule": "The investment route retains its unresolved Financial Services Act 1989 section 3(2)(a) reference.",
+      "provision": "Sch4,5(b)(ii)",
+      "page": 185,
+      "quotes": [
+        "on investments (which has the meaning given in section 3(2)(a) of the Financial Services Act 1989)"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Aggregate connected-expense cap",
+      "rule": "Aggregate connected expenses are capped at the least of Expense, 5% of turnover and 75% of the statutory profit measure.",
+      "provision": "Sch4,4(3)",
+      "page": 184,
+      "quotes": [
+        "the aggregate amount of the deduction to be allowed in respect of the Expense",
+        "shall be the least of-",
+        "5 per cent of the gross turnover",
+        "75 per cent of the pre- Expense net profit"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Aggregate connected-expense cap",
+      "rule": "Pre-Expense profit adds Expense back; brought-forward losses are deducted before the 75% comparison.",
+      "provision": "Sch4,4(3)(c)(ii)\u2013(iii)",
+      "page": 185,
+      "quotes": [
+        "the net profit after the Expense has been added back.",
+        "any losses available for relief brought forward shall first be deducted",
+        "before applying the 75 per cent."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Aggregate connected-expense cap",
+      "rule": "The profit is tax-computed and turnover follows the statutory return basis.",
+      "provision": "Sch4,4(4)",
+      "page": 185,
+      "quotes": [
+        "the net profit computed in accordance with this Act;",
+        "the gross turnover of the person shall be that expressed in the return"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Shareholder advances and deemed distributions",
+      "rule": "Section 22 requires the specified ordinarily resident recipient/non-company connected-person and employment-benefit scope, plus the Commissioner\u2019s distribution opinion.",
+      "provision": "s22(1)",
+      "page": 84,
+      "quotes": [
+        "which are not subject to a charge to tax under Chapter 6 of Schedule 7",
+        "persons, other than another company,",
+        "who are ordinarily resident",
+        "as, in the opinion of the Commissioner, represent distributions of income"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Shareholder advances and deemed distributions",
+      "rule": "The deemed dividend-income timing is the year of the advance, distribution or payment.",
+      "provision": "s22(1)",
+      "page": 85,
+      "quotes": [
+        "had been paid in the year of assessment in which the advance, distribution or payment is made"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Shareholder advances and deemed distributions",
+      "rule": "Income-before-capital and historic-income order apply unless the company demonstrates otherwise to the Commissioner.",
+      "provision": "s22(2)",
+      "page": 85,
+      "quotes": [
+        "unless it can demonstrate otherwise to the satisfaction of the Commissioner,",
+        "distribute its income before its capital and the income is distributed in the order it arose historically."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Shareholder advances and deemed distributions",
+      "rule": "Only the dividend amount actually set off against previously deemed income is protected from repeat assessment.",
+      "provision": "s22(3)",
+      "page": 85,
+      "quotes": [
+        "then that dividend, to the extent that it is so set off, shall not be deemed to be assessable income"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Exemption and evidence",
+      "rule": "Paragraph 7 requires the prescribed matters to the Commissioner\u2019s satisfaction; commercial labelling alone is insufficient.",
+      "provision": "Sch4,7(1)",
+      "page": 186,
+      "quotes": [
+        "Paragraphs 2 and 4 to 6 shall not apply",
+        "to the satisfaction of the Commissioner either-",
+        "the purpose of avoiding liability to taxation was not the purpose or one of the purposes",
+        "bona fide commercial transactions",
+        "reasonable and proportionate"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Exemption and evidence",
+      "rule": "Paragraph 7 appeal applies section 35 but excludes Schedule 2 paragraph 13; Tribunal may confirm, vary or quash.",
+      "provision": "Sch4,7(2)",
+      "page": 186,
+      "quotes": [
+        "subject to any appeal in accordance with Section 35",
+        "paragraph 13 of Schedule 2 shall not apply but the Tribunal may confirm, vary or quash the decision"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Deadlines and filing > Seeking clearance under section 42",
+      "rule": "Clearance requires full written particulars and agreement to anonymised publication; it concerns section 40/Schedule 4.",
+      "provision": "s42(1)",
+      "page": 110,
+      "quotes": [
+        "the Applicant shall furnish to the Commissioner full particulars of the Arrangement in writing.",
+        "redacted in such a way that the taxpayer will remain anonymous,"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Deadlines and filing > Seeking clearance under section 42",
+      "rule": "Commissioner requests missing information within 21 days of receiving insufficient particulars.",
+      "provision": "s42(2)",
+      "page": 110,
+      "quotes": [
+        "within 21 days of the receipt thereof notify the Applicant what further information he requires"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Deadlines and filing > Seeking clearance under section 42",
+      "rule": "Applicant responds within 21 days from notification or further permitted time; failure need not be processed.",
+      "provision": "s42(3)",
+      "page": 110,
+      "quotes": [
+        "within 21 days from the notification, or such further time as the Commissioner may allow,",
+        "the Commissioner shall not be required to proceed further"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Deadlines and filing > Seeking clearance under section 42",
+      "rule": "Commissioner notifies decision or need for a further 21 days within 21 days of particulars or all further information.",
+      "provision": "s42(4)",
+      "page": 110,
+      "quotes": [
+        "within 21 days of the receipt of the particulars,",
+        "where subsection (2) has effect of all further information required,",
+        "he requires a further 21 days to consider the information received"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Deadlines and filing > Seeking clearance under section 42",
+      "rule": "Qualifying written follow-up seeks a decision within 21 days of the Commissioner receiving that notice.",
+      "provision": "s42(6)",
+      "page": 111,
+      "quotes": [
+        "the Applicant may by notice in writing seek a decision",
+        "within 21 days of the receipt of the notice by the Commissioner."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Deadlines and filing > Seeking clearance under section 42",
+      "rule": "A further-information request under section 42(7)(c) re-engages the subsections 2\u20134 sequence.",
+      "provision": "s42(7)(c)",
+      "page": 111,
+      "quotes": [
+        "any such request will be treated as if it were a request under subsection (2) for the purposes of subsections (3) and (4)."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Deadlines and filing > Seeking clearance under section 42",
+      "rule": "Deemed acceptance concerns only the subsection 6 follow-up period and preserves other assessment powers.",
+      "provision": "s42(8)",
+      "page": 111,
+      "quotes": [
+        "within the period specified by (6) above",
+        "without prejudice to the general powers of the Commissioner to make assessments for other reasons,",
+        "rely on the failure to decide as acceptance"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Deadlines and filing > Seeking clearance under section 42",
+      "rule": "Incomplete/inaccurate facts or later changes void notification; a wider arrangement remains subject to review.",
+      "provision": "s42(9)\u2013(10)",
+      "page": 111,
+      "quotes": [
+        "full and accurate disclosure of all facts and considerations",
+        "if such facts and circumstances change, any notification given by the Commissioner under this section shall be void.",
+        "transactions or arrangements which include that Arrangement"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Deadlines and filing > Seeking clearance under section 42",
+      "rule": "Advance interpretation/clearance is conditional on acceptance of anonymised publication.",
+      "provision": "s42(11)\u2013(12)",
+      "page": 112,
+      "quotes": [
+        "shall give no advance notice of interpretation or clearance other than under the condition",
+        "willing to accept publication in accordance with (11)."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Deadlines and filing > Anti-avoidance decisions and appeal scope",
+      "rule": "Anti-avoidance decision identifies the person, arrangement parts, reasons and proposed assessment in writing.",
+      "provision": "s43(1)",
+      "page": 112,
+      "quotes": [
+        "must be served on any person affected in writing and must identify-",
+        "the person on whom the tax shall be assessed;",
+        "the reasons for the Commissioner\u2019s decision;",
+        "the amount of the assessment or further assessment proposed"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "Deadlines and filing > Anti-avoidance decisions and appeal scope",
+      "rule": "Section 43 appeal applies section 35 with the specified exclusion; Tribunal can confirm or remit for reconsideration.",
+      "provision": "s43(2)\u2013(3)",
+      "page": 112,
+      "quotes": [
+        "the provisions of Section 35 relating to appeals shall have effect",
+        "paragraph 13 of Schedule 2 shall not apply but the Tribunal may confirm",
+        "remit that decision back to him for his reconsideration"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "Financial undertakings and standalone entities are excluded; apply the complete statutory definitions.",
+      "provision": "Schedule4,18(1), PartIII definitions",
+      "page": "200\u2013202; definitions187\u2013189",
+      "quotes": [
+        "Financial undertakings",
+        "standalone entities shall be excluded from the scope of this Part."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "Exceeding borrowing costs are deductible borrowing costs above taxable interest and equivalent taxable revenues.",
+      "provision": "Schedule4,PartIII",
+      "page": "200\u2013202; definitions187\u2013189",
+      "quotes": [
+        "the amount by which the deductible borrowing costs of a taxpayer exceed taxable interest revenues and other economically equivalent taxable revenues;"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "Tax EBITDA adds tax-adjusted exceeding borrowing costs, depreciation and amortisation back to assessable income.",
+      "provision": "Schedule4,18(5)",
+      "page": "200\u2013202; definitions187\u2013189",
+      "quotes": [
+        "The EBITDA shall be calculated by adding back to the assessable income the tax-adjusted amounts for exceeding borrowing costs as well as the tax-adjusted amounts for depreciation and amortisation."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "Exclude non-assessable income from tax EBITDA.",
+      "provision": "Schedule4,18(5)",
+      "page": "200\u2013202; definitions187\u2013189",
+      "quotes": [
+        "Income not assessable in accordance with this Act shall be excluded from the EBITDA of a taxpayer."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "Ordinary limit is the greater of 30% of tax EBITDA and \u20ac3,000,000.",
+      "provision": "Schedule4,18(3)",
+      "page": "200\u2013202; definitions187\u2013189",
+      "quotes": [
+        "only up to the greater of the following two amounts-",
+        "30% of the taxpayer\u2019s EBITDA; or",
+        "\u20ac3,000,000."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "The \u20ac3,000,000 amount is for the entire group; no entity allocation rule is invented.",
+      "provision": "Schedule4,18(4)",
+      "page": "200\u2013202; definitions187\u2013189",
+      "quotes": [
+        "the amount of \u20ac3,000,000 shall be considered for the entire group."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "Equity/total-assets comparison permits a ratio up to two percentage points lower, with consistent valuation.",
+      "provision": "Schedule4,18(7)(a)",
+      "page": "200\u2013202; definitions187\u2013189",
+      "quotes": [
+        "lower by up to two percentage points; and",
+        "all assets and liabilities are valued using the same method as in the consolidated financial statements"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "Group ratio uses third-party group exceeding borrowing costs divided by group EBITDA, times taxpayer EBITDA.",
+      "provision": "Schedule4,18(7)(b)",
+      "page": "200\u2013202; definitions187\u2013189",
+      "quotes": [
+        "the group ratio is determined by dividing the exceeding borrowing costs of the group vis-\u00e0-vis third parties over the EBITDA of the group;",
+        "the group ratio is multiplied by the EBITDA of the taxpayer calculated pursuant to paragraph 18(5)."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "Costs disallowed under paragraphs 18(3)\u2013(7) may be carried forward indefinitely.",
+      "provision": "Schedule4,18(8)",
+      "page": "200\u2013202; definitions187\u2013189",
+      "quotes": [
+        "Exceeding borrowing costs not deductible in a tax period under paragraphs 18(3) to 18(7) may be carried forward indefinitely."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "Unused interest capacity may be carried forward for a maximum of five years.",
+      "provision": "Schedule4,18(8)",
+      "page": "200\u2013202; definitions187\u2013189",
+      "quotes": [
+        "Unused interest capacity which cannot be used in a given tax period may be carried forward for a maximum of 5 years."
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "Paragraph 18(6) literally refers to 19(3); no silent substitution or exemption certification.",
+      "provision": "Schedule4,18(6)",
+      "page": "200\u2013202; definitions187\u2013189",
+      "quotes": [
+        "Paragraph 19(3) shall not apply to exceeding borrowing costs related to-"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "Observed historic-loan description is pre 17 June 2016 excluding later modifications; the cross-reference limit remains.",
+      "provision": "Schedule4,18(6)(a)",
+      "page": "200\u2013202; definitions187\u2013189",
+      "quotes": [
+        "loans that were contracted before 17 June 2016, excluding any subsequent modification of such loans;"
+      ],
+      "read_on": "2026-10-28"
+    },
+    {
+      "section": "The base > Separate net-borrowing-cost limitation",
+      "rule": "Corporate/PE-specific taxpayer gate; an individual connected-party loan alone does not establish Part V scope.",
+      "provision": "Schedule 4, paragraph 8A",
+      "page": "190",
+      "quotes": [
+        "\u201ctaxpayer\u201d means an ordinarily resident company which has assessable income under the provisions of this Act",
+        "or a permanent establishment of any such company resident in the United Kingdom, a Member State of the European Union or a third country;"
+      ],
+      "read_on": "2026-10-28"
+    }
+  ],
+  "old_topics_map": "Regenerated from actual old/current full paragraphs; see old_paragraph_map, not shifted table positions.",
+  "old_paragraph_map": [
+    {
+      "number": 1,
+      "old_section": "Scope and relationship test",
+      "old_paragraph_sha256": "d4314761c20428e186685fb3de5d131e858243f5b5cc927de8f66cc648e22845",
+      "actual_old_anchor": "This Guide covers selected Schedule 4 rules for connected-party business and financing. It does not establish complete transfer-pricing, borrowing-cost,",
+      "destination": "Who this applies to > Scope and relationship test",
+      "current_paragraph_sha256": "d4314761c20428e186685fb3de5d131e858243f5b5cc927de8f66cc648e22845",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 2,
+      "old_section": "Scope and relationship test",
+      "old_paragraph_sha256": "e5da63107c35233f7dd1067e34b66a149c65cc6bda409c6d462e79e81064d446",
+      "actual_old_anchor": "Determine connected status under Schedule 4 paragraph 9, with control construed under paragraph 10. Common control, control exercised with connected",
+      "destination": "Who this applies to > Scope and relationship test",
+      "current_paragraph_sha256": "e5da63107c35233f7dd1067e34b66a149c65cc6bda409c6d462e79e81064d446",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 3,
+      "old_section": "Determine control from rights, not just registered shares",
+      "old_paragraph_sha256": "0fae77cf386f288f747a7b6178b95370e4c91e279dc8bc32c34edf143ebd85ea",
+      "actual_old_anchor": "Paragraph 10(1) covers a person who exercises, can exercise or is entitled to acquire direct or indirect control over company affairs. Its specific routes",
+      "destination": "Who this applies to > Determine control from rights, not just registered shares",
+      "current_paragraph_sha256": "0fae77cf386f288f747a7b6178b95370e4c91e279dc8bc32c34edf143ebd85ea",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 4,
+      "old_section": "Determine control from rights, not just registered shares",
+      "old_paragraph_sha256": "4a9b2831111925b26a4e586f324f34b65c2364f79a4a80d830a1592500858487",
+      "actual_old_anchor": "Two or more persons satisfying the conditions together are treated as controlling the company. Entitlements arising at a future date count. Rights held by",
+      "destination": "Who this applies to > Determine control from rights, not just registered shares",
+      "current_paragraph_sha256": "4a9b2831111925b26a4e586f324f34b65c2364f79a4a80d830a1592500858487",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 5,
+      "old_section": "Determine control from rights, not just registered shares",
+      "old_paragraph_sha256": "ee74b58ed7c1d0e69de32664e55359f5dd7dec2e84599a55bd74e05e2075e58d",
+      "actual_old_anchor": "Example: a person holds 40% of voting rights directly and a nominee holds a further 20% on that person's behalf. The attributed voting position is **40% +",
+      "destination": "Who this applies to > Determine control from rights, not just registered shares",
+      "current_paragraph_sha256": "ee74b58ed7c1d0e69de32664e55359f5dd7dec2e84599a55bd74e05e2075e58d",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 6,
+      "old_section": "Determine control from rights, not just registered shares",
+      "old_paragraph_sha256": "bf7ee849de912ba0d7187770ffe1b2dcc5c041b08b19f67fbb2c9d0ec1ee3aa6",
+      "actual_old_anchor": "Paragraph 10(5) additionally addresses rights of controlled companies and associates, including its specified attribution limits and the rule concerning",
+      "destination": "Who this applies to > Determine control from rights, not just registered shares",
+      "current_paragraph_sha256": "bf7ee849de912ba0d7187770ffe1b2dcc5c041b08b19f67fbb2c9d0ec1ee3aa6",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 7,
+      "old_section": "Connection extends beyond shareholders",
+      "old_paragraph_sha256": "14ae3bfe0783c6c7e7d19caa2ba7515f2e8705a587fe0c1b68c4500fc84640b7",
+      "actual_old_anchor": "Paragraph 9 connects companies under the specified common-control arrangements and a company with a person who controls it, alone or with connected",
+      "destination": "Who this applies to > Connection extends beyond shareholders",
+      "current_paragraph_sha256": "14ae3bfe0783c6c7e7d19caa2ba7515f2e8705a587fe0c1b68c4500fc84640b7",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 8,
+      "old_section": "Connection extends beyond shareholders",
+      "old_paragraph_sha256": "e3e268b3b6aca004a34df76df084f07f816b06f7f6423c18efd853f8b3257b5d",
+      "actual_old_anchor": "A \u201cparticipator\u201d under paragraph 11 includes persons with interests in company capital or income, rights to acquire capital or votes, specified loan",
+      "destination": "Who this applies to > Connection extends beyond shareholders",
+      "current_paragraph_sha256": "e3e268b3b6aca004a34df76df084f07f816b06f7f6423c18efd853f8b3257b5d",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 9,
+      "old_section": "Connection extends beyond shareholders",
+      "old_paragraph_sha256": "9353ce44a028984695fd2f982c4bff7504028927352e391765339fe6a59359a2",
+      "actual_old_anchor": "For associate attribution, paragraph 11(4) addresses relatives, partners, specified trustees and estate representatives. Paragraph 11(5)'s narrower",
+      "destination": "Who this applies to > Connection extends beyond shareholders",
+      "current_paragraph_sha256": "9353ce44a028984695fd2f982c4bff7504028927352e391765339fe6a59359a2",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 10,
+      "old_section": "Business-profit adjustment and excess interest",
+      "old_paragraph_sha256": "49f11c9f2ba4f83ef454b867e51562441d54549c1b098d8127eaa7461f4dcade",
+      "actual_old_anchor": "Where connected business is arranged so that the taxable person earns no profits, less than ordinary profits, or creates or increases a loss, paragraph",
+      "destination": "The base > Business-profit adjustment and excess interest",
+      "current_paragraph_sha256": "49f11c9f2ba4f83ef454b867e51562441d54549c1b098d8127eaa7461f4dcade",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 11,
+      "old_section": "Business-profit adjustment and excess interest",
+      "old_paragraph_sha256": "a14f6735b4c56e6c42f7b45e90b8b1c1ca327cbccc40ac7d5fea20b9b1e590ec",
+      "actual_old_anchor": "Paragraph 4(2) separately treats connected-party interest **above the amount payable to an arm's-length party** as a dividend and denies deduction of that",
+      "destination": "The base > Business-profit adjustment and excess interest",
+      "current_paragraph_sha256": "a14f6735b4c56e6c42f7b45e90b8b1c1ca327cbccc40ac7d5fea20b9b1e590ec",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 12,
+      "old_section": "Conditional thin capitalisation",
+      "old_paragraph_sha256": "6e290f0a183b0021df395f2b87b9511abd1154c20d61719e076894589115cbf8",
+      "actual_old_anchor": "Paragraph 2 applies where the company's loan-capital-to-equity ratio is **greater than 5:1 at any time in the accounting period**, subject to its",
+      "destination": "The base > Conditional thin capitalisation",
+      "current_paragraph_sha256": "6e290f0a183b0021df395f2b87b9511abd1154c20d61719e076894589115cbf8",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 13,
+      "old_section": "Conditional thin capitalisation",
+      "old_paragraph_sha256": "1857bb1fb0a7dcf049589e1df8510067808ce024f152b2387fff0cc0a6efab6a",
+      "actual_old_anchor": "- Interest to a connected person that is **not a company**; or - Interest to an arm's-length lender on a loan secured wholly or on **more than 50%** of",
+      "destination": "The base > Conditional thin capitalisation",
+      "current_paragraph_sha256": "1857bb1fb0a7dcf049589e1df8510067808ce024f152b2387fff0cc0a6efab6a",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 14,
+      "old_section": "Conditional thin capitalisation",
+      "old_paragraph_sha256": "a0952c5efbf4af15314abed0db95356cd3f470f3ff614c832fcd285d08884ff4",
+      "actual_old_anchor": "When the provision applies, the relevant interest is treated as a dividend and is not deductible. Do not describe every loan above 5:1 as automatically",
+      "destination": "The base > Conditional thin capitalisation",
+      "current_paragraph_sha256": "a0952c5efbf4af15314abed0db95356cd3f470f3ff614c832fcd285d08884ff4",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 15,
+      "old_section": "Conditional thin capitalisation",
+      "old_paragraph_sha256": "8a7b183c02bb38d5d945714cd631c47d341c3c7b6ea4671b68aa14515669442e",
+      "actual_old_anchor": "\u201cLoan capital\u201d means total interest-bearing debt. The specified equity definition includes preference shares regardless of accounting treatment,",
+      "destination": "The base > Conditional thin capitalisation",
+      "current_paragraph_sha256": "8a7b183c02bb38d5d945714cd631c47d341c3c7b6ea4671b68aa14515669442e",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 16,
+      "old_section": "Conditional thin capitalisation",
+      "old_paragraph_sha256": "a3c386aedaa58700f79c6e5129be9ff4741ac0de3329dac68c1be16be76ae86d",
+      "actual_old_anchor": "Example: qualifying loan capital \u00a3600,000 divided by statutory equity \u00a3100,000 gives **6:1**. That meets the ratio limb; lender, security and arm's-length",
+      "destination": "The base > Conditional thin capitalisation",
+      "current_paragraph_sha256": "a3c386aedaa58700f79c6e5129be9ff4741ac0de3329dac68c1be16be76ae86d",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 17,
+      "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+      "old_paragraph_sha256": "40545ce74e259c4f55ad4d48452f0eaae6108cc55691c1e765316894b40625c8",
+      "actual_old_anchor": "Schedule 4 paragraph 5 is a separate restriction from the 5:1 thin-capitalisation test. It applies where, at any time in a year, a person pays interest to",
+      "destination": "The base > Arm's-length loans secured by untaxed deposits or investments",
+      "current_paragraph_sha256": "40545ce74e259c4f55ad4d48452f0eaae6108cc55691c1e765316894b40625c8",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 18,
+      "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+      "old_paragraph_sha256": "68fe560ac9b9518e2a820e40d4b75dbce2996301bcfc65a098c3b536e12b8ca6",
+      "actual_old_anchor": "The cash-deposit route covers a deposit with the lender or a person connected to that lender, made by the borrower or a person connected to the borrower.",
+      "destination": "The base > Arm's-length loans secured by untaxed deposits or investments",
+      "current_paragraph_sha256": "68fe560ac9b9518e2a820e40d4b75dbce2996301bcfc65a098c3b536e12b8ca6",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 19,
+      "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+      "old_paragraph_sha256": "66a3ac5105abb609e9e21877824cb32b12f1677f5f46578597ccb155ee96a543",
+      "actual_old_anchor": "Where the provision applies, **the interest is not deductible**. It does not say to disallow only the fraction matching the security percentage. Paragraph",
+      "destination": "The base > Arm's-length loans secured by untaxed deposits or investments",
+      "current_paragraph_sha256": "66a3ac5105abb609e9e21877824cb32b12f1677f5f46578597ccb155ee96a543",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 20,
+      "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+      "old_paragraph_sha256": "b88a40010b55cbddee316e450a45ae2dff3f6ec022b00540b07e52f73a4386fa",
+      "actual_old_anchor": "**Conditional boundary example:** assume a \u00a3200,000 loan, \u00a312,000 interest, qualifying cash-deposit security covering \u00a3100,000 of the loan, non-assessable",
+      "destination": "Two worked examples that recompute > Example 1: secured-deposit threshold and boundary",
+      "current_paragraph_sha256": "b88a40010b55cbddee316e450a45ae2dff3f6ec022b00540b07e52f73a4386fa",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 21,
+      "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+      "old_paragraph_sha256": "df1f6a634de861ec18d58a690a49744ef50bbc28da5b0abe4ec316e03d39e9ab",
+      "actual_old_anchor": "```oa-check name: Secured cash-deposit loan substantial-part boundary inputs: loan: 200000 qualifying_security: 100000 below_boundary_security: 99999",
+      "destination": "Two worked examples that recompute > Example 1: secured-deposit threshold and boundary",
+      "current_paragraph_sha256": "df1f6a634de861ec18d58a690a49744ef50bbc28da5b0abe4ec316e03d39e9ab",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 22,
+      "old_section": "Arm's-length loans secured by untaxed deposits or investments",
+      "old_paragraph_sha256": "3f4160d3699f5075d491d696e144988ae95483fda6946e9c52a85d8ea70d87d7",
+      "actual_old_anchor": "Retain security deeds, the lender/borrower connection maps, covered loan amounts and changes during the year, interest records, tax treatment of the",
+      "destination": "The base > Arm's-length loans secured by untaxed deposits or investments",
+      "current_paragraph_sha256": "3f4160d3699f5075d491d696e144988ae95483fda6946e9c52a85d8ea70d87d7",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 23,
+      "old_section": "Aggregate connected-expense cap",
+      "old_paragraph_sha256": "d0e1c34b003116f1cf19765280e286f6497d95ea6e5ab65e57d31dd5189ba4cd",
+      "actual_old_anchor": "Paragraph 4(3) refers to the aggregate expenses incurred in favour of connected parties, collectively the \u201cExpense\u201d. Subject to the applicable exemption",
+      "destination": "The base > Aggregate connected-expense cap",
+      "current_paragraph_sha256": "d0e1c34b003116f1cf19765280e286f6497d95ea6e5ab65e57d31dd5189ba4cd",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 24,
+      "old_section": "Aggregate connected-expense cap",
+      "old_paragraph_sha256": "28dec2ed13763adb911c01be48adfce33b48567acfa0d3f375feedba99e2fe58",
+      "actual_old_anchor": "1. The Expense itself; 2. **5% of gross turnover**; and 3. **75% of pre-Expense net profit**, after first deducting available brought-forward",
+      "destination": "The base > Aggregate connected-expense cap",
+      "current_paragraph_sha256": "28dec2ed13763adb911c01be48adfce33b48567acfa0d3f375feedba99e2fe58",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 25,
+      "old_section": "Aggregate connected-expense cap",
+      "old_paragraph_sha256": "66095c13f5a9af275c414f5db140e68202d064ed89c8e765f155e12f9f686d64",
+      "actual_old_anchor": "Pre-Expense net profit adds the Expense back to net profit; paragraph 4(4) specifies the tax-computed profit and turnover bases. The test is aggregate,",
+      "destination": "The base > Aggregate connected-expense cap",
+      "current_paragraph_sha256": "66095c13f5a9af275c414f5db140e68202d064ed89c8e765f155e12f9f686d64",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 26,
+      "old_section": "Aggregate connected-expense cap",
+      "old_paragraph_sha256": "c9e174b2eeb5a9dc62a9e412fee0bab59136912cb8d9f58cf829fc9ece0aebef",
+      "actual_old_anchor": "Example: aggregate Expense \u00a380,000, statutory gross turnover \u00a31,000,000, pre-Expense net profit \u00a3100,000 and available brought-forward losses \u00a340,000. The",
+      "destination": "The base > Aggregate connected-expense cap",
+      "current_paragraph_sha256": "c9e174b2eeb5a9dc62a9e412fee0bab59136912cb8d9f58cf829fc9ece0aebef",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 27,
+      "old_section": "Shareholder advances and deemed distributions",
+      "old_paragraph_sha256": "4e8619b66ad182d3786b65398470427db82dd9b27af5f89cae242cdcd36504d5",
+      "actual_old_anchor": "Section 22 is a recipient-income rule, separate from the company's interest deduction tests above. It addresses specified company advances, loans, asset",
+      "destination": "The base > Shareholder advances and deemed distributions",
+      "current_paragraph_sha256": "4e8619b66ad182d3786b65398470427db82dd9b27af5f89cae242cdcd36504d5",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 28,
+      "old_section": "Shareholder advances and deemed distributions",
+      "old_paragraph_sha256": "d21012736082fe463538a9cc2ee0656ca4d8c80212f819cd906b89f4fc283403",
+      "actual_old_anchor": "The Commissioner determines how much represents a distribution of income. That amount is deemed income as if a dividend had been paid in the **year of",
+      "destination": "The base > Shareholder advances and deemed distributions",
+      "current_paragraph_sha256": "d21012736082fe463538a9cc2ee0656ca4d8c80212f819cd906b89f4fc283403",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 29,
+      "old_section": "Shareholder advances and deemed distributions",
+      "old_paragraph_sha256": "a34ba48dd005e379a72ee3b2cea10448f385c9d41812aba1946d3f03a4228b54",
+      "actual_old_anchor": "In forming that opinion, the Commissioner can presume the company distributes income before capital and distributes income in the order it arose",
+      "destination": "The base > Shareholder advances and deemed distributions",
+      "current_paragraph_sha256": "a34ba48dd005e379a72ee3b2cea10448f385c9d41812aba1946d3f03a4228b54",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 30,
+      "old_section": "Shareholder advances and deemed distributions",
+      "old_paragraph_sha256": "6ffab62f7c81fad4f8428d49ddcd7a0fa577c13235b2c53358def4d1c81a1a28",
+      "actual_old_anchor": "If a later dividend is paid and set off against an advance, loan or payment already deemed income, section 22(3) prevents the dividend being assessable",
+      "destination": "The base > Shareholder advances and deemed distributions",
+      "current_paragraph_sha256": "6ffab62f7c81fad4f8428d49ddcd7a0fa577c13235b2c53358def4d1c81a1a28",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 31,
+      "old_section": "Shareholder advances and deemed distributions",
+      "old_paragraph_sha256": "ad2a28171b0b1afb4da1801b667b2b3824fbfa0c8830dfade1fcd24aecd80f3f",
+      "actual_old_anchor": "**Worked example:** assume an earlier \u00a330,000 advance was fully treated as income under section 22(1). A later \u00a340,000 dividend is actually applied",
+      "destination": "Two worked examples that recompute > Example 2: dividend set-off after a deemed distribution",
+      "current_paragraph_sha256": "ad2a28171b0b1afb4da1801b667b2b3824fbfa0c8830dfade1fcd24aecd80f3f",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 32,
+      "old_section": "Shareholder advances and deemed distributions",
+      "old_paragraph_sha256": "36dcd30ae7c02a3481261362c432e96c73ce249fd702378ab3abc7cc6558bb3a",
+      "actual_old_anchor": "```oa-check name: Gibraltar dividend set-off against previously deemed shareholder income inputs: previously_deemed_advance: 30000 later_dividend: 40000",
+      "destination": "Two worked examples that recompute > Example 2: dividend set-off after a deemed distribution",
+      "current_paragraph_sha256": "36dcd30ae7c02a3481261362c432e96c73ce249fd702378ab3abc7cc6558bb3a",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 33,
+      "old_section": "Shareholder advances and deemed distributions",
+      "old_paragraph_sha256": "2f6eec26ec829e05c6f9faa4f8fa6bfe3d5b02966257b63e00244582fbe837d9",
+      "actual_old_anchor": "If only \u00a312,000 of that dividend is actually set off, this provision protects only \u00a312,000; a \u00a330,000 historic deemed-income balance does not itself",
+      "destination": "Two worked examples that recompute > Example 2: dividend set-off after a deemed distribution",
+      "current_paragraph_sha256": "2f6eec26ec829e05c6f9faa4f8fa6bfe3d5b02966257b63e00244582fbe837d9",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 34,
+      "old_section": "Exemption and evidence",
+      "old_paragraph_sha256": "e4c55559b2c519b09d9bc3a1fb8f1f0736e440a83a16d7ded356d73f34461fd0",
+      "actual_old_anchor": "Paragraph 7 states that paragraphs 2 and 4\u20136 do not apply where the person establishes the prescribed matters to the Commissioner's satisfaction. Its",
+      "destination": "The base > Exemption and evidence",
+      "current_paragraph_sha256": "e4c55559b2c519b09d9bc3a1fb8f1f0736e440a83a16d7ded356d73f34461fd0",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 35,
+      "old_section": "Exemption and evidence",
+      "old_paragraph_sha256": "2e7786f0e2ab5bad8d27904087118cfb8a9c2e393652038b35709839a09d6548",
+      "actual_old_anchor": "Paragraph 7(2) expressly applies the section 35 appeal route to the exemption decision as if it were an assessment, excluding Schedule 2 paragraph 13 and",
+      "destination": "The base > Exemption and evidence",
+      "current_paragraph_sha256": "2e7786f0e2ab5bad8d27904087118cfb8a9c2e393652038b35709839a09d6548",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 36,
+      "old_section": "Exemption and evidence",
+      "old_paragraph_sha256": "0952d36c35324835785c83ae5e2bc8973112987280d94d231a87fd751ac71869",
+      "actual_old_anchor": "A practical file should contain the relationship/control map, signed agreements, evidence of services or financing provided, pricing support, debt and",
+      "destination": "The base > Exemption and evidence",
+      "current_paragraph_sha256": "0952d36c35324835785c83ae5e2bc8973112987280d94d231a87fd751ac71869",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 37,
+      "old_section": "Exemption and evidence",
+      "old_paragraph_sha256": "838d2d867dd2191bb945c896fdfc8e4cf187bbf3e2abe073a0072cfe31bb7db4",
+      "actual_old_anchor": "Apply the resulting adjustment once in the tax computation and reconcile it to the [corporate-tax Guide](gi-corporate-tax.md). Preserve supporting",
+      "destination": "The base > Exemption and evidence",
+      "current_paragraph_sha256": "dc0f5d00b26bf497a7f11c9e46e72b780628717c271125b1d09655d7160bfdfc",
+      "full_paragraph_exact": false,
+      "disposition": "Original remaining-interest limit narrowed after supplied Part V; other original limits retained; obsolete pending-review sentence replaced by archive pointer"
+    },
+    {
+      "number": 38,
+      "old_section": "Seeking clearance under section 42",
+      "old_paragraph_sha256": "04635ac22e537ef4cb1c3e61feec90392c0b780e002c524ff385c0bed63d5cac",
+      "actual_old_anchor": "An applicant seeking confirmation that an effected or proposed arrangement is not taxable under section 40 or Schedule 4 must furnish full particulars",
+      "destination": "Deadlines and filing > Seeking clearance under section 42",
+      "current_paragraph_sha256": "04635ac22e537ef4cb1c3e61feec90392c0b780e002c524ff385c0bed63d5cac",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 39,
+      "old_section": "Seeking clearance under section 42",
+      "old_paragraph_sha256": "bd5fc03032d933e5d1f7dbcf3292caadbe5307253ae5b3689b22cfa8317f9af1",
+      "actual_old_anchor": "The statutory sequence distinguishes several **21-day**",
+      "destination": "Deadlines and filing > Seeking clearance under section 42",
+      "current_paragraph_sha256": "bd5fc03032d933e5d1f7dbcf3292caadbe5307253ae5b3689b22cfa8317f9af1",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 40,
+      "old_section": "Seeking clearance under section 42",
+      "old_paragraph_sha256": "f7ff50c815e92028002722330a90c27b51e438639f1c62f768877e4c87742ae5",
+      "actual_old_anchor": "| Event | Required next step | |---|---| | Commissioner receives insufficient particulars or further information | Within 21 days, notify the applicant of",
+      "destination": "Deadlines and filing > Seeking clearance under section 42",
+      "current_paragraph_sha256": "f7ff50c815e92028002722330a90c27b51e438639f1c62f768877e4c87742ae5",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 41,
+      "old_section": "Seeking clearance under section 42",
+      "old_paragraph_sha256": "5c615fb412ed538ea98ffea769fc552fd041e536f5e5b182a3fd499b2918613e",
+      "actual_old_anchor": "[Section 42(2)\u2013(7)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf). Keep receipt and notification",
+      "destination": "Deadlines and filing > Seeking clearance under section 42",
+      "current_paragraph_sha256": "5c615fb412ed538ea98ffea769fc552fd041e536f5e5b182a3fd499b2918613e",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 42,
+      "old_section": "Seeking clearance under section 42",
+      "old_paragraph_sha256": "ad8a63d6faf64d58acaa6ef0fc49aff828d32484dfbe6c0bb6214872814b9813",
+      "actual_old_anchor": "Subsection (8) permits reliance on failure to decide within the period specified by subsection (6), while preserving the Commissioner's general assessment",
+      "destination": "Deadlines and filing > Seeking clearance under section 42",
+      "current_paragraph_sha256": "ad8a63d6faf64d58acaa6ef0fc49aff828d32484dfbe6c0bb6214872814b9813",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 43,
+      "old_section": "Seeking clearance under section 42",
+      "old_paragraph_sha256": "2484f502ce79e4f7ab297fd6f54d825f30c27d23b985d2db66467fa167f4c8ba",
+      "actual_old_anchor": "**Boundary examples:** a taxpayer who sent only an initial application and received no answer cannot infer subsection (8) acceptance merely because 21",
+      "destination": "Deadlines and filing > Seeking clearance under section 42",
+      "current_paragraph_sha256": "2484f502ce79e4f7ab297fd6f54d825f30c27d23b985d2db66467fa167f4c8ba",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 44,
+      "old_section": "Seeking clearance under section 42",
+      "old_paragraph_sha256": "8d81fed21abba7bed48f5a1da4099aff8c1706b6bc236bc70c33016c8e9dbd89",
+      "actual_old_anchor": "A notification is void where the disclosure omits material facts or is not full and accurate, or where those facts and circumstances change. Clearance for",
+      "destination": "Deadlines and filing > Seeking clearance under section 42",
+      "current_paragraph_sha256": "8d81fed21abba7bed48f5a1da4099aff8c1706b6bc236bc70c33016c8e9dbd89",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    },
+    {
+      "number": 45,
+      "old_section": "Anti-avoidance decisions and appeal scope",
+      "old_paragraph_sha256": "6529c15af348f4b163a8e1bf1a94047f147dd7d245b25d7175bd12e74ba5bf89",
+      "actual_old_anchor": "Section 43 requires a written decision identifying the person assessed, affected/disregarded parts of the arrangements, reasons and proposed assessment",
+      "destination": "Deadlines and filing > Anti-avoidance decisions and appeal scope",
+      "current_paragraph_sha256": "6529c15af348f4b163a8e1bf1a94047f147dd7d245b25d7175bd12e74ba5bf89",
+      "full_paragraph_exact": true,
+      "disposition": "Full paragraph byte-exact"
+    }
+  ]
+}

@@ -1,0 +1,2276 @@
+{
+  "rows": [
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 1,
+      "claim": "A-income: wages, holiday pay, board fees, specified replacement benefits and employer cash gifts",
+      "source": "tax",
+      "range": [
+        693,
+        706
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 2,
+      "claim": "Foreign payers, statutory exceptions and doubtful A-income classification use their own rules; TAKS decides doubts",
+      "source": "tax",
+      "range": [
+        707,
+        711
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 3,
+      "claim": "Authorised settlement before payment; identity, period and amount; itemised withholding and written notice with every payment",
+      "source": "tax",
+      "range": [
+        712,
+        718
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 4,
+      "claim": "Tax, worker/employer charges, pension and holiday schedules are separate; pension transfer is not proof of employer contractual funding",
+      "source": "pension",
+      "range": [
+        331,
+        334
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 5,
+      "claim": "Health: resident eligible age18+, DKK175/month +0.70% taxable income",
+      "source": "health",
+      "range": [
+        415,
+        415
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 6,
+      "claim": "Parental 0.86%, each liable A-income recipient and payer",
+      "source": "parental",
+      "range": [
+        414,
+        432
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 7,
+      "claim": "ALS0.6% current operating rate",
+      "source": "alsreg",
+      "range": [
+        298,
+        298
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 8,
+      "claim": "Employee ALS650000 ceiling;3900 derived at0.6%, distinct employer payer",
+      "source": "als",
+      "range": [
+        333,
+        350
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 9,
+      "claim": "AMEG3% personal taxable base and separate3% paidA-income employer base",
+      "source": "ameg",
+      "range": [
+        307,
+        310
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 10,
+      "claim": "2026 pension12% combined eligibleA/B; annual mandatory gross150000 ceiling",
+      "source": "pension",
+      "range": [
+        330,
+        334
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 11,
+      "claim": "Current pension smallA contribution<30/B<500; equality not excluded",
+      "source": "pensionfeb",
+      "range": [
+        309,
+        310
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 12,
+      "claim": "Pension provisional40%; finalannex30% through235000 then0.5pp/5000 bands,39.5% through330000 then40%; refundtoaccount withoutinterest",
+      "source": "pension",
+      "range": [
+        412,
+        412
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 13,
+      "claim": "Final pension-tax annex endpoints and whole-contribution rates, abovezero235000at30;325000–330000at39.5;above330000at40",
+      "source": "pension",
+      "range": [
+        457,
+        522
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 14,
+      "claim": "Occupational disease employer0.05% paidA/selfemployed0.05% prior-year taxableincome",
+      "source": "injury",
+      "range": [
+        627,
+        631
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 15,
+      "claim": "Guarantee operating2/1000, not merelystatutoryceiling",
+      "source": "employer",
+      "range": [
+        23,
+        36
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 16,
+      "claim": "Guarantee statute maximum2/1000 and foreignFAS exclusions",
+      "source": "guarantee",
+      "range": [
+        313,
+        316
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 17,
+      "claim": "Holidaypay12%; monthlypaidleave+1.5% prior-earning-year supplement; departure route",
+      "source": "holiday",
+      "range": [
+        333,
+        336
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 18,
+      "claim": "Broadcasting separateannual prior-year payrollinvoice; no percentageworkercharge",
+      "source": "broadcast",
+      "range": [
+        24,
+        37
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 19,
+      "claim": "Separate actual taxableincome/A-income/scheme exclusions, payer and annualcumulative records",
+      "source": "tax",
+      "range": [
+        689,
+        690
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 20,
+      "claim": "HealthNordic exemption application, foreignpayment/noordinarydeduction, cessationnotice",
+      "source": "health",
+      "range": [
+        416,
+        419
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 21,
+      "claim": "Healthpartyear: exempt fixedcharge month vs actual exempt-periodincome, non-period income allocatedmonths",
+      "source": "healthreg",
+      "range": [
+        304,
+        313
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 22,
+      "claim": "HealthNordic application1Mayfollowing; evidencebyendfollowingyear and workcountry/employer/Faroeshare",
+      "source": "healthreg",
+      "range": [
+        298,
+        303
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 23,
+      "claim": "AMEG retirementexemption fromyearstartreachingage; newcomer within3years/neverprevioushome;FASownrule",
+      "source": "amegreg",
+      "range": [
+        298,
+        300
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 24,
+      "claim": "AMEGemployer liability even if employerretirementage; foreignFASexception",
+      "source": "ameg",
+      "range": [
+        310,
+        310
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 25,
+      "claim": "ALSworker16topensionage; payerownlimb, pensions/adaptedwork applications and treatyforeigninsurance",
+      "source": "als",
+      "range": [
+        333,
+        341
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 26,
+      "claim": "ALSbase exclusions, capped insuredperson650000; temporarypermit application fromreceipt uptooneyear",
+      "source": "als",
+      "range": [
+        342,
+        352
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 27,
+      "claim": "Parentalfulltax16topensionage, payerA-incomeFaroes; fixed-homeexemption fromreceipt",
+      "source": "parental",
+      "range": [
+        414,
+        420
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 28,
+      "claim": "Parentalownexclusions and self-employed voluntaryinsurance",
+      "source": "parental",
+      "range": [
+        421,
+        450
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 29,
+      "claim": "Occupationaldiseasefund doesnotreplace workinjuryinsurance",
+      "source": "injury",
+      "range": [
+        326,
+        332
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 30,
+      "claim": "Guaranteegovernmentbenefitpayerexception",
+      "source": "guarantee",
+      "range": [
+        313,
+        315
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 31,
+      "claim": "Fullyliablebelowpensionage/civilservice/studentforeignexceptions; own§3list",
+      "source": "pension",
+      "range": [
+        307,
+        315
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 32,
+      "claim": "Pre1954 and approvedlegacyDanish pension arrangement do not implyuniversal12% alladults",
+      "source": "pension",
+      "range": [
+        447,
+        451
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 33,
+      "claim": "Existing qualifying contributions, voluntarymore, statutorycap, salarytransfer and deduction/contributiontax separate",
+      "source": "pension",
+      "range": [
+        331,
+        334
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 34,
+      "claim": "Paidcontributionsdeduction/exclusion andincome-year paymentrule",
+      "source": "pension",
+      "range": [
+        413,
+        415
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 35,
+      "claim": "12% throughout2026; permittedsalarytransfers andcurrentpayment machinery",
+      "source": "pensionreg",
+      "range": [
+        298,
+        310
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 36,
+      "claim": "Before28Feb smallcontribution below30 AandB;249×12%=29.88zero,250×12%=30due",
+      "source": "pension2020",
+      "range": [
+        301,
+        303
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 37,
+      "claim": "Pre28Feb temporaryjobactualTAKSapprovedexemption, maximum60monthsaggregate",
+      "source": "pension-original",
+      "range": [
+        35,
+        41
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 38,
+      "claim": "From28Feb: Bbelow500/Abelow30; replaceexemptionwithdeparture refund≤60months; repeatrefund10years",
+      "source": "pensionfeb",
+      "range": [
+        301,
+        312
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 39,
+      "claim": "28Feb commencement isdayafterpublication27Feb",
+      "source": "pensionfeb",
+      "range": [
+        331,
+        348
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 40,
+      "claim": "Pre28Febforeignemployer/NAVorTAKSsatisfactoryforeignplan; nonumeric12%floor inownthenlaw",
+      "source": "pension2021",
+      "range": [
+        301,
+        303
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 41,
+      "claim": "Originalforeignplan75%continuingpayments; compulsorycontract/employerproof/nochoiceFaroeseprovider;otherincome",
+      "source": "foreign2023-original",
+      "range": [
+        18,
+        42
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 42,
+      "claim": "From28Feb statutoryforeign/combinedfundinglevel12% under§2(1)",
+      "source": "pensionfeb",
+      "range": [
+        320,
+        322
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 43,
+      "claim": "From25Aug explicit75% andforeign12%foreignincome orcombined12%totalincome",
+      "source": "foreignaug",
+      "range": [
+        298,
+        316
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 44,
+      "claim": "Foreignplanpersonalorcollectiveapplication1Mayfollowing, contract/employercertification, electronicannualproviderstatementwithreturn",
+      "source": "foreign2023-exact",
+      "range": [
+        305,
+        313
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 45,
+      "claim": "Separateclaimant30kforeignincome2700foreigncontribution: preFebnostatednumericfloor;Marchrequires3600so900qualifyingFaroestopup",
+      "source": "pensionfeb",
+      "range": [
+        320,
+        322
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 46,
+      "claim": "Bpartyearexplicitdayswithoutduty/365;100000×12%×292/365=9600;1Novfollowingpayment",
+      "source": "pension",
+      "range": [
+        335,
+        336
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 47,
+      "claim": "13Octearly/disabilityapprovedpayoutchange; rateunchanged",
+      "source": "pensionoct",
+      "range": [
+        298,
+        326
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 48,
+      "claim": "30daysfullservice, ordinaryearning1Apr–31Maroragreedcalendar; proportionateshortservice",
+      "source": "holiday",
+      "range": [
+        319,
+        321
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 49,
+      "claim": "Leaveyear2May–1May andcontinuousleaveperiod",
+      "source": "holiday",
+      "range": [
+        325,
+        330
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 50,
+      "claim": "Excludeholidaywages/holidaypay/supplement;taxablebenefits includedofficialorhigheragreedvaluation",
+      "source": "holiday",
+      "range": [
+        336,
+        339
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 51,
+      "claim": "Departuremonthlypaid§11(2), notdouble12%+1.5%;TAKSapprovedsettlementaccountstatutoryroute",
+      "source": "holiday",
+      "range": [
+        334,
+        335
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 52,
+      "claim": "CurrentTAKSadminandoldfundabolition",
+      "source": "holiday",
+      "range": [
+        353,
+        367
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 53,
+      "claim": "Money/worthincomeandexemptionsmustbefact-tested",
+      "source": "tax",
+      "range": [
+        434,
+        438
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 54,
+      "claim": "2026scheduleVATincluded",
+      "source": "values",
+      "range": [
+        23,
+        25
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 55,
+      "claim": "Housing1644/m²",
+      "source": "values",
+      "range": [
+        26,
+        27
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 56,
+      "claim": "Electricity12400",
+      "source": "values",
+      "range": [
+        31,
+        32
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 57,
+      "claim": "Oil/districtheat31500",
+      "source": "values",
+      "range": [
+        36,
+        38
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 58,
+      "claim": "Otherheat14700",
+      "source": "values",
+      "range": [
+        42,
+        43
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 59,
+      "claim": "Meals47/61/81daily",
+      "source": "values",
+      "range": [
+        47,
+        62
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 60,
+      "claim": "Electric/plugin56800/65900/79700/86000weightbands",
+      "source": "values",
+      "range": [
+        63,
+        85
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 61,
+      "claim": "Other/nonplugin62400/71900/86300/96800weightbands",
+      "source": "values",
+      "range": [
+        86,
+        108
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 62,
+      "claim": "Taxi≤ten23000",
+      "source": "values",
+      "range": [
+        109,
+        113
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 63,
+      "claim": "Van60%correspondingpassengercar",
+      "source": "values",
+      "range": [
+        114,
+        124
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 64,
+      "claim": "Provedemployeeactualpaymenttoemployerreducesassetbenefit,floorzero;56800−5000=51800,60000paymentgives0",
+      "source": "vlsd",
+      "range": [
+        52,
+        54
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 65,
+      "claim": "Provedprivatecarusebelow10000kmannualstandardreducedproportionately;private/businesslog",
+      "source": "vlsd",
+      "range": [
+        55,
+        57
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 66,
+      "claim": "Partyearcar4000actualprivatekm×56800/10000=22720; nosixmonthautomatic28400",
+      "source": "vlsd",
+      "range": [
+        55,
+        57
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 67,
+      "claim": "Employer-ownedworkcomputer/phoneexclusions",
+      "source": "tax",
+      "range": [
+        489,
+        499
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 68,
+      "claim": "Foreign-home temporaryFaroeworkfreehousing/travel: stay<180days/12months;countinterruptions;additionalnotdeductedfromwages",
+      "source": "benefits",
+      "range": [
+        68,
+        71
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 69,
+      "claim": "Faroese-home/foreign-worktravelownexemption",
+      "source": "tax",
+      "range": [
+        498,
+        498
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 70,
+      "claim": "EmployerreportsbenefitsandexemptpaymentsVinnugluggin31Janfollowing;exceptionpaper;employeeownreturn",
+      "source": "benefits",
+      "range": [
+        24,
+        31
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 71,
+      "claim": "Asettlementbeforepaymentandpayslipeachpayment",
+      "source": "tax",
+      "range": [
+        712,
+        718
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 72,
+      "claim": "AMEGemployerinvoice20daysfromsent;alternativeauthoriseddebit",
+      "source": "amegreg",
+      "range": [
+        301,
+        306
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 73,
+      "claim": "ALSbefore24Jul:7daysfrominvoice;DKK100each",
+      "source": "alsold",
+      "range": [
+        449,
+        453
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 74,
+      "claim": "ALSfrom24Jul:currentmonth+7workingdaysfrominvoicesent;DKK100each",
+      "source": "alsjuly",
+      "range": [
+        305,
+        324
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 75,
+      "claim": "Parentalcontributionwhensalarypaid/received, settledbeforepayout",
+      "source": "parental",
+      "range": [
+        428,
+        430
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 76,
+      "claim": "PensionwithAsalary,B1Novfollowing,partyearownrule",
+      "source": "pension",
+      "range": [
+        331,
+        336
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 77,
+      "claim": "HealthNordic1Mayfollowing/evidenceendfollowingyear",
+      "source": "healthreg",
+      "range": [
+        299,
+        301
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 78,
+      "claim": "Annualwagereport31Jan; reconcileledger/copiesforworker",
+      "source": "tax",
+      "range": [
+        858,
+        869
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 79,
+      "claim": "HolidaypayduewithwagesandcurrentTAKSroute",
+      "source": "holiday",
+      "range": [
+        333,
+        333
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 80,
+      "claim": "Books5yearsFYend, tracecorrections andclosure/managementnoend",
+      "source": "books",
+      "range": [
+        332,
+        359
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 81,
+      "claim": "Tax0.7%percommencedmonthstatedliabilities/recovery;intentgrosssanctionsnotinventedfixedfine",
+      "source": "tax",
+      "range": [
+        1043,
+        1046
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 82,
+      "claim": "Taxintent/grossinformationorwithholdingfailuresstatutorysanctions",
+      "source": "tax",
+      "range": [
+        1057,
+        1076
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 83,
+      "claim": "ALS1%percommencedmonth",
+      "source": "als",
+      "range": [
+        354,
+        354
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 84,
+      "claim": "AMEG0.7%includingbookedinterest",
+      "source": "ameg",
+      "range": [
+        315,
+        315
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 85,
+      "claim": "Health0.7%includingbookedinterest/recoverywrongexemption",
+      "source": "health",
+      "range": [
+        418,
+        426
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 86,
+      "claim": "Injury0.7%includingbookedinterest",
+      "source": "injury",
+      "range": [
+        631,
+        631
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 87,
+      "claim": "Guarantee0.7%percommencedmonthfromduedate, fineforspecifiedbreach",
+      "source": "guarantee",
+      "range": [
+        317,
+        317
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 88,
+      "claim": "Guaranteestatutoryfineforfailurepay/provideinformation",
+      "source": "guarantee",
+      "range": [
+        328,
+        330
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 89,
+      "claim": "Holiday1.5%commencedmonthfromdue",
+      "source": "holiday",
+      "range": [
+        342,
+        342
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 90,
+      "claim": "Holidayfailure/prohibitedwaiverfine/legalpersonliability",
+      "source": "holiday",
+      "range": [
+        370,
+        374
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 91,
+      "claim": "Pension20000dailyproviderreporting/administrativebreaches, recoveryseparate",
+      "source": "pension",
+      "range": [
+        434,
+        436
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 92,
+      "claim": "Scheme-specificforeigncoverage/FAS/pensiondifferences; noautomaticall-schemeexemption",
+      "source": "als",
+      "range": [
+        333,
+        352
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 93,
+      "claim": "ForeignnonAincomeliabilityandNordicdomiciletestownALSbase",
+      "source": "als",
+      "range": [
+        310,
+        314
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 94,
+      "claim": "Twooriginal30kmonthlyand700k/1.5mannualoaexamplespreserved; numbersareassumedinputsandderivedresults, notnewstatutoryfigures",
+      "source": "employer",
+      "range": [
+        23,
+        36
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 95,
+      "claim": "Final pension annextoprate39.5% through330000 and40% above330000",
+      "source": "pension",
+      "range": [
+        515,
+        522
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 96,
+      "claim": "Cash employer gifts and board remuneration A-income",
+      "source": "tax",
+      "range": [
+        700,
+        703
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 97,
+      "claim": "Employee information eachpayment, identityperiodA-income/offsets/nontaxablebenefits",
+      "source": "tax",
+      "range": [
+        718,
+        718
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 98,
+      "claim": "AMEGpersonal/employerseparate statutorybase",
+      "source": "ameg",
+      "range": [
+        307,
+        307
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 99,
+      "claim": "AMEGinvoice20days",
+      "source": "amegreg",
+      "range": [
+        305,
+        305
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 100,
+      "claim": "PensionB1Novemberfollowing",
+      "source": "pension",
+      "range": [
+        336,
+        336
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 101,
+      "claim": "ALSold7days and100fee",
+      "source": "alsold",
+      "range": [
+        452,
+        453
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-payroll-contributions",
+      "row": 102,
+      "claim": "Workphoneexclusion",
+      "source": "tax",
+      "range": [
+        499,
+        499
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 1,
+      "claim": "P/FSp/Fownlimitedliability, notpreregistrationrelease",
+      "source": "company",
+      "range": [
+        326,
+        327
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 2,
+      "claim": "NewAct206officialURL203;1Jan2026FYstart;priorframeworkpreservedfor2025starts;oldimplementingrulesuntilreplaced",
+      "source": "accounts",
+      "range": [
+        1407,
+        1408
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 3,
+      "claim": "Oneormorefounders/capacity/insolvencyconditions",
+      "source": "company",
+      "range": [
+        444,
+        448
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 4,
+      "claim": "P/FSp/Fsuffix/nameconditions",
+      "source": "company",
+      "range": [
+        329,
+        332
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 5,
+      "claim": "P/Fboard/supervisory≥3+executive;Sp/Fexecutivewithemployeerepresentationexception",
+      "source": "company",
+      "range": [
+        850,
+        855
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 6,
+      "claim": "Signedformationdocument/articles;subscriptionprices/deadlines/effect/costs;specialbenefit/noncash/auditelection",
+      "source": "company",
+      "range": [
+        449,
+        475
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 7,
+      "claim": "Noncashvaluable,nofutureworkorclaimsagainstfounders;valuationindependent≤4weeksunless§38",
+      "source": "company",
+      "range": [
+        499,
+        520
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 8,
+      "claim": "Formationregistrationwithin2weekssignature; paymentproofbyregistration;management/auditorselectionwithin2weeksifnotalready",
+      "source": "company",
+      "range": [
+        521,
+        527
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 9,
+      "claim": "Registeredmanagement/auditorandfileridentity/evidence",
+      "source": "company",
+      "range": [
+        405,
+        405
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 10,
+      "claim": "Shareholderrecords/forms;ownerformwithformationpapers",
+      "source": "forms",
+      "range": [
+        44,
+        49
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 11,
+      "claim": "Underformationdesignationandjointpreregistrationresponsibility,futureeffectlimits",
+      "source": "company",
+      "range": [
+        529,
+        532
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 12,
+      "claim": "TAKSregistration≥8daysbeforeactivity,articles/memorandum/register/form;ownsalaryAincome",
+      "source": "start",
+      "range": [
+        25,
+        38
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 13,
+      "claim": "P/Fminimum500000equivalent",
+      "source": "company",
+      "range": [
+        338,
+        338
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 14,
+      "claim": "Sp/Fminimum50000equivalent",
+      "source": "company",
+      "range": [
+        338,
+        338
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 15,
+      "claim": "Cash≥25%and≥50000,proportionatepershare;P/Fpremiumfull",
+      "source": "company",
+      "range": [
+        488,
+        488
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 16,
+      "claim": "Noncashfullcapitalandpremium;ordinaryvaluation≤4weeks",
+      "source": "company",
+      "range": [
+        488,
+        488
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 17,
+      "claim": "SelectedSp/Fpremiumsamefractionascapital;§40express§33incorporation;literalallpremiumcountertextvisible",
+      "source": "company",
+      "range": [
+        488,
+        488
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 18,
+      "claim": "Literal§40allpremiumpaidsambært§33;selectedspecificincorporationratherthanRegistrarholding",
+      "source": "company",
+      "range": [
+        524,
+        524
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 19,
+      "claim": "Sp/F200000capital/100000premiumat25%:50000+25000=75000;isolatedfullpremiumalternative150000;minimum50k+20kpremium=70k",
+      "source": "company",
+      "range": [
+        488,
+        488
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 20,
+      "claim": "Legal5%andcrossings5/10/15/20/25/50/90/100and1/3,2/3",
+      "source": "company",
+      "range": [
+        580,
+        582
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 21,
+      "claim": "Small55massets111msales50FTEtwoofthree/twoyears",
+      "source": "accounts",
+      "range": [
+        406,
+        410
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 22,
+      "claim": "Medium195m391m250;largerandclassDdistinct",
+      "source": "accounts",
+      "range": [
+        411,
+        415
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 23,
+      "claim": "Newoptout1.25m/2.5m/12twoofthree/twoyears",
+      "source": "accounts",
+      "range": [
+        1185,
+        1188
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 24,
+      "claim": "Newextendedreview15m/30m/15twoofthree/twoyears",
+      "source": "accounts",
+      "range": [
+        1181,
+        1184
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 25,
+      "claim": "Oldoptout1m/2m/12;oldextended12m/24m/15andexclusions/elections",
+      "source": "prior",
+      "range": [
+        1065,
+        1074
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 26,
+      "claim": "Non12monthsalesannualisation;financialinvestmentincomecombinedif≥sales;classD/groupoverrides",
+      "source": "accounts",
+      "range": [
+        416,
+        423
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 27,
+      "claim": "Shareholderregisterprompt,identity/holding/voting/acquisition/disposal/pledge;foreignidentity",
+      "source": "company",
+      "range": [
+        559,
+        573
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 28,
+      "claim": "Holder/pledgeenotification2weeks",
+      "source": "company",
+      "range": [
+        574,
+        574
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 29,
+      "claim": "Significantowner2weeksaftercrossing;formationatlatestwithregistration;laterprompt",
+      "source": "company",
+      "range": [
+        587,
+        602
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 30,
+      "claim": "Naturalpersonultimatedirectindirectorothercontrol,nofixedimported5%UBO",
+      "source": "company",
+      "range": [
+        377,
+        377
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 31,
+      "claim": "InitialUBOnolaterthanformationregistration",
+      "source": "company",
+      "range": [
+        613,
+        613
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 32,
+      "claim": "Promptawareness/updates;exhaustedidentificationdailyregisteredmanagementnotinventedowner",
+      "source": "company",
+      "range": [
+        604,
+        606
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 33,
+      "claim": "Atleastannualreviewatmanagementapprovalmeeting",
+      "source": "company",
+      "range": [
+        607,
+        607
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 34,
+      "claim": "Evidence5yearsafterownershipends;attempts5yearsafterattempt",
+      "source": "company",
+      "range": [
+        608,
+        608
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 35,
+      "claim": "Equitybelowhalfcapital:meetingwithin6monthsfromfinding/explain/proposemeasures",
+      "source": "company",
+      "range": [
+        881,
+        881
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 36,
+      "claim": "ClassBreportcomponentsandonepersonmanagementstatementexception",
+      "source": "accounts",
+      "range": [
+        522,
+        522
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 37,
+      "claim": "ClassCreportaddsequity/cashflows",
+      "source": "accounts",
+      "range": [
+        756,
+        756
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 38,
+      "claim": "OrdinaryauditB/C/D;50moverride/foundation/holdingdisqualifications;approvedFaroeseauditor",
+      "source": "accounts",
+      "range": [
+        1181,
+        1200
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 39,
+      "claim": "FormationorAGMauditelectiondecisionnotjustsizetest",
+      "source": "company",
+      "range": [
+        457,
+        462
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 40,
+      "claim": "Companychangesordinarily2weekswithowncompaniesdeadlinecomputation",
+      "source": "company",
+      "range": [
+        402,
+        404
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 41,
+      "claim": "AGMearlyenoughtoreceiveaccountsontime",
+      "source": "company",
+      "range": [
+        732,
+        737
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 42,
+      "claim": "RegistrarB/C6months,D4monthsafterFYend",
+      "source": "accounts",
+      "range": [
+        1217,
+        1217
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 43,
+      "claim": "PriorlawB/C6months,D4months",
+      "source": "prior",
+      "range": [
+        1097,
+        1097
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 44,
+      "claim": "Companytaxreturn1Julyfollowingyear;distinctRegistrar",
+      "source": "tax",
+      "range": [
+        799,
+        801
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 45,
+      "claim": "Newfirstperiod≤18months;ordinary12months",
+      "source": "accounts",
+      "range": [
+        474,
+        475
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 46,
+      "claim": "Yearchangenotification6monthsoldendand6monthstransitionend;classD4months",
+      "source": "accounts",
+      "range": [
+        481,
+        481
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 47,
+      "claim": "Calendar2025Registrar30Jun2026/tax1Jul2026;2026Registrar30Jun2027/tax1Jul2027;ownnonworkingadjustments",
+      "source": "accounts",
+      "range": [
+        1217,
+        1217
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 48,
+      "claim": "Accountsnonworkingdayadjustmentstatutorycomputation",
+      "source": "accounts",
+      "range": [
+        1297,
+        1301
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 49,
+      "claim": "Registrarcompliance≥8workingdays,dissolution4weekpoint",
+      "source": "accounts",
+      "range": [
+        1286,
+        1288
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 50,
+      "claim": "Eachmanager500first/total2000second/total3000third/cap3000,not5500",
+      "source": "accounts",
+      "range": [
+        1289,
+        1292
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 51,
+      "claim": "Exceptionalrelief:notblamingstaff/advisersalone",
+      "source": "accounts",
+      "range": [
+        1294,
+        1295
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 52,
+      "claim": "Old§§150–151correspondingdemand/charge",
+      "source": "prior",
+      "range": [
+        1159,
+        1167
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 53,
+      "claim": "Correctfacts/managementauditorcapital/resolution;Registrarwithin3monthsreferral;restructuringsuspension;5yearprior/finaldecisionbars",
+      "source": "company",
+      "range": [
+        1346,
+        1354
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 54,
+      "claim": "Originalandcorrectedrecords,transaction/documenttraceability/reconciliation",
+      "source": "books",
+      "range": [
+        331,
+        345
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 55,
+      "claim": "FiveyearsFYend/access/reproducible",
+      "source": "books",
+      "range": [
+        344,
+        346
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 56,
+      "claim": "ForeigndigitalstorageaccessinFaroes/systempassworddescription/paperexceptions",
+      "source": "books",
+      "range": [
+        348,
+        356
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 57,
+      "claim": "Closure/managementnoendretention",
+      "source": "books",
+      "range": [
+        359,
+        359
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 58,
+      "claim": "Specific independent valuation not olderthan4weeks",
+      "source": "company",
+      "range": [
+        505,
+        507
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 59,
+      "claim": "Management/auditor election meeting within2weeks ifnotalready",
+      "source": "company",
+      "range": [
+        521,
+        521
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 60,
+      "claim": "P/F governingbody at least3persons",
+      "source": "company",
+      "range": [
+        853,
+        853
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 61,
+      "claim": "Newextendedreview15m30m15",
+      "source": "accounts",
+      "range": [
+        1182,
+        1184
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 62,
+      "claim": "Oldextendedreview12m24m15",
+      "source": "prior",
+      "range": [
+        1066,
+        1068
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 63,
+      "claim": "Oldoptout1m2m12",
+      "source": "prior",
+      "range": [
+        1069,
+        1072
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 64,
+      "claim": "Significantownership thresholds all specified percentages/fractions",
+      "source": "company",
+      "range": [
+        582,
+        582
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 65,
+      "claim": "Promptupdates andexhaustedidentification fallback",
+      "source": "company",
+      "range": [
+        606,
+        606
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 66,
+      "claim": "One-person managementstatement exception",
+      "source": "accounts",
+      "range": [
+        437,
+        437
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 67,
+      "claim": "Trueandfair/accountingconsistencyandaccrualrules",
+      "source": "accounts",
+      "range": [
+        449,
+        473
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 68,
+      "claim": "New50massets mandatoryauditoverrideandfoundationexception",
+      "source": "accounts",
+      "range": [
+        1189,
+        1190
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 69,
+      "claim": "ApprovedFaroeseauditor",
+      "source": "accounts",
+      "range": [
+        1198,
+        1198
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 70,
+      "claim": "Companyreturn1July following year",
+      "source": "tax",
+      "range": [
+        801,
+        801
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 71,
+      "claim": "AGM early enough for accountsreceipt",
+      "source": "company",
+      "range": [
+        737,
+        737
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 72,
+      "claim": "Non-working-day accountsdeadline adjustment",
+      "source": "accounts",
+      "range": [
+        1301,
+        1301
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 73,
+      "claim": "Demand at least8workingdays andfour-weekdissolutionpoint",
+      "source": "accounts",
+      "range": [
+        1287,
+        1288
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 74,
+      "claim": "500/total2000/total3000 eachmanager, cap3000",
+      "source": "accounts",
+      "range": [
+        1291,
+        1291
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 75,
+      "claim": "Blamingstafforadvisers notbyitselfrelief",
+      "source": "accounts",
+      "range": [
+        1295,
+        1295
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 76,
+      "claim": "Three-monthreferral,5yearpriorbarandrestructuringsuspension",
+      "source": "company",
+      "range": [
+        1350,
+        1350
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "row": 77,
+      "claim": "Finaldissolutiondecisionbarsrestoration",
+      "source": "company",
+      "range": [
+        1353,
+        1353
+      ],
+      "verdict": "Independently assessed within stated conditions; operational/research limits preserved"
+    }
+  ],
+  "quote_issues": [],
+  "source_identity_checks": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/tax.html",
+      "sha256": "c89b4bd1c224eec5260575e26b000eb27e79420ecab708772e70a7baa3120c3c"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/tax.reader.txt",
+      "sha256": "94477e906a110fd8be8056270dc2684cc6318a395df4cd6f24fab7c198d3588d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension.html",
+      "sha256": "56a36479be91731e744edbf46ec24da19d66e4e6715c7579dda0bb5399142f42"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension.reader.txt",
+      "sha256": "db890adf5eba22f3b149e0f0aecb29fd48a5e4a184bad301c25f1df2d1ae6e14"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/health.html",
+      "sha256": "f1fd06d3331540dae93788c2897cf2c608fb68eb966deb6d4f2ab36e01a23c5e"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/health.reader.txt",
+      "sha256": "efee05345445921dc4ae739e88cefd60c4324696708c79ff31e747288a9750dd"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/parental.html",
+      "sha256": "b44f3fb617776f63aeefc7e832df92d754e0cacb15a51b5313e408e704d5c54b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/parental.reader.txt",
+      "sha256": "d008f2de1e21cf86e0cdde4cf724a1bc2d239db8fb7ee233ec29cc0182da700e"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/alsreg.html",
+      "sha256": "a6dce59021b177569ed19df0b3de7501d82ed3e3980c75220707d00552692357"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/alsreg.reader.txt",
+      "sha256": "fb3937e32faf301228d1cea7e9ebc077423b2ddffb4561b0720772684fb5372e"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/als.html",
+      "sha256": "75df5747cc15968b8f807a2180a5a11c46ba391d1924541ed39d2493d7a7dae1"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/als.reader.txt",
+      "sha256": "a83f88da0774a0b4339d49122bf1c06cf7f804562422d314318ad829c514f458"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/ameg.html",
+      "sha256": "ce6715d3409fc6a2617d196efc2204bf6e2e723fb071a7c04e1d13a3eaf8211d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/ameg.reader.txt",
+      "sha256": "44a244439f6b2f5ca711668418e555f83bf33ede7f7f7baf32da2d7cddce48a2"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pensionfeb.html",
+      "sha256": "79738e723f584a9bad40ce0b75eefe8fe02f9425318e22a14c25af8130bd73f9"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pensionfeb.reader.txt",
+      "sha256": "2bb298b9d90c409c25831ff0fd356cdb20a2041603a894c8c20679eff1abf490"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/injury.html",
+      "sha256": "2750be563e4659d3cf1107da26d2ab65d31ad64a507e18468c6759461880d172"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/injury.reader.txt",
+      "sha256": "827230d14fda2f20d9e0c7856d6ac10f84eed758250ba0714f3ca8dc011abc24"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/employer.html",
+      "sha256": "c9a2f4ed4849eec115d6a9dbe01f90a86fd379cabf34106b49295ba55b551419"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/employer.reader.txt",
+      "sha256": "e6e10cfecaea68209f5c76025b7891afad050442ac63d22c71a54b4fca9ad298"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/guarantee.html",
+      "sha256": "81e5165d9ec8558a0fffa912147e5ae4199c1a75e8706751f3b43b110ceee369"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/guarantee.reader.txt",
+      "sha256": "e15aaad2fbd8ba278012e4747282d13908e6261e0dc8fe957e179a975283a41d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/holiday.html",
+      "sha256": "d78637bdb258f41abd33b34839b419a28ae85aaae6240d6dd1a903710d5b836e"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/holiday.reader.txt",
+      "sha256": "a612f9c37a5a394a8ac53487f888a810864de69b65c9f17ac486d76e2039da09"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/broadcast.html",
+      "sha256": "55871504aaf3b7e9791d0b9d5b4d80454daa12c3df084e2411c226f9258e2772"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/broadcast.reader.txt",
+      "sha256": "0aaa0f9e6b86bc895993d1d9e361d7767694f8ac0197d791c6526c7a75e02722"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/healthreg.html",
+      "sha256": "9090e1b9d3fa33aefcc05024dc9b3de47c866d0e99a9f0ac3a7d1c8e7cb71a3d"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/healthreg.reader.txt",
+      "sha256": "c47caba002062fee36417d11edc47f4e7e17b478a0d81f11259b0a92b9d5cab9"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/amegreg.html",
+      "sha256": "352d985dec155814f0aa35bc48bb4532e4b2da041f199b2d87822da1ad91aa10"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/amegreg.reader.txt",
+      "sha256": "250e5047f53f07c63bb886ccc46db408b1e17589f9f63a7439a070fd34698396"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pensionreg.html",
+      "sha256": "e675dcdbda64249afab44d98b0584d8e37bef9fefaa835b274fc2615dfa093d2"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pensionreg.reader.txt",
+      "sha256": "f93b09e968d6bbe57ada1356d8b8642de7e7b02f8bc5310d09a6476f51dbeae6"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension2020.html",
+      "sha256": "18875eeda35556b859304b5b077640b69f34305d82664d3d0e2a7d66beff8b28"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension2020.reader.txt",
+      "sha256": "5d08fe670313eeaf07aa89e57d8e6fedc43046c5cce39304db85244971e310ad"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension-original.pdf",
+      "sha256": "a2d5be75110094fe5e41c63e2b38e9a4fbd7ea8488eea6276e263412cca9c056"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension-original.reader.txt",
+      "sha256": "5748694e2d0169b3a05c07f204c1bf4b3a9d539d83f40237a0c2d5015130a02b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension2021.html",
+      "sha256": "9c49c15f49878f30114b6655df8d4780432afc4978cf7288390b892b5f30eb8e"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pension2021.reader.txt",
+      "sha256": "19bd27590b3ac19f7cfb483b1d5a170bea6aca59f6724097b29264c5e7dd9f34"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreign2023-original.pdf",
+      "sha256": "732f3c4de3b228ee90aeb8f4c6474f3bd49769fa614510d55bd803df54428d8b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreign2023-original.reader.txt",
+      "sha256": "d81d83a15aa9e2b98d832f02f2d1f1e81b855d6e55d67f331d38de5a64ce103c"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreignaug.html",
+      "sha256": "4ae763cc55d09bb8fa326e8ba8011e2633410cb43caeae8d2241c4494531d3c0"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreignaug.reader.txt",
+      "sha256": "8f87f761441e18bfb482662d73f2aca9dc157e36e3b3df64561b2c527adf6356"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreign2023-exact.html",
+      "sha256": "cd02b592df2f5b9f6f31fd692b66c01efb6d2732125a25754fe9bb6af0bc7259"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/foreign2023-exact.reader.txt",
+      "sha256": "fe40de548fa1d62c7bfa36d36b17c769118c895fea1158bd60f9dd3076fd760e"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pensionoct.html",
+      "sha256": "419d993ec5ffa98108bc93a739cba52444d0f9ef2fa90ce759ebde660cf23a24"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/pensionoct.reader.txt",
+      "sha256": "461900dca19b0fa9defd2f79e2c5f6014fca4c38387ee2b59f5599fc809d2d9b"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/values.html",
+      "sha256": "34344f9a5def1b028ba884bcf90d744f7767af0eba2345c22769cbec6a57653a"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/values.reader.txt",
+      "sha256": "58e6e955ebb5df26fe53c9e996cc6c9712fcce55a69460be6248019c72ef63be"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/vlsd.html",
+      "sha256": "900ed6edf8e58c6c153790b6db7c296a562476f91d89d605f22053f7c068ac95"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/vlsd.reader.txt",
+      "sha256": "06a60adfb8400024e15e3f2783122c42dba5d6fba59b8b36bd31f2ab84c1a0fc"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/benefits.html",
+      "sha256": "27ccb12d79e2c99ce0e053a09bd1472c6df4432b7f0d02ff336b74ca28452d72"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/benefits.reader.txt",
+      "sha256": "39ee790dfefc647ff7fe7c0792914c067bdec6536d121ef8c2ac924ad88da0a4"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/alsold.html",
+      "sha256": "16f8ec579089a8bd886ac3aaa996e3812c99cb2bd0f049911d293d32f6271432"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/alsold.reader.txt",
+      "sha256": "7dff2697a48c631deb61052bd9581fc59415038daac7f1c1d6c92f1a65abbecf"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/alsjuly.html",
+      "sha256": "668fae72ae6e2f96b8e37131e594bb5de8539bce02862f2c299513b5e21e4bf7"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/alsjuly.reader.txt",
+      "sha256": "baa4b26c34a068206b33b1bdd03a066227e340c57cc5d9632b75dd56a85f0e3f"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/books.html",
+      "sha256": "07d62219e686fc8676e9a36fc7d8a22cbc25a9c259b36897f2cb0fb03bea1499"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/books.reader.txt",
+      "sha256": "1d59557947a76391414b45f76556f279ea706e73751f9fb0eefa458e475d31e7"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/company.html",
+      "sha256": "cbe98e2377382138462fe6e24ee23d36e67f34a4218bae60f63bb9b59b868e8c"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/company.reader.txt",
+      "sha256": "24c73365080dcba70178e230cece3787d8c7996767d21f352bb0890866b6f2d2"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/accounts.html",
+      "sha256": "d2daccf0b69b0145bf69792b3149f399d74e67057ab12a34b9403fd6fdc9d0ba"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/accounts.reader.txt",
+      "sha256": "12a4cfd946388614acb7060a4a441022d656320a167f3de4408a4c2866ea2e54"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/forms.html",
+      "sha256": "ee6a4c4c18046469bc8ab4bcacb66202c547a9c7dbbadff590dd37ddbe5ff9c7"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/forms.reader.txt",
+      "sha256": "5890f7a3992ec872ddf3685e32c0c6147755f638470c88b2ab50e79f7a3f2f94"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/start.html",
+      "sha256": "a82bdc425e327ba1498ae2d9f6ff8a9d20322e6fab7880d5d2467eae6216bed5"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/start.reader.txt",
+      "sha256": "2549fa04d30af2e47058e5bdbb00970809cbdc260d877071cab18dc2a957a6c2"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/prior.html",
+      "sha256": "97acb40907d21d5dd07e2c8df4f6f77b3e09e56a43538f72ddf4c6e4f0f7f6e5"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-faroe/skills/research/faroe-islands-2026/ordinary-completion-2026-10-28/payroll-formation-sources/prior.reader.txt",
+      "sha256": "0168564e82d167f62725680ad9086eb6124c44f883b0bc8dfd67cbaa7076b135"
+    }
+  ],
+  "protection": [
+    {
+      "slug": "fo-payroll-contributions",
+      "sha256": "966f2af989d24fb363086d49b5c5040751b0673190db597ddbcb0f00d5091383",
+      "ledger_sha256": "d331d7761c5501a284a9ce821edfcd651f5340bca27a171d17b320b28a9665db",
+      "rows": 102,
+      "main_oa_exact": 2,
+      "whole_inverse": true,
+      "forward_rebuild": true,
+      "old_URL_occurrence_order": true,
+      "protected_metadata": true,
+      "old_H2_order": true,
+      "byline_CTA_suffix": true
+    },
+    {
+      "slug": "fo-company-registration-reporting",
+      "sha256": "b6812fa88d586c353c8ca7fdfaed60591519226949223f0b12db55630009c72e",
+      "ledger_sha256": "b7b6eb0327ee54c442b6467dfc6ada7dbf689e9501b347db4745272a33cd9d9e",
+      "rows": 77,
+      "main_oa_exact": 0,
+      "whole_inverse": true,
+      "forward_rebuild": true,
+      "old_URL_occurrence_order": true,
+      "protected_metadata": true,
+      "old_H2_order": true,
+      "byline_CTA_suffix": true
+    }
+  ]
+}

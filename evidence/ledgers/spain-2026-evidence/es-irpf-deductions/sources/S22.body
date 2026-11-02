@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="DOGC-f-2026-90237 Corrección de erratas en la Ley 11/2026, de 9 de julio, de medidas fiscales, financieras, administrativas y del sector público." />
+    <title>BOE.es - DOGC-f-2026-90237 Corrección de erratas en la Ley 11/2026, de 9 de julio, de medidas fiscales, financieras, administrativas y del sector público.</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/diario-boe.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/texto.css" type="text/css">
+  
+    <link rel="canonical" href="https://www.boe.es/buscar/doc.php?id=DOGC-f-2026-90237"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor" tabindex="-1">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/" tabindex="-1">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" srcset="/imagenes/logoMPRmovil.svg" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" srcset="/imagenes/logoMPR.svg" alt="Ministerio de la Presidencia"></a></span>
+
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+        
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <span class="fuera">Idioma actual:</span>
+            <input id="activar-idiomas" type="checkbox" class="fuera">
+            <label class="idioma-actual" for="activar-idiomas" title="Idiomas: Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="fuera"> / </span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <ul id="lista-idiomas">
+              <li><a href="doc.php?lang=es&amp;id=DOGC-f-2026-90237" lang="es" hreflang="es"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><span class="fuera"> / </span><em>Castellano</em></span></a></li>
+              <li><a href="doc.php?lang=ca&amp;id=DOGC-f-2026-90237" lang="ca" hreflang="ca"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><span class="fuera"> / </span><em>Catal&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=gl&amp;id=DOGC-f-2026-90237" lang="gl" hreflang="gl"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><span class="fuera"> / </span><em>Galego</em></span></a></li>
+              <li><a href="doc.php?lang=eu&amp;id=DOGC-f-2026-90237" lang="eu" hreflang="eu"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><span class="fuera"> / </span><em>Euskara</em></span></a></li>
+              <li><a href="doc.php?lang=va&amp;id=DOGC-f-2026-90237" lang="ca-valencia" hreflang="ca-valencia"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><span class="fuera"> / </span><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=en&amp;id=DOGC-f-2026-90237" lang="en" hreflang="en"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><span class="fuera"> / </span><em>English</em></span></a></li>
+              <li><a href="doc.php?lang=fr&amp;id=DOGC-f-2026-90237" lang="fr" hreflang="fr"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><span class="fuera"> / </span><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;" class="fuera">
+          <label class="click-desplegar resto" for="activar-menu" title="Men&uacute;: Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe">BOE</a></li>
+                  <li><a href="/diario_borme">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones</a></li>
+                  <li><a href="/edictos_judiciales">Edictos judiciales</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                  <li><a href="/datosabiertos/api/api.php">Datos abiertos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscar/">Buscar</a></li>        <li class="destino">Documento DOGC-f-2026-90237</li>
+        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolBdatos">
+<h2 class="fuera">Documento DOGC-f-2026-90237</h2>
+<div class="enlacesDoc" id="barraSep">
+  <h3 class="documento-tit">Corrección de erratas en la Ley 11/2026, de 9 de julio, de medidas fiscales, financieras, administrativas y del sector público.</h3>
+  <div class="metadatosDoc">
+    <div class="metadatos">
+      <dl>
+        <dt>Publicado en:</dt>
+        <dd>«<abbr title="Diari Oficial de la Generalitat de Catalunya">DOGC</abbr>» <abbr title="número">núm.</abbr> 9763, de 2 de octubre de 2026, páginas 3 a 6 (4 <abbr title="páginas">págs.</abbr>)</dd>
+        <dt>Departamento:</dt>
+        <dd>Comunidad Autónoma de Cataluña</dd>
+        <dt>Referencia:</dt>
+        <dd>DOGC-f-2026-90237</dd>
+      </dl>
+    </div>
+    <ul class="enlaces-doc">
+      <li class="tit-enlaces">Otros formatos:</li>
+      <li class="puntoPDF">
+        <a title="Documento PDF de la publicación original" href="/ccaa/dogc/2026/9763/f00003-00006.pdf">PDF</a>
+      </li>
+      <li class="puntoXML">
+        <a target="_blank" href="/buscar/xml.php?id=DOGC-f-2026-90237" title="Texto y metadatos en formato XML">XML</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .metadatosDoc -->
+</div>
+<!-- .enlacesDoc -->
+<div class="pretexto">
+  <div class="tabs">
+    <input name="tabs" type="radio" id="tab-texto" class="input" checked="checked"/>
+    <label for="tab-texto" class="label">Texto</label>
+    <div id="DOdocText" class="panel">
+      <h4>TEXTO ORIGINAL</h4>
+      <div id="textoxslt">
+        <p class="parrafo">Habiéndose detectado unas erratas en la Ley 11/2026, de 9 de julio, de medidas fiscales, financieras, administrativas y del sector público, publicada en el DOGC núm. 9706, de 13 de julio de 2026, procede realizar las siguientes correcciones:</p>
+        <p class="parrafo_2">– En el artículo 21,</p>
+        <p class="parrafo_2">Donde consta todo el redactado del artículo 21, debe decir:</p>
+        <p class="parrafo_2">«Artículo 21 [sin contenido]»</p>
+        <p class="parrafo_2">– En el artículo 39, apartado 14,</p>
+        <p class="parrafo_2">Donde dice:</p>
+        <p class="parrafo_2">«[...] 2.º Las bases reguladoras pueden considerar el otorgamiento mediante un procedimiento de concurrencia competitiva simple, en el que el único criterio para establecer el orden de prelación de las solicitudes de subvención sea su fecha de presentación.</p>
+        <p class="parrafo_2">[...] 3.º De manera excepcional y siempre de manera razonada, las bases reguladoras pueden prever el otorgamiento de la subvención mediante un procedimiento de concesión sucesiva en que la concesión de las subvenciones únicamente exige el cumplimiento de los requisitos previamente establecidos en las bases reguladoras de las solicitudes válidamente presentadas dentro de un plazo limitado, sin efectuar entre ellas ninguna evaluación comparativa ni consideración conjunta [...]».</p>
+        <p class="parrafo_2">Debe decir:</p>
+        <p class="parrafo_2">«[...] 2.º Las bases reguladoras pueden considerar el otorgamiento mediante un procedimiento de concurrencia no competitiva simple, en el que el único criterio para establecer el orden de prelación de las solicitudes de subvención sea su fecha de presentación.</p>
+        <p class="parrafo">[...] 3.º De forma excepcional y siempre de forma razonada, las bases reguladoras pueden prever el otorgamiento de la subvención mediante un procedimiento de concurrencia no competitiva con concesión sucesiva en que la concesión de las subvenciones únicamente exige el cumplimiento de los requisitos previamente establecidos en las bases reguladoras de las solicitudes válidamente presentadas dentro de un plazo limitado, sin efectuar entre ellas ninguna evaluación comparativa ni consideración conjunta [...]».</p>
+        <p class="parrafo_2">– En el artículo 87,</p>
+        <p class="parrafo_2">Donde dice:</p>
+        <p class="parrafo_2">«f) Los ingresos y las deudas públicas o privadas, las ayudas públicas o privadas percibidas y la carga de las deudas judiciales de los miembros de la unidad económica de convivencia, judiciales con impacto económico o sobre la vivienda.»</p>
+        <p class="parrafo_2">Debe decir:</p>
+        <p class="parrafo_2">«f) Los ingresos y las deudas públicas o privadas, las ayudas públicas o privadas percibidas y la carga de las deudas judiciales de los miembros de la unidad económica de convivencia, con impacto económico o sobre la vivienda.»</p>
+        <p class="parrafo_2">– En el artículo 91, apartado 1,</p>
+        <p class="parrafo_2">Donde dice:</p>
+        <p class="parrafo_2">«5 <em>bis</em>. El departamento competente en materia de infraestructuras y servicios de transporte, con el informe de la Dirección General de Urbanismo, puede establecer [...]».</p>
+        <p class="parrafo_2">Debe decir:</p>
+        <p class="parrafo_2">«5 <em>bis</em>. El departamento competente en materia de infraestructuras y servicios de transporte, con el informe de la dirección general competente en materia de ordenación del territorio y urbanismo, puede establecer [...]».</p>
+        <p class="parrafo_2">– En el artículo 100, apartado 23,</p>
+        <p class="parrafo_2">Donde dice:</p>
+        <p class="parrafo_2">«4. Son infracciones muy graves en materia de arrendamientos y de contención de rentas:</p>
+        <p class="parrafo_2">a) Establecer o repercutir, en un contrato de arrendamiento, de cesión de uso, de subarrendamiento o en cualquier otro negocio jurídico sujeto al régimen de contención de rentas, una renta, precio u otras contraprestaciones económicas que ultrapasen los importes máximos admisibles de acuerdo con la normativa de aplicación, cuando la diferencia sea igual o inferior al treinta por ciento. [...]».</p>
+        <p class="parrafo_2">Debe decir:</p>
+        <p class="parrafo_2">«4. Son infracciones muy graves en materia de arrendamientos y de contención de rentas:</p>
+        <p class="parrafo_2">a) Establecer o repercutir, en un contrato de arrendamiento, de cesión de uso, de subarrendamiento o en cualquier otro negocio jurídico sujeto al régimen de contención de rentas, una renta, precio u otras contraprestaciones económicas que ultrapasen los importes máximos admisibles de acuerdo con la normativa aplicable, cuando la diferencia sea superior al treinta por ciento. [...]».</p>
+        <p class="parrafo_2">– En el artículo 128,</p>
+        <p class="parrafo_2">Donde dice:</p>
+        <p class="parrafo_2">«[...] 2. El cambio de adscripción a que hace referencia el apartado 1 tendrá una duración máxima de tres años, sin perjuicio de que, para las adscripciones que finalicen durante el año 2026, se pueda prorrogar este plazo hasta el 31 de diciembre de 2028, previa acreditación de su necesidad mediante memoria justificativa de la unidad directiva responsable. [...]».</p>
+        <p class="parrafo_2">Debe decir:</p>
+        <p class="parrafo_2">«[...] 2. El cambio de adscripción a que hace referencia el apartado 1 tendrá una duración máxima de tres años, sin perjuicio de que, para las adscripciones que finalicen durante el año 2026 o el año 2027, se pueda prorrogar este plazo hasta el 31 de diciembre de 2028, previa acreditación de su necesidad mediante memoria justificativa de la unidad directiva responsable. [...]».</p>
+        <p class="parrafo_2">– En el artículo 144, apartado 1,</p>
+        <p class="parrafo_2">Donde dice:</p>
+        <p class="parrafo_2">«1. Se modifica la letra <em>f</em> del apartado 1 del artículo 41 del Decreto 157/2010, de 2 de noviembre, de reestructuración de la Secretaría de Vivienda, creación del Observatorio del Hábitat y la Segregación Urbana y aprobación de los Estatutos de la Agencia de la Vivienda de Cataluña [...]».</p>
+        <p class="parrafo_2">Debe decir:</p>
+        <p class="parrafo_2">«1. Se modifica la letra <em>f</em> del apartado 1 del artículo 41 del anexo del Decreto 157/2010, de 2 de noviembre, de reestructuración de la Secretaría de Vivienda, creación del Observatorio del Hábitat y la Segregación Urbana y aprobación de los Estatutos de la Agencia de la Vivienda de Cataluña [...]».</p>
+        <p class="parrafo_2">– En el artículo 144, apartado 2,</p>
+        <p class="parrafo_2">Donde dice:</p>
+        <p class="parrafo_2">«Se modifica la letra<em> c</em> del artículo 47 del Decreto 157/2010, que queda redactada del siguiente modo: [...]».</p>
+        <p class="parrafo_2">Debe decir:</p>
+        <p class="parrafo_2">«Se modifica la letra <em>c</em> del artículo 47 del anexo del Decreto 157/2010, que queda redactada del siguiente modo: [...]».</p>
+        <p class="parrafo_2">– En la disposición adicional tercera,</p>
+        <p class="parrafo_2">Donde dice:</p>
+        <p class="parrafo_2">«[...] de acuerdo con lo establecido por el artículo 25.3 de la Ley de presupuestos de la Generalitat de Catalunya para 2026.»</p>
+        <p class="parrafo_2">Debe decir:</p>
+        <p class="parrafo_2">«[...] de acuerdo con lo establecido por el artículo 25.4 de la Ley de presupuestos de la Generalitat de Catalunya para 2026.»</p>
+        <p class="parrafo_2">– En la disposición derogatoria, apartado 2, letra <em>f</em>,</p>
+        <p class="parrafo_2">Donde dice:</p>
+        <p class="parrafo_2">«f) La letra <em>g</em> del apartado 2 del artículo 5; el apartado 3 del artículo 7; el artículo 10 y la disposición final segunda de la Ley 13/2009, de 22 de julio, de la Agencia de la Vivienda de Cataluña.»</p>
+        <p class="parrafo_2">Debe decir:</p>
+        <p class="parrafo_2">«f) La letra <em>g</em> del apartado 2 del artículo 5; la letra g del apartado 3 del artículo 7; el artículo 10 y la disposición final segunda de la Ley 13/2009, de 22 de julio, de la Agencia de la Vivienda de Cataluña.»</p>
+        <p class="parrafo_2">– En la disposición derogatoria, apartado 3, letra <em>g</em>,</p>
+        <p class="parrafo_2">Donde dice:</p>
+        <p class="parrafo_2">«g) La letra <em>f</em> del apartado 3 del artículo 1; la letra <em>k</em> del apartado 2 del artículo 2, el artículo 35; las letras <em>d</em> y <em>e</em> del artículo 37; el apartado 2 del artículo 41 del Decreto 157/2010, de 2 de noviembre, de reestructuración de la Secretaría de Vivienda, creación del Observatorio del Hábitat y la Segregación Urbana y aprobación de los Estatutos de la Agencia de la Vivienda de Cataluña.»</p>
+        <p class="parrafo_2">Debe decir:</p>
+        <p class="parrafo_2">«g) La letra <em>f</em> del apartado 3 del artículo 1; la letra <em>k</em> del apartado 2 del artículo 2; el artículo 35; las letras <em>d</em> y <em>e</em> del artículo 37, y el apartado 2 del artículo 41 del anexo del Decreto 157/2010, de 2 de noviembre, de reestructuración de la Secretaría de Vivienda, creación del Observatorio del Hábitat y la Segregación Urbana y aprobación de los Estatutos de la Agencia de la Vivienda de Cataluña.»</p>
+        <p class="parrafo_2">– En la disposición final quinta, rúbrica,</p>
+        <p class="parrafo_2">Donde dice:</p>
+        <p class="parrafo_2">«Impulso de la Casa de Oficios de Creación y Producción Audiovisual y creación de otros proyectos para desarrollar políticas activas de empleo».</p>
+        <p class="parrafo_2">Debe decir:</p>
+        <p class="parrafo_2">«Impulso de la Escuela de Oficios de Reus y creación de otros proyectos para desarrollar políticas activas de empleo».</p>
+        <p class="parrafo_2">Palacio del Parlamento, 15 de septiembre de 2026.‒El Secretario segundo, Juli Fernàndez Olivares.‒El Presidente, Josep Rull i Andreu.</p>
+      </div>
+      <!-- #textoxslt -->
+    </div>
+    <!-- #DOdocText -->
+    <input name="tabs" type="radio" id="tab-analisis" class="input"/>
+    <label for="tab-analisis" class="label">Análisis</label>
+    <div class="panel" id="panelAnalisis">
+      <div id="analisis" class="analisisDoc">
+<h4>ANÁLISIS</h4>
+<ul class="bullet-boe">
+  <li>Rango: Corrección (errores o erratas)</li>
+  <li>Fecha de publicación: 02/10/2026</li>
+  <li>La corrección de erratas de las normas relacionadas se establecen por estar modificadas por la Ley 11/2026, de 9 de julio.</li>
+</ul>
+<h5>Referencias anteriores</h5>
+<ul class="bullet-boe">
+  <li>CORRECCIÓN de erratas en la Ley 11/2026, de 9 de julio (Ref. <a href="/buscar/doc.php?id=DOGC-f-2026-90190">DOGC-f-2026-90190</a>).</li>
+  <li>CORRIGE erratas:
+    <ul class="bullet-boe">
+      <li>de la Ley 3/2023, de 16 de marzo (Ref. <a href="/buscar/doc.php?id=BOE-A-2023-10344">BOE-A-2023-10344</a>).</li>
+      <li>de la Ley 2/2014, de 27 de enero (Ref. <a href="/buscar/doc.php?id=BOE-A-2014-2999">BOE-A-2014-2999</a>).</li>
+      <li>de la Ley 13/2009, de 22 de julio (Ref. <a href="/buscar/doc.php?id=BOE-A-2009-13565">BOE-A-2009-13565</a>).</li>
+      <li>del texto refundido aprobado por Decreto Legislativo 3/2008, de 25 de junio (Ref. <a href="/buscar/doc.php?id=DOGC-f-2008-90017">DOGC-f-2008-90017</a>).</li>
+      <li>de la Ley 18/2007, de 28 de diciembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2008-3657">BOE-A-2008-3657</a>).</li>
+      <li>de la Ley 4/2006, de 31 de marzo (Ref. <a href="/buscar/doc.php?id=BOE-A-2006-8213">BOE-A-2006-8213</a>).</li>
+      <li>del texto refundido aprobado por Decreto Legislativo 3/2002, de 24 de diciembre (Ref. <a href="/buscar/doc.php?id=DOGC-f-2002-90024">DOGC-f-2002-90024</a>).</li>
+      <li>en el Decreto 157/2010, de 2 de noviembre (DOGC núm. 5753, de 11 de noviembre de 2010).</li>
+    </ul>
+  </li>
+</ul>
+<h5>Materias</h5>
+<ul class="bullet-boe">
+  <li>Arrendamientos urbanos</li>
+  <li>Asistencia social</li>
+  <li>Ayudas</li>
+  <li>Casas de Oficios</li>
+  <li>Cataluña</li>
+  <li>Ferrocarriles</li>
+  <li>Funcionarios públicos</li>
+  <li>Infracciones</li>
+  <li>Ordenación del territorio</li>
+  <li>Organización de las Comunidades Autónomas</li>
+  <li>Procedimiento administrativo</li>
+  <li>Retribuciones</li>
+  <li>Tasas</li>
+  <li>Viviendas</li>
+</ul>
+</div>
+    </div>
+  </div>
+</div>
+<p class="linkSubir"><a href="#top">subir</a></p>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php">Sobre la sede electr&oacute;nica</a></div></li>
+            <li><div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div></li>
+            <li><div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div></li>
+            <li><div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php#proteccion-de-datos">Protecci&oacute;n de datos</a></div></li>
+            <li><div class="enlace"><a href="/informacion/sistema_interno_informacion.php">Sistema Interno de Informaci&oacute;n</a></div></li>
+            <li><div class="enlace"><a href="/informacion/tutoriales/">Tutoriales</a></div></li>
+            <li><div class="enlace"><a href="/transparencia/empleo/">Empleo en la AEBOE</a></div></li>
+            </ul>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace icono"><a href="/rss/" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=tw" lang="es" title="boegob, el BOE en X"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="X"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=fb" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=ln" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=yt" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div></li>
+            </ul>
+            </div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>

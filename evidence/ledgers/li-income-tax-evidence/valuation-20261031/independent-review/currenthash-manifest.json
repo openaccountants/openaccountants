@@ -1,0 +1,112 @@
+{
+  "candidate": "28cc685e5f771be8a997c4b4fdcb889c7e9ec496",
+  "source_review_candidate": "6656f8a86a02d98aa5548790be1ba672b47a3786",
+  "files": [
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/arithmetic.json",
+      "bytes": 10100,
+      "sha256": "c208fbb59412ea4a1a6109f55c8c6152bd8912810a1ce0dbae54cbbc8cb1d402"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/continuity.json",
+      "bytes": 679,
+      "sha256": "4a18009aba81859a52e978309ba72de6b1d0876efe948dfdcd05b571c587452b"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/exacthash-after.json",
+      "bytes": 2546,
+      "sha256": "0d6019de310973f811bcb76471a136a8f37c3c3af060df2ce77fbe6e90558724"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/exacthash-before.json",
+      "bytes": 2545,
+      "sha256": "ec9a8a8a4d0b8b15be44c453cda5c00e5e7b68082c9d0133cc7071becdbe6a2d"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/exacthash-manifest.json",
+      "bytes": 2725,
+      "sha256": "7d90b4105cd19689288a7a5d293e461bb88f53ebd50e6a592d6597a6ee83732d"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-checks.py",
+      "bytes": 4871,
+      "sha256": "8835368496f7df52d6ffae6841620ea09dac6677cdb4b711a756ffd49586b555"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-review.json",
+      "bytes": 22287,
+      "sha256": "cbaac5e1bc8e3f276b0d505e563dc8df61aa5474edbea7d2026daca9a2dd28aa"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-review.md",
+      "bytes": 11076,
+      "sha256": "431326fb10158aa79d4802624a3397d889e56df18c13179bc9756d711122773a"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/workbook-original-ooxml.json",
+      "bytes": 39576,
+      "sha256": "6a53d7e8e56380025bb728a1e15fbfd4a405b5a1d764ec68482e2eba9fcb26c2"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/source-receipt.json",
+      "bytes": 1734,
+      "sha256": "5a49a2d1ff292832a850854872dfe78228d96c15a9f2cda32c49b33ae8b49c82"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/source-workbook-extraction.json",
+      "bytes": 26696,
+      "sha256": "da2bea4928c088dd9e39023d81cb4f1cdf7e133a4b26190616aea2ee8fe0b8ef"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf",
+      "bytes": 756868,
+      "sha256": "082a7e63a5247914fc7c6b796ccfeb0afc8ddda56149e2254a9e95bfc7635553"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.txt",
+      "bytes": 89584,
+      "sha256": "4f2754c6d2fad9f11ce29ebcc598e74dda070676cd457d82d65903f926e93dc6"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx",
+      "bytes": 25232,
+      "sha256": "1fe280b5fc8b88908cff0383973a686d6b83395813d47dec92c8e7b0a4f5dedc"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/valuation-controls.md",
+      "bytes": 7279,
+      "sha256": "046c4b0dab8b7780dfcb00b1f0ada23b22a968b319999093f236ddb1eb210ebe"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/writer-addition-manifest.json",
+      "bytes": 570,
+      "sha256": "02fca4b935d403d4e44730d4d73bcee83027cdd8bed6eedb1e983fcde8686a9a"
+    },
+    {
+      "path": "ledgers/li-income-tax-evidence/valuation-20261031/writer-preservation.json",
+      "bytes": 469,
+      "sha256": "10d211a4a4ab82b299de900b18320a121d6ac14976491a67b6ee98b5f01f0df7"
+    },
+    {
+      "path": "ledgers/li-income-tax.md",
+      "bytes": 49381,
+      "sha256": "837e4c060da20556798d62e19552ca1c0d3dba6379879308b68a49a75a93811e"
+    },
+    {
+      "path": "ledgers/li-income-tax.writer.json",
+      "bytes": 178801,
+      "sha256": "b8c2ddd6e2e4c381ee1abac9e9abef1f6e6f423708f96220cceee353516ccbd2"
+    },
+    {
+      "path": "skills/international/liechtenstein/README.md",
+      "bytes": 4559,
+      "sha256": "c22d4a064ff43efcffaeff824bf5275e8954f4c8537e10cc5d1ca77f16d8ed19"
+    },
+    {
+      "path": "skills/international/liechtenstein/li-income-tax.md",
+      "bytes": 33049,
+      "sha256": "c770d7be9dc78fc14d1c34f388e0123b30b265ffccc4672bad11beb6b52ccaec"
+    }
+  ],
+  "all_source_and_reviewed_candidate_bytes_unchanged_during_check": true
+}

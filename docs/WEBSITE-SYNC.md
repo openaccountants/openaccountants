@@ -99,7 +99,7 @@ revision tokens only — never credentials, database identifiers, or guide text:
 
 ```json
 {
-  "skills/international/australia/au-gst-bas.md": {
+  "skills/australia/au-gst-bas.md": {
     "expected_repo_blob": "0123456789abcdef0123456789abcdef01234567",
     "content_revision": 42
   }

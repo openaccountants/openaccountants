@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-28",
+  "scope": "Finite figure-ledger review; completed prior whole22/source/body/preservation reviews reused.",
+  "all_current_claims_actual_read": "173 distinct wordings cover all866 prepared rows; repeated Markdown URL targets suppressed only in display afterwording20, not removed from evidence.",
+  "all_source_quotes_actual_read": "Initial supplementary unique-quotes1–370 actually read. Its stale pre-precision nature was discovered before verdict. All304 canonical reader+quote combinations not covered by that reading then actually read in bounded batches R1–304. Canonical initial866 rows contain662 reader+quote combinations/565 distinct text bodies. Finally exactS-L21 ownG full135–147 clause and both new row copies read. Identical quoted wording across own bodies separately verified by native coordinates/hash.",
+  "source_integrity": "203 retained receipts,66 distinct raw/reader files independently rehashed0mismatch. Acquisition/hash is not full-source reading. Native LF uses only U+000A.",
+  "stale_scratch": "14 obsolete supplementary quote texts/65 missing final texts detected; writer preserves pre-S-L21scratch under history and regenerated current663 URL+quote combinations. No false final body-reading claim from old list.",
+  "additional_primary_read": "G OF444/2018 own nativeLF135–147 including its page gap read; earlier noisy repeated rg output truncated unrelated/redundant snippets, not claimed as full-range reading.",
+  "old_topic_spots": [
+    35,
+    56,
+    77,
+    106,
+    151,
+    177,
+    187,
+    210,
+    214,
+    234,
+    236,
+    276
+  ],
+  "old_scope": "All12 changed earliest-branch old paragraphs actually read with destination map and already read current wordings. No actual prior-main Guide exists; earliest branch is labelled. A combined old/current output truncated only repeated current scope, so not used as a fresh full-current-range claim.",
+  "own_controls": 80,
+  "oa": "Actual2blocksPASS",
+  "unread_prepared_substantive_scope": [],
+  "retained_limits": "Álava net-result and band-to-tax-base correspondence remains labelled interpretation with own grammatical countertext, other accounting/tax-attribution populations and rounding limitations. Territorial formal windows, full special regimes and exact uncertain intersections remain as stated; no universal settled charge/exemption inferred."
+}

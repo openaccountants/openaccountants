@@ -1,0 +1,490 @@
+: Plazos de presentación de autoliquidaciones con domiciliación bancaria
+Saltar al contenido principal
+Logotipo del Gobierno de España
+Logotipo Organismo
+Menú móvil
+Menu
+Inicio
+Ayuda
+Calendario del contribuyente
+Calendario del contribuyente 2026
+Índice
+Calendario del contribuyente 2026
+Plazos de presentación de autoliquidaciones con domiciliación bancaria
+El plazo de presentación de autoliquidaciones con domiciliación bancaria va a depender del fin del plazo de presentación de cada modelo. Así, si el vencimiento del plazo de presentación coincide con un día inhábil, el plazo finaliza el primer día hábil siguiente y el plazo de domiciliación bancaria se ampliará
+con carácter general
+el mismo número de días que resulte ampliado el plazo de presentación de la autoliquidación correspondiente.
+No obstante lo anterior, entre la finalización del plazo de presentación de una autoliquidación con domiciliación del pago y la finalización del plazo genérico de presentación e ingreso voluntario de esa misma autoliquidación,
+deberá existir un mínimo de tres días hábiles o cinco naturales
+. A estos efectos, se considerarán días inhábiles los sábados, los domingos, las festividades nacionales y las festividades autonómicas o locales que afecten al municipio en el que radique el Departamento de Informática de la Agencia Tributaria.
+A continuación, se indican los plazos generales y de domiciliación bancaria para cada modelo, correspondientes al año 2026:
+MODELO
+PLAZO DOMICILIACIÓN BANCARIA AÑO 2026
+VENCIMIENTO PLAZO DE PRESENTACIÓN AÑO 2026
+Modelos 100, 151 y 714
+Hasta 25 de junio
+Hasta 30 de junio
+Modelo 102
+Hasta 2 de noviembre (para contribuyentes que hayan domiciliado el primer plazo - revocar/rehabilitar o domiciliar)
+Hasta el 20 de octubre para modificar el IBAN
+Hasta 5 de noviembre
+Modelos 111, 115, 117, 123, 124, 126, 128 y 216
+Obligación trimestral
+Con carácter general: domiciliación del 1 al 15 de enero, abril, julio y octubre
+4T 25: 1 al 15 de enero
+1T 26: 1 al 15 de abril
+2T 26: 1 al 15 de julio
+3T 26: 1 al 15 de octubre
+Obligación trimestral
+Con carácter general: presentación del 1 al 20 de enero, abril, julio y octubre
+4T 25: 1 al 20 de enero
+1T 26: 1 al 20 de abril
+2T 26: 1 al 20 de julio
+3T 26: 1 al 20 de octubre
+Modelos 111, 115, 117, 123, 124, 126, 128, 216, 230 y 430
+Obligación mensual
+Con carácter general: domiciliación del 1 al 15 de cada mes para todos los meses:
+12M 25: 1 al 15 de enero
+1M 26: 1 al 17 de febrero
+2M 26: 1 al 16 de marzo
+3M 26: 1 al 15 de abril
+4M 26: 1 al 15 de mayo
+5M 26: 1 al 17 de junio
+6M 26: 1 al 15 de julio
+7M 26: 1 al 17 de agosto
+8M 26: 1 al 16 de septiembre
+9M 26: 1 al 15 de octubre
+10M 26: 1 al 17 de noviembre
+11M 26: 1 al 16 de diciembre
+El mes de julio del modelo 430, hasta el 16 de septiembre
+Obligación mensual
+Con carácter general: presentación del 1 al 20 de cada mes:
+12M 25: 1 al 20 de enero
+1M 26: 1 al 20 de febrero
+2M 26: 1 al 20 de marzo
+3M 26: 1 al 20de abril
+4M 26: 1 al 20 de mayo
+5M 26: 1 al 22 de junio
+6M 26: 1 al 20 de julio
+7M 26: 1 al 20 de agosto
+8M 26: 1 al 21 de septiembre
+9M 26: 1 al 20 de octubre
+10M 26: 1 al 20 de noviembre
+11M 26: 1 al 21 de diciembre
+El mes de julio del modelo 430, hasta el 21 de septiembre
+Modelos 130 y 131
+Obligación trimestral
+Con carácter general: domiciliación del 1 al 25 de enero y del 1 al 15 de abril, julio y octubre
+4T 25: 1 al 27 de enero
+1T 26: 1 al 15 de abril
+2T 26: 1 al 15 de julio
+3T 26: 1 al 15 de octubre
+Obligación trimestral
+Con carácter general: presentación del 1 al 30 de enero y del 1 al 20 de abril, julio y octubre
+4T 25: 1 al 30 de enero
+1T 26: 1 al 20 de abril
+2T 26: 1 al 20 de julio
+3T 26: 1 al 20 de octubre
+Modelo 136
+Obligación trimestral
+Con carácter general: domiciliación del 1 al 15 de enero, abril, julio y octubre
+4T 25: 1 al 15 de enero
+1T 26: 1 al 15 de abril
+2T 26: 1 al 15 de julio
+3T 26: 1 al 15 de octubre
+Obligación trimestral
+Con carácter general: presentación del 1 al 20 de enero abril, julio y octubre
+4T 25: 1 al 20 de enero
+1T 26: 1 al 20 de abril
+2T 26: 1 al 20 de julio
+3T 26: 1 al 20 de octubre
+Modelos 200, 206, 220, 221 y 242
+1 al 22 de julio (períodos impositivos que coincidan con el año natural)
+1 al 27 de julio (períodos impositivos que coincidan con el año natural)
+Modelos 202-0A y 222-0A (País Vasco)
+1 al 21 de octubre
+1 al 26 de octubre
+Modelos 202-2P y 222-2P (Navarra)
+1 al 15 de octubre
+1 al 20 de octubre
+Modelos 202 y 222
+Obligación trimestral
+Con carácter general: domiciliación del 1 al 15 de abril, octubre y diciembre
+Pagos fraccionados
+PF 26: 1 al 15 de abril
+PF 26: 1 al 15 de octubre
+PF 26: 1 al 16 de diciembre
+Obligación trimestral
+Con carácter general: presentación del 1 al 20 de abril, octubre y diciembre
+Pagos fraccionados
+PF 26: 1 al 20 de abril
+PF 26: 1 al 20 de octubre
+PF 26: 1 al 21 de diciembre
+Modelo 210 Autoliquidaciones con resultado a ingresar (excepto ganancias derivadas de transmisiones de inmuebles)
+Con carácter general: domiciliación del 1 al 15 de enero, abril, julio y octubre en relación con las rentas cuya fecha de devengo esté comprendida en el trimestre natural anterior
+4T 25: 1 al 15 de enero
+1T 26: 1 al 15 de abril
+2T 26: 1 al 15 de julio
+3T 26: 1 al 15 de octubre
+Obligación anual
+Rentas de arrendamiento de inmuebles 2025 (si se opta por agrupar anualmente las rentas devengadas durante el año natural):
+1 al 15 de enero
+Rentas imputadas de inmuebles urbanos 2025
+1 de enero hasta al 28 de diciembre de 2026
+Con carácter general: presentación del 1 al 20 de enero, abril, julio y octubre en relación con las rentas cuya fecha de devengo esté comprendida en el trimestre natural anterior
+4T 25: 1 al 20 de enero
+1T 26: 1 al 20 de abril
+2T 26: 1 al 20 de julio
+3T 26: 1 al 20 de octubre
+Obligación anual
+Rentas de arrendamiento de inmuebles 2025 (si se opta por agrupar anualmente las rentas devengadas durante el año natural):
+1 al 20 de enero
+Rentas imputadas de inmuebles urbanos 2025
+1 de enero hasta al 31 de diciembre de 2026
+Modelo 213
+Gravamen especial 2025
+1 al 28 de enero
+Gravamen especial 2025
+1 de enero al 2 de febrero
+Modelos 303 y 353
+Obligación mensual
+Con carácter general: domiciliación del 1 al 25 de cada mes, para todos los meses:
+12M 25: 1 al 27 de enero
+1M 26: 1 al 25 de febrero
+2M 26: 1 al 25 de marzo
+3M 26: 1 al 27 de abril
+4M 26: 1 al 27 de mayo
+5M 26: 1 al 25 de junio
+6M 26: 1 al 27 de julio
+7M 26: 1 al 26 de agosto
+8M 26: 1 al 25 de septiembre
+9M 26: 1 al 27 de octubre
+10M 26: 1 al 25 de noviembre
+11M 26: 1 al 24 de diciembre
+Obligación mensual
+Con carácter general: presentación del 1 al 30 de cada mes, para todos los meses:
+12M 25: 1 al 30 de enero
+1M 26: 1 de febrero al 2 de marzo
+2M 26: 1 al 30 de marzo
+3M 26: 1 al 30 de abril
+4M 26: 1 de mayo al 1 de junio
+5M 26: 1 al 30 de junio
+6M 26: 1 al 30 de julio
+7M 26: 1 al 31 de agosto
+8M 26: 1 al 30 de septiembre
+9M 26: 1 al 30 de octubre
+10M 26: 1 al 30 de noviembre
+11M 26: 1 al 30 de diciembre
+Modelo 303 y 309
+Obligación trimestral
+Con carácter general: domiciliación del 1 al 25 de enero y del 1 al 15 de abril, julio y octubre
+4T 25: 1 al 27 de enero
+1T 26: 1 al 15 de abril
+2T 26: 1 al 15 de julio
+3T 26: 1 al 15 de octubre
+Obligación trimestral
+Con carácter general: presentación del 1 al 30 de enero y del 1 al 20 de abril, julio y octubre
+4T 25: 1 al 30 de enero
+1T 26: 1 al 20 de abril
+2T 26: 1 al 20 de julio
+3T 26: 1 al 20 de octubre
+Modelos 410 y 411
+1 al 28 de julio
+1  al 31 de julio
+Modelo 490
+Obligación trimestral
+Con carácter general: domiciliación del 1 al 25 de enero, abril, julio y octubre
+4T 25: 1 al 28 de enero
+1T 26: 1 al 27 de abril
+2T 26: 1 al 28 de julio
+3T 26: 1 al 28 de octubre
+Obligación trimestral
+Con carácter general: presentación durante los meses de enero, abril, julio y octubre
+4T 25: 1 de enero al 2 de febrero
+1T 26: 1 al 30 de abril
+2T 26: 1 al 31 de julio
+3T 26: 1 de octubre al 2 de noviembre
+Modelo 560
+Obligación mensual
+Con carácter general: domiciliación del 1 al 15 del mes siguiente en que se han producido los devengos:
+12M 25: 1 al 15 de enero
+1M 26: 1 al 17 de febrero
+2M 26: 1 al 16 de marzo
+3M 26: 1 al 15 de abril
+4M 26: 1 al 15 de mayo
+5M 26: 1 al 17 de junio
+6M 26: 1 al 15 de julio
+7M 26: 1 al 17 de agosto
+8M 26: 1 al 16 de septiembre
+9M 26: 1 al 15 de octubre
+10M 26: 1 al 17 de noviembre
+11M 26: 1 al 16 de diciembre
+Obligación mensual
+Con carácter general: presentación del 1 al 20 del mes siguiente en que se han producido los devengos:
+12M 25: 1 al 20 de enero
+1M 26: 1 al 20 de febrero
+2M 26: 1 al 20 de marzo
+3M 26: 1 al 20de abril
+4M 26: 1 al 20 de mayo
+5M 26: 1 al 22 de junio
+6M 26: 1 al 20 de julio
+7M 26: 1 al 20 de agosto
+8M 26: 1 al 21 de septiembre
+9M 26: 1 al 20 de octubre
+10M 26: 1 al 20 de noviembre
+11M 26: 1 al 21 de diciembre
+Obligación trimestral
+Con carácter general: domiciliación del 1 al 15 de enero, abril, julio y octubre
+4T 25: 1 al 15 de enero
+1T 26: 1 al 15 de abril
+2T 26: 1 al 15 de julio
+3T 26: 1 al 15 de octubre
+Obligación anual: 1 al 15 de abril
+Para contribuyentes que realicen exclusivamente los consumos exentos de los apartados 5 y 7 del artículo 94 de la Ley de Impuestos Especiales, de la electricidad generada por ellos mismos.
+Obligación trimestral
+Con carácter general: presentación del 1 al 20 de enero, abril, julio y octubre
+4T 25: 1 al 20 de enero
+1T 26: 1 al 20 de abril
+2T 26: 1 al 20 de julio
+3T 26: 1 al 20 de octubre
+Obligación anual: 1 al 20 de abril
+Para contribuyentes que realicen exclusivamente los consumos exentos de los apartados 5 y 7 del artículo 94 de la Ley de Impuestos Especiales, de la electricidad generada por ellos mismos.
+Modelos 561, 562 y 563
+Obligación mensual
+Con carácter general: domiciliación del 1 al 15 del tercer mes siguiente al que finaliza el mes:
+10M 25:1 al 15 de enero
+11M 25: 1 al 17 de febrero
+12M 25: 1 al 16 de marzo
+1M 26: 1 al 15 de abril
+2M 26: 1 al 15 de mayo
+3M 26: 1 al 17 de junio
+4M 26: 1 al 15 de julio
+5M 26: 1 al 17 de agosto
+6M 26: 1 al 16 de septiembre
+7M 26: 1 al 15 de octubre
+8M 26: 1 al 17 de noviembre
+9M 26: 1 al 16 de diciembre
+Obligación trimestral
+Con carácter general: domiciliación del 1 al 15 del segundo mes siguiente al que finaliza el trimestre
+4T 25: 1 al 17 de febrero
+1T 26: 1 al 15 de mayo
+2T 26: 1 al 17 de agosto
+3T 26: 1 al 17 de noviembre
+Obligación mensual
+Con carácter general: presentación del 1 al 20 del tercer mes siguiente al que finaliza el mes:
+10M 25:1 al 20 de enero
+11M 25: 1 al 20 de febrero
+12M 25: 1 al 20 de marzo
+1M 26: 1 al 20 de abril
+2M 26: 1 al 20 de mayo
+3M 26: 1 al 22 de junio
+4M 26: 1 al 20 de julio
+5M 26: 1 al 20 de agosto
+6M 26: 1 al 21 de septiembre
+7M 26: 1 al 20 de octubre
+8M 26: 1 al 20 de noviembre
+9M 26: 1 al 21 de diciembre
+Obligación trimestral
+Con carácter general: presentación del 1 al 20 del segundo mes siguiente al que finaliza el trimestre
+4T 25: 1 al 20 de febrero
+1T 26: 1 al 20 de mayo
+2T 26: 1 al 20 de agosto
+3T 26: 1 al 20 de noviembre
+Modelos 566, 573 y 581
+Obligación mensual
+Con carácter general: domiciliación del 1 al 15 del mes siguiente en que se han producido los devengos:
+12M 25: 1 al 15 de enero
+1M 26: 1 al 17 de febrero
+2M 26: 1 al 16 de marzo
+3M 26: 1 al 15 de abril
+4M 26: 1 al 15 de mayo
+5M 26: 1 al 17 de junio
+6M 26: 1 al 15 de julio
+7M 26: 1 al 17 de agosto
+8M 26: 1 al 16 de septiembre
+9M 26: 1 al 15 de octubre
+10M 26: 1 al 17 de noviembre
+11M 26: 1 al 16 de diciembre
+Obligación mensual
+Con carácter general: presentación del 1 al 20 del mes siguiente en que se han producido los devengos:
+12M 25: 1 al 20 de enero
+1M 26: 1 al 20 de febrero
+2M 26: 1 al 20 de marzo
+3M 26: 1 al 20 de abril
+4M 26: 1 al 20 de mayo
+5M 26: 1 al 22 de junio
+6M 26: 1 al 20 de julio
+7M 26: 1 al 20 de agosto
+8M 26: 1 al 21 de septiembre
+9M 26: 1 al 20 de octubre
+10M 26: 1 al 20 de noviembre
+11M 26: 1 al 21 de diciembre
+Modelo 583
+Pagos fraccionados
+Con carácter general: domiciliación del 1 al 15 de febrero, mayo, septiembre y noviembre, respecto de los correspondientes a los 3, 6, 9 y 12 meses del año natural
+4 PF 25: 1 al 17 de febrero
+1 PF 26: 1 al 15 de mayo
+2 PF 26: 1 al 17 de septiembre
+3 PF 26: 1 al 17 de noviembre
+Para empresas con pago fraccionado único
+1 al 17 de noviembre
+Autoliquidación anual 2025
+Con carácter general: domiciliación de 1 al 25 de noviembre
+1 al 25 de noviembre
+Pagos fraccionados
+Con carácter general: presentación 1 al 20 de febrero, mayo, septiembre y noviembre, respecto de los correspondientes a los 3, 6, 9 y 12 meses del año natural:
+4 PF 25: 1 al 20 de febrero
+1 PF 26: 1 al 20 de mayo
+2 PF 26: 1 al 21 de septiembre
+3 PF 26: 1 al 20 de noviembre
+Para empresas con pago fraccionado único
+1 al 20 de noviembre
+Autoliquidación anual 2025
+Con carácter general: presentación del 1 al 30 de noviembre
+1 al 30 de noviembre
+Modelo 587
+Obligación trimestral
+Con carácter general: domiciliación del 1 al 15 de enero, abril, julio y octubre
+4T 25: 1 al 15 de enero
+1T 26: 1 al 15 de abril
+2T 26: 1 al 15 de julio
+3T 26: 1 al 15 de octubre
+Obligación trimestral
+Con carácter general: presentación del 1 al 20 de enero, abril, julio y octubre
+4T 25: 1 al 20 de enero
+1T 26: 1 al 20 de abril
+2T 26: 1 al 20 de julio
+3T 26: 1 al 20 de octubre
+Modelo 588
+Con carácter general: domiciliación del 1 al 25 de noviembre
+1 al 25 de noviembre
+Con carácter general: presentación del 1 al 30 de noviembre
+1 al 30 de noviembre
+Modelo 589
+Pago fraccionado
+Con carácter general: domiciliación del 1 al 15 de octubre
+PF 2026: 1 al 15 de octubre
+Autoliquidación anual 2025
+Con carácter general: domiciliación del 1 al 15 de abril
+1 al 15 de abril
+Pago fraccionado
+Con carácter general: presentación del 1 al 20 de octubre
+PF 2026: 1 al 20 de octubre
+Autoliquidación anual 2025
+Con carácter general: presentación del 1 al 20 de abril
+1 al 20 de abril
+Modelo 592
+Obligación trimestral
+Con carácter general: domiciliación del 1 al 15 de enero, abril, julio y octubre
+4T 25: 1 al 15 de enero
+1T 26: 1 al 15 de abril
+2T 26: 1 al 15 de julio
+3T 26: 1 al 15 de octubre
+Obligación trimestral
+Con carácter general: presentación del 1 al 20 de enero, abril, julio y octubre
+4T 25: 1 al 20 de enero
+1T 26: 1 al 20 de abril
+2T 26: 1 al 20 de julio
+3T 26: 1 al 20 de octubre
+Obligación mensual
+Con carácter general: domiciliación del 1 al 15 del mes siguiente en que se han producido los devengos:
+12M 25: 1 al 15 de enero
+1M 26: 1 al 17 de febrero
+2M 26: 1 al 16 de marzo
+3M 26: 1 al 15 de abril
+4M 26: 1 al 15 de mayo
+5M 26: 1 al 17 de junio
+6M 26: 1 al 15 de julio
+7M 26: 1 al 17 de agosto
+8M 26: 1 al 16 de septiembre
+9M 26: 1 al 15 de octubre
+10M 26: 1 al 17 de noviembre
+11M 26: 1 al 16 de diciembre
+Obligación mensual
+Con carácter general: presentación del 1 al 20 del mes siguiente en que se han producido los devengos:
+12M 25: 1 al 20 de enero
+1M 26: 1 al 20 de febrero
+2M 26: 1 al 20 de marzo
+3M 26: 1 al 20 de abril
+4M 26: 1 al 20 de mayo
+5M 26: 1 al 22 de junio
+6M 26: 1 al 20 de julio
+7M 26: 1 al 20 de agosto
+8M 26: 1 al 21 de septiembre
+9M 26: 1 al 20 de octubre
+10M 26: 1 al 20 de noviembre
+11M 26: 1 al 21 de diciembre
+Modelo 593
+Obligación trimestral
+Con carácter general: domiciliación del 1 al 25 de enero, abril, julio y octubre
+4T 25: 1 al 27 de enero
+1T 26: 1 al 27 de abril
+2T 26: 1 al 27 de julio
+3T 26: 1 al 27 de octubre
+Obligación trimestral
+Con carácter general: presentación durante los 30 primeros días naturales de enero, abril, julio y octubre
+4T 25: 1 al 30 de enero
+1T 26: 1 al 30 de abril
+2T 26: 1 al 30 de julio
+3T 26: 1 al 30 de octubre
+Modelo 595
+Obligación trimestral
+Con carácter general: domiciliación del 1 al 15 de enero, abril, julio y octubre
+4T 25: 1 al 15 de enero
+1T 26: 1 al 15 de abril
+2T 26: 1 al 15 de julio
+3T 26: 1 al 15 de octubre
+Obligación trimestral
+Con carácter general: presentación del 1 al 20 de enero, abril, julio y octubre
+4T 25: 1 al 20 de enero
+1T 26: 1 al 20 de abril
+2T 26: 1 al 20 de julio
+3T 26: 1 al 20 de octubre
+Modelo 718
+Autoliquidación anual 2025
+1 al 28 de julio
+Autoliquidación anual 2025
+1 al 31 de julio
+Modelo 780
+Autoliquidación anual 2025
+1 al 16 de septiembre*
+Para períodos impositivos finalizados el 31 de diciembre
+Autoliquidación anual 2025
+1 al 21 de septiembre
+Modelo 781
+Pago fraccionado
+1 al 16 de febrero*
+Para períodos impositivos finalizados el 31 de diciembre
+Pago fraccionado
+1 al 20 de febrero
+Modelo 792
+Con carácter general: domiciliación del 1 al 23 de febrero (año bisiesto 24 de febrero)
+Autoliquidación anual 2025
+1 al 25 de febrero
+Con carácter general: presentación del 1 al 28 de febrero
+Autoliquidación anual 2025
+1 de febrero al 2 de marzo
+Modelo 793
+Pagos a cuenta
+Con carácter general: domiciliación del 1 al 15 de abril, julio y octubre
+1 PF 26: 1 al 15 de abril
+2 PF 26: 1 al 15 de julio
+3 PF 26: 1 al 15 de octubre
+Pagos a cuenta
+Con carácter general: presentación del 1 al 20 de abril, julio y octubre
+1 PF 26: 1 al 20 de abril
+2 PF 26: 1 al 20 de julio
+3 PF 26: 1 al 20 de octubre
+Generar PDF
+Cerrar
+La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.
+Seleccione la información que desee incluir en el PDF:
+Página actual
+Apartado actual y subapartados
+Todo el documento
+Puede cancelar la generación del PDF en cualquier momento.
+Cancelar
+Continuar
+Accesibilidad
+Página actualizada:
+07/octubre/2026

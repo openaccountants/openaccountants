@@ -1,0 +1,14 @@
+{
+  "retrieved": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf",
+      "sha256": "55428568956a4ded2911e90ea7fbffaedbae9c250aceca3631fce29b5645cd3e",
+      "locators": "Regulations3,6,8\u20138C; printed5\u201311,17\u201320"
+    },
+    {
+      "url": "https://www.fsc.gi/news/gfsc-assumes-responsibility-for-gibraltars-ultimate-beneficial-ownership-register-590",
+      "locators": "4September2026 announcement, registrar/portal/migration dates"
+    }
+  ]
+}

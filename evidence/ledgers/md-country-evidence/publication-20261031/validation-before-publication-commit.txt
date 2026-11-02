@@ -1,0 +1,5 @@
+changed-only mode: validating 11 changed guide file(s)
+checked 10 guides (0 non-guide .md files skipped)
+checked 0 generated package frontmatter block(s)
+
+validation passed (0 warning group(s))

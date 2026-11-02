@@ -1,0 +1,6759 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tarifes, tipus impositius i quota. Agència Tributària de Catalunya
+
+
+
+
+	
+
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));
+
+
+
+
+(function(window, document, dataLayerName, id) {
+window[dataLayerName]=window[dataLayerName]||[],window[dataLayerName].push({start:(new Date).getTime(),event:"stg.start"});var scripts=document.getElementsByTagName('script')[0],tags=document.createElement('script');
+function stgCreateCookie(a,b,c){var d="";if(c){var e=new Date;e.setTime(e.getTime()+24*c*60*60*1e3),d="; expires="+e.toUTCString();f="; SameSite=Strict"}document.cookie=a+"="+b+d+f+"; path=/"}
+var isStgDebug=(window.location.href.match("stg_debug")||document.cookie.match("stg_debug"))&&!window.location.href.match("stg_disable_debug");stgCreateCookie("stg_debug",isStgDebug?1:"",isStgDebug?14:-1);
+var qP=[];dataLayerName!=="dataLayer"&&qP.push("data_layer_name="+dataLayerName),isStgDebug&&qP.push("stg_debug");var qPString=qP.length>0?("?"+qP.join("&")):"";
+tags.async=!0,tags.src="https://gencat.containers.piwik.pro/"+id+".js"+qPString,scripts.parentNode.insertBefore(tags,scripts);
+!function(a,n,i){a[n]=a[n]||{};for(var c=0;c<i.length;c++)!function(i){a[n][i]=a[n][i]||{},a[n][i].api=a[n][i].api||function(){var a=[].slice.call(arguments,0);"string"==typeof a[0]&&window[dataLayerName].push({event:n+"."+i+":"+a[0],parameters:[].slice.call(arguments,1)})}}(i[c])}(window,"ppms",["tm","cm"]);
+})(window, document, 'dataLayer', 'eb50131d-1482-4c39-a0fa-835d5e4dacd6');
+
+
+                                
+!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="BM5WD-23TA6-4USBP-SRKUP-9PUHQ",function(){function e(){if(!r){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.appendChild(e),r=!0}}function t(e){r=!0;var n,t,a,i,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",i=(a.frameElement||a).style,i.width=0,i.height=0,i.border=0,i.display="none",o.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void 0;",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=14,window.BOOMR.url=n+"BM5WD-23TA6-4USBP-SRKUP-9PUHQ";var i=document.currentScript||document.getElementsByTagName("script")[0],o=i.parentNode,r=!1,d=document.createElement("link");if(d.relList&&"function"==typeof d.relList.supports&&d.relList.supports("preload")&&"as"in d)window.BOOMR.snippetMethod="p",d.href=window.BOOMR.url,d.rel="preload",d.as="script",d.addEventListener("load",e),d.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!r)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.appendChild(d);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="2vq5x2yx3sn4k2xbok2a-f-34d3478e2-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"41","ak.cp":"537041","ak.ai":parseInt("349618",10),"ak.ol":"0","ak.cr":16,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"31fb1847","ak.r":47673,"ak.a2":n,"ak.m":"b","ak.n":"essl","ak.cport":20426,"ak.gh":"2.16.64.94","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1793159860","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==NSWJJ2r1bT8mMqV3QNYbCEuQ+PJLHWm/oGH3aksYrbAZgzqFQsJR1csMhMfA8P71VsTKuiQB/bj3JtCdhywl2ywrNooB/FiKsbwD4Ed1Fe1l/h4i9kk4z3D+B52ec0KUxKTOCh/n0oDeGRRz17Gyv0/zd8d8ykb8YyniJm8aGqLn16GdqWqvO7ByjNlinZ8EDLUnSR+dufzlhQOPJN/SRXm1l/Ft2sRSxXCRYyk99TTLy/3FSYvp0RbqZ4egcaumVsQ4N2NdNApqBnIlWdWNXTia9xDyQYOpglDLP1/X9rMI6EV9N2VpBaSTTlnQziv+lL4/+ulgUdIbYnRK4l/lOPb2ireYfmnin4uXNeHHQC6kdMoIFEwgkhuJ1S7XnHMvGtM+Hmr+ydzF17aAzYKsxZXPpXVRLS3NimxzElUxqTw=","ak.pv":"36","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);
+
+
+
+
+	
+
+
+        
+        getBrowserName();
+        function getBrowserName() {
+            var name = "Unknown";
+            if(navigator.userAgent.indexOf("Android")!=-1){
+                name = "Android";
+            }
+            else if(navigator.userAgent.indexOf("Safari")!=-1){
+                name = "Safari";
+            }
+            return name;   
+        }
+        if( getBrowserName() == "Safari"&& navigator.userAgent.indexOf("5.1")!=-1 ){
+            var element = document.getElementsByTagName("body")[0];
+            element.classList.add("safari");
+            
+        }
+        if( getBrowserName() == "Android"&& navigator.userAgent.indexOf("4.0")!=-1 ){
+            var element = document.getElementsByTagName("body")[0];
+            element.classList.add("safari");
+            
+        }
+        
+    
+
+	
+
+			
+
+
+
+
+	
+
+			
+
+				
+
+					
+
+						
+
+							
+
+								
+
+									
+
+										
+. Obre en una nova finestra.
+
+									
+
+								
+
+								
+
+									
+Menu
+
+								
+
+							
+
+							
+
+								
+
+									
+
+										
+
+																
+
+																	
+
+																	Contacte
+
+															
+
+														
+
+                                                            
+
+                                                                
+
+                                                                
+
+                                                                    Idioma:
+
+                                                                
+
+                                                                    
+ca
+
+                                                                        
+
+                                                                
+
+                                                                
+
+                                                            
+
+
+                                                                
+
+                                                                
+Castellano
+
+
+                                                        
+
+                                                    
+
+								
+
+
+								
+
+										
+Cercador
+
+									
+
+								
+
+						
+
+					
+
+				
+
+				
+
+                    
+
+                       
+
+                           
+Seu electrònica
+
+                       
+
+                   
+
+               
+
+				
+
+					
+
+							
+
+								
+
+								
+
+								
+
+
+								
+Què busques?
+
+								
+
+									
+
+										
+
+										
+
+										
+
+											
+
+										
+
+
+										
+
+											
+
+											
+
+											
+
+								
+
+
+								
+
+									
+
+												
+
+													Els nostres tributs
+
+											
+
+										
+
+												
+
+													 Catàleg de gestions
+
+											
+
+										
+
+												
+
+													Pagament de deutes
+
+											
+
+										
+
+												
+
+													 Impost sobre les emissions de CO2 dels vehicles de tracció mecànica
+
+											
+
+										
+
+												
+
+													Enquesta de satisfacció de la seu electrònica de l'Agència Tributària de Catalunya. Participa-hi!
+. Obre en una nova finestra.
+
+											
+
+										
+
+							
+
+						
+
+					
+
+						
+
+							
+
+								
+
+									
+
+										Inici
+
+								
+
+					
+
+										L'Agència
+
+								
+
+									
+
+										
+
+											
+
+												
+Tornar al nivell anterior
+ 
+
+											
+
+											
+ 
+Accedeix a “
+L'Agència
+”
+ 
+ 
+
+										
+
+									
+
+
+									
+
+										
+
+											
+
+
+												
+
+														
+
+																			Qui som i què fem
+
+																	
+
+																		
+
+																			
+
+																				
+
+																					
+Tornar al nivell anterior
+ 
+
+																				
+
+																				
+
+																					
+Accedeix a “
+Qui som i què fem
+”
+
+																				
+
+																			
+
+																		
+
+
+																		
+
+																			
+
+																					
+
+																								Organigrama
+
+																						
+
+																			
+
+																					
+
+																								Procediments tributaris
+
+																						
+
+																			
+
+																					
+
+																								L'ATC en xifres
+
+																						
+
+																			
+
+																					
+
+																								Memòries d'activitat
+
+																						
+
+																			
+
+																					
+
+																								Carta de serveis
+. Obre en una nova finestra.
+
+																						
+
+																			
+
+																					
+
+																								Enquestes
+
+																						
+
+																			
+
+																					
+
+																								Tributs de Catalunya
+
+																						
+
+																			
+
+																				
+
+																					
+
+																						
+Accedeix a “
+Qui som i què fem
+”
+ 
+ 
+
+																				
+
+																			
+
+																		
+
+																	
+
+																
+
+														
+
+																			Prevenció i reducció del frau fiscal
+
+																	
+
+																		
+
+																			
+
+																				
+
+																					
+Tornar al nivell anterior
+ 
+
+																				
+
+																				
+
+																					
+Accedeix a “
+Prevenció i reducció del frau fiscal
+”
+
+																				
+
+																			
+
+																		
+
+
+																		
+
+																			
+
+																					
+
+																								Pla de prevenció i reducció del frau fiscal i de foment de les bones pràctiques tributàries
+
+																						
+
+																			
+
+																					
+
+																								Bústia de suggeriments en matèria de frau fiscal
+
+																						
+
+																			
+
+																					
+
+																								Llista de deutors tributaris
+
+																						
+
+																			
+
+																					
+
+																								Repositori de conductes abusives 
+
+																						
+
+																			
+
+																					
+
+																								Bústia de denúncies tributàries
+
+																						
+
+																			
+
+																					
+
+																								Pedagogia tributària
+
+																						
+
+																			
+
+																					
+
+																								Premi d’Innovació i Foment de Bones Pràctiques Tributàries
+
+																						
+
+																			
+
+																					
+
+																								Estudi de la bretxa fiscal ("tax gap")
+
+																						
+
+																			
+
+																				
+
+																					
+
+																						
+Accedeix a “
+Prevenció i reducció del frau fiscal
+”
+ 
+ 
+
+																				
+
+																			
+
+																		
+
+																	
+
+																
+
+														
+
+																			Normativa i criteris
+
+																	
+
+																		
+
+																			
+
+																				
+
+																					
+Tornar al nivell anterior
+ 
+
+																				
+
+																				
+
+																					
+Accedeix a “
+Normativa i criteris
+”
+
+																				
+
+																			
+
+																		
+
+
+																		
+
+																			
+
+																					
+
+																								Normativa tributària i criteris (DG de Tributs i Joc)
+
+																						
+
+																			
+
+																					
+
+																								Valoracions immobiliàries
+
+																						
+
+																			
+
+																					
+
+																								Valoracions per a la transmissió de vehicles
+
+																						
+
+																			
+
+																					
+
+																								Resolucions, instruccions i criteris de l'Agència
+
+																						
+
+																			
+
+																					
+
+																								Normativa institucional
+
+																						
+
+																			
+
+																				
+
+																					
+
+																						
+Accedeix a “
+Normativa i criteris
+”
+ 
+ 
+
+																				
+
+																			
+
+																		
+
+																	
+
+																
+
+														
+
+																			Convenis i acords de col·laboració
+
+																	
+
+																		
+
+																			
+
+																				
+
+																					
+Tornar al nivell anterior
+ 
+
+																				
+
+																				
+
+																					
+Accedeix a “
+Convenis i acords de col·laboració
+”
+
+																				
+
+																			
+
+																		
+
+
+																		
+
+																			
+
+																					
+
+																								Acords de col·laboració social per a l'actuació en nom de terceres persones
+
+																						
+
+																			
+
+																					
+
+																								Convenis amb organismes i departaments de la Generalitat de Catalunya
+
+																						
+
+																			
+
+																					
+
+																								Convenis amb ajuntaments, consells comarcals i diputacions
+
+																						
+
+																			
+
+																					
+
+																								Convenis amb l'Administració estatal
+
+																						
+
+																			
+
+																					
+
+																								Convenis amb consorcis
+
+																						
+
+																			
+
+																					
+
+																								Altres convenis i col·laboracions
+
+																						
+
+																			
+
+																				
+
+																					
+
+																						
+Accedeix a “
+Convenis i acords de col·laboració
+”
+ 
+ 
+
+																				
+
+																			
+
+																		
+
+																	
+
+																
+
+														
+
+																			Transparència
+
+																	
+
+																		
+
+																			
+
+																				
+
+																					
+Tornar al nivell anterior
+ 
+
+																				
+
+																				
+
+																					
+Accedeix a “
+Transparència
+”
+
+																				
+
+																			
+
+																		
+
+
+																		
+
+																			
+
+																					
+
+																								Transparència i bon govern
+
+																						
+
+																			
+
+																					
+
+																								Perfil de contractant
+
+																						
+
+																			
+
+																				
+
+																					
+
+																						
+Accedeix a “
+Transparència
+”
+ 
+ 
+
+																				
+
+																			
+
+																		
+
+																	
+
+																
+
+														
+
+																			Protecció de dades
+
+																	
+
+																		
+
+																			
+
+																				
+
+																					
+Tornar al nivell anterior
+ 
+
+																				
+
+																				
+
+																					
+Accedeix a “
+Protecció de dades
+”
+
+																				
+
+																			
+
+																		
+
+
+																		
+
+																			
+
+																					
+
+																								Activitat de tractament de dades amb finalitats tributàries
+
+																						
+
+																			
+
+																					
+
+																								Activitat de tractament de dades de recursos humans
+
+																						
+
+																			
+
+																					
+
+																								Activitat de tractament de dades de col·laboradors externs
+
+																						
+
+																			
+
+																					
+
+																								Activitat de tractament de dades de videovigilància
+
+																						
+
+																			
+
+																					
+
+																								Activitat de tractament de dades del registre d’entrada/sortida
+
+																						
+
+																			
+
+																				
+
+																					
+
+																						
+Accedeix a “
+Protecció de dades
+”
+ 
+ 
+
+																				
+
+																			
+
+																		
+
+																	
+
+																
+
+														
+
+																			Treballa amb nosaltres
+
+																	
+
+																		
+
+																			
+
+																				
+
+																					
+Tornar al nivell anterior
+ 
+
+																				
+
+																				
+
+																					
+Accedeix a “
+Treballa amb nosaltres
+”
+
+																				
+
+																			
+
+																		
+
+
+																		
+
+																			
+
+																					
+
+																								Processos selectius de cossos tributaris (oposicions)
+
+																						
+
+																			
+
+																					
+
+																								Procés selectiu de personal laboral fix (convocatòria ATC07)
+
+																						
+
+																			
+
+																					
+
+																								Concursos de provisió per a empleats públics
+
+																						
+
+																			
+
+																					
+
+																								Ofertes de treball temporal
+
+																						
+
+																			
+
+																				
+
+																					
+
+																						
+Accedeix a “
+Treballa amb nosaltres
+”
+ 
+ 
+
+																				
+
+																			
+
+																		
+
+																	
+
+																
+
+														
+
+																			Comunicacions informatives per a intermediaris tributaris
+
+																	
+
+																		
+
+																			
+
+																				
+
+																					
+Tornar al nivell anterior
+ 
+
+																				
+
+																				
+
+																					
+Accedeix a “
+Comunicacions informatives per a intermediaris tributaris
+”
+
+																				
+
+																			
+
+																		
+
+
+																		
+
+																			
+
+																					
+
+																								Subscripció a comunicacions informatives per a intermediaris tributaris
+. Obre en una nova finestra.
+
+																						
+
+																			
+
+																					
+
+																								Butlletí ATC Connect@
+
+																						
+
+																			
+
+																				
+
+																					
+
+																						
+Accedeix a “
+Comunicacions informatives per a intermediaris tributaris
+”
+ 
+ 
+
+																				
+
+																			
+
+																		
+
+																	
+
+																
+
+														
+
+																			Notícies
+
+																	
+
+																		
+
+																			
+
+																				
+
+																					
+Tornar al nivell anterior
+ 
+
+																				
+
+																				
+
+																					
+Accedeix a “
+Notícies
+”
+
+																				
+
+																			
+
+																		
+
+
+																		
+
+																			
+
+																					
+
+																								Actualitat
+
+																						
+
+																			
+
+																				
+
+																					
+
+																						
+Accedeix a “
+Notícies
+”
+ 
+ 
+
+																				
+
+																			
+
+																		
+
+																	
+
+																
+
+														
+
+															
+
+																
+
+																	
+Accedeix a “
+L'Agència
+”
+ 
+ 
+
+															
+
+														
+
+													
+
+												
+
+										
+
+
+
+										
+
+
+											
+
+													
+
+														
+
+													
+
+												
+
+											
+
+												
+
+
+													
+
+														
+
+															
+
+																
+
+																	
+
+																		L'Agència
+
+																	
+Si en vols saber més, t’expliquem les funcions de l’Agència i les actuacions que du a terme. També hi trobaràs tota la informació sobre el Pla de prevenció i reducció del frau fiscal, la protecció de dades, etc.
+
+																	
+
+																		
+
+																			
+
+																				
+Accedeix a “
+L'Agència
+”
+ 
+ 
+
+																		
+
+																	
+
+																
+
+															
+
+														
+
+													
+
+												
+
+											
+
+										
+
+									
+
+									
+
+							
+
+					
+
+										Tributs
+
+								
+
+									
+
+										
+
+											
+
+												
+Tornar al nivell anterior
+ 
+
+											
+
+											
+ 
+Accedeix a “
+Tributs
+”
+ 
+ 
+
+										
+
+									
+
+
+									
+
+										
+
+											
+
+
+												
+
+														
+
+																			Els nostres tributs
+
+																	
+
+														
+
+																			Impost sobre transmissions patrimonials i actes jurídics documentats
+
+																	
+
+														
+
+																			Impost sobre successions i donacions
+
+																	
+
+														
+
+																			Impost sobre les emissions de diòxid de carboni dels vehicles de tracció mecànica
+
+																	
+
+														
+
+																			Impost sobre les estades en establiments turístics
+
+																	
+
+														
+
+																			Impost sobre la renda de les persones físiques
+
+																	
+
+														
+
+																			Impost sobre el patrimoni
+
+																	
+
+														
+
+																			Tributació sobre el joc
+
+																	
+
+														
+
+																			Impost sobre begudes ensucrades envasades
+
+																	
+
+														
+
+																			Impost sobre els actius no productius de les persones jurídiques
+
+																	
+
+														
+
+																			Impost sobre els habitatges buits
+
+																	
+
+														
+
+																			Impost sobre grans establiments comercials
+
+																	
+
+														
+
+																			Gravamen de protecció civil
+
+																	
+
+														
+
+																			Impost sobre l’emissió de gasos i partícules a l’atmosfera produïda per la indústria
+
+																	
+
+														
+
+																			Impost sobre l’emissió d’òxids de nitrogen  a l’atmosfera produïda per l’aviació comercial
+
+																	
+
+														
+
+																			Impost sobre les instal·lacions que incideixen en el medi ambient
+
+																	
+
+														
+
+															
+
+																
+
+																	
+Accedeix a “
+Tributs
+”
+ 
+ 
+
+															
+
+														
+
+													
+
+												
+
+										
+
+
+
+										
+
+
+											
+
+													
+
+														
+
+													
+
+												
+
+											
+
+												
+
+
+													
+
+														
+
+															
+
+																
+
+																	
+
+																		Tributs
+
+																	
+Tota la informació sobre els tributs que gestiona l’Agència Tributària de Catalunya. Fes clic a “Tributs” o utilitza la barra de desplaçament per accedir a la informació sobre cada tribut i a l’enllaç per tramitar-lo.
+
+																	
+
+																		
+
+																			
+
+																				
+Accedeix a “
+Tributs
+”
+ 
+ 
+
+																		
+
+																	
+
+																
+
+															
+
+														
+
+													
+
+												
+
+											
+
+										
+
+									
+
+									
+
+							
+
+					
+
+										Gestions
+
+								
+
+									
+
+										
+
+											
+
+												
+Tornar al nivell anterior
+ 
+
+											
+
+											
+ 
+Accedeix a “
+Gestions
+”
+ 
+ 
+
+										
+
+									
+
+
+									
+
+										
+
+											
+
+
+												
+
+														
+
+																			Catàleg de gestions
+
+																	
+
+														
+
+																			Pagament de deutes i liquidacions
+
+																	
+
+														
+
+																			Certificats
+
+																	
+
+														
+
+																			Ajornaments i fraccionaments
+
+																	
+
+														
+
+																			Recaptació executiva
+
+																	
+
+														
+
+																			Representació
+
+																	
+
+														
+
+																			Al·legacions
+
+																	
+
+														
+
+																			Recursos i reclamacions
+
+																	
+
+														
+
+																			Requeriments i aportació de dades bancàries
+
+																	
+
+														
+
+																			Notificacions electròniques
+
+																	
+
+														
+
+																			Registre electrònic
+
+																	
+
+														
+
+																			Declaracions informatives
+
+																	
+
+														
+
+																			Devolució d'ingressos indeguts / Rectificació d'autoliquidació
+
+																	
+
+														
+
+																			Garanties (dipòsits i avals)
+
+																	
+
+														
+
+																			Compensació de deutes tributaris
+
+																	
+
+														
+
+																			Informe i acord previ de valoració i taxació pericial contradictòria
+
+																	
+
+														
+
+																			Actuacions d’inspecció
+
+																	
+
+														
+
+																			Serveis a altres administracions
+
+																	
+
+														
+
+															
+
+																
+
+																	
+Accedeix a “
+Gestions
+”
+ 
+ 
+
+															
+
+														
+
+													
+
+												
+
+										
+
+
+
+										
+
+
+											
+
+													
+
+														
+
+													
+
+												
+
+											
+
+												
+
+
+													
+
+														
+
+															
+
+																
+
+																	
+
+																		Gestions
+
+																	
+Gestions relacionades amb les declaracions que has presentat i amb els deutes que tinguis pendents en període voluntari o en període executiu (apartat Recaptació executiva). Fes clic a “Gestions” o utilitza la barra de desplaçament.
+
+																	
+
+																		
+
+																			
+
+																				
+Accedeix a “
+Gestions
+”
+ 
+ 
+
+																		
+
+																	
+
+																
+
+															
+
+														
+
+													
+
+												
+
+											
+
+										
+
+									
+
+									
+
+							
+
+					
+
+										Què cal fer si
+
+								
+
+									
+
+										
+
+											
+
+												
+Tornar al nivell anterior
+ 
+
+											
+
+											
+ 
+Accedeix a “
+Què cal fer si
+”
+ 
+ 
+
+										
+
+									
+
+
+									
+
+										
+
+											
+
+
+												
+
+														
+
+																			Vull presentar un recurs contra una multa de trànsit que no vaig pagar
+
+																	
+
+														
+
+																			L'ATC et reclama el pagament d'un deute
+. Obre en una nova finestra.
+
+																	
+
+														
+
+																			Haig de declarar el lloguer d'un habitatge
+
+																	
+
+														
+
+																			Haig de declarar una herència
+
+																	
+
+														
+
+																			Vull fer una donació
+
+																	
+
+														
+
+																			Vull fer un préstec a un familiar
+
+																	
+
+														
+
+																			He comprat un vehicle de segona mà
+
+																	
+
+														
+
+																			Vull declarar una adquisició per assegurança de vida
+
+																	
+
+														
+
+																			Vull fer una denúncia tributària
+. Obre en una nova finestra.
+
+																	
+
+														
+
+															
+
+																
+
+																	
+Accedeix a “
+Què cal fer si
+”
+ 
+ 
+
+															
+
+														
+
+													
+
+												
+
+										
+
+
+
+										
+
+
+											
+
+													
+
+														
+
+													
+
+												
+
+											
+
+												
+
+
+													
+
+														
+
+															
+
+																
+
+																	
+
+																		Què cal fer si
+
+																	
+
+																	
+
+																		
+
+																			
+
+																				
+Accedeix a “
+Què cal fer si
+”
+ 
+ 
+
+																		
+
+																	
+
+																
+
+															
+
+														
+
+													
+
+												
+
+											
+
+										
+
+									
+
+									
+
+							
+
+					
+
+										Informació de suport
+
+								
+
+									
+
+										
+
+											
+
+												
+Tornar al nivell anterior
+ 
+
+											
+
+											
+ 
+Accedeix a “
+Informació de suport
+”
+ 
+ 
+
+										
+
+									
+
+
+									
+
+										
+
+											
+
+
+												
+
+														
+
+																			Suport a la tramitació
+
+																	
+
+														
+
+																			Identificació digital
+
+																	
+
+														
+
+																			Entitats financeres col·laboradores 
+
+																	
+
+														
+
+																			Persones i col·lectius obligats a la tramitació telemàtica
+
+																	
+
+														
+
+																			Preguntes freqüents
+
+																	
+
+														
+
+																			Simuladors
+
+																	
+
+														
+
+																			Programes d’ajuda de successions i donacions (models 650, 651, 652 i 653)
+
+																	
+
+														
+
+																			Consulta de deute
+
+																	
+
+														
+
+																			Obtenció de cartes de pagament
+
+																	
+
+														
+
+																			Consulta de declaració notarial
+
+																	
+
+														
+
+																			Consulta de documents amb CSV (codi segur de verificació)
+
+																	
+
+														
+
+																			Calendari tributari
+
+																	
+
+														
+
+																			Formularis
+
+																	
+
+														
+
+																			Guies d'informació tributària
+
+																	
+
+														
+
+															
+
+																
+
+																	
+Accedeix a “
+Informació de suport
+”
+ 
+ 
+
+															
+
+														
+
+													
+
+												
+
+										
+
+
+
+										
+
+
+											
+
+													
+
+														
+
+													
+
+												
+
+											
+
+												
+
+
+													
+
+														
+
+															
+
+																
+
+																	
+
+																		Informació de suport
+
+																	
+Eines que et poden ser útils per a la tramitació telemàtica, com són els simuladors, els programes d’ajuda, la consulta del CSV o la consulta del motiu dels teus deutes.
+
+																	
+
+																		
+
+																			
+
+																				
+Accedeix a “
+Informació de suport
+”
+ 
+ 
+
+																		
+
+																	
+
+																
+
+															
+
+														
+
+													
+
+												
+
+											
+
+										
+
+									
+
+									
+
+							
+
+					
+
+										Canals d'atenció
+
+								
+
+									
+
+										
+
+											
+
+												
+Tornar al nivell anterior
+ 
+
+											
+
+											
+ 
+Accedeix a “
+Canals d'atenció
+”
+ 
+ 
+
+										
+
+									
+
+
+									
+
+										
+
+											
+
+
+												
+
+														
+
+																			Contacte
+
+																	
+
+														
+
+																			Cita i tramitació atesa
+
+																	
+
+														
+
+																			Carta de serveis de l'ATC
+
+																	
+
+														
+
+																			Denúncies tributàries i suggeriments en matèria de frau fiscal
+. Obre en una nova finestra.
+
+																	
+
+														
+
+																			Sistema intern d'alertes
+
+																	
+
+														
+
+																			L'app  de l'ATC
+
+																	
+
+														
+
+															
+
+																
+
+																	
+Accedeix a “
+Canals d'atenció
+”
+ 
+ 
+
+															
+
+														
+
+													
+
+												
+
+										
+
+
+
+										
+
+
+											
+
+													
+
+														
+
+													
+
+												
+
+											
+
+												
+
+
+													
+
+														
+
+															
+
+																
+
+																	
+
+																		Canals d'atenció
+
+																	
+Com pots contactar amb l’Agència? Aquí trobaràs tots els canals de contacte i com accedir-hi. Informació sobre cita prèvia, suport a la tramitació telemàtica, identificació digital, etc.
+
+																	
+
+																		
+
+																			
+
+																				
+Accedeix a “
+Canals d'atenció
+”
+ 
+ 
+
+																		
+
+																	
+
+																
+
+															
+
+														
+
+													
+
+												
+
+											
+
+										
+
+									
+
+									
+
+							
+
+					
+
+										El meu espai ATC
+
+								
+
+					
+
+								
+
+							
+
+						
+
+					
+
+					
+
+			
+
+
+			
+
+				
+
+					
+
+						
+
+							
+
+								
+
+									
+
+											
+. Obre en una nova finestra.
+
+									
+
+								
+
+							
+
+							
+
+								
+
+									
+
+							
+
+						
+
+					
+
+				
+
+			
+
+		
+
+
+		
+
+
+
+	
+
+		
+		
+
+			
+
+				
+
+					
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+
+		
+		
+		
+		
+
+		
+		
+		
+		
+
+		
+
+				
+			
+				
+
+				
+
+				
+				
+					
+					
+					
+					
+					
+					
+					
+						
+
+						
+						
+							
+							
+					
+						
+
+						
+						
+							
+							
+					
+						
+
+						
+						
+							
+							
+					
+						
+
+						
+						
+							
+							
+					
+						
+
+						
+						
+							
+							
+					
+
+					
+						
+
+							
+
+									
+										
+										
+											
+
+												
+Inici
+
+											
+
+										
+									
+								
+
+								
+
+									
+										
+										
+											
+
+												
+Tributs
+
+											
+
+										
+									
+								
+
+								
+
+									
+										
+										
+											
+
+												
+Impost sobre transmissions patrimonials i actes jurídics documentats
+
+											
+
+										
+									
+								
+
+								
+
+									
+										
+										
+											
+
+												
+Transmissions patrimonials oneroses
+
+											
+
+										
+									
+								
+
+								
+
+									
+										
+											
+											Tarifes, tipus impositius i quota
+										
+										
+									
+								
+
+						
+
+					
+				
+									
+					
+
+					
+					
+					
+					
+
+				
+
+					
+
+						
+						
+						
+						
+						   
+						
+							
+							
+								
+									
+
+										Tarifes, tipus impositius i quota
+									
+
+								
+							
+						
+						
+					
+
+					
+
+						
+
+						
+					
+					
+
+				
+
+			
+
+		
+
+			
+	
+
+	
+
+
+
+
+			
+
+		
+
+		
+
+			
+
+							
+
+								
+
+									
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+	
+		
+
+			
+
+			
+
+				
+
+					
+
+						
+						
+
+						
+						
+							
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+			
+
+				
+				
+			
+
+			
+
+				
+				
+				
+				
+				
+				
+
+						 
+						 
+				
+				
+				
+				
+					
+La quota s’obté aplicant a la base liquidable el tipus impositiu que correspongui. Els tipus impositius de les operacions de transmissions patrimonials oneroses (TPO) són: 
+
+				
+			
+
+		
+	
+
+					
+
+				
+
+			
+
+			
+				
+					
+
+						
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissió d'immobles i drets reals sobre béns immobles urbans (codi TUB), immobles rústics  (codi TRT) i amarradors (codi TAM). Tipus general
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+El tipus impositiu que s'aplica amb caràcter general ve determinat pel valor total de l'immoble, tant si és urbà (codi TUB), com rústic (codi TRT) o si es tracta d'un amarrador (codi TAM). Hi ha tipus impositius específics quan l'adquirent és un gran tenidor (codi TGT) o s'adquireix un edifici sencer d'habitatges (codi TEH), i també tipus impositius reduïts aplicables quan s'adquireix l'habitatge habitual i es compleixen determinats requisits.
+
+
+1. 
+Tipus impositiu general 
+(codis TUB, TRT i TAM). La transmissió d'immobles que tenen un valor total que no supera els 600.000 € tributa al tipus impositiu del 10 % i quan el valor total és superior, tributa al tipus mitjà que resulta d'aplicar la tarifa següent establerta en funció del valor de l'immoble:
+
+
+
+
+
+
+
+
+
+
+
+
+Valor total de l'immoble
+
+
+Des de (euros)
+
+
+
+
+
+
+Quota íntegra
+
+
+(euros)
+
+
+
+
+
+
+Resta valor
+
+
+Fins a
+
+
+(euros)
+
+
+
+
+
+
+Tipus aplicable
+
+
+(%)
+
+
+
+
+
+
+
+
+
+
+0,00
+
+
+
+
+
+
+0,00
+
+
+
+
+
+
+600.000,00
+
+
+
+
+
+
+10
+
+
+
+
+
+
+
+
+
+
+600.000,00
+
+
+
+
+
+
+60.000,00
+
+
+
+
+
+
+300.000,00
+
+
+
+
+
+
+11
+
+
+
+
+
+
+
+
+
+
+900.000,00
+
+
+
+
+
+
+93.000,00
+
+
+
+
+
+
+600.000,00
+
+
+
+
+
+
+12
+
+
+
+
+
+
+
+
+
+
+1.500.000,00
+
+
+
+
+
+
+165.000,00
+
+
+
+
+
+
+En endavant
+
+
+
+
+
+
+13
+
+
+
+
+
+
+
+
+
+
+
+
+2. Quan l'adquirent és un 
+gran tenidor
+ (codi TGT) o s'adquireix un 
+edifici sencer d'habitatge
+s (codi TEH)  el tipus impositiu és del 20 % (vegeu en aquesta mateixa pàgina la informació detallada sobre quan s'han d'aplicar aquests tipus específics).
+
+
+3.
+ Tipus reduïts aplicables a la compra d'immobles destinats a habitatge habitual
+, sempre que es compleixin determinats requisits
+:
+
+
+
+
+Tipus reduït del 5 % aplicable a la compra d'un habitatge de protecció oficial (codi THP) o de l'habitatge habitual per part de famílies monoparentals (codi TMP), famílies nombroses (codi TUF), joves (codi TUJ), persones amb discapacitat (codi TUM) o víctimes de violència masclista (codi TVV). Vegeu en aquesta mateixa pàgina la informació detallada sobre els requisits per poder aplicar les tarifes THP, TMP, TUF, TUJ, TUM i TVV. 
+
+
+Tipus reduït del 4 % per l'adquisició d'un immoble situat en un municipi rural que hagi de constituir l'habitatge habitual de la persona contribuent (tarifa TMR). Si l'immoble està situat en un municipi rural d’atenció especial el tipus és del 3 % (tarifa TEA).
+
+
+Tipus reduït del 4 % per l'adquisició d'un immoble per a rehabilitar-lo situat en un municipi rural que hagi de constituir l'habitatge habitual de la persona contribuent (tarifa TRR). Si l'immoble està situat en un municipi rural d'atenció especial el tipus impositiu és del 3 % (tarifa TRA).
+
+
+
+
+Vegeu en aquesta mateixa pàgina la informació detallada sobre els requisits per aplicar aquests tipus reduïts.
+
+
+Exemple pràctic
+
+
+En Teo i la Laura compren a mitges una casa per 700.000 € (cadascú adquireix un 50 % de la propietat).
+
+
+
+
+Valor declarat: 700.000 €
+
+
+Base imposable d’en Teo: 350.000 € (700.000 x 50 % de participació)
+
+
+Base imposable de la Laura: 350.000 € (700.000 x 50 % de participació)
+
+
+Tarifa: TUB
+
+
+Càlcul del tipus mitjà. Valor de la totalitat de l’immoble: 700.000 €:
+- Fins a 600.000 €: 60.000 €
+- Resta valor (100.000 €) x 11%: 11.000 €
+- Tipus mitjà (71.000 / 700.000) x 100: 10,1430%
+
+
+Quota íntegra d’en Teo: 350.000 x 10,1430 / 100) = 35.500,50 €
+
+
+Quota íntegra de la Laura: 350.000 x 10,1430 / 100) = 35.500,50 €
+
+
+
+
+El valor de la totalitat de l’immoble, en aquest cas 700.000 euros, és el que s’ha de posar a la casella “valor total declarat”. En aquest cas, en fer el repartiment, cadascun dels contribuents ha de posar 50 % a la casella “% de participació”, i a la casella “Valor declarat de la part adquirida” ha de posar 350.000 euros. A la casella “% valor del dret” s’ha de posar 100 %, perquè adquireixen la propietat (ple domini).    
+
+
+Tarifa general anterior, vigent entre 31.03.2017 i 26.06.2025:
+
+
+La transmissió d'immobles que tenen un valor total que no supera els 1.000.000 € tributa al tipus impositiu del 10 % (codis TUB, TRT i TAM), i quan el valor total és superior, tributa al tipus mitjà que resulta d'aplicar la tarifa següent, establerta en funció del valor de l'immoble:
+
+
+
+
+
+
+
+
+
+
+
+
+Valor total de l’immoble
+
+
+Des de (euros)
+
+
+
+
+
+
+Quota íntegra
+
+
+(euros)
+
+
+
+
+
+
+Resta valor
+
+
+fins a (euros)
+
+
+ 
+
+
+
+
+
+
+Tipus
+
+
+aplicable (%)
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+0,00
+
+
+
+
+
+
+0,00
+
+
+
+
+
+
+1.000.000,00
+
+
+
+
+
+
+10
+
+
+
+
+
+
+
+
+
+
+1.000.000,00
+
+
+
+
+
+
+100.000,00
+
+
+
+
+
+
+En endavant
+
+
+
+
+
+
+11
+
+
+
+
+
+
+
+
+
+
+Tipus impositiu vigent entre 01.08.2013 i 30.03.2017: 10 %
+
+
+Tipus impositiu vigent entre 01.07.2010 i 31.07.2013: 8 %
+
+
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissió d’habitatge a un contribuent que tingui la consideració legal de gran tenidor. Tipus específic  (codi TGT)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Des del 27.06.2025, la transmissió d'habitatges tributa al 
+20 %
+ quan l'adquirent és una persona física o jurídica que tingui la consideració de gran tenidor.
+
+
+Té la consideració d'habitatge:
+
+
+
+
+Tant l'habitatge com un traster i fins a dues places d'aparcament que s’hagin adquirit simultàniament en unitat d'acte o estiguin situats al mateix edifici o complex urbanístic. Quan l’habitatge i les places d’aparcament que s’adquireix en unitat d’acte estan situats en municipis diferents (per exemple, en municipis limítrofes) o  en diferents edificis o complexos urbanístics, les places d’aparcament han de donar servei a l’habitatge per poder tenir la consideració d’habitatge (Consulta DGTJ 404/25).
+
+
+Tant l’habitatge que està a disposició del transmitent com aquell que està cedit a terceres persones (Consulta DGTJ 360/25). Ara bé, el traster i les places d’aparcament només tindran la consideració d’habitatge quan en el moment de l'adquisició es trobin a disposició del transmitent i no estiguin cedits a terceres persones (Consulta DGTJ 551/25).
+
+
+
+
+Aquest tipus de gravamen també s'aplica a les transmissions d'edificis sencers d'habitatges, amb divisió horitzontal o sense. En aquest cas, el tipus impositiu del 20 % només és aplicable a les entitats amb ús d’habitatge, incloent-hi un traster i fins a dues places d’aparcament per habitatge.
+
+
+A l'efecte de l'aplicació d'aquest tipus de gravamen:
+
+
+a) 
+Es considera gran tenidor
+ la persona física o jurídica que es troba en alguna de les situacions següents:
+
+
+
+
+És propietària de més de 10 immobles urbans d'ús residencial situats a Catalunya.
+
+
+És propietària d’immobles urbans d’ús residencial situats a Catalunya en què la suma de la superfície construïda de tots ells tingui més de 1.500 m² d'ús residencial. En el còmput de la superfície construïda no s’han d’incloure ni els garatges ni els trasters. Els metres quadrats de superfície seran els que consten en el Cadastre i la superfície de l’immoble que en el Cadastre consta amb un ús principal que no és habitatge no s’ha d’incloure en aquest còmput (Consulta DGTJ 404/25).
+
+
+És propietària de cinc o més immobles urbans d'ús residencial situats en algun o alguns dels municipis declarats de mercat residencial tensionat, amb independència que els municipis pertanyin a zones de mercat residencial tensionat diferents. Per a fets imposables fins al 13.07.2026, els habitatges havien d’estar ubicats dins una mateixa zona de mercat residencial tensionat declarada per la Generalitat de Catalunya (en aquest còmput no s’inclouen ni els garatges ni els trasters). Actualment, a Catalunya hi ha dues zones diferents de mercat residencial tensionat: la delimitada per la Resolució TER/800/2024 i la delimitada per la Resolució TER/2408/2024. Vegeu els municipis inclosos a cada zona a: 
+Municipis declarats zona de mercat residencial tensat
+.
+
+
+
+
+Cal tenir en compte que també computen als efectes de ser considerat gran tenidor:
+
+
+
+
+Els habitatges destinats al lloguer turístic, aquests computaran a aquests efectes, perquè l’ús del bé continua essent residencial (consulta 503/25 DGTJ).
+
+
+Els habitatges d’us residencial que pertanyen a revenedors que es dediquen a la compravenda d’immobles i que en alguns casos compren, reformen íntegrament i tornen a vendre (consulta 187/25 DGTJ).
+
+
+
+
+La condició de gran tenidor es determina abans de l’operació. Així, per exemple, si l’adquirent és propietari de quatre habitatges situats en una mateixa zona declarada de mercat tensionat i n’adquireix dos més en aquesta mateixa zona mitjançant una única escriptura, la transmissió de cap dels dos immobles tributarà al tipus impositiu del 20 %. Això és així perquè, en el moment de l’adquisició i de la meritació de l’impost, la persona encara no havia adquirit la condició de gran tenidor (consultes DGTJ 430/25 i 578/25).
+
+
+A més, la 
+Resolució 3/2025
+ de la DGTJ, modificada per la 
+Resolució 2/2026
+ de la DGTJ, precisen el següent:
+
+
+
+
+És propietari d'un immoble la persona física o jurídica que tingui la plena propietat o la nua propietat. No es considera propietari a qui tingui la propietat d'un dret real d'usdefruit o d'habitació d'un immoble.
+
+
+Per al còmput del nombre d’habitatges respecte dels quals la persona física o jurídica ha d’ésser propietària per a tenir la condició de gran tenidor, s'apliquen les regles següents:
+
+
+
+1a. Es computa com un habitatge el bé immoble en què la persona física o jurídica (contribuent de l'impost) és propietària del 100 %.
+
+
+2a. En cas de cotitularitat de béns immobles urbans d’ús residencial, per determinar si el contribuent és titular de cinc o més immobles situats dins d’una mateixa zona de mercat residencial tensionat, cal sumar els percentatges de titularitat corresponents i si el resultat és del 500 %, s’entendrà que el contribuent és titular de cinc immobles urbans d’ús residencial. Per exemple, si un contribuent és titular del 100 % de quatre habitatges i del 50 % de dos habitatges, tots situats  en una mateixa zona de mercat tensionat, el percentatge total de titularitat és del 500 % i, per tant, té la condició de gran tenidor.
+
+
+3a. En cas de cotitularitat de béns immobles d’ús residencial situats arreu del territori, tant si estan ubicats en zones de mercat tensionat com si no, per determinar si el contribuent és titular de més 1.500 m
+2
+ 
+d'ús residencial, cal sumar els metres quadrats obtinguts de l'aplicació dels percentatges de participació en cadascun dels immobles.  Del còmput de la superfície cal excloure’n la destinada a elements comuns. Vegeu un exemple pràctic al final de la informació sobre aquesta tarifa.
+
+
+4a. S’exclou l'habitatge habitual del còmput per a determinar si una persona física és gran tenidora. El concepte d’habitatge habitual és el que s’estableix a l'impost sobre la renda de les persones físiques.
+
+
+5a. Per a fets imposables a partir del 14.07.2026, només es computen els béns immobles urbans d’ús residencial, tant si estan situats en una zona de mercat residencial tensionat com si no ho estan. Per tant, els habitatges situats en sòl rústic, com per exemple les masies, no s’inclouen en el còmput (
+Resolució 5/2026
+ de la DGTJ).
+Per a fets imposables fins al 13.07.2026, en les zones que no són de mercat residencial tensionat, es computen tots els béns immobles d’ús residencial, tant urbans com rústics i, per tant, també s’inclouen en el còmput les masies (
+Resolució 5/2026
+ de la DGTJ).
+
+
+
+
+
+
+
+
+Pel que fa a la tributació en cas de consolidació de domini:
+
+
+
+
+
+
+Si en el moment de la consolidació del domini, el nu propietari és gran tenidor, el tipus de gravamen aplicable serà del 20 %.
+
+
+
+
+
+
+Si en el moment de la consolidació del domini, el nu propietari no és gran tenidor, tot i que ho era en el moment del desmembrament, no resulta aplicable el tipus del 20 %.
+
+
+
+
+
+
+
+
+
+
+b) 
+S'exclouen d'aquest tipus de gravamen
+ les transmissions següents:
+
+
+
+
+Aquelles en què l'adquirent sigui un promotor social d'acord amb l'article 51.2 de la Llei 18/2007, del 28 de desembre, del dret a l'habitatge, o una entitat privada sense ànim de lucre que proveeixi d'habitatge persones i famílies en situació de vulnerabilitat residencial.
+
+
+Aquelles en què l’immoble es destina a la seu social o centre de treball del gran tenidor definit en la lletra a).
+
+
+Aquelles en què l’adquirent destina l’immoble a habitatge habitual (
+Resolució 3/2025
+ de la DGTJ, modificada per la 
+Resolució 2/2026
+ de la DGTJ). S’entén per habitatge habitual aquell en què el contribuent resideix durant un termini continuat de tres anys.
+
+
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+        
+
+            
+
+                
+
+                    
+                    
+
+                
+
+                
+
+                    
+Exemple pràctic
+
+
+En Toni adquirirà un apartament i ja és propietari de diversos immobles situats a Catalunya:
+
+
+- Un pis, que és el seu habitatge habitual, situat en una zona de mercat residencial tensionat, amb una superfície construïda de 120 m
+2
+.
+
+
+- El 100 % de 4 habitatges, dos dels quals en una zona de mercat residencial tensionat i els altres dos en una altra zona de mercat residencial tensionat, amb una superfície construïda de 150 m
+2
+ cadascun.
+
+
+- El 100 % de la nua propietat d’un habitatge que té una superfície construïda de 200 m
+2
+, situat en una zona de mercat residencial no tensionat.
+
+
+- El 75 % de 10 habitatges, amb una superfície construïda de 100 m
+2
+, situats en una zona de mercat residencial no tensionat.
+
+
+La compra de l’apartament tributarà amb el tipus impositiu específic per a grans tenidors perquè en Toni és propietari d’uns habitatges que, en total, tenen una superfície construïda superior a 1.500 m
+2
+, d’acord amb el càlcul següent (se n'exclou l'habitatge habitual):
+
+
+(150 m
+2
+x 4) + 200 m
+2
+ +( (100 m
+2
+x10) x75%) = 1.550 m
+2
+
+
+Cal tenir en compte que si la superfície total fos inferior a 1.500 m
+2
+, en Toni no tindria la consideració de gran tenidor perquè no és propietari del 100 % de més de 10 habitatges ni de 5 o més habitatges situats en zones de mercat residencial tensionat, donat que se n'exclou l'habitatge habitual.
+
+                
+
+            
+
+        
+
+    
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissió d’edificis sencers d'habitatges. Tipus específic (codi TEH)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Des del 27.06.2025, en la transmissió d’edificis sencers d’habitatges, tributa d'acord amb el següent:
+
+
+
+
+
+
+S'aplica el tipus impositiu del 20 % quan l’edifici sencer 
+l’adquireix
+ 
+una única persona
+ física o jurídica (Consulta DGTJ 443/25). Si l'adquirent té la condició de gran tenidor, el codi de la tarifa és TGT i, si no té aquesta condició, el codi de la tarifa és TEH.
+
+
+
+
+Quan l’edifici sencer l’adquireixen diverses persones, cadascuna tributa segons la seva condició
+: els grans tenidors al 20 % per la part adquirida (tarifa TGT) i la resta pel tipus general (tarifa TUB).
+
+
+
+
+
+
+Nota: en cas que l’adquirent destini un dels habitatges al seu 
+habitatge habitual
+, la tarifa a aplicar respecte l’adquisició d’aquest habitatge serà la general o bé, si compleix els requisits, la tarifa reduïda que correspongui.
+
+
+
+
+Concepte d'edifici d'habitatges
+
+
+D'acord amb la 
+Resolució 3/2025
+ de la DGTJ, modificada per la 
+Resolució 2/2026
+ de la DGTJ, sobre l’aplicació del tipus de gravamen del 20 % en les transmissions d'edificis sencers, el concepte d'edifici d'habitatges comprèn:
+
+
+
+
+Les edificacions que continguin dos o més habitatges, tinguin feta o no la divisió horitzontal. En conseqüència, en queden excloses les edificacions formades per un habitatge de caràcter unifamiliar, atès que només hi ha un habitatge.
+
+
+Les edificacions en què, a més a més dels habitatges, hi ha alguna entitat destinada a altres usos (locals, magatzems, aparcaments, etc.).
+
+
+
+
+També es considera que s’adquireix un edifici sencer d’habitatges i, en conseqüència, resulta aplicable el tipus impositiu del 20 % quan s’adquireixen tots els habitatges que integren l’edifici, encara que no s’adquireixin els immobles del mateix edifici destinats a usos diferents de l’habitatge (Consulta DGTJ 256/26).
+
+
+Tipus de gravamen
+
+
+D'acord amb la 
+Resolució 3/2025
+ de la DGTJ, modificada per la 
+Resolució 2/2026
+ de la DGTJ, sobre l’aplicació del tipus de gravamen del 20 % en les transmissions d'edificis sencers:
+
+
+
+
+S’aplica el gravamen del 20 % només a la superfície de l’immoble que tingui un ús residencial, però en queden excloses la part proporcional dels elements comuns i la part proporcional de l’immoble qualificada d’altres usos. Ara bé, si l’adquirent té la condició de gran tenidor, el gravamen del 20 % s’aplica també als trasters, amb un màxim d’un per habitatge, i a les places d’aparcament, amb un màxim de dues per habitatge (
+Informe
+ de la DGTJ i de l’Agència de l'Habitatge de Catalunya de 24.03.2026, qüestió 33).
+
+
+Quan s’adquireix un edifici sencer d’habitatges amb un valor total superior a 600.000 €, a la superfície de l’edifici que tingui un ús diferent al d’habitatge s’aplica el tipus impositiu general per a la transmissió de béns immobles. Per calcular el tipus mitjà del tipus general a aplicar només s’ha de tenir en compte el valor de la superfície de l’edifici amb un ús diferent al d’habitatge (Consulta DGTJ 21/2026). 
+Exemple: l’Enric, que no és gran tenidor, adquireix un edifici sencer d’habitatges sense divisió horitzontal valorat en 3.200.000 €. L'edifici està format per 8 habitatges, amb un valor total de 2.300.000 €, i per 3 locals, valorats en 300.000 € cadascun. La tributació d’aquesta adquisició és la següent:
+
+
+
+Sobre el valor dels habitatges (2.300.000 €) s’aplica el tipus impositiu del 20 % (codi TEH).
+
+
+Sobre la suma del valor dels locals (900.000 €) s’aplica el tipus impositiu general, calculat mitjançant l’aplicació de l’escala progressiva de l’impost, que en aquest cas resulta ser el 10,33 % (codi TUB).
+
+
+
+
+
+
+
+
+S'exclouen
+ de l'aplicació d'aquest tipus de gravamen els supòsits següents:
+
+
+
+
+Quan l'adquirent sigui un promotor social d'acord amb l'article 51.2 de la Llei 18/2007, del 28 de desembre, del dret a l'habitatge, o una entitat privada sense ànim de lucre que proveeixi d'habitatge persones i famílies en situació de vulnerabilitat residencial.
+
+
+Les adquisicions d'immobles destinades a la seu social o centre de treball de l'adquirent.
+
+
+ Quan en la transmissió de l'edifici concorrin conjuntament les circumstàncies següents:
+
+
+
+que l'adquirent sigui una persona física,
+
+
+que l'edifici tingui un màxim de 4 habitatges
+
+
+i que tots els habitatges adquirits hagin de constituir l'habitatge habitual de la persona adquirent i de familiars d'aquesta fins al 2n grau de parentiu per consanguinitat (Consulta DGTJ 404/25). A aquest efecte, per considerar que els habitatges constitueixen l'habitatge habitual del contribuent i familiars, respectivament, cal que entrin a residir-hi de manera efectiva i permanent en el termini de dotze mesos, a comptar a partir de la data de la transmissió, i que hi resideixin durant un període continuat de tres anys. S'entén que l'habitatge va tenir també aquest caràcter quan, malgrat no haver transcorregut el termini de tres anys, concorrin circumstàncies que necessàriament exigeixin el canvi d'habitatge, com la celebració de matrimoni, separació matrimonial, constitució de parella estable, extinció de parella estable, trasllat laboral, obtenció de primera feina o d'ocupació més avantatjosa o altres d'anàlogues.
+
+
+
+
+
+
+
+
+Transmissió progressiva d’un edifici sencer d’habitatges
+
+
+En el cas que la transmissió total de l'edifici sencer es realitzi de manera progressiva en el temps, les autoliquidacions que el contribuent hagi presentat en cadascuna de les transmissions parcials, aplicant la tarifa general (TUB), tindran caràcter provisional. En conseqüència, haurà de regularitzar la situació en el moment en què es produeixi la transmissió de l’últim habitatge, mitjançant la presentació, en el termini d’un mes, d’una autoliquidació complementària per cada autoliquidació provisional presentada, aplicant la tarifa TEH i els interessos de demora que corresponguin.
+
+
+Pel que fa al termini per regularitzar l’aplicació del tipus del 20 % en l’adquisició d’un edifici sencer d’habitatges, atès que la norma no estableix un termini específic, resulta aplicable el termini de prescripció del dret de l’Administració per regularitzar la situació tributària. Aquest termini és de quatre anys i es computa, amb caràcter general, des de l’endemà de la finalització del termini de presentació de cada autoliquidació, o bé des de la data de presentació d’aquesta si s’ha presentat fora de termini (consulta DGTJ 404-25).
+
+
+D'acord amb la 
+Resolució 3/2025
+ de la DGTJ, modificada per la 
+Resolució 2/2026
+ de la DGTJ, aquesta regularització no resulta aplicable a les autoliquidacions corresponents a transmissions parcials de l'edifici efectuades abans del 27.06.2025, encara que, amb posterioritat, el contribuent acabi adquirint tot l'edifici.
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissions i drets reals sobre habitatges amb protecció oficial. Tipus reduït (codi THP)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tipus impositiu: 7 %. 
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissió d’un immoble que hagi de constituir l’habitatge habitual de famílies monoparentals. Tipus reduït  (codi TMP)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tipus impositiu: 5,00 %
+
+
+Requisits per poder gaudir del tipus reduït:
+
+
+
+
+El subjecte passiu ha d'ésser membre de la 
+família monoparental
+. Són famílies monoparentals les que s'ajusten a les determinacions de la normativa de desplegament de la Llei 18/2003, del 4 de juliol, de suport a les famílies. Més informació a: 
+Famílies monoparentals
+.
+
+
+
+
+
+
+En 
+l’última declaració de l'impost sobre la renda de les persones físiques (IRPF)*
+, la suma de les bases imposables general i de l'estalvi, menys els mínims personals i familiars, corresponents als membres de la família monoparental, no ha d'excedir, per a transmissions realitzades a partir del 18.03.2023, els 36.000 € (per a transmissions anteriors no ha d’excedir els 30.000 €). Aquesta quantitat s'incrementa, en les transmissions realitzades a partir del 18.03.2023, en 14.000 € per cada fill i filla que excedeixi del nombre de fills que la legislació vigent exigeix com a mínim perquè una família tingui la condició legal de família monoparental de categoria especial (per a transmissions anteriors, aquesta quantitat és de 12.000 €).
+
+
+
+
+*A aquests efectes, es considera que l’última declaració de l’IRPF
+ és la darrera que s’ha presentat o la que s’hauria pogut presentar abans de la transmissió de l’habitatge, és a dir, abans de la meritació de l’impost sobre transmissions patrimonials. Cal tenir en compte el següent:
+
+
+- Quan la transmissió es produeix abans de finalitzar el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, 
+no es considera "última declaració" la que s'ha presentat després de la transmissió
+, encara que s’hagi presentat dins el termini de presentació de l'IRPF (
+Resolucions de la DGTJ núm. 1/2025 i 2/2025
+).
+
+
+- Quan la  transmissió es produeix transcorregut el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, 
+es considera "última declaració" la del període anterior a la transmissió.
+
+
+Vegeu: 
+Exemples sobre quina declaració de l’IRPF s’ha de considerar que és l’última
+
+
+Nota: la 
+Resolució de la DGTJ 1/2025,
+ de 9 d’abril de 2025 deixa sense efectes la Resolució 1/2015, de 30 de març, sobre l’aplicació del tipus reduït del 5 % de transmissions patrimonials i actes jurídics documentats. D’acord amb el principi de confiança legítima, no es revisaran els fets imposables anteriors a la publicació de la Resolució 1/2025, en els quals el contribuent va aplicar el criteri establert per la Resolució 1/2015 i li resulta més favorable.
+
+
+
+
+Que l’immoble es destini a ser l’
+habitatge habitual* de la família monoparental
+. Aquest tipus impositiu s’aplica tant si s’adquireix el ple domini de la totalitat de l’immoble com una part indivisa, i també és aplicable si s’adquireix un dret de superfície, d’usdefruit o bé un dret d’ús sobre l’immoble; però no es pot aplicar quan s’adquireix la nua propietat  (Consulta DGTJ 408/25).
+
+
+
+
+*
+A aquestes efectes es considera habitatge habitual
+:
+
+
+a) L'habitatge, un traster i fins a dues places d'aparcament, que hagin estat adquirits simultàniament en unitat d'acte o estiguin situats al mateix edifici o complex urbanístic, i sempre que, en ambdós casos, en el moment de l'adquisició es trobin a disposició del transmitent, sense haver estat cedits a terceres persones.
+
+
+b) Per a les transmissions realitzades a partir del 18.03.2023, aquest tipus impositiu també s’aplica quan s'adquireix un terreny per a la posterior construcció de l'habitatge habitual o un habitatge en construcció (no es pot aplicar, però, en transmissions anteriors).
+
+
+c) El que hagi estat habitat de manera efectiva i permanent pel contribuent en el termini de dotze mesos comptats a partir de la data d'adquisició de l'habitatge o d'acabament de les obres de construcció. En cas que s’hagi adquirit un terreny o un habitatge en construcció, les obres han de finalitzar dins un termini de tres anys a comptar de l'adquisició.
+
+
+d) Aquell en què el contribuent resideixi durant un termini continuat de tres anys. S'entén que l'habitatge va tenir també aquest caràcter quan, malgrat no haver transcorregut el termini de tres anys, concorrin circumstàncies que necessàriament exigeixin el canvi d'habitatge, com ara celebració de matrimoni, separació matrimonial, constitució de parella estable, extinció de parella estable, trasllat laboral, obtenció de primera feina o d'ocupació més avantatjosa o altres d'anàlogues.
+
+
+e) El termini de tres anys a què fa referència la lletra 
+d
+ es computa des de la data en què s’hi ha anat a viure
+,
+ sempre que l'habitatge hagi estat habitat de manera efectiva i permanent pel contribuent en el termini de dotze mesos, comptats a partir de la data d'adquisició o d'acabament de les obres de construcció (Consulta DGTJ 13/25).
+
+
+L'aplicació d'aquest tipus de gravamen reduït 
+té caràcter provisional i resta condicionat al compliment dels requisits temporals 
+establerts en les lletres
+ c
+, 
+d
+ i
+ e
+. En cas d’incompliment i pèrdua de benefici fiscal cal presentar una autoliquidació complementària, aquesta vegada amb la tarifa TUB. El termini de presentació és d’un mes a comptar de l'endemà de la data en què s'ha produït l'incompliment o pèrdua del dret al benefici fiscal. A l’autoliquidació complementària s’han d’incloure els interessos de demora corresponents. Consulteu la informació “Autoliquidació complementària per pèrdua de benefici fiscal” disponible a: 
+Meritació i termini de presentació i pagament
+.
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissió d'un immoble que hagi de constituir l'habitatge habitual d'una família nombrosa. Tipus reduït (codi TUF)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tipus impositiu: 5,00 %.
+
+
+Requisits per poder gaudir del tipus reduït:
+
+
+
+
+El subjecte passiu ha de ser membre d'una
+ família nombrosa
+, condició que s’acredita amb el títol de família nombrosa o qualsevol altre mitjà de prova admès en dret (Resolució del TEAC núm. 816/2021, de 24 de juny de 2021). El concepte de família nombrosa ve determinat pel que preveu la Llei 40/2003, de 18 de novembre, de protecció de les famílies nombroses. Més informació a: 
+Famílies nombroses
+.
+
+
+
+
+La Sentència del Tribunal Suprem núm. 1060/2026, de 24 de setembre [ROJ: 3994/2026] ha establert que, únicament als efectes de l’aplicació d’aquest tipus reduït, el concebut que encara no ha nascut en la data de meritació de l’impost s’ha d’integrar en la unitat familiar per determinar la condició de família nombrosa del contribuent, sempre que sobrevisqui al naixement.
+
+
+
+
+En 
+l’última declaració de l'impost sobre la renda de les persones físiques (IRPF)*
+, la suma de les bases general i de l'estalvi, menys els mínims personals i familiars, corresponents als membres de la família nombrosa, no ha d'excedir, per a transmissions realitzades a partir del 18.03.2023, els 36.000 € (per a transmissions anteriors no ha d’excedir els 30.000 €). Aquesta quantitat s'ha d'incrementar, en les transmissions realitzades a partir del 18.03.2023, en 14.000 € per cada fill i filla que excedeixi del nombre de fills que la legislació vigent exigeix com a mínim perquè una família tingui la condició legal de nombrosa (per a transmissions anteriors, aquesta quantitat és de 12.000 €).
+
+
+
+
+*A aquests efectes, es considera que l’última declaració de l’IRPF
+ és la darrera que s’ha presentat o la que s’hauria pogut presentar abans de la transmissió de l’habitatge, és a dir, abans de la meritació de l’impost sobre transmissions patrimonials. Cal tenir en compte el següent:
+
+
+- Quan la transmissió es produeix abans de finalitzar el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, 
+no es considera "última declaració" la que s'ha presentat després de la transmissió
+, encara que s’hagi presentat dins el termini de presentació de l'IRPF (
+Resolucions de la DGTJ
+ núm. 1/2025 i 2/2025).
+
+
+- Quan la  transmissió es produeix transcorregut el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, 
+es considera "última declaració" la del període anterior a la transmissió.
+
+
+Vegeu: 
+Exemples sobre quina declaració de l’IRPF s’ha de considerar que és l’última
+
+
+Nota: la 
+Resolució de la DGTJ 1/2025,
+ de 9 d’abril de 2025 deixa sense efectes la Resolució 1/2015, de 30 de març, sobre l’aplicació del tipus reduït del 5 % de transmissions patrimonials i actes jurídics documentats. D’acord amb el principi de confiança legítima, no es revisaran els fets imposables anteriors a la publicació de la Resolució 1/2025, en els quals el contribuent va aplicar el criteri establert per la Resolució 1/2015 i li resulta més favorable.
+
+
+
+
+Que l’immoble es destini a ser l’
+habitatge habitual* de la família nombrosa
+. Aquest tipus impositiu s’aplica tant si s’adquireix el ple domini de la totalitat de l’immoble com una part indivisa, i també és aplicable si s’adquireix un dret de superfície, d’usdefruit o bé un dret d’ús sobre l’immoble; però no es pot aplicar quan s’adquireix la nua propietat  (Consulta  DGTJ 408/25).  
+
+
+
+
+*
+A aquestes efectes es considera habitatge habitual
+:
+
+
+a) L'habitatge, un traster i fins a dues places d'aparcament, que hagin estat adquirits simultàniament en unitat d'acte o estiguin situats al mateix edifici o complex urbanístic, i sempre que, en ambdós casos, en el moment de l'adquisició es trobin a disposició del transmitent, sense haver estat cedits a terceres persones.
+
+
+b) Per a les transmissions realitzades a partir del 18.03.2023, aquest tipus impositiu també s’aplica quan s'adquireix un terreny per a la posterior construcció de l'habitatge habitual o un habitatge en construcció (no es pot aplicar, però, en transmissions anteriors).
+
+
+c) El que hagi estat habitat de manera efectiva i permanent pel contribuent en el termini de dotze mesos comptats a partir de la data d'adquisició de l'habitatge o d'acabament de les obres de construcció. En cas que s’hagi adquirit un terreny o un habitatge en construcció, les obres han de finalitzar dins un termini de tres anys a comptar de l'adquisició.
+
+
+d) Aquell en què el contribuent resideixi durant un termini continuat de tres anys. S'entén que l'habitatge va tenir també aquest caràcter quan, malgrat no haver transcorregut el termini de tres anys, concorrin circumstàncies que necessàriament exigeixin el canvi d'habitatge, com ara celebració de matrimoni, separació matrimonial, constitució de parella estable, extinció de parella estable, trasllat laboral, obtenció de primera feina o d'ocupació més avantatjosa o altres d'anàlogues.
+
+
+e) El termini de tres anys a què fa referència la lletra 
+d
+ es computa des de la data en què s’hi ha anat a viure
+,
+ sempre que l'habitatge hagi estat habitat de manera efectiva i permanent pel contribuent en el termini de dotze mesos, comptats a partir de la data d'adquisició o d'acabament de les obres de construcció (Consulta DGTJ 13/25).
+
+
+L'aplicació d'aquest tipus de gravamen reduït 
+té caràcter provisional i resta condicionat al compliment dels requisits temporals 
+establerts en les lletres
+ c
+, 
+d
+ i
+ e
+. En cas d’incompliment i pèrdua de benefici fiscal cal presentar una autoliquidació complementària, aquesta vegada amb la tarifa TUB. El termini de presentació és d’un mes a comptar de l'endemà de la data en què s'ha produït l'incompliment o pèrdua del dret al benefici fiscal. A l’autoliquidació complementària s’han d’incloure els interessos de demora corresponents. Consulteu la informació “Autoliquidació complementària per pèrdua de benefici fiscal” disponible a: 
+Meritació i termini de presentació i pagament
+.
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissió d'un immoble que hagi de constituir l'habitatge habitual d'un jove. Tipus reduït  (codi TUJ)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tipus impositiu: 5,00 %.
+
+
+Requisits que ha de reunir la persona contribuent per poder gaudir del tipus reduït:
+
+
+
+
+Tenir 
+35 anys o menys
+ en la data de meritació de l'impost, per a transmissions realitzades
+ a partir del 27.06.2025
+ (per a transmissions fins al 26.06.2025 l’edat màxima era de 32 anys).
+
+
+
+
+
+
+En 
+l’última declaració de l'impost sobre la renda de les persones físiques (IRPF)*
+, la suma de la base imposable general i la de l'estalvi, menys el mínim personal i familiar no pot excedir, per a transmissions realitzades a partir del 18.03.2023, els 36.000 euros (per a transmissions anteriors no ha d’excedir els 30.000 €).
+
+
+
+
+*A aquests efectes, es considera que l’última declaració de l’IRPF
+ és la darrera que s’ha presentat o la que s’hauria pogut presentar abans de la transmissió de l’habitatge, és a dir, abans de la meritació de l’impost sobre transmissions patrimonials. Cal tenir en compte el següent:
+
+
+- Quan la transmissió es produeix abans de finalitzar el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, 
+no es considera "última declaració" la que s'ha presentat després de la transmissió
+, encara que s’hagi presentat dins el termini de presentació de l'IRPF (
+Resolucions de la DGTJ
+ núm. 1/2025 i 2/2025).
+
+
+- Quan la  transmissió es produeix transcorregut el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, 
+es considera "última declaració" la del període anterior a la transmissió.
+
+
+Vegeu: 
+Exemples sobre quina declaració de l’IRPF s’ha de considerar que és l’última
+
+
+Nota: la 
+Resolució de la DGTJ 1/2025,
+ de 9 d’abril de 2025 deixa sense efectes la Resolució 1/2015, de 30 de març, sobre l’aplicació del tipus reduït del 5 % de transmissions patrimonials i actes jurídics documentats. D’acord amb el principi de confiança legítima, no es revisaran els fets imposables anteriors a la publicació de la Resolució 1/2025, en els quals el contribuent va aplicar el criteri establert per la Resolució 1/2015 i li resulta més favorable.
+
+
+
+
+Que l’immoble es destini a ser l’
+habitatge habitual* de l'adquirent
+. Aquest tipus impositiu s’aplica tant si s’adquireix el ple domini de la totalitat de l’immoble com una part indivisa, i també és aplicable si s’adquireix un dret de superfície, d’usdefruit o bé un dret d’ús sobre l’immoble; però no es pot aplicar quan s’adquireix la nua propietat  (Consulta  DGTJ 408/25).
+
+
+
+
+*
+A aquestes efectes es considera habitatge habitual
+:
+
+
+a) L'habitatge, un traster i fins a dues places d'aparcament, que hagin estat adquirits simultàniament en unitat d'acte o estiguin situats al mateix edifici o complex urbanístic, i sempre que, en ambdós casos, en el moment de l'adquisició es trobin a disposició del transmitent, sense haver estat cedits a terceres persones.
+
+
+b) Per a les transmissions realitzades a partir del 18.03.2023, aquest tipus impositiu també s’aplica quan s'adquireix un terreny per a la posterior construcció de l'habitatge habitual o un habitatge en construcció (no es pot aplicar, però, en transmissions anteriors).
+
+
+c) El que hagi estat habitat de manera efectiva i permanent pel contribuent en el termini de dotze mesos comptats a partir de la data d'adquisició de l'habitatge o d'acabament de les obres de construcció. En cas que s’hagi adquirit un terreny o un habitatge en construcció, les obres han de finalitzar dins un termini de tres anys a comptar de l'adquisició.
+
+
+d) Aquell en què el contribuent resideixi durant un termini continuat de tres anys. S'entén que l'habitatge va tenir també aquest caràcter quan, malgrat no haver transcorregut el termini de tres anys, concorrin circumstàncies que necessàriament exigeixin el canvi d'habitatge, com ara celebració de matrimoni, separació matrimonial, constitució de parella estable, extinció de parella estable, trasllat laboral, obtenció de primera feina o d'ocupació més avantatjosa o altres d'anàlogues.
+
+
+e) El termini de tres anys a què fa referència la lletra 
+d
+ es computa des de la data en què s’hi ha anat a viure
+,
+ sempre que l'habitatge hagi estat habitat de manera efectiva i permanent pel contribuent en el termini de dotze mesos, comptats a partir de la data d'adquisició o d'acabament de les obres de construcció (Consulta DGTJ 13/25).
+
+
+L'aplicació d'aquest tipus de gravamen reduït 
+té caràcter provisional i resta condicionat al compliment dels requisits temporals 
+establerts en les lletres
+ c
+, 
+d
+ i
+ e
+. En cas d’incompliment i pèrdua de benefici fiscal cal presentar una autoliquidació complementària, aquesta vegada amb la tarifa TUB. El termini de presentació és d’un mes a comptar de l'endemà de la data en què s'ha produït l'incompliment o pèrdua del dret al benefici fiscal. A l’autoliquidació complementària s’han d’incloure els interessos de demora corresponents. Consulteu la informació “Autoliquidació complementària per pèrdua de benefici fiscal” disponible a: 
+Meritació i termini de presentació i pagament
+.
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissió d'un immoble que hagi de constituir l'habitatge habitual d'una persona amb discapacitat física, psíquica o sensorial. Tipus reduït  (codi TUM)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tipus impositiu: 5,00 %.
+
+
+Requisits per poder gaudir del tipus reduït:
+
+
+
+
+El grau de
+ discapacitat ha de ser igual o superior al 65 %
+, d'acord amb el barem que determina l'article 367 del text refós de la Llei general de la Seguretat Social, aprovat pel Reial decret legislatiu 8/2015, del 30 d'octubre. L’acreditació documental d’aquesta circumstància s’ha d’adjuntar a l’autoliquidació. Vegeu: 
+Acreditació del grau de discapacitat del 65 % o superior
+
+
+ En l'
+última declaració de l'impost sobre la renda de les persones físiques (IRPF)*
+, la suma de la base imposable general i la de l'estalvi menys els mínims personals i familiars, corresponents als membres de la unitat familiar, no pot excedir, per a transmissions realitzades a partir del 18.03.2023, els 36.000 € (per a transmissions anteriors no ha d’excedir els 30.000 €).
+
+
+
+
+*A aquests efectes, es considera que l’última declaració de l’IRPF
+ és la darrera que s’ha presentat o la que s’hauria pogut presentar abans de la transmissió de l’habitatge, és a dir, abans de la meritació de l’impost sobre transmissions patrimonials. Cal tenir en compte el següent:
+
+
+- Quan la transmissió es produeix abans de finalitzar el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, 
+no es considera "última declaració" la que s'ha presentat després de la transmissió
+, encara que s’hagi presentat dins el termini de presentació de l'IRPF (
+Resolucions de la DGTJ
+ núm. 1/2025 i 2/2025).
+
+
+- Quan la  transmissió es produeix transcorregut el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, 
+es considera "última declaració" la del període anterior a la transmissió.
+
+
+Vegeu: 
+Exemples sobre quina declaració de l’IRPF s’ha de considerar que és l’última
+
+
+Nota: la 
+Resolució de la DGTJ 1/2025,
+ de 9 d’abril de 2025 deixa sense efectes la Resolució 1/2015, de 30 de març, sobre l’aplicació del tipus reduït del 5 % de transmissions patrimonials i actes jurídics documentats. D’acord amb el principi de confiança legítima, no es revisaran els fets imposables anteriors a la publicació de la Resolució 1/2025, en els quals el contribuent va aplicar el criteri establert per la Resolució 1/2015 i li resulta més favorable.
+
+
+
+
+La circumstància de discapacitat
+ ha de concórrer en el contribuent o en algun dels membres de la seva unitat familiar*
+. La tarifa reduïda la poden aplicar, si compleixen els requisits, tots els membres de la unitat familiar que adquireixin l'habitatge habitual.
+
+
+
+
+*Concepte d'unitat familiar
+. És el contingut a l'article 82 de la Llei 35/2006 de 28 de desembre, de l'impost sobre la renda de les persones físiques, relatiu a la tributació conjunta, on es defineixen les dues modalitats d’unitat familiar existents:
+
+
+1.1. Cònjuges no separats legalment i, si n'hi hagués: 
+
+
+- els fills menors, amb excepció dels que, amb el consentiment dels pares, viuen independent d’aquests
+
+
+- i fills majors d’edat incapacitats judicialment i subjectes a la pàtria potestat prorrogada o rehabilitada.
+
+
+Nota: també es considera que formen part de la unitat familiar els fills majors d’edat amb discapacitat quan tenen una mesura de suport per exercir la capacitat jurídica que atorga als progenitors facultats representatives (com pot ser el nomenament d’assistent amb facultats representatives o de curador amb facultats representatives).
+
+
+1.2. Ens els casos de separació legal, o quan no hi hagi vincle matrimonial, la formada pel pare o la mare i tots els fills que convisquin amb un o l’altre i que reuneixin els requisits de l’apartat anterior.
+
+
+Vegeu: 
+Exemples sobre qui es pot aplicar la tarifa reduïda TUM
+
+
+
+
+Que l’immoble es destini a ser l’habitatge habitual*
+ de la persona amb discapacitat. Aquest tipus impositiu s’aplica tant si s’adquireix el ple domini de la totalitat de l’immoble com una part indivisa, i també és aplicable si s’adquireix un dret de superfície, d’usdefruit o bé un dret d’ús sobre l’immoble; però no es pot aplicar quan s’adquireix la nua propietat  (Consulta  DGTJ 408/25).
+
+
+
+
+* Es considera habitatge habitual 
+als efectes d'aplicar el tipus reduït:
+
+
+a) L'habitatge, un traster i fins a dues places d'aparcament, que hagin estat adquirits simultàniament en unitat d'acte o estiguin situats al mateix edifici o complex urbanístic, i sempre que, en ambdós casos, en el moment de l'adquisició es trobin a disposició del transmitent, sense haver estat cedits a terceres persones.
+
+
+b) Per a les transmissions realitzades a partir del 18.03.2023, aquest tipus impositiu també s’aplica quan s'adquireix un terreny per a la posterior construcció de l'habitatge habitual o un habitatge en construcció (no es pot aplicar, però, en transmissions anteriors).
+
+
+c) El que hagi estat habitat de manera efectiva i permanent pel contribuent en el termini de dotze mesos comptats a partir de la data d'adquisició de l'habitatge o d'acabament de les obres de construcció. En cas que s’hagi adquirit un terreny o un habitatge en construcció, les obres han de finalitzar dins un termini de tres anys a comptar de l'adquisició.
+
+
+d) Aquell en què el contribuent resideixi durant un termini continuat de tres anys. S'entén que l'habitatge va tenir també aquest caràcter quan, malgrat no haver transcorregut el termini de tres anys, concorrin circumstàncies que necessàriament exigeixin el canvi d'habitatge, com ara celebració de matrimoni, separació matrimonial, constitució de parella estable, extinció de parella estable, trasllat laboral, obtenció de primera feina o d'ocupació més avantatjosa o altres d'anàlogues.
+
+
+e) El termini de tres anys a què fa referència la lletra 
+d
+ es computa des de la data en què s’hi ha anat a viure
+,
+ sempre que l'habitatge hagi estat habitat de manera efectiva i permanent pel contribuent en el termini de dotze mesos, comptats a partir de la data d'adquisició o d'acabament de les obres de construcció (Consulta DGTJ 13/25).
+
+
+L'aplicació d'aquest tipus de gravamen reduït 
+té caràcter provisional i resta condicionat al compliment dels requisits temporals 
+establerts en les lletres
+ c
+, 
+d
+ i
+ e
+. En cas d’incompliment i pèrdua de benefici fiscal cal presentar una autoliquidació complementària, aquesta vegada amb la tarifa TUB. El termini de presentació és d’un mes a comptar de l'endemà de la data en què s'ha produït l'incompliment o pèrdua del dret al benefici fiscal. A l’autoliquidació complementària s’han d’incloure els interessos de demora corresponents. Consulteu la informació “Autoliquidació complementària per pèrdua de benefici fiscal” disponible a: 
+Meritació i termini de presentació i pagament
+.
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissió d’un immoble que hagi de constituir l’habitatge habitual d’una persona que tingui la consideració legal de víctima de violència masclista. Tipus reduït (codi TVV)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tipus impositiu: 5,00 % (vigent per a fets imposables a partir del 27.06.2025).
+
+
+Aquest tipus impositiu s'aplica a la transmissió d'un immoble que ha de constituir l'habitatge habitual d'una persona que tingui la condició de víctima de violència masclista d'acord amb la Llei 5/2008, de 24 d'abril, del dret de les dones a erradicar la violència masclista, sempre que la suma de les bases imposables general i de l'estalvi, menys els mínims personal i familiar, de la contribuent en la darrera declaració de l'impost sobre la renda de les persones físiques no excedeixi els 36.000 euros.   
+
+
+Aquest tipus impositiu s’aplica tant si s’adquireix la totalitat com una part indivisa, però no es pot aplicar quan s’adquireix la nua propietat.  
+
+
+Requisits per poder gaudir del tipus reduït:
+
+
+
+
+Tenir la condició de víctima de violència masclista.
+ Cal acreditar la condició de víctima de violència masclista amb algun dels mitjans de prova establerts a la Llei 5/2008, de 24 d'abril, del dret de les dones a erradicar la violència masclista (article 33 i disposició adicional 12a ter). Vegeu quins són aquests mitjans de prova al final de la informació sobre aquesta tarifa. 
+
+
+L'adquisició de l'habitatge ha d'obeir a la necessitat de canvi de domicili
+ per part de la persona víctima de violència masclista i produir-se com a conseqüència d'aquesta circumstància. 
+
+
+En 
+l’última declaració de l'impost sobre la renda de les persones físiques (IRPF)*
+, la suma de la base imposable general i la de l'estalvi, menys el mínim personal i familiar no pot excedir els 36.000 €.
+
+
+
+
+*
+A aquests efectes,
+ es considera que l’última declaració de l’IRPF
+ és la darrera que s’ha presentat o la que s’hauria pogut presentar abans de la transmissió de l’habitatge, és a dir, abans de la meritació de l’impost sobre transmissions patrimonials. Cal tenir en compte el següent:
+
+
+- Quan la transmissió es produeix abans d'acabar el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, no es considera "última declaració" la que s'ha presentat després de la transmissió, encara que s’hagi presentat dins el termini de presentació de l'IRPF (
+Resolucions de la DGTJ
+ núm. 1/2025 i 2/2025).
+
+
+- Quan la  transmissió es produeix transcorregut el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, es considera "última declaració" la del període anterior a la transmissió. 
+
+
+Vegeu: 
+Exemples sobre quina declaració de l’IRPF s’ha de considerar que és l’última
+
+
+
+
+Que l’immoble es destini a ser l’
+habitatge habitual* de l'adquirent
+. Aquest tipus impositiu s’aplica tant si s’adquireix el ple domini de la totalitat de l’immoble com una part indivisa, i també és aplicable si s’adquireix un dret de superfície, d’usdefruit o bé un dret d’ús sobre l’immoble; però no es pot aplicar quan s’adquireix la nua propietat  (Consulta  DGTJ 408/25).
+
+
+
+
+*
+A aquestes efectes es considera habitatge habitual
+:
+
+
+a) L'habitatge, un traster i fins a dues places d'aparcament, que hagin estat adquirits simultàniament en unitat d'acte o estiguin situats al mateix edifici o complex urbanístic, i sempre que, en ambdós casos, en el moment de l'adquisició es trobin a disposició del transmitent, sense haver estat cedits a terceres persones.
+
+
+b) Aquest tipus impositiu també s’aplica quan s'adquireix un terreny per a la posterior construcció de l'habitatge habitual o un habitatge en construcció.
+
+
+c) El que hagi estat habitat de manera efectiva i permanent pel contribuent en el termini de dotze mesos comptats a partir de la data d'adquisició de l'habitatge o d'acabament de les obres de construcció. En cas que s’hagi adquirit un terreny o un habitatge en construcció, les obres han de finalitzar dins un termini de tres anys a comptar de l'adquisició.
+
+
+d) Aquell en què el contribuent resideixi durant un termini continuat de tres anys. S'entén que l'habitatge va tenir també aquest caràcter quan, malgrat no haver transcorregut el termini de tres anys, concorrin circumstàncies que necessàriament exigeixin el canvi d'habitatge, com ara celebració de matrimoni, separació matrimonial, constitució de parella estable, extinció de parella estable, trasllat laboral, obtenció de primera feina o d'ocupació més avantatjosa o altres d'anàlogues.
+
+
+e) El termini de tres anys a què fa referència la lletra 
+d
+ es computa des de la data en què s’hi ha anat a viure
+,
+ sempre que l'habitatge hagi estat habitat de manera efectiva i permanent pel contribuent en el termini de dotze mesos, comptats a partir de la data d'adquisició o d'acabament de les obres de construcció (Consulta DGTJ 13/25).
+
+
+L'aplicació d'aquest tipus de gravamen reduït 
+té caràcter provisional i resta condicionat al compliment dels requisits temporals 
+establerts en les lletres
+ c
+, 
+d
+ i
+ e
+. En cas d’incompliment i pèrdua de benefici fiscal cal presentar una autoliquidació complementària, aquesta vegada amb la tarifa que correspongui (TUB, TRT, TGT o TEH). El termini de presentació és d’un mes a comptar de l'endemà de la data en què s'ha produït l'incompliment o pèrdua del dret al benefici fiscal. A l’autoliquidació complementària s’han d’incloure els interessos de demora corresponents. Consulteu la informació “Autoliquidació complementària per pèrdua de benefici fiscal” disponible a: 
+Meritació i termini de presentació i pagament
+.
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+        
+
+            
+
+                
+
+                    
+                    
+
+                
+
+                
+
+                    
+Mitjans de prova per acreditar les situacions de violència masclista
+
+
+D'acord amb la Llei 5/2008, de 24 d'abril, del dret de les dones a erradicar la violència masclista, els mitjans de prova són els següents:
+
+
+
+
+La sentència de qualsevol ordre jurisdiccional, tot i que no hagi guanyat fermesa, que declari que la dona ha patit alguna de les formes d'aquesta violència.
+
+
+L'ordre de protecció vigent.
+
+
+L'informe de la Inspecció de Treball i Seguretat Social.
+
+
+
+
+En absència dels anteriors mitjans de prova, són mitjans específics d'identificació de les situacions de violència masclista, sempre que expressin l'existència d'indicis que una dona l'ha patida o està en risc versemblant de patir-la:
+
+
+
+
+Qualsevol mesura cautelar judicial de protecció, seguretat o d'assegurament vigent.
+
+
+L'atestat elaborat per les forces i cossos de seguretat que han presenciat directament alguna manifestació de violència masclista.
+
+
+L'informe del Ministeri Fiscal.
+
+
+L'informe mèdic o psicològic elaborat per una persona professional col·legiada, en el qual consti que la dona ha estat atesa en algun centre sanitari per causa de maltractament o agressió masclista.
+
+
+L'informe dels serveis públics amb capacitat d'identificació de les situacions de violència masclista. Es reconeix aquesta capacitat als serveis socials d'atenció primària, als serveis d'acolliment i recuperació, als serveis d'intervenció especialitzada i a les unitats especialitzades dins les forces i cossos de seguretat.
+
+
+L’informe de l’Institut Català de les Dones.
+
+
+Qualsevol altre mitjà establert per disposició legal.
+
+
+
+
+Els organismes i serveis que tenen la potestat, en el territori de Catalunya, d'atorgar acreditacions administratives a les dones que han patit una situació de violència masclista, sens perjudici de l’establert en els apartats anteriors són:
+
+
+
+
+Les oficines de l'Institut Català de les Dones, els serveis socials i els serveis de la Direcció General per a l'Erradicació de les Violències Masclistes.
+
+
+Els serveis d'intervenció especialitzada.
+
+
+Els serveis d'informació i atenció a les dones.
+
+
+L'Oficina d'Atenció a la Víctima del Delicte.
+
+
+Els recursos públics d'acollida i les entitats subvencionades per una administració pública concreta per a l'atenció a dones víctimes de violència masclista.
+
+
+La Policia de la Generalitat – Mossos d'Esquadra.
+
+
+Els agents del Servei Català de la Salut.
+
+
+
+                
+
+            
+
+        
+
+    
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissió d’un immoble en un municipi rural que hagi de constituir l’habitatge habitual. Tipus reduït (codis TMR i TEA)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tarifes vigents per a fets imposables des del 20.08.2025 fins al 16.07.2029:
+
+
+
+
+Transmissió d'un immoble situat en 
+un municipi rural
+ que hagi de constituir l'habitatge habitual de la persona contribuent: 4 % (tarifa TMR).
+
+
+
+
+
+
+Transmissió d'un immoble situat en 
+un municipi rural
+ 
+d’atenció especial
+ que hagi de constituir l'habitatge habitual de la persona contribuent: 3 % (tarifa TEA).
+
+
+
+
+1. Llistes de municipis rurals
+
+
+Des del 24.02.2026
+, tenen la consideració de municipis rurals o rurals d’especial atenció, d’acord amb els criteris definits en la Llei 8/2025, els que es poden consultar a la 
+Resolució PRE/415/2026, de 18 de febrer
+, per la qual es dona publicitat a la llista inicial de municipis rurals, publicada al DOGC el dia 24.02.2026.
+
+
+Cal tenir en compte que, en el cas dels municipis rurals que consten a la llista com d’aplicació parcial (Artesa de Segre i Tremp), la tarifa reduïda només es pot aplicar quan l’immoble que s’adquireix està situat en un dels seus nuclis agregats. Per tant, no és aplicable a la capital del municipi (Artesa de Segre o Tremp), sinó exclusivament als seus nuclis agregats:
+
+
+
+
+Nuclis agregats d’Artesa de Segre
+
+
+Nuclis agregats de Tremp
+
+
+
+
+Des del 29.09.2026
+, també tenen la consideració de municipis rurals els inclosos dins el règim especial dels municipis rurals, en aplicació de la disposició addicional primera, apartat segon, de la Llei 8/2025, de 30 de juliol, de l’Estatut de municipis rurals, que es poden consultar a la 
+Resolució PRE/3375/2026, de 18 de setembre
+, per la qual es dona publicitat als municipis inclosos dins el règim especial dels municipis rurals, en aplicació de la disposició addicional primera, apartat segon, de la Llei 8/2025, de 30 de juliol, de l’Estatut de municipis rurals, publicada al DOGC el dia 29.09.2026.
+
+
+2. Llista de referència per als fets imposables meritats entre el 20.08.2025 i el 23.02.2026
+. Per a l’aplicació de les tarifes TMR i TEA la llista de municipis que cal tenir en compte és la que es pot consultar en el document: 
+L’Estatut de municipis rurals
+.
+
+
+En aquest cas, cal tenir en compte que:
+
+
+
+
+Artesa de Segre i Tremp, que consten a la llista amb la categoria “Assimilat” es consideren municipis rurals als efectes de poder aplicar la tarifa TMR, ara bé, l’immoble que s’adquireix no pot estar situat a la capital del municipi (Artesa de Segre i Tremp) sinó en un dels seus nuclis agregats.
+
+
+Els municipis que consten en la llista com a “Incorporat” es consideren municipis rurals als efectes de poder aplicar la tarifa TMR
+.
+
+
+
+
+Requisits per poder gaudir del tipus reduït
+:
+
+
+
+
+La persona contribuent ha d'ésser membre d'una unitat familiar amb 
+fills de fins a 16 anys escolaritzats en un centre educatiu al municipi rural
+ o bé en un centre d'un altre municipi on és adscrit el centre del municipi rural, quan no s’ha pogut dur a terme en el municipi de residència, sigui per inexistència de centre educatiu o per manca de places (
+Resolució 4/2026 de la DGTJ
+). Aquest requisit d'escolarització no és exigible per als menors de fins a 3 anys.
+
+
+
+
+D'acord amb la 
+Resolució 4/2026 de la DGTJ
+:
+- En el cas que en la data de meritació de l’impost no es compleixi el requisit d’escolarització, aquest s’entendrà complert quan l’escolarització es produeixi, com a màxim, en el primer període d’activitats escolars que s’iniciï a partir de la meritació de l’impost i sempre que aquesta escolarització sigui en qualsevol dels centres assenyalats en la norma, d’acord amb l’edat i les circumstàncies del fill del contribuent.
+- El requisit d’escolarització s’ha de complir, com a mínim, durant els tres anys de permanència de la residència en l’habitatge adquirit que la norma exigeix per a què l’habitatge esdevingui habitatge habitual del contribuent. Ara bé, si el contribuent té un fill de 14 anys en el moment de l’adquisició de l’habitatge, el requisit de tres anys d’escolarització no es pot exigir per un termini de tres anys, però sí que s’ha de complir en el moment de la meritació o en els termes establerts en el paràgraf anterior.
+
+
+
+
+En l'
+última declaració de l’impost sobre la renda de les persones físiques (IRPF) *
+, la suma de les bases imposables general i de l'estalvi, menys els mínims personals i familiars, corresponents als membres de la unitat familiar, no ha d'excedir de 36.000 €.
+
+
+
+
+*A aquests efectes, es considera que l’última declaració de l’IRPF és la darrera que s’ha presentat o la que s’hauria pogut presentar abans de la transmissió de l’habitatge, és a dir, abans de la meritació de l’impost sobre transmissions patrimonials. Cal tenir en compte el següent:
+
+
+- Quan la transmissió es produeix abans de finalitzar el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, no es considera "última declaració" la que s'ha presentat després de la transmissió, encara que s’hagi presentat dins el termini de presentació de l'IRPF (
+Resolucions de la DGTJ
+ núm. 1/2025 i 2/2025).
+
+
+- Quan la transmissió es produeix transcorregut el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, es considera "última declaració" la del període anterior a la transmissió.
+
+
+Vegeu: 
+Exemples sobre quina declaració de l’IRPF s’ha de considerar que és l’última
+.
+
+
+
+
+Que l’immoble es destini a ser l’
+habitatge habitual* 
+de l’adquirent. Aquest tipus impositiu s’aplica tant si s’adquireix el ple domini de la totalitat de l’immoble com una part indivisa, i també és aplicable si s’adquireix un dret de superfície, d’usdefruit o bé un dret d’ús sobre l’immoble; però no es pot aplicar quan s’adquireix la nua propietat  (Consulta DGTJ 408/25).
+
+
+
+
+* Es considera habitatge habitual 
+als efectes d'aplicar el tipus reduït:
+
+
+a) Es considera habitatge habitual tant l'habitatge com un traster i fins a dues places d'aparcament que hagin estat adquirits simultàniament en unitat d'acte o estiguin situats al mateix edifici o complex urbanístic.
+
+
+b) S'inclou en el concepte d'immoble el terreny que s'adquireix per a construir-hi l'habitatge habitual.
+
+
+c) Per considerar que un habitatge és l'habitatge habitual de la persona contribuent ha d'haver estat habitat de manera efectiva i permanent per la persona contribuent en el termini de dotze mesos a comptar de la data d'adquisició de l'habitatge o d'acabament de les obres de construcció. En aquest darrer cas, les obres han de finalitzar en el termini de tres anys a comptar de l'adquisició.
+
+
+d) Es considera habitatge habitual l'habitatge en què la persona contribuent resideix durant un període continuat de tres anys. S'entén que l'habitatge va tenir també aquest caràcter si, encara que no hagi transcorregut el període de tres anys, es produeixen circumstàncies que fan necessari el canvi d'habitatge, com celebració de matrimoni, separació matrimonial, constitució de parella de fet, extinció de parella de fet, trasllat laboral, obtenció de primera feina o d'ocupació més avantatjosa, o altres d'anàlogues.
+
+
+e) El termini de tres anys a què fa referència la lletra 
+d 
+es computa des de la data en què s’hi ha anat a viure, sempre que l'habitatge hagi estat habitat de manera efectiva i permanent pel contribuent en el termini de dotze mesos, comptats a partir de la data d'adquisició o d'acabament de les obres de construcció (Consulta DGTJ 13/25).
+
+
+L'aplicació d'aquest tipus de gravamen reduït té caràcter provisional i resta condicionat al compliment dels requisits temporals establerts en les lletres
+ c
+, 
+d
+ i
+ e
+. En cas d’incompliment i pèrdua de benefici fiscal cal presentar una autoliquidació complementària, aquesta vegada amb la tarifa TUB. El termini de presentació és d’un mes a comptar de l'endemà de la data en què s'ha produït l'incompliment o pèrdua del dret al benefici fiscal. A l’autoliquidació complementària s’han d’incloure els interessos de demora corresponents. Consulteu la informació “Autoliquidació complementària per pèrdua de benefici fiscal” disponible a: 
+Meritació i termini de presentació i pagament
+.
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissió d’un immoble en un municipi rural que hagi de constituir l’habitatge habitual per rehabilitar-lo. Tipus reduït (codis TRR i TRA)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tarifes vigents per a fets imposables des del 20.08.2025 fins al 16.07.2029:
+
+
+
+
+Transmissió d'un immoble per a rehabilitar-lo situat en un
+ municipi rural
+ que hagi de constituir l'habitatge habitual de la persona contribuent: 4 % (tarifa TRR)
+
+
+Si l'immoble és en un 
+municipi rural d'atenció especial
+ el tipus impositiu és del 3 % (tarifa TRA)
+
+
+
+
+1. Llistes de municipis rurals
+
+
+Des del 24.02.2026
+, tenen la consideració de municipis rurals o rurals d’especial atenció, d’acord amb els criteris definits en la Llei 8/2025, els que es poden consultar a la 
+Resolució PRE/415/2026, de 18 de febrer
+, per la qual es dona publicitat a la llista inicial de municipis rurals, publicada al DOGC el dia 24.02.2026.
+
+
+Cal tenir en compte que, en el cas dels municipis rurals que consten a la llista com d’aplicació parcial (Artesa de Segre i Tremp), la tarifa reduïda només es pot aplicar quan l’immoble que s’adquireix està situat en un dels seus nuclis agregats. Per tant, no és aplicable a la capital del municipi (Artesa de Segre o Tremp), sinó exclusivament als seus nuclis agregats:
+
+
+
+
+Nuclis agregats d’Artesa de Segre
+
+
+Nuclis agregats de Tremp
+
+
+
+
+Des del 29.09.2026
+, també tenen la consideració de municipis rurals els inclosos dins el règim especial dels municipis rurals, en aplicació de la disposició addicional primera, apartat segon, de la Llei 8/2025, de 30 de juliol, de l’Estatut de municipis rurals, que es poden consultar a la 
+Resolució PRE/3375/2026, de 18 de setembre
+, per la qual es dona publicitat als municipis inclosos dins el règim especial dels municipis rurals, en aplicació de la disposició addicional primera, apartat segon, de la Llei 8/2025, de 30 de juliol, de l’Estatut de municipis rurals, publicada al DOGC el dia 29.09.2026.
+
+
+2. Llista de referència per als fets imposables meritats entre el 20.08.2025 i el 23.02.2026
+. Per a l’aplicació de les tarifes TRR i TRA la llista de municipis que cal tenir en compte és la que es pot consultar en el document: 
+L’Estatut de municipis rurals
+.
+
+
+En aquest cas, cal tenir en compte  que:
+
+
+
+
+Artesa de Segre i Tremp, que consten a la llista amb la categoria “Assimilat” es consideren municipis rurals als efectes de poder aplicar la tarifa TRR, ara bé, l’immoble que s’adquireix no pot estar situat a la capital del municipi (Artesa de Segre i Tremp) sinó en un dels seus nuclis agregats.
+
+
+Els municipis que  consten en la llista com a “Incorporat” es consideren municipis rurals als efectes de poder aplicar la tarifa TRR
+.
+
+
+
+
+Requisits per poder gaudir del tipus reduït
+:
+
+
+
+
+L'habitatge ha d'haver estat 
+construït abans de l'1 de gener de 1970
+.
+
+
+En 
+la última declaració de l’impost sobre la renda de les persones físiques (IRPF) *
+, la base imposable general i de l'estalvi, menys el mínim personal i familiar, a no ha d'excedir de 36.000 €.
+
+
+
+
+*A aquests efectes, es considera que l’última declaració de l’IRPF és la darrera que s’ha presentat o la que s’hauria pogut presentar abans de la transmissió de l’habitatge, és a dir, abans de la meritació de l’impost sobre transmissions patrimonials. Cal tenir en compte el següent:
+
+
+- Quan la transmissió es produeix abans de finalitzar el termini per presentar la declaració de l'IRPF del període anterior a la transmissió, no es considera "última declaració" la que s'ha presentat després de la transmissió, encara que s’hagi presentat dins el termini de presentació de l'IRPF (
+Resolucions de la DGTJ
+ núm. 1/2025 i 2/2025).
+
+
+Vegeu: 
+Exemples sobre quina declaració de l’IRPF s’ha de considerar que és l’última
+
+
+
+
+Que l’immoble que es rehabilita es destini a ser l’habitatge habitual. 
+Aquest tipus impositiu s’aplica tant si s’adquireix la totalitat com una part indivisa, però no es pot aplicar quan s’adquireix la nua propietat. S'han de tenir en compte les consideracions següents:
+
+
+
+
+a) 
+Es consideren obres de rehabilitació
+ de l'habitatge habitual les que tinguin per objecte principal la reconstrucció de l'habitatge per mitjà de la consolidació i el tractament de les estructures, façanes, cobertes o altres parts anàlogues, sempre que el cost global de les operacions de rehabilitació excedeixi del 25% del preu d'adquisició si s'hagués efectuat aquesta durant els dos anys immediatament anteriors al començament de les obres de rehabilitació o, altrament, del valor de mercat que tingués l'habitatge en el moment del començament de les obres. A aquests efectes, s'ha de descomptar del preu d'adquisició o del valor de mercat de l'habitatge la part proporcional corresponent al terreny.
+
+
+b) Les obres de rehabilitació han de finalitzar en el termini de dos anys a comptar de l'adquisició.
+
+
+c) Per considerar que un habitatge és 
+l'habitatge habitual de la persona contribuent
+ ha d'haver estat habitat de manera efectiva i permanent per la persona contribuent 
+en el termini de dotze mesos a comptar de la data d'adquisició de l'habitatge o d'acabament de les obres de construcció
+. En aquest darrer cas, les obres han de finalitzar en el termini de tres anys a comptar de l'adquisició.
+
+
+d) Es considera habitatge habitual l'
+habitatge en què la persona contribuent resideix durant un període continuat de tres any
+s. S'entén que l'habitatge va tenir també aquest caràcter si, encara que no hagi transcorregut el període de tres anys, es produeixen circumstàncies que fan necessari el canvi d'habitatge, com celebració de matrimoni, separació matrimonial, constitució de parella de fet, extinció de parella de fet, trasllat laboral, obtenció de primera feina o d'ocupació més avantatjosa, o altres d'anàlogues.
+
+
+e) El termini de tres anys a què fa referència la lletra 
+d 
+es computa des de la data en què s’hi ha anat a viure, sempre que l'habitatge hagi estat habitat de manera efectiva i permanent pel contribuent en el termini de dotze mesos, comptats a partir de la data d'adquisició o d'acabament de les obres de construcció (Consulta DGTJ 13/25).
+
+
+L'aplicació d'aquest tipus de gravamen reduït té caràcter provisional i resta condicionat al compliment dels requisits establerts en les lletres 
+a
+, 
+b, c
+, 
+d 
+i 
+e
+. En cas d’incompliment i pèrdua de benefici fiscal cal presentar una autoliquidació complementària, aquesta vegada amb la tarifa TUB. El termini de presentació és d’un mes a comptar de l'endemà de la data en què s'ha produït l'incompliment o pèrdua del dret al benefici fiscal. A l’autoliquidació complementària s’han d’incloure els interessos de demora corresponents. Consulteu la informació “Autoliquidació complementària per pèrdua de benefici fiscal” disponible a: 
+Meritació i termini de presentació i pagament
+.
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissions i drets reals sobre béns mobles, excepte mitjans de transport (codi TMV)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tipus impositiu: 5 % 
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissions de mitjans de transport (model 620).
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tipus impositiu: 5 %
+
+
+A partir del 27.06.2025 el tipus impositiu de la transmissió de vehicles classificats en Reglament general de vehicles amb el distintiu ambiental de 0 emissions és del 0 %. Això no obstant, hi ha l'obligació de presentar l'autoliquidació corresponent.
+
+
+Nota: la transmissió de vehicles i embarcacions s'autoliquida amb el model 620.
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Transmissions de valors i drets de subscripció (article 338 de la Llei 6/2023 dels mercats de valors; anteriorment article 314 del RDL 4/2015) (codi TV0)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+En cas que l'operació estigui exempta, a més del codi de la tarifa TV0, cal aplicar el codi d'exempció 118. 
+
+
+Quan l'operació no estigui exempta, amb el codi TV0 s'aplica la tarifa de la transmissió d'immobles urbans i rústics, d'acord amb el que estableix l'article 338 de la Llei 6/2023, de 17 de març, dels mercats de valors i dels serveis d’inversió (anteriorment article 314 del RDL 4/2015 del text refós de la Llei del mercat de valors).
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Compravenda d’or, metalls preciosos o altres béns per a la revenda (codi TAU)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tipus impositiu: 5 % 
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Arrendaments de finques urbanes o rústiques (codi AUR)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tipus impositiu: 0,50 %
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Concessions administratives, actes i negocis equiparables (codis CEB, CEO, CES i ANE)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tipus impositiu: 4 %
+
+
+
+
+Concessions administratives: explotació de béns (codi CEB)
+
+
+Concessions administratives: execució d’obres (codi CEO)
+
+
+Concessions administratives: explotació de serveis (codi CES)
+
+
+Concessions administratives: actes i negocis equiparables (codi ANE)
+
+
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Drets reals de garantia, pensions, fiances, préstecs i obligacions i condicions resolutòries  (codis DRG i PFC)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+Tipus impositiu: 1 %
+
+
+
+
+Drets reals de garantia, condicions resolutòries i préstecs (codi DRG)
+
+
+Pensions i fiances (codi PFC)
+
+
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Llista de codis de les tarifes de la modalitat de transmissions patrimonials oneroses (TPO)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+
+
+Transmissions i drets reals sobre immobles urbans, excepte drets reals de garantia: TUB
+
+
+Transmissions i drets reals sobre immobles rústics, excepte drets reals de garantia: TRT
+
+
+Transmissions de valors i drets de subscripció de l’article 338 de la Llei 6/2023 dels mercats de valors (anteriorment article 314 del RDL 4/2015, del text refós de la Llei del mercat de valors): TV0
+
+
+Transmissions i drets reals sobre amarradors, excepte drets reals de garantia: TAM
+
+
+Transmissió d’habitatge a un contribuent que tingui la consideració legal de gran tenidor: TGT
+
+
+Transmissió d’un edifici sencer d’habitatges: TEH
+
+
+Transmissions i drets reals sobre habitatges amb protecció oficial: THP
+
+
+Transmissió d’habitatge habitual a famílies monoparentals: TMP
+
+
+Transmissió d’un immoble que hagi de constituir l’habitatge habitual d’una família nombrosa: TUF
+
+
+Transmissió d’un immoble que hagi de constituir l’habitatge habitual d’una persona jove de 35 anys o menys (a partir del 27.06.2025) (32 anys o menys fins al 26.06.2025): TUJ
+
+
+Transmissió d’un immoble que hagi de constituir l’habitatge habitual del contribuent que tingui la consideració legal de persona amb discapacitat física: TUM
+
+
+Transmissió d’un immoble que hagi de constituir l’habitatge habitual d’una persona que tingui la consideració legal de víctima de violència masclista: TVV
+
+
+Transmissió d'un immoble situat en un municipi rural que hagi de constituir l'habitatge habitual de la persona contribuent: TMR
+
+
+Transmissió d'un immoble situat en un municipi rural d’atenció especial que hagi de constituir l'habitatge habitual de la persona contribuent: TEA
+
+
+Transmissió d'un immoble per a rehabilitar-lo situat en un municipi rural que hagi de constituir l'habitatge habitual de la persona contribuent: TRR
+
+
+Transmissió d'un immoble per a rehabilitar-lo situat en un municipi rural d’atenció especial que hagi de constituir l'habitatge habitual de la persona contribuent: TRA
+
+
+Transmissions i drets reals sobre mobles, excepte vehicles: TMV
+
+
+Compravendes d’or, metalls preciosos i béns mobles per a la revenda, excepte vehicles: TAU
+
+
+Arrendaments de finques urbanes o rústiques: AUR
+
+
+Concessions administratives. Explotació de béns: CEB
+
+
+Concessions administratives. Execució d’obres: CEO
+
+
+Concessions administratives. Explotació de serveis: CES
+
+
+Concessions administratives. Actes i negocis equiparats als anteriors: ANE
+
+
+Drets reals de garantia, préstecs i condicions resolutòries: DRG
+
+
+Pensions i fiances: PFC
+
+
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+								
+
+									
+
+										
+
+                                            
+                                             
+Codis de les operacions no subjectes a l'impost (tarifa NSJ)
+
+										
+
+									
+
+									
+                                    
+									
+
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+	
+
+	
+	
+	
+
+	
+	
+	
+
+		
+		
+			
+
+				
+
+
+Cancel·lació de l’anotació preventiva d’embargament en documents judicials: codi 10
+
+
+Manaments judicials de cancel·lació de càrregues: codi 11
+
+
+Escriptures de poders: codi 12
+
+
+Pròrrogues amb anotacions preventives d’embargament: codi 13
+
+
+Segones o ulteriors còpies d’escriptures que prèviament hagin liquidat l’impost corresponent: codi 14
+
+
+Operació que tributa per IVA i no és inscriptible: codi 15
+
+
+Nomenament d'administradors: codi 16
+
+
+Actes finals d’obra: codi 17
+
+
+Actes de ratificació d’escriptures liquidades prèviament: codi 18
+
+
+Canvi de denominació social de societats mercantils: codi 19
+
+
+Provisions d’anotació de suspensió de pagaments: codi 20
+
+
+Resolucions de l’ajuntament en les quals s’acordi cancel·lar o tornar fiances preconstituïdes a favor seu: codi 23
+
+
+Altres: codi 24
+
+
+
+			
+
+		
+		
+                    
+                
+	
+
+
+	
+	
+	
+	
+	
+	
+
+
+									
+
+								
+
+							
+						
+
+						
+
+					
+
+				
+				
+				
+				
+			
+			
+			
+			
+		
+
+	
+
+
+							
+
+						
+
+					
+
+							
+
+								
+
+									
+
+							
+
+						
+
+					
+
+		
+
+	
+
+
+
+
+	
+
+					
+
+						
+
+
+
+
+
+
+
+
+
+
+    
+        
+
+            
+
+                
+
+                    
+
+                        
+
+                            
+
+                                
+
+                                    
+
+                                        
+
+                                            $(document).ready(function() {
+                                                setInterval(function() {
+                                                    var date = moment(); //Get the current date
+                                                    $("#footerHour span").html(date.format("DD/MM/YYYY HH:mm:ss"));
+                                                }, 1000);
+                                            });
+                                        
+
+                                        
+                                        
+Data i hora oficial: 
+                                            
+ 
+
+                                        
+
+                                    
+
+                                
+
+
+                                
+                                
+                            
+
+                        
+
+                    
+
+                
+
+
+            
+            
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+
+            
+                
+
+                    
+
+                        
+
+                        
+
+                            
+
+                                
+
+                                    
+
+                                        
+                                        
+                                            
+                                        
+                                        
+Segueix les xarxes socials de l'Agència Tributària de Catalunya:
+
+                                    
+
+                                
+
+                                
+
+                                    
+
+                                        
+                                        
+                                            
+
+                                                
+                                                    
+                                                
+                                                
+
+                                                    
+
+                                                
+
+                                            
+
+                                        
+
+                                        
+                                        
+
+                                        
+                                        
+
+										
+                                        
+
+										
+                                        
+
+                                        
+                                        
+                                            
+
+                                                
+                                                    
+                                                
+                                                
+
+                                                    
+
+                                                
+
+                                            
+
+                                        
+                                        
+                                        
+                                        
+                                        
+                                    
+
+                                
+
+                            
+
+                        
+
+                        
+
+                            
+
+                        
+
+                    
+
+                
+
+            
+            
+        
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+
+            
+                
+
+                    
+
+                        
+
+
+                            
+
+                                Com t'atenem
+                            
+
+
+                            
+
+                                
+
+                                    
+
+                                        
+
+                                            
+Pots contactar amb nosaltres mitjançant qualsevol dels següents canals de contacte
+
+                                        
+
+                                    
+
+                                
+
+                                
+
+
+                                    
+
+                                    
+
+                                        
+
+                                            
+
+                                                
+
+                                                
+
+                                                    Bústia de contacte
+                                                
+
+                                                
+. Obre en una nova finestra.
+
+                                            
+
+                                        
+
+                                        
+
+                                            
+
+                                                
+
+                                                
+
+                                                    Telèfon 012
+                                                
+
+                                                
+. Obre en una nova finestra.
+
+                                            
+
+                                        
+
+                                        
+
+                                            
+
+                                                
+
+                                                
+
+                                                    L’ATC us truca
+                                                
+
+                                                
+. Obre en una nova finestra.
+
+                                            
+
+                                        
+
+                                        
+
+                                            
+
+                                                
+
+                                                
+
+                                                    Oficines de l’ATC
+                                                
+
+                                                
+. Obre en una nova finestra.
+
+                                            
+
+                                        
+
+                                        
+
+                                            
+
+                                                
+
+                                                
+
+                                                    Demana cita
+                                                
+
+                                                
+. Obre en una nova finestra.
+
+                                            
+
+                                        
+
+                                    
+
+                                
+
+                            
+
+                        
+
+                    
+
+                
+
+            
+            
+        
+
+    
+
+
+
+
+
+
+
+    
+        
+
+            
+                
+
+                    
+
+                        
+
+                            
+
+                                
+
+                                    
+
+                                        
+Amb el finançament de
+
+                                    
+
+                                
+
+                                
+
+
+                                    
+                                        
+
+                                            
+                                                
+                                                    
+                                                        
+                                                        
+                                                    
+
+                                                    
+
+                                                        
+
+                                                            
+
+                                                            
+                                                        
+
+                                                    
+
+
+                                                
+                                            
+                                        
+
+                                    
+
+                                
+
+                            
+
+                        
+
+                    
+
+                
+
+
+            
+            
+        
+
+    
+
+
+							
+
+								
+
+									
+
+
+										
+
+											
+
+														
+
+															
+
+												
+
+
+										
+
+											
+
+												
+
+															
+
+																	Sobre la seu
+
+														
+
+
+													
+
+															
+
+																	Protecció de dades
+
+														
+
+
+													
+
+															
+
+																	Política de galetes
+
+														
+
+
+													
+
+															
+
+																	Accessibilitat
+
+														
+
+
+													
+
+															
+
+																	Mapa web
+
+														
+
+
+													
+
+										
+
+									
+
+								
+
+							
+
+						
+
+					
+
+					
+					
+
+						
+
+							
+
+								
+
+							
+
+						
+
+					
+
+				
+
+				
+
+
+
+
+
+
+
+	
+

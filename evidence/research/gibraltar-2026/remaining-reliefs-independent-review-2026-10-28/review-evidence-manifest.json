@@ -1,0 +1,76 @@
+{
+  "initial_head": "933e6993fe5305609c849551765a27ba9a116e8b",
+  "accepted_head": "6f53123a0306500efec732d97e42abc5ef764388",
+  "files": [
+    {
+      "path": "all-new-row-results.json",
+      "sha256": "55d665219c42663f64626dedeb26927a6c0d54b4e765431e6154d9ca44fe55b4",
+      "bytes": 15054
+    },
+    {
+      "path": "closure-6f53123a/checks.json",
+      "sha256": "0c9cc401406e137d2be74df4a641c65dda0436430c623604f0460e05edd67b81",
+      "bytes": 10310
+    },
+    {
+      "path": "closure-6f53123a/closure.json",
+      "sha256": "1ea07e32847432ff7632f6d94cff455e306eb9896eae8e367382e792d02558f3",
+      "bytes": 1799
+    },
+    {
+      "path": "closure-6f53123a/closure.md",
+      "sha256": "3d41212c4f3e888c14f4778ed6e0f8c7da3248b07a18b4129b9866364b40cfdb",
+      "bytes": 3383
+    },
+    {
+      "path": "independent-arithmetic.json",
+      "sha256": "6eec00afd1ec3b162715afb56015e955c189345d9468f69d69f7e709dd601e26",
+      "bytes": 3301
+    },
+    {
+      "path": "metadata-integrity.log",
+      "sha256": "73c7e935a6ea3e5ad2b1e16ad3fb326e583e2229c0c8a4d5561fe616c6d511b5",
+      "bytes": 90
+    },
+    {
+      "path": "preservation-results.json",
+      "sha256": "30dddd5b4814f4d6d4c57f8c396ae941b8d1b36a6c03d847f66de6b1ec90fa64",
+      "bytes": 75445
+    },
+    {
+      "path": "repository-examples.log",
+      "sha256": "16c5202e4d97e86e7bdea6464f8ce1e891b56659445e5f74c5bcc32e14d5c7fb",
+      "bytes": 67
+    },
+    {
+      "path": "review.json",
+      "sha256": "2bd2406aab97c3b6d32313a3aa912faddba3e6b31ecbfdcc4d7b739254c78cd4",
+      "bytes": 5343
+    },
+    {
+      "path": "review.md",
+      "sha256": "c40eca0217b0713236e123bc15a0e888102c2a73b0ed4c83c90783c055d6bffc",
+      "bytes": 7699
+    },
+    {
+      "path": "schema-results.json",
+      "sha256": "06c932e56c3c1b811a71697c13485ac166aa8a7fd6ebf15323ddbee5e16bfe5a",
+      "bytes": 355
+    },
+    {
+      "path": "source-proof-results.json",
+      "sha256": "1233bc1a1733778a048b87460b65d1e9a40dcbf280b1b821aa53eaeae9bccf40",
+      "bytes": 16335
+    },
+    {
+      "path": "verify.py",
+      "sha256": "154cca2e95544f05ab7a59377f4248777dfa6901736c8a4b978372dccde301cf",
+      "bytes": 11417
+    },
+    {
+      "path": "verify_closure.py",
+      "sha256": "cca48c420c4ec5e8559cb6d3db09d21122dff53dd14d70908cbc6d19dd19b325",
+      "bytes": 7093
+    }
+  ]
+}

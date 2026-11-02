@@ -1,0 +1,22 @@
+{
+  "status": "WRITER CHECKS ONLY; FULL INDEPENDENT PACK REVIEW PENDING",
+  "as_of_utc": "2026-10-30T11:31:02.433916+00:00",
+  "changed_schema": "PASS8Guides0warnings",
+  "full_schema": "PASS --no-index-check, inherited warning populations781/5/5",
+  "examples": {
+    "executed": 35,
+    "current_country": 17,
+    "annex_blocks": 18,
+    "duplicates": 6,
+    "distinct": 29,
+    "failures": 0,
+    "missing": 0
+  },
+  "writer_controls": 119,
+  "corporate_controls": 30,
+  "ledger_rows": 480,
+  "corporate_ledger_rows": 82,
+  "quote_binding_failures": 0,
+  "all_domains_partial": true,
+  "publication": "PR785 draft/open at unchanged public head; no new push."
+}

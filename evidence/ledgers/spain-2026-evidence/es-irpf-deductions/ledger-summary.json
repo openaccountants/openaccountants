@@ -1,0 +1,10 @@
+{
+  "slug": "es-irpf-deductions",
+  "guide_sha256": "02b2f58679014052448ff45b1623f105d910701443908d4c24a797528feaa92b",
+  "ledger_sha256": "d633dd1d7044ab3ec29efd14fbe5aed88286bbe77ed25678b18eb905417e037e",
+  "rows": 3261,
+  "old_units": 1413,
+  "distinct_actual_quote_scopes": 6345,
+  "sections": 17,
+  "unmapped_substantive_units": 0
+}

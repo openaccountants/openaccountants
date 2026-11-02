@@ -1,0 +1,9 @@
+{
+  "guide_sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+  "fragment_sha256": "c794f580fb413d9a9d7303b158cfa69282b734db4700cab0f677e60a6e659ff7",
+  "current_units": 49,
+  "rows": 192,
+  "selected_article_subsection_scopes": 39,
+  "actual_original_language_native_checks": "all output rows pass literal LF comparison",
+  "status": "Writer fragment only, no independent PASS; remaining housing/advance/pension/payment/source-specific scopes pending"
+}

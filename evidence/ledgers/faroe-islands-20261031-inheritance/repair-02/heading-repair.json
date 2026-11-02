@@ -1,0 +1,26 @@
+{
+  "finding": "FO-EST-005",
+  "base_candidate": "99ddd1c3c1e7075528aa014977e9931dec90f831",
+  "initial_closure_saved_at": "b1343c73d",
+  "changes": [
+    {
+      "path": "skills/faroe-islands/fo-inheritance-duty.md",
+      "line": 24,
+      "old": "# Faroe Islands inheritance and succession duty v 0.1",
+      "new": "# Faroe Islands inheritance and succession duty v0.2",
+      "old_sha256": "016885210094b6a657f989951b253eca653407b01794f27f550439f05ee006c0",
+      "new_sha256": "115a0cd9c7ed682e0577037cb236e89b45fcde562c26545b3407f7ece1058b47",
+      "tax_content_changed": false
+    },
+    {
+      "path": "skills/faroe-islands/fo-estate-income-tax.md",
+      "line": 25,
+      "old": "# Faroe Islands death-year and estate income tax v 0.1",
+      "new": "# Faroe Islands death-year and estate income tax v0.2",
+      "old_sha256": "71bf0d38603d94ce671380538c13f7e98986cb0353d24c3cf8c3aacdcf7e87bb",
+      "new_sha256": "f0b446fa1f4d5a8df3add50fbcb82b2e05f2139a0cfffe1161c4f963b8dcd7ba",
+      "tax_content_changed": false
+    }
+  ],
+  "preservation": "ExactlyoneH1line changed pernewGuide; all65rule rows,82quotegroups, othercontent,metadata,source,initialreviewandfirstclosurebytes unchanged. Original81inputmanifest remains unmodified; this follow-up pins currentGuidehashes."
+}

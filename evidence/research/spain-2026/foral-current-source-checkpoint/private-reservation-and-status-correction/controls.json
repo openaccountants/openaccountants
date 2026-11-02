@@ -1,0 +1,136 @@
+{
+  "count": 24,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "Corporate exact inverse restores all baseline bytes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Corporate only metadata version changes",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Corporate version/H1 agree at0.2",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Corporate retains statutory medium exclusion",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Corporate positive calculation remains unresolved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Corporate bank/hydrocarbon original method retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Corporate exact two complete oa-check blocks",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Corporate all H2 sections/order exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Corporate URL occurrence sequence exact",
+      "pass": true,
+      "detail": {
+        "count": 225
+      }
+    },
+    {
+      "name": "Corporate live file unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Corporate byline/CTA exact or original absence preserved",
+      "pass": true,
+      "detail": "Both original inputs have no CTA marker; no CTA is added or removed. Exact inverse also preserves any original byline text."
+    },
+    {
+      "name": "README URL occurrence sequence exact",
+      "pass": true,
+      "detail": {
+        "count": 10
+      }
+    },
+    {
+      "name": "README live file unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "README byline/CTA exact or original absence preserved",
+      "pass": true,
+      "detail": "Both original inputs have no CTA marker; no CTA is added or removed. Exact inverse also preserves any original byline text."
+    },
+    {
+      "name": "README exact inverse restores entire baseline",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "README body after frontmatter exact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "README only partial.IT-IND line changes",
+      "pass": true,
+      "detail": [
+        14
+      ]
+    },
+    {
+      "name": "README baseline matches requested7cb9e544",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "README all covering slugs unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "README shared ordinary expense/reduction expressly remains unconfirmed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "README Balearic composition question retained",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "README other regional/source reservations preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "No readiness/attestation added",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "README supplied-method dependency equals root-reviewed candidate",
+      "pass": true,
+      "detail": {
+        "candidate_sha256": "1c863905ca1a508d5513725a6984a82e210805da57f62067ac0c9a3067a0a290",
+        "root_review_controls": 37,
+        "all_pass": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="Description" content="BOE-A-2025-410 Orden HAC/1526/2024, de 11 de diciembre, por la que se modifican la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 de Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores, y la Orden EHA/3695/2007, de 13 de diciembre, por la que se aprueba el modelo 030 de Declaración censal de alta en el Censo de obligados tributarios, cambio de domicilio y/o variación de datos personales, que pueden utilizar las personas físicas, se determinan el lugar y forma de presentación del mismo." />
+    <title>BOE-A-2025-410 Orden HAC/1526/2024, de 11 de diciembre, por la que se modifican la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 de Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores, y la Orden EHA/3695/2007, de 13 de diciembre, por la que se aprueba el modelo 030 de Declaración censal de alta en el Censo de obligados tributarios, cambio de domicilio y/o variación de datos personales, que pueden utilizar las personas físicas, se determinan el lugar y forma de presentación del mismo.</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <base target="_top" />
+    <link type="text/css" href="/estilos/boe.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="/estilos/diario-boe.css" type="text/css">
+    <link rel="stylesheet" href="/estilos/texto.css" type="text/css">
+  
+    <link rel="canonical" href="https://www.boe.es/buscar/doc.php?id=BOE-A-2025-410"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2025-410" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" property="http://data.europa.eu/eli/ontology#date_document" content="2024-12-11" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" property="http://data.europa.eu/eli/ontology#number" content="hac1526" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3165"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526" property="http://data.europa.eu/eli/ontology#has_member" resource="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" typeof="http://data.europa.eu/eli/ontology#LegalResource"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#jurisdiction" resource="http://www.elidata.es/mdr/authority/jurisdiction/1/es"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#type_document" resource="http://www.elidata.es/mdr/authority/resource-type/1/o"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#id_local" content="BOE-A-2025-410" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#date_document" content="2024-12-11" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#number" content="hac1526" datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/687"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3165"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/3807"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/4102"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/6658"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#is_about" resource="https://www.boe.es/legislacion/eli/materias/7872"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#version" resource="http://www.elidata.es/mdr/authority/version/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#is_member_of" resource="https://www.boe.es/eli/es/o/2024/12/11/hac1526"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof" property="http://data.europa.eu/eli/ontology#is_realized_by" resource="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa" typeof="http://data.europa.eu/eli/ontology#LegalExpression"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa" property="http://data.europa.eu/eli/ontology#language" resource="http://www.elidata.es/mdr/authority/language/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa" property="http://data.europa.eu/eli/ontology#title" content="Orden HAC/1526/2024, de 11 de diciembre, por la que se modifican la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 de Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores, y la Orden EHA/3695/2007, de 13 de diciembre, por la que se aprueba el modelo 030 de Declaración censal de alta en el Censo de obligados tributarios, cambio de domicilio y/o variación de datos personales, que pueden utilizar las personas físicas, se determinan el lugar y forma de presentación del mismo." datatype="http://www.w3.org/2001/XMLSchema#string"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa" property="http://data.europa.eu/eli/ontology#publisher_agent" resource="https://www.boe.es"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa" property="http://data.europa.eu/eli/ontology#date_publication" content="2025-01-09" datatype="http://www.w3.org/2001/XMLSchema#date"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa" property="http://data.europa.eu/eli/ontology#realizes" resource="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/epub"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa" property="http://data.europa.eu/eli/ontology#is_embodied_by" resource="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/xml"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/epub" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/epub" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/epub+zip"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/epub" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/html" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/html" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/text/html"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/html" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/pdf" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/pdf"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/pdf" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/xml" typeof="http://data.europa.eu/eli/ontology#Format"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/xml" property="http://data.europa.eu/eli/ontology#format" resource="http://www.iana.org/assignments/media-types/application/xml"/>
+<meta  about="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa/xml" property="http://data.europa.eu/eli/ontology#embodies" resource="https://www.boe.es/eli/es/o/2024/12/11/hac1526/dof/spa"/>
+    <!--[if lt IE 10]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie9.css" />
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="/estilos/boe_ie8.css" />
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="header">
+      <h1 class="fuera">Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenedor" tabindex="-1">Ir a contenido</a></li>
+        <li><a accesskey="5" href="/diario_boe/" tabindex="-1">Consultar el diario oficial BOE</a></li>
+      </ul>
+      <div id="logosInicio">
+        <span id="logoPresidenciaMovil"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPRmovil.png" srcset="/imagenes/logoMPRmovil.svg" alt="Ministerio de la Presidencia"></a></span>
+        <span id="logoPresidencia"><a href="https://www.mpr.gob.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" srcset="/imagenes/logoMPR.svg" alt="Ministerio de la Presidencia"></a></span>
+
+        <span id="logoAgencia"><a accesskey="1" href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logoBOE.gif" srcset="/imagenes/logoBOE.svg" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a></span>
+        
+      </div> <!-- #logosInicio -->
+    </div> <!-- #header -->
+    <div id="top" class="banda-menu">
+    <div class="menu-wrapper">
+      <div id="logo-movil-boe-container">
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img alt="Agencia Estatal Bolet&iacute;n Oficial del Estado" src="/imagenes/logoBlanco128.png"></a>
+      </div>
+      <ul class="menu">
+        <li class="menu-item menu-idiomas">
+          <div id="selector-idioma">
+            <span class="fuera">Idioma actual:</span>
+            <input id="activar-idiomas" type="checkbox" class="fuera">
+            <label class="idioma-actual" for="activar-idiomas" title="Idiomas: Haga clic o utilice barra espaciadora para abrir o cerrar opciones"><span class="descripcion-idioma pc tablet">Castellano</span><span class="fuera"> / </span><span class="descripcion-idioma movil">es</span><span class="triangulo"><span></span></span></label>
+            <p class="fuera">Puede seleccionar otro idioma:</p>
+            <ul id="lista-idiomas">
+              <li><a href="doc.php?lang=es&amp;id=BOE-A-2025-410" lang="es" hreflang="es"><span aria-hidden="true" class="idioma"><abbr title="espa&ntilde;ol/castellano">es</abbr><span class="fuera"> / </span><em>Castellano</em></span></a></li>
+              <li><a href="doc.php?lang=ca&amp;id=BOE-A-2025-410" lang="ca" hreflang="ca"><span aria-hidden="true" class="idioma"><abbr title="catal&agrave;">ca</abbr><span class="fuera"> / </span><em>Catal&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=gl&amp;id=BOE-A-2025-410" lang="gl" hreflang="gl"><span aria-hidden="true" class="idioma"><abbr title="galego">gl</abbr><span class="fuera"> / </span><em>Galego</em></span></a></li>
+              <li><a href="doc.php?lang=eu&amp;id=BOE-A-2025-410" lang="eu" hreflang="eu"><span aria-hidden="true" class="idioma"><abbr title="euskara">eu</abbr><span class="fuera"> / </span><em>Euskara</em></span></a></li>
+              <li><a href="doc.php?lang=va&amp;id=BOE-A-2025-410" lang="ca-valencia" hreflang="ca-valencia"><span aria-hidden="true" class="idioma"><abbr title="valenci&agrave;">va</abbr><span class="fuera"> / </span><em>Valenci&agrave;</em></span></a></li>
+              <li><a href="doc.php?lang=en&amp;id=BOE-A-2025-410" lang="en" hreflang="en"><span aria-hidden="true" class="idioma"><abbr title="english">en</abbr><span class="fuera"> / </span><em>English</em></span></a></li>
+              <li><a href="doc.php?lang=fr&amp;id=BOE-A-2025-410" lang="fr" hreflang="fr"><span aria-hidden="true" class="idioma"><abbr title="fran&ccedil;ais">fr</abbr><span class="fuera"> / </span><em>Fran&ccedil;ais</em></span></a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-item resto">
+          <a accesskey="4" href="/buscar/"><span class="botonBuscar">Buscar</span></a>
+        </li>
+        <li class="menu-item resto">
+          <a href="/mi_boe/">
+            <span class="botonMiBOE">Mi BOE <span class="luz">Desconectado.<br/>Pulse para acceder al servicio 'Mi BOE'</span></span>
+          </a>
+        </li>
+        <li class="menu-item movil buscar">
+          <a href="/buscar/">
+            <img alt="Buscar" src="/imagenes/logoBuscar.png" srcset="/imagenes/logoBuscar.svg">
+          </a>
+        </li>
+        <li class="menu-item movil">
+          <a href="/mi_boe/">
+            <img alt="Mi BOE" src="/imagenes/logoMiBOE.png" srcset="/imagenes/logoMiBOE.svg">
+          </a>
+        </li>
+        <li class="menu-item menu-menu"><!--  -->
+          <input id="activar-menu" name="activar" type="checkbox" title="Desplegar men&uacute;" class="fuera">
+          <label class="click-desplegar resto" for="activar-menu" title="Men&uacute;: Haga clic o utilice barra espaciadora para abrir o cerrar opciones">Men&uacute;
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <input id="activar-menu-movil" name="activar" type="checkbox" title="Desplegar men&uacute;">
+          <label class="click-desplegar movil" for="activar-menu-movil"><em>Men&uacute;</em>
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="menu-container">
+            <ul class="menu-item-list">
+              <li class="menu-item first">
+                <p><a href="/index.php#diarios" class="inline">Diarios Oficiales</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/diario_boe">BOE</a></li>
+                  <li><a href="/diario_borme">BORME</a></li>
+                  <li><a href="/legislacion/otros_diarios_oficiales.php">Otros diarios oficiales</a></li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <p><a href="/index.php#juridico">Informaci&oacute;n Jur&iacute;dica</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/legislacion/">Todo el Derecho</a></li>
+                  <li><a href="/biblioteca_juridica/">Biblioteca Jur&iacute;dica Digital</a></li>
+                </ul>
+              </li>
+              <li class="menu-item last">
+                <p><a href="/index.php#servicios-adicionales">Otros servicios</a></p>
+                <ul class="sub-menu">
+                  <li><a href="/notificaciones">Notificaciones</a></li>
+                  <li><a href="/edictos_judiciales">Edictos judiciales</a></li>
+                  <li><a href="https://subastas.boe.es">Portal de subastas</a></li>
+                  <li><a href="/anuncios">Anunciantes</a></li>
+                  <li><a href="/datosabiertos/api/api.php">Datos abiertos</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> <!-- .menu-container -->
+        </li><!--  -->
+      </ul>
+    </div> <!-- .menu-wrapper -->
+    </div> <!-- .banda-menu -->
+    <div id="franjaMigas">
+      <div class="contMigas">
+        <span class="fraseMigas">Est&aacute; <abbr title="usted">Vd.</abbr> en</span>
+        <ul class="migas">
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/buscar/">Buscar</a></li>        <li class="destino">Documento BOE-A-2025-410</li>
+        </ul>
+        <div id="solapa">
+        </div><!-- solapa -->
+      </div><!-- contMigas -->
+    </div> <!-- #franjaMigas -->
+    <div id="contenedor">
+      <div id="contenido" class="poolBdatos">
+<h2 class="fuera">Documento BOE-A-2025-410</h2>
+<div class="enlacesDoc" id="barraSep">
+  <h3 class="documento-tit">Orden HAC/1526/2024, de 11 de diciembre, por la que se modifican la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 de Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores, y la Orden EHA/3695/2007, de 13 de diciembre, por la que se aprueba el modelo 030 de Declaración censal de alta en el Censo de obligados tributarios, cambio de domicilio y/o variación de datos personales, que pueden utilizar las personas físicas, se determinan el lugar y forma de presentación del mismo.</h3>
+  <div class="metadatosDoc">
+    <div class="metadatos">
+      <dl>
+        <dt>Publicado en:</dt>
+        <dd>«<abbr title="Boletín Oficial del Estado">BOE</abbr>» <abbr title="número">núm.</abbr> 8, de 9 de enero de 2025, páginas 4125 a 4158 (34 <abbr title="páginas">págs.</abbr>)</dd>
+        <dt>Sección:</dt>
+        <dd>I. Disposiciones generales</dd>
+        <dt>Departamento:</dt>
+        <dd>Ministerio de Hacienda</dd>
+        <dt>Referencia:</dt>
+        <dd>BOE-A-2025-410</dd>
+        <dt>Permalink ELI:</dt>
+        <dd>
+          <a href="https://www.boe.es/eli/es/o/2024/12/11/hac1526" title="Permalink ELI">https://www.boe.es/eli/es/o/2024/12/11/hac1526</a>
+        </dd>
+      </dl>
+    </div>
+    <ul class="enlaces-doc">
+      <li class="tit-enlaces">Otros formatos:</li>
+      <li class="puntoPDF">
+        <a title="Documento PDF de la publicación original" href="/boe/dias/2025/01/09/pdfs/BOE-A-2025-410.pdf">PDF</a>
+      </li>
+      <li class="puntoEpub">
+        <a title="Libro electrónico de BOE-A-2025-410" href="/diario_boe/epub.php?id=BOE-A-2025-410">EPUB</a>
+      </li>
+      <li class="puntoXML">
+        <a target="_blank" title="Texto y metadatos en formato XML" href="/diario_boe/xml.php?id=BOE-A-2025-410">XML</a>
+      </li>
+    </ul>
+  </div>
+  <!-- .metadatosDoc -->
+</div>
+<!-- .enlacesDoc -->
+<div class="pretexto">
+  <div class="tabs">
+    <input name="tabs" type="radio" id="tab-texto" class="input" checked="checked"/>
+    <label for="tab-texto" class="label">Texto</label>
+    <div id="DOdocText" class="panel">
+      <h4>TEXTO ORIGINAL</h4>
+      <div id="textoxslt">
+        <p class="parrafo">Esta orden tiene por objeto introducir modificaciones en el modelo 030 de Declaración censal de alta, cambio de domicilio y/o de variación de datos personales y en el modelo 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores, así como suprimir el modelo 037 de Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores.</p>
+        <p class="parrafo">Por lo que se refiere a las modificaciones introducidas en el modelo 036, en primer lugar cabe citar que la Ley 13/2023, de 24 de mayo, por la que se modifican la Ley 58/2003, de 17 de diciembre, General Tributaria, en transposición de la Directiva (UE) 2021/514 del Consejo de 22 de marzo de 2021, por la que se modifica la Directiva 2011/16/UE relativa a la cooperación administrativa en el ámbito de la fiscalidad, y otras normas tributarias, modificó el artículo 93 de la Ley 58/2003, de 17 de diciembre, General Tributaria, estableciendo que las personas jurídicas o entidades deben comunicar a la Administración Tributaria la identificación de los titulares reales de las mismas.</p>
+        <p class="parrafo">En desarrollo de la obligación de información recogida en la ley anteriormente mencionada, el Real Decreto 117/2024, de 30 de enero, por el que se desarrollan las normas y los procedimientos de diligencia debida en el ámbito del intercambio automático obligatorio de información comunicada por los operadores de plataformas, y se modifican el Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por el Real Decreto 1065/2007, de 27 de julio, en transposición de la Directiva (UE) 2021/514 del Consejo de 22 de marzo de 2021 por la que se modifica la Directiva 2011/16/UE relativa a la cooperación administrativa en el ámbito de la fiscalidad, y otras normas tributarias, ha introducido como nuevo dato a comunicar en el Censo de Obligados Tributarios la titularidad real de las personas jurídicas y entidades.</p>
+        <p class="parrafo">Con objeto de hacer posible el cumplimiento de esta nueva obligación de información, se introduce en el modelo 036 la nueva página 10 destinada a la identificación de los titulares reales de las personas jurídicas y entidades.</p>
+        <p class="parrafo">Por otra parte, también respecto del modelo 036, el Real Decreto 117/2024, de 30 de enero, modifica la letra u) del apartado 2 del artículo 10 del Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, para establecer que la solicitud de rehabilitación del número de identificación fiscal se efectuará a través de la declaración de modificación del Censo de Empresarios, Profesionales y Retenedores. Por ello, se introduce en el modelo 036 una nueva casilla para indicar este nuevo motivo de presentación.</p>
+        <p class="parrafo">Además, para las entidades en proceso de liquidación, se introduce en el modelo 036 una nueva casilla que deberán cumplimentar en caso de solicitud de la rehabilitación del número de identificación fiscal.</p>
+        <p class="parrafo">Por lo que se refiere a los modelos 030 y 036, la Orden HFP/1397/2023, de 26 de diciembre por la que se modifican la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 de Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores, la Orden EHA/3695/2007, de 13 de diciembre, por la que se aprueba el modelo 030 de Declaración censal de alta en el Censo de obligados tributarios, cambio de domicilio y/o variación de datos personales, la Orden EHA/3111/2009, de 5 de noviembre, por la que se aprueba el modelo 390 de declaración-resumen anual del Impuesto sobre el Valor Añadido y la Orden HAP/2194/2013, de 22 de noviembre, por la que se regulan los procedimientos y las condiciones generales para la presentación de determinadas autoliquidaciones, declaraciones informativas, declaraciones censales, comunicaciones y solicitudes de devolución, de naturaleza tributaria, modificó el literal y el aviso del apartado de «Datos de teléfonos y direcciones electrónicas para recibir avisos de la AEAT», para incluir a los órganos económico-administrativos previstos en los apartados 2 y 3 del artículo 228 de la Ley 58/2003, de 17 de diciembre, General Tributaria, como autorizados a utilizar el número de teléfono y/o la dirección de correo electrónico suministrados para realizar avisos de carácter meramente informativo. Con el objetivo de introducir la mejora técnica que permita que la citada autorización, a través de los modelos 030 y 036, pueda concederse de manera independiente a la Agencia Estatal de Administración Tributaria y a los citados órganos, se modifican los modelos 030 y 036. Mediante esta orden también se amplía la opción de autorización a la Dirección General de Tributos y se incluye la app de la AEAT como medio de recepción de los avisos informativos. Cabe destacar que el número de teléfono y/o la dirección de correo electrónico suministrados serán únicos para los tres organismos.</p>
+        <p class="parrafo">Con la finalidad de facilitar el cumplimiento de las obligaciones de declaración censal, la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 de Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores, aprobó el modelo 037 de «Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores», un modelo de declaración censal simplificado de sencilla cumplimentación a través del cual podían realizar su declaración de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores los obligados tributarios que se detallaban en el artículo 2 de dicha orden.</p>
+        <p class="parrafo">La presentación electrónica generalizada en estos modelos censales así como el desarrollo tecnológico producido desde la aprobación del modelo 037 han permitido una notable ampliación y mejora de los servicios de asistencia al contribuyente.</p>
+        <p class="parrafo">Entre los nuevos servicios de asistencia en materia censal cabe destacar el informador censal y el buscador de actividades y sus obligaciones tributarias.</p>
+        <p class="parrafo">El denominado informador censal ofrece al contribuyente información sobre cómo solicitar el NIF, los distintos modelos de declaraciones censales, forma, lugar de presentación y causas de presentación, así como documentación a adjuntar en cada caso.</p>
+        <p class="parrafo">Por su parte, el denominado buscador de actividades y sus obligaciones tributarias ofrece información sobre los grupos o epígrafes en los que se clasifican las actividades económicas incluidas en las Tarifas del IAE (incluye clasificación en el CNAE a título meramente orientativo), así como de otras actividades no incluidas en las tarifas del IAE (actividades agrícolas, ganaderas, forestales o pesqueras), mediante la introducción de una o varias palabras significativas de la actividad a clasificar o bien el código de un grupo o epígrafe. Asimismo, permite determinar las obligaciones tributarias de la actividad realizada por el contribuyente.</p>
+        <p class="parrafo">Las nuevas herramientas de asistencia en materia censal junto con la mejora producida en los programas de ayuda a la cumplimentación, permiten que la simplificación que representaba el modelo 037 en la presentación de las declaraciones censales de alta, baja y modificación en el censo de empresarios, profesionales y retenedores pueda ofrecerse a los contribuyentes a través del propio modelo 036.</p>
+        <p class="parrafo">Por todo ello, esta orden suprime el modelo 037 de Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores. Consecuencia de esta supresión se modifica el título de la orden EHA/1274/2007, de 26 de abril y del artículo 1, se modifican los artículos 1, 2 y 7, y se suprimen los artículos 14, 15 y 16 y el anexo II.</p>
+        <p class="parrafo">Esta orden consta de dos artículos, una disposición final única y dos anexos.</p>
+        <p class="parrafo">De acuerdo con lo dispuesto en la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas, la elaboración de esta orden se ha efectuado de acuerdo con los principios de necesidad, eficacia, proporcionalidad, seguridad jurídica, transparencia y eficiencia.</p>
+        <p class="parrafo">Se cumplen los principios de necesidad y eficacia jurídica por derivar de modificaciones introducidas en normas de rango legal y reglamentario.</p>
+        <p class="parrafo">Se cumple también el principio de proporcionalidad al contener la regulación necesaria para conseguir los objetivos que justifican su aprobación.</p>
+        <p class="parrafo">Respecto al principio de seguridad jurídica, se ha garantizado la coherencia del texto con el resto del ordenamiento jurídico nacional y comunitario, generando un marco normativo estable, predecible, integrado, claro y de certidumbre que facilita su conocimiento y comprensión y, en consecuencia, la actuación y toma de decisiones de los diferentes sujetos afectados sin introducción de cargas administrativas innecesarias.</p>
+        <p class="parrafo">El principio de transparencia, sin perjuicio de su publicación oficial en el «Boletín Oficial del Estado», se ha garantizado mediante la publicación del proyecto de orden y su memoria en el Portal de internet del Ministerio de Hacienda, a efectos de que pudiera ser conocido dicho texto en el trámite de audiencia e información pública por todos los ciudadanos.</p>
+        <p class="parrafo">Por último, en relación con el principio de eficiencia se ha procurado que la norma genere las menores cargas administrativas para los ciudadanos, así como los menores costes indirectos, fomentando el uso racional de los recursos públicos y el pleno respeto a los principios de estabilidad presupuestaria y sostenibilidad financiera.</p>
+        <p class="parrafo">El artículo 117 del Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por el Real Decreto 1065/2007, de 27 de julio, habilita, en el ámbito del Estado, al Ministro de Economía y Hacienda para aprobar los modelos de declaración, autoliquidación y comunicación de datos, así como establecer la forma, lugar y plazos de su presentación.</p>
+        <p class="parrafo">El artículo 13 del Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por Real Decreto 1065/2007, de 27 de julio, dispone que las declaraciones censales de alta, modificación y baja, previstas en los artículos 9, 10 y 11 del mismo, se presentarán en el lugar, forma y plazos que establezca el Ministro de Economía y Hacienda.</p>
+        <p class="parrafo">Las habilitaciones al Ministro de Economía y Hacienda anteriormente citadas deben entenderse conferidas en la actualidad a la Vicepresidenta Primera del Gobierno y Ministra de Hacienda, de acuerdo con lo dispuesto en el artículo 5 y en la disposición final segunda del Real Decreto 829/2023, de 20 de noviembre, por el que se reestructuran los departamentos ministeriales.</p>
+        <p class="parrafo">En su virtud, dispongo:</p>
+        <h5 class="articulo"><strong>Artículo primero.</strong> Modificación de la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 de Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores.</h5>
+        <p class="parrafo">Se introducen las siguientes modificaciones en la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores y 037 Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores:</p>
+        <p class="parrafo_2">Uno. Se modifica el título de la orden que queda redactado de la siguiente forma:</p>
+        <blockquote class="sangrado">
+      <p class="parrafo_2">«Orden EHA/1274/2007, de 26 de abril, por la que se aprueba el modelo 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores.»</p>
+    </blockquote>
+        <p class="parrafo_2">Dos. Se modifica el título del artículo 1 que queda redactado de la siguiente forma:</p>
+        <blockquote class="sangrado">
+      <h5 class="articulo">«Artículo 1. Aprobación del modelo 036 de declaración censal.»</h5>
+    </blockquote>
+        <p class="parrafo">Tres. Se modifica el artículo 1 que queda redactado de la siguiente forma:</p>
+        <blockquote class="sangrado">
+      <p class="parrafo_2">«De conformidad con lo establecido en el artículo 13 del Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por Real Decreto 1065/2007, de 27 de julio, se aprueba el modelo 036, de declaración censal de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores que figura en el anexo I de esta orden.»</p>
+    </blockquote>
+        <p class="parrafo_2">Cuatro. Se modifica el artículo 2 que queda redactado de la siguiente forma:</p>
+        <blockquote class="sangrado">
+      <p class="parrafo_2">«1. Quienes hayan de formar parte del Censo de empresarios, profesionales y retenedores deberán presentar una declaración de alta en el mismo.</p>
+      <p class="parrafo">El Censo de empresarios, profesionales y retenedores estará formado por las siguientes personas o entidades:</p>
+      <p class="parrafo_2">a) Quienes desarrollen o vayan a desarrollar en territorio español actividades empresariales o profesionales.</p>
+      <p class="parrafo">b) Quienes abonen rentas sujetas a retención o ingreso a cuenta.</p>
+      <p class="parrafo">c) Quienes, no actuando como empresarios o profesionales, realicen adquisiciones intracomunitarias de bienes sujetas al Impuesto sobre el Valor Añadido.</p>
+      <p class="parrafo">d) Quienes, siendo no residentes en España de acuerdo con lo dispuesto en el artículo 6 del texto refundido de la Ley del Impuesto sobre la Renta de No Residentes, aprobado por el Real Decreto Legislativo 5/2004, de 5 de marzo, operen en territorio español mediante establecimiento permanente o satisfagan en dicho territorio rentas sujetas a retención o ingreso a cuenta, así como las entidades a las que se refiere el artículo 5.c) del citado texto refundido.</p>
+      <p class="parrafo">e) Quienes sean socios, herederos, comuneros o partícipes de entidades en régimen de atribución de rentas que desarrollen actividades empresariales o profesionales y tengan obligaciones tributarias derivadas de su condición de miembros de tales entidades.</p>
+      <p class="parrafo">f) Quienes no estén establecidos en el territorio de aplicación del Impuesto sobre el Valor Añadido y sean sujetos pasivos del mismo, excepto que hubieran resultado exonerados del cumplimiento de obligaciones censales por el Departamento de Gestión Tributaria de la Agencia Estatal de Administración Tributaria.</p>
+      <p class="parrafo">g) Quienes tengan la condición de contribuyentes del Impuesto sobre Determinados Servicios Digitales.</p>
+      <p class="parrafo_2">La declaración de alta, realizada a través del modelo 036, también servirá para solicitar la asignación del número de identificación fiscal, con independencia de que la persona jurídica o entidad solicitante no esté obligada a darse de alta en el Censo de empresarios, profesionales y retenedores, de acuerdo con lo dispuesto en el artículo 9.3.a) del Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por Real Decreto 1065/2007, de 27 de julio.</p>
+      <p class="parrafo">La asignación del Número de Identificación Fiscal, a solicitud del interesado o de oficio, determinará la inclusión automática en el Censo de obligados tributarios de la persona o entidad de que se trate.</p>
+      <p class="parrafo">Asimismo, por medio del modelo 036 de declaración censal, los obligados tributarios personas físicas que sean empresarios o profesionales, y no dispongan del número de identificación fiscal, solicitarán la asignación de dicho número.</p>
+      <p class="parrafo">Igualmente, por medio del modelo 036 comunicarán, en su caso, su condición de empresarios de responsabilidad limitada (siglas ERL) de acuerdo con lo establecido en la Ley 14/2013, de 27 de septiembre, de apoyo a los emprendedores y su internacionalización y las variaciones que se produzcan.</p>
+      <p class="parrafo">2. Cuando varíe cualquiera de los datos recogidos en la declaración de alta o en otra declaración posterior, el obligado tributario lo deberá comunicar a la Administración tributaria mediante la oportuna declaración de modificación, utilizando el modelo 036.</p>
+      <p class="parrafo">Cuando una persona o entidad en constitución que tenga asignado un Número de Identificación Fiscal provisional aporte la documentación pendiente necesaria para la asignación del Número de Identificación Fiscal definitivo, deberá solicitar éste mediante una declaración censal de modificación utilizando el modelo 036.</p>
+      <p class="parrafo">No obstante, cuando en virtud de un convenio la Agencia Estatal de Administración Tributaria tenga conocimiento a través de otros organismos e instituciones de la información necesaria para asignar a una entidad el Número de Identificación Fiscal definitivo, podrá exonerar a la entidad de presentar una declaración censal solicitando la asignación de dicho número, sin perjuicio de la obligación que incumbe a la entidad de comunicar otro tipo de modificaciones que se hayan producido respecto de la información que haya hecho constar en las declaraciones censales que haya presentado con anterioridad.</p>
+      <p class="parrafo">3. Deberán presentar la declaración de baja en el Censo de empresarios, profesionales y retenedores quienes cesen en el desarrollo de todo tipo de actividades empresariales o profesionales o no deban formar parte del mismo, utilizando el modelo 036.»</p>
+    </blockquote>
+        <p class="parrafo_2">Cinco. Se modifica el artículo 7 que queda redactado de la siguiente forma:</p>
+        <blockquote class="sangrado">
+      <p class="parrafo_2">«Las personas jurídicas y entidades en general, así como las personas físicas que formen parte del Censo de empresarios, profesionales y retenedores, comunicarán el cambio de domicilio fiscal mediante una declaración censal de modificación, de acuerdo con lo dispuesto en la letra a) del apartado 2 del artículo 10 del Reglamento General de las actuaciones y los procedimientos de gestión e inspección tributaria y de desarrollo de las normas comunes de los procedimientos de aplicación de los tributos, aprobado por Real Decreto 1065/2007, de 27 de julio, utilizando para ello el modelo 036.»</p>
+    </blockquote>
+        <p class="parrafo_2">Seis. Se suprimen los artículos 14, 15 y 16.</p>
+        <p class="parrafo">Siete. El anexo I se sustituye por el anexo I de esta orden.</p>
+        <p class="parrafo">Ocho. Se suprime el anexo II.</p>
+        <h5 class="articulo"><strong>Artículo segundo.</strong> Modificación de la Orden EHA/3695/2007, de 13 de diciembre, por la que se aprueba el modelo 030 de Declaración censal de alta en el Censo de obligados tributarios, cambio de domicilio y/o variación de datos personales, que pueden utilizar las personas físicas, se determinan el lugar y forma de presentación del mismo y se modifica la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios profesionales y retenedores y 037 de Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores.</h5>
+        <p class="parrafo">El anexo de la Orden EHA/3695/2007, de 13 de diciembre, por la que se aprueba el modelo 030 de Declaración censal de alta en el Censo de obligados tributarios, cambio de domicilio y/o variación de datos personales, que pueden utilizar las personas físicas, se determinan el lugar y forma de presentación del mismo y se modifica la Orden EHA/1274/2007, de 26 de abril, por la que se aprueban los modelos 036 de Declaración censal de alta, modificación y baja en el Censo de empresarios profesionales y retenedores y 037 de Declaración censal simplificada de alta, modificación y baja en el Censo de empresarios, profesionales y retenedores, se sustituye por el anexo II de esta orden.</p>
+        <h5 class="articulo"><strong>Disposición final única. </strong>Entrada en vigor.</h5>
+        <p class="parrafo">La presente orden entrará en vigor el día 3 de febrero de 2025 y se aplicará por primera vez a los modelos 030 y 036 que se presenten a partir de dicha fecha.</p>
+        <p class="parrafo_2">Madrid, 11 de diciembre de 2024.–La Vicepresidenta Primera del Gobierno y Ministra de Hacienda, María Jesús Montero Cuadrado.</p>
+        <h5 class="anexo_num">ANEXO I</h5>
+        <h5 class="anexo_tit">Declaración censal de alta, modificación y baja en el Censo de Empresarios, Profesionales y Retenedores</h5>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_1.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_1.png" width="707"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_2.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_2.png" width="681"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_3.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_3.png" width="678"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_4.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_4.png" width="788"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_5.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_5.png" width="788"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_6.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_6.png" width="689"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_7.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_7.png" width="692"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_8.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_8.png" width="761"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_9.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_9.png" width="702"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_10.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_10.png" width="731"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_11.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_11.png" width="742"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_12.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_12.png" width="712"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_13.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_13.png" width="709"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_14.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_14.png" width="682"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_15.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_15.png" width="679"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_16.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_16.png" width="788"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_17.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_17.png" width="788"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_18.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_18.png" width="691"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_19.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_19.png" width="695"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_20.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_20.png" width="766"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_21.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_21.png" width="703"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_22.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_22.png" width="734"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_23.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_23.png" width="742"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_24.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_24.png" width="717"/>
+        </p>
+        <h5 class="anexo_num">ANEXO II</h5>
+        <h5 class="anexo_tit">Declaración censal de alta en el Censo de obligados tributarios, cambio de domicilio y/o de variación de datos personales</h5>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_25.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_25.png" width="723"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_26.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_26.png" width="788"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_27.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_27.png" width="718"/>
+        </p>
+        <p class="imagen">
+          <img src="/datos/imagenes/disp/2025/8/410_15138764_28.png" class="frame" alt="Imagen: /datos/imagenes/disp/2025/8/410_15138764_28.png" width="788"/>
+        </p>
+      </div>
+      <!-- #textoxslt -->
+    </div>
+    <!-- #DOdocText -->
+    <input name="tabs" type="radio" id="tab-analisis" class="input"/>
+    <label for="tab-analisis" class="label">Análisis</label>
+    <div class="panel" id="panelAnalisis">
+      <div id="analisis" class="analisisDoc">
+<h4>ANÁLISIS</h4>
+<ul class="bullet-boe">
+  <li>Rango: Orden</li>
+  <li>Fecha de disposición: 11/12/2024</li>
+  <li>Fecha de publicación: 09/01/2025</li>
+  <li>Fecha de entrada en vigor: 03/02/2025</li>
+  <li>Aplicable en la forma indicada en la disposición final única.</li>
+</ul>
+<h5>Referencias anteriores</h5>
+<ul class="bullet-boe">
+  <li>MODIFICA el título, los arts. 1, 2, 7; SUSTITUYE el anexo I y SUPRIME los arts. 14 a 16 y el anexo II de la Orden EHA/1274/2007, de 26 de abril (Ref. <a href="/buscar/doc.php?id=BOE-A-2007-9508">BOE-A-2007-9508</a>).</li>
+  <li>SUSTITUYE el anexo de la Orden EHA/3695/2007, de 13 de diciembre (Ref. <a href="/buscar/doc.php?id=BOE-A-2007-21842">BOE-A-2007-21842</a>).</li>
+  <li>DE CONFORMIDAD con el Reglamento aprobado por Real Decreto 1065/2007, de 27 de julio (Ref. <a href="/buscar/doc.php?id=BOE-A-2007-15984">BOE-A-2007-15984</a>).</li>
+</ul>
+<h5>Materias</h5>
+<ul class="bullet-boe">
+  <li>Censos administrativos</li>
+  <li>Empresarios</li>
+  <li>Formularios administrativos</li>
+  <li>Impuesto sobre el Valor Añadido</li>
+  <li>Notificaciones telemáticas</li>
+  <li>Sistema tributario</li>
+</ul>
+</div>
+    </div>
+  </div>
+</div>
+<p class="linkSubir"><a href="#top">subir</a></p>
+      </div> <!-- .pool -->
+    </div> <!-- #contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="otros-enlaces">
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace"><a href="/contactar/" accesskey="3">Contactar</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php">Sobre la sede electr&oacute;nica</a></div></li>
+            <li><div class="enlace"><a href="/informacion/mapa_web/" accesskey="2">Mapa</a></div></li>
+            <li><div class="enlace"><a href="/informacion/aviso_legal/index.php">Aviso legal</a></div></li>
+            <li><div class="enlace"><a href="/informacion/accesibilidad/" accesskey="0">Accesibilidad</a></div></li>
+            <li><div class="enlace"><a href="/informacion/index.php#proteccion-de-datos">Protecci&oacute;n de datos</a></div></li>
+            <li><div class="enlace"><a href="/informacion/sistema_interno_informacion.php">Sistema Interno de Informaci&oacute;n</a></div></li>
+            <li><div class="enlace"><a href="/informacion/tutoriales/">Tutoriales</a></div></li>
+            <li><div class="enlace"><a href="/transparencia/empleo/">Empleo en la AEBOE</a></div></li>
+            </ul>
+            </div>
+          </div>
+          <div class="espacio"></div>
+          <div class="grupo-otros-enlaces">
+          	<div class="lista-pie">
+          	<ul>
+            <li><div class="enlace icono"><a href="/rss/" lang="es" title="RSS"><img src="/imagenes/home/rss_32.png" srcset="/imagenes/home/rss_32.svg" alt="RSS"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=tw" lang="es" title="boegob, el BOE en X"><img src="/imagenes/home/twitter_32.png" srcset="/imagenes/home/twitter_32.svg"  alt="X"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=fb" lang="es" title="El BOE en Facebook"><img src="/imagenes/home/facebook_32.png" srcset="/imagenes/home/facebook_32.svg" alt="Facebook"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=ln" lang="es" title="El BOE en LinkedIn"><img src="/imagenes/home/linkedin_32.png" srcset="/imagenes/home/linkedin_32.svg" alt="LinkedIn"></a></div></li>
+            <li><div class="enlace icono"><a href="/redes_sociales?pag=yt" lang="es" title="El BOE en YouTube"><img src="/imagenes/home/youtube_32.png" srcset="/imagenes/home/youtube_32.svg" alt="YouTube"></a></div></li>
+            </ul>
+            </div>
+          </div>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="franja-pie">
+        <p class="nombre-organismo">Agencia Estatal Bolet&iacute;n Oficial del Estado</p>
+        <p class="direccion-organismo"><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid</p>
+      </div>
+    </div> <!-- #pie -->
+    <script src="/js/desplegable.js"></script>
+  </body>
+</html>

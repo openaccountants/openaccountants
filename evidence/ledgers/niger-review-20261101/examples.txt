@@ -1,0 +1,4 @@
+$ python3 scripts/check-examples.py --require skills/niger/ne-cash-payment-tax.md skills/niger/ne-money-transfer-tax-repeal.md
+checked 2 files, 4 oa-check blocks, 0 failures, 0 missing
+
+Exit: 0

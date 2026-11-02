@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2",
+    "filename": "gjeldende-lover.tar.bz2",
+    "downloaded_utc": "2026-10-31T20:29:45.051181+00:00",
+    "exit_code": 0,
+    "response": "200 https://api.lovdata.no/v1/publicData/get/gjeldende-lover.tar.bz2",
+    "listed_metadata": {
+      "filename": "gjeldende-lover.tar.bz2",
+      "description": "Gjeldende lover, ajourf\u00f8rt med endringer",
+      "sizeBytes": "5812752",
+      "lastModified": "2026-10-31T02:31:00Z"
+    },
+    "bytes": 5812752,
+    "sha256": "91d5cf7ed3183e591975dc3f5dfbc0e3f7b1cd24e66875425376f18a0d23070c"
+  },
+  {
+    "url": "https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2",
+    "filename": "gjeldende-sentrale-forskrifter.tar.bz2",
+    "downloaded_utc": "2026-10-31T20:29:45.606140+00:00",
+    "exit_code": 0,
+    "response": "200 https://api.lovdata.no/v1/publicData/get/gjeldende-sentrale-forskrifter.tar.bz2",
+    "listed_metadata": {
+      "filename": "gjeldende-sentrale-forskrifter.tar.bz2",
+      "description": "Gjeldende sentrale forskrifter, ajourf\u00f8rt med endringer",
+      "sizeBytes": "21532744",
+      "lastModified": "2026-10-31T02:32:00Z"
+    },
+    "bytes": 21532744,
+    "sha256": "b7d1f9bd030f610349cec3efef91ade240788687183b3973e0a0102089b8efeb"
+  }
+]

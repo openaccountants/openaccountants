@@ -1,0 +1,51 @@
+[
+  {
+    "slug": "spain-transfer-pricing",
+    "rows": 99,
+    "source_LF_coordinate_fields": [],
+    "guide_LF_is_not_source_coordinate": true,
+    "quote_convention": "Original language, whitespace joined (declared in ledger). Source coordinate hazard not applicable to prepared row schema; prior actual quotation/body and substantive review retained."
+  },
+  {
+    "slug": "es-non-resident-income-tax-irnr-and",
+    "rows": 111,
+    "source_LF_coordinate_fields": [],
+    "guide_LF_is_not_source_coordinate": true,
+    "quote_convention": "Original language, whitespace joined (declared in ledger). Source coordinate hazard not applicable to prepared row schema; prior actual quotation/body and substantive review retained."
+  },
+  {
+    "slug": "es-canary-islands-igic",
+    "rows": 104,
+    "source_LF_coordinate_fields": [],
+    "guide_LF_is_not_source_coordinate": true,
+    "quote_convention": "Original language, whitespace joined (declared in ledger). Source coordinate hazard not applicable to prepared row schema; prior actual quotation/body and substantive review retained."
+  },
+  {
+    "slug": "es-ceuta-melilla-ipsi",
+    "rows": 155,
+    "source_LF_coordinate_fields": [],
+    "guide_LF_is_not_source_coordinate": true,
+    "quote_convention": "Original language, whitespace joined (declared in ledger). Source coordinate hazard not applicable to prepared row schema; prior actual quotation/body and substantive review retained."
+  },
+  {
+    "slug": "spain-vat-return",
+    "rows": 97,
+    "source_LF_coordinate_fields": [],
+    "guide_LF_is_not_source_coordinate": true,
+    "quote_convention": "Original language, whitespace joined (declared in ledger). Source coordinate hazard not applicable to prepared row schema; prior actual quotation/body and substantive review retained."
+  },
+  {
+    "slug": "es-vat-return",
+    "rows": 258,
+    "source_LF_coordinate_fields": [],
+    "guide_LF_is_not_source_coordinate": true,
+    "quote_convention": "Original language, whitespace joined (declared in ledger). Source coordinate hazard not applicable to prepared row schema; prior actual quotation/body and substantive review retained."
+  },
+  {
+    "slug": "es-foral-payroll",
+    "rows": 289,
+    "source_LF_coordinate_fields": [],
+    "guide_LF_is_not_source_coordinate": true,
+    "quote_convention": "Original language, whitespace joined (declared in ledger). Source coordinate hazard not applicable to prepared row schema; prior actual quotation/body and substantive review retained."
+  }
+]

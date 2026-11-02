@@ -1,0 +1,22 @@
+[
+  {
+    "old": "last_updated: 2026-10-27\n",
+    "new": "last_updated: 2026-10-28\n"
+  },
+  {
+    "old": "version: 1.0\n",
+    "new": "version: 1.1\n"
+  },
+  {
+    "old": "# Spain: non-residents, permanent establishments and departure v1.0\n",
+    "new": "# Spain: non-residents, permanent establishments and departure v1.1\n"
+  },
+  {
+    "old": "Use the annual-grouping conditions in the amended order, not an obsolete quarterly-grouping shortcut or loss-offset assumption. Record owner, payer/property, rate and accrual compatibility before grouping. PE books, instalments and corporate-format return are required under [TRLIRNR arts. 22–23](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a22); a 210 does not replace them. State non-working-day and actual direct-debit operational adjustments from the applicable calendar where relevant.\n",
+    "new": "For a **property transfer jointly owned by married spouses who are both non-resident**, AEAT permits a single Modelo 210. Complete 210 H with **C** in the C/O box, identify each spouse and record each ownership percentage. For the paper filing, **both spouses must sign**. This specific property-transfer rule does not create a general joint return for spouses’ other income ([AEAT Modelo 210 instructions: obligation to declare, 210 H and paper date/signature](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-renta-no-residentes/modelo-210-irnr______a-no-residentes-permanente_/instrucciones.html)).\n\nUse the annual-grouping conditions in the amended order, not an obsolete quarterly-grouping shortcut or loss-offset assumption. Record owner, payer/property, rate and accrual compatibility before grouping. PE books, instalments and corporate-format return are required under [TRLIRNR arts. 22–23](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527#a22); a 210 does not replace them. State non-working-day and actual direct-debit operational adjustments from the applicable calendar where relevant.\n"
+  },
+  {
+    "old": "| [TRLIRNR, RDL 5/2004](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527) | Source/PE definition; arts. 16–25 ordinary PE/non-PE bases, rates, property retention, exit/instalments, returns and payer rules | 2026-10-26 |\n",
+    "new": "| [AEAT Modelo 210 instructions](https://sede.agenciatributaria.gob.es/Sede/todas-gestiones/impuestos-tasas/impuesto-sobre-renta-no-residentes/modelo-210-irnr______a-no-residentes-permanente_/instrucciones.html) | Nonresident married joint-owner property-transfer return, 210 H ownership entries and both signatures for paper filing | 2026-10-28 |\n| [TRLIRNR, RDL 5/2004](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527) | Source/PE definition; arts. 16–25 ordinary PE/non-PE bases, rates, property retention, exit/instalments, returns and payer rules | 2026-10-26 |\n"
+  }
+]

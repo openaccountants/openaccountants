@@ -1,0 +1,559 @@
+
+
+Seguridad Social: Herramientas Web
+
+[[ID:x3BXD1P:hO6]]
+
+[[ID:com.ibm.lotus.NavStateUrl]]
+
+[[ID:segsocial]]
+
+[[ID:top]]
+
+[[ID:cookieContainer]]
+
+[[ID:cookies]]
+
+Aviso Cookies
+
+Este sitio web utiliza cookies para que usted tenga una mejor experiencia de usuario. Las cookies no se utilizan para recoger información de carácter personal. Para más información consulte nuestra política de cookies.
+
+Aceptar todas
+
+ Rechazar todas
+
+		    Portal de la Seguridad social
+
+[[ID:search-mm]]
+
+[[ID:query-mm]]
+
+							 Inicio
+
+										Conócenos
+
+								Trabajadores
+
+								Pensionistas
+
+								Empresarios
+
+								Clases Pasivas
+
+								Sugerencias y quejas
+
+								Consultas
+
+								Idiomas
+									 
+									Toggle dropdown menu
+
+Castellano
+
+Català
+
+Galego
+
+Euskara
+
+Valencià
+
+English
+
+Français
+
+				Ir a contenido
+				Desplegar campo de búsqueda
+
+									Sugerencias y quejas
+
+									Consultas
+
+[[ID:top-search-id]]
+
+											Busqueda
+
+										  Castellano
+Toggle dropdown menu
+				                          
+[[ID:lang-menu]]
+
+Castellano
+
+Català
+
+Galego
+
+Euskara
+
+Valencià
+
+English
+
+Français
+
+[[ID:top-search-collapse-id]]
+
+[[ID:formularioBuscador_field]]
+
+											Introduzca su búsqueda       
+											Acceso directo al buscador
+											Buscador  
+											
+[[ID:busqueda_field]]
+
+											Click para buscar        
+											
+[[ID:btn-busqueda_field]]
+
+[[ID:boton-advanceSearch]]
+Buscador avanzado
+
+								El texto a buscar debe tener al menos 3 caracteres
+
+									Inicio
+
+									Conócenos
+
+									Trabajadores
+
+									Pensionistas
+
+									Empresarios
+
+									Clases Pasivas
+
+[[ID:asa.page]]
+
+	Z6_21I4H401M8GAC0A7LQ2QT710E2
+	Z6_21I4H401M00C50AR9GLSVS1083
+
+[[ID:content]]
+
+[[ID:wpthemeStatusBarContainer]]
+
+	                	  Error: 
+En este navegador se ha inhabilitado
+	                    Javascript. Esta pÃ¡gina necesita Javascript. Modifique los
+	                    valores del navegador para permitir que se ejecute Javascript.
+	                    Consulte la documentaciÃ³n para obtener instrucciones
+	                    especÃ­ficas.
+
+[[ID:btn-valuation]]
+
+    Valore este contenido                            
+
+[[ID:Satisfaction_survey]]
+
+              ×
+                Encuesta de satisfacción
+
+[[ID:starsform]]
+
+Califique esta página o el trámite relacionado. *
+
+                    Valoración con estrellas
+
+[[ID:radio1]]
+
+[[ID:radio2]]
+
+[[ID:radio3]]
+
+[[ID:radio4]]
+
+[[ID:radio5]]
+
+¿Ha encontrado lo que buscaba o ha conseguido completar el trámite que deseaba realizar? *
+
+                    Valoración grado satisfacción
+
+[[ID:opcionSi]]
+
+[[ID:op1]]
+Sí
+
+[[ID:opcionNo]]
+
+[[ID:op2]]
+No
+
+[[ID:opcionEnparte]]
+
+[[ID:op3]]
+En parte
+
+Su valoración será tratada de forma anónima.
+
+* Campos obligatorios
+
+[[ID:btnEnviarEncuesta]]
+
+[[ID:gratitude-layer]]
+
+                        Gracias por su participación
+                        Juntos podemos seguir mejorando este Portal
+
+[[ID:bye]]
+
+[[ID:portletState]]
+{}
+
+[[ID:asa.wcm]]
+
+	9d2fd4f1-ab0f-42a6-8d10-2e74b378ee24
+
+            	Inicio
+
+				Sistema de cotización para autónomos
+
+Sistema de cotización para autónomos
+
+[[ID:contenido]]
+
+  Con la entrada en vigor el 1 de enero de 2023 del Real Decreto-ley 13/2022 de 26 de julio de 2022, se establece un nuevo sistema de cotización para los trabajadores por cuenta propia o autónomos y se mejora la protección por cese de actividad.
+
+A continuación, se muestran los aspectos principales de este nuevo sistema de cotización.
+
+[[ID:estructura]]
+
+Comunicación de actividades
+
+Cotización basada en los rendimientos obtenidos
+
+Posibilidad de cambiar la base de cotización si varían los rendimientos
+
+Tarifa plana para nuevos autónomos
+
+Novedades en los beneficios aplicables a la cotización  para autónomos
+
+Más información: Guía de trabajo autónomo, folleto informativo y simulador de cuotas
+
+[[ID:12023CA]]
+
+Comunicación de actividades
+
+Aquellas personas que inicien su actividad por cuenta propia y tramiten su alta, a partir del día 1 de enero de 2023, deberán comunicar todas las actividades que realicen como autónomo a la Tesorería General de la Seguridad Social. 
+
+Las personas que ya figurasen de alta a día 1 de enero de 2023 y realicen más de una actividad por cuenta propia, también tendrán que comunicar todas sus actividades a la Tesorería General de la Seguridad Social.
+
+Tanto el alta en el Régimen Especial de Trabajadores Autónomos, como la comunicación de dichas actividades, se podrán realizar a través de Importass, Portal de la Tesorería General de la Seguridad Social.
+
+[[ID:22023CR]]
+
+Cotización basada en los rendimientos obtenidos
+
+Todas las personas que trabajen por cuenta propia cotizarán a la Seguridad Social en función de sus rendimientos netos anuales, obtenidos en el ejercicio de todas sus actividades económicas, empresariales o profesionales. 
+
+No cotizarán por rendimientos las personas que formen parte de una institución religiosa perteneciente a la Iglesia Católica, así como, durante el año 2025, los socios/as de cooperativas incluidos/as en el Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos que dispongan de un sistema intercooperativo de prestaciones sociales complementario al sistema público.
+
+A efectos de determinar la base de cotización, se tendrán en cuenta la totalidad de los rendimientos netos obtenidos en el año natural, en el ejercicio de sus distintas actividades profesionales o económicas, con independencia de que las realicen de forma individual o como socios/as o integrantes de cualquier entidad, con o sin personalidad jurídica, siempre y cuando no deban figurar por ellas en alta como personas trabajadoras por cuenta ajena o asimiladas a estas. El rendimiento neto computable de cada una de las actividades ejercidas se calculará de acuerdo con lo previsto a las normas del IRPF y con algunas particularidades en función del colectivo al que pertenezcan. Para más información, consulta ¿Cómo calculo mis rendimientos?.
+
+Del importe resultante se deducirá un 7 por ciento en concepto de gastos generales, excepto en los casos en que la persona trabajadora autónoma reúna las siguientes características, donde el porcentaje será del 3 por ciento:
+
+Administrador/a de sociedades mercantiles capitalistas cuya participación sea mayor o igual al 25 por ciento.
+
+Socio/a en una sociedad mercantil capitalista con una participación mayor o igual al 33 por ciento.
+
+Para la aplicación del porcentaje indicado del 3 por ciento bastará con haber figurado noventa días en alta en este régimen especial, durante el periodo a regularizar, en cualquiera de los supuestos citados anteriormente.
+
+Partiendo del promedio mensual de estos rendimientos netos anuales, se seleccionará la base de cotización que determinará la cuota a pagar.
+
+Anualmente, la Ley de Presupuestos Generales del Estado establecerá una tabla general y una reducida de bases de cotización que se dividirán en tramos consecutivos de importes de rendimientos netos mensuales a los que se asignarán, por cada tramo, unas bases de cotización máxima y mínima mensual. En la siguiente tabla se puede consultar estos nuevos tramos de rendimientos y sus correspondientes bases de cotización para los próximos tres años:
+
+  Tabla de rendimientos y bases de cotización. 
+Tabla reducida
+
+      Tramos de rendimientos netos
+      
+        2024
+
+Tramos base de cotización
+Base mínima—Base máxima
+Euros/mes
+
+        2025
+
+Tramos base de cotización
+Base mínima—Base máxima
+Euros/mes
+
+        2026
+Tramos base de cotización
+Base mínima—Base máxima
+Euros/mes
+
+      1
+      <= 670 €
+
+      735,29 — 816,98
+
+      653,59 — 718,94
+
+      653,59 — 718,94
+
+      2
+      > 670 y <= 900 €
+
+      816,99 — 900
+
+      718.95 — 900
+
+      718.95 — 900
+
+      3
+      > 900 y <1.166,70 €
+
+      872,55 — 1.166,70
+
+      849,67 — 1.166,70
+
+      849,67 — 1.166,70
+
+  Tabla de rendimientos y bases de cotización.
+ Tabla general
+
+      Tramos de rendimientos netos
+      
+        2024
+
+Tramos base de cotización
+Base mínima—Base máxima
+Euros/mes
+
+        2025
+
+Tramos base de cotización
+Base mínima—Base máxima
+Euros/mes
+
+        2026
+
+Tramos base de cotización
+Base mínima—Base máxima
+Euros/mes
+
+      1
+      >= 1.166,7 y <= 1.300 €
+
+      950,98 — 1.300
+
+      950,98 — 1.300
+      950,98 — 1.300
+
+      2
+      > 1.300 y <= 1.500 €
+
+      960,78 — 1.500
+      960,78 — 1.500 
+      960,78 — 1.500 
+
+      3
+      > 1.500 y <= 1.700 €
+
+      960,78 — 1.700
+      960,78 — 1.700
+      960,78 — 1.700
+
+      4
+      > 1.700 y <= 1.850 €
+
+      1.045,75 — 1.850
+
+      1.143,79 — 1.850
+
+      1.143,79 — 1.850
+
+      5
+      > 1.850 y <= 2.030 €
+
+      1.062,09 — 2.030
+
+      1.209,15 — 2.030
+
+      1.209,15 — 2.030
+
+      6
+      > 2.030 y <= 2.330 €
+
+      1.078,43 — 2.330
+
+      1.274,51 — 2.330
+
+      1.274,51 — 2.330
+
+      7
+      > 2.330 y <= 2.760 €
+
+      1.111,11 — 2.760
+
+      1.356,21 — 2.760
+
+      1.356,21 — 2.760
+
+      8
+      > 2.760 y <= 3.190 €
+
+      1.176,47 — 3.190
+
+      1.437,91 — 3.190
+
+      1.437,91 — 3.190
+
+      9
+      > 3.190 y <= 3.620 €
+
+      1.241,83 — 3.620
+
+      1.519,61 — 3.620
+
+      1.519,61 — 3.620
+
+      10
+      > 3.620 y <= 4.050 €
+
+      1.307,19 — 4.050
+
+      1.601,31 — 4.050
+
+      1.601,31 — 4.050
+
+      11
+      > 4.050 y <= 6.000 €
+      1.454,25 — 4.720,50
+
+      1.732,03 — 4.909,50
+
+      1.732,03 — 5.101,20
+
+      12
+      > 6.000 €
+      1.732,03 — 4.720,50
+
+      1.928,10 — 4.909,50
+
+      1.928,10 — 5.101,20
+
+A partir del 1 de enero de 2023 los trabajadores autónomos podrán declarar sus rendimientos previstos a través de los servicios que se encontrarán disponibles en Importass, el portal de la Tesorería General de la Seguridad Social para servicios y trámites online.
+
+Para las personas trabajadoras autónomas que se den de alta a partir de esta fecha, se solicitarán esa información en el proceso de alta que se realice a través de Importass. 
+
+En el caso de que la persona trabajadora autónoma ya estuviera dada de alta, podrá modificar su base de cotización para ajustarla a la previsión sobre el promedio mensual de sus rendimientos netos anuales a través del servicio Base de cotización y rendimientos.
+
+Las personas trabajadoras por cuenta propia que a 31/12/2022 vinieran cotizando por una base de cotización superior a la que les correspondería en razón de sus rendimientos estimados podrán mantener en 2026 dicha base de cotización, aunque sus rendimientos determinen la aplicación de una base de cotización inferior.
+
+Las personas trabajadoras por cuenta propia que a 31/12/2022 vinieran cotizando por una base de cotización superior a la que les correspondería en razón de sus rendimientos estimados podrán mantener en 2026 dicha base de cotización, aunque sus rendimientos determinen la aplicación de una base de cotización inferior.
+La base de cotización de las personas trabajadoras incluidas en el Régimen Especial de los Trabajadores por Cuenta Propia o Autónomos y/o en el Régimen Especial de los Trabajadores del Mar que, a 1 de enero de 2026, viniesen cotizando por la base máxima del tramo 11 y 12 de la tabla general para el año 2025 equivalente a 4.909,50 euros, la posibilidad de elegir, con efectos 1 de enero 2026 , cualquier base de cotización que se encuentre comprendida entre la base por la que vienen cotizando (4.909,50 euros) y la base máxima del tramo 11 y 12 de la tabla general que, para el año 2026 , establece Real Decreto-ley 3/2026, de 3 de febrero, para la revalorización de las pensiones públicas y otras medidas urgentes en materia de Seguridad Social (5.101,20 euros).
+
+En Importass se encuentra disponible un simulador para realizar el cálculo de la cuota en función de los rendimientos previstos.
+
+Las cantidades a ingresar a la Seguridad Social, llamadas cuotas, se calculan aplicando el tipo a la base de cotización.
+
+[[ID:32023CB]]
+
+Posibilidad de cambiar la base de cotización si varían los rendimientos
+
+Si a lo largo del año 2026 se prevé una variación de los rendimientos netos, será posible seleccionar cada dos meses una nueva base de cotización y, por tanto, una nueva cuota adaptada a los mismos con un máximo de seis cambios al año. Esta modificación será efectiva en las siguientes fechas:
+
+1 de marzo de 2026, si la solicitud se formula entre el 1 de enero y el último día natural del mes de febrero.
+
+1 de mayo de 2026, si la solicitud se formula entre el 1 de marzo y el 30 de abril.
+
+1 de julio de 2026, si la solicitud se formula entre el 1 de mayo y el 30 de junio.
+
+1 de septiembre de 2026, si la solicitud se formula entre el 1 de julio y el 31 de agosto.
+
+1 de noviembre de 2026, si la solicitud se formula entre el 1 de septiembre y el 31 de octubre.
+
+1 de enero del año 2027, si la solicitud se formula entre el 1 de noviembre y el 31 de diciembre.
+
+[[ID:512023TP]]
+
+Tarifa plana para nuevos autónomos
+
+Durante el periodo 2023-2025, las personas que causen alta inicial en el Régimen de autónomos podrán solicitar la aplicación de una cuota reducida (tarifa plana) de 80 euros mensuales durante los primeros 12 meses de actividad. La solicitud se realizará en el momento de tramitar el alta.
+
+Podrán beneficiarse de estas condiciones las personas autónomas que no hayan estado dadas de alta en los dos años inmediatamente anteriores a la fecha de efecto de la nueva alta, o bien tres años, en caso de haber disfrutado previamente de esta deducción.
+
+Transcurrido esos doce primeros meses, podrá también aplicarse una cuota reducida durante los siguientes doce meses, a aquellos trabajadores por cuenta propia que prevean que sus rendimientos económicos netos anuales, vayan a ser inferiores al salario mínimo interprofesional anual que corresponda a ese período y así lo soliciten en el servicio que se habilitará en Importass.
+
+Además, las personas autónomas con una discapacidad igual o superior al 33 por ciento, víctima de violencia de género o víctima de terrorismo, podrán solicitar la aplicación, en el momento del alta, de una cuota reducida de 80 euros durante los primeros 24 meses.
+
+Asimismo, finalizado este período, si su rendimiento neto previsto fuese inferior al Salario Mínimo Interprofesional, podrán solicitar, a través del servicio que se habilitará en Importass, la aplicación de esta cuota reducida durante los siguientes 36 meses, por importe de 160 euros.
+
+Todas las solicitudes de ampliación deberán acompañarse de una declaración relativa a que los rendimientos netos que se prevén obtener van a ser inferiores al salario mínimo profesional vigente.
+
+Las reducciones en la cotización previstas en los párrafos anteriores no resultarán aplicables a los familiares de trabajadores autónomos por consanguinidad o afinidad hasta el segundo grado inclusive y, en su caso, por adopción, que se incorporen al Régimen Especial de la Seguridad Social de los Trabajadores por Cuenta Propia o Autónomos.
+
+Los trabajadores por cuenta propia que disfruten de estos beneficios podrán renunciar en cualquier momento expresamente a su aplicación con efectos a partir del día primero del mes siguiente al de la comunicación de la renuncia correspondiente. Esta solicitud también se podrá realizar a través del servicio que se habilitará en Importass.
+
+Los trabajadores autónomos que a 31 de diciembre de 2022 fueran beneficiarios de la antigua tarifa plana, continuarán disfrutando de la misma, hasta que se agote el periodo máximo establecido, en las mismas condiciones.
+
+Prórroga Tarifa Plana
+
+Para aquellas personas trabajadoras autónomas que, en el año objeto de regularización, hubieran solicitado la prórroga del segundo periodo de tarifa plana y se constate, según la información remitida por las Administraciones Tributarias, que han obtenido unos rendimientos económicos netos iguales o superiores al salario mínimo interprofesional, se les reclamarán las cuotas que durante dicho año no se ingresaron por aplicación del beneficio. Asimismo, el periodo de prórroga tendrá la consideración de periodo regularizable, procediendo, en su caso, el recálculo de la base de cotización provisional, así como de la cuota. La pérdida de la tarifa plana solo afecta al periodo del año objeto de regularización, de modo que, si el segundo periodo abarca parte del año siguiente, la comprobación del cumplimiento del requisito del salario mínimo interprofesional (SMI) se llevará a cabo en ese ejercicio posterior.
+
+[[ID:612023BA]]
+
+Novedades en los beneficios aplicables a la cotización  para autónomos
+
+Bonificación en la cotización para autónomos por cuidado de menor afectado por una enfermedad grave
+
+Las personas autónomas beneficiarias de la prestación para el cuidado de menores afectados cáncer u otra enfermedad grave tendrán derecho, durante el periodo en el que perciban dicha prestación, a una bonificación del 75 por ciento de la cuota por contingencias comunes, resultante de aplicar a la base media de los doce meses anteriores a la fecha en que se inicie esta bonificación, el tipo de cotización para contingencias comunes, excluido el correspondiente a IT derivada de contingencias comunes.
+
+Si el trabajador lleva menos de doce meses dado de alta continuada en el Régimen de autónomos, para el cálculo de la base media de cotización se tendrá en cuenta la última fecha de alta, cuyo resultado se obtiene dividiendo la suma de las bases de cotización entre el número de días en los que ha estado dado de alta de manera continuada, y la cuantía obtenida se multiplica por treinta.
+
+Bonificación a trabajadoras autónomas por reincorporación a su actividad
+
+Las trabajadoras autónomas que cesen su actividad por nacimiento de hijo/a, adopción, guarda con fines de adopción, acogimiento y tutela y quieran volver a realizar una actividad por cuenta propia dentro de los dos años siguientes a la fecha del cese, tendrán derecho a una bonificación, durante los 24 meses inmediatamente siguientes a la fecha de su reincorporación al trabajo, del 80 por ciento de la cuota por contingencias comunes, resultante de aplicar a la base media de los doce meses anteriores a la fecha en que cesaron su actividad, el tipo de cotización para contingencias comunes, excluido el correspondiente a IT derivada de contingencias comunes.
+
+[[ID:Mas_Informacion]]
+
+Más información: Guía de trabajo autónomo, folleto informativo y simulador de cuotas
+
+Para obtener más información sobre el sistema de cotización consulte la Guía práctica de trabajo autónomo.
+
+Puede acceder a este simulador para calcular la cuota correspondiente en base a los rendimientos netos previstos. Se trata de un simulador disponible en el área pública, en el que se podrá simular la cuota que corresponde abonar con los rendimientos netos que la persona autónoma estime obtener a lo largo del año.
+
+En este folleto informativo se recogen brevemente las principales claves del nuevo sistema de cotización para autónomos.
+
+[[ID:pie]]
+
+[[ID:ontop]]
+
+								Cómo identificarme							
+
+								Mapa Web
+
+								Glosario
+
+								Enlaces
+
+								Ayuda
+
+								Accesibilidad
+
+								Información Lingüística
+
+								RSS 
+
+				Copyright © Seguridad Social 2026. Todos los derechos reservados.
+
+								Aviso Legal
+
+								Política de cookies	
+
+[[ID:wpthemeComplementaryContent]]
+
+[[ID:wpthemeComplementaryContentText]]
+Complementary Content
+		
+[[ID:simpleMenuTemplate]]
+
+${title}${badge}
+
+    ${loading}
+
+[[ID:${submenu-id}]]
+
+

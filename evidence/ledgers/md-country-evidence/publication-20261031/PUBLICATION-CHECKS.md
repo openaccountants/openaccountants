@@ -1,0 +1,12 @@
+# Moldova partial-pack publication checks, 31 October 2026
+
+Content candidate: `4cecb3bf8` on the new local publication branch, based on existing public PR head `7ccafa2fbee9fc63dec342c648f6e1ca97f6b405` and a normal merge of main `372dbcb47ff8865bd197e0682cd446e288361872`. Unpublished research commits are not publication ancestors. PR #1057 is reused; no new PR and no merge.
+
+- All 13 source Guides and README are byte-exact to accepted research commit `27f350e89`. Original 3,913-row source review, 185-row refund acceptance, 594-row property/wealth review and bounded repair closure remain unchanged. The latest closure accepts the three property findings and 104 exact-target legacy citation expansions, not comprehensive country coverage or accountant attestation.
+- `publication-audit.json`: 1,505 preservation, source-selection and ancestry checks, zero failures. All 669 prior public evidence relocations are byte-exact. The 49 new private source originals and their hashes/official URLs are listed in `source-publication-map.json`, with no substituted capture payload. Research history and raw originals remain private and unchanged.
+- Changed validator: 13 Guides, pass with three routing warnings (property/wealth are outside seven core-domain slug detection; VAT refund is a separate job). `validation-before-publication-commit.txt` is an initial historical 10-Guide check; the authoritative `changed-validation.txt` covers all 13 after the new Guide additions were committed.
+- Strict worktree sync audit against pinned merged main: 13 source Guides, zero errors, warnings or notices.
+- Examples: 13 Guides, 26 blocks, zero failures or missing examples. Original full 130 shape checks, substantive source reviews and independent repair acceptance are reused because accepted Guide bytes are unchanged.
+- Only Moldova source/evidence paths differ from pinned public main. Generated trees are untouched by the publication delta. The main merge preserves upstream repository/layout changes.
+
+Auto-merge was found enabled and disabled before publication, then confirmed null. This publication is for Michael's review; GitHub checks remain a separate remote result. Source access limitations and all country gaps remain explicit. No fresh successful Legis read, blanket reuse clearance, authority contact, tax-account action, filing or payment is claimed. Issue #411 remains a completion issue; nothing here closes it.

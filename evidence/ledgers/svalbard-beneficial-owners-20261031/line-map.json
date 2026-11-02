@@ -1,0 +1,1229 @@
+{
+  "guide_sha256": "9cccd547eb2f2593ab7fee3cfce81a3eba8e3fbc82333c44b38588fb3d7e0472",
+  "lines": [
+    {
+      "line": 1,
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 2,
+      "sha256": "1d5e9fd739e7dcf26f98e96a59082b1f243f860110067099fb58fa0149f4b859",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 3,
+      "sha256": "50e0feee68f75846626515441d47e2196679bb6143f225f549e857b70528e63d",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 4,
+      "sha256": "1b8a2aca1d6efbb614cdc28239c8446ecea5bdc9d9ca1e19df7a64bae1d34c40",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 5,
+      "sha256": "2231f5df41f8842086d17ce94c978b2a3223c1ee67ac2316713ad0c254c92226",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 6,
+      "sha256": "c73b12242d2893388d6469fadff18f86c64c531613cfa22647da51cb0d7f88e1",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 7,
+      "sha256": "872eddba581654c262af535cc4d2b42b2daa640f8912718575bbf683e973c192",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 8,
+      "sha256": "47e3d8171480c2813b91ed382479c1f92483e6009c549356a00f3ee75b903dbd",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 9,
+      "sha256": "7153d9cec3735f95cafdadea154bc0f3d24d48eb5f940d6e56adb9918ca9f0be",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 10,
+      "sha256": "1ec8e706699358451272c1da5dd8230e2bed337739a0eab48afd3af71a8fe12e",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 11,
+      "sha256": "a0e2e20191bd48d3d42dd22b073a4fc63dcc4952f2e9c5c656ad5c9b8341bad9",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 12,
+      "sha256": "6ae6a685731d9c0c33a14caf7aedaa878eb61e8e8a2e3a820a76e074a54d200f",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 13,
+      "sha256": "2ae0cce6715d0889fa68b158278f37fbe42f05247dc3f2e349eaaaf7817bff9b",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 14,
+      "sha256": "0094b030cf52051ac7999de6348aca72cd1911683f9115e14a2d342fab35a8b5",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 15,
+      "sha256": "5cee32c8604af2b53cd5ccf54c72000e15e1d5c8950ed46748fd91ca62e3e0ec",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 16,
+      "sha256": "b93fb1ecba449f93a2c2185c861c60da3f24228d556a24a2b33c3efa04ef2caf",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 17,
+      "sha256": "081f868621a9b5b7d813303b197acde948859a4ac9530b767260868efadf80eb",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 18,
+      "sha256": "99ebc94f5caf3a1943a0ab08f532ff0aa9c2629bf35a6de09e43648d7a91cdff",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 19,
+      "sha256": "e32ac367965522ffea51fa40fbce207324bb84cb4c972738f0ac3336b6c3e369",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 20,
+      "sha256": "4b95fa1da6be88eeabed851b54d26a5ed11d294a82cfeeaa0050a420d1b670f3",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 21,
+      "sha256": "c0857df9615ec677ff61c192921151a28077aef59b16931e5810d86a4d29909a",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 22,
+      "sha256": "7ee979aee5935fa294dadd94eebf7a44a90dac67dcb384abd856504e7c15ce26",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 23,
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 25,
+      "sha256": "069c388a6f49a873a2fa1dc093a4798806d5a6e61dd9848bb9854735a194cbf7",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 27,
+      "sha256": "e09fe14e2946e4d4e09152564ff8d0fef85299e8e14c6ec37aca206fdd227b0f",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 29,
+      "sha256": "cb108c54439d126c114d52ff1d5304c8a9f9fcbb3c892f9c6c4929520cc0d5ee",
+      "section": "frontmatter",
+      "bindings": []
+    },
+    {
+      "line": 31,
+      "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "section": "Who this applies to",
+      "bindings": [
+        "SJ-RRH-001",
+        "SJ-RRH-002",
+        "SJ-RRH-003",
+        "SJ-RRH-004",
+        "SJ-RRH-005",
+        "SJ-RRH-006",
+        "SJ-RRH-007",
+        "SJ-RRH-008",
+        "SJ-RRH-040",
+        "SJ-RRH-041"
+      ]
+    },
+    {
+      "line": 33,
+      "sha256": "2b4f27319b1164ea3a8221893273ff5bd44882d29a90106f7dd066236d640d9b",
+      "section": "Who this applies to",
+      "bindings": [
+        "SJ-RRH-001",
+        "SJ-RRH-002",
+        "SJ-RRH-003",
+        "SJ-RRH-004",
+        "SJ-RRH-005",
+        "SJ-RRH-006",
+        "SJ-RRH-007",
+        "SJ-RRH-008",
+        "SJ-RRH-040",
+        "SJ-RRH-041"
+      ]
+    },
+    {
+      "line": 35,
+      "sha256": "cff812ef5619778f0f36be5af94bc01badc2f074dab399e06d89cebee1e73d15",
+      "section": "Who this applies to",
+      "bindings": [
+        "SJ-RRH-001",
+        "SJ-RRH-002",
+        "SJ-RRH-003",
+        "SJ-RRH-004",
+        "SJ-RRH-005",
+        "SJ-RRH-006",
+        "SJ-RRH-007",
+        "SJ-RRH-008",
+        "SJ-RRH-040",
+        "SJ-RRH-041"
+      ]
+    },
+    {
+      "line": 37,
+      "sha256": "df65099f5fcc2c1127b89affc451b9d81df50544937f3ee2a1f1d19332f4ccfa",
+      "section": "Who this applies to",
+      "bindings": [
+        "SJ-RRH-001",
+        "SJ-RRH-002",
+        "SJ-RRH-003",
+        "SJ-RRH-004",
+        "SJ-RRH-005",
+        "SJ-RRH-006",
+        "SJ-RRH-007",
+        "SJ-RRH-008",
+        "SJ-RRH-040",
+        "SJ-RRH-041"
+      ]
+    },
+    {
+      "line": 39,
+      "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 41,
+      "sha256": "1779956f2853fb07bfb84c58db28a2bfee47d444cc945aec4b37f2ac156ecfcc",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 42,
+      "sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 43,
+      "sha256": "9560b49cbd7b2b7bec497903e45578d4950179098c617efdba7bad4473f82bb0",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 44,
+      "sha256": "4079380aa0972cac519c411a903946684893e1a57b096053fb731ee1b136f0b5",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 45,
+      "sha256": "93e9d82e6d91aac770a0921c51e5b5191e3252ea08857584776541e3c7292ed9",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 46,
+      "sha256": "43260cb06a45ceb204533e43d9c3427a337bf3d83d627bd8192c138ad75b2c84",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 47,
+      "sha256": "5729dd3e4f9dcb586d3ad65cdc7da400f018104baff70c277f75c93c9f1e4c88",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 48,
+      "sha256": "60eeb52a41a3de1e6c299877d00ea3e7dc99e8c5956b1c6b60f70dc27a169eed",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 49,
+      "sha256": "8ffc6f7be2957e1d735cb19e1029ddc9f6da1336475ed101bdfb89085f08b104",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 50,
+      "sha256": "28f21cd143ca49ca95a36880542733a44d6e6595983548b92d8dcdc46f492a5a",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 51,
+      "sha256": "8b5fb2b0ab2d2b526afd8d2fae38808f688ba5136b45b04c63dd9e7734fccd90",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 52,
+      "sha256": "3bb92eea5284af6f0f0e9c332a62aa4591eff1d8a498c6ccf8b155f5fcafcfbe",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 54,
+      "sha256": "959d7dea29b94a77753df61dd5945271b83ffed3e2bead7a3d7e5be20be71038",
+      "section": "Rates, bands and thresholds",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-015",
+        "SJ-RRH-040"
+      ]
+    },
+    {
+      "line": 56,
+      "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "section": "The base",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-015",
+        "SJ-RRH-016",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-020",
+        "SJ-RRH-021",
+        "SJ-RRH-022",
+        "SJ-RRH-023"
+      ]
+    },
+    {
+      "line": 58,
+      "sha256": "7acf927d138bc88d598cfff572ac284a432681b39ff5388f29716ee64780446d",
+      "section": "The base",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-015",
+        "SJ-RRH-016",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-020",
+        "SJ-RRH-021",
+        "SJ-RRH-022",
+        "SJ-RRH-023"
+      ]
+    },
+    {
+      "line": 59,
+      "sha256": "f7d839832d2feac2224c1f310c5a4f10c27cd5b300089cdca562c1d45fc438f4",
+      "section": "The base",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-015",
+        "SJ-RRH-016",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-020",
+        "SJ-RRH-021",
+        "SJ-RRH-022",
+        "SJ-RRH-023"
+      ]
+    },
+    {
+      "line": 60,
+      "sha256": "bea80e17a8b6330f2ac39bd0d68f1d866fd1b52cdbb73bbb1eaefdc3f3f980ad",
+      "section": "The base",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-015",
+        "SJ-RRH-016",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-020",
+        "SJ-RRH-021",
+        "SJ-RRH-022",
+        "SJ-RRH-023"
+      ]
+    },
+    {
+      "line": 61,
+      "sha256": "f582d31d559ba47f8c28cb959a6426fc1a557c39f7c9804a274885304fd45e01",
+      "section": "The base",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-015",
+        "SJ-RRH-016",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-020",
+        "SJ-RRH-021",
+        "SJ-RRH-022",
+        "SJ-RRH-023"
+      ]
+    },
+    {
+      "line": 62,
+      "sha256": "784e261dee638eb5cd77f81173ee0602622d4b96ea01ebd453046afedf78fa5a",
+      "section": "The base",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-015",
+        "SJ-RRH-016",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-020",
+        "SJ-RRH-021",
+        "SJ-RRH-022",
+        "SJ-RRH-023"
+      ]
+    },
+    {
+      "line": 64,
+      "sha256": "ecf5adc381e367f802806f3f31bfc4cf8c0db0f4834a36ebc23e0286a923da9b",
+      "section": "The base",
+      "bindings": [
+        "SJ-RRH-009",
+        "SJ-RRH-010",
+        "SJ-RRH-011",
+        "SJ-RRH-012",
+        "SJ-RRH-015",
+        "SJ-RRH-016",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-020",
+        "SJ-RRH-021",
+        "SJ-RRH-022",
+        "SJ-RRH-023"
+      ]
+    },
+    {
+      "line": 66,
+      "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "section": "Deadlines and filing",
+      "bindings": [
+        "SJ-RRH-008",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-024",
+        "SJ-RRH-025",
+        "SJ-RRH-026",
+        "SJ-RRH-027",
+        "SJ-RRH-035",
+        "SJ-RRH-036",
+        "SJ-RRH-037",
+        "SJ-RRH-038",
+        "SJ-RRH-039"
+      ]
+    },
+    {
+      "line": 68,
+      "sha256": "c8acb77a7977b7277eeed9893751d7a584c8251c009ef896e8f6d7990db20986",
+      "section": "Deadlines and filing",
+      "bindings": [
+        "SJ-RRH-008",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-024",
+        "SJ-RRH-025",
+        "SJ-RRH-026",
+        "SJ-RRH-027",
+        "SJ-RRH-035",
+        "SJ-RRH-036",
+        "SJ-RRH-037",
+        "SJ-RRH-038",
+        "SJ-RRH-039"
+      ]
+    },
+    {
+      "line": 69,
+      "sha256": "0c40a440d13af85351567157a8da449f40233908aea7366f1f70bf0aaab97a5f",
+      "section": "Deadlines and filing",
+      "bindings": [
+        "SJ-RRH-008",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-024",
+        "SJ-RRH-025",
+        "SJ-RRH-026",
+        "SJ-RRH-027",
+        "SJ-RRH-035",
+        "SJ-RRH-036",
+        "SJ-RRH-037",
+        "SJ-RRH-038",
+        "SJ-RRH-039"
+      ]
+    },
+    {
+      "line": 70,
+      "sha256": "3eab0645c82f957265e6ad1dadbf64fa08b013f27f08666e87b592ddd5a02200",
+      "section": "Deadlines and filing",
+      "bindings": [
+        "SJ-RRH-008",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-024",
+        "SJ-RRH-025",
+        "SJ-RRH-026",
+        "SJ-RRH-027",
+        "SJ-RRH-035",
+        "SJ-RRH-036",
+        "SJ-RRH-037",
+        "SJ-RRH-038",
+        "SJ-RRH-039"
+      ]
+    },
+    {
+      "line": 71,
+      "sha256": "c0d3ff40fa88a3165891a0a52808f645b96e9c08e9885a790e50c6f2f6c713d0",
+      "section": "Deadlines and filing",
+      "bindings": [
+        "SJ-RRH-008",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-024",
+        "SJ-RRH-025",
+        "SJ-RRH-026",
+        "SJ-RRH-027",
+        "SJ-RRH-035",
+        "SJ-RRH-036",
+        "SJ-RRH-037",
+        "SJ-RRH-038",
+        "SJ-RRH-039"
+      ]
+    },
+    {
+      "line": 72,
+      "sha256": "52a9f6c440142921389fbb1c3c21a716b9a928aadec6d2e588f634e04ea3da4e",
+      "section": "Deadlines and filing",
+      "bindings": [
+        "SJ-RRH-008",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-024",
+        "SJ-RRH-025",
+        "SJ-RRH-026",
+        "SJ-RRH-027",
+        "SJ-RRH-035",
+        "SJ-RRH-036",
+        "SJ-RRH-037",
+        "SJ-RRH-038",
+        "SJ-RRH-039"
+      ]
+    },
+    {
+      "line": 73,
+      "sha256": "8b577f196a4ea809edabf458ef27df74f6649d47bf44291755bd9719ba6379b8",
+      "section": "Deadlines and filing",
+      "bindings": [
+        "SJ-RRH-008",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-024",
+        "SJ-RRH-025",
+        "SJ-RRH-026",
+        "SJ-RRH-027",
+        "SJ-RRH-035",
+        "SJ-RRH-036",
+        "SJ-RRH-037",
+        "SJ-RRH-038",
+        "SJ-RRH-039"
+      ]
+    },
+    {
+      "line": 75,
+      "sha256": "8f2f8ab7f5276ace370517d1bed81758affc933a9ec321d7640dddacc62be367",
+      "section": "Deadlines and filing",
+      "bindings": [
+        "SJ-RRH-008",
+        "SJ-RRH-012",
+        "SJ-RRH-013",
+        "SJ-RRH-014",
+        "SJ-RRH-017",
+        "SJ-RRH-018",
+        "SJ-RRH-019",
+        "SJ-RRH-024",
+        "SJ-RRH-025",
+        "SJ-RRH-026",
+        "SJ-RRH-027",
+        "SJ-RRH-035",
+        "SJ-RRH-036",
+        "SJ-RRH-037",
+        "SJ-RRH-038",
+        "SJ-RRH-039"
+      ]
+    },
+    {
+      "line": 77,
+      "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "section": "Penalties and interest",
+      "bindings": [
+        "SJ-RRH-028",
+        "SJ-RRH-029",
+        "SJ-RRH-030",
+        "SJ-RRH-031",
+        "SJ-RRH-032",
+        "SJ-RRH-033",
+        "SJ-RRH-034"
+      ]
+    },
+    {
+      "line": 79,
+      "sha256": "3911e33191952be9ac850f605fcb43527dde051db10060aade02632abd5785aa",
+      "section": "Penalties and interest",
+      "bindings": [
+        "SJ-RRH-028",
+        "SJ-RRH-029",
+        "SJ-RRH-030",
+        "SJ-RRH-031",
+        "SJ-RRH-032",
+        "SJ-RRH-033",
+        "SJ-RRH-034"
+      ]
+    },
+    {
+      "line": 81,
+      "sha256": "2d3c0e3c06cd75497f76126f4f605b508238d2b05fb039fb7672f4d21ad3cb0a",
+      "section": "Penalties and interest",
+      "bindings": [
+        "SJ-RRH-028",
+        "SJ-RRH-029",
+        "SJ-RRH-030",
+        "SJ-RRH-031",
+        "SJ-RRH-032",
+        "SJ-RRH-033",
+        "SJ-RRH-034"
+      ]
+    },
+    {
+      "line": 82,
+      "sha256": "b4ce127a1063d190bcd5fcc4ed37dec033670a604abc6724cafc27034f51b4ee",
+      "section": "Penalties and interest",
+      "bindings": [
+        "SJ-RRH-028",
+        "SJ-RRH-029",
+        "SJ-RRH-030",
+        "SJ-RRH-031",
+        "SJ-RRH-032",
+        "SJ-RRH-033",
+        "SJ-RRH-034"
+      ]
+    },
+    {
+      "line": 83,
+      "sha256": "09fbfdc9ffbc671b5bb932607317a00647b56849f17c56632780bf1b6d3bb73b",
+      "section": "Penalties and interest",
+      "bindings": [
+        "SJ-RRH-028",
+        "SJ-RRH-029",
+        "SJ-RRH-030",
+        "SJ-RRH-031",
+        "SJ-RRH-032",
+        "SJ-RRH-033",
+        "SJ-RRH-034"
+      ]
+    },
+    {
+      "line": 84,
+      "sha256": "32aedb22b0489d07554299272add46b2a3401774b4988dd62163d6b202e8394c",
+      "section": "Penalties and interest",
+      "bindings": [
+        "SJ-RRH-028",
+        "SJ-RRH-029",
+        "SJ-RRH-030",
+        "SJ-RRH-031",
+        "SJ-RRH-032",
+        "SJ-RRH-033",
+        "SJ-RRH-034"
+      ]
+    },
+    {
+      "line": 85,
+      "sha256": "70175dda6e33a9c82fe286dd84aa616045ea52f384ee48b024fcf51d7fa5e542",
+      "section": "Penalties and interest",
+      "bindings": [
+        "SJ-RRH-028",
+        "SJ-RRH-029",
+        "SJ-RRH-030",
+        "SJ-RRH-031",
+        "SJ-RRH-032",
+        "SJ-RRH-033",
+        "SJ-RRH-034"
+      ]
+    },
+    {
+      "line": 87,
+      "sha256": "87124e063e131031a120eec310171cde6d0cbd5a3ecfdc09437894972084f495",
+      "section": "Penalties and interest",
+      "bindings": [
+        "SJ-RRH-028",
+        "SJ-RRH-029",
+        "SJ-RRH-030",
+        "SJ-RRH-031",
+        "SJ-RRH-032",
+        "SJ-RRH-033",
+        "SJ-RRH-034"
+      ]
+    },
+    {
+      "line": 89,
+      "sha256": "8427146447bc5cce9f18c724a90a2f5a05975f0d736c207ff9b043ea1762164f",
+      "section": "Penalties and interest",
+      "bindings": [
+        "SJ-RRH-028",
+        "SJ-RRH-029",
+        "SJ-RRH-030",
+        "SJ-RRH-031",
+        "SJ-RRH-032",
+        "SJ-RRH-033",
+        "SJ-RRH-034"
+      ]
+    },
+    {
+      "line": 91,
+      "sha256": "7e538a25c35f496a49080cdd5f142ca64a855d4d9065b892dbce5bbe2b30c63c",
+      "section": "Penalties and interest",
+      "bindings": [
+        "SJ-RRH-028",
+        "SJ-RRH-029",
+        "SJ-RRH-030",
+        "SJ-RRH-031",
+        "SJ-RRH-032",
+        "SJ-RRH-033",
+        "SJ-RRH-034"
+      ]
+    },
+    {
+      "line": 93,
+      "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "section": "Cross-border points",
+      "bindings": [
+        "SJ-RRH-004",
+        "SJ-RRH-007",
+        "SJ-RRH-035"
+      ]
+    },
+    {
+      "line": 95,
+      "sha256": "0548ea29d9f2da48acd08171828ad0271b33d3968794054042166ca4d90ecabf",
+      "section": "Cross-border points",
+      "bindings": [
+        "SJ-RRH-004",
+        "SJ-RRH-007",
+        "SJ-RRH-035"
+      ]
+    },
+    {
+      "line": 97,
+      "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 99,
+      "sha256": "e754868399fcc3cf4f7118944757b42c92d3bf00169320969e0e78ea53ce519c",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 101,
+      "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 102,
+      "sha256": "54084f38795978cb4c592fe4388661d5eeabdc65557f1c198a982b30783a5f27",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 103,
+      "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 104,
+      "sha256": "7531bde96c87415ee002e80b8dd28e83cf93db0e35ca0277d113bd5ed63ed4e6",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 105,
+      "sha256": "3f87c38667cba221e62352adc27259d9d740a9c6a25998a3d53d3c2af0d353e9",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 106,
+      "sha256": "6b64e114d79d49814ec697ad6adee9092368dac262a8e2c09efe8347b8f73fb6",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 107,
+      "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 108,
+      "sha256": "2038f8c0163b1a7a6ba98dcb2cdf8be8a3f0151bf978860f84483e972ae3502d",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 109,
+      "sha256": "4e100ba23c389ddfd4d548ffa0bd0a1283edaa25daacb94adea04011a2b0f8dd",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 110,
+      "sha256": "45205fd719cfcfdb85541da239aaef72beee68fbc7d29a0978561fd72746d30d",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 111,
+      "sha256": "aeea6903d18eacbf5b477c6a0ecf72c1b1882fd1663e735f4126785972df9c46",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 112,
+      "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 113,
+      "sha256": "fa29d141e0448ad22637c26cb4d19f95e5630dead1338ad02bfee5006aa257ad",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 114,
+      "sha256": "43c7822d6b3859cb567426ff0dad27f4f6b04cdce53cfbbfa86b8822f99a6897",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 115,
+      "sha256": "bcf77c829ee33f3a3914b9b51558449dabdbda75db0c0e90503f45a345ed56b6",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 116,
+      "sha256": "089c684a57a69b09d662ca23cd4d2b1635d15193ff1c5ad9022c17688f846eb7",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 117,
+      "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 119,
+      "sha256": "4cb2aa8b02e4a6719c31351fcc61bc80bbbd5dfe35ca4c426c43c08898af3b6c",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 121,
+      "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 122,
+      "sha256": "ee0371a2f2f7f00c78888c2b68dbc565afc1c2fba56ecaf61e211e67890e66a8",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 123,
+      "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 124,
+      "sha256": "e407685ce3d08fd9e9598f46e0028304dc635b8c490c5dbd8ed1cdec717b262c",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 125,
+      "sha256": "65c884de07fc0c93f580a0d38afc41e9e817064ed1a319c7a017e9cad2922fa1",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 126,
+      "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 127,
+      "sha256": "3bbd24b6380e176a2ee29b500852092fa59c937c06b53fa5f58de48576d130fa",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 128,
+      "sha256": "ff9112f48726b8b8fb685ea36e2e7722331af34dc0a958326e0903d7e79c509a",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 129,
+      "sha256": "7736666bbab53d87705a704a2079d92f2c5dd3f084b281d4f89935e6f6d72b21",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 130,
+      "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 131,
+      "sha256": "5162a2a98d1c3cad9eddf57e4cd2e8920570c6a7ea688320d7c1f65a380bbf5f",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 132,
+      "sha256": "708dcfbbbe3ebae8fe9ec3b104c5e6271af7387698c513aed768d5c4ebf5d0c2",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 133,
+      "sha256": "65f772fa860b92dc0a7696fff7f74ec6ba7a0fae0e14500059bc8df489dd6f6f",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 134,
+      "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+      "section": "Two worked examples that recompute",
+      "bindings": []
+    },
+    {
+      "line": 136,
+      "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "section": "Ask the client first",
+      "bindings": []
+    },
+    {
+      "line": 138,
+      "sha256": "1ae3f1986cc274f7923637b6d7b6f0cd1a98b4a4486ed299474ae4ad506f29e9",
+      "section": "Ask the client first",
+      "bindings": []
+    },
+    {
+      "line": 139,
+      "sha256": "f436b4c6e8778c474d255219af2020af21a0047e3195d2a14df928e295c18194",
+      "section": "Ask the client first",
+      "bindings": []
+    },
+    {
+      "line": 140,
+      "sha256": "7420e0e40e0bf95390c51c8fe1b0b5e0c0c64b41ee5a9c0d9ef20ee324fe8348",
+      "section": "Ask the client first",
+      "bindings": []
+    },
+    {
+      "line": 141,
+      "sha256": "f21371516b33c584be92c78d04588cc01638777eccf7a8db0000766f2c1d0f45",
+      "section": "Ask the client first",
+      "bindings": []
+    },
+    {
+      "line": 142,
+      "sha256": "d65c17ec9cbbe16be4708ac64a278ddfee8c9dd34987002e2e0d21b5beb4b8c0",
+      "section": "Ask the client first",
+      "bindings": []
+    },
+    {
+      "line": 144,
+      "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "section": "Sources",
+      "bindings": []
+    },
+    {
+      "line": 146,
+      "sha256": "80a5633ad112dc618a5e0a67c61bc94dd171a849fe8bc11ef6773957104599f3",
+      "section": "Sources",
+      "bindings": []
+    },
+    {
+      "line": 147,
+      "sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+      "section": "Sources",
+      "bindings": []
+    },
+    {
+      "line": 148,
+      "sha256": "a04a7534fac2f1224eeb7f9716badef76d70ac2d5a48be2884d6b7e30213bf43",
+      "section": "Sources",
+      "bindings": []
+    },
+    {
+      "line": 149,
+      "sha256": "2515ae884c24b63cb2a550db466b6e0afd4fa4f27a1ce5c0f3a80d83c514e55c",
+      "section": "Sources",
+      "bindings": []
+    },
+    {
+      "line": 150,
+      "sha256": "348325872cc0c866e22dde8b8ea9f4c9ea5892ad0571f5481b731abdeccdcb80",
+      "section": "Sources",
+      "bindings": []
+    },
+    {
+      "line": 151,
+      "sha256": "eaf7a0308b6523a81557b6aedcd62756e3e34df35c750ace46975cfe13997402",
+      "section": "Sources",
+      "bindings": []
+    },
+    {
+      "line": 152,
+      "sha256": "56159b8b70d1c0c3e30afac002d4e74904f8f3c87099106a2acb6ad229f235a4",
+      "section": "Sources",
+      "bindings": []
+    },
+    {
+      "line": 153,
+      "sha256": "ecaf8b4f8839f8d0b17943e9e91289cfeeac3c92df97744c01940ef0398d12ff",
+      "section": "Sources",
+      "bindings": []
+    },
+    {
+      "line": 155,
+      "sha256": "4885d2acf606b06fa08a5df9a38f65ea574edbde8b88748c1d6af79e3f18533b",
+      "section": "Sources",
+      "bindings": []
+    },
+    {
+      "line": 157,
+      "sha256": "4b756275eb623939c08044c6fffea106198647d3a36b5583f56df91100e6f0a3",
+      "section": "Sources",
+      "bindings": []
+    }
+  ]
+}

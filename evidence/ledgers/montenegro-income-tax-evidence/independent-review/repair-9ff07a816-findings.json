@@ -1,0 +1,65 @@
+{
+  "commit": "9ff07a816c1adafbb944598e2f2a8edca2c2f90f",
+  "result": "NEEDS_FIXES",
+  "original_findings": [
+    {
+      "id": "ME-R01",
+      "disposition": "RESOLVED",
+      "basis": "Substantive and mapping/provenance repair checked against complete retained primary law and actual files"
+    },
+    {
+      "id": "ME-R02",
+      "disposition": "RESOLVED",
+      "basis": "Substantive and mapping/provenance repair checked against complete retained primary law and actual files"
+    },
+    {
+      "id": "ME-R03",
+      "disposition": "RESOLVED",
+      "basis": "Substantive and mapping/provenance repair checked against complete retained primary law and actual files"
+    },
+    {
+      "id": "ME-R04",
+      "disposition": "RESOLVED",
+      "basis": "Substantive and mapping/provenance repair checked against complete retained primary law and actual files"
+    },
+    {
+      "id": "ME-R05",
+      "disposition": "RESOLVED",
+      "basis": "Substantive and mapping/provenance repair checked against complete retained primary law and actual files"
+    },
+    {
+      "id": "ME-R06",
+      "disposition": "RESOLVED",
+      "basis": "Substantive and mapping/provenance repair checked against complete retained primary law and actual files"
+    },
+    {
+      "id": "ME-R07",
+      "disposition": "RESOLVED",
+      "basis": "Substantive and mapping/provenance repair checked against complete retained primary law and actual files"
+    },
+    {
+      "id": "ME-R08",
+      "disposition": "RESOLVED",
+      "basis": "Substantive and mapping/provenance repair checked against complete retained primary law and actual files"
+    }
+  ],
+  "remaining_findings": [
+    {
+      "id": "ME-R09",
+      "severity": "P2",
+      "ledger_id": "ME-PIT-107",
+      "disposition": "OPEN",
+      "claim": "Group I ceiling EUR15,000 quote is taken from Article4 first-subgroup EUR7,500, outside hashed Article5 context.",
+      "required": "Replace only quote with exact corresponding Article5 table row; preserve correct full Article5 hash."
+    },
+    {
+      "id": "ME-R10",
+      "severity": "P2",
+      "ledger_id": "ME-PIT-109",
+      "disposition": "OPEN",
+      "claim": "Group I ceiling EUR30,000 quote is taken from Article4 second-subgroup EUR15,000, outside hashed Article5 context.",
+      "required": "Replace only quote with exact corresponding Article5 table row; preserve correct full Article5 hash."
+    }
+  ],
+  "scope": "Bounded publication only; no accountant attestation or comprehensive country coverage."
+}

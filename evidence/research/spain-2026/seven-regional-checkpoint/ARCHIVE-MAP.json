@@ -1,0 +1,2856 @@
+{
+  "baseline_head": "f88ec3d9009a772711af78458dae353c7c49e89b",
+  "verified_reviews": [
+    {
+      "role": "Cantabria-signed-rent-exact",
+      "report": "spain-Cantabria-signed-rent-independent-review/report.md",
+      "report_sha256": "f1e01e29474ea3461756a5add0e1f266bd160db9f03d5ebad0024c671077e3df",
+      "manifest": "spain-Cantabria-signed-rent-independent-review/manifest.json",
+      "manifest_sha256": "0177a044c8c14fd04be8e7af689a6637d58935cde99ac2862c3836ddf805c170",
+      "members_verified": 7
+    },
+    {
+      "role": "Balearic-under-six-household-exact",
+      "report": "spain-Balearic-under-six-household-independent-review/report.md",
+      "report_sha256": "39d45776c9c258a34a95bb8ddb6c167a487a6b5b5342900771ad5c067a2e3a6f",
+      "manifest": "spain-Balearic-under-six-household-independent-review/manifest.json",
+      "manifest_sha256": "e23290b299cedccf5fcf6a2cd30f17d914fcdfa0ad99d6c96fdf1071c6950e54",
+      "members_verified": 6
+    },
+    {
+      "role": "Galicia-binding-school-exact",
+      "report": "spain-Galicia-binding-school-independent-review/report.md",
+      "report_sha256": "ffbea47ec515c63f59fc55d0f0d7078e9dbb2db04fa016106b3215686a38a42c",
+      "manifest": "spain-Galicia-binding-school-independent-review/manifest.json",
+      "manifest_sha256": "8b70b3a2adf77b83b3da2779321df7cd8bbea3e717c3718d5fa009a1d836a9f8",
+      "members_verified": 8
+    },
+    {
+      "role": "Murcia-preserved-home-exact",
+      "report": "spain-Murcia-preserved-home-independent-review/report.md",
+      "report_sha256": "8e567a602203a15fc3b89cbb7ae9dd14572d8644e5edeb065392a54517b7b0cf",
+      "manifest": "spain-Murcia-preserved-home-independent-review/artifact-manifest.json",
+      "manifest_sha256": "24ea8f79fc8afd377065a0f9b7d7165c3341a225415321a645bb49eb3a53be39",
+      "members_verified": 30
+    },
+    {
+      "role": "LaRioja-childcare-exact",
+      "report": "spain-LaRioja-childcare-independent-review/report.md",
+      "report_sha256": "455a2655f7cf53538154c7b1a36bea78f09964b436fbcbf00ea508dfb1ca36ef",
+      "manifest": "spain-LaRioja-childcare-independent-review/artifact-manifest.json",
+      "manifest_sha256": "3e4af66cdd0dcaf40e873f7046096a948e7afa8bfbbc108984d7d61c31a92cd3",
+      "members_verified": 38
+    },
+    {
+      "role": "Asturias-landlord-reference-exact",
+      "report": "spain-Asturias-landlord-reference-independent-review/report.md",
+      "report_sha256": "5fad490099ccd4f7310067cf3e6cbb403868cc8d4b2772b8d6bf1b53feedc4d8",
+      "manifest": "spain-Asturias-landlord-reference-independent-review/manifest.json",
+      "manifest_sha256": "91f18bb78c34ecfa45b8d8c57cfdf7b6fa13f2e79ab5241b0a501153869d1ed7",
+      "members_verified": 5
+    },
+    {
+      "role": "Canarias-overlapping-contributions-exact",
+      "report": "spain-Canarias-overlapping-contributions-independent-review/report.md",
+      "report_sha256": "f46b3da3ddf05edb354a360195e49cdc274ba1b83fc0dc0d04d8a2f52c08550b",
+      "manifest": "spain-Canarias-overlapping-contributions-independent-review/manifest.json",
+      "manifest_sha256": "b3acb7ed74c4ce136c177aee969c27b629cec882437e2e663b86a73ce4909733",
+      "members_verified": 5
+    },
+    {
+      "role": "mechanical-composition-exact",
+      "report": "spain-seven-regional-final-composition-independent-review/report.md",
+      "report_sha256": "34781d6d9228282d7eb59590d69be767da0a1630b9ba6aaefd674af9e8a78510",
+      "manifest": "spain-seven-regional-final-composition-independent-review/artifact-manifest.json",
+      "manifest_sha256": "77adba9de13b8d4177e00fd9d1cbde0ff42eda788266c751e7df3b09cfe9d12e",
+      "members_verified": 11
+    }
+  ],
+  "scope": "Seven independently reviewed finite regional methods; exact interpretations and unresolved questions, original findings and successors retained. Independent mechanical combined-file binding. No whole-country readiness or attestation.",
+  "files": [
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/actual-UI-observations.json",
+      "original_sha256": "531f4b10933cec7097375eb9dc4200b5c540ae9e9a284c08d604eb216e0978d8",
+      "original_bytes": 6158,
+      "stored_path": "archive/53/531f4b10933cec7097375eb9dc4200b5c540ae9e9a284c08d604eb216e0978d8.gz",
+      "stored_bytes": 2347,
+      "stored_sha256": "8e37691844de87a6edf5a68600e13acd98785cd2e374291338231c135500e909"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/baseline-README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/baseline-es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/baseline-summary-AX.txt",
+      "original_sha256": "3af4d7ea51b9e8b0c26f69563b452d1fed89ceaaf1ed21f88577e799a9fa23ba",
+      "original_bytes": 14634,
+      "stored_path": "archive/3a/3af4d7ea51b9e8b0c26f69563b452d1fed89ceaaf1ed21f88577e799a9fa23ba.gz",
+      "stored_bytes": 3808,
+      "stored_sha256": "17b00fab9059d440b46ea96b47252b945dffcd92519e209b573e912863b53b03"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/candidate-README.md",
+      "original_sha256": "ae00cc15d63f1ecdd0997459a1c11dc72a5513249578060cad4b1eae504cbd95",
+      "original_bytes": 16594,
+      "stored_path": "archive/ae/ae00cc15d63f1ecdd0997459a1c11dc72a5513249578060cad4b1eae504cbd95.gz",
+      "stored_bytes": 6406,
+      "stored_sha256": "e4d08872d9fed5b696ed93762a16c93041a964ae9d81340be72eaa9d2d4dbb96"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "f2ad930a18da4d19b51e7dce827cd60091e958a911ab7d2451a204cc6d09a962",
+      "original_bytes": 500635,
+      "stored_path": "archive/f2/f2ad930a18da4d19b51e7dce827cd60091e958a911ab7d2451a204cc6d09a962.gz",
+      "stored_bytes": 140908,
+      "stored_sha256": "ea56e21a6f0444077c99cdb098d2da35e4f2932149d612c9871692045299cb63"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/compose-and-check.py",
+      "original_sha256": "4067b956d9ab5747ae73e89449760f9fd8eada082901f306a125d9741ea4ce1e",
+      "original_bytes": 10084,
+      "stored_path": "archive/40/4067b956d9ab5747ae73e89449760f9fd8eada082901f306a125d9741ea4ce1e.gz",
+      "stored_bytes": 3948,
+      "stored_sha256": "2c70a49956431c2371fb3dd8b1fad54a11437b3c9257c47536e1d0486210329f"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/draft-options.md",
+      "original_sha256": "408a1b06b50cb3a62de9f58ffbfee5782eca26536bd4464e78c104f27fcc8614",
+      "original_bytes": 2369,
+      "stored_path": "archive/40/408a1b06b50cb3a62de9f58ffbfee5782eca26536bd4464e78c104f27fcc8614.gz",
+      "stored_bytes": 1285,
+      "stored_sha256": "729f08dd60bb136258f07e7f54e79b8733c8ccf770f328b00de2073785803412"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/exact-replacements.json",
+      "original_sha256": "b598b719c39614be3a94ae723689a67c061ba3823e3d7bc1f346005172cf565a",
+      "original_bytes": 6794,
+      "stored_path": "archive/b5/b598b719c39614be3a94ae723689a67c061ba3823e3d7bc1f346005172cf565a.gz",
+      "stored_bytes": 2418,
+      "stored_sha256": "af84e5e58a2a7e186e5aaad2d34cd0c0c1b49d0c1ed2ff8d59ebc1b9c5448842"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/exempt10000-credit-AX.txt",
+      "original_sha256": "4829cee795710bfdd8883e550a468ec324b3b691ac850b8be6f93ac45557a530",
+      "original_bytes": 39153,
+      "stored_path": "archive/48/4829cee795710bfdd8883e550a468ec324b3b691ac850b8be6f93ac45557a530.gz",
+      "stored_bytes": 7653,
+      "stored_sha256": "8083ce45e290b2ad2ddf75262f53ef15420f3a7195891b959e129c3603969f7a"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/exempt10000-input-AX.txt",
+      "original_sha256": "f38c07d463192340a4033ce3bed505b9976e7c9bfc9bc63dcfd9084581432368",
+      "original_bytes": 10466,
+      "stored_path": "archive/f3/f38c07d463192340a4033ce3bed505b9976e7c9bfc9bc63dcfd9084581432368.gz",
+      "stored_bytes": 2869,
+      "stored_sha256": "820b864b6a26661b60ce9f1ab3047724da523c30863baf1d5a732d02aea65121"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/exempt10000-loss8000-summary-AX.txt",
+      "original_sha256": "a7da65008f704dc0fbb4924df7a9c53bdb87593f954ed48114b9a7df69485e5d",
+      "original_bytes": 15341,
+      "stored_path": "archive/a7/a7da65008f704dc0fbb4924df7a9c53bdb87593f954ed48114b9a7df69485e5d.gz",
+      "stored_bytes": 4013,
+      "stored_sha256": "2a0310379b064aec4caef8902fdeb8cfd859c8b9b1f5313c394cf7d9d6192eb4"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/exempt10000-rent3500-credit-AX.txt",
+      "original_sha256": "48c9ea8204d69b523059dd42539fa522b8c381067373bee0299520748ecb91fd",
+      "original_bytes": 38828,
+      "stored_path": "archive/48/48c9ea8204d69b523059dd42539fa522b8c381067373bee0299520748ecb91fd.gz",
+      "stored_bytes": 7568,
+      "stored_sha256": "59fa3e0e1489183543aa0966bd85ff247409a73281e4bd60b2bdb488b14a46e1"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/exempt10000-rent3500-reopened-input-AX.txt",
+      "original_sha256": "86c1c76d77615260109681f5b8ec5d72939fab420caffc5de256640f4ceead9b",
+      "original_bytes": 2806,
+      "stored_path": "archive/86/86c1c76d77615260109681f5b8ec5d72939fab420caffc5de256640f4ceead9b.gz",
+      "stored_bytes": 997,
+      "stored_sha256": "ab704d9d380aa8cf539962e1cd804e579634625d4a232b75f158ce38117ca49b"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/exempt10000-rent3500p01-credit-AX.txt",
+      "original_sha256": "38f98acb10223918993f0970392057560f8ff06fdf5a906857db49ab68f7b09f",
+      "original_bytes": 38942,
+      "stored_path": "archive/38/38f98acb10223918993f0970392057560f8ff06fdf5a906857db49ab68f7b09f.gz",
+      "stored_bytes": 7606,
+      "stored_sha256": "3ef2a6b752526ea94c75e48d1b92336f3e65c0bc9834265354660e6a68784dcb"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/exempt10000-summary-AX.txt",
+      "original_sha256": "e402c350a9294ab5a6dd22d48bf61321e7e188b0baccd8465e26cd8f0f7555f3",
+      "original_bytes": 14958,
+      "stored_path": "archive/e4/e402c350a9294ab5a6dd22d48bf61321e7e188b0baccd8465e26cd8f0f7555f3.gz",
+      "stored_bytes": 3892,
+      "stored_sha256": "fabcbf926094cf4e12c2545582bccf298f97033a81b65da599fe95ed434d2512"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/final-loss8000-rent3250p01-credit-AX.txt",
+      "original_sha256": "2411f052755f939aece3e7f27ab23c232958ff3da7517967e21b459e1c7d1c4e",
+      "original_bytes": 38942,
+      "stored_path": "archive/24/2411f052755f939aece3e7f27ab23c232958ff3da7517967e21b459e1c7d1c4e.gz",
+      "stored_bytes": 7608,
+      "stored_sha256": "b44512edb88abba372596326aa9deb3841f4b7a8f9f467625082c468facf8407"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/final-loss8000-rent3250p01-credit.png",
+      "original_sha256": "3f86acad0e7912b646ce9c9f8a6a6472a2ff1885998bd72eac13cd4f354ba43d",
+      "original_bytes": 132584,
+      "stored_path": "archive/3f/3f86acad0e7912b646ce9c9f8a6a6472a2ff1885998bd72eac13cd4f354ba43d.gz",
+      "stored_bytes": 98300,
+      "stored_sha256": "0e34819cab159e7b52d7ad7e73658dfc58397990c06a35a58f44651c33c81d5d"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/loss8000-input-AX.txt",
+      "original_sha256": "19b8c529d86ae57fc4058eba35c1484bb3de2bfb957ad6e92e85f1efea2620f1",
+      "original_bytes": 4021,
+      "stored_path": "archive/19/19b8c529d86ae57fc4058eba35c1484bb3de2bfb957ad6e92e85f1efea2620f1.gz",
+      "stored_bytes": 1327,
+      "stored_sha256": "79e79e2e481433201d5348f2b1b3ea108f9eecea38f8c58bc4bf0c6e51bfdfe5"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/loss8000-rent3250-credit-AX.txt",
+      "original_sha256": "e397801c40d89c923c309aaaed399a329819123e3d1cb446e65379cb6c330f31",
+      "original_bytes": 38828,
+      "stored_path": "archive/e3/e397801c40d89c923c309aaaed399a329819123e3d1cb446e65379cb6c330f31.gz",
+      "stored_bytes": 7568,
+      "stored_sha256": "548c0df38a2ebfb91497995af05fd73d3a75ffbac8cc1fa3dc8a059ae045411e"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/loss8000-rent3250-input-AX.txt",
+      "original_sha256": "508cdddb698de181a61ad8b15e0245add683595bf2206196efcc1d5019fe8241",
+      "original_bytes": 2800,
+      "stored_path": "archive/50/508cdddb698de181a61ad8b15e0245add683595bf2206196efcc1d5019fe8241.gz",
+      "stored_bytes": 991,
+      "stored_sha256": "9259271eb1bc1eea7e2be0881e6cb0c7325c85d48f4983a1c00aee4c3a30d04e"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/loss8000-rent3250-reopened-AX.txt",
+      "original_sha256": "37f4996e97038189d68edeaa17eee75fed75ea1fa3384743be635c10b092215b",
+      "original_bytes": 2806,
+      "stored_path": "archive/37/37f4996e97038189d68edeaa17eee75fed75ea1fa3384743be635c10b092215b.gz",
+      "stored_bytes": 991,
+      "stored_sha256": "4b1a0722316f4a65e61cb229a8e2ab44d3b2cd39a66a61fc78e23686e3e3e84a"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/loss8000-rent3250p01-credit-AX.txt",
+      "original_sha256": "875576dc5d399037dbf4ff890d0dc6352378c17c6cc702ca45217c8ec70aa10a",
+      "original_bytes": 38942,
+      "stored_path": "archive/87/875576dc5d399037dbf4ff890d0dc6352378c17c6cc702ca45217c8ec70aa10a.gz",
+      "stored_bytes": 7607,
+      "stored_sha256": "01b245b10a8dc32b9c73f2d4d59e5d6c66cccc8f97b497f1322af27ed50cfdaa"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/loss8000-rent3250p01-input.png",
+      "original_sha256": "9e4a8d66d0d265f23a7c90d0895dcdc0873c20fb9480453f0900a823d74590f7",
+      "original_bytes": 117405,
+      "stored_path": "archive/9e/9e4a8d66d0d265f23a7c90d0895dcdc0873c20fb9480453f0900a823d74590f7.gz",
+      "stored_bytes": 96779,
+      "stored_sha256": "0a3a0b0460d186b07c78934bf1ae340e41d48ecb45b8951d4b186bb2eb5f4d3f"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/loss8000-rent3250p01-reopened-input-AX.txt",
+      "original_sha256": "4ff77b8771951c5bcb667d0223308bb7066cea1a63cfc1f1336b5beceeaba1d5",
+      "original_bytes": 2806,
+      "stored_path": "archive/4f/4ff77b8771951c5bcb667d0223308bb7066cea1a63cfc1f1336b5beceeaba1d5.gz",
+      "stored_bytes": 999,
+      "stored_sha256": "77ad6a458d667d844baebb8aefcdd3aedcde4f370ace19a4c1f45b6cb6872f2d"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/loss8000-shares-AX.txt",
+      "original_sha256": "e8b7d43e0661b03f3a88bb8dc7de4d5c4817f54a0f957d072bc73b288427030b",
+      "original_bytes": 16277,
+      "stored_path": "archive/e8/e8b7d43e0661b03f3a88bb8dc7de4d5c4817f54a0f957d072bc73b288427030b.gz",
+      "stored_bytes": 3925,
+      "stored_sha256": "f61d1269d50c64dec5257783fb690b6ddd08ae14b28d0ede51293443568b16f8"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/manifest.json",
+      "original_sha256": "1b47f73f892339d1c3f486fe8fa2ed0dd61a85084a070927a2df231324b725b8",
+      "original_bytes": 6352,
+      "stored_path": "archive/1b/1b47f73f892339d1c3f486fe8fa2ed0dd61a85084a070927a2df231324b725b8.gz",
+      "stored_bytes": 2242,
+      "stored_sha256": "b06163aa5057bddd375f2ca46b78c60bbb46f351300ad4be9f76289f08151b20"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/original-fictional-input.ses",
+      "original_sha256": "638ff3a7608d94d96e48df4b9003e2f6a76e6423c160e0c6070ce326e9ef0c64",
+      "original_bytes": 2184,
+      "stored_path": "archive/63/638ff3a7608d94d96e48df4b9003e2f6a76e6423c160e0c6070ce326e9ef0c64.gz",
+      "stored_bytes": 2207,
+      "stored_sha256": "6f381afed6bd3f7cb3360475456d2bc0f0531c4ef57ec9f21b811269b012ce08"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/own-controls.json",
+      "original_sha256": "618eeb545ae315cfae68e02a764189a614dcac3fbec5469b104e4d021aa3064d",
+      "original_bytes": 1915,
+      "stored_path": "archive/61/618eeb545ae315cfae68e02a764189a614dcac3fbec5469b104e4d021aa3064d.gz",
+      "stored_bytes": 369,
+      "stored_sha256": "ee0e5a6e83dc66b76ebe30a942abf91cca0f6e7856d1bee19911a80d69113c1f"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/own-examples.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/preservation-checks.json",
+      "original_sha256": "2ae340c45bb7a609667921cb126bb053489abd4158758c80afc2a941e18d9406",
+      "original_bytes": 817,
+      "stored_path": "archive/2a/2ae340c45bb7a609667921cb126bb053489abd4158758c80afc2a941e18d9406.gz",
+      "stored_bytes": 403,
+      "stored_sha256": "cf0494243e43e8dbed819652013e376bcecdcd9a8465737ac191e705440a771e"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/source-read-ledger.json",
+      "original_sha256": "1525bee85e095ea82739365cd35acd296c2715c76a3d5b891b92fca7d71eeef0",
+      "original_bytes": 4486,
+      "stored_path": "archive/15/1525bee85e095ea82739365cd35acd296c2715c76a3d5b891b92fca7d71eeef0.gz",
+      "stored_bytes": 1241,
+      "stored_sha256": "556829c1d4c86b226770c836a13ef03d3b33036f61a16a3b56afd6abde196ce9"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/sources/cantabria-law-read.txt",
+      "original_sha256": "aa5732ff6371c8f8de07578f31535f4721e7cdaf9d8e68f5fe2f1ee18bc22d7d",
+      "original_bytes": 2228,
+      "stored_path": "archive/aa/aa5732ff6371c8f8de07578f31535f4721e7cdaf9d8e68f5fe2f1ee18bc22d7d.gz",
+      "stored_bytes": 1057,
+      "stored_sha256": "7e55b77b1af5b08f7809035aebf2641ce915425dd4c1a7c7ab04599f7e9a6c3a"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/sources/cantabria-law.html",
+      "original_sha256": "8859b761098962cfadcaa0f873d604f7e88209874c071aed86de104a07619251",
+      "original_bytes": 350447,
+      "stored_path": "archive/88/8859b761098962cfadcaa0f873d604f7e88209874c071aed86de104a07619251.gz",
+      "stored_bytes": 53160,
+      "stored_sha256": "d891f3818cc4710e0e8ae78f49ebbff1aa80fd88e3d7e54ce4ec3db791571912"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/sources/cantabria-practical-read.txt",
+      "original_sha256": "f8390a5c287c003c1c10ead490cab08c15db3fc12fe572c49b1ce211f56ea67a",
+      "original_bytes": 3838,
+      "stored_path": "archive/f8/f8390a5c287c003c1c10ead490cab08c15db3fc12fe572c49b1ce211f56ea67a.gz",
+      "stored_bytes": 1715,
+      "stored_sha256": "5526d2062d20faf0a16e95598892a8ed4cc12d0417a719d2b7d2ce1749295f0a"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/sources/cantabria-practical.html",
+      "original_sha256": "185fc1ad18f48707d68b270635626d628826d4a3bafd92fd607f8deb680dfa1a",
+      "original_bytes": 13064,
+      "stored_path": "archive/18/185fc1ad18f48707d68b270635626d628826d4a3bafd92fd607f8deb680dfa1a.gz",
+      "stored_bytes": 4624,
+      "stored_sha256": "5533dfa1bd9e628b8810df152aca4d47e001dce79c7a9bffcafe60e47ce1527e"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/sources/cantabria-presentation-read.txt",
+      "original_sha256": "b3609ca0f56cfe71062805395f78e4466f4831ac6a389131b660f335f591329c",
+      "original_bytes": 2883,
+      "stored_path": "archive/b3/b3609ca0f56cfe71062805395f78e4466f4831ac6a389131b660f335f591329c.gz",
+      "stored_bytes": 1271,
+      "stored_sha256": "ebb5f8eea0ee8e95715cd7947fa7f5919082d83a21d9805f2b0647f4e780d305"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/sources/cantabria-presentation.html",
+      "original_sha256": "4d2a0dfee35c7243ef13c9cd29a06127d5c8641b614820d51ee4cfc647b45009",
+      "original_bytes": 11361,
+      "stored_path": "archive/4d/4d2a0dfee35c7243ef13c9cd29a06127d5c8641b614820d51ee4cfc647b45009.gz",
+      "stored_bytes": 3940,
+      "stored_sha256": "3e62e96015e4d56ef16e9d443d932119cc25082aaae71dc0441c4fca002d197f"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-private-method/writer-report.md",
+      "original_sha256": "38022f4253ad656535c49060590bcf36d28181d45fcd2f06ec8882ef880e5e7a",
+      "original_bytes": 4020,
+      "stored_path": "archive/38/38022f4253ad656535c49060590bcf36d28181d45fcd2f06ec8882ef880e5e7a.gz",
+      "stored_bytes": 2136,
+      "stored_sha256": "485060168954c464090150c51c3ceb7cd3dcf5595f928bde247c4cc79880275d"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-independent-review/independent-controls.json",
+      "original_sha256": "91706c33257f372923cf09b2e29faab6cef00039c9b460381945d5f75e4906b8",
+      "original_bytes": 1877,
+      "stored_path": "archive/91/91706c33257f372923cf09b2e29faab6cef00039c9b460381945d5f75e4906b8.gz",
+      "stored_bytes": 392,
+      "stored_sha256": "6dd54da941e6ef35d1520e488dfe63a302f3395d34c47389c1a57dab2aff81f0"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-independent-review/manifest.json",
+      "original_sha256": "0177a044c8c14fd04be8e7af689a6637d58935cde99ac2862c3836ddf805c170",
+      "original_bytes": 1183,
+      "stored_path": "archive/01/0177a044c8c14fd04be8e7af689a6637d58935cde99ac2862c3836ddf805c170.gz",
+      "stored_bytes": 556,
+      "stored_sha256": "a172f167c7924603b24839a0a6ef9f27cd6721dc3068bcecaa31236227193777"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-independent-review/own-UI-read-ledger.json",
+      "original_sha256": "256db06c2cd66954ff6c1b1db95ce9f9bbc3fab73d784ed7f2827de155c107d6",
+      "original_bytes": 1781,
+      "stored_path": "archive/25/256db06c2cd66954ff6c1b1db95ce9f9bbc3fab73d784ed7f2827de155c107d6.gz",
+      "stored_bytes": 667,
+      "stored_sha256": "db74ed622ca041e6a269fa429557446a2ba2def41bad3abc6aeb076aa30686e3"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-independent-review/own-examples.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-independent-review/own-source-read-ledger.json",
+      "original_sha256": "58e707469bb47e247e4ae74ebe4b3e0ed2c934893a7464c4730e9980671c62b1",
+      "original_bytes": 4982,
+      "stored_path": "archive/58/58e707469bb47e247e4ae74ebe4b3e0ed2c934893a7464c4730e9980671c62b1.gz",
+      "stored_bytes": 1256,
+      "stored_sha256": "c67ffe361ca1179fb2a0a224a0aad5911c5dc410d4805bd308b97610baa3419f"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-independent-review/preservation-checks.json",
+      "original_sha256": "f0b364d79abbdb0aa7254873d4b612e4eaac14133d99468385dc7d72f08b6ed4",
+      "original_bytes": 455,
+      "stored_path": "archive/f0/f0b364d79abbdb0aa7254873d4b612e4eaac14133d99468385dc7d72f08b6ed4.gz",
+      "stored_bytes": 260,
+      "stored_sha256": "4f2577368c2d103fcf3b3d826959dbaefbc4624ace2003f408b61a2284b94d1b"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-independent-review/report.md",
+      "original_sha256": "f1e01e29474ea3461756a5add0e1f266bd160db9f03d5ebad0024c671077e3df",
+      "original_bytes": 2510,
+      "stored_path": "archive/f1/f1e01e29474ea3461756a5add0e1f266bd160db9f03d5ebad0024c671077e3df.gz",
+      "stored_bytes": 1426,
+      "stored_sha256": "c2c28d92611de6beaec52c617111de8f00ed49ec2513f02539fc5fed2b14aafa"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-independent-review/review-binding.json",
+      "original_sha256": "061d82a757f2f9369df6219815b04516470acd923259b53686211b8fc6bbf1b7",
+      "original_bytes": 1022,
+      "stored_path": "archive/06/061d82a757f2f9369df6219815b04516470acd923259b53686211b8fc6bbf1b7.gz",
+      "stored_bytes": 550,
+      "stored_sha256": "38c4fa58501e7a107e92982de7413d1a7771f751769aba493e39820cac7e6f27"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/README.md.diff",
+      "original_sha256": "a4665f5776a1acd33e26a43bf61724f1a0b6e6a1fb0cca7a1209f88b21955858",
+      "original_bytes": 14241,
+      "stored_path": "archive/a4/a4665f5776a1acd33e26a43bf61724f1a0b6e6a1fb0cca7a1209f88b21955858.gz",
+      "stored_bytes": 3624,
+      "stored_sha256": "7529a37d531ff4eed01a9a3f097531502a4ba1565b90983a78c5a5162b69dd61"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/actual-read-excerpts.txt",
+      "original_sha256": "781512879ce1284e6b777e74d9d9556edbcbabc23fa06d49db82a659a833f3eb",
+      "original_bytes": 19119,
+      "stored_path": "archive/78/781512879ce1284e6b777e74d9d9556edbcbabc23fa06d49db82a659a833f3eb.gz",
+      "stored_bytes": 5142,
+      "stored_sha256": "fe5fcca4560e17aaf6bed0d8877992c497bd6cf6c44eb79ecec34c43cfd08438"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/artifact-manifest.json",
+      "original_sha256": "26ea9b3063b243ecedbec98831159ed7953da01e489d8c4715084d9660a7a670",
+      "original_bytes": 8395,
+      "stored_path": "archive/26/26ea9b3063b243ecedbec98831159ed7953da01e489d8c4715084d9660a7a670.gz",
+      "stored_bytes": 1793,
+      "stored_sha256": "a368513081ab31f13587c15da2c25d436988828a6d13dc0b76467cf1e79f8542"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/baseline/README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/baseline/es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/candidate-README.md",
+      "original_sha256": "0040fa1f105f72c2b14fa031db4b26635a35ada11a871102f524077cfd808e4f",
+      "original_bytes": 16774,
+      "stored_path": "archive/00/0040fa1f105f72c2b14fa031db4b26635a35ada11a871102f524077cfd808e4f.gz",
+      "stored_bytes": 6455,
+      "stored_sha256": "81793c1ebc11226075cc1840699eb76425dd3fbad5ba3a311ac4f5cf17bd1eda"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "7c6c1225c687163ec5df5edd66a3b62afafe3cc07033acde9d07fbcef58cf1be",
+      "original_bytes": 500124,
+      "stored_path": "archive/7c/7c6c1225c687163ec5df5edd66a3b62afafe3cc07033acde9d07fbcef58cf1be.gz",
+      "stored_bytes": 140633,
+      "stored_sha256": "3e909baec4860c23d6599d5473c9479506e1ea24b896ac781520554c271ba3f0"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/check.py",
+      "original_sha256": "3b82baca06b38e9a6986dd23a0dbdf44f38c97a36a55d4be6d5bff0565ed4205",
+      "original_bytes": 6567,
+      "stored_path": "archive/3b/3b82baca06b38e9a6986dd23a0dbdf44f38c97a36a55d4be6d5bff0565ed4205.gz",
+      "stored_bytes": 2708,
+      "stored_sha256": "e18bb0b82db4782779761b9c0aef6a7a94353908733b6d5e7386713258156083"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/es-irpf-deductions.md.diff",
+      "original_sha256": "7c94073cb9f6a0fc3a2cd8555b7147f27d9f81602d3eae980d668cb81f14bf97",
+      "original_bytes": 23848,
+      "stored_path": "archive/7c/7c94073cb9f6a0fc3a2cd8555b7147f27d9f81602d3eae980d668cb81f14bf97.gz",
+      "stored_bytes": 6769,
+      "stored_sha256": "0c6c13cd3e89e29f8f663ed13aa5b5ab876019037b1c7bfe3f3dcdc0adff7967"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/exact-replacements.json",
+      "original_sha256": "bdc102a342c49444e80c679f6727c0ddab40320c5cb6b0c86957bb97e128639e",
+      "original_bytes": 8410,
+      "stored_path": "archive/bd/bdc102a342c49444e80c679f6727c0ddab40320c5cb6b0c86957bb97e128639e.gz",
+      "stored_bytes": 2786,
+      "stored_sha256": "7638961ac5231b8280a2e39e8bc72c53df3b8c00353c2b535d5fb3030b0e0bd2"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/freeze.json",
+      "original_sha256": "46c122886d84c404ec8a72f02e28a4a646894fad1bd23329d487b87baf5fe2b2",
+      "original_bytes": 1484,
+      "stored_path": "archive/46/46c122886d84c404ec8a72f02e28a4a646894fad1bd23329d487b87baf5fe2b2.gz",
+      "stored_bytes": 589,
+      "stored_sha256": "8125c411118502d99d201ff4e160ee0c7160bd5020bd05854c3424204337d270"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/initial-check.actual-failure.txt",
+      "original_sha256": "8a6fa685b74ee3a9c5788d16e38adf58e159b7fa21dcf6b93e2ade27a1ee7b0d",
+      "original_bytes": 629,
+      "stored_path": "archive/8a/8a6fa685b74ee3a9c5788d16e38adf58e159b7fa21dcf6b93e2ade27a1ee7b0d.gz",
+      "stored_bytes": 415,
+      "stored_sha256": "0689e2e8fe259657669968d31cc78f3f7c6f5415899f1a0b21dada654a95cc1c"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/oa.actual-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/options-before-edit.md",
+      "original_sha256": "2b2755f877c2ef30437e5d24ac1e2e612f2999b0a83b9d25a6121a3154bdc0af",
+      "original_bytes": 1844,
+      "stored_path": "archive/2b/2b2755f877c2ef30437e5d24ac1e2e612f2999b0a83b9d25a6121a3154bdc0af.gz",
+      "stored_bytes": 978,
+      "stored_sha256": "c2cc7fbf221e3a30d878a001e20f7070ef9675ea62771861d684b49840f00876"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/prepare.py",
+      "original_sha256": "c282c91a16eb62e2519a7337135a551eea29c1bdf99e23214ee68d14213711e4",
+      "original_bytes": 7717,
+      "stored_path": "archive/c2/c282c91a16eb62e2519a7337135a551eea29c1bdf99e23214ee68d14213711e4.gz",
+      "stored_bytes": 3316,
+      "stored_sha256": "b61107412ff7d881c8a5f8d0ed1aca82d11fb86032465a4e90c36182ff4ae50c"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/preservation-proof.json",
+      "original_sha256": "6b6ca7d4819ffbf77a63c1d589b26ed760ae0b68860fb791f608152980b2796e",
+      "original_bytes": 1195,
+      "stored_path": "archive/6b/6b6ca7d4819ffbf77a63c1d589b26ed760ae0b68860fb791f608152980b2796e.gz",
+      "stored_bytes": 463,
+      "stored_sha256": "4bd855474d7f63f07852a1ade34bb552a76db6cf6741c6db885c9c20e60c5240"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/report.md",
+      "original_sha256": "c944890035b8f9cf17cf6595ff4a097cb296c87b454cbcbb30b84282ebc6dc64",
+      "original_bytes": 6487,
+      "stored_path": "archive/c9/c944890035b8f9cf17cf6595ff4a097cb296c87b454cbcbb30b84282ebc6dc64.gz",
+      "stored_bytes": 3200,
+      "stored_sha256": "dc7b3949053679768b59ff4b588743d25927e2f13de5f19eee30e173051c2043"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/runtime-selected-observations.json",
+      "original_sha256": "d43b99dc22d3c51a29d9b044b1d5e05ae50cdc908c67f6958bd8c881aaee5b36",
+      "original_bytes": 5414,
+      "stored_path": "archive/d4/d43b99dc22d3c51a29d9b044b1d5e05ae50cdc908c67f6958bd8c881aaee5b36.gz",
+      "stored_bytes": 1682,
+      "stored_sha256": "ad3909bc1bb1239f890b3e30aef6eb4c55a0357964f6837892abc5dc67d4c602"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/schema.actual-output.txt",
+      "original_sha256": "82bfe3a48ef32acd9b00b7e309de8af518423ad3154b26ff939162002be36336",
+      "original_bytes": 71,
+      "stored_path": "archive/82/82bfe3a48ef32acd9b00b7e309de8af518423ad3154b26ff939162002be36336.gz",
+      "stored_bytes": 83,
+      "stored_sha256": "c016a9e59b50782a8f68af830eecd2cf2139cf6137864ea03a467948f879e248"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "7c6c1225c687163ec5df5edd66a3b62afafe3cc07033acde9d07fbcef58cf1be",
+      "original_bytes": 500124,
+      "stored_path": "archive/7c/7c6c1225c687163ec5df5edd66a3b62afafe3cc07033acde9d07fbcef58cf1be.gz",
+      "stored_bytes": 140633,
+      "stored_sha256": "3e909baec4860c23d6599d5473c9479506e1ea24b896ac781520554c271ba3f0"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/source-read-scopes.json",
+      "original_sha256": "4c8f853a5546dae827f93f0c132fb4bad24b4928cb09500eafe659e91d0721d2",
+      "original_bytes": 3112,
+      "stored_path": "archive/4c/4c8f853a5546dae827f93f0c132fb4bad24b4928cb09500eafe659e91d0721d2.gz",
+      "stored_bytes": 1131,
+      "stored_sha256": "42c4755928ecbad0815ff82e3ab484cd91f0ef9ceccfaad7abd8c5a74085c680"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/sources/86ba076a2edbc0ee72e6.body",
+      "original_sha256": "e10ab4007d3c88cd085b177afd8231ad17e4ba115e494910ea7a6481a92b4d15",
+      "original_bytes": 14115,
+      "stored_path": "archive/e1/e10ab4007d3c88cd085b177afd8231ad17e4ba115e494910ea7a6481a92b4d15.gz",
+      "stored_bytes": 4579,
+      "stored_sha256": "d85fdba73b1009e22502a9f2e7ce7318cabd40ce707296a408c6090b5a651e2b"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/sources/86ba076a2edbc0ee72e6.reader.txt",
+      "original_sha256": "e39d6f879bd21416cfc7934629c591b02f57802b1d070cbdb38164d587535a5d",
+      "original_bytes": 6370,
+      "stored_path": "archive/e3/e39d6f879bd21416cfc7934629c591b02f57802b1d070cbdb38164d587535a5d.gz",
+      "stored_bytes": 2398,
+      "stored_sha256": "c866aa4dc269768784d366ae65d71b131afcf29e57e06790d0e06d9bd12c7f0b"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/sources/AEAT-practical-2025.html",
+      "original_sha256": "360bec41d7497bb8094018051a83d3c95519f19ff37d4db07ae32619819c8b24",
+      "original_bytes": 15884,
+      "stored_path": "archive/36/360bec41d7497bb8094018051a83d3c95519f19ff37d4db07ae32619819c8b24.gz",
+      "stored_bytes": 5044,
+      "stored_sha256": "405feafa96e949e0cbeea7f369ec94e111d1c1ae53ba3c9f8879d73ca6bf15cf"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/sources/AEAT-practical-2025.reader.txt",
+      "original_sha256": "990026a75f09ba22a0dc25d508cd9c10d0177e1b6e110f5afcc36893163f985a",
+      "original_bytes": 5929,
+      "stored_path": "archive/99/990026a75f09ba22a0dc25d508cd9c10d0177e1b6e110f5afcc36893163f985a.gz",
+      "stored_bytes": 2189,
+      "stored_sha256": "cc054f2ffd5a23d1c88a43cf9aabd4d7f892c29988c5f021df2b8034700ff2ab"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/sources/law-current.html",
+      "original_sha256": "922c1871ce9e83f67054f32cb0f87cd57528b0b32a20442345bd43e9e8911e21",
+      "original_bytes": 718564,
+      "stored_path": "archive/92/922c1871ce9e83f67054f32cb0f87cd57528b0b32a20442345bd43e9e8911e21.gz",
+      "stored_bytes": 85029,
+      "stored_sha256": "ce43acc4c0113d7f7f33bc376e2285f98848cfaa5f0b7ac5f080ec3664e9db63"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/sources/law-current.reader.txt",
+      "original_sha256": "5dc7ebe4eb631ad73816dd2cf0e1596ae37f1eeafc59ccbb20293ce0ef6c80f6",
+      "original_bytes": 303236,
+      "stored_path": "archive/5d/5dc7ebe4eb631ad73816dd2cf0e1596ae37f1eeafc59ccbb20293ce0ef6c80f6.gz",
+      "stored_bytes": 58326,
+      "stored_sha256": "7d16154eb1907c98f9be3e938d73b835394f94a786be6a405b85043ddf5ae644"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-private-method/writer-controls.json",
+      "original_sha256": "3ed24f2b735d1b7e480016a6dd71fe8e6f49eb74eb00ccc879b5327cecc1cb43",
+      "original_bytes": 3741,
+      "stored_path": "archive/3e/3ed24f2b735d1b7e480016a6dd71fe8e6f49eb74eb00ccc879b5327cecc1cb43.gz",
+      "stored_bytes": 702,
+      "stored_sha256": "84b1e1efa7e0079728ab6436de13fa93af0ed075bd7fbdd2b50c6d9987bf899e"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-independent-review/independent-controls.json",
+      "original_sha256": "41f9c0c98a280b10bffed69e1a5398e19161fbbdffb426da8675d7880f32322b",
+      "original_bytes": 2230,
+      "stored_path": "archive/41/41f9c0c98a280b10bffed69e1a5398e19161fbbdffb426da8675d7880f32322b.gz",
+      "stored_bytes": 435,
+      "stored_sha256": "86a5b825145167bdf09b6bafaeb3044621cccf1741d5e2b2462430c7330a0c91"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-independent-review/manifest.json",
+      "original_sha256": "e23290b299cedccf5fcf6a2cd30f17d914fcdfa0ad99d6c96fdf1071c6950e54",
+      "original_bytes": 1043,
+      "stored_path": "archive/e2/e23290b299cedccf5fcf6a2cd30f17d914fcdfa0ad99d6c96fdf1071c6950e54.gz",
+      "stored_bytes": 518,
+      "stored_sha256": "00e31d411e59aa56c16d7ebc6edbb2cf68a3ab8932b42c4d87cd852d52837717"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-independent-review/own-examples.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-independent-review/own-source-read-ledger.json",
+      "original_sha256": "968cce07315411191ec25586ad4ffca125b908e5acfa4ab55940b4c06cb3024d",
+      "original_bytes": 3239,
+      "stored_path": "archive/96/968cce07315411191ec25586ad4ffca125b908e5acfa4ab55940b4c06cb3024d.gz",
+      "stored_bytes": 1016,
+      "stored_sha256": "b9f34750adee989b8bac6a1ad3ddbce4244f5fc2c16b0e7f2cd1619e2c2172c1"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-independent-review/preservation-checks.json",
+      "original_sha256": "ffd2a3bf6d1db25cd280c2e6f809834899c04ea8d8833c635a77de861f29af25",
+      "original_bytes": 459,
+      "stored_path": "archive/ff/ffd2a3bf6d1db25cd280c2e6f809834899c04ea8d8833c635a77de861f29af25.gz",
+      "stored_bytes": 262,
+      "stored_sha256": "3c566491d1447161e499a73d8fd4882e9d7b4cd4e09f410568941f6d5f6cf694"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-independent-review/report.md",
+      "original_sha256": "39d45776c9c258a34a95bb8ddb6c167a487a6b5b5342900771ad5c067a2e3a6f",
+      "original_bytes": 3115,
+      "stored_path": "archive/39/39d45776c9c258a34a95bb8ddb6c167a487a6b5b5342900771ad5c067a2e3a6f.gz",
+      "stored_bytes": 1617,
+      "stored_sha256": "8399d0658b4f684d19f51ad472980fadba7ccaf6722fd7a3081e9d271ce90ede"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-household-independent-review/runtime-evidence-boundary.json",
+      "original_sha256": "0f8dd8493ed706e3a660ea19b0781969cdb8056c148a85a0fca195d72782f5dd",
+      "original_bytes": 640,
+      "stored_path": "archive/0f/0f8dd8493ed706e3a660ea19b0781969cdb8056c148a85a0fca195d72782f5dd.gz",
+      "stored_bytes": 452,
+      "stored_sha256": "304cfc57fc4eae66bff45e70b58911c66a0d7cb271307cffdd0427a840b2132e"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/acquisition.json",
+      "original_sha256": "1a3efe1718d4c6243a5b8d96cc530d93b946c58f03774a08f4b182bcd48f65ae",
+      "original_bytes": 2434,
+      "stored_path": "archive/1a/1a3efe1718d4c6243a5b8d96cc530d93b946c58f03774a08f4b182bcd48f65ae.gz",
+      "stored_bytes": 838,
+      "stored_sha256": "145beb24a3cc38580dddb7c15f81f4c1bfc4f4f9203708843bf7b6953263feff"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/baseline-README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/baseline-es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/candidate-README.md",
+      "original_sha256": "078ffd7251150f7a66bc9c015535d563dd5d9dffbdf5ce2c6f15fdbaceca7e1a",
+      "original_bytes": 16689,
+      "stored_path": "archive/07/078ffd7251150f7a66bc9c015535d563dd5d9dffbdf5ce2c6f15fdbaceca7e1a.gz",
+      "stored_bytes": 6452,
+      "stored_sha256": "cc3ecbf3e709e7467742c9378b7a8ca25ed7e3af2c487d4724bf76e8b09d3911"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "2146d428ad577861f66a562f432a661e9f710be4054210b805639eff259a53c2",
+      "original_bytes": 500064,
+      "stored_path": "archive/21/2146d428ad577861f66a562f432a661e9f710be4054210b805639eff259a53c2.gz",
+      "stored_bytes": 140866,
+      "stored_sha256": "54473f3b6b099ab944f0bd1b8b4d8c3a61a732e40245b4c072a4d17d1e9a2f3f"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/draft-options.md",
+      "original_sha256": "eb1bb04f3cecbe8cfe9b189c74391f19d99bb389d9640c241fcb35776352c710",
+      "original_bytes": 1496,
+      "stored_path": "archive/eb/eb1bb04f3cecbe8cfe9b189c74391f19d99bb389d9640c241fcb35776352c710.gz",
+      "stored_bytes": 868,
+      "stored_sha256": "92cdc1c5e852803499687309169441706824b27126c971b26d77c8f6b41c66bd"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/exact-replacements.json",
+      "original_sha256": "425b312c48bac529779aff26414021d4f6a8e362b54531f2d39b5fac3b90e6b2",
+      "original_bytes": 6292,
+      "stored_path": "archive/42/425b312c48bac529779aff26414021d4f6a8e362b54531f2d39b5fac3b90e6b2.gz",
+      "stored_bytes": 2534,
+      "stored_sha256": "36878370dd40de0bff289dba492c70cae58157bd49a65014674cbd4bae373904"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/manifest.json",
+      "original_sha256": "d35299a5c2d526a47fafa5b69be29a28d31eecc29462cba1719f19c111584f8c",
+      "original_bytes": 3147,
+      "stored_path": "archive/d3/d35299a5c2d526a47fafa5b69be29a28d31eecc29462cba1719f19c111584f8c.gz",
+      "stored_bytes": 1228,
+      "stored_sha256": "42b569d62f69a102868af564a01d82eb55d8d3d0594595cbc070ed03344d85bc"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/own-controls.json",
+      "original_sha256": "c358bdaaeb06557d23aacb68c61cdd6998c7f73dff5b60b89a634f37179809a0",
+      "original_bytes": 355,
+      "stored_path": "archive/c3/c358bdaaeb06557d23aacb68c61cdd6998c7f73dff5b60b89a634f37179809a0.gz",
+      "stored_bytes": 199,
+      "stored_sha256": "6f5637945e5574c7e0bef6db515632f790f64551d7793f955cb1e0eca826d46e"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/preservation-proof.json",
+      "original_sha256": "c5e2e889c6801e641b8cc8cfd6617a1627a3c2f61b668a9531d10352da32dcf7",
+      "original_bytes": 442,
+      "stored_path": "archive/c5/c5e2e889c6801e641b8cc8cfd6617a1627a3c2f61b668a9531d10352da32dcf7.gz",
+      "stored_bytes": 242,
+      "stored_sha256": "181491f1acd8ca53a970d78f07dc609bd8a59cc746188c571ab9908a6ee73826"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/report.md",
+      "original_sha256": "33e0c61f0451c709bfb9d652356789c8d6070a985a9110e6f75692b340f2693e",
+      "original_bytes": 1960,
+      "stored_path": "archive/33/33e0c61f0451c709bfb9d652356789c8d6070a985a9110e6f75692b340f2693e.gz",
+      "stored_bytes": 1067,
+      "stored_sha256": "31d619a1c87b770067e7a370b6dcdcb904a63f738355f0d9521cac9e15284478"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/source-read-ledger.json",
+      "original_sha256": "266a2de44236ac1492e58379fc048e5ea3e5aa31c178a933d81e3d5de04bb1f8",
+      "original_bytes": 4002,
+      "stored_path": "archive/26/266a2de44236ac1492e58379fc048e5ea3e5aa31c178a933d81e3d5de04bb1f8.gz",
+      "stored_bytes": 1193,
+      "stored_sha256": "404082d03da7d68f22ede9604fa010adb327077fbe69871cd0f379b2591c47d8"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/AEAT-school-2025.html",
+      "original_sha256": "c1606200164f92956041531bda2d7aab097832cae55747c4722de69244c43de1",
+      "original_bytes": 20411,
+      "stored_path": "archive/c1/c1606200164f92956041531bda2d7aab097832cae55747c4722de69244c43de1.gz",
+      "stored_bytes": 6366,
+      "stored_sha256": "196adbaca723ef88b8a5f8e88314c9fe47cc4b5f9f87e9f646f21a20df4cb23b"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/AEAT-school-2025.reader.txt",
+      "original_sha256": "bf3bde3cba220acaed95e4d562af7f2cbb598fc69c18db13ea0345d976fe0f65",
+      "original_bytes": 8931,
+      "stored_path": "archive/bf/bf3bde3cba220acaed95e4d562af7f2cbb598fc69c18db13ea0345d976fe0f65.gz",
+      "stored_bytes": 3435,
+      "stored_sha256": "31a0dc53c178563165d41d1aaaea0f65a5585d9df51223effa51d77615175205"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/LIRPF-current.html",
+      "original_sha256": "6f0679ef4a42a0ddf05d0d19eec752e0b680f0873118758a4dcd313a3e75319e",
+      "original_bytes": 2028806,
+      "stored_path": "archive/6f/6f0679ef4a42a0ddf05d0d19eec752e0b680f0873118758a4dcd313a3e75319e.gz",
+      "stored_bytes": 249841,
+      "stored_sha256": "a0042c866155a399d12255e2204c1139e4c762d34a07cd6179ddab6b2e4cf135"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/LIRPF-current.reader.txt",
+      "original_sha256": "f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218",
+      "original_bytes": 900281,
+      "stored_path": "archive/f8/f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218.gz",
+      "stored_bytes": 187729,
+      "stored_sha256": "6e26f985d19f0754152c2ef7659869342f728e0185fa103a955d27a1de933c0e"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/law-current.html",
+      "original_sha256": "7223e215707634a83c303890db9f108a4a7217b94f00cd01445c1592ae40fdf1",
+      "original_bytes": 675743,
+      "stored_path": "archive/72/7223e215707634a83c303890db9f108a4a7217b94f00cd01445c1592ae40fdf1.gz",
+      "stored_bytes": 86721,
+      "stored_sha256": "54fe023466fa052e7fa45f9630c98097b7776827c6f5fb866d1be6001abd1b6c"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/law-current.reader.txt",
+      "original_sha256": "045057b90b0edbdd0bcbb27ef31007ba289321f2ea26eef51c11e597f8eff633",
+      "original_bytes": 319668,
+      "stored_path": "archive/04/045057b90b0edbdd0bcbb27ef31007ba289321f2ea26eef51c11e597f8eff633.gz",
+      "stored_bytes": 60364,
+      "stored_sha256": "8bd2dc5aff127dc47187dd125d928dcfb6c3c7909c6799b69fd41d84b58c72c8"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/order-2026.html",
+      "original_sha256": "f7075a91a75e74d2d6134ba342a2a0e108c7c8075b96931079b3ad2c1b0d15e8",
+      "original_bytes": 16330,
+      "stored_path": "archive/f7/f7075a91a75e74d2d6134ba342a2a0e108c7c8075b96931079b3ad2c1b0d15e8.gz",
+      "stored_bytes": 5330,
+      "stored_sha256": "716fb9c94524ad42dd1697f06ee0614e2535bcd7a4101de23f75a9a604433862"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-private-method/sources/order-2026.reader.txt",
+      "original_sha256": "6a0ff8d5726adcce136e5853df55861840fd28013858ce8228a41cc6d1eac6c6",
+      "original_bytes": 8415,
+      "stored_path": "archive/6a/6a0ff8d5726adcce136e5853df55861840fd28013858ce8228a41cc6d1eac6c6.gz",
+      "stored_bytes": 3059,
+      "stored_sha256": "226773b406d1d9053308fa02a8f11e755dfa917cbd5e6cb95c7e09ed64074fa2"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-independent-review/AEAT-completion-acquisition.json",
+      "original_sha256": "eb99bbc22d37c5231794a38f1980fc502614928fd52835f92fe4ab0d44545d79",
+      "original_bytes": 551,
+      "stored_path": "archive/eb/eb99bbc22d37c5231794a38f1980fc502614928fd52835f92fe4ab0d44545d79.gz",
+      "stored_bytes": 384,
+      "stored_sha256": "fe73d9a19a3346cf6cf09191c58454b9c011188ebd512e7d3e2d6e0dfb30f392"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-independent-review/AEAT-completion.html",
+      "original_sha256": "fc305b7d7d21f151aa312c73217f40e9c31be2bb9a8823b6035ccbe8de4cccb9",
+      "original_bytes": 14891,
+      "stored_path": "archive/fc/fc305b7d7d21f151aa312c73217f40e9c31be2bb9a8823b6035ccbe8de4cccb9.gz",
+      "stored_bytes": 5137,
+      "stored_sha256": "08a647b78bc247397962558fac2b8d9bfba06bd7892fac7294f902acc1b68da2"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-independent-review/AEAT-completion.reader.txt",
+      "original_sha256": "1ca25321f01217c1c999c90ac6091eff0d693e918dbb6feb1ce38a8d78fb9de1",
+      "original_bytes": 6571,
+      "stored_path": "archive/1c/1ca25321f01217c1c999c90ac6091eff0d693e918dbb6feb1ce38a8d78fb9de1.gz",
+      "stored_bytes": 2635,
+      "stored_sha256": "e1b255c750154b8d7e817f52c37faec3fb009b49ecca598d3ec42bb4c8ca7231"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-independent-review/manifest.json",
+      "original_sha256": "8b70b3a2adf77b83b3da2779321df7cd8bbea3e717c3718d5fa009a1d836a9f8",
+      "original_bytes": 1330,
+      "stored_path": "archive/8b/8b70b3a2adf77b83b3da2779321df7cd8bbea3e717c3718d5fa009a1d836a9f8.gz",
+      "stored_bytes": 610,
+      "stored_sha256": "8e367c8a28e63718f9ed4739791360dfeb9df397ac6bf7332dc6d006087618a5"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-independent-review/own-controls.json",
+      "original_sha256": "aa35b4d52b8d2277ec9e1b1984ba74736e473d3e8e1c3e7c34e6cc2bc621253e",
+      "original_bytes": 2597,
+      "stored_path": "archive/aa/aa35b4d52b8d2277ec9e1b1984ba74736e473d3e8e1c3e7c34e6cc2bc621253e.gz",
+      "stored_bytes": 599,
+      "stored_sha256": "583139dc0f0fff2bcacf7f4e5ae0ac205a2aa79999c68c42447732d39f3dc52d"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-independent-review/own-examples.txt",
+      "original_sha256": "1024a55019ae3a7057c2740460713632026673e8e2091ca9502da92d961c8b25",
+      "original_bytes": 428,
+      "stored_path": "archive/10/1024a55019ae3a7057c2740460713632026673e8e2091ca9502da92d961c8b25.gz",
+      "stored_bytes": 294,
+      "stored_sha256": "681c2cdd787967588de55fc10e2cdf69a4fe8a8c503e8262f059086170ef0f6e"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-independent-review/preservation-checks.json",
+      "original_sha256": "db0b7c1e87ea93701ed445cb233743e742468fdbbfddcdf0e4c7b2e4ae9191a2",
+      "original_bytes": 1470,
+      "stored_path": "archive/db/db0b7c1e87ea93701ed445cb233743e742468fdbbfddcdf0e4c7b2e4ae9191a2.gz",
+      "stored_bytes": 573,
+      "stored_sha256": "53318b1fc2b7e33ea68ab74f58c196914c909c97c2f82a3f4c3218b88bd515e2"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-independent-review/report.md",
+      "original_sha256": "ffbea47ec515c63f59fc55d0f0d7078e9dbb2db04fa016106b3215686a38a42c",
+      "original_bytes": 4333,
+      "stored_path": "archive/ff/ffbea47ec515c63f59fc55d0f0d7078e9dbb2db04fa016106b3215686a38a42c.gz",
+      "stored_bytes": 2278,
+      "stored_sha256": "e7a530b84bffd95d010ebe1fd42d2c5f99650d3de633113d4c566deac9c26621"
+    },
+    {
+      "original_path": "spain-Galicia-binding-school-independent-review/source-read-ledger.json",
+      "original_sha256": "927e3397db92fb2e8db143313de5e2a4eca127e2c380598ab57f28a3035c2874",
+      "original_bytes": 5283,
+      "stored_path": "archive/92/927e3397db92fb2e8db143313de5e2a4eca127e2c380598ab57f28a3035c2874.gz",
+      "stored_bytes": 1564,
+      "stored_sha256": "6850e5da5bceb4a3dbc3d8ca8d9e21799ef4c3f3c9e8838a4f6c859e924eaa5b"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/access-errors.md",
+      "original_sha256": "2fa08cd14a2f0385a763b1fd1976562dcb43c8fa3198547dae6cfb9c8d382a09",
+      "original_bytes": 586,
+      "stored_path": "archive/2f/2fa08cd14a2f0385a763b1fd1976562dcb43c8fa3198547dae6cfb9c8d382a09.gz",
+      "stored_bytes": 408,
+      "stored_sha256": "b45e51ddb6f2723dae9912c8cac0ad1d1b6185de57455475f701197601ccfecb"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/acquisition-extra-success.json",
+      "original_sha256": "10780a9a270c85e7b58f334462cfa4a0f60972e91f9bb7cf1ba3a4bd1cad05f5",
+      "original_bytes": 1575,
+      "stored_path": "archive/10/10780a9a270c85e7b58f334462cfa4a0f60972e91f9bb7cf1ba3a4bd1cad05f5.gz",
+      "stored_bytes": 593,
+      "stored_sha256": "2a5e3805ed3416bae9f2e0b74584ca1e5acc87d87a2b95780206cd29df26d857"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/acquisition-partial-correction.json",
+      "original_sha256": "26d8f696102b6326c246d513a672957a9a5d10d08715febe5df1960f8dff2cd0",
+      "original_bytes": 1839,
+      "stored_path": "archive/26/26d8f696102b6326c246d513a672957a9a5d10d08715febe5df1960f8dff2cd0.gz",
+      "stored_bytes": 707,
+      "stored_sha256": "0b10fa59686bf877ae59b40653315f581183a69c606a34b9f31c213da60f976f"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/acquisition.json",
+      "original_sha256": "b4d9df7ad402cb60921b16f01796a5278854009b76ad11c9931c8b087f7d3d2a",
+      "original_bytes": 2442,
+      "stored_path": "archive/b4/b4d9df7ad402cb60921b16f01796a5278854009b76ad11c9931c8b087f7d3d2a.gz",
+      "stored_bytes": 829,
+      "stored_sha256": "c5e59b60cc8f266876b8136e577fb2c571d9d53244bf82176706174ebcc5ecaa"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/baseline-README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/baseline-es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/candidate-README.md",
+      "original_sha256": "167ad2462ef45d360319261abd14b953225e8a1867d8779f7333da4900eb73b8",
+      "original_bytes": 16673,
+      "stored_path": "archive/16/167ad2462ef45d360319261abd14b953225e8a1867d8779f7333da4900eb73b8.gz",
+      "stored_bytes": 6446,
+      "stored_sha256": "ab4adeb6cc12096aaa45f2e9217809f49477c2d0fc0b5ce6a2594fe7a1804ae0"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "84d69c804e78c39ec3ac992b07821ef2eec331429713e1588be3ccb02e731e7f",
+      "original_bytes": 500616,
+      "stored_path": "archive/84/84d69c804e78c39ec3ac992b07821ef2eec331429713e1588be3ccb02e731e7f.gz",
+      "stored_bytes": 140983,
+      "stored_sha256": "832705b41768dc96333bbd5bdae73cdadd6e76f83d2e30e987b1bad5bcea53f9"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/draft-options.md",
+      "original_sha256": "24eb77bbfc7d9058ec980738e0a0048996301cbd48c80f4338844ef722bce5b2",
+      "original_bytes": 1427,
+      "stored_path": "archive/24/24eb77bbfc7d9058ec980738e0a0048996301cbd48c80f4338844ef722bce5b2.gz",
+      "stored_bytes": 776,
+      "stored_sha256": "2ca8398f8fb679fd4bf6e224f5d0ff0d2c452cbe1c877d5ee9dbb49e5b28fea8"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/exact-replacements.json",
+      "original_sha256": "13cf015728161969f9c65b80fa318a66504585de1f8e909c369a9a3cfe6622c7",
+      "original_bytes": 5975,
+      "stored_path": "archive/13/13cf015728161969f9c65b80fa318a66504585de1f8e909c369a9a3cfe6622c7.gz",
+      "stored_bytes": 2546,
+      "stored_sha256": "daa1cf3d4de98f1b116cede97267f0487d4632eb698488aa950fc12fc42d181e"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/manifest.json",
+      "original_sha256": "90ea22104a9cd829126e2de273ecd76a6304f218dd2323b812e9e3a078748ae8",
+      "original_bytes": 5012,
+      "stored_path": "archive/90/90ea22104a9cd829126e2de273ecd76a6304f218dd2323b812e9e3a078748ae8.gz",
+      "stored_bytes": 1785,
+      "stored_sha256": "9578eef7905cc9fe8a9fd5f3c0b02930d83e37175ee0843b30a81f4f8a32182b"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/own-controls.json",
+      "original_sha256": "9aef5090cfd28ffa6dfcbf8d2918d338024472ca113e6cd7d26241386302575b",
+      "original_bytes": 414,
+      "stored_path": "archive/9a/9aef5090cfd28ffa6dfcbf8d2918d338024472ca113e6cd7d26241386302575b.gz",
+      "stored_bytes": 212,
+      "stored_sha256": "3941251b8abbfc663a3d3d4b6bd1298880e3701708d3101e2e97b4d6524e85b0"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/preservation-proof.json",
+      "original_sha256": "fc814d579bbb99779b9a9d6495cf377553bf74e3472a9256ea8b33f5b2641c7d",
+      "original_bytes": 442,
+      "stored_path": "archive/fc/fc814d579bbb99779b9a9d6495cf377553bf74e3472a9256ea8b33f5b2641c7d.gz",
+      "stored_bytes": 241,
+      "stored_sha256": "70c697ee9403245587a27a6803f578024e551b20889f22d434aa76264cacaccb"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/report.md",
+      "original_sha256": "4cc80a843e85a4ada2137b0c531df1d427d89a8c60876005f0d7fcca4b01ab0f",
+      "original_bytes": 2109,
+      "stored_path": "archive/4c/4cc80a843e85a4ada2137b0c531df1d427d89a8c60876005f0d7fcca4b01ab0f.gz",
+      "stored_bytes": 1180,
+      "stored_sha256": "1a2d8541f70d55fcaf1c424c957ff34ff8c723db14aff791c3013d6199f614a2"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/source-read-ledger.json",
+      "original_sha256": "843254515d4f3bfc85035eccd146c89fe8a025139f184fe496390b5605d69d90",
+      "original_bytes": 8546,
+      "stored_path": "archive/84/843254515d4f3bfc85035eccd146c89fe8a025139f184fe496390b5605d69d90.gz",
+      "stored_bytes": 1874,
+      "stored_sha256": "c0e55c4705852bb2c54c34ab58f9640d4a816ee87b0fc015b4e14bed08d5f2b6"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/AEAT-old-home.html",
+      "original_sha256": "67fedf8b714fd061c294751262a8c2cd823f4fb7b1c7ed152935170eadbc2c06",
+      "original_bytes": 11359,
+      "stored_path": "archive/67/67fedf8b714fd061c294751262a8c2cd823f4fb7b1c7ed152935170eadbc2c06.gz",
+      "stored_bytes": 3816,
+      "stored_sha256": "86552a68290f7bf05647c52ff57f479d479b69a3023fdb2d129433756df06593"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/AEAT-old-home.reader.txt",
+      "original_sha256": "9614d408015abd93c2ccac94a85421f0cfe67a47d602e32fb9cafb07755be41c",
+      "original_bytes": 3172,
+      "stored_path": "archive/96/9614d408015abd93c2ccac94a85421f0cfe67a47d602e32fb9cafb07755be41c.gz",
+      "stored_bytes": 1258,
+      "stored_sha256": "3fef75b1e95151e0317601f2d44f665b08240d8899a7a0233ba2357f91bf6d7b"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/LIRPF-2012.html",
+      "original_sha256": "b679efda593748ed1000de59a8afaed9b80d35f87ebeb363b45566f288d0f24b",
+      "original_bytes": 2028862,
+      "stored_path": "archive/b6/b679efda593748ed1000de59a8afaed9b80d35f87ebeb363b45566f288d0f24b.gz",
+      "stored_bytes": 249847,
+      "stored_sha256": "57268dfb8edea8060ae8a27cd297d8c801301142692af5cbff896e7f32cc8a3f"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/LIRPF-2012.reader.txt",
+      "original_sha256": "f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218",
+      "original_bytes": 900281,
+      "stored_path": "archive/f8/f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218.gz",
+      "stored_bytes": 187729,
+      "stored_sha256": "6e26f985d19f0754152c2ef7659869342f728e0185fa103a955d27a1de933c0e"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/LIRPF-current.html",
+      "original_sha256": "6f0679ef4a42a0ddf05d0d19eec752e0b680f0873118758a4dcd313a3e75319e",
+      "original_bytes": 2028806,
+      "stored_path": "archive/6f/6f0679ef4a42a0ddf05d0d19eec752e0b680f0873118758a4dcd313a3e75319e.gz",
+      "stored_bytes": 249841,
+      "stored_sha256": "a0042c866155a399d12255e2204c1139e4c762d34a07cd6179ddab6b2e4cf135"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/LIRPF-current.reader.txt",
+      "original_sha256": "f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218",
+      "original_bytes": 900281,
+      "stored_path": "archive/f8/f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218.gz",
+      "stored_bytes": 187729,
+      "stored_sha256": "6e26f985d19f0754152c2ef7659869342f728e0185fa103a955d27a1de933c0e"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/LIRPF-preserved-20121031.html",
+      "original_sha256": "7e2cb48683833bd2052115a57bc8724fd439d1766ee70da83d849c9e38261867",
+      "original_bytes": 1588227,
+      "stored_path": "archive/7e/7e2cb48683833bd2052115a57bc8724fd439d1766ee70da83d849c9e38261867.gz",
+      "stored_bytes": 182519,
+      "stored_sha256": "3ecc573fffe406f4f05e35d18b40c0f40a0e73ae7bdd06bf5198d3bcb9d89746"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/LIRPF-preserved-20121031.reader.txt",
+      "original_sha256": "f961b27b23e61fa1c4491a15487b58903e735309bd3710bd2d4bf945e0288ad3",
+      "original_bytes": 617706,
+      "stored_path": "archive/f9/f961b27b23e61fa1c4491a15487b58903e735309bd3710bd2d4bf945e0288ad3.gz",
+      "stored_bytes": 131655,
+      "stored_sha256": "4d7219d0a5e56542c7f4d13dff3d00f4cf772aca413f965202f30344975f8a4f"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/euro-conversion-reg.html",
+      "original_sha256": "95d6b1a240e4846f107433157382d6e2b093dbc2b817bb188b298f2e4294f6e0",
+      "original_bytes": 24531,
+      "stored_path": "archive/95/95d6b1a240e4846f107433157382d6e2b093dbc2b817bb188b298f2e4294f6e0.gz",
+      "stored_bytes": 5794,
+      "stored_sha256": "04583c8abca91cc24eb76defe6aa999875d12ffe773d9f6d6f17de45eeb26880"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/euro-conversion-reg.reader.txt",
+      "original_sha256": "fc4154aa19fe87be40252b84a7a171934887f8a83a750cf8f196e19b205623f3",
+      "original_bytes": 7793,
+      "stored_path": "archive/fc/fc4154aa19fe87be40252b84a7a171934887f8a83a750cf8f196e19b205623f3.gz",
+      "stored_bytes": 2713,
+      "stored_sha256": "b596f169239ef372d865ae76910b8ae2bcfc82430034166461ceffa26d848e4b"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/euro-law-current.html",
+      "original_sha256": "dec6a904631f8163353c7a2b01a59cc3941651a848685bcc49ec839d64fba2e3",
+      "original_bytes": 180665,
+      "stored_path": "archive/de/dec6a904631f8163353c7a2b01a59cc3941651a848685bcc49ec839d64fba2e3.gz",
+      "stored_bytes": 31708,
+      "stored_sha256": "89c8fe43a1befcc9e6216400284b8106d627c7fb265f8f0abbe9613ba0ca114e"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/euro-law-current.reader.txt",
+      "original_sha256": "a937a3ad510540ddac0cbd692574f219e9511137c28d41607dedd29a5e788a70",
+      "original_bytes": 85138,
+      "stored_path": "archive/a9/a937a3ad510540ddac0cbd692574f219e9511137c28d41607dedd29a5e788a70.gz",
+      "stored_bytes": 22862,
+      "stored_sha256": "c486cd0b7caf29828da035ec326bf8d1ef666d8f42431dd35286a87fb883dd90"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/law-9-1999-original.html",
+      "original_sha256": "2f693a27f38740811bbefd8c7bf99f042dc1ec87f5c60f5805df12f6e1b81684",
+      "original_bytes": 149586,
+      "stored_path": "archive/2f/2f693a27f38740811bbefd8c7bf99f042dc1ec87f5c60f5805df12f6e1b81684.gz",
+      "stored_bytes": 31618,
+      "stored_sha256": "c8e6b1ba572901554453c444a3f1836ec7f966ee26edfe166a80b0752bf61a9a"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/law-9-1999-original.reader.txt",
+      "original_sha256": "dcab98ba298157f3f85b2f505667fb4059898d528c115f4f57b95ee94841bad2",
+      "original_bytes": 102235,
+      "stored_path": "archive/dc/dcab98ba298157f3f85b2f505667fb4059898d528c115f4f57b95ee94841bad2.gz",
+      "stored_bytes": 26323,
+      "stored_sha256": "45566211b3698dfaab702020046e8530b39de6b601801fa640b3c714506d1b95"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/law-current.html",
+      "original_sha256": "10cb8af1ef1238ee3a6142c9ca27f0b64b722d71a73c3684b48c02ed2337046c",
+      "original_bytes": 533084,
+      "stored_path": "archive/10/10cb8af1ef1238ee3a6142c9ca27f0b64b722d71a73c3684b48c02ed2337046c.gz",
+      "stored_bytes": 63839,
+      "stored_sha256": "519caf2e773d355c1e7e64fe8349892e37f48684731d92b7d9d3378a1b92593d"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-private-method/sources/law-current.reader.txt",
+      "original_sha256": "ab21958ce0447cf631dd479644397cf057fcdfa6edc7995bb1e6708e1574a343",
+      "original_bytes": 215916,
+      "stored_path": "archive/ab/ab21958ce0447cf631dd479644397cf057fcdfa6edc7995bb1e6708e1574a343.gz",
+      "stored_bytes": 45159,
+      "stored_sha256": "6492dc788883beec93e066372023c165b009627fbba5d1c72dd045f36bf6ebad"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/README.md.diff",
+      "original_sha256": "6026d22211263f5e7b2f6bb04a22375cf74981549f460c45e6d41da45bcef9e5",
+      "original_bytes": 14140,
+      "stored_path": "archive/60/6026d22211263f5e7b2f6bb04a22375cf74981549f460c45e6d41da45bcef9e5.gz",
+      "stored_bytes": 3616,
+      "stored_sha256": "126ae6a3cc70a51d62a0f5d82fede1a2016d965ab15cf3b39c90f47654d324cc"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/actual-read-excerpts.txt",
+      "original_sha256": "f5b4a5b94662ec59707d42238767af18436500313ea18dab0926a11550daec63",
+      "original_bytes": 35616,
+      "stored_path": "archive/f5/f5b4a5b94662ec59707d42238767af18436500313ea18dab0926a11550daec63.gz",
+      "stored_bytes": 10753,
+      "stored_sha256": "80ef1f1ec720edb44876bf2c7fdba324bca1c63fd3de8d9fe955f5ad26529656"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/actual-read-scopes.json",
+      "original_sha256": "7fb8166503b82985da484b2fadeabfdbf2fe66a62c4c2cd0fb07f2e55304bbb2",
+      "original_bytes": 2790,
+      "stored_path": "archive/7f/7fb8166503b82985da484b2fadeabfdbf2fe66a62c4c2cd0fb07f2e55304bbb2.gz",
+      "stored_bytes": 708,
+      "stored_sha256": "6fc68f9c64e99526032cb9e4091bb5e60207fdfce05a109fd10ae25c1a6a9387"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/artifact-manifest.json",
+      "original_sha256": "24ea8f79fc8afd377065a0f9b7d7165c3341a225415321a645bb49eb3a53be39",
+      "original_bytes": 9701,
+      "stored_path": "archive/24/24ea8f79fc8afd377065a0f9b7d7165c3341a225415321a645bb49eb3a53be39.gz",
+      "stored_bytes": 2019,
+      "stored_sha256": "6902fe257c8a42b5c8dd837995b69089828db7b7dbc33a58d265039923585bd5"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/baselines/README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/baselines/es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/check.py",
+      "original_sha256": "c52a1e945aab439e59bcedaa93550a96d00240cd32197c7278f2e37ad4737d3a",
+      "original_bytes": 6378,
+      "stored_path": "archive/c5/c52a1e945aab439e59bcedaa93550a96d00240cd32197c7278f2e37ad4737d3a.gz",
+      "stored_bytes": 2884,
+      "stored_sha256": "55d11dc081dbade9a154fa0f739fb4c960ee0540ea58492fce90b3394b633a7c"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/es-irpf-deductions.md.diff",
+      "original_sha256": "ced30010e6112f5ff09a084e69159f71e65642b37d26215ec506f50bfd3ce1ee",
+      "original_bytes": 20027,
+      "stored_path": "archive/ce/ced30010e6112f5ff09a084e69159f71e65642b37d26215ec506f50bfd3ce1ee.gz",
+      "stored_bytes": 5630,
+      "stored_sha256": "d9ecaa26f7bcc31da8b3e2d5333ca00d303ad2c3aed9e3f20b0eb66321c4ecb4"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/freeze.json",
+      "original_sha256": "b67277bb8a5fa4cc319f5371915cd009e2ac3fb80ed40e98f5311b56c2050b4c",
+      "original_bytes": 472,
+      "stored_path": "archive/b6/b67277bb8a5fa4cc319f5371915cd009e2ac3fb80ed40e98f5311b56c2050b4c.gz",
+      "stored_bytes": 337,
+      "stored_sha256": "f3105bcdde3eceaddbf73668322966bb5e5ea50e94409e7f983924e8706531a5"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/independent-controls.json",
+      "original_sha256": "b5e6ea134b7f2edb2594975b28cc44aee0478d1b54a6ec14d8d6c697dd61ba00",
+      "original_bytes": 3182,
+      "stored_path": "archive/b5/b5e6ea134b7f2edb2594975b28cc44aee0478d1b54a6ec14d8d6c697dd61ba00.gz",
+      "stored_bytes": 576,
+      "stored_sha256": "f91ca3e22a5dd532f30304fc192f83b34541adfcad95f858e7a25bd52f846a8e"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/own-source-map.json",
+      "original_sha256": "c9bbfa49231b5fcd5b7faf5fd2ee45e204b00afaa1d2a80d724931ea461693e4",
+      "original_bytes": 4170,
+      "stored_path": "archive/c9/c9bbfa49231b5fcd5b7faf5fd2ee45e204b00afaa1d2a80d724931ea461693e4.gz",
+      "stored_bytes": 1267,
+      "stored_sha256": "8448e166c39a419fdb8fc412c40b834ec8e0ecf45ee2026b51cc928b90febefd"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/preservation-and-validation.json",
+      "original_sha256": "610379a11b1f939f51564ef8beb8ee71fa5cb18b5f007f7547583ba4e9e7457b",
+      "original_bytes": 8593,
+      "stored_path": "archive/61/610379a11b1f939f51564ef8beb8ee71fa5cb18b5f007f7547583ba4e9e7457b.gz",
+      "stored_bytes": 2108,
+      "stored_sha256": "1c87327bfcc87c89eb8896b61e938f5cacff4b75e6c3992e1548000297db1321"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/read.py",
+      "original_sha256": "ad399867bd344e1fdefe8e93a593883acef81d1d76dc1917af5fd867241b4db2",
+      "original_bytes": 684,
+      "stored_path": "archive/ad/ad399867bd344e1fdefe8e93a593883acef81d1d76dc1917af5fd867241b4db2.gz",
+      "stored_bytes": 443,
+      "stored_sha256": "72cbd463a6fb43c817cc1126efdf0e734bd275f861e7633f6fa27ccd48a886b2"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/report.md",
+      "original_sha256": "8e567a602203a15fc3b89cbb7ae9dd14572d8644e5edeb065392a54517b7b0cf",
+      "original_bytes": 3816,
+      "stored_path": "archive/8e/8e567a602203a15fc3b89cbb7ae9dd14572d8644e5edeb065392a54517b7b0cf.gz",
+      "stored_bytes": 2011,
+      "stored_sha256": "b93619f97c90e774f1192ad30e86a825a11d7d5f1c38654a359b260d599a67ee"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/AEAT-old-home.html",
+      "original_sha256": "67fedf8b714fd061c294751262a8c2cd823f4fb7b1c7ed152935170eadbc2c06",
+      "original_bytes": 11359,
+      "stored_path": "archive/67/67fedf8b714fd061c294751262a8c2cd823f4fb7b1c7ed152935170eadbc2c06.gz",
+      "stored_bytes": 3816,
+      "stored_sha256": "86552a68290f7bf05647c52ff57f479d479b69a3023fdb2d129433756df06593"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/AEAT-old-home.reader.txt",
+      "original_sha256": "9614d408015abd93c2ccac94a85421f0cfe67a47d602e32fb9cafb07755be41c",
+      "original_bytes": 3172,
+      "stored_path": "archive/96/9614d408015abd93c2ccac94a85421f0cfe67a47d602e32fb9cafb07755be41c.gz",
+      "stored_bytes": 1258,
+      "stored_sha256": "3fef75b1e95151e0317601f2d44f665b08240d8899a7a0233ba2357f91bf6d7b"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/LIRPF-current.html",
+      "original_sha256": "6f0679ef4a42a0ddf05d0d19eec752e0b680f0873118758a4dcd313a3e75319e",
+      "original_bytes": 2028806,
+      "stored_path": "archive/6f/6f0679ef4a42a0ddf05d0d19eec752e0b680f0873118758a4dcd313a3e75319e.gz",
+      "stored_bytes": 249841,
+      "stored_sha256": "a0042c866155a399d12255e2204c1139e4c762d34a07cd6179ddab6b2e4cf135"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/LIRPF-current.reader.txt",
+      "original_sha256": "f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218",
+      "original_bytes": 900281,
+      "stored_path": "archive/f8/f85c6c46bd1617de8168fc4a448966d1df751aac50800f0a80ff61c7302ff218.gz",
+      "stored_bytes": 187729,
+      "stored_sha256": "6e26f985d19f0754152c2ef7659869342f728e0185fa103a955d27a1de933c0e"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/LIRPF-preserved-20121031.html",
+      "original_sha256": "7e2cb48683833bd2052115a57bc8724fd439d1766ee70da83d849c9e38261867",
+      "original_bytes": 1588227,
+      "stored_path": "archive/7e/7e2cb48683833bd2052115a57bc8724fd439d1766ee70da83d849c9e38261867.gz",
+      "stored_bytes": 182519,
+      "stored_sha256": "3ecc573fffe406f4f05e35d18b40c0f40a0e73ae7bdd06bf5198d3bcb9d89746"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/LIRPF-preserved-20121031.reader.txt",
+      "original_sha256": "f961b27b23e61fa1c4491a15487b58903e735309bd3710bd2d4bf945e0288ad3",
+      "original_bytes": 617706,
+      "stored_path": "archive/f9/f961b27b23e61fa1c4491a15487b58903e735309bd3710bd2d4bf945e0288ad3.gz",
+      "stored_bytes": 131655,
+      "stored_sha256": "4d7219d0a5e56542c7f4d13dff3d00f4cf772aca413f965202f30344975f8a4f"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/euro-conversion-reg.html",
+      "original_sha256": "95d6b1a240e4846f107433157382d6e2b093dbc2b817bb188b298f2e4294f6e0",
+      "original_bytes": 24531,
+      "stored_path": "archive/95/95d6b1a240e4846f107433157382d6e2b093dbc2b817bb188b298f2e4294f6e0.gz",
+      "stored_bytes": 5794,
+      "stored_sha256": "04583c8abca91cc24eb76defe6aa999875d12ffe773d9f6d6f17de45eeb26880"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/euro-conversion-reg.reader.txt",
+      "original_sha256": "fc4154aa19fe87be40252b84a7a171934887f8a83a750cf8f196e19b205623f3",
+      "original_bytes": 7793,
+      "stored_path": "archive/fc/fc4154aa19fe87be40252b84a7a171934887f8a83a750cf8f196e19b205623f3.gz",
+      "stored_bytes": 2713,
+      "stored_sha256": "b596f169239ef372d865ae76910b8ae2bcfc82430034166461ceffa26d848e4b"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/euro-law-current.html",
+      "original_sha256": "dec6a904631f8163353c7a2b01a59cc3941651a848685bcc49ec839d64fba2e3",
+      "original_bytes": 180665,
+      "stored_path": "archive/de/dec6a904631f8163353c7a2b01a59cc3941651a848685bcc49ec839d64fba2e3.gz",
+      "stored_bytes": 31708,
+      "stored_sha256": "89c8fe43a1befcc9e6216400284b8106d627c7fb265f8f0abbe9613ba0ca114e"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/euro-law-current.reader.txt",
+      "original_sha256": "a937a3ad510540ddac0cbd692574f219e9511137c28d41607dedd29a5e788a70",
+      "original_bytes": 85138,
+      "stored_path": "archive/a9/a937a3ad510540ddac0cbd692574f219e9511137c28d41607dedd29a5e788a70.gz",
+      "stored_bytes": 22862,
+      "stored_sha256": "c486cd0b7caf29828da035ec326bf8d1ef666d8f42431dd35286a87fb883dd90"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/law-9-1999-original.html",
+      "original_sha256": "2f693a27f38740811bbefd8c7bf99f042dc1ec87f5c60f5805df12f6e1b81684",
+      "original_bytes": 149586,
+      "stored_path": "archive/2f/2f693a27f38740811bbefd8c7bf99f042dc1ec87f5c60f5805df12f6e1b81684.gz",
+      "stored_bytes": 31618,
+      "stored_sha256": "c8e6b1ba572901554453c444a3f1836ec7f966ee26edfe166a80b0752bf61a9a"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/law-9-1999-original.reader.txt",
+      "original_sha256": "dcab98ba298157f3f85b2f505667fb4059898d528c115f4f57b95ee94841bad2",
+      "original_bytes": 102235,
+      "stored_path": "archive/dc/dcab98ba298157f3f85b2f505667fb4059898d528c115f4f57b95ee94841bad2.gz",
+      "stored_bytes": 26323,
+      "stored_sha256": "45566211b3698dfaab702020046e8530b39de6b601801fa640b3c714506d1b95"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/law-current.html",
+      "original_sha256": "10cb8af1ef1238ee3a6142c9ca27f0b64b722d71a73c3684b48c02ed2337046c",
+      "original_bytes": 533084,
+      "stored_path": "archive/10/10cb8af1ef1238ee3a6142c9ca27f0b64b722d71a73c3684b48c02ed2337046c.gz",
+      "stored_bytes": 63839,
+      "stored_sha256": "519caf2e773d355c1e7e64fe8349892e37f48684731d92b7d9d3378a1b92593d"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/sources/law-current.reader.txt",
+      "original_sha256": "ab21958ce0447cf631dd479644397cf057fcdfa6edc7995bb1e6708e1574a343",
+      "original_bytes": 215916,
+      "stored_path": "archive/ab/ab21958ce0447cf631dd479644397cf057fcdfa6edc7995bb1e6708e1574a343.gz",
+      "stored_bytes": 45159,
+      "stored_sha256": "6492dc788883beec93e066372023c165b009627fbba5d1c72dd045f36bf6ebad"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/target-read-scope.json",
+      "original_sha256": "8138d91b7b65a180e2b636b85dacdc7e15bf4ade2d8888481cee714dccb1bc3f",
+      "original_bytes": 6862,
+      "stored_path": "archive/81/8138d91b7b65a180e2b636b85dacdc7e15bf4ade2d8888481cee714dccb1bc3f.gz",
+      "stored_bytes": 2846,
+      "stored_sha256": "a9cbe5b569520269c0113d99bdc27a735b3362e4d0a48eaa4da7a53e20c5795d"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/targets/candidate-README.md",
+      "original_sha256": "167ad2462ef45d360319261abd14b953225e8a1867d8779f7333da4900eb73b8",
+      "original_bytes": 16673,
+      "stored_path": "archive/16/167ad2462ef45d360319261abd14b953225e8a1867d8779f7333da4900eb73b8.gz",
+      "stored_bytes": 6446,
+      "stored_sha256": "ab4adeb6cc12096aaa45f2e9217809f49477c2d0fc0b5ce6a2594fe7a1804ae0"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/targets/candidate-es-irpf-deductions.md",
+      "original_sha256": "84d69c804e78c39ec3ac992b07821ef2eec331429713e1588be3ccb02e731e7f",
+      "original_bytes": 500616,
+      "stored_path": "archive/84/84d69c804e78c39ec3ac992b07821ef2eec331429713e1588be3ccb02e731e7f.gz",
+      "stored_bytes": 140983,
+      "stored_sha256": "832705b41768dc96333bbd5bdae73cdadd6e76f83d2e30e987b1bad5bcea53f9"
+    },
+    {
+      "original_path": "spain-Murcia-preserved-home-independent-review/web-check-scope.json",
+      "original_sha256": "9f05d102c6e8dd3728659524782391a407c7f297d5a39a1d04fed6f39ad16652",
+      "original_bytes": 752,
+      "stored_path": "archive/9f/9f05d102c6e8dd3728659524782391a407c7f297d5a39a1d04fed6f39ad16652.gz",
+      "stored_bytes": 484,
+      "stored_sha256": "d04dd95ccbfdc633902127c07b7503747baefa66be643526c734f6a984e1d4d0"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/README.diff",
+      "original_sha256": "e36d9a96de74e4d4d795095f3b1da985cfba83f8ae8a64b4b46fa474f52f20e6",
+      "original_bytes": 14203,
+      "stored_path": "archive/e3/e36d9a96de74e4d4d795095f3b1da985cfba83f8ae8a64b4b46fa474f52f20e6.gz",
+      "stored_bytes": 3662,
+      "stored_sha256": "1f6b5711a707fb681b3cf67e110739f42d3deba10f101b301a46dc570e065764"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/actual-read-excerpts.txt",
+      "original_sha256": "5d2bdb4a2aaca1b019a3be3f5b540f25f9c8fa0606f39cf776fb3d2b72a6c298",
+      "original_bytes": 92001,
+      "stored_path": "archive/5d/5d2bdb4a2aaca1b019a3be3f5b540f25f9c8fa0606f39cf776fb3d2b72a6c298.gz",
+      "stored_bytes": 22273,
+      "stored_sha256": "d8df56a26d099007a28a2e442e9373e7f075d38425290ac1ab52d1e1556410c9"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/actual-read-scopes.json",
+      "original_sha256": "e1e8d0539d7b7b042bb75109c5ab4fb1973114dc3dabd2f256d4dff4565f702d",
+      "original_bytes": 3815,
+      "stored_path": "archive/e1/e1e8d0539d7b7b042bb75109c5ab4fb1973114dc3dabd2f256d4dff4565f702d.gz",
+      "stored_bytes": 701,
+      "stored_sha256": "c142947bdd18211ef248acea1ec52bf99fe996edd3359198d738a996774bb1cc"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/artifact-manifest.json",
+      "original_sha256": "43dc5a2e4bb152ff9f19fba8abeb938712229c868cfbbcb62d8a4aa579d97eb3",
+      "original_bytes": 13525,
+      "stored_path": "archive/43/43dc5a2e4bb152ff9f19fba8abeb938712229c868cfbbcb62d8a4aa579d97eb3.gz",
+      "stored_bytes": 2766,
+      "stored_sha256": "d2c82237a2d0d8c0d1aa98923ac4debcaa2398b8b0d23b23f9b16e62b2556298"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/author-controls.json",
+      "original_sha256": "a14dd0a2d94ea63a436135f7f22eb5a08aebe643144ab2b290d0d9ee01a8a6b7",
+      "original_bytes": 5639,
+      "stored_path": "archive/a1/a14dd0a2d94ea63a436135f7f22eb5a08aebe643144ab2b290d0d9ee01a8a6b7.gz",
+      "stored_bytes": 644,
+      "stored_sha256": "6f3109ce15591548278b11a8641a77e09b5a510f81f2a76b0e88df661d1fd59e"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/baselines/README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/baselines/es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/candidate-README.md",
+      "original_sha256": "7914d83cad7eb1165d90513338dc057991929841be6dcf892a1c8cacb2f360c2",
+      "original_bytes": 16736,
+      "stored_path": "archive/79/7914d83cad7eb1165d90513338dc057991929841be6dcf892a1c8cacb2f360c2.gz",
+      "stored_bytes": 6458,
+      "stored_sha256": "e69b96cbafd3d4df6ae7a18aad3882c7589b112b81b589c4b03a0557630468ae"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "22a2397efb95dc544054f43abb4e2105d7a249253b7bcd660bb68f3e5977bf6c",
+      "original_bytes": 499260,
+      "stored_path": "archive/22/22a2397efb95dc544054f43abb4e2105d7a249253b7bcd660bb68f3e5977bf6c.gz",
+      "stored_bytes": 140449,
+      "stored_sha256": "8f808779629cbdf446595ab2df6aa9341e103b32afe0bd8a66d96ae8f0b60b98"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/check.py",
+      "original_sha256": "bc0145f4daea7eebd78a910e3939e5e9b78028a32ae38ea50513891184b3ca03",
+      "original_bytes": 5223,
+      "stored_path": "archive/bc/bc0145f4daea7eebd78a910e3939e5e9b78028a32ae38ea50513891184b3ca03.gz",
+      "stored_bytes": 2358,
+      "stored_sha256": "b009417168b7667b35cb041fbd81a8ced8e861a7204b88bf4e01cd01aec50a60"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/compose.py",
+      "original_sha256": "3fd21ed98e4aea101e39cfb41c762c516fe2acae0851e57446d080be031c8303",
+      "original_bytes": 7216,
+      "stored_path": "archive/3f/3fd21ed98e4aea101e39cfb41c762c516fe2acae0851e57446d080be031c8303.gz",
+      "stored_bytes": 2979,
+      "stored_sha256": "e6b1b9230920eefa08a67a5104a8340c16844bde29e36bf0adf6784ea02d5111"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/deductions.diff",
+      "original_sha256": "ea70d4b426b39ccc5a96cb958ec5bcd119ba213a435ee8c0085c6fe5c6c7e7dc",
+      "original_bytes": 26629,
+      "stored_path": "archive/ea/ea70d4b426b39ccc5a96cb958ec5bcd119ba213a435ee8c0085c6fe5c6c7e7dc.gz",
+      "stored_bytes": 7115,
+      "stored_sha256": "daf425482ca5fb967fc94124ff96313581666ff82842936e3f14a9fba78927d5"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/freeze.json",
+      "original_sha256": "051b817e6333df5f5ec0c810733c10abe2273d3b226ebc499298be6ffa3d7df8",
+      "original_bytes": 479,
+      "stored_path": "archive/05/051b817e6333df5f5ec0c810733c10abe2273d3b226ebc499298be6ffa3d7df8.gz",
+      "stored_bytes": 340,
+      "stored_sha256": "6915fe06b9525a024a20026b4aa9d4fd07f30f3e4d08d65d7242ed37f725c3c1"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/options.md",
+      "original_sha256": "9b428416467d9262871bdd433caaf54509ff2f9a6ad1291d819c6f39c1c5375f",
+      "original_bytes": 2499,
+      "stored_path": "archive/9b/9b428416467d9262871bdd433caaf54509ff2f9a6ad1291d819c6f39c1c5375f.gz",
+      "stored_bytes": 1269,
+      "stored_sha256": "7aaccd366b474d825ad1f65cd55bff7c63d901b06c38f0cc80b86c53eb77a489"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/prepare-sources.py",
+      "original_sha256": "e07038059cad1cb80395ac76f0c3566ae2f9b44263319d079f456475991a4797",
+      "original_bytes": 2073,
+      "stored_path": "archive/e0/e07038059cad1cb80395ac76f0c3566ae2f9b44263319d079f456475991a4797.gz",
+      "stored_bytes": 1042,
+      "stored_sha256": "f210953ad70fe03d918b0cbccdf15515e3625f7678fea76fa3c34f4a33c7d8eb"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/preservation-and-validation.json",
+      "original_sha256": "33c052beed359b4d0095c77e6bb0974f9675dfd5682b0d0325919b867c20bcea",
+      "original_bytes": 3304,
+      "stored_path": "archive/33/33c052beed359b4d0095c77e6bb0974f9675dfd5682b0d0325919b867c20bcea.gz",
+      "stored_bytes": 1204,
+      "stored_sha256": "b0c45d2a112d555e57a04a3543cb49e6f6e39c0eb2d097767da894f5249a5dad"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/read.py",
+      "original_sha256": "ad399867bd344e1fdefe8e93a593883acef81d1d76dc1917af5fd867241b4db2",
+      "original_bytes": 684,
+      "stored_path": "archive/ad/ad399867bd344e1fdefe8e93a593883acef81d1d76dc1917af5fd867241b4db2.gz",
+      "stored_bytes": 443,
+      "stored_sha256": "72cbd463a6fb43c817cc1126efdf0e734bd275f861e7633f6fa27ccd48a886b2"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/replacement-ledger.json",
+      "original_sha256": "e80b7516bd8e24ef3ff9cb475ceea92f86893dbe0d5b1161d0c0f667b62ccd07",
+      "original_bytes": 7870,
+      "stored_path": "archive/e8/e80b7516bd8e24ef3ff9cb475ceea92f86893dbe0d5b1161d0c0f667b62ccd07.gz",
+      "stored_bytes": 2720,
+      "stored_sha256": "bca6352463c690709ef9e884a244ecdf17d25a7f41393c48765661e3d6cddf6e"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/report.md",
+      "original_sha256": "683e2cc1126be8ec5d6dfbc00343908834da54be3d6bc5e8397be9e54165c168",
+      "original_bytes": 3975,
+      "stored_path": "archive/68/683e2cc1126be8ec5d6dfbc00343908834da54be3d6bc5e8397be9e54165c168.gz",
+      "stored_bytes": 2177,
+      "stored_sha256": "bdf8957689a795b97fd98a188ef3d3a56f884c7430522ed3182b547922fb5866"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/monthly-five-months-500-AX.txt",
+      "original_sha256": "c67912d954852a89dd23ecad3167f4103e6210139ed3e80e08fedd7b06b596b1",
+      "original_bytes": 33573,
+      "stored_path": "archive/c6/c67912d954852a89dd23ecad3167f4103e6210139ed3e80e08fedd7b06b596b1.gz",
+      "stored_bytes": 7177,
+      "stored_sha256": "2db0bad48a2850d333e6327ff3ca2d584c1d33254b2407cbdf086af5427629f6"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/monthly-five-months-500.png",
+      "original_sha256": "046c235cf80b0493189e7610592e46691c1e996b656adcff9d6921084c8b1907",
+      "original_bytes": 142244,
+      "stored_path": "archive/04/046c235cf80b0493189e7610592e46691c1e996b656adcff9d6921084c8b1907.gz",
+      "stored_bytes": 122125,
+      "stored_sha256": "8d1da49a654b19dfa99e1db53907ee650dbae83ab424df7ba407416df5ebc4f0"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/monthly-footnote-AX.txt",
+      "original_sha256": "067f2380e23101cc747336c7a5c1e415992c1c54e92881161341c1f8e4f12db0",
+      "original_bytes": 37142,
+      "stored_path": "archive/06/067f2380e23101cc747336c7a5c1e415992c1c54e92881161341c1f8e4f12db0.gz",
+      "stored_bytes": 7849,
+      "stored_sha256": "85edbeed17d8133cc30452f51a30b1f7d3c16b2a7280db5d3320913429c6f0d1"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/monthly-footnote.png",
+      "original_sha256": "26642d30fa11b4cd39ed70e3f7002f014fd8325302aa9ddb88cd5db4731204e0",
+      "original_bytes": 84226,
+      "stored_path": "archive/26/26642d30fa11b4cd39ed70e3f7002f014fd8325302aa9ddb88cd5db4731204e0.gz",
+      "stored_bytes": 64555,
+      "stored_sha256": "d41f79f234c1e6d36e18c13683cc81447e2926574c788cf60645973ed65c8d79"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/observations.md",
+      "original_sha256": "13b2249e499974a6468ff0d2494668550896dae2c349feb2f99d26ad61f5bef0",
+      "original_bytes": 3255,
+      "stored_path": "archive/13/13b2249e499974a6468ff0d2494668550896dae2c349feb2f99d26ad61f5bef0.gz",
+      "stored_bytes": 1718,
+      "stored_sha256": "f664282ec0502cc22215b150224c87780bcb06baa804ac218ff8f79120d7e209"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/ordinary-same-1000-input-AX.txt",
+      "original_sha256": "367bead06fc34a0f091fc4a4e734faf329b896aecc4573fe1fa66251dae131bb",
+      "original_bytes": 38086,
+      "stored_path": "archive/36/367bead06fc34a0f091fc4a4e734faf329b896aecc4573fe1fa66251dae131bb.gz",
+      "stored_bytes": 8021,
+      "stored_sha256": "5a962ac6ea03f09613a0bb24b3d024dac77a22b5c7cd703b1f3272763013e260"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/rural-1000-input-AX.txt",
+      "original_sha256": "6fa8eb75adf458e76da3b4d765afc0ce920c3694fc7e5e5a583b5c0d0fc8aec4",
+      "original_bytes": 40163,
+      "stored_path": "archive/6f/6fa8eb75adf458e76da3b4d765afc0ce920c3694fc7e5e5a583b5c0d0fc8aec4.gz",
+      "stored_bytes": 8293,
+      "stored_sha256": "0f541591189e28aa025a4c25fe1595bf13935a0354cdf887d72c287fbac1dfe2"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/same-expense-300-plus-200-AX.txt",
+      "original_sha256": "8823cff3c665883db85fe6f150fbb5c8712fd401ab5962715e2a2af60a7f32a6",
+      "original_bytes": 39124,
+      "stored_path": "archive/88/8823cff3c665883db85fe6f150fbb5c8712fd401ab5962715e2a2af60a7f32a6.gz",
+      "stored_bytes": 8182,
+      "stored_sha256": "a7a70b463537aa7e4eea3c8e9245050ff3ecc7fc4ca8a8227212357c83121cf1"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/same-expense-300-plus-200.png",
+      "original_sha256": "a3924fc7d3d08f31f42573d17f7ee044b5c890950485fda4fd318b5a63f10c66",
+      "original_bytes": 75508,
+      "stored_path": "archive/a3/a3924fc7d3d08f31f42573d17f7ee044b5c890950485fda4fd318b5a63f10c66.gz",
+      "stored_bytes": 57143,
+      "stored_sha256": "35b286d4217268d56f407ba9b69660679c394e7c8daa973a9dcc08c9b7d95b44"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/same-expense-final-AX.txt",
+      "original_sha256": "9b6dccb98cb1b35c75a1502a9ad0d36087dd3b1e95a72ee9f0f59dffc3a58a25",
+      "original_bytes": 33624,
+      "stored_path": "archive/9b/9b6dccb98cb1b35c75a1502a9ad0d36087dd3b1e95a72ee9f0f59dffc3a58a25.gz",
+      "stored_bytes": 7191,
+      "stored_sha256": "dfa41bdf11abdda9f7838d58c71d36f0503cdab787b90fb8339a9f78ff4e7586"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/same-expense-final.png",
+      "original_sha256": "06d19710cb89b18f792c75c938f52ccee0ecc1f0f0996ff0483c78892cea5ec4",
+      "original_bytes": 143771,
+      "stored_path": "archive/06/06d19710cb89b18f792c75c938f52ccee0ecc1f0f0996ff0483c78892cea5ec4.gz",
+      "stored_bytes": 128699,
+      "stored_sha256": "6d17f0f469f8e95842a76c738491287341bbdbaf2013fd6e8609af4a61fb71de"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/same-expense-summary-AX.txt",
+      "original_sha256": "c18395632d0d2360ef26580f8e85072d134fccb9bf9ce8afad49c0b448ad6a9d",
+      "original_bytes": 13791,
+      "stored_path": "archive/c1/c18395632d0d2360ef26580f8e85072d134fccb9bf9ce8afad49c0b448ad6a9d.gz",
+      "stored_bytes": 3586,
+      "stored_sha256": "d4f9a5e981921a3106f454e087fe5e1b20fc77ce9e5760a02e39a18e59c90c4d"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/runtime/same-expense-summary.png",
+      "original_sha256": "3b35d8e344b7ce8ad920a50b2f29a941bad3af100bcb83b8d031c0542431a66c",
+      "original_bytes": 92713,
+      "stored_path": "archive/3b/3b35d8e344b7ce8ad920a50b2f29a941bad3af100bcb83b8d031c0542431a66c.gz",
+      "stored_bytes": 67822,
+      "stored_sha256": "ff04cd62f654995232689c1bddc2b66a1331078d333cff6cde9f73f08984608d"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/source-map.json",
+      "original_sha256": "3bfaa9d708b8c7fe4d9d3a9f609989ef606700be8bbe402868821cd58b7212c2",
+      "original_bytes": 3799,
+      "stored_path": "archive/3b/3bfaa9d708b8c7fe4d9d3a9f609989ef606700be8bbe402868821cd58b7212c2.gz",
+      "stored_bytes": 1154,
+      "stored_sha256": "d701519df3455d34a2abccfa8f68ec1bd85af8ecbb5d5fde2d30cc75d60c9532"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/sources/LR-2026-amendment.html",
+      "original_sha256": "0cb4bb5cfa976b97d334207259ce97e86952e13a04c09d985fd314bf8bc0d3e7",
+      "original_bytes": 138086,
+      "stored_path": "archive/0c/0cb4bb5cfa976b97d334207259ce97e86952e13a04c09d985fd314bf8bc0d3e7.gz",
+      "stored_bytes": 29738,
+      "stored_sha256": "44299b2d83bdb0cf945a0cb3fcae07a483b90d043c0416d89b470318c669d61a"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/sources/LR-2026-amendment.reader.txt",
+      "original_sha256": "a97eadd419fb1b91ddcffdcad154cbab351341a4af1b26af10f78323d995cced",
+      "original_bytes": 85085,
+      "stored_path": "archive/a9/a97eadd419fb1b91ddcffdcad154cbab351341a4af1b26af10f78323d995cced.gz",
+      "stored_bytes": 24346,
+      "stored_sha256": "be8d25b81c815779576a8a10acc4570a7deb6b3083ced95625d8c79b6ea11d52"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/sources/LR-law-current.html",
+      "original_sha256": "e5833d7475065a13a09f36a2720af4b6da756d8fec2eb5fce7e128387a14f336",
+      "original_bytes": 497686,
+      "stored_path": "archive/e5/e5833d7475065a13a09f36a2720af4b6da756d8fec2eb5fce7e128387a14f336.gz",
+      "stored_bytes": 67615,
+      "stored_sha256": "ca7b70f5a9b46c30ed100a879a1e2d2021007beb4e8af1932b94855c2fc62adb"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/sources/LR-law-current.reader.txt",
+      "original_sha256": "8c7576b36d269470ed2a6c9444f2464b09c6debcd0abcec86d340a52b65573d6",
+      "original_bytes": 233570,
+      "stored_path": "archive/8c/8c7576b36d269470ed2a6c9444f2464b09c6debcd0abcec86d340a52b65573d6.gz",
+      "stored_bytes": 49639,
+      "stored_sha256": "ce79636b5824ffff8918187c2c6d0000c12d7de9782a82da843c8bcea996529f"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/sources/LR-monthly-help.html",
+      "original_sha256": "7fa59e6f5ac4e2ab74af99e87c8e2240bea7a737d5c3357939e698f37409d9c1",
+      "original_bytes": 14872,
+      "stored_path": "archive/7f/7fa59e6f5ac4e2ab74af99e87c8e2240bea7a737d5c3357939e698f37409d9c1.gz",
+      "stored_bytes": 5176,
+      "stored_sha256": "902f8aebd7db89e4a263354c83421672369b01ff11d735172759e01f9ec41556"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/sources/LR-monthly-help.reader.txt",
+      "original_sha256": "974246a53105dab859c2460a9c80b4b27c76edc6a75bd3d6246683c899159351",
+      "original_bytes": 5746,
+      "stored_path": "archive/97/974246a53105dab859c2460a9c80b4b27c76edc6a75bd3d6246683c899159351.gz",
+      "stored_bytes": 2625,
+      "stored_sha256": "ec1039d0eecd552652c55116525d8064ef2bf629e78ea8230dbd075002114c60"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/sources/LR-monthly-manual.html",
+      "original_sha256": "c9fd6d36470bf91ef8e73ca337cbe5eb78b9b4236ed969c68587ed8345e4a3f8",
+      "original_bytes": 11799,
+      "stored_path": "archive/c9/c9fd6d36470bf91ef8e73ca337cbe5eb78b9b4236ed969c68587ed8345e4a3f8.gz",
+      "stored_bytes": 4113,
+      "stored_sha256": "841cd735404b128f659c2f3c27edf525c2c67b4a42ab9d61000a3bca0b0d3db2"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/sources/LR-monthly-manual.reader.txt",
+      "original_sha256": "9becf9d4bf86d1d44d42b45e15166dc2d68cbf8bce8ad204e9f814e4a5daf4ed",
+      "original_bytes": 3599,
+      "stored_path": "archive/9b/9becf9d4bf86d1d44d42b45e15166dc2d68cbf8bce8ad204e9f814e4a5daf4ed.gz",
+      "stored_bytes": 1524,
+      "stored_sha256": "f10f490078a2512a1c15acd6e5762b17ff8dc6a81bfab9afa1259f772e5196d9"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/sources/LR-ordinary-care.html",
+      "original_sha256": "32471b5b371c355a63c66ff47cbcc737271e67c77f3c3f83f75c422d5123aa65",
+      "original_bytes": 14208,
+      "stored_path": "archive/32/32471b5b371c355a63c66ff47cbcc737271e67c77f3c3f83f75c422d5123aa65.gz",
+      "stored_bytes": 4558,
+      "stored_sha256": "1a47ed543d8cbb2ea66921ada338ca7d6d648b7346e387066f398bdddbe8311e"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/sources/LR-ordinary-care.reader.txt",
+      "original_sha256": "0a1146b1e220c2b0b8ca4dbc1e111003fa00bc933c5c498b82c91a0f0d45c68f",
+      "original_bytes": 4743,
+      "stored_path": "archive/0a/0a1146b1e220c2b0b8ca4dbc1e111003fa00bc933c5c498b82c91a0f0d45c68f.gz",
+      "stored_bytes": 1842,
+      "stored_sha256": "443453e07e4c5d0e223d654dc5eaa76cf238a822059f9e33d80c1d9e003421f7"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/sources/LR-rural-care.html",
+      "original_sha256": "26befcdcdaab04d4392fd59b1c9fda6c0eb120c9ac294266254e856f199939b8",
+      "original_bytes": 17574,
+      "stored_path": "archive/26/26befcdcdaab04d4392fd59b1c9fda6c0eb120c9ac294266254e856f199939b8.gz",
+      "stored_bytes": 5491,
+      "stored_sha256": "e5ad3b63c976b1bfc5b529921c3a8921c9bad85e6d8cfe06940174c6ef52020e"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-private-method/sources/LR-rural-care.reader.txt",
+      "original_sha256": "f89a7e192caae83c2b0fcd5dc21f0670849c588f4d859a9949fe77aece025212",
+      "original_bytes": 7490,
+      "stored_path": "archive/f8/f89a7e192caae83c2b0fcd5dc21f0670849c588f4d859a9949fe77aece025212.gz",
+      "stored_bytes": 2706,
+      "stored_sha256": "b032725404321d5c919bb4cbcee1c2b784fe02013d52d364e69e422722e2f25b"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/artifact-manifest.json",
+      "original_sha256": "3e4af66cdd0dcaf40e873f7046096a948e7afa8bfbbc108984d7d61c31a92cd3",
+      "original_bytes": 12270,
+      "stored_path": "archive/3e/3e4af66cdd0dcaf40e873f7046096a948e7afa8bfbbc108984d7d61c31a92cd3.gz",
+      "stored_bytes": 2490,
+      "stored_sha256": "af2aac729c99913ca08d8fd973287088a24c815b462f20fba194a942277f54ef"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/candidate-README.md",
+      "original_sha256": "7914d83cad7eb1165d90513338dc057991929841be6dcf892a1c8cacb2f360c2",
+      "original_bytes": 16736,
+      "stored_path": "archive/79/7914d83cad7eb1165d90513338dc057991929841be6dcf892a1c8cacb2f360c2.gz",
+      "stored_bytes": 6458,
+      "stored_sha256": "e69b96cbafd3d4df6ae7a18aad3882c7589b112b81b589c4b03a0557630468ae"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/candidate-es-irpf-deductions.md",
+      "original_sha256": "22a2397efb95dc544054f43abb4e2105d7a249253b7bcd660bb68f3e5977bf6c",
+      "original_bytes": 499260,
+      "stored_path": "archive/22/22a2397efb95dc544054f43abb4e2105d7a249253b7bcd660bb68f3e5977bf6c.gz",
+      "stored_bytes": 140449,
+      "stored_sha256": "8f808779629cbdf446595ab2df6aa9341e103b32afe0bd8a66d96ae8f0b60b98"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/freeze.json",
+      "original_sha256": "b53fdeaae10cbeecf9149d98f995535f8d5905be85fe93426230fd4daf922df2",
+      "original_bytes": 457,
+      "stored_path": "archive/b5/b53fdeaae10cbeecf9149d98f995535f8d5905be85fe93426230fd4daf922df2.gz",
+      "stored_bytes": 325,
+      "stored_sha256": "a414c902c39b1c0744436097dcae3f8c67bceccce6213b1765cb0e9d7fa908b0"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/independent-controls.json",
+      "original_sha256": "59b0588e2f078135c04a08eb161eb82984c6948cace60cf9cbbdb8fa85da18fd",
+      "original_bytes": 3497,
+      "stored_path": "archive/59/59b0588e2f078135c04a08eb161eb82984c6948cace60cf9cbbdb8fa85da18fd.gz",
+      "stored_bytes": 609,
+      "stored_sha256": "ff1d92d721191317052d4b9166ccc64335c5cacdbecddbcb46a1ef91179c17c7"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/independent-controls.py",
+      "original_sha256": "273708dcf2b807aebad4ea79ffd0b4b60a5bd69841be518033ec7bb15e9938ac",
+      "original_bytes": 2786,
+      "stored_path": "archive/27/273708dcf2b807aebad4ea79ffd0b4b60a5bd69841be518033ec7bb15e9938ac.gz",
+      "stored_bytes": 1163,
+      "stored_sha256": "0286c4da87b2dada23c094cc40e8c6022d02012beaaec46b9eb8dc6f6854a8d9"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/initial-harness-failure.txt",
+      "original_sha256": "d2a77a61cf75c00a6e481c31e99f0209e06e1b4ac09a882283c67fba193697f2",
+      "original_bytes": 536,
+      "stored_path": "archive/d2/d2a77a61cf75c00a6e481c31e99f0209e06e1b4ac09a882283c67fba193697f2.gz",
+      "stored_bytes": 338,
+      "stored_sha256": "a6634757f51d4c6586c655509528b126e8ad1d542395c74055a2aef3898cacde"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/oa.actual-output.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/own-read-excerpts.txt",
+      "original_sha256": "5062498480e0d884c3e793e1ddcd761e7fdbacd3f7590855c3be6125f34f9a6a",
+      "original_bytes": 45430,
+      "stored_path": "archive/50/5062498480e0d884c3e793e1ddcd761e7fdbacd3f7590855c3be6125f34f9a6a.gz",
+      "stored_bytes": 10959,
+      "stored_sha256": "f4edf529e3fcf2610bfbc53db80c953e5da12b6313016ddc7af6cb7f828ca7f5"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/own-source-read-scopes.json",
+      "original_sha256": "f30e0bcdda2f19aa9bd6ece152f5a16d5f12cd138f9af27e7eca11b89ee80285",
+      "original_bytes": 5751,
+      "stored_path": "archive/f3/f30e0bcdda2f19aa9bd6ece152f5a16d5f12cd138f9af27e7eca11b89ee80285.gz",
+      "stored_bytes": 1399,
+      "stored_sha256": "fd85c7fb802a96a31fdad48cdced1ce175abc23329c8c681f8f4a0e7efbb8154"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/prepare-evidence.py",
+      "original_sha256": "e21abf121f9c7ffb70724d4e01f9468d7d31c16b7ef6dd6d56aca6f8fa006b2c",
+      "original_bytes": 2363,
+      "stored_path": "archive/e2/e21abf121f9c7ffb70724d4e01f9468d7d31c16b7ef6dd6d56aca6f8fa006b2c.gz",
+      "stored_bytes": 1202,
+      "stored_sha256": "21bcf32bb82b0f086eb32b8f927459f1dcd9440646ed22c27fd0efe088189295"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/preservation-proof.json",
+      "original_sha256": "ecfb461f1d29dda94bd44b1be0d402a132f9629465062e84961010c83313f700",
+      "original_bytes": 767,
+      "stored_path": "archive/ec/ecfb461f1d29dda94bd44b1be0d402a132f9629465062e84961010c83313f700.gz",
+      "stored_bytes": 362,
+      "stored_sha256": "34a36ba6a1960beecafbb5e0f26955b33f595dfb48fbfb23d949092ef42eac4f"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/report.md",
+      "original_sha256": "455a2655f7cf53538154c7b1a36bea78f09964b436fbcbf00ea508dfb1ca36ef",
+      "original_bytes": 7116,
+      "stored_path": "archive/45/455a2655f7cf53538154c7b1a36bea78f09964b436fbcbf00ea508dfb1ca36ef.gz",
+      "stored_bytes": 3448,
+      "stored_sha256": "5134922adb0426111963a02e316d452dccad9680262f67d05959f9119f095043"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/reviewed-replacement-ledger.json",
+      "original_sha256": "e80b7516bd8e24ef3ff9cb475ceea92f86893dbe0d5b1161d0c0f667b62ccd07",
+      "original_bytes": 7870,
+      "stored_path": "archive/e8/e80b7516bd8e24ef3ff9cb475ceea92f86893dbe0d5b1161d0c0f667b62ccd07.gz",
+      "stored_bytes": 2720,
+      "stored_sha256": "bca6352463c690709ef9e884a244ecdf17d25a7f41393c48765661e3d6cddf6e"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/runtime/monthly-five-months-500-AX.txt",
+      "original_sha256": "c67912d954852a89dd23ecad3167f4103e6210139ed3e80e08fedd7b06b596b1",
+      "original_bytes": 33573,
+      "stored_path": "archive/c6/c67912d954852a89dd23ecad3167f4103e6210139ed3e80e08fedd7b06b596b1.gz",
+      "stored_bytes": 7177,
+      "stored_sha256": "2db0bad48a2850d333e6327ff3ca2d584c1d33254b2407cbdf086af5427629f6"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/runtime/monthly-footnote-AX.txt",
+      "original_sha256": "067f2380e23101cc747336c7a5c1e415992c1c54e92881161341c1f8e4f12db0",
+      "original_bytes": 37142,
+      "stored_path": "archive/06/067f2380e23101cc747336c7a5c1e415992c1c54e92881161341c1f8e4f12db0.gz",
+      "stored_bytes": 7849,
+      "stored_sha256": "85edbeed17d8133cc30452f51a30b1f7d3c16b2a7280db5d3320913429c6f0d1"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/runtime/monthly-footnote.png",
+      "original_sha256": "26642d30fa11b4cd39ed70e3f7002f014fd8325302aa9ddb88cd5db4731204e0",
+      "original_bytes": 84226,
+      "stored_path": "archive/26/26642d30fa11b4cd39ed70e3f7002f014fd8325302aa9ddb88cd5db4731204e0.gz",
+      "stored_bytes": 64555,
+      "stored_sha256": "d41f79f234c1e6d36e18c13683cc81447e2926574c788cf60645973ed65c8d79"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/runtime/ordinary-same-1000-input-AX.txt",
+      "original_sha256": "367bead06fc34a0f091fc4a4e734faf329b896aecc4573fe1fa66251dae131bb",
+      "original_bytes": 38086,
+      "stored_path": "archive/36/367bead06fc34a0f091fc4a4e734faf329b896aecc4573fe1fa66251dae131bb.gz",
+      "stored_bytes": 8021,
+      "stored_sha256": "5a962ac6ea03f09613a0bb24b3d024dac77a22b5c7cd703b1f3272763013e260"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/runtime/rural-1000-input-AX.txt",
+      "original_sha256": "6fa8eb75adf458e76da3b4d765afc0ce920c3694fc7e5e5a583b5c0d0fc8aec4",
+      "original_bytes": 40163,
+      "stored_path": "archive/6f/6fa8eb75adf458e76da3b4d765afc0ce920c3694fc7e5e5a583b5c0d0fc8aec4.gz",
+      "stored_bytes": 8293,
+      "stored_sha256": "0f541591189e28aa025a4c25fe1595bf13935a0354cdf887d72c287fbac1dfe2"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/runtime/same-expense-final-AX.txt",
+      "original_sha256": "9b6dccb98cb1b35c75a1502a9ad0d36087dd3b1e95a72ee9f0f59dffc3a58a25",
+      "original_bytes": 33624,
+      "stored_path": "archive/9b/9b6dccb98cb1b35c75a1502a9ad0d36087dd3b1e95a72ee9f0f59dffc3a58a25.gz",
+      "stored_bytes": 7191,
+      "stored_sha256": "dfa41bdf11abdda9f7838d58c71d36f0503cdab787b90fb8339a9f78ff4e7586"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/runtime/same-expense-final.png",
+      "original_sha256": "06d19710cb89b18f792c75c938f52ccee0ecc1f0f0996ff0483c78892cea5ec4",
+      "original_bytes": 143771,
+      "stored_path": "archive/06/06d19710cb89b18f792c75c938f52ccee0ecc1f0f0996ff0483c78892cea5ec4.gz",
+      "stored_bytes": 128699,
+      "stored_sha256": "6d17f0f469f8e95842a76c738491287341bbdbaf2013fd6e8609af4a61fb71de"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/runtime/same-expense-summary-AX.txt",
+      "original_sha256": "c18395632d0d2360ef26580f8e85072d134fccb9bf9ce8afad49c0b448ad6a9d",
+      "original_bytes": 13791,
+      "stored_path": "archive/c1/c18395632d0d2360ef26580f8e85072d134fccb9bf9ce8afad49c0b448ad6a9d.gz",
+      "stored_bytes": 3586,
+      "stored_sha256": "d4f9a5e981921a3106f454e087fe5e1b20fc77ce9e5760a02e39a18e59c90c4d"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/runtime/same-expense-summary.png",
+      "original_sha256": "3b35d8e344b7ce8ad920a50b2f29a941bad3af100bcb83b8d031c0542431a66c",
+      "original_bytes": 92713,
+      "stored_path": "archive/3b/3b35d8e344b7ce8ad920a50b2f29a941bad3af100bcb83b8d031c0542431a66c.gz",
+      "stored_bytes": 67822,
+      "stored_sha256": "ff04cd62f654995232689c1bddc2b66a1331078d333cff6cde9f73f08984608d"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/runtime-read-scopes.json",
+      "original_sha256": "924c1cfc950f2ba368c6f3ca9909ff0f58f1d99c9cf1d8ede42623a88d9eacf1",
+      "original_bytes": 921,
+      "stored_path": "archive/92/924c1cfc950f2ba368c6f3ca9909ff0f58f1d99c9cf1d8ede42623a88d9eacf1.gz",
+      "stored_bytes": 403,
+      "stored_sha256": "e25c60fd9458785355e49e88136e125ecc56c065474a550f355125f93e6a1c81"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/schema.actual-output.txt",
+      "original_sha256": "82bfe3a48ef32acd9b00b7e309de8af518423ad3154b26ff939162002be36336",
+      "original_bytes": 71,
+      "stored_path": "archive/82/82bfe3a48ef32acd9b00b7e309de8af518423ad3154b26ff939162002be36336.gz",
+      "stored_bytes": 83,
+      "stored_sha256": "c016a9e59b50782a8f68af830eecd2cf2139cf6137864ea03a467948f879e248"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/skills/international/spain/es-irpf-deductions.md",
+      "original_sha256": "22a2397efb95dc544054f43abb4e2105d7a249253b7bcd660bb68f3e5977bf6c",
+      "original_bytes": 499260,
+      "stored_path": "archive/22/22a2397efb95dc544054f43abb4e2105d7a249253b7bcd660bb68f3e5977bf6c.gz",
+      "stored_bytes": 140449,
+      "stored_sha256": "8f808779629cbdf446595ab2df6aa9341e103b32afe0bd8a66d96ae8f0b60b98"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/sources/LR-2026-amendment.html",
+      "original_sha256": "0cb4bb5cfa976b97d334207259ce97e86952e13a04c09d985fd314bf8bc0d3e7",
+      "original_bytes": 138086,
+      "stored_path": "archive/0c/0cb4bb5cfa976b97d334207259ce97e86952e13a04c09d985fd314bf8bc0d3e7.gz",
+      "stored_bytes": 29738,
+      "stored_sha256": "44299b2d83bdb0cf945a0cb3fcae07a483b90d043c0416d89b470318c669d61a"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/sources/LR-2026-amendment.reader.txt",
+      "original_sha256": "a97eadd419fb1b91ddcffdcad154cbab351341a4af1b26af10f78323d995cced",
+      "original_bytes": 85085,
+      "stored_path": "archive/a9/a97eadd419fb1b91ddcffdcad154cbab351341a4af1b26af10f78323d995cced.gz",
+      "stored_bytes": 24346,
+      "stored_sha256": "be8d25b81c815779576a8a10acc4570a7deb6b3083ced95625d8c79b6ea11d52"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/sources/LR-law-current.html",
+      "original_sha256": "e5833d7475065a13a09f36a2720af4b6da756d8fec2eb5fce7e128387a14f336",
+      "original_bytes": 497686,
+      "stored_path": "archive/e5/e5833d7475065a13a09f36a2720af4b6da756d8fec2eb5fce7e128387a14f336.gz",
+      "stored_bytes": 67615,
+      "stored_sha256": "ca7b70f5a9b46c30ed100a879a1e2d2021007beb4e8af1932b94855c2fc62adb"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/sources/LR-law-current.reader.txt",
+      "original_sha256": "8c7576b36d269470ed2a6c9444f2464b09c6debcd0abcec86d340a52b65573d6",
+      "original_bytes": 233570,
+      "stored_path": "archive/8c/8c7576b36d269470ed2a6c9444f2464b09c6debcd0abcec86d340a52b65573d6.gz",
+      "stored_bytes": 49639,
+      "stored_sha256": "ce79636b5824ffff8918187c2c6d0000c12d7de9782a82da843c8bcea996529f"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/sources/LR-monthly-help.html",
+      "original_sha256": "7fa59e6f5ac4e2ab74af99e87c8e2240bea7a737d5c3357939e698f37409d9c1",
+      "original_bytes": 14872,
+      "stored_path": "archive/7f/7fa59e6f5ac4e2ab74af99e87c8e2240bea7a737d5c3357939e698f37409d9c1.gz",
+      "stored_bytes": 5176,
+      "stored_sha256": "902f8aebd7db89e4a263354c83421672369b01ff11d735172759e01f9ec41556"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/sources/LR-monthly-help.reader.txt",
+      "original_sha256": "974246a53105dab859c2460a9c80b4b27c76edc6a75bd3d6246683c899159351",
+      "original_bytes": 5746,
+      "stored_path": "archive/97/974246a53105dab859c2460a9c80b4b27c76edc6a75bd3d6246683c899159351.gz",
+      "stored_bytes": 2625,
+      "stored_sha256": "ec1039d0eecd552652c55116525d8064ef2bf629e78ea8230dbd075002114c60"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/sources/LR-monthly-manual.html",
+      "original_sha256": "c9fd6d36470bf91ef8e73ca337cbe5eb78b9b4236ed969c68587ed8345e4a3f8",
+      "original_bytes": 11799,
+      "stored_path": "archive/c9/c9fd6d36470bf91ef8e73ca337cbe5eb78b9b4236ed969c68587ed8345e4a3f8.gz",
+      "stored_bytes": 4113,
+      "stored_sha256": "841cd735404b128f659c2f3c27edf525c2c67b4a42ab9d61000a3bca0b0d3db2"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/sources/LR-monthly-manual.reader.txt",
+      "original_sha256": "9becf9d4bf86d1d44d42b45e15166dc2d68cbf8bce8ad204e9f814e4a5daf4ed",
+      "original_bytes": 3599,
+      "stored_path": "archive/9b/9becf9d4bf86d1d44d42b45e15166dc2d68cbf8bce8ad204e9f814e4a5daf4ed.gz",
+      "stored_bytes": 1524,
+      "stored_sha256": "f10f490078a2512a1c15acd6e5762b17ff8dc6a81bfab9afa1259f772e5196d9"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/sources/LR-ordinary-care.html",
+      "original_sha256": "32471b5b371c355a63c66ff47cbcc737271e67c77f3c3f83f75c422d5123aa65",
+      "original_bytes": 14208,
+      "stored_path": "archive/32/32471b5b371c355a63c66ff47cbcc737271e67c77f3c3f83f75c422d5123aa65.gz",
+      "stored_bytes": 4558,
+      "stored_sha256": "1a47ed543d8cbb2ea66921ada338ca7d6d648b7346e387066f398bdddbe8311e"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/sources/LR-ordinary-care.reader.txt",
+      "original_sha256": "0a1146b1e220c2b0b8ca4dbc1e111003fa00bc933c5c498b82c91a0f0d45c68f",
+      "original_bytes": 4743,
+      "stored_path": "archive/0a/0a1146b1e220c2b0b8ca4dbc1e111003fa00bc933c5c498b82c91a0f0d45c68f.gz",
+      "stored_bytes": 1842,
+      "stored_sha256": "443453e07e4c5d0e223d654dc5eaa76cf238a822059f9e33d80c1d9e003421f7"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/sources/LR-rural-care.html",
+      "original_sha256": "26befcdcdaab04d4392fd59b1c9fda6c0eb120c9ac294266254e856f199939b8",
+      "original_bytes": 17574,
+      "stored_path": "archive/26/26befcdcdaab04d4392fd59b1c9fda6c0eb120c9ac294266254e856f199939b8.gz",
+      "stored_bytes": 5491,
+      "stored_sha256": "e5ad3b63c976b1bfc5b529921c3a8921c9bad85e6d8cfe06940174c6ef52020e"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/sources/LR-rural-care.reader.txt",
+      "original_sha256": "f89a7e192caae83c2b0fcd5dc21f0670849c588f4d859a9949fe77aece025212",
+      "original_bytes": 7490,
+      "stored_path": "archive/f8/f89a7e192caae83c2b0fcd5dc21f0670849c588f4d859a9949fe77aece025212.gz",
+      "stored_bytes": 2706,
+      "stored_sha256": "b032725404321d5c919bb4cbcee1c2b784fe02013d52d364e69e422722e2f25b"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/verify-target.py",
+      "original_sha256": "6d9dafb89bf8e0dd57b1d1d5b2a4b3a91e043a442bda176d616af49f4d85d10a",
+      "original_bytes": 4507,
+      "stored_path": "archive/6d/6d9dafb89bf8e0dd57b1d1d5b2a4b3a91e043a442bda176d616af49f4d85d10a.gz",
+      "stored_bytes": 2195,
+      "stored_sha256": "37f5cb473f2f4acafc89f3f8fdce7c3041700f9c19d11a1a3e557087de89a654"
+    },
+    {
+      "original_path": "spain-LaRioja-childcare-independent-review/writer-manifest-rehash.json",
+      "original_sha256": "546046548597d823e3faad4ceba59601a9abe69a6be7eb4e2f30f1afa9bbdb15",
+      "original_bytes": 11542,
+      "stored_path": "archive/54/546046548597d823e3faad4ceba59601a9abe69a6be7eb4e2f30f1afa9bbdb15.gz",
+      "stored_bytes": 2365,
+      "stored_sha256": "25817e4d9e7b9428b3a009edf1ee45af29fec1feed42bbe0dd0e0717a45d96eb"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/baseline-README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/baseline-es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/candidate-README.md",
+      "original_sha256": "e65bfc86be57b6897a6e22efcfb5ca3cc24a6560dcf566e95ccdb6b1fb327464",
+      "original_bytes": 16714,
+      "stored_path": "archive/e6/e65bfc86be57b6897a6e22efcfb5ca3cc24a6560dcf566e95ccdb6b1fb327464.gz",
+      "stored_bytes": 6456,
+      "stored_sha256": "ba1d7a05adfd02051a5212a6bd48a0a2b858260c4fe89758e4160acfbb7c8a7d"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "f9a35e6360cebdb6be1f8878177bc185233f847f78eef29b98a1cd299157db4d",
+      "original_bytes": 500396,
+      "stored_path": "archive/f9/f9a35e6360cebdb6be1f8878177bc185233f847f78eef29b98a1cd299157db4d.gz",
+      "stored_bytes": 140720,
+      "stored_sha256": "6586ace9e27ec2006cc138e0ff4bd227f1746d6ee06cc5307995eae2cbde926b"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/compose-and-check.py",
+      "original_sha256": "7656bc058a28d11dab81ec69f88266f4a0f6353caab334575f2e00668fc8cb94",
+      "original_bytes": 8966,
+      "stored_path": "archive/76/7656bc058a28d11dab81ec69f88266f4a0f6353caab334575f2e00668fc8cb94.gz",
+      "stored_bytes": 3859,
+      "stored_sha256": "6ca450f9e37bda24a17002c64f0b8ef02a2ffd5464e0d08292a1fee520e54575"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/draft-options.md",
+      "original_sha256": "8d97de9057750b2c88cbb0192113ec5fc7a06a97a5689a75806d956f9d8ddcca",
+      "original_bytes": 2457,
+      "stored_path": "archive/8d/8d97de9057750b2c88cbb0192113ec5fc7a06a97a5689a75806d956f9d8ddcca.gz",
+      "stored_bytes": 1265,
+      "stored_sha256": "a926ee5b9a6d985a2084d1ff32c6af151b9a17af2f048d9f9a551020c8ac0f9d"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/exact-replacements.json",
+      "original_sha256": "27f4ea149a7f7036626203262f9645fd436125f6c3cecb417df89d1c52e1b524",
+      "original_bytes": 6248,
+      "stored_path": "archive/27/27f4ea149a7f7036626203262f9645fd436125f6c3cecb417df89d1c52e1b524.gz",
+      "stored_bytes": 2431,
+      "stored_sha256": "a31ca732bf1af8f6a05b32ba215e4ca903e03f09c2e58855f506bbb47e42a730"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/manifest.json",
+      "original_sha256": "98829017433c67a5e63d26a6ba66bcd2b93ed09086cc3a3299e4abe89902a9a8",
+      "original_bytes": 3183,
+      "stored_path": "archive/98/98829017433c67a5e63d26a6ba66bcd2b93ed09086cc3a3299e4abe89902a9a8.gz",
+      "stored_bytes": 1276,
+      "stored_sha256": "c7290aa02aa948fd0d345ae3538f57f6d2c3a0a97732a259b35b995d72d19ee8"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/own-controls.json",
+      "original_sha256": "f0b7aded6c0b00123679a90caba8f4d7bf1d339d31266efaf4d8d67700c09bb7",
+      "original_bytes": 2353,
+      "stored_path": "archive/f0/f0b7aded6c0b00123679a90caba8f4d7bf1d339d31266efaf4d8d67700c09bb7.gz",
+      "stored_bytes": 560,
+      "stored_sha256": "c9a3fdbf9b97f51bfd151378e645a547502fe75fb3af2c5cdb9bb80efd352f38"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/own-examples.txt",
+      "original_sha256": "73ee963e91282d1bf014bec8f7c6b67efc9bf0f12015a7532634203b22a50fae",
+      "original_bytes": 431,
+      "stored_path": "archive/73/73ee963e91282d1bf014bec8f7c6b67efc9bf0f12015a7532634203b22a50fae.gz",
+      "stored_bytes": 295,
+      "stored_sha256": "cc7dd7c73540bc2f48c4335bf18c1941f66d1a68e925b2dc8c52b81094683262"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/preservation-proof.json",
+      "original_sha256": "18932f0bf697c5ac9f21a9b16e4155695ee38e95c699779a76d415b041c20cfc",
+      "original_bytes": 584,
+      "stored_path": "archive/18/18932f0bf697c5ac9f21a9b16e4155695ee38e95c699779a76d415b041c20cfc.gz",
+      "stored_bytes": 279,
+      "stored_sha256": "98996b173ce8fd0bb83f634603cc6a355356174d1e4fb4b38aa1accf5ee89628"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/retained-source-acquisition-receipts.json",
+      "original_sha256": "9f7d8a2d2ef51b4dfef27c6e2748f16b33170100a1b7b7a01b417c4f776b083b",
+      "original_bytes": 2550,
+      "stored_path": "archive/9f/9f7d8a2d2ef51b4dfef27c6e2748f16b33170100a1b7b7a01b417c4f776b083b.gz",
+      "stored_bytes": 1019,
+      "stored_sha256": "1250be818042fe5f7c8389ca472dc8ae4ac67ceb25472f67f2c81dfbb64a862b"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/source-read-ledger.json",
+      "original_sha256": "9f659b178b248bb34ce3677bc859ebab1d73b02ea20235b18897e8888d4d048c",
+      "original_bytes": 3159,
+      "stored_path": "archive/9f/9f659b178b248bb34ce3677bc859ebab1d73b02ea20235b18897e8888d4d048c.gz",
+      "stored_bytes": 1111,
+      "stored_sha256": "1da3331c61ed0d8c8dbe46760c7b0eedd593ad904477a9c1f87bff09445cc529"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/sources/AEAT-completion.html",
+      "original_sha256": "aa5c10c55c8cc6d648b4d226b54799d45bec4e6535c1ba44950e5d5a15339c44",
+      "original_bytes": 10963,
+      "stored_path": "archive/aa/aa5c10c55c8cc6d648b4d226b54799d45bec4e6535c1ba44950e5d5a15339c44.gz",
+      "stored_bytes": 3813,
+      "stored_sha256": "16d42e7801ac8bf79c0c83a6b71a4c35d087193ed693416e1bd4e8ef5d10b550"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/sources/AEAT-completion.reader.txt",
+      "original_sha256": "3454df541f395748533c1bba0fd80cc3842f53a6c9543beb403e94e67f4a4ec1",
+      "original_bytes": 3327,
+      "stored_path": "archive/34/3454df541f395748533c1bba0fd80cc3842f53a6c9543beb403e94e67f4a4ec1.gz",
+      "stored_bytes": 1415,
+      "stored_sha256": "6bc91dd13a316c2cc7047b23a064dd9af8625a5515062bf06cd73e2dc4d74d82"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/sources/AEAT-landlord.html",
+      "original_sha256": "c383f1bba95123a351216d59f9bf24451f08cc75525b4652af914cb27ab8e64c",
+      "original_bytes": 14757,
+      "stored_path": "archive/c3/c383f1bba95123a351216d59f9bf24451f08cc75525b4652af914cb27ab8e64c.gz",
+      "stored_bytes": 4866,
+      "stored_sha256": "5c4fc4f0eeb151f08348cf29de9d7dd7eefeec812c41b83ff0cc632405fd69bc"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/sources/AEAT-landlord.reader.txt",
+      "original_sha256": "66303f972135148cf33a068ffc788889aaf602c4dcff1de00a7e90a530c3682e",
+      "original_bytes": 5480,
+      "stored_path": "archive/66/66303f972135148cf33a068ffc788889aaf602c4dcff1de00a7e90a530c3682e.gz",
+      "stored_bytes": 2150,
+      "stored_sha256": "ac86072895c6dcef5a30588c02cf6dcbf6f8a15aede3803eab9b2675a6cb877e"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/sources/law-current.html",
+      "original_sha256": "397f4b8d0e5a92f8e9a71787f3d4e406292dba30bf7a42d121e2d96c270184e5",
+      "original_bytes": 448676,
+      "stored_path": "archive/39/397f4b8d0e5a92f8e9a71787f3d4e406292dba30bf7a42d121e2d96c270184e5.gz",
+      "stored_bytes": 51884,
+      "stored_sha256": "ba5752faf1eb801848a429a3e0f77989b1eb9413dfafd6356d3b8a049d0eba9b"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/sources/law-current.reader.txt",
+      "original_sha256": "8d8f8848bd813d8cf52c260da3bb74a486f89f596bced4a8476579332a2f1867",
+      "original_bytes": 188050,
+      "stored_path": "archive/8d/8d8f8848bd813d8cf52c260da3bb74a486f89f596bced4a8476579332a2f1867.gz",
+      "stored_bytes": 36172,
+      "stored_sha256": "b447e25f2c475a4fa8589920fe1ae18f43d56b4d142ffff64e79057e70ebe20d"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-private-method/writer-report.md",
+      "original_sha256": "04eeb64a84a9a0dc3ea27b919b6313249da00a04d062fbd00128d05439dfbec3",
+      "original_bytes": 4142,
+      "stored_path": "archive/04/04eeb64a84a9a0dc3ea27b919b6313249da00a04d062fbd00128d05439dfbec3.gz",
+      "stored_bytes": 2093,
+      "stored_sha256": "98ea88fd3d5ec93364cefffe183584e7868c539b303ac5410c39e641d0a5953a"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-independent-review/independent-controls.json",
+      "original_sha256": "6eed9f6108c1f8f0aa7fed023ec9e9705ba1c2e7c36f9f24cf9b3b143142761f",
+      "original_bytes": 1654,
+      "stored_path": "archive/6e/6eed9f6108c1f8f0aa7fed023ec9e9705ba1c2e7c36f9f24cf9b3b143142761f.gz",
+      "stored_bytes": 345,
+      "stored_sha256": "da0d6819d6c912e78942a683cf94de2c6344231632490472c5b488554fb08e0f"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-independent-review/manifest.json",
+      "original_sha256": "91f18bb78c34ecfa45b8d8c57cfdf7b6fa13f2e79ab5241b0a501153869d1ed7",
+      "original_bytes": 877,
+      "stored_path": "archive/91/91f18bb78c34ecfa45b8d8c57cfdf7b6fa13f2e79ab5241b0a501153869d1ed7.gz",
+      "stored_bytes": 449,
+      "stored_sha256": "a63d647b28e2922425bc6f6e22273432b1313edd54ff18f40479ba2aa58f8526"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-independent-review/own-examples.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-independent-review/own-source-read-ledger.json",
+      "original_sha256": "5d1f84010445bb681bede9a3baa08b1474d6bf782de744f3f0f585374cb699ff",
+      "original_bytes": 3237,
+      "stored_path": "archive/5d/5d1f84010445bb681bede9a3baa08b1474d6bf782de744f3f0f585374cb699ff.gz",
+      "stored_bytes": 963,
+      "stored_sha256": "e352a17f182987cc21afe9cb04d4dea4420bfa5280170ac219d5f14b908108da"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-independent-review/preservation-proof.json",
+      "original_sha256": "9388d8a3bf488bace2525f7125409ec8a462b1bf790ee12ad1158b7dec4ccedf",
+      "original_bytes": 433,
+      "stored_path": "archive/93/9388d8a3bf488bace2525f7125409ec8a462b1bf790ee12ad1158b7dec4ccedf.gz",
+      "stored_bytes": 255,
+      "stored_sha256": "7a0e0d50dcb07df0a35eba91fe3f0bc576fa5eae6509b0ba26a6c762cd78e066"
+    },
+    {
+      "original_path": "spain-Asturias-landlord-reference-independent-review/report.md",
+      "original_sha256": "5fad490099ccd4f7310067cf3e6cbb403868cc8d4b2772b8d6bf1b53feedc4d8",
+      "original_bytes": 2239,
+      "stored_path": "archive/5f/5fad490099ccd4f7310067cf3e6cbb403868cc8d4b2772b8d6bf1b53feedc4d8.gz",
+      "stored_bytes": 1274,
+      "stored_sha256": "e8bf9a7bb74327dc2a558f73dda6e1474a88a5f04d65b057adf35cb1680ee226"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/baseline-README.md",
+      "original_sha256": "2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e",
+      "original_bytes": 16435,
+      "stored_path": "archive/2a/2a45371cde1f53ce9c6b4934c624bb3ce5b899098d97d17730e72b1d1b9fb06e.gz",
+      "stored_bytes": 6352,
+      "stored_sha256": "0e71c2136aebe1272e69bbf8d92cdb237f0375445fda48b3530e645489e25e90"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/baseline-es-irpf-deductions.md",
+      "original_sha256": "d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b",
+      "original_bytes": 496034,
+      "stored_path": "archive/d5/d5c7b1091ab0c55bbd8bf49f34ec889df26500e16035325a0a1149f5f03aa38b.gz",
+      "stored_bytes": 139359,
+      "stored_sha256": "765e4b7760dec3f498dfebe6e95cd75175a4b36a3fa19d82d1b18c9f78080a01"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/candidate-README.md",
+      "original_sha256": "c530574150a7e85e2c634fe2b379b5d22ece9f764eab33ac90f8fb681b154a01",
+      "original_bytes": 16696,
+      "stored_path": "archive/c5/c530574150a7e85e2c634fe2b379b5d22ece9f764eab33ac90f8fb681b154a01.gz",
+      "stored_bytes": 6431,
+      "stored_sha256": "fcaadfbb3e357614ffd5e7dbf7d36fe95e686978d50612675eec1847ac0cedd4"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/candidate-es-irpf-deductions.md",
+      "original_sha256": "4fb8520c3f68e5c667e3dc0c240a7d478e235be0be68951652bcf808dd14ad7b",
+      "original_bytes": 500326,
+      "stored_path": "archive/4f/4fb8520c3f68e5c667e3dc0c240a7d478e235be0be68951652bcf808dd14ad7b.gz",
+      "stored_bytes": 140751,
+      "stored_sha256": "96929db7a9577f91a2274b91e4387c44ba7a469e6ac45a52aca54efdc7f9c5f1"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/compose-and-check.py",
+      "original_sha256": "ea884d52164edac8a1c6140ca74ac582adfffd360040f380f4ad17158a210c01",
+      "original_bytes": 8828,
+      "stored_path": "archive/ea/ea884d52164edac8a1c6140ca74ac582adfffd360040f380f4ad17158a210c01.gz",
+      "stored_bytes": 3789,
+      "stored_sha256": "5f97649d38c0e6af7939ea465e887f5464aa8a60eca6e0d9b73b62f9df1d852d"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/draft-options.md",
+      "original_sha256": "dc0176b9094ccabb17097e3dd417f15fefef8ba178300bcf31af706fe0998b2b",
+      "original_bytes": 2598,
+      "stored_path": "archive/dc/dc0176b9094ccabb17097e3dd417f15fefef8ba178300bcf31af706fe0998b2b.gz",
+      "stored_bytes": 1311,
+      "stored_sha256": "498e57d96167708c67d90968ca5f57857dae37d56b6047af5ef397a1667ea046"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/exact-replacements.json",
+      "original_sha256": "d8e339c42660a52b29df554cfad088b46fbfd14f519960b5336e0186a94ecc7f",
+      "original_bytes": 5913,
+      "stored_path": "archive/d8/d8e339c42660a52b29df554cfad088b46fbfd14f519960b5336e0186a94ecc7f.gz",
+      "stored_bytes": 2364,
+      "stored_sha256": "17365be9db68f41014c7fcc97265cf9b78d660f5d87b16052f6565e370d68c99"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/manifest.json",
+      "original_sha256": "9205f8bd82220cd0df971096475ea0cc947442bcb6d36755ecae8f7439176444",
+      "original_bytes": 3678,
+      "stored_path": "archive/92/9205f8bd82220cd0df971096475ea0cc947442bcb6d36755ecae8f7439176444.gz",
+      "stored_bytes": 1445,
+      "stored_sha256": "a36a5be87523186122dde13b2d529c25a11d922108ee6ce73ba15b02d6168821"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/own-controls.json",
+      "original_sha256": "cb2991bb708dcf080fe65f403491a87fdcbd5e23724c1bb185027f483338fe13",
+      "original_bytes": 2280,
+      "stored_path": "archive/cb/cb2991bb708dcf080fe65f403491a87fdcbd5e23724c1bb185027f483338fe13.gz",
+      "stored_bytes": 527,
+      "stored_sha256": "71ac875ed07e364c1c68eb70b767357019afb24f329fba34b805a60716fc81ef"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/own-examples.txt",
+      "original_sha256": "bc58b0afe932ee1e05b537de6ed4de38f81df72c5a8c8f1c3fa828a8489207a9",
+      "original_bytes": 438,
+      "stored_path": "archive/bc/bc58b0afe932ee1e05b537de6ed4de38f81df72c5a8c8f1c3fa828a8489207a9.gz",
+      "stored_bytes": 299,
+      "stored_sha256": "e106a01fe36182fe3d49d34975413f891d7382d68fd34ca89df86ab9ddfa67f9"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/preseal-check-attempt.txt",
+      "original_sha256": "f9a5a4abdccbc23ec52b4ed10c4082da1973c4eeaba63fcd515fc59dfffb73f4",
+      "original_bytes": 446,
+      "stored_path": "archive/f9/f9a5a4abdccbc23ec52b4ed10c4082da1973c4eeaba63fcd515fc59dfffb73f4.gz",
+      "stored_bytes": 284,
+      "stored_sha256": "e70d5d8baf2f2efa69ad6f9550125e56345c25b7a4d68dad4905714587f62eb4"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/preservation-proof.json",
+      "original_sha256": "6cb7805137c9959036aaa5a15b739d178a73386d3c61ba059b618ef78e52a139",
+      "original_bytes": 584,
+      "stored_path": "archive/6c/6cb7805137c9959036aaa5a15b739d178a73386d3c61ba059b618ef78e52a139.gz",
+      "stored_bytes": 279,
+      "stored_sha256": "f1333cf38576c3d7305fe6205c5ad8c1c55645653839c6a49b383d510964452d"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/retained-source-acquisition-receipts.json",
+      "original_sha256": "09114ae92a51323f331bb291cf37257a9c1c7e5b4cbf3e0b5d4dfdd057c60f87",
+      "original_bytes": 2567,
+      "stored_path": "archive/09/09114ae92a51323f331bb291cf37257a9c1c7e5b4cbf3e0b5d4dfdd057c60f87.gz",
+      "stored_bytes": 1014,
+      "stored_sha256": "099ccdb1524d355d08eb0bad8ba9a51910f56c37f18994fc8cff0ec9805a5ef8"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/source-read-ledger.json",
+      "original_sha256": "4d532238298e79da92bb66ee4cc1249445bf8937e2ab10073c06a8c42b75f55a",
+      "original_bytes": 4605,
+      "stored_path": "archive/4d/4d532238298e79da92bb66ee4cc1249445bf8937e2ab10073c06a8c42b75f55a.gz",
+      "stored_bytes": 1470,
+      "stored_sha256": "73ff072b83025fe9d696205ee70f0db618bfdc6c1fe6fddf208c8fb576c976a3"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/sources/AEAT-assistance.html",
+      "original_sha256": "5c2f0d79661675ba0fb06a7ea7607b5a38d08cdd97c333682e0cfa66349eabf6",
+      "original_bytes": 12339,
+      "stored_path": "archive/5c/5c2f0d79661675ba0fb06a7ea7607b5a38d08cdd97c333682e0cfa66349eabf6.gz",
+      "stored_bytes": 4179,
+      "stored_sha256": "de5ce4b97573ab9e93e8ae9e1482aef5b6cda538d3748bb83699b700f3e22600"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/sources/AEAT-assistance.reader.txt",
+      "original_sha256": "8bb6559f86ddc4675d15c13c2fb4214eee2afd98d6e99b5b29b7dd27238f919f",
+      "original_bytes": 3485,
+      "stored_path": "archive/8b/8bb6559f86ddc4675d15c13c2fb4214eee2afd98d6e99b5b29b7dd27238f919f.gz",
+      "stored_bytes": 1544,
+      "stored_sha256": "54d4b8fb6a041301c9223e276e611590cee0ca75ef203c56e29017bb3fd8fc2e"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/sources/AEAT-common.html",
+      "original_sha256": "9085c85a015f2610ddc07a4bef6b8299899143ebd31a4d7d9b3b7cee0cbc8816",
+      "original_bytes": 10207,
+      "stored_path": "archive/90/9085c85a015f2610ddc07a4bef6b8299899143ebd31a4d7d9b3b7cee0cbc8816.gz",
+      "stored_bytes": 3564,
+      "stored_sha256": "a8050dc108a76bf821e5bcaaf43e37a5a15a66c2529e22db82a713e4070868e1"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/sources/AEAT-common.reader.txt",
+      "original_sha256": "45b0b97847a2c9a4d01a3c8dbb004d553c5037de44f8795e9ca3cfc2db4d9322",
+      "original_bytes": 2354,
+      "stored_path": "archive/45/45b0b97847a2c9a4d01a3c8dbb004d553c5037de44f8795e9ca3cfc2db4d9322.gz",
+      "stored_bytes": 1081,
+      "stored_sha256": "80e4ea6d38c72ce3b6d4727143240f340d349e36c13f8db090de88a8c51c3cbf"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/sources/AEAT-household.html",
+      "original_sha256": "0f3101daa0b394219f70b86c3ff950d0d836df39ae7a327cac99ed8816719d45",
+      "original_bytes": 12213,
+      "stored_path": "archive/0f/0f3101daa0b394219f70b86c3ff950d0d836df39ae7a327cac99ed8816719d45.gz",
+      "stored_bytes": 4191,
+      "stored_sha256": "1762c1153eb022d141bb112d07239cefb498209a61b6cca67b5a2d75b0485d14"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/sources/AEAT-household.reader.txt",
+      "original_sha256": "bffd25c13238e7747d8fef3ee8a48f66645ddf64e631bdf238887fba78f89e07",
+      "original_bytes": 3751,
+      "stored_path": "archive/bf/bffd25c13238e7747d8fef3ee8a48f66645ddf64e631bdf238887fba78f89e07.gz",
+      "stored_bytes": 1588,
+      "stored_sha256": "1a3c1731647974a80ef01ef419af6361e274078df846945597390467498f3406"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/sources/law-current.html",
+      "original_sha256": "55560ad9d229bf4804626e3f1f584d1300e72a5f498e558284c336d6af1582e8",
+      "original_bytes": 463402,
+      "stored_path": "archive/55/55560ad9d229bf4804626e3f1f584d1300e72a5f498e558284c336d6af1582e8.gz",
+      "stored_bytes": 66689,
+      "stored_sha256": "fdeb98533cc17aa34d0684f60e69ace3d32e38bebb1616fe0c758d335dadb4e2"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/sources/law-current.reader.txt",
+      "original_sha256": "7891ce8c2eeff404152b4e68f34615fc4d8ae123d0c55d8c974723fd9e25204a",
+      "original_bytes": 276252,
+      "stored_path": "archive/78/7891ce8c2eeff404152b4e68f34615fc4d8ae123d0c55d8c974723fd9e25204a.gz",
+      "stored_bytes": 51385,
+      "stored_sha256": "5b3ac19d85ee50f45115c9aab23e760081f0c7fb94bf3c17ac68e43724b00c7d"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-private-method/writer-report.md",
+      "original_sha256": "306d42b019349a6ab81d0c4935a998114fceef890e8fdaf9a2c68284416ca1c8",
+      "original_bytes": 4061,
+      "stored_path": "archive/30/306d42b019349a6ab81d0c4935a998114fceef890e8fdaf9a2c68284416ca1c8.gz",
+      "stored_bytes": 2051,
+      "stored_sha256": "a11edde72468c213f7bdb3fe6684103a467528199413af9da6e90b34b57b4746"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-independent-review/independent-controls.json",
+      "original_sha256": "515629787364f26e015e259aa896f2c29ee9770a18349c2526a8778d9fb147f1",
+      "original_bytes": 1887,
+      "stored_path": "archive/51/515629787364f26e015e259aa896f2c29ee9770a18349c2526a8778d9fb147f1.gz",
+      "stored_bytes": 392,
+      "stored_sha256": "c9ece1297b57e145841d6ea0e436ba194b498d654e8616d1c173344f8e3c4629"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-independent-review/manifest.json",
+      "original_sha256": "b3acb7ed74c4ce136c177aee969c27b629cec882437e2e663b86a73ce4909733",
+      "original_bytes": 880,
+      "stored_path": "archive/b3/b3acb7ed74c4ce136c177aee969c27b629cec882437e2e663b86a73ce4909733.gz",
+      "stored_bytes": 447,
+      "stored_sha256": "74e1952f2a041eaa634e32e59653772e80dc30bc0434acd949808add765f38eb"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-independent-review/own-examples.txt",
+      "original_sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+      "original_bytes": 58,
+      "stored_path": "archive/54/54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8.gz",
+      "stored_bytes": 71,
+      "stored_sha256": "629a18ca3a512dd5de9693aa7c17cf788582d7fea1487fa72646a97efddb9256"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-independent-review/own-source-read-ledger.json",
+      "original_sha256": "5714b13c39a3801917d6d8b1e5149339a9d82f623c86cdde9e009f0f82df9c64",
+      "original_bytes": 4316,
+      "stored_path": "archive/57/5714b13c39a3801917d6d8b1e5149339a9d82f623c86cdde9e009f0f82df9c64.gz",
+      "stored_bytes": 1100,
+      "stored_sha256": "68cb6b7bad4d96dc32114c30e0c50a1a2b33fc90fcd49c94efab270a539b8a74"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-independent-review/preservation-proof.json",
+      "original_sha256": "60c5fde4f055da5e4c594d6e78b2c4d3a0fc90bff5beb6acc10d52d04f2907ff",
+      "original_bytes": 433,
+      "stored_path": "archive/60/60c5fde4f055da5e4c594d6e78b2c4d3a0fc90bff5beb6acc10d52d04f2907ff.gz",
+      "stored_bytes": 255,
+      "stored_sha256": "227a923230e43b871a8944df7c44c0c61848e73f0171fff648cc5e9cae8951ac"
+    },
+    {
+      "original_path": "spain-Canarias-overlapping-contributions-independent-review/report.md",
+      "original_sha256": "f46b3da3ddf05edb354a360195e49cdc274ba1b83fc0dc0d04d8a2f52c08550b",
+      "original_bytes": 2531,
+      "stored_path": "archive/f4/f46b3da3ddf05edb354a360195e49cdc274ba1b83fc0dc0d04d8a2f52c08550b.gz",
+      "stored_bytes": 1388,
+      "stored_sha256": "07576e36b1d824a2b4e898dddd58df9b3d4c3762bdffc2766e0849df422501c7"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-table-successor/candidate-README.md",
+      "original_sha256": "ae00cc15d63f1ecdd0997459a1c11dc72a5513249578060cad4b1eae504cbd95",
+      "original_bytes": 16594,
+      "stored_path": "archive/ae/ae00cc15d63f1ecdd0997459a1c11dc72a5513249578060cad4b1eae504cbd95.gz",
+      "stored_bytes": 6406,
+      "stored_sha256": "e4d08872d9fed5b696ed93762a16c93041a964ae9d81340be72eaa9d2d4dbb96"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-table-successor/candidate-es-irpf-deductions.md",
+      "original_sha256": "78ea5824432266359f70343d17daa7a69d0c91d30b4c3eb44676628773c24c0b",
+      "original_bytes": 500689,
+      "stored_path": "archive/78/78ea5824432266359f70343d17daa7a69d0c91d30b4c3eb44676628773c24c0b.gz",
+      "stored_bytes": 140932,
+      "stored_sha256": "2356a575cf43917dc0ecc00528140b2456da5914dcb15043f9bb3bd1d39e0ded"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-table-successor/inverse-proof.json",
+      "original_sha256": "7b1e33c31dbc3e53b24f9deb01e66f385945d0bc8174d76f20f98ce37e13c7de",
+      "original_bytes": 531,
+      "stored_path": "archive/7b/7b1e33c31dbc3e53b24f9deb01e66f385945d0bc8174d76f20f98ce37e13c7de.gz",
+      "stored_bytes": 315,
+      "stored_sha256": "6e142fc01431f6c64cabe0c0a794fddc032ab771ffb00a5a67124e5451615ea9"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-table-successor/manifest.json",
+      "original_sha256": "cd1e607bac9f337893c48ed2631743d6877976f907ed8ad4ad0f5b2122c3092b",
+      "original_bytes": 533,
+      "stored_path": "archive/cd/cd1e607bac9f337893c48ed2631743d6877976f907ed8ad4ad0f5b2122c3092b.gz",
+      "stored_bytes": 318,
+      "stored_sha256": "87ea78395e994b3591850ae42541f0989607aa445b8413c9070018f802d43bce"
+    },
+    {
+      "original_path": "spain-Cantabria-signed-rent-table-successor/report.md",
+      "original_sha256": "073697586394f7731fa247240ee33fb17535af1972161229da0f49612ad0a377",
+      "original_bytes": 478,
+      "stored_path": "archive/07/073697586394f7731fa247240ee33fb17535af1972161229da0f49612ad0a377.gz",
+      "stored_bytes": 318,
+      "stored_sha256": "11fec6d62765db27cee6ac15d8f9c938805f736e581a3cfdfb38a488817b1b5b"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-sharing-pointer-fix/artifact-manifest.json",
+      "original_sha256": "62e4df342f3d6609a9772c366532da65ab96d40532fed4d660d44ddbaebcb316",
+      "original_bytes": 2406,
+      "stored_path": "archive/62/62e4df342f3d6609a9772c366532da65ab96d40532fed4d660d44ddbaebcb316.gz",
+      "stored_bytes": 688,
+      "stored_sha256": "27fd0120a84a25e8a1313c2fbe433fcd9a07bf0bfcf64a9a22b35ec3b8d88b9e"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-sharing-pointer-fix/candidate-README.md",
+      "original_sha256": "0040fa1f105f72c2b14fa031db4b26635a35ada11a871102f524077cfd808e4f",
+      "original_bytes": 16774,
+      "stored_path": "archive/00/0040fa1f105f72c2b14fa031db4b26635a35ada11a871102f524077cfd808e4f.gz",
+      "stored_bytes": 6455,
+      "stored_sha256": "81793c1ebc11226075cc1840699eb76425dd3fbad5ba3a311ac4f5cf17bd1eda"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-sharing-pointer-fix/candidate-es-irpf-deductions.md",
+      "original_sha256": "161b9a350572c6b81239a1750db8872d769a74beafe462b63ff09019001c4881",
+      "original_bytes": 500284,
+      "stored_path": "archive/16/161b9a350572c6b81239a1750db8872d769a74beafe462b63ff09019001c4881.gz",
+      "stored_bytes": 140678,
+      "stored_sha256": "f62f48b12b66eae5b69e9fea85470bcfd609a7a21b232aaa8031657760b1066a"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-sharing-pointer-fix/delta.diff",
+      "original_sha256": "838b18ed5480242efa24058844c22e5262d7cfdd0057cd8fc659b6a0193d4033",
+      "original_bytes": 2594,
+      "stored_path": "archive/83/838b18ed5480242efa24058844c22e5262d7cfdd0057cd8fc659b6a0193d4033.gz",
+      "stored_bytes": 1222,
+      "stored_sha256": "0da643ed4a3c92df270787ef89ab14c5151e4a4b3b520c88a52de03968711725"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-sharing-pointer-fix/exact-replacements.json",
+      "original_sha256": "ab82c3900d5319be88f078535a670185636c0294aee5b9ef404401414ae3777a",
+      "original_bytes": 767,
+      "stored_path": "archive/ab/ab82c3900d5319be88f078535a670185636c0294aee5b9ef404401414ae3777a.gz",
+      "stored_bytes": 353,
+      "stored_sha256": "d09a6286d0037e93c4b3f35b7d94df333c6ded592ed834ac87b3f2276855f06f"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-sharing-pointer-fix/freeze.json",
+      "original_sha256": "de71157725b6e7a82d684259e1a1cc048d5cdf25ea83bd5d2146af68acd23f17",
+      "original_bytes": 401,
+      "stored_path": "archive/de/de71157725b6e7a82d684259e1a1cc048d5cdf25ea83bd5d2146af68acd23f17.gz",
+      "stored_bytes": 269,
+      "stored_sha256": "f55133b2c8a40cc2b1bc3da8b666ca0cec3c3948059c2c85b6de88d4987f0d11"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-sharing-pointer-fix/options-before-edit.md",
+      "original_sha256": "0c6aa5b94a7d2e0cefb44c6fd5e0d316536b2916668f38d957f4b629d551bfc5",
+      "original_bytes": 772,
+      "stored_path": "archive/0c/0c6aa5b94a7d2e0cefb44c6fd5e0d316536b2916668f38d957f4b629d551bfc5.gz",
+      "stored_bytes": 449,
+      "stored_sha256": "59016f0d3f71a15752fe2ac56193e73fca020578ea66f84ec2dfeacb0ed3dc7e"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-sharing-pointer-fix/prepare.py",
+      "original_sha256": "39a197fdabedabc82ec3e2c1394a22056af7ff9b0d49173d4319633787a7e199",
+      "original_bytes": 3429,
+      "stored_path": "archive/39/39a197fdabedabc82ec3e2c1394a22056af7ff9b0d49173d4319633787a7e199.gz",
+      "stored_bytes": 1468,
+      "stored_sha256": "5835a4b1ad34165282fd5bc6702a940a7bafbc65024921db3a09dbc602864c4f"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-sharing-pointer-fix/proof.json",
+      "original_sha256": "6c8b5e5f8d54c437b4dbbf3463bfb20a706d09b2189127a5227d2a85f001f844",
+      "original_bytes": 580,
+      "stored_path": "archive/6c/6c8b5e5f8d54c437b4dbbf3463bfb20a706d09b2189127a5227d2a85f001f844.gz",
+      "stored_bytes": 352,
+      "stored_sha256": "0f279afafe3708930108856ca101ee81a431c19529a6facc21d384805774f522"
+    },
+    {
+      "original_path": "spain-Balearic-under-six-sharing-pointer-fix/report.md",
+      "original_sha256": "02adbe338fddc70e829e24a5734aad661d397ade003165d5d973b2dc7a76a7be",
+      "original_bytes": 728,
+      "stored_path": "archive/02/02adbe338fddc70e829e24a5734aad661d397ade003165d5d973b2dc7a76a7be.gz",
+      "stored_bytes": 447,
+      "stored_sha256": "38ba531a652dfdabddefa0d8cfe834344f220853a21b326a297bf006951cddc6"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition/README.md",
+      "original_sha256": "5828e7a22a6851aa7fdfe111f44d5e5229b662b2af2f0796faf79d5067d8d2be",
+      "original_bytes": 18266,
+      "stored_path": "archive/58/5828e7a22a6851aa7fdfe111f44d5e5229b662b2af2f0796faf79d5067d8d2be.gz",
+      "stored_bytes": 6956,
+      "stored_sha256": "a94790206602db9cd9b0dfb9e7165b5f203001c6ec1846102ea877bc275771b5"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition/composition-manifest.json",
+      "original_sha256": "96c0b44ddc2aac9eb7343024a5d40e7aec98c23ca7a5db7615f75486c7579b0a",
+      "original_bytes": 66343,
+      "stored_path": "archive/96/96c0b44ddc2aac9eb7343024a5d40e7aec98c23ca7a5db7615f75486c7579b0a.gz",
+      "stored_bytes": 17455,
+      "stored_sha256": "b71c3270de8f1a84eb2fc8aa5c2ba9df67b30dce9246961d384c5c9173733131"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition/es-irpf-deductions.md",
+      "original_sha256": "83b696fac23a38251b567daa4152b7f4857bc163aa1b404114e88c503d7deb07",
+      "original_bytes": 525428,
+      "stored_path": "archive/83/83b696fac23a38251b567daa4152b7f4857bc163aa1b404114e88c503d7deb07.gz",
+      "stored_bytes": 149041,
+      "stored_sha256": "a3cb5d2168e12782bc3de90d5b08c07aff01fb5c6eccd2149cb952c959ce79c4"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition/exact-replacements.json",
+      "original_sha256": "bcac301edee170fdbd8e12c7de87fbd9e66b35d7d4e9ae172449902936145db8",
+      "original_bytes": 45933,
+      "stored_path": "archive/bc/bcac301edee170fdbd8e12c7de87fbd9e66b35d7d4e9ae172449902936145db8.gz",
+      "stored_bytes": 13688,
+      "stored_sha256": "8d14030d3c8212c6563221209abf066ec597c17566a690d1a86cf169d7a2759f"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition/report.md",
+      "original_sha256": "dd995f4ce4e79597d342db3a51f7d945c84298172835c114f4f38e37fd753cec",
+      "original_bytes": 772,
+      "stored_path": "archive/dd/dd995f4ce4e79597d342db3a51f7d945c84298172835c114f4f38e37fd753cec.gz",
+      "stored_bytes": 479,
+      "stored_sha256": "939a36133b451916c7125ae600dd7e4d84042dd3c94c7a8a94576f4610b39a38"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/README.md",
+      "original_sha256": "5828e7a22a6851aa7fdfe111f44d5e5229b662b2af2f0796faf79d5067d8d2be",
+      "original_bytes": 18266,
+      "stored_path": "archive/58/5828e7a22a6851aa7fdfe111f44d5e5229b662b2af2f0796faf79d5067d8d2be.gz",
+      "stored_bytes": 6956,
+      "stored_sha256": "a94790206602db9cd9b0dfb9e7165b5f203001c6ec1846102ea877bc275771b5"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/actual-check-output.txt",
+      "original_sha256": "5d3e245542725e0a3945bfbb1affa7c3e1a5aa79b9fdcbbbb51182cd170eac18",
+      "original_bytes": 209,
+      "stored_path": "archive/5d/5d3e245542725e0a3945bfbb1affa7c3e1a5aa79b9fdcbbbb51182cd170eac18.gz",
+      "stored_bytes": 167,
+      "stored_sha256": "e2b4b3c67e1eed4ea2915d196fef4ca4367b79f7f8d908aca119a4ce160f4d4e"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/artifact-manifest.json",
+      "original_sha256": "77adba9de13b8d4177e00fd9d1cbde0ff42eda788266c751e7df3b09cfe9d12e",
+      "original_bytes": 3645,
+      "stored_path": "archive/77/77adba9de13b8d4177e00fd9d1cbde0ff42eda788266c751e7df3b09cfe9d12e.gz",
+      "stored_bytes": 924,
+      "stored_sha256": "f472de2283abd2a200a756e50b3c8b40ec5b5c40f1d6150f1854484d557920c9"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/check-composition.py",
+      "original_sha256": "f744108cb77c0dce4cfffd28e8010461029ef05c8b39c884b53a8823ffda7a02",
+      "original_bytes": 6613,
+      "stored_path": "archive/f7/f744108cb77c0dce4cfffd28e8010461029ef05c8b39c884b53a8823ffda7a02.gz",
+      "stored_bytes": 2743,
+      "stored_sha256": "63ae2e27ea9d801997d551b72af0312424d97329b2c8c320e627aaaf9b55a345"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/component-legal-review-bindings.json",
+      "original_sha256": "efccf76afee2942dc81b9e1bf6afa70eea1528b6aa322c1c6eaa56b652d1e5cc",
+      "original_bytes": 4843,
+      "stored_path": "archive/ef/efccf76afee2942dc81b9e1bf6afa70eea1528b6aa322c1c6eaa56b652d1e5cc.gz",
+      "stored_bytes": 1095,
+      "stored_sha256": "2f9b9a58c86726deb6262183148060064ad1b26c57a05216c98b61837d7bea9e"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/component-reproduction.json",
+      "original_sha256": "cdce9b367e15e60cf6a0a93e7aea9f5d57cbbfcff3b1d98ef6668c305142a2b4",
+      "original_bytes": 3967,
+      "stored_path": "archive/cd/cdce9b367e15e60cf6a0a93e7aea9f5d57cbbfcff3b1d98ef6668c305142a2b4.gz",
+      "stored_bytes": 1032,
+      "stored_sha256": "c28c5c33b79d31e0b4b22500c0fde8d878fa0861c268275b2f1ec59b231446ea"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/es-irpf-deductions.md",
+      "original_sha256": "83b696fac23a38251b567daa4152b7f4857bc163aa1b404114e88c503d7deb07",
+      "original_bytes": 525428,
+      "stored_path": "archive/83/83b696fac23a38251b567daa4152b7f4857bc163aa1b404114e88c503d7deb07.gz",
+      "stored_bytes": 149041,
+      "stored_sha256": "a3cb5d2168e12782bc3de90d5b08c07aff01fb5c6eccd2149cb952c959ce79c4"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/freeze.json",
+      "original_sha256": "ee993b5803ecd8ccd78e0daee6edff17f043be4be90c3785df99b998fffe28e8",
+      "original_bytes": 538,
+      "stored_path": "archive/ee/ee993b5803ecd8ccd78e0daee6edff17f043be4be90c3785df99b998fffe28e8.gz",
+      "stored_bytes": 350,
+      "stored_sha256": "79a7ebee5f9d16c830022a83cfc50a2b2c15e2b3630a96f44dcc887766cdd571"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/independently-derived-composition-operations.json",
+      "original_sha256": "bcac301edee170fdbd8e12c7de87fbd9e66b35d7d4e9ae172449902936145db8",
+      "original_bytes": 45933,
+      "stored_path": "archive/bc/bcac301edee170fdbd8e12c7de87fbd9e66b35d7d4e9ae172449902936145db8.gz",
+      "stored_bytes": 13688,
+      "stored_sha256": "8d14030d3c8212c6563221209abf066ec597c17566a690d1a86cf169d7a2759f"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/inventory-identity.json",
+      "original_sha256": "33991324544f9c2ce244abfb68591c4b537b54ed3f27dea30af7bcf6b99515a0",
+      "original_bytes": 14511,
+      "stored_path": "archive/33/33991324544f9c2ce244abfb68591c4b537b54ed3f27dea30af7bcf6b99515a0.gz",
+      "stored_bytes": 2295,
+      "stored_sha256": "e686064e0d114725421fd31ee37dbef41d561a9e6065224b37c0a7050871ad44"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/pairwise-commutativity.json",
+      "original_sha256": "e69d40d3bc1b180be6ed05ae26d4600375049e32e740015258a459b6a9bf8a8e",
+      "original_bytes": 2367,
+      "stored_path": "archive/e6/e69d40d3bc1b180be6ed05ae26d4600375049e32e740015258a459b6a9bf8a8e.gz",
+      "stored_bytes": 284,
+      "stored_sha256": "3464357293f8451dd07d323c8d0f58ebb9aee05616c5d086bc4d33100c48fa37"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/report.md",
+      "original_sha256": "34781d6d9228282d7eb59590d69be767da0a1630b9ba6aaefd674af9e8a78510",
+      "original_bytes": 3639,
+      "stored_path": "archive/34/34781d6d9228282d7eb59590d69be767da0a1630b9ba6aaefd674af9e8a78510.gz",
+      "stored_bytes": 1777,
+      "stored_sha256": "c10a6d5a489253b8e348d753096b0df2d6b054904c0bc38496f9338d5ebff204"
+    },
+    {
+      "original_path": "spain-seven-regional-final-composition-independent-review/whole-inverse-and-preservation.json",
+      "original_sha256": "da0239d853c678da439f3a53e70bcdf29416b087121331f31e3a62fe3d31dd98",
+      "original_bytes": 4615,
+      "stored_path": "archive/da/da0239d853c678da439f3a53e70bcdf29416b087121331f31e3a62fe3d31dd98.gz",
+      "stored_bytes": 634,
+      "stored_sha256": "735ea4e77e68daaf0ec0190a93621a27e0fd1d37787d0800891a57f182c82454"
+    },
+    {
+      "original_path": "regional-evidence-errata-20261028.json",
+      "original_sha256": "e3ff144f814cec4a71eb09c8a74b1381c66c2d05b9a41c017927949c07cac416",
+      "original_bytes": 1041,
+      "stored_path": "archive/e3/e3ff144f814cec4a71eb09c8a74b1381c66c2d05b9a41c017927949c07cac416.gz",
+      "stored_bytes": 517,
+      "stored_sha256": "d1d8ddf31000800265191abf14f69e8818fb7e4968dc995734d759a9dfcf47e0"
+    }
+  ]
+}

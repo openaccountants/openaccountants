@@ -1,0 +1,593 @@
+
+
+
+
+    
+	
+	
+	
+    
+    
+	
+	Lexnavarra
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[[ID:estructura]]
+
+
+    (ir al contenido)
+
+
+    
+[[ID:cabecera]]
+
+
+        
+navarra.es
+
+ 
+
+Castellano  | Euskara   | Français  | English 
+
+ 
+
+
+[[ID:frmSearch]]
+
+
+
+buscador
+
+
+[[ID:cadena]]
+
+
+[[ID:c]]
+
+
+
+
+
+[[ID:primerNivel]]
+
+
+
+Navarra
+
+
+Trámites
+
+
+Temas
+
+
+Gobierno
+
+
+Actualidad
+
+
+
+
+
+
+[[ID:contenido_modificado]]
+
+
+
+
+
+
+
+[[ID:migas]]
+
+
+Navarra :
+
+
+
+Lexnavarra
+
+ : Legislación
+
+
+
+
+
+
+
+LEXNAVARRA
+
+
+
+
+
+Versión para imprimir
+Version en euskera
+
+
+
+
+ORDEN FORAL 231/2013, DE 18 DE JUNIO, DE LA CONSEJERA DE ECONOMÍA, HACIENDA, INDUSTRIA Y EMPLEO, POR LA QUE SE APRUEBAN LOS MODELOS 210 Y 211 DEL IMPUESTO SOBRE LA RENTA DE NO RESIDENTES, QUE DEBEN UTILIZARSE PARA DECLARAR LAS RENTAS OBTENIDAS SIN MEDIACIÓN DE ESTABLECIMIENTO PERMANENTE Y LA RETENCIÓN PRACTICADA EN LA ADQUISICIÓN DE BIENES INMUEBLES A NO RESIDENTES SIN ESTABLECIMIENTO PERMANENTE Y SE ESTABLECEN LAS CONDICIONES GENERALES Y EL PROCEDIMIENTO PARA SU PRESENTACIÓN
+
+
+
+BON N.º 123 - 28/06/2013; corr. err., BON 26/07/2013
+
+
+
+Preámbulo
+
+Artículo 1. Aprobación del modelo 210 .
+
+Artículo 2. Contenido del modelo 210.
+
+Artículo 3. Obligados a presentar el modelo 210.
+
+Artículo 4. Plazo de presentación e ingreso del modelo 210.
+
+Artículo 5. Aprobación del modelo 211, obligados a su presentación y plazo de presentación e ingreso .
+
+Artículo 6. Formas de presentación de los modelos 210 y 211 .
+
+Artículo 7. Habilitación y condiciones generales para la presentación electrónica de los modelos 210 y 211 .
+
+Artículo 8. Procedimiento para la presentación electrónica de los modelos 210 y 211 .
+
+Artículo 9. Lugar de presentación e ingreso de los modelos 210 y 211 .
+
+Artículo 10. Solicitud de devolución por aplicación de convenio, relativa al Gravamen especial sobre los premios de determinadas loterías y apuestas .
+
+Artículo 11. Documentación que debe adjuntarse al modelo 210 .
+
+Artículo 12. Solicitud de devolución mediante un procedimiento especial de declaración y acreditación en el caso de entidades de gestión colectiva de derechos de la propiedad intelectual .
+
+Artículo 13. Procedimiento especial de declaración y de acreditación en el caso de ganancias exentas derivadas de la transmisión de derechos de suscripción procedentes de valores .
+
+Disposición Adicional Primera. Rentas obtenidas por medio de establecimiento permanente .
+
+Disposición Adicional Segunda. Operaciones en divisas.
+
+Disposición Adicional Tercera. Certificado de residencia fiscal en España.
+
+Disposición Adicional Cuarta. Códigos de países o territorios.
+
+Disposición Derogatoria Única. Derogación normativa.
+
+Disposición Final Única. Entrada en vigor.
+
+  ANEXO I . 
+ANEXO I 
+
+  ANEXO II . 
+ANEXO II 
+
+  ANEXO III. 
+ANEXO III
+
+  ANEXO IV. 
+ANEXO IV
+
+
+
+
+Preámbulo
+
+El Convenio Económico entre el Estado y la Comunidad Foral de Navarra, establece en el artículo 28  que en la exacción del Impuesto sobre la Renta de no Residentes, la Comunidad Foral aplicará normas sustantivas y formales del mismo contenido que las establecidas en cada momento por el Estado, atribuyéndole competencia para la aprobación de modelos de declaración e ingreso del Impuesto que contengan al menos, los mismos datos que los del territorio común, así como para señalar plazos de ingreso que no difieran sustancialmente de los señalados por la Administración del Estado.
+
+La regulación del Impuesto se encuentra contenida en el Texto Refundido de la Ley del Impuesto sobre la Renta de no Residentes, aprobado mediante Real Decreto Legislativo 5/2004, de 5 de marzo, y en el Reglamento que lo desarrolla, aprobado por Real Decreto 1776/2004, de 30 de julio.
+
+Los anteriores modelos 210 y 211 fueron aprobados por la Orden Foral 72/2000, de 25 de abril, del Consejero de Economía y Hacienda, por la que se aprobaban los modelos 210 y 215  y por la Orden Foral 278/2001, de 9 de noviembre, del Consejero de Economía y Hacienda, por la que se aprobaban los modelos 211 y 212 en euros, del Impuesto sobre la Renta de no Residentes, entre otros. Los modelos 210 y 211 deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente y la retención practicada en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente respectivamente.
+
+Habiéndose producido modificaciones normativas en la determinación de la base imponible correspondiente a contribuyentes residentes en otros Estados miembros de la Unión Europea, con incidencia en la liquidación del Impuesto, a través de la Ley 2/2010, de 1 de marzo, por la que se trasponen determinadas Directivas en el ámbito de la imposición indirecta y se modifica la Ley del Impuesto sobre la Renta de no Residentes para adaptarla a la normativa comunitaria, se hace preciso introducir algunos cambios en el modelo de autoliquidación 210, para incorporar casillas destinadas a reflejar los gastos deducibles que puedan acreditar esos contribuyentes.
+
+Asimismo, se incorporan nuevas casillas destinadas a poner de manifiesto, cuando proceda, el efecto de los límites de imposición establecidos en algunos Convenios para evitar la doble imposición, que al calcularse, en general, sobre rendimientos brutos, obliga a modificar el anterior formato de liquidación. En este sentido, hay que poner de manifiesto que la liquidación se practicará, en todo caso, aplicando la normativa interna y, cuando corresponda tener en cuenta un límite de imposición de Convenio, se aplicará mediante una reducción de la cuota.
+
+Con el propósito de simplificar la variedad de modelos que pueden ser utilizados, así como para mejorar la gestión de los mismos, se ha eliminado el modelo 215 de declaración colectiva y el modelo 212 de declaración de rentas derivadas de transmisiones de bienes inmuebles, que pasan a declararse en el modelo 210. No obstante, se mantiene el plazo de presentación de la autoliquidación del derogado modelo 212.
+
+Dado que se venía utilizando el modelo 215 para declarar trimestralmente las rentas obtenidas, en el modelo 210 bajo ciertas condiciones, se podrán agrupar estas rentas, siempre que puedan ser calificadas con el mismo código de tipo de renta, procedan del mismo pagador y sea aplicable el mismo tipo de gravamen. Cuando se opte por declarar agrupando rentas, el periodo de agrupación será trimestral en el caso de autoliquidaciones con resultado a ingresar, o anual en el caso de autoliquidaciones con resultado a devolver o cuota cero.
+
+Por otro lado y en lo que a la forma de presentación e ingreso se refiere, se posibilita la presentación del modelo 210 por vía telemática. Asimismo, se establece la desaparición del papel preimpreso, por lo que los modelos 210 y 211 podrán presentarse en soporte papel obtenido exclusivamente mediante el servicio de generación de impresos desarrollado por Hacienda Tributaria de Navarra.
+
+En las disposiciones adicionales se mantiene la regulación relativa a determinados aspectos referentes a la tributación de no residentes mediante establecimiento permanente, las operaciones en divisas, los modelos de certificados que deben expedir las oficinas gestoras acreditativos de la residencia fiscal en España y, por último, la referencia a códigos de países o territorios.
+
+La Disposición Adicional Séptima  de la Ley Foral 13/2000, de 14 de diciembre, General Tributaria, autoriza al Consejero de Economía y Hacienda para regular mediante Orden Foral los supuestos y condiciones en los que los contribuyentes y las entidades a que se refiere el artículo 90  de dicha Ley Foral, puedan presentar por medios electrónicos, informáticos y telemáticos, declaraciones, comunicaciones, declaraciones-liquidaciones, autoliquidaciones o cualesquiera otros documentos exigidos por la normativa tributaria.
+
+Por todo ello y en virtud de la facultad conferida por el artículo 6  de la Ley Foral 13/2000, de 14 de diciembre, General Tributaria, ordeno:
+
+
+Artículo 1. Aprobación del modelo 210 .
+
+Se aprueba el modelo 210 "Impuesto sobre la Renta de no Residentes. No residentes sin establecimiento permanente. Autoliquidación", cuyo contenido figura en el anexo I.
+
+
+Artículo 2. Contenido del modelo 210.
+
+1. Podrá declararse en este modelo cualquier tipo de renta (rendimientos, rentas imputadas de bienes inmuebles, ganancias patrimoniales).
+
+Se utilizará tanto para declarar de forma separada cada devengo de renta como para declarar de forma agrupada varias rentas obtenidas en un periodo determinado, de acuerdo con las siguientes reglas:
+
+a) Rentas derivadas de transmisiones de bienes inmuebles: se declarará de forma separada cada devengo de renta. Excepcionalmente, cuando el inmueble objeto de transmisión sea de titularidad compartida por un matrimonio en el que ambos cónyuges sean no residentes, se podrá realizar una única autoliquidación. En el caso de pérdidas, también se deberá presentar esta autoliquidación si se desea ejercer el derecho a la devolución de la retención que hubiese sido practicada.
+
+b) Resto de rentas: podrán agruparse varias rentas obtenidas por un mismo contribuyente siempre que correspondan al mismo código de tipo de renta, procedan del mismo pagador, les sea aplicable el mismo tipo de gravamen y, además, si derivan de un bien o derecho, procedan del mismo bien o derecho. No obstante, tratándose de rendimientos de inmuebles arrendados o subarrendados no sujetos a retención podrán agruparse con esos mismos requisitos excepto el relativo a rentas que procedan del mismo pagador, si bien cuando se declaren rendimientos de inmuebles procedentes de varios pagadores será necesario indicar un código específico de tipo de renta, el 35 .
+
+En ningún caso las rentas agrupadas pueden compensarse entre sí.
+
+El periodo de agrupación será trimestral si se trata de autoliquidaciones con resultado a ingresar, o anual si se trata de autoliquidaciones de cuota cero o con resultado a devolver. No obstante, el periodo de agrupación será anual en el caso de rentas derivadas del arrendamiento o subarrendamiento de inmuebles .
+
+2. Cuando las rentas declaradas sean rentas imputadas de inmuebles urbanos o rentas derivadas de transmisiones de bienes inmuebles, debe figurar como persona que realiza la liquidación el propio contribuyente.
+
+3. Al tiempo de presentar la liquidación, se ingresará la deuda tributaria o se solicitará la devolución resultante de la autoliquidación practicada.
+
+
+Artículo 3. Obligados a presentar el modelo 210.
+
+1. Están obligados a presentar la autoliquidación los contribuyentes del Impuesto sobre la Renta de no Residentes que obtengan rentas sujetas al mismo en territorio navarro sin mediación de establecimiento permanente.
+
+2. No obstante lo dispuesto en el apartado 1 anterior, los contribuyentes del citado Impuesto no estarán obligados a presentar la autoliquidación correspondiente a las rentas respecto de las que se hubiese practicado retención o efectuado el ingreso a cuenta del Impuesto a que se refiere el artículo 31  del Texto Refundido de la Ley del Impuesto sobre la Renta de no Residentes, ni respecto de aquellas rentas sujetas a retención o ingreso a cuenta pero exentas en virtud de lo previsto en el artículo 14  de la Ley del Impuesto o en un Convenio de doble imposición que resulte aplicable.
+
+3. En particular están obligados a presentar la declaración del Impuesto:
+
+a) Los contribuyentes que obtengan rentas sujetas al Impuesto exceptuadas de la obligación de retener e ingresar a cuenta de acuerdo con el artículo 10.3  del Reglamento del Impuesto.
+
+b) Las personas físicas no residentes por la renta imputada de los bienes inmuebles a que se refiere el artículo 24.5  de la Ley del Impuesto.
+
+c) Los contribuyentes que obtengan rendimientos satisfechos por personas que no tengan la condición de obligado a practicar retenciones o ingresos a cuenta.
+
+d) Tratándose de transmisiones de bienes inmuebles situados en territorio navarro, los contribuyentes no residentes deberán declarar, e ingresar en su caso, el impuesto definitivo, en los términos previstos en el artículo 14.4  del Reglamento del Impuesto.
+
+4. Cuando se haya practicado una retención o ingreso a cuenta sobre la renta del contribuyente superior a la cuota del Impuesto, se presentará autoliquidación para solicitar la devolución del exceso sobre la citada cuota, de acuerdo con lo establecido en el artículo 16  del Reglamento del Impuesto.
+
+5. Al efectuar la autoliquidación de las rentas obtenidas en territorio navarro sin mediación de establecimiento permanente, se determinará e ingresará, en su caso, la deuda tributaria correspondiente. En el caso de que sea de aplicación alguna de las exenciones previstas en la normativa del Impuesto, se practicará la autoliquidación teniendo en cuenta las mismas.
+
+6. Cuando las rentas declaradas hayan sido obtenidas por contribuyentes que sean residentes en países con los que España tenga suscrito Convenio para evitar la doble imposición y se acojan al mismo, determinarán en su autoliquidación la deuda tributaria aplicando directamente los límites de imposición o las exenciones previstos en el respectivo Convenio.
+
+7. Podrán también efectuar la autoliquidación e ingreso, en su caso, de la deuda tributaria los responsables solidarios definidos en el artículo 9  de la Ley del Impuesto. Además, tratándose de declaraciones con solicitud de devolución, podrán también presentarlas los sujetos obligados a retener.
+
+
+Artículo 4. Plazo de presentación e ingreso del modelo 210.
+
+El plazo de presentación y, en su caso, ingreso, en función del tipo de renta declarada será el siguiente:
+
+1. En el caso de rentas derivadas de transmisiones de bienes inmuebles, las autoliquidaciones se presentarán, con independencia del resultado de la liquidación, en el plazo de tres meses una vez transcurrido el plazo de un mes desde la fecha de la transmisión del bien inmueble.
+
+2. En el caso de renta imputada de bienes inmuebles situados en territorio navarro, el año natural siguiente a la fecha de devengo, que es el último día del año.
+
+3. Para el resto de rentas:
+
+a) Autoliquidaciones con resultado a ingresar: el plazo de presentación e ingreso serán los veinte primeros días naturales siguientes a la finalización de cada trimestre, en relación con las rentas devengadas en el mismo, salvo en el caso de las declaraciones correspondientes al segundo y cuarto trimestres, cuyos plazos finalizan los días 5 de agosto y 31 de enero, respectivamente.
+
+En caso de agrupación anual, el plazo de presentación e ingreso será el mes de enero del año siguiente al de devengo .
+
+b) Autoliquidaciones de cuota cero: el plazo de presentación será del 1 al 31 de enero del año natural siguiente al de devengo de las rentas declaradas.
+
+c) Autoliquidaciones con resultado a devolver: Podrán presentarse a partir del 1 de febrero del año siguiente al de devengo de las rentas declaradas y dentro del plazo de cuatro años contados desde el término del periodo de declaración e ingreso de la retención. Este plazo de cuatro años resultará aplicable a todas las autoliquidaciones, con independencia de si el origen de la devolución deriva de una norma interna o de un Convenio para evitar la doble imposición, incluso en aquellos supuestos en los que la Orden de desarrollo del Convenio fije un plazo inferior. Se entenderá concluido el plazo para la presentación de la autoliquidación en la fecha de su presentación.
+
+
+Artículo 5. Aprobación del modelo 211, obligados a su presentación y plazo de presentación e ingreso .
+
+1. Se aprueba el modelo 211 “Impuesto sobre la Renta de no Residentes. Retención en la adquisición de bienes inmuebles a no residentes sin establecimiento permanente”, cuyo contenido figura en el anexo II.
+
+Este modelo consta de dos ejemplares: “Ejemplar para el adquirente”, y “Ejemplar para el transmitente no residente”. En caso de que haya más de un adquirente y/o transmitente, el modelo se cumplimentará con la información correspondiente a cada uno de ellos.
+
+2. Este modelo deberá ser utilizado por los adquirentes, residentes o no residentes, tanto personas físicas como jurídicas, de bienes inmuebles situados en Navarra a no residentes sin establecimiento permanente. Los adquirentes están obligados a retener e ingresar el porcentaje fijado legalmente, o a efectuar el ingreso a cuenta correspondiente, sobre la contraprestación acordada, en concepto de pago a cuenta del Impuesto que posteriormente corresponda pagar al no residente, según el artículo 25.2  del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes y el 14  de su Reglamento.
+
+3. Conforme a lo previsto en el artículo 14.3  del Reglamento del impuesto, el obligado a retener o ingresar a cuenta deberá presentar autoliquidación del pago a cuenta e ingresar el importe en Hacienda Foral de Navarra en el plazo de un mes a partir de la fecha de transmisión del inmueble.
+
+Una vez efectuado el ingreso, entregará el “Ejemplar para el transmitente no residente” a dicha persona, que lo utilizará a efectos de justificar el pago cuando presente declaración por la renta derivada de la transmisión, y mantendrá en su poder el “Ejemplar para el adquirente” como justificante del ingreso efectuado.
+
+
+Artículo 6. Formas de presentación de los modelos 210 y 211 .
+
+Los modelos 210 y 211 podrán presentarse:
+
+a) En papel impreso (predeclaración), generado exclusivamente mediante la utilización del servicio de impresión desarrollado a estos efectos por la Hacienda Foral de Navarra.
+
+Para su obtención se deberá cumplimentar online el formulario que proporcione la Hacienda Foral de Navarra a través de su portal de Internet y se procederá a su impresión. El impreso (en formato PDF) se considera una “predeclaración”, careciendo de validez legal mientras no sea activada. Para su activación se deberá presentar en las oficinas de Hacienda Foral de Navarra debidamente firmado. En el caso del modelo 210, se presentará acompañado de la documentación que proceda conforme al artículo 11.
+
+Los datos impresos en la “predeclaración” prevalecerán sobre las alteraciones o correcciones manuales que pudieran contener, por lo que estas no producirán efectos ante la Administración tributaria.
+
+b) Por vía electrónica a través de Internet, de acuerdo con las condiciones generales y el procedimiento establecidos en los artículos 7 y 8.
+
+
+Artículo 7. Habilitación y condiciones generales para la presentación electrónica de los modelos 210 y 211 .
+
+1. La presentación electrónica por Internet de los modelos 210 y 211 podrá ser efectuada:
+
+a) Por los obligados a su presentación o, en su caso, sus representantes.
+
+b) Por las personas o entidades que ostenten la condición de colaboradores sociales en la aplicación de los tributos, de acuerdo con lo dispuesto en el artículo 90  de la Ley Foral 13/2000, de 14 de diciembre, General Tributaria, y en la Orden Foral 130/2009, de 29 de junio, por la que se aprueba el Acuerdo de colaboración externa para realizar en representación de terceras personas la presentación por vía telemática de declaraciones, comunicaciones y otros documentos tributarios y la tramitación telemática del pago de deudas tributarias.
+
+Los presentadores deberán tener en cuenta las normas técnicas que se requieren para poder efectuar la citada presentación electrónica y que se encuentran publicadas en la página web del Gobierno de Navarra, en el apartado correspondiente a la Hacienda Foral de Navarra.
+
+2. La presentación electrónica por Internet de los modelos 210 y 211 estará sujeta al cumplimiento de las siguientes condiciones generales:
+
+a) El presentador deberá disponer de número de identificación fiscal (NIF).
+
+b) La presentación electrónica se efectuará de acuerdo con las condiciones generales establecidas en el artículo 2  de la Orden Foral 132/2009, de 3 de julio, del consejero de Economía y Hacienda, regulando los supuestos de presentación obligada por vía telemática o en soporte legible por ordenador de determinadas declaraciones tributarias.
+
+
+Artículo 8. Procedimiento para la presentación electrónica de los modelos 210 y 211 .
+
+El procedimiento para la presentación electrónica por Internet, desde el formulario web, de las declaraciones será el siguiente:
+
+1.º Acceder al trámite de presentación del modelo 210 o 211 de la página web del Gobierno de Navarra, en el apartado correspondiente a la Hacienda Foral de Navarra.
+
+2.º Cumplimentar todos los datos necesarios del formulario web.
+
+3.º Una vez cumplimentada la declaración, utilizar la opción de enviar.
+
+El sistema validará la declaración cuando esta sea correcta. Cuando se detecten errores se comunicarán a través del formulario y no se permitirá presentar la declaración hasta que sean corregidos.
+
+Una vez que la declaración sea correcta, el sistema comunicará el número asignado a la declaración presentada, y la posibilidad de imprimirla para obtener un justificante de la misma. El contribuyente deberá conservar la declaración aceptada.
+
+
+Artículo 9. Lugar de presentación e ingreso de los modelos 210 y 211 .
+
+1. Lugar de presentación de los modelos en papel impreso.
+
+Los modelos 210 y 211 en formato papel se presentarán en cualquiera de las oficinas que el Organismo Autónomo Hacienda Foral de Navarra dispone para la atención al público.
+
+2. Ingreso o solicitud de devolución.
+
+a) Al tiempo de presentar el modelo 210 se ingresará la deuda tributaria o se solicitará la devolución resultante de la autoliquidación practicada.
+
+En el caso de autoliquidaciones a ingresar, el ingreso se realizará en cualquier entidad financiera colaboradora de Hacienda Foral de Navarra utilizando la Carta de pago modelo 773. En las autoliquidaciones presentadas por vía electrónica a través de Internet está prevista, además, la posibilidad de pago telemático, siguiendo las indicaciones de pago que aparezcan en pantalla una vez cumplimentado el formulario web.
+
+Cuando de la autoliquidación resulte cantidad a devolver se utilizará la declaración correspondiente para solicitar la devolución, consignando los datos que identifiquen la cuenta bancaria en la que deba efectuarse la transferencia. La entidad bancaria deberá certificar los datos de la cuenta y de su titular. El titular de la cuenta bancaria ha de ser el contribuyente, el responsable solidario, el retenedor o el representante que presente la declaración.
+
+Cuando la devolución se solicite en una cuenta cuyo titular sea el representante del contribuyente que no sea a la vez un responsable solidario o un retenedor, será preciso que conste acreditada la representación en el Departamento de Economía y Hacienda y que, en el documento en que se acredite, conste una cláusula que le faculte para recibir la devolución a favor del contribuyente.
+
+Cuando presente la autoliquidación un representante, un retenedor o un responsable solidario, también podrá consignarse una cuenta bancaria del contribuyente para efectuar la devolución.
+
+b) En el caso de declaraciones a ingresar resultantes del modelo 211 el ingreso se realizará en cualquier entidad financiera colaboradora de Hacienda Foral de Navarra utilizando la Carta de pago modelo 774.
+
+En las declaraciones presentadas por vía electrónica a través de Internet está prevista, además, la posibilidad de pago telemático o de pago mediante transferencia bancaria. En caso de que se opte por la primera, se seguirán las indicaciones de pago que aparezcan en pantalla una vez cumplimentado el formulario web. Si se opta por la segunda, habrá que estar a lo dispuesto en la Orden Foral 145/2022, de 30 de diciembre, de la consejera de Economía y Hacienda, por la que se regula el procedimiento y las condiciones para el pago de deudas mediante transferencia  .
+
+
+Artículo 10. Solicitud de devolución por aplicación de convenio, relativa al Gravamen especial sobre los premios de determinadas loterías y apuestas .
+
+Los contribuyentes no residentes sin establecimiento permanente que hubieran obtenido premios sujetos al Gravamen especial sobre los premios de determinadas loterías y apuestas, cuando hubieran ingresado en la Hacienda Tributaria de Navarra cantidades, o soportado retenciones a cuenta de ese gravamen especial en relación con premios de loterías y apuestas organizados por órganos o entidades de la Comunidad Foral de Navarra, en cuantías superiores a las que se deriven de la aplicación de un convenio para evitar la doble imposición, podrán solicitar dicha aplicación y la devolución consiguiente mediante la autoliquidación modelo 210 aprobada en el artículo 1, en la forma, lugar, plazos y con la documentación establecidos para dicha autoliquidación.
+
+
+Artículo 11. Documentación que debe adjuntarse al modelo 210 .
+
+1. En general, cuando se practique la autoliquidación aplicando las exenciones de la normativa interna española, por razón de la residencia del contribuyente, se adjuntará un certificado de residencia, expedido por las autoridades fiscales del país de residencia, que justifique esos derechos.
+
+No obstante, cuando las entidades a que se refiere el apartado 1 de la disposición adicional tercera del Reglamento del Impuesto sobre la Renta de no residentes, aprobado por el Real Decreto 1776/2004, de 30 de julio, apliquen la exención prevista en el artículo 14.1.c) del Texto Refundido de la Ley del Impuesto sobre la Renta de no Residentes, aprobado por el Real Decreto legislativo 5/2004, de 5 de marzo, la acreditación de la residencia podrá efectuarse conforme a lo dispuesto en dicha disposición adicional.
+
+Asimismo, cuando se apliquen las exenciones previstas en el artículo 14.1.k) y 14.1.l) del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, los fondos de pensiones o instituciones de inversión colectiva sometidos a un régimen específico de supervisión o registro administrativo, justificarán el derecho a la exención, en lugar de con el certificado de residencia, de la siguiente forma:
+
+a) En el caso de la exención del artículo 14.1.k), adjuntarán una declaración formulada por el representante del fondo de pensiones en la que se manifieste el cumplimiento de los requisitos legales, ajustada al modelo del anexo VI de la Orden EHA/3316/2010, de 17 de diciembre.
+
+No obstante, tratándose de una institución de previsión social regulada por la Directiva 2016/2341 del Parlamento Europeo y del Consejo, de 14 de diciembre de 2016, relativa a las actividades y la supervisión de los fondos de pensiones de empleo, podrán adjuntar un certificado emitido por la autoridad competente del Estado en que la institución se encuentre establecida, en los mismos términos y con igual validez indefinida que el previsto en el apartado 2.a), segundo párrafo, de la disposición adicional tercera del Reglamento del Impuesto sobre la Renta de no Residentes .
+
+b) En el caso de la exención del artículo 14.1.l), adjuntarán un certificado emitido por la autoridad competente del Estado miembro de origen de la institución en el que se manifieste que dicha institución cumple las condiciones establecidas en la Directiva 2009/65/CE del Parlamento Europeo y del Consejo, de 13 de julio de 2009, por la que se coordinan las disposiciones legales, reglamentarias y administrativas sobre determinados organismos de inversión colectiva en valores mobiliarios (OICVM). La autoridad competente será la designada conforme a lo previsto en el artículo 97  de la citada Directiva.
+
+Cuando se practique la autoliquidación aplicando las exenciones o la reducción de la cuota por un límite de imposición de un Convenio para evitar la doble imposición suscrito por España, se adjuntará un certificado de residencia fiscal expedido por la autoridad fiscal correspondiente que justifique esos derechos, en el que deberá constar expresamente que el contribuyente es residente en el sentido definido en el Convenio. No obstante, cuando se practique la autoliquidación aplicando la reducción de la cuota por un límite de imposición fijado en un Convenio desarrollado mediante una Orden en la que se establezca la utilización de un formulario específico, deberá aportarse el mismo en lugar del certificado.
+
+Cuando, conforme al artículo 24.6  de la Ley del Impuesto sobre la Renta de no Residentes, se deduzcan gastos para la determinación de la base imponible, por tratarse de contribuyentes residentes en otro Estado miembro de la Unión Europea, se adjuntará un certificado de residencia fiscal en el Estado que corresponda expedido por la autoridad fiscal de dicho Estado.
+
+Los certificados de residencia y la declaración a que se refiere este apartado tendrán un plazo de validez de un año a partir de la fecha de su expedición. No obstante, los certificados de residencia tendrán una validez indefinida cuando el contribuyente sea un Estado extranjero, alguna de sus subdivisiones políticas o administrativas o sus entidades locales. Asimismo, tendrá validez indefinida el certificado emitido por la autoridad competente del Estado miembro de origen de la institución de inversión colectiva a que se refiere la letra b) citada anteriormente en este mismo apartado, en tanto no se modifiquen los datos contenidos en el mismo .
+
+2. Cuando se deduzcan de la cuota retenciones o ingresos a cuenta, se adjuntarán, en todo caso, los documentos justificativos de los mismos.
+
+En el caso de que la renta declarada sea dividendos o intereses derivados de valores negociables, cuyo pago se realiza a través de una cadena de intermediarios financieros situados en España y en el extranjero, la Administración Tributaria podrá solicitar la acreditación de la trazabilidad de la cadena de pago en el extranjero.
+
+Se podrá acreditar la trazabilidad cuando, conforme a lo dispuesto en la Orden Foral 183/2009, de 10 de noviembre, del consejero de Economía y Hacienda, por la que se aprueba el modelo 296 “Impuesto sobre la Renta de no Residentes. No residentes sin establecimiento permanente. Declaración anual de retenciones e ingresos a cuenta”, se presenten los anexos al tipo de registro 2 del modelo 296 denominados “Valores negociables. Relación de pago a contribuyentes (Tipo de Hoja “A”)” y “Valores negociables. Relación de certificados de pago (Tipo de Hoja “B”)”, consignando en ellos el número de justificante de la autoliquidación modelo 210 con solicitud de devolución relativa al valor negociable, fecha de devengo y contribuyente .
+
+3. En el supuesto de autoliquidaciones realizadas por responsables solidarios que sean depositarios de valores bastará con que los mismos conserven a disposición de la Administración Tributaria los certificados de residencia, formularios o declaraciones a que se refiere el apartado 1 anterior, durante el período de prescripción.
+
+Cuando, conforme a lo dispuesto en la Orden Foral 183/2009, exista obligación de presentar los anexos al tipo de registro 2 del modelo 296 denominados “Valores negociables. Relación de pago a contribuyentes (Tipo de Hoja “A”)” y “Valores negociables. Relación de certificados de pago (Tipo de Hoja “B”)”, las entidades obligadas deberán presentar dichos anexos en el plazo previsto en el artículo 5 de dicha orden foral, consignando en ellos el número de justificante de la autoliquidación modelo 210 con solicitud de devolución relativa al valor negociable, fecha de devengo y contribuyente, pudiéndose entender con ello acreditada la trazabilidad de la cadena de pago en el extranjero .
+
+4. En el caso de autoliquidaciones con solicitud de devolución, se adjuntará un justificante acreditativo de la identificación y titularidad de la cuenta. Además, cuando la devolución se solicite en una cuenta cuyo titular sea el representante legal del contribuyente, será preciso adjuntar el documento que acredite la representación, en el que deberá constar una cláusula que faculte al citado representante legal para recibir la devolución a su nombre por cuenta del contribuyente.
+
+
+Artículo 12. Solicitud de devolución mediante un procedimiento especial de declaración y acreditación en el caso de entidades de gestión colectiva de derechos de la propiedad intelectual .
+
+1. En el caso de las entidades residentes en España autorizadas para ejercer la gestión colectiva de derechos de la propiedad intelectual, que hayan practicado retenciones aplicando el tipo de gravamen de la normativa interna y que realicen las autoliquidaciones del Impuesto sobre la Renta de no Residentes, modelo 210, con solicitud de devolución en aplicación de las disposiciones de un Convenio para evitar la doble imposición, relativas a rendimientos comprendidos en las liquidaciones de pagos efectuados por esas entidades a otras entidades de gestión colectiva de derechos de naturaleza similar residentes en otros países con las que hayan suscrito contratos de representación, recíproca o unilateral, se podrá utilizar un procedimiento especial de declaración y acreditación siempre que concurran las siguientes condiciones:
+
+a) los perceptores sean residentes, en el sentido del Convenio, del mismo país que la entidad de gestión colectiva extranjera.
+
+b) los rendimientos correspondientes a cada uno de dichos perceptores durante el año natural sean inferiores a 10.000 euros.
+
+La cumplimentación del modelo 210, con solicitud de devolución, se efectuará con agrupación anual, haciendo constar las entidades residentes en España autorizadas para la gestión colectiva de derechos de propiedad intelectual que realizan la autoliquidación en su condición de retenedor, consignando en el apartado destinado al contribuyente a la entidad de gestión colectiva extranjera y señalando como código de tipo de renta el código específico que identifica este procedimiento especial.
+
+2. A los efectos del cumplimiento de la normativa sobre documentación prevista en el apartado 1 del artículo 11 de esta Orden Foral, en lugar de la citada en dicho apartado, podrán adjuntar los siguientes documentos:
+
+a) Certificado emitido por la entidad de gestión colectiva extranjera que contenga la relación de perceptores, con indicación de que son residentes, en el sentido del Convenio, del mismo país del que es residente la entidad extranjera, el importe íntegro de los derechos correspondientes a cada uno de ellos y la suma de esos importes.
+
+b) Certificado de residencia fiscal de la entidad extranjera expedido por las autoridades fiscales de su país. Este certificado tendrá una validez de un año a partir de su fecha de expedición.
+
+Este procedimiento especial de acreditación se entenderá sin perjuicio de lo dispuesto en las Órdenes de desarrollo de los Convenios para evitar la doble imposición que estén vigentes en el momento del devengo, en las que se establezca, en el procedimiento de devolución, la utilización de un formulario específico o la aportación de un certificado de residencia fiscal. Asimismo, se entenderá sin perjuicio de la facultad de la Administración tributaria de exigir, en su caso, a cualquier beneficiario que perciba rendimientos comprendidos en estos pagos efectuados por entidades de gestión colectiva, la justificación de su derecho a la aplicación del Convenio mediante un certificado de residencia fiscal, expedido por las autoridades fiscales del país de residencia, donde conste que es residente en el sentido del Convenio.
+
+
+Artículo 13. Procedimiento especial de declaración y de acreditación en el caso de ganancias exentas derivadas de la transmisión de derechos de suscripción procedentes de valores .
+
+1. Tratándose de ganancias exentas, tanto por normativa interna como por convenio, derivadas de la transmisión de derechos de suscripción procedentes de valores, se podrá utilizar un procedimiento especial de declaración y acreditación de acuerdo con las siguientes reglas:
+
+a) En una misma autoliquidación modelo 210 de cuota cero podrán agruparse ganancias exentas obtenidas por contribuyentes que sean residentes del mismo país, procedentes de valores de un mismo emisor.
+
+b) La persona que realiza la autoliquidación podrá ser bien un representante común a todos los contribuyentes o bien la entidad depositaria o gestora de los valores que tenga encomendado su depósito o gestión.
+
+c) Las ganancias exentas correspondientes a cada uno de los contribuyentes durante el año natural sean inferiores a 500 euros por emisor.
+
+Al cumplimentar la autoliquidación modelo 210 de cuota cero se tendrán en cuenta las siguientes particularidades: se marcará agrupación anual; se consignará el código de tipo de renta 36, código específico que identifica este procedimiento especial; en el apartado destinado a “Contribuyente”, en el campo “Apellidos y nombre, razón social o denominación” se hará constar “Procedimiento artículo 13 Orden Foral 231/2013” y en el campo “Residencia fiscal: Código país” el que corresponda al de residencia de los contribuyentes, quedando el resto de campos de este apartado sin contenido; en el apartado “Pagador/retenedor/emisor/adquirente del inmueble” se hará constar el emisor de los valores.
+
+2. A los efectos del cumplimiento de la normativa sobre documentación prevista en el artículo 11.1 de esta Orden Foral, en lugar de la citada en dicho apartado podrá adjuntarse un certificado emitido por el representante o la entidad depositaria o gestora que contenga la relación de contribuyentes, con indicación de los siguientes datos: el país de residencia de los contribuyentes, el importe obtenido por la venta de los derechos de suscripción correspondientes a cada uno de ellos y la suma de estos importes. Asimismo, debe contener una manifestación expresa de que dispone de las declaraciones formuladas por cada contribuyente incluido en la relación alegando su condición de residente fiscal en el país de residencia consignado en la autoliquidación.
+
+3. Si la persona que realiza la autoliquidación es la entidad depositaria o gestora de los valores no será preciso adjuntar la documentación a la autoliquidación y bastará con que la conserven a disposición de la Administración tributaria durante el periodo de prescripción.
+
+4. Este procedimiento especial de acreditación se entenderá sin prejuicio de la facultad de la Administración tributaria de exigir, en su caso, a cualquier contribuyente incluido en la relación citada en el número 2 anterior la justificación de su derecho a la aplicación de la exención mediante un certificado de residencia fiscal expedido por las autoridades fiscales del país de residencia.
+
+
+Disposición Adicional Primera. Rentas obtenidas por medio de establecimiento permanente .
+
+1. A los establecimientos permanentes a que se refiere el artículo 18.4 del texto refundido de la Ley del impuesto sobre la Renta de no Residentes, que determinen el Impuesto conforme a lo dispuesto en la letra a) del mencionado artículo, les serán de aplicación las normas sobre presentación de autoliquidaciones relativas a las rentas obtenidas sin mediación de establecimiento permanente contenidas en esta Orden Foral.
+
+2. De acuerdo con lo establecido en el artículo 19.2 del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, en el caso de que se transfieran al extranjero rentas obtenidas por una entidad no residente a través de un establecimiento permanente, se utilizará para efectuar la autoliquidación e ingreso de esta imposición la autoliquidación modelo 210, aprobada en el artículo 1.
+
+El plazo de presentación e ingreso serán los veinte primeros días naturales siguientes a la finalización de cada trimestre, salvo en el caso de las declaraciones correspondientes al segundo y cuarto trimestre, cuyos plazos finalizan los días 5 de agosto y 31 de enero, respectivamente, según que la fecha de transferencia al extranjero de las rentas esté comprendida en el trimestre natural anterior.
+
+3. Para establecimientos permanentes cuyas operaciones no cierran un ciclo mercantil completo, el porcentaje a que se refiere el artículo 18.3.b).1.ª del texto refundido de la Ley del Impuesto sobre la Renta de no residentes será del 15 por 100.
+
+
+Disposición Adicional Segunda. Operaciones en divisas.
+
+A efectos de cumplimentar las autoliquidaciones que se aprueban en la presente Orden Foral, las operaciones efectuadas en unidad monetaria distinta del euro deberán convertirse en esta última moneda, aplicando el tipo de cambio oficial publicado por el Banco Central Europeo y comunicado al Banco de España conforme a lo dispuesto en el artículo 36  de la Ley 46/1998, de 17 de diciembre, sobre introducción del euro, en la fecha en que se hubiesen devengado los ingresos o producidos los gastos correspondientes. Si en dicha fecha no se hubiera publicado oficialmente el tipo de cambio, se tomará el último tipo de cambio oficial publicado con anterioridad.
+
+Si no existe tipo de cambio oficial, se tomará como referencia el valor de mercado de la unidad monetaria.
+
+
+Disposición Adicional Tercera. Certificado de residencia fiscal en España.
+
+1. Se aprueban los modelos de certificados que deben expedir, a solicitud de los interesados, las oficinas gestoras para acreditar la residencia fiscal en España. Estos certificados se utilizarán cuando se deba acreditar la residencia fiscal en España ante Administraciones Tributarias de otros países o territorios o ante pagadores u otros operadores económicos en el exterior.
+
+Asimismo, se utilizarán para acreditar la sujeción al Impuesto sobre la Renta de las Personas Físicas o al Impuesto sobre Sociedades por aquellos contribuyentes o sujetos pasivos que vayan a transmitir mediante contraprestación un bien inmueble situado en España, a que se refiere el artículo 14.2.a) del Reglamento del Impuesto sobre la Renta de no Residentes, aprobado por el Real Decreto 1776/2004, de 30 de julio.
+
+2. Los modelos de certificado de residencia fiscal que expedirán las oficinas gestoras serán los que figuran en los Anexos III y IV de la presente Orden Foral. El Anexo III, “Certificado de residencia fiscal en España” se expedirá para acreditar, en general, la residencia en territorio español. El Anexo IV, “Certificado de residencia en España. Convenio”, se emitirá para acreditar la condición de residente en España a los efectos de las disposiciones de un Convenio para evitar la doble imposición suscrito por España.
+
+3. Adicionalmente, se podrá solicitar que se haga constar en los certificados que el contribuyente o sujeto pasivo ha puesto en conocimiento de la Administracion tributaria de Navarra la obtención de una renta, cuya descripción deberá ser facilitada por el interesado, en un determinado país o territorio.
+
+En particular, cuando la solicitud se realice por contribuyentes del Impuesto sobre la Renta de las Personas Físicas a efectos de la aplicación de la exoneración de la retención prevista en el artículo 13.1.b) de la Directiva 2003/48/CE del Consejo, de 3 de junio, en materia de fiscalidad de los rendimientos del ahorro en forma de pago de intereses, o en los Acuerdos o Convenios a que se refiere el artículo 17 de la citada Directiva, deberán facilitarse los siguientes datos:
+
+a) Nombre, dirección y Número de Identificación Fiscal del perceptor.
+
+b) Nombre y dirección de la persona o entidad que abone las rentas.
+
+c) Número de cuenta del perceptor de las rentas o, en su defecto, la identificación del crédito.
+
+En el certificado que se expida a estos efectos, se harán constar, en el apartado previsto para los datos adicionales:
+
+- Si los rendimientos se obtienen en Austria, Bélgica o Luxemburgo, la expresión:
+
+“A efectos de la aplicación de la exoneración de la retención prevista en el artículo 13.1.b) de la Directiva 2003/48/CE, del Consejo, de 3 de junio, en materia de fiscalidad de los rendimientos del ahorro en forma de pago de intereses.”
+
+- Si los rendimientos se obtienen en territorios dependientes o asociados a otros Estados miembros o en otros Estados que, conforme a los Acuerdos o Convenios a que se refiere el artículo 17 de la Directiva, implanten la retención y un procedimiento de evitarla mediante este tipo de certificado, la expresión:
+
+“A efectos de la aplicación de la exoneración de la retención prevista en los Acuerdos o Convenios a que se refiere el artículo 17 de la Directiva 2003/48/CE, del Consejo, de 3 de junio, en materia de fiscalidad de los rendimientos del ahorro en forma de pago de intereses.”
+
+- Los datos de las letras a), b) y c) antes mencionadas.
+
+- Que el certificado será válido por un periodo de tres años.
+
+4. Cuando deba acreditarse la sujeción al Impuesto sobre la Renta de las Personas Físicas o al Impuesto sobre Sociedades, por aquellos contribuyentes o sujetos pasivos que vayan a transmitir mediante contraprestación un bien inmueble situado en Navarra, o cuando se requiera acreditar tales circunstancias ante una Administración tributaria extranjera, se podrá solicitar que, en el espacio para datos adicionales, se incluyan las expresiones:
+
+“Está sujeto al Impuesto sobre la Renta de las Personas Físicas” o “Está sujeto al Impuesto sobre Sociedades”.
+
+5. Cuando una Administración Fiscal extranjera exija a los contribuyentes o sujetos pasivos que la acreditación de la residencia fiscal en territorio español se consigne en un formulario propio, podrá accederse a cumplimentar la certificación que contenga dicho formulario siempre que el contenido de la certificación sea equivalente al de los modelos que figuran en los Anexos III y IV.
+
+Si el documento extranjero que se presente para incorporar la certificación no viene expresado en castellano u otra lengua oficial en territorio español, podrá solicitarse al interesado una traducción del mismo.
+
+6. La solicitud podrá realizarse al Organismo Autónomo de Hacienda Tributaria de Navarra por medios telemáticos o en soporte papel, debiendo contener en este caso los siguientes datos:
+
+a) Apellidos y nombre o razón social, domicilio fiscal y Número de Identificación Fiscal del interesado y, en su caso, del representante.
+
+b) Indicación de a qué efectos se solicita el certificado: destinatario, finalidad y, en su caso, país o territorio donde deba surtir efectos.
+
+c) Documentos y justificantes que, en su caso, se aportan junto con la solicitud con el fin de probar la residencia fiscal en territorio español.
+
+d) Si desea solicitar que se haga constar en el certificado los datos adicionales a que se refiere el apartado 3 anterior, descripción de la renta procedente del exterior cuya obtención comunica el interesado. Si se solicita que se haga constar la circunstancia mencionada en el apartado 4, la oportuna indicación en ese sentido.
+
+e) Fecha y firma del interesado o, en su caso, del representante.
+
+7. Efectuadas las comprobaciones oportunas, el órgano de gestión competente, en el plazo máximo de los diez días hábiles siguientes a la solicitud, expedirá el certificado o, en su caso, una comunicación de que no procede acceder a la solicitud.
+
+8. La solicitud y expedición por medios telemáticos se realizará a través de la página Web de la Hacienda Tributaria de Navarra, en la dirección de Internet http://www.hacienda.navarra.es, ajustándose a las condiciones generales previstas en el artículo 7  de la presente Orden Foral.
+
+El contenido de los certificados telemáticos deberá poder ser impreso en soporte papel.
+
+
+Disposición Adicional Cuarta. Códigos de países o territorios.
+
+A efectos de cumplimentar las declaraciones aprobadas en la presente Orden Foral, los códigos de países o territorios serán los aprobados en la Disposición Adicional Única  de la Orden Foral 208/2008, de 24 de noviembre, del Consejero de Economía y Hacienda, por la que se aprueba el modelo 196, del Impuesto sobre la Renta de las Personas Físicas, Impuesto sobre Sociedades e Impuesto sobre la Renta de no Residentes (establecimientos permanentes). Retenciones e ingresos a cuenta sobre rendimientos del capital mobiliario y rentas obtenidos por la contraprestación derivada de cuentas en toda clase de instituciones financieras, incluyendo las basadas en operaciones sobre activos financieros, declaración informativa anual de personas autorizadas y de saldos en cuentas en toda clase de instituciones financieras.
+
+
+Disposición Derogatoria Única. Derogación normativa.
+
+A partir de la entrada en vigor de la presente Orden Foral, queda derogada la Orden Foral 72/2000, de 25 de abril, del Consejero de Economía y Hacienda, por la que se aprueban los modelos 210 y 215  en pesetas y en euros, del Impuesto sobre la Renta de no Residentes, que deben utilizarse para declarar las rentas obtenidas sin mediación de establecimiento permanente, y la Orden Foral 278/2001, de 9 de noviembre, del Consejero de Economía y Hacienda, por la que se aprueban los modelos F-67, F-69, J-10, J-20, J-30, CAT-06, CAT-08, FR-2, 038, 181, 182, 190, 199, 211, 212, 213, 214, 308, 309, 318, 319, 345, 480, 565, 600, 605, 610, 620 y 630 en euros, en lo que se refiera a los modelos 211 y 212.
+
+Igualmente se deroga la Orden Foral 154/1998, de 7 de agosto, del Consejero de Economía y Hacienda, por la que se dictan normas de declaración de los Impuestos sobre la Renta de las Personas Físicas, sobre Sociedades y sobre el Patrimonio, devengados por obligación real, así como del gravamen especial sobre bienes inmuebles de entidades no residentes, se determina el porcentaje de gastos de los establecimientos permanentes cuyas operaciones no cierran un ciclo mercantil, se establece la regla de conversión a moneda nacional de los pagos en moneda extranjera y se regula la certificación acreditativa de la sujeción personal, en lo que se refiera a los modelos 211 y 212 y en lo que aún se mantuviese vigente tras la aprobación de la Orden Foral 72/2000, de 25 de abril, en lo que se refiere a los modelos 210 y 215.
+
+
+Disposición Final Única. Entrada en vigor.
+
+Esta Orden Foral entrará en vigor el día siguiente al de su publicación en el Boletín Oficial de Navarra.
+
+ANEXO I . 
+
+
+ANEXO I 
+
+Vínculo a objeto
+
+
+
+ANEXO II . 
+
+
+ANEXO II 
+
+Vínculo a objeto
+
+
+
+ANEXO III. 
+
+
+ANEXO III
+
+Vínculo a objeto
+
+
+
+ANEXO IV. 
+
+
+ANEXO IV
+
+Vínculo a objeto
+
+
+
+
+
+
+
+[[ID:pie]]
+
+
+
+
+
+
+
+
+Contacte con nosotros |
+Accesibilidad |
+Aviso legal |
+
+
+
+
+
+
+

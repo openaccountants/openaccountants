@@ -1,0 +1,515 @@
+
+
+Seguridad Social: Trabajadores
+
+[[ID:a._B:B14Vr2]]
+
+[[ID:com.ibm.lotus.NavStateUrl]]
+
+[[ID:segsocial]]
+
+[[ID:top]]
+
+[[ID:cookieContainer]]
+
+[[ID:cookies]]
+
+Aviso Cookies
+
+Este sitio web utiliza cookies para que usted tenga una mejor experiencia de usuario. Las cookies no se utilizan para recoger información de carácter personal. Para más información consulte nuestra política de cookies.
+
+Aceptar todas
+
+ Rechazar todas
+
+		    Portal de la Seguridad social
+
+[[ID:search-mm]]
+
+[[ID:query-mm]]
+
+							 Inicio
+
+										Conócenos
+
+								Trabajadores
+
+								Pensionistas
+
+								Empresarios
+
+								Clases Pasivas
+
+								Sugerencias y quejas
+
+								Consultas
+
+								Idiomas
+									 
+									Toggle dropdown menu
+
+Castellano
+
+Català
+
+Galego
+
+Euskara
+
+Valencià
+
+English
+
+Français
+
+				Ir a contenido
+				Desplegar campo de búsqueda
+
+									Sugerencias y quejas
+
+									Consultas
+
+[[ID:top-search-id]]
+
+											Busqueda
+
+										  Castellano
+Toggle dropdown menu
+				                          
+[[ID:lang-menu]]
+
+Castellano
+
+Català
+
+Galego
+
+Euskara
+
+Valencià
+
+English
+
+Français
+
+[[ID:top-search-collapse-id]]
+
+[[ID:formularioBuscador_field]]
+
+											Introduzca su búsqueda       
+											Acceso directo al buscador
+											Buscador  
+											
+[[ID:busqueda_field]]
+
+											Click para buscar        
+											
+[[ID:btn-busqueda_field]]
+
+[[ID:boton-advanceSearch]]
+Buscador avanzado
+
+								El texto a buscar debe tener al menos 3 caracteres
+
+									Inicio
+
+									Conócenos
+
+									Trabajadores
+
+									Pensionistas
+
+									Empresarios
+
+									Clases Pasivas
+
+[[ID:asa.page]]
+
+	Z6_21I4H401M8LJC0ARPRHM342G72
+	Z6_21I4H401M00C50AR9GLSVS1083
+
+[[ID:content]]
+
+[[ID:wpthemeStatusBarContainer]]
+
+	                	  Error: 
+En este navegador se ha inhabilitado
+	                    Javascript. Esta pÃ¡gina necesita Javascript. Modifique los
+	                    valores del navegador para permitir que se ejecute Javascript.
+	                    Consulte la documentaciÃ³n para obtener instrucciones
+	                    especÃ­ficas.
+
+[[ID:btn-valuation]]
+
+    Valore este contenido                            
+
+[[ID:Satisfaction_survey]]
+
+              ×
+                Encuesta de satisfacción
+
+[[ID:starsform]]
+
+Califique esta página o el trámite relacionado. *
+
+                    Valoración con estrellas
+
+[[ID:radio1]]
+
+[[ID:radio2]]
+
+[[ID:radio3]]
+
+[[ID:radio4]]
+
+[[ID:radio5]]
+
+¿Ha encontrado lo que buscaba o ha conseguido completar el trámite que deseaba realizar? *
+
+                    Valoración grado satisfacción
+
+[[ID:opcionSi]]
+
+[[ID:op1]]
+Sí
+
+[[ID:opcionNo]]
+
+[[ID:op2]]
+No
+
+[[ID:opcionEnparte]]
+
+[[ID:op3]]
+En parte
+
+Su valoración será tratada de forma anónima.
+
+* Campos obligatorios
+
+[[ID:btnEnviarEncuesta]]
+
+[[ID:gratitude-layer]]
+
+                        Gracias por su participación
+                        Juntos podemos seguir mejorando este Portal
+
+[[ID:bye]]
+
+[[ID:portletState]]
+{}
+
+[[ID:asa.wcm]]
+
+	dd1181ff-b07f-41f9-8bdd-abffe02fe105
+
+            	Inicio
+
+				Trabajadores
+
+				Trabajadores del mar
+
+				Protección por cese de actividad
+
+Protección por cese de actividad
+
+[[ID:estructura]]
+
+Medidas aprobadas para la protección de trabajadores autónomos por el Real Decreto-ley 2/2021, de 26 de enero, de refuerzo y consolidación de medidas sociales en defensa del empleo
+
+Ceses extraordinarios medidas RD Ley 30/2020
+
+Medidas aprobadas para la protección de trabajadores autónomos por el Real Decreto-ley 11/2021, de 27 de mayo, sobre medidas urgentes para la defensa del empleo, la reactivación económica y la protección de los trabajadores autónomos.
+
+Medidas aprobadas para la protección de trabajadores autónomos por el Real Decreto-ley 18/2021, de 28 de septiembre, de medidas urgentes para la protección del empleo, la recuperación económica y mejora del mercado de trabajo
+
+Real Decreto-Ley 8/2020, de 17 de marzo-COVID-19
+
+Real Decreto-ley 2/2022, de 22 de febrero
+
+Medidas aprobadas por el Real Decreto-ley 11/2022, de 25 de junio
+
+Puede enlazar a la sección Trámites y Gestiones para ver una versión simplificada
+
+¿Qué es la prestación por cese de actividad de los trabajadores autónomos?
+
+De acuerdo con el texto refundido de la Ley General de Seguridad Social, los trabajadores autónomos cuentan con un sistema específico de protección por cese de actividad, que es de carácter obligatorio, y tiene por objeto dispensar a los trabajadores autónomos, afiliados a la Seguridad Social y en alta en el Régimen Especial de Trabajadores por Cuenta Propia o Autónomos o en el Régimen Especial de los Trabajadores del Mar, las prestaciones y medidas establecidas en esta ley ante la situación de cese total en la actividad que originó el alta en el régimen especial, no obstante poder y querer ejercer una actividad económica o profesional a título lucrativo.
+
+El cese de actividad podrá ser definitivo o temporal. 
+
+El cese temporal podrá ser total, que comporta la interrupción de todas las actividades que puedan originar el alta en el régimen especial en el que la persona trabajadora por cuenta propia o autónoma figure encuadrada, en los supuestos regulados en el artículo 331, o parcial, cuando se produzca una reducción de la actividad en los términos previstos en esta ley.
+
+Esta protección comprende:
+
+- el abono de una prestación económica mensual por cese de actividad, 
+
+- y la cotización a la Seguridad Social por contingencias comunes, con particularidades en determinados supuestos.
+
+¿Qué requisitos debe cumplir para acceder a la prestación por cese de actividad?
+
+Ser trabajador autónomo comprendido en el Régimen Especial de los Trabajadores por Cuenta Propia o Autónomos (RETA), quedando incluidos los trabajadores del Sistema Especial para Trabajadores por Cuenta Propia Agrarios (SETA), que inicien la cotización por cese de actividad a partir del 1 de enero de 2012 y a los trabajadores autónomos económicamente dependientes (TRADE), o bien ser trabajador autónomo incluido en el Régimen Especial de la Seguridad Social de los Trabajadores del Mar, y además deberá:
+
+Estar afiliado y en situación de alta en la Seguridad Social.
+
+Contar con un período mínimo de cotización por cese de actividad de doce meses comprendidos en los veinticuatro meses inmediatamente anteriores a la situación legal de cese de actividad.
+
+Encontrarse en situación legal de cese de actividad, debidamente justificada.
+
+Haber solicitado la baja en el REM a causa del cese de actividad, salvo cuando la situación legal de cese de actividad venga determinada por las causas previstas en los epígrafes 4.º y 5.º del artículo 331.1.a) del texto refundido de la Ley General de la Seguridad Social (TRLGSS), y por fuerza mayor temporal prevista en el artículo 331.1.b). del citado texto refundido.
+
+Suscribir el compromiso de actividad y acreditar activa disponibilidad para la reincorporación al mercado de trabajo a través de las actividades formativas, de orientación profesional y de promoción de la actividad emprendedora a las que pueda convocarle el servicio público de empleo de la correspondiente comunicad autónoma, o en su caso el Instituto Social de la Marina. 
+
+En el supuesto de cese definitivo, no haber alcanzado la edad ordinaria de jubilación, salvo que no tuviera acreditado el período de cotización requerido para ello.
+
+Hallarse al corriente en el pago de las cuotas a la Seguridad Social.
+
+Que no concurra ninguna de las incompatibilidades previstas en el texto refundido de la Ley General de la Seguridad Social.
+
+Cuando el trabajador autónomo del mar tenga a uno o más trabajadores a su cargo, será requisito previo al cese de actividad el cumplimiento de las garantías, obligaciones y procedimientos regulados en la legislación laboral.
+
+Para causar derecho al cese previsto en el artículo 331.1.a) 4º y 5º, la persona trabajadora autónoma no podrá ejercer otra actividad salvo que se encuentre en situación de pluriactividad, en el momento del hecho causante de la prestación por cese de actividad, en que será compatible con el trabajo por cuenta ajena que se venía desarrollando, siempre y cuando de la suma de la retribución mensual media de los últimos cuatro meses inmediatamente anteriores al nacimiento del derecho y la prestación por cese de actividad, resulte una cantidad media mensual inferior al importe del salario mínimo interprofesional vigente en el momento del nacimiento del derecho, excluida la parte proporcional de las pagas extras.
+
+¿Cuáles son las situaciones legales de cese de actividad? Art. 331.1 TRLGSS
+
+a) Por la concurrencia de motivos económicos, técnicos, productivos u organizativos determinantes de la inviabilidad de proseguir la actividad económica o profesional.
+
+Se entenderá que existen motivos económicos, técnicos, productivos u organizativos cuando concurra alguna de las circunstancias siguientes:
+
+1º   Pérdidas derivadas del desarrollo de la actividad en 1 año completo > al 10 % de los ingresos obtenidos en el mismo período, excluido el primer año de inicio de la actividad. 
+
+2º  Ejecuciones judiciales o administrativas tendentes al cobro de las deudas reconocidas por los órganos ejecutivos que comporten al menos el 30 % de los ingresos del ejercicio económico inmediatamente anterior.  
+
+3º   La declaración judicial de concurso. 
+
+4º  La reducción del 60 % de la jornada de la totalidad de las personas en situación de alta con obligación de cotizar de la empresa o la suspensión temporal de los contratos de trabajo de al menos el 60 % del número de personas en situación de alta con obligación de cotizar de la empresa.
+
+Siempre que en los 2 trimestres fiscales previos a la solicitud presentado ante la Administración Tributaria se cumplan con los siguientes parámetros:
+
+—  El nivel de ingresos o ventas sea < al 75 % en los mismos períodos del ejercicio o  ejercicios anteriores.
+
+— Los rendimientos netos del autónomo en esos trimestres sean < al SMI o a la base por la que viniera cotizando, si esta fuera inferior
+
+5º   En el supuesto de trabajadores autónomos que no tengan trabajadores asalariados, el mantenimiento de deudas exigibles con acreedores cuyo importe sea > al 150 % de los ingresos ordinarios o ventas durante los 2 trimestres fiscales previos a la solicitud. 
+
+Siempre que estos ingresos o ventas supongan a su vez una reducción del 75% respecto del registrado en los mismos períodos del ejercicio o ejercicios anteriores.
+
+Se exigirá que los rendimientos netos mensuales del trabajador autónomo durante los 2 trimestres fiscales previos a la solicitud no > al SMI o a la base por la que viniera cotizando, si esta fuera inferior.
+
+No se computarán las deudas que por incumplimiento de sus obligaciones con la Seguridad Social o con la Administración Tributaria mantenga.
+
+b)   Por fuerza mayor, determinante del cese temporal o definitivo de la actividad económica o profesional.
+
+El cese temporal podrá ser total o parcial.
+
+En el cese temporal parcial se entiende que existen motivos de fuerza mayor cuando:
+
+— La interrupción de la actividad de la empresa afecte a un sector o centro de trabajo.
+
+— Exista una declaración de emergencia adoptada por la autoridad pública competente.
+
+— Caída de ingresos del 75 % de la actividad de la empresa con relación al mismo período del año anterior y los ingresos mensuales del trabajador autónomo sean < al SMI o el importe de la base por la que viniera cotizando si esta fuera inferior. 
+
+c)  Por pérdida de la licencia administrativa, siempre que la misma constituya un requisito para el ejercicio de la actividad económica o profesional y no venga motivada por la comisión de infracciones penales.
+
+d)   Por la violencia de género o la violencia sexual determinante del cese temporal o definitivo de la actividad de la trabajadora autónoma.
+
+e)  Por divorcio o separación matrimonial, mediante resolución judicial, en los supuestos en que el autónomo ejerciera funciones de ayuda familiar en el negocio de su ex cónyuge o de la persona de la que se ha separado.
+
+¿Dónde debe presentar la solicitud y en qué plazo?
+
+La solicitud de prestación por cese de actividad será presentada ante la Mutua con la que el trabajador tenga cubiertas las contingencias profesionales o ante el Instituto Social de la Marina si es la entidad que cubre dichas contingencias profesionales.
+
+La solicitud se podrá presentar hasta el último día del mes siguiente al que se produjo el cese de actividad. En caso de presentación de la solicitud una vez transcurrido el plazo fijado, y siempre que el trabajador autónomo cumpla con el resto de los requisitos legalmente previstos, se descontarán del período de percepción los días que medien entre la fecha en que debería haber presentado la solicitud y la fecha en que la presentó.
+
+El órgano gestor se hará cargo de la cuota de Seguridad Social que le corresponda durante el periodo de percepción de la prestación, siempre que se hubiere solicitado en el plazo previsto. En otro caso, el órgano gestor se hará cargo a partir del día primero del mes siguiente al de la solicitud.
+
+La solicitud deberá ir acompañada de la documentación acreditativa requerida.
+
+Duración de la prestación
+
+Con carácter general el período de disfrute de la prestación se calculará en
+función de los períodos cotizados por el trabajador dentro de los 48 meses
+anteriores a la situación legal de cese de actividad, tal y como se muestra en
+la siguiente tabla:
+
+        Meses cotizados
+        Duración 
+
+        De 12 a 17 meses
+        4 meses 
+
+        De 18 a 23 meses 
+        6 meses
+
+        De 24 a 29 mese
+        8 meses
+
+        De 30 a 35 meses
+        10 meses
+
+        De 36 a 42 meses 
+        12 meses
+
+        De 43 a 47 meses
+        16 meses
+
+        Con 48 meses
+        24 meses
+
+Cuantía de la prestación
+
+La cuantía de la prestación será del 70 % de la base reguladora, calculada según el promedio de las bases por las que el trabajador hubiera cotizado durante los 12 meses anteriores a la situación legal de cese de actividad. Para ceses de los epígrafes 4.º y 5.º del artículo 331.1.a) del TRLGSS y ceses debidos a fuerza mayor temporal parcial se aplicará el 50 % de la base reguladora.
+
+La cuantía máxima será el 175 % del Indicador Público de Renta de Efectos Múltiples (IPREM), salvo cuando el trabajador tenga uno o más hijos a su cargo, en cuyo caso la cuantía será respectivamente, del 200 % o del 225 % de dicho indicador.
+
+La cuantía mínima variará entre el 107 % y el 80 %, dependiendo de si el trabajador autónomo tiene hijos a su cargo, o no.
+
+No será de aplicación la cuantía mínima a los autónomos que coticen por una base inferior a la mínima.
+
+No serán de aplicación los topes máximos ni mínimos para ceses de los epígrafes 4.º y 5.º del artículo 331.1.a) del TRLGSS y ceses debidos a fuerza mayor temporal parcial. 
+
+A los efectos de la cuantía máxima y mínima de la prestación por cese de actividad se tendrá en cuenta el IPREM mensual, incrementado en una sexta parte, vigente en el momento del nacimiento del derecho. 
+
+La Entidad Gestora ingresará las cotizaciones a la Seguridad Social por contingencias comunes que incluirá la incapacidad temporal y se efectuará por los mismos períodos de percepción de la prestación, salvo para ceses de los epígrafes 4.º y 5.º del  artículo 331.1.a) del TRLGSS, en que el órgano gestor se hará cargo del 50% de esa cuota, y se la abonará al autónomo, y el otro 50% será a cargo del autónomo, que será el responsable del ingreso de la totalidad de las cotizaciones a la Seguridad Social. Cuando la violencia de género sea determinante del cese temporal o definitivo de la actividad, durante los primeros seis meses no existirá la obligación de cotizar, pero serán considerados como de cotización efectiva a efectos de las prestaciones de Seguridad Social y a partir del séptimo mes se iniciará la cotización.
+
+Gestión de la prestación y nacimiento del derecho
+
+La prestación será gestionada por la Mutua con la que el trabajador con la que el trabajador tenga cubiertas las contingencias profesionales o por el Instituto Social de la Marina si es la entidad que cubre dichas contingencias profesionales.
+
+Si presenta la solicitud en plazo, el trabajador comenzará a disfrutar de la prestación, en los supuestos previstos en el artículo 331.1.a), el día siguiente a aquel en que tenga efectos la baja en el régimen especial al que estuvieran adscritos. 
+
+No obstante, en los supuestos de cese de actividad previsto en el artículo 331.1.a).4.º, dado que no procede la baja en el régimen de Seguridad Social correspondiente, el derecho al percibo nacerá el primer día del mes siguiente a la comunicación a la autoridad laboral de la decisión empresarial de reducción del 60 por ciento de la jornada laboral de todos los trabajadores de la empresa o de la suspensión temporal de los contratos de trabajo del 60 por ciento de la plantilla de la empresa. 
+
+De igual modo, en los supuestos a que se refiere el artículo 331.1.a).5.º, al no proceder tampoco la baja en el régimen especial correspondiente, el derecho al percibió nacerá el primer día del mes siguiente al de la solicitud. 
+
+En los supuestos de suspensión temporal total o parcial de actividad como consecuencia de fuerza mayor previstos en el artículo 331.1.b), el nacimiento del derecho se producirá el día en que quede acreditada la concurrencia de la fuerza mayor a través de los documentos oportunos, no siendo necesaria la baja en el régimen especial correspondiente. 
+
+En el resto de los supuestos regulados en el artículo 331, el nacimiento del derecho se producirá el día primero del mes siguiente a aquel en que tenga efectos la baja como consecuencia del cese en la actividad.
+
+Obligaciones del trabajador autónomo
+
+Cotizar por las aportaciones correspondientes a la protección por cese de actividad.
+
+Solicitar a la Mutua colaboradora con la Seguridad Social o Entidad Gestora a la que se encuentren adheridos la cobertura de la protección por cese de actividad. 
+
+Proporcionar la documentación e información necesaria para el reconocimiento, suspensión, extinción o reanudación de la prestación.  
+
+No trabajar por cuenta ajena o propia durante el disfrute de la prestación, salvo para ceses de los epígrafes 4.º y 5.º del artículo 331.1.a) del TRLGSS y cese debido a fuerza mayor temporal parcial que son compatibles con la actividad que causa el cese, siempre que los rendimientos netos mensuales durante la percepción de la prestación no sean superiores a la cuantía del salario mínimo interprofesional vigente en el momento del nacimiento del derecho excluida la parte proporcional de las pagas extraordinarias, o al importe de la base por la que viniera cotizando, si esta fuera inferior.
+
+Si en el hecho causante de la prestación por cese de actividad, trabaja por cuenta ajena, será compatible siempre y cuando la suma de la retribución mensual media de los 4 meses anteriores al nacimiento del derecho y la prestación resulte una cantidad media mensual inferior al importe del salario mínimo interprofesional vigente en el momento del nacimiento del derecho, excluida la parte proporcional de las pagas extras.  
+
+Solicitar la baja en la prestación cuando se produzcan situaciones de suspensión o extinción o se dejen de reunir los requisitos.
+
+Suscribir y cumplir las exigencias del compromiso de actividad.
+
+Reintegrar las prestaciones indebidamente percibidas.
+
+Comparecer a requerimiento del órgano gestor. 
+
+Estar a disposición del Servicio Público de Empleo de la correspondiente Comunidad Autónoma, o del Instituto Social de la Marina, en su caso, a fin de realizar las actividades formativas, de orientación profesional y de promoción de la actividad emprendedora a las que se les convoque.
+
+Participar en acciones específicas de motivación, información, orientación, formación, reconversión o inserción profesional para incrementar su ocupabilidad, que se determinen por el Servicio Público de Empleo de la correspondiente comunidad Autónoma, o por el Instituto Social de la Marina, en su caso. 
+
+Suspensión y extinción de la prestación
+
+La prestación se suspenderá por la imposición de alguna sanción por infracción leve o grave, por cumplir condena de privación de libertad, por trabajar por cuenta propia o ajena por tiempo inferior a 12 meses, salvo en los supuestos de cese de actividad previsto en los epígrafes 4.º y 5.º del artículo 331.1.a), o de cese temporal parcial de la actividad derivado de fuerza mayor, que serán compatible con la actividad que causa el cese, en los términos previstos en el artículo 342.1, y por traslado de residencia al extranjero por un periodo continuado inferior a 12 meses para la búsqueda o realización de trabajo o perfeccionamiento profesional o cooperación internacional, y por la salida ocasional al extranjero por tiempo no superior a 30 días naturales por una sola vez cada año, siempre que, estas dos últimas situaciones, hayan estado previamente comunicadas y autorizadas por el órgano gestor.
+
+La prestación se extinguirá por agotamiento del plazo de duración de la prestación, por la realización de un trabajo por cuenta ajena o propia durante un tiempo igual o superior a 12 meses, por imposición de sanción, y por las demás causas recogidas en el texto refundido de la Ley General de Seguridad Social.
+
+[[ID:tabla-cc-1]]
+
+						    En la siguiente tabla podrá descargarse los siguientes Documentos.	
+
+									Documentos
+									Descarga
+									Fecha
+
+									0015042026_solictud Cese Fuerza Mayor
+									Solicitud de cese temporal total de la actividad por fuerza mayor
+
+										(PDF,6394 KB) 
+									
+									12/06/2026
+
+									01022023declar
+									Declaración jurada CESEACTIVIDAD ISM 4-I
+
+										(PDF,325 KB) 
+									
+									30/05/2023
+
+									01022023solic
+									Solicitud Cese de Actividad
+
+										(PDF,2947 KB) 
+									
+									06/03/2024
+
+									01022023
+									Carpeta informativa - Cese de actividad trabajadores autónomos. ISM
+
+										(PDF,269 KB) 
+									
+									01/02/2023
+
+									21052025
+									Comunicación de salida al extranjero de cese de actividad
+
+										(PDF,501 KB) 
+									
+									21/05/2025
+
+[[ID:poin-informacion-relacionada]]
+
+Información Relacionada
+
+Certificados electrónicos 
+
+Formularios y modelos 
+
+Internacional 
+
+Tarjeta Sanitaria Europea 
+
+Trámites y gestiones 
+
+[[ID:pie]]
+
+[[ID:ontop]]
+
+								Cómo identificarme							
+
+								Mapa Web
+
+								Glosario
+
+								Enlaces
+
+								Ayuda
+
+								Accesibilidad
+
+								Información Lingüística
+
+								RSS 
+
+				Copyright © Seguridad Social 2026. Todos los derechos reservados.
+
+								Aviso Legal
+
+								Política de cookies	
+
+[[ID:wpthemeComplementaryContent]]
+
+[[ID:wpthemeComplementaryContentText]]
+Complementary Content
+		
+[[ID:simpleMenuTemplate]]
+
+${title}${badge}
+
+    ${loading}
+
+[[ID:${submenu-id}]]
+
+

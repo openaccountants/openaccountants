@@ -1,0 +1,44 @@
+{
+  "verdict": "ACCEPT_BOUNDED_TWO_FINDING_CLOSURE",
+  "head": "b99513e9c5915e45ebbb3d263739fd1510326e14",
+  "read_date": "2026-10-31",
+  "findings": {
+    "PT-IR-01": "CLOSED",
+    "PT-IR-02": "CLOSED"
+  },
+  "repair_manifest_sha256": "e8b0fa4b7668ab24a1da622a15db16baa514279d68e9932c24c576c549d19e2a",
+  "closure_input_manifest_sha256": "2429242d6752fbe880f61fab1f947c0e6f5ad993ffa3e52955f9608d0ae761b1",
+  "guide_sha256": "e4e9fb45678690c822d246d8722f931a9008aed8664a16dc29274c0bc768d0c1",
+  "original_claim_rows_unchanged": 43,
+  "statutory_bindings_unchanged": 54,
+  "new_procedural_receipts": 1,
+  "initial_review_files_unchanged": 8,
+  "predecessor_guides_unchanged": 11,
+  "readme_unchanged": true,
+  "targeted_shape_checks_passed": 10,
+  "changed_guide_executable_blocks_byte_exact": 2,
+  "initial_example_and_source_checks_reused": true,
+  "broad_suite_rerun": false,
+  "all_five_operational_gaps_remain_open": true,
+  "country_complete": false,
+  "property_job_complete": false,
+  "accountant_attestation": false,
+  "tier": 2,
+  "reviewer_edited_guides": false,
+  "pushed": false,
+  "all_reviewed_inputs_unchanged_at_verdict": true,
+  "artifacts": [
+    {
+      "path": "CLOSURE-REVIEW.md",
+      "sha256": "555f38b88e5639f57b0ceb05c7418a056fe8694cfd925a0f85b2126653cb3f73"
+    },
+    {
+      "path": "closure-audit.json",
+      "sha256": "bd27e55387292e2bae3b206fbd99869b6a3d6610e5c008e1f1fd16bf07049450"
+    },
+    {
+      "path": "closure-input-manifest.json",
+      "sha256": "2429242d6752fbe880f61fab1f947c0e6f5ad993ffa3e52955f9608d0ae761b1"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Independent primary-source assessment
+
+All thirteen URLs were freshly fetched successfully. Twelve raw bodies match the writer hashes byte for byte. RDL2/2026 differs only at the script cache parameter jquery.djRAE.js?rnd=99 versus566; the legal-body content is identical. Fresh receipts and bodies are retained.
+
+The actual1April effects note, updated1October2026, explicitly invokes DGT criteria and both non-convalidated decrees. Its2026 IRPF paragraph preserves the2016–2024 limits; its separate IVA paragraph preserves simplified/REAGP limits. Current AEAT eligibility supplies250000/125000/250000 and the linked IRPF B2B condition. These are a published administrative method, not a newly enacted statutory extension. Current LIRPF DT32/LIVA DT13 end in2024 with both repeal notes. The Guide must retain that distinction.
+
+The note's IRPF paragraph3 validates renunciations/revocations made while the decrees operated. It is not an express IVA-election paragraph. The current IVA eligibility page separately says the16February extension and timely first-quarter general303 route. The9April SII/REDEME note applies only to those two systems and is not módulos authority.
+
+Enacted RDL16 arts12/14.4 extend limits;15 supplies the original December/January election mechanism. Its repeal is27January, published28January. RDL2 arts8.1/10.4 re-extend limits;11 opens the5–16February window and preserves December submissions plus January submissions during RDL16's operation. Its repeal is26February, published28February. No assertion is made that either decree is currently in force or that the brief decrees reopen a later window.
+
+RIRPF33 and RIVA33 distinguish an established activity's timely first calendar-quarter declaration/payment from genuine startup's first activity-quarter/first required declaration. Ordinary renunciation minimum is three years, with express carry/coordination and prior-threshold conditions. A new activity does not silently change an earlier activity's regime within that same year under RIVA33(2). The new copy needs these ordinary gate words. Current RIVA36 and RIRPF34 separately govern exclusion timing; a failed numerical threshold is not an elective renunciation.
+
+LIRPF31 and annual-order3 require both identical/similar (same IAE group) activity and common direction with shared personnel OR material means for the specified family/entity aggregation. An unrelated business or family relation alone does not trigger it. Annualisation concerns prior-year starter amounts; first-year specific magnitudes use their own initial-state rule. No ordinary current-year zero is annualised into a fictional prior-year estimate. The numerical controls do not establish activity-specific schedule eligibility or compute a VAT quota.
+
+No pending litigation was established; the correct remaining reservation is legal reconciliation beyond the published administrative explanation and case-specific correction of a filed election/return. No live filing screen, taxpayer election or return-correction right was verified.

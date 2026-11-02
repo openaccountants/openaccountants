@@ -1,0 +1,17 @@
+{
+  "reviewed_on": "2026-10-31",
+  "verdict": "PASS_EXACT_BOUNDED_A4_CANDIDATE_AND_SUPPORT_PACKAGE",
+  "open_findings": [],
+  "resolved_findings": [
+    "F-A4-01"
+  ],
+  "candidate_guide_sha256": "fa181e424cf4030776d01acd1ccb05d13a601b83a69309ede919b5efdfac9ed7",
+  "candidate_ledger_sha256": "766e76aef0953a25503a402fdfe133468152d6238c1f13886ad834625211e4ff",
+  "files": {
+    "independent-checks.json": "da4fe62afcea2c54e40353f8078a76a85d35bf77fa2b092422ffc26f85de2350",
+    "independent-controls.json": "fb62e1bef72db75c9be9c7c4d1ffa233bbbae4e0768117028edb48742bf6bbf9",
+    "report.md": "ed405198842188301391d5658290537e98ef43faa634c5ab7e7afcfc9491d878",
+    "source-read-checks.json": "97dfb581aa30d844c6e48275d90024acaf7bb2b57f1d2730de2643550c19e608",
+    "verify.py": "9dcae07c61756348a129ba344e0434c08e8a7a26e1fa6e9b82bc8d567f267300"
+  }
+}

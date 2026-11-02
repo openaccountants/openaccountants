@@ -1,0 +1,1346 @@
+{
+  "slug": "cn-social-insurance",
+  "candidate_sha256": "4def72e769fd0a0f65ee509989bfaadf14fcb1eb5e7f8d41eab3239e31314e45",
+  "rows": [
+    {
+      "id": "CN-SC-01",
+      "claim": "Five schemes/national employer employee scope,flexible-worker separate pension/medical routes",
+      "section": "Who",
+      "act_article": "SI arts2,10,12,23,33,44,53",
+      "sources": [
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            62,
+            62
+          ],
+          "quote": "第二条　国家建立基本养老保险、基本医疗保险、工伤保险、失业保险、生育保险等社会保险制度，保障公民在年老、疾病、",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "08a92869c065b61c9fcbba1a1d305cdce8d255024ba136e8acbd9d3909657f44"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            77,
+            79
+          ],
+          "quote": "第十条　职工应当参加基本养老保险，由用人单位和职工共同缴纳基本养老保险费。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "27ee8177621f389473593d2267b8c386c4800089e86f80d9c175ab845bddfadf"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            82,
+            84
+          ],
+          "quote": "第十二条　用人单位应当按照国家规定的本单位职工工资总额的比例缴纳基本养老保险费，记入基本养老保险统筹基金。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d45998b2c3a7204fb5fc1cbb596730c967fadb3ee55eb96cbe4f1d516c2ffed0"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            102,
+            103
+          ],
+          "quote": "第二十三条　职工应当参加职工基本医疗保险，由用人单位和职工按照国家规定共同缴纳基本医疗保险费。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "8c710a207c121f7cb56666d643a2144805507616c2317f2f707a8e9d35f6c1c6"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            124,
+            124
+          ],
+          "quote": "第三十三条　职工应当参加工伤保险，由用人单位缴纳工伤保险费，职工不缴纳工伤保险费。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "8ff50c062ec94d9c6cbe8e0107178c5dd1598611768c51107573ab854f1a2f8f"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            158,
+            158
+          ],
+          "quote": "第四十四条　职工应当参加失业保险，由用人单位和职工按照国家规定共同缴纳失业保险费。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "6a147d4efad80b2e7e29837b611c3bc85b78ebe4024a93d6b05f6c3ea2e70ee5"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            180,
+            180
+          ],
+          "quote": "第五十三条　职工应当参加生育保险，由用人单位按照国家规定缴纳生育保险费，职工不缴纳生育保险费。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "fbe9ec6b7276683a90b2505208a07bd38a271960c043d93369d1c7b52065d117"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-02",
+      "claim": "Separate housing framework and2026amendment commencement20September",
+      "section": "Who / Penalties",
+      "act_article": "Housing2026 decision commencement",
+      "sources": [
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            1,
+            336
+          ],
+          "quote": "本决定自2026年9月20日起施行。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-03",
+      "claim": "Shanghai employer16/9/.5/0.2–1.9,employee8/2/.5,zeroinjury;locallynotnational",
+      "section": "Rates / Examples",
+      "act_article": "Shanghai authority rates",
+      "sources": [
+        {
+          "source_id": "SH-rates-employer",
+          "official_url": "https://rsj.sh.gov.cn/tdjjf_17554/20250120/t0035_1430072.html",
+          "source_file": "SH-rates-employer.txt",
+          "source_sha256": "56b97a220b5b438eec6fa1000dd8dd9c4fd04ba61a85f06afe8e9d5410526457",
+          "source_lines": [
+            1,
+            13
+          ],
+          "quote": "单位缴纳社会保险费的比例是多少？_登记缴费_上海市人力资源和社会保障局",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "56b97a220b5b438eec6fa1000dd8dd9c4fd04ba61a85f06afe8e9d5410526457"
+        },
+        {
+          "source_id": "SH-rates-employee",
+          "official_url": "https://rsj.sh.gov.cn/tdjjf_17554/20200828/t0035_1393484.html",
+          "source_file": "SH-rates-employee.txt",
+          "source_sha256": "29af5e00292f502af1f1b6e9963ee7853640ea97adc7d88c7d4e8e263eb9b123",
+          "source_lines": [
+            1,
+            13
+          ],
+          "quote": "职工个人缴纳社会保险费的比例是多少？_登记缴费_上海市人力资源和社会保障局",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "29af5e00292f502af1f1b6e9963ee7853640ea97adc7d88c7d4e8e263eb9b123"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-04",
+      "claim": "Medical2026March–2027February9=8.5+.5employer,2employee,10flexibleworker",
+      "section": "Rates",
+      "act_article": "沪医保规2026No2items1–3",
+      "sources": [
+        {
+          "source_id": "SH-health2026",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/sbf/202603/t479836.html",
+          "source_file": "SH-health2026.txt",
+          "source_sha256": "02efe50dbb13ebde6c711db93b2743766b2c0de66272b193ff73dd420815a6d6",
+          "source_lines": [
+            53,
+            53
+          ],
+          "quote": "一、本市职工基本医疗保险单位缴费继续执行9%的缴费比例。其中，单位缴纳基本医疗保险费（含生育保险）的比例为8.",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4b8024145de915e3471a926ec3d9e32f26283912055862843b4457267f08d44c"
+        },
+        {
+          "source_id": "SH-health2026",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/sbf/202603/t479836.html",
+          "source_file": "SH-health2026.txt",
+          "source_sha256": "02efe50dbb13ebde6c711db93b2743766b2c0de66272b193ff73dd420815a6d6",
+          "source_lines": [
+            54,
+            54
+          ],
+          "quote": "二、本市灵活就业人员缴纳职工基本医疗保险费（含生育保险）的比例继续按10%执行。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0dc784291f58519517826765454a8e2a87c65eed6f53ff156248f6aa9a8847d6"
+        },
+        {
+          "source_id": "SH-health2026",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/sbf/202603/t479836.html",
+          "source_file": "SH-health2026.txt",
+          "source_sha256": "02efe50dbb13ebde6c711db93b2743766b2c0de66272b193ff73dd420815a6d6",
+          "source_lines": [
+            55,
+            73
+          ],
+          "quote": "三、本通知自2026年3月1日起实施，有效期至2027年2月28日。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "6631c4f8efc6bd6beccfa6967c3efd1b1fe7f24f6e5ae298a2313d38d598a649"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-05",
+      "claim": "January–February2026medical9/2priorpolicy",
+      "section": "Rates",
+      "act_article": "2025policyofficialexplanation",
+      "sources": [
+        {
+          "source_id": "SH-health2025",
+          "official_url": "https://ybj.sh.gov.cn/zcjd/20250225/6ad4b3deb233457298f65fbc287a125e.html",
+          "source_file": "SH-health2025.txt",
+          "source_sha256": "0997b07d8d14a3373d16feaafec928ecc1bd3106f6d175e8af33a4c7f7e84a9d",
+          "source_lines": [
+            1,
+            323
+          ],
+          "quote": "所属期2025年3月至2026年2月",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0997b07d8d14a3373d16feaafec928ecc1bd3106f6d175e8af33a4c7f7e84a9d"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-06",
+      "claim": "Jan–June2026socialfloor7460ceiling37302fromJuly2025",
+      "section": "Rates",
+      "act_article": "2025Shanghai base notice",
+      "sources": [
+        {
+          "source_id": "SH-base2025",
+          "official_url": "https://tyjr.sh.gov.cn/shtyjrswj/tzgg/20250919/557388ff0c4c4492ad11a3ae8863fb67.html",
+          "source_file": "SH-base2025.txt",
+          "source_sha256": "603f22833a1f61209203b4e5c0d6f5c03c8217d1bea3a90c9da4574bae0b7df0",
+          "source_lines": [
+            1,
+            15
+          ],
+          "quote": "自2025年7月1日起",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "603f22833a1f61209203b4e5c0d6f5c03c8217d1bea3a90c9da4574bae0b7df0"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-07",
+      "claim": "July2026floor7546ceiling37731average12577",
+      "section": "Rates / Base / Examples",
+      "act_article": "2026Shanghai base notice/Q&A",
+      "sources": [
+        {
+          "source_id": "SH-base2026",
+          "official_url": "https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202609/t481435.html",
+          "source_file": "SH-base2026.txt",
+          "source_sha256": "e505abed822c939ffc643d0c6e9049a9fc6515d00ca48f843124268a57fd0434",
+          "source_lines": [
+            1,
+            63
+          ],
+          "quote": "自2026年7月1日起",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "e505abed822c939ffc643d0c6e9049a9fc6515d00ca48f843124268a57fd0434"
+        },
+        {
+          "source_id": "SH-base-questions",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202608/t481376.html",
+          "source_file": "SH-base-questions.txt",
+          "source_sha256": "778c96bae75da53046c47762293cd711b542a279d3764b56417b5dd85c1a37c4",
+          "source_lines": [
+            1,
+            95
+          ],
+          "quote": "2026年7月1日起",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "778c96bae75da53046c47762293cd711b542a279d3764b56417b5dd85c1a37c4"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-08",
+      "claim": "HousingJuly2026base2740–37731ordinary5–7integer,supplementary1–5,7%combined384–5282,flexible10–24",
+      "section": "Rates / Base / Examples",
+      "act_article": "Shanghai2026No3parts1–5/table1",
+      "sources": [
+        {
+          "source_id": "SH-housing2026",
+          "official_url": "https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435",
+          "source_file": "SH-housing2026.txt",
+          "source_sha256": "8860dd624a9cb3a6c443c204303fc7db2818c53a88b034d99b425e100e1bd78f",
+          "source_lines": [
+            16,
+            19
+          ],
+          "quote": "一、缴存基数及其计算口径",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "e32b63fa86d71338c158ddefe4196db0a9ee0d397ba8dd9009b05e9fa78c240f"
+        },
+        {
+          "source_id": "SH-housing2026",
+          "official_url": "https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435",
+          "source_file": "SH-housing2026.txt",
+          "source_sha256": "8860dd624a9cb3a6c443c204303fc7db2818c53a88b034d99b425e100e1bd78f",
+          "source_lines": [
+            20,
+            26
+          ],
+          "quote": "二、缴存比例",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "559fc94bc417a02547e86c61c1b8d71e7d89a7cbfdf4c6668d3002756d2e3247"
+        },
+        {
+          "source_id": "SH-housing2026",
+          "official_url": "https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435",
+          "source_file": "SH-housing2026.txt",
+          "source_sha256": "8860dd624a9cb3a6c443c204303fc7db2818c53a88b034d99b425e100e1bd78f",
+          "source_lines": [
+            30,
+            37
+          ],
+          "quote": "四、月缴存额上下限",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "a658165af587c6d4120d079d7aeb08adb6df549c573b16b04885e633b1ec7562"
+        },
+        {
+          "source_id": "SH-housing2026",
+          "official_url": "https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435",
+          "source_file": "SH-housing2026.txt",
+          "source_sha256": "8860dd624a9cb3a6c443c204303fc7db2818c53a88b034d99b425e100e1bd78f",
+          "source_lines": [
+            38,
+            40
+          ],
+          "quote": "五、灵活就业人员缴存基数、比例及月缴存额上下限",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "499d561cc1b9981c808972e2a91a7a9f1b2fca192b4b89370cc336d80bfa50d3"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-09",
+      "claim": "Employerregistration30days,employee30days,payrollwithholding/disclosure",
+      "section": "Who / Deadlines",
+      "act_article": "SI57–58,60",
+      "sources": [
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            193,
+            195
+          ],
+          "quote": "第五十七条　用人单位应当自成立之日起三十日内凭营业执照、登记证书或者单位印章，向当地社会保险经办机构申请办理社",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "75f12270cf7dc8c02f6c9559213c7830ac8daeea3c7fb619f2d25b3ca71a55b3"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            196,
+            198
+          ],
+          "quote": "第五十八条　用人单位应当自用工之日起三十日内为其职工向社会保险经办机构申请办理社会保险登记。未办理社会保险登记",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9bccb73ad50fc14e793ac2f57e477cad65f18fe8ed8e9d496d3900269e868947"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            201,
+            202
+          ],
+          "quote": "第六十条　用人单位应当自行申报、按时足额缴纳社会保险费，非因不可抗力等法定事由不得缓缴、减免。职工应当缴纳的社",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "1bdcc0a186aa117462833a00520c62243afc64cbea43521912775513342bcf0c"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-10",
+      "claim": "Housingemployment/terminationregistration30days,employer/workerbase,lastyearaverage,newemployee2ndmonth/transferredpaydate",
+      "section": "Base / Deadlines",
+      "act_article": "Housing15–17",
+      "sources": [
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            150,
+            151
+          ],
+          "quote": "第十五条　单位录用职工的，应当自录用之日起30日内向住房公积金管理中心办理缴存登记，并办理职工住房公积金账户的",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "7e6b22c5796f9fdc9be6602d2ef84a78eb3aac65ed95834f53e1093f6781cf7f"
+        },
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            152,
+            153
+          ],
+          "quote": "第十六条　职工住房公积金的月缴存额为职工本人上一年度月平均工资乘以职工住房公积金缴存比例。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d20665d9c74fce6140f368512f76077b2432a553903725ed10e48a5433c04b28"
+        },
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            154,
+            155
+          ],
+          "quote": "第十七条　新参加工作的职工从参加工作的第二个月开始缴存住房公积金，月缴存额为职工本人当月工资乘以职工住房公积金",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "e2e3211988a70ade8a10c44f8b19424ee3f9d6483c0228d0f9ef12de68e8e64d"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-11",
+      "claim": "2026Shanghaiwage declarationpriornaturalyear,partyearactualmonths,newhirefullstartingmonth,disability1–4allowance",
+      "section": "Base",
+      "act_article": "Shanghai2026No1part3",
+      "sources": [
+        {
+          "source_id": "SH-annual2026",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html",
+          "source_file": "SH-annual2026.txt",
+          "source_sha256": "5931ec33c51245e18abaef02f81d47897b2f530c4ba6c16d456e6d71cbe67707",
+          "source_lines": [
+            58,
+            64
+          ],
+          "quote": "三、申报口径",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "93c0b8ba2c5168eda884c2435c1dbdf4b1f76a5628aa059f0f9a81daff6ee71a"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-12",
+      "claim": "Socialfloorandhousingfloordistinct;schemecomputationsandpayerreconciliation;twoexamplesconditionalonregisteredrates",
+      "section": "Base / Examples",
+      "act_article": "Shanghai notices and rate tables",
+      "sources": [
+        {
+          "source_id": "SH-base-questions",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202608/t481376.html",
+          "source_file": "SH-base-questions.txt",
+          "source_sha256": "778c96bae75da53046c47762293cd711b542a279d3764b56417b5dd85c1a37c4",
+          "source_lines": [
+            1,
+            95
+          ],
+          "quote": "社保缴费工资与缴费基数的相关热点问答",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "778c96bae75da53046c47762293cd711b542a279d3764b56417b5dd85c1a37c4"
+        },
+        {
+          "source_id": "SH-housing2026",
+          "official_url": "https://www.shanghai.gov.cn/gwk/affairs/content/0064%40f3d788ec72e9404ebcbf3d27fda98435",
+          "source_file": "SH-housing2026.txt",
+          "source_sha256": "8860dd624a9cb3a6c443c204303fc7db2818c53a88b034d99b425e100e1bd78f",
+          "source_lines": [
+            1,
+            122
+          ],
+          "quote": "关于2026年度上海市调整住房公积金缴存基数、比例以及月缴存额上下限的通知",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "8860dd624a9cb3a6c443c204303fc7db2818c53a88b034d99b425e100e1bd78f"
+        },
+        {
+          "source_id": "SH-rates-employer",
+          "official_url": "https://rsj.sh.gov.cn/tdjjf_17554/20250120/t0035_1430072.html",
+          "source_file": "SH-rates-employer.txt",
+          "source_sha256": "56b97a220b5b438eec6fa1000dd8dd9c4fd04ba61a85f06afe8e9d5410526457",
+          "source_lines": [
+            1,
+            13
+          ],
+          "quote": "单位缴纳社会保险费的比例是多少？_登记缴费_上海市人力资源和社会保障局",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "56b97a220b5b438eec6fa1000dd8dd9c4fd04ba61a85f06afe8e9d5410526457"
+        },
+        {
+          "source_id": "SH-rates-employee",
+          "official_url": "https://rsj.sh.gov.cn/tdjjf_17554/20200828/t0035_1393484.html",
+          "source_file": "SH-rates-employee.txt",
+          "source_sha256": "29af5e00292f502af1f1b6e9963ee7853640ea97adc7d88c7d4e8e263eb9b123",
+          "source_lines": [
+            1,
+            13
+          ],
+          "quote": "职工个人缴纳社会保险费的比例是多少？_登记缴费_上海市人力资源和社会保障局",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "29af5e00292f502af1f1b6e9963ee7853640ea97adc7d88c7d4e8e263eb9b123"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-13",
+      "claim": "Pensionaccountallocation,2026minimum15years;gradualretirementagesfrom2025,2030rise6months/year to20",
+      "section": "Base / Benefits",
+      "act_article": "SI12,16;retirementdecisionarts1–3",
+      "sources": [
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            82,
+            84
+          ],
+          "quote": "第十二条　用人单位应当按照国家规定的本单位职工工资总额的比例缴纳基本养老保险费，记入基本养老保险统筹基金。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d45998b2c3a7204fb5fc1cbb596730c967fadb3ee55eb96cbe4f1d516c2ffed0"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            90,
+            91
+          ],
+          "quote": "第十六条　参加基本养老保险的个人，达到法定退休年龄时累计缴费满十五年的，按月领取基本养老金。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "bc22385be621e9c95591bf4c057afe4e036f6ec50c9ea37d91dd36482a1c5923"
+        },
+        {
+          "source_id": "SC-retirement",
+          "official_url": "https://www.hmo.gov.cn/2026/08/21/ARTI6kpLUW6qilBUClmQ6bio260821.shtml",
+          "source_file": "SC-retirement.txt",
+          "source_sha256": "1fd04367cf6524249cecbf15c510e52518c03bc1bdb5d9098fb179243c1f6441",
+          "source_lines": [
+            49,
+            49
+          ],
+          "quote": "第一条 从2025年1月1日起，男职工和原法定退休年龄为五十五周岁的女职工，法定退休年龄每四个月延迟一个月，分",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "6260ae13033d317bc13c0b41399df23eb1c9d06287af02ec53e6d467a42b16b6"
+        },
+        {
+          "source_id": "SC-retirement",
+          "official_url": "https://www.hmo.gov.cn/2026/08/21/ARTI6kpLUW6qilBUClmQ6bio260821.shtml",
+          "source_file": "SC-retirement.txt",
+          "source_sha256": "1fd04367cf6524249cecbf15c510e52518c03bc1bdb5d9098fb179243c1f6441",
+          "source_lines": [
+            50,
+            50
+          ],
+          "quote": "第二条 从2030年1月1日起，将职工按月领取基本养老金最低缴费年限由十五年逐步提高至二十年，每年提高六个月。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "781b086a30af81219aeb606aca1921587a2c2bd30960fc1dca95262de20d6286"
+        },
+        {
+          "source_id": "SC-retirement",
+          "official_url": "https://www.hmo.gov.cn/2026/08/21/ARTI6kpLUW6qilBUClmQ6bio260821.shtml",
+          "source_file": "SC-retirement.txt",
+          "source_sha256": "1fd04367cf6524249cecbf15c510e52518c03bc1bdb5d9098fb179243c1f6441",
+          "source_lines": [
+            51,
+            51
+          ],
+          "quote": "第三条 职工达到最低缴费年限，可以自愿选择弹性提前退休，提前时间最长不超过三年，且退休年龄不得低于女职工五十周",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "3b0abee1b433891aca4217218544e708a855388860753e2ae7d33aa2b631718f"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-14",
+      "claim": "Medical/maternitybenefitframework,employerprioryearaverageallowance;no unverifiedleave/daydivisor",
+      "section": "Benefits",
+      "act_article": "SI23,28–30,53–56",
+      "sources": [
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            102,
+            103
+          ],
+          "quote": "第二十三条　职工应当参加职工基本医疗保险，由用人单位和职工按照国家规定共同缴纳基本医疗保险费。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "8c710a207c121f7cb56666d643a2144805507616c2317f2f707a8e9d35f6c1c6"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            111,
+            111
+          ],
+          "quote": "第二十八条　符合基本医疗保险药品目录、诊疗项目、医疗服务设施标准以及急诊、抢救的医疗费用，按照国家规定从基本医",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "2abd3056b582971e093de5c9bfe6b09a96af221b07f44193474dd174e9dc0778"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            180,
+            180
+          ],
+          "quote": "第五十三条　职工应当参加生育保险，由用人单位按照国家规定缴纳生育保险费，职工不缴纳生育保险费。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "fbe9ec6b7276683a90b2505208a07bd38a271960c043d93369d1c7b52065d117"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            181,
+            182
+          ],
+          "quote": "第五十四条　用人单位已经缴纳生育保险费的，其职工享受生育保险待遇；职工未就业配偶按照国家规定享受生育医疗费用待",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "36d5c2e1b313a6917a69d47f665891b45caec243b452bd391413d7d56234d168"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            187,
+            192
+          ],
+          "quote": "第五十六条　职工有下列情形之一的，可以按照国家规定享受生育津贴：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "51c1b8e20f6895780891a46954f90e424e191011aef08791236470e65c27e9f2"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-15",
+      "claim": "Unemployment1year,involuntary/registration/seekwork,max24months,localstandard",
+      "section": "Benefits",
+      "act_article": "SI45–47",
+      "sources": [
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            159,
+            162
+          ],
+          "quote": "第四十五条　失业人员符合下列条件的，从失业保险基金中领取失业保险金：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "03b651b36afefe244bc27014a6096e23a284bfeac293e65fa2f1d7cb4d068e68"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            163,
+            163
+          ],
+          "quote": "第四十六条　失业人员失业前用人单位和本人累计缴费满一年不足五年的，领取失业保险金的期限最长为十二个月；累计缴费",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "39eb03b04e9b6dad023f16c5c09e2e897b990de19dbc78b19b7c1a68bf42bc72"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            164,
+            164
+          ],
+          "quote": "第四十七条　失业保险金的标准，由省、自治区、直辖市人民政府确定，不得低于城市居民最低生活保障标准。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "ca0a8986b1247be3582c6d9b221183f10efe2c46892701b59c57fa18d4f27195"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-16",
+      "claim": "Workinjuryemployerfunding,authorityrateclasses,benefit/recognitionseparate",
+      "section": "Benefits",
+      "act_article": "SI33–42",
+      "sources": [
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            124,
+            124
+          ],
+          "quote": "第三十三条　职工应当参加工伤保险，由用人单位缴纳工伤保险费，职工不缴纳工伤保险费。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "8ff50c062ec94d9c6cbe8e0107178c5dd1598611768c51107573ab854f1a2f8f"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            125,
+            126
+          ],
+          "quote": "第三十四条　国家根据不同行业的工伤风险程度确定行业的差别费率，并根据使用工伤保险基金、工伤发生率等情况在每个行",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d4a9bc29e95026a99da7ed368e35557c3600e083fb87f9e1a2e6945d61ffd2f2"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            135,
+            144
+          ],
+          "quote": "第三十八条　因工伤发生的下列费用，按照国家规定从工伤保险基金中支付：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "0e2b9883289f499637baf71741431610c6aa26053c4f7a16ae59568f2ccc1246"
+        },
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            152,
+            152
+          ],
+          "quote": "第四十二条　由于第三人的原因造成工伤，第三人不支付工伤医疗费用或者无法确定第三人的，由工伤保险基金先行支付。工",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "6ec3a84640f9000508c561cb6684c45f8a62733def84a1a442f6193165d1a768"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-17",
+      "claim": "Housingfundownership/accountsand2026withdrawalcategories,loansnotcomputed",
+      "section": "Benefits",
+      "act_article": "Housing3,15,24–27",
+      "sources": [
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            114,
+            114
+          ],
+          "quote": "第三条　职工个人缴存的住房公积金和职工所在单位为职工缴存的住房公积金，属于职工个人所有。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "05b593975331290aa6e376d00c41e74d724508a5f8e75731d70ac003d663d353"
+        },
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            150,
+            151
+          ],
+          "quote": "第十五条　单位录用职工的，应当自录用之日起30日内向住房公积金管理中心办理缴存登记，并办理职工住房公积金账户的",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "7e6b22c5796f9fdc9be6602d2ef84a78eb3aac65ed95834f53e1093f6781cf7f"
+        },
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            75,
+            110
+          ],
+          "quote": "七、将第二十四条第一款、第二款修改为：“职工有下列情形之一的，可以提取职工住房公积金账户内的存储余额：",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "3b785f62802ded251b2f7af27ecf9ac0fe539c70b202b63a5060426b2264e8df"
+        },
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            87,
+            110
+          ],
+          "quote": "九、将第二十六条第二款修改为：“住房公积金管理中心应当自受理申请之日起10日内作出准予贷款或者不准贷款的决定，",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "6dacef0d0e2b9a6f8cd0646f1b96cad79d6119b214ee1a99c9bdf5c470526b5c"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-18",
+      "claim": "Shanghai socialpaymentby15relevantmonth,auto10–15subjectactualcalendar;notnationwidenextmonth15",
+      "section": "Deadlines",
+      "act_article": "Shanghai payment official Q&A",
+      "sources": [
+        {
+          "source_id": "SH-payment",
+          "official_url": "https://shanghai.chinatax.gov.cn/bsfw/nszx/hdfk/202301/t465801.html",
+          "source_file": "SH-payment.txt",
+          "source_sha256": "5f5247d1336544d2b0bf704016f9000a6c9a1a80291536f4ba0d259d6f882ad9",
+          "source_lines": [
+            1,
+            65
+          ],
+          "quote": "缴费单位应于每月15日前缴纳社会保险费",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "5f5247d1336544d2b0bf704016f9000a6c9a1a80291536f4ba0d259d6f882ad9"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-19",
+      "claim": "Annualdeclaration1May–25June2026;July2026–June2027scheme year,employee signed/employersealed/source retained,channels",
+      "section": "Deadlines",
+      "act_article": "Shanghai2026No1parts1,4,5",
+      "sources": [
+        {
+          "source_id": "SH-annual2026",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html",
+          "source_file": "SH-annual2026.txt",
+          "source_sha256": "5931ec33c51245e18abaef02f81d47897b2f530c4ba6c16d456e6d71cbe67707",
+          "source_lines": [
+            53,
+            54
+          ],
+          "quote": "一、申报时间",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "630fe8910d741ad1807b3af670fea1966d3a58b822c3ce7bffba25425a7080d2"
+        },
+        {
+          "source_id": "SH-annual2026",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html",
+          "source_file": "SH-annual2026.txt",
+          "source_sha256": "5931ec33c51245e18abaef02f81d47897b2f530c4ba6c16d456e6d71cbe67707",
+          "source_lines": [
+            65,
+            69
+          ],
+          "quote": "四、申报渠道",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "3b0d50842d6502dab430e9e58300b8dc4f939737dea3f7f139888043bb333bad"
+        },
+        {
+          "source_id": "SH-annual2026",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/zcfgk/sbf/202604/t480144.html",
+          "source_file": "SH-annual2026.txt",
+          "source_sha256": "5931ec33c51245e18abaef02f81d47897b2f530c4ba6c16d456e6d71cbe67707",
+          "source_lines": [
+            70,
+            107
+          ],
+          "quote": "五、注意事项",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "ceecc12ae6d7356646962d6645006faf51fff016d8b35687b234f76347e76f52"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-20",
+      "claim": "Housingremit5daysafterwagepayment;hardshipapprovedreduction/deferral",
+      "section": "Deadlines",
+      "act_article": "Housing19–20",
+      "sources": [
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            157,
+            158
+          ],
+          "quote": "第十九条　职工个人缴存的住房公积金，由所在单位每月从其工资中代扣代缴。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "4a3b3b7867cdb18cad8b7a29acec899e927cfc5cf3c9861742b970d874eb007f"
+        },
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            159,
+            160
+          ],
+          "quote": "第二十条　单位应当按时、足额缴存住房公积金，不得逾期缴存或者少缴。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "3752fcc0c425a90afbff657fafefa96514774b04a0720baeed040c7340854914"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-21",
+      "claim": "Sociallate0.05%dailyfromoverdue;orderednonpaymentfurther1–3times",
+      "section": "Penalties",
+      "act_article": "SI86",
+      "sources": [
+        {
+          "source_id": "SC-law",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100009/c5192937/content.html",
+          "source_file": "SC-law.txt",
+          "source_sha256": "6a6c4980f9fb33ce400153f05be50291016d7e8086e834db44853d5d37b28646",
+          "source_lines": [
+            254,
+            254
+          ],
+          "quote": "第八十六条　用人单位未按时足额缴纳社会保险费的，由社会保险费征收机构责令限期缴纳或者补足，并自欠缴之日起，按日",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "9de5d8053a8535ff75cf00954b72a5a0eaa79544f55984bbb8d1cf6f9084a3da"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-22",
+      "claim": "From20Sept2026housingnonregistrationorderthen50k–300k,short/latepaymentorderandcourt,noassumedsocialcharge",
+      "section": "Penalties",
+      "act_article": "Housing39–40/currentcommencement",
+      "sources": [
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            104,
+            110
+          ],
+          "quote": "（一）将第七条中的“建设行政主管部门”修改为“住房城乡建设主管部门”，“中国人民银行”修改为“中国人民银行、国",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "2f0a5596dc3d4142c9b81bd13327cfacfa1d052f7217e703cf93c982d0ceca55"
+        },
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            97,
+            110
+          ],
+          "quote": "十七、将第四十条改为第四十三条，其中的“建设行政主管部门”修改为“住房城乡建设主管部门”，“行政处分”修改为“",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "3d81eb71b2702787238099d3669d161bc4b769dc4d44518a8d8e9fc32888f821"
+        },
+        {
+          "source_id": "Housing-law2026",
+          "official_url": "https://legalinfo.moj.gov.cn/zhfxfzzx/fzzxyw/202608/t20260819_538654.html",
+          "source_file": "Housing-law2026.txt",
+          "source_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c",
+          "source_lines": [
+            1,
+            336
+          ],
+          "quote": "本决定自2026年9月20日起施行。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "37591dc3c7027d4e65e54cc4f58dd72f9e9c1441acc09069b12e2d9074c2708c"
+        }
+      ]
+    },
+    {
+      "id": "CN-SC-23",
+      "claim": "Foreignlegalemployment/secondment5schemes,registration30days,departureaccountretention/writtentermination,actualagreementexceptions",
+      "section": "Cross-border",
+      "act_article": "Foreignmeasures2024arts2–5,9",
+      "sources": [
+        {
+          "source_id": "SC-foreign",
+          "official_url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202509/t20250908_4194428.html",
+          "source_file": "SC-foreign.txt",
+          "source_sha256": "fb1a3859000f331d36da9dda92d376640a9130971da16c1eb5befba04281ac26",
+          "source_lines": [
+            14,
+            14
+          ],
+          "quote": "第二条  在中国境内就业的外国人，是指依法获得《中华人民共和国外国人工作许可证》、《外国常驻记者证》等就业证件",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "3f13dce4168e789a659c2b40fa1f86cd4d58622fa120e203a4f1b4f0cdf60445"
+        },
+        {
+          "source_id": "SC-foreign",
+          "official_url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202509/t20250908_4194428.html",
+          "source_file": "SC-foreign.txt",
+          "source_sha256": "fb1a3859000f331d36da9dda92d376640a9130971da16c1eb5befba04281ac26",
+          "source_lines": [
+            15,
+            16
+          ],
+          "quote": "第三条  在中国境内依法注册或者登记的企业、事业单位、社会团体、民办非企业单位、基金会、律师事务所、会计师事务",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "cf5d8dc9093be23de98ca7b6793b18fddb3b65143572077274305b65d0d45be1"
+        },
+        {
+          "source_id": "SC-foreign",
+          "official_url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202509/t20250908_4194428.html",
+          "source_file": "SC-foreign.txt",
+          "source_sha256": "fb1a3859000f331d36da9dda92d376640a9130971da16c1eb5befba04281ac26",
+          "source_lines": [
+            17,
+            19
+          ],
+          "quote": "第四条  用人单位招用外国人的，应当自办理就业证件之日起30日内为其办理社会保险登记。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "fced42ec01d8f7996a48c6f4b9b263eaf691f1d9cecab24fb6729e8fc17685d2"
+        },
+        {
+          "source_id": "SC-foreign",
+          "official_url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202509/t20250908_4194428.html",
+          "source_file": "SC-foreign.txt",
+          "source_sha256": "fb1a3859000f331d36da9dda92d376640a9130971da16c1eb5befba04281ac26",
+          "source_lines": [
+            20,
+            21
+          ],
+          "quote": "第五条  参加社会保险的外国人，符合条件的，依法享受社会保险待遇。",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "d0f1e07a887dbb66874ce5ae585180f9c3d49c314a4eccee7a808910ef922c13"
+        },
+        {
+          "source_id": "SC-foreign",
+          "official_url": "https://www.beijing.gov.cn/zhengce/zhengcefagui/qtwj/202509/t20250908_4194428.html",
+          "source_file": "SC-foreign.txt",
+          "source_sha256": "fb1a3859000f331d36da9dda92d376640a9130971da16c1eb5befba04281ac26",
+          "source_lines": [
+            26,
+            26
+          ],
+          "quote": "第九条  具有与中国签订社会保险双边或者多边协议国家国籍的人员在中国境内就业的，其参加社会保险的办法按照协议规",
+          "read_on": "2026-10-29",
+          "captured_unit_sha256": "e7b683bb1927356657d2fc7771074c7d4dae51fb4f2392bcfd4cfb7b3c9f3853"
+        }
+      ]
+    }
+  ],
+  "original_topics": [
+    [
+      "中国 — 社会保险与住房公积金（五险一金）— 技能 v1.0",
+      "Rates / Base / Benefits / Deadlines; separate fund and amended2026law; unsupported prior5–12%Shanghai assertion withdrawn."
+    ],
+    [
+      "一、快速参考（缴费比例表）",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "二、必备输入与拒绝清单",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "2.1 编制一份中国月度工资单所需输入",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "2.2 拒绝清单 — 不在本技能范围",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "三、养老保险（基本养老 — 企业职工）",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "3.1 法律依据",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "3.2 缴费比例",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "3.3 缴费基数",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "3.4 计算",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "3.5 待遇与缴费年限",
+      "The base / Benefits; specific benefit amounts and local supplements retained as named unconfirmed referrals."
+    ],
+    [
+      "四、医疗保险（含生育合并后）",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "4.1 法律依据",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "4.2 缴费比例（含合并后的生育保险）",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "4.3 缴费基数",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "4.4 计算",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "4.5 个人账户与统筹",
+      "The base / Benefits; specific benefit amounts and local supplements retained as named unconfirmed referrals."
+    ],
+    [
+      "4.6 生育保险（合并后）",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "五、失业保险",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "5.1 法律依据",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "5.2 缴费比例",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "5.3 缴费基数",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "5.4 计算",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "5.5 待遇",
+      "The base / Benefits; specific benefit amounts and local supplements retained as named unconfirmed referrals."
+    ],
+    [
+      "六、工伤保险",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "6.1 法律依据",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "6.2 缴费比例 — 八大行业风险类别",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "6.3 计算",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "6.4 待遇",
+      "The base / Benefits; specific benefit amounts and local supplements retained as named unconfirmed referrals."
+    ],
+    [
+      "七、住房公积金",
+      "Rates / Base / Benefits / Deadlines; separate fund and amended2026law; unsupported prior5–12%Shanghai assertion withdrawn."
+    ],
+    [
+      "7.1 法律依据",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "7.2 缴费比例",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "7.3 缴存基数",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "7.4 计算",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "7.5 缴存与封存",
+      "Rates / Base / Benefits / Deadlines; separate fund and amended2026law; unsupported prior5–12%Shanghai assertion withdrawn."
+    ],
+    [
+      "八、缴费基数（上下限、各地差异）",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "8.1 通用原则",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "8.2 上下限来源",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "8.3 调整时点",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "8.4 五险一金基数是否同步？",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "8.5 常见低报风险",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "九、外籍员工社保",
+      "Cross-border points; actual agreement/category gate; housing participation explicitly unconfirmed."
+    ],
+    [
+      "9.1 法律依据",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "9.2 原则",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "9.3 实务差异",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "9.4 社保协定豁免",
+      "Cross-border points; actual agreement/category gate; housing participation explicitly unconfirmed."
+    ],
+    [
+      "9.5 公积金",
+      "Rates / Base / Benefits / Deadlines; separate fund and amended2026law; unsupported prior5–12%Shanghai assertion withdrawn."
+    ],
+    [
+      "9.6 港澳台员工",
+      "Cross-border points; actual agreement/category gate; housing participation explicitly unconfirmed."
+    ],
+    [
+      "十、计算示例（上海某软件工程师月薪 3 万元）",
+      "Worked examples1–2; original30000scenario corrected; old1290IITestimate expressly unconfirmed/referred tocn-iit."
+    ],
+    [
+      "10.1 单位与个人缴费明细",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "10.2 个税专项扣除衔接（详见 `china-pit`）",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "10.3 工资条（示例）",
+      "Worked examples1–2; original30000scenario corrected; old1290IITestimate expressly unconfirmed/referred tocn-iit."
+    ],
+    [
+      "10.4 本月需缴款汇总",
+      "Worked examples1–2; original30000scenario corrected; old1290IITestimate expressly unconfirmed/referred tocn-iit."
+    ],
+    [
+      "十一、申报与缴纳",
+      "Deadlines / Penalties; current local period and2026housing-amendment distinction replaces blanketnext-month15th."
+    ],
+    [
+      "11.1 月度节奏",
+      "Deadlines / Penalties; current local period and2026housing-amendment distinction replaces blanketnext-month15th."
+    ],
+    [
+      "11.2 年度节奏",
+      "Deadlines / Penalties; current local period and2026housing-amendment distinction replaces blanketnext-month15th."
+    ],
+    [
+      "11.3 罚则",
+      "Deadlines / Penalties; current local period and2026housing-amendment distinction replaces blanketnext-month15th."
+    ],
+    [
+      "十二、参考资料",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "文件说明",
+      "Who / Rates / Base / Ask; local six-city topics preserved as explicit determinations; unsupported historical numeric defaults not asserted."
+    ],
+    [
+      "resident rural/urban schemes",
+      "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated."
+    ],
+    [
+      "retiree rehires",
+      "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated."
+    ],
+    [
+      "intern/student work",
+      "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated."
+    ],
+    [
+      "dispatch/outsourcing",
+      "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated."
+    ],
+    [
+      "cross-province employer registration",
+      "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated."
+    ],
+    [
+      "enterprise/occupational annuities",
+      "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated."
+    ],
+    [
+      "commercial supplementary medical/employer-liability insurance",
+      "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated."
+    ],
+    [
+      "eight work-injury industry classes, industry examples and floating coefficients",
+      "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated."
+    ]
+  ],
+  "line_convention": "Python str.splitlines(); complete context and hashes, not only quotation membership.",
+  "evidence_note": "Complete official source readers and full captured contexts are retained in the private country evidence. Public ledger retains operative citations, exact excerpts, source/reader hashes and captured line spans. Read the official linked unit; quote membership alone does not prove the rule."
+}

@@ -1,0 +1,301 @@
+{
+  "verdict": "SOURCE_PARTIAL; controls do not establish the missing method",
+  "controls": [
+    {
+      "name": "es-foral-corporate-tax.md unchanged",
+      "pass": true,
+      "detail": {
+        "sha256": "dcbfeb3202511f58c5d5ca416e8e09bf55379d4d8dfc1c413abc1f0cc99c6e5f",
+        "bytes": 97950,
+        "scope": "Complete bytes: metadata, all units, URLs, two oa-check blocks, byline and CTA."
+      }
+    },
+    {
+      "name": "es-foral-non-resident-tax.md unchanged",
+      "pass": true,
+      "detail": {
+        "sha256": "588be27752c59716b15e5580d58d5a0973f29b4ce958232c89cc2255a7381152",
+        "bytes": 67660,
+        "scope": "Complete bytes: metadata, all units, URLs, two oa-check blocks, byline and CTA."
+      }
+    },
+    {
+      "name": "bizkaia-law.pdf fresh retained comparison",
+      "pass": true,
+      "detail": {
+        "sha256": "e242d127a2a258e5d407cda10ff14f05cdfea8e1140b4537c308e36e5d2408fe",
+        "scope": "Fresh HTTP 200 actual body equals previous retained body; no new operative text inferred."
+      }
+    },
+    {
+      "name": "bizkaia-reg.pdf fresh retained comparison",
+      "pass": true,
+      "detail": {
+        "sha256": "b3a53a124fe103a9261051d06bf6c01de9f607b1c123af9785d96598d1272339",
+        "scope": "Fresh HTTP 200 actual body equals previous retained body; no new operative text inferred."
+      }
+    },
+    {
+      "name": "alava-law.pdf fresh retained comparison",
+      "pass": true,
+      "detail": {
+        "sha256": "21a974f792e5bdc199273e5c4699a004ca170f15f6fd50ceb8cc9a430112b2a6",
+        "scope": "Fresh HTTP 200 actual body equals previous retained body; no new operative text inferred."
+      }
+    },
+    {
+      "name": "alava-reg.pdf fresh retained comparison",
+      "pass": true,
+      "detail": {
+        "sha256": "988b4940f52598391edddd5e0dbd0d6319d3ed1043fbce87aa4e48d114392f09",
+        "scope": "Fresh HTTP 200 actual body equals previous retained body; no new operative text inferred."
+      }
+    },
+    {
+      "name": "gipuzkoa-law.pdf fresh retained comparison",
+      "pass": true,
+      "detail": {
+        "sha256": "a36bc7af8c32cef5a4a59699912e7f774620eb9b93c07074b17d50e514c16e44",
+        "scope": "Fresh HTTP 200 actual body equals previous retained body; no new operative text inferred."
+      }
+    },
+    {
+      "name": "gipuzkoa-reg.pdf fresh retained comparison",
+      "pass": true,
+      "detail": {
+        "sha256": "0ae4af64eb633dfa9f0327f5d391c3dce33f98debe109b7e364a1b2698352a1c",
+        "scope": "Fresh HTTP 200 actual body equals previous retained body; no new operative text inferred."
+      }
+    },
+    {
+      "name": "strict 35% trigger R=161999.99",
+      "pass": true,
+      "detail": {
+        "M": "120000",
+        "R": "161999.99",
+        "crosses_trigger_only": false,
+        "positive_surcharge_quota": null
+      }
+    },
+    {
+      "name": "strict 35% trigger R=162000",
+      "pass": true,
+      "detail": {
+        "M": "120000",
+        "R": "162000",
+        "crosses_trigger_only": false,
+        "positive_surcharge_quota": null
+      }
+    },
+    {
+      "name": "strict 35% trigger R=162000.01",
+      "pass": true,
+      "detail": {
+        "M": "120000",
+        "R": "162000.01",
+        "crosses_trigger_only": true,
+        "positive_surcharge_quota": null
+      }
+    },
+    {
+      "name": "R band endpoint 1.35",
+      "pass": true,
+      "detail": {
+        "endpoint": "162000",
+        "scope": "Profit-measure endpoint only; no corresponding taxable-base or quota share asserted."
+      }
+    },
+    {
+      "name": "R band endpoint 1.50",
+      "pass": true,
+      "detail": {
+        "endpoint": "180000",
+        "scope": "Profit-measure endpoint only; no corresponding taxable-base or quota share asserted."
+      }
+    },
+    {
+      "name": "R band endpoint 1.75",
+      "pass": true,
+      "detail": {
+        "endpoint": "210000",
+        "scope": "Profit-measure endpoint only; no corresponding taxable-base or quota share asserted."
+      }
+    },
+    {
+      "name": "R band endpoint 2",
+      "pass": true,
+      "detail": {
+        "endpoint": "240000",
+        "scope": "Profit-measure endpoint only; no corresponding taxable-base or quota share asserted."
+      }
+    },
+    {
+      "name": "period starting 2025-12-31",
+      "pass": true,
+      "detail": {
+        "charging_window": false,
+        "scope": "Period starting date, not filing year or end date. \u00c1lava implementation still unconfirmed."
+      }
+    },
+    {
+      "name": "period starting 2026-01-01",
+      "pass": true,
+      "detail": {
+        "charging_window": true,
+        "scope": "Period starting date, not filing year or end date. \u00c1lava implementation still unconfirmed."
+      }
+    },
+    {
+      "name": "period starting 2030-12-31",
+      "pass": true,
+      "detail": {
+        "charging_window": true,
+        "scope": "Period starting date, not filing year or end date. \u00c1lava implementation still unconfirmed."
+      }
+    },
+    {
+      "name": "period starting 2031-01-01",
+      "pass": true,
+      "detail": {
+        "charging_window": false,
+        "scope": "Period starting date, not filing year or end date. \u00c1lava implementation still unconfirmed."
+      }
+    },
+    {
+      "name": "named rate/class 24 medium=False",
+      "pass": true,
+      "detail": {
+        "within_named_rate_class_only": true,
+        "scope": "Does not decide R, exclusions or surcharge quota."
+      }
+    },
+    {
+      "name": "named rate/class 24 medium=True",
+      "pass": true,
+      "detail": {
+        "within_named_rate_class_only": false,
+        "scope": "Does not decide R, exclusions or surcharge quota."
+      }
+    },
+    {
+      "name": "named rate/class 20 medium=False",
+      "pass": true,
+      "detail": {
+        "within_named_rate_class_only": false,
+        "scope": "Does not decide R, exclusions or surcharge quota."
+      }
+    },
+    {
+      "name": "named rate/class 28 medium=False",
+      "pass": true,
+      "detail": {
+        "within_named_rate_class_only": true,
+        "scope": "Does not decide R, exclusions or surcharge quota."
+      }
+    },
+    {
+      "name": "named rate/class 31 medium=False",
+      "pass": true,
+      "detail": {
+        "within_named_rate_class_only": true,
+        "scope": "Does not decide R, exclusions or surcharge quota."
+      }
+    },
+    {
+      "name": "named rate/class 19 medium=False",
+      "pass": true,
+      "detail": {
+        "within_named_rate_class_only": false,
+        "scope": "Does not decide R, exclusions or surcharge quota."
+      }
+    },
+    {
+      "name": "distinct R/base ordinary depreciation only",
+      "pass": true,
+      "detail": {
+        "scope": "Shows missing allocation matters for ordinary adjustments; no allocation or tax surcharge manufactured."
+      }
+    },
+    {
+      "name": "distinct R/base stipulated deductible timing difference",
+      "pass": true,
+      "detail": {
+        "scope": "Shows missing allocation matters for ordinary adjustments; no allocation or tax surcharge manufactured."
+      }
+    },
+    {
+      "name": "distinct R/base stipulated nondeductible expense",
+      "pass": true,
+      "detail": {
+        "scope": "Shows missing allocation matters for ordinary adjustments; no allocation or tax surcharge manufactured."
+      }
+    },
+    {
+      "name": "distinct R/base stipulated allowable base reduction",
+      "pass": true,
+      "detail": {
+        "scope": "Shows missing allocation matters for ordinary adjustments; no allocation or tax surcharge manufactured."
+      }
+    }
+  ],
+  "count": 29,
+  "passed": 29,
+  "diagnostic_input_vectors": [
+    {
+      "case": "ordinary depreciation only",
+      "pretax_accounting_profit": "200000",
+      "book_depreciation": "30000",
+      "R_before_other_R_adjustments": "230000",
+      "stipulated_net_tax_base_adjustment": "0",
+      "arithmetical_base": "200000",
+      "historical_M": "150000",
+      "R_trigger_threshold": "202500",
+      "corresponding_base_slices": null,
+      "corresponding_quota_slices": null,
+      "surcharge_quota": null,
+      "status": "REQUEST FACTS ONLY. Not an authority result; eligibility and adjustment allowability assumed, not adjudicated."
+    },
+    {
+      "case": "stipulated deductible timing difference",
+      "pretax_accounting_profit": "200000",
+      "book_depreciation": "30000",
+      "R_before_other_R_adjustments": "230000",
+      "stipulated_net_tax_base_adjustment": "-15000",
+      "arithmetical_base": "185000",
+      "historical_M": "150000",
+      "R_trigger_threshold": "202500",
+      "corresponding_base_slices": null,
+      "corresponding_quota_slices": null,
+      "surcharge_quota": null,
+      "status": "REQUEST FACTS ONLY. Not an authority result; eligibility and adjustment allowability assumed, not adjudicated."
+    },
+    {
+      "case": "stipulated nondeductible expense",
+      "pretax_accounting_profit": "200000",
+      "book_depreciation": "30000",
+      "R_before_other_R_adjustments": "230000",
+      "stipulated_net_tax_base_adjustment": "20000",
+      "arithmetical_base": "220000",
+      "historical_M": "150000",
+      "R_trigger_threshold": "202500",
+      "corresponding_base_slices": null,
+      "corresponding_quota_slices": null,
+      "surcharge_quota": null,
+      "status": "REQUEST FACTS ONLY. Not an authority result; eligibility and adjustment allowability assumed, not adjudicated."
+    },
+    {
+      "case": "stipulated allowable base reduction",
+      "pretax_accounting_profit": "200000",
+      "book_depreciation": "30000",
+      "R_before_other_R_adjustments": "230000",
+      "stipulated_net_tax_base_adjustment": "-10000",
+      "arithmetical_base": "190000",
+      "historical_M": "150000",
+      "R_trigger_threshold": "202500",
+      "corresponding_base_slices": null,
+      "corresponding_quota_slices": null,
+      "surcharge_quota": null,
+      "status": "REQUEST FACTS ONLY. Not an authority result; eligibility and adjustment allowability assumed, not adjudicated."
+    }
+  ]
+}

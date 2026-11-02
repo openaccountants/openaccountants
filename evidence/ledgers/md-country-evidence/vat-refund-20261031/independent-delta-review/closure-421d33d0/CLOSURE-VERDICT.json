@@ -1,0 +1,29 @@
+{
+  "head": "421d33d0b4bdcedfcd09ea861dbf48b341a247e1",
+  "initial_head": "6637d0dbfa6d032194ebe24306c46e7f2d7a88e9",
+  "writer_repair_manifest_sha256": "f63d432c02e5bd0a7f3b1f87b87e39ba185cc43e241afdffa5483312362b99ae",
+  "closure_input_manifest_sha256": "c2bac8bba6a407b3a97d2c8fcea98bfd5bd445c4bae3112d7786a745a83e8275",
+  "verdict": "ACCEPT_BOUNDED_PARTIAL_TIER2_DELTA",
+  "blocking_findings": 0,
+  "closed_findings": [
+    "MD-DR-01",
+    "MD-DR-02",
+    "MD-DR-03",
+    "MD-DR-04"
+  ],
+  "source_bindings_current": 185,
+  "original_bindings_unchanged": 184,
+  "original_destination_units_unchanged": 242,
+  "intake_questions": 6,
+  "intake_facts_preserved": true,
+  "examples_passed": 22,
+  "new_guide_checks_passed": 10,
+  "all715input_hashes_match_at_verdict": true,
+  "initial7review_files_immutable": true,
+  "other10Guides_byte_exact": true,
+  "historical669files_hash_exact": true,
+  "country_complete": false,
+  "domain_complete": false,
+  "professional_attestation": false,
+  "GitHub_CI_run_by_reviewer": false
+}

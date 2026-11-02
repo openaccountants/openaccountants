@@ -1,0 +1,1338 @@
+{
+  "projection_notice": "Distinct publication derivative, not the reviewed original ledger. All rule/claim/locator/source/date and full-quote hashes retained; full context independently reviewed privately. Short exact locator quotations do not reproduce complete rules or waive source-owner rights.",
+  "original_path": "evidence/research/gibraltar-2026/category-2-2026-10-31/ledger.json",
+  "original_sha256": "db985f1976764a0cb6a16ec89fd3784ba1681b5ea5b05e3fbe46377df0fb9d39",
+  "reviewed_research_head": "82c31460b651c22677a28587ab37e274a59199ab",
+  "projection": {
+    "date": "2026-10-31",
+    "status": "unreviewed new-job candidate; no complete-job/country claim",
+    "attribution": "Official excerpts: Government of Gibraltar / Gibraltar Finance / Income Tax Office; necessary scope-specific quotations only, not full source captures or redistribution clearance",
+    "rows": [
+      {
+        "id": "C2-01",
+        "guide_line": 64,
+        "claim": "This is the distinct Category 2 job excluded from the [ordinary individual comparison](gi-individual-income-tax.md). It addresses certificates under the current Qualifying (Category 2) Individuals Rules 2004, their family elections and the actual IT1C 2026 return for **1 July 2025\u201330 June 2026**, including its separate 2026/27 payment section. Keep immigration, work-permission and treaty-residence evidence separate; this calculation does not establish those outcomes. Legacy Qualifying/HNWI status and HEPSS are different certificate routes; do not select their IT1C certificate boxes merely because they also use that form. [Rules 2\u20133, 5, 11 and 14](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf); [IT1C pages 1 and 3](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf).",
+        "excerpts": [
+          "availability",
+          "it1csubmit",
+          "it1cfamily"
+        ],
+        "status": "scope/process",
+        "limits": "Distinct job; existing individual exclusion is separately hash-preserved. Immigration/treaty outcomes are not decided here."
+      },
+      {
+        "id": "C2-02",
+        "guide_line": 68,
+        "claim": "1. Record the application assessment year and each of the five preceding assessment years. Rule 4 excludes presence **exceeding 183 days in any one** of those years or **an average exceeding 90 days in any three** of them. It is not the ordinary current-year residence test or a requirement that the selected three years be consecutive. Exactly 183 days does not cross that particular limb; other limbs still apply. Record previous Gibraltar trade, business, profession, vocation and employment separately. The incidental-to-an-overseas-activity exception applies to the activity limb, not automatically to the day tests. Only the Director can exercise the rule 4(3) economic-development waiver. [Rule 4](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf).",
+        "excerpts": [
+          "prior"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-03",
+        "guide_line": 69,
+        "claim": "2. Obtain approved accommodation for exclusive residential use. The definition includes the stated family and occasional non-paying guests, but excludes letting or leasing of any sort. Rule 3 requires availability for the whole assessment year, with the application-year requirement running from certificate issue for the remaining part of that year. An unapproved property or occasional hotel stay is not substituted for the approval requirement. Record application, issue and effective dates separately: rule 6 makes effectiveness run from when the Director is satisfied that the conditions were first met. [Rules 2\u20133 and 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf).",
+        "excerpts": [
+          "home",
+          "availability",
+          "issue"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-04",
+        "guide_line": 70,
+        "claim": "3. Establish the Director's rule 6 decision on substantial and sound financial standing, good character and Gibraltar's reputation. The current application requires proof of financial standing and the documents below. The **18 June 2026 announcement** states an intention to move new applicants' minimum net wealth from \u00a32m to \u00a35m and grandfather existing holders. The enacted 22 June amendment changes the fee only; neither it nor the current application/checklist establishes the effective implementation or full measurement of that announced wealth policy. Do not certify eligibility solely by applying either headline wealth number. Retain the actual current criteria and approval decision for the applicant. [Rule 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf); [announcement](https://www.gibraltar.gov.gi/press-releases/government-announces-changes-to-category-2-regime-4692026-12107); [enacted amendment](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2026=127.pdf); [current application](https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20form%20-%20wef%20June%2026.pdf).",
+        "excerpts": [
+          "issue",
+          "wealth",
+          "amendment",
+          "appdocs"
+        ],
+        "status": "implementation gap explicit",
+        "limits": "No current numeric wealth-policy implementation inferred from an announcement or silence in forms."
+      },
+      {
+        "id": "C2-05",
+        "guide_line": 71,
+        "claim": "4. Identify every proposed Gibraltar activity before signing the declaration. The Director can permit the listed activities on the economic-development condition. Permitted Gibraltar-source activity income remains taxable under rule 10(4); permission does not place it inside the cap. The rule 5(3) incidental-overseas-activity exception has its own facts. Do not claim that all work is forbidden or that any directorship is automatically permitted. [Rule 5 and rule 10(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf).",
+        "excerpts": [
+          "work",
+          "local"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-06",
+        "guide_line": 77,
+        "claim": "| Ordinary ABS bands adopted by rule 9 | First \u00a34,000 taxable income at 14%; next \u00a312,000 at 17%; remainder at 39% | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf |",
+        "excerpts": [
+          "bands"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-07",
+        "guide_line": 78,
+        "claim": "| Capped component | Rule 9(4)(a): first \u00a3118,000 of **taxable income**, subject to rule 10; not a cap on all receipts or all Gibraltar-source activity/property income | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf |",
+        "excerpts": [
+          "cap"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-08",
+        "guide_line": 79,
+        "claim": "| Full-band capped maximum | \u00a342,380 = \u00a34,000 \u00d7 14% + \u00a312,000 \u00d7 17% + \u00a3102,000 \u00d7 39%, before any separately chargeable rule 10(3)/(4) income | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf; https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf; https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/qualifying-individuals |",
+        "excerpts": [
+          "bands",
+          "cap"
+        ],
+        "status": "derived arithmetic",
+        "limits": "4000*.14 +12000*.17+102000*.39=42380; local income not included in ceiling. Current FAQ confirms maximum, retained separately in receipts."
+      },
+      {
+        "id": "C2-09",
+        "guide_line": 80,
+        "claim": "| Continuing-year minimum | \u00a337,000, subject to the first/cessation-year provisions | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf |",
+        "excerpts": [
+          "minimum"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-10",
+        "guide_line": 81,
+        "claim": "| First certificate year / year it ceases | \u00a33,083.33 for every complete **or part** month the certificate is in force; actual certificate dates control | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf |",
+        "excerpts": [
+          "first",
+          "cease"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-11",
+        "guide_line": 82,
+        "claim": "| Application fee | \u00a35,000, non-refundable; fee amendment effective on publication, 22 June 2026 | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2026=127.pdf; https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf |",
+        "excerpts": [
+          "amendment",
+          "advance"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-12",
+        "guide_line": 83,
+        "claim": "| Certificate advance | Application advance and annual advance at the maximum tax under rule 9(4)(a); annual deadline 30 November in the assessment year | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf |",
+        "excerpts": [
+          "advance"
+        ],
+        "status": "source-supported amount; allocation gap",
+        "limits": "Maximum tax derived from bands/cap; refund and annual/application obligations do not prove actual ledger allocation."
+      },
+      {
+        "id": "C2-13",
+        "guide_line": 84,
+        "claim": "| Endorsement | The 30 days preceding the third anniversary of issue, then the third anniversary of the latest endorsement, or the certificate's specified times | https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf |",
+        "excerpts": [
+          "cycle"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-14",
+        "guide_line": 86,
+        "claim": "The temporary rate modifications in rules 3B and 3C concern 2022/23 and 2023/24. Do not carry their higher percentages into 2025/26 or 2026/27. The current ITO FAQ confirms \u00a342,380 maximum and \u00a337,000 minimum, but describes the \u00a3118,000 cap as gross assessable income; rule 9(4)(a) actually says taxable income. The computation below follows the operative Rules and records the difference. Category 2 cannot elect GIBS under rule 9(5). [Rates Rules 2\u20133C](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf); [Category 2 rule 9](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf); [FAQ](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/qualifying-individuals).",
+        "excerpts": [
+          "bands",
+          "cease",
+          "temporary22",
+          "temporary23",
+          "faqcap"
+        ],
+        "status": "dated-source reconciliation",
+        "limits": "Rates 3B/3C headings are explicitly 2022/23 and 2023/24; current index points to 1 July 2024. FAQ assessable/taxable wording differs from operative cap; do not silently merge concepts."
+      },
+      {
+        "id": "C2-15",
+        "guide_line": 92,
+        "claim": "Make a transaction-level schedule showing source/payer, income type, accrual and receipt location, gross amount, applicable Act charge or exemption, supporting document, any election and the destination column below. Section 11 and the applicable Schedule 1 class are the starting point; a bank receipt or certificate label alone does not establish chargeable income. A benefit equivalent to foreign income can constitute Gibraltar receipt under section 11(3). Retain the ordinary [individual method](gi-individual-income-tax.md) for the applicable income/deduction rules, without importing its GIBS election into this job. [Act 11 and 25](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [Rules 9(1)\u2013(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf).",
+        "excerpts": [
+          "charge",
+          "taxbase",
+          "deduct"
+        ],
+        "status": "statutory classification method",
+        "limits": "No all-overseas-receipts exemption asserted. Ordinary underlying allowances retain their existing qualification/gaps."
+      },
+      {
+        "id": "C2-16",
+        "guide_line": 94,
+        "claim": "- **Excluded foreign income:** rule 10(1) excludes the specified foreign dividends, pensions and emoluments of office from Category 2 assessable income. Rule 10(2) permits an election to include all or part for the particular assessment year. Record the income and election expressly; completing the optional outside-Gibraltar section is not proof that a particular election was accepted. Do not describe every overseas receipt, every salary or every trust distribution as automatically excluded. Apply its actual charging/exemption provisions first. [Rule 10(1)\u2013(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf); [Act 11](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+        "excerpts": [
+          "foreign",
+          "charge"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-17",
+        "guide_line": 95,
+        "claim": "- **Certificate-capped column:** include chargeable amounts remaining within rule 9(4)(a) after exclusions and elections. Rule 9(2) adopts the rules made under section 25 for taxable income. Support each expense, exemption and ABS deduction with its eligibility rule and allocate it once; do not deduct a personal allowance again from the other column. This Guide does not create a new allowance or make a payment eligible merely because the form lacks an allowance box. Attach the calculation supporting taxable income. [Rules 9(1)\u2013(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf); [Act 25](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+        "excerpts": [
+          "taxbase",
+          "cap",
+          "deduct"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-18",
+        "guide_line": 96,
+        "claim": "- **Uncapped Gibraltar column:** separately derive chargeable property income from Gibraltar rents, premiums and other property profits under rule 10(3), and permitted Gibraltar-source activity income under rule 10(4). Reconcile gross rent/business receipts to the supported taxable profit, distinguishing revenue costs from capital/outlay and non-deductible items under Schedule 3. Rule 10(5) applies ABS rates; rule 10(6) includes the \u00a3118,000 amount in assessable income when determining the rate on this additional income. Under the current full bands that puts positive additional taxable income above the \u00a316,000 lower-band boundary, at 39%; it is not sheltered by unused capped-income headroom. Preserve the Schedule 3 profit computation and deduction allocation rather than taxing gross property proceeds. [Rule 10(3)\u2013(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf); [Act 25 and Schedule 3](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [Rates rule 2](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf).",
+        "excerpts": [
+          "local",
+          "bands",
+          "deduct",
+          "profitcosts"
+        ],
+        "status": "statutory working-paper reading",
+        "limits": "Use supported profit and deduction allocation; mixed minimum/credit allocation remains a named review point."
+      },
+      {
+        "id": "C2-19",
+        "guide_line": 98,
+        "claim": "The following is a statutory working-paper reading of rules 9\u201310. For a full-band calculation, calculate the capped tax on the smaller of its supported taxable column and \u00a3118,000, then add the rule 10(3)/(4) component at its applicable rate. Record any legally available credit separately. Section 60(6) denies the usual tax credit to a Category 2 individual except for its stated dividends assessable because of rule 10(4); do not automatically copy a company's tax credit into the capped column. Where that exception is proved, apply section 60's gross-up/credit rules with the company's evidence. Apply the relevant rule 9 minimum to the resulting tax payable. The floor is not a deduction, additional income or a second charge added to the computed liability. Shared-deduction allocation and the minimum/credit ordering in mixed uncapped-income or credit cases remain review points; do not finalise those disputed cases from this draft. [Rules 9\u201310](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf); [Act 60(1)\u2013(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+        "excerpts": [
+          "taxbase",
+          "cap",
+          "minimum",
+          "local",
+          "credit"
+        ],
+        "status": "derived reading, review required",
+        "limits": "Shared deduction allocation and minimum/credit ordering in mixed cases are expressly not finalised. Do not certify live liability from these unresolved cases."
+      },
+      {
+        "id": "C2-20",
+        "guide_line": 100,
+        "claim": "Only the minimum is expressly determined by complete/part certificate months in rule 9(4)(c)\u2013(d). Use actual-year income, not an automatic fraction of \u00a342,380. The printed \u00a33,083.33 gives \u00a336,999.96 for twelve months under those first/cessation-year provisions; do not silently replace that printed multiplication with an invented rounding rule. Part-year ABS band/deduction eligibility, including the Rates rule 2(2) legacy section reference, needs the applicable ordinary method and exact facts before a non-zero part-year calculation is final. The zero-income minimum example below does not depend on resolving that reference. [Rule 9(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf); [Rates rule 2(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf).",
+        "excerpts": [
+          "first",
+          "cease",
+          "partbands"
+        ],
+        "status": "part-year gap explicit",
+        "limits": "3083.33*12=36999.96 is literal printed arithmetic, no invented rounding. Non-zero part-year band/reference issue is not resolved by a zero-income example."
+      },
+      {
+        "id": "C2-21",
+        "guide_line": 104,
+        "claim": "A written rule 11 election can attribute a spouse/civil partner's or qualifying child's income to the certificate holder. The family member must not be excluded by rule 4. A child is unmarried and meets the stated under-18-at-year-start, full-time-education or articles/indentures limb; do not impose an unstated age limit on the latter limbs. Keep the election, identity/relationship evidence and income schedule. Withdrawal is effective from written notice; the specified commencement of disqualifying activity has its own deemed-withdrawal rule. A family member can instead apply in their own right with the shared-property exclusive-use deeming. Do not claim two separate individual caps/floors for income attributed to one holder. [Rule 11](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf).",
+        "excerpts": [
+          "family"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-22",
+        "guide_line": 106,
+        "claim": "The certificate is indefinite subject to continuing conditions and the endorsement cycle. Retain evidence of accommodation, permitted activities, financial standing, character and the rule 7 tax-payment conditions as printed. Revocation can run from the Director's identified failure date; a declaration of no chargeability triggers immediate revocation under rule 7(4). Rule 8 advance-tax refunds apply on rejection or relinquishment/surrender, with outstanding tax deducted on surrender. A refundable advance is different from the non-refundable application fee. Rule 14 preserves specified older certificates/legacy elections; do not treat a legacy HNWI certificate as a new Category 2 application or apply its historic 2002\u201304 two-year transition to a 2026 applicant. [Rules 6\u20138 and 12\u201314](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf).",
+        "excerpts": [
+          "issue",
+          "continuation",
+          "cycle",
+          "revoke",
+          "advance",
+          "legacy"
+        ],
+        "status": "legacy method incomplete",
+        "limits": "No old HNWI calculation or historic transition re-opened for 2026 applicant; continuation conditions retained as printed."
+      },
+      {
+        "id": "C2-23",
+        "guide_line": 112,
+        "claim": "Use the June 2026 application and checklist linked by Gibraltar Finance. Complete block capitals: personal/passport/nationality/occupation/address details; family name, birth date, relationship and Rule 11 election column; the accommodation, prior-presence/activity and rule 5 declarations; signature, date and data-consent declaration. Supply the cover letter, passport, CV, character reference, bank letter confirming account-opening date, proof of financial standing and Gibraltar-regulated-intermediary reliance letter. Explain intended Gibraltar business activity for approval. For a family election supply the requested passport, marriage/birth and school-enrolment evidence. These are the authority's published application requirements, not a promise of approval. [Application pages 1\u20133](https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20form%20-%20wef%20June%2026.pdf); [checklist page 1](https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20checklist%20-%20wef%20June%2026%20(2).pdf).",
+        "excerpts": [
+          "appfields",
+          "appdocs",
+          "appbusiness"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-24",
+        "guide_line": 114,
+        "claim": "The checklist says submit by email to **fcd.category2applications@financecentre.gov.gi**; processing awaits the non-refundable fee and all required documents. Keep separate evidence of the \u00a35,000 fee and the rule 8 application advance. Do not send the fee to a guessed tax-payment category or treat either remittance as the certificate itself. Retain the applicable Finance Centre payment instructions and actual receipts. [Checklist page 1](https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20checklist%20-%20wef%20June%2026%20(2).pdf); [rule 8](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf).",
+        "excerpts": [
+          "submit",
+          "advance"
+        ],
+        "status": "fee payment instructions gap",
+        "limits": "Published route/email verified; no invented fee bank account or fee-as-tax category."
+      },
+      {
+        "id": "C2-25",
+        "guide_line": 116,
+        "claim": "Identify the property and obtain approval **before** entering a purchase/rental agreement. The checklist requires notification and the accommodation form plus rental agreement/deed within two months of application approval; the application declaration uses certificate-approval wording. Record the actual approval letter and both triggers rather than waiting for formal issue where the checklist says issue awaits the deed/contract. The accommodation form asks for estate agent, property address, offer price/rent, proposed buyer/tenant, occupants/relationships, internal/external area, original-plan bedrooms, bathrooms and signed contact details. Future address changes require advance approval under the checklist. [Checklist page 2](https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20checklist%20-%20wef%20June%2026%20(2).pdf); [application page 2](https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20form%20-%20wef%20June%2026.pdf); [accommodation form](https://www.gibraltarfinance.gi/uploads/forms/CAT%202%20Approval%20of%20Residential%20Accommodation%20Form.pdf).",
+        "excerpts": [
+          "property",
+          "accommodation"
+        ],
+        "status": "approval wording difference explicit",
+        "limits": "Application page 2 says certificate approval; checklist says application approval. Actual dated decision controls; not silently treated as identical."
+      },
+      {
+        "id": "C2-26",
+        "guide_line": 118,
+        "claim": "The checklist also requires the medical-insurance certificate within two months of certificate approval, Gibraltar coverage, at least \u00a3100,000 policy value per insured person and the listed inpatient/outpatient, professional fees, diagnostic, therapy, surgical/drug/dressing and European evacuation/repatriation cover. Include elected family members. These are checklist conditions; do not relabel the insurance premium as an automatically deductible expense. [Checklist page 2](https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20checklist%20-%20wef%20June%2026%20(2).pdf).",
+        "excerpts": [
+          "medical",
+          "familymedical"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-27",
+        "guide_line": 132,
+        "claim": "Every field above comes from [IT1C 2026 pages 1\u20134](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf). Attach the income classification, elections, deductions/credits, certificate-month/minimum and payment-allocation schedules. The form requires the completed return/documents by email to **taxqi@gibraltar.gov.gi**, plus photo ID; it expressly says no taxpayer signature is needed. Return and any tax due must be **received by 30 November 2026**. Keep the exact PDF, attachments, delivery and authority response; sending an incomplete file is not proof of accepted filing. [IT1C page 1](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf); [Act 28(1) and 39](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+        "excerpts": [
+          "it1csubmit",
+          "it1csource",
+          "it1cfamily",
+          "it1cboxes",
+          "return"
+        ],
+        "status": "actual form field map",
+        "limits": "All seven preceding field-map rows bind to these four actual form pages; no future-year return claimed."
+      },
+      {
+        "id": "C2-28",
+        "guide_line": 136,
+        "claim": "Keep separate columns for (a) the rule 8 application/annual maximum-tax advance, (b) statutory payments on account and (c) the return's balance. Rule 8(2) specifies **30 November in the assessment year** for its advance. Section 39(2)(b) restricts the statutory payment-on-account basis to its named income classes, whereas IT1C prints a same-as-box-1 estimate. Its two form instalments do not repeal rule 8, prove how an existing advance was credited, or authorise paying the same liability twice. Reconcile the actual tax account by year and payment type before deriving cash still payable; keep the assessment/account allocation and any section 39(5) reduction decision. This cash-allocation interaction is not settled by adding the form's boxes. [Rule 8](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf); [Act 39(2)\u2013(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [IT1C page 1](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf).",
+        "excerpts": [
+          "advance",
+          "payment",
+          "reduction",
+          "it1cboxes"
+        ],
+        "status": "material cash-allocation gap",
+        "limits": "Do not infer advance-credit treatment, repeal of rule 8, doubled cash liability or unrestricted statutory instalment base from form alone."
+      },
+      {
+        "id": "C2-29",
+        "guide_line": 138,
+        "claim": "Open the [official payment page](https://www.gibraltar.gov.gi/income-tax-office/report-changes), follow **Income Tax Online Payment Portal** to `https://tax.egov.gi/`, then **Fill in a payment form online**. The public blank form begins with contact **Name, Phone, Email** and **Next**. The published service guide requires the taxpayer's name/TIN where paying for someone else and a plan identifying payment type, period and amount. Prepare separate lines for the correct taxpayer/year/type; check the totals before **Finalize and Review**. The guide says completion provides a payment confirmation with bank details and an emailed copy. Quote its generated **PAYMENT REFERENCE** in the actual bank transfer. A payment plan or email confirmation does not itself transfer money. Retain the plan/reference, bank execution evidence and resulting tax-account allocation. The public entry and instructions were read without entering taxpayer data, creating a plan or making a transfer. [Payment service guide](https://tax.egov.gi/Downloads/Tax_Portal_Payment_Service_Guide.pdf); [official payment route](https://www.gibraltar.gov.gi/income-tax-office/report-changes).",
+        "excerpts": [
+          "payfields",
+          "payplan"
+        ],
+        "status": "published process plus public UI observation",
+        "limits": "Blank current UI showed Name/Phone/Email/Next and Finalize and Review; no personal data entered or plan submitted. Later banking/emailed confirmation described from authority guide, not fabricated live receipt."
+      },
+      {
+        "id": "C2-30",
+        "guide_line": 140,
+        "claim": "The downloads page still links May 2011 qualifying-individual notes. Their December instalment date and old surcharge/penalty structure are historical, not the current timetable. Current section 39 and IT1C 2026 specify January/June instalments. [Historical notes](https://www.gibraltar.gov.gi/new/sites/default/files/1/01/Guidance_notes-Qualifying_Individuals.pdf); [current section 39](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [current form](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf).",
+        "excerpts": [
+          "oldpay",
+          "payment"
+        ],
+        "status": "historical-source exclusion",
+        "limits": "May 2011 instructions are not used for current dates or old penalty/interest rates."
+      },
+      {
+        "id": "C2-31",
+        "guide_line": 144,
+        "claim": "Section 65(2) provides \u00a350 for a section 28 return failure, then further \u00a3300 after three months and \u00a3500 after six months if it continues. Section 64 adds 10% of unpaid tax immediately after the due date; its further 20% applies to tax **and surcharge** still unpaid at the statutory 90-day point. IT1C's sentence saying 90 days after \u201cthe date of payment\u201d does not replace the Act's due-date/surcharge trigger. Apply actual dates and intervening payments, not an invented flat interest charge. Certificate revocation/payment conditions are a separate rule 7 issue. [Act 64\u201365](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [IT1C page 1](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf); [rule 7](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf).",
+        "excerpts": [
+          "penalty",
+          "surcharge",
+          "it1csurcharge",
+          "revoke"
+        ],
+        "status": "source-supported draft",
+        "limits": ""
+      },
+      {
+        "id": "C2-32",
+        "guide_line": 148,
+        "claim": "A certificate and approved home do not determine ordinary residence under every statute, immigration rights, source, foreign tax or treaty entitlement. Retain residence/travel and income-source evidence, and use the [Spain residence](gi-spain-tax-residence.md), [UK treaty](gi-uk-employment-pensions-treaty.md) and [foreign-relief](gi-foreign-tax-relief.md) jobs where relevant. Do not assume the foreign dividends/pension/office-income exclusion is a foreign-country exemption, or that a voluntary inclusion election creates a foreign tax credit. The rule 11 family election changes this computation's attribution; it does not itself change another country's tax result. [Rules 4\u20135 and 10\u201311](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf); [Act 11](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+        "excerpts": [
+          "charge",
+          "prior",
+          "foreign",
+          "family"
+        ],
+        "status": "cross-border process boundary",
+        "limits": "Linked existing jobs retain actual residence/treaty scope. No foreign-country exemption or credit invented."
+      },
+      {
+        "id": "C2-33",
+        "guide_line": 154,
+        "claim": "Assume a full-year continuing certificate, full ABS bands, a documented rule 10(2) election including \u00a3150,000 foreign income within that rule, \u00a34,000 of eligible deductions allocated once to that component, and no available credit. The \u00a34,000 is a hypothetical verified deduction total, not a new statutory allowance. Assume Gibraltar rental receipts \u00a312,000 and \u00a32,000 allowable revenue costs, with no further deductions. The capped taxable component is \u00a3146,000, limited to \u00a3118,000; property profit is \u00a310,000 outside the cap, taxed above the lower-band boundary. Total is **\u00a346,280**, so the \u00a337,000 floor does not increase it. The maximum \u00a342,380 is therefore not a ceiling on this person's total liability. Without the inclusion election, the foreign-income exclusion must be recorded before recomputing; do not keep the elected amount in the base by habit. [Rules 9\u201310](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf); [Act 25](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [Rates rule 2](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf).",
+        "excerpts": [
+          "foreign",
+          "cap",
+          "local",
+          "bands",
+          "minimum",
+          "deduct",
+          "profitcosts"
+        ],
+        "status": "hypothetical arithmetic",
+        "limits": "150000 income/4000 eligible deductions/12000 rent/2000 allowable costs are hypothetical inputs, not statutory thresholds. Core classification and cap/uncapped arithmetic shown; no credit assumed."
+      },
+      {
+        "id": "C2-34",
+        "guide_line": 185,
+        "claim": "Assume the certificate is first in force **20 March 2027 through 30 June 2027**, with no chargeable income after the actual exclusions, no inclusion election, no additional Gibraltar property/activity income and no credit. Four complete/part months give **\u00a312,333.32**, not four months of the \u00a342,380 maximum. The application requires a separate \u00a35,000 non-refundable fee and the rule 8 maximum-tax advance; their arithmetic sum is \u00a347,380, but that is not the first-year tax liability. The advance's allocation and any later refund require the actual account/certificate events. [Rules 8\u201310](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf); [Rates rule 2](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf).",
+        "excerpts": [
+          "first",
+          "advance",
+          "bands"
+        ],
+        "status": "hypothetical arithmetic",
+        "limits": "20 March\u201330 June has four complete/part months; min12333.32, advance42380, fee5000, cash arithmetic47380 is not tax liability or verified account allocation."
+      },
+      {
+        "id": "C2-35",
+        "guide_line": 208,
+        "claim": "Assume box 1 liability \u00a342,380 and actual payments already credited to 2025/26 of \u00a340,000. The balance is \u00a32,380. The form's box 2 illustration is \u00a342,380 and each printed half \u00a321,190; this does not prove those instalments are the outstanding cash debt after rule 8/account reconciliation or a section 39 decision. [IT1C page 1](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf); [Act 39](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+        "excerpts": [
+          "it1cboxes",
+          "payment"
+        ],
+        "status": "form-control arithmetic",
+        "limits": "42380-40000=2380; two printed halves21190. Actual credited40000 is hypothetical and must be evidenced in real file."
+      },
+      {
+        "id": "C2-36",
+        "guide_line": 227,
+        "claim": "If that \u00a32,380 remains entirely unpaid through both statutory surcharge triggers, with no relief or intervening payment, the first surcharge is \u00a3238 and the further charge is 20% of \u00a32,618, or \u00a3523.60. This is not an interest calculation or an illustration of a changed payment deadline. [Act 64](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+        "excerpts": [
+          "surcharge"
+        ],
+        "status": "conditional arithmetic",
+        "limits": "2380*.10=238; (2380+238)*.20=523.60; sum3141.60. Exact statutory triggers, no intervening payment or calendar adjustments assumed."
+      }
+    ],
+    "operative_excerpts": {
+      "prior": {
+        "source": "RULES",
+        "article": "rule 4",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          119,
+          140
+        ],
+        "quote_sha256": "1086591ec8392a05e7c5f09803b5ce08c6ef8111ea2bd49ae7773f6db8b923bf",
+        "public_excerpt": "period exceeding\u2013\n\n             (i)    183 days in any such year of assessment, or\n\n            (ii)    an average of",
+        "public_excerpt_sha256": "0763120e55f68adafcaf62ff3e46e062c7f6e6a9ea23d4a1871d6251b4572872",
+        "original_full_quote_sha256": "1086591ec8392a05e7c5f09803b5ce08c6ef8111ea2bd49ae7773f6db8b923bf",
+        "original_full_quote_words": 171,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "home": {
+        "source": "RULES",
+        "article": "rules 2\u20133",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          83,
+          86
+        ],
+        "quote_sha256": "4307442be69031e1b79e93790040d94a8a024ab92c5b9de387b9ed4df886c715",
+        "public_excerpt": "\u201cexclusive use\u201d means use for the residential purposes of the applicant and his family, i.e.\n         spouse,",
+        "public_excerpt_sha256": "ca770e255c4333eadcaeee3f7a35bd9ab8d5e231c91dc29a6026d1e2ad4702f7",
+        "original_full_quote_sha256": "4307442be69031e1b79e93790040d94a8a024ab92c5b9de387b9ed4df886c715",
+        "original_full_quote_words": 47,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "availability": {
+        "source": "RULES",
+        "article": "rule 3",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          96,
+          106
+        ],
+        "quote_sha256": "18b215c881cfa376fba1b38cee707ee4057d21265583b6f81c56bbc2fd9d4d3e",
+        "public_excerpt": "writing to the Finance Centre Director\nfor the issue of a certificate under section 41A of",
+        "public_excerpt_sha256": "2b6a8fd68e4a30fe70184d977e3ebc0b92e764573bcc0a1d67ba7a1b3271a7d7",
+        "original_full_quote_sha256": "18b215c881cfa376fba1b38cee707ee4057d21265583b6f81c56bbc2fd9d4d3e",
+        "original_full_quote_words": 115,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "issue": {
+        "source": "RULES",
+        "article": "rule 6",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          173,
+          186
+        ],
+        "quote_sha256": "138538627b36e118a5a33bbf0293fd3a71f7f0a676848f8274c5178bd43813e4",
+        "public_excerpt": "6. Where the Finance Centre Director is satisfied that the provisions of rules 3, 4 and",
+        "public_excerpt_sha256": "6e25e996833e197ee571446c96e313964e3451bc4ebea4f84e116f7710c91d05",
+        "original_full_quote_sha256": "138538627b36e118a5a33bbf0293fd3a71f7f0a676848f8274c5178bd43813e4",
+        "original_full_quote_words": 120,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "work": {
+        "source": "RULES",
+        "article": "rule 5",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          144,
+          169
+        ],
+        "quote_sha256": "7bb008cecbdeee3dc04f8a5e7efd6299e2eaf735ee64d7c20149297fe9064ecf",
+        "public_excerpt": "Gibraltar\nwhere the Finance Centre Director is satisfied that the exercise of such trade, business,\nprofession,",
+        "public_excerpt_sha256": "1e20492f9ea5044fd2d133387d16406da63a5cd135fc57977b91fef34169ec30",
+        "original_full_quote_sha256": "7bb008cecbdeee3dc04f8a5e7efd6299e2eaf735ee64d7c20149297fe9064ecf",
+        "original_full_quote_words": 190,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "continuation": {
+        "source": "RULES",
+        "article": "rule 7(1)\u2013(2)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          190,
+          220
+        ],
+        "quote_sha256": "3460aad056acc22b5dcf2f0ae04194a1b1e0feff498417fa5f860473c411ef65",
+        "public_excerpt": "amount of any minimum tax payable or that would have been\n           payable under rule 9 of",
+        "public_excerpt_sha256": "5bdb60dba39261c0c38cbc774604b31db798c704694ca279f18b970d8af9508a",
+        "original_full_quote_sha256": "3460aad056acc22b5dcf2f0ae04194a1b1e0feff498417fa5f860473c411ef65",
+        "original_full_quote_words": 211,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "cycle": {
+        "source": "RULES",
+        "article": "rule 7(3)(c)(i)(bb)\u2013(ii)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          238,
+          244
+        ],
+        "quote_sha256": "7ae4924c3005f2c294ccaccd4b231038261c3af05401f6829e6489dcf22b786f",
+        "public_excerpt": "(bb)       the 30 days immediately preceding the third anniversary of the date of\n                           issue of the",
+        "public_excerpt_sha256": "1ff347c2b460bc0505df8c42969e84742c3a449813822cfa3073f49f41032b47",
+        "original_full_quote_sha256": "7ae4924c3005f2c294ccaccd4b231038261c3af05401f6829e6489dcf22b786f",
+        "original_full_quote_words": 50,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "revoke": {
+        "source": "RULES",
+        "article": "rule 7(4)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          246,
+          248
+        ],
+        "quote_sha256": "f3d1fd933c929ce3f9f85567d19961298e989dec685a0967e281d1340375dec9",
+        "public_excerpt": "Act 2010, the Finance Centre Director shall\nimmediately revoke the certificate issued under rule 6 of",
+        "public_excerpt_sha256": "6f1a95c77733cae660a9c1ef1fb63bb05547ff040a680de35671759cc7e685f3",
+        "original_full_quote_sha256": "f3d1fd933c929ce3f9f85567d19961298e989dec685a0967e281d1340375dec9",
+        "original_full_quote_words": 41,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "advance": {
+        "source": "RULES",
+        "article": "rule 8",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          252,
+          276
+        ],
+        "quote_sha256": "62c544c6cc0050ccd468ef6542c7be29743eb52870d7334b12ca5003fd9a254e",
+        "public_excerpt": "application fee of \u00a35,000; and\n\n         (b) a refundable advance payment equivalent to the maximum amount of",
+        "public_excerpt_sha256": "0eebc7ae7599c996d7c5f4cd28f366a04074a89683d0b012614ffceac6265afa",
+        "original_full_quote_sha256": "62c544c6cc0050ccd468ef6542c7be29743eb52870d7334b12ca5003fd9a254e",
+        "original_full_quote_words": 160,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "taxbase": {
+        "source": "RULES",
+        "article": "rule 9(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          280,
+          294
+        ],
+        "quote_sha256": "e84b59fe17f0f827df0bec2d676e658639777b82740a6273f05c7b0d45dd37b2",
+        "public_excerpt": "9.(1) Except in so far as these Rules provide\u2013\n\n       (a) the provisions of the Income Tax",
+        "public_excerpt_sha256": "58ea94dda3ad13b2edd228ee2297956b987e7885a854f26473e8431b8f16637d",
+        "original_full_quote_sha256": "e84b59fe17f0f827df0bec2d676e658639777b82740a6273f05c7b0d45dd37b2",
+        "original_full_quote_words": 134,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "cap": {
+        "source": "RULES",
+        "article": "rule 9(4)(a)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          298,
+          299
+        ],
+        "quote_sha256": "70504319110d4ba32b9180f164eeeb4a28634af3ed109988291cadb5eaf1e290",
+        "public_excerpt": "to the first \u00a3118,000 of taxable income only;",
+        "public_excerpt_sha256": "f9dc857cc82bee5754b9844b6efea90b944293b18f7f8f4a38eaf150e5528fbf",
+        "original_full_quote_sha256": "70504319110d4ba32b9180f164eeeb4a28634af3ed109988291cadb5eaf1e290",
+        "original_full_quote_words": 31,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "minimum": {
+        "source": "RULES",
+        "article": "rule 9(4)(b)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          301,
+          303
+        ],
+        "quote_sha256": "4f04520836fa2cc046006dfb2180350a80b9b044d42fcbc9ffff755b430044e5",
+        "public_excerpt": "and (d), the minimum amount of tax payable for any year\n           of assessment following the year",
+        "public_excerpt_sha256": "52f65550111249ea2fbb4ccddf8e5684e02caca03b346d85b92ed573e53f571a",
+        "original_full_quote_sha256": "4f04520836fa2cc046006dfb2180350a80b9b044d42fcbc9ffff755b430044e5",
+        "original_full_quote_words": 34,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "first": {
+        "source": "RULES",
+        "article": "rule 9(4)(c)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          305,
+          307
+        ],
+        "quote_sha256": "2e157ddcc349a703c004b906176531add5b1f0c433e3b4f4d5f510b1e7c9bab5",
+        "public_excerpt": "(c) the minimum amount of tax payable for the first year of assessment during which\n           a",
+        "public_excerpt_sha256": "1fddc9f571b3ec636b44a62ba5e6f24fc13478b2c5021f4f3e44eb2a42fce939",
+        "original_full_quote_sha256": "2e157ddcc349a703c004b906176531add5b1f0c433e3b4f4d5f510b1e7c9bab5",
+        "original_full_quote_words": 43,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "cease": {
+        "source": "RULES",
+        "article": "rule 9(4)(d)\u2013(5)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          318,
+          323
+        ],
+        "quote_sha256": "d71d28619fc83647c414be8b87567568c2d0236d3ce918aba56272065225dce0",
+        "public_excerpt": "(d) the minimum amount of tax payable in the year of assessment during which a\n           certificate",
+        "public_excerpt_sha256": "1efdcef7a0886182b6c80b1fb8ba98eb2e660f780d504efbe52ae789b7b4f28c",
+        "original_full_quote_sha256": "d71d28619fc83647c414be8b87567568c2d0236d3ce918aba56272065225dce0",
+        "original_full_quote_words": 70,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "foreign": {
+        "source": "RULES",
+        "article": "rule 10(1)\u2013(2)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          327,
+          335
+        ],
+        "quote_sha256": "020e39f91f0dab5cb12aa45818fd93ade4e925c2a5af66099774a8f7f4ad9b2c",
+        "public_excerpt": "10.(1) Subject to the provisions of these rules, the income chargeable to taxation under section\n11",
+        "public_excerpt_sha256": "4ee4baf6e1fcc205f4cb33b6ea2dc98dc2fa1134d1d1a8ea17f22d9a36ca7260",
+        "original_full_quote_sha256": "020e39f91f0dab5cb12aa45818fd93ade4e925c2a5af66099774a8f7f4ad9b2c",
+        "original_full_quote_words": 104,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "local": {
+        "source": "RULES",
+        "article": "rule 10(3)\u2013(6)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          337,
+          352
+        ],
+        "quote_sha256": "1241f466ed3aed6cae2b3c3082c2078ecb5b5f8411a75d5d6b780283e5aed3d6",
+        "public_excerpt": "permitted by the Finance Centre Director under rule 5\nof these rules to carry on or",
+        "public_excerpt_sha256": "61b1c079c196cbd461ae19d0e57f8a5dbfef7bd0f08711cdfc1f5b4a2158fdaf",
+        "original_full_quote_sha256": "1241f466ed3aed6cae2b3c3082c2078ecb5b5f8411a75d5d6b780283e5aed3d6",
+        "original_full_quote_words": 179,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "family": {
+        "source": "RULES",
+        "article": "rule 11",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          356,
+          395
+        ],
+        "quote_sha256": "afb394db742af5d7b807979aaad848dc7e67536fc252bae07beb5d4757d4d22b",
+        "public_excerpt": "writing to the Finance Centre Director and shall have effect from the date of the notice",
+        "public_excerpt_sha256": "395c70127cb4ccd1f1c54921d8158271839b421f34aa9014adb59163aff6c3f1",
+        "original_full_quote_sha256": "afb394db742af5d7b807979aaad848dc7e67536fc252bae07beb5d4757d4d22b",
+        "original_full_quote_words": 354,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "legacy": {
+        "source": "RULES",
+        "article": "rules 12\u201314",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2004s070(22-06-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "1c5e7c0d56454cb589b3bb90494d512813225e67395d1b005ddb2cf6fda22079",
+        "native_lines": [
+          399,
+          432
+        ],
+        "quote_sha256": "eda0c7e99427fdbdbda2ed0ca65139edff03c5c611028aa12d19a8857f1c946f",
+        "public_excerpt": "12. Any election made under rule 14 of the Qualifying (Category 2) Individuals Rules 1999\n(\u201cthe",
+        "public_excerpt_sha256": "5237ec640c34e205e0dd2d606640c035af9c7f08410ec188d5b7cef1d4923635",
+        "original_full_quote_sha256": "eda0c7e99427fdbdbda2ed0ca65139edff03c5c611028aa12d19a8857f1c946f",
+        "original_full_quote_words": 271,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "bands": {
+        "source": "RATES",
+        "article": "rule 2(1)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "c0407e53ef359e91d9062a9fb705664b69ecfd9e8be7ee8ea47c3255fd961355",
+        "native_lines": [
+          130,
+          134
+        ],
+        "quote_sha256": "245787018b36f3b4d19300974a334b57dade3a8a05dc60015130c6d3a855697f",
+        "public_excerpt": "the first \u00a34,000 of taxable income at the rate of 14 per cent;\n\n         the next \u00a312,000",
+        "public_excerpt_sha256": "d4d87d61cf72f1cc0c897d998e929c09bcd31b48726f4938f0439f5147ead914",
+        "original_full_quote_sha256": "245787018b36f3b4d19300974a334b57dade3a8a05dc60015130c6d3a855697f",
+        "original_full_quote_words": 38,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "partbands": {
+        "source": "RATES",
+        "article": "rule 2(2)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "c0407e53ef359e91d9062a9fb705664b69ecfd9e8be7ee8ea47c3255fd961355",
+        "native_lines": [
+          143,
+          146
+        ],
+        "quote_sha256": "04e2f34689c83b811f9ce055ac3c6feb640b92e75178215128e8e69e541e1579",
+        "public_excerpt": "(2) In the case of an individual to whom the provisions of section 34(3) apply the",
+        "public_excerpt_sha256": "aa34ffcf5035332a06d2702b6245ec78278bd56ec34cd5f0ddc93c4ce9b1b198",
+        "original_full_quote_sha256": "04e2f34689c83b811f9ce055ac3c6feb640b92e75178215128e8e69e541e1579",
+        "original_full_quote_words": 60,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "charge": {
+        "source": "ACT",
+        "article": "section 11(1)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+        "native_lines": [
+          3510,
+          3524
+        ],
+        "quote_sha256": "cba3db7624da43bb8b7a88c0d4527ab62fbac926704e2d3563a5f846f3eaea23",
+        "public_excerpt": "11.(1) Tax shall, subject to the provisions of this Act and of the Rules, be payable",
+        "public_excerpt_sha256": "631908b46c9a6d8f9b6de87a5ea8a121dcf48ce599e9836da63578ae2167fcdb",
+        "original_full_quote_sha256": "cba3db7624da43bb8b7a88c0d4527ab62fbac926704e2d3563a5f846f3eaea23",
+        "original_full_quote_words": 199,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "deduct": {
+        "source": "ACT",
+        "article": "section 25(1)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+        "native_lines": [
+          4290,
+          4293
+        ],
+        "quote_sha256": "0ccd1c2174409bda45f1ca3712f1dd73665933d9db296406f7d0b82f1628e07c",
+        "public_excerpt": "25.(1) Subject to the provisions of this Act, the amount of profits or gains of a",
+        "public_excerpt_sha256": "1bc01f1bf3dbd2d4cb3f7b35bee3d8adae1a5e617c81ad8573fce3d4c7bb086a",
+        "original_full_quote_sha256": "0ccd1c2174409bda45f1ca3712f1dd73665933d9db296406f7d0b82f1628e07c",
+        "original_full_quote_words": 48,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "return": {
+        "source": "ACT",
+        "article": "section 28(1)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+        "native_lines": [
+          4341,
+          4344
+        ],
+        "quote_sha256": "e74d9390004f5d213db0a67e89fdd7de05ecb260c106ad90dbdfc50b23ff09dc",
+        "public_excerpt": "28.(1) Subject to subsections (2) to (12), every person other than a company who is liable",
+        "public_excerpt_sha256": "7eb4b467d5d10dfd1e6db058ba5e8184c2c5ee953734d68301f91ce372fcd388",
+        "original_full_quote_sha256": "e74d9390004f5d213db0a67e89fdd7de05ecb260c106ad90dbdfc50b23ff09dc",
+        "original_full_quote_words": 57,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "payment": {
+        "source": "ACT",
+        "article": "section 39(2)\u2013(3)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+        "native_lines": [
+          4970,
+          4992
+        ],
+        "quote_sha256": "42df981cbe89ae5e0a78787f58a0f0e33f4cef175e686f1f793be42f82a9f944",
+        "public_excerpt": "amount equal to 50 per cent of the tax liability in respect of the immediately\n          preceding",
+        "public_excerpt_sha256": "e54846b0087f93aa3294690319b09b8fed42520ce3894de86fbb37f775d9b78f",
+        "original_full_quote_sha256": "42df981cbe89ae5e0a78787f58a0f0e33f4cef175e686f1f793be42f82a9f944",
+        "original_full_quote_words": 250,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "reduction": {
+        "source": "ACT",
+        "article": "section 39(5)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+        "native_lines": [
+          5039,
+          5042
+        ],
+        "quote_sha256": "9466a5e3ce24ee7e4a89018aef17f210b0f6c3fd35b89bd6c2a995c5818a1119",
+        "public_excerpt": "(5) Where the Taxpayer believes that the payment on account required under subsection\n(3) or (4)",
+        "public_excerpt_sha256": "e75e2cf55ce3d8e929ac74be9bf6ac56c0fefade3c13851d5980df52c877b0e3",
+        "original_full_quote_sha256": "9466a5e3ce24ee7e4a89018aef17f210b0f6c3fd35b89bd6c2a995c5818a1119",
+        "original_full_quote_words": 53,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "credit": {
+        "source": "ACT",
+        "article": "section 60(6)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+        "native_lines": [
+          6031,
+          6037
+        ],
+        "quote_sha256": "f3f5abc27f9150171413d0c5455d28bdabcfe6fb37939990d51a0d13a599c688",
+        "public_excerpt": "Rules 2004, no tax credit shall be available to any\nindividual taxed in accordance with the",
+        "public_excerpt_sha256": "2b471fd390e683ff4efd39166f0afac7969717f9102c0f4fb2a4b7b594802dfd",
+        "original_full_quote_sha256": "f3f5abc27f9150171413d0c5455d28bdabcfe6fb37939990d51a0d13a599c688",
+        "original_full_quote_words": 58,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "surcharge": {
+        "source": "ACT",
+        "article": "section 64(1)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+        "native_lines": [
+          6219,
+          6233
+        ],
+        "quote_sha256": "d8092ce1511c1642e806fa03a1457c9c3e9d08f6d5104ee831a7aa3f93f0ead6",
+        "public_excerpt": "tax is due, 10 per cent of\n           the amount of the tax unpaid;\n\n       (b) where any",
+        "public_excerpt_sha256": "ca2cc6236c65b1135059b9d3c59b508aff6f9512711fa801155cde39e79b7f75",
+        "original_full_quote_sha256": "d8092ce1511c1642e806fa03a1457c9c3e9d08f6d5104ee831a7aa3f93f0ead6",
+        "original_full_quote_words": 129,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "penalty": {
+        "source": "ACT",
+        "article": "section 65(1)\u2013(2)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+        "native_lines": [
+          6240,
+          6257
+        ],
+        "quote_sha256": "5d178cee9cc9e59ba7064fd2d5d7207e0e11338d3d8a891c25cc3a33cc76bc7b",
+        "public_excerpt": "a penalty of \u00a350;\n\n       (b) if the failure by the person to comply continues after the",
+        "public_excerpt_sha256": "0c266fd1137575f2ca4c2e2f80ceab1b76171d63ee8545ffb15568320f45157c",
+        "original_full_quote_sha256": "5d178cee9cc9e59ba7064fd2d5d7207e0e11338d3d8a891c25cc3a33cc76bc7b",
+        "original_full_quote_words": 130,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "amendment": {
+        "source": "AMEND",
+        "article": "LN 127/2026 rules 2\u20133",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2004s070/2026=127.pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "14458886db11fc7bf95c9bd21b28f8cdae4f6c8e595513bc8b697c69b1132ab4",
+        "native_lines": [
+          24,
+          31
+        ],
+        "quote_sha256": "728a33e5d9e3742b7993b1141cebf8b126a3cea8ac6e90e342b1ff72a89f73de",
+        "public_excerpt": "rule 8(1)(a), for \u201c\u00a31,233\u201d substitute \u201c\u00a35,000\u201d.",
+        "public_excerpt_sha256": "3f3550df4988138115b4a9a80653b06ee978e257695aac300103cd92caa0e2b5",
+        "original_full_quote_sha256": "728a33e5d9e3742b7993b1141cebf8b126a3cea8ac6e90e342b1ff72a89f73de",
+        "original_full_quote_words": 43,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "appfields": {
+        "source": "APPLICATION",
+        "article": "pages 1\u20133 field/declaration scope",
+        "official_url": "https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20form%20-%20wef%20June%2026.pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "c05dad35dcd2bd14e8cd1e67be16000b2db30edb8e64b6902260014f96d79e1d",
+        "native_lines": [
+          15,
+          49
+        ],
+        "quote_sha256": "21075a1bacadb6908d28dd7efccb94801d3f29c41f13ad8dd6ebac9515c178fc",
+        "public_excerpt": "1. Personal Information\n\n Full Name (as stated in Passport)\n\n Date of Birth\n\n\n\n Current Residential Address\n\n Place",
+        "public_excerpt_sha256": "2875ddce55ff0b4c25fa69071e06f5f89acdab9bc081e625e2665651a58cabff",
+        "original_full_quote_sha256": "21075a1bacadb6908d28dd7efccb94801d3f29c41f13ad8dd6ebac9515c178fc",
+        "original_full_quote_words": 95,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "appdocs": {
+        "source": "APPLICATION",
+        "article": "page 3 documents and fee",
+        "official_url": "https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20form%20-%20wef%20June%2026.pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "c05dad35dcd2bd14e8cd1e67be16000b2db30edb8e64b6902260014f96d79e1d",
+        "native_lines": [
+          95,
+          116
+        ],
+        "quote_sha256": "0e718d7aa1f9a28009009245f7839c3c9f1bb29b6906f19e2a20d40673285357",
+        "public_excerpt": "Letter\n\nNote: The Finance Centre Director may in individual cases require the applicant to submit further",
+        "public_excerpt_sha256": "2832f4892221303d78e26052fb8efc47278fa7c8cf896284c25f9061b003deba",
+        "original_full_quote_sha256": "0e718d7aa1f9a28009009245f7839c3c9f1bb29b6906f19e2a20d40673285357",
+        "original_full_quote_words": 124,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "submit": {
+        "source": "CHECKLIST",
+        "article": "page 1",
+        "official_url": "https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20checklist%20-%20wef%20June%2026%20(2).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "5afe50f83db5abe492c823e1fa529176f322c0d1df5ec72cf6a202c541869c97",
+        "native_lines": [
+          6,
+          10
+        ],
+        "quote_sha256": "b9804e31b5399a7bbe80023d2f3b53009fed122062c79ee4cfe542787b5e2957",
+        "public_excerpt": "Applications will not be processed until the non-refundable application fee has been paid\n             and all required",
+        "public_excerpt_sha256": "a35b385d0cf6c95d871b454e6b7a68dec24331e181d5004f77bee4ffd92654c4",
+        "original_full_quote_sha256": "b9804e31b5399a7bbe80023d2f3b53009fed122062c79ee4cfe542787b5e2957",
+        "original_full_quote_words": 48,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "appbusiness": {
+        "source": "CHECKLIST",
+        "article": "page 1 evidence list",
+        "official_url": "https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20checklist%20-%20wef%20June%2026%20(2).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "5afe50f83db5abe492c823e1fa529176f322c0d1df5ec72cf6a202c541869c97",
+        "native_lines": [
+          18,
+          38
+        ],
+        "quote_sha256": "9618941a0a84d45ea6498ca058c44d948ecff974f799411f0adcfac16bfb1954",
+        "public_excerpt": "Application Fee (\u00a35,000 \u2013 non-refundable)\nCompleted Application Form\nCover Letter\nPersonal Documents\nPassport Copy\nCurriculum Vitae",
+        "public_excerpt_sha256": "7d64dcaf8e68a27fbcd5d8dd32d3b9dd13d232947e7289bdb02caad7d024efa7",
+        "original_full_quote_sha256": "9618941a0a84d45ea6498ca058c44d948ecff974f799411f0adcfac16bfb1954",
+        "original_full_quote_words": 80,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "property": {
+        "source": "CHECKLIST",
+        "article": "page 2 accommodation",
+        "official_url": "https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20checklist%20-%20wef%20June%2026%20(2).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "5afe50f83db5abe492c823e1fa529176f322c0d1df5ec72cf6a202c541869c97",
+        "native_lines": [
+          40,
+          51
+        ],
+        "quote_sha256": "461b87773fde3cc4931958b3aae0ee0469cfbfff2f64316f5b4ff559712c17e8",
+        "public_excerpt": "identified for their exclusive use, for approval by the Finance\nCentre Director. Properties must be approved",
+        "public_excerpt_sha256": "1482f8ce5f0e72e00cac84013beecbed7f85770b791f19694ba8dc7bdd542bc7",
+        "original_full_quote_sha256": "461b87773fde3cc4931958b3aae0ee0469cfbfff2f64316f5b4ff559712c17e8",
+        "original_full_quote_words": 106,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "medical": {
+        "source": "CHECKLIST",
+        "article": "page 2 medical cover",
+        "official_url": "https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20checklist%20-%20wef%20June%2026%20(2).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "5afe50f83db5abe492c823e1fa529176f322c0d1df5ec72cf6a202c541869c97",
+        "native_lines": [
+          55,
+          67
+        ],
+        "quote_sha256": "5417b403dcf8f7890e523d4a35b4b2f1e27235a93820cc710d838cb3a5c019b5",
+        "public_excerpt": "in Gibraltar\n    3. Minimum policy value of \u00a3100,000 per insured person\n    4. Inpatient and outpatient treatment",
+        "public_excerpt_sha256": "d8e0b89af62d6c54ce90565116fa688b6e35a582d1704c2c045a46eeab0ac642",
+        "original_full_quote_sha256": "5417b403dcf8f7890e523d4a35b4b2f1e27235a93820cc710d838cb3a5c019b5",
+        "original_full_quote_words": 85,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "familymedical": {
+        "source": "CHECKLIST",
+        "article": "page 2 family cover",
+        "official_url": "https://www.gibraltarfinance.gi/uploads/forms/Cat%202%20application%20checklist%20-%20wef%20June%2026%20(2).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "5afe50f83db5abe492c823e1fa529176f322c0d1df5ec72cf6a202c541869c97",
+        "native_lines": [
+          69,
+          70
+        ],
+        "quote_sha256": "bfc56631023de430c4feaa0f55944d1762121655e8b7fbfbefdcc050f784cf52",
+        "public_excerpt": "Where an election is made under Rule 11, medical insurance should also be provided for the",
+        "public_excerpt_sha256": "be1b7eeab908e49394182c44e80c89e2cb15fa259606eb3789754d2f27684c1b",
+        "original_full_quote_sha256": "bfc56631023de430c4feaa0f55944d1762121655e8b7fbfbefdcc050f784cf52",
+        "original_full_quote_words": 18,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "accommodation": {
+        "source": "ACCOM",
+        "article": "approval form fields",
+        "official_url": "https://www.gibraltarfinance.gi/uploads/forms/CAT%202%20Approval%20of%20Residential%20Accommodation%20Form.pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "3cd5905a93a9f9dedd0ec06eac9e62903fa47e77a91e92fc73e7a43cbc96b6a5",
+        "native_lines": [
+          5,
+          34
+        ],
+        "quote_sha256": "7b4fa1441ade5fca82e474bde14bcbf35fd204832051e2c27cc3f8c65dd283f1",
+        "public_excerpt": "be for the exclusive use of the Cat 2 Individual\n\n7. Property Size - Internal Area:",
+        "public_excerpt_sha256": "d7fc98cfc2eb8a54b04c875c7d62f8d7ab107d9c2d29d15a2daac088853daf51",
+        "original_full_quote_sha256": "7b4fa1441ade5fca82e474bde14bcbf35fd204832051e2c27cc3f8c65dd283f1",
+        "original_full_quote_words": 101,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "it1csubmit": {
+        "source": "IT1C",
+        "article": "page 1 return/identity/deadline",
+        "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "05e290a95539a225ed1d498386f8e78f208ac4829336376eface6adf37e01b5f",
+        "native_lines": [
+          20,
+          33
+        ],
+        "quote_sha256": "aefe65273a880c076c20f71818e2f869c0871e66ad071f54414f2a084f577e69",
+        "public_excerpt": "be charged a \u00a350 penalty if your tax return is received late with further penalties accruing",
+        "public_excerpt_sha256": "0cc59af55978d513ffbb77e8582f3a55bc95532f1f4f8f7c25987a0f140af68a",
+        "original_full_quote_sha256": "aefe65273a880c076c20f71818e2f869c0871e66ad071f54414f2a084f577e69",
+        "original_full_quote_words": 128,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "it1cboxes": {
+        "source": "IT1C",
+        "article": "page 1 liability/credit/estimate/halves",
+        "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "05e290a95539a225ed1d498386f8e78f208ac4829336376eface6adf37e01b5f",
+        "native_lines": [
+          37,
+          62
+        ],
+        "quote_sha256": "0ff86d8400c23cd4f1d3cbd298c4db404adb314b1db2756d7105f6c23c560f02",
+        "public_excerpt": "Calculation of tax payable for 2025/2026\n\n 1   \u00a3                                 Tax liability for the year 2025/2026\n\n\n     \u00a3                                 Less",
+        "public_excerpt_sha256": "960f8c25aefd0440562f0b8f308bd9d9d954a2873d9499f0319c48b35e433354",
+        "original_full_quote_sha256": "0ff86d8400c23cd4f1d3cbd298c4db404adb314b1db2756d7105f6c23c560f02",
+        "original_full_quote_words": 99,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "it1csource": {
+        "source": "IT1C",
+        "article": "page 2 sources/covered and uncovered income",
+        "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "05e290a95539a225ed1d498386f8e78f208ac4829336376eface6adf37e01b5f",
+        "native_lines": [
+          70,
+          133
+        ],
+        "quote_sha256": "1a46e81f43b2b9d4f702bd9c7cfb095b6f3a967f0d827748d3684abe8573d64e",
+        "public_excerpt": "SECTION 1 - INCOME ACCRUED IN, DERIVED FROM OR RECEIVED IN GIBRALTAR\n   This section must be",
+        "public_excerpt_sha256": "deacc8ba4624fef660f61cad725d012fe29f6a0f32fad3612d1377a2ce3865bf",
+        "original_full_quote_sha256": "1a46e81f43b2b9d4f702bd9c7cfb095b6f3a967f0d827748d3684abe8573d64e",
+        "original_full_quote_words": 175,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "it1cfamily": {
+        "source": "IT1C",
+        "article": "pages 3\u20134 optional outside income/certificates/family/declaration",
+        "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "05e290a95539a225ed1d498386f8e78f208ac4829336376eface6adf37e01b5f",
+        "native_lines": [
+          134,
+          217
+        ],
+        "quote_sha256": "ad40d4ca5b2c24da43e06092da722034b75e5c0c37a611a6ae38fee2aa73ba35",
+        "public_excerpt": "SECTION 2 - INCOME RECEIVED OUTSIDE GIBRALTAR\n\n\n   All income that is received outside Gibraltar must be",
+        "public_excerpt_sha256": "43196ba7a1a6e68856278ab17eb8a48c586870b23d345a4c013ef3cce379d467",
+        "original_full_quote_sha256": "ad40d4ca5b2c24da43e06092da722034b75e5c0c37a611a6ae38fee2aa73ba35",
+        "original_full_quote_words": 219,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "it1csurcharge": {
+        "source": "IT1C",
+        "article": "page 1 printed trigger conflict",
+        "official_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/IT1C_2026.pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "05e290a95539a225ed1d498386f8e78f208ac4829336376eface6adf37e01b5f",
+        "native_lines": [
+          65,
+          66
+        ],
+        "quote_sha256": "e4f8d3e779e30d4fb23ce662310561ba03aec6067ef3b614c1c75a169eb26a6c",
+        "public_excerpt": "will be\n     charged 90 days after the date of payment.",
+        "public_excerpt_sha256": "9c15f1821707e542dc96a9378807ce874e24b3a0e540b3a04812b4e39c56c2ce",
+        "original_full_quote_sha256": "e4f8d3e779e30d4fb23ce662310561ba03aec6067ef3b614c1c75a169eb26a6c",
+        "original_full_quote_words": 25,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "payfields": {
+        "source": "PAYGUIDE",
+        "article": "contact/taxpayer fields",
+        "official_url": "https://tax.egov.gi/Downloads/Tax_Portal_Payment_Service_Guide.pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "853ad2d28816473a04b31360dc1a638ee96373d351362a93bd05130a1a46c3de",
+        "native_lines": [
+          14,
+          18
+        ],
+        "quote_sha256": "84815396e21e1ab999cae6f1fe1bf90b3c936a2c5dd0be863657259f003d6920",
+        "public_excerpt": "What information do I need to provide?\nTo be able to use this service you will",
+        "public_excerpt_sha256": "d1d600c04ce3eef7587d72aca6d33d4d12fdd73ae6255f952a0a2a181fe0aff2",
+        "original_full_quote_sha256": "84815396e21e1ab999cae6f1fe1bf90b3c936a2c5dd0be863657259f003d6920",
+        "original_full_quote_words": 46,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "payplan": {
+        "source": "PAYGUIDE",
+        "article": "plan, banking confirmation and reference",
+        "official_url": "https://tax.egov.gi/Downloads/Tax_Portal_Payment_Service_Guide.pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "853ad2d28816473a04b31360dc1a638ee96373d351362a93bd05130a1a46c3de",
+        "native_lines": [
+          23,
+          33
+        ],
+        "quote_sha256": "35086c4991bd50a21a56bba11fbde99b49dbb413fa4a77488c4ce12de91f8cfe",
+        "public_excerpt": "MUST quote the PAYMENT REFERENCE in any bank transfer payment to\nthe Income Tax Office.\n\fA",
+        "public_excerpt_sha256": "af82b0f81cfd2a80cc11f9470ac28d25597524bf1d379f5c9fa0aa397577f96e",
+        "original_full_quote_sha256": "35086c4991bd50a21a56bba11fbde99b49dbb413fa4a77488c4ce12de91f8cfe",
+        "original_full_quote_words": 110,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "oldpay": {
+        "source": "OLDGUIDE",
+        "article": "May 2011 historical payment dates",
+        "official_url": "https://www.gibraltar.gov.gi/new/sites/default/files/1/01/Guidance_notes-Qualifying_Individuals.pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "4ad97a66f05825e322050858b55f5246f773469fa6653d75712be2a4bf180e63",
+        "native_lines": [
+          54,
+          54
+        ],
+        "quote_sha256": "0928711735fc8e4b646e78b0759254af879bdb28451c163617f87c29fb77a24d",
+        "public_excerpt": "Each of these two payments must be made by no later than 31st December and 30th",
+        "public_excerpt_sha256": "f062e258bf4817434b2b4df04813ba84ffe9a5ab0ee94a30947b8bb361602226",
+        "original_full_quote_sha256": "0928711735fc8e4b646e78b0759254af879bdb28451c163617f87c29fb77a24d",
+        "original_full_quote_words": 17,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "wealth": {
+        "source": "ANNOUNCE",
+        "article": "18 June 2026 intended policy and grandfathering",
+        "official_url": "https://www.gibraltar.gov.gi/press-releases/government-announces-changes-to-category-2-regime-4692026-12107",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "6896f3d5895d2a19d19032f949f71e76b45b10bba0f91fc8fc6a1a5c98013353",
+        "native_lines": [
+          410,
+          412
+        ],
+        "quote_sha256": "3d82a0bded77977cce5d4ac6867545e0d15e8f5e8c34a39c02e5bfb01aa8b697",
+        "public_excerpt": "application fee from \u00a31,233 to \u00a35,000 and updating the minimum net wealth requirement for new applicants",
+        "public_excerpt_sha256": "b4bc4622a5b262696ef3371fcac99f9026577689a5674e7e9efbbd492b6fb144",
+        "original_full_quote_sha256": "3d82a0bded77977cce5d4ac6867545e0d15e8f5e8c34a39c02e5bfb01aa8b697",
+        "original_full_quote_words": 85,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "temporary22": {
+        "source": "RATES",
+        "article": "rule 3B(1)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "c0407e53ef359e91d9062a9fb705664b69ecfd9e8be7ee8ea47c3255fd961355",
+        "native_lines": [
+          256,
+          257
+        ],
+        "quote_sha256": "dfb198513fbc0e2e46e290296bb8ec200b06a4ea114ee347a3ea6c26a6589cd9",
+        "public_excerpt": "3B.(1) For the year of assessment in the period extending from 1 July 2022 to 30",
+        "public_excerpt_sha256": "83e413a4a349256078ac89d30ae8a0d0720d72c1b0d410688b95d172d7e54650",
+        "original_full_quote_sha256": "dfb198513fbc0e2e46e290296bb8ec200b06a4ea114ee347a3ea6c26a6589cd9",
+        "original_full_quote_words": 30,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "temporary23": {
+        "source": "RATES",
+        "article": "rule 3C(1)",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "c0407e53ef359e91d9062a9fb705664b69ecfd9e8be7ee8ea47c3255fd961355",
+        "native_lines": [
+          305,
+          306
+        ],
+        "quote_sha256": "ea23b776a631ff80f6ea79b4c3a460f7e246651029e69f765cc946767b8136cb",
+        "public_excerpt": "3C.(1) For the year of assessment in the period extending from 1 July 2023 to 30",
+        "public_excerpt_sha256": "97a8ab855987a368184d0976f580b0844dce852be60f9b4daed66a6deef6fd0e",
+        "original_full_quote_sha256": "ea23b776a631ff80f6ea79b4c3a460f7e246651029e69f765cc946767b8136cb",
+        "original_full_quote_words": 30,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "faqcap": {
+        "source": "FAQ",
+        "article": "current qualifying-individual FAQ",
+        "official_url": "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/qualifying-individuals",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "316dc084ec15080b35b369d7bf0bb29913dc6df58498d20a8d3b0a505c3a8dda",
+        "native_lines": [
+          424,
+          432
+        ],
+        "quote_sha256": "c58b7fcf93bceccdf49f6c2b177b7cf29122898e458c78d8e3ab35e1d13ce5bc",
+        "public_excerpt": "is capped at \u00a3118,000 per annum.\nQ. What is the minimum and maximum annual tax liability",
+        "public_excerpt_sha256": "337c94a8400e6e6f2786dc896a7806aa863600c4bdb8278e9eecbcff9c646df1",
+        "original_full_quote_sha256": "c58b7fcf93bceccdf49f6c2b177b7cf29122898e458c78d8e3ab35e1d13ce5bc",
+        "original_full_quote_words": 68,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      },
+      "profitcosts": {
+        "source": "ACT",
+        "article": "Schedule 3 paragraph 2(1), operative condition and capital exclusions",
+        "official_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+        "read_date": "2026-10-31",
+        "original_language": "English",
+        "text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+        "native_lines": [
+          7894,
+          7924
+        ],
+        "quote_sha256": "5e74f93e6a8d7e84e1a63ffd6ea9b260f617285229a09231f74cf7f97b761a34",
+        "public_excerpt": "2.(1) Subject to subparagraph (2), a deduction in computing the profits or gains of any basis",
+        "public_excerpt_sha256": "efd505e9b7db8243c90a178b63899f83077e9dc063fa46aa896b6eb17913f165",
+        "original_full_quote_sha256": "5e74f93e6a8d7e84e1a63ffd6ea9b260f617285229a09231f74cf7f97b761a34",
+        "original_full_quote_words": 268,
+        "excerpt_status": "Short exact locator excerpt only; full conditions and neighbouring context independently reviewed privately, not reproduced here"
+      }
+    }
+  }
+}

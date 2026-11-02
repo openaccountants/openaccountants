@@ -1,0 +1,29 @@
+{
+  "before_rows": 2677,
+  "active_rows": 2530,
+  "removed": 147,
+  "removed_original_ids": [
+    2409,
+    2555
+  ],
+  "native_removed_LF": [
+    1076,
+    1222
+  ],
+  "retained_row_objects_exact": true,
+  "retained_scope_objects_exact": true,
+  "covered_Guide_units_before": 354,
+  "covered_Guide_units_after": 354,
+  "guide_sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+  "old_topic_map_exact": true,
+  "controls_exact": true,
+  "boundary_actual_read": [
+    1074,
+    1084
+  ],
+  "editorial_end_actual_read": [
+    1211,
+    1222
+  ],
+  "no_whole_removed_tail_substantive_read_claim": true
+}

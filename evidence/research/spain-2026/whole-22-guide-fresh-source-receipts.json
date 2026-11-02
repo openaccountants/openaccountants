@@ -1,0 +1,92 @@
+[
+  {
+    "key": "liva",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "fetched_utc": "2026-10-27T16:37:18.109723+00:00",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740",
+    "file": "liva.html",
+    "sha256": "ddc2776b9e285496028f4d8ddc8050a8615c10f196faea31e31084eb3f3c3ef8",
+    "bytes": 1769466
+  },
+  {
+    "key": "reta-act",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409",
+    "fetched_utc": "2026-10-27T16:37:18.110418+00:00",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409",
+    "file": "reta-act.html",
+    "sha256": "71e399a46c6e140e535ea8db37c44627b4f35ca0c07635d989e8cc983cc7067e",
+    "bytes": 500808
+  },
+  {
+    "key": "reta-reg",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579",
+    "fetched_utc": "2026-10-27T16:37:18.110565+00:00",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-1996-1579",
+    "file": "reta-reg.html",
+    "sha256": "ed7988704ea471ca155338069028112ccb9d38dc15b50c80dbf2ffe0e609a487",
+    "bytes": 988922
+  },
+  {
+    "key": "reta-guide",
+    "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/trabajo%2Bautonomo/guia",
+    "fetched_utc": "2026-10-27T16:37:18.110659+00:00",
+    "status": 200,
+    "final_url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Colectivos/trabajo%2Bautonomo/guia",
+    "file": "reta-guide.html",
+    "sha256": "469167572e3e4ffa0e7f3d2f2f0d7105763e584e1db764405f44e26e215ae405",
+    "bytes": 201692
+  },
+  {
+    "key": "lirpf",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "fetched_utc": "2026-10-27T16:37:18.110735+00:00",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "file": "lirpf.html",
+    "sha256": "3608c3f9b646e944bc1283c5e3e65873ce519392deccb7752b441e2ddcd1cb0b",
+    "bytes": 2028806
+  },
+  {
+    "key": "cantabria",
+    "url": "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028",
+    "fetched_utc": "2026-10-27T16:37:18.110811+00:00",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028",
+    "file": "cantabria.html",
+    "sha256": "d6fd6b9b932d19759af1218e1d4b1b5f7aca8d46cf6103230be3d038ce1ed8b3",
+    "bytes": 350447
+  },
+  {
+    "key": "rioja",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-13750",
+    "fetched_utc": "2026-10-27T16:37:18.110919+00:00",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2017-13750",
+    "file": "rioja.html",
+    "sha256": "07f312b790cd635f4842f53baa5ce19dbc24a066b1bfe65c7058391c51862da2",
+    "bytes": 497687
+  },
+  {
+    "key": "catalunya",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-6951",
+    "fetched_utc": "2026-10-27T16:37:18.111118+00:00",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2024-6951",
+    "file": "catalunya.html",
+    "sha256": "43c090202835415ef06f63429246158a1c8e9777432c4f49486e6615e9cb229f",
+    "bytes": 479872
+  },
+  {
+    "key": "lis",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+    "fetched_utc": "2026-10-27T16:37:18.111690+00:00",
+    "status": 200,
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328",
+    "file": "lis.html",
+    "sha256": "3da0b8de850ea5655c0c117c02d46b00d5b96144d67978d42decabc23aea1108",
+    "bytes": 1477792
+  }
+]

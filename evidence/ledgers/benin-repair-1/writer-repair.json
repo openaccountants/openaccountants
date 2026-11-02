@@ -1,0 +1,95 @@
+{
+  "initial_candidate": "a61fda399fa613455862d3cc72d5c403cd330ccc",
+  "status": "Parent repairs complete, focused independent closure pending",
+  "changes": [
+    "F1 eight descriptions80\u2013150words and versions0.2",
+    "F2 interest accounting-entry tax trigger in rate/workflow/deadline text and ledger7",
+    "F3 audit turnover definition in duration rule and ledger10",
+    "six semantic topic-map target corrections"
+  ],
+  "guide_repairs": [
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "old_sha256": "5666c2408c8f9d023089e1e1e5cb2137c9f560a163aa550bc91ae91fa02e8fc8",
+      "description_words": 102,
+      "new_sha256": "54d0ea8a89471609ddd3afed1f008ef09a6646d777eb24986dbf698e2b1f0c41"
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "old_sha256": "31f6db0a3e3af370a1c16c52ea0e56b54d2753bcab26d6e744e0289f5df620e0",
+      "description_words": 105,
+      "new_sha256": "6512023da176e375199a72b35f984a1ab580349297178ec2824138fb12829099"
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "old_sha256": "b00076be897c04230bf309ab2226d083808e626eb4aeeeb955b556f83cdeef6a",
+      "description_words": 108,
+      "new_sha256": "44cb594832380b8b7580e82faeab3eb23388e867701b6d7018b8dcfb71a3b71f"
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "old_sha256": "a9613987e984276dc524205e440892663b12b0c60311315d11acf2e79b769a16",
+      "description_words": 105,
+      "new_sha256": "667232b7bb8753ac3a9f0fae5f0af6ce7a33f0b49ed08c014e61d013d9765de6"
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "old_sha256": "9ce3b19c5edd8a1bf019c59615a8f2889daca55ce5748aa27a3074ede7eee9ab",
+      "description_words": 105,
+      "new_sha256": "b1f8c33b112149d05121eda16812697dfec796d7500b8b072a5a2bb17b45e3d1"
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "old_sha256": "6c7d5b0376110aed5669375eca2b1d2fee671720e2015ec6dc74e40007b23a6d",
+      "description_words": 112,
+      "new_sha256": "38fbf678be1873b5a1c31b5d9eb8b418f543d2afa6c58d97ab6ed5545047b65b"
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "old_sha256": "08efab742621ceb8b2cadc0a45a0626f0f4df3cb68b80bcef545267529a48473",
+      "description_words": 109,
+      "new_sha256": "98eb611a0f7ba6e0d7ff22f8ce1fb9e07ff63d79d1814d7f6afcf13e771f47c2"
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "old_sha256": "7d5495aafd3bdebc9ce663bb41fe12fd5c50aba6706cc308effaa48ce7c342e3",
+      "description_words": 104,
+      "new_sha256": "5c1f55f074516d1320cb247d0e0f72faa02c9939bcaac1a0f61f87ddecf4d695"
+    }
+  ],
+  "map_repairs": [
+    {
+      "line": 31,
+      "old": "bj-vat-gst.md#who-this-applies-to",
+      "new": "bj-vat-gst.md#cross-border-points"
+    },
+    {
+      "line": 32,
+      "old": "bj-vat-gst.md#who-this-applies-to",
+      "new": "bj-vat-gst.md#cross-border-points"
+    },
+    {
+      "line": 33,
+      "old": "bj-vat-gst.md#who-this-applies-to",
+      "new": "bj-vat-gst.md#the-base"
+    },
+    {
+      "line": 41,
+      "old": "bj-corporate-income-tax.md#who-this-applies-to",
+      "new": "bj-corporate-income-tax.md#the-base"
+    },
+    {
+      "line": 49,
+      "old": "bj-corporate-income-tax.md#who-this-applies-to",
+      "new": "bj-corporate-income-tax.md#deadlines-and-filing"
+    },
+    {
+      "line": 72,
+      "old": "bj-corporate-income-tax.md#rates-bands-and-thresholds",
+      "new": "bj-corporate-income-tax.md#deadlines-and-filing"
+    }
+  ],
+  "legal_rows": 113,
+  "examples_expected_unchanged": 16,
+  "additional_source_read": "CGI actualPDF48 art85 and signedLFR actualPDF5 art17 visually read byparent1November2026; CGI91 actualcapturedtext read."
+}

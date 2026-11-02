@@ -1,0 +1,36 @@
+[
+  {
+    "id": "G-IRNR-2026",
+    "raw_sha256": "255e93b1db52147322eb5a168d965047d511fd22343bd33fa30170c75694432d",
+    "reader_sha256": "783a2ff80e73ebc6283ed662f9a48de4ca0de667f7fec332f1ada68c13836246",
+    "raw_reextraction_byte_equal": true,
+    "scope": "Full current24/25/31 and full regulation17; original2.Six and following IRNR amendment provisions; original pages8–9 visually read. Not entire36page amendment re-audited."
+  },
+  {
+    "id": "G-IRNR-regulation-current",
+    "raw_sha256": "bb3521e2400a576ebe932b72915bfe677551d5b4ed68f4066dddecdd2521e186",
+    "reader_sha256": "33e9dfe2e24d27832de7cafeec9bb361719f0738c82f9903f156cc84fffc5c01",
+    "raw_reextraction_byte_equal": true,
+    "scope": "Full current24/25/31 and full regulation17; original2.Six and following IRNR amendment provisions; original pages8–9 visually read. Not entire36page amendment re-audited."
+  },
+  {
+    "id": "G-NF2-2025-original",
+    "raw_sha256": "879562b3c97c3ee33e2ab57927d522aae04d34a13ddab721e600da3614a289d8",
+    "reader_sha256": "b192bc0b907df2d5ea04ba0ca372aeb599cc119647ba20c7e6c39c2e26a31488",
+    "raw_reextraction_byte_equal": true,
+    "scope": "Full current24/25/31 and full regulation17; original2.Six and following IRNR amendment provisions; original pages8–9 visually read. Not entire36page amendment re-audited."
+  },
+  {
+    "id": "G-NFGT11",
+    "reader_sha256": "895c753514e2d572238d0a5f12d4c726e04586a33060789e77d5f78232956332",
+    "raw_sha256": "398c1d884ef6974ffa4f9ec2e4f633029898a1207053f49048cdcbd9ec8d9f94",
+    "context_sha256": "5f6ac02b4b29fb650bcc16b0fb4666dee8e4aa5eef4bf09f46dd80afe9f787e3",
+    "scope": "Complete operative article11 in retained official text; no new whole-law reading claimed."
+  },
+  {
+    "id": "G-IRNR-historical2020",
+    "raw_sha256": "d6de8e1ee9c388025e57ab606ad514877082525f84d7fd078eedeb6bd25ce3de",
+    "reader_sha256": "c22db84860efb1c91ab848c4a2a15c847b079cea9ab3f5dafa179929f65c9000",
+    "scope": "Own historical24.6 expense text and31.2 same retained exclusion; used as historical context, never current rate/base law."
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "predecessor": "ledgers/li-company-formation-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed GmbH contribution total",
+    "sha256": "72e444f2584230c5ac6483c8ec72107213955f7ed6fdcb7dbf3435e1f9363856",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-company-formation-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed AG contribution and statutory minimum",
+    "sha256": "afb496011551e5ddd36ed6074edc01cf56315988e0db218dbac893232701af5d",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-transfer-pricing-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed group route goods threshold",
+    "sha256": "bf33ffecd4bdaf3b789bef431adaebfdfe05f2ed6e3e2fc2eaffe3b73c645e90",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-transfer-pricing-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed separate size route service category",
+    "sha256": "7bd9cdc9c179e050b8ea2816d87d7ff6a4404291d272c5858e7958c1b76d5b79",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-transfer-pricing-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed gross cost plus denominator control",
+    "sha256": "afdb683e0d67f634a4e0218fd7d14498c019afcefab35bd8f7ad0764d96bbb0d",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/liechtenstein-vat-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed standard VAT inclusive invoice",
+    "sha256": "1b59507f6ba58867a6794d7aa9184dc16ab4e6bfb2b7ccf3601b659d6006493a",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/liechtenstein-vat-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed reduced goods and accommodation rates",
+    "sha256": "d9a8dce06eabd4cfb2991839a949758428e2a05933a3cabd4dd299a0d781c73d",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/liechtenstein-vat-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed acquisition tax with partial input entitlement",
+    "sha256": "ccf1791edc5685f9df0e18d23adc9405c190fd4a7ae9dd54eeef301b8f5ace70",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/liechtenstein-vat-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed food supply classification comparison",
+    "sha256": "c577280c55f94b57ed7b83125a802891ab4cd4013b7fb8be5638eb712075e424",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-corporate-income-tax-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed corporate equity and loss bridge",
+    "sha256": "b723f5d770f082a47f94ff2cabc9fe8b2ad94f01b6b00b7403661fd5b8dc7348",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-corporate-income-tax-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed applicable minimum tax comparison",
+    "sha256": "0b673346eb09a9e8a0b1015a33277ab542589343a613974cfaad42375f4db5c0",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-corporate-income-tax-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed equity deduction no new loss",
+    "sha256": "545f3ae2a501f69c7a1dbdf3ad3fecce94d1bea4c91ba50c2a6806428ff63888",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-corporate-income-tax-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed three year minimum tax balance screen",
+    "sha256": "1619936dc42beae77e561e8a32782b46919852d9d53e74a6e05b0cc78cbd1161",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-cross-border-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed eligible foreign tax credit ceiling",
+    "sha256": "b9f0854f9c339c25a8910781ab96eb7d95aeb301bf01585653e369fe7d246a21",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-cross-border-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed specified nonresident board withholding",
+    "sha256": "279053cb982187c73011b92f8725b13916557cd95ef51082d6375fe390ea1ba0",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-cross-border-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed corporate asset exit uplift",
+    "sha256": "195b21fa13551584e76ba43bbcfd11da8f5dad54b7604ca92e774493f2706d0f",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-income-tax-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed full-year single minimum-income screen",
+    "sha256": "27b8cca3512d4c775629c29750c8f915b68b5cce6532ded6d3162888dd85b21e",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-income-tax-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed ordinary tax with deemed wealth yield",
+    "sha256": "6a691f6e6b147c21f32b0170fb6f5f0f65e2276deba459b1b2aa97d998be37a3",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-income-tax-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed joint state formula and municipality tax",
+    "sha256": "0393a4a703ea6d7d7d79c2050570cf46684e3f772a3815f3bd6eb9857e674f7e",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-income-tax-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed qualifying single parent formula",
+    "sha256": "82fa7ba58ffd87550ced2141a119d212beb08f20e3bf055106e80209aeecbedc",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-income-tax-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed ordinary individual business loss cap",
+    "sha256": "3f1c046ee38c5496e10e6ce2e37bbf947d48c8b26db48e557f3c2d404221edff",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-payroll-social-evidence/predecessor-guide.md",
+    "name": "Liechtenstein 2026 assumed employee contribution split",
+    "sha256": "c8c026a539f811638bfe2bb1f7e3decc39d1fae3415c87f729383a2894391c01",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-payroll-social-evidence/predecessor-guide.md",
+    "name": "Liechtenstein 2026 assumed employer contribution and ALV ceiling",
+    "sha256": "9666c3261b2a355c9494dd3e3b7b7226fd2c207f75a64b8c82672eebedea68ba",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-payroll-social-evidence/predecessor-guide.md",
+    "name": "Liechtenstein bulletin part year ALV example",
+    "sha256": "def96ac9fbde44459e349335b93e0494be36e2d2edf8ddaea3db21e310de8e5d",
+    "exact_retained": true
+  },
+  {
+    "predecessor": "ledgers/li-payroll-social-evidence/predecessor-guide.md",
+    "name": "Liechtenstein assumed confirmed ordinary wage withholding",
+    "sha256": "6858f8ae2fa23bfda1994562f59721ee5f3cad8ac48bf3e055e933694eaf0e79",
+    "exact_retained": true
+  }
+]

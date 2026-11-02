@@ -1,0 +1,53 @@
+{
+  "generated_on": "2026-11-01",
+  "scope": "BF excerpt from coverage report run against sparse local checkout containing 10 Guides. Global totals do not represent the full repository.",
+  "BF": {
+    "code": "BF",
+    "name": "Burkina Faso",
+    "region": "africa",
+    "owner": "ryan",
+    "dir": "skills/burkina-faso",
+    "skills": 10,
+    "reviewed": 0,
+    "stale": 0,
+    "present": [],
+    "missing": [
+      "IT-IND",
+      "IT-CORP",
+      "VAT",
+      "SC",
+      "PR",
+      "TP",
+      "XB"
+    ],
+    "not_applicable": {},
+    "partial": {
+      "IT-IND": "Legacy 2025 Guide retained unchanged; current law and procedure not rebuilt.",
+      "IT-CORP": "Legacy 2025 Guide retained unchanged; current law and procedure not rebuilt.",
+      "VAT": "Legacy 2025 Guide retained unchanged; current law and procedure not rebuilt.",
+      "SC": "Legacy 2025 Guide retained unchanged; CNSS and separate AMU not rebuilt.",
+      "PR": "Legacy 2025 Guide retained unchanged; current law and procedure not rebuilt.",
+      "TP": "2026 pricing and documentation draft only; annual form workflow, CbCR implementation and APAs incomplete; independent review pending.",
+      "XB": "2026 non-resident services withholding draft only; treaty relief, PE, investment income, residence and exit jobs incomplete; independent review pending."
+    },
+    "has_readme": true,
+    "outdated": [
+      "bf-corporate-tax",
+      "bf-income-tax",
+      "bf-payroll",
+      "bf-social-contributions",
+      "bf-vat"
+    ],
+    "unsigned": [
+      "bf-corporate-tax",
+      "bf-income-tax",
+      "bf-nonresident-services-withholding",
+      "bf-payroll",
+      "bf-social-contributions",
+      "bf-transfer-pricing",
+      "bf-vat"
+    ],
+    "complete": false,
+    "state": "needs_writing"
+  }
+}

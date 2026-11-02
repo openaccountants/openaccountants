@@ -1,0 +1,1344 @@
+[
+  {
+    "id": "N-2025-manual",
+    "url": "https://www.navarra.es/documents/48192/35409067/Manual%2Bte%C3%B3rico%2Bde%2Bla%2Bcampa%C3%B1a%2Bde%2B2025.pdf/c9e11ce5-ae6f-eb9a-040b-265f1f040525?download=true&t=1775726152475",
+    "raw_sha256": "dd7865ff672792f67b55ef3abdbadd03a425a2c93dd1c6a90a9a0f1c1cebef7f",
+    "reader_sha256": "23c8a175a00807c6c99b4513d15db20ee4237ef80acdbc50a9b42db9e94657c0",
+    "fresh_receipt_verified": true,
+    "independent_raw_reextraction_byte_equal": true,
+    "actual_read_scope": "All crypto/virtual/FIFO keyword hits; full relevant listed/unlisted share and collective-investment FIFO passages. Reporting-only virtual-currency mentions distinguished.",
+    "keyword_hits": [
+      {
+        "native_LF": 768,
+        "line": "monedas virtuales situadas en el extranjero” (BON núm. 146, de 13-07-2023)."
+      },
+      {
+        "native_LF": 770,
+        "line": "dos y operaciones con monedas virtuales, y se aprueban los modelos 172 “Declaración informativa"
+      },
+      {
+        "native_LF": 771,
+        "line": "sobre saldos en monedas virtuales” y 173 “declaración informativa sobre operaciones con monedas"
+      },
+      {
+        "native_LF": 8702,
+        "line": "primer lugar (criterio FIFO)."
+      },
+      {
+        "native_LF": 8799,
+        "line": "entiende que los transmitidos por el sujeto pasivo son aquellos que adquirió en primer lugar (criterio FIFO)."
+      },
+      {
+        "native_LF": 10743,
+        "line": "primer lugar (sistema FIFO)."
+      }
+    ]
+  },
+  {
+    "id": "A-2025-manual",
+    "url": "https://web.araba.eus/documents/d/araba/manual_renta_renta2025_es-pdf",
+    "raw_sha256": "ae58c61f10e514b8e4c993dc778f245bbb3fbd78385b9f8bf642c2b06b7a345d",
+    "reader_sha256": "05b24993ca53312e443d0d70bcf64dc8a4d930a818300849d1972037747c467b",
+    "fresh_receipt_verified": true,
+    "independent_raw_reextraction_byte_equal": true,
+    "actual_read_scope": "Complete6.1.4 loss-noncomputation section and6.3.15 crypto valuation/FIFO section; relevant gains/losses headings, not whole manual.",
+    "keyword_hits": [
+      {
+        "native_LF": 225,
+        "line": "6.3.15.      Transmisiones onerosas de criptoactivos fungibles................................................................ 154"
+      },
+      {
+        "native_LF": 2017,
+        "line": "– quienes hubieran transmitido criptomonedas."
+      },
+      {
+        "native_LF": 7081,
+        "line": "6.3.15.   Transmisiones onerosas de criptoactivos fungibles"
+      },
+      {
+        "native_LF": 7197,
+        "line": "o participaciones que se adquirieron en primer lugar (regla FIFO) y se reparte el valor de"
+      },
+      {
+        "native_LF": 8064,
+        "line": "adquirió en primer lugar, es decir, los más antiguos (criterio FIFO: primera acción que"
+      },
+      {
+        "native_LF": 8220,
+        "line": "adquirió en primer lugar, es decir, los más antiguos (criterio FIFO: primera acción que"
+      },
+      {
+        "native_LF": 8324,
+        "line": "adquirió en primer lugar, es decir, los más antiguos (criterio FIFO: primera acción que"
+      },
+      {
+        "native_LF": 8809,
+        "line": "6.3.15. Transmisiones onerosas de criptoactivos fungibles"
+      },
+      {
+        "native_LF": 8811,
+        "line": "En las transmisiones a título oneroso de criptoactivos fungibles, la ganancia o pérdida se"
+      },
+      {
+        "native_LF": 8816,
+        "line": "Cuando existan criptoactivos fungibles del mismo tipo, se considerarán como transmitidos"
+      },
+      {
+        "native_LF": 8817,
+        "line": "aquellos que adquirió en primer lugar, es decir, los más antiguos (criterio FIFO: primera acción"
+      }
+    ]
+  },
+  {
+    "id": "A-NF21-2025-original",
+    "url": "https://www.araba.eus/botha/Boletines/2025/147/2025_147_03861_C.pdf",
+    "raw_sha256": "2cf4a6a79b6afb87c9fbb5c5f81a4188d721c73a3c0d47d7e32e635e3e6fe6b4",
+    "reader_sha256": "69493ba8fdbf207469b08849ae379e51891c104f985d48523519900f728c37e9",
+    "fresh_receipt_verified": true,
+    "independent_raw_reextraction_byte_equal": true,
+    "actual_read_scope": "Article2.Segundo.3–5 crypto loss/valuation/FIFO amendments and current43 comparison; not all38pages reread.",
+    "keyword_hits": [
+      {
+        "native_LF": 104,
+        "line": "“f) Información sobre los criptoactivos que se determinen reglamentariamente situados en el"
+      },
+      {
+        "native_LF": 107,
+        "line": "o entidades que proporcionen servicios para salvaguardar claves criptográficas privadas en"
+      },
+      {
+        "native_LF": 108,
+        "line": "nombre de terceros, para mantener, almacenar y transferir criptoactivos. El concepto de"
+      },
+      {
+        "native_LF": 109,
+        "line": "criptoactivo se entenderá según se define en el artículo 3.1.5) del Reglamento (UE) 2023/1114"
+      },
+      {
+        "native_LF": 111,
+        "line": "criptoactivos y por el que se modifican los Reglamentos (UE) número 1093/2010 y (UE)"
+      },
+      {
+        "native_LF": 193,
+        "line": "informativa de los “proveedores de servicios de criptoactivos obligados a comunicar"
+      },
+      {
+        "native_LF": 197,
+        "line": "criptoactivos obligados a comunicar información”, deberán aplicar las normas de diligencia"
+      },
+      {
+        "native_LF": 204,
+        "line": "acuerdo con el Marco de intercambio de información sobre criptoactivos, y en otros acuerdos"
+      },
+      {
+        "native_LF": 209,
+        "line": "criptoactivos” y, en el caso de entidades, las “personas que ejercen el control” de dichos"
+      },
+      {
+        "native_LF": 243,
+        "line": "a) La determinación de si la “persona física usuaria de criptoactivos” es un “usuario sujeto a"
+      },
+      {
+        "native_LF": 246,
+        "line": "b) La determinación de si la “entidad usuaria de criptoactivos” es un “usuario sujeto a"
+      },
+      {
+        "native_LF": 255,
+        "line": "Cuando un “proveedor de servicios de criptoactivos obligado a comunicar información” se"
+      },
+      {
+        "native_LF": 260,
+        "line": "“proveedores de servicios de criptoactivos obligados a comunicar información” por los"
+      },
+      {
+        "native_LF": 261,
+        "line": "“usuarios de criptoactivos” o por las “personas que ejercen el control” de dichos usuarios en"
+      },
+      {
+        "native_LF": 268,
+        "line": "6. Cuando un “usuario de criptoactivos” o, en el caso de entidades, las “personas que ejercen"
+      },
+      {
+        "native_LF": 269,
+        "line": "el control” de dicho usuario no faciliten al “proveedor de servicios de criptoactivos obligado a"
+      },
+      {
+        "native_LF": 273,
+        "line": "criptoactivos” la realización de las “operaciones sujetas a comunicación de información”."
+      },
+      {
+        "native_LF": 276,
+        "line": "“operador de criptoactivos” que sea un “proveedor de criptoactivos obligado a comunicar"
+      },
+      {
+        "native_LF": 303,
+        "line": "8. Las declaraciones que resulten exigibles a los “usuarios de criptoactivos” y, en el caso de"
+      },
+      {
+        "native_LF": 316,
+        "line": "los “proveedores de servicios de criptoactivos obligados a comunicar información”."
+      },
+      {
+        "native_LF": 318,
+        "line": "9. Todo “proveedor de servicios de criptoactivos obligado a comunicar información” deberá"
+      },
+      {
+        "native_LF": 323,
+        "line": "Asimismo, el “proveedor de servicios de criptoactivos obligado a comunicar información”"
+      },
+      {
+        "native_LF": 421,
+        "line": "“i) Las derivadas de las transmisiones de criptoactivos fungibles, cuando la o el contribuyente"
+      },
+      {
+        "native_LF": 428,
+        "line": "“p) De la transmisión a título oneroso de criptoactivos fungibles, la ganancia o pérdida se"
+      },
+      {
+        "native_LF": 438,
+        "line": "valores homogéneos o criptoactivos fungibles del mismo tipo, se considerará que los"
+      },
+      {
+        "native_LF": 444,
+        "line": "A los efectos establecidos en esta Norma Foral, se considerarán criptoactivos fungibles de un"
+      },
+      {
+        "native_LF": 707,
+        "line": "“El concepto de criptoactivo se entenderá según se define en el artículo 3.1.5) del Reglamento"
+      },
+      {
+        "native_LF": 709,
+        "line": "mercados de criptoactivos y por el que se modifican los Reglamentos (UE) n.º 1093/2010 y"
+      },
+      {
+        "native_LF": 2296,
+        "line": "Primera. Obligaciones de información sobre monedas virtuales en 2025."
+      },
+      {
+        "native_LF": 2304,
+        "line": "Segunda. Obligación de informar sobre las operaciones realizadas con monedas virtuales en"
+      },
+      {
+        "native_LF": 2307,
+        "line": "La obligación de informar sobre operaciones con monedas virtuales en el apartado 7 de la"
+      }
+    ]
+  },
+  {
+    "id": "A-IRPF-current",
+    "url": "https://web.araba.eus/documents/d/araba/indice_norma-foral_irpf_cas-4-pdf",
+    "raw_sha256": "72813d4e9aa8c99451104493d6ad45dabec4a23448cba71079bd1a609d89bbb3",
+    "reader_sha256": "9f9843442f2c4b1d6367bd5b17436e522199897c474cb06c816bf14c2a79ae26",
+    "fresh_receipt_verified": true,
+    "independent_raw_reextraction_byte_equal": true,
+    "actual_read_scope": "Complete43 and adjoining44; crypto47 valuation/FIFO passages.",
+    "keyword_hits": [
+      {
+        "native_LF": 3371,
+        "line": "i) (37) Las derivadas de las transmisiones de criptoactivos fungibles, cuando la o el"
+      },
+      {
+        "native_LF": 3723,
+        "line": "p) (37) De la transmisión a título oneroso de criptoactivos fungibles, la ganancia o"
+      },
+      {
+        "native_LF": 3731,
+        "line": "letras, cuando existan valores homogéneos o criptoactivos fungibles del mismo tipo, se"
+      },
+      {
+        "native_LF": 3742,
+        "line": "A los efectos establecidos en esta Norma Foral, se considerarán criptoactivos"
+      },
+      {
+        "native_LF": 9642,
+        "line": "criptográficas privadas en nombre de terceros, para mantener, almacenar y transferir"
+      },
+      {
+        "native_LF": 9643,
+        "line": "criptoactivos, ya se preste dicho servicio con carácter principal o en conexión con otra"
+      },
+      {
+        "native_LF": 9646,
+        "line": "criptoactivos que mantengan custodiadas. Este suministro comprenderá información"
+      },
+      {
+        "native_LF": 9647,
+        "line": "sobre saldos en cada criptoactivo diferente y, en su caso, en dinero de curso legal, así"
+      },
+      {
+        "native_LF": 9651,
+        "line": "(37) El concepto de criptoactivo se entenderá según se define en el artículo 3.1.5) del"
+      },
+      {
+        "native_LF": 9653,
+        "line": "de 2023, relativo a los mercados de criptoactivos y por el que se modifican los"
+      }
+    ]
+  },
+  {
+    "id": "N-TEAF-FIFO-2017",
+    "url": "https://teaf.navarra.es/documents/43159255/43226379/TEAF-0246-2015.pdf/de0de97c-69ca-c224-f7e9-5ee14116effb?t=1732265656130",
+    "raw_sha256": "62ead0d70328d1decdc86567fd357bced70b026903fc58b8d36c1f733e7e43cb",
+    "reader_sha256": "c11c4021a620f051369a7fe14109adfadd1b5e9f51802bf76d940ea2f7bdd30b",
+    "fresh_receipt_verified": true,
+    "independent_raw_reextraction_byte_equal": true,
+    "actual_read_scope": "Opening facts identify corporate-tax years2010/2011; relevant PGC inventory price/FIFO passage; not individual crypto authority.",
+    "keyword_hits": [
+      {
+        "native_LF": 129,
+        "line": "método FIFO es aceptable y puede adoptarse si la empresa lo considerase más conveniente para su gestión."
+      }
+    ]
+  },
+  {
+    "id": "A-DF36-2026",
+    "url": "https://www.araba.eus/botha/Boletines/2026/122/2026_122_02967_C.pdf",
+    "raw_sha256": "dff415556ee1188a8091cedcc79fef4168fba2bbec74266fa3e6f1bace83e583",
+    "reader_sha256": "96bf2c6baa4dba5de458bf06299656b3b9396b177c485b961e2fb5d8d87af14c",
+    "fresh_receipt_verified": true,
+    "independent_raw_reextraction_byte_equal": true,
+    "actual_read_scope": "Object/preamble; operative reporting/diligence articles and all final-amendment headings/disposition chain; full text searched for43/loss-release references. Not every annex definition newly read.",
+    "keyword_hits": [
+      {
+        "native_LF": 14,
+        "line": "veedores de servicios criptoactivos"
+      },
+      {
+        "native_LF": 30,
+        "line": "31 de mayo de 2023, relativo a los mercados de criptoactivos y por el que se modifican los"
+      },
+      {
+        "native_LF": 39,
+        "line": "la que se deroga la Directiva 77/799/CEE, los criptoactivos, el dinero electrónico y las monedas"
+      },
+      {
+        "native_LF": 67,
+        "line": "registro, para ciertos proveedores de servicios de criptoactivos, que deberán suministrar infor-"
+      },
+      {
+        "native_LF": 69,
+        "line": "la Unión el Marco de intercambio de información sobre criptoactivos (Crypto-Asset Reporting"
+      },
+      {
+        "native_LF": 75,
+        "line": "petente y al marco de intercambio de información sobre criptoactivos, a los que la Directiva"
+      },
+      {
+        "native_LF": 80,
+        "line": "paran el intercambio de información sobre criptoactivos y las modificaciones en materia de"
+      },
+      {
+        "native_LF": 94,
+        "line": "servicios de criptoactivos y operadores de criptoactivos, y efectúa las modificaciones nece-"
+      },
+      {
+        "native_LF": 97,
+        "line": "de criptoactivos, y en el Decreto Foral 6/2017, de 21 de febrero, que establece la obligación de"
+      },
+      {
+        "native_LF": 106,
+        "line": "gaciones de información sobre criptoactivos y sobre cuentas financieras, no limitándose a una"
+      },
+      {
+        "native_LF": 110,
+        "line": "intercambio de información sobre criptoactivos por su importancia material y aclaratoria. Asi-"
+      },
+      {
+        "native_LF": 132,
+        "line": "res de servicios de criptoactivos obligados a comunicar información respecto de sus usuarios"
+      },
+      {
+        "native_LF": 136,
+        "line": "de servicios de criptoactivos obligados a comunicar información obtengan una declaración de"
+      },
+      {
+        "native_LF": 139,
+        "line": "xos de reporte, por los que los proveedores de servicios de criptoactivos obligados a comunicar"
+      },
+      {
+        "native_LF": 141,
+        "line": "A este respecto, se destaca que los proveedores de servicios de criptoactivos autorizados,"
+      },
+      {
+        "native_LF": 143,
+        "line": "Europeo y del Consejo, de 31 de mayo de 2023, relativo a los mercados de criptoactivos y por"
+      },
+      {
+        "native_LF": 147,
+        "line": "operadores de criptoactivos que no estén autorizados bajo el citado reglamento, incluyén-"
+      },
+      {
+        "native_LF": 150,
+        "line": "para todos los proveedores de servicios de criptoactivos obligados a comunicar información,"
+      },
+      {
+        "native_LF": 157,
+        "line": "con criptoactivos efectuadas por tales usuarios. Si bien la información de las operaciones se"
+      },
+      {
+        "native_LF": 167,
+        "line": "monedas virtuales. Asimismo, en la disposición transitoria primera se aclara que esta obliga-"
+      },
+      {
+        "native_LF": 168,
+        "line": "ción de informar sobre operaciones con monedas virtuales deberá cumplirse con respecto a"
+      },
+      {
+        "native_LF": 185,
+        "line": "operadores de criptoactivos, que son aquellos que no van a estar incluidos en el registro de"
+      },
+      {
+        "native_LF": 186,
+        "line": "proveedores de servicios de criptoactivos de las autoridades financieras al quedar fuera del"
+      },
+      {
+        "native_LF": 188,
+        "line": "31 de mayo de 2023, relativo a los mercados de criptoactivos y por el que se modifican los Re-"
+      },
+      {
+        "native_LF": 192,
+        "line": "criptoactivos, así como regular el alta, modificación y baja en dicho registro. Además, para"
+      },
+      {
+        "native_LF": 194,
+        "line": "de operadores de criptoactivos, la disposición transitoria segunda fija un plazo de tres meses"
+      },
+      {
+        "native_LF": 200,
+        "line": "funcionamiento del registro único de la Unión para los operadores de criptoactivos en caso"
+      },
+      {
+        "native_LF": 207,
+        "line": "saldos en monedas virtuales y acerca de las monedas virtuales situadas en el extranjero,"
+      },
+      {
+        "native_LF": 213,
+        "line": "En relación con la obligación de información sobre saldos en monedas virtuales, cabe"
+      },
+      {
+        "native_LF": 214,
+        "line": "destacar que se sustituye el concepto de moneda virtual por el de criptoactivo, en línea con la"
+      },
+      {
+        "native_LF": 216,
+        "line": "33/2013, de 27 de noviembre, y se concretan los criptoactivos cuyos saldos deben ser objeto de"
+      },
+      {
+        "native_LF": 217,
+        "line": "información. En particular, los criptoactivos respecto de los que deberá informarse coinciden"
+      },
+      {
+        "native_LF": 218,
+        "line": "con los criptoactivos sujetos a comunicación de información a efectos de la nueva obligación"
+      },
+      {
+        "native_LF": 219,
+        "line": "de información sobre criptoactivos derivada de la transposición de la Directiva (UE) 2023/2226"
+      },
+      {
+        "native_LF": 222,
+        "line": "proveedores de servicios de criptoactivos cumplan con ambas obligaciones respecto de los"
+      },
+      {
+        "native_LF": 223,
+        "line": "mismos criptoactivos (en un caso informarán sobre los saldos y en otro sobre las operaciones),"
+      },
+      {
+        "native_LF": 225,
+        "line": "Por lo que respecta a la obligación de informar sobre las monedas virtuales situadas en"
+      },
+      {
+        "native_LF": 228,
+        "line": "de moneda virtual por el de criptoactivo. A diferencia de la delimitación que se efectúa en la"
+      },
+      {
+        "native_LF": 241,
+        "line": "casos para discernir entre los distintos tipos de criptoactivos, el obligado deberá informar,"
+      },
+      {
+        "native_LF": 242,
+        "line": "en los términos establecidos, sobre todos los criptoactivos. Por otra parte, se determina que"
+      },
+      {
+        "native_LF": 243,
+        "line": "los criptoactivos se entenderán situados en el extranjero cuando la custodia se efectúe por"
+      },
+      {
+        "native_LF": 245,
+        "line": "autoridad competente española o no conste en el registro de operadores de criptoactivos de"
+      },
+      {
+        "native_LF": 329,
+        "line": "res de servicios de criptoactivos obligados a comunicar información con arreglo al artículo 8"
+      },
+      {
+        "native_LF": 334,
+        "line": "de información de acuerdo con el marco de intercambio de información sobre criptoactivos, a"
+      },
+      {
+        "native_LF": 345,
+        "line": "criptoactivos, el significado contenido en el anexo de este decreto foral, salvo que la normativa"
+      },
+      {
+        "native_LF": 361,
+        "line": "criptoactivos obligados a comunicar información definidos en los términos establecidos en el"
+      },
+      {
+        "native_LF": 363,
+        "line": "2. Las obligaciones de registro a las que estén sujetos los operadores de criptoactivos que"
+      },
+      {
+        "native_LF": 364,
+        "line": "sean proveedores de servicios de criptoactivos obligados a comunicar información se regirán"
+      },
+      {
+        "native_LF": 370,
+        "line": "realizar los proveedores de servicios de criptoactivos obligados a comunicar información diri-"
+      },
+      {
+        "native_LF": 372,
+        "line": "criptoactivos y, en el caso de entidades usuarias de criptoactivos, a las personas que ejercen"
+      },
+      {
+        "native_LF": 374,
+        "line": "2. Un proveedor de servicios de criptoactivos obligado a comunicar información que tam-"
+      },
+      {
+        "native_LF": 380,
+        "line": "vistas en este decreto foral. Un proveedor de servicios de criptoactivos obligado a comunicar"
+      },
+      {
+        "native_LF": 384,
+        "line": "3. Un proveedor de servicios de criptoactivos obligado a comunicar información podrá"
+      },
+      {
+        "native_LF": 389,
+        "line": "entidad usuaria de criptoactivos si dicha entidad es una persona excluida o una entidad activa."
+      },
+      {
+        "native_LF": 390,
+        "line": "Artículo 4. Normas de diligencia debida para personas físicas usuarias de criptoactivos"
+      },
+      {
+        "native_LF": 391,
+        "line": "1. A efectos de determinar si una persona física usuaria de criptoactivos es un usuario su-"
+      },
+      {
+        "native_LF": 393,
+        "line": "usuarias de criptoactivos, o en caso de personas físicas usuarias de criptoactivos preexistentes"
+      },
+      {
+        "native_LF": 394,
+        "line": "hasta el 1 de enero de 2027, el proveedor de servicios de criptoactivos obligado a comunicar"
+      },
+      {
+        "native_LF": 401,
+        "line": "criptoactivos a raíz del cual el proveedor de servicios de criptoactivos obligado a comunicar"
+      },
+      {
+        "native_LF": 403,
+        "line": "no fiable, el proveedor de servicios de criptoactivos obligado a comunicar información deberá"
+      },
+      {
+        "native_LF": 416,
+        "line": "Artículo 5. Normas de diligencia debida para entidades usuarias de criptoactivos"
+      },
+      {
+        "native_LF": 417,
+        "line": "1. A efectos de determinar si una entidad usuaria de criptoactivos es una persona sujeta a"
+      },
+      {
+        "native_LF": 419,
+        "line": "criptoactivos, o en caso de entidades usuarias de criptoactivos preexistentes hasta el 1 de enero"
+      },
+      {
+        "native_LF": 420,
+        "line": "de 2027, el proveedor de servicios de criptoactivos obligado a comunicar información deberá"
+      },
+      {
+        "native_LF": 425,
+        "line": "Si la entidad usuaria de criptoactivos certifica que no tiene residencia fiscal, el proveedor de"
+      },
+      {
+        "native_LF": 426,
+        "line": "servicios de criptoactivos obligado a comunicar información podrá basarse en el lugar de"
+      },
+      {
+        "native_LF": 428,
+        "line": "Si la declaración indica que la entidad usuaria de criptoactivos es residente en España, en"
+      },
+      {
+        "native_LF": 430,
+        "line": "servicios de criptoactivos obligado a comunicar información considerará a la entidad usuaria"
+      },
+      {
+        "native_LF": 431,
+        "line": "de criptoactivos como usuario sujeto a comunicación de información, a menos que determine"
+      },
+      {
+        "native_LF": 433,
+        "line": "sea pública, que la entidad usuaria de criptoactivos es una persona excluida."
+      },
+      {
+        "native_LF": 434,
+        "line": "2. El proveedor de servicios de criptoactivos obligado a comunicar información deberá de-"
+      },
+      {
+        "native_LF": 435,
+        "line": "terminar, con respecto a una entidad usuaria de criptoactivos que no sea una persona excluida,"
+      },
+      {
+        "native_LF": 438,
+        "line": "usuaria de criptoactivos, determine que dicha entidad es una entidad activa."
+      },
+      {
+        "native_LF": 440,
+        "line": "toactivos, el proveedor de servicios de criptoactivos obligado a comunicar información podrá"
+      },
+      {
+        "native_LF": 443,
+        "line": "terrorismo y su normativa de desarrollo. Si el proveedor de servicios de criptoactivos obligado"
+      },
+      {
+        "native_LF": 453,
+        "line": "el control de la entidad usuaria de criptoactivos."
+      },
+      {
+        "native_LF": 455,
+        "line": "municación de información, el proveedor de servicios de criptoactivos obligado a comunicar"
+      },
+      {
+        "native_LF": 456,
+        "line": "información se basará en la declaración de la entidad usuaria de criptoactivos u obtendrá una"
+      },
+      {
+        "native_LF": 463,
+        "line": "dor de servicios de criptoactivos obligado a comunicar información conozca, o tenga motivos"
+      },
+      {
+        "native_LF": 476,
+        "line": "criptoactivos obligado a comunicar información deberá obtener, bien una declaración válida,"
+      },
+      {
+        "native_LF": 479,
+        "line": "Artículo 6. Validez de las declaraciones obtenidas por el proveedor de servicios de criptoac-"
+      },
+      {
+        "native_LF": 481,
+        "line": "1. La declaración obtenida por el proveedor de servicios de criptoactivos obligado a comu-"
+      },
+      {
+        "native_LF": 482,
+        "line": "nicar información de una persona física usuaria de criptoactivos o de una persona que ejerce"
+      },
+      {
+        "native_LF": 492,
+        "line": "2. La declaración obtenida por el proveedor de servicios de criptoactivos obligado a comu-"
+      },
+      {
+        "native_LF": 493,
+        "line": "nicar información de una entidad usuaria de criptoactivos será válida sólo si está firmada o"
+      },
+      {
+        "native_LF": 503,
+        "line": "el apartado 1 respecto de cada persona que ejerce el control de la entidad usuaria de criptoacti-"
+      },
+      {
+        "native_LF": 505,
+        "line": "de criptoactivos obligado a comunicar información haya obtenido una declaración de cada"
+      },
+      {
+        "native_LF": 513,
+        "line": "5. El proveedor de servicios de criptoactivos obligado a comunicar información deberá"
+      },
+      {
+        "native_LF": 518,
+        "line": "1. Los proveedores de servicios de criptoactivos obligados a comunicar información vendrán"
+      },
+      {
+        "native_LF": 519,
+        "line": "obligados a presentar una declaración informativa con respecto a sus usuarios de criptoactivos"
+      },
+      {
+        "native_LF": 537,
+        "line": "Los proveedores de servicios de criptoactivos obligados a comunicar información vendrán"
+      },
+      {
+        "native_LF": 544,
+        "line": "2. Un proveedor de servicios de criptoactivos obligado a comunicar información estará"
+      },
+      {
+        "native_LF": 551,
+        "line": "mayo de 2023, relativo a los mercados de criptoactivos y por el que se modifican los Regla-"
+      },
+      {
+        "native_LF": 553,
+        "line": "2019/1937, o a la que se permita prestar servicios de criptoactivos tras haber efectuado una"
+      },
+      {
+        "native_LF": 569,
+        "line": "servicios de criptoactivos obligado a comunicar información estará sujeto a las obligaciones"
+      },
+      {
+        "native_LF": 573,
+        "line": "4. Un proveedor de servicios de criptoactivos obligado a comunicar información que sea"
+      },
+      {
+        "native_LF": 590,
+        "line": "a) el apartado 2.b), ordinales 2.º, 3.º y 4.º, si dicho proveedor de servicios de criptoactivos"
+      },
+      {
+        "native_LF": 595,
+        "line": "b) el apartado 2.b), ordinales 3.º y 4.º, si dicho proveedor de servicios de criptoactivos"
+      },
+      {
+        "native_LF": 604,
+        "line": "c) el apartado 2.b), ordinal 4.º, si dicho proveedor de servicios de criptoactivos obligado"
+      },
+      {
+        "native_LF": 608,
+        "line": "5. Un proveedor de servicios de criptoactivos obligado a comunicar información que sea"
+      },
+      {
+        "native_LF": 614,
+        "line": "proveedor de servicios de criptoactivos obligado a comunicar información cumple con dichas"
+      },
+      {
+        "native_LF": 618,
+        "line": "6. Un proveedor de servicios de criptoactivos obligado a comunicar información no estará"
+      },
+      {
+        "native_LF": 625,
+        "line": "dicho proveedor de servicios de criptoactivos obligado a comunicar información cumple con"
+      },
+      {
+        "native_LF": 629,
+        "line": "7. El proveedor de servicios de criptoactivos obligado a comunicar información no estará"
+      },
+      {
+        "native_LF": 652,
+        "line": "mación respecto de cada usuario de criptoactivos que sea usuario sujeto a comunicación de"
+      },
+      {
+        "native_LF": 666,
+        "line": "No obstante lo dispuesto en el párrafo anterior, si el proveedor de servicios de criptoactivos"
+      },
+      {
+        "native_LF": 675,
+        "line": "del Registro de operadores de criptoactivos y el identificador de entidad jurídica a nivel mundial"
+      },
+      {
+        "native_LF": 676,
+        "line": "del proveedor de servicios de criptoactivos obligado a comunicar información."
+      },
+      {
+        "native_LF": 677,
+        "line": "c) Para cada tipo de criptoactivo sujeto a comunicación de información con respecto al cual"
+      },
+      {
+        "native_LF": 678,
+        "line": "el proveedor de servicios de criptoactivos obligado a comunicar información haya realizado"
+      },
+      {
+        "native_LF": 680,
+        "line": "1.º El nombre completo del tipo de criptoactivo sujeto a comunicación de información."
+      },
+      {
+        "native_LF": 689,
+        "line": "otros criptoactivos sujetos a comunicación de información."
+      },
+      {
+        "native_LF": 692,
+        "line": "otros criptoactivos sujetos a comunicación de información."
+      },
+      {
+        "native_LF": 708,
+        "line": "el proveedor de servicios de criptoactivos obligado a comunicar información lo conozca, en"
+      },
+      {
+        "native_LF": 713,
+        "line": "el proveedor de servicios de criptoactivos obligado a comunicar información lo conozca, en"
+      },
+      {
+        "native_LF": 717,
+        "line": "transferencias realizadas por el proveedor de servicios de criptoactivos obligado a comunicar"
+      },
+      {
+        "native_LF": 720,
+        "line": "criptoactivos y por el que se modifican los Reglamentos (UE) número 1093/2010 y (UE) número"
+      },
+      {
+        "native_LF": 727,
+        "line": "criptoactivos obligado a comunicar información tenga la obligación de obtenerlo y comunicarlo."
+      },
+      {
+        "native_LF": 736,
+        "line": "servicios de criptoactivos obligado a comunicar información utilizará un método de valoración"
+      },
+      {
+        "native_LF": 743,
+        "line": "gastos de la transacción que el proveedor de servicios de criptoactivos obligado a comunicar"
+      },
+      {
+        "native_LF": 745,
+        "line": "4. Las operaciones de canje entre una o varias formas de criptoactivos sujetos a comunica-"
+      },
+      {
+        "native_LF": 746,
+        "line": "ción de información intermediadas por el mismo proveedor de servicios de criptoactivos sujeto"
+      },
+      {
+        "native_LF": 749,
+        "line": "5. El proveedor de servicios de criptoactivos obligado a comunicar información recopilará y"
+      },
+      {
+        "native_LF": 764,
+        "line": "dor de servicios de criptoactivos obligado a comunicar información en virtud de lo dispuesto"
+      },
+      {
+        "native_LF": 767,
+        "line": "pea para los que el proveedor de servicios de criptoactivos obligado a comunicar información"
+      },
+      {
+        "native_LF": 784,
+        "line": "relativas a las obligaciones de los proveedores de servicios de criptoactivos obligados a co-"
+      },
+      {
+        "native_LF": 787,
+        "line": "y al marco de intercambio de información sobre criptoactivos."
+      },
+      {
+        "native_LF": 789,
+        "line": "Primera. Obligación de informar sobre las operaciones realizadas con monedas virtuales"
+      },
+      {
+        "native_LF": 791,
+        "line": "La obligación de informar sobre operaciones con monedas virtuales a que se refiere el artí-"
+      },
+      {
+        "native_LF": 798,
+        "line": "informativa sobre saldos en monedas virtuales” y el modelo 173, “Declaración informativa"
+      },
+      {
+        "native_LF": 799,
+        "line": "sobre operaciones con monedas virtuales” así como las condiciones y procedimiento para"
+      },
+      {
+        "native_LF": 801,
+        "line": "Segunda. Régimen transitorio de inscripción en el Registro de operadores de criptoactivos."
+      },
+      {
+        "native_LF": 802,
+        "line": "Los operadores de criptoactivos que, a la entrada en vigor de este decreto foral, estén"
+      },
+      {
+        "native_LF": 803,
+        "line": "obligados a inscribirse en el registro de operadores de criptoactivos deberán presentar la"
+      },
+      {
+        "native_LF": 826,
+        "line": "“m) Registro de operadores de criptoactivos.”"
+      },
+      {
+        "native_LF": 828,
+        "line": "“Artículo 9 sexies. Registro de operadores de criptoactivos."
+      },
+      {
+        "native_LF": 829,
+        "line": "El Registro de operadores de criptoactivos estará integrado exclusivamente por los ope-"
+      },
+      {
+        "native_LF": 830,
+        "line": "radores de criptoactivos que sean proveedores de servicios de criptoactivos obligados a co-"
+      },
+      {
+        "native_LF": 833,
+        "line": "determinados proveedores de servicios criptoactivos, y se modifica el Decreto Foral 80/2005, de"
+      },
+      {
+        "native_LF": 837,
+        "line": "“Artículo 12 ter. Declaración de alta en el registro de operadores de criptoactivos que sean"
+      },
+      {
+        "native_LF": 838,
+        "line": "proveedores de servicios de criptoactivos obligados a comunicar información."
+      },
+      {
+        "native_LF": 839,
+        "line": "1. El operador de criptoactivos que sea un proveedor de servicios de criptoactivos obligado a"
+      },
+      {
+        "native_LF": 842,
+        "line": "determinados proveedores de servicios criptoactivos, y se modifica el Decreto Foral 80/2005, de"
+      },
+      {
+        "native_LF": 845,
+        "line": "deberá presentar una declaración de alta en el registro de operadores de criptoactivos cuando"
+      },
+      {
+        "native_LF": 860,
+        "line": "c) Número de identificación fiscal asignado al operador de criptoactivos con indicación de"
+      },
+      {
+        "native_LF": 881,
+        "line": "gaciones de información de determinados proveedores de servicios criptoactivos, y se modifica"
+      },
+      {
+        "native_LF": 888,
+        "line": "de criptoactivos, que será comunicado a todos los estados miembros.”"
+      },
+      {
+        "native_LF": 890,
+        "line": "“Artículo 13 ter. Declaración de modificación en el registro de operadores de criptoactivos"
+      },
+      {
+        "native_LF": 892,
+        "line": "cualquier otra declaración de modificación posterior, el operador de criptoactivos registrado"
+      },
+      {
+        "native_LF": 898,
+        "line": "“Artículo 14 ter. Declaración de baja en el Registro de operadores de criptoactivos"
+      },
+      {
+        "native_LF": 899,
+        "line": "1. El operador de criptoactivos inscrito deberá presentar una declaración de baja en el"
+      },
+      {
+        "native_LF": 900,
+        "line": "registro de operadores de criptoactivos cuando deje de tener la condición de proveedor de"
+      },
+      {
+        "native_LF": 901,
+        "line": "servicios de criptoactivos obligado a comunicar información o cuando deje de estar sujeto a"
+      },
+      {
+        "native_LF": 913,
+        "line": "OBLIGACIÓN DE INFORMAR SOBRE CUENTAS, CRIPTOACTIVOS,"
+      },
+      {
+        "native_LF": 916,
+        "line": "“Artículo 2 ter. Obligación de información de los proveedores de servicios de criptoactivos"
+      },
+      {
+        "native_LF": 918,
+        "line": "Los proveedores de servicios de criptoactivos obligados a comunicar información deberán"
+      },
+      {
+        "native_LF": 933,
+        "line": "“Artículo 4 bis. Obligación de informar sobre saldos en criptoactivos"
+      },
+      {
+        "native_LF": 936,
+        "line": "vicios para salvaguardar claves criptográficas privadas en nombre de terceros, para mantener,"
+      },
+      {
+        "native_LF": 937,
+        "line": "almacenar y transferir criptoactivos, ya se preste dicho servicio con carácter principal o en"
+      },
+      {
+        "native_LF": 939,
+        "line": "referente a la totalidad de los criptoactivos que mantengan custodiados, en los términos que"
+      },
+      {
+        "native_LF": 943,
+        "line": "las personas o entidades a quienes correspondan en algún momento del año los criptoactivos,"
+      },
+      {
+        "native_LF": 945,
+        "line": "La información relativa a los saldos incluirá, para cada criptoactivo, el tipo de criptoactivo,"
+      },
+      {
+        "native_LF": 946,
+        "line": "el número de unidades de criptoactivo a 31 de diciembre y su valoración en euros."
+      },
+      {
+        "native_LF": 950,
+        "line": "en euros del criptoactivo a 31 de diciembre. A este respecto, se indicará la cotización o valor"
+      },
+      {
+        "native_LF": 955,
+        "line": "cios criptoactivos, y se modifica el Decreto Foral 80/2005, de 28 de diciembre; el Decreto Foral"
+      },
+      {
+        "native_LF": 963,
+        "line": "nados criptoactivos, la información a suministrar se referirá a la fecha en la que se hubiera"
+      },
+      {
+        "native_LF": 965,
+        "line": "4. A los efectos de este artículo, el concepto de criptoactivo se entenderá según se define"
+      },
+      {
+        "native_LF": 967,
+        "line": "31 de mayo de 2023, relativo a los mercados de criptoactivos y por el que se modifican los"
+      },
+      {
+        "native_LF": 971,
+        "line": "criptoactivos sujetos a comunicación de información definidos en el anexo del decreto foral"
+      },
+      {
+        "native_LF": 973,
+        "line": "información de determinados proveedores de servicios criptoactivos, y se modifica el Decreto"
+      },
+      {
+        "native_LF": 992,
+        "line": "pecto de los criptoactivos, que se regirán por lo dispuesto en los artículos 23 bis y 4 bis de"
+      },
+      {
+        "native_LF": 995,
+        "line": "“Artículo 23 bis. Obligación de informar acerca de los criptoactivos situados en el extranjero"
+      },
+      {
+        "native_LF": 1001,
+        "line": "totalidad de los criptoactivos situados en el extranjero de los que se sea titular, o respecto de"
+      },
+      {
+        "native_LF": 1006,
+        "line": "que proporcionan servicios para salvaguardar claves criptográficas privadas en nombre de"
+      },
+      {
+        "native_LF": 1007,
+        "line": "terceros, para mantener, almacenar y transferir criptoactivos, a 31 de diciembre de cada año."
+      },
+      {
+        "native_LF": 1009,
+        "line": "ciarias de los citados criptoactivos, o hayan tenido poderes de disposición sobre los mismos,"
+      },
+      {
+        "native_LF": 1013,
+        "line": "2. A los efectos de este artículo, el concepto de criptoactivo se entenderá según se define"
+      },
+      {
+        "native_LF": 1015,
+        "line": "31 de mayo de 2023, relativo a los mercados de criptoactivos y por el que se modifican los"
+      },
+      {
+        "native_LF": 1018,
+        "line": "Los criptoactivos se entenderán situados en el extranjero cuando la persona o entidad o"
+      },
+      {
+        "native_LF": 1020,
+        "line": "claves criptográficas privadas en nombre de terceros, para mantener, almacenar y transferir"
+      },
+      {
+        "native_LF": 1021,
+        "line": "dichos criptoactivos no sea una entidad autorizada por la autoridad competente en España o,"
+      },
+      {
+        "native_LF": 1024,
+        "line": "y del Consejo, de 31 de mayo de 2023, relativo a los mercados de criptoactivos y por el que se"
+      },
+      {
+        "native_LF": 1026,
+        "line": "2013/36/UE y (UE) 2019/1937, o no conste en el Registro de operadores de criptoactivos de la"
+      },
+      {
+        "native_LF": 1031,
+        "line": "servicios para salvaguardar las claves criptográficas privadas en nombre de terceros, para man-"
+      },
+      {
+        "native_LF": 1032,
+        "line": "tener, almacenar y transferir los criptoactivos, así como su domicilio o dirección de su sitio web."
+      },
+      {
+        "native_LF": 1033,
+        "line": "b) La identificación completa de cada tipo de criptoactivo."
+      },
+      {
+        "native_LF": 1034,
+        "line": "c) Los saldos de cada tipo de criptoactivo a 31 de diciembre expresados en unidades de"
+      },
+      {
+        "native_LF": 1035,
+        "line": "criptoactivo y su valoración en euros."
+      },
+      {
+        "native_LF": 1049,
+        "line": "euros del criptoactivo. A este respecto, se indicará la cotización o valor utilizado para efectuar"
+      },
+      {
+        "native_LF": 1053,
+        "line": "disposición sobre los citados criptoactivos o tenga la consideración de titular real a esa fecha."
+      },
+      {
+        "native_LF": 1055,
+        "line": "de disposición o titulares reales deberán indicar los saldos de los criptoactivos en la fecha en"
+      },
+      {
+        "native_LF": 1058,
+        "line": "de los siguientes criptoactivos:"
+      },
+      {
+        "native_LF": 1070,
+        "line": "d) No existirá obligación de informar sobre ningún criptoactivo cuando los saldos a 31 de"
+      },
+      {
+        "native_LF": 1073,
+        "line": "sobre todos los criptoactivos."
+      },
+      {
+        "native_LF": 1081,
+        "line": "en el último párrafo del apartado 4 respecto de los criptoactivos a los que el mismo se refiere."
+      },
+      {
+        "native_LF": 1088,
+        "line": "artículo para cada criptoactivo."
+      },
+      {
+        "native_LF": 1090,
+        "line": "que se refiere el párrafo b) del apartado 3 de este artículo para cada criptoactivo.”"
+      },
+      {
+        "native_LF": 1227,
+        "line": "mación relativas a criptoactivos previstas en su normativa específica.”"
+      },
+      {
+        "native_LF": 1317,
+        "line": "minados proveedores de servicios criptoactivos, y se modifica el Decreto Foral 80/2005, de 28"
+      },
+      {
+        "native_LF": 1340,
+        "line": "relativas a criptoactivos previstas en la normativa específica.”"
+      },
+      {
+        "native_LF": 1369,
+        "line": "cios de criptoactivos obligados a comunicar información para que la administración tributaria"
+      },
+      {
+        "native_LF": 1374,
+        "line": "información de acuerdo con el marco de intercambio de información sobre criptoactivos y"
+      },
+      {
+        "native_LF": 1381,
+        "line": "información sobre criptoactivos:"
+      },
+      {
+        "native_LF": 1382,
+        "line": "A. Criptoactivo sujeto a comunicación de información"
+      },
+      {
+        "native_LF": 1383,
+        "line": "1. Criptoactivo: un criptoactivo tal como se define en el artículo 3.1.5) del Reglamento (UE)"
+      },
+      {
+        "native_LF": 1385,
+        "line": "dos de criptoactivos y por el que se modifican los Reglamentos (UE) número 1093/2010 y (UE)"
+      },
+      {
+        "native_LF": 1398,
+        "line": "4. Criptoactivo sujeto a comunicación de información: todo criptoactivo distinto de las mo-"
+      },
+      {
+        "native_LF": 1399,
+        "line": "nedas digitales de bancos centrales, del dinero electrónico o de un criptoactivo para el que el"
+      },
+      {
+        "native_LF": 1400,
+        "line": "proveedor de servicios de criptoactivos obligado a comunicar información haya determinado"
+      },
+      {
+        "native_LF": 1402,
+        "line": "5. Dinero electrónico: todo criptoactivo que reúna las siguientes características:"
+      },
+      {
+        "native_LF": 1428,
+        "line": "B. Proveedor de servicios de criptoactivos obligado a comunicar información"
+      },
+      {
+        "native_LF": 1429,
+        "line": "1. Proveedor de servicios de criptoactivos: proveedor de servicios de criptoactivos tal como"
+      },
+      {
+        "native_LF": 1431,
+        "line": "Consejo, de 31 de mayo de 2023, relativo a los mercados de criptoactivos y por el que se"
+      },
+      {
+        "native_LF": 1434,
+        "line": "2. Operador de criptoactivos: prestador de servicios de criptoactivos distinto de un provee-"
+      },
+      {
+        "native_LF": 1435,
+        "line": "dor de servicios de criptoactivos."
+      },
+      {
+        "native_LF": 1436,
+        "line": "3. Proveedor de servicios de criptoactivos obligado a comunicar información: todo provee-"
+      },
+      {
+        "native_LF": 1437,
+        "line": "dor de servicios de criptoactivos y todo operador de criptoactivos que lleve a cabo uno o varios"
+      },
+      {
+        "native_LF": 1438,
+        "line": "servicios de criptoactivos que impliquen la realización de operaciones de canje por cuenta o"
+      },
+      {
+        "native_LF": 1440,
+        "line": "4. Servicio de criptoactivos: servicio de criptoactivos tal como se define en el artículo 3.1.16)"
+      },
+      {
+        "native_LF": 1442,
+        "line": "relativo a los mercados de criptoactivos y por el que se modifican los Reglamentos (UE) nú-"
+      },
+      {
+        "native_LF": 1447,
+        "line": "ferencia de criptoactivos sujetos a comunicación de información."
+      },
+      {
+        "native_LF": 1448,
+        "line": "2. Operación de canje: todo canje de criptoactivos sujetos a comunicación de información"
+      },
+      {
+        "native_LF": 1449,
+        "line": "por monedas fiduciarias, y todo canje entre una o varias formas de criptoactivos sujetos a"
+      },
+      {
+        "native_LF": 1452,
+        "line": "criptoactivos sujetos a comunicación de información a cambio de bienes o servicios por un"
+      },
+      {
+        "native_LF": 1456,
+        "line": "el párrafo anterior sea un usuario de criptoactivos del proveedor de servicios de criptoactivos"
+      },
+      {
+        "native_LF": 1457,
+        "line": "obligado a comunicar información. En caso de que el vendedor sea un usuario de criptoactivos"
+      },
+      {
+        "native_LF": 1458,
+        "line": "del proveedor de servicios de criptoactivos obligado a comunicar información, la operación se"
+      },
+      {
+        "native_LF": 1461,
+        "line": "efectos, tendrá la consideración de usuario de criptoactivos de acuerdo con lo dispuesto en el"
+      },
+      {
+        "native_LF": 1463,
+        "line": "4. Transferencia: operación que traslada un criptoactivo sujeto a comunicación de informa-"
+      },
+      {
+        "native_LF": 1464,
+        "line": "ción desde o hacia la dirección o cuenta de un usuario de criptoactivos distinta de la dirección"
+      },
+      {
+        "native_LF": 1465,
+        "line": "o cuenta mantenida por el proveedor de servicios de criptoactivos obligado a comunicar infor-"
+      },
+      {
+        "native_LF": 1466,
+        "line": "mación en nombre del mismo usuario de criptoactivos, cuando, sobre la base de la información"
+      },
+      {
+        "native_LF": 1484,
+        "line": "1. Usuario sujeto a comunicación de información: usuario de criptoactivos que es una per-"
+      },
+      {
+        "native_LF": 1487,
+        "line": "2. Usuario de criptoactivos: persona física o entidad que es cliente de un proveedor de"
+      },
+      {
+        "native_LF": 1488,
+        "line": "servicios de criptoactivos obligado a comunicar información a efectos de la realización de"
+      },
+      {
+        "native_LF": 1490,
+        "line": "una institución financiera o un proveedor de servicios de criptoactivos obligado a comunicar"
+      },
+      {
+        "native_LF": 1491,
+        "line": "información, que actúe como usuario de criptoactivos en beneficio o por cuenta de otra per-"
+      },
+      {
+        "native_LF": 1493,
+        "line": "inversiones o intermediario, no tendrá la consideración de usuario de criptoactivos, conside-"
+      },
+      {
+        "native_LF": 1495,
+        "line": "Cuando un proveedor de servicios de criptoactivos obligado a comunicar información"
+      },
+      {
+        "native_LF": 1500,
+        "line": "de criptoactivos con respecto a estas operaciones, siempre que el proveedor de servicios de"
+      },
+      {
+        "native_LF": 1501,
+        "line": "criptoactivos obligado a comunicar información esté obligado a verificar la identidad de dicho"
+      },
+      {
+        "native_LF": 1503,
+        "line": "arreglo a las normas sobre la información relativa a las transferencias de fondos y criptoactivos"
+      },
+      {
+        "native_LF": 1505,
+        "line": "3. Persona física usuaria de criptoactivos: usuario de criptoactivos que es una persona física."
+      },
+      {
+        "native_LF": 1506,
+        "line": "4. Persona física usuaria de criptoactivos preexistente: persona física usuaria de criptoac-"
+      },
+      {
+        "native_LF": 1507,
+        "line": "tivos que mantiene una relación de servicios con el proveedor de servicios de criptoactivos"
+      },
+      {
+        "native_LF": 1509,
+        "line": "5. Entidad usuaria de criptoactivos: usuario de criptoactivos que es una entidad."
+      },
+      {
+        "native_LF": 1510,
+        "line": "6. Entidad usuaria de criptoactivos preexistente: entidad usuaria de criptoactivos que man-"
+      },
+      {
+        "native_LF": 1511,
+        "line": "tiene una relación de servicios con el proveedor de servicios de criptoactivos obligado a co-"
+      },
+      {
+        "native_LF": 1547,
+        "line": "acuerdo con el marco de intercambio de información sobre criptoactivos; jurisdicción con la"
+      },
+      {
+        "native_LF": 1687,
+        "line": "criptoactivos sujetos a comunicación de información en nombre de terceros, o."
+      },
+      {
+        "native_LF": 1689,
+        "line": "en activos financieros o en criptoactivos sujetos a comunicación de información, si la entidad"
+      },
+      {
+        "native_LF": 1696,
+        "line": "criptoactivos sujetos a comunicación de información a efectos del apartado E.5, letra b), si la"
+      },
+      {
+        "native_LF": 1711,
+        "line": "ministración o gestión de activos financieros, dinero o criptoactivos sujetos a comunicación"
+      },
+      {
+        "native_LF": 1800,
+        "line": "o a plazo) ligado a un valor mobiliario, un criptoactivo sujeto a comunicación de información,"
+      },
+      {
+        "native_LF": 1899,
+        "line": "gencia debida con respecto al cliente de un proveedor de servicios de criptoactivos obligado a"
+      },
+      {
+        "native_LF": 1907,
+        "line": "criptoactivos obligado a comunicar información."
+      },
+      {
+        "native_LF": 1943,
+        "line": "pea o jurisdicción pone gratuitamente a disposición de un proveedor de servicios de criptoac-"
+      },
+      {
+        "native_LF": 1945,
+        "line": "fiscal de un usuario de criptoactivos."
+      }
+    ]
+  },
+  {
+    "id": "N-IRPF-current",
+    "url": "https://www.lexnavarra.navarra.es/detalle.asp?r=29657",
+    "raw_sha256": "94bc33ca83eb448d548a43fe51730690c519a3ec6ac8531ec94852a42ed07d77",
+    "format": "Official Lexnavarra HTML, cp1252; independently derived visible-text reader retained locally",
+    "derived_reader_sha256": "21986e4bc84860ccb7f9b7511d4f352769248ac3aef596594b73d16ff426440c",
+    "actual_read_scope": "Ordinary39–43 computation/acquisition provisions, complete43.2 securities FIFO and context; no source support for fungible-coin pooled-lot rule found."
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "slug": "es-foral-non-resident-tax",
+  "guide_sha256": "5c0d3b2b279a8a1cd11080c4d025a4bad14303c764c2245797ec9b8d84effed9",
+  "ledger_sha256": "db4e19ccd973dadb0b00961c8736fa289ae96d7047c628c0fe60d2fe1a17d106",
+  "rows": 525,
+  "old_units": 282,
+  "earliest_branch_units": 280,
+  "quote_anchors": 530
+}

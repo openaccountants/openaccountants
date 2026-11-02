@@ -1,0 +1,17 @@
+{
+  "verdict": "BOUNDED PASS exact foralpayroll pair",
+  "guide_sha256": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+  "ledger_sha256": "4ab02c9e6177ea9096b5e7f92e3bc3cf60841e88649797f243c973894e9eb080",
+  "rows_actual_read": 289,
+  "own_controls": 60,
+  "canonical_oa_blocks": 2,
+  "source_identity_occurrences": 82,
+  "unique_source_files": 46,
+  "table_vectors": {
+    "matched": 157,
+    "explicit_semantic_cent_boundary": 1,
+    "unresolved": 0
+  },
+  "finding": "S-L10 closed",
+  "report_sha256": "e351fa46d61ddccff6edc7889b9eac26ac382ae00c50fa5c695c2334e46369e2"
+}

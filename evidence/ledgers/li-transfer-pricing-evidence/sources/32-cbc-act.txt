@@ -1,0 +1,711 @@
+                                                                    355
+
+
+
+           Liechtensteinisches Landesgesetzblatt
+Jahrgang 2016                Nr. 502      ausgegeben am 23. Dezember 2016
+
+
+
+
+                               Gesetz
+                        vom 4. November 2016
+   über den internationalen automatischen Aus-
+ tausch länderbezogener Berichte multinationaler
+             Konzerne (CbC-Gesetz)
+
+  Dem nachstehenden vom Landtag gefassten Beschluss erteile Ich Meine
+Zustimmung:1
+
+
+
+                      I. Allgemeine Bestimmungen
+
+                                 Art. 1
+                              Gegenstand
+   1) Dieses Gesetz regelt die Umsetzung des automatischen Austauschs
+länderbezogener Berichte multinationaler Konzerne zwischen dem Fürs-
+tentum Liechtenstein und Partnerstaaten nach internationalen Abkommen,
+die einen automatischen Austausch länderbezogener Berichte vorsehen
+(nachfolgend "anwendbare Abkommen").
+    2) Es legt insbesondere fest:
+a) die Pflichten konstitutiver Rechtsträger;
+b) die Übermittlung länderbezogener Berichte;
+c) die Vertraulichkeit, die Verwendung der Informationen und den Daten-
+    schutz;
+
+
+Fassung: 01.01.2026                                                     1
+355                                               CbC-Gesetz (CbC-Gesetz)
+
+
+d) die anwendbaren Verfahren;
+e) die Strafen für Widerhandlungen gegen anwendbare Abkommen und
+    dieses Gesetz.
+   3) Vorbehalten bleiben abweichende Bestimmungen des im Einzelfall
+anwendbaren Abkommens.
+
+                                   Art. 2
+                       Begriffe und Bezeichnungen
+   1) Im Sinne dieses Gesetzes gelten als:
+a) Konzern: eine Gruppe von Unternehmen, die durch Eigentum oder
+   Beherrschung verbunden sind, sodass die Gruppe entweder nach den
+   geltenden Rechnungslegungsgrundsätzen zur Aufstellung eines Kon-
+   zernabschlusses für Rechnungslegungszwecke verpflichtet ist oder dazu
+   verpflichtet wäre, wenn Eigenkapitalbeteiligungen an einem der Unter-
+   nehmen an einer öffentlichen Wertpapierbörse gehandelt würden;2
+b) multinationaler Konzern: ein Konzern, der:
+   1. zwei oder mehr Unternehmen umfasst, die in verschiedenen Staaten
+       oder Hoheitsgebieten steuerlich ansässig sind, oder ein Unter-
+       nehmen, das in einem Staat oder Hoheitsgebiet steuerlich ansässig ist
+       und in einem anderen Staat oder Hoheitsgebiet mit der durch eine
+       Betriebsstätte ausgeübten Geschäftstätigkeit steuerpflichtig ist; und
+   2. kein freigestellter multinationaler Konzern ist.
+    Ein multinationaler Konzern kann freiwillig auf die Freistellung nach
+    Ziff. 2 verzichten;
+c) freigestellter multinationaler Konzern: ein Konzern, dessen konsoli-
+    dierter Umsatz im jeweils vorangegangenen Berichtssteuerjahr 900 Mil-
+    lionen Franken nicht überschreitet;
+d) konstitutiver Rechtsträger:
+    1. eine eigenständige Geschäftseinheit eines multinationalen Konzerns,
+        die für Rechnungslegungszwecke in den Konzernabschluss einbe-
+        zogen wird oder darin einbezogen würde, wenn Eigenkapitalbeteili-
+        gungen an dieser Geschäftseinheit eines multinationalen Konzerns an
+        einer öffentlichen Wertpapierbörse gehandelt würden;
+    2. eine eigenständige Geschäftseinheit, die nur aufgrund ihrer Grösse
+        oder aus Wesentlichkeitsgründen nicht in den Konzernabschluss des
+        multinationalen Konzerns einbezogen wird; und
+
+
+2                                                        Fassung: 01.01.2026
+CbC-Gesetz (CbC-Gesetz)                                                    355
+
+
+    3. eine Betriebsstätte einer unter Ziff. 1 oder 2 fallenden eigenständigen
+        Geschäftseinheit eines multinationalen Konzerns, sofern die
+        Geschäftseinheit für Rechnungslegungs-, Aufsichts-, Steuer- oder
+        interne Steuerungszwecke einen Einzelabschluss für diese Betriebs-
+        stätte aufstellt;
+e) berichtender Rechtsträger: ein konstitutiver Rechtsträger, der aufgrund
+    des innerstaatlichen Rechts im Staat oder Hoheitsgebiet seiner steuerli-
+    chen Ansässigkeit verpflichtet ist, den länderbezogenen Bericht für den
+    multinationalen Konzern einzureichen;
+f) Konzernobergesellschaft: ein konstitutiver Rechtsträger eines multinatio-
+    nalen Konzerns, der aufgrund des Anteils seiner unmittelbaren oder mit-
+    telbaren Beteiligung an anderen konstitutiven Rechtsträgern dieses mul-
+    tinationalen Konzerns nach den Rechnungslegungsgrundsätzen im Staat
+    oder Hoheitsgebiet seiner steuerlichen Ansässigkeit zur Erstellung einer
+    Konzernrechnung verpflichtet ist oder dazu verpflichtet wäre, wenn die
+    Beteiligung an einer öffentlichen Wertpapierbörse gehandelt würde und
+    kein anderer konstitutiver Rechtsträger dieses multinationalen Konzerns
+    unmittelbar oder mittelbar eine solche Beteiligung hielte;
+g) substituierende Konzernobergesellschaft: ein konstitutiver Rechtsträger
+    eines multinationalen Konzerns, der von der Konzernobergesellschaft
+    beauftragt wurde, den länderbezogenen Bericht in seinem Ansässigkeits-
+    staat im Namen der Konzernobergesellschaft einzureichen;
+h) Steuerjahr: die jährliche Rechnungslegungsperiode, für die die Konzer-
+    nobergesellschaft eines multinationalen Konzerns den Konzernab-
+    schluss erstellt;
+i) Berichtssteuerjahr: das Steuerjahr, für das die Angaben im länderbezo-
+    genen Bericht abgebildet werden;
+k) systemisches Scheitern: der Zustand, der eintritt, wenn ein Partnerstaat
+    der Pflicht zum automatischen Austausch der länderbezogenen Berichte
+    multinationaler Konzerne gegenüber Liechtenstein aus Gründen, die
+    sich nicht durch das anwendbare Abkommen rechtfertigen lassen, anhal-
+    tend nicht nachkommt;
+l) ein in Liechtenstein ansässiger konstitutiver Rechtsträger:
+    1. ein konstitutiver Rechtsträger, der in Liechtenstein steuerlich ansässig
+        ist; und
+    2. eine in Liechtenstein gelegene Betriebsstätte, mit der eine eigenstän-
+        dige Geschäftseinheit eines multinationalen Konzerns in Liechten-
+        stein steuerpflichtig ist;
+
+Fassung: 01.01.2026                                                          3
+355                                               CbC-Gesetz (CbC-Gesetz)
+
+
+m) länderbezogener Bericht: ein Bericht, der folgende Angaben eines multi-
+   nationalen Konzerns enthält:
+   1. aggregierte Informationen je Staat, in dem der multinationale Konzern
+       tätig ist, betreffend Erträge, Gewinn oder Verlust vor Steuern,
+       gezahlte Ertragssteuern, noch zu zahlende Ertragssteuern, Grund-
+       kapital, Gewinnvortrag oder Verlustvortrag, Anzahl der Mitarbeiter
+       und materielles Vermögen, ausgenommen liquide Mittel;
+   2. Identifizierung aller konstitutiven Rechtsträger eines multinationalen
+       Konzerns mit Angaben über den steuerlichen Ansässigkeitsstaat und,
+       sofern abweichend, den Staat, in dem der konstitutive Rechtsträger
+       errichtet oder eingetragen wurde, sowie die wichtigsten Geschäftstä-
+       tigkeiten des konstitutiven Rechtsträgers;
+n) Partnerstaat: ein Staat oder Hoheitsgebiet, mit dem Liechtenstein über-
+   eingekommen ist, länderbezogene Berichte automatisch auszutauschen;
+o) vertretungsbefugte Organe: sämtliche zur Vertretung nach aussen beru-
+   fene Organe eines konstitutiven Rechtsträgers ohne Rücksicht auf die
+   Art des jeweiligen Zeichnungsrechtes und die Zahl der vertretungsbe-
+   fugten Organe.3
+   2) Soweit das anwendbare Abkommen oder dieses Gesetz nichts anderes
+bestimmt, ist die Steuerverwaltung die nach dem anwendbaren Abkommen
+zuständige liechtensteinische Behörde.
+   3) Unter den in diesem Gesetz verwendeten Personenbezeichnungen
+sind alle Personen unabhängig ihres Geschlechts zu verstehen, sofern sich
+die Personenbezeichnungen nicht ausdrücklich auf ein bestimmtes
+Geschlecht beziehen.4
+
+
+
+             II. Pflichten konstitutiver Rechtsträger
+
+                                   Art. 3
+Pflicht der Konzernobergesellschaft zur Erstellung und Einreichung des
+                      länderbezogenen Berichts
+    1) In Liechtenstein ansässige Konzernobergesellschaften, die nicht nach
+Art. 1099 bis 1101 PGR von der Pflicht zur Aufstellung eines konsolidierten
+Geschäftsberichtes nach Art. 1097 PGR befreit sind, sind verpflichtet, einen
+länderbezogenen Bericht zu erstellen und bei der Steuerverwaltung einzu-
+reichen.5
+
+4                                                        Fassung: 01.01.2026
+CbC-Gesetz (CbC-Gesetz)                                                 355
+
+
+    2) Bestimmt eine in Liechtenstein ansässige Konzernobergesellschaft
+einen in Liechtenstein oder im Ausland ansässigen konstitutiven Rechts-
+träger als substituierende Konzernobergesellschaft, ist die in Liechtenstein
+ansässige Konzernobergesellschaft von ihrer Pflicht nach Abs. 1 befreit.6
+    3) Eine in Liechtenstein ansässige Konzernobergesellschaft darf einen im
+Ausland ansässigen konstitutiven Rechtsträger als substituierende Konzer-
+nobergesellschaft nur bestimmen, wenn:
+a) sein Ansässigkeitsstaat die Einreichung länderbezogener Berichte vor-
+    schreibt;
+b) sein Ansässigkeitsstaat ein Partnerstaat ist;
+c) beim Ansässigkeitsstaat kein systemisches Scheitern eingetreten ist; und
+d) der Ansässigkeitsstaat vom konstitutiven Rechtsträger die Meldung über
+    dessen Eigenschaft als substituierende Konzernobergesellschaft erhalten
+    hat.
+
+                                  Art. 47
+ Pflicht der substituierenden Konzernobergesellschaft zur Einreichung
+                      des länderbezogenen Berichts
+   In Liechtenstein ansässige substituierende Konzernobergesellschaften
+einer in Liechtenstein oder im Ausland ansässigen Konzernobergesellschaft
+sind verpflichtet, den länderbezogenen Bericht bei der Steuerverwaltung
+einzureichen.
+
+                                   Art. 5
+ Pflicht der konstitutiven Rechtsträger zur Einreichung des länderbezo-
+                              genen Berichts
+   1) In Liechtenstein ansässige konstitutive Rechtsträger einer im Ausland
+ansässigen Konzernobergesellschaft, die nicht substituierende Konzerno-
+bergesellschaften sind, sind vorbehaltlich Abs. 2 auf Verlangen der Steuer-
+verwaltung verpflichtet, den länderbezogenen Bericht des multinationalen
+Konzerns bei der Steuerverwaltung einzureichen, wenn:
+a) die Konzernobergesellschaft in ihrem Ansässigkeitsstaat nicht ver-
+   pflichtet ist, einen länderbezogenen Bericht einzureichen;
+b) der Ansässigkeitsstaat der Konzernobergesellschaft kein Partnerstaat ist;
+   oder
+
+
+
+Fassung: 01.01.2026                                                       5
+355                                               CbC-Gesetz (CbC-Gesetz)
+
+
+c) beim Partnerstaat, in dem die Konzernobergesellschaft ansässig ist, ein
+   systemisches Scheitern eingetreten ist.
+   2) Die Steuerverwaltung darf die Einreichung des länderbezogenen
+Berichts nicht verlangen, wenn sie den länderbezogenen Bericht von einem
+Partnerstaat erhält.
+
+                                  Art. 6
+            Anforderungen an den länderbezogenen Bericht
+   1) Der länderbezogene Bericht ist in deutscher oder englischer Sprache
+zu erstellen.
+   2) Der länderbezogene Bericht enthält die finanziellen Angaben in der
+Landeswährung oder in der für die Geschäftseinheit des multinationalen
+Konzerns wesentlichen Währung.
+   3) Die Einreichung des länderbezogenen Berichts hat gemäss den Vor-
+gaben der Steuerverwaltung zu erfolgen.
+   4) Der länderbezogene Bericht ist bei der Steuerverwaltung innerhalb
+von 12 Monaten nach dem Ende der Berichtssteuerperiode einzureichen. Im
+Falle von Art. 5 Abs. 1 Bst. c hat die Steuerverwaltung eine angemessene
+Frist für die Einreichung des länderbezogenen Berichts festzulegen.
+
+                                  Art. 7
+                          Registrierungspflicht
+   1) In Liechtenstein ansässige berichtende Rechtsträger haben sich unauf-
+gefordert bei der Steuerverwaltung zu registrieren.
+  2) Die Registrierung hat gemäss den Vorgaben der Steuerverwaltung bis
+zum letzten Tag der Berichtssteuerperiode zu erfolgen.
+   3) Änderungen der nach Abs. 1 registrierten Daten sind der Steuerver-
+waltung unverzüglich mitzuteilen.8
+   4) Endet die Eigenschaft als berichtender Rechtsträger, so hat sich der
+Rechtsträger bei der Steuerverwaltung unaufgefordert abzumelden.9
+
+
+
+
+6                                                       Fassung: 01.01.2026
+CbC-Gesetz (CbC-Gesetz)                                                355
+
+
+          III. Übermittlung länderbezogener Berichte
+
+                                  Art. 8
+                               Grundsatz
+    1) Die Steuerverwaltung übermittelt die von den in Liechtenstein ansäs-
+sigen konstitutiven Rechtsträgern eines multinationalen Konzerns einge-
+reichten länderbezogenen Berichte innerhalb der im anwendbaren
+Abkommen festgelegten Fristen an die zuständigen Behörden der jeweiligen
+Partnerstaaten, in denen konstitutive Rechtsträger desselben multinatio-
+nalen Konzerns ansässig sind.
+   2) Die Steuerverwaltung ist nicht verpflichtet, länderbezogene Berichte
+weiterzuleiten, wenn die Übermittlung der öffentlichen Ordnung (ordre
+public) des Fürstentums Liechtenstein widerspricht.
+   3) Die Steuerverwaltung ist nicht verpflichtet, länderbezogene Berichte
+oder Teile davon weiterzuleiten, wenn die zuständige ausländische Behörde
+nicht in der Lage ist, vergleichbare Informationen der Steuerverwaltung zur
+Verfügung zu stellen.
+   4) Die Steuerverwaltung hat die ausgetauschten länderbezogenen
+Berichte bis zum Ablauf der maximalen Verjährungsfristen nach Art. 26
+aufzubewahren. Die ausgetauschten länderbezogenen Berichte sind nach
+Ablauf der maximalen Verjährungsfristen zu vernichten.10
+
+
+
+ IV. Vertraulichkeit, Verwendung der Informationen sowie
+          Datenverarbeitung und Datensicherheit11
+
+                                  Art. 9
+  Vertraulichkeit und Verwendung der Informationen im Partnerstaat
+   1) Alle auszutauschenden Informationen, welche die zuständige
+Behörde eines Partnerstaates erhält, unterliegen den im anwendbaren
+Abkommen vorgesehenen Vertraulichkeitsvorschriften und sonstigen
+Schutzvorkehrungen einschliesslich der Bestimmungen, welche die Ver-
+wendung der ausgetauschten Informationen einschränken.
+   2) Zusätzlich zu den Einschränkungen nach Abs. 1 dürfen die Infor-
+mationen, welche die zuständige Behörde eines Partnerstaates erhält, aus-
+schliesslich zu den nach diesem Absatz zulässigen Zwecken verwendet
+
+Fassung: 01.01.2026                                                      7
+355                                              CbC-Gesetz (CbC-Gesetz)
+
+
+werden. Insbesondere können die Informationen des länderbezogenen
+Berichts für die Bewertung erheblicher Risiken im Zusammenhang mit Ver-
+rechnungspreisen, Gewinnverkürzung und Gewinnverlagerung sowie gege-
+benenfalls für wirtschaftliche und statistische Analysen verwendet werden.
+Die Informationen dürfen nicht als Ersatz für eine eingehende Verrech-
+nungspreisanalyse einzelner Geschäftsvorfälle und Preise auf der Grundlage
+einer umfassenden Funktionsanalyse und einer umfassenden Vergleichbar-
+keitsanalyse verwendet werden. Die Informationen im länderbezogenen
+Bericht erlauben für sich genommen nicht, abschliessend zu bestimmen, ob
+die Verrechnungspreise korrekt berechnet wurden oder nicht, und dürfen
+folglich nicht als Grundlage für Verrechnungspreiskorrekturen verwendet
+werden. Ungeachtet der vorstehenden Bestimmungen ist es nicht untersagt,
+die Informationen des länderbezogenen Berichts im Rahmen einer Steuer-
+prüfung als Grundlage für weitere Untersuchungen der Verrechnungspreis-
+gestaltungen des multinationalen Konzerns oder anderer Steuerfragen zu
+verwenden, und infolgedessen kann der steuerbare Gewinn eines konstitu-
+tiven Rechtsträgers angemessen korrigiert werden.
+    3) Die Steuerverwaltung weist die zuständigen Behörden der Partner-
+staaten auf die Einschränkungen bei der Verwendung der länderbezogenen
+Berichte sowie auf die Geheimhaltungspflichten nach den Amtshilfebestim-
+mungen des anwendbaren Abkommens hin.
+
+                                 Art. 10
+           Von den Partnerstaaten eingehende Informationen
+   Die Steuerverwaltung darf die von den Partnerstaaten eingehenden län-
+derbezogenen Berichte nur im Sinne von Art. 9 Abs. 2 verwenden.
+
+                                Art. 1112
+                           Datenverarbeitung
+   Die Steuerverwaltung darf personenbezogene Daten verarbeiten oder
+verarbeiten lassen, soweit dies zur Erfüllung ihrer Aufgaben nach diesem
+Gesetz erforderlich ist. Sie kann zu diesem Zweck ein Informationssystem
+betreiben.
+
+
+
+
+8                                                      Fassung: 01.01.2026
+CbC-Gesetz (CbC-Gesetz)                                                  355
+
+
+                                  Art. 12
+                          Sicherheitsverletzungen
+   1) Die Steuerverwaltung unterrichtet in Liechtenstein ansässige berich-
+tende Rechtsträger über eine Sicherheitsverletzung betreffend Informa-
+tionen, die bei der Steuerverwaltung verarbeitet werden, wenn durch diese
+Sicherheitsverletzung voraussichtlich ein hohes Risiko für die persönlichen
+Rechte und Freiheiten von natürlichen Personen oder die Rechte von
+Rechtsträgern zu erwarten ist.13
+   2) Abs. 1 gilt sinngemäss bei einer Sicherheitsverletzung betreffend
+Informationen, die bei der zuständigen Behörde des Partnerstaates verar-
+beitet werden, sofern die Steuerverwaltung hierüber benachrichtigt wird.14
+   3) In Liechtenstein ansässige berichtende Rechtsträger sind verpflichtet,
+natürliche Personen und Rechtsträger unverzüglich über eine Sicherheits-
+verletzung nach Abs. 1 und 2 zu informieren.15
+   4) Die Steuerverwaltung informiert die Datenschutzstelle über eine
+Sicherheitsverletzung nach Abs. 1 und 2, sofern diese Sicherheitsverletzung
+voraussichtlich ein Risiko für die persönlichen Rechte und Freiheiten von
+natürlichen Personen zur Folge hat.16
+
+
+
+                      V. Verfahrensbestimmungen
+
+                                  Art. 13
+                        Organisation und Verfahren
+   1) Die Steuerverwaltung erlässt alle Verfügungen und trifft alle Entschei-
+dungen, die für die Anwendung des anwendbaren Abkommens und dieses
+Gesetzes notwendig sind.
+   2) Sie kann die Verwendung bestimmter Formulare in elektronischer
+Form vorschreiben.
+
+                                  Art. 14
+                             Auskunftspflicht
+   1) In Liechtenstein ansässige konstitutive Rechtsträger haben der Steuer-
+verwaltung Auskunft über alle Tatsachen zu erteilen, die für die Umsetzung
+des anwendbaren Abkommens und dieses Gesetzes notwendig sind.
+
+Fassung: 01.01.2026                                                        9
+355                                                CbC-Gesetz (CbC-Gesetz)
+
+
+    2) Gesetzliche Vorschriften über Daten-, Berufs- oder Geschäftsgeheim-
+nisse stehen der Herausgabe der Informationen nach Abs. 1 nicht entgegen,
+ausser es handelt sich um Informationen, die vom Geheimnisschutz nach §
+108 Abs. 1 Ziff. 2 StPO erfasst sind und deren Herausgabe eine unzuläs-
+sige Umgehung des Geheimnisschutzes im Sinne von § 108 Abs. 3 StPO
+bedeuten würde. In Liechtenstein ansässige konstitutive Rechtsträger sind
+im entsprechenden Umfang von ihren Geheimhaltungspflichten entbunden.
+     3) Die Kosten für die Erteilung von Auskünften werden nicht erstattet.17
+
+                                   Art. 15
+                                  Kontrolle
+    1) Zur Überprüfung der Erfüllung der Pflichten der in Liechtenstein
+ansässigen konstitutiven Rechtsträger kann die Steuerverwaltung Kon-
+trollen durchführen.
+   2) In Liechtenstein ansässige konstitutive Rechtsträger haben der Steu-
+erverwaltung unbeschränkten Zugang zu allen Informationen zu gewähren,
+die im Zusammenhang mit der Erfüllung ihrer Verpflichtungen aus dem
+anwendbaren Abkommen und diesem Gesetz relevant sind und die diese
+zur Durchführung der Kontrollen für notwendig erachten.
+
+                                   Art. 16
+                Herstellung des ordnungsgemässen Zustands
+    1) Die Steuerverwaltung fordert den betroffenen in Liechtenstein ansäs-
+sigen konstitutiven Rechtsträger formlos auf, innerhalb einer angemessenen
+Frist den ordnungsgemässen Zustand herzustellen, wenn:
+a) Grund zur Annahme besteht, dass verwaltungstechnische oder sonstige
+    geringfügige Fehler zu einer unrichtigen oder unvollständigen Infor-
+    mationsübermittlung oder sonstigen Verstössen gegen das anwendbare
+    Abkommen oder dieses Gesetz geführt haben könnten; oder
+b) die Steuerverwaltung feststellt, dass ein in Liechtenstein ansässiger kon-
+    stitutiver Rechtsträger die Verpflichtungen nach dem anwendbaren
+    Abkommen und diesem Gesetz in erheblichem Umfang nicht einhält.
+   2) Die Frist nach Abs. 1 kann in begründeten Fällen angemessen verlän-
+gert werden. Wird der Fehler nicht fristgerecht behoben, so erlässt die Steu-
+erverwaltung eine entsprechende Verfügung.
+     3) Vorbehalten bleibt die Verhängung von Bussen nach Art. 20 bis 21a.18
+
+10                                                        Fassung: 01.01.2026
+CbC-Gesetz (CbC-Gesetz)                                              355
+
+
+                                Art. 1719
+                      Anwendbares Verfahrensrecht
+   Soweit dieses Gesetz nichts anderes bestimmt, ist für Verwaltungsver-
+fahren das Gesetz über die allgemeine Landesverwaltungspflege (LVG)
+anwendbar.
+
+                                 Art. 18
+                              Rechtsmittel
+   1) Gegen Verfügungen der Steuerverwaltung nach diesem Abschnitt
+kann innert 30 Tagen ab Zustellung schriftlich Einsprache erhoben werden.
+   2) Die Einsprache hat die Anträge zu enthalten und die zur Begründung
+dienenden Tatsachen anzugeben.
+   3) Wurde gültig Einsprache erhoben, so überprüft die Steuerverwaltung
+die Verfügung ohne Bindung an die gestellten Anträge und erlässt eine
+begründete Einspracheentscheidung.
+   4) Auf die Rechtsmittel und das Verfahren finden die Bestimmungen der
+Art. 117 und 118 SteG sinngemäss Anwendung.
+
+                                 Art. 19
+                        Geheimhaltungspflichten
+    1) Wer mit dem Vollzug der Bestimmungen des anwendbaren Abkom-
+mens und dieses Gesetzes betraut ist oder zu deren Vollzug beigezogen
+wird, unterliegt dem Amtsgeheimnis und hat gegenüber anderen Amts-
+stellen und Privaten über die in Ausübung dieser Tätigkeit gemachten
+Wahrnehmungen Stillschweigen zu bewahren und Einsicht in amtliche
+Akten zu verweigern.
+    2) Keine Geheimhaltungspflicht besteht:
+a) für die Steuerverwaltung bei der Übermittlung länderbezogener Berichte
+    und der Erteilung von Auskünften an die zuständige Behörde des Part-
+    nerstaates nach den anwendbaren Abkommen und diesem Gesetz;
+b) gegenüber liechtensteinischen Organen der Rechtspflege, die mit dem
+    Vollzug des anwendbaren Abkommens und dieses Gesetzes betraut
+    sind;
+
+
+
+
+Fassung: 01.01.2026                                                   11
+355                                               CbC-Gesetz (CbC-Gesetz)
+
+
+c) gegenüber liechtensteinischen Organen der Rechtspflege, der Staatsan-
+    waltschaft und der Landespolizei bei der Untersuchung von gerichtlich
+    strafbaren Handlungen;
+d) gegenüber liechtensteinischen Aufsichtsbehörden und Stellen, die für die
+    Verhängung von Aufsichts- und Disziplinarmassnahmen gegen Rechts-
+    träger zuständig sind;
+e) soweit dafür eine gesetzliche Grundlage besteht.
+
+
+
+                       VI. Strafbestimmungen
+
+                                 Art. 2020
+                       Verwaltungsübertretungen
+    1) Von der Steuerverwaltung wird mit Busse bis zu 250 000 Franken
+bestraft, wer vorsätzlich die Einreichungspflicht nach Art. 3, 4 oder 5 ver-
+letzt.
+    2) Von der Steuerverwaltung wird mit Busse bis zu 20 000 Franken
+bestraft, wer vorsätzlich:
+a) die Registrierungspflicht nach Art. 7 verletzt;
+b) die Auskunftspflicht nach Art. 14 gegenüber der Steuerverwaltung ver-
+    letzt, indem er Auskünfte verweigert, unwahre Angaben macht oder
+    wesentliche Tatsachen verschweigt;
+c) die ordnungsgemässe Durchführung einer Kontrolle nach Art. 15
+    erschwert, behindert oder verunmöglicht.
+   3) Von der Steuerverwaltung wird mit Busse bis zu 10 000 Franken
+bestraft, wer vorsätzlich gegen eine an ihn gerichtete rechtskräftige Verfü-
+gung oder Entscheidung der Steuerverwaltung nach Art. 13 verstösst.
+    4) Bei fahrlässiger Begehung beträgt die Busse:
+a) bei Übertretungen nach Abs. 1: bis zu 100 000 Franken;
+b) bei Übertretungen nach Abs. 2 Bst. a: bis zu 10 000 Franken.
+    5) In Abweichung von Art. 21 des Verwaltungsstrafgesetzes können bei
+der Strafbemessung auch im abgekürzten Verfahren (Art. 53 ff. VStG) die in
+Betracht kommenden Erschwerungs- und Milderungsgründe berücksich-
+tigt werden.21
+
+
+
+12                                                       Fassung: 01.01.2026
+CbC-Gesetz (CbC-Gesetz)                                               355
+
+
+                                Art. 2122
+       Schwerwiegende, wiederholte oder systematische Verstösse
+   Von der Steuerverwaltung wird mit Busse bis zu 500 000 Franken
+bestraft, wer Verstösse nach Art. 20 Abs. 1 schwerwiegend, wiederholt oder
+systematisch begeht.
+
+                                Art. 21a23
+                                Beteiligte
+   Von der Steuerverwaltung wird mit Busse bis zu 500 000 Franken
+bestraft, wer in schwerwiegender, wiederholter oder systematischer Weise
+einen anderen zu einem Verstoss nach Art. 20 Abs. 1 bestimmt oder sonst
+zu seiner Ausführung beiträgt.
+
+                                Art. 2224
+                       Verwaltungsstrafverfahren
+    1) Soweit dieses Gesetz nichts anderes bestimmt, ist für Verwaltungs-
+strafverfahren das Verwaltungsstrafgesetz anwendbar.
+   2) In einem Verfahren wegen eines Verstosses nach Art. 20 kann die
+Steuerverwaltung bei klarer Sach- und Rechtslage mittels einer Strafverfü-
+gung vorgehen. Soweit in diesem Gesetz keine abweichenden Vorschriften
+bestehen, finden die Art. 53 ff. des Verwaltungsstrafgesetzes sinngemäss
+Anwendung.
+   3) In allen übrigen Verfahren wegen Verstössen nach Art. 20 sowie in
+Verfahren wegen Verstössen nach Art. 21 und 21a finden, soweit in diesem
+Gesetz keine abweichenden Regelungen bestehen, die Art. 40 ff. des Ver-
+waltungsstrafgesetzes sinngemäss Anwendung.
+   4) In einem Verfahren wegen eines Verstosses nach Art. 20 bis 21a ist
+Art. 29 des Verwaltungsstrafgesetzes nicht anwendbar.
+
+                                Art. 2325
+               Rechtsmittel im Verwaltungsstrafverfahren
+   1) Gegen Verwaltungsstrafentscheidungen der Steuerverwaltung nach
+Art. 20 bis 21a kann binnen 14 Tagen ab Zustellung Beschwerde bei der
+Landessteuerkommission erhoben werden.
+
+
+Fassung: 01.01.2026                                                    13
+355                                              CbC-Gesetz (CbC-Gesetz)
+
+
+   2) Gegen Entscheidungen der Landessteuerkommission kann binnen
+14 Tagen ab Zustellung Beschwerde beim Verwaltungsgerichtshof erhoben
+werden.
+    3) Gegen Strafverfügungen der Steuerverwaltung nach Art. 22 Abs. 2
+kann binnen 14 Tagen ab Zustellung Einspruch (Art. 55 VStG) bei der Steu-
+erverwaltung erhoben werden. Art. 53 Abs. 2 des Verwaltungsstrafgesetzes
+bleibt vorbehalten.26
+
+                                 Art. 2427
+                               Aufgehoben
+
+                                 Art. 2528
+          Verantwortlichkeit von konstitutiven Rechtsträgern
+   1) Werden mit Wirkung für einen Rechtsträger Widerhandlungen
+begangen, so wird der Rechtsträger gebüsst und zwar unabhängig davon,
+ob dieser über Rechtspersönlichkeit verfügt. Die Verantwortlichkeit von
+Rechtsträgern besteht unabhängig davon, wer für den Rechtsträger die
+Widerhandlung begangen hat.29
+   2) Für die verhängten Bussen haften die zum Tatzeitpunkt vertretungs-
+befugten Organe zur ungeteilten Hand, sofern die Busse vom konstitutiven
+Rechtsträger nicht bezahlt wird.
+
+                                 Art. 26
+                               Verjährung
+   1) Die Strafverfolgung und die Strafvollstreckung verjähren bei Wider-
+handlungen nach Art. 20 bis 21a in fünf Jahren.30
+   2) Die Verjährung der Strafverfolgung beginnt nach Ablauf des Jahres,
+in welchem die Gesetzesverletzung letztmals begangen wurde oder mit
+Beendigung der Funktion als vertretungsbefugtes Organ. Sie ist gehemmt,
+solange die tatverdächtige Person im Ausland ist. Die Verjährung wird
+durch jede gegen die tatverdächtige Person gerichtete Untersuchungshand-
+lung unterbrochen. Nach jeder Unterbrechung beginnt die Verjährungsfrist
+von neuem. Die ursprüngliche Verjährungsfrist kann nicht mehr als verdop-
+pelt werden.31
+    3) Die Verjährung der Strafvollstreckung beginnt mit dem rechtskräf-
+tigen Abschluss des Strafverfahrens. Sie ist gehemmt, solange die Strafe im
+
+14                                                      Fassung: 01.01.2026
+CbC-Gesetz (CbC-Gesetz)                                                   355
+
+
+Inland nicht vollzogen werden kann. Die Verjährung des Strafvollzuges
+wird durch jede gegen die verurteilte Person gerichtete Vollstreckungshand-
+lung unterbrochen. Nach jeder Unterbrechung beginnt die Verjährungsfrist
+von neuem. Die ursprüngliche Verjährungsfrist kann nicht mehr als verdop-
+pelt werden.
+
+
+
+                      VII. Schlussbestimmungen
+
+                                   Art. 27
+                       Durchführungsverordnungen
+   Die Regierung erlässt die zur Durchführung dieses Gesetzes notwen-
+digen Verordnungen.
+
+                                   Art. 28
+                         Genehmigungskompetenz
+    Die Regierung ist für die Aufnahme eines Staates oder Hoheitsgebietes
+in der Liste nach Abschnitt 8 Abs. 1 Bst. e der multilateralen Vereinbarung
+der zuständigen Behörden über den Austausch länderbezogener Berichte
+(MCAA-CbC) zuständig.
+
+                                   Art. 29
+  Freiwillige Einreichung und Übermittlung länderbezogener Berichte
+   Die Steuerverwaltung kann länderbezogene Berichte, die von in Liech-
+tenstein ansässigen konstitutiven Rechtsträgern freiwillig bei ihr eingereicht
+werden und vor dem Inkrafttreten dieses Gesetzes liegende Berichtssteuer-
+perioden betreffen, den zuständigen Behörden der Partnerstaaten, in denen
+konstitutive Rechtsträger des multinationalen Konzerns ansässig sind, über-
+mitteln.
+
+
+
+
+Fassung: 01.01.2026                                                        15
+355                                              CbC-Gesetz (CbC-Gesetz)
+
+
+                                 Art. 30
+                              Inkrafttreten
+   Dieses Gesetz tritt unter Vorbehalt des ungenutzten Ablaufs der Refe-
+rendumsfrist am 1. Januar 2017 in Kraft, andernfalls am Tag nach der Kund-
+machung.
+
+
+
+                              In Stellvertretung des Landesfürsten:
+                              gez. Alois
+                              Erbprinz
+
+
+
+                                     gez. Adrian Hasler
+                                     Fürstlicher Regierungschef
+
+
+
+
+16                                                      Fassung: 01.01.2026
+CbC-Gesetz (CbC-Gesetz)                                          355
+
+
+1 Bericht und Antrag der Regierung Nr. 99/2016
+
+2 Art. 2 Abs. 1 Bst. a abgeändert durch LGBl. 2019 Nr. 313.
+
+3 Art. 2 Abs. 1 Bst. o eingefügt durch LGBl. 2020 Nr. 502.
+
+4 Art. 2 Abs. 3 abgeändert durch LGBl. 2024 Nr. 489.
+
+5 Art. 3 Abs. 1 abgeändert durch LGBl. 2019 Nr. 313.
+
+6 Art. 3 Abs. 2 abgeändert durch LGBl. 2024 Nr. 489.
+
+7 Art. 4 abgeändert durch LGBl. 2024 Nr. 489.
+
+8 Art. 7 Abs. 3 eingefügt durch LGBl. 2020 Nr. 502.
+
+9 Art. 7 Abs. 4 eingefügt durch LGBl. 2020 Nr. 502.
+
+10 Art. 8 Abs. 4 abgeändert durch LGBl. 2019 Nr. 313.
+
+11 Überschrift vor Art. 9 abgeändert durch LGBl. 2020 Nr. 502.
+
+12 Art. 11 abgeändert durch LGBl. 2020 Nr. 502.
+
+13 Art. 12 Abs. 1 abgeändert durch LGBl. 2020 Nr. 502.
+
+14 Art. 12 Abs. 2 abgeändert durch LGBl. 2019 Nr. 313.
+
+15 Art. 12 Abs. 3 abgeändert durch LGBl. 2024 Nr. 489.
+
+16 Art. 12 Abs. 4 abgeändert durch LGBl. 2020 Nr. 502.
+
+17 Art. 14 Abs. 3 eingefügt durch LGBl. 2024 Nr. 489.
+
+18 Art. 16 Abs. 3 abgeändert durch LGBl. 2020 Nr. 502.
+
+19 Art. 17 abgeändert durch LGBl. 2025 Nr. 593.
+
+20 Art. 20 abgeändert durch LGBl. 2020 Nr. 502.
+
+21 Art. 20 Abs. 5 eingefügt durch LGBl. 2025 Nr. 593.
+
+22 Art. 21 abgeändert durch LGBl. 2020 Nr. 502.
+
+23 Art. 21a eingefügt durch LGBl. 2020 Nr. 502.
+
+24 Art. 22 abgeändert durch LGBl. 2025 Nr. 593.
+
+25 Art. 23 abgeändert durch LGBl. 2020 Nr. 502.
+
+26 Art. 23 Abs. 3 abgeändert durch LGBl. 2025 Nr. 593.
+
+27 Art. 24 aufgehoben durch LGBl. 2020 Nr. 502.
+
+28 Art. 25 abgeändert durch LGBl. 2020 Nr. 502.
+
+29 Art. 25 Abs. 1 abgeändert durch LGBl. 2025 Nr. 593.
+
+Fassung: 01.01.2026                                               17
+355                                                      CbC-Gesetz (CbC-Gesetz)
+
+
+30 Art. 26 Abs. 1 abgeändert durch LGBl. 2020 Nr. 502.
+
+31 Art. 26 Abs. 2 abgeändert durch LGBl. 2020 Nr. 502.
+
+
+
+
+18                                                             Fassung: 01.01.2026
+

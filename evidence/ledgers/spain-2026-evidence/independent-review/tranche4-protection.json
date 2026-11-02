@@ -1,0 +1,72 @@
+{
+  "guide_sha256": "4b71a29c11cd45f3c998ad358b598e545f8b49289c0a6c27a4e793c8bf084ef9",
+  "guide_bytes": 35176,
+  "ledger_sha256": "d3e3ea646a7b3eab90d772ea5301c939929e14047a1057353586347db29c4555",
+  "forward_inverse": true,
+  "exact_operations": [
+    {
+      "before": "version: 1.3\n",
+      "after": "version: 1.4\n",
+      "oldLF": [
+        4,
+        4
+      ],
+      "newLF": [
+        4,
+        4
+      ]
+    },
+    {
+      "before": "last_updated: 2026-10-27\n",
+      "after": "last_updated: 2026-10-28\n",
+      "oldLF": [
+        7,
+        7
+      ],
+      "newLF": [
+        7,
+        7
+      ]
+    },
+    {
+      "before": "# Spain self-employment: 2026 tax, contributions and cash reconciliation v1.3\n",
+      "after": "# Spain self-employment: 2026 tax, contributions and cash reconciliation v1.4\n",
+      "oldLF": [
+        19,
+        19
+      ],
+      "newLF": [
+        19,
+        19
+      ]
+    },
+    {
+      "before": "",
+      "after": "\n**While the reduction applies.** Hiring employees after starting the activity does not itself end it. An express renunciation takes effect on the first day of the month after communication. Economic benefits during the reduced-fee period use the applicable minimum base of the lowest general-table band. After the maximum benefit period ends, contribution for all protected contingencies resumes on the first day of the following month. The initial reduced-fee period is not annually income-regularised; the extension has its separate income/reassessment test in [es-social-contributions](es-social-contributions.md#reduced-starting-fee-and-familyterritorial-bonuses) ([LETA art.38 ter.3\u20138](https://www.boe.es/buscar/act.php?id=BOE-A-2007-13409#a3-5)).\n",
+      "oldLF": [
+        83,
+        82
+      ],
+      "newLF": [
+        83,
+        84
+      ]
+    }
+  ],
+  "metadata_changes": {
+    "version": [
+      "1.3",
+      "1.4"
+    ],
+    "last_updated": [
+      "2026-10-27",
+      "2026-10-28"
+    ]
+  },
+  "two_oa_byte_exact": true,
+  "CTA_byte_exact": true,
+  "attribution_byte_exact": true,
+  "all_old_urls_retained": true,
+  "old_topic_maps": 472,
+  "scope": "Actual narrow v1.3-to-v1.4 restoration; earlier whole-pack preservation reused. Old topic map spotchecks only."
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "fresh-lirpf-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764",
+    "status": 200,
+    "bytes": 2028806,
+    "sha256": "2ed2a6d4602889b5e529af3e6dd2c841074a7f3a898793283bad51d6fdd2ac40",
+    "read_utc": "2026-10-27T22:48:37.894155+00:00",
+    "file": "sources/fresh-lirpf-current.html"
+  },
+  {
+    "name": "fresh-clm-current",
+    "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+    "final_url": "https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368",
+    "status": 200,
+    "bytes": 379179,
+    "sha256": "828dda85a211c5ad1b26f3d1470f2583527a7763b73558f3c96c361c0c526cac",
+    "read_utc": "2026-10-27T22:48:37.619706+00:00",
+    "file": "sources/fresh-clm-current.html"
+  },
+  {
+    "name": "fresh-clm-law2-2021",
+    "url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-11513",
+    "final_url": "https://www.boe.es/buscar/doc.php?id=BOE-A-2021-11513",
+    "status": 200,
+    "bytes": 338404,
+    "sha256": "ce1ad532d70d003648ce386392ee97617eb0e6dabe6fdc283e202542a9c460d1",
+    "read_utc": "2026-10-27T22:48:37.597940+00:00",
+    "file": "sources/fresh-clm-law2-2021.html"
+  },
+  {
+    "name": "fresh-clm-law1-2026",
+    "url": "https://docm.jccm.es/portaldocm/verArchivoHtml.do?ruta=2026%2F03%2F30%2Fhtml%2F2026_2465.html&tipo=rutaDocm",
+    "final_url": "https://docm.jccm.es/portaldocm/verArchivoHtml.do?ruta=2026%2F03%2F30%2Fhtml%2F2026_2465.html&tipo=rutaDocm",
+    "status": 200,
+    "bytes": 130927,
+    "sha256": "bb8446891b9e1d78c56bebcd81ca37099804917a320cd14a2343f00c6e0ea7b5",
+    "read_utc": "2026-10-27T22:48:37.466333+00:00",
+    "file": "sources/fresh-clm-law1-2026.html"
+  },
+  {
+    "name": "fresh-aeat-clm-2025",
+    "url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_7-castilla-mancha/10_7_16-traslado-vivienda-habitual.html",
+    "final_url": "https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_7-castilla-mancha/10_7_16-traslado-vivienda-habitual.html",
+    "status": 200,
+    "bytes": 12409,
+    "sha256": "26ce6211b5540c92659ffb6afd5b056c323fbc85490e9e9d0dd67a9c65c512a7",
+    "read_utc": "2026-10-27T22:48:37.718036+00:00",
+    "file": "sources/fresh-aeat-clm-2025.html"
+  }
+]

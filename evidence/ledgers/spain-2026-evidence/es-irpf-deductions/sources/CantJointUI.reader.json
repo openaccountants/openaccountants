@@ -1,0 +1,168 @@
+{
+  "observed_on": "2026-10-27",
+  "application": "AEAT RentaWEBOpen2025 version1.19 OPEN",
+  "url": "https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB",
+  "actual_ui_observations": true,
+  "fictional_inputs": {
+    "married": true,
+    "both_DOB": "01/01/1990",
+    "both_region": "Cantabria",
+    "both_disability": "blank",
+    "each_bank_interest": 30000,
+    "general_BI": 0,
+    "joint_savings_BI": 60000,
+    "joint_savings_BL": 56600,
+    "fictional_NIFs": [
+      "11111111H",
+      "22222222J",
+      "33333333P"
+    ],
+    "tenancy_assumptions": "eligible named contract holders paying from own attributed funds; no exempt income,losses,offsets or other rentcredit"
+  },
+  "observations": [
+    {
+      "declarante_rent": 4000,
+      "spouse_rent": 0,
+      "individual_declarante_credit": 300,
+      "joint_credit": 400,
+      "individual_file": "individual4000-result.txt",
+      "joint_file": "joint4000-result.txt"
+    },
+    {
+      "declarante_rent": 3000,
+      "spouse_rent": 0,
+      "individual_declarante_credit": "blank; no generated credit",
+      "joint_credit": "blank; no generated credit",
+      "individual_file": "individual3000-result.txt",
+      "joint_file": "joint3000-result.txt"
+    },
+    {
+      "declarante_rent": 3000.01,
+      "spouse_rent": 0,
+      "individual_declarante_credit": 300,
+      "joint_credit": 300,
+      "individual_file": "individual3000.01-result.txt",
+      "joint_file": "joint3000.01-result.txt"
+    },
+    {
+      "declarante_rent": 3000.01,
+      "spouse_rent": 3000,
+      "individual_spouse_credit": "blank; no generated credit",
+      "joint_credit": 600,
+      "individual_file": "spouse3000-result.txt",
+      "joint_file": "joint-one-payer-passes-other-equality.txt",
+      "joint_eligible_base": 6000.01
+    }
+  ],
+  "input_correction": "Initial dot-decimal3000.01attempt did not change the prior3000amount; retained as decimal-dot-attempt files and excluded from valid observations. Accepted Spanish3000,01 is visibly3000.01 in the valid raw input/result files.",
+  "inference": "At least one personal test, then joint eligible contract-holder payment base and600cap. Do not compare total joint payments with joint60000BI/56600BL or sum separately capped300credits.",
+  "limits": [
+    "2025implementation evidence for unchanged2026incomecomparison; not observed2026campaign",
+    "No exempt/negative/offset income inference",
+    "No non-contract-holder payments inferred eligible",
+    "Different taxpayer-family types and unrelated joint entitlement facts not simulated"
+  ],
+  "auth_filing_payment": false,
+  "evidence": [
+    {
+      "file": "decimal-dot-attempt-input.txt",
+      "bytes": 2797,
+      "sha256": "ed58e708ca4bd47dd3b2aa01aed5978022ee53610d0a3762b84aa2ab9c3a9980"
+    },
+    {
+      "file": "decimal-dot-attempt-result.txt",
+      "bytes": 38799,
+      "sha256": "1c5aeff7372cf70230d8b5484178ee1317b7e362ec0c4a5f227c0727072af408"
+    },
+    {
+      "file": "declarante-interest.txt",
+      "bytes": 22768,
+      "sha256": "3b636b74f46d32c877c9a386ae352ec0019d843dfa6b3a36ca2c3c7ee4e712ee"
+    },
+    {
+      "file": "household-bases-summary.txt",
+      "bytes": 18519,
+      "sha256": "36b135c821b3914ba3afd97ddaee266bc79a0d4c9f3a6a7f257cdf76aa4192e7"
+    },
+    {
+      "file": "individual3000-result.txt",
+      "bytes": 38799,
+      "sha256": "fb380345891e78b0b5466723804170a9049e9f323c4026c9988e26b25d423b66"
+    },
+    {
+      "file": "individual3000.01-result.txt",
+      "bytes": 38913,
+      "sha256": "11352d57acbc61cdfac9073ca0fefeec53266092309ce309990f0147dc00c595"
+    },
+    {
+      "file": "individual4000-result.txt",
+      "bytes": 38913,
+      "sha256": "839b6e42e5a81574f7b1003c1b513312592d67997b1f9870c9b76ec5e89357fd"
+    },
+    {
+      "file": "joint-one-payer-passes-other-equality.png",
+      "bytes": 123380,
+      "sha256": "6dac9d18d21ab18c49ef799efb9698e560e920e427947dc1c5a1f5006dcdfe58"
+    },
+    {
+      "file": "joint-one-payer-passes-other-equality.txt",
+      "bytes": 38547,
+      "sha256": "e4e48e802f4e2be118766c9e6a3d5e38d2f6864436e5b263fbddf5f45b4a478f"
+    },
+    {
+      "file": "joint3000-result.txt",
+      "bytes": 38410,
+      "sha256": "5d820adf5a3feb64ee5c1bdcb1ad79aecd6935ebced25778c9334e2e9e744370"
+    },
+    {
+      "file": "joint3000.01-result.txt",
+      "bytes": 38524,
+      "sha256": "ec0ca10badde7a1982312705eb03a51edf2a91ac5fa724a55fe0aba4193edaaf"
+    },
+    {
+      "file": "joint4000-result.png",
+      "bytes": 123424,
+      "sha256": "389a79c45fb56c3d35315f29b87850d9609977ebb11bfbd783fbe6d57db2ac32"
+    },
+    {
+      "file": "joint4000-result.txt",
+      "bytes": 38524,
+      "sha256": "1a823ce38bc5a5329352428236814bcbecd20b1ae683e23c0636be26b31b3aca"
+    },
+    {
+      "file": "profile.txt",
+      "bytes": 19688,
+      "sha256": "a4f038f78591473b44e8b9b3178c4b19b7e241b0267722c714da8682d238f1d4"
+    },
+    {
+      "file": "rent3000-input.txt",
+      "bytes": 2798,
+      "sha256": "f9d4f206973f24f3b29bad9adfb1c94b3c324dd87aed6660d13b361dcaf999bc"
+    },
+    {
+      "file": "rent3000.01-input.txt",
+      "bytes": 2800,
+      "sha256": "c7350f910bf4423dc63e1a26a9a02c8f55041e3e75b9655bc700b4cdbefb9f0e"
+    },
+    {
+      "file": "rent4000-input.txt",
+      "bytes": 2800,
+      "sha256": "02230bb221e4d4e62b3789bfca52a70c805beecf16ce07eff59bbb19a135254d"
+    },
+    {
+      "file": "spouse-interest.txt",
+      "bytes": 22748,
+      "sha256": "d15d7995c7d9e73ab5352d1dea3efa0e02d81d9aff09b6665a49bad4999421c8"
+    },
+    {
+      "file": "spouse3000-input.txt",
+      "bytes": 2794,
+      "sha256": "da76762ef58c1125d85304890a4ee9a2810d476e9b12de2b760374e4db61ea04"
+    },
+    {
+      "file": "spouse3000-result.txt",
+      "bytes": 38802,
+      "sha256": "9d69e9c7368b10c7d0aae743bbfdfb50ec421388ed4e37aa66653f53521df28f"
+    }
+  ]
+}

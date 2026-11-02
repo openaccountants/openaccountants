@@ -1,0 +1,61 @@
+{
+  "original_commit": "6637d0dbfa6d032194ebe24306c46e7f2d7a88e9",
+  "baseline_files": [
+    {
+      "path": "skills/moldova/md-vat-refund.md",
+      "saved_as": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/original-6637d0dbf/skills/moldova/md-vat-refund.md",
+      "sha256": "c69fe5df8392018bbf5836d1346a0302987b435d1fc03fa6e52364d69f58e55d"
+    },
+    {
+      "path": "evidence/ledgers/md-vat-refund.writer.json",
+      "saved_as": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/original-6637d0dbf/evidence/ledgers/md-vat-refund.writer.json",
+      "sha256": "f4363fa4b19f81078a899948c103776846b57627baa1cab3e2ccf3253108cc6a"
+    },
+    {
+      "path": "evidence/ledgers/md-vat-refund.md",
+      "saved_as": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/original-6637d0dbf/evidence/ledgers/md-vat-refund.md",
+      "sha256": "0f3cf151d4cb794b01be47d4c22b042a49fcf50c7bca6d5a3dd65e7e9ac1c75b"
+    },
+    {
+      "path": "skills/moldova/README.md",
+      "saved_as": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/original-6637d0dbf/skills/moldova/README.md",
+      "sha256": "24d84e6343196329d99d2a32c1f621bbe86afbe7d6c0168d4287e8af578c2499"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/source-manifest.json",
+      "saved_as": "evidence/ledgers/md-country-evidence/vat-refund-20261031/writer-repair-20261031/original-6637d0dbf/evidence/ledgers/md-country-evidence/vat-refund-20261031/source-manifest.json",
+      "sha256": "9d9b54bf1aa0453f3f37b208322693c728ac58ba20ee6c5655d04e8b4607121b"
+    }
+  ],
+  "initial_review_files": [
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/INITIAL-REVIEW.md",
+      "sha256": "fe07959f703d4f3142c41e456bb0e5da249133dc463fa54028098d10941ff876"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/INITIAL-VERDICT.json",
+      "sha256": "d244a2d205829dd229f3764fa50a3cadc1cb721244a2ea5412cc740e86833466"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/initial-audit.json",
+      "sha256": "b727ef327911633c990c8bed8c19a6dfc07cb8d3a46ffe42e9b174e277ced166"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/initial-example-checks.txt",
+      "sha256": "f8a51f90e540c7592d21e50207b04d067747dfc84dc35fc05d63b531ba30415d"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/initial-findings.json",
+      "sha256": "6ecbd29d2fee82d9cb96c74995ebfb7c2d00d9ee09a3bda6eca40711dc96b214"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/initial-input-manifest.json",
+      "sha256": "44fc12c6ce8ecf8649418fae272da6d9808b768233199833fc241043aae09718"
+    },
+    {
+      "path": "evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/initial-new-guide-checks.txt",
+      "sha256": "d9e4c736c9851d21382597652da064f8d9d96900582f4ee7d4fc420c47fd63b7"
+    }
+  ],
+  "writer_note": "First baseline-copy attempt used basenames and stopped on Guide/ledger.md collision. Two duplicate preliminary copies retained unchanged; canonical preserved copies keep original relative directories."
+}

@@ -1,0 +1,11 @@
+{
+  "name": "aeat-simplified-eligibility",
+  "url": "https://sede.agenciatributaria.gob.es/Sede/iva/regimenes-tributacion-iva/regimen-simplificado/quien-se-aplica-regimen-simplificado.html",
+  "utc": "2026-10-27T23:30:20.957194Z",
+  "status": 200,
+  "final_url": "https://sede.agenciatributaria.gob.es/Sede/iva/regimenes-tributacion-iva/regimen-simplificado/quien-se-aplica-regimen-simplificado.html",
+  "content_type": "text/html",
+  "bytes": 26493,
+  "sha256": "720a9213071f941bf11ccd7172772dff99a5dda0319d21e62b9a781adc9e1db8",
+  "same_as_writer_body": true
+}

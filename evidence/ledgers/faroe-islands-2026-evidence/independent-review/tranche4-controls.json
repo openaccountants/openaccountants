@@ -1,0 +1,212 @@
+[
+  {
+    "id": "health30k",
+    "actual": "385",
+    "expected": "385",
+    "pass": true
+  },
+  {
+    "id": "worker30k",
+    "actual": "1723",
+    "expected": "1723",
+    "pass": true
+  },
+  {
+    "id": "employer30k",
+    "actual": "1413",
+    "expected": "1413",
+    "pass": true
+  },
+  {
+    "id": "pension-preliminary",
+    "actual": "1440",
+    "expected": "1440",
+    "pass": true
+  },
+  {
+    "id": "pension-account",
+    "actual": "2160",
+    "expected": "2160",
+    "pass": true
+  },
+  {
+    "id": "monthly-supplement",
+    "actual": "450",
+    "expected": "450",
+    "pass": true
+  },
+  {
+    "id": "labour-selected",
+    "actual": "35463",
+    "expected": "35463",
+    "pass": true
+  },
+  {
+    "id": "ALSworkerannual",
+    "actual": "3900",
+    "expected": "3900",
+    "pass": true
+  },
+  {
+    "id": "ALSployerannual",
+    "actual": "4200",
+    "expected": "4200",
+    "pass": true
+  },
+  {
+    "id": "pensioncap",
+    "actual": "150000",
+    "expected": "150000",
+    "pass": true
+  },
+  {
+    "id": "pensionoutside-min",
+    "actual": "30000",
+    "expected": "30000",
+    "pass": true
+  },
+  {
+    "id": "pensioncap-tax",
+    "actual": "60000",
+    "expected": "60000",
+    "pass": true
+  },
+  {
+    "id": "pensioncap-account",
+    "actual": "90000",
+    "expected": "90000",
+    "pass": true
+  },
+  {
+    "id": "low-A",
+    "actual": "747/25",
+    "expected": "747/25",
+    "pass": true
+  },
+  {
+    "id": "boundary-A",
+    "actual": "30",
+    "expected": "30",
+    "pass": true
+  },
+  {
+    "id": "low-exclusion",
+    "actual": "True",
+    "expected": "True",
+    "pass": true
+  },
+  {
+    "id": "boundary-not-excluded",
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  },
+  {
+    "id": "partyear-B",
+    "actual": "9600",
+    "expected": "9600",
+    "pass": true
+  },
+  {
+    "id": "no-duty-B-reduction",
+    "actual": "2400",
+    "expected": "2400",
+    "pass": true
+  },
+  {
+    "id": "provedpayment",
+    "actual": "51800",
+    "expected": "51800",
+    "pass": true
+  },
+  {
+    "id": "provedpayment-floor",
+    "actual": "0",
+    "expected": "0",
+    "pass": true
+  },
+  {
+    "id": "mileage",
+    "actual": "22720",
+    "expected": "22720",
+    "pass": true
+  },
+  {
+    "id": "calendar-separator",
+    "actual": "5680",
+    "expected": "5680",
+    "pass": true
+  },
+  {
+    "id": "foreign-funding-target",
+    "actual": "3600",
+    "expected": "3600",
+    "pass": true
+  },
+  {
+    "id": "foreign-topup",
+    "actual": "900",
+    "expected": "900",
+    "pass": true
+  },
+  {
+    "id": "finaltax235k",
+    "actual": "3600",
+    "expected": "3600",
+    "pass": true
+  },
+  {
+    "id": "pensionrefund",
+    "actual": "1200",
+    "expected": "1200",
+    "pass": true
+  },
+  {
+    "id": "SpF200000",
+    "actual": "75000",
+    "expected": "75000",
+    "pass": true
+  },
+  {
+    "id": "SpF50000",
+    "actual": "70000",
+    "expected": "70000",
+    "pass": true
+  },
+  {
+    "id": "SpF100000",
+    "actual": "80000",
+    "expected": "80000",
+    "pass": true
+  },
+  {
+    "id": "SpF-counterreading",
+    "actual": "150000",
+    "expected": "150000",
+    "pass": true
+  },
+  {
+    "id": "PF",
+    "actual": "225000",
+    "expected": "225000",
+    "pass": true
+  },
+  {
+    "id": "noncash",
+    "actual": "300000",
+    "expected": "300000",
+    "pass": true
+  },
+  {
+    "id": "late-third-cap",
+    "actual": "3000",
+    "expected": "3000",
+    "pass": true
+  },
+  {
+    "id": "late-total-not-sum",
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  }
+]

@@ -1,0 +1,896 @@
+
+
+    210 Impuesto sobre la Renta de no Residentes. Rentas obtenidas sin mediación de establecimiento permanente - Hacienda - Diputación Foral de Gipuzkoa
+
+[[ID:liferayAUICSS]]
+
+[[ID:liferayPortalCSS]]
+
+[[ID:f0a657b6]]
+
+[[ID:liferayThemeCSS]]
+
+Ir al menú principal
+Ir al contenido principal
+
+[[ID:wrapper]]
+
+[[ID:banner]]
+
+[[ID:heading]]
+
+[[ID:izfe-navigation]]
+
+[[ID:izfe-search-dropdown-mobile]]
+
+[[ID:dropdown-search-mobile]]
+
+¿Qué es lo que estás buscando?                                    
+
+[[ID:izfe-buscador-crawler-mobile]]
+
+[[ID:izfe-buscador-crawler-search-form-mobile]]
+
+[[ID:izfe-buscador-crawler-value-mobile]]
+
+[[ID:izfe-buscador-crawler-submit-mobile]]
+
+[[ID:izfe-text-busqueda-clean-mobile]]
+
+[[ID:izfe-navigation-navbar]]
+
+[[ID:navigation]]
+
+[[ID:izfe-menu]]
+
+[[ID:layout_2]]
+
+ACTUALIDAD						
+
+[[ID:layout_3]]
+
+TEMAS						
+
+[[ID:layout_5]]
+
+DIPUTACIÓN						
+
+[[ID:layout_4]]
+
+SEDE ELECTRÓNICA					
+
+[[ID:izfe-search-dropdown]]
+
+[[ID:dropdown-search]]
+
+¿Qué es lo que estás buscando?							
+
+[[ID:izfe-buscador-crawler]]
+
+[[ID:izfe-buscador-crawler-search-form]]
+
+[[ID:izfe-buscador-crawler-value]]
+
+[[ID:izfe-buscador-crawler-submit]]
+
+[[ID:izfe-text-busqueda-clean]]
+
+[[ID:language-selector]]
+
+[[ID:languageLinkMenu]]
+
+        ES
+        
+[[ID:izfe-arrow-lang]]
+
+[[ID:LanguageMenu]]
+
+                        EU
+
+                    EN
+
+[[ID:nav-mobile]]
+
+			Hacienda
+
+                         Noticias
+
+                                                            Listado de impuestos
+
+                														Renta
+
+                														Patrimonio
+
+                														IVA
+
+                														Sociedades
+
+                														Transmisiones patrimoniales y AJD
+
+                														Sucesiones y donaciones
+
+                														Impuesto Especial Medios Transporte
+
+                														Actividades económicas
+
+                														Juego
+
+                														Alcohol y bebidas alcohólicas, hidrocarburos y tabaco.
+
+                														Impuestos medioambientales
+
+                														Tasa de incendios
+
+                														Primas de Seguro
+
+                														Bienes Inmuebles
+
+                														Ventas Minoristas Hidrocarburos
+
+                														No residentes
+
+                														Tributación Local Operadores Telecomunicaciones
+
+                														Retenciones
+
+                														Informativos anuales
+
+                														Bienes y derechos en el extranjero
+
+                														Electricidad y carbón
+
+                														Impuesto sobre determinados servicios digitales
+
+                														Transacciones financieras
+
+                                                           Modelos
+
+                                                            Censo y NIF
+
+                														Descripción y modelos a utilizar
+
+                														Solicitud del número de NIF
+
+                														Solicitud de duplicado de tarjeta NIF
+
+                														Consulta de NIF revocados y rehabilitados
+
+                														Datos Censales
+
+                														Asistente censal
+
+                                                            Calendario fiscal
+
+                														Búsqueda avanzada
+
+                														Póster
+
+                                                           Programas de ayuda
+
+                                                            Consultas y reclamaciones
+
+                														Consultas, quejas, sugerencias y denuncias
+
+                														Recursos y Reclamaciones (TEAF - Tribunal Económico Administrativo Foral)
+
+                														Asistencia on-line
+
+                                                           Repertorio de consultas tributarias y criterios interpretativos
+
+                                                            Más información
+
+                														Datos personales y de contacto (modelo 030)
+
+                														Homologación de Software de Digitalización Certificada
+
+                														Estancos autorizados de Gipuzkoa
+
+                                                           Aplazamientos y fraccionamientos
+
+                                                           Reforma fiscal, guías fiscales y criterios interpretativos
+
+                        Impuestos
+
+                                                           Normativa vigente
+
+                                                           Novedades
+
+                                                           Normativa cronológica
+
+                                                           Información pública
+
+                                                           En tramitación
+
+                        Normativa
+
+                         Trámites
+
+                         Campañas
+
+                                                            Censos de representación
+
+                														Censo de representación tributaria
+
+                														Censo de representación legal
+
+                														Censo de representación voluntario corporativo
+
+                                                           Identificación y firma
+
+                                                           Colectivos obligados tramitación electrónica
+
+                                                            Notificaciones electrónicas
+
+                														Días de cortesía
+
+                                                           Entidades financieras colaboradoras
+
+                                                           Certificados
+
+                                                            Deudas
+
+                														Aplazamientos y fraccionamientos
+
+                														Procedimientos concursales
+
+                														Mi pago Online
+
+                                                           Subastas
+
+                                                           Gipuzkoa Zinema
+
+                                                           Cotización autónomos
+
+                        A un clic
+
+                                                           Presentación Departamento
+
+                                                           Asistencia on-line
+
+                                                           Atención telefónica
+
+                                                           Oficinas del Departamento
+
+                                                           Cartas de Servicios del Departamento
+
+                                                           Derechos de los ciudadanos y ciudadanas
+
+                                                            Igualdad de mujeres y hombres
+
+                														Informes de impacto de género de las modificaciones normativas 2019
+
+                														Informes de impacto de género de las modificaciones normativas 2020
+
+                														Informes de impacto de género de las modificaciones normativas 2021
+
+                														Informes previos de impacto de genero 2022
+
+                														Informes previos de impacto de genero 2023
+
+                														Informes previos de impacto de genero 2024
+
+                                                            Prevención del fraude fiscal
+
+                														TicketBAI
+
+                														Unidad didáctica sobre fiscalidad
+
+                														Protocolo para la prevención del fraude fiscal
+
+                														Ideas innovadoras en fiscalidad
+
+                														Kontu irekiak
+
+                														Plan Conjunto de Lucha contra el Fraude Fiscal del País Vasco
+
+                														Plan de comprobación tributaria
+
+                														Jurisdicciones no cooperativas
+
+                                                            Publicaciones divulgativas
+
+                														Nuevas propuestas para la tributación de la riqueza en Europa
+
+                														Informe Anual de la Hacienda Foral de Gipuzkoa
+
+                														Diccionario de hacienda pública
+
+                														Manual tributario foral 2012 en euskera
+
+                														Otras publicaciones del Departamento
+
+                														Otras publicaciones
+
+                                                            Más información
+
+                														Ogasunarekin euskaraz
+
+                														Misión y objetivos
+
+                														Estructura orgánica
+
+                														Cargos públicos
+
+                														Normas de conducta de la Administración Foral
+
+                														Facturación y Punto General de entrada de Facturas electrónicas
+
+                														Portal de estadísticas
+
+                                                           Contacto
+
+                        Departamento
+
+                         Catastro
+
+                                                            Udalgida
+
+                														Noticias
+
+                														Información general
+
+                														Normativa
+
+                														Asesoramiento Municipal
+
+                														Herramientas de gestión
+
+                														Publicaciones divulgativas
+
+                														Facturación electrónica ayuntamientos
+
+                                                           TEAF
+
+                                                           Presupuestos
+
+                                                           Fondos europeos
+
+                        Más+
+
+					Contacto
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_headerContactoMobileContent2456431_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_headerContactoMobileContent2456431]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_headerContactoMobileContent2456431]]
+
+Información de contacto
+
+Cerrar
+
+ Asistencia informática online
+
+ Horario atención telefónica: más información 
+
+943 113 000
+
+ Oficinas del departamento
+
+ Horario 08:30-14:00: se recomienda solicitar cita previa
+
+ Consultas y sugerencias
+
+[[ID:language-selector-mobile]]
+
+[[ID:languageLinkMenuMobile]]
+
+					ES
+
+							EU
+
+						EN
+
+[[ID:izfe-subsite-nav]]
+
+                    Hacienda
+
+                                    Noticias
+
+                                         Impuestos
+
+                                                Impuestos
+
+                                                                    Listado de impuestos
+
+                                                                            Renta
+
+                                                                            Patrimonio
+
+                                                                            IVA
+
+                                                                            Sociedades
+
+                                                                            Transmisiones patrimoniales y AJD
+
+                                                                            Sucesiones y donaciones
+
+                                                                            Impuesto Especial Medios Transporte
+
+                                                                            Actividades económicas
+
+                                                                            Juego
+
+                                                                            Alcohol y bebidas alcohólicas, hidrocarburos y tabaco.
+
+                                                                            Impuestos medioambientales
+
+                                                                            Tasa de incendios
+
+                                                                            Primas de Seguro
+
+                                                                            Bienes Inmuebles
+
+                                                                            Ventas Minoristas Hidrocarburos
+
+                                                                            No residentes
+
+                                                                            Tributación Local Operadores Telecomunicaciones
+
+                                                                            Retenciones
+
+                                                                            Informativos anuales
+
+                                                                            Bienes y derechos en el extranjero
+
+                                                                            Electricidad y carbón
+
+                                                                            Impuesto sobre determinados servicios digitales
+
+                                                                            Transacciones financieras
+
+                                                            Modelos
+
+                                                                    Censo y NIF
+
+                                                                            Descripción y modelos a utilizar
+
+                                                                            Solicitud del número de NIF
+
+                                                                            Solicitud de duplicado de tarjeta NIF
+
+                                                                            Consulta de NIF revocados y rehabilitados
+
+                                                                            Datos Censales
+
+                                                                            Asistente censal
+
+                                                                    Calendario fiscal
+
+                                                                            Búsqueda avanzada
+
+                                                                            Póster
+
+                                                            Programas de ayuda
+
+                                                                    Consultas y reclamaciones
+
+                                                                            Consultas, quejas, sugerencias y denuncias
+
+                                                                            Recursos y Reclamaciones (TEAF - Tribunal Económico Administrativo Foral)
+
+                                                                            Asistencia on-line
+
+                                                            Repertorio de consultas tributarias y criterios interpretativos
+
+                                                                    Más información
+
+                                                                            Datos personales y de contacto (modelo 030)
+
+                                                                            Homologación de Software de Digitalización Certificada
+
+                                                                            Estancos autorizados de Gipuzkoa
+
+                                                            Aplazamientos y fraccionamientos
+
+                                                            Reforma fiscal, guías fiscales y criterios interpretativos
+
+                                         Normativa
+
+                                                Normativa
+
+                                                            Normativa vigente
+
+                                                            Novedades
+
+                                                            Normativa cronológica
+
+                                                            Información pública
+
+                                                            En tramitación
+
+                                    Trámites
+
+                                    Campañas
+
+                                         A un clic
+
+                                                A un clic
+
+                                                                    Censos de representación
+
+                                                                            Censo de representación tributaria
+
+                                                                            Censo de representación legal
+
+                                                                            Censo de representación voluntario corporativo
+
+                                                            Identificación y firma
+
+                                                            Colectivos obligados tramitación electrónica
+
+                                                                    Notificaciones electrónicas
+
+                                                                            Días de cortesía
+
+                                                            Entidades financieras colaboradoras
+
+                                                            Certificados
+
+                                                                    Deudas
+
+                                                                            Aplazamientos y fraccionamientos
+
+                                                                            Procedimientos concursales
+
+                                                                            Mi pago Online
+
+                                                            Subastas
+
+                                                            Gipuzkoa Zinema
+
+                                                            Cotización autónomos
+
+                                         Departamento
+
+                                                Departamento
+
+                                                            Presentación Departamento
+
+                                                            Asistencia on-line
+
+                                                            Atención telefónica
+
+                                                            Oficinas del Departamento
+
+                                                            Cartas de Servicios del Departamento
+
+                                                            Derechos de los ciudadanos y ciudadanas
+
+                                                                    Igualdad de mujeres y hombres
+
+                                                                            Informes de impacto de género de las modificaciones normativas 2019
+
+                                                                            Informes de impacto de género de las modificaciones normativas 2020
+
+                                                                            Informes de impacto de género de las modificaciones normativas 2021
+
+                                                                            Informes previos de impacto de genero 2022
+
+                                                                            Informes previos de impacto de genero 2023
+
+                                                                            Informes previos de impacto de genero 2024
+
+                                                                    Prevención del fraude fiscal
+
+                                                                            TicketBAI
+
+                                                                            Unidad didáctica sobre fiscalidad
+
+                                                                            Protocolo para la prevención del fraude fiscal
+
+                                                                            Ideas innovadoras en fiscalidad
+
+                                                                            Kontu irekiak
+
+                                                                            Plan Conjunto de Lucha contra el Fraude Fiscal del País Vasco
+
+                                                                            Plan de comprobación tributaria
+
+                                                                            Jurisdicciones no cooperativas
+
+                                                                    Publicaciones divulgativas
+
+                                                                            Nuevas propuestas para la tributación de la riqueza en Europa
+
+                                                                            Informe Anual de la Hacienda Foral de Gipuzkoa
+
+                                                                            Diccionario de hacienda pública
+
+                                                                            Manual tributario foral 2012 en euskera
+
+                                                                            Otras publicaciones del Departamento
+
+                                                                            Otras publicaciones
+
+                                                                    Más información
+
+                                                                            Ogasunarekin euskaraz
+
+                                                                            Misión y objetivos
+
+                                                                            Estructura orgánica
+
+                                                                            Cargos públicos
+
+                                                                            Normas de conducta de la Administración Foral
+
+                                                                            Facturación y Punto General de entrada de Facturas electrónicas
+
+                                                                            Portal de estadísticas
+
+                                                            Contacto
+
+                                    Catastro
+
+                                         Más+
+
+                                                Más+
+
+                                                                    Udalgida
+
+                                                                            Noticias
+
+                                                                            Información general
+
+                                                                            Normativa
+
+                                                                            Asesoramiento Municipal
+
+                                                                            Herramientas de gestión
+
+                                                                            Publicaciones divulgativas
+
+                                                                            Facturación electrónica ayuntamientos
+
+                                                            TEAF
+
+                                                            Presupuestos
+
+                                                            Fondos europeos
+
+[[ID:izfe-mainmenu-slider]]
+
+                                Anterior
+
+                                Siguiente
+
+                                Contacto
+                            
+[[ID:izfe-subsite-nav__contact-container]]
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_headerContactoContent2456431_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_headerContactoContent2456431]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_headerContactoContent2456431]]
+
+Información de contacto
+
+Cerrar
+
+ Asistencia informática online
+
+ Horario atención telefónica: más información 
+
+943 113 000
+
+ Oficinas del departamento
+
+ Horario 08:30-14:00: se recomienda solicitar cita previa
+
+ Consultas y sugerencias
+
+[[ID:izfe-subsite-nav__contact-overlay]]
+
+[[ID:billboard]]
+
+210 Impuesto sobre la Renta de no Residentes. Rentas obtenidas sin mediación de establecimiento permanente
+
+[[ID:p_p_id_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_headerbreadcrumb_]]
+
+[[ID:p_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_headerbreadcrumb]]
+
+[[ID:portlet_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_headerbreadcrumb]]
+
+[[ID:_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_headerbreadcrumb_breadcrumbs-defaultScreen]]
+
+                                        gipuzkoa
+
+                                        Hacienda
+
+                                        Impuestos
+
+                                        Modelos
+
+                                    210 Impuesto sobre la Renta de no Residentes. Rentas obtenidas sin mediación de establecimiento permanente
+
+[[ID:content]]
+
+[[ID:main-content]]
+
+[[ID:column-1]]
+
+[[ID:layout-column_column-1]]
+
+[[ID:p_p_id_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_3DN7UINRsFQB_]]
+
+[[ID:p_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_3DN7UINRsFQB]]
+
+[[ID:portlet_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_3DN7UINRsFQB]]
+
+[[ID:_com_liferay_site_navigation_breadcrumb_web_portlet_SiteNavigationBreadcrumbPortlet_INSTANCE_3DN7UINRsFQB_breadcrumbs-defaultScreen]]
+
+                                        gipuzkoa
+
+                                        Hacienda
+
+                                        Impuestos
+
+                                        Modelos
+
+                                    210 Impuesto sobre la Renta de no Residentes. Rentas obtenidas sin mediación de establecimiento permanente
+
+[[ID:column-2]]
+
+[[ID:layout-column_column-2]]
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_eN5FLGV9jKEt_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_eN5FLGV9jKEt]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_eN5FLGV9jKEt]]
+
+[[ID:progress]]
+
+ 
+
+[[ID:column-3]]
+
+[[ID:layout-column_column-3]]
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_AOoNQzWuz4Vz_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_AOoNQzWuz4Vz]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_AOoNQzWuz4Vz]]
+
+210 Impuesto sobre la Renta de no Residentes. Rentas obtenidas sin mediación de establecimiento permanente
+
+¿Quiénes deben presentarlo?
+
+Las personas contribuyentes que obtengan rentas sujetas al Impuesto sobre la Renta de no Residentes sin mediación de establecimiento permanente.
+
+No existirá obligación de presentar declaración sobre las rentas respecto de las que se haya practicado retención o efectuado el ingreso a cuenta del Impuesto, ni respecto a aquellas rentas sujetas pero exentas en virtud de normativa interna o Convenio de doble imposición que resulte aplicable.
+
+En particular, están obligados a presentar declaración del Impuesto:
+
+Los contribuyentes que obtengan rentas sujetas al Impuesto exceptuadas de la obligación de retener e ingresar a cuenta.
+
+Las personas físicas no residentes por la renta imputada de bienes inmuebles.
+
+Los contribuyentes que obtengan rendimientos satisfechos por personas que no tengan la condición de obligados a practicar retenciones o ingresos a cuenta.
+
+Los transmitentes de bienes inmuebles situados en territorio guipuzcoano
+
+Podrán también efectuar la declaración e ingreso, en su caso, de la deuda tributaria los responsables solidarios. Además, tratándose de declaraciones con solicitud de devolución, podrán también presentarlas los sujetos obligados a retener.
+
+¿Qué se declara?
+
+El modelo 210 se utilizará para declarar cualquier tipo de renta, rendimientos, rentas imputadas de bienes inmuebles, o ganancias patrimoniales.
+
+Se pueden declarar cada devengo de renta de forma separada o agrupar las rentas de un periodo determinado, siempre que correspondan al mismo contribuyente, al mismo tipo de renta, sean del mismo pagador, tengan el mismo tipo de gravamen, y si derivan de un bien o derecho, procedan del mismo bien o derecho.
+
+En caso de agrupación, el periodo será trimestral si se trata de autoliquidaciones con resultado a ingresar, o anual si se trata de autoliquidaciones de cuota cero o con resultado a devolver.
+
+Cuando se practique autoliquidación aplicando exenciones por razón de la residencia de la persona contribuyente o aplicando las disposiciones de un Convenio para evitar la doble imposición suscrito por España se adjuntará un certificado de residencia.
+
+Modalidades de presentación
+
+Internet: Mediante la plataforma web ZergaBidea. Esta modalidad es obligatoria para determinados colectivos.
+
+Papel: Mediante la entrega en Entidades financieras colaboradoras del modelo cumplimentado previamente en ZergaBidea. También se podrán presentar en el Servicio de Gestión de Impuestos Directos del Departamento de Hacienda y Finanzas o en las Oficinas de Atención Ciudadana en el caso de autoliquidaciones con cuota cero o a devolver.
+
+Plazo de presentación
+
+En función del tipo de renta declarada, será:
+
+Rentas derivadas de transmisiones de inmuebles: en el plazo de tres meses una vez transcurrido el plazo de un mes desde la fecha de la transmisión (fecha de devengo) del bien inmueble.
+
+Rentas imputadas de inmuebles urbanos: el plazo de presentación e ingreso será el año natural siguiente a la fecha de devengo (31 de diciembre de cada año).
+
+Resto de rentas:
+
+Autoliquidaciones con resultado a ingresar: la presentación se efectuará en los 25 primeros días naturales de los meses de abril, julio y octubre, por el primero, segundo y tercero trimestres del año, respectivamente. Por el cuarto trimestre del año, la presentación se efectuará del 1 al 31 de enero del año siguiente.
+
+		Como excepción, en el caso de las rentas derivadas del arrendamiento o subarrendamiento de inmuebles, devengadas desde el 1 de enero de 2025, si se opta por agrupar anualmente las rentas devengadas durante el año natural, la presentación se efectuará del 1 al 31 de enero del año siguiente.
+
+Autoliquidaciones de cuota cero: del 1 al 31 de enero del año siguiente al del devengo de las rentas declaradas.
+
+Autoliquidaciones con resultado a devolver: Podrán presentarse a partir del 1 de febrero del año siguiente al año natural objeto de declaración, y dentro del plazo de cuatro años.
+
+Impresos
+
+La impresión de este archivo PDF no es válida para la presentación de la declaración, se ofrece únicamente a título informativo. El modelo válido para presentar en papel se obtiene en ZergaBidea tras cumplimentarlo y una vez optado por dicha modalidad de presentación.
+
+Modelo 210 (PDF)
+
+Instrucciones (PDF)
+
+Claves de divisa (PDF)
+
+Tipos de renta (PDF)
+
+Tipos de gravamen (PDF)
+
+Relación de países (PDF)
+
+ANEXO II: Fondo de Pensiones UE. Declaración de residencia a efectos de la aplicación de las exenciones previstas en los artículos 14.1.b) y 14.1.m) de la NF del IRNR. (PDF)
+
+ANEXO III: Instituciones de Inversión Colectiva Alternativas. Declaración de residencia a efectos de la aplicación de la exención prevista en el artículo 14.1.b) de la NF del IRNR (PDF)
+
+ANEXO IV: Declaración a efectos de acreditar la condición de entidad en régimen de atribución de rentas y el porcentaje de participación de sus miembros con derecho a la exención prevista en el artículo 14.1.b) de la NF del IRNR. (PDF)
+
+Normativa
+
+Acceda a la normativa sobre el Impuesto sobre la Renta de No Residentes (IRNR).
+
+Otra información de interés
+
+Cuando no resulte cantidad a ingresar o a devolver también será necesario cumplimentar el documento de ingreso o devolución correspondiente.
+
+Norma Foral 16/2014, de 10 de diciembre, del Impuesto sobre la Renta de no Residentes
+
+Decreto Foral 11/2016, de 17 de mayo, por el que se aprueba el Reglamento del Impuesto sobre la Renta de no Residentes.
+
+Orden Foral 15/2025, de 13 de enero, por la que se aprueban el modelo 210 de declaración del impuesto sobre la renta de no residentes, se establecen las condiciones generales y el procedimiento para su presentación, y se desarrollan determinadas normas relativas a la tributación de no residentes. (PDF)
+
+Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas y de modificación parcial de las leyes de los Impuestos sobre Sociedades, sobre la Renta de no Residentes y sobre el Patrimonio.
+
+Decreto Foral 90/1996, de 10 de diciembre, por el que se crea en el Departamento de Hacienda y Finanzas un Registro de Trabajadores Fronterizos.
+
+[[ID:column-4]]
+
+[[ID:layout-column_column-4]]
+
+[[ID:hrefFm]]
+Oculto
+
+[[ID:footer]]
+
+[[ID:izfe-scroll-button-top-container]]
+
+[[ID:izfe-scroll-button-top]]
+
+[[ID:izfe-footer-logo]]
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerContactoContent2456431_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerContactoContent2456431]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerContactoContent2456431]]
+
+Gipuzkoa Plaza, 1
+
+20004 Donostia (Gipuzkoa)
+
++34 943 113 000
+
+Consultas, quejas y sugerencias 
+
+[[ID:p_p_id_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerRRSSContent2456431_]]
+
+[[ID:p_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerRRSSContent2456431]]
+
+[[ID:portlet_com_liferay_journal_content_web_portlet_JournalContentPortlet_INSTANCE_footerRRSSContent2456431]]
+
+Diputación Foral de Gipuzkoa
+
+Aviso Legal                            
+
+Política de privacidad                            
+
+Mapa web                            
+
+Accesibilidad                            
+

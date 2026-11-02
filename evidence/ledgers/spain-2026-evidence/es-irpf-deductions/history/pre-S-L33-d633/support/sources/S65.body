@@ -1,0 +1,517 @@
+
+
+
+<!DOCTYPE HTML>
+
+<html dir="ltr" lang="es-ES">
+
+<!-- =========================================== HEAD  ================================================== -->
+<head><meta http-equiv="X-UA-Compatible" content="IE=edge" />	
+
+<!-- Script cambio de languaje html -->
+<script type="text/javascript">
+	var url_parts = window.location.pathname.split("/");
+	var language = url_parts[3].substring(0,2);
+	document.querySelector("html").setAttribute("lang",language);
+</script>
+
+<!-- =========================================== METAS  ================================================= -->
+	<!-- Smartphones: width & zoom -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta charset="utf-8" /><meta name="GENERATOR" content="Microsoft SharePoint" /><meta http-equiv="Content-type" content="text/html; charset=utf-8" /><meta http-equiv="Expires" content="0" /><link rel="shortcut icon" href="/_layouts/15/images/favicon.ico?rev=43" type="image/vnd.microsoft.icon" id="favicon" />
+
+	
+<!-- =========================================== Title ================================================== -->	
+	<title>
+	
+	SEPG:Prórroga del Presupuesto para 2026
+
+</title>	
+
+<!-- =========================================== Scripts: SharePoint ==================================== -->
+	<link id="CssLink-39ff9a409dc44f43b15600c8b06dd15f" rel="stylesheet" type="text/css" href="/_layouts/15/3082/styles/Themable/corev15.css?rev=IGezWZk2ttZCfRQRH0kLww%3D%3DTAG0"/>
+<link id="CssLink-d0f13d4113da478493b7c143e02a6589" rel="stylesheet" type="text/css" href="/sitios/sepg/style%20library/madrid/sharepoint.css"/>
+<link id="CssRegistration1" rel="stylesheet" type="text/css" href="/sitios/sepg/style%20library/madrid/madrid.css"/>
+<style id="SPThemeHideForms" type="text/css">body {opacity:0 !important}</style><script type="text/javascript">// <![CDATA[ 
+
+var g_SPOffSwitches={};
+// ]]>
+</script>
+<script type="text/javascript" src="/_layouts/15/3082/initstrings.js?rev=aztW5FIBlQPQpDDa7MNFLg%3D%3DTAG0"></script>
+<script type="text/javascript" src="/_layouts/15/init.js?rev=DYE3cedRmoawSt01VBdEbg%3D%3DTAG0"></script>
+<script type="text/javascript" src="/_layouts/15/theming.js?rev=1ynWt6nLEOEdBs3AwvIoMw%3D%3DTAG0"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=NJmAwtEo3Ipnlaxl6CMhvlkh6RI_-8I-lCd9DFoTQ9FKuUH-29MIUKmL1Qza126RZm8OqYtOi4BHQFjlehUPzjBupCfWjfsfrxMcEPUdyQqBMelLwgzy2T8be0w9ihyHDjnPB4JjXItuKyt-ZckL37Tzj2cKpN4oW9Jn-ft3jqA1&amp;t=ffffffffa1bf0f7b"></script>
+<script type="text/javascript" src="/_layouts/15/blank.js?rev=E5awR%2Bfykt6gXvqtGE19XA%3D%3DTAG0"></script>
+<script type="text/javascript" src="/ScriptResource.axd?d=dwY9oWetJoJoVpgL6Zq8OPGLAA9QnwcmRjiFr60ZC2hFGqiQhU7Fz8klrr81ORtpe06KNXBzjm61s5P5YW985ute0ypj4w-B8XcvzSPKQ8nCk-YQp_NTzSQgXRTTBGuv0oEspsz6K3jG2nXURCSbnIJFb0RC8CSlJiRIT4oju841&amp;t=ffffffffa1bf0f7b"></script>
+<script type="text/javascript">RegisterSod("require.js", "\u002f_layouts\u002f15\u002frequire.js?rev=bv3fWJhk0uFGpVwBxnZKNQ\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("strings.js", "\u002f_layouts\u002f15\u002f3082\u002fstrings.js?rev=DcpwM5wBiF7ldvNJ4ehsWA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.res.resx", "\u002f_layouts\u002f15\u002f3082\u002fsp.res.js?rev=6Hdr\u00252B3O9Ije\u00252BmSa5s\u00252FbmUA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.runtime.js", "\u002f_layouts\u002f15\u002fsp.runtime.js?rev=gn1bgwGnSSrUbvO1caHCZQ\u00253D\u00253DTAG0");RegisterSodDep("sp.runtime.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.js", "\u002f_layouts\u002f15\u002fsp.js?rev=PMf7njZbc8Nm3GKFDpwANA\u00253D\u00253DTAG0");RegisterSodDep("sp.js", "sp.runtime.js");RegisterSodDep("sp.js", "sp.ui.dialog.js");RegisterSodDep("sp.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("sp.init.js", "\u002f_layouts\u002f15\u002fsp.init.js?rev=KQnMQPWHD\u00252BSGM95KBVXUJg\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.ui.dialog.js", "\u002f_layouts\u002f15\u002fsp.ui.dialog.js?rev=1z5KO1B3h6J\u00252B\u00252FkJjbDQCbg\u00253D\u00253DTAG0");RegisterSodDep("sp.ui.dialog.js", "sp.init.js");RegisterSodDep("sp.ui.dialog.js", "sp.res.resx");</script>
+<script type="text/javascript">RegisterSod("core.js", "\u002f_layouts\u002f15\u002fcore.js?rev=vtdjq\u00252FlvuyzKJJob1Dc1SQ\u00253D\u00253DTAG0");RegisterSodDep("core.js", "strings.js");</script>
+<script type="text/javascript">RegisterSod("menu.js", "\u002f_layouts\u002f15\u002fmenu.js?rev=2M5kK3FkZDlKYPrDGZ2yNQ\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("mQuery.js", "\u002f_layouts\u002f15\u002fmquery.js?rev=YiFSlddzACF6APr5AV8JLA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("callout.js", "\u002f_layouts\u002f15\u002fcallout.js?rev=dhdk00o\u00252BsgeT\u00252BsAiJby49w\u00253D\u00253DTAG0");RegisterSodDep("callout.js", "strings.js");RegisterSodDep("callout.js", "mQuery.js");RegisterSodDep("callout.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("sp.core.js", "\u002f_layouts\u002f15\u002fsp.core.js?rev=gUVctsjfaq\u00252F1h8zQ6UNkFw\u00253D\u00253DTAG0");RegisterSodDep("sp.core.js", "strings.js");RegisterSodDep("sp.core.js", "sp.init.js");RegisterSodDep("sp.core.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("clienttemplates.js", "\u002f_layouts\u002f15\u002fclienttemplates.js?rev=pY197cLBjyA9E5D15QUTVw\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sharing.js", "\u002f_layouts\u002f15\u002fsharing.js?rev=hJGnqDBFlr\u00252FbOXAgOAhAyw\u00253D\u00253DTAG0");RegisterSodDep("sharing.js", "strings.js");RegisterSodDep("sharing.js", "mQuery.js");RegisterSodDep("sharing.js", "clienttemplates.js");RegisterSodDep("sharing.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("suitelinks.js", "\u002f_layouts\u002f15\u002fsuitelinks.js?rev=mqZnNbQIqD4p1KH9a6sGog\u00253D\u00253DTAG0");RegisterSodDep("suitelinks.js", "strings.js");RegisterSodDep("suitelinks.js", "core.js");</script>
+<script type="text/javascript">RegisterSod("userprofile", "\u002f_layouts\u002f15\u002fsp.userprofiles.js?rev=J0M1pzLkfDXcJflabMvTYA\u00253D\u00253DTAG0");RegisterSodDep("userprofile", "sp.runtime.js");</script>
+<script type="text/javascript">RegisterSod("followingcommon.js", "\u002f_layouts\u002f15\u002ffollowingcommon.js?rev=oTJm5M3M5tEQNaPADF2qAw\u00253D\u00253DTAG0");RegisterSodDep("followingcommon.js", "strings.js");RegisterSodDep("followingcommon.js", "sp.js");RegisterSodDep("followingcommon.js", "userprofile");RegisterSodDep("followingcommon.js", "core.js");RegisterSodDep("followingcommon.js", "mQuery.js");</script>
+<script type="text/javascript">RegisterSod("profilebrowserscriptres.resx", "\u002f_layouts\u002f15\u002f3082\u002fprofilebrowserscriptres.js?rev=Q0jeR3lY56raUGvs8iu7RA\u00253D\u00253DTAG0");</script>
+<script type="text/javascript">RegisterSod("sp.ui.mysitecommon.js", "\u002f_layouts\u002f15\u002fsp.ui.mysitecommon.js?rev=pj3X\u00252BVborHNas1qYiOC1fw\u00253D\u00253DTAG0");RegisterSodDep("sp.ui.mysitecommon.js", "sp.init.js");RegisterSodDep("sp.ui.mysitecommon.js", "sp.runtime.js");RegisterSodDep("sp.ui.mysitecommon.js", "userprofile");RegisterSodDep("sp.ui.mysitecommon.js", "profilebrowserscriptres.resx");</script>
+<script type="text/javascript">RegisterSod("browserScript", "\u002f_layouts\u002f15\u002fnon_ie.js?rev=H1GnnHRdOMP52x4IRrWVuQ\u00253D\u00253DTAG0");RegisterSodDep("browserScript", "strings.js");</script>
+<script type="text/javascript">RegisterSod("inplview", "\u002f_layouts\u002f15\u002finplview.js?rev=ApSfwlQx8y\u00252BHO0akuk0N5Q\u00253D\u00253DTAG0");RegisterSodDep("inplview", "strings.js");RegisterSodDep("inplview", "core.js");RegisterSodDep("inplview", "clienttemplates.js");RegisterSodDep("inplview", "sp.js");</script>
+<link type="text/xml" rel="alternate" href="/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga/_vti_bin/spsdisco.aspx" />
+
+<!-- =========================================== PlaceHolder: PlaceHolderAdditionalPageHead ============= -->
+	
+		
+		<link rel="canonical" href="https://www.sepg.pap.hacienda.gob.es:443/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga/Paginas/PGE2025Prorroga.aspx" />
+		
+	
+	
+<!-- =========================================== CSS: SharePoint - corev15.css ========================== -->
+	
+	
+<!-- =========================================== Font-Awesome =========================================== -->	
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	
+<!-- =========================================== Estilos Ribbon 2019 =========================================== -->	
+    	
+
+
+<!-- =========================================== CSS: Personalizados - madrid.css ======================= -->
+	<span><style type="text/css">
+			body {
+				overflow:auto;	
+			}
+			#s4-workspace {
+				overflow:inherit;
+			}			
+		</style></span>
+
+<!-- =========================================== RSS ==================================================== -->
+<link rel="alternate" type="application/rss+xml" title="RSS pap.hacienda.gob.es" href="/sitios/sepg/_layouts/15/RSS2013/RenderizadorRSS.aspx" />
+	
+<!-- =========================================== CSS: Personalizados - Edición ========================== -->
+
+
+<!-- ============================= Inicio - PublishingWebControls:EditModePanel =========================== -->
+	
+	
+
+<!-- =========================================== Portal de la adm. presup. ============== -->
+<script type="text/javascript"  src="/_layouts/15/3082/internet_sharepoint.js"></script>
+
+
+<!-- =========================================== Scripts: Personalizados - UI =========================== -->
+	<script type="text/javascript"  src="/_layouts/15/3082/internet_madScripts.js"></script>
+	<script type="text/javascript"  src="/_layouts/15/3082/internet_DisclosureMenu.js"></script>
+	<script type="text/javascript"  src="/_layouts/15/3082/internet_madTreeview.js"></script>
+	<script type="text/javascript"  src="/_layouts/15/3082/madDialog.js"></script>
+	<script type="text/javascript"  src="/_layouts/15/3082/madCarousel.js"></script>
+	<script type="text/javascript"  src="/_layouts/15/3082/madCookies.js"></script>
+    <script type="text/javascript">      
+      document.addEventListener("DOMContentLoaded", function () {
+         let url = window.location.href;
+         if (url.includes("/Presupuestos/")) {
+            let nav2 = document.querySelector("#nav2");
+            if (nav2) {
+               //nav2.classList.add("nav3");
+            }
+         }
+      });
+   </script>
+
+<!-- ============================= Fin - PublishingWebControls:EditModePanel =========================== -->	
+</head>
+
+<!-- =========================================== BODY ================================================== -->
+<body>
+	<noscript><div class='noindex'>Puede estar intentando tener acceso a este sitio desde un explorador protegido en el servidor. Habilite los scripts y vuelva a cargar la página.</div></noscript>
+	
+   
+<!-- =========================================== SharePointForm ========================================= -->
+	<form method="post" action="./PGE2025Prorroga.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div class="aspNetHidden">
+<input type="hidden" name="_wpcmWpid" id="_wpcmWpid" value="" />
+<input type="hidden" name="wpcmVal" id="wpcmVal" value="" />
+<input type="hidden" name="MSOWebPartPage_PostbackSource" id="MSOWebPartPage_PostbackSource" value="" />
+<input type="hidden" name="MSOTlPn_SelectedWpId" id="MSOTlPn_SelectedWpId" value="" />
+<input type="hidden" name="MSOTlPn_View" id="MSOTlPn_View" value="0" />
+<input type="hidden" name="MSOTlPn_ShowSettings" id="MSOTlPn_ShowSettings" value="False" />
+<input type="hidden" name="MSOGallery_SelectedLibrary" id="MSOGallery_SelectedLibrary" value="" />
+<input type="hidden" name="MSOGallery_FilterString" id="MSOGallery_FilterString" value="" />
+<input type="hidden" name="MSOTlPn_Button" id="MSOTlPn_Button" value="none" />
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__REQUESTDIGEST" id="__REQUESTDIGEST" value="noDigest" />
+<input type="hidden" name="MSOSPWebPartManager_DisplayModeName" id="MSOSPWebPartManager_DisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_ExitingDesignMode" id="MSOSPWebPartManager_ExitingDesignMode" value="false" />
+<input type="hidden" name="MSOWebPartPage_Shared" id="MSOWebPartPage_Shared" value="" />
+<input type="hidden" name="MSOLayout_LayoutChanges" id="MSOLayout_LayoutChanges" value="" />
+<input type="hidden" name="MSOLayout_InDesignMode" id="MSOLayout_InDesignMode" value="" />
+<input type="hidden" name="_wpSelected" id="_wpSelected" value="" />
+<input type="hidden" name="_wzSelected" id="_wzSelected" value="" />
+<input type="hidden" name="MSOSPWebPartManager_OldDisplayModeName" id="MSOSPWebPartManager_OldDisplayModeName" value="Browse" />
+<input type="hidden" name="MSOSPWebPartManager_StartWebPartEditingName" id="MSOSPWebPartManager_StartWebPartEditingName" value="false" />
+<input type="hidden" name="MSOSPWebPartManager_EndWebPartEditing" id="MSOSPWebPartManager_EndWebPartEditing" value="false" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBnhS0FRkaCcq99Al-m3Eb7cwix54D6NfCI-wGtHihwM5J5dEV6Ty-E8Az8o9PHenA2&amp;t=639190941291376328" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+var MSOWebPartPageFormName = 'aspnetForm';
+var g_presenceEnabled = true;
+var g_wsaEnabled = false;
+
+var g_correlationId = '3b2049a2-673c-4042-1c46-327805a0082a';
+var g_wsaQoSEnabled = false;
+var g_wsaQoSDataPoints = [];
+var g_wsaRUMEnabled = false;
+var g_wsaLCID = 3082;
+var g_wsaListTemplateId = 850;
+var g_wsaSiteTemplateId = 'CMSPUBLISHING#0';
+var _spPageContextInfo={"webServerRelativeUrl":"/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga","webAbsoluteUrl":"https://www.sepg.pap.hacienda.gob.es/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga","viewId":"","listId":"{870e1207-920b-44c0-8a78-ea4c63748d6f}","listPermsMask":{"High":16,"Low":196673},"listUrl":"/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga/Paginas","listTitle":"Páginas","listBaseTemplate":850,"viewOnlyExperienceEnabled":false,"blockDownloadsExperienceEnabled":false,"idleSessionSignOutEnabled":false,"cdnPrefix":"","siteAbsoluteUrl":"https://www.sepg.pap.hacienda.gob.es/sitios/sepg","siteId":"{746f1529-ef36-48ce-a18c-99f6dc8152c3}","showNGSCDialogForSyncOnTS":false,"supportPoundStorePath":true,"supportPercentStorePath":true,"siteSubscriptionId":null,"CustomMarkupInCalculatedFieldDisabled":true,"AllowCustomMarkupInCalculatedField":false,"peoplePickerAutoSearchDelayMilliseconds":0,"peoplePickerRequireExplicitSearch":false,"isSPO":false,"farmLabel":null,"serverRequestPath":"/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga/Paginas/PGE2025Prorroga.aspx","layoutsUrl":"_layouts/15","webId":"{e8225851-82a3-404e-88d5-d64e46361da5}","webTitle":"Prórroga del Presupuesto para 2026","webTemplate":"39","webTemplateConfiguration":"CMSPUBLISHING#0","webDescription":"","tenantAppVersion":"0","isAppWeb":false,"webLogoUrl":"_layouts/15/images/siteicon.png","webLanguage":3082,"currentLanguage":3082,"currentUICultureName":"es-ES","currentCultureName":"es-ES","currentCultureLCID":3082,"spDocIntelligence":{"isEnabled":false,"isDocSummarizeEnabled":false,"isDocTranslateEnabled":false},"env":null,"nid":0,"fid":0,"serverTime":"2026-10-28T00:09:09.8960048Z","siteClientTag":"165$$16.0.20326.20190","crossDomainPhotosEnabled":false,"openInClient":false,"Has2019Era":true,"webUIVersion":15,"webPermMasks":{"High":16,"Low":196673},"pageListId":"{870e1207-920b-44c0-8a78-ea4c63748d6f}","pageItemId":2,"pagePermsMask":{"High":16,"Low":196673},"pagePersonalizationScope":1,"userEmail":"","userId":0,"userLoginName":null,"userDisplayName":null,"isAnonymousUser":true,"isAnonymousGuestUser":false,"isEmailAuthenticationGuestUser":false,"isExternalGuestUser":false,"sideBysideToken":"","systemUserKey":null,"alertsEnabled":true,"siteServerRelativeUrl":"/sitios/sepg","allowSilverlightPrompt":"True","themeCacheToken":"/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga::1:","themedCssFolderUrl":null,"themedImageFileNames":null,"modernThemingEnabled":true,"isSiteAdmin":false,"ExpFeatures":[480216468,1884350801,1158731092,62197791,538521105,335811073,4194306,34614301,268500996,-1946025984,28445328,-2147475455,134291456,65544,288,950272,1282,808326148,134217873,0,0,-1073217536,545285252,18350656,-467402752,6291457,-2147483644,1074794496,-1728053184,1845537108,622628,4102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"IsHybridEnabled":false,"SPOnPremFlights":[1737243,1635110,1608625,1615140,1574820,1551268,1554278,1536594,1451530,1437361,1293572,1281075,1266854,1262861,1263396,1261158,1245315,1242554,1241972,1232868,1227765,1225014,1220075,1218539,1175952,1174945,1165662,1159162,1149960,1149522,1113916,1111397,1101858,1099085,1086764,1080816,1079075,1075954,1073830,1073759,95255,1062921,1055593,1052809,1043614,1041859,1040063,1039112,1036486,1035189,1033993,1030381,1030382,1030364,1030362,1029854,1029586,1029565,1029556,1029555,1028671,1025113,1021288,1021275,1021274,1021272,1020637,1020043,1018275,1018016,1012433,1011886,1010592,1009740,1009585,1008744,1007603,1004459,1003886,1002806,1001164,116041,114176,114166,112973,108499,108186,107054,100994,100425,99885,99722,96075,94920],"InternalValidAuthorities":["pro-portal.central.sepg.minhac.age","portalinternet.central.sepg.minhac.age","portalextranet.central.sepg.minhac.age"],"CorrelationId":"3b2049a2-673c-4042-1c46-327805a0082a","hasManageWebPermissions":false,"isNoScriptEnabled":false,"groupId":null,"groupHasHomepage":true,"groupHasQuickLaunchConversationsLink":false,"departmentId":null,"hubSiteId":null,"hasPendingWebTemplateExtension":false,"isHubSite":false,"isWebWelcomePage":true,"siteClassification":"","hideSyncButtonOnODB":false,"showNGSCDialogForSyncOnODB":false,"sitePagesEnabled":false,"sitePagesFeatureVersion":0,"suiteNavInfo":{"suiteBarBackground":null,"suiteBarText":null,"suiteNavAccentColor":null,"suiteNavAllowCustom":false,"suiteNavAllowOverwrite":false,"suiteNavBrandingLogoNavigationUrl":null,"suiteNavBrandingLogoTitle":null,"suiteNavBrandingLogoUrl":null,"suiteNavBrandingText":null},"DesignPackageId":"00000000-0000-0000-0000-000000000000","groupType":null,"groupColor":"#8151fd","siteColor":"#8151fd","headerEmphasis":0,"navigationInfo":null,"guestsEnabled":false,"MenuData":{"SignInUrl":"/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga/_layouts/15/Authenticate.aspx?Source=%2Fsitios%2Fsepg%2Fes%2DES%2FPresupuestos%2FPGE%2FPGE2025Prorroga%2FPaginas%2FPGE2025Prorroga%2Easpx"},"RecycleBinItemCount":-1,"PublishingFeatureOn":true,"PreviewFeaturesEnabled":false,"disableAppViews":false,"disableFlows":false,"serverRedirectedUrl":null,"formDigestValue":"0xB0DFA5B5DC02CC5DE41654D95A1193045AB215CEAE6226E795E208C8925FEE0407A4BE1184BF2C3C55D74A0DE422A13FF49AFE58053A5BB2C5492EB3148503CF,28 Oct 2026 00:09:09 -0000","maximumFileSize":4000,"formDigestTimeoutSeconds":900,"canUserCreateMicrosoftForm":false,"canUserCreateVisioDrawing":true,"readOnlyState":null,"isTenantDevSite":false,"preferUserTimeZone":false,"userTimeZoneData":null,"userTime24":false,"userFirstDayOfWeek":null,"webTimeZoneData":null,"webTime24":false,"webFirstDayOfWeek":null,"isSelfServiceSiteCreationEnabled":null,"alternateWebAppHost":"","aadTenantId":"","aadUserId":"","aadInstanceUrl":"","msGraphEndpointUrl":"https://","allowInfectedDownload":true};_spPageContextInfo.updateFormDigestPageLoaded=new Date();_spPageContextInfo.clientServerTimeDelta=new Date(_spPageContextInfo.serverTime)-new Date();if(typeof(define)=='function'){define('SPPageContextInfo',[],function(){return _spPageContextInfo;});}document.onreadystatechange=fnRemoveAllStatus; function fnRemoveAllStatus(){removeAllStatus(true)}; 
+            function buscarTexto(txt)
+            {
+                if (event.keyCode === 13)
+                {
+                    txt.nextElementSibling.click();
+                }
+            };Flighting.ExpFeatures = [480216468,1884350801,1158731092,62197791,538521105,335811073,4194306,34614301,268500996,-1946025984,28445328,-2147475455,134291456,65544,288,950272,1282,808326148,134217873,0,0,-1073217536,545285252,18350656,-467402752,6291457,-2147483644,1074794496,-1728053184,1845537108,622628,4102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]; (function()
+{
+    if(typeof(window.SP) == "undefined") window.SP = {};
+    if(typeof(window.SP.YammerSwitch) == "undefined") window.SP.YammerSwitch = {};
+
+    var ysObj = window.SP.YammerSwitch;
+    ysObj.IsEnabled = false;
+    ysObj.TargetYammerHostName = "www.yammer.com";
+} )(); //]]>
+</script>
+
+<script src="/_layouts/15/blank.js?rev=E5awR%2Bfykt6gXvqtGE19XA%3D%3DTAG0" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+window.__SP_THEMING_EVAL_FIX_DISABLED=false;window.SPThemeUtils && SPThemeUtils.RegisterCssReferences([{"Url":"\u002f_layouts\u002f15\u002f3082\u002fstyles\u002fThemable\u002fcorev15.css?rev=IGezWZk2ttZCfRQRH0kLww\u00253D\u00253DTAG0","OriginalUrl":"\u002f_layouts\u002f15\u002f3082\u002fstyles\u002fThemable\u002fcorev15.css?rev=IGezWZk2ttZCfRQRH0kLww\u00253D\u00253DTAG0","Id":"CssLink-39ff9a409dc44f43b15600c8b06dd15f","ConditionalExpression":"","After":"","RevealToNonIE":"false"},{"Url":"\u002fsitios\u002fsepg\u002fstyle library\u002fmadrid\u002fsharepoint.css","OriginalUrl":"\u002fsitios\u002fsepg\u002fstyle library\u002fmadrid\u002fsharepoint.css","Id":"CssLink-d0f13d4113da478493b7c143e02a6589","ConditionalExpression":"","After":"System.String[]","RevealToNonIE":"false"},{"Url":"\u002fsitios\u002fsepg\u002fstyle library\u002fmadrid\u002fmadrid.css","OriginalUrl":"\u002fsitios\u002fsepg\u002fstyle library\u002fmadrid\u002fmadrid.css","Id":"CssRegistration1","ConditionalExpression":"","After":"System.String[]","RevealToNonIE":"false"}]);
+(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() {
+            SP.SOD.executeFunc('core.js', 'FollowingCallout', function() { FollowingCallout(); });
+        });
+    })();(function(){
+
+        if (typeof(_spBodyOnLoadFunctions) === 'undefined' || _spBodyOnLoadFunctions === null) {
+            return;
+        }
+        _spBodyOnLoadFunctions.push(function() {
+            SP.SOD.executeFunc('core.js', 'FollowingDocument', function() { FollowingDocument(); });
+        });
+    })();
+		(function () {
+            var path = window.location.pathname.toLowerCase();
+
+            if (path.indexOf('/forms/') === -1) {
+                return;
+            }
+
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.src = _spPageContextInfo.siteAbsoluteUrl + '/_layouts/15/3082/customActions.js';
+            document.getElementsByTagName('head')[0].appendChild(s);
+        })();
+        var head = document.querySelector('head');
+        var styleTag = document.createElement('style'); 
+        styleTag.innerText = '#ID_GetLink {display:none;}'
+        head.appendChild(styleTag);
+        if (typeof(DeferWebFormInitCallback) == 'function') DeferWebFormInitCallback();function WebForm_OnSubmit() {
+UpdateFormDigest('\u002fsitios\u002fsepg\u002fes-ES\u002fPresupuestos\u002fPGE\u002fPGE2025Prorroga', 720000);if (typeof(_spFormOnSubmitWrapper) != 'undefined') {return _spFormOnSubmitWrapper();} else {return true;};
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="5B892B15" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="up+mqPpw/1QxvcDdtLyP9pWrGdK61VJiesg4dmRX7Wr87/VX5337BzW+RdRllMYFtTYpWm9MHVmfb0y8JuZw9saDuymX249N7J7JEa2UNzXVkASNa2NPpJ+IbjwPPr/NEUr+dVO93kl0rabuvd74NAd9qtC7f/qvb83gj5/n8fo=" />
+</div>
+	
+		<script type="text/javascript"> var submitHook = function () { return false; }; theForm._spOldSubmit = theForm.submit; theForm.submit = function () { if (!submitHook()) { this._spOldSubmit(); } }; </script>
+		<span id="DeltaSPWebPartManager">
+			
+		</span>
+		<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+		<span id="DeltaDelegateControls">
+			
+			
+		</span>		
+
+
+
+
+<!-- ================================================= S4 ================================================ -->	
+<div id="s4-workspace" class="ms-core-overlay">								
+	<div id="s4-bodyContainer">
+
+
+<!-- =========================================== HEADER ================================================== -->
+<header>
+<a accesskey="S" href="#madMain" title="Ir directamente al contenido (Atajo de teclado:S)." class="skip-to-content-link">Ir al contenido</a>
+<div>
+	<div>
+		<a target="_blank" href="https://www.hacienda.gob.es/es-ES/Paginas/Home.aspx" ><img src="/sitios/sepg/style library/madrid/MinHap.svg" alt="Gobierno de España. Ministerio de Hacienda Y Función Pública. Abre nueva ventana"/></a>
+		<a href="/sitios/sepg/es-ES/Paginas/Inicio.aspx"><img src="/sitios/sepg/style library/madrid/sepg.svg" alt="Secretaría de Estado de Presupuestos y Gastos" /></a>
+	</div>
+	</div>
+
+	
+	<div>
+		 <div id="madPAP">Administración Presupuestaria</div>
+		 <div class="madBoxes">
+	         <div id="madMultiidioma">
+		            <select id='idioma' name='idioma' class='select' aria-label='Cambiar idioma'><optgroup label='idiomas'><option value='http://www.sepg.pap.hacienda.gob.es/sitios/sepg/es-ES/presupuestos/pge/pge2025prorroga/paginas/pge2025prorroga.aspx' lang='es'  selected='selected' >Bienvenido</option><option value='http://www.sepg.pap.hacienda.gob.es/sitios/sepg/ca-ES/presupuestos/pge/pge2025prorroga/paginas/pge2025prorroga.aspx' lang='ca'  >Benvingut</option><option value='http://www.sepg.pap.hacienda.gob.es/sitios/sepg/eu-ES/presupuestos/pge/pge2025prorroga/paginas/pge2025prorroga.aspx' lang='eu'  >Ongi etorri</option><option value='http://www.sepg.pap.hacienda.gob.es/sitios/sepg/gl-ES/presupuestos/pge/pge2025prorroga/paginas/pge2025prorroga.aspx' lang='gl'  >Benvido</option><option value='http://www.sepg.pap.hacienda.gob.es/sitios/sepg/en-GB/presupuestos/pge/pge2025prorroga/paginas/pge2025prorroga.aspx' lang='en'  >Welcome</option></optgroup></select><input type="image" name="ctl00$ctl63$madButtonIdiomas" id="ctl00_ctl63_madButtonIdiomas" aria-label="Cambiar idioma" src="https://www.sepg.pap.hacienda.gob.es/sitios/sepg/style%20library/madrid/select.svg" alt="Seleccionar Idioma" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl63$madButtonIdiomas&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" />
+
+		     </div>							
+			<div id="searchInputBox">								
+				<input name="ctl00$SmallSearchInputBox2$txtcajaBusqueda" type="text" id="txtcajaBusqueda" class="ms-sbplain" maxlength="200" ToolTip="Búsqueda..." onkeydown="buscarTexto(this);" onmousedown="buscarTexto(this);" aria-label="Buscar..." placeholder="Buscar..." />
+<input type="image" name="ctl00$SmallSearchInputBox2$imgBuscar" id="ctl00_SmallSearchInputBox2_imgBuscar" title="Buscar..." class="srch-gosearchimg" src="/_layouts/15/images/ImagenesPortal/MadLupa.svg" alt="Buscar..." onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SmallSearchInputBox2$imgBuscar&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" />
+
+			</div>
+		</div>
+		
+	</div>
+</header>								
+
+<!-- =========================================== MENÚ HORIZONTAL ======================================= -->	
+
+<nav id="nav1"  aria-label="Menu horizontal principal">	
+	  <ul>		  
+		<li>
+			<a href="https://www.pap.hacienda.gob.es/sitios/pap/es-ES/Paginas/Inicio.aspx">Principal</a></li>        
+		  <li>
+			<a href="/sitios/sepg/es-ES/Paginas/Inicio.aspx">Inicio</a></li>
+		  <li>
+			<a href="/sitios/sepg/es-ES/Paginas/Mapa.aspx">Mapa</a></li>
+		  <li>
+			<a href="/sitios/sepg/es-ES/Paginas/Contactos.aspx">Contactos</a></li>
+		  <li>
+			<a href="/sitios/sepg/es-ES/Utilidades/Paginas/Utilidades.aspx">Utilidades</a></li>		
+		  <li>
+			<a href="/sitios/sepg/es-ES/Enlaces/Paginas/Enlaces-SGPG.aspx">Enlaces</a></li>					  
+		  <li id="madImpresion"></li>					
+		</ul>				
+	
+		<ul id="madUsers">	
+		  <li>
+			<a href="https://webpub2.igae.hacienda.gob.es/">Identificarse</a></li>
+		  <li>
+			<a href="https://www.oficinavirtual.pap.hacienda.gob.es/sitios/oficinavirtual/es-ES/SistemasInformacion/SolicitudAccesoSistemas/Paginas/ControlAcceso.aspx">Registrarse</a></li>			
+		</ul>
+</nav>
+
+
+<nav id="nav2" class="madMenu s4-notdlg madJSDisabled" role="navigation" aria-label="Menú de navegación">	  	   	    
+
+		<!-- Menu -->
+		
+<ul class="sm sm-blue" id="main-menu-rwd" ><li class="miPrimero miAncestro"><a href="/sitios/sepg/es-ES/Presupuestos/PGE/Paginas/PresupuestosGE.aspx">Presupuestos Generales del Estado</a><ul><li class="miSeleccionado miPrimero"><a href="/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga/Paginas/PGE2025Prorroga.aspx">Pr&#243;rroga del Presupuesto para 2026</a></li><li class="miUltimo"><a href="/sitios/sepg/es-ES/Presupuestos/PGE/PresupuestosEjerciciosAnteriores/Paginas/presupuestosejerciciosanteriores.aspx">Presupuestos ejercicios anteriores</a></li></ul></li><li><a href="/sitios/sepg/es-ES/Presupuestos/InformeEconomicoFinanciero/Paginas/InformeEconomicoFinanciero.aspx">Informe Econ&#243;mico Financiero</a></li><li><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/Paginas/INFORMES.aspx">Informes de car&#225;cter transversal</a><ul><li class="miPrimero"><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IAPGE2023/Paginas/Informes2023.aspx">Informe de Impacto de G&#233;nero PL PGE 2023</a><ul><li class="miPrimero"><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IAPGE2023/Paginas/Informes2023.aspx">Informe de Impacto de G&#233;nero</a></li><li><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IAPGE2023/PResultados/Paginas/Inicio.aspx">Principales resultados</a></li><li class="miUltimo"><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IAPGE2023/SaberMas/Paginas/SaberMas.aspx">Para saber m&#225;s</a></li></ul></li><li><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IA2023/Paginas/IAPGE2023.aspx">Informe de Alineamiento ODS 2023</a><ul><li class="miPrimero"><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IA2023/Paginas/IAPGE2023.aspx">Informes Alineamiento</a></li><li><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IA2023/Paginas/Alineamiento2023.aspx">Principales resultados</a></li><li class="miUltimo"><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IA2023/Paginas/SM2023.aspx">Saber m&#225;s</a></li></ul></li><li><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IAPGETE2023/Paginas/IATE2023.aspx">Informe de Alineamiento de los PGE con la transici&#243;n ecol&#243;gica 2023</a><ul><li class="miPrimero"><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IAPGETE2023/Paginas/IATE2023.aspx">El informe</a></li><li class="miUltimo"><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IAPGETE2023/Paginas/MedioAmbiente2023.aspx">Principales resultados</a></li></ul></li><li class="miUltimo"><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IIIAF2023/Paginas/Inicio.aspx">Informe de impacto infancia, adolescencia y familia 2023</a><ul><li class="miPrimero"><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IIIAF2023/Paginas/Inicio.aspx">Inicio</a></li><li class="miUltimo"><a href="/sitios/sepg/es-ES/Presupuestos/InformesImpacto/IIIAF2023/Paginas/PRIIIAF2023.aspx">Principales resultados </a></li></ul></li></ul></li><li><a href="/sitios/sepg/es-ES/Presupuestos/OtrosPresupuestos/Paginas/otrospresupuestos.aspx">Otros presupuestos</a><ul><li class="miPrimero"><a href="/sitios/sepg/es-ES/Presupuestos/OtrosPresupuestos/PresupuestoUE/Paginas/ElPresupuestoUE.aspx">Presupuesto Uni&#243;n Europea</a></li><li><a href="/sitios/sepg/es-ES/Presupuestos/OtrosPresupuestos/PresupuestosCCAA/Paginas/PresupuestosCCAA.aspx">Presupuestos Comunidades Aut&#243;nomas</a></li><li class="miUltimo"><a href="/sitios/sepg/es-ES/Presupuestos/OtrosPresupuestos/PresupuestosEntidadesLocales/Paginas/PresupuestosEntidadesLocales.aspx">Presupuestos Entidades Locales</a></li></ul></li><li><a href="/sitios/sepg/es-ES/Presupuestos/NormativaPresupuestaria/Paginas/NormativaPresupuestaria.aspx">Normativa Presupuestaria</a><ul><li class="miPrimero"><a href="/sitios/sepg/es-ES/Presupuestos/NormativaPresupuestaria/Paginas/Principalesnormaspresupuestarias.aspx">Principales normas presupuestarias</a></li><li><a href="/sitios/sepg/es-ES/Presupuestos/NormativaPresupuestaria/Paginas/Normativadeelaboracion.aspx">Normativa de elaboraci&#243;n de los Presupuestos Generales del Estado</a></li><li class="miUltimo"><a href="/sitios/sepg/es-ES/Presupuestos/NormativaPresupuestaria/Paginas/Otra normativa.aspx">Otra normativa presupuestaria</a></li></ul></li><li><a href="/sitios/sepg/es-ES/Presupuestos/IRG/Paginas/InformesRecomendciones.aspx">Informe de Seguimiento de Spending Reviews</a></li><li class="miUltimo"><a href="/sitios/sepg/es-ES/Presupuestos/DocumentacionEstadisticas/Paginas/DocumentacionEstadisticas.aspx">Documentaci&#243;n y Estad&#237;sticas</a><ul><li class="miPrimero"><a href="/sitios/sepg/es-ES/Presupuestos/DocumentacionEstadisticas/Documentacion/Paginas/Documentacion.aspx">Documentaci&#243;n</a></li><li class="miUltimo"><a href="/sitios/sepg/es-ES/Presupuestos/DocumentacionEstadisticas/Estadisticas/Paginas/Estadisticas.aspx">Estad&#237;sticas</a></li></ul></li></ul>
+	 								 
+</nav>
+
+								
+<!-- =========================================== CONTENIDO =========================================== -->	
+<div id="madCenter" class="clearfix">
+	<main id="madMain">
+			<div id="notificationArea" class="ms-notif-box"></div>
+	<div id="DeltaPageStatusBar">
+	
+		<div id="pageStatusBar"></div>
+	
+</div>		
+	<div id="DeltaPlaceHolderMain">
+	
+		<a id="mainContent" name="mainContent" tabindex="-1"></a>
+		
+<div id="madPAP_Contenido_Secundaria">
+	<!-- BreadCrumb -->
+	<div id="madBC">
+		<ul id="madBreadcrumb"><li id="madBCFirst" ><a href="/sitios/sepg/es-ES">Inicio</a></li><li><a href="/sitios/sepg/es-ES/Presupuestos"> &gt; Presupuestos</a></li><li><a href="/sitios/sepg/es-ES/Presupuestos/PGE"> &gt; Presupuestos Generales del Estado</a></li><li class="madBCLast"> &gt; Prórroga del Presupuesto para 2026</li></ul>
+	</div>
+	<!-- Title -->
+	<div id="madTitle">
+		<h1>Prórroga del Presupuesto para 2026</h1>
+	</div>
+
+	<!-- madFirstP -->
+	<div id="madFirstP">
+		<!-- Imagen -->	
+	    <div id="madImagen">
+			<div id="ctl00_PlaceHolderMain_PageImage__ControlWrapper_RichImageField" class="ms-rtestate-field"><div class="ms-rtestate-field"><img alt="" src="/sitios/sepg/es-ES/Presupuestos/PGE/PresupuestosEjerciciosAnteriores/PublishingImages/PresupuestosGeneralesdelEstado.gif" /></div></div>
+		</div>	
+		<!-- Contenido -->	
+	    <div id="madContenidoSecundaria">
+			<div id="ctl00_PlaceHolderMain_PageP__ControlWrapper_RichHtmlField" class="ms-rtestate-field" aria-labelledby="ctl00_PlaceHolderMain_PageP_label"><p>De acuerdo con lo establecido en el artículo 134.4 de la Constitución Española, “Si la Ley de Presupuestos no se aprobara antes del primer día del ejercicio económico correspondiente, se considerarán automáticamente prorrogados los Presupuestos del ejercicio anterior hasta la aprobación de los nuevos”.</p><p>En esta página se recogen los datos económicos que se refieren a los presupuestos del Sector Público Administrativo con presupuesto limitativo.</p><p>El resto de la documentación se puede consultar en los Presupuestos Generales del Estado del año 2023.</p>
+</div>
+		</div>
+	</div>
+	
+	<!-- Contenido -->
+	<div class="madContenidoSecundaria">
+		<div id="ctl00_PlaceHolderMain_PageContent__ControlWrapper_RichHtmlField" class="ms-rtestate-field" aria-labelledby="ctl00_PlaceHolderMain_PageContent_label"><p><a href="https&#58;//www.sepg.pap.hacienda.gob.es/Presup/PGE2025Prorroga/MaestroDocumentos/PGE-ROM/Cuerpo.htm" target="_blank" title="Abre en una nueva pestaña">Presupuesto prorrogado&#160;para 2026</a></p><p><a href="https&#58;//www.sepg.pap.hacienda.gob.es/Presup/PGE2025Prorroga/MaestroTomos/PGE-ROM/Cuerpo.htm" target="_blank" title="Abre en una nueva pestaña">Presupuesto prorrogado para 2026, en formato &quot;tomos&quot;</a></p><p>&#160;</p><p><a href="https&#58;//www.sepg.pap.hacienda.gob.es/Presup/PGE2025Prorroga/MaestroDocumentos.zip" target="_blank" title="Abre en una nueva pestaña">Versión comprimida (.zip) del Presupuesto prorrogado&#160;para 2026 (190&#160;MB, de 02/01/2026)</a></p><p><a href="https&#58;//www.sepg.pap.hacienda.gob.es/Presup/PGE2025Prorroga/MaestroTomos.zip" target="_blank" title="Abre en una nueva pestaña">Versión comprimida (.zip) del Presupuesto prorrogado para 2026, en formato &quot;tomos&quot; (37&#160;MB, de 02/01/2026)</a></p><p>&#160;</p><p><a href="/sitios/sepg/es-ES/Presupuestos/PGE/PGE2025Prorroga/Documents/DocumentoVerificacion.pdf" target="_blank" title="Abre en una nueva pestaña">Tratamiento de la información y verificación de la integridad de la documentación publicada y la distribuida en otros soportes digitales (pdf)</a></p></div>	
+	</div>
+</div>
+<div style='display:none' id='hidZone'><menu class="ms-hide">
+		<ie:menuitem id="MSOMenu_Help" iconsrc="/_layouts/15/images/HelpIcon.gif" onmenuclick="MSOWebPartPage_SetNewWindowLocation(MenuWebPart.getAttribute(&#39;helpLink&#39;), MenuWebPart.getAttribute(&#39;helpMode&#39;))" text="Ayuda" type="option" style="display:none">
+
+		</ie:menuitem>
+	</menu></div>
+	
+</div>	
+	</main>		
+</div>
+
+<!-- =========================================== FOOTER ================================================= -->
+<footer class="s4-notdlg" id="madPie">	  
+	  <div id="madfechaActualizacion">
+	  	<span id="PiePagina1_Label1" class="footer">Última actualización de esta página: <strong>2/1/2026</strong></span>
+
+  	  </div>
+	  <div id="madMenuPie">
+	      <ul>
+	        <li>
+			<a href="/sitios/sepg/es-ES/Paginas/presentacion.aspx">Presentación</a></li>		
+	        <li>
+			<a href="https://www.oficinavirtual.pap.hacienda.gob.es/sitios/oficinavirtual/es-ES/Paginas/guiatecnica.aspx">Guía técnica</a></li>
+			<li>
+			<a href="/sitios/sepg/es-ES/Ayuda/Paginas/Ayuda.aspx">Guía de navegación</a></li>
+	        <li>
+			<a href="/sitios/sepg/es-ES/Ayuda/Paginas/Accesibilidad.aspx">Accesibilidad</a></li>
+			<li>
+			<a href="/sitios/sepg/es-ES/Ayuda/Paginas/AvisoLegal.aspx">Aviso legal</a></li>
+			<li>
+			<a href="https://www.hacienda.gob.es/es-ES/El%20Ministerio/Paginas/DPD/dpd.aspx">Protección de datos</a></li>
+		  </ul>
+	  </div>	  
+</footer>		
+
+<!-- =========================================== PlaceHolders ========================================== -->	
+						<div id="DeltaFormDigest">
+	
+							
+								<script type="text/javascript">//<![CDATA[
+        var formDigestElement = document.getElementsByName('__REQUESTDIGEST')[0];
+        if (!((formDigestElement == null) || (formDigestElement.tagName.toLowerCase() != 'input') || (formDigestElement.type.toLowerCase() != 'hidden') ||
+            (formDigestElement.value == null) || (formDigestElement.value.length <= 0)))
+        {
+            formDigestElement.value = '0x034E6321768E0A9D9BBAE6C3DE39DEC00E15C7E26735A1634F9954B0CF17A96D06405D8DABF82CA0A377D26868EBDF83E3CF48A1A385764F10F6C137934C9513,28 Oct 2026 00:09:10 -0000';_spPageContextInfo.updateFormDigestPageLoaded = new Date();
+        }
+        //]]>
+        </script>
+							
+						
+</div>
+						
+						
+						
+						
+						
+						
+						
+						
+                        
+						
+						
+						
+						
+						
+						
+						
+									
+
+
+<!-- ================================================= S4 ================================================ -->	
+	</div>								
+</div>
+
+						
+	
+
+<script type="text/javascript">
+//<![CDATA[
+var _spFormDigestRefreshInterval = 720000;window.SPThemeUtils && SPThemeUtils.ApplyCurrentTheme(true); IsSPSocialSwitchEnabled = function() { return true; };var _fV4UI = true;
+function _RegisterWebPartPageCUI()
+{
+    var initInfo = {editable: false,isEditMode: false,allowWebPartAdder: false,listId: "{870e1207-920b-44c0-8a78-ea4c63748d6f}",itemId: 2,recycleBinEnabled: true,enableMinorVersioning: true,enableModeration: false,forceCheckout: true,rootFolderUrl: "\u002fsitios\u002fsepg\u002fes-ES\u002fPresupuestos\u002fPGE\u002fPGE2025Prorroga\u002fPaginas",itemPermissions:{High:16,Low:196673}};
+    SP.Ribbon.WebPartComponent.registerWithPageManager(initInfo);
+    var wpcomp = SP.Ribbon.WebPartComponent.get_instance();
+    var hid;
+    hid = document.getElementById("_wpSelected");
+    if (hid != null)
+    {
+        var wpid = hid.value;
+        if (wpid.length > 0)
+        {
+            var zc = document.getElementById(wpid);
+            if (zc != null)
+                wpcomp.selectWebPart(zc, false);
+        }
+    }
+    hid = document.getElementById("_wzSelected");
+    if (hid != null)
+    {
+        var wzid = hid.value;
+        if (wzid.length > 0)
+        {
+            wpcomp.selectWebPartZone(null, wzid);
+        }
+    }
+};
+function __RegisterWebPartPageCUI() {
+ExecuteOrDelayUntilScriptLoaded(_RegisterWebPartPageCUI, "sp.ribbon.js");}
+_spBodyOnLoadFunctionNames.push("__RegisterWebPartPageCUI");var __wpmExportWarning='This Web Part Page has been personalized. As a result, one or more Web Part properties may contain confidential information. Make sure the properties contain information that is safe for others to read. After exporting this Web Part, view properties in the Web Part description file (.WebPart) by using a text editor such as Microsoft Notepad.';var __wpmCloseProviderWarning='You are about to close this Web Part.  It is currently providing data to other Web Parts, and these connections will be deleted if this Web Part is closed.  To close this Web Part, click OK.  To keep this Web Part, click Cancel.';var __wpmDeleteWarning='You are about to permanently delete this Web Part.  Are you sure you want to do this?  To delete this Web Part, click OK.  To keep this Web Part, click Cancel.';var g_clientIdDeltaPlaceHolderMain = "DeltaPlaceHolderMain";
+var g_clientIdDeltaPlaceHolderUtilityContent = "DeltaPlaceHolderUtilityContent";
+//]]>
+</script>
+</form>
+<!-- =========================================== Fin - SharePointForm ================================= -->
+	
+	<span id="DeltaPlaceHolderUtilityContent">
+		
+	</span>
+	<script type="text/javascript">// <![CDATA[ 
+
+var g_Workspace = "s4-workspace"; // ]]>
+</script>
+</body>
+</html>

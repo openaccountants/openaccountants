@@ -1,0 +1,63 @@
+{
+  "bound_guide": {
+    "slug": "es-foral-income-tax",
+    "path": "skills/international/spain/es-foral-income-tax.md",
+    "bytes": 323948,
+    "sha256": "67f9038dc36b4ae6809d235c1bb4fa881ee96b411123657edf359e5c84e109de",
+    "prior_main_exists": false,
+    "prior_main_sha256": null,
+    "H2": [
+      "## Who this applies to",
+      "## Rates, bands and thresholds",
+      "## The base",
+      "## Deadlines and filing",
+      "## Penalties and interest",
+      "## Cross-border points",
+      "## Two worked examples that recompute",
+      "## Ask the client first",
+      "## Sources"
+    ],
+    "parent_repair": "v0.7 ownGcharity30%baseLIQUIDABLE at LF497, version LF18; exact predecessor retained"
+  },
+  "selected_quote_rows": 2677,
+  "literal_unmatched": [],
+  "current_source_scopes": "actual-source-read-scopes.json",
+  "selected_reading_copies": "quote-batch01–12 and precision-new-selected-reads; superseded selector diagnostics retained, canonicalrows govern",
+  "navarra_parent_fragments": [
+    {
+      "path": "ledgers/spain-2026-evidence/root-navarra-pit/advance-residence-fragment.json",
+      "sha256": "ef44723a1cf476882249592ea656c507b48ab2922e6ac35e600bbde11f502bb3",
+      "rows": 198
+    },
+    {
+      "path": "ledgers/spain-2026-evidence/root-navarra-pit/mixed-fragment.json",
+      "sha256": "57036f9f27da03f548436df244e9e1957d4b3178811d58b5863459a2fab081b1",
+      "rows": 85
+    },
+    {
+      "path": "ledgers/spain-2026-evidence/root-navarra-pit/giving-landlord-fragment.json",
+      "sha256": "d8837beef0e7f0322bf11aed133d370e7518e991bfc7513bf8d169e60a43ff23",
+      "rows": 65
+    },
+    {
+      "path": "ledgers/spain-2026-evidence/root-navarra-pit/home-pension-fragment.json",
+      "sha256": "71253488b6be7ed282ee6d73bf8eb7ade4af9097718f8d0552d65a3e701bcb26",
+      "rows": 208
+    },
+    {
+      "path": "ledgers/spain-2026-evidence/root-navarra-pit/core-fragment.json",
+      "sha256": "c794f580fb413d9a9d7303b158cfa69282b734db4700cab0f677e60a6e659ff7",
+      "rows": 192
+    }
+  ],
+  "old_topics": {
+    "prior_published_main": "No prior published-main body available; explicit earliest branch comparator retained",
+    "earliest_units": 177,
+    "unchanged_units": 161,
+    "changed_units": 16,
+    "manual_mapping": "old-topic-overrides.json"
+  },
+  "ordinary_reservations": "Current Guide/Sources remain exact; ledger is evidence, not elimination of disclosed unresolved methods. G charity wording was corrected by parent and predecessor retained.",
+  "N721_missing_footnote_attempts": "Retained current own29/2023 operative1–7 text actually read; officialprint URL browser index corroborates19/2024 footnote. Local direct fetch DNS failed and an escalated response was nonPDF; no successful new raw PDF acquisition is claimed, and no rejected response is used as legal authority. Existing current consolidated rule/procedure text remains governing evidence.",
+  "checks": "80 fresh Decimal/Fraction controls plus the two original main oa examples; no repeated country/repo test."
+}

@@ -1,0 +1,169 @@
+{
+  "review": "Independent exact provenance-repair verification for bounded unquoted-share valuation addition",
+  "date": "2026-10-31",
+  "verdict": "PASS",
+  "candidate_commit": "28cc685e5f771be8a997c4b4fdcb889c7e9ec496",
+  "source_review_commit": "6656f8a86a02d98aa5548790be1ba672b47a3786",
+  "scope": "Bounded valuation addition only. Earlier complete country-pack reports remain historical to their reviewed snapshots. This is source/editorial publication review, not named accountant attestation or comprehensive country coverage. Current README IT-IND municipal-rate partial and express factual/special-case limits remain intact.",
+  "finding_closure": {
+    "id": "VAL-F1",
+    "result": "CLOSED",
+    "evidence": "Guide line 18 now last_updated: 2026-10-31. Exact bytes differ from reviewed 6656 candidate only at that date. Both ledgers and both existing writer manifests bind the resulting current Guide SHA256."
+  },
+  "guide_sha256": "c770d7be9dc78fc14d1c34f388e0123b30b265ffccc4672bad11beb6b52ccaec",
+  "README_sha256": "c22d4a064ff43efcffaeff824bf5275e8954f4c8537e10cc5d1ca77f16d8ed19",
+  "checks": {
+    "candidate": "28cc685e5f771be8a997c4b4fdcb889c7e9ec496",
+    "reviewed_source_candidate": "6656f8a86a02d98aa5548790be1ba672b47a3786",
+    "VAL-F1": "CLOSED",
+    "guide_date_only_change": true,
+    "guide_sha256": "c770d7be9dc78fc14d1c34f388e0123b30b265ffccc4672bad11beb6b52ccaec",
+    "four_current_hash_bindings_match": true,
+    "original_rules_unchanged": 121,
+    "new_rules_unchanged": 21,
+    "old_topic_objects_unchanged": 94,
+    "explicit_successor_map_unchanged": true,
+    "protected_metadata_and_CTA_unchanged_except_authorised_date": true,
+    "two_existing_guide_blocks_exact": true,
+    "four_new_control_blocks_exact": true,
+    "source_bytes_unchanged": [
+      "ledgers/li-income-tax-evidence/valuation-20261031/source-workbook-extraction.json",
+      "ledgers/li-income-tax-evidence/valuation-20261031/source-receipt.json",
+      "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.txt",
+      "ledgers/li-income-tax-evidence/valuation-20261031/valuation-controls.md",
+      "ledgers/li-income-tax-evidence/valuation-20261031/unternehmensanteile-ohne-kursnotiz-bewertung-2026.xlsx",
+      "ledgers/li-income-tax-evidence/valuation-20261031/stev-2010437000-20261031.pdf"
+    ],
+    "public_review_copies_exact": [
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/arithmetic.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/arithmetic.json",
+        "sha256": "c208fbb59412ea4a1a6109f55c8c6152bd8912810a1ce0dbae54cbbc8cb1d402",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/continuity.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/continuity.json",
+        "sha256": "4a18009aba81859a52e978309ba72de6b1d0876efe948dfdcd05b571c587452b",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/exacthash-after.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/exacthash-after.json",
+        "sha256": "0d6019de310973f811bcb76471a136a8f37c3c3af060df2ce77fbe6e90558724",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/exacthash-before.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/exacthash-before.json",
+        "sha256": "ec9a8a8a4d0b8b15be44c453cda5c00e5e7b68082c9d0133cc7071becdbe6a2d",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/exacthash-manifest.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/exacthash-manifest.json",
+        "sha256": "7d90b4105cd19689288a7a5d293e461bb88f53ebd50e6a592d6597a6ee83732d",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-checks.py",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/independent-checks.py",
+        "sha256": "8835368496f7df52d6ffae6841620ea09dac6677cdb4b711a756ffd49586b555",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-review.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/independent-review.json",
+        "sha256": "cbaac5e1bc8e3f276b0d505e563dc8df61aa5474edbea7d2026daca9a2dd28aa",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-review.md",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/independent-review.md",
+        "sha256": "431326fb10158aa79d4802624a3397d889e56df18c13179bc9756d711122773a",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/workbook-original-ooxml.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/workbook-original-ooxml.json",
+        "sha256": "6a53d7e8e56380025bb728a1e15fbfd4a405b5a1d764ec68482e2eba9fcb26c2",
+        "exact": true
+      }
+    ],
+    "README_only_pending_clause_replaced": true,
+    "current_IT_IND_partial_preserved": true,
+    "review_link_status": "Bounded report resolves. Final repair-verification.json target is the exact stable destination designated for this report; not yet present in this pre-evidence candidate and must receive this exact generated record before publication. Parent has authorised the evidence-only copy/commit.",
+    "writer_pending_labels": "Unchanged author-stage historical checkpoints; appended current independent-report pointers distinguish their scope. No trust/attestation upgrade.",
+    "other_files": "Three Belarus Guide files from the reported main merge are outside this bounded review; no other Liechtenstein/ledger/OWNERS change in the diff."
+  },
+  "arithmetic": "No formula/control change. All six exact blocks remain the same as independent 6656 review: four new valuation controls and two existing Guide controls; 46 expected values previously recomputed PASS. No native Excel recalculation or additional source research asserted.",
+  "reference_checks": "Guide and README reference definitions unique and all reference-style links resolve. Newly added relative review links point to the correct repository evidence directory. Ledger original-topic snippets retain their original literal [law] reference text; that pre-existing quoted/snippet text is unchanged, not a new missing source.",
+  "exact_review_records": {
+    "count": 9,
+    "all_byte_identical_to_reviewers_private_originals": true,
+    "records": [
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/arithmetic.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/arithmetic.json",
+        "sha256": "c208fbb59412ea4a1a6109f55c8c6152bd8912810a1ce0dbae54cbbc8cb1d402",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/continuity.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/continuity.json",
+        "sha256": "4a18009aba81859a52e978309ba72de6b1d0876efe948dfdcd05b571c587452b",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/exacthash-after.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/exacthash-after.json",
+        "sha256": "0d6019de310973f811bcb76471a136a8f37c3c3af060df2ce77fbe6e90558724",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/exacthash-before.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/exacthash-before.json",
+        "sha256": "ec9a8a8a4d0b8b15be44c453cda5c00e5e7b68082c9d0133cc7071becdbe6a2d",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/exacthash-manifest.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/exacthash-manifest.json",
+        "sha256": "7d90b4105cd19689288a7a5d293e461bb88f53ebd50e6a592d6597a6ee83732d",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-checks.py",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/independent-checks.py",
+        "sha256": "8835368496f7df52d6ffae6841620ea09dac6677cdb4b711a756ffd49586b555",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-review.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/independent-review.json",
+        "sha256": "cbaac5e1bc8e3f276b0d505e563dc8df61aa5474edbea7d2026daca9a2dd28aa",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/independent-review.md",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/independent-review.md",
+        "sha256": "431326fb10158aa79d4802624a3397d889e56df18c13179bc9756d711122773a",
+        "exact": true
+      },
+      {
+        "path": "ledgers/li-income-tax-evidence/valuation-20261031/independent-review/workbook-original-ooxml.json",
+        "local_original": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/liechtenstein-pack-2026-10-30/followup-20261031/independent-review/workbook-original-ooxml.json",
+        "sha256": "6a53d7e8e56380025bb728a1e15fbfd4a405b5a1d764ec68482e2eba9fcb26c2",
+        "exact": true
+      }
+    ]
+  },
+  "candidate_integrity": {
+    "manifest": "currenthash-manifest.json",
+    "files": 21,
+    "all_hashes_unchanged_before_after": true,
+    "clean_worktree": true
+  },
+  "publication_evidence_placement": "This PASS is saved privately as requested. Before publication, copy this repair-verification.json and .md, and currenthash-manifest.json byte-exact to ledgers/li-income-tax-evidence/valuation-20261031/independent-review/. The pre-evidence candidate already points to that stable JSON path. Parent plans an evidence-only commit; it must not mutate the reviewed Guide/README/ledger/source/control bytes. That copy creates the pending repair-record link target and does not require a new source-law review.",
+  "open_findings": []
+}

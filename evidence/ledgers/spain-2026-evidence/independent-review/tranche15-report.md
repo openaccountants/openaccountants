@@ -1,0 +1,9 @@
+# Foral nonresident ledger: bounded independent PASS with ordinary limitation
+
+Final Guide3a0cff999160125d566a79080763c9318d7667847eb82d20a18e9cbd17a798c2, ledger6785241879f7d5e321e5909429887f939b8ddf52cacf7ee2e2e08d096a62a29a. All533 current rows assessed, all530 quotation bodies read and native-LF spans checked, including every231 own provincial coefficient cell.57 raw/reader pairs rehashed without mismatch;284 independent numerical/table/boundary controls pass. Both actual examples pass on the unchanged original example bytes.
+
+S-L22 corrects three worldwide-PE-income anchors from payer withholding to each own15.1. S-L23 supplies Bizkaia’s complete voluntary reference-price extension and Álava’s actual public-programme70%/finance-only/nonnegative clause. S-L24 removes a substantive unsupported cross-province inference: Gipuzkoa’s EU expense provision is24.5 while31.2 still excludes24.6. The20,000wage/1,200expense/228refund withholding illustration now expressly covers Bizkaia/Álava. No Ggross/net/zero withholding rule is invented. Its final-expense computation remains available and credits use actual lawful certificates.
+
+That Gipuzkoa prospective-withholding question is a genuine ordinary limitation, still requiring a controlling own interpretation or amendment. The corrected Guide is accurate about this boundary; this PASS does not claim it supplies a settled Gprospective expense-withholding method. Other precise special/historical and PE interpretation limits remain.
+
+Four Guide lines change, including version only; their exact inverse restores the entire frozen Guide. Other metadata, old source URLs, H2s, intake, original examples and existing attribution/CTA bytes survive. Earlier-branch topic spots were checked without inventing a published-main body. Source bodies were selectively read, not all in full. This nineteenth pair is reviewed; country completion and accountant attestation are not claimed.

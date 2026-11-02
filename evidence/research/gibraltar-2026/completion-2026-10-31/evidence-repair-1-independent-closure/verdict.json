@@ -1,0 +1,29 @@
+{
+  "verdict": "ACCEPTED_BOUNDED_EVIDENCE",
+  "reviewed_commit": "70d85ac8ba95b239b83a0fd76419666f582c629b",
+  "finding_R1": "closed for all35 original rows by operative evidence or explicit process/scope classification",
+  "ledger_rows_checked": 35,
+  "operative_excerpt_units_read_and_bound": 104,
+  "new_tax_content_errors_found": 0,
+  "remaining_bounded_findings": [],
+  "guide_files_unchanged": 19,
+  "initial_reviewer_artifacts_unchanged": 18,
+  "original_review_inputs_unchanged": 67,
+  "repair_ledger_sha256": "2dd4db23b45c3a1cbb2e3f56526b5f853fbba1a47d5cca8f1e1b4e7e8f1ad1cd",
+  "repair_checkpoint_sha256": "13d96c2c8df05d9eb5257792f86fd736910788250661115c2fc3d1550ca503b3",
+  "current_input_manifest_sha256": "c8f5d60b08c6d67623f6ae5dfc7a8c5b9a77d79ceae55d9f261301bb67eb00d4",
+  "country_complete": false,
+  "ready_for_review": false,
+  "green_PR_claim": false,
+  "prior_validation_preserved": {
+    "errors": 11,
+    "warning_groups": 55,
+    "canonical_seven_checks": "70/70 pass",
+    "country_examples": "19 files/29 blocks/0 failures"
+  },
+  "partials_retained": 7,
+  "arithmetic_rerun": "not repeated: exact Guide/example bytes and prior successful evidence unchanged; legal bases reread for closure",
+  "professional_attestation": false,
+  "reviewer": "independent Codex reviewer, not writer",
+  "external_actions_taken": false
+}

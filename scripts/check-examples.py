@@ -43,6 +43,9 @@ import subprocess
 import sys
 from decimal import ROUND_HALF_UP, Decimal, InvalidOperation
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import repo_layout  # noqa: E402
+
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BLOCK_RE = re.compile(r"^```oa-check[ \t]*\n(.*?)^```[ \t]*$", re.MULTILINE | re.DOTALL)
 TAX_TOKENS = ("income-tax", "corporate", "vat", "gst", "sales-tax", "payroll", "social", "ssc", "withholding", "transfer-pricing", "exit")
@@ -191,10 +194,15 @@ def check_file(path):
 
 def changed_files():
     base = os.environ.get("BASE_REF", "main")
-    out = subprocess.run(["git", "diff", "--name-only", f"origin/{base}...HEAD"], capture_output=True, text=True, cwd=REPO_ROOT)
+    ref = f"origin/{base}...HEAD"
+    out = subprocess.run(["git", "diff", "--name-only", "--no-renames", ref], capture_output=True, text=True, cwd=REPO_ROOT)
     if out.returncode != 0:
-        out = subprocess.run(["git", "diff", "--name-only", "HEAD~1"], capture_output=True, text=True, cwd=REPO_ROOT)
-    return [os.path.join(REPO_ROOT, p) for p in out.stdout.split() if p.endswith(".md") and os.path.isfile(os.path.join(REPO_ROOT, p))]
+        ref = "HEAD~1"
+        out = subprocess.run(["git", "diff", "--name-only", "--no-renames", ref], capture_output=True, text=True, cwd=REPO_ROOT)
+    status = subprocess.run(["git", "diff", "--name-status", "-M100%", ref], capture_output=True, text=True, cwd=REPO_ROOT)
+    moved = repo_layout.pure_moves(status.stdout)
+    return [os.path.join(REPO_ROOT, p) for p in out.stdout.splitlines()
+            if p.endswith(".md") and p not in moved and os.path.isfile(os.path.join(REPO_ROOT, p))]
 
 
 def all_skill_files():

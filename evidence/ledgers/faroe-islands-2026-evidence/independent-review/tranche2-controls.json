@@ -1,0 +1,170 @@
+[
+  {
+    "id": "V-output",
+    "actual": "25000",
+    "expected": "25000",
+    "pass": true
+  },
+  {
+    "id": "V-net",
+    "actual": "15000",
+    "expected": "15000",
+    "pass": true
+  },
+  {
+    "id": "V-gross",
+    "actual": "25",
+    "expected": "25",
+    "pass": true
+  },
+  {
+    "id": "V-share",
+    "actual": "3/5",
+    "expected": "3/5",
+    "pass": true
+  },
+  {
+    "id": "V-input",
+    "actual": "12000",
+    "expected": "12000",
+    "pass": true
+  },
+  {
+    "id": "V-adjust",
+    "actual": "2000",
+    "expected": "2000",
+    "pass": true
+  },
+  {
+    "id": "V-after",
+    "actual": "10000",
+    "expected": "10000",
+    "pass": true
+  },
+  {
+    "id": "V-new-invoice",
+    "actual": "2500",
+    "expected": "2500",
+    "pass": true
+  },
+  {
+    "id": "V-new-input",
+    "actual": "1500",
+    "expected": "1500",
+    "pass": true
+  },
+  {
+    "id": "V-new-unrecovered",
+    "actual": "1000",
+    "expected": "1000",
+    "pass": true
+  },
+  {
+    "id": "V-item12-threshold",
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  },
+  {
+    "id": "V-item12-above",
+    "actual": "True",
+    "expected": "True",
+    "pass": true
+  },
+  {
+    "id": "V-item12-full",
+    "actual": "False",
+    "expected": "False",
+    "pass": true
+  },
+  {
+    "id": "V-item7-full",
+    "actual": "True",
+    "expected": "True",
+    "pass": true
+  },
+  {
+    "id": "XB-branch-profit",
+    "actual": "300000",
+    "expected": "300000",
+    "pass": true
+  },
+  {
+    "id": "XB-branch-tax",
+    "actual": "54000",
+    "expected": "54000",
+    "pass": true
+  },
+  {
+    "id": "XB-royalty-gross",
+    "actual": "10000",
+    "expected": "10000",
+    "pass": true
+  },
+  {
+    "id": "XB-royalty-net",
+    "actual": "30000",
+    "expected": "30000",
+    "pass": true
+  },
+  {
+    "id": "XB-royalty-net-guarantee",
+    "actual": "160000/3",
+    "expected": "160000/3",
+    "pass": true
+  },
+  {
+    "id": "XB-net-tax",
+    "actual": "40000/3",
+    "expected": "40000/3",
+    "pass": true
+  },
+  {
+    "id": "XB-exit",
+    "actual": "17500",
+    "expected": "17500",
+    "pass": true
+  },
+  {
+    "id": "XB-later-gain",
+    "actual": "40000",
+    "expected": "40000",
+    "pass": true
+  },
+  {
+    "id": "XB-payment",
+    "actual": "14000",
+    "expected": "14000",
+    "pass": true
+  },
+  {
+    "id": "XB-valuefall",
+    "actual": "3500",
+    "expected": "3500",
+    "pass": true
+  },
+  {
+    "id": "XB-final-balance",
+    "actual": "0",
+    "expected": "0",
+    "pass": true
+  },
+  {
+    "id": "XB-interest-bounded",
+    "actual": "20000",
+    "expected": "20000",
+    "pass": true
+  },
+  {
+    "id": "XB-credit-cap",
+    "actual": "6000",
+    "expected": "6000",
+    "pass": true
+  },
+  {
+    "id": "XB-credit",
+    "actual": "6000",
+    "expected": "6000",
+    "pass": true
+  }
+]

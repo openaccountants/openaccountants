@@ -1,0 +1,19 @@
+{
+  "article": "266",
+  "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+  "text": "Articolul 266. Termenul de prescripţie pentru compensarea ori restituirea sumelor plătite în plus sau a sumelor care, conform legislaţiei fiscale, urmează a fi restituite (1) Cererea de compensare ori de restituire a sumelor plătite în plus sau a sumelor care, conform legislaţiei fiscale, urmează a fi restituite poate fi depusă de contribuabil în termen de 6 ani din data efectuării şi/sau apariţiei lor. Cererea depusă după expirarea termenului de 6 ani este nevalabilă. În acest caz, nu se va efectua nici o compensare ori restituire, cu excepţia cazurilor prevăzute la alin.(2). Depunerea cererii suspendă curgerea termenului indicat. (2) Serviciul Fiscal de Stat poate repune în termen şi accepta cererea de compensare şi/sau de restituire a sumelor plătite în plus sau a sumelor care, conform legislaţiei fiscale, urmează a fi restituite dacă contribuabilul prezintă dovezi privind imposibilitatea respectării termenului de prescripţie prevăzut la alin.(1). (3) Sumele plătite în plus şi sumele care urmează a fi restituite, care nu au fost solicitate în termenul indicat la alin.(1), se anulează în modul stabilit de Guvern. Capitolul 17 CONTESTAŢIILE",
+  "sha256": "ab1048f9106b2256d293713285f252afed9dea1c7c2e5ee91cb4d1a9b29144c2",
+  "read_date": "2026-10-31",
+  "observed_utc": "2026-10-31T09:18:24.961019+00:00",
+  "source_points": {
+    "(1)": "(1) Cererea de compensare ori de restituire a sumelor plătite în plus sau a sumelor care, conform legislaţiei fiscale, urmează a fi restituite poate fi depusă de contribuabil în termen de 6 ani din data efectuării şi/sau apariţiei lor. Cererea depusă după expirarea termenului de 6 ani este nevalabilă. În acest caz, nu se va efectua nici o compensare ori restituire, cu excepţia cazurilor prevăzute la alin.(2). Depunerea cererii suspendă curgerea termenului indicat. ",
+    "(2)": "(2) Serviciul Fiscal de Stat poate repune în termen şi accepta cererea de compensare şi/sau de restituire a sumelor plătite în plus sau a sumelor care, conform legislaţiei fiscale, urmează a fi restituite dacă contribuabilul prezintă dovezi privind imposibilitatea respectării termenului de prescripţie prevăzut la alin.(1). ",
+    "(3)": "(3) Sumele plătite în plus şi sumele care urmează a fi restituite, care nu au fost solicitate în termenul indicat la alin.(1), se anulează în modul stabilit de Guvern."
+  },
+  "header_observed": "LP235 din 02.10.26, MO539-542/30.10.26 art.578; în vigoare 30.10.26",
+  "capture_normalization": "Visible DOM text of actual articles, last occurrence after table of contents, whitespace collapsed to single spaces. Character count and codepoint sum independently returned by browser for transfer verification. Article266 capture includes the following chapter heading; it is not interpreted as part of the article.",
+  "browser_capture_characters": 1159,
+  "browser_capture_character_sum": 114996,
+  "scope": "Current operative consolidated text read in full. Assessment264, collection265 and refund266 clocks kept separate. Historical transitions, Civil Code interruption grounds and Government cancellation implementation not independently resolved.",
+  "independent_review": "Supplemental source capture read by reviewer; complete final Guide/ledger delta review pending"
+}

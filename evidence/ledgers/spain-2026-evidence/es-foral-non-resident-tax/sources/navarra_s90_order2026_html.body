@@ -1,0 +1,150 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <link href="estilo.css" rel="stylesheet" type="text/css">
+	<link href="https://www.navarra.es/nr/Navarra/css/style.css" rel="stylesheet" type="text/css">
+	<script language="JavaScript" src="https://www.navarra.es/nr/navarra/js/search.js"></script>
+	<script language="JavaScript" src="https://www.navarra.es/nr/navarra/js/functions.js"></script>
+    <script language="JavaScript" src="calendar1.js"></script>
+    <script language="JavaScript" src="include.js"></script>
+	<script language="javascript">
+
+function ir(iPos)
+{
+	document.FrmSearch.POS.value = iPos;
+	document.FrmSearch.submit();
+}
+
+    function validar() {
+if (!bFechaValida(window.document.forms['FrmSearch'].iniFecha.value)) {
+	alert("Fecha incorrecta");
+	window.document.forms['FrmSearch'].iniFecha.focus();
+	return false;
+}
+if (!bFechaValida(window.document.forms['FrmSearch'].finFecha.value)) {
+	alert("Fecha incorrecta");
+	window.document.forms['FrmSearch'].finFecha.focus();
+	return false;
+}
+
+    window.document.forms['FrmSearch'].POS.value = 0;
+
+return true;
+	}
+	</script>
+	<title>Lexnavarra</title>
+
+<meta name="FECHA" content="2026-10-28"/>
+<meta name="Language" content="Spanish"/>
+<meta name="STRURL" content="http://www.lexnavarra.es/"/>
+<meta name="RESUMEN" content="Lexnavarra. Legislación de Navarra"/>
+<link href="https://www.navarra.es/es/css/estilos.css" rel="stylesheet" type="text/css">
+<link href="https://www.navarra.es/nr/navarra/css/styleGeneral.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://www.navarra.es/nr/navarra/js/comun.js" ></script>
+<script type="text/JavaScript" src="https://www.navarra.es/js/funcionalidades.js"></script>
+<link href="https://www.navarra.es/css/consola.css" rel="stylesheet" type="text/css">
+<!-- Inserted by Content Management Server: BEGIN EmbedTmplHeadHook -->
+
+<script language="JavaScript"
+src="https://www.navarra.es/NR/System/WBC/Internals/Shared/Dates.js"
+type="text/javascript"></script>
+
+<script language="JavaScript"
+src="https://www.navarra.es/NR/System/WBC/Internals/Shared/Windows.js"
+type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+<!--
+var IDS_FRAMEWORK_VIRTUAL_PATH =  "https://www.navarra.es/NR/System/WBC";
+// -->
+</script>
+<script language="JavaScript"
+src="https://www.navarra.es/NR/System/WBC/Internals/Shared/CommonClient.js"
+type="text/javascript"></script>
+</head>
+<body>
+<div id="estructura">
+    <a href="#contenido" class="navegacion" accesskey="1">(ir al contenido)</a>
+
+
+    <div id="cabecera">
+        <h1><a style='background: url(/images/logo-GOB-2019-Agenda-2030.gif) left top no-repeat;width:210px;margin-left:20px' href="https://www.navarra.es/" accesskey="0"><span>navarra.es</span></a></h1>
+ <p class="idiomas">
+<strong>Castellano</strong> <span> |</span> <a href='/?Idioma=eu' lang='eu' xml:lang='eu'>Euskara</a>  <span> |</span> <a href='/?Idioma=fr' lang='fr' xml:lang='fr'>Français</a>  <span>|</span> <a href='/?Idioma=en' lang='en' xml:lang='en'>English</a> 
+
+ </p>
+<form class="buscador" id="frmSearch" action="https://www.navarra.es/es/buscador/-/buscador/filter/0/sort/_score/facet/0/tag/0/date/0/type/0/rpp/10/page/1/q/" method="get">
+<fieldset>
+<label for="cadena">
+buscador
+</label>
+<input name="cadena" value="introduzca palabra/s"
+onblur="if(this.value==''){this.value='introduzca palabra/s'}"
+onfocus="this.value=''" type="text" id="cadena" />
+<input name="c" type="hidden" id="c" value="/home_es/" />
+<input class="boton" type="submit" value="Buscar" onclick="window.location='https://www.navarra.es/es/buscador/-/buscador/filter/0/sort/_score/facet/0/tag/0/date/0/type/0/rpp/10/page/1/q/'+this.form.cadena.value; return false;"/>
+</fieldset>
+</form>
+<map title="navegación primer nivel" id="primerNivel">
+<ul>
+<li class="primero on"><a href="https://www.navarra.es/" accesskey="n">Navarra</a></li>
+<li><a href="https://www.navarra.es/home_es/Catalogo+de+servicios/" accesskey="s">Trámites</a></li>
+<li><a href="https://www.navarra.es/home_es/Temas/" accesskey="t">Temas</a></li>
+<li><a href="https://www.navarra.es/home_es/Gobierno+de+Navarra/" accesskey="g">Gobierno</a></li>
+<li><a href="https://www.navarra.es/home_es/Actualidad/" accesskey="a">Actualidad</a></li>
+</ul></map>
+</div>
+
+<div id="contenido_modificado">
+<script>
+function l(l,r) {
+	window.location.href = "#" + r;
+}
+</script>
+
+
+<hr class="navegacion" />
+<map title="menú de ubicación" id="migas">
+<ul><li><a href="http://www.navarra.es/">Navarra</a> :
+
+
+<ul><li><a href="/">Lexnavarra</a></li><li> : Legislación</li></ul>
+
+</li></ul></li></ul>
+</map>
+<h1 style="color:black;font-weight:normal;font-family:georgia;'">LEX<span style="color:red;font-size:1.3em;">N</span>AVARRA</h1>
+
+<div style='text-align:center;font-size:0.8em;float:right;margin-left:20px'>
+<a style='text-align:center;' href='?r=5958604'>Version en euskera</a>
+<br></div>
+<p class=norma>ORDEN FORAL 36/2026, DE 17 DE ABRIL, DEL CONSEJERO DE ECONOMÍA Y HACIENDA, POR LA QUE SE APRUEBA EL MODELO S90 DE AUTOLIQUIDACIÓN DEL IMPUESTO SOBRE SOCIEDADES Y DEL IMPUESTO SOBRE LA RENTA DE NO RESIDENTES CORRESPONDIENTE A ESTABLECIMIENTOS PERMANENTES, PARA LOS PERIODOS IMPOSITIVOS INICIADOS ENTRE EL 1 DE ENERO Y EL 31 DE DICIEMBRE DE 2025, Y SE DICTAN LAS NORMAS PARA LA PRESENTACIÓN DE LAS DECLARACIONES</p>
+
+<P align="left">BON&nbsp;N.º 84 - 30/04/2026
+</p><hr>
+<ul><li style='list-style-type:none'><i><a href='javascript:l(58604,"Preámbulo");'>Preámbulo</a></i></li><li style='list-style-type:none'><i><a href='javascript:l(58604,"Ar.1");'>Artículo 1.</a> Aprobación del modelo S90.</i></li><li style='list-style-type:none'><i><a href='javascript:l(58604,"Ar.2");'>Artículo 2.</a> Obligación de declarar.</i></li><li style='list-style-type:none'><i><a href='javascript:l(58604,"Ar.3");'>Artículo 3.</a> Plazo y formas de presentación.</i></li><li style='list-style-type:none'><i><a href='javascript:l(58604,"Ar.4");'>Artículo 4.</a> Condiciones generales para la presentación electrónica de las autoliquidaciones.</i></li><li style='list-style-type:none'><i><a href='javascript:l(58604,"Ar.5");'>Artículo 5.</a> Procedimiento para la presentación electrónica por Internet de las declaraciones correspondientes al modelo S90 y de las copias de las declaraciones presentadas en otras Administraciones.</i></li><li style='list-style-type:none'><i><a href='javascript:l(58604,"Ar.6");'>Artículo 6.</a> Documentos y justificantes a presentar junto con las declaraciones correspondientes al modelo S90.</i></li><li style='list-style-type:none'><i><a href='javascript:l(58604,"Ar.7");'>Artículo 7.</a> Formas de Ingreso de la deuda tributaria o devolución de la cantidad resultante de la autoliquidación.</i></li><li style='list-style-type:none'><i><a href='javascript:l(58604,"Df.Única");'>Disposición Final Única.</a> Entrada en vigor.</i></li></ul><hr noshade='noshade' size='1'><b><p>&nbsp;&nbsp;<i>MODELO S90. Impuesto sobre Sociedades y del Impuesto sobre la Renta de no Residentes correspondiente a establecimientos permanentes (PDF). </i></b><ul><li style='list-style-type:none'><i><a href='javascript:l(58604,"MODELO S90. Impuesto sobre Socieda");'>MODELO S90. Impuesto sobre Sociedades y del Impuesto sobre la Renta de no Residentes correspondiente a establecimientos permanentes (PDF)</a></i></li></ul><div style='clear:both'><hr></div>
+<p><a name="Preámbulo"></a><b>Preámbulo</b></p><p class=Xdef>Los contribuyentes del Impuesto sobre Sociedades, de conformidad con lo dispuesto en los artículos 75 <a href='javascript:l(38307,"ar.75");'></a> y 76 de la Ley Foral 26/2016, de 28 de diciembre, del Impuesto sobre Sociedades (en adelante, Ley Foral del Impuesto), están obligados a presentar la declaración del Impuesto, determinar e ingresar la deuda tributaria correspondiente, así como aportar los documentos y justificantes, en el lugar y en la forma determinados por el departamento competente en materia tributaria.</p><p class=Xdef>Por lo que respecta al Impuesto sobre la Renta de no Residentes, el artículo 21 <a href='javascript:l(3642,"ar.21");'></a> del texto refundido de la Ley del impuesto, aprobado por el Real Decreto Legislativo 5/2004, de 5 marzo, establece para los establecimientos permanentes la obligación de presentar declaración, determinando e ingresando la deuda tributaria correspondiente, en la forma, lugar y con la documentación que determine el Ministro de Hacienda En virtud del artículo 6 <a href='javascript:l(3214,"ar.6");'></a> de la Ley Foral 13/2000, de 14 de diciembre, General Tributaria, esta habilitación debe entenderse conferida a la persona titular del departamento del Gobierno de Navarra que es competente en materia tributaria.</p><p class=Xdef>Se hace necesario, por tanto, dictar la presente orden foral con el objetivo de aprobar el modelo S90 de autoliquidación de ambos impuestos para los periodos impositivos iniciados entre el 1 de enero y el 31 de diciembre de 2025, y establecer las condiciones generales y el procedimiento para su presentación electrónica e ingreso.</p><p class=Xdef>Las modificaciones normativas en relación con el Impuesto sobre Sociedades e Impuesto sobre la Renta de no Residentes correspondiente a establecimientos permanentes para los períodos iniciados en 2025 que afectan al modelo S-90, se contienen en las disposiciones legales que se señalan a continuación.</p><p class=Xdef>En primer lugar, cabe destacar el Real Decreto 10/2025, de 14 de enero, por el que se aprueba la Clasificación Nacional de Actividades Económicas 2025 (CNAE-2025), que tiene por objeto actualizar dicha clasificación reflejando las nuevas actividades económicas. En este sentido, en el modelo S90 se debe indicar la clasificación de la actividad principal de la entidad conforme a esta nueva Clasificación Nacional de Actividades Económicas 2025, denominada CNAE-2025.</p><p class=Xdef>En segundo lugar, la Ley Foral 18/2025, de 22 de diciembre, del impuesto complementario para garantizar un nivel mínimo global de imposición para los grupos multinacionales y los grupos nacionales de gran magnitud<a href='javascript:l(58374);'></a>, ha modificado con efectos para los periodos impositivos iniciados a partir del 31 de diciembre de 2023, el artículo 23.1.b) <a href='javascript:l(3642,"ar.23");'></a>de la Ley Foral del Impuesto, para determinar la no deducibilidad de este nuevo impuesto complementario en el Impuesto sobre Sociedades.</p><p class=Xdef>En tercer lugar, la Ley Foral 11/2025, de 23 de octubre, del impuesto sobre el margen de intereses y comisiones de determinadas entidades financieras, establece en su artículo 13 <a href='javascript:l(58184,"ar.13");'></a> la no deducibilidad de este nuevo impuesto sobre el margen de intereses y comisiones de determinadas entidades financieras en el Impuesto sobre Sociedades ni en el Impuesto sobre la Renta de no Residentes. Es necesario, por tanto, identificar en el modelo S90 este ajuste mediante una corrección específica sobre el resultado de la cuenta de pérdidas y ganancias.</p><p class=Xdef>En cuarto lugar, el artículo tercero <a href='javascript:l(57542,"ar.3");'></a> de la Ley Foral 20/2024, de 26 de diciembre, de modificación de diversos impuestos y otras medidas tributarias, introduce las siguientes modificaciones en el Impuesto sobre Sociedades con efectos para los periodos impositivos que se inicien a partir del 1 de enero de 2025.</p><p class=Xdef>Por un lado, se amplía la exención por reinversión de beneficios extraordinarios regulada en el artículo 37 <a href='javascript:l(3642,"ar.37");'></a> de la Ley Foral del Impuesto a la totalidad de las rentas obtenidas por la transmisión onerosa de elementos patrimoniales afectos a la actividad económica, frente a la exención del 50 por 100 de las rentas obtenidas que se venía aplicando en periodos impositivos anteriores.</p><p class=Xdef>En cuanto a la deducción por inversión en vehículos eléctricos o híbridos enchufables regulada en el artículo 64.B).1 <a href='javascript:l(3642,"ar.64");'></a> de la Ley Foral del Impuesto, por un lado, se eleva el límite de la base de deducción de 32.000 a 35.000 euros por la compra de turismos (M1) y furgonetas o camiones ligeros (N1) y, por otro lado, se suprime la posibilidad de deducir por la adquisición de bicicletas de pedaleo asistido por motor eléctrico.</p><p class=Xdef>Además, para evitar la utilización abusiva de esta deducción, en aquellos casos en que los vehículos se financien mediante contratos de financiación flexible o de multiopción, se condiciona la aplicación de la deducción a que la opción elegida sea el mantenimiento de la propiedad del vehículo. En caso de no ejercitar esta opción se establece la obligación de regularizar el beneficio fiscal aplicado.</p><p class=Xdef>Por su parte, se mejora la deducción por inversión en sistemas de recarga de alta potencia regulada en el artículo 64.B).2 <a href='javascript:l(3642,"ar.64");'></a> de la Ley Foral del Impuesto de forma que, por un lado, se aplica el porcentaje de deducción incrementado en 5 puntos porcentuales también a los puntos de recarga cuya potencia supere 50 kW y, por otro lado, se establece un límite de base de deducción más elevado en el caso de inversión en puntos de recarga de alta potencia que superen los 50 kW.</p><p class=Xdef>Finalmente, se prorroga la aplicación de la disposición adicional decimoséptima de la Ley Foral del Impuesto durante el periodo impositivo 2025. De esta manera, en 2025 resultarán de aplicación los límites a la reducción de bases liquidables negativas del 50 por ciento y 25 por ciento previstos en esta disposición adicional para los contribuyentes cuyo importe neto de la cifra de negocios en los doce meses anteriores al inicio del periodo impositivo sea igual o superior a veinte millones, pero inferior a sesenta millones, o igual o superior a sesenta millones, respectivamente.</p><p class=Xdef>En quinto lugar, hay que tener en cuenta que la disposición adicional única <a href='javascript:l(56665,"da.Única");'></a> de la Ley Foral 22/2023, de 26 de diciembre, de modificación de diversos impuestos y otras medidas tributarias, estableció para el año 2025, la aplicación de los incentivos fiscales del mecenazgo cultural para aquellas entidades que participen en la financiación de los programas y actividades relacionados con el acontecimiento de excepcional interés público "Año de Investigación Santiago Ramón y Cajal 2022". Además, estos programas y actividades tendrán la consideración de prioritarios cuando se realicen por entidades sin fines lucrativos que apliquen el régimen tributario previsto en el Título I <a href='javascript:l(56080,"ar.1");'></a> del Decreto Foral legislativo 2/2023, de 24 de mayo, o un régimen tributario equivalente en otra Administración tributaria, elevándose en cinco puntos porcentuales los porcentajes y límites de las deducciones aplicables.</p><p class=Xdef>Estas modificaciones tienen reflejo en el modelo S90 que aprueba la presente orden foral.</p><p class=Xdef>El ejercicio de la potestad reglamentaria desarrollada mediante esta orden foral se ajusta a los principios de buena regulación previstos en el artículo 129 <a href='javascript:l(13300,"ar.129");'></a> de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas. Asimismo, se cumple con los principios de necesidad y eficacia, proporcionalidad, seguridad jurídica, transparencia y eficiencia establecidos en la Ley Foral, 11/2009, de 11 de marzo, de la Administración de la Comunidad Foral de Navarra y el Sector Público Institucional Foral.</p><p class=Xdef>Por todo lo anterior, en ejercicio de las habilitaciones establecidas en los artículos 75 <a href='javascript:l(3642,"ar.75");'></a> y 76 de la Ley Foral del Impuesto, así como en el artículo 21 <a href='javascript:l(3642,"ar.21");'></a> del texto refundido de la Ley del Impuesto sobre la Renta de no Residentes, y en disposición adicional séptima <a href='javascript:l(3214,"da.Séptima");'></a> de la Ley Foral 13/2000, de 14 de diciembre, General Tributaria, ordeno:</p>
+<p><a name="Ar.1"></a><b>Artículo 1.</b>&nbsp<i>Aprobación del modelo S90.</i></p><p class=XA1>Se aprueba el modelo S90 de autoliquidación del Impuesto sobre Sociedades y del Impuesto sobre la Renta de no Residentes correspondiente a establecimientos permanentes para los períodos impositivos iniciados entre el 1 de enero y el 31 de diciembre de 2025, cuyo contenido figura en el anexo.</p>
+<p><a name="Ar.2"></a><b>Artículo 2.</b>&nbsp<i>Obligación de declarar.</i></p><p class=XL1>1. Están obligados a presentar el modelo S90 los contribuyentes del Impuesto sobre Sociedades, referidos en el artículo 10 <a href='javascript:l(38307,"ar.10");'></a> de la Ley Foral 26/2016 reguladora del impuesto, que apliquen normativa foral navarra de conformidad con lo dispuesto en el artículo 18 <a href='javascript:l(88,"ar.18");'></a> del Convenio Económico entre el Estado y la Comunidad Foral de Navarra.</p><p class=XL1>2. También están obligados a presentar el modelo S90 los contribuyentes por el Impuesto sobre la Renta de no Residentes correspondiente a establecimientos permanentes que apliquen normativa foral navarra, de conformidad con lo dispuesto en el artículo 28 <a href='javascript:l(88,"ar.28");'></a> del Convenio Económico.</p><p class=XL1>3. Los contribuyentes que, conforme a lo establecido en el artículo 18 <a href='javascript:l(88,"ar.18");'></a> del Convenio Económico, deban tributar a ambas Administraciones y apliquen normativa distinta a la navarra, deberán presentar las autoliquidaciones correspondientes de acuerdo con lo dispuesto en el artículo 5.2<a href='javascript:l(58604,"ar.5");'></a>.</p>
+<p><a name="Ar.3"></a><b>Artículo 3.</b>&nbsp<i>Plazo y formas de presentación.</i></p><p class=XL1>1. Los contribuyentes deberán presentar la declaración en el plazo comprendido entre el día 1 del quinto mes y el día 25 del séptimo mes siguientes a la conclusión del periodo impositivo, tanto si aplican normativa foral navarra como si aplican normativa distinta a la navarra.</p><p class=XA1>Aquellos contribuyentes cuyo plazo de declaración, al que se refiere el párrafo anterior, hubiera concluido con anterioridad al vigésimo quinto día natural siguiente a la entrada en vigor de esta orden foral, deberán presentar la declaración dentro de los veinticinco días naturales siguientes a dicha entrada en vigor.</p><p class=XL1>2. La presentación del modelo S90 deberá efectuarse por vía electrónica con carácter obligatorio para todos los contribuyentes, independientemente de su volumen de operaciones, con arreglo a las condiciones generales y al procedimiento previstos en los artículos 4 <a href='javascript:l(58604,"ar.4");'></a> y 5 respectivamente.</p>
+<p><a name="Ar.4"></a><b>Artículo 4.</b>&nbsp<i>Condiciones generales para la presentación electrónica de las autoliquidaciones.</i></p><p class=XA1>La presentación electrónica del modelo S90 estará sujeta a las siguientes condiciones:</p><p class=XL2>a) La persona declarante deberá disponer de Número de Identificación Fiscal (N.I.F.).</p><p class=XL2>b) La declarante deberá disponer de un sistema de identificación, autenticación y firma electrónica utilizando un certificado electrónico cualificado que resulte admisible por la Hacienda Foral de Navarra, conforme a la legislación vigente en la materia.</p><p class=XA2>Los prestadores de servicios de certificación y los certificados electrónicos autorizados se encuentran relacionados en la página web de Hacienda Foral de Navarra, en la siguiente dirección de Internet: https://hacienda.navarra.es.</p><p class=XL2>c) Si la presentadora es una persona o entidad autorizada para presentar declaraciones en representación de terceras personas, de conformidad con lo dispuesto en la Orden Foral 130/2009, de 29 de junio, por la que se aprueba el Acuerdo de colaboración externa para realizar en representación de terceras personas la presentación por vía telemática de declaraciones, comunicaciones y otros documentos tributarios y la tramitación telemática del pago de deudas tributarias<a href='javascript:l(29884);'></a>, deberá disponer de un sistema de identificación, autenticación y firma electrónica utilizando un certificado electrónico cualificado, al que se refiere la letra b).</p><p class=XL2>d) La declarante o, en su caso, presentadora autorizada deberá utilizar previamente un programa de ayuda para obtener el fichero con la declaración a transmitir. Este programa de ayuda podrá ser el desarrollado por Hacienda Foral de Navarra para las declaraciones correspondientes al modelo S90, u otro que obtenga un fichero con el mismo formato.</p><p class=XA2>El contenido de dichos ficheros se deberá ajustar a los diseños de registro establecidos en la página web de Hacienda Foral de Navarra, en la dirección de Internet https://hacienda.navarra.es.</p><p class=XL2>e) La declarante o, en su caso, presentadora autorizada deberá tener en cuenta las normas técnicas que se requieren para poder efectuar la citada presentación electrónica y que se encuentran publicadas en la página web de Hacienda Foral de Navarra, en la dirección de Internet https://hacienda.navarra.es.</p>
+<p><a name="Ar.5"></a><b>Artículo 5.</b>&nbsp<i>Procedimiento para la presentación electrónica por Internet de las declaraciones correspondientes al modelo S90 y de las copias de las declaraciones presentadas en otras Administraciones.</i></p><p class=XL1>1. Para la presentación electrónica por Internet de las declaraciones correspondientes al modelo S90 con el programa de ayuda desarrollado por Hacienda Foral de Navarra se deberá seguir el siguiente proceso:</p><p class=XL2>1.º Cumplimentar la declaración en el programa de ayuda.</p><p class=XL2>2.º Validar la declaración cumplimentada.</p><p class=XL2>3.º Enviar por Internet la declaración validada. En el envío se puede incluir más de una declaración, siempre que pertenezcan al mismo modelo y periodo.</p><p class=XA1>Una vez enviada la declaración, el sistema responderá con el número de recibo, fecha y hora de presentación. Posteriormente, cuando el envío haya sido validado y procesado, su resultado podrá ser comprobado desde la aplicación de consulta de declaraciones disponible en la dirección de Internet https://hacienda.navarra.es.</p><p class=XL1>2. La presentación de las autoliquidaciones correspondientes a los contribuyentes que, de conformidad con lo dispuesto en el Convenio Económico, tributen a ambas Administraciones y apliquen normativa distinta a la navarra, se efectuará del siguiente modo:</p><p class=XL2>a) Para la obtención de las declaraciones que deban presentarse ante la Comunidad Foral de Navarra, los contribuyentes conservarán una copia de la declaración presentada ante la Agencia Estatal de la Administración Tributaria o las Haciendas Forales del País Vasco, en fichero informático que se ajuste a los diseños de registro del modelo correspondiente definidos por estas últimas Administraciones.</p><p class=XL2>b) El mencionado fichero informático se presentará ante la Hacienda Foral de Navarra, siguiendo el siguiente proceso:</p><p class=XL3>1.º Acceder al trámite "Presentación de ficheros del Impuesto sobre Sociedades: normativa común", desde el Portal de Navarra a través de la siguiente dirección: https://hacienda.navarra.es.</p><p class=XL3>2.º Seleccionar la normativa y el modelo de la declaración a realizar, e importar el fichero.</p><p class=XL3>3.º Realizada la importación, utilizar la opción de enviar.</p><p class=XA2>El sistema validará la declaración cuando ésta sea correcta. Cuando se detecten errores se comunicarán a través del formulario y no se permitirá presentar la declaración hasta que sean corregidos.</p><p class=XA2>Una vez enviado el lote el sistema responderá con el número de recibo, fecha y hora de presentación. Posteriormente, cuando el envío haya sido validado y procesado, su resultado podrá ser comprobado desde la aplicación de consulta de declaraciones disponible en la dirección de Internet https://hacienda.navarra.es.</p><p class=XL2>c) Para efectuar el ingreso o solicitar la devolución que resulte de la autoliquidación, se utilizarán cualquiera de las formas expuestas en el artículo 7 apartados 1 y 2<a href='javascript:l(58604,"ar.7");'></a>, respectivamente.</p><p class=XL1>3. En aquellos casos en que se detecten anomalías de tipo formal en la transmisión electrónica de declaraciones, dicha circunstancia se pondrá en conocimiento del declarante por el propio sistema mediante los correspondientes mensajes de error, para que proceda a su subsanación.</p>
+<p><a name="Ar.6"></a><b>Artículo 6.</b>&nbsp<i>Documentos y justificantes a presentar junto con las declaraciones correspondientes al modelo S90.</i></p><p class=XA1>Los contribuyentes que deban acompañar documentación a su declaración correspondiente al modelo S90, cumplirán este requisito presentando dicha documentación dentro del plazo de declaración por cualquiera de los medios previstos en el artículo 16.4 <a href='javascript:l(13300,"ar.16");'></a> de la Ley 39/2015, de 1 de octubre, del Procedimiento Administrativo Común de las Administraciones Públicas.</p><p class=XA1>Los contribuyentes harán constar el año y número de registro de la citada documentación en su declaración del Impuesto en las casillas habilitadas al efecto. Podrán, igualmente, utilizar estas casillas para reflejar la presentación, por iniciativa propia, de documentación complementaria relativa a su declaración.</p><p class=XA1>La presentación de los documentos justificativos de la deducción por la realización de actividades de investigación y desarrollo e innovación tecnológica a que se refiere el artículo 61.7 <a href='javascript:l(38307,"ar.61");'></a> de la Ley Foral del Impuesto, se realizará a través del formulario que a tal efecto estará disponible en la página web de la Hacienda Foral de Navarra.</p>
+<p><a name="Ar.7"></a><b>Artículo 7.</b>&nbsp<i>Formas de Ingreso de la deuda tributaria o devolución de la cantidad resultante de la autoliquidación.</i></p><p class=XL1>1. El ingreso del importe resultante de las autoliquidaciones positivas del Impuesto sobre Sociedades y del Impuesto sobre la Renta de no Residentes correspondiente a establecimientos permanentes podrá hacerse efectivo:</p><p class=XL2>a) Mediante domiciliación del pago en una cuenta abierta en cualquiera de las entidades financieras colaboradoras en la gestión recaudatoria de la Hacienda Foral de Navarra siempre que el período impositivo coincida con el año natural.</p><p class=XL2>b) A través de la pasarela de pagos de Gobierno de Navarra (https://www.navarra.es/es/tramites/on/-/line/Ingreso-de-cantidades?pageBackId=7565891, Modelo P44), si la entidad financiera en la que está abierta la cuenta de cargo se encuentra adherida a dicha pasarela.</p><p class=XA2>La relación de entidades financieras adheridas a la pasarela de pagos se puede consultar en: https://www.navarra.es/es/hacienda/entidades-bancarias-aptas-para-el-pago.</p><p class=XL2>c) Mediante carta de pago modelo 712 necesaria para abonarla en entidad financiera colaboradora de Hacienda Foral de Navarra.</p><p class=XA1>Dicha carta de pago se obtendrá en el generador de impresos (https://hacienda.navarra.es/GImpresos/start.aspx).</p><p class=XA1>No podrá efectuarse el pago mediante transferencia bancaria.</p><p class=XL1>2. Si de la autoliquidación practicada resultase cantidad con derecho a devolución, habrá de indicarse, en el apartado de la declaración destinado al efecto, la entidad y cuenta donde haya de abonarse aquélla.</p>
+<p><a name="Df.Única"></a><b>Disposición Final Única.</b>&nbsp<i>Entrada en vigor.</i></p><p class=XA1>Esta orden foral entrará en vigor el 30 de abril de 2026.</p><p align=center><b>MODELO S-90. Impuesto sobre Sociedades y del Impuesto sobre la Renta de no Residentes correspondiente a establecimientos permanentes (PDF). </b></p>
+<p><a name="MODELO S-90. Impuesto sobre Socieda"></a><b>MODELO S-90. Impuesto sobre Sociedades y del Impuesto sobre la Renta de no Residentes correspondiente a establecimientos permanentes (PDF)</b></p><p class=XA1><a target='blank' href='https://www.iustel.com/contenidos/imagenes/058604. Imagen 1.pdf'>Vínculo a objeto</a></p><p class=XA1></p>
+</div>
+
+<div id="pie">
+<!--googleoff: all-->
+<a href="https://www.navarra.es" class="gobiernoNavarra">
+<img src="https://www.navarra.es/es/imgs/logo.gobierno-de-navarra.gif" alt="Gobierno de Navarra" />
+</a>
+<p>
+<a href="https://www.navarra.es/home_es/Indices/Sugerencias/default.htm" accesskey="c">Contacte con nosotros</a> |
+<a href="https://www.navarra.es/es/declaracion-de-accesibilidad" accesskey="2">Accesibilidad</a> |
+<a href="https://www.navarra.es/home_es/Aviso/avisoLegal.htm">Aviso legal</a> |
+</p>
+<!--googleon: all-->
+</div>
+</body>
+</html>

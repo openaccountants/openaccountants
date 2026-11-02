@@ -1,0 +1,506 @@
+[
+  {
+    "id": "PIT-001",
+    "lf": 31,
+    "section": "# Faroe Islands individual income tax v0.5",
+    "wording": "> **Checked against the law.** This Guide prepares income-year 2026 working papers. Selected current law and authority tables were read on 25 October 2026, with the church-tax, spouse and bounded part-year methods checked on 28 October; professional review is pending.",
+    "source": "Scope/operational/intake instruction or inherited trust/period framing; no separate positive entitlement. Legal/computational rows are supplied separately.",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "operational / precise limitation / metadata statement"
+  },
+  {
+    "id": "PIT-002",
+    "lf": 35,
+    "section": "## Who this applies to",
+    "wording": "Faroese domestic full liability arises from a home under Tax Act §1(1)(1), or, without a home, a stay of at least **180 days in a twelve-month period**, interrupted or not, under §1(1)(4). Exactly 180 meets that stay test; fewer days do not disprove the separate home test. Other statutory routes include specified students/apprentices abroad and seafarers. Determine commencement/cessation and treaty residence separately. Fully liable persons start with worldwide income under §25; nonresidents are limited to §2 categories. [Tax Act §§1–2, 25][tax]",
+    "source": "[tax §1](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF317–336, quote LF321: “180 dagar, annaðhvørt hann hevur verið burtur ímillum ella ikki.”; [tax §2](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF337–352, quote LF337: “§ 2. Avmarkaða skattskyldu hevur hvør persónur, og hvørt felag v.m., sum ikki kemur undir fyrimælini í 1.”; [tax §25](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF434–440, quote LF434: “§ 25. Fyri skattskylduga inntøku verður, við teimum avmarkanum og undantøkum, ið sett eru í hesari lóg, roknað”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-003",
+    "lf": 37,
+    "section": "## Who this applies to",
+    "wording": "Employees, sole traders, partners, investors and landlords require different schedules. Spouses are individually assessed under §4; allocate a joint business by actual participation and spouse remuneration by actual work. The municipal allowance equalisation in §4(1) is not general joint national-rate taxation. Children are separately taxable subject to §5's family-business wage and gifted-asset-income rules. [Tax Act §§4–5][tax]",
+    "source": "[tax §4](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF365–371, quote LF365: “§ 4. Hjúnafelagar verða hvør sær settir sjálvstøðugt í skatt av inntøkum sínum. Um skattskyldug inntøka hjá øðrum”; [tax §5](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF372–378, quote LF372: “§ 5. Børn verða sett sjálvstøðugt í skatt av allari inntøku síni.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-004",
+    "lf": 39,
+    "section": "## Who this applies to",
+    "wording": "Do not import Danish tax bands, an automatic 183-day exemption or a universal net-pay percentage. Pensions, social charges and separate capital tax require their own bases.",
+    "source": "Scope/operational/intake instruction or inherited trust/period framing; no separate positive entitlement. Legal/computational rows are supplied separately.",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "operational / precise limitation / metadata statement"
+  },
+  {
+    "id": "PIT-005",
+    "lf": 43,
+    "section": "## Rates, bands and thresholds",
+    "wording": "National tax on established annual ordinary taxable income `I`, in DKK:",
+    "source": "Scope/operational/intake instruction or inherited trust/period framing; no separate positive entitlement. Legal/computational rows are supplied separately.",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "operational / precise limitation / metadata statement"
+  },
+  {
+    "id": "PIT-006",
+    "lf": 47,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Below 65,000 | 0 | 2026; [Assessment Act §1(1)(1)][rate] |",
+    "source": "[rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF305: “1) Er inntøkan lægri enn kr. 65.000 verða 0% latin.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-007",
+    "lf": 48,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| 65,000 to below 180,000 | 13% × (I − 65,000) | 2026; [§1(1)(2)][rate] |",
+    "source": "[rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF306: “2) Er inntøkan kr. 65.000 ella hægri, men lægri enn kr. 180.000, verða kr. 0 latnar av kr. 65.000 og 13% av restini.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-008",
+    "lf": 49,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| 180,000 to below 330,000 | 14,950 + 15% × (I − 180,000) | 2026; [§1(1)(3)][rate] |",
+    "source": "[rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF307: “3) Er inntøkan kr. 180.000 ella hægri, men lægri enn kr. 330.000, verða kr. 14.950 latnar av kr. 180.000 og 15% av restini.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-009",
+    "lf": 50,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| 330,000 to below 450,000 | 37,450 + 20% × (I − 330,000) | 2026; [§1(1)(4)][rate] |",
+    "source": "[rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF308: “4) Er inntøkan kr. 330.000 ella hægri men lægri enn kr. 450.0000, verða kr. 37.450 latnar av kr. 330.000 og 20% av restini.”; original Act has literal “450.0000”; next band/TAKS current table confirm450,000.",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-010",
+    "lf": 51,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| 450,000 to below 600,000 | 61,450 + 25% × (I − 450,000) | 2026; [§1(1)(5)][rate] |",
+    "source": "[rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF309: “5) Er inntøkan kr. 450.000 ella hægri, men lægri enn kr. 600.000, verða kr. 61.450 latnar av kr. 450.000 og 25% av restini.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-011",
+    "lf": 52,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| At least 600,000 | 98,950 + 30% × (I − 600,000) | 2026; [§1(1)(6)][rate] |",
+    "source": "[rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF310: “6) Er inntøkan kr. 600.000 ella hægri, verða kr. 98.950 latnar av kr. 600.000 og 30% av restini.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-012",
+    "lf": 54,
+    "section": "## Rates, bands and thresholds",
+    "wording": "[TAKS's dated 2026 table][national] confirms those amounts. Adjacent formulas agree at the boundaries; no step tax is imposed on the whole income.",
+    "source": "[national](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-landsskatt) • national.reader.txt LF22: “Talva yvir landsskatt 2026”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-013",
+    "lf": 58,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Municipal exempt amount | First DKK 30,000 of the statutory ordinary base | 2026; [Tax Act §46][tax] |",
+    "source": "[tax §46](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF649–650, quote LF649: “0-30.000 kr.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-014",
+    "lf": 59,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Municipal rate / child credit | Exact municipality row; Tórshavnar 19% and DKK 9,000 per qualifying child | 2026; [TAKS municipal table][municipal]; [Tax Act §§46–47][tax] |",
+    "source": "[municipal](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt) • municipal.reader.txt LF53: “Tórshavnar19,000,6089.000”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-015",
+    "lf": 60,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Church tax | Members only; Tórshavn/Ternuryggur 0.85%, Argir/Borðan/Nólsoy 0.90%; check exact locality footnotes elsewhere | 2026; [TAKS table, footnote 8][municipal] |",
+    "source": "[municipal](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt) • municipal.reader.txt LF67: “8) Argir, Borðan og Nólsoy: 0,90. Tórshavn og Ternuryggur: 0,85.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-016",
+    "lf": 61,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| National child credit | DKK 10,700 if child under 7 on 1 January; DKK 7,500 if 7–17 | 2026; [Assessment Act §2][rate] |",
+    "source": "[rate §2](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF312–314, quote LF312: “10.700, um barnið er undir 7 ár 1. januar í tí álmanakkaári, sum skattsetingin viðvíkur, og ein barnafrádrátt”; [rate §2](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF312–314, quote LF312: “7.500, um barnið er millum 7 og 17 ár 1. januar í tí álmanakkaári, sum skattsetingin viðvíkur. Tá”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-017",
+    "lf": 62,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Specified pensioner national credit | Married DKK 10,500 / single DKK 16,200 for specified early/disability pensions; old-age pension credit up to DKK 6,000 | 2026; [Assessment Act §3][rate] |",
+    "source": "[rate §3](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF315–318, quote LF316: “10.500 kr.”; [rate §3](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF315–318, quote LF317: “16.200 kr.”; [rate §3](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF315–318, quote LF318: “6.000 kr. um árið.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-018",
+    "lf": 63,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| National/municipal/church income-tax ceiling | 50% of statutory taxable income; proportional reduction of the excess | 2026; [Tax Act §54(2)][tax] |",
+    "source": "[tax §54](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF685–686, quote LF686: “50% av skattskyldugu inntøkuni, verður tann ov nógv álíknaði inntøkuskatturin lækkaður lutfalsliga til landið, kommununa og kirkjuna.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-019",
+    "lf": 64,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Separate individual capital tax | 35% of positive §14 net gain | 2026; [Capital Income Act §14][capital] |",
+    "source": "[capital §14](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF413–416, quote LF414: “35%. Feløg og grunnar v.m. lata skatt upp á 18%. Vísir inntøkuuppgerðin eftir skattalógini hall, kunnu feløg og”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-020",
+    "lf": 65,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Eligible housing-interest support | 35% of qualifying interest; ordinary own-home interest base capped at DKK 100,000 per property, not per co-owner | 2026; [Interest Support Act §§3, 5][support] |",
+    "source": "[support §3](https://logir.fo/Logtingslog/148-fra-30-12-1996-um-studul-til-rentuutreidslur-av-lanum-sum-seinast-broytt-vid-logtingslog) • support.reader.txt LF317–325, quote LF323: “100.000 kr.”; [support §5](https://logir.fo/Logtingslog/148-fra-30-12-1996-um-studul-til-rentuutreidslur-av-lanum-sum-seinast-broytt-vid-logtingslog) • support.reader.txt LF328–333, quote LF333: “35%.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-021",
+    "lf": 66,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Qualifying residential gross-rental election | 25% above combined DKK 100,000 annual allowance; three-year binding election | 2026; [Assessment Act §8a][rate] |",
+    "source": "[rate §8 a](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF336–337, quote LF336: “100.000 kr. verður skattaður. Eiga persónar í felag hús o.tíl., er samlaði frádrátturin eftir hesum stykki kr. 100.000.”; [rate §8 a](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF336–337, quote LF336: “25%. Bert tann parturin av inntøkuni, sum fer upp um kr. 100.000 kr. verður skattaður. Eiga persónar í”; [rate §8 a](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF336–337, quote LF336: “trý ár í senn. Leiguinntøka, skattað eftir hesum stykki, verður ikki tikin við í skattagrundarlagið í § 1.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-022",
+    "lf": 67,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Specified limited-tax-liability A-income-only workers | 42% gross; qualifying FAS-equivalent shipping 35% under the stated tests | 2026; [Assessment Act §8(1)][rate] |",
+    "source": "[rate §8](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF333–335, quote LF333: “42% av bruttoinntøkuni. Tó verður skattur teirra, ið nevnd eru í § 2, stk. 1, litra j, sum”; [rate §8](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF333–335, quote LF333: “35% av bruttoinntøkuni. Skatturin hjá teimum, ið pkt. 2 nevndu persónum, fer 100% í landskassan.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-023",
+    "lf": 73,
+    "section": "### Ordinary income and deductions",
+    "wording": "Build separate schedules for wages/benefits, business profit, rents, foreign income and investments. Use the payroll Guide’s [dated 2026 benefit-value schedule](fo-payroll-contributions.md#ordinary-benefit-valuation) for ordinary housing, utilities, meals and cars, with its stated adjustment/exemption limits. A/B classification determines collection, not a new exemption. Tax Act §§57, 60–62 define the routes; doubt about classification is decided by TAKS under §62(2). Ordinary wage/A-income timing generally follows payment, with §28's backstop at the end of the following calendar year and acceleration when liability ceases. [Tax Act §§25, 28, 57, 60–62][tax]",
+    "source": "[tax §25](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF434–440, quote LF434: “§ 25. Fyri skattskylduga inntøku verður, við teimum avmarkanum og undantøkum, ið sett eru í hesari lóg, roknað”; [tax §28](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF458–461, quote LF458: “§ 28. Løn og onnur samsýning samb. starvssáttmála millum arbeiðsgevara og løntakara, sum liður í vanligu arbeiðsgongd arbeiðsgevarans,”; [tax §57](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF689–690, quote LF689: “§ 57. Skattur sambært 55. § verður goldin hjá skattskyldugum persónum í inntøkuárinum við fyribilsgjøldum, sum antin verða”; [tax §60](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF693–706, quote LF693: “§ 60. Sum A-inntøka verður roknað:”; [tax §61](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF707–709, quote LF707: “§ 61. Ein inntøka verður ikki roknað sum A-inntøka, tá hon verður goldin av:”; [tax §62](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF710–711, quote LF710: “§ 62. Landsstýrismaðurin í skattamálum kann, tá serligar grundir eru til tess, gera av, at ein ávís inntøka”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-024",
+    "lf": 75,
+    "section": "### Ordinary income and deductions",
+    "wording": "For business profit, reconcile sales and expenses, remove private withdrawals/use, correct inventory and replace accounting depreciation with the statutory asset schedule. Section 31 permits expenses incurred to earn, secure and maintain business income but expressly excludes ordinary expenses of earning A-income/personal employment income. Do not deduct an employee's ordinary work costs as sole-trader costs. Business interest/finance costs follow §33(1)(1), including its unpaid-interest clawback. Pre-trading research expenditure has the separate §32 start-year/next-three-years rule. Carry business losses under §33a only when not usable earlier; debt-release loss reductions must be applied. [Tax Act §§26, 31–33a][tax]",
+    "source": "[tax §26](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF454–456, quote LF454: “§ 26. Virðið á vørum og framleiðslum, sum skattgjaldarin hevur tikið út úr virki sínum til at nýta”; [tax §31](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF531–541, quote LF531: “§ 31. Tá skattskyldug inntøka verður uppgjørd, skal frá inntøkuni verða drigin rakstrarkostnaður, tó ikki rakstrarkostnaður, ið persónar”; [tax §33](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF543–574, quote LF544: “renturnar eru komnar til gjaldingar aftan á 31.12.1994. Rentuútreiðslur, sum eru komnar til gjaldingar í einum inntøkuári, og”; [tax §32](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF542–542, quote LF542: “§ 32. Annars skulu, tá inntøkan verður uppgjørd, dragast frá útreiðslur til royndar- og granskingarvirksemi, sum hin skattskyldugi”; [tax §33 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF575–577, quote LF575: “§ 33 a. Vísir skattauppgerðin hall, kann hetta verða drigið frá í skattskyldugu inntøkuni fylgjandi árini. Hall kann”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-025",
+    "lf": 77,
+    "section": "### Ordinary income and deductions",
+    "wording": "Equipment depreciation requires the Depreciation Act classification, pool, disposal and private-use rules. The ordinary exclusive-business pool maximum is 30%; qualifying items or positive pool remainders of DKK 20,000 or less have separate immediate-deduction rules. Keep the underlying asset evidence; the corporate Guide's [asset schedules](fo-corporate-income-tax.md) explain these shared provisions, without applying its company rate to a person. [Depreciation Act §§1–8][depreciation]",
+    "source": "[depreciation §1](https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174) • depreciation.reader.txt LF304–310, quote LF304: “§ 1. 1) Tær reglur, sum í hesi lóg eru settar um skattligar avskrivingar v.m. verða nýttar viðvíkjandi”; [depreciation §2](https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174) • depreciation.reader.txt LF311–316, quote LF315: “30% av avskrivingarbæra saldovirðinum. Er avskrivingarbæra saldovirðið áðrenn inntøkuársins avskriving 20.000 krónur ella lægri, kann upphæddin til fulnar”; [depreciation §2](https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174) • depreciation.reader.txt LF311–316, quote LF315: “20.000 krónur ella lægri, kann upphæddin til fulnar verða drigin frá.”; [depreciation §3](https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174) • depreciation.reader.txt LF317–321, quote LF317: “§ 3. 3) 5) Útveganarpeningur fyri rakstrargøgn við virði av 20.000 krónum ella minni kann til fulnar verða”; [depreciation §4](https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174) • depreciation.reader.txt LF322–324, quote LF322: “§ 4. 3) Hevur tann skattskyldugi í inntøkuárinum selt eitt av teimum rakstrargøgnum, sum røtt er um í”; [depreciation §5](https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174) • depreciation.reader.txt LF325–327, quote LF325: “§ 5. 5) Er saldoin vorðin negativ av tí, at sølupeningur v.m. skal dragast frá í avskrivingargrundarlagnum, og”; [depreciation §7](https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174) • depreciation.reader.txt LF340–342, quote LF340: “§ 7. Maskinur, innbúgv og tílík rakstrargøgn, sum verða nýtt bæði til vinnu og til eginnýtslu, skulu verða”; [depreciation §8](https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174) • depreciation.reader.txt LF343–345, quote LF343: “§ 8. Verður eitt av teimum rakstrargøgnum, sum eru umrødd í hesum kapitli, selt, kann avskriving ikki verða”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-026",
+    "lf": 79,
+    "section": "### Ordinary income and deductions",
+    "wording": "Before finalising an individual's depreciation or investment-fund deduction, apply Tax Act §31(2)–(6)'s separate **personal-consumption floor**. If taxable income is below the statutory consumption computation, increase income toward that amount, but by no more than the depreciation/investment-fund deductions covered by the rule. Section 31(4) excludes year-bound depreciation that would otherwise be lost. Under §31(5), the denied depreciation is treated as not taken in that year; preserve it in the asset records instead of losing it or deducting it twice. For spouses, the statutory consumption calculation includes both spouses' full-year income and opening/closing assets and liabilities. This floor is distinct from an asset's private-use adjustment. Obtain the actual consumption working paper before confirming the base. [Tax Act §31(2)–(6)][tax]",
+    "source": "[tax §31](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF531–541, quote LF537: “Stk. 2. Um ein persónur, sum er skattskyldugur sambært § 1, hevur gjørt skattligar avskrivingar ella avsetingar í”; [tax §31](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF531–541, quote LF539: “Stk. 4. Skattligu avskrivingarnar í 2. stk. fevna ikki um avskrivingar, sum eru bundnar til tað ávísa árið,”; [tax §31](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF531–541, quote LF540: “Stk. 5. Skattskyldugur persónur, hvørs inntøka er hækkað sambært regluni í 2. stk., missir tó ikki hesar avskrivingar”; [tax §31](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF531–541, quote LF541: “Stk. 6. Tá skattliga eginnýtslan hjá hjúnum verður gjørd upp, verður inntøkan hjá hjúnunum fyri alt inntøkuárið og”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-027",
+    "lf": 81,
+    "section": "### Ordinary income and deductions",
+    "wording": "Regulation 98/1987 §1 gives the ordinary indirect consumption calculation: opening net assets plus taxable income, asset increases outside taxable income, deductions that did not reduce assets and nontaxable valuation increases; subtract non-consumption asset reductions not deducted in arriving at income, taxable income that did not increase assets, nondeductible valuation decreases and closing net assets. Reconcile each component. A direct calculation is permitted where acceptable annual accounts include all income/expenses and opening/closing assets/liabilities. Apply §2's particular spouse, separation and death rules rather than mechanically combining every household. [Regulation 98/1987 §§1–3][consumption]",
+    "source": "[consumption §1](https://logir.fo/Kunngerd/98-fra-14-12-1987-um-uppgerd-av-skattligu-eginnytsluni) • consumption.reader.txt LF298–310, quote LF298: “§ 1. Tann skattliga uppgerðin av eginnýtsluni sambært § 31, 2. stk. verður gjørd óbeinleiðis við støði í”; [consumption §2](https://logir.fo/Kunngerd/98-fra-14-12-1987-um-uppgerd-av-skattligu-eginnytsluni) • consumption.reader.txt LF311–314, quote LF311: “§ 2. Tá ið skattliga eginnýtslan hjá hjúnum, sum eru samskattað við enda inntøkuársins, verður uppgjørd, verður samlaða”; [consumption §3](https://logir.fo/Kunngerd/98-fra-14-12-1987-um-uppgerd-av-skattligu-eginnytsluni) • consumption.reader.txt LF315–359, quote LF315: “§ 3. Henda kunngerð fær gildi frá og við inntøkuárinum 1987.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-028",
+    "lf": 83,
+    "section": "### Ordinary income and deductions",
+    "wording": "Eligible paid pension contributions have deduction/exclusion under Pension Act §12(3)–(4) in the year contributed, including the specified voluntary payments. Do not deduct the same payment twice. The pension contribution itself has a separate pension tax under §12(2)/annex 1, with provisional 40% withholding and final income-linked rates; a personal income-tax deduction does not make the pension payment tax-free. Mandatory contribution funding, exceptions and collection are in the [payroll Guide](fo-payroll-contributions.md). [Pension Act §§2, 12 and annex 1][pension]",
+    "source": "[pension §12](https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum) • pension.reader.txt LF411–420, quote LF412: “40% í eftirlønarskatti, og tá skattauppgerðin er endalig, og endaliga skattskylduga ársinntøkan er staðfest, verður avlopsskattur teirra, sum”; [pension §12](https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum) • pension.reader.txt LF411–420, quote LF413: “Stk. 3. 1) 4) Tað er frádráttarrættur ávikavist burtursíggingarrættur í skattskyldugu inntøkuni fyri inngjøld eftir hesi løgtingslóg til”; [pension §12](https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum) • pension.reader.txt LF411–420, quote LF414: “Stk. 4. Frádrátturin í skattskyldugu inntøkuni fylgir inntøkuárinum, har eftirlønarinngjaldið er farið fram.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-029",
+    "lf": 87,
+    "section": "### Family, municipality and ceiling",
+    "wording": "For a full-year cohabiting spouse case under §4, first establish each spouse's own taxable income. Where the lower nonnegative income is below DKK 30,000 and the other is above it, the ordinary adjustment transfers the unused amount: `transfer = 30,000 − lower income`; raise the lower income to DKK 30,000 and reduce the higher income by that transfer. TAKS expressly illustrates DKK 20,000 / 300,000 becoming DKK 30,000 / 290,000, and DKK 0 / 300,000 becoming DKK 30,000 / 270,000, automatically at year-end. Keep the spouses separately assessed on the adjusted bases. This bounded method does not settle negative-income, separation, death or part-year spouse cases. [Tax Act §4][tax]; [TAKS spouse adjustment][spouse]",
+    "source": "[tax §4](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF365–371, quote LF365: “§ 4. Hjúnafelagar verða hvør sær settir sjálvstøðugt í skatt av inntøkum sínum. Um skattskyldug inntøka hjá øðrum”; [spouse](https://www.taks.fo/fo/borgari/fradrattur/hjunafradrattur) • spouse.reader.txt LF26: “Tjenar annað 20.000 og hitt 300.000, verður munurin upp til botnfráttin mótroknaður, og fyrra inntøkan sett til 30.000 og seinna til 290.000.”; [spouse](https://www.taks.fo/fo/borgari/fradrattur/hjunafradrattur) • spouse.reader.txt LF25: “Tjenar annað hjúnið einki og hitt 300.000, verður fyrra inntøkan sett til 30.000 og tann seinna til 270.000. Hetta verður gjørt sjálvvirkandi”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-030",
+    "lf": 89,
+    "section": "### Family, municipality and ceiling",
+    "wording": "For national child credit, establish full liability, required residence, custody/child's home, child age on 1 January and child's Faroese residence or retained full liability while studying abroad. Apply the recipient/transfer rules and proportional reduction where the recipient's liability covers only part of the year. A child taken into statutory care ends entitlement. The credit reduces tax, not taxable income; an excess is refundable under §2(3). [Assessment Act §2][rate]",
+    "source": "[rate §2](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF312–314, quote LF312: “§ 2. 22) 23) 24) 25) 4) 26) 27) 28) 29) 2) 30) 31) Persónur, ið er undir”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-031",
+    "lf": 91,
+    "section": "### Family, municipality and ceiling",
+    "wording": "Determine the tax municipality under §§41–44, ordinarily residence on 1 December before the income year, with commencement/move rules. Apply the current municipal child credit separately from the national amount. TAKS explains the written agreement/preliminary-registration process for transferring or sharing eligible credit and the refund treatment where credit exceeds tax. Preserve the actual allocation rather than giving both parents the full credit. Pensioner national credits have separate eligibility under Assessment Act §3; unused credit transfers to municipal tax only up to that tax under Tax Act §47(2). [Tax Act §§41–47][tax]; [Assessment Act §§2–3][rate]; [TAKS child credit][child]",
+    "source": "[tax §41](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF636–641, quote LF636: “§ 41. Skyldu at svara skatt til kommununa hava allir persónar og feløg v.m., sum hava skattskyldu til”; [tax §42](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF642–642, quote LF642: “§ 42. Hevur persónur tilhald í eini kommunu, av tí at hann er á sjúkrahúsi ella er settur”; [tax §43](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF643–644, quote LF643: “§ 43. Bygda(r)ráðið kann, um tað ikki heldur, at skattakommunan hjá einum skattskyldugum 1. desember er tann rætta”; [tax §44](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF645–647, quote LF645: “§ 44. Flytur skattgjaldarin úr skattakommununi í inntøkuárinum, skal skattakommunan lata ein part av tí kommunuskatti, sum er”; [tax §46](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF649–650, quote LF649: “§ 46. Kommunuskatturin verður álíknaður av somu skattskyldugu inntøku, sum nýtt verður, tá landsskatturin verður álíknaður. Frá 1.”; [tax §47](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF653–657, quote LF653: “§ 47. Allar skattskyldugar inntøkur, sum eru funnar eftir reglunum í hesari lóg, undantiknar tær, sum nevndar eru”; [rate §2](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF312–314, quote LF312: “§ 2. 22) 23) 24) 25) 4) 26) 27) 28) 29) 2) 30) 31) Persónur, ið er undir”; [rate §3](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF315–318, quote LF315: “§ 3. 6) 35) 36) 37) 38) Persónur, sum fær fyritíðarpensjón ella framskundaða pensjón, fær í útroknaða landsskattinum”; [child](https://www.taks.fo/fo/borgari/fradrattur/barnafradrattur) • child.reader.txt LF50: “skulu teir senda TAKS eitt fyribilsskattaskrásetingarskjal.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-032",
+    "lf": 93,
+    "section": "### Family, municipality and ceiling",
+    "wording": "For municipal calculation, §47 directs rounding taxable income down to a multiple of DKK 100 before computing the tax. Keep that rounding distinct from payment rounding. Compute each national/municipal/church component, eligible credits and the §54(2) proportional ceiling adjustment in a traceable schedule. The ceiling does not establish a 50% limit on every tax, contribution and pension outflow together. Use the bounded part-year method below; unusual credit/ceiling interactions require the additional checks listed in Sources. [Tax Act §§24(2), 46–47, 54(2)][tax]",
+    "source": "[tax §47](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF653–657, quote LF653: “býtast við 100. Bygdaráðið ásetur líkningarprosentið fyri kommunuskatt, sum er galdandi fyri álmanakkaárið eftir, í seinasta lagi 1.”; [tax §54](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF685–686, quote LF686: “50% av skattskyldugu inntøkuni, verður tann ov nógv álíknaði inntøkuskatturin lækkaður lutfalsliga til landið, kommununa og kirkjuna.”; [tax §24](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF430–433, quote LF430: “§ 24. Í hesi lóg merkir inntøkuárið tað roknskaparskeið, sum hin skattskylduga inntøkan er vunnin í. Skattskylduga inntøkan”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-033",
+    "lf": 95,
+    "section": "### Family, municipality and ceiling",
+    "wording": "For an ordinary full-year church member, calculate church tax on the ordinary municipal income base **after the DKK 30,000 exempt amount**, using the actual parish rate. Church Finance Act §§11–13 separates national and local church rates and uses the municipal collection rules. The official 2024 audit report expressly confirms that TAKS calculates church tax in the same way as municipal tax, deducting the municipal exempt amount first. Read with Tax Act §§46–47, the working-paper base is `max(income rounded down to DKK 100 − 30,000, 0)`. Apply the church rate to that base separately; a municipal child credit does not reduce the base. The report also records the Finance Ministry's explanation that the special 42%/35% limited-liability gross levy does not attract an additional church charge. This full-year method does not settle changes of membership during a year, part-year allowances or final sub-krone settlement rounding. [Church Finance Act §§11–14][church]; [Tax Act §§46–47][tax]; [Landsgrannskoðanin, 2024 report §4.10, pp. 44–46][church-audit]; [2026 parish rates][municipal]",
+    "source": "[church §11](https://logir.fo/Logtingslog/61-fra-07-06-2007-um-figgjarvidurskifti-folkakirkjunnar) • church.reader.txt LF347–348, quote LF347: “§ 11. Limur í fólkakirkjuni rindar landskirkjuskatt í mun til skattskyldugu inntøkuna.”; [church §12](https://logir.fo/Logtingslog/61-fra-07-06-2007-um-figgjarvidurskifti-folkakirkjunnar) • church.reader.txt LF349–351, quote LF349: “§ 12. Landsstýrismaðurin ásetir kirkjuskattaprosentið eftir tilmæli frá stiftsstjórnini.”; [church §13](https://logir.fo/Logtingslog/61-fra-07-06-2007-um-figgjarvidurskifti-folkakirkjunnar) • church.reader.txt LF352–356, quote LF352: “§ 13. Landsstýrismaðurin kann loyva, at limir fólkakirkjunnar í kirkjusóknini rinda staðbundnan kirkjuskatt eftir somu reglum sum landskirkjuskatt”; [church §14](https://logir.fo/Logtingslog/61-fra-07-06-2007-um-figgjarvidurskifti-folkakirkjunnar) • church.reader.txt LF357–358, quote LF357: “§ 14. Tann, sum ikki er limur í fólkakirkjuni gevur Toll- og Skattstovu Føroya boð, ynskir viðkomandi at”; [tax §46](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF649–650, quote LF649: “§ 46. Kommunuskatturin verður álíknaður av somu skattskyldugu inntøku, sum nýtt verður, tá landsskatturin verður álíknaður. Frá 1.”; [tax §47](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF653–657, quote LF653: “§ 47. Allar skattskyldugar inntøkur, sum eru funnar eftir reglunum í hesari lóg, undantiknar tær, sum nevndar eru”; [Official2024 audit report §4.10 printed44–46](https://lg.fo/download/file/f3e290b4e758ae966b65955f9beb36e8c540831d.pdf), root selected readerLF2191–2330; printed45 visual retained from root. This writer read2273–2275 and2324–2338 plus surrounding context. Exact original anchors LF2273–2274: “Kirkjuskatturin verður roknaður og kravdur inn umvegis skattaskipanina á sama hátt” / “sum kommuskatturin, t.v.s. at botnfrádrátturin í kommunuskattinum verður drigin frá”. This2024 administrative description is bridged to current Act11–14/Tax46–47; historical rates are not adopted.; [municipal](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt) • municipal.reader.txt LF67: “8) Argir, Borðan og Nólsoy: 0,90. Tórshavn og Ternuryggur: 0,85.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-034",
+    "lf": 99,
+    "section": "### Ordinary arrival and departure during the year",
+    "wording": "Liability continues while the statutory residence/source conditions are met. Acquiring a home without actually taking up residence does not itself start the home-based route; the 180-day stay route instead starts retrospectively from the first qualifying arrival. Preserve the actual home, arrival/departure and presence evidence. A registration date alone does not decide tax residence. A home retained after departure requires the actual facts to be assessed. [Tax Act §§1, 6–8][tax]; [TAKS VLS C.1][residence]",
+    "source": "[tax §1](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF317–336, quote LF317: “§ 1. Fulla skattskyldu hevur:”; [tax §6](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF379–380, quote LF379: “§ 6. Skattskyldan stendur við í tí tíðarskeiði, har treytirnar í 1. og 2. § eru loknar, tó”; [tax §7](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF381–382, quote LF381: “§ 7. Hjá persónum, sum fáa sær bústað í Føroyum uttan at seta búgv her, tekur skattskyldan sambært”; [tax §8](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF383–383, quote LF383: “§ 8. Hjá persónum, sum nevndir eru í 1. § nr. 4, tekur skattskyldan við frá tí degi,”; [residence](https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/c-subjektiv-skattskylda-likamligir-personar-tviskatting) • residence.reader.txt LF58: “Full skattskylda verður tí ikki stovnað treytaleyst við eitt og hvørt bústaðarkeyp í Føroyum, tí § 7 stk. 2 í skattalógini ásetir,”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-035",
+    "lf": 101,
+    "section": "### Ordinary arrival and departure during the year",
+    "wording": "For a bounded 2026 ordinary resident period with no credits, church membership, foreign relief, spouse transfer or special-rate income, §24(2) requires conversion to full-year income. The TAKS 2026 calculator demonstrates the administrative sequence: actual taxable income × `365 / taxable days`, rounded down to DKK 100; compute the current full-year national and municipal taxes on that annualised base, then multiply their sum by `taxable days / 365`. The municipal exempt amount is applied in the annual calculation before this reduction. Treat this as the observed calculator working-paper method, not an express statutory rounding rule for every component. [Tax Act §§24(2), 46–47][tax]; [TAKS calculator guidance][calculator-info]; [TAKS 2026 calculator][calculator]",
+    "source": "[tax §24](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF430–433, quote LF431: “Stk. 2. Inntøkuárið hjá persónliga skattskyldugum er álmanakkaárið fyri ta endaligu álíkningina. Er inntøkuuppgerðin fyri eitt styttri tíðarskeið”; [tax §46](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF649–650, quote LF649: “§ 46. Kommunuskatturin verður álíknaður av somu skattskyldugu inntøku, sum nýtt verður, tá landsskatturin verður álíknaður. Frá 1.”; [tax §47](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF653–657, quote LF653: “§ 47. Allar skattskyldugar inntøkur, sum eru funnar eftir reglunum í hesari lóg, undantiknar tær, sum nevndar eru”; [Official2026 calculator](https://www.eskatt.fo/sjtp/sjtpsim.aspx), ROOT-observed synthetic public browser output, not replayed by this ledger writer. Preserved AX receipt calculator-180days-150000.ax.txt LF98–183: “Skattskyldugt dagatal”, “180”, “304.100,00”, “85.644,00”, “42.235,40”, “42.235,00”, “4.500,00”; input150.000; “Tal av børnum: 0”; “Úrslitið er bert ein fyribils útrokning.” The separately displayed6.500 child-credit parameter is explicitly EXCLUDED in favour of current law10.700/7.500. Source/fact, not an acquired taxpayer award.",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-036",
+    "lf": 103,
+    "section": "### Ordinary arrival and departure during the year",
+    "wording": "**Observed control, not a client assessment:** for DKK 150,000 income over 180 taxable days in Tórshavn, without church tax or any credit, the official calculator shows annualised income DKK 304,100, gross annual tax DKK 85,644 and reduced tax DKK 42,235.40; its final income-tax display is DKK 42,235. The unrounded annual equivalent is DKK 304,166.67. This recomputes as national DKK 33,565 plus municipal DKK 52,079, then ×180/365. Its separately displayed 3% AM charge is DKK 4,500 on actual income. The calculator is expressly indicative. Its displayed child-credit amount differs from the current Assessment Act, so no child-credit result is adopted from it. Part-year credits, spouse cases, changing church membership and final settlement rounding remain separate questions. [Assessment Act §§1–2][rate]; [TAKS calculator][calculator]",
+    "source": "[rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF304: “§ 1. 1) 3) 4) 5) 6) 7) 8) 9) 10) 11) 12) 13) 14) 15) 16) 17)”; [rate §2](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF312–314, quote LF312: “§ 2. 22) 23) 24) 25) 4) 26) 27) 28) 29) 2) 30) 31) Persónur, ið er undir”; [Official2026 calculator](https://www.eskatt.fo/sjtp/sjtpsim.aspx), ROOT-observed synthetic public browser output, not replayed by this ledger writer. Preserved AX receipt calculator-180days-150000.ax.txt LF98–183: “Skattskyldugt dagatal”, “180”, “304.100,00”, “85.644,00”, “42.235,40”, “42.235,00”, “4.500,00”; input150.000; “Tal av børnum: 0”; “Úrslitið er bert ein fyribils útrokning.” The separately displayed6.500 child-credit parameter is explicitly EXCLUDED in favour of current law10.700/7.500. Source/fact, not an acquired taxpayer award.",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-037",
+    "lf": 107,
+    "section": "### Capital income, rentals and interest support",
+    "wording": "Separate non-business securities/claims/debt/options/dividends/interest under the Capital Income Act. Securities gains generally use realised proceeds less acquisition basis and FIFO for equal-right shares; business-related investments instead follow §3's ordinary-income route, subject to its irrevocable mark-to-market election. For individuals, §6(4)'s DKK 1,000 annual claim/debt-gain threshold and listed-instrument loss condition are specific rules, not a general allowance against all share gains. Private interest income enters the separate §14 computation under §10, subject to express exemptions. [Capital Income Act §§1, 3–10][capital]",
+    "source": "[capital §1](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF309–320, quote LF309: “§ 1. 1) 2) 3) 4) 5) Reglurnar í hesi løgtingslóg fevna um:”; [capital §3](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF346–352, quote LF346: “§ 3. Vinningur ella tap sambært § 1, sum er liður í skattgjaldarans vinnuliga virksemi, verður roknað upp”; [capital §4](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF353–356, quote LF353: “§ 4. Vinningur ella tap sambært § 1, nr. 1 skulu roknast við í uppgerðina av skattskyldugu inntøkuni”; [capital §6](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF362–368, quote LF365: “1.000 kr. samanlagt um árið. Tap kann bert dragast frá í uppgerðini av skattskyldugu inntøkuni eftir § 14”; [capital §7](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF369–371, quote LF369: “§ 7.9) Vinningur ella tap við eftirgeving, fyrning, samanrenning, fyrilokan av skuld og orsakað av endurskipan og sjálvbodnari”; [capital §8](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF372–374, quote LF372: “§ 8. Vinningur ella tap av keyps- og sølurættindum, ið eru fevnd av § 1, nr. 4 skulu”; [capital §9](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF375–377, quote LF375: “§ 9. 1) 5) Vinningsbýti verður roknað við í uppgerðina av skattskyldugu inntøkuni eftir § 14. Feløg og”; [capital §10](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF378–385, quote LF378: “§ 10. 1) 3) 4) Fyri likamligar persónar og deyðsbúgv verða rentuinntøkur, undantikið negativar rentur av lánum, sum”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-038",
+    "lf": 109,
+    "section": "### Capital income, rentals and interest support",
+    "wording": "Aggregate eligible §14 categories, carry unused capital losses to the earliest available future capital net gains, and apply 35% to a positive balance. Do not deduct a private capital loss against salary. Reconcile dividend/bank-interest withholding and the separate assessment under §§15–18 instead of taxing the same receipt twice. Pension-scheme investments excluded by §1(5) are not an ordinary private portfolio. Gifts, inheritance and family succession have separate §§11–13 rules. [Capital Income Act §§1, 11–18][capital]",
+    "source": "[capital §1](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF309–320, quote LF309: “§ 1. 1) 2) 3) 4) 5) Reglurnar í hesi løgtingslóg fevna um:”; [capital §11](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF386–387, quote LF386: “§ 11. Latan og móttøka av gávu ella arvaforskoti verða roknað sum avhending og útvegan. Avhendingarupphæddin og útveganarupphæddin”; [capital §12](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF388–391, quote LF388: “§ 12. Tá vinningur ella tap í sambandi við útlutan av teimum í § 1 nevndu ognum úr”; [capital §13](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF392–404, quote LF392: “§ 13. Við avhendan í livandi lívi av teimum í §1, nr. 1 nevndu virðisbrøvum kunna partarnir við”; [capital §14](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF413–416, quote LF414: “35%. Feløg og grunnar v.m. lata skatt upp á 18%. Vísir inntøkuuppgerðin eftir skattalógini hall, kunnu feløg og”; [capital §15](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF421–424, quote LF421: “§ 15. 10) 1) 5) Feløg og grunnar o.o., sum útluta vinningsbýti til likamligar persónar og deyðsbúgv, skulu”; [capital §16](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF425–428, quote LF425: “§ 16. Renta, sum føroyskir peningastovnar og postgiro geva likamligum persónum og deyðsbúgvum av innistandandi peningi, herav ábyrgdarpeningi”; [capital §18](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF430–437, quote LF430: “§ 18. 1) 7) 5) Tað áliggur skattskylduga at geva upp skattskyldugu upphæddina sambært § 14 um talgilda”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-039",
+    "lf": 111,
+    "section": "### Capital income, rentals and interest support",
+    "wording": "Residential rent can follow ordinary accounts or the §8a gross election. The DKK 100,000 allowance is combined where there are co-owners, and the election binds for three years. TAKS requires qualifying direct residential letting for at least three months with the tenant actually resident; do not extend the election to short-stay tourism. Ordinary rental accounts require their own expense and asset schedules. [Assessment Act §8a][rate]; [TAKS housing/rents][rent]",
+    "source": "[rate §8 a](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF336–337, quote LF336: “§ 8 a. 15) 54) 55) 56) 57) Inntøka, ið stavar frá útleigan av húsum o.tíl. til bústað,”; [rent](https://www.taks.fo/fo/borgari/skattur/skattur-og-husaleiga) • rent.reader.txt LF26: “tríggjar mánaðir, ella um leigarin ikki hevur adressu á staðnum. Tað kann til dømis vera, um bústaðurin verður brúktur sum feriubústaður ella”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-040",
+    "lf": 113,
+    "section": "### Capital income, rentals and interest support",
+    "wording": "For personal housing/student/other specified borrowing, the separate Interest Support Act supplies relief instead of a general private-interest deduction. Establish full liability and the actual loan purpose/date, qualifying own home and ownership. Home support is capped per property and commissions are excluded. Mixed home/business property is expressly treated under this Act by §2a; mixed-purpose loans must first be split. Negative loan interest reduces eligible expense, and double reimbursement is prohibited. Apply on the required form with bank evidence; the ordinary own-home formula is min(eligible interest, 100,000) × 35%, subject to all eligibility rules. Student loans and older borrowing do not automatically share that property cap. [Interest Support Act §§1–8][support]",
+    "source": "[support §1](https://logir.fo/Logtingslog/148-fra-30-12-1996-um-studul-til-rentuutreidslur-av-lanum-sum-seinast-broytt-vid-logtingslog) • support.reader.txt LF297–301, quote LF297: “§ 1. 1) Rætt til rentustuðul eftir hesi lóg hevur ein og hvør persónur, sum”; [support §2](https://logir.fo/Logtingslog/148-fra-30-12-1996-um-studul-til-rentuutreidslur-av-lanum-sum-seinast-broytt-vid-logtingslog) • support.reader.txt LF302–313, quote LF302: “§ 2. 2) Rentustuðul verður veittur fyri rentur”; [support §2 a](https://logir.fo/Logtingslog/148-fra-30-12-1996-um-studul-til-rentuutreidslur-av-lanum-sum-seinast-broytt-vid-logtingslog) • support.reader.txt LF314–316, quote LF314: “§ 2 a.1) 9) 2) Verða eini hús v.m. nýtt til bæði bústað og vinnuligt endamál, verða samlaðu”; [support §3](https://logir.fo/Logtingslog/148-fra-30-12-1996-um-studul-til-rentuutreidslur-av-lanum-sum-seinast-broytt-vid-logtingslog) • support.reader.txt LF317–325, quote LF323: “100.000 kr.”; [support §4](https://logir.fo/Logtingslog/148-fra-30-12-1996-um-studul-til-rentuutreidslur-av-lanum-sum-seinast-broytt-vid-logtingslog) • support.reader.txt LF326–327, quote LF326: “§ 4. Rentustuðul verður veittur fyri rentuútreiðslur sambært uppgerð frá viðkomandi peningastovni.”; [support §5](https://logir.fo/Logtingslog/148-fra-30-12-1996-um-studul-til-rentuutreidslur-av-lanum-sum-seinast-broytt-vid-logtingslog) • support.reader.txt LF328–333, quote LF333: “35%.”; [support §7](https://logir.fo/Logtingslog/148-fra-30-12-1996-um-studul-til-rentuutreidslur-av-lanum-sum-seinast-broytt-vid-logtingslog) • support.reader.txt LF360–362, quote LF360: “§ 7. Rentustuðul verður bert veittur eftir umsókn.”; [support §8](https://logir.fo/Logtingslog/148-fra-30-12-1996-um-studul-til-rentuutreidslur-av-lanum-sum-seinast-broytt-vid-logtingslog) • support.reader.txt LF363–364, quote LF363: “§ 8. 2) Fær ein persónur v.m. endurgjald á annan hátt fyri rentuútreiðslur, hevur hesin persónur v.m. samstundis”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-041",
+    "lf": 117,
+    "section": "### Special work categories",
+    "wording": "Screen foreign-work §25b income and its exclusions before applying Assessment Act §1(2)'s 35% route. For 2026, Tax Act §33(1)(13) allows its 30% deduction capped at DKK 48,000, subject to §33(2)'s transitional maximum DKK 96,000 for the stated 2024 Nordic-relief population. The distinct foreign-work expense allowance under §33(1)(12) is DKK 120 per qualifying day in 2026, with its two-continuous-month/100-day stay tests and income cap; do not stack it onto excluded §25b income. [Tax Act §§25b, 33(1)(12)–(13), (2)][tax]; [Assessment Act §1(2)][rate]",
+    "source": "[tax §25 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF452–453, quote LF452: “§ 25 b. Sum skattskyldug inntøka fyri arbeiði uttanlands verður bert roknað skattskyldug inntøka, sum hin skattskyldugi í”; [tax §33](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF543–574, quote LF558: “c) 2026 og frameftir: kr. 120.”; [tax §33](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF543–574, quote LF561: “48.000.”; [tax §33](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF543–574, quote LF572: “96.000.”; [rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF311: “35%. Í tann mun, tey í 1. pkt. nevndu hava skyldu til at rinda inngjald sbrt. løgtingslóg um eftirlønarsamansparing og skatt av eftirløn og rentutryggingum, verður skattur teirra ásettur eftir frádrátt fyri hetta inngjald. Skatturin verður býttur við 50% sum”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-042",
+    "lf": 119,
+    "section": "### Special work categories",
+    "wording": "The statutory fishing-income deduction is 14% of qualifying catch income up to DKK 300,000 under §33(1)(17). Qualifying apprentices have up to DKK 50,000 annual deduction, proportional to qualifying days, under §33(1)(19); an ordinary student internship is not an apprenticeship. FAS/DIS, frontier work, overseas public service and treaty exemptions still require their own facts and authority. [Tax Act §33(1)(17), (19)][tax]",
+    "source": "[tax §33](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF543–574, quote LF565: “14% av veiðiinntøkuni upp til:”; [tax §33](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF543–574, quote LF567: “300.000 fyri 2025 og fylgjandi ár.”; [tax §33](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF543–574, quote LF569: “50.000 árliga av skattskyldugari inntøku hjá lærlingum. Sum lærlingur er at meta persónur, ið er fevndur av einum”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-043",
+    "lf": 123,
+    "section": "## Deadlines and filing",
+    "wording": "Ordinary individual returns are due **1 May following the income year**, subject to the specified §100(3) exceptions, including its §2 nonresident category deadline. A correct and complete issued statement can remove the separate return requirement under §101(2); an absent form does not. A permitted extension cannot pass **15 August** under §105. Self-employed accounts and the applicable property statement accompany filing, with accounts submitted on Borgaragluggin. For ordinary calendar-year 2026 resident filing, the starting date is 1 May 2027; verify the actual issued assessment and any extension. [Tax Act §§100–105][tax]; [TAKS returns][returns]",
+    "source": "[tax §100](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF799–804, quote LF801: “1. mai árið eftir, smb. tó § 101 stk. 2. Sjálvuppgávur frá deyðsbúgvum, feløgum, felagsskapum v.m. smb. §”; [tax §101](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF805–806, quote LF805: “§ 101. 1) Oyðubløð við navni, bústaði og persónstali v.m. til sjálvuppgávur verða gjørd eftir skipan landsstýrismansins í”; [tax §103](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF810–812, quote LF810: “§ 103. 1) Øll tey, ið hava skyldu at føra bókhald, eins og deyðsbúgv, feløg, felagsskapir, stovnar v.m.”; [tax §105](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF817–819, quote LF817: “15. august í álíkningarárinum.”; [returns](https://www.taks.fo/en/individuals/tax/tax-return) • returns.reader.txt LF40: “1 May”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-044",
+    "lf": 125,
+    "section": "## Deadlines and filing",
+    "wording": "Update preliminary registration where expected income changes. B-tax is ordinarily due on the first of each month, payable through the 20th, with weekend/public-holiday extension; if annual B-tax is **below** DKK 1,000, two instalments fall on 1 June and 1 December under §74. Extra voluntary preliminary payment can be made by **31 January** of the assessment year under §76. [Tax Act §§67–76][tax]",
+    "source": "[tax §67](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF734–737, quote LF734: “§ 67. Grundarlagið undir fyribils skattgjaldingini er fyribilsskattaskrásetingin, sum verður gjørd eftir reglunum í 67.-76. §§.”; [tax §74](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF748–748, quote LF748: “1.000 kr. fellur B-skatturin til gjaldingar í tveimum líka stórum gjøldum hin 1. juni og hin 1. desember”; [tax §74](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF748–748, quote LF748: “1. juni og hin 1. desember við somu gjaldfreist, sum eftir 1. og 2. punktum.”; [tax §76](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF751–751, quote LF751: “31. januar í tí ári, sum líknað verður í.”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-045",
+    "lf": 127,
+    "section": "## Deadlines and filing",
+    "wording": "Reconcile final tax with A/B and voluntary payments under §77. Ordinary residual tax carries a **4% supplement**; the usual assessed schedule is three equal instalments due 1 May/June/July, payable through the 20th, with the small-balance and later-issued assessment rules in §78. A balance including supplement of DKK 100 or less is not collected; DKK 1,000 or less uses the specified single-instalment route. Follow the actual assessment rather than inventing monthly deductions after year-end. [Tax Act §§77–80][tax]",
+    "source": "[tax §77](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF752–758, quote LF752: “§ 77. Í tí endaliga skattinum, sum álíknaður verður tí skattskylduga í einum ári,verða niðanfyri nevndu gjøld viðvíkjandi”; [tax §78](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF759–764, quote LF760: “4% av írestandi skattinum.”; [tax §78](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF759–764, quote LF759: “100 kr. ella minni, verður hesin ikki innkravdur.”; [tax §78](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF759–764, quote LF762: “1.000 ella minni, fellur tann írestandi skatturin við eykagjaldi til gjaldingar í einum gjaldi tann 1. juni í”; [tax §78](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF759–764, quote LF761: “1. mai, 1. juni og 1. juli í álíkningarárinum við gjaldsfreist til 20. í mánaðinum. Hvørt gjald verður”; [tax §79](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF765–769, quote LF765: “§ 79. Er endaligi skatturin minni enn fyribilsskatturin, sum verður mótroknaður eftir § 77, verður tað, ið eftir”; [tax §80](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF770–774, quote LF770: “§ 80. Um ein broyting verður gjørd aftaná 1. mai í álíkningarárinum í einari endaligari álíkning, og hetta”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-046",
+    "lf": 129,
+    "section": "## Deadlines and filing",
+    "wording": "Separate capital reporting follows §18 and the applicable ordinary return deadline; a correct complete issued capital statement needs no additional form. Capital residual tax of DKK 500 or less is not collected and refunds below DKK 50 are not paid. Those are settlement thresholds, not investment-gain exemptions. Tax is due the first of the month after assessment, payable through the 20th. [Capital Income Act §18][capital]",
+    "source": "[capital §18](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF430–437, quote LF430: “§ 18. 1) 7) 5) Tað áliggur skattskylduga at geva upp skattskyldugu upphæddina sambært § 14 um talgilda”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-047",
+    "lf": 133,
+    "section": "## Penalties and interest",
+    "wording": "A missing/late complete ordinary return permits estimated assessment, a DKK 1,000–5,000 fine, and tax increases of 2% if less than seven days late or 5% if at least seven days late. Section 104(3) permits relief on supported application, not automatically. Late tax/preliminary tax carries **0.7% per commenced month** from the due date under §135. Separate capital-return/payment rules are in Capital Income Act §18, including the corresponding late-return fine/increases and 0.7% monthly payment interest. [Tax Act §§104, 135][tax]; [Capital Income Act §18][capital]",
+    "source": "[tax §104](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF814–816, quote LF814: “§ 104. 1) Um fullfíggjað sjálvuppgáva av inntøku ikki er innlatin rættstundis, eins og frammanfyri er ásett, verður”; [tax §135](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF1043–1046, quote LF1043: “0,7% í rentu fyri hvønn byrjaðan mánað frá gjalddegnum at rokna av tí skatti, hann skyldar. Renta, sum”; [capital §18](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF430–437, quote LF430: “§ 18. 1) 7) 5) Tað áliggur skattskylduga at geva upp skattskyldugu upphæddina sambært § 14 um talgilda”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-048",
+    "lf": 135,
+    "section": "## Penalties and interest",
+    "wording": "False/misleading information with evasion intent is subject to Tax Act §139 fine, detention or up to two years' imprisonment, with separate gross-negligence treatment. Sections 139a–141 cover specified statement corrections, nonfiling and information/control failures. No fixed offence fine is invented here. Distinguish the §78 residual-tax supplement from late-payment interest or an offence penalty. [Tax Act §§78, 139–141][tax]",
+    "source": "[tax §78](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF759–764, quote LF759: “§ 78. Skattskyldugur skal gjalda ta upphædd, sum endaligur skattur er hægri enn fyribilsskatturin, sum verður mótroknaður eftir”; [tax §139](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF1057–1058, quote LF1057: “§ 139. Tann persónur, sum við tí í hyggju at sleppa undan at gjalda skatt til tað almenna”; [tax §139 a](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF1059–1062, quote LF1059: “§ 139 a. Skattskyldugur, sum ikki hevur latið inn sjálvuppgávu, men hevur fingið ársuppgerð sambært § 101, stk.”; [tax §139 b](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF1063–1064, quote LF1063: “§ 139 b. Tann sum, uttan at tilfeldið er fevnt av ásetingunum í § 139 A, letur vera”; [tax §140](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF1071–1071, quote LF1071: “§ 140. Á sama hátt sum tilskilað í § 139 verður tann persónur revsaður, sum við vilja ella”; [tax §141](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF1072–1076, quote LF1072: “§ 141. Við sekt verður tann persónur revsaður, sum við vilja ella av stórum gáloysni:”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-049",
+    "lf": 139,
+    "section": "## Cross-border points",
+    "wording": "Classify domestic versus treaty residence, work location, payer, actual days, income article and relief evidence. The 42% A-income-only nonresident rule does not govern every foreign person's Faroese property/business income. A stay below 180 days does not itself prove treaty exemption. Tax Act §1(3) restricts deductions for a treaty-foreign resident to expenses concerning income the Faroes may tax. [Tax Act §§1–2][tax]; [Assessment Act §§1, 8][rate]",
+    "source": "[tax §1](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF317–336, quote LF317: “§ 1. Fulla skattskyldu hevur:”; [tax §2](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF337–352, quote LF337: “§ 2. Avmarkaða skattskyldu hevur hvør persónur, og hvørt felag v.m., sum ikki kemur undir fyrimælini í 1.”; [rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF304: “§ 1. 1) 3) 4) 5) 6) 7) 8) 9) 10) 11) 12) 13) 14) 15) 16) 17)”; [rate §8](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF333–335, quote LF333: “§ 8. 23) 6) 39) 32) 20) 49) 51) 52) Vísandi til § 54 í løgtingslóg nr. 86”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-050",
+    "lf": 141,
+    "section": "## Cross-border points",
+    "wording": "Capital Income Act §19 permits capped foreign-tax credit for capital income from a country **without** a double-tax treaty. Tax Act §154 supplies the separate ordinary-income credit; the [cross-border Guide’s bounded method](fo-cross-border-payments.md#ordinary-foreign-tax-credit) explains source expenses, the positive-base fraction and credit ordering. Treaty credits/exemptions, nonpositive bases and the other stated limits require their own authority; do not use §19 as a universal credit rule. Individual securities departure/entry and deferral are covered in the [cross-border Guide](fo-cross-border-payments.md). [Capital Income Act §§2a–2f, 19][capital]",
+    "source": "[capital §19](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF438–439, quote LF438: “§ 19. Skattur, sum er goldin øðrum landi av inntøku haðani, har tvískattasáttmáli ikki er gjørdur, annaðhvørt skatturin”; [capital §2 a](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF324–325, quote LF324: “§ 2 a. Tá persónur skattliga gerst heimahoyrandi í Danmark, Grønlandi ella øðrum landi, verður hetta við atliti”; [capital §2 b](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF326–330, quote LF326: “§ 2 b. Persónur kann fáa skuldargjaldfreist, sbrt. § 2 a, tá viðkomandi skattliga gerst heimahoyrandi í Danmark,”; [capital §2 c](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF331–336, quote LF331: “§ 2 c. Tá skuldargjaldfreist verður veitt, skal eitt innstøðuyvirlit gerast yvir tey virðisbrøv, sum persónurin eigur fráflytingardagin.”; [capital §2 d](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF337–339, quote LF337: “§ 2 d. Fær persónur, fevndur av reglunum í §§ 2 a-2 c, aftur skattligan heimstað í Føroyum,”; [capital §2 e](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF340–342, quote LF340: “§ 2 e. Tá persónur skattliga gerst heimahoyrandi í Føroyum, verða virðisbrøv, ið hesin persónur eigur, við atliti”; [capital §2 f](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF343–345, quote LF343: “§ 2 f. 5) Tap kann ikki frádragast í kapitalvinningsinntøku í tann mun tapið stavar frá avhendingarupphædd, sum”; [tax §154](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF1108–1109, quote LF1108: “§ 154. Skattur, sum er goldin øðrum ríki av inntøku haðan, har avtala ikki er gjørd, annaðhvørt skatturin”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "express current rule / bounded working-paper application"
+  },
+  {
+    "id": "PIT-051",
+    "lf": 144,
+    "section": "## Cross-border points",
+    "wording": "[Church calculation and its supporting arithmetic](../../research/faroe-islands-2026/ordinary-completion-2026-10-28/fo-individual-income-tax-supplementary-controls.md) is retained in supplementary research.",
+    "source": "Scope/operational/intake instruction or inherited trust/period framing; no separate positive entitlement. Legal/computational rows are supplied separately.",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "operational / precise limitation / metadata statement"
+  },
+  {
+    "id": "PIT-052",
+    "lf": 150,
+    "section": "### 1. Ordinary full-year resident",
+    "wording": "Assume a full-year adult resident in Tórshavnar, no church membership, child/pensioner credit or special income, and established ordinary taxable income DKK 300,000 after base adjustments. National tax is DKK 32,950 and municipal tax DKK 51,300, total DKK 84,250. This is income tax, not take-home pay or total pension/social charges. [Assessment Act §1][rate]; [Tax Act §46][tax]; [2026 municipality row][municipal]",
+    "source": "[rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF304: “§ 1. 1) 3) 4) 5) 6) 7) 8) 9) 10) 11) 12) 13) 14) 15) 16) 17)”; [rate §2](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF312–314, quote LF312: “§ 2. 22) 23) 24) 25) 4) 26) 27) 28) 29) 2) 30) 31) Persónur, ið er undir”; [tax §31](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF531–541, quote LF531: “§ 31. Tá skattskyldug inntøka verður uppgjørd, skal frá inntøkuni verða drigin rakstrarkostnaður, tó ikki rakstrarkostnaður, ið persónar”; [tax §46](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF649–650, quote LF649: “§ 46. Kommunuskatturin verður álíknaður av somu skattskyldugu inntøku, sum nýtt verður, tá landsskatturin verður álíknaður. Frá 1.”; [tax §47](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF653–657, quote LF653: “§ 47. Allar skattskyldugar inntøkur, sum eru funnar eftir reglunum í hesari lóg, undantiknar tær, sum nevndar eru”; [depreciation §2](https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174) • depreciation.reader.txt LF311–316, quote LF315: “30% av avskrivingarbæra saldovirðinum. Er avskrivingarbæra saldovirðið áðrenn inntøkuársins avskriving 20.000 krónur ella lægri, kann upphæddin til fulnar”; [pension §12](https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum) • pension.reader.txt LF411–420, quote LF411: “§ 12. Inngjøld til eftirlønarskipan verða goldin á eftirlønarkonto sbrt. eftirlønarsáttmála.”; [capital §14](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF413–416, quote LF414: “35%. Feløg og grunnar v.m. lata skatt upp á 18%. Vísir inntøkuuppgerðin eftir skattalógini hall, kunnu feløg og”; [municipal](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt) • municipal.reader.txt LF53: “Tórshavnar19,000,6089.000”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "hypothetical independently eligible inputs plus derived arithmetic; not quotations of fixed statutory allowances"
+  },
+  {
+    "id": "PIT-053",
+    "lf": 152,
+    "section": "### 1. Ordinary full-year resident",
+    "wording": "```oa-check\nname: Faroese ordinary full-year resident income tax\ninputs:\n  base: 300000\nsteps:\n  national: 14950 + (base - 180000) * 0.15\n  municipal: (base - 30000) * 0.19\n  income_tax: national + municipal\nexpected:\n  national: 32950\n  municipal: 51300\n  income_tax: 84250\n```",
+    "source": "[rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF304: “§ 1. 1) 3) 4) 5) 6) 7) 8) 9) 10) 11) 12) 13) 14) 15) 16) 17)”; [rate §2](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF312–314, quote LF312: “§ 2. 22) 23) 24) 25) 4) 26) 27) 28) 29) 2) 30) 31) Persónur, ið er undir”; [tax §31](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF531–541, quote LF531: “§ 31. Tá skattskyldug inntøka verður uppgjørd, skal frá inntøkuni verða drigin rakstrarkostnaður, tó ikki rakstrarkostnaður, ið persónar”; [tax §46](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF649–650, quote LF649: “§ 46. Kommunuskatturin verður álíknaður av somu skattskyldugu inntøku, sum nýtt verður, tá landsskatturin verður álíknaður. Frá 1.”; [tax §47](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF653–657, quote LF653: “§ 47. Allar skattskyldugar inntøkur, sum eru funnar eftir reglunum í hesari lóg, undantiknar tær, sum nevndar eru”; [depreciation §2](https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174) • depreciation.reader.txt LF311–316, quote LF315: “30% av avskrivingarbæra saldovirðinum. Er avskrivingarbæra saldovirðið áðrenn inntøkuársins avskriving 20.000 krónur ella lægri, kann upphæddin til fulnar”; [pension §12](https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum) • pension.reader.txt LF411–420, quote LF411: “§ 12. Inngjøld til eftirlønarskipan verða goldin á eftirlønarkonto sbrt. eftirlønarsáttmála.”; [capital §14](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF413–416, quote LF414: “35%. Feløg og grunnar v.m. lata skatt upp á 18%. Vísir inntøkuuppgerðin eftir skattalógini hall, kunnu feløg og”; [municipal](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt) • municipal.reader.txt LF53: “Tórshavnar19,000,6089.000”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "hypothetical independently eligible inputs plus derived arithmetic; not quotations of fixed statutory allowances"
+  },
+  {
+    "id": "PIT-054",
+    "lf": 168,
+    "section": "### 2. Sole trader, child credit and private investments",
+    "wording": "Assume a full-year eligible non-church Tórshavnar resident, with DKK 600,000 business revenue, DKK 260,000 deductible non-private costs, and an ordinary exclusive-business opening equipment pool DKK 200,000 with no additions/disposals. Electing 30% depreciation gives DKK 60,000. An independently eligible DKK 40,000 pension payment made in 2026 is deducted once, leaving ordinary income DKK 240,000. Assume the independently verified statutory personal-consumption computation is DKK 200,000, so the §31 floor requires no increase; this is a case input, not a statutory fixed allowance. The resident is the sole eligible recipient of the full-year credits for one child aged five on 1 January. National tax DKK 23,950 less DKK 10,700 credit is DKK 13,250; municipal DKK 39,900 less DKK 9,000 is DKK 30,900. Separate non-business share gains DKK 40,000, fully eligible share loss DKK 5,000 and bank interest DKK 5,000 give DKK 40,000 capital net gain and DKK 14,000 capital tax. Combined ordinary/capital income tax is DKK 58,150, before withholding credits. Pension contribution tax and social charges are separate. Assume no prior capital losses, foreign credit, private-use adjustment, special regime or other deduction. [Tax Act §§31, 46][tax]; [Assessment Act §§1–2][rate]; [Pension Act §12][pension]; [Depreciation Act §2][depreciation]; [Capital Income Act §§4, 10, 14][capital]; [municipal row][municipal]",
+    "source": "[rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF304: “§ 1. 1) 3) 4) 5) 6) 7) 8) 9) 10) 11) 12) 13) 14) 15) 16) 17)”; [rate §2](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF312–314, quote LF312: “§ 2. 22) 23) 24) 25) 4) 26) 27) 28) 29) 2) 30) 31) Persónur, ið er undir”; [tax §31](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF531–541, quote LF531: “§ 31. Tá skattskyldug inntøka verður uppgjørd, skal frá inntøkuni verða drigin rakstrarkostnaður, tó ikki rakstrarkostnaður, ið persónar”; [tax §46](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF649–650, quote LF649: “§ 46. Kommunuskatturin verður álíknaður av somu skattskyldugu inntøku, sum nýtt verður, tá landsskatturin verður álíknaður. Frá 1.”; [tax §47](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF653–657, quote LF653: “§ 47. Allar skattskyldugar inntøkur, sum eru funnar eftir reglunum í hesari lóg, undantiknar tær, sum nevndar eru”; [depreciation §2](https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174) • depreciation.reader.txt LF311–316, quote LF315: “30% av avskrivingarbæra saldovirðinum. Er avskrivingarbæra saldovirðið áðrenn inntøkuársins avskriving 20.000 krónur ella lægri, kann upphæddin til fulnar”; [pension §12](https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum) • pension.reader.txt LF411–420, quote LF411: “§ 12. Inngjøld til eftirlønarskipan verða goldin á eftirlønarkonto sbrt. eftirlønarsáttmála.”; [capital §14](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF413–416, quote LF414: “35%. Feløg og grunnar v.m. lata skatt upp á 18%. Vísir inntøkuuppgerðin eftir skattalógini hall, kunnu feløg og”; [municipal](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt) • municipal.reader.txt LF53: “Tórshavnar19,000,6089.000”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "hypothetical independently eligible inputs plus derived arithmetic; not quotations of fixed statutory allowances"
+  },
+  {
+    "id": "PIT-055",
+    "lf": 170,
+    "section": "### 2. Sole trader, child credit and private investments",
+    "wording": "```oa-check\nname: Faroese sole trader deductions credits and separate capital result\ninputs:\n  revenue: 600000\n  costs: 260000\n  equipment_pool: 200000\n  depreciation_rate: 0.30\n  eligible_paid_pension: 40000\n  verified_personal_consumption: 200000\n  national_child_credit: 10700\n  municipal_child_credit: 9000\n  share_gain: 40000\n  eligible_share_loss: 5000\n  bank_interest: 5000\nsteps:\n  depreciation: equipment_pool * depreciation_rate\n  base_before_consumption_floor: revenue - costs - depreciation - eligible_paid_pension\n  consumption_floor_increase: min(max(verified_personal_consumption - base_before_consumption_floor, 0), depreciation)\n  ordinary_base: base_before_consumption_floor + consumption_floor_increase\n  national_before_credit: 14950 + (ordinary_base - 180000) * 0.15\n  municipal_before_credit: (floor(ordinary_base / 100) * 100 - 30000) * 0.19\n  national_tax: national_before_credit - national_child_credit\n  municipal_tax: municipal_before_credit - municipal_child_credit\n  capital_net: share_gain - eligible_share_loss + bank_interest\n  capital_tax: capital_net * 0.35\n  income_tax: national_tax + municipal_tax + capital_tax\nexpected:\n  depreciation: 60000\n  consumption_floor_increase: 0\n  ordinary_base: 240000\n  national_before_credit: 23950\n  municipal_before_credit: 39900\n  national_tax: 13250\n  municipal_tax: 30900\n  capital_net: 40000\n  capital_tax: 14000\n  income_tax: 58150\n```",
+    "source": "[rate §1](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF304–311, quote LF304: “§ 1. 1) 3) 4) 5) 6) 7) 8) 9) 10) 11) 12) 13) 14) 15) 16) 17)”; [rate §2](https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170) • rate.reader.txt LF312–314, quote LF312: “§ 2. 22) 23) 24) 25) 4) 26) 27) 28) 29) 2) 30) 31) Persónur, ið er undir”; [tax §31](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF531–541, quote LF531: “§ 31. Tá skattskyldug inntøka verður uppgjørd, skal frá inntøkuni verða drigin rakstrarkostnaður, tó ikki rakstrarkostnaður, ið persónar”; [tax §46](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF649–650, quote LF649: “§ 46. Kommunuskatturin verður álíknaður av somu skattskyldugu inntøku, sum nýtt verður, tá landsskatturin verður álíknaður. Frá 1.”; [tax §47](https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt) • tax.reader.txt LF653–657, quote LF653: “§ 47. Allar skattskyldugar inntøkur, sum eru funnar eftir reglunum í hesari lóg, undantiknar tær, sum nevndar eru”; [depreciation §2](https://logir.fo/Logtingslog/52-fra-29-12-1971-um-skattligar-avskrivingar-vm-sum-seinast-broytt-vid-logtingslog-nr-174) • depreciation.reader.txt LF311–316, quote LF315: “30% av avskrivingarbæra saldovirðinum. Er avskrivingarbæra saldovirðið áðrenn inntøkuársins avskriving 20.000 krónur ella lægri, kann upphæddin til fulnar”; [pension §12](https://logir.fo/Logtingslog/49-fra-14-05-2013-um-eftirlonarsamansparing-og-skatt-af-eftirlon-og-rentutryggingum) • pension.reader.txt LF411–420, quote LF411: “§ 12. Inngjøld til eftirlønarskipan verða goldin á eftirlønarkonto sbrt. eftirlønarsáttmála.”; [capital §14](https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173) • capital.reader.txt LF413–416, quote LF414: “35%. Feløg og grunnar v.m. lata skatt upp á 18%. Vísir inntøkuuppgerðin eftir skattalógini hall, kunnu feløg og”; [municipal](https://www.taks.fo/fo/borgari/gjoeld-og-agodar/talva-yvir-kommunuskatt-kirkjuskatt-og-barnafradratt) • municipal.reader.txt LF53: “Tórshavnar19,000,6089.000”",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "hypothetical independently eligible inputs plus derived arithmetic; not quotations of fixed statutory allowances"
+  },
+  {
+    "id": "PIT-056",
+    "lf": 211,
+    "section": "## Ask the client first",
+    "wording": "- Where was the home, tax residence and actual presence, with dates of arrival, departure and any municipality move?\n- Which receipts are employment, business, rental, pension, investment or foreign-work income, and what was paid/withheld when?\n- What costs, asset registers, private use, carried losses and pension payments support the ordinary base?\n- What are the children's ages on 1 January, custody/home/residence, credit allocation and relevant pensioner status?\n- Which securities, acquisition bases, bank-interest statements, foreign taxes and migration events need a separate capital schedule?\n- What preliminary registrations, final statements, returns, extension decisions, loan-support approvals and payment receipts exist?",
+    "source": "Scope/operational/intake instruction or inherited trust/period framing; no separate positive entitlement. Legal/computational rows are supplied separately.",
+    "read_on": "2026-10-28 selected original quote anchors; prior full source checks retain original Guide dates",
+    "status": "operational / precise limitation / metadata statement"
+  }
+]

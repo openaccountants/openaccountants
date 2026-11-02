@@ -1,0 +1,120 @@
+[
+  {
+    "guide": "skills/international/liechtenstein/li-corporate-income-tax.md",
+    "predecessor_sha256": "72981e14840831bf1b1f36f48261ad83a50678ead66fc7df0a3c81ee35f6d4b6",
+    "map_rows": 49,
+    "mapped_text_not_found": [],
+    "exact_retained_claim_failures": [
+      "OLD-030",
+      "OLD-036",
+      "OLD-039"
+    ],
+    "uncovered_nonwhitespace_characters": 3,
+    "uncovered_preview": "---",
+    "exact_retained_claim_failures_with_documented_annex": [],
+    "uncovered_meaningful_old_topics": 0,
+    "uncovered_interpretation": "Only horizontal rules or repeated table headings/separators remain outside the paragraph-map union; all tax rows and substantive paragraphs are mapped."
+  },
+  {
+    "guide": "skills/international/liechtenstein/li-company-formation.md",
+    "predecessor_sha256": "e49bb1dceee91a3540c56300039a0a317efa7e25e07bed76aec08bec28a4c0da",
+    "map_rows": 38,
+    "mapped_text_not_found": [],
+    "exact_retained_claim_failures": [],
+    "uncovered_nonwhitespace_characters": 3,
+    "uncovered_preview": "---",
+    "exact_retained_claim_failures_with_documented_annex": [],
+    "uncovered_meaningful_old_topics": 0,
+    "uncovered_interpretation": "Only horizontal rules or repeated table headings/separators remain outside the paragraph-map union; all tax rows and substantive paragraphs are mapped."
+  },
+  {
+    "guide": "skills/international/liechtenstein/li-cross-border.md",
+    "predecessor_sha256": "0c1e6515b43e740a86f1494ff8689c58628b6ccae7ae1002359ebd0b1f417c01",
+    "map_rows": 52,
+    "mapped_text_not_found": [],
+    "exact_retained_claim_failures": [
+      "OLD-036",
+      "OLD-039",
+      "OLD-042"
+    ],
+    "uncovered_nonwhitespace_characters": 3,
+    "uncovered_preview": "---",
+    "exact_retained_claim_failures_with_documented_annex": [],
+    "uncovered_meaningful_old_topics": 0,
+    "uncovered_interpretation": "Only horizontal rules or repeated table headings/separators remain outside the paragraph-map union; all tax rows and substantive paragraphs are mapped."
+  },
+  {
+    "guide": "skills/international/liechtenstein/li-transfer-pricing.md",
+    "predecessor_sha256": "f7755802012c5e899838daa4742613f848724ad48c1d0a4b5f09e3ae448fe8c4",
+    "map_rows": 43,
+    "mapped_text_not_found": [],
+    "exact_retained_claim_failures": [
+      "OLD-030"
+    ],
+    "uncovered_nonwhitespace_characters": 3,
+    "uncovered_preview": "---",
+    "exact_retained_claim_failures_with_documented_annex": [],
+    "uncovered_meaningful_old_topics": 0,
+    "uncovered_interpretation": "Only horizontal rules or repeated table headings/separators remain outside the paragraph-map union; all tax rows and substantive paragraphs are mapped."
+  },
+  {
+    "guide": "skills/international/liechtenstein/li-tax-overview.md",
+    "predecessor_sha256": "46f0b8fd74d307ebd7460fafe700cd9adc6435eea7e45cf099f3c6d4f111a9ba",
+    "map_rows": 22,
+    "mapped_text_not_found": [],
+    "exact_retained_claim_failures": [],
+    "uncovered_nonwhitespace_characters": 3,
+    "uncovered_preview": "---",
+    "exact_retained_claim_failures_with_documented_annex": [],
+    "uncovered_meaningful_old_topics": 0,
+    "uncovered_interpretation": "Only horizontal rules or repeated table headings/separators remain outside the paragraph-map union; all tax rows and substantive paragraphs are mapped."
+  },
+  {
+    "guide": "skills/international/liechtenstein/li-payroll-social.md",
+    "predecessor_sha256": "45a891f3ce5cc96b215e94ac67be228cab1bab379fd6db30dd1062336d096a3c",
+    "map_rows": 61,
+    "mapped_text_not_found": [],
+    "exact_retained_claim_failures": [
+      "OLD-048",
+      "OLD-051"
+    ],
+    "uncovered_nonwhitespace_characters": 3,
+    "uncovered_preview": "---",
+    "exact_retained_claim_failures_with_documented_annex": [],
+    "uncovered_meaningful_old_topics": 0,
+    "uncovered_interpretation": "Only horizontal rules or repeated table headings/separators remain outside the paragraph-map union; all tax rows and substantive paragraphs are mapped."
+  },
+  {
+    "guide": "skills/international/liechtenstein/liechtenstein-vat.md",
+    "predecessor_sha256": "11a44408c8bace284b69f22bb4475cc9a5c29577be99cc6d41d53bfe23934db8",
+    "map_rows": 47,
+    "mapped_text_not_found": [],
+    "exact_retained_claim_failures": [
+      "OLD-031",
+      "OLD-034",
+      "OLD-037"
+    ],
+    "uncovered_nonwhitespace_characters": 3,
+    "uncovered_preview": "---",
+    "exact_retained_claim_failures_with_documented_annex": [],
+    "uncovered_meaningful_old_topics": 0,
+    "uncovered_interpretation": "Only horizontal rules or repeated table headings/separators remain outside the paragraph-map union; all tax rows and substantive paragraphs are mapped."
+  },
+  {
+    "guide": "skills/international/liechtenstein/li-income-tax.md",
+    "predecessor_sha256": "a02a901fbcb0378ecef7961f9003c7c85fd892e4be94a21ad4a82c1e728fb0e2",
+    "map_rows": 94,
+    "mapped_text_not_found": [],
+    "exact_retained_claim_failures": [
+      "OLD-075",
+      "OLD-078",
+      "OLD-081",
+      "OLD-084"
+    ],
+    "uncovered_nonwhitespace_characters": 46,
+    "uncovered_preview": "|Taxableincomex|Statetax||---|---||---|---|---",
+    "exact_retained_claim_failures_with_documented_annex": [],
+    "uncovered_meaningful_old_topics": 0,
+    "uncovered_interpretation": "Only horizontal rules or repeated table headings/separators remain outside the paragraph-map union; all tax rows and substantive paragraphs are mapped."
+  }
+]

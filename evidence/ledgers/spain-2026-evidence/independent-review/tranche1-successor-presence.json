@@ -1,0 +1,285 @@
+{
+  "es-beckham": {
+    "ledger_sha256": "977e773de5fa24cc7b4feb88c05bbe05137a7c5cc1132ed5c94802dcb465e925",
+    "guide_sha256": "edbac3851deb99dc27ba7115600060bfc2554578c88c03238ff4c8d44d722b02",
+    "rows": 158,
+    "quote_occurrences": 612,
+    "bad": [],
+    "source_files": [
+      {
+        "file": "sources/LIRPF.body",
+        "sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f"
+      },
+      {
+        "file": "sources/LIRPF.reader.txt",
+        "sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5"
+      },
+      {
+        "file": "sources/RIRPF.body",
+        "sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362"
+      },
+      {
+        "file": "sources/RIRPF.reader.txt",
+        "sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1"
+      },
+      {
+        "file": "sources/IRNR.body",
+        "sha256": "7db5d01a620229f8f4ad05ef36afac774e358908b0f6f9f6d2f6c0ecbeaae4fb"
+      },
+      {
+        "file": "sources/IRNR.reader.txt",
+        "sha256": "ab8577919eff31ab3815959e26dc8beb29b4f778f0d345211be5ffcef5bacdd2"
+      },
+      {
+        "file": "sources/LGT.body",
+        "sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c"
+      },
+      {
+        "file": "sources/LGT.reader.txt",
+        "sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799"
+      },
+      {
+        "file": "sources/Order149151.body",
+        "sha256": "c9a5a562f39830b9d48cc2a2f71dbc7bdd45234cead7eccbf17f2168cfba884d"
+      },
+      {
+        "file": "sources/Order149151.reader.txt",
+        "sha256": "088107475974db36698d2167107507d004272a50a6dfeb60f56e2819165440d7"
+      },
+      {
+        "file": "sources/AEAT147.html",
+        "sha256": "16f60576608a6bd707fa9e2346273e582e24509a8023abfb117f227f1c79f270"
+      },
+      {
+        "file": "sources/AEAT147.reader.txt",
+        "sha256": "02caf45226c655cc11392ee9632272343f794ae231c25c72005d39e8552bcb3f"
+      }
+    ]
+  },
+  "es-modelo-111": {
+    "ledger_sha256": "323f795bfb6d1a2b865ff5cc419b39d872d6f63df02f7e4d3843227e64b3f5c6",
+    "guide_sha256": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+    "rows": 163,
+    "quote_occurrences": 617,
+    "bad": [],
+    "source_files": [
+      {
+        "file": "sources/RIRPF.body",
+        "sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362"
+      },
+      {
+        "file": "sources/RIRPF.reader.txt",
+        "sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1"
+      },
+      {
+        "file": "sources/LIRPF.body",
+        "sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f"
+      },
+      {
+        "file": "sources/LIRPF.reader.txt",
+        "sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5"
+      },
+      {
+        "file": "sources/LGT.body",
+        "sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c"
+      },
+      {
+        "file": "sources/LGT.reader.txt",
+        "sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799"
+      },
+      {
+        "file": "sources/LIS.body",
+        "sha256": "fbb1ac8cfc81eedcb6ecdf492ba84d42654d06ff8cdf112ec3e9c196fe0fc295"
+      },
+      {
+        "file": "sources/LIS.reader.txt",
+        "sha256": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1"
+      },
+      {
+        "file": "sources/LIVA.body",
+        "sha256": "3cf31374eb9d656bdbef264e3e613a174515347a7b297fe6c4c6b0084243039e"
+      },
+      {
+        "file": "sources/LIVA.reader.txt",
+        "sha256": "0a39e63de55a7ff6b6788a33cef0101b3247d6a7c7e7017d79f266d9035600bb"
+      },
+      {
+        "file": "sources/RIVA.body",
+        "sha256": "a012b63a91b1d8ac492d46c458cd32398b23b240f9f7dcf727087fbaf71cf7eb"
+      },
+      {
+        "file": "sources/RIVA.reader.txt",
+        "sha256": "ceaaa946225316f072342c7ee498a87d9310dc0afa45c8099c1840781f86c2ca"
+      },
+      {
+        "file": "sources/Order111.body",
+        "sha256": "2e8c5a0ff275f1e9c1b753157716a6d6f664293184e379465e2bf53d461241cb"
+      },
+      {
+        "file": "sources/Order111.reader.txt",
+        "sha256": "5ba6779223c02a0fd56a99f9a432121a2f3c70ba6f5f878643eac5daac8e0a6b"
+      },
+      {
+        "file": "sources/Order190.body",
+        "sha256": "77235b40e0478b6abbcfe58ae088af282b78a3e557610f03c3b345e85d8ac2df"
+      },
+      {
+        "file": "sources/Order190.reader.txt",
+        "sha256": "d24e66f65f46dd6522a7d0d909c4c4df72946b9973c08904942d241705b34b54"
+      },
+      {
+        "file": "sources/Electronic.body",
+        "sha256": "95841a14355f0b6229c1ad4fca0ee12ffc6af115404b9fdd26bd21ee7ef466ce"
+      },
+      {
+        "file": "sources/Electronic.reader.txt",
+        "sha256": "aea1f12eaac5f01d51bd4f554e29b31441784bf5746cd564881ecdeeb96f9ed6"
+      },
+      {
+        "file": "sources/Instructions.body",
+        "sha256": "3544f8db141f259a08c631f86149039bae49ad70c47c6c2ef6cf4b9347c84b48"
+      },
+      {
+        "file": "sources/Instructions.reader.txt",
+        "sha256": "c8f92b660b9aff1896ec11fc728fde9cebf1490c760050ae9425a62d6c151ed7"
+      },
+      {
+        "file": "sources/Calendar.body",
+        "sha256": "33575930deb2fe0193786529952e9657b50b057a2b2fa1b8762b95ebcdfffa35"
+      },
+      {
+        "file": "sources/Calendar.reader.txt",
+        "sha256": "d7c96191a49d0c6b8276b4ab2cc1bf0d9a9518df63f0708c6bf3353c6a792f75"
+      },
+      {
+        "file": "sources/August.body",
+        "sha256": "ff533b42173b22f13cfcc638ef6bbdcf94744dd226b8db570b28cd39ebc4f874"
+      },
+      {
+        "file": "sources/August.reader.txt",
+        "sha256": "cc5837f256634628a73a6754453b781dce15abe8d3e9bcce7759dac619613cc5"
+      },
+      {
+        "file": "sources/RD960.body",
+        "sha256": "eedeade7849c49d95a38b7ed780a467bcf2fa10a345b76758165bfa7659feb03"
+      },
+      {
+        "file": "sources/RD960.reader.txt",
+        "sha256": "15df474b016aedff2dcf9b26bfd1a666d1028b06ce79a1e65ebb5d5d1fbc7138"
+      }
+    ]
+  },
+  "es-estimated-tax": {
+    "ledger_sha256": "8c3f32ab844c98129f295317534e711b5f21c9914049f50a0b2519fa13b1c8c9",
+    "guide_sha256": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+    "rows": 222,
+    "quote_occurrences": 1232,
+    "bad": [],
+    "source_files": [
+      {
+        "file": "sources/RIRPF.body",
+        "sha256": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362"
+      },
+      {
+        "file": "sources/RIRPF.reader.txt",
+        "sha256": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1"
+      },
+      {
+        "file": "sources/LIRPF.body",
+        "sha256": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f"
+      },
+      {
+        "file": "sources/LIRPF.reader.txt",
+        "sha256": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5"
+      },
+      {
+        "file": "sources/LGT.body",
+        "sha256": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c"
+      },
+      {
+        "file": "sources/LGT.reader.txt",
+        "sha256": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799"
+      },
+      {
+        "file": "sources/Order.body",
+        "sha256": "27d9c99e6cc5614c33e48c8c0128bcf74a95c94ada5ca88e44dde273f9e5f73a"
+      },
+      {
+        "file": "sources/Order.reader.txt",
+        "sha256": "e8982f322707423caba7ac113207b98718d5f65f388a90298e398157fa26dd22"
+      },
+      {
+        "file": "sources/Forms.body",
+        "sha256": "585f93d0a6e1662b1f6d1642d01ce536b771d4edae01d7ccd6fbfd2a1983055e"
+      },
+      {
+        "file": "sources/Forms.reader.txt",
+        "sha256": "66944fca39f24b7c67150a28d6b16bb0837ae026d748cf3fb613607a7dfa6576"
+      },
+      {
+        "file": "sources/RDL2.body",
+        "sha256": "3536b637d712f7cf4e07382c1a0186a843ee38bcd445b49c5c7e1803e5c392d8"
+      },
+      {
+        "file": "sources/RDL2.reader.txt",
+        "sha256": "02ea8c6400d0cdb76b3643b91a818b70d58893c9a012212cfa89f1117ce1b599"
+      },
+      {
+        "file": "sources/CeutaAct.body",
+        "sha256": "b08a83d6fefe82e96b226517de62d112ac88cd7f2ae36f079c50f053c57c9a7d"
+      },
+      {
+        "file": "sources/CeutaAct.reader.txt",
+        "sha256": "df275d5b9fbb2616ff2bcecda4c2f78db31225c6c189c25a6ac54325b9465596"
+      },
+      {
+        "file": "sources/I130.body",
+        "sha256": "6f2721adf99468a175bfc0e67d62b31f9f35afdfa0d339ccc4f9da53e786ed08"
+      },
+      {
+        "file": "sources/I130.reader.txt",
+        "sha256": "7f3c32e54a41b692048ddecd6979c0a2c61115986877af27b321e726679a791c"
+      },
+      {
+        "file": "sources/I131.body",
+        "sha256": "a1f8370ac01d628910fd95ace2704c3e9e991b7265c943c0e4b4619dbf101b27"
+      },
+      {
+        "file": "sources/I131.reader.txt",
+        "sha256": "cb19ce8e535370657d4d4266fe71552a9e59c9188119783ebb18bdffa289ec16"
+      },
+      {
+        "file": "sources/Entry.body",
+        "sha256": "11dc81661c100f19bb60488711d6f4b58865eec3e20879d525c5567ecee80f64"
+      },
+      {
+        "file": "sources/Entry.reader.txt",
+        "sha256": "9ed84a580eeeeca13a823be283d5e2f37610d88f02d42530262fe4d28ee59c0a"
+      },
+      {
+        "file": "sources/Note.body",
+        "sha256": "b1a9c75ef2093827d41b6a42805bff4927c7a10897df11d259dc735df5b87aac"
+      },
+      {
+        "file": "sources/Note.reader.txt",
+        "sha256": "11f29a9f8e1e5983e9c02aa1c6340f8bfd8277f0c45dae8cc9d2bc868618430a"
+      },
+      {
+        "file": "sources/Interest.body",
+        "sha256": "82e6361eaa2ff19ce4fb5defb77f7cf7bd16fe327aaff702931bfc733d265dbe"
+      },
+      {
+        "file": "sources/Interest.reader.txt",
+        "sha256": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201"
+      },
+      {
+        "file": "sources/Annex.body",
+        "sha256": "f62a61854eac561e96f689ebf11b8b2c75d418a6146a7f972e6e6a404a8063a0"
+      },
+      {
+        "file": "sources/Annex.reader.txt",
+        "sha256": "71835d471f59441694ded6d668331d93bf708757f9f2acf5d6d27a2c4a76b8fa"
+      }
+    ]
+  }
+}

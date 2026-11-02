@@ -1,0 +1,62 @@
+{
+  "commit": "b18c0998da08c65eeb459d22d24dbce6f0ef146a",
+  "result": "PASS",
+  "scope": "Bounded pausal scale and promulgated GPP-FL publication. IT-IND remains partial. No accountant attestation or comprehensive country coverage.",
+  "all10_findings_closed": true,
+  "findings": [
+    {
+      "id": "ME-R01",
+      "disposition": "CLOSED",
+      "verification": "Closed at exact9ff07a816 review; substantive files unchanged at finalb18c0998d"
+    },
+    {
+      "id": "ME-R02",
+      "disposition": "CLOSED",
+      "verification": "Closed at exact9ff07a816 review; substantive files unchanged at finalb18c0998d"
+    },
+    {
+      "id": "ME-R03",
+      "disposition": "CLOSED",
+      "verification": "Closed at exact9ff07a816 review; substantive files unchanged at finalb18c0998d"
+    },
+    {
+      "id": "ME-R04",
+      "disposition": "CLOSED",
+      "verification": "Closed at exact9ff07a816 review; substantive files unchanged at finalb18c0998d"
+    },
+    {
+      "id": "ME-R05",
+      "disposition": "CLOSED",
+      "verification": "Closed at exact9ff07a816 review; substantive files unchanged at finalb18c0998d"
+    },
+    {
+      "id": "ME-R06",
+      "disposition": "CLOSED",
+      "verification": "Closed at exact9ff07a816 review; substantive files unchanged at finalb18c0998d"
+    },
+    {
+      "id": "ME-R07",
+      "disposition": "CLOSED",
+      "verification": "Closed at exact9ff07a816 review; substantive files unchanged at finalb18c0998d"
+    },
+    {
+      "id": "ME-R08",
+      "disposition": "CLOSED",
+      "verification": "Closed at exact9ff07a816 review; substantive files unchanged at finalb18c0998d"
+    },
+    {
+      "id": "ME-R09",
+      "disposition": "CLOSED",
+      "ledger_id": "ME-PIT-107",
+      "verification": "Quote now matches correct Article5 table row, unchanged complete context hash and Guide scale amounts."
+    },
+    {
+      "id": "ME-R10",
+      "disposition": "CLOSED",
+      "ledger_id": "ME-PIT-109",
+      "verification": "Quote now matches correct Article5 table row, unchanged complete context hash and Guide scale amounts."
+    }
+  ],
+  "remaining_material_findings": [],
+  "separate_requirements": "GitHub review/CI and publishing decisions remain separate; not performed or certified by this report."
+}

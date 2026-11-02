@@ -1,0 +1,109 @@
+{
+  "scope": "One trailing ASCII space removed from reviewed capital Guide; all other candidate bytes and legal/calculation tokens unchanged. Earlier manifests/reports retained immutable.",
+  "files": [
+    {
+      "original_path": "spain-fresh-review-repairs/F06-capital-whitespace-only/capital-gains-candidate-v1.2.md",
+      "original_sha256": "77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b",
+      "original_bytes": 34701,
+      "stored_path": "archive/77/77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b.gz",
+      "stored_sha256": "b6e31c28b05deae27a988d9c2df8762f89283943afaeda9ac46bf9c3b9d61575",
+      "stored_bytes": 11912
+    },
+    {
+      "original_path": "spain-fresh-review-repairs/F06-capital-whitespace-only/final-composition-manifest.json",
+      "original_sha256": "c524cdd28e5b632b1d905fc1a0fbc70690425dd74d53d621dace8fb0e91b278b",
+      "original_bytes": 13235,
+      "stored_path": "archive/c5/c524cdd28e5b632b1d905fc1a0fbc70690425dd74d53d621dace8fb0e91b278b.gz",
+      "stored_sha256": "82af3806bf2f97336f8549973b4e2f95df60fa559280e9a92733537d72b3934c",
+      "stored_bytes": 3056
+    },
+    {
+      "original_path": "spain-fresh-review-repairs/F06-capital-whitespace-only/whitespace-only.diff",
+      "original_sha256": "b13c7e9c8feccf03c06f061d8f52acb328efca8399183bde52cb6a062a97e446",
+      "original_bytes": 2323,
+      "stored_path": "archive/b1/b13c7e9c8feccf03c06f061d8f52acb328efca8399183bde52cb6a062a97e446.gz",
+      "stored_sha256": "b13693098f7a62f3a34a46e6f106f804981a36780999926baa75e5748136d87a",
+      "stored_bytes": 997
+    },
+    {
+      "original_path": "spain-fresh-review-repairs/F06-capital-whitespace-only/writer-identity.json",
+      "original_sha256": "eeeaa28e4ea3f312b388ada72bc800f5ee9fa6335b934e0b47f15833c0443f00",
+      "original_bytes": 302,
+      "stored_path": "archive/ee/eeeaa28e4ea3f312b388ada72bc800f5ee9fa6335b934e0b47f15833c0443f00.gz",
+      "stored_sha256": "5d43fab8fb5269227507c2a28ec6a203d12d17a201a0d586a8683fe0c321730f",
+      "stored_bytes": 224
+    },
+    {
+      "original_path": "spain-fresh-whole-pack-review-0f104150/repair-closure/formatting-only/artifact-manifest.json",
+      "original_sha256": "b2e84872345c92b3026dc806ed8c18e4777a117b48c11a09fe044859cfb9a0f4",
+      "original_bytes": 1389,
+      "stored_path": "archive/b2/b2e84872345c92b3026dc806ed8c18e4777a117b48c11a09fe044859cfb9a0f4.gz",
+      "stored_sha256": "e730064daf0298e9604abdf336fe6a303628d39c59b5086912036b1de856f96b",
+      "stored_bytes": 653
+    },
+    {
+      "original_path": "spain-fresh-whole-pack-review-0f104150/repair-closure/formatting-only/diff-check-actual-output.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "original_bytes": 0,
+      "stored_path": "archive/e3/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.gz",
+      "stored_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+      "stored_bytes": 20
+    },
+    {
+      "original_path": "spain-fresh-whole-pack-review-0f104150/repair-closure/formatting-only/first-diff-status-correction.json",
+      "original_sha256": "e813d86ba80d6fad3ce07eb6e5b48c8a159364374d2a93fc99711b94dc358171",
+      "original_bytes": 297,
+      "stored_path": "archive/e8/e813d86ba80d6fad3ce07eb6e5b48c8a159364374d2a93fc99711b94dc358171.gz",
+      "stored_sha256": "d3c08325171178a8644c6d5531f94401dec00953c5ffa5716d1f7072d9667818",
+      "stored_bytes": 211
+    },
+    {
+      "original_path": "spain-fresh-whole-pack-review-0f104150/repair-closure/formatting-only/predecessor-280b6647.md",
+      "original_sha256": "280b6647efd86651602f4ae99624befc4fd5d5c090d4ee6e575ba50218cd4e6f",
+      "original_bytes": 34702,
+      "stored_path": "archive/28/280b6647efd86651602f4ae99624befc4fd5d5c090d4ee6e575ba50218cd4e6f.gz",
+      "stored_sha256": "674cb3fef2ee72ba6a636756efc7a9d30addf622bdb30c352c82cdb068719ed5",
+      "stored_bytes": 11912
+    },
+    {
+      "original_path": "spain-fresh-whole-pack-review-0f104150/repair-closure/formatting-only/report.md",
+      "original_sha256": "7d9ff6cc4690ce8a8ade7d90cf0d9ea9bcfd293119ff64ccf7f4b6a0635171a0",
+      "original_bytes": 2260,
+      "stored_path": "archive/7d/7d9ff6cc4690ce8a8ade7d90cf0d9ea9bcfd293119ff64ccf7f4b6a0635171a0.gz",
+      "stored_sha256": "397ebc0e3b14aa32072f6e8c542abf2f9f8dbaa7073151c82ce682f73f4fa2c3",
+      "stored_bytes": 1242
+    },
+    {
+      "original_path": "spain-fresh-whole-pack-review-0f104150/repair-closure/formatting-only/successor-77073a1a.md",
+      "original_sha256": "77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b",
+      "original_bytes": 34701,
+      "stored_path": "archive/77/77073a1aa85be6324d3af51aaa64bea6217ce401812ff5f812105682b4ba805b.gz",
+      "stored_sha256": "b6e31c28b05deae27a988d9c2df8762f89283943afaeda9ac46bf9c3b9d61575",
+      "stored_bytes": 11912
+    },
+    {
+      "original_path": "spain-fresh-whole-pack-review-0f104150/repair-closure/formatting-only/successor-composition-manifest-original.json",
+      "original_sha256": "c524cdd28e5b632b1d905fc1a0fbc70690425dd74d53d621dace8fb0e91b278b",
+      "original_bytes": 13235,
+      "stored_path": "archive/c5/c524cdd28e5b632b1d905fc1a0fbc70690425dd74d53d621dace8fb0e91b278b.gz",
+      "stored_sha256": "82af3806bf2f97336f8549973b4e2f95df60fa559280e9a92733537d72b3934c",
+      "stored_bytes": 3056
+    },
+    {
+      "original_path": "spain-fresh-whole-pack-review-0f104150/repair-closure/formatting-only/verification.json",
+      "original_sha256": "1e059e94ad6e7644dee7bd7548315d2e719a03c70c4f7f4e045d017306a7a434",
+      "original_bytes": 10858,
+      "stored_path": "archive/1e/1e059e94ad6e7644dee7bd7548315d2e719a03c70c4f7f4e045d017306a7a434.gz",
+      "stored_sha256": "9644cd4fe8a80435766c2737fb8c280953e3f89d16cb222c3c57ac7c60000dfc",
+      "stored_bytes": 2646
+    },
+    {
+      "original_path": "spain-fresh-whole-pack-review-0f104150/repair-closure/formatting-only/verify.py",
+      "original_sha256": "ff0e7bc2328e2805d7c306e6f1844026816b8e5b7574a67e78d45bad802669b9",
+      "original_bytes": 7062,
+      "stored_path": "archive/ff/ff0e7bc2328e2805d7c306e6f1844026816b8e5b7574a67e78d45bad802669b9.gz",
+      "stored_sha256": "ad571908efa070164b01f2c7e00ab11e4f72d8aefe4ad9195e98ff93e7133134",
+      "stored_bytes": 3033
+    }
+  ]
+}

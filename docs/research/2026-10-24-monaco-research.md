@@ -52,7 +52,7 @@ The reviewer independently recomputed all fourteen controls with Decimal/half-up
 
 ## Remaining country work
 
-Keep every `partial:` note in [the country README](../../skills/international/monaco/README.md). The practical priorities are actual filing forms/portal onboarding, earlier 2026 payroll rates and complete bases/rounding, directors/independent schemes and bilateral affiliation, individual treaty applications, VAT special regimes and reporting, executive/interest/participation/reorganisation rules, formal TP/CbCR obligations, treaty inventory/exit relief, minimum-tax enactment and implementation, October accounts/audit transitions, and named professional review. None is closed by the new file count or arithmetic.
+Keep every `partial:` note in [the country README](../../skills/monaco/README.md). The practical priorities are actual filing forms/portal onboarding, earlier 2026 payroll rates and complete bases/rounding, directors/independent schemes and bilateral affiliation, individual treaty applications, VAT special regimes and reporting, executive/interest/participation/reorganisation rules, formal TP/CbCR obligations, treaty inventory/exit relief, minimum-tax enactment and implementation, October accounts/audit transitions, and named professional review. None is closed by the new file count or arithmetic.
 
 
 ## Current-main standard reconciliation

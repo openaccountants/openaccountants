@@ -1,0 +1,57 @@
+[
+  {
+    "path": "ledgers/es-foral-income-tax.md",
+    "sha256": "f80fe1e23ff0d241fa7f23fec697200c6791d17237d7bc6d9eaf54304643a23c",
+    "bytes": 5527440
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/rows.json",
+    "sha256": "e64c872facaf7f19878a0ef98c357b746dd37cce813d5d41a2063e9879d87784",
+    "bytes": 6494042
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/source-read-receipts.json",
+    "sha256": "eb94902cd1cb8fa594ae3974f37371d87d3b9ebebc7548b407755aabe7233a4a",
+    "bytes": 383657
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/writer-status.md",
+    "sha256": "6a4f0241bda583b0e127e947fdd05f473d8ca053d8f338668423a3e1113912d8",
+    "bytes": 1824
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/example-check.txt",
+    "sha256": "54fe65105fce8e34971006762a389c1ce29574a5ebeb89f628767fb482b673c8",
+    "bytes": 58
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/actual-source-read-scopes.json",
+    "sha256": "d96e90b3b0243e1b1c1f5d5d04ca4cf217a623db9f74ff0ff252c8f1892a2f63",
+    "bytes": 2402118
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/writer-separating-controls.json",
+    "sha256": "f2da03a6ecaf2fbc349415362c6db36ced2e09ab407cbb93117ac21d80aefc0e",
+    "bytes": 7809
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/old-topic-overrides.json",
+    "sha256": "658517abfe92f21c60407a12395eba30ef05c1bfb1eafc2dc4099b4e2f332f90",
+    "bytes": 2731
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/non-rule-dispositions.json",
+    "sha256": "abe96da9ee9805a64765aae48a97e2b71aec503bbb347c44dd19b0824fd50e9e",
+    "bytes": 7244
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/es-foral-income-tax/writer-source-reading-disposition.json",
+    "sha256": "d7fcb196e3675b61c81423402788a435942aa9e18bb4f7f654ee52ac8f36eba9",
+    "bytes": 3031
+  },
+  {
+    "path": "ledgers/spain-2026-evidence/root-navarra-pit/root-finite-arithmetic-controls.json",
+    "sha256": "8b04422785542ce1fd16623fd097c75bd9c6edfb0d38a676982004868b1a245b",
+    "bytes": 3522
+  }
+]

@@ -1,0 +1,1052 @@
+[
+  {
+    "name": "frozen Guide",
+    "actual": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+    "expected": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6232",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6234",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6240",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6236",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6238",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6414",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6252",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6254",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6256",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6258",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6260",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6262",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6262",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6264",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 10904",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 10906",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Order exact quote 376",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6316",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6320",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6322",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6328",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6330",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6332",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 5640",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 5638",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 5642",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6282",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6296",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6300",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6304",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6308",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6312",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 183",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 161",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 12189",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 2952",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 2956",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 2958",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 2952",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 2962",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 2968",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Order exact quote 716",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Entry exact quote 104",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Entry exact quote 108",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Note exact quote 62",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Note exact quote 84",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 2827",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 131",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 191",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 131",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 191",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 221",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 121",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 11824",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 11828",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Annex exact quote 354",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Annex exact quote 383",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Annex exact quote 384",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Annex exact quote 387",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 113",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 175",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 185",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 219",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6394",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6396",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6398",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Forms exact quote 428",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 5909",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 233",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 239",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 231",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 233",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 243",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 11214",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 11220",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 11216",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2209",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2213",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2235",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2276",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2278",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2280",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8209",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8223",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8229",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8412",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 8416",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Interest exact quote 110",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LGT exact quote 2136",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6296",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "Note exact quote 74",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RDL2 exact quote 1081",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RDL2 exact quote 1083",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RDL2 exact quote 253",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 2405",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 2407",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 2411",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 2413",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 2503",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6270",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6272",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6274",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 6276",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 153",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 159",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 205",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 223",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 249",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 255",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 185",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I130 exact quote 187",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 113",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 147",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 151",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 125",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 129",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 159",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 161",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 173",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 175",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 185",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 187",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 189",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 217",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 219",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 221",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 249",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 251",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 253",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 235",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 219",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 253",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 229",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "I131 exact quote 233",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "CeutaAct exact quote 251",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "CeutaAct exact quote 1817",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF exact quote 1319",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 4374",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF exact quote 4378",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF raw",
+    "actual": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "expected": "5cbd6e8e54be0c2656fd60fb9932f86ce4a573feedb2f5bb9c506937ef685362",
+    "pass_check": true
+  },
+  {
+    "name": "RIRPF reader",
+    "actual": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "expected": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF raw",
+    "actual": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "expected": "780a5b1055367ebe2c4f75468190133f7431e74a0e721c7e364e3190c12fa77f",
+    "pass_check": true
+  },
+  {
+    "name": "LIRPF reader",
+    "actual": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "expected": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+    "pass_check": true
+  },
+  {
+    "name": "LGT raw",
+    "actual": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "expected": "ffab9fc69cea0e9be2827db596a6e82b298ecd2651c50725d4f3df387f6de36c",
+    "pass_check": true
+  },
+  {
+    "name": "LGT reader",
+    "actual": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "expected": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+    "pass_check": true
+  },
+  {
+    "name": "Order raw",
+    "actual": "27d9c99e6cc5614c33e48c8c0128bcf74a95c94ada5ca88e44dde273f9e5f73a",
+    "expected": "27d9c99e6cc5614c33e48c8c0128bcf74a95c94ada5ca88e44dde273f9e5f73a",
+    "pass_check": true
+  },
+  {
+    "name": "Order reader",
+    "actual": "e8982f322707423caba7ac113207b98718d5f65f388a90298e398157fa26dd22",
+    "expected": "e8982f322707423caba7ac113207b98718d5f65f388a90298e398157fa26dd22",
+    "pass_check": true
+  },
+  {
+    "name": "Forms raw",
+    "actual": "585f93d0a6e1662b1f6d1642d01ce536b771d4edae01d7ccd6fbfd2a1983055e",
+    "expected": "585f93d0a6e1662b1f6d1642d01ce536b771d4edae01d7ccd6fbfd2a1983055e",
+    "pass_check": true
+  },
+  {
+    "name": "Forms reader",
+    "actual": "66944fca39f24b7c67150a28d6b16bb0837ae026d748cf3fb613607a7dfa6576",
+    "expected": "66944fca39f24b7c67150a28d6b16bb0837ae026d748cf3fb613607a7dfa6576",
+    "pass_check": true
+  },
+  {
+    "name": "RDL2 raw",
+    "actual": "3536b637d712f7cf4e07382c1a0186a843ee38bcd445b49c5c7e1803e5c392d8",
+    "expected": "3536b637d712f7cf4e07382c1a0186a843ee38bcd445b49c5c7e1803e5c392d8",
+    "pass_check": true
+  },
+  {
+    "name": "RDL2 reader",
+    "actual": "02ea8c6400d0cdb76b3643b91a818b70d58893c9a012212cfa89f1117ce1b599",
+    "expected": "02ea8c6400d0cdb76b3643b91a818b70d58893c9a012212cfa89f1117ce1b599",
+    "pass_check": true
+  },
+  {
+    "name": "CeutaAct raw",
+    "actual": "b08a83d6fefe82e96b226517de62d112ac88cd7f2ae36f079c50f053c57c9a7d",
+    "expected": "b08a83d6fefe82e96b226517de62d112ac88cd7f2ae36f079c50f053c57c9a7d",
+    "pass_check": true
+  },
+  {
+    "name": "CeutaAct reader",
+    "actual": "df275d5b9fbb2616ff2bcecda4c2f78db31225c6c189c25a6ac54325b9465596",
+    "expected": "df275d5b9fbb2616ff2bcecda4c2f78db31225c6c189c25a6ac54325b9465596",
+    "pass_check": true
+  },
+  {
+    "name": "I130 raw",
+    "actual": "6f2721adf99468a175bfc0e67d62b31f9f35afdfa0d339ccc4f9da53e786ed08",
+    "expected": "6f2721adf99468a175bfc0e67d62b31f9f35afdfa0d339ccc4f9da53e786ed08",
+    "pass_check": true
+  },
+  {
+    "name": "I130 reader",
+    "actual": "7f3c32e54a41b692048ddecd6979c0a2c61115986877af27b321e726679a791c",
+    "expected": "7f3c32e54a41b692048ddecd6979c0a2c61115986877af27b321e726679a791c",
+    "pass_check": true
+  },
+  {
+    "name": "I131 raw",
+    "actual": "a1f8370ac01d628910fd95ace2704c3e9e991b7265c943c0e4b4619dbf101b27",
+    "expected": "a1f8370ac01d628910fd95ace2704c3e9e991b7265c943c0e4b4619dbf101b27",
+    "pass_check": true
+  },
+  {
+    "name": "I131 reader",
+    "actual": "cb19ce8e535370657d4d4266fe71552a9e59c9188119783ebb18bdffa289ec16",
+    "expected": "cb19ce8e535370657d4d4266fe71552a9e59c9188119783ebb18bdffa289ec16",
+    "pass_check": true
+  },
+  {
+    "name": "Entry raw",
+    "actual": "11dc81661c100f19bb60488711d6f4b58865eec3e20879d525c5567ecee80f64",
+    "expected": "11dc81661c100f19bb60488711d6f4b58865eec3e20879d525c5567ecee80f64",
+    "pass_check": true
+  },
+  {
+    "name": "Entry reader",
+    "actual": "9ed84a580eeeeca13a823be283d5e2f37610d88f02d42530262fe4d28ee59c0a",
+    "expected": "9ed84a580eeeeca13a823be283d5e2f37610d88f02d42530262fe4d28ee59c0a",
+    "pass_check": true
+  },
+  {
+    "name": "Note raw",
+    "actual": "b1a9c75ef2093827d41b6a42805bff4927c7a10897df11d259dc735df5b87aac",
+    "expected": "b1a9c75ef2093827d41b6a42805bff4927c7a10897df11d259dc735df5b87aac",
+    "pass_check": true
+  },
+  {
+    "name": "Note reader",
+    "actual": "11f29a9f8e1e5983e9c02aa1c6340f8bfd8277f0c45dae8cc9d2bc868618430a",
+    "expected": "11f29a9f8e1e5983e9c02aa1c6340f8bfd8277f0c45dae8cc9d2bc868618430a",
+    "pass_check": true
+  },
+  {
+    "name": "Interest raw",
+    "actual": "82e6361eaa2ff19ce4fb5defb77f7cf7bd16fe327aaff702931bfc733d265dbe",
+    "expected": "82e6361eaa2ff19ce4fb5defb77f7cf7bd16fe327aaff702931bfc733d265dbe",
+    "pass_check": true
+  },
+  {
+    "name": "Interest reader",
+    "actual": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201",
+    "expected": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201",
+    "pass_check": true
+  },
+  {
+    "name": "Annex raw",
+    "actual": "f62a61854eac561e96f689ebf11b8b2c75d418a6146a7f972e6e6a404a8063a0",
+    "expected": "f62a61854eac561e96f689ebf11b8b2c75d418a6146a7f972e6e6a404a8063a0",
+    "pass_check": true
+  },
+  {
+    "name": "Annex reader",
+    "actual": "71835d471f59441694ded6d668331d93bf708757f9f2acf5d6d27a2c4a76b8fa",
+    "expected": "71835d471f59441694ded6d668331d93bf708757f9f2acf5d6d27a2c4a76b8fa",
+    "pass_check": true
+  },
+  {
+    "name": "exact current wording",
+    "actual": "True",
+    "expected": "True",
+    "pass_check": true
+  },
+  {
+    "name": "2 original examples",
+    "actual": "2",
+    "expected": "2",
+    "pass_check": true
+  },
+  {
+    "name": "Q2 net",
+    "actual": "20000",
+    "expected": "20000",
+    "pass_check": true
+  },
+  {
+    "name": "Q2 advance",
+    "actual": "2000",
+    "expected": "2000",
+    "pass_check": true
+  },
+  {
+    "name": "Q1 reduction carry",
+    "actual": "-100",
+    "expected": "-100",
+    "pass_check": true
+  },
+  {
+    "name": "Q2 with reduction and unused credit",
+    "actual": "100",
+    "expected": "100",
+    "pass_check": true
+  },
+  {
+    "name": "Ceuta rate",
+    "actual": "2/25",
+    "expected": "2/25",
+    "pass_check": true
+  },
+  {
+    "name": "ordinary module rate3",
+    "actual": "3/100",
+    "expected": "3/100",
+    "pass_check": true
+  },
+  {
+    "name": "actual 2 oa",
+    "actual": "0",
+    "expected": "0",
+    "pass_check": true
+  }
+]

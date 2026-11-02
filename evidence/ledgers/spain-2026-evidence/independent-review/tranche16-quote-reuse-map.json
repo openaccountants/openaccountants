@@ -1,0 +1,1169 @@
+{
+  "scope": "Exact normalized current quote wholly contained in actually read earlier quote on byte-identical reader. Does not reuse source ranges with unread ellipses. Current year/claim conditions still assessed separately.",
+  "reused": [
+    {
+      "anchor": 1,
+      "key": "Ceuta2026",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 18
+    },
+    {
+      "anchor": 2,
+      "key": "Ceuta2026",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 18
+    },
+    {
+      "anchor": 3,
+      "key": "Ceuta2026",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 18
+    },
+    {
+      "anchor": 6,
+      "key": "LaPalma2026",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 10
+    },
+    {
+      "anchor": 7,
+      "key": "LaPalma2026",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 10
+    },
+    {
+      "anchor": 8,
+      "key": "LaPalma2026",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 10
+    },
+    {
+      "anchor": 9,
+      "key": "LaPalma2026",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 10
+    },
+    {
+      "anchor": 13,
+      "key": "activityBase",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 46
+    },
+    {
+      "anchor": 15,
+      "key": "activityBase",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 53
+    },
+    {
+      "anchor": 16,
+      "key": "activityBase",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 53
+    },
+    {
+      "anchor": 17,
+      "key": "activityBase",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 53
+    },
+    {
+      "anchor": 22,
+      "key": "activityBase",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 28
+    },
+    {
+      "anchor": 23,
+      "key": "activityReduction",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 102
+    },
+    {
+      "anchor": 24,
+      "key": "activityReduction",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 102
+    },
+    {
+      "anchor": 25,
+      "key": "activityReduction",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 102
+    },
+    {
+      "anchor": 26,
+      "key": "activityReduction",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 102
+    },
+    {
+      "anchor": 27,
+      "key": "activityReduction",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 102
+    },
+    {
+      "anchor": 28,
+      "key": "activityReduction",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 102
+    },
+    {
+      "anchor": 29,
+      "key": "activityReduction",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 102
+    },
+    {
+      "anchor": 41,
+      "key": "activityReduction",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 85
+    },
+    {
+      "anchor": 42,
+      "key": "activityReduction",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 85
+    },
+    {
+      "anchor": 43,
+      "key": "activityReduction",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 85
+    },
+    {
+      "anchor": 44,
+      "key": "activityReduction",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 85
+    },
+    {
+      "anchor": 45,
+      "key": "activityReduction",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 85
+    },
+    {
+      "anchor": 54,
+      "key": "ascendant",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 58
+    },
+    {
+      "anchor": 55,
+      "key": "ascendant",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 58
+    },
+    {
+      "anchor": 56,
+      "key": "ascendant",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 58
+    },
+    {
+      "anchor": 57,
+      "key": "asset",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 51
+    },
+    {
+      "anchor": 58,
+      "key": "asset",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 51
+    },
+    {
+      "anchor": 59,
+      "key": "asset",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 55
+    },
+    {
+      "anchor": 60,
+      "key": "asset",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 55
+    },
+    {
+      "anchor": 81,
+      "key": "collection",
+      "same_reader_hash": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 62
+    },
+    {
+      "anchor": 82,
+      "key": "collection",
+      "same_reader_hash": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 62
+    },
+    {
+      "anchor": 83,
+      "key": "collection",
+      "same_reader_hash": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 62
+    },
+    {
+      "anchor": 94,
+      "key": "descendant",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 101
+    },
+    {
+      "anchor": 95,
+      "key": "descendant",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 73
+    },
+    {
+      "anchor": 96,
+      "key": "descendant",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 73
+    },
+    {
+      "anchor": 97,
+      "key": "descendant",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 73
+    },
+    {
+      "anchor": 98,
+      "key": "descendant",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 73
+    },
+    {
+      "anchor": 99,
+      "key": "descendant",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 73
+    },
+    {
+      "anchor": 100,
+      "key": "descendant",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 73
+    },
+    {
+      "anchor": 101,
+      "key": "descendant",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 73
+    },
+    {
+      "anchor": 102,
+      "key": "disability",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 75
+    },
+    {
+      "anchor": 103,
+      "key": "disability",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 75
+    },
+    {
+      "anchor": 104,
+      "key": "disability",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 75
+    },
+    {
+      "anchor": 105,
+      "key": "disability",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 75
+    },
+    {
+      "anchor": 106,
+      "key": "disability",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 75
+    },
+    {
+      "anchor": 107,
+      "key": "disability",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 75
+    },
+    {
+      "anchor": 120,
+      "key": "employee",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 80
+    },
+    {
+      "anchor": 121,
+      "key": "employee",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 80
+    },
+    {
+      "anchor": 122,
+      "key": "employee",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 80
+    },
+    {
+      "anchor": 123,
+      "key": "employee",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 80
+    },
+    {
+      "anchor": 136,
+      "key": "familyGates",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "spain-payroll",
+      "prior_quote_row": 100
+    },
+    {
+      "anchor": 138,
+      "key": "filing",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 49
+    },
+    {
+      "anchor": 143,
+      "key": "filing",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 49
+    },
+    {
+      "anchor": 148,
+      "key": "fine",
+      "same_reader_hash": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 90
+    },
+    {
+      "anchor": 149,
+      "key": "fine",
+      "same_reader_hash": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 90
+    },
+    {
+      "anchor": 166,
+      "key": "health",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 66
+    },
+    {
+      "anchor": 167,
+      "key": "interest",
+      "same_reader_hash": "b606de6da1ee24723f03806a76e2bb974d4f2aa56fb6d5485b29f2b880843201",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 68
+    },
+    {
+      "anchor": 168,
+      "key": "intragroup",
+      "same_reader_hash": "b4b03f24f4251443550d1f95ae6f8915f62342ef50a4d0c7f99df8e62b0b81a1",
+      "prior_pair": "spain-transfer-pricing",
+      "prior_quote_row": 21
+    },
+    {
+      "anchor": 184,
+      "key": "late",
+      "same_reader_hash": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 71
+    },
+    {
+      "anchor": 185,
+      "key": "late",
+      "same_reader_hash": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 71
+    },
+    {
+      "anchor": 186,
+      "key": "late",
+      "same_reader_hash": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 72
+    },
+    {
+      "anchor": 187,
+      "key": "late",
+      "same_reader_hash": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 71
+    },
+    {
+      "anchor": 200,
+      "key": "meal",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 75
+    },
+    {
+      "anchor": 201,
+      "key": "mealsLimits",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 76
+    },
+    {
+      "anchor": 202,
+      "key": "mealsLimits",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 76
+    },
+    {
+      "anchor": 203,
+      "key": "mealsLimits",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 76
+    },
+    {
+      "anchor": 204,
+      "key": "mealsLimits",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 76
+    },
+    {
+      "anchor": 205,
+      "key": "method",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 111
+    },
+    {
+      "anchor": 206,
+      "key": "method",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 112
+    },
+    {
+      "anchor": 225,
+      "key": "minMad",
+      "same_reader_hash": "980a06aa54c46d484f714f581070c50e59d4b7ec6b618e0cc960ca6ab66a9db6",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 73
+    },
+    {
+      "anchor": 240,
+      "key": "offence",
+      "same_reader_hash": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 87
+    },
+    {
+      "anchor": 241,
+      "key": "offence",
+      "same_reader_hash": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 88
+    },
+    {
+      "anchor": 242,
+      "key": "offence",
+      "same_reader_hash": "38dcb7d49c0d85cca507351c39cacd73411798e5d39e00b720b2ab9a233b1799",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 89
+    },
+    {
+      "anchor": 244,
+      "key": "organised",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 46
+    },
+    {
+      "anchor": 245,
+      "key": "paymentDate",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 3
+    },
+    {
+      "anchor": 246,
+      "key": "paymentDate",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 3
+    },
+    {
+      "anchor": 247,
+      "key": "paymentExempt",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 48
+    },
+    {
+      "anchor": 248,
+      "key": "paymentExempt",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 48
+    },
+    {
+      "anchor": 249,
+      "key": "payments",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 47
+    },
+    {
+      "anchor": 267,
+      "key": "personal",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 113
+    },
+    {
+      "anchor": 268,
+      "key": "personal",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 113
+    },
+    {
+      "anchor": 362,
+      "key": "regional251",
+      "same_reader_hash": "980a06aa54c46d484f714f581070c50e59d4b7ec6b618e0cc960ca6ab66a9db6",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 74
+    },
+    {
+      "anchor": 363,
+      "key": "regional252",
+      "same_reader_hash": "980a06aa54c46d484f714f581070c50e59d4b7ec6b618e0cc960ca6ab66a9db6",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 74
+    },
+    {
+      "anchor": 364,
+      "key": "regional253",
+      "same_reader_hash": "980a06aa54c46d484f714f581070c50e59d4b7ec6b618e0cc960ca6ab66a9db6",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 74
+    },
+    {
+      "anchor": 365,
+      "key": "regional254",
+      "same_reader_hash": "980a06aa54c46d484f714f581070c50e59d4b7ec6b618e0cc960ca6ab66a9db6",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 74
+    },
+    {
+      "anchor": 366,
+      "key": "regional255",
+      "same_reader_hash": "980a06aa54c46d484f714f581070c50e59d4b7ec6b618e0cc960ca6ab66a9db6",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 74
+    },
+    {
+      "anchor": 392,
+      "key": "resident",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 115
+    },
+    {
+      "anchor": 393,
+      "key": "resident",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-non-resident-income-tax-irnr-and",
+      "prior_quote_row": 1
+    },
+    {
+      "anchor": 394,
+      "key": "resident",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-non-resident-income-tax-irnr-and",
+      "prior_quote_row": 2
+    },
+    {
+      "anchor": 395,
+      "key": "resident",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-non-resident-income-tax-irnr-and",
+      "prior_quote_row": 3
+    },
+    {
+      "anchor": 402,
+      "key": "scale63_0",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 114
+    },
+    {
+      "anchor": 403,
+      "key": "scale63_1",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 114
+    },
+    {
+      "anchor": 404,
+      "key": "scale63_2",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 114
+    },
+    {
+      "anchor": 405,
+      "key": "scale63_3",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 114
+    },
+    {
+      "anchor": 406,
+      "key": "scale63_4",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 114
+    },
+    {
+      "anchor": 407,
+      "key": "scale63_5",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 114
+    },
+    {
+      "anchor": 408,
+      "key": "scale65_0",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 114
+    },
+    {
+      "anchor": 409,
+      "key": "scale65_1",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 114
+    },
+    {
+      "anchor": 410,
+      "key": "scale65_2",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 114
+    },
+    {
+      "anchor": 411,
+      "key": "scale65_3",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 114
+    },
+    {
+      "anchor": 413,
+      "key": "scale66_0",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-capital-gains",
+      "prior_quote_row": 1
+    },
+    {
+      "anchor": 414,
+      "key": "scale66_1",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-capital-gains",
+      "prior_quote_row": 2
+    },
+    {
+      "anchor": 415,
+      "key": "scale66_2",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-capital-gains",
+      "prior_quote_row": 3
+    },
+    {
+      "anchor": 416,
+      "key": "scale66_3",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-capital-gains",
+      "prior_quote_row": 4
+    },
+    {
+      "anchor": 417,
+      "key": "scale66_4",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-capital-gains",
+      "prior_quote_row": 5
+    },
+    {
+      "anchor": 418,
+      "key": "scale76_0",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-capital-gains",
+      "prior_quote_row": 1
+    },
+    {
+      "anchor": 419,
+      "key": "scale76_1",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-capital-gains",
+      "prior_quote_row": 2
+    },
+    {
+      "anchor": 420,
+      "key": "scale76_2",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-capital-gains",
+      "prior_quote_row": 3
+    },
+    {
+      "anchor": 421,
+      "key": "scale76_3",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-capital-gains",
+      "prior_quote_row": 4
+    },
+    {
+      "anchor": 422,
+      "key": "scale76_4",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-capital-gains",
+      "prior_quote_row": 5
+    },
+    {
+      "anchor": 423,
+      "key": "scaleMethod",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 114
+    },
+    {
+      "anchor": 429,
+      "key": "simplified",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 94
+    },
+    {
+      "anchor": 430,
+      "key": "simplified",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 94
+    },
+    {
+      "anchor": 431,
+      "key": "simplified",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 94
+    },
+    {
+      "anchor": 432,
+      "key": "supplies",
+      "same_reader_hash": "6b9403e82b56f6a42fd8fedd950f0bec2047b42e82b790a9a427f81d582572c5",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 66
+    },
+    {
+      "anchor": 433,
+      "key": "withholding",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 92
+    },
+    {
+      "anchor": 434,
+      "key": "withholding",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 93
+    },
+    {
+      "anchor": 435,
+      "key": "withholding",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 93
+    },
+    {
+      "anchor": 436,
+      "key": "withholding",
+      "same_reader_hash": "1ed4d87576e2b8c00e272f7b832ba1adb1f9ce491e7df84038e702702e6a67b1",
+      "prior_pair": "es-autonomous-worker",
+      "prior_quote_row": 93
+    }
+  ],
+  "new_quote_indices": [
+    4,
+    5,
+    10,
+    11,
+    12,
+    14,
+    18,
+    19,
+    20,
+    21,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    137,
+    139,
+    140,
+    141,
+    142,
+    144,
+    145,
+    146,
+    147,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    223,
+    224,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    243,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    412,
+    424,
+    425,
+    426,
+    427,
+    428
+  ]
+}

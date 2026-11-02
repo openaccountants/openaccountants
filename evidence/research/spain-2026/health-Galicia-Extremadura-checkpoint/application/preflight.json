@@ -1,0 +1,77 @@
+{
+  "as_of": "2026-10-28T12:22:36.051054+00:00",
+  "baseline_head": "baf3d0f9e4f6845511d13de91c6c927b4695d1d2",
+  "origin_main": "df78d3d5722e8b937de6280bc3fd212b732d2c44",
+  "before29_hashes": {
+    "README.md": "5828e7a22a6851aa7fdfe111f44d5e5229b662b2af2f0796faf79d5067d8d2be",
+    "es-autonomous-worker.md": "f66e5c8fa560153a9d359138b172565b12974be378fab14212b243ee7fb8da36",
+    "es-beckham.md": "0ec3c789483d83f54bd57c7ebdfbb8fb8585cac5859d54f7d97860f4a67f9325",
+    "es-canary-islands-igic.md": "5e4fe8234ea9ded36b5ccd30870d444cb9e34c6b6b5dcfb8170b8b3938c9dd25",
+    "es-capital-gains.md": "e7e697ce9c7d64dc0ffb0a717894a49c4a6e25cd94890c7249b272d4e2e4fb38",
+    "es-ceuta-melilla-ipsi.md": "b238dff7fc806b4949d47691fe64c5873aa91c926ce6f55928f489819f82651d",
+    "es-corporate-tax.md": "66f9dff1c027ddaf6f9ebe5e7502bbd135ef1c33b45ff7fb0efd73cfa851c6c4",
+    "es-estimated-tax.md": "6272215a56c4f293e025101af322b2215e578f0284a63ccdbd959ba5f8f290eb",
+    "es-foral-corporate-tax.md": "c9bc857994dbd48342f3f632910fe10f1cbcef68d4e14012799833fd5a0e5da1",
+    "es-foral-income-tax.md": "1b9fb618e019dd1cc3b01e5f3077638d46991b61de280932a018da0aae08be40",
+    "es-foral-non-resident-tax.md": "5c0d3b2b279a8a1cd11080c4d025a4bad14303c764c2245797ec9b8d84effed9",
+    "es-foral-payroll.md": "4eb5391c1aaff726187687bdbad8eb04ba86ae4ccd94ac3d3b3f0772409f164f",
+    "es-income-tax.md": "11e11aeccc77080f5c60a444ce01397b77e6ebebfa7e304a884777b8d4e0191f",
+    "es-irpf-deductions.md": "83b696fac23a38251b567daa4152b7f4857bc163aa1b404114e88c503d7deb07",
+    "es-modelo-111.md": "cacfed2ef3bd58be9ef879b9a644b51426e5218656c53f074cee93ae5fe7e982",
+    "es-non-resident-income-tax-irnr-and.md": "f2b4f27d59fa4504bb8e89c08aece80b8c9f4f6cff9d161b8fd6bae0788942c4",
+    "es-rental-income.md": "c54193fb3920e8c416c777bd86caa82f319f7ff4eef2ae7d76ce1eeda059e57a",
+    "es-social-contributions.md": "f7f252585321b54e982902a1c144651ec8d5a4f89709f28730a0ca743afb92b1",
+    "es-vat-return.md": "677d57124ff6fec204c45c85e4b6a74c062a6b8be51e9a44da03fb36f473090e",
+    "references.md": "f10dae849566e7e8ac5bc7b1dff895b8f18b4ced44acf9cedc1d53a18a3c1874",
+    "spain-bookkeeping.md": "2478af9468608ea19e6cc38e226d363690cb24addf91c7b1a2decb33547a24a2",
+    "spain-crypto-tax.md": "1cb9ca63c95f0f6a88daa41443c1237e133d058bc12e6c82bca48911a4a6748c",
+    "spain-einvoice.md": "8f6a0341f024622512e66fc1f032a230cd20733d380a7115e96358d9c2d28e30",
+    "spain-financial-statements.md": "4b6e4a89190eb62b7d231ee95eb50e18a847b27ed368887e78751ff216607f1d",
+    "spain-formation.md": "a66d2c6d954c99bc1ddb0ffb6f2ac1a89526d6fa6216d973eac69019c8b1e787",
+    "spain-payroll.md": "89de80b5558648018020a803fd139685ac92d4908d6f72b1007e84626598d77a",
+    "spain-tax-optimization.md": "2f1670c146202b799d95f401cd7baa893c0a92f3b2c64119b92531be9ba22f89",
+    "spain-transfer-pricing.md": "5da4e1f814f1fbb09c3b2c4fa0d22906df09af2b927b08e28e892f9ebb543f0d",
+    "spain-vat-return.md": "468b52e040608dae170fe9e2cb6555f2d2ad505c90a87a60c812078cee9d2ef1"
+  },
+  "review_identities": [
+    {
+      "role": "Cantabria-health-exact",
+      "report": "spain-Cantabria-health-overlap-independent-review/report.md",
+      "report_sha256": "d3c1a51ccf6aafd9583506af593d5c04b5f72b3d32cda5e364c22b346bdb3b4c",
+      "manifest": "spain-Cantabria-health-overlap-independent-review/manifest.json",
+      "manifest_sha256": "109c50782967c9f0a595f10a3bbedc2d8084548cf2035f6c382cbc22f2d53470",
+      "members_verified": 5
+    },
+    {
+      "role": "Galicia-carry-exact",
+      "report": "spain-Galicia-carry-vintages-independent-review/report.md",
+      "report_sha256": "243bf78f8bcfc16d842e899ceeb32cd9dee80eb6b1648f07251f0071e59b30d4",
+      "manifest": "spain-Galicia-carry-vintages-independent-review/manifest.json",
+      "manifest_sha256": "6c4a3c1feebdee8f767c72800abde08720c41df7fdb992cfb15f2c2c86e6bd2c",
+      "members_verified": 6
+    },
+    {
+      "role": "Extremadura-rehab-exact",
+      "report": "spain-Extremadura-rental-rehab-independent-review/report.md",
+      "report_sha256": "f3ae4f51ca2c2cc094265ac52ebe8a4fb870082e1db15cdd4905a456e907615d",
+      "manifest": "spain-Extremadura-rental-rehab-independent-review/artifact-manifest.json",
+      "manifest_sha256": "0221fe7dd716884b6fbb277a530eda976df0258d02887369a8bc053e24345d6f",
+      "members_verified": 27
+    },
+    {
+      "role": "mechanical-composition-exact",
+      "report": "spain-health-Galicia-Extremadura-final-composition-independent-review/report.md",
+      "report_sha256": "4b07bc002c2806d280b45714ef6616a4ba621debecebbf47d15970ceb3b06db0",
+      "manifest": "spain-health-Galicia-Extremadura-final-composition-independent-review/manifest.json",
+      "manifest_sha256": "e390f920aa09daa433993478e04c21c39ff54d92f5499ea6ccb7693b48154161",
+      "members_verified": 5
+    }
+  ],
+  "archive": {
+    "original_files": 159,
+    "unique_blobs": 141,
+    "all_roundtrip_hashes_match": true
+  },
+  "country_ready": false,
+  "pushed": false
+}

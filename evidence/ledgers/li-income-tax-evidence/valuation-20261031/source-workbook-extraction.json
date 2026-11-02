@@ -1,0 +1,1213 @@
+{
+  "sha256": "1fe280b5fc8b88908cff0383973a686d6b83395813d47dec92c8e7b0a4f5dedc",
+  "original_bytes": 25232,
+  "sheets": {
+    "xl/worksheets/sheet1.xml": [
+      {
+        "cell": "A1",
+        "value": "Hilfsformular zur Bewertung von Unternehmensanteilen ohne Kursnotiz (Steuerjahr 2026)",
+        "formula": null
+      },
+      {
+        "cell": "A2",
+        "value": "Beachten Sie bitte Art.7a SteV zur Bewertung von Unternehmensanteilen ohne Kursnotiz",
+        "formula": null
+      },
+      {
+        "cell": "A3",
+        "value": "Der Unternehmenswert ist auf den 1. Januar des Steuerjahres zu ermitteln. Der Bewertung ist die letzte vor diesem Stichtag abgeschlossene Jahresrechnung zu Grunde zu legen. Beispiel: Für das Steuerjahr 2026 ist der Unternehmenswert zum 1. Januar 2026 zu ermitteln. Schliesst das Geschäftsjahr mit dem Kalenderjahr, so ist die Jahresrechnung per 31. Dezember 2025 massgebend. Sofern ein Geschäftsjahr nicht 12 Monate umfasst, ist das entsprechende Rechnungsergebnis auf 12 Monate umzurechnen.",
+        "formula": null
+      },
+      {
+        "cell": "A6",
+        "value": "Angaben zur juristischen Person",
+        "formula": null
+      },
+      {
+        "cell": "A7",
+        "value": "Firmenname:",
+        "formula": null
+      },
+      {
+        "cell": "A8",
+        "value": "Sitz:",
+        "formula": null
+      },
+      {
+        "cell": "F8",
+        "value": "Akt Nr.:",
+        "formula": null
+      },
+      {
+        "cell": "J8",
+        "value": "PEID Nr.:",
+        "formula": null
+      },
+      {
+        "cell": "T8",
+        "value": "Anzahl Jahre",
+        "formula": null
+      },
+      {
+        "cell": "W8",
+        "value": "Anzahl Tage",
+        "formula": null
+      },
+      {
+        "cell": "A9",
+        "value": "Dauer des Geschäftsjahres",
+        "formula": null
+      },
+      {
+        "cell": "F9",
+        "value": "von:",
+        "formula": null
+      },
+      {
+        "cell": "J9",
+        "value": "bis:",
+        "formula": null
+      },
+      {
+        "cell": "S9",
+        "value": "LJ",
+        "formula": null
+      },
+      {
+        "cell": "T9",
+        "value": "0",
+        "formula": "IF(K9-G9>363,1,0)"
+      },
+      {
+        "cell": "W9",
+        "value": "1",
+        "formula": "K9-G9+1"
+      },
+      {
+        "cell": "A10",
+        "value": "Dauer des Vorjahres",
+        "formula": null
+      },
+      {
+        "cell": "F10",
+        "value": "von:",
+        "formula": null
+      },
+      {
+        "cell": "J10",
+        "value": "bis:",
+        "formula": null
+      },
+      {
+        "cell": "S10",
+        "value": "VJ",
+        "formula": null
+      },
+      {
+        "cell": "T10",
+        "value": "1",
+        "formula": "IF(W10<365,0,1)"
+      },
+      {
+        "cell": "W10",
+        "value": null,
+        "formula": "IF(K10=\"\",\"\",K10-G10+1)"
+      },
+      {
+        "cell": "S11",
+        "value": "Summe",
+        "formula": null
+      },
+      {
+        "cell": "T11",
+        "value": "1",
+        "formula": "SUM(T9:T10)"
+      },
+      {
+        "cell": "A12",
+        "value": "Unternehmensbewertung",
+        "formula": null
+      },
+      {
+        "cell": "P12",
+        "value": "Bilanzwährung",
+        "formula": null
+      },
+      {
+        "cell": "V12",
+        "value": "FW-Kurs",
+        "formula": null
+      },
+      {
+        "cell": "P13",
+        "value": "CHF",
+        "formula": null
+      },
+      {
+        "cell": "U13",
+        "value": "CHF",
+        "formula": null
+      },
+      {
+        "cell": "V13",
+        "value": "1",
+        "formula": null
+      },
+      {
+        "cell": "A14",
+        "value": "Einbez., im Handelsreg. Eingetr. Kaptial, PS-Kaptial, Genossenschafts- u. Stammkapital",
+        "formula": null
+      },
+      {
+        "cell": "M14",
+        "value": null,
+        "formula": "IF(K9=\"\",\"\",K9)"
+      },
+      {
+        "cell": "U14",
+        "value": "Euro",
+        "formula": null
+      },
+      {
+        "cell": "V14",
+        "value": "0.93049999999999999",
+        "formula": null
+      },
+      {
+        "cell": "A15",
+        "value": "Reserven (gesetzliche und freie Reserven) / Zuwendungen bzw. Nachstiftungen des Errichters",
+        "formula": null
+      },
+      {
+        "cell": "U15",
+        "value": "USD",
+        "formula": null
+      },
+      {
+        "cell": "V15",
+        "value": "0.79225000000000001",
+        "formula": null
+      },
+      {
+        "cell": "A16",
+        "value": "Gewinn (+) / Verlustvortrag (-)",
+        "formula": null
+      },
+      {
+        "cell": "U16",
+        "value": "GBP",
+        "formula": null
+      },
+      {
+        "cell": "V16",
+        "value": "1.0656810000000001",
+        "formula": null
+      },
+      {
+        "cell": "A17",
+        "value": "Reingewinn (+) / Reinverlust (-) gemäss handelsrechtlicher Erfolgsrechnung",
+        "formula": null
+      },
+      {
+        "cell": "AC17",
+        "value": "mind. jedoch 60% des (betrieblichen) Substanzwerts",
+        "formula": null
+      },
+      {
+        "cell": "A18",
+        "value": "Eigenkapital (Handelsrechlich)",
+        "formula": null
+      },
+      {
+        "cell": "P18",
+        "value": "0",
+        "formula": "P14+P15+P16+P17"
+      },
+      {
+        "cell": "A19",
+        "value": "Ausschüttungen aus dem abgeschlossenen Geschäftsjahr gemäss Beschluss (-)",
+        "formula": null
+      },
+      {
+        "cell": "A20",
+        "value": "Bestand versteuerter stiller Reserven per Ende Geschäftsjahr",
+        "formula": null
+      },
+      {
+        "cell": "A21",
+        "value": "Bestand nicht verbuchter Abschr., Wertberichtigungen und Rückstellungen per Ende Geschäftsjahr",
+        "formula": null
+      },
+      {
+        "cell": "A22",
+        "value": "Stille Reserven Beteiligunen",
+        "formula": null
+      },
+      {
+        "cell": "A23",
+        "value": "Stille Reserven Diverses",
+        "formula": null
+      },
+      {
+        "cell": "A24",
+        "value": "Abzüglich / Zuzüglich",
+        "formula": null
+      },
+      {
+        "cell": "Y25",
+        "value": "Substanzwert in Währung",
+        "formula": null
+      },
+      {
+        "cell": "AB25",
+        "value": "0",
+        "formula": "SUM(P14:R24)-P18"
+      },
+      {
+        "cell": "A26",
+        "value": "Substanzwert nach Anhang 1 Bst. A Ziffer 3 SteV",
+        "formula": null
+      },
+      {
+        "cell": "P26",
+        "value": "0",
+        "formula": "MAX(SUM(P14:R24)-P18,0)"
+      },
+      {
+        "cell": "Y26",
+        "value": "Substanzwert in CHF",
+        "formula": null
+      },
+      {
+        "cell": "AB26",
+        "value": "0",
+        "formula": "IF(P13=\"CHF\",AB25*V13)+IF(P13=\"Euro\",AB25*V14)+IF(P13=\"USD\",AB25*V15)+IF(P13=\"GBP\",AB25*V16)"
+      },
+      {
+        "cell": "A27",
+        "value": "davon nicht betriebsnotwendige Vermögenswerte/Forderung Anteilsinhaber (+)",
+        "formula": null
+      },
+      {
+        "cell": "P27",
+        "value": "0",
+        "formula": "MIN(IF(L27>0,L27),AC30)"
+      },
+      {
+        "cell": "T27",
+        "value": "CHF",
+        "formula": null
+      },
+      {
+        "cell": "W27",
+        "value": "0",
+        "formula": "(AB25-AB30)*0.6"
+      },
+      {
+        "cell": "Y27",
+        "value": "Substanzwert wenn negativ dann CHF 0",
+        "formula": null
+      },
+      {
+        "cell": "AB27",
+        "value": "0",
+        "formula": "MAX(0,AB26)"
+      },
+      {
+        "cell": "I30",
+        "value": "Periodenergebnis",
+        "formula": null
+      },
+      {
+        "cell": "L30",
+        "value": "davon Nettoergebnis nicht betriebsnotwendiges Vermögen \nGewinn (+) / Verlust (-)",
+        "formula": null
+      },
+      {
+        "cell": "Y30",
+        "value": "NBV Maximal",
+        "formula": null
+      },
+      {
+        "cell": "AB30",
+        "value": "0",
+        "formula": "IF(AC30<=0,0,AC30)"
+      },
+      {
+        "cell": "AC30",
+        "value": "0",
+        "formula": "MAX(P18-P14-AD38+P19+P20+P21+P22+P23+P24,0)"
+      },
+      {
+        "cell": "A32",
+        "value": "Reingewinn (+) / Reinverlust (-) Vorjahr",
+        "formula": null
+      },
+      {
+        "cell": "H32",
+        "value": null,
+        "formula": "\"\"&TEXT(AA71,\"jjjj\")&\"\""
+      },
+      {
+        "cell": "P32",
+        "value": "0",
+        "formula": "I32-L32"
+      },
+      {
+        "cell": "U32",
+        "value": null,
+        "formula": "Z70"
+      },
+      {
+        "cell": "Y32",
+        "value": "Gewichteter Reingewinn",
+        "formula": null
+      },
+      {
+        "cell": "AB32",
+        "value": "0",
+        "formula": "((P33*2)+P32)/3"
+      },
+      {
+        "cell": "A33",
+        "value": "Reingewinn (+) / Reinverlust (-) laufendes Jahr",
+        "formula": null
+      },
+      {
+        "cell": "H33",
+        "value": null,
+        "formula": "\"\"&TEXT(Z70,\"jjjj\")&\"\""
+      },
+      {
+        "cell": "P33",
+        "value": "0",
+        "formula": "I33-L33"
+      },
+      {
+        "cell": "Y33",
+        "value": "Gew. Reingew. Nach Risikoabschlag",
+        "formula": null
+      },
+      {
+        "cell": "AB33",
+        "value": "0",
+        "formula": "MAX(0,AB32*0.85)"
+      },
+      {
+        "cell": "A34",
+        "value": "Gewichteter Reingewinn ((RG laufendes Jahr x 2 + Vorjahr)/3)",
+        "formula": null
+      },
+      {
+        "cell": "P34",
+        "value": "0",
+        "formula": "MAX(0,AB32)"
+      },
+      {
+        "cell": "Y34",
+        "value": "Ertragswert 1x",
+        "formula": null
+      },
+      {
+        "cell": "AB34",
+        "value": "0",
+        "formula": "IF(P36=15%,AB33*6.6666667)+IF(P36=20%,AB33*5)"
+      },
+      {
+        "cell": "A35",
+        "value": "Massgebender Reingewinn (nach Risikoabschlag von 15%)",
+        "formula": null
+      },
+      {
+        "cell": "P35",
+        "value": "0",
+        "formula": "AB33"
+      },
+      {
+        "cell": "Y35",
+        "value": "Ertragswert 2x",
+        "formula": null
+      },
+      {
+        "cell": "AB35",
+        "value": "0",
+        "formula": "AB34*2"
+      },
+      {
+        "cell": "A36",
+        "value": "Kapitalisierungszinssatz",
+        "formula": null
+      },
+      {
+        "cell": "P36",
+        "value": "0.15",
+        "formula": "IF(N55=\"Nein\",U36,U37)"
+      },
+      {
+        "cell": "U36",
+        "value": "0.15",
+        "formula": null
+      },
+      {
+        "cell": "Y36",
+        "value": "Betrieblicher Unternehmenswert",
+        "formula": null
+      },
+      {
+        "cell": "AB36",
+        "value": "0",
+        "formula": "(P39-P27)/3"
+      },
+      {
+        "cell": "A37",
+        "value": "Ertragswert",
+        "formula": null
+      },
+      {
+        "cell": "P37",
+        "value": "0",
+        "formula": "AB34"
+      },
+      {
+        "cell": "U37",
+        "value": "0.2",
+        "formula": null
+      },
+      {
+        "cell": "Y37",
+        "value": "Unternehmenswert mind.",
+        "formula": null
+      },
+      {
+        "cell": "AB37",
+        "value": "0",
+        "formula": "((P26-P27)*0.6)+P27"
+      },
+      {
+        "cell": "U38",
+        "value": "Var1",
+        "formula": null
+      },
+      {
+        "cell": "V38",
+        "value": "Var2",
+        "formula": null
+      },
+      {
+        "cell": "W38",
+        "value": "Var3",
+        "formula": null
+      },
+      {
+        "cell": "Y38",
+        "value": "Max. Reserven vom Akienkapital",
+        "formula": null
+      },
+      {
+        "cell": "AB38",
+        "value": "0",
+        "formula": "P14*0.1"
+      },
+      {
+        "cell": "AC38",
+        "value": "0",
+        "formula": "P15"
+      },
+      {
+        "cell": "AD38",
+        "value": "0",
+        "formula": "MIN(AB38,AC38)"
+      },
+      {
+        "cell": "A39",
+        "value": "Summe Substanzwert / 2 x Ertragswert",
+        "formula": null
+      },
+      {
+        "cell": "P39",
+        "value": "0",
+        "formula": "P26+AB35"
+      },
+      {
+        "cell": "Y39",
+        "value": "gesetzliche Reserven",
+        "formula": null
+      },
+      {
+        "cell": "AB39",
+        "value": "0",
+        "formula": "P15"
+      },
+      {
+        "cell": "A40",
+        "value": "Betrieblicher Unternehmenswert ((Substanz- / Ertragswert - Nicht betriebsnotwendige Vermögenswerte)/3)",
+        "formula": null
+      },
+      {
+        "cell": "P40",
+        "value": "0",
+        "formula": "MAX(AB36,AB41)"
+      },
+      {
+        "cell": "U40",
+        "value": "0",
+        "formula": "AB25"
+      },
+      {
+        "cell": "V40",
+        "value": "0",
+        "formula": "AB25-AB30"
+      },
+      {
+        "cell": "Y40",
+        "value": "gesetzliche Reserven zur Ermittl. NBV",
+        "formula": null
+      },
+      {
+        "cell": "AB40",
+        "value": "0",
+        "formula": "IF(AB39<AB38,AB39,AB38)"
+      },
+      {
+        "cell": "A41",
+        "value": "Nicht betriebsnotwendige Vermögenswerte (+)",
+        "formula": null
+      },
+      {
+        "cell": "P41",
+        "value": "0",
+        "formula": "P27"
+      },
+      {
+        "cell": "AB41",
+        "value": "0",
+        "formula": "IF(P26<-1,((P37*2+0)/3),IF((P14+P15)>P26,((P37*2+P26)/3),IF((P37*2+(P37-P27))/3>0,(P37*2+(P26-P27))/3,0)))"
+      },
+      {
+        "cell": "A42",
+        "value": "Unternehmenswert (Gewichtung Substanz- und Ertragswert)",
+        "formula": null
+      },
+      {
+        "cell": "P42",
+        "value": "0",
+        "formula": "P40+P41"
+      },
+      {
+        "cell": "U42",
+        "value": "0",
+        "formula": "P14+P15"
+      },
+      {
+        "cell": "V42",
+        "value": "0",
+        "formula": "P14+P15"
+      },
+      {
+        "cell": "A43",
+        "value": "Unternehmenswert (Mindestwert)",
+        "formula": null
+      },
+      {
+        "cell": "P43",
+        "value": "0",
+        "formula": "IF(P42>AB37,P42,AB37)"
+      },
+      {
+        "cell": "A44",
+        "value": "Massbebender Verkehrswert",
+        "formula": null
+      },
+      {
+        "cell": "P44",
+        "value": "0",
+        "formula": "ROUNDDOWN(P43,-2)"
+      },
+      {
+        "cell": "A45",
+        "value": "Massbebender Verkehrswert",
+        "formula": null
+      },
+      {
+        "cell": "K45",
+        "value": "Praktikermethode",
+        "formula": "IF(W56=0,\"Praktikermethode\",\"Substanzwert\")"
+      },
+      {
+        "cell": "N45",
+        "value": "CHF",
+        "formula": null
+      },
+      {
+        "cell": "P45",
+        "value": "0",
+        "formula": "P57"
+      },
+      {
+        "cell": "U46",
+        "value": "0",
+        "formula": "IF(U40<0,0,U40-U42)"
+      },
+      {
+        "cell": "A47",
+        "value": "Unternehmenswert (Praktikermethode) nach Anhang 1 Bst. A Ziffer 1 SteV in Bilanzwährung",
+        "formula": null
+      },
+      {
+        "cell": "P47",
+        "value": "0",
+        "formula": "P40+AC47"
+      },
+      {
+        "cell": "U47",
+        "value": "0",
+        "formula": "IF(P13=\"CHF\",P44*V13)+IF(P13=\"Euro\",P44*V14)+IF(P13=\"USD\",P44*V15)+IF(P13=\"GBP\",P44*V16)"
+      },
+      {
+        "cell": "Y47",
+        "value": "0",
+        "formula": "-AB30"
+      },
+      {
+        "cell": "AC47",
+        "value": "0",
+        "formula": "IF((P14+P15)>AB25,0,IF(AB30>U46,U46,AB30))"
+      },
+      {
+        "cell": "A49",
+        "value": "Unternehmenswert (Praktikermethode) nach Anhang 1 Bst. A Ziffer 1 SteV in CHF",
+        "formula": null
+      },
+      {
+        "cell": "O49",
+        "value": "CHF",
+        "formula": null
+      },
+      {
+        "cell": "P49",
+        "value": "0",
+        "formula": "U47"
+      },
+      {
+        "cell": "A51",
+        "value": "Handelt es sich bei dem zu bewertenden Unternehmen um eine",
+        "formula": null
+      },
+      {
+        "cell": "A52",
+        "value": " - Holding-, Finanz- oder Immobiliengesellschaft (Anhang 1 Bst. B SteV)",
+        "formula": null
+      },
+      {
+        "cell": "N52",
+        "value": "Nein",
+        "formula": null
+      },
+      {
+        "cell": "T52",
+        "value": "Ja",
+        "formula": null
+      },
+      {
+        "cell": "Y52",
+        "value": "0",
+        "formula": "IF(N52=\"Ja\",V62)+IF(N53=\"Ja\",V62)+IF(N54=\"Ja\",V62)"
+      },
+      {
+        "cell": "A53",
+        "value": " - Gesellschaft in Liquidation oder inaktive Gesellschaft (Anhang 1 Bst. B SteV)",
+        "formula": null
+      },
+      {
+        "cell": "N53",
+        "value": "Nein",
+        "formula": null
+      },
+      {
+        "cell": "T53",
+        "value": "Nein",
+        "formula": null
+      },
+      {
+        "cell": "W53",
+        "value": "0",
+        "formula": "IF(N52=\"Ja\",1,0)"
+      },
+      {
+        "cell": "A54",
+        "value": " - neu gegründete Gesellschaft (Anhang 1 Bst. A Ziffer 2 SteV)",
+        "formula": null
+      },
+      {
+        "cell": "N54",
+        "value": "Nein",
+        "formula": null
+      },
+      {
+        "cell": "W54",
+        "value": "0",
+        "formula": "IF(N53=\"Ja\",1,0)"
+      },
+      {
+        "cell": "A55",
+        "value": " - Gesellschaft, die der Aufsicht der FMA unterstellt ist (Anhang 1 Bst. A Ziffer 2 SteV)",
+        "formula": null
+      },
+      {
+        "cell": "N55",
+        "value": "Nein",
+        "formula": null
+      },
+      {
+        "cell": "W55",
+        "value": "0",
+        "formula": "IF(N54=\"Ja\",1,0)"
+      },
+      {
+        "cell": "W56",
+        "value": "0",
+        "formula": "SUM(W53:W55)"
+      },
+      {
+        "cell": "Y56",
+        "value": "0",
+        "formula": "AB26-AB26-AB26"
+      },
+      {
+        "cell": "A57",
+        "value": "Massgebender Firmenwert:",
+        "formula": null
+      },
+      {
+        "cell": "O57",
+        "value": "(abgerundet) CHF",
+        "formula": null
+      },
+      {
+        "cell": "P57",
+        "value": "0",
+        "formula": "ROUNDDOWN(IF(W56=0,V62,AB27),-2)"
+      },
+      {
+        "cell": "A60",
+        "value": "Ausschüttungen",
+        "formula": "\"Ausschüttungen\""
+      },
+      {
+        "cell": "U60",
+        "value": "0",
+        "formula": "U47"
+      },
+      {
+        "cell": "A62",
+        "value": "Dividenden/Ausschüttungen nach dem Bilanzstichtag ",
+        "formula": "\"Dividenden/Ausschüttungen nach dem Bilanzstichtag \"&TEXT(Z70,\"jjjj\")&\"\""
+      },
+      {
+        "cell": "O62",
+        "value": "CHF",
+        "formula": null
+      },
+      {
+        "cell": "V62",
+        "value": "0",
+        "formula": "MAX(0,U60)"
+      },
+      {
+        "cell": "X62",
+        "value": "0",
+        "formula": "IF(V62<Y62,Y62,V62)"
+      },
+      {
+        "cell": "Y62",
+        "value": "0",
+        "formula": "AB25*0.6"
+      },
+      {
+        "cell": "A64",
+        "value": "Interimsdividende im Geschäftsjahr ",
+        "formula": "\"Interimsdividende im Geschäftsjahr \"&TEXT(Z70,\"jjjj\")&\"\""
+      },
+      {
+        "cell": "I64",
+        "value": "CHF",
+        "formula": "P13"
+      },
+      {
+        "cell": "O64",
+        "value": "CHF",
+        "formula": null
+      },
+      {
+        "cell": "P64",
+        "value": "0",
+        "formula": "IF(P13=\"CHF\",J64*V13)+IF(P13=\"Euro\",J64*V14)+IF(P13=\"USD\",J64*V15)+IF(P13=\"GBP\",J64*V16)"
+      },
+      {
+        "cell": "V64",
+        "value": "0",
+        "formula": "P19"
+      },
+      {
+        "cell": "W64",
+        "value": "0",
+        "formula": "IF(P13=\"CHF\",V64*V13)+IF(P13=\"Euro\",V64*V14)+IF(P13=\"USD\",V64*V15)+IF(P13=\"GBP\",V64*V16)"
+      },
+      {
+        "cell": "X64",
+        "value": "0",
+        "formula": "ROUND(W64,0)"
+      },
+      {
+        "cell": "A68",
+        "value": "Vermögenswert/e Inhaber/in",
+        "formula": null
+      },
+      {
+        "cell": "K68",
+        "value": "Übertrag in Steuererklärung der/des Inhabers/s",
+        "formula": null
+      },
+      {
+        "cell": "A69",
+        "value": "Inhaber (Name/Vorname)",
+        "formula": null
+      },
+      {
+        "cell": "F69",
+        "value": "Anteil\nin %",
+        "formula": null
+      },
+      {
+        "cell": "G69",
+        "value": "Berechnung Verkehrs-\nwert gemäss Anteil",
+        "formula": null
+      },
+      {
+        "cell": "J69",
+        "value": "Pauschal-\nabzug",
+        "formula": null
+      },
+      {
+        "cell": "K69",
+        "value": "Firmenwert\nZiff.3.3.",
+        "formula": null
+      },
+      {
+        "cell": "M69",
+        "value": "Dividenden\nZiff 3.4.",
+        "formula": null
+      },
+      {
+        "cell": "O69",
+        "value": "Darlehen\nZiff.3.4. od. 5",
+        "formula": null
+      },
+      {
+        "cell": "R69",
+        "value": "A/P\n(aus Sicht JP)",
+        "formula": null
+      },
+      {
+        "cell": "G70",
+        "value": "0",
+        "formula": "$P$57*F70"
+      },
+      {
+        "cell": "J70",
+        "value": "0.2",
+        "formula": "LOOKUP(F70,U83:W85)"
+      },
+      {
+        "cell": "K70",
+        "value": "0",
+        "formula": "IF(J70=0%,G70*1)+IF(J70=10%,G70*0.9)+IF(J70=20%,G70*0.8)"
+      },
+      {
+        "cell": "M70",
+        "value": "0",
+        "formula": "$P$62*F70"
+      },
+      {
+        "cell": "R70",
+        "value": "Aktiv",
+        "formula": null
+      },
+      {
+        "cell": "U70",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "V70",
+        "value": "Aktiv",
+        "formula": null
+      },
+      {
+        "cell": "X70",
+        "value": null,
+        "formula": "IF(K9=0,\"\",K9)"
+      },
+      {
+        "cell": "Z70",
+        "value": null,
+        "formula": "X70"
+      },
+      {
+        "cell": "G71",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "J71",
+        "value": "0.2",
+        "formula": "LOOKUP(F71,U83:W85)"
+      },
+      {
+        "cell": "K71",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "M71",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "R71",
+        "value": "Aktiv",
+        "formula": null
+      },
+      {
+        "cell": "U71",
+        "value": "0.1",
+        "formula": null
+      },
+      {
+        "cell": "V71",
+        "value": "Passiv",
+        "formula": null
+      },
+      {
+        "cell": "Y71",
+        "value": null,
+        "formula": "IF(K10=0,\"\",K10)"
+      },
+      {
+        "cell": "AA71",
+        "value": null,
+        "formula": "Y71"
+      },
+      {
+        "cell": "G72",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "J72",
+        "value": "0.2",
+        "formula": "LOOKUP(F72,U83:W85)"
+      },
+      {
+        "cell": "K72",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "M72",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "R72",
+        "value": "Aktiv",
+        "formula": null
+      },
+      {
+        "cell": "U72",
+        "value": "0.2",
+        "formula": null
+      },
+      {
+        "cell": "G73",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "J73",
+        "value": "0.2",
+        "formula": "LOOKUP(F73,U83:W85)"
+      },
+      {
+        "cell": "K73",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "M73",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "R73",
+        "value": "Aktiv",
+        "formula": null
+      },
+      {
+        "cell": "G74",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "J74",
+        "value": "0.2",
+        "formula": "LOOKUP(F74,U83:W85)"
+      },
+      {
+        "cell": "K74",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "M74",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "R74",
+        "value": "Aktiv",
+        "formula": null
+      },
+      {
+        "cell": "G75",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "J75",
+        "value": "0.2",
+        "formula": "LOOKUP(F75,U83:W85)"
+      },
+      {
+        "cell": "K75",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "M75",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "R75",
+        "value": "Aktiv",
+        "formula": null
+      },
+      {
+        "cell": "K77",
+        "value": "46149",
+        "formula": "TODAY()"
+      },
+      {
+        "cell": "A81",
+        "value": "Pauschalabzug für Minderheitsbeteiligung",
+        "formula": null
+      },
+      {
+        "cell": "A83",
+        "value": "Beteiligung von / bis",
+        "formula": null
+      },
+      {
+        "cell": "E83",
+        "value": "Pauschal-Abzug",
+        "formula": null
+      },
+      {
+        "cell": "U83",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "V83",
+        "value": "0.19989999999999999",
+        "formula": null
+      },
+      {
+        "cell": "W83",
+        "value": "0.2",
+        "formula": null
+      },
+      {
+        "cell": "A84",
+        "value": "<20%",
+        "formula": null
+      },
+      {
+        "cell": "E84",
+        "value": "0.2",
+        "formula": null
+      },
+      {
+        "cell": "U84",
+        "value": "0.2",
+        "formula": null
+      },
+      {
+        "cell": "V84",
+        "value": "0.49998999999999999",
+        "formula": null
+      },
+      {
+        "cell": "W84",
+        "value": "0.1",
+        "formula": null
+      },
+      {
+        "cell": "A85",
+        "value": ">=20% - <50%",
+        "formula": null
+      },
+      {
+        "cell": "E85",
+        "value": "0.1",
+        "formula": null
+      },
+      {
+        "cell": "U85",
+        "value": "0.5",
+        "formula": null
+      },
+      {
+        "cell": "V85",
+        "value": "1",
+        "formula": null
+      },
+      {
+        "cell": "W85",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "A86",
+        "value": ">=50%",
+        "formula": null
+      },
+      {
+        "cell": "E86",
+        "value": "0",
+        "formula": null
+      },
+      {
+        "cell": "A88",
+        "value": "1  Mindestens Grundkapital und gesetzliche Reserven, falls nicht betriebsnotwendige Vermögenswerte/Forderung Anteilsinhaber den Substanzwert übersteigen.",
+        "formula": null
+      },
+      {
+        "cell": "A89",
+        "value": "2  Maximal das Total nicht betriebsnotwendiger Vermögenswerte/Forderung Anteilsinhaber, mindestens Substanzwert abzüglich Grundkapital und gesetzlicher Reserven.",
+        "formula": null
+      }
+    ]
+  }
+}

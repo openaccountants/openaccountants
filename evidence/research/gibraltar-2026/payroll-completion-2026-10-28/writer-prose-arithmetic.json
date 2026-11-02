@@ -1,0 +1,27 @@
+{
+  "scope": "Independent recomputation of specified inherited/new prose; synthetic inputs retain their stated legal/table/class assumptions",
+  "results": {
+    "p8_paye_due": 300,
+    "p8_si_due": 200,
+    "daily_current_tax": 2.88,
+    "daily_note_tax": 2.94,
+    "monthly_net": 1335.26,
+    "monthly_gross_plus_employer_si": 1867.15,
+    "annual_rounded_months": 2121.12,
+    "annual_schedule_difference": 0.09,
+    "small_employer_credit": 760,
+    "first_year_credit": 1500,
+    "shared_second_employee": 10.79,
+    "shared_second_employer": 2.22,
+    "booklet_correct_product100": 20.0,
+    "booklet_correct_product120": 24.0,
+    "compound_two_months": 1040.4,
+    "fuel_separate_value": 1500.0
+  },
+  "all_pass": true,
+  "refund_date_examples": [
+    "2025-08-15 plus2years =2027-08-15",
+    "2026-12-15 plus12months =2027-12-15; later than2027-08-15"
+  ],
+  "country_complete": false
+}

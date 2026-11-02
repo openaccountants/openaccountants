@@ -1,0 +1,307 @@
+<!--pasadaVerificarIdioma: 0 - intCodigoAVerificar:  - strTablaAVerificar: --><!-- - TipoNoticia_biz: - True - True - True<BR>--><!--pasadaVerificarIdioma: 1 - intCodigoAVerificar:  - strTablaAVerificar: --><!-- - TipoNoticia_biz: - True - True - True<BR>--><!--pasadaVerificarIdioma: 2 - intCodigoAVerificar:  - strTablaAVerificar: --><!-- - TipoNoticia_biz: - True - True - True<BR>-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<link media="screen" type="text/css" rel="stylesheet" href="/ogasuna/css/ogasuna_rwd.css" />
+<!--bolMigradoLiferay: True - /ogasuna/faq/faq_detalle.asp - <br>-->
+	<script type="text/javascript" data-senna-track="permanent">
+		if(window.self == window.top){
+			var ancla = window.location.hash;
+			window.location.href = 'https://www.bizkaia.eus/es/tema-plantilla/-/edukia/pl/-/ogasuna/faq/faq_detalle.asp[interrogacion]Idioma=CA&idregistro=900007014'+ancla.replace('#','[almohadilla]');
+		}
+	</script>
+	
+		<title>  - Bizkaia.Eus</title>
+	
+<!-- metas_RWD -->
+<meta http-equiv='Content-Language' content='es' />
+<meta name='language' content='es' />
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+
+	<meta name="robots" content="all" />
+
+<meta name="keywords" content="Acción Social, Agricultura, Cultura, Diputado General, Hacienda y Finanzas, Medio Ambiente, Obras Públicas y Transporte, Promoción Económica, Presidencia" />
+<meta name="description" content="La administración foral de Bizkaia" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+
+<!-- Google Tag Manager -->
+<script type="text/javascript">
+if(getCookieGa('pc_analitica_bizkaia')=="1" || getCookieGa('pc_analitica_bizkaia')=="true"){
+<!-- Google Tag Manager DES -->
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&amp;gtm_auth=rS704NlD36ODe47W5Ue8TA&amp;gtm_preview=env-3&amp;gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5ZSZSRR');
+<!-- Google Tag Manager PRO -->
+<!--(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':-->
+<!-- new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],-->
+<!-- j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=-->
+<!-- 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);-->
+<!-- })(window,document,'script','dataLayer','GTM-5ZSZSRR');-->
+}
+function getCookieGa(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1){
+        c_value = null;
+    }else{
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1){
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+	<link href="/home2/estiloak_rwd/comun.css?v=2" rel="stylesheet" type="text/css" media="screen"/>
+	<link href="/home2/estiloak_rwd/impresora.css?v=2" rel="stylesheet" type="text/css" media="print" />
+	<link rel="Shortcut Icon" type="image/ico" href="/home2/irudiak/bfa.ico" />
+	<script type="text/javascript" src="/home2/jquery/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="/home2/jquery/jquery-ui.js"></script>
+	<link rel="stylesheet" href="/home2/jquery/jquery-ui.css?v=2" type="text/css" />
+
+<link href="/ogasuna/guregida/css/guregida.css" rel="stylesheet" type="text/css" />
+
+<link href="css/faqs.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/js2.js" type="text/javascript"></script>
+<link href="/ogasuna/css/ogasuna_impresion.css" rel="stylesheet" type="text/css" media="print"/>
+</head>
+<script type="text/javascript" language="javascript">
+	function mostrarRespuesta(val)
+	{
+		var itemS = "Resp" + val ; 
+		var itemLI = "LiResp" + val ; 
+		if(document.getElementById(itemS).style.display == 'none'){
+			document.getElementById(itemS).style.display = '';
+			document.getElementById(itemLI).className = document.getElementById(itemLI).className.replace(/(?:^|\s)ogamas(?!\S)/g, " ogamenos");
+		}else{
+			document.getElementById(itemS).style.display = 'none';
+			document.getElementById(itemLI).className = document.getElementById(itemLI).className.replace(/(?:^|\s)ogamenos(?!\S)/g, " ogamas");
+		}		
+	}
+</script>
+
+<body>
+<div id="contenedor"> 
+  <!-- Google Tag Manager (noscript) -->
+<!-- DES -->
+<!-- <noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSZSRR&amp;gtm_auth=rS704NlD36ODe47W5Ue8TA&amp;gtm_preview=env-3&amp;gtm_cookies_win=x" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript> -->
+<!-- PRO -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZSZSRR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+   <div class="separador">&nbsp;</div>
+  <!-- parte principal -->
+
+	<a name="inicio_contenido" id="iniciocontenido"></a>
+    
+<div class="actualidadInicio actualidadInicio_LFR">
+<div class=""> 
+
+
+<div id="contenido_editado">
+  <ul class="ogaPrePath">
+<li><a href="faq_listado.asp?Tem_Codigo=&amp;idioma=ca&amp;Nivel1=964&amp;btnBuscar=Buscar">No residentes</a>
+</li><li><a href="faq_listado.asp?Tem_Codigo=&amp;idioma=ca&amp;Nivel1=964&amp;Nivel2=1057&amp;btnBuscar=Buscar">Tributaci&#243;n de las rentas m&#225;s comunes</a>
+</li><li><a href="faq_listado.asp?Tem_Codigo=&amp;idioma=ca&amp;Nivel1=964&amp;Nivel2=1057&amp;Nivel3=1061&amp;btnBuscar=Buscar">Ganancias patrimoniales</a>
+</li></ul>
+
+<p class="faqvolverGureGida"><a href="https://www.bizkaia.eus/guregida/"><img src="/ogasuna/guregida/irudiak/CA_guregida.png" alt=""/>  <br/>
+ <span>www.bizkaia.eus/guregida</span>
+
+</a></p>
+
+
+
+
+
+<p class="ogaTipoBuscador ogapreguntaFrecuente">Preguntas frecuentes <span>Nº Identificación: 900007014</span></p>
+
+
+<h4> Un residente en Francia transmite un inmueble situado en Bilbao el 30 de septiembre de 2026 por importe de 400.000 euros (el adquirente ingresa una retenci&#243;n del 3%), adquirido el 15 de marzo de 2019 por importe equivalente a 200.000 euros, adem&#225;s abon&#243; en concepto de notar&#237;a, registro etc... un importe de 3.000 euros. La plusval&#237;a municipal abonada por el transmitente asciende a 1.500 euros. Determinaci&#243;n de la ganancia sometida a tributaci&#243;n y la cuota.</h4>
+<br>
+	
+</br>
+
+<div class="ogarecuadro"><div class="ogacontenido"><p class="ogaVigencia"><strong>Respuesta válida aplicando la normativa vigente desde: </strong>01/01/2026</p></div></div><ul>
+    <li>Valor de transmisi&oacute;n: 398.500 (400.000-1.500)</li>
+    <li>Valor de adquisici&oacute;n: 203.000 (200.000 +3.000)</li>
+    <li>Valor de adquisici&oacute;n con coeficiente de correcci&oacute;n (1,249 es el coeficiente que se aplica en 2026 respecto al 2019): 203.000x1,249=253.547</li>
+    <li>Ganancia: 144.953 (398.500-253.547)</li>
+    <li>Tipo de gravamen:19%</li>
+    <li>Cuota &iacute;ntegra:27.541,07</li>
+</ul>
+<p>El adquirente est&aacute; obligado a retener e ingresar (modelo 211) dentro del mes siguiente a la transmisi&oacute;n del inmueble un 3% de la contraprestaci&oacute;n acordada, por lo que la retenci&oacute;n ser&aacute;: 400.000 x 3% = 12.000.</p>
+<p>Adem&aacute;s el transmitente deber&aacute; presentar el modelo 210 teniendo en cuenta la retenci&oacute;n efectuada e ingresada por el adquirente.</p>
+<ul>
+    <li>Retenci&oacute;n 12.000</li>
+    <li><strong>A ingresar: 15.541,07</strong></li>
+</ul><div class="ogarecuadro"><div class="ogacontenido"><p class="ogaVigencia"><strong>Respuesta válida aplicando la normativa vigente hasta: </strong>31/12/2025</p></div></div><h6>Hasta el 31/12/2025 se aplicaba el c&aacute;lculo en base a la legislaci&oacute;n estatal y no se ten&iacute;a en cuenta coeficiente de correcci&oacute;n monetaria</h6>
+<ul>
+    <li class="ogaguregidanegro">Valor de transmisi&oacute;n: 398.500 (400.000-1.500)</li>
+    <li class="ogaguregidanegro">Valor de adquisici&oacute;n: 203.000 (200.000 +3.000)</li>
+    <li class="ogaguregidanegro">Ganancia: 195.500 (398.500-203.000)</li>
+    <li class="ogaguregidanegro">Tipo de gravamen:19%</li>
+    <li class="ogaguregidanegro">Cuota &iacute;ntegra:37.145</li>
+</ul>
+<p>El adquirente est&aacute; obligado a retener e ingresar (modelo 211) dentro del mes siguiente a la transmisi&oacute;n del inmueble un 3% de la contraprestaci&oacute;n acordada, por lo que la retenci&oacute;n ser&aacute;: 400.000 x 3% = 12.000.</p>
+<p>Adem&aacute;s el transmitente deber&aacute; presentar el modelo 210 teniendo en cuenta la retenci&oacute;n efectuada e ingresada por el adquirente.</p>
+<ul>
+    <li class="ogaguregidanegro">Retenci&oacute;n 12.000</li>
+    <li class="ogaguregidanegro"><strong>A ingresar: 25.145</strong></li>
+</ul>
+<p>&nbsp;</p>
+
+
+<br class="limpiar"/>
+<div class="oga_alerta">
+<p class="oga_tit_alerta">Nota</p>
+<div class="oga_contenido_alerta"><p>Esta Pregunta-Respuesta carece de efectos vinculantes para la Hacienda Foral de Bizkaia, teniendo el carácter de mera información.</p></div>
+</div>
+
+
+<p class="faqvolver"><a href="faq_listado.asp?Idioma=CA">Volver</a></p>   
+  <div class="separador">&nbsp;</div>
+            <div id="utilidades">
+						<script type="text/javascript">
+							<!--
+							document.write("<p class='imprimir_pie'>")
+							document.write("<a href='#' onclick='javascript:print();'>imprimir</a>")
+							document.write("</p>")
+							-->
+						</script>
+				
+              <p class="correo_pie"> <a href="envios.asp?Idioma=CA&amp;idregistro=900007014">enviar por e-mail</a></p>
+            </div> <!-- utilidades --> 
+
+
+
+<br class="limpiar"/>
+</div><!--contenido_editado-->
+ 				</div><!-- principal -->
+				<br class="separador"/>
+			</div><!-- actualidad_inicio -->
+		
+<label for="right-menu-checkbox" class="overlay right"></label>
+
+		<!-- menuPpal -->
+
+	<div class="separador">&nbsp;</div>
+	
+
+	<script type="text/javascript">
+		$(function() {
+	
+		function getParameterByName(name, url) {
+			name = name.replace(/[\[\]]/g, '\\$&');
+			var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+				results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, ' '));
+		}
+	
+		var iframeURL = window.location.href;
+		var iframeTemCodigo = getParameterByName('tem_codigo', iframeURL.toLowerCase());
+		
+		//console.log('iframeURL: ', window.location.href);
+		//console.log('iframeTemCodigo: ', iframeTemCodigo);
+		
+		$("body a:not([target='_blank'])").each(function(){
+			var linkURL = $(this).attr('href');
+			//console.log('linkURL: ', linkURL);
+			if (linkURL && !linkURL.startsWith("#")){
+				var linkTemCodigo = getParameterByName('tem_codigo',linkURL.toLowerCase())
+				//console.log('linTemCodigo: ', linkTemCodigo);		
+				if((!iframeTemCodigo) || (iframeTemCodigo != linkTemCodigo)){
+				//if(iframeTemCodigo != linkTemCodigo){
+					$(this).attr("target","_parent");
+				}
+			}
+		});
+
+		$('a[href^="#"]').click(function( event ) {
+
+			event.preventDefault();
+			var idLink=$(this).attr('href');
+			//console.log('click');
+
+				setTimeout(function(){
+					//console.log('scroll2');
+					//console.log(idLink);
+					if (typeof parentIFrame != "undefined") {
+						if($(idLink).length){
+							parentIFrame.scrollTo(0,$(idLink).offset().top + 220)
+						} else{
+							parentIFrame.scrollTo(0,$('a[name="'+idLink.substring(1)+'"]').offset().top + 220)
+						}
+					}
+				},150);
+
+		});
+		
+		
+		if(window.location.hash) {
+
+			//event.preventDefault();
+			var idLink=window.location.hash;
+			//console.log('hash');
+
+				setTimeout(function(){
+					//console.log('scroll2');
+					//console.log(idLink);
+					if (typeof parentIFrame != "undefined") {
+						if($(idLink).length){
+							//console.log("ENTRA");
+							parentIFrame.scrollTo(0,$(idLink).offset().top + 220)
+						} else{
+							parentIFrame.scrollTo(0,$('a[name="'+idLink.substring(1)+'"]').offset().top + 220)
+						}
+					}
+				},450);
+
+		}
+
+		
+		$('a[data-toggle=collapse]').click(function( event ) {
+
+			event.preventDefault();
+
+			//console.log('click');
+
+			if (typeof parentIFrame != "undefined") {
+				setTimeout(function(){
+					//console.log('scroll');
+					parentIFrame.scrollToOffset(0,-150);
+				},350);
+			}
+
+		});
+	});	
+	</script>
+
+	<script src="/home2/js/iframeResizer.contentWindow.min.js"></script>
+	<!-- piePagina --> 
+<img id='estadisticas' src='/home2/includes/bfa_plantilla.asp?idi=ca&amp;U=https%3A%2F%2Fwww%2Ebizkaia%2Eeus%2Fogasuna%2Ffaq%2Ffaq%5Fdetalle%2Easp%3FIdioma%3DCA%26idregistro%3D900007014' alt='' />
+	<!-- piePagina --> 
+</div><!-- contenedor -->
+<div class="separador">&nbsp;</div>
+
+</body>
+
+</html>

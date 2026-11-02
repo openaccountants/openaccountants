@@ -1,0 +1,25 @@
+{
+  "verdict": "changes_required",
+  "scope": "staged delta only, not country completeness or accountant attestation",
+  "legal_rows_checked": 47,
+  "legal_quotes_matching_supplied_complete_sources": 47,
+  "examples_recomputed": 4,
+  "findings": [
+    {
+      "id": "F1",
+      "priority": "P2",
+      "file": "skills/svalbard/sj-svalbard-coal-export-duty.md",
+      "line": 47,
+      "summary": "Shipment-security rule in ledger R005 and Act\u00a72(4) omitted from Guide body/reservations.",
+      "repair": "Add sourced instruction that security can be required at shipment, and require actual demand/rules without inventing percentage."
+    },
+    {
+      "id": "F2",
+      "priority": "P3",
+      "file": "both new Guides frontmatter",
+      "summary": "Descriptions contain55 and53 words, below template80\u2013150.",
+      "repair": "Expand each grounded scope/routing description to80\u2013150words."
+    }
+  ],
+  "recheck_required_for_any_changed_guide_or_ledger": true
+}

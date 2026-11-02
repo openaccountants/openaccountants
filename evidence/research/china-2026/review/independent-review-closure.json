@@ -1,0 +1,1538 @@
+{
+  "review": "Bounded closure of China2026 initial independent findings",
+  "read_on": "2026-10-29",
+  "verdict": "ACCEPTED_WITHIN_STATED_SOURCE_CITED_DRAFT_SCOPE",
+  "accountant_attestation": false,
+  "whole_country_or_legacy_completion": false,
+  "initial_evidence_preserved": true,
+  "initial_review_sha256": "547d5cd7d456a8719b06dec972f8795189bdb17fe5c5e898a621c13df4f81900",
+  "final_manifest_sha256": "6854df33f08b99557859baa1d0ef817bc620382977607425fe99798570da66d5",
+  "scope": "Only F01–F19 repairs, 36 affected ledger rows, dependent repetitions/cases, restored named old topics, appended operative units and final hashes. The initial 145-row/118-reader review is incorporated by reference and was not restarted.",
+  "findings": [
+    {
+      "id": "F01",
+      "original_severity": "P1",
+      "title": "Preserve the deduction choice for mixed comprehensive/business income",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNIIT-04",
+        "CN-CNIIT-05"
+      ],
+      "primary_or_preservation_units_checked": "Order No.57 art.10; Regulations art.15",
+      "repair_observed": "The business-rate paragraph and method now retain the either-category deduction choice and prohibit duplication.",
+      "dependent_case_outcome": "The preserved no-comprehensive-income business example remains valid; no example values changed.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "6102a4b0edb542f1",
+          "unit": "Order57 art10",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202502/t475327.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/6102a4b0edb542f1.txt",
+          "reader_sha256": "77496d42126e39ca86481b986409dc2191721b6cfb30b05bc1ce345266178ec6",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "可在综合所得或者经营所得中申报减除"
+        },
+        {
+          "id": "6578413203601ac4",
+          "unit": "Regulations art15",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/6578413203601ac4.txt",
+          "reader_sha256": "7db727493e67450c1e054c8de71e9302b016708f47580d24d53b4706109be72a",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        }
+      ]
+    },
+    {
+      "id": "F02",
+      "original_severity": "P1",
+      "title": "Keep the statutory substitute proof for foreign tax credits",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNIIT-06"
+      ],
+      "primary_or_preservation_units_checked": "2020 No.3 §§3(1)–(2),10",
+      "repair_observed": "The business fraction uses taxable income, while comprehensive income uses income amounts. Genuine inability, both substitute documents, prior declaration and the retrospective five-year limit are retained. Filing, checklist and intake references use qualifying evidence.",
+      "dependent_case_outcome": "The comprehensive-income foreign-credit example is unchanged and still uses income amounts; no guessed business-income fraction remains.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "4df181f65ba88456",
+          "unit": "2020No3 §§3(1)–(2),10",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202002/t452398.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/4df181f65ba88456.txt",
+          "reader_sha256": "83fe0a811acf052d155829b4c27897812d36c7c21f9461331063750bdf3ccbd1",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "可同时凭境外所得纳税申报表"
+        }
+      ]
+    },
+    {
+      "id": "F03",
+      "original_severity": "P1",
+      "title": "Resolve missing facts instead of inventing income type or residence",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNIIT-09"
+      ],
+      "primary_or_preservation_units_checked": "IIT Law arts.1–2; Regulations arts.2,6",
+      "repair_observed": "Both invented defaults are replaced with fact gathering and classification/residence determination before computation.",
+      "dependent_case_outcome": "No tax table is selected merely because records are missing.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "e056819faab82b3e",
+          "unit": "IIT Law arts1–2",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/e056819faab82b3e.txt",
+          "reader_sha256": "459286821a5dcedaf7fd7e652c2e79d3f8871ac2b5c9d35de234a117ccf07ff5",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        },
+        {
+          "id": "6578413203601ac4",
+          "unit": "Regulations arts2,6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/6578413203601ac4.txt",
+          "reader_sha256": "7db727493e67450c1e054c8de71e9302b016708f47580d24d53b4706109be72a",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        }
+      ]
+    },
+    {
+      "id": "F04",
+      "original_severity": "P1",
+      "title": "Do not borrow the six-taxes shortcut for CIT eligibility",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNCORPORATETAX-06"
+      ],
+      "primary_or_preservation_units_checked": "2023 No.12 §§2–3,5; STA 2023 No.6 art.4",
+      "repair_observed": "The new-company headcount/assets shortcut is confined to six-taxes/two-fees relief; CIT prepayments retain cumulative taxable income as well.",
+      "dependent_case_outcome": "Small-low-profit examples retain the actual three tests.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "42a296a61ff344a1",
+          "unit": "2023No12 §5 final paragraph",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/42a296a61ff344a1.txt",
+          "reader_sha256": "e63f6465f682760516a8f7ddb41b65d89f590a50c158ce9657af77452ab66dd4",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "按照小型微利企业申报享受第二条规定的优惠政策"
+        },
+        {
+          "id": "adeda93b9941ef02",
+          "unit": "2023No6 §§3–6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/adeda93b9941ef02.txt",
+          "reader_sha256": "06d9066b71591d6774228d7b52321a63377d6bd1bab16ed9a760e5061b31cab1",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        }
+      ]
+    },
+    {
+      "id": "F05",
+      "original_severity": "P1",
+      "title": "Remove guessed10% withholding and distinguish dividend timing",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNCORPORATETAX-04",
+        "CN-CNCORPORATETAX-12",
+        "CN-CNCORPORATETAX-19"
+      ],
+      "primary_or_preservation_units_checked": "CIT Law arts.3,19,27,37–40; Regulations arts.7,91; 2017 No.37 §7",
+      "repair_observed": "Method, checklist and uncertain-payment passages now require actual source/category/establishment facts. The mechanics expressly distinguish actual dividend/distribution payment.",
+      "dependent_case_outcome": "The genuine royalty and withholding examples retain their stated facts and rates; uncertain payments are not automatically taxed at 10%.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "e9317ed0e9090f97",
+          "unit": "EIT Law arts3,19,37–40",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/e9317ed0e9090f97.txt",
+          "reader_sha256": "be3fcda32eb67b057746b4cbd15eae11ffa458f133cbd23f1c9b589eebaa5ecf",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        },
+        {
+          "id": "43cd7c8e22186be0",
+          "unit": "EIT Regulations arts7,91",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/43cd7c8e22186be0.txt",
+          "reader_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        },
+        {
+          "id": "WHT37",
+          "unit": "2017No37 §7",
+          "official_url": "https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/WHT37.txt",
+          "reader_sha256": "9ab8a54565419aa08d7439d86f809b82c10b429c0eae8ec052ee021f84581f49",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "实际支付之日"
+        }
+      ]
+    },
+    {
+      "id": "F06",
+      "original_severity": "P1",
+      "title": "Distinguish natural-person and corporate partners",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNCORPORATETAX-01"
+      ],
+      "primary_or_preservation_units_checked": "Caishui 2008 No.159 §2; CIT Law art.1",
+      "repair_observed": "Natural-person partners pay IIT; legal-person and other-organisation partners pay CIT. Entity exclusion no longer turns every partner into an individual taxpayer.",
+      "dependent_case_outcome": "No partnership example is routed solely by the partnership entity exclusion.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "CIT-partner159",
+          "unit": "Caishui2008No159 §2",
+          "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203416/content.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/CIT-partner159.txt",
+          "reader_sha256": "d9e672bde31a32e5d8ec1cefbc13fa4117ec0e7914de2bd006d42eaf31506bd8",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "合伙人是法人和其他组织的，缴纳企业所得税"
+        }
+      ]
+    },
+    {
+      "id": "F07",
+      "original_severity": "P2",
+      "title": "Do not require a list for every120% R&D claimant",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNCORPORATETAX-02",
+        "CN-CNCORPORATETAX-09",
+        "CN-CNCORPORATETAX-19"
+      ],
+      "primary_or_preservation_units_checked": "2023 No.44 §§2(3),3,5",
+      "repair_observed": "R&D prose, table label, checklist and intake distinguish applicable list management from equipment/materials/packaging/testing qualification routes.",
+      "dependent_case_outcome": "The 120% extra deduction / 220% amortisation remains conditional; no statutory margin or unconditional entitlement is created.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "2836bf1f3f4ae9fd",
+          "unit": "2023No44 §§2(1)–(3),3,5",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/2836bf1f3f4ae9fd.txt",
+          "reader_sha256": "cae97f8c9c9aa965dc36bc5de9e5249950c2274e8053e48ef0fd4345d4679e09",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "不采取清单管理的"
+        }
+      ]
+    },
+    {
+      "id": "F08",
+      "original_severity": "P1",
+      "title": "Annual CIT overpayment is refunded rather than offset against next-year tax",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNCORPORATETAX-17"
+      ],
+      "primary_or_preservation_units_checked": "2021 No.34 §2, reproduced in the captured official settlement Q&A",
+      "repair_observed": "Annual settlement overpayment is refunded and is not carried to next-year CIT. The separate in-year prepayment adjustment survives.",
+      "dependent_case_outcome": "No computation values changed; the post-settlement disposition is corrected.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "416fd843c0126af7",
+          "unit": "Official settlementQ&A question5 quoting2021No34 §2",
+          "official_url": "https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202405/t471967.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/416fd843c0126af7.txt",
+          "reader_sha256": "1850d973392de47ee9d0f7f22a211ee746e2bb90aaad103258a88acd018b504d",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "不再抵缴其下一年度应缴企业所得税税款"
+        }
+      ]
+    },
+    {
+      "id": "F09",
+      "original_severity": "P2",
+      "title": "Keep the overseas R&D recipient exclusion",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNCORPORATETAX-09",
+        "CN-CNCORPORATETAX-14"
+      ],
+      "primary_or_preservation_units_checked": "Caishui 2018 No.64 §§1–3,6",
+      "repair_observed": "Overseas individuals are excluded; written contract, registration and retained evidence conditions accompany the 80% / two-thirds rule.",
+      "dependent_case_outcome": "The existing R&D arithmetic is unchanged; eligibility is now properly gated.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "1013b79c285b7d8b",
+          "unit": "Caishui2018No64 §§1–3,6",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/1013b79c285b7d8b.txt",
+          "reader_sha256": "471f0204d9f17cd4439d29d1d9cef93b3bda18615134667162aff77664444b68",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "不包括委托境外个人进行的研发活动"
+        }
+      ]
+    },
+    {
+      "id": "F10",
+      "original_severity": "P1",
+      "title": "Correct the two unsupported VAT defaults",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNVAT-13"
+      ],
+      "primary_or_preservation_units_checked": "VAT Law art.12; Regulations art.48; 2026 No.11 §§6,9(1)(4)",
+      "repair_observed": "Unknown classification is separated from known multirate sales without separate accounting. Missing export papers or an initial missed window no longer automatically means domestic taxation.",
+      "dependent_case_outcome": "The retained export topic now recognises later claims and exempt-only categories subject to actual facts/deadlines.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "bb8c8c9025ccfe98",
+          "unit": "VAT Law art12",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/bb8c8c9025ccfe98.txt",
+          "reader_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        },
+        {
+          "id": "454a6de3cf4e1e06",
+          "unit": "2026No11 §6;§9(1)4(1)–(7)",
+          "official_url": "https://guangdong.chinatax.gov.cn/gdsw/zjfg/2026-02/02/content_a761ec677dbb47bda83ce41928d9ff1f.shtml",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/454a6de3cf4e1e06.txt",
+          "reader_sha256": "4991add09efbc037adc9aaf86d1e21bb235bba9e952b3df7a2b879e3e8bb9617",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "36个月内的各增值税纳税申报期内"
+        }
+      ]
+    },
+    {
+      "id": "F11",
+      "original_severity": "P2",
+      "title": "Make imported-service input credit conditional on the taxpayer and use",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNVAT-13"
+      ],
+      "primary_or_preservation_units_checked": "VAT Law arts.8–9,14,16,22; Regulations arts.11–12",
+      "repair_observed": "Imported-service case 4 expressly assumes a general taxpayer, eligible taxable use and no credit exclusion; the voucher set remains necessary.",
+      "dependent_case_outcome": "100000 × 6% = 6000 withholding is unchanged. Credit is conditional; remittance alone does not create small-scale input credit.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "bb8c8c9025ccfe98",
+          "unit": "VAT Law arts8–9,14,16,22",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202412/t474694.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/bb8c8c9025ccfe98.txt",
+          "reader_sha256": "18967f59c6603b8f3785cc2054d49cf4e14e42bea3cf9f6eb9fa9a7f97f8c078",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        },
+        {
+          "id": "a132dd0c61328ddd",
+          "unit": "VAT Regulations arts11–12",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202601/t478908.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/a132dd0c61328ddd.txt",
+          "reader_sha256": "9ec52ccc8dd7d2f94b222c2674025edd59174972ff80eae43d25e2e5427588e7",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        },
+        {
+          "id": "6153f6024e1a44e7",
+          "unit": "2026No13 §1(5)",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479292.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/6153f6024e1a44e7.txt",
+          "reader_sha256": "a521309f2f6ce7061038e9336f8f7cf6c7ab15449fdadb36ef1c8ae06209a85a",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        }
+      ]
+    },
+    {
+      "id": "F12",
+      "original_severity": "P1",
+      "title": "Movable-goods contracts signed by individuals are outside scope for both parties",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNSTAMPTAX-10"
+      ],
+      "primary_or_preservation_units_checked": "Stamp Tax Law attached movable-goods item; Tianjin 22 October 2026 complete answer; Guangdong Q5–6",
+      "repair_observed": "The whole movable-goods contract with an individual, including an individual-business operator, is outside that item for both signatories.",
+      "dependent_case_outcome": "The corrected boundary no longer taxes the company side merely because the other signatory is an individual.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "Stamp-personal-TJ",
+          "unit": "Tianjin22Oct2026 new-car question",
+          "official_url": "https://tianjin.chinatax.gov.cn/11200000000/0300/030005/20261022165546067.shtml",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/Stamp-personal-TJ.txt",
+          "reader_sha256": "fd8c648ec752750a2e6d6b7ba30924487cb526faf45a89c415c9119d01c16bf5",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "合同订立双方均不需要缴纳印花税"
+        },
+        {
+          "id": "Stamp-personal-GD",
+          "unit": "Guangzhou15Aug2023 questions5–6",
+          "official_url": "https://guangdong.chinatax.gov.cn/gdsw/gzsw_dmtxc/2023-08/15/content_83244a0e156a43209abc9bfdd7a9c81f.shtml",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/Stamp-personal-GD.txt",
+          "reader_sha256": "2e942815050b3d6be4dbe036b2fc7fb442787b74883afaee9de035396f478773",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "合同签订的双方均不用缴纳"
+        }
+      ]
+    },
+    {
+      "id": "F13",
+      "original_severity": "P2",
+      "title": "Retain inclusive TP boundary values",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-TP-02",
+        "CN-TP-26"
+      ],
+      "primary_or_preservation_units_checked": "2016 No.42 §2(5); 2016 No.64 §4",
+      "repair_observed": "Half-or-more appointment and at-least-40-million ordinary APA tests include equality. The blanket strictness sentence now distinguishes them.",
+      "dependent_case_outcome": "The actual exceeds thresholds for master/local/CbCR tests remain strict and unchanged.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "TP42",
+          "unit": "2016No42 §2(5)",
+          "official_url": "https://www.chinatax.gov.cn/n810219/n810744/n2959156/n2959166/c2208516/content.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/TP42.txt",
+          "reader_sha256": "1fe545536053aa98b523da10e79729b168e4ef1ef79e8b512ed2c29b422e994e",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "半数以上董事或者半数以上高级管理人员"
+        },
+        {
+          "id": "TP64",
+          "unit": "2016No64 §4",
+          "official_url": "https://www.chinatax.gov.cn/chinatax/n810341/n810765/n1990035/201610/c2458312/content.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/TP64.txt",
+          "reader_sha256": "3707112ce22bebafc10f48c5d8f9bb7fd66a2465787958e58fe299f2d9a9f5c1",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "4000万元人民币以上"
+        }
+      ]
+    },
+    {
+      "id": "F14",
+      "original_severity": "P2",
+      "title": "Correct the operative article references",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-WH-14",
+        "CN-WH-16",
+        "CN-TP-22",
+        "CN-TP-27"
+      ],
+      "primary_or_preservation_units_checked": "2017 No.37 §17; Treaty Measures 2019 No.35 art.11 plus Collection Detailed Rules art.29; EIT Regulations art.121; 2017 No.6 MAP procedural scope",
+      "repair_observed": "Repeal, retention and nondeductibility pinpoints are corrected in Guide/ledger evidence. MAP procedural suspension is expressly unconfirmed/referral; the unsupported blanket legal nonsuspension claim is removed.",
+      "dependent_case_outcome": "No MAP filing is assumed to create a payment deferral. No new legal stay rule is asserted.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "WHT37",
+          "unit": "2017No37 §17",
+          "official_url": "https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/WHT37.txt",
+          "reader_sha256": "9ab8a54565419aa08d7439d86f809b82c10b429c0eae8ec052ee021f84581f49",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        },
+        {
+          "id": "Treaty35",
+          "unit": "Treaty35 art11",
+          "official_url": "https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/Treaty35.txt",
+          "reader_sha256": "4e497db6ba1bc814111d11bf6b16b9ef7c46b10ee1e93015ebf56003317d2ca2",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        },
+        {
+          "id": "f4fd2737d35dbad1",
+          "unit": "Collection Detailed Rules29",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/f4fd2737d35dbad1.txt",
+          "reader_sha256": "3eaec5a2958ada33f5f9c7f58a993016c03b7ad2df91841839b7e3105751ce56",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "保存１０年"
+        },
+        {
+          "id": "43cd7c8e22186be0",
+          "unit": "EIT Regulations121–122",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/43cd7c8e22186be0.txt",
+          "reader_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        },
+        {
+          "id": "TP6",
+          "unit": "2017No6 arts47–56,including52(5)",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/ssxd/201706/t432408.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/TP6.txt",
+          "reader_sha256": "ec77a690dcaf22690415b4331a5722cb9784627a3b207108a60829aeb930bef8",
+          "read_on": "2026-10-29",
+          "operative_excerpt": ""
+        }
+      ]
+    },
+    {
+      "id": "F15",
+      "original_severity": "P2",
+      "title": "Name the remaining old social-insurance topics as limits",
+      "disposition": "CLOSED",
+      "rows": [],
+      "primary_or_preservation_units_checked": "Baseline SC subtopics; final named limits and 8 appended destination entries",
+      "repair_observed": "All eight missing named social-insurance topic groups are explicitly retained as unconfirmed/referral limits and individually routed.",
+      "dependent_case_outcome": "No unsupported category schedule or eight-class numerical table is reinstated.",
+      "initial_exact_source_evidence": [
+        {
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/baseline/cn-social-insurance.md",
+          "unit": "Original2.2refusal table;6.2eight-class/floating-rate table; corresponding original_topics entries5,27 and current Notyetconfirmed line",
+          "read_on": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "id": "F16",
+      "original_severity": "P2",
+      "title": "Restore named old withholding limits",
+      "disposition": "CLOSED",
+      "rows": [],
+      "primary_or_preservation_units_checked": "Baseline WHT subtopics; final named limits and 11 appended destination entries",
+      "repair_observed": "Seven missing named treaty rows and four specialist/referral groups are restored by name and individually routed.",
+      "dependent_case_outcome": "No current treaty entitlement or destination-country tax outcome is presumed.",
+      "initial_exact_source_evidence": [
+        {
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/baseline/cn-withholding.md",
+          "unit": "Original quick-reference guarantee fee;2.2R-CN-WHT-4/10/12;3.4 thirteen-country treaty table;current named limits",
+          "read_on": "2026-10-29"
+        }
+      ]
+    },
+    {
+      "id": "F17",
+      "original_severity": "P2",
+      "title": "Retain the scope conditions of the new2026 announcements",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNIIT-02"
+      ],
+      "primary_or_preservation_units_checked": "2026 No.12 §1; 2026 No.21 §§1,3–4",
+      "repair_observed": "Reverse invoicing is restricted to the defined three-flows-in-one mechanism. Both trust summary and referral preserve already-taxed-income nonduplication on actual distribution.",
+      "dependent_case_outcome": "No universal scrap-invoice relief or blanket new tax on every trust distribution remains.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "cdc046ed90ea2815",
+          "unit": "STA2026No12 §1",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202606/t480766.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/cdc046ed90ea2815.txt",
+          "reader_sha256": "ebff263f14a88fac803056b0bb7c343ef8a0f5ac4956c413ac06690521261101",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "通过“三流合一反向开票”"
+        },
+        {
+          "id": "0b9f2795249d7578",
+          "unit": "MOF/STA2026No21 §§1,3–4",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202607/t481046.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/0b9f2795249d7578.txt",
+          "reader_sha256": "c3233aab6705afbad2d1dee86d4340653dc264d316e268349334f8657748aedd",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "在实际分配时不再申报缴纳个人所得税"
+        }
+      ]
+    },
+    {
+      "id": "F18",
+      "original_severity": "P2",
+      "title": "Keep the filing condition of the six-year concession",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNIIT-04",
+        "CN-CNIIT-06",
+        "CN-CNIIT-07"
+      ],
+      "primary_or_preservation_units_checked": "IIT Regulations art.4; 2019 No.34",
+      "repair_observed": "Competent-authority filing is stated in method, boundary and six-year case 6.",
+      "dependent_case_outcome": "The 35-day absence alternative remains conditional on foreign source, foreign payer and filing. No filing form or deadline was invented.",
+      "initial_exact_source_evidence": [
+        {
+          "id": "6578413203601ac4",
+          "unit": "IIT Regulations4",
+          "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201812/t443213.html",
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/6578413203601ac4.txt",
+          "reader_sha256": "7db727493e67450c1e054c8de71e9302b016708f47580d24d53b4706109be72a",
+          "read_on": "2026-10-29",
+          "operative_excerpt": "经向主管税务机关备案"
+        }
+      ]
+    },
+    {
+      "id": "F19",
+      "original_severity": "P2",
+      "title": "Put the legal article and official link beside each core rate-table figure",
+      "disposition": "CLOSED",
+      "rows": [
+        "CN-CNIIT-05",
+        "CN-CNCORPORATETAX-05",
+        "CN-CNVAT-05",
+        "CN-CNSTAMPTAX-05"
+      ],
+      "primary_or_preservation_units_checked": "Previously checked core rate provisions; per-row official links; VAT No.10 §§1(1)–(2),3(3)(6); No.18 complete attachment entries 1–144",
+      "repair_observed": "Core rate and deduction tables now carry official links/provisions beside the figures. The two residual VAT summary cells were separately repaired and rechecked with direct No.10 links in both Guide and ledger. The unfinished repeal-list caveat is replaced by the actual completed check.",
+      "dependent_case_outcome": "Confirmed figures and all executable examples remain unchanged; 2019 No.45 is absent from this specific 144-entry repeal list, without claiming a universal no-amendment result.",
+      "initial_exact_source_evidence": [
+        {
+          "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/country/docs/skill-template.md",
+          "unit": "Rules4–5 and deep-tax shape section2: official source URL per figure",
+          "read_on": "2026-10-29"
+        }
+      ]
+    }
+  ],
+  "remaining_blocking_findings": [],
+  "affected_rows_checked": [
+    {
+      "id": "CN-CNCORPORATETAX-01",
+      "section": "Who this applies to / Scope and who this is for",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "eecac9db210eaeb68915a11b960fb83f7f6810c035b4ae14ed0068cc03a41b95",
+      "original_primary_units": "EIT Law1–4,53,56;Reg3–5;Caishui2008No159 §2 after failed owner claim",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "e9317ed0e9090f97",
+        "43cd7c8e22186be0",
+        "CIT-partner159"
+      ]
+    },
+    {
+      "id": "CN-CNCORPORATETAX-02",
+      "section": "Who this applies to / What is new or confirmed for 2026",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "4b95143b86e5083e035a531efbf0f7ac999c6fb9562a8642fad5b17768d3aa66",
+      "original_primary_units": "Law4;2023No12 §§3,5;2023No7 §§1–3;2023No44 §§1–5;2020No23;Hainan2025No2;2025No16;2025No17",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "42a296a61ff344a1",
+        "fcb8ee9c6523275c",
+        "fb3b85c6f89fc5a2",
+        "5eed9778d22ee4e1",
+        "2836bf1f3f4ae9fd"
+      ]
+    },
+    {
+      "id": "CN-CNCORPORATETAX-03",
+      "section": "Ask the client first / Ask the client first",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "3643d4e3ac1cf6f6b47f5c2faaf5a136764bda74b1ee8d8225bc4325d3cbb9bc",
+      "original_primary_units": "Reg4–5;2023No6/12 size tests;2015No119;intake workflow",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "adeda93b9941ef02",
+        "df04f1e7f68c9872"
+      ]
+    },
+    {
+      "id": "CN-CNCORPORATETAX-04",
+      "section": "The base / The method, step by step",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "768b70b06b226a63e29b95ea66f1dc84ef33b293c2ebfaca3b199fdf0fa0ffad",
+      "original_primary_units": "Law3–5,7–10,18,22,26,37,40,54;Reg7–9,43–44,83,91,128–129;2026settlementQ&A;R&D/loss sources",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "e9317ed0e9090f97",
+        "43cd7c8e22186be0",
+        "cf513cb8046dbfb6",
+        "WHT37"
+      ]
+    },
+    {
+      "id": "CN-CNCORPORATETAX-05",
+      "section": "Rates, bands and thresholds / Rates for tax year 2026",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "9d3d5bca0306989088192a2e93a67b1f4b24a4a1b43534d1931a3a88e7c90a15",
+      "original_primary_units": "Law3–4,27–28;Reg91;2023No12 §§3,5;HNTE9–11;2020No23;Hainan2025No2",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "e9317ed0e9090f97",
+        "43cd7c8e22186be0"
+      ]
+    },
+    {
+      "id": "CN-CNCORPORATETAX-06",
+      "section": "The base / Small low-profit enterprises",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "db24244f8b6433a870240e15def0f4e2b9ef26e31cc2d44132a5c127360dc5c2",
+      "original_primary_units": "2023No12 §§3–5(read final paragraph in its six-taxes context);2023No6 §§1–8;Jan2026Q&A question2",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "42a296a61ff344a1",
+        "adeda93b9941ef02",
+        "5c9554232981e789"
+      ]
+    },
+    {
+      "id": "CN-CNCORPORATETAX-09",
+      "section": "The base / R&D super-deduction",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "c284be1c7e3ffbe28a742a7ea2beb2bc970cc29af968fe84ddf2f7dc7e1285b6",
+      "original_primary_units": "2023No7 §§1–3;2023No44 §§1–5;2015No119 parts1,3–5;2018No64 §§1–6;R&DQ&A quoting2021No28 §3",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "bce2fe676b84ed80",
+        "2836bf1f3f4ae9fd",
+        "df04f1e7f68c9872",
+        "1013b79c285b7d8b",
+        "7c7b7cbbbf8b4f11"
+      ]
+    },
+    {
+      "id": "CN-CNCORPORATETAX-11",
+      "section": "The base / Capped deductions and other income rules",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "1b693349b2e6d61185939e0a17cd8a8823bd571bd84d42d06763cc1a744a074a",
+      "original_primary_units": "Reg43–44,96–97,100;2025No16 §§1–4;Law9–10;2018No15 §§1–4;2018No51;2023No37;April2026voucherQ&A1–2",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "43cd7c8e22186be0",
+        "fcb8ee9c6523275c",
+        "99ad0af8cf8f9ecd",
+        "c295c6b6c226651b",
+        "54833301790f94b8",
+        "ff6d8937e26514f0"
+      ]
+    },
+    {
+      "id": "CN-CNCORPORATETAX-12",
+      "section": "Cross-border points / Withholding on non-residents",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "3927590ee459a6c35c8da3df66ea4517e91daa5e4084619d0726b1f6fea19c7e",
+      "original_primary_units": "Law3,4,19,27,37–40;Reg7,91,103–105;2017No37 §7 compared with generic timing/default",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "e9317ed0e9090f97",
+        "43cd7c8e22186be0",
+        "WHT37"
+      ]
+    },
+    {
+      "id": "CN-CNCORPORATETAX-14",
+      "section": "The base / Boundary and exception table",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "d4020c7422a27ba80cf9b040abd722f23903bd220e429efcb3e881c4c30cd613",
+      "original_primary_units": "Same exact size/certificate/regional/R&D/loss/dividend/withholding units as06–13;case-specific boundary comparisons",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "42a296a61ff344a1",
+        "adeda93b9941ef02",
+        "6d3a7271d0a3d9b9",
+        "2fd1d7f8ba48d7d4",
+        "df04f1e7f68c9872",
+        "1013b79c285b7d8b",
+        "e9317ed0e9090f97",
+        "128be5c1084f71fe",
+        "cf513cb8046dbfb6",
+        "43cd7c8e22186be0"
+      ]
+    },
+    {
+      "id": "CN-CNCORPORATETAX-17",
+      "section": "Deadlines and filing / Filing and payment",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "9bbd45b2d2a63c3f40608f9467a1c2d69bfadd6718005a33cbcd58ff9ece5373",
+      "original_primary_units": "Law43,54–55;Reg128–129;2023No6 §7;2025No17;settlementQ&A questions1,2,5;Collection32,62–63;DetailedRules29",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "e9317ed0e9090f97",
+        "43cd7c8e22186be0",
+        "fb3b85c6f89fc5a2",
+        "416fd843c0126af7",
+        "23c844ac37cfb86f",
+        "adeda93b9941ef02",
+        "a804a9c258a97b80",
+        "ff6d8937e26514f0",
+        "f4fd2737d35dbad1"
+      ]
+    },
+    {
+      "id": "CN-CNCORPORATETAX-19",
+      "section": "The base / Completion checklist",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "175917b2558e8d9194971236309b44814b73273634b90f6da7d84f3cd77783f9",
+      "original_primary_units": "Confirmed operative units above revisited for checklist,no new legal rate",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "e9317ed0e9090f97",
+        "42a296a61ff344a1",
+        "bce2fe676b84ed80",
+        "43cd7c8e22186be0",
+        "WHT37",
+        "2836bf1f3f4ae9fd"
+      ]
+    },
+    {
+      "id": "CN-CNIIT-02",
+      "section": "Who this applies to / What is new for 2026",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "f3a486b60c86dbc6a3fbd4bdbb53fffd25a6724dfa7ab653e66e533326134e38",
+      "original_primary_units": "2026No27 §§1–3;2026No21 §§1,3–4;2026No12 §§1–2;platform2025notice §1,5; extension notices operative periods",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "8e752ddbe83a3c62",
+        "0b9f2795249d7578",
+        "cdc046ed90ea2815",
+        "f497dd2bb6a42e16"
+      ]
+    },
+    {
+      "id": "CN-CNIIT-03",
+      "section": "Ask the client first / Ask the client first",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "2e07b19c7776ea968b5d01ff67888ad87613a56a07c05cdcbdfebdf8903818af",
+      "original_primary_units": "IIT Law1–2,6–14;2019No34 §§1–2; intake is workflow advice",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "e056819faab82b3e",
+        "d1a3182cd6ca332e"
+      ]
+    },
+    {
+      "id": "CN-CNIIT-04",
+      "section": "The base / The method, step by step",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "c09e81074397c8b98af93250afc6c51bc86ea103131f73830e7f8ec717bbe47b",
+      "original_primary_units": "IIT Law1–3,6–14;Regulations4–6,15;61arts6–11;2020No19 §§1–2;Order57arts3,10;2019No34;2023No30",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "e056819faab82b3e",
+        "8650dff940124d75",
+        "6102a4b0edb542f1",
+        "6dbf6d34f574d2cf",
+        "5197616a97165092",
+        "6578413203601ac4"
+      ]
+    },
+    {
+      "id": "CN-CNIIT-05",
+      "section": "Rates, bands and thresholds / Figures for tax year 2026",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "06c9904e0e9056a2cec9c0e0c94e1619b47b9c8f7d05c3b20dc9966fd442118a",
+      "original_primary_units": "Law3,6,tables1–2;61arts6,8–11 and tables;Reg6,13–15;2023No12 §§1,5;InterimMeasures5–25,29–30 as increased by2023No13/14;2022No8;operationMeasures3–9,24;2024No21 §§1–2;2017No39 §§1,4;2019No99 §§3–10;2025No6;2023No25/29/30/32",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "e056819faab82b3e",
+        "1bfc01893fedef98",
+        "4bab3d68e42dc24a",
+        "42a296a61ff344a1",
+        "6578413203601ac4",
+        "8650dff940124d75",
+        "f3f27442ff59931c",
+        "045143311b9288d0",
+        "22305e00a039e25a",
+        "5a2dfeb0e5fb710b",
+        "86524a2a17c11fba",
+        "54eef4265f892852",
+        "7f46de18621b9a6b",
+        "cb3450fd5d273e1d",
+        "7fbaddb53f50bb75",
+        "0c4c661cc34f8711",
+        "1374cbd4b992eaca",
+        "0a688649d080bdca",
+        "6102a4b0edb542f1"
+      ]
+    },
+    {
+      "id": "CN-CNIIT-06",
+      "section": "Cross-border points / Residence, non-residents and foreign income",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "b000d3a74cadaee69348e6a821cbf65d60ce5a9fd2b772ea8ee993331fd83d00",
+      "original_primary_units": "2019No34 §§1–3;2019No35 parts1–2,3(2),5(1)–(2);2020No3 §§1–14",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "d1a3182cd6ca332e",
+        "6dbf6d34f574d2cf",
+        "4df181f65ba88456",
+        "6578413203601ac4"
+      ]
+    },
+    {
+      "id": "CN-CNIIT-07",
+      "section": "The base / Boundaries and exceptions",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "8202c8ec712723acfbef2c3b34028b44f08dae4cbbec023cf87299b47a76bb4e",
+      "original_primary_units": "Law1,6,11;Reg4;InterimMeasures11–12,14–23;2023No32;2019No34",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "e056819faab82b3e",
+        "22305e00a039e25a",
+        "0a688649d080bdca",
+        "d1a3182cd6ca332e",
+        "6578413203601ac4"
+      ]
+    },
+    {
+      "id": "CN-CNIIT-08",
+      "section": "Two worked examples that recompute / Worked cases",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "cee62074102a3ded95f3dee87fb9dbd3145845e1583ce881318ac34f91d2396a",
+      "original_primary_units": "Law6,tables1–2;61arts8–9;2023No13/14;2023No12 §1;2023No30;2019No34;2020No3 §3,6;all seven prose cases separately recomputed/reasoned",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "1bfc01893fedef98",
+        "e056819faab82b3e",
+        "8650dff940124d75"
+      ]
+    },
+    {
+      "id": "CN-CNIIT-09",
+      "section": "The base / When to refuse or refer",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "6918d751b5fa314a30316cf3a410da21cf8ab1620f9db5cd65f39bb8cb1de481",
+      "original_primary_units": "Law1–2,8,13;Reg6;2019No35 executive/special-remuneration scope;2026No21 arts1,3–4;Collection penalties",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "0b9f2795249d7578",
+        "6dbf6d34f574d2cf",
+        "23c844ac37cfb86f",
+        "e056819faab82b3e",
+        "6578413203601ac4"
+      ]
+    },
+    {
+      "id": "CN-CNIIT-10",
+      "section": "Deadlines and filing / Filing and payment",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "3cdddb33f0ff51a8db9d80e510bc7fb317666a6e4fb7f4bf8c8c8a37cc746b7a",
+      "original_primary_units": "Law10–14;Order57arts3–10,14–18,22–30;2023No32;2026No1 booking dates;Collection32,62–65,67",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "e056819faab82b3e",
+        "6102a4b0edb542f1",
+        "0a688649d080bdca",
+        "06245431f80d5462",
+        "4fbdca4de0ead0a3",
+        "23c844ac37cfb86f"
+      ]
+    },
+    {
+      "id": "CN-CNIIT-11",
+      "section": "The base / Completion checklist",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "c9655fe040f521a09cf3c2f1a3fe80de578712161a0d8f1bc025cbf59a2e3241",
+      "original_primary_units": "Same actual residence/deduction/withholding/credit/filing operative units as01–10; checklist has no independent new rate",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "e056819faab82b3e",
+        "86524a2a17c11fba"
+      ]
+    },
+    {
+      "id": "CN-CNSTAMPTAX-02",
+      "section": "Who this applies to / What is current for 2026",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "416dbb82d1b10d9e5d61d507c7eb4cbfea334ae8c62e1ac81c7bca9672c6a82f",
+      "original_primary_units": "2023No39;2023No12 §§2,4–5;2023No13 §§2–5;2024No14§§1–4;2025No10",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "bd57dd6de77cb84d",
+        "42a296a61ff344a1",
+        "5ae4088b5c81ed36",
+        "887ffad7bd9939d3",
+        "e6c8453a33cd2023"
+      ]
+    },
+    {
+      "id": "CN-CNSTAMPTAX-05",
+      "section": "Rates, bands and thresholds / Rates for tax year 2026",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "3e85875a24ea3a792b9f245da279d68fc888aee7adc0e1bb762156e8ee742946",
+      "original_primary_units": "Actual statutory schedule reproduced in tax-authority ZhongshanPDF,all17rows/notes;Law2–4;officialTianjinbook/securitiesanswers",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "b83699dec3280184",
+        "601f4ec873d666a2",
+        "cfe9eb6821f0930b",
+        "7a3c0daaea32e6c6"
+      ]
+    },
+    {
+      "id": "CN-CNSTAMPTAX-10",
+      "section": "The base / Boundary and exception table",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "cbfa1c0ffd649b8dfe00e51cfa7c223aebdde3ee32cbdfe1e6b5dcbb6609a2f2",
+      "original_primary_units": "Law/schedule;2022No22;1989No34;2023No13;2008No24;Tianjin22Oct2026 andGuangzhouQ5–6 after individual-contract claim failed",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "601f4ec873d666a2",
+        "4a540e61794f37ec",
+        "1d184fef0ed9123f",
+        "Stamp-personal-TJ",
+        "Stamp-personal-GD"
+      ]
+    },
+    {
+      "id": "CN-CNVAT-02",
+      "section": "Who this applies to / What changed on 1 January 2026",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "1755d3b1d44a37369963a20a2a673c7f525179dc83eefa7d28707fdd6167f716",
+      "original_primary_units": "Law3–6,9–11,15,21–25,28,30,34,38;2026No10§§1,3(3)6,6",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "bb8c8c9025ccfe98",
+        "a132dd0c61328ddd",
+        "809e05a20b9ce8e0"
+      ]
+    },
+    {
+      "id": "CN-CNVAT-05",
+      "section": "Rates, bands and thresholds / Rates for tax year 2026",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "35ce43782170e4a95092b5c99083c9f01dc91d8b78f016768cf4ea30a0e4bd60",
+      "original_primary_units": "Law10–11;Reg8–9;2026No9 actual annex2 telecom/production-life-service definitions and annex1 scope inspected",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "bb8c8c9025ccfe98",
+        "a132dd0c61328ddd",
+        "6f3a4e8919b525df",
+        "VAT9-services",
+        "VAT9-goods"
+      ]
+    },
+    {
+      "id": "CN-CNVAT-06",
+      "section": "The base / Small-scale taxpayers in 2026",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "baef62c3cb00ca961d0f42646efeaf83a06d9419148dc7e90f8e57c26948ca6c",
+      "original_primary_units": "Law9,11,14,23,27;Reg7,37,43;2026No10 §§1,3(3)4–6;2026No4 §§1–5",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "bb8c8c9025ccfe98",
+        "809e05a20b9ce8e0",
+        "a132dd0c61328ddd",
+        "9f40e0e10e0eb135"
+      ]
+    },
+    {
+      "id": "CN-CNVAT-08",
+      "section": "The base / Input tax: what you can and cannot deduct",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "1ede5fd84401bb7ffaf37de74687f7c4317d030e0e86beab39a1bbce9c607186",
+      "original_primary_units": "Law16,21–22;Reg11–12,19–25;2026No13§1;2026No10§5(2);2026No25§§1–2;2019No45§1;No18 complete144entryrepeallist independently inspected",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "bb8c8c9025ccfe98",
+        "a132dd0c61328ddd",
+        "6153f6024e1a44e7",
+        "809e05a20b9ce8e0",
+        "63153cbaaa292819",
+        "VAT18-attachment"
+      ]
+    },
+    {
+      "id": "CN-CNVAT-13",
+      "section": "Two worked examples that recompute / Worked cases",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "0ce4b63cd3d273e40234428025d798a40a10ea65d2fed5992b71333f34661e0a",
+      "original_primary_units": "Law8,10,12,14–16,22–23;Reg4,9,36;2026No10/13;registrationnotice5–7;2026No11 lateexport alternatives;all seven prose cases and defaults checked",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "bb8c8c9025ccfe98",
+        "a132dd0c61328ddd",
+        "809e05a20b9ce8e0",
+        "6153f6024e1a44e7",
+        "454a6de3cf4e1e06"
+      ]
+    },
+    {
+      "id": "CN-TP-02",
+      "section": "Who",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "f0ba1f7d5e327c28172d585dbb57c8b157c42a5b15fb11edb227dd5fb0fb8637",
+      "original_primary_units": "42 §§2–3",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "TP42"
+      ]
+    },
+    {
+      "id": "CN-TP-22",
+      "section": "Interest",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "cb7c73a86df31b41d432d660e1be2a3c2f1edfe441fdcbf6eabedbb1ca6fc062",
+      "original_primary_units": "6 arts44–45;Reg122",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "TP6",
+        "43cd7c8e22186be0"
+      ]
+    },
+    {
+      "id": "CN-TP-26",
+      "section": "Cross-border / Thresholds",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "2748f724413db63213305db7d30c73b33302dcf03a3e19bce62cb332b7e15d38",
+      "original_primary_units": "64 §§1–4",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "TP64"
+      ]
+    },
+    {
+      "id": "CN-TP-27",
+      "section": "Cross-border",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "dcd718224458613fe122883ac7ba30102cef81752fa14fd94139d8a19d6d467d",
+      "original_primary_units": "6 arts42,47–48,56",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "TP6"
+      ]
+    },
+    {
+      "id": "CN-WH-14",
+      "section": "Cross-border / Deadlines",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "3fbe1c2685a8708eee8c462453576d1aba163b17a45c5f4a192a6e649808a3e9",
+      "original_primary_units": "35arts3,7–9",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "Treaty35",
+        "f4fd2737d35dbad1"
+      ]
+    },
+    {
+      "id": "CN-WH-16",
+      "section": "Cross-border",
+      "disposition": "BOUNDED_REPAIR_CHECKED",
+      "final_claim_sha256": "6d66ff8df2e4c63951b6c61536d7e87dd3a436948076cc27cbc1ac4ddfadbc45",
+      "original_primary_units": "7/37§13",
+      "closure_note": "Changed passages, dependent repetitions and appended evidence checked; unchanged parts rely on preserved initial review.",
+      "source_ids": [
+        "Indirect7",
+        "WHT37"
+      ]
+    }
+  ],
+  "appended_or_corrected_source_units_checked": [
+    {
+      "id": "CIT-partner159",
+      "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c102416/c5203416/content.html",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/CIT-partner159.txt",
+      "reader_sha256": "d9e672bde31a32e5d8ec1cefbc13fa4117ec0e7914de2bd006d42eaf31506bd8",
+      "units_checked": "§2, partner type",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    },
+    {
+      "id": "Stamp-personal-TJ",
+      "official_url": "https://tianjin.chinatax.gov.cn/11200000000/0300/030005/20261022165546067.shtml",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/Stamp-personal-TJ.txt",
+      "reader_sha256": "fd8c648ec752750a2e6d6b7ba30924487cb526faf45a89c415c9119d01c16bf5",
+      "units_checked": "Complete answer, whole contract and individual-business scope",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    },
+    {
+      "id": "Stamp-personal-GD",
+      "official_url": "https://guangdong.chinatax.gov.cn/gdsw/gzsw_dmtxc/2023-08/15/content_83244a0e156a43209abc9bfdd7a9c81f.shtml",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/Stamp-personal-GD.txt",
+      "reader_sha256": "2e942815050b3d6be4dbe036b2fc7fb442787b74883afaee9de035396f478773",
+      "units_checked": "Q5–6, whole contract exclusion",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    },
+    {
+      "id": "HNTE2017No24-reviewed-reader",
+      "official_url": "https://fgk.chinatax.gov.cn/zcfgk/c100012/c5194742/content.html",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/HNTE2017No24-reviewed-reader.txt",
+      "reader_sha256": "7ea8ade49601d520a607c50a2b0e0537c8d5970c7a2b57b66db346403adf8a6d",
+      "units_checked": "§1, certificate year and provisional renewal-year treatment; same retained reader already read initially",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    },
+    {
+      "id": "VAT9-services",
+      "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/P020260202532248327615.pdf",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/VAT9-services.txt",
+      "reader_sha256": "09958f9c44b81de9be2f6fa35102e1b1a0def4922253d04927e366de187fe6da",
+      "units_checked": "Material Guide service classifications; same complete annex reader read initially",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    },
+    {
+      "id": "VAT9-goods",
+      "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/P020260202532248210711.pdf",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/VAT9-goods.txt",
+      "reader_sha256": "9f27af7645d49f0821341d64006816dbfd1e61551929f04baf020e4bb9b4a2b7",
+      "units_checked": "Material Guide 9% goods classifications; same complete annex reader read initially",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    },
+    {
+      "id": "VAT18-SH",
+      "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zhsszc/202608/t481352.html",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/VAT18-SH.txt",
+      "reader_sha256": "951f88218d2f0413edb4f0156f591efe7a932e16b2f2fc0e26bdeaad421ef3d3",
+      "units_checked": "No.18 operative publication and actual attachment linkage",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    },
+    {
+      "id": "VAT18-attachment",
+      "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zhsszc/202608/P020260824532587315016.xls",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/VAT18-attachment.txt",
+      "reader_sha256": "638eba8129807c7d3ddda2787dedb41c9e261609a712e999982208abfe54da8e",
+      "units_checked": "Complete numbered entries 1–144, already independently enumerated initially",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    },
+    {
+      "id": "809e05a20b9ce8e0",
+      "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202602/t479283.html",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/809e05a20b9ce8e0.txt",
+      "reader_sha256": "d4d884575b9702d3ab80e05f499bf0cb5f6e311cafb7ff01806167f642f1d71e",
+      "units_checked": "No.10 §§1(1)–(2),3(3)(6), residual F19 cells",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    },
+    {
+      "id": "f4fd2737d35dbad1",
+      "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/f4fd2737d35dbad1.txt",
+      "reader_sha256": "3eaec5a2958ada33f5f9c7f58a993016c03b7ad2df91841839b7e3105751ce56",
+      "units_checked": "Collection Detailed Rules art.29, retention linkage",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    },
+    {
+      "id": "Treaty35",
+      "official_url": "https://tianjin.chinatax.gov.cn/11200000000/0300/030004/03000418/20191024101530609.shtml",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/Treaty35.txt",
+      "reader_sha256": "4e497db6ba1bc814111d11bf6b16b9ef7c46b10ee1e93015ebf56003317d2ca2",
+      "units_checked": "Art.11, retention linkage",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    },
+    {
+      "id": "WHT37",
+      "official_url": "https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/WHT37.txt",
+      "reader_sha256": "9ab8a54565419aa08d7439d86f809b82c10b429c0eae8ec052ee021f84581f49",
+      "units_checked": "§§7,17, dividend timing and repeals",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    },
+    {
+      "id": "43cd7c8e22186be0",
+      "official_url": "https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html",
+      "reader_path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/work/sources/43cd7c8e22186be0.txt",
+      "reader_sha256": "86d686897c74929d66d506bc58fedb2c97866ea0d28d89629915a42989a8cf5a",
+      "units_checked": "Art.121, special-interest nondeductibility",
+      "read_on": "2026-10-29",
+      "scope": "Actual operative text read in initial review or bounded closure; identical units reused, not accepted on hash or excerpt membership alone."
+    }
+  ],
+  "final_eight_hashes": [
+    {
+      "slug": "cn-corporate-tax",
+      "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/country/skills/international/china/cn-corporate-tax.md",
+      "sha256": "4f2836de59a0d3d1402829326db836dae0f2ea55c49951980310ba2d53b80b26",
+      "manifest_matches": true,
+      "frontmatter_unchanged": true,
+      "executable_example_blocks_unchanged": true,
+      "ledger_json_sha256": "84ec72fa0e426f15a2cc8aaf34f750828cfbd7ee4aa817ed3bf0e125a8c386a3",
+      "ledger_md_sha256": "bd5c4ad36d0b3d890faf8ae3223fcb84d37c60b4456a279004cffcc6277d0f47"
+    },
+    {
+      "slug": "cn-cross-border",
+      "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/country/skills/international/china/cn-cross-border.md",
+      "sha256": "5c76de948cba53af707d2734658ca32876d8c818a1b795d48aafc01c9e0c429e",
+      "manifest_matches": true,
+      "frontmatter_unchanged": true,
+      "executable_example_blocks_unchanged": true,
+      "ledger_json_sha256": "73d8793648adf7cd61177aaefddbd7bac41e73810362d18daf53e3f97cf40e62",
+      "ledger_md_sha256": "229bb95611015d1ba896d105f1cbf70b9db9b6edd9da4acb73237a04e15fed56"
+    },
+    {
+      "slug": "cn-iit",
+      "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/country/skills/international/china/cn-iit.md",
+      "sha256": "3931a70d7f592cc8e5392d7acb07cc68f8d089ef4b2dc34d1b5b630830fabfde",
+      "manifest_matches": true,
+      "frontmatter_unchanged": true,
+      "executable_example_blocks_unchanged": true,
+      "ledger_json_sha256": "116e6f1c6e3474950e3e3fcc30ff49eab2435393218e3b0903bd3c3a041995ee",
+      "ledger_md_sha256": "1606ec93e71ef1987321ae5558731b73e77ad330b3901db359f9785acb76be33"
+    },
+    {
+      "slug": "cn-social-insurance",
+      "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/country/skills/international/china/cn-social-insurance.md",
+      "sha256": "4def72e769fd0a0f65ee509989bfaadf14fcb1eb5e7f8d41eab3239e31314e45",
+      "manifest_matches": true,
+      "frontmatter_unchanged": true,
+      "executable_example_blocks_unchanged": true,
+      "ledger_json_sha256": "12020707fbc20445842b4c407e5e1585501558ca28454b995d45bd4114988fff",
+      "ledger_md_sha256": "6989a3300fe0a445bb60460beb74a382909165f7aa5fbb28a383b6349e1e487d"
+    },
+    {
+      "slug": "cn-stamp-tax",
+      "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/country/skills/international/china/cn-stamp-tax.md",
+      "sha256": "237c02796f916192386e9895cc5cf8de36933e27c5e7680105ec2516b2256589",
+      "manifest_matches": true,
+      "frontmatter_unchanged": true,
+      "executable_example_blocks_unchanged": true,
+      "ledger_json_sha256": "8ee2025c6908a6930f9f4711e3d7b9ff1cf8f5f87b828656951630171274f8bd",
+      "ledger_md_sha256": "4d64d303c22c36b57830dbc81660fff000ae6ad81c1cce9914e4ab67cd87a904"
+    },
+    {
+      "slug": "cn-transfer-pricing",
+      "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/country/skills/international/china/cn-transfer-pricing.md",
+      "sha256": "db9d76474c1e10e359ece75ce12daf4156d2675395d45d9e9c82dbc4a433b9f4",
+      "manifest_matches": true,
+      "frontmatter_unchanged": true,
+      "executable_example_blocks_unchanged": true,
+      "ledger_json_sha256": "fc6e04432e71b1a0d9eb56bd4b8deec406b0f74ed3aaac6244481042396c1403",
+      "ledger_md_sha256": "7b91c91f6a5a85b4ae18637d809c15983316a3a25c2d4caca9c21b33a9166659"
+    },
+    {
+      "slug": "cn-vat",
+      "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/country/skills/international/china/cn-vat.md",
+      "sha256": "61a510cb82232a776fb3474512f654646b7901ebf7fff2144555469c81fe9e29",
+      "manifest_matches": true,
+      "frontmatter_unchanged": true,
+      "executable_example_blocks_unchanged": true,
+      "ledger_json_sha256": "c4de35e364b095dbd65a8a7dfa676962755b403d6c971f970264147a792b5c2d",
+      "ledger_md_sha256": "1af73861e7f73237c7214228cd77229b80090759d91be4e808501ee21c3e3767"
+    },
+    {
+      "slug": "cn-withholding",
+      "path": "/Users/michaelcutajar/.codex/visualizations/2026/10/23/01a16914-3f96-7d32-a5e0-df503863dadf/china-closeout/country/skills/international/china/cn-withholding.md",
+      "sha256": "cf4d273a11fb8df3d44a713f863f8f6d2aeb7399825292aedc36a6ebb90224af",
+      "manifest_matches": true,
+      "frontmatter_unchanged": true,
+      "executable_example_blocks_unchanged": true,
+      "ledger_json_sha256": "44c4fc13c24d8ea8d498d872442741b0346ed4405b227734fcf836e520cf06cf",
+      "ledger_md_sha256": "966c4395941b37a49ff9680e1ef166bd255d6a7ac0f9f522fa1ca22c1406de56"
+    }
+  ],
+  "preservation": {
+    "README": {
+      "sha256": "6c24f96d7be1ece49b560545bd730ab7ed4f4a0544c0a8a7ee7a5521cb5741fe",
+      "unchanged_from_initial": true,
+      "source_cited_draft": true,
+      "SC_partial_and_issue504_open": true
+    },
+    "legacy": [
+      {
+        "file": "china-pit.md",
+        "sha256": "c2a8981167cebfd8ae5e819d81de8be276370419d96f6f027e1be06a1b1edbb8",
+        "unchanged": true,
+        "review_scope": "Inventory/preservation only, not fresh 2026 completion"
+      },
+      {
+        "file": "china-vat.md",
+        "sha256": "bd5c33fa11dede26c333a614499d2fc6cb67ae8cb11b70d7c0fabfaac0e1ae37",
+        "unchanged": true,
+        "review_scope": "Inventory/preservation only, not fresh 2026 completion"
+      },
+      {
+        "file": "china-to-singapore-relocation-tax.md",
+        "sha256": "8d49fd76fbbd694eb639ceeac12ee70f665f6f5bf3145b681777ff204b0330c0",
+        "unchanged": true,
+        "review_scope": "Inventory/preservation only, not fresh 2026 completion"
+      },
+      {
+        "file": "cn-fapiao-einvoice.md",
+        "sha256": "4d5f55131d773c53c983b8f81f4b6d91078531a0c68cfd8c0a7baf37a7b3044f",
+        "unchanged": true,
+        "review_scope": "Inventory/preservation only, not fresh 2026 completion"
+      },
+      {
+        "file": "cn-formation.md",
+        "sha256": "86a00de59c2442e92fc68e87a67457065e4701de5364fc0e22627b88b394e6e0",
+        "unchanged": true,
+        "review_scope": "Inventory/preservation only, not fresh 2026 completion"
+      },
+      {
+        "file": "cn-freelance-intake.md",
+        "sha256": "485db53f1732d4c3b0336523da1a07126794df80ab854e8ee2e5723473283b19",
+        "unchanged": true,
+        "review_scope": "Inventory/preservation only, not fresh 2026 completion"
+      },
+      {
+        "file": "cn-return-assembly.md",
+        "sha256": "ac0badf2dde94fdb5188b30f4a2c367a2d5f26599c9802bbd06353c5c74aab29",
+        "unchanged": true,
+        "review_scope": "Inventory/preservation only, not fresh 2026 completion"
+      },
+      {
+        "file": "references.md",
+        "sha256": "e20b7ba427adc893d2f5680a9b17fc7e81ec93c2dd9b97b51e25bb5d4cb6f073",
+        "unchanged": true,
+        "review_scope": "Inventory/preservation only, not fresh 2026 completion"
+      }
+    ],
+    "CTA": [
+      {
+        "slug": "cn-iit",
+        "unchanged": true,
+        "tail_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81"
+      },
+      {
+        "slug": "cn-corporate-tax",
+        "unchanged": true,
+        "tail_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81"
+      },
+      {
+        "slug": "cn-vat",
+        "unchanged": true,
+        "tail_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81"
+      },
+      {
+        "slug": "cn-stamp-tax",
+        "unchanged": true,
+        "tail_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81"
+      },
+      {
+        "slug": "cn-social-insurance",
+        "unchanged": true,
+        "tail_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81"
+      },
+      {
+        "slug": "cn-withholding",
+        "unchanged": true,
+        "tail_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81"
+      }
+    ],
+    "all_eight_frontmatter_unchanged": true,
+    "all_16_executable_blocks_byte_unchanged": true,
+    "initial_review_and_evidence_hashes_unchanged": true
+  },
+  "lost_content_restored": 19,
+  "restoration_unit": "Named original-topic groups restored as explicit unconfirmed/referral limits, not 19 new verified regimes or literal paragraphs.",
+  "restored_topic_groups": [
+    {
+      "slug": "cn-social-insurance",
+      "original_topic_group": "resident rural/urban schemes",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-social-insurance",
+      "original_topic_group": "retiree rehires",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-social-insurance",
+      "original_topic_group": "intern/student work",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-social-insurance",
+      "original_topic_group": "dispatch/outsourcing",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-social-insurance",
+      "original_topic_group": "cross-province employer registration",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-social-insurance",
+      "original_topic_group": "enterprise/occupational annuities",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-social-insurance",
+      "original_topic_group": "commercial supplementary medical/employer-liability insurance",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-social-insurance",
+      "original_topic_group": "eight work-injury industry classes, industry examples and floating coefficients",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-withholding",
+      "original_topic_group": "Netherlands treaty row",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-withholding",
+      "original_topic_group": "France treaty row",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-withholding",
+      "original_topic_group": "South Korea treaty row",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-withholding",
+      "original_topic_group": "Australia treaty row",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-withholding",
+      "original_topic_group": "Canada treaty row",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-withholding",
+      "original_topic_group": "Luxembourg treaty row",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-withholding",
+      "original_topic_group": "Ireland treaty row",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-withholding",
+      "original_topic_group": "guarantee-fee classification",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-withholding",
+      "original_topic_group": "digital services/cross-border ecommerce",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-withholding",
+      "original_topic_group": "private funds/QFLP/QDLP",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    },
+    {
+      "slug": "cn-withholding",
+      "original_topic_group": "FATCA referral",
+      "destination": "Sources / Not yet confirmed: explicitly named original topic retained as unconfirmed/referral; no unsupported rate reinstated.",
+      "disposition": "RESTORED_AS_EXPLICIT_UNCONFIRMED_REFERRAL"
+    }
+  ],
+  "final_ledger_rows": 145,
+  "final_topic_destination_entries": 188,
+  "dependent_case_outcomes": {
+    "IIT_six_year_case6": "Filing condition added; 35-day absence alternative preserved.",
+    "VAT_imported_service_case4": "6000 withholding unchanged; credit requires general taxpayer, eligible use and no exclusion.",
+    "IIT_FTC_example": "Comprehensive-income ratio remains correct; business-income wording separately repaired.",
+    "numeric_inputs_outputs": "All 16 executable blocks byte-identical to frozen initial candidate; no numerical inputs, steps or expected outputs changed.",
+    "independent_arithmetic": "90 successful independent comparisons and 4 nonnumeric determinations retained in initial evidence; not repeated as a new whole-pack pass.",
+    "current_executable_check": "Independently reran scripts/check-examples.py: 8 files, 16 blocks, 0 failures, 0 missing.",
+    "test_scope": "Writer schema/metadata/strict-sync results acknowledged; broader 131-test suite was not rerun during this legal closure."
+  },
+  "remaining_genuine_scope_limits": [
+    "Social contributions remain a national framework with dated Shanghai illustrations; other current city/category schedules and named worker/benefit details remain unconfirmed. Issue #504 remains open.",
+    "Current treaty-by-treaty rates, residence/beneficial-owner entitlement, holding periods and destination-country tax outcomes require the actual applicable instruments and facts. The Hong Kong 5% comparison remains conditional arithmetic.",
+    "MAP procedural-suspension effects, historical PBOC benchmark inputs, special APA procedures and other expressly named specialist/referral limits are not established here.",
+    "The eight legacy sources are preserved; accounting, e-invoicing and formation remain a separate milestone.",
+    "Source-cited draft describes this result. No accountant signoff or whole-country completion is asserted."
+  ],
+  "actions": "Review evidence only. No Guide edits, commits, pushes, public posts, merge or attestation performed by reviewer."
+}

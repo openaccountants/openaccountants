@@ -1,0 +1,429 @@
+{
+  "baseline_commit": "cd39f6d76",
+  "old_guides": [
+    {
+      "path": "skills/svalbard/sj-svalbard-coal-export-duty.md",
+      "sha256": "2a548f1eb056eef5d04e1a18e1b3f968c2a85ce124ca16ac0e922db927d2df48",
+      "destination": "skills/svalbard/sj-svalbard-coal-export-duty.md",
+      "unchanged": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-company-income-tax.md",
+      "sha256": "3dde986717a5cde36f68be7bd6aad40a823b598f86dbfc8eccdbd541996bf27d",
+      "destination": "skills/svalbard/sj-svalbard-company-income-tax.md",
+      "unchanged": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-income-tax.md",
+      "sha256": "ba393f34e4ec3ebcf945f77e6332d6977c7d30ca31708ecd9eb7be7867b36ef5",
+      "destination": "skills/svalbard/sj-svalbard-income-tax.md",
+      "unchanged": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-payroll-tax.md",
+      "sha256": "184c3e06f3c4cef010cd2013b6d195dca3fcf2d45780116792d1678f54fbd9fe",
+      "destination": "skills/svalbard/sj-svalbard-payroll-tax.md",
+      "unchanged": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-social-contributions.md",
+      "sha256": "1f5558c5b413594b222910db8414cc72aa3e42b91940242a9b5ac5dae7c4787e",
+      "destination": "skills/svalbard/sj-svalbard-social-contributions.md",
+      "unchanged": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-tax-residence.md",
+      "sha256": "1d64825274c647daed51cef5b51f74ff1812670081eea39eccabc0445fcf5c14",
+      "destination": "skills/svalbard/sj-svalbard-tax-residence.md",
+      "unchanged": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-transfer-pricing.md",
+      "sha256": "30d6fda025a1dd66360eb7de12b93b9d93d2182d70e27abc8c453c2365e28fd7",
+      "destination": "skills/svalbard/sj-svalbard-transfer-pricing.md",
+      "unchanged": true
+    },
+    {
+      "path": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md",
+      "sha256": "d30213477809875245d0fc31743bd026396369df510bce840eef1a7746c4c8d7",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md",
+      "unchanged": true
+    }
+  ],
+  "old_readme_sha256": "99a86177fa3886d3c900f1077b7928962684932cfbaf810ac2cf5cc360dd1d52",
+  "old_readme_units": [
+    {
+      "old_line": 1,
+      "text": "---",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 2,
+      "text": "jurisdiction: SJ",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 3,
+      "text": "applicable: [IT-IND, IT-CORP, SC, PR, TP, XB]",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 4,
+      "text": "not_applicable:",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 5,
+      "text": "  VAT: \"Svalbard is excluded from the Norwegian VAT territory by VAT Act section 1-2(2); mainland transactions require a separate mainland VAT analysis.\"",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 6,
+      "text": "covered_by:",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 7,
+      "text": "  IT-IND: sj-svalbard-income-tax",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 8,
+      "text": "  IT-CORP: sj-svalbard-company-income-tax",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 9,
+      "text": "  SC: sj-svalbard-social-contributions",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 10,
+      "text": "  PR: sj-svalbard-payroll-tax",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 11,
+      "text": "  TP: sj-svalbard-transfer-pricing",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 12,
+      "text": "  XB: sj-svalbard-tax-residence",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 13,
+      "text": "partial:",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 14,
+      "text": "  IT-IND: \"Final 2026 residential-property assessment directions and values have not been verified; no mainland housing default is substituted.\"",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 15,
+      "text": "  SC: \"Low-income separately assessed sole-trader and mixed-income contribution rules need confirmation; first-krone salary contributions are confirmed.\"",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 16,
+      "text": "  XB: \"Territorial adaptation and computation/payment of cross-border unrealised-asset gains and company emigration remain unverified; ordinary liquidation/final-loss rules are covered.\"",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 17,
+      "text": "---",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 19,
+      "text": "# Svalbard: 2026 tax pack",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 21,
+      "text": "Svalbard has a separate Norwegian tax system, administered by Skatteetaten, using NOK and the calendar year. Gross salary withholding and separately assessed ordinary income are distinct. The eight Guides are **source-cited drafts**, not accountant-reviewed. The six previously reviewed Guides are preserved; the two additional levy Guides received [independent AI review on 31 October 2026](../../evidence/ledgers/svalbard-finish-20261031/independent-review/final-report.md), with their explicit limits retained. The three explicit domain gaps above and the additional job limits below keep issue #424 open.",
+      "destination": "skills/svalbard/README.md",
+      "status": "Guide count8→9; prior review/gaps retained; project review pending added"
+    },
+    {
+      "old_line": 23,
+      "text": "**Territory:** OWNERS.md and issue #424 identify this catalogue entry as Svalbard. The SJ metadata identifier does not establish Jan Mayen coverage. Svalbard Tax Act §1-1 sets this pack's boundary; Jan Mayen needs separate research and is not represented as complete by this work.",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 25,
+      "text": "## Domains",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 27,
+      "text": "| Domain | Guide | Status |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 28,
+      "text": "|---|---|---|",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 29,
+      "text": "| IT-IND | sj-svalbard-income-tax | source-cited draft; partial as declared |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 30,
+      "text": "| IT-CORP | sj-svalbard-company-income-tax | source-cited draft |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 31,
+      "text": "| VAT | Not applicable within Svalbard; statutory territorial exclusion | sourced absence |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 32,
+      "text": "| SC | sj-svalbard-social-contributions | source-cited draft; partial as declared |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 33,
+      "text": "| PR | sj-svalbard-payroll-tax | source-cited draft |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 34,
+      "text": "| TP | sj-svalbard-transfer-pricing | source-cited draft |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 35,
+      "text": "| XB | sj-svalbard-tax-residence | source-cited draft; partial as declared |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 37,
+      "text": "Ordinary scope includes residents/nonresidents, employment/pensions, sole traders, capital income and wealth, company profit and allocation, depreciation/losses, membership and contribution classes, employer withholding, standard benefits, related-party pricing/documentation, residence/departure and foreign distributions. Guide presence and passing arithmetic are not proof of full coverage.",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 39,
+      "text": "## Additional tax jobs and territorial exclusions",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 41,
+      "text": "The seven-domain coverage report does not inventory every statutory levy. The full-country goal also requires the following jobs and their operational limits to be accounted for.",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 43,
+      "text": "| Job | Guide or official basis | Current status |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 44,
+      "text": "|---|---|---|",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 45,
+      "text": "| Visitor environmental levy, collection and resident refund | [sj-svalbard-visitor-environmental-levy](sj-svalbard-visitor-environmental-levy.md) | Ordinary charge and published refund procedure drafted with a figure ledger. Carrier settlement/remittance, incorporated aviation exceptions and post-access refund-form fields remain unverified. |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 46,
+      "text": "| Coal-export duty | [sj-svalbard-coal-export-duty](sj-svalbard-coal-export-duty.md) | Enacted 2026 bands, seasonal FOB method and statutory book/assessment/payment/appeal rules drafted with a figure ledger. Current departmental filing format/channel and coal-specific interest rate remain unverified; the last listed band is not extrapolated. |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 47,
+      "text": "| Document transfer duty on Svalbard property | [Kartverket's Svalbard exclusion under Svalbard Act §2](https://www.kartverket.no/eiendom/dokumentavgift-og-gebyr/fritak-for-dokumentavgift), read 2026-10-31 | Does not apply to Svalbard property transfers. Registration fees are a separate charge and are not described as a document transfer tax. |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 48,
+      "text": "| Import customs duty into Svalbard | [Customs Duty Act §1-1(2)](https://lovdata.no/dokument/NL/lov/2022-03-11-8) and [Tolletaten's current Svalbard guidance](https://www.toll.no/no/bedrift/import/tolletaten-pa-svalbard/), read 2026-10-31 | Svalbard is outside the Act's customs-duty territory. Customs controls and destination-territory import duties remain separate obligations. |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 50,
+      "text": "This map is not a claim that every special charge has been exhausted. Financial/minimum-tax perimeter, other mineral charging decisions, special group settlements, regulated-sector charges and the current local fee schedules still need a positive applicability/job audit. The existing specialist exclusions below describe what the original six Guides supply; they do not remove applicable jobs from the full-country goal. The new coal-export Guide supplies a tax job that was not covered by the original extractive-sector exclusion.",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 52,
+      "text": "Niche exclusions: simplified settlements for foreign research/project groups and Barentsburg; offshore/extractive and shipping regimes; financial institutions; large-multinational minimum tax and Svalbard-specific CbC perimeter implementation; reorganisations and complex hybrid arrangements; specialist pensions/benefits; short-term accommodation; and treaty-rate tables. These do not erase the ordinary gaps declared above. Professional sign-off is a separate trust limit, not a `partial` reason.",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 54,
+      "text": "## Official sources",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 56,
+      "text": "The original six-Guide sources were read afresh on **24 October 2026**. New job sources and territorial exclusions were read on **31 October 2026**. Article-level tables and full source lists are in each Guide; each date below identifies the actual read.",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 58,
+      "text": "| Source | URL | Read on |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 59,
+      "text": "|---|---|---|",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 60,
+      "text": "| Svalbard Tax Act, especially §§1-1,2-1–4,3-1–3,4-1,5-1–2 | https://lovdata.no/dokument/NL/lov/1996-11-29-68 | 2026-10-24 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 61,
+      "text": "| Enacted 2026 Svalbard tax decision | https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780 | 2026-10-24 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 62,
+      "text": "| 2026 mainland wealth decision, ch.2 | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2747 | 2026-10-24 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 63,
+      "text": "| Svalbard regulation §§4–8 | https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305 | 2026-10-24 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 64,
+      "text": "| Income Tax Act, imported with Svalbard exceptions | https://lovdata.no/dokument/NL/lov/1999-03-26-14 | 2026-10-24 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 65,
+      "text": "| VAT Act §1-2(2), territorial exclusion | https://lovdata.no/dokument/NL/lov/2009-06-19-58 | 2026-10-24 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 66,
+      "text": "| National Insurance Act §§2-3,23-3 and 2026 contribution decision | https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748 | 2026-10-24 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 67,
+      "text": "| NAV Svalbard membership | https://www.nav.no/svalbard | 2026-10-24 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 68,
+      "text": "| Administration Act and implementing regulation | https://lovdata.no/dokument/NL/lov/2016-05-27-14 | 2026-10-24 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 69,
+      "text": "| Payment Act, chs.10–11 | https://lovdata.no/dokument/NL/lov/2005-06-17-67 | 2026-10-24 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 70,
+      "text": "| Current Skatte-ABC S-23, 2026 publication dates | https://oppslag.rettskilder.skatteetaten.no/rettskilder2/type/handboker/skatte-abc/gjeldende/skatteabc-S-23 | 2026-10-24 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 71,
+      "text": "| Visitor environmental levy regulation §§1–8 | https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532 | 2026-10-31 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 72,
+      "text": "| Environmental Fund resident refund procedure | https://www.miljovernfondet.no/refusjon-av-avgift/ | 2026-10-31 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 73,
+      "text": "| 2026 coal-export duty decision, complete schedule | https://lovdata.no/dokument/STV/forskrift/2025-12-19-2781 | 2026-10-31 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 74,
+      "text": "| Coal/mineral export duty Act §§1–11 | https://lovdata.no/dokument/NL/lov/1925-07-17-2 | 2026-10-31 |",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 76,
+      "text": "New writer ledgers: [environmental levy](../../evidence/ledgers/sj-svalbard-visitor-environmental-levy.md) and [coal duty](../../evidence/ledgers/sj-svalbard-coal-export-duty.md). These source records are not an independent review or accountant attestation. The completed [24 October six-Guide independent review](../../docs/research/2026-10-24-svalbard-independent-review.md) remains unchanged.",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    },
+    {
+      "old_line": 78,
+      "text": "The current authority handbook still contains stale 2025 labels and some numbering/wording inconsistencies. The consolidated statutes and enacted 2026 decisions govern the figures used here. The preserved 22 October research is initial author checking, not this wave's independent review or accountant sign-off.",
+      "destination": "skills/svalbard/README.md",
+      "status": "exact retained"
+    }
+  ],
+  "lost_substantive_topics": 0
+}

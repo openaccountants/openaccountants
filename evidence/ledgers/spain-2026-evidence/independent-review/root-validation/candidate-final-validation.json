@@ -1,0 +1,17 @@
+{
+  "state": "All22currentGuidebytes pass technicalvalidation. Independentcountryreviewfinal2ledgersstillpending;notcountrycompletion.",
+  "checks": {
+    "examples": "22files44blocks0failures0missing",
+    "schema": "22Guides0warninggroups",
+    "unit": "PASS129repositorytests6.572s after normal reviewedmain merge",
+    "Guide_hashes_after_checks": "all22unchanged",
+    "strict_audit": "PASS22sourceGuides/0errors/0warnings/0notices after mainmerge"
+  },
+  "output_sha256": {
+    "examples": "27ae462e85424ca753ffe7661b0a465ced1d10e89a653119997c9e3a8dac0ee5",
+    "schema": "a543109610a952bf717d5d0a248a7c3b504e2db2b19051df9e9112e4c352ab94",
+    "unit": "dceee389a29fd7a939c0a502db510eef8a5fc629cb36d570632f80e0ede66376",
+    "post_merge_unit": "b9e098851d6af75cd6544e54dd81b113f4e6f7be1f1176edcc63fdec82f04e22",
+    "strict_audit": "d7d74508aecf7e91852accd239a769fecac74876d0089106616e9dc71c6986e9"
+  }
+}

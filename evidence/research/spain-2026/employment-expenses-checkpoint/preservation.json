@@ -1,0 +1,18 @@
+{
+  "time": "2026-10-27T23:59:18.481379+00:00",
+  "baseline_live_path": "/Users/michaelcutajar/Documents/ChatGPT/OA/.claude/worktrees/europe-spain/skills/international/spain/es-irpf-deductions.md",
+  "baseline_sha256": "40b24c16565a99479623b8fda382d00467a31e19e91780f1e74dbe58c73f746e",
+  "baseline_bytes": 470201,
+  "candidate_sha256": "1c863905ca1a508d5513725a6984a82e210805da57f62067ac0c9a3067a0a290",
+  "candidate_bytes": 476835,
+  "inverse_restoration_byte_exact": true,
+  "exact_existing_oa_blocks": 2,
+  "whole_oa_unchanged": true,
+  "whole_CTA_unchanged": true,
+  "all_old_URL_occurrences_retained": true,
+  "old_URL_occurrences": 1096,
+  "existing_H2_order_unchanged": true,
+  "metadata_only_version_advanced": true,
+  "live_after_hash": "40b24c16565a99479623b8fda382d00467a31e19e91780f1e74dbe58c73f746e",
+  "live_unchanged": true
+}

@@ -1,0 +1,913 @@
+
+
+[[ID:jdN-vSs7GY9]]
+
+Colectivos
+
+[[ID:com.ibm.lotus.NavStateUrl]]
+
+[[ID:printArea]]
+
+[[ID:cookies]]
+
+[[ID:msj-aviso-cookies]]
+
+Este sitio web utiliza cookies para que tengas una mejor experiencia de usuario. Las cookies no se utilizan para recoger información de carácter personal. Para más información consulta nuestra política de cookies.  
+
+                Aceptar todas
+
+              Rechazar todas
+
+Ir al contenido principal
+
+					Ir a página resultados de búsqueda
+
+[[ID:form_busqueda_head]]
+
+		        	Buscar en el portal
+		            
+[[ID:palabraBusquedaHead]]
+
+		              Iniciar Búsqueda
+
+		        		Área personal
+
+[[ID:content]]
+
+[[ID:portletState]]
+{}
+
+[[ID:Z7_7P081341OGOI50QUGTRCS72012]]
+
+ 		Guía práctica del empleo en el hogar
+
+[[ID:breadcrumbParticularInicio]]
+
+          Tesorería de la Seg. Social
+
+Empleo de hogar
+
+Guía práctica del empleo en el hogar
+
+[[ID:Z7_7P081341O0A620QEJQD54S10G5]]
+
+ 		Guía práctica del empleo en el hogar
+
+Guía práctica del empleo en el hogar
+
+[[ID:post-0fb53640-e7c6-406d-a092-ef660de6801f]]
+
+Novedades
+
+Si eres empleador o empleado de hogar, estas novedades te interesan:
+
+Desde el 1 de octubre de 2022 los empleadores tienen que cotizar por desempleo y Fondo de Garantía Salarial (FOGASA).  Los empleados de hogar también cotizarán por desempleo. La Tesorería General de la Seguridad Social adaptará la cotización a la nueva normativa, sin que sea necesario realizar ningún trámite adicional por parte del empleado y empleador.
+
+Desde el 1 de enero de 2023, el empleador es el único responsable de tramitar el alta o la baja ante la Tesorería General de la Seguridad Social, así como de comunicar todas la variaciones de jornada, tipo de contrato o retribuciones que se produzcan. 
+
+El empleador puede solicitar una deducción del 45% de su cuota por contingencias comunes por la contratación de cuidadores en familias numerosas. Más información sobre esta deducción “Voy a contratar a una persona para trabajar en mi casa, ¿me puedo aplicar algún beneficio en las cuotas a la Seguridad Social?, ¿qué requisitos tengo que cumplir?”.
+
+En caso de solicitar este beneficio, no será de aplicación el descuento del 20% al dar de alta a una persona empleada en el hogar familiar, pero sí las deducciones del 80% en la cotización por desempleo y FOGASA.
+
+Si el empleador tiene contratada a más de una persona en el hogar familiar, este beneficio solo se aplicará por una de las personas empleadas.
+
+Recuerda que desde el 1 de octubre de 2022 la cotización por desempleo y Fondo de Garantía Salarial (FOGASA) es obligatoria.
+
+[[ID:post-cfbd6b10-14df-464a-b715-cbb15deff46e]]
+
+¿Qué estás buscando?
+
+    Resuelve tus dudas tanto si eres empleador y vas a dar de alta a un trabajador en empleo de hogar, como si eres la persona empleada y vas a empezar a desarrollar tu actividad en el ámbito doméstico.
+
+[[ID:form_busqueda_guia]]
+
+[[ID:labelFormularioGuia]]
+Buscar en 
+	           		
+[[ID:inputFormularioGuia]]
+
+[[ID:buttonFormularioGuia]]
+
+[[ID:spanFormularioGuia]]
+Iniciar Búsqueda en  	            
+
+Índice de contenidos
+
+En esta guía encontrarás lo que necesitas saber sobre:
+
+Dar de alta en empleo de hogar
+
+Cuota y pagos
+
+Derechos y obligaciones
+
+Bajas y modificaciones de datos
+
+[[ID:post-db795fde-2ae8-460f-a474-6f8e6966816e]]
+
+1. Dar de alta en empleo de hogar
+
+[[ID:post-ebc7b240-f73a-4a0c-8a8c-586b8e878a46]]
+
+[[ID:IDControlebc7b240-f73a-4a0c-8a8c-586b8e878a46]]
+
+				¿Cuándo hay que tramitar el alta?
+
+[[ID:IDregionebc7b240-f73a-4a0c-8a8c-586b8e878a46]]
+
+Siempre que una persona vaya a realizar una actividad en el entorno doméstico a cambio de un salario, hay que solicitar el alta independientemente del número de horas que trabaje. Se consideran tareas domésticas, entre otras, el servicio de limpieza o el cuidado de menores o personas dependientes.
+
+El alta en el empleo de hogar se podrá realizar con una antelación máxima de 60 días y hasta el mismo día en el que se inicie la actividad desde Alta en empleo de hogar.
+
+Si la persona empleada ya ha empezado a trabajar, puedes tramitar el alta hasta pasados 30 días desde el inicio de actividad. En ese caso, se considera que el alta ha sido comunicada fuera de plazo y la cuota a pagar se calculará desde la fecha que has indicado como de inicio de la actividad.
+
+[[ID:post-f6806e49-247c-4ae4-863b-98d8c8878d20]]
+
+[[ID:IDControlf6806e49-247c-4ae4-863b-98d8c8878d20]]
+
+				Voy a contratar a una persona para trabajar en mi casa, ¿quién debe tramitar el alta en la Seguridad Social?
+
+[[ID:IDregionf6806e49-247c-4ae4-863b-98d8c8878d20]]
+
+  Desde el 1 de enero de 2023, el empleador es el único responsable de tramitar el alta y de ingresar las cuotas a la Seguridad Social con independencia del número de horas de trabajo al mes que tenga acordadas con la persona empleada.
+
+[[ID:post-db8cc116-950d-4456-bd42-ea5dc0c1b73a]]
+
+[[ID:IDControldb8cc116-950d-4456-bd42-ea5dc0c1b73a]]
+
+				¿Es obligatorio tener un contrato de trabajo?
+
+[[ID:IDregiondb8cc116-950d-4456-bd42-ea5dc0c1b73a]]
+
+  Si los servicios van a durar más de 4 semanas debes reflejar las condiciones laborales en un contrato escrito y firmado. Si no, salvo que puedas demostrar lo contrario, se considera que el contrato es por tiempo indefinido y jornada completa. Se debe conservar una copia firmada por ambas partes.
+
+Para ayudarte a elaborar el contrato, el Servicio Publico de Empleo Estatal (SEPE) pone a tu disposición varios modelos.
+
+[[ID:post-8ccbbe47-5177-412e-b9e7-af96779d6ccd]]
+
+[[ID:IDControl8ccbbe47-5177-412e-b9e7-af96779d6ccd]]
+
+				¿Qué información se necesita para tramitar el alta en empleo de hogar?
+
+[[ID:IDregion8ccbbe47-5177-412e-b9e7-af96779d6ccd]]
+
+Para gestionar un alta en empleo de hogar, necesitarás:
+
+Los datos identificativos de la persona trabajadora. Documentos como DNI, NIE o Número de la Seguridad Social.
+
+Los datos identificativos de la persona empleadora. Documentos como DNI, NIE, Número de la Seguridad Social y el Número de identificación como empleador (Código de Cuenta de Cotización CCC).
+
+Tener acordada la jornada y el salario entre las partes.
+
+Un contrato de trabajo que refleje la jornada y el salario pactado. El Servicio Publico de Empleo Estatal (SEPE) dispone de modelos de contrato para un contrato indefinido o a tiempo parcial.
+
+El IBAN de la cuenta corriente en la que se van a domiciliar los pagos y mandato SEPA (autorización para cargar las cuotas en la cuenta). Si la persona que va a tramitar el alta no es titular de la cuenta, debe contar con la autorización de su titular.
+
+Permiso de trabajo vigente para trabajadores extracomunitarios.
+
+Otros datos en el caso de aplicación de beneficios en la cuota, como información sobre el título de familia numerosa.
+
+Si durante el trámite te falta algún dato, pulsa el botón “Salir y guardar” para guardar la información en un borrador durante 10 días. Podrás recuperar el alta más adelante dónde lo dejaste.
+
+[[ID:post-ad208ace-0227-4bcc-a809-158dd9073882]]
+
+[[ID:IDControlad208ace-0227-4bcc-a809-158dd9073882]]
+
+				Quiero contratar a una persona extranjera, ¿qué documentación es necesaria?
+
+[[ID:IDregionad208ace-0227-4bcc-a809-158dd9073882]]
+
+Además de contar con la documentación indicada en el apartado anterior, debes asegurarte de que pueda trabajar en España. Por su Tarjeta de Identificación Extranjera (TIE) podrás saber si pertenece o no a un país de la Unión Europea y los permisos que necesita: 
+
+Si es del Espacio Económico Europeo o Suiza, podrá trabajar siempre que tenga el Número de Identificación de Extranjero (NIE). Si carece de NIE debe solicitarlo previamente.
+
+En otro caso, necesitará una autorización temporal de residencia con permiso de trabajo en vigor o una autorización de residencia de larga duración.
+
+[[ID:post-d3eac1d3-71d2-47b9-add9-ff2aa5ab6e3c]]
+
+[[ID:IDControld3eac1d3-71d2-47b9-add9-ff2aa5ab6e3c]]
+
+				¿Qué es el Código de Cuenta de Cotización (CCC) o el identificador como empleador?
+
+[[ID:IDregiond3eac1d3-71d2-47b9-add9-ff2aa5ab6e3c]]
+
+El CCC es el número que la Seguridad Social asigna al empleador cuando contrata por primera vez a una persona en empleo de hogar. Tiene carácter provincial, es decir, si contratas trabajadores en empleo de hogar en distintas provincias, se asigna un CCC en cada una de ellas al solicitar un alta nueva. 
+
+Con este número, la persona empleadora podrá ser identificada en los distintos trámites de empleo de hogar. 
+
+Si eres empleador, encontrarás tu CCC en la página Mi perfil de empleador de tu área personal.
+
+[[ID:post-f8af8874-6c23-425e-a6a6-8263c70f4d43]]
+
+[[ID:IDControlf8af8874-6c23-425e-a6a6-8263c70f4d43]]
+
+				¿Qué es el tiempo de presencia?
+
+[[ID:IDregionf8af8874-6c23-425e-a6a6-8263c70f4d43]]
+
+Las horas de presencia o guardia son aquellas en las que la persona trabajadora no está trabajando de forma activa, pero está disponible dentro o fuera del hogar. Las horas de presencia no pueden superar las 20 horas semanales en cómputo mensual y su importe tiene que ser igual o mayor al importe de la hora del salario mensual con pagas extras.
+
+[[ID:post-3504c5a7-6c83-4a85-ad12-df3d1f51eb7c]]
+
+[[ID:IDControl3504c5a7-6c83-4a85-ad12-df3d1f51eb7c]]
+
+				¿Qué es la entidad aseguradora?
+
+[[ID:IDregion3504c5a7-6c83-4a85-ad12-df3d1f51eb7c]]
+
+Las Mutuas Colaboradoras con la Seguridad Social son las entidades aseguradoras de los riesgos profesionales. Prestan asistencia sanitaria a las personas empleadas en caso de accidente de trabajo y enfermedad profesional y, por otro lado, gestionan la prestación económica por incapacidad temporal en tales casos.
+
+En el supuesto de enfermedad común o accidente no laboral, tendrás que elegir si quieres que la cobertura se preste por el Instituto Nacional de la Seguridad Social y el Sistema Nacional de Salud, o si prefieres que sea una Mutua colaboradora la que abone la prestación económica por incapacidad temporal y realice el seguimiento médico.
+
+[[ID:post-dfb4cdde-3552-4cad-9212-1e2d1e84a600]]
+
+[[ID:IDControldfb4cdde-3552-4cad-9212-1e2d1e84a600]]
+
+				¿Qué diferencia hay entre elegir una Mutua o la Seguridad Social como entidad aseguradora?
+
+[[ID:IDregiondfb4cdde-3552-4cad-9212-1e2d1e84a600]]
+
+No existe diferencia en la cobertura de riesgos por el Instituto Nacional de la seguridad Social o una Mutua.
+
+Las mutuas colaboradoras son asociaciones de empresarios autorizadas por el Ministerio de Inclusión, Seguridad Social y Migraciones, que ayudan a la Seguridad Social en la gestión de coberturas y prestaciones. Si se selecciona la mutua, esta asiste a la persona empleada en caso de accidente de trabajo y enfermedades profesionales, se encargan de la prevención de riesgos laborales, la mejora de las condiciones de trabajo y la salud de las personas trabajadoras. Además, gestionan las prestaciones económicas de incapacidad temporal, por riesgo durante el embarazo, riesgo durante la lactancia natural y la prestación del nacimiento o cuidado de menores.
+
+[[ID:post-fd96b3a0-de37-47a0-a85b-4cfc11e80d92]]
+
+[[ID:IDControlfd96b3a0-de37-47a0-a85b-4cfc11e80d92]]
+
+				¿En qué bancos puedo domiciliar los pagos de las cuotas a la Seguridad Social?
+
+[[ID:IDregionfd96b3a0-de37-47a0-a85b-4cfc11e80d92]]
+
+Para ingresar las cuotas a la Seguridad Social tendrás que domiciliar los pagos en un banco o una entidad financiera colaboradora con la Seguridad Social. Consulta las entidades financieras colaboradoras con la Seguridad Social.
+
+[[ID:post-96ad8aec-2b96-4763-b347-7ae5652a4ba8]]
+
+[[ID:IDControl96ad8aec-2b96-4763-b347-7ae5652a4ba8]]
+
+				Si trabajo en varias casas para distintos empleadores, ¿tengo que estar de alta en la Seguridad Social con cada uno de ellos?
+
+[[ID:IDregion96ad8aec-2b96-4763-b347-7ae5652a4ba8]]
+
+Todos los empleadores deben tramitar tu alta en empleo de hogar con independencia del número de horas que trabajes para cada uno de ellos.
+
+Cada empleador será el responsable de tramitar el alta en empleo de hogar y de comunicar el número de horas de tu jornada laboral.
+
+[[ID:post-1b74183c-a1c6-48fe-87a6-464503f87445]]
+
+[[ID:IDControl1b74183c-a1c6-48fe-87a6-464503f87445]]
+
+				Soy empleador, ¿qué ocurre si no doy de alta ni cotizo por la persona contratada en el hogar familiar?
+
+[[ID:IDregion1b74183c-a1c6-48fe-87a6-464503f87445]]
+
+En caso de incumplimiento de las obligaciones de alta y de cotización, la Tesorería General de la Seguridad Social podrá dar de alta a la persona trabajadora reclamando el pago de las cuotas debidas desde el inicio de la actividad, con los correspondientes recargos.
+
+Además, esto supone una falta grave que puede sancionarse por la Inspección de Trabajo y Seguridad Social. El importe de la multa oscila entre 3.750 y 12.000 euros.
+
+[[ID:post-97601315-b688-400b-8365-eb6556b864c5]]
+
+[[ID:IDControl97601315-b688-400b-8365-eb6556b864c5]]
+
+				¿Puedo contratar a un familiar para realizar tareas domésticas?
+
+[[ID:IDregion97601315-b688-400b-8365-eb6556b864c5]]
+
+Sí, lo puedes contratar siempre que quede acreditado que le pagas un salario y que trabaja bajo tu dirección y organización.
+
+Si el familiar reside en tu domicilio y tenéis un parentesco de hasta segundo grado (padres, hijos, nietos o abuelos y sus cónyuges), podremos pedir que justifiques que recibe un salario.
+
+[[ID:post-9879d92e-ef21-475c-8cba-95c513fafaba]]
+
+[[ID:IDControl9879d92e-ef21-475c-8cba-95c513fafaba]]
+
+				Si he empezado a trabajar en un hogar, ¿cómo puedo saber si me han dado de alta?
+
+[[ID:IDregion9879d92e-ef21-475c-8cba-95c513fafaba]]
+
+En el momento en el que el empleador solicite el alta en empleo de hogar te lo comunicaremos mediante un SMS o correo electrónico. En el mensaje encontrarás un enlace desde el que podrás acceder a tu área personal y consultar todos los datos con los que te ha dado de alta, como la fecha de inicio de actividad, el tipo de contrato o el número de horas.
+
+Si el empleador te ha dado de alta, pero no has recibido ningún mensaje, accede a tu área personal para comprobar el trámite realizado y revisa tus datos de contacto, teléfono móvil y correo electrónico, para verificar que son correctos. En adelante, la Seguridad Social podrá comunicarte cualquier cambio por estos medios.
+
+[[ID:post-0a779526-03f9-4a2f-bd4b-574e6fce2d47]]
+
+2. Cuota y pagos
+
+[[ID:post-409ff9f6-26fb-467b-b244-a852b9fb98e8]]
+
+[[ID:IDControl409ff9f6-26fb-467b-b244-a852b9fb98e8]]
+
+				Voy a contratar a una persona para trabajar en mi casa, ¿me puedo aplicar algún beneficio en las cuotas a la Seguridad Social?, ¿qué requisitos tengo que cumplir?
+
+[[ID:IDregion409ff9f6-26fb-467b-b244-a852b9fb98e8]]
+
+  Con carácter general, estos son los beneficios que puedes disfrutar como empleador. Se aplicarán sobre la cotización a tu cargo.
+Los siguientes beneficios serán de aplicación automática siempre que no seas deudor con la Seguridad Social o con las Haciendas Tributarias:
+
+Reducción del 20% en la cuota por contingencias comunes por alta en empleo de hogar.
+
+Bonificación del 80% en la cuota por desempleo.
+
+Bonificación del 80% en la cotización al Fondo de Garantía Salarial (FOGASA).
+
+Reducción del 75% en la cuota por contingencias comunes durante la situación de incapacidad temporal de las personas trabajadoras que tengan cumplida la edad de 62 años.
+
+Además, existen otros beneficios en tu cuota que podrás solicitar: 
+
+Beneficio del 45% en la cuota por contingencias comunes por la contratación en familias numerosas (no acumulable con la reducción por alta del 20%).
+
+Bonificación del 100% en la cuota por contingencias comunes por la formalización de un contrato para sustituir a otra persona que cesa en su prestación de servicios por ejercicio de los derechos laborales reconocidos a las víctimas de violencia de género o de violencia sexual.
+
+Bonificación de hasta 366 euros en la cuota total:
+
+Por la formalización de contratos de interinidad que se celebren con personas desempleadas para sustituir a personas trabajadores que tengan suspendido su contrato de trabajo por riesgo durante el embarazo o lactancia natural, nacimiento y cuidado del menor y ejercicio corresponsable del lactante.
+
+De la persona trabajadora sustituida por las causas anteriores.
+
+Bonificación en la cuota por contingencias comunes por la contratación de personas con discapacidad.
+
+Ten en cuenta que, si debes alguna cuota o tienes cualquier otra deuda con la Seguridad Social y las Haciendas Tributarias, aunque cumplas los requisitos, solo podrás aplicarte los beneficios si pagas tu deuda antes de que el empleado empiece a trabajar. Accede a Consulta de deudas y obtención de documento de pago para regularizar la situación con la Seguridad Social
+
+[[ID:post-c913e257-c0e0-426a-a3b4-5ecb1e2965f5]]
+
+[[ID:IDControlc913e257-c0e0-426a-a3b4-5ecb1e2965f5]]
+
+				Tabla de tramos de cotización
+
+[[ID:IDregionc913e257-c0e0-426a-a3b4-5ecb1e2965f5]]
+
+La cotización a la Seguridad Social se calcula aplicando unos porcentajes a las bases de cotización. Las bases de cotización vienen determinadas por la totalidad del salario mensual, según la tabla de tramos vigente. 
+
+Durante el año 2026 esta es la tabla de tramos de cotización: 
+
+[[ID:header18]]
+Tramo
+      
+[[ID:header28]]
+
+        Retribución mensual euros/mes
+
+[[ID:header38]]
+
+Base de cotización
+
+euros/mes
+
+      1.º
+      Hasta 329,00
+      306,00
+
+      2.º
+      Desde 329,01 hasta 510,00
+      436,00
+
+      3.º
+      Desde 510,01 hasta 693,00
+      602,00
+
+      4.º
+      Desde 693,01 hasta 877,00
+      785,00
+
+      5.º
+      Desde 877,01 hasta 1.061,00
+      970,00
+
+      6.º
+      Desde 1.061,01 hasta 1.242,00
+      1.151,00
+
+      7.º
+      Desde 1.242,01 hasta 1.424,40
+      
+        1.424,40
+
+      8.º
+      Desde 1.424,41
+      Retribución mensual
+
+La tabla de tramos de cotización y los tipos de cotización aplicables a las bases vienen determinados legalmente.
+
+[[ID:post-a433c2e0-30bc-4a09-a4d7-0e35b2b94324]]
+
+[[ID:IDControla433c2e0-30bc-4a09-a4d7-0e35b2b94324]]
+
+				¿Cómo se calcula la cuota mensual a pagar?
+
+[[ID:IDregiona433c2e0-30bc-4a09-a4d7-0e35b2b94324]]
+
+La cuota mensual es la suma de la aportación del empleador y del trabajador. Estas cuotas se calculan a partir de la base de cotización que puedes consultar en la tabla de tramos anterior. Para saber qué base de cotización se aplica, debes calcular la retribución mensual que se obtiene de la suma del salario mensual, la parte proporcional de las pagas extraordinarias y otros complementos salariales como pernocta, horas de guardia o presencia y el salario en especie si los hay.
+
+Cuota a pagar = Cuota del empleador + Cuota del trabajador
+
+Si el contrato es fijo discontinuo o indefinido:
+
+Cuota del empleador = [Base x 0,2360 x (1- bonificación) (contingencias comunes)] + [Base x 0,0150 (contingencias profesionales)] + [Base x 0,055 x (1-0,80) (desempleo)] + [Base x 0,0075 (Mecanismo de Equidad Intergeneracional)] + [Base x 0,002 x (1-0,80) (FOGASA)]
+
+Cuota del trabajador = [Base x 0,0470 (contingencias comunes)] + [Base x 0,0155 (desempleo)] + [Base x 0,0015 (Mecanismo de Equidad Intergeneracional)]
+
+Si el contrato es temporal:
+
+Cuota del empleador = [Base x 0,2360 x (1- bonificación) (contingencias comunes)] + [Base x 0,0150 (contingencias profesionales)] + [Base x 0,067 x (1-0,80) (desempleo)] + [Base x 0,0075 (Mecanismo de Equidad Intergeneracional)] + [Base x 0,002 x (1-0,80) (FOGASA)]
+
+Cuota del trabajador = [Base x 0,0470 (contingencias comunes)] + [Base x 0,016 (desempleo)] + [Base x 0,0015 (Mecanismo de Equidad Intergeneracional)]
+
+Recuerda que la aplicación de estos beneficios se encuentra condicionada a estar al corriente de pago con la Seguridad Social y Haciendas Tributarias.
+
+Puedes calcular la retribución total mensual de la siguiente manera:
+
+Retribución total mensual = Salario Mensual + Pagas extraordinarias / 12 + Salario en especie + Retribución mensual por horas presencia + Retribución mensual por pernocta
+
+Ejemplo: El salario mensual de María es de 1.221 € (Salario Mínimo Interprofesional), tiene dos pagas extraordinarias al año que suman un total de 2.700 € anuales. Tiene un contrato indefinido.
+
+Retribución o importe total = 1.221 + 2.700/12 = 1.446€
+Base de cotización = 1.446€
+Cuota del empleador = [1.446 x 0,2360 x (1-0,2)] + [1.446 x 0,0150] + [1.446 x 0,055 x (1-0,8)] + [1.446 x 0,0075] + [1.446 x 0,002 x (1-0,8)]= 322,03€
+Cuota del trabajador = [1.446 x 0,0470] + [1.446 x 0,0155] + [1.446 x 0,0015]= 92,54€
+Cuota a pagar = 322,03 + 92,54 = 414,57€
+
+Simular cuota
+
+[[ID:post-af603904-1085-43ef-8bf9-52c89d725019]]
+
+[[ID:IDControlaf603904-1085-43ef-8bf9-52c89d725019]]
+
+				¿Quién debe ingresar las cuotas a la Seguridad Social?
+
+[[ID:IDregionaf603904-1085-43ef-8bf9-52c89d725019]]
+
+Desde el 1 de enero de 2023, el único responsable de tramitar el alta y de ingresar las cuotas correspondientes al mes de enero y siguientes es el empleador. El empleador deberá descontar del salario del trabajador la parte correspondiente de éste.
+
+[[ID:post-cb75df89-667d-468c-bd19-debd189dc1f1]]
+
+[[ID:IDControlcb75df89-667d-468c-bd19-debd189dc1f1]]
+
+				Soy empleador, ¿desde cuándo debo cotizar por desempleo?
+
+[[ID:IDregioncb75df89-667d-468c-bd19-debd189dc1f1]]
+
+Desde el 1 de octubre de 2022 la cotización por desempleo y al Fondo de Garantía Salarial (FOGASA) es obligatoria.
+
+La Tesorería General de la Seguridad Social se ocupará de que tu cotización se adapte a la nueva normativa sin que sea necesario realizar ningún trámite adicional.
+
+Sin embargo, recuerda que en caso de que exista algún cambio en el salario o en la jornada pactados con la persona trabajadora has de comunicarlo a través de tu Área Personal. En todo caso, los cambios que afecten a la retribución deberán respetar siempre el salario mínimo interprofesional establecido por ley.
+
+[[ID:post-137e7bab-7dd9-4694-80d2-6bcad91f5de6]]
+
+[[ID:IDControl137e7bab-7dd9-4694-80d2-6bcad91f5de6]]
+
+				¿Cómo se paga la cotización a la Seguridad Social?
+
+[[ID:IDregion137e7bab-7dd9-4694-80d2-6bcad91f5de6]]
+
+El pago de la cuota mensual se efectuará mediante domiciliación bancaria en la cuenta bancaria comunicada por el empleador. La actualización de la cuenta bancaria se puede realizar a través de Modificación de tus datos como empleador o empleadora del hogar.
+
+Desde el 1 de enero de 2023, el empleador es el único responsable de ingresar las cuotas correspondientes al mes de enero y siguientes a la Seguridad Social mediante domiciliación bancaria.
+
+[[ID:post-d6b8f73d-a08b-4137-848b-d291cf0baddf]]
+
+[[ID:IDControld6b8f73d-a08b-4137-848b-d291cf0baddf]]
+
+				Si soy empleador y se ha aprobado un nuevo Salario Mínimo Interprofesional,  ¿debo modificar la retribución de la persona empleada en mi casa?
+
+[[ID:IDregiond6b8f73d-a08b-4137-848b-d291cf0baddf]]
+
+Sí, siempre que las retribuciones en metálico que hayas comunicado por última vez sean inferiores al nuevo SMI, ya que la retribución determina la base de cotización aplicable. 
+
+En caso de no realizar voluntariamente esta actualización, la Tesorería General de la Seguridad Social cargará en la cuenta donde esté domiciliado el pago, la cuota correspondiente.
+
+[[ID:post-7e543a73-aa9b-490a-9685-bb9147ad382d]]
+
+[[ID:IDControl7e543a73-aa9b-490a-9685-bb9147ad382d]]
+
+				¿Qué incluye la cuota que tengo que pagar a la Seguridad Social?
+
+[[ID:IDregion7e543a73-aa9b-490a-9685-bb9147ad382d]]
+
+La cuota del empleador comprende:
+
+Una cuota por contingencias comunes (no profesionales).
+
+Una cuota por contingencias profesionales (accidente de trabajo y enfermedad profesional).
+
+Una cuota por desempleo.
+
+Una cuota por Fondo de Garantía Salarial (FOGASA).
+
+Una cuota por Mecanismo de Equidad Intergeneracional (MEI).
+
+La cuota del empleado comprende:
+
+Una cuota por contingencias comunes (no profesionales).
+
+Una cuota por desempleo.
+
+Una cuota por Mecanismo de Equidad Intergeneracional (MEI).
+
+La cuota total calculada puede resultar de menor cuantía por aplicación de beneficios en la cotización. Puede consultarlos en “Voy a contratar a una persona para trabajar en mi casa, ¿me puedo aplicar algún beneficio en las cuotas a la Seguridad Social?, ¿qué requisitos tengo que cumplir?”.
+
+[[ID:post-057f8422-ede1-415b-a650-6a4f9052f4a3]]
+
+[[ID:IDControl057f8422-ede1-415b-a650-6a4f9052f4a3]]
+
+				Soy empleador y tengo contratada a una persona menos de 60 horas mensuales que realiza el pago de la cuota, ¿tengo que hacer algo a partir de enero 2023?
+
+[[ID:IDregion057f8422-ede1-415b-a650-6a4f9052f4a3]]
+
+Desde el 1 de enero de 2023 desaparece la posibilidad de que la persona trabajadora que presta servicios en el hogar durante menos de 60 horas mensuales asuma las obligaciones de darse de alta en la seguridad social e ingresar las cuotas.
+
+[[ID:post-c63039e1-6274-45a3-adf4-d5dbcb206121]]
+
+[[ID:IDControlc63039e1-6274-45a3-adf4-d5dbcb206121]]
+
+				Si soy familia numerosa y contrato a un empleado de hogar, ¿tengo algún tipo de beneficio?
+
+[[ID:IDregionc63039e1-6274-45a3-adf4-d5dbcb206121]]
+
+Podrás solicitar un beneficio del 45% por la contratación de empleados de hogar para familias numerosas que se aplica a la cuota de contingencias comunes del empleador.
+Este beneficio no se sumará al descuento general del 20%, pero sí a las deducciones del 80% en la cotización por desempleo y FOGASA.
+Si tienes más de una persona contratada en el hogar, este beneficio solo se aplicará por una de ellas.
+
+[[ID:post-8980c01a-5811-440e-ac35-0dd39a376803]]
+
+[[ID:IDControl8980c01a-5811-440e-ac35-0dd39a376803]]
+
+				¿Qué ocurre si no pago las cuotas por la persona contratada en el hogar familiar?
+
+[[ID:IDregion8980c01a-5811-440e-ac35-0dd39a376803]]
+
+En caso de incumplir la obligación de cotizar, la Tesorería General de la Seguridad Social reclamará el pago de las cuotas debidas desde el inicio de la actividad con los correspondientes recargos.
+
+Además, esto supone una falta grave que puede sancionarse por la Inspección de Trabajo y Seguridad Social. El importe de la multa oscila entre 3.750 y 12.000 euros.
+
+[[ID:post-98082ece-5edd-4db9-a9ae-98937be00328]]
+
+[[ID:IDControl98082ece-5edd-4db9-a9ae-98937be00328]]
+
+				¿Cuándo me cargarán la primera cuota?
+
+[[ID:IDregion98082ece-5edd-4db9-a9ae-98937be00328]]
+
+Las cuotas de empleo de hogar se cargan el mes siguiente de haber prestado el servicio. Es decir, si el empleado ha comenzado a trabajar en julio, la cuota correspondiente se carga en el mes de agosto. 
+
+En tu Área personal podrás consultar la cuota y cuándo se realizará el cargo en tu cuenta.
+
+[[ID:post-a27467c7-f8a6-44b2-a58e-a344bfc323ad]]
+
+[[ID:IDControla27467c7-f8a6-44b2-a58e-a344bfc323ad]]
+
+				¿Qué es la nómina? ¿Es necesaria?
+
+[[ID:IDregiona27467c7-f8a6-44b2-a58e-a344bfc323ad]]
+
+La nómina es un recibo que se le entrega al trabajador y que indica la cantidad que se le paga por los servicios prestados.
+
+Recuerda prestar atención al Salario Mínimo Interprofesional.
+
+[[ID:post-a2fb1875-b1e9-4192-b64d-e00db58129ae]]
+
+3. Derechos y obligaciones
+
+[[ID:post-6e453e6d-f556-442b-a3f0-e82edefced63]]
+
+[[ID:IDControl6e453e6d-f556-442b-a3f0-e82edefced63]]
+
+				¿Qué prestaciones cubre el alta en el empleo del hogar y cómo puedo solicitarlas?
+
+[[ID:IDregion6e453e6d-f556-442b-a3f0-e82edefced63]]
+
+Estas son las situaciones protegidas por la Seguridad Social para empleados de hogar que pueden dar lugar a prestaciones, siempre que se cumplan los requisitos establecidos legalmente:
+
+    Baja médica por enfermedad común o accidente no laboral (Incapacidad temporal derivada de contingencias comunes).
+
+Baja médica por enfermedad profesional o accidente laboral (Incapacidad temporal derivada de contingencias profesionales).
+
+Nacimiento y cuidado de menor.
+
+Riesgo durante el embarazo y riesgo durante la lactancia.
+
+Incapacidad permanente.
+
+Prestaciones familiares.
+
+Jubilación.
+
+Muerte y supervivencia (viudedad y orfandad).
+
+Cuidados de menores por cáncer u otra enfermedad grave.
+
+Desempleo.
+
+Si necesitas más información sobre alguna de estas prestaciones, puedes consultar a la entidad que las gestiona, el Instituto Nacional de la Seguridad Social o accede a Acción protectora - prestaciones.
+
+Para información relativa al desempleo, la entidad competente es el Servicio Público de Empleo Estatal.
+
+[[ID:post-1d86c467-51ae-47d3-a9f4-39c1c2ca01bc]]
+
+[[ID:IDControl1d86c467-51ae-47d3-a9f4-39c1c2ca01bc]]
+
+				¿Debo seguir pagando a la persona empleada si se pone enferma y tiene una baja prolongada?
+
+[[ID:IDregion1d86c467-51ae-47d3-a9f4-39c1c2ca01bc]]
+
+Si la baja se debe a una enfermedad común o a un accidente no laboral, el trabajador no recibirá ninguna prestación hasta el cuarto día de la baja médica. Entre el cuarto y el octavo día de baja, ambos inclusive, tendrá que pagarla el empleador. El noveno y los sucesivos los pagará la Seguridad Social, pero el trabajador deberá hacer la solicitud del pago al Instituto Nacional de la Seguridad Social y aportar un certificado de su empleador. Si el empleador ha elegido una Mutua colaboradora, la mutua se hará cargo de la cobertura.
+
+Si la baja se debe a una enfermedad profesional o a un accidente laboral, la asistencia y la prestación correspondiente será abonada por la Mutua colaboradora seleccionada. En estos casos la prestación económica por incapacidad temporal se abonará desde el día siguiente al inicio de la baja médica.
+
+El importe de la prestación dependerá de la base de cotización, así como del motivo de la baja.
+
+Ten en cuenta que, aunque la Seguridad Social o la Mutua abone una prestación, deberás seguir pagando la cuota de empleo de hogar mientras la persona empleada esté de baja médica.
+
+[[ID:post-786b8d56-c32c-4587-b2bf-e23a8974e512]]
+
+[[ID:IDControl786b8d56-c32c-4587-b2bf-e23a8974e512]]
+
+				Si la familia se va de vacaciones y la persona trabajadora se desplaza con ellos, ¿este tiempo cuenta como parte de sus vacaciones?
+
+[[ID:IDregion786b8d56-c32c-4587-b2bf-e23a8974e512]]
+
+No. Si la persona trabajadora acompaña a la familia y se dedica a realizar tareas domésticas no se considerará parte de sus vacaciones ya que no supone un tiempo de descanso.
+
+[[ID:post-a8022f8b-8155-41dc-93d8-f54c1a89492b]]
+
+[[ID:IDControla8022f8b-8155-41dc-93d8-f54c1a89492b]]
+
+				Mi empleada estará de vacaciones un mes, ¿tengo que seguir pagando el sueldo y la cuota de Seguridad Social?
+
+[[ID:IDregiona8022f8b-8155-41dc-93d8-f54c1a89492b]]
+
+Sí, toda persona empleada tiene derecho a las vacaciones pagadas. Las vacaciones deben ser disfrutadas dentro de cada año natural, entre el 1 de enero y el 31 de diciembre. La persona empleada tiene derecho a disfrutar de 30 días naturales de vacaciones o 2,5 días por mes de trabajo. Además, tendrás que pagar la cuota correspondiente a la Seguridad Social. 
+
+Puedes pagarle el salario correspondiente durante el mes de vacaciones o dividir su importe y sumar la parte proporcional al salario que recibe el resto de meses.
+
+Si se pone fin a la relación laboral y la persona empleada de hogar no ha disfrutado de sus vacaciones durante la misma, cuando se comunique la baja a la Seguridad Social, se deben declarar los días de vacaciones no disfrutados.
+
+[[ID:post-d2b84110-0c1b-40d6-811d-53c586a30d79]]
+
+[[ID:IDControld2b84110-0c1b-40d6-811d-53c586a30d79]]
+
+				Trabajo en varias casas y no sé cuánto están pagando por mí a la Seguridad Social.
+
+[[ID:IDregiond2b84110-0c1b-40d6-811d-53c586a30d79]]
+
+Si entras en tu área personal, encontrarás el nombre de cada uno de los empleadores con los que trabajas y la cuota que corresponde por cada uno de tus trabajos. En el detalle encontrarás qué parte de la cuota está a cargo del empleador, qué parte está a tu cargo como trabajador y la base de cotización a la que corresponde esta cuota.
+
+[[ID:post-2d870fce-0288-463e-b5d2-21641d2abcef]]
+
+[[ID:IDControl2d870fce-0288-463e-b5d2-21641d2abcef]]
+
+				¿Y para qué sirve el FOGASA?
+
+[[ID:IDregion2d870fce-0288-463e-b5d2-21641d2abcef]]
+
+El Fondo Garantía Salarial (FOGASA) garantiza a los trabajadores la percepción de salarios, indemnizaciones por despido o extinción de la relación laboral que están pendientes de pago, una vez finalizado el contrato.
+
+[[ID:post-2f228ee0-8ebf-4873-a9dd-55eae33a8f16]]
+
+4. Bajas y modificaciones de datos
+
+[[ID:post-3b5d0716-9ff7-464c-b264-30c85a7627b9]]
+
+[[ID:IDControl3b5d0716-9ff7-464c-b264-30c85a7627b9]]
+
+				Si la persona trabajadora deja de trabajar en casa, ¿cómo se tramita la baja en la Seguridad Social?
+
+[[ID:IDregion3b5d0716-9ff7-464c-b264-30c85a7627b9]]
+
+Si el empleador tramitó el alta en la Seguridad Social deberá solicitar la baja en empleo de hogar al finalizar la actividad desde Baja en empleo de hogar.
+
+Desde el 1 de enero de 2023, únicamente el empleador podrá tramitar la baja de la persona trabajadora .
+
+[[ID:post-462421c8-5d8b-4096-b073-42fcf319372b]]
+
+[[ID:IDControl462421c8-5d8b-4096-b073-42fcf319372b]]
+
+				¿Cuáles son los plazos para solicitar la baja?
+
+[[ID:IDregion462421c8-5d8b-4096-b073-42fcf319372b]]
+
+La baja puede solicitarse con una antelación máxima de hasta 60 días a la fecha de finalización de la actividad y hasta 6 días naturales después.
+
+Si han pasado más de 6 días, podrás tramitar la baja desde Baja en empleo de hogar hasta 30 días después. Al haber comunicado la baja fuera de plazo, a efectos de cotización, se considerará que la fecha fin de actividad será la fecha de la solicitud.
+
+[[ID:post-6db1fa3f-e0b0-4a56-ad8f-ad58ae2e2c8f]]
+
+[[ID:IDControl6db1fa3f-e0b0-4a56-ad8f-ad58ae2e2c8f]]
+
+				¿Qué motivos dan lugar a la solicitud de la baja en empleo de hogar? ¿Tengo que indemnizar al trabajador?
+
+[[ID:IDregion6db1fa3f-e0b0-4a56-ad8f-ad58ae2e2c8f]]
+
+Al dar de baja a una persona empleada tienes que indicar cuál es la causa de la baja. Los motivos de la baja pueden ser los siguientes:
+
+Dimisión o baja voluntaria del trabajador. Al tratarse de una baja voluntaria el empleador no tendrá que indemnizar a la persona trabajadora.
+
+Baja no voluntaria por otras causas. Cuando la baja de la persona empleada de hogar deriva de alguna de las siguientes causas:
+
+Disminución de los ingresos de la unidad familiar o incremento de sus gastos por circunstancia sobrevenida.
+
+ Modificación sustancial de las necesidades de la unidad familiar que justifican que se prescinda de la persona trabajadora del hogar.
+
+El comportamiento de la persona trabajadora que fundamente de manera razonable y proporcionada la pérdida de confianza de la persona empleadora.
+
+Baja despido disciplinario individual. Si la baja es consecuencia de un incumplimiento grave y culpable de sus obligaciones y así queda justificado, como pudieran ser pequeño robo, ausencia injustificada y otros, no tendrá derecho a indemnización.
+
+Baja por no superar el periodo de prueba. El periodo de prueba al inicio de un nuevo contrato existe para que el empleador confirme que el trabajo realizado es como desea y el trabajador compruebe si es lo que esperaba. En este periodo de prueba tanto empleador como trabajador pueden finalizar su contrato sin necesidad de justificar motivo ni pagar indemnización.
+
+Baja fin contrato temporal o duración determinada. Por agotamiento del plazo establecido entre empleador y trabajador. Si el contrato es por causa de sustitución, no tendrá derecho a indemnización.
+
+Baja por pase a situación de pensionista. Esta causa se refiere a la adquisición de la condición de pensionista por jubilación o incapacidad permanente del trabajador. Al tratarse de una baja voluntaria, el empleador no tendrá que indemnizar a la persona trabajadora.
+
+Baja por fallecimiento. Esta causa se refiere al fallecimiento del trabajador. El empleador no tendrá que indemnizar por la persona trabajadora.
+
+Baja por pase a inactividad fijos discontinuos. Por finalizar el periodo para el que se contrató a la persona empleada como fijo discontinuo.
+
+Si la baja es por motivos injustificados o por fin de contrato temporal, la persona trabajadora tendrá derecho a indemnización. Si el motivo es justificado o el contrato temporal es por causa de sustitución, no tendrá derecho a indemnización.
+
+Si fallece la persona empleadora, la persona trabajadora tendrá derecho al abono de una cantidad equivalente a un mes de salario con independencia de su antigüedad en el puesto.
+
+El fallecimiento de la persona empleadora se tendrá que comunicar a través del servicio Baja de empleo de hogar, en el apartado"Si ha fallecido la persona empleadora".
+
+Además, al dar de baja a una persona trabajadora, cualquiera que sea la causa de la baja e independientemente de la indemnización, tendrá derecho a un finiquito. Consulta más información sobre la finalización del contrato de trabajo en la guía laboral del Ministerio de Trabajo y Economía Social.
+
+[[ID:post-74bbde6d-16f2-4115-89b8-7ddd50c8a81f]]
+
+[[ID:IDControl74bbde6d-16f2-4115-89b8-7ddd50c8a81f]]
+
+				Me han despedido, ¿tengo derecho a una prestación por desempleo?
+
+[[ID:IDregion74bbde6d-16f2-4115-89b8-7ddd50c8a81f]]
+
+Desde el 1 de octubre de 2022, el Sistema Especial para Empleados de Hogar incluye la cotización por desempleo. Por tanto, las personas trabajadoras de hogar sí tienen derecho a esta prestación, cuando cumplan los requisitos establecidos. Para más información sobre la prestación por desempleo, puedes consultar la página web del Servicio Público de Empleo Estatal.
+
+[[ID:post-5d08c94b-ad2e-4f71-b796-c6d0a35534cf]]
+
+[[ID:IDControl5d08c94b-ad2e-4f71-b796-c6d0a35534cf]]
+
+				Si modifico mi cuenta bancaria, ¿cuándo me pasarán las cuotas a mi nueva cuenta?
+
+[[ID:IDregion5d08c94b-ad2e-4f71-b796-c6d0a35534cf]]
+
+Depende del día del mes en el que modifiques la cuenta:
+
+Si el cambio lo haces entre el día 1 y 10 del mes, la cuota de hogar se cargará en la nueva cuenta a finales de mes.
+
+Si la modificas a partir del día 11, el cambio de cuenta tendrá efecto el mes siguiente.
+
+Ten en cuenta que, si en una misma provincia tienes varios trabajadores dados de alta como empleados de hogar, el cambio de cuenta afectará al pago de todas esas cuotas de hogar.
+
+[[ID:post-42275ee3-660c-485d-bd84-9a1aecd2f855]]
+
+[[ID:IDControl42275ee3-660c-485d-bd84-9a1aecd2f855]]
+
+				Si acordamos un nuevo salario o jornada, ¿cuándo debo comunicarlo?
+
+[[ID:IDregion42275ee3-660c-485d-bd84-9a1aecd2f855]]
+
+Debes comunicar a la Seguridad Social cualquier modificación de la jornada, o el salario en los 6 días naturales siguientes a aquél en que el cambio se produzca. Si han pasado más de 6 días, podrás comunicar fuera de plazo la variación a través de Modificación de datos laborales en empleo de hogar.
+
+[[ID:post-4db6ee4f-45e2-43b2-86ae-4cffefbb2a50]]
+
+[[ID:IDControl4db6ee4f-45e2-43b2-86ae-4cffefbb2a50]]
+
+				Tengo acordado con el trabajador el abono del importe del Salario Mínimo Interprofesional, ¿qué tengo que hacer si cambia?
+
+[[ID:IDregion4db6ee4f-45e2-43b2-86ae-4cffefbb2a50]]
+
+Deberás ajustar el salario de acuerdo al nuevo importe del Salario Mínimo Interprofesional y comunicarlo a la Seguridad Social a través de Modificación de datos laborales en empleo de hogar. Ten en cuenta que el SMI se revisa anualmente. 
+
+[[ID:encuestaPost]]
+
+[[ID:ratings-layer]]
+
+¿Te ha parecido útil esta página?
+
+[[ID:Control_Encuesta]]
+
+                        Valorar
+
+[[ID:Control_Cierre_Encuesta]]
+
+                            Ocultar Encuesta
+
+[[ID:Encuesta]]
+
+[[ID:starsform]]
+
+                        Puntúa la claridad y utilidad de la información del 1 al 5 *
+
+[[ID:radio1]]
+
+                                Una estrella
+
+[[ID:radio2]]
+
+                             Dos estrellas
+                            
+[[ID:radio3]]
+
+                            Tres estrellas 
+                            
+[[ID:radio4]]
+
+                            Cuatro estrellas 
+                            
+[[ID:radio5]]
+
+                            Cinco estrellas 
+
+                        ¿Has encontrado lo que buscabas? *
+
+[[ID:tramite1-si]]
+
+                                    Sí
+
+[[ID:tramite2-no]]
+
+                                    No
+
+[[ID:tramite3-no]]
+
+                                    No estoy seguro
+
+                        * Campos obligatorios    
+
+[[ID:enviarcampos]]
+
+                            Enviar valoración
+
+[[ID:ratings__close]]
+
+                            Cerrar
+
+[[ID:gratitude-layer]]
+
+Muchas gracias por ayudarnos a mejorar
+
+[[ID:tesoreriaServLinks]]
+
+Servicios de la Tesorería
+
+Vida laboral e informes
+
+Altas, bajas y modificaciones
+
+Consulta de pagos y deudas
+
+Datos personales
+
+[[ID:especialFooterLinks]]
+
+Especial sobre
+
+Trabajo Autónomo
+
+Empleo de hogar
+
+Convenios especiales
+
+Artistas
+
+Alumnos en prácticas
+
+Cl@ve
+
+Gestionar tus trámites nunca fue tan fácil
+
+Regularización anual de cuotas de Trabajo Autónomo
+
+Ayuda
+
+Contacto
+
+Mapa web
+
+Aviso legal
+
+Accesibilidad
+
+Política de Cookies
+
+                Copyright © Seguridad Social 
+[[ID:yearCopyright]]
+. Todos los derechos reservados
+
+[[ID:wpthemeComplementaryContent]]
+
+[[ID:wpthemeComplementaryContentText]]
+Contenido complementario 
+
+[[ID:uuidAreaSitio]]
+9eaf117e-e582-4287-9ff0-10a41fa58b4a
+	
+[[ID:localizacion]]
+
+[[ID:device-characteristics]]
+
+[[ID:idSesion]]
+0zKMuIpWy2wUBsSWMegGa0n
+	
+[[ID:nivelCredencial]]
+0
+
+

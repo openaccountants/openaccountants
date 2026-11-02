@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+    <meta name="site" content="Sede"/>
+	<link href="/static_files/common/css/aeat.07.css" rel="stylesheet" type="text/css">
+<meta title="AEATviewport" content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Agencia Tributaria: Por inversión en la adquisición de acciones o de participaciones sociales de nuevas entidades o d...</title><meta name="ObjectId" content="abbee6181b839910VgnVCM100000dc381e0aRCRD"/><meta name="keyword" content="Ayuda, Manuales, vídeos y folletos, Manuales prácticos"/>
+<meta name="detalle" content="manuales"/> 
+</head>
+<body>
+	<div id="body" class="s_Sede p_estandar t_manuales">
+		<header id="AEAT_header" class="header_aeat d-print-none d-app-none" >
+    <!-- CABECERA -->
+   	<!--googleoff: index-->
+	<a class="focus-only" href="#acc-main">Saltar al contenido principal</a>
+	<div class="header-sup_aeat w-100">
+	  <div class="container">	  		
+		<div class="row">
+		<!-- CABECERA IZQUIERDA-->
+	   	<div id="topIzquierda" class="pl-0"><nav class="header-contLogos_aeat"><a href="/Sede/inicio.html" title="Página de inicio" class="header-logosPrincipales_aeat"><span class="logoGobierno Sede">Logotipo del Gobierno de España</span><span class="logoAEAT logoSite logoSede ml-2 overflow-hidden">Logotipo Organismo</span></a></nav></div><!-- CABECERA IZQUIERDA FIN -->
+</div>
+	  </div>	
+	</div>
+	<!--googleon: index-->
+	<!-- CABECERA FIN -->
+    <!-- MENU -->
+   	<!--googleoff: index--><div class="w-100 bg-primary p-1"><div class="container"><div class="row justify-content-between align-items-center"><button class="header-btnMovil_aeat text-white d-lg-none col-2 btn btn-link" type="button" id="menuPrincipal"><i class="aeat-ico fa-ico-menu ico-size-2 w-100" title="Abrir menú móvil" aria-hidden="true" role="presentation"></i><span class="sr-only">Menú móvil</span></button><nav id="aeat_menuPrincipal" class="navbar-dark navbar navbar-expand-lg p-0 col-12 col-xl-8 col-lg-9 d-none d-lg-flex" aria-label="Menú principal"><!--clase para movil: header-navMovil_aeat--><ul class="navbar-nav"><li class="nav-item"><a href="#" class="py-3 px-4 nav-link dropdown-toggle invisible" role="button"><span>Menu</span></a></li></ul></nav></div></div></div><!--googleon: index-->
+<!-- MENU FIN -->
+</header><nav aria-label="Migas navegación" class="js-nav-principal d-print-none d-app-none">
+	<ol class="breadcrumb container bg-transparent px-md-4 px-3">           
+<li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='b3552c121d27c610VgnVCM100000dc381e0aRCRD' href='/Sede/inicio.html'>Inicio</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='0f1ed8601c4bd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda.html'>Ayuda</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='9fd958b46ecfd610VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos.html'>Manuales, vídeos y folletos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='6733e2521f8dd610VgnVCM100000dc381e0aRCRD' href='/Sede/manuales-practicos.html'>Manuales prácticos</a></li><li class="d-none d-md-block breadcrumb-item"><a data-aeat-id='a888add306739910VgnVCM100000dc381e0aRCRD' href='/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html'>Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a></li><li class="breadcrumb-item breadcrumb-item__volver"><a data-aeat-id='bb2ee6181b839910VgnVCM100000dc381e0aRCRD' href='/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-illes-balears.html'><i class="aeat-ico fa-ico-chevron-left ico-size-mini mr-2 d-md-none" aria-hidden="true" role="presentation"></i>Comunidad Autónoma de las Illes Balears</a></li>
+</ol>
+</nav><div class="container container-text js-container container-print">
+			<div class="row">
+
+				<button class="d-lg-none btn btn-sm btn-secondary cursor-pointer pb-1 position-fixed left-0 bottom-0 z-index-1 m-3 shadow-sm d-print-none" data-toggle="modal" data-target="#indice-modal">
+					<i class="aeat-ico fa-ico-indice-sm ico-size-1 mr-2" aria-hidden="true" role="presentation"></i>
+		        	Índice
+		      	</button>
+<a id="manual-initial-page" href="/Sede/Ayuda/25Manual/100/deducciones-autonomicas.html" class="d-none">Manual práctico de Renta 2025. Parte 2. Deducciones autonómicas</a>
+<div class="d-lg-block col-12 col-lg-5 border-lg-right js-aeat-modal-lg d-print-none" id="indice-modal">
+</div>
+<main class="col-12 col-lg-7 my-3 my-lg-0 col-print-12 print-m-0 print-p-0" id="acc-main">
+					<h1 id="js-nombre-canal" class="font-weight-bold mb-3">Por inversión en la adquisición de acciones o de participaciones sociales de nuevas entidades o de reciente creación</h1><p><strong>Normativa: <abbr title="Art&iacute;culo">Art.</abbr> 7 Texto Refundido de las disposiciones legales de la Comunidad Aut&oacute;noma de las Illes Balears en materia de tributos cedidos por el Estado, aprobado por Decreto Legislativo 1/2014, de 6 de junio</strong></p>
+<h2>Cuant&iacute;as y l&iacute;mite m&aacute;ximo de la deducci&oacute;n</h2>
+<h3>1. Con car&aacute;cter general</h3>
+<ul>
+<li>
+<p>El <strong>30 por 100 de las cantidades invertidas</strong> durante el ejercicio en la adquisici&oacute;n de acciones, participaciones sociales o de aportaciones obligatorias o voluntarias efectuadas por los socios como consecuencia de acuerdos de constituci&oacute;n de sociedades o de ampliaci&oacute;n de capital en entidades que tengan naturaleza de Sociedad An&oacute;nima, Sociedad Limitada, Sociedad An&oacute;nima Laboral, Sociedad Limitada Laboral o Sociedad Cooperativa.</p>
+</li>
+<li>
+<p><strong>L&iacute;mite m&aacute;ximo:&nbsp;&nbsp;</strong></p>
+<ol type="a">
+<li>
+<p>En el caso de<strong> declaraci&oacute;n individual: 6.000 euros anuales</strong>.</p>
+</li>
+<li>
+<p>En el caso de <strong>declaraci&oacute;n conjunta</strong>:&nbsp;<strong>6.000&nbsp;euros</strong> <strong>por cada contribuyente</strong> de la unidad familiar que haya efectuado la inversi&oacute;n.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Esta deducci&oacute;n se aplicar&aacute; en el ejercicio en el que se materialice la inversi&oacute;n <strong>y en los dos siguientes</strong> con el <strong>l&iacute;mite de 6.000 euros</strong> anuales.</p>
+<p>Una vez materializada la inversi&oacute;n, se genera el derecho a la deducci&oacute;n del 30 por 100 de la cantidad invertida, con el l&iacute;mite m&aacute;ximo de 6.000 euros anuales, en el propio ejercicio en que se realice la inversi&oacute;n y en los dos siguientes.</p>
+<p>En caso de que se tenga derecho a la aplicaci&oacute;n de la deducci&oacute;n por inversiones realizadas en ejercicios distintos, se aplicar&aacute; la misma siguiendo el orden de antig&uuml;edad. Para las inversiones realizadas en 2023, 2024 y 2025 el l&iacute;mite &uacute;nico ser&aacute; de 6.000 euros.</p>
+<p>La deducci&oacute;n total aplicada <strong>no puede exceder de 6.000 euros por contribuyente</strong>.</p>
+</li>
+</ul>
+<h3>2. Por inversiones que se lleven a cabo en sociedades participadas por centros de investigaci&oacute;n o universidades</h3>
+<ul>
+<li>
+<p>El <strong>50 por 100 de las cantidades invertidas</strong> en sociedades participadas por centros de investigaci&oacute;n o universidades con un <strong>importe m&aacute;ximo de 12.000 euros</strong> <strong>por ejercicio y por contribuyente.</strong></p>
+</li>
+<li>
+<p>Este l&iacute;mite <strong>no es independiente</strong> del l&iacute;mite general de 6.000 euros. Por eso, en el caso de que un contribuyente realice inversiones en sociedades participadas por centros de investigaci&oacute;n o universidades y otras inversiones en la adquisici&oacute;n de acciones o de participaciones sociales de nuevas entidades o de reciente creaci&oacute;n el l&iacute;mite m&aacute;ximo de deducci&oacute;n ser&aacute; de 12.000 euros.</p>
+</li>
+</ul>
+<h2>Requisitos y otras condiciones para la aplicaci&oacute;n de la deducci&oacute;n</h2>
+<ol type="a">
+<li>
+<p>La participaci&oacute;n del contribuyente, computada junto con las del c&oacute;nyuge o personas unidas por raz&oacute;n de parentesco, en l&iacute;nea directa o colateral, por consanguinidad o afinidad hasta el tercer grado incluido, <strong>no puede ser superior al 40 por 100 del capital social</strong> de la sociedad objeto de la inversi&oacute;n o de los derechos de voto en la sociedad.</p>
+</li>
+<li>
+<p>La entidad en la que debe materializarse la inversi&oacute;n debe cumplir los siguientes <strong>requisitos</strong>:</p>
+<ol>
+<li>
+<p>Deber&aacute; tener naturaleza de <strong>Sociedad An&oacute;nima, Sociedad Limitada, Sociedad An&oacute;nima Laboral o Sociedad Limitada Laboral o Sociedad Cooperativa.</strong></p>
+</li>
+<li>
+<p>Tener su <strong>domicilio social y fiscal en las Illes Balears</strong>.</p>
+</li>
+<li>
+<p><strong>Desarrollar una actividad econ&oacute;mica, sin que pueda tener por actividad principal la gesti&oacute;n de un patrimonio mobiliario o inmobiliario</strong>, de acuerdo con lo dispuesto en el art&iacute;culo 4.8.Dos.a) de la Ley 19/1991, de 6 de junio, del Impuesto sobre el Patrimonio, <strong>ni dedicarse a la actividad de arrendamiento de inmuebles.</strong></p>
+</li>
+<li>
+<p>Deber&aacute;, como m&iacute;nimo, <strong>ocupar a una persona</strong> domiciliada fiscalmente en las Illes Balears con un contrato laboral a jornada completa, dada de alta en el r&eacute;gimen general de la Seguridad Social y que no sea socio ni part&iacute;cipe de la sociedad.</p>
+</li>
+<li>
+<p>En caso de que la inversi&oacute;n se haya realizado mediante una ampliaci&oacute;n de capital, la sociedad <strong>deber&aacute; haberse constituido en los dos a&ntilde;os anteriores a la fecha de esta ampliaci&oacute;n a no ser que se trate de una empresa innovadora en materia de investigaci&oacute;n y desarrollo</strong> que, de acuerdo con lo establecido en la Orden <abbr title="Ministerio de Econom&iacute;a y Competitividad">ECC</abbr>/1087/2015, de 5 de junio, por la que se regula la obtenci&oacute;n del sello de peque&ntilde;a y mediana empresa innovadora y se crea y regula el Registro de la Peque&ntilde;a y Mediana Empresa Innovadora, tenga vigente este sello y est&eacute; inscrita en dicho registro.</p>
+</li>
+<li>
+<p>Deber&aacute; <strong>mantener los puestos de trabajo</strong>. A tal efecto, se considerar&aacute; que cumple este requisito cuando se conserve la plantilla media total, en los t&eacute;rminos de personas por a&ntilde;o que regula la normativa laboral, calculada como prev&eacute; el art&iacute;culo 102 de la <abbr title="Ley del Impuesto sobre Sociedades">LIS</abbr>.</p>
+<p class="sangrado-izq letrita">Respecto a la <abbr title="Ley del Impuesto sobre Sociedades">LIS</abbr> v&eacute;ase la Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades.</p>
+</li>
+<li>
+<p>La <strong>cifra anual de negocios</strong> de la entidad <strong>no podr&aacute; superar el l&iacute;mite de 2.000.000 de euros</strong>, calculada como prev&eacute; el art&iacute;culo 101 de la <abbr title="Ley del Impuesto sobre Sociedades">LIS</abbr>.</p>
+</li>
+</ol>
+</li>
+<li>
+<p>El contribuyente podr&aacute; formar parte del consejo de administraci&oacute;n de la sociedad en la que se haya materializado la inversi&oacute;n, pero <strong>en ning&uacute;n caso podr&aacute; realizar funciones ejecutivas ni de direcci&oacute;n. Tampoco podr&aacute; mantener una relaci&oacute;n laboral</strong> con la entidad objeto de la inversi&oacute;n.</p>
+</li>
+<li>
+<p>Las operaciones en las que sea de aplicaci&oacute;n la deducci&oacute;n <strong>deber&aacute;n formalizarse en una escritura p&uacute;blica</strong>, en la que se especificar&aacute;n la identidad de los inversores y el importe de la inversi&oacute;n respectiva.</p>
+</li>
+<li>
+<p>Las participaciones adquiridas han de <strong>mantenerse en el patrimonio del contribuyente durante un per&iacute;odo m&iacute;nimo de cuatro a&ntilde;os</strong>.</p>
+</li>
+<li>
+<p>Los requisitos establecidos en los puntos 2, 3, 4, 6 y 7 de la letra b anterior y el l&iacute;mite m&aacute;ximo de participaci&oacute;n establecido en la letra a, as&iacute; como la prohibici&oacute;n contenida en la letra c, deber&aacute;n <strong>cumplirse durante un per&iacute;odo m&iacute;nimo de cuatro a&ntilde;os</strong> a contar desde la fecha de efectividad del acuerdo de ampliaci&oacute;n de capital o de constituci&oacute;n de la entidad que origine el derecho a la deducci&oacute;n.</p>
+</li>
+</ol>
+<h2><strong>P&eacute;rdida del derecho a la deducci&oacute;n practicada</strong></h2>
+<p>El incumplimiento de los requisitos y las condiciones establecidos en las letras a, c, e y f anteriores supone la p&eacute;rdida del beneficio fiscal, y el contribuyente debe incluir en la declaraci&oacute;n del <abbr title="Impuesto sobre la Renta de las Personas F&iacute;sicas">IRPF</abbr> correspondiente al ejercicio en el que se ha producido el incumplimiento la parte del impuesto que se ha dejado de pagar como consecuencia de la deducci&oacute;n practicada, junto con los intereses de demora devengados.</p>
+<p class="border border-primary rounded-sm border-size-1 p-3"><em><strong><span class="verde">Importante</span>:</strong> una vez introducida por los contribuyentes con derecho a la deducci&oacute;n la informaci&oacute;n necesaria para su c&aacute;lculo, ser&aacute; autom&aacute;ticamente trasladada al apartado "Informaci&oacute;n adicional a la deducci&oacute;n auton&oacute;mica por inversi&oacute;n en la adquisici&oacute;n de acciones y participaciones sociales en entidades nuevas o de reciente creaci&oacute;n de Andaluc&iacute;a, Arag&oacute;n, Principado de Asturias, Illes Balears, Canarias, Cantabria, Castilla y Le&oacute;n, Castilla-La Mancha, Catalu&ntilde;a, Extremadura, Galicia, Madrid, Murcia y Comunitat Valenciana" del anexo B.11 de la declaraci&oacute;n.</em></p><!--MODAL IMPRESIÓN--><div class="modal fade js-no-imprimir" id="htmlToPdfModal" tabindex="-1" role="dialog" aria-labelledby="htmlToPdfModalTitle" aria-hidden="true"><div class="modal-dialog" role="document"><form class="modal-content"><div class="modal-header"><p class="modal-title d-flex align-items-center" id="htmlToPdfModalTitle"><i class="aeat-ico fa-ico-pdf ico-size-2 mr-2 text-primary" role="presentation" aria-hidden="true"></i>Generar PDF</p><button type="button" class="close cursor-pointer" data-dismiss="modal" aria-label="Close"><i class="aeat-ico fa-ico-cerrar-sm ico-size-2" role="presentation" aria-hidden="true"></i><span class="sr-only">Cerrar</span></button></div><div class="modal-body"><p>La generación del PDF puede tardar varios minutos dependiendo de la cantidad de información.</p><p>Seleccione la información que desee incluir en el PDF:</p><ul id='type-pdf-selector' class='list-unstyled pl-3 js-aeat-group-switch'><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Apartado' value='Apartado' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Apartado'>Página actual</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-SubApartados' value='SubApartados' name="type-pdf-selector"><label class='custom-control-label' for='pdf-SubApartados'>Apartado actual y subapartados</label></div></li><li class='mb-2'><div class='custom-control custom-switch'><input type='radio' class='custom-control-input' id='pdf-Todo' value='Todo' name="type-pdf-selector"><label class='custom-control-label' for='pdf-Todo'>Todo el documento</label></div></li></ul><p>Puede cancelar la generación del PDF en cualquier momento.</p></div><div class='modal-footer'><button type='button' class='btn btn-secondary' data-dismiss='modal'>Cancelar</button><button id='btn-continue-to-pdf' type='button' class='btn btn-primary' disabled>Continuar</button></div></form></div></div><!-- FIN MODAL IMPRESIÓN --></main>
+</div>
+   		</div> 
+  		<!--googleoff: index-->
+  		<footer class="bg-primary d-print-none d-app-none d-inline-block w-100" >
+<noscript><div class="container py-3"><div class="row"><a class="text-white"   href="https://sede.agenciatributaria.gob.es/Sede/condiciones-uso-sede-electronica/accesibilidad/declaracion-accesibilidad.html">Accesibilidad</a></div></div></noscript><div id="js-pie-fecha-social" class="container pb-3"><div class="row"><div id="last-update" class="col mb-2"><p class="small text-center text-white mb-0">Página actualizada: <time datetime="2026-03-17">17/marzo/2026</time></p></div></div></div></footer><!--googleon: index--> 
+	</div>
+	<div class="d-none">
+   <span class="js-responsive d-xs-block"></span>
+   <span class="js-responsive d-sm-block"></span>
+   <span class="js-responsive d-md-block"></span>
+   <span class="js-responsive d-lg-block"></span>
+   <span class="js-responsive d-xl-block"></span>
+   <span class="js-responsive d-xxl-block"></span>
+   <span class="js-responsive d-xxxl-block"></span>
+ </div>
+<link href="/static_files/common/css/aeat.07.print.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" charset="UTF-8" src="/static_files/common/script/aeat.07.js"></script>
+</body>
+</html>

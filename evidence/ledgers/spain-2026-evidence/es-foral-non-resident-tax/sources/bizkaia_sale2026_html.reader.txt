@@ -1,0 +1,237 @@
+
+
+
+
+
+
+
+	
+	
+		  - Bizkaia.Eus
+	
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+[[ID:contenedor]]
+ 
+  
+
+
+
+
+
+
+    
+  
+
+	
+[[ID:iniciocontenido]]
+
+    
+
+ 
+
+
+
+[[ID:contenido_editado]]
+
+  
+
+No residentes
+
+Tributación de las rentas más comunes
+
+Ganancias patrimoniales
+
+
+
+
+
+ www.bizkaia.eus/guregida
+
+
+
+
+
+
+
+
+
+Preguntas frecuentes Nº Identificación: 900007014
+
+
+
+
+ Un residente en Francia transmite un inmueble situado en Bilbao el 30 de septiembre de 2026 por importe de 400.000 euros (el adquirente ingresa una retención del 3%), adquirido el 15 de marzo de 2019 por importe equivalente a 200.000 euros, además abonó en concepto de notaría, registro etc... un importe de 3.000 euros. La plusvalía municipal abonada por el transmitente asciende a 1.500 euros. Determinación de la ganancia sometida a tributación y la cuota.
+
+
+
+	
+
+
+
+Respuesta válida aplicando la normativa vigente desde: 01/01/2026
+
+    
+Valor de transmisión: 398.500 (400.000-1.500)
+
+    
+Valor de adquisición: 203.000 (200.000 +3.000)
+
+    
+Valor de adquisición con coeficiente de corrección (1,249 es el coeficiente que se aplica en 2026 respecto al 2019): 203.000x1,249=253.547
+
+    
+Ganancia: 144.953 (398.500-253.547)
+
+    
+Tipo de gravamen:19%
+
+    
+Cuota íntegra:27.541,07
+
+
+
+El adquirente está obligado a retener e ingresar (modelo 211) dentro del mes siguiente a la transmisión del inmueble un 3% de la contraprestación acordada, por lo que la retención será: 400.000 x 3% = 12.000.
+
+
+Además el transmitente deberá presentar el modelo 210 teniendo en cuenta la retención efectuada e ingresada por el adquirente.
+
+
+    
+Retención 12.000
+
+    
+A ingresar: 15.541,07
+
+
+Respuesta válida aplicando la normativa vigente hasta: 31/12/2025
+
+Hasta el 31/12/2025 se aplicaba el cálculo en base a la legislación estatal y no se tenía en cuenta coeficiente de corrección monetaria
+
+
+    
+Valor de transmisión: 398.500 (400.000-1.500)
+
+    
+Valor de adquisición: 203.000 (200.000 +3.000)
+
+    
+Ganancia: 195.500 (398.500-203.000)
+
+    
+Tipo de gravamen:19%
+
+    
+Cuota íntegra:37.145
+
+
+
+El adquirente está obligado a retener e ingresar (modelo 211) dentro del mes siguiente a la transmisión del inmueble un 3% de la contraprestación acordada, por lo que la retención será: 400.000 x 3% = 12.000.
+
+
+Además el transmitente deberá presentar el modelo 210 teniendo en cuenta la retención efectuada e ingresada por el adquirente.
+
+
+    
+Retención 12.000
+
+    
+A ingresar: 25.145
+
+
+
+ 
+
+
+
+
+
+
+
+Nota
+
+
+Esta Pregunta-Respuesta carece de efectos vinculantes para la Hacienda Foral de Bizkaia, teniendo el carácter de mera información.
+
+
+
+
+
+Volver
+   
+   
+            
+[[ID:utilidades]]
+
+						
+				
+              
+ enviar por e-mail
+
+              
+
+
+
+
+
+
+ 				
+				
+
+			
+		
+
+
+		
+
+	 
+	
+
+	
+
+	
+	 
+
+[[ID:estadisticas]]
+
+	 
+
+ 
+
+
+
+

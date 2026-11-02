@@ -1,0 +1,85 @@
+{
+  "status": "PASS WRITER DRAFT CHECKS ONLY; country incomplete and whole-country review pending",
+  "checked_on": "2026-10-30",
+  "checks": [
+    {
+      "slug": "md-corporate-income-tax",
+      "source_rows": 79,
+      "original_topic_units": 11,
+      "destinations_with_split_claims": 22,
+      "old_bytes": 4041,
+      "new_bytes": 26788,
+      "shorter_by_more_than_25pct": false,
+      "structure": "PASS9sections/2examples",
+      "protected_metadata_and_CTA": "UNCHANGED",
+      "source_hashes_and_quotes": "PASS",
+      "independent_review": "PENDING",
+      "ordinary_gaps": "REMAIN EXPLICIT"
+    },
+    {
+      "slug": "moldova-social-contributions",
+      "source_rows": 150,
+      "original_topic_units": 155,
+      "destinations_with_split_claims": 291,
+      "old_bytes": 37919,
+      "new_bytes": 42869,
+      "shorter_by_more_than_25pct": false,
+      "structure": "PASS9sections/2examples",
+      "protected_metadata_and_CTA": "UNCHANGED",
+      "source_hashes_and_quotes": "PASS",
+      "independent_review": "PENDING",
+      "ordinary_gaps": "REMAIN EXPLICIT"
+    },
+    {
+      "slug": "moldova-income-tax",
+      "source_rows": 350,
+      "original_topic_units": 192,
+      "destinations_with_split_claims": 418,
+      "old_bytes": 46135,
+      "new_bytes": 51149,
+      "shorter_by_more_than_25pct": false,
+      "structure": "PASS9sections/2examples",
+      "protected_metadata_and_CTA": "UNCHANGED",
+      "source_hashes_and_quotes": "PASS",
+      "independent_review": "PENDING",
+      "ordinary_gaps": "REMAIN EXPLICIT"
+    },
+    {
+      "slug": "moldova-payroll",
+      "source_rows": 196,
+      "original_topic_units": 144,
+      "destinations_with_split_claims": 394,
+      "old_bytes": 44386,
+      "new_bytes": 40394,
+      "shorter_by_more_than_25pct": false,
+      "structure": "PASS9sections/2examples",
+      "protected_metadata_and_CTA": "UNCHANGED",
+      "source_hashes_and_quotes": "PASS",
+      "independent_review": "PENDING",
+      "ordinary_gaps": "REMAIN EXPLICIT"
+    },
+    {
+      "slug": "moldova-vat",
+      "source_rows": 352,
+      "original_topic_units": 135,
+      "destinations_with_split_claims": 260,
+      "old_bytes": 13083,
+      "new_bytes": 43382,
+      "shorter_by_more_than_25pct": false,
+      "structure": "PASS9sections/2examples",
+      "protected_metadata_and_CTA": "UNCHANGED",
+      "source_hashes_and_quotes": "PASS",
+      "independent_review": "PENDING",
+      "ordinary_gaps": "REMAIN EXPLICIT"
+    }
+  ],
+  "original_country_topic_units": 745,
+  "original_topic_units_with_explicit_draft_destinations": 637,
+  "other_original_topic_units_still_pending": 108,
+  "publication": "NO NEW PUSH OR PR",
+  "source_transport_gaps": [
+    "Law489annex1DOCX shell/web403; not retrieved, remainingexplicit",
+    "SFS1315/1355 bodies unavailable after403/security verification; no publisheddaily-rate or historicdeferralclaim adopted",
+    "Browser PDF download not retried; selected statutory DOM observations retained instead"
+  ]
+}

@@ -1,0 +1,176 @@
+[
+  {
+    "unit": 1,
+    "old": "version: 1.1\n",
+    "new": "version: 1.2\n",
+    "disposition": "version"
+  },
+  {
+    "unit": 2,
+    "old": "Precise mixed-income/base-reduction attribution remains unconfirmed rather than assuming that all aid survives into liquidable base.",
+    "new": "The attributable-tax worksheet under The base supplies the separate general/savings, minimum-spillover and global-base-reduction calculation. Allocation of common employment expenses/reductions between wages and aid remains a precise numerator question; do not assume that gross aid survives unchanged into liquidable base.",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 3,
+    "old": "That attribution in mixed-income/minimum cases remains to confirm; do not substitute a guessed average or marginal rate",
+    "new": "Use the attributable-tax worksheet under The base for mixed general/savings income, minima and ordinary base reductions; preserve its precise signed-income allocation boundary",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 4,
+    "old": "The mixed-income/minimum attribution calculation remains to confirm; no guessed average rate is used.",
+    "new": "The attributable-tax worksheet under The base supplies the mixed-income/minimum and base-reduction cap calculation, with its precise signed-income boundary.",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 5,
+    "old": "The civil-emergency and thalidomide provisions use less explicit average-rate wording; the exact rate/base attribution and the treatment of old-year thalidomide corrections remain to confirm",
+    "new": "The attributable-tax worksheet under The base supplies the civil-emergency general-rate/base method and the distinct current war-aid formula. The newly enacted thalidomide article still needs direct clarification of combined versus regional-only general rate and, where applicable, its share of common employment expenses; old-year correction administration also remains to confirm",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 6,
+    "old": "the allocation of mixed income/minima to that tax ceiling remains to confirm.",
+    "new": "the mixed general/savings, minimum-spillover and base-reduction calculation is supplied in the attributable-tax worksheet under The base.",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 7,
+    "old": "Mixed-income/minimum attribution to that tax ceiling remains to confirm;",
+    "new": "The attributable-tax worksheet under The base supplies the mixed-income/minimum and base-reduction calculation;",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 8,
+    "old": "Full mixed-income/base-reduction attribution and historical correction administration remain unconfirmed; no flat percentage is substituted",
+    "new": "The attributable-tax worksheet under The base supplies mixed general/savings, minimum-spillover and global-base-reduction attribution. Common employment-cost allocation to thalidomide aid, the stated signed-income boundary and historical correction administration remain precisely reserved; no flat percentage is substituted",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 9,
+    "old": "mixed-income average-rate attribution remains unresolved",
+    "new": "the distinct regional-general-rate aid method is supplied in the attributable-tax worksheet under The base",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 10,
+    "old": "## The base\n",
+    "new": "## The base\n",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 11,
+    "old": "### National credits are separate\n",
+    "new": "### Regional attributable tax: separate general and savings calculations\n\nUse this worksheet for the social-housing, work-move and public-aid credits identified below. Keep each credit's entitlement, year, income ceiling, eligible claimant and settlement position already stated in its regional catalogue. The computation covers zero income, general-only income, savings-only income, mixed general/savings income, personal/family minimum spillover and ordinary base reductions. It does not turn an unestablished eligible-income numerator into zero.\n\n**Calculate the quotas first.** Let `G` be general BI after its integration/compensation calculation, `B` the nonnegative general BL actually subject to the general scale, and `S` savings BL. Apply the joint-return reduction where due, then the other base reductions in their statutory order and permitted basket, before calculating tax. A pension reduction reduces the general base within its own limits; it does not automatically reduce savings income. The permitted remainder of the compensatory-pension reduction and joint-return reduction follows its own savings rule. Personal/family minima are a later **tax calculation**, not another subtraction from `G` or `B` ([LIRPF arts.48–50 and84](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a50)).\n\nFor each tax half `j`, determine its own legally applicable minimum `Mj`, general scale `Fj` and savings scale `H`. Its general minimum portion is `min(B,Mj)`; its savings minimum portion is `min(S,max(0,Mj−B))`. Thus `QGj=Fj(B)−Fj(min(B,Mj))` and `QSj=H(S)−H(min(S,max(0,Mj−B)))`, calculated in cents. Use `QGC+QSC` for total regional gross quota. State and regional minimum amounts can differ, so calculate their spillovers separately. If `B=0`, general quota is zero; if `0<B≤Mj`, that half's general quota is zero while savings quota can remain positive. Do not tax `B−Mj` at the bottom of the scale or subtract the minimum twice ([arts.56,63,66,74 and76](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a56)).\n\nFor a credit expressly using general average rates, calculate `rE=100×QGE/B` and `rC=100×QGC/B`, separately, with two decimal places. The official return implementation **discards excess rate decimals**; for example,8.8691…% is8.86%,not8.87%. If `B=0`, there is no positive general-tax amount to allocate and the general-income credit is zero; do not divide by zero or use the savings rate. The worked controls below use these expressed rates only for credits whose wording calls for them. A quota-attribution cap instead retains the quota ratio until the attributed tax is calculated ([arts.63.2/74.2](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a74); [official public RentaWEBOpen2025](https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB), version1.19, checked27October2026).\n\n**Establish the numerator before distributing base reductions.** `N` is the selected qualifying income actually included in general BI: reduced net rental income for social housing; reduced net employment/activity income of the entitled mover(s) for work moves; or the qualifying aid's included income amount. Deduct the income category's legally applicable expenses and reductions first. An activity grant is not automatically its gross cash amount: the Balearic emergency-aid input and Galician wildfire instructions require its attributable reduced net activity income. Keep the grant's income classification and any exemption separate from its credit. For an ordinary positive allocation with `0≤N≤G`, the selected amount in general BL is `A=round_to_cents(N×B/G)` if `G>0`; if no positive general base remains, its attributable general quota is zero. The minimum is already reflected in `QG`; do not subtract a second share of the minimum from `A` ([AEAT Balearic emergency-aid instructions](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_4-illes-balears/10_4_19-determinadas-subvenciones-declaracion-zona-afectada.html); [Galician wildfire instructions](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_22-subvenciones-incendios.html); controlled public-return calculations cited above).\n\n| Provision and its actual tax measure | Ordinary attributable-tax calculation, before final available-quota settlement | Primary basis |\n|---|---|---|\n| Aragón social-housing landlord: regional general quota corresponding to the qualifying reduced net rental income | First calculate attributed quota `T=round_to_cents(QGC×N/G)`, then `30%×T`, rounded to cents. Keep the quota ratio until `T` is calculated; do not substitute the displayed regional average rate. Savings quota is excluded from `T` | [DL1/2005 art.110-13](https://www.boe.es/buscar/act.php?id=BOA-d-2005-90006#a11013); [exact AEAT rental numerator](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_2-aragon/10_2_12-arrendamiento-vivienda-social.html) |\n| Castilla-La Mancha work move: regional quota from employment/activity income of entitled contributors | `min(500×eligible mover count,round_to_cents(QGC×N/G))`. Test the initial-period BL ceiling separately; it is not the attribution denominator | [Ley8/2013 art.12quater](https://www.boe.es/buscar/act.php?id=BOE-A-2014-1368#a1-6); [AEAT individual/joint method](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_7-castilla-mancha/10_7_16-traslado-vivienda-habitual.html) |\n| Cantabria rural work move: the corresponding regional employment/activity quota | `min(500×eligible mover count,round_to_cents(QGC×N/G))`; retain the current article's separate territorial, residence and timing conditions | [DL62/2008 art.2.11.3](https://www.boe.es/buscar/act.php?id=BOCT-c-2008-90028#a2); [AEAT cap and joint aggregation](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-cantabria/gastos-traslado-residencia-municipio-afectado-despoblamiento.html) |\n| Canarias inter-island work move: the corresponding regional employment/activity quota | `min(300×eligible mover count,round_to_cents(QGC×N/G))`; its BI eligibility ceiling remains a separate test for the origin year | [DL1/2009 art.8](https://www.boe.es/buscar/act.php?id=BOC-j-2009-90008#a8); [AEAT cap and joint scope](https://sede.agenciatributaria.gob.es/Sede/ayuda/manuales-videos-folletos/manuales-practicos/irpf-2025-deducciones-autonomicas/comunidad-autonoma-canarias/trasladar-residencia-habitual-otra-isla-ae.html) |\n| Asturias ALS aid; Extremadura ALS aid; Galicia wildfire, high-level-sport, ALS/phenotype and thalidomide aid: general-BI inclusion, BL amount and plural average rates | `round_to_cents(A×(rE+rC)/100)`. Use the sum of separately expressed state and regional **general** rates, with each provision's own eligible aid and income-category rules | [Asturias14quaterdecies](https://www.boe.es/buscar/act.php?id=BOE-A-2015-945#a1-18); [Extremadura11septies](https://www.boe.es/buscar/act.php?id=BOE-A-2018-8159#a1-20); [Galicia5.Dieciseis/Diecinueve/Veinticuatro/Veintiseis](https://www.boe.es/buscar/act.php?id=BOE-A-2011-18161#a5); exact AEAT aid inputs and public-return controls |\n| Illes Balears declared civil-emergency aid: aid in general BI and its amount in BL | `round_to_cents(A×(rE+rC)/100)`. Although art.3ter uses a singular average-rate expression, the official implementation uses both general rates; a regional-only rate gives a different amount | [Art.3ter](https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925#a3-12); [AEAT input](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_4-illes-balears/10_4_19-determinadas-subvenciones-declaracion-zona-afectada.html); public-return controls |\n| Cataluña612-13 thalidomide aid: aid in general BI and BL, plural average rates | Once the aid's legally attributable employment-income numerator `N` is established, apply the same `A` step and `round_to_cents(A×(rE+rC)/100)`. Other general income and savings income do not change that general-basket denominator into total BL | [Ley11/2026 art.37.1,612-13](https://www.boe.es/ccaa/dogc/2026/9706/f00001-00146.pdf#page=42); [LIRPF63.2/74.2](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a63) |\n| Comunitat Valenciana urban-regeneration housing grant under4.Uno.m, and DA17.a/b qualifying aid: the specified aid amount times the regional general average rate | `round_to_cents(qualifying aid amount×rC/100)`. These clauses use the aid amount itself; do **not** insert the `B/G` reduction factor used by the BL-worded aid credits. Keep the112 alternative and its timing/incompatibility rules | [Art.4.Uno.m](https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202#a4); [DA17.a/b](https://www.boe.es/buscar/act.php?id=BOE-A-1998-8202#da); [exact AEAT DA17.a input](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_15-comunitat-valenciana/10_15_27-ayudas-decreto-ley-32020.html) |\n\nFor joint work-move claims, `G`, `B` and `QGC` belong to the joint return. Sum only the reduced net work/activity income of contributors actually entitled to that move credit in `N`; a non-entitled spouse's income still enters the joint bases and quotas. Apply the one combined attributed-tax ceiling to the sum of the eligible movers'500 or300 amounts. Do not give every mover the entire joint quota or remove the joint-return base reduction from the tax calculation. The actual credit is then subject to the existing regional settlement rule, including sufficient remaining regional tax under LIRPF77.2.\n\n**Discriminating numerical controls.** With general BI21,000, general BL20,700, savings BL1,000 and selected net income1,000, current ordinary under65 minima/scales give regional general quota1,660.50 in CLM,1,480.25 in Cantabria and1,564.21 in Canarias. The work-move tax ceilings are respectively79.07,70.49 and74.49; savings tax is not included in those numerators. With Aragón general quota1,629.94, the attributed quota is77.62 and the social-housing credit23.29. These calculations preserve the300 base reduction, rather than treating general BI and BL as interchangeable. Each assumes the catalogue's separate entitlement and income gates pass.\n\nFor included aid1,000 in the same21,000/20,700 bases, `A=985.71`. Asturias general average rates8.02% state and7.83% regional give156.24; Extremadura's8.02%+6.79% give145.98; Galicia's8.02%+7.47% give152.69. An aid input1,000.64 gives Galicia `A=986.35` and152.79, distinguishing cent-rounding of the liquidable amount from prematurely rounding a rate or retaining an unrounded aid base. Valencia's regional general rate7.60% instead gives76.00 on aid1,000, not74.91. For Balearic emergency aid, general BI25,000/BL23,500, included aid1,000 and savings BL10,000 give `A=940`, rates8.85%+8.86% and166.47. Removing savings changes neither those general rates nor the aid credit when no other income condition changes.\n\nIf general BL3,500 is below the applicable minimum and savings BL10,000 remains, both general rates and the general-income attribution are zero even though savings tax is positive. If general BI and BL are both zero, no general-income quota can support these credits. Savings-only income cannot create qualifying employment, rental or aid income. A taxpayer whose numerator or eligibility is unknown is a different case; do not replace that missing fact with zero. The displayed figures were independently recomputed and compared with fictional official2025 OPEN controls. Their continued2026 use rests on the current cited wording, scales and minima; no2026 return campaign was tested. The numerical allocation controls do not establish the separate programme or rental-entitlement facts.\n\n**Distinct2026 Balearic war-aid base.** Art.3quinquies.1 uses the regional general rate and the included liquidable-base aid amount. Its separate paragraph2 expressly prescribes, for an activity grant, the grant's share of the activity's total gross receipts multiplied by that activity's reduced net income: `Nactivity=grant/gross activity receipts×reduced net activity income`; its stated credit is `Nactivity×rC/100`, rounded to cents. Do not replace that explicit paragraph2 base with the gross grant or add a second `B/G` factor to it. For gross receipts100,000 including grant20,000, positive reduced net activity income30,000 and regional general rate8.86%, the paragraph2 credit is531.60. This is derived from the current2026 enactment, rather than from an earlier inflation-aid campaign excluding business receipts ([art.3quinquies.1–2](https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925#a3-15)).\n\n**Precise remaining boundaries.** The worksheet does not prescribe allocation where signed category income or losses make the selected numerator exceed general BI; do not silently cap that numerator or impose a favourable loss priority. For thalidomide aid, RD574/2023 receipts are non-exempt employment income without the30% irregular-income reduction. If the aid is the only employment receipt, its employment numerator is that category's properly computed reduced net income. If wages and aid share the ordinary employment-expense allowance or employment-income reduction, the retrieved thalidomide provisions and instructions do not prescribe the share assigned to aid: that ordinary numerator remains to confirm, including for Cataluña. The general/savings, minimum and global-BL-reduction calculation above remains available once that numerator is established. Balearic3sexties' newly enacted singular average-rate wording still needs direct clarification of combined versus regional-only general rate; do not certify that new article solely by analogy with the implemented emergency provision. Historical correction administration remains separate ([LIRPF19–20](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a19); [AEAT147637](https://sede.agenciatributaria.gob.es/Sede/irpf/novedades-impuesto/novedades-publicadas-informa-2024/novedades-publicadas-informa-mes-septiembre.html); [Galicia thalidomide input](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_25-ayudas-recibidas-personas-afectadas-1985.html); [Balearic3sexties](https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925#a3-17)).\n\n### National credits are separate\n",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 12,
+    "old": "Apply the relevant average tax rates to the grant amount included in the liquidable base; confirm the allocation before computing",
+    "new": "Apply the separate general rates to the liquidable-base grant amount using the attributable-tax worksheet; retain its precise numerator boundaries",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 13,
+    "old": "Cataluña's July thalidomide mixed-income attribution,",
+    "new": "Cataluña's July thalidomide allocation of common employment expenses/reductions between wages and aid and signed-income attribution,",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 14,
+    "old": "Aragón social-housing tax attribution in mixed-income/minimum cases and the operative transport-credit implementing rules",
+    "new": "Aragón social-housing signed-income/loss allocation beyond the supplied positive-income mixed/minimum method and the operative transport-credit implementing rules",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 15,
+    "old": "Castilla-La Mancha relocation tax attribution and detailed cultural in-kind valuation/patronage-credit interactions",
+    "new": "Castilla-La Mancha relocation signed-income/loss attribution beyond the supplied mixed/minimum method and detailed cultural in-kind valuation/patronage-credit interactions",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 16,
+    "old": "Asturias ALS-grant average-rate attribution,",
+    "new": "Asturias ALS-grant signed-income/loss attribution beyond the supplied general-rate/BL method,",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 17,
+    "old": "aid average-rate attribution and old-year thalidomide corrections",
+    "new": "new thalidomide combined-versus-regional-only rate, common employment-cost and signed-income attribution, and old-year thalidomide corrections",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 18,
+    "old": "rural work-move attributable-tax computation,",
+    "new": "rural work-move signed-income/loss attribution beyond the supplied mixed/minimum computation,",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 19,
+    "old": "mixed-income/minimum allocation of the inter-island move tax cap,",
+    "new": "signed-income/loss allocation of the inter-island move tax cap beyond the supplied mixed/minimum method,",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 20,
+    "old": "Extremadura mixed-income/base-reduction attribution for ALS grants,",
+    "new": "Extremadura signed-income/loss attribution for ALS grants beyond the supplied general-rate/BL method,",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 21,
+    "old": "Galicia mixed-income/base-reduction attribution and historic corrections for aid credits,",
+    "new": "Galicia thalidomide common employment-cost allocation, signed-income/loss attribution beyond the supplied general-rate/BL method and historic corrections for aid credits,",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 22,
+    "old": "mixed-income grant attribution,",
+    "new": "",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 23,
+    "old": "**Not yet confirmed:**",
+    "new": "| [Current LIRPF48–50/56/63/66/74/76/84](https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764#a50), [official public2025OPEN](https://www2.agenciatributaria.gob.es/wlpl/PARE-RW25/OPEN/index.zul?EJER=2025&TACCESO=COLAB) | General/savings quota and separate minimum spillovers; deduction-specific quota ratios versus expressed two-decimal rates; positive mixed-income/global-base-reduction methods. Controlled2025 observations support unchanged2026 wording, not a2026 filing-campaign assertion |2026-10-27 |\n| [Aragón exact income input](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_2-aragon/10_2_12-arrendamiento-vivienda-social.html), [CLM move](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_7-castilla-mancha/10_7_16-traslado-vivienda-habitual.html), [Cantabria move](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_6-cantabria/10_6_14-gastos-ocasionados-trasladar-residencia.html), [Canary move](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_5-canarias/10_5_5-trasladar-residencia-habitual.html) | Selected reduced net income, separate eligibility gates and single joint attribution ceiling; quota-ratio and intermediate rental-quota rounding controls |2026-10-27 |\n| [Asturias aid input](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_3-principado-asturias/10_3_21-obtencion-ayudas-subvenciones-otorgadas-enfermos.html), [Extremadura aid](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_10-extremadura/10_10_18-obtencion-ayudas-subvenciones-otorgadas-ela.html), [Balearic emergency aid](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_4-illes-balears/10_4_19-determinadas-subvenciones-declaracion-zona-afectada.html), [Galicia wildfire](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_22-subvenciones-incendios.html), [sport](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_17_por-ayudas-subvenciones-recibidas-deportistas.html), [ALS](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_23-ayudas-subvenciones-recibidas-personas-fenotipos.html), [thalidomide](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_11-galicia/10_11_25-ayudas-recibidas-personas-afectadas-1985.html), [Valencia DA17.a](https://sede.agenciatributaria.gob.es/Sede/eu_es/ayuda/manuales-videos-folletos/manuales-ayuda-presentacion/irpf-2025/10-cumplimentacion-irpf-deducciones-autonomicas/10_15-comunitat-valenciana/10_15_27-ayudas-decreto-ley-32020.html) | Distinct included-BI/BL amount and direct-aid wording; common employment-cost allocation is not supplied by these input instructions |2026-10-27 |\n| [Balearic current3quinquies/3sexties](https://www.boe.es/buscar/act.php?id=BOE-A-2014-6925#a3-15), [ATIB June2026 explanation](https://atib.es/General/Novedad.aspx?idTexto=16987&idTipoTexto=1&lang=es) | Express2026 war-aid activity base, distinguished from prior inflation aid; new thalidomide singular-rate uncertainty retained |2026-10-27 |\n\n**Not yet confirmed:**",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 24,
+    "old": "Extremadura's8.02%+6.79% give145.98",
+    "new": "Extremadura's current2026 scale gives8.02%+6.62% and144.31",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 25,
+    "old": "Valencia's regional general rate7.60% instead gives76.00 on aid1,000, not74.91.",
+    "new": "Valencia's current2026 regional general rate7.42% instead gives74.20 on aid1,000, not73.14.",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 26,
+    "old": "The displayed figures were independently recomputed and compared with fictional official2025 OPEN controls. Their continued2026 use rests on the current cited wording, scales and minima; no2026 return campaign was tested.",
+    "new": "The allocation and rounding methods were checked against fictional official2025 OPEN controls; the figures above are recomputed under current2026 law. Where2026 scales differ, the2025 programme amounts are not carried forward. No2026 return campaign was tested.",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 27,
+    "old": "its average-rate attribution remains a specific unresolved computation",
+    "new": "its separate general-rate and liquidable-base calculation is supplied in the attributable-tax worksheet under The base, with the stated signed-income boundary",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 28,
+    "old": "whose full mixed-income/base-reduction attribution remains an identified computation gap",
+    "new": "whose mixed general/savings, minimum-spillover and base-reduction method is supplied in the attributable-tax worksheet under The base, with its precise signed-income boundary",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  },
+  {
+    "unit": 29,
+    "old": "tenant/work-rent compatibility,  combined",
+    "new": "tenant/work-rent compatibility, combined",
+    "disposition": "replacement or insertion; retained subject or precise remaining reservation"
+  }
+]

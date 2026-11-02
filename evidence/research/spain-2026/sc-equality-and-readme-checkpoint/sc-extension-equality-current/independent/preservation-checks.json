@@ -1,0 +1,164 @@
+[
+  {
+    "name": "final exact frozen bytes",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "metadata unchanged except version",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "version increases 2.1 to 2.2",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "body heading agrees",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "date not decreased",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "exactly two blocks and both byte-identical",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "whole worked-example section unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "all original URL occurrences retained in order",
+    "passed": true,
+    "detail": {
+      "before_count": 207,
+      "final_count": 213
+    }
+  },
+  {
+    "name": "original 207 occurrences independently counted",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "full platform CTA byte-identical",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "only 3 old nonempty lines changed",
+    "passed": true,
+    "detail": [
+      "version: 2.1",
+      "# Spanish social contributions: RETA and employer payroll v2.1",
+      "**Not yet confirmed:** the current statutory monetary authority and reconciled assessment of the new-2026 starting fee; the exact equality-at-SMI treatment of the extension where art. 38 ter's wording and RD 2064 art. 44.3.f use differing boundaries. Sea, self-employed agricultural, artist/training and other special-system contribution calculations, non-EU coordination, case-specific ERTE exemptions and individual benefit awards remain outside the supplied ordinary, household and agricultural-employee computations. Independent whole-pack review remains outstanding."
+    ]
+  },
+  {
+    "name": "changed old lines limited to version heading reservation",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "all other reservation text retained",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "new 2026 monetary authority reservation preserved",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "source table continuous before added row",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "reviewed README remains unchanged",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "no new BNR successful fetch claim",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "ordinary extension remains 12 complete months",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "new 2026 award not derived from old campaign",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "legal challenge remains explicitly unconfirmed",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "raw source hash sources/TGSS-current-system.html",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "raw source hash sources/LETA-current.html",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "raw source hash sources/RD2064-current.html",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "TGSS explicit >= annual income boundary",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "TGSS explicit separate annual periods",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "LETA strict below extension eligibility",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "LETA separate calendar years",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "LETA literal exceeds regularisation",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "LETA proportional affected-month income",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "RD44 equality exception actually exists",
+    "passed": true,
+    "detail": null
+  },
+  {
+    "name": "RD46 literal exceeds exemption exception",
+    "passed": true,
+    "detail": null
+  }
+]
