@@ -71,7 +71,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- | --- |
 | ISR retention | 10% (general regime payees; LISR Art. 106, penultimate paragraph, in force) | Professional services paid by personas morales to personas físicas |
 | ISR retention - RESICO | 1.25% (LISR Art. 113-J) | Business/professional services or rent from RESICO personas físicas to personas morales |
-| IVA retention | Full IVA transferred (16%) retained by the persona moral (LIVA Art. 1o.-A fr. II a) and c)) | Independent personal services and leases from personas físicas; autotransporte services |
+| IVA retention | Two thirds of the IVA trasladado and effectively paid: 2/3 x 16% = 10.6667% of the invoice (RLIVA Art. 3 fr. I: "las dos terceras partes del impuesto que se les traslade y que haya sido efectivamente pagado"; retention duty: LIVA Art. 1o.-A fr. II a) and c)) | Independent personal services, commission services, and temporary use of goods (leases) from personas físicas to personas morales |
+| IVA retention - autotransporte | 4% of the consideration effectively paid (RLIVA Art. 3 fr. II) | Land freight autotransporte terrestre de bienes services received by personas morales |
 
 ### Calculation Rules
 
@@ -402,6 +403,7 @@ expected:
 | Codigo Fiscal de la Federacion, texto vigente (ultima reforma DOF 09-04-2026; multas actualizadas DOF 28-12-2025) | https://www.diputados.gob.mx/LeyesBiblio/pdf/CFF.pdf | 2026-10-31 |
 | Ley del Impuesto sobre la Renta, texto vigente (DOF 01-04-2024) | https://www.diputados.gob.mx/LeyesBiblio/pdf/LISR.pdf | 2026-10-28 |
 | Ley del Impuesto al Valor Agregado, texto vigente 2026 | https://www.diputados.gob.mx/LeyesBiblio/pdf/LIVA.pdf | 2026-11-02 |
+| Reglamento de la Ley del IVA, consolidated (Cámara de Diputados, ultima reforma DOF 25-09-2014), Art. 3 frs. I y II | https://www.diputados.gob.mx/LeyesBiblio/pdf/RLIVA.pdf | 2026-11-02 |
 | Resolucion Miscelanea Fiscal 2025 (reglas 2.7.1.34, 2.7.1.35) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/rmf/RMF_2025-30122024.pdf | 2026-11-02 |
 | RMF 2025 Anexo 5 (multas actualizadas) | http://omawww.sat.gob.mx/normatividad_RMF_RGCE/Paginas/documentos2025/rmf/anexos/Anexo5_RMF2025-30122024.pdf | 2026-11-02 |
 
