@@ -1,0 +1,20 @@
+{
+  "status": "accepted: bounded source fidelity; closure status edits permitted only as listed",
+  "frozen_review_head": "79952dad1837653b943adeccbd43fcb935c871aa",
+  "writer_content_commit": "b51cce28c4ca3c60ae33c528a538fa096a5367d4",
+  "actual_receipt_only_head": "ddfcd6bd536840bffe651db39c197f714522fcbd",
+  "cached_origin_main": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "actual_pr_merge_base": "aa8fb52e20d1f4083020d7724dabe8c9e5ccfce8",
+  "prior_accepted_eight_guide_head": "9694dbd2d4c5d4254faab1ac7a2937a9ebe0421d",
+  "guide_sha256": "c61856ab1dfb0bd9cb53f3a4a46f9d2c330bd699dad4d71c79b550fa99938197",
+  "guide_matches_frozen_head": true,
+  "receipt_only_delta": "M\tevidence/ledgers/liberia-property-20261101/committed-validation.json\n",
+  "guide_git_blob": "ca3554cc661dfff247b511117109d3b187757505",
+  "new_guide_platform_keys_or_cta": false,
+  "all_33_rows_accepted": true,
+  "all_15_shape_checks_pass": true,
+  "old_guide_bodies_replaced": 0,
+  "accountant_attestation": false,
+  "full_country_coverage": false,
+  "merge_permission": false
+}

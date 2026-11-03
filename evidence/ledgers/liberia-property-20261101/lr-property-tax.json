@@ -1,0 +1,667 @@
+[
+  {
+    "id": "P01",
+    "guide": "lr-property-tax",
+    "section": "Who this applies to",
+    "rule": "Annual tax attaches to each nonexempt parcel; unimproved/under-improved land follows geography, improved land assessed value and use.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2000(a)",
+    "physical_page": 240,
+    "printed_page": 240,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "There shall be levied annually a tax on real property",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      240
+    ]
+  },
+  {
+    "id": "P02",
+    "guide": "lr-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Improved business/commercial use, in whole or part: 1.5% assessed value. Letting houses/apartments falls within the business-use definition.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2000(c)(1),(d)(2)",
+    "physical_page": 240,
+    "printed_page": 240,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "a tax of one and one half percent of assessed value",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      240,
+      241
+    ]
+  },
+  {
+    "id": "P03",
+    "guide": "lr-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Improved industrial use, in whole or part: 1.5% assessed value.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2000(c)(2)",
+    "physical_page": 240,
+    "printed_page": 240,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "Industrial use. When such buildings and other improvements are being used for industrial",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      240
+    ]
+  },
+  {
+    "id": "P04",
+    "guide": "lr-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Exclusive qualifying residential use: 0.25% assessed value. Apply d(11): natural-person owner, wholly occupied as primary residence, no letting for private gain; do not classify a rental by appearance alone.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2000(c)(3),(d)(11),(e)",
+    "physical_page": 240,
+    "printed_page": 240,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "a tax of one fourth of one percent (0.25%) of assessed value",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      240,
+      241
+    ]
+  },
+  {
+    "id": "P05",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Residential definition requires a natural-person taxpayer owner and whole owner occupation as primary residence; letting wholly or partly for private profit is excluded.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2000(d)(11)",
+    "physical_page": 241,
+    "printed_page": 241,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "wholly used and occupied by that taxpayer as a primary place of residence",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      241
+    ]
+  },
+  {
+    "id": "P06",
+    "guide": "lr-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Improvements on urban farmland, exclusively farm use: one-third of 1% assessed value; outside specified urban limits: 0.25%. Farmland definition requires at least five acres and primary listed farming use.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2000(c)(4)–(5),(d)(4)",
+    "physical_page": 240,
+    "printed_page": 240,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "a tax of one third of one percent of assessed value",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      240,
+      241
+    ]
+  },
+  {
+    "id": "P07",
+    "guide": "lr-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "For private persons leasing/controlling improvements on government public land, c(6) charges improvements only: residential one-seventh of 1%, commercial 1%. The inconsistent exemption cross-reference needs resolution before use.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2000(c)(6)",
+    "physical_page": 240,
+    "printed_page": 240,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "The charge, however, shall only be against the buildings and other improvements",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      240
+    ]
+  },
+  {
+    "id": "P08",
+    "guide": "lr-property-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Unimproved city/town lot within specified corporate limits: 3.5% assessed value. Separately owned fraction of an official lot counts as a whole lot.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2000(b)(1)(A),(d)(3)",
+    "physical_page": 240,
+    "printed_page": 240,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "three and one-half percent (3.5%) of the assessed value thereof",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      240,
+      241
+    ]
+  },
+  {
+    "id": "P09",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Under-improved land means physical additions/buildings/works worth less than the land itself; included in unimproved land. Do not choose improved rates merely because a structure exists.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2000(d)(12)–(13)",
+    "physical_page": 241,
+    "printed_page": 241,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "lower value than the value of the land itself",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      241
+    ]
+  },
+  {
+    "id": "P10",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Assessed value is taxable value under s2001. Market value is the reasonable bona fide-sale capital sum at assessment; not automatic historical cost or annual rent.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2000(d)(1),(9)",
+    "physical_page": 241,
+    "printed_page": 241,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "The term “market value” is the capital sum",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      241
+    ]
+  },
+  {
+    "id": "P11",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Business/industrial assessment excludes machinery/tools/appliances not fixed, or removable without structural damage.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2000(d)(2),(8)",
+    "physical_page": 241,
+    "printed_page": 241,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "may be removed therefrom without structural damage thereto",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      241
+    ]
+  },
+  {
+    "id": "P12",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Ordinary inspected market-value assessment lasts five years. If determined AND notice given by June15, operative January1 current year; after June15, January1 next year. New completions follow f instead.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2001(a)–(b)",
+    "physical_page": 242,
+    "printed_page": 242,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "determined hereunder and notice thereof is given to the taxpayer on or before June 15th",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      242
+    ]
+  },
+  {
+    "id": "P13",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Pre-existing market-value assessments and prior construction-cost assessments have distinct transitional rules: five-year carry for c; cost basis continues until inspection/reassessment under b for d.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2001(c)–(d)",
+    "physical_page": 242,
+    "printed_page": 242,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "the assessed value based on cost of construction shall continue",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      242
+    ]
+  },
+  {
+    "id": "P14",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Previously unassessed parcels are also assessed for unpaid property taxes under the laws in force for five years immediately before the new value operative date; no invented current-rate backfill.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2001(e)",
+    "physical_page": 242,
+    "printed_page": 242,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "for a period of five years immediately prior to the operative date",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      242
+    ]
+  },
+  {
+    "id": "P15",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "New improvements fully complete or usable require market-value determination. Value operative on/after February1: one-twelfth annual tax per remaining month or part-month, then five-year valuation from next January1. By January31: full annual tax and five-year term current January1.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2001(f)",
+    "physical_page": 242,
+    "printed_page": 242,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "one-twelfth of the annual tax based on such assessed value for each month or fraction of a",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      242
+    ]
+  },
+  {
+    "id": "P16",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Reinspect/reassess before five-year term end. If no reassessment, prior value continues; after term taxpayer may file valuation-review administrative appeal by June15. Exact s60 procedure remains a separate hold.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2001(g)",
+    "physical_page": 243,
+    "printed_page": 243,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "the prior assessed value shall continue as the basis",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      243
+    ]
+  },
+  {
+    "id": "P17",
+    "guide": "lr-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Annual property period January1–December31; tax due July1, payable from January1 without interest/penalty. Unpaid after July1 incurs s11 market interest.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2002",
+    "physical_page": 243,
+    "printed_page": 243,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "shall become due on July 1st of the year in which it is levied",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      243
+    ]
+  },
+  {
+    "id": "P18",
+    "guide": "lr-property-tax",
+    "section": "Penalties and interest",
+    "rule": "If unpaid by July31, additional 5% each month or part-month after July31 on tax/underpayment, aggregate cap25%; market interest separate. Do not import the overview income-return penalty formula.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2002",
+    "physical_page": 243,
+    "printed_page": 243,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "5 percent per month for each month or part of a month",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      243
+    ]
+  },
+  {
+    "id": "P19",
+    "guide": "lr-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "LRA keeps public assessment records locally and at principal office, showing location, area, lot, use, inspection date, value and annual tax; inspect during official business hours.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2003",
+    "physical_page": 243,
+    "printed_page": 243,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "shall be open to inspection by the public during official business hours",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      243
+    ]
+  },
+  {
+    "id": "P20",
+    "guide": "lr-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Within thirty days after acquisition, title acquirer files property schedule at LRA nearest property: description, location, area, lot designation/use and actual purchase consideration. This differs from the annual payment date.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2004",
+    "physical_page": 243,
+    "printed_page": 243,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "within thirty days after acquisition",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      243
+    ]
+  },
+  {
+    "id": "P21",
+    "guide": "lr-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Registrars report preceding-month recorded ownership transfers on first of each month; Directors of Public Lands report preceding-month grants. These are official duties, not a second buyer deadline.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2005",
+    "physical_page": 243,
+    "printed_page": 243,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "on the first day of each month a report",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      243
+    ]
+  },
+  {
+    "id": "P22",
+    "guide": "lr-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Authorised assessors assess under s2001; written value/tax notice to owner or, if impracticable, at least two area newspaper publications, deemed received ten days after last publication.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2006(a)–(b)",
+    "physical_page": 244,
+    "printed_page": 244,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "10 days after the last publication",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      244
+    ]
+  },
+  {
+    "id": "P23",
+    "guide": "lr-property-tax",
+    "section": "Penalties and interest",
+    "rule": "Property tax becomes a preferred property lien when due; interest/penalties/charges when assessed; continues until paid. Delinquency collection is through Justice and competent court.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2007",
+    "physical_page": 244,
+    "printed_page": 244,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "until paid, liens thereon and shall be preferred in payment",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      244
+    ]
+  },
+  {
+    "id": "P24",
+    "guide": "lr-property-tax",
+    "section": "Penalties and interest",
+    "rule": "Justice may seek Tax Court foreclosure; proven delinquency leads ordered execution, due notice then public auction, not automatic private seizure. Proceeds: tax/penalties/interest, court costs, other liens by priority, balance owner; owner may bid.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2008",
+    "physical_page": 244,
+    "printed_page": 244,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "first, to the payment of taxes, penalties and interest due",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      244
+    ]
+  },
+  {
+    "id": "P25",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Government-owned public property exemption has a printed cross-reference to2001(f), while2000(c)(6) taxes private-controlled public-land improvements; do not treat exemption as conclusive for those improvements.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2009(a);2000(c)(6)",
+    "physical_page": 244,
+    "printed_page": 244,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "except to the extent set forth in subsection (f) of Section 2001.",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      244
+    ]
+  },
+  {
+    "id": "P26",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Specified churches/missions/educational/charitable/fraternal owners need qualifying nonprofit use. Renting normally taxable to owner unless another exempt organisation rents and rental income exclusively serves stated purposes.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2009(b)",
+    "physical_page": 244,
+    "printed_page": 244,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "the property is not rented or leased except to another organization",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      244
+    ]
+  },
+  {
+    "id": "P27",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Separate exemptions cover exclusively religious/charitable/educational use and University of Liberia property; test actual statutory category and use rather than generic nonprofit ownership.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2009(c)–(d)",
+    "physical_page": 244,
+    "printed_page": 244,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "All properties used exclusively for religious, charitable or educational purposes",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      244
+    ]
+  },
+  {
+    "id": "P28",
+    "guide": "lr-property-tax",
+    "section": "Cross-border points",
+    "rule": "Foreign-government property on Republic-leased/deeded land is exempt; private property let to foreign government is not exempt, owner liable and withholding obligation exists. Refer income withholding to owning cross-border Guide.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2009(e)",
+    "physical_page": 244,
+    "printed_page": 244,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "the property is not exempt from the tax prescribed by this Chapter",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      244
+    ]
+  },
+  {
+    "id": "P29",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Statute/treaty/agreement exemptions require property held/used according to instrument. Government lease already tax-exempt at Code enactment stays exempt only remaining lease period including renewal options.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2009(f)–(g)",
+    "physical_page": 244,
+    "printed_page": 244,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "only for the duration of the lease period",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      244
+    ]
+  },
+  {
+    "id": "P30",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Renewable-resource contracted project property under Chapter6; qualifying mining/petroleum project property within licence/project area under Chapter7; and improved parcel with only huts are express exemption categories. Read project/use conditions and hut definition.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2009(h)–(j);2000(d)(5)",
+    "physical_page": 244,
+    "printed_page": 244,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "A parcel of improved land upon which the only improvement is a hut or huts",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      244,
+      245
+    ]
+  },
+  {
+    "id": "P31",
+    "guide": "lr-property-tax",
+    "section": "Deadlines and filing",
+    "rule": "Except public-land sales, official receipt proving all property arrears paid is prerequisite to probate/registration of deed, lease or other interest instrument. Officials withhold action; title/interest not deemed vested until arrears paid.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2010(a)–(b)",
+    "physical_page": 245,
+    "printed_page": 245,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "all delinquent real property taxes have been paid in full",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      245
+    ]
+  },
+  {
+    "id": "P32",
+    "guide": "lr-property-tax",
+    "section": "Penalties and interest",
+    "rule": "Printed April2026 amended63(1)(a) permits written Land Registry security notice for taxpayer-interest land/building securing unpaid tax and requires taxpayer notification within seven days; distinct from Chapter20 automatic lien.",
+    "act": "Liberia Tax Amendment Act of December 2025, approved 24 March / printed 1 April 2026",
+    "article": "amended63(1)(a)",
+    "physical_page": 6,
+    "printed_page": null,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2026/04/LRC-Amendment-December-2025.pdf",
+    "exact_quote": "shall notify the taxpayer of such direction within seven days",
+    "read_on": "2026-11-01",
+    "source_file": "LRC-Amendment-December-2025.pdf",
+    "source_sha256": "6d498c8d05fa33a8386bc4d2439efeaced5aa283c0c0ab984c3dd1fbc8a98d88",
+    "read_scope": "Cover; preliminary/amended provision list; full amended s63 with neighbours and final commencement; physical6 scan visually inspected",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      6
+    ]
+  },
+  {
+    "id": "P33",
+    "guide": "lr-property-tax",
+    "section": "The base",
+    "rule": "Farmland means at least five acres used primarily for agriculture/horticulture/tree crops/grazing/poultry/pigs/other farming; hut needs exclusively indigenous materials and specified earth/stick/leaf construction.",
+    "act": "Liberia Revenue Code as Amended 2020",
+    "article": "2000(d)(4)–(5)",
+    "physical_page": 241,
+    "printed_page": 241,
+    "official_url": "https://www.lra.gov.lr/wp-content/uploads/2021/08/REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "exact_quote": "not less than five acres in area",
+    "read_on": "2026-11-01",
+    "source_file": "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "read_scope": "Complete Chapter20 ss2000–2010 including all definitions/exemptions and neighbouring headings; rule-specific section and neighbours read",
+    "currentness": "Cited-text conditional draft; complete 2026 amendment/implementation chain unproven",
+    "physical_pages": [
+      241
+    ]
+  }
+]

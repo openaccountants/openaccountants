@@ -1,0 +1,46 @@
+{
+  "lr-company-formation.md": {
+    "description_words": 107,
+    "sha256": "bfe248af33d6a125714273006031a257319af5810b3cf1027abb44809b0d7b0d",
+    "cta_suffix_byte_exact": true,
+    "platform_metadata_preserved": true
+  },
+  "lr-corporate-income-tax.md": {
+    "description_words": 104,
+    "sha256": "e3fe2f73e834c9d9393f8322d3a9db261b0851c7a532a9164a12c1736607574c",
+    "cta_suffix_byte_exact": true,
+    "platform_metadata_preserved": true
+  },
+  "lr-cross-border.md": {
+    "description_words": 103,
+    "sha256": "46ba572456764bf8edee1216232695ed298f996447da7d87e6300c2288cbe362"
+  },
+  "lr-income-tax.md": {
+    "description_words": 102,
+    "sha256": "3b8d6f0e47368e77cb1a6d76c52c528fb55a54319e1f2cc2234932a12b4cd09c",
+    "cta_suffix_byte_exact": true,
+    "platform_metadata_preserved": true
+  },
+  "lr-payroll-social.md": {
+    "description_words": 104,
+    "sha256": "1c8b801e3386c87b501211b1eb945d72b1a7a4fcf8fa72a2a439c37be3e5ab2b",
+    "cta_suffix_byte_exact": true,
+    "platform_metadata_preserved": true
+  },
+  "lr-tax-overview.md": {
+    "description_words": 105,
+    "sha256": "a0dda02f1e838ff8990f008b68736882d65103bf6b38d5c389eb18731d86c9d7",
+    "cta_suffix_byte_exact": true,
+    "platform_metadata_preserved": true
+  },
+  "lr-transfer-pricing.md": {
+    "description_words": 105,
+    "sha256": "18e3d9493dfd60ffba0014f5d987ef1c05ae25430fe3759a96af53d391f59576"
+  },
+  "lr-vat-gst.md": {
+    "description_words": 113,
+    "sha256": "da72d86ce2f5683f73b0eab35935eaed07a725e9a51e3cc702c29db5e5cadb20",
+    "cta_suffix_byte_exact": true,
+    "platform_metadata_preserved": true
+  }
+}

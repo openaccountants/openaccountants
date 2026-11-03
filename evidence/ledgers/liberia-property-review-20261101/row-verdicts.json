@@ -1,0 +1,332 @@
+[
+  {
+    "id": "P01",
+    "article": "2000(a)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Annual parcel levy and unimproved/under-improved versus improved split match s2000(a).",
+    "required_fix": null
+  },
+  {
+    "id": "P02",
+    "article": "2000(c)(1),(d)(2)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "1.5% and whole/part use match c(1); d(2) expressly includes letting houses/apartments. Private-profit/gain definition read.",
+    "required_fix": null
+  },
+  {
+    "id": "P03",
+    "article": "2000(c)(2)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "1.5% and whole/part use match c(2); d(8) industrial profit/gain and manufacturing/factory scope read alongside it.",
+    "required_fix": null
+  },
+  {
+    "id": "P04",
+    "article": "2000(c)(3),(d)(11),(e)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "0.25% exclusive residential rule read with c(3), repeated e and d(11), not with physical appearance alone.",
+    "required_fix": null
+  },
+  {
+    "id": "P05",
+    "article": "2000(d)(11)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Natural-person ownership, whole primary-home occupation and whole/part profit-letting exclusion preserved.",
+    "required_fix": null
+  },
+  {
+    "id": "P06",
+    "article": "2000(c)(4)\u2013(5),(d)(4)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "One-third of 1% urban and one-fourth of 1% outside limits; exclusive farm use and five-acre definition preserved. Statutory urban list includes village.",
+    "required_fix": null
+  },
+  {
+    "id": "P07",
+    "article": "2000(c)(6)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "One-seventh of 1% residential and 1% commercial are printed c(6) rates on improvements only; lease/possession/control and unresolved exemption cross-reference preserved.",
+    "required_fix": null
+  },
+  {
+    "id": "P08",
+    "article": "2000(b)(1)(A),(d)(3)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "3.5% assessed-value city/town lot row supported; separately owned lot fraction rule in d(3) read. No extrapolation to unclear acreage.",
+    "required_fix": null
+  },
+  {
+    "id": "P09",
+    "article": "2000(d)(12)\u2013(13)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Under-improved comparison is improvements below land value, included in unimproved. No structure-only shortcut.",
+    "required_fix": null
+  },
+  {
+    "id": "P10",
+    "article": "2000(d)(1),(9)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Assessed value under s2001 distinguished from bona-fide-sale capital market value at assessment.",
+    "required_fix": null
+  },
+  {
+    "id": "P11",
+    "article": "2000(d)(2),(8)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Both business and industrial definitions exclude plant/machinery/tools/appliances not fixed or removable without structural damage; Guide says specified removables, not all assets.",
+    "required_fix": null
+  },
+  {
+    "id": "P12",
+    "article": "2001(a)\u2013(b)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Inspected market-value five-year rule and determination AND notice timing supported; new structures are expressly excepted to f.",
+    "required_fix": null
+  },
+  {
+    "id": "P13",
+    "article": "2001(c)\u2013(d)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Pre-existing market-value five-year carry and construction-cost-until-inspected transition are distinct. Guide does not invent a conversion.",
+    "required_fix": null
+  },
+  {
+    "id": "P14",
+    "article": "2001(e)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "S2001(e) is a transition for land unassessed before chapter effectiveness, determined under b, with five previous years under law then in force; reviewed as that separate statutory rule, not universal new-purchase liability.",
+    "required_fix": null
+  },
+  {
+    "id": "P15",
+    "article": "2001(f)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Whole s2001(f) including continuation on p243 read. Usable/full completion, operative-value assumption, February/January split, fraction-month and next/current January five-year start supported.",
+    "required_fix": null
+  },
+  {
+    "id": "P16",
+    "article": "2001(g)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Whole g read: pre-expiry reassessment, notice by June15 succeeding year, continuation absent reassessment, June15 post-term appeal under s60 and subsequent market reassessment. Guide gives only bounded workpaper, not complete appeal procedure.",
+    "required_fix": null
+  },
+  {
+    "id": "P17",
+    "article": "2002",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "January1\u2013December31 levy, July1 due date, early payment and market interest after July1 match s2002. No current market percentage supplied.",
+    "required_fix": null
+  },
+  {
+    "id": "P18",
+    "article": "2002",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Additional 5% each month or fraction after July31 and 25% aggregate cap supported; separate interest and partial-payment facts preserved.",
+    "required_fix": null
+  },
+  {
+    "id": "P19",
+    "article": "2003",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Local LRA office plus principal duplicate and listed assessment-record contents/public inspection supported.",
+    "required_fix": null
+  },
+  {
+    "id": "P20",
+    "article": "2004",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "New title acquirer thirty-day schedule and nearest office/data fields supported. Original effective-date transition also read; not turned into current recurring annual filing deadline.",
+    "required_fix": null
+  },
+  {
+    "id": "P21",
+    "article": "2005",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "First-of-month registrar transfer and Public Lands grant reports are separate official obligations.",
+    "required_fix": null
+  },
+  {
+    "id": "P22",
+    "article": "2006(a)\u2013(b)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Notice/authorised-assessor provision starts p243 and continues p244; written notice or impracticability plus twice-published general-circulation local newspaper, ten days after last publication supported.",
+    "required_fix": null
+  },
+  {
+    "id": "P23",
+    "article": "2007",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Due-date property tax lien and assessment-date charges, priority until paid, Justice/competent court collection supported.",
+    "required_fix": null
+  },
+  {
+    "id": "P24",
+    "article": "2008",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Justice suit, proven delinquency, summary foreclosure judgment/execution, prior notice, public auction, proceeds priority and owner bidding supported; no automatic self-help sale asserted.",
+    "required_fix": null
+  },
+  {
+    "id": "P25",
+    "article": "2009(a);2000(c)(6)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "P244 prints s2001(f), not c(6). Both full clauses and f read. The Guide holds conflict rather than correcting enacted wording by inference.",
+    "required_fix": null
+  },
+  {
+    "id": "P26",
+    "article": "2009(b)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Enumerated ownership and qualifying nonprofit use, rental exception only to another organisation exempt under b and exclusive qualifying rent use supported. Separate c exemption considered.",
+    "required_fix": null
+  },
+  {
+    "id": "P27",
+    "article": "2009(c)\u2013(d)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "S2009(c) exclusive use and (d) University holdings are separate categories; Guide retains them without treating all nonprofit property as exempt.",
+    "required_fix": null
+  },
+  {
+    "id": "P28",
+    "article": "2009(e)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Foreign-government Republic land versus privately owned rented property, owner liability and textual withholding obligation supported. Guide does not create a property withholding rate; rental-income rates remain sibling-owned.",
+    "required_fix": null
+  },
+  {
+    "id": "P29",
+    "article": "2009(f)\u2013(g)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Instrument conditions under f and already-exempt government lease remaining term including renewal options under g supported.",
+    "required_fix": null
+  },
+  {
+    "id": "P30",
+    "article": "2009(h)\u2013(j);2000(d)(5)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "S2009(h) requires renewable-resource contract/project under Chapter6; i area plus project under Chapter7; j only hut(s). Cross-read d(5), including indigenous material/foundation/wall/roof requirements.",
+    "required_fix": null
+  },
+  {
+    "id": "P31",
+    "article": "2010(a)\u2013(b)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "S2010(a),(b) all delinquent taxes official receipt, probate/registration prerequisite, no deemed vesting and public-land-sale exception supported; broader title law not certified.",
+    "required_fix": null
+  },
+  {
+    "id": "P32",
+    "article": "amended63(1)(a)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "6d498c8d05fa33a8386bc4d2439efeaced5aa283c0c0ab984c3dd1fbc8a98d88",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "Visual p6 confirms full amended63(1)(a): written Land Registry direction, taxpayer land/building interest, unpaid tax and taxpayer notice within seven days of issuing notice. Full 63/neighbours read; no foreclosure inference.",
+    "required_fix": null
+  },
+  {
+    "id": "P33",
+    "article": "2000(d)(4)\u2013(5)",
+    "verdict": "accepted: bounded source fidelity",
+    "source_sha256": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "quote_anchor_matches_whitespace_normalized_source": true,
+    "reviewed_complete_clause_and_neighbours": true,
+    "finding": "At least five acres and primarily enumerated farm use; hut exclusively indigenous natural materials and earth foundation, earth/stick walls, indigenous roof supported. No generic shed exemption.",
+    "required_fix": null
+  }
+]

@@ -1,0 +1,722 @@
+{
+  "all_candidate_hashes_match": true,
+  "all_initial_evidence_unchanged": true,
+  "all8_guide_hashes_match": true,
+  "changed_rule_ids": [
+    "C05",
+    "S05",
+    "C12"
+  ],
+  "rules_count": 85,
+  "ledger_placements": 98,
+  "old_topics_75_unchanged_text": true,
+  "metadata": [
+    {
+      "file": "skills/liberia/lr-company-formation.md",
+      "description_words": 107,
+      "yaml_version": 0.1,
+      "h1_matches": true,
+      "platform_fields_unchanged": true,
+      "CTA_unchanged": true
+    },
+    {
+      "file": "skills/liberia/lr-corporate-income-tax.md",
+      "description_words": 104,
+      "yaml_version": 0.2,
+      "h1_matches": true,
+      "platform_fields_unchanged": true,
+      "CTA_unchanged": true
+    },
+    {
+      "file": "skills/liberia/lr-cross-border.md",
+      "description_words": 103,
+      "yaml_version": 0.1,
+      "h1_matches": true,
+      "platform_fields_unchanged": true,
+      "CTA_unchanged": true
+    },
+    {
+      "file": "skills/liberia/lr-income-tax.md",
+      "description_words": 102,
+      "yaml_version": 0.1,
+      "h1_matches": true,
+      "platform_fields_unchanged": true,
+      "CTA_unchanged": true
+    },
+    {
+      "file": "skills/liberia/lr-payroll-social.md",
+      "description_words": 104,
+      "yaml_version": 0.2,
+      "h1_matches": true,
+      "platform_fields_unchanged": true,
+      "CTA_unchanged": true
+    },
+    {
+      "file": "skills/liberia/lr-tax-overview.md",
+      "description_words": 105,
+      "yaml_version": 0.1,
+      "h1_matches": true,
+      "platform_fields_unchanged": true,
+      "CTA_unchanged": true
+    },
+    {
+      "file": "skills/liberia/lr-transfer-pricing.md",
+      "description_words": 105,
+      "yaml_version": 0.1,
+      "h1_matches": true,
+      "platform_fields_unchanged": true,
+      "CTA_unchanged": true
+    },
+    {
+      "file": "skills/liberia/lr-vat-gst.md",
+      "description_words": 113,
+      "yaml_version": 0.1,
+      "h1_matches": true,
+      "platform_fields_unchanged": true,
+      "CTA_unchanged": true
+    }
+  ],
+  "examples_byte_identical": {
+    "skills/liberia/lr-company-formation.md": true,
+    "skills/liberia/lr-corporate-income-tax.md": true,
+    "skills/liberia/lr-cross-border.md": true,
+    "skills/liberia/lr-income-tax.md": true,
+    "skills/liberia/lr-payroll-social.md": true,
+    "skills/liberia/lr-tax-overview.md": true,
+    "skills/liberia/lr-transfer-pricing.md": true,
+    "skills/liberia/lr-vat-gst.md": true
+  },
+  "guide_changes": [
+    "skills/liberia/lr-corporate-income-tax.md",
+    "skills/liberia/lr-payroll-social.md"
+  ],
+  "C12": {
+    "source": "C",
+    "act_article": "ss201(c),801(d)",
+    "quote": "The gross income of a resident includes all economic benefits regardless of source.",
+    "additional_exact_quote": "income attributable to the permanent establishment",
+    "rule": "A resident company\u2019s gross income includes worldwide economic benefits, regardless of source; a nonresident\u2019s gross income includes only Liberia-source economic benefits and is taxed under Chapter8. A nonresident\u2019s permanent establishment is treated as a resident legal person only with respect to income attributable to that establishment, with the related filing and advance-payment requirements.",
+    "read_on": "2026-11-01"
+  },
+  "writer_corrections_sha256": "ec3346069a845bb38411df02e9977f0c7136df6aa29c30bb65ddff498232b6cf",
+  "candidate_file_sha256": {
+    "skills/liberia/README.md": "e0c8c25660c2823796d966984ba529c3e01cdfa9d2ca7c3606da470d90fbc25f",
+    "skills/liberia/lr-corporate-income-tax.md": "06d56dc00683959b085e535dffbfbdf88755825643d91c8c139c55c6d6057bea",
+    "skills/liberia/lr-payroll-social.md": "3fc054d43cab5da4b2464f14327d7114917d6320943aa0f0b8b2684820ebc002",
+    "docs/research/2026-11-01-liberia-pack/ledgers/lr-corporate-income-tax.md": "a57d5e57b09476a294f25d5e0da46fcb6533d2a37d7e4adb1b92de14da6d49d7",
+    "docs/research/2026-11-01-liberia-pack/ledgers/lr-payroll-social.md": "53aaa75e10cd206e9a371763026f466886abf457c16736370d2ced96e90b6aae",
+    "docs/research/2026-11-01-liberia-pack/old-topics.json": "6311766e51d8999af96f5b3d5e279a64015ffb918b30dd721b3590401e9fc062",
+    "docs/research/2026-11-01-liberia-pack/old-topics.md": "81971637d140d7353146b2f51d64c502e7c85bd310985a4c3c40adce3d0473f2",
+    "docs/research/2026-11-01-liberia-pack/rules.json": "2478668cac25f51021e825366f64b7df83c9d326be16246c98a9bbe77d96be2e"
+  },
+  "guide_sha256": {
+    "skills/liberia/lr-company-formation.md": "bfe248af33d6a125714273006031a257319af5810b3cf1027abb44809b0d7b0d",
+    "skills/liberia/lr-corporate-income-tax.md": "06d56dc00683959b085e535dffbfbdf88755825643d91c8c139c55c6d6057bea",
+    "skills/liberia/lr-cross-border.md": "46ba572456764bf8edee1216232695ed298f996447da7d87e6300c2288cbe362",
+    "skills/liberia/lr-income-tax.md": "3b8d6f0e47368e77cb1a6d76c52c528fb55a54319e1f2cc2234932a12b4cd09c",
+    "skills/liberia/lr-payroll-social.md": "3fc054d43cab5da4b2464f14327d7114917d6320943aa0f0b8b2684820ebc002",
+    "skills/liberia/lr-tax-overview.md": "a0dda02f1e838ff8990f008b68736882d65103bf6b38d5c389eb18731d86c9d7",
+    "skills/liberia/lr-transfer-pricing.md": "18e3d9493dfd60ffba0014f5d987ef1c05ae25430fe3759a96af53d391f59576",
+    "skills/liberia/lr-vat-gst.md": "da72d86ce2f5683f73b0eab35935eaed07a725e9a51e3cc702c29db5e5cadb20"
+  },
+  "ledger_placement_checks": [
+    {
+      "guide": "lr-income-tax",
+      "id": "I01",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-income-tax",
+      "id": "I02",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-income-tax",
+      "id": "I03",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-income-tax",
+      "id": "I04",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-income-tax",
+      "id": "I05",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-income-tax",
+      "id": "I06",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-income-tax",
+      "id": "I07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-income-tax",
+      "id": "I08",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-income-tax",
+      "id": "I09",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-income-tax",
+      "id": "I10",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-income-tax",
+      "id": "I11",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-income-tax",
+      "id": "O03",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-income-tax",
+      "id": "O07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "C01",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "C02",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "C03",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "C04",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "C05",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "C06",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "C07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "C08",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "C09",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "C10",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "C11",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "C12",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "I10",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-corporate-income-tax",
+      "id": "O07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-payroll-social",
+      "id": "O07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-payroll-social",
+      "id": "S01",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-payroll-social",
+      "id": "S02",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-payroll-social",
+      "id": "S03",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-payroll-social",
+      "id": "S04",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-payroll-social",
+      "id": "S05",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-payroll-social",
+      "id": "S06",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-payroll-social",
+      "id": "S07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-payroll-social",
+      "id": "S08",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-payroll-social",
+      "id": "S09",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-payroll-social",
+      "id": "S10",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-payroll-social",
+      "id": "W04",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-company-formation",
+      "id": "C11",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-company-formation",
+      "id": "F01",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-company-formation",
+      "id": "F02",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-company-formation",
+      "id": "F03",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-company-formation",
+      "id": "F04",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-company-formation",
+      "id": "O05",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-company-formation",
+      "id": "O12",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "O06",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "O07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "O11",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "T01",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "T02",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "T03",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "T04",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "T05",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "T06",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "T07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "T08",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "T09",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "T10",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-transfer-pricing",
+      "id": "T11",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "O01",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "O07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "O13",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W01",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W02",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W03",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W05",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W06",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W08",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W09",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W10",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W11",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W12",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W13",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-cross-border",
+      "id": "W14",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-vat-gst",
+      "id": "O07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-vat-gst",
+      "id": "V01",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-vat-gst",
+      "id": "V02",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-vat-gst",
+      "id": "V03",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-vat-gst",
+      "id": "V04",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-vat-gst",
+      "id": "V05",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-vat-gst",
+      "id": "V06",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-vat-gst",
+      "id": "V07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-vat-gst",
+      "id": "V08",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-vat-gst",
+      "id": "V09",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-tax-overview",
+      "id": "O02",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-tax-overview",
+      "id": "O03",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-tax-overview",
+      "id": "O04",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-tax-overview",
+      "id": "O05",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-tax-overview",
+      "id": "O06",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-tax-overview",
+      "id": "O07",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-tax-overview",
+      "id": "O08",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-tax-overview",
+      "id": "O09",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-tax-overview",
+      "id": "O10",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-tax-overview",
+      "id": "O11",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-tax-overview",
+      "id": "O12",
+      "ledger_exists": true,
+      "guide_id_present": true
+    },
+    {
+      "guide": "lr-tax-overview",
+      "id": "O14",
+      "ledger_exists": true,
+      "guide_id_present": true
+    }
+  ],
+  "initial_HEAD": "ae03c48733c558b6c8df9945a9810c5ebbe30bf8",
+  "source_C_G_hashes": {
+    "REVENUE-CODE-LIBERIA-REVENUE-CODE-AMENDEMENT-2020-min.pdf": "b96f4d43bca76d72a9b7d56544049c2fe6d715ca29f15d1dae01a8d170da39bd",
+    "nasscorp-reg-2023.pdf": "d1731e734daec04dbbb7842826ce948a90f99410cb98dccb0852a79cc0836850"
+  },
+  "finding_closure": {
+    "F1": "closed: recording versus unconfirmed transmission explicit in Guide, description, gaps, ledger, rule, map and README",
+    "F2": "closed: C12 restores resident worldwide / nonresident source / PE attributable-income rule; exact corporate map destination; old source prose preserved",
+    "F3": "closed: C05 qualified to interest relating to any Liberian tax; distinct Liberian/foreign income-tax disallowance preserved"
+  }
+}

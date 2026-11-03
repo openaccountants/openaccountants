@@ -1,0 +1,19 @@
+# Liberia focused independent closure
+
+Read/rechecked 2026-11-01. Initial reviewed commit remains `ae03c48733c558b6c8df9945a9810c5ebbe30bf8`; this closure binds the frozen **uncommitted corrections** by SHA256 in `closure-snapshot.json`, not by a nonexistent new commit. The writer correction record and all eight Guide hashes match the actual files. All initial independent review evidence remains unchanged.
+
+**F1, F2 and F3 are closed. The corrected eight-Guide pack is accepted as a source-cited partial draft within the limits of the initial review.** It is not approved as operative 2026 advice, comprehensive coverage, a completed live filing workflow or an accountant-attested pack. Retain all seven partial flags and the VAT/currentness holds, and keep issue466 open.
+
+| Finding | Independent closure evidence |
+|---|---|
+| F1 | Re-read NASSCORP General Regulations2023 regs17(1)–(3),18(A)(1)–(3). The corrected S05, payroll body/calendar/description/gap, ledger, old-topic destination and README now expressly distinguish employee-detail **recording** by following month-end from an unconfirmed separate transmission deadline. Payment remains ordinarily month-end with the Payroll Submission Form accompanying payment. No new transmission deadline is supplied. |
+| F2 | Re-read Revenue Code201(a)–(c),801(c)–(f) and the existing scope/exceptions. New C12 expressly restores the resident worldwide / nonresident Liberia-source base and PE-attributable-income condition with filing/advance requirements. Both exact quote anchors are in the source. Corporate Guide and ledger contain C12; the two old base bullets and the corresponding narrative now point exactly to it. Lost content restored: **1 substantive resident/nonresident base rule**, covering three map entries (two bullets and their repeated narrative). |
+| F3 | Re-read Revenue Code206(d) with neighboring deductions. C05 now disallows Liberian or foreign income tax and **interest relating to any Liberian tax**. It no longer makes a categorical disallowance of all foreign-tax interest. The additional exact quote, rule record, ledger and Guide agree. |
+
+Only the two Guides implicated by the findings changed; their YAML and exact H1 versions advanced0.1→0.2. The other six Guides and all sixteen worked-case blocks are byte-identical to the initial reviewed versions. The changed payroll description remains104 words and corporate104; all eight remain within80–150. Platform fields and the six original complete CTA suffixes remain byte-identical. Both new Guides still have no copied platform attribution or CTA.
+
+The rule set is now85 unique records across98 ledger placements. The only rule-record changes are S05, C05 and new C12; all98 ledger rows and adjacent Guide IDs were checked. All75 old-topic source entries, comprising68 named bullets and7 narratives, retain their exact source text, file and blob identities; only the four justified destination/status entries changed. The underlying Revenue Code and NASSCORP source PDF hashes remain the initial reviewed hashes.
+
+Fresh independent runs pass: all eight Guide skill checks;16 oa-check recomputations with zero failures/missing; changed-only Guide validation with zero warnings; **worktree** public sync-integrity audit with strict metadata and zero errors/warnings/notices; baseline-to-worktree whitespace. Each output is saved with a `closure-` prefix. The initial law/condition checks are not claimed to have been repeated from scratch; they remain valid because the unchanged content is hash-bound, and the three actual rule changes were re-read above.
+
+Parent can commit these exact corrected files and independent evidence and update the existing country draft PR normally. Any further tax-content edits need review of their delta. No commit, push, merge or Guide edit was performed by this reviewer.
