@@ -1,0 +1,9 @@
+{
+  "content_commit": "8b4d437420ffc3db96d39ba0c04a0bc65b1f020d",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "committed_changed_validator": "8 actual Guides; zero warnings",
+  "strict_audit": "8 source Guides; zero errors/warnings/notices",
+  "examples": "Six repaired cases pass and are unchanged by the permitted status-only reconciliation.",
+  "whole_base_whitespace": "pass",
+  "source_scope": "Exact independent conditional source closure; all stated gaps and holds remain"
+}

@@ -1,0 +1,68 @@
+{
+  "before": {
+    "skills/burkina-faso/README.md": "86f2d4e902798ff5910d4f9c9cbc4583e4b75312b437c56d1031f14574bb5dcb",
+    "skills/burkina-faso/bf-vat.md": "d0a6e68f4f55869916431dc7c53930fb19fd49902497b487bb2322426dc3e30b",
+    "skills/burkina-faso/bf-social-contributions.md": "1deb8b0f8743fad13fbc701d08ac767b2c2a9814f7ad13a7ed914d4963b8d5b0",
+    "evidence/burkina-faso-vat-social-20261101/README.md": "2fc7697e8b5f688876fb762b8cc19b7d45d3c4711ba5b428cc064b1401dd50f9"
+  },
+  "after": {
+    "skills/burkina-faso/README.md": "8307d76a6a55acfaf7d4b3475880678f156b32e0f48ba2ccf96d8daa2f24fea2",
+    "skills/burkina-faso/bf-vat.md": "355d88b6e042a68637a244b40fc2582d833c863e9511dd5d58f64a4a0510e9ac",
+    "skills/burkina-faso/bf-social-contributions.md": "8c2447d807a217f395c1d06c4d5cfdc72b327f4d942142d1f045d999a1414936",
+    "evidence/burkina-faso-vat-social-20261101/README.md": "a69bc31dec5f25869b4031bc88c515e647d6712f81fe9a297cfc42096117970b"
+  },
+  "changes": [
+    {
+      "file": "skills/burkina-faso/README.md",
+      "old": "independent review pending",
+      "new": "independent conditional source review accepted",
+      "count": 4
+    },
+    {
+      "file": "skills/burkina-faso/README.md",
+      "old": "pending a separate independent review",
+      "new": "with separate independent source corrections closed",
+      "count": 1
+    },
+    {
+      "file": "skills/burkina-faso/README.md",
+      "old": "This pending review does not change any earlier acceptance.",
+      "new": "This source-review closure does not change any earlier acceptance.",
+      "count": 1
+    },
+    {
+      "file": "skills/burkina-faso/README.md",
+      "new": "Added exact closure link and conditional review scope paragraph."
+    },
+    {
+      "file": "skills/burkina-faso/bf-vat.md",
+      "old": "Independent review of this rewrite is pending;",
+      "new": "Independent conditional source review of this rewrite is accepted;",
+      "count": 1
+    },
+    {
+      "file": "skills/burkina-faso/bf-social-contributions.md",
+      "old": "Independent review of this rewrite is pending;",
+      "new": "Independent conditional source review of this rewrite is accepted;",
+      "count": 1
+    },
+    {
+      "file": "evidence/burkina-faso-vat-social-20261101/README.md",
+      "old": "Independent review is pending.",
+      "new": "Independent conditional source review is accepted.",
+      "count": 1
+    },
+    {
+      "file": "evidence/burkina-faso-vat-social-20261101/README.md",
+      "old": "VAT/social pending review does not alter",
+      "new": "VAT/social source-review closure does not alter",
+      "count": 1
+    },
+    {
+      "file": "evidence/burkina-faso-vat-social-20261101/README.md",
+      "new": "Added exact closure link and conditional review scope paragraph."
+    }
+  ],
+  "authority": "closure-manifest.json status-only prose permission; final identity receipt requested",
+  "trust_fields": "unchanged"
+}

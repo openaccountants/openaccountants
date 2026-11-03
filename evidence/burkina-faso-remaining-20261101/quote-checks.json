@@ -1,0 +1,15 @@
+{
+  "source_raw_sha256": "a13190c507500fcd5dd257ceca0fec95416179d5e9320a0bda35130ddc6e35d5",
+  "row_counts": {
+    "bf-corporate-tax": 41,
+    "bf-income-tax": 58,
+    "bf-payroll": 31
+  },
+  "all_literal_matches": true,
+  "scope": "Literal quotation equality after whitespace normalization only, not independent legal review.",
+  "ledger_sha256": {
+    "bf-corporate-tax.md": "8c7d2b7db359f6d0382e761e519fe635956b8d8e8ad502e439e0bffd0428327f",
+    "bf-payroll.md": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+    "bf-income-tax.md": "1f7383309d5382a78e0fcfc0d439e2c2502dfa5ef57b74c477b4d6abf8d3d31b"
+  }
+}

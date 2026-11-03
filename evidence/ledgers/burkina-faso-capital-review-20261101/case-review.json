@@ -1,0 +1,57 @@
+{
+  "frozen_commit": "cad488c270c42ad731ff3b975d6afe2e6c4208d5",
+  "cases": [
+    {
+      "Guide": "bf-investment-income",
+      "case": 1,
+      "result": "pass",
+      "recomputed": {
+        "private_individual_debt": 250000,
+        "qualifying_deposit": 125000,
+        "nonexempt_Burkina_obligation": 60000,
+        "exempt_State_instrument": 0
+      },
+      "law_gate": "129/132(6)/134(5)/140; private individual debtor avoids company-borrowing category. Four separate facts, not four cumulative levies."
+    },
+    {
+      "Guide": "bf-investment-income",
+      "case": 2,
+      "result": "pass",
+      "recomputed": {
+        "eligible_rate": "0.0625",
+        "tax": 125000,
+        "net": 1875000,
+        "fourth_period_tax": 250000,
+        "advance_original_tax": 100000,
+        "half_repayment_restitution": 50000,
+        "exactly_five_years_restitution": 0
+      },
+      "law_gate": "141 three-period and42month conditions;132(8)strictlyunder5years and attributable repayment fraction; no refund process asserted."
+    },
+    {
+      "Guide": "bf-corporate-tax",
+      "case": 1,
+      "result": "pass",
+      "recomputed": {
+        "rounded_profit": 12345000,
+        "IS": 3394875,
+        "MFP": 1000000,
+        "each_advance": 1000000,
+        "balance": 394875
+      },
+      "law_gate": "87/89 rounding;91 equal advances75%;92 reconciliation; no CGA/exemption assumed."
+    },
+    {
+      "Guide": "bf-corporate-tax",
+      "case": 2,
+      "result": "pass",
+      "recomputed": {
+        "established_tax": 1000000,
+        "first_period_tax": 275000,
+        "difference": 725000
+      },
+      "law_gate": "87/89/90 firstoperatingperiodMFP exemption; exemption condition, not optional election."
+    }
+  ],
+  "manual_independent_arithmetic": "Exact Decimal/integer assertions above plus committed check-examples.py 4blocks0failures in validation.json."
+}

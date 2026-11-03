@@ -1,0 +1,69 @@
+{
+  "reviewed_head": "13a38f884550d6d220f79100a8fbc1404842a1de",
+  "review_outputs": [
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/findings.json",
+      "sha256": "abeced7e598fa82c8a30a0537549df4d97a791c0a7b5ebebd0858ae65bf7ac63",
+      "bytes": 496
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/independent-cases.json",
+      "sha256": "806b2322e6bd7e6355acf1463fe30ff1c16e6ab24c584696ccb49949d5343405",
+      "bytes": 1581
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/independent-check.py",
+      "sha256": "c782f39a8c991f540121332a54e9b49003b3bc905dda426c9dd477deae21378a",
+      "bytes": 6087
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/input-manifest.json",
+      "sha256": "e2966641aa66aec02a2a6511f1da05e8320da8ab1c542a5c866b69f8c73b5cfc",
+      "bytes": 5042
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/preservation-checks.json",
+      "sha256": "e1dbc88c613e46102e25939bf00f12c37a7ebfcc54d0a93d9047993887d0004f",
+      "bytes": 43022
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/review.md",
+      "sha256": "e0511bd20b741b38b5f15c0f6e708c23898ba940ed85023a5ed16980fdd9187b",
+      "bytes": 9496
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/row-checks.json",
+      "sha256": "04de757fe330a700ed9bdd934505f2cac29d16926a4f4252dfbd5a0d1a44007c",
+      "bytes": 22775
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/shape-checks.json",
+      "sha256": "302fb930cda4b150f69b3f410e03e2a6d0c4089b1079252fb1f188a72269b384",
+      "bytes": 504
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/source-read-log.json",
+      "sha256": "4e1927abb323125c2e0353117b2c71fde922672d6687cede2c4029e03fb007d7",
+      "bytes": 4718
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/status-only-permission.json",
+      "sha256": "84b35806b3c6eb7004fd630f00b0f4c54912b63203eded27559a5a0ba88c7a83",
+      "bytes": 2128
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/validation.json",
+      "sha256": "942285c758f184b3c0c43f76a243dbc7392fa72a741f148b1217e8021ed0231f",
+      "bytes": 1770
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-review-20261101/write-review-record.py",
+      "sha256": "5313ccae41f4a59424985a9b1ec51831323283ac26ae28535c0437209d41a39b",
+      "bytes": 11000
+    }
+  ],
+  "guide_edits": 0,
+  "commits": 0,
+  "pushes": 0,
+  "pr_actions": 0
+}

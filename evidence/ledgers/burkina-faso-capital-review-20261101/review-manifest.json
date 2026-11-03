@@ -1,0 +1,57 @@
+{
+  "frozen_commit": "cad488c270c42ad731ff3b975d6afe2e6c4208d5",
+  "review_date": "2026-11-01",
+  "files": [
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/case-review.json",
+      "sha256": "f7aaab24731733cfc15d3df19b1f5b9fbab29bbc9bdf358927ddbe8fd38c9f30",
+      "bytes": 1886
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/complete-old-topic-review.json",
+      "sha256": "7bcea4ae9767cb1bde50b095420a1afa8362575e633261aceceb7f81155dd792",
+      "bytes": 26444
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/every-row-review.json",
+      "sha256": "22264aa2e480c0c47e285338eb49a43bd0576abc546822ff52a95ce34e84983f",
+      "bytes": 173665
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/findings.json",
+      "sha256": "50d1c630a66ac65d2157f7a0dca95b5962a57ea64d997dfe91bbe5b1be846ead",
+      "bytes": 1079
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/frozen-targets.json",
+      "sha256": "6b8899a309276170a533230094a1c35399cf1613c319e53dd47533486149c648",
+      "bytes": 3967
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/preservation-review.json",
+      "sha256": "79ab9a202a2f44ff9a7221ddb4d53de3ffcb6e362e5d2116008fe314929c0e62",
+      "bytes": 54881
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/review.md",
+      "sha256": "997c61db01b3182f84268b6fd43326877cf861eb870355f90335306e5e2ce81b",
+      "bytes": 7663
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/row-notes.json",
+      "sha256": "e89ceac5ecb0dcbd4e7933c4b21e4588da6ef1f1011394e94ecda503b83d445a",
+      "bytes": 8075
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/source-reading.json",
+      "sha256": "f6dcafe210c690e682255321d5196925369db4a6c75896d5675ec578340b584f",
+      "bytes": 2814
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/validation.json",
+      "sha256": "fa8a728e17e03c532a16cb3496b8fcfe571040e6c08a0442c0a6762201bd44c0",
+      "bytes": 20032
+    }
+  ],
+  "immutability": "Original review records; future fixes require separate closure evidence, not rewriting findings or replacing writer status."
+}

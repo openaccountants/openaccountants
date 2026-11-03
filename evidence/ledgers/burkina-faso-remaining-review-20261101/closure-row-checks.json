@@ -1,0 +1,2358 @@
+{
+  "date": "2026-11-01",
+  "initial_review_head": "26e1b85c0cbb72923709586bdaa76b694e9f6873",
+  "initial_review_receipt_sha256": "de7dc09d4d6e35414ac7af3f6f8727139462434cb78b76d424aa1cb7cc4a8101",
+  "repair_manifest_sha256": "bdbe7eeb1766b7ce53cd46bea3bb715896593508a434cf50f68f3373f98a6f4f",
+  "ledger_hashes": {
+    "bf-corporate-tax": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+    "bf-income-tax": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+    "bf-payroll": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43"
+  },
+  "counts": {
+    "PASS": 128,
+    "PASS_WITH_EXPLICIT_HOLD": 2,
+    "FAIL": 0
+  },
+  "rows": [
+    {
+      "guide": "bf-corporate-tax",
+      "row": 1,
+      "verdict": "PASS",
+      "finding": "Art42 defines the IS charge and incorporates art43 entities.",
+      "ledger_row_sha256": "a86f7e9343193288e60a4f667818e5aa4756415b8715b480393267139f632aa6",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "42",
+        "physical_page_start": 29,
+        "physical_page_end": 29,
+        "raw_line_start": 1504,
+        "raw_line_end": 1515,
+        "passage_sha256_utf8": "c41a712a6c33f5dc67633ab127c13b41cf022a10e57ebd0aa0d26046914ebfcb"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 2,
+      "verdict": "PASS",
+      "finding": "Art43(1)-(2) confirms form/activity defaults, including SNC/SCS/participation/GIE; art43(3) is a distinct option.",
+      "ledger_row_sha256": "b142f9fa74d5be2213a08851a463905e7a5e2f5c22ecf1978c6ae9f359c40d68",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "43",
+        "physical_page_start": 29,
+        "physical_page_end": 30,
+        "raw_line_start": 1515,
+        "raw_line_end": 1607,
+        "passage_sha256_utf8": "24a8879c4840bf9b0566e6b723b869aa33f54b85fe449f90f48a10df8e201def"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 3,
+      "verdict": "PASS",
+      "finding": "Art43(3) confirms unanimity, three months, irrevocability and prior-capital-company transformation restriction.",
+      "ledger_row_sha256": "113e902d80eb6b5ce0d33b3522de6cd0dc92f05786f03f85538fbf9f158176d6",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "43",
+        "physical_page_start": 29,
+        "physical_page_end": 30,
+        "raw_line_start": 1515,
+        "raw_line_end": 1607,
+        "passage_sha256_utf8": "24a8879c4840bf9b0566e6b723b869aa33f54b85fe449f90f48a10df8e201def"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 4,
+      "verdict": "PASS",
+      "finding": "Art44 reverses the legacy default: listed associates/members elect IBICA unanimously within three months.",
+      "ledger_row_sha256": "642ecdb5560b10d933e6725bfc512aeccb70663e4340c21eb08360ba37411752",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "44",
+        "physical_page_start": 30,
+        "physical_page_end": 30,
+        "raw_line_start": 1607,
+        "raw_line_end": 1622,
+        "passage_sha256_utf8": "1b2010ed327d0f7d4dfefebae64ab94d570af9c96225135e7a9b48daf3a3d893"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 5,
+      "verdict": "PASS",
+      "finding": "Art46(1)-(3) confirms treaty reservation, seat/effective management, PE and complete-cycle routes; art47 neighbours read.",
+      "ledger_row_sha256": "cdf4982934371cd017eb5fab0be7c3470bfe62ff2b99574cbd4f69470c66fbc8",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "46",
+        "physical_page_start": 31,
+        "physical_page_end": 31,
+        "raw_line_start": 1671,
+        "raw_line_end": 1699,
+        "passage_sha256_utf8": "ebd75796337350d71a4ff121f3a55abd9a7ab14ddb50d8beac34bf10c1285682"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 6,
+      "verdict": "PASS",
+      "finding": "Art48 includes all operations/disposals and opening/closing net assets with contributions/drawings.",
+      "ledger_row_sha256": "e22928509ffd88b26ad42562cacb24bde95385651efe845c0698d548516d0e52",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "48",
+        "physical_page_start": 33,
+        "physical_page_end": 33,
+        "raw_line_start": 1826,
+        "raw_line_end": 1849,
+        "passage_sha256_utf8": "886d3f962adbb4bc02be4556226841a2255270766d34dff375f81b9216ae5dc5"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 7,
+      "verdict": "PASS",
+      "finding": "Art49 confirms 31 December and the no-later-than-30-June split; cessation exception remains outside ordinary case.",
+      "ledger_row_sha256": "bcb7a1e295352ad71acd2ee8de7e366a2d195515d567a07e7bc14781c7251ee5",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "49",
+        "physical_page_start": 33,
+        "physical_page_end": 33,
+        "raw_line_start": 1849,
+        "raw_line_end": 1870,
+        "passage_sha256_utf8": "a9195d9fc40982a30cb8f6e5d70686d631a2f48badaf1b2c790117797284d2fa"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 8,
+      "verdict": "PASS",
+      "finding": "Art50 reconciles accounting result subject to overriding tax provisions.",
+      "ledger_row_sha256": "fa945474903c36b7bbf829f9e53ba905271678e3f0f9341878c8051b7ada6a85",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "50",
+        "physical_page_start": 33,
+        "physical_page_end": 33,
+        "raw_line_start": 1870,
+        "raw_line_end": 1878,
+        "passage_sha256_utf8": "c98047bffe96680846dae6155d840c75e70b8421180b2976f3aa201acfe35613"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 9,
+      "verdict": "PASS",
+      "finding": "Art51 contains the listed taxable products, including financial/rental/disposal products.",
+      "ledger_row_sha256": "b586d18445ba30826e6bf8e4f25ff3b868b5d798b0ac053d0aed6f391f334d51",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "51",
+        "physical_page_start": 33,
+        "physical_page_end": 34,
+        "raw_line_start": 1878,
+        "raw_line_end": 1915,
+        "passage_sha256_utf8": "edfd28d70a2d14d7375026a8cf4ee579fb2c2d6016e014d2703019f119af32e6"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 10,
+      "verdict": "PASS",
+      "finding": "Art53(1)-(3) has five general conditions and additional arts54-84 tests.",
+      "ledger_row_sha256": "ede081773c69cfcc015d15c422f4d1c9566c3d18e945ac73299bda6c908fabb8",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "53",
+        "physical_page_start": 34,
+        "physical_page_end": 34,
+        "raw_line_start": 1928,
+        "raw_line_end": 1965,
+        "passage_sha256_utf8": "2de398477f248bbe711c746e8e0a70e59c15f4633c199766ef99882c95bdfe47"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 11,
+      "verdict": "PASS",
+      "finding": "Art53(1)(3) expressly rejects unbooked or wrongly classified expenses.",
+      "ledger_row_sha256": "318e1d163c4464c0879601c2505d63658c2f8bb994db773c9ca93b9d44e0dade",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "53",
+        "physical_page_start": 34,
+        "physical_page_end": 34,
+        "raw_line_start": 1928,
+        "raw_line_end": 1965,
+        "passage_sha256_utf8": "2de398477f248bbe711c746e8e0a70e59c15f4633c199766ef99882c95bdfe47"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 12,
+      "verdict": "PASS",
+      "finding": "Art54 requires effective work for direct/indirect remuneration.",
+      "ledger_row_sha256": "8da74b2e63eafca5bf5b45ab16c049b375dc78661063604dfe74b264616244f1",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "54",
+        "physical_page_start": 34,
+        "physical_page_end": 34,
+        "raw_line_start": 1965,
+        "raw_line_end": 1973,
+        "passage_sha256_utf8": "c8f5727d97721f202d6a249335e17e2ad67f636af504a68e91a6c51c2e187e72"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 13,
+      "verdict": "PASS",
+      "finding": "PASS: art56 capital-company limit now explicit in Guide and ledger; effective-work/non-excessiveness and whole-payment reclassification retained.",
+      "ledger_row_sha256": "29e951bfeedfc4904e4ec5cf9f3acfe6b34f6bb091c730ed9320a822af80b0ab",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "56",
+        "physical_page_start": 35,
+        "physical_page_end": 35,
+        "raw_line_start": 1990,
+        "raw_line_end": 2006,
+        "passage_sha256_utf8": "1c0a28df0eacdc04a45eddd3010225eb61d6a7ecb3213ff5e721c82e9c2465dd"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Independent repaired row/Guide delta re-read against same actual article and neighbours."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 14,
+      "verdict": "PASS",
+      "finding": "Art61 requires timely arts97/117 declarations and forbids personnel provisions.",
+      "ledger_row_sha256": "56dabcc849f1104839009f714677400ac79571b93e73aa0bbc9e4abde82092d4",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "61",
+        "physical_page_start": 35,
+        "physical_page_end": 36,
+        "raw_line_start": 2070,
+        "raw_line_end": 2084,
+        "passage_sha256_utf8": "154b8b00592887ac66ab37dab2297f1c4ed6a803031b4cf75fc40c2ff7391754"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 15,
+      "verdict": "PASS",
+      "finding": "Art62 applies one aggregate 10% cap; linked-company limitation attaches to assistance/study fees; services must be precise, actual and not excessive.",
+      "ledger_row_sha256": "9a4ee34b4e729903f20ce0610fafcc2666a81be38e88a93f36d2dae16fa7b597",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "62",
+        "physical_page_start": 36,
+        "physical_page_end": 36,
+        "raw_line_start": 2084,
+        "raw_line_end": 2116,
+        "passage_sha256_utf8": "003b28a567e5180b3877258b992d047a95a2efd81dcd7cca13177a168ff6839a"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 16,
+      "verdict": "PASS",
+      "finding": "Art62 defines indirect overheads and excludes purchases, depreciation, provisions and exchange losses.",
+      "ledger_row_sha256": "6b95421990736c62f2e2c6ebca69cb51e623b79d3e3c7ceed65574a1817df61e",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "62",
+        "physical_page_start": 36,
+        "physical_page_end": 36,
+        "raw_line_start": 2084,
+        "raw_line_end": 2116,
+        "passage_sha256_utf8": "003b28a567e5180b3877258b992d047a95a2efd81dcd7cca13177a168ff6839a"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 17,
+      "verdict": "PASS",
+      "finding": "Art71(1)-(2) confirms 3 per mille, recognised-recipient conditions, positive pre-gift result and schedules; State gifts have separate unlimited branch.",
+      "ledger_row_sha256": "a29f1a3ebd06d1b4aca87783e8f4110bdc1a3508f2553f5adb636a6991b06557",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "71",
+        "physical_page_start": 38,
+        "physical_page_end": 38,
+        "raw_line_start": 2294,
+        "raw_line_end": 2327,
+        "passage_sha256_utf8": "e2a0e287484bc0e10839591295f50d697c27108c8c3b491b40b8616c8570ced9"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 18,
+      "verdict": "PASS",
+      "finding": "Art74(3) denies the stated statutory penalties and confiscations.",
+      "ledger_row_sha256": "74f76c93be4bc9d83bca41200274cae65a81ff84bbdf74db1fd0315dbb3758a7",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "74",
+        "physical_page_start": 39,
+        "physical_page_end": 39,
+        "raw_line_start": 2376,
+        "raw_line_end": 2400,
+        "passage_sha256_utf8": "e1ad47a10b06b3477706aff7e9cc8d0f59b234f6b60f89eab830f2af2eec4096"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 19,
+      "verdict": "PASS",
+      "finding": "Art79 requires precise probable losses/charges, current entries and schedule; arts80-82 neighbours read.",
+      "ledger_row_sha256": "cde70127072c260fd77a9146808d9dbb0e0bc529bad2f074f5bcae1632239460",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "79",
+        "physical_page_start": 42,
+        "physical_page_end": 42,
+        "raw_line_start": 2638,
+        "raw_line_end": 2646,
+        "passage_sha256_utf8": "9456abbf90e4e5919b2a6f9bc6479b936e39bb66e898630244408e9b277f54e7"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 20,
+      "verdict": "PASS",
+      "finding": "Art87 confirms 27.5% and disregarded sub-1000 profit fraction.",
+      "ledger_row_sha256": "ee5467acc200989d9c85701f3fb13c1c79058e553f95bd0910025ad2231673cd",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "87",
+        "physical_page_start": 44,
+        "physical_page_end": 44,
+        "raw_line_start": 2829,
+        "raw_line_end": 2838,
+        "passage_sha256_utf8": "02340eb052c12ada4508a143f81344cc6fd371992fccfddae0c6c6ca04e66f5d"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 21,
+      "verdict": "PASS",
+      "finding": "Art88 compares IS with art89 minimum even on losses.",
+      "ledger_row_sha256": "ce2d93906d33d70efab6473033f2dd40bec2648df8995f9c8193ffce03553c27",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "88",
+        "physical_page_start": 44,
+        "physical_page_end": 44,
+        "raw_line_start": 2838,
+        "raw_line_end": 2848,
+        "passage_sha256_utf8": "f4350653e69df63e786d8b5e74427457343f57eb9b428d37219781c8c61bbd29"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 22,
+      "verdict": "PASS",
+      "finding": "Art89 confirms turnover rounding, 0.5%, 1m RNI/300k RSI floors.",
+      "ledger_row_sha256": "e83eb33f1cae884e57179f936f09297e6d736a4bc712f0a27b7f635037dd9038",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "89",
+        "physical_page_start": 44,
+        "physical_page_end": 45,
+        "raw_line_start": 2848,
+        "raw_line_end": 2880,
+        "passage_sha256_utf8": "d6c83e2e88306e6cce7979551503836806dc6ac7dfc008592e8c0e7bd10ab704"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 23,
+      "verdict": "PASS",
+      "finding": "Art89 confirms exclusive-activity floor treatment and CGA 50% reduction.",
+      "ledger_row_sha256": "529957e9cc84d6f091e89a9b1546da73c26889242a240fd7cae7000b6567b9ff",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "89",
+        "physical_page_start": 44,
+        "physical_page_end": 45,
+        "raw_line_start": 2848,
+        "raw_line_end": 2880,
+        "passage_sha256_utf8": "d6c83e2e88306e6cce7979551503836806dc6ac7dfc008592e8c0e7bd10ab704"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 24,
+      "verdict": "PASS",
+      "finding": "Art90 exempts newly created companies from MFP for first operating accounting period.",
+      "ledger_row_sha256": "a42a7e3e9b253f3b0f2fb6a229038bf0606339e51df6ad9c23069b0ef0b35cbe",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "90",
+        "physical_page_start": 45,
+        "physical_page_end": 45,
+        "raw_line_start": 2880,
+        "raw_line_end": 2886,
+        "passage_sha256_utf8": "7a725d03186e8f4c03446c8ee7866d37a81c59c5a50c0f5b877a067eebccbcab"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 25,
+      "verdict": "PASS",
+      "finding": "Art91 confirms three equal advances on 75%, twelve-month annualisation and first-period relief.",
+      "ledger_row_sha256": "c2a79dd37beb83c181ee4784404d3fba29dd44ee5d8ae01bf9379bd4978d47df",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "91",
+        "physical_page_start": 45,
+        "physical_page_end": 45,
+        "raw_line_start": 2886,
+        "raw_line_end": 2905,
+        "passage_sha256_utf8": "d32c15155d4d652a06fa288aef055b32ef01ea99be9f019f1a5592f61a65cf23"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 26,
+      "verdict": "PASS",
+      "finding": "Art92 confirms 15 July/October/January, return-date balance, carryforward and cessation/refund/requested offset branches.",
+      "ledger_row_sha256": "9463aabb1982524c103b4d8257d9c8d67abf41bba18c3bfc8fbe3c2460b651a6",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "92",
+        "physical_page_start": 45,
+        "physical_page_end": 45,
+        "raw_line_start": 2905,
+        "raw_line_end": 2934,
+        "passage_sha256_utf8": "c47d823040c4f5fd85a806b75e8b1d869b2792c66957a7db59331c52c10bcf56"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 27,
+      "verdict": "PASS",
+      "finding": "Art93 restricts IRCM credit to received income included in taxable profits.",
+      "ledger_row_sha256": "25fe892fdf909b13487495d08dec0a8da9c1f19ee597500b59ebd4a24812e0cd",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "93",
+        "physical_page_start": 45,
+        "physical_page_end": 45,
+        "raw_line_start": 2934,
+        "raw_line_end": 2942,
+        "passage_sha256_utf8": "452f29243fe09ab7bd9cd637804afd2d6ba8ad36a01ae52207a114f4a682043e"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 28,
+      "verdict": "PASS",
+      "finding": "Art94 confirms carryforward/refund/requested offset and exempt-company Treasury retention.",
+      "ledger_row_sha256": "b79890b419895d8c9c2672efb26ef8460abc4d9f8f031ae6bb5d627643695260",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "94",
+        "physical_page_start": 45,
+        "physical_page_end": 46,
+        "raw_line_start": 2942,
+        "raw_line_end": 2961,
+        "passage_sha256_utf8": "bc702d86c0b10f2d468af4cf70ea41b08504259b27b3bae51331058d1e37b587"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 29,
+      "verdict": "PASS",
+      "finding": "Art95 confirms 30 April, insurer/reinsurer 31 May and applicable DGE transfer instruction.",
+      "ledger_row_sha256": "d864afbdfea4d67694017ec3fa7c432f92f6a12f3b32b90e0431035dca7f3f0d",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "95",
+        "physical_page_start": 46,
+        "physical_page_end": 46,
+        "raw_line_start": 2961,
+        "raw_line_end": 2976,
+        "passage_sha256_utf8": "17e62238bc44cd2308dafb6b304a48d78fd9bfe2264112ff9d778bf4cd59815a"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 30,
+      "verdict": "PASS",
+      "finding": "Art97 and reproduced order confirm three copies and the listed financial/tax/third-party/landlord/bad-debt schedules.",
+      "ledger_row_sha256": "238153f27559967cdfe2da918587f5ea7f1101f3e996be49033eef4d660a08a8",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "97",
+        "physical_page_start": 48,
+        "physical_page_end": 53,
+        "raw_line_start": 3208,
+        "raw_line_end": 3609,
+        "passage_sha256_utf8": "a88da4c4ccad2a20154ae7ab3b194d0d2cb4e9f560977defabd719c6ecd3dca3"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 31,
+      "verdict": "PASS",
+      "finding": "Art100 confirms specified industries including mobile operators and cumulative client sales at least 5m excluding tax.",
+      "ledger_row_sha256": "0bc441738e9818325f177d959f7fea6e4779fe2acfbf94842ba79bde46d7f04e",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "100",
+        "physical_page_start": 61,
+        "physical_page_end": 61,
+        "raw_line_start": 4340,
+        "raw_line_end": 4359,
+        "passage_sha256_utf8": "480b8433d7357ee1466abe88c2770362a901e9869a974c02f3e471bb24569b73"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 32,
+      "verdict": "PASS",
+      "finding": "Art140(2) confirms securities 12.5% and Burkina-issued bonds 6%; paragraph1 debt-income 25% is a separate branch.",
+      "ledger_row_sha256": "247398797eb64d992053656a3058f0c4b764397929edd690819990d6503a213f",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "140",
+        "physical_page_start": 77,
+        "physical_page_end": 77,
+        "raw_line_start": 5728,
+        "raw_line_end": 5756,
+        "passage_sha256_utf8": "a56bab5153b5a2256b730b2a99585ee6aa03116505709bf6001496deeae4dcec"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 33,
+      "verdict": "PASS",
+      "finding": "Art141 confirms half rate for distributed shares/interests/commandites, three social periods and 42-month limit; separate community-company 3% branch.",
+      "ledger_row_sha256": "22804a6653ac6ee9fe053d0d151af2412c91a9692f7473b9a0f31815a9e01f39",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "141",
+        "physical_page_start": 77,
+        "physical_page_end": 78,
+        "raw_line_start": 5756,
+        "raw_line_end": 5781,
+        "passage_sha256_utf8": "7945ad664ea8cdfdfba21eea61753d8eeaf903b27feda02064547b7a8785486a"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 34,
+      "verdict": "PASS",
+      "finding": "Art671 confirms payment methods, evidence dates and regulatory receipt; electronic implementation not reviewed.",
+      "ledger_row_sha256": "5bc1e293599a03e44366640589991d22fa32b12d7e99b90404b915b7e24020cf",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "671",
+        "physical_page_start": 286,
+        "physical_page_end": 286,
+        "raw_line_start": 21738,
+        "raw_line_end": 21778,
+        "passage_sha256_utf8": "e4d236216d290bad2e11f78e2d612a2819633b15954888b0c509ae5e085c2fc0"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 35,
+      "verdict": "PASS",
+      "finding": "Art754 confirms 10/25/50/100% branches, minimums, notice and recurrence conditions.",
+      "ledger_row_sha256": "2f117a4f06602aad00acd064bbd9c4021b59e6e98a71b5c983bdd3f6f90fa501",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "754",
+        "physical_page_start": 303,
+        "physical_page_end": 304,
+        "raw_line_start": 23164,
+        "raw_line_end": 23194,
+        "passage_sha256_utf8": "50cd2cd98537a119756dbe2008456ac9e570233cd0234cfa1304f4103d287b4a"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 36,
+      "verdict": "PASS",
+      "finding": "Art755 confirms 25/50/100% good-faith/bad-faith/fraud branches and doubled recurrence.",
+      "ledger_row_sha256": "c851fb04afe94de068bb72ced5a45cedf2dbc7e4122b70611a84d2cf3667b79b",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "755",
+        "physical_page_start": 304,
+        "physical_page_end": 304,
+        "raw_line_start": 23194,
+        "raw_line_end": 23208,
+        "passage_sha256_utf8": "388ec8cc49985ba4c115ef421cb544e198f44b1d2abb7013a3e281140b727153"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 37,
+      "verdict": "PASS",
+      "finding": "Art756 confirms 10% and 1% per month/fraction for the named profit taxes.",
+      "ledger_row_sha256": "8560dde015defd91317d4831eb0f6dacd494b9d785e107b985281d1c247519a5",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "756",
+        "physical_page_start": 304,
+        "physical_page_end": 304,
+        "raw_line_start": 23208,
+        "raw_line_end": 23222,
+        "passage_sha256_utf8": "dce8b6fb95ece72801e8ed0559edf6ffb3a587fd3c2333702568ba4259a50310"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 38,
+      "verdict": "PASS",
+      "finding": "PASS: art757 ordinary200k,loss500k,convention/temporary-exemption1.5m branches now explicit; distinct TP branches separated.",
+      "ledger_row_sha256": "32a6a686136ec37a4ec8e62df3a31687d334e56f46c9d5c32d7964629583b892",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "757",
+        "physical_page_start": 304,
+        "physical_page_end": 304,
+        "raw_line_start": 23222,
+        "raw_line_end": 23271,
+        "passage_sha256_utf8": "c1b699f370adc9134a0e2ff51676fa9e45c3c1aa130d74249b2d280b07fbe23f"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Independent repaired row/Guide delta re-read against same actual article and neighbours."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 39,
+      "verdict": "PASS",
+      "finding": "Art758 confirms 25% late declaration and 50% assessment for arts26/92.",
+      "ledger_row_sha256": "ad078091875aba5e7e175118a05caf71e60354e7454107cb854126642e9a46a2",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "758",
+        "physical_page_start": 304,
+        "physical_page_end": 305,
+        "raw_line_start": 23271,
+        "raw_line_end": 23280,
+        "passage_sha256_utf8": "42e5e60821c6ae43ae29d7462f6c864635d29fb335a7f42847d88d5d9d5aa4e4"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 40,
+      "verdict": "PASS",
+      "finding": "Reproduced order2025-0148 arts18-19 confirms certification execution attestation and transitional visa restriction to RNI.",
+      "ledger_row_sha256": "cda587616844cc971524dfa3eb1dfc8690632b1200a7c369786b76bc192c4a70",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "97",
+        "physical_page_start": 48,
+        "physical_page_end": 53,
+        "raw_line_start": 3208,
+        "raw_line_end": 3609,
+        "passage_sha256_utf8": "a88da4c4ccad2a20154ae7ab3b194d0d2cb4e9f560977defabd719c6ecd3dca3"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-corporate-tax",
+      "row": 41,
+      "verdict": "PASS",
+      "finding": "Art196(2) confirms RSI CGA 30% profit-tax reduction distinct from MFP/TPA benefits.",
+      "ledger_row_sha256": "84bd9bf3d1bc6342780b54e24c113107391fb33847e9e023f13caeaff72a6a0b",
+      "ledger_sha256": "7aa960fefee4f686b12742c61fb7ab4b5f5a3b5038e56cbeeb13af2560787bf4",
+      "source": {
+        "article": "196",
+        "physical_page_start": 90,
+        "physical_page_end": 90,
+        "raw_line_start": 6782,
+        "raw_line_end": 6798,
+        "passage_sha256_utf8": "bf3bbca2c0a1173ceb345cff013cb78f09f7e25133f00e5428ecf36bfaf897e8"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 1,
+      "verdict": "PASS",
+      "finding": "Art1 confirms IBICA business/farming and mining-title scope.",
+      "ledger_row_sha256": "dc477e70f133eeae17bf006f900c5e738f87bab3adb98bf1cc913f506c840ee6",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "1",
+        "physical_page_start": 17,
+        "physical_page_end": 17,
+        "raw_line_start": 495,
+        "raw_line_end": 506,
+        "passage_sha256_utf8": "2af697faf757118c36450d0615b317ab08aadc972496ed990720dde1b0abdd21"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 2,
+      "verdict": "PASS",
+      "finding": "Art2 includes individuals, financial syndicates, listed property/furnished activity and art44 elections; detailed group list read.",
+      "ledger_row_sha256": "1b4cfac95180597c75cf5ca1f5249f67ce16c9f31b42cf02dd9c9abaf5deaf65",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "2",
+        "physical_page_start": 17,
+        "physical_page_end": 18,
+        "raw_line_start": 506,
+        "raw_line_end": 569,
+        "passage_sha256_utf8": "141060511dd3046a42304b5f43e0ce50870836fedeb794d46b50357a834913b7"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 3,
+      "verdict": "PASS",
+      "finding": "Art3 confirms domestic enterprise profits/treaty allocation and occasional activity rule.",
+      "ledger_row_sha256": "fe2e598a2ec88679c797cce116583ebd22a39b36583554683fcb8aa61c1616b0",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "3",
+        "physical_page_start": 18,
+        "physical_page_end": 18,
+        "raw_line_start": 569,
+        "raw_line_end": 589,
+        "passage_sha256_utf8": "2ad890cf1941feba9309712add0c1d3c19a252a2d7574927eaa4bc991384d98b"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 4,
+      "verdict": "PASS",
+      "finding": "Art4 defines all-operation/net-asset profit; special investment-income deduction reservation read.",
+      "ledger_row_sha256": "e557a7afe9bed05015c187c63ef997a7f2d7999d04897e36c4bd903edf775af3",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "4",
+        "physical_page_start": 18,
+        "physical_page_end": 18,
+        "raw_line_start": 589,
+        "raw_line_end": 611,
+        "passage_sha256_utf8": "1e428a95ba2e21f855f0c0fb1972b650f7f379f5f850f05e34aa5b78698e30da"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 5,
+      "verdict": "PASS",
+      "finding": "Art6 imports corporate taxable-profit determination.",
+      "ledger_row_sha256": "39aeb706673e5175f6b86185a0d0c2f2e23046570d38f2fd3ed7f493444ec569",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "6",
+        "physical_page_start": 18,
+        "physical_page_end": 18,
+        "raw_line_start": 631,
+        "raw_line_end": 635,
+        "passage_sha256_utf8": "bd55142b5a53ec114f8083e96bb568cedbe34d4a4d78222566ad93fc5a4f3e4d"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 6,
+      "verdict": "PASS",
+      "finding": "Art9 imports arts53-84 charge conditions.",
+      "ledger_row_sha256": "d9e04714a04360cafca8faaaa4b59ec0d66f1ed5e617c47769e707b39e3e96e1",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "9",
+        "physical_page_start": 19,
+        "physical_page_end": 19,
+        "raw_line_start": 647,
+        "raw_line_end": 651,
+        "passage_sha256_utf8": "bb9c9fd44ead58ba9befeaf9b2edfd2d2df07d4ec5c94c5b8f1eff36e1f6262c"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 7,
+      "verdict": "PASS",
+      "finding": "Art10 confirms full-time actual spouse work, comparative non-excessiveness, compulsory social affiliation and whole deduction denial.",
+      "ledger_row_sha256": "14766f5b8ac5947d577706d2a73f769976b54ea426712bd8f8a59e70e1115bc0",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "10",
+        "physical_page_start": 19,
+        "physical_page_end": 19,
+        "raw_line_start": 651,
+        "raw_line_end": 665,
+        "passage_sha256_utf8": "b763a53e81147997a4589080cbf81df9e3300945c03b83a3ce3a49f0d8832071"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 8,
+      "verdict": "PASS",
+      "finding": "Art11 requires allocation first, then two-thirds only when fraction cannot be precisely determined.",
+      "ledger_row_sha256": "23f51fe287be5ec7422b7f0c3dde437a3487c660ab48fd018380dca8110fa325",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "11",
+        "physical_page_start": 19,
+        "physical_page_end": 19,
+        "raw_line_start": 665,
+        "raw_line_end": 676,
+        "passage_sha256_utf8": "36e629e1eb43588d5ec610fe430c513966d450e84f46d295846e2f4f10973186"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 9,
+      "verdict": "PASS",
+      "finding": "Art13 confirms rounded-down 1000 base and progressive 10/20/27.5% slices.",
+      "ledger_row_sha256": "8f053c37c5210de12dcf237e37b28df765c6458ace12d78aadb5a93439deb474",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "13",
+        "physical_page_start": 19,
+        "physical_page_end": 19,
+        "raw_line_start": 683,
+        "raw_line_end": 693,
+        "passage_sha256_utf8": "b26da884df240a1dd73d407669d9b27b318889789b8c16e4917cc7b7e000934a"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 10,
+      "verdict": "PASS",
+      "finding": "Art14 confirms CGA 30% profit-tax reduction.",
+      "ledger_row_sha256": "bf71ed086933adf68c7c3926bc2eb85b904e3c4695c3f326f5907d756c1bc563",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "14",
+        "physical_page_start": 19,
+        "physical_page_end": 19,
+        "raw_line_start": 693,
+        "raw_line_end": 697,
+        "passage_sha256_utf8": "107d0cd781cb7e086abd035390bb569414ddf1cfb6182b2de554773a00d7825a"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 11,
+      "verdict": "PASS",
+      "finding": "Art15 confirms voluntary payment by following 30 April against result return.",
+      "ledger_row_sha256": "149c320f82e41be29ae1e9c329496c307295c517baa7b430ae45bc99e7851959",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "15",
+        "physical_page_start": 19,
+        "physical_page_end": 19,
+        "raw_line_start": 697,
+        "raw_line_end": 706,
+        "passage_sha256_utf8": "d1440590ca9b9d722aff087a0dd3e1fbd6b9dd08967b198c9c3aa69e74c80b27"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 12,
+      "verdict": "PASS",
+      "finding": "Art16 credits same-year MFP excluding additions and leaves excess with Treasury.",
+      "ledger_row_sha256": "2ab1ced551d5a1a9026522e020c663e129786a8a410be81d1edc2071d7130fd0",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "16",
+        "physical_page_start": 19,
+        "physical_page_end": 20,
+        "raw_line_start": 706,
+        "raw_line_end": 722,
+        "passage_sha256_utf8": "3832789c182df1b932b2faf1dd6d8fb43196856ef922329ded7f319523412e87"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 13,
+      "verdict": "PASS",
+      "finding": "Art17 confirms prior-year closed result return by 30 April.",
+      "ledger_row_sha256": "561f2acc653ae300dfcfd8d97b662231d84ad19359268e349c997eeabbe56014",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "17",
+        "physical_page_start": 20,
+        "physical_page_end": 20,
+        "raw_line_start": 722,
+        "raw_line_end": 733,
+        "passage_sha256_utf8": "d3492c2c97811c0a68f504fdae0a3cfa67f7014da2e00e155fb830c346b334b5"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 14,
+      "verdict": "PASS",
+      "finding": "Art18 confirms normal SYSCOHADA/special framework, copies and full attachment list; reproduced visa order read.",
+      "ledger_row_sha256": "ce8b1c7268484e626fb3e0ebc64c81dfafba763c201ccfc4e86f888ca4b71215",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "18",
+        "physical_page_start": 20,
+        "physical_page_end": 20,
+        "raw_line_start": 733,
+        "raw_line_end": 788,
+        "passage_sha256_utf8": "183a4d79652f2980d202219d924820f629542e407e1623c9dd47bc4ff155b7a2"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 15,
+      "verdict": "PASS",
+      "finding": "Art19 confirms RNI customer list (5m VAT-inclusive), amended statutes and minutes within seven months for art44 entities; execution held.",
+      "ledger_row_sha256": "5601a252dcb46747e7dd6e1352939488c45a74db81380a0f8ef2763a910f9d3f",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "19",
+        "physical_page_start": 20,
+        "physical_page_end": 21,
+        "raw_line_start": 788,
+        "raw_line_end": 821,
+        "passage_sha256_utf8": "bd9a478acc0beba0c055a0373a799380bf2774314d548238b591738792db4b67"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 16,
+      "verdict": "PASS",
+      "finding": "Art21 confirms RSI normal accounts and lists attachments/customer/electing-entity additions; not cashbook accounting.",
+      "ledger_row_sha256": "0455b5a73a55e53f584f8e4e64f94a3a21b9d7c590a518052203a6e7fae010aa",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "21",
+        "physical_page_start": 21,
+        "physical_page_end": 22,
+        "raw_line_start": 846,
+        "raw_line_end": 933,
+        "passage_sha256_utf8": "2f0b3f6100bc6a04e4bc349eaed39bdef7ad933f56e674675c7340fe99641376"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 17,
+      "verdict": "PASS",
+      "finding": "Art23 confirms annual prior turnover excluding tax, rounded down to 100000.",
+      "ledger_row_sha256": "f82d7d165b242490a1060591c25b30f179be7e97f9df0bd3a432da4a282abdb5",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "23",
+        "physical_page_start": 23,
+        "physical_page_end": 23,
+        "raw_line_start": 971,
+        "raw_line_end": 982,
+        "passage_sha256_utf8": "b6aa7b1e25e823fdac397aff06a9f10b34ea9a47aa56585f5d126eec5c5060a5"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 18,
+      "verdict": "PASS",
+      "finding": "Art24 confirms 0.5% with RNI/RSI floors; listed exclusive activity floor branch read.",
+      "ledger_row_sha256": "0ec8150b62968609bfe37f7ae0102094e50002d3871f5d8800cbcd5ddb10f955",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "24",
+        "physical_page_start": 23,
+        "physical_page_end": 23,
+        "raw_line_start": 982,
+        "raw_line_end": 1004,
+        "passage_sha256_utf8": "150b5bea65e5201c882971b3e2f9ee2d46f80c872b51264fe65291df487bfbc3"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 19,
+      "verdict": "PASS",
+      "finding": "Art25 confirms monthly/quarterly payments, tax rounding to 1000, fractional floors and CGA 50%.",
+      "ledger_row_sha256": "8224b6d45c3b1e222781f606e3dd00818627ec3b63db74124a8aa0dfbef96ddc",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "25",
+        "physical_page_start": 23,
+        "physical_page_end": 23,
+        "raw_line_start": 1004,
+        "raw_line_end": 1034,
+        "passage_sha256_utf8": "dc49f077f58d4a044d88aad6c07ff480c3f8aba362768a1c7eec175c5d6f8854"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 20,
+      "verdict": "PASS",
+      "finding": "Art26 confirms RNI next-month15 / RSI post-quarter10 declaration/payment.",
+      "ledger_row_sha256": "71fb2777906f11ae30dee63b885297975355f08c9d9a7392222131821db35fda",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "26",
+        "physical_page_start": 23,
+        "physical_page_end": 24,
+        "raw_line_start": 1034,
+        "raw_line_end": 1061,
+        "passage_sha256_utf8": "890f52e34637ecb7f01a148a122ad44021de18034060fc1f7607e95408652742"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 21,
+      "verdict": "PASS",
+      "finding": "Art27 confirms newly created first operating-period minimum exemption.",
+      "ledger_row_sha256": "eb13f6392fc287100450d3a4ccbc8d5e1dd9459728e2833189a9e01d818cdcb8",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "27",
+        "physical_page_start": 24,
+        "physical_page_end": 24,
+        "raw_line_start": 1061,
+        "raw_line_end": 1066,
+        "passage_sha256_utf8": "b57f375dc7df2fe30f40dbd7b80049fd5cad037856d17c1023b2561e5166eefa"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 22,
+      "verdict": "PASS",
+      "finding": "Art28 confirms liberal/noncommercial/residual groups and independent collaborator rule.",
+      "ledger_row_sha256": "a9bc742b74415f152752e7ac17cf3c06ebcc0e0df0c6837f601c73622f1ee0e5",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "28",
+        "physical_page_start": 24,
+        "physical_page_end": 24,
+        "raw_line_start": 1066,
+        "raw_line_end": 1090,
+        "passage_sha256_utf8": "df3a876e5176177f3420aaeefdfa7fc763d6d95235e727ab1498db7f4305d326"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 23,
+      "verdict": "PASS",
+      "finding": "Art29 confirms natural persons, professional civil members, individual education and religious entities.",
+      "ledger_row_sha256": "7af7ff433ee3d4019989c86c614665728ecb1f9e0ca389138c25742a7ab3db3f",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "29",
+        "physical_page_start": 24,
+        "physical_page_end": 24,
+        "raw_line_start": 1090,
+        "raw_line_end": 1105,
+        "passage_sha256_utf8": "6ed5a842233293b9c31446ed0a19d054daa89ac7cbaa5b59abb974f1ef09b43d"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 24,
+      "verdict": "PASS",
+      "finding": "Art30 includes copyright, sport, invention, bourse, spectacle and residual noncommercial ancillary receipts.",
+      "ledger_row_sha256": "1bcef6703c722a2c3b2068e066b5f17c3553d345a6a53e954106994714a6f4e2",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "30",
+        "physical_page_start": 24,
+        "physical_page_end": 25,
+        "raw_line_start": 1105,
+        "raw_line_end": 1138,
+        "passage_sha256_utf8": "40173ccc520e03cf4f7e4d0d8d10b905fc794b0c8e88fc9c3298cb56aca390af"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 25,
+      "verdict": "PASS",
+      "finding": "Art31 expressly incorporates arts3/5 territoriality/annuality.",
+      "ledger_row_sha256": "ab79ab1d5e38839c1d5687a623a32112674a8a9ececb5247590056dbdff3fb07",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "31",
+        "physical_page_start": 25,
+        "physical_page_end": 25,
+        "raw_line_start": 1138,
+        "raw_line_end": 1143,
+        "passage_sha256_utf8": "266c620c98323acb02ab7d905e65d3a8c692dee8936bfabad64953bdc8ffb5f7"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 26,
+      "verdict": "PASS",
+      "finding": "Art32 confirms receipts minus necessary expenditure plus disposal/cessation elements.",
+      "ledger_row_sha256": "3cc3f23dd04e9c18ee60c3c0c123d9c1b719d9706b75ce44bf9303deeb0ae07c",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "32",
+        "physical_page_start": 25,
+        "physical_page_end": 25,
+        "raw_line_start": 1143,
+        "raw_line_end": 1159,
+        "passage_sha256_utf8": "6cd4c48889cba63e23c7bd4578e330ce7167926f4c15944b16606665bc0f69d2"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 27,
+      "verdict": "PASS",
+      "finding": "Art33 confirms collected advances/replacement fees/remuneration gifts and ancillary receipts; real client-debours/deposit exclusions.",
+      "ledger_row_sha256": "6b619b1f7945d74c96f5d1bda47caa55f9e33e3c13e374586718d0afe9b919cc",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "33",
+        "physical_page_start": 25,
+        "physical_page_end": 26,
+        "raw_line_start": 1159,
+        "raw_line_end": 1219,
+        "passage_sha256_utf8": "5e177f5df115667c36da071ec4ffd3a16a092a3e2c4feebdb9533a26c96900e8"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 28,
+      "verdict": "PASS_WITH_EXPLICIT_HOLD",
+      "finding": "Art34 confirms paid expenses, foreign fees10% overhead cap, spouse and mixed-cost tests. Stale art53 points2-6 is accurately held; art53 now prints five points.",
+      "ledger_row_sha256": "af0b7d7b4eb9e0a11fc7be8501e763b0cbffe0fdb7a2ffe9013cdca4033c86f7",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "34",
+        "physical_page_start": 26,
+        "physical_page_end": 26,
+        "raw_line_start": 1219,
+        "raw_line_end": 1295,
+        "passage_sha256_utf8": "5a606dce5adddff841bc9b82283657bcc64b3b7926a16021d82ccc4cb1e4462b"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 29,
+      "verdict": "PASS",
+      "finding": "Art35 rejects personal/luxury/voluntary expenses, capital expenditure/repayments/placements and statutory penalties.",
+      "ledger_row_sha256": "1e854a45b9fca5fc1404f564a8814e3603765a9594dedc05394bf5fc4ba15089",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "35",
+        "physical_page_start": 26,
+        "physical_page_end": 27,
+        "raw_line_start": 1295,
+        "raw_line_end": 1323,
+        "passage_sha256_utf8": "246f82b627b01b24f9151fd531dcd53b8afefa8df08e821c7edd5bdee2049df4"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 30,
+      "verdict": "PASS",
+      "finding": "Art39 confirms bands/rounding/CGA reduction, all authorised specialist minima, education three-year100k rule and first-period exemption.",
+      "ledger_row_sha256": "cf3d124a608c902f8ee85d47d7d66d6b2ba1e6efc30cdac78ae3d6f01119fcfe",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "39",
+        "physical_page_start": 27,
+        "physical_page_end": 28,
+        "raw_line_start": 1348,
+        "raw_line_end": 1419,
+        "passage_sha256_utf8": "37faf880ea56a24aabfc957f90d17e1b2f203c0ab81f10ea42438899c6044e9b"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 31,
+      "verdict": "PASS",
+      "finding": "Art39(3) confirms last February day for payment.",
+      "ledger_row_sha256": "3fec49faa0c07a1b5dfb4974132cf74fc297de41ad1e3d2a2ccd881c69d9ccf1",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "39",
+        "physical_page_start": 27,
+        "physical_page_end": 28,
+        "raw_line_start": 1348,
+        "raw_line_end": 1419,
+        "passage_sha256_utf8": "37faf880ea56a24aabfc957f90d17e1b2f203c0ab81f10ea42438899c6044e9b"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 32,
+      "verdict": "PASS",
+      "finding": "Art40 confirms prior-year declaration by last February day, member shares and all named schedules.",
+      "ledger_row_sha256": "943e35b43e8f346cc1b113b32230f1b3331ce53c4fc706863bc2ff75607d34ce",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "40",
+        "physical_page_start": 28,
+        "physical_page_end": 29,
+        "raw_line_start": 1419,
+        "raw_line_end": 1493,
+        "passage_sha256_utf8": "5a21e5cb9d23763cd8b6c92b3d57b1145ae5ad961ab94169d46323db2908d1bb"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 33,
+      "verdict": "PASS",
+      "finding": "Art197 confirms CGA25% CME reduction.",
+      "ledger_row_sha256": "35be17cf8cfa21251d2a5cae0a8f21e0c304c83415de7239e27dfaf5fe68123f",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "197",
+        "physical_page_start": 90,
+        "physical_page_end": 90,
+        "raw_line_start": 6798,
+        "raw_line_end": 6805,
+        "passage_sha256_utf8": "2d84ed4c83250301b7949ad584b0cc51b7b50ec48082b179af2ebfaf13212bd0"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 34,
+      "verdict": "PASS",
+      "finding": "Art527 confirms50m threshold excluding tax, start-year proration and three-year downgrade.",
+      "ledger_row_sha256": "8752b690e1a795f5b0cf5ddb6f9685329357920847e3cd93237e13668570d51f",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "527",
+        "physical_page_start": 213,
+        "physical_page_end": 213,
+        "raw_line_start": 15856,
+        "raw_line_end": 15874,
+        "passage_sha256_utf8": "49e22be1282939e7bfdf50561923a47a62941143f05d52774cbbf3a2a1f5eb2c"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 35,
+      "verdict": "PASS",
+      "finding": "Art528 expressly requires normal SYSCOHADA.",
+      "ledger_row_sha256": "e6dccf09ff9d4ede8b314afe1e836e498fa5bf47194110c48ce7e895f99c9d11",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "528",
+        "physical_page_start": 213,
+        "physical_page_end": 213,
+        "raw_line_start": 15874,
+        "raw_line_end": 15881,
+        "passage_sha256_utf8": "8c26c8c835233134ae8737b753c083c44f55055b8889641b39bf2a4c86a38698"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 36,
+      "verdict": "PASS",
+      "finding": "Art529 confirms15m-to-below50m and CME exclusions, proration, crossing/notification and three-year downgrade.",
+      "ledger_row_sha256": "f66e708a2fc468f326700b4085623db13064639454f463b786e09163e115f36a",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "529",
+        "physical_page_start": 213,
+        "physical_page_end": 214,
+        "raw_line_start": 15881,
+        "raw_line_end": 15919,
+        "passage_sha256_utf8": "a993f261144ae64182155d17f576af098f01ca6ca28af451db4ffa28f50f56cf"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 37,
+      "verdict": "PASS",
+      "finding": "Art530 confirms pre-February option, compliance/accounts/invoices/VAT undertaking,30 clear days, three-year lock and withdrawal/cancellation.",
+      "ledger_row_sha256": "33a58bdb65c6aa52c0187a570624a1ba29354a4a271e59ce14ed7d4de44666cc",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "530",
+        "physical_page_start": 214,
+        "physical_page_end": 214,
+        "raw_line_start": 15919,
+        "raw_line_end": 15962,
+        "passage_sha256_utf8": "df2671a1dc4919d789640a5dac365c1fa84005117be8b87071f299c9068e7c54"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 38,
+      "verdict": "PASS",
+      "finding": "Art531 expressly requires normal SYSCOHADA under RSI.",
+      "ledger_row_sha256": "66c50a8d6e0ff435d9d4100da652f01ea81b6f1fa3c54ab02c8569cb59536e80",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "531",
+        "physical_page_start": 214,
+        "physical_page_end": 214,
+        "raw_line_start": 15962,
+        "raw_line_end": 15969,
+        "passage_sha256_utf8": "6ebfa3ed202a6e9cbe772e75082c145c659a5d78b0774ac3ca323636fa810ed6"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 39,
+      "verdict": "PASS",
+      "finding": "Art532 lists only IBICA,IS,MFP,TPA,patente substitution and ordinary other taxes.",
+      "ledger_row_sha256": "bc433d0948ade4553dfdc0b69fab38f17aa070c34cefe79385da624163d58b2b",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "532",
+        "physical_page_start": 214,
+        "physical_page_end": 215,
+        "raw_line_start": 15969,
+        "raw_line_end": 15993,
+        "passage_sha256_utf8": "57769ae65122f96027a2c69700c3ba707cf187e9221722913ba8f161668748d7"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 40,
+      "verdict": "PASS",
+      "finding": "Art533-1 confirms individual5m-to-below15m/legal-person-below15m groups and crossing/30days.",
+      "ledger_row_sha256": "23dcdf437cabbfec90a9d780b6cd2f0b6cb3f4518f7c677a5a63fe486f481b68",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "533-1",
+        "physical_page_start": 215,
+        "physical_page_end": 215,
+        "raw_line_start": 16003,
+        "raw_line_end": 16026,
+        "passage_sha256_utf8": "189ca6228789a317f9b222b1fff6ba6ac79d73e4cd8049f67c2b88b51bdaaca8"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 41,
+      "verdict": "PASS",
+      "finding": "Art533-2 confirms individual-below5m group and crossing/30days; art533-3 neighbours confirms fixed/itinerant application.",
+      "ledger_row_sha256": "41378f2c459a13faa15a19c652a9dede8ce08f045532e7c6f326e6f235f4a636",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "533-2",
+        "physical_page_start": 215,
+        "physical_page_end": 215,
+        "raw_line_start": 16026,
+        "raw_line_end": 16042,
+        "passage_sha256_utf8": "e22fef9ea107302989d2772c6444cfa75d8fe14d084013d1baa776465056b379"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 42,
+      "verdict": "PASS",
+      "finding": "Art534 excludes livestock-contribution taxpayers and liberal professions regardless of form.",
+      "ledger_row_sha256": "4c48b3f8df9704de2360960a2aa9860f55b07d1fdc8d9021051a81f53466530f",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "534",
+        "physical_page_start": 215,
+        "physical_page_end": 215,
+        "raw_line_start": 16048,
+        "raw_line_end": 16057,
+        "passage_sha256_utf8": "1e18458b86ef662b547f8e467c167267fac2c72b3b1df17491befa1168a882b5"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 43,
+      "verdict": "PASS",
+      "finding": "Art535 confirms letter before1February,1January effect, three-year lock and January withdrawal.",
+      "ledger_row_sha256": "ec1bf037f05f1384457daa534e7ef11880f4a470a66dc2a9c0cb9f0e88df8a4b",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "535",
+        "physical_page_start": 215,
+        "physical_page_end": 216,
+        "raw_line_start": 16057,
+        "raw_line_end": 16080,
+        "passage_sha256_utf8": "bc773a4142b7bfd9d5d88e4b9d4e62522646efcf3a443893dd3185bd8ccf3385"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 44,
+      "verdict": "PASS",
+      "finding": "Art536 entire page216 visually checked: eight classes/boundaries, four zones and full32-cell grid. D\u00e9claratif/forfait bases confirmed.",
+      "ledger_row_sha256": "97994caab04e4cfb72636f5af5a8b637446e72c82f9af39e848913dc6fe41911",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "536",
+        "physical_page_start": 216,
+        "physical_page_end": 217,
+        "raw_line_start": 16080,
+        "raw_line_end": 16116,
+        "passage_sha256_utf8": "6a8893b5e6fc369a45a89c1fd18da4427e31d7698317fe6243100866c7b5c155"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 45,
+      "verdict": "PASS",
+      "finding": "Art537 confirms annual simultaneous return/payment and optional quarter payments first ten days April/July/October/January.",
+      "ledger_row_sha256": "d4d2c2aef4d7a76e9207a98dafca643e14b2ac2ee503172728d8a2e6638befb4",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "537",
+        "physical_page_start": 217,
+        "physical_page_end": 217,
+        "raw_line_start": 16116,
+        "raw_line_end": 16133,
+        "passage_sha256_utf8": "e104bbe8d8a448dfb51047007c4f3a9bd3c8746789b839856e35b60fed79e885"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 46,
+      "verdict": "PASS",
+      "finding": "Art538 confirms40k/12k/9k/6k/4k transport tariffs and forains treatment.",
+      "ledger_row_sha256": "62bd91c7bf8d53e071747b4a1521741449ba870eb89a083b222560388e8dee1e",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "538",
+        "physical_page_start": 217,
+        "physical_page_end": 217,
+        "raw_line_start": 16133,
+        "raw_line_end": 16149,
+        "passage_sha256_utf8": "c80de5c741774ff7e55a231c134f6b52b4f20924a7b9fed21be9a5bacb0a89a7"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 47,
+      "verdict": "PASS",
+      "finding": "Art539 confirms30days existence declaration,minimal treasury accounts,invoices and d\u00e9claratif31March return.",
+      "ledger_row_sha256": "ac4d03ca77b2732224e925c67e649b60d9e6065df6ae2d6151cf669f6ed85250",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "539",
+        "physical_page_start": 217,
+        "physical_page_end": 217,
+        "raw_line_start": 16149,
+        "raw_line_end": 16169,
+        "passage_sha256_utf8": "8ac15bb2bc11c94f09a6dd66e1e41d1fdef0e136020063edd593ef6393ce774e"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 48,
+      "verdict": "PASS",
+      "finding": "Art540 confirms CME identity card and presentation/renewal rules.",
+      "ledger_row_sha256": "21622cd1863973f329d772390776c6b7be8a160da760bc257dff68730a923d11",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "540",
+        "physical_page_start": 217,
+        "physical_page_end": 218,
+        "raw_line_start": 16169,
+        "raw_line_end": 16196,
+        "passage_sha256_utf8": "b28d6fec28bae247b22661a8b4e0fa3137042cb22a956fbc070510ce80fffc0b"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 49,
+      "verdict": "PASS",
+      "finding": "Art307(1) expressly reserves arts301/530 options; blanket legacy VAT prohibition correctly removed.",
+      "ledger_row_sha256": "34bf76f96ffc206ea0224e2c60daa5985a41fe3a121e86e08e0b5854b046046d",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "307",
+        "physical_page_start": 133,
+        "physical_page_end": 136,
+        "raw_line_start": 10139,
+        "raw_line_end": 10448,
+        "passage_sha256_utf8": "ea0c48ea685cb20fabfb0afc9cc0da8362cec400d319a4349ede209cfcbf7d8a"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 50,
+      "verdict": "PASS",
+      "finding": "Art754 confirms return penalty branches,minimums,notice and recurrence.",
+      "ledger_row_sha256": "0584d1510a3fe025a40f23a931b5633514f073bca5390bf739f67c9da2dd3528",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "754",
+        "physical_page_start": 303,
+        "physical_page_end": 304,
+        "raw_line_start": 23164,
+        "raw_line_end": 23194,
+        "passage_sha256_utf8": "50cd2cd98537a119756dbe2008456ac9e570233cd0234cfa1304f4103d287b4a"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 51,
+      "verdict": "PASS",
+      "finding": "Art755 confirms good/bad-faith/fraud branches and doubled recurrence.",
+      "ledger_row_sha256": "ac661b9334ab3be5c2a2699e11d1eb9153cec3213b4d857072b99cf785bcd55d",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "755",
+        "physical_page_start": 304,
+        "physical_page_end": 304,
+        "raw_line_start": 23194,
+        "raw_line_end": 23208,
+        "passage_sha256_utf8": "388ec8cc49985ba4c115ef421cb544e198f44b1d2abb7013a3e281140b727153"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 52,
+      "verdict": "PASS",
+      "finding": "Art756 confirms10%+1%month/fraction for named profit taxes.",
+      "ledger_row_sha256": "b6e1b1a16b7f221105cd9724310917d0a55effdc45df2b048da313298b0aa63a",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "756",
+        "physical_page_start": 304,
+        "physical_page_end": 304,
+        "raw_line_start": 23208,
+        "raw_line_end": 23222,
+        "passage_sha256_utf8": "dce8b6fb95ece72801e8ed0559edf6ffb3a587fd3c2333702568ba4259a50310"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 53,
+      "verdict": "PASS",
+      "finding": "PASS: art757 ordinary200k,loss500k,convention/temporary-exemption1.5m branches now explicit; distinct TP branches separated.",
+      "ledger_row_sha256": "79789b9fadc5b7f2ea0d86b3fa15b87dbc4d4e7e0c793c7c4d280a9b826ac2f9",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "757",
+        "physical_page_start": 304,
+        "physical_page_end": 304,
+        "raw_line_start": 23222,
+        "raw_line_end": 23271,
+        "passage_sha256_utf8": "c1b699f370adc9134a0e2ff51676fa9e45c3c1aa130d74249b2d280b07fbe23f"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Independent repaired row/Guide delta re-read against same actual article and neighbours."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 54,
+      "verdict": "PASS",
+      "finding": "Art758 confirms25/50% for arts26/92 defaults.",
+      "ledger_row_sha256": "e2eb2525bb36314250136af50e509d47142302bd4009af5a35b372ca4a99a179",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "758",
+        "physical_page_start": 304,
+        "physical_page_end": 305,
+        "raw_line_start": 23271,
+        "raw_line_end": 23280,
+        "passage_sha256_utf8": "42e5e60821c6ae43ae29d7462f6c864635d29fb335a7f42847d88d5d9d5aa4e4"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 55,
+      "verdict": "PASS",
+      "finding": "Art536 rendered page216 zoneA class1-8 values all match.",
+      "ledger_row_sha256": "b7f91957a0b846d43e2a997afdfe1b61ac6a06b6311a90830a9a0b8e6f342961",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "536",
+        "physical_page_start": 216,
+        "physical_page_end": 217,
+        "raw_line_start": 16080,
+        "raw_line_end": 16116,
+        "passage_sha256_utf8": "6a8893b5e6fc369a45a89c1fd18da4427e31d7698317fe6243100866c7b5c155"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 56,
+      "verdict": "PASS",
+      "finding": "Art536 rendered page216 zoneB class1-8 values all match.",
+      "ledger_row_sha256": "11ea67fb158396ef110aaffeb440b945dceab817a6b151b28ec8dfe7fb4d920d",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "536",
+        "physical_page_start": 216,
+        "physical_page_end": 217,
+        "raw_line_start": 16080,
+        "raw_line_end": 16116,
+        "passage_sha256_utf8": "6a8893b5e6fc369a45a89c1fd18da4427e31d7698317fe6243100866c7b5c155"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 57,
+      "verdict": "PASS",
+      "finding": "Art536 rendered page216 zoneC class1-8 values all match.",
+      "ledger_row_sha256": "0f16d824c9d1c567ac62986ed50d78916432f738a5fc985f566a925f1e54e392",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "536",
+        "physical_page_start": 216,
+        "physical_page_end": 217,
+        "raw_line_start": 16080,
+        "raw_line_end": 16116,
+        "passage_sha256_utf8": "6a8893b5e6fc369a45a89c1fd18da4427e31d7698317fe6243100866c7b5c155"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-income-tax",
+      "row": 58,
+      "verdict": "PASS",
+      "finding": "Art536 rendered page216 zoneD class1-8 values all match.",
+      "ledger_row_sha256": "327b1bc548d6586bbe05412a5ec37584235404693d92ad1a7b409a469534c69a",
+      "ledger_sha256": "1dd51433e186c224c1ccb19131ad402191071f31f27b2ddf6b9f6a581616246e",
+      "source": {
+        "article": "536",
+        "physical_page_start": 216,
+        "physical_page_end": 217,
+        "raw_line_start": 16080,
+        "raw_line_end": 16116,
+        "passage_sha256_utf8": "6a8893b5e6fc369a45a89c1fd18da4427e31d7698317fe6243100866c7b5c155"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 1,
+      "verdict": "PASS",
+      "finding": "Art105 includes public/private remuneration,bonuses,listed managers and stated public-employer benefits exclusion.",
+      "ledger_row_sha256": "398db3f4e5bbc869bc7adcdfa02d1d1d948b9dcd13570c2b683ce29f814a1800",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "105",
+        "physical_page_start": 63,
+        "physical_page_end": 63,
+        "raw_line_start": 4489,
+        "raw_line_end": 4513,
+        "passage_sha256_utf8": "73f2ddf197e551e380f0b87b70a2955fcf467653349d7893dda7c96bfbe84d20"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 2,
+      "verdict": "PASS",
+      "finding": "Art106 confirms20%/75k housing,5%/50k function,5%/30k transport; function qualification and actual amounts retained.",
+      "ledger_row_sha256": "70b0af68c13e28dc18309fe8f019f9a9cf5f7935d9d6e66715dc06dc74345e1b",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "106",
+        "physical_page_start": 63,
+        "physical_page_end": 64,
+        "raw_line_start": 4513,
+        "raw_line_end": 4582,
+        "passage_sha256_utf8": "40e72f48ff61161634e8a8f23d5182ad8dffa03afc174f0c0177cce31ce40e4c"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 3,
+      "verdict": "PASS",
+      "finding": "Art106 defines gross using category base plus allowances/benefits less social withholding; cash+same-purpose benefit aggregate.",
+      "ledger_row_sha256": "ffc893dda2ccf8183b41a5c4a0b7c3b927da0f2e9dcce793bbea3e5fc5bff6cd",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "106",
+        "physical_page_start": 63,
+        "physical_page_end": 64,
+        "raw_line_start": 4513,
+        "raw_line_end": 4582,
+        "passage_sha256_utf8": "40e72f48ff61161634e8a8f23d5182ad8dffa03afc174f0c0177cce31ce40e4c"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 4,
+      "verdict": "PASS",
+      "finding": "Art106(2)-(7) confirms family,pension,distinction,dismissal/notice,retirement and reciprocal diplomacy branches.",
+      "ledger_row_sha256": "bde6691f5af17f22419245c53f26131940c2cb612a42d894e3f91cbd2bfc6f96",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "106",
+        "physical_page_start": 63,
+        "physical_page_end": 64,
+        "raw_line_start": 4513,
+        "raw_line_end": 4582,
+        "passage_sha256_utf8": "40e72f48ff61161634e8a8f23d5182ad8dffa03afc174f0c0177cce31ce40e4c"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 5,
+      "verdict": "PASS",
+      "finding": "Art107 confirms residence hierarchy,183days/twelve-month fallback,treaty reservation and distinct nonresident two-condition branch.",
+      "ledger_row_sha256": "748614b169791f8584240b606aedb629c45dc4817d1e8f9d32d8861d55baf85a",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "107",
+        "physical_page_start": 64,
+        "physical_page_end": 64,
+        "raw_line_start": 4582,
+        "raw_line_end": 4638,
+        "passage_sha256_utf8": "0324c011583d4e9de016d436e9c2812d5d6a763587ab89ade442dcfafb439265"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 6,
+      "verdict": "PASS",
+      "finding": "Art108 confirms stated public/private paid-leave domicile retention.",
+      "ledger_row_sha256": "f4a6429daba7cc392a700987e959b620b7ec52ea55da21ec7d97b5f0a65972d8",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "108",
+        "physical_page_start": 64,
+        "physical_page_end": 65,
+        "raw_line_start": 4638,
+        "raw_line_end": 4655,
+        "passage_sha256_utf8": "5d2c68c28176371536cce4af37f1f54dc940c06212d6fe6976758b855b163ae4"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 7,
+      "verdict": "PASS",
+      "finding": "Art109 confirms remuneration/benefits base subject to art106.",
+      "ledger_row_sha256": "6dd03690404100bb06552fdee2316dbab6ba478e70d8baee9c1da34728e468aa",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "109",
+        "physical_page_start": 65,
+        "physical_page_end": 65,
+        "raw_line_start": 4655,
+        "raw_line_end": 4664,
+        "passage_sha256_utf8": "c4beb3004a1cf3f1d49fd711e9e077085e5853afebe07a7a8f5a632b55edb17f"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 8,
+      "verdict": "PASS",
+      "finding": "Art110 confirms real value,monthly5%/12 fixed-asset valuation and exhaustive benefit categories with collective-transport exclusion.",
+      "ledger_row_sha256": "2eff1243d7f50be652e48fd1262b8e80fd428fc467aeba4629e3199941222462",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "110",
+        "physical_page_start": 65,
+        "physical_page_end": 65,
+        "raw_line_start": 4664,
+        "raw_line_end": 4688,
+        "passage_sha256_utf8": "6e4519d6f19dbf66b3e8e5851f397b16a92d232af2cd4d2b560537a13623d863"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 9,
+      "verdict": "PASS",
+      "finding": "Art111 confirms actual pension deduction capped8% category base,25/20% professional deduction and art106 franchises.",
+      "ledger_row_sha256": "94bc78f92dc923a42505d3a912112ad5878cd600905fcb6d5f16ec7c46eb0f6f",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "111",
+        "physical_page_start": 65,
+        "physical_page_end": 65,
+        "raw_line_start": 4688,
+        "raw_line_end": 4715,
+        "passage_sha256_utf8": "ec9025f489f1715e0c979ad4fe8086ce9d6fbb4ce3572928c5af1f1d2a661528"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 10,
+      "verdict": "PASS",
+      "finding": "Art111 defines contractual category base excluding all allowances.",
+      "ledger_row_sha256": "b22d883576aac81e7750647bd5879c3fb60acc81b808d288a17125f5da3d56f5",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "111",
+        "physical_page_start": 65,
+        "physical_page_end": 65,
+        "raw_line_start": 4688,
+        "raw_line_end": 4715,
+        "passage_sha256_utf8": "ec9025f489f1715e0c979ad4fe8086ce9d6fbb4ce3572928c5af1f1d2a661528"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 11,
+      "verdict": "PASS_WITH_EXPLICIT_HOLD",
+      "finding": "Art112 confirms all seven printed marginal bands; hundred-unit administrative rounding remains explicitly held.",
+      "ledger_row_sha256": "568246c5639352283350bdb9ef7d7e056b0d1e66cdfd7817eeb17be41b7c65f9",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "112",
+        "physical_page_start": 65,
+        "physical_page_end": 66,
+        "raw_line_start": 4715,
+        "raw_line_end": 4740,
+        "passage_sha256_utf8": "2497aaa7d81a67734f809d4471d823e9881a17b053851a4f6fc23b7a2a1c040f"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 12,
+      "verdict": "PASS",
+      "finding": "Art113 confirms8/10/12/14% family reductions and eligible no-separate-income dependants.",
+      "ledger_row_sha256": "6901e7c2ea279c1759de0150d5edac9d89d80c0054c172597ce416e4339f2079",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "113",
+        "physical_page_start": 66,
+        "physical_page_end": 66,
+        "raw_line_start": 4740,
+        "raw_line_end": 4770,
+        "passage_sha256_utf8": "0fd4eb31d3e2f725ecc5c99643cd2449a57f6c1316cfabd33c6f3ea0e649e654"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 13,
+      "verdict": "PASS",
+      "finding": "Art113(3)-(4) confirms separate salaried wives,no duplicate charges and following-month change.",
+      "ledger_row_sha256": "6bfd501b0fbc710ee7dd272d67fd7b39e6a1f3e386d80dd8547e0a6ebae214a9",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "113",
+        "physical_page_start": 66,
+        "physical_page_end": 66,
+        "raw_line_start": 4740,
+        "raw_line_end": 4770,
+        "passage_sha256_utf8": "0fd4eb31d3e2f725ecc5c99643cd2449a57f6c1316cfabd33c6f3ea0e649e654"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 14,
+      "verdict": "PASS",
+      "finding": "Art114 confirms domiciled foreign/diplomatic pay recipient calculation/payment when employer did not withhold.",
+      "ledger_row_sha256": "91c8655ab45710bed7a28735ddbf37faeacb4aba2fe0019e6ec3f6762251a6c8",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "114",
+        "physical_page_start": 66,
+        "physical_page_end": 66,
+        "raw_line_start": 4770,
+        "raw_line_end": 4794,
+        "passage_sha256_utf8": "88749cca442b2022ff8af1af1432128bd05b053a2526299ec769f0cca380b426"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 15,
+      "verdict": "PASS",
+      "finding": "Art115 confirms records,voucher,third-following-year retention and availability.",
+      "ledger_row_sha256": "e8f413f50c7fdec3d208fcce614b79e4e72d2f72610ad4141e2701a6c37ddc63",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "115",
+        "physical_page_start": 66,
+        "physical_page_end": 67,
+        "raw_line_start": 4794,
+        "raw_line_end": 4826,
+        "passage_sha256_utf8": "6447561726a9e8366b421a7b93108d0b47975ca3362b9bf75fb791a5aa0eee7e"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 16,
+      "verdict": "PASS",
+      "finding": "Art116 confirms firstten nextmonth declaration/payment,form/statement,special cessation/transfer/death timing.",
+      "ledger_row_sha256": "ef7e4dc33a482d58d8072975a7950f7d92b6e287ea4198f6e4f0cd962a123539",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "116",
+        "physical_page_start": 67,
+        "physical_page_end": 67,
+        "raw_line_start": 4826,
+        "raw_line_end": 4876,
+        "passage_sha256_utf8": "e28b9bf3d22871c26153c0751c3ca576ad1a833e531e00ca59247dce516acba0"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 17,
+      "verdict": "PASS",
+      "finding": "Art116(4) confirms monthly<=5000 payment deferral and acceleration of current-halfyear total on breach.",
+      "ledger_row_sha256": "43cccf397ffa1fb73ef96b6bbf3ce6b3d0395138bac237c289a8c8d1005e74d6",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "116",
+        "physical_page_start": 67,
+        "physical_page_end": 67,
+        "raw_line_start": 4826,
+        "raw_line_end": 4876,
+        "passage_sha256_utf8": "e28b9bf3d22871c26153c0751c3ca576ad1a833e531e00ca59247dce516acba0"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 18,
+      "verdict": "PASS",
+      "finding": "Art117 confirms before30April and eight information groups; before differs from on-or-before.",
+      "ledger_row_sha256": "d5a3d29c3009a93294c657e6b9f4b61010787f40310e63b99717bdc7311f1b7f",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "117",
+        "physical_page_start": 67,
+        "physical_page_end": 68,
+        "raw_line_start": 4876,
+        "raw_line_end": 4929,
+        "passage_sha256_utf8": "3287d83b017669d4aac41962af0e5e43c49ce435277523095aa5aea5c09f3985"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 19,
+      "verdict": "PASS",
+      "finding": "Art118 imports art117 information for domiciled foreign/diplomatic salary recipients.",
+      "ledger_row_sha256": "34fbb9839523511bee032831834d25d61f54dc022d9ea7c50495b82caec28904",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "118",
+        "physical_page_start": 68,
+        "physical_page_end": 68,
+        "raw_line_start": 4929,
+        "raw_line_end": 4943,
+        "passage_sha256_utf8": "f8c698012f892cdd4898567d90e774376c1b13102fbede9611d0bf4b6037b324"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 20,
+      "verdict": "PASS",
+      "finding": "Art119 confirms annual aggregation/regularisation and reclaim before1May nextyear.",
+      "ledger_row_sha256": "aac5377abdc4c3a47b1837f3c2348fe9a1e6bc648675cc67a5dbc5eae958d3dd",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "119",
+        "physical_page_start": 68,
+        "physical_page_end": 68,
+        "raw_line_start": 4943,
+        "raw_line_end": 4977,
+        "passage_sha256_utf8": "8f0ccabeef8693a54047e282f45f3d406d32d00f9c7cfb0e5a6c1f3363ae7384"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 21,
+      "verdict": "PASS",
+      "finding": "Art227 confirms employer liability and full exemptions including strict nonprofit objects.",
+      "ledger_row_sha256": "8fbe24c9ca4ddb68dce5f491ffb111bd9478625a6d7057cab32d3950f3a46e5f",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "227",
+        "physical_page_start": 100,
+        "physical_page_end": 100,
+        "raw_line_start": 7625,
+        "raw_line_end": 7658,
+        "passage_sha256_utf8": "9ab3a9da4a6aee18c6195137ff771a968f178017a1986ec770adaa0317a53c50"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 22,
+      "verdict": "PASS",
+      "finding": "Art228 confirms total cash+benefits estimated as IUTS; CGA20% base reduction,not IUTS deductions.",
+      "ledger_row_sha256": "ce0c4cc18fabcbeb54dbe2e54511b1e17c385f785e845c46815c83286f179fd9",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "228",
+        "physical_page_start": 100,
+        "physical_page_end": 100,
+        "raw_line_start": 7658,
+        "raw_line_end": 7671,
+        "passage_sha256_utf8": "7ae8a71646ca1ee0d6b13e3a7f3318af390ce41f4df2219fd2a4c45be2c843aa"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 23,
+      "verdict": "PASS",
+      "finding": "Art229 fixes TPA3%.",
+      "ledger_row_sha256": "b398c55475162ece35a970b76f67efcc9b29ea734afba3ca130643567327310b",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "229",
+        "physical_page_start": 100,
+        "physical_page_end": 101,
+        "raw_line_start": 7671,
+        "raw_line_end": 7676,
+        "passage_sha256_utf8": "83b70fa74b8e518d1805af6340cb3794997a8de9b657417d6894bd6430e0770f"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 24,
+      "verdict": "PASS",
+      "finding": "Art230 confirms nextmonth10,<=5000 payment deferral and all-current-halfyear acceleration.",
+      "ledger_row_sha256": "851b9dd802143d781d3c913a2ac83214be051d282c626c3d2b28b0a378b15e00",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "230",
+        "physical_page_start": 101,
+        "physical_page_end": 101,
+        "raw_line_start": 7676,
+        "raw_line_end": 7698,
+        "passage_sha256_utf8": "63408ecb19d033097989f3c263efb9dd193414ec7ee06497573f087c4e06235d"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 25,
+      "verdict": "PASS",
+      "finding": "Art231 confirms immediate cessation/cession,death30days and imported IUTS modes/regularisation.",
+      "ledger_row_sha256": "7b0f6202e8475a95031dfeaf9db47c909434d5f07aa87503a977a378b367c681",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "231",
+        "physical_page_start": 101,
+        "physical_page_end": 101,
+        "raw_line_start": 7698,
+        "raw_line_end": 7708,
+        "passage_sha256_utf8": "718f02429dbfcbac6d066a6c0b9a8810c55a8a40822f7d9faf757c52ca8c8e49"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 26,
+      "verdict": "PASS",
+      "finding": "Art233 confirms annual summary on-or-before30April,cessation10days and death6months bounded by next30April.",
+      "ledger_row_sha256": "46db0910a43a4da6725c095a7af841bd2db7905ff38c796a1239d00bb9bd95f1",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "233",
+        "physical_page_start": 101,
+        "physical_page_end": 101,
+        "raw_line_start": 7715,
+        "raw_line_end": 7741,
+        "passage_sha256_utf8": "5ce42695047378305311e8670b5a29b8fa890b9dbff35ee1c2389422a5d0c9e9"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 27,
+      "verdict": "PASS",
+      "finding": "Art671 confirms statutory payment methods,evidence dates and receipt,with bank credit date controlling transfers.",
+      "ledger_row_sha256": "9c7dab5a5e4e363178781a0e57668a970b80a624f5a7c9fc9ff9cb87666ee29c",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "671",
+        "physical_page_start": 286,
+        "physical_page_end": 286,
+        "raw_line_start": 21738,
+        "raw_line_end": 21778,
+        "passage_sha256_utf8": "e4d236216d290bad2e11f78e2d612a2819633b15954888b0c509ae5e085c2fc0"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 28,
+      "verdict": "PASS",
+      "finding": "Art760 confirms50% missed withholding+1%month/fraction and art114 self-payment extension.",
+      "ledger_row_sha256": "dde9c589d01dd1711f5de794880bbd1a8d26bde0c871a2679ab70d809d21fc60",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "760",
+        "physical_page_start": 305,
+        "physical_page_end": 305,
+        "raw_line_start": 23285,
+        "raw_line_end": 23310,
+        "passage_sha256_utf8": "a5af46764f99a172914502691d9e58b1b2554716c9a6ce81ce5c30f2b01e97bb"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 29,
+      "verdict": "PASS",
+      "finding": "Art761 confirms within60days25%permonth/fraction;after60days100%+1%;none200%+1% and personal assessment.",
+      "ledger_row_sha256": "77670d2f0486757fab5e185c89c1d19694aee592854fdb9c6fdb8ff4d4f134d3",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "761",
+        "physical_page_start": 305,
+        "physical_page_end": 305,
+        "raw_line_start": 23310,
+        "raw_line_end": 23333,
+        "passage_sha256_utf8": "e95c48c8493a9bd9046f26343b73d849c9e221364290d4eeacd1084e5c34089a"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 30,
+      "verdict": "PASS",
+      "finding": "Art762 confirms arts115-117/191 breach25% evaded duties,min25k.",
+      "ledger_row_sha256": "4ef69d60fec9e627d3cd9373b182f9de1fc65e183f30e6046ac4b58154980c41",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "762",
+        "physical_page_start": 305,
+        "physical_page_end": 305,
+        "raw_line_start": 23333,
+        "raw_line_end": 23341,
+        "passage_sha256_utf8": "0b3236028af0ea96e5afa07893910527c477867389ee2b4690210a0feeab0e96"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    },
+    {
+      "guide": "bf-payroll",
+      "row": 31,
+      "verdict": "PASS",
+      "finding": "Art769 confirms late25%,default/insufficient50% and annual-summary50k.",
+      "ledger_row_sha256": "aae8f6a468cfabe71d44b066370a2cc26cc3c64e915bbf65f5d3730eb4768863",
+      "ledger_sha256": "ca2d0458917953ad445bb977b1d322609073cb383aec88187b18b616699b3c43",
+      "source": {
+        "article": "769",
+        "physical_page_start": 307,
+        "physical_page_end": 307,
+        "raw_line_start": 23512,
+        "raw_line_end": 23525,
+        "passage_sha256_utf8": "a0783b71858d838038763ae1d8e1f3af41b2cc45b715235a73e74b1696f854a0"
+      },
+      "exact_quote_whitespace_normalized_match": true,
+      "closure_check": "Exact row bytes unchanged from independent initial check; verdict carried forward."
+    }
+  ]
+}

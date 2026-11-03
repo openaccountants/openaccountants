@@ -1,0 +1,116 @@
+{
+  "frozen_head": "13a38f884550d6d220f79100a8fbc1404842a1de",
+  "previous_accepted_ten_guide_head": "f7482aabcf34d114499f3b621beb1027cc406d5c",
+  "main_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "branch": "codex/burkina-faso-remaining-guides-2026",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "git_blob": "681311eb9cf453d0faddf3aacaec7357e97ba8e9",
+      "sha256": "6ebdb617a8104a7756d0cf36578ab01103dc9f07e4dc6feb751296b9c402faf7",
+      "working_matches": false
+    },
+    {
+      "path": "docs/skill-template.md",
+      "git_blob": "430061396017137a82e992f50c95e683a48b1e7a",
+      "sha256": "6098c740bb6113e8f073f66898e352c988c84591c08a94d298fcd2b4e6b66c7b",
+      "working_matches": true
+    },
+    {
+      "path": "docs/OWNERS.md",
+      "git_blob": "bcff9d78c8442e39660c77af3d23227d045dcb77",
+      "sha256": "0017bb822210fb94881d2ebb2865731b61ab586ac8f22225e4fef6fab336eaeb",
+      "working_matches": true
+    },
+    {
+      "path": "skills/burkina-faso/README.md",
+      "git_blob": "7d72014baec654bcf7731ef9534047a39bc87018",
+      "sha256": "5a2a1462087ea74310e860ebbb6b9b093d49729844109638ac9632044db10756",
+      "working_matches": true
+    },
+    {
+      "path": "skills/burkina-faso/bf-company-property-tax.md",
+      "git_blob": "be675ec771e017b9bb8ec6a25baeed6086b2e766",
+      "sha256": "cd4f4f84ee95d7469f40835acd9dab58d8d4fc36de2c6b0e714c26c29f1ea16d",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/bf-company-property-tax.json",
+      "git_blob": "20cb3a9b6e8246662d9da9db9d8680fe9a5031bf",
+      "sha256": "2c1b42368b96c1bb14238716f60a1a05549a20d6650e16c8860842a0ff8b3fe2",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/bf-company-property-tax.md",
+      "git_blob": "fe3e3d0ee4bdd7cda2369356f5776d87b65b984e",
+      "sha256": "c45ac1f39574b3f32d1f355eec4954c1af852cd7128c220310cbcd9cf438cc92",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/committed-validation.json",
+      "git_blob": "b62d78d24509c89972b6cdf0e5983834e4e9e32c",
+      "sha256": "48522ae75e7922fb3e6e3f3ae17290d20fe4a1bbf390b8774a5bfb933e3af86a",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/format-repair.json",
+      "git_blob": "9a9390a6a0a3d315d50a3426afaa064d99dd8baf",
+      "sha256": "3563b242becfeab25db8196df48280c9ae6ce2f72e13cf1389eb21e7ac95d867",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/freeze-receipt.json",
+      "git_blob": "716ea37efb58ec259cdf2be3d85d9e9fafd3318b",
+      "sha256": "3020e5e707256bd633caed5e448710f9135a49fa71d4139a71a345ccbc3abefd",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/initial-committed-validation.json",
+      "git_blob": "6174b4910f2d9d5575bdfd4b1676136c8c119cf1",
+      "sha256": "3abe39bc6b5a9b668fc80eec49b737a95955753e92e903558a31d2c04f3f95d8",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/old-topic-destinations.json",
+      "git_blob": "2eb7ab1517fb2d1d192d949980af3d4ec0deb051",
+      "sha256": "1a3b4ae96318a5c5dd77c8cc57fa9b97c99c3b36d601be5d0e00b6d980133b54",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/preservation-baseline.json",
+      "git_blob": "64ee243dddc19f4bc77088b65006783c50ef922b",
+      "sha256": "034121191889571bea6df5e068cd515765d619a64a545682024e07aaf1aaa2c4",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/readme-addition.json",
+      "git_blob": "cc3f8c14b873f5c1cacf161327004f55173a3e18",
+      "sha256": "cba7af540b6696abf70ec1f05825cdf4b4635a55c45c08d8d4a16a7b5fe09959",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/source-identities.json",
+      "git_blob": "0e8049843d162c6d9f15b6365dd8aa9b99d73f39",
+      "sha256": "3338e18e487adf572c316edd1aa6cd9f6ddfaae1b9006756f491bbda0eed5fe4",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/writer-check.py",
+      "git_blob": "1048342daf1efe84f428561a150747c3d8cf89fe",
+      "sha256": "6461176d7de49ef53346389adad66fcc49437bd3a1446d7dedf2bac08bd2e90a",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/writer-checks.json",
+      "git_blob": "7e8d04b340ec2c0d4ba7a04c56f32ffee7865939",
+      "sha256": "c6a9f2d6db030426ca60eba759452b482077c6e2f64a6b75695178ce4e63afed",
+      "working_matches": true
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-property-20261101/writer-record.md",
+      "git_blob": "c3abbe4e6ef07072a1da1c170cb9a80fb7ffeebb",
+      "sha256": "24027a8d04fb74b51939f7778ccb89386226703c7333c4d51466302630644098",
+      "working_matches": true
+    }
+  ]
+}
