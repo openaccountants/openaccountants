@@ -1,0 +1,39 @@
+{
+  "date": "2026-10-31",
+  "content_commit": "09ba3df4c5368a5d7010ed3ace3f8ffff629bb3d",
+  "normal_main_merge": "8f94a3f58681f61c43dba1adcacd002ead34b1ad",
+  "merged_main": "22dc67a25ce90288dcf8654b9d76cbcebb1a3a7e",
+  "guide_sha256": "a47e5eb7e726c24f806f9bcea58b469ed298041cdccb4af8d80489c51050efa2",
+  "ledger_rows": 43,
+  "statutory_quote_bindings": 54,
+  "website_quote_words": 20,
+  "previous_guides_byte_exact": 11,
+  "previous_nonblank_units_preserved": 2490,
+  "checks": {
+    "country_shape": "120/120 pass",
+    "examples": "24/24 pass",
+    "changed_validator": "Pass; 6 expected job/domain warning groups",
+    "strict_sync": "12 source Guides, zero errors/warnings/notices",
+    "unit_tests": "152 passed at content candidate; subsequent normal main merge changes source/docs only, not scripts/tests",
+    "diff_whitespace": "Pass"
+  },
+  "independent_review": "Pending; this is writer verification only",
+  "publication": "Not pushed; reuse existing PR776 after required whole-country review gates",
+  "country_status": "Still partial; no seven-domain partial cleared; property family and issue393 remain open",
+  "new_full_source_capture_location": "Private, outside public repository; not committed",
+  "remaining_ordinary_questions": [
+    "Current approved ordinary property mortgage blank and exact printed fields",
+    "Separate current refinancing evidence regulation/form route, if one exists",
+    "Mixed cash/gift/assumed-debt transfer base",
+    "Transfer duty on inherited share for which no inheritance duty is paid",
+    "Acquisition-permission application form/receiving authority/fields"
+  ],
+  "resolved_in_this_pass": [
+    "Separate tax/fee calculation and statutory exemptions",
+    "Full statutory replacement-loan conditions and clock",
+    "Instrument fields, approved-form/witness/copy requirements and paper filing/priority",
+    "Duty refund and distinct fixed-fee resubmission clock",
+    "Fixed-fee appeal source bridge through Regulation161/2021 §6/Annex4.8 and Act147/2021"
+  ],
+  "next_action": "Fresh independent review of the frozen43row candidate, then fix findings before any publication. Writer stops here."
+}

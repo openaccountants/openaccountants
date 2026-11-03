@@ -1,0 +1,216 @@
+{
+  "base": "53696ccc7",
+  "before_sha256": "94f1ad5688e836bfafa6d49fedb295acb4f2b41cf0697814dac64f77447531e9",
+  "rows": [
+    {
+      "id": 1,
+      "sha256": "37a5ccafe5898d23166dd4ceecb2978ba4143b604c1408f34b237326661c4276",
+      "text": "> **Source-cited draft.** Independent source review and professional attestation are pending. This is a domestic-law calculation and compliance framework, not a complete Pillar Two engine.",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "updated version/review status"
+    },
+    {
+      "id": 2,
+      "sha256": "ff08ff674add548db950bcaee4f4a23c67c8b0b129fdf4408fd0688444c4e6be",
+      "text": "The Act applies generally to fiscal years beginning **on or after 31 December 2023**; its Part 3 income inclusion rule (IIR) applies to fiscal years beginning **on or after 31 December 2024**. Thus an ordinary calendar-year group first tests domestic top-up for 2024 and IIR for 2025. A year beginning exactly on either statutory date is included. [Section 2](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 3,
+      "sha256": "83aa7afc4c72c5f7af5240bc12fd7319c63fb3e825b16c6026f634da936a0ec9",
+      "text": "The incorporated Model Rules' ordinary MNE threshold is consolidated UPE revenue of **at least EUR750 million in at least two of the four immediately preceding fiscal years**. Article 1.1 also addresses non-twelve-month periods and points to Article 6.1 for special threshold cases; mergers, demergers and short periods need that separate analysis. [Model Rules, Article 1.1](https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/12/tax-challenges-arising-from-digitalisation-of-the-economy-global-anti-base-erosion-model-rules-pillar-two_eed81a23/782bac33-en.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 4,
+      "sha256": "1f4cd88757c8a6803138bfdd9ceb589c5b345ffcc741ec8f59abd4164c9d41e6",
+      "text": "Gibraltar additionally defines a **Wholly Domestic Group** by UPE and all constituent entities being located in Gibraltar and consolidated revenue of at least EUR750 million in two of the four preceding fiscal years. Section 15 treats it as an MNE group **for Part 4**, not automatically for every IIR provision. Location follows Model Rule 10.3, not incorporation alone. For four ordinary twelve-month years, revenues EUR740m, EUR750m, EUR760m and EUR730m meet the two-year revenue test; EUR740m, EUR749m, EUR760m and EUR730m do not. These examples assume unchanged group scope and do not establish each entity's inclusion. [Sections 3 and 15](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 5,
+      "sha256": "7e30f843b801fa8fa6f408626649e9274102e174574260001ed43672cad84891",
+      "text": "Map excluded entities and ownership before calculating. Part 4 expressly excludes **Investment Entities and Insurance Investment Entities**; a commercial label such as \u201cinvestment company\u201d is not proof of the defined classification. Section 12 charges specified parent entities under the IIR in accordance with the Model Rules. Section 13 excludes the UTPR charging articles from Part 3. Domestic constituent entities are jointly liable under section 16; domestic joint ventures/subsidiaries have the separate joint-liability rule in section 17. [Sections 12\u201318](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 6,
+      "sha256": "22fe56be46272a3eca845af80d5300e90b175339bb6094fb3dbedf7f1e46175c",
+      "text": "Rule 3AA permits a **Gibraltar Parent Entity within scope of both Acts** to elect for the specified minimum-tax-only treatment. The defined parent must be an **Ultimate Parent Entity**, and a constituent entity ordinarily resident under Income Tax Act section 74 or registered/otherwise established in Gibraltar. A Gibraltar subsidiary of a foreign UPE does not acquire this election merely because it pays domestic top-up tax. [Allowances Rules, rule 3AA(1)\u2013(3), (16)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 7,
+      "sha256": "733713e62814147d325ba9091ee57e5b558985c14d866e3783f988b6954a9513",
+      "text": "The election must be submitted **in writing and approved in writing by the Commissioner**. Written approval is required where the rule's conditions are met; the election is valid from that approval date. Under an approved election, the ordinary Income Tax Act provisions levying a charge do not apply to the parent and group constituent entities for the basis periods specified in rule 3AA(9). Do not treat a submitted request as approval or infer that every administrative duty under every enactment disappears. [Rules 3(55), 3AA(2), (4)\u2013(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 8,
+      "sha256": "5b2cad4a268831469b87ea57f96b2a3a5ae08968b0fa9cec3a4464d43599ff9b",
+      "text": "Keep the **election date**, **approval date**, **basis-period start** and **ordinary return due date** separately. Rule 3AA(9) covers basis periods starting after the election date and any basis period whose section 28 return was **not yet due on the election date**. This permits an eligible earlier period to be covered once approved; it is not blanket reopening of all prior assessments. For example, if the election is made on 1 April and an earlier period's return is due on 30 April, that period meets this particular not-yet-due test; if its return was due on 31 March, it does not meet that limb. These dates are hypothetical and establish neither the statutory return deadline nor overall election eligibility. [Rule 3AA(5), (9)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 9,
+      "sha256": "fbfcd3076ae2fbd15d8a7b68cf79a2b6896de1c0d84848354a051f2c4d47d02e",
+      "text": "A rejection appeal must be written to **both the Commissioner and Tribunal**, state the grounds, and be made before the end of the **30-day period beginning with notification of rejection**. Do not substitute the ordinary assessment appeal deadline. [Rule 3AA(7)\u2013(8)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 10,
+      "sha256": "7bad0d6fc0e4a8bc10c1a98a89a9152bbcd754e9a9bc0d4f287fca67dd85d105",
+      "text": "Validity in relation to a constituent entity can cease through the parent's written notification, or unmet conditions together with the Commissioner's written reasons. If the group falls out of scope, the rule provides continuation for **no more than 18 months**, with notification when the parent first becomes aware and confirmation of reasonable steps taken to maintain validity within that period. The Commissioner determines continuing validity; this is not an unconditional eighteen-month extension. A further election is possible if the conditions are met. [Rule 3AA(10)\u2013(14)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 11,
+      "sha256": "211675bb9eb0b2d59c311478b34db95504aa51134d39a98ff01d87fd5c4104a5",
+      "text": "Rule 3AA(15) expressly permits use of Part VI and Schedule 4 anti-avoidance rules for elections after 1 March 2025. Income Tax Act section 40(6) separately permits counteraction/disregard of the specified election on its stated tax-advantage basis, considering substantive results, contrived steps and exploitation of shortcomings. Retain commercial and statutory-scope evidence; approval is not a blanket anti-avoidance clearance. [Rule 3AA(15)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf); [Income Tax Act, section 40(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 12,
+      "sha256": "eb72df34c7ae4c40cf04eefbef13f2e8a22d9cd0c74b1c89d5ffed1cfa86986b",
+      "text": "The current submission address/form, approval workflow, consequences for returns already submitted, cessation mechanics and any case-specific anti-avoidance determination remain to be verified. No election is made by this Guide.",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 13,
+      "sha256": "7a2fcaead76b8412130c5cba37226a4cdc75ebe6266b5347456437b3f1011437",
+      "text": "The minimum rate is **15%**, under section 11. A headline corporate-tax rate of 15% does not itself establish a zero top-up liability: the Act requires a Model Rules calculation with domestic modifications. Establish GloBE income, adjusted covered taxes, effective tax rate, top-up percentage, excess profits and additional current top-up tax before using the formula below. This Guide does not derive those inputs from ordinary taxable profits. [Sections 11 and 18\u201325](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 14,
+      "sha256": "c7fe16074fc1f3e7660302e27e5d3d0f17fc6c789ca57ea015319247d26e7cc2",
+      "text": "1. Identify the applicable fiscal-year Model Rules, Commentary, administrative guidance and Gibraltar notices. Sections 4 and 6 incorporate interpretation rules and specify timing for Commentary amendments; do not apply a later release to an earlier year without checking that timing and any ministerial notice.\n2. Apply domestic modifications. Section 19 disapplies the listed Model Rules, including the ordinary jurisdictional formula/allocation provisions. Section 20 disapplies the **QDMTT Safe Harbour for Part 4**. That is not a statement that every safe harbour is unavailable, or that another jurisdiction cannot recognise Gibraltar's QDMTT.\n3. Under section 21, exclude the specified foreign tax accrued by a foreign owner/main entity on domestic GloBE income from domestic adjusted covered taxes. Section 22 excludes domestic covered tax allocated to a foreign entity under the stated Model Rule 4.3 provisions. Do not add foreign parent tax to the domestic pool indiscriminately.\n4. Section 25 requires separate jurisdictional computations for minority-owned constituent entities, domestic JV groups and other domestic constituent entities. For each applicable pool use **top-up percentage \u00d7 excess profits + additional current top-up tax**. Sections 23\u201324 separate the domestic constituent-entity total from domestic JV totals.\n5. If computed in a foreign currency, section 8 converts the liability to sterling using the **average exchange rate for the fiscal year**. Document the rate and quotation direction; the Act does not supply the numerical rate.",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 15,
+      "sha256": "882479a8a6faa9b5d78cd6aa11b744adfa636bf3002f5642452435cedb15445f",
+      "text": "Source for these steps: [sections 3\u20138 and 18\u201325](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf). Elections affecting the Model Rules calculation have the same effect under section 7; preserve the actual election and applicable conditions. Safe-harbour eligibility, excluded-entity definitions, deferred-tax adjustments and complete IIR allocation remain outside this draft's verified computation scope.",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 16,
+      "sha256": "8db46b6b67ffed61ceb18b555d879b155348d9755fcd670e5d3788ecb37d6bf6",
+      "text": "Assume a reviewed pool has an established top-up percentage of 3%, excess profits EUR800,000 and additional current top-up tax EUR2,000. Section 25 gives **EUR26,000**. If the evidenced fiscal-year average is GBP0.85 per EUR1, section 8 gives **GBP22,100**. The rate and all inputs are illustrative, not official figures. At a zero top-up percentage, the same EUR2,000 additional current top-up tax still produces EUR2,000 under the formula; do not discard that component. [Sections 8 and 25](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 17,
+      "sha256": "bbcca335ddbe2631260225be2c66332790d34032318037ca01c4b1603347b9a0",
+      "text": "```oa-check\nname: Gibraltar domestic top-up formula and sterling conversion\ninputs:\n  topup_percentage: 0.03\n  excess_profits: 800000\n  additional_current_tax: 2000\n  gbp_per_eur: 0.85\nsteps:\n  - tax_eur: topup_percentage * excess_profits + additional_current_tax\n  - tax_gbp: tax_eur * gbp_per_eur\n  - zero_percentage_tax: 0 * excess_profits + additional_current_tax\nexpected:\n  tax_eur: 26000\n  tax_gbp: 22100\n  zero_percentage_tax: 2000\n```",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 18,
+      "sha256": "630514e197923ae1934cb6a8c2961aac526b8fe6f97d2197bf4f2af7b0512685",
+      "text": "Sections 26\u201327 set the ordinary GIR deadline at the **last day of the fifteenth month following fiscal-year end**. The eighteenth-month deadline applies only if this is the group's first fiscal year subject to the Act **and it has not been required to file a GIR elsewhere for a previous fiscal year**. First filing in Gibraltar alone does not prove eligibility for eighteen months. The UPE or designated filing entity files for the group under Part 3; Part 4 requires appointment of a designated local entity to file for the domestic entities/JVs. Required supporting information accompanies the return. [Sections 26\u201327](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 19,
+      "sha256": "a84d5a6a51605e435538cfb97682cd7b62e545d1a81ae32bf0f38b068823fed8",
+      "text": "Section 28 provides a local-filing exception where the GIR has been filed in a jurisdiction with a **qualifying competent authority agreement effective with Gibraltar for that reporting year**. A general tax treaty or an intention to file overseas is insufficient evidence that the exception is satisfied. The required notification that the GIR has or will be filed abroad is due **no later than three months before the GIR filing deadline**. Verify both the agreement and actual filing. For Part 3, section 28(1)(b) names the UPE or Designated Local Entity as notifier. For Part 4, section 28(2)(b) names the Designated Local Entity, Domestic Constituent Entity, Domestic Joint Venture or Domestic JV Subsidiary. Preserve the statutory \u201cLocal\u201d designation in the Part 3 notification rule; do not silently substitute \u201cFiling\u201d. [Section 28](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 20,
+      "sha256": "3ff84817b6ecce713ce004c5a64611afb7f066c205402b883e195d547d645968",
+      "text": "Payment is due by the GIR filing deadline. The Part 3 parent pays for the group, with joint liability where more than one parent has liability; under Part 4 the designated local entity pays for the domestic entities/JVs. The foreign-filing exception does not itself remove payment. [Section 29](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 21,
+      "sha256": "c68a387f3691ed021bf52b5c4183b0b05914afb23d17aaf5f20cc5eceacd6bbb",
+      "text": "For a 31 December 2024 year-end, an established eighteen-month case has a GIR/payment deadline of **30 June 2026**; the ordinary fifteen-month case has **31 March 2026**. Calculate the separate three-month-prior notification deadline using the applicable date and confirm administrative date conventions. These historical dates do not grant a late filer a new extension. Current registration, filing formats, payment references and correction channels remain unverified: the official registration guidance URL returned 404 when fetched on 22 October 2026.",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "retained with expressly superseded operational-gap wording"
+    },
+    {
+      "id": 22,
+      "sha256": "06e8472c158df93922494c5083a87c376703a9c20955758cc3cb579ba474fbbb",
+      "text": "Keep the records needed for a GIR **or notification for ten years from the fiscal-year end**, under section 30. Sections 33\u201334 prescribe the stated ten-year assessment/amendment limits; section 35 imports the Income Tax Act assessment-appeal provision. Consult the [assessment appeals Guide](gi-income-tax-assessment-appeals.md), but do not transfer its ordinary income-tax refund or surcharge rules to this Act. [Sections 30\u201336](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 23,
+      "sha256": "f534f0eccd31639a02936f39456e2f7c81e9de31e463087223ba0c13277261c5",
+      "text": "Section 52 allows proven overpayment to be refunded, with a claim within **ten years from the end of the fiscal year concerned**, and Commissioner certification of the amount. This differs from the ordinary income-tax six-year refund rule. For fiscal year ending 31 December 2024, the ten-year endpoint is 31 December 2034. Keep refund procedure, assessment appeal and record-retention obligations distinct. [Section 52](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 24,
+      "sha256": "49095c9e09ec6c2c8f954cf847bc0b8dd67afbc52b41ffd384803b69ffbb60ed",
+      "text": "Section 44 imposes **2% of unpaid top-up tax on the day after payment is due**. At its further thirty-day trigger, **5% of the remaining unpaid tax and first surcharge** becomes payable. If GBP10,000 and its first surcharge remain wholly unpaid throughout, the first surcharge is GBP200 and the second GBP510, leaving **GBP10,710**. If the first surcharge is paid before that second trigger but all principal remains unpaid, the second amount is GBP500. Establish actual dates and payments before computing a live liability. [Section 44](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 25,
+      "sha256": "c5cbaeea89c6b3d82b6012882ea7787e927149de32610e250aecddcde94b5431",
+      "text": "```oa-check\nname: Gibraltar minimum-tax late-payment surcharge\ninputs:\n  unpaid_tax: 10000\nsteps:\n  - first_surcharge: unpaid_tax * 0.02\n  - second_all_unpaid: (unpaid_tax + first_surcharge) * 0.05\n  - total_all_unpaid: unpaid_tax + first_surcharge + second_all_unpaid\n  - second_first_surcharge_paid: unpaid_tax * 0.05\nexpected:\n  first_surcharge: 200\n  second_all_unpaid: 510\n  total_all_unpaid: 10710\n  second_first_surcharge_paid: 500\n```",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 26,
+      "sha256": "666db5bd285ffc300b83b49d426cb11e5a7ee7a7412fb2530462bd35159251c7",
+      "text": "Section 43 specifies a GBP1,000 failure-to-file/notify penalty, but the published text contains the wording \u201cshall may be liable\u201d; record this drafting defect rather than asserting automatic imposition. Section 45 specifies GBP5,000 for record failures. Section 47 specifies GBP500 for the relevant notice failure and a further GBP1,000 after its one-month trigger. Section 48 gives conditional discretionary relief; do not assume a waiver. Notices, offences and penalty appeals require their own analysis. [Sections 43\u201349](https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf).",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 27,
+      "sha256": "2b207947819725eeac40fb474c7ee739d64c229bf570b5233401f7a54a50f463",
+      "text": "Obtain the ownership/entity map, four-year consolidated revenue, fiscal-year dates, entity-location analysis, excluded-entity evidence, accounting standards, GloBE working papers, tax allocations, elections, prior overseas GIR obligations, filer appointments, exchange-agreement evidence, payment history and average exchange rate.",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 28,
+      "sha256": "f0fad3800cec0a7cd05f3b0bab0a4b86e5688ca083afa027d253d207abe6cc2c",
+      "text": "The official index links the Act used here, while displaying both \u201cCurrent Version\u201d and an out-of-date version label. The same PDF is linked in both entries; that does not certify absence of later notices or changes. Remaining acceptance work includes a full fiscal-year OECD guidance/notice reconciliation, complete GloBE calculations and exclusions, safe harbours, parent allocations, current forms/portal access, payment and correction procedures, operational election/cessation handling and independent/professional review. No live return or payment was made. No comprehensive coverage or professional attestation is claimed.",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "retained with current remaining-work wording"
+    },
+    {
+      "id": 29,
+      "sha256": "e342622c4d5e87b6d008ea11165094adf6248b98f72ad03061288094bc3133c9",
+      "text": "- Verify both group threshold and each entity's classification, location and liability.\n- Separate IIR commencement from domestic top-up commencement and identify each calculation pool.\n- Reconcile the full GloBE inputs before applying the domestic formula.\n- Test first-year deadline conditions against earlier foreign GIR obligations.\n- Keep registration, GIR, notification, payment and appeal steps distinct.",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    },
+    {
+      "id": 30,
+      "sha256": "97fe888c36e5486c3f616bee4352c23613680151923e4a186831405f5e18322a",
+      "text": "General tax and accounting reference only. A qualified professional must check current law, the group's facts, calculations, elections and filing requirements before action.",
+      "destination": "gi-global-minimum-tax.md",
+      "status": "exact text retained"
+    }
+  ]
+}

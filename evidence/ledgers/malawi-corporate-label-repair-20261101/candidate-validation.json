@@ -1,0 +1,544 @@
+{
+  "baseline_head": "10a6b7587b0eb7faabfcaca071eab674544e6f6b",
+  "candidate_guide_sha256": "8c7103980ebe451c36547efa01dff3da3ef9d5b8461740fe8c81147016ea14d1",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/malawi/mw-corporate-income-tax.md"
+      ],
+      "exit": 0,
+      "stdout": "skills/malawi/mw-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/malawi/mw-corporate-income-tax.md",
+        "skills/malawi/mw-company-formation.md",
+        "skills/malawi/mw-cross-border-tax.md",
+        "skills/malawi/mw-listed-share-withholding.md"
+      ],
+      "exit": 0,
+      "stdout": "checked 4 files, 8 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--strict-metadata",
+        "--worktree"
+      ],
+      "exit": 0,
+      "stdout": "Sync integrity checked 4 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "all_pass": true,
+  "uncommitted_candidate": true,
+  "independent_review_required": true,
+  "publication_acceptance": false,
+  "F4": "OPEN",
+  "preserved_prior_files": [
+    {
+      "path": "evidence/ledgers/malawi-act3-repair-20261101/pinned-validation.py",
+      "candidate_sha256": "041c360f5225572e27a3d4cc4600d7353723e471923bd198cbdd06f2606189d2",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-act3-repair-20261101/preservation-and-checks.json",
+      "candidate_sha256": "d6fef871e4582bb7d9cfd29782fffbd0af0cee60a171a8a049c7740fa98d2e16",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-act3-repair-20261101/repair.json",
+      "candidate_sha256": "f10978e5c343f260dc74fdb5e3a2838cbd41e0ea808612309c672c6f431e63cf",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-act3-review-20261101/check-delta.py",
+      "candidate_sha256": "82c04970d2687e213073563eb3f05ac310571d662d6f0c9995bf70d074fa79c6",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-act3-review-20261101/delta-checks.json",
+      "candidate_sha256": "b60c82d3e858e889c9936fece04413517d0c9d6fe005acf9c16bc52dc9ac58ab",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-act3-review-20261101/render-integrity.json",
+      "candidate_sha256": "f1ee33a678bc6b57b129ae51888a404bebb1fccf2348274f44ff9d633c4ba81a",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-act3-review-20261101/review.md",
+      "candidate_sha256": "bbc9635c701c1afdb4ac6197aa4f774e3761ea873fabef81abc92f1424fa15f7",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-act3-review-20261101/source-authentication.json",
+      "candidate_sha256": "c78aea964890e67fb67fbcb46fb31f547f7a90eb362695b362d6aebeb0aaa664",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/baseline.json",
+      "candidate_sha256": "10be7039b6b389c134ccd0f848f24b926a224e5131f7465a1edb84c38468b254",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/mw-company-formation.json",
+      "candidate_sha256": "9086d84a2c07f8d3620971e76c3413ee78785efded484c940095abd281e611c5",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/mw-company-formation.md",
+      "candidate_sha256": "3911f5f1057c531dec32c0a81656c7b9960e524157b167e06a13b240bea6e8f5",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/mw-cross-border-tax.json",
+      "candidate_sha256": "24b1e15bd8a1ef03bb5f88a5f877d7caf8d555d4908c10c109c3c01a542d80a5",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/mw-cross-border-tax.md",
+      "candidate_sha256": "065c01406280a037c98019e3f5006afd4bcbaf34c521b22655933d50fabecae3",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/old-topics.json",
+      "candidate_sha256": "a3c2116ce445bcc63f3eb089e3b732041b61df59c084edf23e31c48ac09e0b68",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/old-topics.md",
+      "candidate_sha256": "409f780591a6cd66f89b1a0bcbef4726240a2da89dffd8634a37ae0ab1c37230",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/preservation.json",
+      "candidate_sha256": "ec133aafbd65797084dd67db73144987fc85bffec889c1250ef26f84e3fd86c9",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/quote-checks.json",
+      "candidate_sha256": "d776f092575605aafe0b5ab8f37da2c706660b568c92cc76fa50f2428ac4167d",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/reviewer-repairs.json",
+      "candidate_sha256": "fdee1823309ac5c110d3beb95fab1b4e4ce353ceebc0d167d5b776ba88404b2c",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/shape-checks.json",
+      "candidate_sha256": "2ea996f4d5a635dcaba1a4b53501fa6b721ae0fc37f0670192f635f4450f2bf8",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/source-read-manifest.json",
+      "candidate_sha256": "b2a1c0a5c5ad5f8e4ac70257562591c146883241da781a946c8f92f58f296e53",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/validation-checkpoint.json",
+      "candidate_sha256": "b3005ec7f934dc1519c0862c461773c679054b1852b8954880d13049906416c0",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-20261101/writer-record.md",
+      "candidate_sha256": "98c3123f7ed9dfc273c7c0a5a956c68483b80d787e725a3240f476bd733b52aa",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-review-20261101/all-row-verdicts.json",
+      "candidate_sha256": "0c8d292170481d7d7a65fbb585dee92515c460d894edf1786e9786fdfefb1e46",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-review-20261101/closure.json",
+      "candidate_sha256": "aa5c21c35755b474af4baa6e44286d0150b4544097cc3b27b69789936779c50a",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-review-20261101/closure.md",
+      "candidate_sha256": "4ca697f7ae7f91d232e7cb0a7b1cf2372966042521e2469be5d9d45239ef78ab",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-review-20261101/committed-validation.json",
+      "candidate_sha256": "0865858c1a9daa0a3a4dd69f0478d1e6b941afabd73952347cadc3f4ada5a344",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-review-20261101/frozen-and-preservation.json",
+      "candidate_sha256": "a7bb5cf6344227839b6e662d35f11cf0e52df2eeacb6abbd2cb53963f24c9f84",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-review-20261101/independent-cases.json",
+      "candidate_sha256": "dedce4c9abae8ade26f845ba4e070db21e3515af75ac06637562ac66a1c05827",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-review-20261101/old-topics.json",
+      "candidate_sha256": "8cbf1f9db56e46206c973fbe9936da0aa61283761aa93abdabafd8c4660876bf",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-review-20261101/review.md",
+      "candidate_sha256": "732afe48e507832637f667c6a3f1c38c5a5d300c77c458236b8581ae07756782",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-review-20261101/source-reads.json",
+      "candidate_sha256": "0dcb016aa98865fa6e48c20303d1ad44b38c04d885aa7940e42af56728aabb1f",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-formation-crossborder-review-20261101/status-reconciliation.json",
+      "candidate_sha256": "564de5779bc8f47f1c65ec52bbe53e29d7a6b2e161067099f492097172ee80e9",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-repair-1/additional-source-record.json",
+      "candidate_sha256": "0c7e8b2b9edc285e640e3d0ca0aeab4d9ec008e586b378446be038b6d72382ba",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-repair-1/currentness-hold.json",
+      "candidate_sha256": "d81ed33bc75ec43f092e6164e30a91a38174acf71d15d09040ac0acada941f71",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-repair-1/writer-repair-partial.json",
+      "candidate_sha256": "990abc7b0189552f506e151a2c27e99b9e730525c8c126aace706e1ddf11dfd5",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-review-20261101/candidate-hashes.json",
+      "candidate_sha256": "cd6b2ea967d393db642adc48fa55eb9992345f35047a1ebc056453bc9aae0e4a",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-review-20261101/checks.json",
+      "candidate_sha256": "4ab6f4fc07e2ccc362fe08684a674606261a4bd9167731fb44fee1f993093a21",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-review-20261101/ledger-checks.md",
+      "candidate_sha256": "eda7652580c322aa9db1dc8cebf020ad2e7b0ee2b433747d1f52395c60bf7dea",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-review-20261101/preservation.json",
+      "candidate_sha256": "53d5209a305a6aa50b07b187c36986696060262252e02c6b9f09b8189d3f9771",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-review-20261101/review.md",
+      "candidate_sha256": "b671a554d9596f4af822d8007e5c516a8951bd15608052914e5fc490243998d6",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-review-20261101/source-downloads.json",
+      "candidate_sha256": "046a73c79f62cbbbe46300baa1d906223bc7e6672da11c3428983883f39583f7",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-review-closure-20261101/checks.json",
+      "candidate_sha256": "5f3be236282e576729e4f98c973254c83f679c54119438c092abd6bf9155e3db",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-review-closure-20261101/closure.md",
+      "candidate_sha256": "aeae231a014ba307cb2907a7419c2f16d55c4aed93ef7bd087e2e3659a2c9408",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-review-closure-20261101/preservation-and-scope.json",
+      "candidate_sha256": "fcc7cfbb81c770731e7882b0daef5968bf5b647fe8261a4d070e66ce9a6b794f",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-closure-20261101/closure.md",
+      "candidate_sha256": "70aa53a795a59c364e5d47bb6d757153eb8ebcee4aa905d8fe1b7f32671c489c",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-closure-20261101/committed-validation.json",
+      "candidate_sha256": "f13ee9c5623990c56892a936e402465afd02dfc71b39e94ae93ed28c17f06e3e",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-closure-20261101/status-reconciliation.json",
+      "candidate_sha256": "803200540cbcc678d9151229a5b4bc16bf83b6f60781b0561616723692b7a30e",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-review-20261101/all-row-verdicts.json",
+      "candidate_sha256": "a69794d3b44c7127bc098bb71653c50037f0f57953097b59385a20978b17067b",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-review-20261101/allowed-status-literals.json",
+      "candidate_sha256": "3a0d07ff184cbf8d2a51cd4a78063aadb229b0bb064617765410b2efa43f8dbf",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-review-20261101/check-review.py",
+      "candidate_sha256": "1987f1da5928724992a8dbcffa798c971aa68a0c9b069db942ce995508db5a49",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-review-20261101/committed-validation.json",
+      "candidate_sha256": "0ae5bb53fa35b68b998d59a9a9bdcd629f3db618ee94f0ba88f3941938385626",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-review-20261101/frozen-and-preservation.json",
+      "candidate_sha256": "c46d025a4937a1eaadaf40c649732abe028651dc667e90a6039dd6e38ef9f4f8",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-review-20261101/frozen-writer-inputs.json",
+      "candidate_sha256": "01ce14aa38fcf7fb10bd166a96119aa718de340f293cb45fe8f53bc4b6e3a8bd",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-review-20261101/independent-cases.json",
+      "candidate_sha256": "ba186800da39bbe2c0737c458ec0bad98f19e84ac98e56a456f65d2841560443",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-review-20261101/initial-harness-failure.json",
+      "candidate_sha256": "cefb9b9f899fccb52c2e613e5d4abc764d2f48d0c5f5b0e1bd68caf02f78a47e",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-review-20261101/old-topics.json",
+      "candidate_sha256": "cbad8d94f7879d519617fc8d599359a6e2009acab40c6e590abbb4be96a474a1",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-review-20261101/review-output-hashes.json",
+      "candidate_sha256": "7898ffeae320e6ac5b30bffe6eea68193d701e3604c4bfc90a52374bf9a1c57b",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-review-20261101/review.md",
+      "candidate_sha256": "9cbbc9d76d83013ee5ebca8d241b995225793849793ba04100c6f169a0eb59ec",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-review-20261101/source-reads.json",
+      "candidate_sha256": "7afeb419107a99980153a05ca24556c4d29b25720fe3a424db7993083e7e0656",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/attempts-and-limits.json",
+      "candidate_sha256": "7a8a8ca76438e04e0cf7916125c0707a9b4a333e16feb4d3088a3e4fddd267fb",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/baseline.json",
+      "candidate_sha256": "f00953b0d8aeeec3940e6827d7bbd518589b549dbd1a824bf5ce31280f428a0c",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/cases.json",
+      "candidate_sha256": "469dd05963a50fd94d77a5e3debbcbfaa373ddb5baf11778f176075379e2ebc1",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/committed-validation.json",
+      "candidate_sha256": "c51c9cda1b76357d5cd157d433d6052233515931ca26b7bbca078bbfb1fbe4f7",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/frozen-candidate.json",
+      "candidate_sha256": "6c20435a7768dd065feb1fece7bac207063aa1848cf02de5af565012bacdf63d",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/mw-listed-share-withholding.json",
+      "candidate_sha256": "c73f0b9d5922b7bc5bfcc9949fa62e735ebdd26aee1a9d0c95b477b147d9f2b1",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/mw-listed-share-withholding.md",
+      "candidate_sha256": "e630aa9b1e9b7f7ac66e5bea5eb7bbd0aa75103dd98fa398a299c1975ed0a2a6",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/old-topics.json",
+      "candidate_sha256": "ca31cea704e7807b96facd141244e3695ac907e1718b24f2de8ae04e949f857c",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/old-topics.md",
+      "candidate_sha256": "f349ee99cb5c604b651357d64b9983b2e74c32dd4b699481559487c48bc77778",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/pre-commit-validation-initial.json",
+      "candidate_sha256": "a4db6ff41968f3d1ab5134b5c4a2c7e428f4c270d3793344a1e43dbdc1c22a63",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/pre-commit-validation.json",
+      "candidate_sha256": "2c28a1ae22ad059531f8c860a274cf268339e003bd8a374ad5a27f91a7d3424e",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/preservation.json",
+      "candidate_sha256": "40ad8e1832e70ca93dc2f5841444a67f12ba2216aac61bba7649d6370bcd030f",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/quote-checks-initial.json",
+      "candidate_sha256": "21b48229454eb1b343a8797bb169d19b4a8c2ce8e5be7e7582ee0610146cee36",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/quote-checks.json",
+      "candidate_sha256": "8202e4312aef84e4bcf1d53a7f4984d2837bfb06c12b9eb99f3c6edae61058f3",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/source-read-manifest.json",
+      "candidate_sha256": "7e6dee2af8f17cb603e7e00c4205891004c58fb9c7234a0e0050f0506343b180",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/validate-candidate.py",
+      "candidate_sha256": "73bbd59356cbccaf364d84decd1f2ac7bef0a95a178b023567cd3aac4a523ad3",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/visual-read-hashes.json",
+      "candidate_sha256": "28b0b9c823d6d27a77a7c9da660fac1d09054ea6d53b14fadcf69b020ab5c4a0",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/malawi-share-withholding-20261101/writer-record.md",
+      "candidate_sha256": "252fc71570568e672d459f237ee234654bff9a52893fa1812db5bbb4ae48db11",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/mw-company-formation.md",
+      "candidate_sha256": "26a06de4a4601463442551a9f04690a787bcabf7ffdefa41c74c32b2fc2a1d43",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/mw-corporate-income-tax.md",
+      "candidate_sha256": "658ce022435b3d05812119e5a90d89c2f34c3034550ab0f83c545a105d475e92",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/mw-income-tax.md",
+      "candidate_sha256": "50273ab63ce6ee052e7b845a7a480fa74579e7e9a1d04282916719ba3be4ceb0",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/mw-old-topic-destinations.md",
+      "candidate_sha256": "171d3f0ccf015634d78ad605f6e9e8fa6ac6d91f97b64c2ffa8fb1b0967225ed",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/mw-payroll-social.md",
+      "candidate_sha256": "2b1aa678c2e957728c7b69461a6b34c9f2d0f604896fcca2dfb7deba71553757",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/mw-tax-overview.md",
+      "candidate_sha256": "40ef0b95926f74c6238ac457ced10c028517b4379dd674086411e19ae1a3be61",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/mw-transfer-pricing.md",
+      "candidate_sha256": "f9d7baf598b665b1f90dc9b055286b8b81473b5ce73d7f342f353cf34bcff135",
+      "byte_exact": true
+    },
+    {
+      "path": "evidence/ledgers/mw-vat-gst.md",
+      "candidate_sha256": "c2bb1b1e3a51b79a857e75125856b4ce33d205d6a094a9ac624bff69c58142aa",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/malawi/README.md",
+      "candidate_sha256": "d76e06c4ab451956cb1f2d77f5e63a9cb5ae0f8096ff2f818067591d07411bd8",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/malawi/mw-company-formation.md",
+      "candidate_sha256": "699a2b9c0d846980782e1552fa06fda37145e19e970fdcbce1d0d85313854876",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/malawi/mw-corporate-income-tax.md",
+      "candidate_sha256": "8c7103980ebe451c36547efa01dff3da3ef9d5b8461740fe8c81147016ea14d1",
+      "byte_exact": false
+    },
+    {
+      "path": "skills/malawi/mw-cross-border-tax.md",
+      "candidate_sha256": "8f005e795603b73881acc925e8061464c0be0522cd665ebe8ecfa6c02cbbbf18",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/malawi/mw-income-tax.md",
+      "candidate_sha256": "4a78f91f628e0d4487930e749b724edb0ca314573c181ee4396953737d421ad5",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/malawi/mw-listed-share-withholding.md",
+      "candidate_sha256": "e22568dafc75b062304e1e20ce81dca900473585a131b075812a783a78700131",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/malawi/mw-payroll-social.md",
+      "candidate_sha256": "f13ecf4447c34717c13f6283e9e9606d9ba20e75948ad47467fd6150cbd2dadb",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/malawi/mw-tax-overview.md",
+      "candidate_sha256": "749813d64f424597f7abf3f8bcecaa7ce1affc31ca772287e6ca56f3fc9654a6",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/malawi/mw-transfer-pricing.md",
+      "candidate_sha256": "1fa37a74dd2c6cf86ca0c20b1b8b303123d33b7fb41d79f49cf1622fc4fb21ba",
+      "byte_exact": true
+    },
+    {
+      "path": "skills/malawi/mw-vat-gst.md",
+      "candidate_sha256": "6fb3efd69c93689e1d9229bfea606b082c8169341109e83e85d7f47aa14546dc",
+      "byte_exact": true
+    }
+  ],
+  "only_edited_tracked_file": "skills/malawi/mw-corporate-income-tax.md",
+  "four_exact_expected_replacements": true,
+  "corporate_examples_exact": true,
+  "full_cta_exact": true,
+  "prior_evidence_and_every_other_guide_exact": true,
+  "no_staged_changes": true,
+  "no_commit_or_push_performed": true,
+  "committed_changed_only_validation": "Not run as a claim for this uncommitted candidate. Its committed HEAD diff would omit this repair; run after a separately authorised commit."
+}

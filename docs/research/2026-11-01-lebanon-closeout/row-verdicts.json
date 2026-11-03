@@ -1,0 +1,538 @@
+{
+  "reviewed_head": "17b9399bd2fb6144e46ce804d6ecc3b48308c0ea",
+  "merge_base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "reviewed_on": "2026-11-01",
+  "reviewer": "Independent Codex second reader, separate from writer",
+  "status": "repairs_required",
+  "counts": {
+    "rows": 52,
+    "pass_with_stated_scope": 48,
+    "repair_required": 4,
+    "guides": 6,
+    "examples": 12,
+    "predecessor_items": 692
+  },
+  "currentness_boundary": "Every listed row compared with actual cached primary source. This is source-baseline/partial-scope review, not an exhaustive later-amendment or whole-budget sweep and not professional attestation. Existing non-operative holds remain open.",
+  "rows": [
+    {
+      "id": "PIT-01",
+      "guide": "lb-income-tax",
+      "source": "IT",
+      "source_sha256": "d33fc606841883dd068c845e60ec53518ae44c7dbad472c6648edb6a788a38f5",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read IT PDF pp1-2 and25-27: separate schedules; business territory is not a universal foreign-income exemption; public/private payer and residence/work distinctions retained."
+    },
+    {
+      "id": "PIT-02",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art46pp45-46 directly in rendered images: marginal business rate and exact lower/upper slice match; tax base is after deductions; no salary allowance inferred."
+    },
+    {
+      "id": "PIT-03",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art46pp45-46 directly in rendered images: marginal business rate and exact lower/upper slice match; tax base is after deductions; no salary allowance inferred."
+    },
+    {
+      "id": "PIT-04",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art46pp45-46 directly in rendered images: marginal business rate and exact lower/upper slice match; tax base is after deductions; no salary allowance inferred."
+    },
+    {
+      "id": "PIT-05",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art46pp45-46 directly in rendered images: marginal business rate and exact lower/upper slice match; tax base is after deductions; no salary allowance inferred."
+    },
+    {
+      "id": "PIT-06",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art46pp45-46 directly in rendered images: marginal business rate and exact lower/upper slice match; tax base is after deductions; no salary allowance inferred."
+    },
+    {
+      "id": "PIT-07",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art46pp45-46 directly in rendered images: marginal business rate and exact lower/upper slice match; tax base is after deductions; no salary allowance inferred."
+    },
+    {
+      "id": "PIT-08",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art47pp46-47 directly in rendered images: marginal employment rate and exact lower/upper slice match; annual established taxable base only, gross-to-net/part-year application held."
+    },
+    {
+      "id": "PIT-09",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art47pp46-47 directly in rendered images: marginal employment rate and exact lower/upper slice match; annual established taxable base only, gross-to-net/part-year application held."
+    },
+    {
+      "id": "PIT-10",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art47pp46-47 directly in rendered images: marginal employment rate and exact lower/upper slice match; annual established taxable base only, gross-to-net/part-year application held."
+    },
+    {
+      "id": "PIT-11",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art47pp46-47 directly in rendered images: marginal employment rate and exact lower/upper slice match; annual established taxable base only, gross-to-net/part-year application held."
+    },
+    {
+      "id": "PIT-12",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art47pp46-47 directly in rendered images: marginal employment rate and exact lower/upper slice match; annual established taxable base only, gross-to-net/part-year application held."
+    },
+    {
+      "id": "PIT-13",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art47pp46-47 directly in rendered images: marginal employment rate and exact lower/upper slice match; annual established taxable base only, gross-to-net/part-year application held."
+    },
+    {
+      "id": "PIT-14",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B24art47pp46-47 directly in rendered images: marginal employment rate and exact lower/upper slice match; annual established taxable base only, gross-to-net/part-year application held."
+    },
+    {
+      "id": "PIT-15",
+      "guide": "lb-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "repair_required",
+      "source_rule_matches": true,
+      "review_note": "Amounts match B24 pp48-49, but the Guide does not state the actual dependent-child age/status conditions or working-spouse allocation rules beside the amounts. A page-pointer and qualifying label do not preserve those conditions. Add them or expressly hold application of the deduction."
+    },
+    {
+      "id": "PIT-16",
+      "guide": "lb-income-tax",
+      "source": "IT",
+      "source_sha256": "d33fc606841883dd068c845e60ec53518ae44c7dbad472c6648edb6a788a38f5",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read IT pp6-8 including both positive expense list and non-deductible personal spending. General net-profit statement is supported; Guide does not claim a complete deduction catalogue."
+    },
+    {
+      "id": "PIT-17",
+      "guide": "lb-income-tax",
+      "source": "IT",
+      "source_sha256": "d33fc606841883dd068c845e60ec53518ae44c7dbad472c6648edb6a788a38f5",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read IT pp26-27,30-31: cash/in-kind remuneration and art50 net-income exclusions; art57 prevents double personal deduction for dual business/salary income. Salary deductions and part-year operation remain held."
+    },
+    {
+      "id": "PIT-18",
+      "guide": "lb-income-tax",
+      "source": "B25",
+      "source_sha256": "921fb75a42297c0bceced7fd8867427b43682dfb3700f8900b8ab433b7a54899",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B25 PDFp28/Gazettep26 in image: three-month remittance by fifteenth of following month; month-end BDL conversion and LBP payment. Neighbouring text excludes pre31Dec2023 end-of-service amounts from this conversion provision. No final salary/EOS calculation is supplied; pensions/allowances/current implementation held."
+    },
+    {
+      "id": "PIT-19",
+      "guide": "lb-income-tax",
+      "source": "MOFINDEX",
+      "source_sha256": "a5010a636ec16a5e893c43d5da20ea209a7353b185122f76764b40dafdc0d6f6",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read MoF cached DASS index: R5 annual, R6 individual annual and R7 summary annual; decision449/1 title names periodic R10 and electronic correction R10/T. This is index evidence, not current portal boxes."
+    },
+    {
+      "id": "PIT-20",
+      "guide": "lb-income-tax",
+      "source": "B26",
+      "source_sha256": "3b476a2232af183d889c89e8f972c6ae1505b87f945e65f5f7395a066e0e47cb",
+      "frozen_guide_sha256": "14bfd68b96b4c0ca753161279b10bfae59a9b35f7eef8e3daafb7272b36b4a27",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B26 pp26-30 plus65-66: art18 concerns beneficial-owner information; it cannot set ordinary payroll-return penalties. General penalty/settlement implementation remains non-operative."
+    },
+    {
+      "id": "CIT-01",
+      "guide": "lb-corporate-income-tax",
+      "source": "B24",
+      "source_sha256": "732e766705ad533906e56a7907fd8098194fd398863f5dda3291fa1238a03c22",
+      "frozen_guide_sha256": "4699f427598d1bd1cfeb3b2d1b2129c5adac0b75989b5408ee19468071a0179e",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "B24 pp45-46 visibly retain17% for capital companies; entire notice4859 image confirms old15% ceased26Oct2017 and17% from27Oct2017. Ordinary SAL/SARL case is properly limited."
+    },
+    {
+      "id": "CIT-02",
+      "guide": "lb-corporate-income-tax",
+      "source": "DIV",
+      "source_sha256": "04de1563518f7381bbdd6a5d68504836d7bce6f247c0c662037440514beec394",
+      "frozen_guide_sha256": "4699f427598d1bd1cfeb3b2d1b2129c5adac0b75989b5408ee19468071a0179e",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Whole notice4676 image:10% applies to profits resolved to distribute from27Oct2017 after withdrawal of special5% reduction. IDAL distribution text corroborates ordinary scope; no claim every capital receipt is exempt/chargeable."
+    },
+    {
+      "id": "CIT-03",
+      "guide": "lb-corporate-income-tax",
+      "source": "IDAL-T",
+      "source_sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+      "frozen_guide_sha256": "4699f427598d1bd1cfeb3b2d1b2129c5adac0b75989b5408ee19468071a0179e",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "IDAL-T SAL and SARL sections each explicitly state15% on fixed-asset disposal profit including shares. Undated authority-guidance baseline is honestly labelled; full statutory/currentness chain is not certified."
+    },
+    {
+      "id": "CIT-04",
+      "guide": "lb-corporate-income-tax",
+      "source": "B26",
+      "source_sha256": "3b476a2232af183d889c89e8f972c6ae1505b87f945e65f5f7395a066e0e47cb",
+      "frozen_guide_sha256": "4699f427598d1bd1cfeb3b2d1b2129c5adac0b75989b5408ee19468071a0179e",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read whole B26art27p38:1.5% on customs-law defined imports; failure during any period of previous3years; annual tax credit; penalties survive; excess refundable on request only without other tax debts;30days then Treasury-bond interest. Correctly avoids guaranteed escape by immediately filing."
+    },
+    {
+      "id": "CIT-05",
+      "guide": "lb-corporate-income-tax",
+      "source": "B26",
+      "source_sha256": "3b476a2232af183d889c89e8f972c6ae1505b87f945e65f5f7395a066e0e47cb",
+      "frozen_guide_sha256": "4699f427598d1bd1cfeb3b2d1b2129c5adac0b75989b5408ee19468071a0179e",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B26art28p38 and older IT5bis context:23bn is minimum fixed assets owned in Lebanon and allocated to new goods/materials, one condition of relief, not cap or full exemption test."
+    },
+    {
+      "id": "CIT-06",
+      "guide": "lb-corporate-income-tax",
+      "source": "IT",
+      "source_sha256": "d33fc606841883dd068c845e60ec53518ae44c7dbad472c6648edb6a788a38f5",
+      "frozen_guide_sha256": "4699f427598d1bd1cfeb3b2d1b2129c5adac0b75989b5408ee19468071a0179e",
+      "verdict": "repair_required",
+      "source_rule_matches": true,
+      "review_note": "IT arts3,6-7,11-14 support source/period/net-profit principles. But Guide generalises art11 employee limb as permanent: industrial limb3, publishers11 and mills12 say permanent; retail limb6 says more than4 without permanence. Preserve the separate activity tests."
+    },
+    {
+      "id": "CIT-07",
+      "guide": "lb-corporate-income-tax",
+      "source": "IDAL-T",
+      "source_sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+      "frozen_guide_sha256": "4699f427598d1bd1cfeb3b2d1b2129c5adac0b75989b5408ee19468071a0179e",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "IDAL-T online declaration paragraphs identify documents then emailed E-pin and holding manual exception. Guide treats undated guidance as baseline and holds current forms/actual filing dates."
+    },
+    {
+      "id": "CIT-08",
+      "guide": "lb-corporate-income-tax",
+      "source": "B26",
+      "source_sha256": "3b476a2232af183d889c89e8f972c6ae1505b87f945e65f5f7395a066e0e47cb",
+      "frozen_guide_sha256": "4699f427598d1bd1cfeb3b2d1b2129c5adac0b75989b5408ee19468071a0179e",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "B26arts16-17pp26-27 increase specified fixed/minimum penalties from2026 business years. Art18pp27-30 is UBO-specific. Guide does not reuse its amounts for ordinary filings; exact calculation and settlement held."
+    },
+    {
+      "id": "VAT-01",
+      "guide": "lebanon-vat",
+      "source": "B26",
+      "source_sha256": "3b476a2232af183d889c89e8f972c6ae1505b87f945e65f5f7395a066e0e47cb",
+      "frozen_guide_sha256": "1d43d1108da9cdd53e4c85cbc17f5eb97a5211d398684d63a7221cb61ff7d70c",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read B26art51p79: one month replaces20days in VAT35(4) and39. Guide expressly holds actual extensions/suspensions and avoids unconditional calendar dates."
+    },
+    {
+      "id": "VAT-02",
+      "guide": "lebanon-vat",
+      "source": "B26",
+      "source_sha256": "3b476a2232af183d889c89e8f972c6ae1505b87f945e65f5f7395a066e0e47cb",
+      "frozen_guide_sha256": "1d43d1108da9cdd53e4c85cbc17f5eb97a5211d398684d63a7221cb61ff7d70c",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "B26art30p40 caps input tax attributable to ordinary tourist/passenger car at tax onUSD30000 exVAT, with partial deduction computed using that maximum. Hypothetical400m tax is not an inferred legal rate."
+    },
+    {
+      "id": "VAT-03",
+      "guide": "lebanon-vat",
+      "source": "B26",
+      "source_sha256": "3b476a2232af183d889c89e8f972c6ae1505b87f945e65f5f7395a066e0e47cb",
+      "frozen_guide_sha256": "1d43d1108da9cdd53e4c85cbc17f5eb97a5211d398684d63a7221cb61ff7d70c",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "B26art30p41 exempts fare-paying transport, car rental, classified4star+ hotels/resorts from car cap. Other input conditions still apply; Guide does not treat category alone as universal deduction."
+    },
+    {
+      "id": "VAT-04",
+      "guide": "lebanon-vat",
+      "source": "B26",
+      "source_sha256": "3b476a2232af183d889c89e8f972c6ae1505b87f945e65f5f7395a066e0e47cb",
+      "frozen_guide_sha256": "1d43d1108da9cdd53e4c85cbc17f5eb97a5211d398684d63a7221cb61ff7d70c",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "B26art30pp40-41 states taxable economic operations, named export/international-transport articles, pre-registration stock/fixed-asset conditions, and blocked water/electricity/communications/internet/petrol. Guide does not falsely permit utility recovery."
+    },
+    {
+      "id": "VAT-05",
+      "guide": "lebanon-vat",
+      "source": "VAT",
+      "source_sha256": "ee4ee27f6ff4f48406b1c275753918ef552aa6423137d7194d58f578a7f080c6",
+      "frozen_guide_sha256": "1d43d1108da9cdd53e4c85cbc17f5eb97a5211d398684d63a7221cb61ff7d70c",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read MoF declaration page substantive deduction/apportionment paragraphs: partial deduction ratio is right-to-deduct transactions over total transactions. Full denominator exclusions/annual adjustments explicitly held; no mixed-activity percentage is invented."
+    },
+    {
+      "id": "VAT-06",
+      "guide": "lebanon-vat",
+      "source": "B26",
+      "source_sha256": "3b476a2232af183d889c89e8f972c6ae1505b87f945e65f5f7395a066e0e47cb",
+      "frozen_guide_sha256": "1d43d1108da9cdd53e4c85cbc17f5eb97a5211d398684d63a7221cb61ff7d70c",
+      "verdict": "repair_required",
+      "source_rule_matches": true,
+      "review_note": "Read B26art31pp41-42: carryforward first; annual refund within1month after calendar year, exporter period-end request within1month, minimum200m. Guide records refund amount/window but omits carryforward, despite ledger asserting it and old Guide containing it. Restore that rule and precise predecessor destinations. P42 decision/extension/interest provisions read; no complete refund procedure certified."
+    },
+    {
+      "id": "VAT-07",
+      "guide": "lebanon-vat",
+      "source": "VAT",
+      "source_sha256": "ee4ee27f6ff4f48406b1c275753918ef552aa6423137d7194d58f578a7f080c6",
+      "frozen_guide_sha256": "1d43d1108da9cdd53e4c85cbc17f5eb97a5211d398684d63a7221cb61ff7d70c",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "MoF declaration page says calendar quarters; its20day/mail text is expressly superseded/held by Guide. B26art51 supplies later statutory period."
+    },
+    {
+      "id": "VAT-08",
+      "guide": "lebanon-vat",
+      "source": "B26",
+      "source_sha256": "3b476a2232af183d889c89e8f972c6ae1505b87f945e65f5f7395a066e0e47cb",
+      "frozen_guide_sha256": "1d43d1108da9cdd53e4c85cbc17f5eb97a5211d398684d63a7221cb61ff7d70c",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "B26art35p45 confirms monthly electronic fixed-stamp return within15days of month end for invoicing/receipt/note taxpayers; licensed stamping-machine users excluded. Transitional application and stamp amounts are not certified."
+    },
+    {
+      "id": "VAT-09",
+      "guide": "lebanon-vat",
+      "source": "B26",
+      "source_sha256": "3b476a2232af183d889c89e8f972c6ae1505b87f945e65f5f7395a066e0e47cb",
+      "frozen_guide_sha256": "1d43d1108da9cdd53e4c85cbc17f5eb97a5211d398684d63a7221cb61ff7d70c",
+      "verdict": "repair_required",
+      "source_rule_matches": true,
+      "review_note": "B26art18 is UBO-specific; art41p65 addresses2024 exceptional refund period. Art43p66 concerns specified fines payable TO state/municipal/public entities. Guide phrase public-entity penalty settlement can misstate debtor scope; replace by specified fines payable to public bodies. Operative relief remains held."
+    },
+    {
+      "id": "PAY-01",
+      "guide": "lb-payroll-social",
+      "source": "N831",
+      "source_sha256": "7f93a6eba0026679cd2a01f557d04c403db5f92fe102a49f7b829eccf830b793",
+      "frozen_guide_sha256": "2e25a993883e1d1ce9b2a20f5b3a9ae3d18acaa7593564c82d52aaa06f9321d7",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read all memo831image: ordinary family/education branch ceiling28m monthly effective1May2026, referencing decree2923 andSSL68(2); not a medical/end-of-service ceiling."
+    },
+    {
+      "id": "PAY-02",
+      "guide": "lb-payroll-social",
+      "source": "N831",
+      "source_sha256": "7f93a6eba0026679cd2a01f557d04c403db5f92fe102a49f7b829eccf830b793",
+      "frozen_guide_sha256": "2e25a993883e1d1ce9b2a20f5b3a9ae3d18acaa7593564c82d52aaa06f9321d7",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Memo831II/V: ordinary spouse2.1m, child1.155m maximum5, family maximum7.875m, effective1May2026. Eligibility is not inferred; examples explicitly assume evidenced eligible dependants."
+    },
+    {
+      "id": "PAY-03",
+      "guide": "lb-payroll-social",
+      "source": "N831",
+      "source_sha256": "7f93a6eba0026679cd2a01f557d04c403db5f92fe102a49f7b829eccf830b793",
+      "frozen_guide_sha256": "2e25a993883e1d1ce9b2a20f5b3a9ae3d18acaa7593564c82d52aaa06f9321d7",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Memo831III-IV separately address owner-drivers and nonowner-drivers/newspaper vendors, with different amounts. Guide correctly holds special categories rather than applying ordinary parameters."
+    },
+    {
+      "id": "PAY-04",
+      "guide": "lb-payroll-social",
+      "source": "N843",
+      "source_sha256": "e2c94e3d25ad743beb4ce6ea420d29c5eb2f355b651e1f2c178c3a3e71fca506",
+      "frozen_guide_sha256": "2e25a993883e1d1ce9b2a20f5b3a9ae3d18acaa7593564c82d52aaa06f9321d7",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read both843pages and attached Law46arts1-2:1March-31July2026 suspension, listed SSL80 periods and discretionary administration exception. No blanket identical extension for every payroll payment."
+    },
+    {
+      "id": "PAY-05",
+      "guide": "lb-payroll-social",
+      "source": "N846",
+      "source_sha256": "b289998bcc4e80278a7214ca9554ec7069511d581248b32f20d930b068c78996",
+      "frozen_guide_sha256": "2e25a993883e1d1ce9b2a20f5b3a9ae3d18acaa7593564c82d52aaa06f9321d7",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read all846pages: law47/2026, debts through31Dec2025,30July2027 payment/application limit; reduction/instalments, defaults, exclusions and changed penalty table. Guide names the route but holds employer entitlement and amount; no spurious automatic relief."
+    },
+    {
+      "id": "FORM-01",
+      "guide": "lb-company-formation",
+      "source": "IDAL-F",
+      "source_sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+      "frozen_guide_sha256": "2d4a1a9a23dd3133ab6dfde73ee0a00e6e4ba3aa878bcbe05e8ea4a49a6ba238",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read complete IDAL SARL section:5m capital,1-20 partners, liability by contribution and single-partner SARL nesting restriction. Guide explicitly says restriction needs checking and statutory chain held; example is individual founder, not an unexamined entity owner."
+    },
+    {
+      "id": "FORM-02",
+      "guide": "lb-company-formation",
+      "source": "IDAL-F",
+      "source_sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+      "frozen_guide_sha256": "2d4a1a9a23dd3133ab6dfde73ee0a00e6e4ba3aa878bcbe05e8ea4a49a6ba238",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Read complete IDAL SAL section:30m capital,at least3shareholders. Guide labels undated official guidance baseline, not verified complete2026 statute."
+    },
+    {
+      "id": "FORM-03",
+      "guide": "lb-company-formation",
+      "source": "IDAL-F",
+      "source_sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+      "frozen_guide_sha256": "2d4a1a9a23dd3133ab6dfde73ee0a00e6e4ba3aa878bcbe05e8ea4a49a6ba238",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "IDAL SAL annual lawyer/principal-auditor text and SARL annual-retainer lawyer text support descriptive guidance. Current company-law/annual-compliance chain is expressly held."
+    },
+    {
+      "id": "FORM-04",
+      "guide": "lb-company-formation",
+      "source": "IDAL-F",
+      "source_sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+      "frozen_guide_sha256": "2d4a1a9a23dd3133ab6dfde73ee0a00e6e4ba3aa878bcbe05e8ea4a49a6ba238",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "IDAL lists audit triggers including inherited partner count>20, capital30m and request by>=onefifth capital. Ambiguity/current statutory trigger expressly held; Guide does not assert numeric audit test as operative."
+    },
+    {
+      "id": "FORM-05",
+      "guide": "lb-company-formation",
+      "source": "IDAL-F",
+      "source_sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+      "frozen_guide_sha256": "2d4a1a9a23dd3133ab6dfde73ee0a00e6e4ba3aa878bcbe05e8ea4a49a6ba238",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "IDAL holding limited-object SAL and offshore minimum1shareholder text read with neighbours. Guide does not extend ordinary SAL3-person rule to offshore or certify special tax relief."
+    },
+    {
+      "id": "FORM-06",
+      "guide": "lb-company-formation",
+      "source": "IDAL-F",
+      "source_sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+      "frozen_guide_sha256": "2d4a1a9a23dd3133ab6dfde73ee0a00e6e4ba3aa878bcbe05e8ea4a49a6ba238",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "IDAL branch must share parent object and may trade; representative office promotion/marketing only, not trading. Full registrations/permits held."
+    },
+    {
+      "id": "OV-01",
+      "guide": "lb-tax-overview",
+      "source": "IT",
+      "source_sha256": "d33fc606841883dd068c845e60ec53518ae44c7dbad472c6648edb6a788a38f5",
+      "frozen_guide_sha256": "dcc897877c82c250911554561d6ec0bbf9eec4447f5da888e955c81f918e9b74",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "ITarts1-3pp1-2 distinguish business, salaries/pensions and movable capital; Guide preserves separate schedules and does not turn Lebanese business-source principle into universal foreign-income exemption."
+    },
+    {
+      "id": "OV-02",
+      "guide": "lb-tax-overview",
+      "source": "IT",
+      "source_sha256": "d33fc606841883dd068c845e60ec53518ae44c7dbad472c6648edb6a788a38f5",
+      "frozen_guide_sha256": "dcc897877c82c250911554561d6ec0bbf9eec4447f5da888e955c81f918e9b74",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "ITarts13-14pp10-11 establish ordinary framework and approved different commercial year. Guide avoids universal calendar-year instruction."
+    },
+    {
+      "id": "OV-03",
+      "guide": "lb-tax-overview",
+      "source": "IDAL-T",
+      "source_sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+      "frozen_guide_sha256": "dcc897877c82c250911554561d6ec0bbf9eec4447f5da888e955c81f918e9b74",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "IDAL-T E-services documents/E-pin and manual holding exception read; current operational process held and routed to domain Guides."
+    },
+    {
+      "id": "OV-04",
+      "guide": "lb-tax-overview",
+      "source": "IDAL-T",
+      "source_sha256": "81a340443b60af8aee4557d04140d6a8be9b5d9985210e7ed276e5c3c34842f6",
+      "frozen_guide_sha256": "dcc897877c82c250911554561d6ec0bbf9eec4447f5da888e955c81f918e9b74",
+      "verdict": "pass_with_stated_scope",
+      "source_rule_matches": true,
+      "review_note": "Routing points to six existing domain Guides; rates not duplicated. IDAL headings support SAL/SARL distinction; no additional quantitative tax rule is asserted."
+    }
+  ]
+}

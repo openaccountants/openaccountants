@@ -1,0 +1,322 @@
+{
+  "reviewed_prior_head": "5ca4e55e6d601b99dad0d1b73e3f5d2688e4717a",
+  "candidate_hashes": {
+    "skills/republic-of-congo/cg-company-formation.md": "eff2380d71d82ee2153320956df271f374a571e37a104793578c9ff50f66d3d2",
+    "skills/republic-of-congo/cg-corporate-income-tax.md": "fb776febb676349dc5adc2f377ddee3e51d40b78161c3969732753b5d897bedb",
+    "skills/republic-of-congo/cg-income-tax.md": "9aeee8c469bc4f2a854d901f47be9b202ae56dc759ef4f78e390df99ba4cce1a",
+    "skills/republic-of-congo/cg-payroll-social.md": "f2a7c53f6e43a9b1d4c12f171978cf2fbc9a1f7b006cf50354eda14f3e61e7ea",
+    "skills/republic-of-congo/cg-vat-gst.md": "526d48d3edd20d740a2c7ad1aad0b9cf1e321df931c79b219218609073bbde6b",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-company-formation.md": "f2f6c78fb61cb72808de6bd72672f8a3f5355e9ea01b890d7b28ed259a5daaaa",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-corporate-income-tax.md": "f1c4deb5365ab9fd6d676ca1dbe8965ba6cfd7cdc5471608d56f03b6ab4cb38d",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-income-tax.md": "b52a2e5c88802ce3aff825973065f0972fda7cdfd0568612420baa675d70da7f",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-payroll-social.md": "60f0488536987477f27d655843ca71f893d924e363ddee79594e45692e2e8d10",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-vat-gst.md": "351b6d527abe41fe6e35d79aa8f5cde3b451f723bc0e598683562ab98ffcc4e3",
+    "evidence/ledgers/republic-of-congo-draft-20261101/rule-register.json": "0af1e2a00b20a0eef0800229f82999717d027b2c44a414180777084d8f9a5c6a"
+  },
+  "changed_record_ids": [
+    "C07",
+    "C10",
+    "C11",
+    "I15",
+    "V01",
+    "V02",
+    "V08",
+    "P03",
+    "F03",
+    "F06",
+    "F14"
+  ],
+  "record_placement_checks": [
+    {
+      "id": "C07",
+      "placements": [
+        {
+          "guide": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "guide_line": 44,
+          "guide_rule_matches": true,
+          "ledger": "evidence/ledgers/republic-of-congo-draft-20261101/cg-corporate-income-tax.md",
+          "ledger_line": 11,
+          "ledger_rule_and_quotes_match": true,
+          "all_supporting_links_and_source_hashes_match": true
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "placements": [
+        {
+          "guide": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "guide_line": 53,
+          "guide_rule_matches": true,
+          "ledger": "evidence/ledgers/republic-of-congo-draft-20261101/cg-corporate-income-tax.md",
+          "ledger_line": 14,
+          "ledger_rule_and_quotes_match": true,
+          "all_supporting_links_and_source_hashes_match": true
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "placements": [
+        {
+          "guide": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "guide_line": 54,
+          "guide_rule_matches": true,
+          "ledger": "evidence/ledgers/republic-of-congo-draft-20261101/cg-corporate-income-tax.md",
+          "ledger_line": 15,
+          "ledger_rule_and_quotes_match": true,
+          "all_supporting_links_and_source_hashes_match": true
+        }
+      ]
+    },
+    {
+      "id": "I15",
+      "placements": [
+        {
+          "guide": "skills/republic-of-congo/cg-income-tax.md",
+          "guide_line": 50,
+          "guide_rule_matches": true,
+          "ledger": "evidence/ledgers/republic-of-congo-draft-20261101/cg-income-tax.md",
+          "ledger_line": 19,
+          "ledger_rule_and_quotes_match": true,
+          "all_supporting_links_and_source_hashes_match": true
+        }
+      ]
+    },
+    {
+      "id": "V01",
+      "placements": [
+        {
+          "guide": "skills/republic-of-congo/cg-vat-gst.md",
+          "guide_line": 30,
+          "guide_rule_matches": true,
+          "ledger": "evidence/ledgers/republic-of-congo-draft-20261101/cg-vat-gst.md",
+          "ledger_line": 5,
+          "ledger_rule_and_quotes_match": true,
+          "all_supporting_links_and_source_hashes_match": true
+        }
+      ]
+    },
+    {
+      "id": "V02",
+      "placements": [
+        {
+          "guide": "skills/republic-of-congo/cg-vat-gst.md",
+          "guide_line": 31,
+          "guide_rule_matches": true,
+          "ledger": "evidence/ledgers/republic-of-congo-draft-20261101/cg-vat-gst.md",
+          "ledger_line": 6,
+          "ledger_rule_and_quotes_match": true,
+          "all_supporting_links_and_source_hashes_match": true
+        }
+      ]
+    },
+    {
+      "id": "V08",
+      "placements": [
+        {
+          "guide": "skills/republic-of-congo/cg-vat-gst.md",
+          "guide_line": 52,
+          "guide_rule_matches": true,
+          "ledger": "evidence/ledgers/republic-of-congo-draft-20261101/cg-vat-gst.md",
+          "ledger_line": 12,
+          "ledger_rule_and_quotes_match": true,
+          "all_supporting_links_and_source_hashes_match": true
+        }
+      ]
+    },
+    {
+      "id": "P03",
+      "placements": [
+        {
+          "guide": "skills/republic-of-congo/cg-payroll-social.md",
+          "guide_line": 49,
+          "guide_rule_matches": true,
+          "ledger": "evidence/ledgers/republic-of-congo-draft-20261101/cg-payroll-social.md",
+          "ledger_line": 7,
+          "ledger_rule_and_quotes_match": true,
+          "all_supporting_links_and_source_hashes_match": true
+        }
+      ]
+    },
+    {
+      "id": "F03",
+      "placements": [
+        {
+          "guide": "skills/republic-of-congo/cg-company-formation.md",
+          "guide_line": 31,
+          "guide_rule_matches": true,
+          "ledger": "evidence/ledgers/republic-of-congo-draft-20261101/cg-company-formation.md",
+          "ledger_line": 7,
+          "ledger_rule_and_quotes_match": true,
+          "all_supporting_links_and_source_hashes_match": true
+        }
+      ]
+    },
+    {
+      "id": "F06",
+      "placements": [
+        {
+          "guide": "skills/republic-of-congo/cg-company-formation.md",
+          "guide_line": 43,
+          "guide_rule_matches": true,
+          "ledger": "evidence/ledgers/republic-of-congo-draft-20261101/cg-company-formation.md",
+          "ledger_line": 10,
+          "ledger_rule_and_quotes_match": true,
+          "all_supporting_links_and_source_hashes_match": true
+        }
+      ]
+    },
+    {
+      "id": "F14",
+      "placements": [
+        {
+          "guide": "skills/republic-of-congo/cg-company-formation.md",
+          "guide_line": 45,
+          "guide_rule_matches": true,
+          "ledger": "evidence/ledgers/republic-of-congo-draft-20261101/cg-company-formation.md",
+          "ledger_line": 18,
+          "ledger_rule_and_quotes_match": true,
+          "all_supporting_links_and_source_hashes_match": true
+        }
+      ]
+    }
+  ],
+  "guide_checks": [
+    {
+      "file": "skills/republic-of-congo/cg-company-formation.md",
+      "sha256": "eff2380d71d82ee2153320956df271f374a571e37a104793578c9ff50f66d3d2",
+      "frontmatter_unchanged": true,
+      "version": 1.1,
+      "h1_version_matches": true,
+      "examples_prose_and_blocks_byte_unchanged": true,
+      "cta_exact_or_correctly_absent": true,
+      "prior_holds_preserved": true
+    },
+    {
+      "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+      "sha256": "fb776febb676349dc5adc2f377ddee3e51d40b78161c3969732753b5d897bedb",
+      "frontmatter_unchanged": true,
+      "version": 1.1,
+      "h1_version_matches": true,
+      "examples_prose_and_blocks_byte_unchanged": true,
+      "cta_exact_or_correctly_absent": true,
+      "prior_holds_preserved": true
+    },
+    {
+      "file": "skills/republic-of-congo/cg-cross-border.md",
+      "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747",
+      "frontmatter_unchanged": true,
+      "version": 1.0,
+      "h1_version_matches": true,
+      "examples_prose_and_blocks_byte_unchanged": true,
+      "cta_exact_or_correctly_absent": true,
+      "prior_holds_preserved": true
+    },
+    {
+      "file": "skills/republic-of-congo/cg-income-tax.md",
+      "sha256": "9aeee8c469bc4f2a854d901f47be9b202ae56dc759ef4f78e390df99ba4cce1a",
+      "frontmatter_unchanged": true,
+      "version": 1.1,
+      "h1_version_matches": true,
+      "examples_prose_and_blocks_byte_unchanged": true,
+      "cta_exact_or_correctly_absent": true,
+      "prior_holds_preserved": true
+    },
+    {
+      "file": "skills/republic-of-congo/cg-payroll-social.md",
+      "sha256": "f2a7c53f6e43a9b1d4c12f171978cf2fbc9a1f7b006cf50354eda14f3e61e7ea",
+      "frontmatter_unchanged": true,
+      "version": 1.1,
+      "h1_version_matches": true,
+      "examples_prose_and_blocks_byte_unchanged": true,
+      "cta_exact_or_correctly_absent": true,
+      "prior_holds_preserved": true
+    },
+    {
+      "file": "skills/republic-of-congo/cg-tax-overview.md",
+      "sha256": "b9c144f0b85207f81a995846f85bb7363e2f37b51fcbf68f2b8b35a941830889",
+      "frontmatter_unchanged": true,
+      "version": 1.1,
+      "h1_version_matches": true,
+      "examples_prose_and_blocks_byte_unchanged": true,
+      "cta_exact_or_correctly_absent": true,
+      "prior_holds_preserved": true
+    },
+    {
+      "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+      "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e",
+      "frontmatter_unchanged": true,
+      "version": 1.0,
+      "h1_version_matches": true,
+      "examples_prose_and_blocks_byte_unchanged": true,
+      "cta_exact_or_correctly_absent": true,
+      "prior_holds_preserved": true
+    },
+    {
+      "file": "skills/republic-of-congo/cg-vat-gst.md",
+      "sha256": "526d48d3edd20d740a2c7ad1aad0b9cf1e321df931c79b219218609073bbde6b",
+      "frontmatter_unchanged": true,
+      "version": 1.1,
+      "h1_version_matches": true,
+      "examples_prose_and_blocks_byte_unchanged": true,
+      "cta_exact_or_correctly_absent": true,
+      "prior_holds_preserved": true
+    }
+  ],
+  "new_quote_anchors": [
+    {
+      "id": "C07",
+      "quote_fr": "d\u00e9ductibles sans limitation de dur\u00e9e",
+      "source": "LF",
+      "source_pages": [
+        41
+      ]
+    },
+    {
+      "id": "C07",
+      "quote_fr": "Ils sont d\u00e9clar\u00e9s dans le tableau des amortissements",
+      "source": "LF",
+      "source_pages": [
+        41
+      ]
+    },
+    {
+      "id": "C11",
+      "quote_fr": "dans les trois mois de leur constitution d\u00e9finitive",
+      "source": "LF",
+      "source_pages": [
+        47,
+        66
+      ]
+    },
+    {
+      "id": "C11",
+      "quote_fr": "au plus tard dans les quinze jours du commencement d\u2019activit\u00e9",
+      "source": "LF",
+      "source_pages": [
+        47,
+        66
+      ]
+    },
+    {
+      "id": "I15",
+      "quote_fr": "non issus de son mariage avec le conjoint d\u00e9c\u00e9d\u00e9",
+      "source": "LF",
+      "source_pages": [
+        65
+      ]
+    }
+  ],
+  "preserved_historical_receipts": [
+    "README.md",
+    "old-topics.json",
+    "old-topics.md",
+    "metadata-preservation.json",
+    "source-read-manifest.json",
+    "quote-locator-check.json",
+    "writer-checks.json"
+  ],
+  "old_topics_73_immutable": true,
+  "country_readme_seven_partial_domains_unchanged": true
+}

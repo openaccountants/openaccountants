@@ -2,7 +2,7 @@
 name: km-electronic-filing-and-tax-procedure
 description: >
   Comoros reference to electronic filing, payment evidence and selected enforcement changes enacted in the 2026 finance law. Distinguishes the statutory framework from the implementing decisions required for rollout, explains platform receipt and settlement timing, and records outage and authentication provisions. Covers the new electronic information-request deadline and fiscal-flagrance response period without replacing the full appeals regime. An earlier electronic-filing mandate and the newer phased framework require reconciliation before operational advice. Current platform designation, commencement orders, penalties guidance and independent accountant review remain outstanding in this source-cited draft.
-version: 0.2
+version: 0.3
 jurisdiction: KM
 tax_year: 2026
 last_updated: 2026-11-01
@@ -52,9 +52,57 @@ New L.43 bis addresses serious, consistent indications of concealed activity or 
 
 The report is notified to the affected person and sent to the Director General, with possible referral for criminal proceedings. The provision gives **fifteen days from notification** for an administrative or contentious challenge. That is a rule for this procedure, not a universal tax-appeal deadline. A notice under it needs immediate professional assessment of the response route and any stay or security requirements. [L.43 bis, page 9](https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf).
 
+## Bank reporting and beneficial owners
+
+New L.46 bis in the 2026 law requires banks and microfinance institutions to report opening, change and closure of business accounts to the tax directorate, within thirty days of opening. [2026 law, page 14](https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf). The 2024 amending law had already used the number L.46 bis for a duty on companies to keep a beneficial-owner register, updated and shown on request. [2024 amending law, page 16](https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf). The 2026 text says it adds an article; it does not say it replaces the register. Both are treated as in force until the numbering is settled.
+
+## Site visit length
+
+Under L.42, as amended in 2024, on-site audit work cannot exceed three months for sole traders and six months for companies. This can be extended by three months for a company under the L.21 bis documentation duty, or where a treaty information request goes abroad. [2024 amending law, page 14](https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf).
+
+## Other charges enacted for 2026
+
+The 2026 law also creates a household waste charge (art. 15) and an eco-contribution on producers, importers and distributors (art. 16). Both have rates set by joint order, and those orders have not been found. It sets an import licence on ordinary rice of FC 0.5 per kg (art. 17) and on luxury rice of FC 1 per kg (art. 18). [Pages 15 to 16](https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf). The 2025 law sets a management and maintenance fee of 5% of the CIF value of imported goods (art. 20). [2025 law, page 10](https://finances.gouv.km/wp-content/uploads/2024/12/Decret-N%C2%B024-186PR-du-19-decembre-2024-portant-promulgation-loi-N%C2%B024-016PR-Portant-Loi-de-Finances-2025.pdf).
+
 ## Remaining work
 
-Checked 22 October 2026. Obtain commencement/rollout orders, reconcile the earlier mandate, confirm the official platform, and complete the full appeals and penalty analysis. No live filing, payment or private-account interaction was performed. No independent accountant review has occurred.
+Checked 1 November 2026. Obtain commencement/rollout orders, reconcile the earlier mandate, confirm the official platform, and complete the full appeals and penalty analysis. No live filing, payment or private-account interaction was performed. No independent accountant review has occurred.
+
+## Two worked examples that recompute
+
+A taxpayer delays a right of communication request by 6 days past the stated deadline. At KMF 50,000 a day under L.113, that is KMF 300,000.
+
+```oa-check
+name: Six days of delay
+inputs:
+  days: 6
+steps:
+  - amount: days * 50000
+expected:
+  amount: 300000
+```
+
+A 20 day delay gives KMF 1,000,000. The KMF 100,000 fixed fine is a separate charge for evading or obstructing the right.
+
+```oa-check
+name: Twenty days of delay
+inputs:
+  days: 20
+steps:
+  - amount: days * 50000
+expected:
+  amount: 1000000
+```
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Law 25-020/AU, Finance Law 2026, tax section (arts. 14 to 18), scan pages 9 to 16 | https://finances.gouv.km/wp-content/uploads/2026/02/Decret-portant-promulgation-du-loi-des-finances-2026.pdf | 2026-11-01 |
+| Law 24-013/AU, Amending Finance Law 2024, tax section (art. 10), scan, OCR read | https://finances.gouv.km/wp-content/uploads/2024/12/LOI-DE-FINANCES-RECTIFICATIVES-2024.pdf | 2026-11-01 |
+| Law 24-016/AU, Finance Law 2025, articles 1 to 25, scan, OCR read; no CGI or LPF change found beyond art. 20 | https://finances.gouv.km/wp-content/uploads/2024/12/Decret-N%C2%B024-186PR-du-19-decembre-2024-portant-promulgation-loi-N%C2%B024-016PR-Portant-Loi-de-Finances-2025.pdf | 2026-11-01 |
+
+Not yet confirmed: the Amending Finance Law 2025 (Law 25-019/AU) could not be opened (official link returned 404), so any tax change in it is unverified. The Finance Law 2024 was not re-read in this refresh. The official tax authority site could not be reached. No consolidated 2026 code was found.
 
 <!-- openaccountants-cta-block -->
 

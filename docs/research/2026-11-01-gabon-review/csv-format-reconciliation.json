@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-01",
+  "reason": "Post-commit git diff --check reported CRLF trailing whitespace in newly added review CSV. Guide validation and metadata audit passed.",
+  "original_commit": "3d6bb690a8801923019a1cadadd2f7d6f31e8945",
+  "path": "docs/research/2026-11-01-gabon-review/all-rule-review.csv",
+  "operation": "CRLF to LF only",
+  "before_sha256": "63eacf8624cb3b73a3e1f31d3061813029664b5f599fec8f2c028ab27dddbc66",
+  "after_sha256": "ff12ffd3886ec90e95ed189abdc47c8f467962176f64b8b34a6da97a2f868a2b",
+  "parsed_rows_equal": true,
+  "source_or_Guide_content_changed": false,
+  "historical_note": "Original bytes remain in original_commit; other original review receipts are preserved, not rewritten."
+}

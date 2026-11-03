@@ -1,0 +1,84 @@
+{
+  "status": "accepted_for_limited_source_baseline_publication",
+  "reviewed_head": "4e70de75601d058e0aab3c5b219f6e730d5a4d1d",
+  "repaired_content_commit": "b49920464e47d00cef963f0897ff6e8964c1bf1c",
+  "prior_review_head": "17b9399bd2fb6144e46ce804d6ecc3b48308c0ea",
+  "merge_base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "reviewed_on": "2026-11-01",
+  "reviewer": "Independent Codex second reader, separate from writer",
+  "counts": {
+    "guides": 6,
+    "operative_rows_accepted_with_stated_scope": 52,
+    "prior_pass_rows_unchanged": 48,
+    "repaired_rows_rechecked": 4,
+    "requested_predecessor_mappings_closed": 9,
+    "predecessor_items_preserved": 692,
+    "examples_unchanged_recomputed": 12,
+    "shape_checks_passed": 90,
+    "lost_content_restored": 1,
+    "outstanding_review_findings": 0
+  },
+  "repaired_rows": [
+    {
+      "id": "PIT-15",
+      "verdict": "pass_with_stated_scope",
+      "note": "Household conditions now beside business deduction; salary application still held. Rechecked B24art49p48 image."
+    },
+    {
+      "id": "CIT-06",
+      "verdict": "pass_with_stated_scope",
+      "note": "Industrial/publisher/printer/nonwater-or-air mill permanence distinguished from retail limb. Rechecked ITart11p9."
+    },
+    {
+      "id": "VAT-06",
+      "verdict": "pass_with_stated_scope",
+      "note": "Excess-input carryforward restored to Guide The base; refund conditions kept separate. Rechecked B26art31p41 image."
+    },
+    {
+      "id": "VAT-09",
+      "verdict": "pass_with_stated_scope",
+      "note": "Specified fines payable to public bodies correctly state creditor direction; relief availability still held. Rechecked B26art43p66 image."
+    }
+  ],
+  "guide_sha256": {
+    "lb-income-tax": "b7577f88db182e81b7955169e6f2ec817656148a0ddb4c410589e499ce5cf9ef",
+    "lb-corporate-income-tax": "5d04eec680d0bfaa42ab21e68134a2c3c669b4265b92a3256151324aeb20b26d",
+    "lebanon-vat": "98854d240ec5847bc6efb2852ee04051fb8301e072d01eed87268a9f3142c213",
+    "lb-payroll-social": "2e25a993883e1d1ce9b2a20f5b3a9ae3d18acaa7593564c82d52aaa06f9321d7",
+    "lb-company-formation": "2d4a1a9a23dd3133ab6dfde73ee0a00e6e4ba3aa878bcbe05e8ea4a49a6ba238",
+    "lb-tax-overview": "dcc897877c82c250911554561d6ec0bbf9eec4447f5da888e955c81f918e9b74"
+  },
+  "ledger_sha256": {
+    "lb-income-tax": "7b6f925da0dd15bad0d2e609ef7da4344ffe92b162666ef05fa8b8d7e87db24c",
+    "lb-corporate-income-tax": "6ba4088910b76934401a9547c3c561936f698aa80288d808d5ba78b9d53c45e3",
+    "lebanon-vat": "709a1d6f9dc8371d2605b78d59e1453d60ea146cd29c42ec8447ed5355324d32",
+    "lb-payroll-social": "90576c5eaf16498706d7224803f35356f63e6db053ebe0c32789103802b9f103",
+    "lb-company-formation": "a124e0108e27a988fec7728eda15b50438e479285e36c9ab67e1b95e011f109a",
+    "lb-tax-overview": "12c1134768df34341bc7e2ffebe7a6f188b4b27f8a6a1edf0680b4dbf0a5599e"
+  },
+  "evidence_sha256": {
+    "operative-claims.json": "9003b6c61810c74376a118cb547954b538f03948d9def4a08519d42b18bd2241",
+    "predecessor-items.json": "0bf4e2d7b0d81a3e91f883ee0eba0ac74b67ff684e70410da715efc0062520d2",
+    "sources.json": "81d8cc3ffcd8f37ebf7abb6c910b9c7df0053e9ec8ae4ea5032f5e36290c4fff",
+    "independent-review.md": "8ecfd8ddc39b17193e9194326072b25bd984a1bfbc1d711de8d2a8cb8f9cb0b3",
+    "row-verdicts.json": "dbbc3ce585b867a52875b11b9d64cf0ab3794a89f9fd92bd569154ba7f2a325c",
+    "author-repairs.md": "ba3b1f387a8a4447339fccc08f6ad60a8279747c16c6b609a927c41be427dcf7",
+    "author-repairs.json": "d7dcac3579a1e29b23e1466020a0d3778568f597f2ecf6b2d4ae9c705f9a1881",
+    "repair-validation.md": "fc9802009875efbf626ecab206cce597997a985524c8d7abbac5849ca08086de"
+  },
+  "publication_boundary": "Acceptable only as the disclosed partial source-baseline pack. Existing currentness and operative-filing holds remain non-operative; no complete2026 currentness sweep, full budget/annex review, filing certification or accountant attestation is claimed.",
+  "checks": {
+    "all_four_source_repairs": "pass",
+    "all_nine_json_and_ledger_destination_repairs": "pass",
+    "source_manifest_hashes": "14/14 match",
+    "guide_ledger_hashes": "6/6 match",
+    "complete_stamped_cta_suffixes": "6/6 match original PR head",
+    "protected_metadata": "strict checker0errors0warnings0notices",
+    "prior_review_receipts": "both preserved byte for byte by hash",
+    "changed_validator": "6Guides0warninggroups",
+    "examples": "12blocks0failures0missing",
+    "whitespace": "whole actual merge-base diff clean",
+    "unchanged_holds_sources_pack_README_examples": "pass"
+  },
+  "actions": "Wrote closure.md and closure.json only. No Guide edits, commits, pushes or merge."
+}

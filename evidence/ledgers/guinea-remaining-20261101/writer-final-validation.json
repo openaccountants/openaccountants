@@ -1,0 +1,201 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "candidate_commit": "dbd246e03a7bfcad7cc1955ba2f904b2b96ec5c5",
+  "actual_changed_guides": [
+    "skills/guinea/gn-company-formation.md",
+    "skills/guinea/gn-corporate-income-tax.md",
+    "skills/guinea/gn-income-tax.md",
+    "skills/guinea/gn-payroll-social.md",
+    "skills/guinea/gn-property-tax.md",
+    "skills/guinea/gn-tax-overview.md",
+    "skills/guinea/gn-vat-gst.md",
+    "skills/guinea/gn-vat-invoice-control.md"
+  ],
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 9 changed guide file(s)\nchecked 8 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/guinea/gn-company-formation.md",
+        "skills/guinea/gn-corporate-income-tax.md",
+        "skills/guinea/gn-income-tax.md",
+        "skills/guinea/gn-payroll-social.md",
+        "skills/guinea/gn-property-tax.md",
+        "skills/guinea/gn-tax-overview.md",
+        "skills/guinea/gn-vat-gst.md",
+        "skills/guinea/gn-vat-invoice-control.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/guinea/gn-company-formation.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/guinea/gn-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/guinea/gn-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/guinea/gn-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/guinea/gn-property-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/guinea/gn-tax-overview.md (scope: other)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/guinea/gn-vat-gst.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/guinea/gn-vat-invoice-control.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/guinea/gn-company-formation.md",
+        "skills/guinea/gn-corporate-income-tax.md",
+        "skills/guinea/gn-income-tax.md",
+        "skills/guinea/gn-payroll-social.md",
+        "skills/guinea/gn-property-tax.md",
+        "skills/guinea/gn-tax-overview.md",
+        "skills/guinea/gn-vat-gst.md",
+        "skills/guinea/gn-vat-invoice-control.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 8 files, 18 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--head",
+        "dbd246e03a7bfcad7cc1955ba2f904b2b96ec5c5",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 8 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "dbd246e03a7bfcad7cc1955ba2f904b2b96ec5c5"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "all_fifteen_checks_per_guide": true,
+  "skill_check_passes": 120,
+  "oa_check_blocks": 18,
+  "guides": [
+    {
+      "path": "skills/guinea/gn-company-formation.md",
+      "git_blob": "973d2e11012b80cf0f4b955f11b33a233cd9cdeb",
+      "sha256": "f572c69c1fad8005da80bd159b8e4ac8e163cb91cc99bab13a7f766c5536f359",
+      "platform_fields_and_cta_preserved": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/guinea/gn-corporate-income-tax.md",
+      "git_blob": "d46233ccf22703a6afd32341e6f552055266cb27",
+      "sha256": "178071d8a109983b6f0a38d45f0e35e687bc5bc9b3aec378914de37b75faeb2b",
+      "platform_fields_and_cta_preserved": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/guinea/gn-income-tax.md",
+      "git_blob": "24a4e99fcb1db34ede2f717f4399561bc7137f6b",
+      "sha256": "12af07ec398e833baa76de68b69dc290315401968077703405109cda6795f105",
+      "platform_fields_and_cta_preserved": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/guinea/gn-payroll-social.md",
+      "git_blob": "1f0dc7e38bd897059a91fb59cc632cfa3837b047",
+      "sha256": "2a06226a82b7ff823ea60f081b210dd0a16e429b7689b270ee1e0cede38b701d",
+      "platform_fields_and_cta_preserved": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/guinea/gn-property-tax.md",
+      "git_blob": "a4ea6cbda2eb8d6b74a7bb2f8ff0510a52c5e95b",
+      "sha256": "10ba592f6fe9782226f9e6226edbac4f5904d68af729d72bd30feedc622e3e27",
+      "platform_fields_and_cta_preserved": true,
+      "oa_checks": 4
+    },
+    {
+      "path": "skills/guinea/gn-tax-overview.md",
+      "git_blob": "aa91928a2d686e4467752b9ca987921407a66b29",
+      "sha256": "44e868060d16b587b580506966be53752568cdb27bce578663ae0625b85d2de3",
+      "platform_fields_and_cta_preserved": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/guinea/gn-vat-gst.md",
+      "git_blob": "db4d183bd2befb93436b131488b9cdb94585ec1b",
+      "sha256": "83135fc41ebe98bf87b19d39e199702f3cf8b0ddc2aad1bdb87f782c453140b6",
+      "platform_fields_and_cta_preserved": true,
+      "oa_checks": 2
+    },
+    {
+      "path": "skills/guinea/gn-vat-invoice-control.md",
+      "git_blob": "f3a20e87739bc8d1225da7baea506137fab10a52",
+      "sha256": "2a2c575e5260ef10f0c3a5c840f9a3ef7d89592635433e49dce71ddc1f2ff78a",
+      "platform_fields_and_cta_preserved": true,
+      "oa_checks": 2
+    }
+  ],
+  "historical_evidence_files_preserved": [
+    "evidence/ledgers/gn-old-topic-destinations.md",
+    "evidence/ledgers/gn-property-tax.md",
+    "evidence/ledgers/gn-source-scope-20261101.md",
+    "evidence/ledgers/gn-vat-invoice-control.md",
+    "evidence/ledgers/guinea-closure-20261101/checks.json",
+    "evidence/ledgers/guinea-closure-20261101/closure.md",
+    "evidence/ledgers/guinea-closure-20261101/integrity.json",
+    "evidence/ledgers/guinea-repair-1/writer-repair.json",
+    "evidence/ledgers/guinea-review-20261101/checks.json",
+    "evidence/ledgers/guinea-review-20261101/preservation.json",
+    "evidence/ledgers/guinea-review-20261101/review.md",
+    "evidence/ledgers/guinea-review-20261101/sources.json"
+  ],
+  "immutable_old_items_checked": 76,
+  "zero_context_patch_sha256": "2aa1dfecb0e8803a59976d52d7369799ac7b832508510bbce01e1f46cfec96eb",
+  "coverage_guinea_only": {
+    "code": "GN",
+    "name": "Guinea",
+    "region": "africa",
+    "owner": "ryan",
+    "dir": "skills/guinea",
+    "skills": 8,
+    "reviewed": 0,
+    "stale": 0,
+    "present": [],
+    "missing": [
+      "IT-IND",
+      "IT-CORP",
+      "VAT",
+      "SC",
+      "PR",
+      "TP",
+      "XB"
+    ],
+    "not_applicable": {},
+    "partial": {
+      "IT-IND": "Monthly ITS and residence/categorical routing expanded; full other personal categories, pension/foreign/multi-source reconciliation and actual-period source applicability remain unresolved.",
+      "IT-CORP": "Ordinary IS/IMF, profit bridge, loss limit and credit/payment methods expanded; detailed asset/finance/group/sector relief, complete withholding/foreign methods and actual-period source applicability remain unresolved.",
+      "VAT": "Ordinary registration, timing, input/trader-cap, monthly filing and credit/refund controls expanded; printed goods-timing defect, special exemptions/adjustments, complete procedures and actual-period source applicability remain unresolved.",
+      "SC": "Ordinary full-month CNSS method expanded; 15/20-day conflict, parameter instruments, special categories, partial months and multi-employer base/cap allocation remain unresolved.",
+      "PR": "Monthly salary ITS method expanded; complete annual irregular/multi-source reconciliation, VF/TA base conflict, separate training contribution and full employer payroll-tax methods remain unresolved.",
+      "TP": "Enacted pricing/documentation provisions and authority explanation located; no complete functional/comparables method, current formats, annual filing or documentation workflow is delivered.",
+      "XB": "Residence, salary-source, recipient and VAT-liability routing expanded; no complete treaty, PE/branch allocation, foreign-credit, exit or cross-border relief computation is delivered."
+    },
+    "has_readme": true,
+    "outdated": [],
+    "unsigned": [],
+    "complete": false,
+    "state": "needs_writing"
+  },
+  "coverage_scope_note": "Only GN row reported from this sparse worktree; file presence/coverage state is not comprehensive acceptance. All seven README domains remain partial."
+}

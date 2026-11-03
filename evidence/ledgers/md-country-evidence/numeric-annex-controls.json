@@ -1,0 +1,194 @@
+{
+  "status": "PASS seven arithmetic controls and six source-row lookup assertions; independent legal review pending",
+  "cases": [
+    {
+      "name": "Germany categoryI documented ordinary trip",
+      "assumed_inputs": {
+        "days": 3,
+        "nights": 2,
+        "per_night_documented_EUR": 195,
+        "category": "I/A",
+        "host_funding": 0
+      },
+      "actual": {
+        "allowance": "225",
+        "lodging": "390",
+        "ceiling": "420",
+        "total": "615"
+      },
+      "expected": {
+        "allowance": 225,
+        "lodging": 390,
+        "ceiling": 420,
+        "total": 615
+      },
+      "scope": "Three eligibleallowancedays/twodocumentednights;invoicebelowceiling;nooverlap/exclusions;beforetransport/FX;notallrecipientPITtest",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Valid private70percent allowance decision",
+      "assumed_inputs": {
+        "days": 3,
+        "nights": 2,
+        "per_night_documented_EUR": 195,
+        "decision_fraction": "0.70"
+      },
+      "actual": {
+        "daily": "52.50",
+        "allowance": "157.50",
+        "total": "547.50"
+      },
+      "expected": {
+        "daily": 52.5,
+        "allowance": 157.5,
+        "total": 547.5
+      },
+      "scope": "Separateprivateentitydecisionassumed;notcombinedwithlongstayreduction",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Qualifying separate no-lodging-document case",
+      "assumed_inputs": {
+        "nights": 2,
+        "category": "I/A",
+        "no_free_or_host_paid_lodging": true
+      },
+      "actual": {
+        "lodging": "210.0"
+      },
+      "expected": {
+        "lodging": 210
+      },
+      "scope": "HG10point21exclusionstested;notreuseddocumentedinvoices",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Domestic single-day allowance exception",
+      "assumed_inputs": {
+        "norm": 250,
+        "single_day_domestic": true
+      },
+      "actual": {
+        "allowance": "0"
+      },
+      "expected": {
+        "allowance": 0
+      },
+      "scope": "HG10point24exceptionoverridespublishednorm;notatotaltripcostofzero",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Ordinary new8471 asset commissionedJune",
+      "assumed_inputs": {
+        "basis": 60000,
+        "financial_life_years": 4,
+        "eligible_July_Dec_months": 6,
+        "no_acceleration": true
+      },
+      "actual": {
+        "minimum_years": "3",
+        "annual_fraction": "0.25",
+        "current_depreciation": "7500"
+      },
+      "expected": {
+        "minimum_years": 3,
+        "annual_fraction": 0.25,
+        "current_depreciation": 7500
+      },
+      "scope": "Ordinaryqualifyingbusinessasset;manufacturer/used/transitionexceptionsabsent;actualcommissioningassumed",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Longer-contract ordinary rented-asset repair",
+      "assumed_inputs": {
+        "period_rent_excluding_VAT": 100000,
+        "repair": 22000,
+        "contract_longer_than12months": true,
+        "no_special_route": true
+      },
+      "actual": {
+        "column4": "15000.00",
+        "column6": "15000.00",
+        "column7": "7000.00"
+      },
+      "expected": {
+        "column4": 15000,
+        "column6": 15000,
+        "column7": 7000
+      },
+      "scope": "Actualannex2columns;excessnewrepairassetnotlandlordasset;shortcontract/specialaviation/taxiroutesexcluded",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    },
+    {
+      "name": "Owned-asset repair register with consistent month units",
+      "assumed_inputs": {
+        "column3": 120000,
+        "column4": 120000,
+        "column5_months": 60,
+        "column6_months": 60,
+        "column7": 24000,
+        "column8_months": 12,
+        "column11_months": 6,
+        "column13": 18000,
+        "column15_months": 78,
+        "column21_months": 6
+      },
+      "actual": {
+        "column12": "12000",
+        "column16": "36000",
+        "column17": "18",
+        "column18": "102000",
+        "column19_months": "60",
+        "column22": "10200",
+        "column23": "22200",
+        "column24": "102000",
+        "column25": "138000",
+        "column26_months": "78",
+        "column27_months": "60",
+        "column28": "46200",
+        "column29_months": "24"
+      },
+      "expected": {
+        "column12": 12000,
+        "column16": 36000,
+        "column17": 18,
+        "column18": 102000,
+        "column19_months": 60,
+        "column22": 10200,
+        "column23": 22200,
+        "column24": 102000,
+        "column25": 138000,
+        "column26_months": 78,
+        "column27_months": 60,
+        "column28": 46200,
+        "column29_months": 24
+      },
+      "scope": "Approvedregisterinstructionmethod;monthbasisdirectcalculationequivalenttoannualfraction/months12;lifeextensiondocumented;notaccelerated/transition/disposal;nofilingroundingconventioninferred",
+      "status": "PASS ARITHMETIC ONLY; independent legal review pending"
+    }
+  ],
+  "lookup_assertions": [
+    "GBcurrencyEUR",
+    "France230versusParis250lodgingA",
+    "US110versusNYWashington130dailyI",
+    "POS5-7distinctfrom84713-5",
+    "metaloffice9-10",
+    "woodoffice4-6"
+  ],
+  "read_date": "2026-10-31",
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-SOCIAL489-TARIFF-ANNEX1-DOWNLOADED-20261031.json": "c323b6cf6617b5c3f8551a71a8d0b067774cccd6a59bd5d921c35e48907cd408",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-REGISTER-ANNEX1-DOWNLOADED-20261031.json": "eb4112877cb0496b91a9f09788161101e537e8041159d2b189b0fa4e3a8b8e9a",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-REPAIR-ANNEX2-DOWNLOADED-20261031.json": "74bb538a37cd90167ebee32ab26d71ecd7ea14b4306a6bae65e4271b30ac5ce7",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-LIFE-NUMERIC-ANNEX-DOWNLOADED-20261031.json": "5621dd95297634902e192fc77e0b7ce7e2d3522a85938611ecae94182be4220c",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-TRAVEL-NUMERIC-ANNEX2-DOWNLOADED-20261031.json": "11e1902031e1a439a5b4bbb77e95a9a830ab5f9fcb32e0f904bf4336ba8751eb",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-TRAVEL-HG10.json": "1a5772dda26315425f7e51eea6b382771cbb33b96a50bbacbfb9f5bb00d2b186",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-HG941-CATALOGUE.json": "91db8e87ca0d64409302525b1aadd3338fa7cd66e7f093abfdf269436129ef28",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-ASSET-HG704.json": "1433a613d11137248c8548f2518760adce300491b49ed673d1b43774f1099057"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/md-corporate-income-tax.md": "2c774e296d4796eaa223775b232237bad68cb7c06088ffa73f55c82c9709bdcd",
+    "skills/international/moldova/moldova-social-contributions.md": "cea22473d8ab26f81cf574b618135e5041d7cb682363a6ee437644ae7d03fc68"
+  },
+  "not_certified": "Otherassetclassifications,allbenefitentitlementconditions,acceleratedfieldimplementation,actualportalacceptance,rounding/tieconventions,fullcountrycoverage"
+}

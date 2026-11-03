@@ -1,0 +1,343 @@
+{
+  "date": "2026-10-31",
+  "initial_candidate": "aa3de1064ae435d69e650d19733c315d6146f35d",
+  "initial_manifest_sha256": "20ec3540db04065f79fa4415250fc4e3674c85f091c502c629665da431919466",
+  "initial_review_commit": "805268ba7",
+  "original_ledger_rows": 64,
+  "additional_ledger_rows": 1,
+  "exact_quote_groups": 82,
+  "ledger_paths": [
+    "fo-inheritance-duty.rows.json",
+    "fo-estate-income-tax.rows.json",
+    "repair-01/estate-accounts-sanction.rows.json"
+  ],
+  "inputs": [
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/additional-source-receipts.json",
+      "sha256": "e6ea324f8949cdcf76ce65de443db97078e9b0580a4fd68a9cee6418b00be7ee"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/build-ledgers.py",
+      "sha256": "4e61eebb7ca3ee9c61e82da940b8aba1f67ae89713d833be8aac96dcf81cbd79"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/fo-estate-income-tax.md",
+      "sha256": "36e21df7f22726b447bf7d468c0da80303815855b02116cb8c151506a904b0d3"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/fo-estate-income-tax.rows.json",
+      "sha256": "c913f3de831b48cf1a3df9d02bb92a95f7098bfa825faa0e06531683dd8b4a70"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/fo-inheritance-duty.md",
+      "sha256": "72e0e7fc4944efe5354e057a1a09c3b8a4dd7755e1591f4af783b029517b1165"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/fo-inheritance-duty.rows.json",
+      "sha256": "4e9f18276c80effc02fa18408b40392e4d9fd6099a4589f984c538b921e73775"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/examples.txt",
+      "sha256": "5508f0879d2eb7649b6e487b7ff63489ef7a69b076c576cb010974f13d765286"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/final-report.md",
+      "sha256": "aecad9d0ee8522ab7d2bcd5db9f02e407b9c0d21de7bb3cff9faeb097bd36925"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/findings.json",
+      "sha256": "0d37ea894c473b099b0735747b0d59f28b51419321ee0eb538f08ee766d6415c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-capital-correct.html",
+      "sha256": "6f941338ab3393b9195496221e42866b2f204044793991e53febb96f465a869e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-duty.html",
+      "sha256": "30899afd40d7f710270889ac86e0e2136a0e77ccac02059093531c5a28a7cf3a"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-estate-accounts.html",
+      "sha256": "d02f037a7791f60d11c04ce9853348e1d8121994e32e1f9380f197d67ee9a68d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-estate-calendar.html",
+      "sha256": "158a367e1d1ad8537307486bfc880707fdd0ced81acf2e4dbc48a4f6cbcc1eed"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-estate-filing.html",
+      "sha256": "ca2cdf2f2076c5f057230ee5752cf6cf22cddd25b698d8226c406e5459526ff7"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-estate-guidance.html",
+      "sha256": "2ae95d2fa9c9ab09733d8f740dc7b79a64b12d0f6e0c918875b639583f2908dd"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-estate-return.html",
+      "sha256": "dd5f6f830877edd035477ec9e7e319fc47b786a4b494f3bd476e591c869b0b1b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-fetch-receipts.json",
+      "sha256": "c388814c3e5c583959e7d31f00bb7b98dcffb9cecaef67d04c1258d49ab353f9"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-inheritance.html",
+      "sha256": "54662f08f125ab19a160de23266cea01287f44c801e402ee0dc94559ebe7d122"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-rates.html",
+      "sha256": "dbedc6a6df2746e3174249a46d683f5b819d35a3221590b516f2f54a8f147e69"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/fresh-tax.html",
+      "sha256": "6aa4eb85ccf0628198806adb750236abcc2980a8265a723919df66a4e1c86075"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/shape.txt",
+      "sha256": "9039ee40d5595b8e7866e0393b2bd98900174d216e99d3c854f02502c25c44fc"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/independent-review/verification.json",
+      "sha256": "4618d3fd96e110f4e393a0ee6d4763db3dd4b66fe5819a2ae55eb9e14543410c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/preservation.json",
+      "sha256": "e75c1929e845ab18f35dd4242856ca851b2936a861e723fb550851975d8acf53"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/quote-integrity.json",
+      "sha256": "897b5882f097bd3aa99f6db5505437818fe3f8936db094e5e15574ffca206224"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/remaining-evidence.md",
+      "sha256": "5395013f721b6f0e64291a7e9190f9f2e35ac7f809167b15b887e54e89925883"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/build-repair-evidence.py",
+      "sha256": "47d342223d128daa7033eefe1ad09af419151cc1fb75905f860245b96a6bfdd8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/current-row-destinations.json",
+      "sha256": "64a25b902b5e15a4854bbb2f33faf96c4a899680768e9be65a71387ddfd529bd"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/estate-accounts-sanction.md",
+      "sha256": "48b5266cd19ff316218a589ad6542708178cf8dcc320b8686771ead37428df47"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/estate-accounts-sanction.rows.json",
+      "sha256": "d3bae8e12cef02fa734e431e4adc428e1a6c8b06d4ea75115c5fed84b871f735"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/examples.txt",
+      "sha256": "5508f0879d2eb7649b6e487b7ff63489ef7a69b076c576cb010974f13d765286"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/finding-disposition.json",
+      "sha256": "e7ce5e591a0b464246d76080bd6ce1c62de093d0e3a1edae659a69f6f1ed9637"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/README.md",
+      "sha256": "2627d6902b61172726e870d0927272f63eb09440d58a3fee673b85f7c7f6472d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/fo-estate-income-tax.md",
+      "sha256": "2a2ff236c6bb202b7ed10c5a8daacdd7a20a349dc44337196213c68791cf88de"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/fo-inheritance-duty.md",
+      "sha256": "6a3150ca66df7984389e20d456e4b8272b8e84d0236ef4b41b3e6481b7eb64d1"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/preservation.json",
+      "sha256": "e75c1929e845ab18f35dd4242856ca851b2936a861e723fb550851975d8acf53"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/quote-integrity.json",
+      "sha256": "5a7ad96c17b0a1e5f6a3dc666a260b2891bf977cdcf8d79a7da74e2b226151c8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/initial-snapshot/writer-manifest.json",
+      "sha256": "20ec3540db04065f79fa4415250fc4e3674c85f091c502c629665da431919466"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/link-resolution.json",
+      "sha256": "89fd9178008e0f1e5b791aa6ca2459e3b72a582d2f907b611878997a93fd0fbb"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/preservation.json",
+      "sha256": "176c36d5fcb715fb3c398d9ec7a3d5083ee59579558b99d458d5c034aa474b31"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/shape.txt",
+      "sha256": "bb3691ff9cd8a21e1655cd522ad97e3712ed06ba527e4ae091201598978e9c93"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/sync-before-main-advance.txt",
+      "sha256": "0c89c289911f6d38110fd8ec455ce843c14674ec7efa4c9460088bd16bcf42df"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/sync-integrity.txt",
+      "sha256": "c5b3411ce1417407be3e20ed13e3672b0745ba6405c7074ac52df8f38a8e8945"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/tax-103-fresh-web.txt",
+      "sha256": "331a9883e67018ef28131b93ae020205157c9e57ae0681d8c7defb4e99f34992"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/repair-01/validate-changed.txt",
+      "sha256": "d2c65a9b020b7ebdbaa10b234f78d2792fcccfb1d26347d9aed801331a3a0569"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/return-source-receipts.json",
+      "sha256": "ec5fa0071feb3b09a174bf519e72a6223b21093db936daacd814925adfcef2fe"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/source-access.md",
+      "sha256": "182221cf2b846ed0db7300718081f420b57fe58fdcef1cc46db2c98619bc05ff"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/source-receipts.json",
+      "sha256": "032125961cafa8241a567e87df03002b4e3d932c8dcbf38d122270bbfb846363"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/capital-correct.html",
+      "sha256": "16dc4bf92fbcf1fcb0b5733ab0594a8330a7626bac3ec52318ace92f9797de88"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/capital-correct.reader.txt",
+      "sha256": "285023242bd8432ab5ad3cd1fe1665ab5fd69f0a06a5cbb36c736180b528022c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/capital.html",
+      "sha256": "b9698b8f43ba60975a185f37f8a22d01cb929c56414b8fb6a5a7c9e095676ba9"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/capital.reader.txt",
+      "sha256": "c2d391f2f4ea6a286710407673912f7dfa6f8f16d98140a7a3a9faaa1f47a466"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/closing-form-web.txt",
+      "sha256": "a246e0f9330d2aacd2b8f2bece34dea4480bebc1f19eade92342418a3902d598"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/closing.reader.txt",
+      "sha256": "b2d5f32821225fb4a6484beaa46239bb9efdf6396a8d654151301462aa7d227f"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/court-guidance-web-380.txt",
+      "sha256": "de252d905a643f27d6756e29685a0ab0d6d063b7ed7cadc6696303744a4115de"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/court-guidance-web-477.txt",
+      "sha256": "943b954a49d7027f305ec490fdca94c2a387406b7ab5b4dcf96a65b4f572481e"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/court-guidance-web-584.txt",
+      "sha256": "ca3ac11734c1f3f86d314dac8d457de1857cd721e755635ebb5d2135815acf91"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/court.reader.txt",
+      "sha256": "215a45da9237074fe80f11af0a9f6bbe0a09317f900c68c8fcdb9cf1ea1fa704"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/duty.html",
+      "sha256": "c35648605a3c3f14fb5aad34f390428773c4d4b5742763b0c929b1a1b34811b7"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/duty.reader.txt",
+      "sha256": "4ec1f95527b50f5db07862cb8015cd5f8290eb130c8e1367bd5fb834c4c1bc96"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-accounts.html",
+      "sha256": "d02f037a7791f60d11c04ce9853348e1d8121994e32e1f9380f197d67ee9a68d"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-accounts.reader.txt",
+      "sha256": "68edce702c28ec962635e2baf5a105c178ab39e632a2b01b230fa37633138f5c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-calendar.html",
+      "sha256": "158a367e1d1ad8537307486bfc880707fdd0ced81acf2e4dbc48a4f6cbcc1eed"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-calendar.reader.txt",
+      "sha256": "8f37dda8cdd23c6a0a7898ed2ccf24ae109bfab4a9eb35f20a5ebfa2a20a8336"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-filing.html",
+      "sha256": "ca2cdf2f2076c5f057230ee5752cf6cf22cddd25b698d8226c406e5459526ff7"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-filing.reader.txt",
+      "sha256": "829e80b328f61472d5eb20c6f0e97a27c839dd84691088b2bdd49493e4c73c8c"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-guidance.html",
+      "sha256": "2ae95d2fa9c9ab09733d8f740dc7b79a64b12d0f6e0c918875b639583f2908dd"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-guidance.reader.txt",
+      "sha256": "20703f374441120487bceb30ce66d0e1d07fafd850c2e9d8a4644e80c43fb723"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-return-current-web.txt",
+      "sha256": "bc0d57f78f08502ce070167f46e0492eae672c61074a7805ad24cab97ae7229b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-return.html",
+      "sha256": "dd5f6f830877edd035477ec9e7e319fc47b786a4b494f3bd476e591c869b0b1b"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/estate-return.reader.txt",
+      "sha256": "ca2b0bdb9829a84f8541c9eca33d690acf9dfbb9176ae27534d3997904d12d50"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/inheritance.html",
+      "sha256": "54662f08f125ab19a160de23266cea01287f44c801e402ee0dc94559ebe7d122"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/inheritance.reader.txt",
+      "sha256": "ee27942a8aa9617cf7fae0aed9e53ffc45dca68f1c65898daf059c511542bbd1"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/opening-d03-web.txt",
+      "sha256": "0aa021b351e676049d24369f4a214ff29cc55b23e8777536bd1f3f218be5befe"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/opening.reader.txt",
+      "sha256": "3c6b823ee52a90e412443059dc02536416a2cb8df7795b5f65a7bd86c29ebbb9"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/rates.html",
+      "sha256": "b51c6db2166ebe93f33d6ff31b0def50c2ec52cfed30de894f6a6a772b1eb214"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/rates.reader.txt",
+      "sha256": "9dd3e1a5ad9388fb33b7a8533601fcc973faa5de69b7b173089295e3e20087f8"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/tax.html",
+      "sha256": "7d3eec18dd6d0c8de44b55e254f35026a12bb4131f053797f1129a7cd662aaad"
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-inheritance/sources/tax.reader.txt",
+      "sha256": "13ed8d751bd853cc7813713422f2e53b08f986b0a70d526c6496550c7baf945c"
+    },
+    {
+      "path": "skills/faroe-islands/README.md",
+      "sha256": "2752a561582400dc63c13d7d25919451ccaf260d125c06eae6b50a72017cb12d"
+    },
+    {
+      "path": "skills/faroe-islands/fo-estate-income-tax.md",
+      "sha256": "71bf0d38603d94ce671380538c13f7e98986cb0353d24c3cf8c3aacdcf7e87bb"
+    },
+    {
+      "path": "skills/faroe-islands/fo-inheritance-duty.md",
+      "sha256": "016885210094b6a657f989951b253eca653407b01794f27f550439f05ee006c0"
+    }
+  ],
+  "independent_review": "Initial64rules checked; bounded repair closure pending",
+  "publication_rights": "Not assessed by this tax-source repair. No statement that all official pages are free to republish.",
+  "scope": "No country-gap clearance, professional attestation, push, authority contact, filing or payment."
+}

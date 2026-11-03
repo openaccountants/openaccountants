@@ -1,0 +1,42 @@
+{
+  "all_four_pass": true,
+  "cases": [
+    {
+      "case": "Private members",
+      "independent": {
+        "statutory": 50,
+        "wrong": 51,
+        "headroom": 0,
+        "wrong_excess": 1
+      }
+    },
+    {
+      "case": "No-par consideration",
+      "independent": {
+        "shares": 150,
+        "agreed": 150000,
+        "unpaid": 30000
+      }
+    },
+    {
+      "case": "Gross/net covenant",
+      "independent": {
+        "tax": 150000.0,
+        "net": 850000.0,
+        "gross_up": 1176470.59,
+        "gross_up_tax": 176470.59,
+        "wrong_net": 977500.0
+      }
+    },
+    {
+      "case": "Conditional foreign credit",
+      "independent": {
+        "limit": 600000.0,
+        "allowed": 600000.0,
+        "domestic": 2400000,
+        "excess": 200000
+      }
+    }
+  ],
+  "law_gates": "49 separate plus one joint group; after-commencement no-par assumption; source/nonresident/no-PE/no-exemption/operative rate; included same-income eligible credit. Arithmetic does not establish eligibility/currentness."
+}

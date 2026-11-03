@@ -1,0 +1,50 @@
+# Independent Malawi Act 3 amendment review, 1 November 2026
+
+**Disposition: accept the reviewed delta as a faithful, conditional reconstruction of the downloaded enacted text. F4 remains OPEN. The pack remains unaccepted for operative 2026 coverage, live use or publication.** No new substantive defect was found in this bounded amendment delta. This is an independent AI source review, not accountant attestation or country completion.
+
+Exact reviewed freeze: `6e37fc6093718c07bb554a44194aeb10727cae21`. Prior checkpoint: `ee69982119be3271ba7c8ccad2932b96c3cefcb3`. Pinned comparison base: `db5bf4ff7d4b078421b4fedd483d9b9b91cd71a6`. I did not author Malawi content. I read the initial rejection, focused closure, new parent repair records and relevant repository instructions. Only this separate review-evidence directory was added by the reviewer. No Guide/ledger/prior evidence, Git ref or remote was changed.
+
+## Source authentication and actual reading
+
+The enacted [Taxation (Amendment) Act 3 of 2026 PDF](https://media.malawilii.org/media/legislation/15519/source_file/2e96ab6e73cdf961/mw-act-2026-3-publication-document.pdf) was independently downloaded successfully with ordinary browser request headers: HTTP 200, 2,617,646 bytes, SHA-256 `ebfda9d7b0d2731a0a83f7c5e4683a2b677cdeb348c313f7f8d208661758e680`, exactly matching the actual private source file. The first default request returned 403; web-tool attempts failed and the in-app browser was unavailable. These failures are retained rather than represented as successful reads. The successful download required no credentials, authentication or CAPTCHA. See `source-authentication.json`.
+
+All six actual source pages were read in the captured OCR and visually. I independently rendered the PDF with `pdftoppm`; all six resulting PNG hashes are identical to the six images read, recorded in `render-integrity.json`. The source identifies Act 3/2026, assent 9 April 2026 and publication 14 April 2026. Section 1 supplies a short title, not an express appointed commencement provision. This observation does not decide the general-law commencement rule, applicable assessment-period allocation or the missing TAA/cutover notices.
+
+For the amended source chain I also read the actual Act 12/2024 rate page, Act 36/2025 PDF page 4 and Taxation principal sections 45 and 91(1)–(2), with their headings/nearby conditions. The 2021 miscellaneous Act schedule was checked around sections 84–94 to distinguish the preserved Taxation 91 from the adjacent deletions; its appointed commencement remains unresolved. Those supporting PDFs match the initial independent source-download hashes in `delta-checks.json`. No secondary transcription, library abstract, Bill or budget summary supplied the rules below.
+
+## Five reviewed ledger-row changes
+
+There are **89 physical ledger rows**, counted including the five `Detail-*` income rows. The prior checkpoint has 86. Three rows are added and two existing corporate rows are corrected. Thus 84 prior physical rows are unchanged; they were not re-reviewed merely because this amendment was obtained. The earlier first review counted 85 before the deduction-condition repair added corporate row 19.
+
+| Ledger row | Independent result and source |
+|---|---|
+| Corporate 2, corrected final rate chain | **Supported conditionally.** Act 12/2024 s 7(a), printed p 3, substituted an additional 10% on taxable income above K10 billion. Act 36/2025 s 6(a), PDF p 4, replaced the word “ten” immediately after “of” with “five”, changing the additional **rate** to 5% while leaving K10 billion intact. Act 3/2026 s 12(a) changes that rate back to 10%; s 12(b) changes the word after “above” from ten to five, reducing the threshold to K5 billion. The final table's additional 10% above K5 billion and 40% marginal rate therefore match this chain. No earlier/straddling assessment period is approved. |
+| Corporate 3, corrected historical interpretation | **Supported correction.** The prior ledger incorrectly described Act 36/2025 as reducing the threshold. The actual scan unambiguously says the word immediately after “of”. The new ledger and explanatory body accurately repair that error. The initial review's broad statement that all source figures matched must not be relied on to perpetuate that former interpretation; this narrow subsequent correction supersedes it while preserving the historical record. |
+| Corporate 20, new levy exclusion | **Supported conditionally.** Act 3/2026 s 4(c), PDF p 3, adds Taxation 45(l), “any levy payable, whether charged under this Act or any other written law”. The principal 45 heading and opening sentence make these deductions not to be made. The Guide correctly instructs levy add-backs before fixing the taxable-income input and does not invent a levy rate or a complete levy assessment. |
+| TP 11, new assessment window | **Supported conditionally.** Act 3/2026 s 11 spans PDF pp 4–5 and inserts Taxation 91(3): the assessment/additional-assessment power arising from a TP/other related-party audit can be exercised up to nine years after expiration of the assessment year. The Guide correctly distinguishes this from TAA 91's information-notice penalty and TAA 39's retention rules. The principal Taxation 91(2) fraud/wilful-default exception is expressly preserved for consideration; nine years is not presented as an absolute universal assessment cap or document-destruction date. |
+| Income 11, rental/listed-share scope exclusion | **Supported exclusion.** Act 3 s 3 inserts 18A's separate individual residential-rental final-tax regime, with payer/entity exceptions, base/cost/credit restrictions and quarterly duties. Section 13 adds the listed-share final-withholding regime with exemption/reinvestment exceptions. The Guide now screens those categories out of the ordinary non-employment example pending their full implementation. It does not apply a blanket ordinary table to those receipts. The printed rental cross-reference is actually **19(3)(a)** on PDF p 5; leaving it unresolved rather than silently replacing it with 18A is faithful to the source. |
+
+The Act's other clauses were screened to avoid a false full-amendment claim: principal-residence definition, water-control capital allowance, royalty payment frequency, transfer-levy changes, motor-insurance levy and gaming withholding are not implemented as additional ordinary jobs by this delta. Existing specialist-sector, allowance, withholding and cross-border exclusions remain material. The all-seven-Guide hold remains controlling.
+
+## Examples and prior closure carried forward
+
+All fourteen executable blocks are byte-identical both to the prior checkpoint and the original `9dcab78579d5e78dbdf7fa615186a8fdab96dcee` candidate. Their original independent arithmetic review carries forward; the repository checker separately passes all 14 with zero failures and zero missing blocks.
+
+Corporate example assumptions are now expressly limited to a period to which Act 3/2026 applies, with levy add-backs already in taxable income and no straddling allocation. Under that assumption, the high-income example's ordinary tax remains `K6bn × 30% + (K6bn − K5bn) × 10% = K1.9bn`. Existing MAT/credit results remain K50m/K44m in the first case and K1.856bn payable in the second. An unchanged final number is not evidence that the earlier source interpretation was correct. No assessment-period cutover calculation was supplied or approved.
+
+The old focused closure remains effective only in its recorded terms:
+
+- F1's taxable/exempt/final-tax deduction restrictions and common-cost apportionment remain in the corporate body and ledger row 19.
+- F2's restricted-share-transfer and statutory-register subtopics remain explicit formation gaps. The old-topic map is byte-identical to the prior checkpoint.
+- F3's descriptions are byte-identical to the accepted repair checkpoint and remain 80–150 words: formation 106, corporate 103, individual 100, payroll 104, overview 104, TP 101, VAT 103. Every version/title is now 1.3.
+- **F4 is not closed.** Actual appointed TAA/cutover commencement notices, including the identified GN 21/23 chain, remain unread and period allocation is not established. The Act 3 retrieval resolves only the missing enacted-text component of that finding.
+
+## Preservation and scoped validation
+
+`delta-checks.json` records independent hashes and comparison results for all seven candidate Guides, all original review/closure/repair files, the topic map and supporting PDFs. All prior evidence files are byte-identical to the prior checkpoint. Descriptions, all platform/human metadata, all six legacy CTA suffixes and all fourteen executable blocks are exact. Only author-controlled `tax_year_notes` and version values change in frontmatter. Both prior and current CTA comparisons agree with the original reviewed candidate. No attestation field was added.
+
+Every Guide carries the updated explicit live-use hold; README retains all seven partial domains and missing XB job. It says F4 remains open and makes no operative/current-year/publication acceptance claim. The updated statements that Act 3 has now been read are supported by the actual six-page read.
+
+All 15 scoped shape checks pass on all seven Guides. `check-examples.py --require` reports 7 files, 14 blocks, 0 failures, 0 missing. The pinned-base validation adapter under `malawi-act3-repair-20261101/` passes. Pinned-base and staged whitespace checks pass. Exact argv/stdout/stderr/exit results are retained in `delta-checks.json`; these passes establish mechanical consistency, not legal commencement or live-use readiness.
+
+No additional correction is requested within this amendment-review scope. Keep F4 open and retain the current-year/live-use/publication stop until its remaining actual-source and period-allocation work is independently closed. This conditional delta acceptance does not authorize publishing the pack, filing, paying, responding to an actual notice or claiming complete Malawi coverage.

@@ -1,0 +1,478 @@
+{
+  "preservation": "pass",
+  "old_guides": 10,
+  "prior_evidence_files": 102,
+  "README_append_only": true,
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "ledger_rows": 30,
+  "checked_files": [
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/README.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/examples.txt",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/ledgers/bf-corporate-tax.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/ledgers/bf-income-tax.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/ledgers/bf-payroll.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/old-topic-destinations.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/pack-scope-check.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/preservation-manifest.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/quote-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/reviewer-corrections.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/skill-checks.txt",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/sync-audit.txt",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/validate-changed.txt",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-remaining-20261101/validation-checkpoint.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/README.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/examples.txt",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/ledgers/bf-social-contributions.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/ledgers/bf-vat.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/old-topic-destinations.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/preservation-manifest.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/reviewer-repairs.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/skill-checks.txt",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/source-identities.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/sync-audit.txt",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/validate-changed.txt",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/burkina-faso-vat-social-20261101/validation-checkpoint.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/bf-nonresident-services-withholding.md",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/bf-transfer-pricing.md",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-company-formation.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-optimization.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-overview.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/final-repair-candidate.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/frozen-candidate.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/parent-r1-r3-repairs.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/preservation.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/quote-location-check.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/r4-destination-repair.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/rules.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/shape-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/source-identities.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/writer-record.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-20261101/writer-validation.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-executable-cases.txt",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-independent-cases.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-manifest.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-old-topic-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-preservation-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-row-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure-shape-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/closure.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/committed-validation.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/executable-cases.txt",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/findings.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/independent-cases.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/input-manifest.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/old-topic-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/preservation-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/review.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/row-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/shape-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/source-read-log.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-legacy-jobs-review-20261101/status-reconciliation.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-old-topics.md",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/closure-manifest.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/closure-row-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/closure.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/example-checks.txt",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/independent-example-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/old-topic-spot-checks.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/preservation-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/review.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-remaining-review-20261101/row-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/closure.md",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/coverage-bf.json",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/example-checks.txt",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/preservation-and-repair-manifest.json",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/skill-checks-tp.txt",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/validate-all-no-index.txt",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/closure-199e3df/validate-changed.txt",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/example-checks.txt",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/input-and-check-manifest.json",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/review.md",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/skill-checks-tp.txt",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/skill-checks-withholding.txt",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-review-20261101/validate-guides.txt",
+      "reading": "HEAD blob; sparse absent"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/closure-manifest.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/closure-preservation-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/closure-row-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/closure.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/committed-validation.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/final-status-identity.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/final-status-identity.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/findings.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/independent-cases.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/input-manifest.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/old-topic-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/preservation-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/review.md",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/row-checks.json",
+      "reading": "working file"
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-vat-social-review-20261101/status-reconciliation.json",
+      "reading": "working file"
+    },
+    {
+      "path": "skills/burkina-faso/README.md",
+      "reading": "working file"
+    },
+    {
+      "path": "skills/burkina-faso/bf-company-formation.md",
+      "reading": "working file"
+    },
+    {
+      "path": "skills/burkina-faso/bf-corporate-tax.md",
+      "reading": "working file"
+    },
+    {
+      "path": "skills/burkina-faso/bf-income-tax.md",
+      "reading": "working file"
+    },
+    {
+      "path": "skills/burkina-faso/bf-nonresident-services-withholding.md",
+      "reading": "working file"
+    },
+    {
+      "path": "skills/burkina-faso/bf-payroll.md",
+      "reading": "working file"
+    },
+    {
+      "path": "skills/burkina-faso/bf-social-contributions.md",
+      "reading": "working file"
+    },
+    {
+      "path": "skills/burkina-faso/bf-tax-optimization.md",
+      "reading": "working file"
+    },
+    {
+      "path": "skills/burkina-faso/bf-tax-overview.md",
+      "reading": "working file"
+    },
+    {
+      "path": "skills/burkina-faso/bf-transfer-pricing.md",
+      "reading": "working file"
+    },
+    {
+      "path": "skills/burkina-faso/bf-vat.md",
+      "reading": "working file"
+    }
+  ]
+}

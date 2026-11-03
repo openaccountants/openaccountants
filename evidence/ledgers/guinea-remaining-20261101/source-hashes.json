@@ -1,0 +1,31 @@
+{
+  "read_on": "2026-11-01",
+  "reading_scope": "CNSS Code arts1-5,32-39; decree arts1-6,35-43; three current agency browser captures full operative content",
+  "files": {
+    "cnss-code-1994.pdf": "780138664a86c13599a08456240e1c54c5109222aabc471f6647ec6ce17349eb",
+    "cnss-code-1994.txt": "f5490264ab6e6ff0a50139e2e9f86c33880076996681080e8730d3ee018a9d52",
+    "cnss-reglement-1994.pdf": "9340168d3218f91de0d6ec2eaea5274484e7a324fa892cd563bc7f6a54ba16cd",
+    "cnss-reglement-1994.txt": "15c8d1225d387c440c43b7d63b1df0a40b8ed21787b7aac1fc5c45ba0669c6b9",
+    "cnss-cotisations-employeurs-browser-2026-11-01.txt": "2384ce30597412c8446ecaa28715a1d65561c16936b6285605e50d172e397e41",
+    "cnss-recouvrement-browser-2026-11-01.txt": "cda4dea830b90902117c0a3a160e3fa13b7886d4fde31a93e1d67214b47e0830",
+    "cnss-immatriculation-browser-2026-11-01.txt": "58c7b678a277a537176ce91ebdc24fa4281ba0348c7934e95f6b5d23408b1661",
+    "ohada-auscgie-2014.pdf": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+    "ohada-auscgie-2014.txt": "30896817ff4b8c57e40c6b5640d2d7c4801fdf04627c20c7e8708afcad4c4726",
+    "apip-creation.html": "5ab0e8eb8e229191f3086b1c92e31174b76230ecc0db1433492bbf8dd3cd7d8e",
+    "apip-creation.txt": "2bb234ededcb08689f7b5f08abc045debe80871c62fab7f8d2f1c85794536bc2",
+    "apip-sarl.html": "4306c8699b2094343985fa80aa830a3d2ee906a498def0e1c41f74b2e7c5d1b8",
+    "apip-sarl.txt": "234258a99d6fa83f8ce28cef0249625fd9b997f1e394cac58cf8706ec28ce178",
+    "apip-sarl-info-2025.pdf": "91f8143177bcc630271341fc44ce39156903a6b403fa7095700950e75dcdc732",
+    "apip-creation-formulaire-2026.pdf": "8e0b255feadf74e356da17824fa9a577b939a87bc682ebaeee1dbc7f4336e70f",
+    "apip-sa.html": "87fbace2781c17c2d257ff8137ee2b7e4134b62e60dc11d550761cb10f1cbe59",
+    "apip-sas.html": "a988271ece84b67fe708df7c92d88ad4c0ec65ba6a20854f748dc845f07d8556",
+    "apip-succursale.html": "7ede5c7cf905670c15a02bc26629aedac2cfacac65463b328cde97e823c87dce",
+    "apip-individuelle.html": "d2331f23fccc939a0d7b9cb41d67e472789b54a32239171bef3ecf19dd775bb3",
+    "cgi-enacted-2021-itie.pdf": "30b99dc66d6a421ebff47e84ceb0fa1f765ac3ab3afcac4ec7d4eacf8855d2ae",
+    "cgi-enacted-2021-itie.txt": "099456d513272b1f10e352622fa8fa2d5b6eea528325b35327a5a3e55ba07c64",
+    "dgi-precis-fiscal-2026.docx": "dd75e29f97b3f480e79922913c6a4c793b1fd8b7e2e3908bfc85ea2389924f40",
+    "dgi-precis-fiscal-2026.txt": "c70009b68d8192d24a06b4a89af4ca19f8fdd7a087913612c80db0afbf69ac38"
+  },
+  "formation_reading_scope": "Official signed AUSCGIE arts97-103,116-120,137-142,269,309-315,385-392,853-1to853-8 and neighbours; APIP eight operative procedure/forms/pages, full lists/fees/limits. Visual source helper checks on scanned Act and fee form.",
+  "property_reading_scope": "Writer: enacted CGI cover and full arts257-274/neighbours, DGI2026precis cover/introduction and full4.1; prior March2026 rates/source evidence retained unchanged. October promulgation/effect still not retrieved."
+}

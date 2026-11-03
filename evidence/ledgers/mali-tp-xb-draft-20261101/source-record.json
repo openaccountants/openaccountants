@@ -1,0 +1,15 @@
+{
+  "base_commit": "9d5451d3c373312f2207c904cdf59eaf38386824",
+  "source_url": "https://www.dgi.gouv.ml/CGI/",
+  "cache": "private sibling sources/dgi-cgi.html and dgi-cgi.txt; raw sources outside Git",
+  "read_on": "2026-11-01",
+  "route": "Existing normal-TLS official DGI fetch reused; selected provisions reread offline, no repeat download or bypass",
+  "text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+  "scope": "CGI43\u201351,79\u201385,93\u201398,196\u2013198 and embedded decree7\u20138; LPF57\u201361,439\u2013450,615\u2013616; older labels through2017; not entireCode/not2026consolidation",
+  "missing": "Enacted2026AnnexU/full laterchain/current treaty-status chain/currentforms/authentication",
+  "ledger_rows": {
+    "ml-transfer-pricing": 29,
+    "ml-cross-border-tax": 28
+  },
+  "all_quoted_text_matched_cached_source": true
+}

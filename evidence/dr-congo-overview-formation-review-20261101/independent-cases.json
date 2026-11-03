@@ -1,0 +1,46 @@
+[
+  {
+    "guide": "cd-tax-overview",
+    "case": 1,
+    "independent_method": "120000000−90000000=30000000; +2000000−500000=31500000",
+    "results": {
+      "accounting_profit": "30000000",
+      "draft_adjusted_profit": "31500000"
+    },
+    "verdict": "pass; assumed adjustment eligibility is not certified"
+  },
+  {
+    "guide": "cd-tax-overview",
+    "case": 2,
+    "independent_method": "2000000+1500000+1000000+500000=5000000;6000000−5000000=1000000;6000000−2000000=4000000",
+    "results": {
+      "supported_allocations": 5000000,
+      "unallocated_balance": 1000000,
+      "company_overallocation_if_whole_debit_used": 4000000
+    },
+    "verdict": "pass; allocations assumed independently proved, no universal credit"
+  },
+  {
+    "guide": "cd-company-formation",
+    "case": 1,
+    "independent_method": "Founder receipts:5000000/2=2500000;3000000/2=1500000;2000000/2=1000000. Commitments10000000; receipts5000000; calls5000000.",
+    "results": {
+      "subscribed_capital": 10000000,
+      "initial_total": 5000000,
+      "unpaid_balance": 5000000
+    },
+    "verdict": "pass; approved national capital/currency and formation evidence expressly assumed"
+  },
+  {
+    "guide": "cd-company-formation",
+    "case": 2,
+    "independent_method": "12000000−10000000=2000000;12000000/4=3000000;3000000−2500000=500000;12000000−3000000=9000000",
+    "results": {
+      "excess_over_ordinary_minimum": 2000000,
+      "required_initial_cash": 3000000,
+      "funding_gap": 500000,
+      "unpaid_after_compliant_initial_payment": 9000000
+    },
+    "verdict": "arithmetic pass; F1 conditions must be restored, all approvals/currency expressly assumed"
+  }
+]

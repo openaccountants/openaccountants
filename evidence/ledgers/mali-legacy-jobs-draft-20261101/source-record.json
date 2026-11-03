@@ -1,0 +1,68 @@
+{
+  "base_commit": "a4d09fbf744fbabfbc4988d08e13fd3c61fca449",
+  "read_date": "2026-11-01",
+  "sources": {
+    "ohada-auscgie-2014.pdf": {
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+      "bytes": 16313466,
+      "route": "Exact public link on official notice2765; curl normal TLS, cached once. The main OHADA company page iframe linked unrelated PDF485, which was not used.",
+      "read_scope": "2014 Gazette selected cited arts.1–13,97–104,137–142,269,309–316,348–350,376–389,548,694–696,823–824 and neighbours. Full source cached; selected21pages French OCR and keypages76,77,93,95 visually checked. Not a whole-journal read.",
+      "review_repair_read_scope": "2026-11-01 parent visually read original cached PDF96, article389 continuation: unpaid cash shares nominative, no capital increase except in-kind and no bond issue until full payment. Adds to, does not rewrite, original writer read history."
+    },
+    "ohada-audcg-2010.pdf": {
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=6",
+      "sha256": "fd266cfbffd10b1fc3816afe959f41b82d8534af4206057721298832ece904ae",
+      "bytes": 1115331,
+      "route": "Exact public link on official notice1830; curl normal TLS, cached once; first26pages French OCR.",
+      "read_scope": "Arts.1–3,44–49,59–60 and neighbouring registration/effects text read. No whole-Act read."
+    },
+    "jo-2015-26.pdf": {
+      "url": "https://sgg-mali.ml/JO/2015/mali-jo-2015-26.pdf",
+      "sha256": "f941c00eca554c63c0ca1ac097436fed38b5f3abf82e10da8f109c23ce80192a",
+      "bytes": 264269,
+      "route": "Initial www SGG host certificate-name mismatch; canonical non-www official SGG host fetched with normal verified TLS. No insecure option. PDF cached once.",
+      "read_scope": "Complete Loi2015-014 arts.1–3, printed1003/PDF3; page visually checked. Raw extraction used to avoid two-column interleaving. No later chain assumed."
+    },
+    "administration-soletrader.html": {
+      "url": "https://demarchesadministratives.gouv.ml/comment-creer-une-entreprise-individuelle/",
+      "sha256": "99a16f6d741046b0f8f34eb6659c0bf2c99f55fefcd5a1c950d156692bdc8315",
+      "bytes": 71469,
+      "route": "Direct Python normal TLS, cached once. API facilitation page404 and /en/404 not used as authorities.",
+      "read_scope": "Complete individual-enterprise procedure and references read; not adopted as a current company checklist/price/time promise. Two-monthcriminal-record guidance conflicts with2010Act75days; conflict left explicit."
+    },
+    "dgi-nif.html": {
+      "url": "https://www.dgi.gouv.ml/comment-obtenir-un-numero-didentification-fiscal-nif/",
+      "sha256": "9121b5578f46139cd913d63eade9600634cdc2f8b1e5368126fa6a3737828534",
+      "bytes": 106749,
+      "route": "Direct Python normal TLS, cached once.",
+      "read_scope": "Full2019dated guidance read; request/documents/existence/collection, no authenticated filing. General month statement not substituted for VAT statute."
+    },
+    "bceao-cfa.html": {
+      "url": "https://www.bceao.int/fr/content/histoire-du-franc-cfa",
+      "sha256": "fc13147378252fbb592a71986ed90c787870bfc9c47f7b1a364df5d25e908728",
+      "bytes": 120465,
+      "route": "Direct Python normal TLS, cached once.",
+      "read_scope": "Introductory monetary-union/currency description namingMali, not exchange rates or future monetary conclusions."
+    },
+    "dgi-cgi.html": {
+      "url": "https://www.dgi.gouv.ml/CGI/",
+      "sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "bytes": 5882035,
+      "route": "Earlier cache reused; no duplicate download.",
+      "read_scope": "Cited classification,registration,form,profit/payment/penalty and cross-border provisions reread offline; older consolidation, no operative2026 chain."
+    },
+    "jo-2025-33-5.pdf": {
+      "url": "https://sgg-mali.ml/JO/2025/mali-jo-2025-33-5.pdf",
+      "sha256": "1a12e5a0f5e9dca3b1d2bdb553baee12f1cbdd1a0976711b8f468a706901d928",
+      "bytes": 1445924,
+      "route": "Earlier cache reused; no duplicate download.",
+      "read_scope": "Article46 and neighbouring43–49; AnnexU reference only, annexcontents absent/unread."
+    }
+  },
+  "ledger_rows": {
+    "ml-company-formation": 32,
+    "ml-tax-overview": 14
+  },
+  "exact_quote_check": "All row quotes matched whitespace-normalised cached source/OCR text; keycapital/auditimages visually verified. Source interpretation requires independent review."
+}

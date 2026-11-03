@@ -1,0 +1,22 @@
+skills/faroe-islands/fo-inheritance-duty.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+skills/faroe-islands/fo-estate-income-tax.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass

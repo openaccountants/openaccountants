@@ -1,0 +1,7 @@
+# Burundi capital closure publication evidence
+
+The independent source reviewer closed R1–R4 on the exact repaired v0.2 candidate. Only the five literal status changes in the reviewer's status-only-permission.json were applied afterwards. The Guide and country README match its expected hashes. status-application.json records both before/after identities, literal changes and the immutable approval-source hashes.
+
+The original 47-row ledgers, initial 16-file review and every finding remain unchanged. The additive effective 47-row variants correct C15/C19/C35/C37/C45 with full before/after objects and recovered original-source evidence; 42 other row objects remain equal. The existing 72-row property review, old individual rate-row migration, complete predecessor and 294-unit destination map are preserved. All three new cases and their stated predicates passed independent review; all seven domains remain partial.
+
+This directory records preservation and actual committed validation after the closure commit, with sequential exit checks and complete output. No generated inventory, other country, accountant attestation, currentness certificate, live filing approval or merge permission is added. Continuing 2026 valuation effect/current replacement, actual-property inputs and private-capital filing/reconciliation execution remain held. The existing PR stays DRAFT for the parent's final gate.

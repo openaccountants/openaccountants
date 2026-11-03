@@ -1,0 +1,12 @@
+{
+  "requested_url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+  "retrieved_utc": "2026-10-30T12:29:37.743230+00:00",
+  "body_read": false,
+  "status": 200,
+  "final_url": "https://cnas.gov.md/sites/default/files/2026-10/Particularitati2026.pdf",
+  "bytes": 405963,
+  "sha256": "ddec5cf8eed459b478023ac112ae30025bea2d750f5a7e7c9097a5a611c10746",
+  "content_type": "application/pdf",
+  "text_extraction_exit": 0,
+  "text_extraction_error": ""
+}

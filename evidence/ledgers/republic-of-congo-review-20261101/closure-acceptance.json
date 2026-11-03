@@ -1,0 +1,98 @@
+{
+  "reviewed_on": "2026-11-01",
+  "prior_full_review_head": "5ca4e55e6d601b99dad0d1b73e3f5d2688e4717a",
+  "pinned_public_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "outcome": "accepted_with_explicit_partial_scope",
+  "finding_closure": {
+    "F01": "closed:116B widow(er) exception in Guide/ledger/register; new quote checked on Gazette65",
+    "F02": "closed:53/75 deferred-depreciation conflict explicitly held in row and Sources; quotes checked on41/43",
+    "F03": "closed:eight mixed-source Guide/ledger cells and register supporting sources link correct individual instruments",
+    "F04": "closed:86E three-month constitution limit plus latest15day commencement condition,128 retained; new quotes checked on47/66"
+  },
+  "candidate_sha256": {
+    "skills/republic-of-congo/cg-company-formation.md": "eff2380d71d82ee2153320956df271f374a571e37a104793578c9ff50f66d3d2",
+    "skills/republic-of-congo/cg-corporate-income-tax.md": "fb776febb676349dc5adc2f377ddee3e51d40b78161c3969732753b5d897bedb",
+    "skills/republic-of-congo/cg-income-tax.md": "9aeee8c469bc4f2a854d901f47be9b202ae56dc759ef4f78e390df99ba4cce1a",
+    "skills/republic-of-congo/cg-payroll-social.md": "f2a7c53f6e43a9b1d4c12f171978cf2fbc9a1f7b006cf50354eda14f3e61e7ea",
+    "skills/republic-of-congo/cg-vat-gst.md": "526d48d3edd20d740a2c7ad1aad0b9cf1e321df931c79b219218609073bbde6b",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-company-formation.md": "f2f6c78fb61cb72808de6bd72672f8a3f5355e9ea01b890d7b28ed259a5daaaa",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-corporate-income-tax.md": "f1c4deb5365ab9fd6d676ca1dbe8965ba6cfd7cdc5471608d56f03b6ab4cb38d",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-income-tax.md": "b52a2e5c88802ce3aff825973065f0972fda7cdfd0568612420baa675d70da7f",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-payroll-social.md": "60f0488536987477f27d655843ca71f893d924e363ddee79594e45692e2e8d10",
+    "evidence/ledgers/republic-of-congo-draft-20261101/cg-vat-gst.md": "351b6d527abe41fe6e35d79aa8f5cde3b451f723bc0e598683562ab98ffcc4e3",
+    "evidence/ledgers/republic-of-congo-draft-20261101/rule-register.json": "0af1e2a00b20a0eef0800229f82999717d027b2c44a414180777084d8f9a5c6a"
+  },
+  "writer_corrections_manifest_sha256": "1fd4e7ac193758a2b8e8fd0933f23b98450dfdc291883cb2a4619fe101f6fcbb",
+  "all_eight_guide_sha256": {
+    "skills/republic-of-congo/cg-company-formation.md": "eff2380d71d82ee2153320956df271f374a571e37a104793578c9ff50f66d3d2",
+    "skills/republic-of-congo/cg-corporate-income-tax.md": "fb776febb676349dc5adc2f377ddee3e51d40b78161c3969732753b5d897bedb",
+    "skills/republic-of-congo/cg-cross-border.md": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747",
+    "skills/republic-of-congo/cg-income-tax.md": "9aeee8c469bc4f2a854d901f47be9b202ae56dc759ef4f78e390df99ba4cce1a",
+    "skills/republic-of-congo/cg-payroll-social.md": "f2a7c53f6e43a9b1d4c12f171978cf2fbc9a1f7b006cf50354eda14f3e61e7ea",
+    "skills/republic-of-congo/cg-tax-overview.md": "b9c144f0b85207f81a995846f85bb7363e2f37b51fcbf68f2b8b35a941830889",
+    "skills/republic-of-congo/cg-transfer-pricing.md": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e",
+    "skills/republic-of-congo/cg-vat-gst.md": "526d48d3edd20d740a2c7ad1aad0b9cf1e321df931c79b219218609073bbde6b"
+  },
+  "source_cache_sha256": [
+    {
+      "id": "LF",
+      "sha256": "73c97ffedfd8381a8b1bae1efe708a002d363b7455eadbd25bec2b014179347d",
+      "cache_unchanged_from_original_source_review": true
+    },
+    {
+      "id": "CGI",
+      "sha256": "4e4cb79135782817fc26c18e0c8418c789888564b9576e92493676ecb7ff1f52",
+      "cache_unchanged_from_original_source_review": true
+    },
+    {
+      "id": "CO",
+      "sha256": "6c7c029fb4e27b70035ec1962f62dcfe708ec3f17ab55a5d79bf8878b167e780",
+      "cache_unchanged_from_original_source_review": true
+    },
+    {
+      "id": "SARL",
+      "sha256": "94d3a632f1a0c272d0cc89d7aa135ddad4de4ddea21b062fcc5f12b66159ad91",
+      "cache_unchanged_from_original_source_review": true
+    },
+    {
+      "id": "ACPCE",
+      "sha256": "55ba8525926afe55746ad959c9de048f79ccfb8bc55a69ed4f613539a4d4cbb9",
+      "cache_unchanged_from_original_source_review": true
+    },
+    {
+      "id": "CAL",
+      "sha256": "9be4559faf7ba423e6e8a3b6df733e700c06e5f6415fa929f9202ad97b27020b",
+      "cache_unchanged_from_original_source_review": true
+    },
+    {
+      "id": "LF25",
+      "sha256": "63dacfc2e3f0f1517156829b4acfd06eee44231eeaa36603c9a822e90f10e8ef",
+      "cache_unchanged_from_original_source_review": true
+    },
+    {
+      "id": "PORT",
+      "sha256": "ed1da8f34de79153204881fa205a9dc270e2a81a784a09e5d315525564041aba",
+      "cache_unchanged_from_original_source_review": true
+    }
+  ],
+  "actual_versions": {
+    "skills/republic-of-congo/cg-company-formation.md": 1.1,
+    "skills/republic-of-congo/cg-corporate-income-tax.md": 1.1,
+    "skills/republic-of-congo/cg-cross-border.md": 1.0,
+    "skills/republic-of-congo/cg-income-tax.md": 1.1,
+    "skills/republic-of-congo/cg-payroll-social.md": 1.1,
+    "skills/republic-of-congo/cg-tax-overview.md": 1.1,
+    "skills/republic-of-congo/cg-transfer-pricing.md": 1.0,
+    "skills/republic-of-congo/cg-vat-gst.md": 1.1
+  },
+  "unchanged_checks": {
+    "all16_worked_examples_prose_and_blocks": true,
+    "six_platform_metadata_and_CTA_sets": true,
+    "two_new_guides_no_author_trust_CTA_fields": true,
+    "all73_old_topic_destinations": true,
+    "country_readme_seven_partial_domains": true,
+    "historical_writer_and_original_reviewer_receipts": true
+  },
+  "validation_receipt": "closure-validation.json",
+  "scope": "Full initial-law source review of89grouped records plus focused closure of all11changed records/fiveGuides/fiveledgers/register. No remaining concrete defect within this reviewed partial baseline. All later2026/currentness, filing-date, social-rate, VAT amendment-chain, operating-procedure and accountant-attestation limits remain. Not comprehensive or operative2026 filing/payroll approval. Acceptance does not transfer to any different candidate bytes."
+}

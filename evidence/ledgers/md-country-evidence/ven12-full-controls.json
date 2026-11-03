@@ -1,0 +1,346 @@
+{
+  "status": "PASS writer arithmetic and source identity only; legal assumptions and whole-country independent review pending",
+  "cases": [
+    {
+      "name": "Signed income and expense differences reach main040 once",
+      "inputs": {
+        "profit": 100000,
+        "recovered_disallowed_debt": 3000,
+        "paid_previous_disallowed_related_expense": 12000,
+        "fine": 5000
+      },
+      "actual": {
+        "income_adjustment": -3000,
+        "expense_adjustment": 7000,
+        "row040": 90000
+      },
+      "expected": {
+        "income_adjustment": -3000,
+        "expense_adjustment": 7000,
+        "row040": 90000
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Assumed eligible previously disallowed recovery/payment; current classification required; not all related expenses deductible"
+    },
+    {
+      "name": "Noncash donation has separate deemed income and cost adjustment",
+      "inputs": {
+        "book_value": 30000,
+        "tax_undepreciated": 20000,
+        "market_value": 25000,
+        "book_profit_after_donation": 170000
+      },
+      "actual": {
+        "row0207": 25000,
+        "row03037_adjustment": -10000,
+        "row040": 205000,
+        "row050_percentage_ceiling": 10250
+      },
+      "expected": {
+        "row0207": 25000,
+        "row03037_adjustment": -10000,
+        "row040": 205000,
+        "row050_percentage_ceiling": 10250
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Non-food assumed business-asset donation. Does not certify final donation amount, VAT or deduction entitlement; row050 is only a percentage ceiling"
+    },
+    {
+      "name": "Income exemption and tax relief are not both subtracted as tax",
+      "inputs": {
+        "row0901": 60000,
+        "eligible_exempt_income": 10000,
+        "ordinary_rate": "0.12",
+        "separate_relief_tax_base": 2400,
+        "budget_payable_fraction": "0.75"
+      },
+      "actual": {
+        "row090": 50000,
+        "row120": 6000,
+        "row140": 1200,
+        "row130": 600,
+        "row150": 5400,
+        "incorrect_double_subtraction": 4200
+      },
+      "expected": {
+        "row090": 50000,
+        "row120": 6000,
+        "row140": 1200,
+        "row130": 600,
+        "row150": 5400,
+        "incorrect_double_subtraction": 4200
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Separate fully established incentive entitlements assumed; no real-world incentive/code eligibility inferred from the form example"
+    },
+    {
+      "name": "Foreign-credit allocated ceiling uses main150 after relief",
+      "inputs": {
+        "main090": 200000,
+        "foreign_net_income": 50000,
+        "main150": 18000,
+        "certified_foreign_tax": 6000
+      },
+      "actual": {
+        "share_percent": 25,
+        "allocated_ceiling": 4500,
+        "credit": 4500,
+        "row170": 13500
+      },
+      "expected": {
+        "share_percent": 25,
+        "allocated_ceiling": 4500,
+        "credit": 4500,
+        "row170": 13500
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Positive total/foreign taxable income and Code82 period/proof/eligibility assumed; zero/loss denominator and overlapping relief not certified"
+    },
+    {
+      "name": "Subdivision total uses assessed row170 before instalments",
+      "inputs": {
+        "main150": 24000,
+        "foreign_credit": 6000,
+        "instalments": 15000,
+        "prior_headcount": [
+          75,
+          25
+        ]
+      },
+      "actual": {
+        "row170": 18000,
+        "row190": 3000,
+        "allocations": [
+          13500,
+          4500
+        ],
+        "annex10D_total": 18000
+      },
+      "expected": {
+        "row170": 18000,
+        "row190": 3000,
+        "allocations": [
+          13500,
+          4500
+        ],
+        "annex10D_total": 18000
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Assumed ordinary calendar taxpayer, complete valid prior-base population, no new/liquidated branch or S-election exception"
+    },
+    {
+      "name": "Founder annex distinguishes relieved income from relieved tax",
+      "inputs": {
+        "founders": 2,
+        "main090": 200000,
+        "main120": 24000,
+        "main130": 6000,
+        "applicable_relief_fraction": ".25"
+      },
+      "actual": {
+        "each_col5": 100000,
+        "each_col6": 12000,
+        "each_col7": 3000,
+        "each_col8": 25000,
+        "each_col9": 75000,
+        "each_col10": 9000,
+        "all_col10": 18000
+      },
+      "expected": {
+        "each_col5": 100000,
+        "each_col6": 12000,
+        "each_col7": 3000,
+        "each_col8": 25000,
+        "each_col9": 75000,
+        "each_col10": 9000,
+        "all_col10": 18000
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Natural-person business/founder population and full equal-allocation entitlement assumed; no SRL personal relief; electronic header implementation untested"
+    },
+    {
+      "name": "Changeover surplus recognised once over three periods",
+      "inputs": {
+        "exclusive_changeover_surplus": 90000,
+        "book_by_period": [
+          90000,
+          0,
+          0
+        ]
+      },
+      "actual": {
+        "tax_by_period": [
+          30000,
+          30000,
+          30000
+        ],
+        "adjustments": [
+          -60000,
+          30000,
+          30000
+        ],
+        "total_tax_income": 90000,
+        "net_adjustment": 0
+      },
+      "expected": {
+        "tax_by_period": [
+          30000,
+          30000,
+          30000
+        ],
+        "adjustments": [
+          -60000,
+          30000,
+          30000
+        ],
+        "total_tax_income": 90000,
+        "net_adjustment": 0
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Qualifying cash-to-accrual exclusive surplus under Code44(8); not a general three-year income deferral"
+    },
+    {
+      "name": "Same-nature replacement basis adds only uncovered acquisition expense",
+      "inputs": {
+        "old_basis": 40000,
+        "new_cost": 90000,
+        "forced_loss_compensation": 70000,
+        "loss_year": 2026
+      },
+      "actual": {
+        "replacement_basis": 60000,
+        "following_period_year": 2027
+      },
+      "expected": {
+        "replacement_basis": 60000,
+        "following_period_year": 2027
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Code22 qualifying forced loss/same-type replacement and timely full reinvestment assumed; not an ordinary voluntary sale or expired replacement"
+    }
+  ],
+  "source_lookups": [
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "37",
+      "checked_exact_text": "1/3",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "40",
+      "checked_exact_text": "2020",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "53",
+      "checked_exact_text": "coloana 4",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "53^1",
+      "checked_exact_text": "2020",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "65",
+      "checked_exact_text": "nu se completează",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "91",
+      "checked_exact_text": "03037",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "101^1",
+      "checked_exact_text": "03047",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "111",
+      "checked_exact_text": "2021",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "116^4",
+      "checked_exact_text": "140",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "117",
+      "checked_exact_text": "nu se completează",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "118^4",
+      "checked_exact_text": "100%",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "128",
+      "checked_exact_text": "16018",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "133",
+      "checked_exact_text": "egal",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "135",
+      "checked_exact_text": "coloana 8",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "139",
+      "checked_exact_text": "170",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-INSTRUCTIONS-20261031",
+      "point": "140",
+      "checked_exact_text": "trimestrul",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-FORM-20261031",
+      "point": "table_15",
+      "checked_exact_text": "col.5-col.",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "VEN12-FULL-CURRENT-FORM-20261031",
+      "point": "table_16",
+      "checked_exact_text": "170",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    },
+    {
+      "source": "22-VEN12-CURRENT-20261031",
+      "point": "article22_replacement_conditions_basis_period",
+      "checked_exact_text": "perioada fiscală următoare",
+      "status": "PASS source identity/field lookup; not independent legal review"
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-VEN12-FULL-CURRENT-INSTRUCTIONS-20261031.json": "3024661bd4e58fdb8376347e3611320ec4e627635843c6138a6d41854989591e",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-VEN12-FULL-CURRENT-FORM-20261031.json": "d7206e2b483348240e2c4726acdea9c0528bf940a2290df5924d94282ceefe78",
+    "ledgers/md-country-evidence/sources/fiscal-code-article-22-VEN12-CURRENT-20261031.json": "9e98266d593a519bb55a36c57ea41f5ec7ff6964594b671cbeb739e12e774c8d"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/md-corporate-income-tax.md": "2c774e296d4796eaa223775b232237bad68cb7c06088ffa73f55c82c9709bdcd"
+  }
+}

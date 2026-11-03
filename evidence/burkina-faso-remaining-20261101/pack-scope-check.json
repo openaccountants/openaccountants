@@ -1,0 +1,32 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "all_ten_guide_hashes_match": true,
+  "legacy_old_topic_entries": 348,
+  "rewritten_guides": 3,
+  "unchanged_guides": 7,
+  "platform_fields_and_complete_cta_preserved": true,
+  "description_word_counts": [
+    96,
+    98,
+    98
+  ],
+  "applicable_domains": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "partial_domains": [
+    "IT-IND",
+    "IT-CORP",
+    "VAT",
+    "SC",
+    "PR",
+    "TP",
+    "XB"
+  ],
+  "complete": false
+}

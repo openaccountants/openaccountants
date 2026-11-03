@@ -1,33 +1,95 @@
 ---
 name: rw-company-formation
-description: "Source-cited draft: company formation & entity choice for Rwanda (tax year 2025) — rates, thresholds and rules with primary-source citations. Unverified; pending local-accountant review."
+description: "Rwanda company formation for 2026: online RDB registration, free and within six working hours, shareholders, registered address, TIN, and tax obligations after incorporation."
+version: 0.2
 jurisdiction: RW
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Rwanda Company Formation & Entity Choice
+# Rwanda Company Formation and Entity Choice
 
-## Entity types, incorporation and annual compliance
+## Who this applies to
 
-Companies are registered with the Office of the Registrar General at the Rwanda Development Board (RDB), governed by the Law relating to Companies. Rwanda is known for fast, low-cost online incorporation, with no minimum share capital and a certificate typically issued within hours.
+Founders of a company, individual enterprise or branch. Register with the Registrar General within 7 days of starting (https://www.rra.gov.rw/en/domestic-tax-services/registration-de-registration/default-title).
 
-- **Most common entity** — Private limited company (Ltd) — 1 to 100 shareholders, limited liability  _(Law relating to Companies — https://org.rdb.rw/business-registration/)_
-- **Other available entity types** — Public limited company, sole proprietorship (individual enterprise), partnership, branch/representative office of a foreign company, and cooperative  _(Law relating to Companies — https://businessprocedures.rdb.rw/menu/1?l=en)_
-- **Minimum share capital** — None — no minimum share capital is required to incorporate a limited company  _(Law relating to Companies — https://org.rdb.rw/business-registration/)_
-- **Foreign ownership** — 100% foreign shareholding is permitted; shareholders may be individuals or legal entities, local or foreign  _(Law relating to Companies / RDB investment rules — https://org.rdb.rw/business-registration/)_
-- **Government registration fee** — Free — there is no government fee for company registration at RDB  _(RDB business registration service — https://org.rdb.rw/business-registration/)_
-- **Incorporation timeline** — Certificate of incorporation typically issued within six working hours of a complete online application  _(RDB business registration service — https://org.rdb.rw/business-registration/)_
-- **TIN and social security number** — The company code on the certificate of incorporation also serves as the Tax Identification Number (TIN) and RSSB number  _(RDB / RRA registration procedures — https://businessprocedures.rdb.rw/menu/1?l=en)_
-- **Registered office requirement** — A local physical address in Rwanda must be provided as the registered office  _(Law relating to Companies — https://org.rdb.rw/business-registration/)_
-- **Core incorporation steps** — Reserve/choose company name, prepare memorandum and articles, submit the online application via the RDB portal, receive certificate of incorporation with TIN, then register for VAT/PAYE and RSSB as applicable  _(RDB business registration procedures — https://businessprocedures.rdb.rw/menu/1?l=en)_
-- **Annual compliance — corporate income tax** — File annual CIT return and pay any balance within three months of year-end (31 March for calendar-year companies)  _(Tax Procedures Law / Income Tax Law (Law No. 027/2022) — https://taxsummaries.pwc.com/rwanda/corporate/tax-administration)_
-- **Ongoing compliance — VAT, PAYE, RSSB** — File and pay VAT (if registered), PAYE and RSSB contributions monthly by the 15th of the following month  _(Tax Procedures Law — https://www.rra.gov.rw)_
-- **Annual return to the Registrar General** — Companies must file an annual return / keep statutory records with the Office of the Registrar General ((approx — confirm exact annual return obligation and deadline))  _(Law relating to Companies — https://org.rdb.rw/business-registration/)_
+## Rates, bands and thresholds
+
+| Item | Amount | Tax year | Official URL |
+|---|---|---|---|
+| Registration fee | Free, 100% online | 2026 | https://org.rdb.rw/business-registration/ |
+| Time | Six working hours | 2026 | same |
+| Foreign ownership | 100% non-local shareholding allowed | 2026 | same |
+| Registered address | Local physical address required | 2026 | same |
+| Share capital | Unlimited registered capital, can be increased any time; unverified: no minimum (old file) | 2026 | same |
+
+## The base
+
+Categories: individual enterprise, limited company, foreign branch. Public companies, partnerships and representative offices: unverified from the old file. Cooperatives register with RCA at cmis.rca.gov.rw (https://www.rra.gov.rw/en/domestic-tax-services/registration-de-registration/default-title). Limited company shareholders: unverified old limit of 100; RDB says as many as you wish.
+
+## Deadlines and filing
+
+1. Prepare email, ID or passport; for corporate shareholders, the incorporation certificate and articles (https://org.rdb.rw/business-registration/).
+2. Register at businessprocedures.rdb.rw; name must be approved.
+3. Receive the certificate; RDB and RRA systems issue one TIN (https://www.rra.gov.rw/en/domestic-tax-services/registration-de-registration/default-title).
+4. Sign up at https://etax.rra.gov.rw.
+5. Register for VAT if thresholds are met, PAYE and RSSB when hiring.
+
+Ongoing: see overview. Annual return to the Registrar: unverified.
+
+## Penalties and interest
+
+Failure to register: art 81 fine, see [rw-corporate-income-tax](rw-corporate-income-tax.md).
+
+## Cross-border points
+
+A foreign company branch needs a shareholder or board resolution and a branch representative (https://org.rdb.rw/business-registration/).
+
+## Two worked examples that recompute
+
+```oa-check
+name: Registration cost
+inputs:
+  fee: 0
+steps:
+  - cost: fee
+expected:
+  cost: 0.00
+```
+
+**Decision: company or individual enterprise.** Compare 28% on FRW 10,000,000 profit with personal tax of 288,000 plus 30% above 2,400,000.
+
+```oa-check
+name: Company or individual on FRW 10,000,000
+inputs:
+  profit: 10000000
+steps:
+  - company: profit * 0.28
+  - personal: 288000 + (profit - 2400000) * 0.30
+  - gap: personal - company
+expected:
+  gap: -232000.00
+```
+
+## Ask the client first
+
+1. Shareholders, local or foreign?
+2. Activities?
+3. Local address?
+4. Expected turnover?
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| RDB, business registration page (whole page) | https://org.rdb.rw/business-registration/ | 2026-11-01 |
+| RRA, Register your business page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/registration-de-registration/default-title | 2026-11-01 |
+
+Not yet confirmed: no minimum capital; TIN doubling as RSSB number; the annual return to the Registrar General; the 100 shareholder limit; entity list beyond the RDB page.
 
 <!-- openaccountants-cta-block -->
 

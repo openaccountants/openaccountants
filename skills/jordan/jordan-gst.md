@@ -1,10 +1,11 @@
 ---
 name: jordan-gst
-description: Use this skill whenever asked to prepare, review, or classify transactions for a Jordan General Sales Tax (GST) return for any client. Trigger on phrases like "Jordan GST", "Jordan VAT", "ISTD return", or any request involving Jordanian indirect tax. Jordan imposes GST at 16% under Law No. 6 of 1994, administered by ISTD. Multiple special rates exist (4%, 5%, 8%, 10%). ALWAYS read this skill before handling any Jordan GST work.
-version: 2.0
+description: "Conditional Jordan General Sales Tax extracts for a 2026 refresh under Law No. 6 of 1994. Covers the standard-rate clause, registration framework, source-text periods, payment timing, deductions, refunds and late charges. Registration limits, schedules, supplier-specific classifications, current return fields, amendment currentness and operational filing procedures remain on hold. Bank descriptions are investigation prompts and cannot establish tax treatment. Two executable examples illustrate standard-rate arithmetic and payment timing under stated assumptions. Use for Jordan GST research, Jordan VAT, ISTD sales tax and imported-service questions. Read the Sources holds before any classification or filing decision."
+version: 2.3
 jurisdiction: JO
-tax_year: 2025
-last_updated: 2026-07-13
+category: international
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -13,227 +14,131 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Jordan GST
 
-## Section 1 -- Quick reference
+## Who this applies to
 
-**Quick reference field/value table**
+**Source currentness hold.** This is a source-cited research draft for the 2026 refresh, not a cleared filing instruction. The clause extracts below are conditional reference material. Before using them for a 2026 position, close the amendment and procedure gaps named in Sources. A read date records the stated read scope, not verification of every later amendment.
 
-| Field | Value |
-| --- | --- |
-| Country | Jordan (Hashemite Kingdom) |
-| Standard rate | 16% |
-| Special rates | 4% (telecoms), 5% (certain services), 8% (certain goods), 10% (certain goods/services) |
-| Zero rate | 0% (exports, specified basic foodstuffs) |
-| Exempt supplies | Financial services, medical, education, residential rental, unprocessed agricultural |
-| Filing portal | https://www.istd.gov.jo |
-| Authority | Income and Sales Tax Department (ISTD) |
-| Currency | JOD (Jordanian Dinar) |
-| Filing frequency | Monthly (turnover > JOD 1M); Bi-monthly (others) |
-| Deadline | End of month following period |
-| Mandatory registration | JOD 75,000 (goods), JOD 30,000 (services) |
-| Primary legislation | General Sales Tax Law No. 6 of 1994 (as amended) |
-| Contributor | Open Accounting Skills Registry |
-| Validated by | Pending |
-| Last research update | April 2026 |
+A person selling taxable goods or services who reaches the registration limit, a person importing taxable goods or services for business whatever the amount, and voluntary registrants. If the rate, place of supply, supplier residence or recovery entitlement is unknown, hold the transaction for evidence. A bank description cannot establish those facts.
 
-**Conservative defaults**
+Use the bank statement to reconcile payments, alongside sales/purchase tax invoices, customs declarations and evidence of supplier residence and business use. A bank statement alone is insufficient to classify taxable supplies or claim input tax.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown rate on a sale | 16% |
-| Unknown VAT status of a purchase | Not deductible |
-| Unknown counterparty country | Domestic Jordan |
+Refuse and refer: Aqaba Special Economic Zone operations and any transaction requiring Special Sales Tax classification or a combined computation. The form-list reading shows separate Aqaba returns. The old alcohol/tobacco/fuel classification and claim that special tax is computed first remain explicitly on hold pending the complete schedules and valuation clause.
 
-### Required inputs
+## Rates, bands and thresholds
 
-- **Minimum viable input** — Bank statement for the period. Acceptable from Arab Bank, Housing Bank, Jordan Ahli Bank, Cairo Amman, Bank al Etihad, or any other Jordanian bank.  _(Section 2 -- Required inputs and refusal catalogue)_
-- **Recommended input** — Sales invoices (Arabic required), purchase invoices for input claims.  _(Section 2 -- Required inputs and refusal catalogue)_
+| Item | Figure | Conditions | Source |
+|---|---|---|---|
+| Standard rate | 16% | Import or supply of any good or service, art. 6(a) | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf |
+| Zero rate | 0% | Schedule 2 goods, sales to free zones, exports, sales to exempt bodies, art. 7(a) | same |
+| Exempt | Exempt sale under the readable exemption clause; input treatment is on hold | Schedule 3 list title / art. 7(b) extract; no input entitlement or prohibition inferred from the title | https://www.istd.gov.jo/AR/List/%D8%AC%D8%AF%D8%A7%D9%88%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D8%B9%D9%84%D9%89__%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA |
+| Reduced lists | 10%, 5%, 4%, 2% | Goods named on ISTD lists; look up the item, never guess | https://www.istd.gov.jo/AR/List/%D8%A7%D9%84%D9%86%D8%B3%D8%A8_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 |
+| Registration limit | unverified, on hold | The regulation setting the limit has not been read; no threshold can be applied from this draft | unverified |
+| Importer | No limit | Register within 30 days of first import, unless personal use | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf |
+| Tourist refund | JOD 50 to JOD 500 of tax refunded | Non-resident's goods held on departure; these are refund amounts, not purchase-value thresholds. The exact refund article/subparagraph number remains on hold | same |
 
-### Refusal catalogue
+## The base
 
-- **R-JO-1 -- Free zone complex** — Trigger: Aqaba Special Economic Zone operations. Message: "ASEZA has specific GST rules. Escalate to licensed practitioner."  _(Section 2 -- Required inputs and refusal catalogue)_
-- **R-JO-2 -- Special Sales Tax** — Trigger: alcohol, tobacco, fuel subject to SST. Message: "SST is separate from GST and computed first. Escalate for combined computation."  _(Section 2 -- Required inputs and refusal catalogue)_
+Sale price the buyer must pay. A zero-rated or exempt item sold tied to a taxable item takes GST (art. 7(c)); a taxable good tied to an exempt financial service stays taxable on its own value (art. 7(d)).
 
-### 3.1 Jordanian banks (exempt -- exclude)
+The readable deduction fragments cover tax previously accounted for or paid on returned sales and general tax on deferred-payment sales that became bad debts. The purchases/imports and pre-registration-stock subclauses are truncated, so those positive entitlements, the exact deduction article number, blocked-input schedule and apportionment instructions remain explicitly on hold. Do not allow input tax solely because a payment appears in a bank statement.
 
-**Jordanian banks (exempt -- exclude)**
+Goods-import valuation and input recovery are on hold until the customs valuation components and current deduction instructions are read. Services from a non-resident: importing a service is taxable under art. 6(a); calculate the standard-rate liability only after ruling out a specific exemption/rate. Input recovery and the exact deduction article number remain on hold; recovery is not automatically equal to the liability. The readable payment clause uses the earliest applicable trigger: one month from payment of the service fee or any part, to the extent relating to that part; customs release of the item carrying the service; or six months from receiving the service or any part, to the extent relating to that part. A registered importer can defer only with the Director’s approval under the executive-instruction conditions. This remains a conditional source extract, not a current payment instruction.
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ARAB BANK | EXCLUDE | Financial service, exempt |
-| HOUSING BANK, ISKAN BANK | EXCLUDE | Same |
-| JORDAN AHLI, CAIRO AMMAN | EXCLUDE | Same |
-| BANK AL ETIHAD, CAPITAL BANK | EXCLUDE | Same |
-| INTEREST, LOAN | EXCLUDE | Out of scope |
+Bank-statement investigation prompts, not tax classifications:
 
-### 3.2 Government
+| Pattern | Action | Evidence required |
+|---|---|---|
+| ARAB BANK, HOUSING BANK, ISKAN BANK, JORDAN AHLI, CAIRO AMMAN, BANK AL ETIHAD, CAPITAL BANK; INTEREST, LOAN | Identify the actual transaction | Separate principal, interest, fees and goods/services; do not assume every bank payment is exempt |
+| ISTD, INCOME AND SALES TAX; SSC, SOCIAL SECURITY CORPORATION | Reconcile the remittance | Obtain the tax/contribution assessment and payment reference |
+| CUSTOMS, JORDAN CUSTOMS | Split duties and any GST | Customs declaration and tax payment evidence |
+| JEPCO, EDCO, IDECO; MIYAHUNA, WAJ | Inspect the invoice | Current item classification; no utility rate inferred from a name |
+| ZAIN JORDAN, ORANGE JORDAN, UMNIAH | Inspect the invoice and legal rate | Old 4% telecom classification is on hold |
+| GOOGLE, MICROSOFT, ADOBE, AWS, ZOOM, SLACK, SALESFORCE | Establish supplier and service facts | Supplier residence, any local GST, place/use of service, rate and recovery evidence |
 
-**Government supplier patterns**
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| ISTD, INCOME AND SALES TAX | EXCLUDE | Tax payment |
-| CUSTOMS, JORDAN CUSTOMS | Check for import GST | Duty exclude; GST recoverable |
-| SSC, SOCIAL SECURITY CORPORATION | EXCLUDE | Social contribution |
+Return working paper: separate output, allowed input, adjustments and brought-forward credit. This is a reconciliation aid, not a verified return-box map. The current form fields and submission/payment procedure are on hold.
 
-### 3.3 Utilities
+## Deadlines and filing
 
-**Utility supplier patterns**
+| Step | Rule | Source |
+|---|---|---|
+| Period | Two months; the Director sets each registrant's start and end | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf |
+| Special Sales Tax | Monthly | same |
+| Nil return | Required for every period | same |
+| Payment | Within the month after the period; Director may add up to one month | same |
+| Invoice | Tax invoice under executive instructions | same |
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| JEPCO, EDCO, IDECO | Domestic 16% | Electricity |
-| MIYAHUNA, WAJ | Domestic 16% | Water |
-| ZAIN JORDAN, ORANGE JORDAN, UMNIAH | Domestic 4% | Telecoms at special rate |
+Only if the Director assigned these calendar pairs, and no extension or holiday rule applies: Jan-Feb by 31 Mar, Mar-Apr by 31 May, May-Jun by 31 Jul, Jul-Aug by 30 Sep, Sep-Oct by 30 Nov, Nov-Dec by 31 Jan.
 
-### 3.4 SaaS
+Filing workflow is on hold: e-services screens, approved return fields, confirmation and payment reference have not been read. Do not submit using this draft.
 
-**SaaS supplier patterns**
+## Penalties and interest
 
-| Pattern | Treatment | Notes |
-| --- | --- | --- |
-| GOOGLE, MICROSOFT, ADOBE | Reverse charge 16% | Non-resident service |
-| AWS, ZOOM, SLACK | Reverse charge 16% | Non-resident |
+Late payment: 0.4% (four per thousand) per week or part of a week; the old skill's 4% was wrong. Late return, late registration up to 60 days, and other listed breaches: JOD 100 to JOD 500. Evasion carries heavier penalties, including fines and prison.
 
-### Example 1 -- Reverse charge on US SaaS
+Refunds: exports, tax collected in error, and input credits unused for over two months. The day limit did not OCR clearly.
 
-**Input:** `05.01.2026 ; SALESFORCE INC ; DEBIT ; Monthly CRM ; USD 200 ; JOD 142`
+## Cross-border points
 
-US entity. No GST. Reverse charge at 16%. Output and input both reported. Net zero.
+The art. 7 extract includes exports and sales to free zones in zero-rating, subject to the applicable conditions. Input recovery, re-entry from a free zone, supplier-specific SaaS treatment and credit-note timing require the separate checks listed in Sources. Do not apply the old unconditional examples to a live return.
 
-### Example 2 -- Telecoms at 4%
+## Two worked examples that recompute
 
-**Input:** `10.01.2026 ; ZAIN JORDAN ; DEBIT ; Mobile plan ; -50.00 ; JOD`
+Simple: a sale already established to be standard-rated, net JOD 1,000. Conditional output is JOD 160; gross is JOD 1,160. This does not classify the supply.
 
-Telecoms services at special 4% rate, not 16%.
-
-### 5.1 Standard rate 16%
-
-- **Standard rate default** — Default for all taxable supplies unless specifically listed at another rate.  _(Section 5 -- Classification rules)_
-
-### 5.2 Special rates
-
-- **Special rates description** — 4% telecoms (domestic), 5% certain services, 8% certain goods, 10% certain goods/services. Rate determined by ISTD schedules.  _(Section 5 -- Classification rules)_
-
-### 5.3 Zero-rated (0%, input recoverable)
-
-- **Zero-rated supplies** — Exports, international transport, basic foodstuffs (bread, rice, sugar, milk per Cabinet decision), goods to free zones (conditions).  _(Section 5 -- Classification rules)_
-
-### 5.4 Exempt (no GST, no recovery)
-
-- **Exempt supplies** — Financial services, medical, education, residential rental (unfurnished), unprocessed agricultural, government-to-government, charitable (conditions).  _(Section 5 -- Classification rules)_
-
-### Output section
-
-**GST return output section**
-
-| Section | Description |
-| --- | --- |
-| Output GST at 16% | Standard-rated supplies |
-| Output GST at special rates | 4%, 5%, 8%, 10% separately |
-| Zero-rated | Exports and zero-rated supplies |
-| Exempt | Exempt supplies |
-
-### Input section
-
-**GST return input section**
-
-| Section | Description |
-| --- | --- |
-| Input GST on domestic purchases | Recoverable if taxable |
-| Input GST on imports | Customs GST |
-| Input GST adjustments | Blocked, apportionment |
-
-### Net
-
-- **Net GST calculation** — Output GST minus allowable input GST. Credit brought forward from prior period.  _(Section 6 -- GST return form structure)_
-
-## Section 7 -- Reverse charge and imports
-
-- **Reverse charge on non-resident services** — Services from non-resident: self-assess at 16%. Claim input if for taxable supplies. Net zero.  _(GST Law No. 6/1994, reverse charge provisions)_
-- **Import of goods GST treatment** — Import of goods: GST on CIF plus customs duties. Collected by Jordan Customs. Recoverable if for taxable supplies.  _(GST Law No. 6/1994, reverse charge provisions)_
-
-## Section 8 -- Deductibility and blocked input
-
-- **Blocked input items** — Blocked: - Entertainment and hospitality - Motor vehicles for personal use - Non-business goods/services - Purchases related to exempt supplies - Gifts/donations (above limits)
-- **Partial exemption** — Partial exemption: turnover-based apportionment. ISTD approval required.
-
-## Section 9 -- Filing, deadlines, and penalties
-
-**Filing categories and deadlines**
-
-| Category | Period | Deadline |
-| --- | --- | --- |
-| Large taxpayers (> JOD 1M) | Monthly | End of following month |
-| Others | Bi-monthly | End of month following bi-monthly period |
-
-- **Bi-monthly periods and deadlines** — Bi-monthly periods: Jan-Feb (due 31 Mar), Mar-Apr (31 May), May-Jun (31 Jul), Jul-Aug (30 Sep), Sep-Oct (30 Nov), Nov-Dec (31 Jan).
-
-**Violations and penalties**
-
-| Violation | Penalty |
-| --- | --- |
-| Late filing | JOD 100-500 per return |
-| Late payment | 4% first week; 1% per week after |
-| Tax evasion | Fines and imprisonment |
-
-### Edge cases
-
-**EC1 -- Foreign SaaS.** Reverse charge at 16%. Net zero.
-
-**EC2 -- Export of goods.** Zero-rated. Input recoverable.
-
-**EC3 -- Telecom at 4%.** Not 16%.
-
-**EC4 -- Free zone to domestic.** GST applies when goods leave free zone.
-
-**EC5 -- Credit note.** Reduces output GST in period issued.
-
-**EC6 -- Exempt financial services.** No output GST. Input not recoverable.
-
-**EC7 -- Import of goods.** GST on CIF + duty. Recoverable.
-
-### Test suite
-
-**Test 1 -- Standard sale.** JOD 1,000 net. Expected: output GST JOD 160 (16%).
-
-**Test 2 -- Export.** JOD 5,000 goods. Expected: 0% GST. Input recoverable.
-
-**Test 3 -- Reverse charge.** UK consulting JOD 1,420. Expected: output JOD 227.20, input JOD 227.20.
-
-**Test 4 -- Telecoms.** JOD 50,000 services. Expected: GST JOD 2,000 (4%).
-
-**Test 5 -- Exempt supply.** Bank financial services JOD 100,000. Expected: no output GST. Input JOD 3,200 not recoverable.
-
-**Test 6 -- Import.** Electronics CIF JOD 10,000 + duty JOD 1,000. Expected: GST base JOD 11,000, GST JOD 1,760.
-
-### Escalation protocol
-
-```
-REVIEWER FLAG / ESCALATION REQUIRED
-[Standard format]
+```oa-check
+name: Verified standard-rate classification, arithmetic only
+inputs:
+  sale: 1000
+steps:
+  - output: sale * 0.16
+  - gross: sale + output
+expected:
+  output: 160.00
+  gross: 1160.00
 ```
 
-### Out of scope -- direct tax
+Decision: JOD 1,000 tax paid on time or exactly three weeks late under the four-per-thousand weekly clause, assuming no relief. Paying on time costs JOD 1,000; three weeks late costs JOD 1,012. A part-week counts as a whole week. Penalty currentness remains on hold.
 
-- Corporate income tax: 20% standard; banks 35%; telecoms 24%; mining 30%
-- Personal income tax: progressive 5%-30%
-- Social security: employer 14.25%, employee 7.5%
+```oa-check
+name: On-time versus three-week-late payment
+inputs:
+  due: 1000
+  weeks: 3
+steps:
+  - late: due * 0.004 * weeks
+  - ontime: due
+  - delayed: due + late
+  - saving: delayed - ontime
+expected:
+  late: 12.00
+  ontime: 1000.00
+  delayed: 1012.00
+  saving: 12.00
+```
 
-### Prohibitions
 
-- NEVER apply a rate other than 0%, 4%, 5%, 8%, 10%, 16%
-- NEVER allow input recovery on exempt supplies
-- NEVER ignore reverse charge on non-resident services
-- NEVER treat imports as zero-rated
-- NEVER issue invoices without Arabic text
-- NEVER compute numbers -- engine handles arithmetic
-- NEVER file without confirming correct period (monthly vs bi-monthly)
+## Ask the client first
 
-## Disclaimer
+- Registered or not, and the period the Director set.
+- Sales for the past 12 months by sector.
+- Any imports.
+- Exempt or zero-rated sales.
+- Aqaba, free zone or development zone presence.
+- Special Sales Tax goods.
 
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before filing or acting upon.
+Hold any unsupported rate or input claim. Confirm the assigned period before preparing filing instructions.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| General Sales Tax Law No. 6 of 1994 as amended, ISTD scan: inherited original-author OCR reading of rate, registration, return, deduction, refund and penalty clauses; closeout reread cached output, fresh scan unavailable | https://istd.gov.jo/EBV4.0/Root_Storage/AR/QRCODE/sales2.pdf | 2026-11-01 |
+| ISTD, GST schedules list, file names read | https://www.istd.gov.jo/AR/List/%D8%AC%D8%AF%D8%A7%D9%88%D9%84_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D8%A9_%D8%B9%D9%84%D9%89__%D8%A7%D9%84%D9%85%D8%A8%D9%8A%D8%B9%D8%A7%D8%AA | 2026-11-01 |
+| ISTD, sales tax rates search, first page read | https://www.istd.gov.jo/AR/List/%D8%A7%D9%84%D9%86%D8%B3%D8%A8_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 | 2026-11-01 |
+| ISTD, tax return forms list, first page read | https://www.istd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 | 2026-11-01 |
+
+Not yet confirmed: registration limits; any amendment after the 2022 ISTD file; the old 8% rate and 4% telecom rate (ISTD lists 10%, 5%, 4% and 2%, no 8%; list contents read on the first page only); old examples such as bread, rice, sugar, milk, medical, education and residential rent, which need the schedules; monthly filing above JOD 1,000,000; national e-invoicing timing; the Arabic invoice rule. Article numbers come from OCR. Non-operative holds also cover: reported JOD 75,000/50,000/30,000 registration limits; international transport, agricultural, government and charitable classifications; Schedule 4 blocked entertainment/hospitality, private vehicles, non-business purchases, exempt-related purchases and gifts/donations; turnover apportionment/ISTD approval; customs CIF/duty valuation and recovery; automatic equal input for imported services; free-zone re-entry; returned-sale credit-note period; return-box mapping. Original examples/test cases using those assumptions remain held. Additional explicit evidence holds: special-tax-first valuation, input treatment of exempt supplies, purchases/imports and pre-registration-stock deduction entitlement, and exact deduction/refund article and subparagraph numbers. The readable returned-sale, bad-debt and departure-refund fragments do not close those holds. Any later amendment/commencement is JO-GST-CURRENT; no 2026 filing or penalty instruction is cleared until it closes.
 
 <!-- openaccountants-cta-block -->
 

@@ -1,139 +1,95 @@
 ---
 name: rwanda-income-tax
-description: Use this skill whenever asked about Rwanda income tax (PIT / PAYE) for employees and self-employed individuals. Trigger on phrases like "how much tax do I pay in Rwanda", "PAYE", "RRA", "income tax declaration", "monthly PAYE return", "casual labourer tax", "flat tax micro-enterprise", "lump-sum tax", "real regime", "RSSB pension", "CBHI / Mutuelle", "benefits in kind", "self-employed tax Rwanda", or any question about filing or computing income tax for an individual taxpayer in Rwanda. Also trigger when preparing or reviewing a PAYE computation, an annual PIT declaration, deciding between micro-enterprise / lump-sum / real regimes, or advising on RSSB social-security contributions. This skill covers PAYE brackets (resident and non-resident), casual-labour rate, micro/lump-sum/real turnover regimes, RSSB pension / occupational hazard / maternity / CBHI / medical contributions, benefits in kind, filing deadlines, and penalties. ALWAYS read this skill before touching any Rwanda income tax work.
-version: 0.1
+description: "Rwanda personal income tax for 2026: PAYE bands, casual labour, micro and small business regimes, real regime, capital gains at 10%, the annual declaration by 31 March and how to file it in E-Tax. Use for employees and self-employed individuals in Rwanda."
+version: 0.2
 jurisdiction: RW
-tax_year: 2025
-last_updated: 2026-07-13
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
-depends_on:
-  - income-tax-workflow-base
-category: international
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Rwanda Income Tax -- PAYE & Self-Employed
+# Rwanda Income Tax: PAYE and self-employed
 
-## Section 1 -- Quick Reference
+Tax year 2026: 1 January to 31 December 2026 (Law 027/2022 art 8). The law has not changed for 2026 rates; the 2026 changes are two ministerial orders (certification threshold, simplified accounting).
 
-**Section 1 Quick Reference table**
+## Who this applies to
 
-| Field | Value |
-| --- | --- |
-| Country | Rwanda (Republic of Rwanda) |
-| Tax | Personal Income Tax (PIT) / PAYE |
-| Currency | Rwandan franc (RWF / FRW) only |
-| Tax year | Calendar year (1 January -- 31 December) [PwC, individual] |
-| Primary legislation | Law N° 027/2022 of 20/10/2022 establishing taxes on income, as amended (2023) |
-| Supporting framework | Tax Procedures Law (penalties, deadlines); Presidential Order N° 086/01 (pension, gazetted 13 Dec 2024) |
-| Tax authority | Rwanda Revenue Authority (RRA) |
-| Social-security authority | Rwanda Social Security Board (RSSB) |
-| Filing portal | RRA e-Tax / domestic taxes portal |
-| Annual PIT declaration deadline | 31 March of the following year [RRA notice; PwC, tax-administration] |
-| PAYE remittance + return deadline | 15th of the following month [PwC, tax-administration] |
-| Validated by | Pending — requires sign-off by a Rwanda-licensed tax practitioner |
-| Validation date | Pending |
-| Skill version | 0.1 |
+Individuals. A resident (permanent residence, habitual abode, 183 days in the tax period, or an average of more than 122 days in each of the two prior periods and present this period; art 4) pays on domestic and foreign income. A non-resident pays only on Rwanda-source income (art 12). Companies: see [rw-corporate-income-tax](rw-corporate-income-tax.md). Payroll mechanics: see [rwanda-payroll](rwanda-payroll.md).
 
-### PAYE / PIT Rate Brackets — Monthly (2023 onward, permanent schedule)
+KIFC: a new resident not resident in the prior 5 years, working as an expert or professional directly for an entity with Kigali International Financial Centre licensed activities, is exempt on foreign-source income for the first 5 years (art 12).
 
-**PAYE / PIT Rate Brackets — Monthly**  _([RRA PIT page; PwC, individual])_
+## Rates, bands and thresholds
 
-| Monthly taxable income (RWF) | Rate | Cumulative tax at top of band (RWF) |
-| --- | --- | --- |
-| 0 -- 60,000 | 0% | 0 |
-| 60,001 -- 100,000 | 10% | 4,000 |
-| 100,001 -- 200,000 | 20% | 24,000 |
-| 200,001+ | 30% | -- |
+| Item | Amount | Tax year | Official URL |
+|---|---|---|---|
+| Annual band 0% | FRW 0 to 720,000 | 2026 | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/calculate-paye |
+| Annual band 10% | FRW 720,001 to 1,200,000 | 2026 | same |
+| Annual band 20% | FRW 1,200,001 to 2,400,000 | 2026 | same |
+| Annual band 30% | FRW 2,400,001 and above | 2026 | same |
+| Monthly PAYE bands | 0% to 60,000; 10% to 100,000; 20% to 200,000; 30% above | 2026 | same |
+| Casual labourer | 15%; first FRW 60,000 a month at 0% (art 56) | 2026 | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf |
+| Second employer | 30% (art 57; Handbook category S) | 2026 | same |
+| Micro-enterprise, turnover FRW 2,000,000 to 4,000,000 | FRW 60,000 a year (art 14) | 2026 | same |
+| Micro-enterprise, FRW 4,000,001 to 7,000,000 | FRW 120,000 | 2026 | same |
+| Micro-enterprise, FRW 7,000,001 to 10,000,000 | FRW 210,000 | 2026 | same |
+| Micro-enterprise, FRW 10,000,001 to 12,000,000 | FRW 300,000 | 2026 | same |
+| Small business, turnover FRW 12,000,001 to 20,000,000 | 3% of turnover (arts 3, 14) | 2026 | same |
+| Farming and livestock exemption | Turnover up to FRW 12,000,000 (art 21) | 2026 | same |
+| No annual declaration | Turnover under FRW 2,000,000, employment income only, or investment income under withholding only (art 9 as amended) | 2026 | https://www.rra.gov.rw/fileadmin/user_upload/Law_amending_Income_Tax_Ok.pdf |
+| Capital gains on shares, licences, debt instruments, options, guarantees | 10% (arts 36-37 as amended) | 2026 | https://www.minijust.gov.rw/index.php?eID=dumpFile&f=130496&t=f&token=4b9d4de9658212b7aaeeb5c8a42c823a7b879d7b |
+| Certification of statements | Turnover of FRW 1,000,000,000 or more (Order 009, art 3) | 2026 | https://www.rra.gov.rw/fileadmin/user_upload/Ministerial_orders-Financial_statements.pdf |
 
-**Same rates apply to residents and non-residents.** [RRA PIT page; PwC, individual]
+The first-year tables in arts 14 and 56 (0/20/30) applied only to the first year after the law; use the bands above.
 
-*Cumulative check: 60k–100k = 40,000 × 10% = 4,000. 100k–200k = 100,000 × 20% = 20,000; cumulative 24,000.* [RRA new-rates guide]
+## The base
 
-### PAYE / PIT Rate Brackets — Annual equivalent
+Employment income covers wages, leave and sick pay, commissions, bonuses, allowances, reimbursed private expenses, redundancy pay and pensions (art 15). Not taxed: reimbursement wholly for the employer's business, employer contributions to RSSB, RSSB pensions (art 16). Employee RSSB contributions are not on that list, so PAYE is on gross; see the payroll skill. Benefits: car 10% of employment income, housing 20%, others at market value (art 18; Handbook PAYE chapter).
 
-**PAYE / PIT Rate Brackets — Annual equivalent**  _([RRA PIT page])_
+Real regime: income from all business activities less expenses that are wholly for the business, real, documented with invoices or receipts accepted by RRA, and of the period (arts 19, 24). Taxable income is rounded to the nearest FRW 1,000 (art 14). Not deductible: fines, income tax, entertainment except general sporting activity for staff, donations beyond 1% of turnover to non-profits, 20% of overheads with inseparable private use, and more (art 25). Losses carry forward 5 tax periods; RRA can authorise more (art 31; Order 003, art 33). Foreign losses do not offset. Depreciation: buildings and heavy machinery 5%, purchased intangibles 10%, information and communication systems with a life of 10 years or more 10%, computers and shorter-life systems 50% (pool), other assets 25% (pool) (art 27).
 
-| Annual taxable income (RWF) | Rate | Cumulative tax at top of band (RWF) |
-| --- | --- | --- |
-| 0 -- 720,000 | 0% | 0 |
-| 720,001 -- 1,200,000 | 10% | 48,000 |
-| 1,200,001 -- 2,400,000 | 20% | 288,000 |
-| 2,400,001+ | 30% | -- |
+Micro and small regimes tax turnover or a flat amount, with no expenses. A small business may opt for the real regime; the choice binds for 3 years, and simplified records (daily sales, daily purchases, money transactions) suffice (art 14; Order 003, art 32). Liberal professions cannot use the flat or lump-sum regimes (art 14). Road transport has its own flat table in the annex to the law.
 
-- **Monthly PAYE calculation** — Monthly PAYE = annual tax ÷ 12, rounded up.  _([RRA new-rates guide])_
+### Decision table
 
-*Cumulative check: 720k–1.2M = 480,000 × 10% = 48,000. 1.2M–2.4M = 1,200,000 × 20% = 240,000; cumulative 288,000. Annual bands = monthly bands × 12 (60k/100k/200k → 720k/1.2M/2.4M).* [RRA PIT page]
+| If | Then |
+|---|---|
+| Only salary | No annual return; PAYE is final, unless several employers and a refund is claimed (art 9(6)) |
+| Turnover under FRW 2,000,000 | No declaration |
+| Turnover up to FRW 12,000,000 | Flat amount |
+| Turnover FRW 12,000,001 to 20,000,000 | 3%, or opt for the real regime for 3 years |
+| Turnover over FRW 20,000,000, or a liberal profession | Real regime |
 
-> **Superseded schedule warning.** A transitional "Year 1" schedule (0% / 20% / 30%, with the 720k–1.2M band taxed at 20%) existed under Law N° 027/2022 but has been **superseded**. The current correct middle-band rate is **10%**, not 20%. [RRA new-rates guide]
+### Carried: Required Inputs and Refusal Catalogue
 
-### Special-Category Income Rates
+#### Required Inputs
 
-**Special-Category Income Rates**
+**Minimum viable** : for an **employee**: monthly gross salary breakdown (basic + housing + transport + other allowances) and confirmation of resident/non-resident status. For a **self-employed individual**: bank statement for the full tax year (CSV, PDF, or pasted text) plus confirmation of annual turnover and chosen/eligible regime.
 
-| Category | Rate | Notes |
-| --- | --- | --- |
-| Casual labourer | 15% flat, first RWF 60,000/month at 0% | [RRA new-rates guide; Law N° 027/2022] |
-| Non-resident (Rwanda-source income) | Same bracket rates as residents | Taxed only on Rwanda-source income [PwC, individual] |
-| Capital gains on shares | 10% | [PwC, individual] |
-| Corporate Income Tax (if operating via a company) | 28% | Reduced from 30% by the 2022 law [PwC, corporate] |
+**Recommended** : payslips, RSSB contribution records, benefits-in-kind details (housing, vehicle), prior-year PIT declaration or RRA assessment, sales/purchase records (self-employed).
 
-### Self-Employed Turnover Regimes
+**Ideal** : complete income and expenditure account (real regime), asset register, RSSB statements for all schemes, casual-labour registers, KIFC expert status documentation (if applicable).
 
-**Self-Employed Turnover Regimes**
+**Refusal if minimum is missing : SOFT WARN.** No salary breakdown or no bank statement at all = hard stop. Salary stated as a single gross figure with no allowance split = proceed with reviewer warning: "Benefit-in-kind and RSSB contribution bases depend on the allowance split (housing/transport). This computation assumed [stated assumption]. The reviewer must confirm the allowance breakdown."
 
-| Annual turnover (RWF) | Regime | Tax |
-| --- | --- | --- |
-| < 2,000,000 | Exempt from registration | No income tax registration required [RRA register page] |
-| 2,000,001 -- 12,000,000 | Micro-enterprise flat tax | Fixed annual amount (table in §5.7) [PwC, corporate] |
-| 12,000,001 -- 20,000,000 | Small-business lump-sum | 3% of annual turnover [PwC, corporate] |
-| > 20,000,000 (or by election) | Real regime (actual taxation) | Progressive PIT on net profit; election irrevocable for 3 years [PwC, corporate] |
+#### Refusal Catalogue
 
-### Conservative Defaults
+- **R-RW-1 : Residence status unknown** : "Residence status affects the scope of taxable income (worldwide for residents vs Rwanda-source only for non-residents). This skill cannot compute tax without it. Please confirm before proceeding."
+- **R-RW-2 : Companies, partnerships, group structures** : "This skill covers individual taxpayers (employees and sole-trader / turnover-regime self-employed). Companies file Corporate Income Tax (28%) separately. Escalate to a Rwanda-licensed practitioner."
+- **R-RW-3 : KIFC expert exemption** : "New residents (not resident in the prior 5 years) working as experts for Kigali International Financial Centre (KIFC)-licensed entities may be exempt from PIT on foreign-source income for their first 5 years. This requires specialist confirmation of eligibility. Escalate."
+- **R-RW-4 : Capital gains / share disposals** : "Capital gains on shares are taxed at 10% under separate rules. Out of scope for this PAYE/PIT skill. Escalate."
+- **R-RW-5 : Arrears / RRA enforcement** : "Client has outstanding tax arrears or is subject to RRA enforcement. Administrative fines reach 60% of tax due and late-payment interest accrues monthly (capped at 100% of the tax). Do not advise. Escalate immediately."
+- **R-RW-6 : VAT return requested** : "This skill covers income tax (PIT/PAYE) only. Rwanda VAT is standard-rated at 18% with a registration threshold of RWF 20,000,000/year (or RWF 5,000,000/quarter). Use a dedicated VAT skill."
 
-**Conservative Defaults**
-
-| Ambiguity | Default |
-| --- | --- |
-| Unknown residence status | Treat as **resident** worldwide-income basis only if confirmed; otherwise STOP and ask |
-| Unknown employment vs self-employment | STOP — PAYE and turnover regimes differ fundamentally |
-| Unknown turnover band (self-employed) | Use the band the documented turnover falls into; if turnover unknown, STOP |
-| Unknown benefit-in-kind value | Apply statutory valuation (housing 20%, vehicle 10% of employment income) [PwC, sample calc] |
-| Unknown business-use % (mixed expense, real regime) | 0% deduction |
-| Unknown expense category (real regime) | Not deductible |
-| Unknown casual vs regular employment | Treat as regular employee (progressive brackets) unless casual status confirmed |
-| Minimum-wage floor | **[RESEARCH GAP — reviewer to confirm]** — no enforceable national statutory minimum wage exists; do not assume one |
-
-## Section 2 -- Required Inputs and Refusal Catalogue
-
-### Required Inputs
-
-**Minimum viable** — for an **employee**: monthly gross salary breakdown (basic + housing + transport + other allowances) and confirmation of resident/non-resident status. For a **self-employed individual**: bank statement for the full tax year (CSV, PDF, or pasted text) plus confirmation of annual turnover and chosen/eligible regime.
-
-**Recommended** — payslips, RSSB contribution records, benefits-in-kind details (housing, vehicle), prior-year PIT declaration or RRA assessment, sales/purchase records (self-employed).
-
-**Ideal** — complete income and expenditure account (real regime), asset register, RSSB statements for all schemes, casual-labour registers, KIFC expert status documentation (if applicable).
-
-**Refusal if minimum is missing — SOFT WARN.** No salary breakdown or no bank statement at all = hard stop. Salary stated as a single gross figure with no allowance split = proceed with reviewer warning: "Benefit-in-kind and RSSB contribution bases depend on the allowance split (housing/transport). This computation assumed [stated assumption]. The reviewer must confirm the allowance breakdown."
-
-### Refusal Catalogue
-
-- **R-RW-1 — Residence status unknown** — "Residence status affects the scope of taxable income (worldwide for residents vs Rwanda-source only for non-residents). This skill cannot compute tax without it. Please confirm before proceeding."  _([PwC, individual])_
-- **R-RW-2 — Companies, partnerships, group structures** — "This skill covers individual taxpayers (employees and sole-trader / turnover-regime self-employed). Companies file Corporate Income Tax (28%) separately. Escalate to a Rwanda-licensed practitioner."  _([PwC, corporate])_
-- **R-RW-3 — KIFC expert exemption** — "New residents (not resident in the prior 5 years) working as experts for Kigali International Financial Centre (KIFC)-licensed entities may be exempt from PIT on foreign-source income for their first 5 years. This requires specialist confirmation of eligibility. Escalate."  _([PwC; RRA])_
-- **R-RW-4 — Capital gains / share disposals** — "Capital gains on shares are taxed at 10% under separate rules. Out of scope for this PAYE/PIT skill. Escalate."  _([PwC, individual])_
-- **R-RW-5 — Arrears / RRA enforcement** — "Client has outstanding tax arrears or is subject to RRA enforcement. Administrative fines reach 60% of tax due and late-payment interest accrues monthly (capped at 100% of the tax). Do not advise. Escalate immediately."  _([RRA penalties notice])_
-- **R-RW-6 — VAT return requested** — "This skill covers income tax (PIT/PAYE) only. Rwanda VAT is standard-rated at 18% with a registration threshold of RWF 20,000,000/year (or RWF 5,000,000/quarter). Use a dedicated VAT skill."  _([PwC, corporate])_
-
-## Section 3 -- Transaction Pattern Library
+### Carried: Transaction Pattern Library
 
 This is the deterministic pre-classifier. When a bank statement transaction matches a pattern below, apply the treatment directly. Do not second-guess. If none match, fall through to Tier 1 rules in Section 5. Patterns appear in English, Kinyarwanda, and French because Rwandan bank statements use all three.
 
 **How to read this table.** Match by case-insensitive substring on the counterparty name or description as it appears in the bank statement. If multiple patterns match, use the most specific. If none match, fall through to Tier 1 rules.
 
-### 3.1 Income Patterns (Credits on Bank Statement)
+#### 3.1 Income Patterns (Credits on Bank Statement)
 
 **3.1 Income Patterns table**
 
@@ -142,15 +98,15 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | MUSHAHARA, SALARY, SALAIRE, PAYE NET, EMPLOYER [name] | Employment income | PAYE should already be withheld at source by employer |
 | Client name + TRANSFER, DEPOSIT, KWISHYURA, PAIEMENT | Business income (self-employed) | Turnover for regime test; if VAT-registered, extract net (excl. 18% VAT) |
 | FEES, HONORARIES, HONORAIRES, CONSULTANCY, AMAFARANGA Y'AKAZI | Business income | Professional fees |
-| MOMO PAYOUT, MTN MOMO, AIRTEL MONEY (business inflow) | Business income | Mobile-money inflow — match to invoices |
-| STRIPE / PAYPAL / WISE / UPWORK / FIVERR PAYOUT | Business income | Platform payout — net of platform commission |
-| RENT RECEIVED, UBUKODE, LOYER | Rental income | Separate income stream — not turnover for the trading regimes |
+| MOMO PAYOUT, MTN MOMO, AIRTEL MONEY (business inflow) | Business income | Mobile-money inflow : match to invoices |
+| STRIPE / PAYPAL / WISE / UPWORK / FIVERR PAYOUT | Business income | Platform payout : net of platform commission |
+| RENT RECEIVED, UBUKODE, LOYER | Rental income | Separate income stream : not turnover for the trading regimes |
 | INTEREST, INYUNGU, INTÉRÊTS | Investment income | May be subject to withholding tax |
 | DIVIDEND, IMIGABANE, DIVIDENDE | Investment income | Subject to withholding tax |
 | RRA REFUND, TAX REFUND | EXCLUDE | Refund of prior tax |
-| AGRICULTURE, LIVESTOCK, UBUHINZI, UBWOROZI proceeds | Business income — but see exemption | Agriculture/livestock income exempt up to RWF 12,000,000/period; only excess taxed [RRA register page; PwC] |
+| AGRICULTURE, LIVESTOCK, UBUHINZI, UBWOROZI proceeds | Business income : but see exemption | Agriculture/livestock income exempt up to RWF 12,000,000/period; only excess taxed |
 
-### 3.2 Expense Patterns (Debits) — Deductible under the Real Regime Only
+#### 3.2 Expense Patterns (Debits) : Deductible under the Real Regime Only
 
 **3.2 Expense Patterns table**
 
@@ -167,7 +123,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 
 > Deductions are only relevant under the **real regime**. Micro-enterprise (flat) and lump-sum taxpayers pay on turnover and CANNOT deduct expenses.
 
-### 3.3 Expense Patterns (Debits) — Utilities (Real Regime, may need apportionment)
+#### 3.3 Expense Patterns (Debits) : Utilities (Real Regime, may need apportionment)
 
 **3.3 Utilities table**
 
@@ -177,7 +133,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | WASAC, WATER, AMAZI | Water | T2 if home office |  |
 | MTN, AIRTEL, INTERNET, CANALBOX | Telecoms/broadband | T2 | Business-use portion only; default 0% if mixed |
 
-### 3.4 Expense Patterns (Debits) — Travel (Real Regime)
+#### 3.4 Expense Patterns (Debits) : Travel (Real Regime)
 
 **3.4 Travel table**
 
@@ -186,9 +142,9 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | RWANDAIR, FLIGHT, INDEGE | Flights | Deductible if business travel | Must be wholly business |
 | HOTEL, BOOKING.COM, AIRBNB | Accommodation | Deductible if business travel |  |
 | YEGO MOVES, BOLT, TAXI, MOTO | Local transport | Deductible if business purpose |  |
-| FUEL, LISANSI, CARBURANT, SP / ENGEN / KOBIL | Vehicle fuel | T2 — business % only | Requires mileage log |
+| FUEL, LISANSI, CARBURANT, SP / ENGEN / KOBIL | Vehicle fuel | T2 : business % only | Requires mileage log |
 
-### 3.5 Expense Patterns (Debits) — NOT Deductible
+#### 3.5 Expense Patterns (Debits) : NOT Deductible
 
 **3.5 NOT Deductible table**
 
@@ -200,19 +156,19 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | RRA PAYMENT, INCOME TAX, PAYE PAYMENT | NOT deductible | Income tax cannot reduce income |
 | DRAWINGS, PERSONAL WITHDRAWAL, ATM (personal) | NOT deductible | Not an expense |
 
-### 3.6 RSSB and Statutory Deductions (Special Handling)
+#### 3.6 RSSB and Statutory Deductions (Special Handling)
 
 **3.6 RSSB and Statutory Deductions table**
 
 | Pattern | Treatment | Notes |
 | --- | --- | --- |
-| RSSB PENSION, PENSIYO | Statutory contribution | Employee 6% / Employer 6% (see §3.x and Section 1) [EY; PwC, other-taxes] |
-| RSSB OCCUPATIONAL, OCCUPATIONAL HAZARD | Statutory contribution | Employer 2% only [PwC, other-taxes] |
-| RSSB MATERNITY | Statutory contribution | Employee 0.3% / Employer 0.3% [PwC, other-taxes] |
-| RSSB MEDICAL, RAMA | Statutory contribution | Employer 7.5% / Employee 7.5% of basic salary (public sector / opt-in) [RRA medical notice] |
-| CBHI, MUTUELLE, MUTUELLE DE SANTÉ | Statutory contribution | Employee 0.5% of net salary [PwC, other-taxes] |
+| RSSB PENSION, PENSIYO | Statutory contribution | Employee 6% / Employer 6% of gross |
+| RSSB OCCUPATIONAL, OCCUPATIONAL HAZARD | Statutory contribution | Employer 2% only (rate unverified) |
+| RSSB MATERNITY | Statutory contribution | Employee 0.3% / Employer 0.3% |
+| RSSB MEDICAL, RAMA | Statutory contribution | Employer 7.5% / Employee 7.5% of basic salary (public sector / opt-in) |
+| CBHI, MUTUELLE, MUTUELLE DE SANTÉ | Statutory contribution | Employee 0.5% of net salary |
 
-### 3.7 Exclusions (Neither Income nor Expense)
+#### 3.7 Exclusions (Neither Income nor Expense)
 
 **3.7 Exclusions table**
 
@@ -222,7 +178,7 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | LOAN REPAYMENT, INGUZANYO, PRÊT | EXCLUDE | Loan principal movement |
 | VAT PAYMENT, RRA VAT | EXCLUDE | VAT liability payment, not expense |
 
-### 3.8 Rwandan Banks / Channels — Statement Format Reference
+#### 3.8 Rwandan Banks / Channels : Statement Format Reference
 
 **3.8 Rwandan Banks / Channels table**
 
@@ -234,222 +190,41 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | MTN MoMo / Airtel Money | MOMO PAYMENT, CASH IN, CASH OUT, FEE | CSV/SMS export; very common for micro-enterprises |
 | BPR / Cogebanque | TRANSFER, VIREMENT, FRAIS | PDF; French terms common |
 
-## Section 4 -- Worked Examples
+### Carried: Tier 2 Catalogue (Reviewer Judgement Required)
 
-### Example 1 — Monthly PAYE, regular resident employee
+#### 6.1 Home Office Deduction (Real Regime)
 
-**Input line:**
-`28/02/2025 ; BK SALARY CREDIT ; EMPLOYER KIGALI TECH LTD ; MUSHAHARA FEB ; +XXX ; RWF`
-Stated: monthly taxable employment income = **RWF 350,000** (resident, regular employee).
+- **Home office deduction rule** : - Calculate proportion of home used for business (dedicated room/floor area as a percentage of the whole). - Apply that percentage to rent, electricity (REG/EUCL), water (WASAC), internet. - A dual-use room does NOT qualify. **Conservative default:** 0% deduction until reviewer confirms the arrangement.
 
-**Reasoning (monthly brackets):**
-- 0 – 60,000 @ 0% = 0
-- 60,001 – 100,000: 40,000 × 10% = 4,000
-- 100,001 – 200,000: 100,000 × 20% = 20,000
-- 200,001 – 350,000: 150,000 × 30% = 45,000
-- **Total monthly PAYE = 0 + 4,000 + 20,000 + 45,000 = RWF 69,000** [RRA PIT page]
+#### 6.2 Motor Vehicle Business Use (Real Regime)
 
-**Classification:** PAYE withheld = RWF 69,000. Net of tax (before RSSB) = 350,000 − 69,000 = RWF 281,000.
+- **Motor vehicle business use rule** : - Only the business-use percentage of fuel, insurance, and maintenance is deductible. - Client must maintain a mileage log. **Conservative default:** 0% business use until a mileage log is provided.
 
-### Example 2 — Annual PIT, self-employed real regime
+#### 6.3 Phone / Internet Mixed Use (Real Regime)
 
-**Input:** Resident sole trader, **annual net taxable profit = RWF 9,000,000** (real regime, turnover above RWF 20,000,000).
+- **Phone/internet mixed use rule** : - Business-use portion only; client must provide a reasonable estimate. **Conservative default:** 0% deduction until business percentage is confirmed.
 
-**Reasoning (annual brackets):**
-- 0 – 720,000 @ 0% = 0
-- 720,001 – 1,200,000: 480,000 × 10% = 48,000
-- 1,200,001 – 2,400,000: 1,200,000 × 20% = 240,000
-- 2,400,001 – 9,000,000: 6,600,000 × 30% = 1,980,000
-- **Total annual PIT = 0 + 48,000 + 240,000 + 1,980,000 = RWF 2,268,000** [RRA PIT page]
+#### 6.4 Benefit-in-Kind Edge Cases
 
-**Classification:** PIT due = RWF 2,268,000, declared by 31 March of the following year.
+- **Benefit-in-kind edge cases** : - Confirm whether housing/transport allowances are cash allowances (part of the RSSB pension base) or benefits in kind (statutory 20%/10% valuation). - **Flag for reviewer:** the allowance split materially affects both PAYE and RSSB.
 
-### Example 3 — Micro-enterprise flat tax
+#### 6.5 Regime Election
 
-**Input:** Self-employed, **annual turnover = RWF 6,500,000** (falls in the 4,000,001 – 7,000,000 band).
+- **Regime election flag** : - Electing into the real regime is irrevocable for 3 years : flag the long-term consequences for reviewer sign-off.
 
-**Reasoning:** Micro-enterprise flat-tax regime. Turnover RWF 4,000,001 – 7,000,000 → fixed annual tax of **RWF 120,000**. No expense deductions permitted. [PwC, corporate]
+#### 6.6 Agriculture / Livestock Threshold
 
-**Classification:** Flat tax = RWF 120,000 for the year.
+- **Agriculture/livestock threshold flag** : - Confirm the split between exempt (first RWF 12,000,000) and taxable agricultural income.
 
-### Example 4 — Small-business lump-sum tax
+#### 6.7 KIFC Expert Status
 
-**Input:** Self-employed, **annual turnover = RWF 16,000,000** (band 12,000,001 – 20,000,000).
+- **KIFC expert status flag** : - Confirm prior-5-year non-residence and KIFC-licensed employer before applying the foreign-source exemption.
 
-**Reasoning:** Lump-sum regime = 3% of annual turnover. 16,000,000 × 3% = **RWF 480,000**. [PwC, corporate]
-
-**Classification:** Lump-sum tax = RWF 480,000.
-
-### Example 5 — Casual labourer
-
-**Input:** Casual labourer, **monthly income = RWF 150,000**.
-
-**Reasoning:** Casual-labour flat rate of 15%, with the first RWF 60,000/month at 0%.
-- First 60,000 @ 0% = 0
-- Remaining 90,000 × 15% = 13,500
-- **Total = RWF 13,500** [RRA new-rates guide]
-
-**Classification:** Tax withheld = RWF 13,500.
-
-### Example 6 — RSSB pension contribution (2025)
-
-**Input line:**
-`05/03/2025 ; BK DEBIT ; RSSB PENSION FEB ; ; -XXX ; RWF`
-Stated contribution base (basic + housing + transport) = **RWF 400,000/month**.
-
-**Reasoning:** From 1 January 2025 the pension scheme is 6% employee / 6% employer (total 12%), and the base now includes basic + housing + transport allowances. [EY; PwC, other-taxes; Presidential Order N° 086/01]
-- Employee 6% × 400,000 = 24,000
-- Employer 6% × 400,000 = 24,000
-- **Total remitted = RWF 48,000** (24,000 deducted from employee + 24,000 employer)
-
-**Classification:** Employee deduction = RWF 24,000; employer cost = RWF 24,000.
-
-## Section 5 -- Tier 1 Rules (When Data Is Clear)
-
-### 5.1 Residence and Scope
-
-- **Residence and scope** — Residents are taxed on worldwide income; non-residents only on Rwanda-source income. The same bracket rates apply to both.  _([PwC, individual])_
-
-### 5.2 PAYE Computation (Employment Income)
-
-- **PAYE computation** — Employers withhold PAYE monthly using the monthly bracket table (Section 1). Monthly PAYE = annual tax ÷ 12, rounded up. PAYE return and remittance are due by the 15th of the following month.  _([PwC, tax-administration; RRA new-rates guide])_
-
-### 5.3 Benefits in Kind
-
-**Benefits in Kind table**
-
-| Benefit | Statutory valuation | Source |
-| --- | --- | --- |
-| Housing benefit | 20% of total employment income | [PwC, sample calc] |
-| Vehicle benefit | 10% of total employment income | [PwC, sample calc] |
-
-- **BIK addition rule** — Add the valued benefit to taxable employment income before applying the brackets.
-
-### 5.4 Casual Labour
-
-- **Casual labour rate** — 15% flat, with the first RWF 60,000/month at 0%  _([RRA new-rates guide; Law N° 027/2022])_
-
-### 5.5 KIFC Expert Exemption
-
-- **KIFC expert exemption** — New residents (not resident in the prior 5 years) working as experts/professionals for KIFC-licensed entities are exempt from PIT on foreign-source income for their first 5 years of residence. Eligibility requires specialist confirmation — see R-RW-3.  _([PwC; RRA])_
-
-### 5.6 Self-Employed Registration
-
-- **Registration exemption threshold** — An individual must register for income tax on starting taxable activity, except where annual turnover is below RWF 2,000,000 (exempt from registration).  _([RRA register page])_
-
-### 5.7 Micro-Enterprise Flat Tax (turnover RWF 2,000,001 – 12,000,000)
-
-**Micro-Enterprise Flat Tax table**  _([PwC, corporate])_
-
-| Annual turnover (RWF) | Annual flat tax (RWF) |
-| --- | --- |
-| 2,000,001 – 4,000,000 | 60,000 |
-| 4,000,001 – 7,000,000 | 120,000 |
-| 7,000,001 – 10,000,000 | 210,000 |
-| 10,000,001 – 12,000,000 | 300,000 |
-
-- **No deductions** — No expense deductions.  _([PwC, corporate])_
-
-### 5.8 Small-Business Lump-Sum Tax (turnover RWF 12,000,001 – 20,000,000)
-
-- **Lump-sum tax formula** — Tax = 3% of annual turnover. No expense deductions.  _([PwC, corporate])_
-
-### 5.9 Real Regime (turnover > RWF 20,000,000, or by election)
-
-- **Real regime rule** — Actual taxation on net profit using the annual progressive brackets, with proper accounting and deductible expenses. Election into the real regime is irrevocable for 3 years.  _([PwC, corporate])_
-
-### 5.10 Agriculture / Livestock Exemption
-
-- **Agriculture/livestock exemption threshold** — Income/turnover from agricultural and livestock activities is exempt up to RWF 12,000,000 per tax period; only the excess is taxable.  _([RRA register page; PwC, corporate])_
-
-### 5.11 RSSB Social-Security Contributions (2025)
-
-**RSSB Social-Security Contributions table**
-
-| Scheme | Employee | Employer | Total | Base | Source |
-| --- | --- | --- | --- | --- | --- |
-| Pension (from 1 Jan 2025) | 6% | 6% | 12% | Basic + housing + transport allowances | [EY; PwC; Presidential Order N° 086/01] |
-| Occupational hazards | 0% | 2% | 2% | Gross pay | [PwC, other-taxes] |
-| Maternity leave | 0.3% | 0.3% | 0.6% | Excludes transport allowance | [PwC, other-taxes] |
-| Medical (RSSB / formerly RAMA) | 7.5% | 7.5% | 15% | Basic salary (public sector / opt-in, min. 7 employees) | [RRA medical notice] |
-| CBHI / Mutuelle | 0.5% | 0% | 0.5% | Net salary (after PAYE and RSSB deductions) | [PwC, other-taxes] |
-
-*Column checks — Pension: 6 + 6 = 12 ✓. Occupational: 0 + 2 = 2 ✓. Maternity: 0.3 + 0.3 = 0.6 ✓. Medical: 7.5 + 7.5 = 15 ✓. CBHI: 0.5 + 0 = 0.5 ✓.*
-
-**Pension phasing:** doubled from the previous 6% total (3%/3%) to 12% (6%/6%) on 1 Jan 2025. From January 2027, +2% per year, reaching **20% total (10% employee / 10% employer) by 2030**. [EY; PwC, other-taxes]
-
-> A secondary payroll source claimed an 8%/4% pension split; this is **contradicted** by EY, PwC, and the Presidential Order, which all state an equal **6%/6%** split. Use 6%/6%.
-
-### 5.12 Filing Deadlines
-
-**Filing Deadlines table**
-
-| Item | Deadline | Source |
-| --- | --- | --- |
-| Annual PIT declaration | 31 March of following year | [RRA notice; PwC, tax-administration] |
-| PAYE return + remittance | 15th of the following month | [PwC, tax-administration] |
-| Trading licence (patente) declaration | 31 January | [PwC, other-taxes] |
-
-- **Annual-return filing exemptions** — Annual-return filing exemptions (no annual return required): annual turnover < RWF 2,000,000; recipients of only employment income (PAYE already withheld); recipients of only withholding-taxed investment income; non-residents whose Rwanda-source income has had WHT applied.  _([PwC, individual])_
-
-### 5.13 Record Keeping
-
-- **Record keeping** — Records must be kept 10 years; returns remain open to audit for 5 years.  _([PwC, individual])_
-
-### 5.14 Penalties and Interest (Tax Procedures Law)
-
-**Late declaration AND late payment table**
-
-| Delay | Fine (% of tax due) |
-| --- | --- |
-| ≤ 30 days | 20% |
-| 31 – 60 days | 40% |
-| > 60 days | 60% |
-
-**Declared on time but paid late table**
-
-| Delay | Fine (% of tax due) |
-| --- | --- |
-| ≤ 30 days | 5% |
-| 31 – 60 days | 10% |
-
-- **Late-payment interest** — Late-payment interest: non-compounding, charged monthly from the day after the due date until payment; capped at 100% of the tax amount.  _([RRA penalties notice])_
-
-## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
-
-### 6.1 Home Office Deduction (Real Regime)
-
-- **Home office deduction rule** — - Calculate proportion of home used for business (dedicated room/floor area as a percentage of the whole). - Apply that percentage to rent, electricity (REG/EUCL), water (WASAC), internet. - A dual-use room does NOT qualify. **Conservative default:** 0% deduction until reviewer confirms the arrangement.
-
-### 6.2 Motor Vehicle Business Use (Real Regime)
-
-- **Motor vehicle business use rule** — - Only the business-use percentage of fuel, insurance, and maintenance is deductible. - Client must maintain a mileage log. **Conservative default:** 0% business use until a mileage log is provided.
-
-### 6.3 Phone / Internet Mixed Use (Real Regime)
-
-- **Phone/internet mixed use rule** — - Business-use portion only; client must provide a reasonable estimate. **Conservative default:** 0% deduction until business percentage is confirmed.
-
-### 6.4 Benefit-in-Kind Edge Cases
-
-- **Benefit-in-kind edge cases** — - Confirm whether housing/transport allowances are cash allowances (part of the RSSB pension base) or benefits in kind (statutory 20%/10% valuation). - **Flag for reviewer:** the allowance split materially affects both PAYE and RSSB.  _([PwC, sample calc; EY])_
-
-### 6.5 Regime Election
-
-- **Regime election flag** — - Electing into the real regime is irrevocable for 3 years — flag the long-term consequences for reviewer sign-off.  _([PwC, corporate])_
-
-### 6.6 Agriculture / Livestock Threshold
-
-- **Agriculture/livestock threshold flag** — - Confirm the split between exempt (first RWF 12,000,000) and taxable agricultural income.  _([RRA register page])_
-
-### 6.7 KIFC Expert Status
-
-- **KIFC expert status flag** — - Confirm prior-5-year non-residence and KIFC-licensed employer before applying the foreign-source exemption.  _([PwC; RRA])_
-
-## Section 7 -- Excel Working Paper Template
+### Carried: Excel Working Paper Template
 
 ```
-RWANDA INCOME TAX -- WORKING PAPER
-Tax Year: 2025
+RWANDA INCOME TAX: WORKING PAPER
+Tax Year: 2026
 Client: ___________________________
 Residence: Resident / Non-resident
 Taxpayer type: Employee (PAYE) / Self-employed (Micro / Lump-sum / Real)
@@ -463,20 +238,20 @@ A. EMPLOYMENT INCOME (PAYE PATH)
   A6. TOTAL taxable employment income            ___________
   A7. PAYE (apply bracket table)                 ___________
 
-B. SELF-EMPLOYMENT — REGIME TEST
+B. SELF-EMPLOYMENT : REGIME TEST
   B1. Annual turnover                            ___________
   B2. Regime (Exempt <2M / Micro / Lump-sum 3% / Real)  ______
   B3. Micro flat tax OR Lump-sum 3% OR Real-regime net profit  ______
 
-C. REAL REGIME — NET PROFIT (if applicable)
+C. REAL REGIME : NET PROFIT (if applicable)
   C1. Gross business income (net of 18% VAT if registered)  ____
   C2. Less: deductible business expenses          ___________
   C3. Net taxable profit (C1 - C2)                ___________
   C4. PIT (apply annual bracket table)            ___________
 
 D. RSSB CONTRIBUTIONS (employee side)
-  D1. Pension 6% of (basic+housing+transport)     ___________
-  D2. Maternity 0.3% (excl. transport)            ___________
+  D1. Pension 6% of gross                         ___________
+  D2. Maternity 0.3% of gross                     ___________
   D3. Medical 7.5% of basic (if applicable)       ___________
   D4. CBHI 0.5% of net salary                     ___________
   D5. TOTAL employee RSSB                         ___________
@@ -496,148 +271,177 @@ REVIEWER FLAGS:
   [ ] Casual-labour 15% applied only where genuinely casual?
 ```
 
-## Section 8 -- Bank Statement Reading Guide
 
-### Rwandan Statement Formats
+### Carried: Benefits in kind and rates by person
 
-**Rwandan Statement Formats table**
+| Item | Treatment | Source |
+|---|---|---|
+| Motor vehicle | 10% of employment income excluding benefits in kind (art 18) | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf |
+| Housing, with or without contents | 20% of employment income excluding benefits in kind (art 18) | same |
+| Loan or salary advance over 3 months' salary | Difference between interest at the National Bank's rate to commercial banks and interest actually paid, for the month the loan is received (art 18) | same |
+| Benefit to a related person, or by a company to a member | Treated as a benefit to the employee, where no service is rendered (art 18) | same |
+| House rent or vehicle paid directly by the employer | Taxed as ordinary employment income (arts 15, 18) | same |
+| Residents and non-residents | Same bands; a non-resident pays on Rwanda-source income only | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf |
+| Monthly PAYE | unverified: annual tax / 12, rounded up (old file) | unverified |
+| Registration | unverified: not required under FRW 2,000,000 turnover (old file, RRA register page not reopened) | unverified |
+| RSSB | Rates and pension steps: see [rwanda-social-contributions](rwanda-social-contributions.md) | see that skill |
 
-| Channel | Format | Key Fields | Notes |
-| --- | --- | --- | --- |
-| Bank of Kigali (BK) | PDF, CSV | Date, Description, Debit, Credit, Balance | Most common; description holds counterparty + reference |
-| I&M Bank Rwanda | PDF, CSV | Value Date, Description, Amount, Balance |  |
-| Equity Bank Rwanda | PDF | Date, Particulars, Withdrawals, Deposits |  |
-| MTN MoMo / Airtel Money | CSV / SMS export | Date, Counterparty, Amount, Type, Fee | Dominant for micro-enterprises; cash-in / cash-out lines |
-| BPR / Cogebanque | PDF | Date, Libellé, Débit, Crédit | French terms common |
+### Carried: Quick checks
 
-### Key Kinyarwanda / French Banking Terms
+| Input | Expected |
+|---|---|
+| Monthly taxable FRW 350,000 | PAYE 69,000 (4,000 + 20,000 + 45,000) |
+| Monthly taxable FRW 1,000,000 | PAYE 264,000 (4,000 + 20,000 + 240,000) |
+| Annual real regime profit FRW 9,000,000 | Tax 2,268,000 (48,000 + 240,000 + 1,980,000) |
+| Turnover FRW 1,500,000 | No declaration |
+| Turnover FRW 6,500,000 | Flat FRW 120,000 |
+| Turnover FRW 16,000,000 | 3%, FRW 480,000 |
+| Casual labourer, FRW 150,000 a month | 15% of 90,000 = FRW 13,500 |
 
-**Key Kinyarwanda / French Banking Terms table**
+### Carried: Bank statement reading guide
 
-| Term | Language | English | Classification Hint |
-| --- | --- | --- | --- |
+| Channel | Format | Key fields | Notes |
+|---|---|---|---|
+| Bank of Kigali (BK) | PDF, CSV | Date, Description, Debit, Credit, Balance | Description holds counterparty and reference |
+| I&M Bank Rwanda | PDF, CSV | Value Date, Description, Amount, Balance | |
+| Equity Bank Rwanda | PDF | Date, Particulars, Withdrawals, Deposits | |
+| MTN MoMo / Airtel Money | CSV or SMS export | Date, Counterparty, Amount, Type, Fee | Cash-in and cash-out lines |
+| BPR / Cogebanque | PDF | Date, Libelle, Debit, Credit | French terms |
+
+| Term | Language | English | Hint |
+|---|---|---|---|
 | MUSHAHARA | Kinyarwanda | Salary | Employment income |
 | KWISHYURA / KWISHYUZA | Kinyarwanda | Payment | Check direction |
 | KWIMURA / TRANSFER | Kinyarwanda | Transfer | Check direction |
-| INYUNGU | Kinyarwanda | Interest / profit | Investment income (or bank charge) |
-| AMAFARANGA YA BANKI | Kinyarwanda | Bank charges | Deductible (real regime) |
-| UBUKODE | Kinyarwanda | Rent | Rental income or office rent expense |
-| INGUZANYO | Kinyarwanda | Loan | Exclude (principal) |
+| INYUNGU | Kinyarwanda | Interest or profit | Investment income, or bank charge |
+| AMAFARANGA YA BANKI | Kinyarwanda | Bank charges | Deductible, real regime |
+| UBUKODE | Kinyarwanda | Rent | Rental income or office rent |
+| INGUZANYO | Kinyarwanda | Loan | Exclude principal |
 | VIREMENT | French | Transfer | Check direction |
-| FRAIS | French | Fees / charges | Deductible (real regime) |
+| FRAIS | French | Fees | Deductible, real regime |
 | LOYER | French | Rent | Rental income or rent expense |
 | SALAIRE | French | Salary | Employment income |
 
-## Section 9 -- Onboarding Fallback
+### Carried: Onboarding fallback
 
-If the client provides a bank statement / payslip but cannot answer onboarding questions immediately:
+If the client cannot answer yet: classify with the pattern library, mark Tier 2 items pending, apply these defaults, give the working paper with flags, then ask:
 
-1. Classify all transactions using the pattern library (Section 3).
-2. Mark all Tier 2 items as "PENDING — reviewer must confirm".
-3. Apply conservative defaults (Section 1).
-4. Generate the working paper (Section 7) with clear flags.
-5. Present the following questions to the client:
+1. Rwanda tax resident, or non-resident with Rwanda-source income?
+2. Employee, self-employed, or both?
+3. If self-employed: annual turnover?
+4. If employed: split of basic, housing, transport and other pay?
+5. Any employer housing or vehicle?
+6. Casual labourer or regular employee?
+7. Agricultural or livestock income?
+8. Any KIFC exemption?
+9. Which RSSB schemes do you pay?
+10. Other income: rent, interest, dividends?
 
+Defaults: unknown residence or employment status, stop and ask; unknown business-use share, 0%; unknown expense, not deductible; unknown casual status, regular employee. Rwanda has no enforceable national minimum wage; assume none.
+
+Never: use the superseded 20% middle band; apply an 8%/4% pension split; let flat or lump-sum taxpayers deduct expenses; tax a casual labourer on the regular bands.
+
+## Deadlines and filing
+
+| Item | Deadline | Source |
+|---|---|---|
+| Annual declaration and payment | 31 March 2027 for 2026 (arts 9, 10) | https://www.rra.gov.rw/fileadmin/user_upload/Law_amending_Income_Tax_Ok.pdf |
+| Quarterly prepayments | 30 June, 30 September, 31 December (art 33) | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf |
+| Capital gains tax | 15 days after the month of sale (art 37) | https://www.minijust.gov.rw/index.php?eID=dumpFile&f=130496&t=f&token=4b9d4de9658212b7aaeeb5c8a42c823a7b879d7b |
+| Provisional filing, certified taxpayers | On approval, certified statements within 3 months of the provisional declaration (art 9(3)) | https://www.rra.gov.rw/fileadmin/user_upload/Law_amending_Income_Tax_Ok.pdf |
+
+Prepayment = tax of the prior year / turnover of the prior year x turnover of the quarter, less tax withheld that quarter.
+
+### How to file a real regime declaration
+
+1. Log in at https://etax.rra.gov.rw with TIN and password. Real regime is E-Tax only; flat and lump-sum may also use M-Declaration (https://www.rra.gov.rw/en/taxes-fees/domestic-taxes/income-tax/declare-income-tax-1).
+2. Annexure Downloads, choose the PIT annexure. Enable content, complete each relevant tab, validate and save.
+3. Prepare the Profit and Loss Account and Balance Sheet annexures and the Representative annexure. Certified statements are uploaded by the approved firm where turnover reaches the threshold.
+4. Fill the declaration; enter Quarterly Prepayments and withholdings as credits. Declaration and annexures must agree or it will not submit.
+5. Tick the certifying box and submit. Keep the acknowledgement receipt: its RRA Reference Number (doc ID) and amount are what you pay against.
+6. Pay by e-banking, mobile money, MobiCash or at a bank by 31 March.
+
+Steps from the RRA Tax Handbook 2025 (https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf). The Handbook and the RRA income tax page still state FRW 600,000,000 for certification; Order 009 of 24/09/2026 sets FRW 1,000,000,000 and wins.
+
+## Penalties and interest
+
+| Fault | Consequence | Source |
+|---|---|---|
+| Late declaration, fixed fine (Law 020/2023 art 81) | FRW 50,000 for a non-commercial person or turnover over FRW 2,000,000 up to FRW 20,000,000; FRW 300,000 for a public institution or non-profit with turnover over FRW 20,000,000; FRW 500,000 for a notified large taxpayer | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf |
+| Repeat fault within 2 years | Fine doubled; third time, four times | same |
+| Certified statements not filed when required | FRW 500,000 every month until filed | same |
+| Late declaration and payment (art 82) | 20% of tax up to 30 days, 40% from day 31 to 60, 60% after 60 days | same |
+| Declared on time, paid late (art 82) | 5% up to 30 days, 10% from day 31 to 60, 30% after 60 days | same |
+| Understatement of 10% to 20% (art 83) | 10% of the understatement; doubles above 20%; none if corrected and paid before notice of audit, but art 82 fines apply | same |
+| Late-payment interest (art 80) | 0.5% a month up to 6 months, 1% from 6 to 12 months, 1.5% after 12 months; not compounded; every started month counts; capped at 100% of the tax | same |
+| Tax evasion (art 81) | Fine equal to the evaded tax, plus criminal penalties | same |
+
+Payments offset principal tax first, then the fine, then interest (art 80). The Law's art 82 text reads "twenty percent (10%)" for the middle band; we follow the figure 10%, as the numeric text and the 5/10/30 scale show.
+
+Records are kept 10 years (Law 020/2023 art 15). The audit power lapses after 5 years, 10 if information was concealed to evade tax (art 35).
+
+## Cross-border points
+
+Residents are taxed on foreign income; foreign tax on business profit is not a deduction (art 25) and is entered as a Foreign Tax Credit in the declaration (Handbook). Withholding on payments to non-residents, and treaties: see [rw-corporate-income-tax](rw-corporate-income-tax.md). Foreign employer paying a non-resident for services in Rwanda with no permanent establishment: exempt (art 16). Employer with no withholding duty under a treaty: employee self-declares within 15 days of the month end (art 58).
+
+## Two worked examples that recompute
+
+**Example 1. Monthly PAYE on FRW 500,000.** 4,000 at 10%, 20,000 at 20%, 90,000 at 30%.
+
+```oa-check
+name: Monthly PAYE, gross FRW 500,000
+inputs:
+  gross: 500000
+steps:
+  - band_10: (min(gross, 100000) - 60000) * 0.10
+  - band_20: (min(gross, 200000) - 100000) * 0.20
+  - band_30: (gross - 200000) * 0.30
+  - paye: band_10 + band_20 + band_30
+expected:
+  paye: 114000.00
 ```
-ONBOARDING QUESTIONS -- RWANDA INCOME TAX
-1. Are you a Rwanda tax resident, or non-resident with Rwanda-source income?
-2. Are you an employee (PAYE) or self-employed? Both?
-3. If self-employed: what is your annual turnover (for the regime test)?
-4. If employed: what is your salary split (basic / housing / transport / other)?
-5. Do you receive any benefits in kind (employer housing or vehicle)?
-6. Are you a casual labourer (irregular day work) or a regular employee?
-7. Do you have agricultural or livestock income?
-8. Do any KIFC-related expat exemptions apply to you?
-9. What RSSB schemes do you contribute to (pension / medical / maternity / CBHI)?
-10. Do you have any other income (rental, interest, dividends)?
+
+**Example 2. Decision: stay on 3% or opt for the real regime.** Turnover FRW 18,000,000, profit FRW 3,000,000. Lump sum: 540,000. Real regime: 468,000. The real regime saves FRW 72,000 this year, but binds for 3 years and needs records. Opt only if profit stays below the point where tax equals 3% of turnover.
+
+```oa-check
+name: Small business, 3% or real regime
+inputs:
+  turnover: 18000000
+  profit: 3000000
+steps:
+  - lump: turnover * 0.03
+  - real: 48000 + 240000 + (profit - 2400000) * 0.30
+  - saving: lump - real
+expected:
+  lump: 540000.00
+  real: 468000.00
+  saving: 72000.00
 ```
 
-## Section 10 -- Reference Material
+## Ask the client first
 
-### Key Legislation / Authority References
+1. Resident in Rwanda in 2026? On which test?
+2. Salary only, or business income? Which turnover?
+3. Liberal profession or road transport?
+4. Records good enough for the real regime?
+5. Any share sale, and were the shares listed in Rwanda?
+6. Any foreign income or foreign tax paid?
 
-**Key Legislation / Authority References table**
+## Sources
 
-| Topic | Reference |
-| --- | --- |
-| Income tax (PIT/PAYE) rates and rules | Law N° 027/2022 of 20/10/2022 establishing taxes on income, as amended (2023) |
-| Income Tax Law PDF | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf |
-| RRA PIT page | https://www.rra.gov.rw/en/taxes-fees/domestic-taxes/income-tax/personal-income-tax-pit-1 |
-| RRA new PAYE rates guide | RRA news item 1669 |
-| RRA register for income tax | https://www.rra.gov.rw/en/taxes-fees/domestic-taxes/income-tax/register-for-income-tax |
-| RRA medical scheme notice | RRA news item 469 |
-| RRA penalties / deadline notice | RRA news item 2481 |
-| Pension contributions (2025) | Presidential Order N° 086/01 (gazetted 13 Dec 2024); EY tax alert |
-| PwC — taxes on personal income | https://taxsummaries.pwc.com/rwanda/individual/taxes-on-personal-income |
-| PwC — tax administration | https://taxsummaries.pwc.com/rwanda/individual/tax-administration |
-| PwC — corporate other taxes (social contributions, VAT) | https://taxsummaries.pwc.com/rwanda/corporate/other-taxes |
-| PwC — corporate income (flat-tax table, CIT 28%) | https://taxsummaries.pwc.com/rwanda/corporate/taxes-on-corporate-income |
+| Source | URL | Read on |
+|---|---|---|
+| Law 027/2022 establishing taxes on income (read: arts 3-5, 8-10, 12-21, 24-33, 36-38, 44-50, 56-69) | https://www.rra.gov.rw/fileadmin/user_upload/Income_Tax_law_of_2022.pdf | 2026-11-01 |
+| Law 051/2023 amending the income tax law (whole) | https://www.rra.gov.rw/fileadmin/user_upload/Law_amending_Income_Tax_Ok.pdf | 2026-11-01 |
+| Official Gazette Special of 29/05/2025: Law 009/2025 (VAT), Law 014/2025 (income tax) (whole of both) | https://www.minijust.gov.rw/index.php?eID=dumpFile&f=130496&t=f&token=4b9d4de9658212b7aaeeb5c8a42c823a7b879d7b | 2026-11-01 |
+| Law 020/2023 on tax procedures (read: arts 15, 35, 78, 80-88) | https://www.rra.gov.rw/fileadmin/user_upload/OG_n___Special_ter_of_31.03.2023_Uburyo_bw_isoresha_Tax_procedures_01.pdf | 2026-11-01 |
+| Ministerial Order 003/26/10/TC of 29/04/2026 (read: arts 17, 19, 32-33) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/Ministerial_Order_on_Simplified_Accounting_Method_April_2026.pdf | 2026-11-01 |
+| Ministerial Order 009/26/10/TC of 24/09/2026 (whole) | https://www.rra.gov.rw/fileadmin/user_upload/Ministerial_orders-Financial_statements.pdf | 2026-11-01 |
+| RRA Tax Handbook 2025 (read: E-Tax steps, real regime, PAYE, VAT declaration chapters) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-01 |
+| RRA, Calculate PAYE page (whole page) | https://www.rra.gov.rw/en/domestic-tax-services/employment-tax-paye/calculate-paye | 2026-11-01 |
+| RRA, Declare Income Tax page (whole page) | https://www.rra.gov.rw/en/taxes-fees/domestic-taxes/income-tax/declare-income-tax-1 | 2026-11-01 |
 
-### Related Context Rates
-
-**Related Context Rates table**
-
-| Item | Rate / threshold | Source |
-| --- | --- | --- |
-| VAT standard rate | 18% | [PwC, corporate] |
-| VAT registration threshold | RWF 20,000,000/year, or RWF 5,000,000 in a calendar quarter | [PwC, corporate] |
-| Corporate Income Tax | 28% | [PwC, corporate] |
-| Capital gains on shares | 10% | [PwC, individual] |
-| Trading licence (patente) district fee | RWF 100,000 – 2,000,000 (by turnover) | [PwC, other-taxes] |
-| National minimum wage | **[RESEARCH GAP — reviewer to confirm]** — no enforceable current statutory figure; 1973/74 order (~RWF 100/day) is obsolete | [minimum-wage.org; WageIndicator] |
-
-### Test Suite
-
-**Test 1 — Monthly PAYE, regular employee.**
-Input: Resident, monthly taxable income RWF 350,000.
-Expected: PAYE = 4,000 + 20,000 + 45,000 = **RWF 69,000**.
-
-**Test 2 — Annual PIT, real regime.**
-Input: Net taxable profit RWF 9,000,000.
-Expected: PIT = 48,000 + 240,000 + 1,980,000 = **RWF 2,268,000**.
-
-**Test 3 — Micro-enterprise flat tax.**
-Input: Turnover RWF 6,500,000.
-Expected: Flat tax **RWF 120,000** (band 4,000,001–7,000,000).
-
-**Test 4 — Lump-sum tax.**
-Input: Turnover RWF 16,000,000.
-Expected: 16,000,000 × 3% = **RWF 480,000**.
-
-**Test 5 — Casual labourer.**
-Input: Monthly income RWF 150,000.
-Expected: First 60,000 @ 0% + 90,000 × 15% = **RWF 13,500**.
-
-**Test 6 — Pension contribution (2025).**
-Input: Pension base RWF 400,000/month.
-Expected: Employee 6% = RWF 24,000; employer 6% = RWF 24,000; total RWF 48,000.
-
-**Test 7 — Below registration threshold.**
-Input: Self-employed turnover RWF 1,500,000.
-Expected: Exempt from income-tax registration; no annual return required.
-
-**Test 8 — Top-band monthly PAYE.**
-Input: Monthly taxable income RWF 1,000,000.
-Expected: 4,000 + 20,000 + (800,000 × 30% = 240,000) = **RWF 264,000**.
-
-## PROHIBITIONS
-
-- NEVER apply the worldwide-income basis without confirming residence status
-- NEVER use the superseded 20% middle-band ("Year 1") schedule — the current middle band is 10%
-- NEVER allow expense deductions for micro-enterprise (flat) or lump-sum (3%) taxpayers — those regimes tax turnover, not profit
-- NEVER apply an 8%/4% pension split — the 2025 split is 6%/6%
-- NEVER omit housing/transport allowances from the pension contribution base (they are now included from 2025)
-- NEVER allow income tax itself, fines, or penalties as deductions
-- NEVER include VAT collected on sales in turnover/income for VAT-registered self-employed
-- NEVER apply the casual-labour 15% rate to a regular employee
-- NEVER assume a national minimum wage figure — none is reliably enforceable
-- NEVER present tax calculations as definitive — always label as estimated and pending reviewer sign-off
-
-## Disclaimer
-
-This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
+Not yet confirmed: the road transport annex amounts were not captured from the PDF table, so use the annex directly; trading licence declaration by 31 January is carried from the old file and was not re-read; treatment of a home office, vehicle and phone in the real regime is our working practice and not a rule in the law; RRA rounding of monthly PAYE is not stated in the pages read.
 
 <!-- openaccountants-cta-block -->
 

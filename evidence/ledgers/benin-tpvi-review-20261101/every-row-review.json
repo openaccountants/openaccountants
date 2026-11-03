@@ -1,0 +1,1063 @@
+[
+  {
+    "id": "T01",
+    "guide": "bj-property-gains-tax",
+    "section": "Who this applies to",
+    "rule": "Natural and legal persons: immovable, real rights, property-rich securities and mining-title gains are charged; this job computes the ordinary immovable branch.",
+    "act_article": "CGI 108(1)",
+    "physical_pdf_page": 57,
+    "printed_page": 56,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=57",
+    "exact_french_quote_fragments": [
+      "les personnes physiques ou morales",
+      "d’immeubles bâtis ou non bâtis",
+      "de droits réels immobiliers",
+      "de titres de sociétés à prépondérance immobilière",
+      "de titres miniers."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "CGI 108(1) charges gains of natural/legal persons on the four listed asset classes. Guide computation remains immovables only; no unsupported share/mining base.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T02",
+    "guide": "bj-property-gains-tax",
+    "section": "Who this applies to",
+    "rule": "Mining-title definition includes economically advantageous exploration/exploitation/other mining or hydrocarbon authorisations.",
+    "act_article": "CGI 108(1)(d)",
+    "physical_pdf_page": 57,
+    "printed_page": 56,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=57",
+    "exact_french_quote_fragments": [
+      "tous droits d’exploration ou d’exploitation",
+      "dans le domaine des mines ou des hydrocarbures."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "Full mining definition read: exploration, exploitation and other economically advantageous mining/hydrocarbon authorisations. Specialist computation held.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T03",
+    "guide": "bj-property-gains-tax",
+    "section": "Who this applies to",
+    "rule": "Disposal is not confined to sale: exchange, company contribution, immovable dividend in kind, public-interest expropriation and donation are included.",
+    "act_article": "CGI 108(2)",
+    "physical_pdf_page": 57,
+    "printed_page": 56,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=57",
+    "exact_french_quote_fragments": [
+      "la vente",
+      "l’échange",
+      "l’apport en société",
+      "la distribution de dividendes en nature",
+      "l’expropriation pour cause d’utilité publique",
+      "les donations."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "All six statutory examples of disposal checked, including immovable dividend in kind, public-purpose expropriation and donation. Cash sale is not exclusive.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T04",
+    "guide": "bj-property-gains-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Property-rich classification uses more than 50% original asset value on disposal or preceding year-end, including listed real-property, real-lease and other property-rich securities assets.",
+    "act_article": "CGI 109(1)",
+    "physical_pdf_page": 57,
+    "printed_page": 56,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=57",
+    "exact_french_quote_fragments": [
+      "à la date de la cession de ces titres ou a été, à la clôture du dernier exercice précédant cette cession",
+      "plus de 50% de sa valeur d’origine",
+      "des droits afférents à un contrat de crédit-bail immobilier",
+      "des titres d’autres sociétés à prépondérance immobilière."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "Complete indirect-holding, valuation and securities-gain method not established.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "CGI 109 uses strictly more than 50%, original value, disposal date OR last preceding financial year-end, including real lease rights and property-rich-company securities. Both records requested; no complete securities method claimed.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T05",
+    "guide": "bj-property-gains-tax",
+    "section": "The base",
+    "rule": "Exclude the specified immovables/rights devoted to the enterprise’s own industrial, commercial, agricultural or noncommercial professional operation from the statutory property-rich screen.",
+    "act_article": "CGI 109(2)",
+    "physical_pdf_page": 57,
+    "printed_page": 56,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=57",
+    "exact_french_quote_fragments": [
+      "ne sont pas pris en considération",
+      "affectés par l’entreprise à sa propre exploitation industrielle, commerciale ou agricole",
+      "l’exercice d’une profession non commerciale."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "No unsupported numerator/denominator valuation worksheet.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "Own-operation exclusion preserves industrial, commercial, agricultural and noncommercial profession branches. No unsupported numerator/denominator worksheet.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T06",
+    "guide": "bj-property-gains-tax",
+    "section": "Who this applies to",
+    "rule": "Verify the listed State/public/national/housing-improvement/community/public-private-body exemption and registration-exempt acquisition status; public connection alone does not establish it.",
+    "act_article": "CGI 110(1)",
+    "physical_pdf_page": 57,
+    "printed_page": 56,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=57",
+    "exact_french_quote_fragments": [
+      "des immeubles de l’État",
+      "des établissements publics à caractère administratif",
+      "ayant pour objet l’amélioration de l’habitat",
+      "organismes publics ou privés dont les acquisitions sont exonérées de droit d’enregistrement"
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "CGI 110(1) whole list read with adjacent exemption. State, administrative establishment, national company, public-participation housing company, collectivités and qualifying public/private bodies are preserved; public connection alone insufficient.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T07",
+    "guide": "bj-property-gains-tax",
+    "section": "Who this applies to",
+    "rule": "Immovables recorded in the balance sheet of an IBA- or IS-subject enterprise are exempt from TPVI; separate business tax is routed to existing owners.",
+    "act_article": "CGI 110(2)",
+    "physical_pdf_page": 58,
+    "printed_page": 57,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=58",
+    "exact_french_quote_fragments": [
+      "les plus-values de cession des immeubles inscrits à l’actif du bilan d’une entreprise",
+      "soumise à l’impôt sur les bénéfices d’affaires ou à l’impôt sur les sociétés."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "CGI 110(2) requires an immovable actually booked in an IBA/IS enterprise balance sheet. Exemption is TPVI-specific and routed business tax remains separate.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T08",
+    "guide": "bj-property-gains-tax",
+    "section": "The base",
+    "rule": "Transfer value is consideration for the immovable/real/mining right or the valuation for pure or onerous company contribution.",
+    "act_article": "CGI 111(1)(a)",
+    "physical_pdf_page": 58,
+    "printed_page": 57,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=58",
+    "exact_french_quote_fragments": [
+      "la somme ou contre-valeur moyennant laquelle",
+      "l’estimation pour laquelle il fait l’objet d’un apport en société pur et simple ou à titre onéreux"
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "CGI 111(1)(a) consideration/countervalue or pure/onerous contribution valuation checked; no assumption that noncash means zero.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T09",
+    "guide": "bj-property-gains-tax",
+    "section": "The base",
+    "rule": "Taxable gain subtracts the statutory article 112 acquisition price/value from transfer value.",
+    "act_article": "CGI 111(1)(b)",
+    "physical_pdf_page": 58,
+    "printed_page": 57,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=58",
+    "exact_french_quote_fragments": [
+      "son prix ou sa valeur d’acquisition telle qu’elle est définie à l’article 112"
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "CGI 111(1)(b) subtracts statutory 112 acquisition value from transfer value, read with definition and exceptions.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T10",
+    "guide": "bj-property-gains-tax",
+    "section": "The base",
+    "rule": "Gratuitous acquisition uses market value at the gratuitous acquisition date.",
+    "act_article": "CGI 111(1)(b)",
+    "physical_pdf_page": 58,
+    "printed_page": 57,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=58",
+    "exact_french_quote_fragments": [
+      "Si cette acquisition a eu lieu à titre gratuit",
+      "la valeur vénale des immeubles ou droits au jour de la mutation à titre gratuit."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "Gratuitous acquisition uses market value on that earlier gratuitous transfer date, distinct from disposal-date gratuitous transfer valuation.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T11",
+    "guide": "bj-property-gains-tax",
+    "section": "The base",
+    "rule": "Original value for land rights held by lease is cumulative rents fallen due at disposal.",
+    "act_article": "CGI 111(2)",
+    "physical_pdf_page": 58,
+    "printed_page": 57,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=58",
+    "exact_french_quote_fragments": [
+      "le cumul des loyers échus à la date de cession."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "Leased-land-right original value is rent fallen due cumulatively at disposal, not rents merely paid or future rent.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T12",
+    "guide": "bj-property-gains-tax",
+    "section": "The base",
+    "rule": "Direct State-granted mining-title acquisition value follows grant duties actually paid under laws/regulations/agreements.",
+    "act_article": "CGI 111(3)",
+    "physical_pdf_page": 58,
+    "printed_page": 57,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=58",
+    "exact_french_quote_fragments": [
+      "Pour les titres miniers reçus directement de l’État",
+      "aux droits qui ont été payés contre l’octroi du titre"
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "Actual grant agreement, duties and special collection/treaty mechanics required.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "State-granted mining-title acquisition duties depend on law/regulation/State agreement. Exact duties and specialist computation remain held.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T13",
+    "guide": "bj-property-gains-tax",
+    "section": "The base",
+    "rule": "Inter vivos gratuitous transfers fall within article 111; use market value at transfer where applicable.",
+    "act_article": "CGI 111(4)",
+    "physical_pdf_page": 58,
+    "printed_page": 57,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=58",
+    "exact_french_quote_fragments": [
+      "aux mutations à titre gratuit entre vifs",
+      "la valeur vénale du bien à la date de la mutation."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "Price-minimum treatment of noncash/gratuitous transfer not resolved; no estate/death rule inferred.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "Inter vivos gratuitous transfer and applicable disposal-date market value are preserved; no estate rule or noncash minimum computation supplied.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T14",
+    "guide": "bj-property-gains-tax",
+    "section": "The base",
+    "rule": "Acquisition value is consideration paid for ownership, with property/right and works present at acquisition; purchase or estimate is evidenced by instruments with a certain date.",
+    "act_article": "CGI 112(1)",
+    "physical_pdf_page": 58,
+    "printed_page": 57,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=58",
+    "exact_french_quote_fragments": [
+      "la somme ou contre-valeur déboursée par le cédant",
+      "des ouvrages qu’il comporte à l’époque de l’acquisition",
+      "les actes de toute nature ayant date certaine."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "112(1) consideration, works existing on acquisition and legally certain-date instruments checked in full. Guide does not substitute undated private estimate.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T15",
+    "guide": "bj-property-gains-tax",
+    "section": "The base",
+    "rule": "Missing property documents or inflated purchase price trigger the reference-acquisition-value route.",
+    "act_article": "CGI 112(2)",
+    "physical_pdf_page": 58,
+    "printed_page": 57,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=58",
+    "exact_french_quote_fragments": [
+      "À défaut de documents relatifs à l’immeuble lui-même ou en cas de majoration du prix d’achat",
+      "la valeur d’acquisition de référence."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "112(2) missing property documents OR inflated purchase price triggers reference acquisition base. Hypothetical examples explicitly exclude adjustment.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T16",
+    "guide": "bj-property-gains-tax",
+    "section": "The base",
+    "rule": "Reference acquisition values are updated and fixed/revised periodically by ministerial order; current schedule is not supplied.",
+    "act_article": "CGI 112(2)",
+    "physical_pdf_page": 58,
+    "printed_page": 57,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=58",
+    "exact_french_quote_fragments": [
+      "la valeur actualisée de la somme",
+      "fixées et révisées périodiquement par arrêté du ministre chargé des finances."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "Actual reference order/version and property valuation missing; not replaced by State-domain cession price table.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "Updated reference value and periodic ministerial order requirement checked. No current instrument supplied and LFR State-domain table not substituted.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T17",
+    "guide": "bj-property-gains-tax",
+    "section": "The base",
+    "rule": "Foreclosing-creditor adjudicatee exception refers to pre-seizure command amount exceeding adjudication price and civil procedure 1224.",
+    "act_article": "CGI 112(2),finalparagraph",
+    "physical_pdf_page": 58,
+    "printed_page": 57,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=58",
+    "exact_french_quote_fragments": [
+      "un créancier saisissant demeuré, faute d’enchérisseurs, adjudicataire",
+      "celle qui figure au commandement qui a été signifié à son débiteur préalablement à la saisie",
+      "pourvu que cette somme soit supérieure au prix d’adjudication."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "Civil-procedure cross-reference and actual execution not verified; no operational formula/example.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "112 final paragraph requires seizing creditor, no bidders, adjudicatee, pre-seizure command and amount above adjudication price. Article 1224 procedural validity is expressly held.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T18",
+    "guide": "bj-property-gains-tax",
+    "section": "The base",
+    "rule": "Alienator declares disposal price separately for parcel and construction.",
+    "act_article": "CGI 113",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "une déclaration détaillée du prix de cession",
+      "en distinguant la valeur de la parcelle de celle de la construction."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "113 requires a detailed declaration distinguishing parcel and construction disposal values.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T19",
+    "guide": "bj-property-gains-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Construction gain is fixed at 10% of its separate disposal price; not 10% of whole combined property price.",
+    "act_article": "CGI 113",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "La plus-value sur la construction est fixée à 10% de son prix de cession."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "113 deems construction gain at 10% of its own disposal price, not tax at 10% or gain at 10% of whole price. Case separately constructed after vacant-land acquisition.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T20",
+    "guide": "bj-property-gains-tax",
+    "section": "Deadlines and filing",
+    "rule": "Transfer instrument/declaration contains acquisition date, method and value in property-origin information.",
+    "act_article": "CGI 114(1)",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "tant sur la date et le mode d’acquisition que sur la valeur des immeubles à l’époque de leur acquisition"
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "114(1) property-origin information must contain acquisition date, mode and value. Full clause read.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T21",
+    "guide": "bj-property-gains-tax",
+    "section": "Deadlines and filing",
+    "rule": "Add registration date and, as far as possible, registration reference for relevant instruments/documents/judgments.",
+    "act_article": "CGI 114(2)",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "la date à laquelle les actes, pièces, jugements ou documents relatifs à l’immeuble ont été enregistrés",
+      "autant que possible, par la relation elle-même de l’enregistrement."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "114(2) registration date and as-far-as-possible registration relation checked; requirement is not incorrectly made unconditional.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T22",
+    "guide": "bj-property-gains-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "TPVI rate is 5% of established taxable gain.",
+    "act_article": "CGI 115(1)",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "Le taux de la taxe est fixé à 5%."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "115(1) rate is 5%, applied to established taxable gain under 111–113 after exemption screening.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T23",
+    "guide": "bj-property-gains-tax",
+    "section": "Rates, bands and thresholds",
+    "rule": "Tax minimum is 1% of disposal price; ordinary positive-gain examples compare gain tax and price minimum after exemptions.",
+    "act_article": "CGI 115(2)",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "Le montant de la taxe ne peut en aucun cas être inférieur à 1% du prix de cession."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "Loss/no-gain and gratuitous/noncash interactions not computed.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "115(2) floor is 1% of disposal price; ordinary positive-gain examples compare both amounts. No extension to unresolved losses/gifts/noncash.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T24",
+    "guide": "bj-property-gains-tax",
+    "section": "Sources",
+    "rule": "A share of proceeds goes to the property-location local budget under ministerial modalities; no extra taxpayer charge or allocation percentage invented.",
+    "act_article": "CGI 115(3)",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "Une part du produit de la taxe",
+      "selon des modalités précisées par arrêté du ministre chargé des finances."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "Local revenue-allocation instrument not retrieved.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "115(3) allocates part of proceeds to property-location local authority under ministerial modalities. No invented allocation percentage or extra taxpayer charge.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T25",
+    "guide": "bj-property-gains-tax",
+    "section": "Deadlines and filing",
+    "rule": "Declare/pay at registration formalities; no independent number of days after signature established.",
+    "act_article": "CGI 116(1)",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "au moment de l’accomplissement des formalités d’enregistrement des actes d’aliénation ou des déclarations de mutation."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "Complete registration due-day rule, prescribed forms and authenticated workflow held.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "116(1) declares/pays at registration formalities. No invented signature-plus-days deadline or authenticated portal/form workflow.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T26",
+    "guide": "bj-property-gains-tax",
+    "section": "Deadlines and filing",
+    "rule": "Transferor owes TPVI notwithstanding contrary contracts.",
+    "act_article": "CGI 116(2)",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "Elle est due, nonobstant toutes conventions contraires, par le cédant."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "116(2) liability is transferor despite contrary agreements. Adjacent mining collection exception kept separate.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T27",
+    "guide": "bj-property-gains-tax",
+    "section": "Deadlines and filing",
+    "rule": "For mining-title rights transferee withholds/pays from consideration paid to transferor; no universal buyer withholding on property inferred.",
+    "act_article": "CGI 116(3),firstparagraph",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "la taxe est retenue et acquittée par le cessionnaire sur la somme versée au cédant."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "116(3) first paragraph confines transferee withholding/payment to mining-title rights; not universal property-buyer withholding.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T28",
+    "guide": "bj-property-gains-tax",
+    "section": "Deadlines and filing",
+    "rule": "Mining-title transferee expressly liable for tax due by transferor not domiciled in Benin or without representative there.",
+    "act_article": "CGI 116(3),secondparagraph",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "Le cessionnaire de titres miniers est redevable",
+      "due par le cédant non domicilié en République du Bénin ou qui n’y dispose pas de représentant."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "Specialist mining/nonresident/treaty computation not supplied.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "116(3) second paragraph expressly covers mining transferee liability for transferor non-domicile OR no Benin representative. No treaty result invented.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T29",
+    "guide": "bj-property-gains-tax",
+    "section": "Deadlines and filing",
+    "rule": "Seller proves prior payment before land transfer when TPVI is due.",
+    "act_article": "CGI 117",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "Aucune mutation foncière ne peut se faire",
+      "justifié du paiement de la taxe lorsque celle-ci est exigible."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "117 requires seller prior-paid proof when tax is due before land mutation; due condition retained.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T30",
+    "guide": "bj-property-gains-tax",
+    "section": "Deadlines and filing",
+    "rule": "Public/ministerial officers and comparable officials responsible for tax revealed due by received instruments or annexed/used documents.",
+    "act_article": "CGI 118",
+    "physical_pdf_page": 59,
+    "printed_page": 58,
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=59",
+    "exact_french_quote_fragments": [
+      "Les officiers publics et ministériels",
+      "tenus responsables du paiement de la taxe",
+      "les actes qu’ils reçoivent ou les documents qu’ils annexent ou dont ils font usage."
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "118 includes public/ministerial officers AND officials with similar functions; responsibility attaches to received/annexed/used instruments revealing liability.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T31",
+    "guide": "bj-property-gains-tax",
+    "section": "Penalties and interest",
+    "rule": "Route general declaration, collection and interest figures to unchanged overview; exact offence/date/relief facts required, no TPVI-specific sanction computation.",
+    "act_article": "CGI 485(1),487(1),488(1)",
+    "physical_pdf_page": [
+      216,
+      217
+    ],
+    "printed_page": [
+      215,
+      216
+    ],
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=216",
+    "exact_french_quote_fragments": [
+      "Le défaut de production dans les délais prescrits",
+      "indépendamment des pénalités prévues par les articles précédents"
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "held_boundary": "Specific penalty assessment/relief not established.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "485–488 and neighbouring sanctions read. Guide routes unchanged overview figures and requires actual offence/date/relief; no duplicated figure home or transaction-specific sanction calculation.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      true,
+      true
+    ],
+    "scan_or_linebreak_note": "Whitespace-only normalization; original pages visually read, including clause context and neighbours."
+  },
+  {
+    "id": "T32",
+    "guide": "bj-property-gains-tax",
+    "section": "Sources",
+    "rule": "Original Finance Law expressly starts 1 January 2026; fiscal 1–17 read, no direct 108–118 amendment found within that read scope.",
+    "act_article": "LF 2026article48",
+    "physical_pdf_page": 14,
+    "printed_page": "Physical PDF locator is controlling; printed page not independently asserted.",
+    "official_url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf#page=14",
+    "exact_french_quote_fragments": [
+      "entre en vigueur à compter du 1er janvier 2026"
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "lf2026.pdf",
+    "source_sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+    "held_boundary": "Not a whole-volume or full later-law currentness certification.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "quote_transcription": "Visually read original scanned PDF14; superscript er represented inline as 1er. OCR has recognition errors; image is controlling.",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "Original LF 48 image reads commencement 1 January 2026; superscript er transcribed inline. Fiscal 1–17 and final 47–48 checked; no direct TPVI 108–118 amendment identified within that bounded scope.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      false
+    ],
+    "scan_or_linebreak_note": "For scanned LF/LFR, page image controls; OCR is not an exact-text authority. LF 48 superscript er is inline 1er."
+  },
+  {
+    "id": "T33",
+    "guide": "bj-property-gains-tax",
+    "section": "Cross-border points",
+    "rule": "June securities-disposal territorial limb is regardless transferor/transferee residence, subject to conventions; coordinate with TPVI property-rich securities, not an automatic second liability.",
+    "act_article": "LFR 2026article12/CGI81",
+    "physical_pdf_page": 4,
+    "printed_page": "Physical PDF locator is controlling; printed page not independently asserted.",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=4",
+    "exact_french_quote_fragments": [
+      "Sous réserve des dispositions des conventions internationales",
+      "indépendamment de la résidence du cédant ou du cessionnaire"
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "lfr2026.pdf",
+    "source_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+    "held_boundary": "Exact first operative securities period, TPVI interaction and treaty entitlement unresolved.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "LFR 12 original image adds CGI 81 Benin-enterprise securities gains, regardless either party residence, subject to international conventions. Securities start-period and TPVI coordination held.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      false,
+      false
+    ],
+    "scan_or_linebreak_note": "For scanned LF/LFR, page image controls; OCR is not an exact-text authority. LF 48 superscript er is inline 1er."
+  },
+  {
+    "id": "T34",
+    "guide": "bj-property-gains-tax",
+    "section": "Sources",
+    "rule": "June law has income-period rule for year closed 31 December 2025, subject to contrary specific fiscal provisions; no generic June signature-date activation inferred.",
+    "act_article": "LFR 2026article1",
+    "physical_pdf_page": 1,
+    "printed_page": "Physical PDF locator is controlling; printed page not independently asserted.",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=1",
+    "exact_french_quote_fragments": [
+      "sauf précision contraire contenue dans le texte des mesures fiscales énoncées",
+      "clos au 31 décembre 2025"
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "lfr2026.pdf",
+    "source_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+    "held_boundary": "Exact securities first operative period held; ordinary immovable examples exclude securities.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "LFR 1 original image applies income-tax measures to year closed 31 December 2025 except specific contrary measures. This does not establish a blanket June-signature activation for securities.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      false,
+      false
+    ],
+    "scan_or_linebreak_note": "For scanned LF/LFR, page image controls; OCR is not an exact-text authority. LF 48 superscript er is inline 1er."
+  },
+  {
+    "id": "T35",
+    "guide": "bj-property-gains-tax",
+    "section": "Sources",
+    "rule": "Read State/local private-domain price-reference heading; do not substitute its cession/rental table for missing CGI 112 acquisition reference instrument.",
+    "act_article": "LFR 2026article20",
+    "physical_pdf_page": 6,
+    "printed_page": "Physical PDF locator is controlling; printed page not independently asserted.",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=6",
+    "exact_french_quote_fragments": [
+      "sur le domaine privé",
+      "et des collectivités territoriales"
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "lfr2026.pdf",
+    "source_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+    "held_boundary": "No price-table amount reused as private-property acquisition basis.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "LFR 20 original heading concerns rental/cession prices on State/local private domain, not a verified CGI 112 private-property acquisition order. Table numbers not reused.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      false,
+      false
+    ],
+    "scan_or_linebreak_note": "For scanned LF/LFR, page image controls; OCR is not an exact-text authority. LF 48 superscript er is inline 1er."
+  },
+  {
+    "id": "T36",
+    "guide": "bj-property-gains-tax",
+    "section": "Sources",
+    "rule": "Read final repeal/execution clauses and signed date; they do not on their own settle first operative securities-tax period.",
+    "act_article": "LFR 2026articles48–49",
+    "physical_pdf_page": 17,
+    "printed_page": "Physical PDF locator is controlling; printed page not independently asserted.",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=17",
+    "exact_french_quote_fragments": [
+      "Sont abrogées, toutes dispositions antérieures contraires",
+      "sera exécutée comme Loi"
+    ],
+    "read_date": "2026-11-01",
+    "source_file": "lfr2026.pdf",
+    "source_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+    "held_boundary": "No signature-equals-tax-activation assumption.",
+    "review_status_record": "Fresh independent review, 2026-11-01; no author role or professional attestation",
+    "independent_result": "PASS within stated held boundaries",
+    "reviewer_reasoning": "LFR final 48–49 original image confirms contrary-law repeal and execution as law, signed 24 June 2026. These do not alone settle first operative securities period.",
+    "each_exact_french_fragment_checked": true,
+    "original_pdf_read": true,
+    "original_page_visual_check": true,
+    "extraction_match_by_fragment": [
+      false,
+      false
+    ],
+    "scan_or_linebreak_note": "For scanned LF/LFR, page image controls; OCR is not an exact-text authority. LF 48 superscript er is inline 1er."
+  }
+]

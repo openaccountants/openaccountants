@@ -1,0 +1,346 @@
+{
+  "reviewed_commit": "b435b7850452671fea8471b85e545fa87ec80395",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "guide_bindings": {
+    "skills/dr-congo/cd-vat-gst.md": {
+      "git_blob": "5e035ee116a2525d8c807f9f868acf7eb26127c8",
+      "sha256": "74ca04ffdc1b6cc07d3621da30141b66c2c593dcea6489de00181e3a0826a7e4",
+      "old_sha256": "c33ff5874fab5c404250820721c8693b98ad5326cd4352b32925dcdc778764aa",
+      "cta_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "cta_equal": true,
+      "platform_fields_equal": [
+        "review_status",
+        "trust_label",
+        "tier",
+        "license"
+      ]
+    },
+    "skills/dr-congo/cd-payroll-social.md": {
+      "git_blob": "925f13d17f6e7b5f495f02dfd042fc7f820b34ac",
+      "sha256": "ef47b0eaa5d3e53e76f53dacac76ba805e8fcf106bac64a916d5f1faee035087",
+      "old_sha256": "b2c8821ec921db890a2de6878aadc888a43ee874ade2e6cdebe3fd85e24d0909",
+      "cta_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "cta_equal": true,
+      "platform_fields_equal": [
+        "review_status",
+        "trust_label",
+        "tier",
+        "license"
+      ]
+    }
+  },
+  "unchanged_prior_guides": [
+    {
+      "path": "skills/dr-congo/cd-income-tax.md",
+      "sha256": "8216ac9efcaf76ba5c3f775417e3896024f3ab5d445d8c966b10fd6ff6fddaaa",
+      "base_equal": true
+    },
+    {
+      "path": "skills/dr-congo/cd-corporate-income-tax.md",
+      "sha256": "3a94318a445e48cbd1d973cc8ef83b26e581f3976a2e368a01b1b9e8feccd433",
+      "base_equal": true
+    },
+    {
+      "path": "skills/dr-congo/cd-transfer-pricing.md",
+      "sha256": "631405e941fde4ad0374386514f096825749077285c580d22eb48d3da9eb19aa",
+      "base_equal": true
+    },
+    {
+      "path": "skills/dr-congo/cd-cross-border.md",
+      "sha256": "c34c58ce3f047127b6e251333200571664ea6df4244b4fdabcea6f5652d3a2de",
+      "base_equal": true
+    },
+    {
+      "path": "skills/dr-congo/cd-tax-overview.md",
+      "sha256": "b1041387a11e6f7f906d27c0c62ddb1611ab41be55cc2eef563f1e3aa59463f4",
+      "base_equal": true
+    },
+    {
+      "path": "skills/dr-congo/cd-company-formation.md",
+      "sha256": "1a6382fcd656483dca0394761ad326d236bbd8bbc5477ecfdadf7d166d737a2a",
+      "base_equal": true
+    }
+  ],
+  "old_topic_destinations": [
+    {
+      "guide": "skills/dr-congo/cd-vat-gst.md",
+      "topic": "Heading: DR Congo VAT / GST",
+      "old_text_sha256": "c0b8857443dec20678bf40aa0937631a950f2aed8fc8e0d42ef3ccf9ca3dd21d",
+      "destination": "H1 and canonical headings; Who this applies to",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-vat-gst.md",
+      "topic": "Heading: Value-added tax (TVA)",
+      "old_text_sha256": "a249b70f7a49ff27c2d42543a84cb04986b3f1874016a402a7dc8257eb35b3f1",
+      "destination": "H1 and canonical headings; Who this applies to",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-vat-gst.md",
+      "topic": "Opening paragraph",
+      "old_text_sha256": "1b933a1b0018eea08375bcd4beaf2330d790decabedb70b62d5defd5a0bf48d9",
+      "destination": "Who this applies to; research notice; corresponding Rates/The base/filing sections; unsupported claims held in Sources",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-vat-gst.md",
+      "topic": "Standard VAT rate",
+      "old_text_sha256": "3b80fb3eb721c5ad1df73247da37ceaa3cfa56dddc25dc5a3b8cb23f5b532dd6",
+      "destination": "Rates, bands and thresholds: ordinary16%",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-vat-gst.md",
+      "topic": "Reduced rate",
+      "old_text_sha256": "beba0e5693c9245196338e0812d82cdef86ef681a73012331c0798ac22bcd1c4",
+      "destination": "Rates, bands and thresholds: two enacted schedules; eligibility/order holds",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-vat-gst.md",
+      "topic": "Zero rate",
+      "old_text_sha256": "83c93057e184dc819923796812d36bc679c4f227ff9bfe64e9bc78bd651b102e",
+      "destination": "Rates, bands and thresholds; Cross-border points: actual exports/assimilated category",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-vat-gst.md",
+      "topic": "VAT registration threshold",
+      "old_text_sha256": "732dd8aece2e95ce40a2586a775fe825bbf680c496c6123f21b51ac51c6f8263",
+      "destination": "Who this applies to: inclusive threshold/profession exception",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-vat-gst.md",
+      "topic": "Filing frequency",
+      "old_text_sha256": "21970ae8e54fa9479239c78db0e0c42576c7ccfcb98e1109e6ce3f4de00cda59",
+      "destination": "Deadlines and filing: monthly prescribed return",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-vat-gst.md",
+      "topic": "VAT return and payment deadline",
+      "old_text_sha256": "a8090b02140045eb902d108351d401f16c1b656014283944bf0ef1b3afc836aa",
+      "destination": "Deadlines and filing: fifteenth/nextmonth/payment/nil",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-vat-gst.md",
+      "topic": "Reverse charge on imported services",
+      "old_text_sha256": "349bd6c28891ac9c3d66e0669c32b91aa2eef4ebef4c7375533e7bee7bf55325",
+      "destination": "Cross-border points; Sources: collection/representative rules expressly held",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-vat-gst.md",
+      "topic": "Voluntary registration",
+      "old_text_sha256": "f4c2b18941542448ab0364d218ecc41d864c40775d09ea6ea88158356b27d46b",
+      "destination": "Who this applies to: express option/twoyears/revocation",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-vat-gst.md",
+      "topic": "E-invoicing / e-filing",
+      "old_text_sha256": "b733fa6d8ee180e1b7f434bc3949d824e230bebca0b9433a6c34b52f37d05678",
+      "destination": "Deadlines and filing; Sources: resource labels versus unproved rollout mandate",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "Heading: DR Congo Payroll & Social Contributions",
+      "old_text_sha256": "eaa1fa8f8ea18908af2b91daea5c3fcba643a531531ea67214702b2e0396abe6",
+      "destination": "H1 and canonical headings; Who this applies to",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "Heading: DR Congo Payroll & Social Contributions",
+      "old_text_sha256": "4d727569c50a08ae9109aa4b71316ab1b9c247a2a71bc390a9e88825d4954fe9",
+      "destination": "H1 and canonical headings; Who this applies to",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "Heading: Social security and payroll contributions",
+      "old_text_sha256": "7c1cd9bbb348643b2c016afbfa38275bd40b93a8826ba38ddf4876fd9466cd5c",
+      "destination": "H1 and canonical headings; Who this applies to",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "Opening paragraph",
+      "old_text_sha256": "b4ebd923a10b98d30b757ae3416b20ab7e2ec5260177fbbfcc77d7de7a909b15",
+      "destination": "Who this applies to; research notice; corresponding Rates/The base/filing sections; unsupported claims held in Sources",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "INSS social security — employer share",
+      "old_text_sha256": "6ec573b2ffa1c86863cb1111d21573914bc4f1da222b6a11f15f1148fbb23f4b",
+      "destination": "Who this applies to:correct CNSSname; Rates:ordinary13%derived; The base",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "INSS social security — employee share",
+      "old_text_sha256": "b7ca2c377836ab9d65f5f5983b8ac2556e235757f83a78068ed38732f03d4193",
+      "destination": "Who this applies to:correct CNSSname; Rates:pension5%worker",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "Professional training levy (INPP) — companies with ≤50 employees",
+      "old_text_sha256": "4cdfdbb239f0f38d188f207903a1ee4d7cf03deb57b02ea5a0caa53a4e1d1efc",
+      "destination": "Rates and Sources:INPP instrument/rate/bands held",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "All three old INPP headcount/rate topics explicitly held collectively as original instruments/rates/bases and headcount-band gap; no unsupported rate recertified."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "Professional training levy (INPP) — 51 to 300 employees",
+      "old_text_sha256": "0bc20949c5cd933b09e30fe38e61569c23e6909234b0818dc08b84c3b5a403ba",
+      "destination": "Rates and Sources:INPP instrument/rate/bands held",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "All three old INPP headcount/rate topics explicitly held collectively as original instruments/rates/bases and headcount-band gap; no unsupported rate recertified."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "Professional training levy (INPP) — more than 300 employees",
+      "old_text_sha256": "5cf8c0e10ef07520c6aa9be1fee94f696ff498bb7053934d8267f35dcc2d1f1f",
+      "destination": "Rates and Sources:INPP instrument/rate/bands held",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "All three old INPP headcount/rate topics explicitly held collectively as original instruments/rates/bases and headcount-band gap; no unsupported rate recertified."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "Employment office levy (ONEM)",
+      "old_text_sha256": "1e017fcfeca5a0e3dffc2e5b0bc60b598226176ddb324217606cd48fcb2b1a05",
+      "destination": "Rates and Sources:ONEM instrument/rate/base held",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "Exceptional tax on expatriate remuneration (IER) — standard",
+      "old_text_sha256": "c8b543b1f1d7b28f4cad847f7366f9b3cbf409f13ae457927bcdd997b579f6b9",
+      "destination": "Rates; The base:25%employerlevy, exemptions, no unproved neighbouring-country exclusion",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "Exceptional tax on expatriate remuneration (IER) — mining companies",
+      "old_text_sha256": "b7cd4505890ea8293c7d0ab632e5f1d2546c00c7ebfc6597e1f384cfef5eadfa",
+      "destination": "The base; Sources:miningrate/deductibility expressly held",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Old10% mining rate and deductibility expressly held in body and Sources; not silently removed or assumed false."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "PAYE withholding (IPR on salaries)",
+      "old_text_sha256": "f2687b3737caee6e0f25094772cc0490526125aaf361e5b996d537e268ea1640",
+      "destination": "Rates; The base:IRPP monthly duty and annualscalehandoff; implementationheld",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "IRPP monthly duty retained; linked individual Guide owns annual scale and explicit30% ceiling. Monthly implementation held, avoiding blind annual-band division."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "Contribution wage base / cap",
+      "old_text_sha256": "4f36cdc07fafa3d140264acc66872d288e81d63d4eb27589b6e9e4c815599eb5",
+      "destination": "The base:actual inclusions/exclusions andminimum; ceilingexpresslyheld",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    },
+    {
+      "guide": "skills/dr-congo/cd-payroll-social.md",
+      "topic": "Remittance deadline (payroll taxes and contributions)",
+      "old_text_sha256": "2791f55d3ee92f9030c27c9d0cb34a6673fdf745ae12b9d84eda8fe86ee37eed",
+      "destination": "Deadlines and filing:separate CNSS/IRPP/expatriate schedules; sharedreturn not assumed",
+      "verdict": "pass_destination_or_explicit_hold",
+      "reviewer_note": "Destination inspected; scope retained or unsupported predecessor claim expressly held."
+    }
+  ],
+  "old_topics_checked": 27,
+  "historical_evidence_changes": [],
+  "source_files_verified": [
+    {
+      "file": "vat2012.pdf",
+      "url": "https://dgi.gouv.cd/wp-content/uploads/2025/10/ord-loi-001.pdf",
+      "sha256": "01fa7c61458c2761ceec5716ecbedf1b8e56462e7638c63941ce4991cb75966c",
+      "hash_matches": true
+    },
+    {
+      "file": "cnss-recueil.pdf",
+      "url": "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+      "sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+      "hash_matches": true
+    },
+    {
+      "file": "lf-2026-recettes.pdf",
+      "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+      "hash_matches": true
+    },
+    {
+      "file": "lfr-2026-recettes.pdf",
+      "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+      "sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+      "hash_matches": true
+    },
+    {
+      "file": "loi-is-et-irpp-23-053.pdf",
+      "url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "sha256": "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+      "hash_matches": true
+    },
+    {
+      "file": "dgi-vat.html",
+      "url": "https://dgi.gouv.cd/taxe-sur-la-valeur-ajoutee-tva/",
+      "sha256": "a9bcebd5f2e14180f902cbfdc3bc7bc44cd66fb676f9d789675133c3dbda7f26",
+      "hash_matches": true
+    },
+    {
+      "file": "cnss-rates.html",
+      "url": "https://cnss.cd/?page_id=1388",
+      "sha256": "4989b72705238e7e77e2eae3a8c8b7fc11dcbc19ded62b166978729214ce3b28",
+      "hash_matches": true
+    },
+    {
+      "file": "cnss-declare.html",
+      "url": "https://cnss.cd/?page_id=1698",
+      "sha256": "e5c71fc42eb5bbc3392e6ff65ac8555a2bd22b2832b872ffcdde47344c8ea9a7",
+      "hash_matches": true
+    },
+    {
+      "file": "cnss-pay.html",
+      "url": "https://cnss.cd/?page_id=1707",
+      "sha256": "89b0e1285f30888798c2c2902a14689e5c1fc985d4ca9f5ce3139521bbff649d",
+      "hash_matches": true
+    },
+    {
+      "file": "cnss-workers.html",
+      "url": "https://cnss.cd/?page_id=1735",
+      "sha256": "887663f6bd06eec1d85b98734034be94874c5f49851223a7b2d57fff11c97003",
+      "hash_matches": true
+    }
+  ]
+}

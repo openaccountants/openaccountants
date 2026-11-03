@@ -1,0 +1,57 @@
+{
+  "IR": {
+    "path": "income2020.pdf",
+    "official_url": "https://www.obr.bi/images/LOI_N1_14_DU_24_DECEMBRE_2020_PORTANT_MODIFICATION_DE_LA_LOI_N1_02_DU_24_JANVIER_2013_RELATIVE_AUX_IMPOTS_SUR_LES_REVENUS_1.pdf",
+    "act": "Loi n°1/14 du 24 décembre 2020",
+    "sha256": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+    "bytes": 2174407,
+    "kind": "original PDF",
+    "read_date": "2026-11-01",
+    "actual_read_scope": "Actual complete PDF pages 1–15,18–19,28–34,40–44 read from cached original with OCR aid. Complete arts.2,6–7,19–29,37–39,88–93 and neighbours; art.98 corporate inclusion; arts.122–129 and final clauses. No claim that all other articles were substantively reviewed.",
+    "visual_check": "PDF4–6,30–31: definition lettering, coefficient table, housing/credit/deadline text."
+  },
+  "JAN": {
+    "path": "budget2025mod.pdf",
+    "official_url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+    "act": "Loi n°1/09 du 31 décembre 2025",
+    "sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+    "bytes": 40392761,
+    "kind": "original PDF",
+    "read_date": "2026-11-01",
+    "actual_read_scope": "Actual enacted PDF26–27,43–44,51–52,249 read: business-asset replacement80 with neighbours79–88; annual/payments146; employment147; withholding148 and neighbour149; exemptions196–210 including201; final commencement252. Full OCR searched for plus-value, capital, cession and article-number changes. Comparison DOCX not used as operative authority.",
+    "visual_check": "PDF51 Treasury interest and PDF249/printed246 signed commencement."
+  },
+  "JUL": {
+    "path": "budget2026.pdf",
+    "official_url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+    "act": "Loi n°1/10 du 30 juin 2026",
+    "sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+    "bytes": 7715040,
+    "kind": "original PDF",
+    "read_date": "2026-11-01",
+    "actual_read_scope": "Actual signed/enacted PDF25–27,45–48,56–58,267 read: business79, annual154, withholding156, exemptions217, their complete cited paragraphs and neighbours, commencement277. Full available fiscal OCR searched for capital/gain/disposal terms; no sector/appropriation-table review claimed.",
+    "visual_check": "PDF57 Treasury exemption and PDF267 signed commencement."
+  },
+  "FORM": {
+    "path": "form-individual.pdf",
+    "official_url": "https://www.obr.bi/images/FORMULAIRE_IR_PERSONNE_PHYSIQUE_2021_VF_Corrig%C3%A9_octobre_2021.pdf",
+    "act": "OBR Déclaration de l’impôt sur les revenus d’affaires des personnes physiques",
+    "sha256": "7a35ba979bcd5eb35a24398529b7aea92e2acd74fae1814ab534e6e59434f954",
+    "bytes": 342830,
+    "kind": "original PDF",
+    "read_date": "2026-11-01",
+    "actual_read_scope": "All four PDF pages read, business-income title, line8 sales, ordinary business-tax lines28/29, credits31–36, balance37 and receipt/payment/acknowledgment; private-capital form fields not inferred.",
+    "visual_check": "Not relied on for a numerical capital figure."
+  },
+  "PORTAL": {
+    "path": "support-capital-20261101/portal-browser-excerpt.txt",
+    "official_url": "https://www.obr.bi/index.php/teledeclaration-telepaiement",
+    "act": "OBR Télédéclaration / Télépaiement",
+    "sha256": "4047700aa57e567f986f2b3429644559cb159af643bf6d31b4e7146f56b714f6",
+    "bytes": 652,
+    "kind": "observed browser text excerpt",
+    "read_date": "2026-11-01",
+    "actual_read_scope": "Direct Python fetch returned application-instantiation error despite HTTP200; excluded as substantive evidence. Web reader and an ordinary hidden browser tab both read actual routing and documentation. This file hashes the explicitly transcribed browser excerpt, not original web-server bytes. No authenticated filing screen read.",
+    "visual_check": "Ordinary browser full accessibility tree read."
+  }
+}

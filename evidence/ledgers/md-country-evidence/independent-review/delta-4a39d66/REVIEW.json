@@ -1,0 +1,25 @@
+{
+  "commit": "4a39d66b6f0eda4c45a2d3ad62303ce612198911",
+  "decision": "PASS MD-REVIEW-010 focusedledgerrepair; wholepackINCOMPLETE",
+  "changed_corporate_rows": 25,
+  "changed_individual_rows": 9,
+  "checks": [
+    "All34newquote/context/hashchecks independentlypass",
+    "Newcomponentquotesandcontextsfound in unchangedretainedactualsources; paragraphanchors checked, Law41Xnamedlabels handled separately",
+    "Substantivefullparagraphs alreadyread in review:26¹,44,32,36,31,30,84,24selected,541/SME,82,80¹,91,92,228,261,Law41X",
+    "Bare/wrongcrossreference010/045/046replacedbyactualownership/depreciation/repairprovisions",
+    "INDmirrorsrepaired;focusedbindingcheckdoesnotapproveunreadINDGuidebody"
+  ],
+  "current_row_counts": {
+    "total": 3910,
+    "read": 1987,
+    "no_issue_in_checked_scope": 1987,
+    "unread": 1923
+  },
+  "limits": [
+    "Corporate381-555unread",
+    "Individual636,payroll615,social497unread",
+    "49standalonecases unrecomputed;case04salaryformlegalmappingunread",
+    "No fullhistoriccommencement/comprehensivecoverage/attestationclaim"
+  ]
+}

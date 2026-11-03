@@ -1,0 +1,709 @@
+[
+  {
+    "id": "P01",
+    "source_scope": "CGI article 257",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "taxe foncière due sur les propriétés bâties et non bâties",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P02",
+    "source_scope": "CGI article 258",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "les propriétés bâties sises au Togo",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "peuvent être déplacés sans faire appel",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P03",
+    "source_scope": "CGI article 259",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "les immeubles urbains constitués par des terrains",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "ne se rattachent pas à une exploitation agricole",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P04",
+    "source_scope": "CGI article 260",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "les titulaires du droit de propriété ou de superficie",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "libre de toutes charges au bailleur",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P05",
+    "source_scope": "LF article2 p3",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "à compter du 1er janvier 2026 pour les autres dispositions fiscales",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P06",
+    "source_scope": "CGI article 275",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "est fixé à 7,5 % du revenu net cadastral",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P07",
+    "source_scope": "CGI article 270",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "sous déduction de 50 % de cette valeur",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P08",
+    "source_scope": "CGI article 276",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "est fixé à 0,5 % de la valeur vénale",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P09",
+    "source_scope": "CGI article 272",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "leur valeur vénale au 1er janvier",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P10",
+    "source_scope": "CGI article 273",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "des actes translatifs récents de propriété",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P11",
+    "source_scope": "CGI article 274",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "La valeur vénale est déterminée par les services chargés du cadastre",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P12",
+    "source_scope": "CGI article 262",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "exonération de deux (02) ans",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "exonération de cinq (05) ans",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "destinés à être revendus ou loués en vue du recouvrement de leurs créances",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P13",
+    "source_scope": "CGI article 261",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote",
+      "rule"
+    ],
+    "quotes": [
+      {
+        "quote": "Cette exonération ne concerne que l'habitation principale unique",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "appartenant à des Etats étrangers",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "servant exclusivement à l’activité des sociétés mutualistes",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P14",
+    "source_scope": "CGI article 268",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "les terrains cultivés ou effectivement utilisés au premier janvier",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P15",
+    "source_scope": "CGI article 269",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "Sont exemptés de la taxe les immeubles ruraux",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P16",
+    "source_scope": "CGI article 263",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "une exonération temporaire de cinq (05) ans",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P17",
+    "source_scope": "CGI article 264",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "Aucune exonération temporaire n'est applicable aux terrains",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P18",
+    "source_scope": "CGI article 265",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "pour la période qui reste à courir",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P19",
+    "source_scope": "LPF article 100",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "sur justification de son acquittement",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "Les imputations s'opèrent de la façon suivante",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P20",
+    "source_scope": "LPF article 85",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "deux (02) versements de montant égal au plus tard le 31 mai et le 31 octobre",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P21",
+    "source_scope": "LPF article 86",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "au plus tard le 31 mai de l’année",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P22",
+    "source_scope": "LPF article 87",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "dans les quatre (04) mois de leur réalisation définitive",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P23",
+    "source_scope": "CGI article 266",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "quatre (04) mois à partir du jour de l'ouverture des travaux",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "dans les quatre (04) mois de l'achèvement des travaux",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P24",
+    "source_scope": "CGI article 267",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "pour la fraction de la période d'exonération restant à courir",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "ne saurait entraîner l'exonération pour la première année",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P25",
+    "source_scope": "CGI article 281",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "du ressort de la préfecture ou commune où elles sont situées",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P26",
+    "source_scope": "CGI article 282",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "faites à la diligence des propriétaires intéressés",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P27",
+    "source_scope": "CGI article 283",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "l'ancien propriétaire continue à être imposé",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P28",
+    "source_scope": "CGI article 284",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "subordonnées à la transcription au livre foncier",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "ajournée jusqu'après jugement définitif",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P29",
+    "source_scope": "CGI article 285",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "tant pour l'année qu'elles concernent que pour les suivantes",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P30",
+    "source_scope": "CGI article 266",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "sans toutefois que la majoration puisse dépasser le quintuple",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P31",
+    "source_scope": "CGI article 278",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "indépendante de la volonté du contribuable",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "trois (03) mois au moins",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P32",
+    "source_scope": "CGI article 279",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "du mois suivant la destruction",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P33",
+    "source_scope": "CGI article 280",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "du mois suivant la disparition",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P34",
+    "source_scope": "LPF article 374",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "au plus tard le 31 décembre de l'année suivant celle",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P35",
+    "source_scope": "LPF article 375",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "dispose d'un délai égal à celui de l'Administration fiscale",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P36",
+    "source_scope": "LPF article 376",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote",
+      "rule"
+    ],
+    "quotes": [
+      {
+        "quote": "être individuelle",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "être adressée au Commissaire des impôts, rédigée en français",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "Les réclamations ne sont pas soumises aux droits de timbre",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P37",
+    "source_scope": "LPF article 377",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "doit justifier d'un mandat régulier",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P38",
+    "source_scope": "LPF article 378",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "doit faire élection de domicile au Togo",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P39",
+    "source_scope": "CGI article 262",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote"
+    ],
+    "quotes": [
+      {
+        "quote": "exonération de deux (02) ans",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "exonération de cinq (05) ans",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  },
+  {
+    "id": "P40",
+    "source_scope": "LF article21 replacementCGI271 p20",
+    "changed_fields": [
+      "additional_original_language_quotes",
+      "original_language_quote",
+      "rule"
+    ],
+    "quotes": [
+      {
+        "quote": "locaux et installations commerciales ou industrielles inscrits à l'actif du bilan des entreprises",
+        "normalized_exact_in_relevant_source_scope": true
+      },
+      {
+        "quote": "est égale à 6% de la valeur vénale",
+        "normalized_exact_in_relevant_source_scope": true
+      }
+    ],
+    "markdown_json_agree": true,
+    "closure_verdict": "confirmed: decisive source anchor(s), full-rule source reading retained; condition/procedure corrections checked where applicable"
+  }
+]

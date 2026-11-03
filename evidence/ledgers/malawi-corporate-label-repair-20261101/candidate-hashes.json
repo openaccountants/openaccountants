@@ -1,0 +1,16 @@
+{
+  "baseline_head": "10a6b7587b0eb7faabfcaca071eab674544e6f6b",
+  "candidate_uncommitted": true,
+  "independent_review_and_explicit_publication_disposition_required": true,
+  "file_sha256": {
+    "skills/malawi/mw-corporate-income-tax.md": "8c7103980ebe451c36547efa01dff3da3ef9d5b8461740fe8c81147016ea14d1",
+    "evidence/ledgers/malawi-corporate-label-repair-20261101/candidate-repair.json": "90d6ad194ec889598c83fedfb54ed2c9835a074deacc676fdb928b11f5703235",
+    "evidence/ledgers/malawi-corporate-label-repair-20261101/candidate-validation.json": "830a4ee95dafbfa6ee5de2f86599dded1d6518c84cf118bf65e488a05f59bc26",
+    "evidence/ledgers/malawi-corporate-label-repair-20261101/candidate.diff": "1f4d329bb97adc1de006b00ce4b4d1753e880d2f670cb3cd158654318b00c365",
+    "evidence/ledgers/malawi-corporate-label-repair-20261101/correction-ledger.md": "b5fc73be81fc2042c96ca8a8e2e5032b1cc55cd505319ff62e990d67bf105082",
+    "evidence/ledgers/malawi-corporate-label-repair-20261101/old-topic-destinations.json": "e8be0a6d6c2a46273d9977f89315df4fff217413f168dda5c38b203c054b5373",
+    "evidence/ledgers/malawi-corporate-label-repair-20261101/reviewer-handoff.md": "b86f49a0dfdc2ae9977c9f5b2c9e6affed2d4fe8eb93fa6a9b551bf21bb2a62f",
+    "evidence/ledgers/malawi-corporate-label-repair-20261101/source-reads.json": "d26d5ce0a22001252f041156ec4236beab5ecf49ae5f6196f770eaa5752c585d"
+  },
+  "no_commit_push_or_self_approval": true
+}

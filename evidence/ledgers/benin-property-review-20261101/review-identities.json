@@ -1,0 +1,37 @@
+{
+  "frozen_commit": "29102d1f721ee3bd8feaffa01d520e7fe92f6344",
+  "review_date": "2026-11-01",
+  "decision": "Accepted for two bounded partial preparation jobs; status-only reconciliation allowed as specified in review.md",
+  "files": [
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/checker-history.json",
+      "sha256": "dcd523149c1d6243541d40677644b1837917358f69048c7af33edfbabe77c43d",
+      "bytes": 438
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/independent-checks.py",
+      "sha256": "bded3debed291337a2d1053d557e213e9a4df25a42b64c25aae3db548ed005b7",
+      "bytes": 18340
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/mechanical-preservation.json",
+      "sha256": "cabae0dbc694911141c9b93f632a522a7c13934166665c1736d12c63ff6a84e3",
+      "bytes": 18397
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/review.md",
+      "sha256": "51f40c0351c21ee93695e12be8706d16d0ac57ae20c5efd19356372813e7f62c",
+      "bytes": 11047
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/row-verdicts.json",
+      "sha256": "ff424cd983119c72818d0da32d4052f2aa7a5020ba0c53e1ddeb896d91176caf",
+      "bytes": 64257
+    },
+    {
+      "path": "evidence/ledgers/benin-property-review-20261101/row-verdicts.md",
+      "sha256": "117f72f9a2b1d83e8d4ced88fd2b219b022c29609c75a7a4511350c46391db32",
+      "bytes": 9972
+    }
+  ]
+}

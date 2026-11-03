@@ -1,0 +1,47 @@
+{
+  "review_date": "2026-11-01",
+  "content_commit": "a64f729d0ad3245df3ff3838d143b4263c0edc07",
+  "result": "accepted for bounded source fidelity; no substantive correction required",
+  "immutable_initial_review_files": [
+    {
+      "path": "evidence/ledgers/togo-rental-review-20261101/ledger-row-review.json",
+      "sha256": "606c17c4a4fe51bb1d349da6c1a047eda6929f646de8accdce399d0a61a283b1",
+      "bytes": 13266
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-review-20261101/ledger-row-review.tsv",
+      "sha256": "81b8a8fe86905a4902d9c4cff53eb4914a0ce313f2f117052985233fd75563bc",
+      "bytes": 5412
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-review-20261101/mechanical-receipt.json",
+      "sha256": "7d7de1199db9feb83af8aa62c9999010d2bd1ed621bb54ebdcd9d42de3219f3e",
+      "bytes": 8418
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-review-20261101/preservation-receipt.json",
+      "sha256": "3f3d1e89cc3ed503323155efe27edd2244e2b100093e3e0672f0fb06e8b1be03",
+      "bytes": 17753
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-review-20261101/private-source-artifacts.json",
+      "sha256": "77e4380971ed815d5066c68782956b63997a05245551ed7d3b1e0ae95fe85e3c",
+      "bytes": 3979
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-review-20261101/review-record.md",
+      "sha256": "909e2401c7e93783e83fce4a05cbe99ca3a4e8d9cfdb9e06611eef79d6d58d1e",
+      "bytes": 7269
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-review-20261101/status-only-allowance.json",
+      "sha256": "9650a396d44c40df4c0e707f88e5b825bbd859cade633ae58c45dd9887b2d448",
+      "bytes": 1774
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-review-20261101/validate-review.py",
+      "sha256": "7c450aaeb152d1bc47a9415035f997b8961fe6ebbf700eda343cc64eb26043b2",
+      "bytes": 15505
+    }
+  ]
+}

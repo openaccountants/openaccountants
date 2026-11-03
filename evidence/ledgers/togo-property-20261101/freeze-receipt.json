@@ -1,0 +1,46 @@
+{
+  "status": "Frozen writer candidate, source review pending",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "files": [
+    {
+      "path": "evidence/ledgers/togo-property-20261101/old-topic-destinations.json",
+      "sha256": "8221fe973852432be12c879117844b66f3069e203e6570b697ba4073c1c74b19"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/preservation-baseline.json",
+      "sha256": "362a0e135868298bfc1afc3d6fe0f2b7aae198512eddca02134145ca456943c3"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/readme-addition.json",
+      "sha256": "80e81626abe944dab28c7633da18222ab0e3b89f4b20cb2ece4399dd28eb76ea"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/source-identities.json",
+      "sha256": "b096cd4da3181e3ef4f844dd196164a4772aff0de50d4a815b0f9b7df07be073"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/tg-property-tax.json",
+      "sha256": "a457e6a78f8fd2ac78c7c4a902a30754b03caa02ae5c62f6f058027881e6ef1d"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/tg-property-tax.md",
+      "sha256": "a5f922fe6e6fa5f28c2e471eaf195e4704480493b7c714bb5fda69c6539ed5dc"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/writer-checks.json",
+      "sha256": "bb2f20a919f2d94dfb2803dfb60f8c24e3ea79e1698553620bd92ece886ed9b9"
+    },
+    {
+      "path": "evidence/ledgers/togo-property-20261101/writer-record.md",
+      "sha256": "dedc989d90edf3ab93449c3781a1a7506a6e996e8a07f73b57b6c1de33d8924c"
+    },
+    {
+      "path": "skills/togo/README.md",
+      "sha256": "48c5f380ac789b26dbebc2339a674c5e616e14011fbd58fed3c792698795400c"
+    },
+    {
+      "path": "skills/togo/tg-property-tax.md",
+      "sha256": "f3b4b03a41bfada045b53ff5d8de45705d40044c5b79c8749ace5509454cf53d"
+    }
+  ]
+}

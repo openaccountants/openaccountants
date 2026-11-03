@@ -1,0 +1,509 @@
+{
+  "head": "d75b5305a7e7007900c9e14d57e97fb9d7d0769a",
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "guides": {
+    "ae-corporate-tax": {
+      "sha256": "68a1bfa11994956df556b509560f0cf6f3779176cd07d52a99c35ce9908fba9a",
+      "worktree_exact": true,
+      "ledger_rows": 216,
+      "ledger_text_exact": true,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_and_cta": {
+        "base": {
+          "platform_exact": true,
+          "cta_exact": true
+        },
+        "candidate-df33d21": {
+          "platform_exact": true,
+          "cta_exact": true
+        }
+      }
+    },
+    "ae-payroll-social": {
+      "sha256": "538f3ba52ea3442d6229059963ac6901ed68cec62976f3691ef3b61b4e64452b",
+      "worktree_exact": true,
+      "ledger_rows": 101,
+      "ledger_text_exact": true,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_and_cta": {
+        "base": {
+          "platform_exact": true,
+          "cta_exact": true
+        },
+        "candidate-df33d21": {
+          "platform_exact": true,
+          "cta_exact": true
+        }
+      }
+    },
+    "uae-vat": {
+      "sha256": "2eae4edcfbaebf99664fe1e5b23ed9a6b6129ce969fdd35aaa4bde6dd53b677b",
+      "worktree_exact": true,
+      "ledger_rows": 214,
+      "ledger_text_exact": true,
+      "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+      "platform_and_cta": {
+        "base": {
+          "platform_exact": true,
+          "cta_exact": true
+        },
+        "candidate-df33d21": {
+          "platform_exact": true,
+          "cta_exact": true
+        }
+      }
+    }
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S02",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S03",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S04",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S05",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S06",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S07",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S08",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S09",
+      "pdf_exact": true,
+      "extract_exact": null,
+      "scope_exact": null
+    },
+    {
+      "id": "S10",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S11",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S12",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S13",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S14",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S15",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S16",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S17",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S18",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S19",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S20",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S21",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S22",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S23",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S24",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S25",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S26",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S27",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S28",
+      "pdf_exact": true,
+      "extract_exact": null,
+      "scope_exact": null
+    },
+    {
+      "id": "S29",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S30",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S31",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S32",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S33",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S36",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S37",
+      "pdf_exact": true,
+      "extract_exact": null,
+      "scope_exact": null
+    },
+    {
+      "id": "S38",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S39",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "S40",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "A17",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "A15",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    },
+    {
+      "id": "A13",
+      "pdf_exact": true,
+      "extract_exact": true,
+      "scope_exact": true
+    }
+  ],
+  "predecessors": {
+    "ae-corporate-tax/base": {
+      "hash": "4fd52d846a06db31c1210ac38083f74d0530a3094d2100350fb2dc9f1b8378f1",
+      "snapshot_exact": true,
+      "bytes": 43351,
+      "shrink_pct": -28.304
+    },
+    "ae-corporate-tax/candidate-df33d21": {
+      "hash": "ca661928b4210cce2668b96e8c0111ada269adb6fe5f76ad6080ba9bf93b3203",
+      "snapshot_exact": true,
+      "bytes": 49634,
+      "shrink_pct": -12.062
+    },
+    "ae-payroll-social/base": {
+      "hash": "e60e40c8ec834bb7be919e8eb491cff46baf44d52a6947952b40fdd53486fa80",
+      "snapshot_exact": true,
+      "bytes": 34548,
+      "shrink_pct": -4.142
+    },
+    "ae-payroll-social/candidate-df33d21": {
+      "hash": "25e85a6e36f6b3f9dc183ab3aa901ada70164faf5fb1ef5f537cca31905f8122",
+      "snapshot_exact": true,
+      "bytes": 38295,
+      "shrink_pct": 6.048
+    },
+    "uae-vat/base": {
+      "hash": "44ecaac78153c33d5e714d3921c8b86f00591599a7472062f917a9626bb8d3b9",
+      "snapshot_exact": true,
+      "bytes": 50980,
+      "shrink_pct": -24.706
+    },
+    "uae-vat/candidate-df33d21": {
+      "hash": "f4076f707169d48b3a4885cf7ab76d7b4b443141ea5fa5407770651bd8cc0a99",
+      "snapshot_exact": true,
+      "bytes": 53429,
+      "shrink_pct": -18.99
+    }
+  },
+  "destination_failures": [
+    {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "line": 36,
+      "destination": "skills/uae/ae-corporate-tax.md line 36",
+      "old_text": "- **Revenue for this period and for every earlier tax period.** Small Business Relief fails permanently once any period's revenue has been over AED 3,000,000. ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf))"
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "line": 38,
+      "destination": "skills/uae/ae-corporate-tax.md line 37",
+      "old_text": "- **Free zone?** Which free zone, what activities, who the customers are (free zone persons, mainland businesses, individuals), whether audited accounts exist, and whether the company has elected out of the QFZP regime."
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "line": 41,
+      "destination": "skills/uae/ae-corporate-tax.md line 39",
+      "old_text": "- **Interest expense and EBITDA**, if net interest is large."
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "line": 43,
+      "destination": "skills/uae/ae-corporate-tax.md line 40",
+      "old_text": "- **Entertainment, fines, owner drawings and personal expenses** in the accounts."
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "candidate-df33d21",
+      "line": 36,
+      "destination": "skills/uae/ae-corporate-tax.md line 36",
+      "old_text": "- **Revenue for this period and for every earlier tax period.** Small Business Relief fails permanently once any period's revenue has been over AED 3,000,000. ([Ministerial Decision No. 73 of 2023](https://tax.gov.ae/Datafolder/Files/Legislation/Corporate%20Tax/Ministerial%20Decision%20No.%2073%20of%202023%20-%20for%20publishing.pdf))"
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "candidate-df33d21",
+      "line": 38,
+      "destination": "skills/uae/ae-corporate-tax.md line 37",
+      "old_text": "- **Free zone?** Which free zone, what activities, who the customers are (free zone persons, mainland businesses, individuals), whether audited accounts exist, and whether the company has elected out of the QFZP regime."
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "candidate-df33d21",
+      "line": 41,
+      "destination": "skills/uae/ae-corporate-tax.md line 39",
+      "old_text": "- **Interest expense and EBITDA**, if net interest is large."
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "candidate-df33d21",
+      "line": 43,
+      "destination": "skills/uae/ae-corporate-tax.md line 40",
+      "old_text": "- **Entertainment, fines, owner drawings and personal expenses** in the accounts."
+    },
+    {
+      "guide": "ae-corporate-tax",
+      "version": "candidate-df33d21",
+      "line": 44,
+      "destination": "skills/uae/ae-corporate-tax.md line 38",
+      "old_text": "- **Returns already filed or due**, especially for periods ending 31 December 2025 (the due date, 30 September 2026, has passed, so check for late penalties)."
+    },
+    {
+      "guide": "ae-payroll-social",
+      "version": "base",
+      "line": 64,
+      "destination": "skills/uae/ae-payroll-social.md line 59",
+      "old_text": "- Does the employer pay into a private pension or end-of-service savings fund for staff? How much, and has it actually been paid in the Tax Period?"
+    },
+    {
+      "guide": "ae-payroll-social",
+      "version": "candidate-df33d21",
+      "line": 65,
+      "destination": "skills/uae/ae-payroll-social.md line 59",
+      "old_text": "- Does the employer pay into a private pension or end-of-service savings fund for staff? How much, and has it actually been paid in the Tax Period?"
+    },
+    {
+      "guide": "uae-vat",
+      "version": "base",
+      "line": 37,
+      "destination": "skills/uae/uae-vat.md line 37",
+      "old_text": "- **Is it a single registrant or a member of a Tax Group?** Tax Groups are referred out."
+    },
+    {
+      "guide": "uae-vat",
+      "version": "base",
+      "line": 38,
+      "destination": "skills/uae/uae-vat.md line 37",
+      "old_text": "- **Where is it established?** Which Emirate (for the Box 1 split), and is it in a Designated Zone, a free zone that is not designated, or the mainland?"
+    },
+    {
+      "guide": "uae-vat",
+      "version": "base",
+      "line": 40,
+      "destination": "skills/uae/uae-vat.md line 38",
+      "old_text": "- **Does it make any exempt supplies?** If more than trivial, input tax must be apportioned: refer."
+    },
+    {
+      "guide": "uae-vat",
+      "version": "base",
+      "line": 42,
+      "destination": "skills/uae/uae-vat.md line 39",
+      "old_text": "- **Which costs are entertainment, cars, or staff benefits?** These are the main blocked items."
+    },
+    {
+      "guide": "uae-vat",
+      "version": "base",
+      "line": 45,
+      "destination": "skills/uae/uae-vat.md line 41",
+      "old_text": "- **Excess input tax carried forward?** And from which tax period it arose (the five-year limit applies from 1 January 2026)."
+    },
+    {
+      "guide": "uae-vat",
+      "version": "candidate-df33d21",
+      "line": 37,
+      "destination": "skills/uae/uae-vat.md line 37",
+      "old_text": "- **Is it a single registrant or a member of a Tax Group?** Tax Groups are referred out."
+    },
+    {
+      "guide": "uae-vat",
+      "version": "candidate-df33d21",
+      "line": 38,
+      "destination": "skills/uae/uae-vat.md line 37",
+      "old_text": "- **Where is it established?** Which Emirate (for the Box 1 split), and is it in a Designated Zone, a free zone that is not designated, or the mainland?"
+    },
+    {
+      "guide": "uae-vat",
+      "version": "candidate-df33d21",
+      "line": 40,
+      "destination": "skills/uae/uae-vat.md line 38",
+      "old_text": "- **Does it make any exempt supplies?** If more than trivial, input tax must be apportioned: refer."
+    },
+    {
+      "guide": "uae-vat",
+      "version": "candidate-df33d21",
+      "line": 42,
+      "destination": "skills/uae/uae-vat.md line 39",
+      "old_text": "- **Which costs are entertainment, cars, or staff benefits?** These are the main blocked items."
+    },
+    {
+      "guide": "uae-vat",
+      "version": "candidate-df33d21",
+      "line": 45,
+      "destination": "skills/uae/uae-vat.md line 41",
+      "old_text": "- **Excess input tax carried forward?** And from which tax period it arose (the five-year limit applies from 1 January 2026)."
+    }
+  ],
+  "destination_rows": 1543,
+  "destination_status_counts": {
+    "RETAINED": 1167,
+    "REPAIRED / RELOCATED": 235,
+    "SPLIT / NON-OPERATIVE HOLD": 66,
+    "PROVENANCE": 62,
+    "NON-OPERATIVE HOLD": 11,
+    "NON-OPERATIVE HOLD / STRUCTURE": 2
+  },
+  "ae-tax-residency": {
+    "unchanged_base": true,
+    "unchanged_old_head": true
+  },
+  "general-uae-corporate-tax-guide": {
+    "unchanged_base": true,
+    "unchanged_old_head": true
+  }
+}

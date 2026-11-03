@@ -1,0 +1,54 @@
+[
+  {
+    "file": "skills/republic-of-congo/cg-company-formation.md",
+    "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085",
+    "description_words": 113,
+    "cta_byte_identical": true,
+    "platform_fields_identical": true
+  },
+  {
+    "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+    "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149",
+    "description_words": 108,
+    "cta_byte_identical": true,
+    "platform_fields_identical": true
+  },
+  {
+    "file": "skills/republic-of-congo/cg-cross-border.md",
+    "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747",
+    "description_words": 105
+  },
+  {
+    "file": "skills/republic-of-congo/cg-income-tax.md",
+    "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713",
+    "description_words": 108,
+    "cta_byte_identical": true,
+    "platform_fields_identical": true
+  },
+  {
+    "file": "skills/republic-of-congo/cg-payroll-social.md",
+    "sha256": "d8fa60517d2b38fc6606980219d989c4a397fda91cc2a9df5768fbd57c48cfb2",
+    "description_words": 115,
+    "cta_byte_identical": true,
+    "platform_fields_identical": true
+  },
+  {
+    "file": "skills/republic-of-congo/cg-tax-overview.md",
+    "sha256": "b9c144f0b85207f81a995846f85bb7363e2f37b51fcbf68f2b8b35a941830889",
+    "description_words": 111,
+    "cta_byte_identical": true,
+    "platform_fields_identical": true
+  },
+  {
+    "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+    "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e",
+    "description_words": 109
+  },
+  {
+    "file": "skills/republic-of-congo/cg-vat-gst.md",
+    "sha256": "5edf039c1decf3bfa82c412d76ab6991e5433ff472952a0eb15a2bae410d35a9",
+    "description_words": 107,
+    "cta_byte_identical": true,
+    "platform_fields_identical": true
+  }
+]

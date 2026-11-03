@@ -1,0 +1,61 @@
+[
+  {
+    "id": "P2-01",
+    "guide": "uae-vat",
+    "lines": [
+      234,
+      255
+    ],
+    "source": "S26 Article8(5)-(6), S29 Article55",
+    "finding": "The voluntary-registration boundary/case gives a categorical may-register-and-recover result from expenses alone. Article8(6) also requires proof of carrying on Business in UAE and intended Article54(1)(a)-(c) supplies; input recovery has its own conditions.",
+    "repair": "Add those factual assumptions to Case2; qualify boundary234 by Article8(5)-(6). Example remains illustrative200k, not newlaw."
+  },
+  {
+    "id": "P2-02",
+    "guide": "uae-vat",
+    "lines": [
+      238,
+      239
+    ],
+    "source": "S26 Article59(5),(16)",
+    "finding": "The10k simplified/full-invoice boundary rows omit the reverse-charge and ElectronicInvoice exclusions. Those are correctly stated in main paragraph188-189 but the boundary independently says simplified allowed.",
+    "repair": "State ordinary invoices outside reverse charge and mandatory/voluntarily adopted ElectronicInvoice system in these two boundary rows, or expressly refer the paragraph188-189 exclusions in the condition cell."
+  },
+  {
+    "id": "P2-03",
+    "guide": "uae-vat",
+    "lines": [
+      351
+    ],
+    "source": "S29 current amendedArticle48(1),footnote21;cachedS32 doesnotstateoldselfinvoiceobligation",
+    "finding": "Historical periods are expressly included, but current consolidatedArticle48 doesnot print deletedpre2026text. No cachedcontemporaneousoperativeclause has beenlocated toconfirm the claimed earlier selfinvoiceobligation.",
+    "repair": "Keep correctingpastperiodsundertheirperiodlaw as workflow; explicitlyhold historicalreversechargeselfinvoiceinstructions pendingcontemporaneouslaw ratherthanclaimingtheirverification. This is agenuinecachedsourcegap, not permissiontoturn unreadcurrentlawintoholds."
+  },
+  {
+    "id": "P2-04",
+    "guide": "ae-corporate-tax + ae-payroll-social",
+    "lines": {
+      "ae-corporate-tax": [
+        145
+      ],
+      "ae-payroll-social": [
+        151
+      ]
+    },
+    "source": "S05 Article36(1),(6), readwithArticle34",
+    "finding": "CTconnectedpersondeductiontablerow and payrolldirectorCase6 stateonlyMarketValue withoutArticle36(6)listed/regulatedpersonexceptions. Mainrelatedpersonparagraphcorrectlycontainsexceptions; theserepeatedplacementsdo not.",
+    "repair": "QualifytheCTtablerowandpayrollCase6withArticle36(6)exceptions;retainArticle34relatedpartyarm-lengthrulewhereseparatelyapplicable."
+  },
+  {
+    "id": "P2-05",
+    "guide": "ae-corporate-tax",
+    "lines": [
+      224,
+      227,
+      228
+    ],
+    "source": "S05 Articles30(6),31,37-39;S06 Articles11,14",
+    "finding": "Case3assumes700krelievablelosseswithoutcontinuity/eligibilityfacts;Case4propertydeveloperdoesnotestablishjuridicalinscopepersonorArticle31/historicaldebt/infrastructuretreatment. Arithmeticpassesbutlegalconclusionsneedstipulatedinputs.",
+    "repair": "SayCase3lossesareeligibleunderArticles37-39; sayCase4isaninscopejuridicaldeveloperwithArticle31andS06exclusionchecksresolvedand20misaneligibleNetInterestExpenditureamount. Do notcalculateunconfirmedexemptions."
+  }
+]

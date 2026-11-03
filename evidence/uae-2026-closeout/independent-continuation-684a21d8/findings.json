@@ -1,0 +1,47 @@
+[
+  {
+    "id": "C01",
+    "guide": "uae-vat",
+    "lines": [
+      78
+    ],
+    "severity": "conditions",
+    "claim": "Zero-rate table describes first supplies of charity buildings and converted residential buildings without their operative conditions.",
+    "source": "S26 Articles38-39; S29 Article45(10)-(11)",
+    "quote": "solely for a Relevant Charitable Activity / within 3 years / within 5 five years prior",
+    "repair": "In this rates row, state charity building specifically designed solely for Relevant Charitable Activity; converted building first supplied within3years of conversion, original not residential nor part residential in5years before conversion. Do not treat labels alone as qualification."
+  },
+  {
+    "id": "C02",
+    "guide": "ae-corporate-tax",
+    "lines": [
+      184
+    ],
+    "severity": "conditions",
+    "claim": "The DMTT Who screening row uses a fixed EUR750m test without the adjacent short-year proportional adjustment.",
+    "source": "S04 Annex1.1.1-1.1.2,1.3.3",
+    "quote": "the EUR 750 million threshold is adjusted proportionally",
+    "repair": "Add proportional adjustment for each non12-month comparison year, retain Excluded Entity limitation and flag Article6.1 merger/demerger special scope for specialist check. A summary can refer detailed calculation, but its screen must not exclude short-year groups by applying750m unchanged."
+  },
+  {
+    "id": "C03",
+    "guide": "uae-vat",
+    "lines": [
+      226
+    ],
+    "severity": "penalty precision",
+    "claim": "A single sentence combines electronic invoices and credit notes under a single AED5000 monthly cap. Table annex items2 and3 impose separate violation/cap entries.",
+    "source": "S40 annex items2-3",
+    "quote": "AED 100 for each Electronic Credit Note up to a maximum of AED 5,000 per calendar month",
+    "repair": "State AED100 each electronic invoice, capped5000 per calendar month, and separately AED100 each electronic credit note, separately capped5000 per calendar month. Keep issuer/recipient distinction for notification penalties."
+  },
+  {
+    "id": "C04",
+    "guide": "uae-vat",
+    "lines": [],
+    "severity": "destination evidence",
+    "claim": "Only base identities received the focused overrides; identical old claims in candidate-df33d21 still point to unrelated text.",
+    "source": "old-rule-destinations.json plus focused destination-corrections.json",
+    "repair": "Add immutable destination overrides for uae-vat/candidate-df33d21:135 to current133 and :180 to current178. Reconcile other wrong heading/case locators semantically; do not mark all376 accepted from line identity."
+  }
+]

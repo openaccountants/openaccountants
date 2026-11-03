@@ -1,0 +1,359 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Kunngerð nr. 98 frá 14. desember 1987 um uppgerð av skattligu eginnýtsluni
+14. desember 1987Nr. 98
+Kunngerð um uppgerð av skattligu eginnýtsluni
+Við heimild í § 31, 3. stk. í løgtingslóg nr. 86 frá 1. september 1983 um landsskatt og kommunuskatt við seinni broytingum hevur landsstýrið fyrisett:
+§ 1. Tann skattliga uppgerðin av eginnýtsluni sambært § 31, 2. stk. verður gjørd óbeinleiðis við støði í inntøku- og ognargongdini í árinum.
+2. stk. Skattliga eginnýtslan kann tó verða uppgjørd beinleiðis, um ársroknskapurin hjá tí skattskylduga fevnir um allar inntøkur og útreiðslur og alla ogn og skuld við byrjan og enda inntøkuársins, og um roknskapurin kann verða lagdur til grund fyri skattaálíkningini.
+3. stk. Tann í 1. stk. umrødda uppgerð verður gjørd sambært hesari meginreglu:
+1. Afturat eginognini við ársbyrjan verður lagt:
+a. skattskylduga inntøkan.
+b. ognarvøkstur, sum ikki er við í skattskyldugu inntøkuni.
+c. upphæddir, sum eru drignar frá, tá ið tann skattskylduga inntøkan verður uppgjørd, men sum ikki hava minkað um ognina, og
+d. ikki skattskyldugur ognarvøkstur orsakað av virðisbroytingum av ognini.
+2. Frá samlaðu upphæddini undir pkt. 1 verður drigið:
+a. ognarminking, sum ikki er drigin frá, tá ið tann skattskylduga inntøkan verður uppgjørd, men sum ikki kann roknast við í eginnýtsluna.
+b. skattskyldug inntøka, sum ikki hevur økt um ognina.
+c. ognarminking orsakað av virðisbroytingum av ognini, men sum ikki kann dragast frá, tá ið tann skattskylduga inntøkan verður gjørd upp,
+d. eginogn við árs enda.
+§ 2. Tá ið skattliga eginnýtslan hjá hjúnum, sum eru samskattað við enda inntøkuársins, verður uppgjørd, verður samlaða inntøka teirra fyri alt inntøkuárið og ogn og skuld við ársbyrjan og enda tikin við. Reglan er eisini galdandi fyri persón, sum í beinleiðis sambandi við at hin hjúnafelagin doyr, velur at sita í óskiftum búgvi.
+2. stk. Við uppgerðini av skattligu eginnýtsluni hjá persóni, har samskattingin við hjúnafelagan er hildin uppat hjá í inntøkuárinum, antin tí hann er sundurlisin, skildur ella felagsbúgvið verður skift í beinleiðis sambandi við andlátið, verður inntøkan hjá hjúnafelagnum ikki tikin við.
+3. stk. Við uppgerðini av skattligu eginnýtsluni, tá endalig álíkning verður gjørd hjá persóni, sum er deyður í inntøkuárinum, samanber § 14 í samtíðarskattalógini, verður inntøkan hjá eftirsitandi hjúnafelaga ikki tikin við.
+4. stk. Um bæði tann skattskyldugi og hjúnafelagin í teimum í 2. og 3. stk. nevndu førum hava gjørt avskrivingar og lagt í íløgugrunn, sum umrøtt er í § 33, 2. stk. í samtíðarskattalógini, kann skattliga eginnýtslan hjá hjúnunum verða uppgjørd undir einum, um tey, ávikavist eftirsitandi hjúnafelagin og búgvið, eru samd um henda uppgerðarháttin.
+§ 3. Henda kunngerð fær gildi frá og við inntøkuárinum 1987.
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Kunngerð
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Fíggjarmálaráðið
+Útgávudagur: 17-12-1987
+Tilvísingar
+Heimildir
+Kunngerðablaðið
+Kunngerðarblað 1987 A - Kunngerð 98 frá 14. desember 1987
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

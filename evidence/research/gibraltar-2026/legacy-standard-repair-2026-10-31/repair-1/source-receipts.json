@@ -1,0 +1,159 @@
+[
+  {
+    "id": "ita",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+    "fetched_date": "2026-10-31",
+    "route": "direct official HTTPS GET; no browser/archive fallback",
+    "capture_reuse": "Existing accepted completion-stage capture reused; no source file modified",
+    "pdf_path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.pdf",
+    "pdf_sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+    "text_path": "evidence/research/gibraltar-2026/completion-2026-10-31/sources/income-tax-act.txt",
+    "text_sha256": "9f7260910126584f39d4ab5983c973db89b6977bb88a15cf129ae835a51e09d7",
+    "read_scope": [
+      "section 35(1)\u2013(4): service, written notice, grounds and late admission",
+      "section 36(1)\u2013(4): return/assessment/appeal conditions, exclusion of undisputed tax, written application and discretion",
+      "section 61: proof, six-year period, certification",
+      "section 38: finality subject to section 61 and prohibition on reopening matters determined on appeal",
+      "Schedule 3 paragraph 16(1)\u2013(2): employer/self-employed additional deduction",
+      "Schedule 3 paragraph 16(3): Commissioner approval",
+      "Schedule 3 paragraph 16(2A)\u2013(3): period-specific 60% and qualifying-training definition",
+      "Schedule 3 paragraph 17(1)(a)\u2013(b): application, own property and timing",
+      "Schedule 3 paragraph 17(1)\u2013(2): eligible fees, percentage, aggregate/period/years limits",
+      "Schedule 3 paragraph 17A: closed entry window, new activity, employees, discretion, three years and no carry/set-off",
+      "Schedule 1 Part 2 paragraph 1(2)(a)",
+      "Schedule 1 Part 2 paragraph 1(2)(b)",
+      "Schedule 1 Part 2 paragraph 1(2): threshold prerequisite and property/share profits",
+      "section 36(1)\u2013(4) eligibility, exclusion of undisputed part and discretion",
+      "Schedule 3 paragraph 16(1)\u2013(2)",
+      "Schedule 3 paragraph 16(3)",
+      "Schedule 3 paragraph 17(1) conditions",
+      "Schedule 3 paragraph 17(1)\u2013(2) caps",
+      "section 36(9)\u2013(11): due date, surcharge and specified overpayment-interest rule"
+    ],
+    "publication_reuse_status": "Pending parent source-capture reuse check; official availability is not a blanket reuse licence"
+  },
+  {
+    "id": "ubo",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf",
+    "fetched_date": "2026-10-31",
+    "route": "direct official HTTPS GET; no browser/archive fallback",
+    "capture_reuse": "Original legacy-stage capture reused; no source file modified",
+    "pdf_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/ubo.pdf",
+    "pdf_sha256": "55428568956a4ded2911e90ea7fbffaedbae9c250aceca3631fce29b5645cd3e",
+    "text_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/ubo.txt",
+    "text_sha256": "946207f2211ef18b8d3b1931cefaa14c78cc70e685e6620cc94fef84637f999c",
+    "read_scope": [
+      "regulation 3(1), corporate entities: ownership, other control and fallback",
+      "regulation 3(2)\u2013(3) ownership indication and amendment power",
+      "regulations 42\u201343: cap, specified failures/persons, reasonable-steps safeguard, notices and appeal",
+      "regulation 3(2)\u2013(3)",
+      "regulation 3(1)(b) other-control/fallback investigation"
+    ],
+    "publication_reuse_status": "Pending parent source-capture reuse check; official availability is not a blanket reuse licence"
+  },
+  {
+    "id": "companies",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf",
+    "fetched_date": "2026-10-31",
+    "route": "direct official HTTPS GET; no browser/archive fallback",
+    "capture_reuse": "Original legacy-stage capture reused; no source file modified",
+    "pdf_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/companies.pdf",
+    "pdf_sha256": "e4fa70d64c57709f7d243c5d82b72301b6e2e133929f0d6e91ac7d56c2f35c75",
+    "text_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/companies.txt",
+    "text_sha256": "818e03dd4073f24f8e77e09fe97f6ce95297deae5adc6f7f7ab8a050713a5e7c",
+    "read_scope": [
+      "Companies Act section 10: share capital and initial allocations"
+    ],
+    "publication_reuse_status": "Pending parent source-capture reuse check; official availability is not a blanket reuse licence"
+  },
+  {
+    "id": "finc01",
+    "url": "https://www.companieshouse.gi/publications/FINC01.pdf",
+    "fetched_date": "2026-10-31",
+    "route": "direct official HTTPS GET; no browser/archive fallback",
+    "capture_reuse": "Original legacy-stage capture reused; no source file modified",
+    "pdf_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/finc01.pdf",
+    "pdf_sha256": "bda2f66043e7f497e011692baf4808d88da4df3cf283e4795cf9110790569165",
+    "text_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/finc01.txt",
+    "text_sha256": "a30488984d104ca8fcdc7e90dc304e4e99c9262e7eaa04a4e3e5d357298c5c29",
+    "read_scope": [
+      "FINC01 contents: authorised capital and initial shareholding",
+      "FINC01 G3 and nominal-value footnote"
+    ],
+    "publication_reuse_status": "Pending parent source-capture reuse check; official availability is not a blanket reuse licence"
+  },
+  {
+    "id": "stamp",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf",
+    "fetched_date": "2026-10-31",
+    "route": "direct official HTTPS GET; no browser/archive fallback",
+    "capture_reuse": "Original legacy-stage capture reused; no source file modified",
+    "pdf_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/stamp.pdf",
+    "pdf_sha256": "2bda1cf6a9b3a9913d8b38dee70c9fdf33646e4d539ef3ecaee2eb0dd097224d",
+    "text_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/stamp.txt",
+    "text_sha256": "61750c0f7d6c68862bd1cecacede03c60089e9970b6440a6f81c120c7c873882",
+    "read_scope": [
+      "Schedule 1 conveyance paragraph (1)",
+      "Schedule 1 conveyance paragraph (2), except qualifying paragraph (1A)",
+      "Schedule 1 conveyance paragraph (3), except qualifying paragraph (1A)"
+    ],
+    "publication_reuse_status": "Pending parent source-capture reuse check; official availability is not a blanket reuse licence"
+  },
+  {
+    "id": "uk-agreement",
+    "url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/UK-Gibraltar%20Double%20Taxation%20Agreement.pdf",
+    "fetched_date": "2026-10-31",
+    "route": "direct official HTTPS GET; no browser/archive fallback",
+    "capture_reuse": "Original legacy-stage capture reused; no source file modified",
+    "pdf_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.pdf",
+    "pdf_sha256": "b16d03affd01b0638e14ed004a49aa3d3ea96b10141d0a824c46a1476197b75d",
+    "text_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/uk-agreement.txt",
+    "text_sha256": "e7744271036021d81e04d2ed18753591b307c6a1530383718762df938813fc90",
+    "read_scope": [
+      "Article 14(1)\u2013(2): ordinary duties and all three conjunctive short-stay conditions",
+      "Article 22(1): Gibraltar inclusion and same-income lesser-tax credit",
+      "Article 22(3): exclusion where UK tax solely due to UK-resident attribution",
+      "Article 21(2)\u2013(4)(a): offshore scope, enterprise PE rule, 30-day exception and associated-activity aggregation",
+      "Article 21(4)(b): associated enterprise definition",
+      "Article 10(1)\u2013(2): residence/beneficial ownership and ordinary/property/pension rules",
+      "Article 10(4): effectively-connected PE exception",
+      "Article 10(2): entire qualifying property-vehicle and pension exception, gross ceiling and company-profit limitation",
+      "Article 11(2)\u2013(3) parent condition",
+      "Article 11(3)(a) beneficial-owner parent",
+      "Article 11(3)(a)(iv) ownership route",
+      "Article 12(2)\u2013(3) parent condition",
+      "Article 12(3)(d) ownership route",
+      "Article 28(1) purpose test"
+    ],
+    "publication_reuse_status": "Pending parent source-capture reuse check; official availability is not a blanket reuse licence"
+  },
+  {
+    "id": "spain-agreement",
+    "url": "https://assets.publishing.service.gov.uk/media/6705890ee84ae1fd8592f017/TS_78.2024_UK_Spain_Agreement_Taxation_Financial_Interests_Gibraltar.pdf",
+    "fetched_date": "2026-10-31",
+    "route": "direct official HTTPS GET; no browser/archive fallback",
+    "capture_reuse": "Original legacy-stage capture reused; no source file modified",
+    "pdf_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/spain-agreement.pdf",
+    "pdf_sha256": "47645688bc3a4bfd66eac566dad8eeab7565ecebbe2f534cabbb590596261f9b",
+    "text_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/spain-agreement.txt",
+    "text_sha256": "51a1f796cf2fbddc38be181a0cf35ee8ade22864e40bb7d9df974d532826e0c3",
+    "read_scope": [
+      "Article 2(1)(a)\u2013(b)(ii): domestic dual-residence prerequisite and alternative limbs",
+      "Article 2(2)(b)\u2013(c): limited triggers, incorporation/test dates, every cumulative historical condition and related-party turnover"
+    ],
+    "publication_reuse_status": "Pending parent source-capture reuse check; official availability is not a blanket reuse licence"
+  },
+  {
+    "id": "rates",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+    "fetched_date": "2026-10-31",
+    "route": "direct official HTTPS GET; no browser/archive fallback",
+    "capture_reuse": "Original legacy-stage capture reused; no source file modified",
+    "pdf_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/rates.pdf",
+    "pdf_sha256": "a967db7d8f0e83ca348898a10d5448276e1f3c6ab19e57485247da784f6a817b",
+    "text_path": "evidence/research/gibraltar-2026/legacy-standard-repair-2026-10-31/sources/rates.txt",
+    "text_sha256": "c0407e53ef359e91d9062a9fb705664b69ecfd9e8be7ee8ea47c3255fd961355",
+    "read_scope": [],
+    "publication_reuse_status": "Pending parent source-capture reuse check; official availability is not a blanket reuse licence"
+  }
+]

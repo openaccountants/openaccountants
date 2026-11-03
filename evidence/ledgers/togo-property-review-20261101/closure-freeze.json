@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-01",
+  "result": "accepted for conditional read-source working-paper fidelity; only exact status substitutions allowed",
+  "initial_review_freeze_sha256": "84db394d6b4ea1a6701673694f3f6b72f17083feb4abf0ec4d81724fc10bc6f7",
+  "files": [
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/validate-closure.py",
+      "sha256": "e36675269887214af2abd4ba36e4d6ab54695f0bd89f13a969793586b0da6461",
+      "bytes": 10722
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/closure-row-review.json",
+      "sha256": "ba49749c9772075a225346713ce78602ddaad3fa2358bcd971f6a25db1b4ed92",
+      "bytes": 23513
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/status-only-allowance.json",
+      "sha256": "4c16b6d56c05da846836b898b2ee139797ff5e93d46e85d77c01c937b8a45157",
+      "bytes": 1805
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/closure-receipt.json",
+      "sha256": "ce63dc6cbe09696c920b9585f9e062160bb381ae3b27ef82ee833d34e4902858",
+      "bytes": 13411
+    },
+    {
+      "path": "evidence/ledgers/togo-property-review-20261101/closure-record.md",
+      "sha256": "94e95d34ff98c4da94795a23037be6c79dd8ca5da8bd3e3ba0b84a70a8fe62ba",
+      "bytes": 6043
+    }
+  ]
+}

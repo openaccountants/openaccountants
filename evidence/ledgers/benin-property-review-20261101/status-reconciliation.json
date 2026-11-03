@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-01",
+  "permission": "review.md Narrow status-only reconciliation allowed",
+  "changes": [
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "before_sha256": "40cac2bdcacf7ecaf1f70e5deedffade2fd40dccf66956356fa1a1c402114637",
+      "after_sha256": "b63bb74b1fd8a3c76a8d581915111f6e8b76010c410683e7eb9e4cdb54091c51",
+      "before": "Independent source review of these new drafts is pending; no accountant has attested to this version.",
+      "after": "Independent AI source-fidelity review accepted the bounded preparation jobs on 1 November 2026; all stated holds remain and no accountant has attested to this version."
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "before_sha256": "4124bd25b23cbf3998c1fcbb436ac151588bbee4335e7a77201c2f9883b229a9",
+      "after_sha256": "6c01174957ea8f62c530248cca6228bd10d312f62ad4128282ac3c0f83672365",
+      "before": "Independent source review of these new drafts is pending; no accountant has attested to this version.",
+      "after": "Independent AI source-fidelity review accepted the bounded preparation jobs on 1 November 2026; all stated holds remain and no accountant has attested to this version."
+    },
+    {
+      "path": "skills/benin/README.md",
+      "before_sha256": "981b92a3dbda2bb3b4cb706d2cafa4b90418f67187c062e0e8d66f1badb2cb60",
+      "after_sha256": "9d500e845d2c6176314a0edd212c2d124c991137a2701f5f601501dceaa072d2",
+      "before": "Rental IRF and annual TFU jobs added as pending-review drafts;",
+      "after": "Rental IRF and annual TFU jobs added as independently source-reviewed partial drafts;"
+    },
+    {
+      "path": "skills/benin/README.md",
+      "before_sha256": "9d500e845d2c6176314a0edd212c2d124c991137a2701f5f601501dceaa072d2",
+      "after_sha256": "a39ce495da39ad018948609f45e1418756dc51bca775f1689a45c56649cc343a",
+      "before": "Two distinct pending-review jobs supplement the eight preserved Guides:",
+      "after": "Two distinct partial jobs supplement the eight preserved Guides, with [independent source review](../../evidence/ledgers/benin-property-review-20261101/review.md) accepted for 42 ledger rows and four examples:"
+    }
+  ],
+  "scope": "Only two new Guide closing status sentences and two README status phrases; no rule, figure, example, ledger, old Guide, platform field or hold changed."
+}

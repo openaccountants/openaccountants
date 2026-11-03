@@ -1,0 +1,103 @@
+{
+  "reviewed_on": "2026-11-01",
+  "reviewer": "Fresh independent Codex review; not accountant attestation",
+  "read_method": "Actual captured official PDFs with freshly matching download hashes. Cited and neighbouring text read from captured OCR; important numerical and negative-wording clauses also checked against actual page images. HTML source fields independently opened in web reader. OCR text matching was a cross-check, never accepted over scan.",
+  "combined_gazette": {
+    "PDF_pages_read_in_OCR": [
+      4,
+      5,
+      12,
+      13,
+      14,
+      15,
+      17,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      32,
+      34,
+      38,
+      39,
+      40,
+      41,
+      44
+    ],
+    "PDF_pages_visually_read": [
+      23,
+      24,
+      26,
+      29,
+      30,
+      40,
+      44
+    ],
+    "source_sha256": "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402"
+  },
+  "finance2026": {
+    "PDF_pages_read_in_OCR": [
+      16,
+      17,
+      18,
+      19,
+      27
+    ],
+    "PDF_pages_visually_read": [
+      16,
+      17,
+      18,
+      27
+    ],
+    "source_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24"
+  },
+  "rectifying2026": {
+    "PDF_pages_read_in_OCR": [
+      8,
+      9,
+      10,
+      11,
+      17
+    ],
+    "PDF_pages_visually_read": [
+      11
+    ],
+    "scope": "Relevant tax/amendment articles14-19 and final savings/repeal/commencement arts49-51; no complete annex review.",
+    "source_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127"
+  },
+  "rectifying2025": {
+    "PDF_pages_read_in_OCR": [
+      12,
+      13
+    ],
+    "PDF_pages_visually_read": [
+      12
+    ],
+    "scope": "Carried article9 mediation/re-examination only; not complete enacted24/011 chain.",
+    "source_sha256": "f5550e6eae855c868b8e449f78f3d5b4e337df543dcff3dbf3d5fa9428066d33"
+  },
+  "html_opened": [
+    {
+      "url": "https://finances.gouv.cd/reformes/reforme-fiscalite-directe-is-irpp",
+      "scope": "Actual commencement field1January2026 and direct-tax reform description."
+    },
+    {
+      "url": "https://dgi.gouv.cd/impot-sur-les-societes/",
+      "scope": "IS declaration timing, obtaining/completing/dating/signing form, bank payment attestation and observed public i-Impots entry link."
+    },
+    {
+      "url": "https://dgi.gouv.cd/impot-sur-le-revenu-des-personnes-physiques-irpp/",
+      "scope": "Global-income scope, categories, annual scale/cap and public links; no authenticated return."
+    }
+  ],
+  "unread_and_unapproved": [
+    "Complete original Finance Law24/011 carried provisions",
+    "All further implementing orders and current procedure consolidation",
+    "Authenticated return forms/field mappings/submission/payment/receipt path",
+    "Full other-category calculations and other explicit Guide gaps"
+  ],
+  "quote_crosscheck": "74/83short excerpts matched normalized captured OCR/HTML directly. Nine automatic nonmatches were inspected on scans and/or page continuation: corporate9,10,12,20,21,27;individual22,27,33. All nine are capture OCR/layout defects, not incorrect ledger quotations. The30%third-band number was also visually checked despite a matching phrase elsewhere in captured HTML."
+}

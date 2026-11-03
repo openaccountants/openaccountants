@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-01",
+  "initial_frozen_head": "2474af832b851a04c109d877a8dbf95134b21165",
+  "changes": [
+    "F1 SA unpaid-capital nominative-share, in-kind-only capital increase and no-bond conditions made explicit next to cash-payment rule; ledger10 already contains these conditions.",
+    "F2 CNSS institutional paragraph added to overview Sources and source manifest with actual HTML/reader hashes and scope.",
+    "F3 Formation Sources page list includes32, matching actual used120-1–120-5 source scope.",
+    "F2 closure locator corrected to actual Presentation §1 public institutional status, legal personality and supervision; replacement wording removed."
+  ],
+  "parent_actual_source_read": "OHADA original renderedPDF96 read visually; actualtextPDF32 and CNSSPresentation1 paragraph read.",
+  "candidate_files": {
+    "skills/dr-congo/cd-company-formation.md": "21ce13d6cecf466f5143793a2fb61bbfc4bd9c538da3941e03ce7d685830ea7c",
+    "skills/dr-congo/cd-tax-overview.md": "922f2fcbefd254c7c4bcd9ab85722e4feeaa20be35e4cd3ac2950d0ffb178f5e",
+    "evidence/dr-congo-overview-formation-20261101/source-manifest.json": "f0c615861f2efb4d6f0676a13720c09caaafa8e379806a68d79c96cb3ecb93f1"
+  },
+  "limits": "All7domains partial; no complete current law, registration, filing or attestation approval. Prior six Guides and earlier receipts unchanged."
+}

@@ -1,0 +1,659 @@
+[
+  {
+    "old_slug": "cg-tax-overview",
+    "old_blob": "d26128f0ce5dde1619c630636d5cee5bead9dbb9",
+    "old_sha256": "8ef9eb69a302b177755a93828f49cabdbb639a08bd944d18acc935818a19f979",
+    "topic": "Standard tax year",
+    "destination": "O02",
+    "type": "bullet",
+    "ordinal": 1
+  },
+  {
+    "old_slug": "cg-tax-overview",
+    "old_blob": "d26128f0ce5dde1619c630636d5cee5bead9dbb9",
+    "old_sha256": "8ef9eb69a302b177755a93828f49cabdbb639a08bd944d18acc935818a19f979",
+    "topic": "Currency",
+    "destination": "Not yet confirmed: monetary/euro-peg authority",
+    "type": "bullet",
+    "ordinal": 2
+  },
+  {
+    "old_slug": "cg-tax-overview",
+    "old_blob": "d26128f0ce5dde1619c630636d5cee5bead9dbb9",
+    "old_sha256": "8ef9eb69a302b177755a93828f49cabdbb639a08bd944d18acc935818a19f979",
+    "topic": "Tax authority",
+    "destination": "Not yet confirmed: current administrative restructuring",
+    "type": "bullet",
+    "ordinal": 3
+  },
+  {
+    "old_slug": "cg-tax-overview",
+    "old_blob": "d26128f0ce5dde1619c630636d5cee5bead9dbb9",
+    "old_sha256": "8ef9eb69a302b177755a93828f49cabdbb639a08bd944d18acc935818a19f979",
+    "topic": "Basis of taxation",
+    "destination": "I05,I07,I08,I13; X01,X06",
+    "type": "bullet",
+    "ordinal": 4
+  },
+  {
+    "old_slug": "cg-tax-overview",
+    "old_blob": "d26128f0ce5dde1619c630636d5cee5bead9dbb9",
+    "old_sha256": "8ef9eb69a302b177755a93828f49cabdbb639a08bd944d18acc935818a19f979",
+    "topic": "Standard corporate income tax rate",
+    "destination": "C01",
+    "type": "bullet",
+    "ordinal": 5
+  },
+  {
+    "old_slug": "cg-tax-overview",
+    "old_blob": "d26128f0ce5dde1619c630636d5cee5bead9dbb9",
+    "old_sha256": "8ef9eb69a302b177755a93828f49cabdbb639a08bd944d18acc935818a19f979",
+    "topic": "Top marginal personal income tax rate (IRPP)",
+    "destination": "I01,I17 supersedes global40%",
+    "type": "bullet",
+    "ordinal": 6
+  },
+  {
+    "old_slug": "cg-tax-overview",
+    "old_blob": "d26128f0ce5dde1619c630636d5cee5bead9dbb9",
+    "old_sha256": "8ef9eb69a302b177755a93828f49cabdbb639a08bd944d18acc935818a19f979",
+    "topic": "VAT in force",
+    "destination": "V01",
+    "type": "bullet",
+    "ordinal": 7
+  },
+  {
+    "old_slug": "cg-tax-overview",
+    "old_blob": "d26128f0ce5dde1619c630636d5cee5bead9dbb9",
+    "old_sha256": "8ef9eb69a302b177755a93828f49cabdbb639a08bd944d18acc935818a19f979",
+    "topic": "Additional surtax on tax due",
+    "destination": "Not yet confirmed: blanket5% surcharge",
+    "type": "bullet",
+    "ordinal": 8
+  },
+  {
+    "old_slug": "cg-tax-overview",
+    "old_blob": "d26128f0ce5dde1619c630636d5cee5bead9dbb9",
+    "old_sha256": "8ef9eb69a302b177755a93828f49cabdbb639a08bd944d18acc935818a19f979",
+    "topic": "Annual corporate income tax return deadline",
+    "destination": "C10 conflict",
+    "type": "bullet",
+    "ordinal": 9
+  },
+  {
+    "old_slug": "cg-tax-overview",
+    "old_blob": "d26128f0ce5dde1619c630636d5cee5bead9dbb9",
+    "old_sha256": "8ef9eb69a302b177755a93828f49cabdbb639a08bd944d18acc935818a19f979",
+    "topic": "VAT return frequency",
+    "destination": "V08 historical baseline/current calendar",
+    "type": "bullet",
+    "ordinal": 10
+  },
+  {
+    "old_slug": "cg-tax-overview",
+    "old_blob": "d26128f0ce5dde1619c630636d5cee5bead9dbb9",
+    "old_sha256": "8ef9eb69a302b177755a93828f49cabdbb639a08bd944d18acc935818a19f979",
+    "topic": "Corporate and accounting law framework",
+    "destination": "F01,F14;C03,C11",
+    "type": "bullet",
+    "ordinal": 11
+  },
+  {
+    "old_slug": "cg-tax-overview",
+    "old_blob": "d26128f0ce5dde1619c630636d5cee5bead9dbb9",
+    "old_sha256": "8ef9eb69a302b177755a93828f49cabdbb639a08bd944d18acc935818a19f979",
+    "topic": "The Republic of Congo (Congo-Brazzaville) is a CEMAC and OHADA member state whose taxes are governed by the Code Général des Impôts (CGI), updated annually by the Loi de Finances. The currency is the Central African CFA franc (XAF) and the tax authority is the Direction Générale des Impôts et des Domaines (DGID).",
+    "destination": "O01,O03; monetary and current authority labels held",
+    "type": "opening paragraph",
+    "ordinal": 0
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Société à Responsabilité Limitée (SARL)",
+    "destination": "F01",
+    "type": "bullet",
+    "ordinal": 1
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Société Anonyme (SA)",
+    "destination": "F01,F04",
+    "type": "bullet",
+    "ordinal": 2
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Société par Actions Simplifiée (SAS)",
+    "destination": "F01,F04",
+    "type": "bullet",
+    "ordinal": 3
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Branch (succursale) of a foreign company",
+    "destination": "F11,F12",
+    "type": "bullet",
+    "ordinal": 4
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Minimum share capital — SARL",
+    "destination": "F02,F03",
+    "type": "bullet",
+    "ordinal": 5
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Minimum share capital — SA",
+    "destination": "F04",
+    "type": "bullet",
+    "ordinal": 6
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Registered office requirement",
+    "destination": "F06",
+    "type": "bullet",
+    "ordinal": 7
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Paid-up capital deposit",
+    "destination": "F03,F08",
+    "type": "bullet",
+    "ordinal": 8
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Incorporation process",
+    "destination": "F07,F08,F09",
+    "type": "bullet",
+    "ordinal": 9
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Incorporation timeline",
+    "destination": "Not yet confirmed: processing time",
+    "type": "bullet",
+    "ordinal": 10
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Annual accounting compliance",
+    "destination": "F14; C10,C11 date conflict",
+    "type": "bullet",
+    "ordinal": 11
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Statutory auditor (commissaire aux comptes)",
+    "destination": "F13,F14",
+    "type": "bullet",
+    "ordinal": 12
+  },
+  {
+    "old_slug": "cg-company-formation",
+    "old_blob": "66bde90ca9405a0d6f6a4d0b15fd1609c9882527",
+    "old_sha256": "6465ec75d8c6794b6b883947953bb84765f93a493e0b5c6a5064241b877a9bc9",
+    "topic": "Company law in the Republic of Congo is governed by the OHADA Uniform Act on Commercial Companies. The most common vehicles are the SARL (limited liability company) and the SA (public limited company); incorporation runs through the Guichet Unique (one-stop business registration desk).",
+    "destination": "F01,F07–F09; incorporation route",
+    "type": "opening paragraph",
+    "ordinal": 0
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "IRPP overview",
+    "destination": "I01–I18",
+    "type": "bullet",
+    "ordinal": 1
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "IRPP rate — taxable income XAF 0 to 464,000",
+    "destination": "I01,I17 superseded global band",
+    "type": "bullet",
+    "ordinal": 2
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "IRPP rate — taxable income XAF 464,000 to 1,000,000",
+    "destination": "I01,I17 superseded global band",
+    "type": "bullet",
+    "ordinal": 3
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "IRPP rate — taxable income XAF 1,000,000 to 3,000,000",
+    "destination": "I01,I17 superseded global band",
+    "type": "bullet",
+    "ordinal": 4
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "IRPP rate — taxable income over XAF 3,000,000",
+    "destination": "I01,I17 superseded global band",
+    "type": "bullet",
+    "ordinal": 5
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "Tax-free threshold",
+    "destination": "I17 fixed first item and SMIG minimum",
+    "type": "bullet",
+    "ordinal": 6
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "Family quotient (quotient familial)",
+    "destination": "I15,I16;116C special cases held",
+    "type": "bullet",
+    "ordinal": 7
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "Standard deduction for employment income",
+    "destination": "I14",
+    "type": "bullet",
+    "ordinal": 8
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "Tax residence test",
+    "destination": "I05,I13 category-specific, not183-day shortcut",
+    "type": "bullet",
+    "ordinal": 9
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "Withholding on non-commercial income of non-residents",
+    "destination": "X05; Not yet confirmed: old20% individual BNC scope",
+    "type": "bullet",
+    "ordinal": 10
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "Rate for foreign employees on limited secondment",
+    "destination": "Not yet confirmed: special secondment20%",
+    "type": "bullet",
+    "ordinal": 11
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "Simplified flat regime for small taxpayers",
+    "destination": "I04,I19,I20; Not yet confirmed:5%/8% chain",
+    "type": "bullet",
+    "ordinal": 12
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "Annual IRPP return filing deadline",
+    "destination": "I10,I18; Not yet confirmed: general/annual category filing dates",
+    "type": "bullet",
+    "ordinal": 13
+  },
+  {
+    "old_slug": "cg-income-tax",
+    "old_blob": "0671866b3407eea324d66a09298bf40d45e814b5",
+    "old_sha256": "70e326c9459545ce1733c6586e7ab6c72bab9f6599f7fa2296b525d601d1c956",
+    "topic": "Employment income collection",
+    "destination": "I18",
+    "type": "bullet",
+    "ordinal": 14
+  },
+  {
+    "old_slug": "cg-vat-gst",
+    "old_blob": "a63cb117cd2c40fff6e8258e9ab2d6a4e6a56fb9",
+    "old_sha256": "6e50c1a9207cd96bfb1eb5fabb60109760a7738a870e191f9148d4dbfd20497f",
+    "topic": "Standard VAT rate",
+    "destination": "V01",
+    "type": "bullet",
+    "ordinal": 1
+  },
+  {
+    "old_slug": "cg-vat-gst",
+    "old_blob": "a63cb117cd2c40fff6e8258e9ab2d6a4e6a56fb9",
+    "old_sha256": "6e50c1a9207cd96bfb1eb5fabb60109760a7738a870e191f9148d4dbfd20497f",
+    "topic": "VAT surtax (centimes additionnels)",
+    "destination": "V01",
+    "type": "bullet",
+    "ordinal": 2
+  },
+  {
+    "old_slug": "cg-vat-gst",
+    "old_blob": "a63cb117cd2c40fff6e8258e9ab2d6a4e6a56fb9",
+    "old_sha256": "6e50c1a9207cd96bfb1eb5fabb60109760a7738a870e191f9148d4dbfd20497f",
+    "topic": "Reduced VAT rate",
+    "destination": "V02; Not yet confirmed: forestry/SEZ eligibility",
+    "type": "bullet",
+    "ordinal": 3
+  },
+  {
+    "old_slug": "cg-vat-gst",
+    "old_blob": "a63cb117cd2c40fff6e8258e9ab2d6a4e6a56fb9",
+    "old_sha256": "6e50c1a9207cd96bfb1eb5fabb60109760a7738a870e191f9148d4dbfd20497f",
+    "topic": "Zero-rated supplies",
+    "destination": "V02; Not yet confirmed: full export conditions",
+    "type": "bullet",
+    "ordinal": 4
+  },
+  {
+    "old_slug": "cg-vat-gst",
+    "old_blob": "a63cb117cd2c40fff6e8258e9ab2d6a4e6a56fb9",
+    "old_sha256": "6e50c1a9207cd96bfb1eb5fabb60109760a7738a870e191f9148d4dbfd20497f",
+    "topic": "VAT registration / liability threshold",
+    "destination": "Not yet confirmed: general liability threshold/boundary",
+    "type": "bullet",
+    "ordinal": 5
+  },
+  {
+    "old_slug": "cg-vat-gst",
+    "old_blob": "a63cb117cd2c40fff6e8258e9ab2d6a4e6a56fb9",
+    "old_sha256": "6e50c1a9207cd96bfb1eb5fabb60109760a7738a870e191f9148d4dbfd20497f",
+    "topic": "VAT return frequency and deadline",
+    "destination": "V08 replaces unsupported20th with labelled15th baseline",
+    "type": "bullet",
+    "ordinal": 6
+  },
+  {
+    "old_slug": "cg-vat-gst",
+    "old_blob": "a63cb117cd2c40fff6e8258e9ab2d6a4e6a56fb9",
+    "old_sha256": "6e50c1a9207cd96bfb1eb5fabb60109760a7738a870e191f9148d4dbfd20497f",
+    "topic": "Reverse charge on imported services",
+    "destination": "Not yet confirmed: imported-service current procedure",
+    "type": "bullet",
+    "ordinal": 7
+  },
+  {
+    "old_slug": "cg-vat-gst",
+    "old_blob": "a63cb117cd2c40fff6e8258e9ab2d6a4e6a56fb9",
+    "old_sha256": "6e50c1a9207cd96bfb1eb5fabb60109760a7738a870e191f9148d4dbfd20497f",
+    "topic": "Electronic invoicing",
+    "destination": "Not yet confirmed: SFEC decree/rollout",
+    "type": "bullet",
+    "ordinal": 8
+  },
+  {
+    "old_slug": "cg-vat-gst",
+    "old_blob": "a63cb117cd2c40fff6e8258e9ab2d6a4e6a56fb9",
+    "old_sha256": "6e50c1a9207cd96bfb1eb5fabb60109760a7738a870e191f9148d4dbfd20497f",
+    "topic": "Scope of VAT",
+    "destination": "V03,V04 historical baseline",
+    "type": "bullet",
+    "ordinal": 9
+  },
+  {
+    "old_slug": "cg-vat-gst",
+    "old_blob": "a63cb117cd2c40fff6e8258e9ab2d6a4e6a56fb9",
+    "old_sha256": "6e50c1a9207cd96bfb1eb5fabb60109760a7738a870e191f9148d4dbfd20497f",
+    "topic": "The Republic of Congo operates a VAT (Taxe sur la Valeur Ajoutée) at a standard 18% rate plus a 5% non-deductible surtax (centimes additionnels), giving an effective combined rate of 18.9%. Returns are filed monthly.",
+    "destination": "V01,V08; baseline/rate conditions",
+    "type": "opening paragraph",
+    "ordinal": 0
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Corporate income tax overview",
+    "destination": "C01,C03,C08; old surcharge held",
+    "type": "bullet",
+    "ordinal": 1
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Standard corporate income tax rate",
+    "destination": "C01",
+    "type": "bullet",
+    "ordinal": 2
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Rate for foreign legal entities",
+    "destination": "C01",
+    "type": "bullet",
+    "ordinal": 3
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Reduced rate — microfinance and private education companies",
+    "destination": "C01",
+    "type": "bullet",
+    "ordinal": 4
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Reduced rate — mining, quarrying and real-estate development",
+    "destination": "C01",
+    "type": "bullet",
+    "ordinal": 5
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Surtax on total tax due",
+    "destination": "Not yet confirmed: blanket5% surcharge",
+    "type": "bullet",
+    "ordinal": 6
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Minimum tax (impôt minimum forfaitaire)",
+    "destination": "C08,C09; Not yet confirmed: old fixed minimum floors",
+    "type": "bullet",
+    "ordinal": 7
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Simplified regime for foreign service providers",
+    "destination": "X07,X08; X09 limits",
+    "type": "bullet",
+    "ordinal": 8
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Tax base",
+    "destination": "C03–C07",
+    "type": "bullet",
+    "ordinal": 9
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Withholding tax on dividends",
+    "destination": "I06,I07",
+    "type": "bullet",
+    "ordinal": 10
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Withholding tax on interest",
+    "destination": "I06,I07; old resident-zero assertion not confirmed",
+    "type": "bullet",
+    "ordinal": 11
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Withholding tax on royalties",
+    "destination": "X05",
+    "type": "bullet",
+    "ordinal": 12
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Withholding tax on foreign service fees",
+    "destination": "X05; Not yet confirmed: old10%,5.75%,fixed5% scope",
+    "type": "bullet",
+    "ordinal": 13
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "Annual CIT return deadline",
+    "destination": "C10 conflict; old20May not certified",
+    "type": "bullet",
+    "ordinal": 14
+  },
+  {
+    "old_slug": "cg-corporate-income-tax",
+    "old_blob": "e0d9e55017c728fe03c296758c1d0934e850582b",
+    "old_sha256": "6e7b5d672cad30600ea14b38b46380ef82cb1d9af2a6a11a2c1576a03a649e87",
+    "topic": "CIT quarterly installment dates",
+    "destination": "C09 replaces old instalment dates",
+    "type": "bullet",
+    "ordinal": 15
+  },
+  {
+    "old_slug": "cg-payroll-social",
+    "old_blob": "1931dafbb9512522052c9a030e1b890db6d6c40b",
+    "old_sha256": "14b245cc4ebd5190dbb921414e547b70ca9819c865108f4d7ef6f298bf1d5d4d",
+    "topic": "Employee old-age pension (CNSS)",
+    "destination": "P03,P04: conflicting social split held",
+    "type": "bullet",
+    "ordinal": 1
+  },
+  {
+    "old_slug": "cg-payroll-social",
+    "old_blob": "1931dafbb9512522052c9a030e1b890db6d6c40b",
+    "old_sha256": "14b245cc4ebd5190dbb921414e547b70ca9819c865108f4d7ef6f298bf1d5d4d",
+    "topic": "Employer old-age / invalidity / death insurance (CNSS)",
+    "destination": "Not yet confirmed:8% branch and cap",
+    "type": "bullet",
+    "ordinal": 2
+  },
+  {
+    "old_slug": "cg-payroll-social",
+    "old_blob": "1931dafbb9512522052c9a030e1b890db6d6c40b",
+    "old_sha256": "14b245cc4ebd5190dbb921414e547b70ca9819c865108f4d7ef6f298bf1d5d4d",
+    "topic": "Employer family allowance contribution",
+    "destination": "Not yet confirmed:10.035% branch and cap",
+    "type": "bullet",
+    "ordinal": 3
+  },
+  {
+    "old_slug": "cg-payroll-social",
+    "old_blob": "1931dafbb9512522052c9a030e1b890db6d6c40b",
+    "old_sha256": "14b245cc4ebd5190dbb921414e547b70ca9819c865108f4d7ef6f298bf1d5d4d",
+    "topic": "Employer work-accident contribution",
+    "destination": "Not yet confirmed:2.25% branch and cap",
+    "type": "bullet",
+    "ordinal": 4
+  },
+  {
+    "old_slug": "cg-payroll-social",
+    "old_blob": "1931dafbb9512522052c9a030e1b890db6d6c40b",
+    "old_sha256": "14b245cc4ebd5190dbb921414e547b70ca9819c865108f4d7ef6f298bf1d5d4d",
+    "topic": "Single Tax on Remuneration (employer)",
+    "destination": "P01; Not yet confirmed: headline TUS categories/rates",
+    "type": "bullet",
+    "ordinal": 5
+  },
+  {
+    "old_slug": "cg-payroll-social",
+    "old_blob": "1931dafbb9512522052c9a030e1b890db6d6c40b",
+    "old_sha256": "14b245cc4ebd5190dbb921414e547b70ca9819c865108f4d7ef6f298bf1d5d4d",
+    "topic": "Pension contribution wage ceiling",
+    "destination": "Not yet confirmed: pension wage ceiling",
+    "type": "bullet",
+    "ordinal": 6
+  },
+  {
+    "old_slug": "cg-payroll-social",
+    "old_blob": "1931dafbb9512522052c9a030e1b890db6d6c40b",
+    "old_sha256": "14b245cc4ebd5190dbb921414e547b70ca9819c865108f4d7ef6f298bf1d5d4d",
+    "topic": "Salary tax withholding (PAYE-equivalent)",
+    "destination": "I18;P01 employer/employee distinction",
+    "type": "bullet",
+    "ordinal": 7
+  },
+  {
+    "old_slug": "cg-payroll-social",
+    "old_blob": "1931dafbb9512522052c9a030e1b890db6d6c40b",
+    "old_sha256": "14b245cc4ebd5190dbb921414e547b70ca9819c865108f4d7ef6f298bf1d5d4d",
+    "topic": "Payroll tax / contribution remittance deadline",
+    "destination": "P03; Not yet confirmed: operative frequency/remittance",
+    "type": "bullet",
+    "ordinal": 8
+  },
+  {
+    "old_slug": "cg-payroll-social",
+    "old_blob": "1931dafbb9512522052c9a030e1b890db6d6c40b",
+    "old_sha256": "14b245cc4ebd5190dbb921414e547b70ca9819c865108f4d7ef6f298bf1d5d4d",
+    "topic": "Departmental (local) tax",
+    "destination": "Not yet confirmed: local tax amount/scope",
+    "type": "bullet",
+    "ordinal": 9
+  }
+]

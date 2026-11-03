@@ -2,10 +2,10 @@
 name: gg-property-document-duty
 description: >
   Prepare Guernsey property document-duty working papers for 2026 conveyances, including graduated rates, the repealed additional-property surcharge, conditional downsizing relief and transaction evidence. Use for document duty, property purchase costs, realty versus personalty and the 2025 surcharge transition. This source-cited draft covers the island of Guernsey and does not extend these rates to Alderney or Sark. It supplies recomputable examples using established chargeable realty values, not a valuation opinion. The new statutory extension supplies ordinary charging/valuation, named exemption gates, indirect-transfer self-assessment/payment and appeal methods, checked in the fresh whole-pack review. Complex valuations, relief claim administration and title advice remain separate requirements. Retain the transaction date, official source version and advocate's classification before relying on a calculation.
-version: 0.5
+version: 0.6
 jurisdiction: GG
 tax_year: 2026
-last_updated: 2026-10-28
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
@@ -29,13 +29,13 @@ Apply each rate to the **slice of established chargeable realty value** within t
 
 | Chargeable realty slice | Rate |
 |---|---:|
-| First £300,000 | 2.25% |
-| Above £300,000 to £500,000 | 3.50% |
-| Above £500,000 to £950,000 | 4.00% |
-| Above £950,000 to £1,250,000 | 4.25% |
-| Above £1,250,000 to £2,500,000 | 4.50% |
-| Above £2,500,000 to £5,000,000 | 5.50% |
-| Above £5,000,000 | 7.00% |
+| First £300,000 | 2.25% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
+| Above £300,000 to £500,000 | 3.50% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
+| Above £500,000 to £950,000 | 4.00% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
+| Above £950,000 to £1,250,000 | 4.25% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
+| Above £1,250,000 to £2,500,000 | 4.50% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
+| Above £2,500,000 to £5,000,000 | 5.50% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
+| Above £5,000,000 | 7.00% Source: https://parliament.gg/parliamentary-business/assets/questions/2026-16 (tax year 2026) (read 2026-10-31) |
 
 Source: [21 May 2026 official response, Table 1](https://parliament.gg/parliamentary-business/assets/questions/2026-16). Table 2 in the same document models a **proposed 15% band**, not the current schedule. Do not use it as the operative rate table. The existing 2026 schedule must also be checked against any later enactment at the transaction date.
 

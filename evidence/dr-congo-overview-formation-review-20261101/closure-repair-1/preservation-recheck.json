@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "path": "skills/dr-congo/cd-corporate-income-tax.md",
+      "sha256": "3a94318a445e48cbd1d973cc8ef83b26e581f3976a2e368a01b1b9e8feccd433",
+      "unchanged": true
+    },
+    {
+      "path": "skills/dr-congo/cd-income-tax.md",
+      "sha256": "8216ac9efcaf76ba5c3f775417e3896024f3ab5d445d8c966b10fd6ff6fddaaa",
+      "unchanged": true
+    },
+    {
+      "path": "skills/dr-congo/cd-transfer-pricing.md",
+      "sha256": "631405e941fde4ad0374386514f096825749077285c580d22eb48d3da9eb19aa",
+      "unchanged": true
+    },
+    {
+      "path": "skills/dr-congo/cd-cross-border.md",
+      "sha256": "c34c58ce3f047127b6e251333200571664ea6df4244b4fdabcea6f5652d3a2de",
+      "unchanged": true
+    },
+    {
+      "path": "skills/dr-congo/cd-vat-gst.md",
+      "sha256": "c0b7fa52585dd7f28bb1ea916ebf241bb411c6cd0f48a5003c1f96ef905ee8fa",
+      "unchanged": true
+    },
+    {
+      "path": "skills/dr-congo/cd-payroll-social.md",
+      "sha256": "8adef16e9e7017543e35d66a8d88adebcfba42cab5c09108686109f3b1ff7ebc",
+      "unchanged": true
+    },
+    {
+      "historical_tree": "evidence/ledgers",
+      "unchanged": true,
+      "base_tree": "fdc370240f5fca9361b9527ea13d5a5fb4cc650d"
+    },
+    {
+      "historical_tree": "evidence/dr-congo-remaining-20261101",
+      "unchanged": true,
+      "base_tree": "63e76ab6608ba5903cd309f71cced1c40f879427"
+    },
+    {
+      "historical_tree": "evidence/dr-congo-remaining-review-20261101",
+      "unchanged": true,
+      "base_tree": "c632434f63f051bb1b675bd132650aa1b52fd27f"
+    },
+    {
+      "path": "skills/dr-congo/cd-tax-overview.md",
+      "cta_byte_equal": true,
+      "platform_fields_equal": {
+        "review_status": true,
+        "trust_label": true,
+        "tier": true,
+        "license": true
+      }
+    },
+    {
+      "path": "skills/dr-congo/cd-company-formation.md",
+      "cta_byte_equal": true,
+      "platform_fields_equal": {
+        "review_status": true,
+        "trust_label": true,
+        "tier": true,
+        "license": true
+      }
+    }
+  ],
+  "both_ledgers_unchanged": true,
+  "all_seven_domains_partial": true,
+  "old_topic_map_unchanged": true,
+  "initial_review_receipts_preserved": {
+    "old-topic-checks.json": "a0b17543d5d773b18b0ce9d5faac52cdf44ddbcee5cb9d9be789731c41c88f04",
+    "independent-cases.json": "924230956f853c10b875715f99fc5176e51ddd90ddcc198957cb79bb25a3be47",
+    "initial-review.md": "18fb9f02746083200c203ff8ffa93a1635452c1f4180119179884cd9a5bf8db2",
+    "source-reading.json": "486b94a43b0798b4a7c2509702518814bd8a2ce5be401593a3d5028346281af5",
+    "candidate-hashes.json": "b33c855204c8970d448e92c7462f15785406c2ec474d12bb02ae5164f74142a0",
+    "row-verdicts.json": "bf7634aed57fa5de17fd105ef188839449a40e78b9633f5817066d102d30aa95",
+    "preservation-check.json": "289b033da134563b3145ca98fdf9f1069a0918920719b09360e91f18ab8de469"
+  }
+}

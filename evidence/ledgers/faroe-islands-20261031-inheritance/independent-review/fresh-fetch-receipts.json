@@ -1,0 +1,92 @@
+[
+  {
+    "source": "duty",
+    "url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+    "final_url": "https://logir.fo/Anordning/468-af-08-11-1921-hvorved-lov-om-arveafgift-af-27051908-saettes-i-kraft-pa",
+    "path": "fresh-duty.html",
+    "status": 200,
+    "sha256": "30899afd40d7f710270889ac86e0e2136a0e77ccac02059093531c5a28a7cf3a",
+    "same_raw": false
+  },
+  {
+    "source": "tax",
+    "url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+    "final_url": "https://www.logir.fo/Logtingslogarkunngerd/109-fra-19-09-2023-um-landsskatt-og-kommunuskatt",
+    "path": "fresh-tax.html",
+    "status": 200,
+    "sha256": "6aa4eb85ccf0628198806adb750236abcc2980a8265a723919df66a4e1c86075",
+    "same_raw": false
+  },
+  {
+    "source": "rates",
+    "url": "https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170",
+    "final_url": "https://logir.fo/Logtingslog/87-fra-01-09-1983-um-aseting-av-skatti-sum-seinast-broytt-vid-logtingslog-nr-170",
+    "path": "fresh-rates.html",
+    "status": 200,
+    "sha256": "dbedc6a6df2746e3174249a46d683f5b819d35a3221590b516f2f54a8f147e69",
+    "same_raw": false
+  },
+  {
+    "source": "inheritance",
+    "url": "https://www.taks.fo/fo/borgari/skattur/skattur-og-arvur",
+    "final_url": "https://www.taks.fo/fo/borgari/skattur/skattur-og-arvur",
+    "path": "fresh-inheritance.html",
+    "status": 200,
+    "sha256": "54662f08f125ab19a160de23266cea01287f44c801e402ee0dc94559ebe7d122",
+    "same_raw": true
+  },
+  {
+    "source": "estate-guidance",
+    "url": "https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/g-deydsbugv",
+    "final_url": "https://www.taks.fo/fo/log/vegleidingarskriv-vls-2015/g-deydsbugv",
+    "path": "fresh-estate-guidance.html",
+    "status": 200,
+    "sha256": "2ae95d2fa9c9ab09733d8f740dc7b79a64b12d0f6e0c918875b639583f2908dd",
+    "same_raw": true
+  },
+  {
+    "source": "capital-correct",
+    "url": "https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173",
+    "final_url": "https://logir.fo/Logtingslog/164-fra-21-12-2001-um-skatting-av-kapitalvinningi-sum-seinast-broytt-vid-logtingslog-nr-173",
+    "path": "fresh-capital-correct.html",
+    "status": 200,
+    "sha256": "6f941338ab3393b9195496221e42866b2f204044793991e53febb96f465a869e",
+    "same_raw": false
+  },
+  {
+    "source": "estate-calendar",
+    "url": "https://www.taks.fo/fo/taks/taks-kalendarin/freist-at-lata-inn-sjalvuppgavu-2025-hja-feloegum",
+    "final_url": "https://www.taks.fo/fo/taks/taks-kalendarin/freist-at-lata-inn-sjalvuppgavu-2025-hja-feloegum",
+    "path": "fresh-estate-calendar.html",
+    "status": 200,
+    "sha256": "158a367e1d1ad8537307486bfc880707fdd0ced81acf2e4dbc48a4f6cbcc1eed",
+    "same_raw": true
+  },
+  {
+    "source": "estate-return",
+    "url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/sjalvuppgava",
+    "final_url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/sjalvuppgava",
+    "path": "fresh-estate-return.html",
+    "status": 200,
+    "sha256": "dd5f6f830877edd035477ec9e7e319fc47b786a4b494f3bd476e591c869b0b1b",
+    "same_raw": true
+  },
+  {
+    "source": "estate-accounts",
+    "url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/roknskapur",
+    "final_url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/roknskapur",
+    "path": "fresh-estate-accounts.html",
+    "status": 200,
+    "sha256": "d02f037a7791f60d11c04ce9853348e1d8121994e32e1f9380f197d67ee9a68d",
+    "same_raw": true
+  },
+  {
+    "source": "estate-filing",
+    "url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/freistir-og-treytir-fyri-innlating",
+    "final_url": "https://www.taks.fo/fo/vinna/sjalvuppgava-2025/freistir-og-treytir-fyri-innlating",
+    "path": "fresh-estate-filing.html",
+    "status": 200,
+    "sha256": "ca2cdf2f2076c5f057230ee5752cf6cf22cddd25b698d8226c406e5459526ff7",
+    "same_raw": true
+  }
+]

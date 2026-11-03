@@ -1,0 +1,586 @@
+[
+  {
+    "id": "VAT-001",
+    "lf": 29,
+    "section": "# Faroe Islands VAT registration and returns v0.4",
+    "wording": "> **Checked against the law for 2026.** This Guide has no professional attestation\n> for the revised content. It prepares classification and calculation working\n> papers; the stated source conflicts and implementation gaps remain open.",
+    "source_tags": [],
+    "status": "Operational instruction / review limitation; no new tax entitlement",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-002",
+    "lf": 35,
+    "section": "## Who this applies to",
+    "wording": "Calculate Faroese MVG by separating taxable sales, supplies with no output\nVAT but input recovery, and exempt activities without input recovery. The\nFaroese VAT territory and charge arise under Act 136/1992 §§1–3. Foreign\nbusiness activity can require registration independently of income-tax PE\nstatus. Danish/EU VAT rules are not a substitute for this Act ([law][law]).",
+    "source_tags": [
+      "law-1",
+      "law-2",
+      "law-3"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-003",
+    "lf": 41,
+    "section": "## Who this applies to",
+    "wording": "Section 4 exempts annual sales **below DKK 50,000**. Exactly DKK 50,000 does\nnot satisfy that wording. Determine annual business sales rather than profit,\nand separate the exempt activities under §2(3). A registered business does\nnot stop accounting for VAT solely because later sales fall below the\nthreshold; TAKS describes cancellation as a separate choice where turnover\nstays low ([§§4–5][law]; [TAKS tourism guidance][tourism]).",
+    "source_tags": [
+      "law-4",
+      "law-5",
+      "tourism-page"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-004",
+    "lf": 48,
+    "section": "## Who this applies to",
+    "wording": "Register at least eight days before activity starts, subject to the security\nprovisions. Businesses with the same owner are generally notified together,\nwith separate-registration requests possible for separate accounts. Approved\njoint registration is treated as one business; joint liabilities apply.\nA foreign business without a local branch registers through a resident\nperson/local establishment unless the Hoyvík treaty exception applies.\nDo not infer that exception from all foreign residence ([§§5 and 25][law]).",
+    "source_tags": [
+      "law-5",
+      "law-25"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-005",
+    "lf": 60,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Standard VAT | 25% of VAT-exclusive taxable value | [Act §14][law] |",
+    "source_tags": [
+      "law-14"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-006",
+    "lf": 61,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| VAT in a standard-rated gross price | 20% of VAT-inclusive amount, equivalent to 25/125 | [§§13(3), 17(1)][law] |",
+    "source_tags": [
+      "law-13",
+      "law-17"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-007",
+    "lf": 62,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Ordinary small-sales exemption | Annual sales strictly below DKK 50,000 | [§4][law] |",
+    "source_tags": [
+      "law-4"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-008",
+    "lf": 63,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Specified foreign supplier services | More than DKK 50,000 annual sales; §28(2)(7)–(13), used in the Faroes, with paragraph 3 exceptions | [§28(1)–(3)][law] |",
+    "source_tags": [
+      "law-28"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-009",
+    "lf": 64,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Exempt activities | No output VAT and no ordinary recovery for directly attributable purchases | [§§2(3), 15–16][law]; [regulation §1][reg] |",
+    "source_tags": [
+      "law-2",
+      "law-15",
+      "law-16",
+      "reg-1"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-010",
+    "lf": 65,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Listed no-output supplies | §12 supplies retain the applicable input-recovery route; distinguish from §2 exemption | [§§12, 15–16][law]; [TAKS examples][tourism] |",
+    "source_tags": [
+      "law-12",
+      "law-15",
+      "law-16",
+      "tourism-page"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-011",
+    "lf": 66,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Equipment capital-adjustment threshold | Depreciable equipment costing more than DKK 20,000 excluding VAT | [Regulation §§8 and 10][reg] |",
+    "source_tags": [
+      "reg-8",
+      "reg-10"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-012",
+    "lf": 67,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Qualifying property works | More than DKK 50,000 taxable value per year for extensions/rebuilding/modernisation/repair/maintenance | [Regulation §10(3)][reg] |",
+    "source_tags": [
+      "reg-10"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-013",
+    "lf": 68,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Capital adjustment | Five accounting years for equipment; ten for property/qualifying works, including acquisition year | [Regulation §11(2)][reg] |",
+    "source_tags": [
+      "reg-11"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-014",
+    "lf": 69,
+    "section": "## Rates, bands and thresholds",
+    "wording": "| Foreign unregistered buyer's specified-service payment | Within ten days after receipt of service, on paragraph 4 conditions | [§28(4)–(5)][law] |",
+    "source_tags": [
+      "law-28"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-015",
+    "lf": 71,
+    "section": "## Rates, bands and thresholds",
+    "wording": "**Temporary fuel rule.** Act 36/2026 inserts §12(1)(v) for specified petrol/\ndiesel tariff codes. It was published 15 May 2026 and takes effect the next\nday: the listed sales fall within that no-output provision from **16 May\nthrough 31 July 2026**. Before 16 May and from 1 August, that temporary clause\ndoes not exclude the sale from ordinary VAT. The amending Act's repeal on\n1 January 2027 does not extend its express 31 July sales end date. Check the\nsix listed tariff codes, not every fuel or energy product ([amending Act\n§§1–2 and publication record][fuel]; [current §12(1)(v)][law]).",
+    "source_tags": [
+      "fuel-1",
+      "fuel-2",
+      "law-12"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-016",
+    "lf": 84,
+    "section": "### Sales classification and taxable amount",
+    "wording": "Standard-rated value is the consideration excluding MVG. Include relevant\nother duties, packaging, freight/insurance, connection/establishment charges,\ncommissions and financing supplements. Separately evidenced interest on the\noutstanding purchase price can be outside the value under §7(3). Owner/\nnon-business withdrawals generally use purchase/production cost; barter uses\nthe ordinary selling price or the specified calculated price. Connected-party\nvalue can be adjusted under §9 ([§§7–9 and 11][law]).",
+    "source_tags": [
+      "law-7",
+      "law-8",
+      "law-9",
+      "law-11"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-017",
+    "lf": 92,
+    "section": "### Sales classification and taxable amount",
+    "wording": "Exempt §2(3) services include qualifying healthcare, social care, education,\ncertain cultural activity, sport, passenger transport with the bus exception,\nspecified postal services, property letting/management, insurance/finance,\ngaming, artistic activity, funeral services, tourist-guide/agency services,\nwater supply and the tightly conditioned charity second-hand shop. The\nexceptions inside each category matter: a concert or commercial non-route\nbus service is not automatically exempt because it is cultural/transport.\nRestaurant and bar sales are not hotel-room sales ([§2(3)][law]).",
+    "source_tags": [
+      "law-2"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-018",
+    "lf": 101,
+    "section": "### Sales classification and taxable amount",
+    "wording": "Section 12 separately excludes listed supplies from output-taxable sales,\nincluding exports and qualifying services abroad, directly linked foreign\nfreight, specified foreign-account goods work/design, qualifying ships/\naircraft and work on them, newspapers, listed books/audiobooks, specified\nfishing supplies, hotel/guesthouse rooms and camping sites, prescription\nmedicine, specified vegetables and baby nappies. Use the actual item/code\nand conditions. TAKS confirms the zero-output/input-recovery distinction for\nqualifying accommodation. A §2 exempt activity has a different input result\n([§12][law]; [TAKS tourism guidance][tourism]).",
+    "source_tags": [
+      "law-12",
+      "tourism-page"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-019",
+    "lf": 111,
+    "section": "### Sales classification and taxable amount",
+    "wording": "The tax period follows actual supplies. Timely invoices can determine the\nsupply timing under §13(2). For an advance received before supply/invoicing,\n80% of the gross advance enters the taxable-sales base; standard VAT on that\nbase is 20% of the gross receipt. Returns, established bad debts and later\ncollections adjust their statutory 80% bases. Discounts requiring later\nconditions need the prescribed credit-note treatment. Do not treat an unpaid\ninvoice as an established bad debt automatically ([§13][law]).",
+    "source_tags": [
+      "law-13"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-020",
+    "lf": 121,
+    "section": "### Input recovery and mixed activity",
+    "wording": "Deduct supported supplier VAT invoiced in the period and the import VAT\nimposed under §27, only with the eligible-use rules and invoice/customs\nproof. Direct fully recoverable activity gets its supported input; direct\nexempt/nonregistered activity gets none. Shared expenditure uses recoverable\nactivity sales excluding VAT divided by total sales for the accounting year.\nPrior-year sales support provisional periods, with a final adjustment after\nyear end; a new business uses its actual period sales. Private use requires\na supported business-use estimate, not an invented flat percentage\n([§§15–16, 18(4)][law]; [regulation §§1–2][reg]).",
+    "source_tags": [
+      "law-15",
+      "law-16",
+      "law-18",
+      "law-27",
+      "reg-1",
+      "reg-2"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-021",
+    "lf": 131,
+    "section": "### Input recovery and mixed activity",
+    "wording": "Section 16(3) blocks specified food for proprietor/staff, owner/staff housing,\nbenefits in kind, staff welfare/holiday facilities and gifts. Apply the\nexpress statutory exceptions rather than importing another country's\nentertainment percentage. Property construction allocation uses relevant\nbusiness-building costs; equal-standard rooms can use floor area. Direct\nrepair costs follow the relevant rooms; common repairs use the prescribed\narea proportion. Housing and non-optioned letting are excluded from business\nrooms for this purpose ([§16(3)][law]; [regulation §§3–4][reg]).",
+    "source_tags": [
+      "law-16",
+      "reg-3",
+      "reg-4"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-022",
+    "lf": 140,
+    "section": "### Input recovery and mixed activity",
+    "wording": "For vehicles at most **3,500 kg actual total weight**, purchase/lease input\nneeds exclusive use in taxable sales activity; mixed private use does not\ncreate a proportional purchase deduction. Vehicles over that weight follow\nthe specified business-use rules. Operating costs have a separate full-input\nrule even with partial business use; **lease payments are not operating\ncosts** for it. Regulation §5 also requires annual taxable sales exceeding\n**DKK 20,000**. Retain weight, use, sales and cost classification evidence\n([regulation §5][reg]).",
+    "source_tags": [
+      "reg-5"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-023",
+    "lf": 151,
+    "section": "### Capital adjustments, sale and cessation",
+    "wording": "Maintain an asset register with original VAT, acquisition year, initial\nrecovery proportion, current use and remaining adjustment years. Annual\nadjustment compares current recovery with acquisition-year recovery:\n`original VAT × proportion change × 1/5` for equipment, or `× 1/10` for\nproperty/qualifying works. A change **below ten percentage points** is\noutside the annual adjustment requirement; exactly ten is not below it.\nThe regulation restricts upward adjustments where there was no original\nrecovery or a prior full nonrecoverable-use adjustment. Full nonrecoverable\nuse and specified transfers can accelerate the remaining period. A buyer's\nassumption needs the actual eligibility and written acknowledgement, not\nan automatic carryover ([regulation §§10–16][reg]).",
+    "source_tags": [
+      "reg-10",
+      "reg-11",
+      "reg-12",
+      "reg-13",
+      "reg-14",
+      "reg-15",
+      "reg-16"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-024",
+    "lf": 163,
+    "section": "### Capital adjustments, sale and cessation",
+    "wording": "Sales of business machinery/stock and withdrawals at deregistration are\nwithin §11(4), subject to the specific exceptions. A transfer of a whole\nbusiness or part to a new operator running a registered business can fall\noutside output-taxable sales under §12(5). Notify TAKS of the new operator,\naddress and transferred asset sale price within eight days. Property and\ncapital-adjustment succession still require their own conditions. Disposal\nof a vehicle whose acquisition VAT could not be deducted has the separate\nrule in regulation §9(3) ([§§11–12][law]; [regulation §§9, 12–14][reg]).",
+    "source_tags": [
+      "law-11",
+      "law-12",
+      "reg-9",
+      "reg-12",
+      "reg-13",
+      "reg-14"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-025",
+    "lf": 176,
+    "section": "## Deadlines and filing",
+    "wording": "| Registration notice | At least eight days before starting; security exception | [§5(5)][law] |",
+    "source_tags": [
+      "law-5"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-026",
+    "lf": 177,
+    "section": "## Deadlines and filing",
+    "wording": "| Owner/management/location changes | Within eight days after change | [§5(5)][law] |",
+    "source_tags": [
+      "law-5"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-027",
+    "lf": 178,
+    "section": "## Deadlines and filing",
+    "wording": "| Q1/Q3/Q4 return | One month and ten days after quarter; ordinary 10 May/10 November/10 February | [§20(1)–(2)][law] |",
+    "source_tags": [
+      "law-20"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-028",
+    "lf": 179,
+    "section": "## Deadlines and filing",
+    "wording": "| Q2 return | 24 August | [§20(1)][law] |",
+    "source_tags": [
+      "law-20"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-029",
+    "lf": 180,
+    "section": "## Deadlines and filing",
+    "wording": "| Statutory payment clause | One month and ten days after the tax period; Q2 conflict below | [§22(1)][law] |",
+    "source_tags": [
+      "law-22"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-030",
+    "lf": 181,
+    "section": "## Deadlines and filing",
+    "wording": "| Annual stock count/accounting records | Retain five years after accounting year end, including §4-exempt businesses | [§19][law] |",
+    "source_tags": [
+      "law-19"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-031",
+    "lf": 182,
+    "section": "## Deadlines and filing",
+    "wording": "| Refund on timely submitted return | Within three weeks after receipt, subject to verification obstruction and prior-period return/offset conditions | [§24][law] |",
+    "source_tags": [
+      "law-24"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-032",
+    "lf": 184,
+    "section": "## Deadlines and filing",
+    "wording": "**Q2 payment source conflict.** Section 20 expressly moves the Q2 **return**\nto 24 August. Section 22(1)'s **payment** clause still says one month and ten\ndays after period end, which gives 10 August. TAKS's current return page\ncalls 24 August both the filing and payment deadline. No separate instrument\nreconciling that difference has been verified here. Apply the statute for\nthe calculation and do not rely on the later date for payment without the\nrelevant authority. Preserve the actual assessed/payment notice and this\nconflict for review ([§§20, 22 and 32(4)][law]; [current TAKS guidance][returns]).",
+    "source_tags": [
+      "law-20",
+      "law-22",
+      "law-32",
+      "returns-page"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-033",
+    "lf": 193,
+    "section": "## Deadlines and filing",
+    "wording": "TAKS accepts the return through **Vinnugluggin**. Its current page also gives\na manual route with a DKK 250 administrative fee and moves listed weekend/\nholiday deadlines to the next working day. File nil periods. Regular credit\nbusinesses can apply for monthly/weekly settlement; the law requires an\napplication one month before the period change and sets a two-year restriction\non returning to quarterly settlement. Refunds require earlier returns and\noffset earlier VAT/interest as provided in §24 ([§§20, 24, 35][law];\n[TAKS procedure][returns]).",
+    "source_tags": [
+      "law-20",
+      "law-24",
+      "law-35",
+      "returns-page"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-034",
+    "lf": 202,
+    "section": "## Deadlines and filing",
+    "wording": "Invoices need issue date, supplier/recipient names and addresses, supply\nnature/quantity/price and the VAT amount or the prescribed gross-price VAT\nidentification. A registered customer can require explicit VAT and net line\nprices. Correct post-invoice returns/discounts with a credit note and extra\ncharges with a supplementary invoice. Distinguish taxable/exempt lines,\nretain duplicates and customs VAT evidence; the limited retail simplifications\ndo not erase a registered buyer's request right. A nonregistered business\nmust not charge VAT as if registered. Incorrectly shown VAT is payable unless\nthe mistake is corrected with the buyer ([§§17–19][law]).",
+    "source_tags": [
+      "law-17",
+      "law-18",
+      "law-19"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-035",
+    "lf": 214,
+    "section": "## Penalties and interest",
+    "wording": "Late return increases the period liability by **1%**, minimum **DKK 300**,\nmaximum **DKK 1,000**. TAKS can grant the statutory special-circumstances\nrelief and make a provisional assessment where no return arrives. The law\nalso provides cancellation procedures after repeated estimated periods;\ncancellation is not permission to continue taxable activity unregistered\n([§21][law]).",
+    "source_tags": [
+      "law-21"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-036",
+    "lf": 221,
+    "section": "## Penalties and interest",
+    "wording": "Unpaid VAT attracts **0.7% for each commenced month** from its due date.\nSection 22 also covers the late-return increment and booked interest.\nAdditional assessments use §32's demand/payment rules and interest runs from\nthe statutory §22 due date under §32(4). Do not substitute commercial-debt\ninterest. Intentional/grossly negligent misinformation, records failures and\nspecified registration breaches have fines under §33; specified evasion and\ncontinued activity after refused/withdrawn registration can attract a fine\nor up to two years' imprisonment. No fixed fine tariff is invented here\n([§§22, 32–34][law]).",
+    "source_tags": [
+      "law-22",
+      "law-32",
+      "law-33",
+      "law-34"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-037",
+    "lf": 233,
+    "section": "## Cross-border points",
+    "wording": "Imports of goods are subject to §27: ordinary import VAT is **25%** of the\ncustoms value plus applicable customs/other import duties, excluding this\nVAT itself. Keep customs notices and importer/use evidence. Only the actual\ncustoms/Act exemptions qualify; an overseas invoice is not an export of the\nFaroese buyer's goods. Processing/repair abroad followed by reimport has the\nspecific cost-plus-transport/insurance and permission rule. Export relief\nneeds the actual export/performance conditions under §12. Nonresident\nrefund routes under §§36–36a need their implementing conditions rather\nthan an automatic domestic-return credit ([§§12, 18 and 27][law]).",
+    "source_tags": [
+      "law-12",
+      "law-18",
+      "law-27"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-038",
+    "lf": 243,
+    "section": "## Cross-border points",
+    "wording": "For foreign services, apply **§28's actual categories**, not a generic EU\nB2B reverse-charge rule:",
+    "source_tags": [
+      "law-28"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-039",
+    "lf": 246,
+    "section": "## Cross-border points",
+    "wording": "- Foreign suppliers of paragraph 2 items **7–13** must register/charge where\n  annual qualifying sales exceed DKK 50,000 and services are used in the\n  Faroes. Those items include movable-property hire, local property services,\n  specified events, work/valuations on local movables, telecoms and broadcasts.\n- Paragraph 3 excludes items **1–6 and 8–13** sold to a registered Faroese\n  business entitled to recover all the VAT. Its list omits item 7; do not\n  silently give equipment hire the same exclusion.\n- Individuals, public institutions and others **not VAT registered** buying\n  foreign items **1–6** used in the Faroes must pay under paragraphs 4–5.\n  Those items include rights, advertising, professional/advisory/data services,\n  staff supply, restraint obligations and intermediaries. They keep service\n  records for five years and pay/notify within ten days of service receipt.\n  Paragraph 4 does not state the supplier's DKK 50,000 threshold.\n- Imported services equivalent to an exempt domestic supply have paragraph\n  6's exemption. Test that exemption before computing a charge.",
+    "source_tags": [
+      "law-28"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-040",
+    "lf": 262,
+    "section": "## Cross-border points",
+    "wording": "For a registered customer that cannot recover all the VAT, paragraph 3's\nfull-recovery exclusion does not apply. A foreign supplier within paragraph\n1 therefore registers and charges 25% on a taxable item 7–13 service used\nin the Faroes when its relevant annual sales exceed DKK 50,000. The customer\nthen applies the ordinary input rules to the supplier's actual Faroese VAT\ninvoice. Registration alone neither removes this supplier charge nor gives\nthe customer full input recovery. For example, assume an established item\n12 telecommunications supply used in the Faroes, a foreign supplier with\nDKK 60,000 qualifying annual sales, and a DKK 10,000 net invoice. Supplier\nVAT is DKK 2,500. If this is a shared business overhead and final eligible\nturnover is 60% of total turnover, the customer's supported input recovery\nis DKK 1,500 and unrecovered VAT DKK 1,000. Assume no private use, blocked\ninput, domestic-equivalent exemption or special allocation rule. These are\ncase amounts, not statutory allowances ([§§15–17, 28(1)–(3), (6)][law];\n[regulation §1][reg]).",
+    "source_tags": [
+      "law-14",
+      "law-15",
+      "law-16",
+      "law-28",
+      "reg-1"
+    ],
+    "status": "Hypothetical inputs and derived arithmetic from cited rates/method; not quotation of a legal case amount",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-041",
+    "lf": 278,
+    "section": "## Cross-border points",
+    "wording": "Keep the different items 1–6 branch separate: paragraph 1 does not list\nthose services, while paragraph 4 expressly addresses an unregistered\nrecipient. Those provisions alone do not establish a registered partly\nrecovering customer's liability for a foreign consultancy invoice. That\nspecific branch and particular bundled/digital classifications remain\nunconfirmed; do not invent a general reverse charge or an exemption.",
+    "source_tags": [
+      "law-28"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-042",
+    "lf": 285,
+    "section": "## Cross-border points",
+    "wording": "The local-representative/Hoyvík exception is separate from these charging\nand recovery tests. No Danish/EU territorial entitlement is assumed\n([§§5, 25 and 28][law]).",
+    "source_tags": [
+      "law-25"
+    ],
+    "status": "Express source / labelled scope inference",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-043",
+    "lf": 293,
+    "section": "### 1. Ordinary fully taxable business",
+    "wording": "Assume DKK 100,000 of standard-rated sales excluding VAT and DKK 10,000 of\nfully deductible input VAT evidenced in the period. Output is DKK 25,000;\nnet due is DKK 15,000. A gross DKK 125 standard-rated sale contains DKK 25\nVAT, not DKK 31.25 ([§§14–16][law]).",
+    "source_tags": [
+      "law-14",
+      "law-15",
+      "law-17"
+    ],
+    "status": "Hypothetical inputs and derived arithmetic from cited rates/method; not quotation of a legal case amount",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-044",
+    "lf": 298,
+    "section": "### 1. Ordinary fully taxable business",
+    "wording": "```oa-check\nname: Faroese ordinary output and eligible input VAT\ninputs:\n  net_sales: 100000\n  rate: 0.25\n  supported_input_vat: 10000\n  gross_price: 125\nsteps:\n  output_vat: net_sales * rate\n  vat_payable: output_vat - supported_input_vat\n  vat_in_gross_price: gross_price * rate / (1 + rate)\nexpected:\n  output_vat: 25000\n  vat_payable: 15000\n  vat_in_gross_price: 25\n```",
+    "source_tags": [
+      "law-14",
+      "law-15",
+      "law-17"
+    ],
+    "status": "Hypothetical inputs and derived arithmetic from cited rates/method; not quotation of a legal case amount",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-045",
+    "lf": 317,
+    "section": "### 2. Shared input and equipment-use adjustment",
+    "wording": "Assume annual standard-rated sales excluding VAT of DKK 300,000 and exempt\nsales of DKK 200,000, no other sales or special allocation, and DKK 20,000\nshared-input VAT. Recovery is 60%, giving DKK 12,000. Separate qualifying\nequipment cost DKK 100,000 excluding VAT (original VAT DKK 25,000) had full\nrecovery at acquisition and remains in its adjustment period. Current\nrecovery falls to 60%; the annual reduction is 25,000 × (1 − 0.60) / 5 =\nDKK 2,000. Net input after this reduction is DKK 10,000. This is a supported\n40-point change; neither private vehicle rules nor full change-of-use\nacceleration is assumed ([regulation §§1, 10–11, 14, 16][reg]).",
+    "source_tags": [
+      "law-15",
+      "law-16",
+      "reg-1",
+      "reg-10",
+      "reg-11",
+      "reg-12",
+      "reg-13",
+      "reg-14",
+      "reg-15",
+      "reg-16"
+    ],
+    "status": "Hypothetical inputs and derived arithmetic from cited rates/method; not quotation of a legal case amount",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-046",
+    "lf": 327,
+    "section": "### 2. Shared input and equipment-use adjustment",
+    "wording": "```oa-check\nname: Faroese mixed activity and annual equipment adjustment\ninputs:\n  taxable_net_sales: 300000\n  exempt_sales: 200000\n  shared_input_vat: 20000\n  original_equipment_vat: 25000\n  original_recovery: 1\n  equipment_years: 5\nsteps:\n  recovery: taxable_net_sales / (taxable_net_sales + exempt_sales)\n  eligible_shared_input: shared_input_vat * recovery\n  annual_repayment: original_equipment_vat * (original_recovery - recovery) / equipment_years\n  net_input_after_adjustment: eligible_shared_input - annual_repayment\nexpected:\n  recovery: 0.60\n  eligible_shared_input: 12000\n  annual_repayment: 2000\n  net_input_after_adjustment: 10000\n```",
+    "source_tags": [
+      "law-15",
+      "law-16",
+      "reg-1",
+      "reg-10",
+      "reg-11"
+    ],
+    "status": "Hypothetical inputs and derived arithmetic from cited rates/method; not quotation of a legal case amount",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  },
+  {
+    "id": "VAT-047",
+    "lf": 350,
+    "section": "## Ask the client first",
+    "wording": "- What activities, locations and annual sales establish registration and supply classification?\n- Which invoices/customs notices and actual taxable, exempt or private uses support input recovery?\n- What capital assets, acquisition-year recovery and subsequent use changes exist?\n- What foreign service category, customer registration and full/partial recovery status apply?\n- What return periods, assessed payment dates, prior returns and debts affect filing/refunds?\n- Is there a business transfer, cessation or special property/vehicle scheme requiring separate conditions?",
+    "source_tags": [],
+    "status": "Operational instruction / review limitation; no new tax entitlement",
+    "read_on": "2026-10-28 selected exact quote matching; previous dated checks and full-Guide independent review retained"
+  }
+]

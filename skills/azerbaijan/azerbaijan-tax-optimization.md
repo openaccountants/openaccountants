@@ -1,7 +1,7 @@
 ---
 name: azerbaijan-tax-optimization
 description: Use this skill whenever asked about reducing tax in Azerbaijan, tax planning, or legal strategies to minimise tax for a small business or entrepreneur in Azerbaijan in tax year 2026. Trigger on phrases like "reduce tax Azerbaijan", "simplified tax 2%", "micro business Azerbaijan", "startup exemption", "Azerbaijan dividends 5%", "tech park Azerbaijan", "liberated territories tax", "Nakhchivan tax exemption", "save tax Azerbaijan", "tax planning Azerbaijan". This skill covers the 2% simplified turnover tax and its exclusions (including the 30% business-customer test), the 75% micro-business relief, the 3-year startup exemption, technology-park, industrial-park and territorial exemptions, dividend taxation and the deemed-dividend rule, and the anti-avoidance red lines. The computations themselves are out of scope (az-corporate-income-tax, azerbaijan-income-tax, azerbaijan-payroll, azerbaijan-social-contributions, azerbaijan-vat, azerbaijan-cross-border). ALWAYS read this skill before advising on any Azerbaijani tax optimisation.
-version: 0.2
+version: 0.3
 jurisdiction: AZ
 tax_year: 2026
 last_updated: 2026-10-31
@@ -26,11 +26,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | --- | --- |
 | Country | Republic of Azerbaijan |
 | Currency | AZN (manat) |
-| Headline levers | **2% simplified turnover tax**; 75% micro-business relief; 3-year startup exemption; technology-park, industrial-park and territorial exemptions |
-| Ordinary rates | Company profit tax **20%**; individual entrepreneur profit **20%** |
-| Simplified tax | **2% of gross receipts** (taxable operations ≤ AZN 200,000 in any rolling 12 months, not VAT-registered, no exclusion); catering above AZN 200,000: **8%**, and **6%** on cashless POS receipts for services to the public from 1 Jan 2026 to 31 Dec 2028 |
-| Dividends | **5%** withheld at source; not taxed again in the recipient's hands |
-| Anti-avoidance | Eligibility exclusions, the 30% business-customer test, deemed dividends, substance for park and territorial reliefs |
+| Headline levers | **2% simplified turnover tax**; 75% micro-business relief; 3-year startup exemption; technology-park, industrial-park and territorial exemptions Unverified: official Tax Code page could not be opened on 2026-10-31 |
+| Ordinary rates | Company profit tax **20%**; individual entrepreneur profit **20%** Unverified: official Tax Code page could not be opened on 2026-10-31 |
+| Simplified tax | **2% of gross receipts** (taxable operations ≤ AZN 200,000 in any rolling 12 months, not VAT-registered, no exclusion); catering above AZN 200,000: **8%**, and **6%** on cashless POS receipts for services to the public from 1 Jan 2026 to 31 Dec 2028 Unverified: official Tax Code page could not be opened on 2026-10-31 |
+| Dividends | **5%** withheld at source; not taxed again in the recipient's hands Unverified: official Tax Code page could not be opened on 2026-10-31 |
+| Anti-avoidance | Eligibility exclusions, the 30% business-customer test, deemed dividends, substance for park and territorial reliefs Unverified: official Tax Code page could not be opened on 2026-10-31 |
 
 > **Azerbaijan's headline is the 2% simplified tax**, uniform across the country. It is not open to every small business: a business that mainly invoices other registered taxpayers, wholesales, rents out property, earns royalties or needs a licence is excluded (Tax Code arts. 218.5, 218.6).
 

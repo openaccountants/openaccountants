@@ -1,0 +1,10 @@
+{
+  "content_commit": "bdb0080b97f4983d804a7249c42add5b8057e5a8",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "changed_validator": "8 actual Guides; zero warnings",
+  "strict_audit": "8 source Guides; zero errors/warnings/notices",
+  "new_job_shape_checks": "all15 checks for each of4Guides pass",
+  "new_examples": "8 blocks, zero failures",
+  "whole_base_whitespace": "pass",
+  "independent_review": "103 source rows,27oldtopics,8 independent cases; F1/F2 exactclosure accepted; stated partial holds retained"
+}

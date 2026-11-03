@@ -1,0 +1,107 @@
+[
+  {
+    "url": "https://lovdata.no/dokument/NL/lov/1996-11-29-68",
+    "status": 200,
+    "path": "fresh-67e1b822e50e.html",
+    "sha256": "d6cd8f2471f36f53b8fc6271f3d65d704d4c5ba44daf643fc87bebb739128936",
+    "bytes": 101399
+  },
+  {
+    "url": "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_1",
+    "status": 200,
+    "path": "fresh-a3646faa8504.html",
+    "sha256": "cf0e2c6be21ff45038733d00470fa75ba129345c21f65f7ef8c8668e530e7469",
+    "bytes": 235732
+  },
+  {
+    "url": "https://lovdata.no/dokument/NL/lov/1997-02-28-19/KAPITTEL_8",
+    "status": 200,
+    "path": "fresh-ae697adc3722.html",
+    "sha256": "bfecdc7c653868da9925b06a979fdbc36744087afcbc7b134d1ada13629f1bc8",
+    "bytes": 219362
+  },
+  {
+    "url": "https://lovdata.no/dokument/NL/lov/2005-06-17-67",
+    "status": 200,
+    "path": "fresh-e65fe648ec5c.html",
+    "sha256": "0ec643e06b77d982482cda1fb980b3a4249c4f3ac5f5804ef3285b9da98ddd5c",
+    "bytes": 537741
+  },
+  {
+    "url": "https://lovdata.no/dokument/NL/lov/2012-06-22-43",
+    "status": 200,
+    "path": "fresh-7b3b8b803426.html",
+    "sha256": "c494a58d3bcb49650f9dc12ca404a5cb8082f0a76764118b33c533369d43f6a4",
+    "bytes": 64474
+  },
+  {
+    "url": "https://lovdata.no/dokument/SF/forskrift/1997-12-15-1305",
+    "status": 200,
+    "path": "fresh-a7e251667aa4.html",
+    "sha256": "981f32295ebecdb1375685df018a7b3684afdcc2c56b67e4ea24624becf987ab",
+    "bytes": 52972
+  },
+  {
+    "url": "https://lovdata.no/dokument/SF/forskrift/2014-06-24-857",
+    "status": 200,
+    "path": "fresh-5e4f6dfb02bc.html",
+    "sha256": "80cf4ffabf5246876e3f514b9e3f121ac91c977eb0620b88e08342298287be1e",
+    "bytes": 58507
+  },
+  {
+    "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-18-2748",
+    "status": 200,
+    "path": "fresh-1ef4f068503e.html",
+    "sha256": "b1445240dcfb22416e5439ea4e85e39747a5a7d894622223bc90120df74ef89b",
+    "bytes": 80407
+  },
+  {
+    "url": "https://lovdata.no/dokument/STV/forskrift/2025-12-19-2780",
+    "status": 200,
+    "path": "fresh-07e3395b5b5c.html",
+    "sha256": "26542e109049499820b9ab8f0ce3cf0fae17d052ee1e2078cdd1d70c54901a19",
+    "bytes": 39041
+  },
+  {
+    "url": "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/frister-og-betaling-i-a-meldingen/",
+    "status": 200,
+    "path": "fresh-acb9cbbb07d9.html",
+    "sha256": "f7da980b3015c74111a1155628bca5acf1fbec343045f9ea1fda61a3b4ed5589",
+    "bytes": 84679
+  },
+  {
+    "url": "https://www.skatteetaten.no/bedrift-og-organisasjon/arbeidsgiver/a-meldingen/veiledning/feilmeldinger-magnetedag-og-tilbakemelding/oversikt-over-feilmeldinger-magnetedag/ugyldig-kombinasjon-av-inntekt-og-forskuddstrekk-pa-svalbard-513-2/",
+    "status": 200,
+    "path": "fresh-8af1a9e5995b.html",
+    "sha256": "8e8bebad4e26d651f40a36e873fa489b788929d7d2f48a236d5c82de06fa67b5",
+    "bytes": 110453
+  },
+  {
+    "url": "https://www.skatteetaten.no/kontakt/",
+    "status": 200,
+    "path": "fresh-db2cd5f21db0.html",
+    "sha256": "d1552f187bbdeff155b5bf8ad96916452d517fed40c11a56fa9c8c7e250e16b1",
+    "bytes": 81182
+  },
+  {
+    "url": "https://www.skatteetaten.no/nn/bedrift-og-organisasjon/rapportering-og-bransjar/suppleringsskatt/veiledning/introduksjon-til-gir/",
+    "status": 200,
+    "path": "fresh-cf10309d2bf0.html",
+    "sha256": "168c0500e66357bdf269ad6d94c88f0f4acd9efa142b968ddb4584976207892a",
+    "bytes": 66152
+  },
+  {
+    "url": "https://www.skatteetaten.no/rettskilder/type/handboker/skatte-abc/gjeldende/f-10-finansskatt/F-10.001/",
+    "status": 200,
+    "path": "fresh-36101bb9611c.html",
+    "sha256": "55c7e2d42cb6f1337aafcfc86290a8cb5d762377b2c7cfa2cdd4ac4102c2177c",
+    "bytes": 3333464
+  },
+  {
+    "url": "https://www.skatteetaten.no/skjema/direkte-levering-av-a-meldingen/",
+    "status": 200,
+    "path": "fresh-7d819792cfc7.html",
+    "sha256": "518fd25d6a18c38155a1c039cd7e1fbed30274e5f34ac5ae10da9bea8be37052",
+    "bytes": 76905
+  }
+]

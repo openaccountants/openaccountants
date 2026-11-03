@@ -1,0 +1,296 @@
+{
+  "date": "2026-10-31",
+  "candidate": "3e0816e1f574c7abf144290f96b4371cdb9d77d9",
+  "scope": "Substantive independent reading of all 41 bindings against complete retained primary clauses, neighbouring provisions and fresh public sources as described in source-access.json. Mechanical quote/hash checks are recorded separately.",
+  "rows": [
+    {
+      "id": "SJ-RRH-001",
+      "act_article": "Beneficial Owners Register Act §2",
+      "rule": "Express Svalbard scope for entities operating or registered there; ordinary company branch only",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Act §2 expressly includes Svalbard for entities operating or registered there. The Guide restricts the pack to Svalbard despite the wider statutory Jan Mayen reference."
+    },
+    {
+      "id": "SJ-RRH-002",
+      "act_article": "Beneficial Owners Register Act §3",
+      "rule": "Definitions distinguish the reporting entity and the ultimate natural-person beneficial owner",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Act §3 distinguishes the reporting entity from ultimate natural-person owners/controllers. Ordinary company scope does not equate corporate shareholders with beneficial owners."
+    },
+    {
+      "id": "SJ-RRH-003",
+      "act_article": "Beneficial Owners regulation §1-2",
+      "rule": "Specified exempt entities do not create a blanket exemption for incorporated state-owned companies",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Complete regulation §1-2 exemptions read, including the exception to the foundation exclusion. A state-owned AS is not automatically the state, a statsforetak or another listed exempt legal form."
+    },
+    {
+      "id": "SJ-RRH-004",
+      "act_article": "Beneficial Owners regulation §4-1",
+      "rule": "Listed regulated-market entities have a separate disclosure route instead of the ordinary method",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Regulation §4-1 exempts the qualifying listed entity from §§2-1 and 3-4 only and substitutes market name, home country and URL. The Guide refers this separate route rather than suppressing filing."
+    },
+    {
+      "id": "SJ-RRH-005",
+      "act_article": "Beneficial Owners regulation §2-2",
+      "rule": "Foundations and foreign trusts have position-based identification; complete specialist implementation is excluded",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Complete §2-2 position lists and look-through substitutions read for foundations/trusts. The ordinary percentage method is expressly withheld from these specialist cases."
+    },
+    {
+      "id": "SJ-RRH-006",
+      "act_article": "Beneficial Owners regulation §3-5",
+      "rule": "Foundation and trust registration follows a separate statutory branch",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 3-5 registers §2-2 positions and associated look-through information. The Guide excludes full specialist implementation without declaring those duties absent."
+    },
+    {
+      "id": "SJ-RRH-007",
+      "act_article": "Beneficial Owners regulation §3-6",
+      "rule": "NUF exception requires foreign EEA registration and disclosure of the register name and URL",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 3-6 requires beneficial-owner information in a foreign register and an EEA registration obligation, and still requires register name and URL. It does not exempt a Norwegian company merely because a shareholder is foreign."
+    },
+    {
+      "id": "SJ-RRH-008",
+      "act_article": "Beneficial Owners Register Act §9",
+      "rule": "Register both no-owner and cannot-identify outcomes honestly",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Act §9(2) distinguishes no owner from an existing owner who cannot be unambiguously identified, and requires registration of both outcomes. The Guide preserves both and the linked officer-information branch."
+    },
+    {
+      "id": "SJ-RRH-009",
+      "act_article": "Beneficial Owners regulation §2-1",
+      "rule": "Direct ownership and differing votes must exceed 25%; direct board rights must exceed half; other control is separate",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 2-1(1) uses more than 25% interests; more than 25% votes when their distribution differs; more than half board rights; and a separate other-control test. Exactly 25% is not a safe harbour from the other tests."
+    },
+    {
+      "id": "SJ-RRH-010",
+      "act_article": "Beneficial Owners regulation §2-1",
+      "rule": "Indirect upstream voting or board rights must reach at least half; downstream qualifying positions can be combined; do not multiply economic interests",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 2-1(3) applies at least half the votes or board appointment/removal rights at upstream levels. Entities can alone or together hold the downstream qualifying position. A multiplied capital interest is not the statutory indirect-control test."
+    },
+    {
+      "id": "SJ-RRH-011",
+      "act_article": "Beneficial Owners regulation §2-1",
+      "rule": "Record agreements, direct and indirect combined grounds, unexercisable rights and exact percentages",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 2-1(2),(4),(5) requires direct/indirect/agreement and combined grounds, omission of unexercisable votes/board rights, and retention of actual percentages. Treasury/circular interests are qualified as specified by the clause."
+    },
+    {
+      "id": "SJ-RRH-012",
+      "act_article": "Beneficial Owners regulation §3-4",
+      "rule": "Registration brackets are 25.01–49.99%, 50–74.99% and 75–100%; identical ownership and voting positions need not both be registered",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 3-4(1) reporting brackets and identical ownership/votes exception are exact. The Guide retains the strict substantive threshold and explicitly leaves technical sub-25.01 display/rounding unresolved."
+    },
+    {
+      "id": "SJ-RRH-013",
+      "act_article": "Beneficial Owners Register Act §9",
+      "rule": "Initial registration is within 14 days of public registration; changes are without delay and within 14 days",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Act §9(3),(4) gives 14 days after public registration initially; updates are without delay and no later than 14 days after identification/awareness of relevant changes. The Guide does not substitute annual shareholder reporting."
+    },
+    {
+      "id": "SJ-RRH-014",
+      "act_article": "Beneficial Owners regulation §3-10",
+      "rule": "A register discrepancy order gives three weeks to confirm or correct; noncompliance can trigger a fine",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 3-10(4), read with all discrepancy provisions, gives three weeks to confirm or amend after an order; fines remain subject to §14 and §5-1 conditions."
+    },
+    {
+      "id": "SJ-RRH-015",
+      "act_article": "Beneficial Owners Register Act §7",
+      "rule": "Retain information for ten years after the person ceases to be a beneficial owner",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Act §7(1) is ten years after the natural person ceases to be a beneficial owner. This differs from both entity-closure storage and register-operator historical retention."
+    },
+    {
+      "id": "SJ-RRH-016",
+      "act_article": "Beneficial Owners regulation §2-3",
+      "rule": "Read incorporation documents, articles, share register, agreements and intermediary evidence; identification must be auditable",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 2-3 requires incorporation/articles/share-register and relevant agreement/intermediary material; the evidence must allow identification reasoning to be audited. The Guide states those inputs and purpose."
+    },
+    {
+      "id": "SJ-RRH-017",
+      "act_article": "Beneficial Owners Register Act §4",
+      "rule": "Obtain identity, D-number or birth date, residence country and citizenship; document negative or unidentified results and update the facts",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Act §4 includes name, identity/D-number or birth date, residence country and citizenship, documented negative/unidentified reasoning, and ongoing updating. The regulations/public procedures supply more specific registration rules."
+    },
+    {
+      "id": "SJ-RRH-018",
+      "act_article": "Beneficial Owners regulation §3-4",
+      "rule": "Register all intermediary identifiers and combined grounds; use foreign name and number or name and address when no number exists",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 3-4(2),(3) requires every intermediary and all combined grounds. Identifier fallback order is Norwegian number, otherwise foreign name and number, otherwise name and address."
+    },
+    {
+      "id": "SJ-RRH-019",
+      "act_article": "Beneficial Owners regulation §3-4",
+      "rule": "Where no owner is identified, provide director and board identities excluding residence country without classifying those officers as owners",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 3-4(4), cross-read with Act §4(2), supplies managing-director/board identities and citizenship, excluding residence country, when owners are not identified. Supplying officers does not designate them beneficial owners."
+    },
+    {
+      "id": "SJ-RRH-020",
+      "act_article": "Beneficial Owners regulation §3-4",
+      "rule": "At least 75% ownership or votes by the listed ownerless public bodies or corresponding foreign bodies requires specific disclosure",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 3-4(4) additional disclosure requires at least 75% interests or votes directly or indirectly held by §1-2(f)-(l) ownerless bodies or corresponding foreign bodies; foreign status must be recorded. It is not a blanket company exemption."
+    },
+    {
+      "id": "SJ-RRH-021",
+      "act_article": "Beneficial Owners regulation §2-6",
+      "rule": "Notify beneficial owners of registration; notice can accompany the information request",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 2-6 requires notification to beneficial owners and permits it alongside information collection. The Guide does not infer an authenticated notice screen."
+    },
+    {
+      "id": "SJ-RRH-022",
+      "act_article": "Beneficial Owners regulation §2-4",
+      "rule": "Relevant controllers, owners and other persons must answer identification requests and provide registration data",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 2-4 covers specified controllers, relevant owners and others reasonably expected to hold useful information, on request, plus persons whose data must be registered. The Guide states the disclosure duties without inventing an independent percentage test."
+    },
+    {
+      "id": "SJ-RRH-023",
+      "act_article": "Beneficial Owners regulation §2-5",
+      "rule": "After entity closure the then board arranges five-year storage; this differs from the former-owner clock",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 2-5(1) requires the board/equivalent at dissolution/cessation to arrange five years of all obtained information, assessments and documentation. The separate trust-manager rule is outside this ordinary company branch."
+    },
+    {
+      "id": "SJ-RRH-024",
+      "act_article": "Beneficial Owners regulation §3-1",
+      "rule": "Brønnøysund operates the register and can require electronic reporting and entity identifiers",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 3-1 names the Brønnøysund register unit and permits automation, electronic submission and necessary entity-identifying information. The Guide uses the public electronic RRH service without asserting universal authenticated fields."
+    },
+    {
+      "id": "SJ-RRH-025",
+      "act_article": "Beneficial Owners regulation §3-8",
+      "rule": "Specified officers or a delegated natural person can sign the registration message",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 3-8 enumerated roles and delegated natural-person signature route read completely. The Guide differentiates legal signature authority from public service access and later message-reading access."
+    },
+    {
+      "id": "SJ-RRH-026",
+      "act_article": "Beneficial Owners regulation §3-7",
+      "rule": "Required information must be supplied or registration is refused; the authority can check accuracy and request documents",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 3-7(1) requires refusal when mandatory information is absent; paragraphs (2)-(4) permit accuracy checks, evidence demands and conditional fines. A draft/login is not completed registration."
+    },
+    {
+      "id": "SJ-RRH-027",
+      "act_article": "Beneficial Owners regulation §3-3",
+      "rule": "Correct an inaccurate entry and notify affected owners; unresolved corrections can require a new message or order",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 3-3 requires error correction and notification of affected owners; unclear corrections can require a new report and order. The Guide does not assume a correction becomes effective merely by preparing it."
+    },
+    {
+      "id": "SJ-RRH-028",
+      "act_article": "Beneficial Owners Register Act §14",
+      "rule": "An order specifies a deadline; coercive fines follow noncompliance and can address entity officers",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Act §14 requires an order with a set deadline before noncompliance can attract a continuing coercive fine. Officers can receive orders; the Guide does not start fines automatically on day 15."
+    },
+    {
+      "id": "SJ-RRH-029",
+      "act_article": "Beneficial Owners regulation §5-1",
+      "rule": "Daily fines are 0.5 R for the first eight weeks, 1 R for the next ten weeks, then 1.5 R; collection is after weeks eight and eighteen and subsequent ten-week periods",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "All §5-1 stages and collection timing read: daily 0.5 R for eight weeks, 1 R for ten more, then 1.5 R; collection after week 8, week 18 and subsequent ten-week periods. Recomputed daily NOK amounts separately."
+    },
+    {
+      "id": "SJ-RRH-030",
+      "act_article": "Court-fee regulation §2-1",
+      "rule": "The 2026 court-fee unit R is NOK 1,345 from 1 January; it converts the statutory fine units",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Court-fee regulation §2-1 states NOK 1,345, with the 17 December 2025 amendment effective 1 January 2026. The Guide restricts conversions to 2026 and actual demands."
+    },
+    {
+      "id": "SJ-RRH-031",
+      "act_article": "Beneficial Owners regulation §5-1",
+      "rule": "Notice and reasonable correction time are required; no separate notice is needed if the order states when the fine starts",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 5-1(3) requires notice and reasonable correction time; a separate notice is unnecessary only where the order itself announces accrual upon expiry. These conditions are adjacent to the fine table."
+    },
+    {
+      "id": "SJ-RRH-032",
+      "act_article": "Beneficial Owners regulation §5-1",
+      "rule": "After eight weeks, personal officer orders and fines are possible, with joint liability and a limit after leaving the role",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 5-1(5) permits personal orders/fines only after eight uncorrected weeks of entity fines, for §3-8(a)-(g) roles. Persons are jointly liable; further accrual stops after their role ends. The Guide refers to specified officers rather than all delegates."
+    },
+    {
+      "id": "SJ-RRH-033",
+      "act_article": "Beneficial Owners regulation §5-1",
+      "rule": "Remission criteria and a one-year application deadline apply; remission is unavailable for the first-registration deadline failure",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Section 5-1(4) requires substantiated outside-control circumstances or special fairness grounds, within one year after the first fine notice was sent; it expressly bars applications for failure to meet Act §9(3) initial registration. No guaranteed waiver is offered."
+    },
+    {
+      "id": "SJ-RRH-034",
+      "act_article": "Beneficial Owners Register Act §15",
+      "rule": "Intentional specified failures or false information can attract a fine or imprisonment up to one year",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Act §15 requires intentional conduct for the listed information/retention/registration failures or false data. Maximum one-year imprisonment is separate from coercive fines."
+    },
+    {
+      "id": "SJ-RRH-035",
+      "act_article": "Beneficial Owners Register Act §4",
+      "rule": "A foreign owner without a Norwegian identifier uses birth date; foreign intermediary identifiers remain required",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Act §4 supports the no-Norwegian-identifier birth-date route. The second phrase about foreign intermediary identifiers is supported jointly by the already cited and reviewed §3-4(2) binding SJ-RRH-018; §4 alone does not prescribe intermediary fields. No Guide contradiction or unsupported rule remains."
+    },
+    {
+      "id": "SJ-RRH-036",
+      "act_article": "Published authority procedure",
+      "rule": "RRH-0100 registration service and negative-result submission",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Complete RRH-0100 public instructions require the ownership investigation before starting, including submission for no-owner results; Start tjeneste is the published entry point. No login or submission was attempted."
+    },
+    {
+      "id": "SJ-RRH-037",
+      "act_article": "Published authority procedure",
+      "rule": "Registration-only delegation also requires business-post or register-message access to read the decision",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Public RRH-0100 instructions require ordinary business-post or Register-message access in addition to registration-only delegation to read the decision. The Guide states the exact published package/single-service names."
+    },
+    {
+      "id": "SJ-RRH-038",
+      "act_article": "Published authority procedure",
+      "rule": "Users with a Norwegian identifier enter it and their surname; other data come from the Population Register",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "AS and RRH-0100 public pages say identity/D-number plus surname for numbered persons; Population Register supplies other personal details. Foreign-numberless people use birth date with full published details; all citizenships are included."
+    },
+    {
+      "id": "SJ-RRH-039",
+      "act_article": "Published authority procedure",
+      "rule": "Record the actual control category and direct, indirect or agreement basis",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "AS and RRH-0100 pages require the actual ownership/votes/board/other-control category and direct/indirect/agreement basis. Regulation supplements public prose with combined grounds and every intermediary identifier."
+    },
+    {
+      "id": "SJ-RRH-040",
+      "act_article": "Published authority procedure",
+      "rule": "Authority warning against substituting AML criteria for the register criteria",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "RRH-0100 expressly warns that AML criteria differ from the beneficial-owner register. Read with regulation §2-1, this supports refusing to substitute a bank checklist."
+    },
+    {
+      "id": "SJ-RRH-041",
+      "act_article": "Authority overview, introductory list",
+      "rule": "No owner, dissolution, inactivity or listing does not itself remove the appropriate filing duty; listed entities have a special route",
+      "verdict": "supported within declared ordinary-company scope",
+      "review": "Complete overview introductory list includes no owner, dissolution, inactivity and listing without removing the applicable filing duty. Listed entities still require the special disclosure branch, which the Guide expressly preserves."
+    }
+  ],
+  "findings": [],
+  "evidence_locator_note": "SJ-RRH-035 foreign-intermediary phrase is cross-supported by SJ-RRH-018 / regulation §3-4(2), not Act §4 alone."
+}

@@ -1,0 +1,543 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 164 frá 21. desember 2001 um skatting av kapitalvinningi (Kapitalvinningsskattalógin), sum seinast broytt við løgtingslóg nr. 127 frá 13. desember 2024
+21. desember 2001Nr. 164
+Løgtingslóg um skatting av kapitalvinningi, sum seinast broytt við løgtingslóg nr. 127 frá 13. desember 2024
+(Kapitalvinningsskattalógin)
+Kapittul 1 Lógarøki og allýsingar
+Kapittul 1 a Fráflyting
+Kapittul 1 b Tilflyting
+Kapittul 2 Vinnuligt virksemi
+Kapittul 3 Ikki vinnuligt virksemi
+Kapittul 4 Aðrar ásetingar
+Kapittul 5 Almennar ásetingar
+Kapittul 6 Gildiskoma
+Kapittul 7 Skiftisreglur
+Kapittul 1
+Lógarøki og allýsingar
+§ 1. 1) 2) 3) 4) 5) Reglurnar í hesi løgtingslóg fevna um:
+1) Sølu og aðra avhendan av partabrøvum, íløguprógvum og líknandi virðisbrøvum eins og umbýtiligum lánsbrøvum. Sama er galdandi fyri vinning ella tap, ið stendst av at siga frá sær ella avhenda serstøk rættindi, ið hava tilknýti til hesi virðisbrøv.
+2) Innfrían, sølu og aðra avhendan enn sølu av fíggjarkrøvum herundir lánsbrøvum, pantibrøvum og skuldarbrøvum
+3) Leysgeran av skuld.
+4) Keyps- og sølurættindi til virðisbrøv og fíggjarkrøv fevnd av nr. 1 og nr. 2.
+5) Vinningsbýti.
+6) Rentuinntøkur.
+7) (Strikað).
+Stk. 2. 6) 5) Fyri vinningsbýti verður roknað alt, ið felag útlutar partabrævaeigara, lutahavara o.ø.l. Útlutan av frípartabrøvum, frílutaprógvum eins og útlutanir, sum fara fram í tí inntøkuári, tá felag verður endaliga avtikið, eru ikki at rokna sum vinningsbýti. 1. pkt. er ikki galdandi, tá eitt felag heldur uppat sambært løgtingslóg um skattafríar samanleggingar.
+Stk. 3. 6) Útlutanir í tí inntøkuári, tá eitt felag verður endaliga avtikið, verða viðgjørdar eftir ásetingunum um sølu og aðra avhending.
+Stk. 4. 6) 5) TAKS kann loyva, at útlutanir í sambandi við niðurskriving av partapeningi verða viðgjørdar eftir ásetingunum um sølu og aðra avhending.
+Stk. 5. 6) 7) 5) Reglurnar í hesi løgtingslóg fevna ikki um vinning ella tap av virðisbrøvum, sum eru liður í eftirlønarskipanum, sum eru fevndar av rentutryggingarlógini.
+§ 2. 5) Skattskylda eftir hesi løgtingslóg áliggur øllum teimum persónum, feløgum, stovnum, deyðsbúgvum og grunnum v.m., sum, í tí løtu tey hava ásannað vinning ella tap, fáa útlutað vinningsbýti ella hava rentuinntøku, eru undir fullari ella avmarkaðari skattskyldu í Føroyum.
+Kapittul 1 a 2)
+Fráflyting
+§ 2 a. Tá persónur skattliga gerst heimahoyrandi í Danmark, Grønlandi ella øðrum landi, verður hetta við atliti at hesi løgtingslóg sammett við sølu og aðra avhendan, um kursvirðið á virðisbrøvum hansara fer upp um 100.000 kr. 1. pkt. er harumframt galdandi fyri partabrøv, sum hava negativt útveganarvirði.
+Stk. 2. Skattur verður roknaður av samlaða nettovinninginum, sbrt. stk. 1. Skuldargjaldfreist verður veitt eftir §§ 2 b og 2 c, tá vinningur og tap verða gjørd upp eftir realisatiónsgrundregluni.
+§ 2 b. Persónur kann fáa skuldargjaldfreist, sbrt. § 2 a, tá viðkomandi skattliga gerst heimahoyrandi í Danmark, Grønlandi ella øðrum landi.
+Stk. 2. Skuldargjaldfreist eftir stk. 1 er treytað av, at tað í seinasta lagi fráflytingardagin o.a. verður innlatin sjálvuppgáva til TAKS. Saman við sjálvuppgávuni skal fylgja við eitt innstøðuyvirlit, sbrt. § 2 c.
+Stk. 3. Skuldargjaldfreistin er treytað av, at tað verður veitt nøktandi trygd. Trygdin skal setast í mun til skáaupphæddina, sum skal setast sum bankatrygd.
+Stk. 4. Verða sjálvuppgáva og innstøðuyvirlit, sbrt. stk. 2, ikki innlatin rættstundis, fellur rætturin til skuldargjaldfreist burtur, og skatturin fellur til gjaldingar, tá skatturin, um skái ikki varð veittur, hevði verið fallin til gjaldingar. 0,7% roknast í rentu fyri hvønn byrjaðan mánað frá gjalddegnum at rokna.
+Stk. 5. TAKS kann síggja burtur frá freistini at lata inn sjálvuppgávu og innstøðuyvirlit, sum nevnt í stk. 2, sbrt. stk. 4.
+§ 2 c. Tá skuldargjaldfreist verður veitt, skal eitt innstøðuyvirlit gerast yvir tey virðisbrøv, sum persónurin eigur fráflytingardagin. Virðisbræv, har tann roknaði skatturin eftir § 2 a er goldin, skal tó ikki takast við í innstøðuyvirlitið. Fer skattafrítt partabrævaumbýti, samanlegging ella kloyving fram eftir fráflyting, skulu tey virðisbrøv, sum verða vunnin við successión, innganga í innstøðuyvirlitið. Harumframt verður gjørd ein skáasalda, sum fevnir um tann útroknaða skattin. Skáaupphæddin fellur til gjaldingar eftir reglunum í stk. 2-5.
+Stk. 2. Við avhending av virðisbrøvum, sum eru í innstøðuyvirlitinum, verður gjørd ein uppgerð yvir vinning og tap. Uppgerðin verður gjørd fyri hvørt virðisbræv sær og verður grundað á keypsprísin og avhendingarupphæddina á virðisbrævinum. Við keypsprís er at skilja keypsprísin, sum varð nýttur í sambandi við útrokningina eftir § 2 a. Við avhending verða fyrst keyptu virðisbrøvini roknað sum tey fyrst seldu. Við avhending við vinningi verður reglan í stk. 3 nýtt, og við avhending við tapi verður reglan í stk. 4 nýtt.
+Stk. 3. Tað verður roknaður skattur av uppgjørda vinninginum eftir hesi løgtingslóg. Í uppgjørda vinninginum verður frádráttur veittur fyri skatt, sum er goldin Danmark, Grønlandi ella øðrum landi eftir tvískattasáttmála ella eftir § 19 í hesi løgtingslóg. Er uppgjørdi skatturin størri enn skatturin, sum er goldin uttanlands, fellur írestandi skatturin til gjaldingar. Skáasaldan verður niðurskrivað við upphæddini, tá hon er goldin. Um uppgerðin eftir stk. 2 ístaðin hevði viðført eitt tap, um hon varð grundað á virðið á virðisbrævinum fráflytingingardagin og avhendingarupphæddina, verður skáasaldan harumframt niðurskrivað við eini upphædd, ið samsvarar við negativa virðið av uppgjørda tapinum. Í tann mun persónurin eftir útlendskum reglum, sum persónurin er fevndur av, hevur frádrátt fyri tað í 5. pkt. uppgjørda tapið, verður roknað eitt negativt skattavirði av hesum. Ein upphædd samsvarandi við negativa skattavirðið av uppgjørda tapinum fellur til gjaldingar.
+Stk. 4. Tað eftir stk. 2 uppgjørda tapið verður minkað við eini upphædd samsvarandi við munin millum keypsprísin og virðið fráflytingardagin, um tað fráflytingardagin bleiv uppgjørt eitt tap upp á viðkomandi virðisbræv, tó so at tapið ikki kann niðursetast niður um 0 kr. Tað eftir stk. 2 uppgjørda tapið verður hækkað við eini upphædd sansvarandi við munin millum virðið á virðisbrævinum fráflytingardagin og keypsprísin, um tað fráflytingardagin varð uppgjørdur ein vinningur upp á viðkomandi virðisbræv. Kann tað eftir útlendskum reglum, sum persónurin er fevndur av, uppgerast eitt tap, sum persónurin hevur frádrátt fyri í viðkomandi landi, verður tað roknað eitt negativt skattavirði av hesum. Ein upphædd samsvarandi við tað negativa skattavirði fellur til gjaldingar.
+Stk. 5. At persónur doyr, verður sammett við avhending av øllum virðisbrøvunum, sum eru partar av innstøðuyvirlitinum. Reglurnar í stk. 2-4 eru samsvarandi galdandi.
+Stk. 6. Fyri hvørt inntøkuár við skáasaldu størri enn 0 kr. skal sjálvuppgáva sendast TAKS. Saman við sjálvuppgávuni skal bústaður upplýsast. Freistin at lata inn sjálvuppgávu er 1. mai árið eftir inntøkuárið. Verður sjálvuppgáva ikki innlatin rættstundis fellur skáasaldan til gjaldingar. TAKS kann síggja burtur frá freistini at lata inn sjálvuppgávu.
+§ 2 d. Fær persónur, fevndur av reglunum í §§ 2 a-2 c, aftur skattligan heimstað í Føroyum, eru reglurnar í §§ 2 a-2 c galdandi fyri tíðarskeiðið fram til tilflytingardagin fyri virðisbrøv, sum persónurin framhaldandi eigur. Eftir tilflyting verða virðisbrøvini framhaldandi mett sum útvegað, tá tey vórðu útvegað, men inngangsvirðið eftir tilflyting er handilsvirði tilflytingardagin.
+Kapittul 1 b 8)
+Tilflyting
+§ 2 e. Tá persónur skattliga gerst heimahoyrandi í Føroyum, verða virðisbrøv, ið hesin persónur eigur, við atliti at hesi løgtingslóg, roknað sum útvegað tann dagin, hesi veruliga eru útvegað, men til handilsvirðið tann dagin persónurin gerst heimahoyrandi í Føroyum.
+Stk. 2. Eru virðisbrøvini skrásett á keypskála, er handilsvirðið kursvirðið tann dagin, persónurin gerst heimahoyrandi í Føroyum. Eru virðisbrøvini ikki skrásett á keypskála, verður handilsvirðið ásett við støði í innara virðinum í felagnum við endan av seinasta roknskaparskeiðnum, áðrenn persónurin gerst skattliga heimahoyrandi í Føroyum.
+Stk. 3. Ístaðin fyri at nýta innara virðið sum ásett í stk. 2, kann TAKS loyva at annað mett virði verður nýtt, um skattgjaldarin kann skjalprógva, at annað mett virði gevur betri ábending um veruliga handilsvirðið tann dagin, persónurin gerst heimahoyrandi í Føroyum.
+§ 2 f. 5) Tap kann ikki frádragast í kapitalvinningsinntøku í tann mun tapið stavar frá avhendingarupphædd, sum er lægri enn ásett inngangsvirði sambært § 2 e.
+Kapittul 2
+Vinnuligt virksemi
+§ 3. Vinningur ella tap sambært § 1, sum er liður í skattgjaldarans vinnuliga virksemi, verður roknað upp í uppgerðina av skattskyldugu inntøkuni sambært skattalógini.
+Stk. 2. Vinningur og tap verða gjørd upp sum munurin millum avhendingarupphædd og útveganarupphædd (realisatiónsprinsippið). Hevur partabrævaeigari fleiri partabrøv við somu rættindum í sama felag, verður tað, sum fyrst er útvegað, roknað sum fyrst avhendað (FIFO- prinsippið).
+Stk. 3. Hin skattskyldugi kann tó í staðin einaferð fyri alla tíð írokna ikki staðfestan vinning ella tap í ta skattskyldugu inntøkuna (lagurprinsippið).
+Stk. 4. Um skattgjaldarin velur at nýta lagurprinsippið, verða vinningur ella tap fyri inntøkuárið gjørd upp sum munurin millum virðið við ársbyrjan og virðið við ársenda. Fyri útveganir í árinum verður útveganarpeningurin nýttur í staðin fyri virðið við ársbyrjan. Fyri avhendanir í árinum verður avhendingarupphæddin nýtt í staðin fyri virðið við ársenda.
+Kapittul 3
+Ikki vinnuligt virksemi
+Partabrøv v.m.
+§ 4. Vinningur ella tap sambært § 1, nr. 1 skulu roknast við í uppgerðina av skattskyldugu inntøkuni eftir § 14, tá vinningurin ella tapið er ásannað (realisatiónsprinsippið).
+Stk. 2. Vinningur ella tap sambært § 1, nr. 1 verða gjørd upp sum munurin millum útveganarupphæddina og avhendingarupphæddina fyri avvarðandi partabrøv v.m. Hevur partabrævaeigari fleiri partabrøv við somu rættindum í sama felag, verður tað, sum fyrst er útvegað, roknað sum fyrst avhendað (FIFO-prinsippið).
+Stk. 3. Fyri feløg og grunnar v.m., sum eru fult skattskyldug í Føroyum, kann tap við avhending av teimum í § 1, nr. 1 nevndu virðisbrøvum bert dragast frá í uppgerð av inntøku eftir § 14 í tann mun, tapið er størri enn skattafrítt vinningsbýti av avvarðandi virðisbrøvum.
+Stk. 4. Frípartabrøv, rættindi til frípartabrøv og tekningsrættindi, ið eru tillutað, verða roknað fyri útvegað fyri 0 kr., og verða roknað fyri útvegað samstundis sum móðurpartabrævið.
+§ 5. Verða tey í § 1, nr. 1 nevndu virðisbrøv avhendað til tað felagið v.m., ið hevur givið út virðisbrævið, skal avhendingarupphæddin roknast fyri vinningsbýti. Sama er galdandi fyri umbýtilig lánsbrøv og tekningsrættindi til tey í § 1, nr. 1 nevndu virðisbrøv.
+Stk. 2. 5) TAKS kann loyva, at avhendingarupphæddin ikki verður viðgjørd eftir stk. 1.
+Stk. 3. 5) Fer avhending nevnd í stk. 1. fram í tí kalendaraári, tá felagið, ið hevur givið virðisbrævið út, er endaliga avtikið, er stk. 1 ikki galdandi. Stk. 1 er heldur ikki galdandi, tá eitt børsskrásett felag keypir egin partabrøv á einum skipaðum marknaði, tá endamálið við afturkeypinum antin er at lækka partapeningin ella at nýta partabrøvini sum lið í lønargjaldi til starvsfólk.
+Stk. 4. Í teim í stk 2 og stk. 3 nevndu førum verða vinningur ella tap viðgjørd eftir somu reglum sum vinningur ella tap við avhendan av partabrøvum v.m. til onnur enn tey í stk. 1 nevndu feløg v.m., jbr § 4.
+Fíggjarkrøv og skuld
+§ 6. Vinningur ella tap sambært § 1, nr. 2 og 3 skulu roknast við í uppgerðina av skattskyldugu inntøkuni eftir § 14, tá vinningurin ella tapið eru ásannað (realisatiónsprinsippið).
+Stk. 2. Vinningur ella tap av krøvum verða gjørd upp sum munurin millum úveganarupphædd og avhendingarupphædd.
+Stk. 3. Vinningur ella tap av skuld verða gjørd upp sum munurin millum virðið á skuldini, tá skuldin varð stovnað og virðið, tá skuldin verður innloyst ella frígivin. Verður skuldin innloyst við avdráttum, verður íroknaður skattskyldugu inntøkuna so stórur partur, sum svarar til lutfallið millum innloysingarvirðið við frádrátti av útveganarvirðinum og innloysingarvirðið.
+Stk. 4. 1) Fyri likamligar persónar og deyðsbúgv skal vinningur bert roknast við í uppgerðina av skattskyldugu inntøkuni eftir § 14, um vinningurin er meir enn 1.000 kr. samanlagt um árið. Tap kann bert dragast frá í uppgerðini av skattskyldugu inntøkuni eftir § 14 av lánsbrøvum, skuldarbrøvum og pantibrøvum, ið eru skrásett á virðisbrævamarknaði.
+Stk. 5. Tap av skuldarum og tap av viðurlagsvinnu verða viðgjørd eftir reglunum í skattalógini.
+Stk. 6. 1) Valutakursvinningur ella -tap av fíggjarkrøvum og skuld, ið hava samband við skattgjaldarans vinnuvirki, verða tikin við í skattskyldugu inntøkuna eftir skattalógini. Vinningurin ella tapið verða tikin við í skattskyldugu inntøkuna tað árið, vinningurin er staðfestur, og tapið er goldið.
+Stk. 7. 7) Vinningur ella tap í sambandi við innloysing ella umlegging o.a. av realkreditláni í egnum bústaði, sbr. § 2, stk. 1 í løgtingslóg um stuðul til rentuútreiðslur av lánum, skal ikki roknast við í skattskyldugu inntøkuni eftir § 14.
+§ 7.9) Vinningur ella tap við eftirgeving, fyrning, samanrenning, fyrilokan av skuld og orsakað av endurskipan og sjálvbodnari skuldarsemju verða roknað við í uppgerðina av skattskyldugu inntøkuni eftir § 14 í tann mun, skuldin verður niðurskrivað niður um kursvirðið á kravinum fyri kravánaranum, tá skuldin varð eftirgivin v.m.
+Stk. 2. Reglan í stk. 1 er ikki galdandi, um talan er um gávu, arvaforskot ella arv frá einum av teimum í skattalógini § 29, nr. 3 nevndu persónum.
+Keyps- og sølurættindi
+§ 8. Vinningur ella tap av keyps- og sølurættindum, ið eru fevnd av § 1, nr. 4 skulu roknast við í uppgerðina av skattskyldugu inntøkuni eftir § 14 tað árið, vinningurin ella tapið eru ásannað (realisasjónsprinsippið).
+Stk. 2. Vinningur ella tap verða gjørd upp sum munurin millum útveganarupphædd og avhendingarupphædd.
+Vinningsbýti
+§ 9. 1) 5) Vinningsbýti verður roknað við í uppgerðina av skattskyldugu inntøkuni eftir § 14. Feløg og grunnar o.o., tó ikki deyðsbúgv, sum eru fult skattskyldug í Føroyum, og sum eiga partapening ella innskotspening í tí útlutandi felagnum, skulu ikki gjalda skatt av vinningsbýtinum. Skattur skal ikki latast av vinningsbýti til partabrøv/innskotsprógv, sum tað útlutandi felagið sjálvt eigur.
+Stk. 2. 10) (Strikað).
+Rentuinntøkur
+§ 10. 1) 3) 4) Fyri likamligar persónar og deyðsbúgv verða rentuinntøkur, undantikið negativar rentur av lánum, sum eru fevnd av løgtingslóg um stuðul til rentuútreiðslur av lánum, roknaðar upp í uppgerðina eftir § 14. Fyri feløg og grunnar v.m. verður rentuinntøkan og negativa rentan roknað upp í uppgerðina av skattskyldugu inntøkuni eftir skattalógini.
+Stk. 2. 1) Samsýning fyri viðhangandi ella góðskrivaða rentu í sambandi við avhending ella útvegan av rentuberandi krøvum verður tikin við í uppgerðina av rentuinntøku tað árið, tá avhendingin ella útveganin av kravinum fer fram. Samsýning, sum verður goldin peningastovni í sambandi við, at peningur verður tikin út (dekort), verður tikin við í uppgerðina av rentuinntøku tað árið, samsýningin verður skuldskrivað.
+Stk. 3. 6) 1) 2) Niðanfyristandandi rentu-inntøkur verða ikki skattaðar:
+1) Rentur, sum verða góðskrivaðar kontuni fyri eina eftirlønarskipan við innskoti í peningastovni v.m., so leingi tær ikki verða útgoldnar.
+2) Renta av ov nógv goldnum skatti og avgjøldum.
+3) Rentutilskriving av innilæstum dýrtíðarviðbótum, sambært Lov nr. 7 af 9. januar 1980 om Lønmodtagernes Dyrtidsfond med senere ændringer.
+Kapittul 4
+Aðrar ásetingar
+§ 11. Latan og móttøka av gávu ella arvaforskoti verða roknað sum avhending og útvegan. Avhendingarupphæddin og útveganarupphæddin verða roknað sum virðið í vanligum handli, tá gávan verður latin.
+Stk. 2. 5) Endurgjald og tryggingarpeningur verða í hesi løgtingslóg javnsett við avhendingarupphædd.
+§ 12. Tá vinningur ella tap í sambandi við útlutan av teimum í § 1 nevndu ognum úr einum deyðsbúgvi til hjúnafelaga, arvingar og legatarar verða uppgjørd, verða ásannaður vinningur og ásannað tap ikki roknað upp í skattskyldugu inntøkuna hjá búgvinum.
+Stk. 2. Tá virðisbrøv verða útlutað úr einum deyðsbúgvi, kemur móttakarin av útlutingini í skattligu støðuna hjá tí deyða.
+Stk. 3. 5) Við teimum avmarkingum, sum tilskilaðar eru í stk. 1 og 2, verða reglurnar í samtíðarskattalógini um skattseting í samband við deyða at nýta í sambandi við sølu av ognum, sum eru fevndar av hesi løgtingslóg.
+Stk. 4. 5) Ásetingarnar í stk. 1 og 2 eru ikki galdandi, um hjúnafelagi, arvingar ella legatarar ikki eru fult skattskyldugur í Føroyum, ella sambært ásetingunum í einum tvískattasáttmála ikki eru heimahoyrandi í Føroyum. Tá vinningur ella tap verður gjørt upp í sambandi við útlutan av teimum í § 1 nevndu ognum úr einum deyðsbúgvi til hjúnafelaga, arving og legatar, ið ikki er fult skattskyldug í Føroyum, ella sambært ásetingunum í einum tvískattasáttmála, ikki er heimahoyrandi í Føroyum, verður ásannaður vinningur ella ásannað tap roknað upp í skattskyldugu inntøkuna hjá búnum.
+§ 13. Við avhendan í livandi lívi av teimum í §1, nr. 1 nevndu virðisbrøvum kunna partarnir við avhendanina nýta reglurnar í stk. 6 - 8 undir fylgjandi treytum:
+1) Avhendanin er til børn, barnabørn, systkin, børn hjá systkjum ella barnabørn hjá systkjum,
+2) avhendarin er høvuðsparteigari, jbr. stk. 2-4, og
+3) hvør avhendan av partabrøvum er í minsta lagi 10% av atkvøðuvirðinum.
+Stk. 2. Viðurskifti viðvíkjandi ættleiddum børnum, stjúkbørnum og fosturbørnum í stk. 1 eru javnsett natúrligum ættarbondum.
+Stk. 3. Høvuðsparteigari er tann, sum eigur 25% ella meira av partapeninginum, ella sum ræður yvir meira enn 50 % av atkvøðuvirðinum. Tá partapeningurin verður gjørdur upp í einum felag, verður sæð burtur frá felagsins egnu partabrøvum.
+Stk. 4. Tá avgerast skal, um tann skattskyldugi eigur í minsta lagi 25% av partapeninginum í einum felag ella ræður yvir meira enn 50% av tí samlaða atkvøðuvirðinum, verða partabrøv, sum um somu tíð eru ogn hjá hjúnafelaga, foreldrum, ommum og abbum, børnum og barnabørnum hjá skattskylduga, og hjúnafeløgum teirra ella deyðsbúgv eftir nevndu persónum, íroknað. Viðurskifti viðvíkjandi ættleiddum børnum, stjúkbørnum og fosturbørnum eru javnsett natúrligum ættarbondum. Harumframt skulu íroknast partabrøv, sum eru ogn hjá feløgum, grunnum v.m., har nevndu persónar orsakað av ognarhaldi, viðtøkuavgerð, avtalu ella felags leiðslu hava avgerandi ávirkan.
+Stk. 5. Umbýtilig lánsbrøv skulu ikki íroknast, tá avgerast skal, um avhendarin eftir stk. 3 og 4 eigur 25% ella meira av partapeninginum ella ræður yvir meira enn 50% av atkvøðuvirðinum av partapeninginum.
+Stk. 6. Vinningur ella tap við avhendan skattast ikki hjá avhendaranum. Útvegarin kemur skattliga í avhendarans stað við avhendanina. Tá útvegarans vinningur ella tap við avhendan skal gerast upp, roknast partabrøvini sum útvegað fyri ta útveganarupphædd, tey vóru fingin til vega av avhendaranum.
+Stk. 7. 6) Ásetingarnar í stk. 6 eru ikki galdandi, um útvegarin ikki er fult skattskyldugur í Føroyum, ella útvegarin, sambært ásetingunum í einum tvískattasáttmála, ikki er heimahoyrandi í Føroyum.
+Stk. 8. Útvegarin kann ikki í vinningi av virðisbrøvum eftir hesi grein draga frá hall, sum stavar frá tíðini áðrenn útveganina av hesum virðisbrøvum.
+Stk. 9. Avgerðin um, at útvegarin kemur í avhendarans skattliga stað, skal fráboðast í seinasta lagi, tá avhendarin letur inn sjálvuppgávu.
+Partabrævaumbýti11)
+§ 13 a. 11) 7) Í sambandi við umbýti av partabrøvum kunnu partaeigarar í útvegaða felagnum verða skattaðir sambært ásetingunum í §§ 9 og 11 í løgtingslóg um skattafría samanlegging o.a., um feløgini lúka treytirnar fyri at verða nevnd feløg eftir løgtingslóg um parta- og smápartafeløg, og tá ið bæði útvegandi og útvegaða felagið eru skrásett í Føroyum. Tann dagurin, tá ið partabrævaumbýtið fer fram, verður roknaður sum samanleggingardagur. Tað er ein treyt fyri at nýta ásetingarnar í 1. pkt., at TAKS hevur givið loyvi til tess. TAKS kann áseta serligar treytir fyri at lata loyvi.
+Stk. 2. Tað er partabrævaumbýti, sbr. stk. 1, tá eitt felag útvegar ein part av partabrævakapitalinum hjá øðrum felagi við tí úrsliti, at tað fær meirilutan av atkvøðunum í hesum felagi, ella, um tað longu hevur slíkan meiriluta, útvegar sær uppaftur størri part við at fáa virðisbrøv hjá partaeigarunum í hinum felagnum og afturfyri geva teimum partabrøv ella partar í fyrra felagnum umframt møguligt javnandi ískoyti. Treytirnar í 1. pkt. um, at tað útvegandi felagið fær meirilutan av atkvøðunum í útvegaða felagnum, verða roknaðar sum uppfyltar, hóast útvegandi felagið eftir partabrævaumbýtið verður klovið sambært ásetingunum í § 11 a í løgtingslóg um skattafría samanlegging o.a.
+Stk. 3. 7) Tað er ein treyt, at handil sambært stk. 1 verður framdur, áðrenn í mesta lagi 6 mánaðir eru lidnir frá fyrsta umbýtingardegi. TAKS kann leingja freistina í 1. pkt. Umbýti av partabrøvum kann ikki fremjast við afturvirkandi gildi.
+Stk. 4. 7) Partabrævaumbýti sambært stk. 1-4 kann fremjast, uttan at TAKS hevur givið loyvi til tess. Tað er ein treyt, at virðið á partabrøvunum, saman við møguligari tøkari javnandi samsýning, er í samsvari við handilsvirðið á umbýttu partabrøvunum. Eisini er tað ein treyt, at útvegandi felagið ikki avhendar partabrøv í útvegaða felagnum í einum tíðarskeiði á 3 ár eftir umbýtingardagin. Uttan mun til 3. pkt., kunnu partabrøvini í útvegaða felagnum í nevnda tíðarskeiði avhendast í sambandi við skattafría umskipan av útvegandi ella útvegaða felagnum, um tað í sambandi við umskipanina ikki verður samsýnt við øðrum enn partabrøvum. Í slíkum førum er treytin í 3. pkt. galdandi fyri restina av tíðarskeiðinum fyri felagsluttakaran ávikavist felagið ella feløgini, tá skattafrí umskipan verður framd.
+Stk. 5. 7) Í seinasta lagi samstundis, sum sjálvuppgávan verður latin inn fyri tað inntøkuárið, tá partabrævaumbýtið er framt, skal útvegandi felagið boða TAKS frá, at felagið hevur luttikið í partabrævaumbýti sambært ásetingunum í stk. 5. Um útvegandi felagið avhendar partabrøvini, sum umrøtt í stk. 5, 3. pkt., skal verða boðað frá hesum til TAKS í seinasta lagi 1 mánað eftir avhendingina.
+Kapittul 5
+Almennar ásetingar
+Uppgerð v.m.
+§ 14. 1) Ein uppgerð verður gjørd, har vinningur og tap eftir §§ 4, 6, 7, 8 ,9, og 10 verða løgd saman.
+Stk. 2. 10) 1) 5) Vísir uppgerðin ein vinning, lata likamligir persónar og deyðsbúgv ein skatt upp á 35%. Feløg og grunnar v.m. lata skatt upp á 18%. Vísir inntøkuuppgerðin eftir skattalógini hall, kunnu feløg og grunnar o.o. taka vinning eftir hesi grein við í uppgerðina av skattskyldugu inntøkuni eftir skattalógini. Hetta er tó bert galdandi fyri so stóran part av vinninginum, sum dekkar hall, harundir hall frá eldri inntøkuárum, sum felagið kann føra fram til frádrátt í seinni inntøkuárum.
+Stk. 3. 12) Vísir skattauppgerðin hall, kann hetta verða drigið frá í uppgerðini eftir hesi grein fylgjandi árini. Hall kann bert flytast fram til frádrátt eitt seinni inntøkuár, í tann mun tað ikki er rúm fyri tí í møguligum nettovinningi eitt fyrri ár.
+Stk. 4. 1) 2) 7) Hall hjá einum felagi, fevnt av § 1, stk. 1, nr. 8 í skattalógini, fellur burtur, um ikki minst 50% av partapeninginum o.a. ella atkvøðuvirðinum í felagi, fevnt av vinnufelagalógini, eru á somu hondum við byrjan av tí inntøkuári, hallið ætlandi verður flutt til, sum tey vóru við endan av tí inntøkuári, tá hallið varð staðfest. Hallið í 1. pkt. fellur tó ikki burtur um felagið, tá skiftið í eigaraviðurskiftunum fór fram, hevði vinnuligt virksemi av týdningi við búskaparligum váða.
+§ 14 a. 7) 5) TAKS kann loyva, at partafeløg og/ella lutafeløg verða samskattaði, tó treytað av, at feløgini hava sama roknskaparár og eru heimahoyrandi í Føroyum. Loyvi verður bert givið, um talan er um móðurfeløg og dótturfeløg, og er hartil treytað av, at móðurfelagið, antin einsamalt ella saman við einum ella fleiri av dótturfeløgunum, ið koma undir samskattingina, eigur allar kapitalpartar í teimum dótturfeløgum, samskattingin viðvíkur.
+Stk. 2. Hall, sum er frá tíðini áðrenn feløgini vórðu samskattaði, kann einans dragast frá í felagsins egna yvirskoti.
+Stk. 3. Fyri samskattaði feløg ábyrgist móðurfelagið fyri tí samlaða inntøkuskattinum viðvíkjandi inntøkuárinum. Móðurfelagið ábyrgist eisini fyri hækkingum í inntøkuskattinum fyri árini undan samskattingini. Lækkingar í inntøkuskattinum hjá samskattaðu feløgunum skulu gjaldast móðurfelagnum, eisini tá tað snýr seg um skattaár undan samskattingini. Tey samskattaðu feløgini bera samábyrgd fyri inntøkuskatti viðvíkjandi inntøkuárinum.
+Stk. 4. Landsstýrismanninum verður heimilað at áseta nærri treytir fyri samskattingina.
+§ 15. 10) 1) 5) Feløg og grunnar o.o., sum útluta vinningsbýti til likamligar persónar og deyðsbúgv, skulu halda 35% aftur í skatti. Tá ið útlutað verður til feløg og grunnar v.m., sum ikki eru fevnd av § 9, stk. 1, 2. pkt., skal haldast aftur ein skattur á 18%. Skattur skal eisini haldast aftur í sambandi við, at felag keypir egin partabrøv o.a., fevnd av § 5 í hesi løgtingslóg. Skattur skal ikki haldast aftur av vinningsbýti til partabrøv o.a., sum tað útlutandi felagið sjálvt eigur.
+Stk. 2. 1) Landsstýrismaðurin kann við kunngerð áseta reglur um, at skattur ikki skal haldast aftur, ella at skattur skal haldast aftur við einum lægri satsi, enn ásett í stk. 1.
+Stk. 3. 1) 5) Í seinasta lagi 14 dagar aftaná avgerð um at útluta vinningsbýti skal felagið, grunnurin o.o. rinda TAKS peningin og leggja við eina vinningsbýtisuppgerð, sum vísir, hvussu skatturin er roknaður, hvørjir persónar og feløg fáa útlutað vinningsbýti, um tey eru kend, og hvørji feløg og grunnar o.o. ikki skulu rinda skatt, jbr. § 9, stk. 1. Skatturin áliggur tó móttakaranum.
+Stk. 4. 1) Hevur felagið ikki goldið afturhildnan skatt, tá freistin er úti, skulu 0,7% roknast í rentu fyri hvønn byrjaðan mánað frá gjaldsdegnum at rokna. Sama er galdandi fyri skuldskrivaða rentu. Rentan kann ikki dragast frá, tá skattskylduga inntøka felagsins verður gjørd upp eftir skattalógini.
+§ 16. Renta, sum føroyskir peningastovnar og postgiro geva likamligum persónum og deyðsbúgvum av innistandandi peningi, herav ábyrgdarpeningi í føroyskum sparikassum, er fevnd av hesi grein. Skatturin áliggur kontuhavaranum, men verður av peningastovni ella postgiro, kontuhavarans vegna, rindaður við 35% burtur av tí tilskrivaðu rentuni.
+Stk. 2. 5) Peningastovnar og postgiro skulu í seinasta lagi tann 15. í mánaðinum aftaná rentustilskriving avrokna rentuskattin av innistandandi peningi, herundir ábyrgdarpeningi í føroyskum sparikassum, til TAKS.
+Stk. 3. 13) 14) Er skatturin eftir stk. 2 ikki goldin, tá freistin er úti, skulu 0,7% roknast í rentu fyri hvønn byrjaðan mánað frá gjalddegnum at rokna. Sama er galdandi fyri skuldskrivaða rentu.
+Stk. 4. Renta kann ikki dragast frá skattskyldugu inntøkuni eftir skattalógini.
+§ 17. 1) (Strikað)
+§ 18. 1) 7) 5) Tað áliggur skattskylduga at geva upp skattskyldugu upphæddina sambært § 14 um talgilda loysn ella á oyðublaði, sum TAKS letur gera. Upplýsingarnar skulu latast TAKS samstundis, sum sjálvuppgávan eigur at verða latin inn sambært skattalógini. Persónar, feløg, grunnar o.o., sum hava fingið kapitalvinningsuppgerð, skulu tó ikki lata inn oyðublað, um upplýsingarnar á kapitalvinningsuppgerðini eru rættar og fullfíggjaðar. Um fullfíggjað kapitalvinningssjálvuppgáva sambært hesum stykki ikki er latin inn rættstundis, verður skattskylduga kapitalvinningsinntøkan sett til eina metta upphædd.
+Stk. 2. 1) Er skatturin eftir § 14 hægri enn fyribilsskattur, goldin sambært § 15 og/ella § 16, verður hann nevndur írestandi skattur. Er írestandi skatturin 500 kr. ella minni, verður hann ikki kravdur inn. Er skatturin eftir § 14 lægri enn fyribilsskattur, goldin sambært § 15 og/ella § 16, verður hann nevndur avlopsskattur. Er avlopsskatturin minni enn 50 kr., verður hann ikki útgoldin.
+Stk. 3. 1) 5) Tað áliggur tí skattskylduga at rinda tann í stk. 1 nevnda skatt til TAKS. Skatturin fellur til gjaldingar tann 1. í mánaðinum eftir, at uppgerð er skrivað út við gjaldsfreist til 20. í mánaðinum.
+Stk. 4. 13) 1) 14) Er skatturin eftir stk. 3 ikki goldin, tá freistin er úti, skulu 0,7% roknast í rentu fyri hvønn byrjaðan mánað frá gjalddegnum at rokna. Sama er galdandi fyri skuldskrivaða rentu. Rentan kann ikki dragast frá, tá skattskylduga inntøka verður gjørd upp eftir skattalógini.
+Stk. 5. 1) 5) Skatturin eftir hesi løgtingslóg fer í landskassan.
+Stk. 6. 1) Inntøka hjá feløgum og grunnum v.m., sum skal roknast við í uppgerðini av skattskyldugu inntøkuni eftir skattalógini, skal gevast upp og rindast eftir reglunum í skattalógini.
+Stk. 7. 7) Verður fullfíggjað sjálvuppgáva av inntøku ikki latin TAKS rættstundis, ella sjálvuppgávan ikki kemur inn, verður sekt áløgd við í minsta lagi kr. 1.000 og í mesta lagi kr. 5.000. Verður latið inn minni enn 7 dagar ov seint, verður samanlagdi inntøkuskatturin hækkaður við 2%. Verður latið inn 7 dagar ella meira ov seint, verður samanlagdi inntøkuskatturin hækkaður við 5%. TAKS kann fráboða frítøku, linna um, ella heilt lata falla burtur álagda sekt, tá ið tað av serligum orsøkum verður hildið at vera rímiligt. Skattgjaldarin skal søkja um eftirgevingina og skal til undanførslu hava grund, sum TAKS metir fullgóða.
+Skattur goldin í øðrum landi
+§ 19. Skattur, sum er goldin øðrum landi av inntøku haðani, har tvískattasáttmáli ikki er gjørdur, annaðhvørt skatturin er beinleiðis álíknaður ella afturhildin, kann verða drigin frá í tí skatti, sum latin skal verða í Føroyum av hesari inntøku. Frádrigin kann tó ikki verða meira enn tann skattur, sum lutfalsliga fellur á ta í øðrum landi skattaðu inntøkuna, sum eisini er skattað í Føroyum.
+Kæra
+§ 20. 5) Avgerðir eftir hesi løgtingslóg verða tiknar av økisskrivstovunum hjá TAKS.
+Stk. 2. 15) 1) 7) 16) Avgerðir tiknar sambært hesi løgtingslóg kunnu kærast til Føroya Kærustovn innan 4 vikur eftir, at kærarin hevur fingið fráboðan um avgerðina. Kæran skal vera skrivlig og grundgivin..
+Stk. 3. 16) (Strikað).
+Eftirlit
+§ 21. 5) Øll, ið eru fevnd av hesi løgtingslóg, hava, tá hetta verður kravt, skyldu at leggja fyri TAKS allar upplýsingar, sum kunnu verða viðkomandi fyri TAKS í eftirlitshøpi. Ásetingin fevnir eisini um triðjamann, sum hevur í hendi tær í 1. pkt. nevndu upplýsingar hjá einum, sum er fevndur av hesi løgtingslóg.
+Stk. 2. 5) TAKS hevur heimild til at koma á staðið, fyri at fremja eftirlit og útvega upplýsingar, sum hon heldur eru neyðugar fyri at fremja eftirlit eftir reglunum í hesi løgtingslóg.
+Pantiheimild
+§ 22. 5) Skattur og sekt, sum stava frá inntøku, ið er skattskyldug eftir hesi løgtingslóg, og eru fallin til gjaldingar, kunnu saman við rentum og innkrevjingarkostnaði verða innheintað við panting.
+Stk. 2. 5) TAKS fremur panting sambært stk. 1 eftir reglunum í skattalógini fyri innkrevjing av skattum.
+Revsing
+§ 23. 1) 5) Tann, sum við tí í hyggju at sleppa undan at gjalda skatt av inntøku, ið er skattskyldug eftir hesi løgtingslóg, greiðir rangt frá ella á annan hátt gevur villleiðandi upplýsingar ella letur vera við at lata inn upplýsingar sambært § 18, stk. 1, verður revsaður við sekt ella fongsli upp í 2 ár.
+Stk. 2. Er misbrotið framt av stórum gáloysni, er revsingin sekt.
+Stk. 3. Er lógarbrotið eftir hesi grein framt av einum partafelag, smápartafelag ella tílíkum, kann sektaraábyrgd verða áløgd felagnum sum so.
+§ 24. 5) Við sekt verður tann persónur revsaður, sum við vilja ella av stórum gáloysni:
+1) letur vera við at halda aftur ella avrokna skatt av vinningsbýti eftir § 15,
+2) letur vera við at avrokna skatt av rentuinntøku eftir § 16, og
+3) brýtur upplýsingarskylduna í § 21, stk. 1 ella forðar TAKS í at nýta heimildina í § 21, stk. 2 at koma á staðið.
+Stk. 2. Á sama hátt verður tann revsaður, sum móttekur vinningsbýti ella rentuinntøkur vitandi um, at skattur ikki er hildin aftur, sum álagt.
+Stk. 3. Er lógarbrotið eftir hesi grein framt av einum partafelag, smápartafelag ella tílíkum, kann sektaraábyrgd verða áløgd felagnum sum so.
+§ 25. 5) Verður lógarbrotið mett ikki at hava harðari revsing við sær enn sekt, kann TAKS kunna viðkomandi um, at málið kann verða avgjørt uttan rættarsókn, um hann viðgongur seg sekan í lógarbrotinum og váttar seg til reiðar innan fyri eina ásetta freist at gjalda eina sekt.
+Stk. 2. 17) Viðvíkjandi kunningini, sum er nevnd í stk. 1, verða reglurnar í rættargangslógini um innihald av ákæruriti brúktar.
+Stk. 3. Verður sektin goldin rættstundis, fellur víðari rættarsókn burtur.
+Stk. 4. 17) (Strikað).
+Kapittul 6
+Gildiskoma
+§ 26. 5) Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað fyri vinning og tap, sum eru staðfest, fyri rentuinntøkur, sum eru tilskrivaðar, og fyri vinningsbýti, ið er útlutað 16. november 2001 ella seinni.
+Stk. 2. 5) Samstundis, sum henda løgtingslóg kemur í gildi, fara úr gildi løgtingslóg nr 40 frá 17. apríl 1986 um skatt av vinningi í sambandi við sølu av virðisbrøvum og løgtingslóg nr. 87 frá 5. juni 1992 um rentuskatt.
+Kapittul 7
+Skiftisreglur
+§ 27. 1) 5) Hóast ásetingarnar í § 4 í hesi løgtingslóg, skal vinningur ella tap sambært § 1, nr. 1 ikki roknast við í uppgerðina av skattskyldugu inntøkuni eftir § 14, tá virðisbrøvini eru útvegað fyri 16. november 2001, og vinningurin ella tapið er ásannað fyri 1. januar 2007.
+§ 28. 1) 5) Virðisbrøv, nevnd í § 1, nr. 1, ið eru útvegað fyri 16. november 2001, og sum ikki eru avhendað fyri 1. januar 2007, verða eftir hesi løgtingslóg roknað sum útvegað fyri eitt mett handilsvirði, sum verður ásett við støði í innara virðinum í felagnum við endan á roknskaparskeiðinum, sum endar í 2006. Skattliga útveganarvirðið verður ásett til eitt mett handilsvirði og sett í eina skattauppgerð fyri seg, sum grannskoðari váttar til sannan.
+Stk. 2. 1) 5) Landsstýrismanninum við fíggjarmálum verður við kunngerð heimilað at áseta nærri reglur um at áseta, hvussu virðið skal gerast upp, freistir fyri at senda inn uppgerðina, og um møguleiki skal vera at víkja frá hesum. Uppgerðin skal sendast TAKS. TAKS kann eftirkanna og gera broytingar í virðisásetingini av ogn og skuld.
+Stk. 3. 1) Hóast stk. 1, verða tey virðisbrøv, sum eru skrásett á einum virðisbrævamarknaði, roknað fyri útvegað fyri skrásetta kursvirðið við dagsenda 31. desember 2006.
+Stk. 4. 1) 5) Partabrævaeigarar kunnu í staðin fyri virðið eftir stk. 1 og 3 velja at nýta veruliga útveganarvirðið sum skattligt útveganarvirði eftir hesi løgtingslóg. Velur partabrævaeigari at nýta veruliga útveganarvirðið, skal hetta verða fráboðað TAKS innan 1. oktober 2007. Verður hetta ikki gjørt, verður skattliga útveganarvirðið ásett eftir stk. 1 og 3.
+Stk. 5. 1) 5) Allar ásetingarnar í hesi løgtingslóg um eitt nú uppgerð, frádrátt fyri tap, avmarkingar fyri frádrátt av tapi v.m. eru galdandi fyri virðisbrøv fevnd av kapittul 7. Tó kann frádráttarbæra tapið ongantíð gerast meira enn tað tapið, sum uppruna útveganarvirðið av virðisbrøvunum hevði givið, um selt varð til sama prís.
+§ 29. 1) 18) Í tíðarskeiðinum 2010 – 2013 verður 35%-skatturin, ið er nevndur í §§ 14, stk. 2, 15, stk. 1 og 16, stk. 1 broyttur soleiðis, at hann í 2010 er 39%, í 2011 er skatturin 38%, í 2012 er skatturin 37% og í 2013 er skatturin 36%.
+§ 30. 1) (Strikað).
+§ 31. 1) (Strikað).
+1) Broytt við løgtingslóg nr. 46 frá 16. mai 2006, har §§ 2 og 3 ljóða soleiðis: “§ 2 Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. Tó hava broytingarnar í nr. 1, 3, 6, 8 og 13 virknað fyri inntøkuárið 2006, meðan broyting nr. 2 og 19 eru galdandi frá inntøkuárinum 2007. Broytingin í nr. 5 er galdandi frá 1. januar 2007. § 3 Eftir umsókn kann Toll- og Skattstova Føroya loyva fólki at koma í skattligu støðuna hjá foreldrum o.ø. eftir reglunum um successión í § 12 afturvirkandi til 16. november 2001.”
+2) Broytt við løgtingslóg nr. 42 frá 6. mai 2016, har §§ 2 og 3 ljóða soleiðis: “§ 2 Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. § 1, nr. 2 hevur virknað frá framløgudegnum. Stk. 3. § 1, nr. 1 kemur í gildi 1. januar 2017. Stk. 4. § 1, nr. 1, 3 og 4 hava virknað fyri skatt av kapitalvinningi, sum verður álíknaður fyri skattaár, sum byrja 1. januar 2017 ella seinni. § 3 § 1, nr. 1, 3 og 4 eru ikki galdandi fyri rentur, sum stava frá lántøku áðrenn 1. januar 2017.”
+3) Broytt við løgtingslóg nr. 55 frá 4. mai 2021.
+4) Broytt við løgtingslóg nr. 173 frá 21. desember 2021.
+5) Broytt við løgtingslóg nr. 127 frá 13. desember 2024.
+6) Broytt við løgtingslóg nr. 109 frá 20. desember 2002, har § 2 ljóðar soleiðis: “Henda lóg fær gildi dagin eftir, at lógin er kunngjørd, og er galdandi frá 1. januar 2003.”
+7) Broytt við løgtingslóg nr. 195 frá 23. desember 2018, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd og hevur virknað frá framløgudegnum. Stk. 2. Kærur eftir hesi løgtingslóg, sum ikki eru avgreiddar, verða eisini viðgjørdar av Skatta- og Avgjaldskærunevndini, hóast tær eru innlatnar, áðrenn henda løgtingslóg kom í gildi.”
+8) Broytt við løgtingslóg nr. 123 frá 9. desember 2016, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd og hevur virknað frá 19. apríl 2016.”
+9) Broytt við løgtingslóg nr. 31 frá 9. mars 2023, har § 24 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. september 2023.”
+10) Broytt við løgtingslóg nr. 141 frá 15. desember 2005, har § 3 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað fyri inntøkuárið 2006 og frameftir.”
+11) Broytt við løgtingslóg nr. 77. frá 22. mai 2015, har § 3 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2016.”
+12) Broytt við løgtingslóg nr. 23 frá 17. mai 2004, har § 4 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, tó so at § 1, nr. 2, § 2 og § 3 hava virknað fyri hall, staðfest í 2002 og seinni.”
+13) Broytt við løgtingslóg nr. 121 frá 1. desember 2003, har § 9 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað frá 1. januar 2004.”
+14) Broytt við løgtingslóg nr. 49 frá 16. mai 2006.
+15) Broytt við løgtingslóg nr. 100 frá 20. desember 2002.
+16) Broytt við løgtingslóg nr. 159 frá 10. desember 2021, har § 43 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2022. Samstundis fer løgtingslóg nr. 47 frá 23. mars 1993 um kærunevnd í almanna-, familju- og heilsumálum úr gildi.”
+17) Broytt við løgtingslóg nr. 91 frá 7. juni 2020, har § 79 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2021.”
+18) Broytt við løgtingslóg nr. 173 frá 22. desember 2009.
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Fíggjarmálaráðið
+Útgávudagur: 31-12-2001
+Tilvísingar
+Heimildir
+Avtøkur
+Broytingar
+Løgtingsmál
+Løgtingsmál nr: 35/2001
+Kunngerðablaðið
+Kunngerðarblað 2001 A - Hefti 32 A frá 31. desember 2001
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

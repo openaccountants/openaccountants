@@ -1,0 +1,21 @@
+{
+  "initial_review_manifest_sha256": "9364a42d066d9aeee4fd1e88734b82406ce5ece2e57aaf3a575602f500ce4264",
+  "files": [
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/closure-review.md",
+      "sha256": "955f51fa7128ff89d2279baaf1202bcf312b94d0832c891943c2b9bf15f387b0",
+      "bytes": 5497
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/closure-review.json",
+      "sha256": "372efb6cb72b9cb0faa5f5e8a3ea7a15b931507c0585ae5c23c6624dea224054",
+      "bytes": 3472
+    },
+    {
+      "path": "evidence/ledgers/burkina-faso-capital-review-20261101/closure-affected-checks.json",
+      "sha256": "e062caa6703a2f12078577f7d9eba7bcd3ce9c51a79c050a59f44a86451a5c16",
+      "bytes": 6421
+    }
+  ],
+  "immutable_original_review_preserved": true
+}

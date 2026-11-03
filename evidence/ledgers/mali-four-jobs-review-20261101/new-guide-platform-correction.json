@@ -1,0 +1,33 @@
+{
+  "authority": "docs/skill-template.md Checks before you open a PR and Platform-owned keys: do not add platform-written keys or openaccountants-cta-block to new files",
+  "scope": "Two newly added Guides only; all existing Guide platform values/CTA suffixes remain untouched",
+  "supersedes": "Writer-record statement that new Guides copy existing platform/CTA; original history retained",
+  "records": [
+    {
+      "file": "skills/mali/ml-transfer-pricing.md",
+      "before_sha256": "f24490713fc5c52eb31fc11af5ea910e333a33a395a90d11c440ef470a598b7e",
+      "after_sha256": "f8dd043b10d003ae5ec707b0d6e920527bd8a2e4da68794cdd8aa9ca87e218f0",
+      "body_before_stamped_CTA_unchanged": true,
+      "removed_platform_fields": [
+        "review_status",
+        "trust_label",
+        "license"
+      ],
+      "removed_stamped_CTA": true,
+      "required_tier": 2
+    },
+    {
+      "file": "skills/mali/ml-cross-border-tax.md",
+      "before_sha256": "ef995563853aef80d65c85ed18823b50ec216d539ca4042667e729f964f40a6d",
+      "after_sha256": "e278a272fc4c9ad36387101d3dd41324cc54ea588959fc8f887ccd34fea95e85",
+      "body_before_stamped_CTA_unchanged": true,
+      "removed_platform_fields": [
+        "review_status",
+        "trust_label",
+        "license"
+      ],
+      "removed_stamped_CTA": true,
+      "required_tier": 2
+    }
+  ]
+}

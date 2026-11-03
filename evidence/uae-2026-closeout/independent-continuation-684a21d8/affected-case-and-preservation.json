@@ -1,0 +1,16 @@
+{
+  "case5_CT": {
+    "adjusted_revenue": 20000000,
+    "de_minimis": 1000000.0,
+    "nonqualifying": 800000,
+    "passes": true,
+    "branch_tax": 45000.0
+  },
+  "other_cases": "Predecessor independent22narrativecases/eightoa-check arithmetic is reused unchanged; correction pass did not alter other operands. No blanket new legal assumption acceptance.",
+  "full_CTA_SHA256": {
+    "ae-corporate-tax": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+    "ae-payroll-social": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1",
+    "uae-vat": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+  },
+  "frozen_predecessor_files_unchanged": true
+}

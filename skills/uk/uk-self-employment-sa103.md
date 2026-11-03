@@ -1,13 +1,13 @@
 ---
 name: uk-self-employment-sa103
 description: "UK sole trader trading profits on the Self Assessment self-employment pages (SA103S short, SA103F full) for tax year 2026-27, with the 2025-26 figures for returns due by 31 January 2027. Covers who is taxed on trading profits, allowable expenses, the GBP 1,000 trading allowance, cash basis as the default from 2024-25, the tax year basis and the five-year spreading of transition profits, capital allowances (AIA GBP 1 million, 14% main pool from 6 April 2026, 40% first-year allowance), simplified expenses (55p a mile from 2026-27), trade losses and the sideways relief cap, Class 4 NIC, Making Tax Digital for Income Tax from 6 April 2026, filing deadlines, penalties and interest. Trigger: 'sole trader tax', 'SA103', 'allowable expenses', 'trading allowance', 'cash basis', 'basis period reform', 'transition profit', 'MTD for Income Tax'. Out of scope: partnerships (SA104), companies (uk-corporation-tax), NIC detail (uk-national-insurance), payments on account (uk-payments-on-account), Scottish rates (uk-scottish-income-tax)."
-version: 3.4
+version: 3.5
 jurisdiction: GB
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27"
 tier: 2
-last_updated: 2026-10-27
+last_updated: 2026-10-31
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -104,6 +104,31 @@ Who is out: partnerships, companies, employees taxed through PAYE, and landlords
 - **Return.** Self Assessment return with the SA103 pages: paper by 31 October, online by 31 January after the tax year (TMA 1970 s 8(1D)). For 2025-26: 31 October 2026 paper, 31 January 2027 online. For 2026-27: 31 October 2027 and 31 January 2028. If the notice to file is issued late, the deadline is 3 months from the notice.
 - **Pay.** Balancing payment by 31 January after the tax year (TMA 1970 s 59B(4)). Payments on account fall on 31 January in the tax year and 31 July after it; see `uk-payments-on-account`.
 - **Making Tax Digital for Income Tax.** Mandatory from 6 April 2026 for sole traders and landlords whose qualifying income (turnover from self-employment plus gross property income, before expenses) on the 2024-25 return was over GBP 50,000. It extends to qualifying income over GBP 30,000 on the 2025-26 return from 6 April 2027, and over GBP 20,000 on the 2026-27 return from 6 April 2028. The thresholds are set by the Income Tax (Digital Obligations) Regulations 2026 (SI 2026/336, in force 1 April 2026), regs 22, 23 and 27; qualifying income is income before deductions (reg 26). In MTD the trader keeps digital records, sends cumulative quarterly updates (6 April to 5 July, 5 October, 5 January and 5 April) by 7 August, 7 November, 7 February and 7 May (reg 12), and files the tax return through MTD software by 31 January (reg 8). Part 7 of the regulations sets the exemptions, including people with an exclusion notice (digitally excluded), ministers of religion, Lloyd's underwriters, people without a National Insurance number, people who have granted a lasting, enduring or continuing power of attorney or have a deputy appointed for them (reg 32), and for 2026-27 only, trust income, visiting performers, qualifying care providers, people using the foreign income and gains regime and farmers or creative artists averaging profits. Partnerships come in later on a date not yet set.
+
+### How to file the self-employment pages and pay, step by step
+
+Box numbers are from the 2025-26 short form, the return due by 31 January 2027. The 2026-27 forms were not published when read.
+
+**What you need first:** your Unique Taxpayer Reference (UTR), HMRC sign-in details, income and expense records for the accounting period, your accounting date, and photo ID in case HMRC asks you to prove who you are.
+
+1. **Register or reactivate.** First return, or none sent for last year: register at [Register for Self Assessment](https://www.gov.uk/register-for-self-assessment), read 2026-10-31, by 5 October 2026 for 2025-26. Registered before: reactivate within the same service, because filing without reactivating can delay the return ([GOV.UK: file your Self Assessment return](https://www.gov.uk/log-in-file-self-assessment-tax-return), read 2026-10-31). If you register after 5 October 2026, HMRC sets a filing deadline 3 months from its letter or email, and payment is still due by 31 January 2027 ([GOV.UK: deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines), read 2026-10-31).
+2. **Check the route.** HMRC's online service does not cover partnerships, trusts, estates, a person who lived abroad as a non-resident, multiple chargeable event gains, trust income, Lloyd's underwriters or religious ministers. Those use commercial software or other forms ([GOV.UK: file your Self Assessment return](https://www.gov.uk/log-in-file-self-assessment-tax-return), read 2026-10-31).
+3. **Choose short or full pages.** Turnover under GBP 90,000 (or what it would have been for a full year) can use SA103S if no full-page condition applies; GBP 90,000 or more uses SA103F ([SA103S notes 2026](https://assets.publishing.service.gov.uk/media/69ce15395cf899414a0bc69f/SA103S_Notes_2026.pdf), read 2026-10-31).
+4. **Fill in the SA103S boxes in order** ([SA103S notes 2026](https://assets.publishing.service.gov.uk/media/69ce15395cf899414a0bc69f/SA103S_Notes_2026.pdf), read 2026-10-31):
+   - Box 1 description of the business; box 4 foster carer or shared lives carer; box 5 start date if the business started after 5 April 2025; box 6 final trading date if it ceased before 6 April 2026; box 7 date the books are made up to; box 8: X only if you used traditional accounting instead of cash basis.
+   - Box 9 turnover; box 10 any other business income; box 10.1 trading income allowance, which replaces boxes 11 to 20 and boxes 23 to 25.2.
+   - Boxes 11 to 19 expenses and box 20 the total. Under GBP 90,000 you may put just the total in box 20.
+   - Box 21 net profit or box 22 net loss.
+   - Boxes 23 to 25.2 capital allowances; box 26 balancing charges; box 27 goods or services for your own use.
+   - Boxes 28 and 31 or 32 come from the working sheet in the notes. Boxes 33 to 35 are losses.
+   - Box 36: X to pay Class 2 voluntarily on profits under GBP 6,845. Box 37: X if exempt from Class 4. Box 38: Construction Industry Scheme deductions.
+5. **Sign in and submit.** You can save and return. You can file from 6 April after the tax year ends ([GOV.UK: file your Self Assessment return](https://www.gov.uk/log-in-file-self-assessment-tax-return), read 2026-10-31). Online return: 11:59pm on 31 January 2027. Paper: 11:59pm on 31 October 2026, received by HMRC ([GOV.UK: deadlines](https://www.gov.uk/self-assessment-tax-returns/deadlines), read 2026-10-31).
+6. **Pay by 31 January, with the 11-character reference:** the 10-digit UTR followed by K. A wrong reference can delay the payment or put it against another bill ([GOV.UK: bank details](https://www.gov.uk/pay-self-assessment-tax-bill/bank-details), read 2026-10-31). Online or telephone banking, CHAPS and a debit or corporate credit card usually arrive the same or next day. A personal credit card cannot be used. Bacs, or an existing Direct Debit, takes 3 working days. A new Direct Debit takes 5 working days. You can also pay through the HMRC app. On a weekend or bank holiday, the money must reach HMRC on the last working day before, except by Faster Payments or card ([GOV.UK: pay your bill](https://www.gov.uk/pay-self-assessment-tax-bill), read 2026-10-31). The second payment on account is due on 31 July.
+7. **Pay through your tax code** only if you owe under GBP 3,000 (a part payment cannot bring it under), already pay through PAYE, and filed on paper by 31 October or online by 30 December. HMRC then collects it over 12 months ([GOV.UK: through your tax code](https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code), read 2026-10-31).
+8. **To correct it:** wait 72 hours after filing. If you filed on HMRC's site, sign in and go to Your tax account > Self Assessment account > More Self Assessment details > At a glance > Tax return options, choose the tax year, make the corrections and file again. If you filed with commercial software, ask your software provider how to correct it; if the software cannot make corrections, contact HMRC. On paper, send corrected pages marked "amendment" with your name and UTR. After an online change, the amended bill shows straight away, and within 3 days your statement shows the difference from the old bill and any interest: check both under View statements. After a paper change, HMRC sends an updated bill. The window is 12 months from the filing deadline. After that, write to HMRC. An overpayment relief claim runs to 4 years after the end of the tax year, in writing with a declaration you sign yourself; an agent cannot sign it ([GOV.UK: corrections](https://www.gov.uk/self-assessment-tax-returns/corrections), read 2026-10-31).
+9. **If you are in Making Tax Digital for the year,** you sign up first (from September 2026 HMRC signs up those who have not), then use compatible software for digital records, quarterly updates and the return. Sign in with the same user ID you used to register for Self Assessment. HMRC applies no penalty points for late quarterly updates in 2026-27. Penalties for late returns and late payment still apply ([GOV.UK: sign up for MTD for Income Tax](https://www.gov.uk/guidance/sign-up-your-business-for-making-tax-digital-for-income-tax), read 2026-10-31).
+
+**Stop and get a professional when:** you are in a partnership or were non-resident; you trade through a company; you have a transition profit you cannot trace; or the return would carry a loss claim against other income.
 
 ## Penalties and interest
 
@@ -272,6 +297,34 @@ expected:
   voluntary_class2: 189.80
 ```
 
+### Example 6: which should I use, cash basis or traditional accounting? (2026-27)
+
+Sana is a self-employed consultant with a 5 April year end and no other income. In 2026-27 she receives GBP 52,000 and pays GBP 12,000 of expenses. At 5 April 2027 clients owe her GBP 6,000 and she owes suppliers GBP 500. She held nothing unpaid at the start of the year. Cash basis is the standard method; traditional accounting records income and costs by invoice or bill date, keeps more records, and is shown with an X in box 8 ([GOV.UK: cash basis](https://www.gov.uk/simpler-income-tax-cash-basis), read 2026-10-31; [SA103S notes 2026](https://assets.publishing.service.gov.uk/media/69ce15395cf899414a0bc69f/SA103S_Notes_2026.pdf), read 2026-10-31).
+
+- Cash basis: profit 52,000 - 12,000 = GBP 40,000.
+- Traditional: income 58,000 less costs 12,500 = GBP 45,500.
+- The deciding figure is year-end debtors less creditors: GBP 5,500 of extra profit this year. At 20% income tax and 6% Class 4, that is GBP 1,430 more due for 2026-27.
+- That is a timing gap, not a saving: the income is taxed when received. She stays on the cash basis unless a lender wants accruals accounts, or the trade is excluded.
+
+```oa-check
+name: Cash basis against traditional accounting, 2026-27
+inputs:
+  received: 52000
+  paid: 12000
+  debtors: 6000
+  creditors: 500
+steps:
+  - profit_cash: received - paid
+  - profit_traditional: received + debtors - paid - creditors
+  - gap: profit_traditional - profit_cash
+  - extra_tax: gap * 0.26
+expected:
+  profit_cash: 40000
+  profit_traditional: 45500
+  gap: 5500
+  extra_tax: 1430
+```
+
 ## Ask the client first
 
 1. What is your accounting year end, and do you still have transition profit being spread from 2023-24?
@@ -336,8 +389,18 @@ expected:
 | GOV.UK, Self Assessment penalties | https://www.gov.uk/self-assessment-tax-returns/penalties | 2026-10-24 |
 | HMRC interest rates for late and early payments | https://www.gov.uk/government/publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments/rates-and-allowances-hmrc-interest-rates | 2026-10-24 |
 | HMRC, Self-employment (full) notes 2025-26 (SA103F Notes 2026) | https://assets.publishing.service.gov.uk/media/69c26565cfa346b9d4704b35/SA103F_Notes_2026.pdf | 2026-10-24 |
+| GOV.UK, register for Self Assessment | https://www.gov.uk/register-for-self-assessment | 2026-10-31 |
+| GOV.UK, file your Self Assessment tax return online | https://www.gov.uk/log-in-file-self-assessment-tax-return | 2026-10-31 |
+| GOV.UK, Self Assessment deadlines (2025-26) | https://www.gov.uk/self-assessment-tax-returns/deadlines | 2026-10-31 |
+| HMRC, Self-employment (short) notes 2025-26 (SA103S Notes 2026; boxes and GBP 90,000 limit) | https://assets.publishing.service.gov.uk/media/69ce15395cf899414a0bc69f/SA103S_Notes_2026.pdf | 2026-10-31 |
+| GOV.UK, pay your Self Assessment tax bill | https://www.gov.uk/pay-self-assessment-tax-bill | 2026-10-31 |
+| GOV.UK, bank details (UTR plus K) | https://www.gov.uk/pay-self-assessment-tax-bill/bank-details | 2026-10-31 |
+| GOV.UK, pay through your tax code | https://www.gov.uk/pay-self-assessment-tax-bill/through-your-tax-code | 2026-10-31 |
+| GOV.UK, corrections | https://www.gov.uk/self-assessment-tax-returns/corrections | 2026-10-31 |
+| GOV.UK, sign up for MTD for Income Tax | https://www.gov.uk/guidance/sign-up-your-business-for-making-tax-digital-for-income-tax | 2026-10-31 |
+| GOV.UK, cash basis | https://www.gov.uk/simpler-income-tax-cash-basis | 2026-10-31 |
 
-Not yet confirmed: the 2026-27 SA103S and SA103F forms and box numbers (not published when read); the MTD late payment penalty of 4% at day 15 and day 30 for 2027-28 (GOV.UK states it, but FA 2021 Sch 26 para 5 as in force on 2026-10-24 still says 3%, and no amending instrument was found); how the 40% first-year allowance applies to a cash basis trader (equipment is deducted as an expense there, so the allowance matters mainly under accruals and for cars, which it excludes); the detail of the MTD exemption for persons entitled to certain reductions or allowances (SI 2026/336 reg 38, not read).
+Not yet confirmed: the 2026-27 SA103S and SA103F forms and box numbers (not published when read); the MTD late payment penalty of 4% at day 15 and day 30 for 2027-28 (GOV.UK states it, but FA 2021 Sch 26 para 5 as in force on 2026-10-24 still says 3%, and no amending instrument was found); how the 40% first-year allowance applies to a cash basis trader (equipment is deducted as an expense there, so the allowance matters mainly under accruals and for cars, which it excludes); the detail of the MTD exemption for persons entitled to certain reductions or allowances (SI 2026/336 reg 38, not read). How-to: the on-screen receipt HMRC gives after online submission was not on the pages read; the time HMRC takes to issue a UTR after registering was not read.
 
 <!-- openaccountants-cta-block -->
 

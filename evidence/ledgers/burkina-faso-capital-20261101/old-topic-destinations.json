@@ -1,0 +1,51 @@
+{
+  "immutable_commit": "5bd11581ceea39807036d3aa4875fb4348c8b31f",
+  "old_rows": [
+    {
+      "id": "M01",
+      "source_path": "skills/burkina-faso/bf-corporate-tax.md",
+      "source_commit": "5bd11581ceea39807036d3aa4875fb4348c8b31f",
+      "source_blob": "fe3ff10edbefd9187b8a3c807c883d07f2b6a7c0",
+      "source_file_sha256": "f7c72482e7e99ff312ae856593e6d095cb3306da8384a35f6f53559d9497a722",
+      "old_exact": "| Ordinary securities products, subject to treaty and specific rate | 12.5%; Burkina-issued bond interest 6% | [CGI art. 140(2)](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |",
+      "old_row_sha256": "32a5f0da4ecdae5bad0729251c0cb37cf2a087741f24ee0ce43e553e2e44d661",
+      "destination": "skills/burkina-faso/bf-investment-income.md#rates-bands-and-thresholds",
+      "destination_ledger_rows": [
+        "C13",
+        "C14"
+      ],
+      "disposition": "Moved with full conditions and official source; no figure retired",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "source_articles": "140(2)"
+    },
+    {
+      "id": "M02",
+      "source_path": "skills/burkina-faso/bf-corporate-tax.md",
+      "source_commit": "5bd11581ceea39807036d3aa4875fb4348c8b31f",
+      "source_blob": "fe3ff10edbefd9187b8a3c807c883d07f2b6a7c0",
+      "source_file_sha256": "f7c72482e7e99ff312ae856593e6d095cb3306da8384a35f6f53559d9497a722",
+      "old_exact": "| New company's distributed share/interest products | Half ordinary rate, hence 6.25%, first three social periods, total no more than 42 months; community companies have separate 3% branch | [CGI art. 141](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |",
+      "old_row_sha256": "e1664482a05111bdb7f276c53e20fd33802a17b653ddcee2d2e2f8f5c636626f",
+      "destination": "skills/burkina-faso/bf-investment-income.md#rates-bands-and-thresholds",
+      "destination_ledger_rows": [
+        "C15",
+        "C16"
+      ],
+      "disposition": "Moved with full conditions and official source; no figure retired",
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "source_articles": "141"
+    }
+  ],
+  "permitted_corporate_changes": {
+    "old_exact": "| Ordinary securities products, subject to treaty and specific rate | 12.5%; Burkina-issued bond interest 6% | [CGI art. 140(2)](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n| New company's distributed share/interest products | Half ordinary rate, hence 6.25%, first three social periods, total no more than 42 months; community companies have separate 3% branch | [CGI art. 141](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n",
+    "new_exact": "| Securities/distribution rates and new-company conditions | See [investment income and IRCM withholding](bf-investment-income.md#rates-bands-and-thresholds), the sole figure home; the corporate IS credit below remains here | [CGI arts. 140–141](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) |\n",
+    "frontmatter_version": {
+      "before": "1.1",
+      "after": "1.2"
+    },
+    "H1_before": "# Burkina Faso corporate tax (IS) v1.1",
+    "H1_after": "# Burkina Faso corporate tax (IS) v1.2"
+  },
+  "corporate_credit": "Exact prior arts. 93–94 paragraph retained; no other corporate body change permitted.",
+  "all_prior_topics": "The two exact rows are the complete removed set; all other prior body text remains byte-for-byte after reversing the stated metadata changes."
+}

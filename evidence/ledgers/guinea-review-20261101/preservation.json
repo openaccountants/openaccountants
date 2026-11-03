@@ -1,0 +1,110 @@
+{
+  "candidate": "ea0fe54f95ca0059c989faabc9195a12a2497208",
+  "base": "a7888d0d6c1f7cb0fed13d8d3f6b7e05f1d12297",
+  "legacy": [
+    {
+      "path": "skills/guinea/gn-company-formation.md",
+      "sha256": "3d3c490e3a2925f27f3702f771a4adf4c1951bee067a29a7ed92a974e290d75b",
+      "byte_identical": true,
+      "frontmatter_identical": true,
+      "cta_identical": true,
+      "cta_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "old_bullet_count": 10
+    },
+    {
+      "path": "skills/guinea/gn-corporate-income-tax.md",
+      "sha256": "36e3519ff66d3770a70983d5806914677e57a12d238de0f6925c502c1b617f41",
+      "byte_identical": true,
+      "frontmatter_identical": true,
+      "cta_identical": true,
+      "cta_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "old_bullet_count": 10
+    },
+    {
+      "path": "skills/guinea/gn-income-tax.md",
+      "sha256": "2671045f22d434771ed9131896f681b6719a8bb29f9566a7d242a99514383eec",
+      "byte_identical": true,
+      "frontmatter_identical": true,
+      "cta_identical": true,
+      "cta_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "old_bullet_count": 11
+    },
+    {
+      "path": "skills/guinea/gn-payroll-social.md",
+      "sha256": "bfa1355fd698a25c6947de1c1129878171ea2e2df1f9aa5cc251d4ac504a3238",
+      "byte_identical": true,
+      "frontmatter_identical": true,
+      "cta_identical": true,
+      "cta_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "old_bullet_count": 10
+    },
+    {
+      "path": "skills/guinea/gn-tax-overview.md",
+      "sha256": "a98b1e336b8e2464e2a516536e3ff38395638fdd2796b40346057d9b02e551f7",
+      "byte_identical": true,
+      "frontmatter_identical": true,
+      "cta_identical": true,
+      "cta_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "old_bullet_count": 10
+    },
+    {
+      "path": "skills/guinea/gn-vat-gst.md",
+      "sha256": "031265a90237a27278f32b1a06ef914e4ebf068ec79f120b6f7f36f47b2beca6",
+      "byte_identical": true,
+      "frontmatter_identical": true,
+      "cta_identical": true,
+      "cta_sha256": "c10c214dfd87d356a1348223e0dbef08ea8fb2c3191e271b1f876423eeb60a81",
+      "old_bullet_count": 8
+    }
+  ],
+  "topic_map_rows": 65,
+  "topic_checks": [
+    {
+      "guide": "gn-company-formation",
+      "old_bullet_topics": 10,
+      "mapped_rows": 11,
+      "all_old_labels_mapped": true,
+      "context_rows": 1
+    },
+    {
+      "guide": "gn-corporate-income-tax",
+      "old_bullet_topics": 10,
+      "mapped_rows": 11,
+      "all_old_labels_mapped": true,
+      "context_rows": 1
+    },
+    {
+      "guide": "gn-income-tax",
+      "old_bullet_topics": 11,
+      "mapped_rows": 12,
+      "all_old_labels_mapped": true,
+      "context_rows": 1
+    },
+    {
+      "guide": "gn-payroll-social",
+      "old_bullet_topics": 10,
+      "mapped_rows": 11,
+      "all_old_labels_mapped": true,
+      "context_rows": 1
+    },
+    {
+      "guide": "gn-tax-overview",
+      "old_bullet_topics": 10,
+      "mapped_rows": 11,
+      "all_old_labels_mapped": true,
+      "context_rows": 1
+    },
+    {
+      "guide": "gn-vat-gst",
+      "old_bullet_topics": 8,
+      "mapped_rows": 9,
+      "all_old_labels_mapped": true,
+      "context_rows": 1
+    }
+  ],
+  "lost_content_restored": 0,
+  "new_guides": {
+    "gn-property-tax.md": "15e9a24eca2a9be669989264340f0be6b4224b7cddf513056de9d99c8a101204",
+    "gn-vat-invoice-control.md": "62923d2a2ff3b68e4e9f7f6dbb0c009002211f62e2f85fc08eb994f57ba31eb1"
+  }
+}

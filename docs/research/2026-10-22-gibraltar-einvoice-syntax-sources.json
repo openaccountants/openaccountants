@@ -1,0 +1,26 @@
+{
+  "checked_on": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108934/Required%2Bsyntaxes",
+      "updated": "2026-02-02",
+      "locator": "List of compliant syntaxes; syntax binding; syntax versions",
+      "finding": "2017 framework UBL 2.1 and CII D16B with version-specific bindings."
+    },
+    {
+      "url": "https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108661/European%2BStandard%2Band%2BSpecifications",
+      "updated": "2026-06-24",
+      "locator": "Opening content-under-review notice",
+      "finding": "2026 edition published May; 2017 withdrawn but compliant during migration; authority-specific plans required."
+    },
+    {
+      "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/public-finance/2018s290/2018s290.pdf",
+      "locator": "Regulation 5(2), page 4",
+      "finding": "Semantic standard plus compliant syntax on Official Journal list; checked saved official text."
+    }
+  ],
+  "limits": [
+    "EUR-Lex Decision2017/1870 direct retrieval returned anti-bot page; no successful full-text retrieval claimed.",
+    "No Gibraltar migration instrument, cutover date, updated Official Journal list or live endpoint verified."
+  ]
+}

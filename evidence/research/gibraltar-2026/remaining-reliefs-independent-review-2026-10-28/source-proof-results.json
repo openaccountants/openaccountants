@@ -1,0 +1,517 @@
+{
+  "normalization": "Remove only repeated Government of Gibraltar copyright and Page N of M footer lines, then collapse whitespace. Running headers, punctuation, case and all substantive text retained.",
+  "proofs": [
+    {
+      "id": "REL-EN",
+      "file": "energy.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download",
+      "provision": "Energy (Deductions) Rules 2015, rules 3–7",
+      "read_on": "2026-10-28",
+      "sha256": "37f058be810f8868c6834a29c58382e8b15336146fe388967defe4625d24108f",
+      "recorded_hash_matches": true,
+      "snippets": [
+        {
+          "snippet": 1,
+          "words": 45,
+          "normalized_offset": 925,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 2,
+          "words": 45,
+          "normalized_offset": 1177,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 3,
+          "words": 45,
+          "normalized_offset": 1443,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 4,
+          "words": 45,
+          "normalized_offset": 1697,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 5,
+          "words": 45,
+          "normalized_offset": 1962,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 6,
+          "words": 45,
+          "normalized_offset": 2232,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 7,
+          "words": 45,
+          "normalized_offset": 2492,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 8,
+          "words": 45,
+          "normalized_offset": 2759,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 9,
+          "words": 45,
+          "normalized_offset": 3046,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 10,
+          "words": 45,
+          "normalized_offset": 3324,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 11,
+          "words": 45,
+          "normalized_offset": 3602,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 12,
+          "words": 45,
+          "normalized_offset": 3858,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 13,
+          "words": 45,
+          "normalized_offset": 4147,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 14,
+          "words": 45,
+          "normalized_offset": 4422,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 15,
+          "words": 12,
+          "normalized_offset": 4668,
+          "exact_after_stated_normalization": true
+        }
+      ],
+      "all_snippets_exact": true
+    },
+    {
+      "id": "REL-EP",
+      "file": "energy-performance.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download",
+      "provision": "Energy Performance (Deductions) Rules 2018, rules 3–8 and Schedule",
+      "read_on": "2026-10-28",
+      "sha256": "9aaed130ce7c800c1b0bdf4e90fce59f59508c3d85f12c9ae33eaddb89fc3180",
+      "recorded_hash_matches": true,
+      "snippets": [
+        {
+          "snippet": 1,
+          "words": 45,
+          "normalized_offset": 933,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 2,
+          "words": 45,
+          "normalized_offset": 1247,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 3,
+          "words": 45,
+          "normalized_offset": 1520,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 4,
+          "words": 45,
+          "normalized_offset": 1786,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 5,
+          "words": 45,
+          "normalized_offset": 2070,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 6,
+          "words": 45,
+          "normalized_offset": 2374,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 7,
+          "words": 45,
+          "normalized_offset": 2634,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 8,
+          "words": 45,
+          "normalized_offset": 2911,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 9,
+          "words": 45,
+          "normalized_offset": 3168,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 10,
+          "words": 45,
+          "normalized_offset": 3434,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 11,
+          "words": 45,
+          "normalized_offset": 3731,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 12,
+          "words": 45,
+          "normalized_offset": 4011,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 13,
+          "words": 45,
+          "normalized_offset": 4288,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 14,
+          "words": 45,
+          "normalized_offset": 4563,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 15,
+          "words": 45,
+          "normalized_offset": 4852,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 16,
+          "words": 25,
+          "normalized_offset": 5088,
+          "exact_after_stated_normalization": true
+        }
+      ],
+      "all_snippets_exact": true
+    },
+    {
+      "id": "REL-EV",
+      "file": "ev-charger.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download",
+      "provision": "Electric Vehicle Charger (Deductions) Rules 2018, rules 3–7 as amended 2022",
+      "read_on": "2026-10-28",
+      "sha256": "a59c3379e2456fb94a49242051613e4b0f0ca5f520e645c6fbd943ea6995a4df",
+      "recorded_hash_matches": true,
+      "snippets": [
+        {
+          "snippet": 1,
+          "words": 45,
+          "normalized_offset": 1007,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 2,
+          "words": 45,
+          "normalized_offset": 1274,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 3,
+          "words": 45,
+          "normalized_offset": 1519,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 4,
+          "words": 45,
+          "normalized_offset": 1796,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 5,
+          "words": 45,
+          "normalized_offset": 2048,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 6,
+          "words": 45,
+          "normalized_offset": 2354,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 7,
+          "words": 45,
+          "normalized_offset": 2631,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 8,
+          "words": 45,
+          "normalized_offset": 2920,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 9,
+          "words": 45,
+          "normalized_offset": 3214,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 10,
+          "words": 45,
+          "normalized_offset": 3499,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 11,
+          "words": 1,
+          "normalized_offset": 3767,
+          "exact_after_stated_normalization": true
+        }
+      ],
+      "all_snippets_exact": true
+    },
+    {
+      "id": "REL-DA",
+      "file": "disabled-access.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download",
+      "provision": "Disabled Access to Property (Deductions) Rules 2020, rules 3–6 as amended 18 June 2026",
+      "read_on": "2026-10-28",
+      "sha256": "6a4c42a4583b3bc174deff4cfc631c133ae44ef89ef1e7a9234d8f396e07c6eb",
+      "recorded_hash_matches": true,
+      "snippets": [
+        {
+          "snippet": 1,
+          "words": 45,
+          "normalized_offset": 976,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 2,
+          "words": 45,
+          "normalized_offset": 1240,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 3,
+          "words": 45,
+          "normalized_offset": 1515,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 4,
+          "words": 45,
+          "normalized_offset": 1778,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 5,
+          "words": 45,
+          "normalized_offset": 2045,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 6,
+          "words": 45,
+          "normalized_offset": 2325,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 7,
+          "words": 45,
+          "normalized_offset": 2606,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 8,
+          "words": 45,
+          "normalized_offset": 2893,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 9,
+          "words": 45,
+          "normalized_offset": 3173,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 10,
+          "words": 45,
+          "normalized_offset": 3461,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 11,
+          "words": 42,
+          "normalized_offset": 3725,
+          "exact_after_stated_normalization": true
+        }
+      ],
+      "all_snippets_exact": true
+    },
+    {
+      "id": "REL-DA26",
+      "file": "disabled-access-amend2026.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-amendment-rules-2026-8467/download",
+      "provision": "LN 2026/125, rules 2–3",
+      "read_on": "2026-10-28",
+      "sha256": "df14d5cb5947bb61800b891546e98876cd9a5b263c51a43915ee0dc7704c3f80",
+      "recorded_hash_matches": true,
+      "snippets": [
+        {
+          "snippet": 1,
+          "words": 45,
+          "normalized_offset": 479,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 2,
+          "words": 5,
+          "normalized_offset": 761,
+          "exact_after_stated_normalization": true
+        }
+      ],
+      "all_snippets_exact": true
+    },
+    {
+      "id": "REL-EV22",
+      "file": "ev-charger-amend2022.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-amendment-rules-2022-6610/download",
+      "provision": "LN 2022/170, rules 2–3",
+      "read_on": "2026-10-28",
+      "sha256": "8d0ea67d43a58e99c8ba208d67dfe08c453e92e535ddffe9d13b4c18f1e109c7",
+      "recorded_hash_matches": true,
+      "snippets": [
+        {
+          "snippet": 1,
+          "words": 45,
+          "normalized_offset": 472,
+          "exact_after_stated_normalization": true
+        },
+        {
+          "snippet": 2,
+          "words": 28,
+          "normalized_offset": 732,
+          "exact_after_stated_normalization": true
+        }
+      ],
+      "all_snippets_exact": true
+    }
+  ],
+  "receipts": [
+    {
+      "name": "energy.html",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877",
+      "ok": true,
+      "sha256": "49e86177fc00857152ed4dd8f3caa5203b4fff5aee885dd931a06bc6ed38a181",
+      "bytes": 34559,
+      "verified_sha256": "49e86177fc00857152ed4dd8f3caa5203b4fff5aee885dd931a06bc6ed38a181",
+      "hash_matches": true
+    },
+    {
+      "name": "energy.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/energy-deductions-rules-2015-3877/download",
+      "ok": true,
+      "sha256": "37f058be810f8868c6834a29c58382e8b15336146fe388967defe4625d24108f",
+      "bytes": 121061,
+      "verified_sha256": "37f058be810f8868c6834a29c58382e8b15336146fe388967defe4625d24108f",
+      "hash_matches": true
+    },
+    {
+      "name": "energy-performance.html",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840",
+      "ok": true,
+      "sha256": "a2e56e77d3fbf28546ad09b2be397658d76de5c62a310b40daba8538151cc843",
+      "bytes": 32001,
+      "verified_sha256": "a2e56e77d3fbf28546ad09b2be397658d76de5c62a310b40daba8538151cc843",
+      "hash_matches": true
+    },
+    {
+      "name": "energy-performance.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/energy-performance-deductions-rules-2018-2840/download",
+      "ok": true,
+      "sha256": "9aaed130ce7c800c1b0bdf4e90fce59f59508c3d85f12c9ae33eaddb89fc3180",
+      "bytes": 126092,
+      "verified_sha256": "9aaed130ce7c800c1b0bdf4e90fce59f59508c3d85f12c9ae33eaddb89fc3180",
+      "hash_matches": true
+    },
+    {
+      "name": "ev-charger.html",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465",
+      "ok": true,
+      "sha256": "8b1a91cd11cab4b13aeef619e39a77fe8ced559e3c2aa74e5a9139a1972f8de5",
+      "bytes": 32097,
+      "verified_sha256": "8b1a91cd11cab4b13aeef619e39a77fe8ced559e3c2aa74e5a9139a1972f8de5",
+      "hash_matches": true
+    },
+    {
+      "name": "ev-charger.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-rules-2018-4465/download",
+      "ok": true,
+      "sha256": "a59c3379e2456fb94a49242051613e4b0f0ca5f520e645c6fbd943ea6995a4df",
+      "bytes": 116980,
+      "verified_sha256": "a59c3379e2456fb94a49242051613e4b0f0ca5f520e645c6fbd943ea6995a4df",
+      "hash_matches": true
+    },
+    {
+      "name": "disabled-access.html",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618",
+      "ok": true,
+      "sha256": "4311b47f127aa2f613c349a9ce6b779222d72018a9ebfe87df860433089c0fd1",
+      "bytes": 35006,
+      "verified_sha256": "4311b47f127aa2f613c349a9ce6b779222d72018a9ebfe87df860433089c0fd1",
+      "hash_matches": true
+    },
+    {
+      "name": "disabled-access.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-rules-2020-5618/download",
+      "ok": true,
+      "sha256": "6a4c42a4583b3bc174deff4cfc631c133ae44ef89ef1e7a9234d8f396e07c6eb",
+      "bytes": 119321,
+      "verified_sha256": "6a4c42a4583b3bc174deff4cfc631c133ae44ef89ef1e7a9234d8f396e07c6eb",
+      "hash_matches": true
+    },
+    {
+      "name": "disabled-access-amend2026.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/disabled-access-to-property-deductions-amendment-rules-2026-8467/download",
+      "ok": true,
+      "sha256": "df14d5cb5947bb61800b891546e98876cd9a5b263c51a43915ee0dc7704c3f80",
+      "verified_sha256": "df14d5cb5947bb61800b891546e98876cd9a5b263c51a43915ee0dc7704c3f80",
+      "hash_matches": true
+    },
+    {
+      "name": "ev-charger-amend2022.pdf",
+      "url": "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-amendment-rules-2022-6610/download",
+      "ok": true,
+      "sha256": "8d0ea67d43a58e99c8ba208d67dfe08c453e92e535ddffe9d13b4c18f1e109c7",
+      "verified_sha256": "8d0ea67d43a58e99c8ba208d67dfe08c453e92e535ddffe9d13b4c18f1e109c7",
+      "hash_matches": true
+    }
+  ],
+  "full_documents_read": true,
+  "operative_documents": 4,
+  "targeted_amendments": 2,
+  "visual_pages": [
+    "energy-performance.pdf p5",
+    "disabled-access.pdf p3",
+    "ev-charger.pdf p4"
+  ]
+}

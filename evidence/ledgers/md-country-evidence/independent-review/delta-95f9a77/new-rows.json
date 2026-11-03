@@ -1,0 +1,34 @@
+[
+  {
+    "id": "MD-CORP-556",
+    "rule_or_figure": "Nonmonetary VEN12row02010 valuation: preceding-month comparable average; where no such prior-month supplies, current-month cost is the statutory floor",
+    "Guide_section": "Deadlines and filing: Complete the actual VEN12 annexes; The base",
+    "act_article_or_official_section": "Fiscal Code art. 21(1)",
+    "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+    "exact_original_language_quote": "venitul obţinut sub formă nemonetară nu poate fi mai mic decât preţul de cost al mărfurilor livrate şi/sau al serviciilor prestate în luna curentă.",
+    "read_date": "2026-10-30",
+    "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-21.json",
+    "source_text_sha256": "5ecbca58b0a5e4becb4d9453092c121658cfa30ed3ae2da44586db776b410334",
+    "source_context": "(1) Venitul obţinut sub formă nemonetară se evaluează de către fiecare subiect al impunerii şi constituie valoarea medie a preţului de livrare a mărfurilor şi/sau de prestare a serviciilor analoage pe luna precedentă lunii în care a fost obţinut venit sub formă nemonetară. În cazul în care, pe luna precedentă lunii în care a fost obţinut venit sub formă nemonetară, nu au fost efectuate livrări de mărfuri şi/sau prestări de servicii, venitul obţinut sub formă nemonetară nu poate fi mai mic decât preţul de cost al mărfurilor livrate şi/sau al serviciilor prestate în luna curentă.",
+    "quote_matches_source_after_layout_normalization": true,
+    "writer_retained_context_recheck_date": "2026-10-31",
+    "source_date_note": "Original primary-source observation/read date retained; already-captured full paragraph re-read for this repair on31October. No newfetch or retroactive source-read claim.",
+    "independent_review": "PENDING focused011/012recheck and whole-country review"
+  },
+  {
+    "id": "MD-CORP-557",
+    "rule_or_figure": "VEN12row03031 waste/shrinkage: annual management norms subject to ministry limits for specified tobacco, ethyl-alcohol and petroleum products",
+    "Guide_section": "Deadlines and filing: Complete the actual VEN12 annexes; The base",
+    "act_article_or_official_section": "Fiscal Code art. 24(13)",
+    "official_url": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+    "exact_original_language_quote": "dar fără a depăși limitele stabilite de către Ministerul Sănătății pentru produsele din tutun",
+    "read_date": "2026-10-30",
+    "source_observation": "ledgers/md-country-evidence/sources/fiscal-code-article-24.json",
+    "source_text_sha256": "9e3e5e60098ec37f768fbc2489f471d54bc559ad177a216986676f86be21df64",
+    "source_context": "(13) Deducerea reziduurilor, deșeurilor și perisabilității naturale se permite în limitele aprobate anual de către conducătorii întreprinderilor, dar fără a depăși limitele stabilite de către Ministerul Sănătății pentru produsele din tutun de la pozițiile tarifare 240210000, 240220, 240290000, 2403, 2404 și limitele stabilite de Ministerul Agriculturii și Industriei Alimentare pentru produsele din alcool etilic de la pozițiile tarifare 2207 și 2208, precum și limitele stabilite de Ministerul Infrastructurii și Dezvoltării Regionale pentru produsele petroliere.",
+    "quote_matches_source_after_layout_normalization": true,
+    "writer_retained_context_recheck_date": "2026-10-31",
+    "source_date_note": "Original primary-source observation/read date retained; already-captured full paragraph re-read for this repair on31October. No newfetch or retroactive source-read claim.",
+    "independent_review": "PENDING focused011/012recheck and whole-country review"
+  }
+]

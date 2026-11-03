@@ -1,0 +1,81 @@
+{
+  "status": "PASS writer arithmetic/source identity; separate192-Acommencement/CNAM/portal and country review remain open",
+  "cases": [
+    {
+      "name": "Requested bank refund and identified future allocation partition the credit once",
+      "inputs": {
+        "established_credit": 10000,
+        "requested_bank_refund": 6000,
+        "retained_for_identified_future_liability": 4000
+      },
+      "actual": {
+        "total": 10000,
+        "unallocated": 0
+      },
+      "expected": {
+        "total": 10000,
+        "unallocated": 0
+      },
+      "status": "PASS writer arithmetic only",
+      "scope": "Credit eligibility/no arrears established separately; arithmetic request fields do not establish approval or bank execution"
+    }
+  ],
+  "source_lookups": [
+    {
+      "point": "point6",
+      "checked_exact_text": "rămâne în contul plătitorului",
+      "status": "PASS source identity only"
+    },
+    {
+      "point": "point7",
+      "checked_exact_text": "nu are înregistrate restanțe",
+      "status": "PASS source identity only"
+    },
+    {
+      "point": "point8",
+      "checked_exact_text": "e-Cerere Restituirea sumelor din BASS",
+      "status": "PASS source identity only"
+    },
+    {
+      "point": "point9",
+      "checked_exact_text": "în măsura în care acestea nu au obligația",
+      "status": "PASS source identity only"
+    },
+    {
+      "point": "point11",
+      "checked_exact_text": "g) (exclus",
+      "status": "PASS source identity only"
+    },
+    {
+      "point": "point17.1",
+      "checked_exact_text": "nu au întrunit condiţiile de încheiere",
+      "status": "PASS source identity only"
+    },
+    {
+      "point": "point18.1",
+      "checked_exact_text": "30",
+      "status": "PASS source identity only"
+    },
+    {
+      "point": "annex1",
+      "checked_exact_text": "viitoarei obligaţii",
+      "status": "PASS source identity only"
+    },
+    {
+      "point": "annex2",
+      "checked_exact_text": "suma aprobată pentru restituire",
+      "status": "PASS source identity only"
+    },
+    {
+      "point": "annex3",
+      "checked_exact_text": "Borderoul ordinelor de plată trezoreriale",
+      "status": "PASS source identity only"
+    }
+  ],
+  "source_files": {
+    "ledgers/md-country-evidence/sources/fiscal-code-article-CNAS-REFUND-CURRENT-20261031.json": "17cd5c372cda0477c31cfe578426b27b50f1a7189791bbbb47683094c1843d3c"
+  },
+  "Guide_hashes": {
+    "skills/international/moldova/moldova-social-contributions.md": "cea22473d8ab26f81cf574b618135e5041d7cb682363a6ee437644ae7d03fc68"
+  }
+}

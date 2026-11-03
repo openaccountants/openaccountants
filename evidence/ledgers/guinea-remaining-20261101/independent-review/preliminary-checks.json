@@ -1,0 +1,57 @@
+{
+  "candidate": "5be81215d2fc6935e66a32707b4d02e33d4ea516",
+  "status": "preliminary; corporate expansion/final freeze pending",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/guinea/gn-payroll-social.md",
+        "skills/guinea/gn-company-formation.md",
+        "skills/guinea/gn-property-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/guinea/gn-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/guinea/gn-company-formation.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/guinea/gn-property-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/guinea/gn-payroll-social.md",
+        "skills/guinea/gn-company-formation.md",
+        "skills/guinea/gn-property-tax.md",
+        "skills/guinea/gn-vat-invoice-control.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 4 files, 10 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--worktree",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 3 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "incidental_unscoped_validator": "--help is ignored by this script; default run reported stale index.json/llms-full.txt and legacy warnings. Generated files deliberately not changed; final scoped validator pending."
+}

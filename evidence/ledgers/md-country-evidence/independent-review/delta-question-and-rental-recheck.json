@@ -1,0 +1,28 @@
+{
+  "commits": [
+    "41cf90dba046a4759f17603d415c1ab406e86993",
+    "1708abaf2"
+  ],
+  "decision": "PASS focused007/008/009 corrections; wholepack INCOMPLETE",
+  "findings": [
+    {
+      "id": "MD-REVIEW-007",
+      "result": "Six planning groups retain11clauses and conclusion; no new claim"
+    },
+    {
+      "id": "MD-REVIEW-008",
+      "result": "Six XBgroups retainall8originalbullets"
+    },
+    {
+      "id": "MD-REVIEW-009",
+      "result": "Deadline nowexpresslyimmovable; actualsource127matches; movable/internationalk¹gapexplicit"
+    }
+  ],
+  "current_rows": {
+    "total": 3910,
+    "read": 1607,
+    "no_issue_in_checked_scope": 1607,
+    "unread": 2303
+  },
+  "limits": "No newroworwholepackapproval;fulltemporalchainandremaining4Guidesstillunreviewed."
+}

@@ -1,0 +1,163 @@
+Section 4 ‐ Déductions
+
+
+Sous‐section 1 ‐ Principes
+
+Art.222.‐ La TVA ayant grevé en amont les éléments du prix d’une opération imposable est
+déductible de la TVA applicable à cette opération.
+
+Le droit à déduction prend naissance lorsque la taxe devient exigible chez l’assujetti. Les
+déductions antérieures omises peuvent être réparées et prises en compte jusqu’au
+douzième mois qui suit celui au cours duquel le droit a pris naissance.
+
+Pour les importations, le droit à déduction prend naissance lors de la mise à la
+consommation.
+
+Pour les prestations de service réalisées par les fournisseurs non-résidents, le droit à
+déduction prend naissance à compter du mois qui suit celui au cours duquel l’exigibilité
+intervient.
+
+Les assujettis sont autorisés à déduire la TVA afférente aux livraisons à soi-même de biens.
+
+La TVA afférente aux biens ne constituant pas des immobilisations détenues en stocks à la
+date à laquelle l’entreprise devient redevable est déductible si ces biens sont destinés
+exclusivement à la réalisation d’opérations ouvrant droit à déduction. La taxe ayant grevé
+les immobilisations détenues par les entreprises qui deviennent redevables de la TVA
+n’ouvre pas droit à déduction.
+
+Art.223.‐ (L.F.2024) La TVA dont les entreprises peuvent opérer la déduction est celle qui
+figure sur :
+ les factures délivrées par les fournisseurs immatriculés et mentionnant leur NIF.
+    Toutefois, en ce qui concerne les fournisseurs étrangers, ces conditions ne sont pas
+    exigées ;
+ les documents d’importation ;
+ les déclarations souscrites par le redevable en cas de livraison à soi-même.
+
+N’ouvre pas droit à déduction de la TVA, toute déclaration non accompagnée des annexes
+détaillées prévues à l’article 237 du présent Code.
+
+
+Sous‐section 2 ‐ Exclusions du droit à déduction
+
+Art.224.‐ N’ouvre pas droit à déduction la taxe ayant grevé :
+ les dépenses de logement, hébergement, restauration, réception, spectacle et de
+   transport de personnes. Cette exclusion ne concerne pas les dépenses supportées au
+   titre de leur activité imposable par les professionnels de l’hôtellerie, de la restauration,
+   du spectacle ou du transport de personnes ;
+ les importations de biens et marchandises réexpédiées en l’état ;
+ les produits pétroliers à l’exception de ceux utilisés par des appareils fixes comme
+   combustibles ou agents de fabrication dans les entreprises industrielles ;
+ les biens cédés sans rémunération ou moyennant une rémunération très inférieure à
+   leur prix normal, notamment à titre de commission, salaire, gratification, cadeau, quelle
+   que soit la qualité du bénéficiaire ou la forme de la distribution, sauf s’il s’agit de biens
+   dont la valeur n’excède pas 10.000 FCFA ;
+ les biens et services acquis par l’entreprise mais utilisés par des tiers, des dirigeants ou
+   par le personnel de l’entreprise ;
+   les services afférents à des biens exclus du droit à déduction ;
+   les services disponibles sur le territoire national, rendus par un prestataire étranger.
+
+Art.225.‐ N’ouvre également pas droit à déduction, la TVA sur les véhicules et engins,
+quelle que soit leur nature, conçus ou aménagés pour le transport des personnes ou pour
+des usages mixtes constituant des immobilisations, ainsi que la TVA sur leur location, leurs
+pièces détachées et accessoires ou les services afférents à ces mêmes biens.
+
+Toutefois, l’exclusion ci-dessus mentionnée ne concerne pas :
+ les véhicules routiers conçus spécifiquement pour un usage mixte permettant le
+   transport de personnes et le transport de marchandises ;
+ les véhicules routiers spécialement conçus pour le transport de personnes comportant,
+   outre le siège du conducteur, plus de dix places assises et utilisés par les entreprises
+   pour le transport exclusif de leur personnel ;
+ les immobilisations des entreprises de location de véhicules ;
+ les immobilisations des entreprises de transport public de personnes ;
+ les dépenses de transport des personnels du tourisme pour leurs clients ;
+ les stocks de véhicules de concessionnaires et les véhicules d’essai ou de démonstration.
+
+
+Sous‐section 3 ‐ Limitation du droit à déduction : le prorata
+
+Art.226.‐ (L.F.2024) Les assujettis qui ne réalisent pas exclusivement des opérations
+ouvrant droit à déduction doivent, dès la réalisation de leurs dépenses, les affecter soit à
+leurs activités imposables, soit à leurs activités non imposables :
+ lorsque les biens et services concourent exclusivement à la réalisation d’opérations
+    ouvrant droit à déduction, la TVA qui les a grevées est déductible ;
+ lorsque les biens et services concourent exclusivement à la réalisation d’opérations
+    n’ouvrant pas droit à déduction, la TVA qui les a grevées n’est pas déductible ;
+ lorsque les biens et services concourent à la fois à la réalisation d’opérations ouvrant
+    droit à déduction et à la réalisation d’opérations n’ouvrant pas droit à déduction, seule
+    la fraction de la taxe qui les a grevées est déductible par application d’un prorata.
+
+Art.227.‐ (L.F.2024) 1) Le prorata prévu à l’article 226 ci-dessus est le rapport entre : le
+montant total hors taxes des recettes ou du chiffre d’affaires afférents à des opérations
+soumises à la TVA, augmenté du montant des exportations des produits taxables, au
+numérateur et le montant total hors taxes du chiffre d’affaires ou des recettes de toutes
+natures réalisées par l’assujetti, au dénominateur.
+
+2) Pour la détermination des recettes afférentes aux opérations soumises à la TVA, sont
+exclus :
+ a) les livraisons à soi-même ;
+ b) les cessions d’éléments d’actifs immobilisés ;
+ c) les ventes de biens d’occasion ;
+ d) les subventions d’équipement non taxables ;
+ e) les remboursements de débours ;
+ f) les indemnités ne constituant pas la contrepartie d’une opération soumise à la TVA ;
+ g) les recettes provenant des opérations d’impression réalisées par les imprimeurs pour
+    la fabrication des journaux, périodiques et manuels scolaires.
+
+3) Si le prorata est inférieur ou égal à 10 %, aucune déduction n’est admise. S’il est
+supérieur à 90 %, l’intégralité du droit à déduction peut être exercée.
+4) Le prorata est déterminé provisoirement en fonction des recettes et produits réalisés
+l’année précédente ou, pour les nouveaux assujettis, des recettes et produits prévisionnels
+de l’année en cours.
+
+Le montant du prorata définitif est arrêté au plus tard le 1er avril de l’année suivante. Les
+déductions opérées sont régularisées en conséquence dans le même délai.
+
+Art.228.‐ Tout redevable ne réalisant pas exclusivement des opérations taxables est tenu
+de déposer une déclaration faisant apparaître le calcul du prorata applicable à ses activités.
+
+Art.229.‐ Il peut être tenu compte de secteurs distincts d’activités, lorsqu’un assujetti
+exerce des activités qui ne sont pas soumises à des dispositions identiques au regard de la
+TVA.
+
+Le bénéfice de cette option doit être expressément demandé par le contribuable avant le 31
+janvier de l’exercice de l’option. L’option est cependant subordonnée à la condition de la
+tenue de comptabilité séparée par secteur d’activité et la TVA est intégralement déductible
+ou non selon les secteurs d’activités.
+
+L’option est irrévocable. Le non-respect des conditions sus définies remet en cause l’option
+et le prorata est applicable de plein droit.
+
+
+Sous‐section 4 ‐ Régularisations
+
+Art.230.‐ Lorsqu’un bien ayant fait l’objet d’une déduction au titre des immobilisations ne
+fait plus partie des immobilisations de l’entreprise ou en l’absence de sortie d’actif en cas de
+modification de la situation de ce bien au regard du droit à déduction, soit en cas de
+changement de réglementation, soit en raison d’un changement d’utilisation avant la fin de
+la troisième année qui suit celle de l’acquisition, l’assujetti est redevable d’une fraction de la
+taxe antérieurement déduite. Cette fraction est égale au montant de la déduction diminuée
+d’un cinquième par année ou fraction d’année depuis l’acquisition.
+
+En cas de cession, si le bien constitue une immobilisation pour l’acquéreur, ce dernier peut
+opérer la déduction de la TVA correspondant au montant reversé par le vendeur au titre de
+la régularisation.
+
+Cette déduction est subordonnée à la délivrance par le vendeur au bénéficiaire d’une
+attestation mentionnant le montant de la taxe déductible.
+
+Le reversement de la TVA initialement déduite est intégralement exigé en ce qui concerne
+les services et biens ne constituant pas des immobilisations lorsque ceux-ci ont été utilisés
+pour des opérations non soumises à la TVA.
+
+Art.231.‐ La TVA acquittée à l’occasion des ventes ou des services qui sont par la suite
+résiliés, annulés ou restent impayés peut être récupérée par voie d’imputation sur l’impôt
+dû pour les opérations faites ultérieurement.
+
+Pour les opérations annulées ou résiliées, la récupération de la taxe acquittée à raison de
+ces opérations est subordonnée à l’établissement et à l’envoi au client d’une facture
+nouvelle, remplaçant la facture initiale.
+
+Pour les opérations impayées, lorsque la créance est réellement et définitivement
+irrécouvrable, la rectification de la facture consiste dans l’envoi d’un duplicata de la facture
+initiale avec des indications réglementaires surchargées de la mention « facture demeurée
+

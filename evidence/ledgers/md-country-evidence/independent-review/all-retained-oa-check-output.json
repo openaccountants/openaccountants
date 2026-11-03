@@ -1,0 +1,128 @@
+[
+  {
+    "path": "ledgers/md-country-evidence/corporate-expense-procedure-controls.md",
+    "blocks": 4,
+    "returncode": 0,
+    "stdout": "checked 1 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "ledgers/md-country-evidence/fixed-medical-proration-control.md",
+    "blocks": 1,
+    "returncode": 0,
+    "stdout": "checked 1 files, 1 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "ledgers/md-country-evidence/individual-procedure-controls.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "ledgers/md-country-evidence/late-rate-controls.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "ledgers/md-country-evidence/payroll-loan-controls.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "ledgers/md-country-evidence/service-entrepreneur-medical-controls.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "ledgers/md-country-evidence/social-writer-controls.md",
+    "blocks": 14,
+    "returncode": 0,
+    "stdout": "checked 1 files, 14 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "ledgers/md-country-evidence/travel-asset-procedure-controls.md",
+    "blocks": 3,
+    "returncode": 0,
+    "stdout": "checked 1 files, 3 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "skills/international/moldova/md-company-formation.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "skills/international/moldova/md-corporate-income-tax.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "skills/international/moldova/md-cross-border.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "skills/international/moldova/md-tax-overview.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "skills/international/moldova/md-transfer-pricing.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "skills/international/moldova/moldova-income-tax.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "skills/international/moldova/moldova-payroll.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "skills/international/moldova/moldova-social-contributions.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "skills/international/moldova/moldova-tax-optimization.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "path": "skills/international/moldova/moldova-vat.md",
+    "blocks": 2,
+    "returncode": 0,
+    "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  }
+]

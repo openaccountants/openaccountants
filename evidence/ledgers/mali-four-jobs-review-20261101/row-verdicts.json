@@ -1,0 +1,831 @@
+{
+  "candidate": "3338b0f742fc9505945915ea7c1af95a97712353",
+  "reviewer": "fresh independent mali_four_jobs_review",
+  "row_count": 103,
+  "verdicts": [
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-01",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Article 1 ties scope to a participating-state seat and retains non-conflicting national law; national exceptions are not inferred.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-02",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Articles 309–310 support contribution-limited SARL responsibility and one or multiple natural/legal founders; guarantees remain outside scope.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-03",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Article 385 supports a single SA shareholder and contribution-limited debt responsibility.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-04",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "AUDCG 44–48 separates natural-person registration from legal-person incorporation; no unsupported sole-trader liability shortcut is retained.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-05",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Complete Mali law article 2, visually checked, freely fixes total capital and separately requires equal nominal shares of at least CFA 5,000; no false total floor.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-06",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "AUSCGIE 311 expressly permits contrary national provisions; the default does not override the identified Mali law.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-07",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Article 311-1 requires total subscription, full in-kind payment, at least half cash at subscription and balance within two years from RCCM registration; all conditions appear.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-08",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Article 312 uses a strict greater-than CFA 5m test for an individual or aggregate in-kind amount; special benefits independently require valuation control.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-09",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Articles 387–388 support CFA 10m ordinary SA minimum and full capital subscription before signing.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-10",
+      "verdict": "condition_requires_correction",
+      "finding": "F1",
+      "review": "Article 389 first paragraphs support quarter cash and three years, but continuation on PDF p.96 imposes nominative-share, capital-increase and bond restrictions omitted from the condensed payment rule. Repair F1.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-11",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Articles 823–824 support CFA 100m only for the stated listing/public-placement scope; no universal private-SA figure inferred.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-12",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Article 376 visually checked: two out of three strict closing tests, assets >125m, annual turnover >250m, permanent staff >50.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-13",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Article 376 cessation depends on the two exercises before auditor mandate expiry, not one small year; candidate preserves that qualification.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-14",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Article 376 permits optional appointment below trigger and a court request by holder(s) of at least one tenth.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-15",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Articles 694–696 establish SA audit and conditional professional-register qualification; candidate does not invent a Maltese or foreign permission.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-16",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Articles 10–13 support authenticity subject to national exceptions and mandatory articles content; no current national exception assumed.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-17",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Article 313 supports immediate deposit in permitted institution/notary, receipt and articles mention.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-18",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Article 314 supports funds unavailable until registration with a court-authorised refund mechanism; candidate refers to that mechanism rather than claiming immediate refund eligibility.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-19",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Articles 137–142 support annual financial statements and management report, distinct from tax forms.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-20",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Articles 140,348,548 support six-month approval/meeting and relevant judicial extension; not confused with tax filing.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-21",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Article 269 spans PDF pp.65–66 and supports one-month financial-statement deposit plus refusal-decision branch.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-22",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Articles 98,100–101 distinguish constitution by signing/adoption and legal personality at registration, subject to Act exceptions.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-23",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "AUDCG 44 and 46 support first activity month versus month of constitution for the appropriate applicant.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-24",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "AUDCG 39 and 44–47 support the prescribed form and listed supporting documents; exact current form/authentication is held.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-25",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "AUDCG 45 and 47 use 75 days after registration; two-month administrative wording is identified as a conflict, not substituted.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-26",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Complete government individual-enterprise procedure describes API guichet, validation, deposit acknowledgement and payment receipt; candidate limits the checklist scope.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-27",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Government page says documents vary and uses two months; candidate explicitly declines to certify an identical current company checklist.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-28",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Dated DGI NIF guidance supports register, tenancy/domiciliation, articles as relevant and card collection at tax centre/API; identifiers kept distinct.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-29",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "NIF guidance month-of-start sentence is not used to override LPF112 ten-day VAT existence declaration.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-30",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Articles 101,315–316,380 support pre-registration third-party status and separate constitution/auditor defects; no unverified fine amount supplied.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-31",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "AUDCG60 prevents failure to register being used to evade attached responsibilities/obligations; no invented criminal sanction.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-company-formation",
+      "row": "ml-company-formation-32",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "AUSCGIE3 allows persons of any nationality to choose a permitted form; AUDCG48 separate foreign establishment registration is correctly scoped.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-01",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI wage, property, investment and business headings/provisions establish separate categories; routing does not aggregate them into ITS.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-02",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI82–84 distinguish individual/partner assessments and company IS, including elections.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-03",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "BCEAO introductory history explicitly lists Mali and monetary-union CFA designation; no exchange-rate claim adopted.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-04",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI4 has category-specific residence/work/payer conditions and CGI44 Mali-business profits subject to ratified conventions; blanket worldwide claim is removed.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-05",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI5–7 wages,49 net profit,85–86 turnover minimum and198–206 VAT consideration/tax points support distinct bases; linked figure homes retain their conditions.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-06",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI70–79 regime distinctions and LPF23–28,57,110–115 support classification before assigning duties; no universal return model invented.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-07",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Dated DGI NIF guidance actually requests articles/register evidence; NIF application does not prove incorporation or completion of tax returns.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-08",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "AUSCGIE98–101 support distinction between constitution, registration and legal personality.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-09",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF282 expressly excludes increases from credit for instalments paid; duplicate reconciliation is identified as a workpaper control.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-10",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI48 calendar year has first-period exceptions; LPF return/payment branches differ, so universal March date is properly rejected.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-11",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF23–28 prescribed model, signature, annexes, competent service and deposit certificate are distinct from LPF281 payment evidence and325–326 receipts.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-12",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF36–39,65–67,98,119–122,283–285,328,419–421 separate nonfiling, understatement, withholding and payment sanctions; overview adopts no blanket percentage.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-13",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI4,44,80–81,94–98,196–197 and LPF57-A support separate cross-border workstreams; no treaty rate or universal foreign exemption inferred.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-tax-overview",
+      "row": "ml-tax-overview-14",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Enacted finance-law46 refers to 2026 Annex U; retrieved reference does not supply annex contents or prove continuity.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "01",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI81(1) covers foreign dependency/control and common-group control, with outward profit transfers by prices, undercapitalisation or other means incorporated into results.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "02",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI81(2)(a) uses majority direct/interposed capital OR factual decision power; no false absolute ownership safe harbour.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "03",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI81(2)(b) extends to common control under the same tests.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "04",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI81(3) removes dependency/control condition for privileged/noncooperative counterparties; candidate preserves this exception.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "05",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Privileged regime is no tax OR rate lower by more than ten percentage points, not ten percent or an inclusive boundary.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "06",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Minister periodically establishes noncooperative list; current actual list is explicitly unproved.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "07",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Fallback to one specified organisation list where ministerial list absent is textually supported; candidate supplies no guessed country list.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "08",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-A I requires Mali legal person, turnover >=3bn and stated foreign dependency/control, for previous exercise; threshold does not exempt substantive TP.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "09",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-A I expressly imposes 1% declared turnover per month late, maximum5%; example assumes complete months without inventing fractions.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "10",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI49 supports effective costs and sufficient proof, with ordinary deductibility remaining a separate condition.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "11",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI51(2) addresses real/non-abnormal/non-excessive enumerated foreign charges; no unrestricted all-cost deduction inferred.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "12",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Embedded decree7 with2017 amendment labels enumerates royalties, technical assistance and affiliated purchases/sales and requires real non-excessive amounts.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "13",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "Decree8 full-competition independent comparison supports case stipulated comparability; candidate rejects invented mandatory method hierarchy.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "14",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-A II(1) group information includes activity, links, functions/risks, relevant intangibles and policy.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "15",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-A II(2)(a–b) includes local activity changes and nature/amount of associated flows including royalties.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "16",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-A II(2)(c) requires cost-sharing list and copies of relevant APAs/rulings affecting results.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "17",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-A II(2)(d) method selection/application plus functions/assets/risks is preserved.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "18",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-A II(2)(e) comparables analysis is conditional on method requiring it, not unconditional mandatory database search.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "19",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-A I expressly says package substitutes for neither transaction proof nor ordinary article57 declaration.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "20",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-A III noncooperative associated branch adds beneficiary documents including balance sheet/P&L under article60.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "21",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-A I links previous-exercise simplified declaration/documentation to article57 deadline; operative/current dates remain held.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "22",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-A I administration model exists; candidate does not invent boxes/upload route.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "23",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-A IV transition concerns2016 only, not extension for current job.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "24",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-B audit request requires gathered transfer indicators, precise nature/country/entity and relevant sums; candidate preserves audit scope.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "25",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-B response at least one month and reasoned extension total<=three months is correctly distinguished.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "26",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-B insufficient response is followed by formal notice with missing answers, sanctions and one-month completion period.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "27",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-C I absent response or missing/partial documentation allows affected bases assessed from available evidence.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "28",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-C II absent precise elements permits normally operated similar-enterprise comparison; no automatic chosen mark-up supplied.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-transfer-pricing",
+      "row": "29",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57-E actual APA mechanism exists; source six-month silence/five-exercise effect are deliberately outside current method and explicitly held.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "01",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI44 Mali profits subject to duly ratified double-tax conventions; no current treaty entitlement supplied.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "02",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF61 source/use without fixed establishment is expressly subject to440; candidate does not equate domestic terms to treaty PE.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "03",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI94 without permanent professional installation is subject to applicable double-tax convention; scope not solely foreign bank account.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "04",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI94(b) rights/equipment/knowhow and services provided OR used in Mali are correctly separated.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "05",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI94(c) includes public contracts whatever object; candidate does not silently narrow to services.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "06",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI95 applies to individuals/companies of any form and visiting artists under specified conditions.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "07",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF440 no-NIF service branch has its own payer/service and wage-collection/sanction rules; not collapsed into441.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "08",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI96 service gross receipts reduced50% before rate, with separate performance prior tax reduction; ordinary figure home maintained.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "09",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI96 performances/concerts deduct admission duties/taxes first; case excludes this branch.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "10",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI96 works/contracts/supplies use90% expense deduction, not interchangeable service base.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "11",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI97 rate30% applies to96 base; case repeats figure-home inputs only for execution.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "12",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI98 says source income withholding independent from turnover-tax withholding116; candidate correctly keeps VAT separate.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "13",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI196 territory/use rules include immovable/event exceptions; VAT figure home used for details.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "14",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI196 requires proof that location outside Mali applies or deems it Mali; no blanket foreign exemption.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "15",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI197 accredited Mali representative first, customer payment fallback; candidate does not call all foreign purchases one reverse charge.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "16",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI80 applies to authorised Mali activity without headquarters and caps head-office share20% general expenses; case denominator expressly stipulated.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "17",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI80 defines secretariat, headquarters personnel and other parent costs for subsidiaries/establishments.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "18",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI49 actual/evidenced costs: cap cannot create a deduction; examples use supported amount and avoid double count.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "19",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "CGI51(2) foreign charges real/non-abnormal/non-excessive; related-party evidence remains separate.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "20",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF616 disguising realisation/transfer cannot bind administration, which restores true character; no universal PE definition inferred.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "21",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF616 enumerates offshore contract components used Mali; candidate retains contract context and substance.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "22",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF616 distinguishes group member without stable fiscal establishment and member established with Mali NIF; NIF not treated as residence proof.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "23",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF57 requires global-profit declaration plus Mali activity declaration for Mali/other-state operations; no claim global income necessarily taxed.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "24",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF61 non-headquartered enterprise annexes consolidated balance sheet and detailed general expenses; current form held.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "25",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF441 source withholding previous month remits in first15 following month or next working day; not borrowed for no-NIF branch.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "26",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF442 unwithheld/insufficient amount attracts equal fine additional to tax; no unexplained netting.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "27",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF443 non-payment wording measures double sums withheld but undeclared; precise odd wording retained rather than expanded.",
+      "all_exact_quotes_observed": true
+    },
+    {
+      "job": "ml-cross-border-tax",
+      "row": "28",
+      "verdict": "supported_with_stated_source_and_currentness_limits",
+      "finding": null,
+      "review": "LPF444 refers turnover-tax interest mechanism and450; interaction/current cumulative sanctions explicitly held, no invented percentage.",
+      "all_exact_quotes_observed": true
+    }
+  ]
+}

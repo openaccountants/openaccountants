@@ -1,10 +1,10 @@
 ---
 name: ma-formation
-description: Use this skill whenever asked about registering or forming a business in Morocco as a self-employed person — choosing and obtaining a legal status, the identifiers every business needs, and the tax regime picked at registration. Trigger on phrases like "register auto-entrepreneur Morocco", "créer auto-entrepreneur", "comment s'inscrire auto-entrepreneur Maroc", "ICE Maroc", "obtenir un IF", "Registre de Commerce Maroc", "start business Morocco", "créer une SARL Maroc", "patente / taxe professionnelle", "كيفاش نسجل مقاول ذاتي", "تسجيل شركة المغرب". Covers RNAE auto-entrepreneur registration (ae.gov.ma / Poste Maroc), obtaining the ICE, the IF (Identifiant Fiscal) from the DGI, the RC (Registre de Commerce), the taxe professionnelle (ex-patente) and its new-business exemption, regulated professions, choosing the regime (auto-entrepreneur vs CPU vs RNR/RNS), VAT registration, and forming a SARL / SARL-AU via the CRI / OMPIC, with timing and cost. Reply in the user's language (English, French, or Moroccan Arabic / Darija) and keep the native terms. Cross-reference ma-auto-entrepreneur, ma-cpu, morocco-professional-income-tax, and morocco-vat for the downstream tax detail.
-version: 1.0
+description: Use this skill whenever asked about registering or forming a business in Morocco for tax year 2026, as a self-employed person or a company. Choosing a legal status, the identifiers every business needs (ICE, IF, RC, taxe professionnelle), the tax regime picked at registration, the declaration of existence, registration duties on capital, and VAT status at the start. Trigger on phrases like "register auto-entrepreneur Morocco", "créer auto-entrepreneur", "comment s'inscrire auto-entrepreneur Maroc", "ICE Maroc", "obtenir un IF", "Registre de Commerce Maroc", "start business Morocco", "créer une SARL Maroc", "patente / taxe professionnelle", "كيفاش نسجل مقاول ذاتي", "تسجيل شركة المغرب". Reply in the user's language (English, French, or Moroccan Arabic / Darija) and keep the native terms. Cross-reference ma-auto-entrepreneur, ma-cpu, morocco-professional-income-tax, ma-social-contributions and morocco-vat for the tax detail.
+version: 1.1
 jurisdiction: MA
-tax_year: 2025
-last_updated: 2026-10-31
+tax_year: 2026
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,204 +14,181 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# MA Formation
+# Morocco business formation and registration, tax year 2026
 
-## Morocco — Business Formation & Registration for the Self-Employed
+## Who this applies to
 
-This skill walks a self-employed person through **starting and registering** a business in Morocco: which legal status to adopt (**auto-entrepreneur**, a sole trader under **CPU / RNR / RNS**, or a one-person company **SARL-AU**), and which identifiers and tax registrations follow. The four identifiers that recur across every Moroccan business are:
+An individual starting an activity in Morocco, or founders forming a company or other entity. This skill covers the choice of status and the registrations. Ongoing tax goes to `ma-auto-entrepreneur`, `ma-cpu`, `morocco-professional-income-tax`, `morocco-vat` and `ma-social-contributions`.
 
-- **ICE** — *Identifiant Commun de l'Entreprise* — a 15-digit universal business ID used by all administrations (DGI, CNSS, OMPIC, customs).
-- **IF** — *Identifiant Fiscal* — the tax identifier issued by the **DGI**.
-- **RC** — *Registre de Commerce* — commercial-register number (commerçants only).
-- **TP** — *taxe professionnelle*, the local business tax formerly called the **patente**.
+Authorities: the DGI (tax.gov.ma), OMPIC (ompic.ma), the regional CRI, the CNSS (cnss.ma), the RNAE (rn.ae.gov.ma, through banks partnered with Poste Maroc), and the Direct Entreprise platform (directentreprise.ma). Currency: MAD (dirham).
 
-This skill replies in the user's language. Moroccan users mix English, French, and Darija — keep the native terms (auto-entrepreneur, ICE, IF, RC, patente, CRI, OMPIC, DGI, CNSS) and explain them in the chosen language. It is a **formation / registration** skill; for ongoing tax computation route to `ma-auto-entrepreneur`, `ma-cpu`, `morocco-professional-income-tax`, `morocco-vat`, and `ma-social-contributions`.
+Forms available ([CRI Casablanca-Settat, read 2026-11-01](https://casainvest.ma/index.php/fr/d%C3%A9marches-de-cr%C3%A9ation)):
 
-## 1. Quick Reference
+| Form | Key points |
+|---|---|
+| Entreprise individuelle | Run in the person's own name; no minimum funds; unlimited liability; income tax (IR) |
+| Auto-entrepreneur | Simplified individual business; person resident in Morocco; no commercial register entry; filed through Poste Maroc partner banks |
+| SNC | No minimum capital; all partners are merchants, with unlimited joint liability; IR by right, irrevocable option for company tax (IS) |
+| Société en commandite simple | Managing partners liable without limit; sleeping partners liable up to their contribution |
+| SARL (including one partner) | Corporate tax; legal personality once on the commercial register; liability limited to contributions; auditor required only from MAD 50 million turnover; not open to financial companies |
+| SA | Minimum capital MAD 300,000 (MAD 3 million for a public offering); at least 5 shareholders; corporate tax |
+| SAS / SASU | Law 19.20; one person can form it; organisation set by the articles |
+| Société en commandite par actions | Managing partners unlimited, others up to their contributions |
+| Société en participation | Not registered; no legal personality; at least two people |
+| Succursale | Branch of a parent; no legal personality; company tax |
+| GIE | Two or more persons, with or without capital; on the commercial register |
 
-**Quick Reference table**
+Do not pick the status or regime for the user. Lay out the routes and let them choose. If turnover is near a ceiling, treat the ceiling as breached and set out the consequences (regime exit, VAT). A company's IS is computed in `morocco-corporate-income-tax` when that skill is on the repo; otherwise refer to a Moroccan expert-comptable. This skill's output is not a filed registration.
 
-| Field | Value |
-| --- | --- |
-| Country | Morocco (MA) |
-| Topic | Business formation & registration for the self-employed |
-| Currency | **MAD** (dirham marocain, DH) |
-| Authority — tax | **Direction Générale des Impôts (DGI)** — tax.gov.ma |
-| Authority — companies / IP | **OMPIC** (ompic.ma) via the **CRI** (regional one-stop window) |
-| Authority — auto-entrepreneur | **RNAE** — Registre National de l'Auto-Entrepreneur, via Poste Maroc / Al Barid Bank — `rn.ae.gov.ma` (a.k.a. ae.gov.ma) |
-| Authority — social | **CNSS** (cnss.ma) |
-| ICE | 15 digits; auto-attributed by **OMPIC** (companies) or **DGI** (individuals); recoverable at `ice.gov.ma` *(verify)* |
-| RNAE registration cost | **Free** (no fee) *(verify)* |
-| RNAE AE-number issuance | ~**24–72 h** after the dossier is filed at Poste Maroc / Al Barid Bank *(verify)* |
-| AE turnover ceiling — commercial / industrial / artisanal | **MAD 500,000 / year** *(verify)* |
-| AE turnover ceiling — services | **MAD 200,000 / year** *(verify)* |
-| Taxe professionnelle — new-business exemption | **5 years** from start of activity, automatic *(verify)* |
-| Taxe professionnelle — rate band | ~**10%–30%** of rental value of premises/assets, after the 5-year window *(verify)* |
-| VAT (TVA) franchise / threshold — commercial-industrial-artisanal | **MAD 500,000** turnover *(verify CGI Art. 91)* |
-| VAT (TVA) franchise / threshold — services | **MAD 200,000** turnover *(verify)* |
-| VAT status of companies (SARL/SA) | **Subject to VAT from creation** regardless of turnover *(verify)* |
-| SARL / SARL-AU minimum capital | **No legal minimum** since Loi 24-10 (often MAD 10,000–50,000 in practice) *(verify)* |
-| SARL capital blocking | ≤ MAD 100,000 → no blocking; > MAD 100,000 → deposit ≥ 1/4 in a blocked account *(verify)* |
-| SARL formation cost | ~**MAD 5,000–15,000** excl. capital (notary/legal fees vary) *(verify)* |
-| SARL formation timing (CRI guichet unique) | ~**10–15 working days** *(verify)* |
-| Primary legislation | Loi 114-13 (AE); Loi 15-95 Code de Commerce (RC); Loi 47-06 / 07-20 (local taxes, TP); Loi 5-96 & 24-10 (SARL); CGI; Loi de Finances 2026 |
-| Contributor | Open Accountants Community |
-| Quality tier | **Research-verified — pending sign-off by a Moroccan accountant (expert-comptable)** |
-| Version | 1.0 |
-| Last research update | May 2026 |
+## Rates, bands and thresholds
 
-### Conservative defaults
+Every row: tax year 2026, read 2026-11-01. Rows marked unverified carry a figure from the earlier version that could not be opened at an official page.
 
-When data is missing or ambiguous, apply the **conservative default** and flag it for the reviewer:
+| Item | Figure | Conditions | Source |
+|---|---|---|---|
+| Auto-entrepreneur ceiling, commerce, industry, crafts | MAD 500,000 a year collected | Option; social security membership; excluded trades out | [CGI Art. 42 ter-II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Auto-entrepreneur ceiling, services | MAD 200,000 a year collected | Same. Mixed activities: each within its own ceiling, or total within the main activity's (Art. 43-5°) | same |
+| Auto-entrepreneur IR | 0.5% commerce, industry, crafts; 1% services | On turnover collected | [CGI Art. 73-III](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Auto-entrepreneur, one client | Above MAD 80,000 of services from one client, the excess is withheld by the client at 30% | Annual, per client | [CGI Art. 42 bis, 73-II-G-8°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Auto-entrepreneur exit | Over the ceiling two consecutive years: real net result from 1 January after, unless RNS or CPU is opted; AE closed for good | | [CGI Art. 43-4°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| CPU ceiling, commerce, industry, crafts | MAD 2,000,000 a year | AMO membership required. Corrects the MAD 500,000 of the earlier version | [CGI Art. 41-II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| CPU ceiling, services | MAD 500,000 a year | Same. Corrects the MAD 200,000 of the earlier version | same |
+| CPU tax | 10% of turnover x trade coefficient, plus droit complémentaire | Coefficients in `ma-cpu` | [CGI Art. 40-I, 73-II-B-6°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| RNS ceiling, listed commercial activities | MAD 2,000,000 excluding VAT | Other bands in `morocco-professional-income-tax` | [CGI Art. 39](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| VAT exemption, small makers and providers | Annual turnover up to MAD 500,000 | Natural persons only; once taxable, three consecutive years at or under the figure to leave. Corrects the MAD 200,000 services figure | [CGI Art. 91-II-3°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| VAT, traders | Wholesalers always; other traders from MAD 2,000,000 of prior-year taxable turnover | | [CGI Art. 89-I-2°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Capital duty, cash, shareholder current-account debt, profits or reserves | Exempt | Constitution and increase of companies and GIEs, pure and simple contributions | [CGI Art. 129-IV-23°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Capital duty, in-kind contribution valued by a contributions auditor | Exempt | Constitution only; liabilities attached stay under transfer duty | same |
+| Capital duty, other pure and simple new contributions up to MAD 500,000 | MAD 1,000 fixed | Subject to Art. 129-IV-23° | [CGI Art. 135-I-1°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Capital duty, other new contributions above that | 0.5%, minimum MAD 1,000 | Subject to Art. 129-IV-23°; liabilities at transfer rates | [CGI Art. 133-I-H, 133-II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Minimum tax relief, company | 36 months from start of operations, ending at most 60 months after constitution | Not concession companies | [CGI Art. 144-I-C-1°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Minimum tax relief, IR taxpayer | First 3 financial years from start | Not on resuming the same activity after cession | [CGI Art. 144-I-C-2°](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Cash payment, deduction limit | Charges paid other than by the listed traceable means are deductible only up to MAD 5,000 a day and MAD 50,000 a month per supplier | | [CGI Art. 11-II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| ICE | 15 digits (9 entity, 4 establishment, 2 control) | unverified: ice.gov.ma refused the read | unverified |
+| Taxe professionnelle exemption | 5 years from start | unverified: Law 47-06 not opened | unverified |
+| Taxe professionnelle rates | 10% to 30% of rental value | unverified: Law 47-06 not opened | unverified |
+| SARL minimum capital | None since Law 24-10 | unverified: law not opened | unverified |
+| SARL capital blocking | Above MAD 100,000, at least a quarter blocked | unverified: law not opened | unverified |
+| Name certificate fee | About MAD 230 | unverified: ompic.ma did not open | unverified |
+| SARL cost and time | About MAD 5,000 to 15,000; 10 to 15 working days | unverified: varies by region and adviser | unverified |
+| RNAE fee and time | Free; 24 to 72 hours | unverified: ae.gov.ma did not open | unverified |
 
-- **Activity type unknown** → ask whether the activity is **commercial** (commerçant → needs **RC**) or a **prestation de services / profession libérale** (often no RC, but still needs **IF + ICE + TP**).
-- **Profession possibly regulated** → assume it **needs prior authorisation / ordre professionnel** and is **excluded** from auto-entrepreneur until proven otherwise.
-- **Regime not chosen** → do **not** auto-select; lay out auto-entrepreneur vs CPU vs RNR/RNS and route the tax detail to the dedicated skill.
-- **Near a ceiling** (AE/CPU/VAT) → assume the ceiling **is or will be breached** and warn about the consequences (exit, VAT registration).
-- **Any rate, threshold, fee, or deadline** → present as *indicative* and append **"verify against the Loi de Finances 2026 and the DGI / OMPIC"**.
+## The base
 
-## 2. Registering as an Auto-Entrepreneur (statut de l'auto-entrepreneur)
+**Identifiers.**
+- ICE: the common business identifier, on invoices and used across administrations. A return carries a sales statement by client ICE ([CGI Art. 20-I](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1)).
+- IF: the tax identifier from the DGI, needed for IR or IS, VAT and invoicing.
+- RC: the commercial register, for merchants. An auto-entrepreneur is exempt ([CRI](https://casainvest.ma/index.php/fr/d%C3%A9marches-de-cr%C3%A9ation)). Ask whether the activity is commercial; if it is pure service or liberal, the RC depends on the activity.
+- TP: taxe professionnelle, the local tax formerly called patente, charged with the taxe de services communaux. CPU taxpayers are exempt from both and still register, per `ma-cpu`.
 
-The **auto-entrepreneur (AE)** status (Loi 114-13) is the lightest path for an individual freelancer or micro-trader. Registration is through the **RNAE** (Registre National de l'Auto-Entrepreneur), operated by **Poste Maroc / Al Barid Bank** on the portal **`rn.ae.gov.ma`** (commonly written **ae.gov.ma**).
+**Excluded from auto-entrepreneur** ([Decree under CGI Art. 42 ter-III, CGI annex](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1)): architects, insurers, lawyers, money changers, surgeons, dentists, statutory auditors, goods commission agents, accountants, tobacconists, publishers, expert-comptables, driving-school operators, cinema operators, clinics, medical laboratories, private schools, surveyors, hotel keepers, bailiffs, printers, booksellers, developers, aircraft lessors, trading agents, property dealers, jewellery retailers and wholesalers, export and import merchants, quantity surveyors, doctors, notaries, event and reception providers, pharmacists, opticians, radiologists, study-office holders, customs agents, topographers and vets. Read the list; never infer it. Activity lists 1 and 2 of Decree 2-15-303 decide commerce against services.
 
-**Who can use it.** A physical person whose annual turnover stays under **MAD 500,000** (commercial/industrial/artisanal) or **MAD 200,000** (services), and whose activity is **not on the excluded list** of regulated/liberal professions *(verify list)*.
+**Regulated activity.** If the trade may need a licence or a professional order (health, legal, accounting, engineering, transport, food handling), treat it as needing one until shown otherwise. The status cannot be finalised before that licence.
 
-**Steps.**
+**The routes.**
 
-1. **Create an account** on `rn.ae.gov.ma` (CIN/national-ID based).
-2. **Fill the online form** — identity, activity (with its code), and the commune/address. Takes ~15–30 minutes.
-3. **Upload / prepare documents** — typically CIN, a photo, and proof of address *(verify the current checklist on the portal)*.
-4. **File the dossier physically** at a **Poste Maroc / Al Barid Bank** branch (or sometimes a CRI) to validate it.
-5. **Receive the AE registration number** (carte d'auto-entrepreneur) — usually within **24–72 hours** *(verify)*. **Registration is free** *(verify)*.
-6. **Automatic CNSS affiliation** — since 2021, RNAE registration triggers affiliation to the CNSS non-salarié (AMO) scheme. See `ma-social-contributions`.
+| Route | Who | Tax | Skill |
+|---|---|---|---|
+| Auto-entrepreneur | Individual within ceilings, trade not excluded | 0.5% or 1% of collected turnover, final | `ma-auto-entrepreneur` |
+| CPU | Individual within ceilings, AMO member, trade not excluded (Art. 41-III) | 10% of turnover x coefficient, plus droit complémentaire | `ma-cpu` |
+| RNS | Mid-size, by option | Simplified net profit, scale | `morocco-professional-income-tax` |
+| RNR | Default and above ceilings | Net profit, scale | `morocco-professional-income-tax` |
+| SARL or other company | Limited liability or scale | IS, VAT rules below | company tax skill |
 
-**What you get.** An AE number that doubles as your business identity; you obtain an **ICE** and an **IF** in the process (the AE is in the DGI system). You generally do **not** need a full **RC** registration as an auto-entrepreneur *(verify for commercial activities)*.
+If expenses are light and the trade is eligible, compare auto-entrepreneur and CPU first (example 2). If expenses are heavy or the trade is excluded, compare RNR or RNS.
 
-**Tax under AE.** Liberatory IR on **collected** turnover — **0.5%** (commercial/industrial/artisanal) or **1%** (services). Full detail and the single-client anti-disguised-salary rule live in **`ma-auto-entrepreneur`**.
+**VAT at the start.** The Art. 91-II-3° exemption covers natural persons only. A company making goods or supplying services is therefore not within it and charges VAT from its first taxable operation. A company that only resells follows the Art. 89-I-2° trader test. Rates and returns: `morocco-vat`; new taxpayers file quarterly in the current year ([CGI Art. 108-II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1)).
 
-> Route all AE tax computation, ceiling-breach handling, and the 80,000-MAD single-client withholding to **`ma-auto-entrepreneur`** — this skill only covers the *registration*.
+## Deadlines and filing
 
-- **AE liberatory IR rate — commercial/industrial/artisanal** — 0.5% percent of collected turnover  _(ma-auto-entrepreneur)_
-- **AE liberatory IR rate — services** — 1% percent of collected turnover  _(ma-auto-entrepreneur)_
+**Auto-entrepreneur** ([CRI](https://casainvest.ma/index.php/fr/d%C3%A9marches-de-cr%C3%A9ation)):
+1. Check the activity is eligible.
+2. Pre-register at rn.ae.gov.ma.
+3. Build the dossier.
+4. File it at a counter of a Poste Maroc partner bank. The AE option is made with this declaration of existence ([CGI Art. 44-II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1)).
+5. Track the dossier online.
+6. Receive the auto-entrepreneur card.
 
-## 3. ICE / IF / RC / Taxe Professionnelle
+CNSS affiliation follows (see `ma-social-contributions`; the automatic link from RNAE is unverified).
 
-These are the core identifiers and the first local tax. For a **company**, the CRI one-stop window produces them together; for an **individual**, they come from the DGI (and the RC tribunal where the activity is commercial).
+**Company.** Direct Entreprise (directentreprise.ma) is the official route for creation formalities, filing of deeds and certificates ([CRI](https://casainvest.ma/index.php/fr/d%C3%A9marches-de-cr%C3%A9ation)). Sequence from the earlier version, order unverified at OMPIC: name certificate (certificat négatif) from OMPIC, articles, capital deposit, RC, IF, TP and CNSS, legal publications. Individual enterprises are exempt from newspaper publication ([CRI](https://casainvest.ma/index.php/fr/d%C3%A9marches-de-cr%C3%A9ation)).
 
-### 3.1 ICE — Identifiant Commun de l'Entreprise
+| Filing | Deadline | Source |
+|---|---|---|
+| Declaration of existence, company | 30 days from constitution, to the local tax office, on the DGI form, with RC, CNSS and TP numbers | [CGI Art. 148-I, II](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Declaration of existence, non-resident | 30 days from installation | same |
+| Declaration of existence, individual | 30 days from start of activity | same |
+| Registration of the deed | 30 days from its date | [CGI Art. 127, 128-I](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Option for RNS at start | Before 1 May of the year after start | [CGI Art. 44-I](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Option for CPU at start | Within the Art. 82 quater-I periods | same |
+| Change of seat or fiscal domicile | 30 days | [CGI Art. 149](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| First IS return | 3 months after year end | [CGI Art. 20-I](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 
-- **ICE** — A **15-digit** universal ID (9 entity digits + 4 establishment digits + 2 control digits) used by **all** administrations. Mandatory on invoices. - **New company** → ICE is **attributed by OMPIC** when you request the *certificat négatif* (name reservation). - **New individual / sole trader** → **DGI** attributes the ICE and prints it on the **bulletin IF / TP**. - **Existing business** without an ICE → recover/generate it at **`ice.gov.ma`** using your IF, RC, or CNSS number; a PDF certificate is produced *(verify)*.
+After submission keep the receipt or registered-post proof; it is the evidence of the date.
 
-### 3.2 IF — Identifiant Fiscal
+## Penalties and interest
 
-- **IF** — The tax identifier issued by the **DGI** (Direction Générale des Impôts). Obtained at registration with the DGI tax office of the activity's location, or automatically through the **CRI** for a company. Required for IR/IS, VAT, and to invoice.
+| Default | Penalty | Source |
+|---|---|---|
+| Declaration of existence late, missing or inaccurate | MAD 1,000 fine, by assessment roll | [CGI Art. 188](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Late returns, deeds | Surcharges of 5%, 15% and 20% by case | [CGI Art. 184](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
+| Late payment | 10% penalty (5% if paid within 30 days; 20% for VAT or tax withheld at source and not paid over), plus 5% for the first month and 0.50% each further month or part | [CGI Art. 208-I](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) |
 
-### 3.3 RC — Registre de Commerce
+## Cross-border points
 
-- **RC** — The **commercial register**, kept by the **Tribunal de Commerce**, governed by the **Code de Commerce (Loi 15-95)**. - **Required for commerçants** (commercial/industrial activities). Many pure **prestataires de services / professions libérales** and **auto-entrepreneurs** do **not** register in the RC *(verify per activity)*. - Two forms: **RC analytique** (the local court's number) and the **RC central** kept by **OMPIC**.  _(Loi 15-95)_
+A non-resident company setting up files the declaration of existence within 30 days of installation (Art. 148-I). A branch has no legal personality and pays IS ([CRI](https://casainvest.ma/index.php/fr/d%C3%A9marches-de-cr%C3%A9ation)). Only a person resident in Morocco can be an auto-entrepreneur ([CRI](https://casainvest.ma/index.php/fr/d%C3%A9marches-de-cr%C3%A9ation)). Treaties and withholding belong to the cross-border skill.
 
-### 3.4 Taxe professionnelle (ex-patente)
+## Two worked examples that recompute
 
-- **Taxe professionnelle (TP)** — The **taxe professionnelle (TP)** — historically the **patente** — is a **local tax** on those carrying on a profession/business (Loi 47-06 on local taxation). - **Base:** the **rental value** of premises and business fixed assets; **rate band ~10%–30%** *(verify)*. - **New-business exemption:** **5 years** of full exemption from the start of activity, applied **automatically** *(verify)* — a key reason new businesses owe little local tax at the outset. - Paid alongside the **taxe de services communaux (TSC)**. - Note: **CPU** taxpayers and (effectively) **auto-entrepreneurs** are **exempt / outside** the TP under their own regimes — see Section 4 and `ma-cpu`.  _(Loi 47-06)_
+**Example 1: capital duty on two SARL formations.** Founders contribute MAD 100,000 in cash: exempt under Art. 129-IV-23°. Another contributes MAD 800,000 of equipment with no contributions auditor: 0.5% applies, MAD 4,000, above the MAD 1,000 minimum. A MAD 300,000 such contribution pays the MAD 1,000 fixed duty.
 
-## 4. Choosing the Regime at Registration + VAT
+```oa-check
+name: Capital duty on in-kind contribution without an auditor
+inputs:
+  contribution: 800000
+steps:
+  - duty: max(contribution * 0.005, 1000)
+expected:
+  duty: 4000.00
+```
 
-The status you register under determines which **income-tax regime** applies. Lay out the options; do **not** auto-pick.
+**Example 2: decision, auto-entrepreneur or CPU.** A graphic designer collects MAD 120,000 of services, no client above MAD 80,000. Auto-entrepreneur: 1%, MAD 1,200. CPU under "Autres prestations" at 20%: 120,000 x 20% x 10% = MAD 2,400, plus the droit complémentaire. On IR, auto-entrepreneur wins by MAD 1,200, if design is confirmed eligible and social costs are compared in `ma-social-contributions`. Income tax scale regimes need the expenses figure.
 
-### 4.1 The four routes
+```oa-check
+name: Auto-entrepreneur against CPU, services MAD 120,000
+inputs:
+  turnover: 120000
+steps:
+  - ae: turnover * 0.01
+  - cpu: turnover * 0.20 * 0.10
+  - saving: cpu - ae
+expected:
+  ae: 1200.00
+  cpu: 2400.00
+  saving: 1200.00
+```
 
-**The four routes table**
+A trader expecting MAD 1,200,000 is over the auto-entrepreneur ceiling but within the CPU ceiling if the trade is not excluded; a lawyer is excluded from auto-entrepreneur and goes to `morocco-professional-income-tax`.
 
-| Route | Who | Tax base | Note |
-| --- | --- | --- | --- |
-| **Auto-entrepreneur** | Individual under the AE ceilings, non-excluded activity | **0.5% / 1%** liberatory on **collected** turnover | Lightest; CNSS bundled. → `ma-auto-entrepreneur` |
-| **CPU** (Contribution Professionnelle Unique) | Individual, turnover ≤ **MAD 500,000** (comm./ind./artisanal) or ≤ **200,000** (services), not on excluded list | **10%** on **turnover × profession coefficient** + droit complémentaire | Replaces forfait; **exempt from TP & TSC**. → `ma-cpu` |
-| **RNR** (Résultat Net Réel) | Higher turnover or by election | **Net profit**, progressive IR scale | Full accounting. → `morocco-professional-income-tax` |
-| **RNS** (Résultat Net Simplifié) | Mid-range turnover | Simplified net profit, progressive IR | → `morocco-professional-income-tax` |
+## Ask the client first
 
-**Decision pointers.**
-- Very small, expense-light freelancing → **auto-entrepreneur** is usually simplest.
-- Small trade/craft with a known profession coefficient → compare **CPU**.
-- Significant expenses, or activity excluded from AE/CPU, or above ceilings → **RNR / RNS**.
-- A **regulated / liberal profession** (doctor, lawyer, architect, notaire, accountant, etc.) is generally **excluded from AE and CPU** and needs its **ordre professionnel / authorisation** — route to `morocco-professional-income-tax`.
+- Individual or company, and resident in Morocco?
+- The exact activity: commercial, industrial, craft or service, and does it need a licence or order?
+- Expected turnover, and any one client above MAD 80,000?
+- Expected expenses, and staff?
+- Will liability limits or outside investors matter?
+- Capital: cash or in kind, and how much?
 
-### 4.2 Regulated professions & authorisations
+## Sources
 
-- **Regulated professions default** — Before registering, confirm the activity does not require **prior authorisation** or membership of an **ordre / syndicat professionnel** (e.g. health, legal, accounting, engineering, transport, food handling). If it might, **default to "needs authorisation"** and flag it — the legal status cannot be finalised until the profession's own licence is obtained.
+| Source | Used for | Read |
+|---|---|---|
+| [Code Général des Impôts 2026, DGI](https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1) | All CGI rows; articles named on each row; read in full-text search, the articles cited and neighbours | 2026-11-01 |
+| [CRI Casablanca-Settat, Démarches de création](https://casainvest.ma/index.php/fr/d%C3%A9marches-de-cr%C3%A9ation) | Legal forms, AE steps, Direct Entreprise | 2026-11-01 |
 
-### 4.3 VAT (TVA) registration
+Pages tried and not opened on 2026-11-01: ae.gov.ma, rn.ae.gov.ma, ompic.ma, directentreprise.ma, cnss.ma (no connection, also in a browser tab); ice.gov.ma (refused).
 
-- **VAT registration rules** — - **Auto-entrepreneurs / CPU** small operators are typically **outside VAT** under the franchise thresholds — **MAD 500,000** (comm./ind./artisanal) / **MAD 200,000** (services) of turnover *(verify CGI)*. - **Above the threshold**, or for **companies (SARL/SA) from creation**, VAT applies — standard rate **20%**, with reduced rates (e.g. 10%, 0% on exports) *(verify the 2026 rate convergence)*. - VAT registration is part of the DGI/IF process; declarations are **monthly** or **quarterly** via **SIMPL-TVA**. Detail lives in **`morocco-vat`**.  _(verify CGI)_
-
-## 5. SARL / SARL-AU Overview (CRI / OMPIC)
-
-A self-employed person who wants **limited liability** or to scale beyond the individual regimes usually forms a **SARL** (multi-partner) or **SARL-AU** / **SARL-associé unique** (one-person LLC, the Moroccan EURL). Companies are formed through the **CRI guichet unique** (regional one-stop window) with **OMPIC**.
-
-**Typical steps (CRI single window).**
-
-1. **Certificat négatif** — reserve the company name with **OMPIC** (small fee, ~MAD 230) *(verify)*. The **ICE** is attributed here.
-2. **Draft the statuts** (articles of association); notarised or under private signature.
-3. **Deposit capital** — **no legal minimum** since Loi 24-10; if capital **> MAD 100,000**, block **≥ 1/4** in a bank account in the company-in-formation's name *(verify)*.
-4. **Register at the CRI** — RC registration (Tribunal de Commerce), IF (DGI), TP, and CNSS affiliation are processed together.
-5. **Legal publications** — Bulletin Officiel + a journal d'annonces légales *(fees vary)*.
-
-**Indicative cost & timing.** ~**MAD 5,000–15,000** excluding capital; ~**10–15 working days** via the CRI one-stop window *(verify — varies by region and adviser)*.
-
-**Tax of a SARL/SARL-AU.** A company is generally subject to **corporate income tax (IS)**, not the individual IR regimes, and is **VAT-registered from creation**. That shifts the engagement out of the self-employed individual scope — flag that company taxation (IS) is **outside this skill set** and needs an **expert-comptable**.
-
-## 6. Worked Examples
-
-### Example 1 — Freelance graphic designer, Casablanca
-
-- **Facts:** Individual, services, expects ~MAD 120,000/year, no employees, no shop.
-- **Status:** Eligible for **auto-entrepreneur** (under the 200,000 services ceiling; design is not a regulated profession — *verify*).
-- **Steps:** Register on **`rn.ae.gov.ma`** → file dossier at Poste Maroc → AE number in ~24–72 h (free). Obtains **ICE + IF** via the RNAE/DGI; CNSS affiliation automatic.
-- **Tax:** **1%** liberatory IR on collected turnover (→ `ma-auto-entrepreneur`).
-- **VAT:** **Below MAD 200,000** → outside VAT *(verify)*.
-- **TP:** Effectively outside the patente under the AE regime.
-- **Flag:** Confirm the activity is not on the AE excluded list; verify all figures against the Loi de Finances 2026.
-
-### Example 2 — Two partners opening an e-commerce trading company
-
-- **Facts:** Two associés, expected turnover ~MAD 1,500,000, want limited liability.
-- **Status:** **SARL** via the **CRI guichet unique**.
-- **Steps:** Certificat négatif at OMPIC (ICE attributed) → statuts → no minimum capital but plan working capital → RC + IF + TP + CNSS at the CRI → legal publications. ~10–15 working days; ~MAD 5,000–15,000 excl. capital *(verify)*.
-- **Tax:** Corporate **IS** + **VAT from creation** (turnover well above 500,000) → **outside this skill** — route to an expert-comptable and `morocco-vat`.
-- **TP:** **5-year new-business exemption** applies automatically, then the ~10%–30% band on rental value *(verify)*.
-- **Flag:** Company taxation is out of scope here; confirm all costs/timing with the CRI and an expert-comptable.
-
-## 7. Reference + Test Suite
-
-### Sources
-
-- **Loi n° 114-13** — statut de l'auto-entrepreneur; **RNAE** portal `rn.ae.gov.ma` (Poste Maroc / Al Barid Bank).
-- **OMPIC** (ompic.ma) — *certificat négatif*, ICE attribution for companies, RC central. **`ice.gov.ma`** — ICE recovery platform.
-- **Code de Commerce (Loi 15-95)** — Registre de Commerce.
-- **Loi 47-06** (and **Loi 07-20**) — fiscalité locale: **taxe professionnelle** (ex-patente), **TSC**, and the **5-year** new-business TP exemption.
-- **Loi 5-96** (sociétés) and **Loi 24-10** — SARL / SARL-AU, removal of minimum capital; **CRI** guichet unique.
-- **CGI** — IR regimes (AE / CPU / RNR / RNS), **VAT thresholds & rates**.
-- **Loi de Finances 2026** and **Note Circulaire DGI** — current ceilings, rates, thresholds, and the VAT-rate convergence.
-- Cross-references: **PwC Worldwide Tax Summaries (Morocco)**, **Baker Tilly Morocco** (CPU), **mcinet.gov.ma** (self-employment).
-- Authorities: **DGI** (tax.gov.ma / SIMPL), **OMPIC**, **CRI**, **CNSS**.
-
-### Short test suite
-
-1. **Q:** Web freelancer, services, CA ~MAD 90,000, wants the simplest setup. **A:** **Auto-entrepreneur** via `rn.ae.gov.ma` (free, ~24–72 h); ICE+IF obtained; outside VAT; → `ma-auto-entrepreneur`.
-2. **Q:** "What is the ICE and how many digits?" **A:** *Identifiant Commun de l'Entreprise*, **15 digits**, universal across administrations; from **OMPIC** (companies) or **DGI** (individuals); recover at `ice.gov.ma`.
-3. **Q:** Pure services provider — do they need an RC? **A:** **Often no** — RC is for **commerçants**; services/professions libérales usually skip RC but still need **IF + ICE + TP** *(verify per activity)*.
-4. **Q:** "How long is the patente exemption for a new business?" **A:** **5 years** from start of activity, automatic (taxe professionnelle) *(verify)*.
-5. **Q:** Lawyer wants to register as auto-entrepreneur. **A:** **Excluded** (regulated/liberal profession needs the ordre); route to `morocco-professional-income-tax`.
-6. **Q:** SARL minimum capital? **A:** **No legal minimum** since Loi 24-10; blocking only if capital **> MAD 100,000** *(verify)*.
-7. **Q:** Activity commercial vs services unknown. **A:** **Ask** — it changes RC requirement, the AE/CPU ceiling (500k vs 200k), and the VAT threshold.
-8. **Q:** Trader expects CA MAD 1.2M. **A:** Over AE/CPU ceilings → **RNR/RNS** (or SARL); **VAT applies** — route to `morocco-professional-income-tax` + `morocco-vat`.
-
-## PROHIBITIONS
-
-- **Prohibitions list** — - **Do NOT** auto-select a **legal status or tax regime** — present auto-entrepreneur vs CPU vs RNR/RNS vs SARL and let the user choose; the choice drives RC, VAT, and TP outcomes. - **Do NOT** confirm a **regulated / liberal profession** as eligible for auto-entrepreneur or CPU — **default to excluded / needs authorisation** and route to `morocco-professional-income-tax`. - **Do NOT** state any **fee, ceiling, threshold, rate, or processing time** as final — they change with the Loi de Finances and by region; append **"verify against the Loi de Finances 2026 and the DGI / OMPIC / CRI"**. - **Do NOT** assume a **services** provider needs an **RC** — RC is for **commerçants**; verify per activity. - **Do NOT** claim a business is **outside VAT** without checking the activity-type threshold (500,000 vs 200,000) — and remember **companies are VAT-liable from creation**. - **Do NOT** invent the **AE/CPU excluded-professions list** or a **profession coefficient** — read them from the official RNAE list / CGI annex. - **Do NOT** compute **corporate tax (IS)** or full company tax under this skill — flag it as out of scope and route to an expert-comptable. - **Do NOT** provide **AE / CPU / VAT / income-tax computation** here — route to `ma-auto-entrepreneur`, `ma-cpu`, `morocco-vat`, `morocco-professional-income-tax`, and `ma-social-contributions`. - **Do NOT** treat this skill's output as a **filed registration** — final registration and any tax position require **Moroccan expert-comptable** sign-off.
-
-## Disclaimer
-
-This skill is **research-verified** against public sources — the **DGI** (tax.gov.ma), **OMPIC** (ompic.ma) and `ice.gov.ma`, the **RNAE** portal (`rn.ae.gov.ma` / Poste Maroc), **CRI** guidance, **PwC Worldwide Tax Summaries** (Morocco), and reporting on the **Loi de Finances 2025/2026** — as of **May 2026**. It is **YMYL** content and is **pending sign-off by a Moroccan accountant (expert-comptable)**. Registration procedures, identifiers, fees, ceilings, rates, exemptions, and deadlines change with each Loi de Finances and by region and must be **re-verified** before use. Nothing here is a substitute for advice from a licensed Moroccan expert-comptable, the DGI, OMPIC, or your CRI. Part of **openaccountants.com** — open-source tax skills for the self-employed.
+Not yet confirmed: Law 114-13 text and RNAE documents, fee and timing; automatic CNSS affiliation; Law 47-06 and 07-20 on TP and TSC, including the AE position; Laws 5-96 and 24-10 on SARL capital and blocking; ICE structure and who attributes it (OMPIC for companies, DGI for individuals, recovery at ice.gov.ma); two RC forms (analytique, central) under Law 15-95; name certificate fee; SARL cost, time and step order; which service trades need no RC.
 
 <!-- openaccountants-cta-block -->
 

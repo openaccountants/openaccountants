@@ -1,0 +1,541 @@
+[
+  {
+    "id": "T01",
+    "quote": "les personnes physiques ou morales",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T01",
+    "quote": "d’immeubles bâtis ou non bâtis",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T01",
+    "quote": "de droits réels immobiliers",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T01",
+    "quote": "de titres de sociétés à prépondérance immobilière",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T01",
+    "quote": "de titres miniers.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T02",
+    "quote": "tous droits d’exploration ou d’exploitation",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T02",
+    "quote": "dans le domaine des mines ou des hydrocarbures.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T03",
+    "quote": "la vente",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T03",
+    "quote": "l’échange",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T03",
+    "quote": "l’apport en société",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T03",
+    "quote": "la distribution de dividendes en nature",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T03",
+    "quote": "l’expropriation pour cause d’utilité publique",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T03",
+    "quote": "les donations.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T04",
+    "quote": "à la date de la cession de ces titres ou a été, à la clôture du dernier exercice précédant cette cession",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T04",
+    "quote": "plus de 50% de sa valeur d’origine",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T04",
+    "quote": "des droits afférents à un contrat de crédit-bail immobilier",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T04",
+    "quote": "des titres d’autres sociétés à prépondérance immobilière.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T05",
+    "quote": "ne sont pas pris en considération",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T05",
+    "quote": "affectés par l’entreprise à sa propre exploitation industrielle, commerciale ou agricole",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T05",
+    "quote": "l’exercice d’une profession non commerciale.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T06",
+    "quote": "des immeubles de l’État",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T06",
+    "quote": "des établissements publics à caractère administratif",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T06",
+    "quote": "ayant pour objet l’amélioration de l’habitat",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T06",
+    "quote": "organismes publics ou privés dont les acquisitions sont exonérées de droit d’enregistrement",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T07",
+    "quote": "les plus-values de cession des immeubles inscrits à l’actif du bilan d’une entreprise",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T07",
+    "quote": "soumise à l’impôt sur les bénéfices d’affaires ou à l’impôt sur les sociétés.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T08",
+    "quote": "la somme ou contre-valeur moyennant laquelle",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T08",
+    "quote": "l’estimation pour laquelle il fait l’objet d’un apport en société pur et simple ou à titre onéreux",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T09",
+    "quote": "son prix ou sa valeur d’acquisition telle qu’elle est définie à l’article 112",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T10",
+    "quote": "Si cette acquisition a eu lieu à titre gratuit",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T10",
+    "quote": "la valeur vénale des immeubles ou droits au jour de la mutation à titre gratuit.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T11",
+    "quote": "le cumul des loyers échus à la date de cession.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T12",
+    "quote": "Pour les titres miniers reçus directement de l’État",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T12",
+    "quote": "aux droits qui ont été payés contre l’octroi du titre",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T13",
+    "quote": "aux mutations à titre gratuit entre vifs",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T13",
+    "quote": "la valeur vénale du bien à la date de la mutation.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T14",
+    "quote": "la somme ou contre-valeur déboursée par le cédant",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T14",
+    "quote": "des ouvrages qu’il comporte à l’époque de l’acquisition",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T14",
+    "quote": "les actes de toute nature ayant date certaine.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T15",
+    "quote": "À défaut de documents relatifs à l’immeuble lui-même ou en cas de majoration du prix d’achat",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T15",
+    "quote": "la valeur d’acquisition de référence.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T16",
+    "quote": "la valeur actualisée de la somme",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T16",
+    "quote": "fixées et révisées périodiquement par arrêté du ministre chargé des finances.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T17",
+    "quote": "un créancier saisissant demeuré, faute d’enchérisseurs, adjudicataire",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T17",
+    "quote": "celle qui figure au commandement qui a été signifié à son débiteur préalablement à la saisie",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T17",
+    "quote": "pourvu que cette somme soit supérieure au prix d’adjudication.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T18",
+    "quote": "une déclaration détaillée du prix de cession",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T18",
+    "quote": "en distinguant la valeur de la parcelle de celle de la construction.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T19",
+    "quote": "La plus-value sur la construction est fixée à 10% de son prix de cession.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T20",
+    "quote": "tant sur la date et le mode d’acquisition que sur la valeur des immeubles à l’époque de leur acquisition",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T21",
+    "quote": "la date à laquelle les actes, pièces, jugements ou documents relatifs à l’immeuble ont été enregistrés",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T21",
+    "quote": "autant que possible, par la relation elle-même de l’enregistrement.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T22",
+    "quote": "Le taux de la taxe est fixé à 5%.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T23",
+    "quote": "Le montant de la taxe ne peut en aucun cas être inférieur à 1% du prix de cession.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T24",
+    "quote": "Une part du produit de la taxe",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T24",
+    "quote": "selon des modalités précisées par arrêté du ministre chargé des finances.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T25",
+    "quote": "au moment de l’accomplissement des formalités d’enregistrement des actes d’aliénation ou des déclarations de mutation.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T26",
+    "quote": "Elle est due, nonobstant toutes conventions contraires, par le cédant.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T27",
+    "quote": "la taxe est retenue et acquittée par le cessionnaire sur la somme versée au cédant.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T28",
+    "quote": "Le cessionnaire de titres miniers est redevable",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T28",
+    "quote": "due par le cédant non domicilié en République du Bénin ou qui n’y dispose pas de représentant.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T29",
+    "quote": "Aucune mutation foncière ne peut se faire",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T29",
+    "quote": "justifié du paiement de la taxe lorsque celle-ci est exigible.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T30",
+    "quote": "Les officiers publics et ministériels",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T30",
+    "quote": "tenus responsables du paiement de la taxe",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T30",
+    "quote": "les actes qu’ils reçoivent ou les documents qu’ils annexent ou dont ils font usage.",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T31",
+    "quote": "Le défaut de production dans les délais prescrits",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T31",
+    "quote": "indépendamment des pénalités prévues par les articles précédents",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T32",
+    "quote": "entre en vigueur à compter du 1er janvier 2026",
+    "whitespace_normalized_extracted_anchor_match": false,
+    "original_scan_transcription_checked": true,
+    "note": "Visually read original scanned PDF14; superscript er represented inline as 1er. OCR has recognition errors; image is controlling."
+  },
+  {
+    "id": "T33",
+    "quote": "Sous réserve des dispositions des conventions internationales",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T33",
+    "quote": "indépendamment de la résidence du cédant ou du cessionnaire",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T34",
+    "quote": "sauf précision contraire contenue dans le texte des mesures fiscales énoncées",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T34",
+    "quote": "clos au 31 décembre 2025",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T35",
+    "quote": "sur le domaine privé",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T35",
+    "quote": "et des collectivités territoriales",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T36",
+    "quote": "Sont abrogées, toutes dispositions antérieures contraires",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  },
+  {
+    "id": "T36",
+    "quote": "sera exécutée comme Loi",
+    "whitespace_normalized_extracted_anchor_match": true,
+    "original_scan_transcription_checked": false,
+    "note": ""
+  }
+]

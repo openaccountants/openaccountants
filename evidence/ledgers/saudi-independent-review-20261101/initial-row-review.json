@@ -1,0 +1,802 @@
+[
+  {
+    "id": "Z01",
+    "rule": "Current Zakat regulation identity/amendment",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "IMPLEMENTING REGULATIONS FOR ZAKAT COLLECTION 1445 H - (2024) 1 Issued by His Excellency the Minister of Finance’s Decision No. (1007) and dated 19/08/1445 H And amended by His Excellency the Minister of Finance’s Decision No. (1248) and dated 11/10/1446 H 2 Chapter (1): General Provisions Section (1): Definitions Article (1): Definitions 1. Unless the context otherwise requires, the following words and phrases -wherever stat- ed herein- shall have the meaning ascribed thereto below: “Authority”/ “ZATCA”: The Zakat, Tax and Customs Authority “Regulations”: The Implementing Regulations for Zakat Collection “Kingdom”: The territory of the Kingdom of Saudi Arabia, including the lands, territorial waters, the sea bottom, underground natural resources, and the airspace, divided territories with neighboring states over which it has sovereignty rights, and marine and semi-marine areas outside its territorial waters over which the Kingdom has sovereignty rights, pursuant to its laws and the international laws. “Internal Committee”: ZATCA’s internal committee which handles the settlement of disputes arising between ZATCA and Zakat payers regarding ZATCA decisions. “Departments for Dispute Resolution”: Departments of the Committee for Resolution o",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z02",
+    "rule": "Saudi definition includes GCC nationals only when accorded similar treatment",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "a license issued by the relevant entities, or which requires a license by the relevant entity prior to its performance, as per the relevant laws and regulations applicable in the Kingdom; whether commercial, vocational, service, industrial, or other activity. 3 “Person”: Any natural or legal person. “Saudi”: A person holding the Saudi nationality and nationals of a member state of the Gulf Cooperation Council of the Arab States of the Gulf (GCC) who are accorded similar treatment as Saudi nationals. “Resident”: A natural or legal person meeting residency requirements stated in Article (4) of the Regulations during the Zakat Year. “Zakat Payer”: A person who is subject to the provisions of the Regulations and practices an activity, or who issued a license to conduct said activity. “Zakat Payer Holding Statuary Accounts”: Any Zakat Payer having who maintains or is obligated to issue accounting books and records financial statements reflecting the reality of its activity, and not obliged to issue financial statements, in accordance within to the relevant laws and regulations applicable in the Kingdom. “Zakat Payer Assessed On Arbitrary Basis/ ZP-AA”: Any Zakat Payer not maintaining or not obligated to issue financial statements reflecting the reality of its activity, in accordance with the relevant laws and regulations applicable in the Kingdom. “Zakat Payer of Insurance Activities”: Any Zakat Payer in the form of insurance and reinsurance companies, licensed by the entity authorized to issue insurance activity licenses within the Kingdom, during the Zakat Year. “Zakat Payer of Fi",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z03",
+    "rule": "Ordinary Saudi activity and Saudi shareholder scope",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "aim to illustrate the provisions of Zakat collection in the Kingdom, and clarify the rights and obligations of the Zakat Payer and ZATCA in this regard, in application of the Islamic ritual and to raise the levels of adherence thereto. Section (3): Zakat Payers: Sub-section (1): Zakat payers subject to the Regulations Article (3): Zakat Payers subject to the Regulations The following persons are subject to the provisions of these Regulations: 1. Resident Saudi person, who practices an Activity under a license within the Kingdom. 2. Sole Corporation owned by a Saudi person and established in the Kingdom, in accordance with the relevant laws and regulations applicable in the Kingdom. 3. Company owned by a Saudi person and established in the Kingdom, in accordance with the relevant laws and regulations applicable in the Kingdom; the share held by a Saudi partner/ shareholder in resident companies, and the shares held by Saudi government agencies and authorities as well as their equivalents. 4. Finance Funds licensed by the Capital Market Authority. 5. State-owned Resident Companies and Public Investment Fund-owned Resident companies as per the rules stipulated in the relevant Royal Orders and Ministerial Resolutions. 6. Shares held by non-Saudi shareholders in Resident companies listed in the Saudi Stock Exchange - except for the shares held by non-Saudi founders, as per the company’s articles of association or other relevant statutory documents. 8 Article (4): Controls of Residency: 1. A natural person is deemed a Resident of the Kingdom during the Zakat Year if any of the following conditions are met: a) Suc",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z04",
+    "rule": "Individual residence conditions",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "esident companies listed in the Saudi Stock Exchange - except for the shares held by non-Saudi founders, as per the company’s articles of association or other relevant statutory documents. 8 Article (4): Controls of Residency: 1. A natural person is deemed a Resident of the Kingdom during the Zakat Year if any of the following conditions are met: a) Such person has a permanent residence in the Kingdom and is physically present in the Kingdom for no less than 30 days, whether consecutive or aggregated, during the Zakat Year. b) Such person does not have a permanent residence in the Kingdom and is physically present in the Kingdom for no less than 183 days, whether consecutive or aggregated, during the Zakat Year. For the purpose of this Paragraph, presence in the Kingdom for a part of the day shall be deemed as presence for a full day. However, a person may not be considered physically present for a full day in the Kingdom during transit in the Kingdom for a day or a part thereof between two destinations outside the Kingdom. 2. A legal person is deemed a Resident of the Kingdom during the Zakat Year if any of the following conditions are met: a) Said Person is incorporated under the applicable laws of the Kingdom. b) Its principal headquarters is in the Kingdom 9 Article (5): Controls Of The Principal Headquarters 1. A location shall be deemed a principal headquarters in the Kingdom if at least two of the following conditions are met: a) The usual meeting of the Board of Directors is regularly held in the Kingdom, in any means; and during which ",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z05",
+    "rule": "Legal-person residence",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " part of the day shall be deemed as presence for a full day. However, a person may not be considered physically present for a full day in the Kingdom during transit in the Kingdom for a day or a part thereof between two destinations outside the Kingdom. 2. A legal person is deemed a Resident of the Kingdom during the Zakat Year if any of the following conditions are met: a) Said Person is incorporated under the applicable laws of the Kingdom. b) Its principal headquarters is in the Kingdom 9 Article (5): Controls Of The Principal Headquarters 1. A location shall be deemed a principal headquarters in the Kingdom if at least two of the following conditions are met: a) The usual meeting of the Board of Directors is regularly held in the Kingdom, in any means; and during which the main policies and decisions related to the management of the establishment and the facilitation of its business are made. b) The senior executive decisions related to the management of the establishment’s functions are made inside the Kingdom, including: Decision made by the CEO and its deputies. c) The establishment’s businesses that generate the majority of its revenues are inside the Kingdom. 2. If the provisions of Paragraph (1) of this Article apply to a legal person, said person shall pay Zakat for its Activity and the Activity of its branches inside and outside the Kingdom, and shall be subject to all Zakat provisions stipulated in the Regulations. Additionally, said legal person shall disclose its annual Returns regarding the income realized due to the processes thereof and the processes",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z06",
+    "rule": "Ownership changes/year-end allocation",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "s activity. 2. If the ownership of the sole proprietorship is transferred to other owner, by sale or assignment or equivalent, at the end of the year, the Zakat is calculated for the entire year regardless of the duration of each owner's ownership. 3. The Zakat Payer compliance with the provisions of the Regulations shall not be affected in the event of its transformation from a legal form to another. 4. The Zakat Payer shall be held accountable according to its owners and the property shares at the end of the Zakat year regardless of the percentage variation during the year. 15 Article (14): Merger between Zakat Payers 1. If the merger between two Zakat Payers or more results in the creation of a new entity, the new Zakat Payer shall be Subjected to pay Zakat at the end of its Zakat year provided in the Memorandum or Article of Association or any statutory documents accepted by ZATCA. The Zakat calculation of the new Zakat payer shall be made according to the following cases: a) If the Zakat Payer is held accountable according to one Hijri year, he shall be held accountable for a full Hijri year if his fiscal year is short and shall be held accountable for two Hijri years if his fiscal year is long, Article (15)paragraph(4) shall not apply in this case. b) If the Zakat Payer is held accountable according to a Gregorian year, he shall be held accountable for a full Gregorian year if his financial year is short and shall be held accountable for two Gregorian years if his fiscal year is long, Article (15) paragraph (4) shall not be applied to this case. 2. If the merger results in the ownership of ano",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z07",
+    "rule": "Hijri full-year rate 2.5%",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "s financial year is short and shall be held accountable for two Gregorian years if his fiscal year is long, Article (15) paragraph (4) shall not be applied to this case. 2. If the merger results in the ownership of another Zakat Payer, the owning Zakat Payer shall be held accountable according to his fiscal year, the Zakat Year of the Zakat Payer shall commence from the date of the last Return filed to ZATCA. Article (15): Percentage of Zakat 1. Zakat shall be levied at (2.5%) of Zakat Base for Hijri year. 2. If the Zakat Payer’s fiscal year differs from the Hijri year, Zakat shall be calculated on the actual number of days by dividing the percentage of Zakat over the number of days of Hijri year multiplied by the actual number of days of Zakat Payer’s Zakat Year as per the following equation: Percentage of Zakat = (2.5% ÷ number of days of the Hijri year) x number of days of the fiscal year of the Zakat Payer 3. The fiscal period less than (354) days as of the activity commencement shall be subject to Zakat collection. 4. The fiscal period less than (354) days as of the activity conclusion shall not be subject to the Zakat collection. 16 Article (16): Accounts and Consolidated Zakat Returns 1. A company owned by the same partners, the holding company and the fully owned subsidiaries both inside and outside the Kingdom, whether directly or indirectly owned, may submit consolidated accounts and a consolidated Zakat Return. 2. For purposes of this article, the direct ownership means that subsidiaries that are fully owned by holding company. Indirect ownership means that subsidiaries are",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z08",
+    "rule": "Other fiscal period actual-day scaling",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "commence from the date of the last Return filed to ZATCA. Article (15): Percentage of Zakat 1. Zakat shall be levied at (2.5%) of Zakat Base for Hijri year. 2. If the Zakat Payer’s fiscal year differs from the Hijri year, Zakat shall be calculated on the actual number of days by dividing the percentage of Zakat over the number of days of Hijri year multiplied by the actual number of days of Zakat Payer’s Zakat Year as per the following equation: Percentage of Zakat = (2.5% ÷ number of days of the Hijri year) x number of days of the fiscal year of the Zakat Payer 3. The fiscal period less than (354) days as of the activity commencement shall be subject to Zakat collection. 4. The fiscal period less than (354) days as of the activity conclusion shall not be subject to the Zakat collection. 16 Article (16): Accounts and Consolidated Zakat Returns 1. A company owned by the same partners, the holding company and the fully owned subsidiaries both inside and outside the Kingdom, whether directly or indirectly owned, may submit consolidated accounts and a consolidated Zakat Return. 2. For purposes of this article, the direct ownership means that subsidiaries that are fully owned by holding company. Indirect ownership means that subsidiaries are owned by holding company at a certain percentage with the remaining percentages fully owned by any other subsidiaries fully owned by the holding company. 3. Except for subsidiaries that are fully owned by the holding company, Zakat shall be calculated for the holding company and its subsidiaries thereof in a separate manner whatever the ownership ratio of the holding com",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z09",
+    "rule": "Short periods/mergers require exceptions",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "be calculated on the actual number of days by dividing the percentage of Zakat over the number of days of Hijri year multiplied by the actual number of days of Zakat Payer’s Zakat Year as per the following equation: Percentage of Zakat = (2.5% ÷ number of days of the Hijri year) x number of days of the fiscal year of the Zakat Payer 3. The fiscal period less than (354) days as of the activity commencement shall be subject to Zakat collection. 4. The fiscal period less than (354) days as of the activity conclusion shall not be subject to the Zakat collection. 16 Article (16): Accounts and Consolidated Zakat Returns 1. A company owned by the same partners, the holding company and the fully owned subsidiaries both inside and outside the Kingdom, whether directly or indirectly owned, may submit consolidated accounts and a consolidated Zakat Return. 2. For purposes of this article, the direct ownership means that subsidiaries that are fully owned by holding company. Indirect ownership means that subsidiaries are owned by holding company at a certain percentage with the remaining percentages fully owned by any other subsidiaries fully owned by the holding company. 3. Except for subsidiaries that are fully owned by the holding company, Zakat shall be calculated for the holding company and its subsidiaries thereof in a separate manner whatever the ownership ratio of the holding company is, taking into account the treatment of debts and investments between them according to section (2 and 4) of Chapter (5) of the Regulations. The holding company and each of its subsidiaries shall submit its separate Zakat Returns, in acc",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z10",
+    "rule": "Separate additions/deductions and minimum/maximum base tests",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "pose of trading. Article (20): Assets and Liabilities Equality For purposes of the Zakat collection, non-current liabilities shall be equal to non-current assets; regardless which one is preceding, current liabilities shall be equal to current assets; regardless which one is preceding. Moreover, the property rights shall complete the shortage of sources of financing of current or non-current assets. 18 Article (21): Calculation of the Zakat Base Pursuant to the provisions of Articles (27) & (28) of the Regulations, the Zakat Payer holding legal accounts shall calculate the Zakat base by adding the additionality contained in Article (23) including the deduction items contained in Article (26), in accordance with the provisions of the Regulations. Article (22): Application of Transaction Pricing Instructions The instructions for transfer pricing issued by ZATCA's Board of Directors Decision No. (19-1-6) dated 25/5/1440 H (January 31,2019), and any amendments thereto, shall apply to the current transactions with the entities associated with the Zakat Payer. Section (3): Added Items to the Zakat Base Article (23): Added Items Pursuant to the provisions hereof, Added Items to the Zakat Base of the Zakat Payer holding legal accounts shall include the following: 1. Property Rights and Equivalents. 2. Property rights obligations contained in Article (29) within the limits of the assets deducted. 3. The difference between the amended net profit/loss and net profit/book loss - after Zakat and tax - whether its related result is positive or negative, in accordance with the treatment o",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z11",
+    "rule": "Minimum base is alternative subject to art27 conditions",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " sub-section (1) of section (7) of chapter (2) herein. 8. The value of investment in deeds and bonds, which, for its issuer, are treated as capital for Zakat purposes, as stated in Article (55) herein. 9. Statutory deposits and their equivalents in accordance with Article (56) herein. 10. Deferred tax assets. 21 Section (5): Provisions on the Zakat Base Sub-section (1): Minimum and Maximum Rates for Zakat Base Article (27): Minimum Zakat Base 1. The minimum for the base set out herein shall be an alternate base unaffected by the added items of Article (23) and the deductible items of Article (26). Further, it shall be according to the results of the Zakat payer’s activity, including of the result of invested companies. 2. To be in consistent with the provisions of the following sections (2,3,4 and 6) of Chapter (2) of these Regulations; If the Zakat Base of the Zakat Payer holding legal accounts decreases below adjusted net profit; the Zakat base for the Zakat Payer shall be as follows : a) If the total undeducted assets with the difference between amended net profit and net book profit is less than the amended net profit of the Zakat payer, the Zakat base for the Zakat Payer shall be the total undeducted assets, along with the difference between the amended net profit and the net book profit. b) If the amended net profit of the Zakat Payer is less than the total undeducted assets plus the difference between the amended net profit and the net book profit, the Zakat base for the Zakat Payer shall be the amended net profit. 3. If the result of the Zakat Payer’s Base is negative, and the Zaka",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z12",
+    "rule": "General Zakat filing/payment within120 days; holiday roll",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " to the Zakat Payer's national address, or any other means approved or accepted by ZATCA. 57 Chapter (5): Zakat Collection Procedures Section (1) Zakat Return: Article (102): Submission of Zakat Return 1. Accounting-books Zakat Payer shall submit its Zakat Return and pay Zakat dues based on it to ZATCA within a period not exceeding one hundred and twenty (120) days as of the end of the Zakat year. If such period concludes on an official holiday, the deadline extends to the first working day following the holiday. 2. Accounting-books Zakat Payer shall submit the Zakat Return according to the Zakat Return form of the Accounting-books Zakat Payer in ZATCA’s E-system, attaching to it the documents related to the data contained in the Zakat Return according to the Zakat Return form for the account of the Accounting-books Zakat Payer in ZATCA’s E-system. 3. Paying Zakat dues shall be through a bank transfer via the “Sadad” system or any other means accepted to ZATCA. Article (103): Amending Zakat Return 1. If an Accounting-books Zakat Payer finds an error in its Zakat Return, it is entitled to request amending it from ZATCA. 2. Upon approval of the amendment request by ZATCA, the Accounting-books Zakat Payer shall revise the Zakat Return within a period not exceeding thirty (30) days, provided that failure to comply with such deadline the Zakat Payer shall reapply to ZATCA for the amendment. 58 Article (104): Controls for Amending Zakat Returns 1. The submission of an amendment request for the Zakat Return shall be conducted through ZATCA's E-system. 2. Acceptable documents and justifications shal",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z13",
+    "rule": "Zakat approved electronic form and attachments; SADAD or accepted means",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "d concludes on an official holiday, the deadline extends to the first working day following the holiday. 2. Accounting-books Zakat Payer shall submit the Zakat Return according to the Zakat Return form of the Accounting-books Zakat Payer in ZATCA’s E-system, attaching to it the documents related to the data contained in the Zakat Return according to the Zakat Return form for the account of the Accounting-books Zakat Payer in ZATCA’s E-system. 3. Paying Zakat dues shall be through a bank transfer via the “Sadad” system or any other means accepted to ZATCA. Article (103): Amending Zakat Return 1. If an Accounting-books Zakat Payer finds an error in its Zakat Return, it is entitled to request amending it from ZATCA. 2. Upon approval of the amendment request by ZATCA, the Accounting-books Zakat Payer shall revise the Zakat Return within a period not exceeding thirty (30) days, provided that failure to comply with such deadline the Zakat Payer shall reapply to ZATCA for the amendment. 58 Article (104): Controls for Amending Zakat Returns 1. The submission of an amendment request for the Zakat Return shall be conducted through ZATCA's E-system. 2. Acceptable documents and justifications shall be attached. 3. The amended Return shall be submitted within the time period specified in Article (103). 4. If the Zakat Payer's request for amendment is due to an under Return, the following conditions shall be added to the above controls: a) The amendment request for the Zakat Return shall be submitted before issuing the Zakat assessment. b) The expiration of limitation period, as per Article (102) of the Regula",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z14",
+    "rule": "Assessment 5/10/no-limit categories; clerical errors10 years",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " a period not exceeding twenty (20) working days from the date of ZATCA's request. If the Accounting-books Zakat Payer fails to provide the information within this period, ZATCA may either extend the period or proceed with issuing the Zakat assessment, assuming Zakat dues based on the controls set in Article (115). Article (106): Zakat Return Correction 1. ZATCA may issue the Zakat assessment, reassessment, or error correction within a period of five (5) years from the deadline for submitting the Zakat Return in the following cases: a) Zakat assessment, reassessment, or error correction concerning the application of any provisions of the regulations or relevant laws. b) Assessment, reassessment if ZATCA discovers that the Zakat Payer's Return is incorrect based on information available to it during the statutory assessment period or based on information obtainable by it during such period. 2. ZATCA may issue the Zakat assessment, reassessment, or error correction within a period of ten (10) years from the deadline for submitting the Zakat Return in the following cases: a) Submitting the Zakat Return after the statutory period referred to Article (102) (1) of the Regulations. b) Submitting the Return incomplete or non-compliant with forms approved by ZATCA. c) Failure to pay Zakat dues according to the Zakat Return within the statutory period. d) Failure to submit the Return and calculate Zakat according to the Zakat assumption specified in Articles (114 and 115) of the Regulations. 3. ZATCA may issue Zakat reassessment without being limited to a certain period in the following cases: a) ",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "Z15",
+    "rule": "Zakat support in Kingdom at least10 years",
+    "status": "operative",
+    "source_sha256": "ae0c746bf369c067745d5962b6f1783265d4e84b92125115b076249e1601fd83",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "Measures ensuring the confidentiality of disclosed information, preventing its loss, damage, or illegal circulation shall be taken. 4. Prior to commencing the disclosure, ensuring the recipient shall be fully informed about the confidentiality and privacy requirements associated with such information. Article (110): Keeping of Zakat Return Documents 1. The Zakat Payer shall keep the documents on which it depended when submitting the Zakat Return within the Kingdom for a period of no less than (10) ten years. 2. ZATCA may request any data or clarifications, at any time, for the purpose of verifying the accuracy of any data or clarifications relied upon in calculating Zakat dues, provided that the period shall not exceed (10) ten years from the date of submitting the Zakat Return. 3. ZATCA may obtain any data or documents held by any third party, without referring to the accounting-books Zakat Payer; including direct access to data and documents in general in a way that does not constitute a violation of relevant laws or regulatory procedures. Article (111): Zakat Return Proof Of Accuracy 1. The accounting-books Zakat Payer shall be responsible for proving the accuracy of the Zakat Return's contents. 2. If the accounting-books Zakat Payer is unable to prove the accuracy of what is claimed in the Zakat Return, ZATCA may refuse to accept the item whose accuracy has not proven by the Zakat Payer, or Zakat assessment with the assumption of Zakat dues according to the controls mentioned in Article (115). 63 Section (2): Zakat Assessment And Assumption Article (112): Issuing the Zakat assessmen",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "I01",
+    "rule": "General income-tax scope: non-Saudi shares/activity and non-resident Saudi PE",
+    "status": "operative",
+    "source_sha256": "023cc267c573f9defb05098106b2295f21ba7189d3293862c7f8208f6f88f71d",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "lso imposed on non-Saudi resident natural persons who practice an activity in the Kingdom, non-resident persons who practice an activity in the Kingdom through a Permanent Establishment or who have taxable income from sources within the Kingdom without having a Permanent Establishment, and every person engaged in the field of natural gas investment and transportation, and the production of oil and hydrocarbons. 2. Who is subject to income tax? • Shares of non-Saudi partners in resident capital companies. • Shares of persons engaged in the production of oil and hydrocarbons, with the exception of shares in resident capital companies listed on the Saudi Stock Exchange. • A non-Saudi resident person who practices a commercial activity in the Kingdom. • A non-resident person who derives income from practicing an activity through a Permanent Establishment in the Kingdom. • A non-resident person who derives income from a source in the Kingdom without having a Permanent Establishment. • A person engaged in the field of natural gas investment. • A person engaged in the field of oil and hydrocarbon production. 3. Exemptions from Income Tax (1) Capital gains realized from the disposal of securities traded on the Stock Exchange in the Kingdom, as well as on a stock exchange outside the Kingdom if those securities are traded on the Stock Exchange in the Kingdom, regardless of whether this disposal was executed through a stock exchange in the Kingdom or outside it, or through any other means, in accordance with the rules outlined in the Implementing Regulations of the Income Tax Law(1). (1) Prov",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "I02",
+    "rule": "General20% income-tax rate",
+    "status": "operative",
+    "source_sha256": "023cc267c573f9defb05098106b2295f21ba7189d3293862c7f8208f6f88f71d",
+    "hash_matches": true,
+    "quote_found": false,
+    "context": "",
+    "review_result": "Visual image income-rates.png independently read: 20% ordinary scopes, specialised oil/hydrocarbon exception; no specialised rate selected."
+  },
+  {
+    "id": "I03",
+    "rule": "Published income-tax portal/Returns/approved form/submit/SADAD sequence",
+    "status": "operative",
+    "source_sha256": "023cc267c573f9defb05098106b2295f21ba7189d3293862c7f8208f6f88f71d",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "ubject to Income Tax 6 6. Income Tax Return Submission Steps According to the Zakat, Tax and Customs Authority (ZATCA), the steps for submitting income tax returns are as follows: Access your Submit the return Pay the due amount Click on the account through the after verifying the through the SADAD “Returns” section Authority’s electronic data and agreeing payment system and fill out the portal at zatca.gov. to the terms and after the invoice is approved form. sa. conditions. issued 7 7. Penalties 7.1 Penalties for Failure to Register for Income Tax within the Statutory Dead- lines A person subject to Income Tax must register with ZATCA before the end of their first fiscal year. ZATCA shall impose a fine for failure to register within the statutory deadline according to the following: Taxpayer Category Fine 1- Natural person SAR 1,000 2- Joint stock capital company SAR 10,000 3- Other entities SAR 5,000 8 7.2 Penalties for Late Filing of Income Tax Returns The penalty for late filing is determined by choosing the higher of the following two cases: 1% of total revenue, capped at a maximum of SAR 20,000. • 5% of the unpaid tax if the delay does not exceed 30 days. • 10% of the unpaid tax if the delay exceeds 30 days. • 20% of the unpaid tax if the delay exceeds 90 days. • 25% of the unpaid tax if the delay exceeds 365 days. 9 7.3 Penalties for Delay and Fraud A taxpayer must pay a delay penalty of 1% of the unpaid tax for every 30 days of delay. This penalty applies to delays in paying taxes required to be withheld, as well as advance payme",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "I04",
+    "rule": "Late income-tax registration category penalties",
+    "status": "operative",
+    "source_sha256": "023cc267c573f9defb05098106b2295f21ba7189d3293862c7f8208f6f88f71d",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "stem and fill out the portal at zatca.gov. to the terms and after the invoice is approved form. sa. conditions. issued 7 7. Penalties 7.1 Penalties for Failure to Register for Income Tax within the Statutory Dead- lines A person subject to Income Tax must register with ZATCA before the end of their first fiscal year. ZATCA shall impose a fine for failure to register within the statutory deadline according to the following: Taxpayer Category Fine 1- Natural person SAR 1,000 2- Joint stock capital company SAR 10,000 3- Other entities SAR 5,000 8 7.2 Penalties for Late Filing of Income Tax Returns The penalty for late filing is determined by choosing the higher of the following two cases: 1% of total revenue, capped at a maximum of SAR 20,000. • 5% of the unpaid tax if the delay does not exceed 30 days. • 10% of the unpaid tax if the delay exceeds 30 days. • 20% of the unpaid tax if the delay exceeds 90 days. • 25% of the unpaid tax if the delay exceeds 365 days. 9 7.3 Penalties for Delay and Fraud A taxpayer must pay a delay penalty of 1% of the unpaid tax for every 30 days of delay. This penalty applies to delays in paying taxes required to be withheld, as well as advance payments. The penalty is calculated from the tax due date until the date of payment. A financial penalty of 25% of the tax difference is imposed if the taxpayer or their Certified Public Accountant provides false information or commits fraud with the intent to evade tax, especially in the following cases: 1. Submitting false books, records, accounts, or documents that do not",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "I05",
+    "rule": "Late income-tax return revenue alternative1%,cap20000 and higher-of rule",
+    "status": "operative",
+    "source_sha256": "023cc267c573f9defb05098106b2295f21ba7189d3293862c7f8208f6f88f71d",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "e Tax must register with ZATCA before the end of their first fiscal year. ZATCA shall impose a fine for failure to register within the statutory deadline according to the following: Taxpayer Category Fine 1- Natural person SAR 1,000 2- Joint stock capital company SAR 10,000 3- Other entities SAR 5,000 8 7.2 Penalties for Late Filing of Income Tax Returns The penalty for late filing is determined by choosing the higher of the following two cases: 1% of total revenue, capped at a maximum of SAR 20,000. • 5% of the unpaid tax if the delay does not exceed 30 days. • 10% of the unpaid tax if the delay exceeds 30 days. • 20% of the unpaid tax if the delay exceeds 90 days. • 25% of the unpaid tax if the delay exceeds 365 days. 9 7.3 Penalties for Delay and Fraud A taxpayer must pay a delay penalty of 1% of the unpaid tax for every 30 days of delay. This penalty applies to delays in paying taxes required to be withheld, as well as advance payments. The penalty is calculated from the tax due date until the date of payment. A financial penalty of 25% of the tax difference is imposed if the taxpayer or their Certified Public Accountant provides false information or commits fraud with the intent to evade tax, especially in the following cases: 1. Submitting false books, records, accounts, or documents that do not reflect the taxpayer's true status. 2. Filing a return claiming no books or records exist while including information that contradicts what their actual books and records show. 3. Submitting forged or artificial invoices/documents, or altering purchase or sales invoices to decrease",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "I06",
+    "rule": "Unpaid-tax alternatives5%<=30d,10%31-90,20%91-365,25%>365",
+    "status": "operative",
+    "source_sha256": "023cc267c573f9defb05098106b2295f21ba7189d3293862c7f8208f6f88f71d",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "st fiscal year. ZATCA shall impose a fine for failure to register within the statutory deadline according to the following: Taxpayer Category Fine 1- Natural person SAR 1,000 2- Joint stock capital company SAR 10,000 3- Other entities SAR 5,000 8 7.2 Penalties for Late Filing of Income Tax Returns The penalty for late filing is determined by choosing the higher of the following two cases: 1% of total revenue, capped at a maximum of SAR 20,000. • 5% of the unpaid tax if the delay does not exceed 30 days. • 10% of the unpaid tax if the delay exceeds 30 days. • 20% of the unpaid tax if the delay exceeds 90 days. • 25% of the unpaid tax if the delay exceeds 365 days. 9 7.3 Penalties for Delay and Fraud A taxpayer must pay a delay penalty of 1% of the unpaid tax for every 30 days of delay. This penalty applies to delays in paying taxes required to be withheld, as well as advance payments. The penalty is calculated from the tax due date until the date of payment. A financial penalty of 25% of the tax difference is imposed if the taxpayer or their Certified Public Accountant provides false information or commits fraud with the intent to evade tax, especially in the following cases: 1. Submitting false books, records, accounts, or documents that do not reflect the taxpayer's true status. 2. Filing a return claiming no books or records exist while including information that contradicts what their actual books and records show. 3. Submitting forged or artificial invoices/documents, or altering purchase or sales invoices to decrease profits or increase losses. 4. Failing to disclose one or mo",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "I07",
+    "rule": "Delay1% every30 days,includes withheld/advance payments",
+    "status": "operative",
+    "source_sha256": "023cc267c573f9defb05098106b2295f21ba7189d3293862c7f8208f6f88f71d",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "s The penalty for late filing is determined by choosing the higher of the following two cases: 1% of total revenue, capped at a maximum of SAR 20,000. • 5% of the unpaid tax if the delay does not exceed 30 days. • 10% of the unpaid tax if the delay exceeds 30 days. • 20% of the unpaid tax if the delay exceeds 90 days. • 25% of the unpaid tax if the delay exceeds 365 days. 9 7.3 Penalties for Delay and Fraud A taxpayer must pay a delay penalty of 1% of the unpaid tax for every 30 days of delay. This penalty applies to delays in paying taxes required to be withheld, as well as advance payments. The penalty is calculated from the tax due date until the date of payment. A financial penalty of 25% of the tax difference is imposed if the taxpayer or their Certified Public Accountant provides false information or commits fraud with the intent to evade tax, especially in the following cases: 1. Submitting false books, records, accounts, or documents that do not reflect the taxpayer's true status. 2. Filing a return claiming no books or records exist while including information that contradicts what their actual books and records show. 3. Submitting forged or artificial invoices/documents, or altering purchase or sales invoices to decrease profits or increase losses. 4. Failing to disclose one or more taxable activities. 5. Destroying or hiding books, records, or documents before ZATCA conducts an audit. 10 Scan this code to view the last version and all published documents Or visit the website zatca.gov.sa ",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "I08",
+    "rule": "Intentional fraud/false-information25% difference",
+    "status": "operative",
+    "source_sha256": "023cc267c573f9defb05098106b2295f21ba7189d3293862c7f8208f6f88f71d",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "enalties for Delay and Fraud A taxpayer must pay a delay penalty of 1% of the unpaid tax for every 30 days of delay. This penalty applies to delays in paying taxes required to be withheld, as well as advance payments. The penalty is calculated from the tax due date until the date of payment. A financial penalty of 25% of the tax difference is imposed if the taxpayer or their Certified Public Accountant provides false information or commits fraud with the intent to evade tax, especially in the following cases: 1. Submitting false books, records, accounts, or documents that do not reflect the taxpayer's true status. 2. Filing a return claiming no books or records exist while including information that contradicts what their actual books and records show. 3. Submitting forged or artificial invoices/documents, or altering purchase or sales invoices to decrease profits or increase losses. 4. Failing to disclose one or more taxable activities. 5. Destroying or hiding books, records, or documents before ZATCA conducts an audit. 10 Scan this code to view the last version and all published documents Or visit the website zatca.gov.sa ",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W01",
+    "rule": "WHT scope/source/PE and natural-person business payment condition",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "y a resident company.” 11 A natural person shall be obligated to withhold tax under the provisions of the Law only in cases where such payments are related to the activity carried out by that person - i.e., the person obligated to withhold - in the Kingdom. The natural person must withhold tax only in cases where payments are made to non-residents in the context of a commercial activity carried out by that person in the Kingdom(22). Accordingly, amounts paid to non-residents by natural persons for personal use are not subject to Tax Withholding provisions. Residency of a Natural Person In accordance with the provisions governing Income Tax(23), a natural person shall be considered a resident in the Kingdom for a Zakat year if any of the following two conditions are met: a. The person has a permanent dwelling in the Kingdom and resides in the Kingdom for a total of no less than 30 days in the Zakat year. b. The person resides in the Kingdom for no less than 183 days in the Zakat year. For the person obligated to withhold tax, it is sufficient that they are a resident, regardless of whether they are subject to tax or not. For example, a natural person subject to Zakat collection shall withhold tax on amounts paid in the context of their commercial activity carried out in the Kingdom to a non-resident(24). Residency of a legal Person A legal person shall be considered a resident in the Kingdom during the Zakat year if any of the following two conditions are met: a. The person is incorporated in accordance with the Companies Law. b. The person’s principal management is located in the Kingdom. With respect to",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W02",
+    "rule": "Management fees20%",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "ions company. b. Amounts paid to non-resident companies for leasing capacity on international cables and the Internet for the use of that capacity in various telecommunications services.(6) c. Amounts paid to non-resident companies for interconnection services, including services provided between service providers to connect their respective networks and/or other forms of access that allow their users to reach certain users or specific services. Management fees refer to amounts paid under administrative service contracts, Management Fees such as hotel management contracts, ship management contracts, and similar arrangements.(7) Person Any natural or legal person.(8) Any person to whom the residency status defined in Article 3 of the Law and the Non-Resident Regulations does not apply.(9) (4). Paragraph 1, Article 5 of the Regulations. (5). Paragraph 5, Article 63 of the Regulations. (6). Circular No. 3256/9 dated 28th Jumada al-Thani 1426H/26th August 2005G. (7). Paragraph 2, Article 63 of the Regulations. (8). Article 1 of the Law. (9). Article 1 of the Law. 6 For the purposes of this Guideline, a resident is a natural or legal person who meets the residency conditions in the Kingdom of Saudi Arabia as specified in Resident Article 3 of the Law, and includes any government administration, ministry, public authority, legal person, or established entity in the Kingdom.(10) Payments received for the use of, or the right to use, intellectual property, including, but not limited to, copyrights, patents, designs, industrial secrets, Royalties t",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W03",
+    "rule": "Royalties15%",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "uideline, a resident is a natural or legal person who meets the residency conditions in the Kingdom of Saudi Arabia as specified in Resident Article 3 of the Law, and includes any government administration, ministry, public authority, legal person, or established entity in the Kingdom.(10) Payments received for the use of, or the right to use, intellectual property, including, but not limited to, copyrights, patents, designs, industrial secrets, Royalties trademarks and trade names, know-how, trade secrets, goodwill, and payments received for information related to industrial, commercial, or scientific expertise, or for granting the right to exploit natural and mineral resources.(11) Taxpayer A taxable person pursuant to the Law.(12) Technical, technological, and scientific services of any kind, including studies Technical and and research in various fields, surveys of a scientific, geological, or industrial Advisory Services nature, advisory services, or consultancy, or engineering services of any kind, including related designs.(13) Any resident person in the Kingdom, whether a taxpayer or non-taxpayer, and Person Obliged to any permanent establishment of a non-resident in the Kingdom, who makes Withhold Tax any payment to a non-resident from a source in the Kingdom, in accordance with the Income Tax Provisions.(14) All terms and expressions not defined in this Guideline shall have the meanings assigned to them in the Income Tax Provisions. (10). Article 1 of the Law. (11). Article 1 of the Law (12). Article 1 of the Law. (13). Par",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W04",
+    "rule": "Land transport within Kingdom and residual other payments15%",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " provisions in accordance with the rates specified for each type of income. Therefore, the relevant type of income must be identified in order to determine the rate at which the tax is withheld. Management fees 20% Royalties 15% Dividends 5% Rent 5% Loan charges (income from debt claims) 5% Insurance/reinsurance 5% Technical and consulting services* 5% Payments for air tickets or air or sea freight 5% International telecommunications services 5% Land transport within the Kingdom 15% Any other payments 15% Management fees Management fees are defined as amounts paid against management service contracts. This includes, for example, hotel management contracts and ship management contracts. For further information, please refer to Paragraph 6 of Section 2.2.2.1 of this Guideline. Land transport within the Kingdom Land transport payments within the Kingdom are any amounts paid against land transport (by car, bus, and the like) within the Kingdom. For further information, please refer to Paragraph 2 of Section 2.2.2.2 and Paragraph 8 of Section 2.2.2.1 of this Guideline. * The following are not subject to Tax Withholding: • Amounts paid for a local telecommunications company’s use of an international telecommunications company’s network to pass, transfer, or connect calls made by a subscriber in the Kingdom when requesting any international connection. • Amounts paid to international telecommunications companies for international roaming services. 28 4. Exemptions and Reductions Dividends in companies operating in the field of natural gas, oil, or hydrocarbon inve",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W05",
+    "rule": "Specified dividend/rent/loan/insurance/technical/freight/telecom5%",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "ncome shall be considered to arise from a source in the Kingdom “if it arises from the sale or licensing for use of industrial or intellectual property in the Kingdom”(37). (35). Subparagraph 3, Subparagraph (a), Article 5 of the Law. (36). Subparagraph 4, Subparagraph (a), Article 5 of the Law. (37). Subparagraph 5, Subparagraph (a), Article 5 of the Law. 20 2.2.2.2 Categories of income sources under Article 5 of the Implementing Regulations 1. Loan charges (income from debt claims) In accordance with the provisions governing income tax: “Loan charges to a non-resident shall be considered derived from an activity sourced in the Kingdom in any of the following cases: a. If the debt is secured by movable or immovable property located in the Kingdom. b. If the borrower is a resident in the Kingdom. c. If the loan is associated with an activity practiced in the Kingdom through a permanent establishment(38).” Any resident and any permanent establishment of a non-resident must withhold tax from the amounts paid to a non-resident for the payment of loan charges or debt claims. In addition, Paragraph 1 of Article 5 of the Implementing Regulations stipulates the determination of what is meant by loan charges. For example, the Article refers to loan charges and/or income from debt claims, but it includes in the definition any amounts realized against the use of money. This includes income realized from lending operations of any kind, whether secured or unsecured, and whether or not they granted the right to participate in the debtor’s profits. It also includes income rea",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W06",
+    "rule": "Telecom network/roaming exclusions",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " and the like) within the Kingdom. For further information, please refer to Paragraph 2 of Section 2.2.2.2 and Paragraph 8 of Section 2.2.2.1 of this Guideline. * The following are not subject to Tax Withholding: • Amounts paid for a local telecommunications company’s use of an international telecommunications company’s network to pass, transfer, or connect calls made by a subscriber in the Kingdom when requesting any international connection. • Amounts paid to international telecommunications companies for international roaming services. 28 4. Exemptions and Reductions Dividends in companies operating in the field of natural gas, oil, or hydrocarbon investment are exempt from Tax Withholding in accordance with the provisions regulating income tax, which state the following: “Dividends in companies operating in the field of natural gas, oil, or hydrocarbon investment are not subject to Tax Withholding.”(44) Please note that estimated profits are not subject to Tax Withholding except in the following cases: a. Evidence exists proving that the taxpayer has paid the estimated profits to a non- resident entity (the head office, the parent company, the owners of the company), or that they were offset or settled with such entities. b. The taxpayer files his tax return on an estimated basis, in which case the profits are subject to Tax Withholding within the limit of the estimated profit percentage stipulated in the Law and its Regulations, or stated in the taxpayer’s return, or agreed upon with the taxpayer prior to filing his return, whichever is greater. c. The emergence of revenues or contracts not declared by the taxpa",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W07",
+    "rule": "Oil/gas investment dividends excluded",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "ents or representatives in the Kingdom. This does not include amounts paid Air or Sea Freight for shipping goods from abroad to ports in the Kingdom.(2) Any distribution from a resident company to a non-resident shareholder, and any profits transferred from a permanent establishment to related parties, taking into account the following: a. Dividend distributions by companies engaged in the investment of natural gas, oil, or hydrocarbon materials are not subject to Tax Withholding. Distributed Profits b. A partial or complete liquidation of the company in excess of paid-up capital is deemed a distribution. c. The fact that the distributing company is subject to Income Tax does not preclude the imposition of Tax Withholding on the amounts distributed from it.(3) (1). Article 1 of the Law. (2). Paragraph 4, Article 63 of the Regulations. (3). Paragraph 6, Article 63 of the Regulations. 5 Any amounts realized in consideration for the use of capital, including income arising from lending activities of any kind, whether secured or unsecured, and whether or not such loans grant the right to participate in the debtor’s profits. This also includes income arising from government and non-government bonds. Loan Returns Excluded from this are loan returns arising from interbank deposits (Interbank), where such deposits remain with the resident borrowing bank for a maximum period of 90 days, provided that an annual statement approved by the Saudi Central Bank (SAMA) is submitted, indicating the names and addresses of the lending banks, the loan period, and the amount of lo",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W08",
+    "rule": "Interbank maximum90 days plus SAMA-certified annual statement condition",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " in consideration for the use of capital, including income arising from lending activities of any kind, whether secured or unsecured, and whether or not such loans grant the right to participate in the debtor’s profits. This also includes income arising from government and non-government bonds. Loan Returns Excluded from this are loan returns arising from interbank deposits (Interbank), where such deposits remain with the resident borrowing bank for a maximum period of 90 days, provided that an annual statement approved by the Saudi Central Bank (SAMA) is submitted, indicating the names and addresses of the lending banks, the loan period, and the amount of loan returns paid.(4) Any amounts paid to a non-resident party for services related to providing international telephone communication services from the Kingdom.(5)Amounts paid in consideration for a local telecommunications company’s use of an international telecommunications company’s network to carry, transmit, or deliver calls made by a subscriber in the Kingdom when requesting any international call, and amounts paid to international telecommunications companies for international roaming services, are not subject to Tax Withholding. This includes, for example: International a. Amounts paid to international organizations owning satellites for the use of Telephone space capacity or international circuits on those satellites for the purpose of Communication providing international communication services to subscribers of the local Services telecommunications company. b. Amounts paid to non-resident co",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W09",
+    "rule": "Air/sea freight category excludes inbound shipment to Kingdom",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " or professional or craft activity, or any other Activity similar activity intended to generate profit, and includes the use of movable and immovable capital.(1) Any payments for the purchase of international departure travel tickets from Payments for the Kingdom, or air or sea freight charges paid to air or sea carriers or to their Airline Tickets or agents or representatives in the Kingdom. This does not include amounts paid Air or Sea Freight for shipping goods from abroad to ports in the Kingdom.(2) Any distribution from a resident company to a non-resident shareholder, and any profits transferred from a permanent establishment to related parties, taking into account the following: a. Dividend distributions by companies engaged in the investment of natural gas, oil, or hydrocarbon materials are not subject to Tax Withholding. Distributed Profits b. A partial or complete liquidation of the company in excess of paid-up capital is deemed a distribution. c. The fact that the distributing company is subject to Income Tax does not preclude the imposition of Tax Withholding on the amounts distributed from it.(3) (1). Article 1 of the Law. (2). Paragraph 4, Article 63 of the Regulations. (3). Paragraph 6, Article 63 of the Regulations. 5 Any amounts realized in consideration for the use of capital, including income arising from lending activities of any kind, whether secured or unsecured, and whether or not such loans grant the right to participate in the debtor’s profits. This also includes income arising from government and non-government bonds. Loan Returns Excluded from this are",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W10",
+    "rule": "No nil monthly statement; required statement/payment first10days",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "hholding rates pursuant to an international agreement to prevent double taxation to which the Kingdom is a party, as set forth in the following Section. (44). Paragraph 6, Article 63 of the Regulations. 29 5. Provisions Monthly withholding statement and tax payment The person obligated to withhold tax must register with the Authority and submit a monthly withholding statement, including any amounts paid for Tax Withholding in the relevant month. If there are no amounts subject to Tax Withholding, the person is not obligated to submit the monthly statement. The person obligated to withhold tax must submit the monthly statement and pay the withheld amount (if any) within the first 10 days of the month following the month of payment to the beneficiary. For example, if a resident pays a royalty to a non-resident on 20th January, the person obligated to withhold tax must submit the withholding statement and pay the withheld tax no later than 10th February, and must also provide the beneficiary with a certificate showing the amount paid to him and the value of the tax withheld from him. In addition to the monthly withholding statement and the payment of withheld tax to the Authority, the person obligated to withhold tax is also committed to submitting an annual statement no later than 120 days from the end of their fiscal year, except for partnerships, which must submit the form within 60 days from the end of their fiscal year. The annual Tax Withholding statement can be considered a mere summary of all monthly withholding statements submitted throughout the year; therefore, the person obligated to withhold tax does not have to pay any amou",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W11",
+    "rule": "Annual WHT statement120 days,partnership60 days",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "holding statement and pay the withheld tax no later than 10th February, and must also provide the beneficiary with a certificate showing the amount paid to him and the value of the tax withheld from him. In addition to the monthly withholding statement and the payment of withheld tax to the Authority, the person obligated to withhold tax is also committed to submitting an annual statement no later than 120 days from the end of their fiscal year, except for partnerships, which must submit the form within 60 days from the end of their fiscal year. The annual Tax Withholding statement can be considered a mere summary of all monthly withholding statements submitted throughout the year; therefore, the person obligated to withhold tax does not have to pay any amounts for Tax Withholding upon submitting the annual withholding statement. It is important to note in this regard that, in contrast to monthly withholding statements, the submission of the annual withholding statement is mandatory even if the value declared in the statement for withheld tax throughout the fiscal year equals zero, provided that withholding cases existed for which he was obligated during the year. 30 Interaction between Tax Withholding and income tax As previously mentioned in Paragraph 1 of this Guideline, the objective of Tax Withholding provisions is to ensure that non-residents who derive income from a source in the Kingdom are properly subject to tax. Accordingly, Tax Withholding is essentially considered a dynamic advance payment of the income tax due on income derived from a source in the Kingdom and earned by a tax",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W12",
+    "rule": "Credits require recipient income in own base; payer-agent liability separate",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "establishments in the Kingdom are not subject to Tax Withholding. This is because these payments are already included in the tax base of the resident person or the permanent establishment. The primary difference between the two taxes is that Tax Withholding is imposed on the gross amount, whereas income tax is calculated on the net profit. However, if tax is withheld from an amount paid to a taxpayer that has been calculated within his tax base, the withheld tax shall be deducted from the tax due from the taxpayer calculated based on his tax base, in accordance with Paragraph G of Article 68 of the Law. Record keeping and maintenance The person obligated to withhold tax must provide the Authority at the end of the tax year with the names, addresses, and registration numbers of the beneficiaries from whose paid amounts tax was withheld during that tax year, to the extent that such information is available to the person obligated to withhold tax. The Authority may request additional information and may compel the person obligated to withhold tax to provide it. The person obligated to withhold tax must maintain records that are not only limited to proving compliance with the provisions of the Law, but are also sufficient to prove the accuracy of the withheld tax. These records must include, at a minimum, the name and address of the beneficiary, the type of payments, their value, and the amount withheld. These records shall be maintained for a period of no less than 10 years after payment, and the record-keeping period may be extended if the matter is still under study by the Authority or any oth",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W13",
+    "rule": "WHT records10 years after payment and extensions for ongoing study",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "he person obligated to withhold tax to provide it. The person obligated to withhold tax must maintain records that are not only limited to proving compliance with the provisions of the Law, but are also sufficient to prove the accuracy of the withheld tax. These records must include, at a minimum, the name and address of the beneficiary, the type of payments, their value, and the amount withheld. These records shall be maintained for a period of no less than 10 years after payment, and the record-keeping period may be extended if the matter is still under study by the Authority or any other competent authority. In such a case, the records shall be maintained until the study is completed or a final decision is issued regarding its subject matter. 31 Penalties Paragraph A of Article 77 of the Law imposes a delay penalty on the person obligated to withhold tax at a rate of 1% of the unpaid tax for every 30 days of delay. The Paragraph explicitly states that this includes any delay in paying the tax required to be withheld. Furthermore, Sub-paragraph E of Paragraph 1 of Article 68 of the Implementing Regulations adds 1% of the unpaid tax for every 30 days of delay in the event of a delay in paying the tax required to be withheld after 10 days of the month following the month in which the payment was made to the beneficiary, in accordance with the Tax Withholding provisions pursuant to Article 68 of the Law. Consequently, both delay in payment and failure to make full payment are subject to a penalty of 1%. In addition to penalties related to delay in payment, bas",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W14",
+    "rule": "WHT delay1%/30days and intentional-evasion25%",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " for a period of no less than 10 years after payment, and the record-keeping period may be extended if the matter is still under study by the Authority or any other competent authority. In such a case, the records shall be maintained until the study is completed or a final decision is issued regarding its subject matter. 31 Penalties Paragraph A of Article 77 of the Law imposes a delay penalty on the person obligated to withhold tax at a rate of 1% of the unpaid tax for every 30 days of delay. The Paragraph explicitly states that this includes any delay in paying the tax required to be withheld. Furthermore, Sub-paragraph E of Paragraph 1 of Article 68 of the Implementing Regulations adds 1% of the unpaid tax for every 30 days of delay in the event of a delay in paying the tax required to be withheld after 10 days of the month following the month in which the payment was made to the beneficiary, in accordance with the Tax Withholding provisions pursuant to Article 68 of the Law. Consequently, both delay in payment and failure to make full payment are subject to a penalty of 1%. In addition to penalties related to delay in payment, based on Article 69 of the Implementing Regulations, the fraud penalty provisions stipulated in Paragraph B of Article 77 of the Law also apply to the person obligated to withhold tax in the event of concealing information or providing incorrect information, and the responsibility for its payment lies with the entity obligated to withhold. This may lead to the imposition of a financial penalty of 25% of the tax difference resulting from the pers",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "W15",
+    "rule": "Treaty reduction requires applicable agreement/procedure",
+    "status": "operative",
+    "source_sha256": "3e5e4b3fa90ca53749437224d7515884231cd48c978c5e918f26aafdaf7e4bc7",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "in the Kingdom. g. The case under audit is included within cases of tax evasion or avoidance. h. The taxpayer’s consent to subject the estimated profits pursuant to a written approval signed by him. i. Other than that, the provisions regulating income tax do not stipulate any other exemptions or reductions regarding Tax Withholding. Concerned persons have the right to request the application of any exemption or reduction of Tax Withholding rates pursuant to an international agreement to prevent double taxation to which the Kingdom is a party, as set forth in the following Section. (44). Paragraph 6, Article 63 of the Regulations. 29 5. Provisions Monthly withholding statement and tax payment The person obligated to withhold tax must register with the Authority and submit a monthly withholding statement, including any amounts paid for Tax Withholding in the relevant month. If there are no amounts subject to Tax Withholding, the person is not obligated to submit the monthly statement. The person obligated to withhold tax must submit the monthly statement and pay the withheld amount (if any) within the first 10 days of the month following the month of payment to the beneficiary. For example, if a resident pays a royalty to a non-resident on 20th January, the person obligated to withhold tax must submit the withholding statement and pay the withheld tax no later than 10th February, and must also provide the beneficiary with a certificate showing the amount paid to him and the value of the tax withheld from him. In addition to the monthly withholding statement and the payment of withheld tax t",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "C01",
+    "rule": "General annual Zakat/CIT120 days and2026 calendar examples",
+    "status": "operative",
+    "source_sha256": "1a81ad421f862fc46f6f23acfe30bad1cbfa9777d531e62125d424efb9d285e8",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "he last date to submit and pay the monthly VAT for September 2026 November 30 is the last date to submit and pay Excise Tax for September and October 2026 December 31 is the last date to submit and pay the monthly VAT for November 2026 October 31 is the last date to submit and pay the quarterly VAT for the third quarter of 2026 November 30 is the last date to submit and pay the monthly VAT for October 2026 Zakat and CIT Returns must be submitted within 120 days after the end of the business’s fiscal year Taxpayers Compliance Add Zakat & Tax Return Calendar WHT Apple Calendar Google Calendar Outlook Calendar Office 365 Calendar VAT Apple Calendar Google Calendar Outlook Calendar Office 365 Calendar Excise Tax Apple Calendar Google Calendar Outlook Calendar Office 365 Calendar Quarterly VAT Apple Calendar Google Calendar Outlook Calendar Office 365 Calendar Zakat and CIT Return Apple Calendar Google Calendar Outlook Calendar Office 365 Calendar ",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "C02",
+    "rule": "2026 VAT due last following month",
+    "status": "operative",
+    "source_sha256": "1a81ad421f862fc46f6f23acfe30bad1cbfa9777d531e62125d424efb9d285e8",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " 10 is the last date to submit and pay WHT for September 2026 November 10 is the last date to submit and pay WHT for October 2026 December 10 is the last date to submit and pay WHT for November 2026 October 31 is the last date to submit and pay the monthly VAT for September 2026 November 30 is the last date to submit and pay Excise Tax for September and October 2026 December 31 is the last date to submit and pay the monthly VAT for November 2026 October 31 is the last date to submit and pay the quarterly VAT for the third quarter of 2026 November 30 is the last date to submit and pay the monthly VAT for October 2026 Zakat and CIT Returns must be submitted within 120 days after the end of the business’s fiscal year Taxpayers Compliance Add Zakat & Tax Return Calendar WHT Apple Calendar Google Calendar Outlook Calendar Office 365 Calendar VAT Apple Calendar Google Calendar Outlook Calendar Office 365 Calendar Excise Tax Apple Calendar Google Calendar Outlook Calendar Office 365 Calendar Quarterly VAT Apple Calendar Google Calendar Outlook Calendar Office 365 Calendar Zakat and CIT Return Apple Calendar Google Calendar Outlook Calendar Office 365 Calendar ",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "C03",
+    "rule": "2026 excise two-month periods due last following month",
+    "status": "operative",
+    "source_sha256": "1a81ad421f862fc46f6f23acfe30bad1cbfa9777d531e62125d424efb9d285e8",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "2 23 24 22 23 24 25 26 27 28 22 23 24 25 26 27 28 25 26 27 28 29 30 31 29 30 31 January 10 is the last date to submit and pay WHT for December 2025 February 10 is the last date to submit and pay WHT for January 2026 March 10 is the last date to submit and pay WHT for February 2026 January 31 is the last date to submit and pay Excise Tax for November and December 2025 February 28 is the last date to submit and pay the monthly VAT for January 2026 March 31 is the last date to submit and pay Excise Tax for January and February 2026 January 31 is the last date to submit and pay the quarterly VAT for the fourth quarter of 2025 March 31 is the last date to submit and pay the monthly VAT for February 2026 January 31 is the last date to submit and pay the monthly VAT for December 2025 April 04 May 05 June 06 Sunday Monday Tuesday Wednesday Thursday Friday Saturday Sunday Monday Tuesday Wednesday Thursday Friday Saturday Sunday Monday Tuesday Wednesday Thursday Friday Saturday 01 02 03 04 01 02 01 02 03 04 05 06 05 06 07 08 09 10 11 03 04 05 06 07 08 09 07 08 09 10 11 12 13 12 13 14 15 16 17 18 10 11 12 13 14 15 16 14 15 16 17 18 19 20 19 20 21 22 23 24 25 17 18 19 20 21 22 23 21 22 23 24 25 26 27 26 27 28 29 30 24 25 26 27 28 29 30 28 29 30 31 April 10 is the last date to submit and pay WHT for March 2026 May 10 is the last date to submit and pay WHT for April 2026 June 10 is the last date to submit and pay WHT for May 2026 April 30 is the last date to submit and pay the monthly VAT for March 2026 May 31 is the last date to submit and pay Excise Tax for March and April 2026 June 30 is the last date to submit and pa",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "P01",
+    "rule": "MonthlyVAT annualsupplies>40million,otherwisequarterly",
+    "status": "operative",
+    "source_sha256": "dfcfbcb5097b5ceabaefecd62c180b933c4f87d7d0f4caa2d1f6f35645be8c7f",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "ty under number: 20260420956 عربي Contact Us Voice Commands Font Size Greyscale Mode Search Login Search Search Search AI Suggestions Zakat Customs VAT Tax Declaration Real Estate Transactions ZATCA Home Media Center News Submit VAT Returns for September and Q3 2026 Submit VAT Returns for September and Q3 2026 Page Image 20 October 2026 Page Content The Zakat, Tax and Customs Authority (ZATCA) urged business sector establishments subject to VAT, whose annual supplies of goods and services exceed SAR 40 million, to file their tax returns for September. Meanwhile, ZATCA called on establishments whose annual supplies do not exceed SAR 40 million to file their tax returns for the third quarter of 2026, no later than October 31, 2026. ZATCA has urged establishments to file their tax returns and make payments promptly through ZATCA's App in order to avoid a late filing fine. A fine shall be imposed for failure to file the tax returns within the specified period, with a minimum fine of 5% and a maximum fine of 25% of the value of the tax that must be declared. In the meantime, ZATCA invites taxpayers of the business sector who wish to learn more about VAT to reach out through the call center unified No. (19993), operating 24/7, or the \"Ask Zakat, Tax and Customs\" account on the (X) platform (@Zatca_Care), or through email (info@zatca.gov.sa), or by instant chat on ZATCA's website (zatca.gov.sa). The VAT is one of the tax laws in force in the Kingdom of Saudi Arabia, as an indirect tax imposed on all goods and services that are bought and sold by businesses, with a few exceptions.​ Comments and S",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "E01",
+    "rule": "Wave25 strictly>187500 in any2022/2023/2024/2025",
+    "status": "operative",
+    "source_sha256": "9bc08e107154748d2c40d6a7fa0c63b2d2d9886568b44b286a7c77760b79d1a4",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "5 for “Integration Phase” of E-invoicing ZATCA Determines the Criteria for Selecting the Targeted Taxpayers in Wave 25 for “Integration Phase” of E-invoicing Page Image 24 July 2026 Page Content The Zakat, Tax and Customs Authority (ZATCA) determined the criteria for selecting the targeted taxpayers in the Twenty-Fifth Wave for implementing the \"Integration Phase \" of E-invoicing, as it clarified that the Twenty-Fifth Wave included all taxpayers whose revenues subject to VAT exceeded (SAR 187,500) during 2022, 2023,2024 or 2025. Moreover, ZATCA explained that it will notify all targeted taxpayers in the Twenty-Fifth Wave to integrate their E-invoicing solutions with the Fatoora Platform by no later than February 1, 2027. ZATCA has stated that Phase Two (Integration Phase) requires additional requirements, compared to the Phase One (Generation Phase), the most prominent of which is to integrate taxpayers’ E-invoicing solutions with ZATCA's platform (Fatoora), issue E-invoices based on a specific format, and include additional fields in the invoice. Furthermore, Phase Two (Integration Phase) of E-invoicing would take place gradually in waves, and ZATCA would inform the following waves directly at least six months before their Integration Date. ZATCA has noted that the launch of Phase Two of E-invoicing is part of the economic development and digital transformation taking place in the Kingdom of Saudi Arabia and is a continuation of the success story that began with Phase One of the implementation of E-invoicing, which achieved positive results, most notably raising the level of consumer protection in the King",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "E02",
+    "rule": "Wave25 integration by1February2027",
+    "status": "operative",
+    "source_sha256": "9bc08e107154748d2c40d6a7fa0c63b2d2d9886568b44b286a7c77760b79d1a4",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "ined the criteria for selecting the targeted taxpayers in the Twenty-Fifth Wave for implementing the \"Integration Phase \" of E-invoicing, as it clarified that the Twenty-Fifth Wave included all taxpayers whose revenues subject to VAT exceeded (SAR 187,500) during 2022, 2023,2024 or 2025. Moreover, ZATCA explained that it will notify all targeted taxpayers in the Twenty-Fifth Wave to integrate their E-invoicing solutions with the Fatoora Platform by no later than February 1, 2027. ZATCA has stated that Phase Two (Integration Phase) requires additional requirements, compared to the Phase One (Generation Phase), the most prominent of which is to integrate taxpayers’ E-invoicing solutions with ZATCA's platform (Fatoora), issue E-invoices based on a specific format, and include additional fields in the invoice. Furthermore, Phase Two (Integration Phase) of E-invoicing would take place gradually in waves, and ZATCA would inform the following waves directly at least six months before their Integration Date. ZATCA has noted that the launch of Phase Two of E-invoicing is part of the economic development and digital transformation taking place in the Kingdom of Saudi Arabia and is a continuation of the success story that began with Phase One of the implementation of E-invoicing, which achieved positive results, most notably raising the level of consumer protection in the Kingdom and praising the great awareness of taxpayers and the rapidity of the response in the implementation of Phase One (Generation phase) of the project. It is worth mentioning that Phase One (Gene",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "E03",
+    "rule": "Later waves notified>=6months andPhase1 introduced4December2021",
+    "status": "operative",
+    "source_sha256": "9bc08e107154748d2c40d6a7fa0c63b2d2d9886568b44b286a7c77760b79d1a4",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "o (Integration Phase) requires additional requirements, compared to the Phase One (Generation Phase), the most prominent of which is to integrate taxpayers’ E-invoicing solutions with ZATCA's platform (Fatoora), issue E-invoices based on a specific format, and include additional fields in the invoice. Furthermore, Phase Two (Integration Phase) of E-invoicing would take place gradually in waves, and ZATCA would inform the following waves directly at least six months before their Integration Date. ZATCA has noted that the launch of Phase Two of E-invoicing is part of the economic development and digital transformation taking place in the Kingdom of Saudi Arabia and is a continuation of the success story that began with Phase One of the implementation of E-invoicing, which achieved positive results, most notably raising the level of consumer protection in the Kingdom and praising the great awareness of taxpayers and the rapidity of the response in the implementation of Phase One (Generation phase) of the project. It is worth mentioning that Phase One (Generation Phase) of E-invoicing was introduced on December 4, 2021, obliging taxpayers subject to the E-invoicing Regulation to stop generating handwritten invoices or computer-generated invoices through text editing software or spreadsheet software, ensuring that there is a technical solution for E-invoicing that is compatible with the requirements, in addition to generating and storing E-invoices with the required fields, including the QR code and other requirements. Comments and Suggestions For any inquiries or notes about au",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "X01",
+    "rule": "Sweetened-drinks method from1Jan2026,sugarbands per100ml replacingflat50%",
+    "status": "operative",
+    "source_sha256": "b2680930db8ef06a120a56a51da6744717378493350b2717a935073402892a2d",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "ريبة والجمارك قراره بالموافقة على تعديل بعض أحكام اللائحة التنفيذية للضريبة الانتقائية والتي ستدخل حيز التطبيق بداية من 1 يناير 2026 م، وتتضمن التعديلات التي تم الموافقة عليها تعديل منهجية احتساب الضريبة الانتقائية على المشروبات المُحلاة لتكون بحسب كمية السكر الإجمالي في المشروب المحلى. وبيّنت الهيئة أن المنهجية المعدّلة لاحتساب الضريبة الانتقائية على المشروبات المُحلاة تعتمد على احتساب قيمة الضريبة من خلال تحديد شرائح متدرجة للمشروبات المُحلاة، بحسب كمية السكر الإجمالي في كل (100 مل) من محتوى المشروب المُحلى الجاهز للشرب، الذي يقع ضمن نطاق تلك الشريحة. وتأتي هذه المنهجية الجديدة بدلًا من المنهجية الحالية لفرض الضريبة الانتقائية على المشروبات المُحلاة، التي تتم بناءً على نسبة ثابتة تبلغ (50%) تُحتسب من سعر البيع بالتجزئة للمشروب المُحلى الخاضع للضريبة. ويُقصد بالمشروبات المُحلاة أي منتج مضاف إليه مصدر من مصادر السكر أو محليات أخرى، يتم إنتاجه بغرض التناول كمشروب، ويشمل ذلك المشروبات بمختلف أشكالها، مثل المشروبات الجاهزة للشرب، أو المُركّزات، أو المساحيق، أو الجل، أو المستخلصات، أو أي صورة أخرى يمكن تحويلها إلى مشروب. وتهدف المنهجية الجديدة لاحتساب الضريبة الانتقائية على المشروبات المُحلاة بحسب كمية السكر الإجمالي في المشروب المحلى إلى تعزيز الصحة العامة، وتحفيز تخفيض استهلاك السكر في المشروبات المحلاة، من خلال تحفيز المنتجين والمستوردين على توفير مشروبات استهلاكية ذات محتوى سكر إجمالي منخفض، وذلك بما يتوافق مع أفضل الممارسات الدولية. ويأتي تطبيق المنهجية الجديدة استنادًا إلى قرار لجنة التعاون المالي والاقتصادي لدول مجلس التعاون لدول الخليج العربية، الخاص بتعديل آلية احتساب الضريبة الانتقائية على المشروبات المُحلاة لتكون وفق النهج الحجمي المتدرج وبحسب كمية السكر ا",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "V01",
+    "rule": "LateVATreturn5%-25%",
+    "status": "operative",
+    "source_sha256": "0aab3ca8b374dc7e79ad2c592e9ff6106021ddbc7520f99841ed29a6de24627f",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "or reduce VAT due or unlawfully obtain refunds for tax ​ At least the amount of the VAT due, up to three Times the value of the goods or service subject of the evaded tax​ Move or attempt to move goods in or out of the Kingdom without paying the VAT due At least the amount of the VAT due, up to three Times the value of the goods or service subject of the evaded tax Failure to apply for VAT registration SAR 10,000 Failure to submit the Tax Return 5% - 25% of the value of the Tax that would have had to be declared​ Failure to pay tax due 5% of the value of the unpaid Tax for each month or part thereof the Tax has not been paid Issuance of Tax Invoice by non-registered Person Maximum SAR 100,000 without prejudice to any stricter penalty provided in any other law Failure to keep Tax Invoices, books, records and accounting documents Maximum SAR 50,000 Prevention or obstruction of ZATCA employees from performing duties Maximum SAR 50,000 Violation of any provision of the VAT Regulations or the VAT Law Maximum SAR 50,000 Filing incorrect tax return, amend a tax return or file any document resulting in a lower amount due 50% of the value of the difference between the calculated Tax and the Tax due​ Note: If the same violation is repeated within three years from the date of issuing the Authority's final decision of the violation, it is permissible to double the fine imposed on the offender under that decision.​​​ ​ Page Image Comments and Suggestions For any inquiries or notes about authority services or current page, please fill in the required information. Add a comment Add a comment * Name * Emai",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "V02",
+    "rule": "LateVATpayment5% eachmonthorpart",
+    "status": "operative",
+    "source_sha256": "0aab3ca8b374dc7e79ad2c592e9ff6106021ddbc7520f99841ed29a6de24627f",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " up to three Times the value of the goods or service subject of the evaded tax​ Move or attempt to move goods in or out of the Kingdom without paying the VAT due At least the amount of the VAT due, up to three Times the value of the goods or service subject of the evaded tax Failure to apply for VAT registration SAR 10,000 Failure to submit the Tax Return 5% - 25% of the value of the Tax that would have had to be declared​ Failure to pay tax due 5% of the value of the unpaid Tax for each month or part thereof the Tax has not been paid Issuance of Tax Invoice by non-registered Person Maximum SAR 100,000 without prejudice to any stricter penalty provided in any other law Failure to keep Tax Invoices, books, records and accounting documents Maximum SAR 50,000 Prevention or obstruction of ZATCA employees from performing duties Maximum SAR 50,000 Violation of any provision of the VAT Regulations or the VAT Law Maximum SAR 50,000 Filing incorrect tax return, amend a tax return or file any document resulting in a lower amount due 50% of the value of the difference between the calculated Tax and the Tax due​ Note: If the same violation is repeated within three years from the date of issuing the Authority's final decision of the violation, it is permissible to double the fine imposed on the offender under that decision.​​​ ​ Page Image Comments and Suggestions For any inquiries or notes about authority services or current page, please fill in the required information. Add a comment Add a comment * Name * Email * Comment Cancel Last Update: 30 Aug 2026 12:11 PM Saudi Arabia Time 0 visitors said ye",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "V03",
+    "rule": "IncorrectVATreturn resulting lower tax50%difference",
+    "status": "operative",
+    "source_sha256": "0aab3ca8b374dc7e79ad2c592e9ff6106021ddbc7520f99841ed29a6de24627f",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " Maximum SAR 100,000 without prejudice to any stricter penalty provided in any other law Failure to keep Tax Invoices, books, records and accounting documents Maximum SAR 50,000 Prevention or obstruction of ZATCA employees from performing duties Maximum SAR 50,000 Violation of any provision of the VAT Regulations or the VAT Law Maximum SAR 50,000 Filing incorrect tax return, amend a tax return or file any document resulting in a lower amount due 50% of the value of the difference between the calculated Tax and the Tax due​ Note: If the same violation is repeated within three years from the date of issuing the Authority's final decision of the violation, it is permissible to double the fine imposed on the offender under that decision.​​​ ​ Page Image Comments and Suggestions For any inquiries or notes about authority services or current page, please fill in the required information. Add a comment Add a comment * Name * Email * Comment Cancel Last Update: 30 Aug 2026 12:11 PM Saudi Arabia Time 0 visitors said yes from 0 feedbacks Was this page useful? Yes No Close --> Please tell us why (select up to two options) It was helpful The answers were relevant It was well written The layout made it easy to read Something else It was poorly written I could not find a relevant answer There was a technical problem The layout made it difficult to read Something else I'm Male Female Provide your comments... For more information you may review e-participation statement and rules of engagement Cancel Social Media Accessibility tools --> Download mobile applications All rights reserved 2026 © ZATCA.GOV.SA Developed a",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "F01",
+    "rule": "Initiative1July-31December2026",
+    "status": "operative",
+    "source_sha256": "942b26164ca5aa2aca911614210e28856bcb5cf77825f8cab89764fea7aa417f",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "d to extension of Cancellation of Fines and Exemption of Financial Penalties Initiative which is part of incentive initiatives taken by ZATCA to mitigate the financial implications resulting from COVID-19 that affected the establishments. This is for a period of (6) months, starting from July 1, 2026. 3 Rectifying the status of your establishment Exempts you from fines Lorem ipsum Take advantage of Exemption of Fines Initiative During the period July 1 to December 31, 2026 4 Table of Contents Highlights of the Resolution 06 Types of taxes included in the Initiative 07 Exclusions from the Initiative 07 Conditions for Benefiting from the Initiative 07 Tax due installment steps 09 Illustrative Examples of the Initiative 10 To go to the Section, click on its title 5 Highlights of the Resolution 1. Exemption from unpaid financial fines , including: ● Exemption from fine resulting from late registration in all tax laws and regulations. ● Exemption of delayed payment fines and overdue tax return submission fines in all tax laws and regulations. ● Exemption of VAT return correction penalty 2. Exemption shall be subject to specific conditions, including but not limited to: ● Tax registration for non-registrants required to register under the tax system with ZATCA. ● Submitting all required tax returns to ZATCA and which have not been previously submitted /or correctly declare all undeclared taxes, and paying t he full tax debt principal resulting from the submitted/corrected return, alternatively, apply for installment, and follow the approved installment plan",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "F02",
+    "rule": "Initiative conditions,exclusions and instalment continuation",
+    "status": "operative",
+    "source_sha256": "942b26164ca5aa2aca911614210e28856bcb5cf77825f8cab89764fea7aa417f",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "an approved by ZATCA on dues that are due to be paid after the end of the period of this initiative. 4. The Resolution shall remain effective for (6) months. 6 Types of taxes included in the Initiative 01 Value Added Tax (VAT) 04 02 Withholding Tax 05 Real Estate Transaction Tax (RETT) 03 Excise Tax Exclusions from the Initiative: ● Fines stipulated in Article (45) of the Value Added Tax Law.Fines paid prior to the initiative's effective date. ● Fines for returns due that must be submitted to ZATCA after June, 30 2026. ● Tax evasion fines, including: a. Late payment and tax return submission. b. Late registration. c.Tax Return amendment * If the initiative is extended beyond December 31, 2026, any future extension will exclude penalties for returns due to ZATCA after June 30, 2026. Conditions for Benefiting from the Initiative The taxpayer shall be exempted from: ● Late registrations fines in the tax systems, provided conditions shall be met: Registration with ZATCA. Submitting all tax returns that must be submitted. Paying the total tax debt principal resulting from submitted returns or apply for installment and follow the approved installment plan, until the end of this initiative on December 31, 2026. ●\"The taxpayer shall be exempted from late filing fines on tax return which must be filed to ZATCA before the effective date of the Initiative's extension on July 1, 2026 for all tax systems, provided that the following conditions be met:\" Submitting outstanding tax returns that need to be submitted. Paying the total tax debt principal resulting from late payment fines or apply for installment and",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "M01",
+    "rule": "Foreign-investorregistration andsecurities exception",
+    "status": "operative",
+    "source_sha256": "eb57dceab9071e043380a69820cf70ca3ed506bb9636653ec7c56311e9c60f72",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " ـ ـا للمسـ ـتثم ين‬-1 and data related to their investments are entered. The Ministry shall manage and update .‫س يته‬ ‫ وتتو إدارته وتحديثه والمحافظة ع‬،‫باستثماراتهم‬ said register and maintain its confidentiality. 2. A foreign investor shall register with the Ministry prior to engaging in any investment, .‫ ع ـ المسـتثمر اﻷجنبـي التسـجيل لـدى الـوزارة قبـل القيـام بـأي اسـتثمار؛ وف ًقـا لمـا تحـدده الﻼئحـة‬-2 as specified in the Regulations. This shall not apply to investments in securities that are .‫اﻷوراق المالية الخاضعة ﻷحكام نظام السوق المالية‬ ‫اﻻستثمار‬ ‫وﻻ يسري ذلك ع‬ subject to the provisions of the Capital Market Law. 3. The competent authority shall provide the Ministry with any information or data ‫الجهة المختصة تزويد الوزارة بما تحتاجه من معلومـات أو بيانـات ﻹنشـاء السـجل المنصـوص‬ ‫ ع‬-3 required to establish or update the register provided for in paragraph (1) of this Article, in ‫ وللـوزارة التواص ـل‬،‫ ووفقً ـا لﻶليـة التـي تحـددها الﻼئحـة‬،‫( مـن هـذه المـادة أو تحديث ـه‬1) ‫عليـه ـ الفقـرة‬ 7 accordance with the manner specified in the Regulations. The Ministry may communicate .‫سبيل استكمال أي متطلبات ﻹنشاء ذلك السجل أو تحديثه‬ ‫مع الجهة المختصة‬ with the competent authority to satisfy any requirements for establishing or updating said register. 4. The Ministry may, through its comprehensive service center, receive the investor’s ‫ اسـتقبال طلبـات المسـتثمر ﻹصـدار أي مـن‬،‫ مـن خـﻼل مركـز الخدمـة الشـاملة المنشـأ فيهـا‬،‫ للـوزارة‬-4 applications to obtain the legal approvals necessary for engaging in an investment activity, ‫ وتتـو‬.‫الموافقـات النظاميـة ال",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "M02",
+    "rule": "Sector/zone/acquiredrights preserved",
+    "status": "operative",
+    "source_sha256": "eb57dceab9071e043380a69820cf70ca3ed506bb9636653ec7c56311e9c60f72",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "e any of the Kingdom's obligations under any ‫ﻻ تخل أحكام النظام بأي من التزامات المملكة بموجب اتفاقية دولية نافذة تكون المملكة طر ًف ا‬ 13 applicable international agreement to which the Kingdom is a party. .‫فيها‬ Article 14: Activities, Special Economic Zones, and Acquired Rights ‫ اﻷنشطة والمناطق اﻻقتصادية الخاصة والحقوق المكتسبة‬:‫المادة الرابعة عشرة‬ ‫ أو‬،‫أنشطة اقتصادية محددة‬ ‫ﻻ تخل أحكام النظام باﻷنظمة الخاصة بالجهات اﻷخرى التي تسري ع‬ The provisions of this Law shall not prejudice the laws of other agencies applicable to 14 certain economic activities or the laws of the special economic zones in the Kingdom, ‫بالحقوق المنصوص‬ ‫أن يتمتع المستثمر بحد أد‬ ‫ ع‬،‫المملكة‬ ‫المناطق اﻻقتصادية الخاصة‬ provided that the investor enjoys, as a minimum, the rights stipulated in this Law. .‫النظام‬ ‫عليها‬ Article 15: Regulations ‫ الﻼئحة‬:‫المادة الخامسة عشرة‬ The Minister shall issue the Regulations within one hundred and eighty days from the date .‫ ويعمل بها من تا يخ نفاذه‬،‫يصدر الو ير الﻼئحة خﻼل )مائة وثمانين( يومً ا من تا يخ نشر النظام‬ 15 of publication of this Law. The Regulations shall enter into force on the date this Law enters into force. Article 16: Entry into Force :‫ النفاذ‬:‫المادة السادسة عشرة‬ ‫ و ُيلغِ ي نظام‬،‫الج يدة الرسمية‬ ‫يوما من تا يخ نشره‬ ً (‫ُيعمل بالنظام بمضي )مائة وثمانين‬ This Law shall enter into force one hundred and eighty days following the date of its publication in the Official Gazette and shall repeal the Foreign Investment Law issued by 16 ‫ كما ُيلغِ ي ما يتعارض‬،‫ه‬5/1/1421 ‫( وتا يخ‬1/‫اﻻستثمار اﻷجنبي الصادر بالمرسوم الملكي رقم )م‬ Royal Decree No. (M/1) dated 5/1/142",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "M03",
+    "rule": "MISAregistration beforeCR ordinary publishedsequence",
+    "status": "operative",
+    "source_sha256": "f07ce2096f67acd4b66bb642f03def77ef68934b46ac341f1c5358fa73783944",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "s the national register referred to in the updated investment Law? The national registry referred to in the updated Investment Law is an internal record maintained by MISA that includes both local and foreign investors and their investment information. 2.2. What steps should a foreign investor take to carry out investment activities in the Kingdom? A foreign investor must register with MISA before engaging in investment activities in the Kingdom.Upon receiving a notification of completed registration from the Ministry, the foreign investor can then issue a commercial registration and obtain the necessary licenses from other competent authorities to conduct their business. 2.3. What is the One-Stop Service Center? It is a unified center for serving investors, aiming to facilitate registration procedures, the establishment of enterprises, issuance of licenses, and review of competent authorities through one-stop center. 2.4. Does a current investor need to do anything to comply with the updated law? There are no additional requirements for existing investors to comply with. 2.5. When will the new registration process a start? The new registration process will come into effect when the updated law enters into effect.Details of the new registration process will be published by MISA before the updated law enters effect. 3. Business Activities 3.1. What activities are available for investment? The updated Investment Law generally permits investment in all activities based on the principle of the freedom of investment. However, certain activities are restricted and would require prior approvals to invest in.MISA publishes and periodically updates this list. 3.2. Ca",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "M04",
+    "rule": "Existinginvestor noadditionalrequirements inMISAFAQ",
+    "status": "operative",
+    "source_sha256": "f07ce2096f67acd4b66bb642f03def77ef68934b46ac341f1c5358fa73783944",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "commercial registration and obtain the necessary licenses from other competent authorities to conduct their business. 2.3. What is the One-Stop Service Center? It is a unified center for serving investors, aiming to facilitate registration procedures, the establishment of enterprises, issuance of licenses, and review of competent authorities through one-stop center. 2.4. Does a current investor need to do anything to comply with the updated law? There are no additional requirements for existing investors to comply with. 2.5. When will the new registration process a start? The new registration process will come into effect when the updated law enters into effect.Details of the new registration process will be published by MISA before the updated law enters effect. 3. Business Activities 3.1. What activities are available for investment? The updated Investment Law generally permits investment in all activities based on the principle of the freedom of investment. However, certain activities are restricted and would require prior approvals to invest in.MISA publishes and periodically updates this list. 3.2. Can investors invest in restricted activities? Persons wishing to invest in a restricted activity must first submit a request to MISA to do so.MISA will in turn direct the request to the relevant government agency to consider the request.More information on this process will be forthcoming in the implementing regulations. 4. Investor Rights 4.1. What rights does the updated investment Law guarantee for investors? The Investment Law dedicates a provision to the protections afforded to investor and th",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "M05",
+    "rule": "Applicantowner/control/UBOinformation andupdates",
+    "status": "operative",
+    "source_sha256": "12e58d2d8da13e83944727f0962279de26d9687a0c0a6b1e67e0e910d13c8cf6",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " Ministry in the f. Investor Guide. 2. If the applicant for registration is a legal person, the following information shall be provided upon registration: a. the name and place of incorporation of the enterprise, and its residence place, if different; b. the applicant’s scope of business and investment activity, including the economic activities to be engaged in; c. the capital; d. the expected capital contribution to the proposed investment; e. the particulars of the owners, shareholders, persons having control over a foreign investor or the ultimate beneficial owner of the foreign investor, as the case may be; f. any other information or documents specified by the Ministry in the Investor Guide. 3. As a condition for completing the registration, an applicant shall affirm the declarations prepared by the Ministry, including a declaration of the validity of all the information and documents he has provided. 4. The Ministry may request any additional information and documents that it deems necessary if the information set forth in Paragraphs (1) and (2) of this Article 6 ‫م‬2025 THE INVESTMENT LAW IMPLEMENTING REGULATIONS appears to be insufficient or incorrect. ARTICLE (12) Notification of Registration 1. The Ministry shall notify the applicant of his registration in the available activities within a period not exceeding 10 working days from the date of satisfying all registration requirements. 2. In the event that the application is incomplete or that further information is required, the Ministry shall notify the applicant for registration. Said applicant shall submit the required information within a reasonable ",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "IR01",
+    "rule": "50%-EBITDA claim withdrawn;differentloanreturnformula,bankexception",
+    "status": "correction evidence; computation held",
+    "source_sha256": "352c2c7355538cfe359cb16d7176da4a6dd02794372bc0ef451f112b56314904",
+    "hash_matches": true,
+    "quote_found": false,
+    "context": "",
+    "review_result": "Visual image interest-arabic.png independently read: actual eligible cost versus loan income +50%(A-B), bank exception; correction/hold only, no current replacement computation."
+  },
+  {
+    "id": "B01",
+    "rule": "Primaryordinaryincome-tax20%andscope",
+    "status": "operative",
+    "source_sha256": "3f8de5bc2acb1301bbabf52a174c3dbd79f0b0cf2ab31302105a15e21601edfa",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "كون بالنص الآتي: \"ب- سعر الضريبة على الوعاء الضريبي للمكلف الذي يعمل في مجال استثمار الغاز الطبيعي هو عشرون بالمائة (20%)\". المادة السابعة : أسعار الضريبة إضافة فقرة جديدة تحمل الترتيب (هـ) إلى المادة (السابعة)، بالنص الآتي: \"هـ: تكون الضريبة المستحقة على الشخص الذي يعمل في المملكة في مجال إنتاج الزيت والمواد الهيدروكربونية ومجال استثمار الغاز الطبيعي معاً هي مجموع الضريبة المستحق على وعاءي ضريبة هذا الشخص بموجب الفقرتين (ب) و(ج) من هذه المادة\". أ - سعر الضريبة على الوعاء الضريبي هو عشرون بالمائة (20%) لكل من : 1 - شركة الأموال المقيمة . 2 - الشخص الطبيعي المقيم غير السعودي الذي يمارس النشاط. 3 - الشخص غير المقيم نتيجة لنشاط يمارسه في المملكة من خلال منشأة دائمة . ب - سعر الضريبة على الوعاء الضريبي للمكلف الذي يعمل في مجال استثمار الغاز الطبيعي فقط هو ثلاثون بالمائة (30%). ج - سعر الضريبة على الوعاء الضريبي للمكلف الذي يعمل في إنتاج الزيت والمواد الهيدروكربونية هو خمسة وثمانون بالمائة (85%) . د - أسعار الضريبة المستقطعة هي الأسعار المحددة في المادة الثامنة والستين من هذا النظام . هـ: تكون الضريبة المستحقة على الشخص الذي يعمل في المملكة في مجال إنتاج الزيت والمواد الهيدروكربونية ومجال استثمار الغاز الطبيعي معاً هي مجموع الضريبة المستحق على وعاءي ضريبة هذا الشخص بموجب الفقرتين (ب) و(ج) من هذه المادة. الفصل الرابع: الدخل الخاضع للضريبة المادة الثامنة : الدخل الخاضع للضريبة تعديلات المادة المادة الثامنة : الدخل الخاضع للضريبة عُدلت هذه المادة بموجب المرسوم الملكي رقم (م/70) وتاريخ 1439/7/11هـ. الدخل الخاضع للضريبة هو إجمالي الدخل شاملا كافة الإيرادات والأرباح والمكاسب مهما كان نوعها ومهما كانت صورة دفعها الناتجة عن مزاولة النشاط ، بما في ذلك الأرباح الرأسمالية وأي إيرادات عرضية ، مستق",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "B02",
+    "rule": "PrimaryWHTmanagement20%,royalty15%,rent/freight/telecom5%",
+    "status": "operative",
+    "source_sha256": "3f8de5bc2acb1301bbabf52a174c3dbd79f0b0cf2ab31302105a15e21601edfa",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": " المكلف أو المصلحة. ج - تحدد اللائحة صلاحيات واختصاصات وإجراءات عمل اللجان الابتدائية والاستئنافية ، والخبرات العلمية والعملية لأعضائها ومكافآتهم . الفصل الثالث عشر: تحصيل الضرائب المادة الثامنة والستون : استقطاع الضريبة أ - يجب على كل مقيم سواء كان مكلفا أو غير مكلف بمقتضى هذا النظام ، وعلى المنشأة الدائمة في المملكة لغير مقيم ، ممن يدفعون مبلغا ما لغير مقيم من مصدر في المملكة استقطاع ضريبة من المبلغ المدفوع وفقا للأسعار الآتية : 1 - إيجار 5% . 2 - إتاوة أو ريع 15% 3 - أتعاب إدارة 20% 4 - دفعات مقابل تذاكر طيران أو شحن جوي أو بحري 5% 5 - دفعات مقابل خدمات اتصالات هاتفية دولية 5% 6 - أي دفعات أخرى تحددها اللائحة على ألا يتجاوز سعر الضريبة 15% في حالة المبالغ المدفوعة من قبل شخص طبيعي تنطبق شروط الاستقطاع التي تقضي بها هذه المادة على الدفعات الخاصة بالنشاط لهذا الشخص. ب - يجب على الشخص الذي يستقطع الضريبة بمقتضى هذه المادة الالتزام بما يأتي : 1 - التسجيل لدى المصلحة وتسديد المبلغ المستقطع للمصلحة خلال العشرة أيام الأولى من الشهر الذي يلي الشهر الذي تم الدفع فيه للمستفيد . 2 - تزويد المستفيد بشهادة تبين المبلغ المدفوع له وقيمة الضريبة المستقطعة . 3 - تزويد المصلحة في نهاية السنة الضريبية باسم وعنوان ورقم تسجيل المستفيد (الرقم المميز) إذا توفر، وأي معلومات أخرى قد تطلبها المصلحة . 4 - الاحتفاظ بالسجلات المطلوبة لإثبات صحة الضريبة المستقطعة وفقا لما تحدده اللائحة . ج - الشخص المسئول بمقتضى هذه المادة عن استقطاع الضريبة ملزم شخصيا بتسديد قيمة الضريبة غير المسددة ، وغرامات التأخير المترتبة عليها وفقا للفقرة (أ) من المادة السابعة والسبعين من هذا النظام إذا انطبقت عليه أي من الحالات الآتية : 1 - إذا لم يستقطع الضريبة كما هو مطلوب . 2 - إذا استقطع الضريبة لكنه لم يسددها لل",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "B03",
+    "rule": "Primary120-dayfiling/paymentandpenalties",
+    "status": "operative",
+    "source_sha256": "3f8de5bc2acb1301bbabf52a174c3dbd79f0b0cf2ab31302105a15e21601edfa",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "يلتزم الشخص الذي يتلقى معلومات بمقتضى الفقرة (أ) من هذه المادة بالمحافظة على سريتها ، وعدم استخدامها إلا للغرض الذي طلبت من أجله. ج - يجوز كشف معلومات متعلقة بمكلف ما إلى شخص آخر بناء على موافقة خطية من المكلف . الفصل الثاني عشر: تقديم الإقرارات والربط وإجراءات الاعتراض والاستئناف المادة الستون : الإقرارات أ - يجب على كل مكلف مطالب بتقديم إقرار أن يقدمه وفقا للنموذج المعتمد ، وتدوين رقمه المميز عليه ، وتسديد الضريبة المستحقة بموجبه إلى المصلحة . ب - يجب تقديم الإقرار الضريبي خلال مائة وعشرين يوما من انتهاء السنة الضريبية التي يمثلها الإقرار. ج - على المكلفين المحددين أدناه تقديم إقرار ضريبي : 1 - شركة أموال مقيمة . 2 - غير مقيم له منشأة دائمة في المملكة . 3 - شخص طبيعي غير سعودي مقيم يمارس النشاط. د - على المكلف الذي توقف عن النشاط إشعار المصلحة وتقديم إقرار ضريبي عن الفترة الضريبية القصيرة التي تنتهي بتاريخ توقفه عن مزاولة النشاط ، وذلك خلال ستين يوما من تاريخ التوقف . هـ - يجب على المكلف الذي يتجاوز دخله الخاضع للضريبة مليون (1.000.000) ريال سعودي أن يشهد محاسب قانوني مرخص له بمزاولة المهنة بالمملكة بصحة الإقرار. و- يجب أن تقدم شركة الأشخاص إقرار معلومات وفقا للمادة السادسة والثلاثين من هذا النظام في اليوم الستين من نهاية سنتها الضريبية أو قبله . المادة الحادية و الستون : حق المصلحة في المعلومات أ - على جميع الأشخاص والجهات الحكومية تزويد المصلحة بأي معلومات مرتبطة بالضريبة وتطلبها المصلحة لأغراض الضريبة الواردة في هذا النظام . ب - للمصلحة الحق في فحص دفاتر وسجلات المكلف ميدانيا أثناء ساعات العمل للتحقق من صحة الضريبة الواجبة عليه . ج - على جميع الأشخاص والجهات الحكومية تزويد المصلحة بمعلومات عن العقود التي تبرمها مع القطاع الخاص خلال ثلاثة أشهر من تاريخ إبرام العقد ، تتضم",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "B04",
+    "rule": "Primaryspecialisedgasamendmentcontradictsarchivedoriginal30%",
+    "status": "correctionevidence;specialistrateheld",
+    "source_sha256": "3f8de5bc2acb1301bbabf52a174c3dbd79f0b0cf2ab31302105a15e21601edfa",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "النشاط في المملكة من خلال منشأة دائمة هو دخله الخاضع للضريبة الناتج عن نشاط تلك المنشأة أو المرتبط بها ، محسوما منه المصاريف الجائزة بمقتضى هذا النظام . د - يحتسب الوعاء الضريبي للشخص الطبيعي الواحد بشكل مستقل عن غيره . هـ - يحتسب الوعاء الضريبي لشركة الأموال بشكل مستقل عن المساهمين أو الشركاء فيها . المادة السابعة : أسعار الضريبة تعديلات المادة المادة السابعة : أسعار الضريبة الفقرة ( ب ) من المادة السابعة عُدلت هذه الفقرة لتكون بالنص الآتي: \"ب- سعر الضريبة على الوعاء الضريبي للمكلف الذي يعمل في مجال استثمار الغاز الطبيعي هو عشرون بالمائة (20%)\". المادة السابعة : أسعار الضريبة إضافة فقرة جديدة تحمل الترتيب (هـ) إلى المادة (السابعة)، بالنص الآتي: \"هـ: تكون الضريبة المستحقة على الشخص الذي يعمل في المملكة في مجال إنتاج الزيت والمواد الهيدروكربونية ومجال استثمار الغاز الطبيعي معاً هي مجموع الضريبة المستحق على وعاءي ضريبة هذا الشخص بموجب الفقرتين (ب) و(ج) من هذه المادة\". أ - سعر الضريبة على الوعاء الضريبي هو عشرون بالمائة (20%) لكل من : 1 - شركة الأموال المقيمة . 2 - الشخص الطبيعي المقيم غير السعودي الذي يمارس النشاط. 3 - الشخص غير المقيم نتيجة لنشاط يمارسه في المملكة من خلال منشأة دائمة . ب - سعر الضريبة على الوعاء الضريبي للمكلف الذي يعمل في مجال استثمار الغاز الطبيعي فقط هو ثلاثون بالمائة (30%). ج - سعر الضريبة على الوعاء الضريبي للمكلف الذي يعمل في إنتاج الزيت والمواد الهيدروكربونية هو خمسة وثمانون بالمائة (85%) . د - أسعار الضريبة المستقطعة هي الأسعار المحددة في المادة الثامنة والستين من هذا النظام . هـ: تكون الضريبة المستحقة على الشخص الذي يعمل في المملكة في مجال إنتاج الزيت والمواد الهيدروكربونية ومجال استثمار الغاز الطبيعي معاً هي مجموع الضريبة المستحق على وعاءي ضريبة هذا الشخص بموجب الفقرتين (ب) و(ج) من هذه المادة. الف",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "B05",
+    "rule": "Taxyearcanbedifferent12-monthperiodunderregulations",
+    "status": "correctionevidence;eligibilityheld",
+    "source_sha256": "3f8de5bc2acb1301bbabf52a174c3dbd79f0b0cf2ab31302105a15e21601edfa",
+    "hash_matches": true,
+    "quote_found": true,
+    "context": "نوات الضريبية التالية إلى أن يتم استرداد كامل الخسارة المتراكمة ، وتحدد اللائحة الحدود العليا المسموح بحسمها سنويا. ب - صافي الخسارة التشغيلية هي الحسومات الجائزة بمقتضى هذا الفصل والزائدة عن الدخل الخاضع للضريبة في السنة الضريبية . ج - لاحتساب صافي الخسارة التشغيلية للشخص الطبيعي ينظر إلى الحسومات والإيراد للنشاط فقط . الفصل السادس: قواعد المحاسبة الضريبية المادة الثانية والعشرون : السنة الضريبية أ - السنة الضريبية هي السنة المالية للدولة . ب - يجوز للمكلف استخدام فترة اثني عشر شهرا مختلفة عما ورد في الفقرة (أ) من هذه المادة كسنة ضريبية وفقا للضوابط التي تحددها اللائحة . ج - إذا غير المكلف سنته الضريبية ، تعامل الفترة الفاصلة بين آخر سنة ضريبية كاملة قبل التغيير وتاريخ ابتداء السنة الضريبية الجديدة ، كفترة مالية قصيرة ومستقلة ، ويجوز أن تكون السنة الأولى للمكلف الجديد أو السنة الأخيرة للمكلف في حالة التوقف أو التصفية سنة مالية قصيرة مستقلة ما لم ينص على أن تكون سنة طويلة وفقا لنظام الشركات . د - تستخدم مجموعات الشركات المرتبطة وكما ورد تعريفها في المادة الرابعة والستين من هذا النظام نفس السنة الضريبية . المادة الثالثة والعشرون : طريقة المحاسبة أ - يجب أن تبين طريقة المحاسبة التي يتبعها المكلف دخله بوضوح . ب - يحدد إجمالي الدخل والمصاريف للشركة المقيمة ولأي مكلف يحتفظ أو ملزم نظاما بالاحتفاظ بالدفاتر التجارية المتوافقة مع المبادئ المحاسبية المتعارف عليها بالمملكة وفقا لتلك الدفاتر بعد تعديل الحسابات لتتلاءم وقواعد هذا النظام . ج - يجوز للأغراض الضريبية أن يدون الشخص الطبيعي معاملاته على أساس المبدأ النقدي أو مبدأ الاستحقاق ، غير أنه إذا زاد إجمالي دخله من النشاط في سنة ضريبية عن المبلغ المحدد في اللائحة ، فيجب عليه استخدام مبدأ الاستحقاق في جميع السنوات الضريبية التالي",
+    "review_result": "Source supports bounded rule and stated conditions; later-amendment gaps remain explicit"
+  },
+  {
+    "id": "A01",
+    "rule": "Illustrativemixedownership60/40,bases2million/500k,365/354days",
+    "status": "stipulated arithmetic / workflow convention",
+    "review_result": "Stipulated example or workflow convention, not a legal rule; arithmetic independently checked in initial report."
+  },
+  {
+    "id": "A02",
+    "rule": "IllustrativeWHTroyalties600000/management200000",
+    "status": "stipulated arithmetic / workflow convention",
+    "review_result": "Stipulated example or workflow convention, not a legal rule; arithmetic independently checked in initial report."
+  },
+  {
+    "id": "A03",
+    "rule": "Exactly30-daylatecompanydecision",
+    "status": "stipulated arithmetic / workflow convention",
+    "review_result": "Stipulated example or workflow convention, not a legal rule; arithmetic independently checked in initial report."
+  },
+  {
+    "id": "A04",
+    "rule": "120-day date arithmetic",
+    "status": "stipulated arithmetic / workflow convention",
+    "review_result": "Stipulated example or workflow convention, not a legal rule; arithmetic independently checked in initial report."
+  },
+  {
+    "id": "A05",
+    "rule": "SAR100/1000/10000reconciliationbands",
+    "status": "stipulated arithmetic / workflow convention",
+    "review_result": "Stipulated example or workflow convention, not a legal rule; arithmetic independently checked in initial report."
+  },
+  {
+    "id": "A06",
+    "rule": "OutputJSON,workbooksheets,filepaths,questiongroups",
+    "status": "stipulated arithmetic / workflow convention",
+    "review_result": "Stipulated example or workflow convention, not a legal rule; arithmetic independently checked in initial report."
+  },
+  {
+    "id": "H01",
+    "rule": "VATregistrationmandatory/voluntarythresholds,windows,expectedandexpenseeligibility,dates,nonresidents",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H02",
+    "rule": "VATstandardrate,zero/exempttransactionconditions,propertyVAT",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H03",
+    "rule": "Hijriincome-taxeligibility,registeredperiodchangeandconversionapproval",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H04",
+    "rule": "Interestlimitationcurrentlawandlateramendments,nodeniedinterestplanning",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H05",
+    "rule": "Losscarryforwardannualcap,duration,conditions",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H06",
+    "rule": "Specialisedoil,naturalgas,hydrocarbonrates",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H07",
+    "rule": "GCCcorporatelookthrough,indirectownership,listedfounders/freefloat,consolidation",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H08",
+    "rule": "RETTinstrument,rate,exemptions,firsthomecap,deadline,form,deductibility",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H09",
+    "rule": "GOSIannuities/SANED/hazardsrates,wagecap,entrantphase-in,registration/paymentdate",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H10",
+    "rule": "NitaqatbandsincludingYellow,headcount,graceperiod,quota,visa/permitconsequences",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H11",
+    "rule": "WPS/Mudadscope,mandate,3-dayorotherdeadline,labourpenalties",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H12",
+    "rule": "Exciseproductscope,registrationtrigger,individualrates,sugartieramounts",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H13",
+    "rule": "E-invoicinginvoicetypeQR/API/clearance/reportingspecifications,earlierwaves",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H14",
+    "rule": "MISAexactcommencement,legacylicencetransition,universalpreCRrule",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H15",
+    "rule": "ProfessionalcredentialrecognitionandSaudiwork/filingauthority",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H16",
+    "rule": "Auditthresholdsandattachmentlaw",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H17",
+    "rule": "Form800/Form8/RETT1,box/menu/login,billdigits,statusupdatepromises",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H18",
+    "rule": "Refundtiming,extensions,commonTaxProceduresLaw",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H19",
+    "rule": "Income-tax/VAT/otherretentionandblanketArabictranslationrule",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H20",
+    "rule": "TP/MasterFile/LocalFile/CbCRthresholdsandAPAprocedures",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H21",
+    "rule": "DetailedZakatadditions/deductions,creditsandplanningnotread",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H22",
+    "rule": "Foreigntaxcreditsandadvancepaymentspecificeligibility",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H23",
+    "rule": "Taxpayer-specificholiday/final2027paymentdates",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  },
+  {
+    "id": "H24",
+    "rule": "CRannualrenewal,labourstatustax-filingbaranduniversalbankavailability",
+    "status": "NON-OPERATIVE HOLD",
+    "review_result": "Hold category appropriate; local operative leaks and contradictory templates are separately identified in initial findings; not blanket acceptance of body."
+  }
+]

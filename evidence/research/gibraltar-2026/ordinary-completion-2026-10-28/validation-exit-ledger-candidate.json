@@ -1,0 +1,161 @@
+{
+  "phase": "Local writer candidate: full financing and foreign-relief/exit ledgers ready; country repair/review incomplete",
+  "previous_writer_head": "46c3e1e966cff4ae69570e604a6220547bd98a23",
+  "main_reconciled": "62b7639a5a68324a83a96bb0190fff8b7c76f8c5",
+  "calculation_files": 20,
+  "calculation_blocks": 51,
+  "calculation_failures": 0,
+  "original_main_controls_exact": 47,
+  "current_main_controls": 48,
+  "supplementary_controls": 3,
+  "guide_schemas": 18,
+  "schema_errors": 0,
+  "schema_warning_groups": 2,
+  "inherited_warning": "global-minimum-tax tax_year2024 unchanged",
+  "strict_metadata_changed_guides": 2,
+  "strict_metadata_errors": 0,
+  "writer_complete_ledgers": 2,
+  "legal_rule_rows": 92,
+  "quote_snippets_matched": 196,
+  "unchanged_historical_gibraltar_research_files": 121,
+  "untouched_guides_byte_exact": 16,
+  "independent_country_review": "not yet requested; remaining ordinary country work and ledgers must be complete first",
+  "published": false,
+  "country_complete": false,
+  "remaining_partial_domains": 7,
+  "files": [
+    {
+      "path": "skills/international/gibraltar/README.md",
+      "sha256": "2d41ab28c8057161d65014ed3f3de6ea957d9f8c7333c12399d46b022be31cb2",
+      "entire_file_exact_to_split": false,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 0
+    },
+    {
+      "path": "skills/international/gibraltar/gi-bookkeeping-and-tax-records.md",
+      "sha256": "86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 0
+    },
+    {
+      "path": "skills/international/gibraltar/gi-company-accounts-and-reporting.md",
+      "sha256": "2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 1
+    },
+    {
+      "path": "skills/international/gibraltar/gi-company-formation.md",
+      "sha256": "f7fd8d81e8c4a4f4100d8847760df5bb4691194e5c26a91acbdca9b8bdf6b67c",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 0
+    },
+    {
+      "path": "skills/international/gibraltar/gi-connected-party-pricing-and-interest.md",
+      "sha256": "a67c67fc84f192b0019b85ccc5f0188efb8602d60e6ba5e63974f49d81e309cf",
+      "entire_file_exact_to_split": false,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 2
+    },
+    {
+      "path": "skills/international/gibraltar/gi-corporate-tax.md",
+      "sha256": "f12b1432b12eb61ab85d088316aab01d55aad4f114bfd4721f52509a7f12426e",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 8
+    },
+    {
+      "path": "skills/international/gibraltar/gi-einvoice.md",
+      "sha256": "239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 0
+    },
+    {
+      "path": "skills/international/gibraltar/gi-foreign-tax-relief.md",
+      "sha256": "70bda42fe52d64b5ae3f96be9a161c6f01fe4594af55fd9f65fabde3e30706fb",
+      "entire_file_exact_to_split": false,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 2
+    },
+    {
+      "path": "skills/international/gibraltar/gi-global-minimum-tax.md",
+      "sha256": "94f1ad5688e836bfafa6d49fedb295acb4f2b41cf0697814dac64f77447531e9",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 2
+    },
+    {
+      "path": "skills/international/gibraltar/gi-income-tax-assessment-appeals.md",
+      "sha256": "c858167680ae8e20f811ea2101b3be080155c36b35adb088ca29b092d5aef752",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 1
+    },
+    {
+      "path": "skills/international/gibraltar/gi-individual-income-tax.md",
+      "sha256": "8ee82e1123dab769a23b52dadbc797aa1b29f79ee04eccdf0866e9dcbd91eb3c",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 8
+    },
+    {
+      "path": "skills/international/gibraltar/gi-payroll-social-insurance.md",
+      "sha256": "33d0ad3d38758033d9ba95af27d213d775120aebf8ccdf7cac39abb898368c59",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 8
+    },
+    {
+      "path": "skills/international/gibraltar/gi-property-stamp-duty.md",
+      "sha256": "70395529e19f7b82e5851987c12ab0782af4adabb6e664251d7338d22ba3c109",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 3
+    },
+    {
+      "path": "skills/international/gibraltar/gi-residential-property-disposals.md",
+      "sha256": "ab06632156d157dd7fceb5a3e70019bea60ad81a015cb6ccc6ece11157198913",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 2
+    },
+    {
+      "path": "skills/international/gibraltar/gi-spain-tax-residence.md",
+      "sha256": "3a27d1a7322407397913ac1756f96472898ec84eed35547a8c69e97512940ae7",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 2
+    },
+    {
+      "path": "skills/international/gibraltar/gi-training-planning-and-startup-reliefs.md",
+      "sha256": "85fff1d7437c12080d3ca797a09f077cb09a3277761a707e06dc533457bd1961",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 0
+    },
+    {
+      "path": "skills/international/gibraltar/gi-transaction-tax-transition.md",
+      "sha256": "64ab5a419c586a68c6d53c17bb7e441988ea6669f1992d134eb6baf39b74eb2e",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 3
+    },
+    {
+      "path": "skills/international/gibraltar/gi-uk-employment-pensions-treaty.md",
+      "sha256": "7de18de959fbaf18cd81d1ad745ff100b516e8b9d4053783e924ab125620e92f",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 2
+    },
+    {
+      "path": "skills/international/gibraltar/gi-uk-investment-income-treaty.md",
+      "sha256": "aa9401452cae4d4f0391cbdae96b3f5de9247195ee20b404817733afa9a523cb",
+      "entire_file_exact_to_split": true,
+      "all_original_main_controls_exact": true,
+      "current_main_controls": 4
+    }
+  ]
+}

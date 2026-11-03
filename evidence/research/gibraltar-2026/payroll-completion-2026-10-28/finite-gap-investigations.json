@@ -1,0 +1,31 @@
+{
+  "read_on": "2026-10-28",
+  "search_queries": [
+    "site.gibraltar.gov.gi social insurance second exemption certificate",
+    "site.gibraltar.gov.gi contribution schedule quarterly self employed",
+    "site.gibraltarlaws.gov.gi recover wages contribution insured employer regulations"
+  ],
+  "findings": [
+    {
+      "question": "Second-employment exemption route",
+      "evidence": "Official maximum-in-primary-job form found; three payslips, ID, two employments, change undertaking and office approval. Current contact page corroborates email.",
+      "result": "Published specific application route now drafted; general non-maximum allocation and first-employer/weekly-cap interaction still unresolved."
+    },
+    {
+      "question": "Annual versus quarterly self-employed schedules",
+      "evidence": "Current official 2026/27 annual form and current supplied regulation 4A remain different. A 2017 booklet search result describes historical discontinuation but is not proof that the current quarterly enactment was repealed or waived.",
+      "result": "Keep both instructions and explicit unresolved relationship; no repeated broad search or invented waiver."
+    },
+    {
+      "question": "Missed employee contribution recovery",
+      "evidence": "Act7, SI4/7 and incorporated Employment Injuries2\u20138 examined. SI7(6) expressly bars recovery of its court-related employer sums from insured person.",
+      "result": "Court-recovery restriction added; no general later-wage arrears authority established. Do not import foreign NIC rules returned by broad search."
+    },
+    {
+      "question": "Ordinary benefits",
+      "evidence": "Current Schedule7 supplies valuation/election rules. Paragraph73 below250 wording differs from current FAQ/P8 first250 wording. Paragraph48 reference to Allowances3(17) does not define personal pension arrangements in the current printed text.",
+      "result": "Supported ordinary methods added, specific drafting/administrative differences retained without silent correction."
+    }
+  ],
+  "next_action": "Finish finite consumption/foreign/domestic-documentation source questions, then one country new-material review of all ready ledgers; no per-Guide review/push."
+}

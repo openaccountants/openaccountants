@@ -1,0 +1,495 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 52 frá 29. desember 1971 um skattligar avskrivingar v.m (Avskrivingarlógin), sum seinast broytt við løgtingslóg nr. 174 frá 21. desember 2001
+29. desember 1971Nr. 52
+Løgtingslóg um skattligar avskrivingar v.m, sum seinast broytt við løgtingslóg nr. 174 frá 21. desember 2001
+(Avskrivingarlógin)
+1. KAPITTUL. Maskinur, innbúgv og tílík rakstrargøgn, sum verða nýtt vinnuliga burturav.
+2. KAPITTUL. Maskinur, innbúgv og tílík rakstrargøgn, sum verða nýtt bæði í vinnu og til eginnýtslu.
+3. KAPITTUL. Skip til vinnuliga nýtslu.
+4. KAPITTUL. Bygningar v. m.
+5. KAPITTUL. Almennar ásetanir.
+6. KAPITTUL. Nær lógin fær gildi v.m.
+§ 1. 1) Tær reglur, sum í hesi lóg eru settar um skattligar avskrivingar v.m. verða nýttar viðvíkjandi maskinum, innbúgvi og tílíkum rakstrargøgnum, sum verða nýtt vinnuliga, skipum, sum verða nýtt vinnuliga og bygningum.
+2. stk. Skattlig avskriving eftir hesi løgtingslóg kann ikki verða gjørd av ognum, ið meira enn tveir persónar eiga í felag um veruliga leiðslan í felagnum hevur sæti í øðrum landi.
+3. stk. Skattlig avskriving kann tó verða gjørd av teimum í stk. 2 nevndu ognum í tann mun, avskrivingin rúmast innanfyri rakstrarvinning frá somu ogn.
+4. stk. Við at eiga í felag sambært stk. 2 er at skilja íognarfelag, samløgufelag, partsreiðarí og onnur líknandi feløg.
+5. stk. Líkningarráð Føroya kann undir serligum umstøðum geva undantaksloyvi frá stk. 2.
+1. KAPITTUL.
+Maskinur, innbúgv og tílík rakstrargøgn, sum verða nýtt vinnuliga burturav.
+§ 2. 2) Skattlig avskriving verður gjørd undir einum fyri allar innleggingar og innrættingar í bygningum, tiknir í vinnuliga nýtslu áðrenn 1. januar 1983, og av maskinum, innbúgvi og tílíkum rakstrargøgnum, sum bert verða nýtt vinnuliga og sum hoyra til vinnuvirki hjá tí skattskylduga, samanber tó § 5a og § 11, 2. stk. Fiskireiðskapur verður tó viðgjørdur eftir nærri reglum ásettum av líkningarráðnum. Avskrivingargrundarlagið verður gjørt upp eftir saldoháttinum, so sum tilskilað í 2. ‑ 3. stk.
+2. stk. Fyri innrættingar og innleggingar í leigaðum hølum í bygningi, sum skattligar avskrivingar kunnu verða gjørdar av eftir § 17, jfr. § 20 í hesi løgtingslóg, verður skattlig avskriving gjørd yvir tíðarskeiðið, leigumálið fevnir um, tó ikki yvir eitt stytri tíðarskeið enn 10 ár. Innrættingar og innleggingar í leigaðum hølum í bygningum, sum ikki kunnu avskrivast sambært hesa løgtingslóg, kunnu tó avskrivast á sama hátt, tá ið hølini verða brúkt til ídnaðarframleiðslu burturav. Ikki avskrivaðar innrættingar og innleggingar í leigaðum hølum sambært 1. og 2. punktum kunnu dragast frá í sølupeninginum fyri innrættingar ella innleggingar ella dragast frá tað árið, virkið heldur uppat.
+3. stk. Saldovirðið í byrjan inntøkuársins er tann upphædd, sum ognir, útvegaðar í inntøkuárum frammanundan, eru niðurskrivaðar til og við skattligum avskrivingum.
+4. stk. Skattligu avskrivingar inntøkuársins verða gjørdar við hinum avskrivingarbæra saldovirði sum grundarlagi, soleiðis at skilja, at hetta virði er saldovirðið við inntøkuársbyrjan, tá ið søluvirðið av rakstrargøgnum, sum eru seld í inntøkuárinum, eru frá, men allur útveganarkostnaður fyri rakstrargøgn fingin í inntøkuárinum, aftratlagdur.
+5. stk. 3) 4) Avskriving kann í mesta lagi vera 30% av avskrivingarbæra saldovirðinum. Er avskrivingarbæra saldovirðið áðrenn inntøkuársins avskriving 20.000 krónur ella lægri, kann upphæddin til fulnar verða drigin frá.
+7. stk. Tryggingar- ella endurgjaldspeningur viðvíkjandi rakstrargagni, ið verður tikið úr rakstri vegna skaða, fær somu viðgerð sum peningur, vunnin við sølu av sama rakstrargagni.
+§ 3. 3) 5) Útveganarpeningur fyri rakstrargøgn við virði av 20.000 krónum ella minni kann til fulnar verða drigin frá skattskyldugu inntøkuni fyri tað inntøkuár, sum nýútveganin fer fram í.
+2. stk. Verður útveganarpeningurin fyri rakstrargøgn ikki til fulnar drigin frá skattskyldugu inntøkuni sambært 1. stk., verður hann í keypsárinum fluttur til avskrivingar eftir reglunum í § 2.
+3. stk. Útveganarpeningurin fyri rakstrargagn av slagnum, sum nevnt er í 1. stk., skal í heild verða viðgjørdur annaðhvørt eftir reglunum í 1. stk., ella eftir reglunum í 2. stk.
+4. stk. Verður rakstrargagn selt og útveganarpeningurin fyri tað sambært 1. stk. til fulnar drigin frá skattskyldugu inntøku keypsársins, skal søluprísurin til fulnar verða roknaður upp í skattskyldugu inntøkuna fyri tað inntøkuár, sum avhendingin fer fram í. Tryggingar- ella endurgjaldspeningur viðvíkjandi tílíkum rakstrargøgnum fær somu viðgerð sum peningur, sum vinst við sølu av somu rakstrargøgnum.
+5. stk. 3) (Strikað).
+§ 4. 3) Hevur tann skattskyldugi í inntøkuárinum selt eitt av teimum rakstrargøgnum, sum røtt er um í hesum kapitli, fyri peningauphædd, sum er minni enn útveganarpeningurin við frádrátti av skattligum avskrivingum, sum gjørdar eru í inntøkuárunum frammanundan, skal hann draga alt tílíkt próvført tap frá í skattskyldugu inntøkuni tað inntøkuár, tá selt verður. Saldovirðið eftir § 2 skal í hesum førum verða lækkað við tí óavskrivaða partinum av útveganarprísi rakstrargagnsins.
+2. stk. Ásetingin í 1. stk. verður nýtt á sama hátt, tá ið rakstrargagn verður tikið úr rakstri vegna skaða. Møguligur tryggingar- ella endurgjaldspeningur verður í tílíkum førum javnmettur við sølupening.
+3. stk. Peningahædd, sum verður nýtt til umvælingar av skaddum rakstrargagni av tí slagnum, sum nevnt er í 1. stk., kann í tann mun, sum peningahæddin er størri enn tryggingar- ella endurgjaldspeningur, sum møguliga er goldin fyri skaðan, til fulnar verða drigin frá í skattskyldugu inntøkuni tað inntøkuár, sum umvælingin er gjørd. Er tryggingar- ella endurgjaldspeningurin størri enn umvælingarútreiðslurnar, skal munurin verða drigin frá saldovirðinum eftir § 2. Umvælingarútreiðslur eru útreiðslur, sum fara til at seta ognina í tann stand, sum hon var í, tá ið skaðin hendi.
+§ 5. 5) Er saldoin vorðin negativ av tí, at sølupeningur v.m. skal dragast frá í avskrivingargrundarlagnum, og er saldoin ikki rættað upp aftur á tann hátt, sum tilskilað er í 2. stk. ella við útveganum sambært hesum kapitli ella bygningum sambært § 17, 1. stk., litra a), í seinasta lagi næsta inntøkuár, skal saldoin rættast upp aftur soleiðis, at upphæddin verður roknað upp í uppgerðina av skattskyldugu inntøkuni fyri síðstnevnda inntøkuár.
+2. stk. Hin skattskyldugi kann í tí inntøkuári, tá ið saldoin er vorðin negativ, rætta saldoina upp aftur til fulnar ella lutvíst við at rokna upphæddina ella part av henni upp í skattskyldugu inntøkuna fyri nevnda inntøkuár.
+3. stk. 3) Toll- og Skattstova Føroya kann, tá ið heilt serligar umstøður tala fyri tí, leingja freistina fyri javning av negativari saldo. Loyvið skal treytast av, at trygd verður veitt fyri skattgjaldingina.
+§ 5 a. 2) 6) Útveganarpeningurin fyri persónbilar, sum bert verða nýttir vinnuliga, men sum eru skrásettir til privatan persónflutning, verða ikki taldir við í tað í § 2 umrødda saldovirðið, um útveganarpeningurin fer upp um 150.000 kr.
+2. stk. Tann parturin av útveganarpeninginum, sum fer upp um 150.000 kr., verður fyri hvønn persónbil sær skrásettur sum ein serstakur aktivpostur í tí roknskapi, sum skal fylgja við sjálvuppgávuni og kann ikki verða avskrivaður sambært hesa løgtingslóg. Útreiðslur til ábøtur verða eisini skrásettar fyri hvønn persónbil sær á tann serstaka aktivpostin og kunnu heldur ikki avskrivast sambært hesa løgtingslóg.
+3. stk. 150.000 kr. av útveganarpeninginum verður avskrivaður serstakt fyri hvønn persónbil sær sambært § 2, 4. stk. í hesi løgtingslóg.
+4. stk. Avskriving kann ikki verða gjørd tað inntøkuár, ið persónbilurin, sum er avskrivaður sambært 3. stk. verður latin av hondum. Um avhendingarpeningurin er hægri enn útveganarpeningurin við útreiðslum til ábøtur lagdar afturat og við frádrátti av avskrivingum frá inntøkuárinum frammanundan, skal vinningurin verða roknaður upp í skattskyldugu inntøkuna tað árið, avhendingin fer fram. Er avhendingarpeningurin minni enn útveganarpeningurin hækkaður við útreiðslum til ábøtur og við frádrátti av avskrivingum, kann hallið verða drigið frá í uppgerðini av skattskyldugu inntøkuni tað árið, persónbilurin er latin av hondum, tó bert tann parturin av hallinum, sum fer upp um ta upphædd, sum sambært 2. stk. ikki kann verða avskrivað.
+5. stk. Reglan í § 31, 1. stk. jmt. 3. stk. verður nýtt, um hin skattskyldugi:
+a) Flytir ein persónbil, sum kemur undir reglurnar í § 5 a til aðra nýtslu enn hana, sum umrødd er í 1. stk.
+b) Flytir ein bil, sum kemur undir reglurnar í 1. kap. til ta nýtslu, sum er umrødd í 1. stk.
+Reglan í b) verður tó bert nýtt, um virðið á bilinum í vanligum handli tann dagin, broytingin fer fram, er hægri enn 150.000 kr.
+6. stk. Reglurnar í 1. kap. verða annars nýttar uppá teir í 1. stk. umrøddu persónbilar í tann mun, tær ikki ganga ímóti regluni í 1. ‑ 4. stk.
+§ 6. Rakstrargagn verður í sambandi við ásetanirnar í hesum kapitli roknað fyri at vera útvegað, tá ið avhendingin er farin fram.
+2. KAPITTUL.
+Maskinur, innbúgv og tílík rakstrargøgn, sum verða nýtt bæði í vinnu og til eginnýtslu.
+§ 7. Maskinur, innbúgv og tílík rakstrargøgn, sum verða nýtt bæði til vinnu og til eginnýtslu, skulu verða avskrivað hvørt sær. Av avskrivingarhædd, sum verður roknað eftir niðanfyri standandi reglum, kann sum skattlig avskriving bert verða drigin frá upphædd, sum svarar til vinnuliga partin í nýtslu rakstrargagnsins, tað sama inntøkuár.
+2. stk. 2) Avskriving kann sama ár, sum útveganin fer fram, roknast við upp til 30 prosentum av útveganarupphæddini. Fyri hvørt av fylgjandi inntøkuárum kann avskriving verða roknað við upp til 30 prosentum av upphæddini, sum er óavskrivað við inntøkuársbyrjan. Avskriving skal altíð verða gjørd við heilum prosentum. Er útveganarpeningurin hægri enn 150.000 kr., verður tann upphæddin, sum avskrivingin kann roknast av, lækkað við tí upphædd, sum útveganarpeningurin fer upp um 150.000 kr. Henda upphædd verður skrásett sum ein serstakur aktivpostur í tí roknskapi, sum skal fylgja við sjálvuppgávuni og kann ikki verða avskrivaður sambært hesi lóg.
+3. stk. 2) Verða útreiðslur til umbøtur av slíkum rakstrargøgnum, sum nevnd eru í hesum kapitli, kann avskriving verða roknað av hesum útreiðslum eftir reglunum í 1. og 2. stk. á sama hátt sum av útveganarútreiðslum viðvíkjandi tílíkum rakstrargøgnum. Útreiðslur til umbøtur skulu verða avskrivaðar saman við tí rakstrargagni, sum tær viðvíkja. Tó kann ikki verða avskrivað av útreiðslum til ábøtur uppá rakstrargøgn, sum upprunaliga eru útvegað fyri meira enn 150.000 kr. Slíkar útreiðslur til ábøtur verða skrásettar á tann í 2. stk. umrødda aktivpost í roknskapinum.
+§ 8. Verður eitt av teimum rakstrargøgnum, sum eru umrødd í hesum kapitli, selt, kann avskriving ikki verða roknað av selda rakst-rargagninum í søluárinum. Er sølupeningurin størri enn útveganarpeningurin, tá ið allar avskrivingar, sum eru roknaðar fyri inntøkuár frammanundan, eru frá, so skal tann partur av ágóðanum, sum svarar til lutfallið millum skattligu avskrivingarnar, gjørdar í inntøkuárinum frammanundan og allar roknaðu avskrivingarnar fyri hesi inntøkuár, verða taldar upp í skattskyldugu inntøkuna fyri søluárið.
+2. stk. 2) 6) Er sølupeningurin minni enn útveganarpeningurin, tá ið allar roknaðar avskrivingar eru frádrignar, kann partur av muninum verða drigin frá í skattskyldugu inntøku søluársins. Munurin verður tó lækkaður við tí restupphædd, sum sambært § 7, 2. stk. ikki kann avskrivast. Av tí soleiðis lækkaða muninum, kann tann parturin, sum svarar til lutfallið millum skattligu avskrivingarnar og allar roknaðar avskrivingar, verða drigin frá í skattskyldugu inntøkuni í søluárinum.
+3. stk. Útveganarpeningurin merkir í hesi grein tær upprunaligu útveganarútreiðslur við útreiðslum til umbøtur afturatløgdum.
+§ 9. Um rakstrargagn, sum kemur undir reglurnar í hesum kapitli verður tikið úr rakstri, tí tað hevur verið fyri skaða, kann avskriving ikki verða roknað fyri rakstrargagnið tað inntøkuár, ið skaðin hendi. Er møguligur tryggingar- ella endurgjaldspeningur saman við peningi, sum er vunnin við sølu av skadda rakstrargagninum, minni enn útveganarpeningurin fyri rakstrargagnið, tá ið allar roknaðar avskrivingar eru frá, kann partur av muninum verða drigin frá í skattskyldugu inntøkuni fyri tað inntøkuár, ið skaðin hendi. Hervið fær ásetanin í § 8, 2. stk. samsvarandi nýtslu. Er møguligur tryggingar- ella endurgjaldspeningur saman við peningi, sum er vunnin við sølu av skadda rakstrargagninum, størri enn útveganarpeningurin fyri rakstrargagnið, tá ið allar roknaðar avskrivingar eru frá, skal partur av muninum, roknaður út eftir reglunum í § 8, 1. stk. verða lagdur aftrat skattskyldugu inntøkuni.
+2. stk. Verða við umvæling av skaddum rakstrargagni útreiðslurnar størri enn møguligur tryggingar- ella endurgjaldspeningur fyri skaðan, kann munurin verða drigin frá í skattskyldugu inntøkuni, um so er, at skaðin hendi, meðan rakstrargagnið var nýtt til vinnuligt endamál. Hendi skaðin, meðan rakstrargagnið varð havt til aðra nýtslu, er frádráttur ikki loyvdur. Er møguligur tryggingar- ella endurgjaldspeningur meiri enn umvælingarútreiðslurnar, so skal tann partur av avlopspeninginum, sum svarar til lutfallið millum skattligar avskrivingar gjørdar í inntøkuárum frammanundan og allar avskrivingar samanlagdar fyri hesi inntøkuár, verða roknaðar upp í skattskyldugu inntøkuna.
+3. stk. Útveganarpeningurin merkir í hesi grein tær upprunaligu útveganarútreiðslur við útreiðslum til umbøtur aftratløgdum.
+§ 10. Rakstrargagn er, tá ið talan er um ásetanir í hesum kapitli, útvegað, tá ið avhending er farin fram.
+3. KAPITTUL.
+Skip til vinnuliga nýtslu.
+§ 11. Skattlig avskriving verður gjørd undir einum fyri øll før, sum hoyra til virki hins skattskylduga og bert verða nýtt vinnuliga.
+2. stk. Reglurnar í hesum kapitli galda eisini fyri maskinur, innbúgv og tílík rakstrargøgn, sum verða nýtt vinnuliga umborð á skipum.
+Stk. 3. 7) Reglurnar í hesum kapitli galda eisini fyri veiðiloyvi, fevnd av lóg um vinnuligan fiskiskap, sum verður nýtt vinnuliga.
+§ 12. Við undantøkunum her niðanfyri verða reglurnar, sum settar eru í 1. kapitli um avskriving v.m. fyri maskinur, innbúgv og tílík rakstrargøgn, sum bert verða nýtt vinnuliga, í heild nýttar, tá ið talan er um før, sum verða nýtt vinnuliga.
+2. stk. 8) Skattligu avskrivingar inntøkuársins verða gjørdar við saldovirðinum við inntøkuársbyrjan sum grundarlagi, tá ið útveganarpeningur fyri før v.m., sum fingin eru til vega, er lagdur aftrat, men við upphøggingarstuðuli sambært løgtingslóg nr. 46 frá 30. mars 1990 og reglugerð nr. 27 frá 3. mai 1988, sum er útgoldin í inntøkuárinum drignum frá og sølupeningi fyri før v.m., seld í inntøkuárinum, drignum frá. Tann soleiðis funna peningaupphæddin er avskrivingarbæra saldovirðið.
+3. stk. 5) Er saldoin vorðin negativ, av tí at sølupeningurin v.m. skal dragast frá í avskrivingargrundarlagnum, og er saldoin ikki rættað upp aftur á tann hátt, sum tilskilað er í § 5, 2. stk., ella við útveganum av skipum eftir hesum kapitli, rakstrargøgnum sambært 1. kap., ella vinnuligum bygningum sambært § 17, 1. stk., litra a) í seinasta lagi næsta inntøkuár, skal saldoin rættast upp aftur soleiðis, at upphæddin verður roknað upp í uppgerðina av skattskyldugu inntøkuni fyri síðstnevnda inntøkuár.
+§ 13. Tá ið sáttmáli er gjørdur um bygging ella umbygging av deksfari, kann forskotsavskriving verða gjørd av avrádda byggikostnaðinum.
+2. stk. Forskotsavskriving kann fyrstu ferð verða gjørd fyri tað inntøkuár, ið sáttmálin er gjørdur. Forskotsavskriving kann herafturat verða gjørd næstu inntøkuár, alt til tað ár, ið avhendingin fer fram.
+3. stk. Forskotsavskriving kann tilsamans í mesta lagi vera 45 prosent av avrádda byggikostnaðinum. Í tíðarskeiðinum, sum nevnt er í 2. stk., kann hin skattskyldugi leggja forskotsavskrivingina eftir vild; tó kunnu ikki í nøkrum inntøkuári verða avskrivað meiri enn 15 prosent av byggikostnaðinum.
+4. stk. Í tíðarskeiðinum, tá ið forskotsavskriving kann verða gjørd, ávirkar forskotsavskrivingin ikki saldovirðið hjá hinum skipum virkisins.
+§ 14. Tað inntøkuár, tá skip, sum forskotsavskriving hevur verið gjørd fyri, verður avhent, gongur útveganarpeningurin við gjørdum forskotsavskrivingum frádrignum upp í avskrivingargrundarlagið fyri hini skip virkisins eftir reglunum í § 2, smbr. § 12.
+§ 15. Verður sáttmáli um bygging av skipi sagdur úr gildi, skal peningahædd svarandi til gjørdar forskotsavskrivingar fyri skipið, verða roknað upp í skattskyldugu inntøkuna fyri tað inntøkuár, ið sáttmálin fer úr gildi.
+§ 16. Verða rættindi sambært sáttmála um bygging av skipi seld, skal vinningur ella hall av hesum teljast við í skattauppgerð seljarans í tí inntøkuári, tá selt er. Hevur forskotsavskriving verið gjørd, skulu tær gjørdu forskotsavskrivingarnar verða taldar uppí við uppgerðina av vinningi ella halli.
+2. stk. Við nýtslu av ásetanunum í 1. stk. verður rindan av tryggingar- ella endurgjaldspeningi roknað fyri sølu av avvarðandi sáttmála.
+§ 16 a. 9) Persónur, hvørs skattskylda í Føroyum heldur uppat ella sum kemur undir aðra skattaskipan og sum hevur havt skattligan vinning við sølu av ognum, sum eru avskrivingarbærar eftir hesari lóg ella sáttmála sambært § 16, stk. 1, verður uttan mun til fyriskipanirnar í hesari ella øðrum lógum at svara avgjald við 40% av tí skattleggjandi vinninginum, ið ikki frammanundan er tikin við í skattleggjandi inntøkuni. Er vinningurin við sølu av ogn longu tikin við í skattauppgerð, tá skattgjaldarin flytur av landi, og nakað av skattinum er goldið um líkningina, verður avgjaldið roknað um aftur soleiðis: Avgjaldið roknað sær av vinninginum verður lækkað við eins parti, ið goldin er av skattinum fyri avvarðandi ár.
+2. stk. Beinanvegin søla er farin fram, skal seljarin lata líkningarráðnum uppgerð yvir søluvinningin, gjørdur upp eftir reglunum í hesari lóg. Líkningarráðið eftirkannar uppgerðina og ásetur avgjaldið, ið skal verða goldið Føroya gjaldstovu innan 2 vikur aftaná, at seljarin hevur fingið boð um avgjaldið frá líkningarráðnum. Av vinningi minni enn 25.000 kr. verður onki avgjald latið.
+3. stk. Um seljarin innan 31. desember árið eftir sølu nýtir søluvinningin í síni heild til útvegan av ognum, nevndum í 1., 2. og 3. kapitli í hesi lóg, í samband við vinnuvirki her á landi, kann hann fáa avgjaldið afturgoldið eftir umsókn. Umsókn verður send líkningarráðnum, sum hevur heimild til at afturrinda avgjaldið.
+4 stk. Avgjaldið verður býtt við 1/3 til kommununa og 2/3 til landskassan.
+5. stk. Landsstýrið fyriskipar nærri reglur fyri umsitingini av hesi reglu.
+§ 16 b. 4) 5) 10) Avskriving hjá persónligum skattgjaldara av ognum, sum eru undir hesum kapitli, verða gjørdar eftir reglunum í hesum og
+1. kapitli við niðanfyri nevndu avmarkingum:
+1) Avskrivast kann í vinningi av skiparakstri. Harumframt kann avskrivast upp til 15% av avskrivingarbæra saldovirðinum, tó í mesta lagi 15% av aðrari inntøku við øllum frádráttum. Avdráttir av upprunaligum lánum í skipum, sum ikki rúmast innan fyri rakstrarvinning frá egnum skipum undir einum, kunnu altíð avskrivast, treytað av at tann skattliga saldoin er minst líka stór sum restskuldin uppá skipini. Árlig avskriving eftir § 2 jmt. § 12 kann í mesta lagi vera 30% av tí saldovirði, ið kann avskrivast.
+2) Forskotsavskriving eftir § 13 kann í mesta lagi vera ájøvn við innskotnan eginpening útyvir vinning av skiparakstri.
+3) Persónur, sum pr. 1. september 1974 hevur gjørt sáttmála um bygging av skipi, kann hóast ásetingina í nr. 2 avskriva sambært § 13 fyri inntøkuárini 1974 og 1975.
+2. stk. Rakstrarvinningur av skipi er eftir hesari grein nettovinningur, aftaná at rakstrarútreiðslur, herundir allar lønir, eisini reiðaraløn og hýrur eftir galdandi sáttmálum, eru farnar av, men áðrenn avskrivingar eru gjørdar.
+§ 16 c. 2) Persónur, hvørs fulla skattskylda í Føroyum heldur uppat, og sum hevur avskrivað av ognum, sum hann eigur uttanlands, skal rinda 40% í avgjaldi av hesum avskrivingum tað árið, full skattskylda í Føroyum heldur uppat.
+2. stk. Avgjaldið verður býtt við 1/3 til kommununa og 2/3 til landskassan. Landsstýrið kann áseta nærri reglur fyri umsitingini av hesi reglu.
+4. KAPITTUL.
+Bygningar v. m. 2)
+§ 17. 2) 6) Skattlig avskriving eftir reglunum í § 20 kann verða gjørd fyri niðanfyri nevndu bygningar, sum verða nýttir vinnuliga:
+a. Bygningar, sum bert verða nýttir til handverk og ídnað, her íroknað neyðug skrivstovu- og goymsluhøli.
+b. Gistingarhús burturav, ella bygningar til útleiging við minst 10 íbúðum, her íroknað neyðug skrivstovu- og goymsluhøli.
+c. Aðrir bygningar, herundir skrivstovu- og goymslubygningar, har minst 75% av gólvvíddini verða nýtt vinnuliga, her íroknað neyðug goymsluhøli.
+2. stk. Avskriving kann ikki verða gjørd fyri bygningar, sum nýttir verða til bústað ella endamál í samband við hetta, sbr. tó 1. stk.
+§ 17 a. 2) Skattlig avskriving eftir reglunum í § 20, 1. stk. kann verða gjørd fyri alibrúk (grótkast v.m.) til vinnuliga nýtslu burturav, sum koma ikki undir reglurnar í 1. kapitli í hesi løgtingslóg.
+2. stk. Tær reglur í hesi løgtingslóg, sum eru galdandi fyri bygningar, sum koma undir regluna í § 17, 1. stk., litra a, eru eisini galdandi fyri tey í 1. stk. nevndu alibrúk.
+3. stk. Avskriving sambært 1. stk. er treytað av loyvi líkningarráðsins. Líkningarráðið kann áseta nærri reglur um, undir hvørjum treytum hesar avskrivingar verða loyvdar.
+§ 18. Verður bert partur av bygningi nýttur til endamál, sum heimilar avskriving eftir § 17, kann skattlig avskriving verða gjørd fyri tann part av útveganarpeninginum, sum lutfalsliga samsvarar gólvvíddini í nevnda bygningsparti.
+§ 19. Fyri útreiðslur til umbyggingar ella umbøtur kann skattlig avskriving verða gjørd eftir avskrivingarstigunum fyri tann bygning, sum tær viðvíkja, smbr. §§ 20 og 21.
+§ 20. 5) Fyri bygningar nevndir í § 17, 1. stk. litra a) og b), kann útveganarárið og 9 næstkomandi inntøkuár verða gjørd skattlig avskriving við upp til 7% av útveganarpeninginum. Hvørt av fylgjandi inntøkuárum kann skattlig avskriving verða gjørd við upp til 2% av útveganarpeninginum. Útveganarárið er tað inntøkuár, ið bygningurin verður fingin í hendur ella fullgjørdur og tikin í nýtslu til endamál, sum heimilar skattliga avskriving.
+2. stk. Fyri bygningar, nevndir í § 17, 1. stk., litra c), kann útveganarárið og 9 næstkomandi inntøkuár verða gjørd skattlig avskriving við upp til 4% av útveganarpeninginum. Hvørt av fylgjandi inntøkuárum kann skattlig avskriving verða gjørd við upp til 1% av útveganarpeninginum.
+3. stk. Somu reglur, sum nevndar eru í 1. og 2. stk., eru galdandi fyri bygningar, har útveganarpeningurin er gjørdur upp eftir reglunum í § 27 A.
+4. stk. 2) Verður bygningur um somu tíð nýttur til vinnulig endamál, sum nevnd eru í § 17, 1. stk., litra c og litra a ella litra b, kann skattlig avskriving verða gjørd sambært 1. og 2. stk. í mun til nýtslustigið av gólvvíddini í bygninginum.
+§ 21. Innan fyri markini sett í § 20 kann hin skattskyldugi leggja avskrivingarnar, ið har eru nevndar, eftir vild í teimum einstøku inntøkuárunum.
+2. stk. Avskriving kann ikki verða gjørd tað inntøkuár, ið bygningurin verður avhendur ella niðurtikin.
+3. stk. Heldur hin skattskyldugi uppat at nýta bygningin til endamál, sum heimila avskriving, kann skattlig avskriving ikki verða gjørd tey inntøkuár, ið slík nýtsla ikki hevur verið.
+§ 22. Skattlig avskriving skal verða gjørd fyri hvønn einstakan bygning sær.
+2. stk. Reglurnar í 1. stk. verða eisini nýttar í sambandi við útreiðslur til umbyggingar og umbøtur.
+§ 23. Verður bygningur fyri skaða, sum ikki verður afturbøttur við vanligari umsiting, kann frá og við inntøkuárinum, ið skaðin hendir, avskriving bert verða gjørd fyri tann part av útveganarpeninginum, sum svarar til lutfallið millum virðið av bygninginum eftir at skaðin hendi og virðið beint frammanundan. Viðvíkjandi útreiðslum til umbøtan av slíkum skaða kemur reglan í § 19 í nýtslu.
+§ 24. Tá ið avskrivingarbærur bygningur verður niðurtikin, kann í skattskyldugu inntøkuni fyri tað inntøkuár, ið niðurtøkan fer fram, verða gjørdur frádráttur, sum svarar til tær óavskrivaðu peningahæddirnar við sølupeningi fyri tilfar v.m. frádrignum. Tó kann frádráttur bert verða gjørdur um hin skattskyldugi í minst 5 ár fyri niðurtøkuna hevur átt bygningin og í hesum tíðarskeiði hevur nýtt hann til endamál, sum heimilar skattliga avskriving.
+§ 25. 2) Selur ella avhendir hin skattskyldugi bygning ella byggigrund, har bygningur stendur ella hevur staðið, sum kundi verið avskrivaður sambært § 17, 1. stk., litra a, sbr. § 20, fyri meira enn tað skattliga bókaða virðið, so skal vinningur og gjørdar avskrivingar verða roknaðar uppí skattskyldugu inntøkuna, um hesi ikki verða nýtt til endurútvegan av teimum í 1. kap. tilskilaðu rakstrargøgnum ella teimum í § 17, 1. stk., litra a tilskilaðu bygningum í seinasta lagi næsta inntøkuárið aftaná søluárið. Møguligt tap við sølu ella avhending kann ikki verða frádrigið í uppgerðini av skattskyldugu inntøkuni. Fyri bygning og byggigrund, sum er útvegað áðrenn 1. januar 1950, skal vinningur ella tap ikki roknast við í uppgerðini av skattskyldugu inntøkuni, meðan afturvunnar avskrivingar verða viðgjørdar sum tilskilað frammanfyri.
+2. stk. Selur ella avhendir hin skattskyldugi bygning ella byggigrund, har bygningur stendur ella hevur staðið, sum kundi verið avskrivaður sambært § 17, 1. stk. , litra b og c, sbr. § 20, fyri meira enn tað skattliga bókaða virðið, so skal vinningur og gjørdar avskrivingar verða roknaðar uppí skattskyldugu inntøkuna í søluárinum. Møguligt tap við sølu ella avhending kann ikki verða frádrigið í uppgerðini av skattskyldugu inntøkuni. Fyri bygning og byggigrund, sum er útvegað áðrenn 1. januar 1950, skal vinningur ella tap ikki roknast við í uppgerðini av skattskyldugu inntøkuni, meðan afturvunnar avskrivingar verða viðgjørdar sum tilskilað frammanfyri.
+3. stk. 5) Útveganarpeningurin fyri teir í 1. og 2. stk. nevndu bygningar og byggigrundir skal prístalsviðgerast fram til seinasta ásetta prístal undan søludegnum sambært tær prístalsásetingar, ið galdandi hava verið síðani 1. januar 1950.
+4. stk. Tryggingar- ella endurgjaldspeningur fær somu viðgerð sum upphæddir, sum verða vunnar við sølu av avvarðandi ognarluti.
+§ 26. Verður vinningur, sum er skattskyldugur eftir § 25, tí fingin er tryggingar- ella endurgjaldspeningur, kann hin skattskyldugi biðja um undantøku fyri, at vinningurin verður roknaður til inntøku hansara. Undantøkan er treytað av, at tryggingar- ella endurgjaldspeningurin allur verður nýttur til endurbygging ella endurútvegan av skadda ognarlutinum, og av at vinningurin verður nýttur til forskotsavskriving av útreiðsluni til endurbygging ella endurútvegan.
+2. stk. Váttan um, at tryggingar- ella endurgjaldspeningurin viðvíkjandi skaddum bygningi er nýttur ella ætlast nýttur á tann hátt sum ávíst í 1. stk., skal í seinasta lagi verða givin samstundis sum freistin gongur út fyri innlating av sjálvuppgávu fyri viðkomandi inntøkuár.
+3. stk. Endurbygging ella endurútvegan skal fara fram í tí inntøkuári, tá vinningurin var ella næstkomandi inntøkuár. Fer endurbygging ella endurútvegan ikki fram áðrenn hetta tíðarskeið er útrunnið, skal vinningurin verða lagdur afturat skattskyldugu inntøkuni fyri tað inntøkuár, ið vinningurin var. Tann peningahædd, sum í hesum føri skal verða eftirgoldin, ber í rentu 1 prosent mánaðarliga fyri hvønn byrjaðan mánað roknað frá teimum tíðarbilum, tá skatturin hevði verið fallin til gjaldingar, um hin skattskyldugi ikki hevði biðið sær undantøku fyri rindan.
+4. stk. Tá ið heilt serligar umstøður tala fyri, kann líkningarráðið eftir umsókn leingja freistina fyri endurbygging ella endurútvegan.
+5. stk. Kemur tað fram, at tryggingar- ella endurgjaldspeningurin ikki allur verður nýttur til endurbygging ella endurútvegan, verða omanfyristandandi reglur um eftirskattlegging nýttar í sambandi við avlopspartin av tryggingar- ella endurgjaldspeninginum, tó í hægsta lagi peningahædd, ið svarar til vinningin.
+6. stk. Peningahædd, sum verður nýtt til forskotsavskriving eftir 1. stk. 2. punktum, kann ikki verða drigin frá við uppgerðina av skattskyldugu inntøkuni.
+7. stk. Skattligar avskrivingar fyri endurbygda ella endurútvegaða ognarlutin verða roknaðar við útveganarpeninginum sum grundarlagi, tá ið frádrigin er tann peningahædd, sum er forskotsavskrivað.
+§ 27. 5) Útreiðslur til útvegan av byggigrund, byggibúning av sjálvari grundini og økinum uttanum, kunnu ikki verða roknaðar upp í útveganarpeningin ella útreiðslur til ábøtur v.m. av avskrivingarbæra bygninginum.
+§ 27 a. 5) Viðvíkjandi bygningum, sum eru tiknir í vinnuliga nýtslu 1. januar 1983 ella seinni, skal tann fulla upphæddin av innleggingum og innrættingum áðrenn avskrivingar leggjast afturat útveganarpeninginum av bygningum og tann avskrivaði parturin av innleggingum og innrættingum, sum er avskrivaður sambært 1. kap., dragast frá. Tann soleiðis útroknaða upphæddin er tann avskrivingarbæri útveganarpeningurin fyri bygningin í tí roknskaparári, sum endaði í 1985.
+2. stk. Somu reglur sum í 1. stk. verða at galda fyri umbyggingar ella ábøtur, sum eru gjørdar 1. januar 1983 ella seinni.
+§ 28. Reglunum í hesum kapitli kann verða vikið frá í førum, har afturfallsskylda ella onnur tílík skylda liggur á fastogn.
+5. KAPITTUL.
+Almennar ásetanir.
+§ 29. 2) Við sølu av teimum ognarlutum, sum henda lóg viðger, koma í gildi reglurnar í § 27 í løgtingslóg nr. 86 frá 1. september 1983 um landsskatt og kommunuskatt við seinni broytingum, í førum har søla av slíkum ognarlutum hoyrir til vinnuveg hjá tí skattskylduga, ella tá hann hevur keypt ognarlutin fyri at selja hann aftur við ágóða.
+2. stk. Fyri slíkar ognir, sum um er røtt í 1. og 3. kapitli lækkar saldovirðið sambært § 2, smbr. § 12 í teimum førum, sum nevnd eru í 1. stk., útveganarpeningin fyri selda ognarlutin tá frá eru drignar skattligar avskrivingar, gjørdar í inntøkuárunum frammanundan søluárinum.
+3. stk. Skattskyldugur, sum hevur gjørt avskrivingar sambært ásetanunum í hesi lóg, kann aftan á at freistin fyri innlating av sjálvuppgávu er útrunnin, bert broyta hesar avskrivingar við loyvi líkningarráðsins.
+§ 30. Móttøka av ognarlutum, sum gávu ella arvaforskot verður í hesi lóg javnsett við keyp. Keypspeningur er í hesum førum tann peningahædd, sum er løgd til grundar við útrokningina av gávuavgjaldi ella inntøkuskatti av sama luti. Var hesin ikki avgjalds- ella inntøkuskattskyldugur, verður sum keypspeningur sett virðið av sama ognarluti í vanligum handli um tað mundið, tá luturin varð fingin.
+2. stk. Avhending av ognarlutum sum gávu ella arvaforskot verður í hesi lóg javnmett við sølu av somu ognarlutum. Sølupeningur er tað virði, sum verður lagt til grund við útrokningina av gávuavgjaldi ella inntøkuskatti í sambandi við avhendingina ella ‑ um so er, at og-narluturin ikki er avgjalds- ella inntøkuskattskyldugur ‑ virðið í vanligum handli um avhendingarmundið.
+§ 31. 5) Flytur skattskyldugur ognarlutir av tí slagnum, sum røtt er um í kapittul I-IV annaðhvørt til eginnýtslu burturav ella til bæði eginnýtslu og nýtslu í vinnu, verða slíkir flutningar í hesi lóg javnsettir við sølu og keyp av somu ognarlutum.
+2. stk. Flytur skattskyldugur maskinur, innbúgv, skip, bygningar og líkar ognarlutir til eginnýtslu burturav annaðhvørt til vinnuliga nýtslu burturav ella til eginnýtslu og nýtslu í vinnu, verða slíkir flutningar í hesi lóg javnsettir við keyp av somu ognarlutum.
+3. stk. Sølu- og keypspeningur er virðið í vanligum handli um flutningsmundið.
+§ 31a. 3) Virksemið her á landi verður roknað sum hildið uppat, tá tann vinnurekandi hevur avhent sínar maskinur, rakstrargøgn, innbúgv o.a.
+Stk. 2. Flytur tann skattskyldugi maskinur, rakstrargøgn, innbúgv o.a., sum hevur verið nýtt í skattskyldugum virksemi her á landi, til nýtslu uttanlands, verður slík flyting javnsett við sølu. Sølupeningur er virðið í vanligum handli um flutningsmundið.
+§ 32. Endurgjøld fyri ognartøku verða í hesi lóg javnsett við søluupphæddir.
+§ 33. Líkningarráðið setur gjølligari fyriskipanir um hvørjar upplýsingar tey skattskyldugu skulu geva skattavaldinum til nýtslu við eftirliti við at lógin verður hildin og fyriskipanir í hesum sambandi tað snið, sum hesar upplýsingar skulu verða givnar í. Innlating av nevndu upplýsingum kann verða noydd ígjøgnum við álegging av dagligari bót, sum verður ásett av líkningarráðnum.
+6. KAPITTUL.
+Nær lógin fær gildi v.m.
+§ 34. Henda lóg verður fyrstu ferð nýtt við líkningina fyri skattaárið 1972/73.
+2. stk. Viðvíkjandi ognarlutum, sum eru avhendir innan 19. oktober 1971 kann hin skattskyldugi søkja um at koma undir higartil galdandi reglur um avskriving og skattliga viðgerð av vinningi ella tapi. Umsókn skal vera latin líkningarráðnum í seinasta lagi saman við sjálvuppgávuni fyri viðkomandi skattaár.
+§ 35. Maskinur, innbúgv og tílík rakstrargøgn, sum bert verða nýtt vinnuliga, og somuleiðis skip til vinnuliga nýtslu, skulu, um so er, at tey eru í ogn hins skattskylduga við byrjan av tí inntøkuári, tá lógin fyrstu ferð verður nýtt, verða roknað upp í saldovirðið eftir § 2, 1. stk. sb. § 12 við útveganarpeninginum, tá frá eru bæði vanligar avskrivingar og eykaavskrivingar, sum hin skattskyldugi hevur gjørt í inntøkuárum frammanundan fyri somu rakstrargøgn.
+§ 36. Avskriving fyri maskinur, innbúgv og tílík rakstrargøgn, sum verða nýtt bæði í vinnu og til eginnýtslu og sum eru í ogn hins skattskylduga við byrjan av tí inntøkuári, tá lógin fyrstu ferð verður nýtt, verða gjørd við útveganarpeninginum fyri rakstrargagnið sum grundarlagi, tá ið frá er upphædd svarandi til vanligu skattligu avskrivingarnar, sum hin skattskyldugi hevði kunna gjørt fyri sama rakstrargagn inntøkuárini frammanundan, um so var, at rakstrargagnið í hesum inntøkuárum hevði verið nýtt vinnuliga burturav.
+§ 37. Skattskyldugur kann, um treytirnar fyri hesum annars eru loknar, í staðin fyri at avskriva eftir hesi lóg velja at gera eykaavskrivingar eftir higartil galdandi reglum. Vanlig avskriving skal í slíkum føri vera gjørd viðvíkjandi avvarðandi ognarluti eftir higartil galdandi reglu, og ognarlutir av slagnum, sum røtt er um í 1. og 3. kapitli, verða í hesum førum ikki roknaðir uppí saldovirðið eftir § 2, 1. stk., sb. § 12.
+2. stk. Ognarlutir av slagnum, sum røtt er um í 1. og 3. kapitli, og sum hin skattskyldugi hevur valt at eykaavskriva sambært ásetanini í 1. stk. kunnu nær sum helst verða fluttir til avskrivingar eftir hinum reglunum í hesi lóg.
+3. stk. Ognarlutir av slagnum, sum røtt er um í 1. og 3. kapitli, og sum hin skattskyldugi hevur valt at eykaavskriva sambært ásetanini í 1. stk., skulu altíð verða flyttir til avskrivingar eftir hinum reglunum í hesi lóg, tá ið tann partur av útveganarpeninginum, sum var úr skildur til eykaavskriving, er avskrivaður til fulnar, ella tá ið tað tíðarskeið, sum eykaavskriving kann verða gjørd í, er útrunnið.
+4. stk. Fyri fyrsta inntøkuárið, ið ognarlutur av slagnum sum røtt er um í 1. og 3. kapitli, sum er eykaavskrivaður sambært ásetanini í 1. stk., verður fluttur til avskrivingar eftir hinum reglunum í hesi lóg, er avskrivingargrundarlagið útveganarpeningurin við vanligum avskrivingum og eykaavskrivingum, sum gjørdar eru í inntøkuárum frammanundan, frádrignum. Avvarðandi ognarlutur kann ikki verða eykaavskrivaður tað inntøkuár, sum flutningur fer fram í, ella seinni inntøkuár.
+§ 38. Landsstýrið setur gjølligari reglur fyri fremjan av hesi lóg og hevur heimild til at bera neyðugar útreiðslur til fremjan av lógini.
+§ 39. 6) Samstundis sum henda lóg kemur í gildi, fer løgtingslóg nr. 3 frá 2. februar 1956, sbr. løgtingslóg nr. 29 frá 12. mai 1970 um skattafríar eykaavskrivingar uppá skip, ávísar bygningar og maskinur v.m., § 3, 2., 3. og 4. stk. úr gildi.
+1) Broytt við løgtingslóg nr. 36 frá 20. apríl 1989 sum kom í gildi 10. mai 1989, og hevði so ljóðandi skiftisreglu í § 2 stk. 2: Tó kunnu persónar, sum hava gjørt íløgur eftir galdandi skipan, framhaldandi avskriva av nevndu íløgum.
+2) Broytt við løgtingslóg nr. 59 frá 8. mai 1987.
+3) Broytt við løgtingslóg nr. 19 frá 14. februar 2000. § 2 í hesi løgtingslóg er soljóðandi: ”Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. § 1, nr. 1-5, fær virknað frá 1. januar 2000.”
+4) Broytt við løgtingslóg nr. 70 frá 26. september 1974.
+5) Broytt við løgtingslóg nr. 74 frá 12. desember 1986.
+6) Broytt við løgtingslóg nr. 51 frá 26. mai 1988.
+7) Broytt við løgtingslóg nr. 174 frá 21. desember 2001. § 2 í hesi lóg er soljóðandi: ”Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað frá 7. november 2001” og § 3 í hesi lóg er soljóðandi: ”Avskrivingar, sum eru gjørdar av veiðiloyvum, sum eru útvegað men ikki seld, áðrenn lógin fær virknað, skulu halda fram.
+Stk. 2. Útreiðsluføring av keypspeningi fyri veiðilovyi, sum eru útvegað, men ikki seld, áðrenn lógin fær virknað, skal javnmetast við avskrivingar.”
+8) Broytt við løgtingslóg nr. 4 frá 25. januar 1991.
+9) Broytt við løgtingslóg nr. 39 frá 26. apríl 1974.
+10) Broytt við løgtingslóg nr. 5 frá 11. februar 1977.
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Fíggjarmálaráðið
+Útgávudagur: 29-12-1971
+Tilvísingar
+Broytingar
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

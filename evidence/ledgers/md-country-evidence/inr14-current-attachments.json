@@ -1,0 +1,79 @@
+{
+  "status": "Actual current INR14 form, complete instructions and own classifier read; source defects and independent review remain explicit",
+  "records": [
+    {
+      "article": "INR14-CURRENT-FORM-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an_3_140md.docx",
+      "sha256": "cb94f10db978fafbca48aa1ff71f86a483a9b3b6821afd4d059abf2fbbfd2c42",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T01:26:40.724246+00:00",
+      "format": "Original approved DOCX downloaded using observed current Order140 annex link and normal browser download-event/path; complete Word text and rendered pages read",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/inr14-current-form-2025.docx",
+      "binary_sha256": "4ce3dd2881cf7d007ac9fce95b059d6fa43bb1a8222e56af375258ae5d66e02f",
+      "binary_size_bytes": 19064,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/inr14-current-form-2025-render/inr14-current-form-2025.pdf",
+      "rendered_pdf_sha256": "af80d5f06491f0c1552a14858bd991964827c21fa5c70693829fb43b144bb865",
+      "rendered_pages": 1,
+      "visually_read_rendered_pages": [
+        1
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=148920&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "2026-10-31; current Order140/2017 lists OMF48/2June2025 published/effective12June2025 as latest amendment; actual annex3/4/4^1 links observed. Order48body re-read and separate classifier link downloaded; its full text matches current-parent classifier.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_inconsistencies": "Instructions print monthly L period format despite annual Code92(3) and separate unified92(8) route. Current-parent annex4^1 caption says Order95/2020 rather than140/2017; actual enacted Order48point1(3) introduces classifier to140. List describes ISOalpha3 but includes Liberland/LBL and legacy country labels; actual ISO status/portal treatment not certified. JUR recipients share citizenship wording without clarified entity-specific rule."
+    },
+    {
+      "article": "INR14-CURRENT-INSTRUCTIONS-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an_4_140md.docx",
+      "sha256": "50c5053e22fdf60131d76b5193a66eb53bde7ab677a0298331ecba55b26acfbc",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T01:26:40.726384+00:00",
+      "format": "Original approved DOCX downloaded using observed current Order140 annex link and normal browser download-event/path; complete Word text and rendered pages read",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/inr14-current-instructions-2025.docx",
+      "binary_sha256": "7e0d3033536b9ca3d8b6fc2ad5882fc3be9a8235f124ea0a273eb7412a36f908",
+      "binary_size_bytes": 16700,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/inr14-current-instructions-2025-render/inr14-current-instructions-2025.pdf",
+      "rendered_pdf_sha256": "6cb09a5253550aef7c8cef341b909aca31ca95fa749f6e58d6880f848948f318",
+      "rendered_pages": 2,
+      "visually_read_rendered_pages": [
+        1,
+        2
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=148920&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "2026-10-31; current Order140/2017 lists OMF48/2June2025 published/effective12June2025 as latest amendment; actual annex3/4/4^1 links observed. Order48body re-read and separate classifier link downloaded; its full text matches current-parent classifier.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_inconsistencies": "Instructions print monthly L period format despite annual Code92(3) and separate unified92(8) route. Current-parent annex4^1 caption says Order95/2020 rather than140/2017; actual enacted Order48point1(3) introduces classifier to140. List describes ISOalpha3 but includes Liberland/LBL and legacy country labels; actual ISO status/portal treatment not certified. JUR recipients share citizenship wording without clarified entity-specific rule."
+    },
+    {
+      "article": "INR14-CURRENT-CLASSIFIER-20261031",
+      "official_url": "https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an_4-1_140md.docx",
+      "sha256": "70df050df816db505c4cf12f1da71846c8b1f5ee2434c1d9d7ad357a6d725f0e",
+      "read_date": "2026-10-31",
+      "observed_utc": "2026-10-31T01:26:40.728903+00:00",
+      "format": "Original approved DOCX downloaded using observed current Order140 annex link and normal browser download-event/path; complete Word text and rendered pages read",
+      "binary_path": "ledgers/md-country-evidence/sources/attachments/inr14-current-classifier-2025.docx",
+      "binary_sha256": "8b29bd568c113797e6b4264b3517014960051798f71041a5eac629fd404d8814",
+      "binary_size_bytes": 27715,
+      "full_binary_retained": true,
+      "rendered_pdf_relative_to_country_workspace": "validation/inr14-current-classifier-2025-render/inr14-current-classifier-2025.pdf",
+      "rendered_pdf_sha256": "6e1bbb2ca5d81aa10405b1f1ee29276e9da43fe71084a09ba4209fb3d96e1d0a",
+      "rendered_pages": 5,
+      "visually_read_rendered_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "parent_current_url": "https://www.legis.md/cautare/getResults?doc_id=148920&lang=ro",
+      "parent_header_and_attachment_link_rechecked": "2026-10-31; current Order140/2017 lists OMF48/2June2025 published/effective12June2025 as latest amendment; actual annex3/4/4^1 links observed. Order48body re-read and separate classifier link downloaded; its full text matches current-parent classifier.",
+      "independent_review": "PENDING WHOLE-COUNTRY REVIEW",
+      "portal_test": false,
+      "source_inconsistencies": "Instructions print monthly L period format despite annual Code92(3) and separate unified92(8) route. Current-parent annex4^1 caption says Order95/2020 rather than140/2017; actual enacted Order48point1(3) introduces classifier to140. List describes ISOalpha3 but includes Liberland/LBL and legacy country labels; actual ISO status/portal treatment not certified. JUR recipients share citizenship wording without clarified entity-specific rule."
+    }
+  ]
+}

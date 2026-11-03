@@ -1,0 +1,23 @@
+{
+  "tested_content_commit": "5c165e9f2780802106e35befce097d105bfc663a",
+  "parent_checkpoint": "9d5451d3c373312f2207c904cdf59eaf38386824",
+  "guide_blobs": {
+    "ml-transfer-pricing": "b3d194ed4ec17e558d687fceab3e9416aba7675f",
+    "ml-cross-border-tax": "3a336063aa5ca91db6a4b6e5138b891c2e94b1f6"
+  },
+  "validation_command": "PYTHONPATH=<existing validation-deps> python3 scripts/validate-guides.py --changed-only --no-index-check",
+  "validation": "9 changed files including README;8 actual Guides;0warninggroups;noindex/fulltreeclaim",
+  "strict_sync": "exact predecessor9d5451d3c373312f2207c904cdf59eaf38386824 to5c165e9f2780802106e35befce097d105bfc663a;2sourceguides;0errors/warnings/notices",
+  "shape": "30of30pass",
+  "examples": "4requiredblocks;0failures/missing",
+  "quotes": "57of57normalizedexactmatches",
+  "preservation": {
+    "guides": 7,
+    "prior_receipts": 64,
+    "all_committed_blobs_identical": true
+  },
+  "whitespace": "git diff --check predecessor..tested passed;initial single blank EOF fixed beforecontentcommit",
+  "author_and_committer": "Michael Cutajar <107185374+michaelcutajar1995@users.noreply.github.com>",
+  "receipt_commit": "Evidence-only follow-on; tested Guide blobs must remain unchanged",
+  "holds": "all7domains partial;operative2026chain/AnnexU/currentforms/treaty-residence-PE-exit unresolved;noattestation;freshindependentreviewpending"
+}

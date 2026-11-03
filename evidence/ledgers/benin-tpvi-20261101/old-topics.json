@@ -1,0 +1,1747 @@
+{
+  "base_commit": "eab4e4b027afb4425aadfb2a74b6e6b18b23e36c",
+  "replaced_old_guide_bodies": 0,
+  "lost_content_restored": 0,
+  "section_destinations": [
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "old_lines": [
+        1,
+        15
+      ],
+      "old_heading": "Complete preamble and first heading",
+      "old_sha256": "b816f1dc6faa8c28acffac17c084e75d13968e785f5950a1197fa054d73bcfb6",
+      "destination": "skills/benin/bj-business-income-tax.md",
+      "destination_lines": [
+        1,
+        15
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "old_lines": [
+        16,
+        29
+      ],
+      "old_heading": "## Who this applies to",
+      "old_sha256": "b115f631d0d7c4c3efefa918f22acb8e029903ebda795caa94ef7ddba85071d1",
+      "destination": "skills/benin/bj-business-income-tax.md",
+      "destination_lines": [
+        16,
+        29
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "old_lines": [
+        30,
+        50
+      ],
+      "old_heading": "## Rates, bands and thresholds",
+      "old_sha256": "823aa16f54383172034bde6effdec2ab3566e049e73b8140bcafc947d1881f1d",
+      "destination": "skills/benin/bj-business-income-tax.md",
+      "destination_lines": [
+        30,
+        50
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "old_lines": [
+        51,
+        60
+      ],
+      "old_heading": "## The base",
+      "old_sha256": "549089652f41cc719a114b1abe11bb0b1b29934fdd6ad4c9f6efc072fa7e0a1b",
+      "destination": "skills/benin/bj-business-income-tax.md",
+      "destination_lines": [
+        51,
+        60
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "old_lines": [
+        61,
+        68
+      ],
+      "old_heading": "## Deadlines and filing",
+      "old_sha256": "116fff24347660998658f251695c681a945d4df75a316934cb52690154d25db1",
+      "destination": "skills/benin/bj-business-income-tax.md",
+      "destination_lines": [
+        61,
+        68
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "old_lines": [
+        69,
+        72
+      ],
+      "old_heading": "## Penalties and interest",
+      "old_sha256": "b6a6e02a20a30f995808e6eccd488da58470d2356d29c420e8a361a47bbf3901",
+      "destination": "skills/benin/bj-business-income-tax.md",
+      "destination_lines": [
+        69,
+        72
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "old_lines": [
+        73,
+        78
+      ],
+      "old_heading": "## Cross-border points",
+      "old_sha256": "fd71396d46b3288cfda52907013852213ee9e8fc848bffc5333ca3065e3d2d1f",
+      "destination": "skills/benin/bj-business-income-tax.md",
+      "destination_lines": [
+        73,
+        78
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "old_lines": [
+        79,
+        127
+      ],
+      "old_heading": "## Two worked examples that recompute",
+      "old_sha256": "6c204dd2f8356c64c35b131324c2b2cc5133682cebd2e186a6ff8ce5716d76c9",
+      "destination": "skills/benin/bj-business-income-tax.md",
+      "destination_lines": [
+        79,
+        127
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "old_lines": [
+        128,
+        136
+      ],
+      "old_heading": "## Ask the client first",
+      "old_sha256": "d60d2a8c59962d0ac03bed879781d12d177ba3474639eb5cdc28dd678c14aec8",
+      "destination": "skills/benin/bj-business-income-tax.md",
+      "destination_lines": [
+        128,
+        136
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-business-income-tax.md",
+      "old_lines": [
+        137,
+        145
+      ],
+      "old_heading": "## Sources",
+      "old_sha256": "f19248de5306a88195633d643c2e85557cb682f373794fb76e8299d6d3cff36f",
+      "destination": "skills/benin/bj-business-income-tax.md",
+      "destination_lines": [
+        137,
+        145
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "old_heading": "Complete preamble and first heading",
+      "old_sha256": "71f578afab9556345cfd3eed13a878db4e3cc771b28ea39520692b99f6aa9769",
+      "destination": "skills/benin/bj-company-formation.md",
+      "destination_lines": [
+        1,
+        18
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "old_lines": [
+        19,
+        24
+      ],
+      "old_heading": "## Who this applies to",
+      "old_sha256": "4bb723ef2c8486faa786a09a9bd1ed9208ab191b60f260e10a49ee3bbc13e732",
+      "destination": "skills/benin/bj-company-formation.md",
+      "destination_lines": [
+        19,
+        24
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "old_lines": [
+        25,
+        37
+      ],
+      "old_heading": "## Rates, bands and thresholds",
+      "old_sha256": "f0469fe0644f244310ca0d9c0982483a421937e1fa5d9f14f550a0852526e63d",
+      "destination": "skills/benin/bj-company-formation.md",
+      "destination_lines": [
+        25,
+        37
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "old_lines": [
+        38,
+        44
+      ],
+      "old_heading": "## The base",
+      "old_sha256": "5157f8b05ce411cc68569a47b9b9277c851ace278d6ee9cf41dfc568c0834ac2",
+      "destination": "skills/benin/bj-company-formation.md",
+      "destination_lines": [
+        38,
+        44
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "old_lines": [
+        45,
+        52
+      ],
+      "old_heading": "## Deadlines and filing",
+      "old_sha256": "83918a60cf4ab9d8b46dc1b219a00698d4ad90f3c6e634129d65668401989a4b",
+      "destination": "skills/benin/bj-company-formation.md",
+      "destination_lines": [
+        45,
+        52
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "old_lines": [
+        53,
+        56
+      ],
+      "old_heading": "## Penalties and interest",
+      "old_sha256": "3685af2169c67d721aae4c4e84c8e746692f42b43a4f4dd2ac69ecc2bdddd04c",
+      "destination": "skills/benin/bj-company-formation.md",
+      "destination_lines": [
+        53,
+        56
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "old_lines": [
+        57,
+        60
+      ],
+      "old_heading": "## Cross-border points",
+      "old_sha256": "af940f9428cae0a9fe3c49366daf95d7865e305990c8269c8ca31c7b870db6b7",
+      "destination": "skills/benin/bj-company-formation.md",
+      "destination_lines": [
+        57,
+        60
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "old_lines": [
+        61,
+        96
+      ],
+      "old_heading": "## Two worked examples that recompute",
+      "old_sha256": "5ce2b0b0dd464fc706cfc699efefafda7b4777056e478abfe9feff9c91f0d79b",
+      "destination": "skills/benin/bj-company-formation.md",
+      "destination_lines": [
+        61,
+        96
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "old_lines": [
+        97,
+        105
+      ],
+      "old_heading": "## Ask the client first",
+      "old_sha256": "4a656c5c5f18b86ac46f0a6c288a065dfee55fe90e15fb162e510b5673dd7839",
+      "destination": "skills/benin/bj-company-formation.md",
+      "destination_lines": [
+        97,
+        105
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "old_lines": [
+        106,
+        125
+      ],
+      "old_heading": "## Sources",
+      "old_sha256": "55fc047324ff53f2261ad22bede248648d2c671ab1ca3e7b71ea3dee3a4dd1c2",
+      "destination": "skills/benin/bj-company-formation.md",
+      "destination_lines": [
+        106,
+        125
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "old_lines": [
+        126,
+        138
+      ],
+      "old_heading": "## Talk to a verified accountant",
+      "old_sha256": "005813376f8bdb2cacbe92db5e7d809a13313cfda462f63e8f0718b6fc08d437",
+      "destination": "skills/benin/bj-company-formation.md",
+      "destination_lines": [
+        126,
+        138
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "old_heading": "Complete preamble and first heading",
+      "old_sha256": "ecba96fa9a4d0483541d717820b79a7fa7cd634627ff347cc6c0088f7ff1ea97",
+      "destination": "skills/benin/bj-corporate-income-tax.md",
+      "destination_lines": [
+        1,
+        18
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "old_lines": [
+        19,
+        24
+      ],
+      "old_heading": "## Who this applies to",
+      "old_sha256": "4eb3b9a23cbb65c42e4bec5a1e51d973f8af1a59c95e54995c6d80a000cfa824",
+      "destination": "skills/benin/bj-corporate-income-tax.md",
+      "destination_lines": [
+        19,
+        24
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "old_lines": [
+        25,
+        39
+      ],
+      "old_heading": "## Rates, bands and thresholds",
+      "old_sha256": "6c426d1f14d212ecb626c8f779c8ddb7b7c997155aa3d2d1d89d1432f3053302",
+      "destination": "skills/benin/bj-corporate-income-tax.md",
+      "destination_lines": [
+        25,
+        39
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "old_lines": [
+        40,
+        47
+      ],
+      "old_heading": "## The base",
+      "old_sha256": "99a2ef8f938764037175ab6b8009060478a3967c2a569267af4e6a25ac646dcd",
+      "destination": "skills/benin/bj-corporate-income-tax.md",
+      "destination_lines": [
+        40,
+        47
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "old_lines": [
+        48,
+        55
+      ],
+      "old_heading": "## Deadlines and filing",
+      "old_sha256": "51eecab3ab18b19a2b98253ad98b5c0abadd14e547384707334b6c1db8fb1227",
+      "destination": "skills/benin/bj-corporate-income-tax.md",
+      "destination_lines": [
+        48,
+        55
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "old_lines": [
+        56,
+        59
+      ],
+      "old_heading": "## Penalties and interest",
+      "old_sha256": "9d866812d0ee52d58043447f6fc16c2f15db4e4f014ef17b158936fbb760605d",
+      "destination": "skills/benin/bj-corporate-income-tax.md",
+      "destination_lines": [
+        56,
+        59
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "old_lines": [
+        60,
+        63
+      ],
+      "old_heading": "## Cross-border points",
+      "old_sha256": "84ed044e195680b0d0e9205b8372a1f2dd636067d14c5042533429c50bdf78aa",
+      "destination": "skills/benin/bj-corporate-income-tax.md",
+      "destination_lines": [
+        60,
+        63
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "old_lines": [
+        64,
+        103
+      ],
+      "old_heading": "## Two worked examples that recompute",
+      "old_sha256": "37920a6d07ae7d427d6154268eb5e82fef98684d8e8c54c998b9fe5a5234c2d8",
+      "destination": "skills/benin/bj-corporate-income-tax.md",
+      "destination_lines": [
+        64,
+        103
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "old_lines": [
+        104,
+        112
+      ],
+      "old_heading": "## Ask the client first",
+      "old_sha256": "ebf78c879e16d0a5cac792f1301380a191242bc3b56e550f12c8004e99696a4a",
+      "destination": "skills/benin/bj-corporate-income-tax.md",
+      "destination_lines": [
+        104,
+        112
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "old_lines": [
+        113,
+        125
+      ],
+      "old_heading": "## Sources",
+      "old_sha256": "4f14ab77b5ac3ab80ac32f09e6b7fd5b511cb41ab0da2d9375d482ab2813f162",
+      "destination": "skills/benin/bj-corporate-income-tax.md",
+      "destination_lines": [
+        113,
+        125
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "old_lines": [
+        126,
+        138
+      ],
+      "old_heading": "## Talk to a verified accountant",
+      "old_sha256": "005813376f8bdb2cacbe92db5e7d809a13313cfda462f63e8f0718b6fc08d437",
+      "destination": "skills/benin/bj-corporate-income-tax.md",
+      "destination_lines": [
+        126,
+        138
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "old_lines": [
+        1,
+        15
+      ],
+      "old_heading": "Complete preamble and first heading",
+      "old_sha256": "131ac398846fe0f3f3fbe0d38a10b3a0ef805051a081e854e45c2e12c14541cf",
+      "destination": "skills/benin/bj-cross-border-withholding.md",
+      "destination_lines": [
+        1,
+        15
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "old_lines": [
+        16,
+        21
+      ],
+      "old_heading": "## Who this applies to",
+      "old_sha256": "0d1bd380e410ca1ac1bbdc6590661ae6664ed39932f1ed5e6d20dff5feadaf40",
+      "destination": "skills/benin/bj-cross-border-withholding.md",
+      "destination_lines": [
+        16,
+        21
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "old_lines": [
+        22,
+        34
+      ],
+      "old_heading": "## Rates, bands and thresholds",
+      "old_sha256": "6e25a88c2e926f378b9717a289b9622f4aa7298f45753fa74a37685b2c6b9a0d",
+      "destination": "skills/benin/bj-cross-border-withholding.md",
+      "destination_lines": [
+        22,
+        34
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "old_lines": [
+        35,
+        43
+      ],
+      "old_heading": "## The base",
+      "old_sha256": "1ce2d5a813add45b0397fb7d504e84b23aeaebb60fc2f0152f9f297550721357",
+      "destination": "skills/benin/bj-cross-border-withholding.md",
+      "destination_lines": [
+        35,
+        43
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "old_lines": [
+        44,
+        51
+      ],
+      "old_heading": "## Deadlines and filing",
+      "old_sha256": "b353626db5f4b3a0db2c339ca293ea5047758ce35848b0b9f4d9111c66fc3807",
+      "destination": "skills/benin/bj-cross-border-withholding.md",
+      "destination_lines": [
+        44,
+        51
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "old_lines": [
+        52,
+        55
+      ],
+      "old_heading": "## Penalties and interest",
+      "old_sha256": "ebdaabb75ce0358f9c3c0d831c07001674786914f228b8d31b7592cdad2707d0",
+      "destination": "skills/benin/bj-cross-border-withholding.md",
+      "destination_lines": [
+        52,
+        55
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "old_lines": [
+        56,
+        59
+      ],
+      "old_heading": "## Cross-border points",
+      "old_sha256": "a30d43387442add8727e35f29e0d96d71cebefce509b90baf2ed3da35496cc06",
+      "destination": "skills/benin/bj-cross-border-withholding.md",
+      "destination_lines": [
+        56,
+        59
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "old_lines": [
+        60,
+        94
+      ],
+      "old_heading": "## Two worked examples that recompute",
+      "old_sha256": "f55f9e1de43050b5f1f441c0bbb389e1b8066a70b4c4eb83049daa3c15ead943",
+      "destination": "skills/benin/bj-cross-border-withholding.md",
+      "destination_lines": [
+        60,
+        94
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "old_lines": [
+        95,
+        103
+      ],
+      "old_heading": "## Ask the client first",
+      "old_sha256": "ec007e59f6a9a624b1277f7ed0c7a64fc48ccabf279891e7a3d58fd2f3b0d41c",
+      "destination": "skills/benin/bj-cross-border-withholding.md",
+      "destination_lines": [
+        95,
+        103
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "old_lines": [
+        104,
+        111
+      ],
+      "old_heading": "## Sources",
+      "old_sha256": "85b4428cb2463d0383574e98f416b2d43ef265fc11255f2e11585c38bc82cbc5",
+      "destination": "skills/benin/bj-cross-border-withholding.md",
+      "destination_lines": [
+        104,
+        111
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "old_heading": "Complete preamble and first heading",
+      "old_sha256": "321de91efad985a5a98821915259d5d62756f199bc01998105010e9dcadfdd40",
+      "destination": "skills/benin/bj-income-tax.md",
+      "destination_lines": [
+        1,
+        18
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "old_lines": [
+        19,
+        24
+      ],
+      "old_heading": "## Who this applies to",
+      "old_sha256": "5ba91151656da83c86a88db74cebc7c00cc8c6ba359053d3febb84fb073dde1a",
+      "destination": "skills/benin/bj-income-tax.md",
+      "destination_lines": [
+        19,
+        24
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "old_lines": [
+        25,
+        36
+      ],
+      "old_heading": "## Rates, bands and thresholds",
+      "old_sha256": "ab2d37e39e4b95b147ecfc40e454248e719b16f480abf3b11a1c456b28f1a2bf",
+      "destination": "skills/benin/bj-income-tax.md",
+      "destination_lines": [
+        25,
+        36
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "old_lines": [
+        37,
+        44
+      ],
+      "old_heading": "## The base",
+      "old_sha256": "9f6db71ea468050385fd211d7c472bcc2cf507ea2c99f0cc98ff8bbb0e893cde",
+      "destination": "skills/benin/bj-income-tax.md",
+      "destination_lines": [
+        37,
+        44
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "old_lines": [
+        45,
+        52
+      ],
+      "old_heading": "## Deadlines and filing",
+      "old_sha256": "c2f6187c289e0fdd5aa0e1c3a0a20928f2a597627a26181aa500a01eff6803ef",
+      "destination": "skills/benin/bj-income-tax.md",
+      "destination_lines": [
+        45,
+        52
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "old_lines": [
+        53,
+        56
+      ],
+      "old_heading": "## Penalties and interest",
+      "old_sha256": "9d866812d0ee52d58043447f6fc16c2f15db4e4f014ef17b158936fbb760605d",
+      "destination": "skills/benin/bj-income-tax.md",
+      "destination_lines": [
+        53,
+        56
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "old_lines": [
+        57,
+        60
+      ],
+      "old_heading": "## Cross-border points",
+      "old_sha256": "02501fc77ee6aaa4a2ba7f4a0750546b60541d8d107f1964c963c42c3733a124",
+      "destination": "skills/benin/bj-income-tax.md",
+      "destination_lines": [
+        57,
+        60
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "old_lines": [
+        61,
+        96
+      ],
+      "old_heading": "## Two worked examples that recompute",
+      "old_sha256": "a7c4d50363a2f36516a5be3ef1bfd8abc90ca2840c519fcbeba45ee6219dc85f",
+      "destination": "skills/benin/bj-income-tax.md",
+      "destination_lines": [
+        61,
+        96
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "old_lines": [
+        97,
+        105
+      ],
+      "old_heading": "## Ask the client first",
+      "old_sha256": "ee87dbb69a447409658c2425568712f8e8e615036962a655b8c68b1f6d5b4a10",
+      "destination": "skills/benin/bj-income-tax.md",
+      "destination_lines": [
+        97,
+        105
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "old_lines": [
+        106,
+        118
+      ],
+      "old_heading": "## Sources",
+      "old_sha256": "b1532f4b0d4b366db4137d1b11d109e363bd9bfc31fdd6f25aefd7263b6b5234",
+      "destination": "skills/benin/bj-income-tax.md",
+      "destination_lines": [
+        106,
+        118
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "old_lines": [
+        119,
+        131
+      ],
+      "old_heading": "## Talk to a verified accountant",
+      "old_sha256": "005813376f8bdb2cacbe92db5e7d809a13313cfda462f63e8f0718b6fc08d437",
+      "destination": "skills/benin/bj-income-tax.md",
+      "destination_lines": [
+        119,
+        131
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "old_heading": "Complete preamble and first heading",
+      "old_sha256": "2c3d89d42814a77dba7e33cdc6221fe92120858ac0960f798c364c08ddde13f9",
+      "destination": "skills/benin/bj-payroll-social.md",
+      "destination_lines": [
+        1,
+        18
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "old_lines": [
+        19,
+        22
+      ],
+      "old_heading": "## Who this applies to",
+      "old_sha256": "2d3ec4ad5b5b457e3858255cbcad4263b36c419aea4972687764c526ba6d63b6",
+      "destination": "skills/benin/bj-payroll-social.md",
+      "destination_lines": [
+        19,
+        22
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "old_lines": [
+        23,
+        32
+      ],
+      "old_heading": "## Rates, bands and thresholds",
+      "old_sha256": "749edfa923ec881a92c15d8b76bf0301fac3301eac77441751fb831352aa6eb3",
+      "destination": "skills/benin/bj-payroll-social.md",
+      "destination_lines": [
+        23,
+        32
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "old_lines": [
+        33,
+        39
+      ],
+      "old_heading": "## The base",
+      "old_sha256": "e0098da1e92460b3d2522be680a6e0cc35c1e49efab4b3faecfc503b0fae9eb2",
+      "destination": "skills/benin/bj-payroll-social.md",
+      "destination_lines": [
+        33,
+        39
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "old_lines": [
+        40,
+        45
+      ],
+      "old_heading": "## Deadlines and filing",
+      "old_sha256": "60eb6518c1a3904ccddc26aef46ab5d7cf26653216a0173e09324b177d9067a4",
+      "destination": "skills/benin/bj-payroll-social.md",
+      "destination_lines": [
+        40,
+        45
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "old_lines": [
+        46,
+        49
+      ],
+      "old_heading": "## Penalties and interest",
+      "old_sha256": "521a414102184002be37371802df829b01c4c96792c1a9ba7e7261cb9b7615f5",
+      "destination": "skills/benin/bj-payroll-social.md",
+      "destination_lines": [
+        46,
+        49
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "old_lines": [
+        50,
+        53
+      ],
+      "old_heading": "## Cross-border points",
+      "old_sha256": "d6add04075154ff59b860a9ac2ba786fb769ec41f751838f9db43002a52f0882",
+      "destination": "skills/benin/bj-payroll-social.md",
+      "destination_lines": [
+        50,
+        53
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "old_lines": [
+        54,
+        86
+      ],
+      "old_heading": "## Two worked examples that recompute",
+      "old_sha256": "1781469965173c7c67e8ed264310e6e726ec35b894c2c2bca5225a42c7c5fb90",
+      "destination": "skills/benin/bj-payroll-social.md",
+      "destination_lines": [
+        54,
+        86
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "old_lines": [
+        87,
+        95
+      ],
+      "old_heading": "## Ask the client first",
+      "old_sha256": "8ce502c1822c32456e509263c2aebbdff21190f93b0ab3e4648a655f9d9e9528",
+      "destination": "skills/benin/bj-payroll-social.md",
+      "destination_lines": [
+        87,
+        95
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "old_lines": [
+        96,
+        108
+      ],
+      "old_heading": "## Sources",
+      "old_sha256": "914dadb0c3b9b1599b4df207404e259de206871f266e91394954b958816d2100",
+      "destination": "skills/benin/bj-payroll-social.md",
+      "destination_lines": [
+        96,
+        108
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "old_lines": [
+        109,
+        121
+      ],
+      "old_heading": "## Talk to a verified accountant",
+      "old_sha256": "005813376f8bdb2cacbe92db5e7d809a13313cfda462f63e8f0718b6fc08d437",
+      "destination": "skills/benin/bj-payroll-social.md",
+      "destination_lines": [
+        109,
+        121
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "old_lines": [
+        1,
+        16
+      ],
+      "old_heading": "Complete preamble and first heading",
+      "old_sha256": "9416db25258dc3e05e2f6343f15836e08b9066af98153fb90dc42a090c33c579",
+      "destination": "skills/benin/bj-property-tfu.md",
+      "destination_lines": [
+        1,
+        16
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "old_lines": [
+        17,
+        26
+      ],
+      "old_heading": "## Who this applies to",
+      "old_sha256": "fc3e955742e2272be711ee337a09947e49eda8f0913acbd039402235dad562e4",
+      "destination": "skills/benin/bj-property-tfu.md",
+      "destination_lines": [
+        17,
+        26
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "old_lines": [
+        27,
+        34
+      ],
+      "old_heading": "## Rates, bands and thresholds",
+      "old_sha256": "f71496a5998368e326aa800371a0640e9c716ce516324dc206763cd72cd38010",
+      "destination": "skills/benin/bj-property-tfu.md",
+      "destination_lines": [
+        27,
+        34
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "old_lines": [
+        35,
+        52
+      ],
+      "old_heading": "## The base",
+      "old_sha256": "b48bb8c2fc17e645c32e786956db7ee45f618a481df23f2d2731ca63e20f351d",
+      "destination": "skills/benin/bj-property-tfu.md",
+      "destination_lines": [
+        35,
+        52
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "old_lines": [
+        53,
+        66
+      ],
+      "old_heading": "## Deadlines and filing",
+      "old_sha256": "212c51933f9ba01828b5e81eace2f39461fa5f15788099e84e89de7770fd9234",
+      "destination": "skills/benin/bj-property-tfu.md",
+      "destination_lines": [
+        53,
+        66
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "old_lines": [
+        67,
+        72
+      ],
+      "old_heading": "## Penalties and interest",
+      "old_sha256": "0fe4fe95cba1021e3ab19b7d35fe2e20bdf8e997aa1966b8757b3b97f51cca5d",
+      "destination": "skills/benin/bj-property-tfu.md",
+      "destination_lines": [
+        67,
+        72
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "old_lines": [
+        73,
+        76
+      ],
+      "old_heading": "## Cross-border points",
+      "old_sha256": "75e6783fed4914e667ecfb5bcef6da02b64caa4e7c8577539956ca5030568527",
+      "destination": "skills/benin/bj-property-tfu.md",
+      "destination_lines": [
+        73,
+        76
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "old_lines": [
+        77,
+        116
+      ],
+      "old_heading": "## Two worked examples that recompute",
+      "old_sha256": "f56a26b23e4574a971240a2874c1f462cf5a5e27506cf307604f2a8bfc44f6e9",
+      "destination": "skills/benin/bj-property-tfu.md",
+      "destination_lines": [
+        77,
+        116
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "old_lines": [
+        117,
+        127
+      ],
+      "old_heading": "## Ask the client first",
+      "old_sha256": "24728e9a5af810409fb8f3d8697f74697e6553a96598ed89571ed6cc3790e10c",
+      "destination": "skills/benin/bj-property-tfu.md",
+      "destination_lines": [
+        117,
+        127
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "old_lines": [
+        128,
+        136
+      ],
+      "old_heading": "## Sources",
+      "old_sha256": "236869a3371518be61a873510ed8c9857308af374e61f98d99fc0f145ec2143a",
+      "destination": "skills/benin/bj-property-tfu.md",
+      "destination_lines": [
+        128,
+        136
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "old_lines": [
+        1,
+        16
+      ],
+      "old_heading": "Complete preamble and first heading",
+      "old_sha256": "653cf41720468375262edbc306b938ed4ec9527abe88eff8b0199cf8b31e451a",
+      "destination": "skills/benin/bj-rental-income-tax.md",
+      "destination_lines": [
+        1,
+        16
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "old_lines": [
+        17,
+        24
+      ],
+      "old_heading": "## Who this applies to",
+      "old_sha256": "ced804a16435f136ae11de9d2f13ba8883255641df4b18bbd61b8f957e130655",
+      "destination": "skills/benin/bj-rental-income-tax.md",
+      "destination_lines": [
+        17,
+        24
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "old_lines": [
+        25,
+        33
+      ],
+      "old_heading": "## Rates, bands and thresholds",
+      "old_sha256": "9888a380fb46907e5403aa40a0ba01f5168e92e33887c3a5aeed6e49fc9bbdbf",
+      "destination": "skills/benin/bj-rental-income-tax.md",
+      "destination_lines": [
+        25,
+        33
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "old_lines": [
+        34,
+        43
+      ],
+      "old_heading": "## The base",
+      "old_sha256": "3e3b1adc38edf96d8dc93ebaf8218b17aac496560806e6272a21e278a884722d",
+      "destination": "skills/benin/bj-rental-income-tax.md",
+      "destination_lines": [
+        34,
+        43
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "old_lines": [
+        44,
+        61
+      ],
+      "old_heading": "## Deadlines and filing",
+      "old_sha256": "95df56b5269099e4b3b86bbe78695337d7d03d4744f5d85f967fa1db1d298901",
+      "destination": "skills/benin/bj-rental-income-tax.md",
+      "destination_lines": [
+        44,
+        61
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "old_lines": [
+        62,
+        65
+      ],
+      "old_heading": "## Penalties and interest",
+      "old_sha256": "012631fcd7300a910c9052fe6c4b0765aa3846ece2e1e7e12b9c2a0d92428dac",
+      "destination": "skills/benin/bj-rental-income-tax.md",
+      "destination_lines": [
+        62,
+        65
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "old_lines": [
+        66,
+        71
+      ],
+      "old_heading": "## Cross-border points",
+      "old_sha256": "8e2047d822a1793d372763c27fbb612a38d50c2259104bcf1f58c74ada363ae2",
+      "destination": "skills/benin/bj-rental-income-tax.md",
+      "destination_lines": [
+        66,
+        71
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "old_lines": [
+        72,
+        116
+      ],
+      "old_heading": "## Two worked examples that recompute",
+      "old_sha256": "4bee904563040e0f41cc7faac4c0cf0faf4f81bc0e6160fdf5b1f30a44e1bb41",
+      "destination": "skills/benin/bj-rental-income-tax.md",
+      "destination_lines": [
+        72,
+        116
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "old_lines": [
+        117,
+        128
+      ],
+      "old_heading": "## Ask the client first",
+      "old_sha256": "4a7fe9a720993bf29b3fef9bda03b615347881e8b9a39b9a60df510f9e365712",
+      "destination": "skills/benin/bj-rental-income-tax.md",
+      "destination_lines": [
+        117,
+        128
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "old_lines": [
+        129,
+        137
+      ],
+      "old_heading": "## Sources",
+      "old_sha256": "50748ccb84040f6eae19aebc73262cdf4dfce3f2b2abc482e05318f26bdd83c1",
+      "destination": "skills/benin/bj-rental-income-tax.md",
+      "destination_lines": [
+        129,
+        137
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "old_heading": "Complete preamble and first heading",
+      "old_sha256": "efcb641af2aba80ac4dbf7bc90904cc60de4736511b3fb717ec6f06c17384fa1",
+      "destination": "skills/benin/bj-tax-overview.md",
+      "destination_lines": [
+        1,
+        18
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "old_lines": [
+        19,
+        24
+      ],
+      "old_heading": "## Who this applies to",
+      "old_sha256": "71f55eb968a2c18067c0bdf4d56aff5194ee44c5d972e00d319d4415e04de5bb",
+      "destination": "skills/benin/bj-tax-overview.md",
+      "destination_lines": [
+        19,
+        24
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "old_lines": [
+        25,
+        36
+      ],
+      "old_heading": "## Rates, bands and thresholds",
+      "old_sha256": "15fc2d0350e4b6e44c6c47490e4a3d5aeee2817753cd11dc030d5f3b640ad641",
+      "destination": "skills/benin/bj-tax-overview.md",
+      "destination_lines": [
+        25,
+        36
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "old_lines": [
+        37,
+        43
+      ],
+      "old_heading": "## The base",
+      "old_sha256": "9c97e3900f62c4cb654571cefd4d86f1bc31aa59554f37cd40173104f6dd35cf",
+      "destination": "skills/benin/bj-tax-overview.md",
+      "destination_lines": [
+        37,
+        43
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "old_lines": [
+        44,
+        49
+      ],
+      "old_heading": "## Deadlines and filing",
+      "old_sha256": "fb19a776dcd96b98c4fe9bdb86e74e0fb86c8e9fc49e5642eebb75309e0b2f8b",
+      "destination": "skills/benin/bj-tax-overview.md",
+      "destination_lines": [
+        44,
+        49
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "old_lines": [
+        50,
+        62
+      ],
+      "old_heading": "## Penalties and interest",
+      "old_sha256": "d3368c65fe685adb99c03ab308978accc96fbf6c46aea1ba81beef921a0cbdda",
+      "destination": "skills/benin/bj-tax-overview.md",
+      "destination_lines": [
+        50,
+        62
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "old_lines": [
+        63,
+        66
+      ],
+      "old_heading": "## Cross-border points",
+      "old_sha256": "ed715ac0d35c977d9999753556d7cd93fff8964188bcda3fa23aa2f709aef49c",
+      "destination": "skills/benin/bj-tax-overview.md",
+      "destination_lines": [
+        63,
+        66
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "old_lines": [
+        67,
+        102
+      ],
+      "old_heading": "## Two worked examples that recompute",
+      "old_sha256": "b473a8a2dc58c42258daf07c18fd3cc861274e4a0440397ceafa877f3c7eebb5",
+      "destination": "skills/benin/bj-tax-overview.md",
+      "destination_lines": [
+        67,
+        102
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "old_lines": [
+        103,
+        111
+      ],
+      "old_heading": "## Ask the client first",
+      "old_sha256": "0b0e1f4f3076445d06f4811d6baefd3839e6de6f82e4f524276a059f6d12d13b",
+      "destination": "skills/benin/bj-tax-overview.md",
+      "destination_lines": [
+        103,
+        111
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "old_lines": [
+        112,
+        125
+      ],
+      "old_heading": "## Sources",
+      "old_sha256": "3342eb472ccf692279c8563a38ab2678eb7e07796f47e0ed46ff1acc8637a8a8",
+      "destination": "skills/benin/bj-tax-overview.md",
+      "destination_lines": [
+        112,
+        125
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "old_lines": [
+        126,
+        138
+      ],
+      "old_heading": "## Talk to a verified accountant",
+      "old_sha256": "005813376f8bdb2cacbe92db5e7d809a13313cfda462f63e8f0718b6fc08d437",
+      "destination": "skills/benin/bj-tax-overview.md",
+      "destination_lines": [
+        126,
+        138
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "old_lines": [
+        1,
+        15
+      ],
+      "old_heading": "Complete preamble and first heading",
+      "old_sha256": "871ea86fc3b82b43ce4eedc0b35fe9a26d63495ac583418c89ca9a1728ababc0",
+      "destination": "skills/benin/bj-transfer-pricing.md",
+      "destination_lines": [
+        1,
+        15
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "old_lines": [
+        16,
+        21
+      ],
+      "old_heading": "## Who this applies to",
+      "old_sha256": "19e796a53336affe066a6c7d03593dd95dfd1ed5df631ab391cd88379bc49577",
+      "destination": "skills/benin/bj-transfer-pricing.md",
+      "destination_lines": [
+        16,
+        21
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "old_lines": [
+        22,
+        32
+      ],
+      "old_heading": "## Rates, bands and thresholds",
+      "old_sha256": "7bdf0e070e261264807ca860136762fff08e55e0f29d23a0507928688b91b36e",
+      "destination": "skills/benin/bj-transfer-pricing.md",
+      "destination_lines": [
+        22,
+        32
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "old_lines": [
+        33,
+        40
+      ],
+      "old_heading": "## The base",
+      "old_sha256": "b939595709ab18dac795a59764a3a6d5e56c830467642df7bfdddcae26dbf680",
+      "destination": "skills/benin/bj-transfer-pricing.md",
+      "destination_lines": [
+        33,
+        40
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "old_lines": [
+        41,
+        46
+      ],
+      "old_heading": "## Deadlines and filing",
+      "old_sha256": "31c10729980d440722c52e2fabf121b741b9e4d98d2a92841f249f73f1851e4a",
+      "destination": "skills/benin/bj-transfer-pricing.md",
+      "destination_lines": [
+        41,
+        46
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "old_lines": [
+        47,
+        50
+      ],
+      "old_heading": "## Penalties and interest",
+      "old_sha256": "b220577c7ce012ff3f4ee1d82a57c8974d24f2e006e227dc3678ec5d9d6933a4",
+      "destination": "skills/benin/bj-transfer-pricing.md",
+      "destination_lines": [
+        47,
+        50
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "old_lines": [
+        51,
+        54
+      ],
+      "old_heading": "## Cross-border points",
+      "old_sha256": "0358564103f6184fe8f82ecff4f354f605e16873614a3317a076e0221ab156e8",
+      "destination": "skills/benin/bj-transfer-pricing.md",
+      "destination_lines": [
+        51,
+        54
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "old_lines": [
+        55,
+        90
+      ],
+      "old_heading": "## Two worked examples that recompute",
+      "old_sha256": "bbf36cb56317e4e736943b355375e4841eaba700d2de94ed5b9bf204d947651f",
+      "destination": "skills/benin/bj-transfer-pricing.md",
+      "destination_lines": [
+        55,
+        90
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "old_lines": [
+        91,
+        99
+      ],
+      "old_heading": "## Ask the client first",
+      "old_sha256": "050c3513d005d9bd16961bb309b8d4e1c366101e85fd604e6badf817c40c27bd",
+      "destination": "skills/benin/bj-transfer-pricing.md",
+      "destination_lines": [
+        91,
+        99
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "old_lines": [
+        100,
+        107
+      ],
+      "old_heading": "## Sources",
+      "old_sha256": "c6ff795c34b7868c43262d8891792df4f5666f3c94f1fe80139424ff35b3e4b9",
+      "destination": "skills/benin/bj-transfer-pricing.md",
+      "destination_lines": [
+        100,
+        107
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "old_lines": [
+        1,
+        18
+      ],
+      "old_heading": "Complete preamble and first heading",
+      "old_sha256": "3f3ff816b008657f98d45bb7c10ca2f7cc14211b4a9d6c76a8234a225110e5b0",
+      "destination": "skills/benin/bj-vat-gst.md",
+      "destination_lines": [
+        1,
+        18
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "old_lines": [
+        19,
+        24
+      ],
+      "old_heading": "## Who this applies to",
+      "old_sha256": "7f16f8ae22f19c9f05ed364e36e2d9a141f62d0f879eb30123cbd5ca5ccf435e",
+      "destination": "skills/benin/bj-vat-gst.md",
+      "destination_lines": [
+        19,
+        24
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "old_lines": [
+        25,
+        38
+      ],
+      "old_heading": "## Rates, bands and thresholds",
+      "old_sha256": "0dd5cd3415df637cd9d62b710474e88fab307caeed61489653c6b02fbab6ebf1",
+      "destination": "skills/benin/bj-vat-gst.md",
+      "destination_lines": [
+        25,
+        38
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "old_lines": [
+        39,
+        47
+      ],
+      "old_heading": "## The base",
+      "old_sha256": "d3d80c4eb56cc99190dc540b0cf482be5c978e92ce61aac265a7bf38c631921f",
+      "destination": "skills/benin/bj-vat-gst.md",
+      "destination_lines": [
+        39,
+        47
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "old_lines": [
+        48,
+        53
+      ],
+      "old_heading": "## Deadlines and filing",
+      "old_sha256": "512a6d87baeda61695c1981644a8420738e8d92b6334d92467d0ac80ccd85d5c",
+      "destination": "skills/benin/bj-vat-gst.md",
+      "destination_lines": [
+        48,
+        53
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "old_lines": [
+        54,
+        57
+      ],
+      "old_heading": "## Penalties and interest",
+      "old_sha256": "6556883499ea790ffc0494bf6b8b099301a55d653245eaa78f7b1ba07de8f80a",
+      "destination": "skills/benin/bj-vat-gst.md",
+      "destination_lines": [
+        54,
+        57
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "old_lines": [
+        58,
+        65
+      ],
+      "old_heading": "## Cross-border points",
+      "old_sha256": "eb84e5b533f3f9e69dc0167a9dc29f070d10783f42444ff407c3ee41b3762d89",
+      "destination": "skills/benin/bj-vat-gst.md",
+      "destination_lines": [
+        58,
+        65
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "old_lines": [
+        66,
+        98
+      ],
+      "old_heading": "## Two worked examples that recompute",
+      "old_sha256": "ff13ff19462282183267d637b27ea83eebb97a5ec3648c6af6063dff8b6708b8",
+      "destination": "skills/benin/bj-vat-gst.md",
+      "destination_lines": [
+        66,
+        98
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "old_lines": [
+        99,
+        107
+      ],
+      "old_heading": "## Ask the client first",
+      "old_sha256": "bb5073d9c7bc115d2474fe5644be0fdb139f28272a9452fcf53a50439794a628",
+      "destination": "skills/benin/bj-vat-gst.md",
+      "destination_lines": [
+        99,
+        107
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "old_lines": [
+        108,
+        121
+      ],
+      "old_heading": "## Sources",
+      "old_sha256": "91a3588070cd45832de83d5073d9a4195cce842897aaa01c1ceb6a6e5327e23d",
+      "destination": "skills/benin/bj-vat-gst.md",
+      "destination_lines": [
+        108,
+        121
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "old_lines": [
+        122,
+        134
+      ],
+      "old_heading": "## Talk to a verified accountant",
+      "old_sha256": "005813376f8bdb2cacbe92db5e7d809a13313cfda462f63e8f0718b6fc08d437",
+      "destination": "skills/benin/bj-vat-gst.md",
+      "destination_lines": [
+        122,
+        134
+      ],
+      "status": "Unchanged byte-for-byte; no migration or lost content."
+    }
+  ]
+}

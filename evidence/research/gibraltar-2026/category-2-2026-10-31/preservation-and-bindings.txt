@@ -1,0 +1,1 @@
+PASS: 18 inherited Guides unchanged; seven partial values unchanged; 36 row bindings; 50 exact excerpt/source bindings; four controls; 98-word description; no new full captures in evidence

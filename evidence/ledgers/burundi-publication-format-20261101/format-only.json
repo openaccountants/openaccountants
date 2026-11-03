@@ -1,0 +1,18 @@
+{
+  "prior_head": "314ccd3fc43de59bddfa8460ce920ac4f6d324ba",
+  "reason": "Committed-diff publication whitespace check found new blank line at EOF. No legal text, examples, metadata, platform suffix or historical review record changed.",
+  "files": {
+    "skills/burundi/bi-cross-border-tax.md": {
+      "before_sha256": "c219a5198c226f825cf919795e32d8f9b3fe24f5bcce16bf44d85dc84a417920",
+      "after_sha256": "4f22ac541b9c7a8c3c2f3fed08fca6e5fbe932fa86c02e5162364bb95480258a",
+      "removed_bytes": 1,
+      "identical_except_terminal_newlines": true
+    },
+    "skills/burundi/bi-transfer-pricing.md": {
+      "before_sha256": "a0248c77314fc08d69ce49604b6b355340a12fdc8ec529b0692989448bca246a",
+      "after_sha256": "464cdcb4c2da2eeb2548e5275a629f10fba645501b6aacacf5454fc0d580710d",
+      "removed_bytes": 1,
+      "identical_except_terminal_newlines": true
+    }
+  }
+}

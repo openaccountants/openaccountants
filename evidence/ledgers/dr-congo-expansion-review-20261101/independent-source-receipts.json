@@ -1,0 +1,30 @@
+[
+  {
+    "url": "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+    "captured_file": "../sources/loi-is-et-irpp-23-053.pdf",
+    "captured_sha256": "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+    "checked_utc": "2026-11-01T10:28:33.462128+00:00",
+    "fetch_error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+    "captured_file": "../sources/lf-2026-recettes.pdf",
+    "captured_sha256": "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+    "checked_utc": "2026-11-01T10:28:33.504615+00:00",
+    "fetch_error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf",
+    "captured_file": "../sources/lfr-2026-recettes.pdf",
+    "captured_sha256": "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127",
+    "checked_utc": "2026-11-01T10:28:33.607583+00:00",
+    "fetch_error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "url": "https://www.budget.gouv.cd/wp-content/uploads/budget2025/budget2025_rect/lf_2025_recettes.pdf",
+    "captured_file": "../sources/lfr2025-carryforward.pdf",
+    "captured_sha256": "f5550e6eae855c868b8e449f78f3d5b4e337df543dcff3dbf3d5fa9428066d33",
+    "checked_utc": "2026-11-01T10:28:33.673004+00:00",
+    "fetch_error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  }
+]

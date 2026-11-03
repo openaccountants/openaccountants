@@ -1,0 +1,11 @@
+{
+  "key": "cnas-internal-dispositions",
+  "requested_url": "https://cnas.gov.md/ro/dispozitii",
+  "retrieved_utc": "2026-10-30T12:28:23.638717+00:00",
+  "status": 200,
+  "final_url": "https://cnas.gov.md/ro/dispozitii",
+  "content_type": "text/html; charset=UTF-8",
+  "sha256": "f7f4f37abfc4aab7ab73db28c19fcd1b5973bbb0a78216d19793ae8c80e57c2b",
+  "bytes": 73212,
+  "body_reviewed": false
+}

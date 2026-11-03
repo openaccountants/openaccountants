@@ -1,0 +1,212 @@
+[
+  {
+    "file": "skills/gibraltar/gi-foreign-tax-relief.md",
+    "before_sha256": "687efe3dfe1089ee670de5f815fa0c2df7ce586b367f131b4f3dc632acb889d0",
+    "after_sha256": "d5427c1d432b62cd9eca6dfd2c7b2128e51d92f13eac053469feb8cb7f38df39",
+    "operations": [
+      "relative source/review links follow current repository layout"
+    ],
+    "before_file": "mechanical-before/gi-foreign-tax-relief.md",
+    "tax_rules_figures_examples": "unchanged; URLs/dates/version/layout metadata only"
+  },
+  {
+    "file": "skills/gibraltar/gi-transaction-tax-transition.md",
+    "before_sha256": "e3cd1675fbf0c91606c46805c4f17957c3559cec6a89d4065e139492890962a0",
+    "after_sha256": "714ebf8daa59de87450022bf5cc333ac859af1099360be5c56dc4084ea5966ac",
+    "operations": [
+      "relative source/review links follow current repository layout"
+    ],
+    "before_file": "mechanical-before/gi-transaction-tax-transition.md",
+    "tax_rules_figures_examples": "unchanged; URLs/dates/version/layout metadata only"
+  },
+  {
+    "file": "skills/gibraltar/gi-corporate-tax.md",
+    "before_sha256": "05e4c9766b7b75b5fba043717272a9e41b8078609f0ceafc220ee0058ab85a61",
+    "after_sha256": "56166f611c15fa93aa60868024b94fdaf0b82129eb1ffe24c81b3e3dc0c3475f",
+    "operations": [
+      "relative source/review links follow current repository layout",
+      {
+        "source_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf",
+        "read_date": "2026-10-28",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Guidance%20Notes%20for%20Companies,%2008-2025.pdf",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+        "read_date": "2026-10-28",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force",
+        "read_date": "2026-10-28",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-5-permanent-establishment",
+        "read_date": "2026-10-28",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-7-business-profits",
+        "read_date": "2026-10-28",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-9-associated-enterprises",
+        "read_date": "2026-10-28",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-21-miscellaneous-rules-applicable-to-certain-offshore-activities",
+        "read_date": "2026-10-28",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltar.gov.gi/income-tax-office/businesses-and-corporations/corporate",
+        "read_date": "2026-10-28",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltar.gov.gi/new/sites/default/files/1/01/guidance_on_business_entertainment_expenditure.pdf",
+        "read_date": "2026-10-28",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltar.gov.gi/income-tax-office/downloads-ito",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Corporate/Schedule%2010%20Table%20-%20Payments%20on%20Account%20-%202022%20to%202033.pdf",
+        "read_date": "2026-10-28",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      }
+    ],
+    "before_file": "mechanical-before/gi-corporate-tax.md",
+    "tax_rules_figures_examples": "unchanged; URLs/dates/version/layout metadata only"
+  },
+  {
+    "file": "skills/gibraltar/gi-connected-party-pricing-and-interest.md",
+    "before_sha256": "4ff2917da47d9a8cd1eb324a32516ea09f3d1aceba9680950bb2f08306de690b",
+    "after_sha256": "e1240542c19a0c4f3cac8a0252f4f8d2e2571d6188b154a4d91e928f2f1be80d",
+    "operations": [
+      "relative source/review links follow current repository layout"
+    ],
+    "before_file": "mechanical-before/gi-connected-party-pricing-and-interest.md",
+    "tax_rules_figures_examples": "unchanged; URLs/dates/version/layout metadata only"
+  },
+  {
+    "file": "skills/gibraltar/gi-payroll-social-insurance.md",
+    "before_sha256": "4c1907642149170bcee776b6a9ae56569b44e568557cf67fa2bae931b7c85389",
+    "after_sha256": "801ccb9427aa93f38ce6faad5033ca223353e13932f629ca17c3cee51c4edad7",
+    "operations": [
+      "relative source/review links follow current repository layout",
+      {
+        "source_url": "https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/employers",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/P8%20SUBMISSION%20GUIDE%202025-2026.pdf",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s114/1989s114(01-07-23).pdf",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Notes%20for%20guidance%20of%20employers%202025-2026_%20(002).pdf",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Daily%20Part%201%20codes%2019%20-%2036.pdf",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/PAYE/20252026/Monthly%20Part%201%20Codes%2019%20-%2036.pdf",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/Social%20Insurance%20Contributions%20Class%202026-2027x.pdf",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955-14/1955-14(01-07-25).pdf",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2001s032/2001s032.pdf",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/2024s086/2024s086.pdf",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gov.uk/guidance/social-security-contributions-for-workers-coming-to-the-uk-from-the-eea-or-switzerland",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltar.gov.gi/income-tax-office/employers-and-trusts/detached-workers",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gov.uk/guidance/tell-hmrc-about-employees-going-to-work-in-the-european-economic-area-ca3822",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gov.uk/guidance/apply-for-a-certificate-or-document-if-self-employed-in-the-eu-eea-or-switzerland-ca3837",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      {
+        "source_url": "https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/social-insurance",
+        "read_date": "2026-10-22",
+        "basis": "existing per-source frontmatter; original22October read paragraph for otherwise unchanged source list"
+      },
+      "attach existing immediate-table source URL on the row; no number/condition altered",
+      "attach existing immediate-table source URL on the row; no number/condition altered",
+      "attach existing immediate-table source URL on the row; no number/condition altered",
+      "attach existing immediate-table source URL on the row; no number/condition altered",
+      "attach existing immediate-table source URL on the row; no number/condition altered",
+      "All10 published-rate/diagnostic rows now carry their existing immediate-context sources; distinction between historical notes and current-linked table retained."
+    ],
+    "before_file": "mechanical-before/gi-payroll-social-insurance.md",
+    "tax_rules_figures_examples": "unchanged; URLs/dates/version/layout metadata only"
+  },
+  {
+    "file": "skills/gibraltar/gi-individual-income-tax.md",
+    "before_sha256": "793d59fe22b71567a70ff4cc3f6114d1d1724b83b16ebf2482a53ac0c0268c8c",
+    "after_sha256": "5039468a5ba8c3bf6baf5b752174fe81099449fd565d2c017897fb26cc6a197c",
+    "operations": [
+      "relative source/review links follow current repository layout",
+      "attach existing immediate-table source URL on the row; no number/condition altered",
+      "attach existing immediate-table source URL on the row; no number/condition altered",
+      "attach existing immediate-table source URL on the row; no number/condition altered",
+      "attach existing immediate-table source URL on the row; no number/condition altered"
+    ],
+    "before_file": "mechanical-before/gi-individual-income-tax.md",
+    "tax_rules_figures_examples": "unchanged; URLs/dates/version/layout metadata only"
+  }
+]

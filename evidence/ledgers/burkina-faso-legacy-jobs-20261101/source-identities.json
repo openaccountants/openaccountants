@@ -1,0 +1,22 @@
+[
+  {
+    "file": "cgi-2026.pdf",
+    "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+    "sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+    "bytes": 3933091,
+    "read_date": "2026-11-01",
+    "actual_read_scope": "Selected articles itemised in each ledger and Guide source table, with neighbouring definitions/exceptions. This pass read 11, 14, 24–27, 49, 53–56, 87–91, 96-1–96-2, 196–197, 228–229, 300–301, 527–540, 554–557, 561-1, 561-4; prior accepted jobs are routed, not newly reverified.",
+    "text_reader_sha256": "5ff548291b0cc4c5ebeedea213037f657a9285a7ae1b23cfa1265668e5d79540",
+    "raw_text_reader_sha256": "a13190c507500fcd5dd257ceca0fec95416179d5e9320a0bda35130ddc6e35d5",
+    "parent_repair_read_scope": "2026-11-01: original CGI arts.196(2),227–229 actual text and arts.65–66 raw column-order text fully read; original activity-specific OHADA21 rule separately checked. Source clauses do not establish a TPA no-cumulation rule."
+  },
+  {
+    "file": "formation-auscgie.pdf",
+    "official_url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+    "sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+    "bytes": 16313466,
+    "read_date": "2026-11-01",
+    "actual_read_scope": "Actual signed Act payload 2032 reused from same-run DR Congo source cache. Physical pages 8–13, 28, 36, 76–78, 93, 95–96, 207–208 selected provisions. SA pages 95–96 also visually inspected. National SARL derogation not read.",
+    "text_reader_sha256": "30896817ff4b8c57e40c6b5640d2d7c4801fdf04627c20c7e8708afcad4c4726"
+  }
+]

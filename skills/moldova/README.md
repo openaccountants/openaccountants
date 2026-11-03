@@ -1,39 +1,51 @@
 ---
 jurisdiction: MD
-version: 0.4
+version: "2.25"
 last_updated: 2026-10-31
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
+  IT-IND: moldova-income-tax
+  IT-CORP: md-corporate-income-tax
+  VAT: moldova-vat
+  SC: moldova-social-contributions
+  PR: moldova-payroll
   TP: md-transfer-pricing
   XB: md-cross-border
 partial:
-  PR: "moldova-payroll gives the annual withholding computation; the Government method for monthly withholding (Fiscal Code art. 88(1)) is not confirmed"
-  XB: "md-cross-border covers nonresident withholding, permanent establishments, treaty proof and the foreign tax credit; individual residence tests and permanent-establishment profit computation are not covered"
+  IT-IND: "Business deductions, return contradictions, dependent relief and special-regime procedures remain incomplete."
+  IT-CORP: "Foreign-credit and donation variants, assets, deferred distributions and sector/entity procedures remain incomplete."
+  VAT: "Refunds, non-exact pro-rata rounding, currency conversion, e-services and specialist procedures remain incomplete."
+  SC: "CNAM correction entitlement, farm/special categories, status and agreement procedures remain incomplete."
+  PR: "Ambiguous return fields, foreign-currency loans, benefits, leave and special categories remain incomplete."
+  TP: "IUPT ambiguities, retention, APA payment/refund, corresponding adjustments and specialist routes remain incomplete."
+  XB: "Treaty applications, additional PE forms, refunds, departure and credit procedures remain incomplete."
 ---
 
-# Moldova: tax pack
+# Moldova tax pack
 
-Moldova taxes income under the Fiscal Code No. 1163/1997, administered by the State Tax Service (SFS). The fiscal period is the calendar year and the currency is the Moldovan leu (MDL). Payers withhold tax at source on Moldova-source income paid to nonresidents.
+This is a 2026 source-cited draft pack. Ten predecessor Guides received a [bounded independent source review](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-REVIEW.md) covering 3,913 ledger claims, 50 arithmetic blocks, 58 standalone cases and 80 sampled predecessor topics. [The decision](../../evidence/ledgers/md-country-evidence/independent-review/FINAL-DECISION.json) confirms that all seven tax domains remain partial. No accountant has attested to the pack. Completion remains tracked in [issue #411](https://github.com/openaccountants/openaccountants/issues/411); the consolidated batch is [PR #1057](https://github.com/openaccountants/openaccountants/pull/1057). Ownership is recorded in [docs/OWNERS.md](../../docs/OWNERS.md).
 
 ## Domains
 
-| Domain | Skill | Status |
+| Domain | Guide | Quality |
 |---|---|---|
-| IT-IND, individual income tax | moldova-income-tax, md-tax-overview, moldova-tax-optimization | checked against the law |
-| IT-CORP, corporate income tax | md-corporate-income-tax, md-company-formation | checked against the law (2026; PRs #1008, #1010) |
-| VAT | moldova-vat | checked against the law |
-| SC, social contributions | moldova-social-contributions | checked against the law |
-| PR, payroll withholding | moldova-payroll | checked against the law, partial |
-| TP, transfer pricing | md-transfer-pricing | checked against the law |
-| XB, cross-border | md-cross-border | checked against the law, partial |
+| IT-IND, individual income tax | [moldova-income-tax](moldova-income-tax.md) | sourced from the law; partial |
+| IT-CORP, corporate income tax | [md-corporate-income-tax](md-corporate-income-tax.md) | sourced from the law; partial |
+| VAT | [VAT12](moldova-vat.md), [refund application](md-vat-refund.md) | sourced from the law; partial |
+| SC, social and medical contributions | [moldova-social-contributions](moldova-social-contributions.md) | sourced from the law; partial |
+| PR, payroll withholding | [moldova-payroll](moldova-payroll.md) | sourced from the law; partial |
+| TP, transfer pricing | [md-transfer-pricing](md-transfer-pricing.md) | sourced from the law; partial |
+| XB, cross-border | [md-cross-border](md-cross-border.md) | sourced from the law; partial |
 
-Treaty-by-treaty withholding rates are out of scope for the pack.
+Supporting Guides cover [company formation](md-company-formation.md), [tax-system and reporting orientation](md-tax-overview.md), and [tax planning and the IT-park interface](moldova-tax-optimization.md). They do not replace a missing operative tax method. Each Guide states its remaining source and procedure questions under Sources. The [reviewed gap classification](../../evidence/ledgers/md-country-evidence/independent-review/final-gap-classification.json) is the detailed completion checklist. Local, excise, natural-resource, road and administration jobs, together with the existing domain gaps, remain on the [country completion scope](../../evidence/ledgers/md-country-evidence/vat-refund-20261031/completion-scope-and-next-jobs.json).
 
-## Official sources
+The VAT refund application Guide has a separate [185-row source ledger](../../evidence/ledgers/md-vat-refund.md). Its repaired delta received [bounded independent acceptance on 31 October 2026](../../evidence/ledgers/md-country-evidence/vat-refund-20261031/independent-delta-review/closure-421d33d0/CLOSURE-REVIEW.md), for partial tier-2 publication. This does not clear the remaining VAT gaps or establish country completion.
 
-| Source | URL | Read on |
-|---|---|---|
-| Fiscal Code No. 1163/1997, consolidated text in force 30 October 2026 | https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro | 2026-10-30 |
-| Law No. 187/2025 amending certain normative acts (transfer-pricing filing from fiscal period 2025) | https://www.legis.md/cautare/getResults?doc_id=149593&lang=ro | 2026-10-30 |
-| State Tax Service | https://www.sfs.md | not read (human check) |
+New [property and land tax](md-property-tax.md) and [residential-property wealth tax](md-wealth-tax.md) methods were drafted on 31 October 2026. They have separate [property](../../evidence/ledgers/md-property-tax.md) and [wealth](../../evidence/ledgers/md-wealth-tax.md) ledgers and [complete predecessor-topic destinations](../../evidence/ledgers/md-country-evidence/property-wealth-20261031/OLD-TOPIC-DESTINATIONS.md). Their three review findings and the citation-format repairs in seven legacy Guides received [bounded independent acceptance on 31 October 2026](../../evidence/ledgers/md-country-evidence/property-wealth-20261031/writer-repair-e154e1b/independent-closure/final-report.md). The property method retains the irrigation-exemption first-year/code and unevaluated farm-land reporting questions, plus case-specific municipal inputs; Guide presence does not close those questions or the country.
+
+## Official sources and evidence
+
+- [Fiscal Code No. 1163/1997, operative consolidation of 30 October 2026](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro): selected operative provisions read 30–31 October 2026; individual source scope and dates are recorded in the Guide ledgers.
+- [SFS transfer-pricing page](https://www.sfs.md/ro/pagina/preturi-de-transfer): used with the enacted Code, Ministry orders and approved forms cited in the TP Guide, read 30–31 October 2026.
+- [Source records and predecessor reconciliations](../../evidence/ledgers/md-country-evidence/): original material, official attachments, exact quotations, calculation controls and independent findings are preserved. Earlier writer status notes are historical, including the [previous README](../../evidence/ledgers/md-country-evidence/layout-20261031/README-before-map-repair.md).

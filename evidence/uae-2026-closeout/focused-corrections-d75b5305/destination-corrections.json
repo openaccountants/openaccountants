@@ -1,0 +1,79 @@
+[
+  {
+    "original_identity": {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "original_line": 308,
+      "old_text": "| Error found by the FTA without a voluntary disclosure | 15% of the tax difference, plus 1% a month |",
+      "original_sha256": "4fd52d846a06db31c1210ac38083f74d0530a3094d2100350fb2dc9f1b8378f1"
+    },
+    "superseded_destination": "skills/uae/ae-corporate-tax.md line 346",
+    "corrected_destinations": [
+      {
+        "path": "skills/uae/ae-corporate-tax.md",
+        "line": 352,
+        "text": "| Failure to disclose an error before audit notification | 15% of the tax difference, plus 1% per month or part; the end date depends on whether a disclosure is later submitted or an assessment is issued (Decision 75/2023 table item 11) |"
+      }
+    ],
+    "independent_acceptance": "PENDING focused closure; other 376 non-retained acceptances stay OPEN"
+  },
+  {
+    "original_identity": {
+      "guide": "uae-vat",
+      "version": "base",
+      "original_line": 135,
+      "old_text": "- A supplier that is UAE-registered (TRN on the invoice) charges UAE VAT in the normal way: Box 9, not Box 3.",
+      "original_sha256": "44ecaac78153c33d5e714d3921c8b86f00591599a7472062f917a9626bb8d3b9"
+    },
+    "superseded_destination": "skills/uae/uae-vat.md line 173",
+    "corrected_destinations": [
+      {
+        "path": "skills/uae/uae-vat.md",
+        "line": 133,
+        "text": "- Do not decide reverse charge from a TRN alone. Check the supplier's residence, the place of supply, who accounts for VAT and any domestic reverse charge. A valid UAE tax invoice for a normal domestic standard-rated purchase belongs in Box 9; a TRN does not override Article 48."
+      }
+    ],
+    "independent_acceptance": "PENDING focused closure; other 376 non-retained acceptances stay OPEN"
+  },
+  {
+    "original_identity": {
+      "guide": "uae-vat",
+      "version": "base",
+      "original_line": 171,
+      "old_text": "- Services supplied in a Designated Zone are treated as supplied inside the UAE: 5% as normal. Water and energy too.",
+      "original_sha256": "44ecaac78153c33d5e714d3921c8b86f00591599a7472062f917a9626bb8d3b9"
+    },
+    "superseded_destination": "skills/uae/uae-vat.md line 181",
+    "corrected_destinations": [
+      {
+        "path": "skills/uae/uae-vat.md",
+        "line": 178,
+        "text": "- A Designated Zone does not automatically put services outside UAE VAT. Article 51(6) treats their place of supply as inside the UAE, subject to the tightly conditioned shipping/delivery exception in Article 51(7). Apply the normal rate or exemption rules, rather than assuming every service is 5%. Water and energy are inside the UAE under Article 51(8)."
+      }
+    ],
+    "independent_acceptance": "PENDING focused closure; other 376 non-retained acceptances stay OPEN"
+  },
+  {
+    "original_identity": {
+      "guide": "ae-corporate-tax",
+      "version": "base",
+      "original_line": 127,
+      "old_text": "**Consequence of failing:** a QFZP that fails any condition, or elects out, is taxed at the standard rates from the start of that tax period **and for the four following tax periods**.",
+      "original_sha256": "4fd52d846a06db31c1210ac38083f74d0530a3094d2100350fb2dc9f1b8378f1"
+    },
+    "superseded_destination": "skills/uae/ae-corporate-tax.md line 227",
+    "corrected_destinations": [
+      {
+        "path": "skills/uae/ae-corporate-tax.md",
+        "line": 128,
+        "text": "**Consequence of failing:** failure of a condition removes QFZP status from the start of that period and for the next four periods (MD 229/2025 Article 5). An election to use standard rates takes effect from the current or following period under Corporate Tax Law Article 19; the election-duration rules are a separate unconfirmed hold below."
+      },
+      {
+        "path": "skills/uae/ae-corporate-tax.md",
+        "line": 400,
+        "text": "Not yet confirmed: NON-OPERATIVE HOLDS: detailed MD 229/2025 activity classification under Article 2(3)-(4); detailed exemption applications under FTA Decision 15/2026, the QFZP election-duration rule, the separate Cabinet Decision 44/2020 MNE definition used for Small Business Relief, accounting-standard/cash-basis eligibility under MD 114/2023, detailed top-up-tax computation and later information-return implementation, and the records-content requirements of FTA Decision 4/2026. Do not determine these from this Guide. The immutable old text and rule destinations are in evidence/uae-2026-closeout. These holds do not suspend the seven-year retention rule expressly required by Corporate Tax Law Article 56."
+      }
+    ],
+    "independent_acceptance": "PENDING focused closure; other 376 non-retained acceptances stay OPEN"
+  }
+]

@@ -1,0 +1,9 @@
+# Current UAE candidate: HOLD / NOT_SOURCE_READY
+
+The d75b5305 original ledgers, manifest and candidate-integrity receipt are frozen predecessor evidence. The bounded successor corrections are in `focused-corrections-d75b5305/`; its integrity receipt gives current Guide hashes and the full marker-through-EOF CTA boundary. Its changed-text and unchanged-line relocation records retain the original independent review status rather than resetting or inventing acceptance.
+
+Read `independent-review/final-hold-d75b5305.md` and `focused-corrections-d75b5305/focused-repair-record.md` together. The eight identified groups have writer corrections pending focused reviewer closure. The 470 other source rows and 376 non-retained predecessor substantive acceptances remain OPEN. This candidate is not source-ready, and no native approval, auto-merge or publication is authorised by this evidence.
+
+## Continuation checkpoint, 1 November 2026
+
+The immutable [continuation review](independent-continuation-684a21d8/REVIEW.md) adds 293 newly accepted placements and retains 168 source-open placements. It supersedes the earlier 470-open count only within the explicit per-row/changed-placement registries. The earlier eight identified groups are independently closed within their recorded scope except the full destination gate. The [bounded continuation repairs](focused-continuation-repairs-20261101/literal-repairs.json) correct charity/conversion zero-rate conditions, proportional DMTT scope, separate e-invoice/credit-note penalty caps and two candidate-predecessor pointers. Those corrections still await focused closure. The reviewer is continuing the remaining source placements. Status remains HOLD / NOT_SOURCE_READY; no filing, attestation, complete-country or merge approval. Original writer, review and source evidence is preserved.

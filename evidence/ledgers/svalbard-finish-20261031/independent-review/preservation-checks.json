@@ -1,0 +1,87 @@
+[
+  {
+    "file": "skills/svalbard/README.md",
+    "old_path": "skills/international/svalbard/README.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "4829c8b79636dca5e27cb06779a5fed8fe7e1afa15ebf0f6b01fd670e9835ff0",
+    "current_sha256": "7475b5e789134764e57a86a2d3c8643119d008809a1d693acb1409a7edce048d",
+    "same_bytes": false,
+    "topic_destination_rows_checked": 48,
+    "invalid_byte_exact_destinations": [],
+    "changed_readme_rows_reviewed": [
+      21,
+      43
+    ]
+  },
+  {
+    "file": "skills/svalbard/sj-svalbard-company-income-tax.md",
+    "old_path": "skills/international/svalbard/sj-svalbard-company-income-tax.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "3dde986717a5cde36f68be7bd6aad40a823b598f86dbfc8eccdbd541996bf27d",
+    "current_sha256": "3dde986717a5cde36f68be7bd6aad40a823b598f86dbfc8eccdbd541996bf27d",
+    "same_bytes": true,
+    "topic_destination_rows_checked": 122,
+    "invalid_byte_exact_destinations": [],
+    "changed_readme_rows_reviewed": []
+  },
+  {
+    "file": "skills/svalbard/sj-svalbard-income-tax.md",
+    "old_path": "skills/international/svalbard/sj-svalbard-income-tax.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "ba393f34e4ec3ebcf945f77e6332d6977c7d30ca31708ecd9eb7be7867b36ef5",
+    "current_sha256": "ba393f34e4ec3ebcf945f77e6332d6977c7d30ca31708ecd9eb7be7867b36ef5",
+    "same_bytes": true,
+    "topic_destination_rows_checked": 116,
+    "invalid_byte_exact_destinations": [],
+    "changed_readme_rows_reviewed": []
+  },
+  {
+    "file": "skills/svalbard/sj-svalbard-payroll-tax.md",
+    "old_path": "skills/international/svalbard/sj-svalbard-payroll-tax.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "184c3e06f3c4cef010cd2013b6d195dca3fcf2d45780116792d1678f54fbd9fe",
+    "current_sha256": "184c3e06f3c4cef010cd2013b6d195dca3fcf2d45780116792d1678f54fbd9fe",
+    "same_bytes": true,
+    "topic_destination_rows_checked": 133,
+    "invalid_byte_exact_destinations": [],
+    "changed_readme_rows_reviewed": []
+  },
+  {
+    "file": "skills/svalbard/sj-svalbard-social-contributions.md",
+    "old_path": "skills/international/svalbard/sj-svalbard-social-contributions.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "1f5558c5b413594b222910db8414cc72aa3e42b91940242a9b5ac5dae7c4787e",
+    "current_sha256": "1f5558c5b413594b222910db8414cc72aa3e42b91940242a9b5ac5dae7c4787e",
+    "same_bytes": true,
+    "topic_destination_rows_checked": 93,
+    "invalid_byte_exact_destinations": [],
+    "changed_readme_rows_reviewed": []
+  },
+  {
+    "file": "skills/svalbard/sj-svalbard-tax-residence.md",
+    "old_path": "skills/international/svalbard/sj-svalbard-tax-residence.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "1d64825274c647daed51cef5b51f74ff1812670081eea39eccabc0445fcf5c14",
+    "current_sha256": "1d64825274c647daed51cef5b51f74ff1812670081eea39eccabc0445fcf5c14",
+    "same_bytes": true,
+    "topic_destination_rows_checked": 128,
+    "invalid_byte_exact_destinations": [],
+    "changed_readme_rows_reviewed": []
+  },
+  {
+    "file": "skills/svalbard/sj-svalbard-transfer-pricing.md",
+    "old_path": "skills/international/svalbard/sj-svalbard-transfer-pricing.md",
+    "old_commit": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+    "old_sha256": "30d6fda025a1dd66360eb7de12b93b9d93d2182d70e27abc8c453c2365e28fd7",
+    "current_sha256": "30d6fda025a1dd66360eb7de12b93b9d93d2182d70e27abc8c453c2365e28fd7",
+    "same_bytes": true,
+    "topic_destination_rows_checked": 101,
+    "invalid_byte_exact_destinations": [],
+    "changed_readme_rows_reviewed": []
+  },
+  {
+    "file": "docs/research/2026-10-24-svalbard-independent-review.md",
+    "sha256": "3b9dc3b60a4e90120b314d03da96696f92dd2845294773247dbc31e66f1f0417",
+    "unchanged_from_e0ac02e13": true
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-01",
+  "scope": "R1\u2013R4 repaired for fresh focused independent closure; not acceptance yet",
+  "candidate_files": {
+    "skills/burkina-faso/bf-company-formation.md": "c0ded24abf2c07f2d7ab6e779d78283ccf4af591b050a80c8f5bf398214110b6",
+    "skills/burkina-faso/bf-tax-overview.md": "1f61effdb5fcd42bdfef5ee82b69bab2df12d2956010a5555da95c1c45b88fde",
+    "skills/burkina-faso/bf-tax-optimization.md": "ecf2ef442cc148da7c7ce690c97923c82610cf557f1b91aed7ade3fdc8f93fa2",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/rules.json": "7c09408900c10ad988d4ef273523e5f972c7ca9fdc117c332fb140a3c956c9c8",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/source-identities.json": "1f81e684494da6ca75662da57ca1c34d00021625cf5ddb0e839ab41d1753d258",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-company-formation.md": "129381248d4bd264f2558fefad1df788d386455626463e3eef35292500b83bc3",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-overview.md": "4b40817585388f01c1ae3ab596a99494d6331b45296bca8a38f14fd4e8f240fc",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/bf-tax-optimization.md": "d9194834c0161cdd3e71d38e2048246c95fa027b096ce331c03946a7d4aa31ef",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.json": "f5e3b5d8df4aef7b78d89a865f35f6cf05c4da4503775c2c642f50cb893ff06b",
+    "evidence/ledgers/burkina-faso-legacy-jobs-20261101/old-topics.md": "03c4acd9926986a3fd0df2e8c41cb0072c247caab64f786f7ac3064f6ed91b27"
+  },
+  "source_read": "Parent fully read actual CGI65\u201366 raw text,196/227\u2013229 andOHADA21; R4 agent reconciled74destinations without original identity changes",
+  "case": "Article228/229 stage only, no finalpayable/cumulation assertion"
+}

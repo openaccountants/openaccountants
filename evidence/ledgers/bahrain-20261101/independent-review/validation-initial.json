@@ -1,0 +1,56 @@
+[
+  {
+    "command": [
+      "python3",
+      "scripts/validate-guides.py",
+      "--changed-only",
+      "--no-index-check"
+    ],
+    "exit": 0,
+    "stdout": "changed-only mode: validating 6 changed guide file(s)\nchecked 5 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/check-examples.py",
+      "--require",
+      "skills/bahrain/bh-company-formation.md",
+      "skills/bahrain/bh-corporate-income-tax.md",
+      "skills/bahrain/bh-cross-border-tax.md",
+      "skills/bahrain/bh-income-tax.md",
+      "skills/bahrain/bh-payroll-social.md",
+      "skills/bahrain/bh-tax-overview.md",
+      "skills/bahrain/bh-transfer-pricing.md"
+    ],
+    "exit": 0,
+    "stdout": "checked 7 files, 14 oa-check blocks, 0 failures, 0 missing\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/check-sync-integrity.py",
+      "--base",
+      "46c01152da0fdd1b722f61190c88413d0a195d02",
+      "--head",
+      "0bce9f9c7ed1776eab90ae912096a03a6d7dba12",
+      "--strict-metadata"
+    ],
+    "exit": 0,
+    "stdout": "Sync integrity checked 5 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check",
+      "46c01152da0fdd1b722f61190c88413d0a195d02",
+      "0bce9f9c7ed1776eab90ae912096a03a6d7dba12"
+    ],
+    "exit": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "id": "shared-currentness-01",
+  "candidate_commit": "15a570e0ef8904526c8814232cb4d9839feb5951",
+  "source": "jo-2025-33-5.pdf",
+  "sha256": "1a12e5a0f5e9dca3b1d2bdb553baee12f1cbdd1a0976711b8f468a706901d928",
+  "article": 46,
+  "neighbours_read": "43-49",
+  "text_line_spans": [
+    618,
+    640
+  ],
+  "verdict": "supported_hold",
+  "reason": "Article46 refers to enacted2026fiscalAnnexU; actual annex not supplied/read. This is no proof that prior rules continue. tax_year2026 is research intake label only, not operative approval. Shared gate does not close country/current-year coverage."
+}

@@ -1,0 +1,581 @@
+Lógasavn
+Toggle navigation
+Um lógasavnið
+Fyrivarni
+Slóðir
+Kunngerðasavnið
+Kunngerðaportalurin
+Leita
+Víðkað leiting
+Sálda
+Frítekstur
+Nr.
+Ár
+Leita
+Við orðum úr heitinum
+Við hesi orðing
+Við øll orðunum
+Uttan orðini
+Útgávudagur Frá:
+Til:
+Gildisstøða
+---GaldandiÁður galdandiSøguligÍ koming
+Útgávustøða
+---BroytingarrættarreglaHøvuðsrættarregla
+Myndugleiki
+---Almanna- og bústaðamálaráðiðFíggjarmálaráðiðHeilsu- og orkumálaráðiðLøgmansskrivstovanMentamálaráðiðUttanríkis- og fiskimálaráðiðVinnumálaráðiðEingin
+Rættarreglubólkur
+---LøgtingslógKunngerðFráboðanLøgtingslógarkunngerðTingskipanRundskrivLeiðbeiningAnordningAnordningsbekendtgørelseLovLovbekendtgørelseBekendtgørelseLagtingslovKundgørelseForordningMidlertidig bestemmelseKirkjulig fyriskipanNorske LovPlakatPolitivedtægtCirkulære
+Nullstilla
+Leita
+Rættarregluevni (einans høvuðslógir og galdandi lógir):
+Øll rættarregluevni
+1. Stjórnar- og fyrisitingarrættur
+Fløgg
+Fíggjarspurningar landsins og landsgranskoðan
+Grundlóg, Stjórnarskipan, Fólkatingið, ríkismyndugleikar o.tíl.
+Hagtøl
+Landsstýrið
+Lóggáva
+Løgtingið
+Ríkisborgarararættur
+Tíð
+Tænastumenn o.tíl.
+Verja
+Yvirtøkuskipan
+Fólkayvirlit
+2. Uttanríkisviðurskifti, fólkarættur og mannarættindi
+Uttanríkisviðurskifti - avtalur, millum- og altjóða sáttmálar o.tíl.
+Norðurlendskar avtalur og samstarv
+Hernaðarviðurskifti
+Mannarættindi o.tíl.
+Handilssáttmálar
+3. Kommunalar lógir m.a. skattir, veðhald og ognartøka
+4. Útbúgvingar og undirvísing
+Fyrisiting av undirvísingarverkinum
+Fólkaskúlin, eftirskúlar, studentaskúlar og HF-Skeið o.tíl.
+Yrkisútbúgvingar
+Frítíðarundirvísing, há-, húsarhalds- og musikkskúlar
+Skúlabókaútgáva, skúlabókasøvn og Nám
+Hægri útbúgvingar og lærustovnar
+Útbúgvingarstuðul
+Onnur lóggáva
+5. Mentan
+Søvn og friðing
+Mál, skrivingarlag og bókaútgáva
+Mentunarhús- og grunnar
+6. Kirkja
+Fyrisiting og fíggjarviðurskifti fólkakirkjunnar
+Halgidagar
+Kirkjuligar gerðir
+Kirkjur og kirkjugarðar
+Kirkjulið og limaskapur
+Starvsfólkaviðurskifti fólkakirkjunnar
+7. Almannaviðurskifti
+Almannapensjónir o.l.
+Barnastuðul, barnavernd o.l.
+Forsorg og arbeiðsmarknaður
+Vanlukkutrygging, heilsutrygd o.l.
+Verkløg, bústaðarviðurskifti o.l.
+Heiðursgávur, grunnar o.l.
+Millumtjóða avtalur um sosiala trygd o.l.
+Almannaviðurskifti annars
+8. Skattir o.tíl.
+9. Avgjøld og tollur
+10. Arbeiðsmarknaður
+11. Landbúnaður, djór og matvørur
+12. Byggi- og býarskipanir og umhvørvisvernd
+Byggi og býarskipanir
+Umhvørvisvernd, náttúrufriðing, tilbúgving o.tíl.
+Vatnveiting og vatnburturveiting
+13. Fiskivinna, fiskaaling og veiða
+Fiskiskapur
+Fiskileiðir
+Fiskiveiðieftirlit
+Inn og útflutningur av fiski
+Fíggjarviðurskifti fiskivinnurnar
+Fiskaaling
+Hvalaveiða
+Fugla- og haruveiða
+14. Vegir, ferðsla og flutningur
+Ferðsla
+Flutningur
+Flogferðsla
+Ferjur og strandferðsla
+Vegir og tunlar
+Postur
+15. Byggi- og bústaðarlógir, verkløg o.l.
+16. Heilsulógir
+Ymisk heilsulóggáva, miðstýri heilsuverksins  o.a.
+Heilsustarvsfólk
+Sjúkrahúsverk o.tíl.
+Heimarøkt, heilsutænasta uttanfyri sjúkrahúsini o.tíl.
+Smittandi sjúkur o.l.
+Misnýtsla og sjúkufyribygging
+Apoteksverkið, heilivágur, heilsuskaðilig evni o.tíl.
+Kanningar av børnum
+Barnakonur
+Sinnsibrek
+17. Rættargangur
+Rættargangslóg o.tíl.
+Millumtjóða ásetanir
+Rættargjøld
+Gerðarrættur
+Fútarættarmál
+Uppboð
+Trotabúgv, gjaldssteðgur, tvingsilsskuldarsemja o.tíl.
+Notarialskipan
+18. Revsilógir og løgreglan
+Borgarlig revsilóg o.tíl.
+Millumtjóða sakarmál
+Løgreglan
+Fongsulsverk
+Pass og visa
+Vápn, spreingievni og fýrverk
+Sjónvarpseygleiðing o.l.
+Funnið fæ
+Hjálp til neyðstødd (druknaði)
+Tatovering
+19. Útlendingar
+20. Fíggjarrættur
+Avtalur
+Keyp
+Endurgjald
+Skuld
+Vekslar og kekkar
+Fyrning og ógilding
+Trygging
+Upphavsrættur, einkarættur, vørumerki og mynstur
+Myntir
+Fíggjarstýring, peningastovnar, almennir fíggjarstovnar o.tíl.
+Partafeløg, vinnurekandi grunnar o.tíl.
+Felagsskráir
+Sjólóg, sjóvinna, manning av skipum o.tíl.
+Loðsur, sjóvegisreglur, bjarging o.tíl.
+Skipasýn, skipauppmáling, skipaskráseting o.tíl.
+Havdálking frá skipum
+Havnir
+Kavarar
+Ognartøka, hevd, veð, lán, leiga, tinglýsing o.tíl.
+Kortlegging, útskifting og matrikulering
+21. Vinnulívsrættur
+Handil, bókføring og grannskoðan
+Handverk, ídnaður og vinnustuðul o.tíl.
+Marknaðarførsla, kapping, prísviðurskifti og gjaldoyra
+Mát og vekt
+Góðmálmur
+Ráevni í undirgrundini
+Ferðavinna
+Fjar- og samskifti
+Fjølmiðlar
+Orka, ravmagn og tekniskar innleggingar
+Spæl, innsavningar og stuttleiki
+22. Persónsupplýsingar
+23. Persóns-, familju- og arvarættur
+Hjúnarlag
+Børn
+Løgræði
+Innheinting av uppihaldspeningi
+Millumtjóða viðurskifti viðv. hjúnaløgum, børnum og løgræði
+Persónsnøvn
+Skráir
+Arvur og skifti
+Horvin
+Rættarreglubólkur:
+Allir rættarreglubólkar
+Løgtingslóg
+Kunngerð
+Fráboðan
+Løgtingslógarkunngerð
+Tingskipan
+Rundskriv
+Leiðbeining
+Anordning
+Anordningsbekendtgørelse
+Lov
+Lovbekendtgørelse
+Bekendtgørelse
+Lagtingslov
+Kundgørelse
+Forordning
+Midlertidig bestemmelse
+Kirkjulig fyriskipan
+Norske Lov
+Plakat
+Politivedtægt
+Cirkulære
+Gildisstøða:
+Allar gildisstøður
+Galdandi
+Áður galdandi
+Søgulig
+Í koming
+Ár:
+Øll ár
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+2013
+2012
+2011
+2010
+2009
+2008
+2007
+2006
+2005
+2004
+2003
+2002
+2001
+2000
+1999
+1998
+1997
+1996
+1995
+1994
+1993
+1992
+1991
+1980-1989
+1970-1979
+1960-1969
+1950-1959
+1940-1949
+1930-1939
+1920-1929
+1910-1919
+- 1900
+Felagsmál / Sermál:
+Øll Felagsmál / Sermál
+Felagsmál
+Sermál
+Útgávustøða:
+Allar útgávustøður
+Broytingarrættarregla
+Høvuðsrættarregla
+Mál:
+Øll mál
+Føroyskt
+Danskt
+Myndugleiki:
+Allir myndugleikar
+Almanna- og bústaðamálaráðið
+Fíggjarmálaráðið
+Heilsu- og orkumálaráðið
+Løgmansskrivstovan
+Mentamálaráðið
+Uttanríkis- og fiskimálaráðið
+Vinnumálaráðið
+Eingin
+Frítekstur
+Vel alt ella einki
+Leita
+Frítekstur
+Vel alt ella einki
+Leita
+Tipp
+Hent at vita, tá ið tú leitar í lógasavninum
+Skrivar tú trygging verður eisini leitað eftir øðrum endingum av orðinum sum t.d. tryggingar og tryggingarvirksemi.
+Skrivar tú ?trygging verður leitað eftir orðum sum t.d. lívstrygging og lívstryggingar.
+Skrivar tú ”trygging” verður einans leitað eftir júst hesum sniðnum av orðinum.
+Fleiri góð ráð
+Løgtingslóg nr. 49 frá 14. mai 2013 um eftirløn (Eftirlønarlógin), sum seinast broytt við løgtingslóg nr. 86 frá 9. oktober 2026
+14. mai 2013Nr. 49
+Løgtingslóg um eftirløn, sum seinast broytt við løgtingslóg nr. 86 frá 9. oktober 2026 1)
+(Eftirlønarlógin)
+Kapittul 1
+Kapittul 2
+Kapittul 3
+Kapittul 4
+Kapittul 5
+Kapittul 6 Ymiskar ásetingar
+Kapittul 7 Skiftisásetingar
+Kapittul 1
+Vavið
+§ 1. 2) Persónur, sum ikki hevur nátt fólkapensjónsaldur sambært løgtingslóg um almannapensjónir o.a., og sum hevur fulla skattskyldu til Føroyar, hevur skyldu til at spara saman til egna eftirløn sambært hesi løgtingslóg.
+Stk. 2. 3) Persónur, sum í sínum setanarviðurskiftum vinnur tænastumannaeftirløn, hevur ikki skyldu til at spara saman til egna eftirløn eftir hesi løgtingslóg við atliti at tí løn, hann forvinnur sambært tænastumannastarvinum.
+Stk. 3. Lesandi uttanlands, sum hevur varðveitt fulla skattskyldu til Føroyar, hevur ikki skyldu til at spara saman til egna eftirløn eftir hesi løgtingslóg við atliti at inntøku, ið er forvunnin uttanlands.
+Stk. 4. 4) Persónur, ið fær eftirlønarútgjald sambært hesi løgtingslóg kann ikki framhaldandi spara saman til egna eftirløn av løn, ið hann forvinnur.
+Stk. 5. 4) Eftirlønarsamansparing hjá persóni, sum hevur uppihildið sær í Føroyum í í mesta lagi 60 mánaðir samanlagt, og sum er fluttur av landinum aftur, kann rindast út aftur, hóast eftirlønarsamansparari ikki hevur nátt fólkapensjónsaldur. Landsstýrismaðurin ásetir í kunngerð nærri reglur.
+Stk. 6. 2) 4) Persónur, sum eina ferð hevur fingið eftirlønina útgoldna sbrt. stk. 5 og kemur aftur til Føroya at arbeiða, kann tó ikki fáa eftirlønina útgoldna fyrr enn 10 ár aftaná, at persónurin er fluttur av landinum aftur.
+Stk. 7. Persónur, ið fær fólkapensjón sbrt. lóg um almannapensjónir, kann ikki rinda til eftirløn sbrt. hesi løgtingslóg.
+Stk. 8. 4) Persónur, ið er fevndur av hesari løgtingslóg, og sum ikki frammanundan hevur eina eftirlønarskipan hevur skyldu til at stovna eftirlønarkontu í sambandi við starvsetan, ella í sambandi við, at hann móttekur inntøku, ið eftirlønargjald skal rindast av. Hevur persónur ikki stovnað eftirlønarkonto innan tríggjar mánaðir frá tí, at persónurin hevur móttikið inntøku, ið eftirlønargjald skal rindast av, kann TAKS vegna persónin stovna eftirlønarkonto hjá góðkendum eftirlønarveitara sbrt. § 5, stk. 1. og flyta eftirlønarsamansparing, ið stendur á depotkonto hjá TAKS sbrt. § 16 a, til eftirlønarkonto hjá persóninum.
+Stk. 9. 5) (Strikað).
+Kapittul 2
+Eftirlønargjaldið
+§ 2. 6) 2) 7) Bundna eftirlønargjaldið er frá 1. januar 2014 í minsta lagi 1 prosent av A-inntøkuni og B-inntøkuni samanlagt, og eftirlønargjaldið hækkar til 12 prosent í 2026 og seinni, soleiðis:
+1)   Frá 1. januar 2014: 1 prosent.
+2)   Frá 1. januar 2015: 2 prosent.
+3)   Frá 1. januar 2016: 2 prosent.
+4)   Frá 1. januar 2017: 3 prosent.
+5)   Frá 1. januar 2018: 4 prosent.
+6)   Frá 1. januar 2019: 5 prosent.
+7)   Frá 1. januar 2020: 6 prosent.
+8)   Frá 1. januar 2021: 7 prosent.
+9)   Frá 1. januar 2022: 8 prosent.
+10) Frá 1. januar 2023: 9 prosent.
+11) Frá 1. januar 2024: 10 prosent.
+12) Frá 1. januar 2025: 11 prosent.
+13) Frá 1. januar 2026: 12 prosent.
+Stk. 2. 1) Arbeiðsgevarin hevur við teimum avmarkingum, sum eru nevndar í § 1, stk. 2, 5 og 7 og § 3, skyldu at flyta eftirlønargjaldið hjá løntakara, og at tryggja, at hvør einstøk lønarútgjalding er í samsvari við ásetingarnar í hesi løgtingslóg. Eftirlønargjaldið skal rindast umvegis afturhaldsskipanina hjá TAKS, samstundis sum lønin verður flutt. Lønarflyting, sum ikki er í samsvari við ásetingarnar í hesi løgtingslóg, verður afturvíst av TAKS.
+Stk. 3. Eftirlønarsamansparari kann sjálvboðin rinda meira enn tað í stk. 1 nevnda prosentgjald.
+Stk. 4. Uttan mun til prosentásetingina í stk. 1, hevur eingin skyldu til at gjalda meira enn 150.000 krónur árliga í eftirlønargjaldi brutto. Upphædd oman fyri 150.000 krónur kann verða goldin útaftur av eftirlønarveitara um so er, at avtalan við eftirlønarveitaran loyvir hesum. Útgjald fer fram, tá TAKS hevur játtað umsókn um útgjalding frá eftirlønarsamansparara, ið eftirlønarveitari avgreiðir. Umsóknin skal vera TAKS í hendi í seinasta lagi 1. juni árið eftir inngjaldsárið.
+Stk. 5. 1) Persónur við B-inntøku skal rinda eftirlønargjald sbrt. stk. 1. Hjá persóni við B-inntøku, ið einans hevur skyldu til at rinda eftirlønargjald fyri ein part av inntøkuárinum, verður bundna eftirlønargjaldið lækkað samsvarandi lutfallinum millum dagatalið uttan eftirlønargjaldskyldu og 365.
+Stk. 6. 1) Rindan av eftirlønargjaldi fyri B-inntøkur verður roknað at vera rættstundis, tá goldið verður í seinasta lagi 1. november árið eftir inntøkuárið.
+Stk. 7. Um eftirlønarsamansparari sbrt. stk. 5 ikki heldur sína skyldu við at rinda eftirlønarinngjaldið sbrt stk. 1, kann tann skuldkomna eftirlønin verða framd við panting eftir reglunum í § 135 í løgtingslóg um landsskatt og kommunuskatt.
+Stk. 8. 1) 4) Av tí í stk. 1 ásetta minsta eftirlønargjaldi eftir skatt, kann í mesta lagi ein triðingur árliga fara til persónstryggingar, restin skal fara til eftirlønarsamansparing. Tað er eftirlønarveitari, ið skal tryggja, at árliga hámarkið verður fylgt.
+Stk. 9. Tað í stk. 1 álagda eftirlønargjaldið verður lækkað í tann mun, eftirlønarsamansparari á sína eftirlønarkontu fær goldið gjaldsundantøkutrygging. Í sambandi við útrokning av lækking verða inngjøld frá gjaldsundantøkutrygging bruttofiserað sbrt. skattaprosentinum í § 12, stk. 2.
+Stk. 10. 7) 4) Er eftirlønargjaldið av A-inntøku minni enn 30 krónur, verður tað ikki álagt at rinda sbrt. hesi løgtingslóg. Er eftirlønargjaldið av B-inntøku minni enn 500 krónur, verður tað ikki álagt at rinda sbrt. hesi løgtingslóg.
+Stk. 11. 4) Skuldkomið eftirlønargjald fellur burtur, tá ið eftirlønarsamansparari nær fólkapensjónsaldur sbrt. løgtingslóg um almannapensjónir o.a., ella tá ið eftirlønarsamansparari doyr.
+§ 3. 1) 3) 8) 2) 5) 4) Tað í § 2, stk. 1 ásetta prosentgjaldið verður ikki rindað av niðanfyri nevndu peningaupphæddum:
+1)   Vinningi av eydnuspæli, legati, sømdargávu og líknandi.
+2)   Útgjaldi sambært løgtingslóg um arbeiðsmarknaðareftirlønargrunn.
+3)   Uppihaldspeningi sambært hjúnabandslóggávuni.
+4)   Útgjaldi sambært løgtingslóg um ættleiðingarstuðul.
+5)   Útgjaldi sambært løgtingslóg um lestrarstuðul.
+6)   Útgjaldi av tryggingarupphædd og líknandi.
+7)   Útgjaldi sambært løgtingslóg um tænastumannaeftirlønir.
+8)   Útgjaldi av lutaeftirløn.
+9)   Útgjaldi av lívrentu og líknandi.
+10) Útgjaldi sambært løgtingslóg um arbeiðsfremjandi tiltøk, tó undantikið útgjaldi sambært §§ 12, 13 a, 14, 22 og 25.
+11) Útgjaldi sambært løgtingslóg um viðbót til ávísar pensiónistar.
+12) Útgjaldi sambært løgtingslóg um barnagjald til einsamallar uppihaldarar o.fl.
+13) Útgjaldi sambært løgtingslóg um almannapensjónir o.a.
+14) Útgjaldi sambært løgtingslóg um almannatrygd og tænastur, tó undantikið útgjald sambært § 12, § 13 og § 25.
+15) Útgjaldi sambært kunngerð um samsýning til fosturforeldur, tó undantikið útgjald sambært § 1, stk. 1.
+16) Inntøka forvunnin í Grønlandi, sum tvungin eftirløn skal rindast av sbrt. Inatsisartutlov nr. 21 af 28. november 2016 om obligatorisk pensionsordning.
+17) Inntøka frá arbeiði fyri arbeiðsgevara við heimstaði uttanlands, um løntakarin annaðhvørt rindar til NAV ella hevur eftirlønarskipan uttanlands, sum TAKS metir er nøktandi, og har inngjaldið annaðhvørt einsæris ella saman við inngjaldi í Føroyum er á sama støði sum kravt í § 2, stk. 1. Landsstýrisfólkið ásetir nærri reglur um, hvat er at meta sum nøktandi eftirlønarskipan uttanlands.
+§ 4. Eftirlønarsamanspararin eigur persónliga sína samansparing, ið er undandrigin ræði hjá eftirlønarsamansparara, og er vard fyri úttøku ella aðrari rættarsókn frá ognarum. Eftirlønarsamansparingin kann ikki avhendast, veðsetast ella verða nýtt sum mótrokning fyri møguligum kravi frá eftirlønarveitara.
+Stk. 2. Eftirløn kann ikki verða fyri rættarsókn, fyrr enn hon er útgoldin.
+Stk. 3. 9) 2) Eftirlønaruppsparing er partur av felagsbúnum, tá hjún verða sundurlisin ella skild. 1. pkt. er ikki galdandi fyri lívrentu, sum ikki kann afturkeypast.
+Kapittul 3
+Eftirlønarveitarar
+§ 5. 1) Inngjald sambært hesi løgtingslóg fer til góðkendan eftirlønarveitara, ið hevur heimstað í Føroyum. TAKS góðkennir, at eftirlønargjald kann fara fram sambært hesi løgtingslóg. Eftirlønarveitarar skulu fráboða TAKS tær eftirlønarskipanir, ið teir veita eftirlønarsamanspararum.
+Stk. 2. 1) 3) Eftirlønarsamansparing skal stovnast í lívstryggingarfelagi, eftirlønargrunni ella peningastovni við heimstaði í Føroyum. Persónstryggingar, sbrt. § 2, stk. 8, skulu stovnast í tryggingarfelagi við heimstaði í Føroyum.
+Stk. 3. Umsitingar- og avgreiðslugjøld av eftirlønarskipan skulu vera gjøgnumskygd. Landsstýrismaðurin ásetir við kunngerð nærri reglur um gjøgnumskygni.
+§ 6. Eftirlønarveitarar skulu senda árliga teldutøka kunning til TAKS um upplýsingar hjá øllum teimum, ið eru skrásett í eftirlønarskipanini hjá eftirlønarveitaranum. Kunningin skal vera TAKS í hendi í seinasta lagi 20. januar eftir inntøkuárið ella fyrsta gerandisdag eftir 20. januar.
+Stk. 2. 1) Landsstýrismaðurin ásetir við kunngerð nærri reglur viðvíkjandi upplýsingarskyldu, freist og rættleika av upplýsingum frá eftirlønarveitarum, ið skulu sendast TAKS.
+Íløgureglur fyri peningastovns- eftirlønarveitarar
+§ 7. Eftirlønarsamansparingar í peningastovni, skulu vera á serligum eftirlønarinnlánskontum, í puljum ella serligum virðisbrævagoymslum.
+Stk. 2. Í eftirlønarhøpi í sambandi við virðisbrævahandil skal eftirlønarsamanspararin í peningastovni fylgja teimum til eina og hvørja tíð galdandi reglum, sum eru galdandi fyri at verja íleggjaran.
+Stk. 3. Uppspard eftirløn skal støðlast sambært teimum reglum, ið eru galdandi fyri at tryggja nøktandi váðaspjaðing. Eftirlønarveitarin fremur virðisbrævahandilin vegna eftirlønarsamanspararan.
+Stk. 4. 5) Eftirlønarsamansparingar í peningastovni, ið verða stovnaðar sbrt. hesi løgtingslóg, skulu verða samansettar soleiðis, at fíggjarligi váðin alla tíðina er hóskandi og gagnligur fyri samanspararan. Tá mett verður um, hvørt váðin er hóskandi, skal fyrilit havast fyri aldri, heilsu, fíggjarstøðu og øðrum viðkomandi viðurskiftum.
+Stk. 5. 1) 5) Virðisbrævagoymslan verður gjørd upp til marknaðarvirðið í seinasta lagi 2 mánaðir fyri, at eftirlønarsamansparari ynskir at byrja útgjald, og í fyrsta lagi 2 mánaðir fyri, at eftirlønarsamansparari nær fólkapensjónsaldri sbrt. lóg um almannapensjónir, tó í seinasta lagi 2 mánaðir fyri, at eftirlønarsamansparari fær fólkapensjón sbrt. lóg um almannapensjónir.
+Stk. 6. 5) Tað er skylda hjá eftirlønarveitara at tryggja, at ásetingarnar í hesi grein verða fylgdar.
+Íløgureglur fyri eftirlønargrunnar og fyri lívstryggingarfeløg í lívstrygginarflokki III
+§ 8. Eftirlønargrunnar og tryggingarfeløg í lívstryggingarflokki III kunnu gera íløgur vegna eftirlønarsamanspararar sambært reglum í lóg um tryggingarvirksemi.
+Stk. 2. Tryggingar, ið verða gjørdar sambært hesi løgtingslóg og teknaðar undir lívstryggingarflokki III í lívstryggingarfelagi og eftirlønargrunni, skulu vera settar saman soleiðis, at fíggjarligi váðin er hóskandi og gagnligur fyri eftirlønarsamanspararan. Tá mett verður, um váðin er hóskandi, skal atlit takast til aldur, heilsu, fíggjarstøðu og onnur viðkomandi viðurskiftir.
+Stk. 3. Landsstýrismaður kann í kunngerð áseta íløgureglur fyri eftirlønargrunnar og tryggingar undir Lívstryggingarflokki III, inngoldnar eftir hesi lóg.
+Kapittul 4
+Útgjaldshættir
+§ 9. 3) 10) Eftirlønarútgjald kann, við undantaki av stk. 7 og 11, í fyrsta lagi byrja, tá ið eftirlønarsamansparari nær fólkapensjónsaldri sbrt. lóg um almannapensjónir, og í seinasta lagi tann dagin, hann fær fólkapensjón. Í samansparingartíðarskeiðnum er alt virðið, ið er knýtt at eftirlønarsamansparingini, at meta sum kapitaleftirløn við arvarætti, um eftirlønarsamansparari ikki hevur gjørt aðra avtalu.
+Stk. 2. 10) Hóast ásetingina í stk. 1 kann eftirlønarsamansparari, sum hevur fingið tillutað framskundaða pensjón ella fyritíðarpensjón sbrt. løgtingslóg um almannapensjónir o.a., byrja eftirlønarútgjald, tá ið hann røkkur aldursmarkið fyri at fáa tillutað framskundaða pensjón sbrt. løgtingslóg um almannapensjónir o.a. TAKS váttar, at útgjald av eftirlønarsamansparingini kann byrja, tá Almannaverkið hevur játtað umsókn.
+Stk. 3. 10) Ásetingarnar í stk. 4, um býtið av samansparda virðinum útgjaldsdagin, og í § 9, stk. 8, um útgjøld, eru galdandi fyri útgjøld sbrt. stk. 2.
+Stk. 4. 3) 4) 10) Eftirlønarsamansparari boðar umvegis eftirlønarveitara TAKS frá útgjaldi. Boðast skal frá í seinasta lagi 2 mánaðir áðrenn, útgjald byrjar. Í fráboðanini til TAKS verður upplýst, hvussu og nær samansparda eftirlønin skal gjaldast út, undir hesum peningastovn og kontonummar, har samansparda eftirlønin skal flytast til. Býtið verður roknað av samansparda virðinum útgjaldsdagin og skal, undantikið stk. 6, stk. 7 og § 10, stk. 2, uppfylla hesar treytir:
+1)   Í minsta lagi 45% skal verða útgoldið sum lívslong veiting, lívrenta, ið sbrt. hesari løgtingslóg er ein eftirlønarskipan, sum verður útgoldin leypandi, so leingi tann, sum eigur og hevur stovnað tryggingina, er á lívi, men sum fellur burtur, tá ið viðkomandi doyr.
+2)   Í mesta lagi 55% kann verða útgoldið sum lutaeftirløn, ið sbrt. hesari løgtingslóg er ein eftirlønarskipan, ið verður útgoldin yvir eitt avtalað tíðarskeið, tó í minsta lagi 10 ár.
+3)   Í mesta lagi 15% kann útgjaldast sum kapitalútgjald, ið sbrt. hesari løgtingslóg er ein upphædd, sum verður útgoldin í einum.
+Stk. 5. 10) Frá valda útgjaldsdegi sbrt. stk. 1 og 4 er valið bindandi, tó kann parturin, sum fer til lívlanga veiting, økjast, og tað er TAKS, ið gevur loyvi eftir skrivligari áheitan frá eftirlønarsamansparara umvegis eftirlønarveitara.
+Stk. 6. 10) Hóast ásetingina í stk. 4, nr. 1, kann lívslanga veitingin ongantíð verða kravd at vera hægri enn 40 prosent av eini arbeiðaraløn, brutto, sbrt. sáttmálanum millum Føroya Arbeiðarafelag og Føroya Arbeiðsgevarafelag. Upphædd, ið er oman fyri ta kravdu lívslongu veitingina, kann flytast til lutaeftirlønarsamansparingina, um eftirlønaravtalan loyvir hesum.
+Stk. 7. 11) 10) Fyri eftirlønarsamansparara, har tað læknafrøðiliga verður staðfest, at hann, grundað á sjúku, hevur niðursettan væntaðan miðallivialdur, ber til at byrja eftirlønarútgjald, áðrenn eftirlønarsamanspararin nær fólkapensjónsaldri sambært lóg um almannapensjónir. TAKS váttar, at útgjald av eftirlønarsamansparingini kann byrja, tá Sjúkrahúsverkið hevur játtað umsókn. Upphædd, ið skuldi verið brúkt til lívrentu, kann í hesum føri í staðin verða brúkt til lutaeftirløn, um ikki onnur avtala er gjørd. 15 prosent av samansparingini kann verða útgoldin sum kapitalútgjald og restin sum lutaeftirløn. Landsstýrismaðurin ásetir við kunngerð nærri reglur.
+Stk. 8. 10) Útgjøld sbrt. hesi løgtingslóg verða framd gjøgnum afturhaldsskipanina hjá TAKS skatta- og avgjaldsfrítt.
+Stk. 9. 10) Kapitalútgjald, útgjald av lutaeftirløn og útgjald av lívslangari veiting byrja samstundis.
+Stk. 10. 1) 10) Landsstýrismaðurin ásetir við kunngerð nærri reglur fyri, hvussu eftirlønin verður útgoldin frá eftirlønarveitara.
+Stk. 11. 3) 10) Inngjald, sum persónur, fevndur av § 1, stk. 5 ella § 17, stk. 1, hevur goldið, kann rindast út aftur, hóast eftirlønarsamansparari ikki hevur nátt fólkapensjónsaldur.
+Stk. 12. 4) 10) Eftirlønarsamansparari skal í sambandi við útgjald sbrt. stk. 1 og í sambandi við fráboðan sbrt. stk. 4 í seinasta lagi tveir mánaðir áðrenn útgjald byrjar, lata eftirlønarveitara upplýsingar um peningastovn og kontonummar, har samansparda eftirlønin skal flytast til.
+Stk. 13. 4) 10) Eru neyðugu upplýsingarnar um peningastovn og kontonummar sbrt. stk. 12 ikki latnar eftirlønarveitaranum, tá ið útgjald byrjar, kann eftirlønarveitari flyta útgjaldið á depotkonto, sum eftirlønarveitari kann stovna til eftirlønarsamanspararan, og sum ikki fær tilskrivað avkast. Eru upplýsingar um peningastovn og kontonummar sbrt. stk. 12 ikki latnar eftirlønarveitara, tá ið útgjald byrjar, kann eftirlønarveitari flyta útgjald á sentrala og løgliga góðkenda, almenna konto hjá eftirlønarsamansparara, sum er knýtt at skipanini Vangin.
+Stk. 14. 4) 10)  Ásetingarnar í stk. 4, um býtið av samansparda virðinum útgjaldsdagin, og í stk. 8, um útgjøld, eru galdandi fyri útgjøld sbrt. stk. 13. Fær eftirlønarveitari ikki onnur boð frá eftirlønarsamansparara í sambandi við útgjald sbrt. stk. 13, verður ásett, at 15 prosent av samansparda virðinum verður goldið út sum kaptitalútgjald, 45% sum lívrenta og restin sum lutaeftirløn.
+§ 10. Eru eftirlønarsamansparingar hjá fleiri eftirlønarveitarum, kann eftirlønarsamansparari geva einum ávísum eftirlønarveitara heimild til at savna saman samlaðu virðini frá øllum eftirlønarveitarunum. Landsstýrismaðurin ásetir nærri reglur fyri mannagongd og kostnaði.
+Stk. 2. 10) Er samlaða eftirlønarsamansparingin hjá øllum føroyskum eftirlønarveitarum tilsamans minni enn 400.000 krónur við eftirlønaraldur sbrt. § 9, stk. 4, kunnu í staðin upp til 60.000 krónur rindast út sum kapitalútgjald, og restin verða útgoldið við upp til 2.500 krónum um mánaðin.
+Útgjald við deyða
+§ 11. Í samansparingartíðarskeiðnum er eftirlønin at meta sum kapitaleftirløn við arvarætti, um ikki onnur avtala er galdandi. Tá eftirlønarsamansparari doyr, fellur samansparda eftirlønarupphæddin til njótunartilskilaða sambært eftirlønarsáttmálanum, um ikki onnur avtala er galdandi.
+Stk. 2. Um njótunartilskilaði er hjúnafelagi ella sambúgvandi, tó ikki barn, kann hann velja at fáa alla ella part av eftirlønarsamansparingini flutta skatta- og avgjaldsfrítt til sína egnu eftirlønarsamansparing, og verður tann samanlagda eftirlønarsamansparingin fevnd av ásetingunum í hesi løgtingslóg.
+Stk. 3. Hevur eftirlønarsamanspararin eingi nærmastu avvarðandi, og er eingin njótunartilskilaður innsettur, verður eftirlønarupphæddin við arvarætti umløgd til eitt kapitalútgjald og verður síðan partur av búnum.
+Stk. 4. Skiftirætturin sendir skjøl til góðkenningar hjá TAKS vísandi til hesa grein.
+Stk. 5. 1) Tá eftirlønarútgjald er byrjað sbrt. § 9, og eftirlønareigari doyr, verður lutaeftirlønarparturin, um ikki onnur avtala er gjørd, útgoldin til njótanartilskilaða sbrt. eftirlønaravtaluni. Um eingin njótanartilskilaður er og heldur eingin nærmasti avvarðandi, verður gjørt samsvarandi stk. 3.
+Stk. 6. 1) 10) Í sambandi við viðgerðartíðina hjá eftirlønarveitara og TAKS, er eftirlønin at meta sum kapitalvirði, um ikki onnur avtala er gjørd og verður fyrst fevnd av ásetingunum í § 9, stk. 4 tann dag, ið ásettur er fyri útgjaldi.
+Kapittul 5
+Inngjald, frádráttur og skattur
+§ 12. Inngjøld til eftirlønarskipan verða goldin á eftirlønarkonto sbrt. eftirlønarsáttmála.
+Stk. 2. 1) 9) 2) 5) Inngjøld til eftirlønarsamansparing og persónstryggingar rinda eftirlønarskatt, sum ásett í skjali 1 til hesa løgtingslóg, tó verða av øllum inngjøldum fyribils afturhildin 40% í eftirlønarskatti, og tá skattauppgerðin er endalig, og endaliga skattskylduga ársinntøkan er staðfest, verður avlopsskattur teirra, sum sambært skjali 1 skulu rinda minni enn 40% í eftirlønarskatti, endurrindaður á eftirlønarkontu uttan rentutilskriving. Hetta er tó ikki galdandi fyri eftirlønargjøld, ið eftirlønarveitari rindar vegna gjaldsundantøku. Tann persónur, sum er skyldugur til at rinda eftirlønargjald í Føroyum av inntøku, vunnin uttanlands, verður góðskrivaður í eftirlønarskattinum fyri inntøkuskatt, persónur hevur goldið av eftirlønargjaldinum uttanlands. Skattur sbrt. pkt. 1 verður latin kommununum eftir tali av borgarum 67 ár ella eldri, sum eru skrásettir í landsfólkayvirlitinum 1. desember árið fyri, tó so at talið av borgarum 67 ár ella eldri í Sandoynni verður hækkað við 30%, um heimatænasta, eldrarøkt v.m. í Sandoynni verður rikið í serstøkum samstarvsøki.
+Stk. 3. 1) 4) Tað er frádráttarrættur ávikavist burtursíggingarrættur í skattskyldugu inntøkuni fyri inngjøld eftir hesi løgtingslóg til eftirlønarsamansparing og til persónstryggingar. Sami skattligi frádráttarrættur er fyri sjálvboðið inngjald sbrt. § 2, stk. 3, og fyri inngjald sbrt. § 17, stk. 1 og 5.
+Stk. 4. Frádrátturin í skattskyldugu inntøkuni fylgir inntøkuárinum, har eftirlønarinngjaldið er farið fram.
+Stk. 5. Hall kann verða flutt fram til frádrátt eitt seinni inntøkuár í tann mun, rúm ikki er fyri tí í skattskyldugu inntøkuni eitt fyrri ár.
+Stk. 6. Tá persónur, ið hevur verið undir avmarkaðari skattskyldu til Føroya, kemur undir fulla skattskyldu til Føroya, verður eftirlønargjaldskylda at rokna frá tí degi, avmarkaða skattskyldan heldur uppat.
+Stk. 7. Um arbeiðsgevari ikki flytur skattin av eftirlønini rættstundis, kann TAKS krevja upphæddina við tilskrivaðum rentum inn við panting eftir reglunum í § 135 í løgtingslóg um landsskatt og kommunuskatt.
+Stk. 8. Um eftirlønarsamansparari ikki heldur sína skyldu við at rinda skatt sbrt. stk. 2, verður tann skuldkomni skatturin kravdur inn við eftirlønarskattauppgerð eins og B-skattur. TAKS kann fremja panting eftir reglunum í § 135 í løgtingslóg um landsskatt og kommunuskatt.
+Stk. 9. Eftirlønarveitari hevur skyldu til at afturhalda og flyta eftirlønarskattin til TAKS í teimum førum, har eftirlønarinngjaldið verður rindað beinleiðis til eftirlønarveitara og ikki verður rindað umvegis arbeiðsgevaraskipan sbrt. § 2.
+Stk. 10. Hvussu eftirløn og eftirlønarskattur verður rindaður, verður nærri ásett við kunngerð.
+§ 13. 7) Rentur og annar vinningur í eini eftirlønarskipan, ið er stovnað sbrt. hesi løgtingslóg, ella har inngoldið er sbrt. § 17, stk. 5 í hesi løgtingslóg, eru hvørki skatta- ella avgjaldskyldug.
+Stk. 2. 7) Tað sama er galdandi fyri vinning og tap við innloysing ella sølu av partabrøvum, sølu av tekningarrætti, vinningi og tapi vegna kursbroytingar av lánsbrævagoymslu, útlutan av avtøkuvinningi ella líknandi, tá virðisbrøvini eru partur av eini eftirlønarsamansparing, ið er stovnað sbrt. hesi løgtingslóg, ella har inngoldið er sbrt. § 17, stk. 5 í hesi løgtingslóg.
+Stk. 3. Í sambandi við útgjald verður rentutilskriving, uppspart bonus og annar vinningur sbrt. stk. 1 og 2 roknað upp í samlaðu útgjaldsupphæddina og rindað avgjalds- og skattafrítt útaftur. Sama er galdandi fyri tryggingarútgjald.
+§ 14. 7) (Strikað).
+Stk. 2. 7) (Strikað).
+Kapittul 6
+Ymiskar ásetingar
+§ 15. 7) 4) Stk. 1. Flyting áðrenn útgjaldsdagin frá eini eftirlønarsamansparing til eina aðra verandi ella nýggja eftirlønarsamansparing her í landinum hjá sama persóni verður ikki viðgjørd sum útgjalding ella inngjalding. Landsstýrisfólkið ásetir í kunngerð nærri reglur.
+Stk. 2. 1) 7) (Strikað).
+Avrokning og afturhald 9)
+§ 15 a. 9) Upphæddir, latnar kommununum sbrt. § 12, stk. 2, 4. pkt., verða avroknaðar umvegis kommunalu avrokningarskipanina ella aðra skipan, ið landsstýrismaðurin tekur avgerð um.
+Stk. 2. 9) Um kommuna ella kommunalt samstarv, ið ein kommuna er partur av, áhaldandi ikki lýkur treytir, ásetingar ella leiðreglur í sambandi við roknskaparviðurskifti ella líknandi viðurskifti, kann landsstýrismaðurin taka avgerð um at útseta avrokningar, til viðkomandi viðurskifti eru fingin í rættlag.
+Ásetingar um revsing
+§ 16. 1) TAKS hevur heimild at áleggja bøtur. Verður ásetingin í § 6 ikki fylgd, kunnu dagbøtur á 20.000 kr. verða álagdar fyri hvønn dag, ið fer út um fyrsta gerandisdag eftir 20. januar.
+Stk. 2. 1) 10) Heldur eftirlønarveitari ikki ásetingarnar í § 2, stk. 8, § 7, § 8 og § 9, stk. 4, sendir TAKS í fyrsta lagi eina ávaring. Um brotið ikki verður rættað, kann TAKS áleggja dagbót á 20.000 krónur, til viðurskiftini eru komin í rættlag.
+Stk. 3. 1) Um brot á hesa løgtingslóg áhaldandi ikki verður rættað, kann eftirlønarupphæddin verða flutt til annan eftirlønarveitara at umsita uttan kostnað fyri eftirlønarsamanspararan. Landsstýrismaðurin ásetir við kunngerð nærri reglur.
+Ásetingar viðvíkjandi depotkontu 1)
+§ 16 a. 1) Hevur eftirlønarsamansparari, ið hevur B-inntøku ikki stovnað eftirlønarsáttmála og eftirlønarkontu, verður eftirlønarsamansparing sett inn á depotkonto hjá TAKS.
+Stk. 2. Tá persónur, sum hevur upphædd standandi á depotkontu, hevur stovnað sær eina eftirlønarkontu, skal hann boða TAKS frá hesum, og upphæddin verður síðani flutt á eftirlønarkontu.
+Stk. 3. Upphædd á depotkontu fær onga rentu tilskrivaða.
+Stk. 4. Um persónur doyr og hevur eftirløn á depotkontu, verður eftirlønarupphæddin viðgjørd sbrt. ásetingunum í § 11.
+Kærumøguleikar 6)
+§ 16 b. 6) 12) Avgerðir tiknar sambært hesi løgtingslóg kunnu kærast til Føroya Kærustovn innan 4 vikur eftir, at kærarin hevur fingið fráboðan um avgerðina.
+Stk. 2. 12) (Strikað).
+Kapittul 7
+Skiftisásetingar
+§ 17. Persónur, ið er føddur fyri 1. januar 1954, hevur ikki skyldu til at spara saman til egna eftirløn eftir § 1, stk. 1, men kann sjálvboðin spara saman til eftirløn sbrt. hesi løgtingslóg.
+Stk. 2. Freistin at stovna eftirlønarsáttmála er sett til 31. desember 2013 fyri tann, ið ongan eftirlønarsáttmála hevur, men er fevndur av lógini og hevur inntøku, ið eftirlønargjald skal rindast av.
+Stk. 3. Eftirlønarsamansparing, ið er inngoldin í 2012 ella 2013, kann gerast partur av eftirlønarsamansparing, ið er inngoldin frá 1. januar 2014 sbrt. hesari løgtingslóg.
+Stk. 4. Avtalur millum føroyskan eftirlønarveitara og hvønn einstakan tryggingartakara halda áfram, í tann mun tær ikki stríða ímóti hesari løgtingslóg.
+Stk. 5. 3) 7) Persónur, sum í starvi sínum fyri arbeiðsgevara við heimstaði í Føroyum, er fevndur av eftirlønarskipan hjá donskum eftirlønarveitara, tá henda lóg kemur í gildi, kann verða undantikin hesi løgtingslóg og í staðin halda áfram við at rinda til donsku eftirlønarskipanina, hóast ásetingarnar í § 5. Treytir fyri undantøku eru, at onki verður rinda til kapitaleftirløn, og at rindað verður í minsta lagi tað í § 2, stk 1 ásetta eftirlønargjaldið, men tó ongantíð minni enn 10 prosent av føstu árslønini. Fyri inngjaldi verður veittur burtursíggingarrættur og frádráttarrættur í skattskyldugu inntøkuni. Rindað verður eftirlønarskattur samsvarandi § 12, stk. 2. Útgjaldsleisturin fylgir áseting, ið er galdandi sbrt. eftirlønarsáttmálanum. Loyvi til at koma undir hesa skiftisskipan verður givið eftir umsókn til TAKS. Landsstýrismaðurin ásetir við kunngerð nærri reglur.
+§ 18. Henda løgtingslóg kemur í gildi 1. januar 2014.
+Tórshavn, 14. mai 2013
+Annika Olsen (sign.)
+varaløgmaður
+Lm. nr. 121/2012
+2) Skjal 1
+Er skattskylduga ársinntøkan størri enn:
+men minni enn, ella ájavnt við:
+er eftirlønarskatturin í prosent av samlaða inngjaldinum sama árið:
+kr. 0
+kr. 235.000
+30,0
+kr. 235.000
+kr. 240.000
+30,5
+kr. 240.000
+kr. 245.000
+31,0
+kr. 245.000
+kr. 250.000
+31,5
+kr. 250.000
+kr. 255.000
+32,0
+kr. 255.000
+kr. 260.000
+32,5
+kr. 260.000
+kr. 265.000
+33,0
+kr. 265.000
+kr. 270.000
+33,5
+kr. 270.000
+kr. 275.000
+34,0
+kr. 275.000
+kr. 280.000
+34,5
+kr. 280.000
+kr. 285.000
+35,0
+kr. 285.000
+kr. 290.000
+35,5
+kr. 290.000
+kr. 295.000
+36,0
+kr. 295.000
+kr. 300.000
+36,5
+kr. 300.000
+kr. 305.000
+37,0
+kr. 305.000
+kr. 310.000
+37,5
+kr. 310.000
+kr. 315.000
+38,0
+kr. 315.000
+kr. 320.000
+38,5
+kr. 320.000
+kr. 325.000
+39,0
+kr. 325.000
+kr. 330.000
+39,5
+kr. 330.000
+40,0
+1) Broytt við løgtingslóg nr. 152 frá 20. desember 2013, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2014.”
+2) Broytt við løgtingslóg nr. 69 frá 30. apríl 2018, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2019.”
+3) Broytt við løgtingslóg nr. 133 frá 19. desember 2014, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. § 1, nr. 2 kemur tó í gildi 1. januar 2015.”
+4) Broytt við løgtingslóg nr. 23 frá 26. februar 2026.
+5) Broytt við løgtingslóg nr. 35 frá 26. mars 2021, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd, og hevur virknað fyri inntøkuárið 2020 og fylgjandi ár.”
+6) Broytt við løgtingslóg nr. 157 frá 24. desember 2015, har § 2 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi 1. januar 2016. Stk. 2. Avgerðir, tiknar av TAKS, áðrenn henda lóg kom í gildi, kunnu innan 4 vikur frá 1. januar 2016 kærast til Skatta- og avgjaldskærunevndina.”
+7) Broytt við løgtingslóg nr. 78 frá 7. juni 2020, har § 3 ljóðar soleiðis: “Stk. 1. Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd. Stk. 2. § 1, nr. 5-6 og § 2, nr. 3 hava virknað frá 1. januar 2014. Stk. 3. § 1, nr. 7 og § 2, nr. 2 koma í gildi 1. januar 2021.”
+8) Broytt við løgtingslóg nr. 44 frá 6. mai 2015, har § 2 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi dagin eftir, at hon er kunngjørd og hevur virknað frá 1. januar 2015.”
+9) Broytt við løgtingslóg nr. 134 frá 19. desember 2014, har § 3 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2015.”
+10) Broytt við løgtingslóg nr. 86 frá 9. oktober 2026.
+11) Broytt við løgtingslóg nr. 77 frá 6. mai 2022, har § 5 ljóðar soleiðis: “§ 5. Henda løgtingslóg kemur í gildi 1. januar 2023, og samstundis fer úr gildi løgtingslóg nr. 56 frá 10. mai 2000 um Fólkaheilsuráð. Stk. 2. Í § 7, stk. 2, 1. pkt. í løgtingslóg nr. 23 frá 6. mars 1998 um barna- og ungdómstannrøkt, verður “Landsstýrismaðurin í heilsumálum” broytt til: “Fólkaheilsustýrið”. Stk. 3. Í § 9, stk. 5, 2. pkt. í løgtingslóg nr. 49 frá 14. mai 2013 um eftirløn verður “deildin fyri Arbeiðs- og Almannaheilsu” broytt til: “Sjúkrahúsverkið”.”
+12) Broytt við løgtingslóg nr. 159 frá 10. desember 2021, har § 43 ljóðar soleiðis: “Henda løgtingslóg kemur í gildi 1. januar 2022. Samstundis fer løgtingslóg nr. 47 frá 23. mars 1993 um kærunevnd í almanna-, familju- og heilsumálum úr gildi.”
+Um rættarregluna o.a.
+Um rættarregluna
+Bólkur: Løgtingslóg
+Gildisstøða: Galdandi
+Felagsmál/Sermál: Sermál
+Myndugleiki: Fíggjarmálaráðið
+Útgávudagur: 17-05-2013
+Tilvísingar
+Heimildir
+Broytingar
+Løgtingsmál
+Løgtingsmál nr: 121/2012
+Kunngerðablaðið
+Kunngerðarblað  2013 A - Løgtingslóg 49 frá 14. mai 2013
+Valmøguleikar
+Prenta
+Send
+PDF
+Word
+Tín lógalisti
+Set á tín lógarlista
+Strika av tínum lógarlista
+Tín lógalisti
+Send rættarreglu til teldupost
+Teldupostur*
+Angra
+Send
+Fyrivarni
+Samskifti
+logir.fo © Øll rættindi tilskilað
+Samskifti
+Navn*
+Teldupostur*
+Evni*
+Fyrispurningur*
+Angra
+Send
+Rita inn
+Brúkaranavn*
+Loyniorð*
+Angra
+Rita inn
+Leitar
+JAVASCRIPT ER NEYÐUGT
+Fyri at fáa fulla nyttu av síðuni er tað neyðugt at gera JavaScript virkið. Her verður tú vegleiddur um, hvussu tú gert JavaScipt virkið á tínum internetkaga.
+Ger JavaScript virkið í tínum kaga og les síðuna inn av nýggjum.
+logir.fo © Øll rættindi tilskilað

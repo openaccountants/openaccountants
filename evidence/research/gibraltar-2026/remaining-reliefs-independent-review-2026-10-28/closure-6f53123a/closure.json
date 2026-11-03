@@ -1,0 +1,41 @@
+{
+  "review_type": "Bounded independent repair closure",
+  "read_on": "2026-10-28",
+  "initial_review_head": "933e6993fe5305609c849551765a27ba9a116e8b",
+  "accepted_head": "6f53123a0306500efec732d97e42abc5ef764388",
+  "accepted": true,
+  "open_findings": [],
+  "closed_findings": [
+    "GI-REL-01"
+  ],
+  "scope": "Fourteen new relief row locations corrected and one neutral Guide review-provenance paragraph, two README provenance paragraphs and supplementary title reviewed. The 933e6993 substantive source/arithmetic acceptance is carried forward because all tax content, proof units, inputs, calculations and inherited evidence remain exact.",
+  "guide_version": "0.11",
+  "guide_sha256": "793d59fe22b71567a70ff4cc3f6114d1d1724b83b16ebf2482a53ac0c0268c8c",
+  "new_rows_accepted": 14,
+  "new_proof_units_accepted": 6,
+  "exact_snippets_accepted": 57,
+  "independent_arithmetic": "Four new conditional scenarios and both preserved main examples previously independently recomputed; all arithmetic content unchanged.",
+  "inherited_accepted_scope_preserved": true,
+  "prior_39_unaffected_manifest_files_exact": true,
+  "country_complete": false,
+  "professional_attestation": false,
+  "tier_promoted": false,
+  "not_claimed": [
+    "Actual client eligibility or certificate approval",
+    "Complete relief schedule or country coverage",
+    "ABS/GIBS interaction resolution",
+    "No general claim limitation",
+    "Retrospective disabled-access gap-period acceptance",
+    "Publication, CI, merge or deployment at this repair pin"
+  ],
+  "verification": "checks.json",
+  "reviewer_actions": {
+    "writer_edits": false,
+    "guide_edits": false,
+    "commits": false,
+    "pushes": false,
+    "external_messages": false,
+    "live_transactions": false,
+    "source_research_reopened": false
+  }
+}

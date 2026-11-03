@@ -1,0 +1,237 @@
+{
+  "base": "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+  "head": "124f6a7a00cbf173ddcd91a4c0ee81e5aa0f25bf",
+  "guides": {
+    "skills/burundi/bi-company-formation.md": {
+      "sha256": "726af702c103ccaa0acb152d8f2ab332f008cb60f22913957a707d404bf43152",
+      "description_words": 107,
+      "tier": 2,
+      "version": "1.1",
+      "ledger_rows": 12,
+      "shape_failures": {},
+      "platform_fields_preserved": {
+        "review_status": true,
+        "license": true,
+        "authored_by": true,
+        "trust_label": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_suffix_exact": true
+    },
+    "skills/burundi/bi-corporate-income-tax.md": {
+      "sha256": "d4ea1db0b8e0907904c2d8442bdffd99a5008adb480299ac0362e6f9b421bc74",
+      "description_words": 103,
+      "tier": 2,
+      "version": "1.1",
+      "ledger_rows": 16,
+      "shape_failures": {},
+      "platform_fields_preserved": {
+        "review_status": true,
+        "license": true,
+        "authored_by": true,
+        "trust_label": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_suffix_exact": true
+    },
+    "skills/burundi/bi-cross-border-tax.md": {
+      "sha256": "2a02c11bae8fe8baa3299a0c509c3db4fef7595e95de3450f5d33e83fb3b99b8",
+      "description_words": 98,
+      "tier": 2,
+      "version": "1.0",
+      "ledger_rows": 13,
+      "shape_failures": {},
+      "platform_fields_preserved": null,
+      "cta_suffix_exact": null
+    },
+    "skills/burundi/bi-income-tax.md": {
+      "sha256": "ea3f121ce8e419449653a73f08ddead53e27066d568287202f2fc87991ba6bb2",
+      "description_words": 103,
+      "tier": 2,
+      "version": "1.1",
+      "ledger_rows": 18,
+      "shape_failures": {},
+      "platform_fields_preserved": {
+        "review_status": true,
+        "license": true,
+        "authored_by": true,
+        "trust_label": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_suffix_exact": true
+    },
+    "skills/burundi/bi-payroll-social.md": {
+      "sha256": "d989302364cf501eeb33ddcf40fc269af0e271c636f31d2ef62c8dbd6d85360b",
+      "description_words": 98,
+      "tier": 2,
+      "version": "1.1",
+      "ledger_rows": 15,
+      "shape_failures": {},
+      "platform_fields_preserved": {
+        "review_status": true,
+        "license": true,
+        "authored_by": true,
+        "trust_label": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_suffix_exact": true
+    },
+    "skills/burundi/bi-tax-overview.md": {
+      "sha256": "7d9b758d7780b2700a6889c24b342e1806deb3ec54763548310680c826595ede",
+      "description_words": 103,
+      "tier": 2,
+      "version": "1.1",
+      "ledger_rows": 11,
+      "shape_failures": {},
+      "platform_fields_preserved": {
+        "review_status": true,
+        "license": true,
+        "authored_by": true,
+        "trust_label": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_suffix_exact": true
+    },
+    "skills/burundi/bi-transfer-pricing.md": {
+      "sha256": "9b5148d93979fff1c608d7713bd62000299f7b57bee4340420a1c9e93a5cb819",
+      "description_words": 101,
+      "tier": 2,
+      "version": "1.0",
+      "ledger_rows": 8,
+      "shape_failures": {},
+      "platform_fields_preserved": null,
+      "cta_suffix_exact": null
+    },
+    "skills/burundi/bi-vat-gst.md": {
+      "sha256": "9160720f5e0b64b8ed3fb592f9fb1e9ba029be5fcbed5dd4e3319bc9d01730c5",
+      "description_words": 101,
+      "tier": 2,
+      "version": "1.1",
+      "ledger_rows": 21,
+      "shape_failures": {},
+      "platform_fields_preserved": {
+        "review_status": true,
+        "license": true,
+        "authored_by": true,
+        "trust_label": true,
+        "drafted_by": true,
+        "approved_by": true,
+        "validation_status": true,
+        "validated": true,
+        "verified_by": true,
+        "reviewed_by": true,
+        "reviewed_on": true
+      },
+      "cta_suffix_exact": true
+    }
+  },
+  "source_manifest_sha256": "1441f65ac42f1c00ddeb4807aaa2ee087b4fabbd1ad044c114a85c12119a85d5",
+  "source_files_hash_checked": {
+    "income2020.pdf": "f682bd7f9aa20eea85fa0892222eed2fa157aef7f9c8dbe958824056977d590c",
+    "vat2020.pdf": "789fe003bd42b6e7e9555226258a55b2b74275a31c748cfba12ac90119a62fa4",
+    "procedure2020.pdf": "9b66e75e5c2d9005de26ca3dd35d3b10b6bade6c60a73ad26362581af750b241",
+    "budget2026.pdf": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+    "budget2025mod.pdf": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+    "companies2011.pdf": "27373ca33495fea051417101410677e154fa782e30ded00811ec3a7b368e1faf",
+    "morocco-ratif2026.pdf": "8c3746be4e0e1db9680e69d1166dab269a453b5d69667f2c7893af388feb2842",
+    "adb-fee2024.pdf": "98c99dacb5c9073aeb6286a440c44ec5d8749f1b6daddc238fc5308e92769e13",
+    "obr-laws.html": "61484107d4ada9af8f22c7610183c0ec2be7d2857007c77e904b18c74dfba5c9",
+    "inss-cotisations.html": "66c2dee04d634423d3d3dc0183978d1f2fe75554bbb9bb6426456a17be39482b",
+    "inss-home.html": "39b320a801770c2c68345507067d45bb31710db5e388fd14e8c3e2a628aa5b8f",
+    "adb-procedure.html": "9a66ad56dd1054cda454bfc34b35c83f78b4eb4d17c6f214a25c3f32adcf00c5",
+    "changes2026.docx": "88cf711b20c6388215374785e340f755b0d5992a68f25313d9469f8810ca26e1",
+    "changes2025mod.docx": "bd6c79ba246b80247b3c9e1cc479b02a478e7356fa9349ee6ae8e4fbbb9ea5d5",
+    "morocco-treaty.pdf": "bcc05199a231e6dbe0e220d764020ab87b0ae3dea5d0da1618b475f32cd1e2cf",
+    "inss-calcul.html": "06420f400630b1355bbce964e16c07f2ed3612da9acf0b7e1008b648e1e4526d",
+    "inss-filing.html": "bdc266d16afc876a9af0b664e6528021b93bac58f36786a4971d632e6f1ba211",
+    "inss-q32026.html": "d552290a61d0289ac2880f0f7bcb70a98d02ae5d9960b7169688092e6debf7bb",
+    "social2026.pdf": "3f664d8832c0c26d7c85d5a4f23c2ffebb6ad765161dd29042401b867fb8570d",
+    "gazette202105.pdf": "7580008499453fa4621c83bd64b002a97ede298d71a880ec06b0ff36e7ed8d16",
+    "portal-login.pdf": "62582e9e897dff6351f16bbbfb82da6c5b40ceb6c90810343b91aa0df1d250fe",
+    "portal-space.pdf": "bc288f4a134bc8e9e0d9c8af025ba6917e227fcafc4d60d982c15208d809f1e4",
+    "form-corporate.pdf": "a02e64daa5c552825bcaca4293fffbcbcabda08b729d5a0bd8e30c538ee8948c",
+    "form-individual.pdf": "7a35ba979bcd5eb35a24398529b7aea92e2acd74fae1814ab534e6e59434f954",
+    "form-micro.pdf": "8fd82401c046a52128f794569b656599c978b709fc866ef51ac3bcf5c4cfa720",
+    "form-monthly.pdf": "91ee1ad81c5f2b2abc7352861db8331ada8b6e5b7b1db20c89da8b7d7fb16e4b"
+  },
+  "runs": [
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/burundi/bi-company-formation.md",
+        "skills/burundi/bi-corporate-income-tax.md",
+        "skills/burundi/bi-cross-border-tax.md",
+        "skills/burundi/bi-income-tax.md",
+        "skills/burundi/bi-payroll-social.md",
+        "skills/burundi/bi-tax-overview.md",
+        "skills/burundi/bi-transfer-pricing.md",
+        "skills/burundi/bi-vat-gst.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 8 files, 16 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--repo",
+        "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burundi-pack-2026-11-01/repository",
+        "--base",
+        "8935b6fc3a7ff0f773334a45a67448f1efe37b19",
+        "--head",
+        "124f6a7a00cbf173ddcd91a4c0ee81e5aa0f25bf",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 8 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "scope_override": "exact 8935b6fc3a7ff0f773334a45a67448f1efe37b19..124f6a7a00cbf173ddcd91a4c0ee81e5aa0f25bf via import, no tracked script edits",
+      "exit_code": 0,
+      "stdout": "changed-only mode: validating 9 changed guide file(s)\nchecked 8 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n"
+    }
+  ],
+  "old_topic_labels": 65,
+  "ledger_rows": 114
+}

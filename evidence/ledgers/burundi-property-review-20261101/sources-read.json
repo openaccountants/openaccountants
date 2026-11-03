@@ -1,0 +1,113 @@
+{
+  "read_date": "2026-11-01",
+  "sources": [
+    {
+      "id": "JAN",
+      "url": "https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf",
+      "path": "budget2025mod.pdf",
+      "act": "Modified 2025/26 budget, effective 1 January 2026",
+      "read_scope": "Arts. 94, 103–104, 138–143, 217, 226–227 and 252 with neighbouring paragraphs; visual pp. 41–42 and final PDF249/printed246; per-mille sign and mortgage cap inspected.",
+      "sha256": "0dc9d9cf986bfcd2a10bae822c28724e570151f5d9f7bc6f4e9d980674ba1d4e",
+      "bytes": 40392761,
+      "read_date": "2026-11-01",
+      "reviewer_scope": "Full arts94,103–104,138–143,207,215,217,226–227,252 with neighbours. OCR physical29–32,40–43,52–55,249 read. Visual41–42,52–53,249. No whole-budget review.",
+      "official_web_reopen": "Failed: web tool400 content length too large40392761. Actual supplied official-source PDF hash verified and retained text/scans read.",
+      "reviewer_read_date": "2026-11-01"
+    },
+    {
+      "id": "JUL",
+      "url": "https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf",
+      "path": "budget2026.pdf",
+      "act": "Enacted 2026/27 budget, effective 1 July 2026",
+      "read_scope": "Arts. 94–95, 108–109, 146–151, 237, 246–247 and 277 with neighbouring paragraphs; visual pp.44–46 and267; per-mille sign and absence of mortgage cap inspected.",
+      "sha256": "a62d4bdb5ecdcc490b56cfbb0a3084db7b4a6c6a01ad04cdeba63ef80a3973be",
+      "bytes": 7715040,
+      "read_date": "2026-11-01",
+      "reviewer_scope": "Full arts94–95,108–109,146–151,226,235,237,246–247,277 with neighbours. OCR physical30–33,43–47,57–62,267 read. Visual44–46,58,60,267. No whole-budget review.",
+      "official_web_reopen": "Actual267pagePDF opened in web tool; no readable lines. Supplied same-hash source text/scans independently read.",
+      "reviewer_read_date": "2026-11-01"
+    },
+    {
+      "id": "REG",
+      "url": "https://amategeko.gov.bi/wp-content/uploads/2020/08/BOB_No2BIS-2020.pdf",
+      "path": "support-property-20261101/bob2020-2bis.pdf",
+      "act": "Loi n°1/05 du 20 février 2020, BOB n°2BIS/2020",
+      "read_scope": "Actual complete Act arts.1–35 and annex, physical23–31/printed187–195 read; annexIII/IV inspected visually. Principal text only: no assertion that missing 2026 cession order has been reconciled.",
+      "sha256": "067f1e69fbcbb830ce2868ddf24697d5b9be5491d444b1416199ac57f2349f3b",
+      "bytes": 434282,
+      "read_date": "2026-11-01",
+      "reviewer_scope": "Complete arts1–35 and all annexI–IV at physical23–31/printed187–195, including full art23continuation on physical26. Text full act/annex read; annexIII/IV visually inspected. Not current tariff certification.",
+      "official_web_reopen": "Official88pagegazette reopened in web tool, parsed law contents correspond to actual supplied bytes.",
+      "reviewer_read_date": "2026-11-01"
+    }
+  ],
+  "visual_files": [
+    {
+      "path": "budget2025mod-pages/041.png",
+      "sha256": "3a35d7e4eea72e3881d19d87fa15d473d6597f1534c573974a5ee06d1b028600"
+    },
+    {
+      "path": "budget2025mod-pages/042.png",
+      "sha256": "d2fd21c19a74f4b94905b402605afb30b118ef655df905991e0a96bf944a728e"
+    },
+    {
+      "path": "budget2025mod-pages/052.png",
+      "sha256": "51ed37beb3f9462d9865d8373ab1333b362b9253ba06b3ce1790d024a9e6aaec"
+    },
+    {
+      "path": "budget2025mod-pages/053.png",
+      "sha256": "cac8261149388c3921460b8986e502002940e4d1b66074a88084881f6e6042a3"
+    },
+    {
+      "path": "budget2025mod-pages/249.png",
+      "sha256": "3c2a41a0bf838e03c54b54f8b543c272f19fe77d7313041c3af84cdb84a3f8c1"
+    },
+    {
+      "path": "budget2026-pages/044.png",
+      "sha256": "d5009bc643b7cd266aa7e6626ef6933740852bb5015490f8a5d587eb58ac0aa6"
+    },
+    {
+      "path": "budget2026-pages/045.png",
+      "sha256": "e8dbaa8cb18da5a4e4d28f7b8da81192afff746966a65e427a29923f1a1eaebc"
+    },
+    {
+      "path": "budget2026-pages/046.png",
+      "sha256": "ab540ea19765453080442f01b42e3f93e69ca353b6daf1160d6e98595f2c5f8f"
+    },
+    {
+      "path": "budget2026-pages/058.png",
+      "sha256": "0dffaa7acd52f1a6d8398dcc9c6c77164b9221024c6b4a45952488da3dcc263a"
+    },
+    {
+      "path": "budget2026-pages/060.png",
+      "sha256": "be6947269950d4fc327cd866024f0c14517a9bac205b9c7862013117a1ac42ea"
+    },
+    {
+      "path": "budget2026-pages/267.png",
+      "sha256": "7b003c3165548f405f7e0ebb2aefbc34462b791b2771b23fb7b9c94aff123ee1"
+    },
+    {
+      "path": "support-property-20261101/registration-page-30.png",
+      "sha256": "7f8ad7c99e5d75147051c03dc6e949f68e7c464269ea8fe460f11ffc6044b9bd"
+    },
+    {
+      "path": "support-property-20261101/registration-page-31.png",
+      "sha256": "e41d3de88a203ce53b15f4f7e94e357f1534bb96444d658ada73a219e6dba441"
+    },
+    {
+      "path": "support-property-20261101/communal-pages/page-01.png",
+      "sha256": "95bc88425e908a7dc658b836ad1bdfe95387eca18f08976731db8d00bcd36174"
+    },
+    {
+      "path": "support-property-20261101/communal-pages/page-31.png",
+      "sha256": "d95f8c134b446d99be60652958b2dbf4bc68b8ab2c15d8eae845e6de42d8cf0a"
+    }
+  ],
+  "communal_identity": {
+    "path": "support-property-20261101/fiscalite-communale-2025.pdf",
+    "sha256": "aad6f9c2e9c6773cc2af796aed7c63ddbf78c71f1430764d0a81808b2dde23be",
+    "actual_law": "1/02 of3March2016, proven by actual cover and signature; not1/09of15May2025 cited by Julybudget94",
+    "scope": "Cover/signature inspected visually plus OCR. No2026annualrates certified."
+  },
+  "missing_implementation_scope": "No independent claim to have read unrecovered orders/forms. Writer/support404/browser/archive attempts preserved; their continued absence does not block bounded scope acceptance once R1–R4 repaired."
+}

@@ -1,0 +1,7 @@
+Writer browser observation. 31 October 2026. This is a readable observation record, not raw HTML or a claim to have inspected private form fields.
+
+Official Fund route https://www.miljovernfondet.no/refusjon-av-avgift/ linked directly to https://skjema.no/sysselmesteren/ref_miljoavgift . Normal browser opened that link.
+Initial screen title: Refusjon miljøavgift for fastboende på Svalbard.
+Options: privacy declaration; Logg inn med ID-porten; Logg inn med brukernavn og passord; Åpne skjema uten innlogging.
+The declaration was opened and read. It describes data controller Sysselmesteren, processor Prokom, application data and metadata retention, with consent needed to use the service. No consent checkbox was accepted. No login, form field, personal data, upload or submission was performed.
+Post-access fields, receipt and employer settlement interface were not verified and are explicitly unconfirmed in the Guide. Do not invent them from the public initial screen.

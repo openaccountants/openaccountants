@@ -1,0 +1,659 @@
+{
+  "pinned_base": "a7888d0d6c1f7cb0fed13d8d3f6b7e05f1d12297",
+  "freeze": "a61fda399fa613455862d3cc72d5c403cd330ccc",
+  "actual_head": "a61fda399fa613455862d3cc72d5c403cd330ccc",
+  "freeze_hashes": {
+    "evidence/ledgers/benin-old-topics.md": true,
+    "evidence/ledgers/bj-company-formation.md": true,
+    "evidence/ledgers/bj-corporate-income-tax.md": true,
+    "evidence/ledgers/bj-cross-border-withholding.md": true,
+    "evidence/ledgers/bj-income-tax.md": true,
+    "evidence/ledgers/bj-payroll-social.md": true,
+    "evidence/ledgers/bj-tax-overview.md": true,
+    "evidence/ledgers/bj-transfer-pricing.md": true,
+    "evidence/ledgers/bj-vat-gst.md": true,
+    "skills/benin/README.md": true,
+    "skills/benin/bj-company-formation.md": true,
+    "skills/benin/bj-corporate-income-tax.md": true,
+    "skills/benin/bj-cross-border-withholding.md": true,
+    "skills/benin/bj-income-tax.md": true,
+    "skills/benin/bj-payroll-social.md": true,
+    "skills/benin/bj-tax-overview.md": true,
+    "skills/benin/bj-transfer-pricing.md": true,
+    "skills/benin/bj-vat-gst.md": true
+  },
+  "freeze_preserved": true,
+  "guides": {
+    "bj-company-formation.md": {
+      "description_words": 38,
+      "description_80_150": false,
+      "strict_types": true,
+      "tax_year": 2026,
+      "tier": 2,
+      "platform_keys": [
+        "license",
+        "review_status",
+        "trust_label"
+      ],
+      "baseline_sha256": "59d9521c932d2393d4cdf9decb807aaa5ee21687024d1db68ff2238607f9d186",
+      "baseline_bytes": 4384,
+      "candidate_bytes": 14477,
+      "cta_tail_byte_identical": true,
+      "all_platform_and_human_fields_identical": {
+        "drafted_by": true,
+        "authored_by": true,
+        "license": true,
+        "reviewed_by": true,
+        "validated": true,
+        "reviewed_on": true,
+        "verified_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "validation_status": true,
+        "approved_by": true
+      },
+      "baseline_topics": 13,
+      "all_topics_exactly_in_map": true,
+      "version_before": "None",
+      "version_now": "0.1",
+      "date_before": "2026-07-13",
+      "date_now": "2026-11-01"
+    },
+    "bj-corporate-income-tax.md": {
+      "description_words": 37,
+      "description_80_150": false,
+      "strict_types": true,
+      "tax_year": 2026,
+      "tier": 2,
+      "platform_keys": [
+        "license",
+        "review_status",
+        "trust_label"
+      ],
+      "baseline_sha256": "abe1d0a36a9f611196f7c7f37b75ef940e30ab85f7a87722f52d1439941d5aca",
+      "baseline_bytes": 4847,
+      "candidate_bytes": 15320,
+      "cta_tail_byte_identical": true,
+      "all_platform_and_human_fields_identical": {
+        "drafted_by": true,
+        "authored_by": true,
+        "license": true,
+        "reviewed_by": true,
+        "validated": true,
+        "reviewed_on": true,
+        "verified_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "validation_status": true,
+        "approved_by": true
+      },
+      "baseline_topics": 16,
+      "all_topics_exactly_in_map": true,
+      "version_before": "None",
+      "version_now": "0.1",
+      "date_before": "2026-07-13",
+      "date_now": "2026-11-01"
+    },
+    "bj-cross-border-withholding.md": {
+      "description_words": 38,
+      "description_80_150": false,
+      "strict_types": true,
+      "tax_year": 2026,
+      "tier": 2,
+      "platform_keys": [],
+      "new_no_platform_keys": true
+    },
+    "bj-income-tax.md": {
+      "description_words": 42,
+      "description_80_150": false,
+      "strict_types": true,
+      "tax_year": 2026,
+      "tier": 2,
+      "platform_keys": [
+        "license",
+        "review_status",
+        "trust_label"
+      ],
+      "baseline_sha256": "29096c2cbf33dcb3daf5fc77228897dfc695c87f0ba09b5c0f744c605f9bc721",
+      "baseline_bytes": 4196,
+      "candidate_bytes": 12749,
+      "cta_tail_byte_identical": true,
+      "all_platform_and_human_fields_identical": {
+        "drafted_by": true,
+        "authored_by": true,
+        "license": true,
+        "reviewed_by": true,
+        "validated": true,
+        "reviewed_on": true,
+        "verified_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "validation_status": true,
+        "approved_by": true
+      },
+      "baseline_topics": 15,
+      "all_topics_exactly_in_map": true,
+      "version_before": "None",
+      "version_now": "0.1",
+      "date_before": "2026-07-13",
+      "date_now": "2026-11-01"
+    },
+    "bj-payroll-social.md": {
+      "description_words": 46,
+      "description_80_150": false,
+      "strict_types": true,
+      "tax_year": 2026,
+      "tier": 2,
+      "platform_keys": [
+        "license",
+        "review_status",
+        "trust_label"
+      ],
+      "baseline_sha256": "7803c247159b3d00bbfa0a430f970008f004b41a018cbecf062ce23019b61526",
+      "baseline_bytes": 3710,
+      "candidate_bytes": 11103,
+      "cta_tail_byte_identical": true,
+      "all_platform_and_human_fields_identical": {
+        "drafted_by": true,
+        "authored_by": true,
+        "license": true,
+        "reviewed_by": true,
+        "validated": true,
+        "reviewed_on": true,
+        "verified_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "validation_status": true,
+        "approved_by": true
+      },
+      "baseline_topics": 12,
+      "all_topics_exactly_in_map": true,
+      "version_before": "None",
+      "version_now": "0.1",
+      "date_before": "2026-07-13",
+      "date_now": "2026-11-01"
+    },
+    "bj-tax-overview.md": {
+      "description_words": 45,
+      "description_80_150": false,
+      "strict_types": true,
+      "tax_year": 2026,
+      "tier": 2,
+      "platform_keys": [
+        "license",
+        "review_status",
+        "trust_label"
+      ],
+      "baseline_sha256": "a2dfd0b28ae699d9ce57bb5018926d91af45687dce29c7c5f8148138c1606bd5",
+      "baseline_bytes": 3585,
+      "candidate_bytes": 14937,
+      "cta_tail_byte_identical": true,
+      "all_platform_and_human_fields_identical": {
+        "drafted_by": true,
+        "authored_by": true,
+        "license": true,
+        "reviewed_by": true,
+        "validated": true,
+        "reviewed_on": true,
+        "verified_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "validation_status": true,
+        "approved_by": true
+      },
+      "baseline_topics": 13,
+      "all_topics_exactly_in_map": true,
+      "version_before": "None",
+      "version_now": "0.1",
+      "date_before": "2026-07-13",
+      "date_now": "2026-11-01"
+    },
+    "bj-transfer-pricing.md": {
+      "description_words": 35,
+      "description_80_150": false,
+      "strict_types": true,
+      "tax_year": 2026,
+      "tier": 2,
+      "platform_keys": [],
+      "new_no_platform_keys": true
+    },
+    "bj-vat-gst.md": {
+      "description_words": 46,
+      "description_80_150": false,
+      "strict_types": true,
+      "tax_year": 2026,
+      "tier": 2,
+      "platform_keys": [
+        "license",
+        "review_status",
+        "trust_label"
+      ],
+      "baseline_sha256": "1a72adef83ff74022e62f9ef684cd5a3b2a1319c3dd9e3acc468cc0ffda4f346",
+      "baseline_bytes": 3891,
+      "candidate_bytes": 19474,
+      "cta_tail_byte_identical": true,
+      "all_platform_and_human_fields_identical": {
+        "drafted_by": true,
+        "authored_by": true,
+        "license": true,
+        "reviewed_by": true,
+        "validated": true,
+        "reviewed_on": true,
+        "verified_by": true,
+        "trust_label": true,
+        "review_status": true,
+        "validation_status": true,
+        "approved_by": true
+      },
+      "baseline_topics": 12,
+      "all_topics_exactly_in_map": true,
+      "version_before": "None",
+      "version_now": "0.1",
+      "date_before": "2026-07-13",
+      "date_now": "2026-11-01"
+    }
+  },
+  "examples": [
+    {
+      "guide": "bj-company-formation.md",
+      "name": "SARL capital versus fee",
+      "results": {
+        "cash_paid_now": {
+          "independent_decimal": "1000000.00",
+          "given_expected": "1000000",
+          "matches": true
+        },
+        "cash_unpaid": {
+          "independent_decimal": "1000000.00",
+          "given_expected": "1000000",
+          "matches": true
+        },
+        "identified_initial_funding": {
+          "independent_decimal": "1022000.00",
+          "given_expected": "1022000",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-company-formation.md",
+      "name": "SA quarter capital payment",
+      "results": {
+        "minimum_paid_now": {
+          "independent_decimal": "2500000.00",
+          "given_expected": "2500000",
+          "matches": true
+        },
+        "remaining_cash_capital": {
+          "independent_decimal": "7500000.00",
+          "given_expected": "7500000",
+          "matches": true
+        },
+        "identified_initial_funding": {
+          "independent_decimal": "2537000.00",
+          "given_expected": "2537000",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-corporate-income-tax.md",
+      "name": "Ordinary IS versus minimum",
+      "results": {
+        "profit_is": {
+          "independent_decimal": "3000000.00",
+          "given_expected": "3000000",
+          "matches": true
+        },
+        "percentage_minimum": {
+          "independent_decimal": "1000000.00",
+          "given_expected": "1000000",
+          "matches": true
+        },
+        "annual_is": {
+          "independent_decimal": "3000000.00",
+          "given_expected": "3000000",
+          "matches": true
+        },
+        "is_plus_separate_levy": {
+          "independent_decimal": "3004000.00",
+          "given_expected": "3004000",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-corporate-income-tax.md",
+      "name": "Absolute IS floor",
+      "results": {
+        "profit_is": {
+          "independent_decimal": "30000.00",
+          "given_expected": "30000",
+          "matches": true
+        },
+        "percentage_minimum": {
+          "independent_decimal": "200000.00",
+          "given_expected": "200000",
+          "matches": true
+        },
+        "annual_is": {
+          "independent_decimal": "250000",
+          "given_expected": "250000",
+          "matches": true
+        },
+        "is_plus_separate_levy": {
+          "independent_decimal": "254000",
+          "given_expected": "254000",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-cross-border-withholding.md",
+      "name": "Ordinary dividend recipient decision",
+      "results": {
+        "nonresident_associate_tax": {
+          "independent_decimal": "50000.00",
+          "given_expected": "50000",
+          "matches": true
+        },
+        "other_dividend_tax": {
+          "independent_decimal": "100000.00",
+          "given_expected": "100000",
+          "matches": true
+        },
+        "difference": {
+          "independent_decimal": "50000.00",
+          "given_expected": "50000",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-cross-border-withholding.md",
+      "name": "Mixed contract separate invoicing decision",
+      "results": {
+        "with_separate_goods_invoice": {
+          "independent_decimal": "200000.00",
+          "given_expected": "200000",
+          "matches": true
+        },
+        "without_separate_invoice": {
+          "independent_decimal": "1000000.00",
+          "given_expected": "1000000",
+          "matches": true
+        },
+        "difference": {
+          "independent_decimal": "800000.00",
+          "given_expected": "800000",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-income-tax.md",
+      "name": "Ordinary monthly ITS",
+      "results": {
+        "its": {
+          "independent_decimal": "16500.00",
+          "given_expected": "16500",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-income-tax.md",
+      "name": "June ITS and levy",
+      "results": {
+        "band_tax": {
+          "independent_decimal": "101500.00",
+          "given_expected": "101500",
+          "matches": true
+        },
+        "tax_plus_june_levy": {
+          "independent_decimal": "104500.00",
+          "given_expected": "104500",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-payroll-social.md",
+      "name": "Ordinary employer VPS",
+      "results": {
+        "vps": {
+          "independent_decimal": "80000.00",
+          "given_expected": "80000",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-payroll-social.md",
+      "name": "Private school exemption evidence decision",
+      "results": {
+        "taxable_base": {
+          "independent_decimal": "1500000",
+          "given_expected": "1500000",
+          "matches": true
+        },
+        "vps_with_evidence": {
+          "independent_decimal": "30000.00",
+          "given_expected": "30000",
+          "matches": true
+        },
+        "vps_without_exemption": {
+          "independent_decimal": "40000.00",
+          "given_expected": "40000",
+          "matches": true
+        },
+        "difference": {
+          "independent_decimal": "10000.00",
+          "given_expected": "10000",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-tax-overview.md",
+      "name": "Known DGI cash schedule reconciliation",
+      "results": {
+        "known_dgi_cash_subtotal": {
+          "independent_decimal": "1204500",
+          "given_expected": "1204500",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-tax-overview.md",
+      "name": "Supported offsets versus unresolved amount",
+      "results": {
+        "cash_vat": {
+          "independent_decimal": "350000",
+          "given_expected": "350000",
+          "matches": true
+        },
+        "unsupported_comparison": {
+          "independent_decimal": "200000",
+          "given_expected": "200000",
+          "matches": true
+        },
+        "understatement": {
+          "independent_decimal": "150000",
+          "given_expected": "150000",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-transfer-pricing.md",
+      "name": "Controlled purchase comparison",
+      "results": {
+        "recorded_cost": {
+          "independent_decimal": "12000000",
+          "given_expected": "12000000",
+          "matches": true
+        },
+        "comparable_cost": {
+          "independent_decimal": "10000000",
+          "given_expected": "10000000",
+          "matches": true
+        },
+        "candidate_profit_addback": {
+          "independent_decimal": "2000000",
+          "given_expected": "2000000",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-transfer-pricing.md",
+      "name": "Turnover OR asset threshold screen",
+      "results": {
+        "turnover_shortfall": {
+          "independent_decimal": "100000000",
+          "given_expected": "100000000",
+          "matches": true
+        },
+        "asset_excess": {
+          "independent_decimal": "200000000",
+          "given_expected": "200000000",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-vat-gst.md",
+      "name": "Ordinary monthly VAT",
+      "results": {
+        "output_vat": {
+          "independent_decimal": "1800000.00",
+          "given_expected": "1800000",
+          "matches": true
+        },
+        "net_vat": {
+          "independent_decimal": "1080000.00",
+          "given_expected": "1080000",
+          "matches": true
+        }
+      },
+      "passed": true
+    },
+    {
+      "guide": "bj-vat-gst.md",
+      "name": "BTP qualifying machinery fuel limit",
+      "results": {
+        "allowed_input_vat": {
+          "independent_decimal": "162000.00",
+          "given_expected": "162000",
+          "matches": true
+        },
+        "excluded_input_vat": {
+          "independent_decimal": "18000.00",
+          "given_expected": "18000",
+          "matches": true
+        },
+        "full_credit_overstatement": {
+          "independent_decimal": "18000.00",
+          "given_expected": "18000",
+          "matches": true
+        }
+      },
+      "passed": true
+    }
+  ],
+  "topic_map_rows": 81,
+  "ledger_rows": {
+    "bj-income-tax.md": 14,
+    "bj-vat-gst.md": 24,
+    "bj-corporate-income-tax.md": 14,
+    "bj-company-formation.md": 14,
+    "bj-transfer-pricing.md": 12,
+    "bj-tax-overview.md": 12,
+    "bj-cross-border-withholding.md": 16,
+    "bj-payroll-social.md": 7
+  },
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/benin/bj-company-formation.md",
+        "skills/benin/bj-corporate-income-tax.md",
+        "skills/benin/bj-cross-border-withholding.md",
+        "skills/benin/bj-income-tax.md",
+        "skills/benin/bj-payroll-social.md",
+        "skills/benin/bj-tax-overview.md",
+        "skills/benin/bj-transfer-pricing.md",
+        "skills/benin/bj-vat-gst.md"
+      ],
+      "exit_code": 0,
+      "stdout": "skills/benin/bj-company-formation.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-cross-border-withholding.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-tax-overview.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-transfer-pricing.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/benin/bj-vat-gst.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/benin/bj-company-formation.md",
+        "skills/benin/bj-corporate-income-tax.md",
+        "skills/benin/bj-cross-border-withholding.md",
+        "skills/benin/bj-income-tax.md",
+        "skills/benin/bj-payroll-social.md",
+        "skills/benin/bj-tax-overview.md",
+        "skills/benin/bj-transfer-pricing.md",
+        "skills/benin/bj-vat-gst.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 8 files, 16 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "evidence/ledgers/benin-draft-20261101/pinned-validation.py"
+      ],
+      "exit_code": 0,
+      "stdout": "Pinned base: a7888d0d6c1f7cb0fed13d8d3f6b7e05f1d12297; comparison includes candidate working tree\nchanged-only mode: validating 9 changed guide file(s)\nchecked 8 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/benin/bj-cross-border-withholding.md: BJ PR also holds bj-payroll-social, with a different job\n\nvalidation passed (1 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "a7888d0d6c1f7cb0fed13d8d3f6b7e05f1d12297"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "git",
+        "diff",
+        "--check",
+        "--cached"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

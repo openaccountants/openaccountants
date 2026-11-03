@@ -1,0 +1,70 @@
+{
+  "publication_merge": "f3c170a97910286e258610d9625e0dce5183bc8d",
+  "files": [
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/PUBLICATION-CHECKS.md",
+      "sha256": "e9f72f25f9b619c9dd76c0d8b3bdf3e8925801cda739847bcdc6c82b2b0b9e2b",
+      "bytes": 1885
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/SOURCE-PUBLICATION-MAP.md",
+      "sha256": "0b2bbb2d61071450883f2a2114fc745f9ae35a3d29c25e47a801b9e91a20c0b8",
+      "bytes": 16563
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/publication-checkpoint.json",
+      "sha256": "ab47e2306e43eb852349cf0fb328252eb4ad457ecb159092b23a60a3dc25e7de",
+      "bytes": 1913
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/reviewed-byte-integrity.json",
+      "sha256": "04f2b0c70165ed7d78d59ea3ca151b7d9ce16fd3a097a004cf49b7a782ae844a",
+      "bytes": 144706
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/source-publication-map.json",
+      "sha256": "32d6a87e0568e699e653e05fd452ec8cb087bb684ee934e4ced654952af6df8e",
+      "bytes": 163145
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/validation/changed-guides.txt",
+      "sha256": "42816b9ec74551b04a3d41a53ad2cf5edf9f7f7fbf223e51e33452c74cba9a9d",
+      "bytes": 1102
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/validation/changed-rates-tests.txt",
+      "sha256": "698d16d7b93c4bd9707d3cfacda6fb1e0fea99ed0cda6e69bedc42772940540a",
+      "bytes": 106
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/validation/changed-reviewer-tests.txt",
+      "sha256": "16c36ae176c8925dc74efb6008909bd46a5d866707ff3ce79ef4d1d60d412ede",
+      "bytes": 114
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/validation/examples.txt",
+      "sha256": "6d794926bae9575f20edcf0ce8fd5220c7355199500035b3fd62eea175edf0e4",
+      "bytes": 60
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/validation/shape-and-advisory.txt",
+      "sha256": "25ab49c2456304209919163247143d9bc2a433e07314454dc1d99074bd7789d8",
+      "bytes": 6553
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/validation/strict-sync.txt",
+      "sha256": "62b7ad5e4759a64b1a93bd3cf70e8225226334cb573505d868349175a38c6a52",
+      "bytes": 82
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/validation/unit-tests-final.txt",
+      "sha256": "aebed154ab995f4d70fd87aeda7395eefdc5537784d7736cfa00632b13a2f745",
+      "bytes": 287
+    },
+    {
+      "path": "evidence/ledgers/faroe-islands-20261031-publication/validation/unit-tests-initial-sparse.txt",
+      "sha256": "ebc15b0287f449707c6a9f63ab110bac7515daaf88af5fef630e0665d34e8725",
+      "bytes": 22501
+    }
+  ]
+}

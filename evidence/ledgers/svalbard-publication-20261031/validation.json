@@ -1,0 +1,47 @@
+{
+  "publication_content_head": "962fba6cd2ff8d9b57ce532698d606913241c62b",
+  "reviewed_source_candidate": "13b1e523f",
+  "existing_public_head": "e0ac02e13c68a2bf6a36b3e3f70fa3b618d2a3ec",
+  "guide_and_readme_sha256": {
+    "skills/svalbard/README.md": "fb915794af0482e3d69942a551c2a4f75cc3890ff6058d04ae4ffa016a86ff47",
+    "skills/svalbard/sj-svalbard-coal-export-duty.md": "2a548f1eb056eef5d04e1a18e1b3f968c2a85ce124ca16ac0e922db927d2df48",
+    "skills/svalbard/sj-svalbard-company-beneficial-owners.md": "9cccd547eb2f2593ab7fee3cfce81a3eba8e3fbc82333c44b38588fb3d7e0472",
+    "skills/svalbard/sj-svalbard-company-income-tax.md": "3dde986717a5cde36f68be7bd6aad40a823b598f86dbfc8eccdbd541996bf27d",
+    "skills/svalbard/sj-svalbard-income-tax.md": "ba393f34e4ec3ebcf945f77e6332d6977c7d30ca31708ecd9eb7be7867b36ef5",
+    "skills/svalbard/sj-svalbard-payroll-tax.md": "184c3e06f3c4cef010cd2013b6d195dca3fcf2d45780116792d1678f54fbd9fe",
+    "skills/svalbard/sj-svalbard-project-group-payroll.md": "2e0854e642cd7dd89da03353da5fcbfc4099f3178478977ff5be87f1c137ef31",
+    "skills/svalbard/sj-svalbard-social-contributions.md": "1f5558c5b413594b222910db8414cc72aa3e42b91940242a9b5ac5dae7c4787e",
+    "skills/svalbard/sj-svalbard-tax-residence.md": "1d64825274c647daed51cef5b51f74ff1812670081eea39eccabc0445fcf5c14",
+    "skills/svalbard/sj-svalbard-transfer-pricing.md": "30d6fda025a1dd66360eb7de12b93b9d93d2182d70e27abc8c453c2365e28fd7",
+    "skills/svalbard/sj-svalbard-visitor-environmental-levy.md": "d30213477809875245d0fc31743bd026396369df510bce840eef1a7746c4c8d7"
+  },
+  "exact_evidence_records": 82,
+  "private_capture_omissions_verified": 74,
+  "research_ancestry_excluded": true,
+  "checks": {
+    "changed_guides": {
+      "guides": 10,
+      "exit_code": 0,
+      "advisory_groups": 17,
+      "notes": "Two read-date evidence advisories, nine source-host advisories including correct Norwegian authorities, and four job/domain warnings; summary groups as emitted by validator."
+    },
+    "strict_metadata_sync": {
+      "guides": 10,
+      "errors": 0,
+      "warnings": 0,
+      "notices": 0
+    },
+    "arithmetic_examples": {
+      "files": 10,
+      "blocks": 20,
+      "failures": 0,
+      "missing": 0
+    },
+    "repository_unit_tests": {
+      "tests": 175,
+      "result": "OK",
+      "earlier_sparse_fixture_failure": "First run lacked workflows/README.md; existing public workflows fixture materialised and entire suite rerun successfully."
+    }
+  },
+  "status": "Reviewed partial pack; gaps retained; Michael reviews; no merge"
+}

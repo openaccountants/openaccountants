@@ -1,0 +1,1010 @@
+{
+  "scope": "Exact immutable pre-expansion source, every nonblank body line including headings, introductions, rate rows and example blocks; no former review is rewritten.",
+  "guides": [
+    {
+      "path": "skills/guinea/gn-property-tax.md",
+      "old_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_blob": "886b4a4e2054f1b2af91e1785b4c53bef0fb6282",
+      "old_sha256": "38945a4cc0390f40310f63d2c737dfd6c09c0876b5476fa1f4bf742b4f9a67c4",
+      "original_text": "---\nname: gn-property-tax\ndescription: \"Guinea CFU property-classification and rate working paper using the enacted March 2026 replacement of CGI article 265. Use it only after separately confirming property liability, exemption status and the annual rental-value base, and establishing that this version governs the actual period including any October rectification effect. It distinguishes owner-occupied residential and professional property, rented property and completed unoccupied property. Two examples reconcile assumed annual values and rates without establishing a valuation method. If the governing version is not confirmed, the result is hypothetical March-text analysis only. It cannot support a live assessment, filing or payment conclusion. Full property procedures and other pack domains remain partial.\"\njurisdiction: GN\ncategory: international\ntax_year: 2026\ntax_year_notes: \"Enacted 31 March 2026 replacement text; earlier periods and October rectification status unconfirmed.\"\ntier: 2\nlast_updated: 2026-11-01\nversion: 1.1\n---\n\n# Guinea CFU: property classification and rate workpaper v1.1\n\n> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Guinea.\n\n## Who this applies to\n\n**Governing-version prerequisite.** Before using this workflow for an actual period or invoice, establish that the March replacement text governs it, including the promulgation, effective date and effect of any October rectification. If that is not confirmed, label every result **hypothetical March-text analysis only** and stop before a live tax/compliance conclusion, filing/payment decision or legally required invoice-correction request. The source gap does not authorise assuming the March text remains unchanged.\n\nUse for a property already confirmed to fall within the Contribution Foncière Unique (CFU), with its taxable annual rental value and exemption status established separately. This job selects the rate from CGI article 265 as replaced by article 14 of Law L/2026/010/CNT of 31 March 2026. It produces a rate workpaper, not a complete property assessment. The same official bundle contains promulgation decree D/2026/0103/PRG/SGG, signed 31 March 2026. Use this replacement text where applicable; allocation to periods before the replacement and the status/effect of the October rectifying bill remain unconfirmed. [Law art. 14 and decree arts. 1–2, PDF pp. 21,27](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf).\n\n## Rates, bands and thresholds\n\n| Confirmed property classification | CFU rate and base under replaced CGI 265 | Official source |\n|---|---|---|\n| Residential property occupied by its owner | 2% of actual annual rental value | [Law art. 14 / CGI 265, first bullet](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |\n| Professional-use property occupied by its owner | 10% of actual annual rental value | [Law art. 14 / CGI 265, second bullet](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |\n| Rented property | 15% of actual annual rental value | [Law art. 14 / CGI 265, third bullet](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |\n| Completed property that is unoccupied | 5% of estimated annual rental value | [Law art. 14 / CGI 265, fourth bullet](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |\n\nThe base is rental value, not the property's purchase price. Keep actual annual rental value and estimated annual rental value in separate workpaper fields; the law uses different bases for occupied/rented and completed-unoccupied property. These rates do not establish that a particular taxpayer or property is taxable. [CGI 265 as replaced](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21).\n\n## The base\n\n0. Establish the governing-version prerequisite above and record the evidence for the actual period or invoice, including any October effect. If unresolved, stop live use; the following steps may only illustrate the March text hypothetically.\n1. Identify the property, owner, relevant period and supporting ownership/occupation evidence. Obtain the independently confirmed CFU scope and exemption conclusion before calculating.\n2. Record whether it is owner-occupied residential, owner-occupied professional, rented, or completed and unoccupied. Preserve the lease, occupation evidence or completion/vacancy facts that support that classification.\n3. Obtain the established annual rental-value base and its valuation evidence. Do not substitute purchase cost, capital value or monthly rent without the applicable valuation determination.\n4. Multiply that annual base by the corresponding rate above. Reconcile the result to the assessment or draft calculation, showing any difference for review. The multiplication follows the express rate/base pairs in [CGI 265](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21).\n5. Stop for a mixed-use property, a change of use during the year, partial ownership, a contested valuation or an exemption question. Article 265 alone does not resolve those facts. The completed workpaper records the evidence, category, base, rate and computed amount, with unresolved items separately identified.\n\n## Deadlines and filing\n\nThis is a computation workpaper. Complete it before a filing/payment decision and retain the calculation with the classification and valuation evidence as a workflow control. This is not a statutory retention-period claim. The opened amendment does not establish the CFU return form, portal, field numbers, filing/payment dates or payment receipt process. No submission or payment instruction is supplied until those are verified.\n\n## Penalties and interest\n\nNo CFU penalty, late-payment interest rate or relief condition has been confirmed from the opened replacement article. Do not compute a sanction from a rate used in a different tax.\n\n## Cross-border points\n\nThe rate table classifies property by use/occupation, but it does not establish non-resident ownership liability, fiscal representation, treaty relief or foreign-tax credit entitlement. Obtain those conclusions separately before using the result for an overseas owner's filing.\n\n## Two worked examples that recompute\n\nFirst, an owner-occupied home has an independently confirmed actual annual rental-value base of GNF 60,000,000. The property is assumed taxable without exemption and the replaced article applies. CFU is GNF 1,200,000. The example establishes no valuation method.\n\n```oa-check\nname: Owner-occupied residential rate workpaper\ninputs:\n  confirmed_annual_rental_value: 60000000\n  rate: 0.02\nsteps:\n  - cfu: confirmed_annual_rental_value * rate\nexpected:\n  cfu: 1200000\n```\n\nSecond, compare a completed property remaining wholly unoccupied with a hypothetical letting for a full annual period. Each scenario has an independently confirmed GNF 120,000,000 annual base, estimated in the vacancy scenario and actual in the rental scenario. The results are GNF 6,000,000 and GNF 18,000,000. The GNF 12,000,000 difference is only the CFU component of a letting decision; rent, costs, other taxes and transition allocation are not modeled.\n\n```oa-check\nname: Vacancy versus full-period rental CFU component\ninputs:\n  confirmed_estimated_vacant_base: 120000000\n  confirmed_actual_rented_base: 120000000\n  vacant_rate: 0.05\n  rented_rate: 0.15\nsteps:\n  - vacant_cfu: confirmed_estimated_vacant_base * vacant_rate\n  - rented_cfu: confirmed_actual_rented_base * rented_rate\n  - additional_cfu_if_rented: rented_cfu - vacant_cfu\nexpected:\n  vacant_cfu: 6000000\n  rented_cfu: 18000000\n  additional_cfu_if_rented: 12000000\n```\n\n## Ask the client first\n\nObtain the evidence establishing the governing version for the actual period, including any October effect; the property/ownership record; actual occupation, lease and completion facts for the period; the confirmed taxable/exemption position; established annual rental valuation and its evidence; the assessment/filing notice; and any mixed use, change of use or non-resident ownership facts.\n\n## Sources\n\n| Official source and portions actually read | Read on |\n|---|---|\n| [DGB official enacted 2026 law bundle](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf), scanned law pp. 19–24, especially art. 14 fully replacing CGI 265 on p. 21; promulgation decree arts. 1–2 on p. 27 and corroborating reference on p. 28. Operative page and signed decree also visually inspected. | 2026-11-01 |\n\n**Not yet confirmed:** complete CFU scope/exemptions, valuation machinery and deductions, mixed use/change-of-use/part-year treatment, legal incidence/withholding on rent, non-resident rules, return and payment deadlines/forms/portal/receipts, penalties and interest, effect before the 31 March replacement and final promulgated status/effect of the October 2026 rectifying bill. This bounded calculation does not confirm full 2026 property compliance.\n",
+      "items": [
+        {
+          "line": 13,
+          "exact_text": "# Guinea CFU: property classification and rate workpaper v1.1",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L13",
+          "destination": "skills/guinea/gn-property-tax.md / H1",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 15,
+          "exact_text": "> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Guinea.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L15",
+          "destination": "skills/guinea/gn-property-tax.md / H1",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 17,
+          "exact_text": "## Who this applies to",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L17",
+          "destination": "skills/guinea/gn-property-tax.md / Who this applies to",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 19,
+          "exact_text": "**Governing-version prerequisite.** Before using this workflow for an actual period or invoice, establish that the March replacement text governs it, including the promulgation, effective date and effect of any October rectification. If that is not confirmed, label every result **hypothetical March-text analysis only** and stop before a live tax/compliance conclusion, filing/payment decision or legally required invoice-correction request. The source gap does not authorise assuming the March text remains unchanged.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L19",
+          "destination": "skills/guinea/gn-property-tax.md / Who this applies to",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 21,
+          "exact_text": "Use for a property already confirmed to fall within the Contribution Foncière Unique (CFU), with its taxable annual rental value and exemption status established separately. This job selects the rate from CGI article 265 as replaced by article 14 of Law L/2026/010/CNT of 31 March 2026. It produces a rate workpaper, not a complete property assessment. The same official bundle contains promulgation decree D/2026/0103/PRG/SGG, signed 31 March 2026. Use this replacement text where applicable; allocation to periods before the replacement and the status/effect of the October rectifying bill remain unconfirmed. [Law art. 14 and decree arts. 1–2, PDF pp. 21,27](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf).",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L21",
+          "destination": "skills/guinea/gn-property-tax.md / Who this applies to",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 23,
+          "exact_text": "## Rates, bands and thresholds",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L23",
+          "destination": "skills/guinea/gn-property-tax.md / Rates, bands and thresholds",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 25,
+          "exact_text": "| Confirmed property classification | CFU rate and base under replaced CGI 265 | Official source |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L25",
+          "destination": "skills/guinea/gn-property-tax.md / Rates, bands and thresholds",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 26,
+          "exact_text": "|---|---|---|",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L26",
+          "destination": "skills/guinea/gn-property-tax.md / Rates, bands and thresholds",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 27,
+          "exact_text": "| Residential property occupied by its owner | 2% of actual annual rental value | [Law art. 14 / CGI 265, first bullet](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L27",
+          "destination": "skills/guinea/gn-property-tax.md / Rates, bands and thresholds",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 28,
+          "exact_text": "| Professional-use property occupied by its owner | 10% of actual annual rental value | [Law art. 14 / CGI 265, second bullet](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L28",
+          "destination": "skills/guinea/gn-property-tax.md / Rates, bands and thresholds",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 29,
+          "exact_text": "| Rented property | 15% of actual annual rental value | [Law art. 14 / CGI 265, third bullet](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L29",
+          "destination": "skills/guinea/gn-property-tax.md / Rates, bands and thresholds",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 30,
+          "exact_text": "| Completed property that is unoccupied | 5% of estimated annual rental value | [Law art. 14 / CGI 265, fourth bullet](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L30",
+          "destination": "skills/guinea/gn-property-tax.md / Rates, bands and thresholds",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 32,
+          "exact_text": "The base is rental value, not the property's purchase price. Keep actual annual rental value and estimated annual rental value in separate workpaper fields; the law uses different bases for occupied/rented and completed-unoccupied property. These rates do not establish that a particular taxpayer or property is taxable. [CGI 265 as replaced](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21).",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L32",
+          "destination": "skills/guinea/gn-property-tax.md / Rates, bands and thresholds",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 34,
+          "exact_text": "## The base",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L34",
+          "destination": "skills/guinea/gn-property-tax.md / The base",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 36,
+          "exact_text": "0. Establish the governing-version prerequisite above and record the evidence for the actual period or invoice, including any October effect. If unresolved, stop live use; the following steps may only illustrate the March text hypothetically.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L36",
+          "destination": "skills/guinea/gn-property-tax.md / The base",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 37,
+          "exact_text": "1. Identify the property, owner, relevant period and supporting ownership/occupation evidence. Obtain the independently confirmed CFU scope and exemption conclusion before calculating.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L37",
+          "destination": "skills/guinea/gn-property-tax.md / The base",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 38,
+          "exact_text": "2. Record whether it is owner-occupied residential, owner-occupied professional, rented, or completed and unoccupied. Preserve the lease, occupation evidence or completion/vacancy facts that support that classification.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L38",
+          "destination": "skills/guinea/gn-property-tax.md / The base",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 39,
+          "exact_text": "3. Obtain the established annual rental-value base and its valuation evidence. Do not substitute purchase cost, capital value or monthly rent without the applicable valuation determination.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L39",
+          "destination": "skills/guinea/gn-property-tax.md / The base",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 40,
+          "exact_text": "4. Multiply that annual base by the corresponding rate above. Reconcile the result to the assessment or draft calculation, showing any difference for review. The multiplication follows the express rate/base pairs in [CGI 265](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21).",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L40",
+          "destination": "skills/guinea/gn-property-tax.md / The base",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 41,
+          "exact_text": "5. Stop for a mixed-use property, a change of use during the year, partial ownership, a contested valuation or an exemption question. Article 265 alone does not resolve those facts. The completed workpaper records the evidence, category, base, rate and computed amount, with unresolved items separately identified.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L41",
+          "destination": "skills/guinea/gn-property-tax.md / The base",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 43,
+          "exact_text": "## Deadlines and filing",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L43",
+          "destination": "skills/guinea/gn-property-tax.md / Deadlines and filing",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 45,
+          "exact_text": "This is a computation workpaper. Complete it before a filing/payment decision and retain the calculation with the classification and valuation evidence as a workflow control. This is not a statutory retention-period claim. The opened amendment does not establish the CFU return form, portal, field numbers, filing/payment dates or payment receipt process. No submission or payment instruction is supplied until those are verified.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L45",
+          "destination": "skills/guinea/gn-property-tax.md / Deadlines and filing",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 47,
+          "exact_text": "## Penalties and interest",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L47",
+          "destination": "skills/guinea/gn-property-tax.md / Penalties and interest",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 49,
+          "exact_text": "No CFU penalty, late-payment interest rate or relief condition has been confirmed from the opened replacement article. Do not compute a sanction from a rate used in a different tax.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L49",
+          "destination": "skills/guinea/gn-property-tax.md / Penalties and interest",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 51,
+          "exact_text": "## Cross-border points",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L51",
+          "destination": "skills/guinea/gn-property-tax.md / Cross-border points",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 53,
+          "exact_text": "The rate table classifies property by use/occupation, but it does not establish non-resident ownership liability, fiscal representation, treaty relief or foreign-tax credit entitlement. Obtain those conclusions separately before using the result for an overseas owner's filing.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L53",
+          "destination": "skills/guinea/gn-property-tax.md / Cross-border points",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 55,
+          "exact_text": "## Two worked examples that recompute",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L55",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 57,
+          "exact_text": "First, an owner-occupied home has an independently confirmed actual annual rental-value base of GNF 60,000,000. The property is assumed taxable without exemption and the replaced article applies. CFU is GNF 1,200,000. The example establishes no valuation method.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L57",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 59,
+          "exact_text": "```oa-check",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L59",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 60,
+          "exact_text": "name: Owner-occupied residential rate workpaper",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L60",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 61,
+          "exact_text": "inputs:",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L61",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 62,
+          "exact_text": "  confirmed_annual_rental_value: 60000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L62",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 63,
+          "exact_text": "  rate: 0.02",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L63",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 64,
+          "exact_text": "steps:",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L64",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 65,
+          "exact_text": "  - cfu: confirmed_annual_rental_value * rate",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L65",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 66,
+          "exact_text": "expected:",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L66",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 67,
+          "exact_text": "  cfu: 1200000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L67",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 68,
+          "exact_text": "```",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L68",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 70,
+          "exact_text": "Second, compare a completed property remaining wholly unoccupied with a hypothetical letting for a full annual period. Each scenario has an independently confirmed GNF 120,000,000 annual base, estimated in the vacancy scenario and actual in the rental scenario. The results are GNF 6,000,000 and GNF 18,000,000. The GNF 12,000,000 difference is only the CFU component of a letting decision; rent, costs, other taxes and transition allocation are not modeled.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L70",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 72,
+          "exact_text": "```oa-check",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L72",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 73,
+          "exact_text": "name: Vacancy versus full-period rental CFU component",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L73",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 74,
+          "exact_text": "inputs:",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L74",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 75,
+          "exact_text": "  confirmed_estimated_vacant_base: 120000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L75",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 76,
+          "exact_text": "  confirmed_actual_rented_base: 120000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L76",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 77,
+          "exact_text": "  vacant_rate: 0.05",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L77",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 78,
+          "exact_text": "  rented_rate: 0.15",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L78",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 79,
+          "exact_text": "steps:",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L79",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 80,
+          "exact_text": "  - vacant_cfu: confirmed_estimated_vacant_base * vacant_rate",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L80",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 81,
+          "exact_text": "  - rented_cfu: confirmed_actual_rented_base * rented_rate",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L81",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 82,
+          "exact_text": "  - additional_cfu_if_rented: rented_cfu - vacant_cfu",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L82",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 83,
+          "exact_text": "expected:",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L83",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 84,
+          "exact_text": "  vacant_cfu: 6000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L84",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 85,
+          "exact_text": "  rented_cfu: 18000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L85",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 86,
+          "exact_text": "  additional_cfu_if_rented: 12000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L86",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 87,
+          "exact_text": "```",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L87",
+          "destination": "skills/guinea/gn-property-tax.md / Two worked examples that recompute",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 89,
+          "exact_text": "## Ask the client first",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L89",
+          "destination": "skills/guinea/gn-property-tax.md / Ask the client first",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 91,
+          "exact_text": "Obtain the evidence establishing the governing version for the actual period, including any October effect; the property/ownership record; actual occupation, lease and completion facts for the period; the confirmed taxable/exemption position; established annual rental valuation and its evidence; the assessment/filing notice; and any mixed use, change of use or non-resident ownership facts.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L91",
+          "destination": "skills/guinea/gn-property-tax.md / Ask the client first",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 93,
+          "exact_text": "## Sources",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L93",
+          "destination": "skills/guinea/gn-property-tax.md / Sources",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 95,
+          "exact_text": "| Official source and portions actually read | Read on |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L95",
+          "destination": "skills/guinea/gn-property-tax.md / Sources",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 96,
+          "exact_text": "|---|---|",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L96",
+          "destination": "skills/guinea/gn-property-tax.md / Sources",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 97,
+          "exact_text": "| [DGB official enacted 2026 law bundle](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf), scanned law pp. 19–24, especially art. 14 fully replacing CGI 265 on p. 21; promulgation decree arts. 1–2 on p. 27 and corroborating reference on p. 28. Operative page and signed decree also visually inspected. | 2026-11-01 |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L97",
+          "destination": "skills/guinea/gn-property-tax.md / Sources",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        },
+        {
+          "line": 99,
+          "exact_text": "**Not yet confirmed:** complete CFU scope/exemptions, valuation machinery and deductions, mixed use/change-of-use/part-year treatment, legal incidence/withholding on rent, non-resident rules, return and payment deadlines/forms/portal/receipts, penalties and interest, effect before the 31 March replacement and final promulgated status/effect of the October 2026 rectifying bill. This bounded calculation does not confirm full 2026 property compliance.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-property-tax.md#L99",
+          "destination": "skills/guinea/gn-property-tax.md / Sources",
+          "status": "rate rows and original examples retained; ordinary methods expanded with governing-version gate and explicit unresolved holds"
+        }
+      ]
+    },
+    {
+      "path": "skills/guinea/gn-vat-invoice-control.md",
+      "old_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+      "old_blob": "5fbddb8b4bda1eec7e772f6703d243db72288bcf",
+      "old_sha256": "4d3008a143a2053770005d08becf7f26f838733462058c99ff7e73c3171437c2",
+      "original_text": "---\nname: gn-vat-invoice-control\ndescription: \"Guinea VAT invoice-field and arithmetic control using the full March 2026 replacement of CGI article 383 VI. Use it to check the sixteen fields, their conditional branches, source identifiers and totals after independently establishing invoice duty and the governing version, including any October rectification effect. Registration, taxability, the correct rate and input-credit entitlement are separate jobs. The examples assume that the March version governs and use independently validated tax amounts rather than establishing a VAT rate. If currentness is unconfirmed, produce hypothetical March-text analysis only and stop before a live compliance conclusion or a legally required correction request. Filing, sanctions and wider VAT coverage remain partial.\"\njurisdiction: GN\ncategory: international\ntax_year: 2026\ntax_year_notes: \"Enacted 31 March 2026 replacement text; earlier periods and October rectification status unconfirmed.\"\ntier: 2\nlast_updated: 2026-11-01\nversion: 1.1\n---\n\n# Guinea VAT invoice control v1.1\n\n> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Guinea.\n\n## Who this applies to\n\n**Governing-version prerequisite.** Before using this workflow for an actual period or invoice, establish that the March replacement text governs it, including the promulgation, effective date and effect of any October rectification. If that is not confirmed, label every result **hypothetical March-text analysis only** and stop before a live tax/compliance conclusion, filing/payment decision or legally required invoice-correction request. The source gap does not authorise assuming the March text remains unchanged.\n\nUse to check a Guinea VAT invoice governed by CGI 383 VI after independently establishing that the invoicing duty applies. Article 13 of Law L/2026/010/CNT of 31 March 2026 replaces the full list of mandatory invoice fields. This Guide checks those fields and reconciles amounts; it does not determine VAT registration, taxability, the correct rate or input-credit entitlement. The official bundle contains the signed promulgation decree. Periods before the replacement and the final effect of the October rectifying bill remain unresolved. [Law art. 13, decree arts. 1–2, PDF pp. 20–21,27](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf).\n\n## Rates, bands and thresholds\n\nThe list has sixteen numbered requirements, some conditional. There is no monetary exemption or tax-rate rule in the opened replacement paragraph. Mark each field **present**, **missing**, or **not applicable with documented reason**. Do not count a conditional field as mandatory for every invoice. [CGI 383 VI](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20).\n\n| Statutory item | Required information and condition | Official source |\n|---|---|---|\n| 1° | Supplier name and address | [CGI 383 VI 1°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 2° | Customer or recipient name and address | [CGI 383 VI 2°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 3° | Supplier NIF and VAT registration key | [CGI 383 VI 3°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 4° | For services where the recipient is liable under CGI 373 bis II: recipient NIF and VAT registration key | [CGI 383 VI 4°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 5° | Where the customer is liable: reference to CGI 373 bis stating that customer liability | [CGI 383 VI 5°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 6° | Where the liable person is a fiscal representative under CGI 373 quinquies: its NIF, VAT registration key, name and address | [CGI 383 VI 6°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 7° | Unique invoice number based on a chronological, continuous sequence | [CGI 383 VI 7°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 8° | Invoice date | [CGI 383 VI 8°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 9° | If different from invoice date: date of supply/service and date an advance is paid | [CGI 383 VI 9°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 10° | For each item/service: quantity, precise description, unit price excluding tax and legally applicable VAT rate, or the Code provision exempting the supply | [CGI 383 VI 10°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 11° | Discounts, rebates or cash discounts acquired and quantifiable at the transaction and directly linked to it | [CGI 383 VI 11°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 12° | Total VAT due on the transaction | [CGI 383 VI 12°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 13° | Total excluding tax | [CGI 383 VI 13°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |\n| 14° | Total including all taxes | [CGI 383 VI 14°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |\n| 15° | If the taxpayer elected VAT on debits: exact wording “TVA d’après les débits - article 366 bis du CGI” | [CGI 383 VI 15°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |\n| 16° | If the margin regime applies: exact wording “TVA sur marge - article 410 bis du CGI” | [CGI 383 VI 16°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |\n\n## The base\n\n0. Establish the governing-version prerequisite above and record the evidence for the actual period or invoice, including any October effect. If unresolved, stop live use; the following steps may only illustrate the March text hypothetically.\n1. Obtain the invoice, contract/order, supply or advance evidence, supplier registration details and independently established VAT treatment. Check invoice date and supply/advance dates against the source records.\n2. Check items 1°–3° and 7°–14° line by line, applying the date and exemption conditions in the table. Match the unique number against the supplier's chronological sequence where the records are available; a number printed on one invoice cannot prove continuity.\n3. Establish whether customer liability or a fiscal representative applies from a separately verified conclusion. Apply 4°–6° only when their stated conditions hold. The cross-referenced articles are not reproduced by this amendment, so this Guide cannot decide their scope.\n4. If an evidenced debit-basis election or margin regime applies, check the exact respective wording in 15° or 16°. Do not elect a regime merely by printing its wording.\n5. Reconcile quantities and unit prices to the net lines, directly related discounts to the transaction, the separately validated VAT amounts to total VAT, and net plus tax amounts to the printed tax-inclusive total. Use the statutory totals in 12°–14°; arithmetic agreement does not prove the rate or tax treatment is correct. [CGI 383 VI](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20).\n6. Produce a discrepancy list with the field, evidence, invoice value, expected value and correction requested. Keep the original invoice and correction correspondence in the workpaper; no statutory retention duration is asserted here. An internally corrected spreadsheet does not correct the supplier's invoice.\n\n## Deadlines and filing\n\nThis is an invoice-review job, not a VAT return submission. Route a missing mandatory field or arithmetic mismatch for correction before approving the document through this workflow. No statutory invoice-issue deadline, correction instrument, return due date, portal/form/box, submission receipt or payment reference has been verified from article 383 VI. Do not invent those details from the field list.\n\n## Penalties and interest\n\nThe opened amendment sets invoice contents. It does not establish an invoice penalty, interest rate or automatic input-credit refusal. Record the defect without asserting an unverified sanction or deduction consequence.\n\n## Cross-border points\n\nItems 4°–6° expressly address recipient liability and fiscal representatives, with references to CGI 373 bis and 373 quinquies. Check the required identifiers and liability reference when a separately verified cross-border conclusion triggers them. This list alone does not prove that every imported service is reverse charged or every foreign supplier must appoint a representative. [CGI 383 VI 4°–6°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20).\n\n## Two worked examples that recompute\n\nBoth cases assume the March version governs the relevant invoice. Without confirmed governing-version evidence, they are hypothetical arithmetic illustrations only and do not require a live invoice correction.\n\nFirst, two lines have net amounts of GNF 20,000,000 and GNF 30,000,000. The independently validated tax amounts supplied to this control are GNF 3,600,000 and GNF 5,400,000. Net total is GNF 50,000,000, total VAT is GNF 9,000,000 and gross total is GNF 59,000,000. The example does not establish a statutory VAT rate.\n\n```oa-check\nname: Invoice totals reconcile from separately validated amounts\ninputs:\n  line_one_net: 20000000\n  line_two_net: 30000000\n  validated_line_one_vat: 3600000\n  validated_line_two_vat: 5400000\nsteps:\n  - total_net: line_one_net + line_two_net\n  - total_vat: validated_line_one_vat + validated_line_two_vat\n  - total_gross: total_net + total_vat\nexpected:\n  total_net: 50000000\n  total_vat: 9000000\n  total_gross: 59000000\n```\n\nSecond, a draft has independently validated net of GNF 40,000,000 and VAT of GNF 7,200,000, but printed gross of GNF 48,000,000. The correct arithmetic gross is GNF 47,200,000, leaving a GNF 800,000 discrepancy. The decision is to return the invoice for correction; it does not pass the control merely because all field labels are printed. The tax amounts are inputs, not a rate conclusion.\n\n```oa-check\nname: Return mismatched invoice for correction\ninputs:\n  validated_net: 40000000\n  validated_vat: 7200000\n  printed_gross: 48000000\nsteps:\n  - expected_gross: validated_net + validated_vat\n  - discrepancy: abs(printed_gross - expected_gross)\nexpected:\n  expected_gross: 47200000\n  discrepancy: 800000\n```\n\n## Ask the client first\n\nObtain evidence establishing the governing version for the invoice, including any October effect; the invoice and supporting supply/advance documents; supplier and customer identifiers; the separately verified registration/tax treatment and rate; any recipient-liability or representative conclusion; any debit-basis election or margin-regime evidence; and the invoice sequence and correction history.\n\n## Sources\n\n| Official source and portions actually read | Read on |\n|---|---|\n| [DGB official enacted 2026 law bundle](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf), scanned law pp. 19–24, especially art. 13 replacing all sixteen items of CGI 383 VI on pp. 20–21; signed promulgation decree arts. 1–2 on p. 27, corroborated on p. 28. Invoice pages and signed decree visually inspected. | 2026-11-01 |\n\n**Not yet confirmed:** underlying CGI 383 I–V and VII+, registration threshold, applicable VAT rates/exemptions/zero-rating and taxable base, scope of recipient liability and fiscal representation, debit/margin eligibility and elections, input deductions/refunds, issue/correction deadlines and instruments, retention duration, penalties/interest, return/payment portal/forms/boxes/deadlines/receipts, periods before the 31 March replacement and final promulgated status/effect of the October 2026 rectifying bill. The six legacy Guides remain historical and do not resolve these current-year gaps.\n",
+      "items": [
+        {
+          "line": 13,
+          "exact_text": "# Guinea VAT invoice control v1.1",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L13",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / H1",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 15,
+          "exact_text": "> **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person’s facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in Guinea.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L15",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / H1",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 17,
+          "exact_text": "## Who this applies to",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L17",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Who this applies to",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 19,
+          "exact_text": "**Governing-version prerequisite.** Before using this workflow for an actual period or invoice, establish that the March replacement text governs it, including the promulgation, effective date and effect of any October rectification. If that is not confirmed, label every result **hypothetical March-text analysis only** and stop before a live tax/compliance conclusion, filing/payment decision or legally required invoice-correction request. The source gap does not authorise assuming the March text remains unchanged.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L19",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Who this applies to",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 21,
+          "exact_text": "Use to check a Guinea VAT invoice governed by CGI 383 VI after independently establishing that the invoicing duty applies. Article 13 of Law L/2026/010/CNT of 31 March 2026 replaces the full list of mandatory invoice fields. This Guide checks those fields and reconciles amounts; it does not determine VAT registration, taxability, the correct rate or input-credit entitlement. The official bundle contains the signed promulgation decree. Periods before the replacement and the final effect of the October rectifying bill remain unresolved. [Law art. 13, decree arts. 1–2, PDF pp. 20–21,27](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf).",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L21",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Who this applies to",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 23,
+          "exact_text": "## Rates, bands and thresholds",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L23",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 25,
+          "exact_text": "The list has sixteen numbered requirements, some conditional. There is no monetary exemption or tax-rate rule in the opened replacement paragraph. Mark each field **present**, **missing**, or **not applicable with documented reason**. Do not count a conditional field as mandatory for every invoice. [CGI 383 VI](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20).",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L25",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 27,
+          "exact_text": "| Statutory item | Required information and condition | Official source |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L27",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 28,
+          "exact_text": "|---|---|---|",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L28",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 29,
+          "exact_text": "| 1° | Supplier name and address | [CGI 383 VI 1°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L29",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 30,
+          "exact_text": "| 2° | Customer or recipient name and address | [CGI 383 VI 2°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L30",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 31,
+          "exact_text": "| 3° | Supplier NIF and VAT registration key | [CGI 383 VI 3°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L31",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 32,
+          "exact_text": "| 4° | For services where the recipient is liable under CGI 373 bis II: recipient NIF and VAT registration key | [CGI 383 VI 4°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L32",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 33,
+          "exact_text": "| 5° | Where the customer is liable: reference to CGI 373 bis stating that customer liability | [CGI 383 VI 5°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L33",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 34,
+          "exact_text": "| 6° | Where the liable person is a fiscal representative under CGI 373 quinquies: its NIF, VAT registration key, name and address | [CGI 383 VI 6°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L34",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 35,
+          "exact_text": "| 7° | Unique invoice number based on a chronological, continuous sequence | [CGI 383 VI 7°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L35",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 36,
+          "exact_text": "| 8° | Invoice date | [CGI 383 VI 8°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L36",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 37,
+          "exact_text": "| 9° | If different from invoice date: date of supply/service and date an advance is paid | [CGI 383 VI 9°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L37",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 38,
+          "exact_text": "| 10° | For each item/service: quantity, precise description, unit price excluding tax and legally applicable VAT rate, or the Code provision exempting the supply | [CGI 383 VI 10°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L38",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 39,
+          "exact_text": "| 11° | Discounts, rebates or cash discounts acquired and quantifiable at the transaction and directly linked to it | [CGI 383 VI 11°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L39",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 40,
+          "exact_text": "| 12° | Total VAT due on the transaction | [CGI 383 VI 12°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L40",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 41,
+          "exact_text": "| 13° | Total excluding tax | [CGI 383 VI 13°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L41",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 42,
+          "exact_text": "| 14° | Total including all taxes | [CGI 383 VI 14°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L42",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 43,
+          "exact_text": "| 15° | If the taxpayer elected VAT on debits: exact wording “TVA d’après les débits - article 366 bis du CGI” | [CGI 383 VI 15°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L43",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 44,
+          "exact_text": "| 16° | If the margin regime applies: exact wording “TVA sur marge - article 410 bis du CGI” | [CGI 383 VI 16°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=21) |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L44",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Rates, bands and thresholds",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 46,
+          "exact_text": "## The base",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L46",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 48,
+          "exact_text": "0. Establish the governing-version prerequisite above and record the evidence for the actual period or invoice, including any October effect. If unresolved, stop live use; the following steps may only illustrate the March text hypothetically.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L48",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 49,
+          "exact_text": "1. Obtain the invoice, contract/order, supply or advance evidence, supplier registration details and independently established VAT treatment. Check invoice date and supply/advance dates against the source records.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L49",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 50,
+          "exact_text": "2. Check items 1°–3° and 7°–14° line by line, applying the date and exemption conditions in the table. Match the unique number against the supplier's chronological sequence where the records are available; a number printed on one invoice cannot prove continuity.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L50",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 51,
+          "exact_text": "3. Establish whether customer liability or a fiscal representative applies from a separately verified conclusion. Apply 4°–6° only when their stated conditions hold. The cross-referenced articles are not reproduced by this amendment, so this Guide cannot decide their scope.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L51",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 52,
+          "exact_text": "4. If an evidenced debit-basis election or margin regime applies, check the exact respective wording in 15° or 16°. Do not elect a regime merely by printing its wording.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L52",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 53,
+          "exact_text": "5. Reconcile quantities and unit prices to the net lines, directly related discounts to the transaction, the separately validated VAT amounts to total VAT, and net plus tax amounts to the printed tax-inclusive total. Use the statutory totals in 12°–14°; arithmetic agreement does not prove the rate or tax treatment is correct. [CGI 383 VI](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20).",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L53",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 54,
+          "exact_text": "6. Produce a discrepancy list with the field, evidence, invoice value, expected value and correction requested. Keep the original invoice and correction correspondence in the workpaper; no statutory retention duration is asserted here. An internally corrected spreadsheet does not correct the supplier's invoice.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L54",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / The base",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 56,
+          "exact_text": "## Deadlines and filing",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L56",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Deadlines and filing",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 58,
+          "exact_text": "This is an invoice-review job, not a VAT return submission. Route a missing mandatory field or arithmetic mismatch for correction before approving the document through this workflow. No statutory invoice-issue deadline, correction instrument, return due date, portal/form/box, submission receipt or payment reference has been verified from article 383 VI. Do not invent those details from the field list.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L58",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Deadlines and filing",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 60,
+          "exact_text": "## Penalties and interest",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L60",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Penalties and interest",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 62,
+          "exact_text": "The opened amendment sets invoice contents. It does not establish an invoice penalty, interest rate or automatic input-credit refusal. Record the defect without asserting an unverified sanction or deduction consequence.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L62",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Penalties and interest",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 64,
+          "exact_text": "## Cross-border points",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L64",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Cross-border points",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 66,
+          "exact_text": "Items 4°–6° expressly address recipient liability and fiscal representatives, with references to CGI 373 bis and 373 quinquies. Check the required identifiers and liability reference when a separately verified cross-border conclusion triggers them. This list alone does not prove that every imported service is reverse charged or every foreign supplier must appoint a representative. [CGI 383 VI 4°–6°](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf#page=20).",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L66",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Cross-border points",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 68,
+          "exact_text": "## Two worked examples that recompute",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L68",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 70,
+          "exact_text": "Both cases assume the March version governs the relevant invoice. Without confirmed governing-version evidence, they are hypothetical arithmetic illustrations only and do not require a live invoice correction.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L70",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 72,
+          "exact_text": "First, two lines have net amounts of GNF 20,000,000 and GNF 30,000,000. The independently validated tax amounts supplied to this control are GNF 3,600,000 and GNF 5,400,000. Net total is GNF 50,000,000, total VAT is GNF 9,000,000 and gross total is GNF 59,000,000. The example does not establish a statutory VAT rate.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L72",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 74,
+          "exact_text": "```oa-check",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L74",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 75,
+          "exact_text": "name: Invoice totals reconcile from separately validated amounts",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L75",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 76,
+          "exact_text": "inputs:",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L76",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 77,
+          "exact_text": "  line_one_net: 20000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L77",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 78,
+          "exact_text": "  line_two_net: 30000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L78",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 79,
+          "exact_text": "  validated_line_one_vat: 3600000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L79",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 80,
+          "exact_text": "  validated_line_two_vat: 5400000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L80",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 81,
+          "exact_text": "steps:",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L81",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 82,
+          "exact_text": "  - total_net: line_one_net + line_two_net",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L82",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 83,
+          "exact_text": "  - total_vat: validated_line_one_vat + validated_line_two_vat",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L83",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 84,
+          "exact_text": "  - total_gross: total_net + total_vat",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L84",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 85,
+          "exact_text": "expected:",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L85",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 86,
+          "exact_text": "  total_net: 50000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L86",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 87,
+          "exact_text": "  total_vat: 9000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L87",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 88,
+          "exact_text": "  total_gross: 59000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L88",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 89,
+          "exact_text": "```",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L89",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 91,
+          "exact_text": "Second, a draft has independently validated net of GNF 40,000,000 and VAT of GNF 7,200,000, but printed gross of GNF 48,000,000. The correct arithmetic gross is GNF 47,200,000, leaving a GNF 800,000 discrepancy. The decision is to return the invoice for correction; it does not pass the control merely because all field labels are printed. The tax amounts are inputs, not a rate conclusion.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L91",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 93,
+          "exact_text": "```oa-check",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L93",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 94,
+          "exact_text": "name: Return mismatched invoice for correction",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L94",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 95,
+          "exact_text": "inputs:",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L95",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 96,
+          "exact_text": "  validated_net: 40000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L96",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 97,
+          "exact_text": "  validated_vat: 7200000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L97",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 98,
+          "exact_text": "  printed_gross: 48000000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L98",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 99,
+          "exact_text": "steps:",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L99",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 100,
+          "exact_text": "  - expected_gross: validated_net + validated_vat",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L100",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 101,
+          "exact_text": "  - discrepancy: abs(printed_gross - expected_gross)",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L101",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 102,
+          "exact_text": "expected:",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L102",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 103,
+          "exact_text": "  expected_gross: 47200000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L103",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 104,
+          "exact_text": "  discrepancy: 800000",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L104",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 105,
+          "exact_text": "```",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L105",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Two worked examples that recompute",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 107,
+          "exact_text": "## Ask the client first",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L107",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Ask the client first",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 109,
+          "exact_text": "Obtain evidence establishing the governing version for the invoice, including any October effect; the invoice and supporting supply/advance documents; supplier and customer identifiers; the separately verified registration/tax treatment and rate; any recipient-liability or representative conclusion; any debit-basis election or margin-regime evidence; and the invoice sequence and correction history.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L109",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Ask the client first",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 111,
+          "exact_text": "## Sources",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L111",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Sources",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 113,
+          "exact_text": "| Official source and portions actually read | Read on |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L113",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Sources",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 114,
+          "exact_text": "|---|---|",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L114",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Sources",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 115,
+          "exact_text": "| [DGB official enacted 2026 law bundle](https://dgb.gov.gn/wp-content/uploads/2026/04/Loi-de-Finances-Initiale-2026.pdf), scanned law pp. 19–24, especially art. 13 replacing all sixteen items of CGI 383 VI on pp. 20–21; signed promulgation decree arts. 1–2 on p. 27, corroborated on p. 28. Invoice pages and signed decree visually inspected. | 2026-11-01 |",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L115",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Sources",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        },
+        {
+          "line": 117,
+          "exact_text": "**Not yet confirmed:** underlying CGI 383 I–V and VII+, registration threshold, applicable VAT rates/exemptions/zero-rating and taxable base, scope of recipient liability and fiscal representation, debit/margin eligibility and elections, input deductions/refunds, issue/correction deadlines and instruments, retention duration, penalties/interest, return/payment portal/forms/boxes/deadlines/receipts, periods before the 31 March replacement and final promulgated status/effect of the October 2026 rectifying bill. The six legacy Guides remain historical and do not resolve these current-year gaps.",
+          "source": "https://github.com/openaccountants/openaccountants/blob/59c23acba2ad66dd2bb29ffc81ffbb9289769ef8/skills/guinea/gn-vat-invoice-control.md#L117",
+          "destination": "skills/guinea/gn-vat-invoice-control.md / Sources",
+          "status": "retained byte-identical except numeric H1/version and last Sources scope sentence, specifically reviewed factual cross-reference correction"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "errors": [],
+  "mechanical_files": [
+    {
+      "file": "skills/gibraltar/gi-foreign-tax-relief.md",
+      "old_body_nonblank_lines": 111,
+      "mapped_lines": 111,
+      "blocks_byte_exact": 2
+    },
+    {
+      "file": "skills/gibraltar/gi-transaction-tax-transition.md",
+      "old_body_nonblank_lines": 168,
+      "mapped_lines": 168,
+      "blocks_byte_exact": 2
+    },
+    {
+      "file": "skills/gibraltar/gi-corporate-tax.md",
+      "old_body_nonblank_lines": 259,
+      "mapped_lines": 259,
+      "blocks_byte_exact": 2
+    },
+    {
+      "file": "skills/gibraltar/gi-connected-party-pricing-and-interest.md",
+      "old_body_nonblank_lines": 141,
+      "mapped_lines": 141,
+      "blocks_byte_exact": 2
+    },
+    {
+      "file": "skills/gibraltar/gi-payroll-social-insurance.md",
+      "old_body_nonblank_lines": 274,
+      "mapped_lines": 274,
+      "blocks_byte_exact": 2
+    },
+    {
+      "file": "skills/gibraltar/gi-individual-income-tax.md",
+      "old_body_nonblank_lines": 226,
+      "mapped_lines": 226,
+      "blocks_byte_exact": 2
+    }
+  ],
+  "old_body_lines": 1179,
+  "mechanical_oa_blocks": 12,
+  "old_topics": 30,
+  "exact_old_topic_prose_missing": [],
+  "minimum_oa_blocks_byte_exact": 2,
+  "historical_moved_files": 170,
+  "move_errors": []
+}

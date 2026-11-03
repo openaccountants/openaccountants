@@ -1,0 +1,309 @@
+{
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "candidate": "0bce9f9c7ed1776eab90ae912096a03a6d7dba12",
+  "initial": "5e157a7f7f361b8fa6c714496cb6deb1a7fc0742",
+  "actual_merge_base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "files": {
+    "skills/bahrain/README.md": {
+      "sha256": "bd41edf587577d55f05577407a66ac2fbaf44e8f5eb42addb84e576b873291c3",
+      "git_blob": "28c6a4898024af0b321e807706750338c5f3fefd",
+      "working_tree_matches_candidate": true,
+      "same_as_base": false,
+      "same_as_initial": false
+    },
+    "skills/bahrain/bahrain-vat.md": {
+      "sha256": "1c68347dd27930ab557d86bf4c7ce0a2d0c4f95a4dab28822f638fcfbd2d55be",
+      "git_blob": "919cfc829358dc4f2281eca8d48e5c86280f4e83",
+      "working_tree_matches_candidate": true,
+      "same_as_base": true,
+      "same_as_initial": true
+    },
+    "skills/bahrain/bh-company-formation.md": {
+      "sha256": "f8a98b973e236f052821c12976c82f5b5de5cf8a839962fec86129e6fad62bf7",
+      "git_blob": "d8ec71345d60b785d135669d9cc8013b5be6970e",
+      "working_tree_matches_candidate": true,
+      "same_as_base": false,
+      "same_as_initial": false,
+      "cta_suffix_equals_base": true,
+      "cta_suffix_equals_initial": true,
+      "platform_fields_equal_base": true,
+      "baseline_bytes": 4524,
+      "candidate_bytes": 8665,
+      "shrink_fraction": -0.9153404067197171
+    },
+    "skills/bahrain/bh-corporate-income-tax.md": {
+      "sha256": "9c45450682c05db9dff0d3f845c726046907cd3259b3b5a5a7d51ca657712131",
+      "git_blob": "f3991c0ae3d51b1320c171347a6278c18e6c50fb",
+      "working_tree_matches_candidate": true,
+      "same_as_base": false,
+      "same_as_initial": false,
+      "cta_suffix_equals_base": true,
+      "cta_suffix_equals_initial": true,
+      "platform_fields_equal_base": true,
+      "baseline_bytes": 4350,
+      "candidate_bytes": 9340,
+      "shrink_fraction": -1.1471264367816092
+    },
+    "skills/bahrain/bh-cross-border-tax.md": {
+      "sha256": "b72dbddae4feb1850e15453de34367d02d60a20067b21ab1c9bccb8c6304a484",
+      "git_blob": "8aa4bf1df5678d2e1efc3e86d398883981c673b5",
+      "working_tree_matches_candidate": true,
+      "same_as_base": true,
+      "same_as_initial": true
+    },
+    "skills/bahrain/bh-income-tax.md": {
+      "sha256": "173bac83317df73f201941b25344a6e8e9d02bc8ca874c1d3409c8b7056fd52c",
+      "git_blob": "12393ba72e629210e7c8551219133e21dacd85f2",
+      "working_tree_matches_candidate": true,
+      "same_as_base": false,
+      "same_as_initial": false,
+      "cta_suffix_equals_base": true,
+      "cta_suffix_equals_initial": true,
+      "platform_fields_equal_base": true,
+      "baseline_bytes": 38680,
+      "candidate_bytes": 6883,
+      "shrink_fraction": 0.822052740434333
+    },
+    "skills/bahrain/bh-payroll-social.md": {
+      "sha256": "5431a17caa08c8405420661c870a675c24f2c551b437b57740f57a0c62cbc574",
+      "git_blob": "feba1e6c25a3bbb91d3be370566f7c8a0467afec",
+      "working_tree_matches_candidate": true,
+      "same_as_base": false,
+      "same_as_initial": false,
+      "cta_suffix_equals_base": true,
+      "cta_suffix_equals_initial": true,
+      "platform_fields_equal_base": true,
+      "baseline_bytes": 3187,
+      "candidate_bytes": 9544,
+      "shrink_fraction": -1.9946658299341071
+    },
+    "skills/bahrain/bh-tax-overview.md": {
+      "sha256": "9005ef1ce4596f0f9f7cc8a95c7bdb5bc89984e3d2f4ef5aedd38bf0b9399f30",
+      "git_blob": "29eb4eda7f6811378bb26bc44f33c2e472721d97",
+      "working_tree_matches_candidate": true,
+      "same_as_base": false,
+      "same_as_initial": false,
+      "cta_suffix_equals_base": true,
+      "cta_suffix_equals_initial": true,
+      "platform_fields_equal_base": true,
+      "baseline_bytes": 3677,
+      "candidate_bytes": 6862,
+      "shrink_fraction": -0.8661952678814251
+    },
+    "skills/bahrain/bh-transfer-pricing.md": {
+      "sha256": "ca343c93b95fd194ed183605837aea0f3891a8bb352b68a30b2bc058c1c56b37",
+      "git_blob": "5b15bb9e84660852bc063d6c0ad7234b3af98991",
+      "working_tree_matches_candidate": true,
+      "same_as_base": true,
+      "same_as_initial": true
+    }
+  },
+  "sources": {
+    "oil": {
+      "original_sha256": "bb7c5db8eb6dca8861dce678cbccf7864280b2f3d457213ca52e7a7b7abec92f",
+      "matches_recorded_original": true,
+      "reader_matches_recorded": true,
+      "independent_extraction_equals_reader": true,
+      "quoted_rows": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07"
+      ],
+      "quotes_present": true
+    },
+    "dmtt": {
+      "original_sha256": "30815f6fe46c25a3c7ac3a154d21088715809821583c318baac1b2b279bac382",
+      "matches_recorded_original": true,
+      "reader_matches_recorded": true,
+      "independent_extraction_equals_reader": true,
+      "quoted_rows": [
+        "C08",
+        "C09",
+        "C10",
+        "C11",
+        "C12",
+        "C13",
+        "C14"
+      ],
+      "quotes_present": true
+    },
+    "er": {
+      "original_sha256": "ce2f5e18588fad3164794ba11194f5a449714366060518d2170f7961d1986a58",
+      "matches_recorded_original": true,
+      "reader_matches_recorded": true,
+      "independent_extraction_equals_reader": true,
+      "quoted_rows": [
+        "C15",
+        "C16"
+      ],
+      "quotes_present": true
+    },
+    "sio": {
+      "original_sha256": "0e68f46e7668f6ab679f9a0601b276cf426b18690921808ac287bb0b7c86acb7",
+      "matches_recorded_original": true,
+      "reader_matches_recorded": true,
+      "independent_extraction_equals_reader": true,
+      "quoted_rows": [
+        "S01",
+        "S04",
+        "S05",
+        "S06",
+        "S07",
+        "S08",
+        "S09"
+      ],
+      "quotes_present": true
+    },
+    "sio22": {
+      "original_sha256": "0ce2096184a6e09c10438c943b7c5d1e2b3c2f1dc00dc35761a05c856bcc936b",
+      "matches_recorded_original": true,
+      "reader_matches_recorded": true,
+      "independent_extraction_equals_reader": true,
+      "quoted_rows": [
+        "S02",
+        "S03"
+      ],
+      "quotes_present": true
+    },
+    "sio26": {
+      "original_sha256": "c8166390ce74bb8eae19cd3ca8a15376a5f554af69e4db207689bc0435b392e9",
+      "matches_recorded_original": true,
+      "reader_matches_recorded": true,
+      "independent_extraction_equals_reader": true,
+      "quoted_rows": [
+        "S12"
+      ],
+      "quotes_present": true
+    },
+    "unemp": {
+      "original_sha256": "7dd21d215835a81d1b35ca1efdbb08b7c41715c25ef836c319def971f6fd00ae",
+      "matches_recorded_original": true,
+      "reader_matches_recorded": true,
+      "independent_extraction_equals_reader": true,
+      "quoted_rows": [
+        "S10",
+        "S11"
+      ],
+      "quotes_present": true
+    },
+    "eosb": {
+      "original_sha256": "b843526a5611f4abd32a81c4e60e0fcefc18cf2e5bf555fec8f10c40b6628799",
+      "matches_recorded_original": true,
+      "reader_matches_recorded": true,
+      "independent_extraction_equals_reader": true,
+      "quoted_rows": [
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17"
+      ],
+      "quotes_present": true
+    },
+    "edb": {
+      "original_sha256": "66bebfd1cd1bf29e0824339f8ba81bbc54b4ff8d7cd78ad8ae7aeebd562d4421",
+      "matches_recorded_original": true,
+      "reader_matches_recorded": true,
+      "independent_extraction_equals_reader": true,
+      "quoted_rows": [
+        "P01"
+      ],
+      "quotes_present": true
+    },
+    "sij": {
+      "original_sha256": "6718957d8a36aa32ddd95b1089c0f622b696477e37a8da98c77419e71d99dc72",
+      "matches_recorded_original": true,
+      "reader_matches_recorded": true,
+      "independent_extraction_equals_reader": true,
+      "quoted_rows": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F09",
+        "F10"
+      ],
+      "quotes_present": true
+    },
+    "sio-list": {
+      "original_sha256": "51ab265294c0b7c922b7c75e5b7cfdeb343800720ee9a867ed1058a583b6e013",
+      "matches_recorded_original": true,
+      "reader_matches_recorded": true,
+      "independent_extraction_equals_reader": true,
+      "quoted_rows": [
+        "S18"
+      ],
+      "quotes_present": true
+    }
+  },
+  "preservation": {
+    "bh-tax-overview/baseline": {
+      "snapshot_equals_git": true,
+      "nonempty_body_lines_unmapped": []
+    },
+    "bh-tax-overview/initial-pr": {
+      "snapshot_equals_git": true,
+      "nonempty_body_lines_unmapped": []
+    },
+    "bh-corporate-income-tax/baseline": {
+      "snapshot_equals_git": true,
+      "nonempty_body_lines_unmapped": []
+    },
+    "bh-corporate-income-tax/initial-pr": {
+      "snapshot_equals_git": true,
+      "nonempty_body_lines_unmapped": []
+    },
+    "bh-income-tax/baseline": {
+      "snapshot_equals_git": true,
+      "nonempty_body_lines_unmapped": []
+    },
+    "bh-income-tax/initial-pr": {
+      "snapshot_equals_git": true,
+      "nonempty_body_lines_unmapped": []
+    },
+    "bh-payroll-social/baseline": {
+      "snapshot_equals_git": true,
+      "nonempty_body_lines_unmapped": []
+    },
+    "bh-payroll-social/initial-pr": {
+      "snapshot_equals_git": true,
+      "nonempty_body_lines_unmapped": []
+    },
+    "bh-company-formation/baseline": {
+      "snapshot_equals_git": true,
+      "nonempty_body_lines_unmapped": []
+    },
+    "bh-company-formation/initial-pr": {
+      "snapshot_equals_git": true,
+      "nonempty_body_lines_unmapped": []
+    }
+  },
+  "old_topics": {
+    "count": 821,
+    "counts_by_snapshot": {
+      "bh-tax-overview/baseline": 13,
+      "bh-tax-overview/initial-pr": 45,
+      "bh-corporate-income-tax/baseline": 15,
+      "bh-corporate-income-tax/initial-pr": 38,
+      "bh-income-tax/baseline": 294,
+      "bh-income-tax/initial-pr": 315,
+      "bh-payroll-social/baseline": 12,
+      "bh-payroll-social/initial-pr": 42,
+      "bh-company-formation/baseline": 15,
+      "bh-company-formation/initial-pr": 32
+    },
+    "row_location_or_hash_failures": [],
+    "false_retained_verbatim": [
+      "bh-company-formation/initial-pr/14"
+    ],
+    "all_body_lines_covered": true
+  }
+}

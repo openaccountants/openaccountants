@@ -1,0 +1,94 @@
+{
+  "method": "Reviewer Decimal calculations from law/input prose, separately constructed from oa-check block expressions; compared all expected/prose results.",
+  "cases": [
+    {
+      "id": "corporate1",
+      "results": {
+        "taxable_profit": "20000000",
+        "profit_tax": "6000000.00",
+        "turnover_minimum": "4000000.00",
+        "assessment": "6000000.00",
+        "balance": "3000000"
+      },
+      "boundary": "Assumes additional86floor below4m and no86-A comparison; not final actual2026 tax.",
+      "matches_candidate_prose_and_expected": true
+    },
+    {
+      "id": "corporate2",
+      "results": {
+        "low_profit_tax": "1500000.00",
+        "low_assessment": "4000000.00",
+        "high_assessment": "6000000.00",
+        "difference": "2000000"
+      },
+      "boundary": "Minimum-v-profit comparison, no election to lower amount.",
+      "matches_candidate_prose_and_expected": true
+    },
+    {
+      "id": "wage1",
+      "results": {
+        "deductible_pension": "54000",
+        "taxable": "1446000",
+        "intermediate_tax": "132708.00"
+      },
+      "boundary": "Arts7/9-11 subtotal only.12-A/B unresolved, no finalITS/monthly conversion.",
+      "matches_candidate_prose_and_expected": true
+    },
+    {
+      "id": "wage2",
+      "results": {
+        "gross_tax": "540039.61",
+        "reduction": "81005.9415",
+        "family_subtotal": "459033.6685"
+      },
+      "boundary": "Documented married/two ordinary children/no spouse duplicate;12-A/B/final rounding held.",
+      "matches_candidate_prose_and_expected": true
+    },
+    {
+      "id": "payroll1",
+      "results": {
+        "employee_social": "66600.0000",
+        "employer_social": "189000.000",
+        "fiscal_charges": "95000.000",
+        "employer_charges": "284000",
+        "employer_cost": "1284000"
+      },
+      "boundary": "Confirmed equal bases/notified2percent risk, permanent private staff/no exemptions; ANPE once outside insurance subtotal, ITS excluded.",
+      "matches_candidate_prose_and_expected": true
+    },
+    {
+      "id": "payroll2",
+      "results": {
+        "monthly_contribution": "131200.0000",
+        "nine_workers_quarterly_payment": "393600.0000",
+        "ten_workers_monthly_payment": "131200.0000",
+        "quarter_difference": "0"
+      },
+      "boundary": "9quarterly/10monthly per2010art14;later-order power explicitly held.",
+      "matches_candidate_prose_and_expected": true
+    },
+    {
+      "id": "vat1",
+      "results": {
+        "taxable_base": "11000000",
+        "output_tax": "1980000.00",
+        "return_tax": "1260000.00"
+      },
+      "boundary": "Qualifying direct discount/eligible evidenced inputs; amount already multiple5.",
+      "matches_candidate_prose_and_expected": true
+    },
+    {
+      "id": "vat2",
+      "results": {
+        "prorata_percent": "68",
+        "shared_deduction": "204000.00",
+        "correct_deduction": "304000.00",
+        "wrong_blanket_deduction": "306000.00",
+        "overstatement": "2000.00"
+      },
+      "boundary": "Annual/provisional source receipts with no excluded denominator items; attribution before shared prorata.",
+      "matches_candidate_prose_and_expected": true
+    }
+  ],
+  "failures": 0
+}

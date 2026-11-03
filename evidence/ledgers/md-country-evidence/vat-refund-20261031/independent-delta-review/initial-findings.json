@@ -1,0 +1,40 @@
+[
+  {
+    "id": "MD-DR-01",
+    "priority": 2,
+    "path": "skills/moldova/md-vat-refund.md",
+    "line": 35,
+    "title": "State ordinary refund paid-input cutoff beside the cap",
+    "detail": "The ordinary exemption-with-credit row/base states a paid-input balance but does not state the HG93 point35¹(2) cutoff: paid when the audit starts. The investment row has this condition, while the ordinary route does not. This changes which input credits can be refunded. Add that condition to the ordinary row or its immediately connected calculation method.",
+    "source": "https://www.legis.md/cautare/getResults?doc_id=152472&lang=ro",
+    "quote": "se determină suma TVA dedusă care este achitată la momentul inițierii controlului"
+  },
+  {
+    "id": "MD-DR-02",
+    "priority": 2,
+    "path": "skills/moldova/md-vat-refund.md",
+    "line": 40,
+    "title": "State e-Factura scheme registration condition locally",
+    "detail": "Code101⁶(1) limits this route to registered VAT taxpayers. The route row and the scheme-specific base paragraph list documented transactions/date/cap but omit that taxpayer condition; the Guide also covers a nonregistered vehicle route. Add registered VAT taxpayer next to the e-Factura eligibility rule.",
+    "source": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+    "quote": "subiecților impozabili, înregistrați în calitate de plătitori de TVA"
+  },
+  {
+    "id": "MD-DR-03",
+    "priority": 2,
+    "path": "evidence/ledgers/md-vat-refund.writer.json",
+    "title": "Bind current PPP repeal as its own ledger rule",
+    "detail": "Current Code article101⁴ is correctly described as repealed in the Guide and retained in code-current-selected.json. It has no corresponding one of the184 source rows: the generator skips the article header/first paragraph, dropping the entire one-line repeal. Add an explicit ledger rule with exact original-language repeal text, current Code URL/article and read date. Existing184rows need not change.",
+    "source": "https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro",
+    "quote": "Articolul 1014. – abrogat."
+  },
+  {
+    "id": "MD-DR-04",
+    "priority": 3,
+    "path": "skills/moldova/md-vat-refund.md",
+    "line": 22,
+    "title": "Add required general reference notice to the new Guide",
+    "detail": "docs/skill-template.md Frontmatter example requires the body to open with the General reference only notice after H1. The new Guide opens straight into Who this applies to. Add the exact repository notice; do not manually add or alter any platform CTA. This is a standard-format finding, not a contrary tax conclusion.",
+    "source": "docs/skill-template.md#frontmatter-example"
+  }
+]

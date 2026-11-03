@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-01",
+  "web_open": "Both official URL web opens timed out. Direct curl retrieval of both official URLs succeeded independently, without bypassing any access restriction.",
+  "scope": "Only cited primary sources and relevant neighbouring clauses. No research beyond them was needed because no substantive source-fidelity check failed.",
+  "sources": [
+    {
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf",
+      "read_date": "2026-11-01",
+      "sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c",
+      "bytes": 3933091,
+      "independent_refetch_matches": true,
+      "cached_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/cgi-2026.pdf",
+      "independently_refetched": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/property-review-20261101/cgi-refetched.pdf",
+      "actual_read_scope": "Edition identification/preface and warning pp.1–6; full TFS chapter arts.251–257 pp.107–108, adjacent arts.245–250 and258–262 pp.106–109; residence/contribution boundary art.268 and full arts.269–275 pp.112–114, first valuation-order clauses p.115; full collection arts.669–679 pp.286–288 and neighbouring enforcement clauses; full art.772 with arts.769–774 pp.307–308 and following sanction boundaries p.309. CGI pp.107–108 independently rendered and visually read."
+    },
+    {
+      "official_url": "https://dgi.bf/wp-content/uploads/2026/01/JOURNAL-OFFICIEL-N%C2%B001-SPECIAL-LOI-DE-FINANCES-2026.pdf",
+      "read_date": "2026-11-01",
+      "sha256": "24242939052ac8dc40b6b59e9dd5e89b5e72e5f29aaeed6362cefa97a02f7d6a",
+      "bytes": 15892649,
+      "independent_refetch_matches": true,
+      "cached_source": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/finance-2026-gazette.pdf",
+      "independently_refetched": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/property-review-20261101/finance-refetched.pdf",
+      "actual_read_scope": "Promulgation p.2 visually read against cached OCR, full signed article34/replacementCGI772 and adjacent articles32–33 p.18 independently rendered and visually read; surrounding articles30–31 p.17 and35–36 p.19 read against OCR. Gazette page18 is physical/printed18; embedded law manuscript footers31–32 are not Gazette locators. No full-law amendment-chain certification."
+    }
+  ],
+  "raw_materials_outside_git": [
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/property-review-20261101/cgi-106-109.txt",
+      "sha256": "f5807eb8e3aeaa3c70a7acc5f835da00bb4188835a43d1a474a9be2d59e956f7"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/property-review-20261101/cgi-107.png",
+      "sha256": "97e925d255de99219f07d98cff4f53accf7fa2dcda592b1747b2f1a5a3905ab3"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/property-review-20261101/cgi-108.png",
+      "sha256": "a3458fdb85283574e25d58665ab719fb4ddef195df8ee6d834584b980d88e5d4"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/property-review-20261101/cgi-112-115.txt",
+      "sha256": "7dd8a4d94fe3493ec272a9b6e6a9da39df73397bdb540802911290ca45ef6987"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/property-review-20261101/cgi-286-289.txt",
+      "sha256": "61653cfa633aa69c2cd573a4fdf92f99f13fa81ac38e995f281a1081adfebebf"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/property-review-20261101/cgi-307-309.txt",
+      "sha256": "c389819083cbcb0ff671606c68aac5eaac67045aefed948f7939b4e3800de039"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/property-review-20261101/cgi-refetched.pdf",
+      "sha256": "a8acc390c74bc605540ad493c09e6f9381b5a20148b8804810a164256f7f8c5c"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/property-review-20261101/finance-18.png",
+      "sha256": "32cccc975d76fd5fc36e93a3341b758a077c7f4b50e7644d010ad4d777d8c8b1"
+    },
+    {
+      "path": "/Users/michaelcutajar/Documents/ChatGPT/OA/output/burkina-faso-pack-2026-11-01/sources/property-review-20261101/finance-refetched.pdf",
+      "sha256": "24242939052ac8dc40b6b59e9dd5e89b5e72e5f29aaeed6362cefa97a02f7d6a"
+    }
+  ]
+}

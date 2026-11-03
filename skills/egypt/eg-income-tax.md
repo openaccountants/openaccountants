@@ -1,10 +1,10 @@
 ---
 name: eg-income-tax
-description: Use this skill whenever asked about Egyptian personal income tax for resident individuals, sole proprietors, freelancers, or professionals — to compute, review, or explain it. Trigger on phrases like "Egypt income tax", "ضريبة الدخل", "Egyptian tax brackets", "sole proprietor tax Egypt", "freelancer tax Egypt", "professional income tax Egypt", "إقرار ضريبة الدخل", or any request to prepare or check an Egyptian individual income tax return. ALWAYS read this skill before touching any Egypt personal income tax work.
-version: 1.0
+description: Use this skill whenever asked about Egyptian personal income tax for resident individuals, sole proprietors, freelancers, or professionals , to compute, review, or explain it. Trigger on phrases like "Egypt income tax", "ضريبة الدخل", "Egyptian tax brackets", "sole proprietor tax Egypt", "freelancer tax Egypt", "professional income tax Egypt", "إقرار ضريبة الدخل", or any request to prepare or check an Egyptian individual income tax return. ALWAYS read this skill before touching any Egypt personal income tax work.
+version: 1.1
 jurisdiction: EG
 tax_year: 2026
-last_updated: 2026-07-13
+last_updated: 2026-11-01
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
@@ -14,92 +14,62 @@ tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# EG Income Tax
+# EG Income Tax v1.1
 
-## Egypt Personal Income Tax (ضريبة الدخل) Skill v1.0
+> **General reference only.** This skill is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status, or local procedures. Do not rely on it to file, pay, amend, or take a tax position without review by a qualified professional in the relevant jurisdiction.
 
-This skill covers Egyptian personal income tax (ضريبة الدخل على الأشخاص الطبيعيين) for **resident individuals**, **sole proprietors (منشأة فردية)**, and **professionals / non-commercial activity (مهن حرة)**. The AI must reply in the user's language (English or Arabic / Egyptian Arabic) and may use the native tax terms shown throughout.
+This skill covers Egyptian personal income tax (ضريبة الدخل على الأشخاص الطبيعيين) for tax year 2026: employees in outline, sole proprietors (منشأة فردية) and professionals (مهن حرة). Reply in the user's language, English or Arabic. All amounts are in EGP. Tax year: calendar year.
 
-> **Currency note:** all figures are in Egyptian Pounds (EGP / ج.م).
-> **YMYL — verify before relying.** Egyptian brackets and exemptions changed in 2024 and 2025. Where this skill says "verify current value," re-confirm against the Egyptian Tax Authority (ETA — eta.gov.eg), PwC Worldwide Tax Summaries (taxsummaries.pwc.com/egypt) or a Big-4 alert before filing.
+## Who this applies to
 
-## Section 1 — Quick reference
+- **Residents** (Law 91 art. 2): a person with a permanent home in Egypt; or present more than 183 days, continuous or not, within 12 months; or an Egyptian working abroad and paid from an Egyptian treasury.
+- **Scope of the tax** (Law 91 art. 6 first para., as replaced by Law 53/2014): residents pay on income realised in Egypt, or abroad if Egypt is the centre of their commercial, industrial or professional activity. Non-residents pay on income realised in Egypt. It is not a charge on all worldwide income, but foreign receipts of an Egypt-centred business or profession are in (arts. 17, 32). Four sources: salaries, commercial or industrial activity, professional or non-commercial activity, and real estate. Art. 3 defines Egyptian-source income.
+- **Not here:** companies (`eg-corporate-tax`); the turnover regime (`eg-sme-tax`); real estate disposals and rents (`eg-real-estate-tax`); withholding (`eg-withholding-tax`); payroll operation (`eg-payroll`); crypto (`eg-crypto-tax`).
 
-**Quick reference table**
+## Rates, bands and thresholds
 
-| Field | Value |
-| --- | --- |
-| Country | Egypt (جمهورية مصر العربية) |
-| Tax | Personal Income Tax (ضريبة الدخل على الأشخاص الطبيعيين) |
-| Currency | EGP (Egyptian Pound — ج.م) |
-| Tax year | Calendar year (1 January – 31 December) for individuals |
-| Legislation | Income Tax Law No. 91 of 2005 (as amended) — including the 2024 bracket reset and Laws No. 5, 6 and 7 of 2025 |
-| Tax authority | Egyptian Tax Authority (ETA — مصلحة الضرائب المصرية) |
-| Portal | eta.gov.eg |
-| Filing deadline | **31 March** of the year following the tax year (individuals / sole proprietors) |
-| Top marginal rate | 27.5% on income over EGP 1,200,000 |
-| Annual personal exemption | EGP 20,000 (raised from EGP 15,000 effective 21 Feb 2024) — *verify current value* |
-| Simplified SME alternative | Law No. 6 of 2025 turnover-based regime for businesses up to EGP 20m — see `eg-sme-tax` |
-| Contributor | Open Accountants Community |
-| Quality tier | Research-verified — pending sign-off by a qualified Egyptian accountant (محاسب قانوني) |
-| Skill version | 1.0 |
+Egypt withdraws the lower bands as income rises. Pick the row by total annual net income, then apply that row's bands to the whole income.
 
-### Progressive tax brackets — tax year 2026
+| Item | Amount (EGP) and rate | Conditions | Tax year | Official URL |
+|---|---|---|---|---|
+| Income up to 600,000 | 0 to 40,000: 0%; over 40,000 to 55,000: 10%; over 55,000 to 70,000: 15%; over 70,000 to 200,000: 20%; over 200,000 to 400,000: 22.5%; over 400,000: 25% | Whole annual net income does not exceed 600,000 (Law 91 art. 8, as replaced by Law 7/2024) | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf |
+| Over 600,000, not over 700,000 | 1 to 55,000: 10%; then 15%, 20%, 22.5%, 25% as above | The 0% band is gone | 2026 | same |
+| Over 700,000, not over 800,000 | 1 to 70,000: 15%; then 20%, 22.5%, 25% | The 0% and 10% bands are gone | 2026 | same |
+| Over 800,000, not over 900,000 | 1 to 200,000: 20%; then 22.5%, 25% | 0%, 10%, 15% bands gone | 2026 | same |
+| Over 900,000, not over 1,200,000 | 1 to 400,000: 22.5%; over 400,000: 25% | 0% to 20% bands gone | 2026 | same |
+| Over 1,200,000 | 1 to 1,200,000: 25%; over 1,200,000: 27.5% | Every lower band gone | 2026 | same |
+| Rounding | Down to the nearest EGP 10 | Applies to total annual net income before the table | 2026 | same |
 
-**Progressive tax brackets — TY2026**
+| Item | Amount | Conditions | Tax year | Official URL |
+|---|---|---|---|---|
+| Personal exemption | EGP 20,000 a year | Salaries only. Law 91 art. 13(1) as replaced by Law 7/2024 sits in the salaries part, and no article gives it against business or professional income. Art. 7, the old general threshold, was repealed (Law 101/2012, text of art. 8). Do not deduct it from business or professional profit | 2026 | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf |
+| Delay charge | Central Bank rate on 1 January before the due date plus 2%; 20.50% on 1 Jan 2026, so 22.50% a year on a date falling in 2026 | Law 91 art. 110; part months and pounds dropped | 2026 | https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf |
+| Delay charge ceiling | Delay charge or additional tax may not exceed 100% of the principal tax | Law 206/2020 new article, added by Law 7/2025 | 2026 | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf |
+| Built property disposal | 2.5% of gross value, no deduction, paid within 60 days | Law 91 art. 42 as replaced by Law 151/2026; the correction notice makes it "built" property and fixes the article number. Detail in `eg-real-estate-tax` | 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf |
+| Dividends to non-resident individuals | 10%; 5% if the securities are listed in Egypt | Dividend article of Law 91 as replaced by Law 151/2026 art. 1; no costs deducted | 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf |
+| Listed Egyptian securities, capital gains | Exempt; losses not deductible and not carried forward | Law 91 art. 31 item 7, added by Law 151/2026 art. 2. Not exempt where the disposal delists the company | From 29 Jul 2026 | same |
+| Unlisted securities and company shares, capital gains | Taxed, gains in Egypt or abroad; a non-resident seller computes and pays within 60 days | Law 91 arts. 46 bis 3 and 4 as replaced by Law 151/2026 art. 1; gain is price less acquisition cost and brokerage. At a fair value price, add the Central Bank rate for each year held if held at least three years; cost is weighted average | From 29 Jul 2026 | same |
+| Listed securities, stamp tax on sales | 0.5 per thousand each on seller and buyer; 0.25 per thousand each on same-day trades | Stamp Duty Law 111/1980 art. 83 bis as replaced by Law 153/2026. Not on listed investment fund units or approved market makers. Settlement body withholds | From 29 Jul 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.153.of_.2026.pdf |
 
-| Band (taxable income, EGP) | Rate | Native |
-| --- | --- | --- |
-| 0 – 40,000 | 0% | معفى |
-| 40,001 – 55,000 | 10% |  |
-| 55,001 – 70,000 | 15% |  |
-| 70,001 – 200,000 | 20% |  |
-| 200,001 – 400,000 | 22.5% |  |
-| 400,001 – 1,200,000 | 25% |  |
-| Over 1,200,000 | 27.5% | الشريحة العليا |
+Listed share gains tax left unpaid for 16 June 2023 to the law's start date is forgiven (Law 151 art. 5).
 
-- **Rates apply basis** — Rates apply to annual taxable income after deducting the personal exemption and allowable deductions. Tax is computed band-by-band (marginal), subject to the high-earner bracket-elimination rule below.
-- **High-earner bracket-elimination rule (مهم)** — Egypt does not grant the lower bands to high earners. As total annual taxable income rises past defined thresholds, the 0% band (and then successively higher bands) is withdrawn, so the highest earners are taxed across the upper bands only. The 0% first band is available only to residents whose annual income does not exceed EGP 1,200,000. The exact step thresholds at which each lower band is removed must be verified against the current ETA schedule before filing. When the precise schedule is unknown, compute the straightforward marginal result AND flag that the bracket-elimination adjustment may increase tax — defer the final number to a qualified Egyptian accountant.
+## The base
 
-### Conservative defaults
+1. Take net income by source. For a business or profession: receipts less costs needed to earn them, from regular books backed by documents (Law 91 arts. 22, 23; professions art. 33, 35).
+2. Add the sources into total net income and round down to EGP 10.
+3. Pick the table row and apply the bands.
+4. Credit tax withheld and advance payments.
 
-**Conservative defaults table**
+**Costs.** Bad debts need serious collection steps and non-collection 12 months after the due date: a payment order, a first-instance judgment, or a claim in bankruptcy enforcement (art. 28 first para. item 4 as replaced by Law 151). No such steps are needed for a debt up to EGP 10,000, if total bad debts stay within 1% of the debtor balance at year end. A personal expense, a fine and income tax itself are not costs.
+**Donations by professionals** (art. 34): deductible up to net annual income for government bodies; up to 10% of net income for registered Egyptian charities, schools and hospitals under state supervision and Egyptian research bodies; not deductible again against another source.
+**Losses** (art. 29): carried forward to the fifth following year at the latest. Art. 35 applies art. 29 to professionals, on its conditions.
+**Estimated accounts** (art. 18): repealed by Law 151/2026 art. 6; its rules continue for tax period 2027 and earlier.
+**New professionals** (art. 36 item 5): members of a professional syndicate are exempt for three years from starting the profession.
+**Authors** (art. 36 item 2): income from writing and translating religious, scientific, cultural and literary books and articles is exempt, except sale for audio or video production.
+**Health contribution** (art. 23 item 10 for business, art. 33 item 5 for professions, both added by Law 151): the solidarity contribution under the Universal Health Insurance Law art. 40(9) is a deductible item.
+**Egyptian-source fees of a non-resident:** see `eg-withholding-tax`.
 
-| Ambiguity | Default |
-| --- | --- |
-| Unknown whether an expense is deductible | Treat as **non-deductible** until documentary support (e-invoice/receipt) is confirmed |
-| Unknown whether high-earner bracket-elimination applies | Compute marginal tax AND warn it may be higher; do not finalise |
-| Unknown personal exemption for the year | Use EGP 20,000 and label "verify current value" |
-| Unknown residency | Treat as **non-resident** (Egyptian-source income only) until residency confirmed |
-| Unknown whether SME regime is better | Compute normal regime; cross-ref `eg-sme-tax` for comparison |
-| Mixed personal/business expense | Disallow the personal portion |
-
-## Section 2 — Required inputs & refusal catalogue
-
-### Required inputs
-
-- **Residency status** — Resident if present in Egypt > 183 days in a 12-month period, or Egypt is the centre of vital/commercial interests, or an Egyptian working abroad whose income is paid by an Egyptian treasury. Residents are taxed on worldwide income for activities managed/realised in Egypt; non-residents on Egyptian-source income only.
-- **Activity category** — employment (مرتبات وأجور), commercial & industrial activity (نشاط تجاري وصناعي), or non-commercial / professional activity (مهن غير تجارية). Each has its own income-determination rules but feeds the same progressive scale.
-- **Gross receipts / revenue** — Gross receipts / revenue for the tax year, with supporting documents.
-- **Business expenses** — Business expenses with e-invoices / receipts (electronic invoicing is the ETA standard).
-- **Insurance & pension contributions** — Insurance & pension contributions (for the capped deduction).
-- **Withholding tax already suffered** — Withholding tax already suffered (advance payments / WHT certificates) to credit against the final liability.
-- **Tax year and SME election** — Tax year and whether the SME alternative regime has been elected.
-
-### Refusal catalogue (R-EG-n)
-
-- **R-EG-1** — Do not produce a final filing figure without the residency status confirmed.  _(R-EG-1)_
-- **R-EG-2** — Do not deduct an expense lacking documentary support (e-invoice/receipt). Disallow it.  _(R-EG-2)_
-- **R-EG-3** — Do not finalise tax for income > EGP 1,200,000, or where bracket-elimination may apply, without a qualified Egyptian accountant confirming the band schedule.  _(R-EG-3)_
-- **R-EG-4** — Refuse to advise on tax evasion, under-declaration of receipts, or fictitious expenses.  _(R-EG-4)_
-- **R-EG-5** — Do not apply the simplified SME (turnover-based) regime here; route to `eg-sme-tax` and confirm eligibility (turnover ≤ EGP 20m and election made).  _(R-EG-5)_
-- **R-EG-6** — Do not advise on corporate income tax (companies) — this skill is individuals only.  _(R-EG-6)_
-- **R-EG-7** — Do not give a binding figure where the current-year bracket/exemption values cannot be verified; provide the formula and flag "verify current value."  _(R-EG-7)_
-- **R-EG-8** — Do not net foreign tax credits or apply tax treaties without explicit treaty confirmation; flag for professional review.  _(R-EG-8)_
-
-## Section 3 — Transaction Pattern Library
-
-Bank/ledger keywords (Arabic + English) to classify line items. Match on substrings; when ambiguous, apply the conservative default.
+### Classify transactions
 
 ### Income (دخل / إيرادات)
 
@@ -109,10 +79,10 @@ Bank/ledger keywords (Arabic + English) to classify line items. Match on substri
 | --- | --- | --- |
 | إيراد / مبيعات / تحصيل | revenue / sales / receipt | Business income (commercial/industrial) |
 | أتعاب / استشارات | fees / consulting | Professional (non-commercial) income |
-| تحويل وارد / إيداع عميل | incoming transfer / client deposit | Income — confirm it is trading receipt |
+| تحويل وارد / إيداع عميل | incoming transfer / client deposit | Income: confirm it is trading receipt |
 | مرتب / راتب | salary / payroll | Employment income (separate computation) |
 | إيجار مستحق | rent received | Real-estate revenue (separate category) |
-| فوائد / عوائد | interest / yield | Investment income — usually WHT/final; exclude from business profit |
+| فوائد / عوائد | interest / yield | Investment income: exclude from business profit |
 
 ### Deductible expenses (مصروفات قابلة للخصم)
 
@@ -151,79 +121,8 @@ Bank/ledger keywords (Arabic + English) to classify line items. Match on substri
 | دخل خاضع لخصم نهائي | income under final WHT | Exclude from progressive base (already taxed) |
 | رأس مال / قروض واردة | capital injection / loan in | Not income |
 
-## Section 4 — Worked examples
 
-All figures illustrative; verify the live bracket/exemption schedule before filing.
-
-### Example 1 — Freelance developer, low income
-
-Net professional profit EGP 90,000. Personal exemption EGP 20,000 → taxable EGP 70,000.
-- 0–40,000 @ 0% = 0
-- 40,000–55,000 @ 10% = 1,500
-- 55,000–70,000 @ 15% = 2,250
-- **Tax = EGP 3,750.**
-
-### Example 2 — Sole proprietor shop (commercial activity)
-
-Gross receipts EGP 600,000; documented deductible expenses EGP 250,000 → net profit EGP 350,000. Exemption EGP 20,000 → taxable EGP 330,000.
-- 0–40,000 @ 0% = 0
-- 40,000–55,000 @ 10% = 1,500
-- 55,000–70,000 @ 15% = 2,250
-- 70,000–200,000 @ 20% = 26,000
-- 200,000–330,000 @ 22.5% = 29,250
-- **Tax = EGP 59,000.**
-
-### Example 3 — Professional with capped insurance deduction
-
-Net profit EGP 250,000; life/health/pension premiums EGP 18,000. Deduction capped at the lower of 15% of net revenue or EGP 10,000 → deduct EGP 10,000. Personal exemption EGP 20,000. Taxable = 250,000 − 10,000 − 20,000 = EGP 220,000.
-- 0–40,000 @ 0% = 0
-- 40,000–55,000 @ 10% = 1,500
-- 55,000–70,000 @ 15% = 2,250
-- 70,000–200,000 @ 20% = 26,000
-- 200,000–220,000 @ 22.5% = 4,500
-- **Tax = EGP 34,250.**
-
-### Example 4 — High earner (top band + elimination flag)
-
-Net taxable income EGP 1,500,000.
-- Marginal computation: 0 + 1,500 + 2,250 + 26,000 + 45,000 (200k–400k @22.5%) + 200,000 (400k–1.2m @25%) + 82,500 (300k @27.5%) = **EGP 357,250 marginal.**
-- **⚠ Flag (R-EG-3):** income exceeds EGP 1,200,000, so the 0% band (and possibly lower bands) is **eliminated**, raising the actual tax above the marginal figure. Defer the final number to a qualified Egyptian accountant and verify the current band-elimination schedule.
-
-### Example 5 — Normal vs SME comparison
-
-Trading turnover EGP 4,000,000; net profit after expenses EGP 700,000.
-- Normal regime (progressive on net profit) — compute and flag the high-earner elimination rule.
-- SME regime (Law No. 6 of 2025): turnover ≤ EGP 20m → tax ≈ **1% of turnover** (EGP 3m–10m band) = EGP 40,000, subject to eligibility and election.
-- Present both; route the SME path to `eg-sme-tax`. The taxpayer may benefit materially from the SME regime here — recommend professional confirmation.
-
-### Example 6 — Non-resident, Egyptian-source fee
-
-Non-resident consultant earns EGP 100,000 of Egyptian-source professional fees. Taxed on Egyptian-source income only; personal exemption generally available to residents — **verify exemption availability for non-residents** and check WHT/treaty position (R-EG-8). Flag for professional review.
-
-## Section 5 — Tier 1 rules (law refs) + Tier 2
-
-### Tier 1 — settled rules with citations
-
-- **T1-1** — Tax base is annual net profit for both commercial/industrial and non-commercial (professional) activity.  _(Income Tax Law No. 91 of 2005, as amended)_
-- **T1-2** — Progressive scale 0% / 10% / 15% / 20% / 22.5% / 25% / 27.5%, top band over EGP 1,200,000 (current schedule per ETA / PwC, TY2026). *Verify current value.*  _(T1-2)_
-- **T1-3** — Annual personal exemption EGP 20,000 (raised from EGP 15,000 effective 21 Feb 2024). *Verify current value.*  _(T1-3)_
-- **T1-4** — 0% first band available only to residents with annual income ≤ EGP 1,200,000; high-earner bracket-elimination applies above that — *verify the step schedule.*  _(T1-4)_
-- **T1-5** — Insurance/pension premiums + private fund contributions deductible up to the lower of 15% of net revenue or EGP 10,000.  _(T1-5)_
-- **T1-6** — Deductible expenses must be connected to the activity and supported by electronic invoices/receipts; personal expenses, fines, and income tax itself are non-deductible.  _(T1-6)_
-- **T1-7** — Business losses carry forward up to 5 years (restrictions on >50% ownership/activity change).  _(T1-7)_
-- **T1-8** — Annual return filing deadline 31 March following the tax year for individuals.  _(T1-8)_
-- **T1-9** — Simplified turnover-based SME regime for businesses with annual turnover ≤ EGP 20m introduced by Law No. 6 of 2025 (rates ~0.4%–1.5% of turnover by band) — handled in `eg-sme-tax`.  _(T1-9, Law No. 6 of 2025)_
-- **T1-10** — 2025 procedural package (Laws No. 5 & 7 of 2025): settlement/amnesty windows and a cap that delay interest/additional tax cannot exceed 100% of principal tax — relevant to penalties, not the base computation.  _(T1-10, Laws No. 5 & 7 of 2025)_
-
-### Tier 2 — judgement / ambiguity (resolve conservatively, flag for reviewer)
-
-- **T2-1** — Allocating mixed personal/business expenses — disallow personal share.  _(T2-1)_
-- **T2-2** — Depreciation rates and asset categories — apply law schedules; flag if uncertain.  _(T2-2)_
-- **T2-3** — Treatment of foreign-source income for residents and treaty relief — flag (R-EG-8).  _(T2-3)_
-- **T2-4** — Whether a receipt is a trading receipt vs capital/loan — default to caution.  _(T2-4)_
-- **T2-5** — Exact high-earner band-elimination thresholds — verify; do not finalise.  _(T2-5)_
-
-## Section 6 — Excel working paper template
+### Working paper
 
 **Excel working paper columns**
 
@@ -238,17 +137,16 @@ Non-resident consultant earns EGP 100,000 of Egyptian-source professional fees. 
 | G | Deductible? (Y/N) | قابل للخصم؟ |
 | H | Note / disallowance reason | ملاحظات |
 
-- **Summary block formula** — Gross receipts (إجمالي الإيرادات)            = SUM(income) Less deductible expenses (المصروفات)         = SUM(deductible) Net profit (صافي الربح)                      = receipts − expenses Less insurance/pension (capped)              = MIN(15% net revenue, 10,000) Less personal exemption (الإعفاء الشخصي)     = 20,000   [verify] Taxable income (الوعاء الضريبي)              = net profit − deductions Tax (band-by-band)                           = progressive calc ⚠ apply high-earner band-elimination if income > 1,200,000 Less WHT / advance payments                  = credits Tax payable / refundable (المستحق)           = tax − credits
 
-Build the progressive calc as a stepped formula per band; keep each band on its own row so a reviewer can audit it.
+Keep one row per band so a reviewer can trace the tax. Summary order: receipts, deductible costs, net profit, insurance relief, taxable income, tax from the table, credits, payable.
 
-## Section 7 — Bank Statement Reading Guide
+### Reading bank statements
 
 Egyptian statements (كشف حساب) appear in Arabic, English, or both. Common formats:
 
-- **National Bank of Egypt — البنك الأهلي المصري (NBE):** Arabic-first; debit = مدين, credit = دائن. Look for مبيعات / تحصيل (income) and سحب / مدفوعات (payments).
-- **Banque Misr — بنك مصر:** bilingual; transfers labelled تحويل (transfer), إيداع (deposit), سحب (withdrawal).
-- **Commercial International Bank — CIB (البنك التجاري الدولي):** often English-first with Arabic memo lines; POS/merchant settlements show as "POS Settlement" or تسوية نقاط بيع → business income.
+- **National Bank of Egypt: البنك الأهلي المصري (NBE):** Arabic-first; debit = مدين, credit = دائن. Look for مبيعات / تحصيل (income) and سحب / مدفوعات (payments).
+- **Banque Misr: بنك مصر:** bilingual; transfers labelled تحويل (transfer), إيداع (deposit), سحب (withdrawal).
+- **Commercial International Bank: CIB (البنك التجاري الدولي):** often English-first with Arabic memo lines; POS/merchant settlements show as "POS Settlement" or تسوية نقاط بيع → business income.
 
 ### Key Arabic banking terms
 
@@ -266,49 +164,114 @@ Egyptian statements (كشف حساب) appear in Arabic, English, or both. Common
 | تحصيل | collection / receipt |
 | مرتجع | refund / return |
 | رسوم بنكية | bank charges (deductible business expense) |
-| فائدة دائنة | interest earned (investment income — exclude from business profit) |
+| فائدة دائنة | interest earned (investment income: exclude from business profit) |
 | نقاط البيع | point of sale (POS) |
 
 Reconcile statement receipts to declared revenue; unexplained deposits should be queried, not assumed taxable or non-taxable (apply R-EG-1/R-EG-2 discipline).
 
-## Section 8 — Onboarding fallback, references & test suite
 
-### Onboarding fallback
+## Deadlines and filing
 
-If required inputs are missing, ask (in the user's language): residency status, activity category, the tax year, gross receipts, documented expenses, insurance/pension contributions, and any WHT suffered. Do not guess — apply conservative defaults and flag.
+| Step | Rule | Source |
+|---|---|---|
+| Register | Tell ETA within 30 days of starting: form 1 (individual) with documents; ETA reviews, then issues the registration number and tax card | Law 91 notice article; ETA Services Guide, registration |
+| Annual return | Before 1 April of the following year for individuals (Law 206/2020, returns chapter) | Law 206 |
+| Return even if exempt | The return is still due for exempt periods | Law 206 |
+| Incomplete return | A return missing the form's tables is not counted as filed | Law 206 |
 
-### References (verify before filing)
+**Steps for a business or professional individual:**
+1. Log in on the ETA tax system (https://workspace.eta.gov.eg/workspace/dashboard for merged offices) or https://eservice.incometax.gov.eg/etax for offices not yet merged.
+2. Decide the regime first: to use the turnover regime file form 10/1 طلبات (see `eg-sme-tax`).
+3. Complete the annual return and every attached table on the form.
+4. Submit before 1 April, keep the confirmation, and pay any balance. ETA's published guide for the individual return's box numbers was not read; see "Not yet confirmed".
 
-- Egyptian Tax Authority (ETA — مصلحة الضرائب المصرية): eta.gov.eg
-- PwC Worldwide Tax Summaries — Egypt: taxsummaries.pwc.com/egypt
-- Income Tax Law No. 91 of 2005 (as amended); 2024 bracket reset; Laws No. 5, 6, 7 of 2025
-- Big-4 / major-firm 2025–2026 tax alerts (PwC, KPMG, EY, Deloitte, Andersen, Matouk Bassiouny)
+## Penalties and interest
 
-### Test suite
+| Failure | Consequence | Source |
+|---|---|---|
+| Return and payment late by up to 60 days, or a wrong return showing more tax | Fine EGP 3,000 to 50,000 plus the tax; trebled on repeat | Law 206, Part 9 |
+| No return for over 60 days past the due date | Fine EGP 5,000 to 200,000; doubled if repeated within three years | Law 206, Part 9 |
+| Not keeping books for the required period | Fine up to EGP 50,000 | Law 206, Part 9 |
+| Evasion | Prison one to three years and fine EGP 50,000 to 250,000, or either | Law 206, Part 9 |
+| Late payment | Delay charge above, capped at 100% of principal | Law 91 art. 110; Law 7/2025 |
+| Settling a crime with no tax at stake | Payment between half and twice the minimum fine before prosecution | Law 206 new article, added by Law 7/2025 |
 
-1. Net profit EGP 70,000 → tax EGP 3,750. ✓ (Example 1)
-2. Net profit EGP 350,000 (commercial) → tax EGP 59,000. ✓ (Example 2)
-3. Insurance premium EGP 18,000 → deduction capped at EGP 10,000. ✓ (Example 3)
-4. Income EGP 1,500,000 → must flag bracket-elimination (R-EG-3). ✓ (Example 4)
-5. Expense without invoice → non-deductible (R-EG-2). ✓
-6. Turnover ≤ EGP 20m → offer SME comparison and route to `eg-sme-tax`. ✓ (Example 5)
-7. Non-resident Egyptian-source fee → tax Egyptian-source only, flag exemption/treaty. ✓ (Example 6)
-8. Filing deadline = 31 March of the following year. ✓
+Open disputes: Law 152/2026 renews the Law 79/2016 dispute committees to 31 December 2026. Apply to ETA on its form, or free on its portal (MoF decision 450/2026).
 
-## PROHIBITIONS
+## Cross-border points
 
-- Do NOT advise on, enable, or overlook tax evasion, under-declaration of receipts, fictitious or undocumented expenses, or concealment of income.
-- Do NOT finalise a tax figure when current-year brackets/exemption cannot be verified — give the formula and flag "verify current value."
-- Do NOT finalise tax for income over EGP 1,200,000 or where the high-earner bracket-elimination rule may apply, without qualified Egyptian accountant review.
-- Do NOT deduct expenses without documentary support (e-invoice/receipt).
-- Do NOT apply the SME turnover-based regime here — route to `eg-sme-tax`.
-- Do NOT handle corporate income tax — this skill is individuals only.
-- Do NOT apply tax treaties or foreign tax credits without explicit confirmation.
-- Do NOT present output as a filed return or as professional sign-off.
+- Non-residents pay on income realised in Egypt (art. 6); art. 3 lists it. Residents also pay on foreign income of an activity centred in Egypt (arts. 6, 17, 32).
+- Treaties: the ETA treaty list is the starting point. Do not apply a treaty rate or a foreign tax credit here; route to `eg-withholding-tax`.
+- Non-resident sale of unlisted shares or company interests: compute and pay within 60 days. Treasury bill gains of non-residents are outside this tax (same article).
 
-## Disclaimer
+## Two worked examples that recompute
 
-This skill is **research-verified** open-source content from the Open Accountants Community and is **pending sign-off by a qualified Egyptian accountant (محاسب قانوني)**. It is provided for informational and workflow purposes only and does not constitute tax, legal, or accounting advice. Egyptian tax law (Income Tax Law No. 91 of 2005 as amended, and the 2024–2025 amendments) changes frequently; brackets, the personal exemption, and the high-earner band-elimination schedule must be re-verified against the Egyptian Tax Authority (eta.gov.eg) and a reputable source before any return is filed. Always have an Egypt-licensed professional review and sign off. Learn more at openaccountants.com.
+**Case 1. Freelancer, net income EGP 90,000.** Row "up to 600,000". 10% on 15,000 = 1,500; 15% on 15,000 = 2,250; 20% on 20,000 = 4,000. Tax 7,750. No personal exemption is taken: art. 13(1) is a salary relief.
+
+```oa-check
+name: Freelancer net income EGP 90,000
+inputs:
+  income: 90000
+steps:
+  - b10: (55000 - 40000) * 0.10
+  - b15: (70000 - 55000) * 0.15
+  - b20: (income - 70000) * 0.20
+  - tax: b10 + b15 + b20
+expected:
+  tax: 7750.00
+```
+
+**Case 2. Decision: general system or turnover regime.** Developer, turnover 1,500,000, costs 150,000, profit 1,350,000. General: top row, 25% on 1,200,000 = 300,000, 27.5% on 150,000 = 41,250, total 341,250. Turnover regime: 0.5% = 7,500. The turnover regime wins by 333,750, before the five-year lock-in in `eg-sme-tax`. It fails if at least 90% of turnover is consulting for one or two clients.
+
+```oa-check
+name: General system against turnover regime, turnover 1.5m
+inputs:
+  turnover: 1500000
+  costs: 150000
+steps:
+  - profit: turnover - costs
+  - general: 1200000 * 0.25 + (profit - 1200000) * 0.275
+  - simplified: turnover * 0.005
+  - saving: general - simplified
+expected:
+  general: 341250.00
+  simplified: 7500.00
+  saving: 333750.00
+```
+
+The row step matters: income of 610,000 has no 0% band, so tax is 5,500 + 2,250 + 26,000 + 45,000 + 52,500 = 131,250; income of 600,000 pays 124,750. A rise of 10,000 costs 6,500.
+
+## Ask the client first
+
+1. Resident? Which test in art. 2?
+2. Which sources: salary, business, profession, rent?
+3. Total net income for 2026, and are regular books kept?
+4. Is the taxpayer in the Law 6/2025 regime, or was a request filed? If yes, stop and use `eg-sme-tax`.
+5. Tax withheld, advance payments, and insurance premiums paid.
+6. Any open dispute or unfiled year?
+
+Refuse to help hide receipts, invent costs or under-declare. Do not present output as a filed return or as a professional sign-off.
+
+## Sources
+
+| Source | URL | Read on |
+|---|---|---|
+| Income Tax Law 91 of 2005, original text: arts. 2, 3, 6, 13, 17 to 36 (OCR, figures confirmed only where a later law restates them) | https://eta.gov.eg/sites/default/files/2024-03/law_no.91-2005.pdf | 2026-11-01 |
+| Law 53 of 2014, art. 1 (arts. 6, 13 last para., 17, 32; page image read for art. 6) | https://eta.gov.eg/sites/default/files/2024-03/law_no.53-2014.pdf | 2026-11-01 |
+| Law 101 of 2012, art. 2 (text of art. 8 repealing art. 7; OCR) | https://eta.gov.eg/sites/default/files/2024-03/law_no.101-2012.pdf | 2026-11-01 |
+| Law 153 of 2026, art. 1 (page image read) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.153.of_.2026.pdf | 2026-11-01 |
+| Law 7 of 2024, arts. 8 and 13(1) (bands, exemption; page images read; the ETA file carries an HTML page after the PDF end and opens once trimmed) | https://eta.gov.eg/sites/default/files/2024-03/law_no.7-2024.pdf | 2026-11-01 |
+| Law 175 of 2023 (previous band table, superseded) | https://eta.gov.eg/sites/default/files/2024-03/law_no.175-2023.pdf | 2026-11-01 |
+| Law 151 of 2026, whole text; Gazette 30 bis (a), 28 Jul 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.151.of_.2026.pdf | 2026-11-01 |
+| Correction notice to Laws 149, 150, 151 of 2026; Gazette 32 bis, 8 Aug 2026 | https://eta.gov.eg/sites/default/files/2026-08/law.no_.149.150.151.of_.2026.retractation.pdf | 2026-11-01 |
+| Unified Tax Procedures Law 206 of 2020: return deadlines, Part 9 offences (OCR; article numbers for the offences not legible) | https://eta.gov.eg/sites/default/files/2024-03/law_no.206-2020.pdf | 2026-11-01 |
+| Law 7 of 2025, whole text (OCR) | https://eta.gov.eg/sites/default/files/2025-02/law_no.7.of_.2025.pdf | 2026-11-01 |
+| Law 152 of 2026, whole text (OCR) | https://eta.gov.eg/sites/default/files/2026-08/law.no_.152.of_.2026.pdf | 2026-11-01 |
+| MoF decision 450 of 2026, arts. 1 and 2 (OCR) | https://eta.gov.eg/sites/default/files/2026-08/mof.qarar_.no_.450.of_.2026.pdf | 2026-11-01 |
+| ETA circular 1 of 2026 (Central Bank rates; page image read) | https://eta.gov.eg/sites/default/files/2026-03/Dawry.no_.1.of_.2026.pdf | 2026-11-01 |
+| ETA Services Guide, 2nd edition: registration and section 18 only | https://eta.gov.eg/sites/default/files/2025-08/guide.of_.the_.egyptian.tax_.authority.services.second%20edition.pdf | 2026-11-01 |
+
+Not yet confirmed: any ETA page or executive regulation stating expressly that the personal exemption is salary-only (the answer above rests on the law's structure; Law 7/2024 art. 2 sets start dates for business taxpayers but for the whole law, including art. 8, so it does not extend art. 13). The premium cap for professionals: art. 13 last para. (Law 53/2014) caps salaries at the lower of 15% of net revenue or EGP 10,000; art. 33's own cap in the 2005 text is unclear in OCR and any amendment was not read. Whether Law 101/2012's repeal of art. 7 survived Law 11/2013, which replaced art. 8 again (art. 7 is absent from all later tables). Whether art. 74 is the current article number for the 30-day notice. The box numbers of the individual annual return. The deemed cost percentage where no regular books are kept (art. 35, OCR digit unclear; the old skill said 10%). Depreciation schedules. Treatment of mixed personal and business costs beyond the general rule. Exact ETA forms for the employee annual settlement belong to `eg-payroll`.
 
 <!-- openaccountants-cta-block -->
 

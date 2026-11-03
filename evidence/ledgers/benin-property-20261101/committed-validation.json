@@ -1,0 +1,60 @@
+{
+  "content_commit": "a49838a96197dffddfd6daa7b4a9081345741716",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 3 changed guide file(s)\nchecked 2 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/benin/bj-property-tfu.md: no tax domain in the slug, so its country cell was not checked\nWARN: skills/benin/bj-rental-income-tax.md: BJ IT-IND also holds bj-income-tax, with a different job\n\nvalidation passed (2 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 2 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/benin/bj-property-tfu.md",
+        "skills/benin/bj-rental-income-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "validator_warning_explanation": [
+    "TFU property slug has no standard seven-domain token; README explicitly names its separate ownership-tax job. No comprehensive seven-domain claim is made.",
+    "Rental IRF and existing salary ITS occupy IT-IND with distinct tax jobs. Existing salary Guide is byte-identical."
+  ],
+  "mechanical_checks_are_not_source_review": true
+}

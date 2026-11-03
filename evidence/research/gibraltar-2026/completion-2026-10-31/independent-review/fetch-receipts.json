@@ -1,0 +1,63 @@
+[
+  {
+    "id": "registration",
+    "url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Registration.pdf",
+    "status": 200,
+    "sha256": "bbeb97b03ee15f99532c9bf5693130cb64291bd88866bc7c600e250603eb6913",
+    "bytes": 1150662,
+    "read_on": "2026-10-31"
+  },
+  {
+    "id": "notification",
+    "url": "https://tax.egov.gi/Downloads/Guidance_Note_Pillar_Two_Article.pdf",
+    "status": 200,
+    "sha256": "94b8e4d9f516e978488e979370f7de1271ef7f02f0e1c48dbcdf80e3f364cec0",
+    "bytes": 1410973,
+    "read_on": "2026-10-31"
+  },
+  {
+    "id": "gir",
+    "url": "https://tax.egov.gi/Downloads/Guidance_Note_GloBE_Information_Return.pdf",
+    "status": 200,
+    "sha256": "13ffc86c216404159c3a903e33200781a2f80072411c6da115e8756e7a1ea942",
+    "bytes": 1509733,
+    "read_on": "2026-10-31"
+  },
+  {
+    "id": "payment",
+    "url": "https://tax.egov.gi/Downloads/GMTA1_Form_June2026.pdf",
+    "status": 200,
+    "sha256": "e30b4b540f74b2dbfb123ae899e07910624c2e8d639986e2d1b474141999c6b3",
+    "bytes": 270742,
+    "read_on": "2026-10-31"
+  },
+  {
+    "id": "act",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/minimum-tax/2024-20/2024-20o.pdf",
+    "status": 200,
+    "sha256": "9a8b7132e123524941165e9b68848da1bdde50318faf097c510fd7c553471db3",
+    "bytes": 252938,
+    "read_on": "2026-10-31"
+  },
+  {
+    "id": "allowances",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf",
+    "status": 200,
+    "sha256": "b3254638de0d50d6547bf7efc77e09ca8042f8bf27f941d533b2c5040bb947e0",
+    "bytes": 356091,
+    "read_on": "2026-10-31"
+  },
+  {
+    "id": "ita",
+    "url": "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf",
+    "status": 200,
+    "sha256": "bebc801cb0297d7628e3068f68328fb4c96eeca4f96002a3c5b4fcceb83cab43",
+    "bytes": 1849515,
+    "read_on": "2026-10-31"
+  },
+  {
+    "id": "model",
+    "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/12/tax-challenges-arising-from-digitalisation-of-the-economy-global-anti-base-erosion-model-rules-pillar-two_eed81a23/782bac33-en.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]

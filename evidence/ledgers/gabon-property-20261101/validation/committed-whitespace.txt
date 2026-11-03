@@ -1,0 +1,6 @@
+Candidate: 456042344ec2760856c9054a91b293155d6d1ed7
+Base: 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8
+Command: git diff --check 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8 456042344ec2760856c9054a91b293155d6d1ed7
+
+
+Exit code: 0

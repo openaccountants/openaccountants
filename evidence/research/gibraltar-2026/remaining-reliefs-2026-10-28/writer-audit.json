@@ -1,0 +1,18 @@
+{
+  "full_rule_rows": 74,
+  "accepted_rows_preserved_exact": 60,
+  "accepted_proofs_preserved_exact": 87,
+  "new_rule_limit_rows": 14,
+  "new_source_proofs": 6,
+  "new_exact_quote_snippets": 57,
+  "baseline_paragraph_destinations": 90,
+  "baseline_paragraphs_exact": 88,
+  "explicit_gap_reconciliations": 2,
+  "main_oa_checks_exact": 2,
+  "new_supplementary_controls": 4,
+  "CTA_exact": true,
+  "protected_metadata_exact": true,
+  "canonical_sections": 9,
+  "independent_new_material_acceptance": false,
+  "published": false
+}

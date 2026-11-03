@@ -1,0 +1,2277 @@
+[
+  {
+    "id": "C01",
+    "source": "LF",
+    "quote_fr": "Le taux g\u00e9n\u00e9ral de l\u2019imp\u00f4t sur les soci\u00e9t\u00e9s est fix\u00e9 \u00e0 28%.",
+    "independent_full_page_text_matches": [
+      46
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF46-47"
+  },
+  {
+    "id": "C01",
+    "source": "LF",
+    "quote_fr": "25% pour les soci\u00e9t\u00e9s",
+    "independent_full_page_text_matches": [
+      46
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF46-47"
+  },
+  {
+    "id": "C01",
+    "source": "LF",
+    "quote_fr": "28% pour les soci\u00e9t\u00e9s",
+    "independent_full_page_text_matches": [
+      46
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF46-47"
+  },
+  {
+    "id": "C01",
+    "source": "LF",
+    "quote_fr": "33% pour les personnes morales \u00e9trang\u00e8res",
+    "independent_full_page_text_matches": [
+      46
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF46-47"
+  },
+  {
+    "id": "C01",
+    "source": "LF",
+    "quote_fr": "inf\u00e9rieure \u00e0 1.000",
+    "independent_full_page_text_matches": [
+      46
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF46-47"
+  },
+  {
+    "id": "C02",
+    "source": "LF",
+    "quote_fr": "y compris lorsqu\u2019elles sont unipersonnelles",
+    "independent_full_page_text_matches": [
+      30
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF30-31"
+  },
+  {
+    "id": "C03",
+    "source": "LF",
+    "quote_fr": "Les contribuables sont tenus d\u2019arr\u00eater chaque ann\u00e9e leurs comptes \u00e0 la date du 31 d\u00e9cembre",
+    "independent_full_page_text_matches": [
+      33
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF33-34"
+  },
+  {
+    "id": "C04",
+    "source": "LF",
+    "quote_fr": "ne pas \u00eatre pay\u00e9es en esp\u00e8ces pour un montant sup\u00e9rieur ou \u00e9gal \u00e0 200 000 FCFA",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF35-36",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "C05",
+    "source": "LF",
+    "quote_fr": "\u00e0 l\u2019exclusion de l\u2019imp\u00f4t sur les soci\u00e9t\u00e9s",
+    "independent_full_page_text_matches": [
+      38
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF38-39"
+  },
+  {
+    "id": "C06",
+    "source": "LF",
+    "quote_fr": "limit\u00e9 \u00e0 un niveau fix\u00e9 \u00e0 20% de l\u2019exc\u00e9dent brut d\u2019exploitation",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF39-40",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "C06",
+    "source": "LF",
+    "quote_fr": "major\u00e9 de trois (3) points",
+    "independent_full_page_text_matches": [
+      40
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF39-40"
+  },
+  {
+    "id": "C06",
+    "source": "LF",
+    "quote_fr": "ait \u00e9t\u00e9 enti\u00e8rement lib\u00e9r\u00e9",
+    "independent_full_page_text_matches": [
+      40
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF39-40"
+  },
+  {
+    "id": "C06",
+    "source": "LF",
+    "quote_fr": "dans la limite de cinq (5) ans",
+    "independent_full_page_text_matches": [
+      40
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF39-40"
+  },
+  {
+    "id": "C07",
+    "source": "LF",
+    "quote_fr": "jusqu\u2019au cinqui\u00e8me exercice qui suit l\u2019exercice d\u00e9ficitaire",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF41,43",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "C07",
+    "source": "LF",
+    "quote_fr": "Les amortissements r\u00e9guli\u00e8rement comptabilis\u00e9s en p\u00e9riode d\u00e9ficitaire",
+    "independent_full_page_text_matches": [
+      43
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF41,43"
+  },
+  {
+    "id": "C07",
+    "source": "LF",
+    "quote_fr": "ne peuvent pas \u00eatre report\u00e9s",
+    "independent_full_page_text_matches": [
+      43
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF41,43"
+  },
+  {
+    "id": "C08",
+    "source": "LF",
+    "quote_fr": "Le taux du minimum de perception est fix\u00e9 \u00e0 1%.",
+    "independent_full_page_text_matches": [
+      47
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF47"
+  },
+  {
+    "id": "C08",
+    "source": "LF",
+    "quote_fr": "le montant total des produits",
+    "independent_full_page_text_matches": [
+      47,
+      57
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF47"
+  },
+  {
+    "id": "C08",
+    "source": "LF",
+    "quote_fr": "des produits financiers",
+    "independent_full_page_text_matches": [
+      47,
+      57
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF47"
+  },
+  {
+    "id": "C08",
+    "source": "LF",
+    "quote_fr": "des produits hors activit\u00e9 ordinaire",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF47",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "C09",
+    "source": "LF",
+    "quote_fr": "au plus tard le 15 mars, le 15 juin, le 15 septembre et le 15 d\u00e9cembre",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF47-48",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "C09",
+    "source": "LF",
+    "quote_fr": "au plus tard le 15 mars de la m\u00eame ann\u00e9e",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF47-48",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "C09",
+    "source": "LF",
+    "quote_fr": "La liquidation provisoire est faite",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF47-48",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "C09",
+    "source": "LF",
+    "quote_fr": "demeure acquis au Tr\u00e9sor",
+    "independent_full_page_text_matches": [
+      47
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF47-48"
+  },
+  {
+    "id": "C10",
+    "source": "LF",
+    "quote_fr": "dans les quatre mois de la cl\u00f4ture de l\u2019exercice",
+    "independent_full_page_text_matches": [
+      47
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF47-48;CAL1,4"
+  },
+  {
+    "id": "C11",
+    "source": "LF",
+    "quote_fr": "dans les quinze jours du d\u00e9but de leurs op\u00e9rations",
+    "independent_full_page_text_matches": [
+      66
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF66-67"
+  },
+  {
+    "id": "C12",
+    "source": "LF",
+    "quote_fr": "une p\u00e9nalit\u00e9 de 50% du montant d\u00fb",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF47",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "C13",
+    "source": "LF",
+    "quote_fr": "une p\u00e9nalit\u00e9 de 10% du montant \u00e0 d\u00e9clarer",
+    "independent_full_page_text_matches": [
+      66
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF66"
+  },
+  {
+    "id": "C14",
+    "source": "LF",
+    "quote_fr": "0,5% par jour de retard sans exc\u00e9der 20%",
+    "independent_full_page_text_matches": [
+      71
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF71-72"
+  },
+  {
+    "id": "I01",
+    "source": "LF",
+    "quote_fr": "CHAPITRE 2 : IMPOTS SUR LES REVENUS",
+    "independent_full_page_text_matches": [
+      55
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF30,55-66"
+  },
+  {
+    "id": "I02",
+    "source": "LF",
+    "quote_fr": "Le taux de l\u2019imp\u00f4t sur les b\u00e9n\u00e9fices d\u2019affaires est fix\u00e9 \u00e0 30%.",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF57",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I02",
+    "source": "LF",
+    "quote_fr": "inf\u00e9rieure \u00e0 mille francs",
+    "independent_full_page_text_matches": [
+      57
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF57"
+  },
+  {
+    "id": "I02",
+    "source": "LF",
+    "quote_fr": "est fix\u00e9 \u00e0 1,5%",
+    "independent_full_page_text_matches": [
+      57,
+      61
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF57"
+  },
+  {
+    "id": "I03",
+    "source": "LF",
+    "quote_fr": "le report d\u00e9ficitaire ne peut s\u2019\u00e9tendre que jusqu\u2019au troisi\u00e8me exercice",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF56-57",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I03",
+    "source": "LF",
+    "quote_fr": "selon le mode lin\u00e9aire",
+    "independent_full_page_text_matches": [
+      56
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF56-57"
+  },
+  {
+    "id": "I03",
+    "source": "LF",
+    "quote_fr": "les provisions pour cr\u00e9ances douteuses ne sont pas d\u00e9ductibles",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF56-57",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I03",
+    "source": "LF",
+    "quote_fr": "ne peuvent pas b\u00e9n\u00e9ficier du cr\u00e9dit",
+    "independent_full_page_text_matches": [
+      56
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF56-57"
+  },
+  {
+    "id": "I03",
+    "source": "LF",
+    "quote_fr": "\u00e0 hauteur de 50%",
+    "independent_full_page_text_matches": [
+      39,
+      57
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF56-57"
+  },
+  {
+    "id": "I04",
+    "source": "LF",
+    "quote_fr": "sont exclus du r\u00e9gime du forfait",
+    "independent_full_page_text_matches": [
+      57
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF57-58"
+  },
+  {
+    "id": "I04",
+    "source": "LF",
+    "quote_fr": "cessent imm\u00e9diatement",
+    "independent_full_page_text_matches": [
+      57
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF57-58"
+  },
+  {
+    "id": "I04",
+    "source": "LF",
+    "quote_fr": "deux exercices successifs",
+    "independent_full_page_text_matches": [
+      57
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF57-58"
+  },
+  {
+    "id": "I05",
+    "source": "LF",
+    "quote_fr": "une absence continue d\u2019une dur\u00e9e sup\u00e9rieure \u00e0 vingt-quatre mois",
+    "independent_full_page_text_matches": [
+      56
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF56"
+  },
+  {
+    "id": "I05",
+    "source": "LF",
+    "quote_fr": "au moins une ann\u00e9e",
+    "independent_full_page_text_matches": [
+      56
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF56"
+  },
+  {
+    "id": "I05",
+    "source": "LF",
+    "quote_fr": "les personnes physiques qui sont d\u00e9sign\u00e9es",
+    "independent_full_page_text_matches": [
+      56
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF56"
+  },
+  {
+    "id": "I06",
+    "source": "LF",
+    "quote_fr": "Ce taux est fix\u00e9 \u00e0 35% pour les revenus occultes.",
+    "independent_full_page_text_matches": [
+      61
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF59-61"
+  },
+  {
+    "id": "I06",
+    "source": "LF",
+    "quote_fr": "est fix\u00e9 \u00e0 15%",
+    "independent_full_page_text_matches": [
+      57,
+      61
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF59-61"
+  },
+  {
+    "id": "I07",
+    "source": "LF",
+    "quote_fr": "au plus tard trois (3) mois apr\u00e8s la d\u00e9cision de leur distribution",
+    "independent_full_page_text_matches": [
+      60
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF60-61"
+  },
+  {
+    "id": "I08",
+    "source": "LF",
+    "quote_fr": "9% pour les revenus locatifs",
+    "independent_full_page_text_matches": [
+      62
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF61-63"
+  },
+  {
+    "id": "I08",
+    "source": "LF",
+    "quote_fr": "10% pour les plus-values",
+    "independent_full_page_text_matches": [
+      62
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF61-63"
+  },
+  {
+    "id": "I08",
+    "source": "LF",
+    "quote_fr": "montant des loyers bruts",
+    "independent_full_page_text_matches": [
+      62
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF61-63"
+  },
+  {
+    "id": "I09",
+    "source": "LF",
+    "quote_fr": "la r\u00e9sidence principale d\u00e9tenue par le c\u00e9dant depuis au moins 5 ans",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF62",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I10",
+    "source": "LF",
+    "quote_fr": "au plus tard le 15 mai, le 20 ao\u00fbt et le 15 novembre",
+    "independent_full_page_text_matches": [
+      63
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF62-63"
+  },
+  {
+    "id": "I10",
+    "source": "LF",
+    "quote_fr": "au plus tard le 15 mars",
+    "independent_full_page_text_matches": [
+      47,
+      62
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF62-63"
+  },
+  {
+    "id": "I10",
+    "source": "LF",
+    "quote_fr": "dans les trois mois de l\u2019entr\u00e9e en jouissance du bail",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF62-63",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I10",
+    "source": "LF",
+    "quote_fr": "au plus tard dans les trois (3) mois",
+    "independent_full_page_text_matches": [
+      63
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF62-63"
+  },
+  {
+    "id": "I11",
+    "source": "LF",
+    "quote_fr": "une amende \u00e9gale au montant des droits en principal",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF63",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I12",
+    "source": "LF",
+    "quote_fr": "les pensions de retraite",
+    "independent_full_page_text_matches": [
+      63
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF63-64"
+  },
+  {
+    "id": "I13",
+    "source": "LF",
+    "quote_fr": "le centre de leurs int\u00e9r\u00eats vitaux",
+    "independent_full_page_text_matches": [
+      64
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64"
+  },
+  {
+    "id": "I14",
+    "source": "LF",
+    "quote_fr": "une d\u00e9duction de 20% est appliqu\u00e9e au montant net",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I14",
+    "source": "LF",
+    "quote_fr": "logement : 20%",
+    "independent_full_page_text_matches": [
+      64
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65"
+  },
+  {
+    "id": "I14",
+    "source": "LF",
+    "quote_fr": "gardiennage : 7%",
+    "independent_full_page_text_matches": [
+      64
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65"
+  },
+  {
+    "id": "I14",
+    "source": "LF",
+    "quote_fr": "gaz : 5%",
+    "independent_full_page_text_matches": [
+      64
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65"
+  },
+  {
+    "id": "I14",
+    "source": "LF",
+    "quote_fr": "t\u00e9l\u00e9phone : 2%",
+    "independent_full_page_text_matches": [
+      64
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65"
+  },
+  {
+    "id": "I14",
+    "source": "LF",
+    "quote_fr": "voiture : 3%",
+    "independent_full_page_text_matches": [
+      64
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65"
+  },
+  {
+    "id": "I14",
+    "source": "LF",
+    "quote_fr": "nourriture : 20%",
+    "independent_full_page_text_matches": [
+      64
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65"
+  },
+  {
+    "id": "I15",
+    "source": "LF",
+    "quote_fr": "jusqu\u2019\u00e0 un maximum de 6,5 parts",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I15",
+    "source": "LF",
+    "quote_fr": "1 part",
+    "independent_full_page_text_matches": [
+      65
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65"
+  },
+  {
+    "id": "I15",
+    "source": "LF",
+    "quote_fr": "2 parts",
+    "independent_full_page_text_matches": [
+      65
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65"
+  },
+  {
+    "id": "I15",
+    "source": "LF",
+    "quote_fr": "2,5 parts",
+    "independent_full_page_text_matches": [
+      65
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65"
+  },
+  {
+    "id": "I15",
+    "source": "LF",
+    "quote_fr": "une demi-part par enfant",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I15",
+    "source": "LF",
+    "quote_fr": "pendant les deux ann\u00e9es",
+    "independent_full_page_text_matches": [
+      65
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF64-65"
+  },
+  {
+    "id": "I16",
+    "source": "LF",
+    "quote_fr": "report\u00e9e \u00e0 25 ans pour les enfants poursuivant leurs \u00e9tudes",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-66",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I16",
+    "source": "LF",
+    "quote_fr": "moins de 21 ans",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-66",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I16",
+    "source": "LF",
+    "quote_fr": "dans la limite de deux",
+    "independent_full_page_text_matches": [
+      65
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-66"
+  },
+  {
+    "id": "I16",
+    "source": "LF",
+    "quote_fr": "au 1er janvier",
+    "independent_full_page_text_matches": [
+      65,
+      105
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-66"
+  },
+  {
+    "id": "I16",
+    "source": "LF",
+    "quote_fr": "au 31 d\u00e9cembre",
+    "independent_full_page_text_matches": [
+      65,
+      77
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-66"
+  },
+  {
+    "id": "I17",
+    "source": "LF",
+    "quote_fr": "1 200 F CFA pour la fraction comprise entre 0 et 615 000",
+    "independent_full_page_text_matches": [
+      65
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-66"
+  },
+  {
+    "id": "I17",
+    "source": "LF",
+    "quote_fr": "10% pour la fraction comprise entre 615 001",
+    "independent_full_page_text_matches": [
+      65
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-66"
+  },
+  {
+    "id": "I17",
+    "source": "LF",
+    "quote_fr": "15% pour la fraction comprise entre 1 500 001",
+    "independent_full_page_text_matches": [
+      65
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-66"
+  },
+  {
+    "id": "I17",
+    "source": "LF",
+    "quote_fr": "20% pour la fraction comprise entre 3 500 001",
+    "independent_full_page_text_matches": [
+      65
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-66"
+  },
+  {
+    "id": "I17",
+    "source": "LF",
+    "quote_fr": "30% pour la fraction comprise entre 5 000 001",
+    "independent_full_page_text_matches": [
+      65
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-66"
+  },
+  {
+    "id": "I18",
+    "source": "LF",
+    "quote_fr": "si le b\u00e9n\u00e9ficiaire dispose d\u2019une seule source de traitements et salaires",
+    "independent_full_page_text_matches": [
+      66
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-67"
+  },
+  {
+    "id": "I18",
+    "source": "LF",
+    "quote_fr": "une d\u00e9claration annuelle des salaires",
+    "independent_full_page_text_matches": [
+      66
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-67"
+  },
+  {
+    "id": "I18",
+    "source": "LF",
+    "quote_fr": "Au cours de l\u2019ann\u00e9e 2026",
+    "independent_full_page_text_matches": [
+      66
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-67"
+  },
+  {
+    "id": "I19",
+    "source": "LF",
+    "quote_fr": "la liste de ses fournisseurs ou de ses sources d\u2019approvisionnement",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF57-59",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I19",
+    "source": "LF",
+    "quote_fr": "d\u00e9claration n\u00b0 294",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF57-59",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "I19",
+    "source": "LF",
+    "quote_fr": "chaque trimestre",
+    "independent_full_page_text_matches": [
+      29,
+      58
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF57-59"
+  },
+  {
+    "id": "I20",
+    "source": "LF",
+    "quote_fr": "une amende de 500 000 FCFA",
+    "independent_full_page_text_matches": [
+      53,
+      58
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF58-59"
+  },
+  {
+    "id": "I20",
+    "source": "LF",
+    "quote_fr": "une amende de 100 000",
+    "independent_full_page_text_matches": [
+      54,
+      58
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF58-59"
+  },
+  {
+    "id": "T01",
+    "source": "LF",
+    "quote_fr": "La condition de d\u00e9pendance ou de contr\u00f4le n\u2019est pas exig\u00e9e",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF43-44",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "T02",
+    "source": "LF",
+    "quote_fr": "sup\u00e9rieur ou \u00e9gal \u00e0 500.000.000 FCFA",
+    "independent_full_page_text_matches": [
+      44
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF44-45"
+  },
+  {
+    "id": "T03",
+    "source": "LF",
+    "quote_fr": "une description g\u00e9n\u00e9rale de la politique de prix de transfert du groupe",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF44-45",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "T04",
+    "source": "LF",
+    "quote_fr": "lorsque le montant agr\u00e9g\u00e9 par nature des transactions exc\u00e8de 50 000 000 de FCFA",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF44-45",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "T05",
+    "source": "LF",
+    "quote_fr": "\u00e0 la date d\u2019engagement de la v\u00e9rification de comptabilit\u00e9",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "T06",
+    "source": "LF",
+    "quote_fr": "dans un d\u00e9lai de six (6) mois",
+    "independent_full_page_text_matches": [
+      45
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45"
+  },
+  {
+    "id": "T06",
+    "source": "LF",
+    "quote_fr": "suivant la date limite de d\u00e9p\u00f4t de la d\u00e9claration de r\u00e9sultat",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "T06",
+    "source": "LF",
+    "quote_fr": "une d\u00e9claration pays par pays",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "T07",
+    "source": "LF",
+    "quote_fr": "les informations agr\u00e9g\u00e9es sur le chiffre d\u2019affaires",
+    "independent_full_page_text_matches": [
+      45
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45"
+  },
+  {
+    "id": "T08",
+    "source": "LF",
+    "quote_fr": "une amende de 25 000 000 de FCFA",
+    "independent_full_page_text_matches": [
+      45
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45-46"
+  },
+  {
+    "id": "T08",
+    "source": "LF",
+    "quote_fr": "une amende de 5 000 000",
+    "independent_full_page_text_matches": [
+      45
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45-46"
+  },
+  {
+    "id": "T08",
+    "source": "LF",
+    "quote_fr": "huit (8) jours",
+    "independent_full_page_text_matches": [
+      45
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45-46"
+  },
+  {
+    "id": "T08",
+    "source": "LF",
+    "quote_fr": "La production tardive",
+    "independent_full_page_text_matches": [
+      45
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45-46"
+  },
+  {
+    "id": "T09",
+    "source": "LF",
+    "quote_fr": "la remise en cause des prix de transfert pratiqu\u00e9s",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "T10",
+    "source": "LF",
+    "quote_fr": "ne peut \u00eatre inf\u00e9rieur \u00e0 un mois",
+    "independent_full_page_text_matches": [
+      45
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45-46"
+  },
+  {
+    "id": "T10",
+    "source": "LF",
+    "quote_fr": "une dur\u00e9e de trois mois",
+    "independent_full_page_text_matches": [
+      45
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45-46"
+  },
+  {
+    "id": "T10",
+    "source": "LF",
+    "quote_fr": "un d\u00e9lai de trente jours",
+    "independent_full_page_text_matches": [
+      45
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45-46"
+  },
+  {
+    "id": "T11",
+    "source": "LF",
+    "quote_fr": "Il existe cinq (5) m\u00e9thodes de fixation du prix de pleine concurrence",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF46",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "T12",
+    "source": "LF",
+    "quote_fr": "une dur\u00e9e maximale de trois ans (3) renouvelable",
+    "independent_full_page_text_matches": [
+      46
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF46"
+  },
+  {
+    "id": "T12",
+    "source": "LF",
+    "quote_fr": "10 millions de francs CFA",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF46",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "T13",
+    "source": "LF",
+    "quote_fr": "la fin de la sixi\u00e8me ann\u00e9e qui suit celle au titre de laquelle l\u2019imposition est due",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF45-46",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "X01",
+    "source": "LF",
+    "quote_fr": "celles qui y sont immatricul\u00e9es ou qui y ont leur lieu de direction effective",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF31-34",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "X02",
+    "source": "LF",
+    "quote_fr": "plus de cent quatre-vingt-trois (183) jours",
+    "independent_full_page_text_matches": [
+      31
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF31-33"
+  },
+  {
+    "id": "X02",
+    "source": "LF",
+    "quote_fr": "sup\u00e9rieure \u00e0 trois (3) mois",
+    "independent_full_page_text_matches": [
+      31
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF31-33"
+  },
+  {
+    "id": "X02",
+    "source": "LF",
+    "quote_fr": "douze mois",
+    "independent_full_page_text_matches": [
+      31,
+      46
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF31-33"
+  },
+  {
+    "id": "X03",
+    "source": "LF",
+    "quote_fr": "ne rev\u00eat pas un caract\u00e8re pr\u00e9paratoire ou auxiliaire",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF32-33",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "X04",
+    "source": "LF",
+    "quote_fr": "ne suffit pas, en lui-m\u00eame",
+    "independent_full_page_text_matches": [
+      32
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF32-33"
+  },
+  {
+    "id": "X04",
+    "source": "LF",
+    "quote_fr": "plus de 50 %",
+    "independent_full_page_text_matches": [
+      32,
+      62,
+      91
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF32-33"
+  },
+  {
+    "id": "X05",
+    "source": "LF",
+    "quote_fr": "au taux de 20%.",
+    "independent_full_page_text_matches": [
+      47
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF47"
+  },
+  {
+    "id": "X05",
+    "source": "LF",
+    "quote_fr": "pour l\u2019acquisition ou la location de logiciels",
+    "independent_full_page_text_matches": [
+      47
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF47"
+  },
+  {
+    "id": "X06",
+    "source": "LF",
+    "quote_fr": "dans la limite de l\u2019imp\u00f4t qui aurait \u00e9t\u00e9 d\u00fb",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF33-34",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "X06",
+    "source": "LF",
+    "quote_fr": "pendant 5 ans",
+    "independent_full_page_text_matches": [
+      34
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF33-34"
+  },
+  {
+    "id": "X07",
+    "source": "LF",
+    "quote_fr": "Ce pourcentage forfaitaire est fix\u00e9 \u00e0 22 %",
+    "independent_full_page_text_matches": [
+      52
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF51-54"
+  },
+  {
+    "id": "X08",
+    "source": "LF",
+    "quote_fr": "au plus tard le quinze (15) du deuxi\u00e8me mois",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF51-54",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "X09",
+    "source": "LF",
+    "quote_fr": "sans exc\u00e9der 50%",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF53-54,71",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "X09",
+    "source": "LF",
+    "quote_fr": "100.000",
+    "independent_full_page_text_matches": [
+      5,
+      8,
+      9,
+      16,
+      18,
+      19,
+      21,
+      24,
+      25,
+      26,
+      27,
+      53,
+      54,
+      58,
+      66,
+      71,
+      79,
+      81,
+      82,
+      83,
+      88,
+      89,
+      90,
+      91,
+      92,
+      97,
+      98,
+      99
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF53-54,71"
+  },
+  {
+    "id": "X09",
+    "source": "LF",
+    "quote_fr": "mise en demeure de 8 jours",
+    "independent_full_page_text_matches": [
+      53
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF53-54,71"
+  },
+  {
+    "id": "X09",
+    "source": "LF",
+    "quote_fr": "100 %",
+    "independent_full_page_text_matches": [
+      5,
+      7,
+      8,
+      9,
+      14,
+      16,
+      18,
+      19,
+      21,
+      24,
+      25,
+      26,
+      27,
+      41,
+      42,
+      46,
+      53,
+      54,
+      55,
+      58,
+      66,
+      71,
+      74,
+      77,
+      78,
+      79,
+      81,
+      82,
+      83,
+      84,
+      85,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      106,
+      107
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF53-54,71"
+  },
+  {
+    "id": "X09",
+    "source": "LF",
+    "quote_fr": "1 % par jour ouvrable",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF53-54,71",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "X09",
+    "source": "LF",
+    "quote_fr": "500.000FCFA",
+    "independent_full_page_text_matches": [
+      19,
+      53,
+      58,
+      79,
+      81,
+      82,
+      83,
+      88,
+      97
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF53-54,71"
+  },
+  {
+    "id": "X10",
+    "source": "LF",
+    "quote_fr": "au cours des 365 jours qui pr\u00e9c\u00e8dent",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF60-62",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "X10",
+    "source": "LF",
+    "quote_fr": "d\u2019au moins 10% du capital",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF60-62",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "V01",
+    "source": "LF",
+    "quote_fr": "fix\u00e9e \u00e0 18% du prix total hors taxes",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CGI299,309;LF106",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "V02",
+    "source": "CAL",
+    "quote_fr": "18%, 5%, 0%",
+    "independent_full_page_text_matches": [
+      1
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CAL2;LF77-78"
+  },
+  {
+    "id": "V03",
+    "source": "CGI",
+    "quote_fr": "La base d\u2019imposition est arrondie au millier de francs CFA le plus proche.",
+    "independent_full_page_text_matches": [
+      298
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CGI290-292,298-299"
+  },
+  {
+    "id": "V04",
+    "source": "CGI",
+    "quote_fr": "lors de l\u2019encaissement du prix, des acomptes ou avances",
+    "independent_full_page_text_matches": [
+      297
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CGI296-297"
+  },
+  {
+    "id": "V05",
+    "source": "LF",
+    "quote_fr": "un montant exc\u00e9dant 200 000 FCFA",
+    "independent_full_page_text_matches": [
+      77
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF77"
+  },
+  {
+    "id": "V06",
+    "source": "LF",
+    "quote_fr": "au moins vingt (20) jours avant le d\u00e9but des travaux",
+    "independent_full_page_text_matches": [
+      77
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF77-78"
+  },
+  {
+    "id": "V07",
+    "source": "CGI",
+    "quote_fr": "dans les quinze jours qui suivent le d\u00e9but de son activit\u00e9",
+    "independent_full_page_text_matches": [
+      304
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CGI304-305"
+  },
+  {
+    "id": "V08",
+    "source": "CGI",
+    "quote_fr": "dans les quinze jours du mois suivant",
+    "independent_full_page_text_matches": [
+      96,
+      306
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CGI306-307;CAL2"
+  },
+  {
+    "id": "V09",
+    "source": "CGI",
+    "quote_fr": "Les documents comptables doivent \u00eatre conserv\u00e9s pendant une dur\u00e9e de dix ann\u00e9es",
+    "independent_full_page_text_matches": [
+      162,
+      305
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CGI304-306"
+  },
+  {
+    "id": "P01",
+    "source": "LF",
+    "quote_fr": "Caisse Nationale de S\u00e9curit\u00e9 Sociale (CNSS) comme en mati\u00e8re de cotisations sociales.",
+    "independent_full_page_text_matches": [
+      79
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF65-66,79"
+  },
+  {
+    "id": "P02",
+    "source": "LF",
+    "quote_fr": "vingt-cinq mille (25 000) premiers d\u00e9clarants",
+    "independent_full_page_text_matches": [
+      5
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF5-6"
+  },
+  {
+    "id": "P03",
+    "source": "CAL",
+    "quote_fr": "24,28% du salaire brut",
+    "independent_full_page_text_matches": [
+      1
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CAL1-2;LF25p2-3"
+  },
+  {
+    "id": "P03",
+    "source": "CAL",
+    "quote_fr": "2,27% part salariale",
+    "independent_full_page_text_matches": [
+      1
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CAL1-2;LF25p2-3"
+  },
+  {
+    "id": "P03",
+    "source": "CAL",
+    "quote_fr": "4,55 part patronale",
+    "independent_full_page_text_matches": [
+      1
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CAL1-2;LF25p2-3"
+  },
+  {
+    "id": "P04",
+    "source": "LF",
+    "quote_fr": "demeurent ceux fix\u00e9s par les",
+    "independent_full_page_text_matches": [
+      5
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF5-6"
+  },
+  {
+    "id": "F01",
+    "source": "CO",
+    "quote_fr": "Elle peut \u00eatre institu\u00e9e par une personne physique ou morale",
+    "independent_full_page_text_matches": [
+      68
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO25-26,68-69,89,200-201"
+  },
+  {
+    "id": "F02",
+    "source": "SARL",
+    "quote_fr": "Le capital de la soci\u00e9t\u00e9 \u00e0 responsabilit\u00e9 limit\u00e9e est librement fix\u00e9",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "SARL2;CO69-70",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "F02",
+    "source": "SARL",
+    "quote_fr": "cinq mille (5 000) francs CFA",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "SARL2;CO69-70",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "F03",
+    "source": "CO",
+    "quote_fr": "la moiti\u00e9 au moins de leur valeur nominale",
+    "independent_full_page_text_matches": [
+      69,
+      83,
+      212
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO69-70;SARL2-3"
+  },
+  {
+    "id": "F03",
+    "source": "CO",
+    "quote_fr": "deux (2) ans",
+    "independent_full_page_text_matches": [
+      25,
+      69,
+      83,
+      85,
+      96,
+      112,
+      122,
+      123,
+      138,
+      143,
+      152,
+      164,
+      165,
+      174,
+      195,
+      196,
+      211,
+      216,
+      217
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO69-70;SARL2-3"
+  },
+  {
+    "id": "F03",
+    "source": "CO",
+    "quote_fr": "int\u00e9gralement lib\u00e9r\u00e9es",
+    "independent_full_page_text_matches": [
+      69,
+      89,
+      134,
+      137,
+      164,
+      189
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO69-70;SARL2-3"
+  },
+  {
+    "id": "F04",
+    "source": "CO",
+    "quote_fr": "Le capital social minimum est fix\u00e9 \u00e0 dix millions",
+    "independent_full_page_text_matches": [
+      89
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO89,187,200-201"
+  },
+  {
+    "id": "F04",
+    "source": "CO",
+    "quote_fr": "un quart au moins",
+    "independent_full_page_text_matches": [
+      89,
+      134,
+      189,
+      208,
+      212
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO89,187,200-201"
+  },
+  {
+    "id": "F04",
+    "source": "CO",
+    "quote_fr": "trois (3) ans",
+    "independent_full_page_text_matches": [
+      14,
+      15,
+      37,
+      38,
+      47,
+      48,
+      49,
+      53,
+      54,
+      70,
+      75,
+      79,
+      81,
+      89,
+      102,
+      128,
+      134,
+      159,
+      169,
+      189,
+      196
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO89,187,200-201"
+  },
+  {
+    "id": "F04",
+    "source": "CO",
+    "quote_fr": "cent millions (100.000.000)",
+    "independent_full_page_text_matches": [
+      187
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO89,187,200-201"
+  },
+  {
+    "id": "F04",
+    "source": "CO",
+    "quote_fr": "ne peut faire publiquement appel",
+    "independent_full_page_text_matches": [
+      200
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO89,187,200-201"
+  },
+  {
+    "id": "F05",
+    "source": "SARL",
+    "quote_fr": "n\u2019est pas obligatoire",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "SARL1-3",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "F06",
+    "source": "CO",
+    "quote_fr": "Le si\u00e8ge social ne peut pas \u00eatre constitu\u00e9 uniquement par une domiciliation \u00e0 une boite postale.",
+    "independent_full_page_text_matches": [
+      6
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO6-7;ACPCE"
+  },
+  {
+    "id": "F07",
+    "source": "ACPCE",
+    "quote_fr": "Une (1 ) photocopie du NIU personne physique du dirigeant",
+    "independent_full_page_text_matches": [
+      1
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "ACPCEidentity"
+  },
+  {
+    "id": "F08",
+    "source": "ACPCE",
+    "quote_fr": "Une (1 ) attestation de d\u00e9p\u00f4t de capital.",
+    "independent_full_page_text_matches": [
+      1
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "ACPCEconstitutional"
+  },
+  {
+    "id": "F09",
+    "source": "PORT",
+    "quote_fr": "Remplissez le formulaire unique et chargez en ligne les pi\u00e8ces \u00e0 fournir",
+    "independent_full_page_text_matches": [
+      1
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "PORT"
+  },
+  {
+    "id": "F10",
+    "source": "PORT",
+    "quote_fr": "300.000 Francs CFA",
+    "independent_full_page_text_matches": [
+      1
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "PORT"
+  },
+  {
+    "id": "F10",
+    "source": "PORT",
+    "quote_fr": "500.000 francs CFA",
+    "independent_full_page_text_matches": [
+      1
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "PORT"
+  },
+  {
+    "id": "F11",
+    "source": "CO",
+    "quote_fr": "deux (2) ans au plus tard apr\u00e8s sa cr\u00e9ation",
+    "independent_full_page_text_matches": [
+      25
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO25-26"
+  },
+  {
+    "id": "F11",
+    "source": "CO",
+    "quote_fr": "deux (2) ans, non renouvelable",
+    "independent_full_page_text_matches": [
+      25
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO25-26"
+  },
+  {
+    "id": "F12",
+    "source": "CO",
+    "quote_fr": "apr\u00e8s d\u00e9cision de la juridiction comp\u00e9tente",
+    "independent_full_page_text_matches": [
+      25,
+      26
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO25-26"
+  },
+  {
+    "id": "F13",
+    "source": "CO",
+    "quote_fr": "deux des conditions suivantes",
+    "independent_full_page_text_matches": [
+      86,
+      202
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO86-88"
+  },
+  {
+    "id": "F13",
+    "source": "CO",
+    "quote_fr": "125.000.000",
+    "independent_full_page_text_matches": [
+      86,
+      202
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO86-88"
+  },
+  {
+    "id": "F13",
+    "source": "CO",
+    "quote_fr": "250.000.000",
+    "independent_full_page_text_matches": [
+      64,
+      86,
+      202
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO86-88"
+  },
+  {
+    "id": "F13",
+    "source": "CO",
+    "quote_fr": "cinquante (50) personnes",
+    "independent_full_page_text_matches": [
+      86,
+      202
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO86-88"
+  },
+  {
+    "id": "F13",
+    "source": "CO",
+    "quote_fr": "au moins, le dixi\u00e8me",
+    "independent_full_page_text_matches": [
+      34,
+      48,
+      64,
+      86,
+      116,
+      202
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO86-88"
+  },
+  {
+    "id": "F14",
+    "source": "CO",
+    "quote_fr": "dans chaque soci\u00e9t\u00e9 anonyme",
+    "independent_full_page_text_matches": [
+      153
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CO153;LF66-67"
+  },
+  {
+    "id": "O01",
+    "source": "LF",
+    "quote_fr": "Transposition de la Directive",
+    "independent_full_page_text_matches": [
+      30,
+      66
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF30,55-66"
+  },
+  {
+    "id": "O02",
+    "source": "LF",
+    "quote_fr": "les entreprises qui commencent leurs activit\u00e9s au cours des six (6) mois",
+    "independent_full_page_text_matches": [],
+    "read_method": "full source pages + rendered-page check",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF33,46-47",
+    "manual_locator_resolution": "Read in the cited full page/context. Column interleaving or scanned OCR prevents contiguous full-page text match. SARL1-3 and critical Gazette41/43/65/77 also inspected as independent renders."
+  },
+  {
+    "id": "O03",
+    "source": "LF",
+    "quote_fr": "non contraires aux pr\u00e9sentes dispositions",
+    "independent_full_page_text_matches": [
+      114
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF114"
+  },
+  {
+    "id": "C15",
+    "source": "CAL",
+    "quote_fr": "Au plus tard le 15 mai",
+    "independent_full_page_text_matches": [
+      1
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "CAL1,4-5;LF47-48"
+  },
+  {
+    "id": "P05",
+    "source": "LF25",
+    "quote_fr": "cotisations de l\u2019employ\u00e9 :",
+    "independent_full_page_text_matches": [
+      3
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF25p2-3;CAL2;LF5"
+  },
+  {
+    "id": "P05",
+    "source": "LF25",
+    "quote_fr": "20,28%",
+    "independent_full_page_text_matches": [
+      3
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF25p2-3;CAL2;LF5"
+  },
+  {
+    "id": "P05",
+    "source": "LF25",
+    "quote_fr": "4,55%",
+    "independent_full_page_text_matches": [
+      3,
+      7,
+      20
+    ],
+    "read_method": "independent full-page extraction plus contextual page reading",
+    "scope_note": "Locator is not proof of every limb; rule-coverage.json records contextual review.",
+    "source_context_checked": true,
+    "source_page_context": "LF25p2-3;CAL2;LF5"
+  }
+]

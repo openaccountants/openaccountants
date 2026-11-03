@@ -1,0 +1,184 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "base_blob": "457e67f0b642eb9f3c8db1c8ac7407f1e5820acb",
+  "count": 25,
+  "all_units_accounted": true,
+  "rows": [
+    {
+      "id": "O01",
+      "old_sha256": "823766522a60cf3d0f27c02f9e4dfe47b944b6c6590152ef2fc62fab36116ecf",
+      "immutable_body_unit_exact": true,
+      "destination": "Opening notice; Who this applies to",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O02",
+      "old_sha256": "aacabaef61dd4015a9f72889370988a100a90b18a3c5c921f3758907e9a8c579",
+      "immutable_body_unit_exact": true,
+      "destination": "Opening notice; Who this applies to",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O03",
+      "old_sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "immutable_body_unit_exact": true,
+      "destination": "Who this applies to",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O04",
+      "old_sha256": "e39d73cbd6a019680a0602066fe487c48e00ff6e4b74c86d6f35f1ccbc036572",
+      "immutable_body_unit_exact": true,
+      "destination": "Who this applies to",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O05",
+      "old_sha256": "28938e00cf604da9e59a24eeb1e6b52d37e45640ab5753998aa379eeef54c235",
+      "immutable_body_unit_exact": true,
+      "destination": "Who this applies to",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O06",
+      "old_sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "immutable_body_unit_exact": true,
+      "destination": "Rates, bands and thresholds",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O07",
+      "old_sha256": "c14c0787f92d48cc99afc35dd5b59545d009480f81fa2e8a7a8f76ef76b2b95d",
+      "immutable_body_unit_exact": true,
+      "destination": "Rates, bands and thresholds",
+      "review": "Retained or explicitly superseded by cited-text expansion; no dropped rule. O07/O12 tax handoff moved chiefly into The base; old nominal arithmetic replaced with explicit no-par conditional examples."
+    },
+    {
+      "id": "O08",
+      "old_sha256": "b838d78ad9e9465858e36a349c0401d7eb01709b84b54125b395f71f10b4aebe",
+      "immutable_body_unit_exact": true,
+      "destination": "Rates, bands and thresholds",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O09",
+      "old_sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "immutable_body_unit_exact": true,
+      "destination": "The base",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O10",
+      "old_sha256": "8a58cc0c171b3e4324986dc976fa0c54c029320fbf9b7188694b7e8d86e26eab",
+      "immutable_body_unit_exact": true,
+      "destination": "The base",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O11",
+      "old_sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "immutable_body_unit_exact": true,
+      "destination": "Deadlines and filing",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O12",
+      "old_sha256": "81f43c7050b829d3aaa2c0b349267042ec2c1ff054337a2ea141ea7332872b68",
+      "immutable_body_unit_exact": true,
+      "destination": "Deadlines and filing",
+      "review": "Retained or explicitly superseded by cited-text expansion; no dropped rule. O07/O12 tax handoff moved chiefly into The base; old nominal arithmetic replaced with explicit no-par conditional examples."
+    },
+    {
+      "id": "O13",
+      "old_sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "immutable_body_unit_exact": true,
+      "destination": "Penalties and interest",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O14",
+      "old_sha256": "e88fe2a02af79605ee869a57541b9cf0a503859519a226946e693dc32b6649e4",
+      "immutable_body_unit_exact": true,
+      "destination": "Penalties and interest",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O15",
+      "old_sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "immutable_body_unit_exact": true,
+      "destination": "Cross-border points",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O16",
+      "old_sha256": "bc219fd125eaafc65b4d44aaed9eb3478c82848691446de71034bc665a384eb1",
+      "immutable_body_unit_exact": true,
+      "destination": "Cross-border points",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O17",
+      "old_sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "immutable_body_unit_exact": true,
+      "destination": "Two worked examples that recompute",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O18",
+      "old_sha256": "661be3a0d25a461c9b5a9b330c732f4935a55f55d15fd2be66d211da74fdcda8",
+      "immutable_body_unit_exact": true,
+      "destination": "Two worked examples that recompute",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O19",
+      "old_sha256": "03664f8f89f7573ea954627c7d5beecfa58075bc04582dc55e88386f9696087f",
+      "immutable_body_unit_exact": true,
+      "destination": "The base; Two worked examples that recompute",
+      "review": "Retained or explicitly superseded by cited-text expansion; no dropped rule. O07/O12 tax handoff moved chiefly into The base; old nominal arithmetic replaced with explicit no-par conditional examples."
+    },
+    {
+      "id": "O20",
+      "old_sha256": "014873948ede511648043187d9c4c48af3fa3b40bc694a9457b3b8b7d95186d4",
+      "immutable_body_unit_exact": true,
+      "destination": "The base; Two worked examples that recompute",
+      "review": "Retained or explicitly superseded by cited-text expansion; no dropped rule. O07/O12 tax handoff moved chiefly into The base; old nominal arithmetic replaced with explicit no-par conditional examples."
+    },
+    {
+      "id": "O21",
+      "old_sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "immutable_body_unit_exact": true,
+      "destination": "Ask the client first",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O22",
+      "old_sha256": "5472b32c9cb3e917c38e3ff3a09bb952dc34263c5ec589760d45c475722424f0",
+      "immutable_body_unit_exact": true,
+      "destination": "Ask the client first",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O23",
+      "old_sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "immutable_body_unit_exact": true,
+      "destination": "Sources",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O24",
+      "old_sha256": "b9b2e00c5ccbe59c9719377854952bca4fdccdfd02fd97245c5e30bd471a8449",
+      "immutable_body_unit_exact": true,
+      "destination": "Sources",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    },
+    {
+      "id": "O25",
+      "old_sha256": "c51626f1a0167011c8b3cc1b6a338c32210263ac510ee6344ead39074e7403a3",
+      "immutable_body_unit_exact": true,
+      "destination": "Sources",
+      "review": "Actual destination/hold checked in new formation; opening, headings, table, examples, intake and sources retained or explicitly expanded."
+    }
+  ],
+  "new_xb_absent_at_base": true
+}

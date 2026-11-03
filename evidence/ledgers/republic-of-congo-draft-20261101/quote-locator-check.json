@@ -1,0 +1,1085 @@
+{
+  "scope": "Text locator only, not independent legal verification. SARL exceptions visually confirmed on original scan page2; Gazette85 fifth method visually read on46 because text layer omitted line.",
+  "anchors": [
+    {
+      "id": "C01",
+      "quote": "Le taux général de l’impôt sur les sociétés est fixé à 28%.",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C01",
+      "quote": "25% pour les sociétés",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C01",
+      "quote": "28% pour les sociétés",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C01",
+      "quote": "33% pour les personnes morales étrangères",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C01",
+      "quote": "inférieure à 1.000",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C02",
+      "quote": "y compris lorsqu’elles sont unipersonnelles",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C03",
+      "quote": "Les contribuables sont tenus d’arrêter chaque année leurs comptes à la date du 31 décembre",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C04",
+      "quote": "ne pas être payées en espèces pour un montant supérieur ou égal à 200 000 FCFA",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C05",
+      "quote": "à l’exclusion de l’impôt sur les sociétés",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C06",
+      "quote": "limité à un niveau fixé à 20% de l’excédent brut d’exploitation",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C06",
+      "quote": "majoré de trois (3) points",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C06",
+      "quote": "ait été entièrement libéré",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C06",
+      "quote": "dans la limite de cinq (5) ans",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C07",
+      "quote": "jusqu’au cinquième exercice qui suit l’exercice déficitaire",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C07",
+      "quote": "Les amortissements régulièrement comptabilisés en période déficitaire",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C07",
+      "quote": "ne peuvent pas être reportés",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C08",
+      "quote": "Le taux du minimum de perception est fixé à 1%.",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C08",
+      "quote": "le montant total des produits",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C08",
+      "quote": "des produits financiers",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C08",
+      "quote": "des produits hors activité ordinaire",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C09",
+      "quote": "au plus tard le 15 mars, le 15 juin, le 15 septembre et le 15 décembre",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C09",
+      "quote": "au plus tard le 15 mars de la même année",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C09",
+      "quote": "La liquidation provisoire est faite",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C09",
+      "quote": "demeure acquis au Trésor",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C10",
+      "quote": "dans les quatre mois de la clôture de l’exercice",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C11",
+      "quote": "dans les quinze jours du début de leurs opérations",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C12",
+      "quote": "une pénalité de 50% du montant dû",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C13",
+      "quote": "une pénalité de 10% du montant à déclarer",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C14",
+      "quote": "0,5% par jour de retard sans excéder 20%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I01",
+      "quote": "CHAPITRE 2 : IMPOTS SUR LES REVENUS",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I02",
+      "quote": "Le taux de l’impôt sur les bénéfices d’affaires est fixé à 30%.",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I02",
+      "quote": "inférieure à mille francs",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I02",
+      "quote": "est fixé à 1,5%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I03",
+      "quote": "le report déficitaire ne peut s’étendre que jusqu’au troisième exercice",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I03",
+      "quote": "selon le mode linéaire",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I03",
+      "quote": "les provisions pour créances douteuses ne sont pas déductibles",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I03",
+      "quote": "ne peuvent pas bénéficier du crédit",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I03",
+      "quote": "à hauteur de 50%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I04",
+      "quote": "sont exclus du régime du forfait",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I04",
+      "quote": "cessent immédiatement",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I04",
+      "quote": "deux exercices successifs",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I05",
+      "quote": "une absence continue d’une durée supérieure à vingt-quatre mois",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I05",
+      "quote": "au moins une année",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I05",
+      "quote": "les personnes physiques qui sont désignées",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I06",
+      "quote": "Ce taux est fixé à 35% pour les revenus occultes.",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I06",
+      "quote": "est fixé à 15%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I07",
+      "quote": "au plus tard trois (3) mois après la décision de leur distribution",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I08",
+      "quote": "9% pour les revenus locatifs",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I08",
+      "quote": "10% pour les plus-values",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I08",
+      "quote": "montant des loyers bruts",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I09",
+      "quote": "la résidence principale détenue par le cédant depuis au moins 5 ans",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I10",
+      "quote": "au plus tard le 15 mai, le 20 août et le 15 novembre",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I10",
+      "quote": "au plus tard le 15 mars",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I10",
+      "quote": "dans les trois mois de l’entrée en jouissance du bail",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I10",
+      "quote": "au plus tard dans les trois (3) mois",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I11",
+      "quote": "une amende égale au montant des droits en principal",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I12",
+      "quote": "les pensions de retraite",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I13",
+      "quote": "le centre de leurs intérêts vitaux",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I14",
+      "quote": "une déduction de 20% est appliquée au montant net",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I14",
+      "quote": "logement : 20%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I14",
+      "quote": "gardiennage : 7%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I14",
+      "quote": "gaz : 5%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I14",
+      "quote": "téléphone : 2%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I14",
+      "quote": "voiture : 3%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I14",
+      "quote": "nourriture : 20%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I15",
+      "quote": "jusqu’à un maximum de 6,5 parts",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I15",
+      "quote": "1 part",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I15",
+      "quote": "2 parts",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I15",
+      "quote": "2,5 parts",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I15",
+      "quote": "une demi-part par enfant",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I15",
+      "quote": "pendant les deux années",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I16",
+      "quote": "reportée à 25 ans pour les enfants poursuivant leurs études",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I16",
+      "quote": "moins de 21 ans",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I16",
+      "quote": "dans la limite de deux",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I16",
+      "quote": "au 1er janvier",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I16",
+      "quote": "au 31 décembre",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I17",
+      "quote": "1 200 F CFA pour la fraction comprise entre 0 et 615 000",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I17",
+      "quote": "10% pour la fraction comprise entre 615 001",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I17",
+      "quote": "15% pour la fraction comprise entre 1 500 001",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I17",
+      "quote": "20% pour la fraction comprise entre 3 500 001",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I17",
+      "quote": "30% pour la fraction comprise entre 5 000 001",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I18",
+      "quote": "si le bénéficiaire dispose d’une seule source de traitements et salaires",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I18",
+      "quote": "une déclaration annuelle des salaires",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I18",
+      "quote": "Au cours de l’année 2026",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I19",
+      "quote": "la liste de ses fournisseurs ou de ses sources d’approvisionnement",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I19",
+      "quote": "déclaration n° 294",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I19",
+      "quote": "chaque trimestre",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I20",
+      "quote": "une amende de 500 000 FCFA",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "I20",
+      "quote": "une amende de 100 000",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T01",
+      "quote": "La condition de dépendance ou de contrôle n’est pas exigée",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T02",
+      "quote": "supérieur ou égal à 500.000.000 FCFA",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T03",
+      "quote": "une description générale de la politique de prix de transfert du groupe",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T04",
+      "quote": "lorsque le montant agrégé par nature des transactions excède 50 000 000 de FCFA",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T05",
+      "quote": "à la date d’engagement de la vérification de comptabilité",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T06",
+      "quote": "dans un délai de six (6) mois",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T06",
+      "quote": "suivant la date limite de dépôt de la déclaration de résultat",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T06",
+      "quote": "une déclaration pays par pays",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T07",
+      "quote": "les informations agrégées sur le chiffre d’affaires",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T08",
+      "quote": "une amende de 25 000 000 de FCFA",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T08",
+      "quote": "une amende de 5 000 000",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T08",
+      "quote": "huit (8) jours",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T08",
+      "quote": "La production tardive",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T09",
+      "quote": "la remise en cause des prix de transfert pratiqués",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T10",
+      "quote": "ne peut être inférieur à un mois",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T10",
+      "quote": "une durée de trois mois",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T10",
+      "quote": "un délai de trente jours",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T11",
+      "quote": "Il existe cinq (5) méthodes de fixation du prix de pleine concurrence",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T12",
+      "quote": "une durée maximale de trois ans (3) renouvelable",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T12",
+      "quote": "10 millions de francs CFA",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "T13",
+      "quote": "la fin de la sixième année qui suit celle au titre de laquelle l’imposition est due",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X01",
+      "quote": "celles qui y sont immatriculées ou qui y ont leur lieu de direction effective",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X02",
+      "quote": "plus de cent quatre-vingt-trois (183) jours",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X02",
+      "quote": "supérieure à trois (3) mois",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X02",
+      "quote": "douze mois",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X03",
+      "quote": "ne revêt pas un caractère préparatoire ou auxiliaire",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X04",
+      "quote": "ne suffit pas, en lui-même",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X04",
+      "quote": "plus de 50 %",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X05",
+      "quote": "au taux de 20%.",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X05",
+      "quote": "pour l’acquisition ou la location de logiciels",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X06",
+      "quote": "dans la limite de l’impôt qui aurait été dû",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X06",
+      "quote": "pendant 5 ans",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X07",
+      "quote": "Ce pourcentage forfaitaire est fixé à 22 %",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X08",
+      "quote": "au plus tard le quinze (15) du deuxième mois",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X09",
+      "quote": "sans excéder 50%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X09",
+      "quote": "100.000",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X09",
+      "quote": "mise en demeure de 8 jours",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X09",
+      "quote": "100 %",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X09",
+      "quote": "1 % par jour ouvrable",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X09",
+      "quote": "500.000FCFA",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X10",
+      "quote": "au cours des 365 jours qui précèdent",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "X10",
+      "quote": "d’au moins 10% du capital",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "V01",
+      "quote": "fixée à 18% du prix total hors taxes",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "V02",
+      "quote": "18%, 5%, 0%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "V03",
+      "quote": "La base d’imposition est arrondie au millier de francs CFA le plus proche.",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "V04",
+      "quote": "lors de l’encaissement du prix, des acomptes ou avances",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "V05",
+      "quote": "un montant excédant 200 000 FCFA",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "V06",
+      "quote": "au moins vingt (20) jours avant le début des travaux",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "V07",
+      "quote": "dans les quinze jours qui suivent le début de son activité",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "V08",
+      "quote": "dans les quinze jours du mois suivant",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "V09",
+      "quote": "Les documents comptables doivent être conservés pendant une durée de dix années",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "P01",
+      "quote": "Caisse Nationale de Sécurité Sociale (CNSS) comme en matière de cotisations sociales.",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "P02",
+      "quote": "vingt-cinq mille (25 000) premiers déclarants",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "P03",
+      "quote": "24,28% du salaire brut",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "P03",
+      "quote": "2,27% part salariale",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "P03",
+      "quote": "4,55 part patronale",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "P04",
+      "quote": "demeurent ceux fixés par les",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F01",
+      "quote": "Elle peut être instituée par une personne physique ou morale",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F02",
+      "quote": "Le capital de la société à responsabilité limitée est librement fixé",
+      "normalized_text_match": false,
+      "visual_read_page": 2
+    },
+    {
+      "id": "F02",
+      "quote": "cinq mille (5 000) francs CFA",
+      "normalized_text_match": false,
+      "visual_read_page": 2
+    },
+    {
+      "id": "F03",
+      "quote": "la moitié au moins de leur valeur nominale",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F03",
+      "quote": "deux (2) ans",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F03",
+      "quote": "intégralement libérées",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F04",
+      "quote": "Le capital social minimum est fixé à dix millions",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F04",
+      "quote": "un quart au moins",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F04",
+      "quote": "trois (3) ans",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F04",
+      "quote": "cent millions (100.000.000)",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F04",
+      "quote": "ne peut faire publiquement appel",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F05",
+      "quote": "n’est pas obligatoire",
+      "normalized_text_match": false,
+      "visual_read_page": 2
+    },
+    {
+      "id": "F06",
+      "quote": "Le siège social ne peut pas être constitué uniquement par une domiciliation à une boite postale.",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F07",
+      "quote": "Une (1 ) photocopie du NIU personne physique du dirigeant",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F08",
+      "quote": "Une (1 ) attestation de dépôt de capital.",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F09",
+      "quote": "Remplissez le formulaire unique et chargez en ligne les pièces à fournir",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F10",
+      "quote": "300.000 Francs CFA",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F10",
+      "quote": "500.000 francs CFA",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F11",
+      "quote": "deux (2) ans au plus tard après sa création",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F11",
+      "quote": "deux (2) ans, non renouvelable",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F12",
+      "quote": "après décision de la juridiction compétente",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F13",
+      "quote": "deux des conditions suivantes",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F13",
+      "quote": "125.000.000",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F13",
+      "quote": "250.000.000",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F13",
+      "quote": "cinquante (50) personnes",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F13",
+      "quote": "au moins, le dixième",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "F14",
+      "quote": "dans chaque société anonyme",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "O01",
+      "quote": "Transposition de la Directive",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "O02",
+      "quote": "les entreprises qui commencent leurs activités au cours des six (6) mois",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "O03",
+      "quote": "non contraires aux présentes dispositions",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "C15",
+      "quote": "Au plus tard le 15 mai",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "P05",
+      "quote": "cotisations de l’employé :",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "P05",
+      "quote": "20,28%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    },
+    {
+      "id": "P05",
+      "quote": "4,55%",
+      "normalized_text_match": true,
+      "visual_read_page": null
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "LF",
+    "title": "Finance Act 42-2025, official gazette special 3-2026",
+    "official_url": "https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf",
+    "local_cache_filename": "jo-finance2026.pdf",
+    "sha256": "73c97ffedfd8381a8b1bae1efe708a002d363b7455eadbd25bec2b014179347d",
+    "bytes": 3148528,
+    "read_on": "2026-11-01",
+    "read_scope": "Enacted initial2026 law: cover; art5; art47 replacement CGI2–11,15–19,21,25,42,45–49,69–86A,86C–G,92–92E,93–99,102,104–110A,111C–116I,128–131(excerpts through part6); amendments374ter and VAT24/29; state invoice rule7.2.4; final arts61–62. Focused provisions with neighbors, not all fiscal schedules or all116pages read.",
+    "status": "fetched and portions stated read; not blanket currentness verification"
+  },
+  {
+    "id": "CGI",
+    "title": "Ministry-hosted CGI Tome I, posted 28 March 2021",
+    "official_url": "https://www.finances.gouv.cg/sites/default/files/documents/CGI%20Tome%20I.pdf",
+    "local_cache_filename": "cgi1-2021.pdf",
+    "sha256": "4e4cb79135782817fc26c18e0c8418c789888564b9576e92493676ecb7ff1f52",
+    "bytes": 2689790,
+    "read_on": "2026-11-01",
+    "read_scope": "Historical compilation only: VAT law arts5,7,12–24,27–36B. No claim that posting date identifies a 2021 consolidated edition or closes later amendments.",
+    "status": "fetched and portions stated read; not blanket currentness verification"
+  },
+  {
+    "id": "CO",
+    "title": "OHADA revised companies act 30 January 2014, ACPCE official copy",
+    "official_url": "https://acpce.cg/wp-content/uploads/2024/08/ACTE-UNIFORME-REVISE-RELATIF-AU-DROIT-DES-SOCIETES-COMMERCIALES-ET-DU-GROUPEMENT-DINTERET-ECONOMIQUE.pdf",
+    "local_cache_filename": "companies2014.pdf",
+    "sha256": "6c7c029fb4e27b70035ec1962f62dcfe708ec3f17ab55a5d79bf8878b167e780",
+    "bytes": 789511,
+    "read_on": "2026-11-01",
+    "read_scope": "Arts25–40,116–120-5,309–316,376–380,385–389,694–697,823–825,853-1–853-5, with neighboring scope provisions. Not all217pages read.",
+    "status": "fetched and portions stated read; not blanket currentness verification"
+  },
+  {
+    "id": "SARL",
+    "title": "Congo decree2017-41, 28 March2017",
+    "official_url": "https://acpce.cg/wp-content/uploads/2024/08/congo-decret_2017-41_sarl.pdf",
+    "local_cache_filename": "sarl2017.pdf",
+    "sha256": "94d3a632f1a0c272d0cc89d7aa135ddad4de4ddea21b062fcc5f12b66159ad91",
+    "bytes": 293200,
+    "read_on": "2026-11-01",
+    "read_scope": "All three pages, arts1–8; critical capital/share denomination and deposit rules visually read on physical page2.",
+    "status": "fetched and portions stated read; not blanket currentness verification"
+  },
+  {
+    "id": "ACPCE",
+    "title": "ACPCE, create a company",
+    "official_url": "https://acpce.cg/creer-une-societe/",
+    "local_cache_filename": "acpce-creation.html",
+    "sha256": "55ba8525926afe55746ad959c9de048f79ccfb8bc55a69ed4f613539a4d4cbb9",
+    "bytes": 162632,
+    "read_on": "2026-11-01",
+    "read_scope": "Public creation checklist: identity, registered office and constitutional documents; scope notes. No authenticated submission performed.",
+    "status": "fetched and portions stated read; not blanket currentness verification"
+  },
+  {
+    "id": "CAL",
+    "title": "ACPCE 2026 fiscal and social calendar",
+    "official_url": "https://acpce.cg/wp-content/uploads/2026/02/Calendrier-des-obligations-fiscales-et-sociales-au-titre-de-lannee-2026.pdf",
+    "local_cache_filename": "calendar2026.pdf",
+    "sha256": "9be4559faf7ba423e6e8a3b6df733e700c06e5f6415fa929f9202ad97b27020b",
+    "bytes": 466223,
+    "read_on": "2026-11-01",
+    "read_scope": "All five pages OCR after180-degree correction; annual/monthly/varied deadlines and rate table. Conflicts with statute are recorded, not silently resolved.",
+    "status": "fetched and portions stated read; not blanket currentness verification"
+  },
+  {
+    "id": "LF25",
+    "title": "Finance Act47-2024, official gazette special15/2024",
+    "official_url": "https://www.sgg.cg/JO/2024/congo-jo-2024-15-sp.pdf",
+    "local_cache_filename": "lf2025.pdf",
+    "sha256": "63dacfc2e3f0f1517156829b4acfd06eee44231eeaa36603c9a822e90f10e8ef",
+    "bytes": 422660,
+    "read_on": "2026-11-01",
+    "read_scope": "Cover and art9 social contribution table on pages2–3 only. Employee CNSS4.55% in gazette conflicts with other official 2026 material; not used as operative split.",
+    "status": "fetched and portions stated read; not blanket currentness verification"
+  },
+  {
+    "id": "PORT",
+    "title": "ACPCE public online-creation portal",
+    "official_url": "https://monentreprise.acpce.cg/",
+    "local_cache_filename": "acpce-portal.html",
+    "sha256": "ed1da8f34de79153204881fa205a9dc270e2a81a784a09e5d315525564041aba",
+    "bytes": 19294,
+    "read_on": "2026-11-01",
+    "read_scope": "Public landing page: account/create flow, unique form/upload/payment/document delivery, displayed entity-specific fees. No account created or authenticated screen accessed.",
+    "status": "fetched and portions stated read; not blanket currentness verification"
+  }
+]

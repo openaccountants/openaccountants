@@ -1,0 +1,25 @@
+{
+  "candidate_kind": "uncommitted repaired working tree at HEAD 2474af832b851a04c109d877a8dbf95134b21165",
+  "initial_frozen_commit": "2474af832b851a04c109d877a8dbf95134b21165",
+  "accepted_base": "fe5f9fd209a3f8169415e9131e72e24a71ac4249",
+  "files": {
+    "skills/dr-congo/README.md": "4ce10b001ab1e62f2c623a0865318fb95ede4c06215c08a11341d85abb0b5c3a",
+    "skills/dr-congo/cd-tax-overview.md": "922f2fcbefd254c7c4bcd9ab85722e4feeaa20be35e4cd3ac2950d0ffb178f5e",
+    "skills/dr-congo/cd-company-formation.md": "21ce13d6cecf466f5143793a2fb61bbfc4bd9c538da3941e03ce7d685830ea7c",
+    "evidence/dr-congo-overview-formation-20261101/README.md": "f8c5876816a779ed79dc91a7817a84996c71104c957683dee12be1b00afa022a",
+    "evidence/dr-congo-overview-formation-20261101/ledgers/cd-tax-overview.md": "7c1815df594af7ece523349fe492079cb2f167f5fe05c33aa8701cf455ee8ff9",
+    "evidence/dr-congo-overview-formation-20261101/ledgers/cd-company-formation.md": "85c1302dc2edd8331e582b1544a491656e83e89aaf205c27323dbb2b359eb097",
+    "evidence/dr-congo-overview-formation-20261101/source-manifest.json": "f0c615861f2efb4d6f0676a13720c09caaafa8e379806a68d79c96cb3ecb93f1",
+    "evidence/dr-congo-overview-formation-20261101/preservation.json": "7d1521d4aed59f5f6572dfc8d1ded2a4f391238fb3342515c8a2616d7f1bddac",
+    "evidence/dr-congo-overview-formation-20261101/reviewer-corrections.json": "e2cbb3b93d5e9c3453273d0edf0c730a7e25cb0e15812654db2d367a172f26ed"
+  },
+  "original_reviewer_receipts_sha256": {
+    "old-topic-checks.json": "a0b17543d5d773b18b0ce9d5faac52cdf44ddbcee5cb9d9be789731c41c88f04",
+    "independent-cases.json": "924230956f853c10b875715f99fc5176e51ddd90ddcc198957cb79bb25a3be47",
+    "initial-review.md": "18fb9f02746083200c203ff8ffa93a1635452c1f4180119179884cd9a5bf8db2",
+    "source-reading.json": "486b94a43b0798b4a7c2509702518814bd8a2ce5be401593a3d5028346281af5",
+    "candidate-hashes.json": "b33c855204c8970d448e92c7462f15785406c2ec474d12bb02ae5164f74142a0",
+    "row-verdicts.json": "bf7634aed57fa5de17fd105ef188839449a40e78b9633f5817066d102d30aa95",
+    "preservation-check.json": "289b033da134563b3145ca98fdf9f1069a0918920719b09360e91f18ab8de469"
+  }
+}

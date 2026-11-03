@@ -1,0 +1,20 @@
+{
+  "permission_file": "evidence/ledgers/saudi-independent-review-20261101/focused-closure.json",
+  "before_sha256": "b4220c70153345b9ae69945277c7f3fb25d8e6c96dd6ed2636729022cdbf41fe",
+  "after_sha256": "5b5631c1c089bba8b7996582cd8f164f6b769e241200590f0846aaa4772e7135",
+  "literal": {
+    "path": "skills/saudi-arabia/sa-return-assembly.md",
+    "old": "| Validated by | Pending independent review; professional authorisation and client-specific sign-off required before filing |",
+    "new": "| Validated by | Independent conditional research review completed 1 November 2026; unresolved holds remain. Professional authorisation and client-specific sign-off required before filing |",
+    "expected_sha256_after_only_this_change": "5b5631c1c089bba8b7996582cd8f164f6b769e241200590f0846aaa4772e7135"
+  },
+  "review_files_preserved": {
+    "evidence/ledgers/saudi-independent-review-20261101/focused-closure-checks.json": "1bbdf2eafc2f2740474097a857b852000cc821ac62745c033c3af45d3fd14b37",
+    "evidence/ledgers/saudi-independent-review-20261101/initial-row-review.json": "f82644ce76a4ecbba7a6513964735e30dcd6ba97e4ec401ee43325aef325db73",
+    "evidence/ledgers/saudi-independent-review-20261101/focused-closure.json": "e8f72785acd7ff4b54487eb6b2d81f903cf545f6383de0964b74d151f1b79817",
+    "evidence/ledgers/saudi-independent-review-20261101/initial-preservation.json": "e010279f27b2b0c172cae0e2360f05b4cb65ae728a807c8bac0e98dd9f656b1f",
+    "evidence/ledgers/saudi-independent-review-20261101/initial-checks.json": "353eb5cf67cc8983541bd7dc815e8a3f045ed60c81636bed24a0ebfd8ca8a6f8",
+    "evidence/ledgers/saudi-independent-review-20261101/initial-findings.md": "0ee03f22a52b3b318c3f96daf4f6730f7924c2dc64a5657654ddd8710cb91604",
+    "evidence/ledgers/saudi-independent-review-20261101/initial-old-topic-spotchecks.json": "4f1d768b73995987d6a3062b332982a746ea135d5c270e3bcc2ee7b2a1eff220"
+  }
+}

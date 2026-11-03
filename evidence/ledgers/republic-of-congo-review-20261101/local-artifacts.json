@@ -1,0 +1,18 @@
+{
+  "purpose": "Unpublished reviewer extraction/render scratch files; source PDF caches remain unchanged at sibling sources/. These copies are not proposed for public Git publication.",
+  "files": [
+    "/private/tmp/cg-independent-review-artifacts/LF25-page-3.png",
+    "/private/tmp/cg-independent-review-artifacts/LF-page-43.png",
+    "/private/tmp/cg-independent-review-artifacts/LF-page-41.png",
+    "/private/tmp/cg-independent-review-artifacts/LF-page-65.png",
+    "/private/tmp/cg-independent-review-artifacts/LF-page-77.png",
+    "/private/tmp/cg-independent-review-artifacts/SARL-page-3.png",
+    "/private/tmp/cg-independent-review-artifacts/SARL-page-2.png",
+    "/private/tmp/cg-independent-review-artifacts/SARL-page-1.png",
+    "/private/tmp/cg-independent-review-artifacts/cgi1-2021.txt",
+    "/private/tmp/cg-independent-review-artifacts/companies2014.txt",
+    "/private/tmp/cg-independent-review-artifacts/jo-finance2026.txt",
+    "/private/tmp/cg-independent-review-artifacts/lf2025.txt",
+    "/private/tmp/cg-independent-review-artifacts/sarl2017.txt"
+  ]
+}

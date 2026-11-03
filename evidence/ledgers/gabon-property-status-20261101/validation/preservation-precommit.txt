@@ -1,0 +1,17 @@
+Command: python3 /Users/michaelcutajar/Documents/ChatGPT/OA/output/gabon-pack-2026-11-01/repository/evidence/ledgers/gabon-property-status-20261101/verify-status.py
+{
+  "status": "pass",
+  "permitted_changed_files": 2,
+  "permitted_exact_substitutions": 3,
+  "review_evidence_files_immutable": 31,
+  "inherited_files_immutable": 82,
+  "original_eight_guides_unchanged": true,
+  "prior_93_rule_127_placement_77_topic_16_case_review_preserved": true,
+  "F1_F4_closed_unchanged": true,
+  "property_review_72_rows_184_cells_two_cases": "accepted source fidelity only",
+  "all_seven_domains_partial": true,
+  "current_law_attestation": false,
+  "merge_approval": false
+}
+
+Exit: 0

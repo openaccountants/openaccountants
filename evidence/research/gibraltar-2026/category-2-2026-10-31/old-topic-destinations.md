@@ -1,0 +1,26 @@
+# Complete old-topic destination map
+
+All 18 existing Guides retain every original topic and byte at their original path. No topic was moved or retired. The distinct Category 2 job has no inherited Guide body to transplant. The ordinary individual Guide already excludes this job; that exclusion is unchanged.
+
+| Original Guide and all its topics | Current destination | SHA256, before = after |
+|---|---|---|
+| `skills/gibraltar/gi-bookkeeping-and-tax-records.md` | `skills/gibraltar/gi-bookkeeping-and-tax-records.md` | `86b4254cd34fbbe091d8972b48c1f17af33a5b315ab2d2a32c0c264c9be3e5eb` |
+| `skills/gibraltar/gi-company-accounts-and-reporting.md` | `skills/gibraltar/gi-company-accounts-and-reporting.md` | `2d45e12666fb3b09844494bcd3409a801f154dcd14c64fde008434d6394181fe` |
+| `skills/gibraltar/gi-company-formation.md` | `skills/gibraltar/gi-company-formation.md` | `359f9762dce7a5d73b5beb9dfcffc51244a5f145be32cbb3ad1e0404f5c00711` |
+| `skills/gibraltar/gi-connected-party-pricing-and-interest.md` | `skills/gibraltar/gi-connected-party-pricing-and-interest.md` | `e1240542c19a0c4f3cac8a0252f4f8d2e2571d6188b154a4d91e928f2f1be80d` |
+| `skills/gibraltar/gi-corporate-tax.md` | `skills/gibraltar/gi-corporate-tax.md` | `56166f611c15fa93aa60868024b94fdaf0b82129eb1ffe24c81b3e3dc0c3475f` |
+| `skills/gibraltar/gi-einvoice.md` | `skills/gibraltar/gi-einvoice.md` | `239f53b030972ecd28bc34c64010e423b45d818180e6aee4e90e7b55fab4da0f` |
+| `skills/gibraltar/gi-foreign-tax-relief.md` | `skills/gibraltar/gi-foreign-tax-relief.md` | `d5427c1d432b62cd9eca6dfd2c7b2128e51d92f13eac053469feb8cb7f38df39` |
+| `skills/gibraltar/gi-global-minimum-tax.md` | `skills/gibraltar/gi-global-minimum-tax.md` | `c990bb86a134fbc3a20efb13f05f04cf7b3c8623f7e882c28dc835e990f39b26` |
+| `skills/gibraltar/gi-income-tax-assessment-appeals.md` | `skills/gibraltar/gi-income-tax-assessment-appeals.md` | `6ac1976d6e7ed9748aee3eb8036aca4587d8d29737350e5f184d1e5a7ba11f17` |
+| `skills/gibraltar/gi-individual-income-tax.md` | `skills/gibraltar/gi-individual-income-tax.md` | `5039468a5ba8c3bf6baf5b752174fe81099449fd565d2c017897fb26cc6a197c` |
+| `skills/gibraltar/gi-payroll-social-insurance.md` | `skills/gibraltar/gi-payroll-social-insurance.md` | `801ccb9427aa93f38ce6faad5033ca223353e13932f629ca17c3cee51c4edad7` |
+| `skills/gibraltar/gi-property-stamp-duty.md` | `skills/gibraltar/gi-property-stamp-duty.md` | `0dedd5f962df8896a647cc8f5d41cdbf49843aef915ee3741723198a65ca7860` |
+| `skills/gibraltar/gi-residential-property-disposals.md` | `skills/gibraltar/gi-residential-property-disposals.md` | `a38b5abe9eb3a422d248b601a9296e035cb919c2029568cfa6cb9e7cfa936331` |
+| `skills/gibraltar/gi-spain-tax-residence.md` | `skills/gibraltar/gi-spain-tax-residence.md` | `7529755baf66cd852d8eb6950d19e871ce82db990e708d9a372f2921cf43eaa2` |
+| `skills/gibraltar/gi-training-planning-and-startup-reliefs.md` | `skills/gibraltar/gi-training-planning-and-startup-reliefs.md` | `14f7a1ca3475e77aa0e30db8577da4ea596387de37b1f66edd90307c5d543bb5` |
+| `skills/gibraltar/gi-transaction-tax-transition.md` | `skills/gibraltar/gi-transaction-tax-transition.md` | `714ebf8daa59de87450022bf5cc333ac859af1099360be5c56dc4084ea5966ac` |
+| `skills/gibraltar/gi-uk-employment-pensions-treaty.md` | `skills/gibraltar/gi-uk-employment-pensions-treaty.md` | `c9a674bf071f66317e3a3ea3c30472c05969fc952cb05a3f8324fcf562f66998` |
+| `skills/gibraltar/gi-uk-investment-income-treaty.md` | `skills/gibraltar/gi-uk-investment-income-treaty.md` | `0236703bafd5c742fe11e0177da62b550f578d29a03006a5ef904136ed897399` |
+
+README changes are limited to the dated unreviewed partial candidate pointer, the IT-IND routing link and two 18-to-19 file-count updates. All seven structured partial values remain unchanged. `README.before.md` preserves its original bytes. No earlier review or source evidence was rewritten.

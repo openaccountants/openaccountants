@@ -1,0 +1,2064 @@
+{
+  "baseline": "067535f8a04a85f74271816950766a46b7541a15",
+  "reviewed_head": "245cc5692e07d82581cbbfdf7b1255c776e2f7f4",
+  "independently_reconstructed_units": 257,
+  "lost_content": 0,
+  "units": [
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 1,
+      "line": 16,
+      "sha256": "c578224e6d92f54cf0c9e3edd91ac5f785a25415f003299e1ed7b9b315247a99",
+      "destination": "skills/malawi/mw-company-formation.md#L16",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 2,
+      "line": 18,
+      "sha256": "aacabaef61dd4015a9f72889370988a100a90b18a3c5c921f3758907e9a8c579",
+      "destination": "skills/malawi/mw-company-formation.md#L18",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 3,
+      "line": 20,
+      "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "skills/malawi/mw-company-formation.md#L20",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 4,
+      "line": 22,
+      "sha256": "a8b67e16682602bd7a3c5886780570c7f1bfbf500168edee13f2e8ee9f53b81b",
+      "destination": "skills/malawi/mw-company-formation.md#L22",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 5,
+      "line": 24,
+      "sha256": "7ae08b35ba654d542bb56e2d53ede161d9a05a6673a178b4183ed37e58b7dc43",
+      "destination": "skills/malawi/mw-company-formation.md#L24",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 6,
+      "line": 26,
+      "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "skills/malawi/mw-company-formation.md#L26",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 7,
+      "line": 28,
+      "sha256": "b27bc15a6ab1c2d8550d0f9e6c3bc877786ded5b3b2a8e949ae60d6aa6239c87",
+      "destination": "skills/malawi/mw-company-formation.md#L28",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 8,
+      "line": 38,
+      "sha256": "a90149e906020b0126ba88ffc783031e18aa133998d2e835fffd60c86c6bd14e",
+      "destination": "skills/malawi/mw-company-formation.md#L38",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 9,
+      "line": 40,
+      "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "skills/malawi/mw-company-formation.md#L40",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 10,
+      "line": 42,
+      "sha256": "c50ae8fd44bf7006cc953b77d5d8133b9a81fa1bac195bf53a3aebc6ec1559b7",
+      "destination": "skills/malawi/mw-company-formation.md#L42",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 11,
+      "line": 44,
+      "sha256": "34d76da444d01cd02184f6678f275b71bebadd780d41076e949cd5a5c828d250",
+      "destination": "skills/malawi/mw-company-formation.md#L44",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 12,
+      "line": 46,
+      "sha256": "7d53bf31c485a6ca85aac1f8419cdbaa2e532c7a5042885a35b45ed9b452de81",
+      "destination": "skills/malawi/mw-company-formation.md#L46",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 13,
+      "line": 48,
+      "sha256": "69aed7f222dae23a9a49592efc8b61bedb0f452a8392363e20567082125f1a56",
+      "destination": "skills/malawi/mw-company-formation.md#L48",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 14,
+      "line": 50,
+      "sha256": "11f72c8533bd78c94f1e0a5bd5815cf1081384255ec36b9c428d83ce766a4e81",
+      "destination": "skills/malawi/mw-company-formation.md#L50",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 15,
+      "line": 52,
+      "sha256": "4c542836c3d83fd0ec3595974fbdedb896bbd9118acbcb5c6ca8f6e238c4643a",
+      "destination": "skills/malawi/mw-company-formation.md#L52",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 16,
+      "line": 54,
+      "sha256": "cf60016b65e589615e8672144a2f81d5e7dcea9df3fb987e94f6ce6b05de4748",
+      "destination": "skills/malawi/mw-company-formation.md#L54",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 17,
+      "line": 56,
+      "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "skills/malawi/mw-company-formation.md#L56",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 18,
+      "line": 58,
+      "sha256": "a8157dcf26fcd5da847f47d71762c1f1e3fbe9dbca7b483fc7020db8fbb6434e",
+      "destination": "skills/malawi/mw-company-formation.md#L58",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 19,
+      "line": 69,
+      "sha256": "da7587a82398f8befcec2f5ba10f09aad2a034101503d30a829df84f775e3914",
+      "destination": "skills/malawi/mw-company-formation.md#L69",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 20,
+      "line": 71,
+      "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "skills/malawi/mw-company-formation.md#L71",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 21,
+      "line": 73,
+      "sha256": "aee072a4cc02954bebf603cd936d1c94847eef26b5d3a0855daaf44f078db1e8",
+      "destination": "skills/malawi/mw-company-formation.md#L73",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 22,
+      "line": 75,
+      "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "skills/malawi/mw-company-formation.md#L75",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 23,
+      "line": 77,
+      "sha256": "ef2cc4c6684c52c69f694b4ac9ec25b01145a7a617b83212f6ae63f2ebca2ed6",
+      "destination": "skills/malawi/mw-company-formation.md#L77",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 24,
+      "line": 79,
+      "sha256": "bb5aeadee965b66ca30a1e410135b588548bc64a6403f8d0618590c06d4a2149",
+      "destination": "skills/malawi/mw-company-formation.md#L79",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 25,
+      "line": 81,
+      "sha256": "7ecfde784b13324d1267280aae2ebd3cccd13ccedcf7054797ae9643f3a4bf55",
+      "destination": "skills/malawi/mw-company-formation.md#L81",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 26,
+      "line": 83,
+      "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "skills/malawi/mw-company-formation.md#L83",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 27,
+      "line": 85,
+      "sha256": "a501cec53a1eb7631d9c7d45d545763f4d0e594df4dfa883bc9ab6b1aa463d0d",
+      "destination": "skills/malawi/mw-company-formation.md#L85",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 28,
+      "line": 87,
+      "sha256": "0e646f1469db1256c5906600bfa9af1398161e0db145f462e5ff23b5a9c8f6e1",
+      "destination": "skills/malawi/mw-company-formation.md#L87",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 29,
+      "line": 106,
+      "sha256": "c3c230ed8024ea2f6d1cb1d5427f782d0cd29adef3d9c37d8439b15aa1ae32e8",
+      "destination": "skills/malawi/mw-company-formation.md#L106",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 30,
+      "line": 108,
+      "sha256": "696e4d40404d7897885f85f162a6d7c68386648969c863fd5855f91d1f35791b",
+      "destination": "skills/malawi/mw-company-formation.md#L108",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 31,
+      "line": 125,
+      "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "skills/malawi/mw-company-formation.md#L125",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 32,
+      "line": 127,
+      "sha256": "65a860a94277cb2c57ba8a5a04259bc6f467e275b3f0cd04982c2f6576f7e5d7",
+      "destination": "skills/malawi/mw-company-formation.md#L127",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 33,
+      "line": 134,
+      "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "skills/malawi/mw-company-formation.md#L134",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 34,
+      "line": 136,
+      "sha256": "95c7ea94f9f2b913b4c418fd12a0116f71c6ef00922fa4e24a7f06a94a632a15",
+      "destination": "skills/malawi/mw-company-formation.md#L136",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 35,
+      "line": 142,
+      "sha256": "d2d1cd2b6a8aa866ebe5f5a2b3a5ed61febd30752cf001b891855d6e0ff09be3",
+      "destination": "skills/malawi/mw-company-formation.md#L142",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 36,
+      "line": 144,
+      "sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "destination": "skills/malawi/mw-company-formation.md#L144",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 37,
+      "line": 146,
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "destination": "skills/malawi/mw-company-formation.md#L146",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 38,
+      "line": 148,
+      "sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "destination": "skills/malawi/mw-company-formation.md#L148",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 39,
+      "line": 150,
+      "sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "destination": "skills/malawi/mw-company-formation.md#L150",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 40,
+      "line": 155,
+      "sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "destination": "skills/malawi/mw-company-formation.md#L155",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-company-formation.md",
+      "unit": 41,
+      "line": 158,
+      "sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
+      "destination": "skills/malawi/mw-company-formation.md#L158",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 1,
+      "line": 16,
+      "sha256": "e243cac4441ea6d43b3ef3477a5009501ba7ebd00f7df8ace7e6f10bc936df75",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L16",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 2,
+      "line": 18,
+      "sha256": "aacabaef61dd4015a9f72889370988a100a90b18a3c5c921f3758907e9a8c579",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L18",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 3,
+      "line": 20,
+      "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L20",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 4,
+      "line": 22,
+      "sha256": "e39d73cbd6a019680a0602066fe487c48e00ff6e4b74c86d6f35f1ccbc036572",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L22",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 5,
+      "line": 24,
+      "sha256": "1595e1f728aba01f9b2f4b9547f2921badfb0c3427e8cc9a1b3f0daa6f9a48b7",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L24",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 6,
+      "line": 26,
+      "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L26",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 7,
+      "line": 28,
+      "sha256": "e3a7ea0dad0a75e5700f65d780fd113c88443121e3708ee7dd9b9b19948720bc",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L28",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 8,
+      "line": 36,
+      "sha256": "a60829b4d97cea58fdabb39019191ab2d84ab508bb45ea0c8a67bb9880403643",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L36",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 9,
+      "line": 38,
+      "sha256": "154fd97204fc1cdf4b80ac9aea93eced726050dbca91ede3a66d0b2c50bceb64",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L38",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 10,
+      "line": 40,
+      "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L40",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 11,
+      "line": 42,
+      "sha256": "34cdafd1bb74ddd28b4ccfbd0512938116587a34a7b289e7e2af553a017490fd",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L42",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 12,
+      "line": 44,
+      "sha256": "0459b024979cf8577448b45eaa7a8f0685a63804265cfe1b4ded576416298d0a",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L44",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 13,
+      "line": 46,
+      "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L46",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 14,
+      "line": 48,
+      "sha256": "c360b47d764ac1957c94d29568dc77806739c5583eba11c491c2f21f1bb0321d",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L48",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 15,
+      "line": 50,
+      "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L50",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 16,
+      "line": 52,
+      "sha256": "c1724484526e458a6bc8afbb8f391dc376324f2cc9c86b97436efcc738380378",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L52",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 17,
+      "line": 54,
+      "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L54",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 18,
+      "line": 56,
+      "sha256": "966cf67fa5a45b160602d06b8b142a0bf1974d911cf66f98d8459d890c3b9999",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L56",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 19,
+      "line": 58,
+      "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L58",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 20,
+      "line": 60,
+      "sha256": "074faf00df1f003339bccbe88aac3a4c9d8d1206486a82d1019016d12cd54279",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L60",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 21,
+      "line": 62,
+      "sha256": "613b91edd388adc618ab988bc0ef7ff95fe5f0b09a9375d22dccbebb00d3adc9",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L62",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 22,
+      "line": 79,
+      "sha256": "9a248d7db3119907dff2fce011d682fc9670bfe4913369c2d638bb66251d9569",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L79",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 23,
+      "line": 81,
+      "sha256": "7f34ecca908f0eb40ac8558a2d5e6b89880b0549ae6a714de8da57842607c9a4",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L81",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 24,
+      "line": 99,
+      "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L99",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 25,
+      "line": 101,
+      "sha256": "c8d4587c8fdf5ef817b9382448186f64599b6052f6b94988909b4c3d19d8c039",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L101",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 26,
+      "line": 103,
+      "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L103",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 27,
+      "line": 105,
+      "sha256": "adad8c6efc0dc1ab9041dccee67050e0f5fb498c16817f99ad5ce9863662a970",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L105",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 28,
+      "line": 117,
+      "sha256": "aa07ac705da3e07020bf4f2fbf5b2ec474b08a9ee72ffe9934f430a66f2d292e",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L117",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 29,
+      "line": 119,
+      "sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L119",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 30,
+      "line": 121,
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L121",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 31,
+      "line": 123,
+      "sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L123",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 32,
+      "line": 125,
+      "sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L125",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 33,
+      "line": 130,
+      "sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L130",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-corporate-income-tax.md",
+      "unit": 34,
+      "line": 133,
+      "sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
+      "destination": "skills/malawi/mw-corporate-income-tax.md#L133",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 1,
+      "line": 13,
+      "sha256": "1fbf0902f02f2410f5e42662a08797fb6c36860806fdaeaed481a37bdc0acfd6",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L13",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 2,
+      "line": 15,
+      "sha256": "aacabaef61dd4015a9f72889370988a100a90b18a3c5c921f3758907e9a8c579",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L15",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 3,
+      "line": 17,
+      "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L17",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 4,
+      "line": 19,
+      "sha256": "a8b67e16682602bd7a3c5886780570c7f1bfbf500168edee13f2e8ee9f53b81b",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L19",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 5,
+      "line": 21,
+      "sha256": "ba2e409d67432e2a73614fe8f16113e944e476b44d824369cf6c1e8912643312",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L21",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 6,
+      "line": 23,
+      "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L23",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 7,
+      "line": 25,
+      "sha256": "d82e3b789a16706c842228e02289238f9ee11332e2c630aac2eebd94d20e2c89",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L25",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 8,
+      "line": 33,
+      "sha256": "c6ada1b5913b2da3f18806b83002a3e2dbdd6a4fbeed3c9fe7da989c261272aa",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L33",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 9,
+      "line": 35,
+      "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L35",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 10,
+      "line": 37,
+      "sha256": "f5c13c8a1cb4b2f62bc7dc2f85114239969ec1a0bcd80acb3662f88d1f4215ee",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L37",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 11,
+      "line": 44,
+      "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L44",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 12,
+      "line": 46,
+      "sha256": "328dbbc29d2ac1c4c583bec8e5ae5b99cda64de3e8cf0e3ad77389ddc799e19a",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L46",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 13,
+      "line": 48,
+      "sha256": "41aa519b2142cc9d1efdb22efb5f255b663534e1f74129f5dacd0f7facd6eca2",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L48",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 14,
+      "line": 50,
+      "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L50",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 15,
+      "line": 52,
+      "sha256": "96c6c98b0123b25995da631c5e0f3ea365b3d5f92c751c5c0b792abee9cd9497",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L52",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 16,
+      "line": 54,
+      "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L54",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 17,
+      "line": 56,
+      "sha256": "20b045dd1257f6920910923f27a6a0c1265e91d06139105592fceb61d9d323d6",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L56",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 18,
+      "line": 58,
+      "sha256": "1f6fad20c0add954fcd88789019992ed07569d3a12a808510e2ffc5177ed115e",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L58",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 19,
+      "line": 60,
+      "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L60",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 20,
+      "line": 62,
+      "sha256": "ddff94635e1adce4649ac0f7106e6e9f05afee0af18da6aec45d00b1d9a6a409",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L62",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 21,
+      "line": 64,
+      "sha256": "c826535a825a6984ea1240cbea5cb5039d0838783ef133f03fdc11fe9f2cbc79",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L64",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 22,
+      "line": 85,
+      "sha256": "ae20b5df9c7b88c8856111ce9495e6a164539c3d03a0e7842abd6e6e68d6c4d0",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L85",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 23,
+      "line": 87,
+      "sha256": "d617b43aee8c2c62936f7cfa1a7390c9b1c6c875550c7454b3f0d7ef4d5c2f23",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L87",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 24,
+      "line": 106,
+      "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L106",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 25,
+      "line": 108,
+      "sha256": "691a29afe88e5c90bc8efc6e4bf07e1e6cb0059ccb6d74ae594bba8d50b67afa",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L108",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 26,
+      "line": 115,
+      "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L115",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 27,
+      "line": 117,
+      "sha256": "2e436e46f7a1982bb60b06594fb1fbb02476c206f72e58d2b30430bf585f7c2d",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L117",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-cross-border-tax.md",
+      "unit": 28,
+      "line": 128,
+      "sha256": "761ccf3f74e9f89efd04c810d5eb954646e8e9257d17419460e608eb654c5c56",
+      "destination": "skills/malawi/mw-cross-border-tax.md#L128",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 1,
+      "line": 16,
+      "sha256": "8ee7f4cc66dd720f306dd57566b5df0bd0ca526808b5d807360da56a6b060f1b",
+      "destination": "skills/malawi/mw-income-tax.md#L16",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 2,
+      "line": 18,
+      "sha256": "aacabaef61dd4015a9f72889370988a100a90b18a3c5c921f3758907e9a8c579",
+      "destination": "skills/malawi/mw-income-tax.md#L18",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 3,
+      "line": 20,
+      "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "skills/malawi/mw-income-tax.md#L20",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 4,
+      "line": 22,
+      "sha256": "e39d73cbd6a019680a0602066fe487c48e00ff6e4b74c86d6f35f1ccbc036572",
+      "destination": "skills/malawi/mw-income-tax.md#L22",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 5,
+      "line": 24,
+      "sha256": "699ff0766874b15554fe163d5c6f48c848c25609567b02baafd1ef0fba700dea",
+      "destination": "skills/malawi/mw-income-tax.md#L24",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 6,
+      "line": 26,
+      "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "skills/malawi/mw-income-tax.md#L26",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 7,
+      "line": 28,
+      "sha256": "8337877dac1ffabfd1e7dc83833978afe0035b05324e8f9e5498ce2d5a3be114",
+      "destination": "skills/malawi/mw-income-tax.md#L28",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 8,
+      "line": 36,
+      "sha256": "edf7c2579edf43c57d35d77419d67cecde2e85b8fe48fd5e148295b5e03a1660",
+      "destination": "skills/malawi/mw-income-tax.md#L36",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 9,
+      "line": 38,
+      "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "skills/malawi/mw-income-tax.md#L38",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 10,
+      "line": 40,
+      "sha256": "e5ac9215ee66d9f20c213dc24ab4ebb460c970c5f2b4e0d0ec7bf1fe573a551d",
+      "destination": "skills/malawi/mw-income-tax.md#L40",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 11,
+      "line": 42,
+      "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "skills/malawi/mw-income-tax.md#L42",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 12,
+      "line": 44,
+      "sha256": "1176c1a5d2df93897e6237468471b70c69da605d0e306aba75af1ef51b6f113f",
+      "destination": "skills/malawi/mw-income-tax.md#L44",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 13,
+      "line": 46,
+      "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "skills/malawi/mw-income-tax.md#L46",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 14,
+      "line": 48,
+      "sha256": "6ca4b3c18f7390719b0eeea9aebdd3c1d91f32cb050dd84600dd97d0888ece5e",
+      "destination": "skills/malawi/mw-income-tax.md#L48",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 15,
+      "line": 50,
+      "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "skills/malawi/mw-income-tax.md#L50",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 16,
+      "line": 52,
+      "sha256": "87aa5f9c36dea7866aaf442451910100289c7887aa10a82769e5266a81fb6646",
+      "destination": "skills/malawi/mw-income-tax.md#L52",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 17,
+      "line": 54,
+      "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "skills/malawi/mw-income-tax.md#L54",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 18,
+      "line": 56,
+      "sha256": "39fe6edaae007b98343c4f05e2f915bad084e4387cff4ac61b1466155fb54c47",
+      "destination": "skills/malawi/mw-income-tax.md#L56",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 19,
+      "line": 58,
+      "sha256": "59e2f37f4cd18597540f37fa457e4a9d59f936635275af8e83764f7c647ce0ac",
+      "destination": "skills/malawi/mw-income-tax.md#L58",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 20,
+      "line": 74,
+      "sha256": "f106c6aeff77f1f3163a88b081767f0e37d6d1469840e4fecfdca2869847fe27",
+      "destination": "skills/malawi/mw-income-tax.md#L74",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 21,
+      "line": 76,
+      "sha256": "2740a2583779c8588fa3f07c50ebab00fa6ae6e1b0e83742c146dc142fa69c7c",
+      "destination": "skills/malawi/mw-income-tax.md#L76",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 22,
+      "line": 88,
+      "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "skills/malawi/mw-income-tax.md#L88",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 23,
+      "line": 90,
+      "sha256": "d2442521e551c87bba60924065fc0615da761adadf44dad54509a3282aae949f",
+      "destination": "skills/malawi/mw-income-tax.md#L90",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 24,
+      "line": 92,
+      "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "skills/malawi/mw-income-tax.md#L92",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 25,
+      "line": 94,
+      "sha256": "ca70545e27dfb0cd2e48a47eff50f1af6c177d275dffb711576ca503d4e6b204",
+      "destination": "skills/malawi/mw-income-tax.md#L94",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 26,
+      "line": 104,
+      "sha256": "930b69504eee4ff1b8f4f6e512b3aee32b34f8a41fbb1eb91209428af7631c67",
+      "destination": "skills/malawi/mw-income-tax.md#L104",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 27,
+      "line": 106,
+      "sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "destination": "skills/malawi/mw-income-tax.md#L106",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 28,
+      "line": 108,
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "destination": "skills/malawi/mw-income-tax.md#L108",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 29,
+      "line": 110,
+      "sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "destination": "skills/malawi/mw-income-tax.md#L110",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 30,
+      "line": 112,
+      "sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "destination": "skills/malawi/mw-income-tax.md#L112",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 31,
+      "line": 117,
+      "sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "destination": "skills/malawi/mw-income-tax.md#L117",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-income-tax.md",
+      "unit": 32,
+      "line": 120,
+      "sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
+      "destination": "skills/malawi/mw-income-tax.md#L120",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 1,
+      "line": 16,
+      "sha256": "a326b840cde219f45c7646eda1ebeb8e569abbfe8e9945556e3aebb7e4b27470",
+      "destination": "skills/malawi/mw-payroll-social.md#L16",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 2,
+      "line": 18,
+      "sha256": "aacabaef61dd4015a9f72889370988a100a90b18a3c5c921f3758907e9a8c579",
+      "destination": "skills/malawi/mw-payroll-social.md#L18",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 3,
+      "line": 20,
+      "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "skills/malawi/mw-payroll-social.md#L20",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 4,
+      "line": 22,
+      "sha256": "e39d73cbd6a019680a0602066fe487c48e00ff6e4b74c86d6f35f1ccbc036572",
+      "destination": "skills/malawi/mw-payroll-social.md#L22",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 5,
+      "line": 24,
+      "sha256": "261e4cac65abadbe34ec904e722f4a758c4f8c5311b81a19e27380f2dbba08b0",
+      "destination": "skills/malawi/mw-payroll-social.md#L24",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 6,
+      "line": 26,
+      "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "skills/malawi/mw-payroll-social.md#L26",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 7,
+      "line": 28,
+      "sha256": "7f2d055e42bb5b02c72d892545f24c33d5e14bbd8376215f089b0f60d543edaa",
+      "destination": "skills/malawi/mw-payroll-social.md#L28",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 8,
+      "line": 36,
+      "sha256": "cd89d6019b4fc9b929163c09cddda7bfd3bb515f933387115b933181a68945e2",
+      "destination": "skills/malawi/mw-payroll-social.md#L36",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 9,
+      "line": 38,
+      "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "skills/malawi/mw-payroll-social.md#L38",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 10,
+      "line": 40,
+      "sha256": "3dd7b8396b4b7e2e884b61eae9184c263dccd6a0359a599cb2f2b1422bed6874",
+      "destination": "skills/malawi/mw-payroll-social.md#L40",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 11,
+      "line": 42,
+      "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "skills/malawi/mw-payroll-social.md#L42",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 12,
+      "line": 44,
+      "sha256": "838fe982ec0d6e240d3245e558d5afe1f789763c02900a8b648ed4b87cfc600a",
+      "destination": "skills/malawi/mw-payroll-social.md#L44",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 13,
+      "line": 46,
+      "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "skills/malawi/mw-payroll-social.md#L46",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 14,
+      "line": 48,
+      "sha256": "97f29133b9cd900b61994d62c249c217ab0ef1fd01cd3d9be8b419214693f6db",
+      "destination": "skills/malawi/mw-payroll-social.md#L48",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 15,
+      "line": 50,
+      "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "skills/malawi/mw-payroll-social.md#L50",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 16,
+      "line": 52,
+      "sha256": "13e3e8fddbda5ecd3d534802735ab3be67dac2bb8154ee2a893335307e90f85b",
+      "destination": "skills/malawi/mw-payroll-social.md#L52",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 17,
+      "line": 54,
+      "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "skills/malawi/mw-payroll-social.md#L54",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 18,
+      "line": 56,
+      "sha256": "d33e1609a82fdb905380daf641cd2b460ede66bd2b49b48db8f86417b716ebd1",
+      "destination": "skills/malawi/mw-payroll-social.md#L56",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 19,
+      "line": 58,
+      "sha256": "a78e791cb9c3088f662d9e745d607814a736fbcd1b099863c17a4b7cf407415e",
+      "destination": "skills/malawi/mw-payroll-social.md#L58",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 20,
+      "line": 78,
+      "sha256": "a56a6dcb999a00e0c89ec11374cdd04b265256f895989b20f61255129db805d0",
+      "destination": "skills/malawi/mw-payroll-social.md#L78",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 21,
+      "line": 80,
+      "sha256": "78f19dd9ed7c2e5c3671d87ce180a8b9aa9e97020f7cd5b80b7a2b0d7a833b6f",
+      "destination": "skills/malawi/mw-payroll-social.md#L80",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 22,
+      "line": 97,
+      "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "skills/malawi/mw-payroll-social.md#L97",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 23,
+      "line": 99,
+      "sha256": "45b7b206b9d7edb987e0be6eab766421103921c57cf0b1f23a385274e747d5c7",
+      "destination": "skills/malawi/mw-payroll-social.md#L99",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 24,
+      "line": 101,
+      "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "skills/malawi/mw-payroll-social.md#L101",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 25,
+      "line": 103,
+      "sha256": "910016971e2bb777973818df4af2b477cd09ac35968f7eed8d7b81104962a177",
+      "destination": "skills/malawi/mw-payroll-social.md#L103",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 26,
+      "line": 109,
+      "sha256": "cbe0b274064698c03c17ba8cf099e9b3e67cdb862f60d17547de27db983c80a5",
+      "destination": "skills/malawi/mw-payroll-social.md#L109",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 27,
+      "line": 111,
+      "sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "destination": "skills/malawi/mw-payroll-social.md#L111",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 28,
+      "line": 113,
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "destination": "skills/malawi/mw-payroll-social.md#L113",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 29,
+      "line": 115,
+      "sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "destination": "skills/malawi/mw-payroll-social.md#L115",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 30,
+      "line": 117,
+      "sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "destination": "skills/malawi/mw-payroll-social.md#L117",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 31,
+      "line": 122,
+      "sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "destination": "skills/malawi/mw-payroll-social.md#L122",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-payroll-social.md",
+      "unit": 32,
+      "line": 125,
+      "sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
+      "destination": "skills/malawi/mw-payroll-social.md#L125",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 1,
+      "line": 16,
+      "sha256": "9caf4ad737a9321691c3aaa2e6d07fddc821ecf5915e0f0956faace901632059",
+      "destination": "skills/malawi/mw-tax-overview.md#L16",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 2,
+      "line": 18,
+      "sha256": "aacabaef61dd4015a9f72889370988a100a90b18a3c5c921f3758907e9a8c579",
+      "destination": "skills/malawi/mw-tax-overview.md#L18",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 3,
+      "line": 20,
+      "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "skills/malawi/mw-tax-overview.md#L20",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 4,
+      "line": 22,
+      "sha256": "e39d73cbd6a019680a0602066fe487c48e00ff6e4b74c86d6f35f1ccbc036572",
+      "destination": "skills/malawi/mw-tax-overview.md#L22",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 5,
+      "line": 24,
+      "sha256": "648680b31e60668c5ba468412d56efcb3bdcb92ad05e6a3caf1d2c46b9bf076d",
+      "destination": "skills/malawi/mw-tax-overview.md#L24",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 6,
+      "line": 26,
+      "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "skills/malawi/mw-tax-overview.md#L26",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 7,
+      "line": 28,
+      "sha256": "c23689ae6d05a2af7234c213fcb82bd9d055b25d7e45faf2d267edae3a167f03",
+      "destination": "skills/malawi/mw-tax-overview.md#L28",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 8,
+      "line": 37,
+      "sha256": "36f4185373132d3b81e36e970474c45889f5aea80735c060e0037060bbdaf8e7",
+      "destination": "skills/malawi/mw-tax-overview.md#L37",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 9,
+      "line": 39,
+      "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "skills/malawi/mw-tax-overview.md#L39",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 10,
+      "line": 41,
+      "sha256": "b9c421fc2511b0a539eb376e10ed953927607c5b5cd8ddffc41bbc057f6a5c40",
+      "destination": "skills/malawi/mw-tax-overview.md#L41",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 11,
+      "line": 43,
+      "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "skills/malawi/mw-tax-overview.md#L43",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 12,
+      "line": 45,
+      "sha256": "696ad2b0317f7d0f9818264c39457fad563c645cb3d653cc37d929238a8a2c10",
+      "destination": "skills/malawi/mw-tax-overview.md#L45",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 13,
+      "line": 47,
+      "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "skills/malawi/mw-tax-overview.md#L47",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 14,
+      "line": 49,
+      "sha256": "c6c36c91466cb727e2fae9e7b5a5bcddba37d6fc9f1b6169d1ad6526bb0f0c0b",
+      "destination": "skills/malawi/mw-tax-overview.md#L49",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 15,
+      "line": 51,
+      "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "skills/malawi/mw-tax-overview.md#L51",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 16,
+      "line": 53,
+      "sha256": "587008309dbb667a80175c4d9e96596cc0815d52ae69f862a95d42095f355850",
+      "destination": "skills/malawi/mw-tax-overview.md#L53",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 17,
+      "line": 55,
+      "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "skills/malawi/mw-tax-overview.md#L55",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 18,
+      "line": 57,
+      "sha256": "16342f6d5048ed26fe51cf8b3b1d107c7e176a475be158c2693bff308154df95",
+      "destination": "skills/malawi/mw-tax-overview.md#L57",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 19,
+      "line": 59,
+      "sha256": "d61c7e0b5fa75101d26fd7ccf326b9fcb616673975ccd7febcd2f30527ecc3ed",
+      "destination": "skills/malawi/mw-tax-overview.md#L59",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 20,
+      "line": 70,
+      "sha256": "a67775de927d68e6f41695013a7872d7c258ec8e859cf4ea58819743055508f0",
+      "destination": "skills/malawi/mw-tax-overview.md#L70",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 21,
+      "line": 81,
+      "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "skills/malawi/mw-tax-overview.md#L81",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 22,
+      "line": 83,
+      "sha256": "2ef81fc0860fb1f915984c58fffae821f9871e8f5d7d804424e698541d6b8d08",
+      "destination": "skills/malawi/mw-tax-overview.md#L83",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 23,
+      "line": 85,
+      "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "skills/malawi/mw-tax-overview.md#L85",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 24,
+      "line": 87,
+      "sha256": "11d495cb10c8bb297a6e1873e2a14f04456ed7c0cf7f33bca7a1c7c91b9231a6",
+      "destination": "skills/malawi/mw-tax-overview.md#L87",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 25,
+      "line": 96,
+      "sha256": "f104a9f623933accdaaf44e18222ce1f0814a8c17805f9e9ea6c652ac1d9d4d7",
+      "destination": "skills/malawi/mw-tax-overview.md#L96",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 26,
+      "line": 98,
+      "sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "destination": "skills/malawi/mw-tax-overview.md#L98",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 27,
+      "line": 100,
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "destination": "skills/malawi/mw-tax-overview.md#L100",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 28,
+      "line": 102,
+      "sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "destination": "skills/malawi/mw-tax-overview.md#L102",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 29,
+      "line": 104,
+      "sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "destination": "skills/malawi/mw-tax-overview.md#L104",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 30,
+      "line": 109,
+      "sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "destination": "skills/malawi/mw-tax-overview.md#L109",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-tax-overview.md",
+      "unit": 31,
+      "line": 112,
+      "sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
+      "destination": "skills/malawi/mw-tax-overview.md#L112",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 1,
+      "line": 13,
+      "sha256": "f370cb0e850a22a96041a35ff89dc93e54a57694c2da3dad75d01ac65ecba57f",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L13",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 2,
+      "line": 15,
+      "sha256": "aacabaef61dd4015a9f72889370988a100a90b18a3c5c921f3758907e9a8c579",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L15",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 3,
+      "line": 17,
+      "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L17",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 4,
+      "line": 19,
+      "sha256": "e39d73cbd6a019680a0602066fe487c48e00ff6e4b74c86d6f35f1ccbc036572",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L19",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 5,
+      "line": 21,
+      "sha256": "32ed6428eccad8386086420009b19c4ca101c2bbb262c341c1ea0ff4ff4dbb62",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L21",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 6,
+      "line": 23,
+      "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L23",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 7,
+      "line": 25,
+      "sha256": "6b8e0e8ffbb2f1501e73d382c701bdb66b4aad1053c6a385a13f5cd91d20b087",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L25",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 8,
+      "line": 33,
+      "sha256": "61b72f2c157a28185eb10f8532db74e5a87221b7c1e4ef365c858bd3595ca62a",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L33",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 9,
+      "line": 35,
+      "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L35",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 10,
+      "line": 37,
+      "sha256": "c6d7022fa1e8ef8619e435ce187c02acec89c061fa74e5ba7ee74b93a83690f3",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L37",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 11,
+      "line": 39,
+      "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L39",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 12,
+      "line": 41,
+      "sha256": "41bc827d7d28e7cd18cbad87d374910ab088b7b0ce3ec6cbdd2f8a04342a65d5",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L41",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 13,
+      "line": 43,
+      "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L43",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 14,
+      "line": 45,
+      "sha256": "f6a1304988bb4d6fdd60d92b0bda354ce002518e74f76dcc4c025e5eee1f0922",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L45",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 15,
+      "line": 47,
+      "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L47",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 16,
+      "line": 49,
+      "sha256": "5d7166fc2ce96b0b87cb0d142c83abad58ab9ba3ff7b3789fe1fa3f2c8eae920",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L49",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 17,
+      "line": 51,
+      "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L51",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 18,
+      "line": 53,
+      "sha256": "8f86e92acfd90c79595784b8e7a82592e41094be895853c54b999b8e0821db31",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L53",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 19,
+      "line": 55,
+      "sha256": "356524d63cd50ed6ad28f151cb00a37ca116c2baf26c9322aa5a2730b5c30938",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L55",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 20,
+      "line": 67,
+      "sha256": "bed8ca52ecde68330059a6c824624e9ab3344adb249083ee99be8077fce862af",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L67",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 21,
+      "line": 69,
+      "sha256": "868e39569a2a30e7f5df05f0067c589bd6e95c9f2b8cc680e414a2fbfa971c23",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L69",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 22,
+      "line": 83,
+      "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L83",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 23,
+      "line": 85,
+      "sha256": "4da975cf57b8632a60bed18a3e5e09846a89cd7f4f9891f1f93a3f6b5dcc1a20",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L85",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 24,
+      "line": 87,
+      "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L87",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 25,
+      "line": 89,
+      "sha256": "8179217e9860c28f8e546945066b96b9a0dddb349a784adff3b52a2e37432b43",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L89",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-transfer-pricing.md",
+      "unit": 26,
+      "line": 96,
+      "sha256": "7641027fa60731fe376caa95eb626593ca4ed5680e1b8c9e74c7d6257e129ef6",
+      "destination": "skills/malawi/mw-transfer-pricing.md#L96",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 1,
+      "line": 16,
+      "sha256": "3d326b6cf8c4368f33ec08414ccdb9fc457116ea509e7d4fb443bd9906aa99b9",
+      "destination": "skills/malawi/mw-vat-gst.md#L16",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 2,
+      "line": 18,
+      "sha256": "aacabaef61dd4015a9f72889370988a100a90b18a3c5c921f3758907e9a8c579",
+      "destination": "skills/malawi/mw-vat-gst.md#L18",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 3,
+      "line": 20,
+      "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "skills/malawi/mw-vat-gst.md#L20",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 4,
+      "line": 22,
+      "sha256": "e39d73cbd6a019680a0602066fe487c48e00ff6e4b74c86d6f35f1ccbc036572",
+      "destination": "skills/malawi/mw-vat-gst.md#L22",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 5,
+      "line": 24,
+      "sha256": "69e3c966e77aa4c2ec8c86fc975a9bd3d2c4874c4948cb9a4865153ef1cacd93",
+      "destination": "skills/malawi/mw-vat-gst.md#L24",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 6,
+      "line": 26,
+      "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "skills/malawi/mw-vat-gst.md#L26",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 7,
+      "line": 28,
+      "sha256": "c06531111708630cd931ab52f51f770198306c2fcc1f78f1e37164e4c41589b4",
+      "destination": "skills/malawi/mw-vat-gst.md#L28",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 8,
+      "line": 36,
+      "sha256": "17cfe4876ea907879a960c034de590113d5bf2d1080f49c2f684d97f83188cd3",
+      "destination": "skills/malawi/mw-vat-gst.md#L36",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 9,
+      "line": 38,
+      "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "skills/malawi/mw-vat-gst.md#L38",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 10,
+      "line": 40,
+      "sha256": "cb427704936a9fe6adeadbf17b08ccd771950e8d739197716773d5a3e278e77f",
+      "destination": "skills/malawi/mw-vat-gst.md#L40",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 11,
+      "line": 42,
+      "sha256": "3dfb12a62fde16cbf0a140f043f9b03e3a0353dd25d4d7b7db6c1f651d96b1c0",
+      "destination": "skills/malawi/mw-vat-gst.md#L42",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 12,
+      "line": 44,
+      "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "skills/malawi/mw-vat-gst.md#L44",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 13,
+      "line": 46,
+      "sha256": "44609b72931080a25b12ba1ea9676050061bffac831b2145a986c42c77707970",
+      "destination": "skills/malawi/mw-vat-gst.md#L46",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 14,
+      "line": 48,
+      "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "skills/malawi/mw-vat-gst.md#L48",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 15,
+      "line": 50,
+      "sha256": "4bb67594629ae7b64d2fcc9978788fbd9f5c874598976a002ba1d4f5fd1d85b3",
+      "destination": "skills/malawi/mw-vat-gst.md#L50",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 16,
+      "line": 52,
+      "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "skills/malawi/mw-vat-gst.md#L52",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 17,
+      "line": 54,
+      "sha256": "c63c9c0f8c29e0c9d6ef93db560842e6871f45a52921d04321e561b80318b0ff",
+      "destination": "skills/malawi/mw-vat-gst.md#L54",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 18,
+      "line": 56,
+      "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "skills/malawi/mw-vat-gst.md#L56",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 19,
+      "line": 58,
+      "sha256": "ffb8cc98705d48566405650a657230e7a017936115724c1490a03873bd94fe1e",
+      "destination": "skills/malawi/mw-vat-gst.md#L58",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 20,
+      "line": 60,
+      "sha256": "5bfdb8d190b78098dd159c8112fa7032dbd11850c66d24082b5b7c9016133626",
+      "destination": "skills/malawi/mw-vat-gst.md#L60",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 21,
+      "line": 73,
+      "sha256": "e9415bcb9d6204d3c7c4ddf6ae425ab427e53ca3f6636dda9da19fd6bd95132c",
+      "destination": "skills/malawi/mw-vat-gst.md#L73",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 22,
+      "line": 75,
+      "sha256": "0b2613214f90a99629ae2d3c8c34addd4ee622a9e851d3f87a6b68c2e94e96cd",
+      "destination": "skills/malawi/mw-vat-gst.md#L75",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 23,
+      "line": 90,
+      "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "skills/malawi/mw-vat-gst.md#L90",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 24,
+      "line": 92,
+      "sha256": "03524550e3bc0fb6cca0a5b635e6775c218312513a3324c8592a256dc96145af",
+      "destination": "skills/malawi/mw-vat-gst.md#L92",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 25,
+      "line": 94,
+      "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "skills/malawi/mw-vat-gst.md#L94",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 26,
+      "line": 96,
+      "sha256": "14d548a64a4daabbba0e69bd8307e0fc17784a2256620ff5b28ba213e0ac18a6",
+      "destination": "skills/malawi/mw-vat-gst.md#L96",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 27,
+      "line": 107,
+      "sha256": "eb01adc285500149a5929bddc2ed598aacc4fcbd08db9fd7bdbe2ac90c82100a",
+      "destination": "skills/malawi/mw-vat-gst.md#L107",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 28,
+      "line": 109,
+      "sha256": "10a6bbc0e6b24b8c9ffc3527f2e97e769141cd54b11a43cff6a23d8ad9e6d84e",
+      "destination": "skills/malawi/mw-vat-gst.md#L109",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 29,
+      "line": 111,
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "destination": "skills/malawi/mw-vat-gst.md#L111",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 30,
+      "line": 113,
+      "sha256": "6b78caad5a2dbad68bcf696e1bd39bcbfc3526f114dd9e942643370843520113",
+      "destination": "skills/malawi/mw-vat-gst.md#L113",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 31,
+      "line": 115,
+      "sha256": "105eda8d0cc1b6d050353ccd95473efd88d8312ff73e23aa8651d9f156a84095",
+      "destination": "skills/malawi/mw-vat-gst.md#L115",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 32,
+      "line": 120,
+      "sha256": "1ec6397f478f291fb0c15c069117ed87544f6f6eba990705fa4169486238946f",
+      "destination": "skills/malawi/mw-vat-gst.md#L120",
+      "verdict": "exact retained destination"
+    },
+    {
+      "old_file": "skills/malawi/mw-vat-gst.md",
+      "unit": 33,
+      "line": 123,
+      "sha256": "34a5d1659ba7c1137dc6ffa992088ab18902dd3db7e9a3862bb4f28abcc3b2fc",
+      "destination": "skills/malawi/mw-vat-gst.md#L123",
+      "verdict": "exact retained destination"
+    }
+  ]
+}

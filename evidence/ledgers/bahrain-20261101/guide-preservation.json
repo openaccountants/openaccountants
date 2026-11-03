@@ -1,0 +1,94 @@
+{
+  "skills/bahrain/README.md": {
+    "baseline_blob": "e6d4b218e9ceebdf62b2afb357785f57180de18f",
+    "initial_blob": "5dc52a8b991f4daa53a5939f836eeac0d42452fe",
+    "initial_sha256": "08ce4a439e2f55eb6311a8dcc39d3b97965b2fb96681e4d1451a58f260fe1ea2",
+    "candidate_sha256": "bd41edf587577d55f05577407a66ac2fbaf44e8f5eb42addb84e576b873291c3",
+    "changed": false,
+    "unchanged_from_initial": true
+  },
+  "skills/bahrain/bahrain-vat.md": {
+    "baseline_blob": "919cfc829358dc4f2281eca8d48e5c86280f4e83",
+    "initial_blob": "919cfc829358dc4f2281eca8d48e5c86280f4e83",
+    "initial_sha256": "1c68347dd27930ab557d86bf4c7ce0a2d0c4f95a4dab28822f638fcfbd2d55be",
+    "candidate_sha256": "1c68347dd27930ab557d86bf4c7ce0a2d0c4f95a4dab28822f638fcfbd2d55be",
+    "changed": false,
+    "unchanged_from_initial": true
+  },
+  "skills/bahrain/bh-company-formation.md": {
+    "baseline_blob": "3499cbd3d80357b1bb6a676a86d29e3d2042ca73",
+    "initial_blob": "e2d70187231d4f68b32a107dce53f7b52e0bb892",
+    "initial_sha256": "cfa6e91fd74c3356e3b644b75ae936b3d723dd80dbc365304f2934bec728a8b3",
+    "candidate_sha256": "f8a98b973e236f052821c12976c82f5b5de5cf8a839962fec86129e6fad62bf7",
+    "changed": true,
+    "cta_suffix_preserved": true,
+    "platform_frontmatter_preserved": true,
+    "baseline_bytes": 4524,
+    "candidate_bytes": 8488,
+    "shrink_fraction_vs_baseline": -0.8762157382847038
+  },
+  "skills/bahrain/bh-corporate-income-tax.md": {
+    "baseline_blob": "1ff93eab0147bd33bad04fef41ea4d5a5b5062c5",
+    "initial_blob": "cf0ca5731f8ceaf9f7678ae54435b1531112c10c",
+    "initial_sha256": "9c48be7b340f6b705b34f7f8aa76534e32b7e17ebf14100bff8ce4b244312b84",
+    "candidate_sha256": "9c45450682c05db9dff0d3f845c726046907cd3259b3b5a5a7d51ca657712131",
+    "changed": true,
+    "cta_suffix_preserved": true,
+    "platform_frontmatter_preserved": true,
+    "baseline_bytes": 4350,
+    "candidate_bytes": 9340,
+    "shrink_fraction_vs_baseline": -1.1471264367816092
+  },
+  "skills/bahrain/bh-cross-border-tax.md": {
+    "baseline_blob": "8aa4bf1df5678d2e1efc3e86d398883981c673b5",
+    "initial_blob": "8aa4bf1df5678d2e1efc3e86d398883981c673b5",
+    "initial_sha256": "b72dbddae4feb1850e15453de34367d02d60a20067b21ab1c9bccb8c6304a484",
+    "candidate_sha256": "b72dbddae4feb1850e15453de34367d02d60a20067b21ab1c9bccb8c6304a484",
+    "changed": false,
+    "unchanged_from_initial": true
+  },
+  "skills/bahrain/bh-income-tax.md": {
+    "baseline_blob": "9363957c64f83436c9eb97c810b929caeb9edbcb",
+    "initial_blob": "11c9017771d1625088cf494a5d8dae929eab0fcb",
+    "initial_sha256": "b0d47de4d7a794552f61d9f3054496a8301c890d0f9468e0d391a4637e36464a",
+    "candidate_sha256": "173bac83317df73f201941b25344a6e8e9d02bc8ca874c1d3409c8b7056fd52c",
+    "changed": true,
+    "cta_suffix_preserved": true,
+    "platform_frontmatter_preserved": true,
+    "baseline_bytes": 38680,
+    "candidate_bytes": 6883,
+    "shrink_fraction_vs_baseline": 0.822052740434333
+  },
+  "skills/bahrain/bh-payroll-social.md": {
+    "baseline_blob": "819aacbb08986516b3c7a870215e36450f986608",
+    "initial_blob": "2104a425b2432fd8000cdc15946d4508f2a21ff0",
+    "initial_sha256": "cacd30b37b2d53bff6dd60772b909d4b0f915449163d20835e0fb4eb88de51e5",
+    "candidate_sha256": "5431a17caa08c8405420661c870a675c24f2c551b437b57740f57a0c62cbc574",
+    "changed": true,
+    "cta_suffix_preserved": true,
+    "platform_frontmatter_preserved": true,
+    "baseline_bytes": 3187,
+    "candidate_bytes": 9544,
+    "shrink_fraction_vs_baseline": -1.9946658299341071
+  },
+  "skills/bahrain/bh-tax-overview.md": {
+    "baseline_blob": "a4c6c7b5ebdafd5efe21d33d49983002008ae4c7",
+    "initial_blob": "0ec1f70b39a40a710a4582aa092d43ac96f0d554",
+    "initial_sha256": "9669f7aa238c3daafc7663a20890b27a6f9d606ccfa175969974be64a46ebe55",
+    "candidate_sha256": "9005ef1ce4596f0f9f7cc8a95c7bdb5bc89984e3d2f4ef5aedd38bf0b9399f30",
+    "changed": true,
+    "cta_suffix_preserved": true,
+    "platform_frontmatter_preserved": true,
+    "baseline_bytes": 3677,
+    "candidate_bytes": 6862,
+    "shrink_fraction_vs_baseline": -0.8661952678814251
+  },
+  "skills/bahrain/bh-transfer-pricing.md": {
+    "baseline_blob": "5b15bb9e84660852bc063d6c0ad7234b3af98991",
+    "initial_blob": "5b15bb9e84660852bc063d6c0ad7234b3af98991",
+    "initial_sha256": "ca343c93b95fd194ed183605837aea0f3891a8bb352b68a30b2bc058c1c56b37",
+    "candidate_sha256": "ca343c93b95fd194ed183605837aea0f3891a8bb352b68a30b2bc058c1c56b37",
+    "changed": false,
+    "unchanged_from_initial": true
+  }
+}

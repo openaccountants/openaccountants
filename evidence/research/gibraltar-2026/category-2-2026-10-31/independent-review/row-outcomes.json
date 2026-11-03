@@ -1,0 +1,681 @@
+{
+  "date": "2026-10-31",
+  "material_findings": [],
+  "rows": [
+    {
+      "id": "C2-01",
+      "guide_line": 64,
+      "claim_sha256": "e4bd6de7dc72e3e0d74bdddc738b9cd8d0dd79d5f9235f1ce0f2a0635e055851",
+      "excerpt_ids": [
+        "availability",
+        "it1csubmit",
+        "it1cfamily"
+      ],
+      "outcome": "accepted_with_stated_boundary",
+      "reason": "Distinct certificate job; IT1C year and certificate-type boundaries retained."
+    },
+    {
+      "id": "C2-02",
+      "guide_line": 68,
+      "claim_sha256": "79dafc998c8ec0c3f9a4702dc7114256eddac942faf62b544dbf00a211a5dd45",
+      "excerpt_ids": [
+        "prior"
+      ],
+      "outcome": "accepted",
+      "reason": "Five preceding assessment years, strict day thresholds, any three-year average, activity exception and Director waiver checked."
+    },
+    {
+      "id": "C2-03",
+      "guide_line": 69,
+      "claim_sha256": "13a29a028e5b5708b03be24fc820ccbe01e1d9e120a227575cdf29d77c0b87bf",
+      "excerpt_ids": [
+        "home",
+        "availability",
+        "issue"
+      ],
+      "outcome": "accepted",
+      "reason": "Exclusive-use definition, application-year availability and issue/effective-date distinction checked."
+    },
+    {
+      "id": "C2-04",
+      "guide_line": 70,
+      "claim_sha256": "39d1aa07c37d6dd80eb9d3597acc3e4653e3413bad279cac628489009ba8fbce",
+      "excerpt_ids": [
+        "issue",
+        "wealth",
+        "amendment",
+        "appdocs"
+      ],
+      "outcome": "accepted_with_stated_boundary",
+      "reason": "Accepted implementation boundary: announced wealth numbers are not certified as operative thresholds; fee amendment is separately enacted."
+    },
+    {
+      "id": "C2-05",
+      "guide_line": 71,
+      "claim_sha256": "271c46618ca0b741e002986266e9e1f2bda00ed5bfbbcf3e24fe06322c32e7e5",
+      "excerpt_ids": [
+        "work",
+        "local"
+      ],
+      "outcome": "accepted",
+      "reason": "Permission, economic-development condition, incidental exception and uncapped local-source consequence checked."
+    },
+    {
+      "id": "C2-06",
+      "guide_line": 77,
+      "claim_sha256": "2d92780f9ac088bb7a0d35af9fbaa9ee2c9c61322e20f88c4519a970e83b8389",
+      "excerpt_ids": [
+        "bands"
+      ],
+      "outcome": "accepted",
+      "reason": "Current ordinary ABS bands; temporary-year modifications do not extend to the covered years."
+    },
+    {
+      "id": "C2-07",
+      "guide_line": 78,
+      "claim_sha256": "94f5e1aa0d8ce9ff2bbcc617093a2fedaa174de9f1e7a4a7043fb5a4ade8948e",
+      "excerpt_ids": [
+        "cap"
+      ],
+      "outcome": "accepted",
+      "reason": "Taxable-income cap is subject to rule 10, rather than a total receipt or liability cap."
+    },
+    {
+      "id": "C2-08",
+      "guide_line": 79,
+      "claim_sha256": "75fb4481411ff41c47ceb3364472e1cb1146d9c9a20f1281f8f13ef60514abf9",
+      "excerpt_ids": [
+        "bands",
+        "cap"
+      ],
+      "outcome": "accepted",
+      "reason": "Independent capped-maximum calculation is 42380."
+    },
+    {
+      "id": "C2-09",
+      "guide_line": 80,
+      "claim_sha256": "c9a1a42182156d9625cc02303f2981e3f2e7b6dc754beef51792563050c5b294",
+      "excerpt_ids": [
+        "minimum"
+      ],
+      "outcome": "accepted",
+      "reason": "Continuing-year floor subject to first and cessation-year provisions."
+    },
+    {
+      "id": "C2-10",
+      "guide_line": 81,
+      "claim_sha256": "50a2ff687c07602507c034282727c4fb4eb46c329ce3c5b7adf3abf0abf5c492",
+      "excerpt_ids": [
+        "first",
+        "cease"
+      ],
+      "outcome": "accepted",
+      "reason": "Complete or part certificate months; first and cessation-year limits checked."
+    },
+    {
+      "id": "C2-11",
+      "guide_line": 82,
+      "claim_sha256": "22a748621f51c456c0e73b56abb032dc98d11f446bc4d33238321d6f73a32225",
+      "excerpt_ids": [
+        "amendment",
+        "advance"
+      ],
+      "outcome": "accepted",
+      "reason": "Gazette publication and commencement establish the non-refundable 5000 fee on 22 June 2026."
+    },
+    {
+      "id": "C2-12",
+      "guide_line": 83,
+      "claim_sha256": "e535bffef42ec4c058ce9836277da2c2a484a0a580f79202575f99f05d037ec7",
+      "excerpt_ids": [
+        "advance"
+      ],
+      "outcome": "accepted_with_stated_boundary",
+      "reason": "Maximum-tax advances and annual 30 November assessment-year date checked; allocation explicitly unresolved."
+    },
+    {
+      "id": "C2-13",
+      "guide_line": 84,
+      "claim_sha256": "36fd5eda46c8ab34a6988cc460a839af3b8bb2e23e0583d5e736e3de8c3fd682",
+      "excerpt_ids": [
+        "cycle"
+      ],
+      "outcome": "accepted",
+      "reason": "Endorsement interval checked in complete rule 7(3), including certificate-specified alternative."
+    },
+    {
+      "id": "C2-14",
+      "guide_line": 86,
+      "claim_sha256": "8ea5da95925727e6e96a08ed51c9a9cd838f1ad4999f7df9fc8c71b91e10c28e",
+      "excerpt_ids": [
+        "bands",
+        "cease",
+        "temporary22",
+        "temporary23",
+        "faqcap"
+      ],
+      "outcome": "accepted",
+      "reason": "Temporary rates and FAQ assessable/taxable conflict correctly reconciled to statute."
+    },
+    {
+      "id": "C2-15",
+      "guide_line": 92,
+      "claim_sha256": "a1e04d27bfd3821a0336ffcb8e169ea8b7663d0a8cf16ff085a82916d78816b1",
+      "excerpt_ids": [
+        "charge",
+        "taxbase",
+        "deduct"
+      ],
+      "outcome": "accepted",
+      "reason": "Act charging classes and benefit-equivalent receipt rule checked; classification required before cap."
+    },
+    {
+      "id": "C2-16",
+      "guide_line": 94,
+      "claim_sha256": "81dcd4ad887ee942a46e76edf02194ab8e056f7ad496dea1e686cb3e481d1f5b",
+      "excerpt_ids": [
+        "foreign",
+        "charge"
+      ],
+      "outcome": "accepted",
+      "reason": "Specified foreign income exclusion and annual all/part inclusion election; no blanket overseas-receipt exemption."
+    },
+    {
+      "id": "C2-17",
+      "guide_line": 95,
+      "claim_sha256": "93e31000d219521d9157e72856acf3d950c089a043208dd924082f382967cf31",
+      "excerpt_ids": [
+        "taxbase",
+        "cap",
+        "deduct"
+      ],
+      "outcome": "accepted",
+      "reason": "Section 25 deductions and taxable-income determination; no invented allowance or duplicate deduction."
+    },
+    {
+      "id": "C2-18",
+      "guide_line": 96,
+      "claim_sha256": "14d40c9eb9f1d089da85be5f99c99fb47013b99688c1e7da5ed63679bebcd1be",
+      "excerpt_ids": [
+        "local",
+        "bands",
+        "deduct",
+        "profitcosts"
+      ],
+      "outcome": "accepted",
+      "reason": "Rule 10 property/activity charge, 118000 rate-setting inclusion and full-band 39% reading checked; supported profit rather than gross receipts."
+    },
+    {
+      "id": "C2-19",
+      "guide_line": 98,
+      "claim_sha256": "b08a5b91ff58a56d1b713f8db2190898d4ff056a92b53b533b1bcb641f3e1ca8",
+      "excerpt_ids": [
+        "taxbase",
+        "cap",
+        "minimum",
+        "local",
+        "credit"
+      ],
+      "outcome": "accepted_with_stated_boundary",
+      "reason": "Accepted bounded working-paper reading; dividend-credit exception preserved and mixed minimum/credit/shared-allocation cases expressly not finalised."
+    },
+    {
+      "id": "C2-20",
+      "guide_line": 100,
+      "claim_sha256": "314acd8f59c3582260895c61f5b032025be0a6de6aeaa58a237b2f30932f32c8",
+      "excerpt_ids": [
+        "first",
+        "cease",
+        "partbands"
+      ],
+      "outcome": "accepted_with_stated_boundary",
+      "reason": "Accepted part-year boundary; monthly floor not pro-rated capped maximum; unresolved band/deduction legacy reference retained."
+    },
+    {
+      "id": "C2-21",
+      "guide_line": 104,
+      "claim_sha256": "c5db57e9400643a124e5324e2b60230c2602d0f0cd897c53b4cef2c7b35f45df",
+      "excerpt_ids": [
+        "family"
+      ],
+      "outcome": "accepted",
+      "reason": "Rule 11 written election, rule 4 exclusion, alternative child limbs, withdrawal, own certificate and property deeming checked."
+    },
+    {
+      "id": "C2-22",
+      "guide_line": 106,
+      "claim_sha256": "0d644e7c00bb587c4e3857361bd846457c4075250b60912bbf6fbe2bbd60e5ae",
+      "excerpt_ids": [
+        "issue",
+        "continuation",
+        "cycle",
+        "revoke",
+        "advance",
+        "legacy"
+      ],
+      "outcome": "accepted_with_stated_boundary",
+      "reason": "Continuing conditions, failure-date revocation, no-chargeability declaration, advance refund and historic transition boundaries checked."
+    },
+    {
+      "id": "C2-23",
+      "guide_line": 112,
+      "claim_sha256": "395896bde4fc60cd6a41f229492f4e0cc40f4bcbc4b2b562602e2ebeb8f5c1a7",
+      "excerpt_ids": [
+        "appfields",
+        "appdocs",
+        "appbusiness"
+      ],
+      "outcome": "accepted",
+      "reason": "Full application/checklist fields, declarations and documentary requirements read; no approval guarantee."
+    },
+    {
+      "id": "C2-24",
+      "guide_line": 114,
+      "claim_sha256": "5777b783f58049ecca7eae94f2a2181a08f41e795c79f15bc96ce99d7297cb0d",
+      "excerpt_ids": [
+        "submit",
+        "advance"
+      ],
+      "outcome": "accepted_with_stated_boundary",
+      "reason": "Checklist submission email and processing prerequisites checked; actual remittance instructions remain an explicit gap."
+    },
+    {
+      "id": "C2-25",
+      "guide_line": 116,
+      "claim_sha256": "edd0d1a257087e3415212b18a96a3a26029851c38e005966ad7e855ff640ed0c",
+      "excerpt_ids": [
+        "property",
+        "accommodation"
+      ],
+      "outcome": "accepted_with_stated_boundary",
+      "reason": "Full application and checklist wording difference read; property pre-contract approval and actual approval triggers retained."
+    },
+    {
+      "id": "C2-26",
+      "guide_line": 118,
+      "claim_sha256": "99e53c8fa6d29fb7485fdc533dfa116c287b041c5e9b05fa822813a5dd253930",
+      "excerpt_ids": [
+        "medical",
+        "familymedical"
+      ],
+      "outcome": "accepted",
+      "reason": "Medical timing, Gibraltar coverage, per-person limit, treatment categories and elected-family condition checked."
+    },
+    {
+      "id": "C2-27",
+      "guide_line": 132,
+      "claim_sha256": "3ce814a417ddad294ade0883949c2e5dcb240101d79caae94af847be2e646170",
+      "excerpt_ids": [
+        "it1csubmit",
+        "it1csource",
+        "it1cfamily",
+        "it1cboxes",
+        "return"
+      ],
+      "outcome": "accepted",
+      "reason": "All four pages of actual IT1C read: fields, attachments, no-signature instruction, email, 2026 deadline and next-year halves checked."
+    },
+    {
+      "id": "C2-28",
+      "guide_line": 136,
+      "claim_sha256": "7da4bb28e60dd83f55ac711e8e0efc84cfb42a0bfb5451716f4ba8765e656d77",
+      "excerpt_ids": [
+        "advance",
+        "payment",
+        "reduction",
+        "it1cboxes"
+      ],
+      "outcome": "accepted_with_stated_boundary",
+      "reason": "Act 39 named income classes, set-off and discretionary reduction read alongside rule 8 and form; no invented double-payment or automatic credit."
+    },
+    {
+      "id": "C2-29",
+      "guide_line": 138,
+      "claim_sha256": "614db4089abba47b463c1732a550524061a3730773ab28ea91bcffb16aef302a",
+      "excerpt_ids": [
+        "payfields",
+        "payplan"
+      ],
+      "outcome": "accepted_with_stated_boundary",
+      "reason": "Published payment plan and separate bank transfer checked; blank public controls observed; no live plan or transfer claimed."
+    },
+    {
+      "id": "C2-30",
+      "guide_line": 140,
+      "claim_sha256": "3d6b2ad794862c37bf594db6cce48b6f3c6a911d190178cc60f1b50a9e81d2e0",
+      "excerpt_ids": [
+        "oldpay",
+        "payment"
+      ],
+      "outcome": "accepted_with_stated_boundary",
+      "reason": "May 2011 payment dates read only as historical; current Act/form control."
+    },
+    {
+      "id": "C2-31",
+      "guide_line": 144,
+      "claim_sha256": "6de8dd9c1345196c87cea34eaa8deb1bcb464f6ea912251f695e6cac174789cf",
+      "excerpt_ids": [
+        "penalty",
+        "surcharge",
+        "it1csurcharge",
+        "revoke"
+      ],
+      "outcome": "accepted",
+      "reason": "Section 28 failure penalties and statutory surcharge triggers checked; form wording conflict explicitly preserved."
+    },
+    {
+      "id": "C2-32",
+      "guide_line": 148,
+      "claim_sha256": "798ccdcba93a6d0c09a885220afb9e9b38eb401df59eadadec3cb68dbe495c95",
+      "excerpt_ids": [
+        "charge",
+        "prior",
+        "foreign",
+        "family"
+      ],
+      "outcome": "accepted_with_stated_boundary",
+      "reason": "Accepted process boundary: certificate, election and home do not establish foreign law, immigration or treaty outcomes."
+    },
+    {
+      "id": "C2-33",
+      "guide_line": 154,
+      "claim_sha256": "f310789a5f72043fdcf44e5a28bc361f9527f718d4357b2d3b37145c89aad659",
+      "excerpt_ids": [
+        "foreign",
+        "cap",
+        "local",
+        "bands",
+        "minimum",
+        "deduct",
+        "profitcosts"
+      ],
+      "outcome": "accepted",
+      "reason": "Independent example: capped tax 42380 plus 3900 property tax equals 46280, above floor; eligible costs/deductions hypothetical and allocated once."
+    },
+    {
+      "id": "C2-34",
+      "guide_line": 185,
+      "claim_sha256": "edd9f54dc49d730862c586494f03ac6e5fa243ad70142a1ff65c6009aab5ed37",
+      "excerpt_ids": [
+        "first",
+        "advance",
+        "bands"
+      ],
+      "outcome": "accepted",
+      "reason": "Independent example: four months times 3083.33 equals 12333.32; fee plus maximum advance 47380 is distinct cash, not liability."
+    },
+    {
+      "id": "C2-35",
+      "guide_line": 208,
+      "claim_sha256": "54c6676a38384451842258beaff678ae768f4cc6081820c41659e7793adc1067",
+      "excerpt_ids": [
+        "it1cboxes",
+        "payment"
+      ],
+      "outcome": "accepted",
+      "reason": "Independent form control: 42380 minus 40000 equals 2380; two printed halves are 21190 each, not an asserted reconciled debt."
+    },
+    {
+      "id": "C2-36",
+      "guide_line": 227,
+      "claim_sha256": "214c799cbc61d61bdb4fc7107bac1d32eb12344899d79a80ec4f9fd9a989c739",
+      "excerpt_ids": [
+        "surcharge"
+      ],
+      "outcome": "accepted",
+      "reason": "Independent conditional surcharge control: 238, then 523.60 on tax plus first surcharge; total 3141.60."
+    }
+  ],
+  "shared_excerpts": {
+    "prior": {
+      "source": "RULES",
+      "quote_sha256": "1086591ec8392a05e7c5f09803b5ce08c6ef8111ea2bd49ae7773f6db8b923bf",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "home": {
+      "source": "RULES",
+      "quote_sha256": "4307442be69031e1b79e93790040d94a8a024ab92c5b9de387b9ed4df886c715",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "availability": {
+      "source": "RULES",
+      "quote_sha256": "18b215c881cfa376fba1b38cee707ee4057d21265583b6f81c56bbc2fd9d4d3e",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "issue": {
+      "source": "RULES",
+      "quote_sha256": "138538627b36e118a5a33bbf0293fd3a71f7f0a676848f8274c5178bd43813e4",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "work": {
+      "source": "RULES",
+      "quote_sha256": "7bb008cecbdeee3dc04f8a5e7efd6299e2eaf735ee64d7c20149297fe9064ecf",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "continuation": {
+      "source": "RULES",
+      "quote_sha256": "3460aad056acc22b5dcf2f0ae04194a1b1e0feff498417fa5f860473c411ef65",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "cycle": {
+      "source": "RULES",
+      "quote_sha256": "7ae4924c3005f2c294ccaccd4b231038261c3af05401f6829e6489dcf22b786f",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "revoke": {
+      "source": "RULES",
+      "quote_sha256": "f3d1fd933c929ce3f9f85567d19961298e989dec685a0967e281d1340375dec9",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "advance": {
+      "source": "RULES",
+      "quote_sha256": "62c544c6cc0050ccd468ef6542c7be29743eb52870d7334b12ca5003fd9a254e",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "taxbase": {
+      "source": "RULES",
+      "quote_sha256": "e84b59fe17f0f827df0bec2d676e658639777b82740a6273f05c7b0d45dd37b2",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "cap": {
+      "source": "RULES",
+      "quote_sha256": "70504319110d4ba32b9180f164eeeb4a28634af3ed109988291cadb5eaf1e290",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "minimum": {
+      "source": "RULES",
+      "quote_sha256": "4f04520836fa2cc046006dfb2180350a80b9b044d42fcbc9ffff755b430044e5",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "first": {
+      "source": "RULES",
+      "quote_sha256": "2e157ddcc349a703c004b906176531add5b1f0c433e3b4f4d5f510b1e7c9bab5",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "cease": {
+      "source": "RULES",
+      "quote_sha256": "d71d28619fc83647c414be8b87567568c2d0236d3ce918aba56272065225dce0",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "foreign": {
+      "source": "RULES",
+      "quote_sha256": "020e39f91f0dab5cb12aa45818fd93ade4e925c2a5af66099774a8f7f4ad9b2c",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "local": {
+      "source": "RULES",
+      "quote_sha256": "1241f466ed3aed6cae2b3c3082c2078ecb5b5f8411a75d5d6b780283e5aed3d6",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "family": {
+      "source": "RULES",
+      "quote_sha256": "afb394db742af5d7b807979aaad848dc7e67536fc252bae07beb5d4757d4d22b",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "legacy": {
+      "source": "RULES",
+      "quote_sha256": "eda0c7e99427fdbdbda2ed0ca65139edff03c5c611028aa12d19a8857f1c946f",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "bands": {
+      "source": "RATES",
+      "quote_sha256": "245787018b36f3b4d19300974a334b57dade3a8a05dc60015130c6d3a855697f",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "partbands": {
+      "source": "RATES",
+      "quote_sha256": "04e2f34689c83b811f9ce055ac3c6feb640b92e75178215128e8e69e541e1579",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "charge": {
+      "source": "ACT",
+      "quote_sha256": "cba3db7624da43bb8b7a88c0d4527ab62fbac926704e2d3563a5f846f3eaea23",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "deduct": {
+      "source": "ACT",
+      "quote_sha256": "0ccd1c2174409bda45f1ca3712f1dd73665933d9db296406f7d0b82f1628e07c",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "return": {
+      "source": "ACT",
+      "quote_sha256": "e74d9390004f5d213db0a67e89fdd7de05ecb260c106ad90dbdfc50b23ff09dc",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "payment": {
+      "source": "ACT",
+      "quote_sha256": "42df981cbe89ae5e0a78787f58a0f0e33f4cef175e686f1f793be42f82a9f944",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "reduction": {
+      "source": "ACT",
+      "quote_sha256": "9466a5e3ce24ee7e4a89018aef17f210b0f6c3fd35b89bd6c2a995c5818a1119",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "credit": {
+      "source": "ACT",
+      "quote_sha256": "f3f5abc27f9150171413d0c5455d28bdabcfe6fb37939990d51a0d13a599c688",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "surcharge": {
+      "source": "ACT",
+      "quote_sha256": "d8092ce1511c1642e806fa03a1457c9c3e9d08f6d5104ee831a7aa3f93f0ead6",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "penalty": {
+      "source": "ACT",
+      "quote_sha256": "5d178cee9cc9e59ba7064fd2d5d7207e0e11338d3d8a891c25cc3a33cc76bc7b",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "amendment": {
+      "source": "AMEND",
+      "quote_sha256": "728a33e5d9e3742b7993b1141cebf8b126a3cea8ac6e90e342b1ff72a89f73de",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "appfields": {
+      "source": "APPLICATION",
+      "quote_sha256": "21075a1bacadb6908d28dd7efccb94801d3f29c41f13ad8dd6ebac9515c178fc",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "appdocs": {
+      "source": "APPLICATION",
+      "quote_sha256": "0e718d7aa1f9a28009009245f7839c3c9f1bb29b6906f19e2a20d40673285357",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "submit": {
+      "source": "CHECKLIST",
+      "quote_sha256": "b9804e31b5399a7bbe80023d2f3b53009fed122062c79ee4cfe542787b5e2957",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "appbusiness": {
+      "source": "CHECKLIST",
+      "quote_sha256": "9618941a0a84d45ea6498ca058c44d948ecff974f799411f0adcfac16bfb1954",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "property": {
+      "source": "CHECKLIST",
+      "quote_sha256": "461b87773fde3cc4931958b3aae0ee0469cfbfff2f64316f5b4ff559712c17e8",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "medical": {
+      "source": "CHECKLIST",
+      "quote_sha256": "5417b403dcf8f7890e523d4a35b4b2f1e27235a93820cc710d838cb3a5c019b5",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "familymedical": {
+      "source": "CHECKLIST",
+      "quote_sha256": "bfc56631023de430c4feaa0f55944d1762121655e8b7fbfbefdcc050f784cf52",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "accommodation": {
+      "source": "ACCOM",
+      "quote_sha256": "7b4fa1441ade5fca82e474bde14bcbf35fd204832051e2c27cc3f8c65dd283f1",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "it1csubmit": {
+      "source": "IT1C",
+      "quote_sha256": "aefe65273a880c076c20f71818e2f869c0871e66ad071f54414f2a084f577e69",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "it1cboxes": {
+      "source": "IT1C",
+      "quote_sha256": "0ff86d8400c23cd4f1d3cbd298c4db404adb314b1db2756d7105f6c23c560f02",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "it1csource": {
+      "source": "IT1C",
+      "quote_sha256": "1a46e81f43b2b9d4f702bd9c7cfb095b6f3a967f0d827748d3684abe8573d64e",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "it1cfamily": {
+      "source": "IT1C",
+      "quote_sha256": "ad40d4ca5b2c24da43e06092da722034b75e5c0c37a611a6ae38fee2aa73ba35",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "it1csurcharge": {
+      "source": "IT1C",
+      "quote_sha256": "e4f8d3e779e30d4fb23ce662310561ba03aec6067ef3b614c1c75a169eb26a6c",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "payfields": {
+      "source": "PAYGUIDE",
+      "quote_sha256": "84815396e21e1ab999cae6f1fe1bf90b3c936a2c5dd0be863657259f003d6920",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "payplan": {
+      "source": "PAYGUIDE",
+      "quote_sha256": "35086c4991bd50a21a56bba11fbde99b49dbb413fa4a77488c4ce12de91f8cfe",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "oldpay": {
+      "source": "OLDGUIDE",
+      "quote_sha256": "0928711735fc8e4b646e78b0759254af879bdb28451c163617f87c29fb77a24d",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "wealth": {
+      "source": "ANNOUNCE",
+      "quote_sha256": "3d82a0bded77977cce5d4ac6867545e0d15e8f5e8c34a39c02e5bfb01aa8b697",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "temporary22": {
+      "source": "RATES",
+      "quote_sha256": "dfb198513fbc0e2e46e290296bb8ec200b06a4ea114ee347a3ea6c26a6589cd9",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "temporary23": {
+      "source": "RATES",
+      "quote_sha256": "ea23b776a631ff80f6ea79b4c3a460f7e246651029e69f765cc946767b8136cb",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "faqcap": {
+      "source": "FAQ",
+      "quote_sha256": "c58b7fcf93bceccdf49f6c2b177b7cf29122898e458c78d8e3ab35e1d13ce5bc",
+      "outcome": "exact_capture_binding_and_context_checked"
+    },
+    "profitcosts": {
+      "source": "ACT",
+      "quote_sha256": "5e74f93e6a8d7e84e1a63ffd6ea9b260f617285229a09231f74cf7f97b761a34",
+      "outcome": "exact_capture_binding_and_context_checked"
+    }
+  }
+}

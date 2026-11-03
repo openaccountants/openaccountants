@@ -1,0 +1,9 @@
+# Independent review request: Faroe inheritance/estate addition
+
+Review the exact inputs in writer-manifest.json, all64 rule/figure rows (inheritance36, estate28), recompute all4 new examples, and spot-check the preservation/topic map. The existing47-row payroll/formation review and older complete review evidence remain accepted and byte-exact; do not redo them absent a concrete check failure.
+
+Check every subclaim against its responsive original-language quote, including rate classes/brackets, estate-wide rather than per-heir exemptions, insurance funding, whole-share aggregation, valuation dates, signatures and original delivery, separate filing/election/payment clocks, inclusive death-year thresholds and securities-recipient residence conditions. Freshly read primary law/form source where a receipt check fails. Distinguish statute-supported interpretation from actual unresolved implementation; no country completion or seven-domain partial clearance is sought.
+
+The court canonical/direct route returned403; normal in-app browser unavailable. The official publisher-hosted mirror and linked current forms were actually read through web retrieval, with verbatim responses retained. The failed short capital URL returned200 LawNotFound and is explicitly excluded; correct fullURL is preserved separately. Current entity-return instructions describe2025 filed2026, not an invented2026 form. Remaining-evidence.md gives exact missing legal/operational bridges.
+
+All11 current Guides pass mechanical checks and22examples;152unit tests passed. The initial broad strict-sync failure is preserved as sync-before-main-advance.txt, caused by shared origin/main advancing into unrelated country edits. Current main6a05c79 was merged normally; strict-sync now checks11Guides with0errors. No push, authority contact, filing or payment occurred.

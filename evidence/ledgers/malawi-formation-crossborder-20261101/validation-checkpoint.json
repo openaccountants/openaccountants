@@ -1,0 +1,15 @@
+{
+  "content_commit": "36d95e8006247e49438aa4633d12d557be5716ea",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "actual_committed_validation": {
+    "changed_only_validator": "2 Guides checked; 0 warning groups; 3 changed Markdown files includes README",
+    "examples": "2 files; 4 cases; 0 failures, 0 missing",
+    "strict_metadata": "2 source Guides; 0 errors, 0 warnings, 0 notices",
+    "whole_base_whitespace": "pass"
+  },
+  "shape_checks": "15 per Guide, all pass",
+  "ledger_quotes": "67/67 found in cached read text ignoring layout punctuation",
+  "preservation": "Six other Malawi Guides and 28 prior Malawi evidence files unchanged, plus whole existing formation CTA/platform fields. Only allowlisted changes in Git diff; all other prior research trees unchanged.",
+  "review": "Fresh independent review pending. Existing F4/currentness/live-use hold is not cleared.",
+  "draft_backup_only": true
+}

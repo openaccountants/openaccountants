@@ -1,0 +1,15 @@
+{
+  "retrieved": "2026-10-22",
+  "url": "https://www.gibraltar.gov.gi/uploads/_PressOffice/Treaty%20Customs%20Guidance/Transit%20GN.pdf",
+  "title": "HM Customs Gibraltar Goods Transit Process",
+  "retrieval": "Official PDF retrieved successfully by curl; text extracted for source check.",
+  "locators": [
+    "sections2.1(c),2.2(c)",
+    "section4.2(a)-(b)"
+  ],
+  "limits": [
+    "No live workflow tested.",
+    "Broken internal section6(iv) cross-reference remains unresolved.",
+    "Guidance does not replace statutory refund conditions."
+  ]
+}

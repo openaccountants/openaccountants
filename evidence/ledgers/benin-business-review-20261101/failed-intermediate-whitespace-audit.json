@@ -1,0 +1,16 @@
+{
+  "status": "FAILED intermediate published checkpoint; superseded by evidence-only EOF repair and final committed pass receipt",
+  "failed_head": "56bb55ab6bf0542a978034a74066218311603327",
+  "command": [
+    "git",
+    "diff",
+    "--check",
+    "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "56bb55ab6bf0542a978034a74066218311603327"
+  ],
+  "returncode": 2,
+  "stdout": "evidence/ledgers/benin-business-review-20261101/closure-review.md:42: new blank line at EOF.\n",
+  "stderr": "",
+  "rerun_against_immutable_commits": true,
+  "original_publication_issue": "Initial validation assertion stopped receipt creation, but a shell command sequence continued to the intermediate push. Final publication must use explicit exit-checked sequential operations."
+}

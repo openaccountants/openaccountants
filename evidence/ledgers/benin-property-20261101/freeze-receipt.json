@@ -1,0 +1,65 @@
+{
+  "status": "Frozen writer checkpoint, independent review pending",
+  "files": [
+    {
+      "path": "skills/benin/bj-property-tfu.md",
+      "sha256": "40cac2bdcacf7ecaf1f70e5deedffade2fd40dccf66956356fa1a1c402114637"
+    },
+    {
+      "path": "skills/benin/bj-rental-income-tax.md",
+      "sha256": "4124bd25b23cbf3998c1fcbb436ac151588bbee4335e7a77201c2f9883b229a9"
+    },
+    {
+      "path": "skills/benin/README.md",
+      "sha256": "981b92a3dbda2bb3b4cb706d2cafa4b90418f67187c062e0e8d66f1badb2cb60"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-property-tfu.json",
+      "sha256": "0c5cc67cc5e88169d12bf6aaedc359196fd4202e19831fafd09a6b8d6ac1b995"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-property-tfu.md",
+      "sha256": "6e630b6ba2b726ff8bfd8d829c8efa450ab31d620aaa208047338719687dded5"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-rental-income-tax.json",
+      "sha256": "28a0afa462d362c3a30cfe61062e224037f5b9805a47cdfc156ca15a6f39f616"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/bj-rental-income-tax.md",
+      "sha256": "d78818475f1b9845e4ee72bb6722194c181346f4716230b94fccb18b4b18dd34"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/old-topic-destinations.json",
+      "sha256": "da8e2f947cd75512010ff8fa8462114429bc5b2507d7a6dd2befb9d393638de3"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/preservation-baseline.json",
+      "sha256": "af4bdf5838fae4ff45a38959c6274ce704d19e135c2ecc8e22fa8a8b16664789"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/readme-routing-change.json",
+      "sha256": "c69f875520c4e6448c988bacd25c67f44dda3f3e253857d75e6e4c23ffaf0e89"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/source-identities.json",
+      "sha256": "abf724f4cd1bec60b0e9c5800981bde96b4bc02bf2c5af140966d1dfbcfcbce2"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-check-history.json",
+      "sha256": "ffe2791b6e004f6024d2d428061af0ee1ae97b00ce0b414ed5c146dd2005985f"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-check.py",
+      "sha256": "6fda41b8bda9da45c5aeae39782f4a64ab19fdb1602cda9022db5bdf4fd8dcb3"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-checks.json",
+      "sha256": "2d6f592f33dc4a59b5da7995dae3a03e946fb1df277e04ca328a969f69399ff0"
+    },
+    {
+      "path": "evidence/ledgers/benin-property-20261101/writer-record.md",
+      "sha256": "31e6b124918d9edaf446f5b314af2038790eeb635774eaa5fa8684bc1acd474c"
+    }
+  ]
+}

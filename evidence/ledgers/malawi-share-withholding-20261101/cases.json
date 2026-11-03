@@ -1,0 +1,47 @@
+{
+  "assumptions": "Quoted Act3 rule applies to hypothetical qualifying broker/dealer payment; no fees/noncash/foreign currency; no decision about actual commencement, basis or filing.",
+  "case1": {
+    "inputs": {
+      "amount_realized": 5000000,
+      "supplied_gain": 800000,
+      "rate": 0.02
+    },
+    "expected": {
+      "withholding": 100000,
+      "net": 4900000,
+      "wrong_gain_tax": 16000,
+      "shortfall": 84000
+    },
+    "rows": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S10"
+    ]
+  },
+  "case2": {
+    "inputs": {
+      "amount_realized": 3000000,
+      "rate": 0.02,
+      "ordinary": "no income-tax exemption or reinvestment exception",
+      "alternative": "income-tax exemption independently established"
+    },
+    "expected": {
+      "ordinary_tax": 60000,
+      "ordinary_net": 2940000,
+      "exempt_tax": 0,
+      "exempt_net": 3000000,
+      "difference": 60000
+    },
+    "rows": [
+      "S01",
+      "S02",
+      "S03",
+      "S06",
+      "S07"
+    ]
+  },
+  "all_numeric_amounts_other_than_statutory_rate": "Hypothetical inputs/arithmetic, not law figures"
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "S06",
+    "actual_scope_read": "ActualArticles8(1)-(3),9throughcapitalisedinterestcontext;priorArticle11historicaldebt andArticle14infrastructureproofreused.",
+    "accepted_application": "12m/adjustedthresholdandeligibleNetInterestExpenditurescope.",
+    "raw_sha256": "426272086d87004817d422b9d293433f0a7a7bf61b8502a94ba9d6fc8c4b1435",
+    "text_sha256": "e3ea69e5cfc2406b9eb275f69faeb8ce569ac7e356ff0598fdaa293fa107c595"
+  },
+  {
+    "id": "S02",
+    "actual_scope_read": "ActualArticle2allthresholdparagraphs,Article3exclusions;Articles4-5loss/interestcarry;existingacceptedwholeDecisionevidencereused.",
+    "accepted_application": "SBRrepeatedplacements,arm-lengthgrossRevenueandperiodcoverage.",
+    "raw_sha256": "924ea50e18581c01586b84b4c139f66535a85ecf2cfb5735ead481f8572cf7f8",
+    "text_sha256": "c690ad8dd24c192cc824e548a58a67d4b6dc82ce3ebee13e4c0244818acc4095"
+  },
+  {
+    "id": "S03",
+    "actual_scope_read": "ActualRevenueparagrapharoundtext496-513anddefinition223.",
+    "accepted_application": "Revenuegrossnotprofit;arm-length.",
+    "raw_sha256": "1dcf67b472def3550ed95857045c58c0abccb7ef46839a93320e5e984165e472",
+    "text_sha256": "5b23aafd7c103afd28940cdd393f0a999ee3b4aeb17f5a34dfbf4d4232220ff1"
+  },
+  {
+    "id": "S09",
+    "actual_scope_read": "Actualquestions2,3,6,7.",
+    "accepted_application": "Naturalregistrationthresholdandseparate3mrelief;stale2026sunsetclaimmatchesbulletin.",
+    "raw_sha256": "dbee055b1b44b5b23f1d73574c28af33fe2fece27662c44005ceefe4b1e9724e",
+    "text_sha256": "747ca43cae6b03aec2c901d94ef5ee06bc04a89af55e89f226668b397485a87c"
+  },
+  {
+    "id": "S10",
+    "actual_scope_read": "ActualArticleOneamendmentanddatedissuancefooter.",
+    "accepted_application": "2029replacementand29July2026.",
+    "raw_sha256": "6200cfa6196d94630100f8ae820ad3c359d25f661cc0358ac4fb182c96c0d755",
+    "text_sha256": "be8f8fe72bcf76ee7d61ac4119b294a9214f2633980eaab3a5d65073804ceea6"
+  },
+  {
+    "id": "S12",
+    "actual_scope_read": "ActualArticle5conditions/lossstatusandArticles6-7.",
+    "accepted_application": "Failure4subsequentperiods,currentcommencement,classificationstillheld.",
+    "raw_sha256": "5398950851246aeb8c434d1302c3c5ff151180b2c3ddaf687e1d426b779bbd89",
+    "text_sha256": "c88cc20050545d47b3fa798760db3a8bea253e48c7e300fe41682007a6b87a7c"
+  },
+  {
+    "id": "S17",
+    "actual_scope_read": "ActualArticles1-3andregistrationtable;predecessoracceptedwholeDecisionreused.",
+    "accepted_application": "7monthdeadlineand30Novembertransition.",
+    "raw_sha256": "17ec4eb99d185591899c327cb7ee6d49c7a66912dfd469a6deb6d5e9cc5e0ee0",
+    "text_sha256": "56a0b0c51ed23b2ab9d21f871e24fefc67449f9fcdbdede8ff5d1bcff0c5d75b"
+  },
+  {
+    "id": "S20",
+    "actual_scope_read": "ActualArticles2start,5-6;prioracceptedwholeDecisionreused.",
+    "accepted_application": "Conditionalexemptionreferral,15Sept2026.",
+    "raw_sha256": "21ed39b548df4d1e79e77cc05cf1dd34d7c0fdbe6e1d1037bb3c1413956a932d",
+    "text_sha256": "e98e1a8da0b3a577a8a7025b56d5f2e6814e9a3992bb0a1d8365782296574f50"
+  },
+  {
+    "id": "S21",
+    "actual_scope_read": "ActualArticles2,3start,5-8;prioracceptedwholeDecisionregistrationtablesreused.",
+    "accepted_application": "Registrationdateexamplesandthresholdboundaries.",
+    "raw_sha256": "a02fa518d01bb943b0fc2add9ec50f49002505d6c432b8ab7a3d86378c0fac24",
+    "text_sha256": "bf41c30c239a8e536d9605b835b1c040bab842596136ae509acbb58965a8174d"
+  },
+  {
+    "id": "S22",
+    "actual_scope_read": "ActualArticle2auditthreshold,QFZP,taxgroup,nonresidentscope;Articles3-5.",
+    "accepted_application": "50mthresholdand2025startperiods.",
+    "raw_sha256": "33b3ee28626f5ab0a17bc644335e85ea518c15a749a42e597c814b2c8295e1d5",
+    "text_sha256": "3ae4268e905560a79ee89f46491c9b11966b8b4850be0d4088a8eae52a519cba"
+  },
+  {
+    "id": "S29",
+    "actual_scope_read": "ActualArticle65and67;Article78allrequiredrecordcategories;currentArticle48andamendmentfootnote.",
+    "accepted_application": "Deemedinvoice/recordcheckclosures;historicalselfinvoicegapexplicitP2-03.",
+    "raw_sha256": "264ef5003e5d5c79107ccf130ac60485bd6c69a06fc59957166ecbf49215f120",
+    "text_sha256": "96d0f5052409b5774c79489f5b7904caf15a72fe30d141f48c90a41d7759f1c2"
+  },
+  {
+    "id": "S33",
+    "actual_scope_read": "ActualArticle46(6)andtransitionalfootnote15,including2yearlimitationandnoFTAdecisioncondition.",
+    "accepted_application": "Refundvoluntarydisclosureexceptionnowclosespreviouspartialsourceopen.",
+    "raw_sha256": "7740414383e68a2a8f1afdc1958905ce496434c411b2fe0ff84969c495e650f9",
+    "text_sha256": "07c929122eef011fca2af3c5af597a9c17d32e7fcb8aad8b020160529321f44e"
+  },
+  {
+    "id": "S38",
+    "actual_scope_read": "ActualTable1item15andneighbours.",
+    "accepted_application": "50percentunpaid/undeclaredimportgoodstax. Do notexpandtoallimportservices.",
+    "raw_sha256": "7eefb79d21fa72a0937cf4dcc3f62db745aa40eb95343b104cf13782da4724a4",
+    "text_sha256": "ae03ae475a27bbd0b2ad1cade65fbd78f9a9c8be16f88270cb4d8e28bd566287"
+  },
+  {
+    "id": "S32",
+    "actual_scope_read": "ActualBox1commercialproperty/deemedsuppliesexamples;priorotherformmechanicsreused.",
+    "accepted_application": "CommercialleaseclassificationandBox1deemedgifts.",
+    "raw_sha256": "3c38e43a62155092b43156a135e011401284e1e26d97e62488b96396dcfdfdb7",
+    "text_sha256": "64bc662d17c57e7b81a4e435b1b9db450f756b1f16254674196096928f9b75ab"
+  },
+  {
+    "id": "S04",
+    "actual_scope_read": "ActualAnnex6.1heading/firstmergercases,MinimumRatedefinition3528,1.3.3;priorreadAnnex1.1.2.",
+    "accepted_application": "Screenrepairand15percentratesummaryonly;detailedcomputationsremainheld.",
+    "raw_sha256": "13528d9196ee2e624f06637426a79e4021d346428aa6bba34a87f11e3cbcca44",
+    "text_sha256": "0bf87c650114188a0fca64ad2c614d1b8ef73bbfaf76139539a48b10120b7a86"
+  }
+]

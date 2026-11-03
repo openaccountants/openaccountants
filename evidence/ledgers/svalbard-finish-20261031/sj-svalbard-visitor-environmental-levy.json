@@ -1,0 +1,842 @@
+{
+  "slug": "sj-svalbard-visitor-environmental-levy",
+  "guide_sha256": "d30213477809875245d0fc31743bd026396369df510bce840eef1a7746c4c8d7",
+  "legal_rows": [
+    {
+      "id": "R001",
+      "section": "Who this applies to",
+      "rule": "Territory, visitor levy and Fund",
+      "act_article": "Regulation §§1–2",
+      "read_date": "2026-10-31",
+      "source": "environment-fee",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+      "reader_line": 93,
+      "original_quote": "Forskriften gjelder for reisende til landområder og indre farvann på Svalbard."
+    },
+    {
+      "id": "R002",
+      "section": "Who this applies to",
+      "rule": "Resident levy prohibition",
+      "act_article": "Environmental Protection Act §78",
+      "read_date": "2026-10-31",
+      "source": "environment-law",
+      "url": "https://lovdata.no/dokument/NL/lov/2001-06-15-79/KAPITTEL_7",
+      "reader_line": 759,
+      "original_quote": "Kongen kan gi forskrift om at den som besøker Svalbard, skal betale en miljøavgift. Miljøavgiften kan ikke pålegges fastboende. Miljøavgiften går inn i Svalbards miljøvernfond."
+    },
+    {
+      "id": "R003",
+      "section": "Who this applies to",
+      "rule": "Resident exemption/refund",
+      "act_article": "Regulation §4",
+      "read_date": "2026-10-31",
+      "source": "environment-fee",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+      "reader_line": 104,
+      "original_quote": "Fastboende på Svalbard er unntatt fra plikten til å betale avgift etter forskriften her, jf. svalbardmiljøloven § 3 første ledd bokstav i, og kan kreve avgiften refundert av Svalbard miljøvernfond."
+    },
+    {
+      "id": "R004",
+      "section": "Who this applies to",
+      "rule": "Population register identifies eligible residents",
+      "act_article": "Fund procedure, introductory paragraph",
+      "read_date": "2026-10-31",
+      "source": "fund-refund",
+      "url": "https://www.miljovernfondet.no/refusjon-av-avgift/",
+      "reader_line": 18,
+      "original_quote": "Alle reisende til Svalbard må betale en miljøavgift på 150 kroner som automatisk inngår i prisen ved kjøp av fly- og cruise billetter. Fastboende på Svalbard må også betale avgiften, men de kan få denne refundert. Som fastboende regnes alle som er innført i befolkningsregisteret for Svalbard."
+    },
+    {
+      "id": "R005",
+      "section": "Rates, bands and thresholds",
+      "rule": "NOK150 ticket levy",
+      "act_article": "Regulation §3 first paragraph",
+      "read_date": "2026-10-31",
+      "source": "environment-fee",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+      "reader_line": 97,
+      "original_quote": "Ved kjøp av billett for reise til Svalbard innkreves det fra reisearrangør et miljøavgift på kr 150,-."
+    },
+    {
+      "id": "R006",
+      "section": "Rates, bands and thresholds",
+      "rule": "Air collection on departure ticket and incorporated exceptions",
+      "act_article": "Regulation §3 second paragraph",
+      "read_date": "2026-10-31",
+      "source": "environment-fee",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+      "reader_line": 98,
+      "original_quote": "For reisende med fly vil et miljøavgift på kr 150 innkreves ved kjøp av billett for reise fra Svalbard. Unntak fra avgiftsplikt som beskrevet i forskrift om avgifter vedrørende statens luftfartsanlegg- og tjenester gitt i medhold av luftfartsloven § 7-26 (takstregulativet) § 1-4 og § 3-1 til § 3-6 vil gjelde tilsvarende for avgiftplikt for flypassasjerer etter forskriften her."
+    },
+    {
+      "id": "R007",
+      "section": "Rates, bands and thresholds",
+      "rule": "Private boat NOK150 and notification",
+      "act_article": "Regulation §3 third paragraph",
+      "read_date": "2026-10-31",
+      "source": "environment-fee",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+      "reader_line": 99,
+      "original_quote": "Individuelle reisende med egen båt som har meldeplikt etter turistforskriftens § 7 skal betale miljøavgift på kr 150,- i forbindelse med melding til Sysselmesteren."
+    },
+    {
+      "id": "R008",
+      "section": "Rates, bands and thresholds",
+      "rule": "Three-year claim clock",
+      "act_article": "Fund procedure, Tidsfrist",
+      "read_date": "2026-10-31",
+      "source": "fund-refund",
+      "url": "https://www.miljovernfondet.no/refusjon-av-avgift/",
+      "reader_line": 26,
+      "original_quote": "Refusjonskrav må være fremmet innen tre år etter faktisk reisedato."
+    },
+    {
+      "id": "R009",
+      "section": "Rates, bands and thresholds",
+      "rule": "Special-reasons dispensation",
+      "act_article": "Regulation §5",
+      "read_date": "2026-10-31",
+      "source": "environment-fee",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+      "reader_line": 109,
+      "original_quote": "Klima- og miljødepartementet kan dispensere fra forskriften når særlige grunner taler for det."
+    },
+    {
+      "id": "R010",
+      "section": "The base",
+      "rule": "Air/cruise ticket collection and private boat self-payment",
+      "act_article": "Governor travel guidance, Miljøavgift",
+      "read_date": "2026-10-31",
+      "source": "governor-travel",
+      "url": "https://www.sysselmesteren.no/ferdsel-pa-svalbard/",
+      "reader_line": 85,
+      "original_quote": "Avgiften legges automatisk til billettprisene av fly- og cruiseselskap. Tilreisende i private båter må selv sørge for å betale miljøavgiften."
+    },
+    {
+      "id": "R011",
+      "section": "The base",
+      "rule": "Private boat payment official account publication",
+      "act_article": "Governor Fund page, Betalingsinformasjon",
+      "read_date": "2026-10-31",
+      "source": "environment-fund",
+      "url": "https://www.sysselmesteren.no/svalbards-miljovernfond/",
+      "reader_line": 42,
+      "original_quote": "Avgiften legges automatisk til billettprisene av fly- og cruiseselskap. Tilreisende i private båter må betale miljøavgiften (150 NOK, - pr. pers) til følgende kontonummer:"
+    },
+    {
+      "id": "R012",
+      "section": "The base",
+      "rule": "Completed outward-travel evidence",
+      "act_article": "Fund procedure, Privatpersoner step1",
+      "read_date": "2026-10-31",
+      "source": "fund-refund",
+      "url": "https://www.miljovernfondet.no/refusjon-av-avgift/",
+      "reader_line": 21,
+      "original_quote": "1. Ta vare på reisedokumentasjon for nedreisen. Som reisedokumentasjon godtas boardingpass eller annen bekreftelse på gjennomført reise fra Svalbard."
+    },
+    {
+      "id": "R013",
+      "section": "The base",
+      "rule": "Personal form excludes employer/NAV/Patient Travel paid trips",
+      "act_article": "Fund procedure, Privatpersoner step2",
+      "read_date": "2026-10-31",
+      "source": "fund-refund",
+      "url": "https://www.miljovernfondet.no/refusjon-av-avgift/",
+      "reader_line": 22,
+      "original_quote": "2. Fyll ut elektronisk refusjonsskjema som finnes på skjemasiden til sysselmesteren, www.sysselmesteren.no Refusjon etter dette skjemaet kan ikke kreves for reiser betalt av arbeidsgiver, NAV, Pasientreiser eller lignende."
+    },
+    {
+      "id": "R014",
+      "section": "The base",
+      "rule": "Employer agreement and separate form",
+      "act_article": "Fund procedure, Arbeidsgivere",
+      "read_date": "2026-10-31",
+      "source": "fund-refund",
+      "url": "https://www.miljovernfondet.no/refusjon-av-avgift/",
+      "reader_line": 24,
+      "original_quote": "Det kan inngås skriftlige avtaler om refusjon med arbeidsgiverne på Svalbard. Arbeidsgiverne skal sende inn et eget skjema om refusjon for arbeidsgivere til skattekontoret. Skjema finnes på skjemasiden til sysselmesteren, www.sysselmesteren.no"
+    },
+    {
+      "id": "R015",
+      "section": "Deadlines and filing",
+      "rule": "Tax office administers refund",
+      "act_article": "Fund procedure, introductory paragraph",
+      "read_date": "2026-10-31",
+      "source": "fund-refund",
+      "url": "https://www.miljovernfondet.no/refusjon-av-avgift/",
+      "reader_line": 19,
+      "original_quote": "Svalbard skattekontor står for det praktiske arbeidet med refusjon til fastboende. Slik går du frem for å få refundert avgiften:"
+    },
+    {
+      "id": "R016",
+      "section": "Penalties and interest",
+      "rule": "Coercive fine through Act96",
+      "act_article": "Regulation §6",
+      "read_date": "2026-10-31",
+      "source": "environment-fee",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+      "reader_line": 114,
+      "original_quote": "For å sikre at bestemmelsene i forskriften eller vedtak i medhold av forskriften blir gjennomført, kan Sysselmesteren fastsette tvangsmulkt i medhold av svalbardmiljøloven § 96."
+    },
+    {
+      "id": "R017",
+      "section": "Penalties and interest",
+      "rule": "Intentional/negligent infringement fines",
+      "act_article": "Regulation §7",
+      "read_date": "2026-10-31",
+      "source": "environment-fee",
+      "url": "https://lovdata.no/dokument/SF/forskrift/2006-12-22-1532",
+      "reader_line": 119,
+      "original_quote": "Den som forsettlig eller uaktsomt overtrer bestemmelser fastsatt i eller i medhold av denne forskrift, straffes med bøter."
+    },
+    {
+      "id": "R018",
+      "section": "Deadlines and filing",
+      "rule": "Published form title and initial access choices only; no post-access fields verified",
+      "act_article": "Official refund form initial screen, browser observation",
+      "read_date": "2026-10-31",
+      "source": "refund-form-observation.txt",
+      "url": "https://skjema.no/sysselmesteren/ref_miljoavgift",
+      "reader_line": 4,
+      "original_quote": "Refusjon miljøavgift for fastboende på Svalbard; Logg inn med ID-porten; Logg inn med brukernavn og passord; Åpne skjema uten innlogging",
+      "quote_kind": "separately displayed exact UI labels, not a contiguous statutory sentence"
+    }
+  ],
+  "derived_controls": [
+    {
+      "id": "EX1",
+      "section": "Two worked examples that recompute",
+      "kind": "fictional assumptions and derived control; not an enacted figure",
+      "exact_block": "name: Svalbard environmental levy ordinary visitor tickets 2026\ninputs:\n  liable_visitors: 12\n  levy_per_person: 150\nsteps:\n  ticket_levy: liable_visitors*levy_per_person\nexpected:\n  ticket_levy: 1800",
+      "legal_premises": "R001–R018"
+    },
+    {
+      "id": "EX2",
+      "section": "Two worked examples that recompute",
+      "kind": "fictional assumptions and derived control; not an enacted figure",
+      "exact_block": "name: Svalbard resident private versus employer refund route 2026\ninputs:\n  private_trips: 3\n  employer_trips: 2\n  levy_per_trip: 150\nsteps:\n  total_paid: (private_trips+employer_trips)*levy_per_trip\n  personal_claim: private_trips*levy_per_trip\n  separate_employer_route: employer_trips*levy_per_trip\nexpected:\n  total_paid: 750\n  personal_claim: 450\n  separate_employer_route: 300",
+      "legal_premises": "R001–R018"
+    }
+  ],
+  "old_topic_status": "New tax job; no existing Guide rewritten or retired. All six prior Guides remain byte-exact at this stage.",
+  "new_units": [
+    {
+      "line": 1,
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:1",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 2,
+      "sha256": "090eda0f04fe27d6097d871defdcbfa5f59338b6c47dfbd7b16b3891497406c8",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:2",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 3,
+      "sha256": "50e0feee68f75846626515441d47e2196679bb6143f225f549e857b70528e63d",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:3",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 4,
+      "sha256": "f9bf8f48b71e7e9fcfefd822f6728c700629f4cca1ffd842d6924fd249f38a40",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:4",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 5,
+      "sha256": "e44004b5cb8ddfed163f11b3c47fd21526c009b30680b6239d7b963c316eb436",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:5",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 6,
+      "sha256": "01e31c65417c22ab63f6d4c963a02ed3ff95ff45b1f46df8e96818c48bf06c21",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:6",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 7,
+      "sha256": "61cde385b57d2a160d64ec82e99186c0cbc8c7412df36894c3d9f83363dfbab9",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:7",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 8,
+      "sha256": "2075d289c37516ed582076eb424be0c23912a9b94a66575d056a02d1e6aa6e2f",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:8",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 9,
+      "sha256": "ad427b838377d4e899d5dfe143dad64ada3fa3f24cedc1bac189f64bea99cb98",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:9",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 10,
+      "sha256": "b094f8aa13c8c17e4e1e3aa78ac8528bd4aa63b1bf9ece3e9ad601af293c5c41",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:10",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 11,
+      "sha256": "88fe39b1720c48e428b7fc36eadb3dc7e0ced50525eb0b2f774bf88988301460",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:11",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 12,
+      "sha256": "07413aa4173f94cea74769ed93639d51afc23921f736f8641cf8d1938aab0fab",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:12",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 13,
+      "sha256": "260f79bc019b81665b8506e3c76a0ce1455b1d77fe425f8337407dcc788f6b0c",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:13",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 14,
+      "sha256": "62de87d129e88535b82bea430f493ca14272a1027fe471d328536b2606798f52",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:14",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 15,
+      "sha256": "cb5deecb962b132e0dbf8c3395a1f136fe7ca5b95456f40c734c90faf7116822",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:15",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 16,
+      "sha256": "b93fb1ecba449f93a2c2185c861c60da3f24228d556a24a2b33c3efa04ef2caf",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:16",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 17,
+      "sha256": "081f868621a9b5b7d813303b197acde948859a4ac9530b767260868efadf80eb",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:17",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 18,
+      "sha256": "92646ea26f4a7c6d024666142418b43488fee5ee30675ee6e5bb87a98738909a",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:18",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 19,
+      "sha256": "e32ac367965522ffea51fa40fbce207324bb84cb4c972738f0ac3336b6c3e369",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:19",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 20,
+      "sha256": "4b95fa1da6be88eeabed851b54d26a5ed11d294a82cfeeaa0050a420d1b670f3",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:20",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 21,
+      "sha256": "c0857df9615ec677ff61c192921151a28077aef59b16931e5810d86a4d29909a",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:21",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 22,
+      "sha256": "7ee979aee5935fa294dadd94eebf7a44a90dac67dcb384abd856504e7c15ce26",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:22",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 23,
+      "sha256": "cb3f91d54eee30e53e35b2b99905f70f169ed549fd78909d3dac2defc9ed8d3b",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:23",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 25,
+      "sha256": "6bc0df0658d3d7f5864834f52a4cec3b7cd79870accbaf1e7cbdbf98872aed94",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:25",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 27,
+      "sha256": "e09fe14e2946e4d4e09152564ff8d0fef85299e8e14c6ec37aca206fdd227b0f",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:27",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 29,
+      "sha256": "cb108c54439d126c114d52ff1d5304c8a9f9fcbb3c892f9c6c4929520cc0d5ee",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:29",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 31,
+      "sha256": "db785601e7aefda3ed79c007c9006f4239bc1bbb34d90f2414cfde796833eb24",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:31",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 33,
+      "sha256": "176bfeee931d3c69fdd37123514e8db4e2d2999e07032a49c338b9687660f4c1",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:33",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 35,
+      "sha256": "18afa23013b274b4a61b58c540c4bb7b846c094c9a4d271117a148eedbf52f91",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:35",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 37,
+      "sha256": "916e00ba1d5511a82c22395e2942fd3af6302f6edcb8b37b4b8ed543d8bf359e",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:37",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 39,
+      "sha256": "131e2943e64cb69ba25a911bf35bad055065bfc5a266bcb6669cc4b5dd3accef",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:39",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 40,
+      "sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:40",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 41,
+      "sha256": "69eb02b80634cf74cadb7218676a355febc5d9aadcce4f96ff09c619025c3b91",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:41",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 42,
+      "sha256": "13fb5fb91184c8edf641240d0b59c125585519a0149d8070667a1caea6a7cf63",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:42",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 43,
+      "sha256": "080235420b00bcf6e621c89c53dffb33101992f9f966aebffb84f493265cfe5b",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:43",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 44,
+      "sha256": "f3610c7c5447bc887d10c484556fa55c6ee8019ee3ffeb18f0e04588c2a9f2eb",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:44",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 45,
+      "sha256": "9773b9f37b07c39881dcfa841bdef315ea886a7f851230d95b7361d05b8b21f3",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:45",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 47,
+      "sha256": "6eb80538572395d717972ee22ac9bf63922c074ccae8c45c3d0fa578424d6e47",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:47",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 49,
+      "sha256": "dee404e4259671520e2203fd153243003929539db3ef302ab29693d675d8102a",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:49",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 51,
+      "sha256": "f2c20521a49b9d7a562f2160ae820f06e41c1851d9d5f00bdacbf8a77829e462",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:51",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 53,
+      "sha256": "4ce3c47364287d6fd5ccffd4ffebe245d8d5ef4356a4f98f95c3c3c7127c71f0",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:53",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 55,
+      "sha256": "16ec8f97e981df312b8317a60ce87a68f6c153644a1954c3ff6fd413858c5f1b",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:55",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 57,
+      "sha256": "87413812901f59d0c629fe326950e0db6d24d52ed9e9c7b1916a9a9ad85ff7f6",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:57",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 59,
+      "sha256": "74cde68230eae455d227051170cbd846c451548541f852ca2d2e71645569abec",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:59",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 61,
+      "sha256": "7e74211941edbac2ec44d9385d4e2a8d383283a45a36e5112d3995da5b665fa8",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:61",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 62,
+      "sha256": "d451f15dd756a50f718626f36ca30f79db854a9819a53e12eb4e7a2d7886195e",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:62",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 64,
+      "sha256": "ed87e3f919e44cd5f373dd5ef97058023ff975de886641faf525ad6e942c230b",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:64",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 66,
+      "sha256": "d0f1b7edb43e29ff8d8b1bbe776c7c4d14b3d4b83f96abc329da2cc822eca74c",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:66",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 68,
+      "sha256": "c67c2fea59578bd96a5e273cfbf75f0bf4a0d652faa07418813809796e13db20",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:68",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 70,
+      "sha256": "add2410508da09b9ff241b7663a2e20fb76de859a4c316e70813a567c7c5ea6d",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:70",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 72,
+      "sha256": "ebcf6be8d82985f4f9625aeeed1b4f9fd05ba407e72ebbaf2233605b26159151",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:72",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 73,
+      "sha256": "56c6d67491abdf66013781abb443c9e2006037d894b463c1778ef26d588cd8a3",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:73",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 74,
+      "sha256": "b56276b81cba012a525ce783922bbcb7385a23d6da75a2abcc83a0a7f262ab60",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:74",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 75,
+      "sha256": "7d569bf5cf592aa0cc55a036d779fb68b7eb4031879aa2ddcc51badf3ca084e7",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:75",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 76,
+      "sha256": "7c12f316b0fd98e55c64d3a485ec99b5ef6c04517067c27f372b7a27f493e703",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:76",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 78,
+      "sha256": "43111c0c3b556cc4d5dc61c5d8c9ca2ee9db4952e3dbebd5b70a22a5a602f831",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:78",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 80,
+      "sha256": "9a7542df91919143e95b3e50c580982a75b03022fc7c8a4ec3db294e4d9e9668",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:80",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 82,
+      "sha256": "4fcf0049b3f4b7c86852c870ae4ce2b9f2131e5636b1147677ac76c6985e5e55",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:82",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 84,
+      "sha256": "050ab8609739fc188885d703760a8cd5d2f5993130f539a58e59242533dffcca",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:84",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 86,
+      "sha256": "655054027ae73f542b41fe788082c2e7a6d5eaa10d8cb997e0ad5c7cb6a8924f",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:86",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 88,
+      "sha256": "faea3ee513294227cf90edea2b3ee6323bf0c1da7fd4ca5e7eca74de83dbf932",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:88",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 90,
+      "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:90",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 91,
+      "sha256": "c78c474358fc2c56e26c4d495c9c5ae0faabe9487c1b5f0bcfea3437343eba7e",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:91",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 92,
+      "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:92",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 93,
+      "sha256": "d5b15de4979a07f6058d6de9d3e5fd9975e421f39ec984980fd2e8fa6846dfbf",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:93",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 94,
+      "sha256": "554b1a582012d7afe4443d1b0ab3edd3911839225fd6e5b6b8d0a1b45be8c3b4",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:94",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 95,
+      "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:95",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 96,
+      "sha256": "45f369575f56362ceebbd405fc0b598f74f6bb614681d9ad722b0363faf14195",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:96",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 97,
+      "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:97",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 98,
+      "sha256": "d9c0adca0bd81b296fb79db026a8cfb47a69654a4dea78a8b526fa19d8350682",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:98",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 99,
+      "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:99",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 101,
+      "sha256": "5469d06870653ece819d8127d5014967e3da857d820863a330d4ba8d53534e10",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:101",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 103,
+      "sha256": "53dacde49e0dad8b33518068333b47b9a6e3245d514bd8be11787de97e6885d8",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:103",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 104,
+      "sha256": "98c5b9dd8ddce05e7eda62c1d89906368c301951a105295cbd72d63e27d1013f",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:104",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 105,
+      "sha256": "199e802fb27fdde875ba8593b284711286e0e202f7902c89a98206fca81e576f",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:105",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 106,
+      "sha256": "965a86572a774b1259c73ef29f3b343e6d0be1564082b405dd42fdcdaf930833",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:106",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 107,
+      "sha256": "02323798f87977806e57b1c4446081463da318c6db86008fa564d9c0b86dbd7e",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:107",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 108,
+      "sha256": "92378761c748dded7dcd2db3b7b0bb054b9bd9c99ed0887c86722894ebc1cd3d",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:108",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 109,
+      "sha256": "56501c6b552835bbb9549d8c02d18eb1466c10bcf55ac9232f9de2763e5f1055",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:109",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 110,
+      "sha256": "0e6b2e4fb1ae12baee3827bc4e293cae1e34ac40a07c7cedea3ad38f8503adf3",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:110",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 111,
+      "sha256": "a4e5e7abc2e0ee643c8959000f27d989e393336da2e3a7450aff2c1dd5213388",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:111",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 112,
+      "sha256": "de8703cf33dce38c2ef79af814436ba68f93de94e4c45e06f6e6126c39d265d4",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:112",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 113,
+      "sha256": "749034ea977812e8a1034cc704cf4a2549757021d94e229a9b7cd8860f1e9603",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:113",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 114,
+      "sha256": "eb485a4063f595cdc30b4f72169298d271333832a95df5df7a47f65fe7a55d86",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:114",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 115,
+      "sha256": "61367e8591e015c4842d4bab985d75bd1539ad6f854c8f10acaee7b28356164a",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:115",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 116,
+      "sha256": "fcda0dfdb0b69d11d18a9876807cc4a344a2e41421c1b55f12bf8ecca664fbb1",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:116",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 117,
+      "sha256": "f1b901847390b0ed7e374e7c1e464ec17b46a427c487a5ad6cbd2906405083d5",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:117",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 119,
+      "sha256": "1904ad435e82ee53c915eef7ecee708e8ead4a5057811fc8e223e40d16ee3ba9",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:119",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 121,
+      "sha256": "6afde5ddce0eca4654619c4fa749928af727bc918af17328f0ec6c266a455b68",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:121",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 122,
+      "sha256": "0082acf22fa99cd95cdc26e51b6528d768eebe930badb0fa7a7a8721667d4402",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:122",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 123,
+      "sha256": "1c1cff59a3f93c8327f7bd96234c0ecbf62ab79907b04631b2464651900e6678",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:123",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 124,
+      "sha256": "335711a47ad8b58ee33f977b7192e081248cae0df4d43349378e3f0160b16be9",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:124",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 125,
+      "sha256": "65c206660471835ae500ba272efb01de6ddb6250f7932a3692247bfbb30b2816",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:125",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 127,
+      "sha256": "ad2af7425caf26f8e901cad40a4f6e6a983dbbdd707725cdd2439ecaa1779f28",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:127",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 129,
+      "sha256": "80a5633ad112dc618a5e0a67c61bc94dd171a849fe8bc11ef6773957104599f3",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:129",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 130,
+      "sha256": "23cca02b74f386463efa24796c7a9011b0d2c93f0c38b4d15d5d276205b59b43",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:130",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 131,
+      "sha256": "70fc3bf93091c530b6d0fded31d7f5c369e144cda7ea132028864d10cb771112",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:131",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 132,
+      "sha256": "0c8dc5d71bc891bbecb41e98c471a00b735577a03e219865be8b53bbbce07ef0",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:132",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 133,
+      "sha256": "5dae8e110c9f01f1b6b130dd8d6d233fbdcb28e5009251be2568872f569f293d",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:133",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 134,
+      "sha256": "5a651e775ffb3220af15617a32b601bd0c3f9e8b420567ca593d6131a1f1ee3a",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:134",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 135,
+      "sha256": "8ea6bc8c20e00778c26f38fe11a99356301431f4640465769edc7f3f95afc81f",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:135",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 136,
+      "sha256": "bdc3b79d6acea20ff85d1a02b04c2ebded033e943bb977f233c6efb1eca0512b",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:136",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    },
+    {
+      "line": 138,
+      "sha256": "cce599cfbc944c53c00821fe65415544d58defb2bf66cd9eb2cb6da152af936d",
+      "destination": "skills/svalbard/sj-svalbard-visitor-environmental-levy.md:138",
+      "status": "new material; no predecessor Guide exists for this tax job"
+    }
+  ]
+}

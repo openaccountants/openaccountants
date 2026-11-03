@@ -1,0 +1,352 @@
+{
+  "sa-freelance-intake": {
+    "units": 254,
+    "source_text_and_hash_errors": [],
+    "nonempty_original_lines_not_represented": [],
+    "samples": {
+      "ownership": {
+        "id": "sa-freelance-intake-005",
+        "old_text": "Job: (1) confirm taxpayer is in scope, (2) classify the regime split — Zakat vs Corporate Income Tax (CIT) vs mixed — based on ownership nationality, (3) check VAT, excise, RETT, WHT, GOSI/Saudization, e-invoicing (Fatoorah) gates, (4) confirm MISA license exists for any foreign owner, (5) identify downstream skills to run, (6) hand off to `sa-return-assembly`. Outputs addressed to a credentialed Saudi reviewer (SOCPA-licensed Saudi CPA or a tax adviser registered with ZATCA). The reviewer signs off — this skill is not the preparer of record.",
+        "writer_destination": "4.6 Real estate transaction gate",
+        "writer_destination_line": 116,
+        "destination_text": "#### 4.6 Real estate transaction gate",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "VAT registration": {
+        "id": "sa-freelance-intake-009",
+        "old_text": "- VAT mandatory if annual taxable supplies ≥ **SAR 375,000** (trailing-12) → route `saudi-arabia-vat` + `saudi-einvoice`.",
+        "writer_destination": "4.3 VAT registration gate",
+        "writer_destination_line": 102,
+        "destination_text": "#### 4.3 VAT registration gate",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "VAT classification": {
+        "id": "sa-freelance-intake-035",
+        "old_text": "- **Revenue:** 2025 annual turnover (SAR), monthly breakdown, domestic vs export mix, exempt vs zero-rated vs standard-rated for VAT.",
+        "writer_destination": "Section 3: Required inputs",
+        "writer_destination_line": 49,
+        "destination_text": "- **Revenue:** 2026 annual turnover (SAR), monthly breakdown, domestic vs export mix, exempt vs zero-rated vs standard-rated for VAT.",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "fiscal period": {
+        "id": "sa-freelance-intake-026",
+        "old_text": "7. **Gap filling** — `ask_user_input_v0` only for items documents cannot answer (Hijri vs Gregorian election, MISA license number, Nitaqat color band).",
+        "writer_destination": "4.8 GOSI / Saudization / WPS gate",
+        "writer_destination_line": 126,
+        "destination_text": "#### 4.8 GOSI / Saudization / WPS gate",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "rates": {
+        "id": "sa-freelance-intake-007",
+        "old_text": "```\nKSA tax/Zakat resident entity (CR issued, ZATCA-registered)? -> NO = REFUSE\n       |\nOwnership nationality?\n       |\n       +-- 100% Saudi/GCC natural persons        -> ZAKAT only (sa-zakat)\n       |\n       +-- 100% foreign (non-GCC)                -> CIT 20% (sa-corporate-tax)\n       |        MISA license MUST exist first; if not -> REFUSE -> sa-formation\n       |\n       +-- Mixed (Saudi/GCC + foreign)           -> SPLIT\n       |        Saudi/GCC share -> Zakat;\n       |        Foreign share   -> CIT 20%\n       |\n       +-- Listed JSC                            -> proportional float treatment (out of scope here)\n```",
+        "writer_destination": "4.9 MISA investment registration gate",
+        "writer_destination_line": 130,
+        "destination_text": "#### 4.9 MISA investment registration gate",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "WHT": {
+        "id": "sa-freelance-intake-014",
+        "old_text": "- Non-resident payments (services, royalties, dividends, interest, technical fees, etc.) → route `sa-withholding-tax`.",
+        "writer_destination": "Section 1: Quick reference: regime decision tree at a glance",
+        "writer_destination_line": 75,
+        "destination_text": "0. **Route to sa-zakat**: 100% Saudi/GCC natural persons → ZAKAT only",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "excise": {
+        "id": "sa-freelance-intake-005",
+        "old_text": "Job: (1) confirm taxpayer is in scope, (2) classify the regime split — Zakat vs Corporate Income Tax (CIT) vs mixed — based on ownership nationality, (3) check VAT, excise, RETT, WHT, GOSI/Saudization, e-invoicing (Fatoorah) gates, (4) confirm MISA license exists for any foreign owner, (5) identify downstream skills to run, (6) hand off to `sa-return-assembly`. Outputs addressed to a credentialed Saudi reviewer (SOCPA-licensed Saudi CPA or a tax adviser registered with ZATCA). The reviewer signs off — this skill is not the preparer of record.",
+        "writer_destination": "4.6 Real estate transaction gate",
+        "writer_destination_line": 116,
+        "destination_text": "#### 4.6 Real estate transaction gate",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "GOSI": {
+        "id": "sa-freelance-intake-005",
+        "old_text": "Job: (1) confirm taxpayer is in scope, (2) classify the regime split — Zakat vs Corporate Income Tax (CIT) vs mixed — based on ownership nationality, (3) check VAT, excise, RETT, WHT, GOSI/Saudization, e-invoicing (Fatoorah) gates, (4) confirm MISA license exists for any foreign owner, (5) identify downstream skills to run, (6) hand off to `sa-return-assembly`. Outputs addressed to a credentialed Saudi reviewer (SOCPA-licensed Saudi CPA or a tax adviser registered with ZATCA). The reviewer signs off — this skill is not the preparer of record.",
+        "writer_destination": "4.6 Real estate transaction gate",
+        "writer_destination_line": 116,
+        "destination_text": "#### 4.6 Real estate transaction gate",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "Nitaqat": {
+        "id": "sa-freelance-intake-013",
+        "old_text": "- Employees → route `sa-gosi-saudization` (GOSI + Nitaqat + WPS via Mudad).",
+        "writer_destination": "4.8 GOSI / Saudization / WPS gate",
+        "writer_destination_line": 126,
+        "destination_text": "#### 4.8 GOSI / Saudization / WPS gate",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "WPS": {
+        "id": "sa-freelance-intake-013",
+        "old_text": "- Employees → route `sa-gosi-saudization` (GOSI + Nitaqat + WPS via Mudad).",
+        "writer_destination": "4.8 GOSI / Saudization / WPS gate",
+        "writer_destination_line": 126,
+        "destination_text": "#### 4.8 GOSI / Saudization / WPS gate",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "MISA": {
+        "id": "sa-freelance-intake-005",
+        "old_text": "Job: (1) confirm taxpayer is in scope, (2) classify the regime split — Zakat vs Corporate Income Tax (CIT) vs mixed — based on ownership nationality, (3) check VAT, excise, RETT, WHT, GOSI/Saudization, e-invoicing (Fatoorah) gates, (4) confirm MISA license exists for any foreign owner, (5) identify downstream skills to run, (6) hand off to `sa-return-assembly`. Outputs addressed to a credentialed Saudi reviewer (SOCPA-licensed Saudi CPA or a tax adviser registered with ZATCA). The reviewer signs off — this skill is not the preparer of record.",
+        "writer_destination": "4.6 Real estate transaction gate",
+        "writer_destination_line": 116,
+        "destination_text": "#### 4.6 Real estate transaction gate",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "RETT": {
+        "id": "sa-freelance-intake-005",
+        "old_text": "Job: (1) confirm taxpayer is in scope, (2) classify the regime split — Zakat vs Corporate Income Tax (CIT) vs mixed — based on ownership nationality, (3) check VAT, excise, RETT, WHT, GOSI/Saudization, e-invoicing (Fatoorah) gates, (4) confirm MISA license exists for any foreign owner, (5) identify downstream skills to run, (6) hand off to `sa-return-assembly`. Outputs addressed to a credentialed Saudi reviewer (SOCPA-licensed Saudi CPA or a tax adviser registered with ZATCA). The reviewer signs off — this skill is not the preparer of record.",
+        "writer_destination": "4.6 Real estate transaction gate",
+        "writer_destination_line": 116,
+        "destination_text": "#### 4.6 Real estate transaction gate",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "interest": {
+        "id": "sa-freelance-intake-014",
+        "old_text": "- Non-resident payments (services, royalties, dividends, interest, technical fees, etc.) → route `sa-withholding-tax`.",
+        "writer_destination": "Section 1: Quick reference: regime decision tree at a glance",
+        "writer_destination_line": 75,
+        "destination_text": "0. **Route to sa-zakat**: 100% Saudi/GCC natural persons → ZAKAT only",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "filing": {
+        "id": "sa-freelance-intake-047",
+        "old_text": "- **Mixed ownership split** — Proportional split. The Saudi/GCC share of equity attracts Zakat; the foreign share of taxable income attracts CIT. Both sa-zakat and sa-corporate-tax route. Single combined ZATCA filing covers both components.",
+        "writer_destination": "4.2 Ownership-nationality gate: the Zakat/CIT split",
+        "writer_destination_line": 96,
+        "destination_text": "#### 4.2 Ownership-nationality gate: the Zakat/CIT split",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "payment": {
+        "id": "sa-freelance-intake-038",
+        "old_text": "- **Documents:** CR, MISA license, ZATCA tax certificate, VAT certificate, bank statements 2025, sales tax invoices (Phase 2-compliant if integrated wave), purchase invoices, GOSI subscriber report, prior Zakat/CIT/VAT/WHT returns, payment receipts (SADAD).",
+        "writer_destination": "4.9 MISA investment registration gate",
+        "writer_destination_line": 130,
+        "destination_text": "#### 4.9 MISA investment registration gate",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "treaty": {
+        "id": "sa-freelance-intake-072",
+        "old_text": "- **Tax treaty reduction** — Tax treaties (KSA has 50+ DTTs) may reduce rates; reviewer applies treaty.",
+        "writer_destination": "4.7 Withholding gate",
+        "writer_destination_line": 120,
+        "destination_text": "#### 4.7 Withholding gate",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "TP": {
+        "id": "sa-freelance-intake-171",
+        "old_text": "- Groups with transfer-pricing complexity (≥ SAR 6 million related-party transactions threshold for CbCR / Local File / Master File) → refuse; specialist transfer-pricing adviser required.",
+        "writer_destination": "Section 4: Regime decision tree with thresholds and citations",
+        "writer_destination_line": 90,
+        "destination_text": "Thresholds for 2026. Figures not marked to a source are listed under Not yet confirmed.",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "schemas": {
+        "id": "sa-freelance-intake-141",
+        "old_text": "### 6.2 Structured intake package (internal JSON for sa-return-assembly)",
+        "writer_destination": "6.2 Structured intake package (internal JSON for sa-return-assembly)",
+        "writer_destination_line": 180,
+        "destination_text": "#### 6.2 Structured intake package (internal JSON for sa-return-assembly)",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "templates": {
+        "id": "sa-freelance-intake-138",
+        "old_text": "## Section 6 — Intake output template",
+        "writer_destination": "Section 6: Intake output template",
+        "writer_destination_line": 140,
+        "destination_text": "### Section 6: Intake output template",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "CTA": {
+        "id": "sa-freelance-intake-232",
+        "old_text": "## Talk to a verified accountant",
+        "writer_destination": "Talk to a verified accountant",
+        "writer_destination_line": 376,
+        "destination_text": "## Talk to a verified accountant",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      }
+    }
+  },
+  "sa-return-assembly": {
+    "units": 430,
+    "source_text_and_hash_errors": [],
+    "nonempty_original_lines_not_represented": [],
+    "samples": {
+      "ownership": {
+        "id": "sa-return-assembly-008",
+        "old_text": "- **Do NOT re-interrogate the user about residency, CR number, TIN, or ownership structure** — intake already captured this; trust the upstream packages.",
+        "writer_destination": "Scope",
+        "writer_destination_line": 28,
+        "destination_text": "- **Do NOT re-interrogate the user about residency, CR number, TIN, or ownership structure**: intake already captured this; trust the upstream packages.",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "VAT classification": {
+        "id": "sa-return-assembly-124",
+        "old_text": "0. **Phase 5** — Annual VAT-able revenue per saudi-arabia-vat should equal financial statement revenue (after standard reconciling items: zero-rated exports, exempt items, output adjustments); annual output VAT vs. sum of monthly/quarterly returns; annual input VAT vs. sum of returns; net VAT position: refundable or payable",
+        "writer_destination": "3.5 Phase 5: VAT reconciliation",
+        "writer_destination_line": 207,
+        "destination_text": "0. **Phase 5**: Annual VAT-able revenue per saudi-arabia-vat should equal financial statement revenue (after standard reconciling items: zero-rated exports, exempt items, output adjustments); annual output VAT vs. sum of monthly/quarterly returns; annual input VAT vs. sum of returns; net VAT position: refundable or payable",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "fiscal period": {
+        "id": "sa-return-assembly-027",
+        "old_text": "| Tax year (default) | Gregorian calendar year (1 Jan – 31 Dec); some entities approved for Hijri year; financial year of taxpayer if different by approval |",
+        "writer_destination": "2.2 Zakat declaration: inputs",
+        "writer_destination_line": 133,
+        "destination_text": "| `saudi-einvoice` | E-invoicing compliance status (Fatoorah Phase 1 generation + Phase 2 integration with ZATCA) | Compliance attestation |",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "rates": {
+        "id": "sa-return-assembly-065",
+        "old_text": "| `sa-zakat` | Zakat base computation: equity-method base (capital + retained earnings + reserves + long-term liabilities − long-term assets − adjustments) OR Zakat-on-profit base where lower; 2.5% Zakat rate (or 2.577% Hijri-year conversion); working capital adjustments | Main Zakat base schedule; Zakat liability line |",
+        "writer_destination": "2.2 Zakat declaration: inputs",
+        "writer_destination_line": 129,
+        "destination_text": "| `sa-gosi-saudization` | Actual contribution statements, payroll, Nitaqat result and WPS records; HOLD unverified rates, bands and legal compliance assertions | Salary reconciliation and open employment issues |",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "WHT": {
+        "id": "sa-return-assembly-055",
+        "old_text": "| 100% Saudi / GCC-owned | Zakat declaration only | sa-zakat, saudi-arabia-vat, sa-withholding-tax, sa-gosi-saudization, sa-formation, saudi-einvoice |",
+        "writer_destination": "2.1 Entity-type matrix: which upstream skills feed which return",
+        "writer_destination_line": 113,
+        "destination_text": "| 100% Saudi / GCC-owned | Zakat declaration only | sa-zakat, saudi-arabia-vat, sa-withholding-tax, sa-gosi-saudization, sa-formation, saudi-einvoice |",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "excise": {
+        "id": "sa-return-assembly-035",
+        "old_text": "| Excise return | **Bi-monthly**; due within 15 days of period-end |",
+        "writer_destination": "3.7 Phase 7: RETT and Excise (if applicable)",
+        "writer_destination_line": 213,
+        "destination_text": "#### 3.7 Phase 7: RETT and Excise (if applicable)",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "GOSI": {
+        "id": "sa-return-assembly-055",
+        "old_text": "| 100% Saudi / GCC-owned | Zakat declaration only | sa-zakat, saudi-arabia-vat, sa-withholding-tax, sa-gosi-saudization, sa-formation, saudi-einvoice |",
+        "writer_destination": "2.1 Entity-type matrix: which upstream skills feed which return",
+        "writer_destination_line": 113,
+        "destination_text": "| 100% Saudi / GCC-owned | Zakat declaration only | sa-zakat, saudi-arabia-vat, sa-withholding-tax, sa-gosi-saudization, sa-formation, saudi-einvoice |",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "Nitaqat": {
+        "id": "sa-return-assembly-068",
+        "old_text": "| `sa-gosi-saudization` | GOSI contributions (employer + employee), Saudization tier (Nitaqat: Platinum / High Green / Medium Green / Low Green / Yellow / Red), WPS file submissions via Mudad | Salary & wage schedule; compliance attestation |",
+        "writer_destination": "8.1 WPS (Wage Protection System) via Mudad",
+        "writer_destination_line": 347,
+        "destination_text": "#### 8.1 WPS (Wage Protection System) via Mudad",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "WPS": {
+        "id": "sa-return-assembly-018",
+        "old_text": "The output is a reviewer-ready package: line-by-line ZATCA working paper, cross-skill reconciliation table, payment instructions (ZATCA portal → SADAD billing ID → Saudi bank channel), filing instructions, reviewer checklist, taxpayer action list, WPS / Saudization compliance check, and 2026 planning notes.",
+        "writer_destination": "8.1 WPS (Wage Protection System) via Mudad",
+        "writer_destination_line": 347,
+        "destination_text": "#### 8.1 WPS (Wage Protection System) via Mudad",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "MISA": {
+        "id": "sa-return-assembly-048",
+        "old_text": "4. **2026 planning notes** — VAT periodicity check, WHT monthly cadence, advance Zakat / CIT planning, Saudization tier maintenance, working capital optimisation for Zakat",
+        "writer_destination": "2.5 Intake-required identifiers",
+        "writer_destination_line": 164,
+        "destination_text": "#### 2.5 Intake-required identifiers",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "RETT": {
+        "id": "sa-return-assembly-036",
+        "old_text": "| RETT (Real Estate Transaction Tax) | Transaction-by-transaction at notarisation; 5% on real estate disposals |",
+        "writer_destination": "4.2 Cross-skill reconciliations",
+        "writer_destination_line": 288,
+        "destination_text": "**Cross-check 5: RETT (if any disposals)**",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "interest": {
+        "id": "sa-return-assembly-078",
+        "old_text": "| `sa-withholding-tax` | WHT suffered (rare) and WHT agent obligations on payments to non-residents (5% royalties / 15% management fees / 20% other / 5% dividends / 5% interest — per ITL Art. 68) | Tax credits schedule; agent compliance check |",
+        "writer_destination": "2.3 CIT return (foreign-owned entities): inputs",
+        "writer_destination_line": 143,
+        "destination_text": "| `saudi-arabia-vat` | Output and input VAT; VAT return reconciliation | Cross-check vs. revenue |",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "loss": {
+        "id": "sa-return-assembly-141",
+        "old_text": "| Computation — CIT | Accounting profit → taxable income; tax adjustments; depreciation; interest deduction limit; loss carry-forward |",
+        "writer_destination": "4.1 Master workbook sheets",
+        "writer_destination_line": 235,
+        "destination_text": "| Computation: CIT | Accounting profit → taxable income; tax adjustments; depreciation; interest deduction limit; loss carry-forward |",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "filing": {
+        "id": "sa-return-assembly-011",
+        "old_text": "- **Do NOT submit anything to ZATCA.** This skill produces a working paper plus filing instructions. A credentialed reviewer (SOCPA member, or recognised ICAEW / ACCA / US CPA practising in KSA) must review, and the taxpayer (or authorised representative) submits via the ZATCA portal.",
+        "writer_destination": "4.1 Master workbook sheets",
+        "writer_destination_line": 234,
+        "destination_text": "| Computation: Zakat | Supported base, minimum/maximum review and correct art. 15 period percentage |",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "payment": {
+        "id": "sa-return-assembly-018",
+        "old_text": "The output is a reviewer-ready package: line-by-line ZATCA working paper, cross-skill reconciliation table, payment instructions (ZATCA portal → SADAD billing ID → Saudi bank channel), filing instructions, reviewer checklist, taxpayer action list, WPS / Saudization compliance check, and 2026 planning notes.",
+        "writer_destination": "8.1 WPS (Wage Protection System) via Mudad",
+        "writer_destination_line": 347,
+        "destination_text": "#### 8.1 WPS (Wage Protection System) via Mudad",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "refund": {
+        "id": "sa-return-assembly-124",
+        "old_text": "0. **Phase 5** — Annual VAT-able revenue per saudi-arabia-vat should equal financial statement revenue (after standard reconciling items: zero-rated exports, exempt items, output adjustments); annual output VAT vs. sum of monthly/quarterly returns; annual input VAT vs. sum of returns; net VAT position: refundable or payable",
+        "writer_destination": "3.5 Phase 5: VAT reconciliation",
+        "writer_destination_line": 207,
+        "destination_text": "0. **Phase 5**: Annual VAT-able revenue per saudi-arabia-vat should equal financial statement revenue (after standard reconciling items: zero-rated exports, exempt items, output adjustments); annual output VAT vs. sum of monthly/quarterly returns; annual input VAT vs. sum of returns; net VAT position: refundable or payable",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "retention": {
+        "id": "sa-return-assembly-047",
+        "old_text": "3. **Taxpayer action list (Markdown)** — payments to make (SADAD bills to settle), ZATCA portal submission steps, deadlines, WPS / Saudization confirmations, record retention",
+        "writer_destination": "1.1 What this capstone produces",
+        "writer_destination_line": 100,
+        "destination_text": "3. **Taxpayer action list (Markdown)**: payments to make (SADAD bills to settle), ZATCA portal submission steps, deadlines, WPS / Saudization confirmations, record retention",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "treaty": {
+        "id": "sa-return-assembly-214",
+        "old_text": "- **CIT return bottom line formula** — Accounting profit before tax                                 SAR X Plus: Tax adjustments (non-deductible)                       SAR X Less: Tax adjustments (extra-deductible)                     SAR X = Taxable income                                             SAR X Interest deduction limit: 50% of EBITDA — apply if breached  SAR X Loss carry-forward (25% cap per year)                        SAR X = Final taxable income                                       SAR X CIT at 20% (general) / 85% (upstream petroleum) / 30% (natural gas) SAR X = CIT liability                                              SAR X Less: Foreign tax credit (treaty-based)                      SAR X Less: Any WHT credit (rare for resident filer)               SAR X Less: Any advance CIT paid                                   SAR X = Net CIT payable                                            SAR X",
+        "writer_destination": "9.2 CIT interest deduction limit (foreign entities)",
+        "writer_destination_line": 392,
+        "destination_text": "- **Interest HOLD**: Do not plan or restructure using the withdrawn 50%-of-EBITDA assertion. Obtain the current loan-return rule, bank exception, actual finance costs/income and amendment history. Arabic regulations art. 9(2), PDF p. 10, use a different formula; no replacement calculation is applied until current applicability is resolved. [Official compilation](https://zatca.gov.sa/en/RulesRegulations/Taxes/Documents/Regulations_of_Income_Tax.pdf).",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "TP": {
+        "id": "sa-return-assembly-280",
+        "old_text": "- Related-party transactions (transfer pricing — Saudi adopts OECD-aligned TP rules; Local File / Master File / CbCR thresholds apply)",
+        "writer_destination": "7.5 Audit & assessment",
+        "writer_destination_line": 689,
+        "destination_text": "- Related-party transactions (transfer pricing: Saudi adopts OECD-aligned TP rules; Local File / Master File / CbCR thresholds apply)",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "reconciliation": {
+        "id": "sa-return-assembly-153",
+        "old_text": "- **Reconciliation tolerance rule** — Each cross-check must pass within tolerance (SAR 100 default; SAR 1,000 for larger entities). Failures flagged, not silently absorbed.",
+        "writer_destination": "4.2 Cross-skill reconciliations",
+        "writer_destination_line": 310,
+        "destination_text": "| Invoice-type technical requirements | Check the applicable current specifications | HOLD blanket QR/clearance/reporting assertions |",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "templates": {
+        "id": "sa-return-assembly-068",
+        "old_text": "| `sa-gosi-saudization` | GOSI contributions (employer + employee), Saudization tier (Nitaqat: Platinum / High Green / Medium Green / Low Green / Yellow / Red), WPS file submissions via Mudad | Salary & wage schedule; compliance attestation |",
+        "writer_destination": "8.1 WPS (Wage Protection System) via Mudad",
+        "writer_destination_line": 347,
+        "destination_text": "#### 8.1 WPS (Wage Protection System) via Mudad",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      },
+      "CTA": {
+        "id": "sa-return-assembly-426",
+        "old_text": "## Talk to a verified accountant",
+        "writer_destination": "Talk to a verified accountant",
+        "writer_destination_line": 774,
+        "destination_text": "## Talk to a verified accountant",
+        "independent_result": "Topic exists in candidate or explicit hold; exact writer mapping may be too narrow/incorrect, see initial-findings group6; no full684 manual mapping acceptance."
+      }
+    }
+  }
+}

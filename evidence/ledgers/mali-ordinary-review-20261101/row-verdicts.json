@@ -1,0 +1,2986 @@
+{
+  "candidate_commit": "15a570e0ef8904526c8814232cb4d9839feb5951",
+  "source_scope": "Every119ledger row interpreted against actual cached official passages and neighbours. Source-original hashes verified. This checks identified older/undated baselines only, not later-law continuity.",
+  "rows": [
+    {
+      "id": "ml-corporate-income-tax-01",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Who this applies to: Corporate forms and express option",
+      "act_article_url": "CGI art. 83; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1891,
+          "end_line": 1892
+        },
+        {
+          "start_line": 1893,
+          "end_line": 1894
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Named capital-company forms and express SCS option match art 83; transparent partners remain separate."
+    },
+    {
+      "id": "ml-corporate-income-tax-02",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Who this applies to: Business scope and transparent partners",
+      "act_article_url": "CGI art. 43,82–84; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1885,
+          "end_line": 1886
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 43/82/84 distinguish business categories, individual/partner assessments and mixed SCS treatment. No universal company scope inferred."
+    },
+    {
+      "id": "ml-corporate-income-tax-03",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Who this applies to: Territoriality and special mining legislation",
+      "act_article_url": "CGI art. 44–45; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1107,
+          "end_line": 1107
+        },
+        {
+          "start_line": 1114,
+          "end_line": 1115
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Mali profit territoriality is subject to ratified conventions; mining/petroleum follow special legislation. Special cases held."
+    },
+    {
+      "id": "ml-corporate-income-tax-04",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Rates, bands and thresholds: Ordinary rate and profit rounding",
+      "act_article_url": "CGI art. 85/Loi 11-078; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1903,
+          "end_line": 1904
+        },
+        {
+          "start_line": 1905,
+          "end_line": 1906
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "30 percent and downward thousand-franc profit-base rounding match art 85."
+    },
+    {
+      "id": "ml-corporate-income-tax-05",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Rates, bands and thresholds: Turnover minimum, base and loss years",
+      "act_article_url": "CGI art. 86/LF2014–2015; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1908,
+          "end_line": 1909
+        },
+        {
+          "start_line": 1911,
+          "end_line": 1912
+        },
+        {
+          "start_line": 1913,
+          "end_line": 1913
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 86 uses tax-exclusive rounded turnover; IS operating/accessory products; loss-year minimum retained."
+    },
+    {
+      "id": "ml-corporate-income-tax-06",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Rates, bands and thresholds: Additional minimum floor remains unresolved",
+      "act_article_url": "CGI art. 86 finalpara; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1917,
+          "end_line": 1919
+        }
+      ],
+      "quote_match": true,
+      "verdict": "repair",
+      "reviewer_reason": "REPAIR R 1: art 86 final paragraph applies only when turnover is at least the real-regime threshold. Rate row omits that trigger; below-threshold opt-ins exist under art 70/76. Numerical additional floor correctly held."
+    },
+    {
+      "id": "ml-corporate-income-tax-07",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Rates, bands and thresholds: Rental-property company minimum",
+      "act_article_url": "CGI art. 86-A/LF2016; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1923,
+          "end_line": 1924
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 86-A is restricted to IS companies managing income-producing rental property on balance sheet; separate comparison retained."
+    },
+    {
+      "id": "ml-corporate-income-tax-08",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Rates, bands and thresholds: Real-regime threshold and compulsory exceptions",
+      "act_article_url": "CGI art. 70,75; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1667,
+          "end_line": 1668
+        },
+        {
+          "start_line": 1670,
+          "end_line": 1670
+        },
+        {
+          "start_line": 1673,
+          "end_line": 1674
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 70 compulsory categories/elections qualify turnover threshold; art 75 real regime includes exclusions and options."
+    },
+    {
+      "id": "ml-corporate-income-tax-09",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Rates, bands and thresholds: Simplified and normal modes",
+      "act_article_url": "CGI art. 76–79; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1801,
+          "end_line": 1802
+        },
+        {
+          "start_line": 1807,
+          "end_line": 1807
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 76 inclusive 50 m to 250 m, prorating, options and residual normal mode match. Full option/change procedure not claimed."
+    },
+    {
+      "id": "ml-corporate-income-tax-10",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "The base: Loss carryforward and deferred depreciation",
+      "act_article_url": "CGI art. 51(4),(10),60; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1579,
+          "end_line": 1580
+        },
+        {
+          "start_line": 1273,
+          "end_line": 1273
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 51(10)/60 allow next three exercises; art 51(4) separately labels booked deferred depreciation and schedule condition."
+    },
+    {
+      "id": "ml-corporate-income-tax-11",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "The base: Accounting period and first-period exceptions",
+      "act_article_url": "CGI art. 48; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1199,
+          "end_line": 1199
+        },
+        {
+          "start_line": 1203,
+          "end_line": 1204
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 48 calendar period and exceptional short/long initial periods support summary. No universal 12-month first year asserted."
+    },
+    {
+      "id": "ml-corporate-income-tax-12",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "The base: Profit and net-assets bridge",
+      "act_article_url": "CGI art. 49–50; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1219,
+          "end_line": 1219
+        },
+        {
+          "start_line": 1235,
+          "end_line": 1236
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 49/50 include disposal operations and net-assets bridge; contribution/drawing adjustments correctly directed."
+    },
+    {
+      "id": "ml-corporate-income-tax-13",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "The base: Business expense deduction conditions",
+      "act_article_url": "CGI art. 49; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1225,
+          "end_line": 1226
+        },
+        {
+          "start_line": 1223,
+          "end_line": 1223
+        },
+        {
+          "start_line": 1229,
+          "end_line": 1229
+        },
+        {
+          "start_line": 1231,
+          "end_line": 1231
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "All five art 49 expense conditions represented; accounting entry alone insufficient."
+    },
+    {
+      "id": "ml-corporate-income-tax-14",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "The base: Remuneration and non-deductible profit taxes",
+      "act_article_url": "CGI art. 51(1)–(3); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1248,
+          "end_line": 1249
+        },
+        {
+          "start_line": 1267,
+          "end_line": 1268
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Actual/non-excessive remuneration and exclusion of IBIC/minimum taxes match art 51. Specific foreign-charge and interest limits not certified."
+    },
+    {
+      "id": "ml-corporate-income-tax-15",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "The base: Depreciation and provisions",
+      "act_article_url": "CGI art. 51(4)–(5); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1269,
+          "end_line": 1270
+        },
+        {
+          "start_line": 1281,
+          "end_line": 1282
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Linear booked depreciation and precise loss/charge provisions match source; specific asset rates/caps and current interest limits held."
+    },
+    {
+      "id": "ml-corporate-income-tax-16",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Deadlines and filing: Return deadlines and prescribed form",
+      "act_article_url": "LPF art. 57/LFR2017; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 9778,
+          "end_line": 9779
+        },
+        {
+          "start_line": 9780,
+          "end_line": 9781
+        },
+        {
+          "start_line": 9782,
+          "end_line": 9783
+        },
+        {
+          "start_line": 9784,
+          "end_line": 9785
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 57 four months after close includes loss declarations; insurer 31 May exception and prescribed form retained."
+    },
+    {
+      "id": "ml-corporate-income-tax-17",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Deadlines and filing: Financial-statement attachments",
+      "act_article_url": "LPF art. 60; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 9964,
+          "end_line": 9965
+        },
+        {
+          "start_line": 9966,
+          "end_line": 9967
+        },
+        {
+          "start_line": 9969,
+          "end_line": 9970
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 60 NIF, SYSCOHADA package, FIRD and acquisition-year depreciation schedule support stated attachments. Wider missing-document penalties not claimed complete."
+    },
+    {
+      "id": "ml-corporate-income-tax-18",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Deadlines and filing: Foreign business declarations and annexes",
+      "act_article_url": "LPF art. 57,61; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 9789,
+          "end_line": 9790
+        },
+        {
+          "start_line": 9988,
+          "end_line": 9989
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 57 global/Mali activity declarations and 61 foreign-head-office consolidated balance/general expenses match."
+    },
+    {
+      "id": "ml-corporate-income-tax-19",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Deadlines and filing: Real-normal instalments",
+      "act_article_url": "LPF art. 275,278,280; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 12045,
+          "end_line": 12045
+        },
+        {
+          "start_line": 12051,
+          "end_line": 12052
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 275/278 three instalments, each one quarter last assessment;280 final 15 days March/July/November correctly preserved."
+    },
+    {
+      "id": "ml-corporate-income-tax-20",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Deadlines and filing: Real-simplified instalments",
+      "act_article_url": "LPF art. 276; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 12016,
+          "end_line": 12017
+        },
+        {
+          "start_line": 12017,
+          "end_line": 12018
+        },
+        {
+          "start_line": 12028,
+          "end_line": 12029
+        },
+        {
+          "start_line": 12029,
+          "end_line": 12030
+        }
+      ],
+      "quote_match": true,
+      "verdict": "repair",
+      "reviewer_reason": "REPAIR R 4: LPF 276 annual total 0.60 percent/three equal parts correct; petrol 0.20 percent requires sourcing exclusively on local market. Guide local-supply wording omits exclusivity and could include mixed imports."
+    },
+    {
+      "id": "ml-corporate-income-tax-21",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Deadlines and filing: New-business instalments",
+      "act_article_url": "LPF art. 277,279; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 12036,
+          "end_line": 12036
+        },
+        {
+          "start_line": 12049,
+          "end_line": 12050
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 277 forecast turnover for new simplified businesses and 279 quarter-tax-on 5 percent-capital for new normal companies support summary; no invented common method."
+    },
+    {
+      "id": "ml-corporate-income-tax-22",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Deadlines and filing: Paid instalments and annual balance",
+      "act_article_url": "LPF art. 282,285; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 12066,
+          "end_line": 12067
+        },
+        {
+          "start_line": 12090,
+          "end_line": 12091
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 282 paid principal only credits annual assessment;285 balance at declaration deadline. Penalties excluded."
+    },
+    {
+      "id": "ml-corporate-income-tax-23",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Deadlines and filing: Suspending further instalments",
+      "act_article_url": "LPF art. 283; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 12079,
+          "end_line": 12080
+        },
+        {
+          "start_line": 12076,
+          "end_line": 12077
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 283 fifteen-day prior declaration and minimum consideration match; inaccurate-by-more-than-tenth penalty not asserted as universal."
+    },
+    {
+      "id": "ml-corporate-income-tax-24",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Penalties and interest: Non-filing and missing attachments",
+      "act_article_url": "LPF art. 65–66; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 10031,
+          "end_line": 10032
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 65/66 administrative assessment and 25 percent for filing/attachment failure match. Guide expressly does not exhaust all sanctions."
+    },
+    {
+      "id": "ml-corporate-income-tax-25",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Penalties and interest: Understatement penalty branches",
+      "act_article_url": "LPF art. 67; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 10038,
+          "end_line": 10038
+        },
+        {
+          "start_line": 10040,
+          "end_line": 10040
+        },
+        {
+          "start_line": 10044,
+          "end_line": 10045
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 67 25/50 percent of tax on undeclared base and 10 percent de-minimis condition match."
+    },
+    {
+      "id": "ml-corporate-income-tax-26",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Penalties and interest: Instalment and balance penalties",
+      "act_article_url": "LPF art. 283–285; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 12083,
+          "end_line": 12083
+        },
+        {
+          "start_line": 12085,
+          "end_line": 12086
+        },
+        {
+          "start_line": 12091,
+          "end_line": 12091
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 283-285 distinct 10 percent instalment/suspension/balance branches match; no blanket aggregation."
+    },
+    {
+      "id": "ml-corporate-income-tax-27",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Cross-border points: Dividend rates",
+      "act_article_url": "CGI art. 42(1); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1070,
+          "end_line": 1070
+        },
+        {
+          "start_line": 1070,
+          "end_line": 1071
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 42(1) dividend 10 percent/CREPMF-listed company 7 percent correct."
+    },
+    {
+      "id": "ml-corporate-income-tax-28",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Cross-border points: Bond rates and duration exceptions",
+      "act_article_url": "CGI art. 42(2); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1074,
+          "end_line": 1074
+        },
+        {
+          "start_line": 1074,
+          "end_line": 1075
+        },
+        {
+          "start_line": 1077,
+          "end_line": 1077
+        },
+        {
+          "start_line": 1079,
+          "end_line": 1080
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 42(2) bond 6 percent and public 5-10 year 3 percent/>10 year 0 percent read with art 33; Guide gives summary and requires instrument/exemption classification rather than computing omitted reduced case."
+    },
+    {
+      "id": "ml-corporate-income-tax-29",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Cross-border points: Specified negotiable debt instruments",
+      "act_article_url": "CGI art. 42(3); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1081,
+          "end_line": 1082
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 42(3)13 percent distinct negotiable instrument wording supported; Guide points to exact instrument provision."
+    },
+    {
+      "id": "ml-corporate-income-tax-30",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Cross-border points: Deposits and current accounts",
+      "act_article_url": "CGI art. 42(4); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1086,
+          "end_line": 1087
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 42(4) deposits/current accounts 9 percent supported; exemptions in prior articles must be established."
+    },
+    {
+      "id": "ml-corporate-income-tax-31",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Cross-border points: Prizes and other investment income",
+      "act_article_url": "CGI art. 42(5)–(6); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1088,
+          "end_line": 1089
+        },
+        {
+          "start_line": 1090,
+          "end_line": 1090
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 42(5)/(6) bondholder prizes 15 percent/other investment income 18 percent supported within IRVM chapter."
+    },
+    {
+      "id": "ml-corporate-income-tax-32",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Cross-border points: Non-permanent-installation payment scope",
+      "act_article_url": "CGI art. 94–95; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 2083,
+          "end_line": 2084
+        },
+        {
+          "start_line": 2100,
+          "end_line": 2101
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 94/95 economic remuneration absent permanent professional installation, rights/services supplied or used in Mali, subject to treaties, supported."
+    },
+    {
+      "id": "ml-corporate-income-tax-33",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Cross-border points: Non-resident payment base and rate",
+      "act_article_url": "CGI art. 96–98; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 2112,
+          "end_line": 2112
+        },
+        {
+          "start_line": 2118,
+          "end_line": 2118
+        },
+        {
+          "start_line": 2119,
+          "end_line": 2120
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 96 services 50 percent expense deduction/works-supply 90 percent, art 97 rate 30 percent on resulting base, art 98 separate VAT retention supported."
+    },
+    {
+      "id": "ml-corporate-income-tax-34",
+      "guide_sha256": "85b2181cab8d971de95a73db520ee3bcfa2c228df5cf36d8e25caec91387f692",
+      "ledger_sha256": "8cbf54121a469586d98aa1be8ac65605acc369bd2c6e26642eea522f9004d9f5",
+      "rule": "Cross-border points: Head-office and related-party controls",
+      "act_article_url": "CGI art. 80–81; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 1846,
+          "end_line": 1846
+        },
+        {
+          "start_line": 1848,
+          "end_line": 1849
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 80/81 cap/control rules were read; Guide requires their controls without asserting an unsupported current cap or TP completeness."
+    },
+    {
+      "id": "ml-income-tax-01",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Who this applies to: Employment and pension scope",
+      "act_article_url": "CGI art. 1–2; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 479,
+          "end_line": 479
+        },
+        {
+          "start_line": 485,
+          "end_line": 485
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 1/2 employment-occasion remuneration, pensions/annuities and specified director remuneration support narrow wage job, separate personal categories retained."
+    },
+    {
+      "id": "ml-income-tax-02",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Who this applies to: Resident and non-resident conditions",
+      "act_article_url": "CGI art. 4(I),(II)(1)–(2); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 653,
+          "end_line": 654
+        },
+        {
+          "start_line": 666,
+          "end_line": 668
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 4 resident foreign-work/payer limb and non-resident double work/payer condition supported with treaty qualification."
+    },
+    {
+      "id": "ml-income-tax-03",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Who this applies to: Housing lease and principal-stay residence limbs",
+      "act_article_url": "CGI art. 4(II)(1); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 661,
+          "end_line": 662
+        },
+        {
+          "start_line": 659,
+          "end_line": 659
+        },
+        {
+          "start_line": 664,
+          "end_line": 665
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 4(II)(1)183 days qualifies rented housing contracts, not universal physical presence. Owner/usufruct/principal stay limbs correct."
+    },
+    {
+      "id": "ml-income-tax-04",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Rates, bands and thresholds: Annual band: 0 to 330,000 at 0%",
+      "act_article_url": "CGI art. 10/Loi 2016-010; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 720,
+          "end_line": 720
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Annual 0-330000 at 0 percent agrees with older CGI and original 2016 table."
+    },
+    {
+      "id": "ml-income-tax-05",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Rates, bands and thresholds: Annual band: 330,001 to 578,400 at 5%",
+      "act_article_url": "CGI art. 10/Loi 2016-010; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 721,
+          "end_line": 721
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Annual 330001-578400 at 5 percent agrees with both primary texts; continuous slice arithmetic uses prior upper bound."
+    },
+    {
+      "id": "ml-income-tax-06",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Rates, bands and thresholds: Annual band: 578,401 to 1,176,400 at 12%",
+      "act_article_url": "CGI art. 10/Loi 2016-010; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 722,
+          "end_line": 722
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Annual 578401-1176400 at 12 percent agrees with both primary texts."
+    },
+    {
+      "id": "ml-income-tax-07",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Rates, bands and thresholds: Annual band: 1,176,401 to 1,789,733 at 18%",
+      "act_article_url": "CGI art. 10/Loi 2016-010; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 723,
+          "end_line": 723
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Annual 1176401-1789733 at 18 percent agrees with both primary texts."
+    },
+    {
+      "id": "ml-income-tax-08",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Rates, bands and thresholds: Annual band: 1,789,734 to 2,384,195 at 26%",
+      "act_article_url": "CGI art. 10/Loi 2016-010; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 724,
+          "end_line": 724
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Annual 1789734-2384195 at 26 percent agrees with both primary texts."
+    },
+    {
+      "id": "ml-income-tax-09",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Rates, bands and thresholds: Annual band: 2,384,196 to 3,494,130 at 31%",
+      "act_article_url": "CGI art. 10/Loi 2016-010; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 725,
+          "end_line": 726
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Annual 2384196-3494130 at 31 percent agrees with both primary texts."
+    },
+    {
+      "id": "ml-income-tax-10",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Rates, bands and thresholds: Annual top band at 37%",
+      "act_article_url": "CGI art. 10/Loi 2016-010; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 727,
+          "end_line": 727
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Above 3494130 at 37 percent agrees with both primary texts; no inference of 2026 continuation."
+    },
+    {
+      "id": "ml-income-tax-11",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Rates, bands and thresholds: Original 2016 amending law and effective date",
+      "act_article_url": "Loi 2016-010 article unique,JO723–724; https://sgg-mali.ml/JO/2016/mali-jo-2016-19.pdf",
+      "source_original": "jo-2016-19.pdf",
+      "source_sha256": "d8adf8ecbb9c6b17d309d045368e8be4cb427daa99e86b3ff985a2a8d570b3ea",
+      "extracted_text": "jo-2016-19.txt",
+      "extracted_text_sha256": "008d734b572166a101565a1b3ac5a1489e53ac0f2b9145105704bbb63405d04f",
+      "quote_line_spans": [
+        {
+          "start_line": 153,
+          "end_line": 153
+        },
+        {
+          "start_line": 170,
+          "end_line": 170
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Complete 2016-010 article unique modifies 9/10 only; effective 1 July 2015. No inferred repeal/resolution of 12-A/B."
+    },
+    {
+      "id": "ml-income-tax-12",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "The base: Cash, benefits, evidence and valuation",
+      "act_article_url": "CGI art. 3,5–8; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 684,
+          "end_line": 684
+        },
+        {
+          "start_line": 687,
+          "end_line": 688
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 3/5-8 and embedded 1999 orders include taxable benefits and conditional exemptions/valuation; Guide deliberately holds complex current benefit computation."
+    },
+    {
+      "id": "ml-income-tax-13",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "The base: Pension deduction ceiling and AMO limitation",
+      "act_article_url": "CGI art. 7(a); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 696,
+          "end_line": 697
+        },
+        {
+          "start_line": 698,
+          "end_line": 699
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 7(a)ordinary 4 percent pension/retirement ceiling plus legislative exceptions; automatic all-social/AMO deduction correctly rejected."
+    },
+    {
+      "id": "ml-income-tax-14",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "The base: Progressive bands before family reduction",
+      "act_article_url": "CGI art. 9; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 716,
+          "end_line": 717
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 9 progressive gross tax before family reductions; Guide cases expressly stop at 9-11 subtotal."
+    },
+    {
+      "id": "ml-income-tax-15",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "The base: Family reduction rates and spouse allocation",
+      "act_article_url": "CGI art. 11; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 752,
+          "end_line": 752
+        },
+        {
+          "start_line": 753,
+          "end_line": 753
+        },
+        {
+          "start_line": 754,
+          "end_line": 755
+        },
+        {
+          "start_line": 761,
+          "end_line": 761
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 11 married 10 percent/child 2.5 percent through 10/adult-disabled 10 percent; express spouse child-total allocation/no duplicate relief retained."
+    },
+    {
+      "id": "ml-income-tax-16",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "The base: Dependent conditions and 1 January status",
+      "act_article_url": "CGI art. 12; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 763,
+          "end_line": 763
+        },
+        {
+          "start_line": 780,
+          "end_line": 780
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 12 separate-income/dependant/adoption/study conditions and 1 January status read; Guide requires exact conditions before claiming."
+    },
+    {
+      "id": "ml-income-tax-17",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "The base: Unresolved final two-point relief wording",
+      "act_article_url": "CGI art. 12-A–12-B/Loi 2008-002; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 782,
+          "end_line": 783
+        },
+        {
+          "start_line": 786,
+          "end_line": 786
+        },
+        {
+          "start_line": 787,
+          "end_line": 788
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 12-A/B extra two-point relief and internally questionable assessed-tax multiplication read. Explicit final-tax hold is appropriate;2016 law not treated as cure."
+    },
+    {
+      "id": "ml-income-tax-18",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "The base: Withholding-base rounding",
+      "act_article_url": "LPF art. 410; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 13102,
+          "end_line": 13103
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 410 rounds net withholding income down to 1000; annual cases are conditional tests and do not certify monthly conversion/final tax."
+    },
+    {
+      "id": "ml-income-tax-19",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Deadlines and filing: Annual wage reporting",
+      "act_article_url": "LPF art. 29–35; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 9559,
+          "end_line": 9559
+        },
+        {
+          "start_line": 9569,
+          "end_line": 9570
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 29-35 January annual reporting, multiple-employer and foreign-employer reporting support replacing universal 31 March claim."
+    },
+    {
+      "id": "ml-income-tax-20",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "The base: Withholding reconciliation and credit certificate",
+      "act_article_url": "LPF art. 35,418; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 9612,
+          "end_line": 9613
+        },
+        {
+          "start_line": 9615,
+          "end_line": 9616
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 35/418 withholding payments-on-account and credit certificate/subsequent credit process supported; no automatic refund asserted."
+    },
+    {
+      "id": "ml-income-tax-21",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Deadlines and filing: Employer withholding and employee self-payment",
+      "act_article_url": "LPF art. 411; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 13109,
+          "end_line": 13110
+        },
+        {
+          "start_line": 13113,
+          "end_line": 13113
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 411 distinguishes Mali-employer payment withholding and Mali-domiciled employee foreign-employer self-payment."
+    },
+    {
+      "id": "ml-income-tax-22",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Penalties and interest: Separate penalty branches",
+      "act_article_url": "LPF art. 36–39,419–421; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 9622,
+          "end_line": 9623
+        },
+        {
+          "start_line": 9625,
+          "end_line": 9625
+        },
+        {
+          "start_line": 13181,
+          "end_line": 13182
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 36-39 and 419-421 distinct declaration/records/withholding/remittance branches read; no unproved aggregated penalty claimed."
+    },
+    {
+      "id": "ml-income-tax-23",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Rates, bands and thresholds: DGI clarification limited to 2024",
+      "act_article_url": "ImpôtCOM38 p36 reply1; https://www.dgi.gouv.ml/wp-content/uploads/2025/12/IMPOT_COM-38.pdf",
+      "source_original": "impot-com-38.pdf",
+      "source_sha256": "d073e2c9e5c4c6a5e3bf32e3951f0a0fc5ab957934cc63420cf686917ebff934",
+      "extracted_text": "impot-com-38.txt",
+      "extracted_text_sha256": "bc89c840fef8112766a14c32ae81ca9576a8d2f046c20ee371a2cf7458db945f",
+      "quote_line_spans": [
+        {
+          "start_line": 1983,
+          "end_line": 1983
+        },
+        {
+          "start_line": 1985,
+          "end_line": 1985
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Complete bulletin reply 1 says article 10 unchanged for 2024 and erroneous tax-expenditure grid; no 2025/2026 proof inferred."
+    },
+    {
+      "id": "ml-income-tax-24",
+      "guide_sha256": "2487e2f8d43621eb2436cee2bcf12ada56755a69cd32aa5f72106361285a7f43",
+      "ledger_sha256": "3a61952adce55303afbba6e22821430b81a79168a6e3c93bd14258f0d01e009a",
+      "rule": "Cross-border points: Leave abroad and cross-border qualification",
+      "act_article_url": "CGI art. 4,13;LPF art. 411–412; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 801,
+          "end_line": 802
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 13 leave-abroad continued remuneration and art 4/LPF 411-412 cross-border rules read. Guide uses cross-border qualification, holds treaty/government-service/foreign-credit jobs."
+    },
+    {
+      "id": "ml-payroll-social-01",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Who this applies to: Employer and worker registration",
+      "act_article_url": "RSU INPS registration; https://rsu.gouv.ml/portail/partenaires/inps/",
+      "source_original": "rsu-inps.html",
+      "source_sha256": "7575f7e266bcaadae668d687eccf64be468028c6b9772239349d3bdaeee72214",
+      "extracted_text": "rsu-inps.txt",
+      "extracted_text_sha256": "5919704c5b0e220d7d2d849ae5d3fdaa3766a46c089bbc5200cbe67d622e6e8e",
+      "quote_line_spans": [
+        {
+          "start_line": 80,
+          "end_line": 80
+        },
+        {
+          "start_line": 95,
+          "end_line": 95
+        },
+        {
+          "start_line": 99,
+          "end_line": 99
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "RSU employer-at-opening/worker-at-hiring registration and notified number/rates match; undated guidance status expressly limited in body."
+    },
+    {
+      "id": "ml-payroll-social-02",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Rates, bands and thresholds: INPS family benefits",
+      "act_article_url": "RSU INPS rates; https://rsu.gouv.ml/portail/partenaires/inps/",
+      "source_original": "rsu-inps.html",
+      "source_sha256": "7575f7e266bcaadae668d687eccf64be468028c6b9772239349d3bdaeee72214",
+      "extracted_text": "rsu-inps.txt",
+      "extracted_text_sha256": "5919704c5b0e220d7d2d849ae5d3fdaa3766a46c089bbc5200cbe67d622e6e8e",
+      "quote_line_spans": [
+        {
+          "start_line": 73,
+          "end_line": 73
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "RSU family benefits employer 8 percent supported as undated authority guidance only."
+    },
+    {
+      "id": "ml-payroll-social-03",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Rates, bands and thresholds: INPS old-age shares",
+      "act_article_url": "RSU INPS rates; https://rsu.gouv.ml/portail/partenaires/inps/",
+      "source_original": "rsu-inps.html",
+      "source_sha256": "7575f7e266bcaadae668d687eccf64be468028c6b9772239349d3bdaeee72214",
+      "extracted_text": "rsu-inps.txt",
+      "extracted_text_sha256": "5919704c5b0e220d7d2d849ae5d3fdaa3766a46c089bbc5200cbe67d622e6e8e",
+      "quote_line_spans": [
+        {
+          "start_line": 71,
+          "end_line": 71
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "RSU old-age total 7 percent split employee 3.6/employer 3.4 supported; branch separately retained."
+    },
+    {
+      "id": "ml-payroll-social-04",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Rates, bands and thresholds: INPS invalidity and death",
+      "act_article_url": "RSU INPS rates; https://rsu.gouv.ml/portail/partenaires/inps/",
+      "source_original": "rsu-inps.html",
+      "source_sha256": "7575f7e266bcaadae668d687eccf64be468028c6b9772239349d3bdaeee72214",
+      "extracted_text": "rsu-inps.txt",
+      "extracted_text_sha256": "5919704c5b0e220d7d2d849ae5d3fdaa3766a46c089bbc5200cbe67d622e6e8e",
+      "quote_line_spans": [
+        {
+          "start_line": 72,
+          "end_line": 72
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "RSU invalidity/survivor employer 2 percent supported as undated guidance."
+    },
+    {
+      "id": "ml-payroll-social-05",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Rates, bands and thresholds: Occupational-risk rate",
+      "act_article_url": "RSU INPS rates; https://rsu.gouv.ml/portail/partenaires/inps/",
+      "source_original": "rsu-inps.html",
+      "source_sha256": "7575f7e266bcaadae668d687eccf64be468028c6b9772239349d3bdaeee72214",
+      "extracted_text": "rsu-inps.txt",
+      "extracted_text_sha256": "5919704c5b0e220d7d2d849ae5d3fdaa3766a46c089bbc5200cbe67d622e6e8e",
+      "quote_line_spans": [
+        {
+          "start_line": 70,
+          "end_line": 70
+        },
+        {
+          "start_line": 137,
+          "end_line": 137
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "RSU ATMP 1-4 percent and activity/security risk classification supported; actual notified class required."
+    },
+    {
+      "id": "ml-payroll-social-06",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Rates, bands and thresholds: AMO employee rate",
+      "act_article_url": "Décret 10-578 art. 3; https://www.canam.ml/media/attachments/2022/02/07/dcret-n-10-578-taux-de-cotisations.pdf",
+      "source_original": "canam-decret-10-578.pdf",
+      "source_sha256": "35656849ee8701b352501cb8078925d26fd48b350579bc5cfbced23b9f115835",
+      "extracted_text": "canam-rate.ocr.txt",
+      "extracted_text_sha256": "1047f1de20a7192e7acd370080370e94ab307a95801766faf628b98df5147924",
+      "quote_line_spans": [
+        {
+          "start_line": 69,
+          "end_line": 69
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Original decree 10-578 art 3 active salaried insured 3.06 percent visually confirmed onpage 2."
+    },
+    {
+      "id": "ml-payroll-social-07",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Rates, bands and thresholds: AMO private-employer rate and former disease charge",
+      "act_article_url": "Décret 10-578 art. 5; https://www.canam.ml/media/attachments/2022/02/07/dcret-n-10-578-taux-de-cotisations.pdf",
+      "source_original": "canam-decret-10-578.pdf",
+      "source_sha256": "35656849ee8701b352501cb8078925d26fd48b350579bc5cfbced23b9f115835",
+      "extracted_text": "canam-rate.ocr.txt",
+      "extracted_text_sha256": "1047f1de20a7192e7acd370080370e94ab307a95801766faf628b98df5147924",
+      "quote_line_spans": [
+        {
+          "start_line": 75,
+          "end_line": 75
+        },
+        {
+          "start_line": 77,
+          "end_line": 77
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Original decree 10-578 art 5 private employer 3.50 percent includes former 2 percent disease contribution, visually confirmed; no duplicate disease charge."
+    },
+    {
+      "id": "ml-payroll-social-08",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Who this applies to: Distinct AMO insured categories",
+      "act_article_url": "Décret 10-578 arts2–7; https://www.canam.ml/media/attachments/2022/02/07/dcret-n-10-578-taux-de-cotisations.pdf",
+      "source_original": "canam-decret-10-578.pdf",
+      "source_sha256": "35656849ee8701b352501cb8078925d26fd48b350579bc5cfbced23b9f115835",
+      "extracted_text": "canam-rate.ocr.txt",
+      "extracted_text_sha256": "1047f1de20a7192e7acd370080370e94ab307a95801766faf628b98df5147924",
+      "quote_line_spans": [
+        {
+          "start_line": 71,
+          "end_line": 72
+        },
+        {
+          "start_line": 80,
+          "end_line": 80
+        },
+        {
+          "start_line": 83,
+          "end_line": 84
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Decree 10-578 arts 2-7 separate active/public-employer/pensioner/voluntary categories. Guide keeps those outside private-staff calculation."
+    },
+    {
+      "id": "ml-payroll-social-09",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Rates, bands and thresholds: CFE base and rate",
+      "act_article_url": "CGI art. 159–160; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 4218,
+          "end_line": 4219
+        },
+        {
+          "start_line": 4221,
+          "end_line": 4223
+        }
+      ],
+      "quote_match": true,
+      "verdict": "repair",
+      "reviewer_reason": "REPAIR R 2: art 159 limits CFE to IS/IBIC/agricultural-profit persons; Guide rate row gives employer 3.5 percent without that taxpayer condition. Art 160 gross actual-benefit base/thousand rounding correct."
+    },
+    {
+      "id": "ml-payroll-social-10",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "The base: Conditional CFE exemptions",
+      "act_article_url": "CGI art. 161–163; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 4228,
+          "end_line": 4229
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 161-163 qualifying new-graduate/redundancy-hire/stagiaire concessions read; Guide requires separate proof and does not assert universal exemption."
+    },
+    {
+      "id": "ml-payroll-social-11",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Rates, bands and thresholds: Training-tax base and rate",
+      "act_article_url": "CGI art. 183–185; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 4585,
+          "end_line": 4586
+        },
+        {
+          "start_line": 4590,
+          "end_line": 4590
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 183-185 training 2 percent restricted taxpayer class, gross actual-benefit base and downward thousand rounding correct."
+    },
+    {
+      "id": "ml-payroll-social-12",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Rates, bands and thresholds: Youth-employment-tax base and rate",
+      "act_article_url": "CGI art. 185-A–D/Loi2008-020; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 4603,
+          "end_line": 4604
+        },
+        {
+          "start_line": 4600,
+          "end_line": 4601
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 185-A-D TEJ 2 percent applies profit-tax persons also subject to CFE; base/rounding and separate charge correctly retained."
+    },
+    {
+      "id": "ml-payroll-social-13",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Rates, bands and thresholds: Housing-tax base and rate",
+      "act_article_url": "Loi85-35 art2;Décret183/PG-RM art14, DGI appendix; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 18414,
+          "end_line": 18415
+        },
+        {
+          "start_line": 18415,
+          "end_line": 18416
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Loi 85-35 art 2 housing 1 percent gross payroll public/private and monthly; implementing art 14 payment rule confirms. Distinct from training/CFE."
+    },
+    {
+      "id": "ml-payroll-social-14",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Rates, bands and thresholds: ANPE authority guidance only",
+      "act_article_url": "RSU INPS obligations; https://rsu.gouv.ml/portail/partenaires/inps/",
+      "source_original": "rsu-inps.html",
+      "source_sha256": "7575f7e266bcaadae668d687eccf64be468028c6b9772239349d3bdaeee72214",
+      "extracted_text": "rsu-inps.txt",
+      "extracted_text_sha256": "5919704c5b0e220d7d2d849ae5d3fdaa3766a46c089bbc5200cbe67d622e6e8e",
+      "quote_line_spans": [
+        {
+          "start_line": 136,
+          "end_line": 136
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "RSU ANPE 1 percent employer statement supported only as authority guidance; statutory chain held."
+    },
+    {
+      "id": "ml-payroll-social-15",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "The base: INPS contribution base and ceiling guidance",
+      "act_article_url": "RSU INPS base; https://rsu.gouv.ml/portail/partenaires/inps/",
+      "source_original": "rsu-inps.html",
+      "source_sha256": "7575f7e266bcaadae668d687eccf64be468028c6b9772239349d3bdaeee72214",
+      "extracted_text": "rsu-inps.txt",
+      "extracted_text_sha256": "5919704c5b0e220d7d2d849ae5d3fdaa3766a46c089bbc5200cbe67d622e6e8e",
+      "quote_line_spans": [
+        {
+          "start_line": 142,
+          "end_line": 142
+        },
+        {
+          "start_line": 141,
+          "end_line": 141
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "RSU all remuneration/benefits/allowances except expense reimbursements, without ceiling, supported only within undated guidance; old floor not adopted."
+    },
+    {
+      "id": "ml-payroll-social-16",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "The base: AMO base and exclusions",
+      "act_article_url": "Décret 10-601 art. 5; https://www.canam.ml/media/attachments/2022/03/17/decret-601.pdf",
+      "source_original": "canam-decret-10-601.pdf",
+      "source_sha256": "49aa33c96a351aeb0cfe016c7aa288b7694ab8495280eb592239026f4b6823ac",
+      "extracted_text": "canam-decret-10-601.ocr.txt",
+      "extracted_text_sha256": "f0c85110bb1489d922144545afe88be5cbbaf01d60562bba9442d017c380ec43",
+      "quote_line_spans": [
+        {
+          "start_line": 94,
+          "end_line": 95
+        },
+        {
+          "start_line": 95,
+          "end_line": 96
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Decree 10-601 art 5 taxable basic salary/premiums/allowances and excluded professional expenses/reimbursements/family benefits visually confirmed."
+    },
+    {
+      "id": "ml-payroll-social-17",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "The base: AMO wage floor and regularisation",
+      "act_article_url": "Décret 10-601 arts6–7; https://www.canam.ml/media/attachments/2022/03/17/decret-601.pdf",
+      "source_original": "canam-decret-10-601.pdf",
+      "source_sha256": "49aa33c96a351aeb0cfe016c7aa288b7694ab8495280eb592239026f4b6823ac",
+      "extracted_text": "canam-decret-10-601.ocr.txt",
+      "extracted_text_sha256": "f0c85110bb1489d922144545afe88be5cbbaf01d60562bba9442d017c380ec43",
+      "quote_line_spans": [
+        {
+          "start_line": 105,
+          "end_line": 106
+        },
+        {
+          "start_line": 113,
+          "end_line": 114
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Decree 10-601 arts 6/7 per-insured SMIG floor, fluctuating pay annual average and retroactive regularisation read; no current floor figure invented."
+    },
+    {
+      "id": "ml-payroll-social-18",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "The base: AMO multiple employers",
+      "act_article_url": "Décret 10-601 art8; https://www.canam.ml/media/attachments/2022/03/17/decret-601.pdf",
+      "source_original": "canam-decret-10-601.pdf",
+      "source_sha256": "49aa33c96a351aeb0cfe016c7aa288b7694ab8495280eb592239026f4b6823ac",
+      "extracted_text": "canam-decret-10-601.ocr.txt",
+      "extracted_text_sha256": "f0c85110bb1489d922144545afe88be5cbbaf01d60562bba9442d017c380ec43",
+      "quote_line_spans": [
+        {
+          "start_line": 127,
+          "end_line": 128
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Decree 10-601 art 8 each concurrent employer responsible proportionally to remuneration it pays. Ledger source supported; Guide does not compute multiple-employer case."
+    },
+    {
+      "id": "ml-payroll-social-19",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "The base: AMO remittance responsibility and employer charge",
+      "act_article_url": "Décret 10-601 arts28–30; https://www.canam.ml/media/attachments/2022/03/17/decret-601.pdf",
+      "source_original": "canam-decret-10-601.pdf",
+      "source_sha256": "49aa33c96a351aeb0cfe016c7aa288b7694ab8495280eb592239026f4b6823ac",
+      "extracted_text": "canam-decret-10-601.ocr.txt",
+      "extracted_text_sha256": "f0c85110bb1489d922144545afe88be5cbbaf01d60562bba9442d017c380ec43",
+      "quote_line_spans": [
+        {
+          "start_line": 315,
+          "end_line": 315
+        },
+        {
+          "start_line": 328,
+          "end_line": 328
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 28-30 employer remittance responsibility/exclusive employer charge/null contrary contract read and visually confirmed."
+    },
+    {
+      "id": "ml-payroll-social-20",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Deadlines and filing: AMO headcount calendar and later-order condition",
+      "act_article_url": "Décret 10-601 art14; https://www.canam.ml/media/attachments/2022/03/17/decret-601.pdf",
+      "source_original": "canam-decret-10-601.pdf",
+      "source_sha256": "49aa33c96a351aeb0cfe016c7aa288b7694ab8495280eb592239026f4b6823ac",
+      "extracted_text": "canam-decret-10-601.ocr.txt",
+      "extracted_text_sha256": "f0c85110bb1489d922144545afe88be5cbbaf01d60562bba9442d017c380ec43",
+      "quote_line_spans": [
+        {
+          "start_line": 170,
+          "end_line": 170
+        },
+        {
+          "start_line": 173,
+          "end_line": 173
+        },
+        {
+          "start_line": 183,
+          "end_line": 183
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 14 below 10 quarterly/atleast 10 monthly within 15 days; page 4 continuation later ministerial calendar power read. Case uses exact boundary."
+    },
+    {
+      "id": "ml-payroll-social-21",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Deadlines and filing: AMO declaration, form and non-payment",
+      "act_article_url": "Décret 10-601 arts15–17,21; https://www.canam.ml/media/attachments/2022/03/17/decret-601.pdf",
+      "source_original": "canam-decret-10-601.pdf",
+      "source_sha256": "49aa33c96a351aeb0cfe016c7aa288b7694ab8495280eb592239026f4b6823ac",
+      "extracted_text": "canam-decret-10-601.ocr.txt",
+      "extracted_text_sha256": "f0c85110bb1489d922144545afe88be5cbbaf01d60562bba9442d017c380ec43",
+      "quote_line_spans": [
+        {
+          "start_line": 187,
+          "end_line": 188
+        },
+        {
+          "start_line": 222,
+          "end_line": 222
+        },
+        {
+          "start_line": 252,
+          "end_line": 252
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 15-17 nominative declaration/CANAM-approved delegated-manager model and 21 declaration despite nonpayment supported."
+    },
+    {
+      "id": "ml-payroll-social-22",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Deadlines and filing: INPS authority calendar",
+      "act_article_url": "RSU INPS declaration/payment; https://rsu.gouv.ml/portail/partenaires/inps/",
+      "source_original": "rsu-inps.html",
+      "source_sha256": "7575f7e266bcaadae668d687eccf64be468028c6b9772239349d3bdaeee72214",
+      "extracted_text": "rsu-inps.txt",
+      "extracted_text_sha256": "5919704c5b0e220d7d2d849ae5d3fdaa3766a46c089bbc5200cbe67d622e6e8e",
+      "quote_line_spans": [
+        {
+          "start_line": 155,
+          "end_line": 155
+        },
+        {
+          "start_line": 155,
+          "end_line": 155
+        },
+        {
+          "start_line": 156,
+          "end_line": 156
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "RSU >9/<10 calendar and quarterly nominative list supported as undated operational guidance. Annual-list special authorization not purportedly exhaustive."
+    },
+    {
+      "id": "ml-payroll-social-23",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Deadlines and filing: ITS payment calendar and small-amount exception",
+      "act_article_url": "LPF art. 410–418; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 13134,
+          "end_line": 13135
+        },
+        {
+          "start_line": 13135,
+          "end_line": 13136
+        },
+        {
+          "start_line": 13145,
+          "end_line": 13145
+        },
+        {
+          "start_line": 13147,
+          "end_line": 13148
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 410-418 payment withholding/next-month 15 working-day rule and 5000 monthly threshold quarterly exception correctly separated from social calendar."
+    },
+    {
+      "id": "ml-payroll-social-24",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Deadlines and filing: CFE declaration and payment calendar",
+      "act_article_url": "LPF art. 93–98,297–302; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 10331,
+          "end_line": 10332
+        },
+        {
+          "start_line": 12215,
+          "end_line": 12215
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 93-98/297-302 CFE declaration/payment 5000 threshold and Apr/Jul/Oct/Jan dates read; Guide says own rules, not every contribution."
+    },
+    {
+      "id": "ml-payroll-social-25",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Deadlines and filing: Wage summary, employee records and retention",
+      "act_article_url": "LPF art. 29,31–32; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 9559,
+          "end_line": 9559
+        },
+        {
+          "start_line": 9578,
+          "end_line": 9579
+        },
+        {
+          "start_line": 9590,
+          "end_line": 9590
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 29/31-32 January summary/third-following-year retention/prior-month payslip/February annual statement supported."
+    },
+    {
+      "id": "ml-payroll-social-26",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Penalties and interest: AMO late-payment and notice rules",
+      "act_article_url": "Décret 10-601 arts26–27; https://www.canam.ml/media/attachments/2022/03/17/decret-601.pdf",
+      "source_original": "canam-decret-10-601.pdf",
+      "source_sha256": "49aa33c96a351aeb0cfe016c7aa288b7694ab8495280eb592239026f4b6823ac",
+      "extracted_text": "canam-decret-10-601.ocr.txt",
+      "extracted_text_sha256": "f0c85110bb1489d922144545afe88be5cbbaf01d60562bba9442d017c380ec43",
+      "quote_line_spans": [
+        {
+          "start_line": 299,
+          "end_line": 300
+        },
+        {
+          "start_line": 303,
+          "end_line": 303
+        },
+        {
+          "start_line": 311,
+          "end_line": 311
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Decree 10-601 arts 26/27 late/incomplete 2 percent per month, revision by order and written notice 15 days read/visually confirmed; complete sanction interaction held."
+    },
+    {
+      "id": "ml-payroll-social-27",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Penalties and interest: Other AMO sanction branches",
+      "act_article_url": "Décret 10-601 arts20–30; https://www.canam.ml/media/attachments/2022/03/17/decret-601.pdf",
+      "source_original": "canam-decret-10-601.pdf",
+      "source_sha256": "49aa33c96a351aeb0cfe016c7aa288b7694ab8495280eb592239026f4b6823ac",
+      "extracted_text": "canam-decret-10-601.ocr.txt",
+      "extracted_text_sha256": "f0c85110bb1489d922144545afe88be5cbbaf01d60562bba9442d017c380ec43",
+      "quote_line_spans": [
+        {
+          "start_line": 257,
+          "end_line": 257
+        },
+        {
+          "start_line": 281,
+          "end_line": 281
+        },
+        {
+          "start_line": 319,
+          "end_line": 320
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 20-30 distinct report failure/inaccuracy/late contributions/unpaid deductions supported; no universal INPS penalty imported."
+    },
+    {
+      "id": "ml-payroll-social-28",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Penalties and interest: ITS withholding and payment sanctions",
+      "act_article_url": "LPF art. 419–421; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 13172,
+          "end_line": 13173
+        },
+        {
+          "start_line": 13180,
+          "end_line": 13180
+        },
+        {
+          "start_line": 13183,
+          "end_line": 13184
+        },
+        {
+          "start_line": 13184,
+          "end_line": 13184
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 419 equal unwithheld amount/420 double nonremitted amount/4212 percent monthly max 20 and 16 th-to 15 th started-month convention supported."
+    },
+    {
+      "id": "ml-payroll-social-29",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Penalties and interest: CFE sanction branches",
+      "act_article_url": "LPF art. 98,302; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 10359,
+          "end_line": 10360
+        },
+        {
+          "start_line": 10362,
+          "end_line": 10362
+        },
+        {
+          "start_line": 12240,
+          "end_line": 12240
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 98 CFE declaration 50/100 percent and 302 late-payment 2 percent independent branches read. Guide does not claim complete current totals."
+    },
+    {
+      "id": "ml-payroll-social-30",
+      "guide_sha256": "5066198acacaf55c16392349ab5a26333d7d04a6c48fb40e1f464f20eff2e151",
+      "ledger_sha256": "8c7bec4aa6f18ed1245fd9b32eb45a7c3382e49aabcb570ac57162bc57c07c9b",
+      "rule": "Cross-border points: Foreign-employer wage self-payment",
+      "act_article_url": "LPF art. 34,411–412; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 13111,
+          "end_line": 13112
+        },
+        {
+          "start_line": 13113,
+          "end_line": 13113
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 34/411-412 foreign-employer/diplomatic self-payment supported; no unverified expatriate exclusion."
+    },
+    {
+      "id": "ml-vat-gst-01",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Who this applies to: Economic and independent supply scope",
+      "act_article_url": "CGI art. 187–191; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 4746,
+          "end_line": 4747
+        },
+        {
+          "start_line": 4807,
+          "end_line": 4807
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 187-191 independent economic consideration supplies plus imports/self-supplies supported."
+    },
+    {
+      "id": "ml-vat-gst-02",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Who this applies to: Registration threshold and importers",
+      "act_article_url": "CGI art. 192/LF2017; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 4813,
+          "end_line": 4813
+        },
+        {
+          "start_line": 4827,
+          "end_line": 4828
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 192 listed categories>=50 m tax-exclusive and importer irrespective of turnover supported; not importer exemption."
+    },
+    {
+      "id": "ml-vat-gst-03",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Who this applies to: VAT modes and synthetic invoicing",
+      "act_article_url": "CGI art. 186;LPF art. 115; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 4739,
+          "end_line": 4740
+        },
+        {
+          "start_line": 10544,
+          "end_line": 10545
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 186 modes cross-reference 75-79; LPF 115 synthetic invoice prohibition supported, without treating customer request as election."
+    },
+    {
+      "id": "ml-vat-gst-04",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Rates, bands and thresholds: Standard VAT rate",
+      "act_article_url": "CGI art. 229/Loi 11-078; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 6229,
+          "end_line": 6229
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 229 ordinary 18 percent nonexempt goods/services supported as older baseline."
+    },
+    {
+      "id": "ml-vat-gst-05",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Rates, bands and thresholds: Reduced rate and designated tariff list",
+      "act_article_url": "CGI art. 229,pointD; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 6227,
+          "end_line": 6227
+        },
+        {
+          "start_line": 5502,
+          "end_line": 5502
+        },
+        {
+          "start_line": 5480,
+          "end_line": 5480
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 229 pointD 5 percent designated tariff goods; actual computer/solar entries read. No generic essential-goods or all-modern-product claim."
+    },
+    {
+      "id": "ml-vat-gst-06",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Rates, bands and thresholds: Export exemption with deduction conditions",
+      "act_article_url": "CGI art. 195.I.1,208; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 4898,
+          "end_line": 4898
+        },
+        {
+          "start_line": 6045,
+          "end_line": 6046
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 195.I.1 export exemption and 208 conditional deduction supported; domestic-nontaxable products excluded from export deduction."
+    },
+    {
+      "id": "ml-vat-gst-07",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Rates, bands and thresholds: Selected statutory exemptions",
+      "act_article_url": "CGI art. 195.I–IV; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 4955,
+          "end_line": 4955
+        },
+        {
+          "start_line": 4956,
+          "end_line": 4956
+        },
+        {
+          "start_line": 4966,
+          "end_line": 4967
+        },
+        {
+          "start_line": 4968,
+          "end_line": 4968
+        },
+        {
+          "start_line": 4995,
+          "end_line": 4995
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 195 selected grain/raw meat/approved education/health/veterinary/specific-tax financial classes match; no complete-current-list opinion."
+    },
+    {
+      "id": "ml-vat-gst-08",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Consideration base and included costs",
+      "act_article_url": "CGI art. 198–199; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 5887,
+          "end_line": 5888
+        },
+        {
+          "start_line": 5885,
+          "end_line": 5886
+        },
+        {
+          "start_line": 5903,
+          "end_line": 5904
+        },
+        {
+          "start_line": 5905,
+          "end_line": 5905
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 198/199 consideration/importCAF border base and included tax/incidental costs read; source exceptions retained generally, no deduction of supplier expenses."
+    },
+    {
+      "id": "ml-vat-gst-09",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Excluded reductions and disbursements",
+      "act_article_url": "CGI art. 200–202; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 5919,
+          "end_line": 5919
+        },
+        {
+          "start_line": 5926,
+          "end_line": 5927
+        },
+        {
+          "start_line": 5935,
+          "end_line": 5936
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 200/201 direct qualifying price reductions/true damages/exact supported agency disbursements read; no blanket expense deduction."
+    },
+    {
+      "id": "ml-vat-gst-10",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Event and goods tax point",
+      "act_article_url": "CGI art. 204–206; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 5965,
+          "end_line": 5965
+        },
+        {
+          "start_line": 5986,
+          "end_line": 5986
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 204-206 delivery/general goods tax point read with water/electricity-to-state payment exception; Guide says generally, not universal."
+    },
+    {
+      "id": "ml-vat-gst-11",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Service collection and authorised debits",
+      "act_article_url": "CGI art. 206(c); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 5990,
+          "end_line": 5991
+        },
+        {
+          "start_line": 5993,
+          "end_line": 5993
+        },
+        {
+          "start_line": 5997,
+          "end_line": 5998
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 206(c) services collections/advances, authorized debit method and earlier collections correct. Return-to-cash/discounted-bill details not purportedly exhaustive."
+    },
+    {
+      "id": "ml-vat-gst-12",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Import and works tax points",
+      "act_article_url": "CGI art. 205–206; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 5984,
+          "end_line": 5984
+        },
+        {
+          "start_line": 6003,
+          "end_line": 6004
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 205/206 imports release-to-consumption and works execution/earlier receipt tax points correct."
+    },
+    {
+      "id": "ml-vat-gst-13",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Eligible input tax and evidence",
+      "act_article_url": "CGI art. 207,225; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 6008,
+          "end_line": 6009
+        },
+        {
+          "start_line": 6186,
+          "end_line": 6187
+        },
+        {
+          "start_line": 6189,
+          "end_line": 6190
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 207/225 eligible operation and invoice/customs evidence read; no unconditional marked-VAT deduction."
+    },
+    {
+      "id": "ml-vat-gst-14",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Input exclusions and exceptions",
+      "act_article_url": "CGI art. 209–215; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 6049,
+          "end_line": 6049
+        },
+        {
+          "start_line": 6059,
+          "end_line": 6060
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 209-215 private/personnel/passenger/mixed-use exclusions and express exceptions read. Guide states examples and requires exceptions."
+    },
+    {
+      "id": "ml-vat-gst-15",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Invoice, NIF and genuine transaction",
+      "act_article_url": "CGI art. 213(2);LPF art. 115; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 6094,
+          "end_line": 6095
+        },
+        {
+          "start_line": 10557,
+          "end_line": 10557
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 213(2) supplierNIF and LPF 115 genuine transaction/no fictitious invoice deduction match."
+    },
+    {
+      "id": "ml-vat-gst-16",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Direct versus shared input attribution",
+      "act_article_url": "CGI art. 216; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 6112,
+          "end_line": 6113
+        },
+        {
+          "start_line": 6115,
+          "end_line": 6116
+        },
+        {
+          "start_line": 6119,
+          "end_line": 6119
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 216 direct eligible full/direct noneligible zero/shared fraction supported; independently recomputed example chooses attribution correctly."
+    },
+    {
+      "id": "ml-vat-gst-17",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Shared-input fraction and upward rounding",
+      "act_article_url": "CGI art. 218; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 6137,
+          "end_line": 6138
+        },
+        {
+          "start_line": 6133,
+          "end_line": 6134
+        },
+        {
+          "start_line": 6139,
+          "end_line": 6139
+        },
+        {
+          "start_line": 6140,
+          "end_line": 6141
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 218 numerator/denominator VAT exclusion, specified capital/subsidy/insurance/disbursement exclusions, no self-supplies and upward integer percentage rounding correct."
+    },
+    {
+      "id": "ml-vat-gst-18",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Provisional fraction and regularisation",
+      "act_article_url": "CGI art. 219–223; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 6144,
+          "end_line": 6145
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 219-223 previous-year/new estimates provisional ratio and later regularisations read; Guide does not compute omitted capital-asset adjustments."
+    },
+    {
+      "id": "ml-vat-gst-19",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Deduction timing and omission deadline",
+      "act_article_url": "CGI art. 224–225; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 6179,
+          "end_line": 6180
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 224/225 entitlement-month deduction/omission by 15 May following year supported."
+    },
+    {
+      "id": "ml-vat-gst-20",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "The base: Carryforward and conditional refund route",
+      "act_article_url": "CGI art. 226–228; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 6197,
+          "end_line": 6197
+        },
+        {
+          "start_line": 6200,
+          "end_line": 6200
+        },
+        {
+          "start_line": 6205,
+          "end_line": 6205
+        },
+        {
+          "start_line": 6207,
+          "end_line": 6208
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Arts 226-228 carryforward/quarter-end requested refund with exclusions/support/targeted control read; no automatic refund."
+    },
+    {
+      "id": "ml-vat-gst-21",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Deadlines and filing: Existence declaration and NIF",
+      "act_article_url": "LPF art. 112–114; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 10504,
+          "end_line": 10505
+        },
+        {
+          "start_line": 10512,
+          "end_line": 10513
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 112-114 existence and NIF within 10 days/registered status prerequisite supported."
+    },
+    {
+      "id": "ml-vat-gst-22",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Deadlines and filing: Threshold-crossing rules",
+      "act_article_url": "CGI art. 194;LPF art. 113; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 4889,
+          "end_line": 4890
+        },
+        {
+          "start_line": 10526,
+          "end_line": 10526
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 194 prospective threshold-crossing day and LPF 113 notification by end following month read; Guide avoids retrospective assumption."
+    },
+    {
+      "id": "ml-vat-gst-23",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Deadlines and filing: Real-normal return and payment calendar",
+      "act_article_url": "LPF art. 110(2),322(2); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 10486,
+          "end_line": 10487
+        },
+        {
+          "start_line": 10489,
+          "end_line": 10490
+        },
+        {
+          "start_line": 12468,
+          "end_line": 12468
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 110(2)/322(2) real-normal next-month first 15 days/nil declaration/payment next-working-day supported."
+    },
+    {
+      "id": "ml-vat-gst-24",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Deadlines and filing: Real-simplified return and payment calendar",
+      "act_article_url": "LPF art. 110(3),322(3); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 10492,
+          "end_line": 10493
+        },
+        {
+          "start_line": 12472,
+          "end_line": 12473
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 110(3)/322(3) real-simplified annual 15 May regularisation and quarterly advance next 15 days supported."
+    },
+    {
+      "id": "ml-vat-gst-25",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Deadlines and filing: Real-simplified advance coefficients",
+      "act_article_url": "LPF art. 322(3); https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 12479,
+          "end_line": 12481
+        },
+        {
+          "start_line": 12478,
+          "end_line": 12479
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 322(3)0.80 percent taxable tangible movable goods/3 percent taxable services and eligible-fixed-asset credit against advances correct."
+    },
+    {
+      "id": "ml-vat-gst-26",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Deadlines and filing: Prescribed return, rounding and payment receipts",
+      "act_article_url": "LPF art. 111,325–326; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 10502,
+          "end_line": 10503
+        },
+        {
+          "start_line": 12503,
+          "end_line": 12504
+        },
+        {
+          "start_line": 12511,
+          "end_line": 12512
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 111 prescribed return/downward 5 franc rounding/325-326 receipts and recording read. No current portal sequence claimed."
+    },
+    {
+      "id": "ml-vat-gst-27",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Penalties and interest: Late-return penalty branches",
+      "act_article_url": "LPF art. 119; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 10584,
+          "end_line": 10584
+        },
+        {
+          "start_line": 10585,
+          "end_line": 10586
+        },
+        {
+          "start_line": 10588,
+          "end_line": 10588
+        },
+        {
+          "start_line": 10590,
+          "end_line": 10591
+        },
+        {
+          "start_line": 10595,
+          "end_line": 10595
+        },
+        {
+          "start_line": 10597,
+          "end_line": 10598
+        }
+      ],
+      "quote_match": true,
+      "verdict": "repair",
+      "reviewer_reason": "REPAIR R 3: LPF 119 applies 50000 franc minimum in all cases, including pre-notice 25/5 percent branches. Guide attaches minimum wording to post-notice 50 percent and must make universal scope explicit."
+    },
+    {
+      "id": "ml-vat-gst-28",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Penalties and interest: Incorrect returns and abusive invoices",
+      "act_article_url": "LPF art. 120–121; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 10604,
+          "end_line": 10604
+        },
+        {
+          "start_line": 10605,
+          "end_line": 10605
+        },
+        {
+          "start_line": 10610,
+          "end_line": 10610
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 12050/100 percent on compromised tax and 121 double abusively invoicedVAT match."
+    },
+    {
+      "id": "ml-vat-gst-29",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Penalties and interest: Late-payment interest and limits",
+      "act_article_url": "LPF art. 328; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 12529,
+          "end_line": 12530
+        },
+        {
+          "start_line": 12537,
+          "end_line": 12538
+        },
+        {
+          "start_line": 12538,
+          "end_line": 12539
+        },
+        {
+          "start_line": 12540,
+          "end_line": 12540
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "LPF 3282 percent monthly on tax/penalties with fraction as full and 20 percent cap supported; Guide explicitly holds exact start-date/assessment application."
+    },
+    {
+      "id": "ml-vat-gst-30",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Cross-border points: Cross-border place and use",
+      "act_article_url": "CGI art. 196; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 5861,
+          "end_line": 5861
+        },
+        {
+          "start_line": 5866,
+          "end_line": 5866
+        },
+        {
+          "start_line": 5869,
+          "end_line": 5870
+        },
+        {
+          "start_line": 5874,
+          "end_line": 5874
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 196 execution/use/place/immovable/event exceptions and Mali presumption without outside-place proof supported."
+    },
+    {
+      "id": "ml-vat-gst-31",
+      "guide_sha256": "4395738b3a6bf57b59b938be2e6a919d4b0545620717ac05c791c0b46ccac75d",
+      "ledger_sha256": "462feb9589b48c9e95199f02f62a228b08fb922245388cc9bd101f617e789c45",
+      "rule": "Cross-border points: Foreign supplier representation and customer payment",
+      "act_article_url": "CGI art. 197;LPF art. 116; https://www.dgi.gouv.ml/CGI/",
+      "source_original": "dgi-cgi.html",
+      "source_sha256": "32cbd24e5cbd327d8a6c1e6b327cd62de5ffda541aa1f33c80bdb52012b737f5",
+      "extracted_text": "dgi-cgi.txt",
+      "extracted_text_sha256": "c68351dfd01d399406ff72a0c6ee1069d3b1c49a49d76afac0cc3dff53d283ee",
+      "quote_line_spans": [
+        {
+          "start_line": 5877,
+          "end_line": 5877
+        },
+        {
+          "start_line": 5881,
+          "end_line": 5881
+        }
+      ],
+      "quote_match": true,
+      "verdict": "supported_with_stated_source_limits",
+      "reviewer_reason": "Art 197/LPF 116 foreign supplier accredited representative, default customer payment and relevant penalties supported. No universal reverse-charge/matching credit shortcut."
+    }
+  ]
+}

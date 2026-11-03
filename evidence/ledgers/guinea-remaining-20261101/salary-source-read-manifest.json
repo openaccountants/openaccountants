@@ -1,0 +1,45 @@
+{
+  "read_date": "2026-11-01",
+  "memo": "gn-individual-salary-research.md",
+  "files": [
+    {
+      "file": "cgi-enacted-2021-itie.pdf",
+      "sha256": "30b99dc66d6a421ebff47e84ceb0fa1f765ac3ab3afcac4ec7d4eacf8855d2ae"
+    },
+    {
+      "file": "dgi-precis-fiscal-2026.docx",
+      "sha256": "dd75e29f97b3f480e79922913c6a4c793b1fd8b7e2e3908bfc85ea2389924f40"
+    },
+    {
+      "file": "lfi2024.pdf",
+      "sha256": "cb6f32277ec4e43db532f3dedfda5d103ac55297c73629e2214c1202b5bcf254"
+    },
+    {
+      "file": "lfi2025.pdf",
+      "sha256": "069171b8eb81c4865549cc62719603dd99b910358747a0dc83714773f3f474cc"
+    },
+    {
+      "file": "lf2026.pdf",
+      "sha256": "676d0032a8c1eb447081af70a91700bd4ec484070e3e458f2305d4307298f33b"
+    }
+  ],
+  "visual_reads": [
+    "CGI14",
+    "CGI15",
+    "CGI16",
+    "CGI18",
+    "CGI19",
+    "CGI59",
+    "CGI60",
+    "LFI2024p16",
+    "LFI2025p13",
+    "LFI2025p19",
+    "LFI2026p19"
+  ],
+  "limitations": [
+    "October2026 rectifying finance text promulgation/commencement unresolved",
+    "VF/TA exact base reconciliation unresolved",
+    "multiple-employer annual calculation convention unresolved",
+    "vocational-training contribution Labour Code implementation not read"
+  ]
+}

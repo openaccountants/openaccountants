@@ -1,0 +1,49 @@
+[
+  {
+    "id": "R1",
+    "priority": 1,
+    "affected": [
+      "P13",
+      "bf-tax-optimization.md table and TPA worked case"
+    ],
+    "finding": "The draft labels the second 20% TPA reduction categorically incorrect, although the CGI separately states an RSI member tax reduction in article 196 and a general member base abatement in article 228. The cited text does not resolve cumulation. The Sources hold does not neutralise the positive one-relief-only rule and the worked case labels.",
+    "evidence": "CGI physical pages 90 and 100; additional Ministry 2023 tax-expenditure report separately inventories article 196.2 on physical page 39 and article 228.2 on physical page 145. This does not itself prove either final 2026 cumulative treatment.",
+    "required_repair": "Remove the unverified general prohibition and the categorical wrong/correct final-payable labels, or obtain controlling interpretation. A bounded article-228-only arithmetic illustration with the article-196 interaction explicitly unresolved is acceptable. Keep two meaningful cases; do not silently choose cumulative treatment. Update Guide, P13 ledger, example labels/expected step names and linked old-topic dispositions."
+  },
+  {
+    "id": "R2",
+    "priority": 2,
+    "affected": [
+      "F12",
+      "bf-company-formation.md The base"
+    ],
+    "finding": "Article 21 says a company carrying on a regulated activity must comply with the particular rules applicable to that activity. It does not itself establish a universal separate authorisation requirement. The draft says every regulated activity needs its own authorisation.",
+    "evidence": "Actual OHADA Act physical page 12, article 21; national sector licences are expressly not read.",
+    "required_repair": "Use the source-supported activity-specific compliance rule and retain the specific authorisation/licence package as a hold. Mirror the correction in F12."
+  },
+  {
+    "id": "R3",
+    "priority": 2,
+    "affected": [
+      "V2",
+      "V7",
+      "P19",
+      "overview TP source-home table",
+      "Guide Sources/read scopes"
+    ],
+    "finding": "The overview seven-home citation includes CGI article 225, which is the 15% gambling gains withholding rule. TPA is article 227. The controlled-pricing source home and cross-border comparisons cite article 65 but omit the actual dependency/control price-transfer rule in article 66.",
+    "evidence": "CGI physical pages 99–100 and 36–37; articles 98-1–98-2 are separate declarations, not substitutes for article 66.",
+    "required_repair": "Replace the stray 225 with 227 and add actual article 66 where controlled-pricing/dependency is routed. Update the corresponding ledgers and source read-scope statements to match actual sources. Preserve article 65 where privileged-regime payments remain relevant."
+  },
+  {
+    "id": "R4",
+    "priority": 2,
+    "affected": [
+      "old-topics.json",
+      "old-topics.md"
+    ],
+    "finding": "The 74 immutable entries are present and hash-correct, but several destination/disposition cells are boilerplate rather than truthful destinations. In particular optimisation entries 47 (disclaimer) and 48 (old always-current verified-version claim) map to regime conditions in Rates/The base/Deadlines, which do not contain those statements. Formation entry 5 maps the SA topic wholly to an unspecified Sources hold despite replacement SA rules in The base/Rates. Several headings and editorial metadata are described as unconfirmed legal claims instead of retired formatting/metadata.",
+    "evidence": "All 74 entries checked against the three immutable baseline blobs and current candidate. Exact original identities pass; destination fidelity is separate.",
+    "required_repair": "Reconcile destinations/dispositions by actual content. State when a heading/metadata/overconfident old trust claim is retired or replaced by the standard notice/preserved CTA/current source-review disclaimer. Map the SA entity topic to its replacement rules and distinguish unsupported marketing description. Do not alter original text, SHA, baseline commit/blob or entry count."
+  }
+]

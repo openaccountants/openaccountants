@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-01",
+  "status": "Frozen writer checkpoint, fresh source review required",
+  "prior_accepted_head": "ea5f83bc4f60aad2b7f5fff85e921d27e0b360fa",
+  "files": [
+    {
+      "path": "evidence/ledgers/togo-rental-20261101/old-topic-destinations.json",
+      "sha256": "840b8bd16d618a230f1c070dee8edcbb659f1746ff368a9ae0880eb965df988a"
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-20261101/preservation-baseline.json",
+      "sha256": "1f4310addc10beba54368d3bba9209c9f02ad3582e7f29a060dbdbb8ce61ae73"
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-20261101/readme-addition.json",
+      "sha256": "a81d76ba830bb868e71916cf76a3e425364ceffa8ea8952370be1111865a4660"
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-20261101/source-identities.json",
+      "sha256": "463760d5a8d331e3cd803f2a61caa0eadd0f4db0ec46fb626de2f02f55afa0b1"
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-20261101/tg-rental-withholding.json",
+      "sha256": "5ef2f533664e88479b033bdd6f3aa730615919b775129b30b495449904152457"
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-20261101/tg-rental-withholding.md",
+      "sha256": "df1f0ba9775e1ed9b87d9da41b400bfd4960aac07b5e5d1a08d4703c8b5957e7"
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-20261101/writer-checks.json",
+      "sha256": "2fcf795b95c59fe381a2a10023c55894458b625740080c1ca15c19cfe8c711f6"
+    },
+    {
+      "path": "evidence/ledgers/togo-rental-20261101/writer-record.md",
+      "sha256": "2c03aa56da338f930ae3ef4b397366de1415d25bdb2ebbfbb7f41f7744fafa2b"
+    },
+    {
+      "path": "skills/togo/README.md",
+      "sha256": "db272242fdd09466b3be05a0ff3af8077018989909faa6a83ad7c87544dfa3bc"
+    },
+    {
+      "path": "skills/togo/tg-rental-withholding.md",
+      "sha256": "6ab10484a0706dbe0144d77ba94594939787cb5ccb93718c132481ab9c47e510"
+    }
+  ]
+}

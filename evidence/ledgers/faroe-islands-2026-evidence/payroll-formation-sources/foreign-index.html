@@ -1,0 +1,1366 @@
+
+    <input name="Pager.CurrentPage" type="hidden" value="23"/>
+    <input name="Pager.PageSize" type="hidden" value="50"/>
+    <input name="Sorter.SortField" type="hidden" value="lst.ValidityStatus"/>
+    <input name="Sorter.SortDirection" type="hidden" value="Desc"/>
+    <input name="GridAction" type="hidden" value="None"/>
+
+    <h2 class="text-uppercase">Leitingarúrslit</h2>
+    <div class="search-request big mb color-grey">
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#search-criteria-modal">Tú hevur leitað eftir</a>
+        <span class="search-request__criteria"></span>
+    </div>
+    
+    <div class ="search-result" >
+            <div class="toolbar color-grey mb">
+                <div class="group-left">
+                <div class="records-quota">
+                    <span>Vís:</span>
+                    <input class="form-control input-sm" type="text" value="50"/>
+                    <span>rættarreglur á hvørji síðu</span>
+                </div>
+            </div>
+                <div class="group-center">
+                    <div class="records-counter">Regla 1101 - 1150 av 7430</div>
+                </div>
+                <div class="group-right">
+                    
+                        <div class="table-paging">
+                            <button type="button" class="btn btn-link " data-page="1"><span class="fa fa-angle-double-left fa-lg"></span></button>
+                            <button type="button" class="btn btn-link " data-page="22"><span class="fa fa-angle-left fa-lg"></span></button>
+                            <span> Síða 23 av 149 síðum</span>
+                            <button type="button" class="btn btn-link " data-page="24"><span class="fa fa-angle-right fa-lg"></span></button>
+                            <button type="button" class="btn btn-link " data-page="149"><span class="fa fa-angle-double-right fa-lg"></span></button>
+                        </div>
+                    
+                    <div class="list-actions">
+                        <button type="button" class="btn btn-link" data-action="send" data-modal="#send-results-modal" data-warn="True" data-url="/SendList.aspx"><span class="fa fa-envelope"></span></button>
+                        <button type="button" class="btn btn-link" data-action="print" data-modal="#print-results-confirmation-modal" data-confirm="True" data-url="/PrintGrid.aspx?_=1185195605"><span class="fa fa-print"></span></button>
+                        <button type="button" class="btn btn-link" data-action="share" data-modal="#share-results-modal" data-url="/ShareList.aspx/Share"><span class="fa fa-link"></span></button>
+                    </div>
+                </div>
+            </div>
+        
+            <select class="form-control sumoselect-dropdown visible-xs">
+                <option data-placeholder="Skipa eftir: Gildisstøða [Lækkandi]"></option>
+                <option data-field="lst.Category">Rættarreglubólkur [Hækkandi]</option>
+                <option data-field="CAST (lst.Number as int)">Nummar [Hækkandi]</option>
+                <option data-field="lst.Date">Dagfesting [Hækkandi]</option>
+                <option data-field="lst.Title">Heiti [Hækkandi]</option>
+                <option data-field="lst.ValidityStatus">Gildisstøða [Hækkandi]</option>
+            </select>
+
+            <div class="grid-area-x" style="display: flex;">
+               
+                <div class="search-filter" style="display:inline-block; float:left" data-search-url="/List.aspx">
+                     <div style="text-align:right">
+                        
+                       
+                    </div>
+                    <div class="search-filter-box" >
+                    
+                        <div class="tabs-wrap search-tabs mb-big" >
+                        <div class="search-filter-section">
+                            <h3 class="text-uppercase">Gildisstøða</h3>
+                            <div class="search-section-filter-item">
+                                <div class="form-group">
+                                    <div class="tree-wrap tree-wrap--with-expanders" data-name="FilterForm_ValidityStatusTree">
+							                <ul><li id="56" class="selected">Galdandi (3886)</li><li id="55" class="selected">Áður galdandi (3047)</li><li id="1542268606" class="selected">Søgulig (491)</li><li id="137009996" class="selected">Í koming (6)</li></ul>
+					                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-filter-section">
+                            <h3 class="text-uppercase">Rættarreglubólkur</h3>  
+                            <div class="search-section-filter-item">
+                                <div class="form-group">
+                                    <div id="filter-category-box" class="tree-wrap tree-wrap--with-expanders" data-name="FilterForm_CategoryTree" style="overflow-y: hidden;">
+							                <ul><li id="46" class="selected">Løgtingslóg (2004)</li><li id="44" class="selected">Kunngerð (3041)</li><li id="436521299" class="selected">Fráboðan (102)</li><li id="47" class="selected">Løgtingslógarkunngerð (3)</li><li id="54" class="selected">Tingskipan (1)</li><li id="357380443" class="selected">Rundskriv (80)</li><li id="2132006586" class="selected">Leiðbeining (46)</li><li id="39" class="selected">Anordning (276)</li><li id="155518978" class="selected">Anordningsbekendtgørelse (11)</li><li id="48" class="selected">Lov (306)</li><li id="49" class="selected">Lovbekendtgørelse (55)</li><li id="40" class="selected">Bekendtgørelse (1295)</li><li id="45" class="selected">Lagtingslov (163)</li><li id="43" class="selected">Kundgørelse (2)</li><li id="41" class="selected">Forordning (4)</li><li id="50" class="selected">Midlertidig bestemmelse (12)</li><li id="42" class="selected">Kirkjulig fyriskipan (1)</li><li id="51" class="selected">Norske Lov (20)</li><li id="52" class="selected">Plakat (4)</li><li id="53" class="selected">Politivedtægt (2)</li><li id="676618607" class="selected">Cirkulære (2)</li></ul>
+					                </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-filter-section">
+                            <h3 class="text-uppercase">Útgávustøða</h3>
+                            <div class="search-section-filter-item">
+                                <div class="form-group">
+                                    <div class="tree-wrap tree-wrap--with-expanders" data-name="FilterForm_EditionCategoryTree">
+							                <ul><li id="-99" class="selected">Høvuðsrættarregla (5023)</li><li id="2034106882" class="selected">Broytingarrættarregla (2407)</li></ul>
+					                </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                            <div class="search-filter-section" style="padding-bottom: 10px">
+                            <h3 class="text-uppercase">Ár</h3>
+                            <div class="search-section-filter-item">
+                                <div style="text-align:center">
+                                    <input class="rs-tooltip" type="number" id="year-slider-from" style="float: left" />
+                                    tíl
+                                    <input class="rs-tooltip" type="number" id="year-slider-to" style="float: right" />
+                                </div>
+                                <div style="margin-left:15px;margin-right:18px; margin-top: 10px">
+                                    <input type="text" id="year-slider" class="slider" data-rangeFrom="1686" data-rangeTo="2026" data-from="0" data-to="0"/>
+                                </div>
+                                     
+                                
+                            
+                            </div>
+                        </div>
+                        
+                        <div class="search-filter-section">
+                            <h3 class="text-uppercase">Myndugleiki</h3>
+                            <div class="search-section-filter-item">
+                                <div class="form-group">
+                                    <div class="tree-wrap tree-wrap--with-expanders" data-name="FilterForm_AuthorityTree">
+							                <ul><li id="5" class="selected">Almanna- og bústaðamálaráðið (430)</li><li id="7" class="selected">Fíggjarmálaráðið (809)</li><li id="968817112" class="selected">Heilsu- og orkumálaráðið (449)</li><li id="14" class="selected">Løgmansskrivstovan (564)</li><li id="1837232464" class="selected">Mentamálaráðið (461)</li><li id="20" class="selected">Uttanríkis- og fiskimálaráðið (561)</li><li id="9" class="selected">Vinnumálaráðið (1042)</li><li id="2" class="selected">Eingin (3114)</li></ul>
+					                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <script>
+                    $(document).ready(function () {
+                        console.log("tabs", $('.search-tabs'));
+                        //$('.search-filter').search_tabs();
+                    });
+                </script>
+                </div>
+                <div style="display: inline-block; float:right; width:100%">
+                    <div class="search-filter-buttons" style="width:100%; margin-left:-10px; margin-bottom: -10px; z-index: 1"  >
+                        <button type="button" class="btn-collapse search-filter-expand-less"><span class="fa fa-angle-double-left fa-lg"></span></button>
+                        <button type="button" class="btn-collapse search-filter-expand-more" style="display:none"><span class="fa fa-angle-double-right fa-lg"></span></button>
+                    </div>
+                    <div class="table-wrap mb">
+                        <table class="table" data-references-url="/Controls/ReferenceList.aspx?_=1185195605">
+	                        <thead>
+		                        <tr>
+			                        <th>
+                                        
+			                        </th>
+			                        <th>
+                                        <button type="button" class="btn btn-link sortable " data-field="lst.Category"><span class="sortable__text">Rættarreglubólkur</span></button>
+			                        </th>
+			                        <th>
+                                        <button type="button" class="btn btn-link sortable " data-field="CAST (lst.Number as int)"><span class="sortable__text">Nummar</span></button>
+			                        </th>
+			                        <th>&nbsp;</th>
+			                        <th>
+                                        <button type="button" class="btn btn-link sortable " data-field="lst.Date"><span class="sortable__text">Dagfesting</span></button>
+			                        </th>
+			                        <th>&nbsp;</th>
+			                        <th>
+                                        <button type="button" class="btn btn-link sortable " data-field="lst.Title"><span class="sortable__text">Heiti</span></button>
+			                        </th>
+			                        <th>
+                                        <button type="button" class="btn btn-link sortable active-desc" data-field="lst.ValidityStatus"><span class="sortable__text">Gildisstøða</span></button>
+			                        </th>
+		                        </tr>
+	                        </thead>
+	                        <tbody>
+                               
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1222268174"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Løgtingslóg nr. 71 frá 22. mai 2023 um
+                                        <a href="Logtingslog/71-fra-22-05-2023-um-broyting-i-logtingslog-um-natturufriding">broyting í løgtingslóg um náttúrufriðing</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">L&#248;gtingsl&#243;g</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 71</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">22. mai 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Logtingslog/71-fra-22-05-2023-um-broyting-i-logtingslog-um-natturufriding">broyting &#237; l&#248;gtingsl&#243;g um n&#225;tt&#250;rufri&#240;ing</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1251184739"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Løgtingslóg nr. 72 frá 22. mai 2023 um
+                                        <a href="Logtingslog/72-fra-22-05-2023-um-kapping">kapping, sum broytt við løgtingslóg nr. 18 frá 26. mars 2024</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">L&#248;gtingsl&#243;g</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 72</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">22. mai 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Logtingslog/72-fra-22-05-2023-um-kapping">kapping, sum broytt vi&#240; l&#248;gtingsl&#243;g nr. 18 fr&#225; 26. mars 2024</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="76992435"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Bekendtgørelse nr. 527 frá 17. maj 2023 om
+                                        <a href="Bekendtgorelse/527-fra-daDK-17-05-2023-om-psykisk-arbejdsmiljo-pa-luftfartsomradet">psykisk arbejdsmiljø på luftfartsområdet</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Bekendtg&#248;relse</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 527</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">17. maj 2023</td>
+                                    <td class="hidden-xs" data-th="">om</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Bekendtgorelse/527-fra-daDK-17-05-2023-om-psykisk-arbejdsmiljo-pa-luftfartsomradet">psykisk arbejdsmilj&#248; p&#229; luftfartsomr&#229;det</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1340560723"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Bekendtgørelse nr. 508 af 16. maj 2023 for
+                                        <a href="Bekendtgorelse/508-af-16-05-2023-for-Faeroerne-om-landfogedens-politidirektorens-og-statsadvokaternes-adgang-til-at-frafalde">Færøerne om landfogedens (politidirektørens) og statsadvokaternes adgang til at frafalde tiltale</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Bekendtg&#248;relse</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 508</td>
+                                    <td class="hidden-xs" data-th="">af</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">16. maj 2023</td>
+                                    <td class="hidden-xs" data-th="">for</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Bekendtgorelse/508-af-16-05-2023-for-Faeroerne-om-landfogedens-politidirektorens-og-statsadvokaternes-adgang-til-at-frafalde">F&#230;r&#248;erne om landfogedens (politidirekt&#248;rens) og statsadvokaternes adgang til at frafalde tiltale</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1042791274"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 58 frá 15. mai 2023 um
+                                        <a href="Kunngerd/58-fra-15-05-2023-um-at-seta-ur-gildi-reglugerd-fyri-foroysku-vidskiftastovuna-i-Keypmannahavn">at seta úr gildi reglugerð fyri føroysku viðskiftastovuna í Keypmannahavn</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 58</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">15. mai 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/58-fra-15-05-2023-um-at-seta-ur-gildi-reglugerd-fyri-foroysku-vidskiftastovuna-i-Keypmannahavn">at seta &#250;r gildi regluger&#240; fyri f&#248;roysku vi&#240;skiftastovuna &#237; Keypmannahavn</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1759078073"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Anordning nr. 493 af 12. maj 2023 om
+                                        <a href="Anordning/493-af-12-05-2023-om-ikrafttraeden-for-Faeroerne-af-en-del-af--1-i">ikrafttræden for Færøerne af en del af § 1 i lov om ændring af lov om midlertidig opholdstilladelse til personer, der er fordrevet fra Ukraine, lov om individuel boligstøtte, lov om børnetilskud og forskudsvis udbetaling af børnebidrag og integrationsloven, og § 4 i lov om ændring af lov om social pension, lov om højeste, mellemste, forhøjet almindelig og almindelig førtidspension m.v., lov om arbejdsløshedsforsikring m.v. og lov om midlertidig opholdstilladelse til personer, der er fordrevet fra Ukraine</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Anordning</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 493</td>
+                                    <td class="hidden-xs" data-th="">af</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">12. maj 2023</td>
+                                    <td class="hidden-xs" data-th="">om</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Anordning/493-af-12-05-2023-om-ikrafttraeden-for-Faeroerne-af-en-del-af--1-i">ikrafttr&#230;den for F&#230;r&#248;erne af en del af &#167; 1 i lov om &#230;ndring af lov om midlertidig opholdstilladelse til personer, der er fordrevet fra Ukraine, lov om individuel boligst&#248;tte, lov om b&#248;rnetilskud og forskudsvis udbetaling af b&#248;rnebidrag og integrationsloven, og &#167; 4 i lov om &#230;ndring af lov om social pension, lov om h&#248;jeste, mellemste, forh&#248;jet almindelig og almindelig f&#248;rtidspension m.v., lov om arbejdsl&#248;shedsforsikring m.v. og lov om midlertidig opholdstilladelse til personer, der er fordrevet fra Ukraine</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="922723832"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Bekendtgørelse nr. 560 af 11. maj 2023 om
+                                        <a href="Bekendtgorelse/560-af-11-05-2023-om-ikrafttraeden-af-lov-om-aendring-af-lov-for-Faeroerne-om">ikrafttræden af lov om ændring af lov for Færøerne om kapitalkrav og tilsynsmæssige krav for kreditinstitutter og investeringsselskaber</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Bekendtg&#248;relse</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 560</td>
+                                    <td class="hidden-xs" data-th="">af</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">11. maj 2023</td>
+                                    <td class="hidden-xs" data-th="">om</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Bekendtgorelse/560-af-11-05-2023-om-ikrafttraeden-af-lov-om-aendring-af-lov-for-Faeroerne-om">ikrafttr&#230;den af lov om &#230;ndring af lov for F&#230;r&#248;erne om kapitalkrav og tilsynsm&#230;ssige krav for kreditinstitutter og investeringsselskaber</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Løgtingslóg nr. 48 frá 19. apríl 2023 um
+                                        <a href="Logtingslog/48-fra-19-04-2023-um-lantoku-til-landskassan-fyri-2023">lántøku til landskassan fyri 2023</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">L&#248;gtingsl&#243;g</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 48</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">19. apr&#237;l 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Logtingslog/48-fra-19-04-2023-um-lantoku-til-landskassan-fyri-2023">l&#225;nt&#248;ku til landskassan fyri 2023</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="405137208"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Løgtingslóg nr. 50 frá 19. apríl 2023 um
+                                        <a href="Logtingslog/50-fra-19-04-2023-um-broyting-i-logtingslog-um-tridja-byggistig-i-umbygging-og-utbygging">broyting í løgtingslóg um triðja byggistig í umbygging og útbygging av miðnámsskúlanum á Kambsdali</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">L&#248;gtingsl&#243;g</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 50</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">19. apr&#237;l 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Logtingslog/50-fra-19-04-2023-um-broyting-i-logtingslog-um-tridja-byggistig-i-umbygging-og-utbygging">broyting &#237; l&#248;gtingsl&#243;g um tri&#240;ja byggistig &#237; umbygging og &#250;tbygging av mi&#240;n&#225;mssk&#250;lanum &#225; Kambsdali</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="343346262"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 51 frá 19. apríl 2023 um
+                                        <a href="Kunngerd/51-fra-19-04-2023-um-taenastugjold-fyri-tollavgreidslur-otil-uttanfyri-avgreidslutid">tænastugjøld fyri tollavgreiðslur o.tíl. uttanfyri avgreiðslutíð, sum broytt við kunngerð nr. 14 frá 25. februar 2025</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 51</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">19. apr&#237;l 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/51-fra-19-04-2023-um-taenastugjold-fyri-tollavgreidslur-otil-uttanfyri-avgreidslutid">t&#230;nastugj&#248;ld fyri tollavgrei&#240;slur o.t&#237;l. uttanfyri avgrei&#240;slut&#237;&#240;, sum broytt vi&#240; kunnger&#240; nr. 14 fr&#225; 25. februar 2025</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1463551837"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 52 frá 19. apríl 2023 um
+                                        <a href="Kunngerd/52-fra-19-04-2023-um-undantak-eftir-eftirlonarlogini-fyri-personar-sum-arbeida-hja-utlendskum-arbeidsgevara">undantak eftir eftirlønarlógini fyri persónar, sum arbeiða hjá útlendskum arbeiðsgevara og eru fevndir av útlendskari eftirlønarskipan, sum broytt við kunngerð nr. 72 frá 20. august 2026</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 52</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">19. apr&#237;l 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/52-fra-19-04-2023-um-undantak-eftir-eftirlonarlogini-fyri-personar-sum-arbeida-hja-utlendskum-arbeidsgevara">undantak eftir eftirl&#248;narl&#243;gini fyri pers&#243;nar, sum arbei&#240;a hj&#225; &#250;tlendskum arbei&#240;sgevara og eru fevndir av &#250;tlendskari eftirl&#248;narskipan, sum broytt vi&#240; kunnger&#240; nr. 72 fr&#225; 20. august 2026</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1361997607"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Løgtingslóg nr. 39 frá 29. mars 2023 um
+                                        <a href="Logtingslog/39-fra-29-03-2023-um-broyting-i-logtingslog-um-raedi-a-malum-og-malsokjum">broyting í løgtingslóg um ræði á málum og málsøkjum</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">L&#248;gtingsl&#243;g</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 39</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">29. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Logtingslog/39-fra-29-03-2023-um-broyting-i-logtingslog-um-raedi-a-malum-og-malsokjum">broyting &#237; l&#248;gtingsl&#243;g um r&#230;&#240;i &#225; m&#225;lum og m&#225;ls&#248;kjum</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="175442860"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Løgtingslóg nr. 41 frá 29. mars 2023 um
+                                        <a href="Logtingslog/41-fra-29-03-2023-um-broyting-i-anordning-for-Faeroerne-af-lov-om-foranstaltninger-mod">broyting í anordning for Færøerne af lov om foranstaltninger mod smitsomme og andre overførbare sygdomme</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">L&#248;gtingsl&#243;g</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 41</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">29. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Logtingslog/41-fra-29-03-2023-um-broyting-i-anordning-for-Faeroerne-af-lov-om-foranstaltninger-mod">broyting &#237; anordning for F&#230;r&#248;erne af lov om foranstaltninger mod smitsomme og andre overf&#248;rbare sygdomme</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1531614150"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Løgtingslóg nr. 42 frá 29. mars 2023 um
+                                        <a href="Logtingslog/42-fra-29-03-2023-um-broyting-i-logtingslog-um-familjuiskoyti">broyting í løgtingslóg um familjuískoyti</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">L&#248;gtingsl&#243;g</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 42</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">29. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Logtingslog/42-fra-29-03-2023-um-broyting-i-logtingslog-um-familjuiskoyti">broyting &#237; l&#248;gtingsl&#243;g um familju&#237;skoyti</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="398570735"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 43 frá 24. mars 2023 um
+                                        <a href="Kunngerd/43-fra-24-03-2023-um-broyting-i-kunngerd-um-personliga-vidbot-sambaert-logtingslog-um-almannapensjonir">broyting í kunngerð um persónliga viðbót sambært løgtingslóg um almannapensjónir o.a.</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 43</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">24. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/43-fra-24-03-2023-um-broyting-i-kunngerd-um-personliga-vidbot-sambaert-logtingslog-um-almannapensjonir">broyting &#237; kunnger&#240; um pers&#243;nliga vi&#240;b&#243;t samb&#230;rt l&#248;gtingsl&#243;g um almannapensj&#243;nir o.a.</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Rundskriv nr. 9003 frá 24. mars 2023 um
+                                        <a href="Rundskriv/9003-fra-24-03-2023-um-trygdartiltok-i-sambandi-vid-svimjiundirvising-i-folkaskulum-friskulum-serskulum-og">trygdartiltøk í sambandi við svimjiundirvísing í fólkaskúlum, frískúlum, serskúlum og eftirskúlum</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Rundskriv</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 9003</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">24. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Rundskriv/9003-fra-24-03-2023-um-trygdartiltok-i-sambandi-vid-svimjiundirvising-i-folkaskulum-friskulum-serskulum-og">trygdartilt&#248;k &#237; sambandi vi&#240; svimjiundirv&#237;sing &#237; f&#243;lkask&#250;lum, fr&#237;sk&#250;lum, sersk&#250;lum og eftirsk&#250;lum</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1919796911"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 37 frá 22. mars 2023 um
+                                        <a href="Kunngerd/37-fra-22-03-2023-um-broyting-i-kunngerd-um-upplysingar-til-keypara-um-solupris-og">broyting í kunngerð um upplýsingar til keypara um søluprís og eindarprís</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 37</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">22. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/37-fra-22-03-2023-um-broyting-i-kunngerd-um-upplysingar-til-keypara-um-solupris-og">broyting &#237; kunnger&#240; um uppl&#253;singar til keypara um s&#248;lupr&#237;s og eindarpr&#237;s</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1558499235"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 38 frá 20. mars 2023 um
+                                        <a href="Kunngerd/38-fra-20-03-2023-um-broyting-i-kunngerd-um-gjold-fyri-veterinerar-og-heilsufrodiligar-kanningar">broyting í kunngerð um gjøld fyri veterinerar og heilsufrøðiligar kanningar og eftirlit</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 38</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">20. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/38-fra-20-03-2023-um-broyting-i-kunngerd-um-gjold-fyri-veterinerar-og-heilsufrodiligar-kanningar">broyting &#237; kunnger&#240; um gj&#248;ld fyri veterinerar og heilsufr&#248;&#240;iligar kanningar og eftirlit</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="546300594"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 36 frá 20. mars 2023 um
+                                        <a href="Kunngerd/36-fra-20-03-2023-um-utbugving-til-kokkahjalpara-og-kokk">útbúgving til kokkahjálpara og kokk</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 36</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">20. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/36-fra-20-03-2023-um-utbugving-til-kokkahjalpara-og-kokk">&#250;tb&#250;gving til kokkahj&#225;lpara og kokk</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1992797170"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 34 frá 14. mars 2023 um
+                                        <a href="Kunngerd/34-fra-14-03-2023-um-broyting-i-kunngerd-um-laerusattmalar-umsitingargjald-oa">broyting í kunngerð um lærusáttmálar, umsitingargjald o.a.</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 34</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">14. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/34-fra-14-03-2023-um-broyting-i-kunngerd-um-laerusattmalar-umsitingargjald-oa">broyting &#237; kunnger&#240; um l&#230;rus&#225;ttm&#225;lar, umsitingargjald o.a.</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1975939521"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 33 frá 13. mars 2023 um
+                                        <a href="Kunngerd/33-fra-13-03-2023-um-at-seta-ur-gildi-kunngerd-um-vidtokur-fyri-Foroyagrunnin-fra">at seta úr gildi kunngerð um viðtøkur fyri Føroyagrunnin frá 1971</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 33</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">13. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/33-fra-13-03-2023-um-at-seta-ur-gildi-kunngerd-um-vidtokur-fyri-Foroyagrunnin-fra">at seta &#250;r gildi kunnger&#240; um vi&#240;t&#248;kur fyri F&#248;royagrunnin fr&#225; 1971</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1690655329"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Løgtingslóg nr. 31 frá 9. mars 2023 um
+                                        <a href="Logtingslog/31-fra-09-03-2023-um-broyting-i-ymsum-logtingslogum-otil-i-sambandi-vid-dagforing-av">broyting í ymsum løgtingslógum o.tíl. í sambandi við dagføring av konkurslógini fyri Føroyar</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">L&#248;gtingsl&#243;g</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 31</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">9. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Logtingslog/31-fra-09-03-2023-um-broyting-i-ymsum-logtingslogum-otil-i-sambandi-vid-dagforing-av">broyting &#237; ymsum l&#248;gtingsl&#243;gum o.t&#237;l. &#237; sambandi vi&#240; dagf&#248;ring av konkursl&#243;gini fyri F&#248;royar</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="911772532"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Løgtingslóg nr. 32 frá 9. mars 2023 um
+                                        <a href="Logtingslog/32-fra-09-03-2023-um-broyting-i-ymsum-logtingslogum-i-sambandi-vid-umskipan-av-Foroya">broyting í ymsum løgtingslógum í sambandi við umskipan av Føroya Kærustovni</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">L&#248;gtingsl&#243;g</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 32</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">9. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Logtingslog/32-fra-09-03-2023-um-broyting-i-ymsum-logtingslogum-i-sambandi-vid-umskipan-av-Foroya">broyting &#237; ymsum l&#248;gtingsl&#243;gum &#237; sambandi vi&#240; umskipan av F&#248;roya K&#230;rustovni</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1245355030"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Rundskriv nr. 9002 frá 8. mars 2023 um
+                                        <a href="Rundskriv/9002-fra-08-03-2023-um-kunngering-av-logtingslogum-og-kunngerdum-otil">kunngering av løgtingslógum og kunngerðum o.tíl.</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Rundskriv</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 9002</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">8. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Rundskriv/9002-fra-08-03-2023-um-kunngering-av-logtingslogum-og-kunngerdum-otil">kunngering av l&#248;gtingsl&#243;gum og kunnger&#240;um o.t&#237;l.</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="702391632"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 29 frá 2. mars 2023 um
+                                        <a href="Kunngerd/29-fra-02-03-2023-um-broyting-i-kunngerd-um-yvirvoku-og-talming-av-lusum-a">broyting í kunngerð um yvirvøku og tálming av lúsum á alifiski (Lúsakunngerðin)</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 29</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">2. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/29-fra-02-03-2023-um-broyting-i-kunngerd-um-yvirvoku-og-talming-av-lusum-a">broyting &#237; kunnger&#240; um yvirv&#248;ku og t&#225;lming av l&#250;sum &#225; alifiski (L&#250;sakunnger&#240;in)</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="378480171"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 28 frá 1. mars 2023 um
+                                        <a href="Kunngerd/28-fra-01-03-2023-um-broyting-i-kunngerd-um-umsiting-av-ogn-hja-omyndugum-og">broyting í kunngerð um umsiting av ogn hjá ómyndugum og persónum undir verju</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 28</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">1. mars 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/28-fra-01-03-2023-um-broyting-i-kunngerd-um-umsiting-av-ogn-hja-omyndugum-og">broyting &#237; kunnger&#240; um umsiting av ogn hj&#225; &#243;myndugum og pers&#243;num undir verju</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="344604523"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Løgtingslóg nr. 26 frá 27. februar 2023 um
+                                        <a href="Logtingslog/26-fra-27-02-2023-um-broyting-i-logtingslog-um-avgjold-vid-skraseting-av-motorakforum">broyting í løgtingslóg um avgjøld við skráseting av motorakførum</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">L&#248;gtingsl&#243;g</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 26</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">27. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Logtingslog/26-fra-27-02-2023-um-broyting-i-logtingslog-um-avgjold-vid-skraseting-av-motorakforum">broyting &#237; l&#248;gtingsl&#243;g um avgj&#248;ld vi&#240; skr&#225;seting av motorakf&#248;rum</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1726045751"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Løgtingslóg nr. 27 frá 27. februar 2023 um
+                                        <a href="Logtingslog/27-fra-27-02-2023-um-broyting-i-logtingslog-um-meirvirdisgjald-Meirvirdisgjaldslogin">broyting í løgtingslóg um meirvirðisgjald (Meirvirðisgjaldslógin)</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">L&#248;gtingsl&#243;g</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 27</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">27. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Logtingslog/27-fra-27-02-2023-um-broyting-i-logtingslog-um-meirvirdisgjald-Meirvirdisgjaldslogin">broyting &#237; l&#248;gtingsl&#243;g um meirvir&#240;isgjald (Meirvir&#240;isgjaldsl&#243;gin)</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1616983408"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 21 frá 23. februar 2023 um
+                                        <a href="Kunngerd/21-fra-23-02-2023-um-at-seta-ur-gildi-kunngerd-um-bilsmidutbugving">at seta úr gildi kunngerð um bilsmiðútbúgving</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 21</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">23. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/21-fra-23-02-2023-um-at-seta-ur-gildi-kunngerd-um-bilsmidutbugving">at seta &#250;r gildi kunnger&#240; um bilsmi&#240;&#250;tb&#250;gving</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="13611629"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 22 frá 23. februar 2023 um
+                                        <a href="Kunngerd/22-fra-23-02-2023-um-at-seta-ur-gildi-kunngerd-um-elektrikarautbugving">at seta úr gildi kunngerð um elektrikaraútbúgving</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 22</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">23. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/22-fra-23-02-2023-um-at-seta-ur-gildi-kunngerd-um-elektrikarautbugving">at seta &#250;r gildi kunnger&#240; um elektrikara&#250;tb&#250;gving</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="220742193"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 23 frá 23. februar 2023 um
+                                        <a href="Kunngerd/23-fra-23-02-2023-um-at-seta-ur-gildi-kunngerd-um-harfridkarautbugving">at seta úr gildi kunngerð um hárfríðkaraútbúgving</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 23</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">23. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/23-fra-23-02-2023-um-at-seta-ur-gildi-kunngerd-um-harfridkarautbugving">at seta &#250;r gildi kunnger&#240; um h&#225;rfr&#237;&#240;kara&#250;tb&#250;gving</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="968514359"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 24 frá 23. februar 2023 um
+                                        <a href="Kunngerd/24-fra-23-02-2023-um-at-seta-ur-gildi-kunngerd-um-skiftisreglur">at seta úr gildi kunngerð um skiftisreglur</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 24</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">23. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/24-fra-23-02-2023-um-at-seta-ur-gildi-kunngerd-um-skiftisreglur">at seta &#250;r gildi kunnger&#240; um skiftisreglur</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Rundskriv nr. 9001 frá 15. februar 2023 um
+                                        <a href="Rundskriv/9001-fra-15-02-2023-um-keyp-av-elbilum">keyp av elbilum</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Rundskriv</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 9001</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">15. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Rundskriv/9001-fra-15-02-2023-um-keyp-av-elbilum">keyp av elbilum</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1893860144"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 17 frá 14. februar 2023 um
+                                        <a href="Kunngerd/17-fra-14-02-2023-um-sattmalaskylduga-yrkisutbugving-upptoku-i-skula-og-floksbytistal">sáttmálaskylduga yrkisútbúgving, upptøku í skúla og floksbýtistal, sum seinast broytt við kunngerð nr. 89 frá 21. oktober 2026</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 17</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">14. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/17-fra-14-02-2023-um-sattmalaskylduga-yrkisutbugving-upptoku-i-skula-og-floksbytistal">s&#225;ttm&#225;laskylduga yrkis&#250;tb&#250;gving, uppt&#248;ku &#237; sk&#250;la og floksb&#253;tistal, sum seinast broytt vi&#240; kunnger&#240; nr. 89 fr&#225; 21. oktober 2026</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1177940888"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 18 frá 14. februar 2023 um
+                                        <a href="Kunngerd/18-fra-14-02-2023-um-broyting-i-kunngerd-um-skrivstovuutbugving-vid-grein-innan-fyrisiting">broyting í kunngerð um skrivstovuútbúgving við grein innan fyrisiting</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 18</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">14. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/18-fra-14-02-2023-um-broyting-i-kunngerd-um-skrivstovuutbugving-vid-grein-innan-fyrisiting">broyting &#237; kunnger&#240; um skrivstovu&#250;tb&#250;gving vi&#240; grein innan fyrisiting</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="90995891"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 19 frá 14. februar 2023 um
+                                        <a href="Kunngerd/19-fra-14-02-2023-um-broyting-i-kunngerd-um-utbugving-innan-heilsolu-og-smasolu">broyting í kunngerð um útbúgving innan heilsølu og smásølu</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 19</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">14. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/19-fra-14-02-2023-um-broyting-i-kunngerd-um-utbugving-innan-heilsolu-og-smasolu">broyting &#237; kunnger&#240; um &#250;tb&#250;gving innan heils&#248;lu og sm&#225;s&#248;lu</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="2071088644"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 20 frá 14. februar 2023 um
+                                        <a href="Kunngerd/20-fra-14-02-2023-um-broyting-i-kunngerd-um-utbugving-innan-timburutbugving">broyting í kunngerð um útbúgving innan timburútbúgving</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 20</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">14. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/20-fra-14-02-2023-um-broyting-i-kunngerd-um-utbugving-innan-timburutbugving">broyting &#237; kunnger&#240; um &#250;tb&#250;gving innan timbur&#250;tb&#250;gving</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1633092020"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 15 frá 13. februar 2023 um
+                                        <a href="Kunngerd/15-fra-13-02-2023-um-upplysingar-til-keypara-um-solupris-og-eindarpris">upplýsingar til keypara um søluprís og eindarprís, sum broytt við kunngerð nr. 37 frá 22. mars 2023</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 15</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">13. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/15-fra-13-02-2023-um-upplysingar-til-keypara-um-solupris-og-eindarpris">uppl&#253;singar til keypara um s&#248;lupr&#237;s og eindarpr&#237;s, sum broytt vi&#240; kunnger&#240; nr. 37 fr&#225; 22. mars 2023</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="2045605411"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Fráboðan nr. 14 frá 10. februar 2023 um
+                                        <a href="Frabodan/14-fra-10-02-2023-um-broyting-i-frabodan-um-broyting-i-frabodan-um-byti-av">broyting í fráboðan um broyting í fráboðan um býti av málsøkjum landsstýrisins millum landsstýriskvinnurnar og landsstýrismenninar</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Fr&#225;bo&#240;an</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 14</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">10. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Frabodan/14-fra-10-02-2023-um-broyting-i-frabodan-um-broyting-i-frabodan-um-byti-av">broyting &#237; fr&#225;bo&#240;an um broyting &#237; fr&#225;bo&#240;an um b&#253;ti av m&#225;ls&#248;kjum landsst&#253;risins millum landsst&#253;riskvinnurnar og landsst&#253;rismenninar</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1794470405"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 12 frá 9. februar 2023 um
+                                        <a href="Kunngerd/12-fra-09-02-2023-um-medisinska-utgerd-og-medisinska-utgerd-i-invitro-diagnostikki">medisinska útgerð og medisinska útgerð í in-vitro diagnostikki</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 12</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">9. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/12-fra-09-02-2023-um-medisinska-utgerd-og-medisinska-utgerd-i-invitro-diagnostikki">medisinska &#250;tger&#240; og medisinska &#250;tger&#240; &#237; in-vitro diagnostikki</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1386195805"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 7 frá 6. februar 2023 um
+                                        <a href="Kunngerd/7-fra-06-02-2023-um-broyting-i-kunngerd-um-raett-til-veitingar-fra-Heilsutrygd-fyri">broyting í kunngerð um rætt til veitingar frá Heilsutrygd fyri persónar, sum fyribils uppihalda sær í Føroyum</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 7</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">6. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/7-fra-06-02-2023-um-broyting-i-kunngerd-um-raett-til-veitingar-fra-Heilsutrygd-fyri">broyting &#237; kunnger&#240; um r&#230;tt til veitingar fr&#225; Heilsutrygd fyri pers&#243;nar, sum fyribils uppihalda s&#230;r &#237; F&#248;royum</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1406786141"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 8 frá 6. februar 2023 um
+                                        <a href="Kunngerd/8-fra-06-02-2023-um-broyting-i-kunngerd-um-endurgjald-fyri-ferding-til-og-fra">broyting í kunngerð um endurgjald fyri ferðing til og frá serlækna, kommunulæknavaktini og ljósmóður</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 8</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">6. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/8-fra-06-02-2023-um-broyting-i-kunngerd-um-endurgjald-fyri-ferding-til-og-fra">broyting &#237; kunnger&#240; um endurgjald fyri fer&#240;ing til og fr&#225; serl&#230;kna, kommunul&#230;knavaktini og lj&#243;sm&#243;&#240;ur</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1807743295"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 9 frá 6. februar 2023 um
+                                        <a href="Kunngerd/9-fra-06-02-2023-um-broyting-i-kunngerd-um-einstaklingatilskot-til-heilivag">broyting í kunngerð um einstaklingatilskot til heilivág</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 9</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">6. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/9-fra-06-02-2023-um-broyting-i-kunngerd-um-einstaklingatilskot-til-heilivag">broyting &#237; kunnger&#240; um einstaklingatilskot til heiliv&#225;g</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="389780762"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 10 frá 6. februar 2023 um
+                                        <a href="Kunngerd/10-fra-06-02-2023-um-broyting-i-kunngerd-um-visitasjonsnevnd-i-sjukrahusverkinum">broyting í kunngerð um visitasjónsnevnd í sjúkrahúsverkinum</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 10</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">6. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/10-fra-06-02-2023-um-broyting-i-kunngerd-um-visitasjonsnevnd-i-sjukrahusverkinum">broyting &#237; kunnger&#240; um visitasj&#243;nsnevnd &#237; sj&#250;krah&#250;sverkinum</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1003366639"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 11 frá 6. februar 2023 frá
+                                        <a href="Kunngerd/11-fra-06-02-2023-fra-Fjarskiftiseftirlitinum-um-radioprovbrov">Fjarskiftiseftirlitinum um radiopróvbrøv</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 11</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">6. februar 2023</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/11-fra-06-02-2023-fra-Fjarskiftiseftirlitinum-um-radioprovbrov">Fjarskiftiseftirlitinum um radiopr&#243;vbr&#248;v</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="2022164468"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 6 frá 30. januar 2023 um
+                                        <a href="Kunngerd/6-fra-30-01-2023-um-broyting-i-kunngerd-um-heimataenastu-og-gjald-fyri-heimataenastu-eldrarokt">broyting í kunngerð um heimatænastu og gjald fyri heimatænastu, eldrarøkt o.a.</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 6</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">30. januar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/6-fra-30-01-2023-um-broyting-i-kunngerd-um-heimataenastu-og-gjald-fyri-heimataenastu-eldrarokt">broyting &#237; kunnger&#240; um heimat&#230;nastu og gjald fyri heimat&#230;nastu, eldrar&#248;kt o.a.</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1540372604"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Rundskriv nr. 9000 frá 20. januar 2023 um
+                                        <a href="Rundskriv/9000-fra-20-01-2023-um-skraseting-av-arbeidstid-oa">skráseting av arbeiðstíð o.a.</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Rundskriv</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 9000</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">20. januar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Rundskriv/9000-fra-20-01-2023-um-skraseting-av-arbeidstid-oa">skr&#225;seting av arbei&#240;st&#237;&#240; o.a.</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="1548075866"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Leiðbeining nr. 8000 frá 11. januar 2023 um
+                                        <a href="Leidbeining/8000-fra-11-01-2023-um-vidgerd-av-klagum-hja-javnstodunevndini">viðgerð av klagum hjá javnstøðunevndini</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Lei&#240;beining</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 8000</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">11. januar 2023</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Leidbeining/8000-fra-11-01-2023-um-vidgerd-av-klagum-hja-javnstodunevndini">vi&#240;ger&#240; av klagum hj&#225; javnst&#248;&#240;unevndini</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="681301259"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 168 frá 21. desember 2022 um
+                                        <a href="Kunngerd/168-fra-21-12-2022-um-broyting-i-kunngerd-um-loyvi-til-royndarfiskiskap">broyting í kunngerð um loyvi til royndarfiskiskap</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 168</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">21. desember 2022</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/168-fra-21-12-2022-um-broyting-i-kunngerd-um-loyvi-til-royndarfiskiskap">broyting &#237; kunnger&#240; um loyvi til royndarfiskiskap</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="591221817"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Kunngerð nr. 169 frá 21. desember 2022 um
+                                        <a href="Kunngerd/169-fra-21-12-2022-um-broyting-i-kunngerd-um-treytir-fyri-fiskiloyvi-5-A-og">broyting í kunngerð um treytir fyri fiskiloyvi 5 A og 5 B og reglur um býtið av fiskidagatalinum hjá bólki 5, útróðrarbátar undir 15 tons</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Kunnger&#240;</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 169</td>
+                                    <td class="hidden-xs" data-th="">fr&#225;</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">21. desember 2022</td>
+                                    <td class="hidden-xs" data-th="">um</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Kunngerd/169-fra-21-12-2022-um-broyting-i-kunngerd-um-treytir-fyri-fiskiloyvi-5-A-og">broyting &#237; kunnger&#240; um treytir fyri fiskiloyvi 5 A og 5 B og reglur um b&#253;ti&#240; av fiskidagatalinum hj&#225; b&#243;lki 5, &#250;tr&#243;&#240;rarb&#225;tar undir 15 tons</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+                                <tr>
+                                    <td>
+                                        
+                                            <button type="button" class="btn-table-collapse" data-id="843134533"></button>
+                                        
+                                    </td>
+                                    <td class="visible-xs">
+                                        Bekendtgørelse nr. 1547 af 12. december 2022 om
+                                        <a href="Bekendtgorelse/1547-af-12-12-2022-om-aendring-af-bekendtgorelse-for-Faeroerne-om-vederlag-til-staevningsmaend-og">ændring af bekendtgørelse for Færøerne om vederlag til stævningsmænd og til vidner i fogedforretninger</a>
+                                        (Galdandi)
+                                    </td>
+                                    <td class="hidden-xs" data-th="Rættarreglubólkur">Bekendtg&#248;relse</td>
+                                    <td class="hidden-xs" data-th="Nummar">nr. 1547</td>
+                                    <td class="hidden-xs" data-th="">af</td>
+                                    <td class="hidden-xs" style="white-space:nowrap;padding-right: 10px" data-th="Dagfesting" class="no-wrap">12. december 2022</td>
+                                    <td class="hidden-xs" data-th="">om</td>
+                                    <td class="hidden-xs" style="width:100% !important" data-th="Heiti"><a href="Bekendtgorelse/1547-af-12-12-2022-om-aendring-af-bekendtgorelse-for-Faeroerne-om-vederlag-til-staevningsmaend-og">&#230;ndring af bekendtg&#248;relse for F&#230;r&#248;erne om vederlag til st&#230;vningsm&#230;nd og til vidner i fogedforretninger</a></td>
+                                    <td class="hidden-xs" data-th="Gildisstøða">Galdandi</td>
+                                </tr>
+
+                            
+	                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="toolbar color-grey mb">
+                <div class="group-left">
+            <div class="records-quota">
+                <span>Vís:</span>
+                <input class="form-control input-sm" type="text" value="50"/>
+                <span>rættarreglur á hvørji síðu</span>
+            </div>
+        </div>
+                <div class="group-center">
+            <div class="records-counter">Regla 1101 - 1150 av 7430</div>
+        </div>
+                <div class="group-right">
+            
+                <div class="table-paging">
+                    <button type="button" class="btn btn-link " data-page="1"><span class="fa fa-angle-double-left fa-lg"></span></button>
+                    <button type="button" class="btn btn-link " data-page="22"><span class="fa fa-angle-left fa-lg"></span></button>
+                    <span> Síða 23 av 149 síðum</span>
+                    <button type="button" class="btn btn-link " data-page="24"><span class="fa fa-angle-right fa-lg"></span></button>
+                    <button type="button" class="btn btn-link " data-page="149"><span class="fa fa-angle-double-right fa-lg"></span></button>
+                </div>
+            
+            <div class="list-actions">
+                <button type="button" class="btn btn-link" data-action="send" data-modal="#send-results-modal" data-warn="True" data-url="/SendList.aspx"><span class="fa fa-envelope"></span></button>
+                <button type="button" class="btn btn-link" data-action="print" data-modal="#print-results-confirmation-modal" data-confirm="True" data-url="/PrintGrid.aspx?_=1484864034"><span class="fa fa-print"></span></button>
+                <button type="button" class="btn btn-link" data-action="share" data-modal="#share-results-modal" data-url="/ShareList.aspx/Share"><span class="fa fa-link"></span></button>
+            </div>
+        </div>
+            </div>
+        </div>
+    
+    <!-- Modals -->
+    
+
+<div class="list-action-modals">
+
+    <div class="modal fade" id="share-results-modal" tabindex="-1" role="dialog" aria-labelledby="share-results__title" data-modal="share">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="fa fa-times"></span></button>
+                    <h2 class="modal-title" id="share-results__title">Deil leitiúrslitið</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group mb-half">
+                        <label for="share-results__link">Leinki til leitiúrslitið</label>
+                        <input id="share-results__link" class="form-control" type="text" title="Leinki til leitiúrslitið" readonly/>
+                    </div>
+                    <div id="share-results__message" class="alert alert-danger hidden" role="alert"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Angra</button>
+                    <button id="share-results__copy" type="button" class="btn btn-default" data-action="share">Kopiera leinkið</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="print-results-confirmation-modal" tabindex="-1" role="dialog" aria-labelledby="print-results-confirmation__title" data-modal="print">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="fa fa-times"></span></button>
+                    <h2 class="modal-title" id="print-results-confirmation__title">Prenta lógalistan</h2>
+                </div>
+                <div class="modal-body">
+                    <p>You are to print more than 300 records, proceed?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Angra</button>
+                    <button id="print-results-confirmation__print" type="button" class="btn btn-default" data-action="print">Prenta lógalistan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="send-results-modal" tabindex="-1" role="dialog" aria-labelledby="send-results__title" data-modal="send">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="fa fa-times"></span></button>
+                    <h2 class="modal-title" id="send-results__title">Send leitingarúrslit</h2>
+                </div>
+                <fieldset class="modal-body">
+                    
+                    <div id="send-results__warning" class="alert alert-warning mb">Note, that you will send more than 300 records.</div>
+                    
+                    <div class="form-group mb-half">
+                        <label for="send-results__email">Teldupostur<span class="color-red">*</span></label>
+                        <small class="color-red hidden"></small>
+                        <input id="send-results__email" class="form-control" type="text" title="Teldupostur"/>
+                    </div>
+                    
+                    <div class="checkbox single">
+                        <label>
+                            <input type="checkbox" id="send-results__include-references"/> 
+                            <span class="radio-check-control"></span>
+                            <span class="radio-check-label">Við tilvísingum</span>
+                        </label>
+                    </div>
+                    
+                    <div id="send-results__message" class="alert alert-danger hidden" role="alert"></div>
+
+                </fieldset>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Angra</button>
+                    <button id="send-results__send" type="button" class="btn btn-default" data-processing-text="Leitar" data-action="send">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <div class="modal fade" id="search-criteria-modal" tabindex="-1" role="dialog" aria-labelledby="search-criteria__title" data-modal="share">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="fa fa-times"></span></button>
+                    <h2 class="modal-title" id="search-criteria__title">Tín leiting</h2>
+                </div>
+                <div class="modal-body">
+                    <p id="search-criteria__text"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Lat aftur</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Modals -->

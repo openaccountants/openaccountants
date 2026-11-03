@@ -1,0 +1,64 @@
+{
+  "status": "HOLD",
+  "candidate": "0bce9f9c7ed1776eab90ae912096a03a6d7dba12",
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "grouped_source_records_checked": 45,
+  "component_checks": 285,
+  "predecessor_blocks_checked": 821,
+  "recomputed_changed_guide_cases": 10,
+  "lost_content_restored": 0,
+  "findings": [
+    {
+      "id": "BH-R01",
+      "kind": "unsupported operative metadata claim",
+      "path": "skills/bahrain/bh-corporate-income-tax.md",
+      "location": "description",
+      "required_fix": "Remove unsupported no-general-corporate-tax assertion; body and README hold it.",
+      "status": "OPEN"
+    },
+    {
+      "id": "BH-R02",
+      "kind": "repealed reduction presented as current",
+      "path": "skills/bahrain/bh-payroll-social.md",
+      "location": "Rates, bands and thresholds / S09",
+      "required_fix": "Apply Law14/2022 art9 repeal of art48 and implementing decisions; preserve original S09 with additive correction.",
+      "status": "OPEN"
+    },
+    {
+      "id": "BH-R03",
+      "kind": "missing taxpayer condition",
+      "path": "skills/bahrain/bh-corporate-income-tax.md",
+      "location": "Rates, bands and thresholds / C01",
+      "required_fix": "Restore for own account to exploration/production test under IncomeTaxLaw art2; define geographic term if used.",
+      "status": "OPEN"
+    },
+    {
+      "id": "BH-R04",
+      "kind": "person versus branch scope",
+      "path": "skills/bahrain/bh-payroll-social.md",
+      "location": "The base / S12",
+      "required_fix": "Use all branches for pension-covered persons, not pension branches, under L4426 art1; retain first-registration/commencement restriction and hold amount.",
+      "status": "OPEN"
+    },
+    {
+      "id": "BH-R05",
+      "kind": "incorrect preservation dispositions",
+      "path": "evidence/ledgers/bahrain-20261101/old-topics.json",
+      "location": "bh-company-formation/initial-pr/14 and guide-preservation README record",
+      "required_fix": "Add corrected row destination/status and README changed status without replacing prior evidence.",
+      "status": "OPEN"
+    }
+  ],
+  "attestation": false,
+  "comprehensive_country_acceptance": false,
+  "evidence_files": {
+    "byte-source-preservation-audit.json": "671b27698f1817a987a294a4545545e533e06321d1a68a61b550edf00dca9058",
+    "component-checks.json": "845d8958429f98d9eff2296ef7e603a3cb489b93ac08e712b2b485f6fd102959",
+    "independent-case-outputs.json": "d2655c25340d6857a0e701c5c0c15d094aea6bcb918a09cf28a6fb44f9cffd1d",
+    "recompute.py": "789094d93108b363f3064757342c9072d0618e7c38ac763354ecfeeccec6fa8b",
+    "review-initial.md": "1b689f560ca3eaf17eda292005d0ad0d603d908804907311cd64f0ab60af1f9a",
+    "sijilat-independent-visible-read.md": "02c684767f861bbc2790e18161cd49901ab5dc6f667820f7cd16c9547b7d2bf1",
+    "validation-focused.json": "75fc697a184022372136f834eb69e01cb16c4b82516fae862e30412c058519bb",
+    "validation-initial.json": "16f062b96a5d05204eb5bc19c1b8baff982e03e281ab5350689f18bd3bcdff4f"
+  }
+}

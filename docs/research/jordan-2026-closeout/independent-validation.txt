@@ -1,0 +1,94 @@
+COMMAND: python3 scripts/skill_checks.py skills/jordan/jo-corporate-income-tax.md
+EXIT: 0
+skills/jordan/jo-corporate-income-tax.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
+
+COMMAND: python3 scripts/skill_checks.py skills/jordan/jo-income-tax.md
+EXIT: 0
+skills/jordan/jo-income-tax.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
+
+COMMAND: python3 scripts/skill_checks.py skills/jordan/jo-payroll-social.md
+EXIT: 0
+skills/jordan/jo-payroll-social.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
+
+COMMAND: python3 scripts/skill_checks.py skills/jordan/jo-tax-overview.md
+EXIT: 0
+skills/jordan/jo-tax-overview.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
+
+COMMAND: python3 scripts/skill_checks.py skills/jordan/jordan-gst.md
+EXIT: 0
+skills/jordan/jordan-gst.md (scope: tax)
+  (a) tax_year_current     pass
+  (b) sources_read_dates   pass
+  (c) rates_rows_sourced   pass
+  (d) canonical_headings   pass
+  (e) two_oa_checks        pass
+  (f) version_numeric      pass
+  (g) tier_honest          pass
+  (h) no_em_dash           pass
+  (i) not_yet_confirmed    pass
+  (j) reviewed_on          pass
+  (k) read_date_evidence   pass
+  (l) sources_columns      pass
+  (m) source_hosts         pass
+  (n) jurisdiction_body    pass
+  (o) year_matches_link    pass
