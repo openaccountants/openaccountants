@@ -1,0 +1,111 @@
+{
+  "result": "PASS",
+  "scope": "Bounded source-guidance, routing and existing-review-status reconciliation only; not whole-country or wage-instrument verification.",
+  "reviewer": "Independent Codex review agent, separate from writer",
+  "review_date": "2026-11-03",
+  "base": "e0f2a6d492373c6532eda048ceef2559332a82aa",
+  "candidate_sha256": {
+    "skills/sierra-leone/sl-payroll-social.md": "0de19e2de8f286cafc3c1be78265ab66f04183090814cf0255fda0270ed1d7f2",
+    "skills/sierra-leone/sl-tax-overview.md": "d5d788e48533b1c6010ca18a0c4662f5092fc690f5d9b356e7155dd3561643be",
+    "skills/sierra-leone/README.md": "f9a807f1fe97bf208a699888a4ca96922a3c108de465099c57edb256472ca294"
+  },
+  "source_rows_checked": [
+    {
+      "id": "SL-MW-NRA-2026",
+      "result": "PASS",
+      "sha256": "b05cf24e3d84e3efd12ab74818ff4bc3523e68124d9a911a153eb82cfa922cf1",
+      "read_scope": "Cached official article main body and adjacent paragraphs; exact amount/effective date and 13 February session verified. Page wrapper publication date is 14 February. No underlying wage instrument/category determination.",
+      "exact_quote": "new minimum wage of Le 1,200 which will come into effect on 1st April 2026.",
+      "read_on": "2026-11-03"
+    }
+  ],
+  "preservation": {
+    "skills/sierra-leone/sl-payroll-social.md": {
+      "cta_suffix_exact": true,
+      "examples_exact": true,
+      "protected_frontmatter_exact": true
+    },
+    "skills/sierra-leone/sl-tax-overview.md": {
+      "cta_suffix_exact": true,
+      "examples_exact": true,
+      "protected_frontmatter_exact": true
+    }
+  },
+  "routing": {
+    "replaced_pinned_links": 15,
+    "all_sibling_targets_exist": true,
+    "prior_review_identities_not_extended": true
+  },
+  "prior_closure_checked": "git show HEAD:evidence/ledgers/sierra-leone-formation-overview-review-20261101/CLOSURE.md and closure.json: 44 rows, 29 predecessor topics, four examples; conditional source corrections closed; no attestation.",
+  "old_topic_spot_checks": [
+    "Payroll old minimum NLe800 remains expressly held in Sources.",
+    "Payroll old 15% total /10% employer /5% employee and statutory-earnings/base/ceiling distinction unchanged.",
+    "PAYE and NASSIT deadlines remain separate and PAYE currentness conditions remain.",
+    "Overview denomination and owner-funding topics retain both examples and conditions."
+  ],
+  "independent_arithmetic": [
+    {
+      "case": "payroll split",
+      "calculation": "10000*0.05=500;10000*0.10=1000;500+1000=1500;10000+1000=11000"
+    },
+    {
+      "case": "allowances",
+      "calculation": "10000+2000+1000=13000;10000*0.15=1500;13000*0.15=1950;1950-1500=450"
+    },
+    {
+      "case": "currency units",
+      "calculation": "12000000/1000=12000;12000/1000=12;12000-12=11988"
+    },
+    {
+      "case": "owner funding",
+      "calculation": "100000+20000-40000=80000;100000-40000=60000;80000-60000=20000"
+    }
+  ],
+  "repository_example_checker": "2 files,4 blocks,0 failures,0 missing",
+  "shape_checks": {
+    "skills/sierra-leone/sl-payroll-social.md": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [],
+      "canonical_headings": [],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    },
+    "skills/sierra-leone/sl-tax-overview.md": {
+      "tax_year_current": [],
+      "sources_read_dates": [],
+      "rates_rows_sourced": [
+        "6 of 6 rates table row(s) without a URL or an unverified mark (0% linked, 0% unverified)"
+      ],
+      "canonical_headings": [],
+      "two_oa_checks": [],
+      "version_numeric": [],
+      "tier_honest": [],
+      "no_em_dash": [],
+      "not_yet_confirmed": [],
+      "reviewed_on": [],
+      "read_date_evidence": [],
+      "sources_columns": [],
+      "source_hosts": [],
+      "jurisdiction_body": [],
+      "year_matches_link": []
+    }
+  },
+  "warning": "Overview rates_rows_sourced flags six relative-link routing rows (14/15 checks pass). Rows contain no rates/figures and point to existing single figure homes; source and law citations elsewhere unchanged. Payroll passes15/15.",
+  "findings": [],
+  "limits": [
+    "No live-source availability conclusion from reported502 failures.",
+    "No underlying wage instrument, category scope, complete current law, NASSIT base/ceiling, filing approval or accountant attestation accepted.",
+    "All seven README domains remain partial; existing prior evidence preserved.",
+    "No broad pack re-review or new source hunt."
+  ]
+}
