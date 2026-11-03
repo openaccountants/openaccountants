@@ -1,19 +1,19 @@
 ---
 name: om-corporate-income-tax
 description: "Corporate income tax for Oman, tax year 2026: 15%, 3% and 55% rates, withholding on non-residents, losses, depreciation, returns, portal services and penalties, from the Income Tax Law and Tax Authority FAQs."
-version: 1.2
+version: 1.3
 jurisdiction: OM
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Oman Corporate Income Tax v1.2
+# Oman Corporate Income Tax v1.3
 
-> **General reference only.** This Guide is a draft for AI-assisted reference. It has not received independent closeout review or accountant attestation. Do not use it to file, pay or take a position without professional review.
+> **General reference only.** This Guide is a draft for AI-assisted reference. Independent review accepts only the documented partial source closeout and its recorded conditions. It has not received accountant attestation. Do not use it to file, pay or take a position without professional review.
 
 ## Who this applies to
 
@@ -46,8 +46,8 @@ Accounts follow the accrual basis and international accounting standards (art. 1
 | Tax card | Request when incorporating or registering (art. 11) | https://tms.taxoman.gov.om/portal/documents/20126/1455220/income+tax+law+english.pdf |
 | Notification | Non-register cases: 60 days from start, 30 days for changes (art. 11) | same |
 | Return, 15% | Before four months end after the year | https://tms.taxoman.gov.om/portal/web/taxportal/income-tax-faqs |
-| Return, 3% and exempt | Before three months end after the year | https://tms.taxoman.gov.om/portal/web/taxportal/income-tax-faqs |
-| Inactive | Zero return with a stamped non-practice letter | https://tms.taxoman.gov.om/portal/web/taxportal/income-tax-faqs |
+| Return, 3% and SME-regime-exempt taxpayers | Before three months end after the year | https://tms.taxoman.gov.om/portal/web/taxportal/income-tax-faqs |
+| No activity and no workers during the tax year | Zero return with a stamped and signed non-practice letter | https://tms.taxoman.gov.om/portal/web/taxportal/income-tax-faqs |
 | Pay | Due on the return date (art. 150), via Claims and Payments on the portal | https://tms.taxoman.gov.om/portal/web/taxportal/income-tax-faqs |
 | Withholding | 14 days from the end of the month paid or credited, with the form; copy to the recipient (art. 53) | https://tms.taxoman.gov.om/portal/documents/20126/1455220/income+tax+law+english.pdf |
 | Objection | 45 days from assessment/decision notice, with written detailed grounds; late acceptance for proven unforeseen circumstances; objection does not itself stop payment (arts 160, 160bis). Portal service 12 | https://tms.taxoman.gov.om/portal/web/taxportal/income-tax-faqs |

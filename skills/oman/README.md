@@ -6,7 +6,7 @@ covered_by: {}
 partial:
   IT-IND: "Future 2028 law explained; executive-regulation controls and operational filing details unresolved."
   IT-CORP: "Later-amendment and dividend/interest withholding suspension closure unresolved."
-  VAT: "September 2026 zero-rate decisions and annexes unresolved; operational rule ledger unfinished."
+  VAT: "September 2026 zero-rate decisions and annexes unresolved."
   SC: "Current ceiling decisions and sick-leave implementation conflict unresolved."
   PR: "Current ceiling decisions and sick-leave implementation conflict unresolved."
 ---
@@ -27,7 +27,7 @@ Tax years: 2026 (6 skills).
 | Transfer pricing | | | Missing |
 | Cross-border | | | Missing |
 
-Partial draft means core or currentness gaps remain. The six refreshed Guides are tier 2, pending independent closeout review and accountant review. A 2026 label does not establish current-law completeness. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
+Partial draft means core or currentness gaps remain. The six refreshed Guides are tier 2. Independent review accepts only the documented partial source closeout and its recorded conditions; accountant review remains pending. A 2026 label does not establish current-law completeness. Missing means we have no skill yet; nobody has checked yet that the tax applies here.
 
 ## What still needs doing
 
@@ -41,4 +41,4 @@ Tracked in [\[OM\] Complete the pack](https://github.com/openaccountants/openacc
 - [Company formation](om-company-formation.md) (2026)
 - [Tax overview](om-tax-overview.md) (2026)
 
-Closeout remains incomplete: formation activity restrictions, portal procedures and one-person-company rules; overview top-up amendment reconciliation; complete operative-rule ledgers and predecessor-topic reconciliation; independent pack review. Existing sources and earlier work remain preserved.
+Partial documentation closeout is accepted within its recorded source scope and conditions. Genuine holds remain on formation activity restrictions and portal procedures, one-person-company procedural Regulations and case-specific auditor application, overview top-up amendment reconciliation, and the other instrument, currentness and implementation gaps recorded in the Guides. Operative source-use ledgers and predecessor-topic mappings are documented and independently reviewed within that partial scope. Existing sources, historical checkpoints and earlier independent review findings remain preserved. See [current closeout acceptance](../../evidence/oman-2026-closeout/CURRENT.md).

@@ -1,19 +1,19 @@
 ---
 name: oman-vat
 description: "Use this skill to prepare, review or classify transactions for an Oman VAT return, tax year 2026. Oman applies 5% VAT under Royal Decree 121/2020, run by the Tax Authority. Covers registration, rates, statutory 0% categories and a hold on September 2026 lists, blocked input, boxes, deadlines and penalties."
-version: 2.2
+version: 2.3
 jurisdiction: OM
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Oman VAT v2.2
+# Oman VAT v2.3
 
-> **General reference only.** This Guide is a draft for AI-assisted reference. It has not received independent closeout review or accountant attestation. Do not use it to file, pay or take a position without professional review.
+> **General reference only.** This Guide is a draft for AI-assisted reference. Independent review accepts only the documented partial source closeout and its recorded conditions. It has not received accountant attestation. Do not use it to file, pay or take a position without professional review.
 
 ## Who this applies to
 
@@ -55,13 +55,13 @@ Points of detail: the first supply of a residential property is 5%, its resale i
 
 Taxable value is the consideration without VAT, including charges to the customer and fees (art. 31). Between related parties, market value where the price is lower (art. 32). Imports: customs value plus taxes and charges due on import (art. 34). Used goods sold in the regular activity use the profit-margin mechanism only under the Regulations (art. 39); this Guide does not supply those eligibility conditions.
 
-**Input tax.** Deduct input tax on taxable supplies with a valid tax invoice (art. 41; https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Taxpayer+Guide+%28Input+Tax%29.pdf/d5e0fe80-c131-257e-c68d-3c4b58521fad?t=1733169615910, section 2.8). The right lapses 3 years from the end of the period it arose (art. 44). Pre-registration goods within 3 years and still available for use qualify only if normal deductibility conditions hold; eligible services have a separate 6-month lookback, and capital assets use input tax multiplied by net book value divided by acquisition value with mixed-use adjustment (https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Taxpayer+Guide+%28Input+Tax%29.pdf/d5e0fe80-c131-257e-c68d-3c4b58521fad?t=1733169615910).
+**Input tax.** Deduct input tax on taxable supplies with a valid tax invoice (art. 41; https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Taxpayer+Guide+%28Input+Tax%29.pdf/d5e0fe80-c131-257e-c68d-3c4b58521fad?t=1733169615910, section 2.8). The right lapses 3 years from the end of the period it arose (art. 44). Pre-registration goods within 3 years and still available for use qualify only if normal deductibility conditions hold; eligible services have a separate 6-month lookback, and capital assets use input tax multiplied by net book value divided by acquisition value with mixed-use adjustment. Apply within 30 days of effective registration with the required supporting documents, including an audited goods inventory where the goods exceed OMR 50,000. The Tax Authority decides within 30 days of receiving the details and documents; no reply means rejection. Deduct only from the tax period following the period in which approval is notified (https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Taxpayer+Guide+%28Input+Tax%29.pdf/d5e0fe80-c131-257e-c68d-3c4b58521fad?t=1733169615910).
 
 Blocked (https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Taxpayer+Guide+%28Input+Tax%29.pdf/d5e0fe80-c131-257e-c68d-3c4b58521fad?t=1733169615910, section 2.13): entertainment; motor vehicles for personal use, meaning vehicles for not more than 10 passengers including the driver, excluding rental fleets and emergency vehicles; food and beverage catering, except legally required or remote-site employee sustenance without reasonable alternatives and ordinary meeting refreshments. Only the private-use portion of a mixed-use vehicle is blocked. Goods later supplied onward remain subject to the normal deduction conditions. Prohibited goods are never deductible (art. 43). Employee purchases in their capacity as employees count, with low-value goods and services up to OMR 500, business-purpose records required and private or personal-benefit portions excluded (https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Taxpayer+Guide+%28Input+Tax%29.pdf/d5e0fe80-c131-257e-c68d-3c4b58521fad?t=1733169615910, section 2.10).
 
 Apportionment for mixed supplies: first remove non-economic use and blocked input; directly attribute taxable and exempt input. Apply taxable supplies divided by total taxable and exempt supplies, times 100 and rounded to 3 decimals, only to residual input. Exclude out-of-territory supplies, reverse-charge supplies, capital-goods sales and incidental non-recurring non-core supplies as the guide specifies; preliminary periodic amounts require annual adjustment (https://tms.taxoman.gov.om/portal/documents/20126/1414820/VAT+Taxpayer+Guide+%28Input+Tax%29.pdf/d5e0fe80-c131-257e-c68d-3c4b58521fad?t=1733169615910, section 2.14).
 
-**Reverse charge.** A taxable person receiving services from a non-resident self-assesses 5% and deducts it if for taxable supplies. Report in box 2b.
+**Reverse charge.** A taxable person receiving a standard-rated service from a non-resident self-assesses 5% if its place of supply is Oman under arts 23 and 24. Apply art. 24's special rules for transport, property, transport rental, telecommunications and electronic services, and the listed services taxed where performed. Deduct the input only for eligible taxable-business use with the required evidence and subject to the blocked-input rules. Report in box 2b.
 
 **Bank-statement patterns (bookkeeping defaults, not law)**
 
@@ -113,7 +113,7 @@ E-invoicing: the Tax Authority launched Rafid and issued the first e-invoice at 
 
 ## Two worked examples that recompute
 
-**1. Quarter with sales OMR 200,000 at 5%, input OMR 3,000, UK services OMR 3,000.** Reverse charge nets to zero; pay OMR 7,000.
+**1. Quarter with sales OMR 200,000 at 5%, input OMR 3,000, UK services OMR 3,000.** Assume the UK service is standard-rated with an Oman place of supply under arts 23 and 24, and both inputs are fully deductible with the required evidence. Reverse charge nets to zero; pay OMR 7,000.
 
 ```oa-check
 name: Quarter with reverse charge
