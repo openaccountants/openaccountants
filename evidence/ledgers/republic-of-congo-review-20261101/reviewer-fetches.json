@@ -1,0 +1,48 @@
+[
+  {
+    "id": "LF",
+    "url": "https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf",
+    "status": 200,
+    "sha256": "73c97ffedfd8381a8b1bae1efe708a002d363b7455eadbd25bec2b014179347d",
+    "cache_hash_matches": true
+  },
+  {
+    "id": "CGI",
+    "url": "https://www.finances.gouv.cg/sites/default/files/documents/CGI%20Tome%20I.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "CO",
+    "url": "https://acpce.cg/wp-content/uploads/2024/08/ACTE-UNIFORME-REVISE-RELATIF-AU-DROIT-DES-SOCIETES-COMMERCIALES-ET-DU-GROUPEMENT-DINTERET-ECONOMIQUE.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "SARL",
+    "url": "https://acpce.cg/wp-content/uploads/2024/08/congo-decret_2017-41_sarl.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "ACPCE",
+    "url": "https://acpce.cg/creer-une-societe/",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "CAL",
+    "url": "https://acpce.cg/wp-content/uploads/2026/02/Calendrier-des-obligations-fiscales-et-sociales-au-titre-de-lannee-2026.pdf",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "id": "LF25",
+    "url": "https://www.sgg.cg/JO/2024/congo-jo-2024-15-sp.pdf",
+    "status": 200,
+    "sha256": "63dacfc2e3f0f1517156829b4acfd06eee44231eeaa36603c9a822e90f10e8ef",
+    "cache_hash_matches": true
+  },
+  {
+    "id": "PORT",
+    "url": "https://monentreprise.acpce.cg/",
+    "status": 200,
+    "sha256": "ed1da8f34de79153204881fa205a9dc270e2a81a784a09e5d315525564041aba",
+    "cache_hash_matches": true
+  }
+]

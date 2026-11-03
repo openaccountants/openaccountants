@@ -1,0 +1,1610 @@
+{
+  "reviewed_head": "5ca4e55e6d601b99dad0d1b73e3f5d2688e4717a",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "grouped_records": 89,
+  "meaning": "Grouped records are not represented as a count of individual figures. Every stated numeric and conditional limb was read, with source pages and caveats below; all indexed Guide rows and ledger counterparts were checked. Example and prose placements were separately read and are recorded in cases.json and review.md.",
+  "rows": [
+    {
+      "id": "C01",
+      "act_article": "CGI86A",
+      "source_pages": "LF46-47",
+      "manual_limb_checks": "28 ordinary;25 microfinance/private school;28 mining/quarry/property;33 foreign legal persons;hydrocarbon contract floor;profit floor1000",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            30
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Initial 2026 law: general IS 28%; microfinance and private education organised as a company 25%; mines/quarries and property operations 28%; foreign legal persons 33%. Hydrocarbon exploration, production, storage and transport use their contract rate, no lower than ordinary law. Round taxable profit down to the lower XAF 1,000."
+    },
+    {
+      "id": "C02",
+      "act_article": "CGI2\u20133",
+      "source_pages": "LF30-31",
+      "manual_limb_checks": "SA/SAS/SARL single member included;lucrative public/activity scope;partnership option/exemptions not erased",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            39
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Companies including single-member SA, SAS and SARL are within IS by form; public entities and other bodies conducting taxable commercial activities are within its activity scope. Partnership options and statutory exemptions must be considered separately."
+    },
+    {
+      "id": "C03",
+      "act_article": "CGI6,9",
+      "source_pages": "LF33-34",
+      "manual_limb_checks": "net receipts less deductible costs;OHADA/sector accounting;preceding year;31December except cessation",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            40
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Determine taxable net profit from all taxable receipts less allowable costs using OHADA accounting or applicable regulated-sector rules. Accounts ordinarily close 31 December; tax is assessed on the preceding financial year."
+    },
+    {
+      "id": "C04",
+      "act_article": "CGI25",
+      "source_pages": "LF35-36",
+      "manual_limb_checks": "all nine deduction limbs;NIU and SFEC;cash greater-than-or-equal200000;business year/evidence/net-assets/exempt/abnormal exclusions",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            41
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Costs must belong to the year, serve the business, be real and supported, reduce net assets, and not support exempt receipts or be legally excluded/abnormal management. Domestic supplier invoices require the NIU and SFEC. Cash payments of XAF 200,000 or more fail the deduction condition. Do not import VAT's strictly-greater-than boundary into IS."
+    },
+    {
+      "id": "C05",
+      "act_article": "CGI42",
+      "source_pages": "LF38-39",
+      "manual_limb_checks": "IS excluded;taxes borne and assessed in year;refund enters notified-year receipts;fines/confiscations/penalties excluded",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            42
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "IS itself is not deductible; taxes borne by the enterprise and assessed during the year can be deductible. Fines, confiscations and penalties are excluded. Later refunds of deductible taxes enter receipts."
+    },
+    {
+      "id": "C06",
+      "act_article": "CGI49",
+      "source_pages": "LF39-40",
+      "manual_limb_checks": "market terms;paid-up capital;BEAC+3points;20percent nonexempt EBE;5year interest carry;financial/insurance operating-interest exception",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            43
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Interest must meet the ordinary conditions and market pricing. Related-shareholder/group interest additionally requires fully paid capital and is limited by BEAC tender rate plus 3 points. Total annual net interest is capped at 20% of OHADA gross operating surplus attributable to non-exempt activity, with disallowed interest carryforward up to 5 years subject to the same conditions. The cap excludes qualifying finance/insurance operating-charge interest. No live BEAC rate is supplied."
+    },
+    {
+      "id": "C07",
+      "act_article": "CGI75",
+      "source_pages": "LF41,43",
+      "manual_limb_checks": "ordinary losses through fifth following year;exempt-year losses barred;Article53 unlimited deferred depreciation conflicts with Article75 ordinary-loss treatment: F02",
+      "status": "changes_required",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            44
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Ordinary losses carry forward through the fifth year after the loss year. Depreciation booked during losses is treated as ordinary losses. Losses from IS-exempt years cannot carry forward."
+    },
+    {
+      "id": "C08",
+      "act_article": "CGI86C(1)\u2013(3)",
+      "source_pages": "LF47",
+      "manual_limb_checks": "1percent all operating/financial/nonordinary products;exclude final-withheld products;minimum versus ordinary",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            31
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Minimum perception is 1% of total operating, financial and non-ordinary receipts, excluding receipts already subject to final withholding. Compare this minimum with ordinary IS; do not use only sales turnover or reinstate the old unsupported fixed minimum floors."
+    },
+    {
+      "id": "C09",
+      "act_article": "CGI86C(4)\u2013(7)",
+      "source_pages": "LF47-48",
+      "manual_limb_checks": "provisional15March declaration;prior/lastclosed base;four15March/June/September/December instalments;same-year credit;retained if liability lower/nil",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            52
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Declare the current-year minimum by 15 March using preceding-year/last-closed-year receipts provisionally. Pay four minimum-tax instalments by 15 March,15 June,15 September and 15 December. The minimum credits against same-year IS, but remains with Treasury where ordinary liability is lower or nil."
+    },
+    {
+      "id": "C10",
+      "act_article": "CGI86F\u2013G; compare ACPCE2026calendar",
+      "source_pages": "LF47-48;CAL1,4",
+      "manual_limb_checks": "86F four months;86G balance on return;15May calendar conflict explicitly held;firstperiod86 exception not operative instruction",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            53
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "CGI 86 F requires the profit/loss return within 4 months of year-end;86 G requires the balance on delivery. The official 2026 ACPCE calendar instead states 15 May for IS/DSF. These are conflicting sources: retain the statutory wording here, flag the administrative date, and stop short of an operative 2026 filing instruction until reconciled."
+    },
+    {
+      "id": "C11",
+      "act_article": "CGI128,130\u2013131",
+      "source_pages": "LF47,66-67",
+      "manual_limb_checks": "128 fifteen-day existence;130 electronic real regime and expert certification absent auditor;131 three sets/electronic and DSF schedules;portal version held;Article86E also has three-month constitution limit omitted from Guide: F04",
+      "status": "changes_required",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            54
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Submit the existence declaration within 15 days of beginning operations. The annual DSF follows the prescribed model, with financial statements, tax reconciliation and identification schedules. CGI 131 specifies 3 complete sets plus electronic statements. CGI 130 requires real-regime electronic declaration/payment and appropriate accountant certification where no statutory auditor exists. Portal, current form version and field numbers remain unconfirmed."
+    },
+    {
+      "id": "C12",
+      "act_article": "CGI86C(8)",
+      "source_pages": "LF47",
+      "manual_limb_checks": "86C8 nonpayment50percent specific minimum only",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            63
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Failure to pay the minimum attracts 50% of the unpaid minimum under 86 C(8). This is not a universal rate for every late tax."
+    },
+    {
+      "id": "C13",
+      "act_article": "CGI130",
+      "source_pages": "LF66",
+      "manual_limb_checks": "130 noncompliance electronic obligation10percent amount to declare",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            64
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Non-compliance with the real-regime electronic declaration/payment obligation attracts 10% of the amount to declare. This does not establish an all-purpose annual-return penalty."
+    },
+    {
+      "id": "C14",
+      "act_article": "CGI374ter as amended2026",
+      "source_pages": "LF71-72",
+      "manual_limb_checks": "374ter before administration claim/information request;0.5percent per delayday;20percent cap;no penalty only particular case",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            65
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Where a taxpayer corrects an underpayment before an administration claim or information request,374 ter prescribes 0.5% per day capped at 20% of principal and no penalty in that particular case. It is not a general late-payment interest rate."
+    },
+    {
+      "id": "I01",
+      "act_article": "FinanceAct47, CGI93,103,111,114",
+      "source_pages": "LF30,55-66",
+      "manual_limb_checks": "enacted chapter replacement IS/IBA/IRCM/IRF/ITS;not former global bands",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            41
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "The initial 2026 text replaces the former global IRPP chapters with separate business-profit(IBA), investment-income(IRCM), property-income(IRF) and salary/pension(ITS) chapters. Classify each receipt before computing; the old four-band global IRPP computation is not carried forward."
+    },
+    {
+      "id": "I02",
+      "act_article": "CGI95",
+      "source_pages": "LF57",
+      "manual_limb_checks": "IBA30percent;floor1000;minimum1.5percent all operating/financial/nonordinary products;IS minimum framework",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            30
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "IBA is 30% of profit rounded down to XAF 1,000, subject to a 1.5% minimum on total operating, financial and non-ordinary receipts. The minimum follows the IS minimum rules. Do not use the salary scale for an ordinary sole-trader profit."
+    },
+    {
+      "id": "I03",
+      "act_article": "CGI94\u201394A",
+      "source_pages": "LF56-57",
+      "manual_limb_checks": "straight-line only;doubtful debts excluded;third following loss year;3A credit excluded;own drawings/costs/capital interest/rent;split mixed;50percent representation",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            42
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "IBA generally follows IS base rules, but depreciation is straight-line only, doubtful-debt provisions are not deductible, losses run only through the third following year, and the investment credit 3 A is unavailable. Personal drawings/costs, interest on own capital and self-rent are not deductible; split mixed expenses and limit representation expenses to 50%."
+    },
+    {
+      "id": "I04",
+      "act_article": "CGI96",
+      "source_pages": "LF57-58",
+      "manual_limb_checks": "not exceeding VAT boundary;all six exclusions;VAT option immediate;2 successive below years;ceases year after excess;rates/threshold held",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            43
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "The forfait concerns taxpayers not exceeding the VAT threshold, but excludes regulated professions, bakers, works contractors, hardware operators, wholesalers and importers. VAT election immediately leads to ordinary IBA; decline below the threshold needs 2 successive years before returning to forfait. The forfait ceases after the year of excess. Exact current threshold and 5%/8% computation chain remain on hold."
+    },
+    {
+      "id": "I05",
+      "act_article": "CGI93B",
+      "source_pages": "LF56",
+      "manual_limb_checks": "owned/usufruct/rented home latter>=1continuous year;principal stay;posting/retained interests;absence>24months;Congo-source nonresidents;foreign branch directors presumed;no universal183days",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            44
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "CGI 93 B recognises habitual residence from an available owned/usufruct home, a rental lasting at least 1 continuous year, or principal stay, plus listed government/assignment/retained-interest cases. Absence continuously exceeding 24 months loses residence. Non-residents are taxed on Congo-source income. Foreign branch directors have a residence presumption; treaties and government-posting provisions affect the answer. This is not a universal 183-day test."
+    },
+    {
+      "id": "I06",
+      "act_article": "CGI103\u2013110",
+      "source_pages": "LF59-61",
+      "manual_limb_checks": "IRCM15percent;hidden35percent;distributed/interest/security/PE categories separate;no general resident-interest-zero",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            31
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "IRCM is 15%, with 35% for hidden income. Distributed profits, interest, securities gains and deemed PE distributions have different bases and timing. Normal interest is not generally assumed tax-free merely because the recipient is resident."
+    },
+    {
+      "id": "I07",
+      "act_article": "CGI107\u2013109",
+      "source_pages": "LF60-61",
+      "manual_limb_checks": "payer operated Congo OR resident beneficiary;decision event;dividend payment exigibility no later3months;gross base",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            45
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "IRCM is due where income is paid by an enterprise operated in Congo or the recipient is domiciled/resident in Congo. For dividends the tax event is the distribution decision, with exigibility at payment and no later than 3 months after that decision. The normal dividend base is gross dividends."
+    },
+    {
+      "id": "I08",
+      "act_article": "CGI111\u2013113",
+      "source_pages": "LF61-63",
+      "manual_limb_checks": "outside IS property;gross rents9percent;gains10percent;Congo property regardless residence or resident foreign property;documented acquisition/improvement costs",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            32
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "For property income outside an IS enterprise, IRF is 9% on gross rents and 10% on property gains. Congo property is within source scope regardless of recipient residence; a resident can also have foreign property in scope. The gain base permits documented acquisition expenses and qualifying construction/improvement costs."
+    },
+    {
+      "id": "I09",
+      "act_article": "CGI111C",
+      "source_pages": "LF62",
+      "manual_limb_checks": "free direct-line ancestor/descendant occupation;principal-home disposal>=5years;State/local authority income",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            46
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Exemptions cover free occupation by direct ancestors/descendants, disposal gains on a principal residence held at least 5 years, and State/local-authority property income. Do not extend the principal-residence exemption to investment property."
+    },
+    {
+      "id": "I10",
+      "act_article": "CGI113A",
+      "source_pages": "LF62-63",
+      "manual_limb_checks": "IS/IBA/public tenants;15March or3months new lease;other tenant individual15May;balance15May20Aug15Nov;property-tax advances;gain3months;registry/land-conservation split",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            59
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Listed IS-business, IBA-business and public tenants withhold landlord IRF;113 A gives 15 March or 3 months after taking a new lease. Individuals receiving rent from other tenants declare by 15 May, with balance dates 15 May,20 August and 15 November. Deduct properly evidenced property-tax advances. Property gains are declared/paid within 3 months after the gain; duties sit with the contract registry or land-conservation office respectively."
+    },
+    {
+      "id": "I11",
+      "act_article": "CGI113A",
+      "source_pages": "LF63",
+      "manual_limb_checks": "tenant default joint tax liability plus principal-equivalent fine;gain default cross-reference;not general penalty",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            69
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Listed tenants failing to withhold are jointly responsible for unpaid tax and an additional fine equal to principal;113 A extends the stated default conditions to gain declaration/payment. This is not the general penalty for every individual return."
+    },
+    {
+      "id": "I12",
+      "act_article": "CGI114\u2013114C",
+      "source_pages": "LF63-64",
+      "manual_limb_checks": "salary/directors not assigned IRCM;pensions/annuities scope;retirement exemption and specified benefit conditions;no invented blanket exemption",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            47
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "ITS covers employment, directors' remuneration not expressly assigned to IRCM, pensions and annuities.114 A expressly exempts retirement pensions and listed benefits including qualifying transport, social-plan termination, unemployment, death capital and specified compensation. Test the precise exemption conditions before excluding a payment."
+    },
+    {
+      "id": "I13",
+      "act_article": "CGI114D",
+      "source_pages": "LF64",
+      "manual_limb_checks": "available permanent home then vital interests;State abroad;resident foreign work/employer;nonresident Congo-work employer establishment wording;treaties separate",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            48
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "ITS domicile tests are a permanent available home, otherwise centre of vital interests, and State employees posted abroad. A domiciled recipient has employment income in scope even for work/employer abroad. For non-domiciled recipients 114 D(1)(b) describes work exercised in Congo with an employer domiciled/established there. Treaty and special source facts need separate review."
+    },
+    {
+      "id": "I14",
+      "act_article": "CGI115\u2013116",
+      "source_pages": "LF64-65",
+      "manual_limb_checks": "actual benefits or housing20social-capped;staff7 utilities5 phone2 car3 food20gross;reference deducts stated mandatory amounts;allstaff mutual exclusion;retirement then20deduction",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            49
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Start with gross cash and benefits. Benefits use actual value, or statutory defaults: housing 20% of salary capped for social security; domestic staff/security 7%, utilities 5%, telephone 2%, car 3%, food 20% of gross. The reference base deducts specified pension/mandatory-social amounts. Employer mutual premiums are not taxable if benefiting all employees. ITS then allows 20% deduction after the employee retirement contribution. Social contribution rates/ceilings are not established here."
+    },
+    {
+      "id": "I15",
+      "act_article": "CGI116A\u2013116C",
+      "source_pages": "LF64-65",
+      "manual_limb_checks": "round1000 then quotient thenmultiply;1/2/2.5 and0.5 increment max6.5;separate spouses;childless widow2years;116C referral;missing116B widow nonmarital child exception: F01",
+      "status": "changes_required",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            50
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Round net taxable salary down to XAF 1,000 before dividing by parts; tax the quotient and multiply by parts. Basic parts: single/divorced/widowed without dependants 1; married without dependants 2; single/divorced with 1 child 2; married/widowed with 1 child 2.5; each additional child adds 0.5, maximum 6.5. Separate-employed spouses are each treated as married, children assigned to husband absent express exception. A childless widow(er) is treated as married for 2 years following death. Special 116 C situations remain a referral."
+    },
+    {
+      "id": "I16",
+      "act_article": "CGI116D\u2013116F",
+      "source_pages": "LF65-66",
+      "manual_limb_checks": "no separate income;under21/infirm;student25 evidence;foster/protected latter<=2;mother court order;1January versus31December/death increased-dependants/marriage",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            51
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Dependants need no separately assessed income: legitimate/recognised/adopted children under 21, disabled children, students up to 25 with evidence, plus qualifying foster/protected children(the latter limited to 2).116 E requires the stated court decision for mothers claiming children. Use 1 January family facts except marriage/increased dependants during the year uses 31 December or death date. Do not infer shares from a payslip alone."
+    },
+    {
+      "id": "I17",
+      "act_article": "CGI116G",
+      "source_pages": "LF65-66",
+      "manual_limb_checks": "fixed1200 first0-615000;10percent615001-1500000;15percent1500001-3500000;20percent3500001-5000000;30thereafter;belowSMIG annual minimum1200;SMIG amount not invented",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            33
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Initial 2026 ITS per part: XAF 1,200 fixed for the fraction 0\u2013615,000;10% on 615,001\u20131,500,000;15% on 1,500,001\u20133,500,000;20% on 3,500,001\u20135,000,000;30% thereafter. The first item is a fixed franc amount, not 1,200% or 1%. Where gross salary is below the legally fixed SMIG,116 G(2) prescribes annual minimum XAF 1,200. The current SMIG amount is not supplied."
+    },
+    {
+      "id": "I18",
+      "act_article": "CGI116G\u2013116I",
+      "source_pages": "LF65-67",
+      "manual_limb_checks": "monthly withholding;single-source final;multiple-source annual;foreign selfdeclare/pay;2026under114-116H;DAS3 paragraph explicitly2025;unresolved calendar kept",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            60
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "ITS is collected by monthly employer withholding. It is final where there is only 1 salary source; with multiple salary sources the recipient must submit an annual salary declaration for unified taxation. Foreign-source income is declared/paid by the recipient under the Code.116 I(2) directs 2026 calculations under 114\u2013116 H; the DAS 3 transition paragraph explicitly concerns 2025. Do not convert it into a universal 2026 new deadline."
+    },
+    {
+      "id": "I19",
+      "act_article": "CGI96\u201399",
+      "source_pages": "LF57-59",
+      "manual_limb_checks": "minimalcash accounts;two chronological registers;monthlydecl;withholding/annualstatements;quarterlyendorsement;form294;firstyear estimate;15day formalities;supplierlist15followingquarter",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            61
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Forfait taxpayers keep OHADA minimal-cash records, chronological purchase/expense and sales/service registers, monthly declarations, applicable withholding and specified annual statements; registers require quarterly endorsement.98 describes the annual form 294, first-year estimation and 15-day start-of-activity register formalities.99 requires supplier lists by 15 th of the month following each quarter."
+    },
+    {
+      "id": "I20",
+      "act_article": "CGI98(5),99",
+      "source_pages": "LF58-59",
+      "manual_limb_checks": "98.5 defaults assessmentexofficio+100000;99 supplierlist failure500000;triggers separate",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-income-tax.md",
+          "lines": [
+            70
+          ],
+          "sha256": "2aeefa1cd3533776686dcf6f90eef415553398c8d5e64b9032f781063095d713"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "98(5) attaches assessment ex officio and XAF 100,000 to the stated declaration/register/document defaults.99 attaches XAF 500,000 to failure to provide the quarterly supplier list. Scope these separately and do not treat both as universal late-return fines."
+    },
+    {
+      "id": "T01",
+      "act_article": "CGI77",
+      "source_pages": "LF43-44",
+      "manual_limb_checks": "dependent/control/commoncontrol foreign;privilegedterritory no dependency needed;indirect prices/other shifts;availableinfo/comparables/FAR;threshold not substantive exemption",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            36
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "For enterprises dependent on/controlling foreign enterprises, including common foreign control, profits indirectly shifted through purchase/sale prices or other means are restored to Congo results. Dependency need not be shown for transfers to an enterprise in a privileged-tax foreign territory. Lack of documents permits assessment from available information; comparable enterprises and functional/comparability/industry analyses are relevant. The documentation threshold is not a substantive exemption."
+    },
+    {
+      "id": "T02",
+      "act_article": "CGI81I",
+      "source_pages": "LF44-45",
+      "manual_limb_checks": "legalpersons Congo;turnover OR gross assets>=500000000;foreign related transactions any nature;equality passes",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            27
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Congo-established legal persons with annual tax-exclusive turnover OR gross balance-sheet assets at least XAF 500,000,000 keep documentation for transactions of any kind with foreign related legal entities. Apply the OR test at equality, not turnover alone."
+    },
+    {
+      "id": "T03",
+      "act_article": "CGI81II(1)",
+      "source_pages": "LF44-45",
+      "manual_limb_checks": "all five group content limbs;changes,structure/counterparties,FAR,intangibles,policy",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            37
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Documentation includes group activities and changes, legal/operational structure and controlled counterparties, functions/risks affecting results, principal intangibles connected to the enterprise and group pricing policy."
+    },
+    {
+      "id": "T04",
+      "act_article": "CGI81II(2)",
+      "source_pages": "LF44-45",
+      "manual_limb_checks": "localactivity/flows/royalties;costsharing;APAs/rulings;FAR/method reason;comparables asappropriate;aggregatebynature>50000000 separate from entity threshold",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            38
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Include local activity/changes; nature and amount of flows including royalties; cost-sharing agreements, relevant APAs/rulings; FAR and justified selected methods; comparables where appropriate; principal method and yearly changes.81 II also calls out transactions whose aggregate by nature exceeds XAF 50,000,000. That detail line does not replace the 500 million entity test."
+    },
+    {
+      "id": "T05",
+      "act_article": "CGI81III",
+      "source_pages": "LF45",
+      "manual_limb_checks": "does not replace transaction proof;available audit commencement",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            49
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Documentation does not replace underlying transaction evidence and must be available when the accounting audit starts. Keeping an unfinished file until a later information request does not satisfy that trigger."
+    },
+    {
+      "id": "T06",
+      "act_article": "CGI81IV(1)",
+      "source_pages": "LF45",
+      "manual_limb_checks": "81I entities;spontaneous annual prescribed declaration within6months after resultdeadline;light/full accompanying CbC;no750m stated;calendar held",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            50
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Entities within 81 I spontaneously transmit the prescribed annual declaration accompanying TP documentation within 6 months after the annual results return deadline. The light and full TP declarations are accompanied by the stated country-by-country declaration. Do not invent a separate EUR 750 million threshold; no such threshold appears in the cited 81 wording. Because the results-return deadline conflicts across official sources, no fixed calendar CbC date is certified here."
+    },
+    {
+      "id": "T07",
+      "act_article": "CGI81IV(1)",
+      "source_pages": "LF45",
+      "manual_limb_checks": "all listed CbC aggregates byjurisdiction;retained earnings years;cash excluded from tangibles;entities with local controlled flow/residence/activities",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            39
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Country-by-country information covers jurisdiction aggregates for turnover, pretax profit/loss, taxes paid/due, capital, retained earnings with years, staff and tangible assets excluding cash/equivalents. Identify group entities having controlled transactions with the local entity, tax residence and principal business activities. Do not treat this as only a related-party invoice list."
+    },
+    {
+      "id": "T08",
+      "act_article": "CGI81IV(2)",
+      "source_pages": "LF45-46",
+      "manual_limb_checks": "5000000 after8day unanswered demand;25000000 missingfull docs at audit;5000000 lateCbC/accompanyingdecl;overlap not mechanically stacked",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            59
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "81 IV(2) provides XAF 5,000,000 after an unanswered 8-day formal demand for the stated documentation/declaration defaults, subject to other declaration sanctions. Missing full documentation at audit commencement has a separate XAF 25,000,000 fine. Late CbC or accompanying TP declaration has XAF 5,000,000. Do not mechanically add overlapping amounts without classifying the actual defaults."
+    },
+    {
+      "id": "T09",
+      "act_article": "CGI81IV(2)",
+      "source_pages": "LF45",
+      "manual_limb_checks": "CbC nonproduction after8days questions controlled prices;foreign nonarm'slength/policy charges reintegrated",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            60
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Failure to provide CbC after an 8-day formal demand calls the period's controlled prices into question. Foreign charges outside arm's-length conditions or the described policy are added back to the Congo enterprise's result."
+    },
+    {
+      "id": "T10",
+      "act_article": "CGI82",
+      "source_pages": "LF45-46",
+      "manual_limb_checks": "audit request on precise listed matters;initial>=1month;reasoned extension total<=3months;insufficient response completion30days;specified missingitems/sanctions",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            51
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "82 allows a precise request on foreign relationships, pricing/method justification, activities and tax treatment. Initial response time cannot be less than 1 month; reasoned extension may bring the total to no more than 3 months. An insufficient answer can receive a further 30-day completion demand specifying missing items and sanctions."
+    },
+    {
+      "id": "T11",
+      "act_article": "CGI85",
+      "source_pages": "LF46",
+      "manual_limb_checks": "five methods including profit split;justified consistent FAR andarm'slength;no hierarchy/median invented;visual fifth method read",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            40
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "85 recognises CUP, cost plus, resale price, TNMM and profit split. The selected method must be justified, coherent with functions and assumed risks, and deliver arm's-length remuneration. The fifth method and selection sentence were visually read on Gazette p 46 because the text layer omitted them. No automatic hierarchy or mandatory median rule is supplied."
+    },
+    {
+      "id": "T12",
+      "act_article": "CGI84",
+      "source_pages": "LF46",
+      "manual_limb_checks": "bilateral treatycompetent/unilateral;unilateral limited scope;<=3years renewableconditions;conclusion10000000 not mere application approval",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            28
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "84 permits bilateral agreements via treaty competent authorities and unilateral Congo agreements. A unilateral agreement is transaction/activity/function/product-specific; APAs last at most 3 years, renewable under conditions, and conclusion requires XAF 10,000,000. Payment/request alone is not approval."
+    },
+    {
+      "id": "T13",
+      "act_article": "CGI83",
+      "source_pages": "LF45-46",
+      "manual_limb_checks": "foreignrequest within originalperiod;until endyear afterresponse;outer sixth followingtaxyear;not universal six-yearperiod",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-transfer-pricing.md",
+          "lines": [
+            41
+          ],
+          "sha256": "f20b8e1474f60e631bfd1dbd95faa0823c0208905905e9a0c18f26588245473e"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Where foreign information was requested within the original reassessment period,83 permits correction until the end of the year after the response, but no later than the end of the sixth year following the tax year. This is conditional, not a universal 6-year audit period."
+    },
+    {
+      "id": "X01",
+      "act_article": "CGI4,7",
+      "source_pages": "LF31-34",
+      "manual_limb_checks": "registered OR effectivemanagement;nonresidentPE;attribution PE/same-similargoods/same-similaractivities",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-cross-border.md",
+          "lines": [
+            36
+          ],
+          "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Enterprises registered in Congo or effectively managed there are resident enterprises; non-residents with a Congo PE are operated in Congo. Nonresident PE profit attribution includes the PE, same/similar goods sales and same/similar industrial/commercial activities in Congo under 7. Do not assume worldwide exemption or only invoiced branch profits."
+    },
+    {
+      "id": "X02",
+      "act_article": "CGI4A(1)\u2013(2)",
+      "source_pages": "LF31-33",
+      "manual_limb_checks": "fixedplaces list;construction/assembly/install/supervision>3months;services same/connected>183 inany12months;otherPElimbs independently apply",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-cross-border.md",
+          "lines": [
+            27
+          ],
+          "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "4 A lists fixed places and deems a construction/assembly/installation/supervision project a PE when lasting more than 3 months. Services through personnel for the same/connected project create a PE when exceeding 183 days in any 12 months. Equality alone does not satisfy these specific duration limbs, but a fixed place or agency can independently create a PE."
+    },
+    {
+      "id": "X03",
+      "act_article": "CGI4A(3)\u2013(4)",
+      "source_pages": "LF32-33",
+      "manual_limb_checks": "listed preparatory/auxiliary exceptions;fragmentation alternatives existingPE,combined nonauxiliary,complementarycoherentfunctions",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-cross-border.md",
+          "lines": [
+            37
+          ],
+          "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Storage/exhibition, processing by another enterprise, purchasing/information and other listed activities need the relevant preparatory/auxiliary limitation. Anti-fragmentation denies the exception for linked complementary business functions, an existing PE or a combined non-auxiliary activity. Do not split one coherent business across sites to claim a warehouse exemption."
+    },
+    {
+      "id": "X04",
+      "act_article": "CGI4A(5)\u2013(9)",
+      "source_pages": "LF32-33",
+      "manual_limb_checks": "habitual contract/principalrole orstockdelivery;nonreinsurance insurance rule;ordinaryindependentagent;near-exclusive related exception;controlalone insufficient;>50/control facts",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-cross-border.md",
+          "lines": [
+            38
+          ],
+          "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Habitual contract conclusion/principal negotiating role or habitual stock delivery can create an agency PE. Nonresident insurers have the stated premium/risk rule except reinsurance. An ordinary independent agent can fall outside these limbs; near-exclusive activity for closely linked enterprises prevents independence. Control alone does not create a PE.4 A(8)\u2013(9) define close links, including more-than 50% tests, but other actual control is relevant."
+    },
+    {
+      "id": "X05",
+      "act_article": "CGI86D",
+      "source_pages": "LF47",
+      "manual_limb_checks": "treatyreservation;residentpayer/fornonresidentPE;services/royalties20percent;equipment/knowhow/software included",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-cross-border.md",
+          "lines": [
+            28
+          ],
+          "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Subject to applicable treaties,86 D imposes 20% IS withholding on payments by a resident company or for a nonresident company's PE for services rendered by nonresidents or royalties paid to them. Royalties include rights, equipment, know-how and software acquisition/rental as stated. Classify actual contracts first; do not apply the old miscellaneous reduced-rate list by default."
+    },
+    {
+      "id": "X06",
+      "act_article": "CGI11",
+      "source_pages": "LF33-34",
+      "manual_limb_checks": "foreignPE ofCEMACcompany;foreignlistedreceipts;actualtax deduction OR cappedcredit;PElosses5years onlylaterPEprofits",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-cross-border.md",
+          "lines": [
+            39
+          ],
+          "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "11 brings foreign PE results belonging to a CEMAC company and foreign dividends, interest, royalties and service fees of an enterprise operated in Congo into the stated tax base. Double tax can be relieved by foreign-tax deduction or a credit limited to Congo tax on the same income, subject to actual entitlement. Foreign PE losses are restricted to later PE profits within 5 years. Do not use both relief routes for the same amount."
+    },
+    {
+      "id": "X07",
+      "act_article": "CGI92\u201392C",
+      "source_pages": "LF51-54",
+      "manual_limb_checks": "intermittent/precarious qualifyingforeignentities;22percenttaxexclusivereceipts margin;86Aforeign33 via92C;derived7.26percentnotallin;exclusionconditions held",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-cross-border.md",
+          "lines": [
+            40
+          ],
+          "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "92 concerns foreign legal entities whose intermittent/precarious activities do not permit the ordinary 86 C\u2013F regime.92 A fixes 22% of qualifying tax-exclusive Congo turnover as deemed profit and 92 C points to 86 A, whose foreign-person rate is 33%. Thus 7.26% is the derived IS alone, not a universal service withholding rate or all-in burden. Mobilisation, reimbursed supplies and chain subcontract exclusions have cumulative conditions not certified in this short computation."
+    },
+    {
+      "id": "X08",
+      "act_article": "CGI92(2),92D",
+      "source_pages": "LF51-54",
+      "manual_limb_checks": "existence/ATE/modifications;15secondfollowingmonthdecl/pay;cessation beforedeparture;92D named supplierfields;withholding92Bclock not certified",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-cross-border.md",
+          "lines": [
+            49
+          ],
+          "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "92 requires existence declaration, temporary operating authority and amendments; service declaration/payment by 15 th of the second month following service execution, and liquidation by cessation before mobilised people/equipment depart.92 D requires a supplier-by-supplier statement naming contract, address, tax and billing month/amount. This is distinct from ordinary annual IS."
+    },
+    {
+      "id": "X09",
+      "act_article": "CGI92E",
+      "source_pages": "LF53-54,71",
+      "manual_limb_checks": "100000 missing/incompleteinvoiceelement;8daydemand100percent;pre-demand1percentworkingdaymax50;inmonth500000withoutinterest;374ter coordination held",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-cross-border.md",
+          "lines": [
+            57
+          ],
+          "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "92 E provides XAF 100,000 per missing/incomplete invoice element; non/partial payment after 8-day demand can incur 100% of evaded principal; late payment before demand has 1% per working day capped 50%. The within-current-month deferral rule instead has XAF 500,000 without that interest. Classification/overlap with 374 ter must be settled before using a penalty calculation."
+    },
+    {
+      "id": "X10",
+      "act_article": "CGI107",
+      "source_pages": "LF60-62",
+      "manual_limb_checks": "nonresident direct/indirect securitygains;alone/linked>=10percentpreceding365days;otherpropertyrich rules not erased",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-cross-border.md",
+          "lines": [
+            41
+          ],
+          "sha256": "eba57b199e225935f8522bd29edf7586f1ee31635cef34a2d1ba185474698747"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "107 taxes nonresident direct/indirect gains on shares of a Congo-registered company where the person alone/with linked companies held at least 10% of capital in the preceding 365 days. This test does not eliminate other property-rich gain rules. Use the income Guide for the IRCM base/rate;106 fusion relief has its own conditions."
+    },
+    {
+      "id": "V01",
+      "act_article": "VAT17,36B; FinanceAct2026,7.2.4(d)",
+      "source_pages": "CGI299,309;LF106",
+      "manual_limb_checks": "historical18percent and5percentofVAT;centimesnondeductible;0.9percentbase derived;LF18/5 stateinvoice corroboration;currentnessheld;row needs CGI link F03",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-vat-gst.md",
+          "lines": [
+            30
+          ],
+          "sha256": "5edf039c1decf3bfa82c412d76ab6991e5433ff472952a0eb15a2bae410d35a9"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "The ministry-hosted VAT law 17 states ordinary 18%; the 2026 state-invoice rule 7.2.4(d) repeats 18% of the pretax price and centimes at 5% of VAT. VAT 36 B says centimes are non-deductible. Thus an ordinary 18%-rated transaction has VAT 18% plus centimes 0.9% of base, not 23% of base. The complete later amendment chain is not closed."
+    },
+    {
+      "id": "V02",
+      "act_article": "ACPCE2026calendar p2; FinanceAct2026 VATannexes3,5",
+      "source_pages": "CAL2;LF77-78",
+      "manual_limb_checks": "calendar18/5/0;newAnnex3exempt and5reduced;product+tariff before relief;forestry/SEZ/export held;row needs LF link F03",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-vat-gst.md",
+          "lines": [
+            31
+          ],
+          "sha256": "5edf039c1decf3bfa82c412d76ab6991e5433ff472952a0eb15a2bae410d35a9"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "The ACPCE 2026 calendar lists 5% reduced and 0% VAT alongside 18%. The 2026 Finance Act replaces Annex 3(exempt essential goods) and Annex 5(reduced-rate ordinary-consumption goods). A listed tariff code and actual product must be matched before selecting relief; old forestry/SEZ and export eligibility are not fully verified here."
+    },
+    {
+      "id": "V03",
+      "act_article": "VAT1\u20135,12\u201313 in ministry compilation",
+      "source_pages": "CGI290-292,298-299",
+      "manual_limb_checks": "independent remuneratedeconomicsupplies;imports/selfsupplies;consideration;nearest1000;customsvalue+duty/excise;historical scope explicit",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-vat-gst.md",
+          "lines": [
+            39
+          ],
+          "sha256": "5edf039c1decf3bfa82c412d76ab6991e5433ff472952a0eb15a2bae410d35a9"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "The ministry compilation's VAT 1\u20135 includes remunerated independent economic supplies of goods/services, imports and specified self-supplies.12 uses consideration for goods/services and nearest-XAF 1,000 base rounding;13 includes customs value plus duty/excise for imports. The compilation is a historical baseline, not a 2026 consolidation."
+    },
+    {
+      "id": "V04",
+      "act_article": "VAT10\u201311 in ministry compilation",
+      "source_pages": "CGI296-297",
+      "manual_limb_checks": "gooddelivery/servicesperformanceevent;goods deliveryexigibility;services/works receiptsincludingadvance;authoriseddebits;customsconsumptiondeclaration;historical",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-vat-gst.md",
+          "lines": [
+            40
+          ],
+          "sha256": "5edf039c1decf3bfa82c412d76ab6991e5433ff472952a0eb15a2bae410d35a9"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "In the historical compilation 10\u201311, delivery is the goods event and service performance is the service event; goods tax is generally exigible at delivery and services/works at receipts including advances, with a permitted debits basis. Imports are exigible at customs consumption declaration. Do not confuse invoice issue with every liability date; later changes remain to reconcile."
+    },
+    {
+      "id": "V05",
+      "act_article": "VAT24(1)(7) as amended2026",
+      "source_pages": "LF77",
+      "manual_limb_checks": "cash expense EXCEEDING200000;exact200000 not thisexclusion;IS>= boundary different;otherconditions stillrequired",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-vat-gst.md",
+          "lines": [
+            41
+          ],
+          "sha256": "5edf039c1decf3bfa82c412d76ab6991e5433ff472952a0eb15a2bae410d35a9"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "The 2026 amendment to VAT 24 excludes input tax on cash-paid expenses whose amount EXCEEDS XAF 200,000. At exactly 200,000 this particular exclusion is not triggered; other input conditions still apply. The IS deduction boundary in CGI 25 is different and excludes cash at equality."
+    },
+    {
+      "id": "V06",
+      "act_article": "VAT29(4) as amended2026",
+      "source_pages": "LF77-78",
+      "manual_limb_checks": "Octoberstructuralcredits;annualphysicalstock/fixedasset inventory administrationpresent;present>=20days beforework;noncompliancecancels31Decembercredit",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-vat-gst.md",
+          "lines": [
+            50
+          ],
+          "sha256": "5edf039c1decf3bfa82c412d76ab6991e5433ff472952a0eb15a2bae410d35a9"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Where structural VAT credits are observed in the October VAT declaration,29(4) requires an annual physical stock/fixed-asset inventory in the tax administration's presence. Present the operations to it at least 20 days before work starts. Failure to conduct the required inventory cancels the VAT credit at 31 December."
+    },
+    {
+      "id": "V07",
+      "act_article": "VAT27\u201327bis in ministry compilation",
+      "source_pages": "CGI304-305",
+      "manual_limb_checks": "15daystart existence/registration;prescribed localsupplier/input/invoice/importdetails;failureexofficioreintegration;NIF/NIU andcurrentprocedureheld",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-vat-gst.md",
+          "lines": [
+            51
+          ],
+          "sha256": "5edf039c1decf3bfa82c412d76ab6991e5433ff472952a0eb15a2bae410d35a9"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Historical VAT 27 requires an existence/registration request within 15 days of starting activity;27 bis requires a prescribed detailed input schedule with local supplier/invoice/tax details or import declaration/receipt details, failing which deductions are restored ex officio. Actual NIU terminology, threshold and current registration/electronic form process must be reconciled before filing."
+    },
+    {
+      "id": "V08",
+      "act_article": "VAT31\u201331bis; ACPCE2026calendar",
+      "source_pages": "CGI306-307;CAL2",
+      "manual_limb_checks": "historical15dayfollowingmonth spontaneousdecl/pay;nilreturn required;CALmonthly15 evidence;currentform/operativecalendarheld",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-vat-gst.md",
+          "lines": [
+            52
+          ],
+          "sha256": "5edf039c1decf3bfa82c412d76ab6991e5433ff472952a0eb15a2bae410d35a9"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Historical 31 requires the prescribed return and spontaneous payment within 15 days of the following month;31 bis requires a return even for a nil month. The official 2026 calendar also lists VAT by 15 th of the month. This does not substantiate the old 20 th date or close portal/current-form verification."
+    },
+    {
+      "id": "V09",
+      "act_article": "VAT27bis\u201329 in ministry compilation",
+      "source_pages": "CGI304-306",
+      "manual_limb_checks": "originalinvoices/imports;partyidentification,serial/date,description,base,rate/tax,total;10years extendedoutstandingcredits;SFECheld",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-vat-gst.md",
+          "lines": [
+            42
+          ],
+          "sha256": "5edf039c1decf3bfa82c412d76ab6991e5433ff472952a0eb15a2bae410d35a9"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Historical 27 bis\u201329 requires source invoices, provider and customer identification, serial/date, goods/services, pretax base, rate/tax and total, plus actual import documents where relevant.28 requires 10 year records extended for outstanding VAT-credit periods. Current SFEC rollout is unresolved; these old invoice particulars alone are not a complete certified 2026 invoice specification."
+    },
+    {
+      "id": "P01",
+      "act_article": "CGI116G\u2013H;2026 TUS8",
+      "source_pages": "LF65-66,79",
+      "manual_limb_checks": "ITS versus employercharges;TUS fundallocation/CNSSassignedcollection;not oldheadlinecategories rates",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-payroll-social.md",
+          "lines": [
+            38
+          ],
+          "sha256": "d8fa60517d2b38fc6606980219d989c4a397fda91cc2a9df5768fbd57c48cfb2"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Employee ITS withholding follows 114\u2013116 I, owned by the income Guide. Do not deduct an employer-only charge as if it were employee tax. The 2026 TUS amendment changes the fund allocation, including CNSS collection for assigned portions; it does not establish the old resident/nonresident/petroleum headline rates."
+    },
+    {
+      "id": "P02",
+      "act_article": "FinanceAct2026 art5",
+      "source_pages": "LF5-6",
+      "manual_limb_checks": "individual/informallabouremployer affiliation;2026first25000declarants allIRPP/halfemployerSS+health;inclusion/administrationheld",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-payroll-social.md",
+          "lines": [
+            39
+          ],
+          "sha256": "d8fa60517d2b38fc6606980219d989c4a397fda91cc2a9df5768fbd57c48cfb2"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "FinanceAct 5 requires an individual employer or an employer using informal labour to affiliate to a social-security fund. For 2026 the State bears all IRPP and half employer social/universal-health contributions for the first 25,000 specified declarants. The clause is not a general exemption for all employers; proof of inclusion and actual administration remain unconfirmed."
+    },
+    {
+      "id": "P03",
+      "act_article": "ACPCE2026calendar p2; compare2025 Gazette art9",
+      "source_pages": "CAL1-2;LF25p2-3",
+      "manual_limb_checks": "CALCNSScombined24.28;CAMUemployee2.27/employer4.55;monthly15entries;LF25CNSS4.55/20.28 conflict held not operative",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-payroll-social.md",
+          "lines": [
+            49
+          ],
+          "sha256": "d8fa60517d2b38fc6606980219d989c4a397fda91cc2a9df5768fbd57c48cfb2"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "The official 2026 ACPCE calendar lists combined CNSS 24.28%, CAMU employee 2.27%/employer 4.55%, and monthly 15 th entries. The preceding enacted 2025 Gazette art 9 instead prints CNSS employee 4.55% with employer 20.28%. This contradiction is unresolved; none of those split rates, ceilings or remittance routes is certified as an operative 2026 payroll calculation here."
+    },
+    {
+      "id": "P04",
+      "act_article": "FinanceAct2026 art5",
+      "source_pages": "LF5-6",
+      "manual_limb_checks": "2026rates remaintextsinforce;not itself split/cap solution",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-payroll-social.md",
+          "lines": [
+            40
+          ],
+          "sha256": "d8fa60517d2b38fc6606980219d989c4a397fda91cc2a9df5768fbd57c48cfb2"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "FinanceAct 2026 art 5 leaves retirement, social and universal-health contribution rates at those set by texts in force. It does not itself resolve the conflicting 2025 Gazette and 2026 calendar or establish branch-specific wage caps. Obtain the governing instruments before computing contributions."
+    },
+    {
+      "id": "F01",
+      "act_article": "OHADA309,385,853-1,117",
+      "source_pages": "CO25-26,68-69,89,200-201",
+      "manual_limb_checks": "SARLoneormorememberslimitedliability;SAsingleholder;SASoneormorearticlesgovernance;branchnoseparatepersonality",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            41
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "OHADA 309 permits a one-or-more-member SARL with liability limited to contributions;385 permits an SA with a single shareholder;853-1 permits one-or-more-member SAS with articles setting governance subject to mandatory rules. A branch lacks separate legal personality under 117. Choose governance, liability and regulated-activity requirements before comparing tax."
+    },
+    {
+      "id": "F02",
+      "act_article": "Decree2017-41 arts4\u20135",
+      "source_pages": "SARL2;CO69-70",
+      "manual_limb_checks": "nationalcapitalfreelyfixed;equalsharesnominal>=5000;OHADA1000000defaultsubjectnationalrule;scanvisualread",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            30
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "National decree 2017-41 art 4 lets members set SARL capital freely in the articles; art 5 requires equal shares with nominal value at least XAF 5,000. The OHADA default XAF 1,000,000 expressly yields to national rules and is not Congo's required minimum under this decree."
+    },
+    {
+      "id": "F03",
+      "act_article": "OHADA311-1;Decree2017-41 arts6\u20137",
+      "source_pages": "CO69-70;SARL2-3",
+      "manual_limb_checks": "allsubscribed;inkindfullypaid;cash>=half;remainder2yearsfromRCCM;immediatedepositapprovedinstitutionreceipt;founder/notaryprescribeddeclarations",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            31
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "OHADA 311-1 requires all shares subscribed, in-kind shares fully paid, cash shares at least half paid at subscription with remainder within 2 years of RCCM registration. Congo decree 6\u20137 requires immediate deposit in a society-in-formation account at a qualifying bank/credit/microfinance institution with receipt; founders or a notary record payment/deposit with the prescribed declarations."
+    },
+    {
+      "id": "F04",
+      "act_article": "OHADA387\u2013389,824,853-4\u20135",
+      "source_pages": "CO89,187,200-201",
+      "manual_limb_checks": "SA10000000;cashquarter/remainder3years;listed/publicoffer100000000;SASarticlescapital/nopublicoffer",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            32
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Ordinary SA minimum is XAF 10,000,000; cash subscription at least one-quarter paid, remainder within 3 years after RCCM. A listed/public-offer SA requires XAF 100,000,000 under 824. SAS capital/nominal is set by articles and it cannot make a public offering. Do not apply SA minimum mechanically to SAS."
+    },
+    {
+      "id": "F05",
+      "act_article": "Decree2017-41 arts2\u20133",
+      "source_pages": "SARL1-3",
+      "manual_limb_checks": "privateornotarialarticles;private-notarialminutesnotcompulsory;mandatoryparticulars;not exemptionfrom validarticles/evidence",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            42
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Congo decree 2 permits private or notarised SARL articles; deposit of privately signed articles in notarial minutes is not compulsory.3 lists required company, capital, shareholder, contribution and governance particulars. The simplification is not a blanket exemption from preparing valid articles or capital evidence."
+    },
+    {
+      "id": "F06",
+      "act_article": "OHADA25;ACPCE creation checklist",
+      "source_pages": "CO6-7;ACPCE",
+      "manual_limb_checks": "preciseaddressnotPOalone;ownership/lease/water/electric/internet/otherproof;not mandatoryseparatecommerciallease",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            43
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "OHADA 25 requires a sufficiently precise address/geographic location, not only a post-office box. ACPCE accepts ownership, lease, utility/internet or other office evidence under its public checklist; do not invent a mandatory separate commercial-office lease."
+    },
+    {
+      "id": "F07",
+      "act_article": "ACPCE create a company, identity section",
+      "source_pages": "ACPCEidentity",
+      "manual_limb_checks": "director/members/SAauditoridentityvalid;legalpersonRCCM;foreignerresidentorlongvisa+passport/criminalorhonour;directorNIU/photo/marriagewhereapplicable",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            53
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "ACPCE requires valid identity for director, members/shareholders and SA auditor; legal-person shareholder RCCM where applicable; foreign resident/long-stay documentation and criminal-record/honour declaration as listed; director's personal NIU and photo, marriage record where applicable. Do not collect irrelevant items without checking the actual applicant category."
+    },
+    {
+      "id": "F08",
+      "act_article": "ACPCE create a company, constitutional section",
+      "source_pages": "ACPCEconstitutional",
+      "manual_limb_checks": "SARLprivate/notarial+regularity;othernotarial+subscription;SAconstitutiveminutes;capitalproof;PDFencouraged;regulatedadditionaldocs",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            54
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "ACPCE lists SARL/SARLU private/notarised articles plus regularity/conformity declaration; other forms' notarised articles and notarised subscription/payment statement; SA constitutive-meeting minutes and capital-deposit proof. PDF constitutional documents are encouraged; regulated activities can need additional documents before or after registration."
+    },
+    {
+      "id": "F09",
+      "act_article": "ACPCE public portal",
+      "source_pages": "PORT",
+      "manual_limb_checks": "publicaccount/login;uniqueform/upload;onlinepayment;electronicemaildocuments;noauthenticatedissuancesequenceclaim",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            55
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "At monentreprise.acpce.cg, the public page offers account creation/login, a unique form with supporting-file uploads, online payment and electronic delivery by email. It is evidence of the advertised route only; current authenticated fields, approval, NIU/RCCM issuance sequence and payment acknowledgement have not been tested."
+    },
+    {
+      "id": "F10",
+      "act_article": "ACPCE public portal, Taxe unique de Cr\u00e9ation",
+      "source_pages": "PORT",
+      "manual_limb_checks": "displaySARL/SARLU300000;SA/SAS/SASU500000;fee notcapital/professionalquote;exemptions/ancillaryheld",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            33
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "The ACPCE public portal displays XAF 300,000 for SARL/SARLU and XAF 500,000 for SA/SAS/SASU. These are displayed creation taxes/fees, not paid-in capital or a quote for professional work. Applicable exemptions, amendments and ancillary costs require confirmation before payment."
+    },
+    {
+      "id": "F11",
+      "act_article": "OHADA116\u2013120",
+      "source_pages": "CO25-26",
+      "manual_limb_checks": "branchRCCM;foreignownercontributetoOHADAStatecompanywithin2years;ministerdispensation2nonrenewable subjectspecialregime;not onlyCongosubsidiary",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            56
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "OHADA 116\u2013120 requires branch RCCM registration; a foreign owner's branch must be contributed to an existing/new company of an OHADA State within 2 years unless the competent commerce minister grants dispensation. Subject to special-regime companies, dispensation lasts 2 years non-renewable. Do not promise conversion only into a Congo subsidiary."
+    },
+    {
+      "id": "F12",
+      "act_article": "OHADA120",
+      "source_pages": "CO25-26",
+      "manual_limb_checks": "courtdecisionthenRCCMremoval/legalpublication;not automatictimer",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            64
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "Failure to meet 120 can lead to court-ordered RCCM removal, followed by legal publication. It is not an automatic unreviewed administrative cancellation on an invented date."
+    },
+    {
+      "id": "F13",
+      "act_article": "OHADA376",
+      "source_pages": "CO86-88",
+      "manual_limb_checks": ">=1auditorif2of3strictly>125000000balance,>250000000turnover,>50staff;2preexpiryyearslosscriteria;minority>=onetenthcourt",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            44
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "OHADA 376 requires at least 1 statutory auditor if 2 of 3 conditions at year-end hold: balance sheet over XAF 125,000,000, annual turnover over XAF 250,000,000, permanent employees over 50. Falling outside 2 criteria for the 2 years before mandate expiry releases the obligation; a qualifying minority can seek appointment in court even below thresholds."
+    },
+    {
+      "id": "F14",
+      "act_article": "OHADA694;CGI130\u2013131",
+      "source_pages": "CO153;LF66-67",
+      "manual_limb_checks": "SAoneormoreauditors;taxDSFseparate;fullrecurringfilingsheld",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-company-formation.md",
+          "lines": [
+            45
+          ],
+          "sha256": "27f30a4af3245cf537315cb88fadeaca251115ac5d1e41979bf5ad4325f02085"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "OHADA 694 requires SA audit by one or more statutory auditors. Tax DSF/accounts requirements are separate under CGI 130\u2013131 and the corporate Guide. Keep governance, accounting, tax and beneficial-ownership filings as separate checklists; complete current filing obligations are not all verified here."
+    },
+    {
+      "id": "O01",
+      "act_article": "FinanceAct47",
+      "source_pages": "LF30,55-66",
+      "manual_limb_checks": "2026transpositionincome-taxarchitecture;routebyreceipt",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-tax-overview.md",
+          "lines": [
+            38
+          ],
+          "sha256": "b9c144f0b85207f81a995846f85bb7363e2f37b51fcbf68f2b8b35a941830889"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "The enacted initial 2026 Finance Act transposes the CEMAC income-tax directive into a new IS chapter and separate business, investment, property and salary income chapters. Use the Guides by taxpayer and receipt category, rather than the former single global IRPP shortcut."
+    },
+    {
+      "id": "O02",
+      "act_article": "CGI9,86",
+      "source_pages": "LF33,46-47",
+      "manual_limb_checks": "31Decemberordinary;startfinal6monthsoptionfirstperiodthroughnextyear;notifybefore31Decemberstartyear",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-tax-overview.md",
+          "lines": [
+            47
+          ],
+          "sha256": "b9c144f0b85207f81a995846f85bb7363e2f37b51fcbf68f2b8b35a941830889"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "CGI 9 ordinarily requires 31 December accounts;86 allows a first extended period for enterprises beginning in the final 6 months, with option notified before 31 December of the commencement year. This is an option with conditions, not permission for every taxpayer to choose any year-end."
+    },
+    {
+      "id": "O03",
+      "act_article": "FinanceAct61\u201362",
+      "source_pages": "LF114",
+      "manual_limb_checks": "61 prior-executionrulesonlynotcontrary;62publication/executionStateLaw;latercurrentnessheld",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-tax-overview.md",
+          "lines": [
+            39
+          ],
+          "sha256": "b9c144f0b85207f81a995846f85bb7363e2f37b51fcbf68f2b8b35a941830889"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "The 2026 law's final 61 retains prior execution provisions only insofar as not contrary to it.62 provides publication and execution as State law. An unsigned draft, historical CGI compilation or administrative calendar cannot silently displace the enacted text. Later 2026 rectification remains unverified."
+    },
+    {
+      "id": "C15",
+      "act_article": "ACPCE2026calendar pp1,4",
+      "source_pages": "CAL1,4-5;LF47-48",
+      "manual_limb_checks": "calendar DSF15May after close;IS/IBA15May;statutory conflict and no extension certified",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-corporate-income-tax.md",
+          "lines": [
+            55
+          ],
+          "sha256": "2a69ffae06e551c298093eb213d396e2dba10b30189f059bb9f24e8eac1e7149"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "The ACPCE 2026 calendar lists annual IS and IBA by 15 May and DSF by 15 May following year-end. Compare C 10: the enacted new 86 F has 4 months. The tax-year/transition/administrative basis for the different date has not been established; no date extension is assumed."
+    },
+    {
+      "id": "P05",
+      "act_article": "FinanceAct47-2024 art9, Gazette p3",
+      "source_pages": "LF25p2-3;CAL2;LF5",
+      "manual_limb_checks": "CNSSemployer20.28/employee4.55;combined24.28 conflict;2026continuity;governingsplit/capsheld",
+      "status": "supported_with_stated_partial_scope",
+      "reviewed_guide_placements": [
+        {
+          "file": "skills/republic-of-congo/cg-payroll-social.md",
+          "lines": [
+            41
+          ],
+          "sha256": "d8fa60517d2b38fc6606980219d989c4a397fda91cc2a9df5768fbd57c48cfb2"
+        }
+      ],
+      "ledger_row_present": true,
+      "rule_text_checked": "The 2025 enacted Gazette art 9 prints employer CNSS 20.28% and employee 4.55%. The 2026 calendar instead gives combined 24.28%. These incompatible official publications are recorded as evidence, not resolved payroll rates.2026 Act 5 preserves rates set by texts in force; the governing reconciliation and ceilings remain unconfirmed."
+    }
+  ]
+}

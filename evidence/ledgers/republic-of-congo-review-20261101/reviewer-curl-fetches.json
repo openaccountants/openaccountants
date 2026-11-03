@@ -1,0 +1,66 @@
+[
+  {
+    "id": "LF",
+    "url": "https://sgg.cg/JO/2026/congo-jo-2026-3-3.pdf",
+    "curl_exit": 0,
+    "stderr": "",
+    "sha256": "73c97ffedfd8381a8b1bae1efe708a002d363b7455eadbd25bec2b014179347d",
+    "cache_hash_matches": true
+  },
+  {
+    "id": "CGI",
+    "url": "https://www.finances.gouv.cg/sites/default/files/documents/CGI%20Tome%20I.pdf",
+    "curl_exit": 0,
+    "stderr": "",
+    "sha256": "4e4cb79135782817fc26c18e0c8418c789888564b9576e92493676ecb7ff1f52",
+    "cache_hash_matches": true
+  },
+  {
+    "id": "CO",
+    "url": "https://acpce.cg/wp-content/uploads/2024/08/ACTE-UNIFORME-REVISE-RELATIF-AU-DROIT-DES-SOCIETES-COMMERCIALES-ET-DU-GROUPEMENT-DINTERET-ECONOMIQUE.pdf",
+    "curl_exit": 0,
+    "stderr": "",
+    "sha256": "6c7c029fb4e27b70035ec1962f62dcfe708ec3f17ab55a5d79bf8878b167e780",
+    "cache_hash_matches": true
+  },
+  {
+    "id": "SARL",
+    "url": "https://acpce.cg/wp-content/uploads/2024/08/congo-decret_2017-41_sarl.pdf",
+    "curl_exit": 0,
+    "stderr": "",
+    "sha256": "94d3a632f1a0c272d0cc89d7aa135ddad4de4ddea21b062fcc5f12b66159ad91",
+    "cache_hash_matches": true
+  },
+  {
+    "id": "ACPCE",
+    "url": "https://acpce.cg/creer-une-societe/",
+    "curl_exit": 0,
+    "stderr": "",
+    "sha256": "55ba8525926afe55746ad959c9de048f79ccfb8bc55a69ed4f613539a4d4cbb9",
+    "cache_hash_matches": true
+  },
+  {
+    "id": "CAL",
+    "url": "https://acpce.cg/wp-content/uploads/2026/02/Calendrier-des-obligations-fiscales-et-sociales-au-titre-de-lannee-2026.pdf",
+    "curl_exit": 0,
+    "stderr": "",
+    "sha256": "9be4559faf7ba423e6e8a3b6df733e700c06e5f6415fa929f9202ad97b27020b",
+    "cache_hash_matches": true
+  },
+  {
+    "id": "LF25",
+    "url": "https://www.sgg.cg/JO/2024/congo-jo-2024-15-sp.pdf",
+    "curl_exit": 0,
+    "stderr": "",
+    "sha256": "63dacfc2e3f0f1517156829b4acfd06eee44231eeaa36603c9a822e90f10e8ef",
+    "cache_hash_matches": true
+  },
+  {
+    "id": "PORT",
+    "url": "https://monentreprise.acpce.cg/",
+    "curl_exit": 0,
+    "stderr": "",
+    "sha256": "ed1da8f34de79153204881fa205a9dc270e2a81a784a09e5d315525564041aba",
+    "cache_hash_matches": true
+  }
+]
