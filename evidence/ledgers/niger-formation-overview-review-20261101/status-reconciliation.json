@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-01",
+  "scope": "Status-only reconciliation permitted by closure.json; Guides and rule ledgers unchanged from accepted candidate.",
+  "changes": [
+    {
+      "path": "skills/niger/README.md",
+      "before_sha256": "3bea1d29e96470863e0dbfd5854e946c6375ab5e66ce89796deb10333cce1fb0",
+      "after_sha256": "bab3a25b5fd912b6ac2ffeda86bde566b86bc678d806ff86279937eef2ac04f1",
+      "before": "their independent review is pending.",
+      "after": "independent source-fidelity review has accepted their 47 ledger rows, 25 old-topic destinations and four examples after two company-law corrections. All seven domains remain partial."
+    },
+    {
+      "path": "skills/niger/README.md",
+      "before_sha256": "bab3a25b5fd912b6ac2ffeda86bde566b86bc678d806ff86279937eef2ac04f1",
+      "after_sha256": "ebe1649e4e94835e131907bb12c6628982aee1bef8ccd9d25cd6e6b28a3a02f8",
+      "before": "Formation and overview independent review: pending; no accountant attestation.",
+      "after": "Formation and overview independent source-fidelity review: accepted within the limited read scope; [closure evidence](../../evidence/ledgers/niger-formation-overview-review-20261101/closure.md). No accountant attestation or complete country coverage."
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/writer-record.md",
+      "before_sha256": "d16a4e044623965bc30f462ccc1cba65da2f1bc1ffc69cfef389066aa8c2e953",
+      "after_sha256": "3f545530b02e7e68c4c1c4a90eb06b0c5fb99e25aa62952786dab9d6fe234414",
+      "before": "this new batch has not yet received independent source review or accountant attestation.",
+      "after": "this new batch received independent source-fidelity acceptance for 47 ledger rows, 25 predecessor destinations and four examples after N1/N2 corrections. It has no accountant attestation or complete country coverage."
+    }
+  ]
+}

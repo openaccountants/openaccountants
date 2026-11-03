@@ -1,0 +1,78 @@
+{
+  "reviewer": "Independent fresh reviewer /root/niger_formation_overview_review",
+  "candidate_commit": "ea3aefb0bea6c30acd49d42a6ff72523162df0bc",
+  "content_commit": "5c6e69a3ae9ccaed63e83b44797516f86a31bdd5",
+  "files": [
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/ne-company-formation.json",
+      "sha256": "32149c81d43e7234c05ebe0ef1dfe40488840477a910e99238c8a668f25ae277",
+      "bytes": 24863
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/ne-company-formation.md",
+      "sha256": "51e6e2c80892c05ae93514799831fe21b348446fc39663b3215e344451a8b04a",
+      "bytes": 13121
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/ne-tax-overview.json",
+      "sha256": "19fddf16ae0af86f7b5126f6de0326b72bc808c6cb458ba7ff7c76c168a2b6ca",
+      "bytes": 9819
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/ne-tax-overview.md",
+      "sha256": "0748566bd4cf1ca273ad17bb5005839c051304d0336211143d8fb721ab5bb4b5",
+      "bytes": 5129
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/old-topic-destinations.json",
+      "sha256": "d0711ae2c7c235338bb52458da55328caba0a6d2f970ba06613932c8b38e1161",
+      "bytes": 13339
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/old-topic-destinations.md",
+      "sha256": "0c9af9ddc92777f4b8a8fcc1399e836495218496ccce0e288aa1160b85a7eedc",
+      "bytes": 6926
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/preservation-baseline.json",
+      "sha256": "72d24bc30d6ef5a4849b10aec522dc32f3d8bfa407b7313b1479f7e5863ed24d",
+      "bytes": 4466
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/source-identities.json",
+      "sha256": "5cbba6342720e0b234b157dcd2562e6afbc73b9ba8db32973b334544921ee867",
+      "bytes": 4712
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/writer-check.py",
+      "sha256": "664134c569db3feff2099ed7d1e0ef05aff5c26d481bcd9f6f4a4f73f38bd469",
+      "bytes": 2961
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/writer-checks.json",
+      "sha256": "f78f23b87343b8b3d93fd53ef29d11e59234161a360acc50845ce8707a572049",
+      "bytes": 5174
+    },
+    {
+      "path": "evidence/ledgers/niger-formation-overview-20261101/writer-record.md",
+      "sha256": "d16a4e044623965bc30f462ccc1cba65da2f1bc1ffc69cfef389066aa8c2e953",
+      "bytes": 2349
+    },
+    {
+      "path": "skills/niger/README.md",
+      "sha256": "3bea1d29e96470863e0dbfd5854e946c6375ab5e66ce89796deb10333cce1fb0",
+      "bytes": 5843
+    },
+    {
+      "path": "skills/niger/ne-company-formation.md",
+      "sha256": "0aa7222c9a84edde114771663e9c8ec112ee4479eadab9e7625081fb7cf6d70a",
+      "bytes": 19764
+    },
+    {
+      "path": "skills/niger/ne-tax-overview.md",
+      "sha256": "3d6f6d3811ee2c954cc23ea5cca15ff45f3b718c3f35b662221a39ae9d7e401d",
+      "bytes": 17281
+    }
+  ],
+  "writer_freeze_receipt_sha256": "6fbb472dedf1f8499b376060d1bc4f8e1b3d917b8e71eaba9d3581c3cd9cd1ba"
+}

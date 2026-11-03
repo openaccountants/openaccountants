@@ -1,0 +1,199 @@
+{
+  "review_date": "2026-11-01",
+  "sources": [
+    {
+      "file": "ohada-auscgie-2014.pdf",
+      "bytes": 16313466,
+      "sha256": "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "actual_scope": "Copied once from the existing DR Congo original source cache. Selected provisions read on physical pages 8, 10–15, 18–20, 28–32, 36–37, 65–66, 76–78, 86, 93, 95–97, 194, 207–210. Pages 95–96 visually checked against rendered originals; cached OCR omits the SA single-shareholder sentence. Extra screened pages 85, 89, 94, 195–196, 201 do not establish additional adopted rules.",
+      "read_on": "2026-11-01",
+      "reviewer_hash_match": true,
+      "review_method": "Independent cached source read; no source law inferred from acquisition-failure record"
+    },
+    {
+      "file": "ohada-auscgie-2014.txt",
+      "bytes": 709964,
+      "sha256": "30896817ff4b8c57e40c6b5640d2d7c4801fdf04627c20c7e8708afcad4c4726",
+      "url": "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "actual_scope": "Private existing text extraction, read scoped pages; raw OCR can omit clauses. Original scan governs.",
+      "read_on": "2026-11-01",
+      "reviewer_hash_match": true,
+      "review_method": "Independent cached source read; no source law inferred from acquisition-failure record"
+    },
+    {
+      "file": "niger-sarl-decree-2014-503.pdf",
+      "bytes": 1073819,
+      "sha256": "2f293826ab3e6458831e28c3d9ac44ba96da751ec9e1410859ce531af094e778",
+      "url": "https://cciniger.org/download/decret-2014503-capital-social-sarl/",
+      "actual_scope": "Direct public download URL observed in official CCIN landing data-downloadurl. All three scanned pages visually read, articles 1–8 and signature. Original article 5 is superseded.",
+      "read_on": "2026-11-01",
+      "reviewer_hash_match": true,
+      "review_method": "Independent cached source read; no source law inferred from acquisition-failure record"
+    },
+    {
+      "file": "niger-sarl-amendment-gazette-2017.pdf",
+      "bytes": 2998936,
+      "sha256": "254b0fedf768f896e76ac85b9510e8933ccb56fbcff69da7ed65ebfa9e135dea",
+      "url": "https://faolex.fao.org/docs/pdf/Ner169345.pdf",
+      "actual_scope": "Direct fetch with valid TLS. Original official Niger gazette hosted by FAOLEX. Physical page 2, printed page 265: entire Décret 2017-284 visually read. Physical page 1 is unrelated land law and is not used.",
+      "read_on": "2026-11-01",
+      "reviewer_hash_match": true,
+      "review_method": "Independent cached source read; no source law inferred from acquisition-failure record"
+    },
+    {
+      "file": "niger-formation-formalities.pdf",
+      "bytes": 615144,
+      "sha256": "8284bacdc271da8cb730322114d5473f51f296dc950e4a261c6e677ca46d2541",
+      "url": "https://cciniger.org/download/formalites-de-creation-dentreprise/",
+      "actual_scope": "Direct public CCIN download observed in landing; one-page SARL and individual sections/notes read. Creation metadata2020 and landing2022 not currentness proof; conflicting nominal floor and unverified fee/tax claims not adopted.",
+      "read_on": "2026-11-01",
+      "reviewer_hash_match": true,
+      "review_method": "Independent cached source read; no source law inferred from acquisition-failure record"
+    },
+    {
+      "file": "lf-2026.pdf",
+      "bytes": 1493635,
+      "sha256": "a841c4fa47e4db2b174ea2085050b92ffd84f183039c5cfd5d4bec9a2281f42e",
+      "url": "https://finances.gouv.ne/index.php/lois-de-finances/file/1303-ordonnance-n-2025-44",
+      "actual_scope": "Existing original reused. Article 15, full former TDTA and cash clauses on physical pages 16–18 reread. No other fiscal amendment adopted.",
+      "read_on": "2026-11-01",
+      "reviewer_hash_match": true,
+      "review_method": "Independent cached source read; no source law inferred from acquisition-failure record"
+    },
+    {
+      "file": "rectifying-2026.pdf",
+      "bytes": 22457314,
+      "sha256": "5e8a3a25d729f90cbc4a66035e9866d2a957f9451bf1179f086f66b368f28fae",
+      "url": "https://finances.gouv.ne/index.php/actualites/publications-du-ministere/file/1351-ordonnance-n-2026-45-premiere-rectification-de-la-loi-de-finances-2026",
+      "actual_scope": "Existing signed scan reused. Physical pages 9, 10 and 48 visually read in this session: repeal, cash amendment and signature. Not a full 48-page consolidation.",
+      "read_on": "2026-11-01",
+      "reviewer_hash_match": true,
+      "review_method": "Independent cached source read; no source law inferred from acquisition-failure record"
+    },
+    {
+      "file": "ohada-members.html",
+      "bytes": 237887,
+      "sha256": "3473e2617f1d9bb4d8ec8d7294affde812f0044e68aca96818944ddd7b4f5997",
+      "url": "https://www.ohada.org/les-etats-membres-de-lohada/",
+      "actual_scope": "Fresh valid-TLS HTML; member list and Niger entry read.",
+      "read_on": "2026-11-01",
+      "reviewer_hash_match": true,
+      "review_method": "Independent cached source read; no source law inferred from acquisition-failure record"
+    },
+    {
+      "file": "ohada-company-law.html",
+      "bytes": 264377,
+      "sha256": "ac7f960c50d4d82540a7ab36b9a66dc849949026fc4d26f003275498262b417a",
+      "url": "https://www.ohada.org/droit-des-societes-commerciales-et-du-gie/",
+      "actual_scope": "Fresh valid-TLS HTML; current Act classification and adoption/publication/commencement metadata read. Body November date is inconsistent with metadata and original; original January Act governs.",
+      "read_on": "2026-11-01",
+      "reviewer_hash_match": true,
+      "review_method": "Independent cached source read; no source law inferred from acquisition-failure record"
+    },
+    {
+      "file": "parent-cgi-discovery-20261101.json",
+      "bytes": 1206,
+      "sha256": "920705acae16d88a738d736d781f6a5d93e8d4411ba836ec248d3ab7a64c7d59",
+      "url": "https://impots.gouv.ne/media/telech/LIVRE%201%20ET%202%20ENTIER%20CGI%202025.pdf",
+      "actual_scope": "Failure/discovery record only. Direct timeout/expired certificate; actual browser certificate failure; archive inaccessible. Not a source-law read.",
+      "read_on": null,
+      "reviewer_hash_match": true,
+      "review_method": "Failure metadata only; not legal authority"
+    }
+  ],
+  "independent_actual_reads": [
+    {
+      "source": "ohada-auscgie-2014.pdf and matching cached text",
+      "physical_pages": [
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        19,
+        20,
+        28,
+        29,
+        30,
+        31,
+        32,
+        36,
+        37,
+        65,
+        66,
+        76,
+        77,
+        78,
+        86,
+        93,
+        95,
+        96,
+        97,
+        194,
+        207,
+        208,
+        209,
+        210
+      ],
+      "visual_pages": [
+        95,
+        96
+      ],
+      "note": "Original scan views reused from the matching DR Congo source cache. Article 385 single-shareholder sentence omitted in OCR is confirmed visually. Only adopted clauses and surrounding conditions reviewed; not whole Act."
+    },
+    {
+      "source": "niger-sarl-decree-2014-503.pdf",
+      "visual_pages": [
+        1,
+        2,
+        3
+      ],
+      "note": "Entire three-page original visually read, including signature and articles 1–8. Text extraction is blank and was not treated as substitute."
+    },
+    {
+      "source": "niger-sarl-amendment-gazette-2017.pdf",
+      "visual_pages": [
+        2
+      ],
+      "printed_page": 265,
+      "note": "Entire 2017-284 decree read; unrelated land law not adopted."
+    },
+    {
+      "source": "niger-formation-formalities.pdf",
+      "text_pages": [
+        1
+      ],
+      "note": "Full one-page leaflet read, SARL/individual lists and contradictory nominal floor; procedural/tax assertions held rather than adopted."
+    },
+    {
+      "source": "lf-2026.pdf",
+      "text_pages": [
+        16,
+        17,
+        18
+      ],
+      "note": "All former TDTA and cash clauses read; old tax/fees, event/exigibility, new cash base/rate and procedural links separated."
+    },
+    {
+      "source": "rectifying-2026.pdf",
+      "visual_pages": [
+        9,
+        10,
+        48
+      ],
+      "note": "Repeal, cash amendment and actual signature inspected. No whole-code currentness claim."
+    },
+    {
+      "source": "ohada-members.html and ohada-company-law.html",
+      "note": "Parsed cached official HTML: Niger in member list; January metadata versus November body inconsistency observed and not propagated as law."
+    },
+    {
+      "source": "sarl-decree-landing.html and formalities-landing.html",
+      "note": "Observed data-downloadurl identifies actual CCIN document routes (wpdmdl 2525 and 2527). Official landing URLs retained in citations."
+    }
+  ],
+  "limitations": "No fresh CGI read, full current tax chain, live portal, fee certification, UBO procedure, taxpayer clearance or accountant attestation. No authentication or certificate bypass."
+}
