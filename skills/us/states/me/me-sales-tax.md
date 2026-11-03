@@ -4,8 +4,8 @@ description: Use this skill whenever asked about Maine sales and use tax. Trigge
 version: 2.1
 jurisdiction: US-ME
 tax_year: 2025
-tax_year_notes: Rates for prepared food, lodging and short-term auto rental checked against 36 MRSA s.1811 on 2026-11-01. Other figures not re-read.
-last_updated: 2026-11-01
+tax_year_notes: Rates for prepared food, lodging and short-term auto rental checked against 36 MRSA s.1811 on 2026-11-01. Economic nexus threshold checked against 36 MRSA s.1754-B on 2026-11-03. Other figures not re-read.
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
@@ -24,11 +24,11 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | State rate | 5.50% (general); 8.00% (prepared food); 9.00% (lodging); 10.00% (short-term auto rental) |
 | Local taxes | None |
 | Sourcing | Destination-based |
-| Economic nexus | $100,000 OR 200 transactions |
+| Economic nexus | More than $100,000 in gross sales delivered into Maine in the previous or current calendar year (same test for marketplace facilitators). No transaction-count test. 36 MRSA s.1754-B(1-B)(B) and (K) |
 | Tax authority | Maine Revenue Services (MRS) |
 | Portal | https://www.maine.gov/revenue |
 | SST member | No |
-| Skill version | 2.0 |
+| Skill version | 2.1 |
 
 ## Section 3 -- Transaction pattern library
 
@@ -90,6 +90,7 @@ expected:
 ## Sources
 
 1. 36 MRSA s.1811(1)(D), read 2026-11-01 -- https://legislature.maine.gov/statutes/36/title36sec1811.html
+2. 36 MRSA s.1754-B(1-B)(B) and (K), read 2026-11-03 -- https://legislature.maine.gov/statutes/36/title36sec1754-B.html (the earlier transaction-count test was removed by PL 2021, c.181, Pt. B, s.5)
 
 <!-- openaccountants-cta-block -->
 
