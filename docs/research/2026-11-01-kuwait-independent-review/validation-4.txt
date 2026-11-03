@@ -1,0 +1,2 @@
+$ python3 scripts/check-sync-integrity.py --base 46c01152da0fdd1b722f61190c88413d0a195d02 --head HEAD --strict-metadata
+Sync integrity checked 6 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).

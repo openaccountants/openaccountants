@@ -1,0 +1,51 @@
+{
+  "skills/kuwait/README.md": {
+    "sha256": "02cfc3e51c2733dc2b6547da85224d1bbdbb9f3f3b819cd47e0ae33081fa20e5",
+    "unchanged": false
+  },
+  "skills/kuwait/kuwait-tax.md": {
+    "sha256": "b62b1da77dbd2d0f5b4ac24e261a5e1ec2bd3a0565b323d5ce459b279891fc63",
+    "unchanged": true,
+    "cta_exact": true,
+    "immutable_metadata_exact": true
+  },
+  "skills/kuwait/kw-company-formation.md": {
+    "sha256": "7e133db0d57c3f1cb6f71ca49f027ea3a71c1ba330e2b97431cecdc569ee02a8",
+    "unchanged": false,
+    "cta_exact": true,
+    "immutable_metadata_exact": true
+  },
+  "skills/kuwait/kw-corporate-income-tax.md": {
+    "sha256": "275651686da038bcd7840248268ad27eee36f9400b5bbd9f0a9deaa0b582e046",
+    "unchanged": false,
+    "cta_exact": true,
+    "immutable_metadata_exact": true
+  },
+  "skills/kuwait/kw-payroll-social.md": {
+    "sha256": "0af02af811cdf725adcf8e14f8be7c9d94fdb3ff60c9c50247b1e80a7451cbc6",
+    "unchanged": true,
+    "cta_exact": true,
+    "immutable_metadata_exact": true
+  },
+  "skills/kuwait/kw-tax-overview.md": {
+    "sha256": "f2983fe73841d123cac86fb0fe69e1706048404d2c7a10bdac45c5fec4950f04",
+    "unchanged": true,
+    "cta_exact": true,
+    "immutable_metadata_exact": true
+  },
+  "skills/kuwait/kw-vat-gst.md": {
+    "sha256": "d2407803d325d97e2b83f0639e3479189e6479cddad73b6c85e4755d317b5940",
+    "unchanged": true,
+    "cta_exact": true,
+    "immutable_metadata_exact": true
+  },
+  "original_ledger_exact": true,
+  "original_map_exact": true,
+  "effective_map_only_expected_edit": true,
+  "README_pending_sha256": "02cfc3e51c2733dc2b6547da85224d1bbdbb9f3f3b819cd47e0ae33081fa20e5",
+  "README_approved_after_sha256": "39bbd297875cd45ed191ec2ac5446b692565ce2650529642565eb675421840ce",
+  "approved_status_literal": "CONDITIONAL PARTIAL: independent research review passed for the six Kuwait Guides at the recorded hashes; explicit source, currentness and filing holds remain. No accountant attestation, operational filing readiness or country-pack completion is claimed.",
+  "effective_ledger_sha256": "145a3e8026124408d06bbb7376bd4c9e77582c2c666ce9c511dfac3ab2438961",
+  "evidence_links_resolve": true,
+  "focused_verdict": "PASS: CONDITIONAL PARTIAL research publication only"
+}
