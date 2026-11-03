@@ -4,12 +4,12 @@ description: "Use this skill for a German resident who works in Switzerland, or 
 jurisdiction: DE
 category: international
 tax_year: 2026
-last_updated: 2026-10-29
+last_updated: 2026-10-31
 authored_by: Michael Cutajar and the OpenAccountants team
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
-version: 0.3
+version: 0.4
 verified_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
@@ -77,7 +77,7 @@ A weekday flat does not by itself move the person's residence. If the person is 
 | 2026 tariff, zone 3 (taxable EUR 17,800 to 69,878) | (173.10 × z + 2,397) × z + 1,034.87, z = (taxable − 17,799) / 10,000, result rounded down | 2026 | https://www.gesetze-im-internet.de/estg/__32a.html |
 | Prepayments | 10 March, 10 June, 10 September, 10 December; set only if at least EUR 400 a year and EUR 100 a date | 2026 | https://www.gesetze-im-internet.de/estg/__37.html |
 | Art. 15(4) consultation agreement | Applies to 31 December 2027 | 2026 | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-10-16-weiterfuehrung-konsultationsvereinb.pdf?__blob=publicationFile&v=3 |
-| Swiss mandatory ordinary assessment of source-taxed pay | Gross employment income of at least CHF 120,000 | 2026 | See ch-cross-border (QStV art. 9) |
+| Swiss mandatory ordinary assessment of source-taxed pay | Gross employment income of at least CHF 120,000 | 2026 | See ch-cross-border (QStV art. 9), https://www.fedlex.admin.ch/eli/cc/2018/274/de |
 
 ## The taxable base
 
@@ -224,6 +224,7 @@ Selected operative clauses actually read on 29 October 2026: SolzG §§ 3/4; ESt
 
 | Source | URL | Read on |
 |---|---|---|
+| Fedlex, QStV (SR 642.118.2) art. 9, CHF 120,000 | https://www.fedlex.admin.ch/eli/cc/2018/274/de | 2026-10-31 |
 | BMF, consolidated Germany-Switzerland treaty as in force from 27 November 2025 (arts. 4, 15, 15a, 24; protocol nos. 5 to 7, 9) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2026-07-15-Schweiz-DBA-Bekanntmachung-Neufassung.pdf?__blob=publicationFile&v=2 | 2026-10-23 |
 | BMF, entry into force of the protocol of 21 August 2023 (27 November 2025) | https://www.bundesfinanzministerium.de/Content/DE/Standardartikel/Themen/Steuern/Internationales_Steuerrecht/Staatenbezogene_Informationen/Laender_A_Z/Schweiz/2025-12-23-Schweiz-DBA-Bekanntmachung-Protokoll.pdf?__blob=publicationFile&v=3 | 2026-10-23 |
 | Fedlex, treaty SR 0.672.913.62, version of 27 November 2025 (application from 2026, art. 23(2) of the protocol) | https://www.fedlex.admin.ch/eli/cc/1972/3075_3128_2910/de | 2026-10-23 |

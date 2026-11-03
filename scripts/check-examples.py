@@ -210,7 +210,7 @@ def all_skill_files():
     for tree in ("skills", os.path.join("packages", "us-federal")):
         for dirpath, _dirs, files in os.walk(os.path.join(REPO_ROOT, tree)):
             for f in files:
-                if f.endswith(".md") and not f.lower().startswith("readme"):
+                if f.endswith(".md") and not f.lower().startswith("readme") and f.lower() != "sources.md":
                     paths.append(os.path.join(dirpath, f))
     return sorted(paths)
 

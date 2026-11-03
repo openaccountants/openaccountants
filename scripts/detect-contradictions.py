@@ -877,7 +877,7 @@ def md_files(tree):
         return []
     out = []
     for name in sorted(os.listdir(base)):
-        if name.endswith(".md") and not name.lower().startswith("readme"):
+        if name.endswith(".md") and not name.lower().startswith("readme") and name.lower() != "sources.md":
             out.append(os.path.join(tree, name).replace(os.sep, "/"))
     return out
 

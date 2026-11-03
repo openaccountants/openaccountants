@@ -155,8 +155,9 @@ def parse_name_status(raw: str) -> list[Change]:
 
 
 def is_pack_readme(path: str) -> bool:
-    """Pack READMEs carry frontmatter but are not guides (build-index.py skips them)."""
-    return PurePosixPath(path).name.lower().startswith("readme")
+    """Pack READMEs and SOURCES.md are not guides (build-index.py skips them)."""
+    name = PurePosixPath(path).name.lower()
+    return name.startswith("readme") or name == "sources.md"
 
 
 def changed_guides(repo: Path, base: str, head: str | None) -> list[Change]:

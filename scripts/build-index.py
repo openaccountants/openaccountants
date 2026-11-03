@@ -110,7 +110,7 @@ def guide_files():
             for filename in sorted(filenames):
                 if not filename.endswith(".md"):
                     continue
-                if filename.lower().startswith("readme"):
+                if filename.lower().startswith("readme") or filename.lower() == "sources.md":
                     continue
                 full = os.path.join(dirpath, filename)
                 paths.append(os.path.relpath(full, REPO_ROOT).replace(os.sep, "/"))
