@@ -1,0 +1,46 @@
+{
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://ird.gov.dm/index.php?Itemid=105&id=17&option=com_content&view=article",
+      "bytes": 43050,
+      "sha256": "0b61e33af2f06dec7befe5d8709396e3d5538d2441efb4636cde4e28353ab9c7"
+    },
+    {
+      "url": "https://ird.gov.dm/phocadownload/returns/whitholdingtax_certificate%20of%20deduction_fillable.pdf",
+      "bytes": 46885,
+      "sha256": "fd3336628b3b2294ab51253daa842bee288bf345a769475265edb919b6435207"
+    },
+    {
+      "url": "https://www.dominica.gov.dm/laws/chapters/chap67-01.pdf",
+      "bytes": 5174662,
+      "sha256": "30d6ddc2bafdc13cd901fdd1cbc8b4e3bbf1615548c341b06ea6d31f41dfce33"
+    },
+    {
+      "url": "https://dominica.gov.dm/laws/2007/act15-2007.pdf",
+      "bytes": 6527,
+      "sha256": "00be618812d86f17b3a8e430fddd1a56bacc9060983ef55625765ce2d326d18f"
+    }
+  ],
+  "review_status": "independent review pending",
+  "gaps": [
+    "Full amendment chain",
+    "Treaties/exemptions and business-presence application",
+    "Remittance form and electronic procedure",
+    "Holiday adjustments and current penalties"
+  ],
+  "visual_verification": {
+    "document": "https://www.dominica.gov.dm/laws/chapters/chap67-01.pdf",
+    "pages": [
+      60,
+      86,
+      119,
+      120
+    ],
+    "findings": [
+      "Section 57 payer obligation, overseas-address presumption and Comptroller treaty direction",
+      "Section 97 deducted OR deductible month-end deadline",
+      "Section 98 monthly OR part-month interest; payer bears interest"
+    ]
+  }
+}
