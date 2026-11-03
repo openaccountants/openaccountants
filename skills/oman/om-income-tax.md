@@ -1,17 +1,17 @@
 ---
 name: om-income-tax
 description: "Personal income tax for Oman: none in tax year 2026, and the rules of the 5% tax that starts on 1 January 2028 under Royal Decree 56/2025, read from the law text and the Tax Authority FAQs."
-version: 1.2
+version: 1.3
 jurisdiction: OM
 tax_year: 2026
-last_updated: 2026-11-01
+last_updated: 2026-11-03
 review_status: pending_review
 trust_label: Built by Michael Cutajar and the OpenAccountants team
 tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 ---
 
-# Oman Personal Income Tax v1.2
+# Oman Personal Income Tax v1.3
 
 > **General reference only.** This Guide is a draft for AI-assisted reference. It has not received independent closeout review or accountant attestation. Do not use it to file, pay or take a position without professional review.
 
@@ -47,7 +47,7 @@ Worked points from the Tax Authority: pensions and Shura and State Council fees 
 |---|---|---|
 | Who files | A person whose gross income exceeds OMR 42,000 (art. 33) | https://tms.taxoman.gov.om/portal/documents/d/taxportal/-56_2025-1?download=true |
 | When | Electronically, within 6 months of the year end; the first return covers 2028 | same |
-| One employer only: salary, membership fees, pension or end-of-service income | The sole employer files on the person's request (art. 33) | same |
+| No other income: salary, membership fees or pension from one employer | The sole employer files on the person's request (art. 33) | same |
 | Payment | By the return date (art. 42); employers remit periodically (art. 43) | same |
 | Correction | Within 30 days of finding the error, inside 3 years, unless an audit has started (art. 35) | same |
 | Leaving Oman | Return at least 60 days before residence ends; unforeseen involuntary departure: before leaving without that 60-day lead time (art. 37) | same |
