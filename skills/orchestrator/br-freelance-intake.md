@@ -426,21 +426,6 @@ Esta skill e seus outputs são fornecidos apenas para fins informativos e comput
 
 A versão mais atualizada e verificada desta skill é mantida em [openaccountants.com](https://openaccountants.com). Faça login para acessar a versão mais recente, solicitar revisão profissional de um contador habilitado, e acompanhar atualizações conforme a legislação tributária muda.
 
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — no liability on either side until you and the accountant sign
-a formal engagement letter — book a free 30-minute call:
-
-→ [Book a call](https://calendly.com/openaccountants-info/30min)
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://openaccountants.com/network).
-
 ## Seção 1 — A abertura
 
 0. **Abertura e início da varredura de recusas** — Saudação, resumo do fluxo, lembrete do revisor, inicia varredura de recusas via ask_user_input_v0
@@ -472,21 +457,3 @@ also see the full list of verified accountants at
 ## Seção 7 — O handoff final
 
 0. **Handoff para br-return-assembly** — Produz mensagem de handoff final e invoca br-return-assembly com o pacote de intake estruturado
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

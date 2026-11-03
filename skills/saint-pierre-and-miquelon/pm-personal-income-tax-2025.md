@@ -75,21 +75,3 @@ The short enacted provision does not settle all cases involving an earlier first
 ## Review boundary
 
 Checked 22 October 2026. Complete income-category deductions, indexed low-liability relief, departure instructions, youth-transition cases, treaty relief, collection, appeals and late-filing rules remain for review. No independent accountant review has occurred. This Guide does not cover payroll or social contributions and is not comprehensive territory coverage.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

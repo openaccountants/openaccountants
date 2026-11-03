@@ -44,21 +44,3 @@ At `R = 1.6 × S`, the expression is zero. At `R = S`, it is 0.24. The assumed 0
 Before claiming relief, record the employment period, establishment, employee eligibility, working time, remuneration, applicable local minimum wage, eligible contribution total and chosen relief. For LODEOM, establish the business's sector, workforce and exact schedule rather than selecting the largest endpoint. These are practical controls for the conditions above.
 
 CSSM points employers to the updated Urssaf declaration guide and payroll-software changes. The linked guide did not download successfully in this research, so no DSN code or operational filing instruction is supplied here. The complete LODEOM eligibility law, individual contribution bases, other payroll charges and emergency cyclone measures remain to be researched. Independent source review and accountant attestation are pending. [CSSM](https://www.cssm.fr/actualite/reduction-generale-degressive-unique-rgdu-et-exoneration-lodeom).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

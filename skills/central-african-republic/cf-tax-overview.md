@@ -105,21 +105,3 @@ expected:
 | Signed 2025 Finance Act, fiscal amendments | https://www.finances.gouv.cf/sites/default/files/2025-01/Loi%20de%20Finances%202025.pdf | 2026-11-01; Read fiscal amendment section, especially arts.9–18; old/new text kept distinct; budget schedules not used. |
 
 Not yet confirmed: Complete 2024 LPF and its commencement/supersession clauses; all current procedural amendments and live channels; special/general penalty priority; tax interest calculations and exact appeal admissibility; current year bases outside specifically verified provisions. Former overview rates/deadlines are routed to the relevant Guide, not duplicated as a supposedly complete country snapshot.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

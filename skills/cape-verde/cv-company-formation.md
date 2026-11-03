@@ -76,7 +76,6 @@ expected:
   gap: 6000.00
 ```
 
-
 ## Ask the client first
 
 - Lda or SA?
@@ -98,21 +97,3 @@ expected:
 | DNRE, forms and leaflets page: list read | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-01 |
 
 Not yet confirmed: Whether art. 25(2) is a flat CVE 30,000 up to CVE 1,000,000, or a floor under 4%, which would give CVE 36,000 in case 2. Minimum capital (old skill: CVE 1, CVE 100,000 typical); capital pay-up 50% and 30%; timeline 1 to 2 weeks; notary CVE 5,000 to 15,000; registration CVE 2,500 plus 0.2% stamp duty; chartered accountant requirement; annual financial statement duty. All came from secondary sources and are removed from the body until the Commercial Companies Code is read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

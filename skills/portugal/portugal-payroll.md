@@ -278,21 +278,3 @@ expected:
 Not yet confirmed: whether Madeira adopted a November 2026 withholding cut (none found in JORAM or on the AT sites; the mainland and Azores despachos exclude Madeira); the decree-law under Lei 64-B/2026 that will set the new band rates, and whether it applies to 2026 income (Despacho 12523-A/2026 says the cut takes effect from 1 January 2026, but the law itself names no year); the Social Security declaration deadline during 2026 for employers still on the old reporting model (the old art. 40 text was not read); the rounding of the card limit to EUR 10.46 that the old version used; the remaining rows of each table and Tables IV to XI; the FCT and FGCT work compensation funds (the old version said contributions are suspended under Lei 13/2023); the 50% employer contribution cuts for first jobs and long-term unemployed hires; parental leave, sick pay (paid by Social Security from the 4th day at 55% to 75%), bereavement leave, 15 days marriage leave and compulsory work-accident insurance from the old version; record keeping periods (5 years labour, 10 years tax); the Relatório Único deadline (15 April); the annual return of income paid to others under CIRS art. 119(1)(c)(ii) by the end of February, wording of Decreto-Lei 49/2025.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

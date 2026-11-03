@@ -78,7 +78,6 @@ Ask in batches of two or three. Skip anything the documents already answer.
 - Any tax office letter, including a notice to keep books.
 - Receipts for equipment, vehicles and other assets bought in the year.
 
-
 ### Freiberufler or Gewerbe (§ 18 vs § 15 EStG)
 
 This is the first fork of every German intake.
@@ -289,17 +288,3 @@ expected:
 | IHKG § 3 | https://www.gesetze-im-internet.de/ihkg/__3.html | 2026-10-31 |
 | UStG § 18 | https://www.gesetze-im-internet.de/ustg_1980/__18.html | 2026-10-31 |
 | UStG § 19 | https://www.gesetze-im-internet.de/ustg_1980/__19.html | 2026-10-31 |
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

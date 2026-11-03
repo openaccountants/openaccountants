@@ -12,8 +12,6 @@ tier: 2
 
 # Hungary: cross-border tax for people and companies (2026)
 
-Source-cited draft: not reviewed by an accountant, not for filing.
-
 This is the hub for the Hungarian cross-border (XB) domain. It links rather than repeats:
 
 - Corporate tax, company residence, PE profits, CFC and the 9% rate: [hu-corporate-tax](hu-corporate-tax.md).
@@ -229,21 +227,3 @@ expected:
 | Nemzeti Jogszabálytár short address (official) | https://njt.hu/jogszabaly/1995-117-00-00 | 2026-10-23: unreachable; the same database answered at njt.jog.gov.hu |
 
 Not yet confirmed: NAV's 2026 list of applicable treaties (the "Adózói tájékoztató" page named in information sheet 4) was not read, so this skill names no treaty partner or treaty rate other than the US position; which Hungarian treaties use the credit method rather than exemption for employment income; whether the NAV office handling non-resident refund claims is still the one named on NAV's 2017 English page (not relied on); the absence of an individual exit tax rests on two independent full-text searches of the 2026 Szja tv. including its annexes (the only deemed-gain rule found, 65/C. §, covers transfers into a trust or private foundation), not on a NAV statement; payroll withholding for non-resident employees is left to the pack's payroll skill.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

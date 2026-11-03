@@ -348,21 +348,3 @@ For foreign founders, the correct choice should therefore be based on the planne
 | APR, entrepreneur founding instructions: paper or electronic filing, passport copy for a foreigner (Internet Archive capture of 19 February 2026) | https://web.archive.org/web/20260219073956/https://www.apr.gov.rs/регистри/предузетници/упутства/оснивање.1083.html | 2026-10-30 |
 
 Not yet confirmed: the documents, conditions and fees for a Visa D and a single permit for a self-employed foreigner (the Law on Foreigners and the Law on Employment of Foreigners were read only for the articles cited); the tax and contribution consequences of a registered interruption; whether the APR fee differs between paper and electronic filing for an entrepreneur (the APR page gives one amount).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

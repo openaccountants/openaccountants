@@ -670,21 +670,3 @@ Not yet confirmed: nothing in the routing tables; rates and computations belong 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. OpenAccountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified Irish tax professional (a Chartered Tax Adviser of the Irish Tax Institute, an ACA, ACCA or CPA, or an AITI-qualified agent registered on ROS) before filing with Revenue via ROS or acting upon.
 
 The most up-to-date version of this skill is maintained on the OpenAccountants website.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -107,21 +107,3 @@ expected:
 | Ministry of Finance ITS page (copyright 2010): scope and exemptions read; its 5-band scale is superseded | https://www.ministere-finances.dj/ITS%20IMPOTS%20DIRECT.html | 2026-11-01 |
 
 Not yet confirmed: The CGI on the official site is the 2011 edition. No consolidated 2026 code could be opened (impots.dj, dgi.dj and economie.gouv.dj did not answer), so each rule is the 2011 text plus the finance laws read; the finance laws found in the gazette for 2013 to 2026 were scanned for tax articles, the 2012 law was not, so an amendment made only there or in a law the gazette search missed would not show. Whether the 50,000 exemption survives the 2022 rewrite is read from the texts, not stated by an authority. The old skill's residence test and treaty position remain unconfirmed; no Djibouti treaty list was opened. The older 5-band scale on the ministry page (to 30%) is out of date.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

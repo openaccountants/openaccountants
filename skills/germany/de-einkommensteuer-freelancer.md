@@ -458,21 +458,3 @@ In `credit`, the second term is the tax on trade income: here trade income is al
 | EStG § 32a | https://www.gesetze-im-internet.de/estg/__32a.html | 2026-10-31 |
 
 Not yet confirmed: the 2026 ELSTER form names (taken from the 2025 instructions); church tax rates and rounding per state (8% or 9% from the 2025 federal booklet, state laws not read); the ministry letter of 6 April 2023 itself (its 30%/EUR 3,600 and 25%/EUR 900 figures are taken from the 2026 EÜR instructions, line 24); the one-year life for computers and software, which rests on the BMF letter of 22 February 2022 as cited in the 2026 EÜR instructions, line 34, not on the statute.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -70,13 +70,11 @@ Use the **current 2026 CbC Ordinance annex** to establish the partner, first eli
 
 Article 3 refers to OECD Action 13 Annex III and the current OECD CbC XML schema. The authority currently links an **XML schema 2.0 upload** and its July 2020 local technical supplement. The public first step requires the authority-issued CbC reporting number, PEID and PIN; obtain these from the authorised filer and keep secrets outside the research record. Validate the completed report against the applicable OECD XSD/user guide and current local instructions, retain original/correction identifiers and the filing receipt. A successful first-step page read is not an authenticated upload or an accepted filing. Full payload/schema testing, correction execution and the separate public CbCR transparency regime are not completed here. [CbC Ordinance article 3][cbc-ordinance]; [authority reporting page][cbc-authority]; [upload landing page][cbc-upload]; [local supplement][cbc-technical]
 
-
 ### Further check
 
 #### Separate-size route category aggregation
 
 Assume the separate-size route and relationship conditions are established, with two cross-border service expenses in the same category to one party, CHF 80,000 and CHF 60,000. CHF 140,000 exceeds CHF 125,000 by CHF 15,000. This does not establish the company-size or relationship gates.
-
 
 ## Deadlines and filing
 

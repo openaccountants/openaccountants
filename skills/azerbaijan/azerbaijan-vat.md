@@ -139,21 +139,3 @@ expected:
 | STS 2026 amendment FAQ, POS transitional provision art. 18.1 | https://www.taxes.gov.az/uploads/2026/faq/FAQ2026.pdf | 2026-10-31 |
 
 Not yet confirmed: a general block on input VAT for passenger cars or entertainment (the old version of this skill stated one from a secondary source; it was not found in art. 175); which contracts the Law on Financial Lease (412-VIIQ) treats as a financial lease, which decides what falls within the amended exemptions from 25 December 2026. Specialist agricultural margin/election calculations are outside scope.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

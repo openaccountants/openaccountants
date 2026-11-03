@@ -231,21 +231,3 @@ expected:
 | Kantonales Steueramt Zürich, Quellensteuertarif A ohne Kirchensteuer, Ausgabe 2026 | https://www.zh.ch/content/dam/zhweb/bilder-dokumente/themen/steuern-finanzen/steuern/quellensteuer/quellensteuertarif/2026/p208840_QuellensteuerTarif_A_ohne_KS_ENT1.pdf | 2026-10-23 |
 
 Not yet confirmed: a 2026 edition of AHV/IV sheet 2.08 (the 2025 edition was read; AVIG art. 3 and UVV art. 22 as in force on 1 January 2026 give the same 2.2% and CHF 148,200); a fixed calendar deadline for the Lohnausweis (none in the DBG or the 2026 Wegleitung; any cantonal deadline is not checked); cantonal FAK rates, who bears them in each canton, and the compensation funds' administration fees; UVG premium rates (insurer-specific); the commission rate and return frequency in cantons other than Zurich.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

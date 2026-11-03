@@ -127,22 +127,4 @@ expected:
 | GRA Payroll Tax brochure (whole; amounts superseded by the 2026 Notice), read in full for this skill | https://www.gra.gm/download-file/8d0c9e3d-d217-11ed-9b31-029254d29bb1 | 2026-11-01 |
 | GRA E-Filing brochure (whole), read in full for this skill | https://www.gra.gm/download-file/7937e6d9-48f3-11ef-b086-029254d29bb1 | 2026-11-01 |
 
-Not yet confirmed: The Income and Value Added Tax Act 2012, SSHFC Act 2015 text and any 2026 amendment. The Notice date is handwritten and reads as 10 March 2026; GRA published it the same day. "Special status" in the Notice is undefined there. The SSHFC NPF reform notice page held only placeholder text. Whether the SSHFC pages reflect 2026 (FPS page dated 2017). PAYE penalty amounts. PAYE form box numbers. 
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
+Not yet confirmed: The Income and Value Added Tax Act 2012, SSHFC Act 2015 text and any 2026 amendment. The Notice date is handwritten and reads as 10 March 2026; GRA published it the same day. "Special status" in the Notice is undefined there. The SSHFC NPF reform notice page held only placeholder text. Whether the SSHFC pages reflect 2026 (FPS page dated 2017). PAYE penalty amounts. PAYE form box numbers.

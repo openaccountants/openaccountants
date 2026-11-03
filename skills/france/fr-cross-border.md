@@ -296,21 +296,3 @@ expected:
 | Regulation2026/2359 delayed posting application | https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-81651 | 2026-10-29 |
 
 Historical source limit: impots.gouv.fr and BOFiP were unavailable to the earlier 23 October reading. Selected current official pages and clauses were actually read on 29 October and are bound in the figure ledger. The published UK relief, annual alternative impatriate caps and salary-withholding refund route above are now supplied. Not yet confirmed: the applicable 2027 filing dates and any 2027 finance-law replacement of the scale; the full statutory implementation bridge for the UK continuation; reconciliation of the literal nationality wording of art. 197 B with the agency’s general non-resident method and the complete artist-specific finality computation. The 2026 tariff is separately published for 2026 payments, not inferred from the 2027 return calendar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

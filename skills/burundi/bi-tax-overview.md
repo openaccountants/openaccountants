@@ -121,21 +121,3 @@ expected:
 | [INSS declaration and payment](https://inss.gov.bi/declaration-et-versement-des-cotisations/) | Read for Quarterly employer versus monthly voluntary frequency, Modèle VI and delay additions read. | 2026-11-01 |
 
 Not yet confirmed: Every sibling Guide remains partial for the omissions named in its Sources; no domain is certified complete. Special sectors/levies and investment/free-zone eligibility, treaty effectiveness/procedures, health/training levy applicability, current annual interest order, fully current taxpayer return/refund/correction/payment screens and all generated inventories are outside this writer checkpoint. Accountant attestation has not occurred.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

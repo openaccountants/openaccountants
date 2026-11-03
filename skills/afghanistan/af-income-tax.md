@@ -25,21 +25,3 @@ tier: 2
 - **Collection of salary tax** — Withheld at source monthly by the employer and remitted to ARD (PAYE-equivalent)  _(Income Tax Law 2009)_
 
 Salary income tax is computed monthly under the Income Tax Law 2009 using a low-banded progressive schedule that effectively exempts low earners. The same schedule applies to residents; non-residents are taxed only on Afghan-source income.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

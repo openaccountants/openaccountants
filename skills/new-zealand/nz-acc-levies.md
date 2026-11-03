@@ -294,21 +294,3 @@ An employee amending the tax deducted on an IR3 works out the earners' levy with
 Not yet confirmed: the 11 March 2025 IRD news page returned 404 on 2026-10-31, so its quotation is not re-read; the rates it announced match the IRD rates table read that day. ACC-only points marked **check** in the text.
 
 This skill is general information, not tax advice. Confirm ACC-only points with ACC and have a New Zealand chartered accountant review the position before acting.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -272,21 +272,3 @@ expected:
 | virk.dk, Feriepenge: arbejdsgiver (FerieKonto deadlines, DKK 4 fee) | https://virk.dk/vejledning/feriepenge/fp-arbejdsgiver/ | 2026-10-23 |
 
 Not yet confirmed: the statutory basis of the monthly payslip duty (Skattestyrelsen's guidance says "must" in Danish and "should" in English, and names no provision).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

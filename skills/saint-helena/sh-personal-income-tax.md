@@ -109,7 +109,6 @@ expected:
   tax: 1690.00
 ```
 
-
 ## Ask the client first
 
 - Income types: employment, business, property, dividends, gains?
@@ -134,21 +133,3 @@ expected:
 | Government press releases, listing page 17 (ExCo Memo 05/2026), read for the item cited; the listing page moves as new items appear | https://www.sainthelena.gov.sh/category/press-releases/page/17/ | 2026-11-01 |
 
 Not yet confirmed: Any instrument after the 1 October 2021 consolidation: the Laws index, press pages and 2026 Income Tax Office page show no enacted change to these rates, and a full Gazette audit was not done. Whether the allowance was raised by Legislative Council resolution after 23 March 2026 for later years: none found. Pension allowance limit for the self-employed. Exempt income prescribed by regulation. Special exemptions, investment credits and overseas credit computations.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

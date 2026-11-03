@@ -33,7 +33,6 @@ Local trading through a Companies Act 1972 company, a partnership or a sole trad
 | IBC TIN | Issued only to IBCs with Seychelles-sourced income or in a multinational group; TRCs continue | 2026 | https://src.gov.sc/suspension-of-tin-for-ibcs-applying-for-bank-purpose-only/ |
 | Business registration at SRC | Within 28 days of starting | 2026 | https://src.gov.sc/wp-content/uploads/2023/01/SI-138-2022-Revenue-Administration-Business-Registration-and-Declaration-of-Operation-Regulations-2022-1.pdf |
 
-
 ## The base
 
 Section 5 bars an IBC from banking anywhere and from insurance, securities, fund, gambling and corporate services business in Seychelles unless licensed where the section allows. An IBC working in Seychelles registers the business with SRC and pays business tax; one without Seychelles income has no return ([brochure](https://src.gov.sc/wp-content/uploads/2022/12/Frequently-Asked-Questions-for-IBC-Brochure.pdf)). The brochure says 14 days to register; S.I. 138 of 2022 says 28 and the law wins. An IBC cancels its TIN within 30 days of being struck off.
@@ -99,21 +98,3 @@ expected:
 | Read for the figures cited: SRC FAQ, domestic section | https://src.gov.sc/faq/ | 2026-11-01 |
 
 Not yet confirmed: minimum share capital for either company type; the old claim that an IBC cannot trade with residents or own local real estate; IBC incorporation time and government fees; Companies Act 1972 annual filings; Companies (Special Licences) Act rules; the register of beneficial owners rules. The registry site returned 403 and these rest on third-party pages in the old pack, which were removed as citations.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

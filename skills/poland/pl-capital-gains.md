@@ -12,8 +12,6 @@ tier: 2
 
 # Poland: capital gains and investment income of individuals (2026)
 
-Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
-
 This skill covers the flat 19% taxes on an individual's savings, investments, crypto-assets and private property sales. It links to the other Poland skills and does not repeat them:
 
 - [pl-income-tax](pl-income-tax.md): the scale, the flat tax on business income, ryczałt, residence basics and the solidarity levy return (DSF-1).
@@ -168,21 +166,3 @@ expected:
 | Ministry of Finance, PIT forms (PIT-38, PIT-39) | https://www.podatki.gov.pl/podatki-osobiste/pit/formularze-pit | 2026-10-23 |
 
 Not yet confirmed: treaty treatment of gains is described in general terms; check the specific treaty.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -17,7 +17,6 @@ tier: 2
 
 ## Scope
 
-
 Intake and the content Guides have already collected the facts for this working paper. Use what they captured, and ask the user again only where something is missing or contradicts itself.
 
 Specifically:
@@ -29,7 +28,6 @@ Specifically:
 - **Do NOT submit anything to ZATCA.** Produce a working paper for a professional authorised for this work in Saudi Arabia. Confirm that authority separately; a professional membership alone is not filing authority.
 
 Continue supported evidence work. Never resolve an unknown legal rule by choosing the most defensible-looking tax treatment.
-
 
 The final capstone skill for Saudi Arabian annual tax filings. It consumes the outputs of every other Saudi skill and assembles a single unified working paper covering one of:
 
@@ -580,7 +578,6 @@ expected:
 
 ## When to refuse or refer
 
-
 - **R-SA-ASM-1**: Upstream skill did not run. Name the missing skill. Continue with available data; flag the gap; do not fabricate the missing computation.
 - **R-SA-ASM-2**: Upstream self-check failed. Note the specific check; continue but flag.
 - **R-SA-ASM-3**: Cross-skill reconciliation > SAR 10,000. Raise as "Needs Input"; do not silently round.
@@ -678,8 +675,6 @@ Use the payment procedure supported for the particular tax head and actual invoi
 | --- | --- |
 | Extension / payment relief | NON-OPERATIVE HOLD: no automatic extension, customary duration or penalty suspension is assumed; obtain current tax-specific procedure and written approval |
 
-
-
 #### 7.5 Audit & assessment
 
 For Zakat, art. 106 permits assessment/correction within 5 years in the ordinary stated cases, 10 years for late/incomplete/unpaid/missing returns, and without a time limit in its para. 3 cases (evasion, approved taxpayer request/consent, or unregistered payer); para. 4 separately covers arithmetic/clerical errors for 10 years. [Zakat Regulations arts. 105 to 107, PDF pp. 59 to 61](https://zatca.gov.sa/en/RulesRegulations/Documents/ZAKAT%20COLLECTION.pdf). **HOLD:** income-tax periods and the following legacy audit-trigger suggestions; they are information to collect, not verified selection rules:
@@ -691,7 +686,6 @@ For Zakat, art. 106 permits assessment/correction within 5 years in the ordinary
 - Industry-specific risk profiling
 
 ## Completion checklist
-
 
 All upstream skills required for the chosen return type have produced output, or the gap is flagged.
 
@@ -767,21 +761,3 @@ The Sources table identifies the texts actually read. **NON-OPERATIVE HISTORICAL
 | Bureau of Experts Income Tax Law, **archived 15 February 2026** after direct TLS and ordinary-browser failure; read in original Arabic arts. 1 to 13 and amendment notes, 21 to 23, 60 to 61, 68 to 71, 76 to 77; later amendments not established | https://web.archive.org/web/20260215020442/https://laws.boe.gov.sa/boelaws/laws/lawdetails/23576008-1ce4-4685-ac3e-a9a700f2cb02/1 | 2026-11-01 |
 
 Not yet confirmed: live Income Tax Law and amendments after the 15 February 2026 archive capture (direct BOE TLS fetch and ordinary browser failed); complete later amendments to the Arabic income-tax regulation compilation; VAT registration thresholds, rate and all transaction-specific zero/exempt conditions; Hijri eligibility or changes for income tax; interest limitation and loss-relief computation; specialised oil/gas rates; indirect/GCC corporate and listed-company allocation; actual mixed-return form and box identifiers; audit thresholds and attachment law; tax-specific portal/login/bill identifiers or status-update timing beyond the published income-tax steps; general extensions/refund periods; non-Zakat/non-WHT retention; GOSI rates, caps, new-entrant rules and payment dates; Nitaqat current bands/headcount thresholds/benefits/consequences; WPS mandate/deadline; RETT rate, exemptions, first-home limit, instrument and filing/payment date; excise product rates/tier amounts and registration test; Phase 1 invoice-type technical/QR/clearance/reporting rules and earlier waves; Investment Law commencement/transition and exceptions outside the read clauses; professional credential recognition and filing authority; transfer-pricing/Master File/Local File/CbCR thresholds; common Tax Procedures Law assertion. These are NON-OPERATIVE HOLDS: do not compute, classify, refuse, backdate, declare overdue, promise a date or finalise the affected line from a held rule. Named-contributor Guides remain outside this review and do not resolve a hold by themselves.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

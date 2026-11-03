@@ -180,20 +180,3 @@ expected:
 | Vergi Usul Kanunu no. 213 (arts. mükerrer 28, 344, 352, table 1) and Law 6183 (art. 51) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.213.pdf | 2026-10-31 |
 
 Not yet confirmed: the official net minimum wage (TRY 28,075.50 here is computed from the gross and the 15% employee premiums, with no income or stamp tax); the text of the SGK circular for 2026 (the floor, ceiling and excluded amounts are confirmed from SGK's 2026 page instead); the day SGK sets for premium payment (art. 88); the GİB communiqué on the cumulative withholding method; the severance pay (kıdem tazminatı) ceiling for 2026 (the old version gave TRY 46,655.43 for 2025 from a non-official site); the 4/1-b premium base rules and minimum base; sector incentives (manufacturing, youth, women, regional and others) and whether any reduce the employer rate further in 2026; the list of social security agreements; employer premiums on directors and partners.
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -65,7 +65,6 @@ expected:
   cash: 747000000
 ```
 
-
 Distribution decision: retain all LBP 830 million or distribute half now. Half produces LBP 41.5 million withholding and LBP 373.5 million shareholder cash, leaving LBP 415 million retained. This compares cash timing only; it does not establish that retaining an amount avoids a tax or deemed-distribution rule for an unknown entity.
 
 ```oa-check
@@ -82,7 +81,6 @@ expected:
   shareholder_cash: 373500000
   retained: 415000000
 ```
-
 
 ## Ask the client first
 
@@ -105,21 +103,3 @@ expected:
 | IDAL Tax System, SAL/SARL, holding/offshore and online declaration sections; undated page read; special-regime amounts not accepted as current | https://www.investinlebanon.gov.lb/en/doing_business/tax_system | 2026-11-01 |
 
 Not yet confirmed: CIT-H1: all deemed-profit coefficients and special base computations. CIT-H2: current filing/payment forms, boxes, dates, extensions and legal suspension. CIT-H3: exact applicable ordinary penalties and settlement availability. CIT-H4: bank-interest, non-resident and treaty withholding; holding/offshore current fixed/graduated taxes, exemptions and payroll carve-outs. CIT-H5: operative Sayrafa computation and implementation. CIT-H6: revaluation and exceptional windows after publication and later legislation. No held rule is a filing input; original values are preserved in the ledger, not current rates.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

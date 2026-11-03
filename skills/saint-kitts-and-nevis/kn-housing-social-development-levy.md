@@ -57,21 +57,3 @@ Maintain separate ledger lines for employee levy, employer levy, social security
 The Board's [18 December 2025 notice](https://socialsecurity.kn/press/treatment-of-bonus-paid-in-december-2/) specifically exempts December 2025 bonuses and extra salary payments from levy deductions. It does not establish December 2026 levy relief. Classify any December 2026 payment against the applicable legislation and a current notice before applying an exemption. Do not import the separate social-security bonus treatment automatically.
 
 This Guide does not settle nonstandard wage components, irregular payroll, statutory exemptions outside the stated cutoff, penalties or a December 2026 special measure. The amended levy legislation and any later instruments need reconciliation before merge. Independent accountant review is pending.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

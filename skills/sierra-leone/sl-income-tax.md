@@ -141,21 +141,3 @@ Obtain employment/status and arrival/departure facts; each cash/benefit/reimburs
 | NRA public forms catalogue and actual link labelled PAYE Return: clicked destination PDF is TCC guidelines, not accepted as payroll-form evidence. | https://nra.gov.sl/forms ; https://webtestcms.nra.gov.sl/uploads/Tax_Clearance_Certificate_Guidelinesv1_8163f3f1c5.pdf | 2026-11-01 |
 
 Not yet confirmed: Complete operative2026 legal/amendment chain and authentic current consolidation; publication chronology of the2020 source copy; current cumulative/monthly/irregular/partial-year PAYE instructions; consolidated-allowance period/allocation and current cap; leave-pay2019/2021/older-exclusion interaction and printed section reference; benefit/vehicle schedules, the2018 s.176(9) all-benefits market-value interaction with older s.23 methods, and pension limits; annual exception/refund/claim priority and overlapping2020 subsection numbering; current monthly/annual form fields, certificate/calendar integration, electronic acknowledgement/payment route; s.150 internal references and penalty/interest/procedural priority; historical expatriate USD remittance rule; sole-trader/property/capital/special regimes. The old general183-days-in-tax-year shortcut is corrected by the owning cross-border Guide; old flat monthly500allowance treatment and universal120-day annual return are not adopted. No actual filing or accountant attestation is proved. Independent income/PAYE review pending; IT-IND/PR remain partial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

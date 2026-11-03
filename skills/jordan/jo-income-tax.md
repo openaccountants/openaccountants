@@ -119,21 +119,3 @@ expected:
 | ISTD, tax return forms list, first page read | https://www.istd.gov.jo/Ar/List/%D8%A7%D9%84%D8%A7%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D8%B6%D8%B1%D9%8A%D8%A8%D9%8A%D8%A9 | 2026-11-01 |
 
 Not yet confirmed: whether any amendment after Law No. 38 of 2018 changes these articles (the ISTD text names none; the Official Gazette was not searched); the tax period definition (calendar year in the old skill); e-services screens and return boxes; the filing exemption regulation; art. 34 assessment-window exceptions. All income-law computations remain non-operative until the amendment check is closed (hold JO-IT-CURRENT).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

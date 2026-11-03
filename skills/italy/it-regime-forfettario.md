@@ -291,21 +291,3 @@ IRPEF bands: TUIR art. 11(1) as amended by L. 199/2025 (https://www.normattiva.i
 | Law190/2014 art.1(58)(e-bis), (59)–(60), reverse-charge purchases and debtor-operation duties | https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-12-23;190~art1!vig=2026-10-29 | 2026-10-29 |
 
 Not yet confirmed: (1) no Agenzia circular or FAQ read states in terms which employment-income year the EUR 35,000 limit tests; the reading above rests on the law text and the Fascicolo 3 instructions; (2) the text of D.Lgs. 117/2026 Capo XXI (Normattiva did not return the article text), so whether the 2027 regime keeps the same figures; (3) the 2027 filing and payment dates under the new consolidated codes; (4) whether the impatriati regime can be combined with the forfettario.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

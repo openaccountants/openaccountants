@@ -31,7 +31,6 @@ Currency: tax is computed in renminbi. Income in foreign currency is converted t
 
 Out of scope: Hong Kong, Macao and Taiwan; individual income tax; VAT and surcharges; banks, insurers, securities firms, oil, gas and mining; cross-region consolidated filing by head offices and branches; special tax treatment of reorganisations; tax audits and disputes; and Pillar Two. See "When to refuse or refer".
 
-
 ### What is new or confirmed for 2026 ([MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [MOF/STA announcement 2025 No. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html); [STA announcement 2025 No. 17](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html); [Hainan Tax Bureau 2025 No. 2](https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html))
 
 | Topic | Position for 2026 | Source |
@@ -44,7 +43,6 @@ Out of scope: Hong Kong, Macao and Taiwan; individual income tax; VAT and surcha
 | Hainan Free Trade Port | 15% for encouraged-industry enterprises with substantive operations. The current extension runs from 2025-01-01 to 2027-12-31 | [Hainan Tax Bureau 2025 No. 2](https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html) |
 | Advertising cap | New announcement from 2026-01-01 to 2027-12-31: 30% cap for cosmetics manufacturing or sales, pharmaceutical manufacturing and beverage manufacturing (excluding alcohol); related enterprises with a cost-sharing agreement may shift deductible amounts between them; tobacco advertising is never deductible | [MOF/STA announcement 2025 No. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html) |
 | Prepayment return | Revised A-type monthly or quarterly prepayment return, used from 2025-10-01 | [STA announcement 2025 No. 17; Shanghai Tax Bureau Q&A](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202507/t477034.html) |
-
 
 ## Rates, bands and thresholds
 
@@ -62,7 +60,6 @@ Out of scope: Hong Kong, Macao and Taiwan; individual income tax; VAT and surcha
 
 Rate formula: tax payable = taxable income × applicable rate − reliefs − credits (Law Art. 22).
 
-
 ## The base
 
 ### The method, step by step
@@ -77,7 +74,6 @@ Rate formula: tax payable = taxable income × applicable rate − reliefs − cr
 8. **Deduct credits and reliefs**, such as foreign tax credits and equipment credits, then compare with the prepayments.
 9. **Withholding on non-residents.** Establish the actual recipient, income category, Chinese source and establishment/effective-connection facts. For income within CIT Law Art. 3(3), apply the relevant base, domestic reduced rate, exemption or substantiated treaty relief. Pay over applicable withholding within seven days. If the nature or source is unresolved, stop the computation and obtain the facts; do not impose 10% merely because a payment crosses the border ([CIT Law Arts. 3,19,27,37–40](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Arts. 7,91](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html); `cn-withholding`).
 10. **File and pay.** Prepay within fifteen days of each quarter end. Settle the year by 31 May 2027 for tax year 2026 (see "Filing and payment").
-
 
 ### Small low-profit enterprises (小型微利企业) ([MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [STA announcement 2023 No. 6](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202303/t466615.html))
 
@@ -100,7 +96,6 @@ Rate formula: tax payable = taxable income × applicable rate − reliefs − cr
 **How it is claimed.** The company claims by completing the prepayment and annual returns. No prior application is needed. This relief applies whether tax is assessed on the books or on a deemed basis (STA announcement 2023 No. 6 Art. 2-3). The R&D super-deduction is different: it is only for companies assessed on actual profit (see "R&D super-deduction").
 
 **At prepayment.** Test the figures cumulatively to the end of the period. If a company qualifies part way through the year, it computes the relief cumulatively and sets any earlier overpayment against later prepayments. If it claimed the relief at prepayment but fails at the annual settlement, it pays the difference (Art. 4-6). Small low-profit enterprises prepay **quarterly**. A monthly filer that qualifies at the April, July or October filing moves to quarterly from the next period and stays quarterly for the rest of the year (Art. 7).
-
 
 ### High and new technology enterprises (HNTE, 高新技术企业) at 15% ([CIT Law Art. 28](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [HNTE Administrative Measures, Guokefahuo 2016 No. 32](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201603/t422248.html); [Shanghai Tax Bureau HNTE Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202505/t476449.html))
 
@@ -126,7 +121,6 @@ An HNTE pays 15% instead of 25%. The status comes from a certificate that the pr
 
 **HNTE and the small low-profit relief.** Both reduce the rate on the same income, so apply whichever gives the lower tax. For a company that meets the small low-profit tests, the effective 5% beats 15%.
 
-
 ### Regional 15% rates ([MOF/STA/NDRC 2020 No. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202005/t453507.html); [Hainan Tax Bureau 2025 No. 2](https://hainan.chinatax.gov.cn/xxgk_6_1/14160619.html); [Caishui 2020 No. 31](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202009/t455145.html))
 
 **Western region (西部大开发).** From 1 January 2021 to 31 December 2030, an encouraged-industry enterprise located in the western region pays 15%. An encouraged-industry enterprise is one whose main business is a project in the *Catalogue of Encouraged Industries in the Western Region*, and whose main-business revenue is **60% or more** of total revenue. The western region is Inner Mongolia, Guangxi, Chongqing, Sichuan, Guizhou, Yunnan, Tibet, Shaanxi, Gansu, Qinghai, Ningxia, Xinjiang and the Xinjiang Production and Construction Corps. Xiangxi (Hunan), Enshi (Hubei), Yanbian (Jilin) and Ganzhou (Jiangxi) apply the same policy. When the catalogue is revised, the new version applies from its effective date.
@@ -140,7 +134,6 @@ If the head office is in Hainan, only the income of the Hainan head office and H
 **Other zones.** Hengqin (Guangdong-Macao), Qianhai (Shenzhen-Hong Kong) and the Lingang New Area (Shanghai) have their own 15% regimes, each with its own catalogue and end date. This skill does not apply them: refer.
 
 **Conservative default.** Until location, substantive operations and the 60% revenue test are documented, use 25%.
-
 
 ### R&D super-deduction (研发费用加计扣除) ([MOF/STA announcement 2023 No. 7](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html); [MOF/STA announcement 2023 No. 44](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468737.html); [Caishui 2015 No. 119](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201511/t419949.html); [Caishui 2018 No. 64](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440577.html); [Shanghai Tax Bureau R&D Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202111/t461170.html))
 
@@ -165,13 +158,11 @@ If the head office is in Hainan, only the income of the Hainan head office and H
 
 **Conservative default.** If costs are not tracked by project, the industry is on the negative list, or tax is assessed on a deemed basis, do not claim.
 
-
 ### Losses carried forward ([CIT Law Art. 18](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Caishui 2018 No. 76](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201807/t440878.html))
 
 - **General rule.** A tax loss can be carried forward and set against later profits for up to 5 years. The Law says the carry-forward period "may not exceed five years" (Art. 18). A loss is taxable income below zero, computed under the Law (Regulations Art. 10). There is no carry-back.
 - **HNTEs and technology-based SMEs.** From 2018, a company that holds HNTE or technology-based SME status **in a given year** may carry forward unused losses from the 5 years before that year for up to 10 years instead of 5. A technology-based SME must hold a registration number under the technology-based SME evaluation rules (Caishui 2018 No. 76).
 - Use losses oldest first, and keep a schedule of each year's loss and use.
-
 
 ### Capped deductions and other income rules ([Implementation Regulations Art. 43-44](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html); [MOF/STA announcement 2025 No. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202601/t478898.html); [Caishui 2018 No. 15](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201803/t436949.html); [Caishui 2018 No. 51](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/201805/t439366.html); [MOF/STA announcement 2023 No. 37](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202309/t468599.html))
 
@@ -191,14 +182,12 @@ If the head office is in Hainan, only the income of the Hainan head office and H
 | Fines, penalties and late-payment surcharges | Not deductible | [Law Art. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html) |
 | Supporting documents | If an invoice is missing, it must be obtained before the end of the annual settlement period. An expense of an earlier year that was never deducted can be carried back to the year it arose, for up to five years back, once proper documents are obtained | [Shanghai Tax Bureau Q&A, April 2026](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t480124.html) |
 
-
 ### Anti-avoidance in brief ([CIT Law Ch. 6](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [Implementation Regulations Art. 118](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))
 
 - **Transfer pricing.** Related-party transactions must be at arm's length, or the tax bureau may adjust them (Art. 41). An annual related-party transaction report is filed with the annual return (Art. 43). Contemporaneous documentation duties depend on transaction thresholds: refer.
 - **Controlled foreign companies.** Profits that a company controlled by resident enterprises (or by them together with Chinese residents) keeps in a country whose effective tax is clearly below the 25% rate, without a genuine business reason, can be taxed on the resident. "Clearly below" means below 50% of the 25% rate (Law Art. 45; Regulations Art. 118).
 - **Thin capitalisation.** Interest on related-party debt above the prescribed debt-to-equity ratio is not deductible (Art. 46).
 - **General anti-avoidance.** Arrangements without a reasonable commercial purpose can be adjusted (Art. 47). An adjustment carries interest (Art. 48).
-
 
 ### Boundary and exception table
 
@@ -220,7 +209,6 @@ If the head office is in Hainan, only the income of the Hainan head office and H
 | Dividend from a partnership or foreign company | Not exempt resident-to-resident dividend income | Shanghai Tax Bureau Q&A |
 | Royalty paid to a non-resident with no treaty claim | Withhold 10% on the gross amount | [Implementation Regulations Art. 91](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html) |
 
-
 ### When to refuse or refer
 
 Refer to a Chinese certified tax agent or CPA, and do not finalise, when:
@@ -234,7 +222,6 @@ Refer to a Chinese certified tax agent or CPA, and do not finalise, when:
 - **Pillar Two / global minimum tax.** No MOF or STA rule implementing the income inclusion rule, the undertaxed profits rule or a domestic minimum top-up tax could be found on the official hosts at retrieval. If a multinational group within the OECD rules asks, say so and refer. Check the STA policy library for any later announcement;
 - the company cannot show its financial statements, prior-year return or loss schedule;
 - eligibility for a preference cannot be documented. In that case compute at 25% and flag the preference as pending.
-
 
 ### Completion checklist ([CIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html); [MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [MOF/STA announcement 2023 No. 7](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/202304/t466643.html); [Implementation Regulations](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286574.html))
 
@@ -250,7 +237,6 @@ Refer to a Chinese certified tax agent or CPA, and do not finalise, when:
 - [ ] Prepayments reconciled: fifteen-day deadlines met; small low-profit enterprises on quarterly filing.
 - [ ] Annual settlement for 2026 diarised for 31 May 2027. Any 2025 corrections filed.
 - [ ] Referral items (Pillar Two, reorganisations, transfer pricing, special zones, audits) flagged and not finalised.
-
 
 ## Deadlines and filing
 
@@ -270,14 +256,12 @@ Refer to a Chinese certified tax agent or CPA, and do not finalise, when:
 - An overpayment identified at annual settlement is refunded. Under STA announcement 2021 No. 34 Art. 2, it is not carried over to offset next year's CIT; this is separate from the in-year prepayment adjustment described above.
 - A company that stops business during the year settles within 60 days of stopping (Law Art. 55; Shanghai settlement Q&A).
 
-
 ### Returns for tax year 2025 being filed or corrected now ([Shanghai Tax Bureau 2025 settlement Q&A](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202604/t479958.html); [CIT Law Art. 54](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/qysds/200801/t286573.html))
 
 The annual settlement for tax year 2025 was due by 31 May 2026. Every resident enterprise that operated in 2025 had to settle, including those that made a loss or were in a tax holiday. On 25 September 2026 that deadline has passed, so any 2025 work is either a correction of a filed return or a late filing:
 - a missing 2025 settlement is late, so file at once and expect the daily surcharge and a possible penalty;
 - if a 2025 return is wrong, file a correction. Underpaid tax carries the daily surcharge;
 - the 2025 rules are the same as those in this skill for the small low-profit relief, the R&D super-deduction, the western and Hainan 15% rates, HNTE and losses. The advertising rule is different: for 2025 the earlier announcement (MOF/STA announcement 2020 No. 43) applied, and MOF/STA announcement 2025 No. 16 replaced it only from 1 January 2026.
-
 
 ## Penalties and interest
 
@@ -286,7 +270,6 @@ The annual settlement for tax year 2025 was due by 31 May 2026. Every resident e
 - Late filing: the bureau orders correction and may fine up to two thousand yuan. In serious cases the fine is two thousand to ten thousand yuan.
 - Tax evasion (false returns, hidden income and the like): the tax and surcharge are recovered, plus a fine of half to five times the unpaid tax. Criminal liability applies where the conduct is a crime.
 - Records: keep books, vouchers, returns and other tax records for ten years unless a law says otherwise ([Detailed Rules for the Tax Collection Administration Law, Art. 29](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200402/t284445.html)).
-
 
 ## Cross-border points
 
@@ -298,7 +281,6 @@ The annual settlement for tax year 2025 was due by 31 May 2026. Every resident e
 - **Exempt.** Interest on loans from foreign governments to the Chinese government, interest on concessional loans from international financial organisations to the Chinese government and resident enterprises, and other income the State Council approves (Regulations Art. 91).
 - **Mechanics.** For applicable non-resident EIT withholding, the payer withholds on actual payment or when the payment obligation arises, except dividends/distributions: the withholding obligation arises on actual payment under [STA 2017 No. 37 §7](https://www.chinatax.gov.cn/chinatax/n810341/n810765/n2511651/201710/c3289550/content.html). Pay over and report within seven days. If the payer does not withhold, the non-resident follows its statutory payment duty (Law Arts. 37,39–40).
 - **Unresolved payment.** Obtain the contract, transaction/source facts and recipient establishment information before computing. Refer the unresolved classification; no automatic 10% applies merely because its nature is unclear (Law Arts. 3,19,37; Regulations Art. 7).
-
 
 ## Two worked examples that recompute
 
@@ -317,7 +299,6 @@ All amounts are in yuan and relate to tax year 2026.
 **Case 5: royalty to a non-resident.** A Shanghai company pays a royalty of 1,000,000 to a foreign company that has no establishment in China and makes no treaty claim. Withholding = 1,000,000 × 10% = 100,000. The company pays it to the treasury within seven days of withholding and files the withholding report.
 
 **Case 6: losses.** An ordinary company (never an HNTE or technology-based SME) has 2026 profit of 1,000,000 before losses. It has an unused 2020 loss of 300,000 and an unused 2022 loss of 400,000. The 2020 loss expired after 2025. The 2022 loss is used: taxable income = 1,000,000 − 400,000 = 600,000. If it meets the small low-profit tests, tax = 600,000 × 25% × 20% = 30,000.
-
 
 ### Executable checks for the preserved worked cases
 
@@ -373,7 +354,6 @@ expected:
 - **Prepayments.** Is it on monthly or quarterly prepayment, how much has been prepaid for 2026, and which method does it use (actual profit or another approved method)?
 - **Open matters.** Is there any audit, notice from the tax bureau, reorganisation, group consolidation or Pillar Two exposure? If yes, see "When to refuse or refer".
 
-
 ## Sources
 
 | Source | Official URL | Read on |
@@ -414,21 +394,3 @@ expected:
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
 
 **Scope limits:** apply the preserved refusal, exception and historical-period conditions. Confirm taxpayer-specific eligibility and the current local procedure before using an election or treaty claim. Future form-screen coordinates are not established here.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -317,21 +317,3 @@ Before finalising any Italy crypto tax computation:
 **Not yet confirmed:** transfers between own wallets, wrapping/unwrapping, hard-fork receipt/disposal, private/business mining income classification, DeFi lending, liquidity provision/LP tokens, airdrops and yield farming (their former proposed timing/treatments are not applied); NFT smart-contract royalties and current creator/VAT computations; exact application of the increased tax-haven value-tax rate to crypto; carry-back and computation of the separate pre-2023 transitional financial-loss bucket; crypto-specific application of general abuse-of-law, CFC, transfer-pricing, private-holder exit and wash-sale rules; Italian DAC8/CARF implementing provisions/operational dates; successor 2027 form fields, penalty provisions, interest and income-code cross-references. Prior undeclared holdings and the closed 2022 regularisation need specialist correction advice. These are explicit referrals, not default tax assumptions.
 
 > Contributed by OpenAccountants.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

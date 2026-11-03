@@ -12,8 +12,6 @@ tier: 2
 
 # Serbia: corporate income tax (porez na dobit pravnih lica), tax year 2026
 
-Source-cited draft: not reviewed by an accountant, not for filing.
-
 The statute is the Zakon o porezu na dobit pravnih lica (ZPDPL), Službeni glasnik RS 25/2001 with amendments up to 80/2026. The Ministry of Finance publishes the Official Gazette's unofficial consolidated text. Article numbers below refer to it.
 
 **Read this first: the 2026 amendment.** Law 80/2026 entered into force on 8 September 2026. Most of it applies only from the day Serbia joins the EU. A few articles apply from 1 January 2027 and others from 1 January 2028 (Article 23 of the amending law). None of it changes the rates, rules or deadlines for tax year 2026. The articles that apply from 1 January 2027 repeal the 1% withholding on secondary raw materials and waste (amending law Art. 5), the concession-related exemptions in ZPDPL Articles 25a(3) and 30a (Arts. 2 and 3) and the Article 50j start-up credit (Art. 16). The law does not say in so many words whether the repeal of Articles 25a(3) and 30a also reaches a 2026 tax balance filed in 2027; check if a concession transfer arises. This skill uses the text in force before 80/2026 (the version with amendments up to 94/2024) for 2026. It notes where the newer text differs.
@@ -291,21 +289,3 @@ expected:
 | Pravno-informacioni sistem RS: ELI record of the ZPDPL. The ELI resolves, but the text sits behind a login and could not be read, so no figure here relies on it. | https://www.pravno-informacioni-sistem.rs/SlGlasnikPortal/eli/rep/sgrs/skupstina/zakon/2001/25/1/reg | 2026-10-22 |
 
 Not yet confirmed: whether the draft Law on Global Minimum Tax on Profit (consultation June 2026) has been adopted, and from when it applies; whether the 1 January 2027 repeal of ZPDPL Articles 25a(3) and 30a applies to the 2026 tax balance; the exact form codes of the return and tax balance under the 21/25 rulebook (the Tax Administration labels the return "PDP"); the asset-to-group classification in the depreciation rulebook.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

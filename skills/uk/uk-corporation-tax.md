@@ -260,21 +260,3 @@ expected:
 | HMRC manuals MTT01100 and MTT01010 (Pillar Two) | https://www.gov.uk/hmrc-internal-manuals/multinational-top-up-tax-and-domestic-top-up-tax/mtt01100 | 2026-10-22 |
 
 Not yet confirmed: whether a tax treaty's non-discrimination article lets a UK permanent establishment of a non-resident company use the small profits rate or marginal relief despite CTA 2010 ss18A and 18B.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

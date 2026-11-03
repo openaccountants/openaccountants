@@ -332,21 +332,3 @@ Cross-references in this skill package:
 ## Verification status
 
 *Verification status: pending. To be reviewed by a Quebec-licensed CPA / payroll specialist before production use. All 2025 rates above should be cross-checked against the current Revenu Québec, Retraite Québec, CNESST, and CPMT publications at the time of engagement.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

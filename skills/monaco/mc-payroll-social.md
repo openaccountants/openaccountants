@@ -198,21 +198,3 @@ expected:
 The earlier official PDFs were read and visually checked from dated archive captures because their live download IDs now return 2026 documents. They are not claimed as fresh live 2025 downloads. Original source URLs, capture dates, hashes, corroborating instruments and exceptions are recorded in the country research receipts. The January to September 2026 (social year 2025-26) CCSS, CAR and CMRC caps, the 0.88% CAR variable employer rate and the 2025-26 CAMTI and CARTI quarterly amounts are confirmed from the official October 2025 CSM circulars themselves (headed "au 1er octobre 2025"; the social year runs to 30 September), re-read 27 October 2026 from the dated archive captures; no live official page now states them. **Not yet confirmed:** special occupational flat bases, derogatory CMRC contracts and sector-specific employment costs. These require their own schedule; do not apply the ordinary examples to those cases without classification.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

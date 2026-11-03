@@ -111,21 +111,3 @@ expected:
 | Tax Authority, Tax Rates page (whole page read) | https://tms.taxoman.gov.om/portal/tax-rate | 2026-11-01 |
 
 Not yet confirmed: the implementing decision behind the FAQ thresholds of OMR 60,000 / OMR 150,000 / 25 workers (the consolidated statute art. 159bis starts at OMR 50,000 / OMR 100,000 / 15 and art. 159bis 5 permits specified excesses). These eligibility figures are NONOPERATIVE until that decision and its conditions are recovered; do not qualify a client using the FAQ alone. Also open: the predecessor’s worldwide-income assertion and historic provisional-return obligation are retained as NONOPERATIVE topics until their current decisive provisions are checked; the original SME-development registration assertion is not supported by the opened law/FAQ and is held. the current status of withholding on dividends and interest (the law lists dividends, the portal rate page lists interest, FAQ 12 lists neither, and the suspension decisions were not opened); the provisional return in the old skill (no provision found in the consolidated text); the article setting the four-month deadline (art. 134 could not be located in the English PDF, the FAQ states it); the currency of the small enterprise thresholds, which the FAQ gives without saying rials; whether RD 56/2025 art. 3 changes withholding before 2028; amendments to the Income Tax Law after RD 118/2020; statutory audit of tax accounts.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

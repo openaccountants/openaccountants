@@ -106,21 +106,3 @@ expected:
 | Read for the figures cited: SRC Agreements page, treaty lists | https://src.gov.sc/agreements/ | 2026-11-01 |
 
 Not yet confirmed: worldwide taxation of residents (old pack claim; the Income and Non-Monetary Benefits Tax Act itself and any residence definition were not read closely enough to state it); whether Seychelles Pension Fund contributions reduce the taxable figure; the current Employment Act s 46C(8)(c) amount; the conditions and caps on each exempt emolument.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

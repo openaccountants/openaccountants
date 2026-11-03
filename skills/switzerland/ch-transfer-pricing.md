@@ -230,21 +230,3 @@ The edge cases: the canton, not Beta, must first show the mismatch, and in BVGer
 | Bundesverwaltungsgericht A-3092/2023, 21 March 2025 (gross-up "ins Hundert"), copy on entscheidsuche.ch | https://entscheidsuche.ch/docs/CH_BVGer/CH_BVGE_001_A-3092-2023_2025-03-21.pdf | 2026-10-23 |
 
 Not yet confirmed: the Zurich cantonal and communal profit tax rate for 2026 (no single official 2026 figure found, so the examples stop at federal tax); whether the "from CHF 1 million" safe-harbour rate for operating loans applies to the whole loan or only to the part above CHF 1 million (circular 2-218 does not say: footnote 1 only sets the 0.5% or 0.25% surcharge and footnote 2 points to hidden equity under Kreisschreiben 6a); the treaty time limits for a MAP request (they differ by treaty); the conditions of the cross-border notification procedure for hidden distributions to foreign group companies (VStG art. 20 para. 2 allows it, the implementing rules were not read); whether each treaty treats a hidden distribution as a dividend for the refund; the official Federal Administrative Court copies of A-2782/2022 and A-3092/2023 (read on the entscheidsuche.ch archive; A-2782/2022 is confirmed by BGer 9C_317/2024 on bger.ch); the circular 2-219 refers to the CHF circular as both 28 and 29 January 2026 (the CHF circular itself is dated 29 January 2026).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

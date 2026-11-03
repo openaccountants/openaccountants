@@ -190,21 +190,3 @@ Do not present output as a filed declaration or a professional sign-off.
 Not yet confirmed: the number, Gazette date and article text of the 2026 amending law (press reports call it Law 3 of 2026; no official copy was found on eta.gov.eg or rta.gov.eg, and the RTA laws page refused the connection), so every 2026 figure above rests on RTA and MoF pages, not the law text. Whether residential units other than the one private residence get any deduction beyond the 30%, and whether the old aggregate EGP 2,000,000 market value test survives (the old version said it rose to EGP 8,000,000 in aggregate; the RTA gives about EGP 8 million per unit). Law 117 of 2014 and Law 23 of 2020 amending Law 196 (not on the ETA site), including the origin of the EGP 1,200 non-residential deduction. Which five-year assessment cycle is current (the old version mentioned none; a 2022 cycle is reported but not confirmed). Whether Law 91 arts. 39, 45 and 46 still read as Law 196 issuing art. 3 replaced them (later income tax amendments were not checked for these articles). Whether Law 91 art. 23 item 3 was amended after 2005 (later amending laws not checked for it); the old version's statement that the annual tax is not deductible for corporate income tax under art. 23, and its "common audit finding", are contrary to the 2005 text and were not carried. The old version's other items, not found in Law 196 or its 2012 amendment: a five-year exemption for new buildings (it cited art. 11, which lists state, worship and expropriated property), relief for units empty six months, heritage building relief, a flat "no tax on buildings under construction" (art. 8 does tax an incomplete building once it is occupied), payment at designated banks and post offices, the proof the old version said must go with an exemption claim (title deed, rental contract, valuation report), a different corporate tax treatment for real estate held for resale, the RTA nickname "Maamouria" and 44 offices, the transfer tax being RTA's under Law 196 art. 40 (it is ETA's, under Law 91 art. 42), and a "wealth tax on rental income at 10% to 27.5% under Law 91 art. 47" (rent is income tax on actual rent less 50%, at the progressive rates in `eg-income-tax`). Whether the 2.5% disposal tax is deductible or capitalised for income tax (the old version called it a capital cost, not deductible). The text of Law 91 art. 42 before Law 151/2026 (1 Jan to 28 Jul 2026), so the disposal tax rules before 29 Jul 2026 were not checked. The agricultural land tax under Law 113/1939 (not read). The executive regulations of Law 196 and the form numbers of the declaration.
 
 > Contributed by Ahmed Hassan.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

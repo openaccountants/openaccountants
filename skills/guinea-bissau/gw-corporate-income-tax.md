@@ -130,21 +130,3 @@ expected:
 | OGE 2026, Lei do Orçamento, arts 6 to 17 (draft-form text, law number blank; the tax chapter only was read) | https://www.mef.gw/publicacoes/orcamento-geral-do-estado/2026-oge2026/viewdocument/195 | 2026-11-01 |
 
 Not yet confirmed: whether the 2026 budget text is in force; the current text of art. 48 (the portal shows the old 25% wording struck, so the 15% and 25% split rests on the DECIRF instructions); interest rate on late payment; tax treaties; instalment dates for the small group B; investment incentive amounts under Lei 13/2011. The old 10% to 15% dividend and interest ranges are replaced by art. 22; the old 3 to 5 year loss range by three years; the old 31 March return by April.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

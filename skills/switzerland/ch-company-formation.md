@@ -49,21 +49,3 @@ For the whole system on one page, see [ch-tax-overview](ch-tax-overview.md).
 | Canton of Zurich, Notariatsgebührenverordnung (NotGebV), LS 243, current version 123 (published 1 January 2024), § 2 and Annex item 4.4.3.1 | https://www.zh.ch/de/politik-staat/gesetze-beschluesse/gesetzessammlung/zhlex-ls/erlass-243-2009_03_09-2009_07_01-123.html | 2026-10-30 |
 
 Not yet confirmed: notary fees for the public deed in cantons other than Zurich (each canton sets its own; only the Zurich ordinance was read); a typical end-to-end timeline (the old version said about 5 to 10 business days after the documents are filed; the federal acts set no processing deadline for the register office); the total cost of formation including notary and bank fees (the old version said roughly CHF 1,500 to 3,000; only the register fees above come from the law).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

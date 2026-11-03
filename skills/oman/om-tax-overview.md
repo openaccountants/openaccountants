@@ -109,21 +109,3 @@ expected:
 | Tax Authority, news list (read for Austria and Angola announcement entries only; treaty instruments not read) | https://tms.taxoman.gov.om/portal/news | 2026-11-01 |
 
 Not yet confirmed: VAT commencement date of 16 April 2021 remains a NONOPERATIVE historical topic until the decisive commencement clause is recovered; the income-tax year is 1 January to 31 December (Income Tax Law art. 1(20)); company accounting periods generally last 12 months, first periods up to 18 months, and year-end changes need Chairman consent (Income Tax Law arts 48 to 51). whether resident companies are taxed on worldwide income (the old skill said so, the articles were not found); the amended text of the Top-up Tax Law; the date of any further Rafid or e-invoicing phase; the rate of the Top-up Tax Law provisions as amended on 29 October 2026; whether the portal rate page, dated 29 October 2025, is complete for 2026.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -154,7 +154,6 @@ Assume confirmed code 24, three relevant worked days and £105 pay, with ITO/tab
 
 These checks validate arithmetic after a table lookup; they do not independently validate every table cell, settle the published discrepancy, or implement a complete PAYE engine. Retain the exact table page, row, code and any ITO direction with the payroll working paper.
 
-
 ## The base
 
 ### PAYE deduction and certificate rules
@@ -192,7 +191,6 @@ Regulation 17A permits an employer with **no more than ten employees at any time
 The claim requires all SI and PAYE amounts to have been paid on the due date under 17A(2); 17A(6) identifies the due date as on or before the 15th of the following month. Do not treat arrears cleared at year-end as automatically satisfying timely payment. If employer contributions for an employee total less than £100, that employee's credit is restricted to the actual total. Once granted, the credit offsets employer contribution liabilities in the following year. It is not a current employee deduction or an automatic income-tax refund. [Regulation 17A(2)–(6)](https://www.gibraltarlaws.gov.gi/uploads/legislations/social-security/1955.08.04-5/1955.08.04-5(01-07-15).pdf).
 
 **Example:** an eligible employer never exceeds eight employees. Seven employees each generated at least £100 of employer contributions; the eighth generated £60. Subject to timely-payment and claim conditions, the credit is **7 × £100 + £60 = £760**, below the £1,000 cap, for offset in the following year once granted. A continuing business that reached eleven employees fails the stated headcount condition even if it ended the year with eight. A first-year business with fifteen qualifying employees, each with at least £100 employer contributions, has a provisional **£1,500** credit under the enlarged limit. These examples assume confirmed employee counts; staff turnover/counting details and the current claim form/channel remain unverified.
-
 
 ### Classify and value ordinary employment benefits
 

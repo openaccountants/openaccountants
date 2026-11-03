@@ -199,21 +199,3 @@ Bookkeeping feeds the returns. All businesses must file (Art. 155) and pay (Art.
 Not yet confirmed: accounting law 9-88 and the Code de Commerce (official text could not be opened), so the old skill's rules that RNS must keep full CGNC accounts, the three commercial books, the plan comptable and the annual inventory under that law are out of the steps; the RNS reduced statements; an AE register of receipts and a CPU register of receipts and purchases and any official model (the CGI has neither, and Art. 145 bis is repealed; Loi 114-13 and regulations not read); ICE length and 9+4+2 structure; any annual cap on the ICE fine (Art. 198 ter states none); whether a missing ICE alone costs the buyer the income tax deduction of the charge (the VAT loss is in Step 3); whether the registre de commerce number goes on invoices (Art. 145-III does not name it); whether AE and CPU individuals must issue invoices and keep copies (Art. 145 does not bind them); bank statements and contracts in the retention scope (Art. 211 names neither); the wording "TVA non applicable" for AE and CPU invoices; the e-invoicing clearance model, UBL 2.1 and CII formats, phasing from large firms to SMEs and B2C, the free tool at fatourati.gov.ma, e-archiving rules, and whether the implementing decree is published (press only: under review in April 2026, no decree found on 1 November 2026); what Finance Law 50-25 changed in Art. 145-I and X; the regulatory criteria for electronic accounting; SIMPL-IR, SIMPL-TVA, SIMPL-IS portal steps, adhesion and data import; the AE filing channel; the body named under Art. 82 bis.
 
 Removed and why: Secondary commentary list (not a permitted citation). Contributor, quality tier and last research rows (metadata). Conservative default that a near ceiling counts as breached (Art. 41 tests two actual years). Everything else is carried above or on the Not yet confirmed line.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

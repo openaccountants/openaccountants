@@ -95,21 +95,3 @@ expected:
 | Decision 36/1997 and Instructions 7/1997 plus amendment 4/2005: all three PDF pages visually read; defective text layer was not used as quotation authority | https://tax.mof.gov.iq/uploads/pdf/Law/%D9%82%D8%B1%D8%A7%D8%B1%2036%20%D9%84%D8%B3%D9%86%D8%A9%201997.pdf | 2026-11-01 |
 
 Not yet confirmed: **IQ-CURRENT / IQ-SALES-CURRENT** full later-amendment chain and continued 2026 force of the hotel, tobacco/alcohol, car and ticket instruments; **IQ-SALES-TELECOM** later mobile/internet cancellation/reintroduction and current charge, including the unsupported legacy percentage; **IQ-VAT-ABSENCE** no evidence sufficient to assert a general absence of VAT/GST, registration, reverse charge, invoicing, staged collection or input credits in 2026; **IQ-SALES-WORKFLOW** current registrations, forms, channels, confirmations, payment references, penalties and interest; **IQ-CUSTOMS** current duties, valuation and Cabinet Decision 957. Old “no VAT / no credit / no registration” answers are superseded research holds, never operative instructions.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -150,21 +150,3 @@ expected:
 The current Skatte-ABC contains stale year labels in some rate paragraphs and numbering inconsistencies. The enacted 2026 decision and consolidated statute control all figures here.
 
 Not yet confirmed: Svalbard territorial adaptation and computation/payment of cross-border unrealised-asset gains and company emigration. Ordinary disposal/liquidation and final-loss rules are covered. No unverified exit exemption or exit amount is supplied.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

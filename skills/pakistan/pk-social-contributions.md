@@ -32,7 +32,6 @@ tier: 2
 |---|---|
 | Currency | PKR |
 | Authorities | EOBI (federal); provincial ESSIs |
-| Quality tier | Research-verified — pending sign-off by a Pakistani tax practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — Key points (Tier 1)

@@ -76,7 +76,6 @@ These sections come from the earlier version. Where a figure conflicts with the 
 | Filing portal | TaRMS Self-Service Portal (https://mytaxselfservice.zimra.co.zw) |
 | Monthly PAYE return | Form **P2** |
 | PAYE remittance deadline | Return by the **5th**, payment by the **10th of the following month** (ZIMRA, PAYE Explained) |
-| Validated by | Pending  -  requires sign-off by a registered Zimbabwean tax accountant / ZIMRA tax agent |
 | Skill version | 1.0 |
 
 - **Effective top marginal income tax rate**  -  40% × 1.03 (AIDS Levy) = 41.2%
@@ -490,8 +489,6 @@ Each test recomputed end-to-end. Use these to validate any implementation.
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a registered Zimbabwean tax accountant or ZIMRA-registered tax agent) before implementation. This is a Tier 2 skill that has not yet received professional verification (`verified_by: pending`).
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 ## Deadlines and filing
 
 | Obligation | Return | Payment |
@@ -568,21 +565,3 @@ expected:
 | NSSA Contributions page, whole page, in a browser | https://www.nssa.org.zw/contributions/ | 2026-11-01 |
 
 Not yet confirmed: any 2026 PAYE table; current quarter NSSA ceiling and its ZWG equivalent; full IC rates; ZIMDEF rate and deadline; SI 186 of 2024 and NEC wages, including the 65% USD split; late PAYE penalty; order of NSSA and PAYE.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

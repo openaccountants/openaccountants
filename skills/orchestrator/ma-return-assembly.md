@@ -120,5 +120,3 @@ All SIMPL filings are electronic; payment is electronic (télépaiement) at fili
 ## Disclaimer
 
 This skill performs **orchestration and assembly only** — it computes no tax figure. All amounts originate from the Morocco content skills (`ma-freelance-intake`, `ma-auto-entrepreneur`, `ma-cpu`, `morocco-professional-income-tax`, `ma-social-contributions`, `morocco-vat`) and **must be reviewed and signed off by a qualified Moroccan expert-comptable** before anything is filed with the DGI, CNSS, or the auto-entrepreneur platform. Deadlines, forms, thresholds, and regime rules change; verify every flagged item against the DGI (simpl.tax.gov.ma) at filing time. Nothing here is tax, legal, or financial advice.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://www.openaccountants.com).

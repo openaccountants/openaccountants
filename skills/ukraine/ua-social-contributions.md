@@ -176,21 +176,3 @@ expected:
 | State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
 
 Not yet confirmed: how a proprietor who registers or deregisters mid-month counts that month; how a general-system proprietor spreads annual net income across months for the minimum and the cap (the Ministry of Finance instruction was not read); whether a payment date on a weekend moves (none of the 2026 quarterly dates falls on one); the proportional floor for employees hired or leaving mid-month; the amount of the tax-free minimum income of citizens for the records fine; how insurance length of service (страховий стаж) is counted (pension insurance law not read); the Cabinet of Ministers list of payments free of ЄСВ; social security agreements with other countries; any amendment after the 18 October 2026 archive capture.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

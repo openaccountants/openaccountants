@@ -112,21 +112,3 @@ expected:
 | Income Tax Law No. 34 of 2014 as amended, ISTD consolidated text: inherited original-author reading of arts. 2, 3, 4 (part), 9 to 12, 17 to 19, 36; closeout reread cached clause output; normal refetch blocked | https://www.istd.gov.jo/EBV4.0/Root_Storage/AR/EB_Tenders/%D9%82%D8%A7%D9%86%D9%88%D9%86_%D8%B6%D8%B1%D9%8A%D8%A8%D8%A9_%D8%A7%D9%84%D8%AF%D8%AE%D9%84_34_%D9%84%D8%B3%D9%86%D8%A9_2014_%D9%88%D8%AA%D8%B9%D8%AF%D9%8A%D9%84%D8%A7%D8%AA%D9%87.docx | 2026-11-01 |
 
 Not yet confirmed: minimum wage (the old JOD 260 is out of date; press reports say JOD 290 from 2025 to end 2027 with garments excluded, no official text read); any SSC law amendment after 16 Apr 2023; PAYE instructions; the old "joined on or after 1 May 2010" wording on the ceiling; Regulation 45 art. 3 rates, 25-worker small and 26-50-worker medium definitions, nationality/under-30/no-previous-coverage and owner/partner exclusions and transition conditions (JO-SSC-REDUCTION); original Arabic reading and Gazette commencement of any 2026 amendment (JO-SSC-CURRENT). Do not implement the contribution or penalty extracts until JO-SSC-CURRENT is closed. The Petra ceiling announcement alone does not verify the rest of the law.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

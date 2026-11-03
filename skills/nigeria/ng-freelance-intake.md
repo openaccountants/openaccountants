@@ -60,8 +60,6 @@ Non-residents go to [ng-non-resident-cross-border](ng-non-resident-cross-border.
 
 The questions and handoff follow, corrected to the NTA where they differed.
 
-
-
 #### What this file is
 
 The intake orchestrator for Nigerian-resident self-employed individuals, sole proprietors (Business Name / BN registered with the Corporate Affairs Commission), and private limited company (RC) founders. Every downstream Nigerian content skill depends on this skill producing a structured intake package first.
@@ -535,8 +533,6 @@ Primary statutes and regulations cited (reviewer to verify the exact version in 
 
 v1.0 (May 2026): Initial intake skill for the Nigerian freelance / SME workflow. Routes to ng-personal-income-tax, ng-cit, ng-paye, ng-statutory-deductions, ng-payroll, ng-wht, ng-cgt, ng-vat, ng-formation, ng-return-assembly. Covers both the pre-NTA stack (CITA / PITA / FA 2019-2023) for periods ending on or before 31 December 2025 and the Nigeria Tax Act 2025 stack from 1 January 2026, with the shift from N25m / N100m bands to the single small company test (N100m turnover, N250m fixed assets).
 
-
-
 ## Two worked examples that recompute
 
 Simple: RC with turnover NGN 420,000,000, fixed assets NGN 80,000,000, assessable profit NGN 60,000,000: not small.
@@ -576,7 +572,6 @@ expected:
 5. Employees?
 6. Non-resident customers or suppliers?
 
-
 ## Sources
 
 | Source | URL | Read on |
@@ -593,28 +588,8 @@ Not yet confirmed: whether the "£" in NTA s.57(2)(a) is meant as euro (the gaze
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. OpenAccountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified Nigerian professional: a CITN-registered tax practitioner, an ICAN or ANAN Chartered Accountant, or a legal practitioner where applicable, and an external auditor where CAMA 2020 s.402 requires audited financial statements: before filing with FIRS via Tax Pro-Max or with the relevant State Internal Revenue Service, or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
-
 ---
 
 *OpenAccountants: open-source accounting skills for AI*
 *This output must be reviewed by a qualified professional before filing or acting upon.*
 *Latest verified skills: openaccountants.com | Report errors: github.com/openaccountants/openaccountants*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

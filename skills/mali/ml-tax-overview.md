@@ -127,21 +127,3 @@ expected:
 | [Loi 2025-056 art. 46](https://sgg-mali.ml/JO/2025/mali-jo-2025-33-5.pdf#page=11) | Fiscal Annex U reference and neighbouring clauses; annex contents absent/unread | 2026-11-01 |
 
 Not yet confirmed: enacted 2026 Annex U and complete later operative chains; final ITS relief and actual additional corporate minimum; current contribution law, wage floors, forms/boxes and authenticated filing; complete individual property, investment, business and capital-gain jobs; full TP and cross-border/treaty coverage. Existing figure homes retain their own holds. All seven core domains remain partial. No country-completion or accountant attestation is claimed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

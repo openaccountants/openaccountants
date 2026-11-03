@@ -109,21 +109,3 @@ expected:
 Scans were read by OCR and the key rate pages checked by eye. The Library of Congress item pages show a security check, which we did not pass; the PDFs came straight from its public file host. Scanned gazettes use "Birr" in 1994 and "Nakfa" in later amendments.
 
 Not yet confirmed: Private sector pension contribution rate, wage base and cap: Proc 136/2003 covers the public sector and was not read; no private rate was found. Whether the 2% rehabilitation tax on salaries in Proc 17/1991 art 4 survives Proc 66/1994: not read, so do not withhold it on this skill alone. National Service Proclamation 82/1995 and its pay effect: not read. Exact severance eligibility in art 32(1). No published 2026 amendment, circular or form could be opened; the Ministry of Finance site did not connect. No official portal or online filing page could be opened either.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

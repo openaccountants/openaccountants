@@ -33,7 +33,6 @@ tier: 2
 | Turnover tax | 1.5% on gross turnover KES 1M--25M (non-professional) |
 | Presumptive tax | KES 15,000/year (turnover below KES 1M) |
 | Contributor | Open Accountants Community |
-| Validated by | Pending -- requires Kenyan CPA or registered tax agent sign-off |
 | Validation date | Pending |
 
 **Progressive tax table (resident, annual)**
@@ -450,23 +449,3 @@ The rest of the Act (other Income Tax amendments, VAT, excise, Tax Procedures, f
 ### Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA(K), registered tax agent, or equivalent licensed practitioner in Kenya) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

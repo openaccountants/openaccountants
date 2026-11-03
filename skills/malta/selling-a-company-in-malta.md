@@ -14,8 +14,6 @@ tier: 1
 
 # Selling a company in Malta v1.1
 
-Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.**
-
 Tax year 2026. This skill is the working order for a share sale. The income tax rules on the gain (article 5 of the Income Tax Act, the participation exemption, non-resident and listed-share exemptions) are in `mt-capital-gains` and `mt-holding-company-participation-exemption`; it does not repeat them.
 
 ## METHOD
@@ -129,21 +127,3 @@ Not yet confirmed:
 - The amount prescribed for provisional tax on property-company shares (capped at 35% by the Act) was not looked up.
 - The deadline for notifying the Commissioner of a share transfer, and the late-notification duty penalty.
 - Budget 2027 is presented on 26 October 2026; nothing from it is reflected here.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

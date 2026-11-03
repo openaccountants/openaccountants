@@ -317,21 +317,3 @@ expected:
 | Labour Law amendment, Sl. list CG 103/26 (in force 16 Jul 2026): arts. 6-7 (art. 88(5), new art. 88a) | https://www.sluzbenilist.me/propisi/396031/download | 2026-10-30 |
 
 Not yet confirmed: the 2026 highest annual PIO base (the Ministry rulebook under Law art. 14(4) was not published by 30 October 2026); the numerical lowest monthly base under the General Collective Agreement, and which agreement sets it after 30 April 2026 (the parties, including the Government, extended the 2022 agreement, Sl. list CG 150/22, only to 30 April 2026, Sl. list CG 45/26, and the 2026 Gazette contents lists through issue 159 show no new agreement or further extension; the agreement's basic salary figures were not read); the Government's current minimum wage amount under Labour Law art. 101(3) (the statutory net floors of EUR 600 and EUR 800 are in the payroll skill; the old EUR 670 figure came from a secondary source); whether the 70% cap in Law art. 18a(2) limits only zimnica or also the severance and aid items listed before it; the unemployment base for board members and foreign employees, because Law art. 11 items 1 to 4 cross-refer to art. 7 items that do not match; the list of social security agreements and which coverage certificates they require; the September 2026 Government proposal to set PIO, additional PIO and unemployment rates to 0% from 1 January 2027 (proposal only, enactment not confirmed); the eUprava refund-service page (m.euprava.me, service 245), which could not be read on 30 October 2026 because of a certificate error, so the refund route above rests on the 107/23 rulebook alone.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

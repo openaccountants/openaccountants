@@ -15,11 +15,9 @@ tier: 2
 
 ## Scope
 
-
 The intake orchestrator for Saudi-resident self-employed individuals, sole establishments (mu'assasah fardiyyah), single-shareholder LLCs, multi-member LLCs, joint-stock companies (JSC), and branches of foreign companies registered with ZATCA in the Kingdom of Saudi Arabia (KSA). Every downstream Saudi content skill depends on this skill producing a structured intake package first.
 
 Job: establish the facts, document candidate Zakat/CIT allocation, identify the other workstreams, and hand off a package with explicit holds. Outputs go to a professional authorised for the work in Saudi Arabia. A membership name alone does not establish filing authority. Do not finalise a held tax position.
-
 
 ## Ask the client first
 
@@ -319,7 +317,6 @@ Stop the affected conclusion, continue independent evidence collection, and name
 
 ## Completion checklist
 
-
 Complete these before a final handoff. If something is missing, hand over a partial package with the affected line held.
 
 1. Residence, legal form, CR/TIN and registered period trace to documents.
@@ -367,21 +364,3 @@ The Sources table identifies the texts actually read. **NON-OPERATIVE HISTORICAL
 | Bureau of Experts Income Tax Law, **archived 15 February 2026** after direct TLS and ordinary-browser failure; read in original Arabic arts. 1 to 13 and amendment notes, 21 to 23, 60 to 61, 68 to 71, 76 to 77; later amendments not established | https://web.archive.org/web/20260215020442/https://laws.boe.gov.sa/boelaws/laws/lawdetails/23576008-1ce4-4685-ac3e-a9a700f2cb02/1 | 2026-11-01 |
 
 Not yet confirmed: live Income Tax Law and amendments after the 15 February 2026 archive capture (direct BOE TLS fetch and ordinary browser failed); complete later amendments to the Arabic income-tax regulation compilation; VAT registration thresholds, rate and all transaction-specific zero/exempt conditions; Hijri eligibility or changes for income tax; interest limitation and loss-relief computation; specialised oil/gas rates; indirect/GCC corporate and listed-company allocation; actual mixed-return form and box identifiers; audit thresholds and attachment law; tax-specific portal/login/bill identifiers or status-update timing beyond the published income-tax steps; general extensions/refund periods; non-Zakat/non-WHT retention; GOSI rates, caps, new-entrant rules and payment dates; Nitaqat current bands/headcount thresholds/benefits/consequences; WPS mandate/deadline; RETT rate, exemptions, first-home limit, instrument and filing/payment date; excise product rates/tier amounts and registration test; Phase 1 invoice-type technical/QR/clearance/reporting rules and earlier waves; Investment Law commencement/transition and exceptions outside the read clauses; professional credential recognition and filing authority; transfer-pricing/Master File/Local File/CbCR thresholds; common Tax Procedures Law assertion. These are NON-OPERATIVE HOLDS: do not compute, classify, refuse, backdate, declare overdue, promise a date or finalise the affected line from a held rule. Named-contributor Guides remain outside this review and do not resolve a hold by themselves.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

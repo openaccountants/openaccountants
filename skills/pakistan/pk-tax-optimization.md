@@ -28,7 +28,6 @@ tier: 2
 | Currency | PKR |
 | Biggest levers | PSEB IT-export concession · Filer/ATL status · banking-channel remittance · advance-tax management |
 | Tax authority | FBR (IRIS) |
-| Quality tier | Research-verified — pending sign-off by a Pakistani tax practitioner |
 | Skill version | 1.0 |
 
 ## Section 2 — The levers (Tier 1)

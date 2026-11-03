@@ -92,21 +92,3 @@ expected:
 | Law 113: PDF pp. 5–6 arts. 3–5 and p. 13 art. 11 read with neighbours, source baseline informing the nationality/source/loss routing; no complete 2026 currentness chain | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf | 2026-11-01 |
 
 Not yet confirmed: **IQ-CURRENT** complete current law; **IQ-TP** transfer-pricing legal basis, scope, methods, thresholds and full documentation/filing workflow; **IQ-XB** residence/PE/source tests, current treaties and payment-specific rules; **IQ-ROUTER-LEGACY** agricultural exemption scope, ordinary foreign-contractor result, oil classification, VAT/GST absence, registration, reverse charge, input credits, digital supplies and KRI dual-filing claim. Old sample answers/tests, mandatory Arabic-books instruction and broad tax prohibitions are superseded holds, not operative answers. Current forms, deadlines, sanctions and sign-off requirements must be established job by job. Historical source extracts are not proof that an obligation is absent.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

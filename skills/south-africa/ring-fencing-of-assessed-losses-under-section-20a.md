@@ -101,21 +101,3 @@ all.
 Income Tax Act 58 of 1962 s 20, s 20(2A), s 20A (s 20A(2), s 20A(2)(a), s 20A(2)(b), s 20A(2)(b)(iii), s 20A(3)), as amended with effect for years of assessment commencing on or after 1 March 2026. Threshold amounts are the bracket floors in SARS, Rates of Tax for Individuals — https://www.sars.gov.za/tax-rates/income-tax/rates-of-tax-for-individuals/
 
 > Contributed by Brandon Iverach, SAIPA 18504 / SARS PR0025122.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

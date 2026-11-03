@@ -54,21 +54,3 @@ The Isle of Man is a self-governing Crown Dependency with its own direct taxes, 
 | gov.im, Manx currency: coins and notes | https://www.gov.im/categories/tax-vat-and-your-money/manx-currency-coins-and-notes/ | 2026-10-30 |
 
 Not yet confirmed: the Currency Act 1992 (cited in the old version for the Manx pound; not read, so the gov.im currency page is cited instead); the Island VAT return due date (see isle-of-man-vat).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

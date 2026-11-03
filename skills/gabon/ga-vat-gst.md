@@ -107,21 +107,3 @@ expected:
 | LF: Read enacted identity and arts 1-4 with selected fiscal amendments on printed pages 1-5 and 15-18; detailed reconciliation of art11,23,178bis,210,221,223, deletion234, P832ter-quinquies/P917/P1000; final arts78-79/promulgation printed69-70. Customs and budget schedules not used. | https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178946560179.pdf | 2026-11-01 |
 
 Not yet confirmed: The complete 2025-to-2026 item-level rate/exemption consolidation and commencement, the exact 90% prorata case, construction/property exceptions, refund workflow, digital registration form/current interface, reverse-charge interaction, CSS implementation and current excise schedule. The old broad 5%-40% excise claim is unverified and not a rate instruction. Complete intervening amendments, date-specific commencement, current forms and boxes, and independent review. See the [country evidence](../../docs/research/2026-11-01-gabon-pack/README.md) and [old-topic destination map](../../docs/research/2026-11-01-gabon-pack/old-topic-map.md).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

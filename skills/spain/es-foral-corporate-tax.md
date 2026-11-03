@@ -48,7 +48,6 @@ Advance payments use the last return's allocation, subject to the agreement's ch
 
 ### Size and economic-activity tests
 
-
 | Test | Bizkaia, Álava and Gipuzkoa | Navarra |
 |---|---|---|
 | Micro | Economic operation; assets **or** operations at most EUR 2m; average staff below 10; ownership condition below | Small company with prior net turnover at most EUR 1m, subject to group/ownership aggregation |
@@ -65,9 +64,7 @@ For the Basque 85%-business-income condition, trace qualifying revenue and the l
 
 Before granting trading-company methods, test patrimonial status under B/A/G art.14 and N art.8.2. The Basque rules include the asset mix, the 90-day period, the 75%-ownership composition, exceptions for qualifying participation/business reinvestment and the treatment of inactive companies. The Basque patrimonial computation uses art.32's restricted expenses and the art.56.2 progressive savings scale; it is not the ordinary 20% or 24% computation. Navarra patrimonial entities lose the art.51.1.b reduced rates. The dedicated patrimonial calculation and restructuring/group regimes remain separate branches.
 
-
 ### Taxable-base reconciliation
-
 
 Start with the accounting result, add back local non-deductible expenses, reverse exempt income and timing differences, replace accounting depreciation with allowed tax depreciation, and apply local special deductions, reserves and eligible carried losses in their statutory order. Navarra art.42 puts the art.43 loss reduction before the art.44 investment-reserve reduction. Preserve a tax-basis register for each asset and a year-by-year register of deferred amounts. This sequence comes from B/A/G arts.15–55 and N arts.14–46; a State-law adjustment cannot be assumed to exist under a foral law.
 
@@ -120,7 +117,6 @@ For an eligible Basque SME with EUR 500,000 closing debtors, EUR 100,000 already
 Example, applicable to the identical2026 coefficients in all three provinces: an ordinary investment building acquired2023 for100,000, first brought into use2024, has accounted and tax-deducted depreciation3,000 in2024 and3,000 in2025; dispose at the opening of2026 for net proceeds150,000, with no2026 depreciation, prior revaluation or other fiscal adjustment. Carrying value is94,000 and pre-correction income56,000. Indexed cost is100,000×1.071=107,100; indexed depreciation is3,000×1.040+3,000×1.020=6,180; indexed net is100,920. Monetary correction is100,920−94,000=6,920; corrected taxable disposal income is49,080. If the otherwise identical transaction has positive disposal income only5,000, deduct5,000 and integrate zero. If it produces a loss, deduct zero under40.9.
 
 Authorities: [Bizkaia NF11/2013 art.40.9](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013 art.40.9](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014 art.40.9](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54). Coefficient timing: [B DF115/2025 art.2](https://www.bizkaia.eus/lehendakaritza/Bao_bob/2025/12/15/I-1336_cas.pdf?hash=7bb6a27105d5d87568e6537aa6283dc3), [A DF41/2025 art.2](https://www.araba.eus/botha/Boletines/2025/146/2025_146_03735_C.pdf), [G DF27/2025 DA2](https://egoitza.gipuzkoa.eus/gao-bog/castell/bog/2025/12/30/c2508991.pdf).
-
 
 ### Passenger-vehicle expense computation
 
@@ -177,9 +173,7 @@ An elected Basque block of five consecutive periods allows use up to 100% in the
 
 Navarra losses carry 15 years; normal utilisation is at most 70% of positive base after the specified art.42 reductions, but at least EUR 1m is usable, prorated for a short year and always bounded by available base and losses. New companies have no percentage ceiling in their first three positive periods and count the carry period from the first positive period. Apply the debt-waiver/extinction exceptions and anti-trafficking tests in art.43; they differ from the Basque six-month inactive-company test. [N art.43.](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)
 
-
 ### Rate, minimum and credit sequence
-
 
 | Ordinary trading company | Bizkaia | Álava | Gipuzkoa | Navarra |
 |---|---:|---:|---:|---:|
@@ -234,9 +228,7 @@ For a general company with Z100,000 and foreign credit10,000 alone, the computed
 
 Apply arts.58,64.B and 66 credits under their combined 25%-of-liquid-quota ceiling (art.58 before activity has its exception), prior carry before current year. Follow with the unlimited credits in art.67.5's statutory order, while respecting the art.53 minimum and the film/R&D amounts used in its computation. Keep a reconciliation of generated credit, claimed credit, expired credit and 15-year carry. Finally deduct withholdings and instalments; refund an advance-payment excess. Do not copy the Basque 35%/70%/50% buckets or 30-year carry. [N arts.52–53,67–70.](https://www.boe.es/buscar/act.php?id=BOE-A-2017-2356)
 
-
 ### Investment, research and employment
-
 
 Determine eligibility before applying the quota limits above. For every claim retain invoices, asset commissioning dates, project/worker certification, grants, related-party information and continued-eligibility evidence.
 
@@ -285,9 +277,7 @@ Navarra foreign-tax credits in arts.56–57 have a **ten-year** insufficient-quo
 
 Culture, credit financing and specialised IP/reinvestment routes remain additional methods, not universal deductions. Use the separately identified eligibility, contract and communication requirements before applying a specialist claim.
 
-
 ### Extraordinary-profit surcharge2026–2030
-
 
 All three current Basque corporate statutes add this branch for general 24%, bank 28% and hydrocarbon 31% taxpayers other than art.13 medium companies; ordinary micro/small 20% companies do not fall within the named rate categories. Its operation is more specific than adding 1–4 points to taxable income. Statutory wording applies the additional percentage to the **part of gross quota corresponding to the taxable-base increase derived from the excess**. [B art.57 bis and DA 34; A art.56.7; G art.56.7 and art.57.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)
 
@@ -296,7 +286,6 @@ For Bizkaia/Gipuzkoa, start from pre-tax financial-statement profit before depre
 The growth slices are `(1.35 M,1.50 M]` at 1%,`(1.50 M,1.75 M]` at 2%,`(1.75 M,2 M]` at 3%, and above`2 M` at 4%, applied to the corresponding gross-quota portion. Use the expressly labelled attribution-ledger interpretation below to reconcile fully taxable excess profit to its corresponding gross-quota portions; this does not assume that every accounting-profit slice is taxable or permit a blanket average allocation. [B art.57 bis; A/G art.56.7.](https://www.bizkaia.eus/documents/880307/15187815/ca_11_2013.pdf/5a463c1d-a59b-7e48-6429-80fd22f30bc6?t=1768908575887), [Álava NF37/2013](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [Gipuzkoa NF2/2014](https://www.gipuzkoa.eus/documents/2456431/8.0761374E7/NF%202-2014%20%282026%29.pdf/f1231a01-1f83-ee15-e569-7b9b84d44d54)
 
 Álava's own article 56.7 supplies the charging bands. The own-law net-result worksheet below supplies a labelled ordinary-accounting and tax-attribution interpretation for its stated PGC/current-tax population. A special delegated measurement equivalent has not been established from the retained regulation or the fresh operative amendments; the worksheet does not claim one. Do not import B/G's pre-tax/depreciation definition or regulatory exclusions. The delegated comparison and any controlling own definition or contrary interpretation remain expressly distinguished from an assumed suspension or zero charge. B DA34, A DA31 and G DA29 disapply arts.59.3–5 and67.1 for applying this surcharge and identify the fiscal group as taxpayer; they do not change the nominal rate in art.56.1. Gipuzkoa GR DA9 currently names art.66 quinquies in its exclusion list. Sources: the own statutes and regulations linked above.
-
 
 **Ordinary attribution-ledger method, reasoned from each own primary law.** This interpretation reads B57bis/G56.7 together with each province's arts.15,31 and57 and its own profit-measure regulation. First record the actual local eligibility and exclusion tests above, each of the four period measures, `M`, the nominal rate and the full accounts-to-tax reconciliation. Define accounting growth slices `E1=max(0,min(R,1.50M)-1.35M)`, `E2=max(0,min(R,1.75M)-1.50M)`, `E3=max(0,min(R,2M)-1.75M)`, `E4=max(0,R-2M)`. For each slice record the taxable-base increment `I_j` actually derived from that profit, with its identifiable tax additions, exclusions, deductions and used losses. Apply the selected law's tax treatment to those facts; an unsupported allocation is not a verified input. For a constant general24% rate, the corresponding gross-quota portion is `q_j=24% × I_j` and the additional quota is `S=1%q1+2%q2+3%q3+4%q4`. Ordinary gross quota plus `S` is the increased gross quota. This is a source-derived computation, not a published provincial algebra ruling. Álava's own articles 15/31/56.7/57 also support the conditional quota step; the separate net-result worksheet below derives its own `R/M/I_j` from the stated fully taxable PGC/current-tax ledger rather than stipulating approved measurements. Other accounting and tax-adjustment populations remain bounded as stated there. Sources: B/A/G arts.15,31,56–57 and B57bis, BR DA10/GR DA9, linked above.
 
@@ -526,6 +515,5 @@ expected:
 | [Álava NF37/2013 arts.53/59/61/67](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas-3-pdf), [DF41/2014 art.32bis](https://web.araba.eus/documents/d/araba/indice-reglamento-del-impuesto-sobre-sociedades-cas-5-pdf), [NF3/2025 art.12.Cuatro/DF1](https://www.araba.eus/botha/Boletines/2025/044/2025_044_01182_C.pdf), [NF21/2025 art.3.Quinto](https://www.araba.eus/botha/Boletines/2025/147/2025_147_03861_C.pdf) | Actual selected operative provisions/effect chain; own source-derived amount-threshold investment interpretation, not enacted33bis or a blanket waiver of all credit conditions | 2026-10-28 |
 | CN art.24; B/A/G art.60.7, in the current sources below | Correct advance-payment connecting-factor citation and explicit prohibition on deducting excess Basque foreign tax as an expense | 2026-10-28 |
 | [Own Álava NF37/2013 articles 15/31/56–57](https://web.araba.eus/documents/d/araba/norma-foral-del-impuesto-sobre-sociedades_cas), [NFGT article 11](https://web.araba.eus/documents/d/araba/indice-norma-foral-general-tributaria-cas-8-pdf), [PGC NRV 13.4 / P&L](https://www.boe.es/buscar/act.php?id=BOE-A-2007-19884), [NF17/2025 DF1](https://web.araba.eus/documents/d/araba/norma-foral-del-imic), [NF21/2025 article 3.Cuarto](https://www.araba.eus/botha/Boletines/2025/147/2025_147_03861_C.pdf), [OF380/2026 model 2025](https://www.araba.eus/botha/Boletines/2026/073/2026_073_01914_C.pdf) | Fresh selected own operative/accounting/amendment reads support the labelled net-result/current-tax attribution worksheet; no special measurement regulation or 2026 software ruling claimed | 2026-10-28 |
-
 
 **Not yet confirmed:** a controlling Álava special delegated measurement or contrary interpretation beyond the supplied own-law net-result worksheet, and its deferred-tax/current-credit/other-adjustment or incomparable-history populations; attribution or adjustment interactions outside the supplied reasoned ordinary ledgers and return-specific rounding; Gipuzkoa complementary-tax exception's precise paragraph scope for a large-group case; operational2027 forms beyond the supplied statutory windows and confirmed provincial232 triggers. Specialist culture/financing, IP nexus, reinvestment, patrimonial entities, fiscal groups, co-ops and restructuring require their own complete methods before use. The supplied B/G fully taxable incremental-profit method and Álava's labelled own-law net-result/current-tax interpretation each give a positive surcharge within their explicit input bounds; neither supplies every other accounting or tax-attribution branch. These ordinary limits are not specialist exclusions; art.13 medium companies remain statutorily excluded. No accountant attestation is claimed.

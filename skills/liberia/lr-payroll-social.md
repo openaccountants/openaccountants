@@ -120,21 +120,3 @@ expected:
 | NASSCORP Act 2017, ss 89.8–89.18, employment categories and contributions read | https://www.nasscorp.org.lr/wp-content/uploads/2024/05/NASSCORP-Act-revised-2017.pdf | 2026-11-01; read in part, specific scope in first column |
 
 Not yet confirmed: Live e-Payroll fields, any separate transmission deadline, accepted transmission and bank references; resolution of Act 89.16(m) versus regulation 16(2) for retrospective deductions; individual expatriate/injury-only status; income-tax deductibility of employee pension and later scheme changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

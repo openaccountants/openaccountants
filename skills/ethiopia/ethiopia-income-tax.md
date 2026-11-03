@@ -137,7 +137,6 @@ Not yet confirmed: the Council of Ministers income tax regulation that sets the 
 | Tax authority | Ministry of Revenues (MOR), `mor.gov.et` (formerly ERCA) |
 | Pension authority | Private Organizations Employees Social Security Agency (the pension fund administration) |
 | Filing portal | MOR e-services / regional revenue bureaus |
-| Validated by | Pending, requires sign-off by an Ethiopian tax practitioner |
 | Validation date | Pending |
 | Skill version | 0.1 |
 

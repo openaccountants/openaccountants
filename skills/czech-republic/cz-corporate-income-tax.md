@@ -267,21 +267,3 @@ expected:
 | Czech National Bank, two-week repo rate history | https://www.cnb.cz/cs/faq/vyvoj_repo_historie.txt | 2026-10-23 |
 
 Not yet confirmed: the Financial Administration had not published the filing dates for 2026 corporate returns, so 1 April, 3 May and 1 July 2027 are counted from TC §§ 33(4) and 136 in the same way as cz-income-tax; the full conditions of the investment incentive credit (§ 35a, § 35b) and the R&D deduction (§ 34(4) and § 34a onwards) were not read here.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

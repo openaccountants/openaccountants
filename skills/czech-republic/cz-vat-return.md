@@ -25,21 +25,3 @@ The slug stays so that links from [cz-income-tax](cz-income-tax.md), [cz-cross-b
 | Act No. 235/2004 Coll., VAT Act, version in force 1 January to 31 December 2026 | https://e-sbirka.gov.cz/sb/2004/235/2026-01-01 | 2026-10-23 |
 
 Not yet confirmed: see the list at the end of [czech-republic-vat-return](czech-republic-vat-return.md).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -284,21 +284,3 @@ expected:
 Not yet confirmed: that a sole proprietor using the NOK 3.50 kilometre rate may deduct no other costs of that car, and how an owner chooses between the standard benefit and the per-km valuation for a business vehicle (Skatte-ABC B-7, not read); the maximum shield rate for sole proprietors for 2026 (set after the year ends; § 12-12 third paragraph); the conditions for the home-office standard deduction on the share of the home and rental income (at least 50% of rental value, or rent up to NOK 20,000), which the 2026 page did not state; the 75% cost cap on the car benefit for sole proprietors and whether the 40,000 km reduction is closed to class 2 vans, both in the previous version of this skill; the split of positive calculated personal income between spouses who both work in a joint business (in the previous version); the rate in skattebetalingsloven § 11-6 used for the residual-tax interest charge in 2026.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

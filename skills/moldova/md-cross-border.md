@@ -203,7 +203,6 @@ For the actually eligible non-VAT individual entrepreneur/farm under Code 92(8),
 
 For that taxpayer's own qualifying foreign income, instruction annex 10 is a separate credit working paper. Record each country, foreign tax paid 16011, income 16012, associated expense 16013 and net foreign income 16014. Its ratio to total taxable income 16015 allocates main-return tax 150 through 16016–16018; allowed 1601 is the lesser of actual foreign tax and the allocated Moldova ceiling, transferred in total to main 160. Apply current Code 82's evidence, taxable-income scope and period requirements. For assumed qualifying net foreign income 50,000 within total taxable income 200,000, main 150 of 24,000 and foreign tax 8,000, the ratio is 25%, ceiling 6,000 and credit 6,000. A zero/negative denominator, loss-country interaction or foreign-currency timing is not resolved by this positive-input example. [Instructions 109–118](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx); [Code 82](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro).
 
-
 ## Penalties and interest
 
 **Calendar-2026 ordinary tax late charge.** Code art. 228(3) and the BNM decision of 6 November 2025, point 1, supply the calculation: the retained **6.00%** short-term policy rate, rounded up to a whole percent, plus **5 percentage points**, divided by **365 days**, gives **0.0301% per delayed day** after rounding the daily percentage to four decimal places. The decimal multiplier is **0.000301**. Apply it to the established outstanding principal for each chargeable day; split changes in principal and calendar year. This calculation concerns debts governed by art. 228 and does not replace a separate statutory regime's rate or establish case-specific relief. [Code art. 228(2)–(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [BNM decision, point 1](https://bnm.md/en/node/69226).
@@ -339,14 +338,6 @@ All examples assume their stated legal facts; arithmetic checks do not independe
 | [Actual IALS21 form/classifier](https://www.legis.md/cautare/getResults?doc_id=154297&lang=ro) and [actual IPC21 annex 1](https://www.legis.md/UserFiles/Image/RO/2026/mo186-189ro/an1_94md.docx) | IALS21 control/relief totals and actual three-letter citizenship list; exact nonresident numerical-row/source-code pairs for INR14 reconciliation. Complete attachment reads retained; technical filing acceptance not tested. | 2026-10-31 |
 
 **Not yet confirmed:** current approved PE/company return and art. 74/76 cessation/activity forms with the complete field-by-field method; INR14 accepted annual electronic-period representation, entity-recipient citizenship field, anomalous/legacy classifier entries and technical validation; IALS21 missing annual-prefix values, legacy/atypical country entries and 2026 technical validations beyond the directly read current instructions; current residence-certificate, tax-paid-certificate and refund implementing forms/documents, processing and limitation computation; departure filing procedure and a full valuation/category-specific exit computation; case-specific late-charge relief/account allocation; foreign-tax-credit conversion/payment allocation, contractual gross-up and reporting-rounding beyond the sourced ordinary art. 21(3) income-tax method; exact multi-country/mixed-income credit allocation and foreign-tax timing/correction procedure; historical/mid-year commencement reconciliation for each relevant case. Treaty-by-treaty rates, tie-breakers, PE/profit-attribution variations, MLI/beneficial-owner/anti-abuse and dispute-resolution applications, social-security/posting agreements, entity migration/reorganisation, CFC and information-exchange/CbCR/enacted future EU-alignment status need their own current official texts and applicability decisions. No treaty exemption, absent-regime conclusion, accountant attestation or complete country coverage is asserted. Originals and the 24 October review evidence are preserved; that earlier review does not review this expansion.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This document is general reference information, not advice for a specific payment or business structure. Consult the cited law, current treaty and a Moldovan tax professional before payment or filing.
 
 ## Sources
 

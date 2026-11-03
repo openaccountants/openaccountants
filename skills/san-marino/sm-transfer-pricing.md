@@ -130,21 +130,3 @@ Not yet confirmed: whether the unilateral and renewal halvings combine on a unil
 [igr]: https://www.consigliograndeegenerale.sm/on-line/documento17086436.html
 [l141]: https://www.consigliograndeegenerale.sm/on-line/home/archivio-leggi-decreti-e-regolamenti/documento17155359.html
 [dd116]: https://www.bollettinoufficiale.sm/on-line/RicercaBU?operation=getDocBU&id=26a68bf4326bc216b251bc3af7fd385bc9f7c7a0
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

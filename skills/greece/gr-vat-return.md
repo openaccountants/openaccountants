@@ -37,21 +37,3 @@ Headline 2026 figures, all from the VAT Code (ν. 5144/2024) in the Ministry of 
 | AADE circular Ε.2113/31.12.2025 on the 30% island reduction, with the annex of islands | https://www.aade.gr/sites/default/files/2026-01/e2113_2025.pdf | 2026-10-23 |
 
 Not yet confirmed: see the list at the end of greece-vat-return.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

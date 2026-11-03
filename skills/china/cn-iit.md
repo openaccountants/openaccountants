@@ -25,7 +25,6 @@ Currency is CNY. Income in foreign currency is converted at the RMB central pari
 
 Out of scope: Hong Kong, Macao and Taiwan; corporate income tax; VAT; social insurance contributions themselves (only their deduction is covered); land appreciation tax on property sales; and the detailed rules for offshore trusts, restricted shares and treaty tie-breakers (see "When to refuse or refer").
 
-
 ### What is new for 2026 ([dividends 2026 No. 27](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202609/t481448.html); [offshore trusts 2026 No. 21](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202607/t481046.html); [STA announcement 2026 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202606/t480766.html); [platform workers](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/202507/t476884.html))
 
 | Change | From | What it does | Official provision |
@@ -37,7 +36,6 @@ Out of scope: Hong Kong, Macao and Taiwan; corporate income tax; VAT; social ins
 | Platform workers | 2025-10-01 | Internet platform companies withhold on workers' labour remuneration by the cumulative method (see the method, step 5) | [STA 2025 No. 16 §1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/202507/t476884.html) |
 
 Reliefs that run to **31 December 2027** and so apply for all of 2026: separate taxation of the annual one-off bonus; separate taxation of listed-company equity incentives; the election for foreign individuals' tax-free allowances; the small-balance exemptions from the annual reconciliation; and the halving of IIT for individual industrial and commercial households. Each is cited where it is used.
-
 
 ## Rates, bands and thresholds
 
@@ -133,7 +131,6 @@ Rules that apply to all of them: housing loan interest and housing rent cannot b
 - **Foreign individuals' allowances:** a foreigner who is a resident chooses either the special additional deductions or the tax-free treatment of housing, language training and children's education allowances (and the other listed allowances), not both. The choice cannot be changed within the year.
 - **Reconciliation exemptions** for small balances (see "Filing and payment").
 
-
 ## The base
 
 ### The method, step by step
@@ -153,7 +150,6 @@ Rules that apply to all of them: housing loan interest and housing rent cannot b
 11. **Foreign income of residents.** Combine foreign comprehensive income with Chinese comprehensive income, and foreign business income with Chinese business income; tax other foreign categories separately. Credit foreign tax country by country, within the limit (see "Foreign income").
 12. **File.** Decide whether the person must do the annual reconciliation, and file between 1 March and 30 June of the next year (see "Filing and payment").
 
-
 ### Boundaries and exceptions ([IIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html); [Interim Measures](https://hainan.chinatax.gov.cn/xxgk_6_1/22110230.html); [reconciliation exemption](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468462.html); [residence days](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201904/t444837.html))
 
 | Question | Rule | Watch for |
@@ -166,7 +162,6 @@ Rules that apply to all of them: housing loan interest and housing rent cannot b
 | Reconciliation exemption | Income **not over** one hundred and twenty thousand yuan (12万元) and tax due, or tax due **not over** CNY 400 | Does not apply if a withholding agent failed to withhold |
 | Non-resident deductions | CNY 5,000 a month on wages only | Social insurance is not deducted; no special additional deductions |
 | Labour remuneration expenses | Eight hundred yuan up to four thousand yuan per payment; 20% above | At reconciliation, income amount is always payment less 20% |
-
 
 ### When to refuse or refer
 
@@ -182,7 +177,6 @@ Rules that apply to all of them: housing loan interest and housing rent cannot b
 - **Open audits, tax notices, penalties or appeals.** Do not give a view; refer immediately.
 - **Emigration** that cancels Chinese household registration: the person must settle their tax before cancellation (Law Art. 13). Refer.
 
-
 ### Completion checklist ([IIT Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/201809/t441789.html); [operation measures](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202204/t462550.html))
 
 - [ ] Residence decided from full-day counts; six-year history checked for any non-domiciled resident.
@@ -195,7 +189,6 @@ Rules that apply to all of them: housing loan interest and housing rent cannot b
 - [ ] Business income prepaid on time and reconciled by 31 March; household halving applied.
 - [ ] Foreign individuals: allowance election made once for the year; dividends from foreign-invested enterprises from 1 September 2026 taxed at 20%.
 - [ ] The result is a working paper. A qualified Chinese tax adviser should review it before filing.
-
 
 ## Deadlines and filing
 
@@ -227,7 +220,6 @@ Rules that apply to all of them: housing loan interest and housing rent cannot b
 - The STA's reconciliation measures (Order No. 57, in force from 26 February 2025) set the standing procedure used for the 2025 year.
 - If the window was missed and tax is due, file and pay now: the daily late-payment surcharge runs from the day the tax became overdue (see penalties). For a missed refund, ask the local tax office how to claim it; this skill does not set out that procedure.
 
-
 ## Penalties and interest
 
 #### Penalties ([Tax Collection Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/swzsgl/200609/t284229.html))
@@ -239,7 +231,6 @@ Rules that apply to all of them: housing loan interest and housing rent cannot b
 - **Fabricating a tax basis:** a fine of up to fifty thousand yuan (Art. 64).
 - **Hiding assets to avoid paying arrears:** the tax, the surcharge and a fine of half to five times the arrears (Art. 65).
 - **Tax resistance** (refusing to pay by violence or threats): the tax, the surcharge and criminal liability; if minor and not a crime, a fine of one to five times the tax refused (Art. 67).
-
 
 ## Cross-border points
 
@@ -260,7 +251,6 @@ Rules that apply to all of them: housing loan interest and housing rent cannot b
 - **Foreign tax year.** If the foreign tax year is not the calendar year, the income belongs to the Chinese tax year in which the foreign tax year ends.
 - **Foreign business losses** cannot reduce Chinese income or income from another country. They can be carried forward against later business income from the same country.
 - **Employees posted abroad** by a Chinese employer: if the Chinese employer pays or bears the pay, it withholds as usual. If a foreign entity pays and it is a Chinese-affiliated overseas entity (中方机构), it may withhold and have the posting employer file. If that entity does not withhold, or the foreign payer is not a Chinese-affiliated entity, the Chinese employer must report the posted staff to its tax office by 28 February of the next year.
-
 
 ## Two worked examples that recompute
 
@@ -293,7 +283,6 @@ The balance due is not over 400 yuan and tax was properly withheld, so the emplo
 **Case 6: six-year rule.** A foreign manager without a domicile was in China 200 or more days in each year 2019 to 2025 and never left for more than 30 days at a time. In 2026 they are resident and also meet the six-year condition, so foreign income paid by the foreign parent is taxable in China for 2026. If they had made one 35-day trip out of China in 2022, the count would restart in 2023 and their 2026 foreign-source income paid from abroad would qualify for the concession subject to the competent-authority filing condition (Regulations Art. 4).
 
 **Case 7: foreign tax credit.** A resident has comprehensive income amounts of 400,000 from China and 100,000 from Country A (total 500,000). Deductions are 60,000 basic and 40,000 social insurance, so taxable income is 400,000 and tax is 400,000 × 25% − 31,920 = 68,080. Country A limit: 68,080 × 100,000 ÷ 500,000 = 13,616. Country A tax paid 20,000. Credit 13,616; the excess 6,384 can be carried forward for up to five years against Country A income.
-
 
 ### Executable checks for the preserved worked cases
 
@@ -350,7 +339,6 @@ expected:
 - **For foreign nationals:** whether they claim tax-free housing, language or children's education allowances, and whether they received dividends from a foreign-invested enterprise on or after 1 September 2026.
 - **Status of the account:** any open audit, tax notice or penalty.
 
-
 ## Sources
 
 | Source | Official URL | Read on |
@@ -389,21 +377,3 @@ expected:
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
 
 **Scope limits:** apply the preserved refusal, exception and historical-period conditions. Confirm taxpayer-specific eligibility and the current local procedure before using an election or treaty claim. Future form-screen coordinates are not established here.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

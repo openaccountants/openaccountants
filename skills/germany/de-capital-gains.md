@@ -287,21 +287,3 @@ Do not state a combined flat-tax rate with church tax without the client's state
 | EStG §§ 23(1) no. 2 sentence 4, 43a(3) full deadline, 32d(2) no. 1, 43(5), 17(1) sentence 4; InvStG § 19(1); BMF 6 March 2025 paragraph 63: selected operative clauses actually read | https://www.gesetze-im-internet.de/estg/__32d.html | 2026-10-29 |
 
 Not yet confirmed: the state church-tax rates (8% or 9%, set by state law, not on the federal pages); the body of the 14 May 2025 BMF letter was located but not read line by line.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

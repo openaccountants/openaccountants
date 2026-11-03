@@ -96,21 +96,3 @@ expected:
 | Sijilat Business Types, entire public page and all entity rows/requirements/notes/commitments read in ordinary browser; selective verbatim browser read receipt saved; raw HTML translation data contains stale values and is not substituted for the visible page | https://www.sijilat.bh/guides-laws/BusinessTypes.aspx | 2026-11-01 |
 
 Not yet confirmed: name reservation 60-day validity/about BHD 10 fee; 1-to-3-day/1-to-3-week completion estimates; SPC conversion under Decree-Law 28/2020; current annual CR renewal procedure; exact activity-specific ownership/licensing approvals; automatic ESR applicability. Earlier BHD 20,000 foreign W.L.L. and BHD 250,000 closed B.S.C. minima are contradicted by Sijilat and are not executable. Full predecessor text and exact destinations are preserved in [the country evidence](../../evidence/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

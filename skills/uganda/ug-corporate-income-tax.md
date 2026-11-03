@@ -113,21 +113,3 @@ expected:
 | URA, Object to Tax Assessment | https://ura.go.ug/en/domestic-taxes/objection-appeals/object-to-tax-assessment/ | 2026-11-01 |
 
 Not yet confirmed: loss restriction (old file: 50% restriction beyond 7 years; not found in the text searched); 0% on dividends where a resident company holds 25% or more of the voting power; 15% management fee row wording and the UGX 1,000,000 threshold on the 6% designated agent rate; branch remittance section number in the 2024 revised text; the enacted Income Tax (Amendment) Act 2026 text; TP documentation rules.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -131,21 +131,3 @@ expected:
 | DGI page on online filing, archived April 2025; steps read | https://web.archive.org/web/20250419084126/https://jibaya.tn/blog/la-tele-declaration-fiscale/ | 2026-11-01 |
 
 Not yet confirmed: Social Solidarity Contribution rate and 5,000 exemption (LF 2018 art. 53; Note commune 1 of 2026 PDF not opened). Non-resident short-stay 20% rate from the old file. Employer monthly remittance from the old file (form exists; rule not re-read). The old 9.68% employee CNSS figure (see payroll skill). Return form boxes. Any change to the code by LF 2026 not named here: LF 2026 was searched for references to the code, the 2026 consolidated edition was not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -111,8 +111,6 @@ tier: 1
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Georgia) before acting upon.
 
-The most up-to-date version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 ## Sources
 
 | Source | URL | Read on |
@@ -124,21 +122,3 @@ The most up-to-date version of this skill is maintained at [openaccountants.com]
 | Law of Georgia on Information Technology Zones No 4064 (arts. 2, 3, 5) | https://matsne.gov.ge/en/document/view/1152405 | 2026-10-31 |
 
 Not yet confirmed: the Government ordinance listing international company activities and its conditions (not read); which body now grants virtual zone status (the Law says a person the Government designates); whether a small business must file a nil return in a month with no income (the old version said yes; its "GEL 100 fine per declaration" is not in the Code, where art. 274 fines are a percentage of the tax due); any change to the Resolution 415 annexes not shown in the amending acts listed above (the consolidated text is behind a login); the place-of-supply rules for services to non-residents (see georgia-vat); funded pension contributions for individual entrepreneurs (see georgia-social-contributions).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

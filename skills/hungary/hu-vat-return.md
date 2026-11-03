@@ -174,21 +174,3 @@ expected:
 | NAV, central bank base rate notice (5.50% from 26 August 2026) | https://nav.gov.hu/ugyfeliranytu/jegybank | 2026-10-23 |
 
 Not yet confirmed: the HUF 24,000,000 exemption limit for 2028 is in NAV's notice but not in the consolidated Áfa tv. text read today; the specific fine for missing or late online invoice data was not located in the Art. today, so only the general default fine (Art. 220. §) is given; the full Annex 3 list of 5% items is summarised, not reproduced.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

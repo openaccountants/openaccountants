@@ -113,21 +113,3 @@ Get activity/special approvals, incorporation and Malawi-source facts, exact ass
 | [MRA updated notice](https://www.mra.mw/admin/storage/download_files/1767952247_NEW%20TAX%20MEASURES...pdf), income-tax/MAT rates and date compared with earlier notice | 2026-11-01 |
 
 **Not yet confirmed:** appointed commencement notices for TAA/cutover and full period allocation; annual filing/balance-payment deadline under current authority; authenticated return fields; exact commencement/straddling-period allocation at the December 2025 amendment; full capital allowances, losses, indexed gains and specialist sectors; new listed-share final withholding and its exemptions under Act 3/2026 s 13 must be reconciled before any listed-share disposal computation; dividend 10%, bank interest finality/rate, royalty resident/non-resident split and mining 10% claims from the old file. Do not apply those old withholding figures pending their own source checks.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

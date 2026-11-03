@@ -171,21 +171,3 @@ These groups follow their own base rules or a separate regime. Do not compute th
 Not yet confirmed: the IRAP instructions for tax year 2026 (the 2027 return edition; the published IRAP 2026 instructions cited above cover tax year 2025); regional rates by region and sector (Dipartimento delle Finanze list not read); which ATECO codes are in Table 1 of D.L. 21/2026; whether the 10% interest share applies with no net interest expense; the art. 17(2) simplified option rules; winding-up dates under art. 5 and 5-bis D.P.R. 322/1998; the Cassazione SU 9451/2016 autonomous-organisation ruling (not read); the 2027 move of IRAP payment and penalty articles into the new codes; the IRAP treatment of group reorganisations (mergers, demergers, contributions), which is not covered here: refer.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

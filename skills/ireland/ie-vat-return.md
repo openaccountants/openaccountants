@@ -364,21 +364,3 @@ expected:
 | Revenue, who may opt for the moneys received basis | https://www.revenue.ie/en/vat/accounting-for-vat/accounting-for-vat-on-moneys-received/who-can-opt-moneys-received-basis.aspx | 2026-10-31 |
 
 Not yet confirmed: whether Revenue, in practice, charges interest only from the 23rd for a ROS filer who pays late (this skill follows s.76(1) and s.114(1) and counts from the 19th); the tax point for services received from abroad (the old version said the earliest of invoice, payment or the 15th of the month after the service; s.74 does not say this and the rule was not found in the law read); the legal basis for the ROS extension to the 23rd (read on Revenue's page only, not in the Taxes Consolidation Act); the monthly-return option for repayment traders (Revenue practice, no figure in s.77); the item-by-item lists of Schedules 2 and 3 beyond the paragraphs named above; the VIES statement threshold set by regulations for annual statements under s.82(4); any VAT changes in Finance Bill 2026 (Budget 2027), not enacted on 2026-10-24 and not read; the EU-goods and RTD treatment of One-Stop Shop sales beyond leaving them out of the RTD. How-to: Revenue publishes no step-by-step VAT3 screen guide that could be opened; step 3 and the Sign & Submit wording come from the VIES appendix, so the exact VAT3 screen labels are not confirmed. Revenue's "ways to make an online payment" page returned 404. Example 3 compares T1 only; whether T2 timing changes on the moneys received basis was not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

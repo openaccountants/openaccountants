@@ -107,21 +107,3 @@ expected:
 | NamRA tax payments brochure (read: whole) | https://www.namra.org.na/documents/cms/uploaded/information-brochure--tax-payments-325a997127.pdf | 2026-11-01 |
 
 Not yet confirmed: Whether the 18% registered manufacturer rate in para 3(2) still applies, since Act 5 of 2021 deleted the continued application of s.5A while para 3(2) remains in the text; current petroleum and long-term insurer rates (only the 2018/19 page was read; the Petroleum (Taxation) Act was not opened); Budget 2026/27 proposals; company return boxes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

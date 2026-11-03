@@ -230,5 +230,4 @@ expected:
 | [LGT](https://www.boe.es/buscar/act.php?id=BOE-A-2003-23186) |Arts. 26–28/188/191/198: interest, late filing, collection and conduct-specific sanctions |2026-10-27 |
 | [Ley 20/1991 arts.40–42](https://www.boe.es/buscar/act.php?id=BOE-A-1991-14463#a42) | Single remaining-period investment-good disposal adjustment, output/hypothetical-output cap and non-entitling/subrogation branches |2026-10-28 |
 
-
 **Not yet confirmed:** final 2026 program field/rate-row parity beyond the current published instructions; product-specific AIEM amounts and specialist housing/LaPalma, retail, module, cash, agricultural, margin, travel or group claims outside the supplied ordinary computation. The July 2026 franchise entry and deduction transition are supplied, not assumed to be an automatic 50,000 all-year exemption. Independent review is pending; no accountant attestation or accepted filing is claimed.

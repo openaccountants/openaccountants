@@ -112,21 +112,3 @@ expected:
 | CBRD statutory obligations page, read in full | https://companies.govmu.org/cbrd/statutory-obligations/ | 2026-11-01 |
 
 Not yet confirmed: the old cap of 25 shareholders on a private company, which we did not find; the audit exemption for small companies (Companies Act s.210 onward not read in full); incorporation timing of 1 to 3 weeks; the FSC licensing steps, as the FSC site returned no readable page.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

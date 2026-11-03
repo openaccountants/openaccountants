@@ -205,21 +205,3 @@ expected:
 | ANAF, Declarația unică online filing (SPV) | https://www.anaf.ro/anaf/internet/ANAF/servicii_online/declaratia_unica | 2026-10-23 |
 
 Not yet confirmed: the early-payment discount (art. 121) for amounts paid in 2027 is not set yet. The 2026 norm amounts for each county and activity were not read; use the regional directorate's published list. The norm activity list is cited as OMFP 925/2017 from the reference note in the Fiscal Code; the order itself was not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

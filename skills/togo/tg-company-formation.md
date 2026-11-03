@@ -108,21 +108,3 @@ Obtain intended activity and licences, number/type/nationality of owners, manage
 | Loi n°2025-002 du 31 décembre 2025, finances 2026. Art. 2 and fiscal provisions arts. 7-21, especially the replacement CGI/LPF text in art. 21; scanned PDF read using local OCR with material provisions checked against page images. | https://finances.gouv.tg/wp-content/uploads/2026/01/Loi-de-finances-de-lannee-exercice-2026.pdf | 2026-11-01 |
 
 Not yet confirmed: Current national notarial/authentication exception and whether a specific partial-paid-capital CFE dossier is accepted; compulsory French-language wording; capital-deposit/bank-certificate procedure; beneficial-owner registration and all live electronic fields; regulated activity approvals and entire incorporation cost/timeline beyond the published CFE service. The old approximate 1-4 week, CFA 300,000-800,000 and 2% capital-duty statements are not applied.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

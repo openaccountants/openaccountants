@@ -236,21 +236,3 @@ All read on 2026-10-22.
 - Justel, list of 2025 and 2026 laws amending the WIB 92: https://www.ejustice.just.fgov.be/cgi_loi/change_lg.pl?language=nl&la=N&cn=1992041032&table_name=wet
 
 Not yet confirmed: the filing date printed on the 2026 non-resident return for income 2025 (art. 308 WIB 92 leaves the date to the form; FPS Finance pages at fin.belgium.be were behind a human-verification check and could not be read, and the form model in the royal decree of 22 June 2026 does not print it; secondary references give 20 November 2026); the conditions of the domestic withholding exemptions for EU parent companies and associated companies (KB/WIB 92); whether municipal surcharges apply to the exit tax in the year of departure; the RSZ/ONSS treatment of the 35% inbound cost allowance.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

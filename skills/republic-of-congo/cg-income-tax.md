@@ -131,21 +131,3 @@ expected:
 Figure/rule quotations and source hashes: [country ledger](../../evidence/ledgers/republic-of-congo-draft-20261101/cg-income-tax.md). Every worked figure is conditional on the stated example facts.
 
 Not yet confirmed: Later 2026 amendments/currentness; operative IBA/annual multi-source salary deadlines and portal fields; forfait 5%/8% statutory chain and threshold; special foreign secondment 20% and old BNC 20% scope; full 116C special-share cases including malformed 116C(1)(b); current SMIG, social rates/ceilings, foreign credits and detailed investment gains. Every former topic is retained or routed to this hold in the old-topic map.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

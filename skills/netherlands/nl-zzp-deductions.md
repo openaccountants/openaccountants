@@ -227,21 +227,3 @@ expected:
 Pending law: the Belastingplan 2027 bill (Kamerstuk 37022, sent to the Tweede Kamer on 15 September 2026, not enacted on 24 October 2026) raises the business car rate in art. 3.15(6) and 3.17(1)(b) from EUR 0.23 to EUR 0.25 with effect back to 1 January 2026 (art. I parts C and D, art. LXIII(1)(a)); the Belastingdienst already applies EUR 0.25 for 2026. The same bill cuts the startersaftrek in art. 3.76(3) to EUR 10 (art. I part G) and repeals it from 1 January 2028; the explanatory memorandum (nr. 3, par. 5.5) says the cut applies from 1 January 2027 and that starters can still use the startersaftrek in 2026. Starter free depreciation is to end from 1 January 2028 through the Eindejaarsregeling 2026, and the startersaftrek bij arbeidsongeschiktheid from 1 January 2029. Recheck once the Staatsblad text is published.
 
 Not yet confirmed: the commencement clause of the bill as introduced (art. LXIII(1)(a)) lists art. I part G among the parts backdated to 1 January 2026, which conflicts with the memorandum; this skill follows the law in force (EUR 2,123 for 2026) until the enacted text settles it; the statute says the meewerkaftrek partner works "without any remuneration" while the Belastingdienst also accepts pay under EUR 5,000, so that point rests on the authority's reading; the 70% figure for supportive work in a related-person partnership comes from the Belastingdienst page, not the statute.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

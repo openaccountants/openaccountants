@@ -187,21 +187,3 @@ A trader expecting MAD 1,200,000 is over the auto-entrepreneur ceiling but withi
 Pages tried and not opened on 2026-11-01: ae.gov.ma, rn.ae.gov.ma, ompic.ma, directentreprise.ma, cnss.ma (no connection, also in a browser tab); ice.gov.ma (refused).
 
 Not yet confirmed: Law 114-13 text and RNAE documents, fee and timing; automatic CNSS affiliation; Law 47-06 and 07-20 on TP and TSC, including the AE position; Laws 5-96 and 24-10 on SARL capital and blocking; ICE structure and who attributes it (OMPIC for companies, DGI for individuals, recovery at ice.gov.ma); two RC forms (analytique, central) under Law 15-95; name certificate fee; SARL cost, time and step order; which service trades need no RC.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

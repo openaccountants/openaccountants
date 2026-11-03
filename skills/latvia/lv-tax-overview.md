@@ -62,21 +62,3 @@ Latvia is an EU member state with a euro tax system run by the State Revenue Ser
 likumi.lv did not respond on 2026-10-30, so the law texts were read from the Internet Archive copies dated above. VID pages were read live.
 
 Not yet confirmed: the Micro-enterprise Tax Law itself (likumi.lv did not respond and the Internet Archive has no 2026 copy), so the micro-enterprise rules above come from VID's pages only.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -14,8 +14,6 @@ tier: 2
 
 # Malta Formation v1.2
 
-Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.**
-
 Tax year 2026. This skill is the workflow for setting up a Maltese company. It does not repeat the tax computations: company tax and refunds are in `mt-corporate-tax`; accounts and audit in `malta-financial-statements`; VAT registration in `malta-vat-return`; employer registration and payroll in `malta-payroll`; the owner's personal tax in `malta-income-tax`; selling the shares later in `selling-a-company-in-malta`; company residence and substance in `mt-company-residence-and-substance`.
 
 ## Section 1: Quick Reference
@@ -244,24 +242,4 @@ Not yet confirmed:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute legal, tax, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional before acting upon.
 
-The most up-to-date version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
-
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

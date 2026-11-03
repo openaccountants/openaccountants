@@ -390,21 +390,3 @@ expected:
 | Tax Administration decision on the default interest rate for 18 July to 31 December 2026 (5.4% a year) | https://wapi.gov.me/download/6d6ec964-3dd6-4588-b81a-a5affc153f6e?version=1.0 | 2026-10-30 |
 
 Not yet confirmed: the Ministry of Finance lists of goods and services at 7% and 15% (art. 24a(3)) in their current version; whether the 2026 Budget Law used the art. 63 power to change a VAT rate; the current IRMS electronic return layout against the PR PDV-2 form (published December 2024), including how energy row 23 enters the totals; the rulebooks for refunds (art. 50(5)), non-established business refunds (art. 51) and traveller refunds (art. 52), including deadlines and minimum amounts; from when interest on overpaid tax runs under the 30-day wording of art. 96 as replaced by 104/26 art. 21; the computation method for capital goods corrections under art. 39 and the Ministry rulebook on the pro rata (art. 38(8)); the special schemes for travel agents (art. 44), second-hand goods, art and antiques (arts. 45 to 47), auctions (arts. 48 to 49) and investment gold (art. 49a); the procedure and time limit for an amended return; the date of EU accession that starts the 104/26 law.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

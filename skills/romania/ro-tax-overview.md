@@ -52,21 +52,3 @@ This is a short map. Each line points to the skill that holds the detail. The la
 | Legea 141/2025 (Monitorul Oficial nr. 699 of 25 July 2025), ANAF copy: art. II pt. 1, 5 and 42, art. VII | https://static.anaf.ro/static/10/Anaf/legislatie/L_141_2025.pdf | 2026-10-23 |
 
 Not yet confirmed: nothing beyond the open points listed in each linked skill.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

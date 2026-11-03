@@ -12,8 +12,6 @@ tier: 2
 
 # Greece: capital gains tax for individuals, tax year 2026
 
-Source-cited draft. Built by Michael Cutajar and the OpenAccountants team.
-
 This skill covers the tax an individual pays in Greece on a gain from selling capital: securities, a whole business and real estate. It links to the pack's other skills instead of repeating them:
 
 - Salary, pension, business profit, rent, dividends and interest, the E1 return and payment instalments: `gr-income-tax`
@@ -244,21 +242,3 @@ expected:
 | Housing Policy portal (stegasi.gov.gr): suspension of property capital gains tax to 31.12.2026 (ν. 5162/2024 art. 90) | https://stegasi.gov.gr/programs/anastoli-epivolis-forou-yperaxias-apo-metavivasi-akiniton/ | 2026-10-23 |
 
 Not yet confirmed: whether the suspension of art. 41 will be extended past 31 December 2026 (a Ministry of Finance draft bill put to public consultation in October 2026, open to 1 November 2026, extends it to 2027 according to press reports; it is not enacted, and the codification and the Housing Policy portal both give 31 December 2026); the legal basis AADE relies on to treat corporate bond gains as exempt; the fixed fine under ΚΦΔ art. 53 for a late return with tax due by an individual who keeps no books; whether the 0.5% holding in art. 42(1)(β) is tested only at the date of sale or over an earlier period (the law's wording is present tense; we did not read an AADE circular on it); how AADE applies "included in the acquisition price and the sale price" for costs in art. 42(3) (we treat purchase costs as added to cost and sale costs as deducted from proceeds); the Greek tax treatment of crypto-assets, which the codified Code does not address; any amendment to arts. 41 to 43 made during 2026 after ν. 5264/2025; the late-payment interest rate under ΚΦΔ art. 52; the 2026 E1 form and code numbers, which AADE has not yet published.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

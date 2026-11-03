@@ -237,21 +237,3 @@ expected:
 | Kanton Zürich, press release on the abolition of lump-sum taxation, January 2011 | https://www.zh.ch/de/news-uebersicht/medienmitteilungen/2011/01/004.html | 2026-10-23 |
 
 Not yet confirmed: the Ticino minimum comes from the ESTV cantonal sheet of February 2026, not the canton's own legislation site (which did not load); Vaud indexes its CHF 415,000 under LI art. 60 (RILI art. 1 para. 4) but its law of 1 May 2026 still prints CHF 415,000, and Ticino indexes its CHF 434,700 under LT art. 13 para. 8; neither 2026 indexed figure was found; whether Geneva or Bern index their CHF 400,000 (the law texts state a fixed figure); how Graubünden capitalises living costs into a wealth base; whether the 2020 revision of the ordinance on the credit for foreign withholding taxes (SR 672.201) changed the rule in circular no. 44, section 5.2, that lump-sum taxpayers generally get no credit; the special treaty rules for France, Belgium, Germany, Italy, Norway, Canada, Austria and the USA treaty by treaty; cantonal filing deadlines.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

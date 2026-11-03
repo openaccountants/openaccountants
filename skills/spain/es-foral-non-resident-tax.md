@@ -59,7 +59,6 @@ A non-PE receipt is calculated separately at each accrual. Do not offset losses 
 - **N-continuation**: [Navarra's current official IRNR normative page](https://www.navarra.es/es/web/normativa-hacienda/-/texto-refundido-de-la-ley-del-impuesto-sobre-la-renta-de-no-residentes-rdl-5/2004-de-5-de-marzo-), updated **27 October 2026**, expressly states that Navarra's Parliament has not approved this tax and that State rules apply until Navarra approves its own. This is positive evidence of continued application, not an inference from a failed search. Accordingly use [current RDL 5/2004](https://www.boe.es/buscar/act.php?id=BOE-A-2004-4527) for substantive IRNR, with Navarra CIT incorporation for PEs under LF 26/2016 art. 135.
 - **Local PIT**: B NF 13/2013, A NF 33/2013, G NF 3/2014, current versions already independently reviewed in the foral PIT work. Their actual PDFs were hash-verified and reread for this incorporation. Articles 9.24, 22, 32, 44–49 are particularly relevant. No State rental deduction table is substituted for them.
 
-
 ## Rates, bands and thresholds
 
 | Item | Amount or rule | Tax year | Official source |
@@ -281,7 +280,6 @@ Use the procedure law of the administration assessing the liability. Voluntary c
 
 For Álava/Gipuzkoa, filing an unpaid late self-assessment without the prescribed contemporaneous deferral, instalment or compensation request does not prevent executive collection costs. For all four, preserve notice dates, the exact declaration/self-assessment route, payment evidence, correction period and any reduction conditions. Incorrect refunds, false invoices, information omissions and failure to provide an assessment declaration have their own offences. A percentage range is not an automatic assessment: establish culpability, statutory base, classification and applicable reductions under the cited law.
 
-
 ### Basic2026 interest and narrow exceptions
 
 **Ordinary tax default interest is4.0625% annually in all four territories**. “Legal interest”, used where the local law specifically substitutes it, is3.25% for2026. The statutory uplift is25% of legal interest, so3.25%×1.25=4.0625%, not3.25%+25 percentage points. These are interest rates, not new flat penalties on every late return.
@@ -296,7 +294,6 @@ For Álava/Gipuzkoa, filing an unpaid late self-assessment without the prescribe
 A selected law's exception matters. Álava26.6 substitutes legal interest for qualifying fully guaranteed deferral/instalment/suspension and includes any guarantee the administration regards as sufficient; Gipuzkoa26.6 and Navarra50.2(c) enumerate the qualifying full bank/reciprocal-guarantee/caution-insurance guarantees. Do not transfer those exception lists automatically to Bizkaia or to an unsecured debt. Álava's additional compliant-taxpayer interest concession under NF21/2025 art.7 starts **1January2027**; it is not a2026 concession. Retain statutory excluded periods and the existing reviewed procedures. For a debt spanning years, split interest by the actual years/rates and applicable accrual periods; this addendum does not authorise interest where the surcharge rule excludes it.
 
 Illustrative arithmetic, assuming the local law actually requires interest for every stated day and an unchanged principal:10,000 for a whole365-day2026 accrual year produces406.25;73days on a365-day basis produces81.25. A100,000 eligible acquisition on30December1994 updates to203,000, while the same amount acquired31December1994 updates to215,600 before other adjustments or historic relief.
-
 
 ## Cross-border points
 

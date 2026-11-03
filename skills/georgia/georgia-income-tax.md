@@ -187,21 +187,3 @@ expected:
 | Government of Georgia Resolution No 436 of 23 December 2024 amending Resolution No 415 on special tax regimes (annex 5, item 12, in force 1 February 2025) | https://matsne.gov.ge/ka/document/view/6344539 | 2026-10-31 |
 
 Not yet confirmed: the rest of the Government lists of income outside the micro and small business limits and of activities barred from these statuses (art. 84(2)-(4), 88(2)-(3); only annex 5 item 12 of Resolution No 415 was read); the fixed tax activities and rates set by the Government (art. 95^1-95^6); the Georgian-source rules in art. 104 (not read in full); the English translation lags the Georgian text for art. 82 (laws of June 2025, November 2025 and 1 April 2026), and art. 94(2) still appears in English but is repealed in Georgian, so the Georgian text was used where they differ; whether a missed small business monthly return with no tax due is fined (the old version said GEL 100 per return; art. 274(3) imposes no late-filing fine where the tax is zero, art. 67(4) deems an unfiled return filed at zero except where the Minister of Finance provides otherwise, and art. 291 sets GEL 100 for a breach with no fine of its own; the Minister's order was not read); whether VAT charged by a VAT-registered entrepreneur is left out of gross income (the old version said so; no article found); whether a gain on a flat or house is taxed at 5% on the gross gain or after costs (art. 82(4)(b) not read); the rs.ge return forms; treaty rates.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

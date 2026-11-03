@@ -257,21 +257,3 @@ expected:
 | Belastingdienst, aangifte en betalen bronbelasting | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/bronbelasting-rente-en-royalty/aangifte-doen-en-betalen-+bronbelasting | 2026-10-23 |
 
 Not yet confirmed: the invitation date usually printed on 2025 C letters (the notes link belastingrente to filing after 1 May 2026, but the deadline itself is in each letter); filing dates for 2026 returns; how Dutch national insurance contributions are relieved when a resident is insured in the Netherlands and also works abroad; the treaty rates for partners other than the 12 listed; and how the MLI changes each listed treaty beyond the principal purpose test (in particular whether a 365-day holding period applies to the reduced company rates).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

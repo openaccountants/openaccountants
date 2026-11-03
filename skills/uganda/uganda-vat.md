@@ -60,7 +60,6 @@ Supplier patterns (classification hints, not law):
 | MTN UG, AIRTEL UG | Domestic 18% | Telecoms |
 | GOOGLE, MICROSOFT, AWS | Reverse charge 18% | Non-resident |
 
-
 ## Deadlines and filing
 
 Register within 20 days of the end of a three-month period above UGX 75,000,000, or at the start of a period where you expect to exceed it (https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/, s.7). VAT return: 15th of the following month (https://ura.go.ug/en/domestic-taxes/returns/). Input and output entries must carry FDNs from EFRIS (https://ura.go.ug/en/domestic-taxes/returns/).
@@ -127,21 +126,3 @@ expected:
 | URA compendium of domestic tax laws, as of July 2021: ITA Cap 340, VAT Act Cap 349 (only the sections cited; old numbering) | https://ura.go.ug/en/download/compendium-for-various-domestic-tax-laws/ | 2026-11-01 |
 
 Not yet confirmed: 18% standard rate in the law; the exempt list (old file: unprocessed foodstuffs, financial services, medical, education, unfurnished residential rent, social welfare, burial, postal, domestic water; furnished rent treatment); deemed supplies and the UGX 100,000 gift limit; Fifth Schedule rates (old file: 2% a month, compounding); box numbers 1 to 15 in the old file, including Box 14 for withholding credits; aircraft and diplomatic zero rating; revised-edition section numbers; the enacted VAT (Amendment) Act 2026 text; whether the 2021 Schedules were changed between 2022 and 2025. Old tests kept in mind: UGX 20m sale gives 3.6m output; 500,000 gift gives 90,000 only if the deemed supply rule holds.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

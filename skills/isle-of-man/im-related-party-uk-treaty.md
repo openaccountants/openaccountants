@@ -158,21 +158,3 @@ expected:
 | Income Tax Act 1970 (AT 3 of 1970), consolidated text [62], ss.2N, 57, 119BA, 119C | https://legislation.gov.im/cms/images/LEGISLATION/PRINCIPAL/1970/1970-0003/1970-0003_62.pdf | 2026-10-30 |
 
 Not yet confirmed: whether other Manx legislation (outside the Income Tax Act 1970) contains a general related-party pricing rule; country-by-country reporting scope and deadlines (the 2017 regulations, SD 2017/0091, could not be opened); Manx penalties and interest on an adjusted company return; the domestic procedure and time limit for claiming a corresponding adjustment in the Island; pricing methods, documentation and safe harbours accepted by the Income Tax Division.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

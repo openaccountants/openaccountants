@@ -85,8 +85,6 @@ The cash-deposit route covers a deposit with the lender or a person connected to
 
 Where the provision applies, **the interest is not deductible**. It does not say to disallow only the fraction matching the security percentage. Paragraph 7's exemption and decision/appeal provisions below remain relevant; a bank lender alone does not establish exemption. Confirm the loan, actual security coverage and income treatment before determining the adjustment. [Paragraphs 5 and 7](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-
-
 Retain security deeds, the lender/borrower connection maps, covered loan amounts and changes during the year, interest records, tax treatment of the deposit/investment income, and evidence supporting any paragraph 7 exemption. Allocation between multiple loans, disputed security coverage and the investment-definition cross-reference require further review.
 
 ### Separate net-borrowing-cost limitation

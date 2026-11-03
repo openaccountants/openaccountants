@@ -174,20 +174,3 @@ expected:
 | Law 4632 on private pensions, consolidated: ek art. 1 and footnote on Presidential Decision 10811 (Official Gazette 7 January 2026 no. 33130) | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.4632.pdf | 2026-10-31 |
 
 Not yet confirmed: withholding rates on interest (deposit interest is now set under GVK provisional art. 67, not read); the simple method (basit usul) and the tradesman exemption (art. 9) amounts; the cost and indexation rules for capital gains (mükerrer art. 81, not read) and the full list of untaxed disposals (art. 81, read in part only); crypto-asset gains; the 2026 severance ceiling under Labour Law 1475; the start date of Presidential Decision 10811 and the deduction for employer pension contributions; sponsorship deductions (art. 89(5)-(10) read in part only); whether the self-employed deduct their own social security premiums as a business expense (arts. 40 and 68 do not say so in terms); the GİB circulars that set the later dates in GİB's table; the procedure communiqué for the art. 20/D exemption; treaty rates. The cumulative monthly withholding table from the old version is now in tr-payroll-social.
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

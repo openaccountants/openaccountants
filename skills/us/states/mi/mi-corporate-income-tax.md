@@ -462,21 +462,3 @@ For tax year 2025:
 ### Out of scope / refusal triggers
 
 - **Refusal trigger list** — This skill does not address, and any work involving these topics should be refused or referred: - Insurance company tax under MCL 206.635 (refer to specialist). - Financial institution tax under MCL 206.651 (refer to specialist). - MBT continuation election analysis for taxpayers holding certificated credits (refer to specialist). - Local city income taxes for Detroit, Grand Rapids, Lansing, Saginaw, Flint, Pontiac, and other Michigan cities (refer to city-specific preparer). - §382 ownership change loss limitation analysis (federal specialist required). - Transfer pricing / IRC §482 intercompany pricing analysis for the related-party expense addback (federal specialist required). - Foreign affiliate / inclusion under water's-edge 80/20 test edge cases (specialist required). - Tax periods prior to January 1, 2012 (pre-CIT regime: MBT, SBT — different statute, different specialist). Where this skill provides a freelance-developer-scale answer (the typical small C-corp with under $1.3M of business income), it applies the SBAC default and produces a no-tax-due return on Form 4891 with the Form 4893 small business credit attached. End of skill. Tax year 2025.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -132,21 +132,3 @@ expected:
 | [Ministry AMU contribution guidance](https://www.fonction-publique.gov.bf/accueil/actualites/details?cHash=25196f1849f6833010b67cadeb5258be&tx_news_pi1%5Bnews%5D=2504) and [payment guidance](https://www.fonction-publique.gov.bf/accueil/actualites/details?cHash=a4f5423688bb0ffe0c4ef33bc95b172a&tx_news_pi1%5Baction%5D=detail&tx_news_pi1%5Bcontroller%5D=News&tx_news_pi1%5Bnews%5D=2517) | Actual 30 July 2025 and 6 August 2025 explanatory texts referring to Décret 2024-0345; read to distinguish AMU, not to certify its signed articles or operative 2026 activation. | 2026-11-01 |
 
 Not yet confirmed: controlling reconciliation of quarterly declaration by the last following-month day versus payment within thirty days, including simultaneous-payment instructions;  readable full Loi 004-2021 and Décret 2023-0129 with exact controlling article checks; historical prior ceiling XOF 600,000; CNSS late-payment 2%/late-declaration 1% legacy claims and legal-interest interaction; repeated-risk-surcharge words versus printed percentage; current SMIG and part-period/multiple-employer floor/ceiling; current authenticated e-CNSS template/acknowledgement/payment allocation; full voluntary eligibility/income election; signed AMU decree and operative 2026 categories/start dates, rates/bases/ceilings, forms and remittance; foreign coverage/coordination and sanction cumulation. Independent conditional source review of this rewrite is accepted; no accountant has attested to it.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

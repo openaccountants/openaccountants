@@ -76,7 +76,6 @@ Since Law 009/2025, fuel and road transport of goods are taxable. Fee-based fina
 | MTN RW, AIRTEL RW | Domestic 18% | Telecoms |
 | GOOGLE, MICROSOFT, AWS | Reverse charge 18% | Non-resident |
 
-
 ## Deadlines and filing
 
 | Period | Due |
@@ -182,21 +181,3 @@ expected:
 | RRA Tax Handbook 2025 (read: E-Tax steps, real regime, PAYE, VAT declaration chapters) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-01 |
 
 Not yet confirmed: three old file lines not re-read in the law, kept as prompts only: 18% at market value on stock held at cessation; a supply to a special economic zone being zero-rated with a certificate; handwritten non-EBM invoices giving no input credit; the 20,000,000 and 5,000,000 thresholds are from the RRA page; the article of the law was not found in our extract; CG Instructions 001/2023 predate Law 049/2023; RRA Pay PAYE page shows March to May style quarters for PAYE, which differ from the Instructions, so confirm with RRA before relying on either; old return boxes A1-A7, B1-B9, C1-C3 could not be matched to any page read and are removed from the body; the old supplier pattern treatments of REG, WASAC and BK are working defaults; the medical scheme payment date is not a VAT point; Order 003/24 on foreign service authorisation was not read; Order 001/25 list of exempt financial services was only partly extracted.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

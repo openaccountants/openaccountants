@@ -138,21 +138,3 @@ expected:
 | [Official registrar resources](https://registrargeneral.gov.mw/resources), actual downloadable-resource titles/links and public MBRS registration/sign-in links read; no authenticated form or fee accepted | 2026-11-01 |
 
 **Not yet confirmed:** appointed Companies Act commencement and complete amendment chain; current CRIPC statutory transfer/mandate and company/beneficial-owner regulations; actual model articles, forms, fees and registration workflow; the reproduced 45(1), 68(1) and 244(1) drafting anomalies; current private-company audit conditions and meeting-free return procedure; shareholder/director changes beyond the cited scope, annual meeting rules, sector/immigration permissions, partnerships and business-name registration; TAA/cutover commencement and complete operative 2026 tax chain. Old VAT K25 million and 180-day annual-tax claims are not reinstated. All seven tax domains remain partial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

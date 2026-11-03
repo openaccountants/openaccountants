@@ -245,21 +245,3 @@ expected:
 | Magyar Nemzeti Bank, press release on the Monetary Council meeting of 20 October 2026 (base rate 5.50%) | https://www.mnb.hu/en/monetary-policy/the-monetary-council/press-releases/2026/press-release-on-the-monetary-council-meeting-of-20-october-2026 | 2026-10-23 |
 
 Not yet confirmed: that private accommodation is outside the Szocho tv. 5. § (2) h) exemption for income from letting real estate rests on NAV information sheet 10, section 5; the Szja tv. treats the two activities separately (17. § (3) a) ab)), but the Szocho tv. does not define letting. NAV publishes no 2026 information sheet on crypto; the crypto section rests on the act alone.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

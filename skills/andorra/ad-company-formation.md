@@ -55,21 +55,3 @@ The laws below are read from the consolidated texts on the Portal Jurídic d'And
 | Llei 17/2008 de la seguretat social, consolidated text, arts 96, 100, 101, 103 | https://www.portaljuridicandorra.ad/L2008017 | 2026-10-30 |
 
 Not yet confirmed: (1) the old file's typical times (name approval in 1 to 2 business days; incorporation in 8 to 14 weeks) have no official source; only the statutory limits above are given. (2) The old file said directors need not be resident; Llei 20/2007 sets no residence condition that was found, but no sentence says so in terms, and a director who works in Andorra needs the right immigration permit. (3) Which form is most used in practice (the old file said SL for SMEs, SA for larger ventures) is not from an official source. (4) The regulation that sets the place and deadline for depositing accounts (art 74) was not read. (5) Notary and registry fees were not read. (6) The old file's bank certificate for the capital deposit is not in Llei 20/2007 as read; the deed records the contributions (art 18) and the notary checks the legal requirements (art 7(2)). (7) Consolidated texts have no official status; the BOPA text governs.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

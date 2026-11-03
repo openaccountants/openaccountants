@@ -216,21 +216,3 @@ A positive `revenue_over_threshold` means the revenue criterion is exceeded; a p
 | FOD Financiën, transfer pricing pages (financien.belgium.be) | https://financien.belgium.be/nl/experten-partners/verrekenprijzen | Not read: the site returned a bot-protection page on 2026-10-22; no figure relies on it |
 
 Not yet confirmed: the AY 2027 corporate return deadline (and so the 2026 local file deadline), not published on 22 October 2026; whether the administration still expects a ruling before it grants a downward adjustment under art. 185, § 2, b (the statute does not require one; the official TP page could not be read); the current upload channel for 275 LF (circular 2017/C/56 named e-mail, the 2020 FAQ says all BEPS 13 forms were brought onto MyMinfin; the FOD Financiën page that would confirm the 2026 channel could not be read).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

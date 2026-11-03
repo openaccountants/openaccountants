@@ -48,21 +48,3 @@ Invoices to another taxable producer must show product nomenclature and the amou
 Obtain the production start date, preceding-year production ledger, other-department establishment details, product classification, import records and the applicable regional decisions. Confirm the current consolidated law and filing channel. Regional rates and exemptions need the product code and effective date; no universal octroi rate is supplied here. Article 27 in the circular assigns rate setting to the regional authority, and Finance Law 2026 article 99 amends the communication/effective-date framework. [2026 Finance Law, article 99](https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000053508155).
 
 Current product rates, deductions/refunds, suspension, special production cases, penalties and the full amendment chain remain outside this initial Guide. Independent source review and accountant attestation are pending.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

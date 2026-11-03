@@ -219,21 +219,3 @@ Key law: CGI art. 200 A (PFU), 158 (dividend allowance), 150-0 A to 150-0 D ter 
 | Brochure pratique 2026, printed p. 137; actual original PDF page viewed, complete two-column 2074 dispensation/CMV/ABT passage, not the scrambled extraction alone | https://www.impots.gouv.fr/www2/fichiers/documentation/brochure/ir_2026/pdf_som/09-plus_values_137a156.pdf | 2026-10-31 |
 
 Not yet confirmed: the CGI text of art. 150-0 D (holding allowances, ten-year loss carry-forward) and the social levy duration allowance scale read on Légifrance (figures from impots.gouv.fr and F10864); the EUR 15,000 sale price exemption in the code text; the social levies on non-residents' property gains; employee savings match caps; PER exit computation; the free-share regime for plans of 8 August 2015 to 31 December 2017; the conditions of the retiring director's allowance.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

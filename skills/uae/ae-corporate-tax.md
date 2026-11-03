@@ -395,21 +395,3 @@ The same rates, the AED 375,000 band and the Small Business Relief conditions ap
 | A15: whole original Arabic Decision arts 1-6, especially categories and commencement | https://tax.gov.ae//Datafolder/Files/Legislation/2026/FTADecisionNo15Of2026onProvisionsonExemptionFromCorporateTaxAr.pdf | 2026-11-01, read: the scope stated in the first column; exact capture/hashes in evidence/uae-2026-closeout/source-identities.json |
 
 Not yet confirmed: NON-OPERATIVE HOLDS: detailed MD 229/2025 activity classification under Article 2(3)-(4); detailed exemption applications under FTA Decision 15/2026, the QFZP election-duration rule, the separate Cabinet Decision 44/2020 MNE definition used for Small Business Relief, accounting-standard/cash-basis eligibility under MD 114/2023, detailed top-up-tax computation and later information-return implementation, and the records-content requirements of FTA Decision 4/2026. Do not determine these from this Guide. The immutable old text and rule destinations are in evidence/uae-2026-closeout. These holds do not suspend the seven-year retention rule expressly required by Corporate Tax Law Article 56.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -45,8 +45,6 @@ By business form:
 
 A light entrepreneur using an invoicing service is, as a rule, self-employed and needs YEL if the work is not totally random and the work input reaches the 2026 limit. The worker can still be in an employment relationship with the ordering party; an employee belongs in TyEL. In unclear employment/YEL cases obtain the Finnish Centre for Pensions applicable-act decision. MYEL agricultural/grant insurance is a separate scheme. [YEL Act, sections 3–4][yel]; [ETK YEL scope][etk].
 
-
-
 A paid employee's pension/unemployment/health/accident/group-life duties are computed in the payroll skill; they are not missing simply because this skill follows the entrepreneur route. When a person has a separate job and self-employment, assess each activity and aggregate only the bases the particular statute requires. An invoicing service does not turn actual employment into entrepreneurship. Retain contracts, ownership/votes including indirect holdings, family relationship, work evidence, pension status and the applicable-law decision. [YEL Act, sections 3–4][yel]; [TyEL Act, sections 4, 7][tyel].
 
 ## Rates, bands and thresholds
@@ -190,21 +188,3 @@ Not yet confirmed: separately scoped MYEL/agriculture/grant cases, multi-country
 [faq]: https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/faqs-on-yel-insurance/
 [social]: https://www.tyoelake.fi/en/pensions-for-the-self-employed/social-security-of-the-self-employed-based-on-confirmed-income/
 [applicable]: https://www.etk.fi/en/finnish-pension-system/pensions/pension-coverage-and-insurance/decision-on-the-applicable-earnings-related-pension-act/
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

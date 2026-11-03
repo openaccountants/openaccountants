@@ -168,21 +168,3 @@ expected:
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
 
 **Not yet confirmed:** current city/category tables for Beijing, Shenzhen, Guangzhou, Hangzhou and Chengdu; pre-July 2026 Shanghai housing-fund bounds; non-Shanghai collection calendars and rounding; the previous blanket 5%–12% housing range; city-specific medical-account allocations and supplementary medical fees; precise maternity leave days/local supplements/divisor; local unemployment-benefit percentages; current flexible-worker pension rates and non-Shanghai voluntary-fund rules; foreign/Hong Kong/Macao/Taiwan housing-fund participation; branch-specific social-security agreements/certificates; pre 20 September 2026 housing-fund violation transitions; retirement-benefit and lump-sum eligibility computations. The earlier illustrative tax 1290 yuan is not verified as a current payroll result. These named limits replace unsupported defaults; they do not authorise estimating with another city's table. Additional original topics retained as explicit unconfirmed/referral limits: resident rural/urban schemes; retiree rehires; intern/student work; dispatch/outsourcing; cross-province employer registration; enterprise/occupational annuities; commercial supplementary medical/employer-liability insurance; the former eight work-injury industry classes, industry examples and floating coefficients.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

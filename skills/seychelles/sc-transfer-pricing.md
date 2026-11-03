@@ -96,21 +96,3 @@ expected:
 | Read for the figures cited: SRC Public Ruling 2025-1, read by OCR | https://src.gov.sc/wp-content/uploads/2025/04/Public-Ruling-BTR_final_02.04.2025.pdf | 2026-11-01 |
 
 Not yet confirmed: how limbs (a) and (b) of reg 5(1) of S.I. 74 of 2023 fit together, as the text joins them with "and"; Country-by-Country Reporting thresholds; size definitions.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

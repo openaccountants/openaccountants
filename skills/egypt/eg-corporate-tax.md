@@ -186,21 +186,3 @@ Do not help hide profit, invent costs or shift profit to related parties off arm
 Not yet confirmed: whether the Law 151/2026 changes (participation exemption without the 10% add-back, listed gains exemption, repeal of art. 46 bis 5) apply to the whole of tax year 2026 or only from 29 July 2026; Law 151 art. 7 gives only the start date. Whether Law 30/2023 art. 5 (3:1 for 2024 to 2027) is read by ETA as still running after Law 151 replaced art. 52 item 1. How the disallowed interest is allocated where loans carry different rates. Whether arts. 21, 23 (other than item 10), 24 and 25 to 27 were amended after 2005 by a law not read here (only the 2005 text was read, and no amendment was found in Laws 53/2014, 96/2015, 30/2023 or 151/2026). The old skill's 5% donations cap is wrong (art. 23 item 8 says 10%); its blanket fines add-back is narrower in the law (art. 24 item 2: felonies and intentional misdemeanours); its entertainment add-back, start-up costs over five years, R&D 150% and training 100% deductions had no official source and were not found. Whether the 40% and 40.55% rates in art. 49 second para. still stand unchanged (no later replacement was found in the laws read). Whether art. 46 bis 4's three-year fair value uplift applies to companies' gains, since it sits in the individuals' book. The meaning of the art. 56 bis exclusion of resident-company dividends from dividend tax (see `eg-withholding-tax`). Transfer pricing documentation thresholds (old skill: EGP 8 million, CbCR EGP 3 billion) belong to `eg-transfer-pricing`. Free zone and special economic zone regimes (Law 83/2002, Investment Law 72/2017), a non-calendar financial year approval, and the box numbers of the corporate return were not read.
 
 > Originally contributed by Ahmed Hassan; rebuilt against the law by the OpenAccountants team.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

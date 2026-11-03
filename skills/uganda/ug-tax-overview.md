@@ -75,21 +75,3 @@ expected:
 | Income Tax Act, ULII consolidated text at 2024-12-23 (read in a browser: Schedule tables and rate lines only) | https://ulii.org/akn/ug/act/1997/11/eng@2024-12-23 | 2026-11-01 |
 
 Not yet confirmed: 18% VAT rate in the law; revised chapter numbers for the acts.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

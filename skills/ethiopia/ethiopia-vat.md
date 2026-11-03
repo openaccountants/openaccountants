@@ -113,7 +113,6 @@ Not yet confirmed: Schedules 1, 2 and 3 are absent from the copy read, so the ze
 | Turnover Tax | ABOLISHED (Proclamation 1395/2025) |
 | Primary legislation | VAT Proclamation 1341/2024 (replacing 285/2002) |
 | Contributor | Open Accounting Skills Registry |
-| Validated by | Pending |
 | Last research update | April 2026 |
 
 ### Section 2 -- Required inputs and refusal catalogue

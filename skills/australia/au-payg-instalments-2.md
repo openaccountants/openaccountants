@@ -55,21 +55,3 @@ The variation must be lodged by the instalment due date and before the income ta
 Keep the forecast, assumptions, calculation, reason code and lodged statement. Review the forecast when trading conditions change. Match instalment credits on the income tax assessment to the instalment account and investigate differences before treating an expected credit as available cash.
 
 > Contributed by Ryan Duguid.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

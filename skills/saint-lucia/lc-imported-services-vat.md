@@ -40,21 +40,3 @@ An illustrative nonregistered business cannot conclude that no import VAT is due
 Keep the contract, supplier identity/location, description of services, recipient-use analysis, valuation calculation, tax-point decision, declaration and payment receipt together. Separate withholding-tax and treaty questions from VAT: this Guide determines neither.
 
 Review zero-rating/exemptions, section 4(12), mixed-use treatment, taxable value, input deductions and current submission instructions before filing. The IRD imported-services brochure was located but returned 404 directly; no successful capture is claimed. Independent review remains outstanding, and this is not a complete cross-border tax pack.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

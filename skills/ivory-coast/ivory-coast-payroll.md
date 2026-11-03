@@ -172,7 +172,6 @@ Statements and payroll documents are typically in **French**. Common terms and p
 | DISA | Annual individual salary declaration |
 | SMIG / SMAG | Minimum wage (general / agricultural) |
 
-
 ## Ask the client first
 
 1. Number of staff, and local or expatriate contracts?
@@ -196,21 +195,3 @@ Statements and payroll documents are typically in **French**. Common terms and p
 | CNPS, employer page (paying contributions read; its SMIG and pension ceiling are out of date, the communiqué wins) | https://www.cnps.ci/employeur | 2026-11-01 |
 
 Not yet confirmed: the full consolidated Code général des Impôts and Livre de Procédures fiscales 2026 (DGI lists them in its paid kiosk; the text was not opened), so article numbers come from the DGI documents above; the SMIG after 2023 (no later decree found on gouv.ci; a search is not proof of none); SMAG 39,960 (no official page opened); the definition of expatriate through an AEJ approved contract; e-impots screens and boxes; the ITS late surcharge of 25% plus 2% a month in the earlier version; benefits in kind tables; complementary pension exemption (one tenth of pay and 320,000, shown in the 2025 DGI table, not checked further).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

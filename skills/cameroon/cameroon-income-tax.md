@@ -215,7 +215,6 @@ Transfer between own accounts. Neither income nor expense. Exclude entirely.
 
 Classification: EXCLUDE.
 
-
 ## Ask the client first
 
 1. Is fiscal domicile in Cameroon?
@@ -238,7 +237,6 @@ Classification: EXCLUDE.
 | Unknown CGA membership (self-employed) | Assume NOT a CGA member (no IGS halving) |
 | Unknown VAT status | Standard 19.25% VAT-registered |
 
-
 ## Section 2 -- Required Inputs and Refusal Catalogue
 
 ### Required Inputs
@@ -256,7 +254,6 @@ Classification: EXCLUDE.
 - **R-CM-4** : Capital gains / property disposals. "Capital gains and property-transfer taxation require specialised analysis. Out of scope. Escalate."
 - **R-CM-5** : Arrears / enforcement. "Client has outstanding tax arrears or is subject to DGI enforcement. Penalties (10%/month late filing, 1.5%/month interest, and 30%-100%/150% bad-faith assessment uplifts) are severe. Do not advise. Escalate immediately."
 - **R-CM-6** : VAT return requested. "This skill covers IRPP only. Cameroon standard VAT is 19.25% (17.5% + 10% CAC) and is computed separately."
-
 
 ## Section 3 -- Transaction Pattern Library
 
@@ -343,7 +340,6 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 | Ecobank Cameroun | TRANSFER, PAYMENT, CHARGES | PDF/CSV; mixed FR/EN |
 | Orange Money / MTN MoMo | TRANSFERT, PAIEMENT MARCHAND, RETRAIT | Mobile-money statement export; confirm business vs personal |
 
-
 ## Tier 2 catalogue
 
 ## Section 6 -- Tier 2 Catalogue (Reviewer Judgement Required)
@@ -375,7 +371,6 @@ This is the deterministic pre-classifier. When a bank statement transaction matc
 ### 6.7 Entertainment / Gifts
 
 - **Entertainment / Gifts** : Treated as blocked in this skill; confirm any statutory partial allowance with the reviewer before deducting.
-
 
 ## Section 7 -- Excel Working Paper Template
 
@@ -477,7 +472,6 @@ ONBOARDING QUESTIONS -- CAMEROON IRPP
 9. What is your CNPS occupational-risk class (employer rate 1.75%-5%)?
 10. Any capital assets, home-office use, or vehicle used for business?
 
-
 ## Test suite and prohibitions
 
 ### Test Suite
@@ -524,7 +518,6 @@ Expected: employer total = 4.2% + 7% + 1.75% = 12.95%; employee total = 4.2%.
 - NEVER skip the round-down to the nearest XAF 1,000 on the net taxable income
 - NEVER rely on a unverified figure for a filed return without reviewer confirmation against the 2026 CGI
 
-
 ## Sources
 
 | Source | URL | Read on |
@@ -538,24 +531,3 @@ Not yet confirmed: CNPS rates and ceiling (site did not open); minimum wage; 10-
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network : accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
-

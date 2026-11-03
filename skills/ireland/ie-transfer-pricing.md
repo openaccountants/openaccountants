@@ -228,21 +228,3 @@ expected:
 | Revenue, CT payment and filing (filing date, 0.0219% daily interest) | https://www.revenue.ie/en/companies-and-charities/corporation-tax-for-companies/corporation-tax-payment-and-filing/payment-and-filing.aspx | 2026-10-22 |
 
 Not yet confirmed: the percentages of the s.1077E tax-geared penalties (not stated here); what TP questions the 2026 CT1 asks; whether the Finance (No. 2) Bill 2026 is amended at later stages to touch Part 35A or s.891H (as initiated it does not); how profit is attributed between an Irish branch and its foreign head office (not part of Part 35A, not covered here).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

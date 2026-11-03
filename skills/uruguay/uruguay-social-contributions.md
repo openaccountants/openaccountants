@@ -51,7 +51,6 @@ tier: 2
 | Minimum wage (from 1 Jan 2025) | **UYU 23,604/month** (+6%) (MTSS / Decreto, IMPO) |
 | IRPF (separate DGI tax) | Progressive 0%–36% in BPC units — **NOT a social contribution** (Section 7) |
 | Monthly filing | **Formulario 1102** (nómina BPS) |
-| Validated by | Pending — requires sign-off by a licensed Uruguayan accountant (contador público) |
 | Skill version | 0.1 (Tier 2) |
 
 **Contribution overview (Industria y Comercio / general private sector)**
@@ -530,21 +529,3 @@ Social contributions → Payroll: this skill produces the BPS layer (employee ~1
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed accountant in Uruguay) before implementation. This is a Tier 2 (research-verified) skill: figures are sourced to named authorities (BPS, DGI, IMPO), Big-4 summaries (PwC), and named advisories (EY Uruguay) but have not yet been verified section-by-section by a licensed Uruguayan accountant, and items marked "[RESEARCH GAP — reviewer to confirm]" carry residual uncertainty. The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -131,21 +131,3 @@ expected:
 | [DGI official CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | Arts. 298–306, 310–334, 776–778; art.307 exemption branches noted above and selected art.308 product headings/neighbouring descriptions. Not every product-code row or implementing order was read; no authenticated eSINTAX session. | 2026-11-01 |
 
 Not yet confirmed: current forms/boxes, platform implementing order, eSINTAX acknowledgements and payment references; full commodity classification/certificate execution; old claims for certified e-invoicing-system exemption, export-cement addition, local-processor conditions for shea/cashew and exact historical commencement dates; detailed capital-asset adjustment execution, refund-window interaction/category-specific filing and sanction cumulation. Independent conditional source review of this rewrite is accepted; no accountant has attested to it.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

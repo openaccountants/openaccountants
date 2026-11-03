@@ -120,8 +120,6 @@ The minimum contribution bases, tax-free parts and dependant allowances change t
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Bosnia and Herzegovina) before acting upon.
 
-The most up-to-date version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 ## Sources
 
 | Source | URL | Read on |
@@ -144,21 +142,3 @@ The most up-to-date version of this skill is maintained at [openaccountants.com]
 | Zakon o porezu na dodanu vrijednost: art. 57; amendment 80/23 (KM 100,000) | https://www.uino.gov.ba/portal/wp-content/uploads/PROPISI/2_Porezi/1_PDV/1_Zakon_o_PDV/B/B-H-S-1-5-Z-o-PDV-sl-list-80-23-24-11-23.pdf | 2026-10-30 |
 
 Not yet confirmed: the RS 8% salary rate in the text of the law itself (RS income tax law art. 4(1) after 119/21 was not on the scanned page; the 8% is taken from the RS Tax Administration's 2026 example); Brčko contribution rates, so no Brčko salary illustration is given; the contributions a self-employed person pays in each entity (left to bosnia-social-contributions); the FBiH flat-rate (paušal) entry tests (amounts are in bosnia-income-tax).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

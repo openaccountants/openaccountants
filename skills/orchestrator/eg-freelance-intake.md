@@ -107,8 +107,6 @@ State the route plainly to the user, confirm the reviewer step, and hand off. Ex
 
 This skill performs orchestration and routing only. It establishes facts and directs the case to the correct Egyptian tax regime; it computes no tax figures itself. All figures, classifications, and filing positions produced by the downstream skills must be reviewed and signed off by a qualified Egyptian accountant (محاسب قانوني) before filing with the Egyptian Tax Authority (ETA / مصلحة الضرائب المصرية) or acting upon them. Thresholds and rules cited (the EGP 20 million simplified-regime threshold under Law No. 6 of 2025, the EGP 500,000 VAT registration threshold under VAT Law No. 67 of 2016, and the general income-tax brackets under Law No. 91 of 2005 as amended by Law No. 175 of 2023) should be re-verified against current ETA guidance at the time of filing.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as Egyptian tax law changes.
-
 ## Step 4 — Hand off (routing map)
 
 0. **Route resident individual under simplified turnover threshold who opts in** — Route to eg-sme-tax
@@ -118,21 +116,3 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 0. **Stop for non-resident** — Stop — refer to a specialist in non-resident filings
 0. **Escalate/stop for company** — Escalate / stop — corporate tax, out of scope for this workflow
 0. **Converge and assemble package** — Hand off structured intake package to eg-return-assembly
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

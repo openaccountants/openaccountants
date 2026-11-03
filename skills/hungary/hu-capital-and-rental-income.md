@@ -211,21 +211,3 @@ expected:
 | NAV information sheet 49, A szociális hozzájárulási adó (2026-01-16) | https://nav.gov.hu/pfile/file?path=/ugyfeliranytu/nezzen-utana/inf_fuz/2026/49.-A-szocialis-hozzajarulasi-ado-2026.-01.-16 | 2026-10-23 |
 
 Not yet confirmed: whether rental income, which bears no szocho, still counts towards the HUF 7,747,200 szocho cap. Szocho tv. 2. § (2) counts income under 1. § (1)-(3); rental income is consolidated-base income under 1. § (1), but 5. § (2) h) takes it out of the 1. § (1)-(3) liability, and neither the act, NAV information sheet 49 nor the 25SZJA guide (line 286) says whether exempt income still counts. Also not read: the depreciation rates for let property in the Szja tv. 11. számú melléklet and the cost list in the 3. számú melléklet; the definition of a tax-free NYESZ pension payout in the NYESZ act (2005. évi CLVI. törvény) and whether szocho applies to the other income from a non-pension NYESZ withdrawal.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -213,21 +213,3 @@ expected:
 | Belastingdienst, invorderingsrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente | 2026-10-27 |
 
 Not yet confirmed: (1) the exact current routes for VAT objections that must be made by letter (VAT paid on a return, cash-accounting refusal) and the business-portal list beyond VAT and corporate tax, carried from the old version and taken from the Belastingdienst overview page, not re-read in full; (2) the intermediary (commercial software) authorisation rule, carried from the old version, not re-read today; (3) court filing for professionals through Mijn Rechtspraak, carried from the old version, not re-read; (4) the Awb and AWR amendments without a commencement date flagged on wetten.overheid.nl, not reviewed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

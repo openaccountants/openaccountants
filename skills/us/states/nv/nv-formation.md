@@ -487,21 +487,3 @@ Per `us-tax-workflow-base v0.2`, this skill emits a reviewer-oriented output pac
 - 0.1 (2025-11-15): Initial draft covering LLC formation, C-corp formation, charging-order protection, DAPT, Series LLC, NV vs WY vs DE comparison, foreign qualification, and three worked examples. Awaiting verification by Nevada-credentialed reviewer.
 
 End of nv-formation.md.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -12,8 +12,6 @@ tier: 2
 
 # Hungary corporate income tax (társasági adó): 2026
 
-Source-cited draft: not reviewed by an accountant, not for filing.
-
 The law is Act LXXXI of 1996 on corporate tax and dividend tax (the Tao. tv.). The tax authority is the Nemzeti Adó- és Vámhivatal (NAV). Section references below come from NAV's own guidance, which cites the Act paragraph by paragraph. The rate (19. §), the loss rules (17. §), the interest limitation threshold (8. § (1) j)), the development reserve (7. § (1) f), (15)), the group rules (2/A. §, 17. §) and the advances (26. §) were read in the official Nemzeti Jogszabálytár at njt.jog.gov.hu, in the version in force from 1 October 2026 (the short address njt.hu refused connections on 2026-10-22 and 2026-10-23).
 
 Related skills in this pack: hu-income-tax (individuals and sole traders), hu-social-contributions, hungary-vat-return, hungary-einvoice.
@@ -221,21 +219,3 @@ expected:
 | MNB: central bank base rate history | https://www.mnb.hu/Jegybanki_alapkamat_alakulasa | 2026-10-22 |
 
 Not yet confirmed: the group application window, which is in the Art. (Act CL of 2017) and taken from NAV information sheet 41; the Pillar Two revenue threshold and start dates in Hungarian law; the full CFC definition in Tao. tv. 4. § 11.; individual municipalities' HIPA rates and HIPA filing dates.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -235,21 +235,3 @@ expected:
 | ACD, laws passed in 2025 and in 2026 | https://impotsdirects.public.lu/fr/legislation/legi26.html | 2026-10-23 |
 
 Not yet confirmed: the consolidated text of § 29a and § 171 AO in force in 2026 (read only as inserted by the law of 19 December 2014; no later amendment was seen); a consolidated text of the CbC law (read in the 2016 original plus art. 13 of the law of 27 March 2026; amendments between 2017 and 2025, if any, were not seen) and the grand-ducal regulation of 13 March 2026; whether the ACD still applies the 2% safe harbour and the 10% return on equity at those figures (the circular says they will be reviewed; no revision was found); an official ACD text on how withholding is collected on a hidden distribution and on hidden capital contributions (the skill relies on the wording of arts. 18, 97, 146 and 164 LIR).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

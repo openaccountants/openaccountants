@@ -34,7 +34,6 @@ tier: 2
 | Pension | AFP (private — AFP Crecer, AFP Confía), overseen by the Superintendencia del Sistema Financiero (SSF) |
 | Training levy | INSAFORP (Instituto Salvadoreño de Formación Profesional) — employer 1% |
 | Key legislation | Ley de Impuesto sobre la Renta; Decreto Ejecutivo 10 (2025) retención tables; Ley del Seguro Social; Ley del Sistema de Ahorro para Pensiones (SAP); Código de Trabajo |
-| Validated by | Pending -- requires sign-off by a licensed Salvadoran contador / abogado laboral |
 | Skill version | 0.1 |
 
 ### The single most important El Salvador payroll fact
@@ -209,23 +208,3 @@ Minimum wages are set by sector by the Consejo Nacional del Salario Mínimo. **[
 ## Disclaimer
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed contador or abogado in El Salvador) before filing or acting upon.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

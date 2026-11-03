@@ -48,21 +48,3 @@ The most common business vehicle is the private limited liability company (užda
 | Centre of Registers: temporary name reservation, price list | https://www.registrucentras.lt/lt/paslauga/juridinio-asmens-pavadinimo-laikinas-rezervavimas | 2026-10-30 |
 
 Not yet confirmed: the Centre of Registers fee for registering an AB (not on the price list read); notary fees; the general-meeting time limit for financial years that ended before 1 July 2026; the "about 1-3 weeks overall" set-up time in the earlier version of this skill (no official source).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

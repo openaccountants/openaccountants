@@ -135,21 +135,3 @@ Minimum input: a bank statement.
 | ZRA Smart Invoice FAQs (2026), scope questions; read for the figures cited | https://www.zra.org.zm/wp-content/uploads/2026/08/Smart-Invoice-FAQs.pdf | 2026-11-01 |
 
 Not yet confirmed: the VAT Act and the Exemption and Zero-Rating Orders themselves were not opened; ZRA leaflets stand in, so old claims that basic foodstuffs, agricultural inputs, medical equipment and domestic electricity are zero rated, and that financial, residential rental, public transport, postal and domestic water supplies are exempt, are unconfirmed; bad debt relief after 12 months; old blocked items club subscriptions and invoices without TPIN; refund after 4 months of excess credits; old box numbers 1 to 20 (replaced, only lines 8 to 11 read here); whether the K800,000 annual and K200,000 quarterly tests apply together; withholding VAT at 100% of VAT with a return credit, and the date of suspension; old filing penalty of 1,000 units; 5% a month late payment charge (the old file figure conflicts with the leaflet).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -59,21 +59,3 @@ The current form separately deducts upfront gross receipts tax withheld by the V
 ## Open questions
 
 This draft does not establish nexus for remote sellers or contractors, special-sector exclusions, EDC or other incentive eligibility, reimbursement/pass-through treatment, authority to show tax separately on customer invoices, or the complete statute. The annual PDF is dated September 2013 despite still being linked by BIR. Its current application and the statutory amendment chain need independent review. Checked 22 October 2026; no complete-territory or accountant-attestation claim.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

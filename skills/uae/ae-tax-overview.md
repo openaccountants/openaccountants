@@ -347,21 +347,3 @@ All returns are filed and paid through EmaraTax.
 | Ministerial Decision No. 84 of 2025 | https://tax.gov.ae/Datafolder/Files/Pdf/2025/MD-No-84-of-2025.pdf | 2026-10-31, opened, spot-checked only: AED 50,000,000 audit test |
 
 Not yet confirmed: every figure not named in the Read on column was not re-read on 2026-10-31, and the date of its earlier reading is not recorded.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network, accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

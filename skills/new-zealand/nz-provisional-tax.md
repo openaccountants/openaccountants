@@ -365,21 +365,3 @@ Sources: [IRD payment dates](https://www.ird.govt.nz/income-tax/provisional-tax/
 | IRD paying your provisional tax | https://www.ird.govt.nz/income-tax/provisional-tax/paying-your-provisional-tax | 2026-10-31 |
 
 Not yet confirmed: none beyond the points this skill refers out.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

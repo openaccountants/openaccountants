@@ -207,21 +207,3 @@ expected:
 | Ministry of Labour, TEKA start (first insured from 1.1.2022; 3% plus 3% from June 2022) | https://ypergasias.gov.gr/xekinise-i-leitourgia-tou-neou-tameiou-epikourikis-kefalaiopoiitikis-asfalisis-teka/ | 2026-10-23 |
 
 Not yet confirmed: the ECB refinancing rate in force on the payment date, which sets the actual percentage of late-payment interest; any fine for a late APD (art. 7(1)(b) ν. 2972/2001, named in circular 24/2023, was not read); the KPK and branch rates for board fees of an AE (circulars 4/2017, 40/2022 and 31/2024 were not read); the 2026 APD periods for the Christmas and Easter bonuses (general document Ε40/535/28-07-2015 was not fetched); the statutory size of the Christmas bonus, Easter bonus and holiday allowance (labour law, not fetched); whether a cut from 1 April 2027 becomes law (press reports from October 2026 describe a Ministry of Finance bill cutting the employee unemployment contribution from 1.20% to 0.70%; no official text was found and it does not affect 2026); the contribution reductions listed on the Ministry of Labour page (50% of the employee share for a year after childbirth, art. 141(2) ν. 3655/2008; the employer reduction for employees under 25) were not checked for 2026.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

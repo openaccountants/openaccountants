@@ -67,7 +67,6 @@ The formula image embedded in current regulation point 8(4) was visually read: `
 
 The regulation requires monthly determination and recalculation for principal repayments; it also applies the stated method to loans granted and still unpaid in periods through 2019. Obtain the actual agreement, disbursement/balance and rate histories, repayment allocation and days of use. The bank/non-bank-lender exception requires the same financial product on general conditions accepted for **at least one third-party individual**; employment by a lender alone is insufficient. Keep loan principal, actual interest and the deemed benefit separate. Feed the benefit into the applicable cumulative PIT calculation; this value-only method does not establish every contribution-base exclusion, actual cash withholding or a no-cash-wages remittance route. Foreign-currency/FX-linked benchmark selection, no-observation rows, conversion and precise transaction-day/final monetary-rounding conventions remain explicit gaps. A published foreign-currency row showing zero rate **and zero volume** is not treated as proof of a universal zero employee-loan benchmark. [Code arts. 19(d), 88][code]; [regulation points 8(4), 38–44][reg]; [BNM report currency/borrower/term data and notes][loanreport].
 
-
 Social contributions use the covered accrued salary/remuneration base and the employer's statutory category. Compare the actual base with the national minimum proportionate to time worked and, for part-time/reduced work, the separate minimum contribution of one quarter of the full-minimum contribution. Do not deduct the employer's contribution from the employee's cash. Agriculture's State 6% is not an employer outlay or employee withholding. Special aviation and public rates are not general substitutes for 24%. [Law 489 arts. 17, 20, 22–23][social]; [CNAS points 9–13][cnas].
 
 Medical premiums ordinarily apply to covered gross before PIT or other deductions, and follow the actual remuneration payment timing. Excluded remuneration and IT-park salary require their own statutory tests. Do not import the social minimum floor into the employee's medical base. A payment in 2026 for remuneration through 31 December 2020 has IPC21 instruction point 9's specific historical health-premium rule; the ordinary current-payroll percentage summary is not a historical-period calculation. [Law 1593 arts. 3–6, 12, 20][health]; [medical budget art. 4][medicalbudget]; [IPC21 instruction point 9][ipc].
@@ -258,7 +257,6 @@ Current entitlement controls the relief fields: P and M are alternatives; Sm req
 
 Reconcile table 3 payment and withholding totals to the actual monthly records and recipient evidence. UNIF25's supplied annex has tables 1,3,4,6,7; there are no separate tables 2/5 in that approved binary. Neither those numbering gaps nor the legacy individual-social header prove that monthly CNAS/CNAM declarations have been completed. Actual classifier values, field 15/portal validation and inconsistent-source handling beyond these stated current-law rules remain open. [Actual full form][unif25form]; [Code 92(2),(8)][code].
 
-
 ## Penalties and interest
 
 **Calendar-2026 ordinary tax late charge.** Code art. 228(3) and the BNM decision of 6 November 2025, point 1, supply the calculation: the retained **6.00%** short-term policy rate, rounded up to a whole percent, plus **5 percentage points**, divided by **365 days**, gives **0.0301% per delayed day** after rounding the daily percentage to four decimal places. The decimal multiplier is **0.000301**. Apply it to the established outstanding principal for each chargeable day; split changes in principal and calendar year. This calculation concerns debts governed by art. 228 and does not replace a separate statutory regime's rate or establish case-specific relief. [Code art. 228(2)–(3)](https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro); [BNM decision, point 1](https://bnm.md/en/node/69226).
@@ -351,7 +349,6 @@ expected:
   march_net: 8305
 ```
 
-
 ## Ask the client first
 
 - Supply employer registration/activity/category and the worker's actual contract, residence, identity/IDNP/CPAS, start/end dates, hours and any special-regime or cross-border facts.
@@ -404,7 +401,6 @@ Not yet confirmed: full 2026 commencement/form-version comparison beyond the sel
 [medicalbudget]: https://www.legis.md/cautare/getResults?doc_id=156542&lang=ro
 [socialbudget]: https://www.legis.md/cautare/getResults?doc_id=152321&lang=ro
 
-
 [loanreport]: https://bnm.md/bdi/pages/reports/dpmc/DPMC8.xhtml?id=0&lang=ro
 [loanformula]: https://www.legis.md/UserFiles/images/RO/2020/mo165-176md/formula_543.png
 
@@ -435,21 +431,3 @@ Not yet confirmed: full 2026 commencement/form-version comparison beyond the sel
 [employ8]: https://www.legis.md/UserFiles/Image/RU/2022/mo%20267-273%20ru/an_8_126.doc
 
 [employ9]: https://www.legis.md/UserFiles/Image/RO/2026/mo186-189ro/an_9_126md.docx
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

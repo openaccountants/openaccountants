@@ -165,23 +165,3 @@ All filings are electronic via the ETA portal; payment is electronic at the time
 ## Disclaimer
 
 This skill performs **orchestration and assembly only** — it computes no tax figures. All amounts originate from the Egypt content skills (`eg-freelance-intake`, `eg-income-tax`, `eg-sme-tax`, `egypt-vat`, `eg-social-insurance`) and **must be reviewed and signed off by a qualified Egyptian accountant (محاسب قانوني)** before anything is filed with the ETA or NOSI. Deadlines, forms, thresholds, and the simplified-regime election rules change frequently; verify every flagged item against eta.gov.eg at filing time. Nothing here is tax, legal, or financial advice.
-
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

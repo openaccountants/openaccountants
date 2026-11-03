@@ -20,7 +20,6 @@ Use only after collecting the legal form, activity, taxpayer regime, actual turn
 
 Use legal form and activity before comparing taxes: high turnover does not itself make a sole trader an IS company. Default IS forms and the signed IBICA election out for specified partnerships/GIE are in the corporate Guide. This workpaper is a conditional comparison, not a guaranteed saving. [CGI 2026 arts. 1, 28, 42–44](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-
 ## Rates, bands and thresholds
 
 | Item and conditions | Source |
@@ -48,7 +47,6 @@ For IBICA mixed private/business costs, allocate the actual business portion; on
 
 The company comparison uses 27.5% IS on profit rounded down to XOF 1,000 and MFP at 0.5% of turnover rounded down to XOF 100,000, with RSI floor XOF 300,000. It assumes no exclusive-activity exception, first-period exemption or other credits. The larger ordinary tax/minimum controls before valid credits; full RNI and special branches remain in the corporate Guide. [CGI 2026 arts. 87–89](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-
 ## Deadlines and filing
 
 CME taxpayers can elect RSI by letter to the tax service before 1 February. Effective 1 January in the election year, irrevocable three years, then withdraw in January. This is not automatic acceptance of every VAT deduction. [CGI 2026 art. 535](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
@@ -57,18 +55,15 @@ An eligible RSI taxpayer can apply to the DGI for RNI before 1 February. Accepta
 
 RNI option takes effect 1 January of approval year, irrevocable three years; after that taxpayer withdrawal is by January letter. Administration can revoke at any time for art. 561ff non-compliance. Both RNI and RSI require normal SYSCOHADA accounts. [CGI 2026 arts. 528, 530(3)–531](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-
 ## Penalties and interest
 
 Comparison is not a filing extension or sanction waiver. Each routed Guide retains the relevant late filing/payment rules; no generic penalty amount is offered here and no assumed aggregation of different penalties is allowed. [CGI 2026 arts. 754–758, 776–778](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
-
 
 ## Cross-border points
 
 No investment code approval, mining relief, duty holiday, treaty entitlement, foreign residence outcome or permanent-establishment attribution is established here. Route related-party and foreign-service transactions before accepting any expense or cash-flow projection.
 
 A regime election does not remove controlled-pricing or non-resident withholding duties. Use the respective Guides before treating a related-party fee as deductible or a gross foreign invoice as net payment. Treaty relief and investment/mining approvals are not established by this workpaper. [CGI 2026 arts. 65–66, 98-1–98-2, 210–214](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
-
 
 ## Two worked examples that recompute
 
@@ -116,7 +111,6 @@ expected:
 
 Obtain legal form and activity, start date and time-apportioned turnover, current and prior three years’ turnover/regime, election letters and dates, filing/payment compliance, accounting/invoicing systems, effective CGA membership evidence, profit reconciliation, VAT input eligibility and customer contracts, and actual membership/adviser costs. A tax reduction is not net savings until those costs are known.
 
-
 ## Sources
 
 | Official source | Read on | What was actually read |
@@ -128,21 +122,3 @@ The [figure/rule ledger](../../evidence/ledgers/burkina-faso-legacy-jobs-2026110
 Not yet confirmed: CGA admission procedure, effective eligibility evidence, fees and service costs; filing/withdrawal form box IDs, authenticated eSINTAX workflows and proof of option receipt; controlling interaction between the article 196 RSI TPA reduction and article 228 base abatement, including any cumulation or exclusion; the article-228-only illustration does not establish final payable TPA; special VAT options/import and exemption interactions beyond the linked Guide; IBNC reduction/exemption branches not explicitly computed here; net commercial savings, investment/mining/sector approvals, reorganisation and treaty relief; any automatic best-regime claim; accountant attestation.
 
 Written by OpenAccountants from the cited sources. Independent source review: conditional source corrections closed for this rewrite. Accountant attestation: none.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

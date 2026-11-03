@@ -373,21 +373,3 @@ expected:
 | BMF, Lohnsteuerrichtlinien 2002 as amended 18 December 2025, Rz 1087a and 1087c (§ 67(6) and the BV-Kasse), Rz 1121 (social insurance on tax-free supplements), Rz 1145 to 1148 (overtime: divisor 173, supplements under 50%, part-time Mehrarbeit, both pots per employer) | https://findok.bmf.gv.at/findok/iwg/19/19974/19974.26.pdf | 2026-10-23 |
 
 Not yet confirmed: the fine range for late or missing wage-tax payments under the Finanzstrafgesetz, which was not read. The Lohnsteuerrichtlinien edition of 18 December 2025 is the latest on findok; it predates the 2026 overtime rule (15 hours, EUR 170), so only its method points are used and the figures come from § 124b Z 440 lit. c. Whether the DB, DZ and Kommunalsteuer exclusion reaches the part of a voluntary severance above the § 67(6) limits, or a voluntary severance paid to a new-system employee, was not read. The labour-law size of a severance (AngG § 23 months, and whether the monthly base includes a share of the 13th and 14th salary) was not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

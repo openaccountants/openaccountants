@@ -121,21 +121,3 @@ expected:
 | OGE 2026, Lei do Orçamento, arts 6 to 17 (draft-form text, law number blank; the tax chapter only was read) | https://www.mef.gw/publicacoes/orcamento-geral-do-estado/2026-oge2026/viewdocument/195 | 2026-11-01 |
 
 Not yet confirmed: whether the 2026 budget text is in force; whether social security reduces the Imposto Profissional base (the old skill said yes on a payroll vendor's word, DGCI instructions show gross); the Imposto Complementar on top of the separate taxes (a DGCI 2025 talk mentions an overlay tax; code not found on the portal); residence tests (the 183-day rule in the old skill has no official source; art. 3 turns on where work is done); the old claim of a 31 March annual return is replaced by the code's 28 February; the old 0% first-band note has no official support.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

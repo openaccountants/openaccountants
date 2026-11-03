@@ -79,21 +79,3 @@ The supplier owes TGCA on taxable supplies. A taxable customer receiving goods/s
 - Complete article 253 sector-exemption and article 264 invoice checks before operational use. Recheck the cited filing notice for changes and reconcile any post-June amendments.
 
 Source-cited draft awaiting independent source and professional review. This Guide does not cover all local taxes, import duties, housing eligibility, penalties or appeals and is not individualized filing advice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

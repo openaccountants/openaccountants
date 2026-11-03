@@ -169,7 +169,6 @@ This is the deterministic pre-classifier for bank-statement and payroll transact
 3. Do not confuse with DGI/ITS débits (payroll tax) or TVA (VAT), those are tax, not social security.
 4. Régularisation lump sums may bundle principal with penalties, flag for breakdown.
 
-
 ## Judgement points
 
 - Headcount near 20 with seasonal staff: flag it, because the count sets monthly or quarterly payment.
@@ -198,21 +197,3 @@ This is the deterministic pre-classifier for bank-statement and payroll transact
 | CNPS, employer page (paying contributions read; its SMIG and pension ceiling are out of date, the communiqué wins) | https://www.cnps.ci/employeur | 2026-11-01 |
 
 Not yet confirmed: CMU amounts (kept from the earlier version; no CNPS or CMU amount page opened); DISA and DASC due by 31 March; late penalty (the earlier versions gave 10% and also 5% plus 1% a month; Code articles not opened); the Code de Prévoyance Sociale text itself; employee pension base at the SMIG after 2023; CNPS guide for employers not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

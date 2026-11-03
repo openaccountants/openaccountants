@@ -56,7 +56,6 @@ Employers running monthly payroll for staff in Algeria. Directors' fees, expatri
 | Total | 25% | 9% | 0.5% | 2024 edition | same |
 | Construction, public works, hydraulics add-on | 0.375% | 0.375% | CACOBATPH | 2024 edition | same |
 
-
 ## The base
 
 Order of calculation (https://web.archive.org/web/20260901165005/https://www.mfdgi.gov.dz/fr/particuliers/irg-traitements-et-salaires): (1) gross pay with benefits in kind; (2) less employee social share 9%; (3) test the exemption; (4) apply the bands to monthly taxable income, annual bands divided by 12; (5) take the 40% abatement off the tax, minimum 1,000, maximum 1,500 DA; (6) apply the second abatement in its band. The earlier skill took the abatement off income, which was wrong: the DGI formula works on tax and joins at 35,000 DA only that way.
@@ -100,7 +99,6 @@ When an input is missing or ambiguous, apply the conservative assumption (the on
 | Self-employed / non-salarié income mixed in | REFUSE payroll path: non-salariés have a separate CASNOS band and IRG treatment |
 | Definitive "this is your exact tax" assertion requested | REFUSE: outputs are estimates pending accountant sign-off |
 
-
 Classify bank-statement lines deterministically. Match case-insensitively; longest / most-specific pattern wins.
 
 #### Salary credits (money arriving in an employee account)
@@ -134,7 +132,6 @@ Classify bank-statement lines deterministically. Match case-insensitively; longe
 | CACOBATPH applicability for a given employer | Sector-specific |
 | Treatment of specific primes / indemnités (taxable vs exempt) | Component-specific, needs ruling |
 | unverified: Headline 26% vs CLEISS 25.5% employer reconciliation | Two presentations of the same regime |
-
 
 **Excel Working Paper Template**
 
@@ -180,7 +177,6 @@ Suggested layout (one row per employee per month):
 | Allocation chômage | Unemployment allowance |
 | DGI | Directorate-General of Taxes |
 
-
 - **Onboarding fallback steps**: If the engagement lacks key data: 1. No prior payroll register (livre de paie) available → request the last 3 months of payslips, G50 declarations, and CNAS bordereaux to back-solve the rates actually applied. 2. Unknown sector → default CACOBATPH off, FLAG; confirm before the first remittance. 3. Salary near the SNMG → confirm the contribution base is floored at the SNMG (24,000 DA for 2026), never below. 4. Year ambiguity → default to the 2026 tables. 5. Mixed self-employed income → route non-salarié income to a separate treatment; the CASNOS band (288,000 to 5,760,000 DA a year for 2026) and IRG treatment differ.  _(CLEISS)_
 
 #### Hard rules
@@ -224,7 +220,6 @@ How to file and pay the monthly G50 (real regime):
 | Cessation | G n° 29 | 10 days | https://web.archive.org/web/20260901165005/https://www.mfdgi.gov.dz/fr/particuliers/irg-traitements-et-salaires |
 | Payslips | Keep to fourth following year; show "retenue IRG: neant" where nil | Art. 75 | same |
 
-
 ## Penalties and interest
 
 | Failure | Result | Official URL |
@@ -232,7 +227,6 @@ How to file and pay the monthly G50 (real regime):
 | No G n° 50 or payment | 10%, 25% after a month's notice (art. 134-2) | https://web.archive.org/web/20260901165005/https://www.mfdgi.gov.dz/fr/particuliers/irg-traitements-et-salaires |
 | No G n° 29 | 5% of annual payroll | same |
 | CNAS lateness | unverified | unverified |
-
 
 ## Cross-border points
 
@@ -299,21 +293,3 @@ expected:
 mfdgi.gov.dz and cnas.dz refused every direct and Chrome connection on 2026-11-01; DGI pages are Internet Archive copies, marked as such.
 
 Not yet confirmed: 26% employer and 35% total headline figures, since CLEISS shows 25% plus 0.5% FNPOS, 34.5% total; whether branch rates changed after 1 Jan 2024; CNAS monthly deadline, DAS date and CNAS late penalties (cnas.dz would not open); old skill figures of 15% plus 2% a month for CNAS lateness; whether the 30,000 DA gate is tested on gross or on taxable pay; salary band handling for part-year staff; dependent and spouse reductions.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -241,21 +241,3 @@ expected:
 The ISAP pages (isap.sejm.gov.pl) serve a browser check to scripted requests, so the law texts were read from the Sejm's own ELI service (api.sejm.gov.pl), which serves the same documents.
 
 Not yet confirmed: whether, in the year of arrival, a person who passes 183 days is resident for the whole year or only from arrival (the MF explanations give a split-year example only for departure under the centre-of-interests test); how an employer spreads standard costs over months in which all salary is exempt when it computes monthly advances (the annual tax in Example 1 does not depend on it); treaty rates for countries other than Germany.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

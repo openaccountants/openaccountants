@@ -58,21 +58,3 @@ tier: 2
 | Brønnøysundregistrene, How much is the late filing penalty | https://www.brreg.no/en/submission-of-annual-accounts/late-filing-penalty/how-much-is-the-late-filing-penalty/ | 2026-10-30 |
 
 Not yet confirmed: that an ENK has no minimum capital (stated in the older version of this skill without a source); whether a NUF needs any capital in Norway (the older version said it does not, without a source); the AS processing time of one to two weeks given in the older version.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

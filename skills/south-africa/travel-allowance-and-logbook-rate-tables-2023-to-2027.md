@@ -220,21 +220,3 @@ puts the taxpayer in the wrong row before any arithmetic starts.
 SARS Rate per Kilometre Schedule, PAYE-GEN-01-G03-A01 — https://www.sars.gov.za/wp-content/uploads/Docs/PAYE/Tables/tables2026/PAYE-GEN-01-G03-A01-Rate-per-Kilometre-Schedule-External-Annexure.pdf (YoA 2027 rev 19 and YoA 2025 rev 17 confirmed 2 September 2026). Income Tax Act 58 of 1962 s 8(1)(b)(ii) and s 8(1)(b)(iii).
 
 > Contributed by Brandon Iverach, SAIPA 18504 / SARS PR0025122.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -115,9 +115,6 @@ A company paying 5% on dividends, or a technology-park company with the profit a
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Azerbaijan) before acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
-
 ## Sources
 
 | Source | URL | Read on |
@@ -126,21 +123,3 @@ The most up-to-date, verified version of this skill is maintained at [openaccoun
 | Small and Medium Business Development Agency (KOBİA), "Startap" certificate page | https://smb.gov.az/az/nav/startap-sehadetnamesi | 2026-10-31 |
 
 Not yet confirmed: the property-tax exemption for micro enterprises in the old version (no micro rule found in art. 199 or elsewhere in the Tax Code; a simplified-tax company is not exempt from property tax, since art. 219.5 no longer lists it); the Cabinet size criteria for micro status (taken from az-corporate-income-tax, not re-read); the full startup criteria in Cabinet of Ministers Decision 20 of 29 January 2021 (not read; only the KOBİA summary above); the park activity lists and the industrial-park activities in art. 106.1.13-2; the employer contribution subsidy schedule (Social Insurance Law art. 14-1, not re-read here; see azerbaijan-social-contributions); the Law 476-VIIQD changes from 1 January 2027; the old "10-year tech-park CIT exemption for system integration and software" is confirmed, but the conditions for issuing the industrial-park and technology-park resident registration certificates are not (the Tax Code only refers to rules set by the executive authority).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

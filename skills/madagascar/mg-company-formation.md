@@ -96,21 +96,3 @@ Get chosen entity/activity, all partner identities and legal forms, ownership an
 | [EDBM official document selector](https://orinasa.edbm.mg/documentsLegalForm/), SARL/SARLU, shareholders, premises and manager documents | 2026-11-01 |
 
 **Not yet confirmed:** current underlying company-law articles, SARL maximum partners, SA governance/minimum capital, nationality restrictions, 2026 fee tariffs, complete NIF issuance sequence, annual registry/accounts filings and binding completion times. These old topics are preserved as gaps, not inferred from the SARL operational page.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

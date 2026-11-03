@@ -14,8 +14,6 @@ tier: 2
 
 # Malta Transfer Pricing
 
-Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
-
 Tax year: basis year 2026 (year of assessment 2027). Company tax computation is in [mt-corporate-tax](mt-corporate-tax.md).
 
 ## Section 1 -- Quick Reference
@@ -292,21 +290,3 @@ This skill and its outputs are provided for informational and computational purp
 Not yet confirmed: CbCR penalty amounts (not checked against S.L. 123.127); the content of TRA 135; the CbCR deadline and notification rules (not re-read in this update); how the S.L. 372.16 return date applies to a company with a 31 December accounting date (see mt-corporate-tax).
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -106,21 +106,3 @@ expected:
 | DMTT art. 12, no exemption against this tax, with arts. 3 to 16 read | https://www.mof.gov.kw/Desicions/Decree/PDF/DecreeLawDMTTNo157of2024.pdf | 2026-11-01 |
 
 Not yet confirmed: NON-OPERATIVE HOLDS. WLL liability limited to capital, one shareholder, status as common small-business vehicle, no fixed minimum and historical KWD 1,000 suggestion; KSC capital divided into shares and public-company/listing equivalence; these old descriptions are not company-law instructions. Companies Law 1 of 2016 text: moci.gov.kw law pages gave no document link. Minimum capital for WLL, KSC and KSCP, including activity-specific adequacy requirements. The 51% partner rule. Historical two-to-six-week timeline and the complete old incorporation order (name reservation, notarisation, capital deposit, commercial licence, Chamber, commercial register, PIFSS and DIT). Chamber membership and licence renewal details. Whether the KFAS contribution falls on closed KSCs.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

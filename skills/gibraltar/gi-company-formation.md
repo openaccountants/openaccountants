@@ -55,7 +55,6 @@ tier: 2
 
 ### Scope and legal basis
 
-
 This Guide addresses ordinary private companies limited by shares. It does not complete the formation route for public companies, guarantee companies, protected cells, overseas branches or re-domiciliations. The official legislation index identified the Companies Act consolidation dated **1 August 2025** as its current version when checked on 22 October 2026. Statutory references below are to that text. [Act and version history](https://www.gibraltarlaws.gov.gi/legislations/companies-act-2014-3106).
 
 ## Rates, bands and thresholds
@@ -69,14 +68,11 @@ This Guide addresses ordinary private companies limited by shares. It does not c
 
 ### Subscribers and constitution
 
-
 One or more persons can form a company for a lawful purpose. Each subscriber agrees to become a member and, for a company with share capital, to take at least one share. The memorandum states the company name, Gibraltar registered-office jurisdiction, limited liability and required capital particulars. Each subscriber signs before at least one attesting witness. For the ordinary private-company route, the articles restrict share transfers and prohibit public invitations to subscribe for shares or debentures. [Companies Act, sections 5–7 and 19](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
 
 Obtain name acceptance before submitting the incorporation documents. Using a licensed provider is recommended by the government but is not compulsory for a founder incorporating directly; providing registration or management services **by way of business** requires licensing. Do not transplant Guernsey's CSP-only applicant rule into Gibraltar. [Government incorporation guidance](https://www.gibraltar.gov.gi/business/companies-house/companies).
 
-
 ### Office, director and secretary
-
 
 A Gibraltar registered office is required. Companies House says the first office notice accompanies incorporation documents. Providing registered-office services to the public is a regulated activity. Subsequent office changes must be notified within **30 days**; waiting for an annual return only satisfies that duty if that return is due and made within the same period. The guidance lists a £26 filing charge and an additional £26 for late notification. [Registered-office guidance, pages 1–2](https://www.companieshouse.gi/publications/C0002.pdf).
 
@@ -88,9 +84,7 @@ Companies House instructs private companies to file their first particulars of d
 
 The consolidation retains section 9(4)(c)'s reference to a section 12 statement, while section 12 itself is marked repealed. Do not invent a section 12 form or omit the separate officer filing. Reconcile any additional officer information requested at submission with the Registrar before filing. This textual discrepancy remains an explicit review point.
 
-
 ### Beneficial-ownership reporting after incorporation
-
 
 The July 2026 consolidation requires a Gibraltar-incorporated corporate or legal entity to obtain and hold **adequate, accurate and current** beneficial-ownership information, including interests held, and submit it as the Registrar requires. If the company has a secretary, supply the secretary with a copy of the information submitted. Do not treat the register of members or incorporation application as the completed beneficial-ownership return. [UBO Regulations, regulation 6](https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf).
 
@@ -188,7 +182,6 @@ Verify account authority, required attachments and successful receipt before tre
 
 ### Assemble the application
 
-
 Section 9 requires the memorandum, registration application, prescribed supporting information and statement of compliance. Identify the proposed name, limited-by-shares status, private-company status and intended office. If an agent delivers the application, state that agent's name and address. Include proposed articles to the extent not supplied by the statutory default model-articles provisions. [Companies Act, section 9](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
 
 The current FINC01 form provides choices for adopting model articles unchanged, adopting them with attached amendments, or supplying bespoke articles. It also requests the company contact email and principal-activity SIC code. Use the actual form and relevant continuation pages rather than rewriting its fields. [Application FINC01, pages 1–4](https://www.companieshouse.gi/publications/FINC01.pdf).
@@ -197,9 +190,7 @@ For a share company, section 10 requires the total shares taken on formation, th
 
 Example: if a proposed structure authorises 1,000 ordinary £1 shares and two subscribers each take 100 fully paid shares, the authorised nominal amount is **1,000 × £1 = £1,000**, while the initial subscriptions total **(100 + 100) × £1 = £200**, with £0 unpaid on those subscribed shares. This is illustrative arithmetic, not a prescribed minimum capital or proof that the remaining 800 shares have been issued. Confirm the chosen structure and rights against the constitution before filing.
 
-
 ### Compliance declaration and fees
-
 
 Section 13 permits the compliance statement to be made by a Supreme Court solicitor, a qualifying barrister acting as solicitor engaged in formation, or a person named in the articles as director or secretary. FINC23 implements the last route. A proposed director not named in the articles cannot be assumed to meet that wording solely by being proposed for appointment. [Companies Act, section 13](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf); [FINC23](https://www.companieshouse.gi/publications/FINC23.pdf).
 
@@ -207,9 +198,7 @@ The 2025 fee regulations, effective **1 August 2025**, set incorporation at **£
 
 The fee table lists a £200 same-day urgency fee where correct documents arrive before noon and a £500 two-hour service with correct documents lodged between 9am and 3pm. Confirm the selected service and total payable; the general business page's older “24 hours” wording is not a guaranteed turnaround. [Companies House fee table, page 1](https://www.companieshouse.gi/publications/C0019.pdf).
 
-
 ### Completion and handover
-
 
 Registration produces a certificate recording the company name, number, date and type. The statutory effects begin on incorporation, not merely on submitting papers. Keep the certificate, filed constitution, subscriber allocations, consents, compliance statement and filing receipts together. [Companies Act, sections 14–16](https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf).
 
@@ -291,7 +280,6 @@ expected:
 5. Which incorporation, officer and Registrar submissions/receipts are already complete?
 
 ## Sources
-
 
 ### Preserved source-read provenance
 

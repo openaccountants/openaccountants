@@ -71,21 +71,3 @@ Turkey (Türkiye) runs one national tax system. The main taxes are personal inco
 | Türkiye Cumhuriyeti Devletinin Para Birimi Hakkında Kanun (Currency Law) No. 5083: art. 1 and note 1 | https://www.mevzuat.gov.tr/MevzuatMetin/1.5.5083.pdf | 2026-10-31 |
 
 Not yet confirmed: the legal instrument behind the Revenue Administration's later filing dates (end of March for the income tax return, end of the fourth month for the corporate tax return, the 28th for VAT); the calendar cites VUK Circular No. 149 for VAT, which was not read. The text of communiqué No. 332 itself (the Official Gazette PDF has no text layer; the tariff was read from GİB's restatement). Which taxpayers the Ministry has put on monthly VAT periods. Which goods and services sit on VAT lists I and II. Social security rates and the 2026 contribution ceilings (see tr-payroll-social).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

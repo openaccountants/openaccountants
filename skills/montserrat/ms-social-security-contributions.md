@@ -52,21 +52,3 @@ Regulation 12 requires employer payment at month end or within one month thereaf
 ## Remaining work
 
 Self-employed income categories, voluntary coverage, multiple employments, irregular pay, benefits and later amendments are outside this batch. The sources and examples have author checks only; independent accountant review remains pending.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

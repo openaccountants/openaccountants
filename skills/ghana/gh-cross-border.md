@@ -142,21 +142,3 @@ expected:
 | GRA, ITAS FAQs, page read in full | https://gra.gov.gh/itas-faqs/ | 2026-11-01 |
 
 Not yet confirmed: (1) Treaty rates and in-force status: GRA page lists countries only, under a heading on status; treaties were not read. (2) GRA withholding table dates from 2022; changes in Acts 1066, 1071 and any later act were not read, and the Act 1178 notice mentions only individual bands and MTS. The Finance Ministry 2025 report says Act 1129 abolished a 1.5% withholding on unprocessed gold by small-scale miners; Act 1129 itself was not read, and the 3% row may be affected for that gold. (3) The DT 110 screen layout on ETAX. (4) The GRA form list shows an older Excel DT 110; the upload format may differ on ETAX.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

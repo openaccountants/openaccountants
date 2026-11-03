@@ -40,21 +40,3 @@ tier: 2
 | Law No. 118-Z of 15.07.2021 on compulsory insurance contributions to the FSZN: art. 5 | https://pravo.by/document/?guid=3871&p0=H12100118 | 2026-10-31 |
 
 Not yet confirmed: the MNS website (nalog.gov.by) did not respond from our network on 31 October 2026, so no MNS page was read for this overview; the rates above come from the Code itself. Special regimes (High-Tech Park, free economic zones, the simplified system, the single tax, professional income tax) are only named here and are covered in the domain skills and in belarus-tax-optimization.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

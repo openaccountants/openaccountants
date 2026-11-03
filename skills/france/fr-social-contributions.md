@@ -250,21 +250,3 @@ Defaults while waiting (OpenAccountants working practice, not a legal rule): act
 | CSS L. 311-3, 11°, actual rendered current clause: SARL/SELARL managerial collective ownership and spouse/Pacs/minor full-ownership/usufruct attribution | https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000051284232/2026-10-30 | 2026-10-31 |
 
 The micro-entrepreneur Acre change is supported by décret n° 2026-69, arts. 2–3, and CSS D. 131-6-3: for creations from 1 July 2026, 75% of the full global rate rounded upward to the next tenth of a percentage point, subject to the non-exempt-component floor and the turnover limit. The earlier-start rates remain the published URSSAF column. Not yet confirmed: the Cipav and non-Cipav overseas rates; the supplementary pension and invalidité-décès rates of the CnavPL sections other than Cipav; the 2027 PASS for second-year flat bases; the Mayotte scales.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

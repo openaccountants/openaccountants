@@ -122,21 +122,3 @@ expected:
 | [Enacted LF2026](https://ecofinances.gouv.td/wp-content/uploads/2026/06/Loi-n008-AN-SENAT-2025-Portant-loi-de-Finances-2026-LF-2026.pdf) |2026-11-01| New CGI147/NIF owner information and1059 registration/change penalties, arts20,43; original/new clauses pp29–30,61 |
 
 Not yet confirmed: national instrument permitting100,000/private-deed SARL and current registry confirmation; current formation/registration fees and timeline, live GUCE/RCCM/beneficial-owner forms, national accounts/registry penalties, regulated licences and foreign-manager permits; the unsupported legacy50partner SARL ceiling or SA-for-capital-ceiling rule; full SNC/SCS/GIE methods, consolidation, recognition/valuation and sector/nonprofit/IFRS accounting. These remain formation/reporting/compliance gaps. For independent AI source review and its limits, see the [country README](README.md). No accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

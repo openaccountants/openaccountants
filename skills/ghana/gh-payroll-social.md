@@ -149,21 +149,3 @@ expected:
 | GRA, Withholding Tax page (rates table, last edited 2022), page read in full | https://gra.gov.gh/domestic-tax/tax-types/withholding-tax/ | 2026-11-01 |
 
 Not yet confirmed: (1) Section 63(3) of Act 766 and the Act 766 penalties for late contributions were not opened; no SSNIT penalty is stated. Act 766 was not on a site opened. (2) Notice minimum of GHS 79.40 is above 13.5% of 587.80, which is 79.35; the notice is quoted. (3) Whether the 5.5% tax deduction stops at the ceiling is inferred from the contribution cap, not read in the law. (4) Tier 2 due date: not on any official page read. The old version had the 14th as approximate for SSNIT; SSNIT confirms 14 days. (5) Bonus and overtime rates come from the GRA page, not Act 896 as amended. (6) Whether the GHS 18,000 overtime qualifying limit changed under Act 1178.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

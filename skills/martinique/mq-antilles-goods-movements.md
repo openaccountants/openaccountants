@@ -46,21 +46,3 @@ Reconcile imported goods subsequently dispatched separately from locally produce
 Reconcile movement month, departure office, arrival evidence, sale versus own-stock status, origin and recipient SIRET. Compute the actual deadline using the applicable working-day calendar; the tenth calendar day is not an adequate substitute. This Guide does not prescribe a particular calendar date without checking that calendar.
 
 Source-cited draft awaiting independent review. Current submission channels, any amendments after the 2025 circular, penalties, excise-specific requirements, product rates and VAT returns remain separate checks. For producer-threshold obligations, see the [Guadeloupe producer Guide](../guadeloupe/gp-producer-octroi-compliance.md). This is not comprehensive Martinique tax coverage.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -297,21 +297,3 @@ Step 7, owners. A files IT-201 with IT-653, claiming 109,750 (State) and 58,140 
 - [Public Law 119-21 (One Big Beautiful Bill Act), section 70120](https://www.govinfo.gov/content/pkg/PLAW-119publ21/html/PLAW-119publ21.htm).
 
 This skill must be reviewed by a New York-licensed CPA, Enrolled Agent, or attorney admitted in New York before it is used for client deliverables. Practitioners must check current-year rates, deadlines, form numbers and modification codes against the Department's website before relying on it.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

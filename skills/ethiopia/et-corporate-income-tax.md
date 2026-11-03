@@ -105,5 +105,4 @@ expected:
 
 Not yet confirmed: the 30% rate and the mining rate: the rate article of Proc. 979/2016 was not read, so both stay marked unverified; the Council of Ministers income tax regulation that sets the digital service tax rate (capped at 5%) was not found; the e-tax portal steps and the box numbers on the Ministry forms were not read, so no box numbers are given as law; the Ministry directives on undistributed profit and advance tax were not read.
 
-
 > **General reference only.** This document does not constitute tax, legal, or financial advice. Verify figures against the cited primary sources or with a licensed professional before relying on them.

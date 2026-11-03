@@ -204,21 +204,3 @@ expected:
 | Skatteverket: How to fill in the PAYE tax return, box by box | https://www.skatteverket.se/servicelankar/otherlanguages/englishengelska/businessesandemployers/startingandrunningaswedishbusiness/declaringtaxesbusinesses/filingapayereturn/howtofillinthepayetaxreturnboxbybox.4.309a41aa1672ad0c8379f84.html | 2026-10-23 |
 
 Not yet confirmed: the 2026 normalbelopp per country for trips abroad (not reproduced); Skatteverket's practical test for "ringa omfattning" private use of a car; the car benefit rules for a car first liable to vehicle tax before 1 July 2021, and the 8 a § wording for a car first taxed between 1 July 2021 and 30 June 2022 (only the current consolidated text was read); the vehicle tax in example 1 is an assumed input.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

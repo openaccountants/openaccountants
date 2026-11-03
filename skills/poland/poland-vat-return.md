@@ -12,8 +12,6 @@ tier: 2
 
 # Poland VAT return (2026)
 
-Source-cited draft: not reviewed by an accountant. Built by Michael Cutajar and the OpenAccountants team.
-
 This skill covers Polish VAT for a business registered in Poland: when to register, the rates, the monthly or quarterly JPK_V7 file, KSeF e-invoicing, split payment and the white list. It links to the other Poland skills and does not repeat them:
 
 - [poland-einvoice](poland-einvoice.md): the FA(3) structured invoice, KSeF access, offline modes.
@@ -187,21 +185,3 @@ expected:
 | NBP EUR mid rate of 1 October 2025 (4.2586) | https://api.nbp.pl/api/exchangerates/rates/a/eur/2025-10-01/?format=json | 2026-10-23 |
 
 Not yet confirmed: the PLN 8,517,000 small-taxpayer limit is computed here from the NBP rate; the Ministry page states the EUR 2,000,000 rule but no PLN figure. The CIT Act article on split payment and the white list (art. 15d) was not re-read for this version. When a business that has lost the small-business exemption must have filed VAT-R (before the crossing sale or before the next one) was not settled from the text of art. 96. The date the EU SME scheme (art. 113a-113b) first applied is not given in the consolidated text.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

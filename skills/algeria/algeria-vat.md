@@ -34,7 +34,6 @@ Real-regime businesses filing TVA on the monthly G n° 50. IFU taxpayers do not 
 | IFU ceiling | 8,000,000 DA; the old 15,000,000 DA figure was wrong | CIDTA art. 282 ter | 2026 | https://www.joradp.dz/FTP/JO-FRANCAIS/2024/F2024084.pdf |
 | TAP | Removed; no longer on G n° 50 calculations | DGI circular, 13 Feb 2024 | 2026 | https://web.archive.org/web/20250219180444/http://mfdgi.gov.dz/fr/a-propos/actu-fr/circulaire-relative-a-la-suppression-de-la-taxe-sur-l-lactivite-professionnelle-tap |
 
-
 ## The base
 
 Output TVA arises on taxable sales; input TVA is deductible if the G n° 50 carries the supplier statement (Code TCA art. 29). Businesses with mixed sales file actual percentages by 20 March and adjust by the same date the next year (art. 40, LF 2026 art. 57). Businesses taking payment without invoices through software or a till must hold an editor's commitment or accredited certificate on data integrity (new art. 51 bis, LF 2026 art. 58).
@@ -107,7 +106,6 @@ Patterns, defaults and refusal rules kept so no work is lost. Any figure here is
 - **R-DZ-4: Partial exemption (prorata)**: Trigger: client makes both taxable and exempt supplies and the exempt proportion is material. Message: "Your input TVA must be apportioned using the prorata formula under Code TCA Art. 34. The annual prorata calculation requires the full-year turnover mix. Please use a commissaire aux comptes to determine the prorata rate before input TVA is claimed."  _(Code TCA Art. 34)_
 - **R-DZ-5: ANDI investment incentive capital goods**: Trigger: client holds an ANDI investment certificate and claims TVA exemption on imported capital goods. Message: "ANDI investment incentives require verification of certificate validity and scope. Flag for reviewer."
 - **R-DZ-6: Special conventions**: Trigger: client operates under a bilateral tax convention or special agreement with the Algerian government. Message: "Special conventions are outside this skill. Escalate to a qualified practitioner."
-
 
 This is the deterministic pre-classifier. When a transaction's counterparty matches a pattern in this table, apply the treatment directly.
 
@@ -280,7 +278,6 @@ This is the deterministic pre-classifier. When a transaction's counterparty matc
 
 - **TAP (Taxe sur l'Activite Professionnelle)**: TAP (removed, see the rates table) is a separate turnover tax reported on the same G50 form. It is NOT TVA and is NOT recoverable as input tax. Never confuse TAP with TVA.
 
-
 #### 6.1 Fuel and vehicle costs
 
 - **Fuel and vehicle costs**: Pattern: Naftal, Shell, Total. Why insufficient: vehicle type unknown; if car, blocked regardless of use. Default: 0% recovery. Question: "Is this a passenger car (blocked) or a commercial vehicle used exclusively for business?"
@@ -331,7 +328,6 @@ This is the deterministic pre-classifier. When a transaction's counterparty matc
 
 **Foreign currency transactions.** Convert to DZD at the Bank of Algeria official rate for the transaction date.
 
-
 #### 9.1 Entity type and trading name
 
 - **Entity type and trading name**: Inference rule: SARL, EURL, SPA, SNC in the name = company. Individual name = sole trader. Fallback: "Are you a sole trader or company?"
@@ -379,7 +375,6 @@ How to file and pay the monthly G50 (real regime):
 | Instalment regime (acomptes) | Monthly 1/12 of last year's sales; year-end statement by 20 April; needs 6 months' activity and a permanent site | https://web.archive.org/web/20250219182700/http://mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee |
 | Prorata statement | 20 March | https://www.joradp.dz/FTP/JO-FRANCAIS/2025/F2025088.pdf |
 
-
 ## Penalties and interest
 
 | Failure | Result | Official URL |
@@ -389,7 +384,6 @@ How to file and pay the monthly G50 (real regime):
 | No identification plates (art. 60) | 10,000 DA | same |
 | Art. 61 breach | 50,000 DA | same |
 | Late payment | CIDTA art. 402 penalties; 10%, then 3% a month, cap 25% | https://web.archive.org/web/20250219182700/http://mfdgi.gov.dz/fr/professionnels/services-pro/regime-reel/la-taxe-sur-la-valeur-ajoutee |
-
 
 ## Cross-border points
 
@@ -446,21 +440,3 @@ expected:
 mfdgi.gov.dz and cnas.dz refused every direct and Chrome connection on 2026-11-01; DGI pages are Internet Archive copies, marked as such.
 
 Not yet confirmed: the exact Code TCA text for exemptions, reverse charge (art. 14 in the old skill), blocked input TVA (arts. 29 to 33 in the old skill), precompte (art. 41 bis, 25% in the old skill), prorata (art. 34) and exports; G50 line numbers 1 to 20 in the old skill, because no G50 form could be opened; standard rate on reduced-rate list items 1 to 4 and 6 to 36, which LF 2026 leaves unchanged and which we did not read in full; TVA treatment of each supplier in the pattern library; Jibayatic screen names and portal address.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

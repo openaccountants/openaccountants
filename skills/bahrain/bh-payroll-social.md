@@ -103,21 +103,3 @@ expected:
 | Decision 109/2023 and whole attached Regulation arts. 1 to 15 read | https://www.lloc.gov.bh/Legislation/HTM/RCAB10923 | 2026-11-01 |
 
 Not yet confirmed: exact 2026 employer pension phase-in implementation (therefore the inherited combined 18% employer rate is not executable); the former 17%/21% schedule; Cabinet amount for new art. 19 bis; other minimum wage/floor; current SIO online forms and WPS Resolution 68/2019 or enhanced 2026 procedure. Employee 7% pension plus 1% unemployment, employer base work injury 3%, and BHD 4,000 Social Insurance wage cap now have primary support; they are not blanket totals for every worker. Full predecessor text and exact destinations are preserved in [the country evidence](../../evidence/ledgers/bahrain-20261101/README.md). These are NON-OPERATIVE holds, never defaults or authority to compute.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -95,21 +95,3 @@ expected:
 | Read for the figures cited: SRC Agreements page, treaty lists | https://src.gov.sc/agreements/ | 2026-11-01 |
 
 Not yet confirmed: room band overlap at 24 rooms on the SRC page, which puts 24 in both small and medium; capital gains and inheritance taxes, not covered by pages read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

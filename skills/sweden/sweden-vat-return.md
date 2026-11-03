@@ -331,21 +331,3 @@ expected:
 | Skatteverket, Ränta på skattekontot (basränta 2.5%, kostnadsränta 17.5%) | https://www.skatteverket.se/privat/skatter/skattekontobetalaochfatillbaka/rantapaskattekontot.4.18e1b10334ebe8bc80002582.html | 2026-10-24 |
 
 Not yet confirmed: how Skatteverket reports output VAT on a car benefit given without salary deduction (rate on the benefit value and which return); whether Skatteverket computes daily interest on a 365-day year; food-rate timing for advance payments and credit notes that straddle 1 April 2026 (the law ties the rate to the taxable event; refer disputed cases).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

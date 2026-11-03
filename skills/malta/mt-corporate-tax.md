@@ -246,21 +246,3 @@ expected:
 MTCA pages sit behind a bot check; they were read in a browser.
 
 Not yet confirmed: whether the Gazette notice and rules that start the 175% deduction in art. 14(1)(ha) have been issued; the names and numbers of the return attachments (TRA forms) in the YA 2027 e-Return; MTCA's online filing extension dates for 2026 year ends; whether losses brought forward and group relief reduce income taxed under the 15% election; how the reg. 3(4)(a) floor treats shareholders not registered for refunds and Malta-resident individuals under article 43(6); the meaning of "specifically empowered to consolidate its results" in rule 6(2) S.L. 123.189; any regulations under article 22B Cap. 123; wear and tear rates under the Deductions (Wear and Tear) Rules (not read for this skill).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

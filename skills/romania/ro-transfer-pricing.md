@@ -295,21 +295,3 @@ expected:
 | ANAF, Ghid al prețurilor de transfer (updated November 2025; predates Order 828/2026) | https://static.anaf.ro/static/10/Anaf/Prezentare_R/Ghid%20Preturi%20de%20Transfer%20(1).pdf | 2026-10-23 |
 
 Not yet confirmed: (1) Whether several contracts of the same category with one affiliated person are added together for the Order 828/2026 thresholds. The Order measures "each individual transaction with each affiliated person" (art. 2(3) and (8)) and does not define a transaction. (2) Whether filing the annual file late in SPV, while it was prepared on time, is itself fined under CPF art. 336(1)(e). (3) The Portal Legislativ (legislatie.just.ro) could not be loaded on 23 October 2026, so no later amendment to Order 828/2026 was checked there. ANAF's consolidated Procedure Code still lists Order "446/2016" (a typing error for 442/2016) under art. 108(2) and does not yet list Order 828/2026. (4) Whether ANAF spreads the non-declaration penalty on a corporate tax difference across the quarterly due dates rather than starting it after the annual due date, as Example 2 does. (5) Whether a reduced fine for paying half the minimum within 15 days applies under the general contraventions law (OG 2/2001), which was not read. (6) The treatment of secondary adjustments, such as whether an excess paid to a foreign parent becomes a dividend, was not researched. (7) Whether the CbCR report, the CbCR notification and the SPV filing deadline move when they fall on a non-working day was not checked.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

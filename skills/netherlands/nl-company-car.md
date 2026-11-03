@@ -186,21 +186,3 @@ expected:
 | Kennisgroep Belastingdienst KG:213:2026:1 (youngtimer age 25 from 2027) | https://kennisgroepen.belastingdienst.nl/publicaties/kg21320261-heretikettering-bij-wetswijziging-privegebruik-auto/ | 2026-10-23 |
 
 Not yet confirmed: (1) the retroactive repair of art. 13bis(5)(b) (market value from 16 instead of 15 years) is announced but was not in the law text on 23 October 2026; (2) no October 2026 edition of the Handboek Loonheffingen 2026 was found, so the March 2026 edition is used.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

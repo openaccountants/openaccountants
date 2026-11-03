@@ -102,21 +102,3 @@ expected:
 | GRA Domestic Taxes FAQs (whole), read in full for this skill | https://www.gra.gm/domestic-faqs | 2026-11-01 |
 
 Not yet confirmed: The Companies Act 2013 text. Minimum number of incorporators (old: two). Minimum capital and the 25% subscription rule (old file, law firm source). Form S.V.3 (old file; the MoJ page names SWR 7). One-day timeline. Municipal trade licence and SSHFC employer registration steps (old file, no official source). Annual return date. Statutory audit thresholds.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

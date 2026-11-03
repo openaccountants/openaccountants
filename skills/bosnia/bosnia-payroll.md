@@ -222,21 +222,3 @@ expected:
 | Brčko Zakon o Poreznoj upravi 11/20, arts. 68 and 76 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20Poreznoj%20upravi%20Brc--ko%20Distrikta%20BiH/011B11-20%20Zakon%20%20o%20poreznoj%20upravi%20Brcko%20distrikta%20BiH.pdf | 2026-10-30 |
 
 Not yet confirmed: which RS minimum wage tier sets the contribution floor for a worker in a higher-qualification job (art. 10a refers to the minimum gross wage); the Brčko pension and unemployment contribution rates (pension follows the entity fund the employee belongs to; unemployment is set by a decision of the Brčko Employment Institute board under Employment Law art. 51(2)), the minimum base for the Brčko health contribution (decision art. 6 points to the entity pension minimum until a Brčko collective agreement is adopted) and whether the 2009 decision was amended later (a web search found no amendment; the Assembly's decision register could not be searched); the FBiH employer levies charged on net pay under other laws (fees for protection from natural disasters and water fees, shown as 0.5% each in the old version); whether the 0.75% RS meal limit uses the 2025 average net of 1,528 KM as published in the RS gazette; the RS 2026 rulebook on seasonal-work returns; any FBiH Income Tax Law amendment after 65/13 (none on the Tax Administration's list of 12 October 2026).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

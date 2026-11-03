@@ -128,21 +128,3 @@ expected:
 Figure/rule quotations and source hashes: [country ledger](../../evidence/ledgers/republic-of-congo-draft-20261101/cg-company-formation.md). Every worked figure is conditional on the stated example facts.
 
 Not yet confirmed: Later company-law/national amendments; authenticated ACPCE fields, fee assessment/exemptions and final NIU/RCCM issuance sequence; processing time; full recurring governance/accounting/beneficial-owner filings and sanctions; in-kind valuation and regulated-sector capital; special branch dispensations. The corporate tax Guide retains the DSF/annual filing-date conflict.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

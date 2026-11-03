@@ -145,21 +145,3 @@ At $2M flat-band payroll the effective rate is 1.95%. Output of $39,000 matches 
 - Income Tax Act (Canada), s. 248(1) and para. 149(1)(l) — definitions of registered charity and qualifying non-profit, applied by reference.
 
 Companion skills — always read alongside canada-payroll (federal T4 and source-deduction context) and, where the employer has Ontario PEs as well, the Ontario EHT skill so the two regimes are not conflated.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -116,21 +116,3 @@ expected:
 | [APIEx](https://monentreprise.bj/informer/pieces-requises) | Read for the current public identity and foreign-applicant supporting-document descriptions; authenticated upload fields not accessed. | 2026-11-01 |
 
 Not yet confirmed: complete live requirements for SAS, SNC, SCS, GIE, branches and sole traders beyond the public routing description; activity licences, foreign-document validation, in-kind valuation and capital-governance edge cases; professional/notarial fees, current authenticated form/payment and RCCM accounts-deposit procedure. The legacy USD-cost and eight-hour assertions are replaced by the current published APIEx FCFA fee and processing target. Portal comparison conflicts on SA paid capital and SARL audit criteria are resolved here in favour of the signed law, not repeated as rules; authenticated DGI portal screens, exact field identifiers and payment-confirmation workflow; later instruments not identified by the sources read; application to a particular taxpayer. Independent AI source review closed on 1 November 2026 for the bounded job (see the [country README](README.md)); no accountant has attested to this version.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

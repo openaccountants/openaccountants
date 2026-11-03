@@ -20,8 +20,6 @@ tier: 1
 
 ## Rates and thresholds
 
-> Source-cited draft: not reviewed by an accountant.
-
 ### Student loan repayment, tax year 2026/27 (6 April 2026 to 5 April 2027)
 
 Source: [Rates and thresholds for employers 2026 to 2027](https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027) and [Repaying your student loan: what you pay](https://www.gov.uk/repaying-your-student-loan/what-you-pay), read on 2026-10-23.
@@ -468,8 +466,6 @@ If the client provides only a bank statement:
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a CPA, EA, tax attorney, or equivalent licensed practitioner in your jurisdiction) before filing or acting upon.
 
-The most up-to-date, verified version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 ## Checked examples
 
 ```oa-check
@@ -511,21 +507,3 @@ expected:
 - https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2026-to-2027 (read 2026-10-31)
 
 Not yet confirmed: Plan 5 rows for 2024/25 and 2025/26 (the GBP 25,000 is on the 2026/27 page only); descriptive rows.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

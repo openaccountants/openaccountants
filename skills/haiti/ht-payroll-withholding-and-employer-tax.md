@@ -49,21 +49,3 @@ Article 152 imposes **3%** on remuneration of every kind paid to personnel of pu
 On an assumed HTG 1,000,000 of remuneration wholly within article 152, employer tax is **HTG 30,000**. This is separate from employee income-tax deductions and is not a complete employment-cost calculation. [2026 Code, articles 152, page 49](https://mef.gouv.ht/storage/app/uploads/public/6ac/fb4/9bc/6acfb49bca658143176190.pdf#page=49).
 
 The [older DGI TMS page](https://dgi.gouv.ht/ht/dgi_sev/taxe-sur-la-masse-salariale/) still states 2% and a broader exemption list. It is not the basis for the new-code rate or exemption scope. Obtain the legal basis for any additional exemption rather than carrying it forward automatically. Social insurance, valuation of benefits, special occupational circulars and cross-transition payments remain to be researched.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

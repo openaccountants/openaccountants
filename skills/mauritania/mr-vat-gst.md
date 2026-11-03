@@ -106,21 +106,3 @@ expected:
 | Amendment hold: signed/stamped law 2026-035 identity on physical page 6 and art. 3.1 printed pp. 6–18 read; operative date not established | https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf | 2026-11-01 |
 
 Not yet confirmed: full operative 2026 changes to digital-service place of supply, foreign supplier/platform collection and simplified filing; current electronic return boxes, confirmation/payment-reference sequence and exemption certificate workflow; current art. 243(2) ministerial public/state-enterprise certificate dispensing list; full item/HS exemption list, all mixed-use/input exclusions and refund implementation; an unconditional reverse charge on all imported services, which the baseline art. 214 exclusion contradicts.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

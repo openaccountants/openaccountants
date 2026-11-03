@@ -112,21 +112,3 @@ Obtain legal form, residence/management and activity locations, exact formation 
 | OTR Cahier fiscal 2026. Fiscal measures and reproduced amendments, pp. 7-24; administrative explanation cross-checked to the enacted finance law, which controls. | https://otr.tg/wp-content/uploads/2026/10/cahier-fiscal-2026.pdf | 2026-11-01 |
 
 Not yet confirmed: Current GUDEF field identifiers and payment-reference steps; detailed interest limitation, all depreciation asset classes and extraordinary gains/restructuring calculations; operative investment-code and industrial free-zone relief schedules (old holiday/reduced-rate statements are not retained as blanket rules); old 3% employer salary tax and 2% capital-contribution duty claims, for which no current primary rule was established. Do not quote those figures.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

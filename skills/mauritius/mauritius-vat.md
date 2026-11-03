@@ -162,21 +162,3 @@ expected:
 | MRA e-Services menu, read in full | https://www.mra.mu/index.php/e-services | 2026-11-01 |
 
 Not yet confirmed: the older Rs 2,300 minimum per invoice for tourist refunds, which is not in the Regulations we read; the old 6 month wait for bad debts; the telecoms treatment rests on no exemption being found; the rule on freeport certificates. VAT Regulations text still mentions a 12 million rupee figure in a form template; the Second Schedule says Rs 10 million and governs. Old version said monthly filers meant large taxpayers on the 20th, and residential first sale was standard-rated; both replaced by the law above.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

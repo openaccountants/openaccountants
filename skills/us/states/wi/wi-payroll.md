@@ -441,21 +441,3 @@ This skill produces draft work product for review by a Circular 230-credentialed
 **Penalty exposure:** Misclassification of a single Wisconsin worker can expose the employer to up to $25,000 per worker under § 108.221, plus back UI tax for the open audit period and possible criminal referral under § 108.24 for willful violations. Where the worker count is high or the audit period extends beyond 3 years, escalate to counsel before producing final classifications.
 
 *End of skill. Version 0.1. Awaiting verification by Wisconsin lead accountant.*
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

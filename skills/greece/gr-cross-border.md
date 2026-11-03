@@ -256,21 +256,3 @@ All read on 2026-10-22. The Income Tax Code arts. 62 and 64 were read again on 2
 Note: AADE's English page "Income categories and income taxation in Greece" still shows the pre-2026 scale (9/22/28/36/44%). The 2026 scale in this skill is from the law text (art. 15 as replaced by ν. 5246/2025, applying from tax year 2026).
 
 Not yet confirmed: the percentage of the late-payment interest rate in decision ΔΠΕΙΣ 1198598 ΕΞ 2013 (Β' 19/2014), which Α.1120/2025 keeps in force (the decision itself was not read on an official page); any amendments to the Income Tax Code after ν. 5264/2025 or to the Tax Procedure Code after ν. 5259/2025 made during 2026; whether the art. 16(2) phase-out for a 5C taxpayer is measured on the taxable half or on the whole salary; the A1 certificate rules in Regulation (EC) 987/2009; the list of states with an administrative cooperation agreement on tax with Greece; the Greece-Germany treaty treatment of rent in Example 2.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

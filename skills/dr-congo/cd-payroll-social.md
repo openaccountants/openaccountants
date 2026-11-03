@@ -159,22 +159,3 @@ expected:
 |25/060 arts.16,22,88, carried-law hold, annual employer report and commencement; not every carried 2025 provision | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf |2026-11-01 |
 
 Not yet confirmed: full carried 2025 tax-law/current social-order chain; applicable current minimum wage and category rules, contribution ceiling/valuations, special occupational rates, assimilated/voluntary worker details and international coordination; INPP/ONEM original instruments/rates/bases; full mining and nationality-based expatriate exclusions/deductions; monthly IRPP implementation and domestic/microenterprise schedules; exact 25-worker channel; current forms, electronic mandates, payment references, authenticated submissions and acceptance; complete tax penalties and appeal rules. All three domains remain partial.
-
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

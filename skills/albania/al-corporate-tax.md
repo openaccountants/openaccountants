@@ -250,21 +250,3 @@ expected:
 | Official Publications Centre, Law 29/2023 entry | https://qbz.gov.al/eli/ligj/2023/03/30/29 | 2026-10-22: page loads only a script shell and could not be read; not relied on for any figure |
 
 Not yet confirmed: the payment date for the final balance of corporate income tax for resident entities (Law 29/2023 art. 61 sets only the return date); the current quarter's late payment interest rate published under Law 9920/2008 art. 76(3); the Bank of Albania 12-month average lending rate that caps deductible interest under art. 50(1)(dh); treatment of tax losses from 2023 and earlier; Albania's position on Pillar Two beyond the absence of rules in Law 29/2023; the official name of the annual corporate return form on e-Filing.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

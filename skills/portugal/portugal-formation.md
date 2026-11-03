@@ -16,8 +16,6 @@ tier: 2
 
 ## Portugal: Constituição de Empresa e Seleção de Entidade, Skill v1.2 (2026)
 
-> Source-cited draft: not reviewed by an accountant.
-
 Esta skill cobre a escolha da forma jurídica e a constituição de uma sociedade comercial em Portugal em 2026. Os números de imposto vêm das skills de domínio do mesmo pacote, que mandam quando os números divergem:
 
 - `pt-corporate-tax`: taxas de IRC, derramas, Modelo 22 e IES.
@@ -290,21 +288,3 @@ Not yet confirmed: whether the IRN's EUR 200 "pedido com marca associada" at Emp
 Esta skill e os seus resultados são fornecidos apenas para fins informativos e de cálculo e não constituem aconselhamento jurídico, fiscal ou financeiro. A Open Accountants e os seus contribuidores não assumem qualquer responsabilidade por erros, omissões ou consequências decorrentes da utilização desta skill. Todos os resultados devem ser revistos e validados por um profissional qualificado antes de qualquer atuação.
 
 A versão mais atualizada desta skill encontra-se em [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

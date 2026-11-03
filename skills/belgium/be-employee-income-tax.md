@@ -261,21 +261,3 @@ expected:
 | RSZ, administrative instructions 2026/3, contribution rates | https://www.socialsecurity.be/employer/instructions/dmfa/nl/latest/instructions/socialsecuritycontributions/contributions.html | 2026-10-23 |
 
 Not yet confirmed: the Tax-on-web opening date and any administrative extension for income 2026 (FPS Finance pages at financien.belgium.be were behind a human-verification check and could not be read; the legal end dates of art. 308 are given instead); the regional surcharge rates and the autonomy factor for income 2026 that split the basic tax between the federal state and the regions (the examples assume they offset exactly); the indexed regional amounts for service vouchers and the regional home loan rules; the detail of the new minimum tax credit for dependent children in chapter 2 of the law of 15 July 2026; which date fixes the municipality whose rate applies; the social work bonus amounts and ceilings for January to June 2026 (RSZ 2026/3 shows only the amounts from 1 July 2026) and for blue-collar workers in detail.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -122,21 +122,3 @@ Obtain employment/apprenticeship/contractor and work-location facts, any exempti
 | NASSIT current contributions and compliance pages: main-body contribution split, timing, employee categories, SS4A and enforcement instructions read; not the linked benefits manuals. | https://nassit.org.sl/our-services/contributions?a=7-727-1 ; https://nassit.org.sl/our-services/nassit-compliance | 2026-11-01 |
 
 Not yet confirmed: Complete later-law and commencement/amendment chain, any operative earnings ceiling or additional exemptions, interpretation of the printed s. 2 included-allowance wording “cost of leaving”, current electronic registration/payment/SS4B equivalent, rate conversion and live interest inputs, denomination/later changes to offence fines, detailed benefit eligibility and international agreements. PAYE bands, base, contribution deduction, remittance/return calendar and current fields still require the separate full income-tax reconciliation; the old 0%–30% range is not adopted as a verified current computation. The old NLe800 minimum-wage claim and generic10%–12% employer add-on estimate are not supported current figures and are held, not applied. NASSIT's verified employer contribution is the specific10% above; other employment costs need their own sources. Independent source review is separate from current-law approval; SC/PR remain partial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

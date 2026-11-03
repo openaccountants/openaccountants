@@ -180,21 +180,3 @@ expected:
 Not yet confirmed: the old A1–C5 return-box mapping and 31 March annual summary lack current approved-form support; use the actual filing interface. No primary basis supports bank/vendor names as tax classifiers, automatic EU-style annual pro rata, zero recovery for every investment car, unconditional restaurant exclusion, 2.5% optical/parapharmaceutical treatment, or generic exempt-without-credit medical/education/residential rental. Precise traveller-refund documents, international-transport/gold special conditions, particular customs tariff/origin preferences and ITP exemptions require the relevant separate instrument; their specialist procedures are outside this ordinary method. Old EUR 10,000/EUR 500/40%/four-default/EUR 5,000 “red flags” were internal workflow heuristics, not statutory thresholds. Portal consolidations lack official legal status; the law controls over the regulation's inconsistent EUR 3.6 million endpoint.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

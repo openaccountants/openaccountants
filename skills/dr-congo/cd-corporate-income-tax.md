@@ -164,21 +164,3 @@ expected:
 | DGI, IS public declaration instructions | https://dgi.gouv.cd/impot-sur-les-societes/ | 2026-11-01: taxpayer, deadline, form/signature/bank-attestation instructions and observed public service links; no authenticated submission read. |
 
 Not yet confirmed: full enacted 24/011 carried-measure reconciliation under 25/060 art.16; complete current penalty and interest rates/procedures; actual form numbers, field mappings, portal access, payment-reference and receipt workflow; first-year provisional-payment and 2025-IBP-to-2026-IS transition details; pre-reform loss carry-forward; complete depreciation, allowances, interest/thin-capitalisation and unrealised-gain/revaluation rules; property-company article 49(3)/50(4) interaction, provincial Kinshasa rental tax and tenant withholding; mining corporate rate/concessions and mining dividend relief; whether any historical small-company turnover thresholds or goods/service percentages apply to a particular legal entity under the current reform, and the micro-business ministerial lump sum; resident dividend/interest/royalty withholding, treaty and sector relief; complete PE/residence/source/foreign-credit/exit analysis; actual nonresident technical/passive-service boundaries. Former 2025 draft figures from PwC Tax Summaries, kept for reference and not current law: small company with turnover of CDF 25m to 300m, 1% of turnover on goods and 2% on services; micro company below CDF 25m, ministerial lump sum; Kinshasa rental tax 12% with 10% withheld by the tenant; mining 30%; dividends 20%, or 10% in mining; nonresident interest 0 to 20%; royalties 20% on the net amount after a 30% deduction; nonresident services 14%. every old topic is retained in the destination map or this explicit gap list. Country coverage remains partial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

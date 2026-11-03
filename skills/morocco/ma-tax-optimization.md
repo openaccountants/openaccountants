@@ -246,21 +246,3 @@ These are largely **corporate (IS)** incentives, but relevant when a freelancer 
 This skill is **research-verified** against public DGI guidance, the Loi de Finances 2026, and reputable professional commentary, but is **pending sign-off by a Moroccan expert-comptable** (chartered accountant). It is general information for legitimate tax planning, **not** personalised tax advice. Tax rates, thresholds, coefficients, and rules change and may have exceptions specific to your activity or region. Before acting, confirm the current position with the **Direction Générale des Impôts (DGI)** or a qualified Moroccan **expert-comptable**. Figures marked "verify" are provisional.
 
 Part of **OpenAccountants** — open-source tax skills for the self-employed. openaccountants.com
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

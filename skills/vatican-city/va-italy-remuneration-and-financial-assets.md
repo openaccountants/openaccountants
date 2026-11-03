@@ -63,21 +63,3 @@ Article 1 permits exchange of foreseeably relevant tax information; banking cust
 Articles 3–4 contain historic regularization/transitional provisions. The 2016 implementation act's 180-day application window must not be presented as a newly available 2026 election. Confirm the current article 2 operational process separately. [Implementation act, article 2](https://press.vatican.va/content/salastampa/it/bollettino/pubblico/2016/10/17/0743/01656.html).
 
 Source-cited draft awaiting independent source and professional review. Employer status, pensions, residence, social security, VAT/customs, property privileges, entity formation and comprehensive domestic coverage remain separate work. No full subsequent-amendment or current filing-form audit is claimed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

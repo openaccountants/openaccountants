@@ -401,21 +401,3 @@ expected:
 | GOV.UK, cash basis | https://www.gov.uk/simpler-income-tax-cash-basis | 2026-10-31 |
 
 Not yet confirmed: the 2026-27 SA103S and SA103F forms and box numbers (not published when read); the MTD late payment penalty of 4% at day 15 and day 30 for 2027-28 (GOV.UK states it, but FA 2021 Sch 26 para 5 as in force on 2026-10-24 still says 3%, and no amending instrument was found); how the 40% first-year allowance applies to a cash basis trader (equipment is deducted as an expense there, so the allowance matters mainly under accruals and for cars, which it excludes); the detail of the MTD exemption for persons entitled to certain reductions or allowances (SI 2026/336 reg 38, not read). How-to: the on-screen receipt HMRC gives after online submission was not on the pages read; the time HMRC takes to issue a UTR after registering was not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

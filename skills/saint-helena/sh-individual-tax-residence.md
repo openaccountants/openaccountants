@@ -87,7 +87,6 @@ expected:
   part: 3500.00
 ```
 
-
 ## Ask the client first
 
 - Days present in this tax year and the two adjacent years?
@@ -105,21 +104,3 @@ expected:
 | Laws of St Helena index, read in full | https://www.sainthelena.gov.sh/st-helena/government/legislation/laws-of-st-helena/ | 2026-11-01 |
 
 Not yet confirmed: Any instrument after the 1 October 2021 consolidation: the Laws index, press pages and 2026 Income Tax Office page show no enacted change to these rates, and a full Gazette audit was not done. How part months count toward the 1/12 allowance. How days of arrival and departure are counted.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

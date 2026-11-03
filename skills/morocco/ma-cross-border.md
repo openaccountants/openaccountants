@@ -120,21 +120,3 @@ expected:
 | DGI, Code General des Impots 2026 (French); Art. 4, 5, 6-I-A-10, 6-I-C, 10-I, 13, 15, 16, 19, 19 bis, 20-II, 20-III, 45, 73-II-B, 77, 144, 148-III, 154, 158, 160, 170-VI, 170-VIII, 174-II-A, 174-III, 198, 208, 247-XXXVII-A and C read from the PDF | https://www.tax.gov.ma/wps/wcm/connect/08712531-1e81-4e28-a38b-2bd9edf8e09e/CGI+2026+FR.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-08712531-1e81-4e28-a38b-2bd9edf8e09e-pM5DEs1 | 2026-11-01 |
 
 Not yet confirmed: treaty list and treaty rates; proof of residence needed for treaty rates; Art. 20-III form; form numbers and the SIMPL portal path for the withholding; other exemptions in Art. 6-I-C; whether foreign tax with no credit is deductible as an expense under Art. 10; the base for Art. 13-IV on branch profit, which the Art. 16 example takes as after-tax profit.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network : accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

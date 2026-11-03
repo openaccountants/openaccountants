@@ -178,21 +178,3 @@ Refuse to help price transactions to shift profit, backdate documentation or hid
 Not yet confirmed: the documentation threshold in force for 2026 (the law says EGP 8,000,000 and lets the Minister raise it; MoF decisions reported as 52/2024 raising it to EGP 15,000,000 and 534/2025 of 17 Dec 2025 raising it to EGP 30,000,000 were not found on eta.gov.eg and were not read; the old skill used EGP 15,000,000). The number and date of the ministerial decree that issued the TP Guidelines (the old skill said 547/2018; the ETA file does not print it). The ETA Explanatory Instructions 78 of 2023 on TP and the Minister's documentation guide (not found on eta.gov.eg). Whether a revised return filed within 30 days of the deadline (Law 206 art. 33) moves the local file deadline. The CbC notification deadline, and whether an Egyptian subsidiary must file the CbC report locally when the parent's country does not exchange it (the old skill said it may). Whether the TP charge also carries the delay charge. Whether the 2:1 base rule in Law 151/2026 or the 3:1 transition in Law 30/2023 art. 5 governs a period straddling 29 Jul 2026 (this skill applies the transition, which Law 151 did not repeal). Whether art. 24 item 4 was amended after 2005. Corresponding adjustments: no domestic provision was found. Documentation language (the old skill said Arabic, English accepted). Safe harbours for low-value services or interest, the benefit test for intra-group services, APA roll-back and fees: none found in the texts read. The "no secret comparables" statement (from the OECD country profile, a secondary source).
 
 > Contributed by Ahmed Hassan.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

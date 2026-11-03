@@ -135,22 +135,3 @@ expected:
 | Rectifying Law 26/032, arts.12–13 and 49–51; PDF 8–10 rate tables and conditions visually inspected, including code/numbering inconsistencies | https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf | 2026-11-01 |
 
 Not yet confirmed: full carried 24/011/25/044 chain and later VAT orders; original-law/current consolidated exemptions, territory, tax points, valuation and all deduction/pro-rata conditions; precise treatment of all table anomalies; quota and palm-input orders and rate transition implementation; imported-service/reverse-charge/representative rules; current registration form/timing, e-invoicing/e-filing rollout mandate and authenticated submission; consolidated penalties/refunds and mining/suspension procedures. The source-year label does not close VAT coverage or authorise invoicing/filing.
-
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -44,21 +44,3 @@ Reconcile worker registration numbers, period earnings, the capped base and both
 ## Legislative limits
 
 The downloadable regulations are an older compilation. Their historical rate and age provisions have not been used as the current 2026 schedule. Current figures above come from NIS's employer guidance; the complete later amendment chain remains to be reconciled before merge. Age transitions, special coverage, multiple employers, self-employed and voluntary contributions, penalties and benefits require separate analysis. Independent accountant review is pending.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

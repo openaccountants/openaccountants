@@ -17,7 +17,6 @@ Tax year 2026. Figures checked on 3 November 2026 against the gazetted Nigeria T
 
 Anyone forming a business in Nigeria from 2026: business name, private company, LLP, public company or incorporated trustees. Tax points follow the NTA; registration steps remain the Companies and Allied Matters Act 2020 text in the section below. "NTA" means the Nigeria Tax Act 2025 (Act No. 7, Official Gazette No. 117 of 26 June 2025), in force 1 January 2026 (commencement line of the Act). "NTAA" means the Nigeria Tax Administration Act 2025 (Act No. 5, same Gazette).
 
-
 ## Rates, bands and thresholds
 
 | Item | Rate or amount | Tax year | Law | Status and link |
@@ -64,8 +63,6 @@ Non-resident companies are outside the development levy (s.59(1)). How non-resid
 ## Entity detail and registration steps
 
 The formation text follows, with its tax statements corrected to the NTA where they differed.
-
-
 
 #### Section 1: Quick Reference
 
@@ -450,8 +447,6 @@ Q7: Micro turnover; single Nigerian-resident founder; accept unlimited liability
 
 Where a specific monetary threshold or sectoral capital floor is uncertain at the time of advice, mark as TBC and verify against the current NTA 2025 schedule, the latest CBN / SEC / NAICOM / NCC circular, and any Finance Act amendment in force before relying on it.
 
-
-
 ## Two worked examples that recompute
 
 Simple: a limited company, turnover NGN 420,000,000, assessable profit NGN 60,000,000. Not small on turnover. Company tax NGN 18,000,000, levy NGN 2,400,000.
@@ -492,7 +487,6 @@ expected:
 4. How much profit will the owners draw out?
 5. Is limited liability needed?
 
-
 ## Sources
 
 | Source | URL | Read on |
@@ -510,21 +504,3 @@ Not yet confirmed: whether the "£" in NTA s.57(2)(a) is meant as euro (the gaze
 This skill and its outputs are provided for informational and computational purposes only and do not constitute legal, tax, or financial advice under Nigerian law. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified Nigerian legal practitioner, ICAN / ANAN chartered accountant, or CITN chartered tax practitioner before acting upon. Foreign founders should additionally engage immigration counsel for expatriate quota / CERPAC matters, which are out of scope.
 
 The most up-to-date version is maintained at [openaccountants.com](https://openaccountants.com).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

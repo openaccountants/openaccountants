@@ -381,21 +381,3 @@ expected:
 Not yet confirmed: the current consolidated UStBBKV § 2 and the BGBl. II Nr. 120/2014 changes to it were not read, so the laptop and tablet rule rests on the original text, the 2026 U 30 and the BMF FAQ; the BMF van list (Kleinbus and Kleinlastkraftwagen regulation) and any upper cap above EUR 40,000 for zero-emission cars, which are BMF guidance not read today; the EUR 40 gift threshold for own use, which is in the VAT guidelines, not the statute; the 2026 U 30a filling instructions (the BMF form server did not return the file); three rules from the old version that the statute does not state: that input VAT on start-up costs before the first sale is deductible (UStR guidance, not read today), that a new business with no prior year files monthly from the start if it expects turnover above EUR 100,000 (§ 21 Abs 2 tests only the prior year), and that a domestic reverse-charge invoice is due by the 15th of the month after the supply (the statute sets that deadline only for intra-EU supplies of goods, Art. 11 Abs 1 Binnenmarkt).
 
 This skill is general information, not tax advice. Have a Steuerberater check a return before it is filed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

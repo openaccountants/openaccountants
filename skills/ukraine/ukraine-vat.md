@@ -301,21 +301,3 @@ expected:
 Not yet confirmed: the VAT return form, its line numbers and its annexes (the Ministry of Finance order was not read; the old skill's line numbers and annex names D1 to D7 are left out); the Cabinet of Ministers procedure for suspending invoice registration (Resolution No. 1165), including the risk criteria and the time the regional commission takes to decide; the content of the goods lists in Customs Code transitional points 9-24 and 9-36 (the old skill called them energy equipment and wind turbines); whether residential letting is exempt (the old skill cited art. 197.1.14, which covers sale of housing, not rent); whether a universal postal service exemption exists (not found in art. 197.1); whether input VAT on goods destroyed by hostilities can be refunded in cash or only offset (point 32-1 says nothing on this); the benefits that come with the high-compliance list in point 69.41; the current martial-law extension decree and its end date; a wartime simplified VAT registration (no provision found); the old automatic-refund criteria such as 24 months of registration (not in the current art. 200); the term for appealing a refused refund; DPS guidance on any of the above.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

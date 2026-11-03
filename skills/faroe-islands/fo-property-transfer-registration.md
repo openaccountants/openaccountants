@@ -87,7 +87,6 @@ and cancellation of rights not satisfied by a forced sale under Procedure
 Act §642. These are the specified **service-fee** exceptions; they do not
 create a general tax exemption for an underlying transfer. [Fee Act §4][fee]
 
-
 ## The base
 
 **Purchase, gift and exchange.** Retain the deed, consideration schedule,

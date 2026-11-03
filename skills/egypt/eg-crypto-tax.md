@@ -159,21 +159,3 @@ Hand over to a lawyer and an accountant for any real filing. Never encourage cry
 | Central Bank of Egypt banking-laws index (lists Law 194 of 2020; the PDF refused both fetch and archive, text unread) | https://www.cbe.org.eg/ar/laws-regulations/laws/banking-laws | 2026-11-01 |
 
 Not yet confirmed: Law 194 of 2020 art. 206 (prior Central Bank approval for issuing, trading, promoting or running crypto platforms), its penalties, whether any licence was ever granted, and the Central Bank's public warnings: all in the old skill, none opened today. The 2018 Dar al-Ifta fatwa (a religious opinion, not a statute). Any ETA statement on crypto. The grep of tax laws used OCR text, so a spelling variant could escape it.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

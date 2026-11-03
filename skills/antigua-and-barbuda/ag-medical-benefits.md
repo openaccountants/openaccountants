@@ -52,21 +52,3 @@ The operative legislation for the rate table, wage definition, exceptions, contr
 ## Review output
 
 Retain the calculation, source versions and factual classification. A qualified local reviewer must check current amendments and the actual case before anyone files, pays or relies on the result. No professional attestation is claimed.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -62,21 +62,3 @@ Norway runs a dual income tax. A flat 22% tax falls on ordinary income (alminnel
 Note: the law sets the primary-home threshold for the 70% wealth valuation at NOK 14,000,000 for income year 2026. Lov 23 June 2026 nr. 66 part II rewrote skatteloven § 4-10 second paragraph third sentence to NOK 14,000,000, and part IV puts that change in force at once (23 June 2026) with effect from income year 2026. Skatteetaten's Formuesskatt 2026 rate page also says 14 million. Skatteetaten's Forskuddsutskrivingen 2026 (December 2025, before the amendment) still says NOK 10 million; that figure is out of date.
 
 Not yet confirmed: the national insurance rates in folketrygdloven and the Storting's contribution decision themselves (taken here from Skatteetaten's 2026 central rates); the shielding rate (skjermingsrente) for 2026, which is set after the year ends; inheritance and gift tax (not re-read for this update).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

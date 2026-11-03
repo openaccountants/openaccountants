@@ -34,7 +34,6 @@ tier: 2
 
 ### Scope and first checks
 
-
 This Guide covers income-tax enquiries and assessment limits, section 32 information-notice appeals and section 35 assessment appeals. The final section distinguishes UK treaty mutual-agreement procedure (MAP) from domestic appeals. This Guide does not establish the route for every penalty, customs decision or transaction-tax dispute. Read the actual notice and identify the statutory decision, assessed period, amount, service method and appeal information. Section 35(1) requires the assessment notice to state assessed profits or gains, tax payable, payment place and the subsection (2) appeal rights. [Income Tax Act, section 35](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 ## Rates, bands and thresholds
@@ -49,16 +48,13 @@ This Guide covers income-tax enquiries and assessment limits, section 32 informa
 
 ### Enquiries and assessment limits are different clocks
 
-
 Section 31 permits assessment on a complete return and best-judgment assessment where chargeable income is omitted or the Commissioner is dissatisfied. A section 31 enquiry can concern a return or its amendment. Its ordinary time limit is **one year after receipt of the return**, not one year after the accounting-period end. Section 31(5) removes that limit in its specified case of fraudulent or wilful default or negligent conduct in failing to comply with a notice under that section. Record the actual return-receipt date and each notice; do not treat silence after filing as approval. [Section 31(1)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 Section 31A separately sets an ordinary assessment limit of **six years after the relevant assessment year or accounting period ends**, subject to the Act. Section 34 permits additional/discovery assessments and amendments, with subsection (3) setting the six-year amendment limit. Where fraud, wilful default or neglect was committed by or on behalf of the taxpayer in connection with taxation, subsection (4) permits assessments or additional assessments up to **twenty years after period end**, notwithstanding section 38 finality. The extended provision is not limited to deliberate fraud. [Sections 31A, 34](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 For an accounting period ending 31 December 2025, the six-year period-end boundary is 31 December 2031; the twenty-year boundary is 31 December 2045 if section 34(4) applies. These dates illustrate the separate statutory clocks, not an automatic conclusion that a particular assessment is valid or barred. A one-year enquiry limit is not a one-year expiry of all assessment powers. Keep the conduct findings and statutory basis with the chronology. [Sections 31(4)–(5), 31A, 34(3)–(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-
 ### Information notices: response and appeal
-
 
 Following notice of an intention to enquire under section 31, section 32 permits a written requirement for relevant documents within the taxpayer's possession or power, accounts, audited accounts or particulars. The specified response time must be **at least 30 days**. Photographic, facsimile or PDF copies can be supplied, but a further written demand for originals is possible with a specified time of at least 30 days. Preserve originals and an indexed copy of what was delivered. Section 32A makes intentional falsification, concealment, destruction or disposal of a required document an offence. [Sections 32(1)–(4), (10), 32A](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -66,9 +62,7 @@ An appeal against a requirement in a section 32(2) notice is to the Tribunal by 
 
 Keep the notice-response deadline and appeal deadline separately. An objection letter does not by itself establish an agreed extension or suspension of the information requirement; obtain and retain any applicable direction. Service disputes, time computation and privilege questions require legal review. This section does not describe every information power under the Act, including section 6 notices.
 
-
 ### Tax provision during liquidation
-
 
 Section 52 prevents a liquidator from distributing company assets to shareholders, or disposing of the company/assets to the specified connected persons, unless provision has been made for full payment of tax that may be payable. Subsection (2) defines that term by reference to sums due under the Act at the relevant Companies Act date. Verify that cross-reference and the liabilities; do not replace it with an unsupported reserve percentage or a claim that every ordinary third-party sale is prohibited. [Section 52](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -80,14 +74,11 @@ Keep the statutory appointment/declaration, liability schedule, control/connecti
 
 ### Establish service before calculating the appeal period
 
-
 Section 10 permits personal, postal, fax and email service. For postal service, the statutory deemed date is the **seventh day after posting**. Fax/email service is deemed on the sending date unless sent after **5:30pm**, when it is deemed on the following day. Personal service is on delivery. Fax/email also requires a same-day postal confirmation; prior agreement to electronic service is not required. [Section 10(1)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 For a Gibraltar-incorporated company the statutory service address is its registered office; other entities have the specific alternatives in section 10(4). Preserve the notice, envelope, transmission record and registered-address evidence. Do not substitute the day an accountant opened or forwarded the notice for the statutory service date. Disputed service, missing confirmation or procedural defects need legal assessment; this Guide does not declare a notice invalid automatically.
 
-
 ### Written appeal and grounds
-
 
 The appeal is to the Tribunal, initiated by **written notice addressed to the Commissioner within 28 days from service** of the assessment notice. State the grounds in enough detail for all parties to understand the issues. Grounds not notified to the Commissioner at least **14 days before the hearing** cannot be contested at the appeal. A general request to discuss the assessment should not be treated as proof that a compliant appeal has been lodged. [Section 35(2)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -95,9 +86,7 @@ A practical appeal file identifies the assessment and period, disputed adjustmen
 
 If reasonable cause prevented an in-time appeal, apply to the Commissioner for late admission and explain the cause and subsequent timeline. The Commissioner must consent if satisfied both that the cause prevented the appeal and that the application followed without unreasonable delay; otherwise the application goes to the Tribunal for a decision. Late admission is not automatic. [Section 35(4)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-
 ### Payment postponement requires a separate application
-
 
 Section 36 applies to the specified taxpayer who has complied with the relevant return obligation, been assessed under section 31(2)(a), and appealed the assessed profits or gains. An application to postpone collection must be **in writing within 28 days of service**, state the precise grounds and identify the amount. It cannot cover the portion not in dispute. These conditions must be checked rather than assuming every appeal qualifies. [Section 36(1)–(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -107,9 +96,7 @@ The Commissioner can initially allow postponement for up to **three months in ag
 
 Failure to pay the non-postponed amount within **30 days of issue** of the decision notice makes the postponement decision void and the assessed tax immediately payable, retaining its original due date. A later written reduction of the postponed amount has a corresponding 30-day payment condition. Section 36(9) prevents the provision from requiring payment earlier than section 39 otherwise would. [Section 36(5)–(9)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-
 ### Tribunal handling and outcome
-
 
 Schedule 2 provides for hearing-date notices, normally allowing at least 28 days unless agreed or directed otherwise, and private proceedings. Parties can give evidence, call and question witnesses and address the Tribunal; representation is governed by paragraph 10. Retain an indexed evidence file and identify the witnesses needed to prove each disputed fact. [Schedule 2, paragraphs 6–11](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -117,9 +104,7 @@ The Tribunal can **reduce or increase** an assessment: an appeal is not limited 
 
 A pre-hearing agreement with the Commissioner has the consequences specified in section 35(5), as though the appeal were determined in that amount on the agreement date. Section 38 governs finality, subject to its exceptions and section 34. Preserve the agreement or determination, revised assessment and resulting payment/refund calculation. Do not assume the matter remains open simply because a formal hearing never occurred. [Sections 35(5)–(7) and 38](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-
 ### Supreme Court: case stated on a point of law
-
 
 A party who considers the final determination erroneous on a point of law can require the Tribunal to state and sign a case for the Supreme Court. Within **21 days after final determination**, serve notice on the **Clerk** and pay the **£100 fee to the Clerk**. The Tribunal can refuse if the identified question is not a question of law or the fee has not been paid. This is a different recipient and deadline from the original assessment appeal to the Commissioner. [Schedule 2, paragraph 16(1)–(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -136,17 +121,13 @@ The rules provide these stages, read with those modifications:
 
 The Supreme Court determines the legal question and either affirms the determination or remits the matter to the Tribunal with its opinion and directions. **Tax remains payable according to the Tribunal's determination while the case is requested or pending before the Supreme Court.** A case-stated request does not itself continue an earlier collection postponement. [Schedule 2, paragraph 16(4)–(5)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-
 ### Overpayment claims: a separate six-year period
-
 
 Section 61 entitles a person to repayment where it is proved to the Commissioner's satisfaction that tax paid for a year of assessment or accounting period, by deduction or otherwise, exceeds the amount properly chargeable. The Commissioner certifies the amount and causes repayment. An unexplained credit in the taxpayer's ledger is not proof of the correct liability or of an accepted refund. [Section 61(1), (3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 A claim under section 61 must be made **within six years from the end of the year of assessment or accounting period to which it relates**. Record the relevant period end, rather than starting that clock from discovery of the error, payment date or a later letter. This repayment period is distinct from the assessment appeal deadline and the treaty MAP deadline. It does not state that a late appeal automatically becomes valid or that every final assessment can be reopened. Resolve any section 38 finality issue separately. [Sections 38 and 61(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 **Period example:** for a company accounting period ending 31 December 2025, six years from that end reaches 31 December 2031. A later discovery in 2028 does not restart the statutory six-year clock. Confirm the applicable receipt/submission rules and lodge in advance; this example does not establish a weekend extension, portal acceptance or exception for late claims.
-
-
 
 For employer/pension-payer deduction directions, section 62(3) preserves the individual's appeal rights but expressly continues deductions pending final determination. Any overpayment established on that determination is refunded to the individual. An appeal alone does not authorise the payer to stop deductions under the direction. [Section 62(1)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
@@ -160,7 +141,6 @@ Postponement of collection **does not change the original due date** for section
 
 ### Non-residents and statutory representatives
 
-
 Section 45 allows a non-resident to be assessed directly or in the name of the specified trustee, attorney, agent, receiver, branch, manager or other representative. The representative need not actually receive the income for that provision to apply. The amount rule is expressly subject to rule 24 of the Income Tax (Allowances, Deductions and Exemptions) Rules; this section does not establish the non-resident's allowances or override an applicable treaty. Identify the underlying taxable income and representative capacity before deciding how the assessment should be addressed. [Section 45(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 For non-resident partners, section 45(2) permits assessment in the partnership's name, an ordinarily resident partner's name or that of a Gibraltar partnership agent, with recovery from the specified partnership assets, partners or agent. A partnership agreement allocating tax internally does not alone resolve these statutory recovery routes. The person in whose name the non-resident is chargeable is answerable for the required assessment acts and tax payment under section 46. [Sections 45(2)–46](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
@@ -173,9 +153,7 @@ A person aggrieved by a subsection 50(1) declaration can appeal using the assess
 
 Section 51 permits a person answerable for another's tax to retain sufficient money received on that person's behalf and indemnifies payments made pursuant to the Act. This is not a general right to retain unrelated funds or charge an estimated fee as tax. Establish the tax, capacity, available funds and payment record. [Section 51](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
-
 ### Treaty MAP: a separate submission and collection decision
-
 
 For the UK–Gibraltar agreement, Article 24(1) permits presentation to either competent authority within **three years from the first notification** of action resulting in taxation contrary to the agreement, irrespective of domestic remedies. Record the notification, not merely the later payment or appeal decision. An agreed resolution under paragraph (2) is implemented notwithstanding domestic time limits. This is not a universal three-year domestic appeal period. [Article 24](https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force#article-24-mutual-agreement-procedure).
 
@@ -234,8 +212,6 @@ expected:
 5. Which directions, deadlines, prior decisions and receipt evidence govern this case?
 
 ## Sources
-
-
 
 The following links collect the sources already cited above. Their applicable versions, statutory locators and unresolved limitations remain as stated in the body; this list is not a new source verification.
 

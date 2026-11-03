@@ -118,21 +118,3 @@ expected:
 | Beneficial Owners Register Act (Act No. 37/2021 Coll.), version in force from 1 January 2025: §§ 9, 11 | https://e-sbirka.gov.cz/sb/2021/37/2025-01-01 | 2026-10-30 |
 
 Not yet confirmed: whether notaries add 21% VAT to the tariff fees, and whether the CZK 500 entry fee (item S) is charged on top of the CZK 2,000 model-memorandum deed; the Ministry of Justice model memorandum itself (not read); how long incorporation takes end to end in practice (the old version said 1 to 3 weeks; the law sets only the court's 5 working days and the notary's "without undue delay"); the full list of documents a notary or court needs for the entry (for example the trade licence extract and the seat owner's consent), which sits in the Public Registers Act and ZOK provisions not read in full; whether a special law still requires an audit of some small companies after 2026 (Accounting Act § 20(1) keeps the duty for entities that a special law names); the general meeting's deadline for approving the annual accounts (not read today).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

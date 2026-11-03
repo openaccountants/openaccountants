@@ -20,7 +20,6 @@ This is a partial 2026 preparation workpaper for a Burkina Faso company. It does
 
 Commercial companies with a seat in an OHADA member state are governed by the Act and non-conflicting national rules. A sole trader is not a company incorporated under this Act. [AUSCGIE 2014 arts. 1, 3–6](https://biblio.ohada.org/doc_num.php?explnum_id=2032).
 
-
 ## Rates, bands and thresholds
 
 | Item and conditions | Source |
@@ -47,7 +46,6 @@ Newly created companies are exempt from MFP for their first operating period and
 
 Businesses operated in Burkina keep accounts there, in French and according to applicable OHADA accounting law; sector-specific frameworks remain separate. Route periodic tax/social jobs to the seven named Guides. [CGI 2026 arts. 554–556](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-
 ## Deadlines and filing
 
 SARL paid funds are deposited immediately in an account of the company in formation at a bank, authorised credit/microfinance institution, or with a notary; payment and deposit are recorded in the articles. [AUSCGIE 2014 art. 313](https://biblio.ohada.org/doc_num.php?explnum_id=2032).
@@ -66,16 +64,13 @@ Beneficial-owner tax declarations accompany existence declaration for art. 557 p
 
 Company accounts ordinarily close on 31 December. New companies created by 30 June close that year; later ones may close at the next 31 December. Cessation/disposal and the actual first period require separate treatment. [CGI 2026 art. 49](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf).
 
-
 ## Penalties and interest
 
 No current national company-registration or UBO penalty schedule has been read for this job. Refer a late or incorrect registration to local counsel; do not borrow a tax sanction from another obligation. Profit, VAT and payroll sanctions stay in their respective Guides.
 
-
 ## Cross-border points
 
 Foreign ownership, immigration/work permissions, foreign-exchange controls, branch registration and sector authorisations are not cleared. Read the foreign-owner facts and route [controlled transactions](bf-transfer-pricing.md) and [non-resident service payments](bf-nonresident-services-withholding.md) separately. Forming a company does not settle those tax jobs.
-
 
 ## Two worked examples that recompute
 
@@ -113,7 +108,6 @@ expected:
 
 Obtain the proposed form, owners and ultimate controllers, activity/regulated permissions, physical seat, cash/in-kind/industry contributions and valuations, proposed capital and payment dates, start date, first close and projected turnover, balance sheet and permanent staff. Ask whether any pre-registration commitments exist; no ratification analysis is provided here.
 
-
 ## Sources
 
 | Official source | Read on | What was actually read |
@@ -126,21 +120,3 @@ The [figure/rule ledger](../../evidence/ledgers/burkina-faso-legacy-jobs-2026110
 Not yet confirmed: Burkina national SARL capital/nominal exceptions and current execution/deposit derogations; current CEFORE portal, forms, fees, notary budget, end-to-end processing time and registration workflow; UBO identity methodology under the referenced AML law and current declaration form/box IDs; CEFORE-specific UBO step; sole-trader registration, pre-registration commitments and ratification; registry accounts-deposit process and deadlines, licences and blanket annual business-registration renewal; formation/UBO penalties; sector/public-offering capital rules, foreign-owner/branch/immigration/exchange restrictions; authenticated eSINTAX filing and accountant attestation.
 
 Written by OpenAccountants from the cited sources. Independent source review: conditional source corrections closed for this rewrite. Accountant attestation: none.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

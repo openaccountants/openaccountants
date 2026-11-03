@@ -114,21 +114,3 @@ expected:
 | lfr2026: Signed/stamped law 2026-035 identity visually read on physical page 6; art. 3.1 comparison text printed pp. 6–18, covering art. 14, 210, 219, 221/221bis, 249bis/ter, 293decies, LPF L.8/L.8bis/L.16bis/L.20/L.25/L.26. Operative commencement and implementing texts not established. | https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf | 2026-11-01 |
 
 Not yet confirmed: full 2026 enactment/commencement chain and operative August rectifying changes; foreign tax relief/treaties and all sector regimes not expressly worked in sibling Guides; complete local property, customs/excise, incentives, financial tax and electronic-transaction computations; currency redenomination legal instrument and rounding conventions outside the provisions cited; independent review and any credentialed accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -299,7 +299,6 @@ If the taxpayer had regularised during the audit under LPF art. L. 62, the inter
 
 **Qualification of that counterfactual.** The deliberate-breach facts in the illustration do not qualify for LPF L. 62: good faith is a separate mandatory gate. Only a different, eligible good-faith case meeting all Section 8 conditions gets the reduction. If that case has EUR 60 unreduced interest, the 30% reduction leaves EUR 42 (60 × 70%); it does not reduce the EUR 1,000 deliberate-breach surcharge in the original fixture or make that fixture eligible.
 
-
 ### Recomputable checks of the existing penalty methods
 
 The first block recomputes the hypothetical deliberate-breach illustration above. Its twelve chargeable months and valid 40% deliberate-breach finding are declared facts, not inferences from an arithmetic discrepancy.
@@ -545,21 +544,3 @@ Selected repair reads, 31 October 2026: the retained official BOFiP clauses abov
 *OpenAccountants: open-source accounting skills for AI*
 *This output must be reviewed by a qualified professional before filing or acting upon.*
 *Latest skills: **openaccountants.com** | Report errors: **github.com/openaccountants/openaccountants***
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

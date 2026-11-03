@@ -128,21 +128,3 @@ expected:
 | BURS Returns page, form names only (page predates the 2026 Acts) | https://www.burs.org.bw/index.php/tax/returns | 2026-11-01 |
 
 Not yet confirmed: which rate applies to an accounting period straddling 1 July 2026 (the Act says the old Act covers earlier years; straddle treatment not read); how pre-2026 losses count against the five-year limit; old approved-manufacturer 15% status after 1 July 2026 under s 94; treaty rates of 5 to 7.5% and the count of about 24 treaties from the old file (no official list opened); ITA22 box numbers.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

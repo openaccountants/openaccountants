@@ -99,21 +99,3 @@ expected:
 | Law 19/2000 art. 12 with neighbouring arts. 11 to 15, Arabic text read | https://www.mof.gov.kw/Desicions/Decree/PDF/LawNo19Of2000NationalLabor.pdf | 2026-11-01 |
 
 Not yet confirmed: NON-OPERATIVE HOLDS. VAT/GST and excise implementation and all no-tax consequences (see VAT Guide); historical monthly PIFSS payment by the following month's 15th and all contribution rules (see payroll Guide); the old blanket statement that there is no individual residence concept. Mixed ownership: how the 15% applies to a company part owned by Kuwaiti and part by foreign holders, and the Kuwaiti and Gulf exemption itself, including the earlier statements here that Gulf nationals are foreign and also exempt (the texts read define the taxpayer as any corporate body; Ministerial Decision 3 of 1989 on equal treatment of Gulf nationals is named in the NLST rule but the copy on the MOF site is a different document); KFAS 1% contribution; the 2.5% and 1% interaction with Free Trade Zone exemptions under Law 26 of 1995; the extension of the FY 2026/2027 DMTT retention carve-out and five-year transfer direction to private payers; DMTT Executive Regulations detail (Ministerial Resolution 55 of 2025, not read beyond the title page); any business profits tax draft, for which no enacted text was found; the old cap of 50% on the late filing fine, which no text read supports
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

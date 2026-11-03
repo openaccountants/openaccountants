@@ -55,21 +55,3 @@ This page is the summary. Each line points to the skill that holds the full rule
 Not yet confirmed: the full lists of goods and services at the 12% and 5% VAT rates (see lithuania-vat-return); the law changes taking effect from 1 January 2027 (Law No. XV-488 on PMĮ, noted in lt-corporate-income-tax), which this page does not cover.
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

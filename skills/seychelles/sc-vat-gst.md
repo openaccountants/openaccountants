@@ -108,21 +108,3 @@ expected:
 | Read for the figures cited: SRC e-invoicing notice, 16 Sep 2026 | https://src.gov.sc/src-completes-market-survey-as-part-of-e-invoicing-project/ | 2026-11-01 |
 
 Not yet confirmed: reverse charge on imported services, from the old pack; the VAT Act 2010 PDF on the SRC site is an image that OCR could not read, so its sections are cited only through SRC pages, the 2024 Amendment Act and Public Ruling 2025-2; VAT penalties specific to the Act; full schedule item lists.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

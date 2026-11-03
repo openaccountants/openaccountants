@@ -212,21 +212,3 @@ expected:
 Not yet confirmed: the CIT return form and its annexes (the return regulation was not read); the art. 8(5) fuel limits and the art. 12 donation relief; any CIT Law amendment after the 4 October 2026 archive copy; the Micro-enterprise Tax Law version in force from 15 October 2026 and the one announced for 1 April 2027 (only the 1 January 2026 version was read; it bars SIAs).
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

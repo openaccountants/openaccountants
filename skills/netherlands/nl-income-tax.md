@@ -191,21 +191,3 @@ expected:
 Pending law: the Belastingplan 2027 bill (Kamerstuk 37022, sent to the Tweede Kamer on 29 September 2026, not enacted on 24 October 2026) would apply some changes back to 1 January 2026 (art. LXIII(1)(a)): the car rate in Wet IB art. 3.15(6), 3.17(1)(b), 6.17(6) and 6.36(2) from EUR 0.23 to EUR 0.25 per km, an amendment to art. 3.76(3) (the starter's increase of the zelfstandigenaftrek) and the classic-car age rule in art. 3.20(5). See `nl-zzp-deductions` and `nl-deductions`. Its new box 1 table (first band 8.58% to EUR 39,247, second band 38.16%) and the higher labour credit take effect from 2027, not 2026.
 
 Not yet confirmed: (1) the final 2026 box 3 bank and debt percentages (set after the year ends; 1.28% and 2.70% are provisional; the statute text currently reads 1.37% and 2.70%); (2) whether the Hoge Raad has ruled on the 2026 bridging rules as such (only the 2021 and 2024 rulings were read); (3) the late-payment penalty on an income tax assessment: the Belastingdienst penalties page describes a betaalverzuimboete of 5% of the unpaid amount (minimum EUR 50, maximum EUR 6,709), but no statutory basis for it was found (AWR art. 67c covers only taxes paid on a return; the Invorderingswet 1990 has none), and the Besluit Bestuurlijke Boeten Belastingdienst was not read; (4) the 2026 filing thresholds (EUR 58 and EUR 19 are for the 2025 return); (5) the bijdrage Zvw base for a sole trader (profit before or after the entrepreneur reliefs), left to `nl-social-contributions`; (6) the conserving assessment on emigration, left to `nl-cross-border`.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

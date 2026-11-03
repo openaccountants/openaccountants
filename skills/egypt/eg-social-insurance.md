@@ -177,21 +177,3 @@ expected:
 | ETA payroll FAQ, 4th edition, insurance section | https://eta.gov.eg/sites/default/files/2026-05/faqs-payroll-system-v4.pdf | 2026-11-01 |
 
 Not yet confirmed: the 15% yearly rise of the band to 2028 (the law leaves the band to the executive regulations, which were not opened; the actual 2026 rises were 17.4% and 15.2%); 2027 band; the date of the first 1% rate rise (seven years from commencement; old text gives commencement as 1 January 2020); rates after the Law 148 amendments since 2019 (the PDF is the 2019 text; the 2026 NOSI notice confirms the band only); the old rule that board members and register managers pay on the maximum wage (art. 19(2) reads as chosen income); the sickness 4% in art. 70 for groups second and fourth and who it binds; rates under comprehensive health insurance, Law 2/2018; the contribution income table; the NOSI form to open an employer file; the Martyrs Fund treatment (eg-payroll); board members' position under art. 2 second for unlisted companies.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

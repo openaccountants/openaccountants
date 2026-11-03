@@ -14,8 +14,6 @@ tier: 1
 
 # How to submit capital gain taxes in Malta v1.1
 
-Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.**
-
 Tax year 2026. The rates below are the article 5A rates the Malta Tax and Customs Administration (MTCA) publishes for transfers made on or after 1 January 2015; they apply unchanged to deeds in 2026. Full rules, exclusions and article 5 gains are in `mt-capital-gains` and `mt-property-transfer-tax-the-sale-immovable`.
 
 ## METHOD
@@ -144,21 +142,3 @@ expected:
 Not yet confirmed:
 - The brokerage deduction conditions (Tax on Property Transfers Rules) and the 21-day promise-of-sale and DDT1 steps were taken from MTCA pages, not re-read in the rules themselves.
 - Budget 2027 is presented on 26 October 2026. Any change to art. 5A rates or reliefs for 2027 is not reflected here.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

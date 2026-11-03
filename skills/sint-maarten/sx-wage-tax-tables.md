@@ -68,21 +68,3 @@ Annex II has a separate table for bijzondere beloningen, with income thresholds 
 As recommended working papers, retain the pay-period choice, column 13 computation, applicable threshold or table row, deduction evidence and tax result. Reconcile these to the employee wage statement and remittance records. A zero wage-tax result does not establish zero AOV/AWW, medical insurance or other payroll obligations.
 
 Checked 22 October 2026 from downloaded regulation and Annex II; the threshold/example page was visually inspected. Full payroll coverage, benefits in kind, social contributions, registration, remittance, annual reporting, later changes and independent accountant review remain open. This draft does not provide a complete payroll implementation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -328,21 +328,3 @@ expected:
 | Skattestyrelsen, interest rate under Opkrævningsloven § 7, stk. 2 for 2026 (0.1%) | https://info.skat.dk/data.aspx?oid=2459995 | 2026-10-24 |
 
 Not yet confirmed: the exchange-rate rule for foreign-currency invoices was not read, so none is stated. No consolidated Momsloven after LBK nr. 209/2024 exists, so the in-force text was rebuilt from the amending acts listed above; a later Momsbekendtgørelse amendment in 2026 was searched for and not found. The daily interest formula is taken from the remarks to the bill (L 80 of 2024-25) and Den juridiske vejledning, not from the wording of § 7 itself; the formula figure in the bill is an image and was read only through the text around it. The date from which lov nr. 1783/2025, § 2, nr. 5 (interest only on the part of a tax-account debit that is principal and fees) applies is set by ministerial order and was not found. No order under Bogføringsloven § 18 requiring e-invoices for purchases and sales was found. Vehicle rules for vans over 3 tonnes and mixed private use are referred, not set out.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

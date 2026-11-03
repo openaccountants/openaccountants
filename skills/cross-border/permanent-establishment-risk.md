@@ -353,21 +353,3 @@ Many treaties (especially those involving developing countries like India, Brazi
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. Permanent establishment analysis is inherently fact-specific and depends on the precise terms of the applicable bilateral tax treaty. All PE assessments must be reviewed by a qualified international tax professional before acting upon.
 
 If you would like a licensed accountant to review your PE risk, visit [openaccountants.com](https://openaccountants.com) and log in to request a professional review.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

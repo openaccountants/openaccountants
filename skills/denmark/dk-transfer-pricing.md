@@ -246,21 +246,3 @@ expected:
 | Juridisk Vejledning C.D.11.15.3.3, Den typiske APA-proces (version 3.17) | https://info.skat.dk/data.aspx?oid=2060568 | 2026-10-23 |
 
 Not yet confirmed: (1) whether the documentation deadline moves when the 60th day falls on a weekend. SKL § 39, stk. 3 counts the 60 days from the return deadline "jf. §§ 11-13", but the § 13 weekend rule itself covers only the return deadlines, and Juridisk Vejledning C.D.11.13.1.3.2 gives 29 August for calendar years without a weekend rule. For calendar year 2026, 29 August 2027 is a Sunday, so file by Friday 27 August 2027. (2) The rules for the EU Dispute Resolution Directive and the EU Arbitration Convention in Danish law, and any time limits in specific Danish treaties, were not read for this skill. (3) Whether Skattestyrelsen offers unilateral APAs, beyond binding rulings (bindende svar), was not confirmed. (4) Which characterisation applies to a given secondary adjustment (for example whether an overpayment by a Danish subsidiary to its foreign parent is a dividend with Danish withholding tax) was not researched.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

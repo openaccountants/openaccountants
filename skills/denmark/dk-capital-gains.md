@@ -206,21 +206,3 @@ expected:
 | SKAT, correcting old returns | https://skat.dk/borger/aarsopgoerelse/se-og-ret-dine-gamle-aarsopgoerelser | 2026-09-25 |
 
 Not yet confirmed: the correction cut-off dates (1 May 2029 for 2025, 1 May 2028 for 2024), the foreign property gain field 425, and the holiday-home, cooperative-flat and transitional purchase-reporting rules were carried from the September 2026 reading of skat.dk and not re-read today; the pre-1 July 2025 mixed-use test (50% of value and area) is from skat.dk, not the law text; the 2026 interest and surcharge rates on restskat are not stated here.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

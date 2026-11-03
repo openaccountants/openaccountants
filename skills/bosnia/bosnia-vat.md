@@ -220,21 +220,3 @@ expected:
 | UIO, list of tax regulations | https://www.uino.gov.ba/portal/bs/propisi/porezi/ | 2026-10-30 |
 
 Not yet confirmed: the consolidated VAT rulebook (93/05 to 25/25) beyond the 2026 first-home article, including invoice content and cash-register rules; the electronic supply and purchase records referred to in rulebook 45/26 (eIsporuke); the travellers' refund conditions (Instruction 48/25); the conditions for refunds to foreign businesses (PDV SL 1); the special schemes for travel agents, second-hand goods and auctions (arts. 46 to 51); the yearly farmers' flat-rate compensation; the average price per m² that sets the first-home cap; whether a later consolidated text of the VAT Law exists (the Parliament site was not read).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

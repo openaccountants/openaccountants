@@ -47,7 +47,6 @@ implementation notice: own-proprietor MPIN is UJP-generated from July periods,
 with a rule preventing duplicate payment of July/August calculations already
 filed and paid by the person. Employee MPIN remains the proprietor's obligation.
 
-
 Business-loss treatment follows the signed negative DLD-DB field 22 into the
 current DLD-GDP annual reconciliation; it does not change salary withholding or
 authorise prior-year PIT carry relief. Ordinary employee floors and ceilings use

@@ -14,8 +14,6 @@ tier: 1
 
 # How to Account for Rental Income in Malta v1.1
 
-Built by Michael Cutajar and the OpenAccountants team. **Source-cited draft: not reviewed by an accountant.**
-
 Tax year 2026: rent received in basis year 2026 is reported by 30 April 2027 (TA24) or 30 June 2027 (tax return). The full computation, worked examples and short-let VAT points are in `mt-rental-income`.
 
 ## METHOD
@@ -121,21 +119,3 @@ Not yet confirmed:
 - The 20% further deduction and the long-lease rebate come from L.N. 100 of 1993 and the rebate rules as quoted in the MTCA manual; the rules themselves were not re-read.
 - The period over which the 0.6% late-TA24 interest runs: the manual gives 0.6% without the period; the general MTCA rate is 0.6% per month.
 - Budget 2027 is presented on 26 October 2026; any change to the 15% rent regime for 2027 is not reflected here.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -197,21 +197,3 @@ expected:
 | Brčko Zakon o zdravstvenom osiguranju (consolidated 19/20), art. 76 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20zdravstvenom%20osiguranju%20Brc--ko%20Distrikta%20BiH/precisceni%20tekst%2007B19-20%20Zakon%20o%20zdravstvenom%20osiguranju.pdf | 2026-10-30 |
 
 Not yet confirmed: the Brčko District pension and unemployment contribution rates (unemployment is set by the Employment Institute board, Employment Law art. 51(2)), the 2026 lowest and highest Brčko health bases, and whether the 2009 Brčko health decision was amended later (a web search found no amendment; the Assembly's decision register could not be searched); whether RS entrepreneurs pay all four RS contributions or only some (art. 22(2) exceptions not fully read) and the rates for pensioner and secondary-occupation entrepreneurs; the RS gazette publication of the 2025 average gross wage (2,349 KM is the RS Statistics Institute figure); the FBiH employer fees on net pay for natural disaster protection and water (other laws, not read); the FBiH rule for entrepreneurs who start or stop mid-month; any RS Contributions Law amendment not listed on the RS Tax Administration page.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

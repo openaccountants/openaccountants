@@ -123,21 +123,3 @@ expected:
 | [DGI official CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | Edition statement; arts. 42–56, 61–62, 71, 74, 79–82, 85–95, 97, 100, 140–141, 196, 671 and 754–758; reproduced 2025-0148 visa order, especially arts. 18–19. Relevant provisions and neighbouring conditions read, not the entire code. | 2026-11-01 |
 
 Not yet confirmed: current forms, boxes, portal steps, payment confirmation/reference and any new administrative deadline concession; complete specialist exemptions, provision/loss schedules, PE attribution, treaty relief, IRCM scope for capital reimbursements and directors' tantièmes/attendance fees, distribution filing procedure and sanction cumulation. Independent review of this rewrite is pending; no accountant has attested to it.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

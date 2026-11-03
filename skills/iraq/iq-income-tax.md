@@ -98,21 +98,3 @@ expected:
 | Law 113: PDF pp. 5–6 arts. 3–5; p. 13 art. 11; p. 16 art. 13; p. 26 art. 27; p. 33 arts. 44–46, visually read with neighbours | https://tax.mof.gov.iq/uploads/Najwan/law/Income-Tax-Law-No.-113-of-1982-Ar.pdf | 2026-11-01 |
 
 Not yet confirmed: **IQ-CURRENT** complete later amendments and 2026 budget effects; **IQ-PIT-BASE** current expenses, exemption categories (including agriculture), risk-allowance exemption, employee social-insurance deductions, undocumented-taxpayer single/unmarried fallback, allowance increases, child dependency/income/age rules, spouse merger, age relief and non-Iraqi proration; **IQ-PIT-GUIDELINES** application of the 2026 profit-guideline activities, expense treatment, multi-source reduction and continuing circulars; **IQ-PIT-PROCEDURE** registration documents, current income-report submission, objection/appeal routes, instalments, late-report cap, concealment, books penalty and all interest/additions. Earlier draft subjects remain preserved in the evidence ledger; none of these holds is a current entitlement or obligation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

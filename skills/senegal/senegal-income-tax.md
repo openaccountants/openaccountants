@@ -138,7 +138,6 @@ Bank and payslip patterns for sorting records:
 | BICIS / UBA / Bank of Africa | VIREMENT, CHÈQUE, AGIOS | PDF |
 | Orange Money / Wave / Free Money | PAIEMENT, TRANSFERT, RETRAIT | Mobile money - separate from bank; business vs personal must be confirmed |
 
-
 **Carried from the earlier version, not checked against the law.** Kept so no working rule is lost. Any figure here is unverified unless it also appears in the tables above; the tables win.
 
 Required records. Minimum: bank statement or payslips for the full year, plus tax home, family situation and employment or self-employment status. Better: payroll summary (gross, IR and TRIMF withheld, IPRES and CSS), last year's assessment, cadre status. Ideal: income statement, invoices, asset register, benefits schedule, rental detail, CGU declaration. No income document at all: stop. Income document without records: proceed and warn the reviewer that parts, cadre status and every deduction still need support.
@@ -293,21 +292,3 @@ expected:
 | DGID Entreprises page: portal descriptions read | https://www.dgid.sn/entreprises | 2026-11-01 |
 
 Not yet confirmed: The text of Loi 2025-17 was not opened; only DGID's summary of it was read, so any CGI change it made beyond that summary is not reflected. Benefit-in-kind scale (old version relied on PwC, carried above; art. 166 not worked through); statutory travel allowance; 30% rental deduction; IPM, IPRES and CSS rates (sites unreachable, see senegal-social-contributions); property gains; real regime expense rules for individuals; IR return box numbers; old claims that income from land is taxed at 20% and wages at 11% found no support in art. 173.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

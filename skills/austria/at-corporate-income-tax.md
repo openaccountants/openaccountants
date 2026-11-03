@@ -12,8 +12,6 @@ tier: 2
 
 # Austria corporate income tax (Körperschaftsteuer): tax year 2026
 
-Source-cited draft: not reviewed by an accountant, not for filing.
-
 This skill covers how Austria taxes companies: who is liable, the rate, the minimum tax, the taxable base (losses, the participation exemption, the interest limit, group taxation), the return, prepayments, surcharges and interest, and the tax on dividends a company pays or receives. All statute text was read on RIS (the federal legal information system) on 23 October 2026, in the version in force on that day unless a row says otherwise. Tax year 2026 means the calendar year 2026, or a financial year that ends in 2026.
 
 What is new for 2026: nothing in the 23% rate, the minimum tax or the loss limit. The interim tax of a private foundation rises from 23% to 27.5% from calendar year 2026 (KStG § 22(2)). Already enacted by the Budgetbegleitgesetz 2027-2028 (BGBl. I Nr. 62/2026), for later years only: the clearing-account rule in KStG § 8(2a), from financial years ending in 2027 (§ 26c Z 101), and a 24% rate on income above EUR 1,000,000, from financial years starting after 31 December 2027 (§ 22(1) and § 26c Z 102). Neither applies to 2026.
@@ -222,21 +220,3 @@ expected:
 | BMF form catalogue (K 3, G 4) | https://service.bmf.gv.at/service/anwend/formulare/show_mast.asp?s=g4 | 2026-10-23 |
 
 Not yet confirmed: the percentages and dates in the BMF quota regulation under § 134a(5) BAO; how KESt withheld on a domestic dividend to a company holding under 10% is credited or refunded in the assessment; the minimum tax of an SE (Article 4 of Regulation (EC) No 2157/2001 was not read); the KStR 2013 guidance on §§ 9, 10, 10a and 12a, which was not read for this refresh.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

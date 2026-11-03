@@ -255,21 +255,3 @@ expected:
 | Belastingdienst, Invorderingsrente | https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/standaard_functies/prive/contact/rechten_en_plichten_bij_de_belastingdienst/invorderingsrente | 2026-10-22 |
 
 Not yet confirmed: the exact filing deadline for the 2026 income tax return (the pages read say "usually 1 May" and point to the invitation letter); how far art. 25(9) Invorderingswet deferral reaches when only part of the price is left owing. The Wet IB 2001 version read is valid from 1 January to 20 February 2026; the version in force from 21 February 2026 was compared for arts. 2.12, 4.6, 4.14a, 4.49 and 4.53 and has the same text, apart from a notice of amendments to arts. 2.12 and 4.53 that have no commencement date yet.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

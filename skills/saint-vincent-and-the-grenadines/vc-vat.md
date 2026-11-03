@@ -44,21 +44,3 @@ Suggested monthly controls: reconcile sales by rate to invoices, identify credit
 ## Source status and remaining work
 
 The [official VAT Act PDF](https://ird.gov.vc/images/pdf/VAT_Act_Cap_445.pdf) was downloaded, but its opening pages show the 2009 revised issue and only early amendments. It is not a current consolidated rate authority. The rate and filing statements above rely on current IRD administrative guidance, pending reconciliation of later legislation. The exact threshold tests, input credits, exemptions, import rules, records, penalties and other operational provisions need further statutory work. Independent accountant review is pending; this is not comprehensive VAT coverage.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

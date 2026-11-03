@@ -103,21 +103,3 @@ Get the transaction date, tax regime/registration, annual turnover, goods/servic
 | [TAA 2021](https://elibrary.rat.gov.mw/server/api/core/bitstreams/42eb322b-f2a9-48b9-baaf-01c2ade040f5/content), ss 38–40,81,87 | 2026-11-01 |
 
 **Not yet confirmed:** appointed commencement notices for TAA/cutover and full period allocation; exact April 2026 commencement/registration transition and earlier 2026 threshold; old K25 m threshold and 30-day/voluntary registration conditions not independently established for the earlier period; full zero/exempt tariff schedules, legacy imported-service/reverse-charge scope, appointed electronic-invoicing commencement, operational digital registration, portal fields and refund eligibility. The two MRA December 2025 notices disagree on 30/31 December; no boundary calculation is supplied.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

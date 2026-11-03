@@ -190,7 +190,6 @@ If the engagement lacks key data:
 4. **Unknown transport allowance** → confirm; RRA states pension and maternity on gross, so include it.
 5. **Year ambiguity** → default 2026 table/rates; switch only for periods ≥ 1 Jan of a later year (pension steps up again in 2027).
 
-
 ### Carried: Pension steps, shortcuts and quick checks
 
 | From | Total | Employer | Employee | Source |
@@ -322,21 +321,3 @@ expected:
 | RRA Tax Handbook 2025 (read: E-Tax steps, real regime, PAYE, VAT declaration chapters) | https://www.rra.gov.rw/fileadmin/Folder_for_2025/RRA_Tax_Handbook_2025_Final.pdf | 2026-11-01 |
 
 Not yet confirmed: occupational hazards rate 2%; the split of 14% and later pension rates; whether transport is excluded from the maternity base and included in the pension base, which the old file said on secondary sources, while RRA says gross; the medical enrolment minimum of 7 employees and 10th of the month deadline, from the old file; the exact definition of net for CBHI; minimum wage, carried from a secondary source and not checked against the labour law; RRA Pay PAYE page lists quarters from March while CG Instructions list calendar quarters; the Instructions predate Law 020/2023.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

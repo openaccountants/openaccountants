@@ -55,8 +55,6 @@ Vero's 13.5% examples include groceries and food, animal feed, restaurant and me
 6. File a VAT return for **every** allocated period. For a period with no VAT activity, select the no-activity declaration in MyTax rather than omitting the return. Do **not** file a no-activity return if the period had zero-rate sales on which related purchases are deductible; report them under “Turnover taxable at zero VAT rate”. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/)
 7. The former VAT relief for small businesses (the reduction for accounting-period turnover under €30,000) is **abolished**: it is not available for accounting periods starting on or after 1 January 2025. Do not claim it for any 2026 period. An accounting period that began before 1 January 2025 is an old-period question; refer it. [Vero return instructions](https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/when-to-file-and-pay/); [Vero small-business exemption guidance](https://www.vero.fi/en/detailed-guidance/guidance/48658/vat-exemption-for-small-businesses/)
 
-
-
 ### Taxable consideration, tax point and deductions
 
 Under §73 the base is consideration **excluding VAT**, including price supplements and incidental charges forming part of the agreed supply. For a VAT-inclusive price, net base = gross / (1 + rate), tax = gross − net; do not multiply a gross receipt by the nominal rate. Allocate genuinely separate supplies to their own supported rates; a single composite supply requires its principal/ancillary classification rather than an arbitrary split. Discounts, cancellations, bad debts and recovered bad debts follow §78, with matching input adjustments. [VAT Act §§73,78,118][law].
@@ -232,23 +230,5 @@ Not yet confirmed: transaction-specific special margin/travel/group/marketplace 
 [deduct]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/deducting-vat-on-purchases/
 [vehicles]: https://www.vero.fi/en/businesses-and-corporations/taxes-and-charges/vat/vat-on-vehicles/
 [interest]: https://www.vero.fi/en/individuals/payments/paying-taxes/interest-on-late-payments/
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
 
 [margin]: https://www.vero.fi/syventavat-vero-ohjeet/ohje-hakusivu/48682/kaytettyjen-tavaroiden-arvonlisaverotus3/

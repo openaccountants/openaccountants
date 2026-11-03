@@ -56,21 +56,3 @@ Switzerland taxes income at three levels: federal (Confederation), cantonal (26 
 | Kantonales Steueramt Zürich, ZStB 133.1 (filing deadline 2026 return) | https://www.zh.ch/de/steuern-finanzen/steuern/treuhaender/steuerbuch/steuerbuch-definition/zstb-133-1.html | 2026-10-30 |
 
 Not yet confirmed: the range of combined federal, cantonal and communal profit tax rates across the 26 cantons and the national average (the old version gave about 11.85% to 21.6% and about 14.4% from a non-official source; no ESTV table of effective rates by canton was read for 2026); the 2026 filing deadline in every canton other than Zurich (`ch-cantonal-tax` covers Zurich, Zug, Bern, Basel-Stadt, Geneva and Vaud).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

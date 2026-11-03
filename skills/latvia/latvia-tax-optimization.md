@@ -132,8 +132,6 @@ Best for very small, low-expense activities; model it against the FIK and SIA ro
 
 This skill and its outputs are provided for informational and computational purposes only and do not constitute tax, legal, or financial advice. Open Accountants and its contributors accept no liability for any errors, omissions, or outcomes arising from the use of this skill. All outputs must be reviewed and signed off by a qualified professional (such as a licensed tax adviser in Latvia) before acting upon.
 
-The most up-to-date version of this skill is maintained at [openaccountants.com](https://openaccountants.com). Log in to access the latest version, request a professional review from a licensed accountant, and track updates as tax law changes.
-
 ## Sources
 
 | Source | URL | Read on |
@@ -152,21 +150,3 @@ The most up-to-date version of this skill is maintained at [openaccountants.com]
 likumi.lv did not respond on 2026-10-30, so the law texts were read from the Internet Archive copies dated above. VID pages were read live.
 
 Not yet confirmed: the Micro-enterprise Tax Law itself (likumi.lv did not respond and the Internet Archive has no 2026 copy), so the micro-enterprise rules come from VID only; what happens when a micro-enterprise's turnover passes the VAT threshold during the year; and any statutory limits on using the regime alongside employment.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -12,8 +12,6 @@ tier: 2
 
 # Greece transfer pricing (tax year 2026)
 
-Source-cited draft: not reviewed by an accountant, not for filing.
-
 Greek transfer pricing rules sit in two codes. The Income Tax Code (Κώδικας Φορολογίας Εισοδήματος, ΚΦΕ, ν. 4172/2013) defines connected persons (art. 2(ζ)) and sets the arm's length rule (art. 50) and the rule for business restructurings (art. 51). The Tax Procedure Code (Κώδικας Φορολογικής Διαδικασίας, ΚΦΔ) sets the documentation file and Summary Information Table (art. 25), advance pricing agreements (art. 26) and the fines (arts. 55 and 56).
 
 **Renumbering.** The Tax Procedure Code was re-enacted as ν. 5104/2024 (Α' 58). The old numbers in ν. 4174/2013 still appear in older guidance and in many firms' templates. AADE's correspondence table maps them: old art. 21 is now art. 25 (documentation file), old art. 22 is now art. 26 (APA), old art. 56 is now art. 55 (documentation fines) and old art. 56A is now art. 56 (country-by-country and DAC6 fines). The AADE codification read for this skill (circular Ε.2109/2025) is updated to ν. 5259/2025 (Α' 228/12.12.2025). It shows no amendment by a 2025 law to arts. 25, 26, 54, 55 or 56.
@@ -192,21 +190,3 @@ expected:
 | AADE, Ενδοομιλικές συναλλαγές (ΣΠΠ e-service, deadline, list of decisions: ΠΟΛ 1097/2014, ΠΟΛ 1144/2014) | https://www.aade.gr/endoomilikes-synallages | 2026-10-23 |
 
 Not yet confirmed: the content of the Master File, Local File and ΣΠΠ under ΠΟΛ 1097/2014 as amended by ΠΟΛ 1144/2014 (the decisions were identified but their text was not checked, so this skill does not list the file's contents or the ΣΠΠ fields); whether a newer decision under ΚΦΔ art. 83(29) replaced them; whether individuals carrying on a business are bound by art. 25, given that ΚΦΕ art. 50 names only legal persons and entities; the late payment interest rate under ΚΦΔ art. 52; any APA application fee; whether any AADE decision after Α.1341/2019 changed the country-by-country procedure; any 2026 law amending the Tax Procedure Code after ν. 5259/2025; the domestic rules implementing the EU dispute resolution directive 2017/1852.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

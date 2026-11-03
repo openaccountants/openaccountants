@@ -41,7 +41,6 @@ Salaried workers and employers (CNAS) and non-salaried workers (CASNOS). Affilia
 | Maximum contribution | SNMG x 12 x 15% x 20 = 864,000 DA | Base 5,760,000 DA | 2026 | same |
 | SNMG | 24,000 DA a month | Decree 26-01 | 2026 | https://www.joradp.dz/FTP/JO-FRANCAIS/2026/F2026001.pdf |
 
-
 ## The base
 
 CNAS base: all salary items except family benefits, expense refunds, leaving bonuses and special living-condition allowances (https://www.cleiss.fr/docs/cotisations/algerie.html). CASNOS base: taxable annual income, or turnover if none (https://www.cleiss.fr/docs/cotisations/algerie.html).
@@ -65,7 +64,6 @@ Patterns, defaults and refusal rules kept so no work is lost. Any figure here is
 - **R-DZ-SC-3**: Sector add-ons and exemptions. Trigger: client is in construction, public works, hydraulics, or claims a reduced-rate scheme (e.g. ANSEJ/ANADE start-up exemptions). Message: "An additional 0.375% unemployment-branch contribution applies in construction/public works/hydraulics, and start-up/youth-employment schemes may carry temporary exemptions. These require case-specific confirmation. Escalate to a warranted Algerian accountant."
 - **R-DZ-SC-4**: Non-resident / expat payroll. Trigger: client is a non-resident, on a bilateral social-security agreement, or seconded into/out of Algeria. Message: "Bilateral social-security agreements and secondment relief are outside the scope of this skill. Non-residents are taxed only on Algeria-source professional income (unverified note). Escalate to a warranted Algerian accountant."
 - **R-DZ-SC-5**: IRG/tax penalty quantification. Trigger: request to quantify statutory IRG late-payment penalties. Message: "Specific statutory IRG late-payment penalty percentages are not confirmed from a primary authority in this skill (unverified). Do not estimate. Escalate to a warranted Algerian accountant."
-
 
 This is the deterministic pre-classifier for bank statement transactions related to Algerian contributions and payroll tax. When a transaction matches a pattern below, apply the treatment directly. Do not second-guess.
 
@@ -150,7 +148,6 @@ When bank statement data is ambiguous or client circumstances are unclear, flag 
 #### T2-6: 2026 SNMG change and Finance Law 2025 floors
 
 - **T2-6**: Trigger: Computation spans into 2026, or involves the lump-sum/minimum tax regime. Issue: SNMG is 24,000 DZD/month under Decree 26-01; 20,000 DZD applied before. Action: use the SNMG of the year being computed. For IFU floors use `algeria-income-tax`.
-
 
 When producing a contribution / payroll computation, structure the working paper as follows:
 
@@ -302,21 +299,3 @@ expected:
 mfdgi.gov.dz and cnas.dz refused every direct and Chrome connection on 2026-11-01; DGI pages are Internet Archive copies, marked as such.
 
 Not yet confirmed: 26% employer and 35% total headline figures, since CLEISS shows 25% plus 0.5% FNPOS, 34.5% total; whether branch rates changed after 1 Jan 2024; CNAS monthly deadline, DAS or DAC dates and CNAS late penalties, because cnas.dz would not open and has no readable archive; CASNOS late penalty; the CASNOS site still prints 216,000 and 4,320,000 DA, computed on the old SNMG, so the 2026 amounts in the tables come from its formula with the new SNMG and need CASNOS confirmation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -258,21 +258,3 @@ expected:
 | BD Zakon o Poreznoj upravi (2020): arts. 68, 76 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20Poreznoj%20upravi%20Brc--ko%20Distrikta%20BiH/011B11-20%20Zakon%20%20o%20poreznoj%20upravi%20Brcko%20distrikta%20BiH.pdf | 2026-10-30 |
 
 Not yet confirmed: treaty withholding rates (the old version said 0% with Ireland and a 25% holding for many reduced dividend rates; no official treaty text was read, so no treaty rate is given here); the RS and BD form codes and the RS withholding tax payment deadline set in their rulebooks (rulebooks not read); the FBiH and RS financial statements deadlines that the FBiH return date hangs on (the 31 March return date is taken from the FBiH Pravilnik art. 101 and the RS law art. 38 directly); whether BD has later amendments after 38/22 (the BD Assembly list shows none); FBiH late-filing fines under the FBiH tax administration law beyond those in the profit tax law. The RS 94/15, 1/17, 58/19, 48/24, 114/25 and 78/20 texts were read from OCR of the official gazette scans published by Poreska uprava RS.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -47,21 +47,3 @@ For a closing review, reconcile the submitted computation to the financial state
 ## Open work
 
 The historical consolidated Income Tax Act and its later amendments, including the Tax Administration Act, need a complete reconciliation before merge. Residence, source, special sectors, incentives, deductions, loss relief and cross-border transactions remain outside this focused draft. Independent accountant review has not occurred.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

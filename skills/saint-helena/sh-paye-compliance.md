@@ -106,7 +106,6 @@ expected:
   deficiency: 50.00
 ```
 
-
 ## Ask the client first
 
 - Number of employees, and pay frequency?
@@ -126,21 +125,3 @@ expected:
 | Social Security Ordinance 2010, consolidated, searched for contributions; regulation 4 read | https://www.sainthelena.gov.sh/documents/20250708_Social-Security-Ordinance_CONSOLIDATED | 2026-11-01 |
 
 Not yet confirmed: Any instrument after the 1 October 2021 consolidation: the Laws index, press pages and 2026 Income Tax Office page show no enacted change to these rates, and a full Gazette audit was not done. An authenticated current PAYE table: the office issues them and they are not published. Valuing benefits in kind. How payments are made (the guides give no method). The 2026/27 minimum wage (ExCo Memo 10/2026): outside this skill, not read.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

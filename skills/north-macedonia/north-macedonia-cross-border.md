@@ -150,4 +150,3 @@ expected:
 [treaties]: https://www.ujp.gov.mk/mk/regulativa/pregled/tr/md
 
 Not yet confirmed: Standalone migration/deemed-disposal or exit-tax rules and their filing/payment procedure. The retrieved PIT, profit-tax and procedural texts establish ordinary realisation/liquidation rules but do not verify a nil exit charge; departure cases remain incomplete.
-

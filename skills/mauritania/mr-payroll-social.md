@@ -111,21 +111,3 @@ expected:
 | Amendment hold: signed/stamped law 2026-035 identity on physical page 6 and art. 3.1 printed pp. 6–18 read; operative date not established | https://www.finances.gov.mr/sites/default/files/2026-08/LFR%202026%20FR.pdf | 2026-11-01 |
 
 Not yet confirmed: full operative 2026 amendments and exact CNSS branch allocations, remittance deadline and penalty provisions; old CNSS component rates of 5%, 4%, 5% and 2%, which do not reconcile to the old claimed total and are not proved here; occupational-health ONMT charge/base and any wage-ceiling changes; all public, self-employed, fixed-term and special pension categories not within the private CNAM decree; current CNAM/CNSS forms, payment references and online confirmation steps.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

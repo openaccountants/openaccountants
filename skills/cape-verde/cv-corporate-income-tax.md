@@ -110,7 +110,6 @@ expected:
   saving: 20000.00
 ```
 
-
 ## Ask the client first
 
 - Organised accounts or REMPE?
@@ -136,21 +135,3 @@ expected:
 | DNRE, forms and leaflets page: list read | https://www.mf.gov.cv/web/dnre/dire%C3%A7%C3%A3o-geral-das-contribui%C3%A7%C3%B5es-e-impostos | 2026-11-01 |
 
 Not yet confirmed: Lei 116/IX/2021 and every other amendment not listed in Sources; penalty amounts; interest rate. Fire surcharge (Taxa de Incendio) of 2% in Praia and Mindelo and the 20.40% effective rate: the tax exists in the budget, the rate was not found; the art. 85 list of 10% items; old rates of 10% on bonds, 5% on listed bonds and full dividend relief; 20% on royalties; 15% on services to non-residents; whether the third instalment is 30% (calendar) or 20% (2015 text; the calendar is followed); the calendar month August against July in the 2015 text; loss carry-forward period after the 2024 change; whether the TEU 2.8% and 3.2% codes in the DPR FAQ are current; the TEU reductions in art. 41; any later change to the 4% rate.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

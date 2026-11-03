@@ -168,21 +168,3 @@ expected:
 | DGI, public IRPP presentation | https://dgi.gouv.cd/impot-sur-le-revenu-des-personnes-physiques-irpp/ | 2026-11-01: scope, six income categories, scale/cap and public links read; no actual authenticated return observed. |
 
 Not yet confirmed: complete original 24/011 carried-measure chain and current implementing orders; family child/ascendant resources wording and cap/family-relief/business-minimum ordering when it changes the result; complete other-category bases, capital gains/exemptions and their withholding; August savings-interest addition versus art.80 exemptions and exact change-period treatment; court/treaty/foreign-credit and exit computations; art.63 sole-shareholder/entity-IS interaction; current lump rates for domestic and microenterprise employees, casual/day labour and termination treatment; complete small/micro-business thresholds, current ministerial adjustments, election/procedure and turnover-tax interaction; current rates of social contributions, full pension/insurance eligibility and medical/housing/transport evidence; complete penalties/interest, return numbers/fields, authenticated submission/payment/receipt workflow and employer versus individual administrative instructions. The former casual 15%, termination 10%, blanket identical-residence scale, blanket salary-only scope and 30 March annual date are not recertified as current rules. All old topics have destinations in the accompanying map. Country coverage stays partial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

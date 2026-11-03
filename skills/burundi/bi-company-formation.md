@@ -110,21 +110,3 @@ expected:
 | [Law 1/10 of 30 June 2026](https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf) | Read for selected income/VAT/registration/procedure amendments at arts. 78–82, 95–104, 154–158, 190, 210–233, 246–271 and commencement art. 277 (p. 267), with neighboring clauses. Other sector charges and allocation tables not substantively reviewed. | 2026-11-01 |
 
 Not yet confirmed: Current authenticated easybusiness application fields, fee-payment reference and final receipt/certificate screens; separate name-reservation procedure; guaranteed registration timeline; regulated-sector/SA capital and licence rules; beneficial-owner filings; relative popularity of company forms, foreign-ownership sector restrictions, detailed branch fees; incorporation tax or stamp charges beyond the published registration fees. The old nominal-dollar minimum and generic foreign/corporate-founder claims are not verified.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

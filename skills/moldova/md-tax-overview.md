@@ -90,7 +90,6 @@ For each applicable row, keep the base, calculated tax, authorised relief and pa
 
 For subdivisions outside the base locality, table 6 records each object's locality in 2. Money goes in 3–14,16,18,20–22; land areas in 15,17,19 are **hectares**, not amounts to add into tax. Column 23 sums only those money columns for the locality. Reconcile the corresponding tax categories to table 7, while keeping road-tax row 13 separate because table 6 has no dedicated road-tax column. Do not force all 15 table 7 rows into a fictitious one-to-one column map. Current taxpayer-specific rates, applicability, relief, deadlines and the noted portal inconsistencies remain open beyond this sourced reporting interface. [Actual table 6](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an1_300ro.docx); [instruction 121](https://www.legis.md/UserFiles/Image/RO/2025/mo309-312ro/an2_300ro.docx).
 
-
 ## Penalties and interest
 
 Use the actual tax, principal, due date, payment/change dates and statutory exception. The connected tax Guides supply the ordinary 2026 tax/medical late-charge calculation and separate social charge with their sources. A filing receipt does not discharge an unpaid tax, and an income-tax rate is not an interest rate. Filing errors, understatement, corrections and relief have different provisions; this overview does not invent a single penalty for all non-compliance. [Code arts. 87, 129(6)–(9), 188, 228, 260–261][code]; [corporate](md-corporate-income-tax.md) and [social/medical](moldova-social-contributions.md) Guides.
@@ -160,21 +159,3 @@ Additional headline source contexts (Code 5, 15, 20, 33, 54^1–54^4, 90^1, 91 a
 [code]: https://www.legis.md/cautare/getResults?doc_id=157050&lang=ro
 [accounts]: https://www.legis.md/cautare/getResults?doc_id=140124&lang=ro
 [bnm]: https://bnm.md/en/content/information-regarding-nbm
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network: accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

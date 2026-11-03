@@ -312,21 +312,3 @@ For comparison, the § 34c cap for income taxed at the tariff is German tariff t
 | EStG §§ 49(1) nos. 2(e), 2(f), 6; 50(2); 44a(9); 50d(3), selected source/assessment/refund conditions actually read | https://www.gesetze-im-internet.de/estg/__49.html | 2026-10-29 |
 
 Not yet confirmed: whether the BMF has issued a country-group list for 2026 (the 2 December 2025 letter applies from 2025 and no later one was found); how the tax office rounds the progression rate; whether foreign capital income of a § 1(3) applicant counts in the 90% test and in the progression, given § 2(5b) EStG; whether the § 50c(3) refund of dividend tax down to the treaty rate includes the solidarity surcharge (the example assumes it does); church tax for non-residents (state law).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

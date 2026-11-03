@@ -61,7 +61,6 @@ expected:
   excess: 12000000
 ```
 
-
 Eligibility decision: the documents establish an eligible spouse and six eligible children. Count at most five children: monthly family benefit LBP 7,875,000. Without an eligible spouse, five eligible children produce LBP 5,775,000. A sixth child does not raise the child cap. This is a benefit calculation, not employer contribution or salary tax.
 
 ```oa-check
@@ -78,7 +77,6 @@ expected:
   with_spouse: 7875000
   without_spouse: 5775000
 ```
-
 
 ## Ask the client first
 
@@ -98,21 +96,3 @@ expected:
 | NSSF memo 846, 11 September 2026, all three pages read including amended penalty table and conditions | https://drive.google.com/file/d/1TgzCAn9WhaCLEAn0rC7MBwig3cXm6oXj/view?usp=sharing | 2026-11-01 |
 
 Not yet confirmed: PAY-H1: ordinary employer/employee percentages, sickness/maternity and end-of-service calculation, pay exclusions. PAY-H2: pre-May family ceiling, current sickness ceiling and minimum wage after the full decree/amendment chain. PAY-H3: portal/payment steps, remittance dates, annual return and memos 828/830 plus further extensions. PAY-H4: taxpayer-specific Law 47/2026 relief and instalment eligibility, exact current penalty calculation. PAY-H5: foreign-worker, reciprocity, offshore and special driver/vendor rules. All prior values remain non-operative in the lineage ledger; no payroll amount is certified for filing.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

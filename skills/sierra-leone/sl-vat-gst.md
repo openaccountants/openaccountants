@@ -159,21 +159,3 @@ expected:
 | NRA tax-law catalogue read in ordinary browser after web-fetch 502; current forms catalogue read, no GST entry; old official return URL404. Failed form is not represented as read. | https://nra.gov.sl/tax-laws ; https://nra.gov.sl/forms | 2026-11-01 |
 
 Not yet confirmed: complete operative 2026 amendment/commencement/regulation chain and authoritative current consolidation; exact 2010 commencement history and absence of a separate sales tax; detailed place/special tax-point/valuation and deduction exceptions; current registration/e-filing/ECR rollout instruments and costs; authentic current GST return boxes, ITAS input/upload/acknowledgement/payment-reference steps and non-working-day adjustments;2020/2022 s.37 numbering and 2022 subsection 6 versus 2025 non-filer replacement interaction; actual applicable Treasury bill rate and penalty/procedure priority; full refund/adjustment/recovery/appeal implementation; Second/First Schedule mini-grid,2026 HS zero-rate language, item numbering and raw-fish tariff anomalies; exact current exemption/product conditions and specialist mining/customs rules. The former 100,000 threshold and combined last-working-day deadline are not carried as current rules. No filing, operative-law completeness or accountant attestation is claimed. Independent GST review pending; VAT remains partial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

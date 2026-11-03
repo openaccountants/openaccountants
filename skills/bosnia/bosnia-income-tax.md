@@ -251,21 +251,3 @@ expected:
 | Brčko Zakon o Poreznoj upravi 11/20, arts. 68 and 76 | https://skupstinabd.ba/3-zakon/ba/Zakon%20o%20Poreznoj%20upravi%20Brc--ko%20Distrikta%20BiH/011B11-20%20Zakon%20%20o%20poreznoj%20upravi%20Brcko%20distrikta%20BiH.pdf | 2026-10-30 |
 
 Not yet confirmed: the wording of RS Law art. 4(1) after 119/21 (the 8% salary rate is taken from the RS Tax Administration's 2026 worked example, not from the article text, which was not on the scanned page); how the RS small-entrepreneur minimum tax is topped up during or after the year; the FBiH capital-gains rules for shares and securities (FMF general opinion 2025 not read); RS capital gains computation and holding-period rules after 2015; the Brčko flat-rate (paušal) amounts and Brčko monthly return form; FBiH accelerated depreciation rules; treaty withholding rates; whether any FBiH Law amendment after 65/13 exists (the Tax Administration's list of 12 October 2026 shows none).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

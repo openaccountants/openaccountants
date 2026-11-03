@@ -126,21 +126,3 @@ expected:
 | [Revenue Directorate direct-tax page](https://revenuedirectorate.gov.so/direct-tax) | Payroll table and form links actually opened. Guidance used for the two simple monthly illustrations, not an annual-law correction or verified current submission workflow. | 2026-11-01 |
 
 Not yet confirmed: effective implementation/postponements/circulars and employer-specific105-8 mandatory notice/choice; monthly versus annual reconciliation conflict; part-month, Ministry primary-switch/hardship decisions, bonus/arrears and benefit-valuation mechanics; TIN/FormTR1 and current workbook acceptance, boxes, upload/payment/receipt path; public/private social and pension rates, wage caps, fund/territorial coverage; employment-law entitlements, numeric sanctions and appeal deadlines; cross-border/treaty/secondment treatment. The predecessor's USD 200 exemption, absence-of-scheme assertion and no-published-cap claim are held, not used as current rules. Independent source review accepts this conditional baseline only; no accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

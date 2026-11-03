@@ -192,21 +192,3 @@ Conditional self-checks, assuming invoice evidence, eligible taxable-business us
 | Tax Authority, e-invoicing page (read for rollout phases and format/provider statements; effective phase dates not established) | https://tms.taxoman.gov.om/portal/e-invoicing | 2026-11-01 |
 
 Not yet confirmed: the text and annexes of the three 0% decisions of September 2026 (news page only); the old late-filing fine of OMR 25 a day up to OMR 2,500 and the old failure-to-register fine of OMR 5,000 (neither is in the law text; the Regulations gazette PDF would not extract); Regulations article numbers, since the gazette PDFs garble; recreational club memberships as blocked; treatment of supplies to Qatar and Kuwait and the old rule treating them as non-implementing states (art. 52 speaks of outside the GCC, boxes are not activated); monthly periods, which the old skill listed and the guide does not; excise on alcohol and pork from the old skill (the Tax Authority rate page does not list them); e-invoicing start dates by phase; the Taxpayer Checklist layout. Excise, income tax and contributions are out of scope here; see the [overview](om-tax-overview.md).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

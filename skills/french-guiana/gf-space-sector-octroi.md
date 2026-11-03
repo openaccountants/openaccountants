@@ -48,21 +48,3 @@ For an illustrative qualifying import with confirmed customs value **€100,000*
 A listed mast for an eligible activity still fails this regime if it has an alternative use inconsistent with article 2. Equipment for ordinary warehousing does not qualify merely because launch cargo passes through the warehouse. An import before 1 August 2026 cannot use this decision retrospectively. A failed condition requires assessment under the otherwise applicable tariff and any separately established relief, not an assumed zero rate. [AP-2026-57, arts. 2, 5, 8](https://www.ctguyane.fr/www/wp-content/uploads/2026/07/delib.ctg-ap-2026-57-regime-exo-partielle-activites-spatiales.pdf).
 
 Source-cited draft awaiting independent review. Only the cited illustrative annex entry has been visually verified here; no full classification crosswalk is claimed. Verify the exact row and current amendments for the transaction. Detailed customs filing codes, guarantees, reassessment and appeal procedures are outside this Guide.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

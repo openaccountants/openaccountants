@@ -12,8 +12,6 @@ tier: 2
 
 # Austrian transfer pricing (Verrechnungspreise): tax year 2026
 
-Source-cited draft: not reviewed by an accountant, not for filing.
-
 Austria has no single transfer pricing section. The arm's length rule comes from § 6 Z 6 EStG (applied to companies through the KStG) and from Article 9 of each tax treaty. A price that favours a shareholder is also a hidden distribution under § 8(2) KStG, which brings in KESt. The documentation rules sit in the Verrechnungspreisdokumentationsgesetz (VPDG, BGBl. I Nr. 77/2016) and its regulation (VPDG-DV), on top of the general bookkeeping duties in §§ 124 and 131 BAO. The Ministry of Finance explains how it applies all of this in the Verrechnungspreisrichtlinien 2021 (VPR 2021, BMF-AV Nr. 140/2021), updated by the maintenance decree of 11 March 2025 (BMF-AV Nr. 33/2025) for the OECD Transfer Pricing Guidelines 2022. The VPR are the ministry's summary of the rules for the tax offices and for businesses; no rights or duties beyond the law can be drawn from them (VPR 2021, introduction).
 
 What is new for 2026: nothing in the arm's length rule or the VPDG thresholds. Annex 2 of the VPDG (the country-by-country entity list) was amended by BGBl. I Nr. 96/2025 with effect from 1 January 2026 (§ 15(3) VPDG). Already enacted for later years by BGBl. I Nr. 62/2026: a clearing-account receivable over EUR 50,000 against an individual shareholder that is not settled by the balance sheet date counts as an open distribution, from financial years ending in 2027 (KStG § 8(2a) and § 26c Z 101); and a 24% corporate rate on income above EUR 1,000,000, for financial years starting after 31 December 2027 (KStG § 22(1) and § 26c Z 102). Neither applies to 2026.
@@ -210,21 +208,3 @@ expected:
 | BMF, VPR 2021 maintenance decree 2025, BMF-AV Nr. 33/2025 (11 March 2025) | https://findok.bmf.gv.at/findok/resources/pdf/35436263-c864-4e44-b7f1-d8b242ef00e3/83497.1.1.pdf | 2026-10-23 |
 
 Not yet confirmed: whether the ministry updated VPR 2021 after the 2025 maintenance decree (none was found on findok, but no full search was made); the KStR 2013 Rz 820 text itself (the gross-up method is taken from VPR 2021 Rz 515 and 517, which cite it); that the tax office, when it holds the company liable, applies the 23% company rate rather than 27.5% (the VPR example applied the company rate of the time, 25%, but § 93(1a) EStG leaves the choice to the payer); the BMF information of 5 May 2022 on MAP and APAs (2022-0.300.851, which VPR Rz 502, 503, 525 and 528 now cite) and whether it sets any fee for a bilateral APA; the 2011 advance ruling guidelines (BMF-010103/0035-VI/2011); the amount of a coercive penalty under § 111 BAO.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

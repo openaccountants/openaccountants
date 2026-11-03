@@ -47,21 +47,3 @@ Georgia (the country in the South Caucasus, not the US state) runs a low, mostly
 | Tax Code of Georgia, Georgian original, same publication (art. 153(1) "before 1 April") | https://matsne.gov.ge/ka/document/view/1043717?publication=247 | 2026-10-31 |
 
 Not yet confirmed: the funded pension contribution rates (not stated here; see georgia-social-contributions, being rebuilt to 2026); the excise and import duty rates; local property tax rates actually set by each municipality and the property tax on individuals and land; the procedure for residence of high net worth individuals (Minister of Finance order, not read).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

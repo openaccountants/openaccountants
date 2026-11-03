@@ -52,21 +52,3 @@ The Board's [billing guidance](https://tcinhip.tc/billing/) asks for salary info
 ## Remaining verification
 
 The [1 June 2026 parliamentary discussion](https://www.parliament.gov.tc/hansard/view_hansard?id=2ce31f36-8513-11f1-8f87-32e8d4bf15ba) describes a review of rates and caps, not an enacted replacement. This Guide does not turn that review into a rate change. Later instruments still need checking before merge. Partial periods, self-employed concessions and benefit entitlement are outside the examples. Independent accountant review is pending.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

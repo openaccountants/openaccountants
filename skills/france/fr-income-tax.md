@@ -31,7 +31,6 @@ France taxes the income of the previous calendar year: the scale applied in 2026
 | Filing portal | impots.gouv.fr (espace particulier) |
 | Filing deadline | Set by département each year: see Section 5.6 |
 | Contributor | Open Accountants Community |
-| Validated by | Pending: no French Expert-Comptable or Avocat Fiscaliste has attested this Guide |
 | Guide version | 3.2 (October2026 ledger closeout; earlier version labels remain in the historical changelog) |
 
 ### Progressive Rate Table (2025 Tranches) [T1]
@@ -462,8 +461,6 @@ These expressions describe the ordinary nonnegative-profit ceiling branches, not
 
 For real BNC mixed rented premises, divide total eligible rent, including an applicable professional-use surcharge, between actual professional and private use. BOI4659§70 permits the practical ratio of professional floor area to total area, with the taxpayer retaining the calculation/evidence. Do not allocate the entire rent surcharge automatically to business. Utilities and other mixed costs need their actual professional-use basis; this rent rule is not a universal percentage for every bill. Owned business premises, private-property “rent to oneself”, repairs and depreciation have distinct conditions: neither notional rental value nor a mortgage principal payment is an automatic current deduction.
 
-
-
 For the proprietor’s own additional meals in2026, establish that professional work and the actual, not abnormally chosen, distance prevent eating at home; retain proof of the effective expense. The private home-meal value is EUR5.50 TTC and the ordinary excessive-cost boundary is EUR21.40 TTC, so the ordinary additional-cost maximum is EUR15.90. Start from the actual expense and exclude the private component; an amount above21.40 requires the stated exceptional-necessity/nearby-catering justification for a greater deduction. Without proof, no flat deduction is allowed. These2026 values are not asserted as the2025 income-year values. Business/client hospitality follows its own direct-professional-connection and normal-amount rule, rather than automatically applying the proprietor’s personal-meal formula.
 
 Professional borrowing must also be split: the borrowed capital repayment is not itself a BNC expense; the qualifying professional interest follows its own rule. Professional order/union subscriptions and current professional study/training have direct provisions in BOI4628. Do not infer that every new qualification or retraining programme qualifies: the same source records the2026 removal of the specified sportsperson insertion/conversion deduction.
@@ -726,23 +723,4 @@ The most up-to-date version of this Guide is maintained at openaccountants.com. 
 
 > Contributed by OpenAccountants.
 
-
 Selected repair clauses read on 31 October 2026: CGI arts. 50-0/102 ter reference-year adjustment and art. 93 A continuing/startup/exit selection; DGFiP salary lower-remuneration limit and 2026 aide-mémoire half/quarter units; BOI-IR-PAS-20-20-10 foreign credit-equal-to-French-tax exclusion; Urssaf’s separate periodic EUR 0 field. CGI art. 197 I-4-a’s tax-amount limit is retained as an official indexed observation; its direct body request returned 403, so no full original HTML reading is claimed. The actual cited official URLs are printed beside these methods. These are selected-clause writer checks, not independent approval.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

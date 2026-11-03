@@ -184,21 +184,3 @@ expected:
 | Income Tax Code (ν. 4172/2013), Ministry of Finance codification to ν. 5264/2025, arts. 22 and 23 | https://minfin.gov.gr/koinopoiisi-kodikopoiisis-tou-kodika-forologias-eisodimatos-symfona-me-to-arthro-83-par-55-tou-n-5104-2024/ | 2026-10-23 |
 
 Not yet confirmed: the text of art. 2(4) ν. 4158/2013 itself (the late-payment rate is taken from e-EFKA circular 3/2020, section 6, and the law was not fetched), and the ECB refinancing rate in force on any given day; the exact dates of the December 2026 to January 2027 window for choosing 2027 categories; which professions are compulsorily insured in the supplementary and lump-sum branches beyond the former OAEE groups the e-EFKA FAQ lists (check the client's e-EFKA record); whether an engineer such as the one in Example 2 is compulsorily insured in both branches (the example assumes it).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

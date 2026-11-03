@@ -30,7 +30,6 @@ The tax is a **positive list**. Only documents in the rate table attached to the
 
 Out of scope: Hong Kong, Macao and Taiwan; deed tax (契税) and land appreciation tax on property; VAT and surcharges; stamp tax audits and disputes. Related Skills: **cn-vat** (VAT, which is excluded from the stamp tax base when stated separately), **cn-corporate-tax** (the small low-profit enterprise test used by the halving relief), and **cn-iit** (individual income tax on share and property sales).
 
-
 ### What is current for 2026 ([MOF/STA announcement 2023 No. 39](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202308/t468451.html); [MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html); [MOF/STA announcement 2023 No. 13](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/zzs/202308/t468161.html); [MOF/STA announcement 2024 No. 14](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202409/t473303.html); [Caishui 2025 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202503/t475883.html))
 
 | Topic | Position in 2026 | Source |
@@ -42,7 +41,6 @@ Out of scope: Hong Kong, Macao and Taiwan; deed tax (契税) and land appreciati
 | Offshore trade | Sale contracts for offshore merchanting by enterprises registered in named free trade zones are exempt, 1 April 2025 to 31 December 2027 | [Caishui 2025 No. 10](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202503/t475883.html) |
 
 No rate in the table attached to the law has changed since 1 July 2022.
-
 
 ## Rates, bands and thresholds
 
@@ -74,7 +72,6 @@ Only **written** contracts are in the table. The table lists eleven contract ite
 
 Tianjin Tax Bureau answers confirm individual lines, for example the account-book rate ([Tianjin Q&A, 2025](https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20250207161507617.shtml)) and the securities rate ([Tianjin Q&A, 2022](https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20220725150043296.shtml)).
 
-
 ## The base
 
 ### The method, step by step
@@ -89,7 +86,6 @@ Tianjin Tax Bureau answers confirm individual lines, for example the account-boo
 8. **Apply reliefs.** Statutory exemptions (Law Art. 12), then special exemptions, then the small-business halving, which can be stacked on top of other reliefs (MOF/STA announcement 2023 No. 12 Art. 4). Claims are self-assessed. Keep the supporting papers on file (STA announcement 2022 No. 14 Art. 1(5)).
 9. **Fix the tax point and period.** Tax arises on the day the document is signed or the trade completes (Law Art. 15). Put it in the quarter, year or single filing that the local bureau has set.
 10. **File and pay** through the e-tax bureau on the stamp tax source detail form within the combined property-and-behaviour tax return, within fifteen days of the period end or of the tax point.
-
 
 ### What counts as a taxable document ([MOF/STA announcement 2022 No. 22](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463167.html); [STA (89) Guoshuidizi No. 34 on technology contracts](https://fgk.chinatax.gov.cn/zcfgk/c100012/c5193073/content.html))
 
@@ -110,7 +106,6 @@ Tianjin Tax Bureau answers confirm individual lines, for example the account-boo
 
 **Technology contracts.** Technology consulting covers analysis, evaluation and forecasting on technical or economic projects. Ordinary legal, regulatory, accounting and audit consulting is **not** technology consulting and is not taxed. Technology services exclude routine processing, repair, advertising, printing, surveying, testing, and survey or design work. Survey and design fall under construction project contracts. Vocational training and general education contracts are not technology training (STA (89) Guoshuidizi No. 34, shown as fully in force in the STA library). For a technology development contract, only the remuneration is taxed, not the research and development funds. But where the contract sets the remuneration as a proportion of the research funds, that proportion of the remuneration is taxed.
 
-
 ### Tax base: the rules that decide most disputes ([Stamp Tax Law Art. 5-11](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202106/t458595.html); [MOF/STA announcement 2022 No. 22 Art. 3](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463167.html); [Shanghai Tax Bureau stamp tax Q&A, 2023](https://shanghai.chinatax.gov.cn/zcfw/rdwd/202303/t466552.html); [Tianjin Tax Bureau VAT Q&A, 2026](https://tianjin.chinatax.gov.cn/nsrxt/11200000000/0500/050012/20260413100927171.shtml); [STA announcement 2022 No. 14](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463170.html))
 
 - **VAT.** The base is the amount stated, **not** including VAT that is **stated as an amount**. If the contract shows a VAT-inclusive price and only a VAT rate, or no VAT at all, tax the full amount. Do not work out the net figure yourself.
@@ -125,7 +120,6 @@ Tianjin Tax Bureau answers confirm individual lines, for example the account-boo
 - **Foreign currency.** Convert at the RMB central parity rate on the signing day (Art. 3(5)).
 - **Account books.** The base is paid-in capital (share capital) plus capital reserve as recorded. Once tax has been paid, later years are taxed only on an increase in that total (Law Art. 5, 11).
 
-
 ### Securities trading stamp tax ([Stamp Tax Law Art. 3, 5, 7, 14-16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202106/t458595.html); [MOF/STA announcement 2023 No. 39](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202308/t468451.html); [Shanghai Tax Bureau securities Q&A, 2023](https://shanghai.chinatax.gov.cn/zcfw/rdwd/202309/t468612.html))
 
 - **What is covered.** Transfers of shares, and depositary receipts based on shares, traded on a lawfully established stock exchange or another national securities trading venue approved by the State Council (Law Art. 3). Bonds and fund units are not in the definition.
@@ -135,7 +129,6 @@ Tianjin Tax Bureau answers confirm individual lines, for example the account-boo
 - **Collection.** The securities depository and clearing body withholds the tax. It pays it over weekly, within five days after each week ends, with the bank interest (Law Art. 14, 16). The investor does not file.
 - **Not halved again.** The small-business halving excludes securities stamp tax (MOF/STA announcement 2023 No. 12 Art. 2).
 - **Unlisted shares.** A share transfer that is not securities trading is a share transfer document at five per ten thousand, paid by **both** parties.
-
 
 ### Exemptions and reliefs ([Stamp Tax Law Art. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202106/t458595.html); [MOF/STA announcement 2022 No. 22 Art. 4](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463167.html); [MOF/STA announcement 2022 No. 23](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463168.html) and [its Annex 1](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/P020220630368115809685.pdf))
 
@@ -183,7 +176,6 @@ The tests in that announcement (Art. 4):
 
 Other targeted exemptions (for example social security funds, commodity reserves, rural drinking water, student housing, affordable housing and sporting events) are in the stamp tax section of the tax bureau policy library. Check the specific announcement and its end date before applying one.
 
-
 ### Boundary and exception table ([Stamp Tax Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202106/t458595.html); [MOF/STA announcement 2022 No. 22](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463167.html); [Shanghai Tax Bureau share-transfer Q&A, 2022](https://shanghai.chinatax.gov.cn/tax/zcfw/rdwd/202212/t465345.html))
 
 | Situation | Treatment | Why |
@@ -208,7 +200,6 @@ Other targeted exemptions (for example social security funds, commodity reserves
 | Contract amended to a lower amount | Refund or offset may be claimed | MOF/STA announcement 2022 No. 22 Art. 3(2) |
 | Price for unpaid subscribed capital stated separately in a share transfer | Excluded from the base | MOF/STA announcement 2022 No. 22 Art. 3(4) |
 
-
 ### When to refuse or refer
 
 - The document does not clearly fit one item in the rate table and the choice changes the rate, for example a technology service contract that is really processing or repair work. Refer, with the contract, to the local bureau or a Chinese tax adviser.
@@ -220,7 +211,6 @@ Other targeted exemptions (for example social security funds, commodity reserves
 - There are signs of a sham contract or a side agreement with a different price. Do not compute tax on a document you believe is false.
 - The client has missed several periods, faces an audit, or asks about penalties beyond the basic rules below.
 - Anything in Hong Kong, Macao or Taiwan.
-
 
 ### Completion checklist ([Stamp Tax Law](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202106/t458595.html); [MOF/STA announcement 2022 No. 22](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463167.html); [MOF/STA announcement 2023 No. 12](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/grsds/202308/t468162.html))
 
@@ -235,7 +225,6 @@ Other targeted exemptions (for example social security funds, commodity reserves
 - [ ] Amendments since the last return: extra tax paid, or refund or offset claimed.
 - [ ] Period, filing place and deadline confirmed against the local bureau's notice and tax calendar.
 - [ ] Supporting papers for every relief kept on file.
-
 
 ## Deadlines and filing
 
@@ -257,11 +246,9 @@ Other targeted exemptions (for example social security funds, commodity reserves
 
 **How to pay (Law Art. 17).** Either by stamps (印花税票), which are affixed to the document and cancelled across the edge, or by filing and paying and receiving a tax payment certificate. Filing and paying is the norm for businesses.
 
-
 ### Returns for tax year 2025 being filed or corrected now ([Stamp Tax Law Art. 16](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202106/t458595.html); [MOF/STA announcement 2022 No. 22 Art. 3](https://shanghai.chinatax.gov.cn/zcfw/zcfgk/yhs/202206/t463167.html))
 
 The rates and rules for 2025 were the same as for 2026. The small-business halving and the securities halving both applied throughout 2025. Account-book tax for 2025 on an annual period was due within fifteen days after 31 December 2025, and the fourth-quarter 2025 contract return was due within fifteen days after the same date (check the local tax calendar for the exact day). If a 2025 document was missed, file it now for the period in which it was signed, pay the tax, and expect the daily late-payment surcharge. If a 2025 contract was later amended to a lower amount, claim the refund or offset for the decrease.
-
 
 ## Penalties and interest
 
@@ -269,7 +256,6 @@ The rates and rules for 2025 were the same as for 2026. The small-business halvi
 - late payment: a surcharge of five per ten thousand of the unpaid tax for each day late (Art. 32);
 - late filing: an order to correct and a fine of up to two thousand yuan, or two thousand to ten thousand yuan in serious cases (Art. 62);
 - evasion (false or missing declarations to underpay): the tax, the surcharge, and a fine of half to five times the tax underpaid; crimes are prosecuted (Art. 63).
-
 
 ## Cross-border points
 
@@ -296,7 +282,6 @@ All amounts are in yuan and relate to tax year 2026. The filing dates assume a S
 **Case 7: mixed freight and warehousing.** A logistics contract has freight of 200,000 and warehousing fees of 50,000. Shown separately: 200,000 × 3 ÷ 10,000 = 60, plus 50,000 × 1 ÷ 1,000 = 50, total 110. Not shown separately: 250,000 × 1 ÷ 1,000 = 250.
 
 **Case 8: amended sale contract.** A sale contract for 2,000,000 paid 2,000,000 × 3 ÷ 10,000 = 600. If it is amended to 2,500,000, extra tax = 500,000 × 3 ÷ 10,000 = 150. If it is instead amended to 1,500,000, the seller may claim a refund or offset of 500,000 × 3 ÷ 10,000 = 150. If it is simply not performed, nothing is refunded.
-
 
 ### Executable checks for the preserved worked cases
 
@@ -348,7 +333,6 @@ expected:
 - Has the contract been amended, cancelled, or never performed?
 - Which province is the client in, and has the local bureau set it up for quarterly, annual or per-occurrence filing?
 
-
 ## Sources
 
 | Source | Official URL | Read on |
@@ -383,21 +367,3 @@ expected:
 > **General reference only.** This Guide is general tax/accounting reference material for AI-assisted workflows. It has not been reviewed for any specific person's facts, documents, elections, deadlines, residency, filing status or local procedures. A qualified professional in the relevant jurisdiction must review the work before filing, paying or taking a tax position.
 
 **Scope limits:** apply the preserved refusal, exception and historical-period conditions. Confirm taxpayer-specific eligibility and the current local procedure before using an election or treaty claim. Future form-screen coordinates are not established here.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

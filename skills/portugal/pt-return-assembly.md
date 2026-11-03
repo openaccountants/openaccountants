@@ -996,21 +996,3 @@ Not yet confirmed: the act approving Anexo SS to the Modelo 3 (the ISS guide des
 
 OpenAccountants: skills de contabilidade open-source para IA.
 Isto não constitui aconselhamento fiscal. Todos os outputs devem ser revistos e, quando a declaração assenta em contabilidade organizada, assinados por um Contabilista Certificado inscrito na OCC (Ordem dos Contabilistas Certificados), antes de submissão no Portal das Finanças, na Segurança Social Direta, ou em qualquer outra plataforma oficial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

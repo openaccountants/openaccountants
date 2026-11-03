@@ -370,21 +370,3 @@ Defaults while waiting for answers (OpenAccountants working practice): single, 1
 **Long-term furnished letting source.** Official [F23267](https://entreprendre.service-public.gouv.fr/vosdroits/F23267) classifies long-term furnished letting as BIC services and gives the services allowance of 50%, minimum EUR 305. This is the administrative category-to-rate method for eligible micro income; keep the applicable yearly turnover limits above and use `fr-rental-income` for the detailed rental method. The earlier failed fetch of impots.gouv.fr/particulier/location-meublee is preserved in the research history; it does not negate this current official source.
 
 Not yet confirmed: the scale for the income of 2026 (no 2027 finance law enacted on 24 October 2026); the end date of the CDHR (CGI art. 224 as read prints none, and whether loi n° 2025-127 art. 10 or loi n° 2026-103 art. 2 limit it in time was not read); the CDHR advance rule for the income of 2026; the rounding rules for the tax and the share count (CGI art. 193, not re-read); the PUMa contribution and the IFI, which this skill does not cover.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

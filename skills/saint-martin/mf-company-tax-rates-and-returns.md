@@ -77,21 +77,3 @@ Reconcile the result package, payment reference and supporting computation befor
 Confirm MF rather than Dutch Sint Maarten, local liability, financial-year opening date, period length, strict turnover boundary, continuous ownership, paid-up capital, special income and loss history. Keep declaration timing separate from instalment and balance dates. Retrieve the current official filing channel and forms before submission.
 
 Source-cited draft awaiting independent source and professional review. Detailed residence, tax-base adjustments, distributions, related-party rules, special gains, incentives and the instalment ambiguity remain outside the completed computation scope. This is not a comprehensive company-tax pack or individualized filing advice.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

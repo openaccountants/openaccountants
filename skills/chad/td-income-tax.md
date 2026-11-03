@@ -210,21 +210,3 @@ expected:
 | [Official CGI 2025, dated archive of ministry PDF, captured 2025-07-20](https://web.archive.org/web/20250720004455id_/https://www.finances.gouv.td/index.php/le-ministere/le-ministre/item/download/438_afa372566d4acca63cb857e846d67eef) | 2026-11-01 | Arts 2–60, 96–108 (historical deleted subsection only), 117, 149–152, 861–863, LPF L.147, 998–1011, 847–850, 983–994, 1038–1044; salary/property bases, residency, filing and penalties. Baseline reconciled with the listed 2026 amendments; not a whole-code review |
 
 Not yet confirmed: agricultural regime gaps, special business/professional gains, below-category-G/other-zone/special IGL tariffs, BNC filing-period conflict and complete final personal settlement, property-disposal gain bases and special reliefs; complete benefit valuation where article 46's cash and housing provisions interact; live administration payroll scale, monthly rounding, IRPP annual due date and form/box/payment-reference workflow; complete treaty, foreign-credit, nonresident professional and exit computations, including replacement of the deleted CGI96–108 global-income/housing/departure provisions; interactions between the 2026 category approach and older global-income deductions/credits. These gaps keep IT-IND partial. The 2026 deletion of96–108 supersedes earlier ledger30’s operative105housing/departure claim. Article117(I) references to deleted98–99/global-income credits are held; only separately bounded117(III–IV) foreign-financial provisions are used above. Historical2025figures are not independent evidence of current law. For independent AI source review and its limits, see the [country README](README.md). No accountant attestation.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

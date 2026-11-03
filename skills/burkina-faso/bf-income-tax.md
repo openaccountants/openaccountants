@@ -137,21 +137,3 @@ expected:
 | [DGI official CGI 2026](https://dgi.bf/wp-content/uploads/2026/10/CGI-2026-v2.pdf) | Edition statement; arts. 1–21, 23–35, 39–40, 43–46, 53, 62, 113, 197, 301, 307(1), 527–540 and 754–758, including regime boundaries and adjacent conditions. Relevant provisions read, not the full code. | 2026-11-01 |
 
 Not yet confirmed: live form IDs/boxes, portal upload/acknowledgement/payment-reference steps; complete financial-statement visa/certification and customer-list execution; IBNC reference in art. 34 to art. 53 points 2–6 where current art. 53 prints five points; CME sanctions; personal/rental/investment income, treaty residence, foreign relief, exit taxation and sanction cumulation. Independent review of this rewrite is pending; no accountant has attested to it.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

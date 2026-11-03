@@ -135,21 +135,3 @@ expected:
 | [DGI older CGI/LPF consolidation](https://www.dgi.gouv.ml/CGI/) | LPF art. 112 and surrounding VAT-specific registration text reread; complete later tax chain remains unproved | 2026-11-01 |
 
 Not yet confirmed: complete operative national/OHADA amendment and exception chain; enacted 2026 fiscal Annex U; current sector, beneficial-owner and foreign-branch requirements; actual registration/forms/boxes/authentication, fees and processing times; current accounting implementation and national criminal/late-filing sanctions. The cited 2015 capital law is not proof that no later Mali rule changed it. No operative 2026 or accountant approval is given.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

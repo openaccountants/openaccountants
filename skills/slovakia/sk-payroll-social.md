@@ -128,7 +128,6 @@ Social insurance has no annual reconciliation for employees: each month is final
 | Hlásenie filed late (it counts as a tax return) | Fine EUR 100 to 30,000; a range fine is not imposed on a first breach | Act 595/2003 §39(11); Act 563/2009 §154(1)(a), §155(1)(a), (4) |
 | Tax understated in a return or Hlásenie, found by the tax office | 3 x the ECB main rate a year, at least 10%, on the extra tax | Act 563/2009 §155(1)(f), (5) |
 
-
 **Monthly Prehľad: test the filing duty and sanction separately.** A payer that paid employment income files the monthly summary under ITA §39(9)(a)/§49(2), even if no wage advance is payable; §39(12) supplies the no-employment-income-paid exception. The ordinary filing deadline is the end of the following month. The special §39(11) sanction route applies only if the required summary was not filed within **five calendar days after that deadline** and that month carried either an obligation to remit wage-tax advances or a request for the specified child bonus, interest-paid bonus or employment premium. If the fifth day is a weekend or non-working day, move to the next working day. This tolerance affects the filing sanction, not the wage-advance payment date ([ITA §§39/49](https://static.slov-lex.sk/static/SK/ZZ/2003/595/20260101.html#paragraf-39); [FS monthly guidance and FAQ13](https://podpora.financnasprava.sk/879943-Pod%C3%A1vanie-mesa%C4%8Dn%C3%BDch-preh%C4%BEadov)).
 
 Classify this monthly failure under TC §154(1)(j)/§155(1)(e), rather than treating the monthly summary as the annual Hlásenie tax return. The **EUR100–10,000 is a range**, not an automatic EUR100 charge. Check the offence history: §155(4) suppresses the range fine for the first relevant breach, with the tax and customs offices assessing the individual offence categories separately. A new month or different form does not itself create another first chance. The office considers gravity, duration, consequences and the tax-reliability index; under §155(16), it can repeat an equal fine if the fine did not remedy continuing non-compliance. The [FS first-breach explanation](https://podpora.financnasprava.sk/989535-Druh%C3%A1-%C5%A1anca) supports that category treatment. A [published Bratislava tax-office decision dated28October2025](https://evo.isepvo.sk/evoportal/sk-sk/Public/DocumentSearch/GetAttachment?attId=1000515050&docId=1000295789) expressly applies the j/e classification to a late monthly Prehľad. It is an individual administrative application, with finality unverified; its historical EUR30–3,000 range is superseded by the current 2026 statute, not a current tariff.
@@ -279,21 +278,3 @@ expected:
 | SP8October2026 notice: actual annual start/end thresholds and special-base interval | https://www.socpoist.sk/news/v-oktobri-2026-dostane-takmer-92-tisic-zivnostnikov-szco-od-socialnej-poistovne-oznamenia-o | 2026-10-27 |
 
 > Contributed by Michael Cutajar.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

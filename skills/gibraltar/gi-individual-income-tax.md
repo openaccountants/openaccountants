@@ -87,7 +87,6 @@ Sources were accessed on 22 October 2026. A dated rate table controls its stated
 
 ### Residence and filing intake
 
-
 Section 74 defines ordinary residence using at least 183 days in a year of assessment or presence in a year within three consecutive years whose total exceeds 300 days. Any part of a day counts. Record all three years, not just the current one. Treaty residence requires a separate conclusion. [Income Tax Act 2010, s74](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 Collect employment, self-employment, pensions, rents, distributions, foreign-tax evidence and allowance documents. Determine the charging provision for each item before adding it to the calculation. A residence result does not establish the treatment of every income category.
@@ -105,7 +104,6 @@ Rules 2 and 3A prescribe these ordinary full-year bands. The temporary overrides
 Source for every band: [Rates of Tax Rules, rules 2–3C](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf), checked for the 2026/27 year. GIBS requires the prescribed election and remains subject to rule 3A. Rule 3A(3) requires the Commissioner to disregard the election described there if the ABS liability with the individual's allowances and deductions would be lower; compare completed calculations rather than choosing from headline rates.
 
 **Partial-year limitation:** rule 3A(4) reduces the specified assessable/deemed-assessable amounts by one-twelfth for each complete calendar month without the listed Gibraltar activity. Rules 2(2) and 3A(2) additionally refer to section 34(3); that reference does not align straightforwardly with section 34 in the current Act. The archived 1952 Act’s section 34(3) concerned prescribed non-resident relief as if resident, while the current section 34(3) concerns amendment of assessments. Current Schedule 9 paragraphs 13–17 and 20 preserve continuity/references only within their stated conditions; no corresponding rewritten eligibility provision was established here. Allowances rule 24 now expressly concerns a non-resident receiving a Gibraltar-accruing pension and is not a general frontier-employee entitlement. [Archived Act, section 34(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1952-11/1952-11o.pdf); [current Schedule 9](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf); [rule 24](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf). The interaction and exact partial-year calculation need resolution before applying full-year bands to a starter, leaver or intermittent worker. The examples below assume full-year activity.
-
 
 ## The base
 
@@ -159,7 +157,6 @@ Rule 16F separately specifies high-income taper relief for gross assessable inco
 5. Compare the completed liabilities, then reconcile withholding and payments. A lower preliminary subtotal is not a final assessment.
 
 **Arithmetic examples, before credits and with the stated bases:** GIBS gross/base £40,000 gives £2,720 + £1,520 + £3,750 = **£7,990**. ABS taxable base £20,000 gives £560 + £2,040 + £1,560 = **£4,160**. These use different assumed bases and are not a comparison for one taxpayer. At the GIBS switch, test £25,000 and £25,001 separately; do not smooth a discontinuity without a sourced adjustment.
-
 
 ### Family, disability and other ordinary ABS deductions
 
@@ -248,7 +245,6 @@ Rule 4 makes this additional to other relief for the same expenditure. Rule 5 re
 
 ### Approved pensions and imported-pension exceptions
 
-
 Rule 3A covers pensions from a statutory scheme or provident/other fund approved by the Commissioner where the individual is **60 or over**, or meets one of the specified earlier-retirement categories. Those include the stated compulsory Pensions Act retirement, Royal Gibraltar Regiment retirement at 55 or over, and listed customs, port, fire/rescue and defence-police retirements between 55 and 60. Do not turn the list into an exemption for every retired person aged 55. [Rule 3A(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
 
 Qualifying pension income is taxed at **0%**, subject to the section 14A exception. Other chargeable income remains separately taxable under the prescribed bands after applicable apportioned allowances/deductions. The pension rule does not exempt rental, trading or employment income merely because its recipient is retired. Verify the fund approval and individual category, not just the payer's description of the transfer. [Rule 3A(2)–(3)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf).
@@ -284,7 +280,6 @@ Keep approval evidence, scheme rules, origin and transfer history, age/retiremen
 
 ### Death during the tax year
 
-
 Section 47 transfers the deceased individual's rights, duties and tax liabilities concerning **income arising before death** to the executor, subject to its assessment limit. Tax payable by the executor under that section is a debt payable out of the deceased's estate. The section does not by itself classify income arising to the estate after death or establish inheritance-tax treatment. Separate pre-death income from later estate income and retain the executor's authority. [Section 47(1)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
 
 An assessment or additional assessment on that pre-death income must not be made later than the **end of the third year of assessment following the year in which death occurred**. This is not a three-year anniversary measured from the death date, nor a three-year extension for submitting every return. Keep ordinary return, payment, appeal and refund deadlines separately. [Section 47(2)](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf).
@@ -312,7 +307,6 @@ A taxpayer expecting the required instalments to exceed the current year's liabi
 **Instalment example:** assume the correctly identified preceding-year relevant liability is £6,000, with no approved reduction. Each instalment is £3,000. If final current-year liability is £7,500 and both instalments were paid, the remaining balance is **£1,500**. If final liability instead is £5,000, payments exceed it by **£1,000**, to be reconciled as a repayment position; this is not an extra negative payment instalment. Assume no other withholding, credit, surcharge or offset in either illustration.
 
 The authenticated 2026/27 return fields/release and special assessment payment cases remain to be verified; the published ordinary service and departure routes are recorded below. Keep return delivery, individual tax payments and employer PAYE remittances separate. See the [payroll Guide](gi-payroll-social-insurance.md) for employer reporting. The self-employed webpage labels its allowance table 2021/22 and 2022/23; that table is not used here to establish current allowance figures.
-
 
 ### Published return, payment and departure routes
 
@@ -398,7 +392,6 @@ expected:
 
 Primary legislation and [self-employed payment guidance](https://www.gibraltar.gov.gi/income-tax-office/individuals-and-employees/self-employed) read on **22 October 2026**: [Income Tax Act](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf), [Rates of Tax Rules](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1989s096/1989s096(01-07-24).pdf), [Allowances Rules](https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf). Frontmatter records the same versions. Remaining work includes the complete relief schedule and GIBS deductions, current submission and payment channels, special assessment dates, the partial-year cross-reference, exact credit application, special regimes and independent source/professional review. The dates on the legislation index are evidence of the displayed consolidation, not a guarantee against later amendments.
 
-
 | ITO current maintenance/interim-route notice | [Official source](https://www.gibraltar.gov.gi/income-tax-office) | 2026-10-28 |
 | IT1 for 2026 filing and period labels | [Official source](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Employers/Tax_ReturnForm2026.pdf) | 2026-10-28 |
 | Current individual-return guidance and email instructions | [Official source](https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Tax%20Returns/Tax%20Return%20Guidance%202026_.pdf) | 2026-10-28 |
@@ -424,7 +417,6 @@ Not yet confirmed: partial-year ABS/GIBS reference and eligibility; printed seni
 
 ### Self-checks and output
 
-
 - Retain the relevant source version, the applicable period and the facts establishing scope.
 - Reconcile every input to the client's records; keep estimates separate from actual amounts.
 - Recompute the example and boundary cases before applying the method.
@@ -432,7 +424,6 @@ Not yet confirmed: partial-year ABS/GIBS reference and eligibility; printed seni
 - Deliver a calculation, evidence list, filing calendar and reviewer questions. Record the exact revision reviewed.
 
 ### Disclaimer
-
 
 General tax and accounting reference material only. These drafts have not been professionally attested. A qualified professional in the relevant jurisdiction must check the facts, current law, elections and deadlines before anyone files, pays or acts on an output.
 

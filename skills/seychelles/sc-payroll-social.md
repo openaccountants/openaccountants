@@ -114,21 +114,3 @@ expected:
 | Read for the figures cited: SRC Tax System page, whole page read | https://src.gov.sc/seychelles-tax-system/ | 2026-11-01 |
 
 Not yet confirmed: whether the 15% band in S.I. 26 of 2024 caps the non-exempt amount of bonus, as the worked example reads "Non-exempt amount of bonus, up to 15% of the annual basic salary", or the whole bonus, which would make the example's bonus tax SCR 3,200 and the saving SCR 4,800; SPF wage ceiling; SPF treatment of non-citizens; SPF late payment penalty; whether SPF contributions reduce taxable pay; employee status form date under the 2024 regulations; employer social security beyond SPF.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

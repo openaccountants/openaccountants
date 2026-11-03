@@ -123,21 +123,3 @@ expected:
 Additional portions read for this repair: [modified budget art. 243, PDF p. 58](https://www.obr.bi/images/PDF/Loi%20de%20Finances%202025-2026%20Modifi%C3%A9e.pdf), [July budget art. 268, PDF p. 65](https://www.obr.bi/images/LOI_DE_FINANCES_2026-2027_PROMULGUEE_compressed.pdf) and [procedure arts. 29–30, PDF pp. 11–12](https://www.obr.bi/images/LOI_RELATIVE_AUX_PROCEDURES_FISCALES_ET_NON_FISCALES_2020.pdf), all on 2026-11-01.
 
 Not yet confirmed: Investment-code eligibility, free-zone approval, bank/insurance/cooperative special computations, restructuring relief, donation percentage (the principal text wording and parenthetical symbol conflict), mixed private/business allocation order, complete current incentives, branch profit-remittance tax, current annual interest order and authenticated submission/payment-reference screens. Do not use these exclusions to invent an exemption or extra tax.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

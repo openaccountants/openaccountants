@@ -103,21 +103,3 @@ Obtain activity and annual/monthly turnover, compulsory-profession status, optio
 | OTR Cahier fiscal 2026. Fiscal measures and reproduced amendments, pp. 7-24; administrative explanation cross-checked to the enacted finance law, which controls. | https://otr.tg/wp-content/uploads/2026/10/cahier-fiscal-2026.pdf | 2026-11-01 |
 
 Not yet confirmed: The old 10% hospitality/tour-operator rate is contradicted by the single-rate art. 195 and is not applied; exact 2026 implementation orders and rollout for certified e-invoicing and digital-service intermediary collection; mixed-use prorata and capital-goods adjustment execution; current VAT return fields, precompte operation, credit refunds and product-by-product exemption list. The domain remains partial for these ordinary practical computations and procedures.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -101,21 +101,3 @@ expected:
 | OGE 2026, Lei do Orçamento, arts 6 to 17 (draft-form text, law number blank; the tax chapter only was read) | https://www.mef.gw/publicacoes/orcamento-geral-do-estado/2026-oge2026/viewdocument/195 | 2026-11-01 |
 
 Not yet confirmed: employer social security rate (14% appears in an ILO summary and vendor pages, no official text opened; Law 4/2007 not found on an official site); work accident rates; earnings ceiling; social security due date and form (the old 15th of month is unsourced; the tax date is the 10th); quarterly statements in the old skill (no official source, dropped from the body); whether the 2026 budget text is in force; the pay period of the democracy tax table.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -66,7 +66,6 @@ expected:
   sal_shortfall: 22000000
 ```
 
-
 Three founders plan an ordinary SAL and subscribe LBP 12 million each. Total LBP 36 million exceeds the IDAL minimum by LBP 6 million. The headcount and capital baselines are met; legal documents, auditor, lawyer and registry evidence still gate incorporation.
 
 ```oa-check
@@ -82,7 +81,6 @@ expected:
   capital: 36000000
   excess: 6000000
 ```
-
 
 ## Ask the client first
 
@@ -100,21 +98,3 @@ expected:
 | IDAL Tax System, SAL/SARL and online-declaration sections read; special-regime amounts held | https://www.investinlebanon.gov.lb/en/doing_business/tax_system | 2026-11-01 |
 
 Not yet confirmed: FORM-H1: current Commercial Registry authority, applications, documents, fees, capital-payment procedure, timetable and sole-trader/partnership rules. FORM-H2: current company-law amendment chain, SARL auditor trigger, lawyer and annual-compliance conditions. FORM-H3: registration/beneficial-owner/annual penalties. FORM-H4: restricted-sector ownership, permits, nationality and special-vehicle eligibility. The published capital figures are the official IDAL baseline, not certified all-in incorporation costs or proof that the complete 2026 statutory chain has been checked.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

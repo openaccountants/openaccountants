@@ -46,21 +46,3 @@ A [31 March 2026 official notice](https://www.finance.gd/docs/2026/PRESS_RELEASE
 Reconcile the prior-year receipts schedule to accounts, bank receipts and identified non-trading income. Document the statutory inclusion or exclusion of each receipt; gross receipts must not be replaced with accounting profit. Confirm rate selection before deducting the exemption and keep return and payment evidence separately.
 
 Business exemptions, capital receipts, special hurricane relief and penalty computations need further legal research. This draft does not claim that every business is liable or that all tax-base rules have been verified. Independent review remains required before release or filing reliance.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -141,21 +141,3 @@ expected:
 | [DGI Précis fiscal 2026, version 10 April](https://dgi.gov.gn/wp-content/uploads/2026/04/Guinee-Precis-fiscal-2026.04.10-VF.docx), §3.1 and complete relevant salary/pension portions of §3.2, with cover/introduction. Inconsistent 15% allowance/example passages are rejected in favour of the enacted 25% provision. | 2026-11-01 |
 
 Not yet confirmed: October 2026 final promulgation/text/effect and applicability of all source versions; full multi-employer/irregular-payment annual reconciliation and correction forms; gross-salary boundary disputes and special director/trainee/termination valuation; detailed pension and foreign payroll filing/relief; complete IBIC, IBNC, IBEA, IRCM and IPVI computations; employer VF/TA exact base and separate training contribution; authenticated e-Tax boxes/receipts and all sanctions/appeal procedures. The country individual and payroll domains remain partial.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

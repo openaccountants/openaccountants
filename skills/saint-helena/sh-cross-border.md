@@ -89,7 +89,6 @@ expected:
   duty: 5250.00
 ```
 
-
 ## Ask the client first
 
 - Resident or non-resident?
@@ -111,21 +110,3 @@ expected:
 | Government press releases, listing page 15 (23 March 2026 bill outcome; ExCo diesel item), read for the items cited; the listing page moves as new items appear | https://www.sainthelena.gov.sh/category/press-releases/page/15/ | 2026-11-01 |
 
 Not yet confirmed: Double tax arrangements. Any withholding on non-resident dividends, royalties or fees: the Ordinance's withholding Part covers deposit interest only, and no other was found. The 2026 customs duty changes on alcohol, tobacco and vaping (ExCo Memo 05/2026): outcome not read, so the July 2025 tariff may be out of date on those lines. Diesel exemption extended to 31 March 2028 by ExCo approval; the order itself was not read. Excise tariffs and Liquor Duty rates. Stamp duty exemptions and the footnote stating the consolidation is authoritative at 1 April 2019 though it carries L.N. 23 of 2025.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

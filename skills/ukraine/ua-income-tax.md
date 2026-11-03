@@ -238,21 +238,3 @@ expected:
 | State Tax Service of Ukraine | https://tax.gov.ua | 2026-10-30 (refused automated access with HTTP 403; not read) |
 
 Not yet confirmed: whether a sole proprietor's balance on the annual declaration is due within 10 days after the filing deadline (art. 57.1) or by 1 August (art. 179.7), so pay by the earlier date; whether the 1 August 2027 payment date, a Sunday, moves to the next working day; the full list of 150% and 200% social benefit categories; the National Bank discount rate for penalty interest in 2026; whether a general-system proprietor must also pay the military levy in quarterly advances with the PIT advances (sub-point 1.4 applies the section IV order; art. 177.5.1 names only PIT); whether a proprietor's ЄСВ base is net income before or after deducting that ЄСВ, and whether ЄСВ for the fourth quarter paid in January counts in the year it is for or the year it is paid; the Cabinet of Ministers minimum rent method; the cost-of-goods matching rule and cash-basis timing for proprietors (in the Ministry of Finance record-keeping order, not read); Diia City gig-specialist rates; any amendment after the 12 October 2026 archive capture.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -95,21 +95,3 @@ expected:
 The law is a scan with no text layer: figures were read from machine OCR, and the salary scale from the page image. It applies to tax year 2026; the 2026 Budget Law (Ley 9/2025) changes it only where stated.
 
 Not yet confirmed: a pricing method regulation; documentation content; the form for art 30.2; whether the art 411.A 10% runs on the tax or on the undeclared amount ("la cantidad no declarada"), since the example uses the tax; art 74.3 reads "superior" on the page image, where "inferior" is the expected sense, so confirm whether a correction exists.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

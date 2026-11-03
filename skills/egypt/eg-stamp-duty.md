@@ -148,25 +148,6 @@ Do not present output as a filed return or a professional sign-off.
 
 Not yet confirmed: the current schedule of specific (per document) and proportional stamp tax outside securities, because the amending laws that set it (Law 143/2006 and later) are not published on eta.gov.eg and no Gazette copy was read. That covers every item the old version carried from secondary sources: about EGP 1 per page per copy on contracts; the 0.4% a year stamp tax on bank credit facilities, loans and advances (old text: on the balance at the start of each quarter plus amounts used in the quarter, shared half and half between bank and client, Egyptian banks and branches of foreign banks only, loans from non-banks out); insurance premiums at 1% (life), 2% (health, injury, compulsory), 11% (land, river, sea and air transport, minimum EGP 1) and 11% (other, including war risk, minimum EGP 1), which the old version wrongly tied to Law 30/2023 (that law amends the Income Tax Law and Law 182/2020); rates for bank guarantees, letters of credit, leases, property sale and mortgage contracts, court documents, powers of attorney, notarised declarations, affidavits, commercial register extracts and certificates; the exempt document list (payslips, civil status certificates, diplomatic, charity and religious bodies). Whether art. 83 bis (1) (33% rule) still reaches deals in unlisted shares now that art. 83 bis covers listed securities only. Whether the Law 199/2020 art. 4 deferral, which fixed the start of the resident exemption, was later extended by any instrument (Law 30/2023 art. 4, waiving unpaid capital gains tax on listed shares from January 2022, is consistent with a 1 Jan 2022 start, but no extension decision was searched). The content of the other stamp amending laws the old version named (Laws 140/2006, 53/2014, 110/2018, 147/2019, 174/2019) and its claim that a nominal stamp applies to e-invoices. Whether the Law 7/2025 cap of the delay charge at 100% of the principal (see `eg-income-tax`) applies to stamp tax; it is a Law 206 rule, so it probably does, but the text was not read for this skill. The filing frequency, due date and form number of the general stamp return, and the due date for form 21 (kh). GAFI authentication fee (0.25% of paid-in capital, cap EGP 10,000) and GAFI service fee (0.1%, minimum EGP 1,000, maximum EGP 10,000), which are GAFI fees, not stamp tax, and were not read. Treatment of treasury bills and bonds (the old version said limited exemptions apply). Who remits outside securities (the old version said insurers collect and remit the insurance stamp, banks remit the credit stamp quarterly, and formation documents are paid at GAFI) and the old version's unsourced "understamping penalty proportional to the shortfall". Free zone and Islamic finance treatment. ETA e-stamp channels for general documents.
 
-<!-- openaccountants-cta-block -->
-
-## Talk to a verified accountant
-
-This skill is a tool, not an engagement. Every taxpayer's situation is
-different, and the rules in the skill may not match your specific facts.
-
-To speak with one of the licensed accountants who verifies skills for your
-jurisdiction — **no liability on either side until you and the accountant sign
-a formal engagement letter** — book a free 30-minute call:
-
-**→ [Book a call](https://calendly.com/openaccountants-info/30min)**
-
-We'll route you to the named verifier covering your country or state. You can
-also see the full list of verified accountants at
-[openaccountants.com/network](https://www.openaccountants.com/network).
-
-<!-- openaccountants-mcp-cta -->
-
 ## The accountant-verified version lives in the connector
 
 This file is the open, **research-grade draft**. The **accountant-verified**

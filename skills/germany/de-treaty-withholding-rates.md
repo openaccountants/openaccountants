@@ -246,21 +246,3 @@ Selected operative clauses actually read on 29 October 2026: treaty covered/late
 The Italian, Polish and Luxembourg (art. 12) rows are read from scanned treaty texts on the BMF site by text recognition; the BMF list of treaties in force on 1 January 2026 (letter of 7 January 2026) shows no later protocol for Italy or Poland and the 2023 Luxembourg protocol applying from 1 January 2024.
 
 Not yet separately retained: a BZSt country-practice confirmation for the labelled Italian, US and Czech combined-tax interpretation supplied above; that administrative observation is distinct from the source-derived ordinary legal method and its explicit interpretation label. Other limits remain: the late-filing surcharge on withholding returns; the StAbwG rates; any BZSt country table of residual rates (the table found covers foreign tax credited to German residents, not German tax on payments abroad, so it was not used for the rates above).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

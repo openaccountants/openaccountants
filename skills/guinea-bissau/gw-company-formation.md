@@ -74,21 +74,3 @@ expected:
 | DCI-SMT instructions | https://kontaktu.mef.gw/api/public_files/cQ07WYIBVxKCKoELcDhC.pdf | 2026-11-01 |
 
 Not yet confirmed: all OHADA figures and the order of incorporation steps (name, by-laws, capital deposit, RCCM, NIF, social security); branch conversion; CFE timing and fees. The OHADA and CFE pages tried did not give the text.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -58,21 +58,3 @@ The Income Tax Act, 2026 (No. 13), Tax Administration Act, 2026 (No. 14) and Val
 | BURS Tax Table and Guidance Notes, effective 1 July 2026: notes, Examples 4, 5, 14, housing table, allowances | https://www.burs.org.bw/images/Tax%20Table_2026.pdf | 2026-11-01 |
 
 Not yet confirmed: Capital Transfer Tax figures (the old file had none; BURS page read but not used for rates); Customs (Amendment) Act, 2026 detail.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

@@ -204,21 +204,3 @@ expected:
 | Companies Registry, Limited Liability Companies | https://www.gov.im/categories/business-and-industries/companies-registry/registries/limited-liability-companies/ | 2026-10-30 |
 
 Not yet confirmed: the text of the Treasury order fixing the 2026/27 company rates (the rates here come from PN 227/26 and the Division's pages, which agree); the current text of SD 460/07 and the higher amounts for successive defaults under s.112F (the GBP 250 and GBP 500 come from GN38, issued 2009); the statutory test of company residence; the exact formula for reducing the GBP 500,000 retail limit for associated companies; the voluntary election by a 0% company to pay 10% (the old version of this skill listed it; the only official mention found is GN41 section 4.4 under the abolished Attribution Regime); loss relief, capital allowances and group relief (ITA 1980 Schedule 2); the Domestic Top-up Tax computation, payment dates and return due dates after the first year in the Global Minimum Tax (Pillar Two) Order 2024 (Order not read).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

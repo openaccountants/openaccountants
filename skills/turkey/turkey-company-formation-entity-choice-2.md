@@ -54,21 +54,3 @@ Tax year 2026. Every figure below is taken from the consolidated laws on mevzuat
 | MERSIS, Merkezi Sicil Kayıt Sistemi (Ministry of Trade) | https://mersis.ticaret.gov.tr/ | 2026-10-31 |
 
 Not yet confirmed: the documents a foreign individual or company shareholder must file (passport, certificate of activity, shareholder resolution) and their notarisation, apostille or consular legalisation and sworn Turkish translation; the potential tax number for foreign shareholders and board members; whether the trade registry also notifies the Social Security Institution at formation (the old version said so; only the tax office notice in VUK art. 153 was read); whether a branch is a separate legal person and whether any funding or capital rule applies to it (the old version said it is not a separate legal entity, has no shareholders of its own and has no minimum capital); whether a limited company may offer its shares to the public (the old version said it cannot; no provision was read); whether the Ministry will use its second and last one-year extension, to 31 December 2028; the permit procedure and permitted activities of a liaison office (the regulation under Law No. 4875 was not read); how long incorporation takes (the old version said it varies; the law sets only the 30-day registration and announcement period); the date from which Decision No. 7887 applied to new companies (the old version said 1 January 2024).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

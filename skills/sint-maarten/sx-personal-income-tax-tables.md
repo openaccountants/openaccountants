@@ -60,21 +60,3 @@ The annex lists sole-earner, child and elderly supplements, but a rate table alo
 Checked 22 October 2026. Official regulation and Annex I downloaded; introductory examples and nil-tax instruction visually checked. The government host's expired certificate required a one-off certificate-verification bypass for these public PDF downloads; the indexed official titles and matching PDF content were also checked. The alternate www1 host returned an under-construction page.
 
 Residence, taxable scope, deductions, filing obligations, supplement eligibility, constitutional-review status and the complete amendment history still require reconciliation before merge. Independent accountant review has not occurred. This is a source-cited calculation draft, not comprehensive country coverage.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

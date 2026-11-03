@@ -45,6 +45,7 @@ from decimal import ROUND_HALF_UP, Decimal, InvalidOperation
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import repo_layout  # noqa: E402
+import label_boilerplate  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BLOCK_RE = re.compile(r"^```oa-check[ \t]*\n(.*?)^```[ \t]*$", re.MULTILINE | re.DOTALL)
@@ -215,9 +216,8 @@ def body_unchanged(path):
     old = subprocess.run(["git", "show", f"origin/{base}:{rel}"], capture_output=True, text=True, cwd=REPO_ROOT)
     if old.returncode != 0:
         return False
-    strip = lambda t: re.sub(r"\A---\n.*?\n---\n", "", t, count=1, flags=re.S)
     with open(path, encoding="utf-8") as fh:
-        return strip(old.stdout) == strip(fh.read())
+        return label_boilerplate.same_content(old.stdout, fh.read())
 
 
 def all_skill_files():

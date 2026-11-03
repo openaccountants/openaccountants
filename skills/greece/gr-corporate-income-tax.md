@@ -12,8 +12,6 @@ tier: 2
 
 # Greece corporate income tax (tax year 2026)
 
-Source-cited draft: not reviewed by an accountant, not for filing. Built by Michael Cutajar and the OpenAccountants team.
-
 The tax year is the calendar year unless the company has a different accounting year end. AADE (Independent Authority for Public Revenue) administers the tax. The rules are in the Income Tax Code (Κώδικας Φορολογίας Εισοδήματος, ν. 4172/2013, "ITC"), read here in the Ministry of Finance codification up to ν. 5264/2025. Procedure, fines and interest are in the Tax Procedure Code (ν. 5104/2024, "TPC"). The trade fee is in article 31 of ν. 3986/2011, as replaced by article 3 of ν. 5162/2024.
 
 Related skills: `gr-income-tax` (individuals and the self-employed), `gr-cross-border` (residence, inbound regimes, exit tax, withholding overview), `gr-vat-return`, `gr-efka`, `gr-company-formation`, `gr-tax-overview`.
@@ -239,21 +237,3 @@ expected:
 The AADE PDFs refuse automated downloads (HTTP 403). They were read in a browser on 2026-10-23.
 
 Not yet confirmed: the late-payment interest rate for 2026 (it is not in TPC art. 52; a rate of 0.73% a month appears only in press reports, not on an official page that was read); whether any 2026 law amended the articles above after ν. 5264/2025; the AADE decision setting the filing window for tax year 2026 returns, and any extension; the CFC and exit-tax figures (see `gr-cross-border`).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

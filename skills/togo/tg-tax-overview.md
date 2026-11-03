@@ -101,21 +101,3 @@ Obtain taxpayer identity, legal form, actual activity, year and period, domicile
 | OTR Cahier fiscal 2026. Fiscal measures and reproduced amendments, pp. 7-24; administrative explanation cross-checked to the enacted finance law, which controls. | https://otr.tg/wp-content/uploads/2026/10/cahier-fiscal-2026.pdf | 2026-11-01 |
 
 Not yet confirmed: Full coverage of any ordinary domain while the README partial entries remain; all live return screens and fields; enacted status and fiscal effect of any later 2026 rectificative law. The official government announcement dated 23 October 2026 describes a proposed rectificative budget awaiting Parliament, not enacted law; the pack does not apply that proposal. Currency/membership explanations beyond the CFA denomination of the statutes are not a substitute for tax computations.
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.

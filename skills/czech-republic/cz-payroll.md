@@ -240,21 +240,3 @@ expected:
 | Act 582/1991 Sb. on social security administration, § 35a | https://e-sbirka.gov.cz/sb/1991/582 | 2026-10-23 |
 
 Not yet confirmed: whether the health insurance minimum base applies to a worker insured only through a DPP or DPČ (Act 592/1992 Sb. § 3(8) does not list them; the examples avoid the point); how the employee's one-third health share is rounded when 13.5% of the base does not divide by three (the examples use bases where it does); the legal basis, and the 2026 form, of any monthly statement each health insurer asks employers for (JMHZ does not replace it under the ČSSZ list); the current Civil Code default interest rate used for late-payment interest and penále (not given on the pages read); how the reduced hourly figure for sick pay is rounded when it is not a whole number of haléře (Labour Code § 192(2) applies the sickness benefit method "in a similar way"; Example 3 uses earnings below the first threshold, where the point does not arise).
-
-<!-- openaccountants-cta-block -->
-
----
-
-## Talk to a verified accountant
-
-This guide is maintained by the OpenAccountants network — accountants who put
-their name behind the tax answers AI gives people. The live, always-current
-version (and the professional behind it) is at
-[openaccountants.com](https://www.openaccountants.com).
-
-- Use it in your AI: https://www.openaccountants.com/connect
-- Meet the accountants: https://www.openaccountants.com/network
-
-> **General reference only.** This document does not constitute tax, legal, or
-> financial advice. Verify figures against the cited primary sources or with a
-> licensed professional before relying on them.
