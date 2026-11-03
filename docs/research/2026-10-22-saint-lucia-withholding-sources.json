@@ -1,0 +1,26 @@
+{
+  "retrieved_at": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-76",
+      "bytes": 151314,
+      "sha256": "706c7efd35fd5b068ca2cbd99d206fdd3c65363315ef99fcb3b68f0824897fc8"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-116",
+      "bytes": 150455,
+      "sha256": "c83e77ba91900fe06d552eaa708b90867e6bd31efa4eb5fb0cbd5c888279b179"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/section-117",
+      "bytes": 150020,
+      "sha256": "dda65ba434f16887806e8546c145715a323c4790039c2736f0663daa1f5bab6d"
+    },
+    {
+      "url": "https://attorneygeneralchambers.com/laws-of-saint-lucia/income-tax-act/schedule-3",
+      "bytes": 157248,
+      "sha256": "e8ca0adbacf640bf8fbdd8cf4893c3a68255270f71d05b0acaf5123aefe75fc5"
+    }
+  ],
+  "review_status": "independent review pending"
+}
