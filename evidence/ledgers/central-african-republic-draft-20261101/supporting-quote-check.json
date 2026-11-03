@@ -1,0 +1,342 @@
+[
+  {
+    "rule": "I03",
+    "quote": "378.001-1.680.000",
+    "located": true
+  },
+  {
+    "rule": "I03",
+    "quote": "8%",
+    "located": true
+  },
+  {
+    "rule": "I04",
+    "quote": "1.680.001-3.360.000",
+    "located": true
+  },
+  {
+    "rule": "I04",
+    "quote": "15%",
+    "located": true
+  },
+  {
+    "rule": "I04",
+    "quote": "3.360.001-5.040.000",
+    "located": true
+  },
+  {
+    "rule": "I04",
+    "quote": "28%",
+    "located": true
+  },
+  {
+    "rule": "I04",
+    "quote": "Superieur à 5.040.000",
+    "located": true
+  },
+  {
+    "rule": "I04",
+    "quote": "40%",
+    "located": true
+  },
+  {
+    "rule": "I05",
+    "quote": "évalués à 30%.",
+    "located": true
+  },
+  {
+    "rule": "I06",
+    "quote": "Le taux de l’impôt est fixé à 30%",
+    "located": true
+  },
+  {
+    "rule": "I06",
+    "quote": "Ce taux est reduit à 20%",
+    "located": true
+  },
+  {
+    "rule": "I07",
+    "quote": "0,3% pour les activités agricoles",
+    "located": true
+  },
+  {
+    "rule": "I07",
+    "quote": "1,85% pour les autres activités",
+    "located": true
+  },
+  {
+    "rule": "I07",
+    "quote": "300 000 F CFA pour les activités agricoles",
+    "located": true
+  },
+  {
+    "rule": "I07",
+    "quote": "1 850 000 F CFA pour les autres activités",
+    "located": true
+  },
+  {
+    "rule": "I07",
+    "quote": "arrondie au millier de francs inférieur",
+    "located": true
+  },
+  {
+    "rule": "C01",
+    "quote": "inferieur ou égal à 30. 000. 000 F CFA",
+    "located": true
+  },
+  {
+    "rule": "C03",
+    "quote": "Le taux de l’impôt est fixé à 30%",
+    "located": true
+  },
+  {
+    "rule": "C03",
+    "quote": "il est réduit à 20%",
+    "located": true
+  },
+  {
+    "rule": "C04",
+    "quote": "0,3% pour les activités agricoles",
+    "located": true
+  },
+  {
+    "rule": "C04",
+    "quote": "1,85% pour les autres activités",
+    "located": true
+  },
+  {
+    "rule": "C04",
+    "quote": "300.000 F CFA pour les activités agricoles",
+    "located": true
+  },
+  {
+    "rule": "C04",
+    "quote": "1.850 000 F CFA pour les autres",
+    "located": true
+  },
+  {
+    "rule": "C04",
+    "quote": "arrondie au millier de francs inférieur",
+    "located": true
+  },
+  {
+    "rule": "C05",
+    "quote": "supérieur à 3.000.000 F CFA",
+    "located": true
+  },
+  {
+    "rule": "C07",
+    "quote": "sur une période de douze mois",
+    "located": true
+  },
+  {
+    "rule": "C07",
+    "quote": "au cours des six mois",
+    "located": true
+  },
+  {
+    "rule": "C07",
+    "quote": "au 31 décembre",
+    "located": true
+  },
+  {
+    "rule": "C08",
+    "quote": "en quatre exemplaires",
+    "located": true
+  },
+  {
+    "rule": "C08",
+    "quote": "au plus tard le 30 avril",
+    "located": true
+  },
+  {
+    "rule": "C09",
+    "quote": "au 1/3 de l’impôt dû l’année précédente",
+    "located": true
+  },
+  {
+    "rule": "C10",
+    "quote": "égal à la moitié",
+    "located": true
+  },
+  {
+    "rule": "C10",
+    "quote": "les 15 mars et 15 septembre",
+    "located": true
+  },
+  {
+    "rule": "C10",
+    "quote": "au plus tard le 15 juin",
+    "located": true
+  },
+  {
+    "rule": "X02",
+    "quote": "les deux premiers mois",
+    "located": true
+  },
+  {
+    "rule": "X03",
+    "quote": "un mois avant le départ",
+    "located": true
+  },
+  {
+    "rule": "X04",
+    "quote": "un (01) mois",
+    "located": true
+  },
+  {
+    "rule": "V02",
+    "quote": "Taux zéro (0%)",
+    "located": true
+  },
+  {
+    "rule": "V02",
+    "quote": "Taux reduit de 5%",
+    "located": true
+  },
+  {
+    "rule": "V07",
+    "quote": "au plus tard le 30 avril",
+    "located": true
+  },
+  {
+    "rule": "V08",
+    "quote": "un délai de dix ans",
+    "located": true
+  },
+  {
+    "rule": "V09",
+    "quote": "au plutard le 15 du mois suivant",
+    "located": true
+  },
+  {
+    "rule": "V10",
+    "quote": "supérieurs à 100 000 000 FCFA",
+    "located": true
+  },
+  {
+    "rule": "V10",
+    "quote": "trois mois consécutifs",
+    "located": true
+  },
+  {
+    "rule": "V11",
+    "quote": "en un seul exemplaire",
+    "located": true
+  },
+  {
+    "rule": "F02",
+    "quote": "un million (1.000.000)",
+    "located": true
+  },
+  {
+    "rule": "F02",
+    "quote": "cinq mille (5.000)",
+    "located": true
+  },
+  {
+    "rule": "F03",
+    "quote": "deux (2) ans",
+    "located": true
+  },
+  {
+    "rule": "F04",
+    "quote": "dix millions (10.000.000)",
+    "located": true
+  },
+  {
+    "rule": "F04",
+    "quote": "trois (3) ans",
+    "located": true
+  },
+  {
+    "rule": "F07",
+    "quote": "quarante-cinq (45) jours",
+    "located": true
+  },
+  {
+    "rule": "W02",
+    "quote": "au plus tard le 15 de chaque mois",
+    "located": true
+  },
+  {
+    "rule": "W02",
+    "quote": "le 15 du mois suivant le trimestre",
+    "located": true
+  },
+  {
+    "rule": "W03",
+    "quote": "avant le 31 janvier",
+    "located": true
+  },
+  {
+    "rule": "O01",
+    "quote": "se termine le 31",
+    "located": true
+  },
+  {
+    "rule": "O01",
+    "quote": "décembre",
+    "located": true
+  },
+  {
+    "rule": "O02",
+    "quote": "dans un délai d’une semaine",
+    "located": true
+  },
+  {
+    "rule": "O02",
+    "quote": "1 000 000",
+    "located": true
+  },
+  {
+    "rule": "O03",
+    "quote": "50 à 100%",
+    "located": true
+  },
+  {
+    "rule": "B02",
+    "quote": "inférieure à 12%",
+    "located": true
+  },
+  {
+    "rule": "B02",
+    "quote": "au millier de franc inférieur",
+    "located": true
+  },
+  {
+    "rule": "B03",
+    "quote": "15% pour les personnes physiques",
+    "located": true
+  },
+  {
+    "rule": "B03",
+    "quote": "30 % pour les personnes morales",
+    "located": true
+  },
+  {
+    "rule": "B03",
+    "quote": "à la dizaine de francs la plus voisine",
+    "located": true
+  },
+  {
+    "rule": "B05",
+    "quote": "avant le 1 er février",
+    "located": true
+  },
+  {
+    "rule": "B05",
+    "quote": "un délai de Vingt jours",
+    "located": true
+  },
+  {
+    "rule": "B07",
+    "quote": "au 1erjanvier",
+    "located": true
+  },
+  {
+    "rule": "B08",
+    "quote": "40 % du revenu brut.",
+    "located": true
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "path": "skills/central-african-republic/cf-company-formation.md",
+    "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "635604190072cc3d9e6340ee498ba5735c2d8a59",
+    "sha256": "a833b97f5e9a176ebfccf3140b84268b0bbac6dcff105178f87d2283497c2494",
+    "bytes": 4051
+  },
+  {
+    "path": "skills/central-african-republic/cf-corporate-income-tax.md",
+    "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "436cbd0e33e0a36159c04bccdd4eba5b1cc46604",
+    "sha256": "7e5192de51f8998879af4079292d46b50460bbd43c8d9ebd82ff8a1891a69320",
+    "bytes": 3807
+  },
+  {
+    "path": "skills/central-african-republic/cf-income-tax.md",
+    "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "165e75b091c5a41a35a2481ee0f5360a7a359350",
+    "sha256": "9e46840fdeca8b0ff153ab39cc1c6e02d05f2c81322a32614812e9c0bf383a4f",
+    "bytes": 4364
+  },
+  {
+    "path": "skills/central-african-republic/cf-payroll-social.md",
+    "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "3fcd7b5b4e7b205b69925548666a64f0c0bbc3df",
+    "sha256": "e911fcbcc1a8b44c88d449fc8796b2fbe3dc40a89ebb3e7a5c14e169423d3f2f",
+    "bytes": 4003
+  },
+  {
+    "path": "skills/central-african-republic/cf-tax-overview.md",
+    "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "8027b001a1f845891967cc369782e45326d70407",
+    "sha256": "637f4908d63527604df465bd80b60c7f68e0ee22edffc99f7e3dbf75dd60f64b",
+    "bytes": 3778
+  },
+  {
+    "path": "skills/central-african-republic/cf-vat-gst.md",
+    "commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "c86111b8090cf435809463a1cc8bbfd2c0a3ec68",
+    "sha256": "c615cac779996367308bd7eeb1e637e975f76953498fd2346ddbf7ea7e88ed95",
+    "bytes": 3300
+  }
+]
