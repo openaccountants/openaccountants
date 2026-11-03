@@ -1,0 +1,18 @@
+{
+  "id": "P-START",
+  "source": "CNSSPOST",
+  "act_article": "CNSS official announcement, opening paragraphs",
+  "exact_original_language_quote": "Date d’effet : Depuis le 1er janvier 2026.",
+  "rule": "CNSS states new rates effective1January2026 and first DTS30April2026; statutory decree page has conflicting issue/decree dates, resolve original gazette before filing.",
+  "read_on": "2026-11-01",
+  "official_url": "https://fr.linkedin.com/posts/cnss-gabon_cnssemployeur-cnsstravailleur-cnsspluspr%C3%A8sdevous-activity-7416830583407910912-XCKD",
+  "source_sha256": "e59d658bb289dcb8acabba463eada3c2aaf33a394ed8fe6b413ee7f934f3354e",
+  "read_scope": "Read CNSS organization announcement opening paragraphs through first DTS date; issuer social-account primary announcement, not a decree. This cache is a transcribed read excerpt, not original HTML. Comments not relied upon.",
+  "pdf_page_1_based": null,
+  "guide_sections": {
+    "ga-payroll-social": [
+      "Who this applies to",
+      "Deadlines and filing"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "verdict": "PASS",
+  "scope": "Independent source-status correction only; not whole-pack legal review, source acceptance upgrade or country completion",
+  "reviewed_on": "2026-11-03",
+  "baseline_commit": "79e6ff19b14fd2a62c1c402879103291ad7883d0",
+  "guide": "skills/gabon/ga-payroll-social.md",
+  "guide_sha256": "00c0712ef674592ac95b36dedbecad21753ba8e86374897a607e42fdce932fdf",
+  "checks": {
+    "original_P_START_full_row_equal": true,
+    "example_blocks_byte_identical": true,
+    "CTA_byte_identical": true,
+    "protected_fields_identical": true,
+    "only_tracked_change_is_payroll_guide": true,
+    "version_H1_date_consistent": true,
+    "source_history_date_quote_hash_preserved": true,
+    "operative_social_dates_removed": true,
+    "scope_rates_deadlines_sources_gap_consistent": true,
+    "gazette_branch_currentness_holds_preserved": true,
+    "no_new_rate_or_example_claim": true,
+    "official_pages_not_used_to_prove_dates_or_nonexistence": true
+  },
+  "example_block_count": 2,
+  "prior_row_sha256": "27f1628eb5dfd7fd33aa5adb1c95634bfefe5e331452ca865b59ab36bae226f3",
+  "ledger_reviewed_sha256": "d6b105720301dcdce7ac25bfecfb85c3e2097accdaa938a719110678b8943aee",
+  "authorized_exact_ledger_replacement": {
+    "from": "Independent source-status review is pending.",
+    "to": "Independent source-status review passed on 2026-11-03 for the source-status correction only; see ../independent-review/REVIEW.md."
+  },
+  "nonblocking_historical_wording": "Original 2026-11-01 README retains pre-review/not-merge-ready wording and affirmative historical social-announcement description. It remains immutable historical evidence; additive override is controlling for P-START. Guide remaining-gap line still mentions independent review generically; this focused review does not resolve whole-pack review/currentness."
+}
