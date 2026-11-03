@@ -1,0 +1,2613 @@
+[
+  {
+    "id": "bj-business-income-tax:01",
+    "section": "Who this applies to",
+    "rule": "Annual IBA covers a natural person habitually carrying on a profit-making activity on their own account.",
+    "act_article": "CGI art54",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=34",
+    "source_pdf_page": 34,
+    "exact_french_quote": "Les bénéfices réalisés par les personnes physiques",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "habituellement, pour leur propre compte"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article54 is the annual natural-person own-account habitual lucrative-activity charge. It is a separate job from salary ITS and company IS.",
+    "quote_checks": [
+      {
+        "quote": "Les bénéfices réalisés par les personnes physiques",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "Les bénéfices réalisés par les personnes physiques"
+      },
+      {
+        "quote": "habituellement, pour leur propre compte",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "habituellement, pour leur propre compte"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      34
+    ],
+    "independent_decisive_CGI_clause": "Article 54 : Les bénéfices réalisés par les personnes physiques qui accomplissent habituellement, pour leur propre compte, une activité à caractère lucratif, sont soumis à un impôt annuel désigné sous le nom d'impôt sur les bénéfices d'affaires. SECTION 1 CHAMP D'APPLICATION",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:02",
+    "section": "Who this applies to",
+    "rule": "Industrial/commercial/artisanal, liberal-profession and intellectual/industrial-property receipts enter the IBA screen, subject to exemptions.",
+    "act_article": "CGI art55(1),(3)–(4)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=34",
+    "source_pdf_page": 34,
+    "exact_french_quote": "les bénéfices industriels, commerciaux, artisanaux",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "les bénéfices des professions libérales",
+      "les produits des droits de propriété intellectuelle ou industrielle"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article55(1),(3),(4) names these classes. Article55(2) and58(1) were also read: the agriculture/livestock/fishing exemption screen is retained rather than omitted.",
+    "quote_checks": [
+      {
+        "quote": "les bénéfices industriels, commerciaux, artisanaux",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "les bénéfices industriels, commerciaux, artisanaux"
+      },
+      {
+        "quote": "les bénéfices des professions libérales",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "les bénéfices des professions libérales"
+      },
+      {
+        "quote": "les produits des droits de propriété intellectuelle ou industrielle",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "les produits des droits de propriété intellectuelle ou industrielle"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      34
+    ],
+    "independent_decisive_CGI_clause": "Article 55 : Constituent des opérations imposables au titre de l'impôt sur les bénéfices d'affaires, sauf exonérations prévues à l'article 58 ci-dessous : 1) les bénéfices industriels, commerciaux, artisanaux ; 2) les bénéfices réalisés par les agriculteurs, les éleveurs et les pêcheurs, ainsi que les profits réalisés par les chercheurs et obtenteurs de nouvelles variétés végétales ; 3) les bénéfices des professions libérales et des charges et offices dont les titulaires n'ont pas la qualité de commerçants ; 4) les produits des droits de propriété intellectuelle ou industrielle ; 5) et d'une manière générale, les bénéfices et revenus de toutes opérations ou exploitations lucratives, perçus de manière habituelle ou exceptionnelle, ne se rattachant pas à des revenus soumis à l'impôt sur les traitements et salaires (ITS), à l'impôt sur le revenu des capitaux mobiliers (IRCM), à l'impôt sur les revenus fonciers (IRF) ou à la taxe sur les plus- values immobilières (TPVI).",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:03",
+    "section": "Who this applies to",
+    "rule": "Other habitual or exceptional lucrative receipts belong in IBA only if not already salary ITS, investment IRCM, rental IRF or property-gain TPVI; use those separate job owners.",
+    "act_article": "CGI art55(5)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=34",
+    "source_pdf_page": 34,
+    "exact_french_quote": "perçus de manière habituelle ou exceptionnelle",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "ne se rattachant pas à des revenus soumis"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article55(5) expressly subordinates the residual habitual/exceptional class to the four other named taxes. No general salary or capital-income charge is imported.",
+    "quote_checks": [
+      {
+        "quote": "perçus de manière habituelle ou exceptionnelle",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "perçus de manière habituelle ou exceptionnelle"
+      },
+      {
+        "quote": "ne se rattachant pas à des revenus soumis",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "ne se rattachant pas à des revenus soumis"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      34
+    ],
+    "independent_decisive_CGI_clause": "Article 55 : Constituent des opérations imposables au titre de l'impôt sur les bénéfices d'affaires, sauf exonérations prévues à l'article 58 ci-dessous : 1) les bénéfices industriels, commerciaux, artisanaux ; 2) les bénéfices réalisés par les agriculteurs, les éleveurs et les pêcheurs, ainsi que les profits réalisés par les chercheurs et obtenteurs de nouvelles variétés végétales ; 3) les bénéfices des professions libérales et des charges et offices dont les titulaires n'ont pas la qualité de commerçants ; 4) les produits des droits de propriété intellectuelle ou industrielle ; 5) et d'une manière générale, les bénéfices et revenus de toutes opérations ou exploitations lucratives, perçus de manière habituelle ou exceptionnelle, ne se rattachant pas à des revenus soumis à l'impôt sur les traitements et salaires (ITS), à l'impôt sur le revenu des capitaux mobiliers (IRCM), à l'impôt sur les revenus fonciers (IRF) ou à la taxe sur les plus- values immobilières (TPVI).",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:04",
+    "section": "Who this applies to",
+    "rule": "An equipped commercial/industrial undertaking lease, property/business intermediation, habitual property resale and subdivision for sale are IBA activities; do not assume ordinary rent.",
+    "act_article": "CGI art56(1)–(4)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=34",
+    "source_pdf_page": 34,
+    "exact_french_quote": "la location d’un établissement commercial et industriel muni du matériel",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "des opérations d’intermédiaires",
+      "de l’achat d’immeubles en vue de les revendre, de manière habituelle",
+      "du lotissement en vue de la vente de terrains"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article56(1)-(4) covers equipped undertaking leases, property/business intermediaries, habitual property purchases for resale and subdivisions. Ordinary property rent is not assumed.",
+    "quote_checks": [
+      {
+        "quote": "la location d’un établissement commercial et industriel muni du matériel",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "la location d’un établissement commercial et industriel muni du matériel"
+      },
+      {
+        "quote": "des opérations d’intermédiaires",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "des opérations d’intermédiaires"
+      },
+      {
+        "quote": "de l’achat d’immeubles en vue de les revendre, de manière habituelle",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "de l’achat d’immeubles en vue de les revendre, de manière habituelle"
+      },
+      {
+        "quote": "du lotissement en vue de la vente de terrains",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "du lotissement en vue de la vente de terrains"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      34
+    ],
+    "independent_decisive_CGI_clause": "Article 56 : Sont également soumis à l'impôt sur les bénéfices d'affaires, les revenus provenant : 1) de la location d'un établissement commercial et industriel muni du matériel ou du mobilier nécessaire à son exploitation, que la location comprenne ou non tout ou partie des éléments incorporels du fonds de commerce ou d'industrie ; 2) des opérations d'intermédiaires pour l'achat ou la vente d'immeubles ou de fonds de commerce ; 3) de l'achat d'immeubles en vue de les revendre, de manière habituelle ; 4) du lotissement en vue de la vente de terrains.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:05",
+    "section": "Who this applies to",
+    "rule": "Members of non-IS entities and co-owners owe IBA on their profit shares, subject to article101(2) property-predominance reservation. Resolve that reservation before choosing the share route.",
+    "act_article": "CGI arts57,101(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=34",
+    "source_pdf_page": 34,
+    "exact_french_quote": "Sous réserve des dispositions de l’article 101 paragraphe 2",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "pour la part de bénéfices sociaux correspondant à leurs droits"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article57 expressly reserves101(2), then charges members/co-owners by their profit rights. Article101(2) is a turnover-based property-predominance exception; the new job requires classification first.",
+    "quote_checks": [
+      {
+        "quote": "Sous réserve des dispositions de l’article 101 paragraphe 2",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "Sous réserve des dispositions de l’article 101 paragraphe 2"
+      },
+      {
+        "quote": "pour la part de bénéfices sociaux correspondant à leurs droits",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "pour la part de bénéfices sociaux correspondant à leurs droits"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      34
+    ],
+    "independent_decisive_CGI_clause": "Article 57 : Sous réserve des dispositions de l'article 101 paragraphe 2 du présent code, les associés des sociétés non soumises à l'impôt sur les sociétés et les indivisaires sont personnellement soumis à l'impôt sur les bénéfices d'affaires pour la part de bénéfices sociaux correspondant à leurs droits dans la société ou à leurs parts dans l'indivision.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:06",
+    "section": "Who this applies to",
+    "rule": "Article58 exempts agricultural/livestock/fishing operations; specified artists selling only their own art; and musicians/actors/other artists’ performance income. This is an IBA exemption, not a universal tax exemption.",
+    "act_article": "CGI art58(1)–(3)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=34",
+    "source_pdf_page": 34,
+    "exact_french_quote": "les activités d’exploitation agricole, d’élevage et de pêche",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "ne vendant que le produit de leur art",
+      "pour leur prestation"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article58(1)-(3) supports the specific IBA exemptions. Own-art-sales and performance-income predicates are retained; a universal tax exemption is not granted.",
+    "quote_checks": [
+      {
+        "quote": "les activités d’exploitation agricole, d’élevage et de pêche",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "les activités d’exploitation agricole, d’élevage et de pêche"
+      },
+      {
+        "quote": "ne vendant que le produit de leur art",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "ne vendant que le produit de leur art"
+      },
+      {
+        "quote": "pour leur prestation",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "pour leur prestation"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      34,
+      35,
+      85,
+      90
+    ],
+    "independent_decisive_CGI_clause": "Article 58 : Sont exonérés de l'impôt sur les bénéfices d'affaires : 1) les activités d'exploitation agricole, d'élevage et de pêche ; 2) les revenus des peintres, sculpteurs, graveurs, dessinateurs et autres personnes considérées comme artistes et ne vendant que le produit de leur art ; 3) les revenus des musiciens, comédiens et autres artistes pour leur prestation ; 4) les revenus générés par les fonds déposés en gestion pour une durée minimale de trois ans auprès des entreprises de capital-risque ; 5) les gains retirés de la pratique des jeux de hasard ; 6) les contribuables relevant de la taxe professionnelle synthétique.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:07",
+    "section": "Who this applies to",
+    "rule": "Article58 also exempts income from funds entrusted to venture-capital businesses for at least three years, gambling gains and TPS taxpayers.",
+    "act_article": "CGI art58(4)–(6)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=35",
+    "source_pdf_page": 35,
+    "exact_french_quote": "pour une durée minimale de trois ans",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "les gains retirés de la pratique des jeux de hasard",
+      "les contribuables relevant de la taxe professionnelle synthétique"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article58(4)-(6) supports funds entrusted for at least three years, gambling gains and TPS taxpayers. The minimum duration is not a general IBA loss period.",
+    "quote_checks": [
+      {
+        "quote": "pour une durée minimale de trois ans",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "pour une durée minimale de trois ans"
+      },
+      {
+        "quote": "les gains retirés de la pratique des jeux de hasard",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "les gains retirés de la pratique des jeux de hasard"
+      },
+      {
+        "quote": "les contribuables relevant de la taxe professionnelle synthétique",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "les contribuables relevant de la taxe professionnelle synthétique"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      35,
+      67
+    ],
+    "independent_decisive_CGI_clause": "Article 58 : Sont exonérés de l'impôt sur les bénéfices d'affaires : 1) les activités d'exploitation agricole, d'élevage et de pêche ; 2) les revenus des peintres, sculpteurs, graveurs, dessinateurs et autres personnes considérées comme artistes et ne vendant que le produit de leur art ; 3) les revenus des musiciens, comédiens et autres artistes pour leur prestation ; 4) les revenus générés par les fonds déposés en gestion pour une durée minimale de trois ans auprès des entreprises de capital-risque ; 5) les gains retirés de la pratique des jeux de hasard ; 6) les contribuables relevant de la taxe professionnelle synthétique.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:08",
+    "section": "Who this applies to",
+    "rule": "TPS applies to IBA-type taxpayers at or below a ministerially fixed turnover threshold. The numerical order is unverified and must be obtained before a turnover-only first classification.",
+    "act_article": "CGI art178",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=85",
+    "source_pdf_page": 85,
+    "exact_french_quote": "un seuil fixé par arrêté du ministre en charge des finances",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "inférieur ou égal"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article178 delegates the numerical turnover threshold to a ministerial order. No actual order is available in this source chain, so the Guide correctly holds numerical TPS eligibility and a first classification.",
+    "quote_checks": [
+      {
+        "quote": "un seuil fixé par arrêté du ministre en charge des finances",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "un seuil fixé par arrêté du ministre en charge des finances"
+      },
+      {
+        "quote": "inférieur ou égal",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "inférieur ou égal"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      72,
+      85,
+      92,
+      93,
+      97,
+      136,
+      159
+    ],
+    "independent_decisive_CGI_clause": "Article 178 : Les contribuables relevant de l'impôt sur les bénéfices d'affaires mais dont le chiffre d'affaires est inférieur ou égal à un seuil fixé par arrêté du ministre en charge des finances, sont, quelle que soit la nature de leur activité, soumis à une contribution unique dénommée taxe professionnelle synthétique libératoire des impôts et taxes ci- après : 1) l'impôt sur les bénéfices d'affaires ; 2) la contribution des patentes ; 3) la contribution des licences ; 4) le versement patronal sur les salaires.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:09",
+    "section": "Who this applies to",
+    "rule": "Persons charged to IS by right or election are outside TPS regardless of turnover.",
+    "act_article": "CGI art179",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=85",
+    "source_pdf_page": 85,
+    "exact_french_quote": "quel que soit leur chiffre d’affaires",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "imposables de plein droit ou sur option à l’impôt sur les sociétés"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article179 excludes all persons subject to IS as of right or by option regardless of turnover. No TPS entitlement is inferred from low turnover alone.",
+    "quote_checks": [
+      {
+        "quote": "quel que soit leur chiffre d’affaires",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "quel que soit leur chiffre d’affaires"
+      },
+      {
+        "quote": "imposables de plein droit ou sur option à l’impôt sur les sociétés",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "imposables de plein droit ou sur option à l’impôt sur les sociétés"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      85
+    ],
+    "independent_decisive_CGI_clause": "Article 179 : N'entrent pas dans le champ d'application de la taxe professionnelle synthétique, quel que soit leur chiffre d'affaires, les contribuables imposables de plein droit ou sur option à l'impôt sur les sociétés par application de l'article 3 ci-dessus.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:10",
+    "section": "Who this applies to",
+    "rule": "An established TPS taxpayer can expressly request IBA at any time; acceptance/refusal is due within eight days and silence means acceptance.",
+    "act_article": "CGI art181(1)–(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=85",
+    "source_pdf_page": 85,
+    "exact_french_quote": "dans les huit (8) jours de la demande",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "sur demande expresse adressée à tout moment",
+      "Le défaut de réponse équivaut à une acceptation"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article181(1)-(2) expressly permits a request at any time, requires acceptance/refusal within eight days and treats silence as acceptance. This is an option for an established TPS taxpayer.",
+    "quote_checks": [
+      {
+        "quote": "dans les huit (8) jours de la demande",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "dans les huit (8) jours de la demande"
+      },
+      {
+        "quote": "sur demande expresse adressée à tout moment",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "sur demande expresse adressée à tout moment"
+      },
+      {
+        "quote": "Le défaut de réponse équivaut à une acceptation",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "Le défaut de réponse équivaut à une acceptation"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      85
+    ],
+    "independent_decisive_CGI_clause": "Article 181 : 1) Les entreprises soumises à la taxe professionnelle synthétique peuvent opter pour l'impôt sur les bénéfices d'affaires sur demande expresse adressée à tout moment au service des impôts compétent. 2) Ce service est tenu de notifier l'agrément ou le refus au contribuable dans les huit (8) jours de la demande. Le défaut de réponse équivaut à une acceptation. 3) L'option prend effet à compter du premier jour du mois suivant celui de l'acceptation de la demande. 4) L'option est irrévocable.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:11",
+    "section": "Who this applies to",
+    "rule": "The TPS-to-IBA option takes effect from the first day of the month following acceptance and is irrevocable.",
+    "act_article": "CGI art181(3)–(4)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=85",
+    "source_pdf_page": 85,
+    "exact_french_quote": "L’option est irrévocable",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "du premier jour du mois suivant celui de l’acceptation"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article181(3)-(4) supplies first-day-of-following-month effect and irrevocability. No current-year retroactive effect is invented.",
+    "quote_checks": [
+      {
+        "quote": "L’option est irrévocable",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "L’option est irrévocable"
+      },
+      {
+        "quote": "du premier jour du mois suivant celui de l’acceptation",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "du premier jour du mois suivant celui de l’acceptation"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      85
+    ],
+    "independent_decisive_CGI_clause": "Article 181 : 1) Les entreprises soumises à la taxe professionnelle synthétique peuvent opter pour l'impôt sur les bénéfices d'affaires sur demande expresse adressée à tout moment au service des impôts compétent. 2) Ce service est tenu de notifier l'agrément ou le refus au contribuable dans les huit (8) jours de la demande. Le défaut de réponse équivaut à une acceptation. 3) L'option prend effet à compter du premier jour du mois suivant celui de l'acceptation de la demande. 4) L'option est irrévocable.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:12",
+    "section": "Who this applies to",
+    "rule": "An established threshold breach triggers IBA no later than next month, except a December breach starts in the next year. Purchases of goods/services/equipment and signed contracts also test the threshold.",
+    "act_article": "CGI art182(1)–(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=85",
+    "source_pdf_page": 85,
+    "exact_french_quote": "au plus tard le premier jour du mois suivant",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "au cours du mois de décembre",
+      "des achats de biens et services, équipements et celui des contrats signés"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article182(1)-(2) links movement to the month after the finding of breach, except December to next year. The purchases/services/equipment and signed-contract tests are retained.",
+    "quote_checks": [
+      {
+        "quote": "au plus tard le premier jour du mois suivant",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "au plus tard le premier jour du mois suivant"
+      },
+      {
+        "quote": "au cours du mois de décembre",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "au cours du mois de décembre"
+      },
+      {
+        "quote": "des achats de biens et services, équipements et celui des contrats signés",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "des achats de biens et services, équipements et celui des contrats signés"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      85,
+      86
+    ],
+    "independent_decisive_CGI_clause": "Article 182 : 1) En cas de dépassement du seuil prévu à l'article 178 du présent code, le contribuable est tenu de se soumettre aux dispositions relatives au régime de l'impôt sur le bénéfice d'affaires au plus tard le premier jour du mois suivant la constatation du dépassement. Toutefois, lorsque le dépassement du seuil intervient au cours du mois de décembre, le passage au régime supérieur n'intervient qu'au titre de l'année suivante. 2) Les dispositions du précédent alinéa s'appliquent également lorsque le montant des achats de biens et services, équipements et celui des contrats signés dépasse le seuil fixé à l'article 178 du présent code. 3) La taxe professionnelle synthétique payée avant le changement de régime est considérée comme un acompte imputable sur les nouvelles impositions, à raison de 50% pour les impôts locaux et 50% pour les impôts d'État. 4) En cas de dépassement du seuil d'imposition à la taxe professionnelle synthétique à l'issue d'un contrôle, le contribuable est reclassé de droit à l'impôt sur les bénéfices d'affaires. 5) Les contribuables relevant de l'impôt sur les bénéfices d'affaires dont le chiffre d'affaires s'abaisse en-dessous de la limite prévue à l'article 178 du présent code, ne sont soumis au régime de la taxe professionnelle synthétique que lorsque le chiffre d'affaires est resté inférieur à cette limite durant deux (2) exercices consécutifs. SECTION 2 CALCUL DE L'IMPOT",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:13",
+    "section": "Who this applies to",
+    "rule": "A control-discovered threshold breach causes automatic IBA reclassification. An IBA taxpayer whose turnover drops below the limit returns to TPS only after two consecutive below-limit exercises.",
+    "act_article": "CGI art182(4)–(5)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=86",
+    "source_pdf_page": 86,
+    "exact_french_quote": "reclassé de droit à l’impôt sur les bénéfices",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "durant deux (2) exercices consécutifs"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article182(4)-(5) supports control reclassification and two consecutive below-limit exercises before return to TPS. Neither is reduced to a one-year turnover snapshot.",
+    "quote_checks": [
+      {
+        "quote": "reclassé de droit à l’impôt sur les bénéfices",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "reclassé de droit à l’impôt sur les bénéfices"
+      },
+      {
+        "quote": "durant deux (2) exercices consécutifs",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "durant deux (2) exercices consécutifs"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      86
+    ],
+    "independent_decisive_CGI_clause": "Article 182 : 1) En cas de dépassement du seuil prévu à l'article 178 du présent code, le contribuable est tenu de se soumettre aux dispositions relatives au régime de l'impôt sur le bénéfice d'affaires au plus tard le premier jour du mois suivant la constatation du dépassement. Toutefois, lorsque le dépassement du seuil intervient au cours du mois de décembre, le passage au régime supérieur n'intervient qu'au titre de l'année suivante. 2) Les dispositions du précédent alinéa s'appliquent également lorsque le montant des achats de biens et services, équipements et celui des contrats signés dépasse le seuil fixé à l'article 178 du présent code. 3) La taxe professionnelle synthétique payée avant le changement de régime est considérée comme un acompte imputable sur les nouvelles impositions, à raison de 50% pour les impôts locaux et 50% pour les impôts d'État. 4) En cas de dépassement du seuil d'imposition à la taxe professionnelle synthétique à l'issue d'un contrôle, le contribuable est reclassé de droit à l'impôt sur les bénéfices d'affaires. 5) Les contribuables relevant de l'impôt sur les bénéfices d'affaires dont le chiffre d'affaires s'abaisse en-dessous de la limite prévue à l'article 178 du présent code, ne sont soumis au régime de la taxe professionnelle synthétique que lorsque le chiffre d'affaires est resté inférieur à cette limite durant deux (2) exercices consécutifs. SECTION 2 CALCUL DE L'IMPOT",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:14",
+    "section": "Who this applies to",
+    "rule": "TPS paid before switching is credited half to local taxes and half to State taxes; it cannot all be assumed an IBA credit.",
+    "act_article": "CGI art182(3)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=86",
+    "source_pdf_page": 86,
+    "exact_french_quote": "à raison de 50%",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "pour les impôts locaux et 50% pour les impôts d’État"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article182(3) divides pre-switch TPS credit50/50 between local and State taxes; it does not permit allocating the whole sum to IBA.",
+    "quote_checks": [
+      {
+        "quote": "à raison de 50%",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "à raison de 50%"
+      },
+      {
+        "quote": "pour les impôts locaux et 50% pour les impôts d’État",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "pour les impôts locaux et 50% pour les impôts d’État"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      86,
+      88,
+      146
+    ],
+    "independent_decisive_CGI_clause": "Article 182 : 1) En cas de dépassement du seuil prévu à l'article 178 du présent code, le contribuable est tenu de se soumettre aux dispositions relatives au régime de l'impôt sur le bénéfice d'affaires au plus tard le premier jour du mois suivant la constatation du dépassement. Toutefois, lorsque le dépassement du seuil intervient au cours du mois de décembre, le passage au régime supérieur n'intervient qu'au titre de l'année suivante. 2) Les dispositions du précédent alinéa s'appliquent également lorsque le montant des achats de biens et services, équipements et celui des contrats signés dépasse le seuil fixé à l'article 178 du présent code. 3) La taxe professionnelle synthétique payée avant le changement de régime est considérée comme un acompte imputable sur les nouvelles impositions, à raison de 50% pour les impôts locaux et 50% pour les impôts d'État. 4) En cas de dépassement du seuil d'imposition à la taxe professionnelle synthétique à l'issue d'un contrôle, le contribuable est reclassé de droit à l'impôt sur les bénéfices d'affaires. 5) Les contribuables relevant de l'impôt sur les bénéfices d'affaires dont le chiffre d'affaires s'abaisse en-dessous de la limite prévue à l'article 178 du présent code, ne sont soumis au régime de la taxe professionnelle synthétique que lorsque le chiffre d'affaires est resté inférieur à cette limite durant deux (2) exercices consécutifs. SECTION 2 CALCUL DE L'IMPOT",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:15",
+    "section": "Who this applies to",
+    "rule": "June LFR adds to new-enterprise TPS exemption the exclusions in CGI146(2)(a),(b),(d): control reassessments, takeover of existing activities and nonresident branches. First operative period and transition-credit instructions remain held.",
+    "act_article": "LFR2026 art8; CGI146(2)(a),(b),(d)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=3",
+    "source_pdf_page": 3,
+    "exact_french_quote": "L’exonération d’impôt ne s’applique pas",
+    "read_date": "2026-11-01",
+    "source_file": "lfr2026.pdf",
+    "source_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+    "read_scope": "OCR fiscal arts1–19 and final48–49 read. Original scans PDF1,3,17 visually inspected for income period, art8/CGI180 exclusion, art9/cessation and final signature. Exact first operative TPS-amendment period not resolved.",
+    "additional_quote_anchors": [
+      "aux alinéas a, b et d"
+    ],
+    "additional_sources": [
+      {
+        "act_article": "CGI146(2)(a),(b),(d)",
+        "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=71",
+        "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+        "exact_french_quotes": [
+          "en cas de rappel de droits suite à une procédure de contrôle fiscal",
+          "reprise totale ou partielle",
+          "pour les succursales des entreprises non-résidentes au Bénin"
+        ]
+      }
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Signed June LFR8 adds CGI146(2)(a),(b),(d) only to CGI180(3). The turnover exclusion in146(2)(c) is not imported. First operative period and transition-credit instructions remain unresolved.",
+    "quote_checks": [
+      {
+        "quote": "L’exonération d’impôt ne s’applique pas",
+        "method": "cached OCR plus scan reading",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "L’exonération d’impôt ne s’applique pas"
+      },
+      {
+        "quote": "aux alinéas a, b et d",
+        "method": "cached OCR plus scan reading",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "aux alinéas a, b et d"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      3
+    ],
+    "independent_decisive_CGI_clause": null,
+    "additional_sources_checked": [
+      {
+        "act_article": "CGI146(2)(a),(b),(d)",
+        "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=71",
+        "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+        "exact_french_quotes": [
+          "en cas de rappel de droits suite à une procédure de contrôle fiscal",
+          "reprise totale ou partielle",
+          "pour les succursales des entreprises non-résidentes au Bénin"
+        ]
+      }
+    ],
+    "independent_decisive_signed_scan_clauses": {
+      "LFR8": "Le point 3 de l’article 180 du code général des impôts est complété par la phrase ci-après : « L’exonération d’impôt ne s’applique pas dans les cas prévus aux alinéas a, b et d du paragraphe 2 de l’article 146 du présent code »."
+    },
+    "independent_additional_CGI_clause": "Article 146 : (Modifié par la loi de finances pour 2023) 1) L'impôt sur les sociétés ou l'impôt sur les bénéfices d'affaires dû par les sociétés nouvelles régulièrement créées est réduit de : - 25% au titre du premier exercice ; - 25% au titre du second exercice ; - 50% au titre du troisième exercice. 2) Les réductions d'impôt ne s'appliquent pas : a) en cas de rappel de droits suite à une procédure de contrôle fiscal ; b) pour les entreprises créées dans le cadre d'une reprise totale ou partielle d'activités préexistantes ; c) pour les entreprises dont le chiffre d'affaires est supérieur ou égal à un milliard (1.000.000.000) de francs CFA ; d) pour les succursales des entreprises non-résidentes au Bénin. SOUS-SECTION 3 INCITATION A LA CREATION DE STARTUP"
+  },
+  {
+    "id": "bj-business-income-tax:16",
+    "section": "Rates, bands and thresholds",
+    "rule": "Ordinary IBA profit rate is30%; article63 does not give the company industrial concession to an individual business.",
+    "act_article": "CGI art63(1)–(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=36",
+    "source_pdf_page": 36,
+    "exact_french_quote": "taux de 30%",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "Ce taux est réduit à 25% pour les établissements privés"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article63 sets30% for ordinary IBA and only the stated25% education exception. Company industrial relief in46 is not carried into IBA.",
+    "quote_checks": [
+      {
+        "quote": "taux de 30%",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "taux de 30%"
+      },
+      {
+        "quote": "Ce taux est réduit à 25% pour les établissements privés",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "Ce taux est réduit à 25% pour les établissements privés"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      36
+    ],
+    "independent_decisive_CGI_clause": "Article 63 : 1) L'impôt est calculé par application à la base d'imposition du taux de 30%. 2) Ce taux est réduit à 25% pour les établissements privés d'enseignements scolaire, universitaire, technique et professionnel.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:17",
+    "section": "Rates, bands and thresholds",
+    "rule": "Private school/university/technical/professional educational establishments use25% under IBA.",
+    "act_article": "CGI art63(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=36",
+    "source_pdf_page": 36,
+    "exact_french_quote": "25% pour les établissements privés d’enseignements scolaire",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "universitaire, technique et professionnel"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article63(2) expressly names private school/university/technical/professional education. This is not a general industrial rate.",
+    "quote_checks": [
+      {
+        "quote": "25% pour les établissements privés d’enseignements scolaire",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "25% pour les établissements privés d’enseignements scolaire"
+      },
+      {
+        "quote": "universitaire, technique et professionnel",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "universitaire, technique et professionnel"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      29,
+      36,
+      91,
+      109
+    ],
+    "independent_decisive_CGI_clause": "Article 63 : 1) L'impôt est calculé par application à la base d'imposition du taux de 30%. 2) Ce taux est réduit à 25% pour les établissements privés d'enseignements scolaire, universitaire, technique et professionnel.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:18",
+    "section": "Rates, bands and thresholds",
+    "rule": "Ordinary IBA minimum is1.5% of produits encaissables, importing article47’s base definition through the existing corporate method, not its percentage.",
+    "act_article": "CGI art64(1)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=36",
+    "source_pdf_page": 36,
+    "exact_french_quote": "égal à 1,5% des produits encaissables",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "tels que définis à l’article 47"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article64(1) expressly says1.5% and imports the definition in47. Article47(2), not its1% company rate, defines the financial-flow or potential-flow base and exclusions.",
+    "quote_checks": [
+      {
+        "quote": "égal à 1,5% des produits encaissables",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "égal à 1,5% des produits encaissables"
+      },
+      {
+        "quote": "tels que définis à l’article 47",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "tels que définis à l’article 47"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      36
+    ],
+    "independent_decisive_CGI_clause": "Article 64 : (Modifié par les lois de finances pour 2024 et 2026) 1) Le montant de l'impôt ne peut être inférieur à un minimum de perception égal à 1,5% des produits encaissables tels que définis à l'article 47 du présent code. 2) Par dérogation aux dispositions du paragraphe 1 du présent article : a) le minimum de perception est égal à 3% des produits encaissables pour les entreprises du secteur du bâtiment et des travaux publics ; b) le minimum de perception est égal à 10% des produits encaissables pour les entreprises à prépondérance immobilière au sens de l'article 101 paragraphe 2 du présent code ; c) le montant et les modalités de perception de l'impôt minimum sont fixés par voie règlementaire en ce qui concerne le commerce de véhicules d'occasion et de certains produits de grande consommation. Pour les véhicules d'occasion, cet impôt minimum dû par l'importateur et exigible par véhicule vendu est libératoire. 3) a) L'impôt ne peut en aucun cas être inférieur à deux cent cinquante mille (250 000) francs CFA. b) Pour les gérants de stations-services, le minimum de perception ne peut être inférieur à celui obtenu par application d'un taux unique de 0,60 francs CFA par litre au volume des produits pétroliers vendus. Ces dispositions sont applicables aux distributeurs non importateurs de produits pétroliers, s'approvisionnant auprès des entreprises importatrices agréées, et pratiquant les prix homologués au même titre que les stations- services. Dans tous les cas, l'impôt ne peut être inférieur à deux cent cinquante mille (250 000) francs CFA. 4) Le montant de l'impôt est majoré d'une redevance de quatre mille (4 000) francs CFA, au profit de l'office de radiodiffusion et télévision du Bénin, payable lors du versement de l'acompte du 10 mars prévu à l'article 51 ci-dessus.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:19",
+    "section": "Rates, bands and thresholds",
+    "rule": "Building/public works IBA minimum is3% of produits encaissables.",
+    "act_article": "CGI art64(2)(a)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=36",
+    "source_pdf_page": 36,
+    "exact_french_quote": "égal à 3% des produits encaissables",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "du bâtiment et des travaux publics"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article64(2)(a) names the building/public-works3% minimum on produits encaissables. No profit-base substitution is made.",
+    "quote_checks": [
+      {
+        "quote": "égal à 3% des produits encaissables",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "égal à 3% des produits encaissables"
+      },
+      {
+        "quote": "du bâtiment et des travaux publics",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "du bâtiment et des travaux publics"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      29,
+      36,
+      205
+    ],
+    "independent_decisive_CGI_clause": "Article 64 : (Modifié par les lois de finances pour 2024 et 2026) 1) Le montant de l'impôt ne peut être inférieur à un minimum de perception égal à 1,5% des produits encaissables tels que définis à l'article 47 du présent code. 2) Par dérogation aux dispositions du paragraphe 1 du présent article : a) le minimum de perception est égal à 3% des produits encaissables pour les entreprises du secteur du bâtiment et des travaux publics ; b) le minimum de perception est égal à 10% des produits encaissables pour les entreprises à prépondérance immobilière au sens de l'article 101 paragraphe 2 du présent code ; c) le montant et les modalités de perception de l'impôt minimum sont fixés par voie règlementaire en ce qui concerne le commerce de véhicules d'occasion et de certains produits de grande consommation. Pour les véhicules d'occasion, cet impôt minimum dû par l'importateur et exigible par véhicule vendu est libératoire. 3) a) L'impôt ne peut en aucun cas être inférieur à deux cent cinquante mille (250 000) francs CFA. b) Pour les gérants de stations-services, le minimum de perception ne peut être inférieur à celui obtenu par application d'un taux unique de 0,60 francs CFA par litre au volume des produits pétroliers vendus. Ces dispositions sont applicables aux distributeurs non importateurs de produits pétroliers, s'approvisionnant auprès des entreprises importatrices agréées, et pratiquant les prix homologués au même titre que les stations- services. Dans tous les cas, l'impôt ne peut être inférieur à deux cent cinquante mille (250 000) francs CFA. 4) Le montant de l'impôt est majoré d'une redevance de quatre mille (4 000) francs CFA, au profit de l'office de radiodiffusion et télévision du Bénin, payable lors du versement de l'acompte du 10 mars prévu à l'article 51 ci-dessus.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:20",
+    "section": "Rates, bands and thresholds",
+    "rule": "Property-predominant minimum is10% of produits encaissables under article101(2); classification must be resolved first.",
+    "act_article": "CGI art64(2)(b)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=37",
+    "source_pdf_page": 37,
+    "exact_french_quote": "égal à 10% des produits encaissables",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "au sens de l’article 101 paragraphe 2"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article64(2)(b) names10% with the101(2) reservation. Resolving property predominance first is a sound classification hold.",
+    "quote_checks": [
+      {
+        "quote": "égal à 10% des produits encaissables",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "égal à 10% des produits encaissables"
+      },
+      {
+        "quote": "au sens de l’article 101 paragraphe 2",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "au sens de l’article 101 paragraphe 2"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      37
+    ],
+    "independent_decisive_CGI_clause": "Article 64 : (Modifié par les lois de finances pour 2024 et 2026) 1) Le montant de l'impôt ne peut être inférieur à un minimum de perception égal à 1,5% des produits encaissables tels que définis à l'article 47 du présent code. 2) Par dérogation aux dispositions du paragraphe 1 du présent article : a) le minimum de perception est égal à 3% des produits encaissables pour les entreprises du secteur du bâtiment et des travaux publics ; b) le minimum de perception est égal à 10% des produits encaissables pour les entreprises à prépondérance immobilière au sens de l'article 101 paragraphe 2 du présent code ; c) le montant et les modalités de perception de l'impôt minimum sont fixés par voie règlementaire en ce qui concerne le commerce de véhicules d'occasion et de certains produits de grande consommation. Pour les véhicules d'occasion, cet impôt minimum dû par l'importateur et exigible par véhicule vendu est libératoire. 3) a) L'impôt ne peut en aucun cas être inférieur à deux cent cinquante mille (250 000) francs CFA. b) Pour les gérants de stations-services, le minimum de perception ne peut être inférieur à celui obtenu par application d'un taux unique de 0,60 francs CFA par litre au volume des produits pétroliers vendus. Ces dispositions sont applicables aux distributeurs non importateurs de produits pétroliers, s'approvisionnant auprès des entreprises importatrices agréées, et pratiquant les prix homologués au même titre que les stations- services. Dans tous les cas, l'impôt ne peut être inférieur à deux cent cinquante mille (250 000) francs CFA. 4) Le montant de l'impôt est majoré d'une redevance de quatre mille (4 000) francs CFA, au profit de l'office de radiodiffusion et télévision du Bénin, payable lors du versement de l'acompte du 10 mars prévu à l'article 51 ci-dessus.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:21",
+    "section": "Rates, bands and thresholds",
+    "rule": "IBA absolute floor is250000FCFA under article64(3)(a); actual income-period applicability follows the original finance law, not intake metadata.",
+    "act_article": "CGI art64(3)(a); LF2026 art14",
+    "official_url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf#page=4",
+    "source_pdf_page": 4,
+    "exact_french_quote": "deux cent cinquante mille",
+    "read_date": "2026-11-01",
+    "source_file": "lf2026.pdf",
+    "source_sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+    "read_scope": "OCR fiscal arts1–17 and final47–48 read. Original scans PDF1,4,14 visually inspected for income-period clause, art14/IBA250000 floor, commencement and signature. Not budget-table review.",
+    "additional_quote_anchors": [
+      "250.000"
+    ],
+    "additional_sources": [
+      {
+        "act_article": "CGI64(3)(a)",
+        "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=37",
+        "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+        "exact_french_quotes": [
+          "L’impôt ne peut en aucun cas être inférieur",
+          "deux cent cinquante mille"
+        ]
+      }
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Original LF14 scan changes article64(3)(a) from500000 to250000; CGI64(3)(a) has the same250000. Actual income-period application remains tied to LF1/48, not intake metadata.",
+    "quote_checks": [
+      {
+        "quote": "deux cent cinquante mille",
+        "method": "cached OCR plus scan reading",
+        "visual_exception": true,
+        "capitalization_repair_required": false,
+        "actual_quote": "deux cent cinquante mille"
+      },
+      {
+        "quote": "250.000",
+        "method": "cached OCR plus scan reading",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "250.000"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      4
+    ],
+    "independent_decisive_CGI_clause": null,
+    "additional_sources_checked": [
+      {
+        "act_article": "CGI64(3)(a)",
+        "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=37",
+        "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+        "exact_french_quotes": [
+          "L’impôt ne peut en aucun cas être inférieur",
+          "deux cent cinquante mille"
+        ]
+      }
+    ],
+    "independent_decisive_signed_scan_clauses": {
+      "LF14": "Au paragraphe 3 a) de l’article 64 du code général des impôts, le groupe de mots « cinq cent mille (500 000) » est remplacé par « deux cent cinquante mille (250.000) »."
+    }
+  },
+  {
+    "id": "bj-business-income-tax:22",
+    "section": "Rates, bands and thresholds",
+    "rule": "Used-vehicle/certain consumer-product minima need regulation. Used-vehicle importer minimum is due per vehicle sold and liberatory.",
+    "act_article": "CGI art64(2)(c)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=37",
+    "source_pdf_page": 37,
+    "exact_french_quote": "fixés par voie règlementaire",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "exigible par véhicule vendu est libératoire"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article64(2)(c) delegates the amounts and collection method for used vehicles/specified consumer products; only the used-vehicle importer per-sale minimum is expressly liberatory. Missing regulation is not guessed.",
+    "quote_checks": [
+      {
+        "quote": "fixés par voie règlementaire",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "fixés par voie règlementaire"
+      },
+      {
+        "quote": "exigible par véhicule vendu est libératoire",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "exigible par véhicule vendu est libératoire"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      29,
+      37
+    ],
+    "independent_decisive_CGI_clause": "Article 64 : (Modifié par les lois de finances pour 2024 et 2026) 1) Le montant de l'impôt ne peut être inférieur à un minimum de perception égal à 1,5% des produits encaissables tels que définis à l'article 47 du présent code. 2) Par dérogation aux dispositions du paragraphe 1 du présent article : a) le minimum de perception est égal à 3% des produits encaissables pour les entreprises du secteur du bâtiment et des travaux publics ; b) le minimum de perception est égal à 10% des produits encaissables pour les entreprises à prépondérance immobilière au sens de l'article 101 paragraphe 2 du présent code ; c) le montant et les modalités de perception de l'impôt minimum sont fixés par voie règlementaire en ce qui concerne le commerce de véhicules d'occasion et de certains produits de grande consommation. Pour les véhicules d'occasion, cet impôt minimum dû par l'importateur et exigible par véhicule vendu est libératoire. 3) a) L'impôt ne peut en aucun cas être inférieur à deux cent cinquante mille (250 000) francs CFA. b) Pour les gérants de stations-services, le minimum de perception ne peut être inférieur à celui obtenu par application d'un taux unique de 0,60 francs CFA par litre au volume des produits pétroliers vendus. Ces dispositions sont applicables aux distributeurs non importateurs de produits pétroliers, s'approvisionnant auprès des entreprises importatrices agréées, et pratiquant les prix homologués au même titre que les stations- services. Dans tous les cas, l'impôt ne peut être inférieur à deux cent cinquante mille (250 000) francs CFA. 4) Le montant de l'impôt est majoré d'une redevance de quatre mille (4 000) francs CFA, au profit de l'office de radiodiffusion et télévision du Bénin, payable lors du versement de l'acompte du 10 mars prévu à l'article 51 ci-dessus.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:23",
+    "section": "Rates, bands and thresholds",
+    "rule": "Service-station minimum is at least0.60FCFA/litre plus the absolute floor test; nonimporting distributors must source from approved importers and use homologated prices like stations.",
+    "act_article": "CGI art64(3)(b)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=37",
+    "source_pdf_page": 37,
+    "exact_french_quote": "0,60 francs CFA par litre",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "distributeurs non importateurs",
+      "entreprises importatrices agréées",
+      "pratiquant les prix homologués"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article64(3)(b) gives0.60FCFA/litre plus its250000 floor and extends this to the stated non-importers sourcing from approved importers with homologated prices. No blanket fuel-distributor concession is granted.",
+    "quote_checks": [
+      {
+        "quote": "0,60 francs CFA par litre",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "0,60 francs CFA par litre"
+      },
+      {
+        "quote": "distributeurs non importateurs",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "distributeurs non importateurs"
+      },
+      {
+        "quote": "entreprises importatrices agréées",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "entreprises importatrices agréées"
+      },
+      {
+        "quote": "pratiquant les prix homologués",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "pratiquant les prix homologués"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      29,
+      37,
+      65
+    ],
+    "independent_decisive_CGI_clause": "Article 64 : (Modifié par les lois de finances pour 2024 et 2026) 1) Le montant de l'impôt ne peut être inférieur à un minimum de perception égal à 1,5% des produits encaissables tels que définis à l'article 47 du présent code. 2) Par dérogation aux dispositions du paragraphe 1 du présent article : a) le minimum de perception est égal à 3% des produits encaissables pour les entreprises du secteur du bâtiment et des travaux publics ; b) le minimum de perception est égal à 10% des produits encaissables pour les entreprises à prépondérance immobilière au sens de l'article 101 paragraphe 2 du présent code ; c) le montant et les modalités de perception de l'impôt minimum sont fixés par voie règlementaire en ce qui concerne le commerce de véhicules d'occasion et de certains produits de grande consommation. Pour les véhicules d'occasion, cet impôt minimum dû par l'importateur et exigible par véhicule vendu est libératoire. 3) a) L'impôt ne peut en aucun cas être inférieur à deux cent cinquante mille (250 000) francs CFA. b) Pour les gérants de stations-services, le minimum de perception ne peut être inférieur à celui obtenu par application d'un taux unique de 0,60 francs CFA par litre au volume des produits pétroliers vendus. Ces dispositions sont applicables aux distributeurs non importateurs de produits pétroliers, s'approvisionnant auprès des entreprises importatrices agréées, et pratiquant les prix homologués au même titre que les stations- services. Dans tous les cas, l'impôt ne peut être inférieur à deux cent cinquante mille (250 000) francs CFA. 4) Le montant de l'impôt est majoré d'une redevance de quatre mille (4 000) francs CFA, au profit de l'office de radiodiffusion et télévision du Bénin, payable lors du versement de l'acompte du 10 mars prévu à l'article 51 ci-dessus.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:24",
+    "section": "Rates, bands and thresholds",
+    "rule": "IBA has a separate4000FCFA ORTB levy payable with the March instalment referenced by article64(4).",
+    "act_article": "CGI art64(4)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=37",
+    "source_pdf_page": 37,
+    "exact_french_quote": "quatre mille (4 000) francs CFA",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "au profit de l’office de radiodiffusion et télévision du Bénin",
+      "payable lors du versement de l’acompte du 10 mars"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article64(4) adds4000FCFA ORTB and explicitly refers to the10March instalment in51. Keeping it separate prevents turning it into a percentage minimum.",
+    "quote_checks": [
+      {
+        "quote": "quatre mille (4 000) francs CFA",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "quatre mille (4 000) francs CFA"
+      },
+      {
+        "quote": "au profit de l’office de radiodiffusion et télévision du Bénin",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "au profit de l’office de radiodiffusion et télévision du Bénin"
+      },
+      {
+        "quote": "payable lors du versement de l’acompte du 10 mars",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "payable lors du versement de l’acompte du 10 mars"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      29,
+      37,
+      55,
+      63
+    ],
+    "independent_decisive_CGI_clause": "Article 64 : (Modifié par les lois de finances pour 2024 et 2026) 1) Le montant de l'impôt ne peut être inférieur à un minimum de perception égal à 1,5% des produits encaissables tels que définis à l'article 47 du présent code. 2) Par dérogation aux dispositions du paragraphe 1 du présent article : a) le minimum de perception est égal à 3% des produits encaissables pour les entreprises du secteur du bâtiment et des travaux publics ; b) le minimum de perception est égal à 10% des produits encaissables pour les entreprises à prépondérance immobilière au sens de l'article 101 paragraphe 2 du présent code ; c) le montant et les modalités de perception de l'impôt minimum sont fixés par voie règlementaire en ce qui concerne le commerce de véhicules d'occasion et de certains produits de grande consommation. Pour les véhicules d'occasion, cet impôt minimum dû par l'importateur et exigible par véhicule vendu est libératoire. 3) a) L'impôt ne peut en aucun cas être inférieur à deux cent cinquante mille (250 000) francs CFA. b) Pour les gérants de stations-services, le minimum de perception ne peut être inférieur à celui obtenu par application d'un taux unique de 0,60 francs CFA par litre au volume des produits pétroliers vendus. Ces dispositions sont applicables aux distributeurs non importateurs de produits pétroliers, s'approvisionnant auprès des entreprises importatrices agréées, et pratiquant les prix homologués au même titre que les stations- services. Dans tous les cas, l'impôt ne peut être inférieur à deux cent cinquante mille (250 000) francs CFA. 4) Le montant de l'impôt est majoré d'une redevance de quatre mille (4 000) francs CFA, au profit de l'office de radiodiffusion et télévision du Bénin, payable lors du versement de l'acompte du 10 mars prévu à l'article 51 ci-dessus.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:25",
+    "section": "Rates, bands and thresholds",
+    "rule": "IBA loss carry-forward is limited to three years, retaining imported proof/unused-loss/enterprise-identity and first-profitable-result controls. Company’s five-year window is not used.",
+    "act_article": "CGI arts60(1)–(2)(b),43",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=35",
+    "source_pdf_page": 35,
+    "exact_french_quote": "le report déficitaire est limité à trois (3) ans",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_sources": [
+      {
+        "act_article": "CGI43(3),(5)",
+        "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=27",
+        "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+        "exact_french_quotes": [
+          "doit être justifié",
+          "ne doit pas avoir déjà été imputé",
+          "suppose une identité d’entreprise",
+          "sur le premier résultat bénéficiaire suivant"
+        ]
+      }
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article60(1)-(2)(b) imports the common computation subject to the three-year override. Article43(3),(5) retains proof, unused losses, enterprise identity and first profitable result. The five-year company period is not used.",
+    "quote_checks": [
+      {
+        "quote": "le report déficitaire est limité à trois (3) ans",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "le report déficitaire est limité à trois (3) ans"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      35
+    ],
+    "independent_decisive_CGI_clause": "Article 60 : 1) Les bénéfices passibles de l'impôt sur les bénéfices d'affaires sont déterminés d'après les règles fixées en matière d'impôt sur les sociétés. 2) Toutefois : a) les amortissements ne peuvent être pratiqués que selon le mode linéaire ; b) le report déficitaire est limité à trois (3) ans. 3) Sont déductibles : - le salaire du conjoint de l'exploitant participant effectivement à l'exploitation à̀ la condition que ce salaire ne soit pas anormalement élevé́ et ait donné lieu au versement des cotisations relevant du régime de sécurité́ sociale et subisse les retenues fiscales à la source ; - les rémunérations allouées aux autres membres de la famille de l'exploitant, dans les conditions normales dès lors qu'elles sont réellement versées et correspondent à un travail effectif ; - les versements volontaires faits par l'exploitant pour la constitution de retraite et les primes d'assurances-vie, payées par l'exploitant dans la limite de 5% du montant du bénéfice avant déduction du montant de ces versements ; 4) Pour les dépenses mixtes qui ne sont pas ventilées sur la base de justifications suffisantes attestant la détermination de la part rattachée à l'activité, la part professionnelle déductible est évaluée à 30%. 5) Lorsque l'exploitant inscrit à l'actif de son entreprise un immeuble, la prise en compte des produits et des charges y afférents pour la détermination du bénéfice imposable dépend de son utilité à l'exercice de l'activité professionnelle. En cas d'absence d'utilité ou en présence d'une utilité partielle, le bénéfice est diminué du montant des produits qui ne proviennent pas de l'activité exercée à titre professionnel, à l'exclusion de ceux pris en compte pour la détermination de la plus-value ou moins-value de cession d'un élément d'actif immobilisé et augmenté du montant des charges admises en déduction totalement ou proportionnellement à l'usage à titre professionnel. Le produit ainsi distrait du bénéfice des affaires est soumis à l'impôt sur le revenu foncier. Lorsque l'immeuble est improductif de revenu, les charges y afférentes ne sont pas déductibles.",
+    "additional_sources_checked": [
+      {
+        "act_article": "CGI43(3),(5)",
+        "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=27",
+        "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+        "exact_french_quotes": [
+          "doit être justifié",
+          "ne doit pas avoir déjà été imputé",
+          "suppose une identité d’entreprise",
+          "sur le premier résultat bénéficiaire suivant"
+        ]
+      }
+    ],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:26",
+    "section": "Rates, bands and thresholds",
+    "rule": "Operator’s qualifying voluntary retirement payments and life-insurance premiums are deductible only up to5% of profit before those payments.",
+    "act_article": "CGI art60(3)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=35",
+    "source_pdf_page": 35,
+    "exact_french_quote": "dans la limite de 5%",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "pour la constitution de retraite et",
+      "les primes d’assurances-vie",
+      "avant déduction du montant de ces versements"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article60(3) allows voluntary retirement and life-insurance payments within5% of profit before those payments. The denominator is stated correctly.",
+    "quote_checks": [
+      {
+        "quote": "dans la limite de 5%",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "dans la limite de 5%"
+      },
+      {
+        "quote": "pour la constitution de retraite et",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "pour la constitution de retraite et"
+      },
+      {
+        "quote": "les primes d’assurances-vie",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "les primes d’assurances-vie"
+      },
+      {
+        "quote": "avant déduction du montant de ces versements",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "avant déduction du montant de ces versements"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      21,
+      35
+    ],
+    "independent_decisive_CGI_clause": "Article 60 : 1) Les bénéfices passibles de l'impôt sur les bénéfices d'affaires sont déterminés d'après les règles fixées en matière d'impôt sur les sociétés. 2) Toutefois : a) les amortissements ne peuvent être pratiqués que selon le mode linéaire ; b) le report déficitaire est limité à trois (3) ans. 3) Sont déductibles : - le salaire du conjoint de l'exploitant participant effectivement à l'exploitation à̀ la condition que ce salaire ne soit pas anormalement élevé́ et ait donné lieu au versement des cotisations relevant du régime de sécurité́ sociale et subisse les retenues fiscales à la source ; - les rémunérations allouées aux autres membres de la famille de l'exploitant, dans les conditions normales dès lors qu'elles sont réellement versées et correspondent à un travail effectif ; - les versements volontaires faits par l'exploitant pour la constitution de retraite et les primes d'assurances-vie, payées par l'exploitant dans la limite de 5% du montant du bénéfice avant déduction du montant de ces versements ; 4) Pour les dépenses mixtes qui ne sont pas ventilées sur la base de justifications suffisantes attestant la détermination de la part rattachée à l'activité, la part professionnelle déductible est évaluée à 30%. 5) Lorsque l'exploitant inscrit à l'actif de son entreprise un immeuble, la prise en compte des produits et des charges y afférents pour la détermination du bénéfice imposable dépend de son utilité à l'exercice de l'activité professionnelle. En cas d'absence d'utilité ou en présence d'une utilité partielle, le bénéfice est diminué du montant des produits qui ne proviennent pas de l'activité exercée à titre professionnel, à l'exclusion de ceux pris en compte pour la détermination de la plus-value ou moins-value de cession d'un élément d'actif immobilisé et augmenté du montant des charges admises en déduction totalement ou proportionnellement à l'usage à titre professionnel. Le produit ainsi distrait du bénéfice des affaires est soumis à l'impôt sur le revenu foncier. Lorsque l'immeuble est improductif de revenu, les charges y afférentes ne sont pas déductibles.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:27",
+    "section": "Rates, bands and thresholds",
+    "rule": "For mixed expenses without sufficient evidence of business allocation, deductible professional share is30%, subject also to general article20 gates.",
+    "act_article": "CGI arts60(4),20",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=35",
+    "source_pdf_page": 35,
+    "exact_french_quote": "la part professionnelle déductible est évaluée à 30%",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "qui ne sont pas ventilées sur la base de justifications suffisantes"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article60(4) supplies30% only when sufficient evidence does not establish the professional allocation. Article20 remains the general deductibility gateway; this is not permission to deduct personal expenditure.",
+    "quote_checks": [
+      {
+        "quote": "la part professionnelle déductible est évaluée à 30%",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "la part professionnelle déductible est évaluée à 30%"
+      },
+      {
+        "quote": "qui ne sont pas ventilées sur la base de justifications suffisantes",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "qui ne sont pas ventilées sur la base de justifications suffisantes"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      35
+    ],
+    "independent_decisive_CGI_clause": "Article 60 : 1) Les bénéfices passibles de l'impôt sur les bénéfices d'affaires sont déterminés d'après les règles fixées en matière d'impôt sur les sociétés. 2) Toutefois : a) les amortissements ne peuvent être pratiqués que selon le mode linéaire ; b) le report déficitaire est limité à trois (3) ans. 3) Sont déductibles : - le salaire du conjoint de l'exploitant participant effectivement à l'exploitation à̀ la condition que ce salaire ne soit pas anormalement élevé́ et ait donné lieu au versement des cotisations relevant du régime de sécurité́ sociale et subisse les retenues fiscales à la source ; - les rémunérations allouées aux autres membres de la famille de l'exploitant, dans les conditions normales dès lors qu'elles sont réellement versées et correspondent à un travail effectif ; - les versements volontaires faits par l'exploitant pour la constitution de retraite et les primes d'assurances-vie, payées par l'exploitant dans la limite de 5% du montant du bénéfice avant déduction du montant de ces versements ; 4) Pour les dépenses mixtes qui ne sont pas ventilées sur la base de justifications suffisantes attestant la détermination de la part rattachée à l'activité, la part professionnelle déductible est évaluée à 30%. 5) Lorsque l'exploitant inscrit à l'actif de son entreprise un immeuble, la prise en compte des produits et des charges y afférents pour la détermination du bénéfice imposable dépend de son utilité à l'exercice de l'activité professionnelle. En cas d'absence d'utilité ou en présence d'une utilité partielle, le bénéfice est diminué du montant des produits qui ne proviennent pas de l'activité exercée à titre professionnel, à l'exclusion de ceux pris en compte pour la détermination de la plus-value ou moins-value de cession d'un élément d'actif immobilisé et augmenté du montant des charges admises en déduction totalement ou proportionnellement à l'usage à titre professionnel. Le produit ainsi distrait du bénéfice des affaires est soumis à l'impôt sur le revenu foncier. Lorsque l'immeuble est improductif de revenu, les charges y afférentes ne sont pas déductibles.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:28",
+    "section": "Rates, bands and thresholds",
+    "rule": "Tax is halved for home pieceworkers exclusively working to order for industrialists/traders using supplied materials, with help limited to spouse/parents/children/grandchildren/one companion/one under18apprentice with regular apprenticeship contract; artisan limb mainly sells own work and uses same limited help. Minimum interaction unresolved.",
+    "act_article": "CGI art65(1)–(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=37",
+    "source_pdf_page": 37,
+    "exact_french_quote": "Le montant de l’impôt est réduit de moitié",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "exclusivement à façon",
+      "matières premières fournies par ces derniers",
+      "d’un compagnon et d’un apprenti de moins de dix-huit",
+      "un contrat régulier",
+      "principalement à la vente du produit de leur propre travail"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article65 is a half-tax reduction with exclusive home piecework, client-provided materials and the enumerated family/one companion/one under18 regular apprentice limit. The artisan limb sells mainly own work and imports that help restriction. Minimum interaction is expressly held.",
+    "quote_checks": [
+      {
+        "quote": "Le montant de l’impôt est réduit de moitié",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "Le montant de l’impôt est réduit de moitié"
+      },
+      {
+        "quote": "exclusivement à façon",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "exclusivement à façon"
+      },
+      {
+        "quote": "matières premières fournies par ces derniers",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "matières premières fournies par ces derniers"
+      },
+      {
+        "quote": "d’un compagnon et d’un apprenti de moins de dix-huit",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "d’un compagnon et d’un apprenti de moins de dix-huit"
+      },
+      {
+        "quote": "un contrat régulier",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "un contrat régulier"
+      },
+      {
+        "quote": "principalement à la vente du produit de leur propre travail",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "principalement à la vente du produit de leur propre travail"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      37
+    ],
+    "independent_decisive_CGI_clause": "Article 65 : Le montant de l'impôt est réduit de moitié pour : 1) les personnes travaillant chez elles, soit à la main soit à l'aide de la force motrice, que les instruments de travail soient ou non leur propriété, lorsqu'elles opèrent exclusivement à façon, pour le compte d'industriels ou de commerçants, avec des matières premières fournies par ces derniers, et lorsqu'elles n'utilisent pas d'autre concours que celui de leur conjoint, de leur père et mère, de leurs enfants et petits-enfants, d'un compagnon et d'un apprenti de moins de dix-huit (18) ans, avec lequel un contrat régulier d'apprentissage a été passé ; 2) les artisans travaillant chez eux ou au dehors qui se livrent principalement à la vente du produit de leur propre travail et qui n'utilisent pas d'autre concours que celui des personnes énumérées au paragraphe précédent. SECTION 4 DECLARATION ET PAIEMENT",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:29",
+    "section": "Rates, bands and thresholds",
+    "rule": "Exclusive art dealing, new-enterprise, CGA and other incentive cases must leave the ordinary computation until their own conditions and reduction/minimum interactions are resolved. No incentive entitlement or amount is granted here.",
+    "act_article": "CGI arts145–149",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=71",
+    "source_pdf_page": 71,
+    "exact_french_quote": "ayant exclusivement une activité de négoces d’œuvres d’art",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "Les réductions d’impôt ne s’appliquent pas"
+    ],
+    "additional_sources": [
+      {
+        "act_article": "CGI148(5)",
+        "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=72",
+        "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+        "exact_french_quotes": [
+          "ne peuvent être cumulés",
+          "avec d’autres régimes privilégiés ou dérogatoires"
+        ]
+      }
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Articles145-149 confirm separate art-dealing/new-enterprise/CGA/employment-credit regimes. The Guide grants no unworked entitlement or numerical incentive amount. Ordinary examples assume these do not apply.",
+    "quote_checks": [
+      {
+        "quote": "ayant exclusivement une activité de négoces d’œuvres d’art",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "ayant exclusivement une activité de négoces d’œuvres d’art"
+      },
+      {
+        "quote": "Les réductions d’impôt ne s’appliquent pas",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "Les réductions d’impôt ne s’appliquent pas"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      71
+    ],
+    "independent_decisive_CGI_clause": "Article 145 : (Modifié par la loi de finances pour 2025) 1) Les taux prévus aux points 1 des articles 46, 63 et 183 sont réduits respectivement à 20 % du bénéfice imposable et 3 % des recettes pour les personnes ayant exclusivement une activité de négoces d'œuvres d'art. Les taux prévus aux paragraphes 1 des articles 47 et 64 sont réduits à 0,5 % des produits encaissables pour les personnes ayant exclusivement une activité de négoces d'œuvres d'art. 2) Nonobstant les dispositions de l'article 1 du présent code, les projets d'investissement dans les secteurs jugés prioritaires peuvent bénéficier d'un régime fiscal dérogatoire dont les modalités sont définies en Conseil des Ministres. SOUS-SECTION 2 INCITATION A LA CREATION D'ENTREPRISE NOUVELLE",
+    "additional_sources_checked": [
+      {
+        "act_article": "CGI148(5)",
+        "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=72",
+        "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+        "exact_french_quotes": [
+          "ne peuvent être cumulés",
+          "avec d’autres régimes privilégiés ou dérogatoires"
+        ]
+      }
+    ],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:30",
+    "section": "The base",
+    "rule": "IBA imports IS profit-determination rules subject to IBA overrides; common net-profit and expense-support method and accounting-period exceptions remain linked to company owner.",
+    "act_article": "CGI art60(1),8–9,20",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=35",
+    "source_pdf_page": 35,
+    "exact_french_quote": "déterminés d’après les règles fixées en matière d’impôt sur les sociétés",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article60(1) imports IS profit determination subject to overrides. Articles8-9 and20 support the linked period/net-profit/support rules. The link is expressly narrowed to common methods, not rates or losses.",
+    "quote_checks": [
+      {
+        "quote": "déterminés d’après les règles fixées en matière d’impôt sur les sociétés",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "déterminés d’après les règles fixées en matière d’impôt sur les sociétés"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      35
+    ],
+    "independent_decisive_CGI_clause": "Article 60 : 1) Les bénéfices passibles de l'impôt sur les bénéfices d'affaires sont déterminés d'après les règles fixées en matière d'impôt sur les sociétés. 2) Toutefois : a) les amortissements ne peuvent être pratiqués que selon le mode linéaire ; b) le report déficitaire est limité à trois (3) ans. 3) Sont déductibles : - le salaire du conjoint de l'exploitant participant effectivement à l'exploitation à̀ la condition que ce salaire ne soit pas anormalement élevé́ et ait donné lieu au versement des cotisations relevant du régime de sécurité́ sociale et subisse les retenues fiscales à la source ; - les rémunérations allouées aux autres membres de la famille de l'exploitant, dans les conditions normales dès lors qu'elles sont réellement versées et correspondent à un travail effectif ; - les versements volontaires faits par l'exploitant pour la constitution de retraite et les primes d'assurances-vie, payées par l'exploitant dans la limite de 5% du montant du bénéfice avant déduction du montant de ces versements ; 4) Pour les dépenses mixtes qui ne sont pas ventilées sur la base de justifications suffisantes attestant la détermination de la part rattachée à l'activité, la part professionnelle déductible est évaluée à 30%. 5) Lorsque l'exploitant inscrit à l'actif de son entreprise un immeuble, la prise en compte des produits et des charges y afférents pour la détermination du bénéfice imposable dépend de son utilité à l'exercice de l'activité professionnelle. En cas d'absence d'utilité ou en présence d'une utilité partielle, le bénéfice est diminué du montant des produits qui ne proviennent pas de l'activité exercée à titre professionnel, à l'exclusion de ceux pris en compte pour la détermination de la plus-value ou moins-value de cession d'un élément d'actif immobilisé et augmenté du montant des charges admises en déduction totalement ou proportionnellement à l'usage à titre professionnel. Le produit ainsi distrait du bénéfice des affaires est soumis à l'impôt sur le revenu foncier. Lorsque l'immeuble est improductif de revenu, les charges y afférentes ne sont pas déductibles.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:31",
+    "section": "The base",
+    "rule": "Original finance-law income-tax measures apply to the exercise closed31December2025 unless otherwise specified; intake2026 does not by itself establish the income year.",
+    "act_article": "LF2026 art1",
+    "official_url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf#page=1",
+    "source_pdf_page": 1,
+    "exact_french_quote": "s’appliquent aux revenus de l’exercice clos au 31 décembre 2025",
+    "read_date": "2026-11-01",
+    "source_file": "lf2026.pdf",
+    "source_sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+    "read_scope": "OCR fiscal arts1–17 and final47–48 read. Original scans PDF1,4,14 visually inspected for income-period clause, art14/IBA250000 floor, commencement and signature. Not budget-table review.",
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Original LF1 scan says income-tax measures apply to the exercise closed31December2025 absent contrary specification. An intake year alone cannot choose the income period.",
+    "quote_checks": [
+      {
+        "quote": "s’appliquent aux revenus de l’exercice clos au 31 décembre 2025",
+        "method": "cached OCR plus scan reading",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "s’appliquent aux revenus de l’exercice clos au 31 décembre 2025"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      1
+    ],
+    "independent_decisive_CGI_clause": null,
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {
+      "LF1": "En ce qui concerne les impôts sur le revenu, sauf précision contraire contenue dans le texte des mesures fiscales énoncées, les dispositions de la présente loi s’appliquent aux revenus de l’exercice clos au 31 décembre 2025."
+    }
+  },
+  {
+    "id": "bj-business-income-tax:32",
+    "section": "The base",
+    "rule": "Original law final clause states commencement1January2026 and repeals prior contrary provisions.",
+    "act_article": "LF2026 arts47–48",
+    "official_url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf#page=14",
+    "source_pdf_page": 14,
+    "exact_french_quote": "entre en vigueur à compter du 1er janvier 2026",
+    "read_date": "2026-11-01",
+    "source_file": "lf2026.pdf",
+    "source_sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+    "read_scope": "OCR fiscal arts1–17 and final47–48 read. Original scans PDF1,4,14 visually inspected for income-period clause, art14/IBA250000 floor, commencement and signature. Not budget-table review.",
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Original LF47-48 scan repeals contrary prior provisions and expressly commences1January2026. This express wording is not transferred to the June law.",
+    "quote_checks": [
+      {
+        "quote": "entre en vigueur à compter du 1er janvier 2026",
+        "method": "cached OCR plus scan reading",
+        "visual_exception": true,
+        "capitalization_repair_required": false,
+        "actual_quote": "entre en vigueur à compter du 1er janvier 2026"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      14
+    ],
+    "independent_decisive_CGI_clause": null,
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {
+      "LF47": "Sont abrogées, toutes dispositions antérieures contraires à celles de la présente loi.",
+      "LF48": "La présente loi qui entre en vigueur à compter du 1er janvier 2026, sera exécutée comme Loi de l’Etat."
+    }
+  },
+  {
+    "id": "bj-business-income-tax:33",
+    "section": "The base",
+    "rule": "June LFR art1 also refers income-tax measures to the exercise closed31December2025 unless specified; arts48–49 repeal contrary law/execute as state law without proving blanket January operation for the TPS overlay.",
+    "act_article": "LFR2026 arts1,48–49",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=1",
+    "source_pdf_page": 1,
+    "exact_french_quote": "s’appliquent aux revenus de l’exercice clos au 31 décembre 2025",
+    "read_date": "2026-11-01",
+    "source_file": "lfr2026.pdf",
+    "source_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+    "read_scope": "OCR fiscal arts1–19 and final48–49 read. Original scans PDF1,3,17 visually inspected for income period, art8/CGI180 exclusion, art9/cessation and final signature. Exact first operative TPS-amendment period not resolved.",
+    "additional_sources": [
+      {
+        "act_article": "LFR48–49",
+        "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=17",
+        "source_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+        "exact_french_quotes": [
+          "Sont abrogées, toutes dispositions antérieures contraires",
+          "sera exécutée comme Loi"
+        ]
+      }
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "June LFR1 repeats the prior-exercise income-tax clause. Signed final48-49 repeal/execute without an express January date. The Guide does not certify the TPS overlay first operative period.",
+    "quote_checks": [
+      {
+        "quote": "s’appliquent aux revenus de l’exercice clos au 31 décembre 2025",
+        "method": "cached OCR plus scan reading",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "s’appliquent aux revenus de l’exercice clos au 31 décembre 2025"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      1
+    ],
+    "independent_decisive_CGI_clause": null,
+    "additional_sources_checked": [
+      {
+        "act_article": "LFR48–49",
+        "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=17",
+        "source_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+        "exact_french_quotes": [
+          "Sont abrogées, toutes dispositions antérieures contraires",
+          "sera exécutée comme Loi"
+        ]
+      }
+    ],
+    "independent_decisive_signed_scan_clauses": {
+      "LFR1": "En ce qui concerne les impôts sur le revenu, sauf précision contraire contenue dans le texte des mesures fiscales énoncées, les dispositions de la présente loi s’appliquent aux revenus de l’exercice clos au 31 décembre 2025.",
+      "LFR48": "Sont abrogées, toutes dispositions antérieures contraires à celles de la présente loi.",
+      "LFR49": "La présente loi de finances rectificative sera exécutée comme Loi de l’Etat."
+    }
+  },
+  {
+    "id": "bj-business-income-tax:34",
+    "section": "The base",
+    "rule": "Professional habitual business profits use accrual accounting compliant with accounting law.",
+    "act_article": "CGI art67(1)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=37",
+    "source_pdf_page": 37,
+    "exact_french_quote": "une comptabilité d’engagement conforme au droit comptable",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article67(1) requires accrual compliant with accounting law for professional/habitual business profits. No automatic cash basis follows from being an individual.",
+    "quote_checks": [
+      {
+        "quote": "une comptabilité d’engagement conforme au droit comptable",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "une comptabilité d’engagement conforme au droit comptable"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      37
+    ],
+    "independent_decisive_CGI_clause": "Article 67 : 1) Les bénéfices d'affaires perçus à titre professionnel et habituel doivent être constatés par une comptabilité d'engagement conforme au droit comptable en vigueur. 2) Toutefois, les contribuables exerçant une profession libérale, une activité non commerciale ou gérant des revenus de propriété intellectuelle ou industrielle qui désirent déterminer leur revenu imposable suivant une comptabilité de caisse doivent exercer une option avant le 30 novembre de l'année précédant celle au titre de laquelle elle est exercée. Elle prend effet à compter du 1er janvier de l'année suivant celle de la demande et est reconductible tacitement, sauf dénonciation avant le 30 novembre de la deuxième année. 3) Lorsque le contribuable réalise simultanément les bénéfices industriels et commerciaux et les bénéfices tirés des professions non commerciales, les résultats de ces opérations, sont déterminés suivant les règles prévues au paragraphe 1 du présent article. CHAPITRE 3 IMPOT SUR LE REVENU DES CAPITAUX MOBILIERS (IRCM)",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:35",
+    "section": "The base",
+    "rule": "Only liberal-profession, noncommercial or intellectual/industrial-property-income operators in art67(2) can elect cash basis, before30Novemberprecedingyear, effective following1January; require election proof.",
+    "act_article": "CGI art67(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=38",
+    "source_pdf_page": 38,
+    "exact_french_quote": "avant le 30 novembre de l’année précédant",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "à compter du 1er janvier de l’année suivant",
+      "une profession libérale, une activité non",
+      "comptabilité de caisse"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article67(2) limits cash election to liberal/non-commercial/intellectual-or-industrial-property income activities and requires election before30November of the preceding year, effective following1January. Both eligibility and timely proof are retained.",
+    "quote_checks": [
+      {
+        "quote": "avant le 30 novembre de l’année précédant",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "avant le 30 novembre de l’année précédant"
+      },
+      {
+        "quote": "à compter du 1er janvier de l’année suivant",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "à compter du 1er janvier de l’année suivant"
+      },
+      {
+        "quote": "une profession libérale, une activité non",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "une profession libérale, une activité non"
+      },
+      {
+        "quote": "comptabilité de caisse",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "comptabilité de caisse"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      38
+    ],
+    "independent_decisive_CGI_clause": "Article 67 : 1) Les bénéfices d'affaires perçus à titre professionnel et habituel doivent être constatés par une comptabilité d'engagement conforme au droit comptable en vigueur. 2) Toutefois, les contribuables exerçant une profession libérale, une activité non commerciale ou gérant des revenus de propriété intellectuelle ou industrielle qui désirent déterminer leur revenu imposable suivant une comptabilité de caisse doivent exercer une option avant le 30 novembre de l'année précédant celle au titre de laquelle elle est exercée. Elle prend effet à compter du 1er janvier de l'année suivant celle de la demande et est reconductible tacitement, sauf dénonciation avant le 30 novembre de la deuxième année. 3) Lorsque le contribuable réalise simultanément les bénéfices industriels et commerciaux et les bénéfices tirés des professions non commerciales, les résultats de ces opérations, sont déterminés suivant les règles prévues au paragraphe 1 du présent article. CHAPITRE 3 IMPOT SUR LE REVENU DES CAPITAUX MOBILIERS (IRCM)",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:36",
+    "section": "The base",
+    "rule": "Cash election renews tacitly unless denounced before30Novemberofthesecondyear. Exact later renewal period and change-of-basis adjustments are held.",
+    "act_article": "CGI art67(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=38",
+    "source_pdf_page": 38,
+    "exact_french_quote": "sauf dénonciation avant le 30 novembre de la deuxième",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "reconductible tacitement"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article67(2) literally says tacit renewal unless denounced before30November of the second year. The Guide quotes that boundary and holds interpretation of later renewal periods and transition adjustments.",
+    "quote_checks": [
+      {
+        "quote": "sauf dénonciation avant le 30 novembre de la deuxième",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "sauf dénonciation avant le 30 novembre de la deuxième"
+      },
+      {
+        "quote": "reconductible tacitement",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "reconductible tacitement"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      38
+    ],
+    "independent_decisive_CGI_clause": "Article 67 : 1) Les bénéfices d'affaires perçus à titre professionnel et habituel doivent être constatés par une comptabilité d'engagement conforme au droit comptable en vigueur. 2) Toutefois, les contribuables exerçant une profession libérale, une activité non commerciale ou gérant des revenus de propriété intellectuelle ou industrielle qui désirent déterminer leur revenu imposable suivant une comptabilité de caisse doivent exercer une option avant le 30 novembre de l'année précédant celle au titre de laquelle elle est exercée. Elle prend effet à compter du 1er janvier de l'année suivant celle de la demande et est reconductible tacitement, sauf dénonciation avant le 30 novembre de la deuxième année. 3) Lorsque le contribuable réalise simultanément les bénéfices industriels et commerciaux et les bénéfices tirés des professions non commerciales, les résultats de ces opérations, sont déterminés suivant les règles prévues au paragraphe 1 du présent article. CHAPITRE 3 IMPOT SUR LE REVENU DES CAPITAUX MOBILIERS (IRCM)",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:37",
+    "section": "The base",
+    "rule": "Simultaneous commercial/industrial and noncommercial business profits use the paragraph1 accrual rule, not cash for the combined business.",
+    "act_article": "CGI art67(3)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=38",
+    "source_pdf_page": 38,
+    "exact_french_quote": "Lorsque le contribuable réalise simultanément",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "les résultats de ces",
+      "paragraphe 1"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article67(3) sends simultaneous industrial/commercial and non-commercial profits back to paragraph1 accrual. Cash is not extended to a combined commercial business.",
+    "quote_checks": [
+      {
+        "quote": "Lorsque le contribuable réalise simultanément",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "Lorsque le contribuable réalise simultanément"
+      },
+      {
+        "quote": "les résultats de ces",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "les résultats de ces"
+      },
+      {
+        "quote": "paragraphe 1",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "paragraphe 1"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      15,
+      16,
+      17,
+      21,
+      28,
+      29,
+      36,
+      38,
+      42,
+      46,
+      49,
+      51,
+      52,
+      53,
+      56,
+      69,
+      80,
+      87,
+      102,
+      124,
+      127,
+      144,
+      150,
+      162,
+      196,
+      200,
+      206,
+      212,
+      214,
+      221,
+      222,
+      230,
+      232,
+      237,
+      238,
+      239,
+      241,
+      255
+    ],
+    "independent_decisive_CGI_clause": "Article 67 : 1) Les bénéfices d'affaires perçus à titre professionnel et habituel doivent être constatés par une comptabilité d'engagement conforme au droit comptable en vigueur. 2) Toutefois, les contribuables exerçant une profession libérale, une activité non commerciale ou gérant des revenus de propriété intellectuelle ou industrielle qui désirent déterminer leur revenu imposable suivant une comptabilité de caisse doivent exercer une option avant le 30 novembre de l'année précédant celle au titre de laquelle elle est exercée. Elle prend effet à compter du 1er janvier de l'année suivant celle de la demande et est reconductible tacitement, sauf dénonciation avant le 30 novembre de la deuxième année. 3) Lorsque le contribuable réalise simultanément les bénéfices industriels et commerciaux et les bénéfices tirés des professions non commerciales, les résultats de ces opérations, sont déterminés suivant les règles prévues au paragraphe 1 du présent article. CHAPITRE 3 IMPOT SUR LE REVENU DES CAPITAUX MOBILIERS (IRCM)",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:38",
+    "section": "The base",
+    "rule": "IBA depreciation can only be straight-line.",
+    "act_article": "CGI art60(2)(a)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=35",
+    "source_pdf_page": 35,
+    "exact_french_quote": "les amortissements ne peuvent être pratiqués que selon le mode linéaire",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article60(2)(a) requires straight-line depreciation for IBA. No company accelerated method is imported.",
+    "quote_checks": [
+      {
+        "quote": "les amortissements ne peuvent être pratiqués que selon le mode linéaire",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "les amortissements ne peuvent être pratiqués que selon le mode linéaire"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      35
+    ],
+    "independent_decisive_CGI_clause": "Article 60 : 1) Les bénéfices passibles de l'impôt sur les bénéfices d'affaires sont déterminés d'après les règles fixées en matière d'impôt sur les sociétés. 2) Toutefois : a) les amortissements ne peuvent être pratiqués que selon le mode linéaire ; b) le report déficitaire est limité à trois (3) ans. 3) Sont déductibles : - le salaire du conjoint de l'exploitant participant effectivement à l'exploitation à̀ la condition que ce salaire ne soit pas anormalement élevé́ et ait donné lieu au versement des cotisations relevant du régime de sécurité́ sociale et subisse les retenues fiscales à la source ; - les rémunérations allouées aux autres membres de la famille de l'exploitant, dans les conditions normales dès lors qu'elles sont réellement versées et correspondent à un travail effectif ; - les versements volontaires faits par l'exploitant pour la constitution de retraite et les primes d'assurances-vie, payées par l'exploitant dans la limite de 5% du montant du bénéfice avant déduction du montant de ces versements ; 4) Pour les dépenses mixtes qui ne sont pas ventilées sur la base de justifications suffisantes attestant la détermination de la part rattachée à l'activité, la part professionnelle déductible est évaluée à 30%. 5) Lorsque l'exploitant inscrit à l'actif de son entreprise un immeuble, la prise en compte des produits et des charges y afférents pour la détermination du bénéfice imposable dépend de son utilité à l'exercice de l'activité professionnelle. En cas d'absence d'utilité ou en présence d'une utilité partielle, le bénéfice est diminué du montant des produits qui ne proviennent pas de l'activité exercée à titre professionnel, à l'exclusion de ceux pris en compte pour la détermination de la plus-value ou moins-value de cession d'un élément d'actif immobilisé et augmenté du montant des charges admises en déduction totalement ou proportionnellement à l'usage à titre professionnel. Le produit ainsi distrait du bénéfice des affaires est soumis à l'impôt sur le revenu foncier. Lorsque l'immeuble est improductif de revenu, les charges y afférentes ne sont pas déductibles.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:39",
+    "section": "The base",
+    "rule": "Deduct spouse salary only for actual business participation, non-abnormally-high remuneration, social-security contributions and tax withholding.",
+    "act_article": "CGI art60(3)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=35",
+    "source_pdf_page": 35,
+    "exact_french_quote": "participant effectivement",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "ne soit pas anormalement",
+      "cotisations relevant du régime de sécurité",
+      "subisse les retenues fiscales"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article60(3) spouse remuneration requires actual participation, a non-abnormally-high salary, social-security contributions and source withholding. All four predicates are retained.",
+    "quote_checks": [
+      {
+        "quote": "participant effectivement",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "participant effectivement"
+      },
+      {
+        "quote": "ne soit pas anormalement",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "ne soit pas anormalement"
+      },
+      {
+        "quote": "cotisations relevant du régime de sécurité",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "cotisations relevant du régime de sécurité"
+      },
+      {
+        "quote": "subisse les retenues fiscales",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "subisse les retenues fiscales"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      35
+    ],
+    "independent_decisive_CGI_clause": "Article 60 : 1) Les bénéfices passibles de l'impôt sur les bénéfices d'affaires sont déterminés d'après les règles fixées en matière d'impôt sur les sociétés. 2) Toutefois : a) les amortissements ne peuvent être pratiqués que selon le mode linéaire ; b) le report déficitaire est limité à trois (3) ans. 3) Sont déductibles : - le salaire du conjoint de l'exploitant participant effectivement à l'exploitation à̀ la condition que ce salaire ne soit pas anormalement élevé́ et ait donné lieu au versement des cotisations relevant du régime de sécurité́ sociale et subisse les retenues fiscales à la source ; - les rémunérations allouées aux autres membres de la famille de l'exploitant, dans les conditions normales dès lors qu'elles sont réellement versées et correspondent à un travail effectif ; - les versements volontaires faits par l'exploitant pour la constitution de retraite et les primes d'assurances-vie, payées par l'exploitant dans la limite de 5% du montant du bénéfice avant déduction du montant de ces versements ; 4) Pour les dépenses mixtes qui ne sont pas ventilées sur la base de justifications suffisantes attestant la détermination de la part rattachée à l'activité, la part professionnelle déductible est évaluée à 30%. 5) Lorsque l'exploitant inscrit à l'actif de son entreprise un immeuble, la prise en compte des produits et des charges y afférents pour la détermination du bénéfice imposable dépend de son utilité à l'exercice de l'activité professionnelle. En cas d'absence d'utilité ou en présence d'une utilité partielle, le bénéfice est diminué du montant des produits qui ne proviennent pas de l'activité exercée à titre professionnel, à l'exclusion de ceux pris en compte pour la détermination de la plus-value ou moins-value de cession d'un élément d'actif immobilisé et augmenté du montant des charges admises en déduction totalement ou proportionnellement à l'usage à titre professionnel. Le produit ainsi distrait du bénéfice des affaires est soumis à l'impôt sur le revenu foncier. Lorsque l'immeuble est improductif de revenu, les charges y afférentes ne sont pas déductibles.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:40",
+    "section": "The base",
+    "rule": "Other family pay must be normal, actually paid and for effective work.",
+    "act_article": "CGI art60(3)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=35",
+    "source_pdf_page": 35,
+    "exact_french_quote": "correspondent à un",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "réellement versées",
+      "travail effectif"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article60(3) other-family pay must be in normal conditions, really paid and for effective work. Mere booking is not made sufficient.",
+    "quote_checks": [
+      {
+        "quote": "correspondent à un",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "correspondent à un"
+      },
+      {
+        "quote": "réellement versées",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "réellement versées"
+      },
+      {
+        "quote": "travail effectif",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "travail effectif"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      19,
+      20,
+      35,
+      40
+    ],
+    "independent_decisive_CGI_clause": "Article 60 : 1) Les bénéfices passibles de l'impôt sur les bénéfices d'affaires sont déterminés d'après les règles fixées en matière d'impôt sur les sociétés. 2) Toutefois : a) les amortissements ne peuvent être pratiqués que selon le mode linéaire ; b) le report déficitaire est limité à trois (3) ans. 3) Sont déductibles : - le salaire du conjoint de l'exploitant participant effectivement à l'exploitation à̀ la condition que ce salaire ne soit pas anormalement élevé́ et ait donné lieu au versement des cotisations relevant du régime de sécurité́ sociale et subisse les retenues fiscales à la source ; - les rémunérations allouées aux autres membres de la famille de l'exploitant, dans les conditions normales dès lors qu'elles sont réellement versées et correspondent à un travail effectif ; - les versements volontaires faits par l'exploitant pour la constitution de retraite et les primes d'assurances-vie, payées par l'exploitant dans la limite de 5% du montant du bénéfice avant déduction du montant de ces versements ; 4) Pour les dépenses mixtes qui ne sont pas ventilées sur la base de justifications suffisantes attestant la détermination de la part rattachée à l'activité, la part professionnelle déductible est évaluée à 30%. 5) Lorsque l'exploitant inscrit à l'actif de son entreprise un immeuble, la prise en compte des produits et des charges y afférents pour la détermination du bénéfice imposable dépend de son utilité à l'exercice de l'activité professionnelle. En cas d'absence d'utilité ou en présence d'une utilité partielle, le bénéfice est diminué du montant des produits qui ne proviennent pas de l'activité exercée à titre professionnel, à l'exclusion de ceux pris en compte pour la détermination de la plus-value ou moins-value de cession d'un élément d'actif immobilisé et augmenté du montant des charges admises en déduction totalement ou proportionnellement à l'usage à titre professionnel. Le produit ainsi distrait du bénéfice des affaires est soumis à l'impôt sur le revenu foncier. Lorsque l'immeuble est improductif de revenu, les charges y afférentes ne sont pas déductibles.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:41",
+    "section": "The base",
+    "rule": "Operator’s personal-remuneration drawings, personal expenses and remuneration of own invested capital/business own funds are nondeductible.",
+    "act_article": "CGI art61(1)–(3)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=36",
+    "source_pdf_page": 36,
+    "exact_french_quote": "à titre de rémunération de leur travail personnel",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "l’intérêt personnel de l’exploitant",
+      "rémunération des fonds propres"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article61(1)-(3) disallows own-work drawings, personal expenses and own-capital/funds remuneration. No operator salary deduction is invented.",
+    "quote_checks": [
+      {
+        "quote": "à titre de rémunération de leur travail personnel",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "à titre de rémunération de leur travail personnel"
+      },
+      {
+        "quote": "l’intérêt personnel de l’exploitant",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "l’intérêt personnel de l’exploitant"
+      },
+      {
+        "quote": "rémunération des fonds propres",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "rémunération des fonds propres"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      36
+    ],
+    "independent_decisive_CGI_clause": "Article 61 : Ne sont pas déductibles : 1) les prélèvements que les exploitants individuels effectuent sur leurs recettes professionnelles à titre de rémunération de leur travail personnel ; 2) les dépenses exposées dans l'intérêt personnel de l'exploitant ; 3) les intérêts des capitaux engagés par l'exploitant et les sommes de toute nature versées à titre de rémunération des fonds propres de l'entreprise, qu'ils soient capitalisés ou mis en réserve.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:42",
+    "section": "The base",
+    "rule": "For asset-booked property assess professional usefulness; remove nonprofessional product from IBA to IRF and reconcile related charges under60(5); non-income-producing property charges are nondeductible. Precise partial-use allocation remains a supported separate schedule.",
+    "act_article": "CGI art60(5)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=35",
+    "source_pdf_page": 35,
+    "exact_french_quote": "dépend de son utilité à l’exercice de l’activité professionnelle",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "Le produit ainsi distrait du bénéfice des affaires",
+      "Lorsque l’immeuble est improductif de revenu",
+      "ne sont pas",
+      "déductibles"
+    ],
+    "verdict": "repair required F1",
+    "review_date": "2026-11-01",
+    "independent_reason": "REPAIR REQUIRED: Article60(5) excludes from the non-professional-income diversion amounts used to determine fixed-asset disposal gain/loss. The Guide/ledger omits that express exception, so its removal-to-IRF statement is too broad. Retain the carve-out next to it; precise allocation can stay held.",
+    "quote_checks": [
+      {
+        "quote": "dépend de son utilité à l’exercice de l’activité professionnelle",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "dépend de son utilité à l’exercice de l’activité professionnelle"
+      },
+      {
+        "quote": "Le produit ainsi distrait du bénéfice des affaires",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "Le produit ainsi distrait du bénéfice des affaires"
+      },
+      {
+        "quote": "Lorsque l’immeuble est improductif de revenu",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "Lorsque l’immeuble est improductif de revenu"
+      },
+      {
+        "quote": "ne sont pas",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "ne sont pas"
+      },
+      {
+        "quote": "déductibles",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "déductibles"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      14,
+      16,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      35,
+      36,
+      40,
+      41,
+      46,
+      48,
+      54,
+      57,
+      62,
+      67,
+      88,
+      103,
+      150,
+      154,
+      170,
+      173,
+      175,
+      207,
+      230,
+      259,
+      262,
+      288
+    ],
+    "independent_decisive_CGI_clause": "Article 60 : 1) Les bénéfices passibles de l'impôt sur les bénéfices d'affaires sont déterminés d'après les règles fixées en matière d'impôt sur les sociétés. 2) Toutefois : a) les amortissements ne peuvent être pratiqués que selon le mode linéaire ; b) le report déficitaire est limité à trois (3) ans. 3) Sont déductibles : - le salaire du conjoint de l'exploitant participant effectivement à l'exploitation à̀ la condition que ce salaire ne soit pas anormalement élevé́ et ait donné lieu au versement des cotisations relevant du régime de sécurité́ sociale et subisse les retenues fiscales à la source ; - les rémunérations allouées aux autres membres de la famille de l'exploitant, dans les conditions normales dès lors qu'elles sont réellement versées et correspondent à un travail effectif ; - les versements volontaires faits par l'exploitant pour la constitution de retraite et les primes d'assurances-vie, payées par l'exploitant dans la limite de 5% du montant du bénéfice avant déduction du montant de ces versements ; 4) Pour les dépenses mixtes qui ne sont pas ventilées sur la base de justifications suffisantes attestant la détermination de la part rattachée à l'activité, la part professionnelle déductible est évaluée à 30%. 5) Lorsque l'exploitant inscrit à l'actif de son entreprise un immeuble, la prise en compte des produits et des charges y afférents pour la détermination du bénéfice imposable dépend de son utilité à l'exercice de l'activité professionnelle. En cas d'absence d'utilité ou en présence d'une utilité partielle, le bénéfice est diminué du montant des produits qui ne proviennent pas de l'activité exercée à titre professionnel, à l'exclusion de ceux pris en compte pour la détermination de la plus-value ou moins-value de cession d'un élément d'actif immobilisé et augmenté du montant des charges admises en déduction totalement ou proportionnellement à l'usage à titre professionnel. Le produit ainsi distrait du bénéfice des affaires est soumis à l'impôt sur le revenu foncier. Lorsque l'immeuble est improductif de revenu, les charges y afférentes ne sont pas déductibles.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:43",
+    "section": "The base",
+    "rule": "Ordinary calculation compares nonnegative profit tax, applicable percentage minimum and absolute floor, adds levy separately and applies supported credits once; special minima/reduction transitions are held.",
+    "act_article": "CGI arts63–64,66; derived calculation",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=36",
+    "source_pdf_page": 36,
+    "exact_french_quote": "Le montant de l’impôt ne peut être inférieur",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "L’impôt ne peut en aucun cas être inférieur"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Articles63-64 and66 support the ordinary max calculation plus separate levy and documented credits. Regulatory minima, reductions and transitions are stopped rather than priced by the ordinary example.",
+    "quote_checks": [
+      {
+        "quote": "Le montant de l’impôt ne peut être inférieur",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "Le montant de l’impôt ne peut être inférieur"
+      },
+      {
+        "quote": "L’impôt ne peut en aucun cas être inférieur",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "L’impôt ne peut en aucun cas être inférieur"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      29,
+      36,
+      37,
+      86
+    ],
+    "independent_decisive_CGI_clause": "Article 64 : (Modifié par les lois de finances pour 2024 et 2026) 1) Le montant de l'impôt ne peut être inférieur à un minimum de perception égal à 1,5% des produits encaissables tels que définis à l'article 47 du présent code. 2) Par dérogation aux dispositions du paragraphe 1 du présent article : a) le minimum de perception est égal à 3% des produits encaissables pour les entreprises du secteur du bâtiment et des travaux publics ; b) le minimum de perception est égal à 10% des produits encaissables pour les entreprises à prépondérance immobilière au sens de l'article 101 paragraphe 2 du présent code ; c) le montant et les modalités de perception de l'impôt minimum sont fixés par voie règlementaire en ce qui concerne le commerce de véhicules d'occasion et de certains produits de grande consommation. Pour les véhicules d'occasion, cet impôt minimum dû par l'importateur et exigible par véhicule vendu est libératoire. 3) a) L'impôt ne peut en aucun cas être inférieur à deux cent cinquante mille (250 000) francs CFA. b) Pour les gérants de stations-services, le minimum de perception ne peut être inférieur à celui obtenu par application d'un taux unique de 0,60 francs CFA par litre au volume des produits pétroliers vendus. Ces dispositions sont applicables aux distributeurs non importateurs de produits pétroliers, s'approvisionnant auprès des entreprises importatrices agréées, et pratiquant les prix homologués au même titre que les stations- services. Dans tous les cas, l'impôt ne peut être inférieur à deux cent cinquante mille (250 000) francs CFA. 4) Le montant de l'impôt est majoré d'une redevance de quatre mille (4 000) francs CFA, au profit de l'office de radiodiffusion et télévision du Bénin, payable lors du versement de l'acompte du 10 mars prévu à l'article 51 ci-dessus.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:44",
+    "section": "The base",
+    "rule": "On operator death, direct-line heirs or spouse continuing the undertaking can defer business-fund gain until their disposal/cessation if the deceased’s last-balance-sheet asset valuations are not increased.",
+    "act_article": "CGI art62(1)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=36",
+    "source_pdf_page": 36,
+    "exact_french_quote": "l’exploitation est continuée par les héritiers en ligne directe ou par le conjoint",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "reportée au moment de la cession ou de",
+      "aucune augmentation"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article62(1) defers the business-fund gain on continuation by direct-line heirs/spouse until their cessation/disposal, provided deceased-last-balance-sheet asset values are not raised. It does not waive other filing.",
+    "quote_checks": [
+      {
+        "quote": "l’exploitation est continuée par les héritiers en ligne directe ou par le conjoint",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "l’exploitation est continuée par les héritiers en ligne directe ou par le conjoint"
+      },
+      {
+        "quote": "reportée au moment de la cession ou de",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "reportée au moment de la cession ou de"
+      },
+      {
+        "quote": "aucune augmentation",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "aucune augmentation"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      36
+    ],
+    "independent_decisive_CGI_clause": "Article 62 : 1) En cas de décès de l'exploitant, la taxation de la plus-value du fonds de commerce (éléments corporels et incorporels) est, lorsque l'exploitation est continuée par les héritiers en ligne directe ou par le conjoint, reportée au moment de la cession ou de la cessation de l'exploitation par ces derniers, à condition qu'aucune augmentation ne soit apportée aux évaluations des éléments de l'actif figurant au dernier bilan établi par le défunt. 2) Cette disposition reste applicable lorsque, à la suite du partage de la succession, l'exploitation est poursuivie par le ou les héritiers en ligne directe ou par le conjoint attributaire du fonds, de même que dans le cas où les héritiers en ligne directe et le conjoint constituent exclusivement entre eux une société non soumise à l'impôt sur les sociétés, à condition que les évaluations des éléments d'actif existant au décès ne soient pas augmentées à l'occasion du partage ou de la transformation de l'entreprise en société. SECTION 3 CALCUL DE L'IMPOT",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:45",
+    "section": "The base",
+    "rule": "The deferral also covers the stated succession partition or exclusively heirs/spouse entity outside IS if death-date asset valuations are not increased on partition/conversion; no global death-filing exemption.",
+    "act_article": "CGI art62(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=36",
+    "source_pdf_page": 36,
+    "exact_french_quote": "constituent exclusivement entre eux une société non soumise",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "les évaluations des éléments d’actif existant au décès ne soient pas",
+      "à l’occasion du partage ou de la transformation"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article62(2) extends the condition to succession allocation and an exclusively heirs/spouse entity outside IS without valuation increase on partition/conversion. No general inheritance exemption is claimed.",
+    "quote_checks": [
+      {
+        "quote": "constituent exclusivement entre eux une société non soumise",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "constituent exclusivement entre eux une société non soumise"
+      },
+      {
+        "quote": "les évaluations des éléments d’actif existant au décès ne soient pas",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "les évaluations des éléments d’actif existant au décès ne soient pas"
+      },
+      {
+        "quote": "à l’occasion du partage ou de la transformation",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "à l’occasion du partage ou de la transformation"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      36
+    ],
+    "independent_decisive_CGI_clause": "Article 62 : 1) En cas de décès de l'exploitant, la taxation de la plus-value du fonds de commerce (éléments corporels et incorporels) est, lorsque l'exploitation est continuée par les héritiers en ligne directe ou par le conjoint, reportée au moment de la cession ou de la cessation de l'exploitation par ces derniers, à condition qu'aucune augmentation ne soit apportée aux évaluations des éléments de l'actif figurant au dernier bilan établi par le défunt. 2) Cette disposition reste applicable lorsque, à la suite du partage de la succession, l'exploitation est poursuivie par le ou les héritiers en ligne directe ou par le conjoint attributaire du fonds, de même que dans le cas où les héritiers en ligne directe et le conjoint constituent exclusivement entre eux une société non soumise à l'impôt sur les sociétés, à condition que les évaluations des éléments d'actif existant au décès ne soient pas augmentées à l'occasion du partage ou de la transformation de l'entreprise en société. SECTION 3 CALCUL DE L'IMPOT",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:46",
+    "section": "Deadlines and filing",
+    "rule": "IBA declaration/payment follows IS: shared company annual/attachments/instalments/balance/reduction process is linked, not its rate/loss period. Non-IS entities pay for members under article51.",
+    "act_article": "CGI art66",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=37",
+    "source_pdf_page": 37,
+    "exact_french_quote": "déclaré et payé comme en matière d’impôt sur les sociétés",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "pour le compte de leurs associés"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article66 expressly imports IS declaration/payment and entity payment on behalf of members under51. Linked49-52 supply the shared dates/procedure; its corporate rate and five-year losses are explicitly excluded.",
+    "quote_checks": [
+      {
+        "quote": "déclaré et payé comme en matière d’impôt sur les sociétés",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "déclaré et payé comme en matière d’impôt sur les sociétés"
+      },
+      {
+        "quote": "pour le compte de leurs associés",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "pour le compte de leurs associés"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      37
+    ],
+    "independent_decisive_CGI_clause": "Article 66 : (Modifié par la loi de finances pour 2024) L'impôt sur les bénéfices d'affaires est déclaré et payé comme en matière d'impôt sur les sociétés. Les personnes morales non soumises à l'impôt sur les sociétés effectuent pour le compte de leurs associés le paiement de l'impôt sur le bénéfice des affaires dans les conditions prévues à l'article 51 du présent Code.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:47",
+    "section": "Deadlines and filing",
+    "rule": "AIB offset declaration must be supported by the payment receipt; evidence and reconciliation prevent claiming the same payment twice.",
+    "act_article": "CGI art133(2)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=66",
+    "source_pdf_page": 66,
+    "exact_french_quote": "une déclaration appuyée de la quittance",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article133(2) requires the offset amount on a receipt-supported declaration. Article133(1)-(3) monthly AIB machinery was read too; the Guide does not compute a withholding-agent return.",
+    "quote_checks": [
+      {
+        "quote": "une déclaration appuyée de la quittance",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "une déclaration appuyée de la quittance"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      66
+    ],
+    "independent_decisive_CGI_clause": "Article 133 : (Modifié par la loi de finances pour 2024) 1) Les assujettis à l'acompte sur impôt assis sur les bénéfices relevant de l'impôt sur les bénéfices d'affaires ou de l'impôt sur les sociétés sont autorisés à imputer sur le montant de l'acompte sur impôt assis sur les bénéfices exigible sur leurs opérations : a) l'acompte sur impôt assis sur les bénéfices acquitté lors des achats de biens corporels ; b) l'acompte sur impôt assis sur les bénéfices retenu sur les paiements des prestations de services fournies ; c) l'acompte sur impôt assis sur les bénéfices acquitté lors de l'importation. 2) Le montant de l'acompte sur impôt assis sur les bénéfices dont l'imputation est demandée doit être mentionné sur une déclaration appuyée de la quittance de paiement. 3) Si le montant des acomptes sur impôt assis sur les bénéfices payés et imputés est supérieur au montant de l'acompte sur impôt assis sur les bénéfices exigible au titre d'une déclaration mensuelle donnée, l'excédent est imputé sur l'acompte sur impôt assis sur les bénéfices exigible au titre de la ou des déclarations ultérieures jusqu'au 31 décembre de la même année. 4) Le montant des acomptes sur impôt assis sur les bénéfices qui n'a pu être intégralement déduit au 31 décembre est imputé en l'acquit de l'impôt sur les bénéfices, les acomptes ultérieurs et les arriérés d'impôt sur les bénéfices s'il en existe. 5) Pour les contribuables relevant de la taxe professionnelle synthétique, les acomptes sur impôt assis sur les bénéfices payés, sont déductibles du solde de la part de la taxe professionnelle synthétique affectée au budget national, due au titre de l'exercice de leur prélèvement. SOUS-SECTION 3 OBLIGATIONS",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:48",
+    "section": "Deadlines and filing",
+    "rule": "AIB unused at31December credits profit tax, later instalments and profit-tax arrears under133(4); no automatic immediate refund. Full withholding-agent computation outside scope.",
+    "act_article": "CGI art133(4)",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=66",
+    "source_pdf_page": 66,
+    "exact_french_quote": "qui n’a pu être intégralement déduit au 31 décembre",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "les acomptes ultérieurs et les arriérés d’impôt"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article133(4) applies unused31December AIB to profit tax, later instalments and profit-tax arrears. No immediate cash refund is asserted.",
+    "quote_checks": [
+      {
+        "quote": "qui n’a pu être intégralement déduit au 31 décembre",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "qui n’a pu être intégralement déduit au 31 décembre"
+      },
+      {
+        "quote": "les acomptes ultérieurs et les arriérés d’impôt",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "les acomptes ultérieurs et les arriérés d’impôt"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      66
+    ],
+    "independent_decisive_CGI_clause": "Article 133 : (Modifié par la loi de finances pour 2024) 1) Les assujettis à l'acompte sur impôt assis sur les bénéfices relevant de l'impôt sur les bénéfices d'affaires ou de l'impôt sur les sociétés sont autorisés à imputer sur le montant de l'acompte sur impôt assis sur les bénéfices exigible sur leurs opérations : a) l'acompte sur impôt assis sur les bénéfices acquitté lors des achats de biens corporels ; b) l'acompte sur impôt assis sur les bénéfices retenu sur les paiements des prestations de services fournies ; c) l'acompte sur impôt assis sur les bénéfices acquitté lors de l'importation. 2) Le montant de l'acompte sur impôt assis sur les bénéfices dont l'imputation est demandée doit être mentionné sur une déclaration appuyée de la quittance de paiement. 3) Si le montant des acomptes sur impôt assis sur les bénéfices payés et imputés est supérieur au montant de l'acompte sur impôt assis sur les bénéfices exigible au titre d'une déclaration mensuelle donnée, l'excédent est imputé sur l'acompte sur impôt assis sur les bénéfices exigible au titre de la ou des déclarations ultérieures jusqu'au 31 décembre de la même année. 4) Le montant des acomptes sur impôt assis sur les bénéfices qui n'a pu être intégralement déduit au 31 décembre est imputé en l'acquit de l'impôt sur les bénéfices, les acomptes ultérieurs et les arriérés d'impôt sur les bénéfices s'il en existe. 5) Pour les contribuables relevant de la taxe professionnelle synthétique, les acomptes sur impôt assis sur les bénéfices payés, sont déductibles du solde de la part de la taxe professionnelle synthétique affectée au budget national, due au titre de l'exercice de leur prélèvement. SOUS-SECTION 3 OBLIGATIONS",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:49",
+    "section": "Deadlines and filing",
+    "rule": "June amendment to476(1) requires prior written/electronic cessation/transfer information accompanied by an up-to-date tax position; full cessation/death workflow and temporal application remain separate.",
+    "act_article": "LFR2026 art9",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcb8249c4ab_B%C3%A9nin-Loi%20de%20finances%20rectificative%202026.pdf#page=3",
+    "source_pdf_page": 3,
+    "exact_french_quote": "Cette information est accompagnée de la situation fiscale à jour",
+    "read_date": "2026-11-01",
+    "source_file": "lfr2026.pdf",
+    "source_sha256": "13b0a13816d27940b33eb402f63f8d1f0e6b37fa9dbeb47f36967a1f586b211a",
+    "read_scope": "OCR fiscal arts1–19 and final48–49 read. Original scans PDF1,3,17 visually inspected for income period, art8/CGI180 exclusion, art9/cessation and final signature. Exact first operative TPS-amendment period not resolved.",
+    "additional_quote_anchors": [
+      "par écrit ou par voie électronique"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Signed June LFR9 retains prior written/electronic notice and adds an up-to-date tax position. CGI476 neighbouring suspension/return/death workflow is a separate unresolved job; the Guide does not certify its full operation.",
+    "quote_checks": [
+      {
+        "quote": "Cette information est accompagnée de la situation fiscale à jour",
+        "method": "cached OCR plus scan reading",
+        "visual_exception": true,
+        "capitalization_repair_required": false,
+        "actual_quote": "Cette information est accompagnée de la situation fiscale à jour"
+      },
+      {
+        "quote": "par écrit ou par voie électronique",
+        "method": "cached OCR plus scan reading",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "par écrit ou par voie électronique"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      3
+    ],
+    "independent_decisive_CGI_clause": null,
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {
+      "LFR9": "Toute cessation d’activité ou cession d’une entreprise fait l’objet d’une information préalable, par écrit ou par voie électronique, adressée à l’administration fiscale trois mois avant le jour de la cessation ou de la cession. Cette information est accompagnée de la situation fiscale à jour de l’entité."
+    }
+  },
+  {
+    "id": "bj-business-income-tax:50",
+    "section": "Penalties and interest",
+    "rule": "Use existing general-sanctions/conditional first-declaration-relief owner; assess actual failure/notice/dates/payment/relief facts, not a blanket waiver or live penalty assessment here.",
+    "act_article": "CGI arts485,487–488; LF2026 art3",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=216",
+    "source_pdf_page": 216,
+    "exact_french_quote": "Le défaut de production dans les délais prescrits",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_sources": [
+      {
+        "act_article": "LF3",
+        "official_url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf#page=2",
+        "source_sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+        "exact_french_quotes": [
+          "spontanément, pour la première fois",
+          "paiement intégral des droits dus",
+          "l’absence d’une procédure de"
+        ]
+      }
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Articles485,487-488 match the linked overview filing/payment/interest owner. Original LF3 scan conditions first historical declarations on spontaneity, first time, full payment and no ongoing control/investigation. No blanket current late-return waiver is asserted.",
+    "quote_checks": [
+      {
+        "quote": "Le défaut de production dans les délais prescrits",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "Le défaut de production dans les délais prescrits"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      216
+    ],
+    "independent_decisive_CGI_clause": "Article 485 : (Modifié par la loi de finances pour 2024) 1) Le défaut de production dans les délais prescrits d'une déclaration ou d'un acte comportant indication d'éléments à retenir pour l'assiette ou la liquidation d'un quelconque impôt entraîne l'application d'une pénalité de retard de 20 % sur le montant des droits mis à la charge du contribuable ou résultant de la déclaration ou de l'acte souscrit tardivement. Cette pénalité est également applicable au contribuable qui n'a pas fourni à l'appui de sa déclaration, les documents dont la production est exigée par les articles 50 et 66 du présent Code ou a fourni des renseignements inexacts ou incomplets. 2) Lorsque la déclaration ou l'acte n'a pas été déposé dans les trente (30) jours suivant la réception d'une mise en demeure, ou lorsque le contribuable n'a pas déposé les déclarations ou documents exigés, deux (2) mois après la date de dépôt, la pénalité passe à 40% du montant des droits résultant de la déclaration. 3) La pénalité prévue au présent article est réputée intégrer les intérêts de retard. SOUS-SECTION 2 INSUFFISANCE DE DECLARATION",
+    "additional_sources_checked": [
+      {
+        "act_article": "LF3",
+        "official_url": "https://budgetbenin.bj/storage/2025/12/Loi-des-finances-2026.pdf#page=2",
+        "source_sha256": "ff575a6c6a6425d69f5270168a302f34314ddc971b5f4dd519d18eaa80272264",
+        "exact_french_quotes": [
+          "spontanément, pour la première fois",
+          "paiement intégral des droits dus",
+          "l’absence d’une procédure de"
+        ]
+      }
+    ],
+    "independent_decisive_signed_scan_clauses": {
+      "LF3": "Du 1er janvier au 31 décembre 2026, les pénalités, amendes et majorations fiscales ne sont pas applicables aux contribuables qui souscrivent spontanément, pour la première fois, leurs déclarations des affaires réalisées au titre des exercices antérieurs et qui procèdent au paiement intégral des droits dus. Le bénéfice de cette mesure est subordonné à l’absence d’une procédure de contrôle fiscal ou d’une enquête fiscale en cours chez le contribuable."
+    }
+  },
+  {
+    "id": "bj-business-income-tax:51",
+    "section": "Cross-border points",
+    "rule": "IBA territorial scope is Benin profits and profits allocated by a double-tax convention under5–6. Company-specific residence wording is not treated as a verified natural-person test; no generic worldwide charge or foreign credit.",
+    "act_article": "CGI art59",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=35",
+    "source_pdf_page": 35,
+    "exact_french_quote": "uniquement des bénéfices réalisés en République du Bénin",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "par une convention internationale relative aux non doubles"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article59 expressly limits IBA to Benin profits and treaty allocation under5-6. Article5 company-residence wording is not promoted to a verified natural-person residence test or a generic worldwide charge/foreign credit.",
+    "quote_checks": [
+      {
+        "quote": "uniquement des bénéfices réalisés en République du Bénin",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "uniquement des bénéfices réalisés en République du Bénin"
+      },
+      {
+        "quote": "par une convention internationale relative aux non doubles",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "par une convention internationale relative aux non doubles"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      35
+    ],
+    "independent_decisive_CGI_clause": "Article 59 : Le bénéfice imposable est déterminé en tenant compte uniquement des bénéfices réalisés en République du Bénin ainsi que ceux dont l'imposition est attribuée à la République du Bénin par une convention internationale relative aux non doubles impositions, dans les conditions prévues par les articles 5 et 6 du présent code. SECTION 2 DETERMINATION DU BENEFICE IMPOSABLE",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:52",
+    "section": "Cross-border points",
+    "rule": "Foreign related-party pricing and domestic foreign-payment withholding belong to the existing TP/XB job owners, not a salary or automatically final IBA computation; taxpayer-specific treaty/credit/withholding interactions remain held.",
+    "act_article": "CGI arts45,59; routing control",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=28",
+    "source_pdf_page": 28,
+    "exact_french_quote": "pour l’établissement de l’impôt sur le revenu",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "les bénéfices indirectement transférés"
+    ],
+    "verdict": "rule accepted; exact quotation repair F2",
+    "review_date": "2026-11-01",
+    "independent_reason": "Article45 expressly applies to income tax or IS and foreign dependent/control profit transfers. The TP/XB links retain distinct jobs; treaty/credit/final-withholding results remain case-specific holds. QUOTE REPAIR F2: the original clause starts with capital Pour, while the ledger exact quote starts with lower-case pour.",
+    "quote_checks": [
+      {
+        "quote": "pour l’établissement de l’impôt sur le revenu",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": true,
+        "actual_quote": "Pour l’établissement de l’impôt sur le revenu"
+      },
+      {
+        "quote": "les bénéfices indirectement transférés",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "les bénéfices indirectement transférés"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      28
+    ],
+    "independent_decisive_CGI_clause": "Article 45 : 1) Pour l'établissement de l'impôt sur le revenu ou de l'impôt sur les sociétés dû par les entreprises qui sont sous la dépendance ou qui possèdent le contrôle d'entreprises situées hors de la République du Bénin au sens du paragraphe 2 du présent article, les bénéfices indirectement transférés à ces dernières, soit par majoration ou diminution des prix d'achat ou de vente, soit par tout autre moyen, sont incorporés aux résultats accusés par les comptabilités. Les bénéfices indirectement transférés sont déterminés par comparaison avec ceux qui auraient été réalisés en l'absence de lien de dépendance ou de contrôle. 2) Des liens de dépendance ou de contrôle sont réputés exister entre deux entreprises : a) lorsque l'une détient, directement ou par personne interposée, la majorité du capital social ou des droits de vote de l'autre ou y exerce en fait le pouvoir de décision ou ; b) lorsqu'elles sont placées l'une et l'autre, dans les conditions définies au point a, sous le contrôle d'une même entreprise ou d'une même personne. 3) La condition de dépendance ou de contrôle mentionnée au paragraphe 1 du présent article n'est pas exigée lorsque le transfert s'effectue avec des entreprises établies dans un État étranger ou dans un territoire situé hors de la République du Bénin dont le régime fiscal est privilégié, au sens de l'article 30 du présent code. SECTION 3 CALCUL DE L'IMPOT",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:53",
+    "section": "Two worked examples that recompute",
+    "rule": "Example1 assumes established ordinary IBA/no relief: profit100000×30%=30000; base20000000×1.5%=300000 beats250000 floor; separate levy gives304000. Profit/minimum crossover is1000000. Inputs do not independently establish TPS status.",
+    "act_article": "CGI arts63–64; derived arithmetic",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=36",
+    "source_pdf_page": 36,
+    "exact_french_quote": "égal à 1,5% des produits encaissables",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_quote_anchors": [
+      "taux de 30%"
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Independent Decimal arithmetic gives30000 profit tax,300000 percentage minimum,300000 IBA,1000000 crossover and304000 with levy. Assumed established ordinary status does not prove TPS classification.",
+    "quote_checks": [
+      {
+        "quote": "égal à 1,5% des produits encaissables",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "égal à 1,5% des produits encaissables"
+      },
+      {
+        "quote": "taux de 30%",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "taux de 30%"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      36
+    ],
+    "independent_decisive_CGI_clause": "Article 64 : (Modifié par les lois de finances pour 2024 et 2026) 1) Le montant de l'impôt ne peut être inférieur à un minimum de perception égal à 1,5% des produits encaissables tels que définis à l'article 47 du présent code. 2) Par dérogation aux dispositions du paragraphe 1 du présent article : a) le minimum de perception est égal à 3% des produits encaissables pour les entreprises du secteur du bâtiment et des travaux publics ; b) le minimum de perception est égal à 10% des produits encaissables pour les entreprises à prépondérance immobilière au sens de l'article 101 paragraphe 2 du présent code ; c) le montant et les modalités de perception de l'impôt minimum sont fixés par voie règlementaire en ce qui concerne le commerce de véhicules d'occasion et de certains produits de grande consommation. Pour les véhicules d'occasion, cet impôt minimum dû par l'importateur et exigible par véhicule vendu est libératoire. 3) a) L'impôt ne peut en aucun cas être inférieur à deux cent cinquante mille (250 000) francs CFA. b) Pour les gérants de stations-services, le minimum de perception ne peut être inférieur à celui obtenu par application d'un taux unique de 0,60 francs CFA par litre au volume des produits pétroliers vendus. Ces dispositions sont applicables aux distributeurs non importateurs de produits pétroliers, s'approvisionnant auprès des entreprises importatrices agréées, et pratiquant les prix homologués au même titre que les stations- services. Dans tous les cas, l'impôt ne peut être inférieur à deux cent cinquante mille (250 000) francs CFA. 4) Le montant de l'impôt est majoré d'une redevance de quatre mille (4 000) francs CFA, au profit de l'office de radiodiffusion et télévision du Bénin, payable lors du versement de l'acompte du 10 mars prévu à l'article 51 ci-dessus.",
+    "additional_sources_checked": [],
+    "independent_decisive_signed_scan_clauses": {}
+  },
+  {
+    "id": "bj-business-income-tax:54",
+    "section": "Two worked examples that recompute",
+    "rule": "Example2 valid eligible cash election versus default accrual: supported cash profit5m yields1.5mIBA; accrual profit7m yields2.1m; same25mbase minimum375000 and250000floor do not bind.600000timing difference is not lifetime saving and needs valid election.",
+    "act_article": "CGI arts63–64,67; derived arithmetic",
+    "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=38",
+    "source_pdf_page": 38,
+    "exact_french_quote": "comptabilité de caisse",
+    "read_date": "2026-11-01",
+    "source_file": "cgi2026.pdf",
+    "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+    "read_scope": "Actual extracted clauses read: CGI arts54–67 in full with neighbouring53/68; arts5–9,20,43–47,49–52,101(2),130–134,145–149,178–185,476,485–488. Source PDF pages9–13,18,27–38,54,65–67,71–73,85–87,207,216–217. Not whole-code verification.",
+    "additional_sources": [
+      {
+        "act_article": "CGI63–64",
+        "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=36",
+        "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+        "exact_french_quotes": [
+          "taux de 30%",
+          "égal à 1,5% des produits encaissables"
+        ]
+      }
+    ],
+    "verdict": "accepted within stated partial preparation scope",
+    "review_date": "2026-11-01",
+    "independent_reason": "Independent Decimal arithmetic gives5m cash profit/7m accrual profit,375000 common percentage minimum,1.5m/2.1m IBA and600000 timing difference. Cash requires the hypothetical valid eligible election; no lifetime saving or basis-transition adjustment is implied.",
+    "quote_checks": [
+      {
+        "quote": "comptabilité de caisse",
+        "method": "fresh cached PDF extraction",
+        "visual_exception": false,
+        "capitalization_repair_required": false,
+        "actual_quote": "comptabilité de caisse"
+      }
+    ],
+    "primary_anchor_pdf_pages": [
+      38
+    ],
+    "independent_decisive_CGI_clause": "Article 67 : 1) Les bénéfices d'affaires perçus à titre professionnel et habituel doivent être constatés par une comptabilité d'engagement conforme au droit comptable en vigueur. 2) Toutefois, les contribuables exerçant une profession libérale, une activité non commerciale ou gérant des revenus de propriété intellectuelle ou industrielle qui désirent déterminer leur revenu imposable suivant une comptabilité de caisse doivent exercer une option avant le 30 novembre de l'année précédant celle au titre de laquelle elle est exercée. Elle prend effet à compter du 1er janvier de l'année suivant celle de la demande et est reconductible tacitement, sauf dénonciation avant le 30 novembre de la deuxième année. 3) Lorsque le contribuable réalise simultanément les bénéfices industriels et commerciaux et les bénéfices tirés des professions non commerciales, les résultats de ces opérations, sont déterminés suivant les règles prévues au paragraphe 1 du présent article. CHAPITRE 3 IMPOT SUR LE REVENU DES CAPITAUX MOBILIERS (IRCM)",
+    "additional_sources_checked": [
+      {
+        "act_article": "CGI63–64",
+        "official_url": "https://apisiteweb.impots.bj/media/6adcbd46ab83b_B%C3%A9nin-Code%20G%C3%A9n%C3%A9ral%20des%20Imp%C3%B4ts%202026.pdf#page=36",
+        "source_sha256": "dcade7868686940c963411c53f60bbb015331c52b90741d785329def7dd7691a",
+        "exact_french_quotes": [
+          "taux de 30%",
+          "égal à 1,5% des produits encaissables"
+        ]
+      }
+    ],
+    "independent_decisive_signed_scan_clauses": {}
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-01",
+  "content_commit": "b5b3eb64a94be602e24d1cfb49ffbcbb365d1d1a",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "changed_only_validator": {
+    "actual_guides": 2,
+    "result": "pass",
+    "warning_groups": 2,
+    "warnings": [
+      "Distinct property TFU slug outside seven-domain map",
+      "Rental IRF and salary ITS are distinct jobs sharing IT-IND"
+    ]
+  },
+  "strict_sync": {
+    "source_guides": 2,
+    "errors": 0,
+    "warnings": 0,
+    "notices": 0
+  },
+  "examples": {
+    "files": 2,
+    "blocks": 4,
+    "failures": 0
+  },
+  "whole_base_whitespace": "pass",
+  "scope": "Only accepted partial preparation jobs; no operative whole-country law or filing certification."
+}

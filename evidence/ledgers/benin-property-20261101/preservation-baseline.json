@@ -1,0 +1,193 @@
+{
+  "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "files": [
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/candidate-hashes.json",
+      "git_blob": "5d81f55c5894d055934bf99c196dcd48bf83b0d8",
+      "sha256": "c1b79e1c8102268ceb98681fa647eb42a3ea193227d6466245cdbd3e46dcf318"
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/check-results.json",
+      "git_blob": "68926d1de6ac3fca831db17fc5fc0d10ed9d6b70",
+      "sha256": "13c52c132d4079f1dfaccca94fd2240aa582e4c2e9b435a557b5d076263df69e"
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/pinned-validation.py",
+      "git_blob": "f292068515f338c2755623c05c7ad64fdfd2d531",
+      "sha256": "62cd0bdabd32a25d29bc2111f574e0ec1a41f4773d06b01292e86bf4ad7615fa"
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/source-capture-manifest.json",
+      "git_blob": "7737674d86c8db09913a11a613ff2f4c3916fd04",
+      "sha256": "631b0b4a652bd73725a84db99d657addccde7671c45e5f485e3fbe4b79d642fc"
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/writer-checks.py",
+      "git_blob": "13beceb2ed50a5e24260938c4e7752e24e659a07",
+      "sha256": "ebcade8c134853ab2b07656c97abdf0d00bfade68098d388144b7bebf4dc9e81"
+    },
+    {
+      "path": "evidence/ledgers/benin-draft-20261101/writer-record.md",
+      "git_blob": "05e36feb45678ca7a5be60703095d0868847b314",
+      "sha256": "54159bad21b58563165962628293f21225fe6ae545a332db9ea7ada283cfa6b0"
+    },
+    {
+      "path": "evidence/ledgers/benin-old-topics.md",
+      "git_blob": "046ba510462f2a5ee893469815e333c351330524",
+      "sha256": "1021217e9feed705e66af1a7a3adf77eb09d1690064117a51fccc7d3d2e3e680"
+    },
+    {
+      "path": "evidence/ledgers/benin-repair-1/preservation.json",
+      "git_blob": "e1bf1b7d6e30a14db0fd5e5a211f655432ada3a2",
+      "sha256": "f131cd188f3f63de9b4f41a6ff314286002f92037ad8a792d424e70763f9db82"
+    },
+    {
+      "path": "evidence/ledgers/benin-repair-1/writer-repair.json",
+      "git_blob": "1d6852d82b658cba6c77810a54c9c231d117b8bf",
+      "sha256": "d82723aa42309d6f4912f662e0614342c5cfe8cbcb489cf05311f2dd6db7e947"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/build-row-receipt.py",
+      "git_blob": "0afaa515315dfe18f114e5fc3ca9b814826000dd",
+      "sha256": "c5b02ecccc0f65f7c6cdca31bf752b33a7f4d78684364edf229fe69840ca89cc"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/independent-checks.py",
+      "git_blob": "b3c8cffa50edd16a3a2f91109b36d5d74ff9a382",
+      "sha256": "1a43af6d65b6b68936fadae7e45c838ca4914f17ae2f4e316d54de0d6899db1b"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/mechanical-preservation.json",
+      "git_blob": "a81d2d0191068ae9e9037151cba3568ec2f408bc",
+      "sha256": "5902356b0c9c978f775d8ee83c5702f6ce4c7cc3825781ecb7c69977411197a7"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/review.md",
+      "git_blob": "e754f0a49680b402a08d46ba3b3409e9e75b9905",
+      "sha256": "cec48a278d5f3ade12af975d02520eba141690d6798c9f5e847d63396b17aaef"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/row-checks.md",
+      "git_blob": "b8928c928c388b72187eb9643463a643d8657b3c",
+      "sha256": "82b329cb0aaa823182ba78ea7b69016fefe03c439380bb17647da88d623ff6cb"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/source-verification-network.json",
+      "git_blob": "5dd1899b95a7d48d61bfb76a6499603577e4e56d",
+      "sha256": "eca6ccafc99961d217d8ad7ea9e02639944cd3e06969c81006d7e1fd6abc1b80"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/source-verification.json",
+      "git_blob": "c1710277e0b6a95a43a1048011aad514cbda5e8e",
+      "sha256": "2bd56e0beab4a4c8012349e0008e37391686ca7dff575df31897c0d93682c3e6"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-20261101/text-extraction.json",
+      "git_blob": "828a7898f9069d5ae2f9c6b278e5c3f6eed8c4b5",
+      "sha256": "348e342cd085f94f2b2a3699c26a2f2d23d9643192dfe48bd8d9dd19777556e3"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-closure-20261101/check-closure.py",
+      "git_blob": "7b80ef70397ca1eaf92a01959edeca7877839a38",
+      "sha256": "8c1ca0f02c9edb4400d6d59e06af06ef65164148a588532269a5f6a3da7534e2"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-closure-20261101/closure-receipt.json",
+      "git_blob": "d30d86050bb14523c67a139d48023297fcabce6a",
+      "sha256": "e49bb4468fd8411b1a1c8d9ae9c93ef89dfa098e57ffab13a22cabe979bf4cac"
+    },
+    {
+      "path": "evidence/ledgers/benin-review-closure-20261101/review.md",
+      "git_blob": "96be0792d0ca37a10d6abec00c5df994161e34a4",
+      "sha256": "687f5e1a38591f8087bfaf21d3d7bc5ea35b54af602c107e312aa05d6143e938"
+    },
+    {
+      "path": "evidence/ledgers/bj-company-formation.md",
+      "git_blob": "2991a580fa506c0ee43f3d3adb1f9645fb32358a",
+      "sha256": "788833768f1c8bd8046cbbc7f7726f2a4475e533a15b266038eec465cf7c4c41"
+    },
+    {
+      "path": "evidence/ledgers/bj-corporate-income-tax.md",
+      "git_blob": "415eb0f480d814507c4ace995febd671b3e2e691",
+      "sha256": "591f3f9fcea1498e79e048abf323cae4e8396931f46320364c6ea058fcdc768f"
+    },
+    {
+      "path": "evidence/ledgers/bj-cross-border-withholding.md",
+      "git_blob": "282f1fc2ac598216e16f67354ac0104982b83ef9",
+      "sha256": "0d26ca39d0b604022e89332c426650ccea61aecaf3fe065951f67c0327bc0e47"
+    },
+    {
+      "path": "evidence/ledgers/bj-income-tax.md",
+      "git_blob": "a86a9901c3025a1d1853a1fd11ca1acc63eb1ff2",
+      "sha256": "5a2d64e0e75fc051f7aea7588ffe212785b3e7a47e5eaf0e1410214829de723d"
+    },
+    {
+      "path": "evidence/ledgers/bj-payroll-social.md",
+      "git_blob": "20a7810a6aff30b3876b22d90674b7d011a25e40",
+      "sha256": "dee1670244aeb00645a94431bed507620bc002d1eb24238e2f2226baa525c070"
+    },
+    {
+      "path": "evidence/ledgers/bj-tax-overview.md",
+      "git_blob": "1fe6f22ef3eeb524132a9da07abbeaba5fd43ba8",
+      "sha256": "9058c5299ee7ab8f7c238b53ce7ba6601fa4734248a1981ad93de21c97657130"
+    },
+    {
+      "path": "evidence/ledgers/bj-transfer-pricing.md",
+      "git_blob": "0c6f3a98a5a6983cb184c6450c5a9c047a3bf1d9",
+      "sha256": "34236365d9d03a3a550b644e73c939bea41609fd4c8afb53e4f9bff40a81dd52"
+    },
+    {
+      "path": "evidence/ledgers/bj-vat-gst.md",
+      "git_blob": "9a64649b0844ccc268504ae1511ffea3daadda0a",
+      "sha256": "559ada49180ebad2aaa6802d5c4e424a3bc715bbb16871b11aae89394bc7185b"
+    },
+    {
+      "path": "skills/benin/README.md",
+      "git_blob": "d35686560f255753ebb19dadf88ac2eec695f722",
+      "sha256": "0d214f52ff065c74a6f08963e82706b2f552a084447dd89cba069957fd5cd5e2"
+    },
+    {
+      "path": "skills/benin/bj-company-formation.md",
+      "git_blob": "ebd7f9a1f8fbf33209083f49347619601f101be6",
+      "sha256": "c8fe5e6b1c6f3febfc81e5837910ea2d619e088a31ec8c262bfcf00f409a3dd1"
+    },
+    {
+      "path": "skills/benin/bj-corporate-income-tax.md",
+      "git_blob": "c6b397ce41b9f7ca9d9d1932e634c21d432459ad",
+      "sha256": "6d6842f12a2851ee2dc4a9325deb2ef274a6be4e5e51aafcd4efc693bb141f5b"
+    },
+    {
+      "path": "skills/benin/bj-cross-border-withholding.md",
+      "git_blob": "268f05107b43141d8fd78c732a54a4de994f51cb",
+      "sha256": "d6bcfb8840801437aebeff34dfd6dd84c8d4d7103911c193a7afebd1a0ba303d"
+    },
+    {
+      "path": "skills/benin/bj-income-tax.md",
+      "git_blob": "7c749197563c87de5ba7f635b42b1b4e31efb725",
+      "sha256": "d1ed53baee9c64c6b2bdcdeb699dba9a4a0af21abb8ab315b85b654bfbe27f34"
+    },
+    {
+      "path": "skills/benin/bj-payroll-social.md",
+      "git_blob": "1bfa0a555e6a8714f6e18ba54cbb1ea8aac6bb27",
+      "sha256": "e12d33450dab8e9840cd6b55397651d5957e0089fc3394707956caee14fdf5d4"
+    },
+    {
+      "path": "skills/benin/bj-tax-overview.md",
+      "git_blob": "0a022f7fe269d101c2c2e9c36e68b7c458bafd82",
+      "sha256": "a8063ff70ce6b565103a56befdcf1bb8ba127b87273bc15ed88f64f78059196a"
+    },
+    {
+      "path": "skills/benin/bj-transfer-pricing.md",
+      "git_blob": "8b34f58cfb71f10c6c37ec206f2652f00940df1f",
+      "sha256": "014b19be7f3a6d726206a24ffb893467585e8f4de8aac2a9ceca02fc6091049c"
+    },
+    {
+      "path": "skills/benin/bj-vat-gst.md",
+      "git_blob": "406cc271d57c38a85e92c46eeb2c2ddbda0730eb",
+      "sha256": "7062a8da2d6fa198874a62e4894d012b3a024878bdad2f5acffc839baa3a5137"
+    }
+  ],
+  "existing_guide_count": 8,
+  "prior_evidence_count": 28,
+  "scope": "Eight existing Guide bodies remain byte-identical. README only adds routing/status for two new jobs. Prior evidence identities frozen from Git, including paths omitted by sparse checkout."
+}

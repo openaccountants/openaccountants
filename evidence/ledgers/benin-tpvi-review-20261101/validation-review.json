@@ -1,0 +1,81 @@
+{
+  "head": "d9e75601a6a5e157459baaf7328d0dd709a62a5e",
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/benin/bj-property-gains-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/benin/bj-property-gains-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/benin/bj-property-tfu.md",
+        "skills/benin/bj-rental-income-tax.md",
+        "skills/benin/bj-business-income-tax.md",
+        "skills/benin/bj-property-gains-tax.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 4 files, 8 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 5 changed guide file(s)\nchecked 4 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\nWARN: skills/benin/bj-business-income-tax.md: BJ IT-IND also holds bj-income-tax, bj-rental-income-tax, with a different job\nWARN: skills/benin/bj-property-gains-tax.md: no tax domain in the slug, so its country cell was not checked\nWARN: skills/benin/bj-property-tfu.md: no tax domain in the slug, so its country cell was not checked\nWARN: skills/benin/bj-rental-income-tax.md: BJ IT-IND also holds bj-business-income-tax, bj-income-tax, with a different job\n\nvalidation passed (4 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 4 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "eab4e4b027afb4425aadfb2a74b6e6b18b23e36c",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 1 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "eab4e4b027afb4425aadfb2a74b6e6b18b23e36c",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "warning_interpretation": "Actual validator checks four Guides, passes with four advisory groups: two different-job IT-IND owners and two property slugs lacking tax-domain detection. These are not silent clean/zero-warning results."
+}

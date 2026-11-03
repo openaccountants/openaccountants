@@ -1,0 +1,8 @@
+[
+  {
+    "attempt": 1,
+    "result": "Independent checker stopped before writing verdicts because CGI161(3)'s exact French anchor crosses PDF77-78 and the concatenated extraction included the standalone printed page footer 76.",
+    "action": "Read the complete source sentence; remove only standalone page-number lines for that cross-page assertion. No Guide or ledger correction was required.",
+    "source_rule_affected": false
+  }
+]
