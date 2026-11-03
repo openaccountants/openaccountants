@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-01",
+  "initial_frozen_head": "b435b7850452671fea8471b85e545fa87ec80395",
+  "changes": [
+    "Regulation 138 arts.6\u20137: principal payment is not suspended and full principal payment is an admissibility condition for late-payment increase relief.",
+    "IRPP article70 starts on PDF29 and continues30; article126 isPDF41. Row17 spans29\u201330;39\u201341; row18 spans29\u201330;40.",
+    "VAT joint industrial-material row made neutral: original local-industry purpose is not rewritten as local-acquisition scope; August local-acquisition limitation remains explicit. VAT ledger12 distinguishes both source wordings."
+  ],
+  "parent_actual_source_read": "CNSS official collection PDF69, arts4\u20138 and neighbours, cached extraction lines3185\u20133270; reviewer independently located IRPP126 PDF41.",
+  "candidate_files": {
+    "skills/dr-congo/cd-payroll-social.md": "8adef16e9e7017543e35d66a8d88adebcfba42cab5c09108686109f3b1ff7ebc",
+    "evidence/dr-congo-remaining-20261101/ledgers/cd-payroll-social.md": "e06d687004bc0445492689d927f4365a5b47919cc1c0c7c2a6dc9c1e0fe979d0",
+    "skills/dr-congo/cd-vat-gst.md": "c0b7fa52585dd7f28bb1ea916ebf241bb411c6cd0f48a5003c1f96ef905ee8fa",
+    "evidence/dr-congo-remaining-20261101/ledgers/cd-vat-gst.md": "a246c26cad719db21b138fc861aada80c4837530a668c16bee648f263cef561b"
+  },
+  "prior_evidence": "Preserved unchanged; this manifest supersedes only the two candidate hashes for focused correction review.",
+  "parent_additional_source_read": "Original law23/053 PDF29\u201330 and41 actually read from cached loi-23-053-ocr/page-29.txt,page-30.txt,page-41.txt, arts68\u201371/126 and neighbours. Direct pdftotext file had blank pages and was not accepted as reading evidence.",
+  "parent_vat_source_read": "Original25/060 PDF34 and August26/032 PDF9 actually read from cached OCR page-034.txt and page-009.txt including tariff tables and category headings."
+}

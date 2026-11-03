@@ -1,0 +1,660 @@
+[
+  {
+    "guide": "cd-tax-overview",
+    "row": 1,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "25/060 art.16",
+    "page_or_section": "PDF 16",
+    "source_sha256": [
+      "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24"
+    ],
+    "source_urls": [
+      "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf"
+    ],
+    "note": "Carry-forward not a complete consolidation; hold is correctly retained."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 2,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "23/053 arts.7,58–60",
+    "page_or_section": "PDF 13–14,26–27",
+    "source_sha256": [
+      "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402"
+    ],
+    "source_urls": [
+      "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf"
+    ],
+    "note": "Company source/treaty vs habitual-resident individual global-income route; no blanket territorial claim."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 3,
+    "verdict": "repair-required",
+    "act_locator": "DGI navigation; CNSS presentation",
+    "page_or_section": "cached page navigation; institutional status",
+    "source_sha256": [
+      "a9bcebd5f2e14180f902cbfdc3bc7bc44cd66fb676f9d789675133c3dbda7f26",
+      "4989b72705238e7e77e2eae3a8c8b7fc11dcbc19ded62b166978729214ce3b28"
+    ],
+    "source_urls": [
+      "https://dgi.gouv.cd/taxe-sur-la-valeur-ajoutee-tva/",
+      "https://cnss.cd/?page_id=1388"
+    ],
+    "note": "Claim supported by DGI navigation and CNSS institutional page; repair missing CNSS manifest/Sources entry (F2)."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 4,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.97–98",
+    "page_or_section": "PDF 28",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "RCCM personality exception preserved; tax registration is a separate job."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 5,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "25/060 art.17 replacing 004/2003 art.1",
+    "page_or_section": "PDF 16",
+    "source_sha256": [
+      "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24"
+    ],
+    "source_urls": [
+      "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf"
+    ],
+    "note": "Application, paper/online prescribed form and location plan support separate tax-number route."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 6,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "23/053 arts.3–9",
+    "page_or_section": "PDF 12–14",
+    "source_sha256": [
+      "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402"
+    ],
+    "source_urls": [
+      "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf"
+    ],
+    "note": "Form, activity, option and exemption/source classification correctly routed to accepted corporate owner."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 7,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "23/053 arts.58–62,67",
+    "page_or_section": "PDF 26–28",
+    "source_sha256": [
+      "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402"
+    ],
+    "source_urls": [
+      "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf"
+    ],
+    "note": "Habitual residence/source and sum of net categories support route; no salary-only system."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 8,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "23/053 art.12",
+    "page_or_section": "PDF 15",
+    "source_sha256": [
+      "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402"
+    ],
+    "source_urls": [
+      "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf"
+    ],
+    "note": "First-year and cessation exceptions preserved by route rather than universal calendar year."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 9,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "25/060 arts.18,20,22",
+    "page_or_section": "PDF 17–18",
+    "source_sha256": [
+      "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24"
+    ],
+    "source_urls": [
+      "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf"
+    ],
+    "note": "Distinct corporate, individual and employer salary report obligations; dates linked to owners."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 10,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "25/060 arts.45–50;26/032 arts.12–13,49–51",
+    "page_or_section": "PDF 32–37;8–10,17",
+    "source_sha256": [
+      "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24",
+      "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127"
+    ],
+    "source_urls": [
+      "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf",
+      "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf"
+    ],
+    "note": "Original/August VAT classification and commencement evidence read; route does not assert automatic liability."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 11,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "16/009 art.19;23/053 arts.119,145–149",
+    "page_or_section": "PDF 12–13;40,43",
+    "source_sha256": [
+      "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+      "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402"
+    ],
+    "source_urls": [
+      "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf",
+      "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf"
+    ],
+    "note": "Employer contribution permanently employer-borne; payroll/employee credits separated."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 12,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "23/053 art.53;25/060 arts.25–27",
+    "page_or_section": "PDF25–26;20–24",
+    "source_sha256": [
+      "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+      "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24"
+    ],
+    "source_urls": [
+      "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf"
+    ],
+    "note": "Control/group tests warrant screening; own turnover alone cannot dismiss documentation."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 13,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "23/053 arts.142–144;26/032 arts.14–19",
+    "page_or_section": "PDF43;10–11",
+    "source_sha256": [
+      "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402",
+      "8eea6caea4642c8fc2dd9e0e87acd460a6e91698071d89cb1c4642f9b8884127"
+    ],
+    "source_urls": [
+      "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf",
+      "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lfr_2026/lfr_2026_recettes.pdf"
+    ],
+    "note": "Contracts/payment timing and passive scope warrant separate income-tax/VAT jobs; full overlap remains held."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 14,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "23/053 art.141",
+    "page_or_section": "PDF43",
+    "source_sha256": [
+      "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402"
+    ],
+    "source_urls": [
+      "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf"
+    ],
+    "note": "Art141 read with139–140 scope; accounting unit does not set an exchange rate."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 15,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "23/053 art.9",
+    "page_or_section": "PDF14",
+    "source_sha256": [
+      "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402"
+    ],
+    "source_urls": [
+      "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf"
+    ],
+    "note": "Art9 accounting/fiscal bridge; assumed adjustments expressly need independent eligibility evidence."
+  },
+  {
+    "guide": "cd-tax-overview",
+    "row": 16,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "23/053 arts.67,121",
+    "page_or_section": "PDF 28,40",
+    "source_sha256": [
+      "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402"
+    ],
+    "source_urls": [
+      "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf"
+    ],
+    "note": "Art67 categories and121 specific administrative treatment do not give a universal bank-debit credit."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 1,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.1,4–6",
+    "page_or_section": "PDF 8–10",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Act applies to member-state-seat commercial companies and compatible national law; form distinct from individual."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 2,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE art.309",
+    "page_or_section": "PDF 76",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Contribution-limited liability, parts sociales and one/multiple natural/legal founders confirmed."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 3,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.385–386",
+    "page_or_section": "PDF 95",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Single shareholder confirmed visually on PDF95: text layer omits second paragraph of art385."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 4,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.853-1,853-3–853-5",
+    "page_or_section": "PDF 207–208",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "SAS statutory freedom is subject to mandatory rules; no public savings offer."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 5,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE art.311",
+    "page_or_section": "PDF 76",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Art311 expressly reserves national rules; no DRC floor/nominal conclusion made."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 6,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE art.311-1",
+    "page_or_section": "PDF 77",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "All subscribed; cash half on subscription and balance within2years of RCCM per statutes confirmed."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 7,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.311-1–312",
+    "page_or_section": "PDF 77",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "In-kind fully paid; art312 valuation/advantage requirements left as separate held analysis."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 8,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.387,824",
+    "page_or_section": "PDF 95,194",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "10million CFA ordinary SA rule distinguished from public-offer/listing art824; no conversion invented."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 9,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.388–389",
+    "page_or_section": "PDF 95",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Entire SA capital subscribed before signing; quarter cash payment at subscription confirmed."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 10,
+    "verdict": "repair-required",
+    "act_locator": "AUSCGIE art.389",
+    "page_or_section": "PDF 96",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Ledger source correct; Guide omits explicit nominative/capital-increase/bond restrictions, replacing them with vague conditions reference (F1)."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 11,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.853-3,853-5",
+    "page_or_section": "PDF 208",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "SAS capital/nominal statutory;387 first-paragraph exclusion confirmed visually208."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 12,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.116–119",
+    "page_or_section": "PDF 31",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Branch autonomy but no distinct personality; foreign establishment subject to host law and RCCM."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 13,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE art.120",
+    "page_or_section": "PDF 31",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Foreign-owned branch contribution2years after creation; minister commerce dispensation2years nonrenewable with special-regime caveat."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 14,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.12–13",
+    "page_or_section": "PDF 11–12",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Statutes particulars confirmed through continued art13 on PDF12."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 15,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.19–21",
+    "page_or_section": "PDF 12",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Lawful/statutory object and special regulated-activity rules distinct from RCCM."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 16,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.10–11",
+    "page_or_section": "PDF 11",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "National-authentication exception framework preserved; no guessed DRC private/notarial choice."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 17,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.23–26",
+    "page_or_section": "PDF 13",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Office alternatives, precise address and statutory/actual-seat opposition rule confirmed."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 18,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE art.313",
+    "page_or_section": "PDF 77",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Immediate SARL deposit receipt, authorised institutions/formation account or notary; statute notation confirmed."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 19,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE art.314",
+    "page_or_section": "PDF 78",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "National reservation, blocked funds until RCCM and judicial withdrawal route confirmed; no current national release approval."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 20,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.97–101",
+    "page_or_section": "PDF 28–29",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Signing/adoption vs RCCM personality distinct; Act exceptions retained."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 21,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "ANAPI company documents",
+    "page_or_section": "sections2–3",
+    "source_sha256": [
+      "225d78cfc928227049a414bce1d026c091d760812a56f93f7d5e2fa0f6ebe094"
+    ],
+    "source_urls": [
+      "https://anapi.cd/procedures"
+    ],
+    "note": "ANAPI public company preparation list confirmed, not live account workflow."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 22,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "ANAPI foreign-establishment documents",
+    "page_or_section": "section6",
+    "source_sha256": [
+      "225d78cfc928227049a414bce1d026c091d760812a56f93f7d5e2fa0f6ebe094"
+    ],
+    "source_urls": [
+      "https://anapi.cd/procedures"
+    ],
+    "note": "ANAPI foreign-establishment list confirmed; actual current legalisation/translation remains held."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 23,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "ANAPI processing/fee sections",
+    "page_or_section": "sections4–5",
+    "source_sha256": [
+      "225d78cfc928227049a414bce1d026c091d760812a56f93f7d5e2fa0f6ebe094"
+    ],
+    "source_urls": [
+      "https://anapi.cd/procedures"
+    ],
+    "note": "ANAPI published fee/target exists but no current quote/performance promise or observed live sequence asserted."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 24,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "Ministry section6;ANAPI section3",
+    "page_or_section": "complete named sections",
+    "source_sha256": [
+      "4573d7e9d182ae99de2af9a7cdda85954ab6f50f6a95f23fec23ee8dccd7cab3",
+      "225d78cfc928227049a414bce1d026c091d760812a56f93f7d5e2fa0f6ebe094"
+    ],
+    "source_urls": [
+      "https://economie.gouv.cd/rubrique_creation_entreprise",
+      "https://anapi.cd/procedures"
+    ],
+    "note": "Actual ANAPI includes CNSS and Ministry excludes it; conflict remains explicit. Regulation146 does not prove completion."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 25,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "25/060 art.17 replacing 004/2003 art.1",
+    "page_or_section": "PDF 16",
+    "source_sha256": [
+      "6b1f0c92f07d6fda86a1e5178da3b3924e5a838e4b56e0dec1e3f953de63bd24"
+    ],
+    "source_urls": [
+      "https://www.budget.gouv.cd/wp-content/uploads/budget2026/lf_2026_recettes.pdf"
+    ],
+    "note": "15-day request after activity start, location plan/prescribed model and ex-officio assignment confirmed."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 26,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "Regulation 146 art.4",
+    "page_or_section": "PDF 118",
+    "source_sha256": [
+      "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99"
+    ],
+    "source_urls": [
+      "https://cnss.cd/wp-content/uploads/2024/04/Recueil-de-textes-legal-reglementaires-et-mesures-dexecution-de-la-loi-16-009-du-15-juillet-2016-1.pdf"
+    ],
+    "note": "GUCE creators vs other employers Mod.AE territorial8-day route and one request for establishments confirmed."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 27,
+    "verdict": "repair-required",
+    "act_locator": "AUSCGIE arts.120-1–120-5",
+    "page_or_section": "PDF 32",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Representation auxiliary/no autonomy/no personality/RCCM and30-day correction confirmed; source page scope omits32 (F3)."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 28,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.137–140",
+    "page_or_section": "PDF 36",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032"
+    ],
+    "note": "Annual statements/report;6month assembly and45day auditor delivery condition confirmed; full audit/accounting scope held."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 29,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "AUSCGIE arts.120,120-5;OHADA description",
+    "page_or_section": "PDF 31–32;penal-legislation paragraph",
+    "source_sha256": [
+      "dafece15811eeebcb08d14dde6b1a382451733f0e91d6f3a8d4fc369a441dc01",
+      "a0e7edb5c407874132c257796ac835a68155a581c245a03a27d3c1cd4d2c4e87"
+    ],
+    "source_urls": [
+      "https://biblio.ohada.org/doc_num.php?explnum_id=2032",
+      "https://www.ohada.org/droit-des-societes-commerciales-et-du-gie/"
+    ],
+    "note": "Judicial/registry removal process and national penalty-law boundary supported; no invented fine."
+  },
+  {
+    "guide": "cd-company-formation",
+    "row": 30,
+    "verdict": "pass-with-stated-holds",
+    "act_locator": "23/053 arts.7–8",
+    "page_or_section": "PDF 13–14",
+    "source_sha256": [
+      "912180f40cb264b26a66a0b6f79aa710b1e838f4679f4c614f8ba890f5117402"
+    ],
+    "source_urls": [
+      "https://dgi.gouv.cd/wp-content/uploads/2025/09/loi-is-et-Irpp.pdf"
+    ],
+    "note": "Formation/branch labels do not settle full PE/treaty/immigration/credit status; route and holds correctly limited."
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "content_commit": "d1d00c7e1f69c24807bcc995e8eb50ebffeda7bd",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "changed_validator": "4 actual Guides; zero warnings",
+  "strict_metadata_audit": "4 source Guides; zero errors/warnings/notices",
+  "examples": "4 blocks; zero failures",
+  "whole_base_whitespace": "pass",
+  "closure": "exact source/Guide hashes accepted; all legal and implementation holds retained"
+}

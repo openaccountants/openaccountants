@@ -1,0 +1,64 @@
+{
+  "reviewed_on": "2026-11-01",
+  "initial_frozen_commit": "b435b7850452671fea8471b85e545fa87ec80395",
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "exact_candidate_bindings": {
+    "skills/dr-congo/cd-payroll-social.md": {
+      "sha256": "8adef16e9e7017543e35d66a8d88adebcfba42cab5c09108686109f3b1ff7ebc",
+      "git_blob": "0ddf1aaa26ef7b961ad55984f265e25ef02d908d"
+    },
+    "evidence/dr-congo-remaining-20261101/ledgers/cd-payroll-social.md": {
+      "sha256": "e06d687004bc0445492689d927f4365a5b47919cc1c0c7c2a6dc9c1e0fe979d0",
+      "git_blob": "8c825bec230eb75d98e5dc8a88d0c5a0d2683124"
+    },
+    "skills/dr-congo/cd-vat-gst.md": {
+      "sha256": "c0b7fa52585dd7f28bb1ea916ebf241bb411c6cd0f48a5003c1f96ef905ee8fa",
+      "git_blob": "bc4aa2bfa03d49c64d7301529a3e5aa7e3ac1157"
+    },
+    "evidence/dr-congo-remaining-20261101/ledgers/cd-vat-gst.md": {
+      "sha256": "a246c26cad719db21b138fc861aada80c4837530a668c16bee648f263cef561b",
+      "git_blob": "741219e5c476ebb7cd21f8a91f45026f86d03174"
+    }
+  },
+  "repair_manifest_sha256": "d03140a1131dd16dd9fe1e1c736de26c3faa1dad85ffc07e042b043b94a93e25",
+  "closure_checks": [
+    {
+      "row": "payroll29",
+      "verdict": "closed",
+      "source": "CNSS Regulation138 arts6–7, PDF69",
+      "quoted_fragments": [
+        {
+          "quote": "n’est pas suspensif de paiement des cotisations principales",
+          "sha256": "c8c9a367589f0bb346e5367000fe2e4f2e4b4313a4332472f02a4a3ead230c82"
+        },
+        {
+          "quote": "Le recours n’est recevable qu’après paiement intégral des cotisations principales",
+          "sha256": "dc02ef0b60b7ee03a5765ed460e04286a5100d3e8d4aae842c8efacbb13f9045"
+        }
+      ],
+      "source_sha256": "fa3ffd68ab104bc32cda165acb05f395468dfa501260a64734b64ccf6866ff99",
+      "finding": "Repaired Guide and ledger require principal payment and retain no-stay/admissibility conditions."
+    },
+    {
+      "row": "payroll17–18",
+      "verdict": "closed",
+      "source": "Law23/053 arts70–71,118–119,121,126; PDF29–30,39–41",
+      "finding": "Row17 now29–30;39–41 and row18 now29–30;40; actual art70 beginning and126 included."
+    },
+    {
+      "row": "VAT12",
+      "verdict": "closed",
+      "source": "25/060 art46 PDF34;26/032 art13 PDF9",
+      "finding": "Neutral joint heading, original local-industry purpose and distinct August local-acquisition wording now accurately separated."
+    }
+  ],
+  "final_ledger_rows_checked": 71,
+  "old_topic_destinations_checked": 27,
+  "examples_recomputed": 4,
+  "example_checker": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing",
+  "cta_equal_to_frozen": true,
+  "platform_fields_equal_to_frozen": true,
+  "six_prior_guides_unchanged": true,
+  "all_seven_domains_partial": true,
+  "final_verdict": "accepted conditional source fidelity only; no remaining defect within reviewed scope; no operative-law completeness/currentness, filing approval, publication or accountant attestation"
+}
