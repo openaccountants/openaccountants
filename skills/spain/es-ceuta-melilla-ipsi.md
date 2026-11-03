@@ -14,9 +14,11 @@ description: >
 jurisdiction: ES
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-28
 version: 0.2
+reviewed_by: "Jeff Watts"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Spain: ordinary IPSI in Ceuta and Melilla for2026

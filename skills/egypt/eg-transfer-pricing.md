@@ -5,14 +5,13 @@ version: 0.2
 jurisdiction: EG
 tax_year: 2026
 last_updated: 2026-11-02
-authored_by: Ahmed Hassan
-review_status: pending_review
-trust_label: Accountant-authored
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ahmed Hassan"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Egypt Transfer Pricing (تسعير المعاملات بين الأشخاص المرتبطة) Skill v0.2

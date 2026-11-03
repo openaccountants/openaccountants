@@ -4,9 +4,9 @@ description: "Prepare Chad transfer pricing working papers for 2026 for foreign 
 jurisdiction: TD
 category: transfer-pricing
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: 1.0
+tier: 2
 ---
 
 # Chad transfer pricing v1.0

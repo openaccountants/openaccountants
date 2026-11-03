@@ -4,11 +4,8 @@ description: "Will a family's home country tax its foreign holding company anywa
 jurisdiction: general
 tax_year: 2026
 last_updated: 2026-10-12
-authored_by: Michael Cutajar, CPA, ACCA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Will the family's home country tax the holding company anyway? CFC and substance rules compared

@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: payroll
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: "0.16"
-verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/Self-Employed/New%20Forms/SE1%20Application%20for%20trade%20income.pdf"
     title: "ITO SE1 trade-income registration form, sections 3–9"
@@ -79,10 +77,8 @@ sources:
   - url: "https://www.gibraltar.gov.gi/contacts/income-tax-office-76"
     title: "Current ITO contact page: social-insurance and payroll routes"
     as_of: "2026-10-28"
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Gibraltar payroll and social insurance v0.16

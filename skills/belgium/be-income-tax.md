@@ -5,13 +5,11 @@ version: 2.2
 jurisdiction: BE
 tax_year: 2026
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Belgium: income tax for the self-employed (income 2026, assessment year 2027) v2.1

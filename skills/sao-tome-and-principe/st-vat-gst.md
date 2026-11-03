@@ -4,12 +4,10 @@ description: "Use this skill for tax year 2026 working papers in Sao Tome and Pr
 jurisdiction: ST
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 0.2
 category: international
+tier: 2
 ---
 
 # Sao Tome and Principe VAT v0.2

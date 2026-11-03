@@ -3,11 +3,10 @@ name: capital-gains-tax-rate-tables-2023-to-2027
 description: CGT exclusions and the inclusion rate for natural persons, plus tax-free savings account limits, keyed by year of assessment 2023 to 2027, with the order the exclusions must be applied in.
 jurisdiction: ZA
 last_updated: 2026-09-02
-authored_by: Brandon Iverach
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Brandon Iverach"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # South Africa — Capital Gains Tax Rate Tables (natural persons)

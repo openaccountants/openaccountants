@@ -4,9 +4,9 @@ description: "Prepare a Benin individual business-profit tax working paper for 2
 jurisdiction: BJ
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Benin individual business IBA working paper v0.1

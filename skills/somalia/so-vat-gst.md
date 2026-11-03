@@ -3,15 +3,13 @@ name: so-vat-gst
 description: >
   Somalia domestic sales-tax invoice working paper for2026 preparation using the signed2023 sales-tax expansion regulation and a dated archive of its official publication. Use for ordinary domestic taxable goods or services, tax-exclusive versus fixed tax-inclusive prices, invoice numbers, sale dates and ledger reconciliation. It gives two executable examples and names the actual seller and completion-tax-point rules. It does not extend the general rate into sectors where current authority summaries conflict with the regulation. Registration, exemptions, digital split payment, current return fields, deadlines, receipts and cross-border credit or reverse-charge treatment remain explicit gaps. The prior blanket VAT-mechanism claims are held as unsupported. This is a bounded invoice method with independent source review limited to this conditional baseline, not a completed return, country-completion claim or licensed accountant attestation.
 jurisdiction: SO
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tax_year: 2026
 last_updated: 2026-11-01
 version: 0.1
 tax_year_notes: "2026 preparation from enacted statutory baseline; effective implementation and current filing workflow unresolved."
+tier: 2
 ---
 
 # Somalia ordinary domestic sales-tax invoice method v0.1

@@ -15,13 +15,11 @@ version: 2.0
 jurisdiction: MA
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # MA Bookkeeping v2.0

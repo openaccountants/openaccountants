@@ -6,8 +6,8 @@ description: >
   Integration skill for Wise (formerly TransferWise) statement CSV exports. Activate when the user uploads a Wise
   statement, Wise CSV, or mentions Wise, TransferWise, or multi-currency transfers.
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
 ---
 
 # Wise Integration Skill v1.0

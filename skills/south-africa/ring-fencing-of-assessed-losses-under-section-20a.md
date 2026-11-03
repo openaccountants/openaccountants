@@ -3,11 +3,10 @@ name: ring-fencing-of-assessed-losses-under-section-20a
 description: From 1 March 2026 section 20A bites from the 39% marginal rate, not 45% — the threshold roughly halves and a geared residential rental becomes ring-fenced by default.
 jurisdiction: ZA
 last_updated: 2026-09-02
-authored_by: Brandon Iverach
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Brandon Iverach"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Ring-fencing of Assessed Losses under Section 20A

@@ -5,9 +5,9 @@ jurisdiction: BJ
 category: international
 tax_year: 2026
 tax_year_notes: "DGI CGI 2026 with selected original and June rectifying Finance Law checks; unresolved instruments and specialist interactions remain held"
-tier: 2
 last_updated: 2026-11-01
 version: 1.0.0
+tier: 2
 ---
 
 # Benin Property Gains Tax (TPVI) - v1.0.0

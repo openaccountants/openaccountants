@@ -5,7 +5,6 @@ description: >
 jurisdiction: GG
 category: payroll
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: "0.11"
 sources:
@@ -39,10 +38,8 @@ sources:
   - url: "https://gov.gg/CHttpHandler.ashx?id=196680&p=0"
     title: "SIC1 published 22 December 2025"
     as_of: "2026-10-22"
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Guernsey payroll and social contributions v0.11

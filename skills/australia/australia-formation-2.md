@@ -3,11 +3,10 @@ name: australia-formation-2
 description: Choose and register an Australian company, obtain consents and director IDs, and arrange tax registrations and ongoing administration.
 jurisdiction: AU
 last_updated: 2026-09-08
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Forming an Australian company

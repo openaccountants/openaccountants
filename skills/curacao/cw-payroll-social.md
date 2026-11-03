@@ -4,11 +4,8 @@ description: "Source-cited draft: payroll & social contributions for Curacao (ta
 jurisdiction: CW
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Curaçao payroll: wage tax (loonbelasting), AOV/AWW, AVBZ and BVZ premiums, ZV, OV and cessantia, filing dates and year-end statements (2026, with 2025 notes)

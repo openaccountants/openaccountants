@@ -4,13 +4,11 @@ description: "Prepare an ordinary company income-tax workpaper for DR Congo for 
 jurisdiction: CD
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 1.1
 tax_year_notes: "Income earned in 2026 under the IS reform; ordinary calculation and filing preparation only. Earlier IBP periods, transition cases and the full carried-2025 measure chain require separate work; no final 2026 liability or live filing approval."
+tier: 2
 ---
 
 # DR Congo corporate income tax: ordinary IS workpaper v1.1

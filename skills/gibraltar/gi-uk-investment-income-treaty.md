@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: cross-border
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 version: "0.9"
-verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/uploads/Income%20Tax%20Office/docs/Supporting%20documentation%20for%20UK%20tax%20treaty%20relief%20application.pdf"
     title: "Gibraltar ITO: supporting documentation for company UK-interest treaty relief"
@@ -28,6 +26,7 @@ sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties"
     title: "HMRC: Gibraltar tax treaties, entry into force and effective dates"
     as_of: "2026-10-22"
+tier: 2
 ---
 
 # UK–Gibraltar: investment income and capital gains

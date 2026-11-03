@@ -3,15 +3,13 @@ name: so-corporate-income-tax
 description: >
   Somalia ordinary corporation income-tax working paper for 2026 preparation from the enacted Income Tax Act 37 of 2025. Use for company profit reconciliation, statutory deduction limits, losses, tax-base decisions and return preparation. It identifies the corporation rate, accrual accounting, the overall business-deduction ceiling, capital expenditure and the difference between book profit and taxable income. Two executable examples compute an ordinary profit and the deduction-ceiling decision. Taxpayer classification, effective implementation, specialist sectors, cross-border outcomes and live form and payment instructions remain explicit gates. It replaces unsupported legacy company scales while preserving predecessor topics in a destination ledger and the platform attribution and contact block. It provides a conditional statutory baseline, not a completed filing, current-law assurance or licensed accountant attestation.
 jurisdiction: SO
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tax_year: 2026
 last_updated: 2026-11-01
 version: 0.1
 tax_year_notes: "2026 preparation from enacted statutory baseline; effective implementation and current filing workflow unresolved."
+tier: 2
 ---
 
 # Somalia ordinary company income-tax reconciliation v0.1

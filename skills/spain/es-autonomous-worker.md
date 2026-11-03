@@ -5,15 +5,13 @@ version: 1.4
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-10-28
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
   - es-income-tax
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Spain self-employment: 2026 tax, contributions and cash reconciliation v1.4

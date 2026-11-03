@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: invoicing
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-22
 version: 0.3
-verified_by: pending
 sources:
   - url: "https://ec.europa.eu/digital-building-blocks/sites/spaces/DIGITAL/pages/467108934/Required%2Bsyntaxes"
     title: "European Commission: Required syntaxes, updated 2 February 2026"
@@ -25,6 +23,7 @@ sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf"
     title: "Companies Act 2014, sections 179–180, 1 August 2025 consolidation"
     as_of: "2026-10-22"
+tier: 2
 ---
 
 # Gibraltar: invoices and public procurement e-invoicing

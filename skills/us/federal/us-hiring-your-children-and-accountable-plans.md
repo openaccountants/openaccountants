@@ -4,11 +4,8 @@ description: How a US business owner can pay their own child a reasonable wage (
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-03
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Hiring your children and reimbursing owners through an accountable plan

@@ -4,11 +4,8 @@ description: "Compare special tax residence regimes for wealthy, internationally
 jurisdiction: general
 tax_year: 2026
 last_updated: 2026-10-12
-authored_by: Michael Cutajar, CPA, ACCA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Residency regimes for wealthy families compared: Malta, Italy, Portugal, Switzerland, UAE, Singapore, UK, Ireland and Cyprus

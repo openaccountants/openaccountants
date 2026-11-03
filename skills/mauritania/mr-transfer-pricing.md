@@ -4,10 +4,10 @@ description: "Prepare a source-based Mauritania research file for arm\u2019s-len
 jurisdiction: MR
 tax_year: 2026
 last_updated: 2026-11-01
-tier: 2
 category: transfer-pricing
 version: 0.2
 tax_year_notes: "2026 research draft; cited historical baseline and selected later replacements; operative amendment chain incomplete"
+tier: 2
 ---
 
 # Mauritania Transfer Pricing and CbCR v0.2

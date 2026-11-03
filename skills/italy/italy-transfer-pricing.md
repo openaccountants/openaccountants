@@ -5,15 +5,13 @@ version: 1.1
 jurisdiction: IT
 tax_year: 2026
 last_updated: 2026-10-29
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Transfer pricing in Italy (prezzi di trasferimento) v1.1

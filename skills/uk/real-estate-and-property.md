@@ -6,11 +6,10 @@ category: international
 tax_year: 2026
 last_updated: 2026-10-30
 version: 1.1
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Nadir Khan"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Real Estate and Property in the United Kingdom: buying, letting and selling

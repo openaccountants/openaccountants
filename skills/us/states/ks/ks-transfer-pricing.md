@@ -13,14 +13,13 @@ version: 0.1
 jurisdiction: US-KS
 tax_year: 2026
 last_updated: 2026-10-29
-authored_by: Jeff Watts
-review_status: pending_review
-trust_label: Accountant-authored
 depends_on:
   - ks-corporate-income-tax
 category: transfer-pricing
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Jeff Watts"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Kansas transfer pricing, tax year 2026

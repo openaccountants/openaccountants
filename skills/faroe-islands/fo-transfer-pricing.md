@@ -16,11 +16,9 @@ description: >
 jurisdiction: FO
 category: transfer-pricing
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-25
 version: 0.2
-verified_by: pending
-review_status: pending_review
+tier: 2
 ---
 
 # Faroe Islands transfer pricing v0.2

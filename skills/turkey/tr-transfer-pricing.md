@@ -4,9 +4,9 @@ description: "Turkish transfer pricing for tax year 2026 under Corporate Tax Law
 jurisdiction: TR
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 version: 0.1
+tier: 2
 ---
 
 # Türkiye: transfer pricing (transfer fiyatlandırması) (2026) v0.1

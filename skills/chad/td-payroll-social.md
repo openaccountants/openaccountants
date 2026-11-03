@@ -4,12 +4,10 @@ description: "Prepare Chad payroll and social contribution working papers for 20
 jurisdiction: TD
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
 version: 1.2
+tier: 2
 ---
 
 # Chad payroll and social contributions v1.2

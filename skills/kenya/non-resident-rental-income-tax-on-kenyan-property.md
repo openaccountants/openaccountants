@@ -4,11 +4,10 @@ description: "Non-resident rental income tax on Kenyan property: a guide for for
 jurisdiction: KE
 tax_year: 2025
 last_updated: 2026-07-29
-authored_by: Julian Njoroge Maina, CPA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Julian Njoroge Maina"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Non-resident rental income tax on Kenyan property: a guide for foreign landlords

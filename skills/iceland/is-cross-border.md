@@ -14,9 +14,9 @@ description: >
 jurisdiction: IS
 category: cross-border
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-30
 version: 0.7
+tier: 2
 ---
 
 # Iceland cross-border tax screening v0.7

@@ -7,7 +7,6 @@ category: cross-border
 tax_year: 2026
 last_updated: 2026-11-02
 tier: 2
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 ---
 
 # Egypt cross-border: residence, source, permanent establishment, non-resident withholding and foreign tax credit v0.1

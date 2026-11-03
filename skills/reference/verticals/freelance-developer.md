@@ -4,8 +4,8 @@ description: Industry vertical for freelance software developers, web developers
 version: 1.0
 category: vertical
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
 ---
 
 # Freelance Developer Vertical Skill v1.0

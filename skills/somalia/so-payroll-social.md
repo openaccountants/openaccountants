@@ -3,15 +3,13 @@ name: so-payroll-social
 description: >
   Somalia employer withholding and payroll working paper for 2026 preparation from Income Tax Act 37 of 2025 and published Revenue Directorate monthly guidance. Use for salary, bonuses, allowances, expense reimbursements, withholding reports, employee certificates and employer liability. It separates the employment-income base from cash outlay and distinguishes an evidenced employer-business reimbursement from a personal allowance. Two executable examples compute simple resident monthly withholding and that classification decision. The method preserves the statutory remittance and employment-certificate deadlines while explicitly holding the current form, payment and acknowledgement workflow. Implementation directions, complex payroll, social contributions and pensions remain unresolved jobs; no zero-contribution conclusion is made. Monthly guidance does not settle the annual table discrepancy. This is a conditional working paper with independent source review limited to this conditional baseline, not a filing or accountant attestation.
 jurisdiction: SO
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
 tax_year: 2026
 last_updated: 2026-11-01
 version: 0.1
 tax_year_notes: "2026 preparation from enacted statutory baseline; effective implementation and current filing workflow unresolved."
+tier: 2
 ---
 
 # Somalia employer withholding and payroll reconciliation v0.1

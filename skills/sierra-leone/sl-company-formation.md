@@ -1,15 +1,13 @@
 ---
 name: sl-company-formation
 jurisdiction: SL
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 description: "Sierra Leone company formation and reporting workpaper for the 2026 research year. Use to identify company type, incorporation documents, subscribers, officers, share subscriptions, company records, annual returns and foreign-company registration. It reads selected original Companies Act provisions together with the actual 2014 amendment and National Investment Board Act 2022. The advertised 2026 replacement download is a bill with an unproved commencement, so its new procedures are held rather than adopted. Two computations distinguish subscription and issuance shortfalls and test the director ownership limb of small-company status. Current monetary limits, forms, fees, reform implementation and the complete operative amendment chain remain unresolved. It preserves predecessor topics and sends tax computations to their existing owning Guides."
 tax_year: 2026
 tax_year_notes: "2026 research intake; conditional source baseline, full current law and filing implementation unresolved"
 last_updated: 2026-11-01
 version: 1.0
+tier: 2
 ---
 
 # Sierra Leone Company Formation and Reporting v1.0

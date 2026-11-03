@@ -4,12 +4,11 @@ description: "Use this skill to turn a German self-employed person's year of ban
 version: 2.7
 jurisdiction: DE
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 category: international
 depends_on:
   - income-tax-workflow-base
-verified_by: pending
+tier: 2
 ---
 
 # Germany: income tax for the self-employed, from bank statement to tax, tax year 2026

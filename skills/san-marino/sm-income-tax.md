@@ -5,12 +5,10 @@ description: >
 jurisdiction: SM
 tax_year: 2026
 last_updated: 2026-10-30
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 0.4
+tier: 2
 ---
 
 # San Marino personal income tax v0.4

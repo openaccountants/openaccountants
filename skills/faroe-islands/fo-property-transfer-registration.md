@@ -18,9 +18,9 @@ description: >
 jurisdiction: FO
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 version: 0.2
+tier: 2
 ---
 
 # Faroe Islands property-transfer and mortgage registration v0.2

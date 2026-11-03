@@ -11,9 +11,9 @@ description: >
 version: 0.1
 jurisdiction: MA
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 category: cross-border
+tier: 2
 ---
 
 # Morocco cross-border tax v0.1

@@ -5,15 +5,13 @@ version: 1.2
 jurisdiction: FR
 tax_year: 2026
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
   - einvoice-workflow-base
 category: invoicing
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # French e-invoicing (facturation électronique) and e-reporting

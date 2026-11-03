@@ -4,11 +4,10 @@ description: "Source-cited draft: corporate income tax for Malaysia (tax year 20
 jurisdiction: MY
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: MUHAMMAD HANIS MAT HUSSIN, CA-53636
-review_status: current
-trust_label: Checked by MUHAMMAD HANIS MAT HUSSIN, CA-53636
-tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "MUHAMMAD HANIS MAT HUSSIN"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Malaysia Corporate Income Tax

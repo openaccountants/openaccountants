@@ -16,8 +16,8 @@ jurisdiction: CD
 category: cross-border
 tax_year: 2026
 last_updated: 2026-11-01
-tier: 2
 version: 0.2
+tier: 2
 ---
 
 # DR Congo nonresident payments v0.2

@@ -12,14 +12,12 @@ description: >
 version: 2.0
 jurisdiction: MA
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 category: international
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 depends_on:
   - income-tax-workflow-base
+tier: 2
 ---
 
 # Morocco: personal income tax on professional income (IR), 2026

@@ -205,6 +205,21 @@ def changed_files():
             if p.endswith(".md") and p not in moved and os.path.isfile(os.path.join(REPO_ROOT, p))]
 
 
+def body_unchanged(path):
+    """True when a PR changed only the frontmatter (e.g. who approved it).
+
+    A relabel must not fail for a missing example the content itself predates.
+    """
+    rel = os.path.relpath(path, REPO_ROOT)
+    base = os.environ.get("BASE_REF", "main")
+    old = subprocess.run(["git", "show", f"origin/{base}:{rel}"], capture_output=True, text=True, cwd=REPO_ROOT)
+    if old.returncode != 0:
+        return False
+    strip = lambda t: re.sub(r"\A---\n.*?\n---\n", "", t, count=1, flags=re.S)
+    with open(path, encoding="utf-8") as fh:
+        return strip(old.stdout) == strip(fh.read())
+
+
 def all_skill_files():
     paths = []
     for tree in ("skills", os.path.join("packages", "us-federal")):
@@ -241,7 +256,7 @@ def main(argv=None):
         found, fails = check_file(path)
         total_blocks += found
         failures.extend(fails)
-        if args.require and found == 0 and is_tax_skill(path):
+        if args.require and found == 0 and is_tax_skill(path) and not (args.changed_only and body_unchanged(path)):
             missing.append(os.path.relpath(path, REPO_ROOT))
 
     for line in failures:

@@ -14,9 +14,9 @@ description: >
 jurisdiction: IS
 category: transfer-pricing
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-30
 version: 0.3
+tier: 2
 ---
 
 # Iceland transfer pricing v0.3

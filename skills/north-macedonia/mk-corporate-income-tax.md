@@ -4,12 +4,10 @@ description: "Use this skill for North Macedonia corporate profit tax for calend
 jurisdiction: MK
 tax_year: 2026
 last_updated: 2026-10-30
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 0.3
 category: international
+tier: 2
 ---
 
 # North Macedonia corporate income tax v0.3

@@ -6,9 +6,9 @@ jurisdiction: TD
 category: cross-border
 tax_year: 2026
 tax_year_notes: "Arrêté 135: imports from signature on 9 September 2026; earlier periods excluded."
-tier: 2
 last_updated: 2026-11-01
 version: 0.2
+tier: 2
 ---
 
 # Chad import-exemption eligibility v0.2

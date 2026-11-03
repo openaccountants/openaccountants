@@ -4,12 +4,10 @@ description: A working draft for South African employers and their tax practitio
 jurisdiction: ZA
 tax_year: 2026
 last_updated: 2026-09-03
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # EMP501 reconciliation and IRP5 corrections on e@syFile in South Africa

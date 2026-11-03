@@ -5,7 +5,6 @@ description: >
 jurisdiction: GG
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: "0.11"
 sources:
@@ -45,10 +44,8 @@ sources:
   - url: "https://gov.gg/revenue-service/personal-tax-returns"
     title: "Personal returns and agency guidance"
     as_of: "2026-10-22"
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Guernsey individual income tax and residence v0.11

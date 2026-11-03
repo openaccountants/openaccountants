@@ -5,14 +5,11 @@ version: 1.2
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-30
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Bookkeeping and record keeping in the UK for sole traders, partnerships and small companies

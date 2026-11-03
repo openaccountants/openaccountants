@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: bookkeeping
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-22
 version: 0.1
-verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Gibraltar Income Tax Act 2010: consolidation dated 23 March 2026, sections 63–63A"
@@ -16,6 +14,7 @@ sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf"
     title: "Gibraltar Companies Act 2014: consolidation dated 1 August 2025, section 239"
     as_of: "2026-10-22"
+tier: 2
 ---
 
 # Gibraltar: bookkeeping and tax records

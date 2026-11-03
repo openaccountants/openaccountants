@@ -4,11 +4,9 @@ description: "Morocco payroll for tax year 2026: employer withholding of IR on s
 jurisdiction: MA
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 1.1
+tier: 2
 ---
 
 # Morocco payroll, tax year 2026

@@ -6,13 +6,13 @@ jurisdiction: GB
 category: international
 tax_year: 2026
 tax_year_notes: "2026-27"
-tier: 2
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "James Power"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # UK self-employment: sole trader profits on the SA103 (2026-27, with 2025-26)

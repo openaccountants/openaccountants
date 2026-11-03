@@ -5,12 +5,9 @@ version: 2.1
 jurisdiction: IE
 tax_year: 2026
 last_updated: 2026-10-26
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Ireland Universal Social Charge (USC), tax year 2026

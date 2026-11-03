@@ -5,15 +5,12 @@ version: 1.2
 jurisdiction: NL
 tax_year: 2026
 last_updated: 2026-10-31
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
   - payroll-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Netherlands: payroll (loonheffingen), work-cost scheme (WKR) and final levies 2026

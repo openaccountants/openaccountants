@@ -4,13 +4,10 @@ description: "当被问及中国企业所得税（CIT）相关事宜时使用本
 jurisdiction: CN
 tax_year: 2026
 last_updated: 2026-10-29
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 1.1
 category: international
+tier: 2
 ---
 
 

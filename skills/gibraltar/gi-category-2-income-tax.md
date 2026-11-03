@@ -7,7 +7,6 @@ description: >
   Prepare Gibraltar Category 2 certificate applications, annual income classification, capped ABS calculations, part-year minimum-tax working papers and the published IT1C filing/payment workflow. Covers individuals and Rule 11 family elections, previous presence and activity tests, permitted Gibraltar work, property income outside the cap, foreign-income exclusions and elections, certificate continuation and surrender. Uses the current June 2026 Rules and application pack, the 2025-26 return and 2026-27 payment dates. Distinguishes the application fee, certificate advance tax, payments on account and actual bank transfer. Announced wealth-policy implementation, cash allocation and named source conflicts remain explicit; this source-cited draft is not professional attestation.
 tax_year: 2026
 tax_year_notes: "2025-26 IT1C return; 2026-27 certificate and payments"
-tier: 2
 last_updated: 2026-10-31
 version: "0.1"
 depends_on:
@@ -53,6 +52,7 @@ sources:
   - url: "https://www.gibraltar.gov.gi/new/sites/default/files/1/01/Guidance_notes-Qualifying_Individuals.pdf"
     title: "May 2011 qualifying-individual guidance: historical comparison only"
     as_of: "2026-10-31"
+tier: 2
 ---
 
 # Gibraltar Category 2 certificate, income tax and IT1C v0.1

@@ -4,9 +4,9 @@ description: "Madagascar 2026 domestic non-resident service withholding, royalty
 jurisdiction: MG
 category: cross-border
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: 1.0
+tier: 2
 ---
 
 # Madagascar cross-border: non-resident services and PE triage

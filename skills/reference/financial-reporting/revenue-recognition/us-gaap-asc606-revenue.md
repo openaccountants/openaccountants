@@ -5,15 +5,14 @@ version: 0.1
 jurisdiction: US
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: James Wallach
-review_status: current
-trust_label: Checked by James Wallach
 source_checked: 2026-10-16
 depends_on:
   - financial-reporting-workflow-base
 category: financial-reporting
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Vladimir Andjelic"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # US GAAP Asc606 Revenue

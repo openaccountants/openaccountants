@@ -4,13 +4,11 @@ description: "Prepare a DR Congo company-formation and entity-choice research fi
 jurisdiction: CD
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
 version: 1.0
 tax_year_notes: "2026 research and preparation only; stated national-law, carried-law, implementation and filing holds remain."
+tier: 2
 ---
 
 # DR Congo company formation and entity choice: research workpaper v1.0

@@ -6,10 +6,8 @@ jurisdiction: US-ME
 tax_year: 2025
 tax_year_notes: Rates for prepared food, lodging and short-term auto rental checked against 36 MRSA s.1811 on 2026-11-01. Economic nexus threshold checked against 36 MRSA s.1754-B on 2026-11-03. Other figures not re-read.
 last_updated: 2026-11-03
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # ME Sales Tax

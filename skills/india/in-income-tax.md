@@ -6,11 +6,11 @@ version: 2.0
 jurisdiction: IN
 tax_year: 2025
 tax_year_notes: "2025-26"
-tier: 2
 last_updated: 2026-07-04
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
 ---
 
 # India Income Tax (आयकर) -- Self-Employed Skill v2.0

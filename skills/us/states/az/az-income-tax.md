@@ -2,10 +2,10 @@
 name: az-income-tax
 description: Use this skill whenever asked about Arizona individual income tax for self-employed individuals or sole proprietors — filing Form 140, AZ estimated tax (Form 140ES), Arizona flat tax rate, Arizona standard deduction, or any query involving Arizona state income tax compliance. Trigger on phrases like "Arizona income tax", "AZ income tax", "Form 140", "Arizona estimated tax", "Arizona self-employed tax", "AZDOR income tax", "Arizona flat tax", or "ARS §43".
 jurisdiction: US-AZ
-tier: 2
 last_updated: 2026-06-12
 version: "0.1"
 validation_status: ai-drafted-q3
+tier: 2
 ---
 
 # Arizona Individual Income Tax Skill — Self-Employed / Sole Proprietor

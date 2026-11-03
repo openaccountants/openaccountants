@@ -5,14 +5,11 @@ version: 0.1
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - cross-border-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # US reporting of foreign trusts and large foreign gifts (Forms 3520 and 3520-A)

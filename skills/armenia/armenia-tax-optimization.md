@@ -5,11 +5,9 @@ version: 0.4
 jurisdiction: AM
 tax_year: 2026
 last_updated: 2026-10-28
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: tax-optimization
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Armenia business tax planning v0.4

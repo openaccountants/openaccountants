@@ -6,12 +6,11 @@ description: >
 version: 1.1
 jurisdiction: GLOBAL
 last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
 category: integration
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Xero Integration Skill v1.1

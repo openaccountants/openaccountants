@@ -5,14 +5,11 @@ version: 2.0
 jurisdiction: US-PA
 tax_year: 2026
 last_updated: 2026-09-25
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - us-sales-tax
 category: us-states
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Pennsylvania sales and use tax: 2026 collection, nexus and filing

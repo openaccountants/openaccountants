@@ -4,11 +4,8 @@ description: Use this skill whenever asked to prepare, review, or classify trans
 jurisdiction: SG
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Singapore GST: registration, the GST F5 return, input tax, reverse charge and penalties (2026)

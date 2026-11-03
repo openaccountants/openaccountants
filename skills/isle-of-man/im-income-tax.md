@@ -6,10 +6,8 @@ tax_year: 2026
 last_updated: 2026-10-30
 version: 0.3
 category: international
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Isle of Man: personal income tax for residents (2026/27) v0.3

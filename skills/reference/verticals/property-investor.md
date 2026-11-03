@@ -4,8 +4,8 @@ description: Industry vertical for property investors including residential land
 version: 1.0
 category: vertical
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
 ---
 
 # Property Investor Vertical Skill v1.0

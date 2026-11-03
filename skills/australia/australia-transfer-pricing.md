@@ -5,14 +5,13 @@ version: 1.2
 jurisdiction: AU
 tax_year: 2025
 last_updated: 2026-09-10
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Australia Transfer Pricing

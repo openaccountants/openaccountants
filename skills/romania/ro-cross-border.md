@@ -5,12 +5,9 @@ version: 0.3
 jurisdiction: RO
 tax_year: 2026
 last_updated: 2026-11-01
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: cross-border
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Romania cross-border: residence, arriving, leaving, non-residents and withholding (2026)

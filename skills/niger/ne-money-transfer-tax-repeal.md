@@ -5,9 +5,9 @@ description: >
 jurisdiction: NE
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Niger money-transfer tax repeal review v0.1

@@ -5,13 +5,9 @@ jurisdiction: DE
 category: international
 tax_year: 2026
 last_updated: 2026-10-29
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 version: 0.3
-verified_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Germany and Switzerland: frontier commuters, weekly stayers and movers, tax year 2026

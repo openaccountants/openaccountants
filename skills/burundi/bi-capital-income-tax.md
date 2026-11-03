@@ -4,11 +4,11 @@ description: "Compute the verified part of an individual's Burundi capital-incom
 jurisdiction: BI
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: 0.2
 job: individual-capital-income-disposal-gains
 tax_year_notes: "Calendar 2026; January and July enacted budget periods distinguished. Partial computation scope; independent AI source review and focused repair closure passed."
+tier: 2
 ---
 
 # Burundi: individual capital income and disposal gains for 2026 v0.2

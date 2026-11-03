@@ -4,12 +4,10 @@ description: How a corporation requests an automatic extension of time to file o
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-09-03
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Form 7004 corporate extension and the timely mailing is timely filing rule under section 7502 in United States

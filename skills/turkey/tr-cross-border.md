@@ -4,9 +4,9 @@ description: "Turkish cross-border tax for tax year 2026: payments to non-reside
 jurisdiction: TR
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 version: 0.1
+tier: 2
 ---
 
 # Türkiye: cross-border tax (2026) v0.1

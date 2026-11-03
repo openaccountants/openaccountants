@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: cross-border
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 version: "0.6"
-verified_by: pending
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
     title: "HMRC: 2019 UK–Gibraltar agreement, Articles 1–4, 14–19, 21–22, 24, 28–29 and Protocol"
@@ -19,6 +17,7 @@ sources:
   - url: "https://www.gov.uk/hmrc-internal-manuals/double-taxation-relief/dt8152"
     title: "HMRC DT8152 treaty summary: pension and arbitration discrepancies, not adopted as overriding the agreement"
     as_of: "2026-10-22"
+tier: 2
 ---
 
 # UK–Gibraltar: employment, pensions and related income

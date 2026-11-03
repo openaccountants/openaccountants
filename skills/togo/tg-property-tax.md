@@ -5,9 +5,9 @@ jurisdiction: TG
 category: international
 tax_year: 2026
 tax_year_notes: "Conditional 2026 working paper: OTR 2025 CGI/LPF consolidation with enacted loi 2025-002 article 271 overlay; later-law continuity and live cadastral workflows remain unconfirmed."
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Togo annual property-tax working paper v0.1

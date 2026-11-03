@@ -5,14 +5,11 @@ version: 1.3
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-27
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - payroll-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # UK employer payroll: PAYE, RTI, statutory pay, minimum wage and year-end (2026/27, with 2025/26 notes)

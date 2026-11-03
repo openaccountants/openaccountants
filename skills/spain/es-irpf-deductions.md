@@ -5,13 +5,11 @@ version: 2.4
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-10-28
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - es-income-tax
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Spain: national and regional IRPF credits, 2026

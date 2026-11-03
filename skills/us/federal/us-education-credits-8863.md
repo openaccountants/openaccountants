@@ -4,11 +4,8 @@ description: Tier 2 US federal content skill for education tax benefits — the 
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-09-25
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # US education credits on Form 8863: American opportunity and lifetime learning credits, 2026 method with 2025 return notes

@@ -5,14 +5,11 @@ version: 1.3
 jurisdiction: FR
 tax_year: 2026
 last_updated: 2026-10-31
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - transfer-pricing-workflow-base
 category: transfer-pricing
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # France: transfer pricing (prix de transfert) v1.3

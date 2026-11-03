@@ -3,11 +3,10 @@ name: income-tax-rate-tables-by-year-of-assessment-2023-to-2027
 description: Year-keyed rate tables for individuals — brackets and base amounts, rebates, tax thresholds, medical credits and the main annual limits, for years of assessment 2023 to 2027.
 jurisdiction: ZA
 last_updated: 2026-09-02
-authored_by: Brandon Iverach
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Brandon Iverach"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # South Africa — Income Tax Rate Tables (individuals)

@@ -5,14 +5,11 @@ version: 1.0
 jurisdiction: MY
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - my-income-tax
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Malaysia employer contributions: EPF (KWSP), SOCSO (PERKESO) including LINDUNG 24 Jam, EIS, and registration (2026, with notes on earlier months)

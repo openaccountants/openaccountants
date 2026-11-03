@@ -4,10 +4,8 @@ description: Tier 2 Virginia content skill for employer payroll compliance cover
 jurisdiction: US-VA
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # VA Payroll

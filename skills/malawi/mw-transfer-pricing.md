@@ -6,8 +6,8 @@ category: transfer-pricing
 tax_year: 2026
 tax_year_notes: "Intended 2026 research draft; Act 3/2026 read and relevant effects identified; appointed commencement chain unresolved; live use held."
 last_updated: 2026-11-01
-tier: 2
 version: 1.3
+tier: 2
 ---
 
 # Malawi transfer pricing: information-notice response and retention v1.3

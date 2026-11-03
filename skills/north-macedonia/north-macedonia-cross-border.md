@@ -4,10 +4,9 @@ description: "Use this skill for North Macedonia international income-tax matter
 jurisdiction: MK
 category: cross-border
 tax_year: 2026
-tier: 2
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 last_updated: 2026-10-30
 version: 0.2
+tier: 2
 ---
 
 # North Macedonia cross-border tax v0.2

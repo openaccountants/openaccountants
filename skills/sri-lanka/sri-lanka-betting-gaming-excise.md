@@ -4,12 +4,10 @@ description: Sri Lanka betting & gaming levy, excise duty and customs import dut
 jurisdiction: LK
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Lal kumarasiri, CA
-reviewed_by: Lal kumarasiri
-review_status: current
-trust_label: Checked by Lal kumarasiri
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Lal kumarasiri"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Sri Lanka Betting, Gaming Levy & Excise

@@ -5,13 +5,12 @@ version: 1.0
 jurisdiction: US
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: James Wallach
-review_status: current
-trust_label: Checked by James Wallach
 source_checked: 2026-10-17
 category: federal
-tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "James Wallach"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # US Crypto Tax

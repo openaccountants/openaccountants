@@ -4,8 +4,8 @@ description: Universal transfer pricing documentation and analysis workflow base
 version: 1.0
 category: foundation
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
 ---
 
 # Transfer Pricing Workflow Base Skill v1.0

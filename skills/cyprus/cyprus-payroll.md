@@ -5,14 +5,11 @@ version: 0.3
 jurisdiction: CY
 tax_year: 2026
 last_updated: 2026-10-27
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - payroll-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Cyprus payroll: PAYE and employer contributions (tax year 2026)

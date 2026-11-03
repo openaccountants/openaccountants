@@ -5,11 +5,9 @@ version: 1.2
 jurisdiction: IE
 tax_year: 2026
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Ireland: assembling the 2026 individual tax return (Form 11 and Form 12), v1.2

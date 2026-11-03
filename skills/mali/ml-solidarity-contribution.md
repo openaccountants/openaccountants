@@ -6,12 +6,10 @@ jurisdiction: ML
 category: international
 tax_year: 2025
 tax_year_notes: "Enacted 2025 source baseline only; 2026 application is unverified pending enacted fiscal Annex U and later-amendment checks."
-tier: 2
 last_updated: 2026-11-01
 version: 0.2
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Mali solidarity contribution source-baseline draft v0.2

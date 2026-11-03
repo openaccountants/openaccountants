@@ -17,9 +17,11 @@ description: >
 jurisdiction: ES
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 version: 0.4
+reviewed_by: "Jeff Watts"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Spain: foral nonresident income tax for2026

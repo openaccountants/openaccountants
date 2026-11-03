@@ -1,15 +1,13 @@
 ---
 name: sl-tax-overview
 jurisdiction: SL
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 description: "Sierra Leone tax intake map for the 2026 research year. Use to identify the taxpayer, residence and source, accounting period, source currency and separate filing obligations before choosing a tax calculation. It routes individual income and PAYE, company income and withholding, GST, NASSIT, transfer pricing and foreign-income questions to their six existing figure homes and preserves their unresolved conditions. It reads the NRA authority statute, selected income-tax and TIN provisions and the Bank denomination notice. The company-law reform download is explicitly held because its bill status does not prove enactment or commencement. Two arithmetic controls identify double redenomination and the difference between owner funding and a preliminary trading surplus. This is a partial intake workpaper, not filing approval or comprehensive coverage."
 tax_year: 2026
 tax_year_notes: "2026 research intake; conditional source baseline, full current law and filing implementation unresolved"
 last_updated: 2026-11-01
 version: 1.0
+tier: 2
 ---
 
 # Sierra Leone Tax Intake and Figure Map v1.0

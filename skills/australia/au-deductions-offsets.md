@@ -14,12 +14,13 @@ version: 0.2
 jurisdiction: AU
 tax_year: 2026
 last_updated: 2026-09-20
-review_status: pending_review
 depends_on:
   - au-individual-return
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Australia Deductions, Offsets and Concessions v0.2

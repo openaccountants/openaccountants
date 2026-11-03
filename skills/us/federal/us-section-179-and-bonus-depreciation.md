@@ -4,11 +4,8 @@ description: "Section 179 expensing and bonus depreciation (section 168(k)) for 
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-03
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Section 179 expensing and bonus depreciation in 2026, including business vehicles

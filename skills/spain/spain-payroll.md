@@ -5,15 +5,13 @@ version: 1.5
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-10-28
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
   - payroll-workflow-base
 category: payroll
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Spain: employee payroll and withholding v1.5

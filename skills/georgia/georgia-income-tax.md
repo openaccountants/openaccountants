@@ -5,11 +5,11 @@ version: 0.2
 jurisdiction: GE
 tax_year: 2026
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Gvantsa Amiridze"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Georgia (country): personal income tax for individuals and individual entrepreneurs (2026) v0.2

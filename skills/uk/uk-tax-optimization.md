@@ -5,14 +5,12 @@ version: 1.2
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-31
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-verified_by: pending
 source_checked: 2026-10-23
 category: tax-optimization
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "James Power"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # UK Tax Optimization

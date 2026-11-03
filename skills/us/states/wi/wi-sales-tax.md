@@ -4,9 +4,8 @@ description: Use this skill whenever asked about Wisconsin sales tax, Wisconsin 
 jurisdiction: US-WI
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # WI Sales Tax

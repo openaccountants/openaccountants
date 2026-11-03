@@ -38,7 +38,7 @@ Your name goes on the tax knowledge AI actually uses.
 1. Sign up at [openaccountants.com](https://www.openaccountants.com) and finish the [accountant application](https://www.openaccountants.com/onboarding/accountant) with your licence, registration or membership number. Provisional and student members of a professional body count, once checked.
 2. Set your GitHub username in your profile so we can match your pull requests to you.
 3. Pick a skill in your jurisdiction, ideally in a pack that says Needs signature, and review the whole skill.
-4. In a PR of your own, set `tier: 1`, `reviewed_by` and `reviewed_on`. The skill becomes **Accountant-reviewed**. Your name, credential and review date go on it here and on the AI answers that cite it. The tiers are defined in [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md).
+4. In a PR of your own, set `tier: 1`, `reviewed_by` (your name) and `reviewed_on`. The skill shows **Approved by** your name here and on the AI answers that cite it. Your licence number stays private: we check it against your account, and it is never published. The tiers are defined in [docs/QUALITY-TIERS.md](docs/QUALITY-TIERS.md).
 
 You can also write skills through the first door.
 
@@ -139,7 +139,7 @@ If you add a `references.md` to a country's source directory, it will be include
 
 ## Review and merge
 
-Maintainers listed in [docs/OWNERS.md](docs/OWNERS.md) merge. A merged skill without an accountant reviewer is `tier: 2` (Checked against the law). When a licensed accountant reviews it, they set `tier: 1`, `reviewed_by` and `reviewed_on` in a PR of their own, and their name goes on the skill here and on every AI answer that cites it.
+Maintainers listed in [docs/OWNERS.md](docs/OWNERS.md) merge. A merged skill without an accountant's approval is `tier: 2` (Built from the law). When a licensed accountant approves it, they set `tier: 1`, `reviewed_by` and `reviewed_on` in a PR of their own, and the skill shows **Approved by** their name here and on every AI answer that cites it. The name must match an approved accountant account on openaccountants.com.
 
 ## Contributor License Agreement (CLA)
 

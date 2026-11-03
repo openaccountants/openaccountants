@@ -5,14 +5,11 @@ version: 1.0
 jurisdiction: CH
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - switzerland-income-tax
 category: crypto
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Switzerland: crypto-asset tax for individuals (tax year 2026, with 2025 returns)

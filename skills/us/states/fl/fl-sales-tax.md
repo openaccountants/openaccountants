@@ -5,13 +5,13 @@ description: >
 version: 1.0
 jurisdiction: US-FL
 tax_year: 2025
-tier: 2
 last_updated: 2026-06-12
 category: state
 depends_on:
   - us-tax-workflow-base
 validated: April 2026
 validation_status: ai-drafted-q3
+tier: 2
 ---
 
 # Florida Sales and Use Tax (DR-15) v1.0

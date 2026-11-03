@@ -4,12 +4,10 @@ description: Use this skill whenever asked about reducing tax in Venezuela, tax 
 jurisdiction: VE
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Jose Padilla, CPA
-reviewed_by: Jose Padilla
-review_status: current
-trust_label: Checked by Jose Padilla
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Jose Padilla"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Venezuela Tax Optimization

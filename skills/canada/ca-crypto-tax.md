@@ -5,13 +5,11 @@ version: "1.0"
 jurisdiction: CA
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Nathan Wiebe
-reviewed_by: Edgar Lautsyus
-review_status: current
-trust_label: Checked by Edgar Lautsyus
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Nathan Wiebe"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # CA Crypto Tax

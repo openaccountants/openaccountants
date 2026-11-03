@@ -6,9 +6,9 @@ category: international
 job: annual-real-property-tax
 tax_year: 2026
 tax_year_notes: "2026 intake workpaper; cited 2020 Chapter20 and April2026 security amendment, not a complete current-law consolidation."
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Liberia Annual Real Property Tax v0.1

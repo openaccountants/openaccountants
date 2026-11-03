@@ -5,15 +5,13 @@ version: 1.0
 jurisdiction: ES
 tax_year: 2026
 last_updated: 2026-09-23
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
   - financial-statements-workflow-base
 category: financial-statements
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Spanish annual accounts: the cuentas anuales, the models, the audit and the deposit

@@ -4,12 +4,10 @@ description: For an individual with US and Indian tax connections who needs to f
 jurisdiction: IN
 tax_year: 2026
 last_updated: 2026-09-06
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # US-India dual residence and foreign tax credit in India

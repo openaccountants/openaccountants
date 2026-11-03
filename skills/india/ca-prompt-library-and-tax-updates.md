@@ -3,11 +3,10 @@ name: ca-prompt-library-and-tax-updates
 description: Taxation Prompt Library
 jurisdiction: IN
 last_updated: 2026-09-03
-authored_by: Arshad raza
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Arshad raza"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # CA Prompt Library and Tax updates

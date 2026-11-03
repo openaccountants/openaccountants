@@ -5,12 +5,9 @@ version: 1.8
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-10-31
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Income tax for the self-employed in Germany (Einkommensteuer for Freiberufler and Gewerbetreibende)

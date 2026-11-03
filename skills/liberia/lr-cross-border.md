@@ -4,9 +4,9 @@ description: "Classifies Liberia-source payments and nonresident business exposu
 jurisdiction: LR
 category: cross-border
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Liberia Cross-border Income, Withholding and Permanent Establishments v0.1

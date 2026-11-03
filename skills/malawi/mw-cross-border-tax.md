@@ -6,8 +6,8 @@ category: cross-border
 tax_year: 2026
 tax_year_notes: "Intended 2026 research draft; incomplete operative amendment and appointed commencement chain; live use held."
 last_updated: 2026-11-01
-tier: 2
 version: 0.1
+tier: 2
 ---
 
 # Malawi cross-border tax working papers v0.1

@@ -5,9 +5,9 @@ description: >
 jurisdiction: BF
 category: transfer-pricing
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: 0.2
+tier: 2
 ---
 
 # Burkina Faso transfer pricing v0.2

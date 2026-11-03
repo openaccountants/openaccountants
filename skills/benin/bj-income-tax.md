@@ -4,12 +4,10 @@ description: "Prepare a monthly Benin salary income-tax working paper for 2026 u
 jurisdiction: BJ
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 0.2
+tier: 2
 ---
 
 # Benin monthly salary ITS working paper v0.2

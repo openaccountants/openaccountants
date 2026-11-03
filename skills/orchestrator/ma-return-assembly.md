@@ -5,11 +5,11 @@ description: >
 version: 0.1
 jurisdiction: MA
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 category: orchestrator
 depends_on:
   - ma-freelance-intake
+tier: 2
 ---
 
 # Morocco Return Assembly — Filing Package Orchestrator (assemblage de la déclaration marocaine)

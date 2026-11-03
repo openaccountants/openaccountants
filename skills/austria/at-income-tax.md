@@ -5,14 +5,11 @@ version: 2.1
 jurisdiction: AT
 tax_year: 2026
 last_updated: 2026-10-24
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Austrian income tax for individuals (Einkommensteuer): the E 1 return, the employee assessment (L 1) and prepayments (2026)
