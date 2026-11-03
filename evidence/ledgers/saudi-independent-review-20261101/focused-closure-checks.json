@@ -1,0 +1,40 @@
+[
+  {
+    "command": [
+      "python3",
+      "scripts/skill_checks.py",
+      "skills/saudi-arabia/sa-freelance-intake.md",
+      "skills/saudi-arabia/sa-return-assembly.md"
+    ],
+    "exit_code": 0,
+    "output": "skills/saudi-arabia/sa-freelance-intake.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/saudi-arabia/sa-return-assembly.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n"
+  },
+  {
+    "command": [
+      "python3",
+      "scripts/check-examples.py",
+      "--require",
+      "skills/saudi-arabia/sa-freelance-intake.md",
+      "skills/saudi-arabia/sa-return-assembly.md"
+    ],
+    "exit_code": 0,
+    "output": "checked 2 files, 4 oa-check blocks, 0 failures, 0 missing\n"
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check",
+      "46c01152da0fdd1b722f61190c88413d0a195d02"
+    ],
+    "exit_code": 0,
+    "output": ""
+  },
+  {
+    "command": "Strict changedGuide validator check_guides only_files on actual-base changed skills",
+    "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+    "errors": [],
+    "warnings": [],
+    "output": "checked 2 guides (0 non-guide .md files skipped)\n"
+  }
+]

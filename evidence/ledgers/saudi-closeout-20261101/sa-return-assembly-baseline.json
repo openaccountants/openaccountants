@@ -1,0 +1,2849 @@
+{
+  "base": "46c01152da0fdd1b722f61190c88413d0a195d02",
+  "path": "skills/saudi-arabia/sa-return-assembly.md",
+  "base_blob": "6edf8f2104b9b62f56f425a71fc6854906c4da1f",
+  "base_bytes": 51421,
+  "original_pr_head": "9bf8293fcf9757b59f22cdf631a57d7fd43b2d2e",
+  "old_lines": [
+    {
+      "line": 1,
+      "text": "---"
+    },
+    {
+      "line": 2,
+      "text": "name: sa-return-assembly"
+    },
+    {
+      "line": 3,
+      "text": "description: Use this skill whenever asked to assemble, finalize, or package a Saudi Arabian annual tax return or Zakat declaration. Trigger on phrases like \"Saudi return assembly\", \"ZATCA submission\", \"Saudi annual filing\", \"120-day deadline Saudi\", \"Zakat declaration\", \"Saudi CIT return\", \"assemble Saudi return\", \"finalize KSA return\", \"Saudi working paper\", or \"ZATCA filing package\". This is the capstone orchestrator that pulls together outputs from sa-zakat, sa-corporate-tax, sa-withholding-tax, sa-rett, sa-gosi-saudization, sa-excise-tax, sa-formation, saudi-arabia-vat, and saudi-einvoice into a single unified working paper plus payment and filing instructions. It does not recompute anything itself — it reconciles upstream outputs, builds the line-by-line ZATCA working paper, generates SADAD billing instructions for ZATCA portal payment, and produces a reviewer brief and taxpayer action list. ALWAYS read this skill last when finalizing a Saudi tax return or Zakat declaration."
+    },
+    {
+      "line": 4,
+      "text": "jurisdiction: SA"
+    },
+    {
+      "line": 5,
+      "text": "tax_year: 2025"
+    },
+    {
+      "line": 6,
+      "text": "last_updated: 2026-07-13"
+    },
+    {
+      "line": 7,
+      "text": "review_status: pending_review"
+    },
+    {
+      "line": 8,
+      "text": "trust_label: Built by Michael Cutajar and the OpenAccountants team"
+    },
+    {
+      "line": 9,
+      "text": "tier: 2"
+    },
+    {
+      "line": 10,
+      "text": "license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)"
+    },
+    {
+      "line": 11,
+      "text": "---"
+    },
+    {
+      "line": 12,
+      "text": ""
+    },
+    {
+      "line": 13,
+      "text": "# SA Return Assembly"
+    },
+    {
+      "line": 14,
+      "text": ""
+    },
+    {
+      "line": 15,
+      "text": "## Saudi Arabia — Return Assembly (Capstone) — Skill v1.0"
+    },
+    {
+      "line": 16,
+      "text": ""
+    },
+    {
+      "line": 17,
+      "text": "## How this workflow runs"
+    },
+    {
+      "line": 18,
+      "text": ""
+    },
+    {
+      "line": 19,
+      "text": "Intake and the content Guides have already collected the facts for this working paper. Use what they captured, and ask the user again only where something is missing or contradicts itself."
+    },
+    {
+      "line": 20,
+      "text": ""
+    },
+    {
+      "line": 21,
+      "text": "Specifically:"
+    },
+    {
+      "line": 22,
+      "text": ""
+    },
+    {
+      "line": 23,
+      "text": "- **Do NOT ask \"do you want me to assemble the full package\".** The user asked for the return. Produce it."
+    },
+    {
+      "line": 24,
+      "text": "- **Do NOT re-interrogate the user about residency, CR number, TIN, or ownership structure** — intake already captured this; trust the upstream packages."
+    },
+    {
+      "line": 25,
+      "text": "- **Do NOT pause between reconciliation steps to check in.** Run all cross-checks in sequence; flag failures in the reviewer brief and continue."
+    },
+    {
+      "line": 26,
+      "text": "- **Self-checks are targets, not blockers.** If a check fails, note it under \"Reviewer Attention Flags\" and continue."
+    },
+    {
+      "line": 27,
+      "text": "- **Do NOT submit anything to ZATCA.** This skill produces a working paper plus filing instructions. A credentialed reviewer (SOCPA member, or recognised ICAEW / ACCA / US CPA practising in KSA) must review, and the taxpayer (or authorised representative) submits via the ZATCA portal."
+    },
+    {
+      "line": 28,
+      "text": ""
+    },
+    {
+      "line": 29,
+      "text": "**If you feel the urge to ask \"how should I proceed\", pick the most defensible path, proceed, and flag the decision for the reviewer.**"
+    },
+    {
+      "line": 30,
+      "text": ""
+    },
+    {
+      "line": 31,
+      "text": "## What this file is"
+    },
+    {
+      "line": 32,
+      "text": ""
+    },
+    {
+      "line": 33,
+      "text": "The final capstone skill for Saudi Arabian annual tax filings. It consumes the outputs of every other Saudi skill and assembles a single unified working paper covering one of:"
+    },
+    {
+      "line": 34,
+      "text": ""
+    },
+    {
+      "line": 35,
+      "text": "- **Zakat declaration** — Saudi-owned and GCC-owned entities under Royal Decree No. M/40 (1405 AH) and the Implementing Regulations for Zakat Collection issued by ZATCA"
+    },
+    {
+      "line": 36,
+      "text": "- **Corporate Income Tax return (Form 800 series)** — foreign-owned (non-Saudi / non-GCC) entities under the Income Tax Law (Royal Decree No. M/1 of 1425 AH) and its Implementing Regulations"
+    },
+    {
+      "line": 37,
+      "text": "- **Mixed-entity return** — joint Saudi / foreign ownership; Zakat applied to the Saudi/GCC share, CIT applied to the foreign share, on a single combined return"
+    },
+    {
+      "line": 38,
+      "text": ""
+    },
+    {
+      "line": 39,
+      "text": "The output is a reviewer-ready package: line-by-line ZATCA working paper, cross-skill reconciliation table, payment instructions (ZATCA portal → SADAD billing ID → Saudi bank channel), filing instructions, reviewer checklist, taxpayer action list, WPS / Saudization compliance check, and 2026 planning notes."
+    },
+    {
+      "line": 40,
+      "text": ""
+    },
+    {
+      "line": 41,
+      "text": "## Section 1 — Quick reference"
+    },
+    {
+      "line": 42,
+      "text": ""
+    },
+    {
+      "line": 43,
+      "text": "**Section 1 — Quick reference table**"
+    },
+    {
+      "line": 44,
+      "text": ""
+    },
+    {
+      "line": 45,
+      "text": "| Field | Value |"
+    },
+    {
+      "line": 46,
+      "text": "| --- | --- |"
+    },
+    {
+      "line": 47,
+      "text": "| Country | Kingdom of Saudi Arabia |"
+    },
+    {
+      "line": 48,
+      "text": "| Tax authority | Zakat, Tax and Customs Authority (ZATCA) — formerly GAZT and Saudi Customs, merged in 2021 |"
+    },
+    {
+      "line": 49,
+      "text": "| Filing portal | ZATCA portal — https://zatca.gov.sa |"
+    },
+    {
+      "line": 50,
+      "text": "| Currency | SAR (Saudi Riyal) |"
+    },
+    {
+      "line": 51,
+      "text": "| Tax year (default) | Gregorian calendar year (1 Jan – 31 Dec); some entities approved for Hijri year; financial year of taxpayer if different by approval |"
+    },
+    {
+      "line": 52,
+      "text": "| Current tax year | 2025 (filing window opens 1 January 2026) |"
+    },
+    {
+      "line": 53,
+      "text": "| Annual return deadline | **Within 120 days of fiscal year-end** (Gregorian 31 December year-end → 30 April 2026) |"
+    },
+    {
+      "line": 54,
+      "text": "| Zakat declaration | Annual; due within 120 days of FYE |"
+    },
+    {
+      "line": 55,
+      "text": "| CIT return | Annual Form 800 series (Form 8 and variants); due within 120 days of FYE |"
+    },
+    {
+      "line": 56,
+      "text": "| Mixed-entity return | Zakat portion + CIT portion on the same combined annual return |"
+    },
+    {
+      "line": 57,
+      "text": "| VAT return | **Monthly** (mandatory if turnover > SAR 40 million) or **quarterly** (smaller taxpayers); due by 28th of month following the period |"
+    },
+    {
+      "line": 58,
+      "text": "| WHT return | **Monthly**; due within 10 days of month-end |"
+    },
+    {
+      "line": 59,
+      "text": "| Excise return | **Bi-monthly**; due within 15 days of period-end |"
+    },
+    {
+      "line": 60,
+      "text": "| RETT (Real Estate Transaction Tax) | Transaction-by-transaction at notarisation; 5% on real estate disposals |"
+    },
+    {
+      "line": 61,
+      "text": "| Confirmation receipt | ZATCA portal acknowledgement with submission reference and timestamp |"
+    },
+    {
+      "line": 62,
+      "text": "| Payment channel | ZATCA portal generates **SADAD bill** (with billing ID) → pay via any Saudi bank, internet banking, mobile app, or SADAD-enabled ATM |"
+    },
+    {
+      "line": 63,
+      "text": "| Audited financial statements | Required for entities above ZATCA thresholds (typically SAR 40M+ revenue; thresholds vary by entity type) |"
+    },
+    {
+      "line": 64,
+      "text": "| Governing law | Zakat — Royal Decree M/40 (1405 AH) + Zakat Collection Implementing Regulations; CIT — Royal Decree M/1 (1425 AH) Income Tax Law + Implementing Regulations; VAT — Royal Decree M/113 (1438 AH); Excise — Royal Decree M/86 (1438 AH); RETT — Royal Decree M/84 (1442 AH) |"
+    },
+    {
+      "line": 65,
+      "text": "| Skill version | 1.0 |"
+    },
+    {
+      "line": 66,
+      "text": "| Validated by | Pending — requires sign-off by SOCPA member (Saudi Organization for Chartered Public Accountants) or recognised ICAEW / ACCA / US CPA practising in KSA |"
+    },
+    {
+      "line": 67,
+      "text": ""
+    },
+    {
+      "line": 68,
+      "text": "### 1.1 What this capstone produces"
+    },
+    {
+      "line": 69,
+      "text": ""
+    },
+    {
+      "line": 70,
+      "text": "A single reviewer-ready package containing:"
+    },
+    {
+      "line": 71,
+      "text": ""
+    },
+    {
+      "line": 72,
+      "text": "1. **Master working paper (Excel)** — ZATCA-aligned schedules, cross-skill reconciliation, SADAD billing register"
+    },
+    {
+      "line": 73,
+      "text": "2. **Reviewer brief (Markdown)** — executive summary, Zakat / CIT / mixed split walk-through, positions taken, attention flags"
+    },
+    {
+      "line": 74,
+      "text": "3. **Taxpayer action list (Markdown)** — payments to make (SADAD bills to settle), ZATCA portal submission steps, deadlines, WPS / Saudization confirmations, record retention"
+    },
+    {
+      "line": 75,
+      "text": "4. **2026 planning notes** — VAT periodicity check, WHT monthly cadence, advance Zakat / CIT planning, Saudization tier maintenance, working capital optimisation for Zakat"
+    },
+    {
+      "line": 76,
+      "text": ""
+    },
+    {
+      "line": 77,
+      "text": "## Section 2 — Required inputs from upstream SA skills"
+    },
+    {
+      "line": 78,
+      "text": ""
+    },
+    {
+      "line": 79,
+      "text": "The assembly skill does not recompute anything. It expects structured outputs from the following upstream Saudi skills. If an upstream skill did not run, the assembly notes the gap and continues with available data."
+    },
+    {
+      "line": 80,
+      "text": ""
+    },
+    {
+      "line": 81,
+      "text": "### 2.1 Entity-type matrix — which upstream skills feed which return"
+    },
+    {
+      "line": 82,
+      "text": ""
+    },
+    {
+      "line": 83,
+      "text": "**Entity-type matrix table**"
+    },
+    {
+      "line": 84,
+      "text": ""
+    },
+    {
+      "line": 85,
+      "text": "| Entity ownership | Annual filing | Upstream skills consumed |"
+    },
+    {
+      "line": 86,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 87,
+      "text": "| 100% Saudi / GCC-owned | Zakat declaration only | sa-zakat, saudi-arabia-vat, sa-withholding-tax, sa-gosi-saudization, sa-formation, saudi-einvoice |"
+    },
+    {
+      "line": 88,
+      "text": "| 100% foreign-owned | CIT return (Form 800) | sa-corporate-tax, saudi-arabia-vat, sa-withholding-tax, sa-gosi-saudization, sa-formation, saudi-einvoice |"
+    },
+    {
+      "line": 89,
+      "text": "| Mixed (Saudi/GCC + foreign) | Combined Zakat + CIT return — proportional split by ownership | sa-zakat AND sa-corporate-tax, plus all others |"
+    },
+    {
+      "line": 90,
+      "text": "| Listed on Tadawul with mixed shareholders | Combined Zakat + CIT — proportional by free float | sa-zakat AND sa-corporate-tax, plus others |"
+    },
+    {
+      "line": 91,
+      "text": "| Real estate disposer in the year | + RETT computation | sa-rett |"
+    },
+    {
+      "line": 92,
+      "text": "| Excise-taxable goods (tobacco, sugary drinks, energy drinks, soft drinks, sweetened beverages, e-cigarettes, electronic devices for vaping) | + Excise return | sa-excise-tax |"
+    },
+    {
+      "line": 93,
+      "text": ""
+    },
+    {
+      "line": 94,
+      "text": "### 2.2 Zakat declaration — inputs"
+    },
+    {
+      "line": 95,
+      "text": ""
+    },
+    {
+      "line": 96,
+      "text": "**Zakat declaration inputs table**"
+    },
+    {
+      "line": 97,
+      "text": ""
+    },
+    {
+      "line": 98,
+      "text": "| Upstream skill | Output consumed | Where it lands on the Zakat declaration |"
+    },
+    {
+      "line": 99,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 100,
+      "text": "| `sa-zakat` | Zakat base computation: equity-method base (capital + retained earnings + reserves + long-term liabilities − long-term assets − adjustments) OR Zakat-on-profit base where lower; 2.5% Zakat rate (or 2.577% Hijri-year conversion); working capital adjustments | Main Zakat base schedule; Zakat liability line |"
+    },
+    {
+      "line": 101,
+      "text": "| `saudi-arabia-vat` | VAT-registered turnover; output VAT and input VAT positions (cross-check only) | Cross-check vs. revenue in financial statements |"
+    },
+    {
+      "line": 102,
+      "text": "| `sa-withholding-tax` | WHT suffered (rare for Saudi/GCC entities other than payments from abroad) and WHT agent obligations on payments to non-residents (5%/15%/20% by category) | WHT credits schedule; agent compliance check |"
+    },
+    {
+      "line": 103,
+      "text": "| `sa-gosi-saudization` | GOSI contributions (employer + employee), Saudization tier (Nitaqat: Platinum / High Green / Medium Green / Low Green / Yellow / Red), WPS file submissions via Mudad | Salary & wage schedule; compliance attestation |"
+    },
+    {
+      "line": 104,
+      "text": "| `sa-rett` | Real estate transaction tax paid on disposals during the year (5% RETT) | Disclosure schedule; not Zakat-deductible |"
+    },
+    {
+      "line": 105,
+      "text": "| `sa-excise-tax` | Excise paid and collected on taxable goods | Cross-check only — separate return |"
+    },
+    {
+      "line": 106,
+      "text": "| `sa-formation` | Entity structure: Commercial Registration (CR) number, TIN, MoC registration, shareholders' nationality split, paid-up capital | Identification block; ownership split for mixed entities |"
+    },
+    {
+      "line": 107,
+      "text": "| `saudi-einvoice` | E-invoicing compliance status (Fatoorah Phase 1 generation + Phase 2 integration with ZATCA) | Compliance attestation |"
+    },
+    {
+      "line": 108,
+      "text": ""
+    },
+    {
+      "line": 109,
+      "text": "### 2.3 CIT return (foreign-owned entities) — inputs"
+    },
+    {
+      "line": 110,
+      "text": ""
+    },
+    {
+      "line": 111,
+      "text": "**CIT return inputs table**"
+    },
+    {
+      "line": 112,
+      "text": ""
+    },
+    {
+      "line": 113,
+      "text": "| Upstream skill | Output consumed | Where it lands on the CIT return |"
+    },
+    {
+      "line": 114,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 115,
+      "text": "| `sa-corporate-tax` | CIT computation: accounting profit → taxable income via tax adjustments; CIT at 20% (general rate); 85% rate for upstream oil & gas; 30%–85% rate for natural gas investment field; permanent establishment determination | Form 800 — main computation; tax adjustments schedule; depreciation schedule (under SA Income Tax Law Implementing Regulations) |"
+    },
+    {
+      "line": 116,
+      "text": "| `sa-withholding-tax` | WHT suffered (rare) and WHT agent obligations on payments to non-residents (5% royalties / 15% management fees / 20% other / 5% dividends / 5% interest — per ITL Art. 68) | Tax credits schedule; agent compliance check |"
+    },
+    {
+      "line": 117,
+      "text": "| `saudi-arabia-vat` | Output and input VAT; VAT return reconciliation | Cross-check vs. revenue |"
+    },
+    {
+      "line": 118,
+      "text": "| `sa-gosi-saudization` | Employee GOSI, salary expense, Saudization tier compliance | Salary schedule; compliance attestation |"
+    },
+    {
+      "line": 119,
+      "text": "| `sa-rett` | RETT paid on disposals (deductible or capitalised per accounting policy) | Disclosure schedule |"
+    },
+    {
+      "line": 120,
+      "text": "| `sa-excise-tax` | Excise tax paid / collected | Cross-check only |"
+    },
+    {
+      "line": 121,
+      "text": "| `sa-formation` | CR number, TIN, MoC registration, shareholders' nationality, paid-up capital | Identification block |"
+    },
+    {
+      "line": 122,
+      "text": "| `saudi-einvoice` | Fatoorah compliance status | Compliance attestation |"
+    },
+    {
+      "line": 123,
+      "text": ""
+    },
+    {
+      "line": 124,
+      "text": "### 2.4 Mixed-entity return — proportional split"
+    },
+    {
+      "line": 125,
+      "text": ""
+    },
+    {
+      "line": 126,
+      "text": "**Mixed-entity proportional split table**"
+    },
+    {
+      "line": 127,
+      "text": ""
+    },
+    {
+      "line": 128,
+      "text": "| Calculation step | Treatment |"
+    },
+    {
+      "line": 129,
+      "text": "| --- | --- |"
+    },
+    {
+      "line": 130,
+      "text": "| 1. Compute the Zakat base (equity method) | Per sa-zakat |"
+    },
+    {
+      "line": 131,
+      "text": "| 2. Compute the CIT taxable income | Per sa-corporate-tax |"
+    },
+    {
+      "line": 132,
+      "text": "| 3. Determine ownership split | From sa-formation (cap table at year-end) |"
+    },
+    {
+      "line": 133,
+      "text": "| 4. Apply Zakat to Saudi/GCC share of Zakat base × 2.5% | Zakat portion |"
+    },
+    {
+      "line": 134,
+      "text": "| 5. Apply CIT to foreign share of CIT taxable income × 20% (or applicable rate) | CIT portion |"
+    },
+    {
+      "line": 135,
+      "text": "| 6. Add WHT agent obligations | Same for both portions |"
+    },
+    {
+      "line": 136,
+      "text": "| 7. Combined liability on a single return submitted via ZATCA portal | One submission |"
+    },
+    {
+      "line": 137,
+      "text": ""
+    },
+    {
+      "line": 138,
+      "text": "### 2.5 Intake-required identifiers"
+    },
+    {
+      "line": 139,
+      "text": ""
+    },
+    {
+      "line": 140,
+      "text": "**Intake-required identifiers table**"
+    },
+    {
+      "line": 141,
+      "text": ""
+    },
+    {
+      "line": 142,
+      "text": "| Identifier | Required for |"
+    },
+    {
+      "line": 143,
+      "text": "| --- | --- |"
+    },
+    {
+      "line": 144,
+      "text": "| Commercial Registration (CR) number — issued by Ministry of Commerce | All entities |"
+    },
+    {
+      "line": 145,
+      "text": "| Tax Identification Number (TIN) — issued by ZATCA | All entities |"
+    },
+    {
+      "line": 146,
+      "text": "| VAT registration number — 15 digits ending in `03` | If VAT-registered |"
+    },
+    {
+      "line": 147,
+      "text": "| ZATCA portal credentials (username + password + nafath / IAM) | All electronic submissions |"
+    },
+    {
+      "line": 148,
+      "text": "| MoC commercial registration certificate | All entities |"
+    },
+    {
+      "line": 149,
+      "text": "| Shareholders' nationality split (Saudi / GCC / foreign) | Mixed-entity determination |"
+    },
+    {
+      "line": 150,
+      "text": "| Fiscal year-end date | Determines 120-day deadline |"
+    },
+    {
+      "line": 151,
+      "text": "| Audited financial statements (where threshold met) | All entities above the SAR 40M revenue threshold (or other ZATCA-specified thresholds) |"
+    },
+    {
+      "line": 152,
+      "text": "| GOSI employer registration | All entities with employees |"
+    },
+    {
+      "line": 153,
+      "text": "| Mudad subscription (WPS platform) | All entities with employees |"
+    },
+    {
+      "line": 154,
+      "text": "| Nitaqat tier (Saudization) | Entities with 5+ employees |"
+    },
+    {
+      "line": 155,
+      "text": "| Saudi Customs importer / exporter identifier | If applicable |"
+    },
+    {
+      "line": 156,
+      "text": ""
+    },
+    {
+      "line": 157,
+      "text": "- **Missing identifier handling** — If any identifier is missing, the assembly skill flags it as \"Needs Input\" and produces the working paper with placeholders rather than halting."
+    },
+    {
+      "line": 158,
+      "text": ""
+    },
+    {
+      "line": 159,
+      "text": "## Section 3 — Assembly workflow"
+    },
+    {
+      "line": 160,
+      "text": ""
+    },
+    {
+      "line": 161,
+      "text": "The capstone runs in eight phases. Each phase reads upstream output, runs reconciliation, and writes a section of the master working paper."
+    },
+    {
+      "line": 162,
+      "text": ""
+    },
+    {
+      "line": 163,
+      "text": "### 3.1 Phase 1 — Read intake & confirm scope"
+    },
+    {
+      "line": 164,
+      "text": ""
+    },
+    {
+      "line": 165,
+      "text": "0. **Phase 1** — Confirm entity type: Saudi/GCC-owned / foreign-owned / mixed; confirm fiscal year-end (Gregorian default; Hijri or custom by ZATCA approval); compute the 120-day deadline from FYE; confirm whether RETT, Excise apply; confirm VAT periodicity (monthly if turnover > SAR 40M; otherwise quarterly)"
+    },
+    {
+      "line": 166,
+      "text": ""
+    },
+    {
+      "line": 167,
+      "text": "### 3.2 Phase 2 — Ownership split (for mixed entities)"
+    },
+    {
+      "line": 168,
+      "text": ""
+    },
+    {
+      "line": 169,
+      "text": "0. **Phase 2** — Read cap table from sa-formation; classify each shareholder as Saudi / GCC / foreign; compute Saudi+GCC % and foreign %; carry to mixed-entity computation"
+    },
+    {
+      "line": 170,
+      "text": ""
+    },
+    {
+      "line": 171,
+      "text": "### 3.3 Phase 3 — Zakat base or CIT taxable income"
+    },
+    {
+      "line": 172,
+      "text": ""
+    },
+    {
+      "line": 173,
+      "text": "0. **Phase 3** — For Saudi/GCC-owned (Zakat only): Read Zakat base from sa-zakat (equity method or Zakat-on-profit, whichever lower under Implementing Regulations Art. 5); apply 2.5% rate (Gregorian) or 2.577% (Hijri-year filers). For foreign-owned (CIT only): Read CIT taxable income from sa-corporate-tax; apply 20% general rate (or specialised rates: 85% upstream petroleum; 30% natural gas); apply interest deduction limitation: 50% of EBITDA per ITL Art. 12 / Implementing Regulations; apply carry-forward loss rules: 25% annual cap per year against current-year income, no time limit on the loss. For mixed: compute both bases independently; apply proportional ownership split"
+    },
+    {
+      "line": 174,
+      "text": ""
+    },
+    {
+      "line": 175,
+      "text": "### 3.4 Phase 4 — Withholding tax compliance"
+    },
+    {
+      "line": 176,
+      "text": ""
+    },
+    {
+      "line": 177,
+      "text": "0. **Phase 4** — Read WHT agent obligations from sa-withholding-tax; verify monthly WHT returns filed within 10 days of month-end for each month of the year; reconcile total WHT remitted vs. total payments to non-residents × applicable rate. Common rates (ITL Art. 68): Royalties: 15%; Management / consulting fees to non-resident: 20% (5% if related party — verify); Dividends to non-resident: 5%; Interest to non-resident: 5%; Technical / consulting services: 5%; Rent: 5%; Other: 15% or 20% (verify per category)"
+    },
+    {
+      "line": 178,
+      "text": ""
+    },
+    {
+      "line": 179,
+      "text": "### 3.5 Phase 5 — VAT reconciliation"
+    },
+    {
+      "line": 180,
+      "text": ""
+    },
+    {
+      "line": 181,
+      "text": "0. **Phase 5** — Annual VAT-able revenue per saudi-arabia-vat should equal financial statement revenue (after standard reconciling items: zero-rated exports, exempt items, output adjustments); annual output VAT vs. sum of monthly/quarterly returns; annual input VAT vs. sum of returns; net VAT position: refundable or payable"
+    },
+    {
+      "line": 182,
+      "text": ""
+    },
+    {
+      "line": 183,
+      "text": "### 3.6 Phase 6 — GOSI, Saudization, WPS"
+    },
+    {
+      "line": 184,
+      "text": ""
+    },
+    {
+      "line": 185,
+      "text": "0. **Phase 6** — Read GOSI contributions from sa-gosi-saudization; confirm WPS files submitted via Mudad for every month of the year; confirm Nitaqat tier (Platinum / High Green / Medium Green / Low Green / Yellow / Red) for entities with 5+ employees; Yellow/Red tier flags consequences: visa restrictions, work permit renewal issues, ZATCA may flag the file"
+    },
+    {
+      "line": 186,
+      "text": ""
+    },
+    {
+      "line": 187,
+      "text": "### 3.7 Phase 7 — RETT and Excise (if applicable)"
+    },
+    {
+      "line": 188,
+      "text": ""
+    },
+    {
+      "line": 189,
+      "text": "0. **Phase 7** — RETT: per sa-rett — 5% of real estate disposal value, paid at notarisation; disclosure only on the annual return. Excise: per sa-excise-tax — bi-monthly returns; annual reconciliation. Tobacco: 100%; Soft drinks: 50%; Energy drinks: 100%; Sweetened beverages: 50%; Electronic smoking devices: 100%"
+    },
+    {
+      "line": 190,
+      "text": ""
+    },
+    {
+      "line": 191,
+      "text": "### 3.8 Phase 8 — Final assembly"
+    },
+    {
+      "line": 192,
+      "text": ""
+    },
+    {
+      "line": 193,
+      "text": "0. **Phase 8** — Build master Excel workbook; write reviewer brief; write taxpayer action list; generate SADAD billing register; generate 2026 planning notes"
+    },
+    {
+      "line": 194,
+      "text": ""
+    },
+    {
+      "line": 195,
+      "text": "## Section 4 — Working paper structure (for credentialed reviewer)"
+    },
+    {
+      "line": 196,
+      "text": ""
+    },
+    {
+      "line": 197,
+      "text": "The reviewer is a **SOCPA member** (Saudi Organization for Chartered Public Accountants) or a recognised foreign credential practising in KSA — **ICAEW (UK)**, **ACCA**, or **US CPA**. They sign off before ZATCA submission. SOCPA is the primary local credential; foreign credentials are accepted by ZATCA for international firms and joint ventures."
+    },
+    {
+      "line": 198,
+      "text": ""
+    },
+    {
+      "line": 199,
+      "text": "### 4.1 Master workbook sheets"
+    },
+    {
+      "line": 200,
+      "text": ""
+    },
+    {
+      "line": 201,
+      "text": "**Master workbook sheets table**"
+    },
+    {
+      "line": 202,
+      "text": ""
+    },
+    {
+      "line": 203,
+      "text": "| Sheet | Contents |"
+    },
+    {
+      "line": 204,
+      "text": "| --- | --- |"
+    },
+    {
+      "line": 205,
+      "text": "| Cover | Entity name, CR number, TIN, VAT number, fiscal year, return type (Zakat / CIT / Mixed), reviewer name, sign-off block |"
+    },
+    {
+      "line": 206,
+      "text": "| Identification | CR, TIN, VAT, MoC, GOSI employer ID, addresses, principal activity, NACE/ISIC equivalent |"
+    },
+    {
+      "line": 207,
+      "text": "| Ownership Split | Cap table at FYE; Saudi/GCC% and foreign% |"
+    },
+    {
+      "line": 208,
+      "text": "| Computation — Zakat | Equity-method base build; working capital adjustments; 2.5% application |"
+    },
+    {
+      "line": 209,
+      "text": "| Computation — CIT | Accounting profit → taxable income; tax adjustments; depreciation; interest deduction limit; loss carry-forward |"
+    },
+    {
+      "line": 210,
+      "text": "| Mixed-Entity Apportionment | Saudi/GCC share × Zakat; foreign share × CIT |"
+    },
+    {
+      "line": 211,
+      "text": "| WHT Schedule | All monthly WHT returns with SADAD billing IDs, payments to non-residents by category and rate |"
+    },
+    {
+      "line": 212,
+      "text": "| VAT Reconciliation | Monthly / quarterly VAT returns vs. annual revenue |"
+    },
+    {
+      "line": 213,
+      "text": "| GOSI & Saudization | Monthly GOSI returns, Nitaqat tier, WPS attestation |"
+    },
+    {
+      "line": 214,
+      "text": "| RETT (if applicable) | Each real estate disposal with notarisation date and 5% RETT paid |"
+    },
+    {
+      "line": 215,
+      "text": "| Excise (if applicable) | Bi-monthly excise returns; annual reconciliation |"
+    },
+    {
+      "line": 216,
+      "text": "| E-Invoicing (Fatoorah) | Phase 1 generation status; Phase 2 integration status |"
+    },
+    {
+      "line": 217,
+      "text": "| SADAD Billing Register | Every payment with tax head, period, amount, SADAD billing ID, payment date, bank receipt |"
+    },
+    {
+      "line": 218,
+      "text": "| Cross-Check Summary | Pass/fail for each reconciliation |"
+    },
+    {
+      "line": 219,
+      "text": "| 2026 Planning | VAT periodicity, WHT monthly cadence, Saudization plan |"
+    },
+    {
+      "line": 220,
+      "text": ""
+    },
+    {
+      "line": 221,
+      "text": "### 4.2 Cross-skill reconciliations"
+    },
+    {
+      "line": 222,
+      "text": ""
+    },
+    {
+      "line": 223,
+      "text": "- **Reconciliation tolerance rule** — Each cross-check must pass within tolerance (SAR 100 default; SAR 1,000 for larger entities). Failures flagged, not silently absorbed."
+    },
+    {
+      "line": 224,
+      "text": ""
+    },
+    {
+      "line": 225,
+      "text": "**Cross-check 1 — Revenue reconciliation**"
+    },
+    {
+      "line": 226,
+      "text": ""
+    },
+    {
+      "line": 227,
+      "text": "| Source | Figure | Rule |"
+    },
+    {
+      "line": 228,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 229,
+      "text": "| Financial statements revenue | Top of P&L | Anchor |"
+    },
+    {
+      "line": 230,
+      "text": "| sa-zakat / sa-corporate-tax revenue | Per upstream | Should equal anchor |"
+    },
+    {
+      "line": 231,
+      "text": "| saudi-arabia-vat aggregate annual output base | Sum of monthly/quarterly returns | Reconciles ± zero-rated exports, exempt sales, output adjustments |"
+    },
+    {
+      "line": 232,
+      "text": "| Bank deposits (if available) | Cross-check | Reconciles ± timing |"
+    },
+    {
+      "line": 233,
+      "text": ""
+    },
+    {
+      "line": 234,
+      "text": "**Cross-check 2 — Salary, GOSI, WPS**"
+    },
+    {
+      "line": 235,
+      "text": ""
+    },
+    {
+      "line": 236,
+      "text": "| Source | Figure | Rule |"
+    },
+    {
+      "line": 237,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 238,
+      "text": "| sa-gosi-saudization annual GOSI contributions | Sum of monthly returns | Anchor |"
+    },
+    {
+      "line": 239,
+      "text": "| sa-corporate-tax / financial statement salary expense | P&L salaries line | Reconciles to (gross salaries) |"
+    },
+    {
+      "line": 240,
+      "text": "| WPS file submissions via Mudad | 12 monthly files | All present — no gaps |"
+    },
+    {
+      "line": 241,
+      "text": "| Nitaqat tier per Saudization | Per upstream | Confirm not Yellow / Red |"
+    },
+    {
+      "line": 242,
+      "text": ""
+    },
+    {
+      "line": 243,
+      "text": "**Cross-check 3 — WHT agent obligations**"
+    },
+    {
+      "line": 244,
+      "text": ""
+    },
+    {
+      "line": 245,
+      "text": "| Source | Figure | Rule |"
+    },
+    {
+      "line": 246,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 247,
+      "text": "| Total payments to non-residents (per accounting records) | Per upstream | Anchor |"
+    },
+    {
+      "line": 248,
+      "text": "| WHT rate by category × payment amount | Per ITL Art. 68 | Should equal WHT remitted |"
+    },
+    {
+      "line": 249,
+      "text": "| Sum of monthly WHT returns | sa-withholding-tax | Must equal WHT due |"
+    },
+    {
+      "line": 250,
+      "text": "| Late WHT filing penalty risk | 1% per month + tax penalty per ZATCA penalty regime | Flag for reviewer |"
+    },
+    {
+      "line": 251,
+      "text": ""
+    },
+    {
+      "line": 252,
+      "text": "**Cross-check 4 — VAT reconciliation**"
+    },
+    {
+      "line": 253,
+      "text": ""
+    },
+    {
+      "line": 254,
+      "text": "| Source | Figure | Rule |"
+    },
+    {
+      "line": 255,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 256,
+      "text": "| Annual output VAT | Sum of period returns | Anchor |"
+    },
+    {
+      "line": 257,
+      "text": "| 15% (standard rate from 1 July 2020) × VAT-able sales | Computed | Reconciles |"
+    },
+    {
+      "line": 258,
+      "text": "| Annual input VAT | Sum of period returns | Per saudi-arabia-vat |"
+    },
+    {
+      "line": 259,
+      "text": "| Zero-rated exports | Per saudi-arabia-vat | Disclosed separately |"
+    },
+    {
+      "line": 260,
+      "text": "| Exempt sales (financial services, residential rent etc.) | Per saudi-arabia-vat | Disclosed separately |"
+    },
+    {
+      "line": 261,
+      "text": ""
+    },
+    {
+      "line": 262,
+      "text": "**Cross-check 5 — RETT (if any disposals)**"
+    },
+    {
+      "line": 263,
+      "text": ""
+    },
+    {
+      "line": 264,
+      "text": "| Source | Figure | Rule |"
+    },
+    {
+      "line": 265,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 266,
+      "text": "| Real estate disposals during the year | Per sa-rett | Anchor |"
+    },
+    {
+      "line": 267,
+      "text": "| 5% × disposal value | Should equal RETT paid at notarisation | RETT-1 form |"
+    },
+    {
+      "line": 268,
+      "text": "| VAT exemption confirmation | Real estate disposals are VAT-exempt (RETT replaces VAT on real estate from October 2020) | Disclosure check |"
+    },
+    {
+      "line": 269,
+      "text": ""
+    },
+    {
+      "line": 270,
+      "text": "**Cross-check 6 — Excise (if any)**"
+    },
+    {
+      "line": 271,
+      "text": ""
+    },
+    {
+      "line": 272,
+      "text": "| Source | Figure | Rule |"
+    },
+    {
+      "line": 273,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 274,
+      "text": "| Bi-monthly excise returns | Per sa-excise-tax | Anchor |"
+    },
+    {
+      "line": 275,
+      "text": "| Annual excise tax collected + paid | Sum of bi-monthly returns | Reconcile |"
+    },
+    {
+      "line": 276,
+      "text": "| Excise-able goods register | Per sa-excise-tax | Tobacco 100% / soft drinks 50% / energy drinks 100% / sweetened beverages 50% / e-cigarettes 100% |"
+    },
+    {
+      "line": 277,
+      "text": ""
+    },
+    {
+      "line": 278,
+      "text": "**Cross-check 7 — E-Invoicing (Fatoorah)**"
+    },
+    {
+      "line": 279,
+      "text": ""
+    },
+    {
+      "line": 280,
+      "text": "| Source | Figure | Rule |"
+    },
+    {
+      "line": 281,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 282,
+      "text": "| Phase 1 generation (since 4 December 2021) | All B2B and B2C invoices generated electronically | Compliance check |"
+    },
+    {
+      "line": 283,
+      "text": "| Phase 2 integration with ZATCA (rolled out in waves) | If wave is in scope, integration confirmed | Compliance check; if not yet in wave, note expected wave |"
+    },
+    {
+      "line": 284,
+      "text": "| QR code on each invoice | Mandatory | Spot-check sample |"
+    },
+    {
+      "line": 285,
+      "text": ""
+    },
+    {
+      "line": 286,
+      "text": "**Cross-check 8 — Working capital / Zakat adjustments**"
+    },
+    {
+      "line": 287,
+      "text": ""
+    },
+    {
+      "line": 288,
+      "text": "| Source | Figure | Rule |"
+    },
+    {
+      "line": 289,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 290,
+      "text": "| Long-term liabilities (added to Zakat base) | Per sa-zakat | Anchor |"
+    },
+    {
+      "line": 291,
+      "text": "| Long-term assets (deducted from Zakat base) | Per sa-zakat | Anchor |"
+    },
+    {
+      "line": 292,
+      "text": "| Inventory financed by short-term borrowing | Per sa-zakat | Adjustment per Implementing Regulations |"
+    },
+    {
+      "line": 293,
+      "text": "| Provisions for doubtful debts | Per sa-zakat | Add-back rules per Implementing Regulations |"
+    },
+    {
+      "line": 294,
+      "text": ""
+    },
+    {
+      "line": 295,
+      "text": "- **Cross-check 9 — Tolerance discipline** — For Zakat / CIT base computation: SAR 100 default tolerance. For larger entities (> SAR 40M revenue): SAR 1,000 tolerance. Discrepancies between SAR 100 and SAR 10,000 — flag and proceed. Above SAR 10,000 — raise as \"Needs Input\" before sign-off."
+    },
+    {
+      "line": 296,
+      "text": ""
+    },
+    {
+      "line": 297,
+      "text": "## Section 5 — Tax computation summary (Zakat / CIT / Mixed bottom line)"
+    },
+    {
+      "line": 298,
+      "text": ""
+    },
+    {
+      "line": 299,
+      "text": "The bottom line of the return appears in the reviewer brief executive summary."
+    },
+    {
+      "line": 300,
+      "text": ""
+    },
+    {
+      "line": 301,
+      "text": "### 5.1 Zakat declaration bottom line (Saudi/GCC-owned)"
+    },
+    {
+      "line": 302,
+      "text": ""
+    },
+    {
+      "line": 303,
+      "text": "- **Zakat declaration bottom line formula** — Equity (capital + retained earnings + reserves)              SAR X Plus: Long-term liabilities                                  SAR X Plus: Provisions added back                                  SAR X Less: Long-term assets                                       SAR X Less: Other deductible items per Implementing Regulations    SAR X = Zakat base                                                 SAR X Apply 2.5% (Gregorian year) or 2.577% (Hijri year)           SAR X = Zakat liability                                            SAR X Less: Any advance Zakat paid                                 SAR X = Net Zakat payable                                          SAR X"
+    },
+    {
+      "line": 304,
+      "text": ""
+    },
+    {
+      "line": 305,
+      "text": "### 5.2 CIT return bottom line (foreign-owned)"
+    },
+    {
+      "line": 306,
+      "text": ""
+    },
+    {
+      "line": 307,
+      "text": "- **CIT return bottom line formula** — Accounting profit before tax                                 SAR X Plus: Tax adjustments (non-deductible)                       SAR X Less: Tax adjustments (extra-deductible)                     SAR X = Taxable income                                             SAR X Interest deduction limit: 50% of EBITDA — apply if breached  SAR X Loss carry-forward (25% cap per year)                        SAR X = Final taxable income                                       SAR X CIT at 20% (general) / 85% (upstream petroleum) / 30% (natural gas) SAR X = CIT liability                                              SAR X Less: Foreign tax credit (treaty-based)                      SAR X Less: Any WHT credit (rare for resident filer)               SAR X Less: Any advance CIT paid                                   SAR X = Net CIT payable                                            SAR X"
+    },
+    {
+      "line": 308,
+      "text": ""
+    },
+    {
+      "line": 309,
+      "text": "### 5.3 Mixed-entity bottom line"
+    },
+    {
+      "line": 310,
+      "text": ""
+    },
+    {
+      "line": 311,
+      "text": "- **Mixed-entity bottom line formula** — Zakat base × Saudi/GCC% × 2.5%                               SAR X (Zakat portion) Taxable income × foreign% × 20% (or applicable)              SAR X (CIT portion) Combined liability on single return                          SAR X"
+    },
+    {
+      "line": 312,
+      "text": ""
+    },
+    {
+      "line": 313,
+      "text": "### 5.4 Refund treatment"
+    },
+    {
+      "line": 314,
+      "text": ""
+    },
+    {
+      "line": 315,
+      "text": "- **Refund treatment rule** — If net is refundable: claim is made on the ZATCA portal. Refunds are processed under the Tax Procedures Law; typical processing time 30–60 days, longer if ZATCA selects for audit. If net is payable: must be settled via SADAD billing before the 120-day deadline (see Section 6).  _(Tax Procedures Law)_"
+    },
+    {
+      "line": 316,
+      "text": ""
+    },
+    {
+      "line": 317,
+      "text": "## Section 6 — Payment instructions — ZATCA portal, SADAD billing"
+    },
+    {
+      "line": 318,
+      "text": ""
+    },
+    {
+      "line": 319,
+      "text": "All Saudi tax payments flow through the ZATCA portal → SADAD billing mechanism."
+    },
+    {
+      "line": 320,
+      "text": ""
+    },
+    {
+      "line": 321,
+      "text": "### 6.1 The ZATCA → SADAD flow"
+    },
+    {
+      "line": 322,
+      "text": ""
+    },
+    {
+      "line": 323,
+      "text": "- **ZATCA to SADAD flow steps** — 1. **Log into ZATCA portal** at https://zatca.gov.sa with TIN + password (or via Nafath / national IAM) 2. **Navigate to \"Returns and Payments\"** → select the relevant return (Zakat / CIT / VAT / WHT / Excise) 3. **Submit the return** — the portal computes the liability based on entries; verify against the working paper 4. **Generate SADAD bill** — ZATCA issues a **SADAD billing ID** (numeric, typically 14 digits or as currently formatted) 5. **Pay via Saudi bank channel** — present the SADAD billing ID via: **Internet banking** — every Saudi bank has a SADAD payment tab; select biller \"ZATCA\" / \"Zakat, Tax and Customs Authority\" → enter billing ID → pay; **Mobile banking app** — same flow; **SADAD-enabled ATM** — select SADAD payments → ZATCA → enter billing ID; **Bank branch teller** — present billing ID for over-the-counter payment 6. **Payment receipt** — bank issues a SADAD payment confirmation; the payment auto-feeds to ZATCA's records against the TIN 7. **Verify in ZATCA portal** — payment status updates from \"Pending\" to \"Paid\""
+    },
+    {
+      "line": 324,
+      "text": ""
+    },
+    {
+      "line": 325,
+      "text": "### 6.2 Common tax heads / SADAD bill mapping"
+    },
+    {
+      "line": 326,
+      "text": ""
+    },
+    {
+      "line": 327,
+      "text": "**Common tax heads / SADAD bill mapping table**"
+    },
+    {
+      "line": 328,
+      "text": ""
+    },
+    {
+      "line": 329,
+      "text": "| Tax head | ZATCA portal section | Periodicity | Used for |"
+    },
+    {
+      "line": 330,
+      "text": "| --- | --- | --- | --- |"
+    },
+    {
+      "line": 331,
+      "text": "| Zakat | Annual Zakat declaration | Annual (120 days from FYE) | Saudi/GCC entities |"
+    },
+    {
+      "line": 332,
+      "text": "| Corporate Income Tax | Annual CIT (Form 800) | Annual (120 days from FYE) | Foreign-owned entities |"
+    },
+    {
+      "line": 333,
+      "text": "| Mixed Zakat + CIT | Annual combined | Annual (120 days from FYE) | Mixed-ownership entities |"
+    },
+    {
+      "line": 334,
+      "text": "| VAT | Monthly or quarterly | 28th of following month | All VAT-registered |"
+    },
+    {
+      "line": 335,
+      "text": "| Withholding Tax | Monthly | Within 10 days of month-end | All WHT agents |"
+    },
+    {
+      "line": 336,
+      "text": "| Excise Tax | Bi-monthly | Within 15 days of period-end | Excise-able goods |"
+    },
+    {
+      "line": 337,
+      "text": "| RETT | Transaction-by-transaction | At notarisation | Real estate disposers |"
+    },
+    {
+      "line": 338,
+      "text": ""
+    },
+    {
+      "line": 339,
+      "text": "### 6.3 Payment timing relative to filing"
+    },
+    {
+      "line": 340,
+      "text": ""
+    },
+    {
+      "line": 341,
+      "text": "**Payment timing relative to filing table**"
+    },
+    {
+      "line": 342,
+      "text": ""
+    },
+    {
+      "line": 343,
+      "text": "| Payment | Due date | Filing reference |"
+    },
+    {
+      "line": 344,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 345,
+      "text": "| Annual Zakat / CIT balance | **Within 120 days of FYE** (for 31 Dec FYE → 30 April 2026) | Annual return |"
+    },
+    {
+      "line": 346,
+      "text": "| Monthly VAT (turnover > SAR 40M) | 28th of following month | VAT return |"
+    },
+    {
+      "line": 347,
+      "text": "| Quarterly VAT (turnover ≤ SAR 40M) | 28th of month following quarter | VAT return |"
+    },
+    {
+      "line": 348,
+      "text": "| Monthly WHT | Within 10 days of month-end | WHT return |"
+    },
+    {
+      "line": 349,
+      "text": "| Bi-monthly Excise | Within 15 days of period-end | Excise return |"
+    },
+    {
+      "line": 350,
+      "text": "| RETT | At notarisation | Transactional |"
+    },
+    {
+      "line": 351,
+      "text": ""
+    },
+    {
+      "line": 352,
+      "text": "- **Payment settlement rule** — The SADAD billing payment must be settled by the deadline. The annual return submission and the payment can be done in the same session via the portal."
+    },
+    {
+      "line": 353,
+      "text": ""
+    },
+    {
+      "line": 354,
+      "text": "### 6.4 Penalties for late payment / filing"
+    },
+    {
+      "line": 355,
+      "text": ""
+    },
+    {
+      "line": 356,
+      "text": "**Penalties for late payment / filing table**"
+    },
+    {
+      "line": 357,
+      "text": ""
+    },
+    {
+      "line": 358,
+      "text": "| Item | Penalty | Source |"
+    },
+    {
+      "line": 359,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 360,
+      "text": "| Late payment of any tax (Zakat / CIT / VAT / WHT / Excise) | 1% of unpaid amount per month (or part of month) | Tax Procedures Law and Zakat Implementing Regulations |"
+    },
+    {
+      "line": 361,
+      "text": "| Late filing of annual return | 5%–25% of tax due depending on delay band | Tax Procedures Law |"
+    },
+    {
+      "line": 362,
+      "text": "| Late VAT return | 5%–25% of VAT due | VAT Implementing Regulations |"
+    },
+    {
+      "line": 363,
+      "text": "| Late WHT remittance | 1% per month plus penalty 1%–25% | ITL Implementing Regulations |"
+    },
+    {
+      "line": 364,
+      "text": "| False declaration / evasion | Up to 25% of underpaid amount plus criminal exposure under Anti-Evasion provisions | Tax Procedures Law |"
+    },
+    {
+      "line": 365,
+      "text": ""
+    },
+    {
+      "line": 366,
+      "text": "## Section 7 — Filing instructions — annual return within 120 days of FYE via ZATCA"
+    },
+    {
+      "line": 367,
+      "text": ""
+    },
+    {
+      "line": 368,
+      "text": "### 7.1 Filing channel"
+    },
+    {
+      "line": 369,
+      "text": ""
+    },
+    {
+      "line": 370,
+      "text": "- **Filing channel rule** — All Saudi annual tax filings are submitted electronically through the **ZATCA portal** at https://zatca.gov.sa. Paper filings are not accepted for normal taxpayers."
+    },
+    {
+      "line": 371,
+      "text": ""
+    },
+    {
+      "line": 372,
+      "text": "### 7.2 Submission steps"
+    },
+    {
+      "line": 373,
+      "text": ""
+    },
+    {
+      "line": 374,
+      "text": "- **Submission steps** — 1. **Confirm CR / TIN validity** — both must be active in MoC and ZATCA records 2. **Prepare audited financial statements** if required (entities above SAR 40M revenue typically must attach audited FS signed by a SOCPA-licensed auditor) 3. **Log into ZATCA portal** with TIN + password / Nafath 4. **Navigate to \"Returns and Payments\"** → select \"Annual Zakat/Tax Return\" 5. **Choose the form**: Zakat declaration form (for Saudi/GCC); CIT Form 800 series (for foreign-owned); Combined declaration (for mixed) 6. **Enter the computation** using the working paper as source 7. **Upload attachments**: Audited financial statements (SOCPA-signed); Auditor's report; Cap table at FYE (mixed entities); Supporting schedules as required 8. **Validate** — portal runs arithmetic and schema checks; resolve errors 9. **Submit** — receive ZATCA acknowledgement with submission reference and timestamp 10. **Generate SADAD bill** for payable amount 11. **Pay via Saudi bank channel** (per Section 6) 12. **Save acknowledgement and SADAD payment confirmation** — legal proof of filing and payment"
+    },
+    {
+      "line": 375,
+      "text": ""
+    },
+    {
+      "line": 376,
+      "text": "### 7.3 Deadlines (illustrative — adjust to actual FYE)"
+    },
+    {
+      "line": 377,
+      "text": ""
+    },
+    {
+      "line": 378,
+      "text": "**Deadlines table**"
+    },
+    {
+      "line": 379,
+      "text": ""
+    },
+    {
+      "line": 380,
+      "text": "| Fiscal year-end | 120-day deadline | Notes |"
+    },
+    {
+      "line": 381,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 382,
+      "text": "| 31 December 2025 | **30 April 2026** | Most common Gregorian filers |"
+    },
+    {
+      "line": 383,
+      "text": "| 31 March 2026 | **29 July 2026** | Some entities |"
+    },
+    {
+      "line": 384,
+      "text": "| 30 June 2026 | **28 October 2026** | Hijri-aligned filers |"
+    },
+    {
+      "line": 385,
+      "text": "| 30 September 2026 | **28 January 2027** | Some entities |"
+    },
+    {
+      "line": 386,
+      "text": "| Custom year-end approved by ZATCA | FYE + 120 days | Per approval |"
+    },
+    {
+      "line": 387,
+      "text": ""
+    },
+    {
+      "line": 388,
+      "text": "- **Hijri filer conversion** — For Hijri-year filers, the 120 days runs from the Hijri year-end and is converted to Gregorian for portal submission."
+    },
+    {
+      "line": 389,
+      "text": ""
+    },
+    {
+      "line": 390,
+      "text": "### 7.4 Extension of time"
+    },
+    {
+      "line": 391,
+      "text": ""
+    },
+    {
+      "line": 392,
+      "text": "**Extension of time table**"
+    },
+    {
+      "line": 393,
+      "text": ""
+    },
+    {
+      "line": 394,
+      "text": "| Item | Mechanism |"
+    },
+    {
+      "line": 395,
+      "text": "| --- | --- |"
+    },
+    {
+      "line": 396,
+      "text": "| Extension request | Application to ZATCA before deadline, citing grounds (typically audit delay or major operational disruption) |"
+    },
+    {
+      "line": 397,
+      "text": "| Typical extension | 30 days; rarely more |"
+    },
+    {
+      "line": 398,
+      "text": "| Penalty during extension | Late payment penalty (1% per month) still accrues unless ZATCA grants a payment moratorium |"
+    },
+    {
+      "line": 399,
+      "text": ""
+    },
+    {
+      "line": 400,
+      "text": "### 7.5 Audit & assessment"
+    },
+    {
+      "line": 401,
+      "text": ""
+    },
+    {
+      "line": 402,
+      "text": "ZATCA may select returns for audit within 5 years of filing (per Tax Procedures Law). Triggers include:"
+    },
+    {
+      "line": 403,
+      "text": ""
+    },
+    {
+      "line": 404,
+      "text": "- Significant book-to-tax adjustments"
+    },
+    {
+      "line": 405,
+      "text": "- Loss carry-forward usage"
+    },
+    {
+      "line": 406,
+      "text": "- Related-party transactions (transfer pricing — Saudi adopts OECD-aligned TP rules; Local File / Master File / CbCR thresholds apply)"
+    },
+    {
+      "line": 407,
+      "text": "- Refund claims"
+    },
+    {
+      "line": 408,
+      "text": "- Industry-specific risk profiling"
+    },
+    {
+      "line": 409,
+      "text": ""
+    },
+    {
+      "line": 410,
+      "text": "## Section 8 — WPS + Saudization compliance check"
+    },
+    {
+      "line": 411,
+      "text": ""
+    },
+    {
+      "line": 412,
+      "text": "This section is critical because ZATCA increasingly cross-references labor compliance with tax filings, and Yellow/Red Nitaqat tier is flagged on the entity's file."
+    },
+    {
+      "line": 413,
+      "text": ""
+    },
+    {
+      "line": 414,
+      "text": "### 8.1 WPS (Wage Protection System) via Mudad"
+    },
+    {
+      "line": 415,
+      "text": ""
+    },
+    {
+      "line": 416,
+      "text": "- **WPS via Mudad requirements** — Every entity with employees must: Submit monthly WPS file via the **Mudad** platform (https://mudad.com.sa); Confirm all employees received salary via authorised bank channel; Submit no later than the salary disbursement deadline (typically 3 days after the salary date). **Capstone check:** Confirm 12 monthly WPS files were submitted for the year. If any gap, flag as a \"Reviewer Attention\" item — gaps in WPS are a compliance violation under Ministry of Human Resources and Social Development (MHRSD) regulations and can result in: - Visa block on the company - Suspension of work permit renewals - Civil penalties"
+    },
+    {
+      "line": 417,
+      "text": ""
+    },
+    {
+      "line": 418,
+      "text": "### 8.2 Saudization — Nitaqat tier"
+    },
+    {
+      "line": 419,
+      "text": ""
+    },
+    {
+      "line": 420,
+      "text": "The Nitaqat program tracks Saudi national employment as a percentage of total workforce. Tiers (current framework):"
+    },
+    {
+      "line": 421,
+      "text": ""
+    },
+    {
+      "line": 422,
+      "text": "**Nitaqat tier table**"
+    },
+    {
+      "line": 423,
+      "text": ""
+    },
+    {
+      "line": 424,
+      "text": "| Tier | Status | Implications |"
+    },
+    {
+      "line": 425,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 426,
+      "text": "| Platinum | Best | Maximum benefits; expedited services |"
+    },
+    {
+      "line": 427,
+      "text": "| High Green | High compliance | Normal services; favoured for govt contracts |"
+    },
+    {
+      "line": 428,
+      "text": "| Medium Green | Compliant | Normal services |"
+    },
+    {
+      "line": 429,
+      "text": "| Low Green | Compliant but marginal | Normal services; warning zone |"
+    },
+    {
+      "line": 430,
+      "text": "| Yellow | Non-compliant | Visa restrictions; cannot renew certain work permits |"
+    },
+    {
+      "line": 431,
+      "text": "| Red | Severely non-compliant | Severe visa/work permit restrictions; major risk for operations |"
+    },
+    {
+      "line": 432,
+      "text": ""
+    },
+    {
+      "line": 433,
+      "text": "- **Capstone Nitaqat check** — **Capstone check:** Confirm Nitaqat tier per sa-gosi-saudization. If Yellow or Red, raise as a \"Reviewer Attention\" item — does not block the tax filing but is a major operational risk."
+    },
+    {
+      "line": 434,
+      "text": ""
+    },
+    {
+      "line": 435,
+      "text": "### 8.3 GOSI confirmation"
+    },
+    {
+      "line": 436,
+      "text": ""
+    },
+    {
+      "line": 437,
+      "text": "- **GOSI confirmation checks** — Confirm GOSI monthly contributions paid for all 12 months; Confirm employee numbers reconcile to financial statement salary expense; Saudi nationals: employer contribution 11.75% (current rates — verify at filing time); employee 9.75%; unemployment insurance (SANED) 1%/1%; Non-Saudi: employer occupational hazard only — 2% (current rate — verify)"
+    },
+    {
+      "line": 438,
+      "text": ""
+    },
+    {
+      "line": 439,
+      "text": "### 8.4 Attestation block"
+    },
+    {
+      "line": 440,
+      "text": ""
+    },
+    {
+      "line": 441,
+      "text": "The reviewer brief must include:"
+    },
+    {
+      "line": 442,
+      "text": ""
+    },
+    {
+      "line": 443,
+      "text": "```"
+    },
+    {
+      "line": 444,
+      "text": "[ ] All 12 monthly WPS files submitted via Mudad"
+    },
+    {
+      "line": 445,
+      "text": "[ ] All 12 monthly GOSI returns filed and paid"
+    },
+    {
+      "line": 446,
+      "text": "[ ] Nitaqat tier confirmed as: ______________"
+    },
+    {
+      "line": 447,
+      "text": "[ ] No outstanding labor violations flagged with MHRSD"
+    },
+    {
+      "line": 448,
+      "text": "[ ] Employee count reconciles to financial statements"
+    },
+    {
+      "line": 449,
+      "text": "```"
+    },
+    {
+      "line": 450,
+      "text": ""
+    },
+    {
+      "line": 451,
+      "text": "## Section 9 — Year-end planning notes"
+    },
+    {
+      "line": 452,
+      "text": ""
+    },
+    {
+      "line": 453,
+      "text": "### 9.1 Zakat working capital optimisation (Saudi/GCC entities)"
+    },
+    {
+      "line": 454,
+      "text": ""
+    },
+    {
+      "line": 455,
+      "text": "- **Zakat working capital planning** — The Zakat base under the equity method includes: Long-term liabilities (added); Long-term assets (deducted). Strategic planning at FYE: Accelerate qualifying long-term asset purchases before FYE to reduce Zakat base; Convert short-term debt to long-term (over 1 year) to add to Zakat base — but watch other consequences; Time inventory write-downs and provisions per Implementing Regulations; Consider Zakat-on-profit method comparison — whichever is lower applies"
+    },
+    {
+      "line": 456,
+      "text": ""
+    },
+    {
+      "line": 457,
+      "text": "### 9.2 CIT interest deduction limit (foreign entities)"
+    },
+    {
+      "line": 458,
+      "text": ""
+    },
+    {
+      "line": 459,
+      "text": "- **Interest deduction limit planning** — ITL Article 12 / Implementing Regulations cap interest deduction at 50% of EBITDA. Planning items: Forecast EBITDA and interest expense before FYE; Consider thin-cap restructuring if interest exceeds the cap; Carry-forward of denied interest: verify current rules in sa-corporate-tax  _(ITL Article 12)_"
+    },
+    {
+      "line": 460,
+      "text": ""
+    },
+    {
+      "line": 461,
+      "text": "### 9.3 WHT exemption certificates"
+    },
+    {
+      "line": 462,
+      "text": ""
+    },
+    {
+      "line": 463,
+      "text": "- **WHT exemption certificate planning** — For payments to non-residents in treaty countries (Saudi Arabia has 50+ DTAs): Apply for WHT exemption / reduced rate certificate before payment; ZATCA processes certificate applications via the portal; Without certificate, full statutory WHT applies; refund claim possible but cash-tied-up for months"
+    },
+    {
+      "line": 464,
+      "text": ""
+    },
+    {
+      "line": 465,
+      "text": "### 9.4 Saudization workforce planning"
+    },
+    {
+      "line": 466,
+      "text": ""
+    },
+    {
+      "line": 467,
+      "text": "Plan Nitaqat tier maintenance for 2026: hire Saudi nationals, train, retain; Use programs like HRDF / HADAF subsidies for Saudi training; Forecast Saudi national % by quarter to avoid tier drop"
+    },
+    {
+      "line": 468,
+      "text": ""
+    },
+    {
+      "line": 469,
+      "text": "### 9.5 VAT periodicity transition"
+    },
+    {
+      "line": 470,
+      "text": ""
+    },
+    {
+      "line": 471,
+      "text": "If turnover crosses SAR 40M threshold, periodicity becomes mandatory monthly. Plan: Internal controls upgrade for monthly close; Reconciliation cadence; E-invoicing Phase 2 wave inclusion check"
+    },
+    {
+      "line": 472,
+      "text": ""
+    },
+    {
+      "line": 473,
+      "text": "### 9.6 E-Invoicing Phase 2 waves"
+    },
+    {
+      "line": 474,
+      "text": ""
+    },
+    {
+      "line": 475,
+      "text": "ZATCA continues to phase in Phase 2 integration in waves. Each wave is announced by ZATCA with a target date. Confirm: Has the entity received the wave notification? Is integration with ZATCA infrastructure complete? Is the entity exchanging cryptographic stamps / UUIDs correctly?"
+    },
+    {
+      "line": 476,
+      "text": ""
+    },
+    {
+      "line": 477,
+      "text": "### 9.7 RETT planning"
+    },
+    {
+      "line": 478,
+      "text": ""
+    },
+    {
+      "line": 479,
+      "text": "- **RETT planning** — If real estate disposals are planned in 2026: RETT 5% on disposal value, paid at notarisation; RETT replaced VAT on real estate from 4 October 2020; Some exemptions (gifts between first-degree relatives, certain inheritance, etc.) — verify per sa-rett"
+    },
+    {
+      "line": 480,
+      "text": ""
+    },
+    {
+      "line": 481,
+      "text": "### 9.8 Transfer pricing / BEPS"
+    },
+    {
+      "line": 482,
+      "text": ""
+    },
+    {
+      "line": 483,
+      "text": "- **Transfer pricing / BEPS thresholds** — Saudi adopted OECD-aligned TP rules; entities meeting thresholds must prepare: Local File; Master File; Country-by-Country Report (CbCR) — for MNEs above SAR 3.2 billion consolidated revenue. Not assembled here; reference via sa-corporate-tax."
+    },
+    {
+      "line": 484,
+      "text": ""
+    },
+    {
+      "line": 485,
+      "text": "## Section 10 — Reviewer attestation block"
+    },
+    {
+      "line": 486,
+      "text": ""
+    },
+    {
+      "line": 487,
+      "text": "The reviewer brief contains an attestation block:"
+    },
+    {
+      "line": 488,
+      "text": ""
+    },
+    {
+      "line": 489,
+      "text": "```markdown"
+    },
+    {
+      "line": 490,
+      "text": "# Reviewer Attestation — [Entity Name] — FY 2025"
+    },
+    {
+      "line": 491,
+      "text": ""
+    },
+    {
+      "line": 492,
+      "text": "Reviewer name: ____________________________________"
+    },
+    {
+      "line": 493,
+      "text": "Membership body: [ ] SOCPA   [ ] ICAEW   [ ] ACCA   [ ] US CPA practising in KSA"
+    },
+    {
+      "line": 494,
+      "text": "Membership number: ____________________________________"
+    },
+    {
+      "line": 495,
+      "text": "Date of review: ____________________________________"
+    },
+    {
+      "line": 496,
+      "text": ""
+    },
+    {
+      "line": 497,
+      "text": "I have reviewed:"
+    },
+    {
+      "line": 498,
+      "text": "[ ] Zakat base computation per sa-zakat (Saudi/GCC entities)"
+    },
+    {
+      "line": 499,
+      "text": "[ ] CIT computation per sa-corporate-tax (foreign-owned entities)"
+    },
+    {
+      "line": 500,
+      "text": "[ ] Mixed-entity apportionment (where applicable)"
+    },
+    {
+      "line": 501,
+      "text": "[ ] Withholding tax compliance per sa-withholding-tax with SADAD billing verification"
+    },
+    {
+      "line": 502,
+      "text": "[ ] VAT reconciliation per saudi-arabia-vat"
+    },
+    {
+      "line": 503,
+      "text": "[ ] GOSI & Saudization compliance per sa-gosi-saudization"
+    },
+    {
+      "line": 504,
+      "text": "[ ] WPS file submissions via Mudad (12 monthly files confirmed)"
+    },
+    {
+      "line": 505,
+      "text": "[ ] Nitaqat tier confirmed (not Yellow / Red)"
+    },
+    {
+      "line": 506,
+      "text": "[ ] RETT disclosures per sa-rett (where applicable)"
+    },
+    {
+      "line": 507,
+      "text": "[ ] Excise reconciliation per sa-excise-tax (where applicable)"
+    },
+    {
+      "line": 508,
+      "text": "[ ] E-Invoicing (Fatoorah) Phase 1 + Phase 2 compliance per saudi-einvoice"
+    },
+    {
+      "line": 509,
+      "text": "[ ] Entity records per sa-formation"
+    },
+    {
+      "line": 510,
+      "text": "[ ] Cross-skill reconciliations within tolerance"
+    },
+    {
+      "line": 511,
+      "text": "[ ] All positions taken have legislative citations (ITL / Zakat IR / VAT IR / RETT)"
+    },
+    {
+      "line": 512,
+      "text": "[ ] Audited financial statements attached (where threshold met)"
+    },
+    {
+      "line": 513,
+      "text": ""
+    },
+    {
+      "line": 514,
+      "text": "Sign-off: ____________________________________"
+    },
+    {
+      "line": 515,
+      "text": ""
+    },
+    {
+      "line": 516,
+      "text": "I confirm the return is ready for ZATCA submission and that the taxpayer / authorised representative has been provided with the action list and SADAD billing register."
+    },
+    {
+      "line": 517,
+      "text": "```"
+    },
+    {
+      "line": 518,
+      "text": ""
+    },
+    {
+      "line": 519,
+      "text": "## Section 11 — Final taxpayer action list template"
+    },
+    {
+      "line": 520,
+      "text": ""
+    },
+    {
+      "line": 521,
+      "text": "```markdown"
+    },
+    {
+      "line": 522,
+      "text": "# Action List — [Entity Name] — FY 2025 (Saudi Arabia)"
+    },
+    {
+      "line": 523,
+      "text": ""
+    },
+    {
+      "line": 524,
+      "text": "## Immediate (before 120-day deadline — i.e. by [deadline date])"
+    },
+    {
+      "line": 525,
+      "text": ""
+    },
+    {
+      "line": 526,
+      "text": "### Annual return submission"
+    },
+    {
+      "line": 527,
+      "text": "1. Log into ZATCA portal with TIN + password / Nafath"
+    },
+    {
+      "line": 528,
+      "text": "2. Open \"Annual Zakat/Tax Return\" → select form (Zakat / CIT / Mixed)"
+    },
+    {
+      "line": 529,
+      "text": "3. Enter computation values from working paper"
+    },
+    {
+      "line": 530,
+      "text": "4. Upload audited financial statements (SOCPA-signed) and supporting schedules"
+    },
+    {
+      "line": 531,
+      "text": "5. Submit return → save acknowledgement with submission reference and timestamp"
+    },
+    {
+      "line": 532,
+      "text": "6. Generate SADAD bill for the payable amount"
+    },
+    {
+      "line": 533,
+      "text": "7. Pay via Saudi bank (internet banking, mobile app, SADAD ATM, or branch teller)"
+    },
+    {
+      "line": 534,
+      "text": "8. Save SADAD payment confirmation"
+    },
+    {
+      "line": 535,
+      "text": "9. Verify \"Paid\" status in ZATCA portal within 1–2 business days"
+    },
+    {
+      "line": 536,
+      "text": ""
+    },
+    {
+      "line": 537,
+      "text": "### Final WHT remittance (if year-end month outstanding)"
+    },
+    {
+      "line": 538,
+      "text": "1. Confirm all 12 monthly WHT returns filed (within 10 days of month-end each)"
+    },
+    {
+      "line": 539,
+      "text": "2. Confirm SADAD bills paid for each month"
+    },
+    {
+      "line": 540,
+      "text": ""
+    },
+    {
+      "line": 541,
+      "text": "### Final VAT remittance (if year-end period outstanding)"
+    },
+    {
+      "line": 542,
+      "text": "1. Confirm all VAT periods (monthly or quarterly) filed and paid"
+    },
+    {
+      "line": 543,
+      "text": "2. Verify \"Paid\" status for each period"
+    },
+    {
+      "line": 544,
+      "text": ""
+    },
+    {
+      "line": 545,
+      "text": "### Excise reconciliation (if applicable)"
+    },
+    {
+      "line": 546,
+      "text": "1. Confirm all bi-monthly excise returns filed and paid"
+    },
+    {
+      "line": 547,
+      "text": "```"
+    },
+    {
+      "line": 548,
+      "text": ""
+    },
+    {
+      "line": 549,
+      "text": "### Monthly / periodic compliance through FY 2026"
+    },
+    {
+      "line": 550,
+      "text": ""
+    },
+    {
+      "line": 551,
+      "text": "**Monthly / periodic compliance through FY 2026 table**"
+    },
+    {
+      "line": 552,
+      "text": ""
+    },
+    {
+      "line": 553,
+      "text": "| Item | Tax head | Due |"
+    },
+    {
+      "line": 554,
+      "text": "| --- | --- | --- |"
+    },
+    {
+      "line": 555,
+      "text": "| WHT — payments to non-residents | Monthly WHT return | Within 10 days of month-end |"
+    },
+    {
+      "line": 556,
+      "text": "| VAT (monthly filer — turnover > SAR 40M) | VAT return | 28th of following month |"
+    },
+    {
+      "line": 557,
+      "text": "| VAT (quarterly filer) | VAT return | 28th of month following quarter |"
+    },
+    {
+      "line": 558,
+      "text": "| GOSI monthly contribution | GOSI portal | Around the 15th — verify |"
+    },
+    {
+      "line": 559,
+      "text": "| WPS file via Mudad | Mudad platform | After each salary disbursement (typically 3 days) |"
+    },
+    {
+      "line": 560,
+      "text": "| Excise bi-monthly | Excise return | Within 15 days of period-end |"
+    },
+    {
+      "line": 561,
+      "text": "| RETT | Per transaction | At notarisation |"
+    },
+    {
+      "line": 562,
+      "text": ""
+    },
+    {
+      "line": 563,
+      "text": "### Record retention"
+    },
+    {
+      "line": 564,
+      "text": ""
+    },
+    {
+      "line": 565,
+      "text": "- **Record retention rule** — Per Tax Procedures Law and Zakat Implementing Regulations, records must be retained for **6 years** from end of the relevant tax year (longer if assessment is open). Records include: Books of account (general ledger, sales register, purchase register); SADAD payment confirmations; ZATCA submission acknowledgements; VAT invoices (Fatoorah-compliant, with QR code); WHT certificates issued to non-residents; GOSI monthly returns and confirmations; WPS monthly files; Bank statements; Audited financial statements and auditor's reports; Cap table updates (mixed entities). Records must be retrievable in Arabic where ZATCA requests (some documents may be in English with Arabic translation on request).  _(Tax Procedures Law and Zakat Implementing Regulations)_"
+    },
+    {
+      "line": 566,
+      "text": ""
+    },
+    {
+      "line": 567,
+      "text": "### Compliance attestations to keep current"
+    },
+    {
+      "line": 568,
+      "text": ""
+    },
+    {
+      "line": 569,
+      "text": "- [ ] CR renewal (annually, via MoC)"
+    },
+    {
+      "line": 570,
+      "text": "- [ ] VAT registration active"
+    },
+    {
+      "line": 571,
+      "text": "- [ ] GOSI employer registration active"
+    },
+    {
+      "line": 572,
+      "text": "- [ ] Mudad subscription active"
+    },
+    {
+      "line": 573,
+      "text": "- [ ] Saudization Nitaqat tier maintained at Medium Green or above"
+    },
+    {
+      "line": 574,
+      "text": "- [ ] E-Invoicing Phase 2 integration current"
+    },
+    {
+      "line": 575,
+      "text": ""
+    },
+    {
+      "line": 576,
+      "text": "## Section 12 — Refusals"
+    },
+    {
+      "line": 577,
+      "text": ""
+    },
+    {
+      "line": 578,
+      "text": "- **R-SA-ASM-1** — Upstream skill did not run. Name the missing skill. Continue with available data; flag the gap; do not fabricate the missing computation."
+    },
+    {
+      "line": 579,
+      "text": "- **R-SA-ASM-2** — Upstream self-check failed. Note the specific check; continue but flag."
+    },
+    {
+      "line": 580,
+      "text": "- **R-SA-ASM-3** — Cross-skill reconciliation > SAR 10,000. Raise as \"Needs Input\"; do not silently round."
+    },
+    {
+      "line": 581,
+      "text": "- **R-SA-ASM-4** — Out of scope: upstream petroleum (Aramco-style 85% rate regime), natural gas investment (30%–85% bands), banking under SAMA-regulated specialised regimes, insurance specialised regimes, listed Tadawul-specific reporting requirements beyond the standard ownership split, qualified investment funds (QIFs) under special regimes, Real Estate Investment Traded Funds (REITs) under specialised CMA rules, Special Economic Zones (Riyadh ITSEZ, Jazan, Ras Al-Khair, Cloud Computing Special Economic Zone, Special Integrated Logistics Zone), Regional Headquarters (RHQ) tax incentive regime, and entities in NEOM / Red Sea Global / Qiddiya with specialised arrangements. Flag for human specialist; do not attempt."
+    },
+    {
+      "line": 582,
+      "text": "- **R-SA-ASM-5** — Out of scope: PE-only filings for non-resident contractors operating without local CR; pure-play offshore service permanent establishments under treaty-protected positions; transfer pricing assessments for MNEs above CbCR threshold (handled via sa-corporate-tax with specialist support); APA negotiations with ZATCA. Refer to a specialist."
+    },
+    {
+      "line": 583,
+      "text": "- **R-SA-ASM-6** — Intake incomplete. Name the missing intake field (CR, TIN, VAT number, ownership split, fiscal year-end, audited FS, GOSI ID, Mudad subscription). Cannot finalise the return until provided."
+    },
+    {
+      "line": 584,
+      "text": "- **R-SA-ASM-7** — Asked to submit to ZATCA. This skill produces a working paper. Submission is the taxpayer's (or their authorised representative's) action, after credentialed reviewer sign-off. Decline politely; provide the filing instructions instead."
+    },
+    {
+      "line": 585,
+      "text": "- **R-SA-ASM-8** — Asked to confirm rates / thresholds without verification against current ZATCA regulations. Defer to sa-zakat / sa-corporate-tax / saudi-arabia-vat which carry the verified current-period figures. Flag any figure used here as \"verify against current upstream skill output\"."
+    },
+    {
+      "line": 586,
+      "text": "- **R-SA-ASM-9** — Asked to opine on Sharia compliance of Zakat base treatment. Decline — Sharia interpretation is the role of the entity's Sharia board or qualified scholar; the capstone applies ZATCA's Implementing Regulations as published, not independent Sharia analysis."
+    },
+    {
+      "line": 587,
+      "text": ""
+    },
+    {
+      "line": 588,
+      "text": "## Section 13 — Self-checks"
+    },
+    {
+      "line": 589,
+      "text": ""
+    },
+    {
+      "line": 590,
+      "text": "All upstream skills required for the chosen return type have produced output, or the gap is flagged."
+    },
+    {
+      "line": 591,
+      "text": ""
+    },
+    {
+      "line": 592,
+      "text": "Ownership split is correctly classified between Saudi/GCC and foreign for mixed entities, with cap table support."
+    },
+    {
+      "line": 593,
+      "text": ""
+    },
+    {
+      "line": 594,
+      "text": "Zakat base (equity method) reconciles to the financial statements equity section; long-term liabilities and long-term assets correctly identified."
+    },
+    {
+      "line": 595,
+      "text": ""
+    },
+    {
+      "line": 596,
+      "text": "CIT taxable income reconciles from accounting profit through documented tax adjustments with ITL section references."
+    },
+    {
+      "line": 597,
+      "text": ""
+    },
+    {
+      "line": 598,
+      "text": "Interest deduction limit (50% of EBITDA per ITL Art. 12) is tested and applied if breached."
+    },
+    {
+      "line": 599,
+      "text": ""
+    },
+    {
+      "line": 600,
+      "text": "All 12 monthly WHT returns are confirmed filed; each has a SADAD billing ID and payment confirmation."
+    },
+    {
+      "line": 601,
+      "text": ""
+    },
+    {
+      "line": 602,
+      "text": "VAT reconciliation: annual revenue ties to sum of monthly/quarterly VAT returns ± documented reconciling items."
+    },
+    {
+      "line": 603,
+      "text": ""
+    },
+    {
+      "line": 604,
+      "text": "All 12 monthly WPS files via Mudad are confirmed submitted."
+    },
+    {
+      "line": 605,
+      "text": ""
+    },
+    {
+      "line": 606,
+      "text": "Nitaqat tier is identified; if Yellow or Red, raised as a Reviewer Attention item."
+    },
+    {
+      "line": 607,
+      "text": ""
+    },
+    {
+      "line": 608,
+      "text": "Audited financial statements are attached where threshold met (SAR 40M+ revenue or other ZATCA-specified threshold)."
+    },
+    {
+      "line": 609,
+      "text": ""
+    },
+    {
+      "line": 610,
+      "text": "RETT disclosures are present for any real estate disposals during the year."
+    },
+    {
+      "line": 611,
+      "text": ""
+    },
+    {
+      "line": 612,
+      "text": "Excise reconciliation is present if entity deals in excise-able goods."
+    },
+    {
+      "line": 613,
+      "text": ""
+    },
+    {
+      "line": 614,
+      "text": "Fatoorah (e-invoicing) Phase 1 compliance confirmed; Phase 2 integration confirmed where wave applies."
+    },
+    {
+      "line": 615,
+      "text": ""
+    },
+    {
+      "line": 616,
+      "text": "120-day deadline is explicitly stated in the action list with the correct calendar date computed from FYE."
+    },
+    {
+      "line": 617,
+      "text": ""
+    },
+    {
+      "line": 618,
+      "text": "SADAD billing register lists every payable item with billing ID, amount, and payment status."
+    },
+    {
+      "line": 619,
+      "text": ""
+    },
+    {
+      "line": 620,
+      "text": "Record retention period (6 years per Tax Procedures Law) is stated in the action list."
+    },
+    {
+      "line": 621,
+      "text": ""
+    },
+    {
+      "line": 622,
+      "text": "Reviewer brief contains legislation citations (Royal Decree numbers, ITL articles, Zakat IR articles, VAT IR articles, RETT framework) for every position taken."
+    },
+    {
+      "line": 623,
+      "text": ""
+    },
+    {
+      "line": 624,
+      "text": "Credentialed reviewer (SOCPA / ICAEW / ACCA / US CPA) sign-off requirement is stated in the executive summary, attestation block, and action list."
+    },
+    {
+      "line": 625,
+      "text": ""
+    },
+    {
+      "line": 626,
+      "text": "For mixed entities, Saudi/GCC% × Zakat base × 2.5% PLUS foreign% × taxable income × applicable CIT rate equals the combined liability on the return."
+    },
+    {
+      "line": 627,
+      "text": ""
+    },
+    {
+      "line": 628,
+      "text": "WHT rates applied per ITL Art. 68 (5% royalties / 15% management / 20% other / 5% dividends / 5% interest / 5% rent / 5% technical services — confirm against current upstream)."
+    },
+    {
+      "line": 629,
+      "text": ""
+    },
+    {
+      "line": 630,
+      "text": "## Section 14 — Output files"
+    },
+    {
+      "line": 631,
+      "text": ""
+    },
+    {
+      "line": 632,
+      "text": "The final output is **three files**:"
+    },
+    {
+      "line": 633,
+      "text": ""
+    },
+    {
+      "line": 634,
+      "text": "1. **`[entity_slug]_FY2025_sa_master.xlsx`** — Master workbook. Sheets per Section 4.1. Use live formulas where possible; verify no `#REF!` errors."
+    },
+    {
+      "line": 635,
+      "text": ""
+    },
+    {
+      "line": 636,
+      "text": "2. **`reviewer_brief.md`** — Markdown file with executive summary, computation walk-through, cross-check results, positions taken, attention flags, attestation block."
+    },
+    {
+      "line": 637,
+      "text": ""
+    },
+    {
+      "line": 638,
+      "text": "3. **`taxpayer_action_list.md`** — Markdown file with all Section 11 contents."
+    },
+    {
+      "line": 639,
+      "text": ""
+    },
+    {
+      "line": 640,
+      "text": "All three files are placed in `/mnt/user-data/outputs/` and presented to the user at the end."
+    },
+    {
+      "line": 641,
+      "text": ""
+    },
+    {
+      "line": 642,
+      "text": "If execution runs out of context mid-build, complete the computation work first and produce whichever formatted outputs are finished, then state clearly which deliverables are partial."
+    },
+    {
+      "line": 643,
+      "text": ""
+    },
+    {
+      "line": 644,
+      "text": "## Section 15 — Known gaps"
+    },
+    {
+      "line": 645,
+      "text": ""
+    },
+    {
+      "line": 646,
+      "text": "1. PDF form filling is not automated; the reviewer or taxpayer enters values into the ZATCA portal using the working paper."
+    },
+    {
+      "line": 647,
+      "text": "2. ZATCA XML / API submission is not produced by this skill; integrations with ERP / e-invoicing solution providers handle that."
+    },
+    {
+      "line": 648,
+      "text": "3. Auditor's report attachment is the taxpayer's responsibility; this skill flags audit requirement based on revenue threshold but does not produce the audit itself."
+    },
+    {
+      "line": 649,
+      "text": "4. Transfer pricing Local File / Master File / CbCR content is referenced via sa-corporate-tax but not assembled here."
+    },
+    {
+      "line": 650,
+      "text": "5. Treaty-based WHT reductions are referenced via sa-withholding-tax but specific DTA analysis is upstream."
+    },
+    {
+      "line": 651,
+      "text": "6. Special regimes (Aramco upstream petroleum, natural gas investment, banking, insurance, SEZ, RHQ, NEOM, Red Sea Global, Qiddiya) are out of scope."
+    },
+    {
+      "line": 652,
+      "text": "7. Sharia-board specific interpretations of Zakat base are out of scope; the capstone applies ZATCA Implementing Regulations as published."
+    },
+    {
+      "line": 653,
+      "text": "8. Hijri-year conversions are handled by sa-zakat; the capstone uses the upstream output as-is."
+    },
+    {
+      "line": 654,
+      "text": "9. Local labor compliance beyond WPS / Nitaqat (e.g., specific MHRSD inspections) is out of scope."
+    },
+    {
+      "line": 655,
+      "text": "10. Customs duty interactions on imports / exports are out of scope; ZATCA merged with Saudi Customs in 2021 but the Customs Schedule is administered separately."
+    },
+    {
+      "line": 656,
+      "text": ""
+    },
+    {
+      "line": 657,
+      "text": "### Change log"
+    },
+    {
+      "line": 658,
+      "text": ""
+    },
+    {
+      "line": 659,
+      "text": "- **v1.0 (May 2026):** Initial release. Modelled on pk-return-assembly and us-ca-return-assembly, adapted for Saudi annual returns, ZATCA portal filing, SADAD billing payment flow, the Zakat / CIT / mixed-entity split, WPS + Saudization compliance integration, and Royal Decree-based statutory references. Coordinates nine upstream Saudi skills."
+    },
+    {
+      "line": 660,
+      "text": ""
+    },
+    {
+      "line": 661,
+      "text": "## Section 16 — Sources"
+    },
+    {
+      "line": 662,
+      "text": ""
+    },
+    {
+      "line": 663,
+      "text": "**Sources table**"
+    },
+    {
+      "line": 664,
+      "text": ""
+    },
+    {
+      "line": 665,
+      "text": "| Source | Reference |"
+    },
+    {
+      "line": 666,
+      "text": "| --- | --- |"
+    },
+    {
+      "line": 667,
+      "text": "| Income Tax Law (ITL) | Royal Decree No. M/1 of 1425 AH (15 January 2004) and successive amendments; articles referenced throughout (Arts. 1–5, 12, 13, 27, 30, 68, 71, 72) |"
+    },
+    {
+      "line": 668,
+      "text": "| ITL Implementing Regulations | Issued by Ministerial Resolution; defines tax adjustments, depreciation, interest deduction limit, loss carry-forward, WHT mechanism |"
+    },
+    {
+      "line": 669,
+      "text": "| Zakat — Royal Decree | Royal Decree No. M/40 of 1405 AH and successor regulations |"
+    },
+    {
+      "line": 670,
+      "text": "| Zakat Collection Implementing Regulations | Issued by ZATCA; equity-method base, Zakat-on-profit method, working capital adjustments |"
+    },
+    {
+      "line": 671,
+      "text": "| VAT Law | Royal Decree No. M/113 of 1438 AH (4 November 2017); VAT Implementing Regulations issued by ZATCA |"
+    },
+    {
+      "line": 672,
+      "text": "| Excise Tax Law | Royal Decree No. M/86 of 1438 AH (29 May 2017); Excise Implementing Regulations |"
+    },
+    {
+      "line": 673,
+      "text": "| Real Estate Transaction Tax (RETT) | Royal Decree No. M/84 of 14/02/1442 AH (effective 4 October 2020); RETT Implementing Regulations |"
+    },
+    {
+      "line": 674,
+      "text": "| Tax Procedures Law | Common procedural framework for ZATCA-administered taxes; penalties, deadlines, assessment, appeals |"
+    },
+    {
+      "line": 675,
+      "text": "| E-Invoicing (Fatoorah) | ZATCA Resolution; Phase 1 effective 4 December 2021; Phase 2 phased waves from 2023 onward |"
+    },
+    {
+      "line": 676,
+      "text": "| GOSI — Social Insurance Law | Royal Decree No. M/22 of 1389 AH and amendments |"
+    },
+    {
+      "line": 677,
+      "text": "| Saudization (Nitaqat) | Ministry of Human Resources and Social Development decisions |"
+    },
+    {
+      "line": 678,
+      "text": "| WPS — Wage Protection System | MHRSD regulations via Mudad platform |"
+    },
+    {
+      "line": 679,
+      "text": "| Companies Law | Royal Decree No. M/132 of 1443 AH (effective 19 January 2023, replacing 1965 Companies Law) — for entity structure, audit thresholds |"
+    },
+    {
+      "line": 680,
+      "text": "| ZATCA portal | https://zatca.gov.sa |"
+    },
+    {
+      "line": 681,
+      "text": "| Mudad portal | https://mudad.com.sa |"
+    },
+    {
+      "line": 682,
+      "text": "| GOSI portal | https://www.gosi.gov.sa |"
+    },
+    {
+      "line": 683,
+      "text": "| SOCPA — Saudi Organization for Chartered Public Accountants | https://socpa.org.sa |"
+    },
+    {
+      "line": 684,
+      "text": "| Ministry of Commerce (MoC) — CR registry | https://mc.gov.sa |"
+    },
+    {
+      "line": 685,
+      "text": "| Ministry of Human Resources and Social Development (MHRSD) | https://hrsd.gov.sa |"
+    },
+    {
+      "line": 686,
+      "text": "| SADAD payment system | National bill-payment infrastructure operated by Saudi Central Bank (SAMA) |"
+    },
+    {
+      "line": 687,
+      "text": "| Skill version | 1.0 |"
+    },
+    {
+      "line": 688,
+      "text": ""
+    },
+    {
+      "line": 689,
+      "text": "## Footer disclaimer"
+    },
+    {
+      "line": 690,
+      "text": ""
+    },
+    {
+      "line": 691,
+      "text": "*OpenAccountants — open-source accounting skills for AI*"
+    },
+    {
+      "line": 692,
+      "text": "*This is not tax advice. All outputs must be reviewed and signed off by a credentialed reviewer (SOCPA member, or recognised ICAEW / ACCA / US CPA practising in KSA) before filing via the ZATCA portal.*"
+    },
+    {
+      "line": 693,
+      "text": ""
+    },
+    {
+      "line": 694,
+      "text": "<!-- openaccountants-cta-block -->"
+    },
+    {
+      "line": 695,
+      "text": ""
+    },
+    {
+      "line": 696,
+      "text": "---"
+    },
+    {
+      "line": 697,
+      "text": ""
+    },
+    {
+      "line": 698,
+      "text": "## Talk to a verified accountant"
+    },
+    {
+      "line": 699,
+      "text": ""
+    },
+    {
+      "line": 700,
+      "text": "This guide is maintained by the OpenAccountants network — accountants who put"
+    },
+    {
+      "line": 701,
+      "text": "their name behind the tax answers AI gives people. The live, always-current"
+    },
+    {
+      "line": 702,
+      "text": "version (and the professional behind it) is at"
+    },
+    {
+      "line": 703,
+      "text": "[openaccountants.com](https://www.openaccountants.com)."
+    },
+    {
+      "line": 704,
+      "text": ""
+    },
+    {
+      "line": 705,
+      "text": "- Use it in your AI: https://www.openaccountants.com/connect"
+    },
+    {
+      "line": 706,
+      "text": "- Meet the accountants: https://www.openaccountants.com/network"
+    },
+    {
+      "line": 707,
+      "text": ""
+    },
+    {
+      "line": 708,
+      "text": "> **General reference only.** This document does not constitute tax, legal, or"
+    },
+    {
+      "line": 709,
+      "text": "> financial advice. Verify figures against the cited primary sources or with a"
+    },
+    {
+      "line": 710,
+      "text": "> licensed professional before relying on them."
+    }
+  ]
+}
