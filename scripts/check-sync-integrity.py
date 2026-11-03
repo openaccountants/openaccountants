@@ -26,6 +26,7 @@ from pathlib import Path, PurePosixPath
 from typing import Any, Iterable
 
 from frontmatter_yaml import load_frontmatter
+import label_boilerplate
 
 
 SYNC_BOT_NAMES = {"openaccountants-sync[bot]"}
@@ -424,7 +425,11 @@ def compare_existing_guides(
             )
         )
 
-    body_changed = normalize_body(before.body) != normalize_body(after.body)
+    # Removing old label text (scripts/label_boilerplate.py) is not a content change,
+    # so it needs no new version or date.
+    body_changed = normalize_body(label_boilerplate.strip(before.body)) != normalize_body(
+        label_boilerplate.strip(after.body)
+    )
     date_advanced = (
         before.last_updated is not None
         and after.last_updated is not None
