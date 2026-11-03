@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-01",
+  "status": "Writer draft; independent source review queued",
+  "prior_head": "e6f18927f31e066fca4c2058af4d983ea2665f3c",
+  "base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "grouped_ledger_records": 18,
+  "description_words": 115,
+  "shape_checks": {
+    "tax_year_current": [],
+    "sources_read_dates": [],
+    "rates_rows_sourced": [],
+    "canonical_headings": [],
+    "two_oa_checks": [],
+    "version_numeric": [],
+    "tier_honest": [],
+    "no_em_dash": [],
+    "not_yet_confirmed": [],
+    "reviewed_on": [],
+    "read_date_evidence": [],
+    "sources_columns": [],
+    "source_hosts": [],
+    "jurisdiction_body": [],
+    "year_matches_link": []
+  },
+  "no_predecessor_deleted": true,
+  "no_platform_fields_or_CTA": true,
+  "candidate_files": {
+    "skills/sierra-leone/sl-cross-border.md": "76ee7f8cc24775e43f047644c822e772d13cf8d8cdbc7ee31c750e6c9f167142",
+    "skills/sierra-leone/README.md": "402e950dd0e9fe87bd84620cfb7e52edb39270f8ef7e2228815beb27db22cb6b",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/quote-check.json": "938f88ad15492046cc36a45935e06e17cc2acd388d676f99f0110dba2c9a4f48",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/rules.json": "48b7e8e7a10e1cf9a6787e267c1c8e8f026b6c67d545055b02a335336ba10fdd",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/source-read-manifest.json": "8e898b010805d9a4c1aa08a05c33d763dfa1aebee58986f829d7b85cf6ad1962",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/preservation.md": "39ba3b3be852a8dffb852abd11c9b1a56801a93e393e68dd8ce2f54557ebf1af",
+    "evidence/ledgers/sierra-leone-cross-border-20261101/sl-cross-border.md": "77cc6ca8d264a977138939a7a24528d9da71ac12f071428ff447427deeb67791"
+  }
+}

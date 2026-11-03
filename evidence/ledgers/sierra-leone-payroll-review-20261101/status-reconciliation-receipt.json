@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-01",
+  "allowed_by": "status-reconciliation-authorization.json",
+  "changes": [
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/rules.json",
+      "pre": "23e42b4cd562b4d0802d492ccba8080b2cf3df66bf2ad2bd196194e94507d00c",
+      "post": "1560c5e84de2fa69370c53b3e1dc3cf1d716d0c9c57adf43c97ec020b2e218da",
+      "expected_hash_equal": true,
+      "changed_only": "/status",
+      "historical_candidate_hashes_unchanged": true
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/writer-corrections.json",
+      "pre": "08c7b47fa2f1ea74c9ea23848f2b69345328093eaae70dd710bb732c820738ba",
+      "post": "79d8a740851f51cd71680c5edf5b1756f51b62ee55f69ada679714b53225e8a5",
+      "expected_hash_equal": true,
+      "changed_only": "/status",
+      "historical_candidate_hashes_unchanged": true
+    }
+  ]
+}

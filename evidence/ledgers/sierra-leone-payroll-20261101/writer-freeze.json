@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-01",
+  "status": "Writerdraft; fresh independentpayrollreviewpending",
+  "pinned_base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "Guide_description_words": 114,
+  "ledger_rows": 28,
+  "old_topics": 10,
+  "examples": 2,
+  "shape_checks": "15 pass",
+  "examples_check": "2 pass,0 failures,0 missing",
+  "platform_CTA": "exact",
+  "candidate_files": {
+    "skills/sierra-leone/sl-payroll-social.md": "e0445980105f60e8bdf55c0eb23c71e2ceebf441247e714591014d1ff08ddcae",
+    "skills/sierra-leone/README.md": "435e36d5bbe36733816f0761b3c6ad680f8d8c6f613a37ce0df8cebfb25f1dc6",
+    "evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.md": "918f3f0a272f83c59ef5813da85c7a8f679e599edf048409d0fd572d8b9aa2e8",
+    "evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.json": "c1c32c964897fae4b1c7e6f9736c014778b9775b275b9e6d1236e7078477eef9",
+    "evidence/ledgers/sierra-leone-payroll-20261101/rules.json": "f5da3374768ee3d53794368b00e97980f95641639b36e877799407012b6d9bd3",
+    "evidence/ledgers/sierra-leone-payroll-20261101/sl-payroll-social.md": "ff184c43eaf3b73a986d94a1150737e0c8217e4510a5d18221bef1f7ad00fd04",
+    "evidence/ledgers/sierra-leone-payroll-20261101/source-read-manifest.json": "f0bf0db00a91f623684c45ce461bf4de512f281885472a3320b9885b11ab000e"
+  }
+}

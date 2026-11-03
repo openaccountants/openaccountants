@@ -1,0 +1,16 @@
+{
+  "git_head": "c8462be704a7d0545ae6654b71ed5939b61f1a47",
+  "files": {
+    "skills/sierra-leone/sl-vat-gst.md": "f91bdc917a339899a8476f3015efea6612adb7ba7089f2ad8171ec165a54fa7a",
+    "evidence/ledgers/sierra-leone-gst-20261101/README.md": "d62d88b97e41243de039c9cd6cdf1b12e6f53930af22a31ca886179931c02b0a",
+    "evidence/ledgers/sierra-leone-gst-20261101/committed-validation.json": "d2bdc3582b237469e7e74ddf5ae5c6944b715e35e946480b5f1da8afe6d45ff7",
+    "evidence/ledgers/sierra-leone-gst-20261101/old-topics.json": "7f97197a4c5ccaaed8fc82b45a4fd517f66454d31298b77a9cf558f6d38358ed",
+    "evidence/ledgers/sierra-leone-gst-20261101/old-topics.md": "1257d39ac28b38ab81b8ba28fd92695719f42f5e409cb338f9e599072e0255cc",
+    "evidence/ledgers/sierra-leone-gst-20261101/quote-check.json": "14ec47e166eb574755ab314cdf9c24cb61b5405a69d0db57f9239b482b489ac1",
+    "evidence/ledgers/sierra-leone-gst-20261101/rules.json": "5035a40376a862c82ca752a331e23b230b7d3138ac730244b17bbd93cacd8d93",
+    "evidence/ledgers/sierra-leone-gst-20261101/shape-checks.json": "b8cc41e3ece04240fa047a3955560650284c794a9db4a8b22ccc6bb67fa65a5d",
+    "evidence/ledgers/sierra-leone-gst-20261101/sl-vat-gst.md": "d8b29761c33ddb3acb9160958d042a21188649acfe04521cc274e54e81ad1ed7",
+    "evidence/ledgers/sierra-leone-gst-20261101/source-read-manifest.json": "f22a6b86de8ce92800ef982b8fe0b1d72acfd65a3f03e487a7297a047af01591",
+    "evidence/ledgers/sierra-leone-gst-20261101/writer-checkpoint.json": "c642f87acbb613087ecd783d6f50dad96a844f2dcbef83b728644ce6fbfaeb2f"
+  }
+}

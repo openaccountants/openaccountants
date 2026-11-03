@@ -1,0 +1,45 @@
+{
+  "method": "Independent Decimal annual-band accumulation then divide12 under stated conditional steady12-month assumptions. Not live payroll-method approval. Contribution and qualifying termination are stated facts.",
+  "case1": {
+    "annual_base": "34200",
+    "annual_tax": "5940.00",
+    "monthly_base": "2850",
+    "paye": "495.00",
+    "cash_after_contribution_paye": "2355.00",
+    "verdict": "pass"
+  },
+  "case2": {
+    "correct_annual_base": "34200",
+    "incorrect_annual_base": "46200",
+    "correct_paye": "495.00",
+    "incorrect_paye": "795.00",
+    "excess": "300.00",
+    "verdict": "pass"
+  },
+  "boundary_checks": [
+    {
+      "monthly_base": 600,
+      "tax": "0"
+    },
+    {
+      "monthly_base": 1200,
+      "tax": "90.00"
+    },
+    {
+      "monthly_base": 1800,
+      "tax": "210.00"
+    },
+    {
+      "monthly_base": 2400,
+      "tax": "360.00"
+    },
+    {
+      "monthly_base": 2850,
+      "tax": "495.00"
+    },
+    {
+      "monthly_base": 3850,
+      "tax": "795.00"
+    }
+  ]
+}

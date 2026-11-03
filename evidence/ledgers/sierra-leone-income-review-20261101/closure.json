@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-01",
+  "initial_frozen_head": "dbb2efd77895ba5ff703e711b7c3d3297fcf242d",
+  "correction_manifest_sha256": "6355c2bf8070a1c1529540c8187630a185630ea3790591b430be98d34a98d7c8",
+  "candidate_files": {
+    "skills/sierra-leone/sl-income-tax.md": "3871a829f387740333ba00772a7487c0ff146a97d5e3d5bcac7e6d8a2c99f14a",
+    "evidence/ledgers/sierra-leone-income-20261101/rules.json": "991cb2536dc33c0b6cd372a2c5122197f2ebfc9d1a5c047edd281785b6fc6f15",
+    "evidence/ledgers/sierra-leone-income-20261101/sl-income-tax.md": "e91b3932f006e15d8b5568716330480d26d37b635770493f3bf4f37377d92f76"
+  },
+  "corrections_independently_closed": [
+    {
+      "id": "I09",
+      "verdict": "closed",
+      "rule": "Housing market less payment; utilities actual; domestic assistant total employment income paid for employee services less employee payment; meals employer cost less employee consideration; waiver amount; vehicle schedule held.",
+      "source_sha256": "71ab1f1fd46729e7ed5540187e93aab51e6d413a02a61bf0a4b13bb3191f544b",
+      "source_url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf"
+    },
+    {
+      "id": "I18",
+      "verdict": "closed",
+      "rule": "Contributions to complying retirement fund: individual30% employment income less employer contributions for benefit; s38(3) other pension/annuity acquisition expense against receipts under NinthSchedule4, not same employment deduction; current interaction held.",
+      "source_sha256": "71ab1f1fd46729e7ed5540187e93aab51e6d413a02a61bf0a4b13bb3191f544b",
+      "source_url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf"
+    },
+    {
+      "id": "I23",
+      "verdict": "closed",
+      "rule": "Employee certificate28days yearend/7days cessation; filer attaches; employer records and prescribed annual statement within28days yearend or Commissioner extension.",
+      "source_sha256": "71ab1f1fd46729e7ed5540187e93aab51e6d413a02a61bf0a4b13bb3191f544b",
+      "source_url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf"
+    },
+    {
+      "id": "I25",
+      "verdict": "closed",
+      "rule": "Monthly late large5000/medium2500/small500; nonfiler10000/5000/1000; 97A filing within30days late/after30days nonfiler; annual distinct.",
+      "source_sha256": "3e05fc9d932106fc5b1dad946854583b140afd782dda6f639afbf1672a610cf5",
+      "source_url": "https://webtestcms.nra.gov.sl/uploads/The_Finance_Act_2025_beb680faed.pdf"
+    }
+  ],
+  "result": "source_corrections_closed_for_exact_repaired_candidate",
+  "remaining_source_defects": [],
+  "currentness_or_filing_approval": false,
+  "scope": "All28grouped rows accepted only within recorded historical/currentness holds after four repairs. Bothcases unchanged/pass;12oldtopics unchanged/preserved. All7README domains remain partial.",
+  "preservation": "Previously accepted TP/payroll/company/XB Guides and receipts unchanged by reviewer. Initial review binds immutable git blobs; closure binds repaired working-tree SHA256 values."
+}

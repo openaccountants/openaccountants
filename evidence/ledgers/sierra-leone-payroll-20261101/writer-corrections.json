@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-01",
+  "prior_candidate": "48a6568aa0346659987b56f60ab13552f2dc5419",
+  "status": "source-bound corrections accepted",
+  "repairs": [
+    "PR01 contractor normal-work/establishment condition added",
+    "PR02 self-employed actor and Director-General recipient added",
+    "PR03 no-payable and prior-12-month credit rule explicit",
+    "PR04 Act and Regulations URLs split",
+    "SC08 accidental mistake OR clerical error explicit"
+  ],
+  "ledger_rows": 28,
+  "candidate_files": {
+    "skills/sierra-leone/sl-payroll-social.md": "a05a0713c51cf92cd7b438f698833e4fd0157759de0b3a3f373da0dead894ab2",
+    "skills/sierra-leone/README.md": "435e36d5bbe36733816f0761b3c6ad680f8d8c6f613a37ce0df8cebfb25f1dc6",
+    "evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.md": "918f3f0a272f83c59ef5813da85c7a8f679e599edf048409d0fd572d8b9aa2e8",
+    "evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.json": "c1c32c964897fae4b1c7e6f9736c014778b9775b275b9e6d1236e7078477eef9",
+    "evidence/ledgers/sierra-leone-payroll-20261101/rules.json": "23e42b4cd562b4d0802d492ccba8080b2cf3df66bf2ad2bd196194e94507d00c",
+    "evidence/ledgers/sierra-leone-payroll-20261101/sl-payroll-social.md": "763b1277478802afa35385ede1863682a53e8026c40bdf1bd18a2935bed06bc2",
+    "evidence/ledgers/sierra-leone-payroll-20261101/source-read-manifest.json": "f0bf0db00a91f623684c45ce461bf4de512f281885472a3320b9885b11ab000e"
+  }
+}

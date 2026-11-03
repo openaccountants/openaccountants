@@ -1,0 +1,384 @@
+{
+  "base": "ce1c6c38ed868ea2998dc5a12dbe81b6889fcef0",
+  "files": [
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/CLOSURE.md",
+      "sha256": "e7ae3999380633e692f9cb2c494ab281f1911071cb4f86a5f2a9488d049e9c07"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/REVIEW.md",
+      "sha256": "72774eec7554f8d6629fd1d82df4608cb87de9a9f7e2ce9eb469762e74390205"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/all-records.json",
+      "sha256": "fb784d13eaf03a0d741df62214c73f2b05f44ac999898860848915b41d1c3c80"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/check-examples.txt",
+      "sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/closure-attempt-1.json",
+      "sha256": "4e2b00936eb239beff7577cc51e86202d5040a71d5859ce18580975e1fe13a0f"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/closure-v2.json",
+      "sha256": "aafc755fc6d954f12597a3d84a214ae5eb943b97055aebad3ef12fcd94155a5e"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/final-evidence-hashes.json",
+      "sha256": "54b12d91ded6f65ad2126845818284e0e50c7ea121fae7011b516f7626138b58"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/findings.json",
+      "sha256": "aefadabd96f4d2baee83be437389aed579d3f9047851317d545974418aa6cbe9"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/old-topics-review.json",
+      "sha256": "2c527e1744d90881b99bdbdff1df6f11efecf51e8dd22e2a6aad44ec13b01734"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/review-evidence-hashes.json",
+      "sha256": "b709d0f9602448b6e3603336d7ad0af81bcce0f8ac5e2a6787bf0d5635f7a35d"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/scope-preservation.json",
+      "sha256": "f0fcacfa35e0fdd174578e0bc9a43cd2e7e9e6ae73b9098f67aa9d03b1c2cc5c"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/source-read-manifest.json",
+      "sha256": "69fc115bc4ee23b1c761e88e886c113b7a0ddfe7b42ce08d292707fa40e223d2"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/sync-audit.txt",
+      "sha256": "96e5de979f8eab3be385b0d95f3dcee76fbb00fe5c7c7e941f160afbda6426d2"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/validate-guides.txt",
+      "sha256": "cea2e82f62fbd4ff0efb35747c59ebd41c65cb5eeda33d888b3a3638fb1a555a"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/validation-v2.json",
+      "sha256": "5972202db17a3c3887e5ee91f107504ea8d7535fdac89f517c870cfe9361b53e"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-company-xb-review-20261101/worked-cases.json",
+      "sha256": "7e79a255bab8d223228fcd269064ab19f0440fddcf860ea0a536593dc9247c3a"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-corporate-20261101/company-xb-writer-corrections-v2.json",
+      "sha256": "60f3b5ba5bb7dfecb10987d201e1aa7e99421cfb8b04a715da1ca5437931e01e"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-corporate-20261101/company-xb-writer-corrections.json",
+      "sha256": "b10c055882da2a7c4adade1331e143927676b91ddb9e0e05e3f47fdbf1ccc943"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-corporate-20261101/old-corporate-topics.json",
+      "sha256": "7cde97b901673f9104c5b8fb9d1a51c49e3cd93703e0c2ffdb9212bb9d246a5d"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-corporate-20261101/old-corporate-topics.md",
+      "sha256": "35c429d323d13ab06ee12e80ed16e7919338ebeb0efe44e1fb666c9ffb8e09b5"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-corporate-20261101/quote-check.json",
+      "sha256": "ebad39de4cc0e1fd7461d4afe896e9ccbe98f5ec70f9d95f873eef3a80cf9c28"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-corporate-20261101/rules.json",
+      "sha256": "e5b88d8ed622dba0134fdb500b68514b37fb69e1c07c38376f1122568044c2b1"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-corporate-20261101/shape-checks.json",
+      "sha256": "b8cc41e3ece04240fa047a3955560650284c794a9db4a8b22ccc6bb67fa65a5d"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-corporate-20261101/sl-corporate-income-tax.md",
+      "sha256": "19d4537aace94a9a609dd11a9d1701b6f4ebf9a8e65005a11c47d9f3c2f4b536"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-corporate-20261101/source-read-manifest.json",
+      "sha256": "55f1c8c6ce984bcef22121f4e0e512e9dab49eddff0cbb173a06236ac1d9c168"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-corporate-20261101/writer-freeze.json",
+      "sha256": "f3c1a53006f0b4a1904bb8c9ee2410b20d756932de6b810667ef9fdd9edaf35f"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-cross-border-20261101/preservation.md",
+      "sha256": "39ba3b3be852a8dffb852abd11c9b1a56801a93e393e68dd8ce2f54557ebf1af"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-cross-border-20261101/quote-check.json",
+      "sha256": "938f88ad15492046cc36a45935e06e17cc2acd388d676f99f0110dba2c9a4f48"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-cross-border-20261101/rules.json",
+      "sha256": "fa33ede20fb1bbb6ef5249f573d70b4cdbd2a28ab60baf35ed5a3c964ee6b17b"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-cross-border-20261101/sl-cross-border.md",
+      "sha256": "a945a89829675171869c6e41aaf19d132f82b164d0b6c395881db3fa1978ac3c"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-cross-border-20261101/source-read-manifest.json",
+      "sha256": "8e898b010805d9a4c1aa08a05c33d763dfa1aebee58986f829d7b85cf6ad1962"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-cross-border-20261101/writer-freeze.json",
+      "sha256": "fac11af45d72f624705abf0a066774d7f8ef7efa4442a852e2591f7e97384c78"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-draft-20261101/README.md",
+      "sha256": "96c07551bcbe3f52553e442a4c13ec218020b20b6ca3577fdb7885bfb29da70a"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-draft-20261101/old-guide-hashes.json",
+      "sha256": "26de3ec2aa7ca301cea0cc67dca0b3e6743efa5a6894963be38e59b8ff63df9d"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-draft-20261101/old-topic-register.json",
+      "sha256": "12a4a72688d96aef15c6d748df8ed7333d32f6edfed3129b0a72a69aebad7101"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-draft-20261101/sl-old-topic-map.md",
+      "sha256": "467323fa25fa6426b586fa5e8528679b098b112dc48b049019a56413d6d25c7e"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-draft-20261101/sl-transfer-pricing.md",
+      "sha256": "2794a9cb784ca6db05d2d36d8a36e219121787dfffc8261cd24cbc62620816c8"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-draft-20261101/tp-ledger-register.json",
+      "sha256": "3cbd9dacbdcdce071d9ac5ee2a09cd37cc90ddb787f43819f054374d1cf33a27"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-draft-20261101/tp-source-read-manifest.json",
+      "sha256": "d23cb779c710691c775cce0268d7e665352a0026614dff15ee0fe6fd984cc805"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-draft-20261101/writer-validation.json",
+      "sha256": "c35cb4aa162a39a91eaf2dee8a2b69e72592730727385b8a6665e419eee8c642"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-20261101/benefit2018-delta.json",
+      "sha256": "6bb920cfd93af06f4a4d6f9401d140048931d7820ff8c9746320967347e19277"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-20261101/old-topics.json",
+      "sha256": "ce891eea4a71a0eab20321aac9a90be59076909eb0d8a3f92fe20a840331c455"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-20261101/old-topics.md",
+      "sha256": "4dc4ea93d1f59560abb2e76ce9a0be05cee2792e4f6d683e825d6abdd9e4e279"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-20261101/quote-check.json",
+      "sha256": "2c16f59c7e211318448190d24bfe2010eab6f5c8a903bece3d24791be1a2b7cf"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-20261101/reviewer-corrections.json",
+      "sha256": "6355c2bf8070a1c1529540c8187630a185630ea3790591b430be98d34a98d7c8"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-20261101/rules.json",
+      "sha256": "73f3b44d67173242b2df0ef3a28864d577c4c7937546e04f91fb0a34dd9bd976"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-20261101/sl-income-tax.md",
+      "sha256": "e3c35d1c343f6b59e7ca11681c802e0be83abccdeb5f22019e8f8f0a719c9270"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-20261101/source-read-manifest.json",
+      "sha256": "766f26c9bff8968f58a0db0519bc863f74d6af7c2f475679c8fa92d695463d9d"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-20261101/writer-freeze.json",
+      "sha256": "16cb95c63f58203ab220a0e6e5e947d0ab3556cbed6631ce5a3fe64a50d5c408"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-review-20261101/benefit2018-delta/acceptance.json",
+      "sha256": "e1a239b6d6248ee1e988cd9157206984a9116d1ed5886894f30f3c0cb840905d"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-review-20261101/benefit2018-delta/review.md",
+      "sha256": "e47adb3eea826356217e8af6d755b077180a4eea8f65fa73739db11d31d86253"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-review-20261101/benefit2018-delta/source-reads.json",
+      "sha256": "b45efb23565143e0c0eab541042ca3870b623d96ab5c5b66b200c800dd92909e"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-review-20261101/benefit2018-delta/status-reconciliation.json",
+      "sha256": "e380dd192212ad6c6940b0f381457a626f7f0bc37ca52d4ea6e8310756b3f5c6"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-review-20261101/calculations.json",
+      "sha256": "fa07c4dacb816fdb5115cb81dc0b31c0303299d7900b637d11403f5f1e591083"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-review-20261101/closure.json",
+      "sha256": "02e16575ed7048a9db9229ae4c8d8bc7223b829b26e3902b4225b7ff4d639064"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-review-20261101/old-topic-checks.json",
+      "sha256": "76ff37f994da0437a0c7f7416c41dd72fe735f902f85b3ded3f7c2ad7aceb452"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-review-20261101/review.json",
+      "sha256": "1dc3f3ffa43a4c398d9b0b19bd2bf27b5441b305d3843ed9ab099860cdab28e9"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-review-20261101/review.md",
+      "sha256": "a013384fb949342035b4d060890cb858f76ea192a5f121b76dd662f57ca18969"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-review-20261101/row-verdicts.json",
+      "sha256": "26669efcf2d879fb67e34b462f966b21e05683ffbe7b2be5e7dc85655454ab5e"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-income-review-20261101/source-reads.json",
+      "sha256": "36548e02bbed32a2c78d4ca28351039c368c61073f9ff91b72ec59f91afa4424"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.json",
+      "sha256": "c1c32c964897fae4b1c7e6f9736c014778b9775b275b9e6d1236e7078477eef9"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.md",
+      "sha256": "918f3f0a272f83c59ef5813da85c7a8f679e599edf048409d0fd572d8b9aa2e8"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/rules.json",
+      "sha256": "1560c5e84de2fa69370c53b3e1dc3cf1d716d0c9c57adf43c97ec020b2e218da"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/sl-payroll-social.md",
+      "sha256": "763b1277478802afa35385ede1863682a53e8026c40bdf1bd18a2935bed06bc2"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/source-read-manifest.json",
+      "sha256": "f0bf0db00a91f623684c45ce461bf4de512f281885472a3320b9885b11ab000e"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/writer-corrections.json",
+      "sha256": "79d8a740851f51cd71680c5edf5b1756f51b62ee55f69ada679714b53225e8a5"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/writer-freeze.json",
+      "sha256": "812fe202d525b00ad62db287dcb0ae2525c2814b54b67d9ddf06b4437b47af16"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/CLOSURE.md",
+      "sha256": "169731fad2a21e1fb7afb7fd6c856a9ab93960e2889fe72bcb97533b5364fa75"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/REVIEW.md",
+      "sha256": "1c88377e6618995532a5bf6ad5402987b77fe35d4d06b2da1b6a5194e5e6ba29"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/closure-validation.json",
+      "sha256": "836be0e7883aa9141920f623fcb4f7c66f696a203edc0e3a6d1aca6375a25ef5"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/closure.json",
+      "sha256": "ec7db6c3ddac26ee24d29857839621a4e094ec7b7d958caf513d8a3e3ed656c5"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/download-check.json",
+      "sha256": "7c4396d3e5be0b8e66517bdd5d16ba76900315fcca8d7c45b6608b7530edb8fe"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/preservation-and-metadata.json",
+      "sha256": "3debae2910410e3235f4bc80cfd20d066374ab6fc49aea40d330008dda7502fe"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/review.json",
+      "sha256": "9c7fbe53243d1b717690930db761e81ee2d1513a0caca157e67c8b2205248212"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/source-read-manifest.json",
+      "sha256": "bc1b7d9f183d57ab22f938d57c1cf7c689e5da754d18cc855d676b90f2efcdd1"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/status-reconciliation-authorization.json",
+      "sha256": "ed75390223a690d252dc6607afbfbf34c3321c015243a8dcf8ef68b7beaaa39b"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/status-reconciliation-receipt.json",
+      "sha256": "e28779c07b1502e9178661eb2b70824363fd9b47f96a6a9f77373bc9c0568528"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-review-20261101/validation.json",
+      "sha256": "4e8a1d708a92944a2725a5dad954b2496cd1f0d89ef1fb749c57556ebc58898b"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-tp-review-20261101/CLOSURE.md",
+      "sha256": "d2acc374817ca5a26106cb3d8f0fc0a511be157e7aad3840c31827c00bd84a2f"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-tp-review-20261101/REVIEW.md",
+      "sha256": "d244eeaa04496e31850bd14e2dbd811006b9d93c0510f25e994c1363d465cc16"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-tp-review-20261101/closure.json",
+      "sha256": "908afb482cb59c171f45eca1904a64075a0f81d837808081ea0b5fabeaaa43a8"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-tp-review-20261101/publication-status-reconciliation.json",
+      "sha256": "07fbb4900e4a58af43e6d6987a660033d0d08c8052d2359c1c1c0a87683487e6"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-tp-review-20261101/review.json",
+      "sha256": "e77cbfe50b10776a319e0c2f2ec4dee629c0ba3bfd7467f40f672ab92b9b8e4d"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-tp-review-20261101/validation.json",
+      "sha256": "6c332247a85a4cb40f32c094108cefee58d2edcac340868824c095fbb2682fca"
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-tp-review-20261101/writer-corrections.json",
+      "sha256": "2b0ab7c7675642c61dcf44e9aebd3d5fe088644c583dcd140bef4afcaafce579"
+    },
+    {
+      "path": "skills/sierra-leone/sl-company-formation.md",
+      "sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8"
+    },
+    {
+      "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+      "sha256": "d508db8d370bd94e3bffdb98d30275e7c166c15cffcdc90e0117d8824f3d44a5"
+    },
+    {
+      "path": "skills/sierra-leone/sl-cross-border.md",
+      "sha256": "6cab6c426800d93843cd6c3fee7d795fd4c1dc479c15f5e0518bcc2037221f7b"
+    },
+    {
+      "path": "skills/sierra-leone/sl-income-tax.md",
+      "sha256": "0f341a7cb10ae87aef268dd03abb3b65215515fca1f31b8590f8a9988a8276e4"
+    },
+    {
+      "path": "skills/sierra-leone/sl-payroll-social.md",
+      "sha256": "a05a0713c51cf92cd7b438f698833e4fd0157759de0b3a3f373da0dead894ab2"
+    },
+    {
+      "path": "skills/sierra-leone/sl-tax-overview.md",
+      "sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f"
+    },
+    {
+      "path": "skills/sierra-leone/sl-transfer-pricing.md",
+      "sha256": "6cfd4cc600cca6dc45b4d5f455b829e08ccc1ce1dd0e1c301fa6da51a11ecc8b"
+    }
+  ],
+  "all_92_unchanged": true,
+  "seven_other_Guides_unchanged": true,
+  "complete_CTA_unchanged": true,
+  "platform_fields_unchanged": [
+    "name",
+    "jurisdiction",
+    "review_status",
+    "trust_label",
+    "tier",
+    "license"
+  ]
+}

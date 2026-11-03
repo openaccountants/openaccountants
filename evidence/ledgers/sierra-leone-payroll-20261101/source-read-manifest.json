@@ -1,0 +1,26 @@
+{
+  "pinned_base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "sources": [
+    {
+      "file": "nassit-act2001.pdf",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/act2001.pdf",
+      "bytes": 2003760,
+      "sha256": "2a4150e7bf3acb633eb03a20234cb075c6255d3dad24506cc9c3588f94c827d8",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Definitionsss1-2PDF4-7,ss20-30PDF15-18,benefitclassess38PDF21-22; actualimages5,16,17checked. NotwholeAct."
+    },
+    {
+      "file": "nassit-regulations.pdf",
+      "url": "https://nassit.org.sl/images/NASSIT_Reports/Regulations.pdf",
+      "bytes": 2658376,
+      "sha256": "f6d0074cacf34c7b2d30c426e9969281002d568c9a62489d819055c32b42a7e2",
+      "read_on": "2026-11-01",
+      "actual_read_scope": "Coverandregs1-18,physicalPDF4-9;relevantneighbouringconditionsread.Notwhole40pages. OriginalPDF4and7imagesactuallyviewed."
+    }
+  ],
+  "source_route": "ActualofficialNASSITresourcespagesdownloadlinks,nativecurlvalidatingTLS;localOCRonce;noaccessblockbypass.",
+  "public_pages_read": [
+    "https://nassit.org.sl/our-services/contributions?a=7-727-1",
+    "https://nassit.org.sl/our-services/nassit-compliance"
+  ]
+}

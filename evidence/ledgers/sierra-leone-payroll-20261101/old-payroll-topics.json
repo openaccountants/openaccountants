@@ -1,0 +1,72 @@
+[
+  {
+    "old_line": 17,
+    "exact_old_text": "- **PAYE and NASSIT operation** — Employers operate PAYE on employee salaries and contribute to the National Social Security and Insurance Trust (NASSIT) under the NASSIT Act 2001. Both PAYE and NASSIT are remitted monthly to the relevant authority.  _(NASSIT Act 2001)_",
+    "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+    "topic": "PAYE and NASSIT operation",
+    "destination": "Who this applies to; Deadlines step5; Sources PAYE hold"
+  },
+  {
+    "old_line": 18,
+    "exact_old_text": "- **Total NASSIT contribution** — 15% of basic salary percent  _([National Social Security and Insurance Trust Act 2001](https://nassit.org.sl/about-nassit))_",
+    "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+    "topic": "Total NASSIT contribution",
+    "destination": "Rates combined contribution row; Examples1and2"
+  },
+  {
+    "old_line": 19,
+    "exact_old_text": "- **Employer NASSIT contribution** — 10% of basic salary percent  _([National Social Security and Insurance Trust Act 2001](https://nassit.org.sl/about-nassit))_",
+    "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+    "topic": "Employer NASSIT contribution",
+    "destination": "Rates employer row; Base step3"
+  },
+  {
+    "old_line": 20,
+    "exact_old_text": "- **Employee NASSIT contribution** — 5% of basic salary (withheld by employer) percent  _([National Social Security and Insurance Trust Act 2001](https://nassit.org.sl/about-nassit))_",
+    "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+    "topic": "Employee NASSIT contribution",
+    "destination": "Rates employee row; Base step3"
+  },
+  {
+    "old_line": 21,
+    "exact_old_text": "- **Contribution base** — Basic salary/insurable earnings (no published statutory cap commonly applied) (approx — confirm)  _(National Social Security and Insurance Trust Act 2001)_",
+    "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+    "topic": "Contribution base",
+    "destination": "Base step2; Sources earnings-ceiling hold"
+  },
+  {
+    "old_line": 22,
+    "exact_old_text": "- **Benefits covered** — Old age, invalidity and survivors' (death) benefits  _([National Social Security and Insurance Trust Act 2001](https://www.nassit.org.sl/our-services/benefits))_",
+    "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+    "topic": "Benefits covered",
+    "destination": "Base final paragraph, Act38"
+  },
+  {
+    "old_line": 23,
+    "exact_old_text": "- **PAYE withholding** — Employer deducts progressive PAYE (0%–30%) from employee pay each month percent  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+    "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+    "topic": "PAYE withholding",
+    "destination": "Deadlines step5; Sources old0–30range held"
+  },
+  {
+    "old_line": 24,
+    "exact_old_text": "- **Monthly remittance deadline** — PAYE and NASSIT due by the 15th of the following month  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+    "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+    "topic": "Monthly remittance deadline",
+    "destination": "Rates remittance row/Deadlines step3 forNASSIT; Sources separatePAYEcalendarheld"
+  },
+  {
+    "old_line": 25,
+    "exact_old_text": "- **National minimum wage** — NLe 800 per month NLe (approx — confirm)  _(Minimum Wage regulations)_",
+    "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+    "topic": "National minimum wage",
+    "destination": "Sources oldNLe800explicitlyheld"
+  },
+  {
+    "old_line": 26,
+    "exact_old_text": "- **Employer add-on cost** — Employer-side cost typically adds around 10%–12% on top of salary (mainly NASSIT) percent (approx — confirm)  _(National Social Security and Insurance Trust Act 2001)_",
+    "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+    "topic": "Employer add-on cost",
+    "destination": "Sources oldgeneric10–12estimateheld; Rates/Example1onlyactualNASSITshare"
+  }
+]

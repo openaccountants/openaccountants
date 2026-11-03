@@ -1,0 +1,275 @@
+{
+  "pinned_base": "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+  "frozen_head": "48a6568aa0346659987b56f60ab13552f2dc5419",
+  "frozen_guide_sha256": "e0445980105f60e8bdf55c0eb23c71e2ceebf441247e714591014d1ff08ddcae",
+  "worktree_guide_matches_frozen": true,
+  "candidate_hashes": [
+    {
+      "path": "skills/sierra-leone/sl-payroll-social.md",
+      "expected_sha256": "e0445980105f60e8bdf55c0eb23c71e2ceebf441247e714591014d1ff08ddcae",
+      "actual_sha256": "e0445980105f60e8bdf55c0eb23c71e2ceebf441247e714591014d1ff08ddcae",
+      "matches": true
+    },
+    {
+      "path": "skills/sierra-leone/README.md",
+      "expected_sha256": "435e36d5bbe36733816f0761b3c6ad680f8d8c6f613a37ce0df8cebfb25f1dc6",
+      "actual_sha256": "435e36d5bbe36733816f0761b3c6ad680f8d8c6f613a37ce0df8cebfb25f1dc6",
+      "matches": true
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.md",
+      "expected_sha256": "918f3f0a272f83c59ef5813da85c7a8f679e599edf048409d0fd572d8b9aa2e8",
+      "actual_sha256": "918f3f0a272f83c59ef5813da85c7a8f679e599edf048409d0fd572d8b9aa2e8",
+      "matches": true
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/old-payroll-topics.json",
+      "expected_sha256": "c1c32c964897fae4b1c7e6f9736c014778b9775b275b9e6d1236e7078477eef9",
+      "actual_sha256": "c1c32c964897fae4b1c7e6f9736c014778b9775b275b9e6d1236e7078477eef9",
+      "matches": true
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/rules.json",
+      "expected_sha256": "f5da3374768ee3d53794368b00e97980f95641639b36e877799407012b6d9bd3",
+      "actual_sha256": "f5da3374768ee3d53794368b00e97980f95641639b36e877799407012b6d9bd3",
+      "matches": true
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/sl-payroll-social.md",
+      "expected_sha256": "ff184c43eaf3b73a986d94a1150737e0c8217e4510a5d18221bef1f7ad00fd04",
+      "actual_sha256": "ff184c43eaf3b73a986d94a1150737e0c8217e4510a5d18221bef1f7ad00fd04",
+      "matches": true
+    },
+    {
+      "path": "evidence/ledgers/sierra-leone-payroll-20261101/source-read-manifest.json",
+      "expected_sha256": "f0bf0db00a91f623684c45ce461bf4de512f281885472a3320b9885b11ab000e",
+      "actual_sha256": "f0bf0db00a91f623684c45ce461bf4de512f281885472a3320b9885b11ab000e",
+      "matches": true
+    }
+  ],
+  "platform_fields": [
+    {
+      "key": "review_status",
+      "base_value": "pending_review",
+      "frozen_value": "pending_review",
+      "unchanged": true,
+      "presence_unchanged": true
+    },
+    {
+      "key": "trust_label",
+      "base_value": "Built by Michael Cutajar and the OpenAccountants team",
+      "frozen_value": "Built by Michael Cutajar and the OpenAccountants team",
+      "unchanged": true,
+      "presence_unchanged": true
+    },
+    {
+      "key": "license",
+      "base_value": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+      "frozen_value": "AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)",
+      "unchanged": true,
+      "presence_unchanged": true
+    },
+    {
+      "key": "authored_by",
+      "base_value": null,
+      "frozen_value": null,
+      "unchanged": true,
+      "presence_unchanged": true
+    },
+    {
+      "key": "reviewed_by",
+      "base_value": null,
+      "frozen_value": null,
+      "unchanged": true,
+      "presence_unchanged": true
+    },
+    {
+      "key": "reviewed_on",
+      "base_value": null,
+      "frozen_value": null,
+      "unchanged": true,
+      "presence_unchanged": true
+    }
+  ],
+  "all_other_platform_fields": {
+    "drafted_by": {
+      "base": null,
+      "frozen": null,
+      "unchanged": true
+    },
+    "approved_by": {
+      "base": null,
+      "frozen": null,
+      "unchanged": true
+    },
+    "validation_status": {
+      "base": null,
+      "frozen": null,
+      "unchanged": true
+    },
+    "validated": {
+      "base": null,
+      "frozen": null,
+      "unchanged": true
+    }
+  },
+  "cta_suffix_exact": true,
+  "description_words": 114,
+  "heading_version": "1.0",
+  "yaml_version": 1.0,
+  "old_topics": [
+    {
+      "old_line": 17,
+      "exact_old_text": "- **PAYE and NASSIT operation** \u2014 Employers operate PAYE on employee salaries and contribute to the National Social Security and Insurance Trust (NASSIT) under the NASSIT Act 2001. Both PAYE and NASSIT are remitted monthly to the relevant authority.  _(NASSIT Act 2001)_",
+      "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+      "topic": "PAYE and NASSIT operation",
+      "destination": "Who this applies to; Deadlines step5; Sources PAYE hold",
+      "old_text_exact_at_base": true,
+      "old_hash_matches_base": true,
+      "reviewed_destination": "retained with explicit unresolved element hold",
+      "preservation_pass": true
+    },
+    {
+      "old_line": 18,
+      "exact_old_text": "- **Total NASSIT contribution** \u2014 15% of basic salary percent  _([National Social Security and Insurance Trust Act 2001](https://nassit.org.sl/about-nassit))_",
+      "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+      "topic": "Total NASSIT contribution",
+      "destination": "Rates combined contribution row; Examples1and2",
+      "old_text_exact_at_base": true,
+      "old_hash_matches_base": true,
+      "reviewed_destination": "retained / corrected to statutory earnings",
+      "preservation_pass": true
+    },
+    {
+      "old_line": 19,
+      "exact_old_text": "- **Employer NASSIT contribution** \u2014 10% of basic salary percent  _([National Social Security and Insurance Trust Act 2001](https://nassit.org.sl/about-nassit))_",
+      "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+      "topic": "Employer NASSIT contribution",
+      "destination": "Rates employer row; Base step3",
+      "old_text_exact_at_base": true,
+      "old_hash_matches_base": true,
+      "reviewed_destination": "retained / corrected to statutory earnings",
+      "preservation_pass": true
+    },
+    {
+      "old_line": 20,
+      "exact_old_text": "- **Employee NASSIT contribution** \u2014 5% of basic salary (withheld by employer) percent  _([National Social Security and Insurance Trust Act 2001](https://nassit.org.sl/about-nassit))_",
+      "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+      "topic": "Employee NASSIT contribution",
+      "destination": "Rates employee row; Base step3",
+      "old_text_exact_at_base": true,
+      "old_hash_matches_base": true,
+      "reviewed_destination": "retained / corrected to statutory earnings",
+      "preservation_pass": true
+    },
+    {
+      "old_line": 21,
+      "exact_old_text": "- **Contribution base** \u2014 Basic salary/insurable earnings (no published statutory cap commonly applied) (approx \u2014 confirm)  _(National Social Security and Insurance Trust Act 2001)_",
+      "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+      "topic": "Contribution base",
+      "destination": "Base step2; Sources earnings-ceiling hold",
+      "old_text_exact_at_base": true,
+      "old_hash_matches_base": true,
+      "reviewed_destination": "retained with explicit unresolved element hold",
+      "preservation_pass": true
+    },
+    {
+      "old_line": 22,
+      "exact_old_text": "- **Benefits covered** \u2014 Old age, invalidity and survivors' (death) benefits  _([National Social Security and Insurance Trust Act 2001](https://www.nassit.org.sl/our-services/benefits))_",
+      "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+      "topic": "Benefits covered",
+      "destination": "Base final paragraph, Act38",
+      "old_text_exact_at_base": true,
+      "old_hash_matches_base": true,
+      "reviewed_destination": "retained / corrected to statutory earnings",
+      "preservation_pass": true
+    },
+    {
+      "old_line": 23,
+      "exact_old_text": "- **PAYE withholding** \u2014 Employer deducts progressive PAYE (0%\u201330%) from employee pay each month percent  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+      "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+      "topic": "PAYE withholding",
+      "destination": "Deadlines step5; Sources old0\u201330range held",
+      "old_text_exact_at_base": true,
+      "old_hash_matches_base": true,
+      "reviewed_destination": "explicitly held, not applied",
+      "preservation_pass": true
+    },
+    {
+      "old_line": 24,
+      "exact_old_text": "- **Monthly remittance deadline** \u2014 PAYE and NASSIT due by the 15th of the following month  _([Income Tax Act 2000](https://mail.nra.gov.sl/businesses-and-organisations/pay-you-earn-paye))_",
+      "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+      "topic": "Monthly remittance deadline",
+      "destination": "Rates remittance row/Deadlines step3 forNASSIT; Sources separatePAYEcalendarheld",
+      "old_text_exact_at_base": true,
+      "old_hash_matches_base": true,
+      "reviewed_destination": "retained with explicit unresolved element hold",
+      "preservation_pass": true
+    },
+    {
+      "old_line": 25,
+      "exact_old_text": "- **National minimum wage** \u2014 NLe 800 per month NLe (approx \u2014 confirm)  _(Minimum Wage regulations)_",
+      "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+      "topic": "National minimum wage",
+      "destination": "Sources oldNLe800explicitlyheld",
+      "old_text_exact_at_base": true,
+      "old_hash_matches_base": true,
+      "reviewed_destination": "explicitly held, not applied",
+      "preservation_pass": true
+    },
+    {
+      "old_line": 26,
+      "exact_old_text": "- **Employer add-on cost** \u2014 Employer-side cost typically adds around 10%\u201312% on top of salary (mainly NASSIT) percent (approx \u2014 confirm)  _(National Social Security and Insurance Trust Act 2001)_",
+      "old_sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+      "topic": "Employer add-on cost",
+      "destination": "Sources oldgeneric10\u201312estimateheld; Rates/Example1onlyactualNASSITshare",
+      "old_text_exact_at_base": true,
+      "old_hash_matches_base": true,
+      "reviewed_destination": "explicitly held, not applied",
+      "preservation_pass": true
+    }
+  ],
+  "unchanged_legacy_guides": [
+    {
+      "path": "skills/sierra-leone/sl-company-formation.md",
+      "base_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8",
+      "frozen_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8",
+      "worktree_sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8",
+      "unchanged": true,
+      "tax_year": 2025
+    },
+    {
+      "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+      "base_sha256": "9516b7c22976dafc9ae93115741c90bacca2eea10245fcf13066307d642936c1",
+      "frozen_sha256": "9516b7c22976dafc9ae93115741c90bacca2eea10245fcf13066307d642936c1",
+      "worktree_sha256": "9516b7c22976dafc9ae93115741c90bacca2eea10245fcf13066307d642936c1",
+      "unchanged": true,
+      "tax_year": 2025
+    },
+    {
+      "path": "skills/sierra-leone/sl-income-tax.md",
+      "base_sha256": "ff186ab66bcb249ad78090e6da806dcc3cf9babc620cc2565f09b77192b9e4cd",
+      "frozen_sha256": "ff186ab66bcb249ad78090e6da806dcc3cf9babc620cc2565f09b77192b9e4cd",
+      "worktree_sha256": "ff186ab66bcb249ad78090e6da806dcc3cf9babc620cc2565f09b77192b9e4cd",
+      "unchanged": true,
+      "tax_year": 2025
+    },
+    {
+      "path": "skills/sierra-leone/sl-tax-overview.md",
+      "base_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f",
+      "frozen_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f",
+      "worktree_sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f",
+      "unchanged": true,
+      "tax_year": 2025
+    },
+    {
+      "path": "skills/sierra-leone/sl-vat-gst.md",
+      "base_sha256": "85544c24c93a42b025257e314cccfc0054ce512a5470920ac4cdfc8e07f76283",
+      "frozen_sha256": "85544c24c93a42b025257e314cccfc0054ce512a5470920ac4cdfc8e07f76283",
+      "worktree_sha256": "85544c24c93a42b025257e314cccfc0054ce512a5470920ac4cdfc8e07f76283",
+      "unchanged": true,
+      "tax_year": 2025
+    }
+  ],
+  "readme_state": "Two source drafts, five legacy2025 Guides; all7domains partial; SC/PR gaps explicit. Initial69topic map remains historical, with new10topic payroll delta linked. No TP source review repeated."
+}

@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-01",
+  "kind": "Administrative review-status reconciliation only",
+  "acceptance_sha256": "e1a239b6d6248ee1e988cd9157206984a9116d1ed5886894f30f3c0cb840905d",
+  "readme_before_sha256": "b654770f1a1ca3b8234273c378b5da47010f1e5e732114cb836776db67c2deea",
+  "readme_after_sha256": "b2478ff9d7e41b51e679c9d667d00f62e03ad20fd86a63891b78539c13172401",
+  "other_four_accepted_candidate_hashes_unchanged": true,
+  "change": "Pending-review prose reconciled to the recorded independent delta acceptance; no Guide, ledger, source or earlier receipt altered.",
+  "scope": "Earlier acceptance README hash remains the original historical input; this receipt supersedes only its status prose."
+}

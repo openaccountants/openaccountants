@@ -1,0 +1,42 @@
+[
+  {
+    "path": "evidence/ledgers/sierra-leone-formation-overview-review-20261101/preservation.json",
+    "sha256": "c9ca5df408073dcf4a8922ce0b8c49d3554629a757c6366c6c608ddf1fad6819"
+  },
+  {
+    "path": "evidence/ledgers/sierra-leone-formation-overview-review-20261101/calculations.json",
+    "sha256": "b9aea76e4a27585639fd8051fbf2351cae73849bddfbc2ab731f34615ea42585"
+  },
+  {
+    "path": "evidence/ledgers/sierra-leone-formation-overview-review-20261101/findings.json",
+    "sha256": "70c2afe5a52b41d5f4c931e7efff54fc7429d834346fce39387bfebcb92a5d15"
+  },
+  {
+    "path": "evidence/ledgers/sierra-leone-formation-overview-review-20261101/row-verdicts.json",
+    "sha256": "b2c9d5e8b6f163b13236bb2d47b93f9cd13652ac2e12158b1170f0f17965e7ee"
+  },
+  {
+    "path": "evidence/ledgers/sierra-leone-formation-overview-review-20261101/source-reads.json",
+    "sha256": "25fa73955f245476b609d21ad5d0a35711e137ee3c7b8b117f75c1cfc5c367d5"
+  },
+  {
+    "path": "evidence/ledgers/sierra-leone-formation-overview-review-20261101/example-check.txt",
+    "sha256": "3d0a434ede8a8a4057968a32434802529c9694afb5deb004ea3001dfb53c87ca"
+  },
+  {
+    "path": "evidence/ledgers/sierra-leone-formation-overview-review-20261101/shape-checks.json",
+    "sha256": "adf47a0a942a225bc7c0dede128cc9ec65427a5b00708a177f2a445981b10028"
+  },
+  {
+    "path": "evidence/ledgers/sierra-leone-formation-overview-review-20261101/old-topics-review.json",
+    "sha256": "80fcdd2b88e34f8cc2124553e5539175709861b03af097d8302c57a9c0e2dcbd"
+  },
+  {
+    "path": "evidence/ledgers/sierra-leone-formation-overview-review-20261101/REVIEW.md",
+    "sha256": "c143c3add763a5fdbccba02cc41a1f82b3072558b4f04a2d40d273de37eac393"
+  },
+  {
+    "path": "evidence/ledgers/sierra-leone-formation-overview-review-20261101/initial-bound-hashes.json",
+    "sha256": "feb23463843c37d3f4d2f58c502ace5618e46deb32522becfdda40d0966d34ef"
+  }
+]

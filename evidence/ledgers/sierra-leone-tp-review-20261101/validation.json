@@ -1,0 +1,122 @@
+{
+  "frozen_head": "2aa7624745122e9c896b3cc126f38dfe5317d0d0",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/sierra-leone/sl-transfer-pricing.md"
+      ],
+      "exit_code": 0,
+      "stdout": "skills/sierra-leone/sl-transfer-pricing.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/sierra-leone/sl-transfer-pricing.md"
+      ],
+      "exit_code": 0,
+      "stdout": "checked 1 files, 2 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit_code": 0,
+      "stdout": "changed-only mode: validating 2 changed guide file(s)\nchecked 1 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "Sync integrity checked 1 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "aec6ba04066bb69d1168c8028ba11dd65cb90505",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "description_words": 115,
+  "independent_examples": {
+    "range": {
+      "outside_margin_percent": 3.0,
+      "inside_margin_percent": 5.0,
+      "median_profit": 60000.0,
+      "outside_adjustment": 30000.0,
+      "inside_adjustment": 0
+    },
+    "cap": {
+      "single": 60000.0,
+      "uncapped": 180000.0,
+      "cap": 60000.0,
+      "excess": 120000.0
+    },
+    "limits": "Accepted hypothetical benchmark, same statutory penalty base and all applicability triggers are assumptions. No tax liability, safe harbour, multiple-transaction aggregation, subsection150(3) interpretation or other-penalty coverage is established."
+  },
+  "old_guides": [
+    {
+      "path": "skills/sierra-leone/sl-company-formation.md",
+      "same_as_base": true,
+      "sha256": "3bb5bb54c3e045ecf6ebd6d8cd0ba14683462425f592b7a27a4d97bed0aef8a8",
+      "matches_writer_hash": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-corporate-income-tax.md",
+      "same_as_base": true,
+      "sha256": "9516b7c22976dafc9ae93115741c90bacca2eea10245fcf13066307d642936c1",
+      "matches_writer_hash": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-income-tax.md",
+      "same_as_base": true,
+      "sha256": "ff186ab66bcb249ad78090e6da806dcc3cf9babc620cc2565f09b77192b9e4cd",
+      "matches_writer_hash": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-payroll-social.md",
+      "same_as_base": true,
+      "sha256": "1b68860ac553eb58a1bd276cfa67c50bacd5475e8f1fa381a19081ea2687e729",
+      "matches_writer_hash": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-tax-overview.md",
+      "same_as_base": true,
+      "sha256": "f26d4953740dd921fef9c4c35477f33e02f7018815cf56c81f35e5db66d0f72f",
+      "matches_writer_hash": true
+    },
+    {
+      "path": "skills/sierra-leone/sl-vat-gst.md",
+      "same_as_base": true,
+      "sha256": "85544c24c93a42b025257e314cccfc0054ce512a5470920ac4cdfc8e07f76283",
+      "matches_writer_hash": true
+    }
+  ],
+  "old_topics_count": 69,
+  "all_exact_old_topic_destinations_match": true,
+  "lost_content_restored": 0,
+  "scope": "Single new TP Guide; unchanged predecessor content is preserved, not reverified. Public audit checks are not production CAS or tax-source approval."
+}

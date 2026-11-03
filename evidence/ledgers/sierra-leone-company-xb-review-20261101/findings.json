@@ -1,0 +1,68 @@
+[
+  {
+    "id": "CX-R1",
+    "priority": "P2",
+    "record": "C12",
+    "file": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "line": 43,
+    "problem": "The business-income summary says business-asset gains without the depreciable-asset exclusion; the debt-satisfaction limb in the grouped ledger is also absent from this step. The next step deals with pool balancing, so the first phrase can invite counting a depreciable disposal gain as well as its balancing inclusion.",
+    "article": "ITA s.24(a)-(b), unofficial 2017 baseline",
+    "physical_pages": [
+      27
+    ],
+    "quote": "gains on the disposal of business assets (other than depreciable assets) or on the satisfaction of business debts",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+    "repair": "Replace the opening of the s.24 list with: gains on disposal of business assets other than depreciable assets, gains on satisfaction of business debts, s.39(8) pool-balancing inclusions, ... . Keep the existing baseline/currentness qualification."
+  },
+  {
+    "id": "CX-R2",
+    "priority": "P2",
+    "record": "C16",
+    "file": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "line": 45,
+    "problem": "The ownership-change condition names new business but omits new investment, which is an independent limb of the cited restriction. An investment without a new trade must still enter this baseline check.",
+    "article": "ITA s.88(b), unofficial 2017 baseline",
+    "physical_pages": [
+      56,
+      57
+    ],
+    "quote": "does not engage in a new business or investment except with the approval of the Commissioner",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+    "repair": "State that the company must continue the same business and must not engage in a new business or investment without Commissioner approval for three years after the change. Preserve the stale-cross-reference warning and currentness hold."
+  },
+  {
+    "id": "CX-R3",
+    "priority": "P2",
+    "record": "C23",
+    "file": "skills/sierra-leone/sl-corporate-income-tax.md",
+    "line": 55,
+    "problem": "The estimate/revision dates are stated as 31 January, 30 April and 31 October without the substituted-year alternatives in s.113(1)-(2). The paragraph does include substituted instalment dates, making the omitted estimate alternatives especially easy to miss.",
+    "article": "ITA s.113(1)-(2), unofficial 2017 baseline",
+    "physical_pages": [
+      70,
+      71
+    ],
+    "quote": "for a taxpayer using a substituted year of assessment, on or before the end of the first month",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+    "additional_quotes": [
+      "on or before the end of the fourth month",
+      "on or before the tenth month"
+    ],
+    "repair": "Qualify the three calendar dates as the ordinary-year baseline, then give initial estimate by end of substituted month 1, review by end of month 4, and the source's exact wording for the second review: on or before the tenth month. Do not silently turn the unusual tenth-month wording into an independently confirmed month-end deadline."
+  },
+  {
+    "id": "CX-R4",
+    "priority": "P2",
+    "record": "X12",
+    "file": "skills/sierra-leone/sl-cross-border.md",
+    "line": 42,
+    "problem": "The operative aggregation instruction says the foreign branch without stating that s.90(4) limits it to a foreign branch of a resident company. A resident individual with a foreign branch must not infer the same pooling permission.",
+    "article": "ITA s.90(3)-(4), unofficial 2017 baseline",
+    "physical_pages": [
+      58
+    ],
+    "quote": "foreign-source income derived by a foreign branch of a resident company is aggregated and considered a single receipt of income",
+    "url": "https://webtestcms.nra.gov.sl/uploads/Income_Tax_Act_2000_as_amended_to_Finance_Act_2017_1_83760e046c.pdf",
+    "repair": "Use: aggregate foreign-source receipts derived by a foreign branch of a resident company only under s.90(4). Add the resident-company condition to the grouped ledger record and any table wording purporting to state that exception. The example already expressly excludes aggregation and its arithmetic remains correct."
+  }
+]
