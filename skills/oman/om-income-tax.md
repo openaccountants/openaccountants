@@ -13,7 +13,7 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 
 # Oman Personal Income Tax v1.3
 
-> **General reference only.** This Guide is a draft for AI-assisted reference. It has not received independent closeout review or accountant attestation. Do not use it to file, pay or take a position without professional review.
+> **General reference only.** This Guide is a draft for AI-assisted reference. Independent review accepts only the documented partial source closeout and its recorded conditions. It has not received accountant attestation. Do not use it to file, pay or take a position without professional review.
 
 ## Who this applies to
 
