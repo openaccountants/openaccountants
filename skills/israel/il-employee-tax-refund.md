@@ -243,11 +243,13 @@ Without this fix, the employee will file the same refund every year for the same
 **Working:**
 - Field 042: NIS 24,800 withheld at A + NIS 22,400 at B = NIS 47,200 total withheld
 - Aggregate annual income: NIS 282,000
-- Correct annual tax (2024 brackets, 2.75 default points for female): ~NIS 43,700 (unverified: the 2024 brackets were not opened)
-- Estimated refund (withheld minus correct tax): NIS 47,200 − ~NIS 43,700 ≈ NIS 3,500; present as a range, NIS 3,100 – NIS 3,800
-- Trigger: #1 (mid-year job change)
-- Documents: both Form 106s, Teudat Zehut, bank confirmation
-- Deadline: 31.12.2030
+- Brackets: the 2025 personal-exertion bands are 10% to 84,120; 14% to 120,720; 20% to 193,800; 31% to 269,280 (cumulative tax 51,551); 35% to 560,280; credit point NIS 2,904 (rights guide, PDF p.98). Amounts were not indexed on 1 January 2025 (2026 deduction booklet p.3), so the 2024 bands are the same
+- Tax before credits: NIS 51,551 + (282,000 − 269,280) × 35% = 51,551 + 4,452 = NIS 56,003
+- Credit points: 2.75 (unverified: 2.25 for a resident plus 0.5 for a woman) × NIS 2,904 = NIS 7,986
+- Correct annual tax: NIS 56,003 − 7,986 = NIS 48,017
+- Result (withheld minus correct tax): NIS 47,200 − 48,017 = −NIS 817. **No refund.** On these facts the two employers withheld about NIS 817 too little, so there is nothing to claim, and a refund request would show tax owed
+- Lesson: a job change alone does not prove a refund; two employers who each withhold as if theirs were the only job can under-withhold. Compute before promising anything
+- Documents if checking: both Form 106s, Teudat Zehut
 
 ### Example 2: Reserve duty 65 days in 2025
 
@@ -304,22 +306,29 @@ expected:
 ```
 
 ```oa-check
-name: 6.25 points
+name: Example 1, two jobs in 2024 (2024 = 2025 bands), 2.75 points
 inputs:
-  p: 6.25
+  income: 282000
+  withheld: 47200
+  pts: 2.75
 steps:
-  - v: p*2904
+  - gross: 51551+(income-269280)*0.35
+  - net: gross-pts*2904
+  - refund: withheld-net
 expected:
-  v: 18150
+  gross: 56003
+  net: 48017
+  refund: -817
 ```
 
 ## Sources
 
 | Source | URL | Read on |
 |---|---|---|
-| Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.7 (s.39B, Amendment 283), p.10 (2026 bands), p.11 (s.121B surtax), p.12 (credit point NIS 242) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
+| Israel Tax Authority, "Know your rights and duties" guide, tax year 2025 (published July 2026), read PDF p.98 (table A, 2025 tax bands and cumulative tax, credit point NIS 2,904) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-03 |
+| Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.3 (amounts not indexed on 1 January of 2025 to 2027), p.7 (s.39B, Amendment 283), p.10 (2026 bands), p.11 (s.121B surtax), p.12 (credit point NIS 242) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
 
-Not yet confirmed: the six-year refund window (s.160) and the claim deadlines table; the reserve-duty day bands and timing; the new immigrant schedule (s.35, Amendment 262); the s.46 donation minimum, rate and ceiling; the disability ceilings; Form 106 field numbers; the refund processing and interest rules; the 2024 brackets behind Example 1; the frozen status of the credit point. No official consolidated text of the Income Tax Ordinance was opened.
+Not yet confirmed: the six-year refund window (s.160) and the claim deadlines table; the reserve-duty day bands and timing; the new immigrant schedule (s.35, Amendment 262); the s.46 donation minimum, rate and ceiling; the disability ceilings; Form 106 field numbers; the refund processing and interest rules; the 2.75 credit points in Example 1 (2.25 resident plus 0.5 for a woman); the frozen status of the credit point. No official consolidated text of the Income Tax Ordinance was opened.
 
 ## Disclaimer
 

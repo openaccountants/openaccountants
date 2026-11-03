@@ -28,8 +28,8 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Scope | Corporate tax, profit extraction methods for controlling shareholders | |
 | Currency | NIS (Israeli New Shekel: ₪) | |
 | Corporate tax rate | unverified: 23% flat on taxable profits | unverified |
-| Dividend tax: controlling shareholder (10%+) | unverified: 30% | unverified |
-| Dividend tax: non-controlling | unverified: 25% | unverified |
+| Dividend tax: controlling shareholder (10%+) | 30% (the Authority lists dividend rates for 2026 as 25% and 30%); unverified: that 30% is the rate for a 10%+ holder | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF p.118) |
+| Dividend tax: non-controlling | 25% (same list) | same |
 | Section 3(tet) interest rate (2026) | 6.53% (s.3(i) interest rate in the 2026 booklet); the s.3(i) loan ceiling linked to CPI rise is NIS 8,640 a year | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.15) |
 | Section 3(yod) rate (CPI-linked loans, 2026) | unverified: 4.9% | unverified |
 | Surtax threshold | NIS 721,560 a year for 2026 (unverified: frozen 2025 to 2027) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf (p.11) |
@@ -290,10 +290,11 @@ expected:
 | Source | URL | Read on |
 |---|---|---|
 | Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.10 (2026 bands), p.11 (s.121B surtax), p.12 (credit point), p.15 (s.3(i) interest rate 6.53%, s.3(i) ceiling NIS 8,640) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
+| Israel Tax Authority, "Know your rights and duties" guide, tax year 2025 (published July 2026), read PDF p.118 (special-rate income for tax year 2026: dividend 25%, 30%) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-03 |
 | National Insurance, employee rates page, read the NIS 7,703 band and NIS 51,910 ceiling from 01.01.2026 and the column 1 and column 2 (controlling shareholder) working-age rates | https://www.btl.gov.il/Insurance/Rates/Pages/%D7%9C%D7%A2%D7%95%D7%91%D7%93%D7%99%D7%9D%20%D7%A9%D7%9B%D7%99%D7%A8%D7%99%D7%9D.aspx | 2026-11-03 |
 | National Insurance, self-employed rates page, read the working-age table from 01.01.2026 | https://www.btl.gov.il/Insurance/National%20Insurance/type_list/Self_Employed/Pages/rates.aspx | 2026-11-03 |
 
-Not yet confirmed: the 23% corporate rate and the 25% and 30% dividend rates (and so the 46.1% combined figure and the first worked check); the s.3(yod) 4.9% rate; the treatment of s.3(i) interest as salary, its Form 126 reporting and the reclassification risks; closely held company 2% tax and the 6% distribution condition; NIS 6,500 salary expectation; the split of controlling shareholder employee contributions between National Insurance and health (the page gives totals); 52% deductibility; dividend withholding and its deposit date; whether a dividend is capital-source income for the 2% surtax; the effective-rate tables in Sections 2 and 7.
+Not yet confirmed: the 23% corporate rate (and so the 46.1% combined figure and the first worked check); which holder takes the 30% dividend rate (the guide lists 25% and 30% without saying); the s.3(yod) 4.9% rate; the treatment of s.3(i) interest as salary, its Form 126 reporting and the reclassification risks; closely held company 2% tax and the 6% distribution condition; NIS 6,500 salary expectation; the split of controlling shareholder employee contributions between National Insurance and health (the page gives totals); 52% deductibility; dividend withholding and its deposit date; whether a dividend is capital-source income for the 2% surtax; the effective-rate tables in Sections 2 and 7.
 
 ## Disclaimer
 

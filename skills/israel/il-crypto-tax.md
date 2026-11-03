@@ -30,12 +30,12 @@ license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 | Classification | A decentralised payment instrument is an asset (Neches: נכס) under Section 88 ITO, not currency or foreign currency (https://www.gov.il/BlobFolder/policy/income-tax-professional-inst-5-2018/he/Policy_ProfessionalInstIncomeTax_hor_acc%2015.2.18.pdf, ss.2.3, 3.1.1) |
 | Primary guidance | ITA Circular 2018/05 (חוזר 05/2018) |
 | Cost basis method | unverified: FIFO (First In, First Out) as the default |
-| Tax rate: individuals | Capital gain under Part E, at the s.91 rates (Circular 5/2018 s.3.1.2); unverified: 25% |
+| Tax rate: individuals | Capital gain under Part E, at the s.91 rates (Circular 5/2018 s.3.1.2): real capital gain on an asset bought from 1/1/2012 is taxed at up to 25%; older assets are split linearly; lower starting rates from age 60 | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf (PDF p.48) |
 | Tax rate: significant shareholder (10%+) | unverified: 30% |
 | Tax rate: business/traders | If the activity amounts to a business, ordinary income at the s.121 or s.126 rates; mining is business income (Circular 5/2018 s.3.1.4) |
 | Corporate rate | unverified: 23% |
 | Surtax above NIS 721,560 | 3% on the part of total taxable income above NIS 721,560, plus 2% on capital-source taxable income above that amount: two bases, not a flat 5% (https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf, p.11) |
-| Advance payment form | unverified: Form 1399י (transaction codes 77 and 71) |
+| Advance payment form | Form 1399י: virtual currency is marked with transaction symbol 77 and code 71; several sales in one month may be grouped as one with a weighted-average purchase date, with a worksheet attached (https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf, PDF p.47) |
 | Advance payment deadline | unverified: within 30 days of disposal |
 | Reporting forms | Forms 1322 / 1325 (attached to annual Form 1301) |
 | Contributor | Open Accountants Community |
@@ -176,7 +176,7 @@ unverified: The 2025–2026 Voluntary Disclosure Procedure expressly covers digi
 
 **Working:**
 - Capital gain: NIS 120,000 − NIS 80,000 = NIS 40,000
-- Tax (unverified 25% rate): NIS 40,000 × 25% = NIS 10,000
+- Tax (up to 25% on real gain, asset bought after 1/1/2012, rights guide PDF p.48): NIS 40,000 × 25% = NIS 10,000
 - Surtax: total income below NIS 721,560 → no surtax
 - Advance payment: Form 1399י within 30 days of August sale → NIS 10,000
 - Annual reporting: Forms 1325/1322 with 2025 Form 1301
@@ -274,10 +274,11 @@ The two charges have separate bases (2026 booklet p.11). They add up to 5% only 
 | Source | URL | Read on |
 |---|---|---|
 | Israel Tax Authority, Circular 5/2018 on decentralised payment instruments ("virtual currencies"), read all six pages (ss.2.3, 3.1.1 to 3.1.5 income tax, 3.2 VAT) | https://www.gov.il/BlobFolder/policy/income-tax-professional-inst-5-2018/he/Policy_ProfessionalInstIncomeTax_hor_acc%2015.2.18.pdf | 2026-11-03 |
+| Israel Tax Authority, "Know your rights and duties" guide, tax year 2025 (published July 2026), read PDF p.47 (Form 1399 for virtual currency, symbol 77 code 71, monthly grouping) and PDF p.48 (capital gains rates: up to 25% on real gain for assets bought from 1/1/2012, linear split, material shareholder in securities) | https://www.gov.il/BlobFolder/generalpage/income-tax-guide-knowyourright/he/Guides_IncomeTax_da-2025.pdf | 2026-11-03 |
 | Israel Tax Authority, salary-deduction booklet from January 2026 (updated April 2026), read p.11 (s.121B surtax 3% above NIS 721,560 and 2% on capital-source income) | https://www.gov.il/BlobFolder/generalpage/income-tax-monthly-deductions-booklet/he/generalInformation_income-tax-monthly-deductions-booklet_monthly-deductions-booklet-2026.pdf | 2026-11-03 |
 | Israel Tax Authority, Form 1301 service page, tax year 2025 | https://www.gov.il/he/service/reporting-and-payment-2025-annual-tax-report-for-individuals | 2026-11-01 |
 
-Not yet confirmed: the 25% and 30% capital gains rates and the 23% corporate rate; FIFO as the cost-basis method; the DeFi, staking, airdrop, NFT, hard-fork and lending rows; Form 1399 and the 30-day advance; loss offsetting and carryforward; gifts and inheritance basis; the voluntary disclosure dates and tracks; the indexation rule; the threshold freeze; how the 2% surtax base is measured for mixed income.
+Not yet confirmed: the 30% rate for a significant shareholder applied to crypto (the guide states the 30% uplift for securities held by a material shareholder) and the 23% corporate rate; how the monthly grouping on Form 1399 interacts with FIFO; FIFO as the cost-basis method; the DeFi, staking, airdrop, NFT, hard-fork and lending rows; Form 1399 and the 30-day advance; loss offsetting and carryforward; gifts and inheritance basis; the voluntary disclosure dates and tracks; the indexation rule; the threshold freeze; how the 2% surtax base is measured for mixed income.
 
 ## Disclaimer
 
