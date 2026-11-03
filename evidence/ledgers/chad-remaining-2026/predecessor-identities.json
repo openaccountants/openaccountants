@@ -1,0 +1,44 @@
+{
+  "skills/chad/td-company-formation.md": {
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "169e6f17e76af373827907e657335255fcecce6c",
+    "sha256": "d848cc81cd32e0db312720124b51a8dd909a9c18ffb3569bb2d7b4dc9b39d713",
+    "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+  },
+  "skills/chad/td-corporate-income-tax.md": {
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "780eaaaad26dd88b568c0214dcec5fb790e54c64",
+    "sha256": "563eed97ec6923d94f756992f2a2a0fe2952680d112879f4bdd9766b4c248825",
+    "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+  },
+  "skills/chad/td-import-exemption-eligibility.md": {
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "ee713b3bbced36035a4d02992e7d7a72cc55420d",
+    "sha256": "63c281d819ad3d9b7d50b10288aa489643c6b6829a05fd955200e94a158bdde6",
+    "cta_sha256": null
+  },
+  "skills/chad/td-income-tax.md": {
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "412fbc601fc031c14513f4faa4377ce6b703af2b",
+    "sha256": "afeb8d9a2fa372788d0ab72d52e9dc4eec301e1b9f6926a22289d1ccaa5979e5",
+    "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+  },
+  "skills/chad/td-payroll-social.md": {
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "e932f1452a59ac8fd6c07b8b9ed999535282c632",
+    "sha256": "28f5a767820194e5a203489b5dd7f3c07b91d65358cbfcdc688154e0e0b52787",
+    "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+  },
+  "skills/chad/td-tax-overview.md": {
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "d6e986f097694ba0f4d71ce25efdb6bcd22e20dd",
+    "sha256": "f608ec557c514d9c69cf695ebac3bd29ae694e9981ac1addefddf69f4fd67f08",
+    "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+  },
+  "skills/chad/td-vat-gst.md": {
+    "base_commit": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+    "git_blob": "026f2ebd712c24b77bf413ded233dbed8f8e4e99",
+    "sha256": "93bd9d26f0639167651c7f9aea090133cffb5c8a416ce30684aa565dd9bfed13",
+    "cta_sha256": "8cd4c4808bbe51717a9a0affbd4b4bb61a162cd4b7befd12886e425ebb7d68c1"
+  }
+}

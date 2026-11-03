@@ -1,0 +1,11 @@
+{
+  "prior_reviewed_candidate": "416ec514979330e5980061eda4a38ab2cdef6e4a",
+  "status": "new addendum; independent review pending",
+  "files": {
+    "skills/chad/td-income-tax.md": "2d71c727e28142473a719aef1b312ffa57ffcbaef9a8c99d7a8baf55d3dce69c",
+    "skills/chad/td-payroll-social.md": "6dce06718647029a90a4f1fd80f5a504b8a34e08f96cc94b54ba381c86531f13",
+    "skills/chad/README.md": "208f4ae7ba98debd7aac2fe633fd9cead0e34a4d74c7060bb5dc75cad7a91fff",
+    "evidence/ledgers/chad-income-addendum-2026/ledger.md": "dff82f0954de07dfddaadabfc1b417a5a1db454e94e950f22680aa1eab931f8d",
+    "docs/research/chad-remaining-2026/business-income-source-addendum.md": "f86aabc35838035986c06baca0cd0b21ddbceecf4be8af2eb3cf10c6c407b0df"
+  }
+}

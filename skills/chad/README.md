@@ -3,42 +3,58 @@ jurisdiction: TD
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
 covered_by:
+  SC: td-payroll-social
+  PR: td-payroll-social
+  TP: td-transfer-pricing
   XB: td-import-exemption-eligibility
 partial:
-  IT-IND: "Existing 2025 Guide retained; 2026 income, exemptions, residence and filing not refreshed."
-  IT-CORP: "Existing 2025 Guide retained; current ordinary and special company computations not refreshed."
-  VAT: "Existing 2025 Guide retained; 2026 domestic VAT and filing not refreshed."
-  SC: "Existing 2025 payroll/social Guide retained; current CNPS rates, ceilings and procedures not verified."
-  PR: "Existing 2025 payroll/social Guide retained; current withholding and employer obligations not refreshed."
-  TP: "No transfer-pricing Guide; current domestic implementation, documentation and deadlines unverified."
-  XB: "Only September 2026 non-wheat listed-goods import-eligibility draft; customs claim workflow, treaties, withholding and other cross-border jobs remain open."
+  IT-IND: "2026 labour/salary/category methods supported; ordinary positive BIC/BNC and IGL routing added separately; final personal settlement/losses, agricultural/special cases, filing conflicts, disposal gains and treaty/exit computations remain open."
+  IT-CORP: "Ordinary territorial profit/loss/minimum methods supported; depreciation maxima, sub-50million regime, instalment definition, special sectors and live filing workflow remain open."
+  VAT: "Ordinary output/base/input methods and centimes supported; lower RSI entitlement, period conflict, commodity overlap, cement implementation, digital platforms and live workflow remain open."
+  SC: "Archived official CNPS ordinary contribution method supported; later instruments, special workers, partial months/multiple employers and live portal remain unverified."
+  PR: "Employer tax/training methods supported; monthly IRPP scale, special cases and current portal fields remain open."
+  TP: "Domestic adjustment/documentation method supported; implementing template, APA/CbCR, treaty relief and fine interpretation remain open."
+  XB: "Accepted narrow non-wheat import eligibility only; treaties, payment-specific withholding conflicts, foreign credits, exit, property and complete customs claims remain open."
 ---
 
-# Chad: partial tax pack
+# Chad: partial 2026 working-paper pack
 
-Six existing 2025 Guides remain unchanged. The new 2026 draft supports only the listed-goods import-exemption eligibility working paper under the signed 9 September order. It does not complete a customs claim or verify the wider pack. Independent source review accepted the narrow non-wheat job at `d91f12a172626fb9c4ee9ee69f860dd410856492`; local drafts only, no accountant attestation. All wheat is held pending reconciliation of finance-law article 65 with the September order.
+Six legacy Guides have source-ledger-backed 2026 expansions and a new transfer-pricing Guide supplies the domestic adjustment/documentation method. Independent review evidence for the126row scoped expansion is preserved; the separately sourced income/payroll addendum has its own closure evidence below. Current-year metadata and passing structural checks do not establish comprehensive coverage, a live filing procedure or accountant attestation.
 
-## Domains
+## Coverage and remaining jobs
 
-| Domain | Guide | Status/scope |
+| Job | Guide | Supported method / unresolved boundary |
 |---|---|---|
-| IT-IND | [Income tax](td-income-tax.md) | Legacy 2025, not refreshed |
-| IT-CORP | [Corporate tax](td-corporate-income-tax.md) | Legacy 2025, not refreshed |
-| VAT | [VAT](td-vat-gst.md) | Legacy 2025, not refreshed |
-| SC and PR | [Payroll/social](td-payroll-social.md) | Legacy 2025, not refreshed |
-| TP | Missing | Unverified |
-| XB | [Import-exemption eligibility](td-import-exemption-eligibility.md) | Narrow non-wheat draft; independent source review accepted |
+| Individual income | [Income](td-income-tax.md) | Salary/base/scale/residence, positive BIC/BNC bases, IGL routing and separate rent/capital; final settlement/loss/special/disposal paths open |
+| Company income | [Corporate](td-corporate-income-tax.md) | Territorial profit bridge, deductions, ordinary losses, profit/minimum comparison, DSF timetable; specialist calculations/implementation open |
+| Consumption | [VAT](td-vat-gst.md) | Principal plus centimes, base/tax point, input tests, preparation calendar; lower-regime/commodity conflicts and digital implementation open |
+| Workers and employer taxes | [Payroll/social](td-payroll-social.md) | CNPS base/ceiling/shares, period/payment/late charge/annual reconciliation, employer taxes; special/current implementation issues open |
+| Related-party dealings | [Transfer pricing](td-transfer-pricing.md) | Adjustments, turnover-or-assets documentation, group/entity evidence, request periods; APA/CbCR/template/relief open |
+| Formation, ordinary accounts and annual corporate compliance | [Formation/reporting](td-company-formation.md) | Capital, dossier, audit tests, SYSCOHADA system/records/statement set, approval/RCCM timing; national forms/fees and specialist accounting open |
+| Cross-border trade | [Import eligibility](td-import-exemption-eligibility.md) | Previously accepted narrow September non-wheat eligibility; all wheat and complete customs claims held |
+| Intake/completeness | [Router](td-tax-overview.md) | Routes jobs without repeating stale headline rates; explicit gap register controls completion |
 
-## Other retained work
+## Still unresolved, beyond Guide presence
 
-[Formation](td-company-formation.md) and [overview](td-tax-overview.md) remain 2025 and unrefreshed. Complete old-topic preservation map: `evidence/ledgers/chad-old-topics.md`.
+- Ordinary positive business/professional bases are added in a separate reviewed-scope candidate; agricultural regime gaps, individual business losses/final credit ordering, BNC filing conflict, property-disposal gains, treaty/foreign credits, relocation and complete filing procedures remain open. LF18 deletes the former global-income subsection96–108, so its old housing/departure rules are withdrawn rather than treated as current.
+- Company depreciation maxima, low-turnover legal-person regime, minimum-tax period/floor references and advance-base implementing order; petroleum/mining/banking/investment/exempt-entity calculations.
+- VAT lower RSI entitlement/monthly-versus-quarterly text, milk/meat exemption overlap, cement rate, comprehensive tariff exemptions, nonresident digital platforms, input-centimes/credit implementation and current electronic normalised-invoice procedures.
+- CNPS later minimum-wage/rate instruments, partial-year/month/multiple-employer/expatriate cases, annual recap date and current portal. The official archived employer page still linked its historical contribution Guide in February 2026; that is not a newly promulgated 2026 schedule.
+- National SARL capital instrument, formation fees/timing, beneficial-owner/registry forms and national late-filing penalties; complete bookkeeping/recognition/valuation/consolidation, nonprofit, IFRS and sector accounting implementation.
+- Payment-specific cross-border withholding, including conflicting CGI26 foreign-service paragraphs, CEMAC/treaty entitlement, property/local taxes, customs valuation/HS/declaration workflow and the wheat legal interaction. These are real remaining jobs, not assumed completed from a green check.
 
-## Official source
+## Sources and review history
 
-[Signed Arrêté 135, 9 September 2026](https://ecofinances.gouv.td/wp-content/uploads/2026/09/Arrete-N135-Exoneration-des-droits-et-taxes-sur-les-produits09092026164852.pdf), both pages and all three articles read 2026-11-01. The general CGI could not be opened because of a certificate error; it was not read. The finance-law article 65 wheat provision and adjacent articles 64–66 were read on PDF page 78 and visually checked. Its interaction with the later order remains unresolved; wheat is excluded. This scoped reading is not a whole-law review or coverage claim. Full source captures stay outside Git.
+The official 2025 CGI was recovered from its [dated 20 July 2025 ministry archive](https://web.archive.org/web/20250720004455id_/https://www.finances.gouv.td/index.php/le-ministere/le-ministre/item/download/438_afa372566d4acca63cb857e846d67eef) after normal TLS and ordinary browser failure. Relevant clauses were read and reconciled with the [enacted 2026 finance law](https://ecofinances.gouv.td/wp-content/uploads/2026/06/Loi-n008-AN-SENAT-2025-Portant-loi-de-Finances-2026-LF-2026.pdf). CNPS/ANIE dated archives and correctly identified official OHADA Acts support the additional methods. Exact read scopes, source failures and hashes are in `docs/research/chad-remaining-2026/` and `evidence/ledgers/chad-remaining-2026/`. Full source captures remain outside Git.
 
-Tracked by [TD pack issue #490](https://github.com/openaccountants/openaccountants/issues/490). Six domains remain partial and transfer pricing is missing. No generated inventory or bundle files edited.
+The earlier import Guide and historical evidence remain byte-for-byte. Its initial source-conflict finding is in `evidence/ledgers/chad-review-20261101/review.md`, closure in `evidence/ledgers/chad-review-closure-1/closure.md`. That acceptance covered fourteen ledger rows, both import examples and the six then-unchanged legacy Guides' preservation, not the present expansions. All wheat remains held pending finance-law article65/September-order reconciliation. Old evidence is history, not extended acceptance.
 
-## Independent review evidence
+Draft continuation [PR #1219](https://github.com/openaccountants/openaccountants/pull/1219), base `59c23acba2ad66dd2bb29ffc81ffbb9289769ef8`, follows merged #1179. The immutable predecessor map accounts for159 original editorial lines, including introductions, headings, bullets and table content; unsupported old claims have explicit holds. Platform fields and complete CTA suffixes are preserved. No generated packages/index/llms or application changes.
 
-The initial source-conflict finding is preserved in `evidence/ledgers/chad-review-20261101/review.md`; additive closure is in `evidence/ledgers/chad-review-closure-1/closure.md`. Fourteen ledger rows, both examples, six unchanged legacy Guides and 82 preserved editorial topics were checked. After acceptance, only the stale review-status sentences in the Guide and ledger changed.
+[Country issue #490](https://github.com/openaccountants/openaccountants/issues/490) remains open. All seven tax domains remain partial; formation/reporting depth and wider property/compliance work are also unfinished. No accountant attestation.
+
+## Income addendum
+
+The126row scoped review at416ec5149 remains historical evidence. Subsequent LF18 reading supersedes the operative105housing-floor/106–108departure portion of old income ledger30. The income/payroll v1.2 addendum supplies ordinary positive BIC/BNC bases, IGL routes and the payroll substitution gate, with34additional source rows and2additional cases. Its source findings and separate review live in `evidence/ledgers/chad-income-addendum-2026/`; source-review closure is recorded separately, including the superseded older housing/departure claim. Earlier review is not silently extended.
+
+The final Guide closing notes point here for review evidence and limits. Those notes do not alter a statutory method, the platform’s professional-review fields or the stamped CTA. Final source-Guide hashes are pinned with the addendum closure.
