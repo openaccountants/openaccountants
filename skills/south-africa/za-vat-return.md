@@ -6,15 +6,14 @@ tax_year_notes: Merged from za-vat-return and south-africa-vat on 2026-11-01. We
 jurisdiction: ZA
 tax_year: 2026
 last_updated: 2026-11-03
-authored_by: Werner Britz, CA(SA)
-review_status: pending_review
 source_checked: 2026-10-17
-trust_label: Accountant-authored
 depends_on:
   - vat-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Werner Britz"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # ZA VAT Return

@@ -6,11 +6,8 @@ jurisdiction: "NO"
 category: international
 tax_year: 2026
 last_updated: 2026-10-30
-authored_by: Michael Cutajar, CPA, ACCA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Norway to Switzerland: the wealth-tax corridor, the 3-year tail, and the exit tax

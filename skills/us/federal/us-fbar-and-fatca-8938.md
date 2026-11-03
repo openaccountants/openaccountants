@@ -4,13 +4,11 @@ description: Tier 2 US federal content skill for the dual foreign financial acco
 jurisdiction: US
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Christopher Aryee, ACCA, CA, EA, CPA-CA
-reviewed_by: James Wallach
-review_status: current
-trust_label: Checked by James Wallach
 source_checked: 2026-10-16
-tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "James Wallach"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # US Fbar And FATCA 8938

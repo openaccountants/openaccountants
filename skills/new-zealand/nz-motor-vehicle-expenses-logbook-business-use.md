@@ -4,11 +4,8 @@ description: A drafting guide for New Zealand sole traders, partnerships and clo
 jurisdiction: NZ
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Motor vehicle expenses, logbooks and shareholder-employee vehicles in New Zealand

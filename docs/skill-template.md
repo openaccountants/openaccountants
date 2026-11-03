@@ -161,7 +161,7 @@ The section names the facts the AI must have before it computes (residence, turn
 
 ### 11. Tier and name are honest and bound to the version
 
-`tier: 2` means **Checked against the law** (built to this standard and independently reviewed before merge) or **Sourced from the law** (an older skill not yet rebuilt). `tier: 1` means a licensed accountant reviewed the whole skill and set `reviewed_by` and `reviewed_on`; no one else sets these keys. A content change after the review drops the name and the skill returns to `tier: 2` until it is reviewed again. Where no accountant signs, the byline is the team's: `trust_label: Built by Michael Cutajar and the OpenAccountants team`.
+A skill has one label with two states. `tier: 2` shows **Built from the law**, with source links and the last check date where those exist. `tier: 1` adds **Approved by [name]**: a licensed accountant with an approved account on openaccountants.com approved the whole skill and set `reviewed_by` (their name only; the licence stays private) and `reviewed_on`. No one else sets these keys. A content change after the approval drops the name and the skill returns to `tier: 2` until it is approved again. Who wrote or edited a skill is credited from the git history, not from a frontmatter key.
 
 - **Evidence:** the fidelity exam of Aug 2026 (31 items, three models) found invented attribution the top error (31 of 44). The 17 wrong figures in wave 1 (Oct 2026) all sat in two US skills carrying the accountant-signed label; the label never tracked accuracy.
 - **Check:** `check_tier_honest` (g): `reviewed_by` implies `tier: 1` and `tier: 1` implies `reviewed_by`; `check_reviewed_on` (j): a signed skill names the date it was signed. That `reviewed_on` moved with the content: reviewer.
@@ -195,7 +195,7 @@ Someone other than the writer (a person or a separate AI agent with no shared co
 
 - Rewrite in place; keep the slug.
 - `version` and `last_updated` only go up. Set `version` one step above main's, and keep any version in the body heading the same (CI `compare` fails otherwise). Check: `check_version_numeric` (f).
-- Keep a team byline or `trust_label` as it is. Remove a named outside reviewer only when the content they reviewed has changed (line 11).
+- Remove a named approver only when the content they approved has changed (line 11).
 - Fix contradictions you find in sibling skills in their own PR, not as a bonus edit (line 8).
 
 ## Pack README
@@ -235,20 +235,17 @@ Edit `skills/**` only. Never edit `packages/`, `index.json` or `llms-full.txt`, 
 |-----|--------|-------|
 | `tax_year_notes` | quoted string | The human-readable tax-year label when a bare year can't express it: `"2025-26"`, `"FY 2026-27 (AY 2027-28)"`. Its presence is what lets `check_tax_year_current` accept a `tax_year` other than the current year. The platform does not store this key, so the daily export drops it when it re-renders a skill. Put the year label in the body text too, such as a "Tax year" row in the quick-reference table, so it survives |
 | `verified_by` | legacy | Do not add to new skills. The platform is retiring it; accountant review uses `reviewed_by` and `reviewed_on` (line 11) |
-| `reviewed_by` | `Name, Credential` | Set only by a licensed accountant who reviewed the whole skill, with `reviewed_on` (`YYYY-MM-DD`) and `tier: 1` |
+| `reviewed_by` | `Name` | The approving accountant's name, matching their openaccountants.com account. Set only by them, with `reviewed_on` (`YYYY-MM-DD`) and `tier: 1`. No licence number in the file |
 | `depends_on` | YAML list of slugs | Workflow base or country skill this loads on top of |
 | `version` | numeric dotted value, e.g. `0.1` | Content version, bumped on substantive change. Keep any body-heading version in step |
 
 ## Platform-written keys
 
-The daily export from openaccountants.com (see [WEBSITE-SYNC.md](WEBSITE-SYNC.md)) writes these keys when it renders a skill. Do not add or edit them in a PR: the platform owns their values and rewrites them on the next export. Leave them in place when you edit a skill that already carries them. None of them is a quality state; `tier` remains the only quality field, and `review_status` records where the accountant review stands. `scripts/validate-guides.py` ignores keys it does not know, so a key outside this document is undefined, not validated.
+The daily export from openaccountants.com (see [WEBSITE-SYNC.md](WEBSITE-SYNC.md)) writes these keys when it renders a skill. Do not add or edit them in a PR: the platform owns their values and rewrites them on the next export. Leave them in place when you edit a skill that already carries them. None of them is a quality state; `tier` with `reviewed_by` is the only quality field. `review_status`, `authored_by` and `trust_label` were removed on 3 Nov 2026 (one label: Built from the law, plus Approved by). `scripts/validate-guides.py` ignores keys it does not know, so a key outside this document is undefined, not validated.
 
 | Key | Values seen | Notes |
 |-----|-------------|-------|
-| `review_status` | `current` or `pending_review` | Whether the current text carries a professional review. A substantive edit sets the skill back to `pending_review` until it is reviewed again |
 | `license` | `AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)` | Written verbatim by the export. [LICENSING.md](../LICENSING.md) is the licence reference |
-| `authored_by` | `OpenAccountants team` | Present when the platform team, not a named accountant or GitHub contributor, authored the current revision |
-| `trust_label` | `Built by Michael Cutajar and the OpenAccountants team` | The team byline where no accountant signs (line 11). Display attribution for the website, not a review claim |
 
 The export has also written `drafted_by`, `approved_by`, `validation_status` and `validated` on some skills (`grep -rl "^drafted_by:" skills/` lists them). Treat them the same way: leave them alone and do not add them to new files.
 

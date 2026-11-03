@@ -5,16 +5,14 @@ version: 1.0
 jurisdiction: CA
 tax_year: 2026
 last_updated: 2026-07-13
-authored_by: Nathan Wiebe
-reviewed_by: Edgar Lautsyus
-review_status: current
-trust_label: Checked by Edgar Lautsyus
 source_checked: 2026-10-17
 depends_on:
   - bookkeeping-workflow-base
 category: tax-optimization
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Nathan Wiebe"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Canada Tax Optimization

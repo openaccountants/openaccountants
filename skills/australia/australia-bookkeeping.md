@@ -5,12 +5,13 @@ version: 1.3
 jurisdiction: AU
 tax_year: 2025
 last_updated: 2026-09-20
-review_status: pending_review
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Australia Bookkeeping

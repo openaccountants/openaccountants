@@ -4,10 +4,9 @@ description: "Cyprus transfer pricing for tax year 2026: the arm's length rule i
 jurisdiction: CY
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-23
 version: 0.2
-verified_by: pending
+tier: 2
 ---
 
 # Cyprus transfer pricing (tax year 2026)

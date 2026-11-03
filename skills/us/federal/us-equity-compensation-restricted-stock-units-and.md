@@ -4,11 +4,8 @@ description: How US employers and their advisers withhold and report federal tax
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Equity compensation: RSUs, stock options, supplemental wage withholding and the section 83(i) deferral election in United States

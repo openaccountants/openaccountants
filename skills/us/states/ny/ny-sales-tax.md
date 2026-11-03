@@ -3,9 +3,9 @@ name: new-york-sales-tax
 description: Use this skill whenever asked about New York sales and use tax, NYS DTF filings, NYC sales tax, New York exemptions, New York clothing exemption, New York nexus, or any request involving New York state sales and use tax compliance. Trigger on phrases like "New York sales tax", "NY sales tax", "NYC sales tax", "DTF", "ST-100", "New York clothing exemption", "New York resale certificate", or any request involving New York sales and use tax classification, filing, or compliance. ALWAYS read this skill before touching any New York sales tax work.
 version: 2.0
 jurisdiction: US-NY
-tier: 2
 last_updated: 2026-06-12
 validation_status: ai-drafted-q3
+tier: 2
 ---
 
 # New York Sales and Use Tax Skill v2.0

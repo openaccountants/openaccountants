@@ -4,8 +4,8 @@ description: Universal financial statements preparation workflow base that defin
 version: 1.0
 category: foundation
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
 ---
 
 # Financial Statements Workflow Base Skill v1.0

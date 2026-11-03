@@ -3,15 +3,13 @@ name: so-income-tax
 description: >
   Somalia individual annual income-tax working paper for 2026 preparation using the enacted Income Tax Act 37 of 2025. Use for personal income classification, annual taxable income, resident and non-resident rate selection, minor taxation and return preparation. It separates employment, business and investment income, withholding finality, deductions and payment credits. It highlights a material discrepancy in the printed annual top-band constant and stops before a final position requiring that unresolved figure. Two executable cases cover the enacted middle band and the written Ministry exception for a minor. Residence, payroll and company deduction mechanics link to their country Guides. Implementation notices, live form instructions and specialist computations remain explicit gaps. This is a conditional statutory baseline with independent source review limited to this conditional baseline, not a completed return or accountant attestation.
 jurisdiction: SO
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 tax_year: 2026
 last_updated: 2026-11-01
 version: 0.1
 tax_year_notes: "2026 preparation from enacted statutory baseline; effective implementation and current filing workflow unresolved."
+tier: 2
 ---
 
 # Somalia individual annual income-tax reconciliation v0.1

@@ -3,9 +3,10 @@ name: general-uae-corporate-tax-guide
 description: Rates, Free Zone (QFZP) rules, Small Business Relief, deductions, deadlines and penalties for UAE Corporate Tax — source-cited to the FTA.
 jurisdiction: AE
 last_updated: 2026-09-16
-review_status: pending_review
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Jonathan I. Ruiz"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # General UAE Corporate Tax guide

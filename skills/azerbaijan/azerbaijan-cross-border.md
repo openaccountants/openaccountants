@@ -4,10 +4,9 @@ description: 'Use this skill for 2026 Azerbaijan cross-border income and corpora
 jurisdiction: AZ
 category: cross-border
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 version: 0.1
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+tier: 2
 ---
 
 # Azerbaijan Cross-border Tax, Treaties and Non-residents v0.1

@@ -15,8 +15,8 @@ category: international
 job: vat-refund
 tax_year: 2026
 last_updated: 2026-10-31
-tier: 2
 version: "0.2"
+tier: 2
 ---
 
 # Moldova VAT refund and offset application, 2026

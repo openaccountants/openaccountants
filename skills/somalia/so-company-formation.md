@@ -3,15 +3,13 @@ name: so-company-formation
 description: >
   Somalia company registration and annual-report preparation for2026 using the official registry original Somali company regulation and Companies Law source research. Use for domestic incorporation packets, Registrar name reservation, founder and director evidence, constitutional and share schedules, foreign-branch certified documents, sector authorisations and reporting handover. It separates incorporation certificates, business licences, regulated approvals and tax registration. Two executable cases reconcile a chosen capital schedule and a material live-fee conflict. Exact operative fees and annual-report timing remain explicit unresolved conflicts. It does not promise a total incorporation time, no minimum capital, foreign-investment approval or a completed online submission. Beneficial ownership, accounts, audit and licence renewal remain held. This is a bounded preparation method with independent source review limited to this conditional baseline, not registration or licensed accountant attestation.
 jurisdiction: SO
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
 tax_year: 2026
 last_updated: 2026-11-01
 version: 0.1
 tax_year_notes: "2026 preparation from enacted statutory baseline; effective implementation and current filing workflow unresolved."
+tier: 2
 ---
 
 # Somalia company registration packet and annual-report preparation v0.1

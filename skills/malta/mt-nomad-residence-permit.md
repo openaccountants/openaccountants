@@ -4,11 +4,10 @@ description: "The Malta Nomad Residence Permit for non-EU nationals who live in 
 jurisdiction: MT
 tax_year: 2026
 last_updated: 2026-10-24
-authored_by: Michael Spiteri Staines
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Michael Spiteri Staines"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Malta Nomad Residence Permit: who qualifies and how the income is taxed

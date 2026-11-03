@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 version: "0.9"
-verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf"
     title: "Companies Act 2014: section 305 is merger terms, not the cited liquidation provision"
@@ -25,6 +23,7 @@ sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/court/2000s031/2000s031(07-07-26).pdf"
     title: "Supreme Court Rules 2000: 7 July 2026 consolidation, rules 25–31"
     as_of: "2026-10-22"
+tier: 2
 ---
 
 # Gibraltar: income-tax assessment appeals and payment postponement

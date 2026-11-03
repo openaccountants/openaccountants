@@ -4,13 +4,11 @@ description: "Sierra Leone payroll and social contribution workpaper for the 202
 jurisdiction: SL
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 1.1
 category: international
 tax_year_notes: "2026 intake; source-bound NASSIT workpaper, later amendments and PAYE reconciliation incomplete"
+tier: 2
 ---
 
 # Sierra Leone Payroll and Social Contributions v1.1

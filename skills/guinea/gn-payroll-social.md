@@ -4,12 +4,10 @@ description: "Guinea CNSS contribution working method for ordinary employees cov
 jurisdiction: GN
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
 version: 1.1
+tier: 2
 ---
 
 # Guinea payroll and social contributions v1.1

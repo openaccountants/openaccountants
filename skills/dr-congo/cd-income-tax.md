@@ -4,13 +4,11 @@ description: "Prepare an individual income-tax research workpaper for DR Congo i
 jurisdiction: CD
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 1.0
 tax_year_notes: "Intended 2026 IRPP research workpaper only. Original 2025 carried provisions and stated legal/procedure gaps remain unresolved; no final 2026 liability or live-filing approval."
+tier: 2
 ---
 
 # DR Congo individual income tax: IRPP research workpaper v1.0

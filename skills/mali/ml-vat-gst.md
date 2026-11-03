@@ -8,10 +8,8 @@ tax_year: 2026
 tax_year_notes: "2026 research draft only; older DGI source baseline, operative 2026 amendment chain unproved."
 version: 0.1
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Mali VAT source-reference draft v0.1

@@ -4,11 +4,8 @@ description: "Qualified Opportunity Zone investing under sections 1400Z-1 and 14
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-03
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Qualified Opportunity Zone investments: deferring and excluding capital gains

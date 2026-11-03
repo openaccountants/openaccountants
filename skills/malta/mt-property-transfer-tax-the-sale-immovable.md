@@ -4,12 +4,10 @@ description: A drafting reference on the final withholding tax charged to the se
 jurisdiction: MT
 tax_year: 2026
 last_updated: 2026-09-03
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Property transfer tax and stamp duty on the sale of immovable property in Malta

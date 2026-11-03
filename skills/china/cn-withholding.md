@@ -4,12 +4,10 @@ description: 当用户咨询、计算、审核或申报中国预提所得税（�
 jurisdiction: CN
 tax_year: 2026
 last_updated: 2026-10-29
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 version: 1.1
 category: international
+tier: 2
 ---
 
 # China withholding: payroll, individual fees, non-resident enterprises and imported services

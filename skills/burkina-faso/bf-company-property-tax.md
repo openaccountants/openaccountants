@@ -6,9 +6,9 @@ jurisdiction: BF
 category: international
 job: company-property-tax
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Burkina Faso annual company property tax v0.1

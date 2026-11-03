@@ -5,13 +5,11 @@ version: 1.0
 jurisdiction: NZ
 tax_year: 2026
 last_updated: 2026-09-22
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # New Zealand capital gains: when a gain is taxed

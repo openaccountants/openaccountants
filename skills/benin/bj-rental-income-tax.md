@@ -5,9 +5,9 @@ jurisdiction: BJ
 category: international
 tax_year: 2026
 tax_year_notes: "2026 ordinary CGI rental rules; June platform amendment recorded with first operative payment period held"
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Benin rental IRF and rent withholding working paper v0.1

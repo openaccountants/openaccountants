@@ -4,10 +4,9 @@ description: 'Use this skill for 2026 Azerbaijan transfer-pricing working papers
 jurisdiction: AZ
 category: transfer-pricing
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 version: 0.1
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+tier: 2
 ---
 
 # Azerbaijan Transfer Pricing v0.1

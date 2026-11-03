@@ -5,15 +5,13 @@ version: 0.1
 jurisdiction: DO
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Miguel Lantigua, CPA
-reviewed_by: Miguel Lantigua
-review_status: current
-trust_label: Checked by Miguel Lantigua
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Miguel Lantigua"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Dominican Republic Income Tax (ISR) -- Self-Employed and Individuals

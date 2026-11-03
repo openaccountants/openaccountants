@@ -4,12 +4,10 @@ description: "Computes Liberia NASSCORP contributions for employees within the v
 jurisdiction: LR
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
 version: 0.2
+tier: 2
 ---
 
 # Liberia Payroll and Social Contributions v0.2

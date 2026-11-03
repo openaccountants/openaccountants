@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: "0.20"
-verified_by: pending
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
     title: "UK–Gibraltar agreement: Articles 3–5, 7–9, 21 and 28–29"
@@ -37,10 +35,8 @@ sources:
   - url: "https://www.gibraltar.gov.gi/contacts/income-tax-office-76"
     title: "ITO contact page: Corporate Tax Section, CT1/CT2 and general-query routes"
     as_of: "2026-10-28"
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Gibraltar corporate tax and filing v0.20

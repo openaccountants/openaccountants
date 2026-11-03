@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: "0.12"
-verified_by: pending
 sources:
   - url: "https://www.legislation.gov.uk/uksi/2010/51"
     title: "Inheritance Tax (Qualifying Non-UK Pension Schemes) Regulations 2010, revised regulations 2–7 and Schedule"
@@ -73,10 +71,8 @@ sources:
   - url: "https://www.gibraltarlaws.gov.gi/legislations/electric-vehicle-charger-deductions-amendment-rules-2022-6610/download"
     title: "LN 2022/170, rules 2–3"
     as_of: "2026-10-28"
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Gibraltar individual income tax: ordinary assessment v0.12

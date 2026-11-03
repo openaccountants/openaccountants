@@ -16,12 +16,9 @@ version: 0.4
 jurisdiction: FO
 tax_year: 2026
 last_updated: 2026-11-01
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Faroe Islands VAT registration and returns v0.4

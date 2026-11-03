@@ -5,9 +5,9 @@ jurisdiction: GN
 category: international
 tax_year: 2026
 tax_year_notes: "Enacted 31 March 2026 replacement text; earlier periods and October rectification status unconfirmed."
-tier: 2
 last_updated: 2026-11-01
 version: 1.2
+tier: 2
 ---
 
 # Guinea VAT invoice control v1.2

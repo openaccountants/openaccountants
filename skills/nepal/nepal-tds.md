@@ -4,12 +4,10 @@ description: ALWAYS read this skill before touching any Nepal TDS / withholding 
 jurisdiction: NP
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Ashish Bista, ICAI, OTHER, CA
-reviewed_by: Ashish Bista
-review_status: current
-trust_label: Checked by Ashish Bista
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ashish Bista"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Nepal Tds

@@ -5,13 +5,11 @@ version: 0.2
 jurisdiction: SN
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - payroll-workflow-base
 category: payroll
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Senegal Payroll Skill v0.2 (Tier 2: research-verified, pending accountant sign-off)

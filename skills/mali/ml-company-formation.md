@@ -8,10 +8,8 @@ tax_year: 2026
 tax_year_notes: "2026 research job; identified older source baseline only, complete operative current chain unproved."
 version: 0.1
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Mali company formation and entity-choice source-reference draft v0.1

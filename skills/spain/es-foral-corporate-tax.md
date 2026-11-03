@@ -16,9 +16,9 @@ description: >
 jurisdiction: ES
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-28
 version: 0.6
+tier: 2
 ---
 
 # Spain: foral corporate tax for2026 v0.6

@@ -6,10 +6,8 @@ jurisdiction: KE
 tax_year: 2025
 tax_year_notes: Rates and reliefs reviewed for the year of income 2025 only. The SHIF treatment was updated on 2026-10-31. Finance Act, 2026 changes are listed in their own section and are not yet worked into the rates or examples.
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # KE Income Tax

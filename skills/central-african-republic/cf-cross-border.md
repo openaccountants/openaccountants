@@ -6,9 +6,9 @@ jurisdiction: CF
 category: cross-border
 tax_year: 2026
 tax_year_notes: "2026 research draft; conditional code baseline and named enacted amendments, not full operative coverage"
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Central African Republic cross-border income and tax clearance v0.1

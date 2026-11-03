@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: "0.10"
-verified_by: pending
 sources:
   - url: "https://www.gibraltar.gov.gi/uploads/_PressOffice/Treaty%20Customs%20Guidance/Transit%20GN.pdf"
     title: "HM Customs Goods Transit Process, sections 2 and 4.2"
@@ -40,10 +38,8 @@ sources:
   - url: "https://assets.publishing.service.gov.uk/media/6a56149a9e63154454413620/MS_9.2026_Agreement_Gibraltar_UK_EU_EAEC_v2of2.pdf"
     title: "Treaty Volume II: Annexes 18 and 24"
     as_of: "2026-10-28"
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 

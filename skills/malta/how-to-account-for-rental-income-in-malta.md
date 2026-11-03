@@ -6,12 +6,10 @@ category: international
 tax_year: 2026
 last_updated: 2026-10-23
 version: 1.1
-verified_by: pending
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Michael Cutajar"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # How to Account for Rental Income in Malta v1.1

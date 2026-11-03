@@ -4,10 +4,9 @@ description: Determine Belarus cross-border income taxation for individuals, Bel
 jurisdiction: BY
 category: cross-border
 tax_year: 2026
-tier: 2
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 last_updated: 2026-10-30
 version: 0.1
+tier: 2
 ---
 
 # Belarus cross-border tax, 2026 v0.1

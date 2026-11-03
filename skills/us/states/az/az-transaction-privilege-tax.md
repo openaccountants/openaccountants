@@ -4,10 +4,8 @@ description: "Source-cited tax guide for US-AZ: az transaction privilege tax. Un
 jurisdiction: US-AZ
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # AZ Transaction Privilege Tax

@@ -9,11 +9,11 @@ description: >
 version: 0.1
 jurisdiction: KZ
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: orchestrator
 depends_on:
   - kz-freelance-intake
+tier: 2
 ---
 
 # Kazakhstan Return Assembly — Orchestrator v0.1

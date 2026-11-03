@@ -5,9 +5,9 @@ jurisdiction: TG
 category: international
 tax_year: 2026
 tax_year_notes: "Conditional collection working paper from LPF 2025 articles100–101, read with the enacted 2026 finance-law amendment scope; later-law continuity and live filing remain unconfirmed."
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Togo rental withholding and owner advances v0.1

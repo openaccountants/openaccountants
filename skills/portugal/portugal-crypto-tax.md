@@ -5,13 +5,11 @@ version: 1.3
 jurisdiction: PT
 tax_year: 2026
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - pt-income-tax
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Portugal: IRS on crypto assets (tax year 2026) v1.2

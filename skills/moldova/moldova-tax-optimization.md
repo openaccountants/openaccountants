@@ -5,11 +5,9 @@ version: "0.8"
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: tax-optimization
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Moldova tax planning and regime comparison, 2026 v0.8

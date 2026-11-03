@@ -5,12 +5,12 @@ description: >
 version: 1.0
 jurisdiction: US-WA
 tax_year: 2025
-tier: 2
 last_updated: 2026-06-12
 category: state
 depends_on:
   - us-tax-workflow-base
 validated: April 2026
+tier: 2
 ---
 
 # Washington B&O Tax v1.0

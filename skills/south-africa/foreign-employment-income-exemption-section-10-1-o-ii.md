@@ -3,11 +3,10 @@ name: foreign-employment-income-exemption-section-10-1-o-ii
 description: It is not "the first R1.25 million is exempt". SARS applies a work-day ratio first and caps second, so on most facts the ratio binds long before the cap does.
 jurisdiction: ZA
 last_updated: 2026-09-02
-authored_by: Brandon Iverach
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Brandon Iverach"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # South Africa — Foreign Employment Income Exemption, s 10(1)(o)(ii)

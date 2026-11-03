@@ -5,15 +5,12 @@ version: 2.2
 jurisdiction: DK
 tax_year: 2026
 last_updated: 2026-10-31
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - vat-workflow-base
   - eu-vat-directive
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Denmark: VAT (moms) and the VAT return (2026)

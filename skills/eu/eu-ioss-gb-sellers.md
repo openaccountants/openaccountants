@@ -4,11 +4,8 @@ description: "EU-side IOSS workflow for Great Britain sellers using an EU interm
 jurisdiction: EU-27
 tax_year: 2026
 last_updated: 2026-10-04
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # EU import VAT and IOSS for Great Britain sellers

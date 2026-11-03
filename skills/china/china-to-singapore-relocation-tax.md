@@ -4,11 +4,8 @@ description: "China is the world's largest source of relocating wealth and Singa
 jurisdiction: CN
 tax_year: 2025
 last_updated: 2026-08-03
-authored_by: Michael Cutajar, CPA, ACCA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # China to Singapore: domicile, the CRS reckoning, and a clean landing

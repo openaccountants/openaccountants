@@ -4,11 +4,9 @@ description: Tier 2 California content skill for computing California estimated 
 jurisdiction: US-CA
 tax_year: 2025
 last_updated: 2026-07-13
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 source_checked: 2026-10-16
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # CA Estimated Tax 540es

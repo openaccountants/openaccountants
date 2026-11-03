@@ -4,11 +4,10 @@ description: How an emigrant from Alberta elects under subsection 220(4.5) on Fo
 jurisdiction: CA-AB
 tax_year: 2026
 last_updated: 2026-09-03
-review_status: pending_review
 drafted_by: OpenAccountants
 approved_by: pending
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Deferring departure tax with Form T1244 and providing security in Alberta

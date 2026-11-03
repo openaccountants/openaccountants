@@ -4,11 +4,8 @@ description: Tier 2 New Jersey content skill for employer payroll compliance cov
 jurisdiction: US-NJ
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # New Jersey employer payroll: withholding, NJ-927, UI, TDI, FLI, workforce funds, NJ-W-3 and minimum wage (2026, with 2025 notes)

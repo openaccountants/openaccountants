@@ -5,15 +5,13 @@ version: 1.3
 jurisdiction: FR
 tax_year: 2026
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 drafted_by: OpenAccountants
 approved_by: pending
 depends_on:
   - company-formation-workflow-base
 category: formation
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Forming a business in France: micro-entrepreneur, EI, SARL, SAS and SA

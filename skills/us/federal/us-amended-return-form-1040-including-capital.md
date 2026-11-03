@@ -4,11 +4,8 @@ description: How to correct a filed Form 1040 series return with Form 1040-X, in
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-19
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Form 1040-X amended returns and capital loss carryforward corrections in the United States

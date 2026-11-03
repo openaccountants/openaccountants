@@ -5,13 +5,11 @@ version: 2.1
 jurisdiction: IL
 tax_year: 2026
 last_updated: 2026-11-03
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - vat-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Israel VAT

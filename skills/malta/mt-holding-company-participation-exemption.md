@@ -4,11 +4,10 @@ description: "Malta holding company for a family, in depth: the participating ho
 jurisdiction: MT
 tax_year: 2026
 last_updated: 2026-10-05
-authored_by: Michael Cutajar, CPA, ACCA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Michael Cutajar"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Malta holding companies: participation exemption, tax refunds and dividends to the family

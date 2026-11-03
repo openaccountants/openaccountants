@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: "0.6"
-verified_by: pending
 sources:
   - url: "https://www.parliament.gi/uploads/contents/bills/2025/2025B05.pdf"
     title: "Bill B05/2025: proposed changes only; enactment not verified"
@@ -19,10 +17,8 @@ sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/stamp-duties/2005-73/2005-73(23-12-24).pdf"
     title: "Stamp Duties Act 2005, sections 4A–4B, 11–16, 19–19C and Schedules 1–2; 23 December 2024 consolidation"
     as_of: "2026-10-22"
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Gibraltar property conveyance and mortgage stamp duty v0.6

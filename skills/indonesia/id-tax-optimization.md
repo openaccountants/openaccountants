@@ -4,12 +4,10 @@ description: "Use this skill whenever asked about Indonesian tax planning, regim
 jurisdiction: ID
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: RILIA PUTRI, CA, CPA
-reviewed_by: RILIA PUTRI
-review_status: current
-trust_label: Checked by RILIA PUTRI
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "RILIA PUTRI"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # ID Tax Optimization

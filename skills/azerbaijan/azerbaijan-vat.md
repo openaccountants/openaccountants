@@ -5,11 +5,9 @@ version: 2.1
 jurisdiction: AZ
 tax_year: 2026
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
+tier: 2
 ---
 
 # Azerbaijan Value Added Tax v2.1

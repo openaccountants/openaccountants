@@ -5,13 +5,11 @@ version: 1.2
 jurisdiction: IT
 tax_year: 2026
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - payroll-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Italian payroll for employees: IRPEF withholding, INPS, TFR, CU and F24 (2026)

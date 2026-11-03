@@ -16,14 +16,11 @@ version: 1.6
 jurisdiction: FI
 tax_year: 2026
 last_updated: 2026-10-27
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - fi-income-tax
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Finland YEL and self-employed social insurance v1.6

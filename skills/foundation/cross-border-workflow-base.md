@@ -17,8 +17,8 @@ depends_on:
   - eu-directives-cross-border
   - oecd-model-treaty-defaults
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
 ---
 
 # Cross-Border Workflow Base — Master Multi-Jurisdiction Orchestrator

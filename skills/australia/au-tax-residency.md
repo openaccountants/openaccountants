@@ -5,11 +5,9 @@ version: 1.1
 jurisdiction: AU
 tax_year: 2025
 last_updated: 2026-09-27
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # AU Tax Residency

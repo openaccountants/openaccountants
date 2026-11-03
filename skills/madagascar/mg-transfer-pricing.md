@@ -4,9 +4,9 @@ description: "Madagascar 2026 related-party arm length review, disclosure, full-
 jurisdiction: MG
 category: transfer-pricing
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: 1.1
+tier: 2
 ---
 
 # Madagascar transfer pricing: annual disclosure and documentation scope v1.1

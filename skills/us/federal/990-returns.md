@@ -4,11 +4,10 @@ description: "Form 990 (full return) in the United States: how I do it"
 jurisdiction: US
 tax_year: 2025
 last_updated: 2026-08-10
-authored_by: Anthony Bandura
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Anthony Bandura"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # 990  Returns

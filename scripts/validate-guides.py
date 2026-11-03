@@ -203,6 +203,23 @@ def check_staleness(fields, today):
     return "; ".join(problems) or None
 
 
+def body_unchanged_vs_main(rel, text):
+    """True when only the frontmatter changed against origin/main.
+
+    A relabel (who approved a skill) must not fail on content checks the
+    content itself predates: those stay warnings until the body is edited.
+    """
+    try:
+        old = subprocess.run(
+            ["git", "show", f"origin/main:{rel}"],
+            cwd=REPO_ROOT, capture_output=True, text=True, check=True,
+        ).stdout
+    except Exception:  # new file, or no git: treat as changed
+        return False
+    strip = lambda t: re.sub(r"\A---\n.*?\n---\n", "", t, count=1, flags=re.S)
+    return strip(old) == strip(text)
+
+
 def changed_files_vs_main():
     """Files changed vs origin/main (PR mode). Empty list = nothing relevant."""
     import subprocess
@@ -520,12 +537,15 @@ def check_guides(bi, errors, warnings, only_files=None):
         frontmatter = skill_checks.read_frontmatter(text)
         scope = skill_checks.scope_of(rel, frontmatter)
         results = skill_checks.run_checks(rel, text, frontmatter)
+        content_untouched = only_files is not None and body_unchanged_vs_main(rel, text)
         for letter, name, _func in skill_checks.CHECKS + skill_checks.LESSON_CHECKS:
             problems = results[name]
             if not problems:
                 continue
             message = f"{rel}: ({letter}) {name}: {'; '.join(problems)}"
-            if only_files is not None and scope == "tax" and name in PR_ERROR_CHECKS:
+            label_check = name in ("tier_honest", "reviewed_on")
+            if (only_files is not None and scope == "tax" and name in PR_ERROR_CHECKS
+                    and (label_check or not content_untouched)):
                 errors.append(message)
             else:
                 check_counts[f"({letter}) {name}"] += 1

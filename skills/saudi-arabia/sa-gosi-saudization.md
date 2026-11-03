@@ -4,12 +4,10 @@ description: ALWAYS read this skill before touching any Saudi Arabia employer co
 jurisdiction: SA
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: Mehran Habib, CA
-reviewed_by: Mehran Habib
-review_status: current
-trust_label: Checked by Mehran Habib
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Mehran Habib"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # SA Gosi Saudization

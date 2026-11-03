@@ -5,14 +5,11 @@ version: 2.3
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-24
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # UK Income Tax for individuals: the SA100 Self Assessment return (2026-27)

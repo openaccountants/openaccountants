@@ -15,15 +15,14 @@ version: 1.0
 jurisdiction: AU
 tax_year: 2026
 last_updated: 2026-09-27
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
 depends_on:
   - australia-payroll
   - au-super-guarantee
 category: payroll
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # AU Working Holiday Makers

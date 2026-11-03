@@ -4,10 +4,9 @@ description: Test Belarus controlled transactions and prepare 2026 arm's-length 
 jurisdiction: BY
 category: transfer-pricing
 tax_year: 2026
-tier: 2
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 last_updated: 2026-10-30
 version: 0.1
+tier: 2
 ---
 
 # Belarus transfer pricing, 2026 v0.1

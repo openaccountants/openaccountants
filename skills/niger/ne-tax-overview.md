@@ -4,12 +4,10 @@ description: "Niger tax overview for 2026 intake and evidence routing, separatin
 jurisdiction: NE
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 0.1
+tier: 2
 ---
 
 # Niger tax overview and intake routing v0.1

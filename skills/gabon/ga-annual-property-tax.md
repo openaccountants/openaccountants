@@ -6,9 +6,9 @@ jurisdiction: GA
 category: international
 tax_year: 2026
 tax_year_notes: "2026 partial research draft; enacted CFU text read, full law chain, commencement and zoning unresolved"
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Gabon annual property tax v0.1

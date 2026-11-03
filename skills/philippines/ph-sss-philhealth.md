@@ -5,14 +5,13 @@ version: 1.0
 jurisdiction: PH
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: Jonathan I. Ruiz, CPA
-review_status: current
-trust_label: Checked by Jonathan I. Ruiz, CPA
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Jonathan I. Ruiz"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # PH Sss Philhealth

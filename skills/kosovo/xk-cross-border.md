@@ -16,10 +16,9 @@ description: >
 jurisdiction: XK
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-30
 version: 0.2
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+tier: 2
 ---
 
 # Kosovo cross-border business income v0.2

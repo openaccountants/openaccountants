@@ -5,13 +5,11 @@ version: "0.15"
 jurisdiction: MD
 tax_year: 2026
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - social-contributions-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Moldova social contributions and medical insurance, 2026 v0.15

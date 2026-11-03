@@ -4,11 +4,10 @@ description: "Setting up a company in Kenya from abroad: how I do it"
 jurisdiction: KE
 tax_year: 2025
 last_updated: 2026-07-22
-authored_by: Julian Njoroge Maina, CPA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Julian Njoroge Maina"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Setting up a company in Kenya from abroad: how I do it

@@ -4,8 +4,8 @@ description: >
   Use this skill whenever asked about Colombian income tax for self-employed individuals (trabajadores independientes / personas naturales). Trigger on phrases like "declaración de renta", "renta personas naturales", "Formulario 210", "cédula general", "UVT", "retención en la fuente", "renta presuntiva", "DIAN", "NIT Colombia", "deducciones Colombia", "rentas exentas", "income tax Colombia", or any question about filing or computing income tax for a self-employed or independent worker in Colombia. This skill covers cédula general progressive rates (0-39%), UVT-based thresholds, the 40%/5,040 UVT cap on exemptions and deductions, renta presuntiva, retención en la fuente, social security for independents, and DIAN filing. ALWAYS read this skill before touching any Colombian income tax work.
 version: 2.0
 jurisdiction: CO
-tier: 2
 last_updated: 2026-06-12
+tier: 2
 ---
 
 # Colombian Income Tax — Trabajador Independiente / Persona Natural (Renta) v2.0

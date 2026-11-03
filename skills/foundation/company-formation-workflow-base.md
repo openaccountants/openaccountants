@@ -4,8 +4,8 @@ description: Universal company formation and entity selection workflow base that
 version: 1.0
 category: foundation
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
 ---
 
 # Company Formation Workflow Base Skill v1.0

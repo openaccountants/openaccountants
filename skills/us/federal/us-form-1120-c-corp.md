@@ -4,13 +4,11 @@ description: Tier 2 US federal content skill for preparing Form 1120 — the US 
 jurisdiction: US
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: James Wallach
-reviewed_by: Christopher Aryee
-review_status: current
-trust_label: Checked by Christopher Aryee
 source_checked: 2026-10-17
-tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Christopher Aryee"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # US Form 1120 C Corp

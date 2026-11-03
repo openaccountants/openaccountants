@@ -6,10 +6,8 @@ jurisdiction: GI
 category: international
 tax_year: 2026
 tax_year_notes: "2026 compliance guidance for fiscal years from 31 December 2023; historical deadlines remain explicitly dated; no claim that all 2026 OECD calculation inputs are implemented."
-tier: 2
 last_updated: 2026-10-31
 version: 0.3
-verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/1992s016/1992s016(23-03-26).pdf"
     title: "Allowances Rules 1992, rules 3(55) and 3AA, 23 March 2026 consolidation"
@@ -38,6 +36,7 @@ sources:
   - url: "https://tax.egov.gi/Downloads/GMTA1_Form_June2026.pdf"
     title: "ITO Form GMTA1 and payment notes, June 2026"
     as_of: "2026-10-31"
+tier: 2
 ---
 
 # Gibraltar global minimum tax v0.3

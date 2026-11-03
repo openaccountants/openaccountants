@@ -4,9 +4,9 @@ description: "Builds a Liberia transfer-pricing working paper for 2026 related-p
 jurisdiction: LR
 category: transfer-pricing
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Liberia Transfer Pricing v0.1

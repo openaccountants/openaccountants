@@ -17,12 +17,10 @@ description: >
 jurisdiction: "NO"
 category: payroll
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-30
 version: 0.4
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Norway employer payroll (2026) v0.4

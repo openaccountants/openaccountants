@@ -4,10 +4,8 @@ description: How an Australian individual requests or receives an amendment to a
 jurisdiction: AU
 tax_year: 2026
 last_updated: 2026-09-27
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Amending an individual income tax return in Australia

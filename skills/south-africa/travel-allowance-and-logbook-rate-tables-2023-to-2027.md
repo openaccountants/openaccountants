@@ -3,11 +3,10 @@ name: travel-allowance-and-logbook-rate-tables-2023-to-2027
 description: The SARS fixed cost table and prescribed rate per kilometre, keyed by year of assessment 2023 to 2027, with the method for a deemed-cost travel claim.
 jurisdiction: ZA
 last_updated: 2026-09-02
-authored_by: Brandon Iverach
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Brandon Iverach"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # South Africa — Travel Allowance and Logbook Rate Tables

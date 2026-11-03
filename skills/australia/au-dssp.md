@@ -15,14 +15,13 @@ version: 0.2
 jurisdiction: AU
 tax_year: 2026
 last_updated: 2026-10-23
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
 depends_on:
   - workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Australia Dividend Substitution Share Plans (DSSP) v0.2

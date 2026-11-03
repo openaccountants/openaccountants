@@ -5,13 +5,11 @@ version: 2.5
 jurisdiction: DE
 tax_year: 2026
 last_updated: 2026-10-29
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - de-einkommensteuer-freelancer
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # German income tax prepayments 2026 (Einkommensteuer-Vorauszahlungen)

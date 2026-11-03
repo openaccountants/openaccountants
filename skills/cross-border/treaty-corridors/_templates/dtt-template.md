@@ -11,11 +11,10 @@ description: >
   so that list_skills can find it for template-creation workflows.
 jurisdiction: GLOBAL
 tax_year: 2025
-tier: 2
 last_updated: 2026-07-12
 version: 0.1
 depends_on: []
-verified_by: pending
+tier: 2
 ---
 
 # [Country A] ↔ [Country B] Double Tax Treaty (DTT) Summary

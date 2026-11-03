@@ -5,11 +5,9 @@ version: 1.2
 jurisdiction: MT
 tax_year: 2026
 last_updated: 2026-10-24
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 category: tax-optimization
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Malta Tax Optimization

@@ -4,13 +4,11 @@ description: "Prepare a source-based Mauritania research file for entity choice 
 jurisdiction: MR
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
 version: 0.2
 tax_year_notes: "2026 research draft; cited historical baseline and selected later replacements; operative amendment chain incomplete"
+tier: 2
 ---
 
 # Mauritania Company Formation v0.2

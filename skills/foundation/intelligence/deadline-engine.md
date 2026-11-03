@@ -5,12 +5,11 @@ version: 0.4
 jurisdiction: GLOBAL
 tax_year: 2025
 last_updated: 2026-10-31
-review_status: pending_review
 depends_on:
   - workflow-base
 category: intelligence
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Deadline Engine

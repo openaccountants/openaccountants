@@ -4,9 +4,8 @@ description: Ceasing Australian tax residency triggers one of tax's strangest de
 jurisdiction: AU
 tax_year: 2025
 last_updated: 2026-09-26
-review_status: pending_review
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Leaving Australia: residency, the CGT departure choice, and what follows you

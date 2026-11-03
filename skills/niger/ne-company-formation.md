@@ -4,12 +4,10 @@ description: "Niger company formation and entity choice for 2026 intake, coverin
 jurisdiction: NE
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: formation
 version: 0.1
+tier: 2
 ---
 
 # Niger company formation and entity choice v0.1

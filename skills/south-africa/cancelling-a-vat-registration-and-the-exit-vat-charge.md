@@ -3,11 +3,10 @@ name: cancelling-a-vat-registration-and-the-exit-vat-charge
 description: The threshold rose to R2.3 million on 1 April 2026, so many vendors can now deregister — but section 8(2) deems a supply of everything still on hand, and the exit charge decides whether it is worth doing.
 jurisdiction: ZA
 last_updated: 2026-09-02
-authored_by: Brandon Iverach
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Brandon Iverach"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # South Africa — Cancelling a VAT Registration

@@ -5,14 +5,11 @@ version: 1.0
 jurisdiction: IN
 tax_year: 2026
 last_updated: 2026-10-17
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - in-income-tax
 category: crypto
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # India Crypto and Virtual Digital Asset Tax

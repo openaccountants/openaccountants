@@ -4,12 +4,10 @@ description: "Guinea tax routing and cross-workpaper control for 2026. Use it be
 jurisdiction: GN
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: orchestrator
 version: 1.1
+tier: 2
 ---
 
 # Guinea tax routing and workpaper controls v1.1

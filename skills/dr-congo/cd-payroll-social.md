@@ -4,13 +4,11 @@ description: "Prepare a DR Congo employer payroll and CNSS research workpaper fo
 jurisdiction: CD
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: payroll
 version: 1.0
 tax_year_notes: "2026 source-bound research only; carried-law, implementation and currentness holds remain. No filing approval or complete-domain claim."
+tier: 2
 ---
 
 # DR Congo payroll and CNSS: employer research workpaper v1.0

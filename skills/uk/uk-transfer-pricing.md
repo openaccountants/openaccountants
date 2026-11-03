@@ -5,16 +5,13 @@ version: 2.0
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-23
-authored_by: OpenAccountants team
-reviewed_by: pending
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - transfer-pricing-workflow-base
 category: international
-tier: 2
-verified_by: pending
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "James Power"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # UK transfer pricing (TIOPA 2010 Part 4 and Part 4A), 2026

@@ -5,14 +5,13 @@ version: 2.4
 jurisdiction: GB
 tax_year: 2026
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-verified_by: pending
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "James Power"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # UK Student Loan Repayment

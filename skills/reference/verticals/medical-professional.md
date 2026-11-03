@@ -4,8 +4,8 @@ description: Industry vertical for medical and healthcare professionals in priva
 version: 1.0
 category: vertical
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
 ---
 
 # Medical Professional Vertical Skill v1.0

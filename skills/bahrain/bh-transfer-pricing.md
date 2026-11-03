@@ -17,10 +17,9 @@ description: >
 jurisdiction: BH
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-29
 version: 0.1
-trust_label: Built by Michael Cutajar and the OpenAccountants team
+tier: 2
 ---
 
 # Bahrain transfer pricing v0.1

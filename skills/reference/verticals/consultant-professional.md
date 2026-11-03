@@ -4,8 +4,8 @@ description: Industry vertical for professional service providers including mana
 version: 1.0
 category: vertical
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
 ---
 
 # Consultant & Professional Services Vertical Skill v1.0

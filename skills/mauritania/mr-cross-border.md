@@ -4,10 +4,10 @@ description: "Prepare a source-based Mauritania research file for nonresident PE
 jurisdiction: MR
 tax_year: 2026
 last_updated: 2026-11-01
-tier: 2
 category: cross-border
 version: 0.2
 tax_year_notes: "2026 research draft; cited historical baseline and selected later replacements; operative amendment chain incomplete"
+tier: 2
 ---
 
 # Mauritania Cross-border Tax v0.2

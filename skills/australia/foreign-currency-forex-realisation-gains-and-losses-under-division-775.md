@@ -3,11 +3,10 @@ name: foreign-currency-forex-realisation-gains-and-losses-under-division-775
 description: Identify Division 775 forex realisation events, calculate Australian dollar gains and losses, and check exclusions and account elections.
 jurisdiction: AU
 last_updated: 2026-09-08
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Foreign currency gains and losses under Division 775

@@ -16,11 +16,9 @@ description: >
 jurisdiction: FO
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-28
 version: 0.6
-verified_by: pending
-review_status: pending_review
+tier: 2
 ---
 
 # Faroe Islands corporate income tax v0.6

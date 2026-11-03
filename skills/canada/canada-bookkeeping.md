@@ -5,14 +5,13 @@ version: 1.0
 jurisdiction: CA
 tax_year: 2025
 last_updated: 2026-07-13
-reviewed_by: Khushboo Talreja, CPA
-review_status: current
-trust_label: Checked by Khushboo Talreja, CPA
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
-tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Khushboo Talreja"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Canada Bookkeeping

@@ -4,12 +4,10 @@ description: Florida discretionary sales surtax rates for all 67 counties (CY202
 jurisdiction: US-FL
 tax_year: 2026
 last_updated: 2026-07-13
-authored_by: Rob Hoffman, EA
-reviewed_by: Rob Hoffman
-review_status: current
-trust_label: Checked by Rob Hoffman
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Rob Hoffman"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Florida Discretionary Sales Surtax — by County (2026)

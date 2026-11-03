@@ -5,14 +5,13 @@ version: 0.1
 jurisdiction: PE
 tax_year: 2026
 last_updated: 2026-07-13
-reviewed_by: A licensed accountant (name withheld at their request)
-review_status: current
-trust_label: Checked by a licensed accountant (name withheld at their request)
 depends_on:
   - payroll-workflow-base
 category: payroll
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Maria Clemencia Valverde Rios"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Peru Payroll

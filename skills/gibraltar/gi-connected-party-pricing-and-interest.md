@@ -5,14 +5,13 @@ description: >
 jurisdiction: GI
 category: transfer-pricing
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 version: "0.9"
-verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Gibraltar Income Tax Act 2010: 23 March 2026 consolidation, sections 22, 40, 42–43 and Schedule 4"
     as_of: "2026-10-28"
+tier: 2
 ---
 
 # Gibraltar: connected-party pricing and interest restrictions

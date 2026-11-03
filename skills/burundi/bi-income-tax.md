@@ -4,13 +4,11 @@ description: "Determine how an individual’s Burundi income is classified befor
 jurisdiction: BI
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: income-tax
 version: 1.3
 tax_year_notes: "Calendar 2026; modified 2025/26 budget effective 1 January and 2026/27 budget effective 1 July. Partial scope and unresolved operational details are stated in Sources. Accountant review pending."
+tier: 2
 ---
 
 # Burundi: individual business and rental income for 2026 v1.3

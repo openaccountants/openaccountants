@@ -5,12 +5,10 @@ jurisdiction: MW
 tax_year: 2026
 tax_year_notes: "Intended 2026 research draft; Act 3/2026 read and relevant effects identified; appointed commencement chain unresolved; live use held."
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 1.3
+tier: 2
 ---
 
 # Malawi individual income tax: current salary bands v1.3

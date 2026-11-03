@@ -6,9 +6,9 @@ jurisdiction: NE
 category: international
 tax_year: 2026
 tax_year_notes: "Ordinary buyer-chosen cash payments from 21 August 2026; special supplier-requested cash calculation and earlier periods excluded."
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Niger cash-payment tax v0.1

@@ -10,13 +10,10 @@ version: 1.0
 jurisdiction: EG-SA
 tax_year: 2025
 last_updated: 2026-08-02
-authored_by: Ahmed Hassan
-review_status: pending_review
-trust_label: Accountant-authored
 depends_on:
   - eg-corporate-tax
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Egypt ↔ Saudi Arabia Double Tax Treaty (DTT) Summary

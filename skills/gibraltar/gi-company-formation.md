@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: formation
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 version: "0.7"
-verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/proceeds-of-crime/2017s122/2017s122(15-07-26).pdf"
     title: "UBO, Nominators and Appointors Regulations 2017, 15 July 2026 consolidation"
@@ -46,6 +44,7 @@ sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf"
     title: "Gibraltar: Companies Act 2014: consolidation dated 1 August 2025"
     as_of: "2026-10-22"
+tier: 2
 ---
 
 # Gibraltar: formation of a private company limited by shares

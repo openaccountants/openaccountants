@@ -6,9 +6,9 @@ jurisdiction: SO
 category: international
 tax_year: 2026
 tax_year_notes: "2026 preparation from enacted Act 37 statutory baseline; Regulation 0142-2025 read; postponement notices and circulars not checked."
-tier: 2
 last_updated: 2026-11-01
 version: 0.1
+tier: 2
 ---
 
 # Somalia cross-border residence working paper v0.1

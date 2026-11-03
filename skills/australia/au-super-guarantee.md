@@ -6,12 +6,11 @@ version: 3.3
 jurisdiction: AU
 tax_year: 2026
 last_updated: 2026-09-12
-authored_by: Ryan Duguid
-review_status: pending_review
-trust_label: Accountant-authored
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Ryan Duguid"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Australia Superannuation Guarantee (SG) -- Sole Trader & Employer Skill v3.3

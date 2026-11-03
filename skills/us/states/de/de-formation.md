@@ -4,11 +4,8 @@ description: Tier 2 Delaware content skill for entity formation covering tax yea
 jurisdiction: US-DE
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Delaware entity formation: LLC or corporation, fees, annual taxes and first-year filings (2026)

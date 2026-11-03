@@ -9,11 +9,11 @@ description: >
 version: 1.0
 jurisdiction: KZ
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: international
 depends_on:
   - income-tax-workflow-base
+tier: 2
 ---
 
 # Kazakhstan Tax Optimization (Self-Employed) — Skill v1.0

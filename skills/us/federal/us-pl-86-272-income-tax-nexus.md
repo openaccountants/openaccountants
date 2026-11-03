@@ -4,11 +4,8 @@ description: Tier 2 US federal content skill for Public Law 86-272 (15 USC §§3
 jurisdiction: US
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # P.L. 86-272 and state income tax nexus for out-of-state sellers

@@ -4,11 +4,8 @@ description: Tier 2 California content skill for Form 568 — the $800 annual mi
 jurisdiction: US-CA
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # California LLC annual tax and LLC fee: Form 3522, Form 3536 and Form 568 (tax year 2026)

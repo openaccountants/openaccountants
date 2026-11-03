@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: international
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-31
 version: "0.5"
-verified_by: pending
 sources:
   - url: "https://www.gov.uk/government/publications/gibraltar-tax-treaties/2019-uk-gibraltar-double-taxation-agreement-in-force"
     title: "UK–Gibraltar agreement, Articles 1, 4, 22, 28 and 29"
@@ -16,6 +14,7 @@ sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/income-tax/2010-21/2010-21(23-03-26).pdf"
     title: "Gibraltar Income Tax Act 2010: consolidation dated 23 March 2026, section 37 and Schedule 4 paragraphs 8A/18A"
     as_of: "2026-10-28"
+tier: 2
 ---
 
 # Gibraltar: foreign-tax relief, UK coordination and corporate exit working papers

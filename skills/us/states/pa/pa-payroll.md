@@ -4,11 +4,8 @@ description: Tier 2 Pennsylvania content skill for employer payroll compliance c
 jurisdiction: US-PA
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Pennsylvania employer payroll: PA withholding, local EIT (Act 32), LST, unemployment compensation, minimum wage and new hires (2026, with 2025 notes)

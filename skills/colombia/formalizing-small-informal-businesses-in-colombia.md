@@ -4,11 +4,10 @@ description: Formalizing Small Informal Businesses in Colombia
 jurisdiction: CO
 tax_year: 2025
 last_updated: 2026-07-25
-authored_by: Mauro Escudero, CPA
-review_status: pending_review
-trust_label: Accountant-authored
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Mauro Escudero"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # Formalizing Small Informal Businesses in Colombia

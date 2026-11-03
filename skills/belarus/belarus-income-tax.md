@@ -5,13 +5,11 @@ version: 0.2
 jurisdiction: BY
 tax_year: 2026
 last_updated: 2026-10-30
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - income-tax-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Belarus individual and business income tax, 2026 v0.2

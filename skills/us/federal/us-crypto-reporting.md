@@ -4,13 +4,11 @@ description: US federal cryptocurrency REPORTING & disclosure — Form 1040 digi
 jurisdiction: US
 tax_year: 2025
 last_updated: 2026-07-13
-authored_by: James Wallach
-reviewed_by: Christopher Aryee
-review_status: current
-trust_label: Checked by Christopher Aryee
 source_checked: 2026-10-16
-tier: 1
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "Christopher Aryee"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # US Crypto Reporting

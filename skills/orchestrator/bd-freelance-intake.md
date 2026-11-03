@@ -4,9 +4,9 @@ description: ALWAYS USE THIS SKILL when a user asks for help with their Banglade
 version: 0.1
 jurisdiction: BD
 tax_year: 2026
-tier: 2
 last_updated: 2026-06-12
 category: orchestrator
+tier: 2
 ---
 
 # Bangladesh Self-Employed Intake — Orchestrator v0.1

@@ -4,10 +4,9 @@ description: "Use this skill for North Macedonia related-party pricing and docum
 jurisdiction: MK
 category: transfer-pricing
 tax_year: 2026
-tier: 2
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 last_updated: 2026-10-30
 version: 0.1
+tier: 2
 ---
 
 # North Macedonia transfer pricing v0.1

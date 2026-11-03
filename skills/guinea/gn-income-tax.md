@@ -4,12 +4,10 @@ description: "Guinea individual income-tax routing and ordinary monthly salary-t
 jurisdiction: GN
 tax_year: 2026
 last_updated: 2026-11-01
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
 category: international
 version: 1.1
+tier: 2
 ---
 
 # Guinea individual income tax and monthly ITS v1.1

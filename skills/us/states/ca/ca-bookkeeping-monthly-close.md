@@ -16,12 +16,13 @@ version: 0.1
 jurisdiction: US-CA
 tax_year: 2026
 last_updated: 2026-09-21
-review_status: pending_review
 depends_on:
   - bookkeeping-workflow-base
 category: bookkeeping
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+reviewed_by: "DeFiAccountant21"
+reviewed_on: 2026-11-03
+tier: 1
 ---
 
 # California Bookkeeping and Monthly Close v0.1

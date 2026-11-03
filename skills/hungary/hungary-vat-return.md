@@ -5,11 +5,8 @@ version: 2.0
 jurisdiction: HU
 tax_year: 2026
 last_updated: 2026-10-16
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Hungary VAT return (ÁFA, form 2665): classifying a period and filling in the return

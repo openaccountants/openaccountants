@@ -4,8 +4,8 @@ description: Industry vertical for e-commerce sellers including Amazon FBA, Shop
 version: 1.0
 category: vertical
 jurisdiction: GLOBAL
-tier: 2
 last_updated: 2026-06-12
+tier: 2
 ---
 
 # E-commerce Seller Vertical Skill v1.0

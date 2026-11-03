@@ -14,11 +14,10 @@ description: >
   Liechtenstein. Out of scope: benchmarks, APAs, MAP and public CbC reporting.
 jurisdiction: LI
 category: transfer-pricing
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-30
 version: 0.4
+tier: 2
 ---
 
 # Liechtenstein transfer pricing v0.4

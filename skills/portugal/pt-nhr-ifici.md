@@ -5,14 +5,11 @@ version: 1.1
 jurisdiction: PT
 tax_year: 2026
 last_updated: 2026-10-24
-authored_by: Michael Cutajar and the OpenAccountants team
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - pt-income-tax
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Portugal: IFICI and the old NHR regime, for 2026

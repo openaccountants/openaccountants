@@ -5,10 +5,8 @@ description: >
 jurisdiction: GI
 category: financial-statements
 tax_year: 2026
-tier: 2
 last_updated: 2026-10-22
 version: 0.3
-verified_by: pending
 sources:
   - url: "https://www.gibraltarlaws.gov.gi/legislations/companies-act-2014-3106"
     title: "Companies Act current-version index, last update 1 August 2025"
@@ -28,6 +26,7 @@ sources:
   - url: "https://www.gibraltarlaws.gov.gi/uploads/legislations/companies/2014-19/2014-19(01-08-25).pdf"
     title: "Gibraltar: Companies Act: 1 August 2025"
     as_of: "2026-10-22"
+tier: 2
 ---
 
 # Gibraltar: company accounts, audit and annual reporting

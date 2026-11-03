@@ -5,13 +5,11 @@ version: 2.1
 jurisdiction: TR
 tax_year: 2026
 last_updated: 2026-10-31
-review_status: pending_review
-trust_label: Built by Michael Cutajar and the OpenAccountants team
 depends_on:
   - vat-workflow-base
 category: international
-tier: 2
 license: AGPL-3.0-or-later (code) / OpenAccountants Guide License v1.0 (content)
+tier: 2
 ---
 
 # Türkiye: VAT (katma değer vergisi, KDV) (2026) v2.1

@@ -7,9 +7,9 @@ category: transfer-pricing
 tax_year: 2026
 tax_year_notes: "2026-27"
 last_updated: 2026-11-02
-tier: 2
 depends_on:
   - ls-corporate-income-tax
+tier: 2
 ---
 
 # Lesotho transfer pricing: associates, section 113 adjustments and related rules (2026-27) v0.1

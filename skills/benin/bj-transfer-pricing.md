@@ -4,9 +4,9 @@ description: "Prepare a Benin cross-border related-party pricing and reporting s
 jurisdiction: BJ
 category: transfer-pricing
 tax_year: 2026
-tier: 2
 last_updated: 2026-11-01
 version: 0.2
+tier: 2
 ---
 
 # Benin transfer-pricing and reporting screen v0.2
