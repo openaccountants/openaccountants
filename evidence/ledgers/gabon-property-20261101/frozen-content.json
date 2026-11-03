@@ -1,0 +1,56 @@
+{
+  "accepted_eight_guide_head": "9f93faa2af8c970d0b12ad6ca54ebe93ae1bbc03",
+  "actual_full_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "status": "Frozen writer candidate, pending fresh independent property review",
+  "files": [
+    {
+      "path": "skills/gabon/ga-annual-property-tax.md",
+      "sha256": "3c9cbb6981f1098adfb52d1ba0d993093b4686443b41e267eb6efc8036d53d34"
+    },
+    {
+      "path": "skills/gabon/README.md",
+      "sha256": "24e27873c7a9a78b762d74cfabac7a043e1aaaccb2c55189fe1cabcdf98a4a50"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/README.md",
+      "sha256": "311dd819e82851d2e6e9077ac2799a7904c364b04e671ee98e87062e28f7dded"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/ga-annual-property-tax.md",
+      "sha256": "23c0a71d195db1b27d4c3e0d8f5344adccfdc8448ed7a721b6f129d8ff4108f4"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/instrument-search.md",
+      "sha256": "6494f4985a01f1551e97eabd7ce9ecd484764844f426f87a14c6df055788d67c"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/old-topic-destinations.json",
+      "sha256": "d34c561a5dd7c9a014de13c5eba4115449d19613ccbce23058dff0b81802184f"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/old-topics-reference.json",
+      "sha256": "44a60b7129c56cf5abe01835b8389b2830aa84408b33693481c75769151aa999"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/preservation.json",
+      "sha256": "e453fc99b51e00717618af964465f3ba3579f33083fc7876f61ca55b1eac39b6"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/rules.json",
+      "sha256": "690f14dcfc8a7a6ae3482d3aa64315eced715fc6458abbcc9ab5f5eb56208c04"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/sources.json",
+      "sha256": "d70263f01e554e418de6225a17d84ac58fb587f2e2f2d7aa5257efb0a89f4d1b"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/tariff-rows.json",
+      "sha256": "7f71ee99dadd278864b949f3b12f60fec02703172133e81ea8d8649a930f7c17"
+    },
+    {
+      "path": "evidence/ledgers/gabon-property-20261101/validate-evidence.py",
+      "sha256": "4d5a8215f24b9ce04971056bf6c97add47a54c794ce3e740cd9be3e6018ce7ee"
+    }
+  ],
+  "current_law_attestation": false
+}

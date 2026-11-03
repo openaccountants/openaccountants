@@ -1,0 +1,6 @@
+Candidate: eb07e603a6b3e299132abbed1b5200383af2e364
+Base: 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8
+Command: git diff --check 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8 eb07e603a6b3e299132abbed1b5200383af2e364
+
+
+Exit: 0

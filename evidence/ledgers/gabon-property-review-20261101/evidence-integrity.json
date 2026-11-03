@@ -1,0 +1,125 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "d97a852360076fe3d7a3666afb73b74dc041ef0ec9e2a47b5417fde9bcdcc14f"
+    },
+    {
+      "path": "all-18-cases.txt",
+      "sha256": "f2e5f103c3e377bb3633320511a5a064822b81a8b621e21874c60620b9042cc7"
+    },
+    {
+      "path": "changed-only-noindex.txt",
+      "sha256": "982ca369d0e48fddab45156550a8a48a3d1a5ccc4417a594dc5f3b5fb548ed5f"
+    },
+    {
+      "path": "committed-whitespace.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "every-quote-verdicts.json",
+      "sha256": "284f80ca19af35aaee9b22a0a1d8c2d36c55e2df483320757581d8c4454ebce5"
+    },
+    {
+      "path": "every-row-verdicts.json",
+      "sha256": "76276abe6e14316ff0755e07e1e6aed288012054dc293c380c838a592b82841f"
+    },
+    {
+      "path": "every-tariff-value-verdicts.json",
+      "sha256": "0bd2a465fb8e6936be35e0d5fa503bc6d642eccf95bafd4523db8286e5be7160"
+    },
+    {
+      "path": "findings.json",
+      "sha256": "1c3e7e7c4139baf999fef4f7db3750c5031d59460e5be9c1a841592832826156"
+    },
+    {
+      "path": "frozen-hashes.json",
+      "sha256": "10f448c0a30034a940bbf04556679af0bfa858dbcf2ea2ca7f7f466d543fff57"
+    },
+    {
+      "path": "independent-cases.json",
+      "sha256": "4725a93fb820695b2be8075edf9900918bbe36980af32aa1cc911fa0809bb7ed"
+    },
+    {
+      "path": "mechanical-checks.json",
+      "sha256": "b66fc443e8a04a6b10b073323d8a472466affcaa31e40c62b9a984dfc1edf01b"
+    },
+    {
+      "path": "operational-notes.json",
+      "sha256": "56051a3543dc47ce278fd5bcd1e6c3cecbb3193c1403234460e455aa3ab80d1c"
+    },
+    {
+      "path": "permitted-status-transitions.json",
+      "sha256": "7f54e058ab4b0c81867a95c80147835229434a16750ce18ba4326501783f9993"
+    },
+    {
+      "path": "preservation-verdicts.json",
+      "sha256": "d80a628cfe4b9f673c7deb6ea6db495de79f21a0551e5f4e63615c38f0cdffbe"
+    },
+    {
+      "path": "property-15-checks.txt",
+      "sha256": "acb38a6f0b8a4e31c3bc8f3083b8d358a4526e96b2b6203d260d9d3c8201f4ed"
+    },
+    {
+      "path": "review.py",
+      "sha256": "b21aeb3bf9e9ea88e16d46c36a1665f3ca30921df6380daddd5399a7844c3959"
+    },
+    {
+      "path": "source-extracts/cgi-cfu-108-114.txt",
+      "sha256": "1465bbeea1a2a19c064bc5dc61f941bc4b7a0248e984e66d670acd17f2f419ff"
+    },
+    {
+      "path": "source-extracts/cgi-penalties-228-229.txt",
+      "sha256": "b8338d9334896ff3c6800737b0baf680722bb8442fb3d67c7730f33e34717155"
+    },
+    {
+      "path": "source-extracts/lf-cfu-9-16.txt",
+      "sha256": "49bbe2ac4892d17181e65ff9aa04458aac8445dd4188bd0a0b85965baeed6b5f"
+    },
+    {
+      "path": "source-extracts/lf-final.txt",
+      "sha256": "e7b4cb0d89e52a38c7fb7c0d747e836bb28590273ec3925c69ea2b82d45db02b"
+    },
+    {
+      "path": "source-extracts/lf-identity.txt",
+      "sha256": "7d81dd3234b0277cd52643590617e4be3209cfdd0c12cd8d3334cdf646c6a7ba"
+    },
+    {
+      "path": "source-extracts/lfr-10-13.txt",
+      "sha256": "d9d49b8c7d4ff1154bfd8a1a7d8dbf5da8f982bb4c2f669c631fd3d0f4ce8960"
+    },
+    {
+      "path": "source-extracts/lfr-final.txt",
+      "sha256": "2a2638d0e28de4d2d796fb1627b4a4bd56ffcf3de0bc0a0ea9a77ac31687be4b"
+    },
+    {
+      "path": "source-extracts/lfr-identity.txt",
+      "sha256": "852bb536845d7d0cec218c497c1b80a1dcffba4f00a9e97bc7db30e68a32fe3c"
+    },
+    {
+      "path": "source-extracts/reviewer-CGI-scope.txt",
+      "sha256": "b983722c3e30bcc3d9bd74deed52e2216b6da1cfceb93552fe5b5dcfdf3bb02f"
+    },
+    {
+      "path": "source-extracts/reviewer-LF-scope.txt",
+      "sha256": "2e2ca6e1dd07e95a3e7f26b323e8db82846c1dc64115326d846195118ba41019"
+    },
+    {
+      "path": "source-extracts/reviewer-LFR-scope.txt",
+      "sha256": "0a0e04a07f9014ac7264bc807d8c331a24fa0eca61b80a4741b99bb397a2ad22"
+    },
+    {
+      "path": "source-verdicts.json",
+      "sha256": "cddf900c2f00b0f6eee3f8525040e6c6a152e8dbd894b580566d6f82f18cfeca"
+    },
+    {
+      "path": "strict-full-mergebase.txt",
+      "sha256": "e9a64ce889df5ce3b67b5a6e847e70f6f778e95117c2afb9b4f6316fd784c70e"
+    },
+    {
+      "path": "tariff-intervals-and-held-row.json",
+      "sha256": "d0474b87a697f7641a7204dae518777039a85c775bfc14ff9c239a323e820b83"
+    }
+  ],
+  "count": 30
+}

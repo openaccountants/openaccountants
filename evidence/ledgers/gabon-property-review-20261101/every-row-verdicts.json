@@ -1,0 +1,1210 @@
+[
+  {
+    "id": "P-IDENTITY",
+    "writer_rule_sha256": "9d38d2013f96c608d8f65a3f855fd371184d15fbe5e5a7dd96d39b6de27f67a8",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Read both law identities, arts1-4 and final implementation/publication/promulgation provisions. They establish enactment and budget scope, not a complete chain or first CFU assessment date. Currency hold is necessary and retained.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "Law 041/2025 arts1-4,78-79; decree0536/PR",
+        "pages": [
+          3,
+          71,
+          72
+        ]
+      },
+      {
+        "source_id": "LFR",
+        "act_article": "Law002/2026 arts1-4,101-102; decree0322/PR",
+        "pages": [
+          2,
+          86
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-SCOPE",
+    "writer_rule_sha256": "54db3e4902432a686bf02b3bf5c90fde87c631584ad3c057d4bc3652aa95ea06",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Full rewritten278-279 covers built/unbuilt national property, unfinished/temporary structures and immovables by destination, with urban-perimeter definitions. Liability is then qualified by284, not inferred for all occupiers.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI278-279",
+        "pages": [
+          9,
+          10
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-LIABLE",
+    "writer_rule_sha256": "b0bfa0f9376b9c0158395800f5f6957d1b043751128948d31190c9a290b85f3d",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Read all284(1)-(4) and285. January snapshot, title definition, built-only substituted rights, company balance sheet, commercial third-party use and co-owners are retained. Situs is commune/department.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI284-285",
+        "pages": [
+          10
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-JULY",
+    "writer_rule_sha256": "4d34543dcd90e1ecde18fa8a11744bbc6d3769d2852f09982d326cd47d915225",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Actual July284(1) deletes immatriculee but retains titre foncier and explicit rest unchanged. Guide does not turn this into universal untitled-occupant liability or repeal284(2)-(4).",
+    "references_checked": [
+      {
+        "source_id": "LFR",
+        "act_article": "CGI284(1)",
+        "pages": [
+          10
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-BOUNDARY",
+    "writer_rule_sha256": "48ec3812a389ee2eabc009bd41d5a85cbe49aaf89c59e15708414016d289dbc2",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Actual376-378 is a separate occupier charge. New Guide links accepted income/withholding/company/VAT owners and does not migrate their figures. Neighbouring TFH and July housing-fund provisions are not treated as CFU.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI376-378",
+        "pages": [
+          16
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-RATE",
+    "writer_rule_sha256": "909605f16780ca5591fccee6e070999b6adef9153892ab423607e6bd060ff311",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "15 percent and downward thousand rounding occur under legal-person heading. Individual tariff section is separate. No company final amount asserted while valuation interaction is held.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-COMPANY",
+    "writer_rule_sha256": "26acadec7fd8789f885a7f546b29858dd6947a0ee0b9523b25406cdf78cb7fa9",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "All289(1)-(3),290 and292 conditions read together with deleted291/293 and corporate heading.10 percent book value, more-than20 percent real-value trigger and5 percent built allowance match. Ambiguous real-value/rental-base interaction is expressly held.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI289-294",
+        "pages": [
+          12,
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-APPLICATION",
+    "writer_rule_sha256": "d22a974fb8227873f31ef660f65637937b523bb7f2b15ed42f23afd7e6e897ac",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "All288ter categories read: age>=60 and income<SMIG; weak-Gabonese social regime with income<SMIG; social housing<=30million; express application before30March; discretionary exemption/reduction with printed80percent limit. No invented SMIG or automatic award.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI288ter",
+        "pages": [
+          12
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-ZONE",
+    "writer_rule_sha256": "e367f9128fcf8a39501d53f87332d3681b4015ab5736ee02461812c26e09f1fb",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Read294ter/quater and mandatory joint ministerial order after294quinquies. All four descriptions match; no parcel mapping or order is supplied. Zone descriptions are not used as actual allocation evidence.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294ter-quater-quinquies",
+        "pages": [
+          13,
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-VALUE",
+    "writer_rule_sha256": "0d830eb128d55de1d5573358d8ca3082565ff357f5f8be81cdb3a7e16da5b997",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Read source294ter market/acquisition wording against table construction/acquisition heading. Conflict held. Historical294 principal-residence rate is not silently imported into new split system.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294ter,294quinquies",
+        "pages": [
+          13
+        ]
+      },
+      {
+        "source_id": "CGI",
+        "act_article": "Historical294",
+        "pages": [
+          112
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-EXCESS-B",
+    "writer_rule_sha256": "5832e12fe21ca280e469b3aa4670b75bd40b4cff87bd1adbcd9c4aed75cc16a9",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Rendered malformed printed final row and read294sexies.1billion excess trigger exists, but algorithm/final row is not corrected or applied. Hold is proper.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies-sexies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-EXCESS-L",
+    "writer_rule_sha256": "9c30bd9c568b18ed90913948f02b8d3e32c265e6a1f4691256f8164e0280776a",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Read all294septies and excess paragraph.5000m2 boundary matches. No fabricated interpolation, fractional rounding or marginal algorithm.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-EXEMPT",
+    "writer_rule_sha256": "c55dab55589504dddb6d4410d53d2702babbc276144f16e1ecde8915f1d28986",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Full286(1)-(8)/rural paragraph read with284(3). Public ownership, reciprocity, concession qualification, ownership/use conditions, worship/public-utility purpose, roads/water and ground categories retained. Commercial-user override retained.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI286;284(3)",
+        "pages": [
+          10,
+          11
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-LAND-EXEMPT",
+    "writer_rule_sha256": "38d138d0a4d73c2b907a9945e3928e64c210ae4b2abe6a3bf41c98f7da1b5804",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Read286 ground and surrounding-land clauses:3x inside planned commercial/industrial district,5x elsewhere or outside communes; mine/quarry area; rural market gardens strictly<5ha within25km and exclusive use. Building itself not exempted by ground relief.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI286(7)-(8), ruralparagraph",
+        "pages": [
+          10,
+          11
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-NEW",
+    "writer_rule_sha256": "232cddf7d40b6e08e4015ddb6180d38b47ba64b2e663f52dbe4989c21c7fd243",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "All288 paragraphs read.5year/3year classes, furnished/holiday/pleasure exclusion from5year class, nextJanuary start, usable completion test, separate fractions and original-start change-of-use switch match.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI288",
+        "pages": [
+          11
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-AGRI-RELIEF",
+    "writer_rule_sha256": "f8e613de3fb2356320a7c4549626d89e3d8008ac390aaa2e66ea22ada415b385",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Full288bis1-9 read plus historical no-permit clause.5year building relief ex officio; rural3/4/5year durations/start and livestock/selected-crop opinions match. Declaration/self-reference defect and special-deadline gap held; old4month no-permit clause not reimported.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI288bis",
+        "pages": [
+          11,
+          12
+        ]
+      },
+      {
+        "source_id": "CGI",
+        "act_article": "Historical288bisA3",
+        "pages": [
+          110
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-AGRI-BASE",
+    "writer_rule_sha256": "ab0bed9ff57d34e5046fa088feb8eb173acbf751e138b2ef036c8c4f4397e58a",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "All294octies and following page read:6000/500/150/150/150 perha market-value inputs, second-category factory condition and annual territorial authority valuation match. No tax-perha or final-liability formula invented.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294octies",
+        "pages": [
+          14,
+          15
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-DESTRUCTION",
+    "writer_rule_sha256": "1cee535420406dd3095c48e5df79626d04ee10e5a2a1b9b6d818a85b198a98f4",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Read full new295 versus historical295.3month request after destruction/completed demolition; relief begins month after destruction/start demolition. Historical involuntary6month vacancy provision is absent from replacement and is not carried forward.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI295",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "source_id": "CGI",
+        "act_article": "Historical295",
+        "pages": [
+          113
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-FILE",
+    "writer_rule_sha256": "e56c50b7eb04ddcb74f7185da08b1f521457d548f3eff1d1c78dc136711b4f2c",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Read296,296bis,297 together.30March declaration, priorJanuary notification, justifications/payment/fiche, territorially competent collector and spontaneous currentyear payment match; regularisation and absent-declaration appraisal match.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI296-297",
+        "pages": [
+          15
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-MANAGER",
+    "writer_rule_sha256": "936eeddf88111a759a341728e655dbdba868b7cd03b4c94dbf62197c4b24c491",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Read full298 and298bis.Identification applies to named instrument preparers; CFU withholding/remit relates to properties managed. Solidary co-owner payment liability retained; not confused with income withholding.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI298-298bis",
+        "pages": [
+          15
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-FILE-CHANGE",
+    "writer_rule_sha256": "e6759e03af2ca3fc6ed82e3c3c94727cced528fe42e4e058f8770e7720edf0c9",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Compared complete historical296-297 with complete replacements. New text does omit duplicate form/stamped returned-copy wording. Current portal/form/reference/receipt remains held and historical paper workflow not certified.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI296-297",
+        "pages": [
+          15
+        ]
+      },
+      {
+        "source_id": "CGI",
+        "act_article": "Historical296-297",
+        "pages": [
+          113,
+          114
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-CFU-SANCTION",
+    "writer_rule_sha256": "72ffbfd200ad7035660c70fc809c3f7a694813574855c23f409029decdc4736a",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Historical300 actual114 states50percent of evaded rights for284/298 noncompliance. Guide labels historical and holds currentness/cumulation; does not describe as universal late-payment rate.",
+    "references_checked": [
+      {
+        "source_id": "CGI",
+        "act_article": "Historical300",
+        "pages": [
+          114
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-PENALTY",
+    "writer_rule_sha256": "a603d146089cdcb09e9de71ec944276710bc7edb5f936180022f3ab65514a044",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Read fullP996-999 neighbours plus JulyP1000paras1and3. Adjustment-interest scope, DGE/CIME electronic-payment scope and noncumulation preserved in ledger. Guide routes general figures to accepted income owner and holds application; no universal property penalty invented.",
+    "references_checked": [
+      {
+        "source_id": "CGI",
+        "act_article": "P996-999",
+        "pages": [
+          228,
+          229
+        ]
+      },
+      {
+        "source_id": "LFR",
+        "act_article": "P1000paras1and3",
+        "pages": [
+          12,
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-NONRES",
+    "writer_rule_sha256": "b9fc37a13b259ad26de735609bf9f0a151ea08892dd79d1df06aae8abc052db2",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Full294bis includes resident/nonresident individuals and Gabon situs or convention allocation. Actual instrument required; no automatic foreign-property liability or treaty exemption claimed.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294bis",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B01",
+    "writer_rule_sha256": "3919e9dc6034bc9d54285432fdb5f55125b3da1ae4746f651a72e86e6587ddb8",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B02",
+    "writer_rule_sha256": "ce7827ad3e034ba2bebec043b1bcbc49c3f8398a9d4d30043d3d268839ce58ac",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B03",
+    "writer_rule_sha256": "2c31e50180ee4d60fc375dca928a0f416dc57c162e782d9fce36ce71cdef82fe",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B04",
+    "writer_rule_sha256": "fd6a4440d4ce695cfee5e078532b191b773b8337cb93f92983638626f8649754",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B05",
+    "writer_rule_sha256": "43df33ccada0d000d2edc6ad4f3f7b57ee069305004034b5595495417e9af782",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B06",
+    "writer_rule_sha256": "9d33f7c542228dc1266d71ddac0ec4df30de37c2d15e4f46bad38cf2a7acebae",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B07",
+    "writer_rule_sha256": "c6b01f7d1ce27ad922c35cbe9f39f1bad3618d84a172e2c5b3ecf5d6c7a68bc3",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B08",
+    "writer_rule_sha256": "fd1166523f2baa998ad5f1d2620d25adcb284ed08d4617e7092d0330f4d3d621",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B09",
+    "writer_rule_sha256": "e08812fc9489b4421fe564e1c419a89391c13f4be0830f6190aa0876ef02a561",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B10",
+    "writer_rule_sha256": "50721bf1b8dfd837647e1e9f39ac5cc560785e4b691ae8d039471273fbf0f12e",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B11",
+    "writer_rule_sha256": "dcbae163703022c40f7dcce3456f3c6e9f504e6f7353cd30a77529bbc8d2db9b",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B12",
+    "writer_rule_sha256": "e956d0e0484e5dbe4358bf4cde384a42d9968ffe5d8d9cf4a05fab84c8bec8f8",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B13",
+    "writer_rule_sha256": "15cc154304521ee6766d61a2191f8c8c198a750fde6399492fc94ec1bde840c6",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B14",
+    "writer_rule_sha256": "ba42a3f50ef7bc1f56fcdbb2df003d3c78c935f05c0433e2871257b65b987a39",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B15",
+    "writer_rule_sha256": "8341ed829e6061606a742ec40fca03eef056788807bf5dcac728b40d2c1e6c55",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B16",
+    "writer_rule_sha256": "a7d8dadaca97559bde7ea70003ab5209c609f699312d1e1b1d2c24b8cbfe2e68",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B17",
+    "writer_rule_sha256": "55881b520b704ebb83dbda4f74a5154a7eeca35083f90f8c9c11879cc1f883a9",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B18",
+    "writer_rule_sha256": "f796449fc9218c302c42d036b45db32c2bc1c71ed6cf20df5452985e927785f8",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B19",
+    "writer_rule_sha256": "feabf86417a4703028a3e370d6f7a4cd3bea95b8bfae2ab4e1175f1527ccd4d2",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B20",
+    "writer_rule_sha256": "7fcd160e44d521228d5a6534e15fc06f58a1d5b6df9c36f78191901a6e976b3d",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B21",
+    "writer_rule_sha256": "d72fdff1ca62ae3a16036d3e1a48215c3097541ef33b0ef39f6a3e036059e19d",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          13
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B22",
+    "writer_rule_sha256": "876f204429d873d19ee06b81d981d9dc0f78d05128abf805b78913aa5e9d6009",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B23",
+    "writer_rule_sha256": "01d116d19de782a14c19370e1c646a0c427427f13b938b3acd54b4c79c21dd27",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B24",
+    "writer_rule_sha256": "7cd6fe4f80790bc38242c59f5842495ff24b5886576bf5192beb23ce5f25f938",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B25",
+    "writer_rule_sha256": "f98448c3bd477ae066e1a7f2c49fbf9a9e339c69fc9d09a971f601329a2b1832",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B26",
+    "writer_rule_sha256": "6735e3b0d224fa91a9079462bcf25e76cc3f55a1b268dee9c3656fe1a97357f2",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B27",
+    "writer_rule_sha256": "7a19ab7d0ab8cba159d9b10079958c74c18517f8e92913d6b52ed7d85a7d345c",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-B28",
+    "writer_rule_sha256": "fb9ad7c7f96f0e9f0e82f7a7dd5bdbb41746f00f436079d3b30a4c45078d6d20",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L01",
+    "writer_rule_sha256": "a71017b712071323286e5c31ddc93b43535ac75a08482a561056f08e29a84b28",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L02",
+    "writer_rule_sha256": "944daddfb55f7d228fe4974537e3f42d1b8bae0cef13d445ce5a810ef2bd99c0",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L03",
+    "writer_rule_sha256": "322ceefce94e19f624256d8da369da73d1de6d9777eca79c646a043608e43a78",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L04",
+    "writer_rule_sha256": "4eeda988b974e99180c60f578d2f4318852bb35792c2cecb4825f557c6068d78",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L05",
+    "writer_rule_sha256": "f17d73c68b9eea50b714c8acb8e20566e18bc8297ac8f5fb006df8ac262b9b01",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L06",
+    "writer_rule_sha256": "b351ab312f34fd10eda704c9b95118905b9edceab48d93b663f1c0e014a4cfa8",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L07",
+    "writer_rule_sha256": "0fb3ff2105687c10cd0191aaca8e754e17ac25f3a5b29b6318c8e1abbf8bf1e8",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L08",
+    "writer_rule_sha256": "d108d78a7a2456b2bdc3646d53f2d267eff0790ba18b3d04f21bbd32f42ab5a6",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L09",
+    "writer_rule_sha256": "76f39d8f9248fb9831f44753c509e2bf689be285f79e0b2c598975e733d138cf",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L10",
+    "writer_rule_sha256": "febd34f6a6b2f2d2380715697245a1c5d72999c2035a117fee125d8e1d785ced",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L11",
+    "writer_rule_sha256": "e0635ca4c26d844e476f63d489b8fa61d8170822287164438318d972fda4bb83",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L12",
+    "writer_rule_sha256": "11e71e4310eb9d5f6b03f86c9be325051b1d17ed542d76f41ba73f7bc6810444",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L13",
+    "writer_rule_sha256": "b37ba1ba9a550305a3aae7ef22b3377492b09659e55dd8ca2813984eb99f4d04",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L14",
+    "writer_rule_sha256": "10720151f7bb2fa2a6979db7493faa1fb2e54c0be27fff3e9151e4217cde2fa3",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L15",
+    "writer_rule_sha256": "a8fed0dd5862c9eacf4ff3d094283b8d6f0500793a3823da622eb721b88c90ac",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L16",
+    "writer_rule_sha256": "265dc670997db25a3076fb40f68b3a8da6ca27e286baa0f0f12796a644c867c6",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L17",
+    "writer_rule_sha256": "fd9ef55ba5f732cb98014ea24320dc73c006823207e9be425d8b4b92af199111",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-L18",
+    "writer_rule_sha256": "4bc7122f05dd0a2b673ebcf6d66c05a484840937500423c7e9f0e23c66c1d11b",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently read original rendered tariff row and full table heading/adjacent provisions. Exact printed interval and all four zone values match ledger and Guide. Individual fixed tariff only, subject to proven zone/accepted basis/exemption tests and preserved commencement/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-CASE1",
+    "writer_rule_sha256": "7437b4d8f0de07170f8443f70f4856addd657f6adbaa484606471cc71fb96b67",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently selected built20,000,001-30,000,000 zone2=31,250 and separate bare401-500m2 zone2=25,313. Total56,563. Explicit applicable-law/January-title/official-zone/accepted-values/no-relief predicates prevent an actual assessment claim.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294quinquies/septies",
+        "pages": [
+          13,
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  },
+  {
+    "id": "P-CASE2",
+    "writer_rule_sha256": "709cb7e402c070959a1ecf92cbff2a4e9b392325090ec4b9f2d6f8cd590d462c",
+    "verdict": "pass source fidelity within explicit partial-research boundary",
+    "independent_reason": "Independently selected zone2 401-500m2=25,313 and501-600m2=37,969. Difference12,656; surface difference1m2. Alternative measured facts, no election or fractional-rounding inference. Same eligibility/currentness holds.",
+    "references_checked": [
+      {
+        "source_id": "LF",
+        "act_article": "CGI294septies",
+        "pages": [
+          14
+        ]
+      }
+    ],
+    "operative_current_law_certified": false
+  }
+]

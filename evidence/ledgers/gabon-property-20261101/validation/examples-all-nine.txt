@@ -1,0 +1,3 @@
+checked 9 files, 18 oa-check blocks, 0 failures, 0 missing
+
+Exit code: 0

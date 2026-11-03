@@ -1,0 +1,403 @@
+{
+  "accepted_head": "9f93faa2af8c970d0b12ad6ca54ebe93ae1bbc03",
+  "merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "files": [
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/README.md",
+      "accepted_git_blob": "115d75d82e2211a6c122c659d75d6dae8f6e59ef",
+      "accepted_sha256": "ead04572daa7ecada50dc3925a9a2260d6a241c5759619c358ae8bdb85a98ce9",
+      "candidate_sha256": "ead04572daa7ecada50dc3925a9a2260d6a241c5759619c358ae8bdb85a98ce9",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/guide-inventory.json",
+      "accepted_git_blob": "e8851ecb7b6e14e8d757bfcaeba2e0086225cc87",
+      "accepted_sha256": "f5a251d2360ea77add532b0b52be697859caf200ea6a7171e2714e2f733427a9",
+      "candidate_sha256": "f5a251d2360ea77add532b0b52be697859caf200ea6a7171e2714e2f733427a9",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-company-formation.md",
+      "accepted_git_blob": "b968979d83b2fd881a686429137c7d5450d3044f",
+      "accepted_sha256": "9d999d649da7e4bae3dd7ec113ce0d3bd8faafbff6912b8e43e2b9ee8b821f66",
+      "candidate_sha256": "9d999d649da7e4bae3dd7ec113ce0d3bd8faafbff6912b8e43e2b9ee8b821f66",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-corporate-income-tax.md",
+      "accepted_git_blob": "8fcdcf765284efeb920aee1dae80884b0f6bc93e",
+      "accepted_sha256": "f272f1d3b29d57ce75d784a52251924c31a57457ac5405ded81615e2ddbc4542",
+      "candidate_sha256": "f272f1d3b29d57ce75d784a52251924c31a57457ac5405ded81615e2ddbc4542",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-cross-border.md",
+      "accepted_git_blob": "347865165d20af1b19080868eda1bca7c5e44c50",
+      "accepted_sha256": "59e59871586645df997f15b83f86740dcd11397b98e73f12aada5e9b55afaaf8",
+      "candidate_sha256": "59e59871586645df997f15b83f86740dcd11397b98e73f12aada5e9b55afaaf8",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-income-tax.md",
+      "accepted_git_blob": "553c4d94d826e6fce3085f2c705ce63d1b01dd3d",
+      "accepted_sha256": "ec607d842061d7d2bb12c27b02f03b0367b600697fb1fc4f43d903feac32afd8",
+      "candidate_sha256": "ec607d842061d7d2bb12c27b02f03b0367b600697fb1fc4f43d903feac32afd8",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-payroll-social.md",
+      "accepted_git_blob": "e20f218822d9df88af9c95deb9f72df0c75dd3e3",
+      "accepted_sha256": "c5f0f9a64f400fd8dca65c32d3412d9b686f94c9894ba9940eeb6965fc8c13a7",
+      "candidate_sha256": "c5f0f9a64f400fd8dca65c32d3412d9b686f94c9894ba9940eeb6965fc8c13a7",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-tax-overview.md",
+      "accepted_git_blob": "c32c3c622964379d82997beea4f1348980efc37b",
+      "accepted_sha256": "519da0d3deb7b47cb78c53c118b58269e6db8f1e953bb39db862666b4d70301d",
+      "candidate_sha256": "519da0d3deb7b47cb78c53c118b58269e6db8f1e953bb39db862666b4d70301d",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-transfer-pricing.md",
+      "accepted_git_blob": "d1bf523334593a756dd2ffcf3c945beefef241e8",
+      "accepted_sha256": "193bb7dac5f61e378f93be13fe9a50fa5a2770aa8f1fd7b3a1ab94070932b8b8",
+      "candidate_sha256": "193bb7dac5f61e378f93be13fe9a50fa5a2770aa8f1fd7b3a1ab94070932b8b8",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/ledgers/ga-vat-gst.md",
+      "accepted_git_blob": "502b2d7e48b2bb87b5ad5746f39d44fd1f02b013",
+      "accepted_sha256": "b8a2c7d49b246ce61938ded81c81c616866a5de9a5cbda53f8cf28d15ad10ed7",
+      "candidate_sha256": "b8a2c7d49b246ce61938ded81c81c616866a5de9a5cbda53f8cf28d15ad10ed7",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/old-files.json",
+      "accepted_git_blob": "9beabf523123aa36b413cfbaa64f1c78d72fd948",
+      "accepted_sha256": "0a42449de79d74db620e916ed85517b0627537fd5b52294222069b07e2db500e",
+      "candidate_sha256": "0a42449de79d74db620e916ed85517b0627537fd5b52294222069b07e2db500e",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/old-topic-map.md",
+      "accepted_git_blob": "6d4f76f43c3367a2f67f2972bfad06a087e1aa31",
+      "accepted_sha256": "9259d692f553ea8de96ee7040cdc97409bfb0c0d07547a3ee5cbbbd7323fe0bf",
+      "candidate_sha256": "9259d692f553ea8de96ee7040cdc97409bfb0c0d07547a3ee5cbbbd7323fe0bf",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/old-topics.json",
+      "accepted_git_blob": "dd08862a51c795c62a60fdb14d1b25e3410360b0",
+      "accepted_sha256": "72848524963df608900c7dbc388c4b5683aa058b980c9b86111bbfbee09ced59",
+      "candidate_sha256": "72848524963df608900c7dbc388c4b5683aa058b980c9b86111bbfbee09ced59",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/rules.json",
+      "accepted_git_blob": "f3de20229302deb678245ef74bc0c2c16cd250a8",
+      "accepted_sha256": "841defae1def3659bd0f74f325514672782b956816dc0ab8da1b7ca3e70f8b7a",
+      "candidate_sha256": "841defae1def3659bd0f74f325514672782b956816dc0ab8da1b7ca3e70f8b7a",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/source-manifest.json",
+      "accepted_git_blob": "56413635693b5e4465e63caa8d2220c6a615d87b",
+      "accepted_sha256": "e49fa2cc766f9128ef62c6e9f05ebf9c09cf070b0529f0991849990f07b89411",
+      "candidate_sha256": "e49fa2cc766f9128ef62c6e9f05ebf9c09cf070b0529f0991849990f07b89411",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/validation/changed-guides.txt",
+      "accepted_git_blob": "89fa79ada6d316b46f200f24f277c8d6b6a91d20",
+      "accepted_sha256": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9",
+      "candidate_sha256": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/validation/examples.txt",
+      "accepted_git_blob": "fd349263a2425a810f3362ebdcb10c37fef416e3",
+      "accepted_sha256": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5",
+      "candidate_sha256": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/validation/skill-checks.txt",
+      "accepted_git_blob": "5a115cc6cf2532e115ee4635f6cf443f80309b0c",
+      "accepted_sha256": "1764ad5cfda9aeb1c368ab9d0726dfcf570133fef9c83f7fef0223cd01216216",
+      "candidate_sha256": "1764ad5cfda9aeb1c368ab9d0726dfcf570133fef9c83f7fef0223cd01216216",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/validation/sync-commit.txt",
+      "accepted_git_blob": "6b8e3d8d71ff7a1c937c7f6e28df7f7299a29a99",
+      "accepted_sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6",
+      "candidate_sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/validation/sync-worktree.txt",
+      "accepted_git_blob": "6b8e3d8d71ff7a1c937c7f6e28df7f7299a29a99",
+      "accepted_sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6",
+      "candidate_sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/writer-corrections.json",
+      "accepted_git_blob": "a121ae707a92d5cab8d07743723f8b051778e903",
+      "accepted_sha256": "eb14d7d5ca49ca8f482919d6661149a63b6252c176764d56e466475904a632e3",
+      "candidate_sha256": "eb14d7d5ca49ca8f482919d6661149a63b6252c176764d56e466475904a632e3",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-pack/writer-preservation-validation.json",
+      "accepted_git_blob": "8effb76ced4b63bf5f25b5ebb024f55ff13659f2",
+      "accepted_sha256": "0ce333ea81fe98616a90ed46996ab9765b846da4872e45f31f2f06009adf1bdb",
+      "candidate_sha256": "0ce333ea81fe98616a90ed46996ab9765b846da4872e45f31f2f06009adf1bdb",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/CLOSURE.json",
+      "accepted_git_blob": "510c360ea372bed021a796b629bc811165ea356d",
+      "accepted_sha256": "d31bed2590fd5ed77c1255824447c524dca8bd3a4538cd5574d6ed4e4cc894fd",
+      "candidate_sha256": "d31bed2590fd5ed77c1255824447c524dca8bd3a4538cd5574d6ed4e4cc894fd",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/CLOSURE.md",
+      "accepted_git_blob": "6d4db604d5cdc6d1a72e698f9d9d2d7a59ece1fd",
+      "accepted_sha256": "6e58befcbf101424b1a2219f95fa3f91427c2b963c968788a5a51ccbe5f5ee1f",
+      "candidate_sha256": "6e58befcbf101424b1a2219f95fa3f91427c2b963c968788a5a51ccbe5f5ee1f",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/REVIEW.md",
+      "accepted_git_blob": "5fe7cb7562f584a1329ac5fe5a600faeeffe0373",
+      "accepted_sha256": "3d9bdc2c747f4809eaf59b8e540bb25079eb8ea2334be1ff6d8fec6cdf91f572",
+      "candidate_sha256": "3d9bdc2c747f4809eaf59b8e540bb25079eb8ea2334be1ff6d8fec6cdf91f572",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/all-rule-review.csv",
+      "accepted_git_blob": "79b70eb067b984acb39c00bf0e7a73de6897007a",
+      "accepted_sha256": "ff12ffd3886ec90e95ed189abdc47c8f467962176f64b8b34a6da97a2f868a2b",
+      "candidate_sha256": "ff12ffd3886ec90e95ed189abdc47c8f467962176f64b8b34a6da97a2f868a2b",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-cgi-pages-39-41.txt",
+      "accepted_git_blob": "caf468900cce97b759bd890b14fbb806cb513d0a",
+      "accepted_sha256": "8969e2ca4a6584bafc3a22eebff8baa5115dfcd677611ec1b50d40dd26b1f7f8",
+      "candidate_sha256": "8969e2ca4a6584bafc3a22eebff8baa5115dfcd677611ec1b50d40dd26b1f7f8",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-cgi-pages-72-74.txt",
+      "accepted_git_blob": "caf1b132558b3c1c55d1af46ce459e0ad1a8994f",
+      "accepted_sha256": "96f98e9fa996c45d0aee0fadd321dda26a62a44ec6f2668b5d6a947a1577b85f",
+      "candidate_sha256": "96f98e9fa996c45d0aee0fadd321dda26a62a44ec6f2668b5d6a947a1577b85f",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-cgi-pages-83-85.txt",
+      "accepted_git_blob": "b348ee107063db3122c80aa214d3e14ac7ef5993",
+      "accepted_sha256": "23b0c15e77546774ca4615e033dab59942cc9d97f0f57e96e4e80a7896acee4a",
+      "candidate_sha256": "23b0c15e77546774ca4615e033dab59942cc9d97f0f57e96e4e80a7896acee4a",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-checks.py",
+      "accepted_git_blob": "f690a38302de5fdcf43843ec7894bc32f38e9572",
+      "accepted_sha256": "0f8dd5f38789b80087eb19dd1d388a97283ff26393c94c484f155ff9f10f6ecf",
+      "candidate_sha256": "0f8dd5f38789b80087eb19dd1d388a97283ff26393c94c484f155ff9f10f6ecf",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-examples-validation.txt",
+      "accepted_git_blob": "fd349263a2425a810f3362ebdcb10c37fef416e3",
+      "accepted_sha256": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5",
+      "candidate_sha256": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-guide-validation.txt",
+      "accepted_git_blob": "89fa79ada6d316b46f200f24f277c8d6b6a91d20",
+      "accepted_sha256": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9",
+      "candidate_sha256": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/closure-sync-validation.txt",
+      "accepted_git_blob": "6b8e3d8d71ff7a1c937c7f6e28df7f7299a29a99",
+      "accepted_sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6",
+      "candidate_sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/csv-format-independent-confirmation.json",
+      "accepted_git_blob": "d621a447833b4a60717fb058cc5443924ed309cc",
+      "accepted_sha256": "97d661ab178682aad3a9c54894d015a1b3424e056c08300a55e8bcc23db489a4",
+      "candidate_sha256": "97d661ab178682aad3a9c54894d015a1b3424e056c08300a55e8bcc23db489a4",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/csv-format-reconciliation.json",
+      "accepted_git_blob": "1dd3b0c44b753d28516a3175e109d35bb3ef0215",
+      "accepted_sha256": "f80ade8004423cd7b2973e06c93b08d78eb25f02333871810319804f5f72396f",
+      "candidate_sha256": "f80ade8004423cd7b2973e06c93b08d78eb25f02333871810319804f5f72396f",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/example-review.json",
+      "accepted_git_blob": "038ea51a1b63684c9df88059db82a470ee6b0801",
+      "accepted_sha256": "6f243087f7b181387c386b6c24072c7b56e4015cc3d90805e455684941f93a8f",
+      "candidate_sha256": "6f243087f7b181387c386b6c24072c7b56e4015cc3d90805e455684941f93a8f",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/examples-validation.txt",
+      "accepted_git_blob": "fd349263a2425a810f3362ebdcb10c37fef416e3",
+      "accepted_sha256": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5",
+      "candidate_sha256": "39216832aab9c960c0c1fca11f54ef5c1d46d9f80c48e2052cf66240f3f4f9d5",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/guide-validation.txt",
+      "accepted_git_blob": "89fa79ada6d316b46f200f24f277c8d6b6a91d20",
+      "accepted_sha256": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9",
+      "candidate_sha256": "feeef3cdc04f728903f1093a4920007b0cf3d665dcebc2d0f668235db12f78d9",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/mechanical-summary.txt",
+      "accepted_git_blob": "cdea5daecacaab32bccd7b3df02ab9a5d45ce98a",
+      "accepted_sha256": "84aad0c78c74cbf0ca1d2f0a9bf1c981bdc04cb124a3764672cdf1b8b5d9ce9f",
+      "candidate_sha256": "84aad0c78c74cbf0ca1d2f0a9bf1c981bdc04cb124a3764672cdf1b8b5d9ce9f",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/metadata.json",
+      "accepted_git_blob": "39fe53104b57bf5889a2febc2c8b1a35bfc393f8",
+      "accepted_sha256": "25b8a3cf952d8b963783eb834414b84ce0fe0c745e6df995caafd8a59c6b4f85",
+      "candidate_sha256": "25b8a3cf952d8b963783eb834414b84ce0fe0c745e6df995caafd8a59c6b4f85",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/old-topic-coverage.json",
+      "accepted_git_blob": "4934fd3f5a8a1b6a7ecfcca560641545093a544a",
+      "accepted_sha256": "7c63079207a0ee37f8c1752bf91e598d6e3d0a207ff6016fb354e92c1f941432",
+      "candidate_sha256": "7c63079207a0ee37f8c1752bf91e598d6e3d0a207ff6016fb354e92c1f941432",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/placement-coverage.json",
+      "accepted_git_blob": "694c0bb803e27386b16e13ddc47beab429e9aaf2",
+      "accepted_sha256": "aa007c6a9a417dfd573a114e4bf6456e9b2891d7c76c9a78547d5addba20c85b",
+      "candidate_sha256": "aa007c6a9a417dfd573a114e4bf6456e9b2891d7c76c9a78547d5addba20c85b",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/preservation.json",
+      "accepted_git_blob": "916b5757d4a2b669bc4dc4c626f63afcbe61aee8",
+      "accepted_sha256": "a5ef17b658be8eb4ecb782ce489893578f1a1b8283066be48eaf2cfb815c4d39",
+      "candidate_sha256": "a5ef17b658be8eb4ecb782ce489893578f1a1b8283066be48eaf2cfb815c4d39",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/review-checks.py",
+      "accepted_git_blob": "875c6786987b86fa8c4f125f705fef3048ede036",
+      "accepted_sha256": "c00793357fff765bb29659298a61f6f92682bdc419e0809306a54be12e53de0e",
+      "candidate_sha256": "c00793357fff765bb29659298a61f6f92682bdc419e0809306a54be12e53de0e",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/rule-coverage.json",
+      "accepted_git_blob": "a3d66a9260f0e6bee29b98e061cfb5173f789134",
+      "accepted_sha256": "cfb534ebf19ae251cfe501361eb0838aac3b401638640c34dafbb532bb2a9ab5",
+      "candidate_sha256": "cfb534ebf19ae251cfe501361eb0838aac3b401638640c34dafbb532bb2a9ab5",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/source-checks.json",
+      "accepted_git_blob": "9a1d00f9c3ddb22b7749872e8642981fe0d58b60",
+      "accepted_sha256": "9594797ee2be922b962c4c31d8398ca4be6edbf69c587191f5d4e25da246dce6",
+      "candidate_sha256": "9594797ee2be922b962c4c31d8398ca4be6edbf69c587191f5d4e25da246dce6",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "docs/research/2026-11-01-gabon-review/sync-validation.txt",
+      "accepted_git_blob": "6b8e3d8d71ff7a1c937c7f6e28df7f7299a29a99",
+      "accepted_sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6",
+      "candidate_sha256": "3e96c08a0b36bb7a75a0ecbdd02d2254da0ea2c39f5f74a99c499d37740053a6",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "skills/gabon/README.md",
+      "accepted_git_blob": "a70f0808daec898e3ff37e7085d23b3b0ac73328",
+      "accepted_sha256": "38796d57a2d1c79978040f6b16276eeea55ef0f2d8db4d30588dd370314e3b44",
+      "candidate_sha256": "24e27873c7a9a78b762d74cfabac7a043e1aaaccb2c55189fe1cabcdf98a4a50",
+      "preservation": "accepted bytes preserved as exact prefix; additive property route only"
+    },
+    {
+      "path": "skills/gabon/ga-company-formation.md",
+      "accepted_git_blob": "b9d23eb758e31837a3f58862da700f41ce17fafe",
+      "accepted_sha256": "6c115f54661102018bb2989d1b10b1a929574278dfb185965c9d4550063dee89",
+      "candidate_sha256": "6c115f54661102018bb2989d1b10b1a929574278dfb185965c9d4550063dee89",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "skills/gabon/ga-corporate-income-tax.md",
+      "accepted_git_blob": "f6109ae56cf66eea1f30a145a8537e88cba6d786",
+      "accepted_sha256": "4793e35a96cff9effab93a2cde32aa81f002e92e57e6836bce235210c09b9802",
+      "candidate_sha256": "4793e35a96cff9effab93a2cde32aa81f002e92e57e6836bce235210c09b9802",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "skills/gabon/ga-cross-border.md",
+      "accepted_git_blob": "5d3986dcd013a59bbc4acff8cd446ed86df84ee4",
+      "accepted_sha256": "434cb9573588d40fbd98ef2b1714d27400c028749dad74ee0d7d6e5a431ff9bb",
+      "candidate_sha256": "434cb9573588d40fbd98ef2b1714d27400c028749dad74ee0d7d6e5a431ff9bb",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "skills/gabon/ga-income-tax.md",
+      "accepted_git_blob": "bafc3f5d0f8a0bc7c571a2f17559818fc61d5b9b",
+      "accepted_sha256": "01669d939fbd2e6e23aa0f09e85350e9c43ce68fddbb491dee7e59d16a7cf2da",
+      "candidate_sha256": "01669d939fbd2e6e23aa0f09e85350e9c43ce68fddbb491dee7e59d16a7cf2da",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "skills/gabon/ga-payroll-social.md",
+      "accepted_git_blob": "cf9fe916239761214c0c3e059225251b526c2203",
+      "accepted_sha256": "ff22da19b9ee0c79b0e38b49ed21fac45c68986f871b61e6838ec6143494d7b4",
+      "candidate_sha256": "ff22da19b9ee0c79b0e38b49ed21fac45c68986f871b61e6838ec6143494d7b4",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "skills/gabon/ga-tax-overview.md",
+      "accepted_git_blob": "c183773e65b17494af7bcc497107923a08a7617f",
+      "accepted_sha256": "7979df35fd99a1eb3aefb8fb0189b5de501765ca0fad6a42f2ac39b41d0047b6",
+      "candidate_sha256": "7979df35fd99a1eb3aefb8fb0189b5de501765ca0fad6a42f2ac39b41d0047b6",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "skills/gabon/ga-transfer-pricing.md",
+      "accepted_git_blob": "e3662c1a57637e7a8f431ce2f70b2b8af441fc6f",
+      "accepted_sha256": "5e47e0ca07a9d3171799700cda6c657c648ea2cd8e7b2857164f255216e29914",
+      "candidate_sha256": "5e47e0ca07a9d3171799700cda6c657c648ea2cd8e7b2857164f255216e29914",
+      "preservation": "accepted bytes unchanged"
+    },
+    {
+      "path": "skills/gabon/ga-vat-gst.md",
+      "accepted_git_blob": "7598d53a2e4b770d46e83e324ba474b50057e855",
+      "accepted_sha256": "c6965cd791352aba24e4034ab1c3c8019aa7396c5a7c05bff32e550fb06fc32a",
+      "candidate_sha256": "c6965cd791352aba24e4034ab1c3c8019aa7396c5a7c05bff32e550fb06fc32a",
+      "preservation": "accepted bytes unchanged"
+    }
+  ],
+  "eight_existing_guides_unchanged": true,
+  "prior_review_93_rules_127_placements_77_topics_16_cases_unchanged": true,
+  "prior_four_findings_closed_and_preserved": true,
+  "all_seven_partial_domains_preserved": true,
+  "lost_content_restored": 0
+}

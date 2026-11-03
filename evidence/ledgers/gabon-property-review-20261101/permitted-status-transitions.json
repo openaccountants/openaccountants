@@ -1,0 +1,35 @@
+{
+  "scope": "No finding repairs needed. Only these exact post-review status substitutions are pre-cleared. Source/rule/hold/arithmetic content must remain frozen. Historical writer, frozen and validation evidence stays unchanged.",
+  "changes": [
+    {
+      "path": "skills/gabon/ga-annual-property-tax.md",
+      "frozen_before_sha256": "3c9cbb6981f1098adfb52d1ba0d993093b4686443b41e267eb6efc8036d53d34",
+      "exact_replacements": [
+        {
+          "before": "It has not received its own independent review or accountant attestation.",
+          "after": "The frozen property draft received an [independent source-fidelity review](../../evidence/ledgers/gabon-property-review-20261101/README.md). It has not received accountant attestation."
+        },
+        {
+          "before": "Fresh independent review is pending; prior accepted eight-Guide review is preserved, not reused as property approval.",
+          "after": "Independent source-fidelity review passed for the frozen partial property draft only; prior accepted eight-Guide review is preserved. Currentness, implementation, country completion and accountant attestation remain unproved."
+        }
+      ],
+      "expected_after_sha256": "37f97f102683741ead084dcb1da552830f30d79310c41cac5da7c0232a4b09ea",
+      "expected_after_git_blob": "7a58de06fa85fe79103a8734185dac917c3d0793",
+      "status_only": true
+    },
+    {
+      "path": "skills/gabon/README.md",
+      "frozen_before_sha256": "24e27873c7a9a78b762d74cfabac7a043e1aaaccb2c55189fe1cabcdf98a4a50",
+      "exact_replacements": [
+        {
+          "before": "a new partial research draft pending its own independent review.",
+          "after": "a partial research draft with [independent source-fidelity review](../../evidence/ledgers/gabon-property-review-20261101/README.md)."
+        }
+      ],
+      "expected_after_sha256": "e18f0c602ec80eca76d6cf0502a87d803f9a578ce13b318d7c9447188ce99798",
+      "expected_after_git_blob": "5828afbf70f925469fa131c655fc63f9f883b487",
+      "status_only": true
+    }
+  ]
+}

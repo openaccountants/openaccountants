@@ -1,0 +1,7 @@
+Candidate: 456042344ec2760856c9054a91b293155d6d1ed7
+Base: 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8
+Command: python3 scripts/check-sync-integrity.py --base 59c23acba2ad66dd2bb29ffc81ffbb9289769ef8 --head 456042344ec2760856c9054a91b293155d6d1ed7 --mode audit --strict-metadata
+
+Sync integrity checked 9 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).
+
+Exit code: 0

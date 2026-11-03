@@ -1,0 +1,81 @@
+{
+  "frozen_status_commit": "eb07e603a6b3e299132abbed1b5200383af2e364",
+  "actual_full_merge_base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "guide_sha256": "37f97f102683741ead084dcb1da552830f30d79310c41cac5da7c0232a4b09ea",
+  "guide_blob": "7a58de06fa85fe79103a8734185dac917c3d0793",
+  "readme_sha256": "e18f0c602ec80eca76d6cf0502a87d803f9a578ce13b318d7c9447188ce99798",
+  "runs": [
+    {
+      "name": "actual-committed-changed-only",
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "actual-committed-strict",
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--head",
+        "eb07e603a6b3e299132abbed1b5200383af2e364",
+        "--mode",
+        "audit",
+        "--strict-metadata"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "actual-committed-18-cases",
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/gabon/ga-annual-property-tax.md",
+        "skills/gabon/ga-company-formation.md",
+        "skills/gabon/ga-corporate-income-tax.md",
+        "skills/gabon/ga-cross-border.md",
+        "skills/gabon/ga-income-tax.md",
+        "skills/gabon/ga-payroll-social.md",
+        "skills/gabon/ga-tax-overview.md",
+        "skills/gabon/ga-transfer-pricing.md",
+        "skills/gabon/ga-vat-gst.md"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "actual-committed-preservation",
+      "command": [
+        "python3",
+        "evidence/ledgers/gabon-property-status-20261101/verify-status.py"
+      ],
+      "exit_code": 0
+    },
+    {
+      "name": "actual-committed-whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "eb07e603a6b3e299132abbed1b5200383af2e364"
+      ],
+      "exit_code": 0
+    }
+  ],
+  "shape_checks": 15,
+  "cases": 18,
+  "existing_classifier_warning": "Annual-property slug has no domain in the seven-domain classifier; country cell not checked. Validator passes with one warning group.",
+  "source_fidelity_review": "72 grouped records,184 verified published tariff cells,two new cases; zero substantive findings",
+  "all_historical_evidence_preserved": true,
+  "all_seven_domains_partial": true,
+  "currentness_certified": false,
+  "accountant_attestation": false,
+  "country_completion": false,
+  "merge_approval": false
+}

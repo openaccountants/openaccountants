@@ -1,0 +1,65 @@
+[
+  {
+    "source_id": "CGI",
+    "official_url": "https://dgi.ga/wp-content/uploads/dgi-content/d1dde772234076c5d2bc0a8d8d3db573ed3d8fdd6c3e869c8c57cd181a81bb70/assets/dgi/2d50ab6c2e-Gabon-CGI-2025.pdf",
+    "original_sha256": "69fdb3d87ede508e412fed7561a256ced70401778ca25489ec90454b1fefdca9",
+    "bytes": 2019005,
+    "actual_pdf_pages_read": [
+      1,
+      2,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      228,
+      229
+    ],
+    "independent_original_extraction": true,
+    "source_scope": "historical baseline",
+    "fresh_reviewer_network_access": "web tool inaccessible; read pinned original local PDF; prior fresh-fetch match is inherited acquisition evidence, not this reviewer fetch"
+  },
+  {
+    "source_id": "LF",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178946560179.pdf",
+    "original_sha256": "6e649f3716bb847cd9f3c23bd95afb426710230f1eaa0b6854e8bf5e4aaf380e",
+    "bytes": 2159991,
+    "actual_pdf_pages_read": [
+      1,
+      3,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      71,
+      72
+    ],
+    "independent_original_extraction": true,
+    "source_scope": "enacted finance law; no complete amendment-chain certification",
+    "fresh_reviewer_network_access": "official PDF opened by web tool"
+  },
+  {
+    "source_id": "LFR",
+    "official_url": "https://dgb-gabon.net/uploads/documentation/Texte%20juridique/178593988623.pdf",
+    "original_sha256": "85c30d2292bd57008059b83fa9bb0cfdec9ba1c24b061a44eed052f4379cc941",
+    "bytes": 5178214,
+    "actual_pdf_pages_read": [
+      1,
+      2,
+      10,
+      11,
+      12,
+      13,
+      86
+    ],
+    "independent_original_extraction": true,
+    "source_scope": "enacted finance law; no complete amendment-chain certification",
+    "fresh_reviewer_network_access": "web tool inaccessible; read pinned original local PDF; prior fresh-fetch match is inherited acquisition evidence, not this reviewer fetch"
+  }
+]
