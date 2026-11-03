@@ -90,7 +90,7 @@ expected:
 ## Sources
 
 1. 36 MRSA s.1811(1)(D), read 2026-11-01 -- https://legislature.maine.gov/statutes/36/title36sec1811.html
-2. 36 MRSA s.1754-B(1-B)(B) and (K), read 2026-11-03 -- https://legislature.maine.gov/statutes/36/title36sec1754-B.html (the earlier transaction-count test was removed by PL 2021, c.181, Pt. B, s.5)
+2. 36 MRSA s.1754-B(1-B)(B) and (K), read 2026-11-03 -- https://legislature.maine.gov/statutes/36/title36sec1754-B.html (the earlier transaction-count test was removed by PL 2021, c.181, Pt. B, ss.4 and 5, for sales from 1 January 2022; LD 1216 fiscal summary, 130th Legislature: https://legislature.maine.gov/doc/6615)
 
 <!-- openaccountants-cta-block -->
 
