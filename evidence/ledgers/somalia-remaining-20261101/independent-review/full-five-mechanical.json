@@ -1,0 +1,999 @@
+{
+  "base": "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+  "candidate": "ed486fe6323e9a71e048771ba3cc7893f54ef68a",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/skill_checks.py",
+        "skills/somalia/so-income-tax.md",
+        "skills/somalia/so-corporate-income-tax.md",
+        "skills/somalia/so-payroll-social.md",
+        "skills/somalia/so-vat-gst.md",
+        "skills/somalia/so-company-formation.md"
+      ],
+      "returncode": 0,
+      "stdout": "skills/somalia/so-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/somalia/so-corporate-income-tax.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/somalia/so-payroll-social.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/somalia/so-vat-gst.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\nskills/somalia/so-company-formation.md (scope: tax)\n  (a) tax_year_current     pass\n  (b) sources_read_dates   pass\n  (c) rates_rows_sourced   pass\n  (d) canonical_headings   pass\n  (e) two_oa_checks        pass\n  (f) version_numeric      pass\n  (g) tier_honest          pass\n  (h) no_em_dash           pass\n  (i) not_yet_confirmed    pass\n  (j) reviewed_on          pass\n  (k) read_date_evidence   pass\n  (l) sources_columns      pass\n  (m) source_hosts         pass\n  (n) jurisdiction_body    pass\n  (o) year_matches_link    pass\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-examples.py",
+        "--require",
+        "skills/somalia/so-income-tax.md",
+        "skills/somalia/so-corporate-income-tax.md",
+        "skills/somalia/so-payroll-social.md",
+        "skills/somalia/so-vat-gst.md",
+        "skills/somalia/so-company-formation.md"
+      ],
+      "returncode": 0,
+      "stdout": "checked 5 files, 10 oa-check blocks, 0 failures, 0 missing\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/validate-guides.py",
+        "--changed-only",
+        "--no-index-check"
+      ],
+      "returncode": 0,
+      "stdout": "changed-only mode: validating 6 changed guide file(s)\nchecked 5 guides (0 non-guide .md files skipped)\nchecked 0 generated package frontmatter block(s)\n\nvalidation passed (0 warning group(s))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/check-sync-integrity.py",
+        "--base",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "--head",
+        "ed486fe6323e9a71e048771ba3cc7893f54ef68a",
+        "--strict-metadata"
+      ],
+      "returncode": 0,
+      "stdout": "Sync integrity checked 5 source guide(s): 0 error(s), 0 warning(s), 0 notice(s).\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check",
+        "59c23acba2ad66dd2bb29ffc81ffbb9289769ef8",
+        "ed486fe6323e9a71e048771ba3cc7893f54ef68a"
+      ],
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "files": [
+    {
+      "path": "skills/somalia/so-income-tax.md",
+      "current_equals_candidate": true,
+      "candidate_sha256": "2ec355180b95cdde13636656ac80ed6fd8e49182ff5a3554f3519390a412b6f2",
+      "base_sha256": "2979463d9b1609db716673fb3badba677c1970c02f0e47a5e59140ae66b59c29",
+      "baseline_equals_base": true,
+      "cta_preserved": true,
+      "platform_metadata_preserved": true,
+      "new_bytes": 20591,
+      "old_bytes": 3696
+    },
+    {
+      "path": "skills/somalia/so-corporate-income-tax.md",
+      "current_equals_candidate": true,
+      "candidate_sha256": "b6eb4157ca39425e7ae9d53b4dc8e8b55e590a43bdeb6e16bd905268cf08d744",
+      "base_sha256": "34e337f2278eec1f30bc6200adf4e7d8e1f1dc9ae383d44ba911d595da4df190",
+      "baseline_equals_base": true,
+      "cta_preserved": true,
+      "platform_metadata_preserved": true,
+      "new_bytes": 19344,
+      "old_bytes": 3910
+    },
+    {
+      "path": "skills/somalia/so-payroll-social.md",
+      "current_equals_candidate": true,
+      "candidate_sha256": "144c7f7a87c9dc858ea3ebf3391b6d101f04ced8509b70854959d13e7787cf6e",
+      "base_sha256": "ead56636641ba5f18f81b554d912b494d156613dfcb04882408429f2f2ef27db",
+      "baseline_equals_base": true,
+      "cta_preserved": true,
+      "platform_metadata_preserved": true,
+      "new_bytes": 19766,
+      "old_bytes": 3529
+    },
+    {
+      "path": "skills/somalia/so-vat-gst.md",
+      "current_equals_candidate": true,
+      "candidate_sha256": "3d9a46423f35a8d954635abf80c7fa7abf636595b20ab93caffbe32ac3488ca2",
+      "base_sha256": "9e33945bb7e68c9fcf491c1652a7ce5154da427c4c2db43413a356514e21cc66",
+      "baseline_equals_base": true,
+      "cta_preserved": true,
+      "platform_metadata_preserved": true,
+      "new_bytes": 14661,
+      "old_bytes": 3583
+    },
+    {
+      "path": "skills/somalia/so-company-formation.md",
+      "current_equals_candidate": true,
+      "candidate_sha256": "4c4d24b03de54a068e3320eeec28b0b260eb38bd31fb18f0d62a0906970d1f4f",
+      "base_sha256": "4229c551fcd3efd1812629eb8f07477b8d536a04821952c42c8dd938cb29f14b",
+      "baseline_equals_base": true,
+      "cta_preserved": true,
+      "platform_metadata_preserved": true,
+      "new_bytes": 15664,
+      "old_bytes": 4007
+    }
+  ],
+  "map_checks": [
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 13,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 15,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 17,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 18,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 19,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 20,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 21,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 22,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 23,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 24,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 25,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 26,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-corporate-income-tax.md",
+      "line": 27,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-cross-border-residence.md",
+      "line": "all",
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 13,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 15,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 17,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 18,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 19,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 20,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 21,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 22,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 23,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 24,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 25,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 26,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-income-tax.md",
+      "line": 27,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 13,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 15,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 17,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 19,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 20,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 21,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 22,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 23,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 24,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 25,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-payroll-social.md",
+      "line": 26,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-tax-overview.md",
+      "line": "all",
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-transfer-pricing.md",
+      "line": "all",
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-vat-gst.md",
+      "line": 13,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-vat-gst.md",
+      "line": 15,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-vat-gst.md",
+      "line": 17,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-vat-gst.md",
+      "line": 19,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-vat-gst.md",
+      "line": 20,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-vat-gst.md",
+      "line": 21,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-vat-gst.md",
+      "line": 22,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-vat-gst.md",
+      "line": 23,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-vat-gst.md",
+      "line": 24,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-vat-gst.md",
+      "line": 25,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-vat-gst.md",
+      "line": 26,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 13,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 15,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 17,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 18,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 19,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 20,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 21,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 22,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 23,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 24,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 25,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 26,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    },
+    {
+      "file": "skills/somalia/so-company-formation.md",
+      "line": 28,
+      "blob_matches": true,
+      "hash_matches": true,
+      "old_text_matches": true,
+      "destination_nonempty": true
+    }
+  ],
+  "predecessor_coverage": {
+    "skills/somalia/so-income-tax.md": {
+      "expected_nonempty_body_lines": [
+        13,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "mapped_lines": [
+        13,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "complete": true
+    },
+    "skills/somalia/so-corporate-income-tax.md": {
+      "expected_nonempty_body_lines": [
+        13,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "mapped_lines": [
+        13,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "complete": true
+    },
+    "skills/somalia/so-payroll-social.md": {
+      "expected_nonempty_body_lines": [
+        13,
+        15,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "mapped_lines": [
+        13,
+        15,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "complete": true
+    },
+    "skills/somalia/so-vat-gst.md": {
+      "expected_nonempty_body_lines": [
+        13,
+        15,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "mapped_lines": [
+        13,
+        15,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "complete": true
+    },
+    "skills/somalia/so-company-formation.md": {
+      "expected_nonempty_body_lines": [
+        13,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        28
+      ],
+      "mapped_lines": [
+        13,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        28
+      ],
+      "complete": true
+    }
+  },
+  "manifest": {
+    "files": {
+      "skills/somalia/README.md": true,
+      "skills/somalia/so-company-formation.md": true,
+      "skills/somalia/so-corporate-income-tax.md": true,
+      "skills/somalia/so-cross-border-residence.md": true,
+      "skills/somalia/so-income-tax.md": true,
+      "skills/somalia/so-payroll-social.md": true,
+      "skills/somalia/so-tax-overview.md": true,
+      "skills/somalia/so-transfer-pricing.md": true,
+      "skills/somalia/so-vat-gst.md": true
+    },
+    "history": {
+      "evidence/ledgers/so-cross-border-residence.md": true,
+      "evidence/ledgers/so-transfer-pricing.md": true,
+      "evidence/ledgers/somalia-candidate-manifest.json": true,
+      "evidence/ledgers/somalia-old-topics.md": true,
+      "evidence/ledgers/somalia-review-20261101/mechanical-checks.json": true,
+      "evidence/ledgers/somalia-review-20261101/review.md": true,
+      "evidence/ledgers/somalia-review-closure-20261101/closure-checks.json": true,
+      "evidence/ledgers/somalia-review-closure-20261101/closure.md": true,
+      "evidence/ledgers/somalia-source-read-20261101.md": true,
+      "evidence/ledgers/somalia-writer-checks-20261101.md": true
+    }
+  },
+  "history_unchanged_against_base": {
+    "evidence/ledgers/so-cross-border-residence.md": true,
+    "evidence/ledgers/so-transfer-pricing.md": true,
+    "evidence/ledgers/somalia-candidate-manifest.json": true,
+    "evidence/ledgers/somalia-old-topics.md": true,
+    "evidence/ledgers/somalia-review-20261101/mechanical-checks.json": true,
+    "evidence/ledgers/somalia-review-20261101/review.md": true,
+    "evidence/ledgers/somalia-review-closure-20261101/closure-checks.json": true,
+    "evidence/ledgers/somalia-review-closure-20261101/closure.md": true,
+    "evidence/ledgers/somalia-source-read-20261101.md": true,
+    "evidence/ledgers/somalia-writer-checks-20261101.md": true
+  },
+  "unchanged_guides": {
+    "so-cross-border-residence.md": true,
+    "so-transfer-pricing.md": true,
+    "so-tax-overview.md": true
+  },
+  "initial_review_files_match_commit": {
+    "evidence/ledgers/somalia-remaining-20261101/independent-review/frozen-three-review.md": true,
+    "evidence/ledgers/somalia-remaining-20261101/independent-review/frozen-three-read-scope.json": true,
+    "evidence/ledgers/somalia-remaining-20261101/independent-review/frozen-three-row-review.json": true,
+    "evidence/ledgers/somalia-remaining-20261101/independent-review/frozen-three-mechanical.json": true
+  },
+  "independent_new_arithmetic": {
+    "exclusive_tax": 50.0,
+    "exclusive_total": 1050,
+    "inclusive_value": 952.38,
+    "inclusive_tax": 47.62,
+    "capital": 10000,
+    "first_subscription": 6000,
+    "second_subscription": 4000,
+    "difference": 0,
+    "fee_conflict": 50
+  },
+  "rows_count": 80,
+  "ledger_render_consistency": {
+    "so-income-tax": {
+      "expected_ids": [
+        "SO-001",
+        "SO-002",
+        "SO-003",
+        "SO-004",
+        "SO-005",
+        "SO-006",
+        "SO-007",
+        "SO-008",
+        "SO-009",
+        "SO-010",
+        "SO-016",
+        "SO-017",
+        "SO-018",
+        "SO-020",
+        "SO-021",
+        "SO-027",
+        "SO-028",
+        "SO-029",
+        "SO-030",
+        "SO-031",
+        "SO-032",
+        "SO-033",
+        "SO-034",
+        "SO-035",
+        "SO-036",
+        "SO-038",
+        "SO-039",
+        "SO-040",
+        "SO-041",
+        "SO-042",
+        "SO-043",
+        "SO-044",
+        "SO-045"
+      ],
+      "all_ids_present": true
+    },
+    "so-corporate-income-tax": {
+      "expected_ids": [
+        "SO-001",
+        "SO-002",
+        "SO-003",
+        "SO-004",
+        "SO-007",
+        "SO-009",
+        "SO-010",
+        "SO-011",
+        "SO-012",
+        "SO-013",
+        "SO-014",
+        "SO-015",
+        "SO-016",
+        "SO-017",
+        "SO-018",
+        "SO-019",
+        "SO-027",
+        "SO-028",
+        "SO-029",
+        "SO-030",
+        "SO-032",
+        "SO-037",
+        "SO-038",
+        "SO-039",
+        "SO-040",
+        "SO-041",
+        "SO-046",
+        "SO-047",
+        "SO-048"
+      ],
+      "all_ids_present": true
+    },
+    "so-payroll-social": {
+      "expected_ids": [
+        "SO-001",
+        "SO-005",
+        "SO-006",
+        "SO-010",
+        "SO-020",
+        "SO-022",
+        "SO-023",
+        "SO-024",
+        "SO-025",
+        "SO-026",
+        "SO-028",
+        "SO-029",
+        "SO-031",
+        "SO-036",
+        "SO-039",
+        "SO-040",
+        "SO-049",
+        "SO-050",
+        "SO-051",
+        "SO-052",
+        "SO-053",
+        "SO-054",
+        "SO-055"
+      ],
+      "all_ids_present": true
+    },
+    "so-vat-gst": {
+      "expected_ids": [
+        "SO-056",
+        "SO-057",
+        "SO-058",
+        "SO-059",
+        "SO-060",
+        "SO-061",
+        "SO-062",
+        "SO-063",
+        "SO-064",
+        "SO-065"
+      ],
+      "all_ids_present": true
+    },
+    "so-company-formation": {
+      "expected_ids": [
+        "SO-066",
+        "SO-067",
+        "SO-068",
+        "SO-069",
+        "SO-070",
+        "SO-071",
+        "SO-072",
+        "SO-073",
+        "SO-074",
+        "SO-075",
+        "SO-076",
+        "SO-077",
+        "SO-078",
+        "SO-079",
+        "SO-080"
+      ],
+      "all_ids_present": true
+    }
+  }
+}

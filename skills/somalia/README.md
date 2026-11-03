@@ -1,6 +1,6 @@
 ---
 jurisdiction: SO
-version: 0.1
+version: 0.2
 last_updated: 2026-11-01
 applicable: [IT-IND, IT-CORP, VAT, SC, PR, TP, XB]
 not_applicable: {}
@@ -13,51 +13,51 @@ covered_by:
   TP: so-transfer-pricing
   XB: so-cross-border-residence
 partial:
-  IT-IND: "Legacy 2025 Guide retained; new Act 37 income/rate/procedure system not rebuilt or verified for 2026."
-  IT-CORP: "Legacy 2025 Guide retained; new Act 37 corporate and presumptive rules not rebuilt or verified for 2026."
-  VAT: "Legacy 2025 sales-tax Guide retained; current-law scope/rates/procedure and territorial administration not rebuilt."
-  SC: "Legacy 2025 payroll/social Guide retained; no current statutory contribution coverage established."
-  PR: "Legacy 2025 payroll Guide retained; new Act 37/Regulation 0142-2025 rules and actual return workflow not rebuilt."
-  TP: "Statutory-baseline pricing working-paper draft; Regulation 0142-2025 read, postponement notices and circulars unchecked; no documentation/CbCR/APA job."
-  XB: "Statutory-baseline domestic residence intake; Regulation 0142-2025 read, postponement notices and circulars unchecked; treaty/PE/source/WHT/credit and entry/exit computation jobs incomplete."
+  IT-IND: "Conditional annual classification/rates and simplified screen rebuilt; effective implementation, annual top-band conflict, modified cash, relief/gain/rental workflows and current filing path unresolved."
+  IT-CORP: "Ordinary-company reconciliation rebuilt; implementation, specialist deductions/sectors, transition instalments and actual forms/payment unresolved."
+  VAT: "Ordinary domestic invoice method from archived signed regulation; later sector conflicts, full current amendment/exemption chain and reporting/settlement path unresolved."
+  SC: "No contribution rate/base/cap or operative public/private scheme workflow established; no zero-contribution claim."
+  PR: "Primary/secondary and employer transition rules sourced; mandatory notice/choice, benefits, reconciliation and live filing unresolved."
+  TP: "Prior limited statutory-baseline paper preserved unchanged; current notices/circulars and documentation/CbCR/APA jobs remain open."
+  XB: "Prior limited residence paper preserved unchanged; treaty/PE/source/WHT/credit/property/entry/exit computations incomplete."
 ---
 
 # Somalia tax pack
 
-**Partial local source-baseline draft, 1 November 2026.** Two new working-paper Guides are actual drafts from opened enacted law. They are **not accepted current-year coverage**: postponement notices and circulars under Income Tax Regulation 0142-2025 have not been checked (the ministry's file name says 0141; the decree and cover page say 0142). A later review read the regulation itself. Both stop before final 2026 tax treatment. Independent source review accepted repaired candidate `6477855a1c61821b0f70b8c15bf9473fe2edde4c` within the historical statutory-baseline scope only. No operative 2026 approval follows, and no accountant has attested. [Issue 486](https://github.com/openaccountants/openaccountants/issues/486) remains incomplete.
+**Partial source-based working papers, 1 November 2026.** Five existing Guides are expanded on the follow-on branch after merged [PR1180](https://github.com/openaccountants/openaccountants/pull/1180). Fresh independent review checked all 80 unique rule/figure rows, all 61 predecessor body lines and ten executable cases. Acceptance is limited to the expressly conditional source baseline. Neither legal currentness gates nor country acceptance criteria disappear when mechanical checks pass. No accountant has attested. [Issue486](https://github.com/openaccountants/openaccountants/issues/486) stays open.
 
-The new Income Tax Act 37/2025 replaces the legacy income-tax framework. The six old 2025 Guides remain byte-identical to preserve research and topics; their figures are not recertified for 2026. In particular, do not apply an old Guide's bands, corporate scale, residence summary or no-capital-gains assertion as current law. This batch does not select replacement tax rates from conflicting summaries.
+| Job | Guide | What the expansion does | Specific unresolved work |
+|---|---|---|---|
+| Individual income | [Annual reconciliation](so-income-tax.md) | Income classes, ordinary/minor/non-resident rules, simplified sole-trader screen, conditional annual cases | Implementation notices, printed annual top-band conflict, modified cash, rental/gain/pension/charity methods, foreign credit and actual filing |
+| Company income | [Ordinary-company method](so-corporate-income-tax.md) | Accrual reconciliation, deductions, 95% ceiling, losses, ordinary rate and instalment formula | Implementation, detailed depreciation/interest/repair/assets/financial instruments, transition instalments, special sectors and actual filing |
+| Payroll | [Employer reconciliation](so-payroll-social.md) | Taxable pay, reimbursement decision, primary/secondary rules, employer transition choice, report/certificate duties | Mandatory notice and employer choice, noncash/bonus/part-month/year-end methods, form/payment/acknowledgement |
+| Sales tax | [Domestic invoice method](so-vat-gst.md) | Seller/completion tax point, invoice sequence, exclusive/inclusive price decision | Current amendment/exemption/sector/territorial chain, digital split payment, threshold, return fields/deadlines, import/services, credits/refunds |
+| Formation/reporting | [Company registration packet](so-company-formation.md) | Registrar reservation, domestic and certified foreign-branch documents, annual-report contents and licensing distinction | Conflicting fees/deadlines, original law/court/notarial reconciliation, ownership/investment approvals, BO, accounts/audit and licence renewal |
+| Pricing | [Prior pricing paper](so-transfer-pricing.md) | Previously accepted limited statutory working paper, byte-identical | Applicable notices/circulars, method/documentation/retention/return duties, CbCR/APA and corresponding relief |
+| Residence | [Prior residence paper](so-cross-border-residence.md) | Previously accepted limited domestic residence screen, byte-identical | Operative currentness; wider source/PE/treaty/WHT/credit and asset entry/exit computations |
+| Social/pensions | [Payroll's explicit hold](so-payroll-social.md#the-base) | Distinguishes public/private/fund questions and rejects an inferred zero rate | Separate operative contribution law/regulations, membership, base/caps, benefits and collection procedure |
 
-| Domain | Guide | Actual status |
-|---|---|---|
-| Individual income tax | [Income tax](so-income-tax.md) | Partial, unchanged 2025 research; current income-tax job not rebuilt |
-| Company tax | [Corporate income tax](so-corporate-income-tax.md) | Partial, unchanged 2025 research; new law not rebuilt |
-| VAT/sales tax | [VAT/sales tax](so-vat-gst.md) | Partial, unchanged 2025 research |
-| Social contributions | [Payroll/social](so-payroll-social.md) | Partial, unchanged 2025 research |
-| Payroll | [Payroll/social](so-payroll-social.md) | Partial, unchanged 2025 research; new income-tax rules not rebuilt |
-| Transfer pricing | [Pricing working paper](so-transfer-pricing.md) | Partial statutory baseline; current regulatory conditions unconfirmed |
-| Cross-border | [Residence working paper](so-cross-border-residence.md) | Partial statutory baseline; wider XB jobs missing |
+## Specific source conflicts and limits
 
-## What the two drafts do
+- The Act's annual top-band constant conflicts with its lower-band arithmetic and monthly authority guidance. The income Guide identifies the exact conflict and avoids silently correcting it. [Act37 Schedule1, PDF126](https://sag.gov.so/media/documents/bulletins-contents/legislation/2025/Sharciyeedka_Canshuurta_Dakhliga.pdf).
+- Regulation9-1 restricts presumptive taxation to qualifying resident individuals; the corporate summary on the authority website is broader. Primary/secondary employment and the employer-specific old/new withholding choice must be tested, not collapsed into a single monthly table. Postponement/allocation circulars and employer notices remain unlocated. [Regulations9-1,90-1 to90-3,105-8,106-1,107-1](https://mof.gov.so/sites/default/files/Publications/Income%20Tax%20Regulation_%200141%2C%202025.pdf).
+- The official annual report describes delayed implementation and FY2026 plans. It is evidence of uncertainty, not a substitute for the dated legal instrument. [Directorate Annual Report2025](https://revenuedirectorate.gov.so/sites/default/files/Annual%20Revenue%20Performance_2025_FINAL11.pdf).
+- The general sales-tax regulation was read from a dated official-site archive after ordinary direct/browser failure. Later sector rates and current penalties/appeals remain unreconciled. The invoice examples are conditional ordinary domestic cases.
+- Registry fees and annual-report wording conflict across official publications. The formation Guide exposes both and stops before choosing a payment amount or final deadline.
 
-- The pricing job screens association under article 4 and the resident/associated non-resident condition under article 37. It produces a supported independent-price reconciliation with two executable cases. It does not invent a mandatory master/local file, prescribed method, safe harbour or submission process. Regulation 37-1 ties the standard to the OECD guidelines and states no exception.
-- The residence job covers all article 77 person/entity tests, including 183 days in a relevant 12-month window, alternative home/citizenship/posting grounds and corporate effective management. It records article 78 transition and asset issues for separate work. Two day-count decisions show why fewer than 183 days is not itself a non-residence conclusion.
+## Full scope still open
 
-Article 105(7) permits regulations to delay or modify operation. The manual's general commencement statement and a 2026 administration statute do not prove that no transitional measure exists. Neither draft should be described as reviewed operative 2026 law until that chain is resolved. The precise first application in 2025 is also excluded.
+No domain is declared inapplicable merely because a source or form could not be obtained. Beyond the bounded methods above, the country still needs detailed property/asset-gain and rental compliance, customs/import/export/excise work, sector/extractive/bank/insurance rules, exemptions/incentives, bookkeeping and financial reporting/audit, beneficial ownership, tax administration/registration/retention/sanctions/objections, territorial collection and the complete filing/payment/receipt jobs. Current social/pension instruments were located and partly read; their presence is not rate/base/cap coverage. The [source findings](../../evidence/ledgers/somalia-remaining-20261101/somalia-other-source-findings.md) distinguish actual clauses, scan defects, access failures and remaining instruments.
 
-## Retained research and evidence
+[Tax overview](so-tax-overview.md) remains byte-identical legacy2025 research, held as history and not recertified. Its old headline rates, residence/gain summaries and procedure claims must not override the new bounded Guides or their stop conditions.
 
-[Company formation](so-company-formation.md) and [Tax overview](so-tax-overview.md) also remain unchanged. All six original slugs, metadata, narrative topics and exact platform CTA blocks are preserved.
+## Evidence and review boundaries
 
-- [Complete old-topic map](../../evidence/ledgers/somalia-old-topics.md).
-- [Pricing ledger](../../evidence/ledgers/so-transfer-pricing.md).
-- [Residence ledger](../../evidence/ledgers/so-cross-border-residence.md).
-- [Actual source-read scope and hashes](../../evidence/ledgers/somalia-source-read-20261101.md).
+All five rewritten slugs preserve every platform-owned frontmatter value and complete stamped CTA suffix. The three other Guides and all earlier review/source evidence remain unchanged. Every predecessor introduction, heading, paragraph, bullet and table item is mapped to a sourced destination or an explicit hold, with immutable base commit, blob and hash.
 
-Full gazette PDFs, scans, OCR and HTML remain privately in the sibling sources directory outside Git. The Attorney General's observed public download links worked normally. The ministry English manual opened through its current publication/Download link in the web reader; local fetching remained 403. The writer could not open the regulation; the 1 November review downloaded it with an ordinary request and read the provisions cited.
+- [Current complete figure/rule ledger](../../evidence/ledgers/somalia-remaining-20261101/rule-rows.json), with one rendered ledger per changed Guide.
+- [Complete predecessor destinations](../../evidence/ledgers/somalia-remaining-20261101/old-topic-destinations.md).
+- [Income source reading](../../evidence/ledgers/somalia-remaining-20261101/somalia-remaining-source-findings.md) and [other source reading](../../evidence/ledgers/somalia-remaining-20261101/somalia-other-source-findings.md).
+- [Initial three-Guide fresh review](../../evidence/ledgers/somalia-remaining-20261101/independent-review/frozen-three-review.md); [complete five-Guide review](../../evidence/ledgers/somalia-remaining-20261101/independent-review/full-five-review.md), and [targeted closure](../../evidence/ledgers/somalia-remaining-20261101/independent-review/closure.md). All four findings are closed at source candidate `2dd804ca1cde948dd5adcce2e2c3156fb3d58e0f`; acceptance remains limited to the conditional source baseline.
 
-Remaining work includes postponement notices and circulars, complete income/corporate/payroll rebuilding, sales-tax/social coverage, territorial administration, complete filing/payment workflows, treaty and PE/source/withholding/credit work, exit/entry tax computations and accountant attestation.
-
-## Independent review checkpoint
-
-The [initial review](../../evidence/ledgers/somalia-review-20261101/review.md) checked all 46 substantive ledger rules and found one exact-quotation transcription defect. The [focused closure](../../evidence/ledgers/somalia-review-closure-20261101/closure.md) confirms its correction against the actual Act 37 scan. Four examples pass, all 71 historical topics remain mapped, and six original Guides and CTA blocks remain unchanged. Acceptance is restricted to the cited statutory baseline; unchecked notices and circulars still prevent operative 2026 acceptance or country completion.
+The original pricing/residence acceptance remains bound to the earlier historical statutory baseline and repaired candidate recorded in its [initial review](../../evidence/ledgers/somalia-review-20261101/review.md) and [closure](../../evidence/ledgers/somalia-review-closure-20261101/closure.md). That acceptance is not extended to any new expansion or claimed as operative2026 approval. Full PDFs, scans, OCR and browser captures remain in the private sibling source cache; official URLs, dates, hashes and actual reading scope are committed for review.
